@@ -1,0 +1,44 @@
+---
+Description: 'You can save your current Enterprise Mode compatibility site list as an XML file, for distribution and use by your managed systems.'
+MS-HAID: 'p\_ie11deploy.save\_your\_site\_list\_to\_xml\_in\_the\_enterprise\_mode\_site\_list\_manager'
+MSHAttr: 'PreferredLib:/library'
+title: Save your site list to XML in the Enterprise Mode Site List Manager
+---
+
+# Save your site list to XML in the Enterprise Mode Site List Manager
+
+
+**Last updated**
+
+-   November 12, 2015
+
+**Applies to:**
+
+-   Windows 10
+-   Windows 8.1
+-   Windows 7
+-   Windows Server 2012 R2
+-   Windows Server 2008 R2 with Service Pack 1 (SP1)
+
+You can save your current Enterprise Mode compatibility site list as an XML file, for distribution and use by your managed systems.
+
+![](../common/wedge.gif)**To save your list as XML**
+
+1.  On the **File** menu of the Enterprise Mode Site List Manager, click **Save to XML**.
+
+2.  Save the file to the location you specified in your Enterprise Mode registry key, set up when you turned on Enterprise Mode for use in your company. For information about the Enterprise Mode registry key, see [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md).
+
+    The first time a user starts Internet Explorer 11 on a managed device; Internet Explorer will look for a new version of the site list at the specified location. If the browser finds an updated site list, IE downloads the new XML site list and uses it.
+
+## Related topics
+
+
+[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
+[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+[Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
+ 
+
+ 
+
+
+

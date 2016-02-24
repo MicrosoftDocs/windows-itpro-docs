@@ -1,0 +1,55 @@
+---
+Description: Auto configuration and auto proxy problems with Internet Explorer 11
+ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: networking
+title: Auto configuration and auto proxy problems with Internet Explorer 11
+---
+
+# Auto configuration and auto proxy problems with Internet Explorer 11
+You might experience some problems using automatic configuration and auto-proxy with Internet Explorer 11.
+
+## Branding changes aren't distributed using automatic configuration
+If you've turned on the **Disable external branding of Internet Explorer** Group Policy Object, you won't be able to use automatic configuration to distribute your branding changes to your users' computers. When this object is turned on, it prevents the branding of IE by a non-Microsoft company or entity, such as an Internet service provider or Internet content provider. For more information about automatic configuration, see [Auto configuration settings for Internet Explorer 11](auto-configuration-settings-for-ie11.md) and [Automatic Configuration: Internet Explorer Customization Wizard](http://go.microsoft.com/fwlink/p/?linkid=327743). For more information about Group Policy settings, see [Group policy objects and Internet Explorer 11 (IE11)](gpo-and-ie11.md).
+
+## Proxy server setup issues
+If you experience issues while setting up your proxy server, you can try these troubleshooting steps:
+
+- Check to make sure the proxy server address is right.
+
+- Check that both **Automatically detect settings** and **Automatic configuration** are turned on in the browser.
+
+- Check that the browser is pointing to the right automatic configuration script location.
+
+**To check your proxy server address**
+
+1.  On the **Tools** menu, click **Internet Options**, and then **Connections**.
+
+2.  Click **Settings** or **LAN Settings**, and then look at your proxy server address.
+
+3.  If you have multiple proxy servers, click **Advanced** to look at all of the additional addresses.<p>**Note**<br>If IE11 uses a proxy server for local IP addresses, regardless whether you turned on the **Bypass Proxy Server for Local Addresses** option, see [Internet Explorer Uses Proxy Server for Local IP Address Even if the "Bypass Proxy Server for Local Addresses" Option Is Turned On](http://go.microsoft.com/fwlink/?LinkId=85652).
+
+**To check that you've turned on the correct settings**
+
+1.  On the **Tools** menu, click **Internet Options**, and then click **Connections**.
+
+2.  Click **Settings** or **LAN Settings**.
+
+3.  In the **Automatic configuration** area, check that you've clicked the **Automatically detect settings** box. If you've turned on automatic configuration, check to make sure that you've also clicked the **Use automatic configuration script** box.<p>**Note**<br>If at this point everything is set up correctly, but the proxy server still isn't behaving properly, click the **Detect my network settings** box in the **Error** dialog box to try to detect the proxy server, again.
+
+**To check that you're pointing to the correct automatic configuration script location**
+
+1.  On the **Tools** menu, click **Internet Options**, and then click **Connections**.
+
+2.  Click **Settings** or **LAN Settings**.
+
+3.  In the **Automatic configuration** area, check that you've chosen the **Use automatic configuration script** box, and that it has the correct location to your automatic configuration script or for your automatic proxy URL.
+
+ 
+
+ 
+
+
+
