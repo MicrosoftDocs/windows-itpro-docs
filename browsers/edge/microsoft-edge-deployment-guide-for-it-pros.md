@@ -4,11 +4,10 @@ ms.assetid: 70377735-B2F9-4B0B-9658-4CF7C1D745BB
 ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
-title: Microsoft Edge - Deployment Guide for IT Pros
+title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros)
 ---
 
 # Microsoft Edge - Deployment Guide for IT Pros
-
 
 **Last updated**
 

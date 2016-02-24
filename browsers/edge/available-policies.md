@@ -1,10 +1,10 @@
 ---
-Description: 'Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization''s computer settings.'
+Description: Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings.
 ms.assetid: 2E849894-255D-4F68-AE88-C2E4E31FA165
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
-title: Available policies for Microsoft Edge
+title: Available policies for Microsoft Edge (Microsoft Edge for IT Pros)
 ---
 
 # Available policies for Microsoft Edge
@@ -22,7 +22,7 @@ title: Available policies for Microsoft Edge
 Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
 By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that's linked to a domain, and then apply all of those settings to every computer in the domain.
-<p>**Note**<br>For more info about Group Policy, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy. For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](http://go.microsoft.com/fwlink/?LinkId=617921), [Group Policy and the Local Group Policy Editor](http://go.microsoft.com/fwlink/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](http://go.microsoft.com/fwlink/?LinkId=617923), and [Group Policy and Windows Powershell](http://go.microsoft.com/fwlink/?LinkId=617924).
+<p>**Note**<br>For more info about Group Policy, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy. For more info about the tools you can use to change your Group Policy objects, see the Internet Explorer 11 topics, [Group Policy and the Group Policy Management Console (GPMC)](http://go.microsoft.com/fwlink/p/?LinkId=617921), [Group Policy and the Local Group Policy Editor](http://go.microsoft.com/fwlink/p/?LinkId=617922), [Group Policy and the Advanced Group Policy Management (AGPM)](http://go.microsoft.com/fwlink/p/?LinkId=617923), and [Group Policy and Windows Powershell](http://go.microsoft.com/fwlink/p/?LinkId=617924).
 
  
 
@@ -55,7 +55,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 ##  Using Microsoft Intune to manage your Mobile Data Management (MDM) settings for Microsoft Edge
 
 
-If you manage your policies using Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]( http://go.microsoft.com/fwlink/?LinkId=722885) page.
+If you manage your policies using Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]( http://go.microsoft.com/fwlink/p/?LinkId=722885) page.
 
 <p>**Note**<br>The **Supports** column uses these options:
 
@@ -106,8 +106,8 @@ These are additional Windows 10-specific MDM policy settings that work with Mic
 | AllowSyncMySettings                    | Desktop             | <ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Employees can’t sync settings between PCs.</li><li>**1 (default).** Employees can sync between PCs.</li></ul></li></ul> |
 
 ## Related topics
-* [Group Policy TechCenter](http://go.microsoft.com/fwlink/?LinkId=214514)
-* [Mobile Data Management (MDM) settings]( http://go.microsoft.com/fwlink/?LinkId=722885)
+* [Group Policy TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=214514)
+* [Mobile Data Management (MDM) settings]( http://go.microsoft.com/fwlink/p/?LinkId=722885)
  
 
  
