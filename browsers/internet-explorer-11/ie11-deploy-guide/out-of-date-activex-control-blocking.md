@@ -2,7 +2,7 @@
 Description: 'ActiveX controls are small apps that let websites provide content, like videos, games, and let you interact with content like toolbars.'
 MS-HAID: 'p\_ie11deploy.out\_of\_date\_activex\_control\_blocking'
 MSHAttr: 'PreferredLib:/library'
-title: 'Out-of-date ActiveX control blocking'
+title: Out-of-date ActiveX control blocking (Internet Explorer 11 for IT Pros)
 ---
 
 # Out-of-date ActiveX control blocking
@@ -31,7 +31,7 @@ Out-of-date ActiveX control blocking lets you:
 
 -   Update the outdated control, so that it’s up-to-date and safer to use.
 
-The out-of-date ActiveX control blocking feature works with all [Security Zones](http://go.microsoft.com/fwlink/?LinkId=403863), except the Local Intranet Zone and the Trusted Sites Zone.
+The out-of-date ActiveX control blocking feature works with all [Security Zones](http://go.microsoft.com/fwlink/p/?LinkId=403863), except the Local Intranet Zone and the Trusted Sites Zone.
 
 It also works with these operating system and IE combinations:
 
@@ -81,7 +81,7 @@ It also works with these operating system and IE combinations:
 
  
 
-For more info about this new feature, see [Internet Explorer begins blocking out-of-date ActiveX controls](http://go.microsoft.com/fwlink/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, go [here](http://go.microsoft.com/fwlink/?LinkId=517023).
+For more info about this new feature, see [Internet Explorer begins blocking out-of-date ActiveX controls](http://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, go [here](http://go.microsoft.com/fwlink/p/?LinkId=517023).
 
 ## What does the out-of-date ActiveX control blocking notification look like?
 
@@ -131,7 +131,7 @@ If you don’t fully trust a site, you shouldn’t allow it to launch an outdate
 
 IE uses Microsoft’s versionlist.xml file to determine whether an ActiveX control should be stopped from loading. This file is updated with newly-discovered out-of-date ActiveX controls, which IE automatically downloads to your local copy of the file.
 
-You can see your copy of the versionlist.xml file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml`, or you can view Microsoft’s version at [Internet Explorer version list](http://go.microsoft.com/fwlink/?LinkId=403864).
+You can see your copy of the versionlist.xml file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml`, or you can view Microsoft’s version at [Internet Explorer version list](http://go.microsoft.com/fwlink/p/?LinkId=403864).
 
 **Security Note:  **
 
@@ -144,7 +144,7 @@ Turning off this automatic download breaks the out-of-date ActiveX control block
 ## Out-of-date ActiveX control blocking on managed devices
 
 
-Out-of-date ActiveX control blocking includes 4 new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative Templates for Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=444484) page.
+Out-of-date ActiveX control blocking includes 4 new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative Templates for Internet Explorer](http://go.microsoft.com/fwlink/p/?LinkId=444484) page.
 
 ### Group Policy settings
 
@@ -418,7 +418,7 @@ Here’s a detailed example and description of what’s included in the VersionA
 
      
 
--   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](http://go.microsoft.com/fwlink/?LinkId=403865).
+-   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](http://go.microsoft.com/fwlink/p/?LinkId=403865).
 
     **Note**  
     Enhanced Protected Mode isn’t supported on Internet Explorer 9 or earlier versions of IE. Therefore, if you’re using Internet Explorer 8 or Internet Explorer 9, all ActiveX controls will always be marked as not EPM-compatible.
@@ -431,7 +431,7 @@ For Windows 10 you also have the option to log your inventory info to a local W
 
 ### Before you begin
 
-Before you can use WMI to inventory your ActiveX controls, you need to [download the configuration package (.zip file)](http://go.microsoft.com/fwlink/?LinkId=616971), which includes:
+Before you can use WMI to inventory your ActiveX controls, you need to [download the configuration package (.zip file)](http://go.microsoft.com/fwlink/p/?LinkId=616971), which includes:
 
 -   **ConfigureWMILogging.ps1**. A Windows PowerShell script.
 

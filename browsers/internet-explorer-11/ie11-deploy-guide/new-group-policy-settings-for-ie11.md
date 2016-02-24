@@ -2,7 +2,7 @@
 Description: New group policy settings for Internet Explorer 11
 MS-HAID: 'p\_ie11deploy.new\_group\_policy\_settings\_for\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: New group policy settings for Internet Explorer 11
+title: New group policy settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # New group policy settings for Internet Explorer 11

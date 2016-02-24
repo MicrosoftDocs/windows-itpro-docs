@@ -2,7 +2,7 @@
 Description: Setup problems with Internet Explorer 11
 MS-HAID: 'p\_ie11deploy.setup\_problems\_with\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: Setup problems with Internet Explorer 11
+title: Setup problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Setup problems with Internet Explorer 11

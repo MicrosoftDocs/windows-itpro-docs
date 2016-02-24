@@ -2,7 +2,7 @@
 Description: Intranet problems with Internet Explorer 11
 MS-HAID: 'p\_ie11deploy.intranet\_problems\_with\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: Intranet problems with Internet Explorer 11
+title: Intranet problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Intranet problems with Internet Explorer 11

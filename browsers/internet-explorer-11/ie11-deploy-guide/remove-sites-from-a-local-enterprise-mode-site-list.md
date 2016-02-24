@@ -2,7 +2,7 @@
 Description: 'Remove websites that were added to a local Enterprise Mode site list by mistake or because the sites no longer have compatibility problems.'
 MS-HAID: 'p\_ie11deploy.removing\_sites\_from\_a\_local\_enterprise\_mode\_site\_list'
 MSHAttr: 'PreferredLib:/library'
-title: Remove sites from a local Enterprise Mode site list
+title: Remove sites from a local Enterprise Mode site list (Internet Explorer 11 for IT Pros)
 ---
 
 # Remove sites from a local Enterprise Mode site list

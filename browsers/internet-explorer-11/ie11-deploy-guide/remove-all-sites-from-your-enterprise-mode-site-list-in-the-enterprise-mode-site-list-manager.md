@@ -2,7 +2,7 @@
 Description: 'You can clear all of the sites from your global Enterprise Mode site list.'
 MS-HAID: 'p\_ie11deploy.remove\_all\_sites\_from\_your\_enterprise\_mode\_site\_list\_in\_the\_enterprise\_mode\_site\_list\_manager'
 MSHAttr: 'PreferredLib:/library'
-title: Remove all sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager
+title: Remove all sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ---
 
 # Remove all sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager
@@ -38,8 +38,8 @@ This is a permanent removal and erases everything. However, if you determine it 
 ## Related topics
 
 
-[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
  
 

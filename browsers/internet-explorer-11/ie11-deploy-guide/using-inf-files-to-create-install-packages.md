@@ -2,13 +2,13 @@
 Description: 'Using .INF files to create packages'
 MS-HAID: 'p\_ie11deploy.using\_inf\_files\_to\_create\_packages'
 MSHAttr: 'PreferredLib:/library'
-title: 'Using .INF files to create packages'
+title: Using .INF files to create packages (Internet Explorer 11 for IT Pros)
 ---
 
 # Using .INF files to create packages
 
 
-IEAK 11 uses Setup information (.inf) files to provide uninstallation instructions. Uninstallation instructions let your employees remove components, like files, registry entries, or shortcuts, through the **Uninstall or change a program** box. For details about .inf files, see [INF File Sections and Directives](http://go.microsoft.com/fwlink/?LinkId=327959).
+IEAK 11 uses Setup information (.inf) files to provide uninstallation instructions. Uninstallation instructions let your employees remove components, like files, registry entries, or shortcuts, through the **Uninstall or change a program** box. For details about .inf files, see [INF File Sections and Directives](http://go.microsoft.com/fwlink/p/?LinkId=327959).
 
 ![](../common/wedge.gif)**To add uninstallation instructions to the .inf files**
 

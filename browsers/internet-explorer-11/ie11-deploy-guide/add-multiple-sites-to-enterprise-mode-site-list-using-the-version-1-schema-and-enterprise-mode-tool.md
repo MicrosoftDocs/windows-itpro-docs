@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool
+title: Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
 ---
 
 # Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool
@@ -21,10 +21,10 @@ title: Add multiple sites to the Enterprise Mode site list using a file and the 
 
 You can add multiple sites to your Enterprise Mode site list by creating a custom text (TXT) or Extensible Markup Language (XML) file of problematic sites and then adding it in the **Bulk add from file** area of the Enterprise Mode Site List Manager tool. You can only add specific URLs, not Internet or Intranet Zones.
 
-If you want to add your websites one at a time, see Add sites to the [Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](aadd-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md).
+If you want to add your websites one at a time, see Add sites to the [Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md).
 
 ## Create an Enterprise Mode site list (TXT) file
-You can create and use a custom text file to add multiple sites to your Enterprise Mode site list at the same time. <br><br>**Important**<br>This text file is only lets you add multiple sites at the same time. You can’t use this file to deploy Enterprise Mode into your company.
+You can create and use a custom text file to add multiple sites to your Enterprise Mode site list at the same time. <p>**Important**<br>This text file is only lets you add multiple sites at the same time. You can’t use this file to deploy Enterprise Mode into your company.
 
 You must separate each site using commas or carriage returns. For example:
 
@@ -44,9 +44,9 @@ You can create and use a custom XML file with the Enterprise Mode Site List Mana
 
 Each XML file must include:
 
--   **Version number.** This number must be incremented with each version of the Enterprise Mode site list, letting Internet Explorer know whether the list is new. Approximately 65 seconds after Internet Explorer 11 starts, it compares your site list version to the stored version number. If your file has a higher number, the newer version is loaded. <br><br>**Important**<br>After this check, IE11 won’t look for an updated list again until you restart the browser.
+-   **Version number.** This number must be incremented with each version of the Enterprise Mode site list, letting Internet Explorer know whether the list is new. Approximately 65 seconds after Internet Explorer 11 starts, it compares your site list version to the stored version number. If your file has a higher number, the newer version is loaded. <p>**Important**<br>After this check, IE11 won’t look for an updated list again until you restart the browser.
 
--   **&lt;emie&gt; tag.** This tag specifies the domains and domain paths that must be rendered using IE7 Enterprise Mode, IE8 Enterprise Mode, or the default IE11 browser environment.<br><br>**Important**<br>If you decide a site requires IE7 Enterprise Mode, you must add `forceCompatView=”true”` to your XML file. That code tells Enterprise Mode to check for a `DOCTYPE` tag on the specified webpage. If there is, the site renders using Windows Internet Explorer 7. If there’s no tag, the site renders using Microsoft Internet Explorer 5.
+-   **&lt;emie&gt; tag.** This tag specifies the domains and domain paths that must be rendered using IE7 Enterprise Mode, IE8 Enterprise Mode, or the default IE11 browser environment.<p>**Important**<br>If you decide a site requires IE7 Enterprise Mode, you must add `forceCompatView=”true”` to your XML file. That code tells Enterprise Mode to check for a `DOCTYPE` tag on the specified webpage. If there is, the site renders using Windows Internet Explorer 7. If there’s no tag, the site renders using Microsoft Internet Explorer 5.
 
 -   **&lt;docMode&gt; tag.**This tag specifies the domains and domain paths that need either to appear using the specific doc mode you assigned to the site. Enterprise Mode takes precedence over document modes, so sites that are already included in the Enterprise Mode site list won’t be affected by this update and will continue to load in Enterprise Mode, as usual. For more specific info about using document modes, see [Fix web compatibility issues using document modes and the Enterprise Mode site list](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md).
 
@@ -78,7 +78,7 @@ The following is an example of what your XML file should look like when you’re
 </rules>
 ```
 
-To make sure your site list is up-to-date; wait 65 seconds after opening IE and then check that the `CurrentVersion` value in the `HKEY\CURRENT\USER\Software\Microsoft\Internet Explorer\Main\EnterpriseMode\` registry key matches the version number in your file.<br><br>**Important**<br>If `CurrentVersion` is not set or is wrong, it means that the XML parsing failed. This can mean that the XML file isn’t there, that there are access problems, or that the XML file format is wrong. Don’t manually change the `CurrentVersion` registry setting. You must make your changes to your site list and then update the list using the import function in the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool.
+To make sure your site list is up-to-date; wait 65 seconds after opening IE and then check that the `CurrentVersion` value in the `HKEY\CURRENT\USER\Software\Microsoft\Internet Explorer\Main\EnterpriseMode\` registry key matches the version number in your file.<p>**Important**<br>If `CurrentVersion` is not set or is wrong, it means that the XML parsing failed. This can mean that the XML file isn’t there, that there are access problems, or that the XML file format is wrong. Don’t manually change the `CurrentVersion` registry setting. You must make your changes to your site list and then update the list using the import function in the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool.
 
 ## Add multiple sites to the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool
 After you create your .xml or .txt file, you can bulk add the sites to the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool.
@@ -100,7 +100,7 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 
 ## Related topics
 - [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices](enterprise-mode-schema-version-1-guidance.md)
-- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
  
 
  

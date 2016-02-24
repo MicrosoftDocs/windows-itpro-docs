@@ -2,7 +2,7 @@
 Description: Turn on Enterprise Mode and use a site list
 MS-HAID: 'p\_ie11deploy.turn\_on\_enterprise\_mode\_and\_use\_a\_site\_list'
 MSHAttr: 'PreferredLib:/library'
-title: Turn on Enterprise Mode and use a site list
+title: Turn on Enterprise Mode and use a site list (Internet Explorer 11 for IT Pros)
 ---
 
 # Turn on Enterprise Mode and use a site list
@@ -60,8 +60,8 @@ We recommend that you store and download your website list from a secure web sev
 ## Related topics
 
 
-[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
  
 
  

@@ -2,7 +2,7 @@
 Description: 'Install Internet Explorer 11 (IE11) - System Center 2012 R2 Configuration Manager'
 MS-HAID: 'p\_ie11deploy.install\_internet\_explorer\_11\_\_ie11\_\_\_\_system\_center\_2012\_r2\_configuration\_manager'
 MSHAttr: 'PreferredLib:/library'
-title: 'Install Internet Explorer 11 (IE11) - System Center 2012 R2 Configuration Manager'
+title: Install Internet Explorer 11 (IE11) - System Center 2012 R2 Configuration Manager (Internet Explorer 11 for IT Pros)
 ---
 
 #  - System Center 2012 R2 Configuration Manager
@@ -20,7 +20,7 @@ You can install Internet Explorer 11 (IE11) by using [System Center R2 2012 Con
 
 4.  Move the installation package to your distribution points, and then advertise the package.
 
-You can also use System Center Essentials 2010 to deploy IE11 installation packages. For info, see [System Center Essentials 2010](http://go.microsoft.com/fwlink/p/?linkid=395200) and the [System Center Essentials 2010 Operations Guide](http://go.microsoft.com/fwlink/?LinkId=214266).
+You can also use System Center Essentials 2010 to deploy IE11 installation packages. For info, see [System Center Essentials 2010](http://go.microsoft.com/fwlink/p/?linkid=395200) and the [System Center Essentials 2010 Operations Guide](http://go.microsoft.com/fwlink/p/?LinkId=214266).
 
  
 

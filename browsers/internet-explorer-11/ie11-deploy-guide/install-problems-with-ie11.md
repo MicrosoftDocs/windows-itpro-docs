@@ -2,7 +2,7 @@
 Description: Install problems with Internet Explorer 11
 MS-HAID: 'p\_ie11deploy.install\_problems\_with\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: Install problems with Internet Explorer 11
+title: Install problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Install problems with Internet Explorer 11
@@ -18,7 +18,7 @@ If you do, you can:
 
 -   Temporarily turn off your antispyware and antivirus software.
 
--   Try another IE11 installer. For example from [Windows Update](http://go.microsoft.com/fwlink/?LinkId=302315) or from the [Download Internet Explorer 11](http://go.microsoft.com/fwlink/p/?linkid=327753) website.
+-   Try another IE11 installer. For example from [Windows Update](http://go.microsoft.com/fwlink/p/?LinkId=302315) or from the [Download Internet Explorer 11](http://go.microsoft.com/fwlink/p/?linkid=327753) website.
 
 -   Review the IE11\_main.log file in the \\Windows folder. This log file has information about each installation and is appended for each subsequent installation.
 
@@ -37,17 +37,17 @@ If Internet Explorer doesn't finish installing, it might mean that Windows Updat
 
     2.  After the uninstall finishes, restart your computer.
 
-2.  Run [Windows Update](http://go.microsoft.com/fwlink/?LinkId=302315), clicking **Check for updates**.
+2.  Run [Windows Update](http://go.microsoft.com/fwlink/p/?LinkId=302315), clicking **Check for updates**.
 
 3.  Check the list for IE11. If it's included in the list of updates for download, exclude it before you update your computer.
 
-    If you get an error during the Windows Update process, see [Fix the problem with Microsoft Windows Update that is not working](http://go.microsoft.com/fwlink/?LinkId=302316).
+    If you get an error during the Windows Update process, see [Fix the problem with Microsoft Windows Update that is not working](http://go.microsoft.com/fwlink/p/?LinkId=302316).
 
 4.  Restart your computer, making sure all of your the updates are finished.
 
 5.  Try to reinstall IE11 from either Windows Update (if you saw it in Step 3) or from the [Download Internet Explorer 11](http://go.microsoft.com/fwlink/p/?linkid=327753) website.
 
-If these steps didn't fix your problem, see [Troubleshooting a failed installation of Internet Explorer 11](http://go.microsoft.com/fwlink/?LinkId=304130).
+If these steps didn't fix your problem, see [Troubleshooting a failed installation of Internet Explorer 11](http://go.microsoft.com/fwlink/p/?LinkId=304130).
 
  
 

@@ -2,7 +2,7 @@
 Description: Problems after installing Internet Explorer 11
 MS-HAID: 'p\_ie11deploy.problems\_after\_installing\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: Problems after installing Internet Explorer 11
+title: Problems after installing Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Problems after installing Internet Explorer 11
@@ -33,7 +33,7 @@ RIES does not:
 
 -   Affect the applied Administrative Template Group Policy settings.
 
-RIES turns off all custom toolbars, browser extensions, and customizations installed with IE11. If you change your mind, you can turn each of the customizations back on through the **Manage Add-ons** dialog box. For more information about resetting IE settings, see [How to Reset Internet Explorer Settings](http://go.microsoft.com/fwlink/?LinkId=214528).
+RIES turns off all custom toolbars, browser extensions, and customizations installed with IE11. If you change your mind, you can turn each of the customizations back on through the **Manage Add-ons** dialog box. For more information about resetting IE settings, see [How to Reset Internet Explorer Settings](http://go.microsoft.com/fwlink/p/?LinkId=214528).
 
 ## IE is crashing or seems slow
 
@@ -62,12 +62,12 @@ If you notice that CPU usage is running higher than normal, or that IE is freque
 
 2.  On the **Advanced** tab, go to the **Accelerated graphics** section, and then turn on Software Rendering mode by choosing the **Use software rendering instead of GPU rendering** box.
 
-    If the **Use software rendering instead of GPU rendering** option is greyed out, it means that your current video card or video driver doesn't support GPU hardware acceleration. For more information, see [Is Internet Explorer slow? 5 things to try](http://go.microsoft.com/fwlink/?LinkId=214531).
+    If the **Use software rendering instead of GPU rendering** option is greyed out, it means that your current video card or video driver doesn't support GPU hardware acceleration. For more information, see [Is Internet Explorer slow? 5 things to try](http://go.microsoft.com/fwlink/p/?LinkId=214531).
 
 ## Adaptive streaming and DRM playback don’t work with Windows Server 2012 R2
 
 
-IE11 in Windows Server 2012 R2 doesn’t include media features like adaptive streaming or Digital Rights Management (DRM) playback. To add these features, you’ll need to download and install the Media Feature Pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=320789), as well as an app that uses PlayReady DRM from the Windows Store, such as the Xbox Music app or Xbox Video app. The app must be installed to specifically turn on DRM features, while all other media features are installed with the Media Feature Pack.
+IE11 in Windows Server 2012 R2 doesn’t include media features like adaptive streaming or Digital Rights Management (DRM) playback. To add these features, you’ll need to download and install the Media Feature Pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=320789), as well as an app that uses PlayReady DRM from the Windows Store, such as the Xbox Music app or Xbox Video app. The app must be installed to specifically turn on DRM features, while all other media features are installed with the Media Feature Pack.
 
  
 

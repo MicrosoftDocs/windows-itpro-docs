@@ -2,7 +2,7 @@
 Description: 'Use the topics in this section to learn about how to auto detect your settings, auto configure your configuration settings, and auto configure your proxy configuration settings for Internet Explorer.'
 MS-HAID: 'p\_ie11deploy.manage\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: Manage Internet Explorer 11
+title: Manage Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Manage Internet Explorer 11

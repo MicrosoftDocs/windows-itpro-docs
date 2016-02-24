@@ -4,7 +4,7 @@ ms.assetid: fd027775-651a-41e1-8ec3-d32eca876d8a
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
-title: Deploy Internet Explorer 11 using software distribution tools
+title: Deploy Internet Explorer 11 using software distribution tools (Internet Explorer 11 for IT Pros)
 ---
 
 # Deploy Internet Explorer 11 using software distribution tools

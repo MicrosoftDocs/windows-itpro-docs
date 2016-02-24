@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-title: Group Policy and compatibility with Internet Explorer 11
+title: Group Policy and compatibility with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Group Policy and compatibility with Internet Explorer 11

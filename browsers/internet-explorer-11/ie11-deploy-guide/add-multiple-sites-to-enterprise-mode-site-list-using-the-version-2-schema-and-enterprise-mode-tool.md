@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool
+title: Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
 ---
 
 # Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool
@@ -24,7 +24,7 @@ To add your websites one at a time, see [Add sites to the Enterprise Mode site l
 
 ## Create an Enterprise Mode site list (TXT) file
 
-You can create and use a custom text file with the Windows 10 Enterprise Mode Site List Manager tool to add multiple sites to your Enterprise Mode site list at the same time.<br><br>**Important:**<br>This text file is only lets you add multiple sites at the same time. You can’t use this file to deploy Enterprise Mode into your company.
+You can create and use a custom text file with the Windows 10 Enterprise Mode Site List Manager tool to add multiple sites to your Enterprise Mode site list at the same time.<p>**Important:**<br>This text file is only lets you add multiple sites at the same time. You can’t use this file to deploy Enterprise Mode into your company.
 
 You must separate each site using commas or carriage returns. For example:
 
@@ -45,7 +45,7 @@ You can create and use a custom XML file with the Windows 10 Enterprise Mode Si
 
 Each XML file must include:
 
--   **site-list version number**. This number must be incremented with each version of the Enterprise Mode site list, letting Internet Explorer know whether the list is new. Approximately 65 seconds after Internet Explorer 11 starts, it compares your site list version to the stored version number. If your file has a higher number, the newer version is loaded. <br><br>**Important**<br>After this check, IE11 won’t look for an updated list again until you restart the browser. 
+-   **site-list version number**. This number must be incremented with each version of the Enterprise Mode site list, letting Internet Explorer know whether the list is new. Approximately 65 seconds after Internet Explorer 11 starts, it compares your site list version to the stored version number. If your file has a higher number, the newer version is loaded. <p>**Important**<br>After this check, IE11 won’t look for an updated list again until you restart the browser. 
 
 -   **&lt;compat-mode&gt; tag.** This tag specifies what compatibility setting are used for specific sites or domains.
 
@@ -84,7 +84,7 @@ In the above example, the following is true:
 
 -   contoso.com, and all of its domain paths, can use the default compatibility mode for the site.
 
-To make sure your site list is up-to-date; wait 65 seconds after opening IE and then check that the `CurrentVersion` value in the `HKEY\CURRENT\USER\Software\Microsoft\Internet Explorer\Main\EnterpriseMode\` registry key matches the version number in your file. <br><br>**Important**<br>If `CurrentVersion` is not set or is wrong, it means that the XML parsing failed. This can mean that the XML file isn’t there, that there are access problems, or that the XML file format is wrong. Don’t manually change the `CurrentVersion` registry setting. You must make your changes to your site list and then update the list using the import function in the Windows 10 Enterprise Mode Site List Manager tool.
+To make sure your site list is up-to-date; wait 65 seconds after opening IE and then check that the `CurrentVersion` value in the `HKEY\CURRENT\USER\Software\Microsoft\Internet Explorer\Main\EnterpriseMode\` registry key matches the version number in your file. <p>**Important**<br>If `CurrentVersion` is not set or is wrong, it means that the XML parsing failed. This can mean that the XML file isn’t there, that there are access problems, or that the XML file format is wrong. Don’t manually change the `CurrentVersion` registry setting. You must make your changes to your site list and then update the list using the import function in the Windows 10 Enterprise Mode Site List Manager tool.
 
 ## Add multiple sites to the Windows 10 Enterprise Mode Site List Manager tool
 After you create your .xml or .txt file, you can bulk add the sites to the Windows 10 Enterprise Mode Site List Manager tool.
@@ -105,7 +105,7 @@ You can save the file locally or to a network share. However, you must make sure
 After you’ve added all of your sites to the tool and saved the file to XML, you can configure the rest of the Enterprise Mode functionality to use it. You can also turn Enterprise Mode on locally, so your users have the option to use Enterprise Mode on individual websites from the **Tools** menu. For more information, see [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md).
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md)
  
 

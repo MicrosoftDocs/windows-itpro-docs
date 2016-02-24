@@ -4,7 +4,7 @@ ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
-title: Create packages for multiple operating systems or languages
+title: Create packages for multiple operating systems or languages (Internet Explorer 11 for IT Pros)
 ---
 
 # Create packages for multiple operating systems or languages

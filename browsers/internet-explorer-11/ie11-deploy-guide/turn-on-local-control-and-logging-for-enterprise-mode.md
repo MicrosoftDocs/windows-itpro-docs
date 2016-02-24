@@ -2,7 +2,7 @@
 Description: Turn on local control and logging for Enterprise Mode
 MS-HAID: 'p\_ie11deploy.turn\_on\_local\_control\_and\_logging\_for\_enterprise\_mode'
 MSHAttr: 'PreferredLib:/library'
-title: Turn on local control and logging for Enterprise Mode
+title: Turn on local control and logging for Enterprise Mode (Internet Explorer 11 for IT Pros)
 ---
 
 # Turn on local control and logging for Enterprise Mode

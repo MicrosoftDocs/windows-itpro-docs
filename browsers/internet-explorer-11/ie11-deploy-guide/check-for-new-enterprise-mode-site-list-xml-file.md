@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Check for a new Enterprise Mode site list xml file
+title: Check for a new Enterprise Mode site list xml file (Internet Explorer 11 for IT Pros)
 ---
 
 # Check for a new Enterprise Mode site list xml file

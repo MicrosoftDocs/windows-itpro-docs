@@ -2,7 +2,7 @@
 Description: 'Install Internet Explorer 11 (IE11) - Network'
 MS-HAID: 'p\_ie11deploy.install\_internet\_explorer\_11\_\_ie11\_\_\_\_network'
 MSHAttr: 'PreferredLib:/library'
-title: 'Install Internet Explorer 11 (IE11) - Network'
+title: Install Internet Explorer 11 (IE11) - Network (Internet Explorer 11 for IT Pros)
 ---
 
 #  - Network

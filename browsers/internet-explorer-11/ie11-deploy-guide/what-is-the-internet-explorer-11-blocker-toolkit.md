@@ -2,7 +2,7 @@
 Description: 'The Internet Explorer 11 Blocker Toolkit lets you turn off the automatic delivery of IE11 through the Automatic Updates feature of Windows Update.'
 MS-HAID: 'p\_ie11deploy.what\_is\_the\_internet\_explorer\_11\_blocker\_toolkit'
 MSHAttr: 'PreferredLib:/library'
-title: 'What is the Internet Explorer 11 Blocker Toolkit?'
+title: What is the Internet Explorer 11 Blocker Toolkit? (Internet Explorer 11 for IT Pros)
 ---
 
 # What is the Internet Explorer 11 Blocker Toolkit?
@@ -29,7 +29,7 @@ The IE11 Blocker Toolkit doesn't stop users from manually installing IE11 from t
 
 ![](../common/wedge.gif)**To install the toolkit**
 
-1.  Download the IE11 Blocker Toolkit from [Toolkit to Disable Automatic Delivery of Internet Explorer 11](http://go.microsoft.com/fwlink/?LinkId=327745).
+1.  Download the IE11 Blocker Toolkit from [Toolkit to Disable Automatic Delivery of Internet Explorer 11](http://go.microsoft.com/fwlink/p/?LinkId=327745).
 
 2.  Accept the license agreement and store the included 4 files on your local computer.
 
@@ -43,7 +43,7 @@ The IE11 Blocker Toolkit doesn't stop users from manually installing IE11 from t
 
 6.  Close the Command Prompt.
 
-For answers to frequently asked questions, see [Internet Explorer 11 Blocker Toolkit: Frequently Asked Questions](http://go.microsoft.com/fwlink/?LinkId=314063).
+For answers to frequently asked questions, see [Internet Explorer 11 Blocker Toolkit: Frequently Asked Questions](http://go.microsoft.com/fwlink/p/?LinkId=314063).
 
  
 

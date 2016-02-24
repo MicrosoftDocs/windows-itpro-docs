@@ -2,7 +2,7 @@
 Description: 'You can search to see if a specific site already appears in your global Enterprise Mode site list so you don’t try to add it again.'
 MS-HAID: 'p\_ie11deploy.search\_your\_enterprise\_mode\_site\_list\_in\_the\_enterprise\_mode\_site\_list\_manager'
 MSHAttr: 'PreferredLib:/library'
-title: Search your Enterprise Mode site list in the Enterprise Mode Site List Manager
+title: Search your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ---
 
 # Search your Enterprise Mode site list in the Enterprise Mode Site List Manager
@@ -31,8 +31,8 @@ You can search to see if a specific site already appears in your global Enterpri
 ## Related topics
 
 
-[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
  
 

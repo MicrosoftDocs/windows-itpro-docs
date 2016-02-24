@@ -4,7 +4,7 @@ ms.assetid: f51224bd-3371-4551-821d-1d62310e3384
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
-title: Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS)
+title: Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS) (Internet Explorer 11 for IT Pros)
 ---
 # Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS)
 You can deploy Internet Explorer 11 to your users' computers by using your custom browser packages and Automatic Version Synchronization (AVS).

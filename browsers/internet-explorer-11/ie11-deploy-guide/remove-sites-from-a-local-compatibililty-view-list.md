@@ -2,7 +2,7 @@
 Description: 'Remove websites that were added to a local compatibility view list by mistake or because they no longer have compatibility problems.'
 MS-HAID: 'p\_ie11deploy.removing\_sites\_from\_a\_local\_compatibililty\_view\_list'
 MSHAttr: 'PreferredLib:/library'
-title: Remove sites from a local compatibility view list
+title: Remove sites from a local compatibility view list (Internet Explorer 11 for IT Pros)
 ---
 
 # Remove sites from a local compatibility view list

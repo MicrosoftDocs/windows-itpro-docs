@@ -5,13 +5,13 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: performance
-title: Browser cache changes and roaming profiles
+title: Browser cache changes and roaming profiles (Internet Explorer 11 for IT Pros)
 ---
 
 # Browser cache changes and roaming profiles
 We’ve redesigned the browser cache to improve the performance, flexibility, reliability, and scalability of Internet Explorer and the apps that rely on the Windows Internet (WinINet) cache. Our new database design stops multiple clients from simultaneously accessing and using cached information, while also providing a higher level of data integrity.
 
-You won’t notice any changes to the management of your roaming profile data if you use our new database implementation in conjunction with the [roaming user profile guidelines](http://go.microsoft.com/fwlink/?LinkId=401544). This means that IE data that’s stored in the `AppData\Roaming` user profile folder is still be uploaded to your normal profile storage location after a user successfully logs off.<p>**Note**<br>Cookies in a roaming profile can only be set by Internet Explorer for the desktop, with Enhanced Protected Mode turned off. Cookies set by the immersive version of IE or by Windows Store apps, can’t be part of a roaming profile. For more information about persistent cookies and roaming, see [Persistent cookies are not roamed in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=401545).
+You won’t notice any changes to the management of your roaming profile data if you use our new database implementation in conjunction with the [roaming user profile guidelines](http://go.microsoft.com/fwlink/p/?LinkId=401544). This means that IE data that’s stored in the `AppData\Roaming` user profile folder is still be uploaded to your normal profile storage location after a user successfully logs off.<p>**Note**<br>Cookies in a roaming profile can only be set by Internet Explorer for the desktop, with Enhanced Protected Mode turned off. Cookies set by the immersive version of IE or by Windows Store apps, can’t be part of a roaming profile. For more information about persistent cookies and roaming, see [Persistent cookies are not roamed in Internet Explorer](http://go.microsoft.com/fwlink/p/?LinkId=401545).
 
 To get the best results while using roaming profiles, we strongly recommend the following:
 

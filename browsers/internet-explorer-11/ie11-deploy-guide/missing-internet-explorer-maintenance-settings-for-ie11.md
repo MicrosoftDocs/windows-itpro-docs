@@ -2,7 +2,7 @@
 Description: 'The Internet Explorer Maintenance (IEM) settings have been deprecated in favor of Group Policy Preferences, Administrative Templates (.admx), and the IE Administration Kit 11 (IEAK 11).Because of this change, your IEM-configured settings will no longer work on computers running Internet Explorer 10 or newer. To fix this, you need to update the affected settings using Group Policy Preferences, Administrative Templates (.admx), or IE Administration Kit 11 (IEAK 11).Because Group Policy Preferences and IEAK 11 run using asynchronous processes, you should choose to use only one of the tools within each group of settings. For example, using only IEAK 11 in the Security settings or Group Policy Preferences within the Internet Zone settings. Also, it''s important to remember that policy is enforced and can''t be changed by the user, while preferences are configured, but can be changed by the user.'
 MS-HAID: 'p\_ie11deploy.missing\_internet\_explorer\_maintenance\_settings\_for\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: Missing Internet Explorer Maintenance settings for Internet Explorer 11
+title: Missing Internet Explorer Maintenance settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Missing Internet Explorer Maintenance settings for Internet Explorer 11
@@ -34,11 +34,11 @@ For more information about all of the new options and Group Policy, see:
 
 -   [IEAK 11 - Internet Explorer Administration Kit 11 Guide](http://go.microsoft.com/fwlink/p/?linkid=327741)
 
--   [Group Policy Settings Reference for Windows and Windows Server](http://go.microsoft.com/fwlink/?LinkId=279876)
+-   [Group Policy Settings Reference for Windows and Windows Server](http://go.microsoft.com/fwlink/p/?LinkId=279876)
 
--   [Group Policy ADMX Syntax Reference Guide](http://go.microsoft.com/fwlink/?LinkId=276830)
+-   [Group Policy ADMX Syntax Reference Guide](http://go.microsoft.com/fwlink/p/?LinkId=276830)
 
--   [Enable and Disable Settings in a Preference Item](http://go.microsoft.com/fwlink/?LinkId=282671)
+-   [Enable and Disable Settings in a Preference Item](http://go.microsoft.com/fwlink/p/?LinkId=282671)
 
 ## IEM replacements
 

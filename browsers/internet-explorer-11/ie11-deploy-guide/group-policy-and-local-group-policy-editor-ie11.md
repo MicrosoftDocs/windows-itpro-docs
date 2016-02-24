@@ -1,11 +1,11 @@
 ---
-Description: 'Group Policy, the Local Group Policy Editor, and Internet Explorer 11'
+Description: Group Policy, the Local Group Policy Editor, and Internet Explorer 11
 ms.assetid: 6fc30e91-efac-4ba5-9ee2-fa77dcd36467
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-title: 'Group Policy, the Local Group Policy Editor, and Internet Explorer 11'
+title: Group Policy, the Local Group Policy Editor, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Group Policy, the Local Group Policy Editor, and Internet Explorer 11

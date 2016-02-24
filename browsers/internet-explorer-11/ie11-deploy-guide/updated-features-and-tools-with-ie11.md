@@ -2,7 +2,7 @@
 Description: 'Internet Explorer 11 includes several new features and tools. This topic includes high-level info about the each of them.'
 MS-HAID: 'p\_ie11deploy.updated\_features\_and\_tools\_\_\_internet\_explorer\_11\_\_ie11\_'
 MSHAttr: 'PreferredLib:/library'
-title: 'List of updated features and tools - Internet Explorer 11 (IE11)'
+title: List of updated features and tools - Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ---
 
 # 
@@ -37,7 +37,7 @@ Internet Explorer 11 includes several new features and tools. This topic includ
 
     For more information about IE11, see [Internet Explorer 11 - FAQ for IT Pros](http://go.microsoft.com/fwlink/p/?linkid=313985).
 
--   **IE Administration Kit (IEAK).** Lets you create custom, branded versions of IE11. To get more information and to download the tool, see [Internet Explorer Administration Kit (IEAK) Information and Downloads](http://go.microsoft.com/fwlink/?LinkId=392490).
+-   **IE Administration Kit (IEAK).** Lets you create custom, branded versions of IE11. To get more information and to download the tool, see [Internet Explorer Administration Kit (IEAK) Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=392490).
 
 -   **Unattend Settings.** Lets you update the Unattend.xml file, to customize the home page, favorites, search providers, feeds, Accelerators, Web Slices, and settings for top result searches. To get more information, see the [Unattend Settings: Microsoft-Windows-IE-InternetExplorer](http://go.microsoft.com/fwlink/p/?LinkId=263709).
 

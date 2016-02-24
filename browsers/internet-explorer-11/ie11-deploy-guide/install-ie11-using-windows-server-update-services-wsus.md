@@ -2,7 +2,7 @@
 Description: 'Install Internet Explorer 11 (IE11) - Windows Server Update Services (WSUS)'
 MS-HAID: 'p\_ie11deploy.install\_internet\_explorer\_11\_\_ie11\_\_\_\_windows\_server\_update\_services\_\_wsus\_'
 MSHAttr: 'PreferredLib:/library'
-title: 'Install Internet Explorer 11 (IE11) - Windows Server Update Services (WSUS)'
+title: Install Internet Explorer 11 (IE11) - Windows Server Update Services (WSUS) (Internet Explorer 11 for IT Pros)
 ---
 
 # 

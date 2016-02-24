@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Fix validation problems using the Enterprise Mode Site List Manager tool
+title: Fix validation problems using the Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
 ---
 
 # Fix validation problems using the Enterprise Mode Site List Manager tool
@@ -33,8 +33,8 @@ There are typically 3 types of errors you’ll see:
 Another possibility is that redirection happens multiple times, with an intermediary site experiencing compatibility issues. For example, an employee types a short URL that then redirects multiple times, finally ending up on a non-intranet site. In this situation, you might want to add the intermediary URLs to your Enterprise Mode site list, in case there’s logic in one of them that has compatibility issues.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
  
 

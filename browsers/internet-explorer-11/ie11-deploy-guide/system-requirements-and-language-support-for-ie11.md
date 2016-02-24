@@ -2,7 +2,7 @@
 Description: 'Internet Explorer 11 is available for a number of systems and languages. This topic provides info about the minimum system requirements and language support.'
 MS-HAID: 'p\_ie11deploy.system\_requirements\_and\_language\_support\_for\_internet\_explorer\_11\_\_ie11\_'
 MSHAttr: 'PreferredLib:/library'
-title: 'System requirements and language support for Internet Explorer 11 (IE11)'
+title: System requirements and language support for Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ---
 
 # 
@@ -104,7 +104,7 @@ You might experience start up issues where IE11 fails to launch an application t
 ## Support for multiple languages
 
 
-IE11 is available in 108 languages for Windows 8.1 and 97 languages for Windows 7 with SP1. For the list of languages and download links, see [Windows 8 Language Packs](http://go.microsoft.com/fwlink/?LinkId=281818) and [Windows 7 Language Packs](http://go.microsoft.com/fwlink/?LinkId=281819).
+IE11 is available in 108 languages for Windows 8.1 and 97 languages for Windows 7 with SP1. For the list of languages and download links, see [Windows 8 Language Packs](http://go.microsoft.com/fwlink/p/?LinkId=281818) and [Windows 7 Language Packs](http://go.microsoft.com/fwlink/p/?LinkId=281819).
 
 Computers running localized versions of Windows should run the same version of IE11. For example, if your employees use the Spanish edition of Windows, you should deploy the Spanish version of IE11. On the other hand, if your employees use multiple localized versions of Windows, like Spanish, French, and Catalan, you should install IE11 in one of the languages, and then install language packs for the others.
 

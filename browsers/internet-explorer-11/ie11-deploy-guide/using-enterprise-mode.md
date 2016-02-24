@@ -2,7 +2,7 @@
 Description: 'Enterprise Mode gives you a way for your legacy websites and apps to run using emulated versions of Windows Internet Explorer 7 or Windows Internet Explorer 8, while your new sites and apps run using Internet Explorer 11, including modern standards and features.'
 MS-HAID: 'p\_ie11deploy.using\_enterprise\_mode'
 MSHAttr: 'PreferredLib:/library'
-title: Using IE7 Enterprise Mode or IE8 Enterprise Mode
+title: Using IE7 Enterprise Mode or IE8 Enterprise Mode (Internet Explorer 11 for IT Pros)
 ---
 
 # Using IE7 Enterprise Mode or IE8 Enterprise Mode
@@ -50,8 +50,8 @@ For instructions and more info about how to fix your compatibility issues using 
 ## Related topics
 
 
-[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
  
 

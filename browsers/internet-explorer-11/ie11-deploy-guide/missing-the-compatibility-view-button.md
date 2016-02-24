@@ -2,7 +2,7 @@
 Description: 'Compatibility View was introduced in Windows Internet Explorer 8 to help existing content continue to work with Windows Internet Explorer 7, while developers updated their content to support modern interoperable web standards.'
 MS-HAID: 'p\_ie11deploy.missing\_the\_compatibility\_view\_button'
 MSHAttr: 'PreferredLib:/library'
-title: Missing the Compatibility View Button
+title: Missing the Compatibility View Button (Internet Explorer 11 for IT Pros)
 ---
 
 # Missing the Compatibility View Button

@@ -1,11 +1,11 @@
 ---
-Description: 'Enable and disable add-ons using administrative templates and group policy'
+Description: Enable and disable add-ons using administrative templates and group policy
 ms.assetid: c6fe1cd3-0bfc-4d23-8016-c9601f674c0b
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-title: 'Enable and disable add-ons using administrative templates and group policy'
+title: Enable and disable add-ons using administrative templates and group policy (Internet Explorer 11 for IT Pros)
 ---
 
 # Enable and disable add-ons using administrative templates and group policy

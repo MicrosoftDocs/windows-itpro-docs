@@ -2,7 +2,7 @@
 Description: '.NET Framework problems with Internet Explorer 11'
 MS-HAID: 'p\_ie11deploy.net\_framework\_problems\_with\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: '.NET Framework problems with Internet Explorer 11'
+title: .NET Framework problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # .NET Framework problems with Internet Explorer 11
@@ -18,7 +18,7 @@ You can get IE11 to use managed browser hosting controls again, by:
 
 2.  **For x64 systems or for 64-bit processes on x64 systems:** Go to the HKLM/SOFTWARE/Wow6432Node/.NETFramework registry key and change the **EnableIEHosting** value to 1.
 
-For more information, see the [Web Applications](http://go.microsoft.com/fwlink/?LinkId=308903) section of the Application Compatibility in the .NET Framework 4.5 page.
+For more information, see the [Web Applications](http://go.microsoft.com/fwlink/p/?LinkId=308903) section of the Application Compatibility in the .NET Framework 4.5 page.
 
  
 

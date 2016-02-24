@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-title: Group Policy management tools
+title: Group Policy management tools (Internet Explorer 11 for IT Pros)
 ---
 
 # Group Policy management tools
@@ -14,7 +14,7 @@ Group Policy, based on Microsoft Active Directory Domain Services (AD DS), lets 
 By using Group Policy, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple Internet Explorer 11 security settings in a GPO that's linked to a domain, and then apply all of those settings to every computer in the domain.
 
 **Note**<br>  
-For more information about Group Policy, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.
+For more information about Group Policy, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.
 
 ## Managing settings with GPOs
 After deploying IE11 to your organization, you can continue to manage the browser settings by using Active Directory Domain Services (AD DS) together with the following Group Policy-related setting management groups:

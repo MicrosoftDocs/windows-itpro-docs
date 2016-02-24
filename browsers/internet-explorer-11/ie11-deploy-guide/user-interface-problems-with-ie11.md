@@ -2,7 +2,7 @@
 Description: User interface problems with Internet Explorer 11
 MS-HAID: 'p\_ie11deploy.user\_interface\_problems\_with\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: User interface problems with Internet Explorer 11
+title: User interface problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # User interface problems with Internet Explorer 11

@@ -2,7 +2,7 @@
 Description: Set up Enterprise Mode logging and data collection
 MS-HAID: 'p\_ie11deploy.set\_up\_enterprise\_mode\_logging\_and\_data\_collection'
 MSHAttr: 'PreferredLib:/library'
-title: Set up Enterprise Mode logging and data collection
+title: Set up Enterprise Mode logging and data collection (Internet Explorer 11 for IT Pros)
 ---
 
 # Set up Enterprise Mode logging and data collection
@@ -40,7 +40,7 @@ When you turn logging on, you need a valid URL that points to a server that can 
 
 ![](../common/wedge.gif)**To set up an endpoint server**
 
-1.  Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](http://go.microsoft.com/fwlink/?LinkId=507609).
+1.  Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](http://go.microsoft.com/fwlink/p/?LinkId=507609).
 
 2.  Open Internet Information Services (IIS) and turn on the ASP components from the **Add Roles and Features Wizard**, **Server Roles** page.
 
@@ -79,7 +79,7 @@ This is what your log files will look like after you set everything up and at le
 ## Using the GitHub sample to collect your data
 
 
-Microsoft has created the [EMIE-Data\_Collection\_Sample](http://go.microsoft.com/fwlink/?LinkId=507401) that shows how to collect your Enterprise Mode reports. This sample only shows how to collect data, it doesn’t show how to aggregate the data into your Enterprise Mode site list.
+Microsoft has created the [EMIE-Data\_Collection\_Sample](http://go.microsoft.com/fwlink/p/?LinkId=507401) that shows how to collect your Enterprise Mode reports. This sample only shows how to collect data, it doesn’t show how to aggregate the data into your Enterprise Mode site list.
 
 This sample starts with you turning on Enterprise Mode and logging (either through Group Policy, or by manually setting the EnterpriseMode registry key) so that your users can use Enterprise Mode locally. For the steps to do this, go to [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md).
 
@@ -96,7 +96,7 @@ For logging, you’re going to need a valid URL that points to a server that can
 
 1.  Set up a server to collect your Enterprise Mode information from your users.
 
-2.  Go to the Internet Explorer/[EMIE-Data\_Collection\_Sample](http://go.microsoft.com/fwlink/?LinkId=507401) page on GitHub and tap or click the **Download ZIP** button to download the complete project.
+2.  Go to the Internet Explorer/[EMIE-Data\_Collection\_Sample](http://go.microsoft.com/fwlink/p/?LinkId=507401) page on GitHub and tap or click the **Download ZIP** button to download the complete project.
 
 3.  Open Microsoft Visual Studio 2013 with Update 2, and then open the PhoneHomeSample.sln file.
 
@@ -164,8 +164,8 @@ If you have errors while you’re publishing your project, you should try to upd
 ## Related topics
 
 
-[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 [What is Enterprise Mode?](what-is-enterprise-mode.md)
 [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
 [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)
