@@ -1,18 +1,19 @@
 ---
-Description: 'Install Internet Explorer 11 (IE11) - Windows Server Update Services (WSUS)'
-MS-HAID: 'p\_ie11deploy.install\_internet\_explorer\_11\_\_ie11\_\_\_\_windows\_server\_update\_services\_\_wsus\_'
-MSHAttr: 'PreferredLib:/library'
+Description: How to install the Internet Explorer 11 update using Windows Server Update Services (WSUS)'
+ms.assetid: 6cbd6797-c670-4236-8423-e0919478f2ce
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 title: Install Internet Explorer 11 (IE11) using Windows Server Update Services (WSUS) (Internet Explorer 11 for IT Pros)
 ---
 
 # Install Internet Explorer 11 (IE11) using Windows Server Update Services (WSUS)
 Windows Server Update Services (WSUS) lets you download a single copy of the Microsoft product update and cache it on your local WSUS servers. You can then configure your computers to get the update from your local servers instead of Windows Update. For more information about WSUS, see [Windows Server Update Services](http://go.microsoft.com/fwlink/p/?LinkID=276790).
 
-![](../common/wedge.gif)**To import from Windows Update to WSUS**
+**To import from Windows Update to WSUS**
 
-1.  Open your WSUS admin site. For example, `http://WSUSServerName/WSUSAdmin/`.
-
-    Where *WSUSServerName* is the name of your WSUS server.
+1.  Open your WSUS admin site. For example, `http://<wsus_server-name>/WSUSAdmin/`.<P>
+Where `<wsus_server_name>` is the name of your WSUS server.
 
 2.  Choose the top server node or the **Updates** node, and then click **Import Updates**.
 
@@ -24,7 +25,7 @@ Windows Server Update Services (WSUS) lets you download a single copy of the Mic
 
     You can also download the updates without importing them by unchecking the **Import directly into Windows Server Update Services** box.
 
-![](../common/wedge.gif)**To approve Internet Explorer in WSUS for installation**
+**To approve Internet Explorer in WSUS for installation**
 
 1.  Open your WSUS admin site and check the **Review synchronization settings** box from the **To Do** list.
 

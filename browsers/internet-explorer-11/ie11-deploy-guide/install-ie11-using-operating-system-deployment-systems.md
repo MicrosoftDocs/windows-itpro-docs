@@ -29,7 +29,7 @@ MDT adds IE11 to your Windows images, regardless whether you are creating or dep
 
 2.  Go to the **Specify Directory** page, search for your folder with your update files (.cab and .msu) for import, and click **Next**.
 
-3.  Go to the **Summary** page and click **Next**.<br>
+3.  Go to the **Summary** page and click **Next**.<p>
 MDT starts importing your update files.<p>**Note**<br>Ignore any warnings that say, "Skipping invalid CAB file". This shows up because the **Import OS Packages** wizard skips the IE11\_Support.cab file, which isn't an actual update file.
 
 4.  After the import finishes, click **Finish**.

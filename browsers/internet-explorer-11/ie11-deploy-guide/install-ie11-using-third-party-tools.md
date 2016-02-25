@@ -1,5 +1,5 @@
 ---
-Description: How to install Internet Explorer 11 (IE11) using third-party tools and command-line options.
+Description: How to install the Internet Explorer 11 update using third-party tools and command-line options.
 ms.assetid: 30190c66-49f7-4ca4-8b57-a47656aa0c7e
 ms.prod: IE11
 ms.mktglfcycl: deploy

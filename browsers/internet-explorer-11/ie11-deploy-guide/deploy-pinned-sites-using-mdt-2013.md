@@ -62,7 +62,7 @@ Next, you must enable your deployment share to copy the bing.website and msn.web
 
 2.  In the `$OEM$` folder, create the path `$1\Users\Public\Public Links`. If the `$OEM$` folder doesn’t exist, create it at the root of your deployment share.
 
-3.  Copy the bing.website and msn.website files from your desktop to `$OEM$\$1\Users\Public\Public Links` in your deployment share.<br>
+3.  Copy the bing.website and msn.website files from your desktop to `$OEM$\$1\Users\Public\Public Links` in your deployment share.
 
 ### Step 3: Copying .website files to target computers
 After your operating system is installed on the target computer, you need to copy the .website files over so they can be pinned to the taskbar.
