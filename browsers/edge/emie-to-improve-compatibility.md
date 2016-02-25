@@ -1,5 +1,5 @@
 ---
-Description: If you have specific web sites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the web sites will automatically open using Internet Explorer 11.
+Description: If you have specific sites that have compatibility problems with Microsoft Edge, use the Enterprise Mode site list so web sites automatically open using IE11.
 ms.assetid: 89C75F7E-35CA-4CA8-96FA-B3B498B53BE4
 ms.prod: edge
 ms.mktglfcycl: support
