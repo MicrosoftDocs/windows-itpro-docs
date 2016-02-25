@@ -2,10 +2,10 @@
 Description: 'Install Internet Explorer 11 (IE11) - Third-party tools'
 MS-HAID: 'p\_ie11deploy.install\_internet\_explorer\_11\_\_ie11\_\_\_\_third\_party\_tools'
 MSHAttr: 'PreferredLib:/library'
-title: Install Internet Explorer 11 (IE11) - Third-party tools (Internet Explorer 11 for IT Pros)
+title: Install Internet Explorer 11 (IE11) using third-party tools (Internet Explorer 11 for IT Pros)
 ---
 
-#  - Third-party tools
+# Install Internet Explorer 11 (IE11) using third-party tools
 
 
 You can install Internet Explorer 11 (IE11) using third-party electronic software distribution (ESD) systems and these command-line options:

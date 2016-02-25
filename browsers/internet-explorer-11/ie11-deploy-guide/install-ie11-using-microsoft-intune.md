@@ -4,7 +4,7 @@ ms.assetid: b2dfc08c-78af-4c22-8867-7be3b92b1616
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
-title: Install Internet Explorer 11 (IE11) - Microsoft Intune (Internet Explorer 11 for IT Pros)
+title: Install Internet Explorer 11 (IE11) using Microsoft Intune (Internet Explorer 11 for IT Pros)
 ---
 
 #  Install Internet Explorer 11 (IE11) using Microsoft Intune

@@ -2,12 +2,10 @@
 Description: 'Install Internet Explorer 11 (IE11) - Windows Server Update Services (WSUS)'
 MS-HAID: 'p\_ie11deploy.install\_internet\_explorer\_11\_\_ie11\_\_\_\_windows\_server\_update\_services\_\_wsus\_'
 MSHAttr: 'PreferredLib:/library'
-title: Install Internet Explorer 11 (IE11) - Windows Server Update Services (WSUS) (Internet Explorer 11 for IT Pros)
+title: Install Internet Explorer 11 (IE11) using Windows Server Update Services (WSUS) (Internet Explorer 11 for IT Pros)
 ---
 
-# 
-
-
+# Install Internet Explorer 11 (IE11) using Windows Server Update Services (WSUS)
 Windows Server Update Services (WSUS) lets you download a single copy of the Microsoft product update and cache it on your local WSUS servers. You can then configure your computers to get the update from your local servers instead of Windows Update. For more information about WSUS, see [Windows Server Update Services](http://go.microsoft.com/fwlink/p/?LinkID=276790).
 
 ![](../common/wedge.gif)**To import from Windows Update to WSUS**
