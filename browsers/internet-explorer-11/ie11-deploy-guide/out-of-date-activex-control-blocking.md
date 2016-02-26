@@ -108,76 +108,22 @@ Out-of-date ActiveX control blocking is turned off in the Local Intranet Zone; t
 
 |Setting |Category path |Supported on |Help text |
 |--------|--------------|-------------|----------|
-|Turn on ActiveX control logging in IE |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting determines whether IE saves log information for ActiveX controls.<p>If you enable this setting, IE logs ActiveX control information (including the source URI that loaded the control and whether it was blocked) to a local file.<p>If you disable or don't configure this setting, IE won't log ActiveX control information.<p>Note that you can turn this setting on or off regardless of the <b>Turn off blocking of outdated ActiveX controls for IE</b> or <b>Turn off blocking of outdated ActiveX controls for IE on specific domains</b> settings. |
-|Remove the <b>Run this time</b> button for outdated ActiveX controls in IE |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management`|Internet Explorer 8 through IE11 |This setting allows you stop users from seeing the <b>Run this time</b> button and from running specific outdated ActiveX controls in IE.<p>If you enable this setting, users won't see the <b>Run this time</b> button on the warning message that appears when IE blocks an outdated ActiveX control.<p>If you disable or don't configure this setting, users will see the <b>Run this time</b> button on the warning message that appears when IE blocks an outdated ActiveX control. Clicking this button lets the user run the outdated ActiveX control once. |
-|Turn off blocking of outdated ActiveX controls for IE on specific domains |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting allows you to manage a list of domains on which IE will stop blocking outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone.<p>If you enable this setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in IE. Each domain entry must be formatted like one of the following:<ul><li><b>&quot;domainname.TLD&quot;.</b> For example, if you want to include *.contoso.com/*, use &quot;contoso.com&quot;.</li><li><b>&quot;hostname&quot;.</b> For example, if you want to include http://example, use &quot;example&quot;.</li><li><b>&quot;file:///path/filename.htm&quot;.</b> For example, use file:///C:/Users/contoso/Desktop/index.htm.</li></ul><p>If you disable or don't configure this setting, the list is deleted and IE continues to block specific outdated ActiveX controls on all domains in the Internet Zone. |
+|Turn on ActiveX control logging in IE |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting determines whether IE saves log information for ActiveX controls.<p>If you enable this setting, IE logs ActiveX control information (including the source URI that loaded the control and whether it was blocked) to a local file.<p>If you disable or don't configure this setting, IE won't log ActiveX control information.<p>Note that you can turn this setting on or off regardless of the **Turn off blocking of outdated ActiveX controls for IE** or **Turn off blocking of outdated ActiveX controls for IE on specific domains** settings. |
+|Remove the **Run this time** button for outdated ActiveX controls in IE |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management`|Internet Explorer 8 through IE11 |This setting allows you stop users from seeing the **Run this time** button and from running specific outdated ActiveX controls in IE.<p>If you enable this setting, users won't see the **Run this time** button on the warning message that appears when IE blocks an outdated ActiveX control.<p>If you disable or don't configure this setting, users will see the **Run this time** button on the warning message that appears when IE blocks an outdated ActiveX control. Clicking this button lets the user run the outdated ActiveX control once. |
+|Turn off blocking of outdated ActiveX controls for IE on specific domains |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting allows you to manage a list of domains on which IE will stop blocking outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone.<p>If you enable this setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in IE. Each domain entry must be formatted like one of the following:<ul><li>**"domainname.TLD".** For example, if you want to include `*.contoso.com/*`, use "contoso.com".</li><li>**"hostname".** For example, if you want to include `http://example`, use "example".</li><li>**"file:///path/filename.htm"**. For example, use `file:///C:/Users/contoso/Desktop/index.htm`.</li></ul><p>If you disable or don't configure this setting, the list is deleted and IE continues to block specific outdated ActiveX controls on all domains in the Internet Zone. |
 |Turn off blocking of outdated ActiveX controls for IE |`Administrative Templates\Windows Components\Internet Explorer\Security Features\Add-on Management` |Internet Explorer 8 through IE11 |This setting determines whether IE blocks specific outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone.<p>If you enable this setting, IE stops blocking outdated ActiveX controls.<p>If you disable or don't configure this setting, IE continues to block specific outdated ActiveX controls. |
-|Remove the <b>Update</b> button in the out-of-date ActiveX control blocking notification for IE |This functionality is only available through the registry |Internet Explorer 8 through IE11 |This setting determines whether the out-of-date ActiveX control blocking notification shows the **Update** button. This button points users to update specific out-of-date ActiveX controls in IE. |
+|Remove the **Update** button in the out-of-date ActiveX control blocking notification for IE |This functionality is only available through the registry |Internet Explorer 8 through IE11 |This setting determines whether the out-of-date ActiveX control blocking notification shows the **Update** button. This button points users to update specific out-of-date ActiveX controls in IE. |
 
-If you don't want to use Group Policy, you can also turn these settings on or off using the registry. You can update the registry manually or you can use an elevated command prompt and these commands to automatically turn on the settings.
+
+If you don't want to use Group Policy, you can also turn these settings on or off using the registry. You can update the registry manually.
+
 |Setting                  |Registry setting                                                |
 |-------------------------|----------------------------------------------------------------|
-|Turn on ActiveX control logging in IE |`reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Ext" /v AuditModeEnabled /t REG_DWORD /d 1 /f`
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Setting</th>
-<th align="left">Registry setting</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p></td>
-<td align="left"><p><code></code>
-<p>Where:
-<ul>
-<li><p><b>0 or not configured</b> = Logs ActiveX control information (including the source URI that loaded the control and whether it was blocked) to a local file.</li>
-<li><p><b>1</b> = Logs ActiveX control information.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Remove <b>Run this time</b> button for outdated ActiveX controls in IE</td>
-<td align="left"><p><code>reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Ext&quot; /v RunThisTimeEnabled /t REG_DWORD /d 0 /f</code>
-<p>Where:
-<ul>
-<li><p><b>0</b> = Removes the <b>Run this time</b> button.</li>
-<li><p><b>1 or not configured</b> = Leaves the <b>Run this time</b> button.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Turn off blocking of outdated ActiveX controls for IE on specific domains</td>
-<td align="left"><p><code>reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Ext\Domain&quot; /v contoso.com /t REG_SZ /f</code>
-<p>Where:
-<ul>
-<li><p><b>contoso.com</b> = A single domain on which outdated ActiveX controls won't be blocked in IE. Use a new <code>reg add</code> command for each domain you wish to add to the Allow list.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Turn off blocking of outdated ActiveX controls for IE</td>
-<td align="left"><p><code>reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Ext&quot; /v VersionCheckEnabled /t REG_DWORD /d 0 /f</code>
-<p>Where:
-<ul>
-<li><p><b>0</b> = Stops blocking outdated ActiveX controls.</li>
-<li><p><b>1 or not configured</b> = Continues to block specific outdated ActiveX controls.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Remove the <b>Update</b> button in the out-of-date ActiveX control blocking notification for IE</td>
-<td align="left"><p><code>reg add &quot;HKCU\Software\Microsoft\Internet Explorer\VersionManager&quot; /v UpdateEnabled /t REG_DWORD /d 0 /f</code>
-<ul>
-<li><p><b>0</b> = Removes the <b>Update</b> button.</li>
-<li><p><b>1 or not configured</b> = Leaves the <b>Update</b> button.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Turn on ActiveX control logging in IE |`reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Ext" /v AuditModeEnabled /t REG_DWORD /d 1 /f`<p>Where:<p><ul><li>**0 or not configured.** Logs ActiveX control information (including the source URI that loaded the control and whether it was blocked) to a local file.</li><li>**1.** Logs ActiveX control information.</li></ul> |
+|Remove **Run this time** button for outdated ActiveX controls in IE |`reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Ext" /v RunThisTimeEnabled /t REG_DWORD /d 0 /f`<p>Where:<p><ul><li>**0.** Removes the **Run this time** button.</li><li>**1 or not configured.** Leaves the **Run this time** button.</li></ul> |
+|Turn off blocking of outdated ActiveX controls for IE on specific domains |<code>reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Ext\Domain" /v contoso.com /t REG_SZ /f</code><p>Where:<p><ul><li>**contoso.com.** A single domain on which outdated ActiveX controls won't be blocked in IE. Use a new `reg add` command for each domain you wish to add to the **Allow** list.</li></ul> |
+|Turn off blocking of outdated ActiveX controls for IE |`reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Ext" /v VersionCheckEnabled /t REG_DWORD /d 0 /f`<p>Where:<p><ul><li>**0.** Stops blocking outdated ActiveX controls.</li><li>**1 or not configured.** Continues to block specific outdated ActiveX controls.</li></ul> |
+|Remove the **Update** button in the out-of-date ActiveX control blocking notification for IE |`reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v UpdateEnabled /t REG_DWORD /d 0 /f`<p>Where:<p><ul><li>**0.** Removes the **Update** button</li><li>**1 or not configured.** Leaves the **Update** button.</li></ul>
 
 ## Inventory your ActiveX controls
 
@@ -273,7 +219,7 @@ Here’s a detailed example and description of what’s included in the VersionA
     <tr class="even">
     <td align="left"><p>Trusted domain</td>
     <td align="left"><p>Allowed</td>
-    <td align="left"><p>The ActiveX control was loaded on a domain listed in the <b>Turn off blocking of outdated ActiveX controls for IE on specific domains</b> setting.</td>
+    <td align="left"><p>The ActiveX control was loaded on a domain listed in the **Turn off blocking of outdated ActiveX controls for IE on specific domains** setting.</td>
     </tr>
     <tr class="odd">
     <td align="left"><p>File doesn’t exist</td>
