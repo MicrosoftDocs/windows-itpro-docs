@@ -126,65 +126,24 @@ If you don't want to use Group Policy, you can also turn these settings on or of
 |Remove the **Update** button in the out-of-date ActiveX control blocking notification for IE |`reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v UpdateEnabled /t REG_DWORD /d 0 /f`<p>Where:<p><ul><li>**0.** Removes the **Update** button</li><li>**1 or not configured.** Leaves the **Update** button.</li></ul>
 
 ## Inventory your ActiveX controls
-
-
 You can inventory the ActiveX controls being used in your company, by turning on the **Turn on ActiveX control logging in IE** setting:
 
 -   **Windows 10:** Through a comma-separated values (.csv) file or through a local Windows Management Instrumentation (WMI) class.
 
 -   **All other versions of Microsoft Windows:** Through a .csv file only.
 
-### Inventory your ActiveX controls by using a .CSV file
 
-If you decide to inventory the ActiveX controls being used in your company by turning on the **Turn on ActiveX control logging in IE** setting, IE logs the ActiveX control information to the ` %LOCALAPPDATA%\Microsoft\Internet Explorer\AuditMode\VersionAuditLog.csv` file.
+### Inventory your ActiveX controls by using a .CSV file
+If you decide to inventory the ActiveX controls being used in your company by turning on the **Turn on ActiveX control logging in IE** setting, IE logs the ActiveX control information to the `%LOCALAPPDATA%\Microsoft\Internet Explorer\AuditMode\VersionAuditLog.csv` file.
 
 Here’s a detailed example and description of what’s included in the VersionAuditLog.csv file.
 
-<table style="width:100%;">
-<colgroup>
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Source URI</th>
-<th align="left">File path</th>
-<th align="left">Product version</th>
-<th align="left">File version</th>
-<th align="left">Allowed/Blocked</th>
-<th align="left">Reason</th>
-<th align="left">EPM-compatible</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>http://contoso.com/test1.html</td>
-<td align="left"><p>C:\Windows\System32\Macromed\Flash\Flash.ocx</td>
-<td align="left"><p>14.0.0.125</td>
-<td align="left"><p>14.0.0.125</td>
-<td align="left"><p>Allowed</td>
-<td align="left"><p>Not in blocklist</td>
-<td align="left"><p>EPM compatible</td>
-</tr>
-<tr class="even">
-<td align="left"><p>http://contoso.com/test2.html</td>
-<td align="left"><p>C:\Program Files\Java\jre6\bin\jp2iexp.dll</td>
-<td align="left"><p>6.0.410.2</td>
-<td align="left"><p>6.0.410.2</td>
-<td align="left"><p>Blocked</td>
-<td align="left"><p>Out of date</td>
-<td align="left"><p>Not EPM compatible</td>
-</tr>
-</tbody>
-</table>
+|Source URI |File path |Product version |File version |Allowed/Blocked |Reason |EPM-compatible |
+|-----------|----------|----------------|-------------|----------------|-------|---------------|
+|`http://contoso.com/test1.html` |C:\Windows\System32\Macromed\Flash\Flash.ocx |14.0.0.125 |14.0.0.125 |Allowed |Not in blocklist |EPM-compatible |
+|`http://contoso.com/test2.html` |C:\Program Files\Java\jre6\bin\jp2iexp.dll |6.0.410.2 |6.0.410.2 |Blocked |Out of date |Not EPM-compatible |
 
- 
-
+**Where:**
 -   **Source URI.** The URL of the page that loaded the ActiveX control.
 
 -   **File path.** The location of the binary that implements the ActiveX control.
@@ -194,86 +153,27 @@ Here’s a detailed example and description of what’s included in the VersionA
 -   **File version.** The file version of the binary that implements the ActiveX control.
 
 -   **Allowed/Blocked** Whether IE blocked the ActiveX control.
+ 
+-   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](http://go.microsoft.com/fwlink/p/?LinkId=403865).<p>**Note**<br>Enhanced Protected Mode isn’t supported on Internet Explorer 9 or earlier versions of IE. Therefore, if you’re using Internet Explorer 8 or Internet Explorer 9, all ActiveX controls will always be marked as not EPM-compatible.
 
 -   **Reason.** The ActiveX control can be blocked or allowed for any of these reasons:
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Reason</th>
-    <th align="left">Corresponds to</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Version not in blocklist</td>
-    <td align="left"><p>Allowed</td>
-    <td align="left"><p>The version of the loaded ActiveX control is explicitly allowed by the IE version list.</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Trusted domain</td>
-    <td align="left"><p>Allowed</td>
-    <td align="left"><p>The ActiveX control was loaded on a domain listed in the **Turn off blocking of outdated ActiveX controls for IE on specific domains** setting.</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>File doesn’t exist</td>
-    <td align="left"><p>Allowed</td>
-    <td align="left"><p>The loaded ActiveX control is missing required binaries to run correctly.</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Out-of-date</td>
-    <td align="left"><p>Blocked</td>
-    <td align="left"><p>The loaded ActiveX control is explicitly blocked by the IE version list because it is out-of-date.</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Not in blocklist</td>
-    <td align="left"><p>Allowed</td>
-    <td align="left"><p>The loaded ActiveX control isn’t in the IE version list.</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Managed by policy</td>
-    <td align="left"><p>Allowed</td>
-    <td align="left"><p>The loaded ActiveX control is managed by a Group Policy setting that isn’t listed here, and will be managed in accordance with that Group Policy setting.</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Trusted Site Zone or intranet</td>
-    <td align="left"><p>Allowed</td>
-    <td align="left"><p>The ActiveX control was loaded in the Trusted Sites Zone or the Local Intranet Zone.</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Hardblocked</td>
-    <td align="left"><p>Blocked</td>
-    <td align="left"><p>The loaded ActiveX control is blocked in IE because it contains known security vulnerabilities.</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Unknown</td>
-    <td align="left"><p>Allowed or blocked</td>
-    <td align="left"><p>None of the above apply.</td>
-    </tr>
-    </tbody>
-    </table>
-
-     
-
--   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](http://go.microsoft.com/fwlink/p/?LinkId=403865).
-
-    **Note**  
-    Enhanced Protected Mode isn’t supported on Internet Explorer 9 or earlier versions of IE. Therefore, if you’re using Internet Explorer 8 or Internet Explorer 9, all ActiveX controls will always be marked as not EPM-compatible.
-
-     
+|Reason                   |Corresponds to |Description                                     |
+|-------------------------|---------------|-------------------------------------------------|
+|Version not in blocklist |Allowed        |The version of the loaded ActiveX control is explicitly allowed by the IE version list. |
+|Trusted domain           |Allowed        |The ActiveX control was loaded on a domain listed in the **Turn off blocking of outdated ActiveX controls for IE on specific domains** setting. |
+|File doesn’t exist       |Allowed        |The loaded ActiveX control is missing required binaries to run correctly. |
+|Out-of-date              |Blocked        |The loaded ActiveX control is explicitly blocked by the IE version list because it is out-of-date. |
+|Not in blocklist         |Allowed        |The loaded ActiveX control isn’t in the IE version list. |
+|Managed by policy        |Allowed        |The loaded ActiveX control is managed by a Group Policy setting that isn’t listed here, and will be managed in accordance with that Group Policy setting. |
+|Trusted Site Zone or intranet |Allowed   |The ActiveX control was loaded in the Trusted Sites Zone or the Local Intranet Zone. |
+|Hardblocked              |Blocked        |The loaded ActiveX control is blocked in IE because it contains known security vulnerabilities. |
+|Unknown                  |Allowed or blocked |None of the above apply. |
 
 ### Inventory your ActiveX controls by using a local WMI class
-
 For Windows 10 you also have the option to log your inventory info to a local WMI class. Info logged to this class includes all of info you get from the .csv file, plus the CLSID of the loaded ActiveX control or the name of any apps started from an ActiveX control.
 
 ### Before you begin
-
 Before you can use WMI to inventory your ActiveX controls, you need to [download the configuration package (.zip file)](http://go.microsoft.com/fwlink/p/?LinkId=616971), which includes:
 
 -   **ConfigureWMILogging.ps1**. A Windows PowerShell script.
@@ -282,19 +182,16 @@ Before you can use WMI to inventory your ActiveX controls, you need to [download
 
 Before running the PowerShell script, you must copy both the .ps1 and .mof file to the same directory location, on the client computer.
 
-![](../common/wedge.gif)**To configure IE to use WMI logging**
+**To configure IE to use WMI logging**
 
-1.  Open your Group Policy editor and turn on the **Administrative Templates\\Windows Components\\Internet Explorer\\Turn on ActiveX control logging in IE** setting.
+1.  Open your Group Policy editor and turn on the `Administrative Templates\Windows Components\Internet Explorer\Turn on ActiveX control logging in IE` setting.
 
-2.  On the client device, start PowerShell in elevated mode (using admin privileges) and run ConfigureWMILogging.ps1 by by-passing the PowerShell execution policy, using this command: `powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1`. For more info, see [about\_Execution\_Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
+2.  On the client device, start PowerShell in elevated mode (using admin privileges) and run `ConfigureWMILogging.ps1` by by-passing the PowerShell execution policy, using this command:
+```
+powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1
+``` 
+For more info, see [about_Execution_Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
 
 3.  **Optional:** Set up your domain firewall for WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
 
 The inventory info appears in the WMI class, `IEAXControlBlockingAuditInfo`, located in the WMI namespace, *root\\cimv2\\IETelemetry*. To collect the inventory info from your client computers, we recommend using System Center 2012 R2 Configuration Manager or any agent that can access the WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
-
- 
-
- 
-
-
-
