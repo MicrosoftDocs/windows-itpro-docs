@@ -1,40 +1,22 @@
 ---
 Description: New group policy settings for Internet Explorer 11
-MS-HAID: 'p\_ie11deploy.new\_group\_policy\_settings\_for\_internet\_explorer\_11'
-MSHAttr: 'PreferredLib:/library'
+ms.assetid: 669cc1a6-e2cb-403f-aa31-c1de52a615d1
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 title: New group policy settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # New group policy settings for Internet Explorer 11
-
-
 Internet Explorer 11 gives you some new Group Policy settings to help you manage your company's web browser configurations, including:
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Category path</th>
-<th align="left">Supported on</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Turn off loading websites and content in the background to optimize performance</p></td>
-<td align="left"><p>Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Advanced Page</p></td>
-<td align="left"><p>IE11</p></td>
-<td align="left"><p>This policy setting determines whether Internet Explorer preemptively loads websites and content in the background, speeding up performance such that when the user clicks a hyperlink, the background page seamlessly switches into view.</p>
-<p>If you enable this policy setting, IE doesn't load any websites or content in the background.</p>
-<p>If you disable this policy setting, IE preemptively loads websites and content in the background.</p>
-<p>If you don’t configure this policy setting, users can turn this behavior on or off, using IE settings. This feature is turned on by default.</p></td>
-</tr>
+|Policy                     |Category path                 |Supported on |Explanation                        |
+|---------------------------|------------------------------|-------------|-----------------------------------|
+|Turn off loading websites and content in the background to optimize performance |`Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Advanced Page` |IE11 |This policy setting determines whether Internet Explorer preemptively loads websites and content in the background, speeding up performance such that when the user clicks a hyperlink, the background page seamlessly switches into view.<p>If you enable this policy setting, IE doesn't load any websites or content in the background.<p>If you disable this policy setting, IE preemptively loads websites and content in the background.<p>If you don’t configure this policy setting, users can turn this behavior on or off, using IE settings. This feature is turned on by default. |
+|
+
+
 <tr class="even">
 <td align="left"><p>Allow Microsoft services to provide enhanced suggestions as the user types in the Address bar</p></td>
 <td align="left"><p>Administrative Templates\Windows Components\Internet Explorer</p></td>
