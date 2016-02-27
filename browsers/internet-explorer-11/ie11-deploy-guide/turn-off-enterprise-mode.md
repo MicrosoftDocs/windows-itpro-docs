@@ -1,5 +1,5 @@
 ---
-Description: 'It’s important that you test the sites you’re adding, or considering removing, from your Enterprise Mode site list.'
+Description: It’s important that you test the sites you’re adding, or considering removing, from your Enterprise Mode site list.
 MS-HAID: 'p\_ie11deploy.turn\_off\_enterprise\_mode'
 MSHAttr: 'PreferredLib:/library'
 title: Turn off Enterprise Mode (Internet Explorer 11 for IT Pros)

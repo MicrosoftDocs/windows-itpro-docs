@@ -1,5 +1,5 @@
 ---
-Description: 'The Internet Explorer 11 Blocker Toolkit lets you turn off the automatic delivery of IE11 through the Automatic Updates feature of Windows Update.'
+Description: The Internet Explorer 11 Blocker Toolkit lets you turn off the automatic delivery of IE11 through the Automatic Updates feature of Windows Update.
 MS-HAID: 'p\_ie11deploy.what\_is\_the\_internet\_explorer\_11\_blocker\_toolkit'
 MSHAttr: 'PreferredLib:/library'
 title: What is the Internet Explorer 11 Blocker Toolkit? (Internet Explorer 11 for IT Pros)

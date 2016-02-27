@@ -1,5 +1,5 @@
 ---
-Description: 'Enterprise Mode gives you a way for your legacy websites and apps to run using emulated versions of Windows Internet Explorer 7 or Windows Internet Explorer 8, while your new sites and apps run using Internet Explorer 11, including modern standards and features.'
+Description: Enterprise Mode gives you a way for your legacy websites and apps to run using emulated versions of Windows Internet Explorer 7 or Windows Internet Explorer 8, while your new sites and apps run using Internet Explorer 11, including modern standards and features.
 MS-HAID: 'p\_ie11deploy.using\_enterprise\_mode'
 MSHAttr: 'PreferredLib:/library'
 title: Using IE7 Enterprise Mode or IE8 Enterprise Mode (Internet Explorer 11 for IT Pros)

@@ -1,5 +1,5 @@
 ---
-Description: 'You can use Internet Explorer 11 and the Enterprise Mode Site List Manager tool to change whether page rendering should use Enterprise Mode or the default Internet Explorer browser configuration. You can also add, remove, or delete associated comments.'
+Description: You can use Internet Explorer 11 and the Enterprise Mode Site List Manager tool to change whether page rendering should use Enterprise Mode or the default Internet Explorer browser configuration. You can also add, remove, or delete associated comments.
 ms.assetid: 76aa9a85-6190-4c3a-bc25-0f914de228ea
 ms.prod: IE11
 ms.mktglfcycl: deploy

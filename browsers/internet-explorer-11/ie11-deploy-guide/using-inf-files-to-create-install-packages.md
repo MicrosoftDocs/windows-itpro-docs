@@ -1,5 +1,5 @@
 ---
-Description: 'Using .INF files to create packages'
+Description: Using .INF files to create packages
 MS-HAID: 'p\_ie11deploy.using\_inf\_files\_to\_create\_packages'
 MSHAttr: 'PreferredLib:/library'
 title: Using .INF files to create packages (Internet Explorer 11 for IT Pros)

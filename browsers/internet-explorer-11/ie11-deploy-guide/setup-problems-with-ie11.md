@@ -1,133 +1,53 @@
 ---
-Description: Setup problems with Internet Explorer 11
-MS-HAID: 'p\_ie11deploy.setup\_problems\_with\_internet\_explorer\_11'
-MSHAttr: 'PreferredLib:/library'
+Description: Reviewing log files to learn more about potential setup problems with Internet Explorer 11.
+ms.assetid: 2cd79988-17d1-4317-bee9-b3ae2dd110a0
+ms.prod: IE11
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.pagetype: appcompat
 title: Setup problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Setup problems with Internet Explorer 11
-
-
 Installing Internet Explorer creates the following log files, which are stored in the Windows installation folder (typically, the C:\\Windows folder):
 
--   IE11\_main.log
+-   `IE11_main.log`
 
--   IE11\_NR\_Setup.log
+-   `IE11_NR_Setup.log`
 
--   IE11\_uninst.log
+-   `IE11_uninst.log`
 
--   cbs\*.log
+-  `cbs*.log`
 
--   WU\_ IE11\_LangPacks.log
+-   `WU_ IE11_LangPacks.log`
 
 These log files continuously record the entire process from the moment the IE setup program starts running until the last .cab file is downloaded, including error codes. The possible error codes are:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Error Code</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0</p></td>
-<td align="left"><p>Success</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1460</p></td>
-<td align="left"><p>Timeout</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>3010</p></td>
-<td align="left"><p>Success, reboot required</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40001</p></td>
-<td align="left"><p>USER_ERROR_CANNOT_OPEN_LOG_FILE</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40003</p></td>
-<td align="left"><p>USER_ERROR_CANNOT_INITIALIZE_APPLICATION</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40004</p></td>
-<td align="left"><p>USER_ERROR_OLD_OS_VERSION</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40005</p></td>
-<td align="left"><p>USER_ERROR_WRONG_PLATFORM</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40006</p></td>
-<td align="left"><p>USER_ERROR_BAD_SPVERSION</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40007</p></td>
-<td align="left"><p>USER_ERROR_MISSING_REQUIRED_PREREQUISITE</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40008</p></td>
-<td align="left"><p>USER_ERROR_IE_GREATERVERSION_INSTALLED</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40010</p></td>
-<td align="left"><p>USER_ERROR_BAD_LANGUAGE</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40012</p></td>
-<td align="left"><p>USER_ERROR_CRYPTO_VALIDATION_FAILED</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40013</p></td>
-<td align="left"><p>USER_ERROR_ALREADY_INSTALLED</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40015</p></td>
-<td align="left"><p>USER_ERROR_WRONG_OS</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40016</p></td>
-<td align="left"><p>USER_ERROR_EXTRACTION_FAILED</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40019</p></td>
-<td align="left"><p>USER_ERROR_WINDOWS_PRERELEASE_NOT_SUPPORTED</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40021</p></td>
-<td align="left"><p>USER_ERROR_UNSUPPORTED_VIDEO_HARDWARE</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40022</p></td>
-<td align="left"><p>USER_ERROR_UNSUPPORTED_VIDEO_DRIVER</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40023</p></td>
-<td align="left"><p>USER_ERROR_PREREQUISITE_INSTALL_FAILED</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40024</p></td>
-<td align="left"><p>USER_ERROR_NEUTRAL_CAB_DOWNLOAD_FAILED</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40025</p></td>
-<td align="left"><p>USER_ERROR_NEUTRAL_CAB_INSTALL_FAILED</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>41001</p></td>
-<td align="left"><p>USER_ERROR_UNKNOWN</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>50005</p></td>
-<td align="left"><p>USER_SUCCESS_USER_CANCELLED</p></td>
-</tr>
-</tbody>
-</table>
+|Error code |Description                                                         |
+|-----------|-------------------------------------------|
+|0 |Success |
+|1460 |Timeout |
+|3010 |Success, reboot required |
+|40001 |USER_ERROR_CANNOT_OPEN_LOG_FILE |
+|40003 |USER_ERROR_CANNOT_INITIALIZE_APPLICATION |
+|40004 |USER_ERROR_OLD_OS_VERSION |
+|40005 |USER_ERROR_WRONG_PLATFORM |
+|40006 |USER_ERROR_BAD_SPVERSION |
+|40007 |USER_ERROR_MISSING_REQUIRED_PREREQUISITE |
+|40008 |USER_ERROR_IE_GREATERVERSION_INSTALLED |
+|40010 |USER_ERROR_BAD_LANGUAGE |
+|40012 |USER_ERROR_CRYPTO_VALIDATION_FAILED |
+|40013 |USER_ERROR_ALREADY_INSTALLED |
+|40015 |USER_ERROR_WRONG_OS |
+|40016 |USER_ERROR_EXTRACTION_FAILED |
+|40019 |USER_ERROR_WINDOWS_PRERELEASE_NOT_SUPPORTED |
+|40021 |USER_ERROR_UNSUPPORTED_VIDEO_HARDWARE |
+|40022 |USER_ERROR_UNSUPPORTED_VIDEO_DRIVER |
+|40023 |USER_ERROR_PREREQUISITE_INSTALL_FAILED |
+|40024 |USER_ERROR_NEUTRAL_CAB_DOWNLOAD_FAILED |
+|40025 |USER_ERROR_NEUTRAL_CAB_INSTALL_FAILED |
+|41001 |USER_ERROR_UNKNOWN |
+|50005 |USER_SUCCESS_USER_CANCELLED |
 
  
 

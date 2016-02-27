@@ -1,5 +1,5 @@
 ---
-Description: 'What is Enterprise Mode?'
+Description: What is Enterprise Mode?
 MS-HAID: 'p\_ie11deploy.what\_is\_enterprise\_mode'
 MSHAttr: 'PreferredLib:/library'
 title: What is Enterprise Mode (Internet Explorer 11 for IT Pros)

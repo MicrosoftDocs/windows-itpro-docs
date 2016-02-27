@@ -1,5 +1,5 @@
 ---
-Description: 'Internet Explorer 11 includes several new features and tools. This topic includes high-level info about the each of them.'
+Description: Internet Explorer 11 includes several new features and tools. This topic includes high-level info about the each of them.
 MS-HAID: 'p\_ie11deploy.updated\_features\_and\_tools\_\_\_internet\_explorer\_11\_\_ie11\_'
 MSHAttr: 'PreferredLib:/library'
 title: List of updated features and tools - Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)

@@ -1,12 +1,11 @@
 ---
-Description: 'Internet Explorer 11 is available for a number of systems and languages. This topic provides info about the minimum system requirements and language support.'
+Description: Internet Explorer 11 is available for a number of systems and languages. This topic provides info about the minimum system requirements and language support.
 MS-HAID: 'p\_ie11deploy.system\_requirements\_and\_language\_support\_for\_internet\_explorer\_11\_\_ie11\_'
 MSHAttr: 'PreferredLib:/library'
 title: System requirements and language support for Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ---
 
-# 
-
+# System requirements and language support for Internet Explorer 11 (IE11)
 
 **Last updated**
 
