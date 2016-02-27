@@ -27,7 +27,7 @@ We recommend that you store and download your website list from a secure web sev
 
  
 
-![](../common/wedge.gif)**To turn on Enterprise Mode using Group Policy**
+**To turn on Enterprise Mode using Group Policy**
 
 1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Internet Explorer\\Use the Enterprise Mode IE website list** setting.
 
@@ -37,7 +37,7 @@ We recommend that you store and download your website list from a secure web sev
 
 2.  Click **Enabled**, and then in the **Options** area, type the location to your site list.
 
-![](../common/wedge.gif)**To turn on Enterprise Mode using the registry**
+**To turn on Enterprise Mode using the registry**
 
 1.  **To turn on Enterprise Mode for only the local user:** Open a registry editor, like regedit.exe and go to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode`.
 

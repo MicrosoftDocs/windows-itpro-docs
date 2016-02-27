@@ -38,7 +38,7 @@ Getting these reports lets you find out about sites that aren’t working right,
 
 When you turn logging on, you need a valid URL that points to a server that can be listened to for updates to a user’s registry key. This means you need to set up an endpoint server for the incoming POST messages, which are sent every time the user turns Enterprise Mode on or off from the **Tools** menu.
 
-![](../common/wedge.gif)**To set up an endpoint server**
+**To set up an endpoint server**
 
 1.  Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](http://go.microsoft.com/fwlink/p/?LinkId=507609).
 
@@ -92,7 +92,7 @@ If you decide to manually change the registry key, you can change the **Enable**
 
 For logging, you’re going to need a valid URL that points to a server that can be listened to for updates to a user’s registry key. This means you need to set up an endpoint server for the incoming POST messages, which are sent every time the user turns Enterprise Mode on or off from the **Tools** menu. These POST messages go into your database, aggregating the report data by URL, giving you the total number of reports where users turned on Enterprise Mode, the total number of reports where users turned off Enterprise Mode, and the date of the last report.
 
-![](../common/wedge.gif)**To set up the sample**
+**To set up the sample**
 
 1.  Set up a server to collect your Enterprise Mode information from your users.
 
@@ -104,7 +104,7 @@ For logging, you’re going to need a valid URL that points to a server that can
 
     The required packages are automatically downloaded and included in the solution.
 
-![](../common/wedge.gif)**To set up your endpoint server**
+**To set up your endpoint server**
 
 1.  Right-click on the name, PhoneHomeSample, and click **Publish**.
 
@@ -121,7 +121,7 @@ For logging, you’re going to need a valid URL that points to a server that can
 
     After you finish the publishing process, you need to test to make sure the app deployed successfully.
 
-![](../common/wedge.gif)**To test, deploy, and use the app**
+**To test, deploy, and use the app**
 
 1.  Open a registry editor on the computer where you deployed the app, go to the HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Main\\EnterpriseMode key, and change the **Enable** string to:
 
@@ -139,7 +139,7 @@ For logging, you’re going to need a valid URL that points to a server that can
 
 3.  Get your users to visit websites, turning Enterprise Mode on or off locally, as necessary.
 
-![](../common/wedge.gif)**To view the report results**
+**To view the report results**
 
 -   Go to http://*&lt;deploy\_URL&gt;*/List to see the report results.
 
@@ -151,7 +151,7 @@ For logging, you’re going to need a valid URL that points to a server that can
 
 If you have errors while you’re publishing your project, you should try to update your packages.
 
-![](../common/wedge.gif)**To update your packages**
+**To update your packages**
 
 1.  From the **Tools** menu of Microsoft Visual Studio, click **NuGet Package Manager**, and click **Manage NuGet Packages for Solution**.
 

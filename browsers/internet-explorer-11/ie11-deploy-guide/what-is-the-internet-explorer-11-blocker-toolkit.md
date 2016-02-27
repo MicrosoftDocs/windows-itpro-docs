@@ -25,9 +25,7 @@ The Internet Explorer 11 Blocker Toolkit lets you turn off the automatic delive
 **Important**  
 The IE11 Blocker Toolkit doesn't stop users from manually installing IE11 from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=327753). Also, even if you've installed previous versions of the toolkit before, like for Internet Explorer 10, you still need to install this version to prevent the installation of IE11.
 
- 
-
-![](../common/wedge.gif)**To install the toolkit**
+**To install the toolkit**
 
 1.  Download the IE11 Blocker Toolkit from [Toolkit to Disable Automatic Delivery of Internet Explorer 11](http://go.microsoft.com/fwlink/p/?LinkId=327745).
 
