@@ -145,7 +145,7 @@ If you have errors while you’re publishing your project, you should try to upd
 You may need to do some additional package cleanup to remove older package versions.
 
 ## Related topics
-` [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [What is Enterprise Mode?](what-is-enterprise-mode.md)
 - [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
