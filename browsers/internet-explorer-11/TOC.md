@@ -22,12 +22,12 @@
 ##[Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
 ###[What is Enterprise Mode?](what-is-enterprise-mode.md)
 ###[Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md)
-###[Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md
-###[Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md
-###[Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md
-###[Check for a new Enterprise Mode site list xml file](check-for-new-enterprise-mode-site-list-xml-file.md
-###[Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md
-###[Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md
+###[Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)
+###[Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md)
+###[Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md)
+###[Check for a new Enterprise Mode site list xml file](check-for-new-enterprise-mode-site-list-xml-file.md)
+###[Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md)
+###[Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
 ####[Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md)
 ####[Add sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md)
 ####[Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md)
