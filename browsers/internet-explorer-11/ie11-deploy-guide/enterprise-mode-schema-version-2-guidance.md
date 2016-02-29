@@ -9,9 +9,6 @@ title: Enterprise Mode schema v.2 guidance for Windows 10-based devices (Interne
 ---
 
 # Enterprise Mode schema v.2 guidance for Windows 10-based devices
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

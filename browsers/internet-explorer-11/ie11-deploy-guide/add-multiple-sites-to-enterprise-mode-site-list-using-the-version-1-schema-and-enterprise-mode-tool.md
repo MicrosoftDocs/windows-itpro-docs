@@ -10,10 +10,6 @@ title: Add multiple sites to the Enterprise Mode site list using a file and the 
 
 # Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 8.1

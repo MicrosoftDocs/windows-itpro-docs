@@ -9,9 +9,6 @@ title: Import your Enterprise Mode site list to the Enterprise Mode Site List Ma
 ---
 
 # Import your Enterprise Mode site list to the Enterprise Mode Site List Manager
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

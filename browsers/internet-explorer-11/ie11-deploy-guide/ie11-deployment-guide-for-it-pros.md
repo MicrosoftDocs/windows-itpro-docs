@@ -9,11 +9,6 @@ title: Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Expl
 
 # Internet Explorer 11 (IE11) - Deployment Guide for IT Pros
 
-
-**Last updated**
-
--   December 17, 2015
-
 **Applies to:**
 
 -   Windows 10

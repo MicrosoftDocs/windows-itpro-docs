@@ -33,88 +33,28 @@ There are currently two versions of the Enterprise Site List Manager tool, both 
 ## Using the Enterprise Mode Site List Manager tool
 The following topics give you more information about the things that you can do with the Enterprise Mode Site List Manager tool.
 
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md)</p></td>
-<td align="left"><p>How to add websites to your site list using the Windows 10 Enterprise Mode Site List Manager.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Add sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md)</p></td>
-<td align="left"><p>How to add websites to your site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md)</p></td>
-<td align="left"><p>How to add several websites to your site list at the same time, using a text or XML file and the Windows 10 Enterprise Mode Site List Manager.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-using-the-version-1-schema-and-enterprise-mode-tool.md)</p></td>
-<td align="left"><p>How to add several websites to your site list at the same time, using a text or XML file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Edit the Enterprise Mode site list using the Enterprise Mode Site List Manager tool](edit-the-enterprise-mode-site-list-using-the-enterprise-mode-site-list-manager.md)</p></td>
-<td align="left"><p>How to edit the compatibility mode for specific websites.</p>
-<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Fix validation problems using the Enterprise Mode Site List Manager tool](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md)</p></td>
-<td align="left"><p>How to fix common site list validation errors.</p>
-<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Search your Enterprise Mode site list in the Enterprise Mode Site List Manager tool](search-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md)</p></td>
-<td align="left"><p>How to look to see if a site is already in your global Enterprise Mode site list.</p>
-<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Save your site list to XML in the Enterprise Mode Site List Manager tool](save-your-site-list-to-xml-in-the-enterprise-mode-site-list-manager.md)</p></td>
-<td align="left"><p>How to save a site list as XML, so you can deploy and use it with your managed systems.</p>
-<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Export your Enterprise Mode site list from the Enterprise Mode Site List Manager tool](export-your-enterprise-mode-site-list-from-the-enterprise-mode-site-list-manager.md)</p></td>
-<td align="left"><p>How to export your site list so you can transfer your data and contents to someone else.</p>
-<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Import your Enterprise Mode site list to the Enterprise Mode Site List Manager tool](import-into-the-enterprise-mode-site-list-manager.md)</p></td>
-<td align="left"><p>How to import your site list to replace a corrupted or out-of-date list.</p>
-<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager tool](delete-sites-from-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md)</p></td>
-<td align="left"><p>How to delete a website from your site list.</p>
-<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Remove all sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager tool](remove-all-sites-from-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md)</p></td>
-<td align="left"><p>How to delete all of the websites in a site list.</p>
-<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Topic |Description |
+|------|------------|
+|[Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md) |How to add websites to your site list using the Windows 10 Enterprise Mode Site List Manager. |
+|[Add sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md) |How to add websites to your site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager. |
+|[Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md) |How to add several websites to your site list at the same time, using a text or XML file and the Windows 10 Enterprise Mode Site List Manager. |
+|[Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-using-the-version-1-schema-and-enterprise-mode-tool.md) |How to add several websites to your site list at the same time, using a text or XML file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager. |
+|[Edit the Enterprise Mode site list using the Enterprise Mode Site List Manager tool](edit-the-enterprise-mode-site-list-using-the-enterprise-mode-site-list-manager.md) |How to edit the compatibility mode for specific websites.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
+|[Fix validation problems using the Enterprise Mode Site List Manager tool](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md) |How to fix common site list validation errors.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
+|[Search your Enterprise Mode site list in the Enterprise Mode Site List Manager tool](search-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to look to see if a site is already in your global Enterprise Mode site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
+|[Save your site list to XML in the Enterprise Mode Site List Manager tool](save-your-site-list-to-xml-in-the-enterprise-mode-site-list-manager.md) |How to save a site list as XML, so you can deploy and use it with your managed systems.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
+|[Export your Enterprise Mode site list from the Enterprise Mode Site List Manager tool](export-your-enterprise-mode-site-list-from-the-enterprise-mode-site-list-manager.md) |How to export your site list so you can transfer your data and contents to someone else.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
+|[Import your Enterprise Mode site list to the Enterprise Mode Site List Manager tool](import-into-the-enterprise-mode-site-list-manager.md) |How to import your site list to replace a corrupted or out-of-date list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
+|[Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager tool](delete-sites-from-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to delete a website from your site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
+|[Remove all sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager tool](remove-all-sites-from-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to delete all of the websites in a site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
 
 ## Related topics
 
 
-[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
-[Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md)
-[Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md)
+- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md)
+- [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md)
  
 
  

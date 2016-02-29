@@ -10,10 +10,6 @@ title: Remove sites from a local Enterprise Mode site list (Internet Explorer 11
 
 # Remove sites from a local Enterprise Mode site list
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

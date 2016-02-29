@@ -10,10 +10,6 @@ title: Add sites to the Enterprise Mode site list using the Windows 7 and Window
 
 # Add single sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 8.1

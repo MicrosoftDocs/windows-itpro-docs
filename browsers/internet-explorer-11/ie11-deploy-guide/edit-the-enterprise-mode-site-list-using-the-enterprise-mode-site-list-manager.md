@@ -9,9 +9,6 @@ title: Edit the Enterprise Mode site list using the Enterprise Mode Site List Ma
 ---
 
 # Edit the Enterprise Mode site list using the Enterprise Mode Site List Manager
-**Last updated**
-
--   December 3, 2015
 
 **Applies to:**
 

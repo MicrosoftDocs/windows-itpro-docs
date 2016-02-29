@@ -9,9 +9,6 @@ title: Deprecated document modes and Internet Explorer 11 (Internet Explorer 11 
 ---
 
 # Deprecated document modes and Internet Explorer 11
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

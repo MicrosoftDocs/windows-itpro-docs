@@ -10,10 +10,6 @@ title: Remove all sites from your Enterprise Mode site list using the Enterprise
 
 # Remove all sites from your Enterprise Mode site list using the Enterprise Mode Site List Manager
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

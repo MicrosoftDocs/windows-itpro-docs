@@ -10,10 +10,6 @@ title: Save your site list to XML in the Enterprise Mode Site List Manager (Inte
 
 # Save your site list to XML in the Enterprise Mode Site List Manager
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

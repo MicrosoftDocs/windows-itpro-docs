@@ -9,9 +9,6 @@ title: Export your Enterprise Mode site list from the Enterprise Mode Site List 
 ---
 
 # Export your Enterprise Mode site list from the Enterprise Mode Site List Manager tool
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

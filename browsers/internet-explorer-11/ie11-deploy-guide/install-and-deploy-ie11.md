@@ -8,9 +8,6 @@ title: Install and Deploy Internet Explorer 11 (IE11) (Internet Explorer 11 for 
 ---
 
 # Install and Deploy Internet Explorer 11 (IE11)
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

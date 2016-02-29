@@ -10,11 +10,6 @@ title: Add sites to the Enterprise Mode site list using the Windows 10 Enterpris
 
 # Add single sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool
 
-
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

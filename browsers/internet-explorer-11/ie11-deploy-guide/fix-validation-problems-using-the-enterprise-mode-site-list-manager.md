@@ -9,9 +9,6 @@ title: Fix validation problems using the Enterprise Mode Site List Manager tool 
 ---
 
 # Fix validation problems using the Enterprise Mode Site List Manager tool
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

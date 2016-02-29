@@ -1,16 +1,14 @@
 ---
-Description: The Internet Explorer 11 Blocker Toolkit lets you turn off the automatic delivery of IE11 through the Automatic Updates feature of Windows Update.
-MS-HAID: 'p\_ie11deploy.what\_is\_the\_internet\_explorer\_11\_blocker\_toolkit'
-MSHAttr: 'PreferredLib:/library'
+Description: How to download and use the Internet Explorer 11 Blocker Toolkit to turn off the automatic delivery of IE11 through the Automatic Updates feature of Windows Update.
+ms.assetid: fafeaaee-171c-4450-99f7-5cc7f8d7ba91
+ms.prod: IE11
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.pagetype: security
 title: What is the Internet Explorer 11 Blocker Toolkit? (Internet Explorer 11 for IT Pros)
 ---
 
 # What is the Internet Explorer 11 Blocker Toolkit?
-
-
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 
@@ -22,7 +20,7 @@ title: What is the Internet Explorer 11 Blocker Toolkit? (Internet Explorer 11 f
 
 The Internet Explorer 11 Blocker Toolkit lets you turn off the automatic delivery of IE11 through the **Automatic Updates** feature of Windows Update.
 
-**Important**  
+**Important**<br>
 The IE11 Blocker Toolkit doesn't stop users from manually installing IE11 from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=327753). Also, even if you've installed previous versions of the toolkit before, like for Internet Explorer 10, you still need to install this version to prevent the installation of IE11.
 
 **To install the toolkit**
@@ -35,9 +33,8 @@ The IE11 Blocker Toolkit doesn't stop users from manually installing IE11 from t
 
 4.  In the Command Prompt, change to the location where you put the 4 files.
 
-5.  In the Command Prompt, type `ie11_blocker.cmd /B` and press Enter.
-
-    Wait for the message, **Blocking deployment of IE11 on the local machine. The operation completed successfully.**
+5.  In the Command Prompt, type `ie11_blocker.cmd /B` and press Enter.<p>
+Wait for the message, **Blocking deployment of IE11 on the local machine. The operation completed successfully.**
 
 6.  Close the Command Prompt.
 

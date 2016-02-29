@@ -9,9 +9,6 @@ title: Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update 
 ---
 
 # Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

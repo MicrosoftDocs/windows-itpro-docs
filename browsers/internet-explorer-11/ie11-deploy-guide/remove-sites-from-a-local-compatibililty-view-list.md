@@ -10,10 +10,6 @@ title: Remove sites from a local compatibility view list (Internet Explorer 11 f
 
 # Remove sites from a local compatibility view list
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

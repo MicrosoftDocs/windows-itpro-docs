@@ -9,9 +9,6 @@ title: Enterprise Mode for Internet Explorer 11 (Internet Explorer 11 for IT Pro
 ---
 
 # Enterprise Mode for Internet Explorer 11
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 
@@ -24,9 +21,9 @@ title: Enterprise Mode for Internet Explorer 11 (Internet Explorer 11 for IT Pro
 Use the topics in this section to learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager tool in your company.
 
 ## In this section
-|Topic                                                                       |Description                                                                        |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-|[What is Enterprise Mode?](what-is-enterprise-mode.md)                      |Includes descriptions of the features of Enterprise Mode.                          |
+|Topic                                                          |Description                                                                        |
+|---------------------------------------------------------------|-----------------------------------------------------------------------------------|
+|[What is Enterprise Mode?](what-is-enterprise-mode.md)         |Includes descriptions of the features of Enterprise Mode.                          |
 |[Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md) |Guidance about how to turn on local control of Enterprise Mode and how to use ASP or the GitHub sample to collect data from your local computers. |
 |[Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md) |Guidance about how to turn on Enterprise Mode and set up a site list, using Group Policy or the registry. |
 |[Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md) |Guidance about how to write the XML for your site list, including what not to include, how to use trailing slashes, and info about how to target specific sites. |
