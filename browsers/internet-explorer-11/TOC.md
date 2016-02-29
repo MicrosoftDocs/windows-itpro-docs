@@ -80,7 +80,3 @@
 ##[Missing Internet Explorer Maintenance settings for Internet Explorer 11](missing-internet-explorer-maintenance-settings-for-ie11.md)
 ##[Missing the Compatibility View Button](missing-the-compatibility-view-button.md)
 ##[Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013](deploy-pinned-sites-using-mdt-2013.md)
-
-#[Frequently asked questions about Internet Explorer 11 for IT Pros](faq-for-it-pros-ie11.md)
-
-#[IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](ieak-11-internet-explorer-administration-kit-11-users-guide.md)
