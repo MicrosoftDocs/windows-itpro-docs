@@ -10,11 +10,6 @@ title: Microsoft Edge requirements and language support (Microsoft Edge for IT P
 
 # Microsoft Edge requirements and language support
 
-
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

@@ -10,11 +10,6 @@ title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
 
 # Use Enterprise Mode to improve compatibility
 
-
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

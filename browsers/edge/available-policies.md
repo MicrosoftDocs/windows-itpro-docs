@@ -9,11 +9,6 @@ title: Available policies for Microsoft Edge (Microsoft Edge for IT Pros)
 
 # Available policies for Microsoft Edge
 
-
-**Last updated**
-
--   January 7, 2015
-
 **Applies to:**
 
 -   Windows 10

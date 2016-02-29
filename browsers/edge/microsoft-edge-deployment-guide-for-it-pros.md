@@ -9,10 +9,6 @@ title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros
 
 # Microsoft Edge - Deployment Guide for IT Pros
 
-**Last updated**
-
--   July 28, 2015
-
 **Applies to:**
 
 -   Windows 10
