@@ -1,4 +1,4 @@
 # Table of Contents
-## [Edge](edge/)
-## [Internet Explorer 11](internet-explorer-11/)
+## [Microsoft Edge](microsoft-edge/microsoft-edge-deployment-guide-for-it-pros.md)
+## [Internet Explorer 11](internet-explorer-11/internet-explorer-11.md)
 
