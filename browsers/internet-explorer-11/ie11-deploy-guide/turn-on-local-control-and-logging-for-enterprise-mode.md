@@ -1,16 +1,14 @@
 ---
-Description: Turn on local control and logging for Enterprise Mode
-MS-HAID: 'p\_ie11deploy.turn\_on\_local\_control\_and\_logging\_for\_enterprise\_mode'
-MSHAttr: 'PreferredLib:/library'
+Description: Turn on local user control and logging for Enterprise Mode.
+ms.assetid: 6622ecce-24b1-497e-894a-e1fd5a8a66d1
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: appcompat
 title: Turn on local control and logging for Enterprise Mode (Internet Explorer 11 for IT Pros)
 ---
 
 # Turn on local control and logging for Enterprise Mode
-
-
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 
@@ -42,18 +40,12 @@ Besides turning on this feature, you also have the option to provide a URL for E
 
     ![edit registry string for data collection location](images/ie-emie-editregistrystring.png)
 
-    Your **Value data** location can be any of the following types:
+Your **Value data** location can be any of the following types:
 
-    -   **URL location (like, http://www.emieposturl.com/api/records or http://localhost:13000)**. IE sends a POST message to the URL every time a change is made to Enterprise Mode from the **Tools** menu.
-
-        **Important**  
-        The http://www.emieposturl.com/api/records example will only work if you’ve downloaded the sample discussed in the [Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md) topic. If you don’t have the sample, you won’t have the web API.
-
-         
-
-    -   **Local network location (like, http://*emieposturl*/)**. IE sends a POST message to your specified local network location every time a change is made to Enterprise Mode from the **Tools** menu.
-
-    -   **Empty string**. If you leave the **Value data** box blank; your employees will be able to turn Enterprise Mode on and off from the **Tools** menu, but you won’t collect any logging data.
+-   **URL location (like, http://www.emieposturl.com/api/records or http://localhost:13000)**. IE sends a POST message to the URL every time a change is made to Enterprise Mode from the **Tools** menu.<p>**Important**<br>
+The `http://www.emieposturl.com/api/records` example will only work if you’ve downloaded the sample discussed in the [Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md) topic. If you don’t have the sample, you won’t have the web API.
+-   **Local network location (like, http://*emieposturl*/)**. IE sends a POST message to your specified local network location every time a change is made to Enterprise Mode from the **Tools** menu.
+-   **Empty string**. If you leave the **Value data** box blank; your employees will be able to turn Enterprise Mode on and off from the **Tools** menu, but you won’t collect any logging data.
 
 For information about how to collect the data provided when your employees turn Enterprise Mode on or off from the **Tools** menu, see [Set up Enterprise Mode logging and data collection](set-up-enterprise-mode-logging-and-data-collection.md).
 

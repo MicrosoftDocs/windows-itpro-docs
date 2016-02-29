@@ -1,16 +1,14 @@
 ---
-Description: Use the Enterprise Mode Site List Manager tool
-MS-HAID: 'p\_ie11deploy.use\_the\_enterprise\_mode\_site\_list\_manager\_tool'
-MSHAttr: 'PreferredLib:/library'
+Description: Use the topics in this section to learn about how to use the Enterprise Mode Site List Manager tool.
+ms.assetid: 
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: appcompat
 title: Use the Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
 ---
 
 # Use the Enterprise Mode Site List Manager tool
-
-
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 
@@ -25,50 +23,17 @@ Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, lett
 You can use IE11 and the Enterprise Mode Site List Manager tool to add individual website domains and domain paths and to specify whether the site renders using Enterprise Mode or the default mode.
 
 ## Enterprise Mode Site List Manager tool versions
-
-
 There are currently two versions of the Enterprise Site List Manager tool, both based on your schema and operating system. Download the [Enterprise Mode Site List Manager for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=716853) tool or the [Enterprise Mode Site List Manager for Windows 7 and Windows 8.1](http://go.microsoft.com/fwlink/p/?LinkID=394378) tool, based on your operating system.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Schema version</th>
-<th align="left">Enterprise Site List Manager tool version</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Windows 10</td>
-<td align="left"><p>Enterprise Mode schema v.2</p>
-<p>or</p>
-<p>Enterprise Mode schema v.1</p>
-<p></p></td>
-<td align="left"><p>Windows 10 supports both versions of the enterprise mode schema. However, the Windows 10 Enterprise Mode Site List Manager tool only supports the v.2 version of the schema. If you import a v.1 version schema into the Windows 10 Enterprise Mode Site List Manager tool, it will save the XML into the v.2 version of the schema.</p>
-<p>For more info about the different schema versions, see [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance)</p></td>
-</tr>
-<tr class="even">
-<td align="left">Windows 7
-<p>or</p>
-Windows 8.1</td>
-<td align="left"><p>Enterprise Mode schema v.1</p></td>
-<td align="left"><p>Uses the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool.</p>
-<p>For more info about the different schema versions, see [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md)</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Operating system |Schema version |Enterprise Site List Manager tool version |
+|-----------------|---------------|------------------------------------|
+|Windows 10 |Enterprise Mode schema, version 2 (v.2)<p>-OR-<p>Enterprise Mode schema, version 1 (v.1) |Windows 10 supports both versions of the enterprise mode schema. However, the Windows 10 Enterprise Mode Site List Manager tool only supports the v.2 version of the schema. If you import a v.1 version schema into the Windows 10 Enterprise Mode Site List Manager tool, it will save the XML into the v.2 version of the schema.<p>For more info about the different schema versions, see [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance) |
+|Windows 7<p>-OR-<p>Windows 8.1 |Enterprise Mode schema v.1 |Uses the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool.<p>For more info about the different schema versions, see [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md) |
 
 ## Using the Enterprise Mode Site List Manager tool
-
-
 The following topics give you more information about the things that you can do with the Enterprise Mode Site List Manager tool.
+
+
 
 <table>
 <colgroup>
