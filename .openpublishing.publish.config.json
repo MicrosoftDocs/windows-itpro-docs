@@ -1,0 +1,28 @@
+{
+    "build_entry_point": "",
+    "git_repository_url_open_to_public_contributors": "",
+    "docsets_to_publish": [
+        {
+            "docset_name": "microsoft-edge",
+            "build_output_subfolder": "browsers/edge",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+        {
+            "docset_name": "internet-explorer-11",
+            "build_output_subfolder": "browsers/internet-explorer-11",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        }
+    ],
+    "notification_subscribers": ["brianlic@microsoft.com","brianlic@microsoft.com"],
+    "branches_to_filter": ["live"]
+}
