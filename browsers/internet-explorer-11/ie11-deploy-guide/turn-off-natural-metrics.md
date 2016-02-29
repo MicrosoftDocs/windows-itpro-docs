@@ -12,7 +12,7 @@ By default, Internet Explorer 11 uses “natural metrics”. Natural metrics us
 
 However, you might find that many intranet sites need you to use Windows Graphics Device Interface (GDI) metrics. To avoid potential compatibility issues, you must turn off natural metrics for those sites.
 
-**To turn off natural metrics**
+ ![](images/wedge.gif) **To turn off natural metrics**
 
 -   Add the following HTTP header to each site: `X-UA-TextLayoutMetrics: gdi`
 

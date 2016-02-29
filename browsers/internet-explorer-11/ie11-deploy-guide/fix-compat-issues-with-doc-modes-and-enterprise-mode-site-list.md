@@ -47,7 +47,7 @@ After you’ve figured out the document mode that fixes your compatibility probl
 **Note**<br>
 There are two versions of the Enterprise Mode site list schema and the Enterprise Mode Site List Manager tool, based on your operating system. For more info about the schemas, see [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md) or [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md). For more info about the different site list management tools, see [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md).
 
-**To add your site to the site list**
+ ![](images/wedge.gif) **To add your site to the site list**
 
 1.  Open the Enterprise Mode Site List Manager tool, and click **Add**.
 

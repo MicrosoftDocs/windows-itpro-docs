@@ -10,7 +10,7 @@ title: Using Setup Information (.inf) files to create packages (Internet Explore
 # Using Setup Information (.inf) files to create install packages
 IEAK 11 uses Setup information (.inf) files to provide uninstallation instructions. Uninstallation instructions let your employees remove components, like files, registry entries, or shortcuts, through the **Uninstall or change a program** box. For details about .inf files, see [INF File Sections and Directives](http://go.microsoft.com/fwlink/p/?LinkId=327959).
 
-**To add uninstallation instructions to the .inf files**
+ ![](images/wedge.gif) **To add uninstallation instructions to the .inf files**
 
 -   Open the Registry Editor (regedit.exe) and add these registry keys:
 ```

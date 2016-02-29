@@ -24,7 +24,7 @@ Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, lett
 You can add individual sites to your compatibility list by using the Enterprise Mode Site List Manager tool.
 <p>**Note**<br>If you're using Windows 10 and the v.2 version of the Enterprise Mode schema, you'll need to use the Windows 10 Enterprise Mode Site List Manager tool. For more info, see [Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](aadd-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md).
 
-**To add a site to your compatibility list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool**
+ ![](images/wedge.gif) **To add a site to your compatibility list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool**
 
 1.  In the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool, click **Add**.
 

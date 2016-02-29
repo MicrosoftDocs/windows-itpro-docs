@@ -79,7 +79,7 @@ To make sure your site list is up-to-date; wait 65 seconds after opening IE and 
 ## Add multiple sites to the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool
 After you create your .xml or .txt file, you can bulk add the sites to the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool.
 
-**To add multiple sites**
+ ![](images/wedge.gif) **To add multiple sites**
 
 1.  In the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool, click **Bulk add from file**.
 

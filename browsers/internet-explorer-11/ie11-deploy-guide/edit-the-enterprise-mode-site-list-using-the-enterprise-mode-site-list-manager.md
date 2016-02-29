@@ -22,7 +22,7 @@ You can use Internet Explorer 11 and the Enterprise Mode Site List Manager tool
 
 If you need to edit a lot of websites, you probably don’t want to do it one at a time. Instead, you can edit your saved XML or TXT file and add the sites back again. For information about how to do this, depending on your operating system and schema version, see [Add multiple sites to the Enterprise Mode site list using a file and Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md) or [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-using-the-version-1-schema-and-enterprise-mode-tool.md).
 
-**To change how your page renders**
+ ![](images/wedge.gif) **To change how your page renders**
 
 1.  In the Enterprise Mode Site List Manager tool, double-click the site you want to change.
 

@@ -10,7 +10,7 @@ title: Install Internet Explorer 11 (IE11) using Windows Server Update Services 
 # Install Internet Explorer 11 (IE11) using Windows Server Update Services (WSUS)
 Windows Server Update Services (WSUS) lets you download a single copy of the Microsoft product update and cache it on your local WSUS servers. You can then configure your computers to get the update from your local servers instead of Windows Update. For more information about WSUS, see [Windows Server Update Services](http://go.microsoft.com/fwlink/p/?LinkID=276790).
 
-**To import from Windows Update to WSUS**
+ ![](images/wedge.gif) **To import from Windows Update to WSUS**
 
 1.  Open your WSUS admin site. For example, `http://<wsus_server-name>/WSUSAdmin/`.<P>
 Where `<wsus_server_name>` is the name of your WSUS server.
@@ -25,7 +25,7 @@ Where `<wsus_server_name>` is the name of your WSUS server.
 
     You can also download the updates without importing them by unchecking the **Import directly into Windows Server Update Services** box.
 
-**To approve Internet Explorer in WSUS for installation**
+ ![](images/wedge.gif) **To approve Internet Explorer in WSUS for installation**
 
 1.  Open your WSUS admin site and check the **Review synchronization settings** box from the **To Do** list.
 

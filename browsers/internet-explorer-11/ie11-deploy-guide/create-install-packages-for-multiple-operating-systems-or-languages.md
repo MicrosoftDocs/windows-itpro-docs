@@ -16,7 +16,7 @@ You'll create multiple versions of your custom browser package if:
 
 -   You have custom installation packages with only minor differences. Like, having a different phone number.
 
-**To create a new package**
+ ![](images/wedge.gif) **To create a new package**
 
 1.  Create an installation package using the Internet Explorer Customization Wizard 11, as described in the [Internet Explorer Customization Wizard 11 options](http://go.microsoft.com/fwlink/p/?linkid=328022) topic.
 

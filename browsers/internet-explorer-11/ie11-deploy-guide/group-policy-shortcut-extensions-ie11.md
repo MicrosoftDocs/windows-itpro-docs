@@ -20,7 +20,7 @@ Group Policy includes the Shortcuts preference extension, which lets you configu
 ## How do I configure shortcuts?
 You can create and configure shortcuts for any domain-based Group Policy Object (GPO) in the Group Policy Management Console (GPMC).
 
-**To create a new Shortcut preference item**
+ ![](images/wedge.gif) **To create a new Shortcut preference item**
 
 1.  Open GPMC, right-click the Group Policy object that needs the new shortcut extension, and click **Edit**.
 

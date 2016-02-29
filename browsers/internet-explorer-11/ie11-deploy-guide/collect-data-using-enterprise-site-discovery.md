@@ -83,7 +83,7 @@ On average, a website generates about 250bytes of data for each visit, causing o
 You need to set up your computers for data collection by running the provided PowerShell script (IETelemetrySetUp.ps1) to compile the .mof file and to update security privileges for the new WMI classes.
 <p>**Important**<br>You must run this script if you’re using WMI as your data output. It's not necessary if you're using XML as your data output.
 
-**To set up Enterprise Site Discovery**
+ ![](images/wedge.gif) **To set up Enterprise Site Discovery**
 
 -   Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1`. For more info, see [about Execution Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
 
@@ -91,7 +91,7 @@ You need to set up your computers for data collection by running the provided Po
 
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
 
-**To set up your firewall**
+ ![](images/wedge.gif) **To set up your firewall**
 
 1.  In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
 
@@ -110,12 +110,12 @@ You can determine which zones or domains are used for data collection, using Pow
 
 -   **Zone allow list.** If you have a zone allow list, a comma-separated list of zones that should have this feature turned on, you should use this process.
 
-**To set up data collection using a domain allow list**
+ ![](images/wedge.gif) **To set up data collection using a domain allow list**
 
 -   Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
 <p>**Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
 
-**To set up data collection using a zone allow list**
+ ![](images/wedge.gif) **To set up data collection using a zone allow list**
 
 -   Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
 <p>**Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
@@ -124,7 +124,7 @@ You can determine which zones or domains are used for data collection, using Pow
 If you don’t want to continue using PowerShell, you can switch to Group Policy after the initial Site Discovery setup.
 <p>**Note**<br> All of the Group Policy settings can be used individually or as a group.
 
-**To set up Enterprise Site Discovery using Group Policy**
+ ![](images/wedge.gif) **To set up Enterprise Site Discovery using Group Policy**
 
 -   Open your Group Policy editor, and go to these new settings:
 
@@ -139,25 +139,25 @@ If you don’t want to continue using PowerShell, you can switch to Group Policy
 
 You can use both the WMI and XML settings individually or together, based on:
 
-**To turn off Enterprise Site Discovery**
+ ![](images/wedge.gif) **To turn off Enterprise Site Discovery**
 <ul>
   <li><b>Turn on Site Discovery WMI output:</b> Off</li>
   <li><b>Turn on Site Discovery XML output:</b> Blank</li>
 </ul>
 
-**To turn on WMI recording only**
+ ![](images/wedge.gif) **To turn on WMI recording only**
 <ul>
   <li><b>Turn on Site Discovery WMI output:</b> On</li>
   <li><b>Turn on Site Discovery XML output:</b> Blank</li>
 </ul>
 
-**To turn on XML recording only**
+ ![](images/wedge.gif) **To turn on XML recording only**
 <ul>
   <li><b>Turn on Site Discovery WMI output:</b> Off</li>
   <li><b>Turn on Site Discovery XML output:</b> XML file path</li>
 </ul>
  
-**To turn on both WMI and XML recording**
+ ![](images/wedge.gif) **To turn on both WMI and XML recording**
 <ul>
   <li><b>Turn on Site Discovery WMI output:</b> On</li>
   <li><b>Turn on Site Discovery XML output:</b> XML file path</li>
@@ -170,7 +170,7 @@ After you’ve collected your data, you’ll need to get the local files off of 
 ### Collect your hardware inventory using the MOF Editor while connecting to a computer
 You can collect your hardware inventory using the MOF Editor, while you’re connected to your client computers.
 
-**To collect your inventory**
+ ![](images/wedge.gif) **To collect your inventory**
 
 1.  From the Configuration Manager, click **Administration**, click **Client Settings**, double-click **Default Client Settings**, click **Hardware Inventory**, and then click **Set Classes**.
 
@@ -196,7 +196,7 @@ Your environment is now ready to collect your hardware inventory and review the 
 ### Collect your hardware inventory using the MOF Editor with a MOF import file
 You can collect your hardware inventory using the MOF Editor and a MOF import file.
 
-**To collect your inventory**
+ ![](images/wedge.gif) **To collect your inventory**
 
 1.  From the Configuration Manager, click **Administration**, click **Client Settings**, double-click **Default Client Settings**, click **Hardware Inventory**, and then click **Set Classes**.
 
@@ -210,7 +210,7 @@ Your environment is now ready to collect your hardware inventory and review the 
 ### Collect your hardware inventory using the SMS\DEF.MOF file
 You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file.
 
-**To collect your inventory**
+ ![](images/wedge.gif) **To collect your inventory**
 
 1.  Using a text editor like Notepad, open the SMS\DEF.MOF file, located in your `<Config_Manager_install_location>\inboxes\clifiles.src\hinv` directory.
 
@@ -326,7 +326,7 @@ After the XML files are created, you can use your own solutions to extract and p
 ```
 You can import this XML data into the [Enterprise Mode Site List Manager](http://go.microsoft.com/fwlink/p/?linkid=394378), automatically adding the included sites to your Enterprise Mode site list.
 
-**To add your XML data to your Enterprise Mode site list**
+ ![](images/wedge.gif) **To add your XML data to your Enterprise Mode site list**
 
 1.  Open the Enterprise Mode Site List Manager tool, click **File**, and then click **Bulk add from file**.
 ![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
@@ -339,13 +339,13 @@ Each site is validated and if successful, added to the global site list when you
 ## Turn off data collection on your client computers
 After you’ve collected your data, you’ll need to turn Enterprise Site Discovery off.
 
-**To stop collecting data, using PowerShell**
+ ![](images/wedge.gif) **To stop collecting data, using PowerShell**
 
 -   On your client computer, start Windows PowerShell in elevated mode (using admin privileges) and run `IETelemetrySetUp.ps1`, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1 –IEFeatureOff`.<p>**Note**<br>
 Turning off data collection only disables the Enterprise Site Discovery feature – all data already written to WMI stays on your employee’s computer.
 
      
-**To stop collecting data, using Group Policy**
+ ![](images/wedge.gif) **To stop collecting data, using Group Policy**
 
 1.  Open your Group Policy editor, go to `Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery WMI output`, and click **Off**.
 
@@ -354,7 +354,7 @@ Turning off data collection only disables the Enterprise Site Discovery feature 
 ### Delete already stored data from client computers
 You can completely remove the data stored on your employee’s computers.
 
-**To delete all existing data**
+ ![](images/wedge.gif) **To delete all existing data**
 
 -   On the client computer, start PowerShell in elevated mode (using admin privileges) and run these four commands:
 

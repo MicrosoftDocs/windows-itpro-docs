@@ -23,7 +23,7 @@ After you create your Enterprise Mode site list in the Enterprise Mode Site List
 **Important**<br> 
 This file is not intended for distribution to your managed devices. Instead, it is only for transferring data and comments from one manager to another. For example, if one administrator leaves and passes the existing data to another administrator. Internet Explorer doesn’t read this file.
 
-**To export your compatibility list**
+ ![](images/wedge.gif) **To export your compatibility list**
 
 1.  On the **File** menu of the Enterprise Mode Site List Manager, click **Export**.
 

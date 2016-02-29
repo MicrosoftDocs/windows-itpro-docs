@@ -10,7 +10,7 @@ title: .NET Framework problems with Internet Explorer 11 (Internet Explorer 11 f
 # .NET Framework problems with Internet Explorer 11
 If you’re having problems launching your legacy apps while running Internet Explorer 11, it’s most likely because Internet Explorer no longer starts apps that use managed browser hosting controls, like in .NET Framework 1.1 and 2.0.
 
-**To turn managed browser hosting controls back on**
+ ![](images/wedge.gif) **To turn managed browser hosting controls back on**
 
 1.  **For x86 systems or for 32-bit processes on x64 systems:** Go to the `HKLM\SOFTWARE\MICROSOFT\.NETFramework` registry key and change the **EnableIEHosting** value to **1**.
 

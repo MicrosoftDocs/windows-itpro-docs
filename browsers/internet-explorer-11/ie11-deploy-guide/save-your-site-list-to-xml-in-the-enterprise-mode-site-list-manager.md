@@ -20,7 +20,7 @@ title: Save your site list to XML in the Enterprise Mode Site List Manager (Inte
 
 You can save your current Enterprise Mode compatibility site list as an XML file, for distribution and use by your managed systems.
 
-**To save your list as XML**
+ ![](images/wedge.gif) **To save your list as XML**
 
 1.  On the **File** menu of the Enterprise Mode Site List Manager, click **Save to XML**.
 

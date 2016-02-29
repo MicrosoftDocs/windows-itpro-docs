@@ -19,7 +19,7 @@ IE11 works differently with search, based on whether your organization is domain
 
 To explicitly go to an intranet site, regardless of the environment, users can type either a trailing slash like ` contoso/` or the `http://` prefix. Either of these will cause IE11 to treat the entry as an intranet search. You can also change the default behavior so that IE11 treats your single word entry in the address bar as an intranet site, regardless of your environment.
 
-**To enable single-word intranet search**
+ ![](images/wedge.gif) **To enable single-word intranet search**
 
 1.  Open Internet Explorer for the desktop, click the **Tools** menu, and then click **Internet Options**.
 

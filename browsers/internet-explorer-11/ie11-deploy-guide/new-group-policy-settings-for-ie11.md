@@ -44,7 +44,7 @@ IE11 no longer supports these Group Policy settings:
 ## Viewing your policy settings
 After you've finished updating and deploying your Group Policy, you can use the Resultant Set of Policy (RSoP) snap-in to view your settings.
 
-**To use the RSoP snap-in**
+ ![](images/wedge.gif) **To use the RSoP snap-in**
 
 1.  Open and run the Resultant Set of Policy (RSoP) wizard, specifying the information you want to see.
 

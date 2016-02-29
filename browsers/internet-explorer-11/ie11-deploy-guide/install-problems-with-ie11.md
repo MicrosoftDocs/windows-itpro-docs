@@ -27,7 +27,7 @@ If you do, you can:
 ## Internet Explorer didn't finish installing
 If Internet Explorer doesn't finish installing, it might mean that Windows Update wasn't able to install an associated update, that you have a previous, unsupported version of IE installed, or that there's a problem with your copy of IE. We recommend you try this:
 
-**To fix this issue**
+ ![](images/wedge.gif) **To fix this issue**
 
 1.  Uninstall IE:
 

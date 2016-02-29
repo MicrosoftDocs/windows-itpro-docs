@@ -23,7 +23,7 @@ If you need to replace your entire site list because of errors, or simply becaus
 **Important**  
 Importing your file overwrites everything that’s currently in the tool, so make sure it’s what you really mean to do.
 
-**To import your compatibility list**
+ ![](images/wedge.gif) **To import your compatibility list**
 
 1.  On the **File** menu of the Enterprise Mode Site List Manager, click **Import**.
 

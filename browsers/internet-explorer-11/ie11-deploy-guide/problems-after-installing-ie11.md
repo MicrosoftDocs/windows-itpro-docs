@@ -36,7 +36,7 @@ RIES turns off all custom toolbars, browser extensions, and customizations insta
 ## IE is crashing or seems slow
 If you notice that CPU usage is running higher than normal, or that IE is frequently crashing or slowing down, you should check your browser add-ons and video card. By default, IE11 uses graphics processing unit (GPU) rendering mode. However, some outdated video cards and video drivers don't support GPU hardware acceleration. If IE11 determines that your current video card or video driver doesn't support GPU hardware acceleration, it'll use Software Rendering mode.
 
-**To check your browser add-ons**
+ ![](images/wedge.gif) **To check your browser add-ons**
 
 1.  Start IE11 in **No Add-ons mode** by running the **Run** command from the **Start** menu, and then typing `iexplore.exe -extoff` into the box.
 
@@ -48,7 +48,7 @@ If the browser doesn't crash, open Internet Explorer for the desktop, click the 
 4.  Restart IE11. Go back to the **Manage Add-Ons** window and turn on each item, one-by-one.<p>
 After you turn each item back on, see if IE crashes or slows down. Doing it this way will help you identify the add-on that's causing IE to crash. After you've figured out which add-on was causing the problem, turn it off until you have an update from the manufacturer.
 
-**To check for Software Rendering mode**
+ ![](images/wedge.gif) **To check for Software Rendering mode**
 
 1.  Open Internet Explorer for the desktop, click the **Tools** menu, and then click **Internet Options**.
 

@@ -14,7 +14,7 @@ Configure and maintain your proxy settings, like pointing your users' browsers t
 ## Updating your auto-proxy settings
 You can use your Internet settings (.ins) files to set up your standard proxy settings. You can also specify script files (.js, .jvs, or .pac) to configure and maintain your advanced proxy settings. IE uses your auto-proxy script files to dynamically determine whether to connect to a host or use a proxy server. If a proxy server connection fails, Internet Explorer 11 automatically attempts to connect to another proxy server that you have specified.
 
-**To update your settings**
+ ![](images/wedge.gif) **To update your settings**
 
 1.  Create a script file with your proxy information, copying it to a server location.
 

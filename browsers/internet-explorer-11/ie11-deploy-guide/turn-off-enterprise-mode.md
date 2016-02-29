@@ -25,14 +25,14 @@ In addition, if you no longer want your users to be able to turn Enterprise Mode
 **Important**<br>
 Turning off both of these features turns off Enterprise Mode for your company. Turning off Enterprise Mode also causes any websites included in your employee’s manual site lists to not appear in Enterprise Mode.
 
- **To turn off the site list using Group Policy**
+  ![](images/wedge.gif) **To turn off the site list using Group Policy**
 
 1.  Open your Group Policy editor, like Group Policy Management Console (GPMC).
 
 2.  Go to the **Use the Enterprise Mode IE website list** setting, and then click **Disabled**.<p>
 Enterprise Mode will no longer look for the site list, effectively turning off Enterprise Mode. However, if you previously turned on local control for your employees, Enterprise Mode will still be available from the **Tools** menu. You need to turn that part of the functionality off separately.
 
-**To turn off local control using Group Policy**
+ ![](images/wedge.gif) **To turn off local control using Group Policy**
 
 1.  Open your Group Policy editor, like Group Policy Management Console (GPMC).
 
@@ -40,7 +40,7 @@ Enterprise Mode will no longer look for the site list, effectively turning off E
 
 3.  Enterprise Mode no longer shows up on the **Tools** menu for your employees. However, if you are still using an Enterprise Mode site list, all of the globally listed sites will still appear in Enterprise Mode. If you want to turn off all of Enterprise Mode, you will need to also turn off the site list functionality.
 
-**To turn off the site list using the registry**
+ ![](images/wedge.gif) **To turn off the site list using the registry**
 
 1.  Open a registry editor, such as regedit.exe.
 
@@ -50,7 +50,7 @@ You can also use HKEY_LOCAL_MACHINE, depending whether you want to turn off the 
 3.  Close all and restart all instances of Internet Explorer.<p>
 IE11 stops looking at the site list for rendering instructions. However, Enterprise Mode is still available to your users locally (if it was turned on).
 
-**To turn off local control using the registry**
+ ![](images/wedge.gif) **To turn off local control using the registry**
 
 1.  Open a registry editor, such as regedit.exe.
 

@@ -20,7 +20,7 @@ title: Search your Enterprise Mode site list in the Enterprise Mode Site List Ma
 
 You can search to see if a specific site already appears in your global Enterprise Mode site list so you don’t try to add it again.
 
-**To search your compatibility list**
+ ![](images/wedge.gif) **To search your compatibility list**
 
 -   From the Enterprise Mode Site List Manager tool, type part of the URL into the **Search** box.<p>
 The search query searches all of the text. For example, entering *“micro”* will return results like, www.microsoft.com, microsoft.com, and microsoft.com/images. Wildcard characters aren’t supported.

@@ -63,7 +63,7 @@ Out-of-date ActiveX control blocking also gives you a security warning that tell
 ## How do I fix an outdated ActiveX control or app?
 From the notification about the outdated ActiveX control, you can go to the control’s website to download its latest version.
 
-**To get the updated ActiveX control**
+ ![](images/wedge.gif) **To get the updated ActiveX control**
 
 1.  From the notification bar, tap or click **Update**.<p>
 IE opens the ActiveX control’s website.
@@ -72,7 +72,7 @@ IE opens the ActiveX control’s website.
 
 **Security Note:**<br>If you don’t fully trust a site, you shouldn’t allow it to load an outdated ActiveX control. However, although we don’t recommend it, you can view the missing webpage content by tapping or clicking **Run this time**. This option runs the ActiveX control without updating or fixing the problem. The next time you visit a webpage running the same outdated ActiveX control, you’ll get the notification again.
 
-**To get the updated app**
+ ![](images/wedge.gif) **To get the updated app**
 
 1.  From the security warning, tap or click **Update** link.<p>
 IE opens the app’s website.
@@ -178,7 +178,7 @@ Before you can use WMI to inventory your ActiveX controls, you need to [download
 
 Before running the PowerShell script, you must copy both the .ps1 and .mof file to the same directory location, on the client computer.
 
-**To configure IE to use WMI logging**
+ ![](images/wedge.gif) **To configure IE to use WMI logging**
 
 1.  Open your Group Policy editor and turn on the `Administrative Templates\Windows Components\Internet Explorer\Turn on ActiveX control logging in IE` setting.
 

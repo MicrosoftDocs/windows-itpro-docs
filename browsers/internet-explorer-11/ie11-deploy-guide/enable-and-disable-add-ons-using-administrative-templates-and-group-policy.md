@@ -24,7 +24,7 @@ There are 4 types of add-ons:
 ## Using the Local Group Policy Editor to manage group policy objects
 You can use the Local Group Policy Editor to change how add-ons work in your organization.
 
-**To manage add-ons**
+ ![](images/wedge.gif) **To manage add-ons**
 
 1.  In the Local Group Policy Editor, go to `Computer Configuration\Administrative Templates\Windows Components\Internet Explorer`.
 
@@ -55,7 +55,7 @@ You can use the Local Group Policy Editor to change how add-ons work in your org
 ## Using the CLSID and Administrative Templates to manage group policy objects
 Because every add-on has a Class ID (CLSID), you can use it to enable and disable specific add-ons, using Group Policy and Administrative Templates.
 
-**To manage add-ons**
+ ![](images/wedge.gif) **To manage add-ons**
 
 1.  Get the CLSID for the add-on you want to enable or disable:
 

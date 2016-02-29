@@ -22,7 +22,7 @@ You can turn on local control of Enterprise Mode so that your users can turn Ent
 
 Besides turning on this feature, you also have the option to provide a URL for Enterprise Mode logging. If you turn logging on, Internet Explorer initiates a simple POST back to the supplied address, including the URL and a specification that **EnterpriseMode** was turned on or off through the **Tools** menu.
 
-**To turn on local control of Enterprise Mode using Group Policy**
+ ![](images/wedge.gif) **To turn on local control of Enterprise Mode using Group Policy**
 
 1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Internet Explorer\\Let users turn on and use Enterprise Mode from the Tools menu** setting.
 
@@ -30,7 +30,7 @@ Besides turning on this feature, you also have the option to provide a URL for E
 
 2.  Click **Enabled**, and then in the **Options** area, type the location for where to receive reports about when your employees use this functionality to turn Enterprise Mode on or off from the **Tools** menu.
 
-**To turn on local control of Enterprise Mode using the registry**
+ ![](images/wedge.gif) **To turn on local control of Enterprise Mode using the registry**
 
 1.  Open a registry editor, like regedit.exe and go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode`.
 

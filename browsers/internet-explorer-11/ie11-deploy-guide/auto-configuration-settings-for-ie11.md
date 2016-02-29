@@ -14,7 +14,7 @@ Automatic configuration lets you apply custom branding and graphics to your inte
 ## Adding the automatic configuration registry key
 For custom graphics and branding, add the `FEATURE\AUTOCONFIG\BRANDING` registry key to your IE installation package.<p>**Important**<br>Follow these directions carefully because serious problems can occur if you update your registry incorrectly. For added protection, back up your registry so you can restore it if a problem occurs.
 
-**To add the registry key**
+ ![](images/wedge.gif) **To add the registry key**
 
 1.  On the **Start** screen, type **regedit**, and then click **Regedit.exe**.
 
@@ -36,7 +36,7 @@ For custom graphics and branding, add the `FEATURE\AUTOCONFIG\BRANDING` registry
 After adding the `FEATURE\AUTOCONFIG\BRANDING` registry key, you can change your automatic configuration settings to pick up the updated branding.
 <p>**Important**<br>Your branding changes won't be added or updated if you've previously chosen the **Disable external branding of IE** setting in the `User Configuration\Administrative Templates\Windows Components\Internet Explorer` Group Policy object. This setting is intended to prevent branding by a third-party, like an Internet service or content provider. For more information about Group Policy, including videos and the latest technical documentation, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=214514).
 
-**To update your settings**
+ ![](images/wedge.gif) **To update your settings**
 
 1.  Open the IE Customization Wizard 11, and go to the **Automatic Configuration** page.
 

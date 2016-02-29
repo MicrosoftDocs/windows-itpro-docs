@@ -13,7 +13,7 @@ Internet Explorer 11 is available as an update in Microsoft Intune. Microsoft I
 ## Adding and deploying the IE11 package
 You can add and then deploy the IE11 package to any computer that's managed by Microsoft Intune.
 
-**To add the IE11 package**
+ ![](images/wedge.gif) **To add the IE11 package**
 
 1.  From the Microsoft Intune administrator console, start the Microsoft Intune Software Publisher.
 
@@ -21,7 +21,7 @@ You can add and then deploy the IE11 package to any computer that's managed by M
 
 For more info about how to decide which one to use, and how to use it, see [Adding Software Packages](http://go.microsoft.com/fwlink/p/?LinkId=301806).
 
-**To automatically deploy and install the IE11 package**
+ ![](images/wedge.gif) **To automatically deploy and install the IE11 package**
 
 1.  From the Microsoft Intune administrator console, start and run through the Deploy Software wizard.
 
@@ -31,7 +31,7 @@ For more info about how to decide which one to use, and how to use it, see [Addi
 
 For more info about this, see [Automatically Deploying Software Packages to Devices and Users](http://go.microsoft.com/fwlink/p/?LinkId=301807)
 
-**To let your employees install the IE11 package**
+ ![](images/wedge.gif) **To let your employees install the IE11 package**
 
 1.  Install the package on your company's Microsoft Intune site, marking it as **Available** for the appropriate groups.
 

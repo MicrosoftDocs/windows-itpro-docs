@@ -42,7 +42,7 @@ To follow the examples in this topic, you’ll need to pin the Bing (http://www.
 ### Step 1: Creating .website files
 The first step is to create a .website file for each website that you want to pin to the Windows 8.1 taskbar during deployment. A .website file is like a shortcut, except it’s a plain text file that describes not only the website’s URL but also how the icon looks.
 
-**To create each .website file**
+ ![](images/wedge.gif) **To create each .website file**
 
 1.  Open the website in IE11.
 
@@ -53,7 +53,7 @@ The first step is to create a .website file for each website that you want to pi
 ### Step 2: Copying the .website files to the deployment share
 Next, you must enable your deployment share to copy the bing.website and msn.website files to the **Start** menu on each target computer.
 
-**To copy .website files to the deployment share**
+ ![](images/wedge.gif) **To copy .website files to the deployment share**
 
 1.  Open your MDT 2013 deployment share in Windows Explorer.
 
@@ -64,7 +64,7 @@ Next, you must enable your deployment share to copy the bing.website and msn.web
 ### Step 3: Copying .website files to target computers
 After your operating system is installed on the target computer, you need to copy the .website files over so they can be pinned to the taskbar.
 
-**To copy .website files to target computers**
+ ![](images/wedge.gif) **To copy .website files to target computers**
 
 1.  In the **Deployment Workbench** of MDT 2013, open the deployment share containing the task sequence during which you want to deploy pinned websites, and then click **Task Sequences**.
 
@@ -81,7 +81,7 @@ After your operating system is installed on the target computer, you need to cop
 ### Step 4: Pinning .website files to the Taskbar
 With the .website files ready to copy to the **Public Links** folder on target computers for all users, the last step is to edit the Unattend.xml answer files to pin those .website files to the taskbar. You will need to complete the following steps for each task sequence during which you want to pin these websites to the taskbar.
 
-**To pin .website files to the Taskbar**
+ ![](images/wedge.gif) **To pin .website files to the Taskbar**
 
 1. Open the Windows System Image Manager (Windows SIM).
 

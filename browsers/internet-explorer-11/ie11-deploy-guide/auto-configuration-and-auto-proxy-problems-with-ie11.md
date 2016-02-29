@@ -23,7 +23,7 @@ If you experience issues while setting up your proxy server, you can try these t
 
 - Check that the browser is pointing to the right automatic configuration script location.
 
-**To check your proxy server address**
+ ![](images/wedge.gif) **To check your proxy server address**
 
 1.  On the **Tools** menu, click **Internet Options**, and then **Connections**.
 
@@ -31,7 +31,7 @@ If you experience issues while setting up your proxy server, you can try these t
 
 3.  If you have multiple proxy servers, click **Advanced** to look at all of the additional addresses.<p>**Note**<br>If IE11 uses a proxy server for local IP addresses, regardless whether you turned on the **Bypass Proxy Server for Local Addresses** option, see [Internet Explorer Uses Proxy Server for Local IP Address Even if the "Bypass Proxy Server for Local Addresses" Option Is Turned On](http://go.microsoft.com/fwlink/p/?LinkId=85652).
 
-**To check that you've turned on the correct settings**
+ ![](images/wedge.gif) **To check that you've turned on the correct settings**
 
 1.  On the **Tools** menu, click **Internet Options**, and then click **Connections**.
 
@@ -39,7 +39,7 @@ If you experience issues while setting up your proxy server, you can try these t
 
 3.  In the **Automatic configuration** area, check that you've clicked the **Automatically detect settings** box. If you've turned on automatic configuration, check to make sure that you've also clicked the **Use automatic configuration script** box.<p>**Note**<br>If at this point everything is set up correctly, but the proxy server still isn't behaving properly, click the **Detect my network settings** box in the **Error** dialog box to try to detect the proxy server, again.
 
-**To check that you're pointing to the correct automatic configuration script location**
+ ![](images/wedge.gif) **To check that you're pointing to the correct automatic configuration script location**
 
 1.  On the **Tools** menu, click **Internet Options**, and then click **Connections**.
 

@@ -20,7 +20,7 @@ Automatic detection works even if the browser wasn't originally set up or instal
 ## Updating your automatic detection settings
 To use automatic detection, you have to set up your DHCP and DNS servers.<p>**Note**<br>Your DHCP servers must support the `DHCPINFORM` message, to obtain the DHCP options.
 
-**To turn on automatic detection for DHCP servers**
+ ![](images/wedge.gif) **To turn on automatic detection for DHCP servers**
 
 1.  Open the Internet Explorer Customization Wizard 11, and go to the **Automatic Configuration** page.
 
@@ -28,7 +28,7 @@ To use automatic detection, you have to set up your DHCP and DNS servers.<p>**No
 
 3.  Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).
 
-**To turn on automatic detection for DNS servers**
+ ![](images/wedge.gif) **To turn on automatic detection for DNS servers**
 
 1.  Open the IE Customization Wizard 11, and go to the **Automatic Configuration** page.
 
