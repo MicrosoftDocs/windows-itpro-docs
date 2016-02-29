@@ -1,8 +1,10 @@
 ---
-Description: Customize Automatic Search for Internet Explorer
-MS-HAID: 'p\_ieak\_ie11.customize\_automatic\_search\_for\_internet\_explorer'
-MSHAttr: 'PreferredLib:/library'
 title: Customize Automatic Search for Internet Explorer
+description: Customize Automatic Search for Internet Explorer
+ms.assetid: 694e2f92-5e08-49dc-b83f-677d61fa918a
+ms.prod: IE11
+ms.mktglfcycl: manage
+ms.sitesec: library
 ---
 
 # Customize Automatic Search for Internet Explorer
@@ -12,7 +14,7 @@ Internet Explorer lets websites advertise any search provider that uses the open
 
 Using the **Administrative Templates** section of Group Policy, you can prevent the search box from appearing, you can add a list of acceptable search providers, and you can restrict your employee’s ability to add or remove search providers.
 
-## Automatic Search configuration
+## <span id="Automatic_Search_configuration"></span><span id="automatic_search_configuration"></span><span id="AUTOMATIC_SEARCH_CONFIGURATION"></span>Automatic Search configuration
 
 
 You can customize Automatic Search so that your employees can type a single word into the **Address** box to search for frequently used pages. For example, you can let a commonly used webpage about invoices appear if an employee types *invoice* into the **Address** box, even if the URL doesn’t include the term. If a website can’t be associated with the term, or if there are multiple matches, a webpage appears showing the top search results.
@@ -22,7 +24,7 @@ You can customize Automatic Search so that your employees can type a single word
 1.  Create a script (.asp) file that conditionally looks for search terms, and post it to an intranet server here: http://ieautosearch/response.asp?MT=*%1*&srch=*%2*.
 
     **Important**  
-    If you aren’t using IIS in your company, you’ll need to remap this URL to your script file’s location. For information about the acceptable values for the *%1* and *%2* parameters, see [Automatic Search parameters](#BKMK_Parameters). For an example of the script file, see [Sample Automatic Search script]().
+    If you aren’t using IIS in your company, you’ll need to remap this URL to your script file’s location. For information about the acceptable values for the *%1* and *%2* parameters, see [Automatic Search parameters](#BKMK_Parameters). For an example of the script file, see [Sample Automatic Search script](#BKMK_ScriptExample).
 
      
 
@@ -38,7 +40,7 @@ You can customize Automatic Search so that your employees can type a single word
 
 -   In the **Advanced Settings** section, go to the section labeled **Searching** and change the **When searching from the address bar** setting to **Do not search from the address bar**.
 
-## Automatic Search parameters
+## <span id="BKMK_Parameters"></span><span id="bkmk_parameters"></span><span id="BKMK_PARAMETERS"></span>Automatic Search parameters
 
 
 You must replace the Automatic Search script file parameters, *%1* and *%2* so they’re part of the actual URL.
@@ -74,7 +76,7 @@ You must replace the Automatic Search script file parameters, *%1* and *%2* so t
 
  
 
-## Sample Automatic Search script
+## <span id="BKMK_ScriptExample"></span><span id="bkmk_scriptexample"></span><span id="BKMK_SCRIPTEXAMPLE"></span>Sample Automatic Search script
 
 
 This is a VBScript-based sample of an .asp Automatic Search script.
@@ -124,6 +126,8 @@ end if
  
 
  
+
+
 
 
 

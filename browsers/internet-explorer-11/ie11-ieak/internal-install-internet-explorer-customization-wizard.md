@@ -1,8 +1,10 @@
 ---
-Description: 'Internal Install: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.internal\_install\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Internal Install: Internet Explorer Customization Wizard'
+description: Internal Install: Internet Explorer Customization Wizard
+ms.assetid: 33d078e3-75b8-455b-9126-f0d272ed676f
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Internal Install: Internet Explorer Customization Wizard
@@ -23,11 +25,13 @@ The customizations made on this page only apply to Internet Explorer for the des
 
     -   **Do not set IE as the default browser** . Won’t set IE as the default browser. However, your employees can still make IE the default.
 
-2.  Click **Next** to go to the [User Experience: Internet Explorer Customization Wizard](user_experience_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Custom Components: Internet Explorer Customization Wizard](custom_components_internet_explorer_customization_wizard.md).
+2.  Click **Next** to go to the [User Experience: Internet Explorer Customization Wizard](user-experience-internet-explorer-customization-wizard.md) page or **Back** to go to the [Custom Components: Internet Explorer Customization Wizard](custom-components-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

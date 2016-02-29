@@ -1,8 +1,10 @@
 ---
-Description: 'Package Type Selection: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.package\_type\_selection\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Package Type Selection: Internet Explorer Customization Wizard'
+description: Package Type Selection: Internet Explorer Customization Wizard
+ms.assetid: dd91f788-d05e-4f45-9fd5-d951abf04f2c
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Package Type Selection: Internet Explorer Customization Wizard
@@ -28,11 +30,13 @@ The **Package Type Selection** page of the Internet Explorer Customization Wizar
 
      
 
-3.  Click **Next** to go to the [Feature Selection: Internet Explorer Customization Wizard](feature_selection_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Language Selection: Internet Explorer Customization Wizard](language_selection_internet_explorer_customization_wizard.md).
+3.  Click **Next** to go to the [Feature Selection: Internet Explorer Customization Wizard](feature-selection-internet-explorer-customization-wizard.md) page or **Back** to go to the [Language Selection: Internet Explorer Customization Wizard](language-selection-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

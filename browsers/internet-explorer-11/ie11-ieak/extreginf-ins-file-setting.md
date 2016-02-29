@@ -1,8 +1,10 @@
 ---
-Description: '\[ExtRegInf\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.extreginf\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[ExtRegInf\]: .INS file setting'
+description: \[ExtRegInf\]: .INS file setting
+ms.assetid: 53148422-d784-44dc-811d-ef814b86a4c6
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[ExtRegInf\]: .INS file setting
@@ -62,6 +64,8 @@ Names of your Setup information (.inf) files and the installation mode for compo
  
 
  
+
+
 
 
 

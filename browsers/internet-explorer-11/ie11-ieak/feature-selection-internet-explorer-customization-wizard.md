@@ -1,8 +1,10 @@
 ---
-Description: 'Feature Selection: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.feature\_selection\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Feature Selection: Internet Explorer Customization Wizard'
+description: Feature Selection: Internet Explorer Customization Wizard
+ms.assetid: 9cb8324e-d73b-41ba-ade9-3acc796e21d8
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Feature Selection: Internet Explorer Customization Wizard
@@ -49,11 +51,13 @@ Your choices on this page determine what wizard pages appear.
 
     You can also click **Select All** to add, or **Clear All** to remove, all of the features.
 
-2.  Click **Next** to go to the [Automatic Version Synchronization: Internet Explorer Customization Wizard](automatic_version_synchronization_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Package Type Selection: Internet Explorer Customization Wizard](package_type_selection_internet_explorer_customization_wizard.md).
+2.  Click **Next** to go to the [Automatic Version Synchronization: Internet Explorer Customization Wizard](automatic-version-synchronization-internet-explorer-customization-wizard.md) page or **Back** to go to the [Package Type Selection: Internet Explorer Customization Wizard](package-type-selection-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

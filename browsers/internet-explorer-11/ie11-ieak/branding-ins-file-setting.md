@@ -1,8 +1,10 @@
 ---
-Description: '\[Branding\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.branding\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[Branding\]: .INS file setting'
+description: \[Branding\]: .INS file setting
+ms.assetid: cde600c6-29cf-4bd3-afd1-21563d2642df
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[Branding\]: .INS file setting
@@ -220,6 +222,8 @@ Information about the custom branding and setup information in your browser pack
  
 
  
+
+
 
 
 

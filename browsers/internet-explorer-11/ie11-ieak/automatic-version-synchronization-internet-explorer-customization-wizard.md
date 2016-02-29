@@ -1,8 +1,10 @@
 ---
-Description: 'Automatic Version Synchronization: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.automatic\_version\_synchronization\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Automatic Version Synchronization: Internet Explorer Customization Wizard'
+description: Automatic Version Synchronization: Internet Explorer Customization Wizard
+ms.assetid: bfc7685f-843b-49c3-8b9b-07e69705840c
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Automatic Version Synchronization: Internet Explorer Customization Wizard
@@ -31,11 +33,13 @@ The **Automatic Version Synchronization** page tells you:
 
     You might receive a security warning before downloading your Setup file, asking if you want to continue. Click **Run** to continue.
 
-2.  Click **Next** to go to the [Custom Components: Internet Explorer Customization Wizard](custom_components_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Feature Selection: Internet Explorer Customization Wizard](feature_selection_internet_explorer_customization_wizard.md).
+2.  Click **Next** to go to the [Custom Components: Internet Explorer Customization Wizard](custom-components-internet-explorer-customization-wizard.md) page or **Back** to go to the [Feature Selection: Internet Explorer Customization Wizard](feature-selection-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

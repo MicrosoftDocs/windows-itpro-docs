@@ -1,8 +1,10 @@
 ---
-Description: 'Internet Explorer Setup command-line options and return codes'
-MS-HAID: 'p\_ieak\_ie11.internet\_explorer\_setup\_command\_line\_options\_and\_return\_codes'
-MSHAttr: 'PreferredLib:/library'
 title: 'Internet Explorer Setup command-line options and return codes'
+description: Internet Explorer Setup command-line options and return codes
+ms.assetid: 40c23024-cb5d-4902-ad1b-6e8a189a699f
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Internet Explorer Setup command-line options and return codes
@@ -10,7 +12,7 @@ title: 'Internet Explorer Setup command-line options and return codes'
 
 You can package your custom version of Internet Explorer and the appropriate command-line options, using a tool like IExpress, and then perform a batch installation across your company.
 
-## IE Setup command-line options
+## <span id="IE_Setup_command-line_options_"></span><span id="ie_setup_command-line_options_"></span><span id="IE_SETUP_COMMAND-LINE_OPTIONS_"></span>IE Setup command-line options
 
 
 These command-line options work with IE Setup:
@@ -129,7 +131,7 @@ These command-line options work with IE Setup:
 
  
 
-## Windows Setup return and status codes
+## <span id="Windows_Setup_return_and_status_codes"></span><span id="windows_setup_return_and_status_codes"></span><span id="WINDOWS_SETUP_RETURN_AND_STATUS_CODES"></span>Windows Setup return and status codes
 
 
 Setup needs to tell you whether IE successfully installed. However, because IE11wzd.exe is packaged insider your IE11setup.exe file, the return codes can’t be sent directly back to you. Instead, Setup needs to return the information (both success and failure) to the HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Active Setup\\InstallInfo registry branch.
@@ -202,6 +204,8 @@ Setup needs to tell you whether IE successfully installed. However, because IE11
  
 
  
+
+
 
 
 

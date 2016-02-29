@@ -1,8 +1,10 @@
 ---
-Description: Set up automatic detection for DHCP or DNS servers using IEAK 11
-MS-HAID: 'p\_ieak\_ie11.set\_up\_automatic\_detection\_for\_dhcp\_or\_dns\_servers\_using\_ieak\_11'
-MSHAttr: 'PreferredLib:/library'
 title: Set up automatic detection for DHCP or DNS servers using IEAK 11
+description: Set up automatic detection for DHCP or DNS servers using IEAK 11
+ms.assetid: c6bfe7c4-f452-406f-b47e-b7f0d8c44ae1
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Set up automatic detection for DHCP or DNS servers using IEAK 11
@@ -14,9 +16,9 @@ Before you can set up your environment to use automatic detection, you need to t
 
 ![](../common/wedge.gif)**To turn on the automatic detection feature**
 
--   Open Internet Explorer Administration Kit 11 (IEAK 11), run the IE Customization Wizard 11 and on the **Automatic Configuration** page, check **Automatically detect configuration settings**. For more information, see [Automatic Configuration: Internet Explorer Customization Wizard](automatic_configuration_internet_explorer_customization_wizard.md).
+-   Open Internet Explorer Administration Kit 11 (IEAK 11), run the IE Customization Wizard 11 and on the **Automatic Configuration** page, check **Automatically detect configuration settings**. For more information, see [Automatic Configuration: Internet Explorer Customization Wizard](automatic-configuration-internet-explorer-customization-wizard.md).
 
-## Automatic detection on DHCP and DNS servers
+## <span id="Automatic_detection_on_DHCP_and_DNS_servers"></span><span id="automatic_detection_on_dhcp_and_dns_servers"></span><span id="AUTOMATIC_DETECTION_ON_DHCP_AND_DNS_SERVERS"></span>Automatic detection on DHCP and DNS servers
 
 
 Automatic detection works even if the browser wasn't originally set up or installed by the administrator.
@@ -94,6 +96,8 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
  
 
  
+
+
 
 
 

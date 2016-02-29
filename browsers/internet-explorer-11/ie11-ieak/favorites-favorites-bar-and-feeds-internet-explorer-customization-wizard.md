@@ -1,8 +1,10 @@
 ---
-Description: 'Favorites, Favorites Bar, and Feeds: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.favorites\_favorites\_bar\_and\_feeds\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Favorites, Favorites Bar, and Feeds: Internet Explorer Customization Wizard'
+description: Favorites, Favorites Bar, and Feeds: Internet Explorer Customization Wizard
+ms.assetid: 84afa831-5642-4b8f-b7df-212a53ec8fc7
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Favorites, Favorites Bar, and Feeds: Internet Explorer Customization Wizard
@@ -50,7 +52,7 @@ Although we provide default items in the **Favorites, Favorites Bar, and Feeds**
 
 12. Check the **Disable IE Suggested Sites** box to disable the Suggested Sites feature. By turning this on, your employees won’t receive suggested sites based on the sites that they visit.
 
-13. Continue with the next procedures in this topic to add additional **Favorites Bar** or **RSS Feeds** links, or you can click **Next** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing_options_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Accelerators: Internet Explorer Customization Wizard](accelerators_internet_explorer_customization_wizard.md) page.
+13. Continue with the next procedures in this topic to add additional **Favorites Bar** or **RSS Feeds** links, or you can click **Next** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing-options-internet-explorer-customization-wizard.md) page or **Back** to go to the [Accelerators: Internet Explorer Customization Wizard](accelerators-internet-explorer-customization-wizard.md) page.
 
 ![](../common/wedge.gif)**To work with the Favorites Bar**
 
@@ -78,7 +80,7 @@ Although we provide default items in the **Favorites, Favorites Bar, and Feeds**
 
 10. Check the **Disable IE Suggested Sites** box to disable the Suggested Sites feature. By turning this on, your employees won’t receive suggested sites based on the sites that they visit.
 
-11. Continue with the next procedures in this topic to add additional **Favorites** or **RSS Feeds** links, or you can click **Next** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing_options_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Accelerators: Internet Explorer Customization Wizard](accelerators_internet_explorer_customization_wizard.md) page.
+11. Continue with the next procedures in this topic to add additional **Favorites** or **RSS Feeds** links, or you can click **Next** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing-options-internet-explorer-customization-wizard.md) page or **Back** to go to the [Accelerators: Internet Explorer Customization Wizard](accelerators-internet-explorer-customization-wizard.md) page.
 
 ![](../common/wedge.gif)**To work with RSS Feeds**
 
@@ -96,11 +98,13 @@ Although we provide default items in the **Favorites, Favorites Bar, and Feeds**
 
 6.  Check the **Disable IE Suggested Sites** box to disable the Suggested Sites feature. By turning this on, your employees won’t receive suggested sites based on the sites that they visit.
 
-7.  Continue with the next procedures in this topic to add additional **Favorites** or **Favorites Bar** links, or you can click **Next** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing_options_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Accelerators: Internet Explorer Customization Wizard](accelerators_internet_explorer_customization_wizard.md) page.
+7.  Continue with the next procedures in this topic to add additional **Favorites** or **Favorites Bar** links, or you can click **Next** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing-options-internet-explorer-customization-wizard.md) page or **Back** to go to the [Accelerators: Internet Explorer Customization Wizard](accelerators-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

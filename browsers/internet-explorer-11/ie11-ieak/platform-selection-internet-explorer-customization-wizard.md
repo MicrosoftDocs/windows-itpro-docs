@@ -1,8 +1,10 @@
 ---
-Description: 'Platform Selection: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.platform\_selection\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Platform Selection: Internet Explorer Customization Wizard'
+description: Platform Selection: Internet Explorer Customization Wizard
+ms.assetid: 9cbf5abd-86f7-42b6-9810-0b606bbe8218
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Platform Selection: Internet Explorer Customization Wizard
@@ -21,13 +23,15 @@ The **Platform Selection** page of the Internet Explorer Customization Wizard 11
 
      
 
-    For more information about using .ins files, see [Using Internet Settings (.INS) Files](using_internet_settings__ins__files.htm). For more information about adding in your .ins file, see [File Locations: Internet Explorer Customization Wizard](file_locations_internet_explorer_customization_wizard.md).
+    For more information about using .ins files, see [Using Internet Settings (.INS) Files](using-internet-settings--ins--files.md). For more information about adding in your .ins file, see [File Locations: Internet Explorer Customization Wizard](file-locations-internet-explorer-customization-wizard.md).
 
-2.  Click **Next** to go to the [Language Selection: Internet Explorer Customization Wizard](language_selection_internet_explorer_customization_wizard.htm) page or **Back** to go to the [File Locations: Internet Explorer Customization Wizard](file_locations_internet_explorer_customization_wizard.md).
+2.  Click **Next** to go to the [Language Selection: Internet Explorer Customization Wizard](language-selection-internet-explorer-customization-wizard.md) page or **Back** to go to the [File Locations: Internet Explorer Customization Wizard](file-locations-internet-explorer-customization-wizard.md).
+
+ 
 
  
 
- 
+
 
 
 

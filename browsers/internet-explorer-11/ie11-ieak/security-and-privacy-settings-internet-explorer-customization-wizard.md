@@ -1,8 +1,10 @@
 ---
-Description: 'Security and Privacy Settings: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.security\_and\_privacy\_settings\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Security and Privacy Settings: Internet Explorer Customization Wizard'
+description: Security and Privacy Settings: Internet Explorer Customization Wizard
+ms.assetid: cb7cd1df-6a79-42f6-b3a1-8ae467053f82
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Security and Privacy Settings: Internet Explorer Customization Wizard
@@ -34,11 +36,13 @@ The **Security and Privacy Settings** page of the Internet Explorer Customizatio
 
          
 
-3.  Click **Next** to go to the [Add a Root Certificate: Internet Explorer Customization Wizard](add_a_root_certificate_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Proxy Settings: Internet Explorer Customization Wizard](proxy_settings_internet_explorer_customization_wizard.md) page.
+3.  Click **Next** to go to the [Add a Root Certificate: Internet Explorer Customization Wizard](add-a-root-certificate-internet-explorer-customization-wizard.md) page or **Back** to go to the [Proxy Settings: Internet Explorer Customization Wizard](proxy-settings-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

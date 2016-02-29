@@ -1,8 +1,10 @@
 ---
-Description: '\[BrowserToolbars\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.browsertoolbars\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[BrowserToolbars\]: .INS file setting'
+description: \[BrowserToolbars\]: .INS file setting
+ms.assetid: 83af0558-9df3-4c2e-9350-44f7788efa6d
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # \[BrowserToolbars\]: .INS file setting
@@ -75,6 +77,8 @@ Customize the appearance of the Internet Explorer toolbar.
  
 
  
+
+
 
 
 

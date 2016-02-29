@@ -1,8 +1,10 @@
 ---
-Description: 'Browsing Options: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.browsing\_options\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Browsing Options: Internet Explorer Customization Wizard'
+description: Browsing Options: Internet Explorer Customization Wizard
+ms.assetid: d6bd71ba-5df3-4b8c-8bb5-dcbc50fd974e
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Browsing Options: Internet Explorer Customization Wizard
@@ -32,11 +34,13 @@ The choices that you make on this page affect only the items shown on the **Favo
 
     -   **Accelerators.** Checking this box won’t add the Microsoft-defined Accelerators.
 
-3.  Click **Next** to go to the [First Run Wizard and Welcome Page Options: Internet Explorer Customization Wizard](first_run_wizard_and_welcome_page_options_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Favorites, Favorites Bar, and Feeds: Internet Explorer Customization Wizard](favorites_favorites_bar_and_feeds_internet_explorer_customization_wizard.md) page.
+3.  Click **Next** to go to the [First Run Wizard and Welcome Page Options: Internet Explorer Customization Wizard](first-run-wizard-and-welcome-page-options-internet-explorer-customization-wizard.md) page or **Back** to go to the [Favorites, Favorites Bar, and Feeds: Internet Explorer Customization Wizard](favorites-favorites-bar-and-feeds-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

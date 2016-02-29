@@ -1,8 +1,10 @@
 ---
-Description: 'First Run Wizard and Welcome Page Options: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.first\_run\_wizard\_and\_welcome\_page\_options\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'First Run Wizard and Welcome Page Options: Internet Explorer Customization Wizard'
+description: First Run Wizard and Welcome Page Options: Internet Explorer Customization Wizard
+ms.assetid: 85f856a6-b707-48a9-ba99-3a6e898276a9
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # First Run Wizard and Welcome Page Options: Internet Explorer Customization Wizard
@@ -26,11 +28,13 @@ The **First Run Wizard and Welcome Page Options** page of the Internet Explorer 
 
     -   **Use a custom Welcome Page.** Check this box if you want to use a custom **Welcome** page. If you choose this option, you need to add the URL to your custom page.
 
-3.  Click **Next** to go to the [Compatibility View: Internet Explorer Customization Wizard](compatibility_view_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing_options_internet_explorer_customization_wizard.md) page.
+3.  Click **Next** to go to the [Compatibility View: Internet Explorer Customization Wizard](compatibility-view-internet-explorer-customization-wizard.md) page or **Back** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing-options-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

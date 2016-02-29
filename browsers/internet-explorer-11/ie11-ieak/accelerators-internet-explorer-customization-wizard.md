@@ -1,8 +1,10 @@
 ---
-Description: 'Accelerators: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.accelerators\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Accelerators: Internet Explorer Customization Wizard'
+description: Accelerators: Internet Explorer Customization Wizard
+ms.assetid: 208305ad-1bcd-42f3-aca3-0ad1dda7048b
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Accelerators: Internet Explorer Customization Wizard
@@ -29,11 +31,13 @@ The customizations you make on this page apply only to Internet Explorer for the
 
 5.  Click **Edit** to change your Accelerator information, click **Set Default** to make an Accelerator the default value for a category, or **Remove** to delete an Accelerator.
 
-6.  Click **Next** to go to the [Favorites, Favorites Bar, and Feeds: Internet Explorer Customization Wizard](favorites_favorites_bar_and_feeds_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Important URLs - Home Page and Support: Internet Explorer Customization Wizard](important_urls___home_page_and_support_internet_explorer_customization_wizard.md).
+6.  Click **Next** to go to the [Favorites, Favorites Bar, and Feeds: Internet Explorer Customization Wizard](favorites-favorites-bar-and-feeds-internet-explorer-customization-wizard.md) page or **Back** to go to the [Important URLs - Home Page and Support: Internet Explorer Customization Wizard](important-urls---home-page-and-support-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

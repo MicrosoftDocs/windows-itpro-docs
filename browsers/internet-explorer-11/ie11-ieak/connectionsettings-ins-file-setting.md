@@ -1,8 +1,10 @@
 ---
-Description: '\[ConnectionSettings\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.connectionsettings\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[ConnectionSettings\]: .INS file setting'
+description: \[ConnectionSettings\]: .INS file setting
+ms.assetid: 41410300-6ddd-43b2-b9e2-0108a2221355
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # \[ConnectionSettings\]: .INS file setting
@@ -67,6 +69,8 @@ Information about the network connection settings used to install your custom pa
  
 
  
+
+
 
 
 

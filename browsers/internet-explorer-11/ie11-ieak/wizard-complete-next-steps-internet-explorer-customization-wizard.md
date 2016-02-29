@@ -1,8 +1,10 @@
 ---
-Description: 'Wizard Complete-Next Steps: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.wizard\_complete\_next\_steps\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Wizard Complete-Next Steps: Internet Explorer Customization Wizard'
+description: Wizard Complete-Next Steps: Internet Explorer Customization Wizard
+ms.assetid: aaaac88a-2022-4d0b-893c-b2404b45cabc
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Wizard Complete-Next Steps: Internet Explorer Customization Wizard
@@ -15,6 +17,8 @@ In most cases, your next steps will be to prepare your files for installation fr
  
 
  
+
+
 
 
 

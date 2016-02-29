@@ -1,8 +1,10 @@
 ---
-Description: 'Connection Settings: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.connection\_settings\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Connection Settings: Internet Explorer Customization Wizard'
+description: Connection Settings: Internet Explorer Customization Wizard
+ms.assetid: dc93ebf7-37dc-47c7-adc3-067d07de8b78
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Connection Settings: Internet Explorer Customization Wizard
@@ -11,7 +13,7 @@ title: 'Connection Settings: Internet Explorer Customization Wizard'
 The **Connection Settings** page of the Internet Explorer Customization Wizard 11 lets you import the connection settings from your computer, to preset the connection settings on your employee’s computers.
 
 **Note**  
-Using the options on the **Additional Settings** page of the wizard, you can let your employees change their connection settings. For more information see [Additional Settings: Internet Explorer Customization Wizard](additional_settings_internet_explorer_customization_wizard.htm). You can also customize additional connection settings using the **Automatic Configuration** page in the wizard. For more information see [Automatic Configuration: Internet Explorer Customization Wizard](automatic_configuration_internet_explorer_customization_wizard.md).
+Using the options on the **Additional Settings** page of the wizard, you can let your employees change their connection settings. For more information see [Additional Settings: Internet Explorer Customization Wizard](additional-settings-internet-explorer-customization-wizard.md). You can also customize additional connection settings using the **Automatic Configuration** page in the wizard. For more information see [Automatic Configuration: Internet Explorer Customization Wizard](automatic-configuration-internet-explorer-customization-wizard.md).
 
  
 
@@ -36,11 +38,13 @@ Using the options on the **Additional Settings** page of the wizard, you can let
 
 2.  Check the **Delete existing Dial-up Connection Settings** box to clear any existing settings on your employee’s computers.
 
-3.  Click **Next** to go to the [Automatic Configuration: Internet Explorer Customization Wizard](automatic_configuration_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Connection Manager: Internet Explorer Customization Wizard](connection_manager_internet_explorer_customization_wizard.md) page.
+3.  Click **Next** to go to the [Automatic Configuration: Internet Explorer Customization Wizard](automatic-configuration-internet-explorer-customization-wizard.md) page or **Back** to go to the [Connection Manager: Internet Explorer Customization Wizard](connection-manager-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

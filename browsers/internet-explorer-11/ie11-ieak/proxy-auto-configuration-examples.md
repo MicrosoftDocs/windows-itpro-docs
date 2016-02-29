@@ -1,8 +1,10 @@
 ---
-Description: 'Proxy auto-configuration examples'
-MS-HAID: 'p\_ieak\_ie11.proxy\_auto\_configuration\_examples'
-MSHAttr: 'PreferredLib:/library'
 title: 'Proxy auto-configuration examples'
+description: Proxy auto-configuration examples
+ms.assetid: 6c94708d-71bd-44bd-a445-7e6763b374ae
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Proxy auto-configuration examples
@@ -10,7 +12,7 @@ title: 'Proxy auto-configuration examples'
 
 These are examples of the various ways you can use a proxy auto-configuration (.pac) file to specify an automatic proxy URL. To use these examples, you must change the proxy names, port numbers, and IP addresses to match your corporate information.
 
-## Connect directly if the host is local
+## <span id="Connect_directly_if_the_host_is_local"></span><span id="connect_directly_if_the_host_is_local"></span><span id="CONNECT_DIRECTLY_IF_THE_HOST_IS_LOCAL"></span>Connect directly if the host is local
 
 
 For this example, if the host is local, it can connect directly. However, if the server isn’t local, it must connect through a proxy server. Specifically, the `isPlainHostName` function looks to see if there are any periods (or dots) in the host name. If the function finds dots, it means the host isn’t local and it returns false. Otherwise, the function returns true.
@@ -25,7 +27,7 @@ function FindProxyForURL(url, host)
  }
 ```
 
-## Connect directly if the host is inside the firewall
+## <span id="Connect_directly_if_the_host_is_inside_the_firewall"></span><span id="connect_directly_if_the_host_is_inside_the_firewall"></span><span id="CONNECT_DIRECTLY_IF_THE_HOST_IS_INSIDE_THE_FIREWALL"></span>Connect directly if the host is inside the firewall
 
 
 For this example, if the host is inside the firewall, it can connect directly. However, if the server is outside the firewall, it must connect through a proxy server. Specifically, `localHostOrDomainIs` function will only run for URLs in the local domain. If the host domain name matches the provided domain information, the `dnsDomainIs` function returns true.
@@ -43,7 +45,7 @@ function FindProxyForURL(url, host)
 }
 ```
 
-## Connect directly if the host name is resolvable
+## <span id="BKMK_Example_3"></span><span id="bkmk_example_3"></span><span id="BKMK_EXAMPLE_3"></span>Connect directly if the host name is resolvable
 
 
 For this example, if the host name can be resolved, it can connect directly. However, if the name can’t be resolved, the server must connect through a proxy server. Specifically, this function requests the DNS server to resolve the host name passed to it. If it can, then a direct connection is made. If it cannot, the connection is made using a proxy.
@@ -65,7 +67,7 @@ function FindProxyForURL(url, host)
  }
 ```
 
-## Connect directly if the host is in specified subnet
+## <span id="BKMK_Example_4"></span><span id="bkmk_example_4"></span><span id="BKMK_EXAMPLE_4"></span>Connect directly if the host is in specified subnet
 
 
 For this example, if the host is in a specified subnet, it can connect directly. However, if the server is outside of the specified subnet, it must connect through a proxy server. Specifically, the `isInNet` (host, pattern, mask) function returns true if the host IP address matches the specified pattern. The mask indicates which part of the IP address to match (255=match, 0=ignore).
@@ -85,7 +87,7 @@ function FindProxyForURL(url, host)
  }
 ```
 
-## Determine the connection type based on the host domain
+## <span id="BKMK_Example_5"></span><span id="bkmk_example_5"></span><span id="BKMK_EXAMPLE_5"></span>Determine the connection type based on the host domain
 
 
 For this example, if the host is local, the server can connect directly. However, if the host isn’t local, this function determines which proxy to use based on the host domain. Specifically, the `shExpMatch(str, shexp)` function returns true if `str` matches the `shexp` using shell expression patterns.
@@ -106,7 +108,7 @@ function FindProxyForURL(url, host)
  }
 ```
 
-## Determine the connection type based on the protocol
+## <span id="BKMK_Example_6"></span><span id="bkmk_example_6"></span><span id="BKMK_EXAMPLE_6"></span>Determine the connection type based on the protocol
 
 
 For this example, the in-use protocol is extracted from the server and used to make a proxy selection. If no protocol match occurs, the server is directly connected. Specifically the `substring` function extracts the specified number of characters from a string.
@@ -134,7 +136,7 @@ function FindProxyForURL(url, host)
  }
 ```
 
-## Determine the proxy server based on the host name matching the IP address
+## <span id="BKMK_Example_7"></span><span id="bkmk_example_7"></span><span id="BKMK_EXAMPLE_7"></span>Determine the proxy server based on the host name matching the IP address
 
 
 For this example, the proxy server is selected by translating the host name into an IP address and then comparing the address to a specified string.
@@ -156,7 +158,7 @@ function FindProxyForURL(url, host)
  }
 ```
 
-## Connect using a proxy server if the host IP address matches the specified IP address
+## <span id="BKMK_Example_8"></span><span id="bkmk_example_8"></span><span id="BKMK_EXAMPLE_8"></span>Connect using a proxy server if the host IP address matches the specified IP address
 
 
 For this example, the proxy server is selected by explicitly getting the IP address and then comparing it to a specified string. If no protocol match occurs, the server makes a direct connection. Specifically, the `myIpAddress` function returns the IP address (in integer-dot format) for the host that the browser is running on.
@@ -173,7 +175,7 @@ function FindProxyForURL(url, host)
  }
 ```
 
-## Connect using a proxy server if there are dots in the host name
+## <span id="BKMK_Example_9"></span><span id="bkmk_example_9"></span><span id="BKMK_EXAMPLE_9"></span>Connect using a proxy server if there are dots in the host name
 
 
 For this example, the function looks to see if there are periods (or dots) in the host name. If there are any dots, the connection occurs using a proxy server. If there are no dots, a direct connection occurs. Specifically, the `dnsDomainLevels` function returns an integer equal to the number of dots in the host name.
@@ -193,7 +195,7 @@ function FindProxyForURL(url, host)
  }
 ```
 
-## Connect using a proxy server based on specific days of the week
+## <span id="BKMK_Example_10"></span><span id="bkmk_example_10"></span><span id="BKMK_EXAMPLE_10"></span>Connect using a proxy server based on specific days of the week
 
 
 For this example, the function decides whether to connect to a proxy server, based on the days of the week. Connecting on days that don’t fall between the specified date parameters let the server make a direct connection. Specifically the `weekdayRange(day1 [,day2] [,GMT] )` function returns whether the current system time falls within the range specified by the parameters `day1`, `day2`, and `GMT`. Only the first parameter is required. The GMT parameter presumes time values are in Greenwich Mean Time rather than the local time zone.
@@ -213,6 +215,8 @@ function FindProxyForURL(url, host)
  
 
  
+
+
 
 
 

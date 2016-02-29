@@ -1,8 +1,10 @@
 ---
-Description: IExpress Wizard for Windows Server 2008 R2 with SP1
-MS-HAID: 'p\_ieak\_ie11.iexpress\_wizard\_for\_windows\_server\_2008\_r2\_with\_sp1'
-MSHAttr: 'PreferredLib:/library'
 title: IExpress Wizard for Windows Server 2008 R2 with SP1
+description: IExpress Wizard for Windows Server 2008 R2 with SP1
+ms.assetid: 5100886d-ec88-4c1c-8cd7-be00da874c57
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # IExpress Wizard for Windows Server 2008 R2 with SP1
@@ -10,12 +12,12 @@ title: IExpress Wizard for Windows Server 2008 R2 with SP1
 
 You can use the IExpress Wizard and its associated command-line options to create self-extracting files that automatically run your custom Internet Explorer Setup (.inf or .exe file) program that’s contained inside.
 
-## IExpress location
+## <span id="IExpress_location"></span><span id="iexpress_location"></span><span id="IEXPRESS_LOCATION"></span>IExpress location
 
 
 The IExpress Wizard (Iexpress.exe) is included as part of Windows Server 2008 R2 with Service Pack 1 (SP1), in the *&lt;systemdrive&gt;*:\\WINDOWS\\system32 folder. The wizard uses a self-extraction directive (.sed) file to store your package’s information. When you run the wizard, you have the option to start with an existing .sed file, or to create a new one.
 
-## IExpress features
+## <span id="IExpress_features"></span><span id="iexpress_features"></span><span id="IEXPRESS_FEATURES"></span>IExpress features
 
 
 The IExpress Wizard:
@@ -26,7 +28,7 @@ The IExpress Wizard:
 
 -   Supports repeated updating or performing clean installations of the same IE build.
 
-## IExpress settings
+## <span id="IExpress_settings"></span><span id="iexpress_settings"></span><span id="IEXPRESS_SETTINGS"></span>IExpress settings
 
 
 The IExpress Wizard lets you:
@@ -55,16 +57,20 @@ The IExpress Wizard lets you:
 
 -   Provide support for the extended character set, beyond single-byte characters (SBCS).
 
--   Provide support for using the .inf file format to download Internet components. For more information, see [Creating uninstallation (.INF) files for custom components](creating_uninstallation__inf__files_for_custom_components.md).
+-   Provide support for using the .inf file format to download Internet components. For more information, see [Creating uninstallation (.INF) files for custom components](creating-uninstallation--inf--files-for-custom-components.md).
 
-## Related topics
+## <span id="related_topics"></span>Related topics
 
 
-[IExpress command-line options](iexpress_command_line_options.md)
-[Internet Explorer Setup command-line options and return codes](internet_explorer_setup_command_line_options_and_return_codes.md)
+[IExpress command-line options](iexpress-command-line-options.md)
+
+[Internet Explorer Setup command-line options and return codes](internet-explorer-setup-command-line-options-and-return-codes.md)
+
  
 
  
+
+
 
 
 

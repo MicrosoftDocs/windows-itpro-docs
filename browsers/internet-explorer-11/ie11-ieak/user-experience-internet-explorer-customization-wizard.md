@@ -1,8 +1,10 @@
 ---
-Description: 'User Experience: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.user\_experience\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'User Experience: Internet Explorer Customization Wizard'
+description: User Experience: Internet Explorer Customization Wizard
+ms.assetid: d3378058-e4f0-4a11-a888-b550af994bfa
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # User Experience: Internet Explorer Customization Wizard
@@ -45,11 +47,13 @@ You’ll only see this page if you are running the **Internal** version of the I
 
     -   **Force restart**. Automatically restarts the computer after installing IE.
 
-3.  Click **Next** to go to the [Browser User Interface: Internet Explorer Customization Wizard](browser_user_interface_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Internal Install: Internet Explorer Customization Wizard](internal_install_internet_explorer_customization_wizard.md).
+3.  Click **Next** to go to the [Browser User Interface: Internet Explorer Customization Wizard](browser-user-interface-internet-explorer-customization-wizard.md) page or **Back** to go to the [Internal Install: Internet Explorer Customization Wizard](internal-install-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

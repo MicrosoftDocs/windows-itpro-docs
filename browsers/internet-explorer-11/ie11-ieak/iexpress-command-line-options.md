@@ -1,8 +1,10 @@
 ---
-Description: 'IExpress command-line options'
-MS-HAID: 'p\_ieak\_ie11.iexpress\_command\_line\_options'
-MSHAttr: 'PreferredLib:/library'
 title: 'IExpress command-line options'
+description: IExpress command-line options
+ms.assetid: aa16d738-1067-403c-88b3-bada12cf9752
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # IExpress command-line options
@@ -72,6 +74,8 @@ For more information, see [Command-line switches for IExpress software update pa
  
 
  
+
+
 
 
 

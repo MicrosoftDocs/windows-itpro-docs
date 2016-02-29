@@ -1,8 +1,10 @@
 ---
-Description: 'Browser User Interface: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.browser\_user\_interface\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Browser User Interface: Internet Explorer Customization Wizard'
+description: Browser User Interface: Internet Explorer Customization Wizard
+ms.assetid: c4a18dcd-2e9c-4b5b-bcc5-9b9361a79f0d
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Browser User Interface: Internet Explorer Customization Wizard
@@ -46,11 +48,13 @@ The customizations you make on this page apply only to Internet Explorer for the
 
 9.  Click **Edit** to change your custom toolbar button or **Remove** to delete the button. The removed button will disappear from your employee’s computer after you apply the updated customization. Only custom toolbar buttons can be removed.
 
-10. Click **Next** to go to the [Search Providers: Internet Explorer Customization Wizard](search_providers_internet_explorer_customization_wizard.htm) page or **Back** to go to the [User Experience: Internet Explorer Customization Wizard](user_experience_internet_explorer_customization_wizard.md).
+10. Click **Next** to go to the [Search Providers: Internet Explorer Customization Wizard](search-providers-internet-explorer-customization-wizard.md) page or **Back** to go to the [User Experience: Internet Explorer Customization Wizard](user-experience-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

@@ -1,8 +1,10 @@
 ---
-Description: Prepare for a network install of your custom package with IEAK 11
-MS-HAID: 'p\_ieak\_ie11.prepare\_for\_a\_network\_install\_of\_your\_custom\_package\_with\_ieak\_11'
-MSHAttr: 'PreferredLib:/library'
 title: Prepare for a network install of your custom package with IEAK 11
+description: Prepare for a network install of your custom package with IEAK 11
+ms.assetid: 2c66d22a-4a94-47cc-82ab-7274abe1dfd6
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # Prepare for a network install of your custom package with IEAK 11
@@ -29,6 +31,8 @@ Employees can install your custom browser package using a network server. Howeve
  
 
  
+
+
 
 
 

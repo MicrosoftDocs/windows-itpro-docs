@@ -1,8 +1,10 @@
 ---
-Description: 'Proxy Settings: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.proxy\_settings\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Proxy Settings: Internet Explorer Customization Wizard'
+description: Proxy Settings: Internet Explorer Customization Wizard
+ms.assetid: 1fa1eee3-e97d-41fa-a48c-4a6e0dc8b544
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Proxy Settings: Internet Explorer Customization Wizard
@@ -38,11 +40,13 @@ Using a proxy server lets you limit access to the Internet. You can also use the
 
 6.  Check the **Do not use proxy server for local (intranet) addresses** to bypass your proxy servers for all addresses on your intranet.
 
-7.  Click **Next** to go to the [Security and Privacy Settings: Internet Explorer Customization Wizard](security_and_privacy_settings_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Automatic Configuration: Internet Explorer Customization Wizard](automatic_configuration_internet_explorer_customization_wizard.md) page.
+7.  Click **Next** to go to the [Security and Privacy Settings: Internet Explorer Customization Wizard](security-and-privacy-settings-internet-explorer-customization-wizard.md) page or **Back** to go to the [Automatic Configuration: Internet Explorer Customization Wizard](automatic-configuration-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

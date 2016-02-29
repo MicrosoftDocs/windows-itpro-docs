@@ -1,11 +1,13 @@
 ---
-Description: 'Creating uninstallation (.INF) files for custom components'
-MS-HAID: 'p\_ieak\_ie11.creating\_uninstallation\_\_inf\_\_files\_for\_custom\_components'
-MSHAttr: 'PreferredLib:/library'
 title: 'Creating uninstallation (.INF) files for custom components'
+description: Creating uninstallation (.INF) files for custom components
+ms.assetid: 8257aa41-58de-4339-81dd-9f2ffcc10a08
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
-#  files for custom components
+# Creating uninstallation (.INF) files for custom components
 
 
 Internet Explorer Administration Kit 11 (IEAK 11) uses Setup information (.inf) files to provide installation instructions for your custom browser packages. You can also use this file to uninstall your custom components by removing the files, registry entries, and shortcuts, and adding your custom component to the list of programs that can be uninstalled from **Uninstall or change a program**.
@@ -29,6 +31,8 @@ Your uninstall script must also remove your key from under the **Uninstall** reg
  
 
  
+
+
 
 
 

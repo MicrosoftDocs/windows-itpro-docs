@@ -1,8 +1,10 @@
 ---
-Description: Add and approve ActiveX controls using IEAK 11
-MS-HAID: 'p\_ieak\_ie11.add\_and\_approve\_activex\_controls\_using\_ieak\_11'
-MSHAttr: 'PreferredLib:/library'
 title: Add and approve ActiveX controls using IEAK 11
+description: Add and approve ActiveX controls using IEAK 11
+ms.assetid: 33040bd1-f0e4-4541-9fbb-16e0c76752ab
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Add and approve ActiveX controls using IEAK 11
@@ -15,7 +17,7 @@ ActiveX controls are supported in Internet Explorer for the desktop for Windows�
 
  
 
-## Scenario 1: Limited Internet-only use of ActiveX controls
+## <span id="Scenario_1__Limited_Internet-only_use_of_ActiveX_controls"></span><span id="scenario_1__limited_internet-only_use_of_activex_controls"></span><span id="SCENARIO_1__LIMITED_INTERNET-ONLY_USE_OF_ACTIVEX_CONTROLS"></span>Scenario 1: Limited Internet-only use of ActiveX controls
 
 
 While you might not care about your employees using ActiveX controls while on your intranet sites, you probably do want to limit ActiveX usage while your employee’s on the Internet. By specifying and pre-approving a set of generic controls for use on the Internet, you’re able to let your employees use the Internet, but you can still limit your company’s exposure to potentially hazardous, non-approved ActiveX controls.
@@ -34,7 +36,7 @@ For example, your employees need to access an important Internet site, such as f
 
 5.  When you run IE Customization Wizard 11 to create a custom package, on the [Additional Settings](0da909a6-d627-462b-a46b-9104e9e36a3c) page, click each folder to expand its contents. Then select the check boxes for the controls you want to approve.
 
-## Scenario 2: Restricted use of ActiveX controls
+## <span id="Scenario_2__Restricted_use_of_ActiveX_controls"></span><span id="scenario_2__restricted_use_of_activex_controls"></span><span id="SCENARIO_2__RESTRICTED_USE_OF_ACTIVEX_CONTROLS"></span>Scenario 2: Restricted use of ActiveX controls
 
 
 You can get a higher degree of management over ActiveX controls by listing each of them out and then allowing the browser to use only that set of controls. The biggest challenge to using this method is the extra effort you need to put into figuring out all of the controls, and then actually listing them out. Because of that, we only recommend this approach if your complete set of controls is relatively small.
@@ -44,6 +46,8 @@ After you decide which controls you want to allow, you can specify them as appro
  
 
  
+
+
 
 
 

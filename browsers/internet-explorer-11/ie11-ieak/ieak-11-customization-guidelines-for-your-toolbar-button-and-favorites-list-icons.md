@@ -1,8 +1,10 @@
 ---
-Description: 'IEAK 11: Customization guidelines for your Toolbar button and Favorites list icons'
-MS-HAID: 'p\_ieak\_ie11.ieak\_11\_customization\_guidelines\_for\_your\_toolbar\_button\_and\_favorites\_list\_icons'
-MSHAttr: 'PreferredLib:/library'
 title: 'IEAK 11: Customization guidelines for your Toolbar button and Favorites list icons'
+description: IEAK 11: Customization guidelines for your Toolbar button and Favorites list icons
+ms.assetid: bddc8f23-9ac1-449d-ad71-f77f43ae3b5c
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # IEAK 11: Customization guidelines for your Toolbar button and Favorites list icons
@@ -47,6 +49,8 @@ Check your license agreement to make sure this customization is available.
  
 
  
+
+
 
 
 

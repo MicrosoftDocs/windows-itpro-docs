@@ -1,8 +1,10 @@
 ---
-Description: 'Language Selection: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.language\_selection\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Language Selection: Internet Explorer Customization Wizard'
+description: Language Selection: Internet Explorer Customization Wizard
+ms.assetid: f9d4ab57-9b1d-4cbc-9398-63f4938df1f6
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Language Selection: Internet Explorer Customization Wizard
@@ -26,11 +28,13 @@ Make sure that the language of your IEAK 11 matches the language of your custom 
 
      
 
-2.  Click **Next** to go to the [Package Type Selection: Internet Explorer Customization Wizard](package_type_selection_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Platform Selection: Internet Explorer Customization Wizard](platform_selection_internet_explorer_customization_wizard.md).
+2.  Click **Next** to go to the [Package Type Selection: Internet Explorer Customization Wizard](package-type-selection-internet-explorer-customization-wizard.md) page or **Back** to go to the [Platform Selection: Internet Explorer Customization Wizard](platform-selection-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

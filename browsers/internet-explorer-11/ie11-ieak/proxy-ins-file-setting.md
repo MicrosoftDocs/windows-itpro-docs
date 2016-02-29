@@ -1,8 +1,10 @@
 ---
-Description: '\[Proxy\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.proxy\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[Proxy\]: .INS file setting'
+description: \[Proxy\]: .INS file setting
+ms.assetid: 30b03c2f-e3e5-48d2-9007-e3fd632f3c18
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[Proxy\]: .INS file setting
@@ -80,6 +82,8 @@ Determines whether to use a proxy server. If yes, this also includes the host na
  
 
  
+
+
 
 
 

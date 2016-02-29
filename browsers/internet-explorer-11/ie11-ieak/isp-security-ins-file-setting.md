@@ -1,8 +1,10 @@
 ---
-Description: '\[ISP\_Security\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.isp\_security\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[ISP\_Security\]: .INS file setting'
+description: \[ISP\_Security\]: .INS file setting
+ms.assetid: 4eca2de5-7071-45a2-9c99-75115be00d06
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[ISP\_Security\]: .INS file setting
@@ -37,6 +39,8 @@ The root certificate you’re adding to your custom package.
  
 
  
+
+
 
 
 

@@ -1,8 +1,10 @@
 ---
-Description: IEAK 11 and Custom Browser Package Troubleshooting
-MS-HAID: 'p\_ieak\_ie11.ieak\_11\_and\_custom\_browser\_package\_troubleshooting'
-MSHAttr: 'PreferredLib:/library'
 title: IEAK 11 and Custom Browser Package Troubleshooting
+description: IEAK 11 and Custom Browser Package Troubleshooting
+ms.assetid: 9e22cc61-6c63-4cab-bfdf-6fe49db945e4
+ms.prod: IE11
+ms.mktglfcycl: support
+ms.sitesec: library
 ---
 
 # IEAK 11 and Custom Browser Package Troubleshooting
@@ -10,18 +12,18 @@ title: IEAK 11 and Custom Browser Package Troubleshooting
 
 While the Internet Explorer Customization Wizard 11 has been around for quite a while, there are still some known issues that you might encounter while deploying or managing your custom IE install package.
 
-## I can’t locate some of the wizard pages
+## <span id="I_can_t_locate_some_of_the_wizard_pages"></span><span id="i_can_t_locate_some_of_the_wizard_pages"></span><span id="I_CAN_T_LOCATE_SOME_OF_THE_WIZARD_PAGES"></span>I can’t locate some of the wizard pages
 
 
 The most common reasons you won’t see certain pages is because of:
 
--   **Your licensing agreement with Microsoft.** Your licensing agreement determines whether you install the **Internal** or **External** version of the IE Customization Wizard 11, and there are different features available for each version. For information about which features are available for each version, see [IEAK 11: Determine the licensing version and features to use](ieak_11_determine_the_licensing_version_and_features_to_use.md).
+-   **Your licensing agreement with Microsoft.** Your licensing agreement determines whether you install the **Internal** or **External** version of the IE Customization Wizard 11, and there are different features available for each version. For information about which features are available for each version, see [IEAK 11: Determine the licensing version and features to use](ieak-11-determine-the-licensing-version-and-features-to-use.md).
 
--   **Your choice of operating system.** Depending on the operating system you picked from the **Platform Selection** page of the wizard, you might not see all of the pages. Some features aren’t available for all operating systems. For more information, see [Platform Selection: Internet Explorer Customization Wizard](platform_selection_internet_explorer_customization_wizard.md).
+-   **Your choice of operating system.** Depending on the operating system you picked from the **Platform Selection** page of the wizard, you might not see all of the pages. Some features aren’t available for all operating systems. For more information, see [Platform Selection: Internet Explorer Customization Wizard](platform-selection-internet-explorer-customization-wizard.md).
 
--   **Your choice of features.** Depending on what you selected from the **Feature Selection** page of the wizard, you might not see all of the pages. You need to make sure that the features you want to customize are all checked. For more information, see [Feature Selection: Internet Explorer Customization Wizard](feature_selection_internet_explorer_customization_wizard.md).
+-   **Your choice of features.** Depending on what you selected from the **Feature Selection** page of the wizard, you might not see all of the pages. You need to make sure that the features you want to customize are all checked. For more information, see [Feature Selection: Internet Explorer Customization Wizard](feature-selection-internet-explorer-customization-wizard.md).
 
-## IE Setup fails on employee computers
+## <span id="IE_Setup_fails_on_employee_computers_"></span><span id="ie_setup_fails_on_employee_computers_"></span><span id="IE_SETUP_FAILS_ON_EMPLOYEE_COMPUTERS_"></span>IE Setup fails on employee computers
 
 
 Various issues can cause problems during Setup, including missing files, trust issues, or URL monikers. You can troubleshoot these issues by reviewing the Setup log file: IE11\_main.log from the **Windows** folder (typically, C:\\Windows). The log file covers the entire Setup process from the moment IE11Setup.exe starts until the last .cab file finishes, providing error codes that you can use to help determine the cause of the failure.
@@ -116,7 +118,7 @@ Various issues can cause problems during Setup, including missing files, trust i
 
  
 
-## IE Setup connection times out
+## <span id="IE_Setup_connection_times_out_"></span><span id="ie_setup_connection_times_out_"></span><span id="IE_SETUP_CONNECTION_TIMES_OUT_"></span>IE Setup connection times out
 
 
 IE Setup can switch servers during the installation process to maintain maximum throughput or to recover from a non-responsive download site (you receive less than 1 byte in 2 minutes). If the connection times out, but Setup is able to connect to the next download site on the list, your download starts over. If however the connection times out and Setup can’t connect to a different server, it’ll ask if you want to stop the installation or try again.
@@ -129,7 +131,7 @@ To address connection issues (for example, as a result of server problems) where
 
 Where *&lt;path&gt;* represents the folder location where you stored IE11setup.exe.
 
-## Employees can’t uninstall IE
+## <span id="Employees_can_t_uninstall_IE"></span><span id="employees_can_t_uninstall_ie"></span><span id="EMPLOYEES_CAN_T_UNINSTALL_IE"></span>Employees can’t uninstall IE
 
 
 If you can’t uninstall IE using **Uninstall or change a program** in the Control Panel, it could be because the uninstall information isn’t on the computer. To fix this issue, you should:
@@ -141,6 +143,8 @@ If you can’t uninstall IE using **Uninstall or change a program** in the Contr
  
 
  
+
+
 
 
 

@@ -1,8 +1,10 @@
 ---
-Description: Internet Explorer Customization Wizard 11 options
-MS-HAID: 'p\_ieak\_ie11.internet\_explorer\_customization\_wizard\_11\_options'
-MSHAttr: 'PreferredLib:/library'
 title: Internet Explorer Customization Wizard 11 options
+description: Internet Explorer Customization Wizard 11 options
+ms.assetid: 4b804da3-c3ac-4b60-ab1c-99536ff6e31b
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # Internet Explorer Customization Wizard 11 options
@@ -10,10 +12,10 @@ title: Internet Explorer Customization Wizard 11 options
 
 Use the IEAK 11 and the Internet Explorer Customization Wizard 11 to customize your installation packages that you’ll deploy to your company’s employees.
 
-## IE Customization Wizard 11 options
+## <span id="IE_Customization_Wizard_11_options_"></span><span id="ie_customization_wizard_11_options_"></span><span id="IE_CUSTOMIZATION_WIZARD_11_OPTIONS_"></span>IE Customization Wizard 11 options
 
 
-IEAK 11 lets you customize a lot of Internet Explorer 11, including the IE and Internet Explorer for the desktop experiences. For more information about the experiences, see [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](p_ie11deploy.internet_explorer_11__ie11____deployment_guide_for_it_pros). For information about which pages appear in the **Internal** or **External** version of IE Customization Wizard 11, see [IEAK 11: Determine the licensing version and features to use](ieak_11_determine_the_licensing_version_and_features_to_use.md).
+IEAK 11 lets you customize a lot of Internet Explorer 11, including the IE and Internet Explorer for the desktop experiences. For more information about the experiences, see [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](p_ie11deploy.internet_explorer_11__ie11____deployment_guide_for_it_pros). For information about which pages appear in the **Internal** or **External** version of IE Customization Wizard 11, see [IEAK 11: Determine the licensing version and features to use](ieak-11-determine-the-licensing-version-and-features-to-use.md).
 
 <table>
 <colgroup>
@@ -169,6 +171,8 @@ IEAK 11 lets you customize a lot of Internet Explorer 11, including the IE and 
  
 
  
+
+
 
 
 

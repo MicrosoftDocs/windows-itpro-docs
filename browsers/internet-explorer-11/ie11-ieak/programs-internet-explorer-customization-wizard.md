@@ -1,8 +1,10 @@
 ---
-Description: 'Programs: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.programs\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Programs: Internet Explorer Customization Wizard'
+description: Programs: Internet Explorer Customization Wizard
+ms.assetid: f715668f-a50d-4db0-b578-e6526fbfa1fc
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Programs: Internet Explorer Customization Wizard
@@ -25,11 +27,13 @@ The customizations you make on this page only apply to Internet Explorer for the
 
          
 
-    -   Click **Next** to go to the [Additional Settings: Internet Explorer Customization Wizard](additional_settings_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Add a Root Certificate: Internet Explorer Customization Wizard](add_a_root_certificate_internet_explorer_customization_wizard.md) page.
+    -   Click **Next** to go to the [Additional Settings: Internet Explorer Customization Wizard](additional-settings-internet-explorer-customization-wizard.md) page or **Back** to go to the [Add a Root Certificate: Internet Explorer Customization Wizard](add-a-root-certificate-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

@@ -1,8 +1,10 @@
 ---
-Description: '\[HideCustom\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.hidecustom\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[HideCustom\]: .INS file setting'
+description: \[HideCustom\]: .INS file setting
+ms.assetid: e673f7b1-c3aa-4072-92b0-20c6dc3d9277
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[HideCustom\]: .INS file setting
@@ -41,6 +43,8 @@ Determines whether to hide the globally unique identifier (GUID) for each custom
  
 
  
+
+
 
 
 

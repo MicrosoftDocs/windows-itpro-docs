@@ -1,8 +1,10 @@
 ---
-Description: 'Search Providers: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.search\_providers\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Search Providers: Internet Explorer Customization Wizard'
+description: Search Providers: Internet Explorer Customization Wizard
+ms.assetid: 48cfaba5-f4c0-493c-b656-445311b7bc52
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Search Providers: Internet Explorer Customization Wizard
@@ -41,11 +43,13 @@ The IE Customization Wizard 11 offers improved and extended search settings. How
 
 11. Click **Edit** to change your search provider information, click **Set Default** to make a search provider the default for your employees, or **Remove** to delete a search provider.
 
-12. Click **Next** to go to the [Important URLs - Home Page and Support: Internet Explorer Customization Wizard](important_urls___home_page_and_support_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Browser User Interface: Internet Explorer Customization Wizard](browser_user_interface_internet_explorer_customization_wizard.md).
+12. Click **Next** to go to the [Important URLs - Home Page and Support: Internet Explorer Customization Wizard](important-urls---home-page-and-support-internet-explorer-customization-wizard.md) page or **Back** to go to the [Browser User Interface: Internet Explorer Customization Wizard](browser-user-interface-internet-explorer-customization-wizard.md).
 
  
 
  
+
+
 
 
 

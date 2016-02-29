@@ -1,8 +1,10 @@
 ---
-Description: 'IEAK 11 - Internet Explorer Administration Kit 11 Users Guide'
-MS-HAID: 'p\_ieak\_ie11.ieak\_11\_\_\_internet\_explorer\_administration\_kit\_11\_users\_guide'
-MSHAttr: 'PreferredLib:/library'
 title: 'IEAK 11 - Internet Explorer Administration Kit 11 Users Guide'
+description: IEAK 11 - Internet Explorer Administration Kit 11 Users Guide
+ms.assetid: 847bd7b4-d5dd-4e10-87b5-4d7d3a99bbac
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # IEAK 11 - Internet Explorer Administration Kit 11 Users Guide
@@ -16,7 +18,7 @@ Internet Explorer Administration Kit 11 (IEAK 11) includes:
 
 IEAK 11 works in network environments, with or without Microsoft Active Directory service.
 
-## Naming conventions
+## <span id="Naming_conventions"></span><span id="naming_conventions"></span><span id="NAMING_CONVENTIONS"></span>Naming conventions
 
 
 IE11 and IEAK 11 offers differing experiences in Windows 8.1:
@@ -57,6 +59,8 @@ IE11 and IEAK 11 offers differing experiences in Windows 8.1:
  
 
  
+
+
 
 
 

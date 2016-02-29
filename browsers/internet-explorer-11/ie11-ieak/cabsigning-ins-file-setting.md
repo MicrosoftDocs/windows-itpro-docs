@@ -1,8 +1,10 @@
 ---
-Description: '\[CabSigning\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.cabsigning\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[CabSigning\]: .INS file setting'
+description: \[CabSigning\]: .INS file setting
+ms.assetid: 098707e9-d712-4297-ac68-7d910ca8f43b
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[CabSigning\]: .INS file setting
@@ -52,6 +54,8 @@ Digital signature information for your programs.
  
 
  
+
+
 
 
 

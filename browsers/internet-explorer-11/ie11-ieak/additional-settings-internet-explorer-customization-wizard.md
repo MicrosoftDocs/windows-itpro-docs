@@ -1,8 +1,10 @@
 ---
-Description: 'Additional Settings: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.additional\_settings\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Additional Settings: Internet Explorer Customization Wizard'
+description: Additional Settings: Internet Explorer Customization Wizard
+ms.assetid: c90054af-7b7f-4b00-b55b-5e5569f65f25
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Additional Settings: Internet Explorer Customization Wizard
@@ -22,11 +24,13 @@ You’ll only see this page if you are running the **Internal** version of the I
 
 2.  Pick the setting you want to change, and then update its details.
 
-3.  Click **Next** to go to the [Wizard Complete-Next Steps: Internet Explorer Customization Wizard](wizard_complete_next_steps_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Programs: Internet Explorer Customization Wizard](programs_internet_explorer_customization_wizard.md) page.
+3.  Click **Next** to go to the [Wizard Complete-Next Steps: Internet Explorer Customization Wizard](wizard-complete-next-steps-internet-explorer-customization-wizard.md) page or **Back** to go to the [Programs: Internet Explorer Customization Wizard](programs-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

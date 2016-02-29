@@ -1,8 +1,10 @@
 ---
-Description: 'Automatic Configuration: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.automatic\_configuration\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'Automatic Configuration: Internet Explorer Customization Wizard'
+description: Automatic Configuration: Internet Explorer Customization Wizard
+ms.assetid: de5b1dbf-6e4d-4f86-ae08-932f14e606b0
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # Automatic Configuration: Internet Explorer Customization Wizard
@@ -14,7 +16,7 @@ This page only appears if you’re using the **Internal** version of the wizard.
 
 You can set your proxy settings using Internet setting (.ins) files. You can also configure and maintain your advanced proxy settings using JScript (.js), JavaScript (.jvs), or proxy auto-configuration (.pac) script files. When you provide an auto-proxy script, IE dynamically determines whether to connect directly to a host or to use a proxy server.
 
-You can use the Domain Name System (DNS) and the Dynamic Host Configuration Protocol (DHCP) naming systems to detect and change a browser’s settings automatically when the employee first starts IE on the network. For more information, see the product documentation for your DNS and DHCP software packages. Also see [Set up automatic detection for DHCP or DNS servers using IEAK 11](set_up_automatic_detection_for_dhcp_or_dns_servers_using_ieak_11.md).
+You can use the Domain Name System (DNS) and the Dynamic Host Configuration Protocol (DHCP) naming systems to detect and change a browser’s settings automatically when the employee first starts IE on the network. For more information, see the product documentation for your DNS and DHCP software packages. Also see [Set up automatic detection for DHCP or DNS servers using IEAK 11](set-up-automatic-detection-for-dhcp-or-dns-servers-using-ieak-11.md).
 
 ![](../common/wedge.gif)**To check the existing settings on your employee’s computers**
 
@@ -41,11 +43,13 @@ You can use the Domain Name System (DNS) and the Dynamic Host Configuration Prot
 
          
 
-3.  Click **Next** to go to the [Proxy Settings: Internet Explorer Customization Wizard](proxy_settings_internet_explorer_customization_wizard.htm) page or **Back** to go to the [Connection Settings: Internet Explorer Customization Wizard](connection_settings_internet_explorer_customization_wizard.md) page.
+3.  Click **Next** to go to the [Proxy Settings: Internet Explorer Customization Wizard](proxy-settings-internet-explorer-customization-wizard.md) page or **Back** to go to the [Connection Settings: Internet Explorer Customization Wizard](connection-settings-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

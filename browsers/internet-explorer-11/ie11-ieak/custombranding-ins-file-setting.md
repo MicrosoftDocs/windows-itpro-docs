@@ -1,8 +1,10 @@
 ---
-Description: '\[CustomBranding\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.custombranding\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[CustomBranding\]: .INS file setting'
+description: \[CustomBranding\]: .INS file setting
+ms.assetid: 9c74e239-65c5-4aa5-812f-e0ed80c5c2b0
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # \[CustomBranding\]: .INS file setting
@@ -37,6 +39,8 @@ The URL location to your branding cabinet (.cab) file.
  
 
  
+
+
 
 
 

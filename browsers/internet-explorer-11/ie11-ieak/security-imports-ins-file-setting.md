@@ -1,8 +1,10 @@
 ---
-Description: '\[Security Imports\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.security\_imports\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[Security Imports\]: .INS file setting'
+description: \[Security Imports\]: .INS file setting
+ms.assetid: 19791c44-aaa7-4f37-9faa-85cbdf29f68e
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[Security Imports\]: .INS file setting
@@ -77,6 +79,8 @@ Determines whether to import security information from your local computer to yo
  
 
  
+
+
 
 
 

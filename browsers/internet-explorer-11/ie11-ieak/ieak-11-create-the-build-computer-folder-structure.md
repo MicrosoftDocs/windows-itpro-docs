@@ -1,8 +1,10 @@
 ---
-Description: 'IEAK 11: Create the build computer folder structure'
-MS-HAID: 'p\_ieak\_ie11.ieak\_11\_create\_the\_build\_computer\_folder\_structure'
-MSHAttr: 'PreferredLib:/library'
 title: 'IEAK 11: Create the build computer folder structure'
+description: IEAK 11: Create the build computer folder structure
+ms.assetid: e0d05a4c-099f-4f79-a069-4aa1c28a1080
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # IEAK 11: Create the build computer folder structure
@@ -44,6 +46,8 @@ The *root\_folder* is a placeholder that represents the name for your main folde
  
 
  
+
+
 
 
 

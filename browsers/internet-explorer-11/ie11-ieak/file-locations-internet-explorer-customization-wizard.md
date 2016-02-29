@@ -1,8 +1,10 @@
 ---
-Description: 'File Locations: Internet Explorer Customization Wizard'
-MS-HAID: 'p\_ieak\_ie11.file\_locations\_internet\_explorer\_customization\_wizard'
-MSHAttr: 'PreferredLib:/library'
 title: 'File Locations: Internet Explorer Customization Wizard'
+description: File Locations: Internet Explorer Customization Wizard
+ms.assetid: bd0620e1-0e07-4560-95ac-11888c2c389e
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # File Locations: Internet Explorer Customization Wizard
@@ -49,11 +51,13 @@ You can create a custom installation package on your hard drive and move it to a
 
     Automatic Version Synchronization automatically checks the component download folder to see if you have the latest version of IE. To keep this folder up-to-date, you shouldn’t change its location. However, if you want to keep both a previous version of IE and the latest version, we recommend you download the components to a different location.
 
-6.  Click **OK** to close the **Advanced Options** box, and then click **Next** to go to the [Platform Selection: Internet Explorer Customization Wizard](platform_selection_internet_explorer_customization_wizard.md) page.
+6.  Click **OK** to close the **Advanced Options** box, and then click **Next** to go to the [Platform Selection: Internet Explorer Customization Wizard](platform-selection-internet-explorer-customization-wizard.md) page.
 
  
 
  
+
+
 
 
 

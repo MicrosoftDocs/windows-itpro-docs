@@ -1,8 +1,10 @@
 ---
-Description: 'IEAK 11: Determine the licensing version and features to use'
-MS-HAID: 'p\_ieak\_ie11.ieak\_11\_determine\_the\_licensing\_version\_and\_features\_to\_use'
-MSHAttr: 'PreferredLib:/library'
 title: 'IEAK 11: Determine the licensing version and features to use'
+description: IEAK 11: Determine the licensing version and features to use
+ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
+ms.prod: IE11
+ms.mktglfcycl: plan
+ms.sitesec: library
 ---
 
 # IEAK 11: Determine the licensing version and features to use
@@ -19,7 +21,7 @@ You must pick a version of IEAK 11 during installation, either **External** or 
 
 -   **Internal Distribution via a Corporate Intranet.** This version is for network admins that plan to directly deploy IE11 into a corporate environment.
 
-## Available features by version
+## <span id="Available_features_by_version"></span><span id="available_features_by_version"></span><span id="AVAILABLE_FEATURES_BY_VERSION"></span>Available features by version
 
 
 <table>
@@ -146,6 +148,8 @@ You must pick a version of IEAK 11 during installation, either **External** or 
  
 
  
+
+
 
 
 

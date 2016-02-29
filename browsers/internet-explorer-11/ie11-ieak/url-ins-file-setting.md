@@ -1,8 +1,10 @@
 ---
-Description: '\[URL\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.url\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[URL\]: .INS file setting'
+description: \[URL\]: .INS file setting
+ms.assetid: 05b09dfa-cf11-408d-92c2-b4ae434a59a7
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[URL\]: .INS file setting
@@ -138,6 +140,8 @@ Determines whether to use an auto-configured proxy server. If yes, this also inc
  
 
  
+
+
 
 
 

@@ -1,8 +1,10 @@
 ---
-Description: '\[Media\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.media\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[Media\]: .INS file setting'
+description: \[Media\]: .INS file setting
+ms.assetid: c57bae60-d520-49a9-a77d-da43f7ebe5b8
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[Media\]: .INS file setting
@@ -41,6 +43,8 @@ The types of media your custom installation package is available in, such as DVD
  
 
  
+
+
 
 
 

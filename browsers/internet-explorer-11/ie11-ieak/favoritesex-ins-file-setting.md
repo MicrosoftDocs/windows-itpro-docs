@@ -1,8 +1,10 @@
 ---
-Description: '\[FavoritesEx\]: .INS file setting'
-MS-HAID: 'p\_ieak\_ie11.favoritesex\_ins\_file\_setting'
-MSHAttr: 'PreferredLib:/library'
 title: '\[FavoritesEx\]: .INS file setting'
+description: \[FavoritesEx\]: .INS file setting
+ms.assetid: 55de376a-d442-478e-8978-3b064407b631
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 ---
 
 # \[FavoritesEx\]: .INS file setting
@@ -56,6 +58,8 @@ Path to your icon file for **Favorites** and if **Favorites** are available offl
  
 
  
+
+
 
 
 
