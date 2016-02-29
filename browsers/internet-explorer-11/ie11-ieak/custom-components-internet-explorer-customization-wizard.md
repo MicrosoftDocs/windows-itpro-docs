@@ -17,7 +17,7 @@ You should sign any custom code that’s being downloaded over the Internet. The
 
  
 
-![](images/wedge.gif)**To use the Custom Component page**
+![](images/wedge.gif) **To use the Custom Component page**
 
 1.  Click **Add**.
 

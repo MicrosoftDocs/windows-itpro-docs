@@ -20,7 +20,7 @@ The **Favorites, Favorites Bar, and Feeds** page of the Internet Explorer Custom
 
 Although we provide default items in the **Favorites, Favorites Bar, and Feeds** area, you can remove any of the items, add more items, or add new folders and links as part of your custom package. The customizations you make on this page only apply to Internet Explorer for the desktop.
 
-![](images/wedge.gif)**To work with Favorites**
+![](images/wedge.gif) **To work with Favorites**
 
 1.  To import your existing folder of links, pick **Favorites**, and then click **Import**.
 
@@ -54,7 +54,7 @@ Although we provide default items in the **Favorites, Favorites Bar, and Feeds**
 
 13. Continue with the next procedures in this topic to add additional **Favorites Bar** or **RSS Feeds** links, or you can click **Next** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing-options-internet-explorer-customization-wizard.md) page or **Back** to go to the [Accelerators: Internet Explorer Customization Wizard](accelerators-internet-explorer-customization-wizard.md) page.
 
-![](images/wedge.gif)**To work with the Favorites Bar**
+![](images/wedge.gif) **To work with the Favorites Bar**
 
 1.  To import your existing folder of links, pick **Favorites Bar**, and then click **Import**.
 
@@ -82,7 +82,7 @@ Although we provide default items in the **Favorites, Favorites Bar, and Feeds**
 
 11. Continue with the next procedures in this topic to add additional **Favorites** or **RSS Feeds** links, or you can click **Next** to go to the [Browsing Options: Internet Explorer Customization Wizard](browsing-options-internet-explorer-customization-wizard.md) page or **Back** to go to the [Accelerators: Internet Explorer Customization Wizard](accelerators-internet-explorer-customization-wizard.md) page.
 
-![](images/wedge.gif)**To work with RSS Feeds**
+![](images/wedge.gif) **To work with RSS Feeds**
 
 1.  To add a new link to the **RSS Feeds**, pick **Favorites Bar**, and then click **Add URL**.
 

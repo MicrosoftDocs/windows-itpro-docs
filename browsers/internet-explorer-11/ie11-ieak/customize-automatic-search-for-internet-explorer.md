@@ -19,7 +19,7 @@ Using the **Administrative Templates** section of Group Policy, you can prevent 
 
 You can customize Automatic Search so that your employees can type a single word into the **Address** box to search for frequently used pages. For example, you can let a commonly used webpage about invoices appear if an employee types *invoice* into the **Address** box, even if the URL doesn’t include the term. If a website can’t be associated with the term, or if there are multiple matches, a webpage appears showing the top search results.
 
-![](images/wedge.gif)**To set up Automatic Search**
+![](images/wedge.gif) **To set up Automatic Search**
 
 1.  Create a script (.asp) file that conditionally looks for search terms, and post it to an intranet server here: http://ieautosearch/response.asp?MT=*%1*&srch=*%2*.
 
@@ -32,11 +32,11 @@ You can customize Automatic Search so that your employees can type a single word
 
 3.  Go to the section labeled **Searching** and type *intranet* into the **Search Provider Keyword** box.
 
-![](images/wedge.gif)**To redirect to a different site than the one provided by the search results**
+![](images/wedge.gif) **To redirect to a different site than the one provided by the search results**
 
 -   In the **Advanced Settings** section, go to the section labeled **Searching** and change the **When searching from the address bar** setting to **Just go to the most likely site**.
 
-![](images/wedge.gif)**To disable Automatic Search**
+![](images/wedge.gif) **To disable Automatic Search**
 
 -   In the **Advanced Settings** section, go to the section labeled **Searching** and change the **When searching from the address bar** setting to **Do not search from the address bar**.
 

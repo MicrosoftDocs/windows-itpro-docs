@@ -14,7 +14,7 @@ Set up your network to automatically detect and customize Internet Explorer 11 
 
 Before you can set up your environment to use automatic detection, you need to turn the feature on.
 
-![](images/wedge.gif)**To turn on the automatic detection feature**
+![](images/wedge.gif) **To turn on the automatic detection feature**
 
 -   Open Internet Explorer Administration Kit 11 (IEAK 11), run the IE Customization Wizard 11 and on the **Automatic Configuration** page, check **Automatically detect configuration settings**. For more information, see [Automatic Configuration: Internet Explorer Customization Wizard](automatic-configuration-internet-explorer-customization-wizard.md).
 
@@ -37,7 +37,7 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 
  
 
-![](images/wedge.gif)**To set up automatic detection for DHCP servers**
+![](images/wedge.gif) **To set up automatic detection for DHCP servers**
 
 -   Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).
 
@@ -57,7 +57,7 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 
     For more detailed information about how to set up your DHCP server, see your server documentation.
 
-![](images/wedge.gif)**To set up automatic detection for DNS servers**
+![](images/wedge.gif) **To set up automatic detection for DNS servers**
 
 1.  In your DNS database file, the file that’s used to associate your host (computer) names to static IP addresses in a zone, you need to create a host record named, **WPAD**. This record contains entries for all of the hosts that require static mappings, such as workstations, name servers, and mail servers. It also has the IP address to the web server storing your automatic configuration (.js, .jvs, .pac, or .ins) file.
 

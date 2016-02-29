@@ -17,7 +17,7 @@ The IE Customization Wizard 11 offers improved and extended search settings. How
 
  
 
-![](images/wedge.gif)**To use the Search Providers page**
+![](images/wedge.gif) **To use the Search Providers page**
 
 1.  Click **Import** to automatically import your existing search providers from your current version of IE into this list.
 

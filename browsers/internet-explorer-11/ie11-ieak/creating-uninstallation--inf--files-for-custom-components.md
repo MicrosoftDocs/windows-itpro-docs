@@ -12,7 +12,7 @@ ms.sitesec: library
 
 Internet Explorer Administration Kit 11 (IEAK 11) uses Setup information (.inf) files to provide installation instructions for your custom browser packages. You can also use this file to uninstall your custom components by removing the files, registry entries, and shortcuts, and adding your custom component to the list of programs that can be uninstalled from **Uninstall or change a program**.
 
-![](images/wedge.gif)**To uninstall your custom components**
+![](images/wedge.gif) **To uninstall your custom components**
 
 1.  Open the Registry Editor and add a new key and value to:
 

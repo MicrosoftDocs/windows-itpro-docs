@@ -12,7 +12,7 @@ ms.sitesec: library
 
 The **Package Type Selection** page of the Internet Explorer Customization Wizard 11 lets you pick which type of media you’ll use to distribute your custom installation package. You can pick more than one type, if you need it.
 
-![](images/wedge.gif)**To use the File Locations page**
+![](images/wedge.gif) **To use the File Locations page**
 
 1.  Check the **Full Installation Package** box if you’re going to build your package on, or move your package to, a local area network (LAN). This media package includes the Internet Explorer 11 installation files, and is named **IE11-Setup-Full.exe**, in the &lt;*systemdrive*&gt;:\\&lt;*destination\_folder*&gt;\\FLAT\\&lt;*OS\_version*&gt;\\&lt;*language\_code*&gt; folder.
 

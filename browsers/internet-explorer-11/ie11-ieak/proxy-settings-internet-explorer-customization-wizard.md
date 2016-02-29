@@ -14,7 +14,7 @@ The **Proxy Settings** page of the Internet Explorer Customization Wizard 11 let
 
 Using a proxy server lets you limit access to the Internet. You can also use the **Additional Settings** page of the wizard to further restrict your employees from changing the proxy settings.
 
-![](images/wedge.gif)**To use the Proxy Settings page**
+![](images/wedge.gif) **To use the Proxy Settings page**
 
 1.  Check the **Enable proxy settings** box if you want to use proxy servers for any of your services.
 

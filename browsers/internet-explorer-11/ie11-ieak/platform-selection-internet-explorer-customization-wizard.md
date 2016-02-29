@@ -12,7 +12,7 @@ ms.sitesec: library
 
 The **Platform Selection** page of the Internet Explorer Customization Wizard 11 lets you choose the operating system and processor type (32 or 64 bit) for the computers you’re going to install the custom installation package on.
 
-![](images/wedge.gif)**To use the Platform Selection page**
+![](images/wedge.gif) **To use the Platform Selection page**
 
 1.  Pick the operating system and architecture for the computers that you’re going to install the custom package on.
 

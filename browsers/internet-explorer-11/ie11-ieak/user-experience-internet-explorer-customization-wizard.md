@@ -17,7 +17,7 @@ You’ll only see this page if you are running the **Internal** version of the I
 
  
 
-![](images/wedge.gif)**To use the User Experience page**
+![](images/wedge.gif) **To use the User Experience page**
 
 1.  Choose how your employee should interact with Setup, including:
 

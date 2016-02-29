@@ -17,7 +17,7 @@ The customizations you make on this page apply only to Internet Explorer for the
 
  
 
-![](images/wedge.gif)**To use the Accelerators page**
+![](images/wedge.gif)  **To use the Accelerators page**
 
 1.  Click **Import** to automatically import your existing Accelerators from your current version of IE into this list.
 

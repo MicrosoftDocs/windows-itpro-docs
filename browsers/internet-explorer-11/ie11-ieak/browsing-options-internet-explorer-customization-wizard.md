@@ -14,7 +14,7 @@ The **Browsing Options** page of the Internet Explorer Customization Wizard 11 l
 
 The choices that you make on this page affect only the items shown on the **Favorites, Favorites Bar, and Feeds** page.
 
-![](images/wedge.gif)**To use the Browsing Options page**
+![](images/wedge.gif) **To use the Browsing Options page**
 
 1.  Pick how you want to manage links that are already installed on your employee’s computer:
 

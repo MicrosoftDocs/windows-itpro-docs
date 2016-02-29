@@ -18,7 +18,7 @@ You can store your user settings in a central location so your employees that lo
 
 You’ll only see this page if you are running the **Internal** version of the IE Customization Wizard 11.
 
-![](images/wedge.gif)**To use the Additional Settings page**
+![](images/wedge.gif) **To use the Additional Settings page**
 
 1.  Double-click **Custom Settings**, **Corporate Settings**, or **Internet Settings**, and review the included policy or restriction settings.
 

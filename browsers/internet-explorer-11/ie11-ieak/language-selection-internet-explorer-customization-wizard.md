@@ -17,7 +17,7 @@ Make sure that the language of your IEAK 11 matches the language of your custom 
 
  
 
-![](images/wedge.gif)**To use the Language Selection page**
+![](images/wedge.gif) **To use the Language Selection page**
 
 1.  Pick the language you want your custom IE11 installation package to use.
 

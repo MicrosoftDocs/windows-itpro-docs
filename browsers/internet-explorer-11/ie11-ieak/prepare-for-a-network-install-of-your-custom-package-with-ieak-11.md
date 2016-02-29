@@ -12,7 +12,7 @@ ms.sitesec: library
 
 Employees can install your custom browser package using a network server. However, you must either lower the intranet security level or make the server a trusted site.
 
-![](images/wedge.gif)**To lower your intranet security**
+![](images/wedge.gif) **To lower your intranet security**
 
 1.  In Internet Explorer 11, click **Tools**, **Internet Options**, and then the **Security** tab.
 
@@ -20,7 +20,7 @@ Employees can install your custom browser package using a network server. Howeve
 
 3.  Uncheck **Automatically detect intranet network**, uncheck **Include all network paths (UNC)**, and then click **OK**.
 
-![](images/wedge.gif)**To make your server a trusted site**
+![](images/wedge.gif) **To make your server a trusted site**
 
 1.  From the **Security** tab, click **Trusted sites**, and then **Sites**.
 

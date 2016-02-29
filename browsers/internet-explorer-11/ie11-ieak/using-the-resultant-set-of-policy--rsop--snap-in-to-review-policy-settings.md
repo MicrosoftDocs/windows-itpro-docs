@@ -12,7 +12,7 @@ ms.sitesec: library
 
 After you’ve deployed your custom Internet Explorer package to your employees, you can use the Resultant Set of Policy (RSoP) snap-in to view your created policy settings. The RSoP snap-in is a two-step process. First, you run the RSoP wizard to determine what information should be viewed. Second, you open the specific items in the console window to view the settings. For complete instructions about how to use RSoP, see [Resultant Set of Policy](http://go.microsoft.com/fwlink/?LinkId=259479).
 
-![](images/wedge.gif)**To add the RSoP snap-in**
+![](images/wedge.gif) **To add the RSoP snap-in**
 
 1.  On the **Start** screen, type *MMC*.
 
@@ -24,7 +24,7 @@ After you’ve deployed your custom Internet Explorer package to your employees,
 
     You’re now ready to use the RSoP snap-in from the console.
 
-![](images/wedge.gif)**To use the RSoP snap-in**
+![](images/wedge.gif) **To use the RSoP snap-in**
 
 1.  Right-click **Resultant Set of Policy** and then click **Generate RSoP Data**.
 
