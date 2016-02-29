@@ -20,7 +20,7 @@ You'll need to create multiple versions of your custom browser package if:
 
 The Internet Explorer Customization Wizard 11 stores your original settings in the Install.ins file and will show them each time you re-open the wizard. For more information about .ins files, see [Using Internet Settings (.INS) Files](using-internet-settings--ins--files.md).
 
-![](../common/wedge.gif)**To create multiple versions of your browser package**
+![](images/wedge.gif)**To create multiple versions of your browser package**
 
 1.  Use the IE Customization Wizard 11 to create a custom browser package. For more information about how to run the wizard, start with the [File Locations: Internet Explorer Customization Wizard](file-locations-internet-explorer-customization-wizard.md) topic.
 

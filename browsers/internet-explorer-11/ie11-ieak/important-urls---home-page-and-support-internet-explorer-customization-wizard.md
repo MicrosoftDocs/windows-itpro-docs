@@ -12,7 +12,7 @@ ms.sitesec: library
 
 The **Important URLS – Home Page and Support** page of the Internet Explorer Customization Wizard 11 lets you choose one or more **Home** pages and an online support page for your customized version of IE.
 
-![](../common/wedge.gif)**To use the Important URLS – Home Page and Support page**
+![](images/wedge.gif)**To use the Important URLS – Home Page and Support page**
 
 1.  In the **Add a homepage URL** box, type the URL to the page your employees go to when they click the **Home** button, and then click **Add**.
 

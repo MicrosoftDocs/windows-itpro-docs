@@ -18,13 +18,13 @@ You can set your proxy settings using Internet setting (.ins) files. You can als
 
 You can use the Domain Name System (DNS) and the Dynamic Host Configuration Protocol (DHCP) naming systems to detect and change a browser’s settings automatically when the employee first starts IE on the network. For more information, see the product documentation for your DNS and DHCP software packages. Also see [Set up automatic detection for DHCP or DNS servers using IEAK 11](set-up-automatic-detection-for-dhcp-or-dns-servers-using-ieak-11.md).
 
-![](../common/wedge.gif)**To check the existing settings on your employee’s computers**
+![](images/wedge.gif)**To check the existing settings on your employee’s computers**
 
 1.  Open IE, click **Tools**, click **Internet Options**, and then click the **Connections** tab.
 
 2.  Click **LAN Settings** and make sure that the **Use automatic configuration script** box is selected, confirming the path and name of the file in the **Address** box.
 
-![](../common/wedge.gif)**To use the Automatic Configuration page**
+![](images/wedge.gif)**To use the Automatic Configuration page**
 
 1.  Check the **Automatically detect configuration settings** box to automatically detect browser settings.
 

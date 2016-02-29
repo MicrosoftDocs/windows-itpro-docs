@@ -17,7 +17,7 @@ The customizations you make on this page apply only to Internet Explorer for the
 
  
 
-![](../common/wedge.gif)**To use the Browser User Interface page**
+![](images/wedge.gif)**To use the Browser User Interface page**
 
 1.  Check the **Customize Title Bars** box so you can add your custom text to the **Title Bar Text** box.
 

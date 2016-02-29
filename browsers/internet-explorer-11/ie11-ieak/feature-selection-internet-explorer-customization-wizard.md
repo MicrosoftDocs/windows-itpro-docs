@@ -45,7 +45,7 @@ Your choices on this page determine what wizard pages appear.
 
  
 
-![](../common/wedge.gif)**To use the Feature Selection page**
+![](images/wedge.gif)**To use the Feature Selection page**
 
 1.  Check the box next to each feature you want to include in your custom installation package.
 

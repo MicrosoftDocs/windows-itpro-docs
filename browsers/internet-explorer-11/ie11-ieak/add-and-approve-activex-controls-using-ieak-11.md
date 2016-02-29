@@ -24,7 +24,7 @@ While you might not care about your employees using ActiveX controls while on yo
 
 For example, your employees need to access an important Internet site, such as for a business partner or service provider, but there are ActiveX controls on their page. To make sure the site is accessible and functions the way it should, you can visit the site to review the controls, adding them as new entries to your &lt;*systemdrive*&gt;\\Windows\\Downloaded Program Files folder. Then, as part of your browser package, you can enable and approve these ActiveX controls to run on this specific site; while all additional controls are blocked.
 
-![](../common/wedge.gif)**To add and approve ActiveX controls**
+![](images/wedge.gif)**To add and approve ActiveX controls**
 
 1.  In IE, click **Tools**, and then **Internet Options**.
 

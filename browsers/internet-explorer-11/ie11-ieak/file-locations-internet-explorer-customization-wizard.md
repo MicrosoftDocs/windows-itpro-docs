@@ -21,7 +21,7 @@ You can create a custom installation package on your hard drive and move it to a
 
  
 
-![](../common/wedge.gif)**To use the File Locations page**
+![](images/wedge.gif)**To use the File Locations page**
 
 1.  Browse to the location where you’ll store your finished custom IE installation package and the related subfolders.
 

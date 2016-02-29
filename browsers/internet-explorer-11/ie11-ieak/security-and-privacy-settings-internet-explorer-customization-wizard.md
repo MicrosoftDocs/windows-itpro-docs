@@ -12,7 +12,7 @@ ms.sitesec: library
 
 The **Security and Privacy Settings** page of the Internet Explorer Customization Wizard 11 lets you manage your security zones, privacy settings, and content ratings. These settings help restrict the types of content your employees can access from the Internet, including any content that might be considered offensive or otherwise inappropriate in a corporate setting.
 
-![](../common/wedge.gif)**To use the Security and Privacy Settings page**
+![](images/wedge.gif)**To use the Security and Privacy Settings page**
 
 1.  Decide if you want to customize your security zones and privacy settings. You can pick:
 

@@ -16,7 +16,7 @@ The **First Run Wizard and Welcome Page Options** page of the Internet Explorer 
 
 -   **Windows 7 SP1.** You can disable the first run page for Windows 7 SP1 and then pick a custom **Welcome** page to show instead. If you don’t customize the settings on this page, your employees will see the default IE **Welcome** page.
 
-![](../common/wedge.gif)**To use the First Run Wizard and Welcome Page Options page**
+![](images/wedge.gif)**To use the First Run Wizard and Welcome Page Options page**
 
 1.  Check the **Use IE11 First Run wizard (recommended)** box to use the default First Run wizard in IE.
 

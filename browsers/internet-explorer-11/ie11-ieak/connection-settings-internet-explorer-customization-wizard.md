@@ -17,13 +17,13 @@ Using the options on the **Additional Settings** page of the wizard, you can let
 
  
 
-![](../common/wedge.gif)**To view your current connection settings**
+![](images/wedge.gif)**To view your current connection settings**
 
 1.  Open IE, click the **Tools** menu, click **Internet Options**, and then click the **Connections** tab.
 
 2.  Click **Settings** to view your dial-up settings and click **LAN Settings** to view your network settings.
 
-![](../common/wedge.gif)**To use the Connection Settings page**
+![](images/wedge.gif)**To use the Connection Settings page**
 
 1.  Decide if you want to customize your connection settings. You can pick:
 

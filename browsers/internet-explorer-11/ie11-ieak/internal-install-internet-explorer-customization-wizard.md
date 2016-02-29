@@ -17,7 +17,7 @@ The customizations made on this page only apply to Internet Explorer for the des
 
  
 
-![](../common/wedge.gif)**To use the Internal Install page**
+![](images/wedge.gif)**To use the Internal Install page**
 
 1.  Pick either:
 
