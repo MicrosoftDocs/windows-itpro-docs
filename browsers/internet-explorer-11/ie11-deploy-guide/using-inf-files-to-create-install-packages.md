@@ -1,34 +1,27 @@
 ---
-Description: Using .INF files to create packages
-MS-HAID: 'p\_ie11deploy.using\_inf\_files\_to\_create\_packages'
-MSHAttr: 'PreferredLib:/library'
-title: Using .INF files to create packages (Internet Explorer 11 for IT Pros)
+Description: How to use Setup Information (.inf) files to create installation packages.
+ms.assetid: 04fa2ba8-8d84-4af6-ab99-77e4f1961b0e
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
+title: Using Setup Information (.inf) files to create packages (Internet Explorer 11 for IT Pros)
 ---
 
-# Using .INF files to create packages
-
-
+# Using Setup Information (.inf) files to create install packages
 IEAK 11 uses Setup information (.inf) files to provide uninstallation instructions. Uninstallation instructions let your employees remove components, like files, registry entries, or shortcuts, through the **Uninstall or change a program** box. For details about .inf files, see [INF File Sections and Directives](http://go.microsoft.com/fwlink/p/?LinkId=327959).
 
 **To add uninstallation instructions to the .inf files**
 
 -   Open the Registry Editor (regedit.exe) and add these registry keys:
-
-    ``` syntax
-    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\app-name,"DisplayName",,"description"
-    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\app-name,"UninstallString",,"command-line"
-    ```
-
-    Where **"description"** is the name that shows up in the **Uninstall or change a program** box and **"command-line"** is the command that runs after the component is picked.
-
-    **Note**  
-    Make sure your script removes the uninstallation registry key, too. Otherwise, the component name will continue to show up in the **Uninstall or change a program**.
-
-     
+```
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\app-name,"DisplayName",,"description"
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\app-name,"UninstallString",,"command-line"
+```
+Where **"description"** is the name that shows up in the **Uninstall or change a program** box and **"command-line"** is the command that runs after the component is picked.
+<p>**Note**<br>
+Make sure your script removes the uninstallation registry key, too. Otherwise, the component name will continue to show up in the **Uninstall or change a program**.
 
 ## Limitations
-
-
 .Inf files have limitations:
 
 -   You can't delete directories.

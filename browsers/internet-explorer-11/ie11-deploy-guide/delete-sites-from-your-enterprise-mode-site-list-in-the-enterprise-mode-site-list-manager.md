@@ -9,9 +9,6 @@ ms.pagetype: appcompat
 ---
 
 # Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

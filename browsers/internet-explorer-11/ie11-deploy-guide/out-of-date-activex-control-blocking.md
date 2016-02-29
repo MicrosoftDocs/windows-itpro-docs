@@ -10,10 +10,6 @@ title: Out-of-date ActiveX control blocking (Internet Explorer 11 for IT Pros)
 
 # Out-of-date ActiveX control blocking
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

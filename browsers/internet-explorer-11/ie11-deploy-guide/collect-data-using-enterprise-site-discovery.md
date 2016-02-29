@@ -9,9 +9,6 @@ title: Collect data using Enterprise Site Discovery (Internet Explorer 11 for IT
 ---
 
 # Collect data using Enterprise Site Discovery
-**Last updated**
-
--   January 14, 2015
 
 **Applies to:**
 

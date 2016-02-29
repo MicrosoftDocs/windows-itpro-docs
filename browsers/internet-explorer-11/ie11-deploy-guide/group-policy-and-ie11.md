@@ -8,9 +8,7 @@ ms.pagetype: security
 title: Group Policy and Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ---
 
-**Last updated**
-
--   November 12, 2015
+# Group Policy and Internet Explorer 11 (IE11)
 
 **Applies to:**
 

@@ -1,27 +1,23 @@
 ---
-Description: Using IEAK 11 to create packages
-MS-HAID: 'p\_ie11deploy.using\_ieak\_11\_to\_create\_packages'
-MSHAttr: 'PreferredLib:/library'
-title: Using IEAK 11 to create packages (Internet Explorer 11 for IT Pros)
+Description: How to use IEAK 11 while planning, customizing, and building the custom installation package.
+ms.assetid: af93742f-f955-44ab-bfa2-7bf0c99045d3
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
+title: Using Internet Explorer Administration Kit 11 (IEAK 11) to create packages (Internet Explorer 11 for IT Pros)
 ---
 
-# Using IEAK 11 to create packages
+# Using Internet Explorer Administration Kit 11 (IEAK 11) to create packages
+Internet Explorer Administration Kit 11 (IEAK 11) helps you set up, deploy, and maintain Internet Explorer 11.
 
-
-IEAK 11 helps you set up, deploy, and maintain Internet Explorer 11.
-
-**Note**  
-IEAK 11 works in network environments, with or without Microsoft Active Directory.
+**Note**<br>IEAK 11 works in network environments, with or without Microsoft Active Directory.
 
  
 
 ## Plan, Customize, and Build with the IEAK 11
-
-
 Consider these activities while planning, customizing, and building the custom installation package.
 
 ### Plan
-
 Before you begin, you should:
 
 -   **Check the operating system requirements.** Check that the requirements for the computer you're building your installation package from, and the computers you're installing IE11 to, all meet the system requirements for IEAK 11 and IE11. For Internet Explorer requirements, see [System requirements and language support for Internet Explorer 11 (IE11)](system-requirements-and-language-support-for-ie11.md). For IEAK 11 requirements, see [IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](http://go.microsoft.com/fwlink/p/?linkid=327741).
@@ -39,7 +35,6 @@ Before you begin, you should:
 -   **Identify ActiveX controls.** Decide if you'll use ActiveX controls in your company. If you already use ActiveX, you should get an inventory of your active controls.
 
 ### Customize and build
-
 After installing IE11 and the IEAK 11, you should:
 
 -   **Prepare your build computer.** Create your build environment on the computer you're using to build the custom package.

@@ -10,10 +10,6 @@ title: Search your Enterprise Mode site list in the Enterprise Mode Site List Ma
 
 # Search your Enterprise Mode site list in the Enterprise Mode Site List Manager
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

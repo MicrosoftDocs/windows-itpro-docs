@@ -9,11 +9,6 @@ title: Manage Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 
 # Manage Internet Explorer 11
 
-
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

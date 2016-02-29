@@ -9,10 +9,6 @@ title: Missing the Compatibility View Button (Internet Explorer 11 for IT Pros)
 
 # Missing the Compatibility View Button
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10

@@ -8,9 +8,6 @@ title: Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013 (Int
 ---
 
 # Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

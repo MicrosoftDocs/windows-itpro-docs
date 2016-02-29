@@ -10,10 +10,6 @@ title: Set up Enterprise Mode logging and data collection (Internet Explorer 11 
 
 # Set up Enterprise Mode logging and data collection
 
-**Last updated**
-
--   December 3, 2015
-
 **Applies to:**
 
 -   Windows 10

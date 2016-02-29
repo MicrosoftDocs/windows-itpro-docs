@@ -9,9 +9,6 @@ title: Check for a new Enterprise Mode site list xml file (Internet Explorer 11 
 ---
 
 # Check for a new Enterprise Mode site list xml file
-**Last updated**
-
--   November 12, 2015
 
 **Applies to:**
 

@@ -9,10 +9,6 @@ title: Missing Internet Explorer Maintenance settings for Internet Explorer 11 (
 
 # Missing Internet Explorer Maintenance settings for Internet Explorer 11
 
-**Last updated**
-
--   November 12, 2015
-
 **Applies to:**
 
 -   Windows 10
