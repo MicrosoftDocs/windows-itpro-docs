@@ -2,7 +2,7 @@
 Description: Use the Enterprise Mode Site List Manager tool
 MS-HAID: 'p\_ie11deploy.use\_the\_enterprise\_mode\_site\_list\_manager\_tool'
 MSHAttr: 'PreferredLib:/library'
-title: Use the Enterprise Mode Site List Manager tool
+title: Use the Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
 ---
 
 # Use the Enterprise Mode Site List Manager tool
@@ -27,7 +27,7 @@ You can use IE11 and the Enterprise Mode Site List Manager tool to add individua
 ## Enterprise Mode Site List Manager tool versions
 
 
-There are currently two versions of the Enterprise Site List Manager tool, both based on your schema and operating system. Download the [Enterprise Mode Site List Manager for Windows 10](http://go.microsoft.com/fwlink/?LinkId=716853) tool or the [Enterprise Mode Site List Manager for Windows 7 and Windows 8.1](http://go.microsoft.com/fwlink/?LinkID=394378) tool, based on your operating system.
+There are currently two versions of the Enterprise Site List Manager tool, both based on your schema and operating system. Download the [Enterprise Mode Site List Manager for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=716853) tool or the [Enterprise Mode Site List Manager for Windows 7 and Windows 8.1](http://go.microsoft.com/fwlink/p/?LinkID=394378) tool, based on your operating system.
 
 <table>
 <colgroup>
@@ -146,8 +146,8 @@ The following topics give you more information about the things that you can do 
 ## Related topics
 
 
-[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md)
 [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md)
  

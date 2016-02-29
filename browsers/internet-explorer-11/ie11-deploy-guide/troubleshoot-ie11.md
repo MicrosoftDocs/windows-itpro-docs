@@ -1,8 +1,8 @@
 ---
-Description: 'Use the topics in this section to learn how to troubleshoot several of the more common problems experienced with Internet Explorer.'
+Description: Use the topics in this section to learn how to troubleshoot several of the more common problems experienced with Internet Explorer.
 MS-HAID: 'p\_ie11deploy.troubleshoot\_internet\_explorer\_11\_\_ie11\_'
 MSHAttr: 'PreferredLib:/library'
-title: 'Troubleshoot Internet Explorer 11 (IE11)'
+title: Troubleshoot Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ---
 
 # 

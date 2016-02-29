@@ -4,7 +4,7 @@ ms.assetid: caca18c1-d5c4-4404-84f8-d02bc562915f
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
-title: Install and Deploy Internet Explorer 11 (IE11)
+title: Install and Deploy Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ---
 
 # Install and Deploy Internet Explorer 11 (IE11)

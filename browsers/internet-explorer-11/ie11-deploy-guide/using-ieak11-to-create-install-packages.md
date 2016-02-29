@@ -2,7 +2,7 @@
 Description: Using IEAK 11 to create packages
 MS-HAID: 'p\_ie11deploy.using\_ieak\_11\_to\_create\_packages'
 MSHAttr: 'PreferredLib:/library'
-title: Using IEAK 11 to create packages
+title: Using IEAK 11 to create packages (Internet Explorer 11 for IT Pros)
 ---
 
 # Using IEAK 11 to create packages

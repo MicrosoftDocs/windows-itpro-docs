@@ -1,8 +1,8 @@
 ---
-Description: 'It’s important that you test the sites you’re adding, or considering removing, from your Enterprise Mode site list.'
+Description: It’s important that you test the sites you’re adding, or considering removing, from your Enterprise Mode site list.
 MS-HAID: 'p\_ie11deploy.turn\_off\_enterprise\_mode'
 MSHAttr: 'PreferredLib:/library'
-title: Turn off Enterprise Mode
+title: Turn off Enterprise Mode (Internet Explorer 11 for IT Pros)
 ---
 
 # Turn off Enterprise Mode
@@ -29,7 +29,7 @@ Turning off both of these features turns off Enterprise Mode for your company. T
 
  
 
-![](../common/wedge.gif)**To turn off the site list using Group Policy**
+**To turn off the site list using Group Policy**
 
 1.  Open your Group Policy editor, like Group Policy Management Console (GPMC).
 
@@ -37,7 +37,7 @@ Turning off both of these features turns off Enterprise Mode for your company. T
 
     Enterprise Mode will no longer look for the site list, effectively turning off Enterprise Mode. However, if you previously turned on local control for your employees, Enterprise Mode will still be available from the **Tools** menu. You need to turn that part of the functionality off separately.
 
-![](../common/wedge.gif)**To turn off local control using Group Policy**
+**To turn off local control using Group Policy**
 
 1.  Open your Group Policy editor, like Group Policy Management Console (GPMC).
 
@@ -45,7 +45,7 @@ Turning off both of these features turns off Enterprise Mode for your company. T
 
 3.  Enterprise Mode no longer shows up on the **Tools** menu for your employees. However, if you are still using an Enterprise Mode site list, all of the globally listed sites will still appear in Enterprise Mode. If you want to turn off all of Enterprise Mode, you will need to also turn off the site list functionality.
 
-![](../common/wedge.gif)**To turn off the site list using the registry**
+**To turn off the site list using the registry**
 
 1.  Open a registry editor, such as regedit.exe.
 
@@ -57,7 +57,7 @@ Turning off both of these features turns off Enterprise Mode for your company. T
 
     IE11 stops looking at the site list for rendering instructions. However, Enterprise Mode is still available to your users locally (if it was turned on).
 
-![](../common/wedge.gif)**To turn off local control using the registry**
+**To turn off local control using the registry**
 
 1.  Open a registry editor, such as regedit.exe.
 

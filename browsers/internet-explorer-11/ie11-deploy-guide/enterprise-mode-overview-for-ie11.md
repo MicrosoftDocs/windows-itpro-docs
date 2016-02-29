@@ -1,11 +1,11 @@
 ---
-Description: 'Use the topics in this section to learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager tool in your company.'
+Description: Use the topics in this section to learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager tool in your company.
 ms.assetid: d52ba8ba-b3c7-4314-ba14-0610e1d8456e
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Enterprise Mode for Internet Explorer 11
+title: Enterprise Mode for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Enterprise Mode for Internet Explorer 11

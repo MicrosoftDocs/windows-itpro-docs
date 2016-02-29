@@ -4,7 +4,7 @@ ms.assetid: 10a14a09-673b-4f8b-8d12-64036135e7fd
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
-title: Customize Internet Explorer 11 installation packages
+title: Customize Internet Explorer 11 installation packages (Internet Explorer 11 for IT Pros)
 ---
 
 # Customize Internet Explorer 11 installation packages
@@ -25,7 +25,7 @@ In addition, you can configure IE before, during, or after deployment, using the
 -   **Group Policy**. Configures and enforces IE11 settings. For more information about settings and configuration options, see [Group policy objects and Internet Explorer 11 (IE11)](gpo-and-ie11.md).
 
 -   **Unattend.xml**. Customizes some of the IE settings during your Windows installation. This option only applies if you're updating a Windows image with IE11.<p>**Note**<br>
-You'll only see the new IE11 Unattend.xml settings if your Unattend.xml file's associated with a Windows image that includes the IE11 update. For more information about editing and using the Unattend.xml file, see [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=276788). For more information about using the Windows System Image Manager, see [Windows System Image Manager Technical Reference](http://go.microsoft.com/fwlink/?LinkId=276789).
+You'll only see the new IE11 Unattend.xml settings if your Unattend.xml file's associated with a Windows image that includes the IE11 update. For more information about editing and using the Unattend.xml file, see [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/p/?LinkId=276788). For more information about using the Windows System Image Manager, see [Windows System Image Manager Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=276789).
 
      
 

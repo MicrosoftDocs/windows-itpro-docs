@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-title: 'Group Policy, Shortcut Extensions, and Internet Explorer 11'
+title: Group Policy, Shortcut Extensions, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Group Policy, Shortcut Extensions, and Internet Explorer 11
@@ -32,7 +32,7 @@ You can create and configure shortcuts for any domain-based Group Policy Object 
 
 5.  Type the required shortcut settings and your comments into the **Description** box, and click **OK**.
 
-For more information about shortcut extensions, including step-by-step guidance, see [Shortcuts Extension](http://go.microsoft.com/fwlink/?LinkId=214525) and [Configure a Shortcut Item](http://go.microsoft.com/fwlink/?LinkId=301837).
+For more information about shortcut extensions, including step-by-step guidance, see [Shortcuts Extension](http://go.microsoft.com/fwlink/p/?LinkId=214525) and [Configure a Shortcut Item](http://go.microsoft.com/fwlink/p/?LinkId=301837).
 
  
 

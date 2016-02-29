@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Collect data using Enterprise Site Discovery
+title: Collect data using Enterprise Site Discovery (Internet Explorer 11 for IT Pros)
 ---
 
 # Collect data using Enterprise Site Discovery
@@ -26,7 +26,7 @@ Before you start, you need to make sure you have the following:
 
 -   Latest cumulative security update (for all supported versions of Internet Explorer):
 
-    1.  Go to the [Microsoft Security Bulletin](http://go.microsoft.com/fwlink/?LinkID=718223) page, and change the filter to **Windows Internet Explorer 11**.
+    1.  Go to the [Microsoft Security Bulletin](http://go.microsoft.com/fwlink/p/?LinkID=718223) page, and change the filter to **Windows Internet Explorer 11**.
 
         ![microsoft security bulletin techcenter](images/securitybulletin-filter.png)
 
@@ -36,7 +36,7 @@ Before you start, you need to make sure you have the following:
 
     3.  Click the link that represents both your operating system version and Internet Explorer 11, and then follow the instructions in the **How to get this update** section.
 
--   [Setup and configuration package](http://go.microsoft.com/fwlink/?LinkId=517719), including:
+-   [Setup and configuration package](http://go.microsoft.com/fwlink/p/?LinkId=517719), including:
 
     -   Configuration-related PowerShell scripts
 

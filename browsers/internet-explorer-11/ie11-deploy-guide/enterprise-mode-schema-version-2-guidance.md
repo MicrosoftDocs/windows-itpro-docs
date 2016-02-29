@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: 'Enterprise Mode schema v.2 guidance for Windows 10-based devices'
+title: Enterprise Mode schema v.2 guidance for Windows 10-based devices (Internet Explorer 11 for IT Pros)
 ---
 
 # Enterprise Mode schema v.2 guidance for Windows 10-based devices

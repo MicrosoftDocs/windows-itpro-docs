@@ -1,11 +1,11 @@
 ---
-Description: 'Overview about how Group Policy works with Windows Powershell and Internet Explorer 11'
+Description: Overview about how Group Policy works with Windows Powershell and Internet Explorer 11
 ms.assetid: e3607cde-a498-4e04-9daa-b331412967fc
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-title: 'Group Policy, Windows Powershell, and Internet Explorer 11'
+title: Group Policy, Windows Powershell, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Group Policy, Windows Powershell, and Internet Explorer 11
@@ -21,7 +21,7 @@ Each cmdlet is a single-function command-line tool that can:
 
 -   Configure registry-based policy settings and registry settings for Group Policy preferences.
 
-For more info about PowerShell and Group Policy management, see [Use Windows PowerShell to Manage Group Policy](http://go.microsoft.com/fwlink/?LinkId=276828).
+For more info about PowerShell and Group Policy management, see [Use Windows PowerShell to Manage Group Policy](http://go.microsoft.com/fwlink/p/?LinkId=276828).
 
  
 

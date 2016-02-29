@@ -2,7 +2,7 @@
 Description: Turn on Enterprise Mode and use a site list
 MS-HAID: 'p\_ie11deploy.turn\_on\_enterprise\_mode\_and\_use\_a\_site\_list'
 MSHAttr: 'PreferredLib:/library'
-title: Turn on Enterprise Mode and use a site list
+title: Turn on Enterprise Mode and use a site list (Internet Explorer 11 for IT Pros)
 ---
 
 # Turn on Enterprise Mode and use a site list
@@ -27,7 +27,7 @@ We recommend that you store and download your website list from a secure web sev
 
  
 
-![](../common/wedge.gif)**To turn on Enterprise Mode using Group Policy**
+**To turn on Enterprise Mode using Group Policy**
 
 1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Internet Explorer\\Use the Enterprise Mode IE website list** setting.
 
@@ -37,7 +37,7 @@ We recommend that you store and download your website list from a secure web sev
 
 2.  Click **Enabled**, and then in the **Options** area, type the location to your site list.
 
-![](../common/wedge.gif)**To turn on Enterprise Mode using the registry**
+**To turn on Enterprise Mode using the registry**
 
 1.  **To turn on Enterprise Mode for only the local user:** Open a registry editor, like regedit.exe and go to `HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode`.
 
@@ -60,8 +60,8 @@ We recommend that you store and download your website list from a secure web sev
 ## Related topics
 
 
-[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+[Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+[Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
  
 
  

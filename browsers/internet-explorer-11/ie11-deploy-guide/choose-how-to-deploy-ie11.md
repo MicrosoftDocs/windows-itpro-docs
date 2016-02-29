@@ -4,7 +4,7 @@ ms.assetid: 21b6a301-c222-40bc-ad0b-27f66fc54d9d
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
-title: Choose how to deploy Internet Explorer 11 (IE11)
+title: Choose how to deploy Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ---
 
 # Choose how to deploy Internet Explorer 11 (IE11)

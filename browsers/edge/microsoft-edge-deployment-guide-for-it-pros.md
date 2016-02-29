@@ -1,14 +1,13 @@
 ---
-Description: Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability.
+Description: Overview information about Microsoft Edge, the default browser for Windows 10. This topic includes links to other Microsoft Edge topics.
 ms.assetid: 70377735-B2F9-4B0B-9658-4CF7C1D745BB
 ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
-title: Microsoft Edge - Deployment Guide for IT Pros
+title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros)
 ---
 
 # Microsoft Edge - Deployment Guide for IT Pros
-
 
 **Last updated**
 

@@ -2,7 +2,7 @@
 Description: User interface problems with Internet Explorer 11
 MS-HAID: 'p\_ie11deploy.user\_interface\_problems\_with\_internet\_explorer\_11'
 MSHAttr: 'PreferredLib:/library'
-title: User interface problems with Internet Explorer 11
+title: User interface problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # User interface problems with Internet Explorer 11
@@ -29,7 +29,7 @@ You can see your security zone settings by opening Internet Explorer for the des
 
 For IE11, the UI has been changed to provide just the controls needed to support essential functionality, hiding anything considered non-essential, such as the **Favorites Bar**, **Command Bar**, **Menu Bar**, and **Status Bar**. This is intended to help focus users on the content of the page, rather than the browser itself. However, if you want these bars to appear, you can turn them back on using Group Policy settings.
 
-![](../common/wedge.gif)**To turn the toolbars back on**
+**To turn the toolbars back on**
 
 -   Right click in the IE toolbar heading and choose to turn on the **Command bar**, **Favorites bar**, and **Status bar** from the menu.
 

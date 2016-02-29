@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: networking
-title: Auto configuration settings for Internet Explorer 11
+title: Auto configuration settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ---
 
 # Auto configuration settings for Internet Explorer 11
@@ -34,7 +34,7 @@ For custom graphics and branding, add the `FEATURE\AUTOCONFIG\BRANDING` registry
 
 ## Updating your automatic configuration settings
 After adding the `FEATURE\AUTOCONFIG\BRANDING` registry key, you can change your automatic configuration settings to pick up the updated branding.
-<p>**Important**<br>Your branding changes won't be added or updated if you've previously chosen the **Disable external branding of IE** setting in the `User Configuration\Administrative Templates\Windows Components\Internet Explorer` Group Policy object. This setting is intended to prevent branding by a third-party, like an Internet service or content provider. For more information about Group Policy, including videos and the latest technical documentation, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/?LinkId=214514).
+<p>**Important**<br>Your branding changes won't be added or updated if you've previously chosen the **Disable external branding of IE** setting in the `User Configuration\Administrative Templates\Windows Components\Internet Explorer` Group Policy object. This setting is intended to prevent branding by a third-party, like an Internet service or content provider. For more information about Group Policy, including videos and the latest technical documentation, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=214514).
 
 **To update your settings**
 

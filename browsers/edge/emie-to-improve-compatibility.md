@@ -1,11 +1,11 @@
 ---
-Description: If you have specific web sites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the web sites will automatically open using Internet Explorer 11.
+Description: If you're having problems with Microsoft Edge, this topic tells how to use the Enterprise Mode site list to automatically open sites using IE11.
 ms.assetid: 89C75F7E-35CA-4CA8-96FA-B3B498B53BE4
 ms.prod: edge
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Use Enterprise Mode to improve compatibility (Microsoft Edge)
+title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
 ---
 
 # Use Enterprise Mode to improve compatibility
@@ -24,7 +24,7 @@ title: Use Enterprise Mode to improve compatibility (Microsoft Edge)
 If you have specific web sites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the web sites will automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work properly with Microsoft Edge, you can set all intranet sites to automatically open using IE11.
 
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
-<p>**Note**<br>If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy]( http://go.microsoft.com/fwlink/?LinkId=620714).
+<p>**Note**<br>If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy]( http://go.microsoft.com/fwlink/p/?LinkId=620714).
 
 ## Fix specific websites
 
@@ -32,7 +32,7 @@ Microsoft Edge doesn't support ActiveX controls, Browser Helper Objects, VBScrip
 
 **To add sites to your list**
 
-1.  In the Enterprise Mode Site List Manager tool, click **Add**.<p>If you already have an existing site list, you can import it into the tool. After it's in the tool, the xml updates the list, checking **Open in IE** for each site. For info about importing the site list, see [Import your Enterprise Mode site list to the Enterprise Mode Site List Manager](http://go.microsoft.com/fwlink/?LinkId=618322).<p>![Enterprise Mode Site List Manager with Open in IE box](images/emie_open_in_ie.png)
+1.  In the Enterprise Mode Site List Manager tool, click **Add**.<p>If you already have an existing site list, you can import it into the tool. After it's in the tool, the xml updates the list, checking **Open in IE** for each site. For info about importing the site list, see [Import your Enterprise Mode site list to the Enterprise Mode Site List Manager](http://go.microsoft.com/fwlink/p/?LinkId=618322).<p>![Enterprise Mode Site List Manager with Open in IE box](images/emie_open_in_ie.png)
 
 2.  Type or paste the URL for the website that’s experiencing compatibility problems, like *&lt;domain&gt;*.com or *&lt;domain&gt;*.com/*&lt;path&gt;* into the **URL** box. <p>You don’t need to include the `http://` or `https://` designation. The tool will automatically try both versions during validation.
 
@@ -42,7 +42,7 @@ Microsoft Edge doesn't support ActiveX controls, Browser Helper Objects, VBScrip
 
 5.  Click **Save** to validate your website and to add it to the site list for your enterprise.<p>If your site passes validation, it’s added to the global compatibility list. If the site doesn’t pass validation, you’ll get an error message explaining the problem. You’ll then be able to either cancel the site or ignore the validation problem and add it to your list anyway.
 
-6.  On the **File** menu, go to where you want to save the file, and then click **Save to XML**.<p>You can save the file locally or to a network share. However, you must make sure you deploy it to the location specified in your Group Policy setting. For more info, see [Turn on Enterprise Mode and use a site list](http://go.microsoft.com/fwlink/?LinkId=618952).
+6.  On the **File** menu, go to where you want to save the file, and then click **Save to XML**.<p>You can save the file locally or to a network share. However, you must make sure you deploy it to the location specified in your Group Policy setting. For more info, see [Turn on Enterprise Mode and use a site list](http://go.microsoft.com/fwlink/p/?LinkId=618952).
 
 ### Set up Microsoft Edge to use the Enterprise Mode site list
 
@@ -75,7 +75,7 @@ You must turn on the **Use Enterprise Mode Site List** Group Policy setting befo
 ## Fix your intranet sites
 
 You can add the **Send all intranet traffic over to Internet Explorer** Group Policy setting for Windows 10 so that all of your intranet sites open in IE11. This means that even if your employees are using Microsoft Edge, they will automatically switch to IE11 while viewing the intranet.
-<p>**Note**<br>If you want to use Group Policy to set IE as the default browser for Internet sites, you can find the info here, [Set the default browser using Group Policy]( http://go.microsoft.com/fwlink/?LinkId=620714).
+<p>**Note**<br>If you want to use Group Policy to set IE as the default browser for Internet sites, you can find the info here, [Set the default browser using Group Policy]( http://go.microsoft.com/fwlink/p/?LinkId=620714).
 
 **To turn on Sends all intranet traffic over to Internet Explorer using Group Policy**
 
@@ -86,10 +86,10 @@ You can add the **Send all intranet traffic over to Internet Explorer** Group Po
 3.  Refresh your policy in your organization and then view the affected sites in Microsoft Edge.<p>The site shows a message in Microsoft Edge, saying that the page needs IE. At the same time, the page opens in IE11; in a new frame if it's not yet running, or in a new tab if it is.
 
 ## Related topics
-* [Blog: How Microsoft Edge and Internet Explorer 11 on Windows 10 work better together in the Enterprise](http://go.microsoft.com/fwlink/?LinkID=624035)
-* [Enterprise Mode Site List Manager download](http://go.microsoft.com/fwlink/?LinkId=394378)
+* [Blog: How Microsoft Edge and Internet Explorer 11 on Windows 10 work better together in the Enterprise](http://go.microsoft.com/fwlink/p/?LinkID=624035)
+* [Enterprise Mode Site List Manager download](http://go.microsoft.com/fwlink/p/?LinkId=394378)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](http://go.microsoft.com/fwlink/p/?linkid=618377)
-* [Set the default browser using Group Policy]( http://go.microsoft.com/fwlink/?LinkId=620714)
+* [Set the default browser using Group Policy]( http://go.microsoft.com/fwlink/p/?LinkId=620714)
  
 
  

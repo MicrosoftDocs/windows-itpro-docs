@@ -5,7 +5,7 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Import your Enterprise Mode site list to the Enterprise Mode Site List Manager (Internet Explorer 11)
+title: Import your Enterprise Mode site list to the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ---
 
 # Import your Enterprise Mode site list to the Enterprise Mode Site List Manager
@@ -35,8 +35,8 @@ Importing your file overwrites everything that’s currently in the tool, so mak
 3.  Review the alert message about all of your entries being overwritten. If you still want to import the file, click **Yes**.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
  
 

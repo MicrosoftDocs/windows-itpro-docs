@@ -1,12 +1,14 @@
 ---
-Description: 'Remove websites that were added to a local compatibility view list by mistake or because they no longer have compatibility problems.'
-MS-HAID: 'p\_ie11deploy.removing\_sites\_from\_a\_local\_compatibililty\_view\_list'
-MSHAttr: 'PreferredLib:/library'
-title: Remove sites from a local compatibility view list
+Description: Instructions about how to remove sites from a local compatibility view list.
+ms.assetid: F6ECAA75-EBCB-4F8D-8721-4CD6E73C0AC9
+ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: appcompat
+title: Remove sites from a local compatibility view list (Internet Explorer 11 for IT Pros)
 ---
 
 # Remove sites from a local compatibility view list
-
 
 **Last updated**
 
@@ -22,13 +24,12 @@ title: Remove sites from a local compatibility view list
 
 Remove websites that were added to a local compatibility view list by mistake or because they no longer have compatibility problems.
 
-![](../common/wedge.gif)**To remove sites from a local compatibility view list**
+**To remove sites from a local compatibility view list**
 
 1.  Open Internet Explorer 11, click **Tools**, and then click **Compatibility View Settings**.
 
-2.  Pick the site to remove, and then click **Remove**.
-
-    Sites can only be removed one at a time. If one is removed by mistake, it can be added back using this same box and the **Add** section.
+2.  Pick the site to remove, and then click **Remove**.<p>
+Sites can only be removed one at a time. If one is removed by mistake, it can be added back using this same box and the **Add** section.
 
  
 
