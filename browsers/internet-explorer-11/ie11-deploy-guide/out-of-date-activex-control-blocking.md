@@ -50,14 +50,14 @@ When IE blocks an outdated ActiveX control, you’ll see a notification bar simi
 
 **Internet Explorer 9 through Internet Explorer 11**
 
-![warning about outdated activex controls (ie9+)](images/outdatedcontrolwarning.png)
+![Warning about outdated activex controls (ie9+)](images/outdatedcontrolwarning.png)
 **Windows Internet Explorer 8**
 
-![warning about outdated activex controls (ie8)](images/ieoutdatedcontrolwarning.png)
+![Warning about outdated activex controls (ie8)](images/ieoutdatedcontrolwarning.png)
 
 Out-of-date ActiveX control blocking also gives you a security warning that tells you if a webpage tries to launch specific outdated apps, outside of IE:
 
-![warning about outdated activex controls outside ie](images/ieoutdatedcontroloutsideofie.png)
+![Warning about outdated activex controls outside ie](images/ieoutdatedcontroloutsideofie.png)
 
 
 ## How do I fix an outdated ActiveX control or app?
