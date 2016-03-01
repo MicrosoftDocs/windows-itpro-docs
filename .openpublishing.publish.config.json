@@ -13,8 +13,8 @@
             }
         },
         {
-            "docset_name": "internet-explorer-11",
-            "build_output_subfolder": "browsers/internet-explorer-11",
+            "docset_name": "internet-explorer",
+            "build_output_subfolder": "browsers/internet-explorer",
             "locale": "en-us",
             "version": 0,
             "open_to_public_contributors": "false",

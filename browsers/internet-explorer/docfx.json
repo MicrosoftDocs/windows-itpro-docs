@@ -19,6 +19,6 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "edges/internet-explorer-11"
+    "dest": "edges/internet-explorer"
   }
 }
