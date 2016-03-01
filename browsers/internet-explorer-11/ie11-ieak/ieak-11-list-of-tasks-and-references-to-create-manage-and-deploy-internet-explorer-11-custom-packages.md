@@ -84,7 +84,7 @@ Use Internet Explorer Administration Kit 11 (IEAK 11) to set up, deploy, and man
 <li><p>[Using the Resultant Set of Policy (RSoP) snap-in to review policy settings](using-the-resultant-set-of-policy--rsop--snap-in-to-review-policy-settings.md)</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>For deployment instructions, additional troubleshooting, and post-installation management, see the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](ie11-deploy-guide/ie11-deployment-guide-for-it-pros.md)</p>
+<p>For deployment instructions, additional troubleshooting, and post-installation management, see the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/ie11-deployment-guide-for-it-pros.md)</p>
 </div>
 <div>
  

@@ -12,10 +12,10 @@ ms.sitesec: library
 
 Use the IEAK 11 and the Internet Explorer Customization Wizard 11 to customize your installation packages that you’ll deploy to your company’s employees.
 
-## <span id="IE_Customization_Wizard_11_options_"></span><span id="ie_customization_wizard_11_options_"></span><span id="IE_CUSTOMIZATION_WIZARD_11_OPTIONS_"></span>IE Customization Wizard 11 options
+## <span id="IE-Customization-Wizard-11-options-"></span><span id="ie-customization-wizard-11-options-"></span><span id="IE-CUSTOMIZATION-WIZARD-11-OPTIONS-"></span>IE Customization Wizard 11 options
 
 
-IEAK 11 lets you customize a lot of Internet Explorer 11, including the IE and Internet Explorer for the desktop experiences. For more information about the experiences, see [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](ie11-deploy-guide/ie11-deployment-guide-for-it-pros.md). For information about which pages appear in the **Internal** or **External** version of IE Customization Wizard 11, see [IEAK 11: Determine the licensing version and features to use](ieak-11-determine-the-licensing-version-and-features-to-use.md).
+IEAK 11 lets you customize a lot of Internet Explorer 11, including the IE and Internet Explorer for the desktop experiences. For more information about the experiences, see [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/ie11-deployment-guide-for-it-pros.md). For information about which pages appear in the **Internal** or **External** version of IE Customization Wizard 11, see [IEAK 11: Determine the licensing version and features to use](ieak-11-determine-the-licensing-version-and-features-to-use.md).
 
 <table>
 <colgroup>
@@ -105,7 +105,7 @@ IEAK 11 lets you customize a lot of Internet Explorer 11, including the IE and 
 <tr class="odd">
 <td align="left"><p>Compatibility View</p></td>
 <td align="left"><p>Both</p></td>
-<td align="left"><p>This functionality has been removed for IE11. For more information, see [Missing the Compatibility View Button](ie11-deploy-guide/missing_the_compatibility_view_button).</p></td>
+<td align="left"><p>This functionality has been removed for IE11. For more information, see [Missing the Compatibility View Button](../ie11-deploy-guide/missing-the-compatibility-view-button.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Connection Manager</p></td>
