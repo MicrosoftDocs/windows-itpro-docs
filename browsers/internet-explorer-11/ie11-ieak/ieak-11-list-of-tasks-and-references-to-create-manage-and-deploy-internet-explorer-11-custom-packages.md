@@ -43,7 +43,7 @@ Use Internet Explorer Administration Kit 11 (IEAK 11) to set up, deploy, and man
 <li><p>[Add and approve ActiveX controls using IEAK 11](add-and-approve-activex-controls-using-ieak-11.md)</p></li>
 <li><p>[Internet Explorer Customization Wizard 11 options](internet-explorer-customization-wizard-11-options.md)</p></li>
 <li><p>[IEAK 11 and security](ieak-11-and-security.md)</p></li>
-<li><p>[Why create a CMAK profile in your Internet Explorer 11 (IE11) package](p_ieak_ie11.why_create_a_cmak_profile_in_your_internet_explorer_11__ie11__package)</p></li>
+<li><p>[Why create a CMAK profile in your Internet Explorer 11 (IE11) package](why-create-a-cmak-profile-in-your-internet-explorer-11--ie11--package)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -84,7 +84,7 @@ Use Internet Explorer Administration Kit 11 (IEAK 11) to set up, deploy, and man
 <li><p>[Using the Resultant Set of Policy (RSoP) snap-in to review policy settings](using-the-resultant-set-of-policy--rsop--snap-in-to-review-policy-settings.md)</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>For deployment instructions, additional troubleshooting, and post-installation management, see the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](p_ie11deploy.internet_explorer_11__ie11____deployment_guide_for_it_pros)</p>
+<p>For deployment instructions, additional troubleshooting, and post-installation management, see the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](ie11-deploy-guide/ie11-deployment-guide-for-it-pros.md)</p>
 </div>
 <div>
  

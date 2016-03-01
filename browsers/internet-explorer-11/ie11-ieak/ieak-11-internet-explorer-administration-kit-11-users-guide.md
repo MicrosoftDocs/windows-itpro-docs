@@ -8,8 +8,6 @@ ms.sitesec: library
 ---
 
 # IEAK 11 - Internet Explorer Administration Kit 11 Users Guide
-
-
 Internet Explorer Administration Kit 11 (IEAK 11) includes:
 
 -   **For enterprises.** Programs and tools to customize, deploy, and administer Internet Explorer 11 for your employee computers.

@@ -10,7 +10,7 @@ ms.sitesec: library
 # Add and approve ActiveX controls using IEAK 11
 
 
-There are two main approaches to how you can control the use of ActiveX controls in your company. For more information about ActiveX controls, including how to manage the controls using Group Policy, see [ActiveX installation using group policy](p_ie11deploy.activex_installation_using_group_policy) in the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](p_ie11deploy.internet_explorer_11__ie11____deployment_guide_for_it_pros).
+There are two main approaches to how you can control the use of ActiveX controls in your company. For more information about ActiveX controls, including how to manage the controls using Group Policy, see [ActiveX installation using group policy](ie11-deploy-guide/activex-installation-using-group-policy.md) in the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](ie11-deploy-guide/ie11-deployment-guide-for-it-pros.md).
 
 **Note**  
 ActiveX controls are supported in Internet Explorer for the desktop for Windows 7 and Windows 8.1. They are not supported on the immersive version of Internet Explorer for Windows 8.1.
@@ -34,7 +34,7 @@ For example, your employees need to access an important Internet site, such as f
 
 4.  Repeat the last two steps until you have configured all the zones you want.
 
-5.  When you run IE Customization Wizard 11 to create a custom package, on the [Additional Settings](0da909a6-d627-462b-a46b-9104e9e36a3c) page, click each folder to expand its contents. Then select the check boxes for the controls you want to approve.
+5.  When you run IE Customization Wizard 11 to create a custom package, on the [Additional Settings](additional-settings-internet-explorer-customization-wizard.md) page, click each folder to expand its contents. Then select the check boxes for the controls you want to approve.
 
 ## <span id="Scenario_2__Restricted_use_of_ActiveX_controls"></span><span id="scenario_2__restricted_use_of_activex_controls"></span><span id="SCENARIO_2__RESTRICTED_USE_OF_ACTIVEX_CONTROLS"></span>Scenario 2: Restricted use of ActiveX controls
 
