@@ -39,7 +39,7 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 
 ![](images/wedge.gif) **To set up automatic detection for DHCP servers**
 
--   Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).
+-   Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).
 
     **Examples**
 
@@ -82,7 +82,7 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
     Create a canonical name (CNAME) alias record, named **WPAD**. This record lets you use more than one name to point to a single host, letting you host both an FTP server and a web server on the same computer. It also includes the resolved name (not the IP address) of the server storing your automatic configuration (.pac) file.
 
     **Note**  
-    For more information about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](http://go.microsoft.com/fwlink/?LinkId=294651).
+    For more information about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](http://go.microsoft.com/fwlink/p/?LinkId=294651).
 
      
 

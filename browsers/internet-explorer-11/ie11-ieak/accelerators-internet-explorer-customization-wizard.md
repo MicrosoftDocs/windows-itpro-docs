@@ -8,8 +8,6 @@ ms.sitesec: library
 ---
 
 # Accelerators: Internet Explorer Customization Wizard
-
-
 The **Accelerators** page of the Internet Explorer Customization Wizard 11 lets you add Accelerators to your employee computers. Accelerators are contextual menu options that can quickly get to a web service from any webpage. For example, an Accelerator can look up a highlighted word in the dictionary or a selected location on a map.
 
 **Note**  

@@ -43,7 +43,6 @@ Use Internet Explorer Administration Kit 11 (IEAK 11) to set up, deploy, and man
 <li><p>[Add and approve ActiveX controls using IEAK 11](add-and-approve-activex-controls-using-ieak-11.md)</p></li>
 <li><p>[Internet Explorer Customization Wizard 11 options](internet-explorer-customization-wizard-11-options.md)</p></li>
 <li><p>[IEAK 11 and security](ieak-11-and-security.md)</p></li>
-<li><p>[Why create a CMAK profile in your Internet Explorer 11 (IE11) package](why-create-a-cmak-profile-in-your-internet-explorer-11--ie11--package)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

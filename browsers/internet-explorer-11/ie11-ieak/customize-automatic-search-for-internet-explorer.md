@@ -10,7 +10,7 @@ ms.sitesec: library
 # Customize Automatic Search for Internet Explorer
 
 
-Internet Explorer lets websites advertise any search provider that uses the open search standard described at the A9 website ( [OpenSearch 1.1 Draft 5](http://go.microsoft.com/fwlink/?LinkId=208582)). When IE detects new search providers, the **Search** box becomes active and adds the new providers to the drop-down list of providers.
+Internet Explorer lets websites advertise any search provider that uses the open search standard described at the A9 website ( [OpenSearch 1.1 Draft 5](http://go.microsoft.com/fwlink/p/?LinkId=208582)). When IE detects new search providers, the **Search** box becomes active and adds the new providers to the drop-down list of providers.
 
 Using the **Administrative Templates** section of Group Policy, you can prevent the search box from appearing, you can add a list of acceptable search providers, and you can restrict your employee’s ability to add or remove search providers.
 

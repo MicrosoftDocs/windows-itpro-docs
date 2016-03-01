@@ -69,7 +69,7 @@ These are the available options for IExpress with IE:
 
  
 
-For more information, see [Command-line switches for IExpress software update packages](http://go.microsoft.com/fwlink/?LinkId=317973).
+For more information, see [Command-line switches for IExpress software update packages](http://go.microsoft.com/fwlink/p/?LinkId=317973).
 
  
 
