@@ -74,11 +74,11 @@ Yes. You can review the XML-based [compatibility list](http://go.microsoft.com/f
 
 **Q: What is Enterprise Mode?**<br>
 Enterprise Mode is a compatibility mode designed for Enterprises. This mode lets websites render using a modified browser configuration that’s designed to avoid the common compatibility problems associated with web apps written and tested on older versions of IE, like Windows Internet Explorer 7 or Windows Internet Explorer 8.<p>
-For more information, see [Turn on Enterprise Mode and use a site list](ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list.md).
+For more information, see [Turn on Enterprise Mode and use a site list](../ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list.md).
 
 **Q: What is the Enterprise Mode Site List Manager tool?**<br>
 Enterprise Mode Site List Manager tool gives you a way to add websites to your Enterprise Mode site list, without having to manually code XML.<p>
-For more information, see all of the topics in [Use the Enterprise Mode Site List Manager tool](ie11-deploy-guide/use-the-enterprise-mode-site-list-manager-tool.md).
+For more information, see all of the topics in [Use the Enterprise Mode Site List Manager tool](../ie11-deploy-guide/use-the-enterprise-mode-site-list-manager-tool.md).
 
 **Q: Are browser plug-ins supported in IE11?**<br>
 The immersive version of IE11 provides an add-on–free experience, so browser plugins won't load and dependent content won't be displayed. This doesn't apply to Internet Explorer for the desktop. For more information, see [Browsing Without Plug-ins](http://go.microsoft.com/fwlink/p/?LinkId=242587). However, Internet Explorer for the desktop and IE11 on Windows 7 with SP1 do support browser plugins, including ActiveX controls such as Adobe Flash and Microsoft Silverlight.
@@ -108,7 +108,7 @@ IE11 includes all of the previous Group Policy settings you've used to manage an
 
 -   Use the Enterprise Mode IE website list
 
-For more information, see [New group policy settings for IE11](ie11-deploy-guide/new-group-policy-settings-for-ie11.md).
+For more information, see [New group policy settings for IE11](../ie11-deploy-guide/new-group-policy-settings-for-ie11.md).
 
 **Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
 Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:

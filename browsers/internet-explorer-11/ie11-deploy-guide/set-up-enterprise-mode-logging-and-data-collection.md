@@ -26,7 +26,7 @@ The **Let users turn on and use Enterprise Mode from the Tools menu** setting al
 
 ![group policy to turn on enterprise mode](images/ie-emie-grouppolicy.png)
 
-Getting these reports lets you find out about sites that aren’t working right, so you can add them to your Enterprise Mode site list, without having to locate them all yourself. For more information about creating and using a site list, see the [Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add_multiple_sites_to_the_enterprise_mode_site_list_using_a_file_and_enterprise_mode_site_list_manager.md) or the [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add_multiple_sites_to_the_enterprise_mode_site_list_using_a_file_and_the_enterprise_mode_manager.md) topic, based on your operating system.
+Getting these reports lets you find out about sites that aren’t working right, so you can add them to your Enterprise Mode site list, without having to locate them all yourself. For more information about creating and using a site list, see the [Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-the-enterprise-mode-site-list-using-a-file-and-enterprise-mode-site-list-manager.md) or the [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-a-file-and-the-enterprise-mode-manager.md) topic, based on your operating system.
 
 ## Using ASP to collect your data
 When you turn logging on, you need a valid URL that points to a server that can be listened to for updates to a user’s registry key. This means you need to set up an endpoint server for the incoming POST messages, which are sent every time the user turns Enterprise Mode on or off from the **Tools** menu.
@@ -69,7 +69,7 @@ This is what your log files will look like after you set everything up and at le
 
 
 ## Using the GitHub sample to collect your data
-Microsoft has created the [EMIE-Data_Collection_Sample](http://go.microsoft.com/fwlink/p/?LinkId=507401) that shows how to collect your Enterprise Mode reports. This sample only shows how to collect data, it doesn’t show how to aggregate the data into your Enterprise Mode site list.<p>
+Microsoft has created the [EMIE-Data-Collection_Sample](http://go.microsoft.com/fwlink/p/?LinkId=507401) that shows how to collect your Enterprise Mode reports. This sample only shows how to collect data, it doesn’t show how to aggregate the data into your Enterprise Mode site list.<p>
 This sample starts with you turning on Enterprise Mode and logging (either through Group Policy, or by manually setting the EnterpriseMode registry key) so that your users can use Enterprise Mode locally. For the steps to do this, go to [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md).
 
 **Note**<br>If you decide to manually change the registry key, you can change the **Enable** setting to `[deployment url]/api/records/`, which automatically sends your reports to this page.
