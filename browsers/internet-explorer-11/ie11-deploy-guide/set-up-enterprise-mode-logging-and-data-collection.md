@@ -26,7 +26,7 @@ The **Let users turn on and use Enterprise Mode from the Tools menu** setting al
 
 ![group policy to turn on enterprise mode](images/ie-emie-grouppolicy.png)
 
-Getting these reports lets you find out about sites that aren’t working right, so you can add them to your Enterprise Mode site list, without having to locate them all yourself. For more information about creating and using a site list, see the [Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-the-enterprise-mode-site-list-using-a-file-and-enterprise-mode-site-list-manager.md) or the [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-a-file-and-the-enterprise-mode-manager.md) topic, based on your operating system.
+Getting these reports lets you find out about sites that aren’t working right, so you can add them to your Enterprise Mode site list, without having to locate them all yourself. For more information about creating and using a site list, see the [Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md) or the [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md) topic, based on your operating system.
 
 ## Using ASP to collect your data
 When you turn logging on, you need a valid URL that points to a server that can be listened to for updates to a user’s registry key. This means you need to set up an endpoint server for the incoming POST messages, which are sent every time the user turns Enterprise Mode on or off from the **Tools** menu.
@@ -40,11 +40,11 @@ This lets you create an ASP form that accepts the incoming POST messages.
 
 3.  Open the Internet Information Services (IIS) Manager, click **Bindings**, highlight **Port 81**, click **Edit**, and then change the website information to point to Port 81 so it matches your custom-created port.
 
-    ![iis manager editing website bindings](images/ie-emie-editbindings.png)
+    ![IIS Manager, editing website bindings](images/ie-emie-editbindings.png)
 
 4.  Open the **Logging** feature, pick **W3C** for the format, and click **Select Fields** to open the **W3C Logging Fields** box.
 
-    ![iis manager setting logging options](images/ie-emie-logging.png)
+    ![IIS Manager, setting logging options](images/ie-emie-logging.png)
 
 5.  Change the WC3 logging fields to include only the **Date**, **Client IP**, **User Name**, and **URI Query** standard fields, and then click **OK**.<p>
 Using only these fields keeps the log file simple, giving you the date, client IP address, and the website URI information for any site changed by your users.
@@ -65,7 +65,7 @@ This code logs your POST fields to your IIS log file, where you can review all o
 ### IIS log file information
 This is what your log files will look like after you set everything up and at least one of your users has turned on Enterprise Mode locally from the **Tools** menu. You can see the URL of the problematic website and client IP address of the user that turned on Enterprise Mode.
 
-![enterprise mode log file](images/ie-emie-logfile.png)
+![Enterprise Mode log file](images/ie-emie-logfile.png)
 
 
 ## Using the GitHub sample to collect your data
@@ -92,14 +92,14 @@ The required packages are automatically downloaded and included in the solution.
 
 1.  Right-click on the name, PhoneHomeSample, and click **Publish**.
 
-    ![publish menu in visual studio](images/ie-emie-publishsolution.png)
+    ![Visual Studio, Publish menu](images/ie-emie-publishsolution.png)
 
 2.  In the **Publish Web** wizard, pick the publishing target and options that work for your organization.
 
    **Important**<br>
    Make sure you have a database associated with your publishing target. Otherwise, your reports won’t be collected and you’ll have problems deploying the website. 
 
-    ![publish web wizard in visual studio](images/ie-emie-publishweb.png)
+    ![Visual Studio, Publish Web wizard](images/ie-emie-publishweb.png)
 
    After you finish the publishing process, you need to test to make sure the app deployed successfully.
 
@@ -107,8 +107,7 @@ The required packages are automatically downloaded and included in the solution.
 
 1.  Open a registry editor on the computer where you deployed the app, go to the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\EnterpriseMode` key, and change the **Enable** string to:
 
-    ``` 
-    "Enable"="http://<deploy_URL>/api/records/"
+    ``` "Enable"="http://<deploy_URL>/api/records/"
     ```
  Where `<deploy_URL>` points to your deployment URL.
 
@@ -125,7 +124,7 @@ The required packages are automatically downloaded and included in the solution.
 -   Go to `http://<deploy_URL>/List` to see the report results.<p>
 If you’re already on the webpage, you’ll need to refresh the page to see the results.
 
-    ![enterprise mode result report with details](images/ie-emie-reportwdetails.png)
+    ![Enterprise Mode Result report with details](images/ie-emie-reportwdetails.png)
 
 
 ### Troubleshooting publishing errors
@@ -135,7 +134,7 @@ If you have errors while you’re publishing your project, you should try to upd
 
 1.  From the **Tools** menu of Microsoft Visual Studio, click **NuGet Package Manager**, and click **Manage NuGet Packages for Solution**.
 
-    ![nuget package manager for package updates](images/ie-emie-packageupdate.png)
+    ![Nuget Package Manager for package updates](images/ie-emie-packageupdate.png)
 
 2.  Click **Updates** on the left side of the tool, and click the **Update All** button.<p>
 You may need to do some additional package cleanup to remove older package versions.
