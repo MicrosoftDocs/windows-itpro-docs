@@ -27,7 +27,7 @@ For more information about all of the new options and Group Policy, see:
 
 -   [Group policy preferences and Internet Explorer 11](group-policy-preferences-and-ie11.md)
 
--   [Administrative templates and Internet Explorer 11](aadministrative-templates-and-ie11.md)
+-   [Administrative templates and Internet Explorer 11](administrative-templates-and-ie11.md)
 
 -   [IEAK 11 - Internet Explorer Administration Kit 11 Guide](http://go.microsoft.com/fwlink/p/?linkid=327741)
 

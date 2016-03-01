@@ -12,7 +12,7 @@ You can customize Internet Explorer 11 to support various browser behaviors, mu
 
 |Topic                                                                   |Description                                         |
 |------------------------------------------------------------------------|----------------------------------------------------|
-|[Using IEAK 11 to create packages](using-ieak-11-to-create-install-packages.md) |How to use the Internet Explorer Administration Kit 11 (IEAK 11) and the IE Customization Wizard 11 to set up, configure, deploy, and maintain IE11 |
+|[Using IEAK 11 to create packages](using-ieak11-to-create-install-packages.md) |How to use the Internet Explorer Administration Kit 11 (IEAK 11) and the IE Customization Wizard 11 to set up, configure, deploy, and maintain IE11 |
 |[Create packages for multiple operating systems or languages](create-install-packages-for-multiple-operating-systems-or-languages.md) |How to create multiple versions of your custom installation package, to support multiple operating systems or languages. |
 |[Using .INF files to create packages](using-inf-files-to-create-install-packages.md) |How to use the Microsoft® Windows Setup Engine to automate setup tasks and customize your component installations. |
 

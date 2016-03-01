@@ -90,7 +90,7 @@ After you create your .xml or .txt file, you can bulk add the sites to the Windo
 1.  In the Windows 10 Enterprise Mode Site List Manager tool, click **Bulk add from file**.
 
 2.  Go to your site list (either .txt or .xml) to add the included sites to the tool, and then click **Open**.<p>
-Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager tool](fix-validation-problems-using-the-enterprise-mode-site-list-manager-tool.md).
+Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager tool](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
 
 3.  Click **OK** to close the **Bulk add sites to the list** menu.
 
