@@ -45,7 +45,7 @@
 ###[Remove sites from a local compatibility view list](ie11-deploy-guide/remove-sites-from-a-local-compatibililty-view-list.md)
 ###[Turn off Enterprise Mode](ie11-deploy-guide/turn-off-enterprise-mode.md)
 ##[Group Policy and Internet Explorer 11 (IE11)](ie11-deploy-guide/group-policy-and-ie11.md)
-####[Group Policy and the Group Policy Management Console (GPMC)](ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11.md)
+###[Group Policy and the Group Policy Management Console (GPMC)](ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11.md)
 ####[Group Policy and the Local Group Policy Editor](ie11-deploy-guide/group-policy-and-local-group-policy-editor-ie11.md)
 ####[Group Policy and Advanced Group Policy Management (AGPM)](ie11-deploy-guide/group-policy-and-advanced-group-policy-mgmt-ie11.md)
 ####[Group Policy and Windows Powershell](ie11-deploy-guide/group-policy-windows-powershell-ie11.md)
