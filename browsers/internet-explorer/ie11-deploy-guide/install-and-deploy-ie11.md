@@ -1,6 +1,7 @@
 ---
 Description: Use the topics in this section to learn how to customize your Internet Explorer installation package, how to choose the right method for installation, and how to deploy IE into your environment.
 ms.assetid: caca18c1-d5c4-4404-84f8-d02bc562915f
+author: LizRoss
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

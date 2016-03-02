@@ -1,6 +1,7 @@
 ---
 Description: Info about the features included in Enterprise Mode with Internet Explorer 11.
 ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
+author: LizRoss
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

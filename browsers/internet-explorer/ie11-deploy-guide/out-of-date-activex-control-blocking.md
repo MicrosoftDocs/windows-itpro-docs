@@ -1,6 +1,7 @@
 ---
 Description: Use out-of-date ActiveX control blocking to help you know when IE prevents a webpage from loading outdated ActiveX controls and to update the outdated control, so that it’s safer to use.
 ms.assetid: e61866bb-1ff1-4a8d-96f2-61d3534e8199
+author: LizRoss
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

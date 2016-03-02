@@ -1,6 +1,7 @@
 ---
 Description: You can add multiple sites to your Enterprise Mode site list by creating a custom text (TXT) or Extensible Markup Language (XML) file of problematic sites and then adding it in the Bulk add from file area of the Enterprise Mode Site List Manager tool.
 ms.assetid: 20AF07C4-051A-451F-9C46-5A052D9AE27C
+author: LizRoss
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
