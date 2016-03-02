@@ -9,7 +9,7 @@
 ###[Choose how to install Internet Explorer 11 (IE11)](ie11-deploy-guide/choose-how-to-install-ie11.md)
 ####[Install Internet Explorer 11 (IE11) - System Center 2012 R2 Configuration Manager](ie11-deploy-guide/install-ie11-using-system-center-configuration-manager.md)
 ####[Install Internet Explorer 11 (IE11) - Windows Server Update Services (WSUS)](ie11-deploy-guide/install-ie11-using-windows-server-update-services-wsus.md)
-####[Install Internet Explorer 11 (IE11) - Microsoft Intune ie11-deploy-guide/install-ie11-using-microsoft-intune.md)
+####[Install Internet Explorer 11 (IE11) - Microsoft Intune](ie11-deploy-guide/install-ie11-using-microsoft-intune.md)
 ####[Install Internet Explorer 11 (IE11) - Network](ie11-deploy-guide/install-ie11-using-the-network.md)
 ####[Install Internet Explorer 11 (IE11) - Operating system deployment systems](ie11-deploy-guide/install-ie11-using-operating-system-deployment-systems.md)
 ####[Install Internet Explorer 11 (IE11) - Third-party tools](ie11-deploy-guide/install-ie11-using-third-party-tools.md)
