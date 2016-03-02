@@ -1,6 +1,7 @@
 ---
 Description: Using Group Policy to install ActiveX controls.
 ms.assetid: 59185370-558c-47e0-930c-8a5ed657e9e3
+author: LizRoss
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
