@@ -1,0 +1,6 @@
+# [Windows 10 and Windows 10 Mobile](index.md)
+## [What's new in Windows 10](whats-new/)
+## [Plan for Windows 10 deployment](plan/)
+## [Deploy Windows 10](deploy/)
+## [Keep Windows 10 secure](keep-secure/)
+## [Manage and update Windows 10](manage/)
