@@ -68,7 +68,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](keep-win
 ## Related topics
 
 
-[Change history for What's new in Windows 10](/windows/whats-new/change-history-for-what-s-new-in-windows-10.md)
+[Change history for What's new in Windows 10](../whats-new/change-history-for-what-s-new-in-windows-10.md)
 
 [Change history for Plan for Windows 10 deployment](/windows/plan/change-history-for-plan-for-windows-10-deployment.md)
 
