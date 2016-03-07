@@ -70,11 +70,11 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](keep-win
 
 [Change history for What's new in Windows 10](../whats-new/change-history-for-what-s-new-in-windows-10.md)
 
-[Change history for Plan for Windows 10 deployment](/windows/plan/change-history-for-plan-for-windows-10-deployment.md)
+[Change history for Plan for Windows 10 deployment](../plan/change-history-for-plan-for-windows-10-deployment.md)
 
-[Change history for Deploy Windows 10](/windows/deploy/change-history-for-deploy-windows-10.md)
+[Change history for Deploy Windows 10](../deploy/change-history-for-deploy-windows-10.md)
 
-[Change history for Manage and update Windows 10](/windows/manage/change-history-for-manage-and-update-windows-10.md)
+[Change history for Manage and update Windows 10](../manage/change-history-for-manage-and-update-windows-10.md)
 
  
 
