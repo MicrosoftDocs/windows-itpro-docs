@@ -29,7 +29,7 @@ In Windows 10, AppLocker has added some improvements.
 
 -   You can manage Windows 10 Mobile devices by using the new [AppLocker CSP](http://msdn.microsoft.com/library/windows/hardware/dn920019.aspx).
 
-[Learn how to manage AppLocker within your organization](windows/keep-secure/applocker-overview-server.md).
+[Learn how to manage AppLocker within your organization](/windows/keep-secure/applocker-overview-server.md).
 
  
 

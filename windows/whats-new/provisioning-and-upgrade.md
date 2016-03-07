@@ -93,9 +93,9 @@ Provisioning packages can be applied both during image deployment and during run
 ## Related topics
 
 
-[Update Windows 10 images with provisioning packages](windows/deploy/update-windows-10-images-with-provisioning-packages.md)
+[Update Windows 10 images with provisioning packages](/windows/deploy/update-windows-10-images-with-provisioning-packages.md)
 
-[Configure devices without MDM](windows/manage/configure-devices-without-mdm.md)
+[Configure devices without MDM](/windows/manage/configure-devices-without-mdm.md)
 
  
 
