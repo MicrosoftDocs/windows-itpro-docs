@@ -21,7 +21,7 @@ Device Guard is a combination of enterprise-related hardware and software securi
 
 Device Guard uses the new virtualization-based security in Windows 10 Enterprise to isolate the Code Integrity service from the Microsoft Windows kernel itself, letting the service use signatures defined by your enterprise-controlled policy to help determine what is trustworthy. In effect, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
 
-For details on how to implement Device Guard, see [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md).
+For details on how to implement Device Guard, see [Device Guard deployment guide](windows/keep-secure/device-guard-deployment-guide.md).
 
 ## Why use Device Guard
 

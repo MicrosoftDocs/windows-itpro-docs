@@ -32,7 +32,7 @@ Credential Guard uses virtualization-based security to isolate secrets so that o
 
 -   **CredSSP/TsPkg credential delegation**. CredSSP/TsPkg cannot delegate default credentials when Credential Guard is enabled.
 
-[Learn how to deploy and manage Credential Guard within your organization](../keep-secure/credential-guard.md).
+[Learn how to deploy and manage Credential Guard within your organization](windows/keep-secure/credential-guard.md).
 
  
 

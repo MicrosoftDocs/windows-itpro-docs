@@ -81,7 +81,7 @@ While not required, you can use a management tool to distribute and manage apps.
 
 The first step for getting your organization started with the Store for Business is signing up. To sign up for the Business store, you need an Azure AD account and you must be a Global Administrator for your organization.
 
-For more information, see [Sign up for the Store for Business](../manage/sign-up-for-windows-store-for-business.md).
+For more information, see [Sign up for the Store for Business](windows/manage/sign-up-for-windows-store-for-business.md).
 
 ### Set up
 
@@ -131,7 +131,7 @@ After your admin signs up for the Store for Business, they can assign roles to o
 
  
 
-In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](../manage/manage-users-and-groups-in-the-windows-store-for-business.md).
+In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](windows/manage/manage-users-and-groups-in-the-windows-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with the Store for Business.
 
@@ -153,7 +153,7 @@ Line-of-business (LOB) apps are also supported via the Business store. You can i
 
 The Business store supports two options to license apps: online and offline. **Online** licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require users and devices to connect to the Store for Business service to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center.
 
-For more information, see [Apps in the Store for Business](../manage/apps-in-the-windows-store-for-business.md#licensing_model).
+For more information, see [Apps in the Store for Business](windows/manage/apps-in-the-windows-store-for-business.md#licensing_model).
 
 ### Distribute apps and content
 
@@ -175,7 +175,7 @@ App distribution is handled through two channels, either through the Store for B
 
 Management tools can synchronize content that has been acquired in the Store for Business. If an offline application has been purchased this will also include the app package, license and metadata for the app (like, icons, count, or localized product descriptions). Using the metadata, management tools can enable portals or apps as a destination for employees to acquire apps.
 
-For more information, see [Distribute apps to your employees from the Store for Business](../manage/distribute-apps-to-your-employees-from-the-windows-store-for-business.md).
+For more information, see [Distribute apps to your employees from the Store for Business](windows/manage/distribute-apps-to-your-employees-from-the-windows-store-for-business.md).
 
 ### Manage Store for Business settings and content
 
@@ -205,7 +205,7 @@ Once you are signed up with the Business store and have purchased apps, Admins c
 
 -   Download apps for offline installs
 
-For more information, see [Manage settings in the Store for Business](../manage/manage-settings-in-the-windows-store-for-business.md) and [Manage apps](../manage/manage-apps.md).
+For more information, see [Manage settings in the Store for Business](windows/manage/manage-settings-in-the-windows-store-for-business.md) and [Manage apps](windows/manage/manage-apps.md).
 
 ## Supported markets
 
@@ -315,7 +315,7 @@ Developers in your organization, or ISVs can create content specific to your org
 
 Once the app is in inventory, admins can choose how to distribute the app. ISVs creating apps through the dev center can make their apps available in the Store for Business. ISVs can opt-in their apps to make them available for offline licensing. Apps purchased in the Store for Business will work only on Windows 10.
 
-For more information on line-of-business apps, see [Working with Line-of-Business apps](../manage/working-with-line-of-business-apps.md).
+For more information on line-of-business apps, see [Working with Line-of-Business apps](windows/manage/working-with-line-of-business-apps.md).
 
  
 

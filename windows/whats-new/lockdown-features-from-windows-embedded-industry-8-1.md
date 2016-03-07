@@ -61,7 +61,7 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 </tr>
 <tr class="even">
 <td align="left"><p>[Dialog Filter](http://go.microsoft.com/fwlink/p/?LinkId=626762): suppress system dialogs and control which processes can run</p></td>
-<td align="left">[AppLocker](../keep-secure/applocker-overview-server.md)</td>
+<td align="left">[AppLocker](windows/keep-secure/applocker-overview-server.md)</td>
 <td align="left"><p>Dialog Filter has been deprecated for Windows 10. Dialog Filter provided two capabilities; the ability to control which processes were able to run, and the ability to prevent dialogs (in practice, system dialogs) from appearing.</p>
 <ul>
 <li><p>Control over which processes are able to run will now be provided by AppLocker.</p></li>

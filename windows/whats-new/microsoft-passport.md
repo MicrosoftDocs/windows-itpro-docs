@@ -30,12 +30,12 @@ Microsoft Passport also enables Windows 10 Mobile devices to be used as a remot
 
 -   **Security**. Microsoft Passport helps protect user identities and user credentials. Because no passwords are used, it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Microsoft Passport credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are generated within isolated environments of Trusted Platform Modules (TPMs).
 
-[Learn how to implement and manage Microsoft Passport in your organization.](../keep-secure/implement-microsoft-passport-in-your-organization.md)
+[Learn how to implement and manage Microsoft Passport in your organization.](windows/keep-secure/implement-microsoft-passport-in-your-organization.md)
 
 ## Learn more
 
 
-[Why a PIN is better than a password](../keep-secure/why-a-pin-is-better-than-a-password.md)
+[Why a PIN is better than a password](windows/keep-secure/why-a-pin-is-better-than-a-password.md)
 
 [Windows 10: Disrupting the Revolution of Cyber-Threats with Revolutionary Security!](http://go.microsoft.com/fwlink/p/?LinkId=533890)
 

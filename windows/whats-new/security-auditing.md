@@ -35,11 +35,11 @@ In Windows 10, security auditing has added some improvements:
 
 In Windows 10, two new audit subcategories were added to the Advanced Audit Policy Configuration to provide greater granularity in audit events:
 
--   [Audit Group Membership](../keep-secure/audit-group-membership.md) Found in the Logon/Logoff audit category, the Audit Group Membership subcategory allows you to audit the group membership information in a user's logon token. Events in this subcategory are generated when group memberships are enumerated or queried on the PC where the logon session was created. For an interactive logon, the security audit event is generated on the PC that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the PC hosting the resource.
+-   [Audit Group Membership](windows/keep-secure/audit-group-membership.md) Found in the Logon/Logoff audit category, the Audit Group Membership subcategory allows you to audit the group membership information in a user's logon token. Events in this subcategory are generated when group memberships are enumerated or queried on the PC where the logon session was created. For an interactive logon, the security audit event is generated on the PC that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the PC hosting the resource.
 
     When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**. Multiple events are generated if the group membership information cannot fit in a single security audit event.
 
--   [Audit PNP Activity](../keep-secure/audit-pnp-activity.md) Found in the Detailed Tracking category, the Audit PNP Activity subcategory allows you to audit when plug and play detects an external device.
+-   [Audit PNP Activity](windows/keep-secure/audit-pnp-activity.md) Found in the Detailed Tracking category, the Audit PNP Activity subcategory allows you to audit when plug and play detects an external device.
 
     Only Success audits are recorded for this category. If you do not configure this policy setting, no audit event is generated when an external device is detected by plug and play.
 
@@ -166,7 +166,7 @@ Event ID 4826 has been added to track the following changes to the Boot Configur
 
 Event ID 6416 has been added to track when an external device is detected through Plug and Play. One important scenario is if an external device that contains malware is inserted into a high-value machine that doesn’t expect this type of action, such as a domain controller.
 
-[Learn how to manage your security audit policies within your organization](../keep-secure/security-auditing-overview-glbl.md).
+[Learn how to manage your security audit policies within your organization](windows/keep-secure/security-auditing-overview-glbl.md).
 
  
 
