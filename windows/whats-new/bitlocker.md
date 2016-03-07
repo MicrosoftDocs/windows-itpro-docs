@@ -48,7 +48,7 @@ BitLocker Drive Encryption is a data protection feature that integrates with the
 ## Related topics
 
 
-[Trusted Platform Module](/keep-secure/trusted-platform-module-technology-overview.md)
+[Trusted Platform Module](/windows/keep-secure/trusted-platform-module-technology-overview.md)
 
  
 
