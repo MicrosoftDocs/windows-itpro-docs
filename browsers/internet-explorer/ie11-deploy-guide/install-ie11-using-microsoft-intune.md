@@ -20,7 +20,7 @@ You can add and then deploy the IE11 package to any computer that's managed by M
 
 2.  Add your IE11 package as either an external link or as a Windows installer package (.exe or .msi). 
 
-For more info about how to decide which one to use, and how to use it, see [Adding Software Packages](http://go.microsoft.com/fwlink/p/?LinkId=301806).
+For more info about how to decide which one to use, and how to use it, see [Deploy and configure apps](http://go.microsoft.com/fwlink/p/?LinkId=301806).
 
  ![](images/wedge.gif) **To automatically deploy and install the IE11 package**
 
@@ -30,7 +30,7 @@ For more info about how to decide which one to use, and how to use it, see [Addi
 
 3.  After the package is on your employee's computers, the installation process runs, based on what you set up in your wizard. 
 
-For more info about this, see [Automatically Deploying Software Packages to Devices and Users](http://go.microsoft.com/fwlink/p/?LinkId=301807)
+For more info about this, see [Deploy and configure apps](http://go.microsoft.com/fwlink/p/?LinkId=301806).
 
  ![](images/wedge.gif) **To let your employees install the IE11 package**
 
@@ -38,7 +38,7 @@ For more info about this, see [Automatically Deploying Software Packages to Devi
 
 2.  Any employee in the assigned group can now install the package. 
 
-For more info about this, see [User Initiated Software Installation](http://go.microsoft.com/fwlink/p/?LinkId=301808)
+For more info about this, see [Update apps using Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=301808)
 
  
 
