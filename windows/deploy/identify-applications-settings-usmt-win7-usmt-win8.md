@@ -5,7 +5,7 @@ ms.assetid: eda68031-9b02-4a5b-a893-3786a6505381
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Identify Applications Settings

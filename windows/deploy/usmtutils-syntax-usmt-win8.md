@@ -5,7 +5,7 @@ ms.assetid: cdab7f2d-dd68-4016-b9ed-41ffa743b65c
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # UsmtUtils Syntax

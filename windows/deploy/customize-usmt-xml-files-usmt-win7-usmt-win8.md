@@ -5,7 +5,7 @@ ms.assetid: d58363c1-fd13-4f65-8b91-9986659dc93e
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Customize USMT XML Files

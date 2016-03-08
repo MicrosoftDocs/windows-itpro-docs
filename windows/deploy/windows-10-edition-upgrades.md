@@ -5,7 +5,7 @@ ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Windows 10 edition upgrade

@@ -6,7 +6,7 @@ keywords: ["provisioning", "bulk deployment", "image"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Update Windows 10 images with provisioning packages

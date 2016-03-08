@@ -5,7 +5,7 @@ ms.assetid: f9d205c9-e824-46c7-8d8b-d7e4b52fd514
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # User State Migration Tool (USMT) Command-line Syntax

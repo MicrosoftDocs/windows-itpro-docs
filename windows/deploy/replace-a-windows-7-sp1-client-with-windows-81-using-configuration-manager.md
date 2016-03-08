@@ -6,7 +6,7 @@ keywords: ["upgrade, install, installation, replace computer, setup"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager

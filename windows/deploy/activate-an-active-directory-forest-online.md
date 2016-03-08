@@ -5,7 +5,7 @@ ms.assetid: 9b5bc193-799b-4aa5-9d3e-0e495f7195d3
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Activate an Active Directory Forest Online

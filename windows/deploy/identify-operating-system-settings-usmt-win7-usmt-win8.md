@@ -5,7 +5,7 @@ ms.assetid: 1704ab18-1765-41fb-a27c-3aa3128fa242
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Identify Operating System Settings

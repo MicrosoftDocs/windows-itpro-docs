@@ -5,7 +5,7 @@ ms.assetid: 5c7ae9b9-0dbc-4277-bc4f-8b3e4ab0bf50
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Install and Configure VAMT

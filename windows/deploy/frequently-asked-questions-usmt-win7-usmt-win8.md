@@ -5,7 +5,7 @@ ms.assetid: 813c13a7-6818-4e6e-9284-7ee49493241b
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Frequently Asked Questions

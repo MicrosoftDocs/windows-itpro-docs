@@ -5,7 +5,7 @@ ms.assetid: 754af276-8386-4eac-8079-3d1e45964a0d
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Test Your Migration

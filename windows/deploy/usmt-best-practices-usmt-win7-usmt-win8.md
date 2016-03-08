@@ -5,7 +5,7 @@ ms.assetid: e3cb1e78-4230-4eae-b179-e6e9160542d2
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # USMT Best Practices

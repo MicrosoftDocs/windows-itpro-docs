@@ -5,7 +5,7 @@ ms.assetid: 233eefa4-3125-4965-a12d-297a67079dc4
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Manage VAMT Data

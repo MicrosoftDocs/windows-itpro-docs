@@ -6,7 +6,7 @@ keywords: ["configure, deploy, upgrade"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Finalize the operating system configuration for Windows 10 deployment with Configuration Manager

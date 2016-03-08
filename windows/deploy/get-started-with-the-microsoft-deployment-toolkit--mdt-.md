@@ -6,7 +6,7 @@ keywords: ["deploy", "image", "feature", "install", "tools"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Get started with the Microsoft Deployment Toolkit (MDT)

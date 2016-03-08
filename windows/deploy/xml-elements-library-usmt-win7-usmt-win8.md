@@ -5,7 +5,7 @@ ms.assetid: f5af0f6d-c3bf-4a4c-a0ca-9db7985f954f
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # XML Elements Library

@@ -5,7 +5,7 @@ ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
 keywords: ["upgrade, update, task sequence, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
-author: brianlic-msft
+author: CFaw
 ---
 
 # Upgrade to Windows 10 with System Center Configuration Manager

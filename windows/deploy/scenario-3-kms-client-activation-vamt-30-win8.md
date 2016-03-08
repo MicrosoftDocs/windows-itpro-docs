@@ -5,7 +5,7 @@ ms.assetid: 72b04e8f-cd35-490c-91ab-27ea799b05d0
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Scenario 3: KMS Client Activation

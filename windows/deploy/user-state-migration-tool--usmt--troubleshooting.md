@@ -5,7 +5,7 @@ ms.assetid: 770f45bb-2284-463f-a29c-69c04f437533
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # User State Migration Tool (USMT) Troubleshooting

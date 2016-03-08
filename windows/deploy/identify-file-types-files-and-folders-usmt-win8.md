@@ -5,7 +5,7 @@ ms.assetid: 93bb2a33-c126-4f7a-a961-6c89686d54e0
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Identify File Types, Files, and Folders

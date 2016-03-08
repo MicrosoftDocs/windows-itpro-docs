@@ -5,7 +5,7 @@ ms.assetid: b28c2657-b986-4487-bd38-cb81500b831d
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Migration Store Encryption

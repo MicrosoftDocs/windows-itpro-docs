@@ -5,7 +5,7 @@ ms.assetid: 0e2691a8-ff1e-4424-879b-4d5a2f8a113a
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Conflicts and Precedence

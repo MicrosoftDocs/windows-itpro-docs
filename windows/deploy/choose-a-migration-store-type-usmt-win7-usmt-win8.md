@@ -5,7 +5,7 @@ ms.assetid: 4e163e90-9c57-490b-b849-2ed52ab6765f
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Choose a Migration Store Type

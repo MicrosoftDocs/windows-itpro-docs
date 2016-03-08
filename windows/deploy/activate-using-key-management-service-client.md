@@ -6,7 +6,7 @@ keywords: ["vamt", "volume activation", "activation", "windows activation"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Activate using Key Management Service

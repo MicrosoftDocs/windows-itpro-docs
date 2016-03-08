@@ -5,7 +5,7 @@ ms.assetid: a48fbc23-917d-40f7-985c-e49702c05e51
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Add and Manage Products

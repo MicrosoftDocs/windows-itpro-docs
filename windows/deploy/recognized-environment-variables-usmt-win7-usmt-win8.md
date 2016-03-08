@@ -5,7 +5,7 @@ ms.assetid: 2b0ac412-e131-456e-8f0c-c26249b5f3df
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Recognized Environment Variables

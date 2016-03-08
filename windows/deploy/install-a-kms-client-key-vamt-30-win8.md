@@ -5,7 +5,7 @@ ms.assetid: d234468e-7917-4cf5-b0a8-4968454f7759
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Install a KMS Client Key

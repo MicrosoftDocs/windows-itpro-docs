@@ -5,7 +5,7 @@ ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Deploy Windows 10

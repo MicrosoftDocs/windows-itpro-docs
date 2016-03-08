@@ -5,7 +5,7 @@ ms.assetid: 5761986e-a847-41bd-bf8e-7c1bd01acbc6
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # General Conventions

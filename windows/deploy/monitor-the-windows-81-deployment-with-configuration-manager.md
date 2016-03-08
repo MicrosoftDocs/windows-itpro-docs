@@ -6,7 +6,7 @@ keywords: ["deploy, upgrade"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Monitor the Windows 10 deployment with Configuration Manager

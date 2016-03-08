@@ -6,7 +6,7 @@ keywords: ["deploy, script,"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Simulate a Windows 10 deployment in a test environment

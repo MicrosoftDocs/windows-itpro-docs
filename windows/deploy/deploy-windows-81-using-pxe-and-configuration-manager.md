@@ -6,7 +6,7 @@ keywords: ["deployment, image, UEFI, task sequence"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Deploy Windows 10 using PXE and Configuration Manager

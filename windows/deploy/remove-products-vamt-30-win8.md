@@ -5,7 +5,7 @@ ms.assetid: 4d44379e-dda1-4a8f-8ebf-395b6c0dad8e
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Remove Products

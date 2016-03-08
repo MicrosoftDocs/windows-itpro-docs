@@ -5,7 +5,7 @@ ms.assetid: 957a4fe9-79fd-44a2-8c26-33e50f71f9de
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Identify Users

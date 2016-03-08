@@ -6,7 +6,7 @@ keywords: ["deploy", "tools", "configure", "script"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Deploy Windows 10 with the Microsoft Deployment Toolkit

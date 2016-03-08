@@ -5,7 +5,7 @@ ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Config.xml File

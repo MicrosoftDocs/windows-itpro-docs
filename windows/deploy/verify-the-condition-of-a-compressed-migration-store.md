@@ -5,7 +5,7 @@ ms.assetid: 4a3fda96-5f7d-494a-955f-6b865ec9fcae
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Verify the Condition of a Compressed Migration Store

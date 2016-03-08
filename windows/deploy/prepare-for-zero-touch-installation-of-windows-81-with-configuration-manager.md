@@ -6,7 +6,7 @@ keywords: ["install, configure, deploy, deployment"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Prepare for Zero Touch Installation of Windows 10 with Configuration Manager

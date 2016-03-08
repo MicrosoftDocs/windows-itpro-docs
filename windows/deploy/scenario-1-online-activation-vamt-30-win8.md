@@ -5,7 +5,7 @@ ms.assetid: 94dba40e-383a-41e4-b74b-9e884facdfd3
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Scenario 1: Online Activation

@@ -6,7 +6,7 @@ keywords: ["deployment, automate, tools, configure"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Deploy a Windows 10 image using MDT 2013 Update 1

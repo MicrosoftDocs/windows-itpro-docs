@@ -6,7 +6,7 @@ keywords: ["customize, customization, deploy, features, tools"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Configure MDT settings

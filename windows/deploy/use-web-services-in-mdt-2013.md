@@ -6,7 +6,7 @@ keywords: ["deploy, web apps"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Use web services in MDT

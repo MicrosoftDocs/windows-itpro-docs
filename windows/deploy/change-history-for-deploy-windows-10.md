@@ -5,7 +5,7 @@ ms.assetid: 19C50373-6B25-4F5C-A6EF-643D36904349
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Change history for Deploy Windows 10

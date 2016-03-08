@@ -6,7 +6,7 @@ keywords: ["tool, customize, deploy, boot image"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Create a custom Windows PE boot image with Configuration Manager

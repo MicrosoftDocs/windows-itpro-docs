@@ -6,7 +6,7 @@ keywords: ["deployment, USB, device, BitLocker, workspace, security, data"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Deploy Windows To Go in your organization

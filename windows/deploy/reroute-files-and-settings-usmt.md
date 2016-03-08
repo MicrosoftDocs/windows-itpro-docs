@@ -5,7 +5,7 @@ ms.assetid: 905e6a24-922c-4549-9732-60fa11862a6c
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Reroute Files and Settings

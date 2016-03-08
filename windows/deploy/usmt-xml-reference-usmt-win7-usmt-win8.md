@@ -5,7 +5,7 @@ ms.assetid: fb946975-0fee-4ec0-b3ef-7c34945ee96f
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # USMT XML Reference

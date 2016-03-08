@@ -5,7 +5,7 @@ ms.assetid: a3668361-43c8-4fd2-b26e-9a2deaeaeb09
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Migrate User Accounts

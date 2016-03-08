@@ -5,7 +5,7 @@ ms.assetid: 5a3ae8e6-083e-4153-837e-ab0a225c1d10
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Perform KMS Activation

@@ -5,7 +5,7 @@ ms.assetid: feac32bb-fb96-4802-81b8-c69220dcfcce
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Add and Remove a Product Key

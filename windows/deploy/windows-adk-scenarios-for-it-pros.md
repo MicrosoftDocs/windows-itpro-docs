@@ -5,7 +5,7 @@ ms.assetid: FC4EB39B-29BA-4920-87C2-A00D711AE48B
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Windows ADK for Windows 10 scenarios for IT Pros

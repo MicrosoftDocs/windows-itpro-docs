@@ -6,7 +6,7 @@ keywords: ["deploy, feature, tools, upgrade, migrate, provisioning"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Key features in MDT 2013 Update 1

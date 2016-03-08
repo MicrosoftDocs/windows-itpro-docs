@@ -5,7 +5,7 @@ ms.assetid: 506ff1d2-94b8-4460-8672-56aad963504b
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Getting Started with the User State Migration Tool (USMT)

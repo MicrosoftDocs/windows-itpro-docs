@@ -5,7 +5,7 @@ ms.assetid: f613987d-0f17-43fe-9717-6465865ceda7
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # What Does USMT Migrate?

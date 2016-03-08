@@ -5,7 +5,7 @@ ms.assetid: cfb9062b-7a2a-467a-a24e-0b31ce830093
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Estimate Migration Store Size

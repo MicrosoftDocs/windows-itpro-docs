@@ -5,7 +5,7 @@ ms.assetid: d3d1fe89-085c-4da8-9657-fd54b8bfc4b7
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Understanding Migration XML Files

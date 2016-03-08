@@ -6,7 +6,7 @@ keywords: ["deploy, deployment, configure, customize, install, installation"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Create a Windows 10 reference image

@@ -6,7 +6,7 @@ keywords: ["deploy, task sequence"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager

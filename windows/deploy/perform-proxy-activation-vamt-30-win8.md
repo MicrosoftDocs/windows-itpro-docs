@@ -5,7 +5,7 @@ ms.assetid: 35a919ed-f1cc-4d10-9c88-9bd634549dc3
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Perform Proxy Activation

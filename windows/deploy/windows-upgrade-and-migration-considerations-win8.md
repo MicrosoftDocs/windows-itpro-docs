@@ -5,7 +5,7 @@ ms.assetid: 7f85095c-5922-45e9-b28e-91b1263c7281
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Windows Upgrade and Migration Considerations

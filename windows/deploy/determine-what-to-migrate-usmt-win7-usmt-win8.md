@@ -5,7 +5,7 @@ ms.assetid: 01ae1d13-c3eb-4618-b39d-ee5d18d55761
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Determine What to Migrate

@@ -5,7 +5,7 @@ ms.assetid: 28f70a83-0a3e-4a6b-968a-2b78ccd3cc07
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Migrate Application Settings

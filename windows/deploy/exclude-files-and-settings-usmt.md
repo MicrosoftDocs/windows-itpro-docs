@@ -5,7 +5,7 @@ ms.assetid: df85baf1-6e29-4995-a4bb-ba3f8f7fed0b
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Exclude Files and Settings

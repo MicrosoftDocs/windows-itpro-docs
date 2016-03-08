@@ -5,7 +5,7 @@ ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Windows 10 deployment tools reference

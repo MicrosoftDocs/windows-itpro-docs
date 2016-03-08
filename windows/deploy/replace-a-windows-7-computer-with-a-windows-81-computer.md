@@ -6,7 +6,7 @@ keywords: ["deploy, deployment, replace"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Replace a Windows 7 computer with a Windows 10 computer

@@ -6,7 +6,7 @@ keywords: ["settings, database, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Assign applications using roles in MDT

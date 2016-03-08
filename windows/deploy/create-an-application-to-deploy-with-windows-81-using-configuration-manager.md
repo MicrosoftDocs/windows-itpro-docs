@@ -6,7 +6,7 @@ keywords: ["deployment, task sequence, custom, customize"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Create an application to deploy with Windows 10 using Configuration Manager

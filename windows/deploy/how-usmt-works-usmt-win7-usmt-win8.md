@@ -5,7 +5,7 @@ ms.assetid: 5c8bd669-9e1e-473d-81e6-652f40b24171
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # How USMT Works

@@ -6,7 +6,7 @@ keywords: ["image, deploy, distribute"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Add a Windows 10 operating system image using Configuration Manager

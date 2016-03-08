@@ -5,7 +5,7 @@ ms.assetid: c1dac3bd-6a86-4c45-83dd-421e63a398c0
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Active Directory-Based Activation Overview

@@ -5,7 +5,7 @@ ms.assetid: a48176c9-b05c-4dd5-a9ef-83073e2370fc
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: CFaw
 ---
 
 # Configure Client Computers
