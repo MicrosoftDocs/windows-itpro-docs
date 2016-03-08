@@ -44,7 +44,7 @@ There are two additional tools in the Remote Server Administration Tools, which 
 ## New and changed functionality
 
 
-To find out what's new in BitLocker for Windows 10, see [What's new in BitLocker?](/windows/whats-new/bitlocker.md)
+To find out what's new in BitLocker for Windows 10, see [What's new in BitLocker?](../whats-new/bitlocker.md)
 
  
 

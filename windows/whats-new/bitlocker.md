@@ -41,14 +41,14 @@ BitLocker Drive Encryption is a data protection feature that integrates with the
 
 -   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
 
--   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the "Configure pre-boot recovery message and URL" section in [BitLocker Group Policy settings](/windows/keep-secure/bitlocker-group-policy-settings.md).
+-   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the "Configure pre-boot recovery message and URL" section in [BitLocker Group Policy settings](../keep-secure/bitlocker-group-policy-settings.md).
 
-[Learn how to deploy and manage BitLocker within your organization](/windows/keep-secure/bitlocker-overview-roletech-overview.md).
+[Learn how to deploy and manage BitLocker within your organization](../keep-secure/bitlocker-overview-roletech-overview.md).
 
 ## Related topics
 
 
-[Trusted Platform Module](/windows/keep-secure/trusted-platform-module-technology-overview.md)
+[Trusted Platform Module](../keep-secure/trusted-platform-module-technology-overview.md)
 
  
 

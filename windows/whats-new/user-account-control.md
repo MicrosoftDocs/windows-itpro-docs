@@ -24,7 +24,7 @@ In Windows 10, User Account Control has added some improvements.
 
 -   **Integration with the Antimalware Scan Interface (AMSI)**. The [AMSI](http://msdn.microsoft.com/library/windows/desktop/dn889587.aspx) scans all UAC elevation requests for malware. If malware is detected, the admin privilege is blocked.
 
-[Learn how to manage User Account Control within your organization](/windows/keep-secure/user-account-control-overview.md).
+[Learn how to manage User Account Control within your organization](../keep-secure/user-account-control-overview.md).
 
  
 

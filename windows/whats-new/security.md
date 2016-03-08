@@ -68,7 +68,7 @@ New desktops and laptops will be available to expedite your Device Guard impleme
 
 -   **Not supported for Device Guard**. Many current devices cannot take advantage of all Device Guard features because they don’t have the required hardware components or HVCI-compatible drivers. However, most of these devices can enable some Device Guard features, such as configurable code integrity.
 
-For more information about how to prepare for, manage, and deploy Device Guard, see the [Device Guard deployment guide](/windows/keep-secure/device-guard-deployment-guide.md).
+For more information about how to prepare for, manage, and deploy Device Guard, see the [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md).
 
 ### Configurable code integrity
 
@@ -86,7 +86,7 @@ Configurable code integrity is not intended to replace technologies that allow o
 Configurable code integrity is not limited to Windows Store applications. In fact, it is not even limited to existing signed applications. Windows 10 gives you a way to sign line-of-business or third-party applications without having to repackage them: you can monitor the application’s installation and initial execution to create a list of binaries called a catalog file. When created, you sign these catalog files and add the signing certificate to the code integrity policy so that those binaries contained within the catalog files are allowed to execute. Then, you can use Group Policy, Configuration Manager, or any other familiar management tool to distribute these catalog files to your client machines. Historically, most malware has been unsigned; simply by deploying code integrity policies, your organization can immediately protect itself against unsigned malware, which is responsible for most modern attacks.
 
 **Note**  
-For detailed deployment and planning information about configurable code integrity, see the [Device Guard deployment guide](/windows/keep-secure/device-guard-deployment-guide.md).
+For detailed deployment and planning information about configurable code integrity, see the [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md).
 
  
 
@@ -107,7 +107,7 @@ Configurable code integrity is available in Windows 10 Enterprise and Windows 
 
  
 
-You can enable configurable code integrity as part of a Device Guard deployment or as a stand-alone component. In addition, you can run configurable code integrity on hardware that is compatible with the Windows 7 operating system, even if such hardware is not Device Guard ready. Code integrity policies can align with an existing application catalog, existing corporate imaging strategy, or with any other method that provides the organization’s desired levels of restriction. For more information about configurable code integrity with Device Guard, see the [Device Guard deployment guide](/windows/keep-secure/device-guard-deployment-guide.md).
+You can enable configurable code integrity as part of a Device Guard deployment or as a stand-alone component. In addition, you can run configurable code integrity on hardware that is compatible with the Windows 7 operating system, even if such hardware is not Device Guard ready. Code integrity policies can align with an existing application catalog, existing corporate imaging strategy, or with any other method that provides the organization’s desired levels of restriction. For more information about configurable code integrity with Device Guard, see the [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md).
 
 ### Measured Boot and remote attestation
 
@@ -210,7 +210,7 @@ Because it requires isolated user mode and a Hyper-V hypervisor, you cannot conf
 
  
 
-The Credential Guard feature is targeted at resisting the use of pass-the-hash and pass-the-ticket techniques. By employing a MFA option such as Microsoft Passport with Credential Guard, you can gain additional protection against such threats. For more in-depth information about how Credential Guard works and the specific mitigations it provides, see [Protect derived domain credentials with Credential Guard](/windows/keep-secure/credential-guard.md).
+The Credential Guard feature is targeted at resisting the use of pass-the-hash and pass-the-ticket techniques. By employing a MFA option such as Microsoft Passport with Credential Guard, you can gain additional protection against such threats. For more in-depth information about how Credential Guard works and the specific mitigations it provides, see [Protect derived domain credentials with Credential Guard](../keep-secure/credential-guard.md).
 
 ## Windows 10 hardware considerations
 
@@ -247,13 +247,13 @@ In this table, **R** stands for *recommended*, **Y** means that the hardware com
 
 [Making Windows 10 More Personal and More Secure with Windows Hello](http://go.microsoft.com/fwlink/p/?LinkId=717551)
 
-[Protect BitLocker from pre-boot attacks](/windows/keep-secure/protect-bitlocker-from-pre-boot-attacks.md)
+[Protect BitLocker from pre-boot attacks](../keep-secure/protect-bitlocker-from-pre-boot-attacks.md)
 
-[BitLocker Countermeasures](/windows/keep-secure/bitlocker-countermeasures.md)
+[BitLocker Countermeasures](../keep-secure/bitlocker-countermeasures.md)
 
-[Device Guard deployment guide](/windows/keep-secure/device-guard-deployment-guide.md)
+[Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md)
 
-[Protect derived domain credentials with Credential Guard](/windows/keep-secure/credential-guard.md)
+[Protect derived domain credentials with Credential Guard](../keep-secure/credential-guard.md)
 
  
 

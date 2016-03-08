@@ -44,7 +44,7 @@ Here's a high-level overview on how the LSA is isolated by using virtualization-
 ## New and changed functionality
 
 
-To see what was added or changed in Credential Guard, see [What's new in Credential Guard?](/windows/whats-new/credential-guard.md).
+To see what was added or changed in Credential Guard, see [What's new in Credential Guard?](../whats-new/credential-guard.md).
 
 ## Hardware and software requirements
 

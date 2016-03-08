@@ -33,11 +33,11 @@ Together, these Windows Update for Business features help reduce device manageme
 ## Learn more
 
 
-[Windows Update for Business](/windows/plan/windows-update-for-business.md)
+[Windows Update for Business](../plan/windows-update-for-business.md)
 
-[Setup and deployment](/windows/plan/setup-and-deployment.md)
+[Setup and deployment](../plan/setup-and-deployment.md)
 
-[Integration with management solutions](/windows/plan/integration-with-management-solutions-.md)
+[Integration with management solutions](../plan/integration-with-management-solutions-.md)
 
  
 

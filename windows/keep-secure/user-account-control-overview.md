@@ -34,7 +34,7 @@ Admin Approval Mode in UAC helps prevent malware from silently installing withou
 ## New and changed functionality
 
 
-To find out what's new in UAC for Windows 10, see [User Account Control](/windows/whats-new/user-account-control.md).
+To find out what's new in UAC for Windows 10, see [User Account Control](../whats-new/user-account-control.md).
 
 ## In this section
 

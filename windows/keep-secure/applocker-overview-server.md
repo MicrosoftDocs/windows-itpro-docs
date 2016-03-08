@@ -56,7 +56,7 @@ AppLocker helps reduce administrative overhead and helps reduce the organization
 ## New and changed functionality
 
 
-To find out what's new in AppLocker for Windows 10, see [What's new in AppLocker?](/windows/whats-new/applocker.md)
+To find out what's new in AppLocker for Windows 10, see [What's new in AppLocker?](../whats-new/applocker.md)
 
 ## When to use AppLocker
 

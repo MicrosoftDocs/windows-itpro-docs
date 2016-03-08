@@ -76,7 +76,7 @@ With Windows 10, your enterprise will have more choice and flexibility in apply
 
 While Windows Update provides updates to unmanaged devices, most enterprises prefer to manage and control the flow of updates using their device management solution. You can choose to apply the latest updates as soon as they are available, or you can set a source and schedule for updates that works for your specific requirements.
 
-For more information about updating Windows 10, see [Windows 10 servicing options for updates and upgrades](/windows/manage/introduction-to-windows-10-servicing.md).
+For more information about updating Windows 10, see [Windows 10 servicing options for updates and upgrades](../manage/introduction-to-windows-10-servicing.md).
 
 ## Easier certificate management
 
@@ -107,7 +107,7 @@ Active Directory blog posts on Azure AD and Windows 10:
 ## Related topics
 
 
-[Manage corporate devices](/windows/manage/manage-corporate-devices.md)
+[Manage corporate devices](../manage/manage-corporate-devices.md)
 
 [Microsoft Passport](microsoft-passport.md)
 

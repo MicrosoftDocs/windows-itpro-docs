@@ -396,7 +396,7 @@ For many organizations, compromising the organization's data resources can cause
 -   **Global Object Access Auditing**. A growing number of organizations are using security auditing to comply with regulatory requirements that govern data security and privacy. But demonstrating that strict controls are being enforced can be extremely difficult. To address this issue, the supported versions of Windows include two **Global Object Access Auditing** policy settings, one for the registry and one for the file system. When you configure these settings, they apply a global system access control SACL on all objects of that class on a system, which cannot be overridden or circumvented.
 
     **Important**  
-    The **Global Object Access Auditing** policy settings must be configured and applied in conjunction with the **Audit File System** and **Audit Registry** audit policy settings in the **Object Access** category. For more information about using the **Global Object Access Auditing** policy settings, see the [Advanced security auditing walkthrough](/windows/keep-secure/advanced-security-auditing-walkthrough.md).
+    The **Global Object Access Auditing** policy settings must be configured and applied in conjunction with the **Audit File System** and **Audit Registry** audit policy settings in the **Object Access** category. For more information about using the **Global Object Access Auditing** policy settings, see the [Advanced security auditing walkthrough](../keep-secure/advanced-security-auditing-walkthrough.md).
 
      
 
@@ -531,7 +531,7 @@ In addition, a growing number of organizations are being required to store archi
 
 Before deploying the audit policy in a production environment, it is critical that you determine the effects of the policy settings that you have configured.
 
-The first step in assessing your audit policy deployment is to create a test environment in a lab and use it to simulate the various use scenarios that you have identified to confirm that the audit settings you have selected are configured correctly and generate the type of results you intend. For more information about setting up a lab environment for testing security audit policy, see the [Advanced security auditing walkthrough](/windows/keep-secure/advanced-security-auditing-walkthrough.md).
+The first step in assessing your audit policy deployment is to create a test environment in a lab and use it to simulate the various use scenarios that you have identified to confirm that the audit settings you have selected are configured correctly and generate the type of results you intend. For more information about setting up a lab environment for testing security audit policy, see the [Advanced security auditing walkthrough](../keep-secure/advanced-security-auditing-walkthrough.md).
 
 However, unless you are able to run fairly realistic simulations of network usage patterns, a lab setup cannot provide you with accurate information about the volume of audit data that the audit policy settings you selected will generate and how effective your plan for monitoring audit data will be. To provide this type of information, you need to conduct one or more pilot deployments. These pilot deployments could involve:
 

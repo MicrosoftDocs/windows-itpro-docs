@@ -22,7 +22,7 @@ Topics in this section are for IT professionals and describes the security audit
 
 Security auditing is one of the most powerful tools that you can use to maintain the integrity of your system. As part of your overall security strategy, you should determine the level of auditing that is appropriate for your environment. Auditing should identify attacks (successful or not) that pose a threat to your network, and attacks against resources that you have determined to be valuable in your risk assessment.
 
-For info on the changes that were added in Windows 10, see [Security auditing](/windows/whats-new/security-auditing.md).
+For info on the changes that were added in Windows 10, see [Security auditing](../whats-new/security-auditing.md).
 
 ## In this section
 
