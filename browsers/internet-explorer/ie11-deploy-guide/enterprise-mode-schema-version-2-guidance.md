@@ -260,7 +260,7 @@ We recommend that you not add any of the following items to your schema because 
 - Don’t use query strings, ampersands break parsing.
 
 ## Related topics
-- [Use the Enterprise Mode Site List Manager tool](ie11-deploy-guide/use-the-enterprise-mode-site-list-manager-tool.md)
+- [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
 
 
 
