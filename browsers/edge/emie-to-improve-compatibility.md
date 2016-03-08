@@ -83,7 +83,8 @@ You can add the **Send all intranet traffic over to Internet Explorer** Group Po
 
 ## Related topics
 * [Blog: How Microsoft Edge and Internet Explorer 11 on Windows 10 work better together in the Enterprise](http://go.microsoft.com/fwlink/p/?LinkID=624035)
-* [Enterprise Mode Site List Manager download](http://go.microsoft.com/fwlink/p/?LinkId=394378)
+* [Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 download](http://go.microsoft.com/fwlink/p/?LinkId=394378)
+* [Enterprise Mode Site List Manager for Windows 10 download](http://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](http://go.microsoft.com/fwlink/p/?linkid=618377)
 * [Set the default browser using Group Policy]( http://go.microsoft.com/fwlink/p/?LinkId=620714)
  
