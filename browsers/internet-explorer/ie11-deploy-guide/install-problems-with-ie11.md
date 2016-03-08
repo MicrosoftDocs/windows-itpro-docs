@@ -1,5 +1,5 @@
 ---
-Description:How to fix potential installation problems with Internet Explorer 11
+description: How to fix potential installation problems with Internet Explorer 11
 ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
 author: LizRoss
 ms.prod: IE11
