@@ -1,4 +1,4 @@
-# [Deploy Windows 10](deploy-windows-10.md)
+# [Deploy Windows 10](index.md)
 ## [Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md)

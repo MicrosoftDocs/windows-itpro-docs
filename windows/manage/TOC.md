@@ -1,4 +1,4 @@
-# [Manage and update Windows 10](manage-and-update-windows-10.md)
+# [Manage and update Windows 10](index.md)
 ## [Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)
 ## [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)
 ## [Cortana integration in your business or enterprise](manage-cortana-in-your-enterprise.md)

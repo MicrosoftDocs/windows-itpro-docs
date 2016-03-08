@@ -346,7 +346,7 @@ Outlook Mail/Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Mu
 ## Related topics
 
 
-[Plan for Windows 10 deployment](../plan/planning-for-windows-10-deployment.md)
+[Plan for Windows 10 deployment](../plan/index.md)
 
 [Deploy Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=624776)
 

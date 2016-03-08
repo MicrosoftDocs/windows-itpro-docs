@@ -11,7 +11,7 @@ author: CFaw
 # Change history for Deploy Windows 10
 
 
-This topic lists new and updated topics in the [Deploy Windows 10](deploy-windows-10.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## December 2015
 

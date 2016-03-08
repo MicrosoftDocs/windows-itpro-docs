@@ -11,7 +11,7 @@ author: jdeckerMS
 # Change history for Manage and update Windows 10
 
 
-This topic lists new and updated topics in the [Manage and update Windows 10](manage-and-update-windows-10.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## March 2016
 

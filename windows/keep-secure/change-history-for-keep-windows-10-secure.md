@@ -11,7 +11,7 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 
 
-This topic lists new and updated topics in the [Keep Windows 10 secure](keep-windows-secure.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## February 2016
 

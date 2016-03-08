@@ -380,7 +380,7 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 [Set up a kiosk for Windows 10 for mobile edition](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 
-[Manage and update Windows 10](manage-and-update-windows-10.md)
+[Manage and update Windows 10](index.md)
 
  
 
