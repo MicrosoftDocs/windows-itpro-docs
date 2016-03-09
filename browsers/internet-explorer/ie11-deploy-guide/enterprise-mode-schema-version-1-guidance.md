@@ -1,7 +1,7 @@
 ---
 Description: Use the Enterprise Mode Site List Manager tool to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
 ms.assetid: 17C61547-82E3-48F2-908D-137A71938823
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

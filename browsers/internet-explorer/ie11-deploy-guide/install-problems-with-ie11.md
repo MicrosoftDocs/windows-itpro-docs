@@ -1,7 +1,7 @@
 ---
 Description:How to fix potential installation problems with Internet Explorer 11
 ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

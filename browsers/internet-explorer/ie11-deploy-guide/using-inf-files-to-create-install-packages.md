@@ -1,7 +1,7 @@
 ---
 Description: How to use Setup Information (.inf) files to create installation packages.
 ms.assetid: 04fa2ba8-8d84-4af6-ab99-77e4f1961b0e
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

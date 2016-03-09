@@ -1,7 +1,7 @@
 ---
 Description: How to turn Enteprrise Mode off temporarily while testing websites and how to turn it off completely if you no longer want to to use it.
 ms.assetid: 5027c163-71e0-49b8-9dc0-f0a7310c7ae3
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
