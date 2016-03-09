@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# <a href="" id="p-ent-manage-update-manage-privacy-for-windows-10-in-your-company"></a>Configure telemetry and other settings in your organization
+# Configure telemetry and other settings in your organization
 
 
 **Applies to**
