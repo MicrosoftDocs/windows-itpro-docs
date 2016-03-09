@@ -1,7 +1,7 @@
 ---
 Description: Use the topics in this section to learn about how to use the Enterprise Mode Site List Manager tool.
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

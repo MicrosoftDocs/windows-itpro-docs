@@ -1,7 +1,7 @@
 ---
 Description: Auto configuration and auto proxy problems with Internet Explorer 11
 ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

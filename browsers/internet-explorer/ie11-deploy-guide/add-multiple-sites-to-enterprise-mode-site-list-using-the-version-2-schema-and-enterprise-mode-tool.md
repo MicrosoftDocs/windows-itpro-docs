@@ -1,7 +1,7 @@
 ---
 Description: Add multiple sites to your Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool.
 ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

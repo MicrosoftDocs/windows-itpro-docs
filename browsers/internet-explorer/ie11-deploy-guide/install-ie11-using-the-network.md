@@ -1,7 +1,7 @@
 ---
 Description: How to install the Internet Explorer 11 update using your network
 ms.assetid: 85f6429d-947a-4031-8f93-e26110a35828
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

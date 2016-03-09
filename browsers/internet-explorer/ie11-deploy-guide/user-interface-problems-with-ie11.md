@@ -1,7 +1,7 @@
 ---
 Description: Info about where features went in the IEAK11, where the Favorites, Command, and Status bars went, and where the search bar went.
 ms.assetid: 7324faff-ccb6-4e14-ad91-af12dbca575e
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: support
 ms.sitesec: library

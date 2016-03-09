@@ -1,7 +1,7 @@
 ---
 Description: Links to troubleshooting topics and log files that can help address Group Policy problems with Internet Explorer 11.
 ms.assetid: 0da0d9a9-200c-46c4-96be-630e82de017b
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

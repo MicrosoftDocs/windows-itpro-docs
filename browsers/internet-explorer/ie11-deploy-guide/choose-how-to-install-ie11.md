@@ -1,7 +1,7 @@
 ---
 Description: Choose how to install Internet Explorer 11 (IE11)
 ms.assetid: 572f5f1-5d67-483e-bd63-ffea95053481
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

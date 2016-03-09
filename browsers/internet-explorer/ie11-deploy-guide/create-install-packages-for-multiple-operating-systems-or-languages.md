@@ -1,7 +1,7 @@
 ---
 Description: Create packages for multiple operating systems or languages
 ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

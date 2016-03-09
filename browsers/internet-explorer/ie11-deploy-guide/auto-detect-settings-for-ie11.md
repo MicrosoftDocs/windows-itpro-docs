@@ -1,7 +1,7 @@
 ---
 Description: Auto detect settings Internet Explorer 11
 ms.assetid: c6753cf4-3276-43c5-aae9-200e9e82753f
-author: LizRoss
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
