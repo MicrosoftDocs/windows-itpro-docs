@@ -59,7 +59,7 @@ Supported web standards include:
 For more information about specific changes and additions, see the [IE11 guide for developers](http://go.microsoft.com/fwlink/p/?LinkId=313188).
 
 **Q: What test tools exist to test for potential application compatibility issues?**<br>
-The Compat Inspector tool supports Windows Internet Explorer 9 through IE11. For more information, see [Compat Inspector User Guide](http://go.microsoft.com/fwlink/p/?LinkId=313189). In addition, you can use the new [F12 Developer Tools](http://go.microsoft.com/fwlink/p/?LinkId=313190) that are included with IE11, or the [modern.ie](http://go.microsoft.com/fwlink/p/?linkid=308902) website for older versions of IE.
+The Compat Inspector tool supports Windows Internet Explorer 9 through IE11. For more information, see [Compat Inspector User Guide](http://go.microsoft.com/fwlink/p/?LinkId=313189). In addition, you can use the new [F12 Developer Tools](http://go.microsoft.com/fwlink/p/?LinkId=313190) that are included with IE11, or the [modern.ie](http://go.microsoft.com/fwlink/p/?linkid=308902) website for Microsoft Edge.
 
 **Q: Why am I having problems launching my legacy apps with Internet Explorer 11**?<br>
 It’s most likely because IE no longer starts apps that use managed browser hosting controls, like in the .NET Framework 1.1 and 2.0. You can get IE11 to use managed browser hosting controls again, by:
@@ -71,7 +71,7 @@ It’s most likely because IE no longer starts apps that use managed browser hos
 For more information, see the [Web Applications](http://go.microsoft.com/fwlink/p/?LinkId=308903) section of the Application Compatibility in the .NET Framework 4.5 page.
 
 **Q: Is there a compatibility list for IE?**<br>
-Yes. You can review the XML-based [compatibility list](http://go.microsoft.com/fwlink/p/?LinkId=242586).
+Yes. You can review the XML-based [compatibility version list](http://go.microsoft.com/fwlink/p/?LinkId=403864).
 
 **Q: What is Enterprise Mode?**<br>
 Enterprise Mode is a compatibility mode designed for Enterprises. This mode lets websites render using a modified browser configuration that’s designed to avoid the common compatibility problems associated with web apps written and tested on older versions of IE, like Windows Internet Explorer 7 or Windows Internet Explorer 8.<p>
@@ -119,7 +119,7 @@ Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for do
 -   [Internet Explorer Administration Kit 11 product documentation](http://go.microsoft.com/fwlink/p/?LinkId=327739) on TechNet.
 
 **Q: Where can I get more information about IE11 for IT pros?**<br>
-Visit the [Springboard Series for IE11](http://go.microsoft.com/fwlink/p/?LinkId=313191) webpage on TechNet.
+Visit the [Springboard Series for Microsoft Browsers](http://go.microsoft.com/fwlink/p/?LinkId=313191) webpage on TechNet.
 
 **Q: Is there a version of the Internet Explorer Blocker Toolkit that will prevent automatic installation of IE11?**<br>
 Yes. The IE11 Blocker Toolkit is available for download. For more information, see [Toolkit to Disable Automatic Delivery of IE11](http://go.microsoft.com/fwlink/p/?LinkId=328195) on the Microsoft Download Center.
@@ -127,7 +127,7 @@ Yes. The IE11 Blocker Toolkit is available for download. For more information, s
 **Q: Can I customize settings for IE on Windows 8.1?**<br>
 Settings can be customized in the following ways:
 
--   IE11**Settings** charm.
+-   IE11 **Settings** charm.
 
 -   IE11-related Group Policy settings.
 

@@ -1,8 +1,9 @@
 ---
-Description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
+description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
 ms.prod: IE11
-mauthor: eross-msft
+author: eross-msft
+title: Collect data using Enterprise Site Discovery
 ---
 
 # Collect data using Enterprise Site Discovery
@@ -209,7 +210,7 @@ You can collect your hardware inventory using the using the Systems Management S
 
  ![](images/wedge.gif) **To collect your inventory**
 
-1.  Using a text editor like Notepad, open the SMS\DEF.MOF file, located in your `<Config_Manager_install_location>\inboxes\clifiles.src\hinv` directory.
+1.  Using a text editor like Notepad, open the SMS\DEF.MOF file, located in your `<configmanager_install_location>\inboxes\clifiles.src\hinv` directory.
 
 2.  Add this text to the end of the file:
 
@@ -321,7 +322,7 @@ After the XML files are created, you can use your own solutions to extract and p
      <IEURLInfo>…</IEURLInfo>
 </IETelemetry>
 ```
-You can import this XML data into the [Enterprise Mode Site List Manager](http://go.microsoft.com/fwlink/p/?linkid=394378), automatically adding the included sites to your Enterprise Mode site list.
+You can import this XML data into the correct version of the Enterprise Mode Site List Manager, automatically adding the included sites to your Enterprise Mode site list.
 
  ![](images/wedge.gif) **To add your XML data to your Enterprise Mode site list**
 
@@ -363,8 +364,9 @@ You can completely remove the data stored on your employee’s computers.
 
     -   `Remove-Item -Path 'HKCU:\Software\Microsoft\Internet Explorer\WMITelemetry'`
 
- 
-
+ ## Related topics
+* [Enterprise Mode Site List Manager for Windows 10 download](http://go.microsoft.com/fwlink/?LinkId=746562)
+* [Enterprise Mode for Internet Explorer 11 (IE11)](http://go.microsoft.com/fwlink/p/?linkid=618377)
  
 
 
