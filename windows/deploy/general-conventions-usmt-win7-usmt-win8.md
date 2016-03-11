@@ -16,11 +16,11 @@ This topic describes the XML helper functions.
 ## In This Topic
 
 
-[General XML Guidelines](#BKMK_General)
+[General XML Guidelines](#bkmk-general)
 
-[Helper Functions](#BKMK_HelperFunctions)
+[Helper Functions](#bkmk-helperfunctions)
 
-## General XML Guidelines
+## <a href="" id="bkmk-general"></a>General XML Guidelines
 
 
 Before you modify the .xml files, become familiar with the following guidelines:
@@ -51,7 +51,7 @@ Before you modify the .xml files, become familiar with the following guidelines:
 
     When you surround code in quotation marks, you can use either double ("") or single (') quotation marks.
 
-##  Helper Functions
+## <a href="" id="bkmk-helperfunctions"></a> Helper Functions
 
 
 You can use the XML helper functions in the [XML Elements Library](xml-elements-library-usmt-win7-usmt-win8.md) to change migration behavior. Before you use these functions in an .xml file, note the following:

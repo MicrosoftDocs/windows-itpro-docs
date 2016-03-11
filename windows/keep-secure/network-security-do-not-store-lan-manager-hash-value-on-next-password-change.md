@@ -18,9 +18,9 @@ author: brianlic-msft
 **In this article**
 
 -   [Reference](#reference)
--   [Policy management](#policy_management)
--   [Security considerations](#security_considerations)
--   [Related topics](#related_topics)
+-   [Policy management](#policy-management)
+-   [Security considerations](#security-considerations)
+-   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: Do not store LAN Manager hash value on next password change** security policy setting.
 

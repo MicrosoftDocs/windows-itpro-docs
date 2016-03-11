@@ -17,9 +17,9 @@ author: jdeckerMS
 
 **In this article**
 
--   [Reset using MDM](#reset_using_mdm)
--   [Reset using the UI](#_reset_using_the_ui)
--   [Reset using hardware buttons](#reset_using_hardware_buttons)
+-   [Reset using MDM](#reset-using-mdm)
+-   [Reset using the UI](#-reset-using-the-ui)
+-   [Reset using hardware buttons](#reset-using-hardware-buttons)
 
 There are two methods for resetting a Windows 10 Mobile device: factory reset and "wipe and persist" reset.
 

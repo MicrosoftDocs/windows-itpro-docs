@@ -17,9 +17,9 @@ author: CFaw
 -   [Orchestrator terminology](#sec01)
 -   [Create a sample runbook](#sec02)
 -   [Test the demo MDT runbook](#sec03)
--   [Use the MDT demo runbook from MDT](#use_the_mdt_demo_runbook_from_mdt)
--   [Run the orchestrator sample task sequence](#run_the_orchestrator_sample_task_sequence)
--   [Related topics](#related_topics)
+-   [Use the MDT demo runbook from MDT](#use-the-mdt-demo-runbook-from-mdt)
+-   [Run the orchestrator sample task sequence](#run-the-orchestrator-sample-task-sequence)
+-   [Related topics](#related-topics)
 
 This topic will show you how to integrate Microsoft System Center 2012 R2 Orchestrator with MDT to replace the existing web services that are used in deployment solutions.
 
@@ -30,7 +30,7 @@ If you are licensed to use Orchestrator, we highly recommend that you start usin
 
  
 
-## Orchestrator terminology
+## <a href="" id="sec01"></a>Orchestrator terminology
 
 
 Before diving into the core details, here is a quick course in Orchestrator terminology:
@@ -54,7 +54,7 @@ To find and download additional integration packs, see [Integration Packs for Sy
 
  
 
-## Create a sample runbook
+## <a href="" id="sec02"></a>Create a sample runbook
 
 
 This section assumes you have Orchestrator 2012 R2 installed on a server named OR01. In this section, you create a sample runbook, which is used to log some of the MDT deployment information into a text file on OR01.
@@ -134,7 +134,7 @@ This section assumes you have Orchestrator 2012 R2 installed on a server named O
 
 19. On the **Append Line Properties** page, click **Finish**.
 
-## Test the demo MDT runbook
+## <a href="" id="sec03"></a>Test the demo MDT runbook
 
 
 After the runbook is created, you are ready to test it.

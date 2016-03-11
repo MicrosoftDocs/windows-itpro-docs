@@ -169,7 +169,7 @@ If you use DLL rules, you need to create an allow rule for each DLL that is used
 
 When DLL rules are used, AppLocker must check each DLL that an application loads. Therefore, users may experience a reduction in performance if DLL rules are used.
 
-The DLL rule collection is not enabled by default. To learn how to enable the DLL rule collection, see [DLL rule collections](#BKMK_DLLruleCollections).
+The DLL rule collection is not enabled by default. To learn how to enable the DLL rule collection, see [DLL rule collections](#bkmk-dllrulecollections).
 
  
 
@@ -178,13 +178,13 @@ The DLL rule collection is not enabled by default. To learn how to enable the DL
 
 Rule conditions are criteria that help AppLocker identify the apps to which the rule applies. The three primary rule conditions are publisher, path, and file hash.
 
--   [Publisher](#BKMK_Publisher): Identifies an app based on its digital signature
+-   [Publisher](#bkmk-publisher): Identifies an app based on its digital signature
 
--   [Path](#BKMK_Path): Identifies an app by its location in the file system of the computer or on the network
+-   [Path](#bkmk-path): Identifies an app by its location in the file system of the computer or on the network
 
--   [File hash](#BKMK_FileHash): Represents the system computed cryptographic hash of the identified file
+-   [File hash](#bkmk-filehash): Represents the system computed cryptographic hash of the identified file
 
-### Publisher
+### <a href="" id="bkmk-publisher"></a>Publisher
 
 This condition identifies an app based on its digital signature and extended attributes when available. The digital signature contains info about the company that created the app (the publisher). Executable files, dlls, Windows installers, packaged apps and packaged app installers also have extended attributes, which are obtained from the binary resource. In case of executable files, dlls and Windows installers, these attributes contain the name of the product that the file is a part of, the original name of the file as supplied by the publisher, and the version number of the file. In case of packaged apps and packaged app installers, these extended attributes contain the name and the version of the app package.
 
@@ -267,7 +267,7 @@ The following table describes how a publisher condition is applied.
 
  
 
-### Path
+### <a href="" id="bkmk-path"></a>Path
 
 This rule condition identifies an application by its location in the file system of the computer or on the network.
 
@@ -330,7 +330,7 @@ Because a path rule condition can be configured to include a large number of fol
 
  
 
-### File hash
+### <a href="" id="bkmk-filehash"></a>File hash
 
 When you choose the file hash rule condition, the system computes a cryptographic hash of the identified file. The advantage of this rule condition is that because each file has a unique hash, a file hash rule condition applies to only one file. The disadvantage is that each time the file is updated (such as a security update or upgrade) the file's hash will change. As a result, you must manually update file hash rules.
 
@@ -403,7 +403,7 @@ You can apply AppLocker rules to individual users or to a group of users. If you
 
 The effect of this rule would prevent users such as Help Desk personnel from running a program that is necessary for their support tasks. To resolve this problem, create a second rule that applies to the Help Desk user group: "Allow Help Desk to run Registry Editor." If you create a deny rule that does not allow any users to run Registry Editor, the deny rule will override the second rule that allows the Help Desk user group to run Registry Editor.
 
-## DLL rule collection
+## <a href="" id="bkmk-dllrulecollections"></a>DLL rule collection
 
 
 Because the DLL rule collection is not enabled by default, you must perform the following procedure before you can create and enforce DLL rules.

@@ -18,7 +18,7 @@ author: jdeckerMS
 
 Windows Store for Business has thousands of apps from many different categories.
 
-## 
+## <a href="" id="apps"></a>
 
 
 These app types are supported in Store for Business:
@@ -49,14 +49,14 @@ Apps that you acquire from the Store for Business only work on Windows 10-based
 
 Line-of-business (LOB) apps are also supported using the Store for Business. Admins can invite IT devs and ISVs to be LOB publishers. Apps developed by your LOB publishers that are submitted to the Store are only available to your organization. Once an administrator accepts an app submitted by one of their LOB publishers, the app can be distributed just like any other app from Store for Business. For more information, see Working with Line-of-Business apps.
 
-## In-app purchases
+## <a href="" id="iap"></a>In-app purchases
 
 
 Some apps offer you the option to make in-app purchases. In-app purchases are not currently supported for apps that are acquired through Store for Business and distributed to employees.
 
 If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization’s inventory.
 
-## Licensing model: online and offline licenses
+## <a href="" id="licensing-model"></a>Licensing model: online and offline licenses
 
 
 Store for Business supports two options to license apps: online and offline.

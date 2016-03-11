@@ -58,7 +58,7 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 </tr>
 <tr class="even">
 <td align="left"><p>[Protect derived domain credentials with Credential Guard](credential-guard.md)</p></td>
-<td align="left"><p>Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.</p></td>
+<td align="left"><p>Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)</p></td>

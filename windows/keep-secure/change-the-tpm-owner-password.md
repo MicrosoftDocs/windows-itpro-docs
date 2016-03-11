@@ -17,7 +17,7 @@ author: brianlic-msft
 
 This topic for the IT professional describes how to change the password or PIN for the owner of the Trusted Platform Module (TPM) that is installed on your system.
 
-## About the TPM owner password
+## <a href="" id="bkmk-changeowner1"></a>About the TPM owner password
 
 
 The owner of the TPM is the user who possesses the owner password and is able to set it and change it. Only one owner password exists per TPM. The owner of the TPM can make full use of TPM capabilities. When an owner is set, no other user or software can claim ownership of the TPM. Only the TPM owner can enable, disable, or clear the TPM without having physical access to the computer, for example, by using the command-line tools remotely. Taking ownership of the TPM can be performed as part of the initialization process. Ownership can change when you share the password or clear your ownership of the TPM so someone else can initialize it.
@@ -32,14 +32,14 @@ As with any password, you should change your TPM owner password if you suspect t
 
 Instead of changing your owner password, you can also use the following options to manage your TPM:
 
--   **Clear the TPM**   If you want to invalidate all of the existing keys that have been created since you took ownership of the TPM, you can clear it. For more info, see [Initialize and Configure Ownership of the TPM](initialize-and-configure-ownership-of-the-tpm.md#BKMK_clear1).
+-   **Clear the TPM**   If you want to invalidate all of the existing keys that have been created since you took ownership of the TPM, you can clear it. For more info, see [Initialize and Configure Ownership of the TPM](initialize-and-configure-ownership-of-the-tpm.md#bkmk-clear1).
 
     **Important**  
     Clearing the TPM can result in the loss of data. To avoid data loss, make sure you have a backup or recovery method for any data protected or encrypted by the TPM.
 
      
 
--   **Turn off the TPM**   If you want to keep all existing keys and data intact, and you want to disable the services that are provided by the TPM, you can turn it off. For more info, see [Initialize and Configure Ownership of the TPM](initialize-and-configure-ownership-of-the-tpm.md#BKMK_onoff).
+-   **Turn off the TPM**   If you want to keep all existing keys and data intact, and you want to disable the services that are provided by the TPM, you can turn it off. For more info, see [Initialize and Configure Ownership of the TPM](initialize-and-configure-ownership-of-the-tpm.md#bkmk-onoff).
 
 ## Change the TPM owner password
 
@@ -73,7 +73,7 @@ The following procedure provides the steps that are necessary to change the TPM 
 
 6.  Click **Change password** to apply the new owner password to the TPM.
 
-## Use the TPM cmdlets
+## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 
 
 If you are using Windows PowerShell to manage your computers, you can also manage the TPM by using Windows PowerShell. To install the TPM cmdlets, type the following command:
@@ -85,7 +85,7 @@ For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell
 ## Additional resources
 
 
-For more info about TPM, see [Trusted Platform Module technology overview](trusted-platform-module-technology-overview.md#BKMK_AdditionalResources).
+For more info about TPM, see [Trusted Platform Module technology overview](trusted-platform-module-technology-overview.md#bkmk-additionalresources).
 
  
 

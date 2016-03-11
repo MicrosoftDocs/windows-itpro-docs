@@ -18,9 +18,9 @@ author: jdeckerMS
 
 **In this article**
 
--   [Apps Corner](#apps_corner)
--   [Enterprise Assigned Access](#enterprise_assigned_access)
--   [Related topics](#related_topics)
+-   [Apps Corner](#apps-corner)
+-   [Enterprise Assigned Access](#enterprise-assigned-access)
+-   [Related topics](#related-topics)
 
 A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings. You configure a device running Windows 10 Mobile or Windows 10 Mobile Enterprise for kiosk mode by using the Apps Corner feature. You can also use the Enterprise Assigned Access configuration service provider (CSP) to configure a kiosk experience.
 

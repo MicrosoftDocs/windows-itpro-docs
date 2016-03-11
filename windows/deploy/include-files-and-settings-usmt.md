@@ -15,19 +15,19 @@ When you specify the migration .xml files, User State Migration Tool (USMT) 10.
 
 In this topic:
 
-[Migrate a Single Registry Key](#BKMK_MigSingleRegKey)
+[Migrate a Single Registry Key](#bkmk-migsingleregkey)
 
-[Migrate a Specific Folder](#BKMK_MigSpecificFolder)
+[Migrate a Specific Folder](#bkmk-migspecificfolder)
 
-[Migrate a Folder from a Specific Drive](#BKMK_MigFoldSpecDrive)
+[Migrate a Folder from a Specific Drive](#bkmk-migfoldspecdrive)
 
-[Migrate a Folder from Any Location](#BKMK_MigFolderAnyLoc)
+[Migrate a Folder from Any Location](#bkmk-migfolderanyloc)
 
-[Migrate a File Type Into a Specific Folder](#BKMK_MigFileTypeToSpecificFolder)
+[Migrate a File Type Into a Specific Folder](#bkmk-migfiletypetospecificfolder)
 
-[Migrate a Specific File](#BKMK_MigSpecificFile)
+[Migrate a Specific File](#bkmk-migspecificfile)
 
-##  Migrate a Single Registry Key
+## <a href="" id="bkmk-migsingleregkey"></a> Migrate a Single Registry Key
 
 
 The following .xml file migrates a single registry key.
@@ -49,12 +49,12 @@ The following .xml file migrates a single registry key.
 </migration>
 ```
 
-## Migrate a Specific Folder
+## <a href="" id="bkmk-migspecificfolder"></a>Migrate a Specific Folder
 
 
 The following examples show how to migrate a folder from a specific drive, and from any location on the computer.
 
-###  Migrate a Folder from a Specific Drive
+### <a href="" id="bkmk-migfoldspecdrive"></a> Migrate a Folder from a Specific Drive
 
 -   **Including subfolders.** The following .xml file migrates all files and subfolders from C:\\EngineeringDrafts to the destination computer.
 
@@ -94,7 +94,7 @@ The following examples show how to migrate a folder from a specific drive, and f
     </migration>
     ```
 
-### Migrate a Folder from Any Location
+### <a href="" id="bkmk-migfolderanyloc"></a>Migrate a Folder from Any Location
 
 The following .xml file migrates all files and subfolders of the EngineeringDrafts folder from any drive on the computer. If multiple folders exist with the same name, then all files with this name are migrated.
 
@@ -136,7 +136,7 @@ The following .xml file migrates all files and subfolders of the EngineeringDraf
 </migration>
 ```
 
-## Migrate a File Type Into a Specific Folder
+## <a href="" id="bkmk-migfiletypetospecificfolder"></a>Migrate a File Type Into a Specific Folder
 
 
 The following .xml file migrates .mp3 files located in the specified drives on the source computer into the C:\\Music folder on the destination computer.
@@ -164,7 +164,7 @@ The following .xml file migrates .mp3 files located in the specified drives on t
 </migration> 
 ```
 
-## Migrate a Specific File
+## <a href="" id="bkmk-migspecificfile"></a>Migrate a Specific File
 
 
 The following examples show how to migrate a file from a specific folder, and how to migrate a file from any location.

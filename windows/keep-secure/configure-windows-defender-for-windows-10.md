@@ -17,13 +17,13 @@ author: brianlic-msft
 
 **In this article**
 
--   [Configure definition updates](#configure_definition_updates)
--   [Definition update logic](#definition_update_logic)
--   [Update Windows Defender definitions through Active Directory and WSUS](#update_windows_defender_definitions_through_active_directory_and_wsus)
--   [Manage cloud-based protection](#manage_cloud-based_protection)
--   [Opt-in to Microsoft Update](#opt-in_to_microsoft_update)
--   [Schedule updates for Microsoft Update](#schedule_updates_for_microsoft_update)
--   [Related topics](#related_topics)
+-   [Configure definition updates](#configure-definition-updates)
+-   [Definition update logic](#definition-update-logic)
+-   [Update Windows Defender definitions through Active Directory and WSUS](#update-windows-defender-definitions-through-active-directory-and-wsus)
+-   [Manage cloud-based protection](#manage-cloud-based-protection)
+-   [Opt-in to Microsoft Update](#opt-in-to-microsoft-update)
+-   [Schedule updates for Microsoft Update](#schedule-updates-for-microsoft-update)
+-   [Related topics](#related-topics)
 
 IT professionals can configure definition updates and cloud-based protection in Windows Defender in Windows 10 through Microsoft Active Directory and Windows Server Update Services (WSUS).
 
@@ -214,7 +214,7 @@ You can manually opt-in each individual computer on your network to receive Micr
 
 Opting-in to Microsoft Update means that your system administrator can schedule updates to your mobile computer, so that it keeps up-to-date with the latest software versions and security definitions, even when you’re on the road.
 
-For more information on scheduling updates, see [Configure definition updates](https://technet.microsoft.com/library/mt622088.aspx#configure_definition_updates).
+For more information on scheduling updates, see [Configure definition updates](https://technet.microsoft.com/library/mt622088.aspx#configure-definition-updates).
 
 ## Related topics
 

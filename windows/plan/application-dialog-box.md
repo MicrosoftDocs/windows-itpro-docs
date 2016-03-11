@@ -30,7 +30,7 @@ In Application Compatibility Manager (ACM), the *&lt;Application&gt;* dialog box
 
 3.  Double-click the name of an application.
 
-## Tabs in the &lt;Application&gt; dialog box
+## <a href="" id="tabs-in-the--application--dialog-box"></a>Tabs in the &lt;Application&gt; dialog box
 
 
 The following table shows the information available in the *&lt;Application&gt;* dialog box.
@@ -98,7 +98,7 @@ The following table shows the information available in the *&lt;Application&gt;*
 
  
 
-## Using the &lt;Application&gt; Dialog Box
+## <a href="" id="using-the--application--dialog-box"></a>Using the &lt;Application&gt; Dialog Box
 
 
 In the **&lt;Application&gt;** dialog box, you can perform the following actions:

@@ -19,15 +19,15 @@ Because the tables in this topic are wide, you may need to adjust the width of i
 ## In This Topic:
 
 
--   [Example 1: Migrating an Unsupported Application](#Example)
+-   [Example 1: Migrating an Unsupported Application](#example)
 
--   [Example 2: Migrating the My Videos Folder](#Example2)
+-   [Example 2: Migrating the My Videos Folder](#example2)
 
--   [Example 3: Migrating Files and Registry Keys](#Example3)
+-   [Example 3: Migrating Files and Registry Keys](#example3)
 
--   [Example 4: Migrating Specific Folders from Various Locations](#Example4)
+-   [Example 4: Migrating Specific Folders from Various Locations](#example4)
 
-## Example 1: Migrating an Unsupported Application
+## <a href="" id="example"></a>Example 1: Migrating an Unsupported Application
 
 
 The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
@@ -96,7 +96,7 @@ The following is a template for the sections that you need to migrate your appli
 </migration>
 ```
 
-## Example 2: Migrating the My Videos Folder
+## <a href="" id="example2"></a>Example 2: Migrating the My Videos Folder
 
 
 The following is a custom .xml file named CustomFile.xml that migrates My Videos for all users, if the folder exists on the source computer.
@@ -153,7 +153,7 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 </migration>
 ```
 
-## Example 3: Migrating Files and Registry Keys
+## <a href="" id="example3"></a>Example 3: Migrating Files and Registry Keys
 
 
 This table describes the behavior in the following example .xml file.
@@ -222,7 +222,7 @@ This table describes the behavior in the following example .xml file.
 </migration>
 ```
 
-## Example 4: Migrating Specific Folders from Various Locations
+## <a href="" id="example4"></a>Example 4: Migrating Specific Folders from Various Locations
 
 
 The behavior for this custom .xml file is described within the &lt;`displayName`&gt; tags in the code.

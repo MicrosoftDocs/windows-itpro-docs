@@ -35,17 +35,17 @@ This topic contains procedures, some of which are dependent on Visual Basic scri
 
 In this topic:
 
-1.  [Check status of prerequisites](#BKMK_PreReqs)
+1.  [Check status of prerequisites](#bkmk-prereqs)
 
-2.  [Set permissions to back up password information](#BKMK_SetPerms)
+2.  [Set permissions to back up password information](#bkmk-setperms)
 
-3.  [Configure Group Policy to back up TPM recovery information in AD DS](#BKMK_ConfigureGP)
+3.  [Configure Group Policy to back up TPM recovery information in AD DS](#bkmk-configuregp)
 
-4.  [Use AD DS to recover TPM information](#BKMK_UseIt)
+4.  [Use AD DS to recover TPM information](#bkmk-useit)
 
-5.  [Sample scripts](#BKMK_adds_tpm_scripts)
+5.  [Sample scripts](#bkmk-adds-tpm-scripts)
 
-## Check status of prerequisites
+## <a href="" id="bkmk-prereqs"></a>Check status of prerequisites
 
 
 Before you begin your backup, ensure that the following prerequisites are met:
@@ -59,10 +59,10 @@ Before you begin your backup, ensure that the following prerequisites are met:
 
 2.  You have domain administrator rights in the target forest, or you are using an account that has been granted appropriate permissions to extend the schema for the target forest. Members of the Enterprise Admins or Schema Admins groups are examples of accounts that have the appropriate permissions.
 
-## Set permissions to back up password information
+## <a href="" id="bkmk-setperms"></a>Set permissions to back up password information
 
 
-This procedure uses the sample script [Add-TPMSelfWriteACE.vbs](#BKMK_Add-TPMSelfWriteACE) to add an access control entry (ACE) so that backing up TPM recovery information is possible. A client computer cannot back up TPM owner information until this ACE is added.
+This procedure uses the sample script [Add-TPMSelfWriteACE.vbs](#bkmk-add-tpmselfwriteace) to add an access control entry (ACE) so that backing up TPM recovery information is possible. A client computer cannot back up TPM owner information until this ACE is added.
 
 This script is run on the domain controller that you will use to administer the TPM recovery information, and it operates under the following assumptions:
 
@@ -117,10 +117,10 @@ Complete the following procedure to check that the correct permissions are set a
 
     With this script you can optionally remove ACEs from BitLocker and TPM schema objects on the top-level domain.
 
-## Configure Group Policy to back up TPM recovery information in AD DS
+## <a href="" id="bkmk-configuregp"></a>Configure Group Policy to back up TPM recovery information in AD DS
 
 
-Use these procedures to configure the [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#BKMK_tpmgp_addsbu) policy setting on a local computer. In a production environment, an efficient way to do this is to create or edit a Group Policy Object (GPO) that can target client computers in the domain.
+Use these procedures to configure the [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#bkmk-tpmgp-addsbu) policy setting on a local computer. In a production environment, an efficient way to do this is to create or edit a Group Policy Object (GPO) that can target client computers in the domain.
 
 **To enable local policy setting to back up TPM recovery information to AD DS**
 
@@ -139,7 +139,7 @@ When this setting is enabled, the TPM owner password cannot be set or changed un
 
  
 
-## Use AD DS to recover TPM information
+## <a href="" id="bkmk-useit"></a>Use AD DS to recover TPM information
 
 
 When you need to recover the TPM owner information from AD DS and use it to manage the TPM, you need to read the **ms-TPM-OwnerInformation** object from AD DS, and then manually create a TPM owner password backup file that can be supplied when TPM owner credentials are required.
@@ -148,7 +148,7 @@ When you need to recover the TPM owner information from AD DS and use it to man
 
 1.  Sign in to a domain controller by using domain administrator credentials.
 
-2.  Copy the sample script file, [Get-TPMOwnerInfo.vbs](#ms-TPM-OwnerInformation), to a location on your computer.
+2.  Copy the sample script file, [Get-TPMOwnerInfo.vbs](#ms-tpm-ownerinformation), to a location on your computer.
 
 3.  Open a Command Prompt window, and change the default location to the location of the sample script files you saved in the previous step.
 
@@ -184,18 +184,18 @@ When you need to recover the TPM owner information from AD DS and use it to man
 
 6.  Save this file with a .tpm extension on a removable storage device, such as a USB flash drive. When you access the TPM, and you are required to provide the TPM owner password, choose the option for reading the password from a file and provide the path to this file.
 
-## Sample scripts
+## <a href="" id="bkmk-adds-tpm-scripts"></a>Sample scripts
 
 
 You can use all or portions of the following sample scripts, which are used in the preceding procedures, to configure AD DS for backing up TPM recovery information. Customization is required depending on how your environment is configured.
 
--   [Add-TPMSelfWriteACE.vbs: Use to add the access control entry (ACE) for the TPM to AD DS](#BKMK_Add-TPMSelfWriteACE)
+-   [Add-TPMSelfWriteACE.vbs: Use to add the access control entry (ACE) for the TPM to AD DS](#bkmk-add-tpmselfwriteace)
 
--   [List-ACEs.vbs: Use to list or remove the ACEs that are configured on BitLocker and TPM schema objects](#BKMK_List-ACEs)
+-   [List-ACEs.vbs: Use to list or remove the ACEs that are configured on BitLocker and TPM schema objects](#bkmk-list-aces)
 
--   [Get-TPMOwnerInfo.vbs: Use to retrieve the TPM recovery information from AD DS for a particular computer](#BKMK_Get-TPMOwnerInfo)
+-   [Get-TPMOwnerInfo.vbs: Use to retrieve the TPM recovery information from AD DS for a particular computer](#bkmk-get-tpmownerinfo)
 
-### Add-TPMSelfWriteACE.vbs
+### <a href="" id="bkmk-add-tpmselfwriteace"></a>Add-TPMSelfWriteACE.vbs
 
 This script adds the access control entry (ACE) for the TPM to AD DS so that the computer can back up TPM recovery information in AD DS.
 
@@ -326,7 +326,7 @@ objDomain.SetInfo
 WScript.Echo "SUCCESS!"
 ```
 
-### List-ACEs.vbs
+### <a href="" id="bkmk-list-aces"></a>List-ACEs.vbs
 
 This script lists or removes the ACEs that are configured on BitLocker and TPM schema objects for the top-level domain. This enables you to verify that the expected ACEs have been added appropriately or to remove any ACEs that are related to BitLocker or the TPM, if necessary.
 
@@ -571,7 +571,7 @@ else
 end if
 ```
 
-### Get-TPMOwnerInfo.vbs
+### <a href="" id="bkmk-get-tpmownerinfo"></a>Get-TPMOwnerInfo.vbs
 
 This script retrieves TPM recovery information from AD DS for a particular computer so that you can verify that only domain administrators (or delegated roles) can read backed up TPM recovery information and verify that the information is being backed up correctly.
 

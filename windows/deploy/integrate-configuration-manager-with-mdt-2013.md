@@ -20,13 +20,13 @@ author: CFaw
 
 -   [Why integrate MDT 2013 Update 1 with Configuration Manager](#sec01)
 -   [Why use MDT Lite Touch to create reference images](#sec02)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit with Microsoft System Center 2012 R2 Configuration Manager SP1 when you deploy a new or updated version of the Windows operating system.
 
 MDT 2013 is a free, supported download from Microsoft that adds approximately 280 enhancements to Windows operating system deployment with System Center 2012 R2 Configuration Manager SP1. It is, therefore, recommended that you utilize MDT when deploying the Windows operating system with Configuration Manager SP1. In addition to integrating MDT with Configuration Manager, we also recommend using MDT Lite Touch to create the Windows 10 reference images used in Configuration Manager. For more information on how to create a reference image, see [Create a Windows 10 reference image](create-a-windows-81-reference-image.md).
 
-## Why integrate MDT 2013 Update 1 with Configuration Manager
+## <a href="" id="sec01"></a>Why integrate MDT 2013 Update 1 with Configuration Manager
 
 
 As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT 2013 Update 1 adds to Configuration Manager.
@@ -94,7 +94,7 @@ Figure 5. The optional UDI wizard open in the UDI Wizard Designer.
 
 MDT Zero Touch simply extends Configuration Manager with many useful built-in operating system deployment components. By providing well-established, supported solutions, MDT reduces the complexity of deployment in Configuration Manager.
 
-## Why use MDT Lite Touch to create reference images
+## <a href="" id="sec02"></a>Why use MDT Lite Touch to create reference images
 
 
 You can create reference images for Configuration Manager in Configuration Manager, but in general we recommend creating them in MDT Lite Touch for the following reasons:

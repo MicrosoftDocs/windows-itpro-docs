@@ -22,7 +22,7 @@ This topic provides more details about this change and provides template schema 
 
 The TPM owner authorization value is now stored in a separate object which is linked to the Computer object. This value was stored as a property in the Computer object itself for the default Windows Server 2008 R2 schemas. Windows Server 2012 domain controllers have the default schema to backup TPM owner authorization information in the separate object. If you are not upgrading your domain controller to Windows Server 2012 you need to extend the schema to support this change. If Active Directory backup of the TPM owner authorization value is enabled in a Windows Server 2008 R2 environment without extending the schema, the TPM provisioning will fail and the TPM will remain in a Not Ready state for computers running Windows 8. The following are the two schema extensions that you can use to bring your Windows Server 2008 R2 domain to parity with Windows Server 2012:
 
-### TpmSchemaExtension.ldf
+### <a href="" id="tpmschemaextension-ldf-"></a>TpmSchemaExtension.ldf
 
 This schema extension brings parity with the Windows Server 2012 schema and is required if you want to store the TPM owner authorization value for a computer running Windows 8 in a Windows Server 2008 R2 AD DS domain. With this extension the TPM owner authorization information will be stored in a separate TPM object linked to the corresponding computer object.
 

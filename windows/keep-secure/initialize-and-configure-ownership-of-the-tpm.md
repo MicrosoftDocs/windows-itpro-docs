@@ -17,7 +17,7 @@ author: brianlic-msft
 
 This topic for the IT professional describes how to initialize and set the ownership the Trusted Platform Module (TPM), turn the TPM on and off, and clear TPM keys. It also explains how to troubleshoot issues that you might encounter as a result of using these procedures.
 
-## About TPM initialization and ownership
+## <a href="" id="bkmk-init"></a>About TPM initialization and ownership
 
 
 The TPM must be initialized and ownership must be taken before it can be used to help secure your computer. The owner of the TPM is the user who possesses the owner password and is able to set it and change it. Only one owner password exists per TPM. The owner of the TPM can make full use of TPM capabilities. Taking ownership of the TPM can be done as part of the initialization process.
@@ -26,17 +26,17 @@ When you start the TPM Initialization Wizard, which is accessed through the TPM 
 
 This topic contains procedures for the following tasks:
 
--   [Initialize the TPM and set ownership](#BKMK_InitializeTPM)
+-   [Initialize the TPM and set ownership](#bkmk-initializetpm)
 
--   [Troubleshoot TPM initialization](#BKMK_TroubleshootInit)
+-   [Troubleshoot TPM initialization](#bkmk-troubleshootinit)
 
--   [Turn on or turn off the TPM](#BKMK_onoff)
+-   [Turn on or turn off the TPM](#bkmk-onoff)
 
--   [Clear all the keys from the TPM](#BKMK_clear1)
+-   [Clear all the keys from the TPM](#bkmk-clear1)
 
--   [Use the TPM cmdlets](#BKMK_TPMcmdlets)
+-   [Use the TPM cmdlets](#bkmk-tpmcmdlets)
 
-## Initialize the TPM and set ownership
+## <a href="" id="bkmk-initializetpm"></a>Initialize the TPM and set ownership
 
 
 Membership in the local Administrators group, or equivalent, is the minimum required to complete this procedure. In addition, the computer must be equipped with a Trusted Computing Group-compliant BIOS.
@@ -50,7 +50,7 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
 3.  If the TPM has never been initialized or is turned off, the TPM Initialization Wizard displays the **Turn on the TPM security hardware** dialog box. This dialog box provides guidance for initializing or turning on the TPM. Follow the instructions in the wizard.
 
     **Note**  
-    If the TPM is already turned on, the TPM Initialization Wizard displays the **Create the TPM owner password** dialog box. Skip the remainder of this procedure and continue with the [To set ownership of the TPM](#BKMK_SetOwnership) procedure.
+    If the TPM is already turned on, the TPM Initialization Wizard displays the **Create the TPM owner password** dialog box. Skip the remainder of this procedure and continue with the [To set ownership of the TPM](#bkmk-setownership) procedure.
 
      
 
@@ -78,7 +78,7 @@ To finish initializing the TPM for use, you must set an owner for the TPM. The p
 
 **To set ownership of the TPM**
 
-1.  If you are not continuing immediately from the last procedure, start the TPM Initialization Wizard. If you need to review the steps to do so, see the previous procedure [To start the TPM Initialization Wizard](#BKMK_StartTPMinitWizard).
+1.  If you are not continuing immediately from the last procedure, start the TPM Initialization Wizard. If you need to review the steps to do so, see the previous procedure [To start the TPM Initialization Wizard](#bkmk-starttpminitwizard).
 
 2.  In the **Create the TPM owner password** dialog box, click **Automatically create the password (recommended)**.
 
@@ -112,7 +112,7 @@ To finish initializing the TPM for use, you must set an owner for the TPM. The p
 
      
 
-## Troubleshoot TPM initialization
+## <a href="" id="bkmk-troubleshootinit"></a>Troubleshoot TPM initialization
 
 
 Managing the Trusted Platform Module (TPM) is usually a straightforward procedure. If are unable to complete the initialization procedure, review the following information:
@@ -150,7 +150,7 @@ Managing the Trusted Platform Module (TPM) is usually a straightforward procedur
 
      
 
--   If the TPM has been previously initialized and you do not have the owner password, you may have to clear or reset the TPM to the factory default values. For more information, see [Clear all the keys from the TPM](#BKMK_clear1).
+-   If the TPM has been previously initialized and you do not have the owner password, you may have to clear or reset the TPM to the factory default values. For more information, see [Clear all the keys from the TPM](#bkmk-clear1).
 
     **Caution**  
     Clearing the TPM can result in data loss. To avoid data loss, make sure that you have a backup or recovery method for any data that is protected or encrypted by the TPM.
@@ -173,12 +173,12 @@ In either case, an error message appears, and you cannot complete the initializa
 
 Some systems may have multiple TPMs and the active TPM may be toggled in the BIOS. Windows 10 does not support this behavior. If you switch TPMs, functionality that depends on the TPM will not work with the new TPM unless it is cleared and put through provisioning. Performing this clear may cause data loss, in particular of keys and certificates associated with the previous TPM. For example, toggling TPMs will cause Bitlocker to enter recovery mode. It is strongly recommended that, on systems with two TPMs, one TPM is selected to be used and the selection is not changed.
 
-## Turn on or turn off the TPM
+## <a href="" id="bkmk-onoff"></a>Turn on or turn off the TPM
 
 
 Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.
 
-### Turn on the TPM
+### <a href="" id="turn-on-the-tpm-"></a>Turn on the TPM
 
 If the TPM has been initialized but has never been used, or if you want to use the TPM after you have turned it off, you can use the following procedure to turn on the TPM.
 
@@ -192,7 +192,7 @@ If the TPM has been initialized but has never been used, or if you want to use t
 
     After the computer restarts, but before you sign in to Windows, you will be prompted to accept the reconfiguration of the TPM. This ensures that the user has physical access to the computer and that malicious software is not attempting to make changes to the TPM.
 
-### Turn off the TPM
+### <a href="" id="turn-off-the-tpm-"></a>Turn off the TPM
 
 If you want to stop using the services that are provided by the TPM, you can use the TPM MMC to turn off the TPM. If you have the TPM owner password, physical access to the computer is not required to turn off the TPM. If you do not have the TPM owner password, you must have physical access to the computer to turn off the TPM.
 
@@ -210,7 +210,7 @@ If you want to stop using the services that are provided by the TPM, you can use
 
     -   If you do not know your TPM owner password, click **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent BIOS screens to turn off the TPM without entering the password.
 
-## Clear all the keys from the TPM
+## <a href="" id="bkmk-clear1"></a>Clear all the keys from the TPM
 
 
 Clearing the TPM resets it to an unowned state. After clearing the TPM, you need to complete the TPM initialization process before using software that relies on the TPM, such as BitLocker Drive Encryption. By default, the TPM is initialized automatically.
@@ -256,7 +256,7 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
 
     The status of your TPM is displayed under **Status** in TPM MMC.
 
-## Use the TPM cmdlets
+## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 
 
 If you are using Windows PowerShell to manage your computers, you can also manage the TPM by using Windows PowerShell. To install the TPM cmdlets, type the following command:
@@ -268,7 +268,7 @@ For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell
 ## Additional resources
 
 
-For more info about TPM, see [Trusted Platform Module Technology Overview](trusted-platform-module-technology-overview.md#BKMK_AdditionalResources).
+For more info about TPM, see [Trusted Platform Module Technology Overview](trusted-platform-module-technology-overview.md#bkmk-additionalresources).
 
  
 

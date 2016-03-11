@@ -18,13 +18,13 @@ Understanding the requirements for running USMT can help minimize errors in your
 ## In This Topic
 
 
-[USMT Return Codes](#BKMK_ReturnCodes)
+[USMT Return Codes](#bkmk-returncodes)
 
-[USMT Error Messages](#BKMK_ErrorMessages)
+[USMT Error Messages](#bkmk-errormessages)
 
-[Troubleshooting Return Codes and Error Messages](#BKMK_TSCodesErrors)
+[Troubleshooting Return Codes and Error Messages](#bkmk-tscodeserrors)
 
-## USMT Return Codes
+## <a href="" id="bkmk-returncodes"></a>USMT Return Codes
 
 
 If you encounter an error in your USMT migration, you can use return codes and the more specific information provided in the associated USMT error messages to troubleshoot the issue and to identify mitigation steps.
@@ -43,14 +43,14 @@ Fatal Errors
 
 As a best practice, we recommend that you set verbosity level to 5, **/v***:5*, on the **ScanState**, **LoadState**, and **USMTUtils** command lines so that the most detailed reporting is available in the respective USMT logs. You can use a higher verbosity level if you want the log files output to go to a debugger.
 
-## USMT Error Messages
+## <a href="" id="bkmk-errormessages"></a>USMT Error Messages
 
 
 Error messages provide more detailed information about the migration problem than the associated return code. For example, the **ScanState**, **LoadState**, or **USMTUtils** tool might return a code of "11” (for “USMT\_INVALID\_PARAMETERS") and a related error message that reads "/key and /keyfile both specified". The error message is displayed at the command prompt and is identified in the **ScanState**, **LoadState**, or **USMTUtils** log files to help you determine why the return code was received.
 
 You can obtain more information about any listed Windows application programming interface (API) system error codes by typing **net helpmsg** on the command line and, then typing the error code number. For more information about System Error Codes, see [this Microsoft Web site](http://go.microsoft.com/fwlink/p/?LinkId=147060).
 
-## Troubleshooting Return Codes and Error Messages
+## <a href="" id="bkmk-tscodeserrors"></a>Troubleshooting Return Codes and Error Messages
 
 
 The following table lists each return code by numeric value, along with the associated error messages and suggested troubleshooting actions.

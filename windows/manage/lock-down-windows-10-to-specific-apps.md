@@ -18,10 +18,10 @@ author: jdeckerMS
 
 **In this article**
 
--   [Install apps](#install_apps)
--   [Use AppLocker to set rules for apps](#use_applocker_to_set_rules_for_apps)
--   [Other settings to lock down](#other_settings_to_lock_down)
--   [Customize Start screen layout for the device](#customize_start_screen_layout_for_the_device)
+-   [Install apps](#install-apps)
+-   [Use AppLocker to set rules for apps](#use-applocker-to-set-rules-for-apps)
+-   [Other settings to lock down](#other-settings-to-lock-down)
+-   [Customize Start screen layout for the device](#customize-start-screen-layout-for-the-device)
 
 Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps. The result is similar to [a kiosk device](set-up-a-device-for-anyone-to-use.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.
 

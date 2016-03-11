@@ -30,7 +30,7 @@ In Application Compatibility Manager (ACM), the *&lt;Computer&gt;* dialog box sh
 
 3.  Double-click the name of a computer.
 
-## Tabs in the &lt;Computer&gt; dialog box
+## <a href="" id="tabs-in-the--computer--dialog-box"></a>Tabs in the &lt;Computer&gt; dialog box
 
 
 The following table shows the information available in the *&lt;Computer&gt;* dialog box.
@@ -89,7 +89,7 @@ The following table shows the information available in the *&lt;Computer&gt;* di
 
  
 
-## Using the &lt;Computer&gt; Dialog Box
+## <a href="" id="using-the--computer--dialog-box"></a>Using the &lt;Computer&gt; Dialog Box
 
 
 In the *&lt;Computer&gt;* dialog box, you can perform the following actions:

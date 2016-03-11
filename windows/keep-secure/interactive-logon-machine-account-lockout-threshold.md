@@ -18,9 +18,9 @@ author: brianlic-msft
 **In this article**
 
 -   [Reference](#reference)
--   [Policy management](#policy_management)
--   [Security considerations](#security_considerations)
--   [Related topics](#related_topics)
+-   [Policy management](#policy-management)
+-   [Security considerations](#security-considerations)
+-   [Related topics](#related-topics)
 
 Describes the best practices, location, values, management, and security considerations for the **Interactive logon: Machine account lockout threshold** security policy setting.
 
@@ -37,7 +37,7 @@ Failed password attempts on workstations or member servers that have been locked
 
 You can set the **invalid logon attempts** value between 1 and 999. Values from 1 to 3 are interpreted as 4. If you set the value to 0, or leave blank, the computer or device will never be locked as a result of this policy setting.
 
-### Best practices
+### <a href="" id="bkmk-bestpractices"></a>Best practices
 
 Use this policy setting in conjunction with your other failed account logon attempts policy. For example, if the [Account lockout threshold](account-lockout-threshold.md) policy setting is set at 4, then setting **Interactive logon: Machine account lockout threshold** at 6 allows the user to restore access to resources without having to restore access to the device resulting from a BitLocker lock out.
 

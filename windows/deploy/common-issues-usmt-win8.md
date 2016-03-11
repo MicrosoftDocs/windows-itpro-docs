@@ -16,17 +16,17 @@ The following sections discuss common issues that you might see when you run the
 ## In This Topic
 
 
-[User Account Problems](#User)
+[User Account Problems](#user)
 
-[Command-line Problems](#Command)
+[Command-line Problems](#command)
 
-[XML File Problems](#XML)
+[XML File Problems](#xml)
 
-[Migration Problems](#Migration)
+[Migration Problems](#migration)
 
-[Offline Migration Problems](#BKMK_Offline)
+[Offline Migration Problems](#bkmk-offline)
 
-[Hard Link Migration Problems](#BKMK_Hardlink)
+[Hard Link Migration Problems](#bkmk-hardlink)
 
 ## General Guidelines for Identifying Migration Problems
 
@@ -59,7 +59,7 @@ When you encounter a problem or error message during migration, you can use the 
 
      
 
-## User Account Problems
+## <a href="" id="user"></a>User Account Problems
 
 
 The following sections describe common user account problems. Expand the section to see recommended solutions.
@@ -133,7 +133,7 @@ loadstate /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore
 /progress:prog.log /l:load.log /mu:fareast\user1:farwest\user1
 ```
 
-## Command-line Problems
+## <a href="" id="command"></a>Command-line Problems
 
 
 The following sections describe common command-line problems. Expand the section to see recommended solutions.
@@ -150,7 +150,7 @@ The following sections describe common command-line problems. Expand the section
 
 **Resolution:** To fix this issue in this scenario, specify the **/l:scan.log** or **/l:load.log** option.
 
-## XML File Problems
+## <a href="" id="xml"></a>XML File Problems
 
 
 The following sections describe common XML file problems. Expand the section to see recommended solutions.
@@ -167,13 +167,13 @@ The following sections describe common XML file problems. Expand the section to 
 
 **Resolution:** You can load the XML schema (MigXML.xsd), included with USMT, into your XML authoring tool. For examples, see the [Visual Studio Development Center](http://go.microsoft.com/fwlink/p/?LinkId=74513). Then, load your .xml file in the authoring tool to see if there is a syntax error. In addition, see [USMT XML Reference](usmt-xml-reference-usmt-win7-usmt-win8.md) for more information about using the XML elements.
 
-### I am using a MigXML helper function, but the migration isn’t working the way I expected it to.  How do I troubleshoot this issue?
+### <a href="" id="i-am-using-a-migxml-helper-function--but-the-migration-isn-t-working-the-way-i-expected-it-to---how-do-i-troubleshoot-this-issue-"></a>I am using a MigXML helper function, but the migration isn’t working the way I expected it to.  How do I troubleshoot this issue?
 
 **Cause:** Typically, this issue is caused by incorrect syntax used in a helper function. You receive a Success return code, but the files you wanted to migrate did not get collected or applied, or weren’t collected or applied in the way you expected.
 
 **Resolution:** You should search the ScanState or LoadState log for either the component name which contains the MigXML helper function, or the MigXML helper function title, so that you can locate the related warning in the log file.
 
-## Migration Problems
+## <a href="" id="migration"></a>Migration Problems
 
 
 The following sections describe common migration problems. Expand the section to see recommended solutions.
@@ -216,13 +216,13 @@ There are three typical causes for this issue.
 
 **Resolution:** Run the ScanState and LoadState tools from within an account with administrative credentials.
 
-### I included MigApp.xml in the migration, but some PST files aren’t migrating.
+### <a href="" id="i-included-migapp-xml-in-the-migration--but-some-pst-files-aren-t-migrating-"></a>I included MigApp.xml in the migration, but some PST files aren’t migrating.
 
 **Cause:** The MigApp.xml file migrates only the PST files that are linked to Outlook profiles.
 
 **Resolution:** To migrate PST files that are not linked to Outlook profiles, you must create a separate migration rule to capture these files.
 
-## Offline Migration Problems
+## <a href="" id="bkmk-offline"></a>Offline Migration Problems
 
 
 The following sections describe common offline migration problems. Expand the section to see recommended solutions.
@@ -263,7 +263,7 @@ You can also use patterns for SIDs that identify generic users or groups. For ex
 reg.exe unload hklm\$dest$software
 ```
 
-## Hard-Link Migration Problems
+## <a href="" id="bkmk-hardlink"></a>Hard-Link Migration Problems
 
 
 The following sections describe common hard-link migration problems. Expand the section to see recommended solutions.

@@ -41,7 +41,7 @@ To download the latest version of MDT, visit the [MDT resource page](http://go.m
 
 -   [Configure MDT settings](configure-mdt-2013-settings.md)
 
-## Proof-of-concept environment
+## <a href="" id="proof"></a>Proof-of-concept environment
 
 
 For the purposes of this guide, and the topics discussed herein, we will use the following servers and client machines: DC01, MDT01, CM01, PC0001, and PC0002.

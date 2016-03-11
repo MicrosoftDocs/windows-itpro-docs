@@ -17,19 +17,19 @@ author: brianlic-msft
 
 **In this article**
 
--   [Introduction to Device Guard](#introduction_to_device_guard)
--   [Device Guard overview](#device_guard_overview)
--   [Plan for Device Guard](#plan_for_device_guard)
--   [Approach enterprise code integrity deployment](#approach_enterprise)
--   [Device Guard deployment scenarios](#device_guard_deployment)
--   [Code signing adoption](#code_signing_adoption)
+-   [Introduction to Device Guard](#introduction-to-device-guard)
+-   [Device Guard overview](#device-guard-overview)
+-   [Plan for Device Guard](#plan-for-device-guard)
+-   [Approach enterprise code integrity deployment](#approach-enterprise)
+-   [Device Guard deployment scenarios](#device-guard-deployment)
+-   [Code signing adoption](#code-signing-adoption)
 -   [Hardware considerations](#hardware)
--   [Device Guard deployment](#DG_deployment)
--   [Configure hardware-based security features](#configure_hardware)
--   [Catalog files](#Catalog_files)
--   [Code integrity policies](#code_integrity_policies)
--   [Create a Device Guard code signing certificate](#create_DG_code)
--   [Related topics](#related_topics)
+-   [Device Guard deployment](#dg-deployment)
+-   [Configure hardware-based security features](#configure-hardware)
+-   [Catalog files](#catalog-files)
+-   [Code integrity policies](#code-integrity-policies)
+-   [Create a Device Guard code signing certificate](#create-dg-code)
+-   [Related topics](#related-topics)
 
 Microsoft Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security. Windows 10 employs Device Guard as well as code integrity and advanced hardware features such as CPU virtualization extensions, Trusted Platform Module, and second-level address translation to offer comprehensive modern security to its users. This guide explores the individual features in Device Guard as well as how to plan for, configure, and deploy them.
 
@@ -55,7 +55,7 @@ Advanced hardware features such as CPU virtualization extensions, IOMMUs, and SL
 
 Along with these new features, some components of Device Guard are existing tools or technologies that have been included in this strategic security offering to provide customers with the most secure Windows operating system possible. Device Guard is intended as a set of client security features to be used in conjunction with the other threat-resistance features available in the Windows operating system, some of which are mentioned in this guide. In addition to an overview of each feature, this guide walks you through the configuration and deployment of them.
 
-### 
+### <a href="" id="config-code"></a>
 
 **Configurable code integrity**
 
@@ -63,15 +63,15 @@ The Windows operating system consists of two operating modes: user mode and kern
 
 Code integrity is the component of the Windows operating system that verifies that the code Windows is running is trusted and safe. Like the operating system, Windows code integrity also contains two primary components: kernel mode code integrity (KMCI) and user mode code integrity (UMCI). KMCI has been used in recent versions of the Windows operating system to protect the kernel mode from running unsigned drivers. Although effective, drivers are not the only route that malware can take to penetrate the kernel mode space of the operating system. In Windows 10, however, Microsoft has raised the standard for kernel mode code out of the box as well as provided enterprises with a way to set their own UMCI and KMCI standards. Beginning with the Code Integrity service itself and continuing through the policies a Windows client uses to verify that an application should be allowed to run, Microsoft has made Windows 10 more secure than any previous Windows release. Historically, UMCI has been available only in Windows RT and on Windows Phone devices, which has made it difficult for these devices to be infected with viruses and malware. In Windows 10, these same successful UMCI standards are available.
 
-Historically, most malware has been unsigned. By simply deploying code integrity policies, organizations will immediately protect themselves against unsigned malware, which is estimated to be responsible for more than 95 percent of current attacks. By using code integrity policies, an enterprise can select exactly which binaries are allowed to run in both user mode and kernel mode, from the signer to the hash level. When completely enforced, it makes user mode in Windows function like a mobile phone, by allowing only specific applications or specific signatures to be trusted and run. This feature alone fundamentally changes the security in an enterprise. This additional security is not limited to Windows apps and does not require that an application be rewritten to be compatible with your existing, unsigned applications. You can implement configurable code integrity without enabling Device Guard, but it is intended to run in conjunction with Device Guard when supported hardware is available. For more information about how to configure, deploy, and manage code integrity policies, see the [Code integrity policies](#code_integrity_policies) section.
+Historically, most malware has been unsigned. By simply deploying code integrity policies, organizations will immediately protect themselves against unsigned malware, which is estimated to be responsible for more than 95 percent of current attacks. By using code integrity policies, an enterprise can select exactly which binaries are allowed to run in both user mode and kernel mode, from the signer to the hash level. When completely enforced, it makes user mode in Windows function like a mobile phone, by allowing only specific applications or specific signatures to be trusted and run. This feature alone fundamentally changes the security in an enterprise. This additional security is not limited to Windows apps and does not require that an application be rewritten to be compatible with your existing, unsigned applications. You can implement configurable code integrity without enabling Device Guard, but it is intended to run in conjunction with Device Guard when supported hardware is available. For more information about how to configure, deploy, and manage code integrity policies, see the [Code integrity policies](#code-integrity-policies) section.
 
 **Hardware security features and virtualization-based security**
 
 The Device Guard core functionality and protection start at the hardware level. Devices that have processors equipped with SLAT technologies and virtualization extensions, such as Intel Virtualization Technology (VT-x) and AMD-V, will be able to take advantage of virtualization-based security (VBS) features that enhance Windows security. Device Guard leverages VBS to isolate core Windows services that are critical to the security and integrity of the operating system. This isolation removes the vulnerability of these services from both the user and kernel modes and acts as an impenetrable barrier for most malware used today. One of these isolated services, called the Windows Code Integrity service, drives the Device Guard kernel mode configurable code integrity feature. This prevents code that has penetrated the kernel mode operations from compromising the code integrity service.
 
-Another Windows 10 feature that employs VBS is Credential Guard. Credential Guard provides additional protection to Active Directory domain users by storing domain credentials within the virtualization container that hosts the Windows security services, such as code integrity. By isolating these domain credentials from the active user mode and kernel mode, they have a much lower risk of being stolen. For more information about how Credential Guard complements Device Guard, see the [Device Guard with Credential Guard](#DG_with_CG) section. For information about how to enable Credential Guard, see the [Enable Credential Guard](#enable_CG) section.
+Another Windows 10 feature that employs VBS is Credential Guard. Credential Guard provides additional protection to Active Directory domain users by storing domain credentials within the virtualization container that hosts the Windows security services, such as code integrity. By isolating these domain credentials from the active user mode and kernel mode, they have a much lower risk of being stolen. For more information about how Credential Guard complements Device Guard, see the [Device Guard with Credential Guard](#dg-with-cg) section. For information about how to enable Credential Guard, see the [Enable Credential Guard](#enable-cg) section.
 
-### 
+### <a href="" id="dg-with-applocker"></a>
 
 **Device Guard with AppLocker**
 
@@ -83,61 +83,61 @@ Although AppLocker is not considered a new Device Guard feature, it complements 
 
 AppLocker and Device Guard should run side-by-side in your organization, which offers the best of both security features at the same time and provides the most comprehensive security to as many devices as possible. In addition to these features, Microsoft recommends that you continue to maintain an enterprise antivirus solution for a well-rounded enterprise security portfolio.
 
-### 
+### <a href="" id="dg-with-cg"></a>
 
 **Device Guard with Credential Guard**
 
-Although Credential Guard is not a feature within Device Guard, many organizations will likely deploy Credential Guard alongside Device Guard for additional protection against credential theft. Similar to virtualization-based protection of kernel mode code integrity, Credential Guard leverages hypervisor technology to protect domain credentials. This mitigation is targeted at resisting the use of pass-the-hash and pass-the-ticket techniques. By employing multifactor authentication with Credential Guard, organizations can gain additional protection against such threats. For information about how to deploy Credential Guard to your Windows 10 Enterprise clients, see the [Enable Credential Guard](#enable_CG) section. In addition to the client-side enablement of Credential Guard, organizations can deploy mitigations at both the CA and domain controller level to help prevent credential theft. Microsoft will be releasing details about these additional mitigations in the future.
+Although Credential Guard is not a feature within Device Guard, many organizations will likely deploy Credential Guard alongside Device Guard for additional protection against credential theft. Similar to virtualization-based protection of kernel mode code integrity, Credential Guard leverages hypervisor technology to protect domain credentials. This mitigation is targeted at resisting the use of pass-the-hash and pass-the-ticket techniques. By employing multifactor authentication with Credential Guard, organizations can gain additional protection against such threats. For information about how to deploy Credential Guard to your Windows 10 Enterprise clients, see the [Enable Credential Guard](#enable-cg) section. In addition to the client-side enablement of Credential Guard, organizations can deploy mitigations at both the CA and domain controller level to help prevent credential theft. Microsoft will be releasing details about these additional mitigations in the future.
 
 **Unified manageability**
 
 You can easily manage Device Guard features by using the familiar enterprise and client-management tools that IT pros use every day. Use the following management tools to enable and manage Device Guard:
 
--   **Group Policy**. Windows 10 provides an administrative template to configure and deploy the configurable code integrity policies for your organization. This template also allows you to specify which hardware-based security features you would like to enable and deploy. You can manage these settings along with your existing Group Policy Objects (GPOs), which makes it simple to implement Device Guard features. In addition to these code integrity and hardware-based security features, you can use Group Policy to help you manage your catalog files. For more information about catalog files, see the [Catalog files](#catalog_files) section.
+-   **Group Policy**. Windows 10 provides an administrative template to configure and deploy the configurable code integrity policies for your organization. This template also allows you to specify which hardware-based security features you would like to enable and deploy. You can manage these settings along with your existing Group Policy Objects (GPOs), which makes it simple to implement Device Guard features. In addition to these code integrity and hardware-based security features, you can use Group Policy to help you manage your catalog files. For more information about catalog files, see the [Catalog files](#catalog-files) section.
 
--   **Microsoft System Center Configuration Manager**. You can use System Center Configuration Manager to simplify deployment and management of catalog files, code integrity policies, and hardware-based security features, as well as provide version control. For more information about how to deploy catalog files by using System Center Configuration Manager, see the [Deploy catalog files with System Center Configuration Manager](#deploy_cat_SCCM) section.
+-   **Microsoft System Center Configuration Manager**. You can use System Center Configuration Manager to simplify deployment and management of catalog files, code integrity policies, and hardware-based security features, as well as provide version control. For more information about how to deploy catalog files by using System Center Configuration Manager, see the [Deploy catalog files with System Center Configuration Manager](#deploy-cat-sccm) section.
 
 -   **Microsoft Intune**. In a future release of Microsoft Intune, organizations will be able to leverage Intune for deployment and management of code integrity policies and catalog files.
 
--   **Windows PowerShell**. Windows PowerShell is primarily used to create and service code integrity policies. These policies represent the most powerful component of Device Guard. For a step-by-step walkthrough of how to create, audit, service, enforce, and deploy code integrity policies, see the [Code integrity policies](#code_integrity_policies) section.
+-   **Windows PowerShell**. Windows PowerShell is primarily used to create and service code integrity policies. These policies represent the most powerful component of Device Guard. For a step-by-step walkthrough of how to create, audit, service, enforce, and deploy code integrity policies, see the [Code integrity policies](#code-integrity-policies) section.
 
-These options provide the same experience you are used to in order to manage your existing enterprise management solutions. For more information about how to manage and deploy Device Guard hardware and code integrity features in your organization, see the [Device Guard deployment](#DG_deployment) section.
+These options provide the same experience you are used to in order to manage your existing enterprise management solutions. For more information about how to manage and deploy Device Guard hardware and code integrity features in your organization, see the [Device Guard deployment](#dg-deployment) section.
 ## Plan for Device Guard
 
 
 In this section, you will learn about the following topics:
 
--   [Approach enterprise code integrity deployment](#approach_enterprise). Device Guard deployment in your organization requires a planned approach. In this section, you get high-level recommendations for how to approach enterprise code integrity deployment in your organization.
+-   [Approach enterprise code integrity deployment](#approach-enterprise). Device Guard deployment in your organization requires a planned approach. In this section, you get high-level recommendations for how to approach enterprise code integrity deployment in your organization.
 
--   [Device Guard deployment scenarios](#device_guard_deployment). When you plan for Device Guard deployment, Microsoft recommends that you categorize each device in your organization into a deployment scenario. These scenarios will provide a roadmap for your Device Guard deployment.
+-   [Device Guard deployment scenarios](#device-guard-deployment). When you plan for Device Guard deployment, Microsoft recommends that you categorize each device in your organization into a deployment scenario. These scenarios will provide a roadmap for your Device Guard deployment.
 
--   [Code signing adoption](#code_signing_adoption). Code signing is important to the security that Device Guard provides. This section outlines the options for code signing and the benefits and disadvantages of each method.
+-   [Code signing adoption](#code-signing-adoption). Code signing is important to the security that Device Guard provides. This section outlines the options for code signing and the benefits and disadvantages of each method.
 
 -   [Hardware considerations](#hardware). Several Device Guard features require advanced hardware. This section outlines the requirements for each of those features and what to look for during your next hardware refresh.
 
-## Approach enterprise code integrity deployment
+## <a href="" id="approach-enterprise"></a>Approach enterprise code integrity deployment
 
 
 Enterprises that want to consider Device Guard should not expect deployment to their entire organization overnight. Device Guard implementation requires that you plan for both end-user and IT pro impact. In addition, the deployment of Device Guard features to your enterprise requires a planned, phased approach to ensure that end-user systems are fully capable and ready to enforce these new security restrictions. Perform the following high-level tasks to approach the deployment of Device Guard to your enterprise:
 
-1.  **Group devices into similar functions**. Categorize machines into the groups described in the [Device Guard deployment scenarios](#device_guard_deployment) section. This begins the roadmap for your Device Guard deployment and provides groups of easier and more difficult implementations. From there, assess the quantity of necessary Device Guard policies. The easiest solution is to lock down your entire enterprise, but it might not fit your individual departments’ needs.
+1.  **Group devices into similar functions**. Categorize machines into the groups described in the [Device Guard deployment scenarios](#device-guard-deployment) section. This begins the roadmap for your Device Guard deployment and provides groups of easier and more difficult implementations. From there, assess the quantity of necessary Device Guard policies. The easiest solution is to lock down your entire enterprise, but it might not fit your individual departments’ needs.
 
-    To discover an appropriate number of policies for your organization, try to separate the defined groups into departments or roles. Then ask some questions: What software does each department or role need to do their job? Should they be able to install and run other departments’ software? Do we need to create a base code integrity policy that aligns with our application catalog? Should users be able to install any application or only choose from an “allowed” list? Do we allow users to use their own peripheral devices? These questions will help you discover the number of necessary policies for your organization. Finally, try to focus on which people or departments would require an additional level of privileges. For example, should department x be able to install and run application xyz, even though no other department does? If the answer is yes and justifiable, you will need a secondary code integrity policy for that group. If not, you will likely be able to merge several policies to simplify management. For more information about configurable code integrity policies, see the [Code integrity policies](#code_integrity_policies) section.
+    To discover an appropriate number of policies for your organization, try to separate the defined groups into departments or roles. Then ask some questions: What software does each department or role need to do their job? Should they be able to install and run other departments’ software? Do we need to create a base code integrity policy that aligns with our application catalog? Should users be able to install any application or only choose from an “allowed” list? Do we allow users to use their own peripheral devices? These questions will help you discover the number of necessary policies for your organization. Finally, try to focus on which people or departments would require an additional level of privileges. For example, should department x be able to install and run application xyz, even though no other department does? If the answer is yes and justifiable, you will need a secondary code integrity policy for that group. If not, you will likely be able to merge several policies to simplify management. For more information about configurable code integrity policies, see the [Code integrity policies](#code-integrity-policies) section.
 
-2.  **Create code integrity policies from “golden” PCs**. After you create the groups of devices, you can create code integrity policies to align with those groups, similar to the way you would manage corporate images. When you have separated these groups and set up golden PCs that mimic the software and hardware those individual groups require, create code integrity policies from each of them. After you create these, you can merge these code integrity policies to create a master policy, or you can manage and deploy them individually. For step-by-step instructions about how to create code integrity policies, see the [Create code integrity policies from golden PCs](#create_code_golden) section.
+2.  **Create code integrity policies from “golden” PCs**. After you create the groups of devices, you can create code integrity policies to align with those groups, similar to the way you would manage corporate images. When you have separated these groups and set up golden PCs that mimic the software and hardware those individual groups require, create code integrity policies from each of them. After you create these, you can merge these code integrity policies to create a master policy, or you can manage and deploy them individually. For step-by-step instructions about how to create code integrity policies, see the [Create code integrity policies from golden PCs](#create-code-golden) section.
 
-3.  **Audit and merge code integrity policies**. Microsoft recommends that you test code integrity policies in audit mode before you enforce them. Audit mode allows administrators to run the code integrity policy on a system but not actually block anything. Rather than not allowing applications to run, events are logged with each exception to the policy. This way, you can easily highlight any issues that were not discovered during the initial scan. You can create additional code integrity policies by using the audit events and merge them into the existing policy. For more information about how to audit code integrity policies, see the [Audit code integrity policies](#audit_code_integrity) section.
+3.  **Audit and merge code integrity policies**. Microsoft recommends that you test code integrity policies in audit mode before you enforce them. Audit mode allows administrators to run the code integrity policy on a system but not actually block anything. Rather than not allowing applications to run, events are logged with each exception to the policy. This way, you can easily highlight any issues that were not discovered during the initial scan. You can create additional code integrity policies by using the audit events and merge them into the existing policy. For more information about how to audit code integrity policies, see the [Audit code integrity policies](#audit-code-integrity) section.
 
-4.  **Assess LOB applications that are currently unsigned, and create a catalog file for them**. Catalog files allow organizations to sign applications that do not currently possess digitally signed binaries or applications that a customer would want to add a secondary signature to. These applications can be in-house applications or from third parties, and the process does not require any repackaging of the application. When you create code integrity policies at a rule level above hash values, you will not discover unsigned applications. To include these applications in your code integrity policies, simply create, sign, and deploy a catalog file. For information about catalog files, see the [Catalog files](#catalog_files) section.
+4.  **Assess LOB applications that are currently unsigned, and create a catalog file for them**. Catalog files allow organizations to sign applications that do not currently possess digitally signed binaries or applications that a customer would want to add a secondary signature to. These applications can be in-house applications or from third parties, and the process does not require any repackaging of the application. When you create code integrity policies at a rule level above hash values, you will not discover unsigned applications. To include these applications in your code integrity policies, simply create, sign, and deploy a catalog file. For information about catalog files, see the [Catalog files](#catalog-files) section.
 
-5.  **Enable desired hardware security features**. Each type of device found in the [Device Guard deployment scenarios](#device_guard_deployment) section takes advantage of different software and hardware integrity configurations. You should assess hardware-based security features separately from code integrity policies because they provide complementary functionality. For information about how to configure Device Guard hardware-based security features, see the [Configure hardware-based security features](#configure_hardware) section.
+5.  **Enable desired hardware security features**. Each type of device found in the [Device Guard deployment scenarios](#device-guard-deployment) section takes advantage of different software and hardware integrity configurations. You should assess hardware-based security features separately from code integrity policies because they provide complementary functionality. For information about how to configure Device Guard hardware-based security features, see the [Configure hardware-based security features](#configure-hardware) section.
 
-6.  **Deploy code integrity policies and catalog files**. After you have created and signed the necessary catalog files and created and audited code integrity policies, you are ready to deploy them in phases. Microsoft strongly recommends that you deploy these components to a test group of users, even after your IT organization has tested and vetted them. This provides a final quality control validation before you deploy the catalog files and policies more broadly. For information about how to deploy catalog files with Group Policy, see the [Deploy catalog files with Group Policy](#deploy_cat_GP) section. For additional information about how to deploy code integrity policies, see the [Deploy code integrity policies with Group Policy](#deploy_manage_code_GP) section.
+6.  **Deploy code integrity policies and catalog files**. After you have created and signed the necessary catalog files and created and audited code integrity policies, you are ready to deploy them in phases. Microsoft strongly recommends that you deploy these components to a test group of users, even after your IT organization has tested and vetted them. This provides a final quality control validation before you deploy the catalog files and policies more broadly. For information about how to deploy catalog files with Group Policy, see the [Deploy catalog files with Group Policy](#deploy-cat-gp) section. For additional information about how to deploy code integrity policies, see the [Deploy code integrity policies with Group Policy](#deploy-manage-code-gp) section.
 
-## Device Guard deployment scenarios
+## <a href="" id="device-guard-deployment"></a>Device Guard deployment scenarios
 
 
-To help simplify the deployment of Device Guard to your organization, Microsoft recommends that you group devices into the deployment scenarios described in this section. Device Guard is not a feature that organizations will just simply “turn on”; rather, it typically requires a phased implementation approach. To see where these scenarios fit into an overall Device Guard deployment approach, see the [Approach to enterprise code integrity deployment](#approach_enterprise) section.
+To help simplify the deployment of Device Guard to your organization, Microsoft recommends that you group devices into the deployment scenarios described in this section. Device Guard is not a feature that organizations will just simply “turn on”; rather, it typically requires a phased implementation approach. To see where these scenarios fit into an overall Device Guard deployment approach, see the [Approach to enterprise code integrity deployment](#approach-enterprise) section.
 
 **Fixed-workload devices**
 
@@ -182,29 +182,29 @@ Device Guard is not a good way to manage devices in a Bring Your Own Device (BYO
 
 Code signing is crucial to the successful implementation of configurable code integrity policies. These policies can trust the signing certificates from both independent software vendors and customers. In Windows 10, all Windows Store applications are signed. Also, you can easily trust any other signed application by adding the signing certificate to the code integrity policy.
 
-For unsigned applications, customers have multiple options for signing them so that code integrity policies can trust them. The first option is traditional embedded code signing. Organizations that have in-house development teams can incorporate binary code signing into their application development process, and then simply add the signing certificate to their code integrity policies. The second option for signing unsigned applications is to use catalog files. In Windows 10, customers have the ability to create catalog files as they monitor the installation and initial run of an application. For more information about signing existing unsigned LOB applications or third-party applications, see the [Existing line-of-business applications](#existing_LOB) section.
+For unsigned applications, customers have multiple options for signing them so that code integrity policies can trust them. The first option is traditional embedded code signing. Organizations that have in-house development teams can incorporate binary code signing into their application development process, and then simply add the signing certificate to their code integrity policies. The second option for signing unsigned applications is to use catalog files. In Windows 10, customers have the ability to create catalog files as they monitor the installation and initial run of an application. For more information about signing existing unsigned LOB applications or third-party applications, see the [Existing line-of-business applications](#existing-lob) section.
 
-### 
+### <a href="" id="existing-lob"></a>
 
 **Existing line-of-business applications**
 
-Until now, existing LOB applications were difficult to trust if they were signed by a source other than the Windows Store or not signed at all. With Windows 10, signing your existing LOB and third-party unsigned applications is simplified. This new signing method does not require that applications be repackaged in any way. With catalog files, administrators can sign these unsigned applications simply by monitoring for an installation and initial startup. By using this monitoring information, an administrator can generate a catalog file. Catalog files are simply Secure Hash Algorithm 2 (SHA2) hash lists of discovered binaries. These binaries’ hash values are updated every time an application is updated and therefore require an updated catalog file. For simplified administration, consider incorporating embedded code signing into your application development process. For more information about how to generate catalog files, see the [Catalog files](#catalog_files) section.
+Until now, existing LOB applications were difficult to trust if they were signed by a source other than the Windows Store or not signed at all. With Windows 10, signing your existing LOB and third-party unsigned applications is simplified. This new signing method does not require that applications be repackaged in any way. With catalog files, administrators can sign these unsigned applications simply by monitoring for an installation and initial startup. By using this monitoring information, an administrator can generate a catalog file. Catalog files are simply Secure Hash Algorithm 2 (SHA2) hash lists of discovered binaries. These binaries’ hash values are updated every time an application is updated and therefore require an updated catalog file. For simplified administration, consider incorporating embedded code signing into your application development process. For more information about how to generate catalog files, see the [Catalog files](#catalog-files) section.
 
 **Note**  
 Catalog files are lists of individual binaries’ hash values. If the scanned application is updated, you will need to create a new catalog file. That said, binary signing is still highly recommended for any future applications so that no catalog files are needed.
 
  
 
-When you create a catalog file, you must sign it by using enterprise public key infrastructure (PKI), or a purchased code signing certificate. When signed, code integrity policies can trust the signer or signing certificate of those files. For information about catalog file signing, see the [Catalog files](#catalog_files) section.
+When you create a catalog file, you must sign it by using enterprise public key infrastructure (PKI), or a purchased code signing certificate. When signed, code integrity policies can trust the signer or signing certificate of those files. For information about catalog file signing, see the [Catalog files](#catalog-files) section.
 
 **Application development**
 
 Although in-house applications can be signed after packaging by using catalog files, Microsoft strongly recommends that embedded code signing be incorporated into your application development process. When signing applications, simply add the code signing certificate used to sign your applications to your code integrity policy. This ensures that your code integrity policy will trust any future application that is signed with that certificate. Embedding code signing into any in-house application development process is beneficial to your IT organization as you implement code integrity policies.
 
-## Hardware considerations
+## <a href="" id="hardware"></a>Hardware considerations
 
 
-Careful consideration about which hardware vendor and specific models to purchase during your next hardware refresh is vitally important to the success of your organization’s Device Guard implementation efforts. In alignment with your current hardware life cycle, consider the process that is discussed in the [Approach enterprise code integrity deployment](#approach_enterprise) section when you determine the appropriate order of hardware replacement in your organization. Device Guard should be deployed in phases; therefore, you have time to methodically plan for its implementation.
+Careful consideration about which hardware vendor and specific models to purchase during your next hardware refresh is vitally important to the success of your organization’s Device Guard implementation efforts. In alignment with your current hardware life cycle, consider the process that is discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section when you determine the appropriate order of hardware replacement in your organization. Device Guard should be deployed in phases; therefore, you have time to methodically plan for its implementation.
 
 Different hardware features are required to implement the various features of Device Guard. There will likely be some individual features that you will be able to enable with your current hardware and some that you will not. However, for organizations that want to implement Device Guard in its entirety, several advanced hardware features will be required. For additional details about the hardware features that are required for Device Guard components, see the following table.
 
@@ -228,8 +228,8 @@ Different hardware features are required to implement the various features of De
 <td align="left"><p>UEFI firmware version 2.3.1 or higher with UEFI Secure Boot and Platform Secure Boot</p></td>
 <td align="left"><p>UEFI Secure Boot ensures that the device boots only authorized code. Additionally, Boot Integrity, also known as Platform Secure Boot must be supported. You can validate it against the following Windows Hardware Compatibility Program requirements:</p>
 <ul>
-<li><p>[System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot)</p></li>
-<li><p>[System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](http://msdn.microsoft.com/library/windows/hardware/dn932807.aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby)</p></li>
+<li><p>[System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot)</p></li>
+<li><p>[System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](http://msdn.microsoft.com/library/windows/hardware/dn932807.aspx#system-fundamentals-firmware-cs-uefisecureboot-connectedstandby)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -259,7 +259,7 @@ Different hardware features are required to implement the various features of De
 </tr>
 <tr class="odd">
 <td align="left"><p>Secure firmware update process</p></td>
-<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
+<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Signed processor microcode updates</p></td>
@@ -270,29 +270,29 @@ Different hardware features are required to implement the various features of De
 
  
 
-## Device Guard deployment
+## <a href="" id="dg-deployment"></a>Device Guard deployment
 
 
 In this section, you learn about the following topics:
 
--   [Configure hardware-based security features](#configure_hardware). This section explains how to enable the hardware-based security features in Device Guard. Also, you verify that the features are enabled by using both Windows Management Infrastructure (WMI) and Msinfo32.exe.
+-   [Configure hardware-based security features](#configure-hardware). This section explains how to enable the hardware-based security features in Device Guard. Also, you verify that the features are enabled by using both Windows Management Infrastructure (WMI) and Msinfo32.exe.
 
--   [Catalog files](#catalog_files). In this section, you create, sign, and deploy catalog files. You deploy the catalog files by using both Group Policy and System Center Configuration Manager. Also, you use System Center Configuration Manager to inventory the deployed catalog files for reporting purposes.
+-   [Catalog files](#catalog-files). In this section, you create, sign, and deploy catalog files. You deploy the catalog files by using both Group Policy and System Center Configuration Manager. Also, you use System Center Configuration Manager to inventory the deployed catalog files for reporting purposes.
 
--   [Code integrity policies](#code_integrity_policies). This section provides information on how to create, audit, service, merge, deploy, and remove signed and unsigned configurable code integrity policies.
+-   [Code integrity policies](#code-integrity-policies). This section provides information on how to create, audit, service, merge, deploy, and remove signed and unsigned configurable code integrity policies.
 
-## Configure hardware-based security features
+## <a href="" id="configure-hardware"></a>Configure hardware-based security features
 
 
 Hardware-based security features make up a large part of Device Guard security offerings. VBS reinforces the most important feature of Device Guard: configurable code integrity. There are three steps to configure hardware-based security features in Device Guard:
 
 1.  **Verify that hardware requirements are met and enabled**. Verify that your client machines possess the necessary hardware to run these features. A list of hardware requirements for the hardware-based security features is available in the [Hardware considerations](#hardware) section.
 
-2.  **Enable the necessary Windows features**. There are several ways to enable the Windows features required for hardware-based security. For details on which Windows features are needed, see the [Windows feature requirements for virtualization-based security](#vb_security) section.
+2.  **Enable the necessary Windows features**. There are several ways to enable the Windows features required for hardware-based security. For details on which Windows features are needed, see the [Windows feature requirements for virtualization-based security](#vb-security) section.
 
-3.  **Enable desired features**. When the necessary hardware and Windows features have been enabled, you are ready to enable the desired hardware-based security features. For UEFI Secure Boot, see the [Enable UEFI Secure Boot](#enable_secureboot) section. For information about how to enable VBS protection of the KMCI service, see the [Enable virtualization-based protection of kernel mode code integrity](#enable_virtualbased) section. Finally, for information about how to enable Credential Guard, see the [Enable Credential Guard](#enable_CG) section.
+3.  **Enable desired features**. When the necessary hardware and Windows features have been enabled, you are ready to enable the desired hardware-based security features. For UEFI Secure Boot, see the [Enable UEFI Secure Boot](#enable-secureboot) section. For information about how to enable VBS protection of the KMCI service, see the [Enable virtualization-based protection of kernel mode code integrity](#enable-virtualbased) section. Finally, for information about how to enable Credential Guard, see the [Enable Credential Guard](#enable-cg) section.
 
-### 
+### <a href="" id="vb-security"></a>
 
 **Windows feature requirements for virtualization-based security**
 
@@ -307,9 +307,9 @@ You can configure these features manually by using Windows PowerShell or Deploym
 
 Figure 1. Enable operating system features for VBS
 
-After you enable these features, you can configure any hardware-based security features you want. For information about how to enable virtualization-based protection of kernel-mode code integrity, see the [Enable virtualization-based protection of kernel-mode code integrity](#enable_virtualbased) section. For information about how to enable UEFI Secure Boot, see the [Enable Unified Extensible Firmware Interface Secure Boot](#enable_secureboot) section. Finally, for additional information about how to enable Credential Guard, see the [Enable Credential Guard](#enable_CG) section.
+After you enable these features, you can configure any hardware-based security features you want. For information about how to enable virtualization-based protection of kernel-mode code integrity, see the [Enable virtualization-based protection of kernel-mode code integrity](#enable-virtualbased) section. For information about how to enable UEFI Secure Boot, see the [Enable Unified Extensible Firmware Interface Secure Boot](#enable-secureboot) section. Finally, for additional information about how to enable Credential Guard, see the [Enable Credential Guard](#enable-cg) section.
 
-### 
+### <a href="" id="enable-secureboot"></a>
 
 **Enable Unified Extensible Firmware Interface Secure Boot**
 
@@ -341,7 +341,7 @@ Microsoft recommends that you test-enable this feature on a group of test machin
 
 **Use Group Policy to deploy Secure Boot**
 
-
+<a href="" id="bkmk-depsecureboot"></a>
 1.  To create a new GPO, right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.
 
     ![figure 2](images/dg-fig2-createou.png)
@@ -375,11 +375,11 @@ Microsoft recommends that you test-enable this feature on a group of test machin
 
     Processed Device Guard policies are logged in event viewer at Application and Services Logs\\Microsoft\\Windows\\DeviceGuard-GPEXT\\Operational. When the **Turn On Virtualization Based Security** policy is successfully processed, event ID 7000 is logged, which contains the selected settings within the policy.
 
-### 
+### <a href="" id="enable-virtualbased"></a>
 
 **Enable virtualization-based security of kernel-mode code integrity**
 
-Before you begin this process, verify that the desired computer meets the hardware requirements for VBS found in the [Hardware considerations](#hardware) section, and enable the Windows features discussed in the [Virtualization-based security Windows feature requirements](#vb_security) section. When validated, you can enable virtualization-based protection of KMCI in one of two ways: manual configuration of the appropriate registry subkeys and Group Policy deployment.
+Before you begin this process, verify that the desired computer meets the hardware requirements for VBS found in the [Hardware considerations](#hardware) section, and enable the Windows features discussed in the [Virtualization-based security Windows feature requirements](#vb-security) section. When validated, you can enable virtualization-based protection of KMCI in one of two ways: manual configuration of the appropriate registry subkeys and Group Policy deployment.
 
 **Note**  
 All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. Microsoft recommends that you enable this feature on a group of test machines before you enable it on deployed machines.
@@ -433,13 +433,13 @@ To use Group Policy to configure VBS of KMCI:
 
     Processed Device Guard policies are logged in event viewer under Application and Services Logs\\Microsoft\\Windows\\DeviceGuard-GPEXT\\Operational. When the **Turn On Virtualization Based Security** policy has been successfully processed, event ID 7000 is logged, which contains the selected settings within the policy.
 
-### 
+### <a href="" id="enable-cg"></a>
 
 **Enable Credential Guard**
 
 Credential Guard provides an additional layer of credential protection specifically for domain users by storing the credentials within the virtualized container, away from both the kernel and user mode operating system. This makes it difficult for even a compromised system to obtain access to the credentials. In addition to the client-side enablement of Credential Guard, you can deploy additional mitigations at both the Certification Authority and domain controller level to prevent credential theft. Microsoft will be releasing details about these additional mitigations in the future.
 
-Before you begin this process, verify that the desired system meets the hardware requirements for VBS found in the [Hardware considerations](#hardware) section, and that you have enabled the Windows features laid out in the [Virtualization-based security Windows feature requirements](#vb_security) section. When validated, you can enable Credential Guard manually, by configuring the appropriate registry subkeys, or through Group Policy deployment.
+Before you begin this process, verify that the desired system meets the hardware requirements for VBS found in the [Hardware considerations](#hardware) section, and that you have enabled the Windows features laid out in the [Virtualization-based security Windows feature requirements](#vb-security) section. When validated, you can enable Credential Guard manually, by configuring the appropriate registry subkeys, or through Group Policy deployment.
 
 To configure VBS of Credential Guard manually:
 
@@ -610,20 +610,20 @@ The Enterprise edition of Windows 10 or Windows Server 2016 is required to crea
 
  
 
-### 
+### <a href="" id="create-catalog-files"></a>
 
 **Create catalog files**
 
 The creation of catalog files is the first step to add an unsigned application to a code integrity policy. To create a catalog file, copy each of the following commands into an elevated Windows PowerShell session, and then complete the steps:
 
 **Note**  
-When you establish a naming convention it makes it easier to detect deployed catalog files in the future. In this guide, you will use *\*-Contoso.cat* as the naming convention. For more information about why this practice is helpful to inventory or detect catalog files, see the [Inventory catalog files with System Center Configuration Manager](#inventory_cat_SCCM) section.
+When you establish a naming convention it makes it easier to detect deployed catalog files in the future. In this guide, you will use *\*-Contoso.cat* as the naming convention. For more information about why this practice is helpful to inventory or detect catalog files, see the [Inventory catalog files with System Center Configuration Manager](#inventory-cat-sccm) section.
 
  
 
 1.  Be sure that a code integrity policy is currently running in audit mode.
 
-    Package Inspector does not always detect installation files that have been removed from the machine during the installation process. To ensure that these binaries are also trusted, the code integrity policy that you created and audited in the [Create code integrity policies from golden PCs](#create_code_golden) and [Audit code integrity policies](#audit_code_integrity) sections should be deployed, in audit mode, to the system on which you are running Package Inspector.
+    Package Inspector does not always detect installation files that have been removed from the machine during the installation process. To ensure that these binaries are also trusted, the code integrity policy that you created and audited in the [Create code integrity policies from golden PCs](#create-code-golden) and [Audit code integrity policies](#audit-code-integrity) sections should be deployed, in audit mode, to the system on which you are running Package Inspector.
 
     **Note**  
     This process should **not** be performed on a system running an enforced Device Guard policy, only with a policy running in audit mode. If a policy is currently being enforced, you will not be able to install and run the application.
@@ -667,21 +667,21 @@ This scan catalogs the hash values for each discovered binary file. If the appli
 
  
 
-When finished, the files will be saved to your desktop. To trust this catalog file within a code integrity policy, the catalog must first be signed. Then, the signing certificate can be included in the code integrity policy, and the catalog file can be distributed to the individual client machines. Catalog files can be signed by using a certificate and SignTool.exe, a free tool available in the Windows SDK. For more information about signing catalog files with SignTool.exe, see the [Catalog signing with SignTool.exe](#catsign_signtool) section.
+When finished, the files will be saved to your desktop. To trust this catalog file within a code integrity policy, the catalog must first be signed. Then, the signing certificate can be included in the code integrity policy, and the catalog file can be distributed to the individual client machines. Catalog files can be signed by using a certificate and SignTool.exe, a free tool available in the Windows SDK. For more information about signing catalog files with SignTool.exe, see the [Catalog signing with SignTool.exe](#catsign-signtool) section.
 
-### 
+### <a href="" id="catsign-signtool"></a>
 
 **Catalog signing with SignTool.exe**
 
-Device Guard makes it easy for organizations to sign and trust existing unsigned LOB applications. In this section, you sign a catalog file you generated in a previous section by using PackageInspector.exe. For information about how to create catalog files, see the [Create catalog files](#create_catalog_files) section. In this example, you need the following:
+Device Guard makes it easy for organizations to sign and trust existing unsigned LOB applications. In this section, you sign a catalog file you generated in a previous section by using PackageInspector.exe. For information about how to create catalog files, see the [Create catalog files](#create-catalog-files) section. In this example, you need the following:
 
 -   SignTool.exe, found in the Windows software development kit (SDK—Windows 7 or later)
 
--   The catalog file that you generated in the [Create catalog files](#create_catalog_files) section, or another catalog file that you have created
+-   The catalog file that you generated in the [Create catalog files](#create-catalog-files) section, or another catalog file that you have created
 
 -   Internal certification authority (CA) code signing certificate or purchased code signing certificate
 
-If you do not have a code signing certificate, please see the [Create a Device Guard code signing certificate](#create_DG_code) section for a walkthrough of how to create one. In addition to using the certificate you create in the Create a Device Guard code signing certificate section, this example signs the catalog file that you created in the [Create catalog files](#create_catalog_files) section. If you are using an alternate certificate or catalog file, update the following steps with the appropriate variables and certificate. To sign the existing catalog file, copy each of the following commands into an elevated Windows PowerShell session:
+If you do not have a code signing certificate, please see the [Create a Device Guard code signing certificate](#create-dg-code) section for a walkthrough of how to create one. In addition to using the certificate you create in the Create a Device Guard code signing certificate section, this example signs the catalog file that you created in the [Create catalog files](#create-catalog-files) section. If you are using an alternate certificate or catalog file, update the following steps with the appropriate variables and certificate. To sign the existing catalog file, copy each of the following commands into an elevated Windows PowerShell session:
 
 1.  Initialize the variables that will be used:
 
@@ -710,11 +710,11 @@ If you do not have a code signing certificate, please see the [Create a Device G
     </table>
 
     **Note**  
-    In this example, you use the catalog file you created in the [Create catalog files](#create_catalog_files) section. If you are signing another catalog file, be sure to update the *$ExamplePath* and *$CatFileName* variables with the correct information.
+    In this example, you use the catalog file you created in the [Create catalog files](#create-catalog-files) section. If you are signing another catalog file, be sure to update the *$ExamplePath* and *$CatFileName* variables with the correct information.
 
      
 
-2.  Import the code signing certificate. Import the code signing certificate that will be used to sign the catalog file to the signing user’s personal store. In this example, you use the certificate that you created in the [Create a Device Guard code signing certificate](#create_DG_code) section.
+2.  Import the code signing certificate. Import the code signing certificate that will be used to sign the catalog file to the signing user’s personal store. In this example, you use the certificate that you created in the [Create a Device Guard code signing certificate](#create-dg-code) section.
 
 3.  Sign the catalog file with Signtool.exe:
 
@@ -750,14 +750,14 @@ If you do not have a code signing certificate, please see the [Create a Device G
 
     For testing purposes, you can manually copy signed catalog files to their intended folder. For large-scale implementations, Microsoft recommends that you use Group Policy File Preferences to copy the appropriate catalog files to all desired machines or an enterprise systems management product such as System Center Configuration Manager. Doing this simplifies the management of catalog versions, as well.
 
-### 
+### <a href="" id="deploy-cat-gp"></a>
 
 **Deploy catalog files with Group Policy**
 
 To simplify the management of catalog files, you can use Group Policy preferences to deploy catalog files to the appropriate PCs in your organization. The following process walks you through the deployment of a signed catalog file called LOBApp-Contoso.cat to a test OU called DG Enabled PCs with a GPO called **Contoso DG Catalog File GPO Test**.
 
 **Note**  
-This walkthrough requires that you have previously created a signed catalog file and have a Windows 10 client PC on which to test a Group Policy deployment. For more information about how to create and sign a catalog file, see the [Catalog files](#catalog_files) section.
+This walkthrough requires that you have previously created a signed catalog file and have a Windows 10 client PC on which to test a Group Policy deployment. For more information about how to create and sign a catalog file, see the [Catalog files](#catalog-files) section.
 
  
 
@@ -768,7 +768,7 @@ To deploy a catalog file with Group Policy:
 2.  Create a new GPO: right-click the DG Enabled PCs OU, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 13.
 
     **Note**  
-    The DG Enabled PCs OU is just an example of where to link the test GPO that you created in this section. You can use any OU name. Also, security group filtering is an option when you consider policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach_enterprise) section.
+    The DG Enabled PCs OU is just an example of where to link the test GPO that you created in this section. You can use any OU name. Also, security group filtering is an option when you consider policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section.
 
      
 
@@ -803,7 +803,7 @@ To deploy a catalog file with Group Policy:
 9.  In the **Destination File** box, type **C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\\LOBApp-Contoso.cat**.
 
     **Note**  
-    LOBApp-Contoso.cat is not a required catalog name: This name was used in the [Create catalog files](#create_catalog_files) section, and so it was used here, as well.
+    LOBApp-Contoso.cat is not a required catalog name: This name was used in the [Create catalog files](#create-catalog-files) section, and so it was used here, as well.
 
      
 
@@ -813,7 +813,7 @@ To deploy a catalog file with Group Policy:
 
 12. Close the Group Policy Management Editor, and then update the policy on the test Windows 10 machine by running GPUpdate.exe. When the policy has been updated, verify that the catalog file exists in C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE} on the Windows 10 machine.
 
-### 
+### <a href="" id="deploy-cat-sccm"></a>
 
 **Deploy catalog files with System Center Configuration Manager**
 
@@ -890,7 +890,7 @@ After you create the deployment package, deploy it to a collection so that the c
 
 11. Close the wizard.
 
-### 
+### <a href="" id="inventory-cat-sccm"></a>
 
 **Inventory catalog files with System Center Configuration Manager**
 
@@ -954,7 +954,7 @@ If nothing is displayed in this view, navigate to Software\\Last Software Scan i
 ## Code integrity policies
 
 
-Code integrity policies maintain the standards by which a computer running Windows 10 determines whether an application is trustworthy and can be run. For an overview of code integrity, see the [Configurable code integrity](#config_code) section.
+Code integrity policies maintain the standards by which a computer running Windows 10 determines whether an application is trustworthy and can be run. For an overview of code integrity, see the [Configurable code integrity](#config-code) section.
 
 A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. Code integrity policies follow a similar methodology, that begins with the establishment of a golden PC. Like when imaging, you can have multiple golden PCs based on model, department, application set, and so on. Although the thought process around the creation of code integrity policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional code integrity policies based on what should be allowed to be installed and run and for whom.
 
@@ -970,7 +970,7 @@ The following section assumes that you will deploy code integrity policies as pa
 
  
 
-### 
+### <a href="" id="code-integrity-policy-rules"></a>
 
 **Code integrity policy rules**
 
@@ -1031,7 +1031,7 @@ When you create code integrity policies with the **New-CIPolicy** cmdlet, you ca
 
  
 
-### 
+### <a href="" id="create-code-golden"></a>
 
 **Create code integrity policies from golden PCs**
 
@@ -1064,7 +1064,7 @@ To create a code integrity policy, copy each of the following commands into an e
      
 
     **Note**  
-    You can add the *–Fallback* parameter to catch any applications not discovered using the primary file rule level specified by the *–Level* parameter. For more information about file rule level options, see the [Code integrity policy rules](#code_integrity_policy_rules) section.
+    You can add the *–Fallback* parameter to catch any applications not discovered using the primary file rule level specified by the *–Level* parameter. For more information about file rule level options, see the [Code integrity policy rules](#code-integrity-policy-rules) section.
 
      
 
@@ -1080,33 +1080,33 @@ To create a code integrity policy, copy each of the following commands into an e
 After you complete these steps, the Device Guard binary file (DeviceGuardPolicy.bin) and original .xml file (IntialScan.xml) will be available on your desktop. You can use the binary version as a code integrity policy or sign it for additional security.
 
 **Note**  
-Microsoft recommends that you keep the original .xml file of the policy for use when you need to merge the code integrity policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge code integrity policies, see the [Merge code integrity policies](#merge_code_integrity) section.
+Microsoft recommends that you keep the original .xml file of the policy for use when you need to merge the code integrity policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge code integrity policies, see the [Merge code integrity policies](#merge-code-integrity) section.
 
  
 
-Microsoft recommends that every code integrity policy be run in audit mode before being enforced. Doing so allows administrators to discover any issues with the policy without receiving error message dialog boxes. For information about how to audit a code integrity policy, see the [Audit code integrity policies](#audit_code_integrity) section.
+Microsoft recommends that every code integrity policy be run in audit mode before being enforced. Doing so allows administrators to discover any issues with the policy without receiving error message dialog boxes. For information about how to audit a code integrity policy, see the [Audit code integrity policies](#audit-code-integrity) section.
 
-### 
+### <a href="" id="audit-code-integrity"></a>
 
 **Audit code integrity policies**
 
 When code integrity policies are run in audit mode, it allows administrators to discover any applications that were missed during an initial policy scan and to identify any new applications that have been installed and run since the original policy was created. While a code integrity policy is running in audit mode, any binary that runs and would have been denied had the policy been enforced is logged in the Applications and Services Logs\\Microsoft\\CodeIntegrity\\Operational event log. When these logged binaries have been validated, they can easily be added to a new code integrity policy. When the new exception policy is created, you can merge it with your existing code integrity policies.
 
 **Note**  
-Before you begin this process, you need to create a code integrity policy binary file. If you have not already done so, see the [Create a code integrity policy](#create_code_golden) section for a step-by-step walkthrough of the process to create a code integrity policy and convert it to binary format.
+Before you begin this process, you need to create a code integrity policy binary file. If you have not already done so, see the [Create a code integrity policy](#create-code-golden) section for a step-by-step walkthrough of the process to create a code integrity policy and convert it to binary format.
 
  
 
 To audit a code integrity policy with local policy:
 
-1.  Copy the DeviceGuardPolicy.bin file that you created in the [Create code integrity policies from golden PCs](#create_code_golden) section to C:\\Windows\\System32\\CodeIntegrity.
+1.  Copy the DeviceGuardPolicy.bin file that you created in the [Create code integrity policies from golden PCs](#create-code-golden) section to C:\\Windows\\System32\\CodeIntegrity.
 
 2.  On the system you want to run in audit mode, open the Local Group Policy Editor by running **GPEdit.msc**.
 
 3.  Navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard, and then select **Deploy Code Integrity Policy**. Enable this setting by using the file path C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 22.
 
     **Note**  
-    *DeviceGuardPolicy.bin* is not a required policy name. This name was simply used in the [Create code integrity policies from golden PCs](#create_code_golden) section and so was used here. Also, this policy file does not need to be copied to every system. Alternatively, you can copy the code integrity policies to a file share to which all computer accounts have access.
+    *DeviceGuardPolicy.bin* is not a required policy name. This name was simply used in the [Create code integrity policies from golden PCs](#create-code-golden) section and so was used here. Also, this policy file does not need to be copied to every system. Alternatively, you can copy the code integrity policies to a file share to which all computer accounts have access.
 
      
 
@@ -1134,18 +1134,18 @@ To audit a code integrity policy with local policy:
 
 6.  Validate any code integrity policy exceptions.
 
-    After you run a code integrity policy in audit mode, Microsoft recommends that each logged exception be researched and validated. In addition to discovering which application is causing the exception and ensuring that it should be added to the code integrity policy, be sure to check which file level should be used to trust each application. Although the Hash file rule level will catch all of these exceptions, it may not be the best way to trust all of the exceptions. For information about file rule levels and their purpose, see the [Code integrity policy rules](#code_integrity_policy_rules) section.
+    After you run a code integrity policy in audit mode, Microsoft recommends that each logged exception be researched and validated. In addition to discovering which application is causing the exception and ensuring that it should be added to the code integrity policy, be sure to check which file level should be used to trust each application. Although the Hash file rule level will catch all of these exceptions, it may not be the best way to trust all of the exceptions. For information about file rule levels and their purpose, see the [Code integrity policy rules](#code-integrity-policy-rules) section.
 
 7.  Create code integrity policy from audit events.
 
-    For information about how to create code integrity policies from audit events, see the [Create code integrity policies from golden PCs](#create_code_golden) section.
+    For information about how to create code integrity policies from audit events, see the [Create code integrity policies from golden PCs](#create-code-golden) section.
 
 **Note**  
 An alternative method to test a policy is to rename the test file to SIPolicy.p7b and drop it into C:\\Windows\\System32\\CodeIntegrity, rather than deploy it with the local machine policy.
 
  
 
-### 
+### <a href="" id="create-audit-code"></a>
 
 **Create an audit code integrity policy**
 
@@ -1159,7 +1159,7 @@ When you run code integrity policies in audit mode, validate any exceptions and 
 
 2.  Analyze audit results.
 
-    Before you create a code integrity policy from audit events, Microsoft recommends that each exception be analyzed, as discussed in steps 5 and 6 of the [Audit code integrity policies](#audit_code_integrity) section.
+    Before you create a code integrity policy from audit events, Microsoft recommends that each exception be analyzed, as discussed in steps 5 and 6 of the [Audit code integrity policies](#audit-code-integrity) section.
 
 3.  Generate a new code integrity policy from logged audit events:
 
@@ -1170,21 +1170,21 @@ When you create policies from audit events, you should carefully consider the fi
 
  
 
-After you complete these steps, the Device Guard audit policy .xml file (DeviceGuardAuditPolicy.xml) will be available on your desktop. You can now use this file to update the existing code integrity policy that you ran in audit mode by merging the two policies. For instructions on how to merge this audit policy with the existing code integrity policy, see the [Merge code integrity policies](#merge_code_integrity) section.
+After you complete these steps, the Device Guard audit policy .xml file (DeviceGuardAuditPolicy.xml) will be available on your desktop. You can now use this file to update the existing code integrity policy that you ran in audit mode by merging the two policies. For instructions on how to merge this audit policy with the existing code integrity policy, see the [Merge code integrity policies](#merge-code-integrity) section.
 
 **Note**  
-You may have noticed that you did not generate a binary version of this policy as you did in the [Create code integrity policies from golden PCs](#create_code_golden) section. This is because code integrity policies created from an audit log are not intended to run as stand-alone policies but rather to update existing code integrity policies.
+You may have noticed that you did not generate a binary version of this policy as you did in the [Create code integrity policies from golden PCs](#create-code-golden) section. This is because code integrity policies created from an audit log are not intended to run as stand-alone policies but rather to update existing code integrity policies.
 
  
 
-### 
+### <a href="" id="merge-code-integrity"></a>
 
 **Merge code integrity policies**
 
 When you develop code integrity policies, you will occasionally need to merge two policies. A common example is when a code integrity policy is initially created and audited. Another example is when you create a single master policy by using multiple code integrity policies previously created from golden PCs. Because each Windows 10 machine can have only one code integrity policy, it is important to properly maintain these policies. In this example, audit events have been saved into a secondary code integrity policy that you then merge with the initial code integrity policy.
 
 **Note**  
-The following example uses the code integrity policy .xml files that you created in the [Create code integrity policies from golden PCs](#create_code_golden) and [Audit code integrity policies](#audit_code_integrity) sections. You can follow this process, however, with any two code integrity policies you would like to combine.
+The following example uses the code integrity policy .xml files that you created in the [Create code integrity policies from golden PCs](#create-code-golden) and [Audit code integrity policies](#audit-code-integrity) sections. You can follow this process, however, with any two code integrity policies you would like to combine.
 
  
 
@@ -1215,14 +1215,14 @@ To merge two code integrity policies, complete the following steps in an elevate
 
     ` ConvertFrom-CIPolicy $MergedCIPolicy $CIPolicyBin `
 
-Now that you have created a new code integrity policy called NewDeviceGuardPolicy.bin, you can deploy the policy to systems manually or by using Group Policy or Microsoft client management solutions. For information about how to deploy this new policy with Group Policy, see the [Deploy and manage code integrity policies with Group Policy](#deploy_manage_code_GP) section.
+Now that you have created a new code integrity policy called NewDeviceGuardPolicy.bin, you can deploy the policy to systems manually or by using Group Policy or Microsoft client management solutions. For information about how to deploy this new policy with Group Policy, see the [Deploy and manage code integrity policies with Group Policy](#deploy-manage-code-gp) section.
 
 **Enforce code integrity policies**
 
 Every code integrity policy is created with audit mode enabled. After you have successfully deployed and tested a code integrity policy in audit mode and are ready to test the policy in enforced mode, complete the following steps in an elevated Windows PowerShell session:
 
 **Note**  
-Every code integrity policy should be tested in audit mode first. For information about how to audit code integrity policies, see the [Audit code integrity policies](#audit_code_integrity) section.
+Every code integrity policy should be tested in audit mode first. For information about how to audit code integrity policies, see the [Audit code integrity policies](#audit-code-integrity) section.
 
  
 
@@ -1237,7 +1237,7 @@ Every code integrity policy should be tested in audit mode first. For informatio
     `$CIPolicyBin=$CIPolicyPath+"EnforcedDeviceGuardPolicy.bin"`
 
     **Note**  
-    The initial code integrity policy that this section referenced was created in the [Create code integrity polices from golden PCs](#create_code_golden) section. If you are using a different code integrity policy, update the **CIPolicyPath** and **InitialCIPolicy** variables.
+    The initial code integrity policy that this section referenced was created in the [Create code integrity polices from golden PCs](#create-code-golden) section. If you are using a different code integrity policy, update the **CIPolicyPath** and **InitialCIPolicy** variables.
 
      
 
@@ -1263,13 +1263,13 @@ Every code integrity policy should be tested in audit mode first. For informatio
 
      
 
-Now that this policy has been enforced, you can deploy it to your test machines. Rename the policy to SIPolicy.p7b and copy it to C:\\Windows\\System32\\CodeIntegrity for testing, or deploy the policy through Group Policy by following the instructions in the [Deploy and manage code integrity policies with Group Policy](#deploy_manage_code_GP) section, or through client management software by following the instructions in the section “Deploying and managing code integrity policies by using Microsoft client management solutions.”
+Now that this policy has been enforced, you can deploy it to your test machines. Rename the policy to SIPolicy.p7b and copy it to C:\\Windows\\System32\\CodeIntegrity for testing, or deploy the policy through Group Policy by following the instructions in the [Deploy and manage code integrity policies with Group Policy](#deploy-manage-code-gp) section, or through client management software by following the instructions in the section “Deploying and managing code integrity policies by using Microsoft client management solutions.”
 
 **Signing code integrity policies with SignTool.exe**
 
-Signed code integrity policies give organizations the highest level of malware protection available in Windows 10. In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the machine. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed code integrity policies than unsigned ones. Before you sign and deploy a signed code integrity policy, Microsoft recommends that you audit the policy to discover any blocked applications that should be allowed to run. For more information about how to audit code integrity policies, see the [Audit code integrity policies](#audit_code_integrity) section.
+Signed code integrity policies give organizations the highest level of malware protection available in Windows 10. In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the machine. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed code integrity policies than unsigned ones. Before you sign and deploy a signed code integrity policy, Microsoft recommends that you audit the policy to discover any blocked applications that should be allowed to run. For more information about how to audit code integrity policies, see the [Audit code integrity policies](#audit-code-integrity) section.
 
-Signing code integrity policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward. If you do not currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Create a Device Guard code signing certificate](#create_DG_code) to create one with your on-premises CA. Before signing code integrity policies for the first time, be sure to enable rule options 9 and 10 to leave troubleshooting options available to test administrators. When validated and ready for enterprise deployment, you can remove these options. For information about how to add rule options, see the [Code integrity policy rules](#code_integrity_policy_rules) section.
+Signing code integrity policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward. If you do not currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Create a Device Guard code signing certificate](#create-dg-code) to create one with your on-premises CA. Before signing code integrity policies for the first time, be sure to enable rule options 9 and 10 to leave troubleshooting options available to test administrators. When validated and ready for enterprise deployment, you can remove these options. For information about how to add rule options, see the [Code integrity policy rules](#code-integrity-policy-rules) section.
 
 **Note**  
 Signing code integrity policies is the last step in a code integrity deployment. It is much more difficult to remove a signed code integrity policy than an unsigned one. Before you deploy a signed code integrity policy to deployed client computers, be sure to test its effect on a subset of machines.
@@ -1278,24 +1278,24 @@ To sign a code integrity policy with SignTool.exe, you need the following compon
 
 -   SignTool.exe, found in the Windows SDK (Windows 7 or later)
 
--   The binary format of the code integrity policy that you generated in the [Create code integrity policies from golden PCs](#create_code_golden) section or another code integrity policy that you have created
+-   The binary format of the code integrity policy that you generated in the [Create code integrity policies from golden PCs](#create-code-golden) section or another code integrity policy that you have created
 
 -   An internal CA code signing certificate or a purchased code signing certificate
 
  
 
-If you do not have a code signing certificate, see the [Create a Device Guard code signing certificate](#create_DG_code) section for instructions on how to create one. If you use an alternate certificate or code integrity policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing code integrity policy, copy each of the following commands into an elevated Windows PowerShell session:
+If you do not have a code signing certificate, see the [Create a Device Guard code signing certificate](#create-dg-code) section for instructions on how to create one. If you use an alternate certificate or code integrity policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing code integrity policy, copy each of the following commands into an elevated Windows PowerShell session:
 
 1.  Initialize the variables that will be used:
 
     `$CIPolicyPath=$env:userprofile+"\Desktop\" $InitialCIPolicy=$CIPolicyPath+"InitialScan.xml" $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
     **Note**  
-    This example uses the code integrity policy that you created in the [Create code integrity policies from golden PCs](#create_code_golden) section. If you are signing another policy, be sure to update the **$CIPolicyPath** and **$CIPolicyBin** variables with the correct information.
+    This example uses the code integrity policy that you created in the [Create code integrity policies from golden PCs](#create-code-golden) section. If you are signing another policy, be sure to update the **$CIPolicyPath** and **$CIPolicyBin** variables with the correct information.
 
      
 
-2.  Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the code integrity policy into the signing user’s personal store on the machine that will be doing the signing. In this example, you use the certificate that was created in the [Create a Device Guard code signing certificate](#create_DG_code) section.
+2.  Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the code integrity policy into the signing user’s personal store on the machine that will be doing the signing. In this example, you use the certificate that was created in the [Create a Device Guard code signing certificate](#create-dg-code) section.
 
 3.  Export the .cer code signing certificate. After the code signing certificate has been imported, export the .cer version to your desktop. This version will be added to the policy so that it can be updated later.
 
@@ -1313,7 +1313,7 @@ If you do not have a code signing certificate, see the [Create a Device Guard co
      
 
     **Note**  
-    Adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed code integrity policies, see the [Disable signed code integrity policies within Windows](#disable_signed_code) section.
+    Adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed code integrity policies, see the [Disable signed code integrity policies within Windows](#disable-signed-code) section.
 
      
 
@@ -1334,9 +1334,9 @@ If you do not have a code signing certificate, see the [Create a Device Guard co
 
      
 
-9.  Validate the signed file. When complete, the commands should output a signed policy file called DeviceGuardPolicy.bin.p7 to your desktop. You can deploy this file the same way you deploy an enforced or non-enforced policy. For information about how to deploy code integrity policies, see the [Deploy and manage code integrity policies with Group Policy](#deploy_manage_code_GP) section.
+9.  Validate the signed file. When complete, the commands should output a signed policy file called DeviceGuardPolicy.bin.p7 to your desktop. You can deploy this file the same way you deploy an enforced or non-enforced policy. For information about how to deploy code integrity policies, see the [Deploy and manage code integrity policies with Group Policy](#deploy-manage-code-gp) section.
 
-### 
+### <a href="" id="disable-unsigned-code"></a>
 
 **Disable unsigned code integrity policies**
 
@@ -1348,7 +1348,7 @@ There may come a time when an administrator wants to disable a code integrity po
 
 If the code integrity policy was deployed by using Group Policy, the GPO that is currently enabling and deploying the policy must be set to disabled. Then, the code integrity policy will be disabled on the next computer restart.
 
-### 
+### <a href="" id="disable-signed-code"></a>
 
 **Disable signed code integrity policies within Windows**
 
@@ -1407,7 +1407,7 @@ If the signed code integrity policy has been deployed using by using Group Polic
 
 6.  Restart the client computer.
 
-### 
+### <a href="" id="disable-signed-code-bios"></a>
 
 **Disable signed code integrity policies within the BIOS**
 
@@ -1417,14 +1417,14 @@ There may be a time when signed code integrity policies cause a boot failure. Be
 
 -   &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\
 
-### 
+### <a href="" id="deploy-manage-code-gp"></a>
 
 **Deploy and manage code integrity policies with Group Policy**
 
 Code integrity policies can easily be deployed and managed with Group Policy. A Device Guard administrative template will be available in Windows Server 2016 that allows you to simplify deployment of Device Guard hardware-based security features and code integrity policies. The following procedure walks you through how to deploy a code integrity policy called **DeviceGuardPolicy.bin** to a test OU called *DG Enabled PCs* by using a GPO called **Contoso GPO Test**.
 
 **Note**  
-This walkthrough requires that you have previously created a code integrity policy and have a Windows 10 client PC on which to test a Group Policy deployment. For more information about how to create a code integrity policy, see the [Create code integrity polices from golden PCs](#create_code_golden) section.
+This walkthrough requires that you have previously created a code integrity policy and have a Windows 10 client PC on which to test a Group Policy deployment. For more information about how to create a code integrity policy, see the [Create code integrity polices from golden PCs](#create-code-golden) section.
 
  
 
@@ -1440,7 +1440,7 @@ To deploy and manage a code integrity policy with Group Policy:
 2.  Create a new GPO: right-click the DG Enabled PCs OU, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 24.
 
     **Note**  
-    The DG Enabled PCs OU is just an example of where to link the test GPO created in this section. Any OU name can be used. Also, security group filtering is an option when considering policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach_enterprise) section.
+    The DG Enabled PCs OU is just an example of where to link the test GPO created in this section. Any OU name can be used. Also, security group filtering is an option when considering policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section.
 
      
 
@@ -1463,7 +1463,7 @@ To deploy and manage a code integrity policy with Group Policy:
     In this policy setting, you specify either the local path in which the policy will exist on the client computer or a Universal Naming Convention (UNC) path that the client computers will look to retrieve the latest version of the policy. This example copied the DeviceGuardPolicy.bin file onto the test machine and will enable this setting and use the file path C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 26.
 
     **Note**  
-    *DeviceGuardPolicy.bin* is not a required policy name: It was simply used in the [Create code integrity policies from golden PCs](#create_code_golden) section and so is used here, as well. Also, this policy file does not need to be copied to every computer. Alternatively, you can copy the code integrity policies to a file share to which the computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
+    *DeviceGuardPolicy.bin* is not a required policy name: It was simply used in the [Create code integrity policies from golden PCs](#create-code-golden) section and so is used here, as well. Also, this policy file does not need to be copied to every computer. Alternatively, you can copy the code integrity policies to a file share to which the computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
 
      
 
@@ -1476,9 +1476,9 @@ To deploy and manage a code integrity policy with Group Policy:
 
      
 
-7.  Close the Group Policy Management Editor, and then restart the Windows 10 test machine. Restarting the client computer updates the code integrity policy. For information about how to audit code integrity policies, see the [Audit code integrity policies](#audit_code_integrity)section.
+7.  Close the Group Policy Management Editor, and then restart the Windows 10 test machine. Restarting the client computer updates the code integrity policy. For information about how to audit code integrity policies, see the [Audit code integrity policies](#audit-code-integrity)section.
 
-## Create a Device Guard code signing certificate
+## <a href="" id="create-dg-code"></a>Create a Device Guard code signing certificate
 
 
 To sign catalog files or code integrity policies internally, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip these steps and proceed to the sections that outline the steps to sign catalog files and code integrity policies. If you have not purchased a certificate but have an internal CA, complete these steps to create a code signing certificate:

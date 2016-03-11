@@ -23,13 +23,13 @@ Both manage-bde and the BitLocker cmdlets can be used to perform any task that c
 
 Repair-bde is a special circumstance tool that is provided for disaster recovery scenarios in which a BitLocker protected drive cannot be unlocked normally or using the recovery console.
 
-1.  [Manage-bde](#BKMK_managebde)
+1.  [Manage-bde](#bkmk-managebde)
 
-2.  [Repair-bde](#BKMK_repairbde)
+2.  [Repair-bde](#bkmk-repairbde)
 
-3.  [BitLocker cmdlets for Windows PowerShell](#BKMK_blcmdlets)
+3.  [BitLocker cmdlets for Windows PowerShell](#bkmk-blcmdlets)
 
-## Manage-bde
+## <a href="" id="bkmk-managebde"></a>Manage-bde
 
 
 Manage-bde is a command-line tool that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the manage-bde options, see the [Manage-bde](https://technet.microsoft.com/library/ff829849.aspx) command-line reference.
@@ -91,7 +91,7 @@ manage-bde -protectors -add -pw C:
 manage-bde -on C:
 ```
 
-## Repair-bde
+## <a href="" id="bkmk-repairbde"></a>Repair-bde
 
 
 You may experience a problem that damages an area of a hard disk on which BitLocker stores critical information. This kind of problem may be caused by a hard disk failure or if Windows exits unexpectedly.
@@ -124,7 +124,7 @@ The following limitations exist for Repair-bde:
 
 For more information about using repair-bde see [Repair-bde](http://technet.microsoft.com/library/ff829851.aspx)
 
-## BitLocker cmdlets for Windows PowerShell
+## <a href="" id="bkmk-blcmdlets"></a>BitLocker cmdlets for Windows PowerShell
 
 
 Windows PowerShell cmdlets provide a new way for administrators to use when working with BitLocker. Using Windows PowerShell's scripting capabilities, administrators can integrate BitLocker options into existing scripts with ease. The list below displays the available BitLocker cmdlets.

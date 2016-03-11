@@ -26,17 +26,17 @@ In addition, you can specify the file patterns that you want to extract by using
 ## In this topic
 
 
--   [To run the USMTutils tool with the /extract option](#BKMK_extractSyntax)
+-   [To run the USMTutils tool with the /extract option](#bkmk-extractsyntax)
 
--   [To extract all files from a compressed migration store](#BKMK_extractAllFiles)
+-   [To extract all files from a compressed migration store](#bkmk-extractallfiles)
 
--   [To extract specific file types from an encrypted compressed migration store](#BKMK_extractSpecificFiles)
+-   [To extract specific file types from an encrypted compressed migration store](#bkmk-extractspecificfiles)
 
--   [To extract all but one, or more, file types from an encrypted compressed migration store](#BKMK_excludeFilePattern)
+-   [To extract all but one, or more, file types from an encrypted compressed migration store](#bkmk-excludefilepattern)
 
--   [To extract file types using the include pattern and the exclude pattern](#BKMK_includeExcludeFiles)
+-   [To extract file types using the include pattern and the exclude pattern](#bkmk-includeexcludefiles)
 
-### To run the USMTutils tool with the /extract option
+### <a href="" id="bkmk-extractsyntax"></a>To run the USMTutils tool with the /extract option
 
 To extract files from the compressed migration store onto the destination computer, use the following USMTutils syntax:
 
@@ -62,7 +62,7 @@ Where the placeholders have the following values:
 
 -   *&lt;filename&gt;* is the location and name of the text file that contains the encryption key.
 
-### To extract all files from a compressed migration store
+### <a href="" id="bkmk-extractallfiles"></a>To extract all files from a compressed migration store
 
 To extract everything from a compressed migration store to a file on the C:\\ drive, type:
 
@@ -70,7 +70,7 @@ To extract everything from a compressed migration store to a file on the C:\\ dr
 usmtutils /extract D:\MyMigrationStore\USMT\store.mig C:\ExtractedStore
 ```
 
-### To extract specific file types from an encrypted compressed migration store
+### <a href="" id="bkmk-extractspecificfiles"></a>To extract specific file types from an encrypted compressed migration store
 
 To extract specific files, such as .txt and .pdf files, from an encrypted compressed migration store, type:
 
@@ -80,7 +80,7 @@ usmtutils /extract D:\MyMigrationStore\USMT\store.mig /i:"*.txt,*.pdf" C:\Extrac
 
 In this example, the file is encrypted and the encryption key is located in a text file called encryptionKey.
 
-### To extract all but one, or more, file types from an encrypted compressed migration store
+### <a href="" id="bkmk-excludefilepattern"></a>To extract all but one, or more, file types from an encrypted compressed migration store
 
 To extract all files except for one file type, such as .exe files, from an encrypted compressed migration store, type:
 
@@ -88,7 +88,7 @@ To extract all files except for one file type, such as .exe files, from an encry
 usmtutils /extract D:\MyMigrationStore\USMT\store.mig /e:*.exe C:\ExtractedStore /decrypt:AES_128 /key:password /l:C:\usmtutilslog.txt
 ```
 
-### To extract file types using the include pattern and the exclude pattern
+### <a href="" id="bkmk-includeexcludefiles"></a>To extract file types using the include pattern and the exclude pattern
 
 To extract files from a compressed migration store, and to exclude files of one type (such as .exe files) while including only specific files, use both the include pattern and the exclude pattern, as in this example:
 

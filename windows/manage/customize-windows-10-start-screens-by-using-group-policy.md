@@ -22,12 +22,12 @@ author: jdeckerMS
 
 **In this article**
 
--   [Operating system requirements](#operating_system_requirements)
--   [How Start layout control works](#BKMK_HowStartScreenControlWorks)
--   [Use Group Policy to apply a customized Start layout in a domain](#BKMK_DomainGPODeployment)
--   [Use Group Policy to apply a customized Start layout on the local computer](#BKMK_LocalGPImport)
--   [Update a customized Start layout](#BKMK_UpdateStartScreenLayout)
--   [Related topics](#related_topics)
+-   [Operating system requirements](#operating-system-requirements)
+-   [How Start layout control works](#bkmk-howstartscreencontrolworks)
+-   [Use Group Policy to apply a customized Start layout in a domain](#bkmk-domaingpodeployment)
+-   [Use Group Policy to apply a customized Start layout on the local computer](#bkmk-localgpimport)
+-   [Update a customized Start layout](#bkmk-updatestartscreenlayout)
+-   [Related topics](#related-topics)
 
 In Windows 10 Enterprise and Windows 10 Education, you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
@@ -47,7 +47,7 @@ Start layout control using Group Policy is supported in Windows 10 Enterprise a
 
 The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed. In Group Policy, ADMX files are used to define Registry-based policy settings in the Administrative Templates category. To find out how to create a central store for Administrative Templates files, see [article 929841](http://go.microsoft.com/fwlink/p/?LinkId=691687) in the Microsoft Knowledge Base.
 
-## How Start layout control works
+## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 
 
 Two features enable Start layout control:
@@ -66,7 +66,7 @@ To learn how customize Start to include your line-of-business apps when you depl
 
  
 
-## Use Group Policy to apply a customized Start layout in a domain
+## <a href="" id="bkmk-domaingpodeployment"></a>Use Group Policy to apply a customized Start layout in a domain
 
 
 To apply the Start layout to users in a domain, use the Group Policy Management Console (GPMC) to configure a domain-based Group Policy Object (GPO) that sets **Start Layout** policy settings in the **Start Menu and Taskbar** administrative template for users in a domain.
@@ -79,13 +79,13 @@ The .xml file with the Start layout must be located on shared network storage th
 
 For information about deploying GPOs in a domain, see [Working with Group Policy Objects](http://go.microsoft.com/fwlink/p/?LinkId=620889).
 
-## Use Group Policy to apply a customized Start layout on the local computer
+## <a href="" id="bkmk-localgpimport"></a>Use Group Policy to apply a customized Start layout on the local computer
 
 
 You can use the Local Group Policy Editor to provide a customized Start layout for any user who signs in on the local computer. To display the customized Start layout for any user who signs in, configure **Start Layout** policy settings for the **Start Menu and Taskbar** administrative template. You can use the **Start Menu and Taskbar** administrative template in **User Configuration** or **Computer Configuration**.
 
 **Note**  
-This procedure applies the policy settings on the local computer only. For information about deploying the Start layout to users in a domain, see [Use Group Policy to deploy a customized Start layout in a domain](#BKMK_DomainGPODeployment), later in this topic.
+This procedure applies the policy settings on the local computer only. For information about deploying the Start layout to users in a domain, see [Use Group Policy to deploy a customized Start layout in a domain](#bkmk-domaingpodeployment), later in this topic.
 
 This procedure creates a Local Group Policy that applies to all users on the computer. To configure Local Group Policy that applies to a specific user or group on the computer, see [Step-by-Step Guide to Managing Multiple Local Group Policy Objects](http://go.microsoft.com/fwlink/p/?LinkId=620881). The guide was written for Windows Vista and the procedures still apply to Windows 10.
 
@@ -122,7 +122,7 @@ This procedure adds the customized Start layout to the user configuration, which
 
      
 
-## Update a customized Start layout
+## <a href="" id="bkmk-updatestartscreenlayout"></a>Update a customized Start layout
 
 
 After you use Group Policy to apply a customized Start layout on a computer or in a domain, you can update the layout simply by replacing the .xml file that is specified in the Start Layout policy settings with a file with a newer timestamp.

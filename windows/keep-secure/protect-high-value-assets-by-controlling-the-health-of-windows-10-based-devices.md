@@ -19,12 +19,12 @@ author: brianlic-msft
 **In this article**
 
 -   [Introduction](#introduction)
--   [Description of a robust end-to-end security solution](#description_of_a_robust_end-to-end_security_solution)
--   [Protect devices and enterprise credentials against threats](#protect_devices_and_enterprise_credentials_against_threats)
--   [Detect an unhealthy Windows 10-based device](#detect_unhealthy)
--   [Control the security of a Windows 10-based device before access is granted](#control_the_security_of_a_windows_10-based_device_before_access_is_granted)
--   [Takeaways and summary](#takeaways_and_summary)
--   [Related topics](#related_topics)
+-   [Description of a robust end-to-end security solution](#description-of-a-robust-end-to-end-security-solution)
+-   [Protect devices and enterprise credentials against threats](#protect-devices-and-enterprise-credentials-against-threats)
+-   [Detect an unhealthy Windows 10-based device](#detect-unhealthy)
+-   [Control the security of a Windows 10-based device before access is granted](#control-the-security-of-a-windows-10-based-device-before-access-is-granted)
+-   [Takeaways and summary](#takeaways-and-summary)
+-   [Related topics](#related-topics)
 
 This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
 
@@ -88,7 +88,7 @@ Access to content is then authorized to the appropriate level of trust for whate
 
 Depending on the requirements and the sensitivity of the managed asset, device health status can be combined with user identity information when processing an access request. Access to content is then authorized to the appropriate level of trust. The Conditional Access engine may be structured to allow additional verification as needed by the sensitivity of the managed asset. For example, if access to high-value data is requested, additional security authentication may need to be established by querying the user to answer a phone call before access is granted.
 
-### Microsoft’s security investments in Windows 10
+### <a href="" id="microsoft-s-security-investments-in-windows-10"></a>Microsoft’s security investments in Windows 10
 
 In Windows 10, there are three pillars of investments:
 
@@ -164,7 +164,7 @@ This section describes what Windows 10 offers in terms of security defenses and
 
 The most aggressive forms of malware try to insert themselves into the boot process as early as possible so that they can take control of the operating system early and prevent protection mechanisms and antimalware software from working. This type of malicious code is often called a rootkit or bootkit. The best way to avoid having to deal with low-level malware is to secure the boot process so that the device is protected from the very start.
 
-Windows 10 supports multiple layers of boot protection. Some of these features are available only if specific types of hardware are installed. For more information, see the [Hardware requirements](#hardware_req) section.
+Windows 10 supports multiple layers of boot protection. Some of these features are available only if specific types of hardware are installed. For more information, see the [Hardware requirements](#hardware-req) section.
 
 ![figure 4](images/hva-fig4-hardware.png)
 
@@ -279,7 +279,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
 
     Although Secure Boot is a proactive form of protection, health attestation is a reactive form of boot protection. Health attestation ships disabled in Windows and is enabled by an antimalware or an MDM vendor. Unlike Secure Boot, health attestation will not stop the boot process and enter remediation when a measurement does not work. But with conditional access control, health attestation will help to prevent access to high-value assets.
 
-### Virtualization-based security
+### <a href="" id="virtual"></a>Virtualization-based security
 
 Virtualization-based security provides a new trust boundary for Windows 10. leverages Hyper-V hypervisor technology to enhance platform security. Virtualization-based security provides a secure execution environment to run specific Windows trusted code (trustlet) and to protect sensitive data.
 
@@ -404,9 +404,9 @@ Device health attestation leverages the TPM 2.0 to provide cryptographically str
 
 For Windows 10-based devices, Microsoft introduces a new public API that will allow MDM software to access a remote attestation service called Windows Health Attestation Service. A health attestation result, in addition with other elements, can be used to allow or deny access to networks, apps, or services, based on whether devices prove to be healthy.
 
-For more information on device health attestation, see the [Detect an unhealthy Windows 10-based device](#detect_unhealthy) section.
+For more information on device health attestation, see the [Detect an unhealthy Windows 10-based device](#detect-unhealthy) section.
 
-### Hardware requirements
+### <a href="" id="hardware-req"></a>Hardware requirements
 
 The following table details the hardware requirements for both virtualization-based security services and the health attestation feature. For more information, see [Minimum hardware requirements](http://go.microsoft.com/fwlink/p/?LinkId=733951).
 
@@ -459,7 +459,7 @@ The following table details the hardware requirements for both virtualization-ba
 
 This section presented information about several closely related controls in Windows 10. The multi-layer defenses and in-depth approach helps to eradicate low-level malware during boot sequence. Virtualization-based security is a fundamental operating system architecture change that adds a new security boundary. Device Guard and Credential Guard respectively help to block untrusted code and protect corporate domain credentials from theft and reuse. This section also briefly discussed the importance of managing devices and patching vulnerabilities. All these technologies can be used to harden and lock down devices while limiting the risk of attackers compromising them.
 
-## Detect an unhealthy Windows 10-based device
+## <a href="" id="detect-unhealthy"></a>Detect an unhealthy Windows 10-based device
 
 
 As of today, many organizations only consider devices to be compliant with company policy after they’ve passed a variety of checks that show, for example, that the operating system is in the correct state, properly configured, and has security protection enabled. Unfortunately, with today’s systems, this form of reporting is not entirely reliable because malware can spoof a software statement about system health. A rootkit, or a similar low-level exploit, can report a false healthy state to traditional compliance tools.
@@ -560,7 +560,7 @@ The following process describes how health boot measurements are sent to the hea
 
 The device health attestation solution involves different components that are TPM, Health Attestation CSP, and the Windows Health Attestation Service. Those components are described in this section.
 
-### Trusted Platform Module
+### <a href="" id="trusted-platform-module-"></a>Trusted Platform Module
 
 *It’s all about TPM 2.0 and endorsement certificates.* This section describes how PCRs (that contain system configuration data), endorsement key (EK) (that act as an identity card for TPM), SRK (that protect keys) and AIKs (that can report platform state) are used for health attestation reporting.
 
@@ -840,7 +840,7 @@ MDM servers do not need to create or download a client to manage Windows 10. Fo
 
 The third-party MDM server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users.
 
-### Management of Windows Defender by third-party MDM
+### <a href="" id="management-of-windows-defender-by-third-party-mdm-"></a>Management of Windows Defender by third-party MDM
 
 This management infrastructure makes it possible for IT pros to use MDM-capable products like Intune, to manage health attestation, Device Guard, or Windows Defender on Windows 10-based devices, including BYODs that aren’t domain joined. IT pros will be able to manage and configure all of the actions and settings they are familiar with customizing by using Intune with Intune Endpoint Protection on down-level operating systems. Admins that currently only manage domain joined devices through Group Policy will find it easy to transition to managing Windows 10-based devices by using MDM because many of the settings and actions are shared across both mechanisms.
 
@@ -856,7 +856,7 @@ If the device is not registered, the user will get a message with instructions o
 
 ![figure 11](images/hva-fig10-conditionalaccesscontrol.png)
 
-### Office 365 conditional access control
+### <a href="" id="office-365-conditional-access-control-"></a>Office 365 conditional access control
 
 Azure AD enforces conditional access policies to secure access to Office 365 services. A tenant admin can create a conditional access policy that blocks a user on a non-compliant device from accessing an Office 365 service. The user must conform to the company’s device policies before access can be granted to the service. Alternately, the admin can also create a policy that requires users to just enroll their devices to gain access to an Office 365 service. Policies may be applied to all users of an organization, or limited to a few target groups and enhanced over time to include additional target groups.
 
@@ -898,7 +898,7 @@ At the present time, conditional access policies are selectively enforced on use
 
  
 
-### Cloud and on-premises apps conditional access control
+### <a href="" id="cloud-and-on-premises-apps-conditional-access-control-"></a>Cloud and on-premises apps conditional access control
 
 Conditional access control is a powerful policy evaluation engine built into Azure AD. It gives IT pros an easy way to create access rules beyond Office 365 that evaluate the context of a user's logon to make real-time decisions about which applications they should be allowed to access.
 

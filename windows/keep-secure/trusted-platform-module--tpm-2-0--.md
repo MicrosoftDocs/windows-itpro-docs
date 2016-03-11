@@ -21,13 +21,13 @@ author: brianlic-msft
 **In this article**
 
 -   [Overview](#overview)
--   [TPM 1.2 vs. 2.0 comparison](#tpm_1.2_vs._2.0_comparison)
--   [Why TPM 2.0?](#why_tpm_2.0_)
--   [Discrete or firmware TPM?](#discrete_or_firmware_tpm_)
--   [TPM 2.0 Compliance for Windows 10 in the future](#tpm_2.0_compliance_for_windows_10_in_the_future)
--   [TPM and Windows Features](#tpm_and_windows_features)
--   [Chipset options for TPM 2.0](#chipset_options_for_tpm_2.0)
--   [OEM Feedback and Status on TPM 2.0 system availability](#oem_feedback_and_status_on_tpm_2.0_system_availability)
+-   [TPM 1.2 vs. 2.0 comparison](#tpm-1-2-vs--2-0-comparison)
+-   [Why TPM 2.0?](#why-tpm-2-0-)
+-   [Discrete or firmware TPM?](#discrete-or-firmware-tpm-)
+-   [TPM 2.0 Compliance for Windows 10 in the future](#tpm-2-0-compliance-for-windows-10-in-the-future)
+-   [TPM and Windows Features](#tpm-and-windows-features)
+-   [Chipset options for TPM 2.0](#chipset-options-for-tpm-2-0)
+-   [OEM Feedback and Status on TPM 2.0 system availability](#oem-feedback-and-status-on-tpm-2-0-system-availability)
 
 This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows 10.
 
@@ -181,7 +181,7 @@ The following table defines which Windows features require TPM support. Some fea
 <td align="left">n/a</td>
 <td align="left">Required</td>
 <td align="left">Required</td>
-<td align="left">For Windows 10, Version 1511, TPM 1.2 or 2.0 is highly recommended. If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.</td>
+<td align="left">For Windows 10, version 1511, TPM 1.2 or 2.0 is highly recommended. If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.</td>
 </tr>
 <tr class="even">
 <td align="left">Device Health Attestation</td>

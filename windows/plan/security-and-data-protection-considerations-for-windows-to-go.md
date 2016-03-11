@@ -18,11 +18,11 @@ author: TrudyHa
 
 **In this article**
 
--   [Backup and restore](#backup_and_restore)
+-   [Backup and restore](#backup-and-restore)
 -   [BitLocker](#bitlocker)
--   [Disk discovery and data leakage](#disk_discovery_and_data_leakage)
--   [Security certifications for Windows To Go](#security_certifications_for_windows_to_go)
--   [Related topics](#related_topics)
+-   [Disk discovery and data leakage](#disk-discovery-and-data-leakage)
+-   [Security certifications for Windows To Go](#security-certifications-for-windows-to-go)
+-   [Related topics](#related-topics)
 
 One of the most important requirements to consider when you plan your Windows To Go deployment is to ensure that the data, content, and resources you work with in the Windows To Go workspace is protected and secure.
 
@@ -41,7 +41,7 @@ We recommend that you use BitLocker with your Windows To Go drives to protect th
 You can enable BitLocker while using the Windows To Go Creator wizard as part of the drive provisioning process before first use; or it can be enabled afterward by the user from within the Windows To Go workspace.
 
 **Tip**  
-If the Windows To Go Creator wizard is not able to enable BitLocker, see [Why can't I enable BitLocker from Windows To Go Creator?](windows-to-go-frequently-asked-questions.md#wtg_faq_blfail)
+If the Windows To Go Creator wizard is not able to enable BitLocker, see [Why can't I enable BitLocker from Windows To Go Creator?](windows-to-go-frequently-asked-questions.md#wtg-faq-blfail)
 
  
 

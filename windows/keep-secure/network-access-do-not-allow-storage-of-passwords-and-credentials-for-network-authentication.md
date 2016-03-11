@@ -18,8 +18,8 @@ author: brianlic-msft
 **In this article**
 
 -   [Reference](#reference)
--   [Security considerations](#security_considerations)
--   [Related topics](#related_topics)
+-   [Security considerations](#security-considerations)
+-   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Do not allow storage of passwords and credentials for network authentication** security policy setting.
 

@@ -17,11 +17,11 @@ author: CFaw
 -   [Create and assign a role entry in the database](#sec01)
 -   [Associate the role with a computer in the database](#sec02)
 -   [Verify database access in the MDT simulation environment](#sec03)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer. For the purposes of this topic, the application we are adding is Adobe Reader XI. In addition to using computer-specific entries in the database, you can use roles in MDT to group settings together.
 
-## Create and assign a role entry in the database
+## <a href="" id="sec01"></a>Create and assign a role entry in the database
 
 
 1.  On MDT01, using Deployment Workbench, in the MDT Production deployment share, expand **Advanced Configuration** and then expand **Database**.
@@ -38,7 +38,7 @@ This topic will show you how to add applications to a role in the MDT database a
 
 Figure 12. The Standard PC role with the application added
 
-## Associate the role with a computer in the database
+## <a href="" id="sec02"></a>Associate the role with a computer in the database
 
 
 After creating the role, you can associate it with one or more computer entries.
@@ -53,7 +53,7 @@ After creating the role, you can associate it with one or more computer entries.
 
 Figure 13. The Standard PC role added to PC00075 (having ID 1 in the database).
 
-## Verify database access in the MDT simulation environment
+## <a href="" id="sec03"></a>Verify database access in the MDT simulation environment
 
 
 When the database is populated, you can use the MDT simulation environment to simulate a deployment. The applications are not installed, but you can see which applications would be installed if you did a full deployment of the computer.

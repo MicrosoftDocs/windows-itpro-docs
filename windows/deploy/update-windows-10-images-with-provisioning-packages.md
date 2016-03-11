@@ -20,10 +20,10 @@ author: CFaw
 **In this article**
 
 -   [Advantages](#advantages)
--   [Create package](#create_package)
--   [Add package to image](#add_package_to_image)
--   [Learn more](#learn_more)
--   [Related topics](#related_topics)
+-   [Create package](#create-package)
+-   [Add package to image](#add-package-to-image)
+-   [Learn more](#learn-more)
+-   [Related topics](#related-topics)
 
 Use a provisioning package to apply settings, profiles, and file assets to a Windows 10 image.
 

@@ -18,11 +18,11 @@ author: TrudyHa
 
 **In this article**
 
--   [High-level requirements](#high-level_requirements)
--   [Deployment tools](#deployment_tools)
--   [Management tools](#management_tools)
+-   [High-level requirements](#high-level-requirements)
+-   [Deployment tools](#deployment-tools)
+-   [Management tools](#management-tools)
 -   [Activation](#activation)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 There are specific infrastructure requirements to deploy and manage Windows 10 that should be in place prior to significant Windows 10 deployments within your organization.
 

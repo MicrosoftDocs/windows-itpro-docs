@@ -13,16 +13,16 @@ author: CFaw
 
 USMT includes two tools that migrate settings and data: ScanState and LoadState. ScanState collects information from the source computer, and LoadState applies that information to the destination computer.
 
--   [ScanState Process](#BKMK_SSProcess)
+-   [ScanState Process](#bkmk-ssprocess)
 
--   [LoadState Process](#BKMK_LSProcess)
+-   [LoadState Process](#bkmk-lsprocess)
 
     **Note**  
     For more information about how USMT processes the rules and the XML files, see [Conflicts and Precedence](conflicts-and-precedence-usmt-win7-usmt-win8.md).
 
      
 
-## The ScanState Process
+## <a href="" id="bkmk-ssprocess"></a>The ScanState Process
 
 
 When you run the ScanState tool on the source computer, it goes through the following process:
@@ -78,7 +78,7 @@ When you run the ScanState tool on the source computer, it goes through the foll
 
      
 
-## The LoadState Process
+## <a href="" id="bkmk-lsprocess"></a>The LoadState Process
 
 
 The LoadState process is very similar to the ScanState process. The ScanState tool collects migration units such as file, registry key, or registry values from the source computer and saves them to the store. Similarly, the LoadState tool collects migration units from the store and applies them to the destination computer.

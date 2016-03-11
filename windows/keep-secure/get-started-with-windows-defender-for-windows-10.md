@@ -17,9 +17,9 @@ author: brianlic-msft
 
 **In this article**
 
--   [Manage Windows Defender endpoints through Active Directory and WSUS](#manage_windows_defender_endpoints_through_active_directory_and_wsus)
--   [Apply updates to Windows Defender endpoints](#apply_updates_to_windows_defender_endpoints)
--   [Related topics](#related_topics)
+-   [Manage Windows Defender endpoints through Active Directory and WSUS](#manage-windows-defender-endpoints-through-active-directory-and-wsus)
+-   [Apply updates to Windows Defender endpoints](#apply-updates-to-windows-defender-endpoints)
+-   [Related topics](#related-topics)
 
 IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), and apply updates to endpoints.
 

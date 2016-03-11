@@ -22,12 +22,12 @@ author: TrudyHa
 
 **In this article**
 
--   [Reviewing Files in ACT Log File Format](#reviewing_files_in_act_log_file_format)
--   [Uploading Files to the ACT Log Processing Service Share After Setting Permissions](#uploading_files_to_the_act_log_processing_service_share_after_setting_permissions)
--   [Working Around Windows Firewall on the Computer That Hosts the ACT Log Processing Service Share](#working_around_windows_firewall_on_the_computer_that_hosts_the_act_log_processing_service_share)
--   [Viewing and Assigning "Log on as a service" Permissions](#viewing_and_assigning__log_on_as_a_service__permissions)
--   [Starting the ACT Log Processing Service](#starting_the_act_log_processing_service)
--   [Related topics](#related_topics)
+-   [Reviewing Files in ACT Log File Format](#reviewing-files-in-act-log-file-format)
+-   [Uploading Files to the ACT Log Processing Service Share After Setting Permissions](#uploading-files-to-the-act-log-processing-service-share-after-setting-permissions)
+-   [Working Around Windows Firewall on the Computer That Hosts the ACT Log Processing Service Share](#working-around-windows-firewall-on-the-computer-that-hosts-the-act-log-processing-service-share)
+-   [Viewing and Assigning "Log on as a service" Permissions](#viewing-and-assigning--log-on-as-a-service--permissions)
+-   [Starting the ACT Log Processing Service](#starting-the-act-log-processing-service)
+-   [Related topics](#related-topics)
 
 The following solutions may help you resolve issues that are related to the Application Compatibility Toolkit (ACT) Log Processing Service.
 

@@ -19,27 +19,27 @@ This topic for the IT professional explains how can you plan your BitLocker depl
 
 When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following topics will help you collect information that you can use to frame your decision-making process about deploying and managing BitLocker systems.
 
--   [Audit your environment](#BKMK_audit)
+-   [Audit your environment](#bkmk-audit)
 
--   [Encryption keys and authentication](#BKK_encrypt)
+-   [Encryption keys and authentication](#bkk-encrypt)
 
--   [TPM hardware configurations](#BKMK_TPMConfigurations)
+-   [TPM hardware configurations](#bkmk-tpmconfigurations)
 
--   [Non-TPM hardware configurations](#BKMK_NonTPM)
+-   [Non-TPM hardware configurations](#bkmk-nontpm)
 
--   [Disk configuration considerations](#BKMK_disk)
+-   [Disk configuration considerations](#bkmk-disk)
 
--   [BitLocker provisioning](#BKMK_prov)
+-   [BitLocker provisioning](#bkmk-prov)
 
--   [Used Disk Space Only encryption](#BKK_used)
+-   [Used Disk Space Only encryption](#bkk-used)
 
--   [Active Directory Domain Services considerations](#BKMK_addscons)
+-   [Active Directory Domain Services considerations](#bkmk-addscons)
 
--   [FIPS support for recovery password protector](#BKMK_FIPSsupport)
+-   [FIPS support for recovery password protector](#bkmk-fipssupport)
 
 -   [BitLocker Group Policy settings](bitlocker-group-policy-settings.md)
 
-## Audit your environment
+## <a href="" id="bkmk-audit"></a>Audit your environment
 
 
 To plan your enterprise deployment of BitLocker, you must first understand your current environment. Conduct an informal audit to define your current policies, procedures, and hardware environment. Begin by reviewing your existing corporate security policies as they relate to disk encryption software. If your organization is not currently using disk encryption software, none of these policies will exist. If you are using disk encryption software, then you might need to modify your organization's policies to address the capabilities of BitLocker.
@@ -56,7 +56,7 @@ Use the following questions to help you document your organization's current dis
 
 5.  What policies exist to control computer decommissioning or retirement?
 
-## Encryption keys and authentication
+## <a href="" id="bkk-encrypt"></a>Encryption keys and authentication
 
 
 BitLocker helps prevent unauthorized access to data on lost or stolen computers by:
@@ -178,7 +178,7 @@ If there are areas of your organization where data residing on user computers is
 
 The protection differences provided by multifactor authentication methods cannot be easily quantified. Consider each authentication method's impact on Helpdesk support, user education, user productivity, and automated systems management processes.
 
-## TPM hardware configurations
+## <a href="" id="bkmk-tpmconfigurations"></a>TPM hardware configurations
 
 
 In your deployment plan, identify what TPM-based hardware platforms will be supported. Document the hardware models from an OEM of your choice, so that their configurations can be tested and supported. TPM hardware requires special consideration during all aspects of planning and deployment.
@@ -245,7 +245,7 @@ An endorsement key can be created at various points in the TPM’s lifecycle, bu
 
 For more information about the TPM and the TCG, see the Trusted Computing Group: Trusted Platform Module (TPM) Specifications (<http://go.microsoft.com/fwlink/p/?linkid=69584>).
 
-## Non-TPM hardware configurations
+## <a href="" id="bkmk-nontpm"></a>Non-TPM hardware configurations
 
 
 Devices that do not include a TPM can still be protected by drive encryption. Windows To Go workspaces can be BitLocker protected using a startup password and PCs without a TPM can use a startup key.
@@ -260,7 +260,7 @@ Use the following questions to identify issues that might affect your deployment
 
 Test your individual hardware platforms with the BitLocker system check option while you are enabling BitLocker. The system check will ensure that BitLocker can read the recovery information from a USB device and encryption keys correctly before it encrypts the volume. CD and DVD drives cannot act as a block storage device and cannot be used to store the BitLocker recovery material.
 
-## Disk configuration considerations
+## <a href="" id="bkmk-disk"></a>Disk configuration considerations
 
 
 To function correctly, BitLocker requires a specific disk configuration. BitLocker requires two partitions that meet the following requirements:
@@ -275,7 +275,7 @@ Windows Recovery Environment (Windows RE) is an extensible recovery platform tha
 
 Windows RE can also be used from boot media other than the local hard disk. If you choose not to install Windows RE on the local hard disk of BitLocker-enabled computers, you can use alternate boot methods, such as Windows Deployment Services, CD-ROM, or USB flash drive, for recovery.
 
-## BitLocker provisioning
+## <a href="" id="bkmk-prov"></a>BitLocker provisioning
 
 
 In Windows Vista and Windows 7, BitLocker was provisioned post installation for system and data volumes through either the manage-bde command line interface or the Control Panel user interface. With newer operating systems, BitLocker can be easily provisioned before the operating system is installed. Preprovisioning requires that the computer have a TPM.
@@ -286,7 +286,7 @@ When using the control panel options, administrators can choose to **Turn on Bit
 
 Administrators can enable BitLocker prior to operating system deployment from the Windows Pre-installation Environment (WinPE). This is done with a randomly generated clear key protector applied to the formatted volume and encrypting the volume prior to running the Windows setup process. If the encryption uses the Used Disk Space Only option this step takes only a few seconds and so incorporates well into regular deployment processes.
 
-## Used Disk Space Only encryption
+## <a href="" id="bkk-used"></a>Used Disk Space Only encryption
 
 
 The BitLocker Setup wizard provides administrators the ability to choose the Used Disk Space Only or Full encryption method when enabling BitLocker for a volume. Administrators can use the new BitLocker Group Policy setting to enforce either Used Disk Space Only or Full disk encryption.
@@ -297,7 +297,7 @@ Used Disk Space Only means that only the portion of the drive that contains data
 
 Full drive encryption means that the entire drive will be encrypted, regardless of whether data is stored on it or not. This is useful for drives that have been repurposed and may contain data remnants from their previous use.
 
-## Active Directory Domain Services considerations
+## <a href="" id="bkmk-addscons"></a>Active Directory Domain Services considerations
 
 
 BitLocker integrates with Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure Group Policy settings to enable backup of BitLocker or TPM recovery information. Before configuring these settings verify that access permissions have been granted to perform the backup.
@@ -401,7 +401,7 @@ To initialize the TPM successfully so that you can turn on BitLocker requires th
 
 9.  Click **Finish** to apply the permissions settings.
 
-## FIPS support for recovery password protector
+## <a href="" id="bkmk-fipssupport"></a>FIPS support for recovery password protector
 
 
 Functionality introduced in Windows Server 2012 R2 and Windows 8.1, allows BitLocker to be fully functional in FIPS mode.

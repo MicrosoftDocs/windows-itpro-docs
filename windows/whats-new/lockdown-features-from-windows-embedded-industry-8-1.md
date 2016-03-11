@@ -46,7 +46,7 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 <tr class="odd">
 <td align="left"><p>[Keyboard Filter]( http://go.microsoft.com/fwlink/p/?LinkId=626761): block hotkeys and other key combinations</p></td>
 <td align="left">[Keyboard Filter](http://go.microsoft.com/fwlink/p/?LinkId=708391)</td>
-<td align="left"><p>Keyboard filter is added in Windows 10, Version 1511. As in Windows Embedded Industry 8.1, Keyboard Filter is an optional component that can be turned on via <strong>Turn Windows Features On/Off</strong>. Keyboard Filter (in addition to the WMI configuration previously available) will be configurable through Windows Imaging and Configuration Designer (ICD) in the SMISettings path.</p></td>
+<td align="left"><p>Keyboard filter is added in Windows 10, version 1511. As in Windows Embedded Industry 8.1, Keyboard Filter is an optional component that can be turned on via <strong>Turn Windows Features On/Off</strong>. Keyboard Filter (in addition to the WMI configuration previously available) will be configurable through Windows Imaging and Configuration Designer (ICD) in the SMISettings path.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Shell Launcher](http://go.microsoft.com/fwlink/p/?LinkId=626676): launch a Classic Windows application on sign-on</p></td>

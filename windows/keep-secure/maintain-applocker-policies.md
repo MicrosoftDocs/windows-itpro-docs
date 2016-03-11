@@ -33,9 +33,9 @@ Common AppLocker maintenance scenarios include:
 
 There are two methods you can use to maintain AppLocker policies:
 
--   [Maintaining AppLocker policies by using Group Policy](#BKMK_AppLkr_Use_GP)
+-   [Maintaining AppLocker policies by using Group Policy](#bkmk-applkr-use-gp)
 
--   [Maintaining AppLocker policies on the local computer](#BKMK_AppLkr_Use_LocSnapin)
+-   [Maintaining AppLocker policies on the local computer](#bkmk-applkr-use-locsnapin)
 
 As new apps are deployed or existing apps are removed by your organization or updated by the software publisher, you might need to make revisions to your rules and update the Group Policy Object (GPO) to ensure that your policy is current.
 
@@ -46,7 +46,7 @@ You should not edit an AppLocker rule collection while it is being enforced in G
 
  
 
-## Maintaining AppLocker policies by using Group Policy
+## <a href="" id="bkmk-applkr-use-gp"></a>Maintaining AppLocker policies by using Group Policy
 
 
 For every scenario, the steps to maintain an AppLocker policy distributed by Group Policy include the following tasks.
@@ -85,7 +85,7 @@ After testing, import the AppLocker policy back into the GPO for implementation.
 
 After deploying a policy, evaluate the policy's effectiveness.
 
-## Maintaining AppLocker policies by using the Local Security Policy snap-in
+## <a href="" id="bkmk-applkr-use-locsnapin"></a>Maintaining AppLocker policies by using the Local Security Policy snap-in
 
 
 For every scenario, the steps to maintain an AppLocker policy by using the Local Group Policy Editor or the Local Security Policy snap-in include the following tasks.

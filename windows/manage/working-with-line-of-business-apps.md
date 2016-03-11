@@ -22,7 +22,7 @@ Developers within your own company, or ISVs that you invite, can become LOB publ
 
 One advantage of making apps available through Store for Business is that the app has been signed by the Store, and uses the standard Store policies. For companies that can’t submit their application through the Windows Dev Center (for example, those needing additional capabilities or due to compliance purposes), [Sideloading](http://go.microsoft.com/fwlink/p/?LinkId=623433) is also supported in Windows 10.
 
-## Adding LOB apps to your private store
+## <a href="" id="adding-lob-apps"></a>Adding LOB apps to your private store
 
 
 Your Store for Business admin and ISV each own different parts of the process for getting LOB apps created, submitted, and deployed to your employees. They’ll use the Store for Business portal, and the Windows Dev center on MSDN. Here’s what’s involved:
@@ -41,7 +41,7 @@ What you'll have to set up:
 
 -   LOB publishers need to have an app in the Store, or have an app ready to submit to the Store.
 
-### Add an LOB publisher (admin)
+### <a href="" id="add-lob-publisher"></a>Add an LOB publisher (admin)
 
 For developers within your own organization, or ISVs you're working with to create LOB apps, you'll need to invite them to become a LOB publisher.
 
@@ -51,7 +51,7 @@ For developers within your own organization, or ISVs you're working with to crea
 2.  Click **Settings**, and then choose **LOB publishers**.
 3.  On the Line-of business publishers page, click **Add** to complete a form and send an email invitation to a developer.
 
-### Submit apps (LOB publisher)
+### <a href="" id="submit-lob-app"></a>Submit apps (LOB publisher)
 
 The developer receives an email invite to become an LOB publisher for your company. Once they accept the invite, they can log in to the Windows Dev Center to create an app submission for your company. The info here assumes that devs or ISVs have an active developer account.
 
@@ -79,7 +79,7 @@ After an app is published and available in the Store, ISVs publish an updated ve
 
 For more information, see [Organizational licensing options]( http://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](http://go.microsoft.com/fwlink/p/?LinkId=627543).
 
-### Add app to inventory (admin)
+### <a href="" id="add-lob-app-to-inventory"></a>Add app to inventory (admin)
 
 After an ISV submits the LOB app for your company, the Store for Businessadmin needs to accept the app.
 

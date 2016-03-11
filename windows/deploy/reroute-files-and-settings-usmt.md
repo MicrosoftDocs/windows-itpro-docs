@@ -15,13 +15,13 @@ To reroute files and settings, create a custom .xml file and specify this file n
 
 In this topic:
 
--   [Reroute a Folder](#BKMK_RerouteFolder)
+-   [Reroute a Folder](#bkmk-reroutefolder)
 
--   [Reroute a Specific File Type](#BKMK_RerouteSpecFileType)
+-   [Reroute a Specific File Type](#bkmk-reroutespecfiletype)
 
--   [Reroute a Specific File](#BKMK_RerouteSpecificFile)
+-   [Reroute a Specific File](#bkmk-reroutespecificfile)
 
-## Reroute a Folder
+## <a href="" id="bkmk-reroutefolder"></a>Reroute a Folder
 
 
 The following custom .xml file migrates the directories and files from C:\\EngineeringDrafts into the My Documents folder of every user. %CSIDL\_PERSONAL% is the virtual folder representing the My Documents desktop item, which is equivalent to CSIDL\_MYDOCUMENTS.
@@ -50,7 +50,7 @@ The following custom .xml file migrates the directories and files from C:\\Engin
 </migration>
 ```
 
-## Reroute a Specific File Type
+## <a href="" id="bkmk-reroutespecfiletype"></a>Reroute a Specific File Type
 
 
 The following custom .xml file reroutes .mp3 files located in the fixed drives on the source computer into the C:\\Music folder on the destination computer.
@@ -78,7 +78,7 @@ The following custom .xml file reroutes .mp3 files located in the fixed drives o
 </migration> 
 ```
 
-## Reroute a Specific File
+## <a href="" id="bkmk-reroutespecificfile"></a>Reroute a Specific File
 
 
 The following custom .xml file migrates the Sample.doc file from C:\\EngineeringDrafts into the My Documents folder of every user. %CSIDL\_PERSONAL% is the virtual folder representing the My Documents desktop item, which is equivalent to CSIDL\_MYDOCUMENTS.

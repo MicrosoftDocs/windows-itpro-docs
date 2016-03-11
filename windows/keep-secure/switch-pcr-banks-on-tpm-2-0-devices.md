@@ -23,7 +23,7 @@ PCR\[N\] = HASHalg( PCR\[N\] || ArgumentOfExtend )
 
 The existing value is concatenated with the argument of the TPM Extend operation. The resulting concatenation is then used as input to the associated hashing algorithm, which computes a digest of the input. This computed digest becomes the new value of the PCR.
 
-The [TCG PC Client Specific Platform TPM Profile for TPM 2.0](http://www.trustedcomputinggroup.org/files/static_page_files/DA21120F-1A4B-B294-D0B41C9F9432A352/PC Client Specific Platform TPM Profile for TPM 2.0 v43.pdf) defines the inclusion of at least one PCR bank with 24 registers. The only way to reset the first 16 PCRs is to reset the TPM itself. This restriction helps ensure that the value of those PCRs can only be modified via the TPM Extend operation.
+The [TCG PC Client Specific Platform TPM Profile for TPM 2.0](http://go.microsoft.com/fwlink/p/?LinkId=746577) defines the inclusion of at least one PCR bank with 24 registers. The only way to reset the first 16 PCRs is to reset the TPM itself. This restriction helps ensure that the value of those PCRs can only be modified via the TPM Extend operation.
 
 Some TPM PCRs are used as checksums of log events. The log events are extended in the TPM as the events occur. Later, an auditor can validate the logs by computing the expected PCR values from the log and comparing them to the PCR values of the TPM. Since the first 16 TPM PCRs cannot be modified arbitrarily, a match between an expected PCR value in that range and the actual TPM PCR value provides assurance of an unmodified log.
 

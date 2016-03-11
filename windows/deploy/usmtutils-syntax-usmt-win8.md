@@ -24,13 +24,13 @@ This topic describes the syntax for the utilities available in User State Migrat
 ## In This Topic
 
 
-[Usmtutils.exe](#BKMK_Usmtutils_exe)
+[Usmtutils.exe](#bkmk-usmtutils-exe)
 
-[Verify Options](#BKMK_VerifyOptions)
+[Verify Options](#bkmk-verifyoptions)
 
-[Extract Options](#BKMK_ExtractOptions)
+[Extract Options](#bkmk-extractoptions)
 
-## Usmtutils.exe
+## <a href="" id="bkmk-usmtutils-exe"></a>Usmtutils.exe
 
 
 The following table lists command-line options for USMTutils.exe. The sections that follow provide further command-line options for the **/verify** and the **/extract** options.
@@ -68,19 +68,19 @@ usmtutils \[/ec | /rd *&lt;storeDir&gt;* | /verify *&lt;filepath&gt;* \[options\
 <tr class="even">
 <td align="left"><p><strong>/verify</strong></p></td>
 <td align="left"><p>Returns information on whether the compressed migration store is intact or whether it contains corrupted files or a corrupted catalog.</p>
-<p>See [Verify Options](#BKMK_VerifyOptions) for syntax and options to use with <strong>/verify</strong>.</p></td>
+<p>See [Verify Options](#bkmk-verifyoptions) for syntax and options to use with <strong>/verify</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/extract</strong></p></td>
 <td align="left"><p>Recovers files from a compressed USMT migration store.</p>
-<p>See [Extract Options](#BKMK_ExtractOptions) for syntax and options to use with <strong>/extract</strong>.</p></td>
+<p>See [Extract Options](#bkmk-extractoptions) for syntax and options to use with <strong>/extract</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-## Verify Options
+## <a href="" id="bkmk-verifyoptions"></a>Verify Options
 
 
 Use the **/verify** option when you want to determine whether a compressed migration store is intact or whether it contains corrupted files or a corrupted catalog. For more information on how to use the **/verify** option, see [Verify the Condition of a Compressed Migration Store](verify-the-condition-of-a-compressed-migration-store.md).
@@ -199,7 +199,7 @@ Some examples of **/verify** commands:
 
 -   `usmtutils /verify:failureonly D:\MyMigrationStore\store.mig /decrypt:AES_192 /keyfile:D:\encryptionKey.txt`
 
-## Extract Options
+## <a href="" id="bkmk-extractoptions"></a>Extract Options
 
 
 Use the **/extract** option to recover files from a compressed USMT migration store if it will not restore normally with loadstate. For more information on how to use the **/extract** option, see [Extract Files from a Compressed USMT Migration Store](extract-files-from-a-compressed-usmt-migration-store.md).

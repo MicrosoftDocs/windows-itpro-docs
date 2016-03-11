@@ -29,7 +29,7 @@ When a full Start layout is applied with this method, the users cannot pin, unpi
 
  
 
-## How Start layout control works
+## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 
 
 Two features enable Start layout control:
@@ -43,7 +43,7 @@ Two features enable Start layout control:
 
 -   In MDM, you set the path to the .xml file that defines the Start layout using an OMA-URI setting, which is based on the [Policy configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkID=623244).
 
-## Create a policy for your customized Start layout
+## <a href="" id="bkmk-domaingpodeployment"></a>Create a policy for your customized Start layout
 
 
 This example uses Microsoft Intune to configure an MDM policy that applies a customized Start layout. See the documentation for your MDM solution for help in applying the policy.

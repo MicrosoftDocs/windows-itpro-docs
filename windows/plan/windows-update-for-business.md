@@ -19,10 +19,10 @@ author: TrudyHa
 **In this article**
 
 -   [Introduction](#introduction)
--   [Deploy Windows Update for Business in your organization](#deploy_windows_update_for_business_in_your_organization)
--   [Eligible devices](#eligible_devices)
--   [OS upgrades and updates](#os_upgrades_and_updates)
--   [Related topics](#related_topics)
+-   [Deploy Windows Update for Business in your organization](#deploy-windows-update-for-business-in-your-organization)
+-   [Eligible devices](#eligible-devices)
+-   [OS upgrades and updates](#os-upgrades-and-updates)
+-   [Related topics](#related-topics)
 
 Get an overview of how you can implement and deploy a Windows Update for Business solution and how to maintain enrolled systems.
 
@@ -42,7 +42,7 @@ Together, these Windows Update for Business features help reduce device manageme
 ## Deploy Windows Update for Business in your organization
 
 
-For Windows 10, Version 1511, Windows Update for Business is enabled using a set of client-side configurations, allowing you to manage how and when Windows-based devices receive updates and upgrades. These capabilities use the Windows Update service like any other Windows 10 clients, but provides controls to help businesses validate update quality as well as time their update deployments to machines through the use of Group Policy Objects. Windows Update for Business also incorporates smart peer-to-peer networking for distribution of Windows updates, which will help maintain bandwidth efficiency in the absence of a WSUS solution.
+For Windows 10, version 1511, Windows Update for Business is enabled using a set of client-side configurations, allowing you to manage how and when Windows-based devices receive updates and upgrades. These capabilities use the Windows Update service like any other Windows 10 clients, but provides controls to help businesses validate update quality as well as time their update deployments to machines through the use of Group Policy Objects. Windows Update for Business also incorporates smart peer-to-peer networking for distribution of Windows updates, which will help maintain bandwidth efficiency in the absence of a WSUS solution.
 
 ## Eligible devices
 
@@ -56,7 +56,7 @@ In Windows 10, Windows Update for Business recognizes three deployment categori
 
 -   **Upgrades**
 
-    -   Examples: Windows 10 (Build 10240) to Windows 10, Version 1511; CBB 1 to CBB 2
+    -   Examples: Windows 10 (Build 10240) to Windows 10, version 1511; CBB 1 to CBB 2
 
         **Note**  
         In the Windows 10 servicing model, new CBBs will be declared 2-3 times per year.

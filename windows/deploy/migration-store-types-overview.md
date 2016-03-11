@@ -16,13 +16,13 @@ When planning your migration, you should determine which migration store type be
 ## In This Topic
 
 
-[Migration Store Types](#BKMK_Types)
+[Migration Store Types](#bkmk-types)
 
-[Local Store vs. Remote Store](#BKMK_LocalVRemote)
+[Local Store vs. Remote Store](#bkmk-localvremote)
 
-[The /localonly Command-Line Option](#BKMK_LocalOnly)
+[The /localonly Command-Line Option](#bkmk-localonly)
 
-## Migration Store Types
+## <a href="" id="bkmk-types"></a>Migration Store Types
 
 
 This section describes the three migration store types available in USMT.
@@ -45,7 +45,7 @@ The following flowchart illustrates the procedural differences between a local m
 
 ![migration store comparison](images/dep-win8-l-usmt-migrationcomparemigstores.gif)
 
-## Local Store vs. Remote Store
+## <a href="" id="bkmk-localvremote"></a>Local Store vs. Remote Store
 
 
 If you have enough space and you are migrating the user state back to the same computer, storing data on a local device is normally the best option to reduce server storage costs and network performance issues. You can store the data locally either on a different partition or on a removable device such as a USB flash drive (UFD). Also, depending on the imaging technology that you are using, you might be able to store the data on the partition that is being re-imaged, if the data will be protected from deletion during the process. To increase performance, store the data on high-speed drives that use a high-speed network connection. It is also good practice to ensure that the migration is the only task the server is performing.
@@ -57,7 +57,7 @@ If possible, have users store their data within their %UserProfile%\\My Document
 
  
 
-### The /localonly Command-Line Option
+### <a href="" id="bkmk-localonly"></a>The /localonly Command-Line Option
 
 You should use this option to exclude the data from removable drives and network drives mapped on the source computer. For more information about what is excluded when you specify **/LocalOnly**, see [ScanState Syntax](scanstate-syntax-usmt-win7-usmt-win8.md).
 

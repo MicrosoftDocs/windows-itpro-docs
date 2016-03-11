@@ -18,9 +18,9 @@ author: jdeckerMS
 
 **In this article**
 
--   [Apps included in Windows 10 Mobile](#apps_included_in_windows_10_mobile)
--   [Get product ID and AUMID for other apps](#get_product_id_and_aumid_for_other_apps)
--   [Related topics](#related_topics)
+-   [Apps included in Windows 10 Mobile](#apps-included-in-windows-10-mobile)
+-   [Get product ID and AUMID for other apps](#get-product-id-and-aumid-for-other-apps)
+-   [Related topics](#related-topics)
 
 You can use the product ID and Application User Model (AUMID) in Lockdown.xml to specify apps that will be available to the user.
 

@@ -28,19 +28,19 @@ When you use User State Migration Tool (USMT) 10.0 to gather and restore user s
 ## In This Topic
 
 
--   [What Will Migrate Offline?](#BKMK_WhatWillMigrate)
+-   [What Will Migrate Offline?](#bkmk-whatwillmigrate)
 
--   [What Offline Environments are Supported?](#BKMK_OfflineEnvironments)
+-   [What Offline Environments are Supported?](#bkmk-offlineenvironments)
 
--   [User-Group Membership and Profile Control](#BKMK_UserGroupMembership)
+-   [User-Group Membership and Profile Control](#bkmk-usergroupmembership)
 
--   [Command-Line Options](#BKMK_CommandLineOptions)
+-   [Command-Line Options](#bkmk-commandlineoptions)
 
--   [Environment Variables](#BKMK_EnvironmentVariables)
+-   [Environment Variables](#bkmk-environmentvariables)
 
--   [Offline.xml Elements](#BKMK_OfflineXML)
+-   [Offline.xml Elements](#bkmk-offlinexml)
 
-## What Will Migrate Offline?
+## <a href="" id="bkmk-whatwillmigrate"></a>What Will Migrate Offline?
 
 
 The following user data and settings migrate offline, similar to an online migration:
@@ -59,7 +59,7 @@ The following user data and settings migrate offline, similar to an online migra
 
 For exceptions to what you can migrate offline, see [What Does USMT Migrate?](what-does-usmt-migrate-usmt-win7-usmt-win8.md)
 
-## What Offline Environments are Supported?
+## <a href="" id="bkmk-offlineenvironments"></a>What Offline Environments are Supported?
 
 
 The following table defines the supported combination of online and offline operating systems in USMT.
@@ -94,7 +94,7 @@ It is possible to run the ScanState tool while the drive remains encrypted by su
 
  
 
-## User-Group Membership and Profile Control
+## <a href="" id="bkmk-usergroupmembership"></a>User-Group Membership and Profile Control
 
 
 User-group membership is not preserved during offline migrations. You must configure a **&lt;ProfileControl&gt;** section in the Config.xml file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
@@ -117,7 +117,7 @@ User-group membership is not preserved during offline migrations. You must confi
 
 For information about the format of a Config.xml file, see [Config.xml File](configxml-file-usmt-win7-usmt-win8.md).
 
-## Command-Line Options
+## <a href="" id="bkmk-commandlineoptions"></a>Command-Line Options
 
 
 An offline migration can either be enabled by using a configuration file on the command line, or by using one of the following command line options:
@@ -158,7 +158,7 @@ An offline migration can either be enabled by using a configuration file on the 
 
 You can use only one of the **/offline**,**/offlineWinDir** , or **/OfflineWinOld** command-line options at a time; USMT does not support using more than one together.
 
-## Environment Variables
+## <a href="" id="bkmk-environmentvariables"></a>Environment Variables
 
 
 The following system environment variables are necessary in the scenarios outlined below.
@@ -194,24 +194,24 @@ The following system environment variables are necessary in the scenarios outlin
 
  
 
-## Offline.xml Elements
+## <a href="" id="bkmk-offlinexml"></a>Offline.xml Elements
 
 
 Use an offline.xml file when running the ScanState tool on a computer that has multiple Windows directories. The offline.xml file specifies which directories to scan for windows files. An offline.xml file can be used with the /offline option as an alternative to specifying a single Windows directory path with the /offlineDir option.
 
-### &lt;offline&gt;
+### <a href="" id="-offline-"></a>&lt;offline&gt;
 
 This element contains other elements that define how an offline migration is to be performed.
 
 Syntax: &lt;offline&gt; &lt;/offline&gt;
 
-### &lt;winDir&gt;
+### <a href="" id="-windir-"></a>&lt;winDir&gt;
 
 This element is a required child of **&lt;offline&gt;** and contains information about how the offline volume can be selected. The migration will be performed from the first element of **&lt;winDir&gt;** that contains a valid Windows system volume.
 
 Syntax: &lt; winDir &gt; &lt;/ winDir &gt;
 
-### &lt;path&gt;
+### <a href="" id="-path-"></a>&lt;path&gt;
 
 This element is a required child of **&lt;winDir&gt;** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool’s working directory.
 
@@ -221,13 +221,13 @@ Syntax: &lt;path&gt; c:\\windows &lt;/path&gt;
 
 Syntax, when used with the **&lt;mappings&gt;** element: &lt;path&gt; C:\\, D:\\ &lt;/path&gt;
 
-### &lt;mappings&gt;
+### <a href="" id="-mappings-"></a>&lt;mappings&gt;
 
 This element is an optional child of **&lt;offline&gt;**. When specified, the **&lt;mappings&gt;** element will override the automatically detected WinPE drive mappings. Each child **&lt;path&gt;** element will provide a mapping from one system volume to another. Additionally, mappings between folders can be provided, since an entire volume can be mounted to a specific folder.
 
 Syntax: &lt;mappings&gt; &lt;/mappings&gt;
 
-### &lt;failOnMultipleWinDir&gt;
+### <a href="" id="-failonmultiplewindir-"></a>&lt;failOnMultipleWinDir&gt;
 
 This element is an optional child of **&lt;offline&gt;**. The **&lt;failOnMultipleWinDir&gt;** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **&lt;failOnMultipleWinDir&gt;** element isn’t present, the default behavior is that the migration does not fail.
 

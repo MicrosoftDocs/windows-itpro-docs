@@ -11,7 +11,7 @@ author: jdeckerMS
 # Change history for Manage and update Windows 10
 
 
-This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Manage and update Windows 10] documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## March 2016
 
@@ -59,7 +59,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 </tr>
 <tr class="even">
 <td align="left">[Customize and export Start layout](customize-and-export-start-layout.md)</td>
-<td align="left">Added a note to clarify that partial Start layout is only supported in Windows 10, Version 1511 and later</td>
+<td align="left">Added a note to clarify that partial Start layout is only supported in Windows 10, version 1511 and later</td>
 </tr>
 <tr class="odd">
 <td align="left">[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md)</td>

@@ -18,11 +18,11 @@ author: brianlic-msft
 
 **In this article**
 
--   [Always On](#always_on)
--   [App-triggered VPN](#app-triggered_vpn)
--   [Traffic filters](#traffic_filters)
--   [LockDown VPN](#lockdown_vpn)
--   [Learn more](#learn_more)
+-   [Always On](#always-on)
+-   [App-triggered VPN](#app-triggered-vpn)
+-   [Traffic filters](#traffic-filters)
+-   [LockDown VPN](#lockdown-vpn)
+-   [Learn more](#learn-more)
 
 Virtual private networks (VPN) let you give your users secure remote access to your company network. Windows 10 adds useful new VPN profile options to help you manage how users connect.
 

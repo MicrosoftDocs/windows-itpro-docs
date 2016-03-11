@@ -18,13 +18,13 @@ author: brianlic-msft
 
 **In this article**
 
--   [Problems with traditional credentials](#problems_with_traditional_credentials)
--   [Solve credential problems](#solve_credential_problems)
--   [What is Windows Hello?](#what_is_windows_hello_)
--   [What is Microsoft Passport?](#what_is_microsoft_passport_)
--   [How Microsoft Passport works](#how_microsoft_passport_works)
+-   [Problems with traditional credentials](#problems-with-traditional-credentials)
+-   [Solve credential problems](#solve-credential-problems)
+-   [What is Windows Hello?](#what-is-windows-hello-)
+-   [What is Microsoft Passport?](#what-is-microsoft-passport-)
+-   [How Microsoft Passport works](#how-microsoft-passport-works)
 -   [Design a Microsoft Passport for Work deployment](#design)
--   [Implement Microsoft Passport](#implement_microsoft_passport)
+-   [Implement Microsoft Passport](#implement-microsoft-passport)
 -   [Roadmap](#roadmap)
 
 This guide describes the new Windows Hello and Microsoft Passport technologies that are part of the Windows 10 operating system. It highlights specific capabilities of these technologies that help mitigate threats from conventional credentials and provides guidance about how to design and deploy these technologies as part of your Windows 10 rollout.
@@ -50,7 +50,7 @@ Another, related risk is that of credential replay, in which an attacker capture
 
 The common approach of using an email address as the user name makes a bad problem worse. An attacker who successfully recovers a user name–password pair from a compromised system can then try that same pair on other systems. Surprisingly often, this tactic works to allow attackers to springboard from a compromised system into other systems. The use of email addresses as user names leads to other problems, too, which we’ll explore later in this guide.
 
-### 
+### <a href="" id="trading"></a>
 
 **Trading convenience for complexity**
 
@@ -64,11 +64,11 @@ If the major risk to passwords is that an attacker might guess them through brut
 
 Because a reusable password is the only authentication factor in password-based systems, designers have attempted to reduce the risk of credential theft and reuse. One common method for doing so is the use of limited-lifetime passwords. Some systems allow for passwords that can be used only once, but by far the more common approach is to make passwords expire after a certain period. Limiting the useful lifetime of a password puts a cap on how long a stolen password will be useful to an attacker. This practice helps protect against cases where a long-lived password is stolen, held, and used for a long time, but it also harkens back to the time when password cracking was impractical for everyone except nation state-level attackers. A smart attacker would attempt to steal passwords rather than crack them because of the time penalty associated with password cracking.
 
-The widespread availability of commodity password-cracking tools and the massive computing power available through mechanisms such as GPU-powered crackers or distributed cloud-based cracking tools has reversed this equation so that it is often more effective for an attacker to crack a password than to try to steal it. In addition, the widespread availability of self-service [password-reset mechanisms](#password_reset) means that an attacker needs only a short window of time during which the password is valid to change the password and thus reset the validity period. Relatively few enterprise networks provide self-service password-reset mechanisms, but they are common for Internet services. In addition, many users use the secure credential store on Windows and Mac OS X systems to store valuable passwords for Internet services, so an attacker who can compromise the operating system password may be able to obtain a treasure trove of other service passwords at no cost.
+The widespread availability of commodity password-cracking tools and the massive computing power available through mechanisms such as GPU-powered crackers or distributed cloud-based cracking tools has reversed this equation so that it is often more effective for an attacker to crack a password than to try to steal it. In addition, the widespread availability of self-service [password-reset mechanisms](#password-reset) means that an attacker needs only a short window of time during which the password is valid to change the password and thus reset the validity period. Relatively few enterprise networks provide self-service password-reset mechanisms, but they are common for Internet services. In addition, many users use the secure credential store on Windows and Mac OS X systems to store valuable passwords for Internet services, so an attacker who can compromise the operating system password may be able to obtain a treasure trove of other service passwords at no cost.
 
 Finally, overly short timelines for password expiration can tempt users to make small changes in their passwords at each expiration period — for example, moving from password123 to password456 to password789. This approach reduces the work necessary to crack the password, especially if the attacker knows any of the old passwords.
 
-### 
+### <a href="" id="password-reset"></a>
 
 **Password-reset mechanisms**
 
@@ -287,7 +287,7 @@ Microsoft Passport depends on having compatible IDPs available to it. As of this
 
 In addition to the IDP, Microsoft Passport requires an MDM system. This system can be the cloud-based Intune if you use Azure AD, or an on-premises System Center Configuration Manager deployment that meets the system requirements described in the [Deployment requirements](#deployreq) section of this document.
 
-## Design a Microsoft Passport for Work deployment
+## <a href="" id="design"></a>Design a Microsoft Passport for Work deployment
 
 
 Microsoft Passport for Work is designed for integration with your existing and future directory infrastructure and device deployments, but this flexibility means there are many considerations to think about when you design your deployment. Some of these decisions are technical, while others are organizational or even political. In this section, we examine the key points where you have to make decisions about how to implement Microsoft Passport for Work. Remember, individual devices can use the individual version of Microsoft Passport without any infrastructure changes on your part. Microsoft Passport for Work allows you to control and centrally manage user authentication and device registration. To use the initial version of Microsoft Passport for Work, each device must have an Azure AD identity, so automatic registration of devices provides a means both to register new devices and to apply optional policies to manage Microsoft Passport for Work.
@@ -349,7 +349,7 @@ Which rollout method you choose depends on several factors:
 
 -   **Your plans for the cloud.** If you’re already planning a move to the cloud, Azure AD eases the process of Microsoft Passport for Work deployment, because you can use Azure AD as an IDP alongside your existing on-premises AD DS setup without making significant changes to your on-premises environment. Future versions of Microsoft Passport for Work will support the ability to simultaneously register devices that are already members of an on-premises AD DS domain in an Azure AD partition so that they use Microsoft Passport for Work from the cloud. Hybrid deployments that combine AD DS with Azure AD give you the ability to keep machine authentication and policy management against your local AD DS domain while providing the full set of Microsoft Passport for Work services (and Microsoft Office 365 integration) for your users. If you plan to use on-premises AD DS only, then the design and configuration of your on-premises environment will dictate what kind of changes you may need to make.
 
-### 
+### <a href="" id="deployreq"></a>
 
 **Deployment requirements**
 

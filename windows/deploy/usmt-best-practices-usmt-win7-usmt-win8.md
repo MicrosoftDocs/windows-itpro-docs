@@ -82,7 +82,7 @@ As the authorized administrator, it is your responsibility to protect the privac
 
     Before you migrate local accounts, see the Migrating Local Accounts section in the [Identify Users](identify-users-usmt-win7-usmt-win8.md) topic.
 
-## XML File Best Practices
+## <a href="" id="bkmk-bestpractices"></a>XML File Best Practices
 
 
 -   **Specify the same set of mig\*.xml files in both the ScanState and the LoadState tools**

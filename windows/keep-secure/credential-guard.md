@@ -16,7 +16,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016 Technical Preview
 
-Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
+Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
 
 Credential Guard offers the following features and solutions:
 
@@ -69,7 +69,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>UEFI firmware version 2.3.1 or higher and Secure Boot</p></td>
-<td align="left"><p>To verify that the firmware is using UEFI version 2.3.1 or higher and Secure Boot, you can validate it against the [System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](http://msdn.microsoft.com/library/windows/hardware/dn932807.aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby) Windows Hardware Compatibility Program requirement.</p></td>
+<td align="left"><p>To verify that the firmware is using UEFI version 2.3.1 or higher and Secure Boot, you can validate it against the [System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](http://msdn.microsoft.com/library/windows/hardware/dn932807.aspx#system-fundamentals-firmware-cs-uefisecureboot-connectedstandby) Windows Hardware Compatibility Program requirement.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Virtualization extensions</p></td>
@@ -99,7 +99,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="odd">
 <td align="left"><p>Secure firmware update process</p></td>
-<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
+<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>The firmware is updated for [Secure MOR implementation](http://msdn.microsoft.com/library/windows/hardware/mt270973.aspx)</p></td>
@@ -298,7 +298,7 @@ You can use System Information to ensure that Credential Guard is running on a P
 
 -   If you are using Wi-Fi and VPN end points that are based on MS-CHAPv2, they are subject to similar attacks as NTLMv1. We recommend that organizations use certificated-based authentication for Wi-Fi and VPN connections.
 
--   Starting with Windows 10, Version 1511, domain credentials that are stored with Credential Manager are protected with Credential Guard. Credential Manager allows you to store credentials, such as user names and passwords that you use to log on to websites or other computers on a network. The following considerations apply to the Credential Guard protections for Credential Manager:
+-   Starting with Windows 10, version 1511, domain credentials that are stored with Credential Manager are protected with Credential Guard. Credential Manager allows you to store credentials, such as user names and passwords that you use to log on to websites or other computers on a network. The following considerations apply to the Credential Guard protections for Credential Manager:
 
     -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password.
 
@@ -401,7 +401,7 @@ You must restart the device after enrolling the machine authentication certifica
 
 By using an authentication policy, you can ensure that users only sign into devices that are running Credential Guard. Before you deploy the authentication policy though, you must first run a couple of scripts that set up your environment.
 
--   The [get-IssuancePolicy.ps1](#BKMK_GetScript) shows all of the issuance policies that are available on the certificate authority.
+-   The [get-IssuancePolicy.ps1](#bkmk-getscript) shows all of the issuance policies that are available on the certificate authority.
 
     From a Windows PowerShell command prompt, run the following command:
 
@@ -409,7 +409,7 @@ By using an authentication policy, you can ensure that users only sign into devi
     .\get-IssuancePolicy.ps1 –LinkedToGroup:All
     ```
 
--   The [set-IssuancePolicyToGroupLink.ps1](#BKMK_SetScript) creates a Universal security group, creates an organizational unit, and links the issuance policy to that Universal security group.
+-   The [set-IssuancePolicyToGroupLink.ps1](#bkmk-setscript) creates a Universal security group, creates an organizational unit, and links the issuance policy to that Universal security group.
 
     From a Windows PowerShell command prompt, run the following command:
 
@@ -464,7 +464,7 @@ When authentication policies in enforcement mode are deployed with Credential Gu
 
 Here is a list of scripts that are mentioned in this topic.
 
-### Get the available issuance policies on the certificate authority
+### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
 
 Save this script file as get-IssuancePolicy.ps1.
 
@@ -686,7 +686,7 @@ If you're having trouble running this script, try replacing the single quote aft
 
  
 
-### Link an issuance policy to a group
+### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
 

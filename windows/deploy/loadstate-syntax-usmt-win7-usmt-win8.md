@@ -16,21 +16,21 @@ This topic discusses the **LoadState** command syntax and options.
 ## In This Topic
 
 
-[Before You Begin](#Before)
+[Before You Begin](#before)
 
-[Syntax](#BKMK_S)
+[Syntax](#bkmk-s)
 
-[Storage Options](#BKMK_St)
+[Storage Options](#bkmk-st)
 
-[Migration Rule Options](#BKMK_Mig)
+[Migration Rule Options](#bkmk-mig)
 
-[Monitoring Options](#BKMK_Mon)
+[Monitoring Options](#bkmk-mon)
 
-[User Options](#BKMK_User)
+[User Options](#bkmk-user)
 
-[Incompatible Command-Line Options](#BKMK_CLOI)
+[Incompatible Command-Line Options](#bkmk-cloi)
 
-## Before You Begin
+## <a href="" id="before"></a>Before You Begin
 
 
 Before you run the **LoadState** command, note the following:
@@ -45,9 +45,9 @@ Before you run the **LoadState** command, note the following:
 
 -   **LoadState** does not require domain controller access to apply domain profiles. This functionality is available without any additional configuration. It is not necessary for the source computer to have had domain controller access when the user profile was gathered using **ScanState**. However, domain profiles are inaccessible until the destination computer is joined to the domain.
 
--   The [Incompatible Command-Line Options](#BKMK_CLOI) table lists which options you can use together and which command-line options are incompatible.
+-   The [Incompatible Command-Line Options](#bkmk-cloi) table lists which options you can use together and which command-line options are incompatible.
 
-## Syntax
+## <a href="" id="bkmk-s"></a>Syntax
 
 
 This section explains the syntax and usage of the command-line options available when you use the **LoadState** command. The options can be specified in any order. If the option contains a parameter, you can specify either a colon or space separator.
@@ -60,7 +60,7 @@ For example, to decrypt the store and migrate the files and settings to a comput
 
 `loadstate \\server\share\migration\mystore /i:migapp.xml /i:migdocs.xml /v:13 /decrypt /key:"mykey"`
 
-## Storage Options
+## <a href="" id="bkmk-st"></a>Storage Options
 
 
 USMT provides the following options that you can use to specify how and where the migrated data is stored.
@@ -124,7 +124,7 @@ USMT provides the following options that you can use to specify how and where th
 
  
 
-## Migration Rule Options
+## <a href="" id="bkmk-mig"></a>Migration Rule Options
 
 
 USMT provides the following options to specify what files you want to migrate.
@@ -162,7 +162,7 @@ USMT provides the following options to specify what files you want to migrate.
 
  
 
-## Monitoring Options
+## <a href="" id="bkmk-mon"></a>Monitoring Options
 
 
 USMT provides several command-line options that you can use to analyze problems that occur during migration.
@@ -269,7 +269,7 @@ USMT provides several command-line options that you can use to analyze problems 
 
  
 
-## User Options
+## <a href="" id="bkmk-user"></a>User Options
 
 
 By default, all users are migrated. The only way to specify which users to include and exclude is by using the following options. You cannot exclude users in the migration .xml files or by using the Config.xml file. For more information, see [Identify Users](identify-users-usmt-win7-usmt-win8.md).
@@ -500,7 +500,7 @@ You can use the **/uel**, **/ue** and **/ui** options together to migrate only t
 
  
 
-## Incompatible Command-Line Options
+## <a href="" id="bkmk-cloi"></a>Incompatible Command-Line Options
 
 
 The following table indicates which command-line options are not compatible with the **LoadState** command. If the table entry for a particular combination is blank, the options are compatible and you can use them together. The X symbol means that the options are not compatible. For example, you cannot use the **/nocompress** option with the **/encrypt** option.

@@ -17,7 +17,7 @@ author: brianlic-msft
 
 To implement Device Guard app protection, you will need to create a code integrity policy. Code integrity policies determine what apps are considered trustworthy and are allowed to run on a protected device.
 
-## Create a Device Guard code integrity policy based on a reference device
+## <a href="" id="create-a-device-guard-code-integrity-policy-based-on--a-reference-device"></a>Create a Device Guard code integrity policy based on a reference device
 
 
 To create a code integrity policy, you'll first need to create a reference image that includes the signed applications you want to run on your protected devices. For information on how to sign applications, see [Getting apps to run on Device Guard-protected devices](getting-apps-to-run-on-device-guard-protected-devices.md).

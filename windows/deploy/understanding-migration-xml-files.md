@@ -18,31 +18,31 @@ This topic provides an overview of the default and custom migration XML files an
 ## In This Topic
 
 
-[Overview of the Config.xml file](#BKMK_Config)
+[Overview of the Config.xml file](#bkmk-config)
 
-[Overview of the MigApp.xml file](#BKMK_MigApp)
+[Overview of the MigApp.xml file](#bkmk-migapp)
 
-[Overview of the MigDocs.xml file](#BKMK_MigDocs)
+[Overview of the MigDocs.xml file](#bkmk-migdocs)
 
-[Overview of the MigUser.xml file](#BKMK_MigUser)
+[Overview of the MigUser.xml file](#bkmk-miguser)
 
-[Using multiple XML files](#BKMK_Multiple)
+[Using multiple XML files](#bkmk-multiple)
 
-[XML rules for migrating user files](#BKMK_UserFiles)
+[XML rules for migrating user files](#bkmk-userfiles)
 
-[The GenerateDocPatterns function](#BKMK_Generate)
+[The GenerateDocPatterns function](#bkmk-generate)
 
-[Understanding the system and user context](#BKMK_Context)
+[Understanding the system and user context](#bkmk-context)
 
-[Sample migration rules for customized versions of XML files](#BKMK_Samples)
+[Sample migration rules for customized versions of XML files](#bkmk-samples)
 
-[Exclude rules usage examples](#BKMK_Exclude)
+[Exclude rules usage examples](#bkmk-exclude)
 
-[Include rules usage examples](#BKMK_Include)
+[Include rules usage examples](#bkmk-include)
 
-[Next Steps](#BKMK_Next)
+[Next Steps](#bkmk-next)
 
-## Overview of the Config.xml file
+## <a href="" id="bkmk-config"></a>Overview of the Config.xml file
 
 
 The Config.xml file is the configuration file created by the `/genconfig` option of the ScanState tool; it can be used to modify which operating-system components are migrated by USMT. The Config.xml file can be used in conjunction with other XML files, such as in the following example: `scanstate /i:migapps.xml /i:migdocs.xml /genconfig:c:\myFolder\config.xml`. When used this way, the Config.xml file tightly controls aspects of the migration, including user profiles, data, and settings, without modifying or creating other XML files. For more information about the Config.xml file, see [Customize USMT XML Files](customize-usmt-xml-files-usmt-win7-usmt-win8.md) and [Config.xml File](configxml-file-usmt-win7-usmt-win8.md).
@@ -52,17 +52,17 @@ When modifying the XML elements in the Config.xml file, you should edit an eleme
 
  
 
-## Overview of the MigApp.xml file
+## <a href="" id="bkmk-migapp"></a>Overview of the MigApp.xml file
 
 
 The MigApp.xml file installed with USMT includes instructions to migrate the settings for the applications listed in [What Does USMT Migrate?](what-does-usmt-migrate-usmt-win7-usmt-win8.md). You must include the MigApp.xml file when using the ScanState and LoadState tools, by using the `/i` option in order to migrate application settings. The MigDocs.xml and MigUser.xml files do not migrate application settings. You can create a custom XML file to include additional applications. For more information, see [Customize USMT XML Files](customize-usmt-xml-files-usmt-win7-usmt-win8.md).
 
 **Important**  
-The MigApps.xml file will only detect and migrate .pst files that are linked to Microsoft Office Outlook. See the [Sample migration rules for customized versions of XML files](#BKMK_Samples) section of this document for more information about migrating .pst files that are not linked to Outlook.
+The MigApps.xml file will only detect and migrate .pst files that are linked to Microsoft Office Outlook. See the [Sample migration rules for customized versions of XML files](#bkmk-samples) section of this document for more information about migrating .pst files that are not linked to Outlook.
 
  
 
-## Overview of the MigDocs.xml file
+## <a href="" id="bkmk-migdocs"></a>Overview of the MigDocs.xml file
 
 
 The MigDocs.xml file uses the new **GenerateDocPatterns** helper function to create instructions for USMT to migrate files from the source computer, based on the location of the files. You can use the MigDocs.xml file with the ScanState and LoadState tools to perform a more targeted migration than using USMT without XML instructions.
@@ -133,7 +133,7 @@ The default MigDocs.xml file will not migrate the following:
 
 You can also use the **/genmigxml** option with the ScanState tool to review and modify what files will be migrated.
 
-## Overview of the MigUser.xml file
+## <a href="" id="bkmk-miguser"></a>Overview of the MigUser.xml file
 
 
 The MigUser.xml file includes instructions for USMT to migrate user files based on file name extensions. You can use the MigUser.xml file with the ScanState and LoadState tools to perform a more targeted migration than using USMT without XML instructions. The MigUser.xml file will gather all files from the standard user-profile folders, as well as any files on the computer with the specified file name extensions.
@@ -175,11 +175,11 @@ The default MigUser.xml file does not migrate the following:
 You can make a copy of the MigUser.xml file and modify it to include or exclude standard user-profile folders and file name extensions. If you know all of the extensions for the files you want to migrate from the source computer, use the MigUser.xml file to move all of your relevant data, regardless of the location of the files. However, this may result in a migration that contains more files than intended. For example, if you choose to migrate all .jpg files, you may migrate image files such as thumbnails and logos from legacy applications that are installed on the source computer.
 
 **Note**  
-Each file name extension you include in the rules within the MigUser.xml file increases the amount of time needed for the ScanState tool to gather the files for the migration. If you are migrating more than three hundred file types, you may experience a slow migration. For more information about other ways to organize the migration of your data, see the [Using multiple XML files](#BKMK_Multiple) section of this document.
+Each file name extension you include in the rules within the MigUser.xml file increases the amount of time needed for the ScanState tool to gather the files for the migration. If you are migrating more than three hundred file types, you may experience a slow migration. For more information about other ways to organize the migration of your data, see the [Using multiple XML files](#bkmk-multiple) section of this document.
 
  
 
-## Using multiple XML files
+## <a href="" id="bkmk-multiple"></a>Using multiple XML files
 
 
 You can use multiple XML files with the ScanState and LoadState tools. Each of the default XML files included with or generated by USMT is configured for a specific component of the migration. You can also use custom XML files to supplement these default files with additional migration rules.
@@ -224,7 +224,7 @@ For example, you can use all of the XML migration file types for a single migrat
 Scanstate <store> /config:c:\myFolder\config.xml /i:migapps.xml /i:migdocs.xml /i:customrules.xml
 ```
 
-### XML rules for migrating user files
+### <a href="" id="bkmk-userfiles"></a>XML rules for migrating user files
 
 **Important**  
 You should not use the MigUser.xml and MigDocs.xml files together in the same command. Using both XML files can result in duplication of some migrated files. This occurs when conflicting target-location instructions are given in each XML file. The target file will be stored once during the migration, but will be applied by each XML file to a different location on the destination computer.
@@ -233,9 +233,9 @@ You should not use the MigUser.xml and MigDocs.xml files together in the same co
 
 If your data set is unknown or if many files are stored outside of the standard user-profile folders, the MigDocs.xml is a better choice than the MigUser.xml file, because the MigDocs.xml file will gather a broader scope of data. The MigDocs.xml file migrates folders of data based on location. The MigUser.xml file migrates only the files with the specified file name extensions.
 
-If you want more control over the migration, you can create custom XML files. See the [Creating and editing a custom ,xml file](#BKMK_CreateXML) section of this document.
+If you want more control over the migration, you can create custom XML files. See the [Creating and editing a custom ,xml file](#bkmk-createxml) section of this document.
 
-## Creating and editing a custom XML file
+## <a href="" id="bkmk-createxml"></a>Creating and editing a custom XML file
 
 
 You can use the **/genmigxml** command-line option to determine which files will be included in your migration. The **/genmigxml** option creates a file in a location you specify, so that you can review the XML rules and make modifications as necessary.
@@ -265,7 +265,7 @@ To generate the XML migration rules file for a source computer:
     scanstate.exe /genmigxml:"C:\Documents and Settings\USMT Tester\Desktop\genMig.xml"
     ```
 
-### The GenerateDocPatterns function
+### <a href="" id="bkmk-generate"></a>The GenerateDocPatterns function
 
 The MigDocs.xml file calls the **GenerateDocPatterns** function, which takes three Boolean values. You can change the settings to modify the way the MigDocs.xml file generates the XML rules for migration.
 
@@ -342,7 +342,7 @@ To create exclude data patterns:
 </exclude>
 ```
 
-### Understanding the system and user context
+### <a href="" id="bkmk-context"></a>Understanding the system and user context
 
 The migration XML files contain two &lt;component&gt; elements with different **context** settings. The system context applies to files on the computer that are not stored in the User Profiles directory, while the user context applies to files that are particular to an individual user.
 
@@ -399,14 +399,14 @@ Rules contained in a component that is assigned the user context will be run for
 
  
 
-### Sample migration rules for customized versions of XML files
+### <a href="" id="bkmk-samples"></a>Sample migration rules for customized versions of XML files
 
 **Note**  
 For best practices and requirements for customized XML files in USMT, see [Customize USMT XML Files](customize-usmt-xml-files-usmt-win7-usmt-win8.md) and [General Conventions](general-conventions-usmt-win7-usmt-win8.md).
 
  
 
-### Exclude rules usage examples
+### <a href="" id="bkmk-exclude"></a>Exclude rules usage examples
 
 In the examples below, the source computer has a .txt file called "new text document" in a directory called "new folder". The default MigDocs.xml behavior migrates the new text document.txt file and all files contained in the "new folder" directory. The rules generated by the function are:
 
@@ -477,7 +477,7 @@ If you want the &lt;UnconditionalExclude&gt; element to apply to both the system
 
 For more examples of exclude rules that you can use in custom migration XML files, see [Exclude Files and Settings](exclude-files-and-settings-usmt.md).
 
-### Include rules usage examples
+### <a href="" id="bkmk-include"></a>Include rules usage examples
 
 The application data directory is the most common location that you would need to add an include rule for. The **GenerateDocPatterns** function excludes this location by default. If your company uses an application that saves important data to this location, you can create include rules to migrate the data. For example, the default location for .pst files is: `%CSIDL_LOCAL_APPDATA%\Microsoft\Outlook`. The Migapp.xml file contains migration rules to move only those .pst files that are linked to Microsoft Outlook. To include .pst files that are not linked, you can do the following:
 
@@ -512,7 +512,7 @@ For more information about the order of precedence for XML migration rules, see 
 
  
 
-## Next steps
+## <a href="" id="bkmk-next"></a>Next steps
 
 
 You can include additional rules for the migration in the MigDocs.xml file or other XML migration files. For example, you can use the &lt;locationModify&gt; element to move files from the folder where they were gathered to a different folder, when they are applied to the destination computer.

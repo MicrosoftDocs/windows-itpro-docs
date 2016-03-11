@@ -22,12 +22,12 @@ author: TrudyHa
 
 **In this article**
 
--   [Querying by Using the Program Properties Tab](#querying_by_using_the_program_properties_tab)
--   [Querying by Using the Fix Properties Tab](#querying_by_using_the_fix_properties_tab)
--   [Querying by Using the Fix Description Tab](#querying_by_using_the_fix_description_tab)
--   [Querying by Using the Fix Description Tab](#querying_by_using_the_fix_description_tab)
--   [Exporting Your Search Results](#exporting_your_search_results)
--   [Related topics](#related_topics)
+-   [Querying by Using the Program Properties Tab](#querying-by-using-the-program-properties-tab)
+-   [Querying by Using the Fix Properties Tab](#querying-by-using-the-fix-properties-tab)
+-   [Querying by Using the Fix Description Tab](#querying-by-using-the-fix-description-tab)
+-   [Querying by Using the Fix Description Tab](#querying-by-using-the-fix-description-tab)
+-   [Exporting Your Search Results](#exporting-your-search-results)
+-   [Related topics](#related-topics)
 
 You can access the Query tool from within Compatibility Administrator. The Query tool provides the same functionality as using the Search feature.
 

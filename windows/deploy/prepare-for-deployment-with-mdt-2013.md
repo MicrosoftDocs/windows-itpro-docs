@@ -25,13 +25,13 @@ author: CFaw
 -   [Create the MDT service account](#sec05)
 -   [Create and share the logs folder](#sec06)
 -   [Use CMTrace to read log files (optional)](#sec07)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT) 2013 Update 1. It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the files system and in Active Directory.
 
 For the purposes of this topic, we will use two machines: DC01 and MDT01. DC01 is a domain controller and MDT01 is a Windows Server 2012 R2 standard server. MDT01 is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md#proof).
 
-## System requirements
+## <a href="" id="sec01"></a>System requirements
 
 
 MDT 2013 Update 1 requires the following components:
@@ -58,7 +58,7 @@ MDT 2013 Update 1 requires the following components:
 
 -   Microsoft .NET Framework
 
-## Install Windows ADK for Windows 10
+## <a href="" id="sec02"></a>Install Windows ADK for Windows 10
 
 
 These steps assume that you have the MDT01 member server installed and configured and that you have downloaded [Windows ADK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526803) to the E:\\Downloads\\ADK folder.
@@ -75,7 +75,7 @@ These steps assume that you have the MDT01 member server installed and configure
 
     3.  User State Migration Tool (UMST)
 
-## Install MDT 2013 Update 1
+## <a href="" id="sec03"></a>Install MDT 2013 Update 1
 
 
 These steps assume that you have downloaded [MDT 2013 Update 1](http://go.microsoft.com/fwlink/p/?LinkId=618117 ) to the E:\\Downloads\\MDT 2013 folder on MDT01.
@@ -84,7 +84,7 @@ These steps assume that you have downloaded [MDT 2013 Update 1](http://go.micros
 
 2.  Install **MDT** (E:\\Downloads\\MDT 2013\\MicrosoftDeploymentToolkit2013\_x64.msi) with the default settings.
 
-## Create the OU structure
+## <a href="" id="sec04"></a>Create the OU structure
 
 
 If you do not have an organizational unit (OU) structure in your Active Directory, you should create one. In this section, you create an OU structure and a service account for MDT 2013 Update 1.
@@ -121,7 +121,7 @@ If you do not have an organizational unit (OU) structure in your Active Director
 
 Figure 6. A sample of how the OU structure will look after all the OUs are created.
 
-## Create the MDT service account
+## <a href="" id="sec05"></a>Create the MDT service account
 
 
 When creating a reference image, you need an account for MDT. The MDT Build Account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01.
@@ -142,7 +142,7 @@ When creating a reference image, you need an account for MDT. The MDT Build Acco
 
     6.  Password never expires: Selected
 
-## Create and share the logs folder
+## <a href="" id="sec06"></a>Create and share the logs folder
 
 
 By default MDT stores the log files locally on the client. In order to capture a reference image, you will need to enable server-side logging and, to do that, you will need to have a folder in which to store the logs. For more information, see [Create a Windows 10 reference image](create-a-windows-81-reference-image.md).
@@ -161,7 +161,7 @@ By default MDT stores the log files locally on the client. In order to capture a
 
 Figure 7. The Sharing tab of the E:\\Logs folder after sharing it with PowerShell.
 
-## Use CMTrace to read log files (optional)
+## <a href="" id="sec07"></a>Use CMTrace to read log files (optional)
 
 
 The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace (CMTrace), which is available as part [of Microsoft System Center 2012 R2 Configuration Manager Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=734717). You can use Notepad, but CMTrace formatting makes the logs easier to read.

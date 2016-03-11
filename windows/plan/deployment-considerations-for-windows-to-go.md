@@ -25,23 +25,23 @@ Windows To Go does not support operating system upgrades. Windows To Go is desig
 
 The following sections discuss the boot experience, deployment methods, and tools that you can use with Windows To Go.
 
--   [Initial boot experiences](#wtg_initboot)
+-   [Initial boot experiences](#wtg-initboot)
 
--   [Image deployment and drive provisioning considerations](#wtg_imagedep)
+-   [Image deployment and drive provisioning considerations](#wtg-imagedep)
 
--   [Application installation and domain join](#wtg_appinstall)
+-   [Application installation and domain join](#wtg-appinstall)
 
--   [Management of Windows To Go using Group Policy](#BKMK_wtggp)
+-   [Management of Windows To Go using Group Policy](#bkmk-wtggp)
 
--   [Supporting booting from USB](#wtg_bootusb)
+-   [Supporting booting from USB](#wtg-bootusb)
 
--   [Updating firmware](#stg_firmware)
+-   [Updating firmware](#stg-firmware)
 
--   [Configure Windows To Go startup options](#wtg_startup)
+-   [Configure Windows To Go startup options](#wtg-startup)
 
--   [Change firmware settings](#wtg_changefirmware)
+-   [Change firmware settings](#wtg-changefirmware)
 
-## Initial boot experiences
+## <a href="" id="wtg-initboot"></a>Initial boot experiences
 
 
 The following diagrams illustrate the two different methods you could use to provide Windows To Go drives to your users. The experiences differ depending on whether the user will be booting the device initially on-premises or off-premises:
@@ -61,7 +61,7 @@ Applying BitLocker Drive Encryption to the drives before provisioning is a much 
 
 DirectAccess can be used to ensure that the user can login with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](http://go.microsoft.com/fwlink/p/?LinkId=619077) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](http://go.microsoft.com/fwlink/p/?LinkId=619078). If you do not want to use DirectAccess as an alternative users could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
 
-### Image deployment and drive provisioning considerations
+### <a href="" id="wtg-imagedep"></a>Image deployment and drive provisioning considerations
 
 The Image Deployment process can be accomplished either by a centralized IT process for your organization or by individual users creating their own Windows To Go workspaces. You must have local Administrator access and access to a Windows 10 Enterprise or Windows 10 Education image to create a Windows To Go workspace, or you must be using System Center Configuration Manager 2012 Service Pack 1 or later to distribute Windows To Go workspaces to users. The image deployment process takes a blank USB drive and a Windows 10 Enterprise image (WIM) and turns it into a Windows To Go drive.
 
@@ -226,11 +226,11 @@ The following list of commonly used Wi-Fi network adapters that are not supporte
 
 IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](http://go.microsoft.com/fwlink/p/?LinkId=619079).
 
-### Application installation and domain join
+### <a href="" id="wtg-appinstall"></a>Application installation and domain join
 
 Unless you are using a customized Windows image that includes unattended installation settings, the initial Windows To Go workspace will not be domain joined and will not contain applications. This is exactly like a new installation of Windows on a desktop or laptop computer. When planning your deployment, you should develop methods to join Windows to Go drives to the domain and install the standard applications that users in your organization require. These methods probably will be similar to the ones used for setting up desktop and laptop computers with domain privileges and applications
 
-### Management of Windows To Go using Group Policy
+### <a href="" id="bkmk-wtggp"></a>Management of Windows To Go using Group Policy
 
 In general, management of Windows To Go workspaces is same as that for desktop and laptop computers. There are Windows To Go specific Group Policy settings that should be considered as part of Windows To Go deployment. Windows To Go Group Policy settings are located at `\\Computer Configuration\Administrative Templates\Windows Components\Portable Operating System\` in the Local Group Policy Editor.
 
@@ -262,7 +262,7 @@ The use of the Store on Windows To Go workspaces that are running Windows 8 can
 
      
 
-## Supporting booting from USB
+## <a href="" id="wtg-bootusb"></a>Supporting booting from USB
 
 
 The biggest hurdle for a user wanting to use Windows To Go is configuring their computer to boot from USB. This is traditionally done by entering the firmware and configuring the appropriate boot order options. To ease the process of making the firmware modifications required for Windows To Go, Windows includes a feature named **Windows To Go Startup Options** that allows a user to configure their computer to boot from USB from within Windows—without ever entering their firmware, as long as their firmware supports booting from USB.
@@ -274,7 +274,7 @@ Enabling a system to always boot from USB first has implications that you should
 
 If you are going to be using a Windows 7 computer as a host-PC, see the wiki article [Tips for configuring your BIOS settings to work with Windows To Go](http://go.microsoft.com/fwlink/p/?LinkID=618951).
 
-### Roaming between different firmware types
+### <a href="" id="stg-firmware"></a>Roaming between different firmware types
 
 Windows supports two types of PC firmware: Unified Extensible Firmware Interface (UEFI), which is the new standard, and legacy BIOS firmware, which was used in most PCs shipping with Windows 7 or earlier version of Windows. Each firmware type has completely different Windows boot components that are incompatible with each other. Beyond the different boot components, Windows supports different partition styles and layout requirements for each type of firmware as shown in the following diagrams.
 
@@ -288,7 +288,7 @@ To enable booting Windows To Go on both types of firmware, a new disk layout is 
 
 This is the only supported disk configuration for Windows To Go. With this disk configuration, a single Windows To Go drive can be booted on computers with UEFI and legacy BIOS firmware.
 
-### Configure Windows To Go startup options
+### <a href="" id="wtg-startup"></a>Configure Windows To Go startup options
 
 Windows To Go Startup Options is a setting available on Windows 10-based PCs that enables the computer to be booted from a USB without manually changing the firmware settings of the PC. To configure Windows To Go Startup Options you must have administrative rights on the computer and the **Windows To Go Default Startup Options** Group Policy setting must not be configured.
 
@@ -307,7 +307,7 @@ Windows To Go Startup Options is a setting available on Windows 10-based PCs th
 
 3.  Click **Save Changes**. If the User Account Control dialog box is displayed, confirm that the action it displays is what you want, and then click **Yes**.
 
-### Change firmware settings
+### <a href="" id="wtg-changefirmware"></a>Change firmware settings
 
 If you choose to not use the Windows To Go startup options or are using a PC running Windows 7 as your host computer you will need to manually configure the firmware settings. The process used to accomplish this will depend on the firmware type and manufacturer. If your host computer is protected by BitLocker and running Windows 7 you should suspend BitLocker before making the change to the firmware settings. After the firmware settings have been successfully reconfigured, resume BitLocker protection. If you do not suspend BitLocker first, BitLocker will assume that the computer has been tampered with and will boot into BitLocker recovery mode.
 

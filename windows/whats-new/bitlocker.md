@@ -18,7 +18,7 @@ author: TrudyHa
 
 BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
 
-## New features in Windows 10, Version 1511
+## New features in Windows 10, version 1511
 
 
 -   **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
@@ -37,7 +37,7 @@ BitLocker Drive Encryption is a data protection feature that integrates with the
 ## New features in Windows 10
 
 
--   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](http://technet.microsoft.com/library/dn306081.aspx#BKMK_Encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online.
+-   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](http://technet.microsoft.com/library/dn306081.aspx#bkmk-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online.
 
 -   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
 

@@ -22,11 +22,11 @@ author: TrudyHa
 
 **In this article**
 
--   [Modeling the Production Environment](#modeling_the_production_environment)
--   [Configuring the Test Environment for Automated Testing](#configuring_the_test_environment_for_automated_testing)
--   [Determining When Virtualization Is Appropriate](#determining_when_virtualization_is_appropriate)
--   [Testing Methodology](#testing_methodology)
--   [Related topics](#related_topics)
+-   [Modeling the Production Environment](#modeling-the-production-environment)
+-   [Configuring the Test Environment for Automated Testing](#configuring-the-test-environment-for-automated-testing)
+-   [Determining When Virtualization Is Appropriate](#determining-when-virtualization-is-appropriate)
+-   [Testing Methodology](#testing-methodology)
+-   [Related topics](#related-topics)
 
 The goal of the test environment is to model the operating system that you want to deploy and assess compatibility before deploying the operating system to your production environment. Your test environment is composed of computers on which the new operating system is installed. Your test environment can be a long-term investment. Consider retaining the test environment after deployment to assist in future deployment projects.
 

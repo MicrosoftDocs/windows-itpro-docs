@@ -18,24 +18,24 @@ author: TrudyHa
 
 **In this article**
 
--   [System Center Configuration Manager](#system_center_configuration_manager)
--   [WSUS standalone](#wsus_standalone_)
--   [Enterprise Mobility Suite: Intune](#enterprise_mobility_suite__intune)
--   [Related topics](#related_topics)
+-   [System Center Configuration Manager](#system-center-configuration-manager)
+-   [WSUS standalone](#wsus-standalone-)
+-   [Enterprise Mobility Suite: Intune](#enterprise-mobility-suite--intune)
+-   [Related topics](#related-topics)
 
 You can integrate Windows Update for Business deployments with existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager, and Microsoft Intune.
 
 ## System Center Configuration Manager
 
 
-For Windows 10, Version 1511, organizations that already manage their systems with Configuration Manager can also have their devices configured for Windows Update for Business (in other words, set deferral policies on those machines). For Windows 10, Version 1511, such devices will be visible in the Configuration Manager console, however they will appear with a detection state of “Unknown”.
+For Windows 10, version 1511, organizations that already manage their systems with Configuration Manager can also have their devices configured for Windows Update for Business (in other words, set deferral policies on those machines). For Windows 10, version 1511, such devices will be visible in the Configuration Manager console, however they will appear with a detection state of “Unknown”.
 
 ![figure 1](images/wuforbusiness-fig10-sccmconsole.png)
 
-## WSUS standalone
+## <a href="" id="wsus-standalone-"></a>WSUS standalone
 
 
-For Windows 10, Version 1511, you cannot configure devices for both Windows Update for Business *and* to receive updates from WSUS. If both group policies are set (for both deferrals as well as WSUS scanning), Windows Update for Business settings will NOT be respected and devices will continue to scan against WSUS.
+For Windows 10, version 1511, you cannot configure devices for both Windows Update for Business *and* to receive updates from WSUS. If both group policies are set (for both deferrals as well as WSUS scanning), Windows Update for Business settings will NOT be respected and devices will continue to scan against WSUS.
 
 ## Enterprise Mobility Suite: Intune
 

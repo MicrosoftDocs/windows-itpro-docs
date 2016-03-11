@@ -86,8 +86,8 @@ The following table shows the hardware and software you need to install and conf
 <td align="left"><p>UEFI firmware version 2.3.1 or higher with UEFI Secure Boot and Platform Secure Boot</p></td>
 <td align="left"><p>UEFI Secure Boot ensures that the device boots only authorized code. Additionally, Boot Integrity, also known as Platform Secure Boot must be supported. You can validate it against the following Windows Hardware Compatibility Program requirements:</p>
 <ul>
-<li><p>[System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot)</p></li>
-<li><p>[System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](http://msdn.microsoft.com/library/windows/hardware/dn932807.aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby)</p></li>
+<li><p>[System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot)</p></li>
+<li><p>[System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](http://msdn.microsoft.com/library/windows/hardware/dn932807.aspx#system-fundamentals-firmware-cs-uefisecureboot-connectedstandby)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -117,7 +117,7 @@ The following table shows the hardware and software you need to install and conf
 </tr>
 <tr class="odd">
 <td align="left"><p>Secure firmware update process</p></td>
-<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
+<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Signed processor microcode updates</p></td>

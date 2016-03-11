@@ -142,15 +142,15 @@ Privileged apps are allowed to access your enterprise data and will react differ
 
 EDP lets you decide to block, allow overrides, or audit your employee's data sharing actions. Blocking the action stops it immediately, while allowing overrides let the employee know there's a problem, but lets the employee continue to share the info, and audit just logs the action without stopping it, letting you start to see patterns of inappropriate sharing so you can take educative action.
 
-### Persistent data encryption
+### <a href="" id="persistent-data-protection"></a>Persistent data encryption
 
 EDP helps keep your enterprise data protected, even when it roams. Apps like Office and OneNote work with EDP to persist your data encryption across locations and services. For example, if an employee opens EDP-encrypted content from Outlook, edits it, and then tries to save the edited version with a different name to remove the encryption, it won’t work. Outlook automatically applies EDP to the new document, keeping the data encryption in place.
 
-### Helping prevent accidental data disclosure to public spaces
+### <a href="" id="protection-against-accidental-disclosure-to-public-spaces"></a>Helping prevent accidental data disclosure to public spaces
 
 EDP helps protect your enterprise data from being shared to public spaces, like the public cloud, accidentally. For example, if an employee stores content in the **Documents** folder, which is automatically synched with OneDrive (an app on your privileged list), then the document is encrypted locally and not synched it to the user’s personal cloud. Likewise, if other synching apps, like Dropbox™, aren’t on the privileged list, they also won’t be able to sync encrypted files to the user’s personal cloud.
 
-### Helping prevent accidental data disclosure to other devices
+### <a href="" id="protection-against-accidental-data-disclosure-to-other-devices"></a>Helping prevent accidental data disclosure to other devices
 
 EDP helps protect your enterprise data from leaking to other devices while transferring or moving between them. For example, if an employee puts corporate data on a USB key that also includes personal data, the corporate data remains encrypted even though the personal information remains open. Additionally, the encryption continues when the employee copies the encrypted content back to another corporate-managed device.
 
@@ -158,7 +158,7 @@ EDP helps protect your enterprise data from leaking to other devices while trans
 
  
 
-### Turn off EDP
+### <a href="" id="turning-off-edp"></a>Turn off EDP
 
 You can turn off all enterprise data protection and restrictions, reverting to where you were pre-EDP, with no data loss. However, turning off EDP isn't recommended. If you choose to turn it off, you can always turn it back on, but EDP won't retain your decryption and policies info.
 

@@ -30,32 +30,32 @@ The Secure Zone represents higher-security Core Network computers that have addi
 ## In This Topic
 
 
--   [Install and start VAMT on a networked host computer](#BKMK_PartOne)
+-   [Install and start VAMT on a networked host computer](#bkmk-partone)
 
--   [Configure the Windows Management Instrumentation firewall exception on target computers](#BKMK_PartTwo)
+-   [Configure the Windows Management Instrumentation firewall exception on target computers](#bkmk-parttwo)
 
--   [Connect to VAMT database](#BKMK_PartThree)
+-   [Connect to VAMT database](#bkmk-partthree)
 
--   [Discover products](#BKMK_PartFour)
+-   [Discover products](#bkmk-partfour)
 
--   [Sort and filter the list of computers](#BKMK_PartFive)
+-   [Sort and filter the list of computers](#bkmk-partfive)
 
--   [Collect status information from the computers in the list](#BKMK_PartSix)
+-   [Collect status information from the computers in the list](#bkmk-partsix)
 
--   [Add product keys and determine the remaining activation count](#BKMK_PartSeven)
+-   [Add product keys and determine the remaining activation count](#bkmk-partseven)
 
--   [Install the product keys](#BKMK_PartEight)
+-   [Install the product keys](#bkmk-parteight)
 
--   [Activate the client products](#BKMK_PartNine)
+-   [Activate the client products](#bkmk-partnine)
 
-## Part 1: Install and Start VAMT on a Networked Host Computer
+## <a href="" id="bkmk-partone"></a>Part 1: Install and Start VAMT on a Networked Host Computer
 
 
 1.  Install VAMT on the host computer.
 
 2.  Click the VAMT icon in the **Start** menu to open VAMT.
 
-## Part 2: Configure the Windows Management Instrumentation Firewall Exception on Target Computers
+## <a href="" id="bkmk-parttwo"></a>Part 2: Configure the Windows Management Instrumentation Firewall Exception on Target Computers
 
 
 -   Ensure that the Windows Management Instrumentation (WMI) firewall exception has been enabled for all target computers. For more information, see [Configure Client Computers](configure-client-computers-vamt-30-win8.md).
@@ -65,7 +65,7 @@ To retrieve product license status, VAMT must have administrative permissions on
 
  
 
-## Part 3: Connect to a VAMT Database
+## <a href="" id="bkmk-partthree"></a>Part 3: Connect to a VAMT Database
 
 
 1.  If you are not already connected to a database, the **Database Connection Settings** dialog box appears when you open VAMT. Select the server and database where the keys that must be activated are located.
@@ -74,7 +74,7 @@ To retrieve product license status, VAMT must have administrative permissions on
 
 3.  If you are already connected to a database, VAMT displays an inventory of the products and product keys in the center pane, and a license overview of the computers in the database. If you need to connect to a different database, click **Successfully connected to Server** to open **the Database Connection Settings** dialog box. For more information about how to create VAMT databases and adding VAMT data, see [Manage VAMT Data](manage-vamt-data-vamt-30-win8.md)
 
-## Part 4: Discover
+## <a href="" id="bkmk-partfour"></a>Part 4: Discover
 
 
 1.  In the left-side pane, in the **Products** node Products, click the product that you want to activate.
@@ -95,7 +95,7 @@ To retrieve product license status, VAMT must have administrative permissions on
 
 When the search is complete, the products that VAMT discovers appear in the product list view in the center pane.
 
-## Part 5: Sort and Filter the List of Computers
+## <a href="" id="bkmk-partfive"></a>Part 5: Sort and Filter the List of Computers
 
 
 You can sort the list of products so that it is easier to find the computers that require product keys to be activated:
@@ -114,7 +114,7 @@ You can sort the list of products so that it is easier to find the computers tha
 
 5.  Click **Filter**. VAMT displays the filtered list in the product list view in the center pane.
 
-## Part 6: Collect Status Information from the Computers in the List
+## <a href="" id="bkmk-partsix"></a>Part 6: Collect Status Information from the Computers in the List
 
 
 To collect the status from select computers in the database, you can select computers in the product list view by using one of the following methods:
@@ -134,7 +134,7 @@ If a computer has more than one supported product installed, VAMT adds an entry 
 
  
 
-## Part 7: Add Product Keys and Determine the Remaining Activation Count
+## <a href="" id="bkmk-partseven"></a>Part 7: Add Product Keys and Determine the Remaining Activation Count
 
 
 1.  Click the **Product Keys** node in the left-side pane, and then click **Add Product Keys** in the right-side pane to open the **Add Product Keys** dialog box.
@@ -152,12 +152,12 @@ If you are activating many products with a MAK, refresh the activation count of 
 
  
 
-## Part 8: Install the Product Keys
+## <a href="" id="bkmk-parteight"></a>Part 8: Install the Product Keys
 
 
 1.  In the left-side pane, click the product that you want to install keys on to.
 
-2.  If necessary, sort and filter the list of products so that it is easier to find the computers that must have a product key installed. See [Part 5: Sort and filter the list of computers](#BKMK_PartFive).
+2.  If necessary, sort and filter the list of products so that it is easier to find the computers that must have a product key installed. See [Part 5: Sort and filter the list of computers](#bkmk-partfive).
 
 3.  In the **Products** list view pane, select the individual products which must have keys installed. You can use the **CTRL** key or the **SHIFT** key to select more than one product.
 
@@ -174,7 +174,7 @@ Product key installation will fail if VAMT finds mismatched key types or edition
 
  
 
-## Part 9: Activate the Client Products
+## <a href="" id="bkmk-partnine"></a>Part 9: Activate the Client Products
 
 
 1.  Select the individual products that you want to activate in the list-view pane.

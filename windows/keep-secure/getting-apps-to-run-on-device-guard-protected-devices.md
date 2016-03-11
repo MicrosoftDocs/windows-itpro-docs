@@ -18,11 +18,11 @@ author: brianlic-msft
 
 **In this article**
 
--   [What you need to run your apps on Device-Guard protected devices](#what_you_need_to_run_your_apps_on_device-guard_protected_devices)
--   [Create a catalog file for unsigned apps](#create_a_catalog_file_for_unsigned_apps)
--   [Sign your catalog file using Sign Tool](#sign_your_catalog_file_using_sign_tool)
--   [Troubleshooting the Package Inspector](#troubleshooting_the_package_inspector)
--   [Related topics](#related_topics)
+-   [What you need to run your apps on Device-Guard protected devices](#what-you-need-to-run-your-apps-on-device-guard-protected-devices)
+-   [Create a catalog file for unsigned apps](#create-a-catalog-file-for-unsigned-apps)
+-   [Sign your catalog file using Sign Tool](#sign-your-catalog-file-using-sign-tool)
+-   [Troubleshooting the Package Inspector](#troubleshooting-the-package-inspector)
+-   [Related topics](#related-topics)
 
 Windows 10 introduces several new features and settings that when combined all equal what we're calling, Device Guard. Device Guard can help to protect your enterprise devices against the accidental running of malicious apps by requiring all of your apps to be signed by a trusted entity.
 
@@ -314,7 +314,7 @@ You must make sure that you clear the cache by creating and setting a new tempor
     cp .\DenyPackageInspector.bin C:\Windows\System32\SIPolicy.p7b
     ```
 
-3.  Restart your device and follow the steps in the [Create a catalog file for unsigned apps](#create_a_catalog_file_for_unsigned_apps) section.
+3.  Restart your device and follow the steps in the [Create a catalog file for unsigned apps](#create-a-catalog-file-for-unsigned-apps) section.
 
 ## Related topics
 

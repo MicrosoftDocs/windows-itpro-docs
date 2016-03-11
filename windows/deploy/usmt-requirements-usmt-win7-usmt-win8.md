@@ -14,15 +14,15 @@ author: CFaw
 ## In This Topic
 
 
--   [Supported Operating Systems](#BKMK_1)
+-   [Supported Operating Systems](#bkmk-1)
 
--   [Software Requirements](#BKMK_2)
+-   [Software Requirements](#bkmk-2)
 
--   [Hard Disk Requirements](#BKMK_3)
+-   [Hard Disk Requirements](#bkmk-3)
 
--   [User Prerequisites](#BKMK_UserPrereqs)
+-   [User Prerequisites](#bkmk-userprereqs)
 
-## Supported Operating Systems
+## <a href="" id="bkmk-1"></a>Supported Operating Systems
 
 
 The User State Migration Tool (USMT) 10.0 does not have any explicit RAM or CPU speed requirements for either the source or destination computers. If your computer complies with the system requirements of the operating system, it also complies with the requirements for USMT. You need an intermediate store location large enough to hold all of the migrated data and settings, and the same amount of hard disk space on the destination computer for the migrated files and settings.
@@ -105,10 +105,10 @@ USMT does not support any of the Windows Server® operating systems, Windows 20
 
  
 
-## Software Requirements
+## <a href="" id="bkmk-2"></a>Software Requirements
 
 
--   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](../p_adk_online/whats-new-in-windows-pe-s14.md).
+-   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](http://msdn.microsoft.com/library/windows/hardware/dn938350.aspx).
 
 -   **Must run in Administrator Mode** When manually running the **ScanState** and **LoadState** tools on Windows 7, Windows 8 or Windows 10 you must run them in Administrator mode from an account with administrative credentials to ensure that all specified users are migrated. This is because User Access Control (UAC) is enabled by default. If you do not run USMT in Administrator mode, only the user profile that is logged on will be included in the migration.
 
@@ -145,12 +145,12 @@ USMT does not support any of the Windows Server® operating systems, Windows 20
 
 -   **Install applications before running the LoadState command.** Install all applications on the destination computer before restoring the user state. This ensures that migrated settings are preserved.
 
-## Hard-Disk Requirements
+## <a href="" id="bkmk-3"></a>Hard-Disk Requirements
 
 
 Ensure that there is enough available space in the migration-store location and on the source and destination computers. For more information, see [Estimate Migration Store Size](estimate-migration-store-size-usmt-win7-usmt-win8.md).
 
-## User Prerequisites
+## <a href="" id="bkmk-userprereqs"></a>User Prerequisites
 
 
 This documentation assumes that IT professionals using USMT understand command-line tools. The documentation also assumes that IT professionals using USMT to author MigXML rules understand the following:

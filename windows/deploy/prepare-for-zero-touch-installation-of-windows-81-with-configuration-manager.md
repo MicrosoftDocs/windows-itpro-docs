@@ -26,7 +26,7 @@ author: CFaw
 -   [Configure the client settings](#sec06)
 -   [Configure the Network Access account](#sec07)
 -   [Enable PXE on the CM01 distribution point](#sec08)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic will walk you through the process of integrating Microsoft System Center 2012 R2 Configuration Manager SP1 with Microsoft Deployment Toolkit (MDT) 2013 Update 1, as well as the other preparations needed to deploying Windows 10 via Zero Touch Installation. Additional preparations include the installation of hotfixes as well as activities that speed up the Pre-Boot Execution Environment (PXE).
 
@@ -51,7 +51,7 @@ In this topic, you will use an existing Configuration Manager server structure t
 
 For the purposes of this topic, we will use two machines: DC01 and CM01. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 Standard. DC01 and CM01 are both members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md).
 
-## Create the Configuration Manager service accounts
+## <a href="" id="sec01"></a>Create the Configuration Manager service accounts
 
 
 To configure permissions for the various service accounts needed for operating system deployment in Configuration Manager, you use a role-based model. To create the Configuration Manager Join Domain account as well as the Configuration Manager Network Access account, follow these steps:
@@ -84,7 +84,7 @@ To configure permissions for the various service accounts needed for operating s
 
 Figure 6. The Configuration Manager service accounts used for operating system deployment.
 
-## Configure Active Directory permissions
+## <a href="" id="sec02"></a>Configure Active Directory permissions
 
 
 In order for the Configuration Manager Join Domain Account (CM\_JD) to join machines into the contoso.com domain you need to configure permissions in Active Directory. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](http://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01.
@@ -128,7 +128,7 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
     12. Validated write to service principal name
 
-## Review the Sources folder structure
+## <a href="" id="sec03"></a>Review the Sources folder structure
 
 
 To support the packages you create in this section, the following folder structure should be created on the Configuration Manager primary site server (CM01):
@@ -164,7 +164,7 @@ In most production environments, the packages are stored on a Distributed File S
 
 Figure 7. The E:\\Sources\\OSD folder structure.
 
-## Integrate Configuration Manager with MDT
+## <a href="" id="sec04"></a>Integrate Configuration Manager with MDT
 
 
 To extend the Configuration Manager console with MDT 2013 Update 1 wizards and templates, you install MDT 2013 Update 1 in the default location and run the integration setup. In these steps, we assume you have downloaded MDT 2013 Update 1 to the C:\\Setup\\MDT2013 folder on CM01.
@@ -187,7 +187,7 @@ To extend the Configuration Manager console with MDT 2013 Update 1 wizards and t
 
 Figure 8. Set up the MDT 2013 Update 1 integration with Configuration Manager.
 
-## Configure the client settings
+## <a href="" id="sec06"></a>Configure the client settings
 
 
 Most organizations want to display their name during deployment. In this section, you configure the default Configuration Manager client settings with the Contoso organization name.
@@ -206,7 +206,7 @@ Figure 9. Configure the organization name in client settings.
 
 Figure 10. The Contoso organization name displayed during deployment.
 
-## Configure the Network Access account
+## <a href="" id="sec07"></a>Configure the Network Access account
 
 
 Configuration Manager uses the Network Access account during the Windows 10 deployment process to access content on the distribution point(s). In this section, you configure the Network Access account.
@@ -221,7 +221,7 @@ Configuration Manager uses the Network Access account during the Windows 10 depl
 
 Figure 11. Test the connection for the Network Access account.
 
-## Enable PXE on the CM01 distribution point
+## <a href="" id="sec08"></a>Enable PXE on the CM01 distribution point
 
 
 Configuration Manager has many options for starting a deployment, but starting via PXE is certainly the most flexible in a large environment. In this section, you enable PXE on the CM01 distribution point.

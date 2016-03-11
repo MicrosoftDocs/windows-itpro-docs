@@ -22,12 +22,12 @@ author: TrudyHa
 
 **In this article**
 
--   [Managed and Unmanaged Environments](#BMK_ManagedUnmanaged)
--   [Role-Based Applications](#BMK_RolebasedApplications)
--   [Software Distribution](#BMK_SoftwareDistribution)
--   [Geographic Distribution](#BMK_GeographicDistribution)
--   [Computer Types](#BMK_ComputerTypes)
--   [Related topics](#related_topics)
+-   [Managed and Unmanaged Environments](#bmk-managedunmanaged)
+-   [Role-Based Applications](#bmk-rolebasedapplications)
+-   [Software Distribution](#bmk-softwaredistribution)
+-   [Geographic Distribution](#bmk-geographicdistribution)
+-   [Computer Types](#bmk-computertypes)
+-   [Related topics](#related-topics)
 
 An inventory-collector package gathers inventory data from the computers on which it is installed. This data includes the following:
 
@@ -41,17 +41,17 @@ To generate a complete inventory and obtain a comprehensive view of your organiz
 
 If you decide to deploy inventory-collector packages to representative subsets of computers in your organization, consider the following:
 
--   [Managed and Unmanaged Environments](#BMK_ManagedUnmanaged)
+-   [Managed and Unmanaged Environments](#bmk-managedunmanaged)
 
--   [Role-Based Applications](#BMK_RolebasedApplications)
+-   [Role-Based Applications](#bmk-rolebasedapplications)
 
--   [Software Distribution](#BMK_SoftwareDistribution)
+-   [Software Distribution](#bmk-softwaredistribution)
 
--   [Geographic Distribution](#BMK_GeographicDistribution)
+-   [Geographic Distribution](#bmk-geographicdistribution)
 
--   [Computer Types](#BMK_ComputerTypes)
+-   [Computer Types](#bmk-computertypes)
 
-## Managed and Unmanaged Environments
+## <a href="" id="bmk-managedunmanaged"></a>Managed and Unmanaged Environments
 
 
 In your organization, you may have managed environments and unmanaged environments.
@@ -60,22 +60,22 @@ In a managed environment, IT administrators strictly control and manage the inst
 
 In an unmanaged environment, users have administrator permissions and can install applications at their own discretion. To obtain the full inventory, you must deploy your inventory-collector packages to more computers.
 
-## Role-Based Applications
+## <a href="" id="bmk-rolebasedapplications"></a>Role-Based Applications
 
 
 Your organization may use role-based applications that relate to job function. For example, accountants may use finance-related applications. Reviewing application use together with job function helps you better identify which subsets of computers need inventory-collector packages.
 
-## Software Distribution
+## <a href="" id="bmk-softwaredistribution"></a>Software Distribution
 
 
 You can distribute applications in various ways within an organization. For example, you can use Group Policy, Microsoft® IntelliMirror®, Microsoft System Center Configuration Manager, or a customized distribution method. Reviewing the policies for your software distribution system helps you better identify which subsets of computers need inventory-collector packages.
 
-## Geographic Distribution
+## <a href="" id="bmk-geographicdistribution"></a>Geographic Distribution
 
 
 While you plan for inventory collection, consider the geographic distribution of your organization, and consider application use within each region. Be sure to account for divisional applications, localized applications, and applications that are specific to the geographic location and export restrictions. Consult with technical and business leaders from each region to understand the differences and determine which subsets of computers need inventory-collector packages.
 
-## Computer Types
+## <a href="" id="bmk-computertypes"></a>Computer Types
 
 
 Computer types can be an important factor in the deployment of inventory-collector packages. The following sections describe common computer types.

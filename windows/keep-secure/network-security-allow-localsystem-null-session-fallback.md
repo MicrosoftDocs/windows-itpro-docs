@@ -18,8 +18,8 @@ author: brianlic-msft
 **In this article**
 
 -   [Reference](#reference)
--   [Security considerations](#security_considerations)
--   [Related topics](#related_topics)
+-   [Security considerations](#security-considerations)
+-   [Related topics](#related-topics)
 
 Describes the best practices, location, values, and security considerations for the **Network security: Allow LocalSystem NULL session fallback** security policy setting.
 

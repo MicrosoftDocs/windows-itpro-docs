@@ -17,9 +17,9 @@ author: brianlic-msft
 
 **In this article**
 
--   [Policy-based security settings management](#policy-based_security_settings_management)
--   [Security Settings extension architecture](#w2k3tr_gpssp_how_ebls)
--   [Security settings policy processes and interactions](#w2k3tr_gpssp_how_hjxe)
+-   [Policy-based security settings management](#policy-based-security-settings-management)
+-   [Security Settings extension architecture](#w2k3tr-gpssp-how-ebls)
+-   [Security settings policy processes and interactions](#w2k3tr-gpssp-how-hjxe)
 
 This reference topic describes the common scenarios, architecture, and processes for security settings.
 
@@ -190,7 +190,7 @@ The following diagram shows Security Settings and related features.
 
     The Local Group Policy Editor MMC snap-in.
 
-## Security Settings extension architecture
+## <a href="" id="w2k3tr-gpssp-how-ebls"></a>Security Settings extension architecture
 
 
 The Security Settings extension of the Local Group Policy Editor is part of the Security Configuration Manager tools, as shown in the following diagram.
@@ -261,12 +261,12 @@ The following list describes these primary features of the security configuratio
 
     These are text files that contain declarative security settings. They are loaded into a database before configuration or analysis. Group Policy security policies are stored in .inf files on the SYSVOL folder of domain controllers, where they are downloaded (by using file copy) and merged into the system database during policy propagation.
 
-## Security settings policy processes and interactions
+## <a href="" id="w2k3tr-gpssp-how-hjxe"></a>Security settings policy processes and interactions
 
 
 For a domain-joined device, where Group Policy is administered, security settings are processed in conjunction with Group Policy. Not all settings are configurable.
 
-### Group Policy processing
+### <a href="" id="bkmk-gpprocessing"></a>Group Policy processing
 
 When a computer starts and a user logs on, computer policy and user policy are applied according to the following sequence:
 
@@ -344,7 +344,7 @@ This order means that the local Group Policy Object is processed first, and Grou
 
 This is the default processing order and administrators can specify exceptions to this order. A Group Policy Object that is linked to a site, domain, or organizational unit (not a local Group Policy Object) can be set to **Enforced** with respect to that site, domain, or organizational unit, so that none of its policy settings can be overridden. At any site, domain, or organizational unit, you can mark Group Policy inheritance selectively as **Block Inheritance**. Group Policy Object links that are set to **Enforced** are always applied, however, and they cannot be blocked.
 
-### Security settings policy processing
+### <a href="" id="bkmk-secpolprocessing"></a>Security settings policy processing
 
 In the context of Group Policy processing, security settings policy is processed in the following order.
 

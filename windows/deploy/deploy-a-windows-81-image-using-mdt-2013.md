@@ -29,7 +29,7 @@ author: CFaw
 -   [Multicast deployments](#sec09)
 -   [Use offline media to deploy Windows 10](#sec10)
 -   [Unified Extensible Firmware Interface (UEFI)-based deployments](#sec11)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 1 specifically. You will prepare for this by creating a MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. You will then configure the deployment share, create a new task sequence, add applications, add drivers, add rules, and configure Active Directory permissions for deployment.
 
@@ -39,7 +39,7 @@ For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0
 
 Figure 1. The machines used in this topic.
 
-## Step 1: Configure Active Directory permissions
+## <a href="" id="sec01"></a>Step 1: Configure Active Directory permissions
 
 
 These steps will show you how to configure an Active Directory account with the permissions required to deploy a Windows 10 machine to the domain using MDT. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](http://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01. The account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01. In order for MDT to join machines into the contoso.com domain you need to create an account and configure permissions in Active Directory.
@@ -95,7 +95,7 @@ These steps will show you how to configure an Active Directory account with the 
 
         8.  Validated write to service principal name
 
-## Step 2: Set up the MDT production deployment share
+## <a href="" id="sec02"></a>Step 2: Set up the MDT production deployment share
 
 
 When you are ready to deploy Windows 10 in a production environment, you will first create a new MDT deployment share. You should not use the same deployment share that you used to create the reference image for a production deployment. For guidance on creating a custom Windows 10 image, see [Create a Windows 10 reference image](create-a-windows-81-reference-image.md).
@@ -118,7 +118,7 @@ The steps for creating the deployment share for production are the same as when 
 
 7.  Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
-## Step 3: Add a custom image
+## <a href="" id="sec03"></a>Step 3: Add a custom image
 
 
 The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 10. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10 stores additional components in the Sources\\SxS folder which is outside the image and may be required when installing components.
@@ -150,7 +150,7 @@ The reason for adding the setup files has changed since earlier versions of MDT.
 
 Figure 2. The imported operating system after renaming it.
 
-## Step 4: Add an application
+## <a href="" id="sec04"></a>Step 4: Add an application
 
 
 When you configure your MDT Build Lab deployment share, you will also add any applications to the new deployment share before creating your task sequence. This section walks you through the process of adding an application to the MDT Production deployment share using Adobe Reader as an example.
@@ -179,7 +179,7 @@ In this example, we assume that you have downloaded the Adobe Reader XI installa
 
 Figure 3. The Adobe Reader application added to the Deployment Workbench.
 
-## Step 5: Prepare the drivers repository
+## <a href="" id="sec05"></a>Step 5: Prepare the drivers repository
 
 
 In order to deploy Windows 10 with MDT 2013 Update 1 successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
@@ -378,7 +378,7 @@ For the Microsoft Surface Pro model, you find the drivers on the Microsoft websi
 
     -   Driver source directory: **E:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Pro 3**
 
-## Step 6: Create the deployment task sequence
+## <a href="" id="sec06"></a>Step 6: Create the deployment task sequence
 
 
 This section will show you how to create the task sequence used to deploy your production Windows 10 reference image. You will then configure the tasks sequence to enable patching via a Windows Server Update Services (WSUS) server.
@@ -444,7 +444,7 @@ This section will show you how to create the task sequence used to deploy your p
 
 Figure 6. The task sequence for production deployment.
 
-## Step 7: Configure the MDT production deployment share
+## <a href="" id="sec07"></a>Step 7: Configure the MDT production deployment share
 
 
 In this section, you will learn how to configure the MDT Build Lab deployment share with the rules required to create a simple and dynamic deployment process. This includes configuring commonly used rules and an explanation of how these rules work.
@@ -636,7 +636,7 @@ If your organization has a Microsoft Software Assurance agreement, you also can 
 
 ### Add DaRT 10 to the boot images
 
-If you have licensing for MDOP and DaRT, you can add DaRT to the boot images using the steps in this section. If you do not have DaRT licensing, or don't want to use it, simply skip to the next section, [Update the Deployment Share](#BKMK_update_deployment). To enable the remote connection feature in MDT 2013 Update 1, you need to do the following:
+If you have licensing for MDOP and DaRT, you can add DaRT to the boot images using the steps in this section. If you do not have DaRT licensing, or don't want to use it, simply skip to the next section, [Update the Deployment Share](#bkmk-update-deployment). To enable the remote connection feature in MDT 2013 Update 1, you need to do the following:
 
 -   Install DaRT 10 (part of MDOP 2015 R1).
 
@@ -670,7 +670,7 @@ In these steps, we assume that you downloaded MDOP 2015 R1 and copied DaRT 10 to
 
 10. Click **OK**.
 
-### Update the deployment share
+### <a href="" id="bkmk-update-deployment"></a>Update the deployment share
 
 Like the MDT Build Lab deployment share, the MDT Production deployment share needs to be updated after it has been configured. This is the process during which the Windows PE boot images are created.
 
@@ -683,7 +683,7 @@ The update process will take 5 to 10 minutes.
 
  
 
-## Step 8: Deploy the Windows 10 client image
+## <a href="" id="sec08"></a>Step 8: Deploy the Windows 10 client image
 
 
 These steps will walk you throug the process of using task sequences to deploy Windows 10 images through a fully automated process. First, you need to add the boot image to Windows Deployment Services (WDS) and then start the deployment. In contrast with deploying images from the MDT Build Lab deployment share, we recommend using the Pre-Installation Execution Environment (PXE) to start the full deployments in the datacenter, even though you technically can use an ISO/CD or USB to start the process.
@@ -762,7 +762,7 @@ When monitoring is enabled, MDT also writes information to the event viewer on M
 
 Figure 12. The Event Viewer showing a successful deployment of PC0005.
 
-## Multicast deployments
+## <a href="" id="sec09"></a>Multicast deployments
 
 
 Multicast deployment allows for image deployment with reduced network load during simultaneous deployments. Multicast is a useful operating system deployment feature in MDT deployments, however it is important to ensure that your network supports it and is designed for it.
@@ -787,7 +787,7 @@ Setting up MDT for multicast is straightforward. You enable multicast on the dep
 
 Figure 13. The newly created multicast namespace.
 
-## Use offline media to deploy Windows 10
+## <a href="" id="sec10"></a>Use offline media to deploy Windows 10
 
 
 In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 10. You can very easily generate an offline version of your deployment share - either the full deployment share or a subset of it - by the use of selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
@@ -893,7 +893,7 @@ Follow these steps to create a bootable USB stick from the offline media content
 
 6.  In the Diskpart utility, type **active**, and then type **exit**.
 
-## Unified Extensible Firmware Interface (UEFI)-based deployments
+## <a href="" id="sec11"></a>Unified Extensible Firmware Interface (UEFI)-based deployments
 
 
 As referenced in [Windows 10 deployment tools](http://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UFEI.

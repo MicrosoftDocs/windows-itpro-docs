@@ -19,11 +19,11 @@ author: brianlic-msft
 
 **In this article**
 
--   [Benefits of Microsoft Passport](#benefits_of_microsoft_passport)
--   [How Microsoft Passport works: key points](#how_microsoft_passport_works__key_points)
--   [Comparing key-based and certificate-based authentication](#comparing_key-based_and_certificate-based_authentication)
--   [Learn more](#learn_more)
--   [Related topics](#related_topics)
+-   [Benefits of Microsoft Passport](#benefits-of-microsoft-passport)
+-   [How Microsoft Passport works: key points](#how-microsoft-passport-works--key-points)
+-   [Comparing key-based and certificate-based authentication](#comparing-key-based-and-certificate-based-authentication)
+-   [Learn more](#learn-more)
+-   [Related topics](#related-topics)
 
 In Windows 10, Microsoft Passport replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and a Windows Hello (biometric) or PIN.
 
@@ -66,7 +66,7 @@ Imagine that someone is looking over your shoulder as you get money from an ATM 
 
 Passport helps protect user identities and user credentials. Because no passwords are used, it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Passport credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are generated within isolated environments of TPMs.
 
-Microsoft Passport also enables Windows 10 Mobile devices to be used as [a remote credential](prepare-people-to-use-microsoft-passport.md#BMK_remote) when signing into Windows 10 PCs. During the sign-in process, the Windows 10 PC can connect using Bluetooth to access Microsoft Passport on the user’s Windows 10 Mobile device. Because users carry their phone with them, Microsoft Passport makes implementing two-factor authentication across the enterprise less costly and complex than other solutions.
+Microsoft Passport also enables Windows 10 Mobile devices to be used as [a remote credential](prepare-people-to-use-microsoft-passport.md#bmk-remote) when signing into Windows 10 PCs. During the sign-in process, the Windows 10 PC can connect using Bluetooth to access Microsoft Passport on the user’s Windows 10 Mobile device. Because users carry their phone with them, Microsoft Passport makes implementing two-factor authentication across the enterprise less costly and complex than other solutions.
 
 **Note**  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
 

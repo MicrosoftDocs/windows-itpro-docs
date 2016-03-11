@@ -27,7 +27,7 @@ You'll need this software to work with Store for Business.
 
 -   IT Pros that are administering Store for Business need a browser compatible with Store for Business running on a PC or mobile device. Supported browsers include: Internet Explorer 10 or later, Microsoft Edge, or current versions of Chrome or Firefox.
 
--   Employees using apps from Store for Business need Windows 10, Version 1511 running on a PC or mobile device.
+-   Employees using apps from Store for Business need Windows 10, version 1511 running on a PC or mobile device.
 
 Microsoft Azure Active Directory (AD) accounts for your employees:
 

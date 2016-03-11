@@ -22,11 +22,11 @@ author: TrudyHa
 
 **In this article**
 
--   [Connecting to a SQL Server Database](#connecting_to_a_sql_server_database)
--   [Verifying SQL Server Version](#verifying_sql_server_version)
--   [Creating an ACT Database](#creating_an_act_database)
--   [Granting ACT Database Permissions for the ACT Log Processing Service](#granting_act_database_permissions_for_the_act_log_processing_service)
--   [Related topics](#related_topics)
+-   [Connecting to a SQL Server Database](#connecting-to-a-sql-server-database)
+-   [Verifying SQL Server Version](#verifying-sql-server-version)
+-   [Creating an ACT Database](#creating-an-act-database)
+-   [Granting ACT Database Permissions for the ACT Log Processing Service](#granting-act-database-permissions-for-the-act-log-processing-service)
+-   [Related topics](#related-topics)
 
 The following solutions may help you resolve issues that are related to your Microsoft® SQL Server® database for the Application Compatibility Toolkit (ACT).
 

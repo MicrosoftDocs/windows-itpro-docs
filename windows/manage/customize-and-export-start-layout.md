@@ -22,10 +22,10 @@ author: jdeckerMS
 
 **In this article**
 
--   [Customize the Start screen on your test computer](#BKMKCustomizeStartScreen)
--   [Export the Start layout](#BMK_ExportStartScreenLayout)
--   [Configure a partial Start layout](#configure_a_partial_start_layout)
--   [Related topics](#related_topics)
+-   [Customize the Start screen on your test computer](#bkmkcustomizestartscreen)
+-   [Export the Start layout](#bmk-exportstartscreenlayout)
+-   [Configure a partial Start layout](#configure-a-partial-start-layout)
+-   [Related topics](#related-topics)
 
 The easiest method for creating a customized Start layout to apply to other Windows 10 devices is to set up the Start screen on a test computer and then export the layout.
 
@@ -33,9 +33,9 @@ After you export the layout, decide whether you want to apply a *full* Start lay
 
 When a full Start layout is applied, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start.
 
-When [a partial Start layout](#configure_a_partial_start_layout) is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
+When [a partial Start layout](#configure-a-partial-start-layout) is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
-**Note**  Partial Start layout is only supported on Windows 10, Version 1511 and later.
+**Note**  Partial Start layout is only supported on Windows 10, version 1511 and later.
 
  
 
@@ -47,7 +47,7 @@ You can deploy the resulting .xml file to devices using one of the following met
 
 -   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md)
 
-## Customize the Start screen on your test computer
+## <a href="" id="bkmkcustomizestartscreen"></a>Customize the Start screen on your test computer
 
 
 To prepare a Start layout for export, you simply customize the Start layout on a test computer.
@@ -63,7 +63,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 2.  Create a new user account that you will use to customize the Start layout.
 
-
+<a href="" id="bmk-customize-start"></a>
 **To customize Start**
 
 1.  Sign in to your test computer with the user account that you created.
@@ -82,7 +82,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
     -   **Create your own app groups**. Drag the apps to an empty area. To name a group, click above the group of tiles and then type the name in the **Name group** field that appears above the group.
 
-## Export the Start layout
+## <a href="" id="bmk-exportstartscreenlayout"></a>Export the Start layout
 
 
 When you have the Start layout that you want your users to see, use the [Export-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet in Windows PowerShell to export the Start layout to an .xml file.
@@ -114,9 +114,9 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 **To configure a partial Start screen layout**
 
-1.  [Customize the Start layout](#BMK_customize_start).
+1.  [Customize the Start layout](#bmk-customize-start).
 
-2.  [Export the Start layout](#BMK_ExportStartScreenLayout).
+2.  [Export the Start layout](#bmk-exportstartscreenlayout).
 3.  Open the layout .xml file. There is a `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the **DefaultLayoutOverride** element as follows:
 
     ``` syntax

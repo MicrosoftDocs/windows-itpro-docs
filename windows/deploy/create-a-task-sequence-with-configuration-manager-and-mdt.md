@@ -21,13 +21,13 @@ author: CFaw
 -   [Create a task sequence using the MDT Integration Wizard](#sec01)
 -   [Edit the task sequence](#sec02)
 -   [Move the packages](#sec03)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 In this topic, you will learn how to create a Microsoft System Center 2012 R2 Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard. Creating task sequences in System Center 2012 R2 Configuration Manager requires many more steps than creating task sequences for MDT Lite Touch installation. Luckily, the MDT wizard helps you through the process and also guides you through creating the needed packages.
 
 For the purposes of this topic, we will use two machines: DC01 and CM01. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 Standard, both of which are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md).
 
-## Create a task sequence using the MDT Integration Wizard
+## <a href="" id="sec01"></a>Create a task sequence using the MDT Integration Wizard
 
 
 This section will walk you through the process of creating a System Center 2012 R2 Configuration Manager task sequence for production use.
@@ -84,7 +84,7 @@ This section will walk you through the process of creating a System Center 2012 
 
 16. On the **Confirmation** page, click **Finish**.
 
-## Edit the task sequence
+## <a href="" id="sec02"></a>Edit the task sequence
 
 
 After you create the task sequence, we recommend that you configure the task sequence for an optimal deployment experience. The configurations include enabling support for Unified Extensible Firmware Interface (UEFI), dynamic organizational unit (OU) allocation, computer replace scenarios, and more.
@@ -162,7 +162,7 @@ The Request State Store and Release State Store actions need to be added for com
 
  
 
-## Move the packages
+## <a href="" id="sec03"></a>Move the packages
 
 
 While creating the task sequence with the MDT wizard, a few operating system deployment packages were created. To move these packages to the OSD folder, take the following steps.

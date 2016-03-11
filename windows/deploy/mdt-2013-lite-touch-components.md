@@ -30,7 +30,7 @@ author: CFaw
 -   [Selection profiles](#sec10)
 -   [Logging](#sec11)
 -   [Monitoring](#sec12)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic provides an overview of the features in the Microsoft Deployment Toolkit (MDT) 2013 Update 1 that support Lite Touch Installation (LTI) for Windows 10. An LTI deployment strategy requires very little infrastructure or user interaction, and can be used to deploy an operating system from a network share or from a physical media, such as a USB flash drive or disc.
 
@@ -40,12 +40,12 @@ When deploying the Windows operating system using MDT, most of the administratio
 
 Figure 4. If you click **View Script** on the right side, you will get the PowerShell code that was used to perform the task.
 
-## Deployment shares
+## <a href="" id="sec01"></a>Deployment shares
 
 
 A deployment share is essentially a folder on the server that is shared and contains all the setup files and scripts needed for the deployment solution. It also holds the configuration files (called rules) that are gathered when a machine is deployed. These configuration files can reach out to other sources, like a database, external script, or web server to get additional settings for the deployment. For Lite Touch deployments, it is common to have two deployment shares: one for creating the reference images and one for deployment. For Zero Touch, it is common to have only the deployment share for creating reference images because Microsoft System Center 2012 R2 Configuration Manager deploys the image in the production environment.
 
-## Rules
+## <a href="" id="sec02"></a>Rules
 
 
 The rules (CustomSettings.ini and Bootstrap.ini) make up the brain of MDT. The rules control the Windows Deployment Wizard on the client and, for example, can provide the following settings to the machine being deployed:
@@ -64,32 +64,32 @@ You can manage hundreds of settings in the rules. For more information, see the 
 
 Figure 5. Example of a MDT rule. In this example, the new computer name is being calculated based on PC- plus the first seven (Left) characters from the serial number
 
-## Boot images
+## <a href="" id="sec03"></a>Boot images
 
 
 Boot images are the Windows Preinstallation Environment (Windows PE) images that are used to start the deployment. They can be started from a CD or DVD, an ISO file, a USB device, or over the network using a Pre-Boot Execution Environment (PXE) server. The boot images connect to the deployment share on the server and start the deployment.
 
-## Operating systems
+## <a href="" id="sec04"></a>Operating systems
 
 
 Using the Deployment Workbench, you import the operating systems you want to deploy. You can import either the full source (like the full Windows 10 DVD/ISO) or a custom image that you have created. The full-source operating systems are primarily used to create reference images; however, they also can be used for normal deployments.
 
-## Applications
+## <a href="" id="sec05"></a>Applications
 
 
 Using the Deployment Workbench, you also add the applications you want to deploy. MDT supports virtually every executable Windows file type. The file can be a standard .exe file with command-line switches for an unattended install, a Microsoft Windows Installer (MSI) package, a batch file, or a VBScript. In fact, it can be just about anything that can be executed unattended. MDT also supports the new Universal Windows apps.
 
-## Driver repository
+## <a href="" id="sec06"></a>Driver repository
 
 
 You also use the Deployment Workbench to import the drivers your hardware needs into a driver repository that lives on the server, not in the image.
 
-## Packages
+## <a href="" id="sec07"></a>Packages
 
 
 With the Deployment Workbench, you can add any Microsoft packages that you want to use. The most commonly added packages are language packs, and the Deployment Workbench Packages node works well for those. You also can add security and other updates this way. However, we generally recommend that you use Windows Server Update Services (WSUS) for operating system updates. The rare exceptions are critical hotfixes that are not available via WSUS, packages for the boot image, or any other package that needs to be deployed before the WSUS update process starts.
 
-## Task sequences
+## <a href="" id="sec08"></a>Task sequences
 
 
 Task sequences are the heart and soul of the deployment solution. When creating a task sequence, you need to select a template. The templates are located in the Templates folder in the MDT installation directory, and they determine which default actions are present in the sequence.
@@ -106,7 +106,7 @@ You can think of a task sequence as a list of actions that need to be executed i
 
 -   **Windows Update.** Connects to a WSUS server and updates the machine.
 
-## Task sequence templates
+## <a href="" id="sec09"></a>Task sequence templates
 
 
 MDT comes with nine default task sequence templates. You can also create your own templates. As long as you store them in the Templates folder, they will be available when you create a new task sequence.
@@ -136,7 +136,7 @@ MDT comes with nine default task sequence templates. You can also create your ow
 
 -   **Standard Client Upgrade task sequence.** A simple task sequence template used to perform an in-place upgrade from Windows 7, Windows 8, or Windows 8.1 directly to Windows 10, automatically preserving existing data, settings, applications, and drivers.
 
-## Selection profiles
+## <a href="" id="sec10"></a>Selection profiles
 
 
 Selection profiles, which are available in the Advanced Configuration node, provide a way to filter content in the Deployment Workbench. Selection profiles are used for several purposes in the Deployment Workbench and in Lite Touch deployments. For example, they can be used to:
@@ -151,7 +151,7 @@ Selection profiles, which are available in the Advanced Configuration node, prov
 
 -   Filter which task sequences and applications are displayed in the Deployment Wizard.
 
-## Logging
+## <a href="" id="sec11"></a>Logging
 
 
 MDT uses many log files during operating system deployments. By default the logs are client side, but by configuring the deployment settings, you can have MDT store them on the server, as well.
@@ -161,7 +161,7 @@ The easiest way to view log files is to use Configuration Manager Trace (CMTrace
 
  
 
-## Monitoring
+## <a href="" id="sec12"></a>Monitoring
 
 
 On the deployment share, you also can enable monitoring. After you enable monitoring, you will see all running deployments in the Monitor node in the Deployment Workbench.

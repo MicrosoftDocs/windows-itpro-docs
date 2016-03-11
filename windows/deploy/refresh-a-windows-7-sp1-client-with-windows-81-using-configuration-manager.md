@@ -21,7 +21,7 @@ author: CFaw
 -   [Create a device collection and add the PC0003 computer](#sec01)
 -   [Create a new deployment](#sec02)
 -   [Initiate a computer refresh](#sec03)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic will show you how to use a previously created task sequence to refresh a Windows 7 SP1 client with Windows 10 using Microsoft System Center 2012 R2 Configuration Manager and Microsoft Deployment Toolkit (MDT) 2013 Update 1. When refreshing a machine to a later version, it appears as an upgrade to the end user, but technically it is not an in-place upgrade. A computer refresh also involves taking care of user data and settings from the old installation and making sure to restore those at the end of the installation. For more information, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-81.md).
 
@@ -41,7 +41,7 @@ For the purposes of this topic, we will use three machines: DC01, CM01, and PC00
 
 In this topic, we assume that you have a Windows 7 SP1 client named PC0003 with the Configuration Manager client installed.
 
-## Create a device collection and add the PC0003 computer
+## <a href="" id="sec01"></a>Create a device collection and add the PC0003 computer
 
 
 1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
@@ -73,7 +73,7 @@ It may take a short while for the collection to refresh; you can view progress v
 
  
 
-## Create a new deployment
+## <a href="" id="sec02"></a>Create a new deployment
 
 
 Using the Configuration Manager console, in the Software Library workspace, select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM**, and then select **Deploy**. Use the following settings:
@@ -109,7 +109,7 @@ Using the Configuration Manager console, in the Software Library workspace, sele
 
     -   &lt;default&gt;
 
-## Initiate a computer refresh
+## <a href="" id="sec03"></a>Initiate a computer refresh
 
 
 Now you can start the computer refresh on PC0003.

@@ -37,9 +37,9 @@ Here's an approximate scaling guide for WEF events:
 
  
 
-Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#BKMK_AppendixC). This is because WEF is a passive system with regards to the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling additional event channels and expanding the size of event log files has not resulted in noticeable performance differences.
+Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#bkmk-appendixc). This is because WEF is a passive system with regards to the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling additional event channels and expanding the size of event log files has not resulted in noticeable performance differences.
 
-For the minimum recommended audit policy and registry system ACL settings, see [Appendix A - Minimum recommended minimum audit policy](#BKMK_AppendixA) and [Appendix B - Recommended minimum registry system ACL policy](#BKMK_AppendixB).
+For the minimum recommended audit policy and registry system ACL settings, see [Appendix A - Minimum recommended minimum audit policy](#bkmk-appendixa) and [Appendix B - Recommended minimum registry system ACL policy](#bkmk-appendixb).
 
 **Note**  
 These are only minimum values need to meet what the WEF subscription selects.
@@ -55,7 +55,7 @@ This means you would create two base subscriptions:
 
 Each using the respective event query below. Note that for the Targeted subscription enabling the “read existing events” option should be set to true to allow collection of existing events from systems. By default, WEF subscriptions will only forward events generated after the WEF subscription was received by the client.
 
-In [Appendix E – Annotated Baseline Subscription Event Query](#BKMK_AppendixE) and [Appendix F – Annotated Suspect Subscription Event Query](#BKMK_AppendixF), the event query XML is included when creating WEF subscriptions. These are annotated for query purpose and clarity. Individual &lt;Query&gt; element can be removed or edited without affecting the rest of the query.
+In [Appendix E – Annotated Baseline Subscription Event Query](#bkmk-appendixe) and [Appendix F – Annotated Suspect Subscription Event Query](#bkmk-appendixf), the event query XML is included when creating WEF subscriptions. These are annotated for query purpose and clarity. Individual &lt;Query&gt; element can be removed or edited without affecting the rest of the query.
 
 ### Common WEF questions
 
@@ -93,7 +93,7 @@ The HTTPS option is available if certificate based authentication is used, in ca
 
 ### Do WEF Clients have a separate buffer for events?
 
-The WEF client machines local event log is the buffer for WEF for when the connection to the WEC server is lost. To increase the “buffer size”, increase the maximum file size of the specific event log file where events are being selected. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#BKMK_AppendixC).
+The WEF client machines local event log is the buffer for WEF for when the connection to the WEC server is lost. To increase the “buffer size”, increase the maximum file size of the specific event log file where events are being selected. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
 
 When the event log overwrites existing events (resulting in data loss if the device is not connected to the Event Collector), there is no notification sent to the WEF collector that events are lost from the client. Neither is there an indicator that there was a gap encountered in the event stream.
 
@@ -147,7 +147,7 @@ For collector initiated subscriptions: The subscription contains the list of mac
 
 Yes. If you desire a High-Availability environment, simply configure multiple WEC servers with the same subscription configuration and publish both WEC Server URIs to WEF clients. WEF Clients will forward events simultaneously to the configured subscriptions on the WEC servers, if they have the appropriate access.
 
-### What are the WEC server’s limitations?
+### <a href="" id="what-are-the-wec-server-s-limitations-"></a>What are the WEC server’s limitations?
 
 There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is “10k x 10k” – meaning, no more than 10,000 concurrently active WEF Clients per WEC server and no more than 10,000 events/second average event volume.
 
@@ -178,7 +178,7 @@ The subscription is essentially a collection of query statements applied to the 
 
 To gain the most value out of the baseline subscription we recommend to have the following requirements set on the device to ensure that the clients are already generating the required events to be forwarded off the system.
 
--   Apply a security audit policy that is a super-set of the recommended minimum audit policy. For more info, see [Appendix A – Minimum Recommended minimum Audit Policy](#BKMK_AppendixA). This ensures that the security event log is generating the required events.
+-   Apply a security audit policy that is a super-set of the recommended minimum audit policy. For more info, see [Appendix A – Minimum Recommended minimum Audit Policy](#bkmk-appendixa). This ensures that the security event log is generating the required events.
 
 -   Apply at least an Audit-Only AppLocker policy to devices.
 
@@ -188,9 +188,9 @@ To gain the most value out of the baseline subscription we recommend to have the
 
 -   Enable disabled event channels and set the minimum size for modern event files.
 
--   Currently, there is no GPO template for enabling or setting the maximum size for the modern event files. This must be done by using a GPO. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#BKMK_AppendixC).
+-   Currently, there is no GPO template for enabling or setting the maximum size for the modern event files. This must be done by using a GPO. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
 
-The annotated event query can be found in the following. For more info, see [Appendix F – Annotated Baseline Subscription Event Query](#BKMK_AppendixF).
+The annotated event query can be found in the following. For more info, see [Appendix F – Annotated Baseline Subscription Event Query](#bkmk-appendixf).
 
 -   Anti-malware events from Microsoft Antimalware or Windows Defender. This can be configured for any given anti-malware product easily if it writes to the Windows event log.
 
@@ -198,7 +198,7 @@ The annotated event query can be found in the following. For more info, see [App
 
 -   AppLocker Process Create events (EXE, script, packaged App installation and execution).
 
--   Registry modification events. For more info, see [Appendix B – Recommended minimum Registry System ACL Policy](#BKMK_AppendixB).
+-   Registry modification events. For more info, see [Appendix B – Recommended minimum Registry System ACL Policy](#bkmk-appendixb).
 
 -   OS startup and shutdown
 
@@ -367,7 +367,7 @@ This adds some possible intruder-related activity to help analyst further refine
 
     -   Can possibly detect a USB device loading multiple device drivers. For example, a USB\_STOR device loading the keyboard or network driver.
 
-## Appendix A - Minimum recommended minimum audit policy
+## <a href="" id="bkmk-appendixa"></a>Appendix A - Minimum recommended minimum audit policy
 
 
 If your organizational audit policy enables additional auditing to meet its needs, that is fine. The policy below is the minimum audit policy settings needed to enable events collected by both baseline and targeted subscriptions.
@@ -407,7 +407,7 @@ If your organizational audit policy enables additional auditing to meet its need
 
  
 
-## Appendix B - Recommended minimum registry system ACL policy
+## <a href="" id="bkmk-appendixb"></a>Appendix B - Recommended minimum registry system ACL policy
 
 
 The Run and RunOnce keys are useful for intruders and malware persistence. It allows code to be run (or run only once then removed, respectively) when a user logs into the system.
@@ -418,7 +418,7 @@ Use the following figures to see how you can configure those registry keys.
 
 ![default acl for run key](images/runkey.png)![default acl for runonce key](images/runoncekey.png)
 
-## Appendix C - Event channel settings (enable and channel access) methods
+## <a href="" id="bkmk-appendixc"></a>Appendix C - Event channel settings (enable and channel access) methods
 
 
 Some channels are disabled by default and have to be enabled. Others, such as Microsoft-Windows-CAPI2/Operational must have the channel access modified to allow the Event Log Readers built-in security group to read from it.
@@ -441,7 +441,7 @@ The following GPO snippet performs the following:
 
 ![configure event channels](images/capi-gpo.png)
 
-## Appendix D - Minimum GPO for WEF Client configuration
+## <a href="" id="bkmk-appendixd"></a>Appendix D - Minimum GPO for WEF Client configuration
 
 
 Here are the minimum steps for WEF to operate:
@@ -454,7 +454,7 @@ Here are the minimum steps for WEF to operate:
 
 ![configure the wef client](images/wef-client-config.png)
 
-## Appendix E – Annotated baseline subscription event query
+## <a href="" id="bkmk-appendixe"></a>Appendix E – Annotated baseline subscription event query
 
 
 ``` syntax
@@ -620,7 +620,7 @@ Here are the minimum steps for WEF to operate:
 </QueryList>
 ```
 
-## Appendix F – Annotated Suspect Subscription Event Query
+## <a href="" id="bkmk-appendixf"></a>Appendix F – Annotated Suspect Subscription Event Query
 
 
 ``` syntax
@@ -692,7 +692,7 @@ Here are the minimum steps for WEF to operate:
 </QueryList> 
 ```
 
-## Appendix G - Online resources
+## <a href="" id="bkmk-appendixg"></a>Appendix G - Online resources
 
 
 You can get more info with the following links:

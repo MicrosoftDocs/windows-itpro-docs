@@ -18,10 +18,10 @@ author: TrudyHa
 
 **In this article**
 
--   [Migration from previous Windows versions](#migration_from_previous_windows_versions)
--   [Setup of new computers](#setup_of_new_computers)
--   [Stay up to date](#stay_up_to_date)
--   [Related topics](#related_topics)
+-   [Migration from previous Windows versions](#migration-from-previous-windows-versions)
+-   [Setup of new computers](#setup-of-new-computers)
+-   [Stay up to date](#stay-up-to-date)
+-   [Related topics](#related-topics)
 
 There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications.
 

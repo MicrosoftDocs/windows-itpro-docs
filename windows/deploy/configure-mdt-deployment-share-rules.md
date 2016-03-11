@@ -16,11 +16,11 @@ author: CFaw
 
 -   [Assign settings](#sec01)
 -   [Sample configurations](#sec02)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 In this topic, you will learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine. The rules engine in MDT is powerful: most of the settings used for operating system deployments are retrieved and assigned via the rules engine. In its simplest form, the rules engine is the CustomSettings.ini text file.
 
-## Assign settings
+## <a href="" id="sec01"></a>Assign settings
 
 
 When using MDT, you can assign setting in three distinct ways:
@@ -33,7 +33,7 @@ When using MDT, you can assign setting in three distinct ways:
 
 In order illustrate these three options, let's look at some sample configurations.
 
-## Sample configurations
+## <a href="" id="sec02"></a>Sample configurations
 
 
 Before adding the more advanced components like scripts, databases, and web services, consider the commonly used configurations below; they demonstrate the power of the rules engine.

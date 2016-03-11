@@ -23,7 +23,7 @@ author: CFaw
 -   [Replicate the content](#sec03)
 -   [Configure Windows Deployment Services (WDS) in a remote site](#sec04)
 -   [Deploy the Windows 10 client to the remote site](#sec05)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of the deployment solution. With images reaching 5 GB in size or more, you can't deploy machines in a remote office over the wire. You need to replicate the content, so that the clients can do local deployments.
 
@@ -33,7 +33,7 @@ We will use four machines for this topic: DC01, MDT01, MDT02, and PC0006. DC01 i
 
 Figure 1. The machines used in this topic.
 
-## Replicate deployment shares
+## <a href="" id="sec01"></a>Replicate deployment shares
 
 
 Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in a number of different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) 2013 use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
@@ -51,7 +51,7 @@ LDS is a built-in feature in MDT for replicating content. However, LDS works bes
 
 DFS-R is not only very fast and reliable, but it also offers central monitoring, bandwidth control, and a great delta replication engine. DFS-R will work equally well whether you have 2 sites or 90. When using DFS-R for MDT, we recommend running your deployment servers on Windows Server 2008 R2 or higher. From that version on, you can configure the replication target(s) as read-only, which is exactly what you want for MDT. This way, you can have your master deployment share centralized and replicate out changes as they happen. DFS-R will quickly pick up changes at the central deployment share in MDT01 and replicate the delta changes to MDT02.
 
-## Set up Distributed File System Replication (DFS-R) for replication
+## <a href="" id="sec02"></a>Set up Distributed File System Replication (DFS-R) for replication
 
 
 Setting up DFS-R for replication is a quick and straightforward process. You prepare the deployment servers and then create a replication group. To complete the setup, you configure some replication settings.
@@ -151,7 +151,7 @@ When you have multiple deployment servers sharing the same content, you need to 
 
 6.  Browse and select the **E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** boot image, and then complete Replace Boot Image Wizard using the default settings.
 
-## Replicate the content
+## <a href="" id="sec03"></a>Replicate the content
 
 
 Once the MDT01 and MDT02 servers are prepared, you are ready to configure the actual replication.
@@ -247,7 +247,7 @@ It will take some time for the replication configuration to be picked up by the 
 
 Figure 9. The DFS Replication Health Report.
 
-## Configure Windows Deployment Services (WDS) in a remote site
+## <a href="" id="sec04"></a>Configure Windows Deployment Services (WDS) in a remote site
 
 
 Like you did in the previous topic for MDT01, you need to add the MDT Production Lite Touch x64 Boot image to Windows Deployment Services on MDT02. For the following steps, we assume that WDS has already been installed on MDT02.
@@ -256,7 +256,7 @@ Like you did in the previous topic for MDT01, you need to add the MDT Production
 
 2.  Browse to the E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim file and add the image with the default settings.
 
-## Deploy the Windows 10 client to the remote site
+## <a href="" id="sec05"></a>Deploy the Windows 10 client to the remote site
 
 
 Now you should have a solution ready for deploying the Windows 10 client to the remote site, Stockholm, connecting to the MDT Production deployment share replica on MDT02.

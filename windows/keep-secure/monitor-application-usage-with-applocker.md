@@ -19,7 +19,7 @@ This topic for IT professionals describes how to monitor app usage when AppLocke
 
 Once you set rules and deploy the AppLocker policies, it is good practice to determine if the policy implementation is what you expected.
 
-### Discover the effect of an AppLocker policy
+### <a href="" id="bkmk-applkr-disc-effect-pol"></a>Discover the effect of an AppLocker policy
 
 You can evaluate how the AppLocker policy is currently implemented for documentation or audit purposes, or before you modify the policy. Updating your AppLocker Policy Deployment Planning document will help you track your findings. For information about creating this document, see [Create your AppLocker planning document](create-your-applocker-planning-document.md). You can perform one or more of the following steps to understand what application controls are currently enforced through AppLocker rules.
 
@@ -27,7 +27,7 @@ You can evaluate how the AppLocker policy is currently implemented for documenta
 
     When AppLocker policy enforcement is set to **Enforce rules**, rules are enforced for the rule collection and all events are audited. When AppLocker policy enforcement is set to **Audit only**, rules are not enforced but are still evaluated to generate audit event data that is written to the AppLocker logs.
 
-    For the procedure to access the log, see [View the AppLocker Log in Event Viewer](#BKMK_AppLkr_View_Log).
+    For the procedure to access the log, see [View the AppLocker Log in Event Viewer](#bkmk-applkr-view-log).
 
 -   **Enable the Audit only AppLocker enforcement setting**
 
@@ -39,7 +39,7 @@ You can evaluate how the AppLocker policy is currently implemented for documenta
 
     For both event subscriptions and local events, you can use the **Get-AppLockerFileInformation** Windows PowerShell cmdlet to determine which files have been blocked or would have been blocked (if you are using the audit-only enforcement mode) and how many times the event has occurred for each file.
 
-    For the procedure to do this, see [Review AppLocker Events with Get-AppLockerFileInformation](#BKMK_AppLkr_Review_Events).
+    For the procedure to do this, see [Review AppLocker Events with Get-AppLockerFileInformation](#bkmk-applkr-review-events).
 
 -   **Review AppLocker events with Test-AppLockerPolicy**
 
@@ -47,7 +47,7 @@ You can evaluate how the AppLocker policy is currently implemented for documenta
 
     For the procedure to do this, see [Test an AppLocker policy by using Test-AppLockerPolicy](test-an-applocker-policy-by-using-test-applockerpolicy.md).
 
-### Review AppLocker events with Get-AppLockerFileInformation
+### <a href="" id="bkmk-applkr-review-events"></a>Review AppLocker events with Get-AppLockerFileInformation
 
 For both event subscriptions and local events, you can use the **Get-AppLockerFileInformation** Windows PowerShell cmdlet to determine which files have been blocked or would have been blocked (if the **Audit only** enforcement setting is applied) and how many times the event has occurred for each file.
 
@@ -70,7 +70,7 @@ If the AppLocker logs are not on your local device, you will need permission to 
 
     `Get-AppLockerFileInformation –EventLog –EventType Allowed –Statistics`
 
-### View the AppLocker Log in Event Viewer
+### <a href="" id="bkmk-applkr-view-log"></a>View the AppLocker Log in Event Viewer
 
 When AppLocker policy enforcement is set to **Enforce rules**, rules are enforced for the rule collection and all events are audited. When AppLocker policy enforcement is set to **Audit only**, rules are only evaluated but all events generated from that evaluation are written to the AppLocker log.
 

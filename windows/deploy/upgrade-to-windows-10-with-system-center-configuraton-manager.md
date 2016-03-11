@@ -17,14 +17,14 @@ author: CFaw
 
 **In this article**
 
--   [Proof-of-concept environment](#proof-of-concept_environment)
--   [Upgrade to Windows 10 with System Center 2012 R2 Configuration Manager](#upgrade_to_windows_10_with_system_center_2012_r2_configuration_manager)
--   [Create the task sequence](#create_the_task_sequence)
--   [Create a device collection](#create_a_device_collection)
--   [Deploy the Windows 10 upgrade](#deploy_the_windows_10_upgrade)
--   [Start the Windows 10 upgrade](#start_the_windows_10_upgrade)
--   [Upgrade to Windows 10 with the next version of System Center Configuration Manager](#upgrade_to_windows_10_with_the_next_version_of_system_center_configuration_manager)
--   [Related topics](#related_topics)
+-   [Proof-of-concept environment](#proof-of-concept-environment)
+-   [Upgrade to Windows 10 with System Center 2012 R2 Configuration Manager](#upgrade-to-windows-10-with-system-center-2012-r2-configuration-manager)
+-   [Create the task sequence](#create-the-task-sequence)
+-   [Create a device collection](#create-a-device-collection)
+-   [Deploy the Windows 10 upgrade](#deploy-the-windows-10-upgrade)
+-   [Start the Windows 10 upgrade](#start-the-windows-10-upgrade)
+-   [Upgrade to Windows 10 with the next version of System Center Configuration Manager](#upgrade-to-windows-10-with-the-next-version-of-system-center-configuration-manager)
+-   [Related topics](#related-topics)
 
 The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager task sequence to completely automate the process.
 

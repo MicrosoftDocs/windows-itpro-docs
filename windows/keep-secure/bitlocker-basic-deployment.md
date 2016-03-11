@@ -19,15 +19,15 @@ This topic for the IT professional explains how BitLocker features can be used t
 
 The following sections provide information that will help you put together your basic deployment plan for implementing BitLocker in your organization:
 
--   [Using BitLocker to encrypt volumes](#BKMK_dep1)
+-   [Using BitLocker to encrypt volumes](#bkmk-dep1)
 
--   [Down-level compatibility](#BKMK_dep2)
+-   [Down-level compatibility](#bkmk-dep2)
 
--   [Using manage-bde to encrypt volumes with BitLocker](#BKMK_dep3)
+-   [Using manage-bde to encrypt volumes with BitLocker](#bkmk-dep3)
 
--   [Using PowerShell to encrypt volumes with BitLocker](#BKMK_dep4)
+-   [Using PowerShell to encrypt volumes with BitLocker](#bkmk-dep4)
 
-## Using BitLocker to encrypt volumes
+## <a href="" id="bkmk-dep1"></a>Using BitLocker to encrypt volumes
 
 
 BitLocker provides full volume encryption (FVE) for operating system volumes, as well as fixed and removable data volumes. To support fully encrypted operating system volumes, BitLocker uses an unencrypted system volume for the files required to boot, decrypt, and load the operating system. This volume is automatically created during a new installation of both client and server operating systems.
@@ -146,7 +146,7 @@ With an encryption method chosen, a final confirmation screen displays before be
 
 Encryption status displays in the notification area or within the BitLocker control panel.
 
-###  OneDrive option
+### <a href="" id="-onedrive-option-"></a> OneDrive option
 
 There is a new option for storing the BitLocker recovery key using the OneDrive. This option requires that computers are not members of a domain and that the user is using a Microsoft Account. Local accounts do not give the option to utilize OneDrive. Using the OneDrive option is the default, recommended recovery key storage method for computers that are not joined to a domain.
 
@@ -156,7 +156,7 @@ Users can verify the recovery key was saved properly by checking their OneDrive 
 
 Windows Explorer allows users to launch the BitLocker Drive Encryption wizard by right clicking on a volume and selecting **Turn On BitLocker**. This option is available on client computers by default. On servers, you must first install the BitLocker and Desktop-Experience features for this option to be available. After selecting **Turn on BitLocker**, the wizard works exactly as it does when launched using the BitLocker control panel.
 
-## Down-level compatibility
+## <a href="" id="bkmk-dep2"></a>Down-level compatibility
 
 
 The following table shows the compatibility matrix for systems that have been BitLocker enabled then presented to a different version of Windows.
@@ -274,7 +274,7 @@ manage-bde -protectors -add -pw C:
 manage-bde -on C:
 ```
 
-## Using manage-bde to encrypt volumes with BitLocker
+## <a href="" id="bkmk-dep3"></a>Using manage-bde to encrypt volumes with BitLocker
 
 
 ### Encrypting volumes using the BitLocker Windows PowerShell cmdlets
@@ -515,7 +515,7 @@ Active Directory-based protectors are normally used to unlock Failover Cluster e
 
  
 
-## Using PowerShell to encrypt volumes with BitLocker
+## <a href="" id="bkmk-dep4"></a>Using PowerShell to encrypt volumes with BitLocker
 
 
 ### Checking BitLocker status

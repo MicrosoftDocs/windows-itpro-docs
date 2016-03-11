@@ -19,15 +19,15 @@ This deployment topic for the IT professional lists the requirements that you ne
 
 The following requirements must be met or addressed before you deploy your AppLocker policies:
 
--   [Deployment plan](#BKMK_ReqDepPlan)
+-   [Deployment plan](#bkmk-reqdepplan)
 
--   [Supported operating systems](#BKMK_ReqSupportedOS)
+-   [Supported operating systems](#bkmk-reqsupportedos)
 
--   [Policy distribution mechanism](#BKMK_ReqPolicyDistMech)
+-   [Policy distribution mechanism](#bkmk-reqpolicydistmech)
 
--   [Event collection and analysis system](#BKMK_ReqEventCollectionSystem)
+-   [Event collection and analysis system](#bkmk-reqeventcollectionsystem)
 
-### Deployment plan
+### <a href="" id="bkmk-reqdepplan"></a>Deployment plan
 
 An AppLocker policy deployment plan is the result of investigating which applications are required and necessary in your organization, which apps are optional, and which apps are forbidden. To develop this plan, see [AppLocker Design Guide](applocker-policies-design-guide.md). The following table is an example of the data you need to collect and the decisions you need to make to successfully deploy AppLocker policies on the supported operating systems (as listed in [Requirements to use AppLocker](requirements-to-use-applocker.md)).
 
@@ -213,15 +213,15 @@ An AppLocker policy deployment plan is the result of investigating which applica
 
  
 
-### Supported operating systems
+### <a href="" id="bkmk-reqsupportedos"></a>Supported operating systems
 
 AppLocker is supported only on certain operating systems. Some features are not available on all operating systems. For more information, see [Requirements to use AppLocker](requirements-to-use-applocker.md).
 
-### Policy distribution mechanism
+### <a href="" id="bkmk-reqpolicydistmech"></a>Policy distribution mechanism
 
 You need a way to distribute the AppLocker policies throughout the targeted business groups. AppLocker uses Group Policy management architecture to effectively distribute application control policies. AppLocker policies can also be configured on individual computers by using the Local Security Policy snap-in.
 
-### Event collection and analysis system
+### <a href="" id="bkmk-reqeventcollectionsystem"></a>Event collection and analysis system
 
 Event processing is important to understand application usage. You must have a process in place to collect and analyze AppLocker events so that application usage is appropriately restricted and understood. For procedures to monitor AppLocker events, see:
 

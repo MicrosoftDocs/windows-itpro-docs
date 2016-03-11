@@ -34,17 +34,17 @@ When you use the **/verify** option, you can specify what type of information to
 
 The following sections demonstrate how to run the **UsmtUtils** command with the **/verify** option, and how to specify the information to display in the UsmtUtils log file.
 
--   [The UsmtUtils syntax for the /verify option](#BKMK_verifySyntax)
+-   [The UsmtUtils syntax for the /verify option](#bkmk-verifysyntax)
 
--   [To verify that the migration store is intact](#BKMK_verifyIntactStore)
+-   [To verify that the migration store is intact](#bkmk-verifyintactstore)
 
--   [To verify the status of only the catalog file](#BKMK_verifyCatalog)
+-   [To verify the status of only the catalog file](#bkmk-verifycatalog)
 
--   [To verify the status of all files](#BKMK_verifyAllFiles)
+-   [To verify the status of all files](#bkmk-verifyallfiles)
 
--   [To verify the status of the files and return only the corrupted files](#BKMK_returnCorrupted)
+-   [To verify the status of the files and return only the corrupted files](#bkmk-returncorrupted)
 
-### The UsmtUtils Syntax for the /verify Option
+### <a href="" id="bkmk-verifysyntax"></a>The UsmtUtils Syntax for the /verify Option
 
 To verify the condition of a compressed migration store, use the following UsmtUtils syntax:
 
@@ -66,7 +66,7 @@ Where the placeholders have the following values:
 
 -   *&lt;filename&gt;* is the location and name of the text file that contains the encryption key.
 
-### To Verify that the Migration Store is Intact
+### <a href="" id="bkmk-verifyintactstore"></a>To Verify that the Migration Store is Intact
 
 To verify whether the migration store is intact or whether it contains corrupted files or a corrupted catalog, type:
 
@@ -76,7 +76,7 @@ usmtutils /verify D:\MyMigrationStore\store.mig
 
 Because no report type is specified, UsmtUtils displays the default summary report.
 
-### To Verify the Status of Only the Catalog File
+### <a href="" id="bkmk-verifycatalog"></a>To Verify the Status of Only the Catalog File
 
 To verify whether the catalog file is corrupted or intact, type:
 
@@ -84,7 +84,7 @@ To verify whether the catalog file is corrupted or intact, type:
 usmtutils /verify:catalog D:\MyMigrationStore\store.mig
 ```
 
-### To Verify the Status of all Files
+### <a href="" id="bkmk-verifyallfiles"></a>To Verify the Status of all Files
 
 To verify whether there are any corrupted files in the compressed migration store, and to specify the name and location of the log file, type:
 
@@ -92,7 +92,7 @@ To verify whether there are any corrupted files in the compressed migration stor
 
 In addition to verifying the status of all files, this example decrypts the files. Because no encryption algorithm is specified, UsmtUtils uses the default 3DES cryptographic algorithm.
 
-### To Verify the Status of the Files and Return Only the Corrupted Files
+### <a href="" id="bkmk-returncorrupted"></a>To Verify the Status of the Files and Return Only the Corrupted Files
 
 In this example, the log file will only list the files that became corrupted during the ScanState process. This list will include the catalog file if it is also corrupted.
 

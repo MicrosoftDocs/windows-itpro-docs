@@ -22,11 +22,11 @@ author: TrudyHa
 
 **In this article**
 
--   [Blocking Versus Non-Blocking AppHelp Messages](#blocking_versus_non-blocking_apphelp_messages)
--   [Searching for Existing Compatibility Fixes](#searching_for_existing_compatibility_fixes)
--   [Creating a New AppHelp Message](#creating_a_new_apphelp_message)
--   [Issues with AppHelp Messages and Computers Running Windows 2000](#issues_with_apphelp_messages_and_computers_running_windows_2000)
--   [Related topics](#related_topics)
+-   [Blocking Versus Non-Blocking AppHelp Messages](#blocking-versus-non-blocking-apphelp-messages)
+-   [Searching for Existing Compatibility Fixes](#searching-for-existing-compatibility-fixes)
+-   [Creating a New AppHelp Message](#creating-a-new-apphelp-message)
+-   [Issues with AppHelp Messages and Computers Running Windows 2000](#issues-with-apphelp-messages-and-computers-running-windows-2000)
+-   [Related topics](#related-topics)
 
 The Compatibility Administrator tool enables you to create an AppHelp text message. This is a blocking or non-blocking message that appears when a user starts an application that you know has major functionality issues on the Windows® operating system.
 

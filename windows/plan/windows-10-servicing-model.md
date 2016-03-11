@@ -19,13 +19,13 @@ author: TrudyHa
 
 **In this article**
 
--   [Key terminology](#key_terminology)
--   [Windows 10 branch overview](#windows_10_branch_overview)
--   [Current Branch versus Current Branch for Business](#current_branch_versus_current_branch_for_business)
--   [Long-Term Servicing Branch](#long-term_servicing_branch)
--   [Windows Insider Program](#windows_insider_program)
--   [Switching between branches](#switching_between_branches)
--   [Related topics](#related_topics)
+-   [Key terminology](#key-terminology)
+-   [Windows 10 branch overview](#windows-10-branch-overview)
+-   [Current Branch versus Current Branch for Business](#current-branch-versus-current-branch-for-business)
+-   [Long-Term Servicing Branch](#long-term-servicing-branch)
+-   [Windows Insider Program](#windows-insider-program)
+-   [Switching between branches](#switching-between-branches)
+-   [Related topics](#related-topics)
 
 Windows 10 provides a new model for organizations to deploy and upgrade Windows by providing updates to features and capabilities through a continual process.
 

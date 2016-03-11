@@ -11,7 +11,7 @@ author: TrudyHa
 # Change history for Plan for Windows 10 deployment
 
 
-This topic lists new and updated topics in the [Plan for Windows 10 deployment](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Plan for Windows 10 deployment] documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## December 2015
 

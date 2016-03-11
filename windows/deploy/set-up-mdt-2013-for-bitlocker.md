@@ -17,7 +17,7 @@ author: CFaw
 -   [Configure Active Directory for BitLocker](#sec01)
 -   [Add BIOS configuration tools from Dell, HP, and Lenovo](#sec02)
 -   [Configure the Windows 10 task sequence to enable BitLocker](#sec03)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic will show you how to configure your environment for BitLocker, the disk volume encryption built into Windows 10 Enterprise and Windows 10 Pro, using MDT. BitLocker in Windows 10 has two requirements in regard to an operating system deployment:
 
@@ -42,7 +42,7 @@ Even though it is not a BitLocker requirement, we recommend configuring BitLocke
 
 For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md#proof).
 
-## Configure Active Directory for BitLocker
+## <a href="" id="sec01"></a>Configure Active Directory for BitLocker
 
 
 To enable BitLocker to store the recovery key and TPM information in Active Directory, you need to create a Group Policy for it in Active Directory. For this section, we are running Windows Server 2012 R2, so you do not need to extend the Schema. You do, however, need to set the appropriate permissions in Active Directory.
@@ -135,7 +135,7 @@ In addition to the Group Policy created previously, you need to configure permis
 
 Figure 4. Running the Add-TPMSelfWriteACE.vbs script on DC01.
 
-## Add BIOS configuration tools from Dell, HP, and Lenovo
+## <a href="" id="sec02"></a>Add BIOS configuration tools from Dell, HP, and Lenovo
 
 
 If you want to automate enabling the TPM chip as part of the deployment process, you need to download the vendor tools and add them to your task sequences, either directly or in a script wrapper.
@@ -178,7 +178,7 @@ The Lenovo tools are a set of VBScripts available as part of the Lenovo BIOS Set
 cscript.exe SetConfig.vbs SecurityChip Active
 ```
 
-## Configure the Windows 10 task sequence to enable BitLocker
+## <a href="" id="sec03"></a>Configure the Windows 10 task sequence to enable BitLocker
 
 
 When configuring a task sequence to run any BitLocker tool, either directly or using a custom script, it is helpful if you also add some logic to detect whether the BIOS is already configured on the machine. In this task sequence, we are using a sample script (ZTICheckforTPM.wsf) from the Deployment Guys web page to check the status on the TPM chip. You can download this script from the Deployment Guys Blog post, [Check to see if the TPM is enabled](http://go.microsoft.com/fwlink/p/?LinkId=619549). In the following task sequence, we have added five actions:

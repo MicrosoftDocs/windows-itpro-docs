@@ -41,7 +41,7 @@ To retrieve the license status on the selected computers, VAMT must have adminis
 
 3.  If you are already connected to a database, in the center pane VAMT displays an inventory of the products and product keys, and a license overview of the computers in the database. If you need to connect to a different database, click **Successfully connected to the Server** to open the **Database Connection Settings** dialog box. For more information about how to create VAMT databases and adding VAMT data, see [Manage VAMT Data.](manage-vamt-data-vamt-30-win8.md)
 
-## Part 4: Discover Products
+## <a href="" id="part-4--discover-products-"></a>Part 4: Discover Products
 
 
 1.  In the left-side pane, in the **Products** node, click the product that you want to activate.
@@ -64,7 +64,7 @@ The **Finding Computers** window appears and displays the search progress as the
 
 When the search is complete, the products that VAMT discovers appear in the list view in the center pane.
 
-## Part 5: Sort and Filter the List of Computers
+## <a href="" id="bkmk-step5"></a>Part 5: Sort and Filter the List of Computers
 
 
 You can sort the list of products so that it is easier to find the computers that require product keys to be activated:
@@ -121,7 +121,7 @@ If a computer has more than one supported product installed, VAMT adds an entry 
 
 1.  In the left-side pane, in the **Products** node click the product that you want to install keys onto.
 
-2.  If necessary, sort and filter the list of products so that it is easier to find the computers that must have a product key installed. See [Step 5: Sort the list of computers](#BKMK_Step5).
+2.  If necessary, sort and filter the list of products so that it is easier to find the computers that must have a product key installed. See [Step 5: Sort the list of computers](#bkmk-step5).
 
 3.  In the **Products** list view pane, select the individual products which must have keys installed. You can use the **CTRL** key or the **SHIFT** key to select more than one product.
 
@@ -212,7 +212,7 @@ VAMT displays the **Applying Confirmation Id** dialog box while it installs the 
 
 The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
-## Part 13: (Optional) Reactivating Reimaged Computers in the Isolated Lab
+## <a href="" id="part-13---optional--reactivating-reimaged-computers-in-the-isolated-lab-"></a>Part 13: (Optional) Reactivating Reimaged Computers in the Isolated Lab
 
 
 If you have captured new images of the computers in the isolated lab, but the underlying hardware of those computers has not changed, VAMT can reactivate those computers using the CIDs that are stored in the database.

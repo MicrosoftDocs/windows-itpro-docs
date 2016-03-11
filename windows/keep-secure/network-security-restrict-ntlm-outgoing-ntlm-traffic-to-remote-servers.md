@@ -18,9 +18,9 @@ author: brianlic-msft
 **In this article**
 
 -   [Reference](#reference)
--   [Policy management](#policy_management)
--   [Security considerations](#security_considerations)
--   [Related topics](#related_topics)
+-   [Policy management](#policy-management)
+-   [Security considerations](#security-considerations)
+-   [Related topics](#related-topics)
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting.
 
@@ -34,7 +34,7 @@ Modifying this policy setting may affect compatibility with client computers, se
 
  
 
-### Possible values
+### <a href="" id="bkmk-resoutntlm-possvals"></a>Possible values
 
 -   **Allow all**
 

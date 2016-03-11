@@ -17,16 +17,16 @@ author: brianlic-msft
 
 This topic for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
 
-## 
+## <a href="" id="bkmk-commands1"></a>
 
 
 After a computer user takes ownership of the TPM, the TPM owner can limit which TPM commands can be run by creating a list of blocked TPM commands. The list can be created and applied to all computers in a domain by using Group Policy, or a list can be created for individual computers by using the TPM MMC. Because some hardware vendors might provide additional commands or the Trusted Computing Group may decide to add commands in the future, the TPM MMC also supports the ability to block new commands.
 
-Domain administrators can configure a list of blocked TPM commands by using Group Policy. Local administrators cannot allow TPM commands that are blocked through Group Policy. For more information about this Group Policy setting, see [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#BKMK_tpmgp_clbtc).
+Domain administrators can configure a list of blocked TPM commands by using Group Policy. Local administrators cannot allow TPM commands that are blocked through Group Policy. For more information about this Group Policy setting, see [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#bkmk-tpmgp-clbtc).
 
 Local administrators can block commands by using the TPM MMC, and commands on the default block list are also blocked unless the Group Policy settings are changed from the default settings.
 
-Two policy settings control the enforcement which allows TPM commands to run. For more information about these policy settings, see [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#BKMK_tpmgp_idlb).
+Two policy settings control the enforcement which allows TPM commands to run. For more information about these policy settings, see [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#bkmk-tpmgp-idlb).
 
 The following procedures describe how to manage the TPM command lists. You must be a member of the local Administrators group.
 
@@ -82,7 +82,7 @@ The following procedures describe how to manage the TPM command lists. You must 
 
 4.  In the **Command Number** text box, type the number of the new command that you want to block, and then click **OK**. The command number you entered is added to the blocked list.
 
-## Use the TPM cmdlets
+## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 
 
 If you are using Windows PowerShell to manage your computers, you can also manage the TPM by using Windows PowerShell. To install the TPM cmdlets, type the following command:
@@ -94,7 +94,7 @@ For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell
 ## Additional resources
 
 
-For more info about TPM, see [Trusted Platform Module technology overview](trusted-platform-module-technology-overview.md#BKMK_AdditionalResources).
+For more info about TPM, see [Trusted Platform Module technology overview](trusted-platform-module-technology-overview.md#bkmk-additionalresources).
 
  
 

@@ -18,11 +18,11 @@ author: CFaw
 
 **In this article**
 
--   [Deployment tips](#deployment_tips)
--   [Basic deployment steps](#basic_deployment_steps)
--   [Advanced deployment steps](#advanced_deployment_steps)
--   [Considerations when using different USB keyboard layouts with Windows To Go](#considerations_when_using_different_usb_keyboard_layouts_with_windows_to_go)
--   [Related topics](#related_topics)
+-   [Deployment tips](#deployment-tips)
+-   [Basic deployment steps](#basic-deployment-steps)
+-   [Advanced deployment steps](#advanced-deployment-steps)
+-   [Considerations when using different USB keyboard layouts with Windows To Go](#considerations-when-using-different-usb-keyboard-layouts-with-windows-to-go)
+-   [Related topics](#related-topics)
 
 This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you have reviewed the topics [Windows To Go: feature overview](../plan/windows-to-go-feature-overview-scenario.md) and [Prepare your organization for Windows To Go](../plan/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.
 
@@ -563,7 +563,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
     **Warning**  
     If the **Choose how BitLocker-protected removable data drives can be recovered** Group Policy setting has been configured to back up recovery information to Active Directory Domain Services, the recovery information for the drive will be stored under the account of the host computer used to apply the recovery key.
 
-    If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable_bitlocker).
+    If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable-bitlocker).
 
      
 
@@ -579,7 +579,7 @@ The Windows To Go drives are now ready to be distributed to users and are protec
 
 -   Instructions for how to retrieve the recovery password if necessary. This may be a help desk process, an automated password retrieval site, or a person to contact.
 
-
+<a href="" id="enable-bitlocker"></a>
 **To enable BitLocker after distribution**
 
 1.  Insert your Windows To Go drive into your host computer (that is currently shut down) and then turn on the computer and boot into your Windows To Go workspace

@@ -19,12 +19,12 @@ author: jdeckerMS
 **In this article**
 
 -   [Overview](#overview)
--   [Device deployment](#device_deployment__)
--   [Device configuration](#device_configuration)
--   [App management](#__app_management)
--   [Device operations](#device_operations)
--   [Device retirement](#device_retirement)
--   [Related topics](#related_topics)
+-   [Device deployment](#device-deployment--)
+-   [Device configuration](#device-configuration)
+-   [App management](#--app-management)
+-   [Device operations](#device-operations)
+-   [Device retirement](#device-retirement)
+-   [Related topics](#related-topics)
 
 This guide provides an overview of the mobile device and app management technologies in the Windows 10 Mobile operating system. It describes how mobile device management (MDM) systems use the built-in device management client to deploy, configure, maintain, and support phones and small tablets running Windows 10 Mobile.
 
@@ -37,7 +37,7 @@ Windows 10 Mobile not only delivers more comprehensive, restrictive configurati
 
 Organizations’ users increasingly depend on their mobile devices, but phones and tablets bring new and unfamiliar challenges for IT departments. IT must be able to deploy and manage mobile devices and apps quickly to support the business while balancing the growing need to protect corporate data because of evolving laws, regulations, and cybercrime. IT must ensure that the apps and data on those mobile devices are safe, especially on personal devices. Windows 10 Mobile helps organizations address these challenges by providing a robust, flexible, built-in MDM client. IT departments can use the MDM system of their choice to manage this client.
 
-### Built-in MDM client
+### <a href="" id="built-in-mdm-client--"></a>Built-in MDM client
 
 The built-in MDM client is common to all editions of the Windows 10 operating system, including desktop, mobile, and Internet of Things (IoT). The client provides a single interface through which you can manage any device that runs Windows 10. The client has two important roles: device enrollment in an MDM system and device management.
 
@@ -47,7 +47,7 @@ The built-in MDM client is common to all editions of the Windows 10 operating s
 
 The MDM client is an integral part of Windows 10 Mobile. As a result, there is no need for an additional, custom MDM app to enroll the device or to allow an MDM system to manage it. All MDM systems have equal access to Windows 10 Mobile MDM application programming interfaces (APIs), so you can choose Microsoft Intune or a third-party MDM product to manage Windows 10 Mobile devices. For more information about Windows 10 Mobile device management APIs, see [Mobile device management](http://go.microsoft.com/fwlink/p/?LinkId=734050).
 
-### Windows 10 Mobile editions
+### <a href="" id="mobile-edition"></a>Windows 10 Mobile editions
 
 Every device that runs Windows 10 Mobile includes all the enterprise mobile device security and management capabilities the MDM client provides. Microsoft also offers an Enterprise edition of Windows 10 Mobile, which includes three additional capabilities. To enable these capabilities, you can provision a license file without reinstalling the operating system:
 
@@ -64,7 +64,7 @@ Your organization can opt to purchase a code signing certificate from Verisign t
 
 To activate Windows 10 Mobile Enterprise on any Windows 10 Mobile device, use your company’s MDM system or a provisioning package to inject a license onto the device. You can download a Windows 10 Mobile Enterprise license from the Business Support Portal.
 
-### Lifecycle management
+### <a href="" id="lifecycle-management--"></a>Lifecycle management
 
 Windows 10 Mobile supports end-to-end lifecycle device management to give companies control of their devices, data, and apps. Comprehensive MDM systems use the built-in MDM client to manage devices throughout their lifecycle, as Figure 1 illustrates. The remainder of this guide describes the operating system’s mobile device and app management capabilities through each phase of the lifecycle, showing how MDM systems use specific features.
 
@@ -72,7 +72,7 @@ Windows 10 Mobile supports end-to-end lifecycle device management to give compa
 
 Figure 1. Device management lifecycle
 
-## Device deployment
+## <a href="" id="device-deployment--"></a>Device deployment
 
 
 Device deployment includes the initial registration and configuration of the device, including its enrollment with an MDM system. Sometimes, companies preinstall apps. The major factors in how you deploy devices and which controls you put in place are device ownership and how the user will use the device. This guide covers two scenarios:
@@ -85,7 +85,7 @@ Often, employees can choose devices from a list of supported models, or companie
 
 Microsoft recommends Azure AD Join and MDM enrollment and management for corporate devices and Azure AD Registration and MDM enrollment and management for personal devices.
 
-### Deployment scenarios
+### <a href="" id="deployment-scenarios--"></a>Deployment scenarios
 
 Most organizations support both personal and corporate device scenarios. The infrastructure for these scenarios is similar, but the deployment process and configuration policies differ. Table 1 describes characteristics of the personal and corporate device scenarios. Activation of a device with an organizational identity is unique to Windows 10 Mobile.
 
@@ -123,7 +123,7 @@ Table 1. Characteristics of personal and corporate device scenarios
 
  
 
-### Identity management
+### <a href="" id="identity-management--"></a>Identity management
 
 People can use only one account to activate a device, so it’s imperative that your organization control which account you enable first. The account you choose will determine who controls the device and influence your management capabilities. The following list describes the impact that users’ identities have on management (Table 2 summarizes these considerations):
 
@@ -182,7 +182,7 @@ Table 2. Personal vs. organizational identity
 
  
 
-### Infrastructure requirements
+### <a href="" id="infrastructure-requirements--"></a>Infrastructure requirements
 
 For both device scenarios, the essential infrastructure and tools required to deploy and manage Windows 10 Mobile devices include an Azure AD subscription and an MDM system.
 
@@ -210,7 +210,7 @@ In addition, Microsoft recently added MDM capabilities powered by Intune to Offi
 
  
 
-### Provisioning
+### <a href="" id="provisioning--"></a>Provisioning
 
 Provisioning is new to Windows 10 and uses the MDM client in Windows 10 Mobile. You can create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10.
 
@@ -241,7 +241,7 @@ The following sections describe the device configuration capabilities of the bui
 
 -   [Account restrictions](#restrictions)
 
--   [Device lock restrictions](#device_lock)
+-   [Device lock restrictions](#device-lock)
 
 -   [Hardware restrictions](#hardware)
 
@@ -264,7 +264,7 @@ Although all the MDM settings this section describes are available in Windows 1
 
  
 
-### Email accounts
+### <a href="" id="email"></a>Email accounts
 
 You can use your corporate MDM system to manage corporate email accounts. Define email account profiles in the MDM system, and then deploy them to devices. You would usually deploy these settings immediately after enrollment, regardless of scenario.
 
@@ -329,7 +329,7 @@ Table 4. Windows 10 Mobile settings for other email profiles
 
  
 
-### Account restrictions
+### <a href="" id="restrictions"></a>Account restrictions
 
 On a corporate device registered with Azure AD and enrolled in the MDM system, you can control whether users can use a Microsoft account or add other consumer email accounts. Table 5 lists the settings that you can use to manage accounts on Windows 10 Mobile devices.
 
@@ -343,7 +343,7 @@ Table 5. Windows 10 Mobile account management settings
 
  
 
-### Device lock restrictions
+### <a href="" id="device-lock"></a>Device lock restrictions
 
 It’s common sense to lock a device when it is not in use. Microsoft recommends that you secure Windows 10 Mobile devices and implement a device lock policy. A device password or PIN lock is a best practice for securing apps and data on devices. [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkId=723994) is the name given to the new biometric sign-in option that allows users to use their face, iris, or fingerprints to unlock their compatible device, all of which Windows 10 supports.
 
@@ -432,7 +432,7 @@ Table 6. Windows 10 Mobile device lock restrictions
 
  
 
-### Hardware restrictions
+### <a href="" id="hardware"></a>Hardware restrictions
 
 Windows 10 Mobile devices use state-of-the-art technology that includes popular hardware features such as cameras, global positioning system (GPS) sensors, microphones, speakers, near-field communication (NFC) radios, storage card slots, USB interfaces, Bluetooth interfaces, cellular radios, and Wi-Fi. You can also use hardware restrictions to control the availability of these features. Table 7 lists the MDM settings that Windows 10 Mobile supports to configure hardware restrictions.
 
@@ -463,7 +463,7 @@ Table 7. Windows 10 Mobile hardware restrictions
 
  
 
-### Certificate management
+### <a href="" id="certificate"></a>Certificate management
 
 Managing certificates can be difficult for users, but certificates are pervasive for a variety of uses, including, account authentication, Wi-Fi authentication, VPN encryption, and SSL encryption of web content. Although users could manage certificates on devices manually, it’s a best practice to use your MDM system to manage those certificates for their entire life cycle, from enrollment through renewal to revocation. You can use the Simple Certificate Enrollment Protocol (SCEP) and Personal Information Exchange (PFX) certificates files to install certificates on Windows 10 Mobile. Certificate management through SCEP and MDM systems is fully transparent to users and requires no user intervention, so it helps improve user productivity and reduce support calls. Your MDM system can automatically deploy these certificates to the devices’ certificate stores after you enroll the device. Table 8 lists the SCEP settings that the MDM client in Windows 10 Mobile provides.
 
@@ -526,7 +526,7 @@ To diagnose certificate-related issues on Windows 10 Mobile devices, use the fr
 
  
 
-### Wi-Fi
+### <a href="" id="wifi"></a>Wi-Fi
 
 People use Wi-Fi on their mobile devices as much as or more than cellular data. Most corporate Wi-Fi networks require certificates and other complex information to restrict and secure user access. This advanced Wi-Fi information is difficult for typical users to configure, but you can use your MDM system to fully configure Wi-Fi settings without user intervention.
 
@@ -864,7 +864,7 @@ Table 14. Windows 10 Mobile VPN management settings
 
  
 
-### APN profiles
+### <a href="" id="apn"></a>APN profiles
 
 An APN defines network paths for cellular data connectivity. Typically, you define just one APN for a device in collaboration with a mobile operator, but you can define multiple APNs if your company uses multiple mobile operators.
 
@@ -936,7 +936,7 @@ Table 15. Windows 10 Mobile APN profile settings
 
  
 
-### Data leak protection
+### <a href="" id="data"></a>Data leak protection
 
 Some user experiences can risk corporate data stored on corporate devices. For example, allowing users to copy and paste information out of the organization’s LOB app can put data at risk. To mitigate the risk, you can restrict the Windows 10 Mobile user experience to help protect corporate data and prevent data leaks. For example, you can prevent settings synchronization, copy-and-paste operations, and screen captures. Table 16 lists the MDM settings in Windows 10 Mobile that you can use to help prevent data leaks.
 
@@ -957,7 +957,7 @@ Table 16. Windows 10 Mobile data leak protection settings
 
  
 
-### Storage management
+### <a href="" id="storage"></a>Storage management
 
 Protecting the apps and data stored on a device is critical to device security. One method for helping protect your apps and data is to encrypt internal device storage by using the device encryption in Windows 10 Mobile. This encryption helps protect corporate data against unauthorized access, even when an unauthorized user has physical possession of the device.
 
@@ -1024,26 +1024,26 @@ Table 17. Windows 10 Mobile storage management settings
 
  
 
-##  App management
+## <a href="" id="--app-management"></a> App management
 
 
 Apps help improve user productivity on mobile devices. New to Windows 10 is the ability for organizations purchase apps from Windows Store for their employees and deploy those apps from Windows Store or an MDM system. App management is becoming a key capability of MDM systems, helping reduce the effort required to perform common app-related tasks, such as distributing apps, and protecting data through app policies. This section describes the app management features in Windows 10 Mobile and includes the following topics:
 
--   [Universal Windows Platform (UWP)](#UWP)
+-   [Universal Windows Platform (UWP)](#uwp)
 
 -   [Sourcing the right app](#sourcing)
 
 -   [Windows Store for Business](#store)
 
--   [Mobile application management (MAM) policies](#MAM)
+-   [Mobile application management (MAM) policies](#mam)
 
 -   [Microsoft Edge](#edge)
 
-### Universal Windows Platform
+### <a href="" id="uwp"></a>Universal Windows Platform
 
 Windows 10 introduces UWP, converging the application platform for all devices running some edition of Windows 10. UWP apps run without modification on all editions of Windows 10, and Windows Store now has apps that you can license and purchased for all your Windows 10 devices. Windows Phone 8.1 and Windows 8.1 apps still run on Windows 10 devices, but the MAM improvements in Windows 10 work only with UWP apps. See the [Guide to Universal Windows Platform (UWP) apps](http://go.microsoft.com/fwlink/p/?LinkId=734056) for additional information.
 
-### Sourcing the right app
+### <a href="" id="sourcing"></a>Sourcing the right app
 
 The first step in app management is to obtain the apps your users need, and you can now acquire apps from Windows Store. Developers can also create apps specific to an organization, known as *line-of-business (LOB) apps* (the developers of these apps are *LOB publishers*). An LOB developer (internal or external) can now publish these apps to Windows Store at your request, or you can obtain the app packages offline and distribute them through your MDM system.
 
@@ -1051,11 +1051,11 @@ To install Windows Store or LOB apps, use the Windows Store cloud service or you
 
 IT administrators can obtain apps through Store for Business. Most apps can be distributed online, meaning that the user must be logged in to the device with an Azure AD account and have Internet access at the time of installation. To distribute an app offline, the developer must opt in. If the app developer doesn’t allow download of the app from Windows Store, then you must obtain the files directly from the developer or use the online method. See [Windows Store for Business](windows-store-for-business.md) for additional information about apps obtained through Store for Business.
 
-Windows Store apps are automatically trusted. For custom LOB apps developed internally or by a trusted software vendor, ensure that the device trusts the app signing certificate. There are two ways to establish this trust: use a signing certificate from a trusted source, or generate your own signing certificate and add your chain of trust to the trusted certificates on the device. You can install up to 20 self-signed apps on a Windows 10 Mobile device. When you purchase a signing certificate from a public CA, you can install more than 20 apps on a device, although you can install more than 20 self-signed apps per device with [Windows 10 Mobile Enterprise](#mobile_edition).
+Windows Store apps are automatically trusted. For custom LOB apps developed internally or by a trusted software vendor, ensure that the device trusts the app signing certificate. There are two ways to establish this trust: use a signing certificate from a trusted source, or generate your own signing certificate and add your chain of trust to the trusted certificates on the device. You can install up to 20 self-signed apps on a Windows 10 Mobile device. When you purchase a signing certificate from a public CA, you can install more than 20 apps on a device, although you can install more than 20 self-signed apps per device with [Windows 10 Mobile Enterprise](#mobile-edition).
 
 Users can install apps from Windows Store that the organization purchases through the Store app on their device. If you allow your users to log in with a Microsoft account, the Store app on the device provides a unified method for installing personal and corporate apps.
 
-### Store for Business
+### <a href="" id="store"></a>Store for Business
 
 [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkId=722910) is a web portal that IT pros and purchasers use to find, acquire, manage, and distribute apps to Windows 10 devices. This online portal gives Azure AD authenticated managers access to Store for Business functionality and settings. Store managers can create a private section of Windows Store in which organizations can manage apps specific and private to them. Store for Business allows organizations to make apps available to their users and purchase app licenses for them. They can also integrate their Store for Business subscriptions with their MDM systems, so the MDM system can deploy apps from their free Store for Business subscription.
 
@@ -1073,7 +1073,7 @@ The process for using Store for Business is as follows:
 
 For more information about Store for Business, see [Windows Store for Business](windows-store-for-business.md).
 
-### Mobile application management (MAM) policies
+### <a href="" id="mam"></a>Mobile application management (MAM) policies
 
 With MDM, you can manage Device Guard on Windows 10 Mobile and create an allow (whitelist) or deny (blacklist) list of apps. This capability extends to built-in apps, as well, such as phone, text messaging, email, and calendar. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes.
 
@@ -1099,7 +1099,7 @@ Table 18. Windows 10 Mobile app management settings
 
 One potential security issue is that users can register as Windows 10 Mobile app developers and turn on developer features on their device, potentially installing apps from unknown sources and opening the device to malware threats. To prevent users from turning on developer features on their devices, set the **Disable development unlock (side loading)** policy, which you can configure through your MDM system.
 
-### Microsoft Edge
+### <a href="" id="edge"></a>Microsoft Edge
 
 MDM systems give you the ability to manage Microsoft Edge on mobile devices. Table 19 lists the Microsoft Edge settings for Windows 10 Mobile.
 
@@ -1129,21 +1129,21 @@ Table 19. Microsoft Edge settings for Windows 10 Mobile
 
 In this section, you learn how MDM settings in Windows 10 Mobile enable the following scenarios:
 
--   [Device update](#device_update)
+-   [Device update](#device-update)
 
--   [Device compliance monitoring](#device_comp)
+-   [Device compliance monitoring](#device-comp)
 
--   [Device inventory](#data_inv)
+-   [Device inventory](#data-inv)
 
--   [Remote assistance](#remote_assist)
+-   [Remote assistance](#remote-assist)
 
--   [Cloud services](#cloud_serv)
+-   [Cloud services](#cloud-serv)
 
 ### Device update
 
 To help protect mobile devices and their data, you must keep those devices updated. Windows Update automatically installs updates and upgrades when they become available.
 
-The device update features described in this section are available only in [Windows 10 Mobile Enterprise](#mobile_edition). You can use your MDM system to postpone system upgrades when you activate an Enterprise license on managed Windows 10 Mobile devices and control how updates and upgrades are applied. For example, you can disable updates altogether, defer updates and upgrades, and schedule the day and time to install updates, as you would with Windows Server Update Services (WSUS) on Windows 10 desktops running the [Current Branch for Business](introduction-to-windows-10-servicing.md). Table 20 lists the Windows 10 Mobile Enterprise settings that you can use to configure updates and upgrades.
+The device update features described in this section are available only in [Windows 10 Mobile Enterprise](#mobile-edition). You can use your MDM system to postpone system upgrades when you activate an Enterprise license on managed Windows 10 Mobile devices and control how updates and upgrades are applied. For example, you can disable updates altogether, defer updates and upgrades, and schedule the day and time to install updates, as you would with Windows Server Update Services (WSUS) on Windows 10 desktops running the [Current Branch for Business](introduction-to-windows-10-servicing.md). Table 20 lists the Windows 10 Mobile Enterprise settings that you can use to configure updates and upgrades.
 
 Table 20. Windows 10 Mobile Enterprise update management settings
 
@@ -1282,7 +1282,7 @@ Table 21. Windows 10 Mobile Enterprise approved update information
 
  
 
-### Device compliance monitoring
+### <a href="" id="device-comp"></a>Device compliance monitoring
 
 You can use your MDM system to monitor compliance. Windows 10 Mobile provides audit information to track issues or perform remedial actions. This information helps you ensure that devices are configured to comply with organizational standards.
 
@@ -1339,7 +1339,7 @@ Table 21. Windows 10 Mobile HAS data points
 
  
 
-### Device inventory
+### <a href="" id="data-inv"></a>Device inventory
 
 Device inventory helps organizations better manage devices because it provides in-depth information about those devices. MDM systems collect inventory information remotely, and you can use the system’s reporting capabilities to analyze device resources and information. With this information, you can determine the current hardware and software resources of the device (for example, installed updates).
 
@@ -1370,7 +1370,7 @@ Table 22. Windows 10 Mobile software and hardware inventory examples
 
  
 
-### Remote assistance
+### <a href="" id="remote-assist"></a>Remote assistance
 
 The remote assistance features in Windows 10 Mobile help resolve issues that users might encounter even when the help desk does not have physical access to the device. These features include:
 
@@ -1394,7 +1394,7 @@ Table 23. Windows 10 Mobile remote find settings
 
  
 
-### Cloud services
+### <a href="" id="cloud-serv"></a>Cloud services
 
 On mobile devices that run Windows 10 Mobile, users can easily connect to apps and data. As a result, they frequently connect to cloud services that provide user notifications and collect telemetry (usage data). Windows 10 Mobile enables organizations to manage how devices consume these cloud services.
 

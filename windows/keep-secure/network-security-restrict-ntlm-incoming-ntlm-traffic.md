@@ -18,9 +18,9 @@ author: brianlic-msft
 **In this article**
 
 -   [Reference](#reference)
--   [Policy management](#policy_management)
--   [Security considerations](#security_considerations)
--   [Related topics](#related_topics)
+-   [Policy management](#policy-management)
+-   [Security considerations](#security-considerations)
+-   [Related topics](#related-topics)
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Incoming NTLM traffic** security policy setting.
 
@@ -107,7 +107,7 @@ This section describes different features and tools available to help you manage
 
 None. Changes to this policy become effective without a restart when saved locally or distributed through Group Policy.
 
-### Group Policy
+### <a href="" id="bkmk-grouppolicy"></a>Group Policy
 
 Setting and deploying this policy using Group Policy takes precedence over the setting on the local device. If the Group Policy is set to **Not Configured**, local settings will apply.
 

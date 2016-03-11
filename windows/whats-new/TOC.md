@@ -1,4 +1,4 @@
-# [What's new in Windows 10](index.md)
+# [What's new in Windows 10]
 ## [Change history for What's new in Windows 10](change-history-for-what-s-new-in-windows-10.md)
 ## [AppLocker](applocker.md)
 ## [BitLocker](bitlocker.md)

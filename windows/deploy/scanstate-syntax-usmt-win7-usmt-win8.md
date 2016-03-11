@@ -16,23 +16,23 @@ The ScanState command is used with the User State Migration Tool (USMT) 10.0 to
 ## In This Topic
 
 
-[Before You Begin](#BKMK_BeforeYouBegin)
+[Before You Begin](#bkmk-beforeyoubegin)
 
-[Syntax](#BKMK_Syntax)
+[Syntax](#bkmk-syntax)
 
-[Storage Options](#BKMK_StorageOptions)
+[Storage Options](#bkmk-storageoptions)
 
-[Migration Rule Options](#BKMK_MigrationRuleOptions)
+[Migration Rule Options](#bkmk-migrationruleoptions)
 
-[Monitoring Options](#BKMK_MonitoringOptions)
+[Monitoring Options](#bkmk-monitoringoptions)
 
-[User Options](#BKMK_UserOptions)
+[User Options](#bkmk-useroptions)
 
-[Encrypted File Options](#BKMK_efs)
+[Encrypted File Options](#bkmk-efs)
 
-[Incompatible Command-Line Options](#BKMK_ICLO)
+[Incompatible Command-Line Options](#bkmk-iclo)
 
-## Before You Begin
+## <a href="" id="bkmk-beforeyoubegin"></a>Before You Begin
 
 
 Before you run the **ScanState** command, note the following:
@@ -47,11 +47,11 @@ Before you run the **ScanState** command, note the following:
 
 -   You can gather domain accounts without the source computer having domain controller access. This functionality is available without any additional configuration.
 
--   The [Incompatible Command-Line Options](#BKMK_ICLO) table lists which options you can use together and which command-line options are incompatible.
+-   The [Incompatible Command-Line Options](#bkmk-iclo) table lists which options you can use together and which command-line options are incompatible.
 
 -   The directory location where you save the migration store will be excluded from the scan. For example, if you save the migration store to the root of the D drive, the D drive and all of its subdirectories will be excluded from the scan.
 
-## Syntax
+## <a href="" id="bkmk-syntax"></a>Syntax
 
 
 This section explains the syntax and usage of the **ScanState** command-line options. The options can be specified in any order. If the option contains a parameter, you can use either a colon or a space separator.
@@ -70,7 +70,7 @@ To create an encrypted store using the Config.xml file and the default migration
 
 `scanstate \\server\share\migration\mystore /i:migapp.xml /i:migdocs.xml /o /config:config.xml /v:13 /encrypt /key:"mykey"`
 
-## Storage Options
+## <a href="" id="bkmk-storageoptions"></a>Storage Options
 
 
 <table>
@@ -136,7 +136,7 @@ To create an encrypted store using the Config.xml file and the default migration
 
  
 
-## Run the ScanState Command on an Offline Windows System
+## <a href="" id="run-the-scanstate-command-on-an-offline-windows-system-"></a>Run the ScanState Command on an Offline Windows System
 
 
 You can run the **ScanState** command in Windows Preinstallation Environment (WinPE). In addition, USMT supports migrations from previous installations of Windows contained in Windows.old directories. The offline directory can be a Windows directory when you run the **ScanState** command in WinPE or a Windows.old directory when you run the **ScanState** command in Windows.
@@ -191,7 +191,7 @@ There are several benefits to running the **ScanState** command on an offline Wi
 
  
 
-## Migration Rule Options
+## <a href="" id="bkmk-migrationruleoptions"></a>Migration Rule Options
 
 
 USMT provides the following options to specify what files you want to migrate.
@@ -295,7 +295,7 @@ USMT provides the following options to specify what files you want to migrate.
 
  
 
-## Monitoring Options
+## <a href="" id="bkmk-monitoringoptions"></a>Monitoring Options
 
 
 USMT provides several options that you can use to analyze problems that occur during migration.
@@ -422,7 +422,7 @@ The ScanState log is created by default, but you can specify the name and locati
 
  
 
-## User Options
+## <a href="" id="bkmk-useroptions"></a>User Options
 
 
 By default, all users are migrated. The only way to specify which users to include and exclude is by using the following options. You cannot exclude users in the migration .xml files or using the Config.xml file. For more information, see [Identify Users](identify-users-usmt-win7-usmt-win8.md) and [Migrate User Accounts](migrate-user-accounts-usmt.md).
@@ -599,7 +599,7 @@ The /**uel** option takes precedence over the /**ue** option. If a user has logg
 
  
 
-## Encrypted File Options
+## <a href="" id="bkmk-efs"></a>Encrypted File Options
 
 
 You can use the following options to migrate encrypted files. In all cases, by default, USMT fails if an encrypted file is found unless you specify an /**efs** option. To migrate encrypted files, you must change the default behavior.
@@ -662,7 +662,7 @@ Take caution when migrating encrypted files. If you migrate an encrypted file wi
 
  
 
-## Incompatible Command-Line Options
+## <a href="" id="bkmk-iclo"></a>Incompatible Command-Line Options
 
 
 The following table indicates which command-line options are not compatible with the **ScanState** command. If the table entry for a particular combination is blank, the options are compatible and you can use them together. The X symbol means that the options are not compatible. For example, you cannot use the **/nocompress** option with the **/encrypt** option.

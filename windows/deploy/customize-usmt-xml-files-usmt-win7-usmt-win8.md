@@ -14,19 +14,19 @@ author: CFaw
 ## In This Topic
 
 
-[Overview](#BKMK_Overview)
+[Overview](#bkmk-overview)
 
-[Migration .xml Files](#BKMK_MigXML)
+[Migration .xml Files](#bkmk-migxml)
 
-[Custom .xml Files](#BKMK_CustomXMLFiles)
+[Custom .xml Files](#bkmk-customxmlfiles)
 
-[The Config.xml File](#BKMK_ConfigXML)
+[The Config.xml File](#bkmk-configxml)
 
-[Examples](#BKMK_Examples)
+[Examples](#bkmk-examples)
 
-[Additional Information](#BKMK_AddlInfo)
+[Additional Information](#bkmk-addlinfo)
 
-## Overview
+## <a href="" id="bkmk-overview"></a>Overview
 
 
 If you want the **ScanState** and **LoadState** tools to use any of the migration .xml files, specify these files at the command line using the **/i** option. Because the **ScanState** and **LoadState** tools need the .xml files to control the migration, specify the same set of .xml files for both the **ScanState** and **LoadState** commands. However, you do not have to specify the Config.xml file with the **/config** option, unless you want to exclude some of the files and settings that you migrated to the store. For example, you might want to migrate the My Documents folder to the store but not to the destination computer. To do this, modify the Config.xml file and specify the updated file with the **LoadState** command. Then the **LoadState** command will migrate only the files and settings that you want to migrate.
@@ -43,7 +43,7 @@ To modify the migration, do one or more of the following.
 
 For more information about excluding data, see the [Exclude Files and Settings](exclude-files-and-settings-usmt.md) topic.
 
-## Migration .xml Files
+## <a href="" id="bkmk-migxml"></a>Migration .xml Files
 
 
 This section describes the migration .xml files that are included with USMT. Each file contains migration rules that control which components are migrated and where they are migrated to on the destination computer.
@@ -64,12 +64,12 @@ You can use the asterisk (\*) wildcard character in each of these files. However
 
      
 
-## Custom .xml Files
+## <a href="" id="bkmk-customxmlfiles"></a>Custom .xml Files
 
 
 You can create custom .xml files to customize the migration for your unique needs. For example, you may want to create a custom file to migrate a line-of-business application or to modify the default migration behavior. If you want **ScanState** and **LoadState** to use this file, specify it with both commands. For more information, see the How to Create a Custom .xml File topic.
 
-## The Config.xml File
+## <a href="" id="bkmk-configxml"></a>The Config.xml File
 
 
 The Config.xml file is an optional file that you create using the **/genconfig** option with the **ScanState** command. You should create and modify this file if you want to exclude certain components from the migration. In addition, you must create and modify this file if you want to exclude any of the operating system settings from being migrated. The Config.xml file format is different from that of the migration .xml files because it does not contain any migration rules. It contains only a list of the operating system components, applications, and the user documents that can be migrated. For an example, see the [Config.xml File](configxml-file-usmt-win7-usmt-win8.md) topic. For this reason, excluding components using this file is easier than modifying the migration .xml files because you do not need to be familiar with the migration rules and syntax. However, you cannot use wildcard characters in a Config.xml file.
@@ -93,7 +93,7 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
  
 
-### Examples
+### <a href="" id="bkmk-examples"></a>Examples
 
 -   The following command creates a Config.xml file in the current directory, but it does not create a store:
 
@@ -107,7 +107,7 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
     `loadstate \\server\share\migration\mystore /i:migapp.xml /i:migdocs.xml /v:5 /decrypt /key:"mykey"`
 
-## Additional Information
+## <a href="" id="bkmk-addlinfo"></a>Additional Information
 
 
 -   For more information about how to change the files and settings that are migrated, see the [User State Migration Tool (USMT) How-to topics](user-state-migration-tool--usmt--how-to-topics.md).

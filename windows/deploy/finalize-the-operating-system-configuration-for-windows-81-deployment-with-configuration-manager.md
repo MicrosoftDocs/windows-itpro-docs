@@ -24,13 +24,13 @@ author: CFaw
 -   [Distribute content to the CM01 distribution portal](#sec04)
 -   [Create a deployment for the task sequence](#sec05)
 -   [Configure Configuration Manager to prompt for the computer name during deployment (optional)](#sec06)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enablement of the optional Microsoft Deployment Toolkit (MDT) monitoring for Microsoft System Center 2012 R2 Configuration Manager, logs folder creation, rules configuration, content distribution, and deployment of the previously created task sequence.
 
 For the purposes of this topic, we will use two machines: DC01 and CM01. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 Standard. Both are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md).
 
-## Enable MDT monitoring
+## <a href="" id="sec01"></a>Enable MDT monitoring
 
 
 This section will walk you through the process of creating the E:\\MDTProduction deployment share using the MDT Deployment Workbench to enable monitoring for Configuration Manager.
@@ -51,7 +51,7 @@ This section will walk you through the process of creating the E:\\MDTProduction
 
 Figure 26. Enabling MDT monitoring for Configuration Manager.
 
-## Create and share the Logs folder
+## <a href="" id="sec02"></a>Create and share the Logs folder
 
 
 To support additional server-side logging in Configuration Manager, you create and share the E:\\Logs folder on CM01 using Windows PowerShell. Then in the next step, you enable server-side logging by modifying the CustomSettings.ini file used by the Configuration Manager task sequence.
@@ -66,7 +66,7 @@ To support additional server-side logging in Configuration Manager, you create a
     icacls E:\Logs /grant '"CM_NAA":(OI)(CI)(M)'
     ```
 
-## Configure the rules (Windows 10 x64 Settings package)
+## <a href="" id="sec03"></a>Configure the rules (Windows 10 x64 Settings package)
 
 
 This section will show you how to configure the rules (the Windows 10 x64 Settings package) to support the Contoso environment.
@@ -102,7 +102,7 @@ Although you have not yet added a distribution point, you still need to select U
 
  
 
-## Distribute content to the CM01 distribution portal
+## <a href="" id="sec04"></a>Distribute content to the CM01 distribution portal
 
 
 In Configuration Manager, you can distribute all packages needed by a task sequence in a single task. In this section, you distribute packages that have not yet been distributed to the CM01 distribution point.
@@ -113,7 +113,7 @@ In Configuration Manager, you can distribute all packages needed by a task seque
 
 3.  Using Configuration Manager Trace, verify the distribution to the CM01 distribution point by reviewing the distmgr.log file, or use the Distribution Status / Content Status option in the Monitoring workspace. Do not continue until you see all the new packages being distributed successfully.
 
-## Create a deployment for the task sequence
+## <a href="" id="sec05"></a>Create a deployment for the task sequence
 
 
 This sections provides steps to help you create a deployment for the task sequence.
@@ -144,7 +144,7 @@ This sections provides steps to help you create a deployment for the task sequen
 
 Figure 29. The Windows 10 Enterprise x64 RTM task sequence deployed to the All Unknown Computers collections available for media and PXE.
 
-## Configure Configuration Manager to prompt for the computer name during deployment (optional)
+## <a href="" id="sec06"></a>Configure Configuration Manager to prompt for the computer name during deployment (optional)
 
 
 You can have Configuration Manager prompt you for a computer name or you can use rules to generate a computer name. For more details on how to do this, see [Configure MDT settings](configure-mdt-2013-settings.md).

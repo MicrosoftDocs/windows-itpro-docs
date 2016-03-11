@@ -19,11 +19,11 @@ author: brianlic-msft
 
 **In this article**
 
--   [On devices owned by the organization](#on_devices_owned_by_the_organization)
--   [On personal devices](#on_personal_devices)
--   [Using Windows Hello and biometrics](#using_windows_hello_and_biometrics)
--   [Use a phone to sign in to a PC](#BMK_remote)
--   [Related topics](#related_topics)
+-   [On devices owned by the organization](#on-devices-owned-by-the-organization)
+-   [On personal devices](#on-personal-devices)
+-   [Using Windows Hello and biometrics](#using-windows-hello-and-biometrics)
+-   [Use a phone to sign in to a PC](#bmk-remote)
+-   [Related topics](#related-topics)
 
 When you set a policy to require Microsoft Passport in the workplace, you will want to prepare people in your organization by explaining how to use Passport.
 
@@ -64,7 +64,7 @@ If your policy allows it, people can add Windows Hello to their Passport. Window
 
 ![sign in to windows, apps, and services using fingerprint or face](images/hellosettings.png)
 
-## Use a phone to sign in to a PC
+## <a href="" id="bmk-remote"></a>Use a phone to sign in to a PC
 
 
 If your enterprise enables phone sign-in, users can pair a phone running Windows 10 Mobile to a PC running Windows 10 and then use an app on the phone to sign in to the PC using their Microsoft Passport credentials.

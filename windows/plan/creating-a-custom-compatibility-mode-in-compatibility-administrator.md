@@ -22,10 +22,10 @@ author: TrudyHa
 
 **In this article**
 
--   [What Is a Compatibility Mode?](#what_is_a_compatibility_mode_)
--   [Searching for Existing Compatibility Modes](#searching_for_existing_compatibility_modes)
--   [Creating a New Compatibility Mode](#creating_a_new_compatibility_mode)
--   [Related topics](#related_topics)
+-   [What Is a Compatibility Mode?](#what-is-a-compatibility-mode-)
+-   [Searching for Existing Compatibility Modes](#searching-for-existing-compatibility-modes)
+-   [Creating a New Compatibility Mode](#creating-a-new-compatibility-mode)
+-   [Related topics](#related-topics)
 
 Windows® provides several *compatibility modes*, groups of compatibility fixes found to resolve many common application-compatibility issues. While working with Compatibility Administrator, you might decide to group some of your individual compatibility fixes into a custom-compatibility mode, which you can then deploy and use on any of your compatibility databases.
 

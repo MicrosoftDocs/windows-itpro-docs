@@ -19,13 +19,13 @@ author: CFaw
 -   [Install the web service](#sec03)
 -   [Test the web service in Internet Explorer](#sec04)
 -   [Test the web service in the MDT simulation environment](#sec05)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 In this topic, you will learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment. Web services provide a powerful way to assign settings during a deployment. Simply put, web services are web applications that run code on the server side, and MDT has built-in functions to call these web services.
 
 Using a web service in MDT is straightforward, but it does require that you have enabled the Web Server (IIS) role on the server. Developing web services involves a little bit of coding, but for most web services used with MDT, you can use the free Microsoft Visual Studio Express 2013 for Web.
 
-## Create a sample web service
+## <a href="" id="sec01"></a>Create a sample web service
 
 
 In these steps we assume you have installed Microsoft Visual Studio Express 2013 for Web on PC0001 (the Windows 10 client) and downloaded the [MDT Sample Web Service](http://go.microsoft.com/fwlink/p/?LinkId=619363) from the Microsoft Download Center and extracted it to C:\\Projects.
@@ -50,7 +50,7 @@ In these steps we assume you have installed Microsoft Visual Studio Express 2013
 
 Figure 15. The sample project in Microsoft Visual Studio Express 2013 for Web.
 
-## Create an application pool for the web service
+## <a href="" id="sec02"></a>Create an application pool for the web service
 
 
 This section assumes that you have enabled the Web Server (IIS) role on MDT01.
@@ -75,7 +75,7 @@ This section assumes that you have enabled the Web Server (IIS) role on MDT01.
 
 Figure 16. The new MDTSample application.
 
-## Install the web service
+## <a href="" id="sec03"></a>Install the web service
 
 
 1.  On MDT01, using Internet Information Services (IIS) Manager, expand **Sites**, right-click **Default Web Site**, and select **Add Application**. Use the following settings for the application:
@@ -100,7 +100,7 @@ Figure 16. The new MDTSample application.
 
 Figure 18. Configuring Authentication for the MDTSample web service.
 
-## Test the web service in Internet Explorer
+## <a href="" id="sec04"></a>Test the web service in Internet Explorer
 
 
 1.  On PC0001, using Internet Explorer, navigate to: **http://MDT01/MDTSample/mdtsample.asmx**.
@@ -121,7 +121,7 @@ Figure 18. Configuring Authentication for the MDTSample web service.
 
 Figure 20. The result from the MDT Sample web service.
 
-## Test the web service in the MDT simulation environment
+## <a href="" id="sec05"></a>Test the web service in the MDT simulation environment
 
 
 After verifying the web service using Internet Explorer, you are ready to do the same test in the MDT simulation environment.

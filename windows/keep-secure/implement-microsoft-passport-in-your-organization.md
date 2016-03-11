@@ -19,11 +19,11 @@ author: brianlic-msft
 
 **In this article**
 
--   [Group Policy settings for Passport](#group_policy_settings_for_passport)
--   [MDM policy settings for Passport](#mdm_policy_settings_for_passport)
+-   [Group Policy settings for Passport](#group-policy-settings-for-passport)
+-   [MDM policy settings for Passport](#mdm-policy-settings-for-passport)
 -   [Prerequisites](#prerequisites)
--   [Passport for BYOD](#passport_for_byod)
--   [Related topics](#related_topics)
+-   [Passport for BYOD](#passport-for-byod)
+-   [Related topics](#related-topics)
 
 You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
 
@@ -121,7 +121,7 @@ Require uppercase letters
 
 **Disabled**: Users cannot include an uppercase letter in their PIN.
 
-[Remote Passport](prepare-people-to-use-microsoft-passport.md#BMK_remote)
+[Remote Passport](prepare-people-to-use-microsoft-passport.md#bmk-remote)
 Use Remote Passport
 
 **Note**  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
@@ -242,9 +242,9 @@ UseRemotePassport
 
 Device or user
 False
-True: [Remote Passport](prepare-people-to-use-microsoft-passport.md#BMK_remote) is enabled.
+True: [Remote Passport](prepare-people-to-use-microsoft-passport.md#bmk-remote) is enabled.
 
-False: [Remote Passport](prepare-people-to-use-microsoft-passport.md#BMK_remote) is disabled.
+False: [Remote Passport](prepare-people-to-use-microsoft-passport.md#bmk-remote) is disabled.
 
  
 

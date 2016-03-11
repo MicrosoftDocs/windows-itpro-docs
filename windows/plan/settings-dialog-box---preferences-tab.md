@@ -24,14 +24,14 @@ To display the **Settings** dialog box, in Application Compatibility Manager (AC
 
 In the **Settings** dialog box, on the **Preferences** tab, use the following controls to join or leave the ACT Community, send ACT usage data to Microsoft, or be notified when there are updates available for ACT.
 
-**Yes, I want to join the ACT Community**  
+<a href="" id="yes--i-want-to-join-the-act-community"></a>**Yes, I want to join the ACT Community**  
 If this check box is selected, you are a member of the ACT Community and can share application compatibility data with other ACT users.
 
 If this check box is cleared, you still receive compatibility data from the Microsoft compatibility database, but not from other ACT users.
 
 For more information about the ACT Community, see [ACT Community Ratings and Process](act-community-ratings-and-process.md).
 
-**Send ACT usage data to Microsoft**  
+<a href="" id="send-act-usage-data-to-microsoft"></a>**Send ACT usage data to Microsoft**  
 If this check box is selected, the following ACT usage data is sent to Microsoft:
 
 -   The version of SQL Server being used by the ACT database.
@@ -46,7 +46,7 @@ If this check box is selected, the following ACT usage data is sent to Microsoft
 
 If this check box is cleared, your ACT usage data is not sent to Microsoft.
 
-**Notify me when a newer version of ACT is available (recommended)**  
+<a href="" id="notify-me-when-a-newer-version-of-act-is-available--recommended-"></a>**Notify me when a newer version of ACT is available (recommended)**  
 If this check box is selected, ACM notifies you when an update is available for ACT.
 
 ## Related topics

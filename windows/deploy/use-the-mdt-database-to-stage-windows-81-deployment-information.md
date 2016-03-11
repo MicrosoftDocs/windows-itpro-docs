@@ -18,11 +18,11 @@ author: CFaw
 -   [Create the deployment database](#sec02)
 -   [Configure database permissions](#sec03)
 -   [Create an entry in the database](#sec04)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic is designed to teach you how to use the MDT database to pre-stage information on your Windows 10 deployment in a Microsoft SQL Server 2012 SP1 Express database, rather than include the information in a text file (CustomSettings.ini). You can use this process, for example, to add the client machines you want to deploy, specify their computer names and IP addresses, indicate applications to be deployed, and determine many additional settings for the machines.
 
-## Database prerequisites
+## <a href="" id="sec01"></a>Database prerequisites
 
 
 MDT can use either SQL Server Express or full SQL Server, but since the deployment database isn't big, even in large enterprise environments, we recommend using the free SQL Server 2012 SP1 Express database in your environment.
@@ -32,7 +32,7 @@ Be sure to enable Named Pipes when configuring the SQL Server 2012 SP1 Express d
 
  
 
-## Create the deployment database
+## <a href="" id="sec02"></a>Create the deployment database
 
 
 The MDT database is by default created and managed from the Deployment Workbench. In these steps, we assume you have installed SQL Server 2012 SP1 Express on MDT01.
@@ -62,7 +62,7 @@ Since SQL Server 2012 SP1 Express runs by default on a separate instance (SQLEXP
 
 Figure 8. The MDT database added to MDT01.
 
-## Configure database permissions
+## <a href="" id="sec03"></a>Configure database permissions
 
 
 After creating the database, you need to assign permissions to it. In MDT, the account you used to run the deployment is used to access the database. In this environment, the network access account is MDT\_BA.
@@ -89,7 +89,7 @@ After creating the database, you need to assign permissions to it. In MDT, the a
 
 Figure 10. Creating the login and settings permissions to the MDT database.
 
-## Create an entry in the database
+## <a href="" id="sec04"></a>Create an entry in the database
 
 
 To start using the database, you add a computer entry and assign a description and computer name. Use the computer's MAC Address as the identifier.

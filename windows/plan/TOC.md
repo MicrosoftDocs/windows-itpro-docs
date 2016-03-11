@@ -1,4 +1,4 @@
-# [Plan for Windows 10 deployment](index.md)
+# [Plan for Windows 10 deployment]
 ## [Change history for Plan for Windows 10 deployment](change-history-for-plan-for-windows-10-deployment.md)
 ## [Windows 10 servicing options](windows-10-servicing-model.md)
 ## [Windows 10 deployment considerations](windows-10-deployment-considerations.md)

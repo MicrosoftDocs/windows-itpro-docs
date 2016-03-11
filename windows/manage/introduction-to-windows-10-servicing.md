@@ -21,12 +21,12 @@ author: jdeckerMS
 **In this article**
 
 -   [Introduction](#introduction)
--   [Streamlined product development and release cycles](#streamlined_product_development_and_release_cycles)
--   [New Windows 10 delivery and installation alternatives](#new_windows_10_delivery_and_installation_alternatives)
--   [Windows 10 servicing options](#windows_10_servicing_options)
--   [Plan for Windows 10 deployment](#plan_for_windows_10_deployment)
--   [Servicing options and servicing branch designations](#servicing_options_and_servicing_branch_designations)
--   [Related topics](#related_topics)
+-   [Streamlined product development and release cycles](#streamlined-product-development-and-release-cycles)
+-   [New Windows 10 delivery and installation alternatives](#new-windows-10-delivery-and-installation-alternatives)
+-   [Windows 10 servicing options](#windows-10-servicing-options)
+-   [Plan for Windows 10 deployment](#plan-for-windows-10-deployment)
+-   [Servicing options and servicing branch designations](#servicing-options-and-servicing-branch-designations)
+-   [Related topics](#related-topics)
 
 This article describes the new servicing options available in Windows 10, Windows 10 Mobile, and IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.
 
@@ -125,11 +125,11 @@ Historically, because of the length of time between releases of new Windows vers
 
 In fact, when planning to deploy Windows 10 on a device, one of the most important questions for IT administrators to ask is, “What should happen to this device when Microsoft publishes a new feature upgrade?” This is because Microsoft designed Windows 10 to provide businesses with multiple servicing options, centered on enabling different rates of feature upgrade adoption. In particular, IT administrators can configure Windows 10 devices to:
 
--   Receive feature upgrades immediately after Microsoft makes them available publicly, so that users gain access to new features, experiences, and functionality as soon as possible. For more information, see [Immediate feature upgrade installation with Current Branch (CB) servicing](#immediate_upgrade_CB).
+-   Receive feature upgrades immediately after Microsoft makes them available publicly, so that users gain access to new features, experiences, and functionality as soon as possible. For more information, see [Immediate feature upgrade installation with Current Branch (CB) servicing](#immediate-upgrade-cb).
 
--   Defer receiving feature upgrades for a period of approximately four months after Microsoft makes them available publicly, to provide IT administrators with time to perform pre-deployment testing and provide feature upgrades releases with additional time-in-market to mature. For more information, see [Deferred feature upgrade installation with Current Branch for Business (CBB) servicing](#deferred_upgrade_CBB).
+-   Defer receiving feature upgrades for a period of approximately four months after Microsoft makes them available publicly, to provide IT administrators with time to perform pre-deployment testing and provide feature upgrades releases with additional time-in-market to mature. For more information, see [Deferred feature upgrade installation with Current Branch for Business (CBB) servicing](#deferred-upgrade-cbb).
 
--   Receive only servicing updates for the duration of their Windows 10 deployment in order to reduce the number of non-essential changes made to the device. For more information, see [Install servicing updates only by using Long-Term Servicing Branch (LTSB) servicing](#install_updates_LTSB).
+-   Receive only servicing updates for the duration of their Windows 10 deployment in order to reduce the number of non-essential changes made to the device. For more information, see [Install servicing updates only by using Long-Term Servicing Branch (LTSB) servicing](#install-updates-ltsb).
 
 The breakout of a company’s devices by the categories above is likely to vary significantly by industry and other factors. What is most important is that companies can decide what works best for them and can choose different options for different devices.
 
@@ -211,7 +211,7 @@ The same underlying figure will be used in subsequent figures to show all three 
 
 To simplify the servicing lifetime and feature upgrade behavior explanations that follow, this document refers to branch designations for a specific feature upgrade as the +0 versions, the designations for the feature upgrade after the +0 version as the +1 (or successor) versions, and the designation for the feature upgrade after the +1 version as the +2 (or second successor) versions.
 
-### 
+### <a href="" id="immediate-upgrade-cb"></a>
 
 **Immediate feature upgrade installation with Current Branch (CB) servicing**
 
@@ -233,7 +233,7 @@ Windows 10 Home supports Windows Update for release deployment. Windows 10 edi
 
 It is important to note that devices serviced from CBs must install two to three feature upgrades per year to remain current and continue to receive servicing updates.
 
-### 
+### <a href="" id="deferred-upgrade-cbb"></a>
 
 **Deferred feature upgrade installation with Current Branch for Business (CBB) servicing**
 
@@ -255,11 +255,11 @@ Windows 10 (Pro, Education, and Enterprise editions) support release deployment
 
 Microsoft designed Windows 10 servicing lifetime policies so that CBBs will receive servicing updates for approximately twice as many months as CBs. This enables two CBBs to receive servicing support at the same time, which provides businesses with more flexibility when deploying new feature upgrades. That said, it is important to note that Microsoft will not produce servicing updates for a feature upgrade after its corresponding CBB reaches the end of its servicing lifetime. This means that feature upgrade deployments cannot be extended indefinitely and IT administrators should ensure that they deploy newer feature upgrades onto devices before CBBs end.
 
-### 
+### <a href="" id="install-updates-ltsb"></a>
 
 **Install servicing updates only by using Long-Term Servicing Branch (LTSB) servicing**
 
-As shown in Figure 7, the Long-Term Servicing Branch (LTSB) designation refers to Servicing Branch \#2 from beginning to end. LTSBs begin when a feature upgrade with long-term support is published by Microsoft and end after 10 years. It is important to note that only the Windows 10 Enterprise LTSB edition supports long-term servicing, and there are important differences between this edition and other Windows 10 editions regarding upgradability and feature set (described below in the [Considerations when configuring devices for servicing updates only](#servicing_only) section).
+As shown in Figure 7, the Long-Term Servicing Branch (LTSB) designation refers to Servicing Branch \#2 from beginning to end. LTSBs begin when a feature upgrade with long-term support is published by Microsoft and end after 10 years. It is important to note that only the Windows 10 Enterprise LTSB edition supports long-term servicing, and there are important differences between this edition and other Windows 10 editions regarding upgradability and feature set (described below in the [Considerations when configuring devices for servicing updates only](#servicing-only) section).
 
 ![figure 7](images/win10servicing-fig7.png)
 
@@ -280,7 +280,7 @@ It is important to note again that not all feature upgrades will have an LTSB. T
 
  
 
-### 
+### <a href="" id="servicing-only"></a>
 
 **Considerations when configuring devices for servicing updates only**
 

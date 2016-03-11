@@ -18,8 +18,8 @@ author: TrudyHa
 
 **In this article**
 
--   [Recommended application testing process](#recommended_application_testing_process)
--   [Related topics](#related_topics)
+-   [Recommended application testing process](#recommended-application-testing-process)
+-   [Related topics](#related-topics)
 
 Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10.
 

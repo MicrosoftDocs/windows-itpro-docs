@@ -19,8 +19,8 @@ author: CFaw
 **In this article**
 
 -   [Requirements](#requirements)
--   [How do I sideload an app on desktop](#how_do_i_sideload_an_app_on_desktop)
--   [How do I sideload an app on mobile](#how_do_i_sideload_an_app_on_mobile)
+-   [How do I sideload an app on desktop](#how-do-i-sideload-an-app-on-desktop)
+-   [How do I sideload an app on mobile](#how-do-i-sideload-an-app-on-mobile)
 
 Sideload line-of-business apps in Windows 10.
 

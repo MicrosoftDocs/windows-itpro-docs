@@ -86,7 +86,7 @@ The following table shows the hardware and software you need to install and conf
 </tr>
 <tr class="even">
 <td align="left"><p>UEFI firmware version 2.3.1 or higher and Secure Boot</p></td>
-<td align="left"><p>To verify that the firmware is using UEFI version 2.3.1 or higher and Secure Boot, you can validate it against the [System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](http://msdn.microsoft.com/library/windows/hardware/dn932807.aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby) Windows Hardware Compatibility Program requirement.</p></td>
+<td align="left"><p>To verify that the firmware is using UEFI version 2.3.1 or higher and Secure Boot, you can validate it against the [System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](http://msdn.microsoft.com/library/windows/hardware/dn932807.aspx#system-fundamentals-firmware-cs-uefisecureboot-connectedstandby) Windows Hardware Compatibility Program requirement.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Virtualization extensions</p></td>
@@ -110,14 +110,14 @@ The following table shows the hardware and software you need to install and conf
 </tr>
 <tr class="odd">
 <td align="left"><p>Secure firmware update process</p></td>
-<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
+<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-## Before using Device Guard in your company
+## <a href="" id="before-you-begin"></a>Before using Device Guard in your company
 
 
 Before you can successfully use Device Guard, you must set up your environment and your policies.
@@ -146,7 +146,7 @@ For the Device Guard feature, devices should only have Code Integrity pre-config
 
  
 
-### Virtualization-based security using Windows 10 Enterprise Hypervisor
+### <a href="" id="virtualization-based-security-using-windows-10-hypervisor"></a>Virtualization-based security using Windows 10 Enterprise Hypervisor
 
 Windows 10 Enterprise Hypervisor introduces new capabilities around virtual trust levels, which helps Windows 10 Enterprise services to run in a protected environment, in isolation from the running operating system. Windows 10 Enterprise virtualization-based security helps protect kernel code integrity and helps to provide credential isolation for the local security authority (LSA). Letting the Kernel Code Integrity service run as a hypervisor-hosted service increases the level of protection around the root operating system, adding additional protections against any malware that compromises the kernel layer.
 

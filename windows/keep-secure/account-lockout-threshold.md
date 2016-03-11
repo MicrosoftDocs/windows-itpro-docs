@@ -18,8 +18,8 @@ author: brianlic-msft
 **In this article**
 
 -   [Reference](#reference)
--   [Security considerations](#security_considerations)
--   [Related topics](#related_topics)
+-   [Security considerations](#security-considerations)
+-   [Related topics](#related-topics)
 
 Describes the best practices, location, values, and security considerations for the **Account lockout threshold** security policy setting.
 
@@ -42,14 +42,14 @@ It is possible to configure the following values for the **Account lockout thres
 
 -   Not defined
 
-Because vulnerabilities can exist when this value is configured and when it is not, organizations should weigh their identified threats and the risks that they are trying to mitigate. For information these settings, see [Countermeasure](#BKMK_Countermeasure) in this topic
+Because vulnerabilities can exist when this value is configured and when it is not, organizations should weigh their identified threats and the risks that they are trying to mitigate. For information these settings, see [Countermeasure](#bkmk-countermeasure) in this topic
 
 ### Best practices
 
 The threshold that you select is a balance between operational efficiency and security, and it depends on your organization's risk level. To allow for user error and to thwart brute force attacks, a setting above 4 and below 10 could be an acceptable starting point for your organization.
 
 **Important**  
-Implementation of this policy setting is dependent on your operational environment; threat vectors, deployed operating systems, and deployed apps. For more information, see [Implementation considerations](#BKMK_ImpleConsiderations) in this topic.
+Implementation of this policy setting is dependent on your operational environment; threat vectors, deployed operating systems, and deployed apps. For more information, see [Implementation considerations](#bkmk-impleconsiderations) in this topic.
 
  
 
@@ -110,7 +110,7 @@ This section describes features and tools that are available to help you manage 
 
 None. Changes to this policy setting become effective without a computer restart when they are saved locally or distributed through Group Policy.
 
-### Implementation considerations
+### <a href="" id="bkmk-impleconsiderations"></a>Implementation considerations
 
 Implementation of this policy setting is dependent on your operational environment. You should consider threat vectors, deployed operating systems, and deployed apps, for example:
 
@@ -136,7 +136,7 @@ Offline password attacks are not countered by this policy setting.
 
  
 
-### Countermeasure
+### <a href="" id="bkmk-countermeasure"></a>Countermeasure
 
 Because vulnerabilities can exist when this value is configured and when it is not configured, two distinct countermeasures are defined. Organizations should weigh the choice between the two, based on their identified threats and the risks that they want to mitigate. The two countermeasure options are:
 

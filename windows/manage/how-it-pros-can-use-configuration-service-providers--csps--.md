@@ -18,11 +18,11 @@ author: jdeckerMS
 
 **In this article**
 
--   [What is a CSP?](#what_is_a_csp_)
--   [Why should you learn about CSPs?](#why_should_you_learn_about_csps_)
--   [How do you use the CSP documentation?](#BKMK_CSP_Doc)
--   [CSP examples](#csp_examples)
--   [Related topics](#related_topics)
+-   [What is a CSP?](#what-is-a-csp-)
+-   [Why should you learn about CSPs?](#why-should-you-learn-about-csps-)
+-   [How do you use the CSP documentation?](#bkmk-csp-doc)
+-   [CSP examples](#csp-examples)
+-   [Related topics](#related-topics)
 
 Configuration service providers (CSPs) expose device configuration settings in Windows 10. This topic is written for people who have no experience with CSPs.
 
@@ -51,7 +51,7 @@ CSPs are behind many of the management tasks and policies for Windows 10 in Mic
 
 Generally, enterprises rely on Group Policy or MDM to configure and manage devices. For devices running Windows, MDM services use CSPs to configure your devices.
 
-In addition, you may have unmanaged devices, or a large number of devices that you want to configure before enrolling them in management, or you want to apply custom settings that aren't available through your MDM service. The [CSP documentation](#BKMK_CSP_doc) can help you understand the settings that can be configured or queried.
+In addition, you may have unmanaged devices, or a large number of devices that you want to configure before enrolling them in management, or you want to apply custom settings that aren't available through your MDM service. The [CSP documentation](#bkmk-csp-doc) can help you understand the settings that can be configured or queried.
 
 In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](../index.md) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](manage-cortana-in-your-enterprise.md) which links to the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
 
@@ -75,7 +75,7 @@ When a CSP is available but is not explicitly included in your MDM solution, you
 
 Lockdown XML can be used to configure devices running Windows 10 Mobile. You can manually author a [Lockdown XML file](lockdown-xml.md) to make use of the configuration settings available through the [EnterpriseAssignedAccess configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkID=618601).
 
-## How do you use the CSP documentation?
+## <a href="" id="bkmk-csp-doc"></a>How do you use the CSP documentation?
 
 
 All CSPs in Windows 10 are documented in the [Configuration service provider reference](http://go.microsoft.com/fwlink/p/?LinkId=717390).

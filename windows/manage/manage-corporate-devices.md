@@ -19,11 +19,11 @@ author: jdeckerMS
 
 **In this article**
 
--   [Identity and management options](#identity_and_management_options)
--   [How setting conflicts are resolved](#how_setting_conflicts_are_resolved)
--   [MDM enrollment](#mdm_enrollment)
--   [Learn more](#learn_more)
--   [Related topics](#related_topics)
+-   [Identity and management options](#identity-and-management-options)
+-   [How setting conflicts are resolved](#how-setting-conflicts-are-resolved)
+-   [MDM enrollment](#mdm-enrollment)
+-   [Learn more](#learn-more)
+-   [Related topics](#related-topics)
 
 You can use the same management tools to manage all device types running Windows 10 : desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), Windows PowerShell scripts, Orchestrator runbooks, System Center tools, and so on, will continue to work for Windows 10 on desktop editions.
 

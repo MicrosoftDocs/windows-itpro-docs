@@ -30,7 +30,7 @@ In Application Compatibility Manager (ACM), the *&lt;Device&gt;* dialog box show
 
 3.  Double-click the name of a device.
 
-## Tabs in the &lt;Device&gt; dialog box
+## <a href="" id="tabs-in-the--device--dialog-box"></a>Tabs in the &lt;Device&gt; dialog box
 
 
 The following table shows the information available in the *&lt;Device&gt;* dialog box.
@@ -70,7 +70,7 @@ The following table shows the information available in the *&lt;Device&gt;* dial
 
  
 
-## Using the &lt;Device&gt; Dialog Box
+## <a href="" id="using-the--device--dialog-box"></a>Using the &lt;Device&gt; Dialog Box
 
 
 In the *&lt;Device&gt;* dialog box, you can perform the following actions:

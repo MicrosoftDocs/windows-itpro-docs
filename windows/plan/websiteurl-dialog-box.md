@@ -30,7 +30,7 @@ In Application Compatibility Manager (ACM), the *&lt;websiteURL&gt;* dialog box 
 
 3.  Double-click the URL for a website.
 
-## Using the &lt;WebsiteURL&gt; Dialog Box
+## <a href="" id="using-the--websiteurl--dialog-box"></a>Using the &lt;WebsiteURL&gt; Dialog Box
 
 
 In the *&lt;websiteURL&gt;* dialog box, you can perform the following actions:

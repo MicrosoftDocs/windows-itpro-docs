@@ -16,36 +16,36 @@ The disk space requirements for a migration are dependent on the size of the mig
 ## In This Topic
 
 
--   [Hard Disk Space Requirements](#BKMK_SpaceReqs). Describes the disk space requirements for the migration store and other considerations on the source and destination computers.
+-   [Hard Disk Space Requirements](#bkmk-spacereqs). Describes the disk space requirements for the migration store and other considerations on the source and destination computers.
 
--   [Calculate Disk Space Requirements Using the ScanState Tool](#BKMK_calcDiskSpace). Describes how to use the ScanState tool to determine how big the migration store will be on a particular computer.
+-   [Calculate Disk Space Requirements Using the ScanState Tool](#bkmk-calcdiskspace). Describes how to use the ScanState tool to determine how big the migration store will be on a particular computer.
 
--   [Estimate Migration Store Size](#BKMK_EstMigStoreSize). Describes how to estimate the average size of migration stores for the computers in your organization, based on your infrastructure.
+-   [Estimate Migration Store Size](#bkmk-estmigstoresize). Describes how to estimate the average size of migration stores for the computers in your organization, based on your infrastructure.
 
-## Hard Disk Space Requirements
+## <a href="" id="bkmk-spacereqs"></a>Hard Disk Space Requirements
 
 
 -   **Store.** For non-hard-link migrations, you should ensure that there is enough available disk space at the location where you will save your store to contain the data being migrated. You can save your store to another partition, an external storage device such as a USB flash drive or a server. For more information, see [Choose a Migration Store Type](choose-a-migration-store-type-usmt-win7-usmt-win8.md).
 
 -   **Source Computer.** The source computer needs enough available space for the following:
 
-    -   [E250 megabytes (MB) minimum of hard disk space.](#BKMK_EstMigStoreSize) Space is needed to support the User State Migration Tool (USMT) 10.0 operations, for example, growth in the page file. Provided that every volume involved in the migration is formatted as NTFS, 250 MB should be enough space to ensure success for almost every hard-link migration, regardless of the size of the migration. The USMT tools will not create the migration store if 250 MB of disk space is not available.
+    -   [E250 megabytes (MB) minimum of hard disk space.](#bkmk-estmigstoresize) Space is needed to support the User State Migration Tool (USMT) 10.0 operations, for example, growth in the page file. Provided that every volume involved in the migration is formatted as NTFS, 250 MB should be enough space to ensure success for almost every hard-link migration, regardless of the size of the migration. The USMT tools will not create the migration store if 250 MB of disk space is not available.
 
-    -   [Temporary space for USMT to run.](#BKMK_EstMigStoreSize) Additional disk space for the USMT tools to operate is required. This does not include the minimum 250 MB needed to create the migration store. The amount of temporary space required can be calculated using the ScanState tool.
+    -   [Temporary space for USMT to run.](#bkmk-estmigstoresize) Additional disk space for the USMT tools to operate is required. This does not include the minimum 250 MB needed to create the migration store. The amount of temporary space required can be calculated using the ScanState tool.
 
-    -   [Hard-link migration store.](#BKMK_EstMigStoreSize) It is not necessary to estimate the size of a hard-link migration store. The only case where the hard-link store can be quite large is when non-NTFS file systems exist on the system and contain data being migrated.
+    -   [Hard-link migration store.](#bkmk-estmigstoresize) It is not necessary to estimate the size of a hard-link migration store. The only case where the hard-link store can be quite large is when non-NTFS file systems exist on the system and contain data being migrated.
 
--   [Destination computer.](#BKMK_EstMigStoreSize) The destination computer needs enough available space for the following:
+-   [Destination computer.](#bkmk-estmigstoresize) The destination computer needs enough available space for the following:
 
-    -   [Operating system.](#BKMK_EstMigStoreSize)
+    -   [Operating system.](#bkmk-estmigstoresize)
 
-    -   [Applications.](#BKMK_EstMigStoreSize)
+    -   [Applications.](#bkmk-estmigstoresize)
 
-    -   [Data being migrated.](#BKMK_EstMigStoreSize) It is important to consider that in addition to the files being migrated, registry information will also require hard disk space for storage.
+    -   [Data being migrated.](#bkmk-estmigstoresize) It is important to consider that in addition to the files being migrated, registry information will also require hard disk space for storage.
 
-    -   [Temporary space for USMT to run.](#BKMK_EstMigStoreSize) Additional disk space for the USMT tools to operate is required. The amount of temporary space required can be calculated using the ScanState tool.
+    -   [Temporary space for USMT to run.](#bkmk-estmigstoresize) Additional disk space for the USMT tools to operate is required. The amount of temporary space required can be calculated using the ScanState tool.
 
-## Calculate Disk Space Requirements using the ScanState Tool
+## <a href="" id="bkmk-calcdiskspace"></a>Calculate Disk Space Requirements using the ScanState Tool
 
 
 You can use the ScanState tool to calculate the disk space requirements for a particular compressed or uncompressed migration. It is not necessary to estimate the migration store size for a hard-link migration since this method does not create a separate migration store. The ScanState tool provides disk space requirements for the state of the computer at the time the tool is run. The state of the computer may change during day to day use so it is recommended that you use the calculations as an estimate when planning your migration.
@@ -99,7 +99,7 @@ The space requirements report provides two elements, &lt;**storeSize**&gt; and &
 
 Additionally, USMT performs a compliance check for a required minimum of 250 MB of available disk space and will not create a store if the compliance check fails.
 
-## Estimate Migration Store Size
+## <a href="" id="bkmk-estmigstoresize"></a>Estimate Migration Store Size
 
 
 Determine how much space you will need to store the migrated data. You should base your calculations on the volume of e-mail, personal documents, and system settings for each user. The best way to estimate these is to survey several computers to arrive at an average for the size of the store that you will need.

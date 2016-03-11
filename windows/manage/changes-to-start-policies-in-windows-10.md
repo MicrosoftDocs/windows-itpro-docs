@@ -18,9 +18,9 @@ author: jdeckerMS
 
 **In this article**
 
--   [Start policy settings supported for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education](#start_policy_settings_supported_for_windows_10_pro__windows_10_enterprise__and_windows_10_education)
--   [Deprecated Group Policy settings for Start](#deprecated_group_policy_settings_for_start_)
--   [Related topics](#related_topics)
+-   [Start policy settings supported for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education](#start-policy-settings-supported-for-windows-10-pro--windows-10-enterprise--and-windows-10-education)
+-   [Deprecated Group Policy settings for Start](#deprecated-group-policy-settings-for-start-)
+-   [Related topics](#related-topics)
 
 Windows 10 has a brand new Start experience. As a result, there are changes to the Group Policy settings that you can use to manage Start. Some policy settings are new or changed, and some old Start policy settings still apply. Other Start policy settings no longer apply and are deprecated.
 
@@ -117,7 +117,7 @@ These policy settings are available in **Administrative Templates\\Start Menu an
 
  
 
-## Deprecated Group Policy settings for Start
+## <a href="" id="deprecated-group-policy-settings-for-start-"></a>Deprecated Group Policy settings for Start
 
 
 The Start policy settings listed below do not work on Windows 10. Most of them were deprecated in Windows 8 however a few more were deprecated in Windows 10. Deprecation in this case means that the policy setting will not work on Windows 10. The “Supported on” text for a policy setting will not list Windows 10. The policy settings are still in the Group Policy Management Console and can be used on the operating systems that they apply to.

@@ -22,15 +22,15 @@ author: jdeckerMS
 
 **In this article**
 
--   [How Start layout control works](#BKMK_HowStartScreenControlWorks)
--   [Create a provisioning package that contains a customized Start layout](#BKMK_DomainGPODeployment)
--   [Related topics](#related_topics)
+-   [How Start layout control works](#bkmk-howstartscreencontrolworks)
+-   [Create a provisioning package that contains a customized Start layout](#bkmk-domaingpodeployment)
+-   [Related topics](#related-topics)
 
 In Windows 10 Enterprise and Windows 10 Education, you can use a provisioning package that you create with Windows Imaging and Configuration Designer (ICD) tool to deploy a customized Start layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
 **Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md)
 
-## How Start layout control works
+## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 
 
 Two features enable Start layout control:
@@ -44,7 +44,7 @@ Two features enable Start layout control:
 
 -   In ICD, you use the **Start/StartLayout** setting to set the path to the .xml file that defines the Start layout.
 
-## Create a provisioning package that contains a customized Start layout
+## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
 
 
 Use the [Imaging and Configuration Designer (ICD) tool](http://go.microsoft.com/fwlink/p/?LinkID=525483) included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that applies a customized Start layout. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)

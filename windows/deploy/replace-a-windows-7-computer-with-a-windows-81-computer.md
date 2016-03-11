@@ -20,7 +20,7 @@ author: CFaw
 
 -   [Prepare for the computer replace](#sec01)
 -   [Perform the computer replace](#sec02)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10; however, because you are replacing a machine, you cannot store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it.
 
@@ -30,7 +30,7 @@ For the purposes of this topic, we will use four machines: DC01, MDT01, PC0002, 
 
 Figure 1. The machines used in this topic.
 
-## Prepare for the computer replace
+## <a href="" id="sec01"></a>Prepare for the computer replace
 
 
 When preparing for the computer replace, you need to create a folder in which to store the backup, and a backup only task sequence that you run on the old computer.
@@ -74,7 +74,7 @@ When preparing for the computer replace, you need to create a folder in which to
 
     Figure 2. The Backup Only Task Sequence action list.
 
-## Perform the computer replace
+## <a href="" id="sec02"></a>Perform the computer replace
 
 
 During a computer replace, these are the high-level steps that occur:

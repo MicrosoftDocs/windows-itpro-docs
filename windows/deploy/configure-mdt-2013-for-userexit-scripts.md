@@ -14,9 +14,9 @@ author: CFaw
 
 **In this article**
 
--   [Configure the rules to call a UserExit script](#configure_the_rules_to_call_a_userexit_script)
--   [The Setname.vbs UserExit script](#the_setname.vbs_userexit_script)
--   [Related topics](#related_topics)
+-   [Configure the rules to call a UserExit script](#configure-the-rules-to-call-a-userexit-script)
+-   [The Setname.vbs UserExit script](#the-setname-vbs-userexit-script)
+-   [Related topics](#related-topics)
 
 In this topic, you will learn how to configure the MDT rules engine to use a UserExit script to generate computer names based on a prefix and the computer MAC Address. MDT supports calling external VBScripts as part of the Gather process; these scripts are referred to as UserExit scripts. The script also removes the colons in the MAC Address.
 

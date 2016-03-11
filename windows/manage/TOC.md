@@ -1,4 +1,4 @@
-# [Manage and update Windows 10](index.md)
+# [Manage and update Windows 10]
 ## [Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)
 ## [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)
 ## [Cortana integration in your business or enterprise](manage-cortana-in-your-enterprise.md)
@@ -17,7 +17,8 @@
 #### [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
 #### [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 ### [Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)
-### [Configure telemetry and other settings in your organization](manage-privacy-for-windows-10-in-your-company.md)
+### [Configure telemetry in your organization](configure-telemetry-in-your-organization.md)
+### [Disconnect from Microsoft and configure privacy settings in your organization](manage-privacy-for-windows-10-in-your-company.md)
 ### [Configure access to Windows Store](stop-employees-from-using-the-windows-store.md)
 ### [Manage Wi-Fi Sense in your company](manage-wi-fi-sense-in-your-company.md)
 ### [Configure Windows 10 Mobile using Lockdown XML](lockdown-xml.md)

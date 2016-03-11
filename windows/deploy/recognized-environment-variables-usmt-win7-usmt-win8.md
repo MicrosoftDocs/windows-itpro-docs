@@ -16,11 +16,11 @@ When using the XML files MigDocs.xml, MigApp.xml, and MigUser.xml, you can use e
 ## In This Topic
 
 
--   [Variables that are processed for the operating system and in the context of each user](#BKMK_1)
+-   [Variables that are processed for the operating system and in the context of each user](#bkmk-1)
 
--   [Variables that are recognized only in the user context](#BKMK_2)
+-   [Variables that are recognized only in the user context](#bkmk-2)
 
-## Variables that are processed for the operating system and in the context of each user
+## <a href="" id="bkmk-1"></a>Variables that are processed for the operating system and in the context of each user
 
 
 You can use these variables within sections in the .xml files with `context=UserAndSystem`, `context=User`, and `context=System`.
@@ -266,7 +266,7 @@ You can use these variables within sections in the .xml files with `context=User
 
  
 
-## Variables that are recognized only in the user context
+## <a href="" id="bkmk-2"></a>Variables that are recognized only in the user context
 
 
 You can use these variables in the .xml files within sections with `context=User` and `context=UserAndSystem`.

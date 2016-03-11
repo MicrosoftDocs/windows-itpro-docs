@@ -17,7 +17,7 @@ author: TrudyHa
 
 Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 
-## New features in Windows 10, Version 1511
+## New features in Windows 10, version 1511
 
 
 -   **Credential Manager support**. Credentials that are stored with Credential Manager, including domain credentials, are protected with Credential Guard with the following considerations:

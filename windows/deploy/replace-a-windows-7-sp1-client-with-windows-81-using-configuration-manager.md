@@ -24,7 +24,7 @@ author: CFaw
 -   [Create a new deployment](#sec04)
 -   [Verify the backup](#sec05)
 -   [Deploy the new computer](#sec06)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 In this topic, you will learn how to replacing a Windows 7 SP1 computer using Microsoft System Center 2012 R2 Configuration Manager. This process is similar to refreshing a computer, but since you are replacing the machine, you have to run the backup job separately from the deployment of Windows 10.
 
@@ -32,7 +32,7 @@ For the purposes of this topic, we will use three machines: DC01, CM01, and PC00
 
 In this topic, you will create a backup-only task sequence that you run on PC0004, the machine you are replacing. For more information, see [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-81-computer.md).
 
-## Create a replace task sequence
+## <a href="" id="sec01"></a>Create a replace task sequence
 
 
 1.  On CM01, using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create MDT Task Sequence**.
@@ -63,7 +63,7 @@ In this topic, you will create a backup-only task sequence that you run on PC000
 
 Figure 34. The backup-only task sequence (named Replace Task Sequence).
 
-## Associate the new machine with the old computer
+## <a href="" id="sec02"></a>Associate the new machine with the old computer
 
 
 This section walks you through the process of associating a blank machine, PC0006, with an old machine, PC0004, for the purpose of replacing PC0004 with PC0006. PC0006 can be either a physical or virtual machine.
@@ -100,7 +100,7 @@ This section walks you through the process of associating a blank machine, PC000
 
 11. Review the Install Windows 10 Enterprise x64 collection. Do not continue until you see the PC0006 machine in the collection. You might have to update and refresh the collection again.
 
-## Create a device collection and add the PC0004 computer
+## <a href="" id="sec03"></a>Create a device collection and add the PC0004 computer
 
 
 1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings.
@@ -127,7 +127,7 @@ This section walks you through the process of associating a blank machine, PC000
 
 2.  Review the USMT Backup (Replace) collection. Do not continue until you see the PC0004 machine in the collection.
 
-## Create a new deployment
+## <a href="" id="sec04"></a>Create a new deployment
 
 
 Using the Configuration Manager console, in the Software Library workspace, select **Task Sequences**, right-click **Replace Task Sequence**, and then select **Deploy**. Use the following settings:
@@ -158,7 +158,7 @@ Using the Configuration Manager console, in the Software Library workspace, sele
 
     -   &lt;default&gt;
 
-## Verify the backup
+## <a href="" id="sec05"></a>Verify the backup
 
 
 This section assumes that you have a machine named PC0004 with the Configuration Manager 2012 client installed.
@@ -187,7 +187,7 @@ It may take a few minutes for the user state store location to be populated.
 
  
 
-## Deploy the new computer
+## <a href="" id="sec06"></a>Deploy the new computer
 
 
 1.  Start the PC0006 virtual machine, press **F12** to Pre-Boot Execution Environment (PXE) boot when prompted. Allow it to boot Windows Preinstallation Environment (Windows PE), and then complete the deployment wizard using the following settings:

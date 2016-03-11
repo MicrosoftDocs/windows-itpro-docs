@@ -21,11 +21,11 @@ You can edit an AppLocker policy by adding, changing, or removing rules. However
 
 There are two methods you can use to edit an AppLocker policy:
 
--   [Editing an AppLocker policy by using Group Policy](#BKMK_EditAppPolinGPO)
+-   [Editing an AppLocker policy by using Group Policy](#bkmk-editapppolingpo)
 
--   [Editing an AppLocker policy by using the Local Security Policy snap-in](#BKMK_EditAppLolNotinGPO)
+-   [Editing an AppLocker policy by using the Local Security Policy snap-in](#bkmk-editapplolnotingpo)
 
-## Editing an AppLocker policy by using Group Policy
+## <a href="" id="bkmk-editapppolingpo"></a>Editing an AppLocker policy by using Group Policy
 
 
 The steps to edit an AppLocker policy distributed by Group Policy include the following:
@@ -79,7 +79,7 @@ If you are performing these steps by using Microsoft Advanced Group Policy Manag
 
  
 
-## Editing an AppLocker policy by using the Local Security Policy snap-in
+## <a href="" id="bkmk-editapplolnotingpo"></a>Editing an AppLocker policy by using the Local Security Policy snap-in
 
 
 The steps to edit an AppLocker policy distributed by using the Local Security Policy snap-in (secpol.msc) include the following tasks.

@@ -18,13 +18,13 @@ author: CFaw
 
 **In this article**
 
--   [Proof-of-concept environment](#proof-of-concept_environment)
--   [Set up the upgrade task sequence](#set_up_the_upgrade_task_sequence)
--   [Create the MDT production deployment share](#create_the_mdt_production_deployment_share)
--   [Add Windows 10 Enterprise x64 (full source)](#add_windows_10_enterprise_x64__full_source_)
--   [Create a task sequence to upgrade to Windows 10 Enterprise](#create_a_task_sequence_to_upgrade_to_windows_10_enterprise)
--   [Perform the Windows 10 upgrade](#perform_the_windows_10_upgrade)
--   [Related topics](#related_topics)
+-   [Proof-of-concept environment](#proof-of-concept-environment)
+-   [Set up the upgrade task sequence](#set-up-the-upgrade-task-sequence)
+-   [Create the MDT production deployment share](#create-the-mdt-production-deployment-share)
+-   [Add Windows 10 Enterprise x64 (full source)](#add-windows-10-enterprise-x64--full-source-)
+-   [Create a task sequence to upgrade to Windows 10 Enterprise](#create-a-task-sequence-to-upgrade-to-windows-10-enterprise)
+-   [Perform the Windows 10 upgrade](#perform-the-windows-10-upgrade)
+-   [Related topics](#related-topics)
 
 The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Deployment Toolkit (MDT) 2013 Update 1 task sequence to completely automate the process.
 

@@ -18,35 +18,35 @@ author: TrudyHa
 
 **In this article**
 
--   [Plan Chromebook migration](#plan_migration)
--   [Plan for app migration or replacement](#plan_app_migrate_replace)
--   [Plan for migration of user and device settings](#plan_migrate_user_device_settings)
--   [Plan for email migration](#plan_email_migrate)
--   [Plan for cloud storage migration](#plan_cloud_storage_migration)
--   [Plan for cloud services migration](#plan_cloud_services)
--   [Plan for Windows device deployment](#plan_windevice_deploy)
--   [Perform Chromebook migration](#perform_chromebook_migration)
--   [Perform network infrastructure remediation](#network_infra_remediation)
--   [Perform AD DS and Azure AD services deployment or remediation](#perform_ad_ds_and_azure_ad_services_deployment_or_remediation)
--   [Prepare device, user, and app management systems](#prepare_device__user__and_app_management_systems)
--   [Perform app migration or replacement](#perform_app_migration_or_replacement_)
--   [Perform migration of user and device settings](#migrate_user_device_settings)
--   [Perform email migration](#perform_email_migration)
--   [Perform cloud storage migration](#perform_cloud_storage_migration)
--   [Perform cloud services migration](#perform_cloud_services_migration)
--   [Perform Windows device deployment](#perform_windows_device_deployment)
--   [Related topics](#related_topics)
+-   [Plan Chromebook migration](#plan-migration)
+-   [Plan for app migration or replacement](#plan-app-migrate-replace)
+-   [Plan for migration of user and device settings](#plan-migrate-user-device-settings)
+-   [Plan for email migration](#plan-email-migrate)
+-   [Plan for cloud storage migration](#plan-cloud-storage-migration)
+-   [Plan for cloud services migration](#plan-cloud-services)
+-   [Plan for Windows device deployment](#plan-windevice-deploy)
+-   [Perform Chromebook migration](#perform-chromebook-migration)
+-   [Perform network infrastructure remediation](#network-infra-remediation)
+-   [Perform AD DS and Azure AD services deployment or remediation](#perform-ad-ds-and-azure-ad-services-deployment-or-remediation)
+-   [Prepare device, user, and app management systems](#prepare-device--user--and-app-management-systems)
+-   [Perform app migration or replacement](#perform-app-migration-or-replacement-)
+-   [Perform migration of user and device settings](#migrate-user-device-settings)
+-   [Perform email migration](#perform-email-migration)
+-   [Perform cloud storage migration](#perform-cloud-storage-migration)
+-   [Perform cloud services migration](#perform-cloud-services-migration)
+-   [Perform Windows device deployment](#perform-windows-device-deployment)
+-   [Related topics](#related-topics)
 
 In this guide you will learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment. You will learn how to perform the necessary planning steps, including Windows device deployment, migration of user and device settings, app migration or replacement, and cloud storage migration. You will then learn the best method to perform the migration by using automated deployment and migration tools.
 
-## Plan Chromebook migration
+## <a href="" id="plan-migration"></a>Plan Chromebook migration
 
 
 Before you begin to migrate Chromebook devices, plan your migration. As with most projects, there can be an urge to immediately start doing before planning. When you plan your Chromebook migration before you perform the migration, you can save countless hours of frustration and mistakes during the migration process.
 
 In the planning portion of this guide, you will identify all the decisions that you need to make and how to make each decision. At the end of the planning section, you will have a list of information you need to collect and what you need to do with the information. You will be ready to perform your Chromebook migration.
 
-## Plan for app migration or replacement
+## <a href="" id="plan-app-migrate-replace"></a>Plan for app migration or replacement
 
 
 App migration or replacement is an essential part of your Chromebook migration. In this section you will plan how you will migrate or replace Chromebook (Chrome OS) apps that are currently in use with the same or equivalent Windows apps. At the end of this section, you will have a list of the active Chrome OS apps and the Windows app counterparts.
@@ -56,7 +56,7 @@ App migration or replacement is an essential part of your Chromebook migration. 
 Before you can do any analysis or make decisions about which apps to migrate or replace, you need to identify which apps are currently in use on the Chromebook devices. You will create a list of apps that are currently in use (also called an app portfolio).
 
 **Note**  
-The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform_testing_webapps) section.
+The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform-testing-webapps) section.
 
  
 
@@ -80,7 +80,7 @@ Record the following information about each app in your app portfolio:
 
 Throughout the entire app migration or replacement process, focus on the higher priority apps. Focus on lower priority apps only after you have determined what you will do with the higher priority apps.
 
-### 
+### <a href="" id="select-googleapps"></a>
 
 **Select Google Apps replacements**
 
@@ -100,17 +100,17 @@ Table 1. Google App replacements
 
  
 
-It may be that you will decide to replace Google Apps after you deploy Windows devices. For more information on making this decision, see the [Select cloud services migration strategy](#select_CS_migrationstrat) section of this guide.
+It may be that you will decide to replace Google Apps after you deploy Windows devices. For more information on making this decision, see the [Select cloud services migration strategy](#select-cs-migrationstrat) section of this guide.
 
 **Find the same or similar apps in the Windows Store**
 
-In many instances, software vendors will create a version of their app for multiple platforms. You can search the Windows Store to find the same or similar apps to any apps not identified in the [Select Google Apps replacements](#select_googleapps) section.
+In many instances, software vendors will create a version of their app for multiple platforms. You can search the Windows Store to find the same or similar apps to any apps not identified in the [Select Google Apps replacements](#select-googleapps) section.
 
 In other instances, the offline app does not have a version written for the Windows Store or is not a web app. In these cases, look for an app that provides similar functions. For example, you might have a graphing calculator offline Android app published on the Chrome OS, but the software publisher does not have a version for Windows devices. Search the Windows Store for a graphing calculator app that provides similar features and functionality. Use that Windows Store app as a replacement for the graphing calculator offline Android app published on the Chrome OS.
 
 Record the Windows app that replaces the Chromebook app in your app portfolio.
 
-### 
+### <a href="" id="perform-testing-webapps"></a>
 
 **Perform app compatibility testing for web apps**
 
@@ -118,7 +118,7 @@ The majority of Chromebook apps are web apps. Because you cannot run native offl
 
 Ensure that you test these web apps in Microsoft Edge. Record the level of compatibility for each web app in Microsoft Edge in your app portfolio.
 
-## Plan for migration of user and device settings
+## <a href="" id="plan-migrate-user-device-settings"></a>Plan for migration of user and device settings
 
 
 Some institutions have configured the Chromebook devices to make the devices easier to use by using the Google Chrome Admin Console. You have also probably configured the Chromebook devices to help ensure the user data access and ensure that the devices themselves are secure by using the Google Chrome Admin Console.
@@ -127,7 +127,7 @@ However, in addition to your centralized configuration in the Google Admin Conso
 
 In this section, you will identify the user and device configuration settings for your Chromebook users and devices. Then you will prioritize these settings to focus on the configuration settings that are essential to your educational institution.
 
-At the end of this section, you should have a list of Chromebook user and device settings that you want to migrate to Windows, as well as a level of priority for each setting. You may discover at the end of this section that you have few or no higher priority settings to be migrated. If this is the case, you can skip the [Perform migration of user and device settings](#migrate_user_device_settings) section of this guide.
+At the end of this section, you should have a list of Chromebook user and device settings that you want to migrate to Windows, as well as a level of priority for each setting. You may discover at the end of this section that you have few or no higher priority settings to be migrated. If this is the case, you can skip the [Perform migration of user and device settings](#migrate-user-device-settings) section of this guide.
 
 **Identify Google Admin Console settings to migrate**
 
@@ -275,7 +275,7 @@ After you have collected all the Chromebook user, app, and device settings that 
 
 Assign the setting-migration priority based on how critical the setting is to the faculty performing their day-to-day tasks and how the setting affects the curriculum in the classrooms. Focus on the migration of higher priority settings and put less effort into the migration of lower priority settings. There may be some settings that are not necessary at all and can be dropped from your list of settings entirely. Record the setting priority in the list of settings you plan to migrate.
 
-## Plan for email migration
+## <a href="" id="plan-email-migrate"></a>Plan for email migration
 
 
 Many of your users may be using Google Apps Gmail to manage their email, calendars, and contacts. You need to create the list of users you will migrate and the best time to perform the migration.
@@ -304,7 +304,7 @@ Typically, the best time to perform the migration is between academic years or d
 
 Ensure that you communicate the time the migration will occur to your users well in advance. Also, ensure that users know how to access their Office 365 email after the migration is complete. Finally, ensure that your users know how to perform the common tasks they performed in Google Apps Gmail in Office 365 and/or Outlook 2016.
 
-## Plan for cloud storage migration
+## <a href="" id="plan-cloud-storage-migration"></a>Plan for cloud storage migration
 
 
 Chromebook devices have limited local storage. So, most of your users will store data in cloud storage, such as Google Drive. You will need to plan how to migrate your cloud storage as a part of the Chromebook migration process.
@@ -323,7 +323,7 @@ Typically, most Chromebook users use Google Drive for cloud storage services bec
 
 -   Approximate storage currently in use per user
 
-Use this information as the requirements for your cloud storage services after you migrate to Windows devices. If at the end of this discovery you determine there is no essential data being stored in cloud storage services that requires migration, then you can skip to the [Plan for cloud services migration](#plan_cloud_services) section.
+Use this information as the requirements for your cloud storage services after you migrate to Windows devices. If at the end of this discovery you determine there is no essential data being stored in cloud storage services that requires migration, then you can skip to the [Plan for cloud services migration](#plan-cloud-services) section.
 
 **Optimize cloud storage services migration plan**
 
@@ -339,18 +339,18 @@ Consider the following to help optimize your cloud storage services migration pl
 
 Record your optimization changes in your cloud storage services migration plan.
 
-## Plan for cloud services migration
+## <a href="" id="plan-cloud-services"></a>Plan for cloud services migration
 
 
-Many of your users may use cloud services on their Chromebook device, such as Google Apps, Google Drive, or Google Apps Gmail. You have planned for these individual cloud services in the [Plan for app migration or replacement](#plan_app_migrate_replace), [Plan for Google Apps Gmail to Office 365 migration](#plan_email_migrate), and [Plan for cloud storage migration](#plan_cloud_storage_migration) sections.
+Many of your users may use cloud services on their Chromebook device, such as Google Apps, Google Drive, or Google Apps Gmail. You have planned for these individual cloud services in the [Plan for app migration or replacement](#plan-app-migrate-replace), [Plan for Google Apps Gmail to Office 365 migration](#plan-email-migrate), and [Plan for cloud storage migration](#plan-cloud-storage-migration) sections.
 
 In this section, you will create a combined list of these cloud services and then select the appropriate strategy to migrate these cloud services.
 
-### 
+### <a href="" id="identify-cloud-services-inuse"></a>
 
 **Identify cloud services currently in use**
 
-You have already identified the individual cloud services that are currently in use in your educational institution in the [Plan for app migration or replacement](#plan_app_migrate_replace), [Plan for Google Apps Gmail to Office 365 migration](#plan_email_migrate), and [Plan for cloud storage migration](#plan_cloud_storage_migration) sections. Create a unified list of these cloud services and record the following about each service:
+You have already identified the individual cloud services that are currently in use in your educational institution in the [Plan for app migration or replacement](#plan-app-migrate-replace), [Plan for Google Apps Gmail to Office 365 migration](#plan-email-migrate), and [Plan for cloud storage migration](#plan-cloud-storage-migration) sections. Create a unified list of these cloud services and record the following about each service:
 
 -   Cloud service name
 
@@ -372,7 +372,7 @@ Here is a list of reasons that describe why you might want to migrate from an ex
 
 -   **Improve storage capacity and cross-platform features.** Microsoft cloud services provide competitive storage capacity and provide more Windows-centric features than other cloud services providers. While the Microsoft cloud services user experience is highly optimized for Windows devices, Microsoft cloud services are also highly optimized for companion devices (such as iOS or Android devices).
 
-Review the list of existing cloud services that you created in the [Identify cloud services currently in use](#identify_cloud_services_inuse) section and identify the cloud services that you want to migrate to Microsoft cloud services. If you determine at the end of this task that there are no cloud services to be migrated, then skip to the [Plan for Windows device deployment](#plan_windevice_deploy) section. Also, skip the [Perform cloud services migration](#perform_cloud_services_migration) section later in this guide.
+Review the list of existing cloud services that you created in the [Identify cloud services currently in use](#identify-cloud-services-inuse) section and identify the cloud services that you want to migrate to Microsoft cloud services. If you determine at the end of this task that there are no cloud services to be migrated, then skip to the [Plan for Windows device deployment](#plan-windevice-deploy) section. Also, skip the [Perform cloud services migration](#perform-cloud-services-migration) section later in this guide.
 
 **Prioritize cloud services**
 
@@ -382,7 +382,7 @@ Assign the priority based on how critical the cloud service is to the faculty an
 
 Focus on the migration of higher priority cloud services first and put less effort into the migration of lower priority cloud services. There may be some cloud services that are unnecessary and you can remove them from your list of cloud services to migrate entirely. Record the cloud service migration priority in the list of cloud services you plan to migrate.
 
-### 
+### <a href="" id="select-cs-migrationstrat"></a>
 
 **Select cloud services migration strategy**
 
@@ -402,14 +402,14 @@ Consider the following when you create your cloud services migration strategy:
 
 -   **Overlap existing and new cloud services.** For faculty and staff, consider overlapping the existing and new cloud services (having both services available) for one business cycle (end of semester or academic year) after migration. This allows you to easily recover any data that might not have migrated successfully from the existing cloud services. At a minimum, overlap the user of existing and new cloud services until the user can verify the migration. Of course, the tradeoff for using this strategy is the cost of the existing cloud services. However, depending on when license renewal occurs, the cost may be minimal.
 
-## Plan for Windows device deployment
+## <a href="" id="plan-windevice-deploy"></a>Plan for Windows device deployment
 
 
 You need to plan for Windows device deployment to help ensure that the devices are successfully installed and configured to replace the Chromebook devices. Even if the vendor that provides the devices pre-loads Windows 10 on them, you still will need to perform other tasks.
 
 In this section you will select a Windows device deployment strategy; plan for Active Directory Domain Services (AD DS) and Azure AD services; plan for device, user, and app management; and plan for any necessary network infrastructure remediation.
 
-### 
+### <a href="" id="select-windows-device-deploy"></a>
 
 **Select a Windows device deployment strategy**
 
@@ -431,7 +431,7 @@ For each classroom that has Chromebook devices, select a combination of the foll
 
 Record the combination of Windows device deployment strategies that you selected.
 
-### 
+### <a href="" id="plan-adservices"></a>
 
 **Plan for AD DS and Azure AD services**
 
@@ -500,7 +500,7 @@ Table 5. Select on-premises AD DS, Azure AD, or hybrid
 
  
 
-### 
+### <a href="" id="plan-userdevapp-manage"></a>
 
 **Plan device, user, and app management**
 
@@ -624,7 +624,7 @@ You can use Configuration Manager and Intune in conjunction with each other to p
 
 Record the device, user, and app management products and technologies that you selected.
 
-### 
+### <a href="" id="plan-network-infra-remediation"></a>
 
 **Plan network infrastructure remediation**
 
@@ -660,21 +660,21 @@ Examine each of the following network infrastructure technologies and services a
 
     If you plan to significantly increase the number of Windows devices or you plan to run Chromebook and Windows devices side-by-side, you need to ensure that the power outlets, power strips, and other power management components can support the number of devices.
 
-At the end of this process, you may determine that no network infrastructure remediation is necessary. If so, you can skip the [Perform network infrastructure remediation](#network_infra_remediation) section of this guide.
+At the end of this process, you may determine that no network infrastructure remediation is necessary. If so, you can skip the [Perform network infrastructure remediation](#network-infra-remediation) section of this guide.
 
 ## Perform Chromebook migration
 
 
 Thus far, planning has been the primary focus. Believe it or not most of the work is now done. The rest of the Chromebook migration is just the implementation of the plan you have created.
 
-In this section you will perform the necessary steps for the Chromebook device migration. You will perform the migration based on the planning decision that you made in the [Plan Chromebook migration](#plan_migration) section earlier in this guide.
+In this section you will perform the necessary steps for the Chromebook device migration. You will perform the migration based on the planning decision that you made in the [Plan Chromebook migration](#plan-migration) section earlier in this guide.
 
 You must perform some of the steps in this section in a specific sequence. Each section has guidance about when to perform a step. You can perform other steps before, during, or after the migration. Again, each section will tell you if the sequence is important.
 
-## Perform network infrastructure remediation
+## <a href="" id="network-infra-remediation"></a>Perform network infrastructure remediation
 
 
-The first migration task is to perform any network infrastructure remediation. In the [Plan network infrastructure remediation](#plan_network_infra_remediation) section, you determined the network infrastructure remediation (if any) that you needed to perform.
+The first migration task is to perform any network infrastructure remediation. In the [Plan network infrastructure remediation](#plan-network-infra-remediation) section, you determined the network infrastructure remediation (if any) that you needed to perform.
 
 It is important that you perform any network infrastructure remediation first because the remaining migration steps are dependent on the network infrastructure. Table 7 lists the Microsoft network infrastructure products and technologies and deployment resources for each.
 
@@ -718,7 +718,7 @@ If you use network infrastructure products and technologies from other vendors, 
 
 It is important that you perform AD DS and Azure AD services deployment or remediation right after you finish network infrastructure remediation. Many of the remaining migration steps are dependent on you having your identity system (AD DS or Azure AD) in place and up to necessary expectations.
 
-In the [Plan for Active Directory services](#plan_ADservices) section, you determined the AD DS and/or Azure AD deployment or remediation (if any) that needed to be performed. Table 8 list AD DS, Azure AD, and the deployment resources for both. Use the resources in this table to deploy or remediate on-premises AD DS, Azure AD, or both.
+In the [Plan for Active Directory services](#plan-adservices) section, you determined the AD DS and/or Azure AD deployment or remediation (if any) that needed to be performed. Table 8 list AD DS, Azure AD, and the deployment resources for both. Use the resources in this table to deploy or remediate on-premises AD DS, Azure AD, or both.
 
 Table 8. AD DS, Azure AD and deployment resources
 
@@ -759,7 +759,7 @@ If you decided not to migrate to AD DS or Azure AD as a part of the migration, o
 ## Prepare device, user, and app management systems
 
 
-In the [Plan device, user, and app management](#plan_userdevapp_manage) section of this guide, you selected the products and technologies that you will use to manage devices, users, and apps on Windows devices. You need to prepare your management systems prior to Windows 10 device deployment. You will use these management systems to manage the user and device settings that you selected to migrate in the [Plan for migration of user and device settings](#plan_migrate_user_device_settings) section. You need to prepare these systems prior to the migration of user and device settings.
+In the [Plan device, user, and app management](#plan-userdevapp-manage) section of this guide, you selected the products and technologies that you will use to manage devices, users, and apps on Windows devices. You need to prepare your management systems prior to Windows 10 device deployment. You will use these management systems to manage the user and device settings that you selected to migrate in the [Plan for migration of user and device settings](#plan-migrate-user-device-settings) section. You need to prepare these systems prior to the migration of user and device settings.
 
 Table 9 lists the Microsoft management systems and the deployment resources for each. Use the resources in this table to prepare (deploy or remediate) these management systems.
 
@@ -821,12 +821,12 @@ Table 9. Management systems and deployment resources
 
 If you determined that no new management system or no remediation of existing systems is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
-## Perform app migration or replacement
+## <a href="" id="perform-app-migration-or-replacement-"></a>Perform app migration or replacement
 
 
-In the [Plan for app migration or replacement](#plan_app_migrate_replace) section, you identified the apps currently in use on Chromebook devices and selected the Windows apps that will replace the Chromebook apps. You also performed app compatibility testing for web apps to ensure that web apps on the Chromebook devices would run on Microsoft Edge and Internet Explorer.
+In the [Plan for app migration or replacement](#plan-app-migrate-replace) section, you identified the apps currently in use on Chromebook devices and selected the Windows apps that will replace the Chromebook apps. You also performed app compatibility testing for web apps to ensure that web apps on the Chromebook devices would run on Microsoft Edge and Internet Explorer.
 
-In this step, you need to configure your management system to deploy the apps to the appropriate Windows users and devices. Table 10 lists the Microsoft management systems and the app deployment resources for each. Use the resources in this table to configure these management systems to deploy the apps that you selected in the [Plan for app migration or replacement](#plan_app_migrate_replace) section of this guide.
+In this step, you need to configure your management system to deploy the apps to the appropriate Windows users and devices. Table 10 lists the Microsoft management systems and the app deployment resources for each. Use the resources in this table to configure these management systems to deploy the apps that you selected in the [Plan for app migration or replacement](#plan-app-migrate-replace) section of this guide.
 
 Table 10. Management systems and app deployment resources
 
@@ -871,18 +871,18 @@ Table 10. Management systems and app deployment resources
 
 If you determined that no deployment of apps is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
-## Perform migration of user and device settings
+## <a href="" id="migrate-user-device-settings"></a>Perform migration of user and device settings
 
 
-In the [Plan for migration of user and device settings](#plan_migrate_user_device_settings) section, you determined the user and device settings that you want to migrate. You selected settings that are configured in the Google Admin Console and locally on the Chromebook device.
+In the [Plan for migration of user and device settings](#plan-migrate-user-device-settings) section, you determined the user and device settings that you want to migrate. You selected settings that are configured in the Google Admin Console and locally on the Chromebook device.
 
 Perform the user and device setting migration by using the following steps:
 
-1.  From the list of institution-wide settings that you created in the [Plan for migration of user and device settings](#plan_migrate_user_device_settings) section, configure as many as possible in your management system (such as Group Policy, Configuration Manager, or Intune).
+1.  From the list of institution-wide settings that you created in the [Plan for migration of user and device settings](#plan-migrate-user-device-settings) section, configure as many as possible in your management system (such as Group Policy, Configuration Manager, or Intune).
 
-2.  From the list of device-specific settings that you created in the [Plan for migration of user and device settings](#plan_migrate_user_device_settings) section, configure device-specific setting for higher priority settings.
+2.  From the list of device-specific settings that you created in the [Plan for migration of user and device settings](#plan-migrate-user-device-settings) section, configure device-specific setting for higher priority settings.
 
-3.  From the list of user-specific settings that you created in the [Plan for migration of user and device settings](#plan_migrate_user_device_settings) section, configure user-specific setting for higher priority settings.
+3.  From the list of user-specific settings that you created in the [Plan for migration of user and device settings](#plan-migrate-user-device-settings) section, configure user-specific setting for higher priority settings.
 
 4.  Verify that all higher-priority user and device settings have been configured in your management system.
 
@@ -891,7 +891,7 @@ If you do no want to migrate any user or device settings from the Chromebook dev
 ## Perform email migration
 
 
-In the [Plan for email migration](#plan_email_migrate) section, you identified the user mailboxes to migrate, identified the companion devices that access Google Apps Gmail, and identified the optimal timing for migration. You can perform this migration before or after you deploy the Windows devices.
+In the [Plan for email migration](#plan-email-migrate) section, you identified the user mailboxes to migrate, identified the companion devices that access Google Apps Gmail, and identified the optimal timing for migration. You can perform this migration before or after you deploy the Windows devices.
 
 Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information on how to automate the migration from Google Apps Gmail to Office 365, see [Migrate Google Apps mailboxes to Office 365](http://go.microsoft.com/fwlink/p/?LinkId=690252).
 
@@ -910,7 +910,7 @@ Alternatively, if you want to migrate to Office 365 from:
 ## Perform cloud storage migration
 
 
-In the [Plan for cloud storage migration](#plan_cloud_storage_migration) section, you identified the cloud storage services currently in use, selected the Microsoft cloud storage services that you will use, and optimized your cloud storage services migration plan. You can perform the cloud storage migration before or after you deploy the Windows devices.
+In the [Plan for cloud storage migration](#plan-cloud-storage-migration) section, you identified the cloud storage services currently in use, selected the Microsoft cloud storage services that you will use, and optimized your cloud storage services migration plan. You can perform the cloud storage migration before or after you deploy the Windows devices.
 
 Manually migrate the cloud storage migration by using the following steps:
 
@@ -929,7 +929,7 @@ There are also a number of software vendors who provide software that helps auto
 ## Perform cloud services migration
 
 
-In the [Plan for cloud services migration](#plan_cloud_services)section, you identified the cloud services currently in use, selected the cloud services that you want to migrate, prioritized the cloud services to migrate, and then selected the cloud services migration strategy. You can perform the cloud services migration before or after you deploy the Windows devices.
+In the [Plan for cloud services migration](#plan-cloud-services)section, you identified the cloud services currently in use, selected the cloud services that you want to migrate, prioritized the cloud services to migrate, and then selected the cloud services migration strategy. You can perform the cloud services migration before or after you deploy the Windows devices.
 
 Migrate the cloud services that you currently use to the Microsoft cloud services that you selected. For example, you could migrate from a collaboration website to Office 365 SharePoint. Perform the cloud services migration based on the existing cloud services and the Microsoft cloud services that you selected.
 
@@ -938,7 +938,7 @@ There are also a number of software vendors who provide software that helps auto
 ## Perform Windows device deployment
 
 
-In the [Select a Windows device deployment strategy](#select_windows_device_deploy) section, you selected how you wanted to deploy Windows 10 devices. The other migration task that you designed in the [Plan for Windows device deployment](#plan_windevice_deploy) section have already been performed. Now it's time to deploy the actual devices.
+In the [Select a Windows device deployment strategy](#select-windows-device-deploy) section, you selected how you wanted to deploy Windows 10 devices. The other migration task that you designed in the [Plan for Windows device deployment](#plan-windevice-deploy) section have already been performed. Now it's time to deploy the actual devices.
 
 For example, if you selected to deploy Windows devices by each classroom, start with the first classroom and then proceed through all of the classrooms until you’ve deployed all Windows devices.
 

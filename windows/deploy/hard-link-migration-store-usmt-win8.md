@@ -16,29 +16,29 @@ A *hard-link migration store* enables you to perform an in-place migration where
 ## In This Topic
 
 
-[When to Use a Hard-Link Migration](#BKMK_When)
+[When to Use a Hard-Link Migration](#bkmk-when)
 
-[Understanding a Hard-Link Migration](#BKMK_UnderstandHardlinkMig)
+[Understanding a Hard-Link Migration](#bkmk-understandhardlinkmig)
 
-[Scenario](#BKMK_Scenario)
+[Scenario](#bkmk-scenario)
 
-[Hard-Link Migration Store Details](#BKMK_HardLinkStoreDetails)
+[Hard-Link Migration Store Details](#bkmk-hardlinkstoredetails)
 
-[Hard Disk Space](#BKMK_HardDiskSpace)
+[Hard Disk Space](#bkmk-harddiskspace)
 
-[Hard-Link Store Size Estimation](#BKMK_HardLinkStoreSizeEst)
+[Hard-Link Store Size Estimation](#bkmk-hardlinkstoresizeest)
 
-[Migration Store Path on Multiple Volumes](#BKMK_MigStoreMultVolumes)
+[Migration Store Path on Multiple Volumes](#bkmk-migstoremultvolumes)
 
-[Location Modifications](#BKMK_LocationModify)
+[Location Modifications](#bkmk-locationmodify)
 
-[Migrating Encrypting File System (EFS) Certificates and Files](#BKMK_EFS)
+[Migrating Encrypting File System (EFS) Certificates and Files](#bkmk-efs)
 
-[Migrating Locked Files With the Hard-Link Migration Store](#BKMK_MigLockedFiles)
+[Migrating Locked Files With the Hard-Link Migration Store](#bkmk-miglockedfiles)
 
-[XML Elements in the Config.xml File](#BKMK_XMLElementsinConfig)
+[XML Elements in the Config.xml File](#bkmk-xmlelementsinconfig)
 
-## When to Use a Hard-Link Migration
+## <a href="" id="bkmk-when"></a>When to Use a Hard-Link Migration
 
 
 You can use a hard-link migration store when your planned migration meets both of the following criteria:
@@ -55,7 +55,7 @@ You cannot use a hard-link migration store if your planned migration includes an
 
 -   You are formatting or repartitioning the disk outside of Windows Setup, or specifying a disk format or repartition during Windows Setup that will remove the migration store.
 
-## Understanding a Hard-Link Migration
+## <a href="" id="bkmk-understandhardlinkmig"></a>Understanding a Hard-Link Migration
 
 
 The hard-link migration store is created using the command-line option, **/hardlink**, and is equivalent to other migration-store types. However, it differs in that hard links are utilized to keep files stored on the source computer during the migration. Keeping the files in place on the source computer eliminates the redundant work of duplicating files. It also enables the performance benefits and reduction in disk utilization that define this scenario.
@@ -91,7 +91,7 @@ The read-only file attribute on migrated files is lost when the hard-link migrat
 
  
 
-## Hard-Link Migration Scenario
+## <a href="" id="bkmk-scenario"></a>Hard-Link Migration Scenario
 
 
 For example, a company has decided to deploy Windows 10 on all of their computers. Each employee will keep the same computer, but the operating system on each computer will be updated.
@@ -107,20 +107,20 @@ For example, a company has decided to deploy Windows 10 on all of their compute
 
 3.  An administrator runs the LoadState command-line tool on each computer. The LoadState tool restores user state back on each computer.
 
-## Hard-Link Migration Store Details
+## <a href="" id="bkmk-hardlinkstoredetails"></a>Hard-Link Migration Store Details
 
 
 This section provides details about hard-link migration stores.
 
-### Hard Disk Space
+### <a href="" id="bkmk-harddiskspace"></a>Hard Disk Space
 
 The **/hardlink** command-line option proceeds with creating the migration store only if there is 250 megabytes (MB) of free space on the hard disk. Provided that every volume involved in the migration is formatted as NTFS, 250 MB should be enough space to ensure success for almost every hard-link migration, regardless on the size of the migration.
 
-### Hard-Link Store Size Estimation
+### <a href="" id="bkmk-hardlinkstoresizeest"></a>Hard-Link Store Size Estimation
 
 It is not necessary to estimate the size of a hard-link migration store. Estimating the size of a migration store is only useful in scenarios where the migration store is very large, and on NTFS volumes the hard-link migration store will require much less incremental space than other store options. The only case where the local store can be quite large is when non-NTFS file systems exist on the system and contain data being migrated. Since NTFS has been the default file system format for Windows XP and newer operating systems, this situation is unusual.
 
-### Migration Store Path on Multiple Volumes
+### <a href="" id="bkmk-migstoremultvolumes"></a>Migration Store Path on Multiple Volumes
 
 Separate hard-link migration stores are created on each NTFS volume that contain data being migrated. In this scenario, the primary migration-store location will be specified on the command line, and should be the operating-system volume. Migration stores with identical names and directory names will be created on every volume containing data being migrated. For example:
 
@@ -134,11 +134,11 @@ D:\\USMTMIG\\
 
 The drive you specify on the command line for the hard-link migration store is important, because it defines where the *master migration store* should be placed. The *master migration store* is the location where data migrating from non-NTFS volumes is stored. This volume must have enough space to contain all of the data that comes from non-NTFS volumes. As in other scenarios, if a migration store already exists at the specified path, the **/o** option must be used to overwrite the existing data in the store.
 
-### Location Modifications
+### <a href="" id="bkmk-locationmodify"></a>Location Modifications
 
 Location modifications that redirect migrated content from one volume to a different volume have an adverse impact on the performance of a hard-link migration. This is because the migrating data that must cross system volumes cannot remain in the hard-link migration store, and must be copied across the system volumes.
 
-### Migrating Encrypting File System (EFS) Certificates and Files
+### <a href="" id="bkmk-efs"></a>Migrating Encrypting File System (EFS) Certificates and Files
 
 To migrate Encrypting File System (EFS) files to a new installation of an operating system on the same volume of the computer, specify the **/efs:hardlink** option in the Scanstate command-line syntax.
 
@@ -146,7 +146,7 @@ If the EFS files are being restored to a different partition, you should use the
 
 For more information, see [Migrate EFS Files and Certificates](migrate-efs-files-and-certificates-umst.md) and the Encrypted File Options in [ScanState Syntax](scanstate-syntax-usmt-win7-usmt-win8.md).
 
-### Migrating Locked Files with the Hard-Link Migration Store
+### <a href="" id="bkmk-miglockedfiles"></a>Migrating Locked Files with the Hard-Link Migration Store
 
 Files that are locked by an application or the operating system are handled differently when using a hard-link migration store.
 
@@ -159,7 +159,7 @@ There are some scenarios in which modifying the **&lt;HardLinkStoreControl&gt;**
 
  
 
-## XML Elements in the Config.xml File
+## <a href="" id="bkmk-xmlelementsinconfig"></a>XML Elements in the Config.xml File
 
 
 A new section in the Config.xml file allows optional configuration of some of the hard-link migration behavior introduced with the **/HardLink** option.

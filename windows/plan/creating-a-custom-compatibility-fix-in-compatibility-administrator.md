@@ -22,10 +22,10 @@ author: TrudyHa
 
 **In this article**
 
--   [What is a Compatibility Fix?](#what_is_a_compatibility_fix_)
--   [Searching for Existing Compatibility Fixes](#searching_for_existing_compatibility_fixes)
--   [Creating a New Compatibility Fix](#creating_a_new_compatibility_fix)
--   [Related topics](#related_topics)
+-   [What is a Compatibility Fix?](#what-is-a-compatibility-fix-)
+-   [Searching for Existing Compatibility Fixes](#searching-for-existing-compatibility-fixes)
+-   [Creating a New Compatibility Fix](#creating-a-new-compatibility-fix)
+-   [Related topics](#related-topics)
 
 The Compatibility Administrator tool uses the term *fix* to describe the combination of compatibility information added to a customized database for a specific application. This combination can include single application fixes, groups of fixes that work together as a compatibility mode, and blocking and non-blocking AppHelp messages.
 

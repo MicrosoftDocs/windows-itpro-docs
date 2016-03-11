@@ -21,16 +21,16 @@ When you want to add an unsigned app to a code integrity policy, you need to sta
 ## In this section
 
 
--   [Create a code integrity policy based on a reference device](#create_ci_policy)
--   [Create catalog files for your unsigned app](#create_catalog_files)
--   [Catalog signing with Device Guard signing portal](#catalog_signing_device_guard_portal)
+-   [Create a code integrity policy based on a reference device](#create-ci-policy)
+-   [Create catalog files for your unsigned app](#create-catalog-files)
+-   [Catalog signing with Device Guard signing portal](#catalog-signing-device-guard-portal)
 
-## Create a code integrity policy based on a reference device
+## <a href="" id="create-ci-policy"></a>Create a code integrity policy based on a reference device
 
 
 To add an unsigned app to a code integrity policy, your code integrity policy must be created from golden image machine. For more information, see [Create a Device Guard code integrity policy based on a reference device](https://technet.microsoft.com/library/mt243445.aspx).
 
-## Create catalog files for your unsigned app
+## <a href="" id="create-catalog-files"></a>Create catalog files for your unsigned app
 
 
 Creating catalog files starts the process for adding an unsigned app to a code integrity policy.
@@ -47,7 +47,7 @@ Before you get started, be sure to review these best practices and requirements:
 
 -   **Naming convention** -- Using a naming convention makes it easier to find deployed catalog files. We'll use \*-Contoso.cat as the naming convention in this topic. For more information, see the section Inventorying catalog files by using Configuration Manager in the [Device Guard deployment guide](https://technet.microsoft.com/library/mt463091.aspx).
 
--   **Where to deploy code integrity policy** -- The [code integrity policy that you created](#create_ci_policy) should be deployed to the system on which you are running Package Inspector. This will ensure that the code integrity policy binaries are trusted.
+-   **Where to deploy code integrity policy** -- The [code integrity policy that you created](#create-ci-policy) should be deployed to the system on which you are running Package Inspector. This will ensure that the code integrity policy binaries are trusted.
 
 Copy the commands for each step into an elevated Windows PowerShell session. You'll use Package Inspector to find and trust all binaries in the app.
 
@@ -81,7 +81,7 @@ The Package Inspector scan catalogs the hash values for each binary file that is
 
 After you're done, the files are saved to your desktop. You still need to sign the catalog file so that it will be trusted within the code integrity policy.
 
-## Catalog signing with Device Guard signing portal
+## <a href="" id="catalog-signing-device-guard-portal"></a>Catalog signing with Device Guard signing portal
 
 
 To sign catalog files with the Device Guard signing portal, you need to be signed up with the Windows Store for Business. For more information, see [Sign up for the Windows Store for Business](sign-up-for-windows-store-for-business.md).
@@ -94,7 +94,7 @@ Catalog signing is a vital step to adding your unsigned apps to your code integr
 
 2.  Click **Settings**, and then choose **Device Guard signing**.
 
-3.  Click **Upload** to upload your unsigned catalog files. These are the catalog files you created earlier in [Create catalog files for your unsigned app](#create_catalog_files).
+3.  Click **Upload** to upload your unsigned catalog files. These are the catalog files you created earlier in [Create catalog files for your unsigned app](#create-catalog-files).
 
 4.  After the files are uploaded, click **Sign** to sign the catalog files.
 

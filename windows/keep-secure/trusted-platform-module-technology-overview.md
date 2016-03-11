@@ -17,7 +17,7 @@ author: brianlic-msft
 
 This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication. The topic provides links to other resources about the TPM.
 
-## Feature description
+## <a href="" id="bkmk-over"></a>Feature description
 
 
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Some of the key advantages of using TPM technology are that you can:
@@ -36,7 +36,7 @@ Different versions of the TPM are defined in specifications by the Trusted Compu
 
 Windows can automatically provision and manage the TPM. Group Policy settings can be configured to control whether the TPM owner authorization value is backed up in Active Directory. Because the TPM state persists across operating system installations, TPM information is stored in a location in Active Directory that is separate from computer objects. Depending on an enterprise’s security goals, Group Policy can be configured to allow or prevent local administrators from resetting the TPM’s dictionary attack logic. Standard users can use the TPM, but Group Policy controls limit how many authorization failures standard users can attempt so that one user is unable to prevent other users or the administrator from using the TPM. TPM technology can also be used as a virtual smart card and for secure certificate storage. With BitLocker Network Unlock, domain-joined computers are not prompted for a BitLocker PIN.
 
-## Practical applications
+## <a href="" id="bkmk-app"></a>Practical applications
 
 
 Certificates can be installed or created on computers that are using the TPM. After a computer is provisioned, the RSA private key for a certificate is bound to the TPM and cannot be exported. The TPM can also be used as a replacement for smart cards, which reduces the costs associated with creating and disbursing smart cards.
@@ -47,12 +47,12 @@ Antimalware software can use the boot measurements of the operating system start
 
 The TPM has several Group Policy settings that can be used to manage how it is used. These settings can be used to manage the owner authorization value, the blocked TPM commands, the standard user lockout, and the backup of the TPM to AD DS. For more info, see [Trusted Platform Module Services Group Policy Settings](trusted-platform-module-services-group-policy-settings.md).
 
-## New and changed functionality
+## <a href="" id="bkmk-new"></a>New and changed functionality
 
 
 For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](../whats-new/trusted-platform-module.md).
 
-## Device health attestation
+## <a href="" id="bkmk-dha"></a>Device health attestation
 
 
 Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device heath attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
@@ -67,7 +67,7 @@ Some things that you can check on the device are:
 
  
 
-## Supported versions
+## <a href="" id="bkmk-supportedversions"></a>Supported versions
 
 
 <table>
@@ -107,7 +107,7 @@ Some things that you can check on the device are:
 
  
 
-## Additional Resources
+## <a href="" id="bkmk-additionalresources"></a>Additional Resources
 
 
 [TPM Fundamentals](tpm-fundamentals-windows-8.md)

@@ -16,13 +16,13 @@ By default, all users are migrated. The only way to specify which users to inclu
 ## In this Topic
 
 
--   [To migrate all user accounts and user settings](#BKMK_MigrateAll)
+-   [To migrate all user accounts and user settings](#bkmk-migrateall)
 
--   [To migrate two domain accounts (User1 and User2)](#BKMK_MigrateTwo)
+-   [To migrate two domain accounts (User1 and User2)](#bkmk-migratetwo)
 
--   [To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain](#BKMK_MigrateMoveUserOne)
+-   [To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain](#bkmk-migratemoveuserone)
 
-## To migrate all user accounts and user settings
+## <a href="" id="bkmk-migrateall"></a>To migrate all user accounts and user settings
 
 
 1.  Log on to the source computer as an administrator, and specify the following in a **Command-Prompt** window:
@@ -46,7 +46,7 @@ By default, all users are migrated. The only way to specify which users to inclu
 
          
 
-## To migrate two domain accounts (User1 and User2)
+## <a href="" id="bkmk-migratetwo"></a>To migrate two domain accounts (User1 and User2)
 
 
 1.  Log on to the source computer as an administrator, and specify:
@@ -59,7 +59,7 @@ By default, all users are migrated. The only way to specify which users to inclu
 
     `loadstate \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml`
 
-## To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain
+## <a href="" id="bkmk-migratemoveuserone"></a>To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain
 
 
 1.  Log on to the source computer as an administrator, and type the following at the command-line prompt:

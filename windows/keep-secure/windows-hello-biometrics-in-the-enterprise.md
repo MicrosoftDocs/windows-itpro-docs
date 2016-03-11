@@ -20,14 +20,14 @@ Windows Hello is the biometric authentication feature that helps strengthen auth
 
 Because we realize your employees are going to want to use this new technology in your enterprise, we’ve been actively working with the device manufacturers to create strict design and performance recommendations that help to ensure that you can more confidently introduce Windows Hello biometrics into your organization.
 
-##  How does Windows Hello work?
+## <a href="" id="how-hello-works"></a> How does Windows Hello work?
 
 
 Windows Hello lets your employees use fingerprint or facial recognition as an alternative method to unlocking a device. With Windows Hello, authentication happens when the employee provides his or her unique biometric identifier while accessing the device-specific Microsoft Passport credentials.
 
 The Windows Hello authenticator works with Microsoft Passport to authenticate and allow employees onto your enterprise network. Authentication doesn’t roam among devices, isn’t shared with a server, and can’t easily be extracted from a device. If multiple employees share a device, each employee will use his or her own biometric data on the device.
 
-## Why should I let my employees use Windows Hello?
+## <a href="" id="why-use-hello"></a>Why should I let my employees use Windows Hello?
 
 
 Windows Hello provides many benefits, including:
@@ -40,12 +40,12 @@ Windows Hello provides many benefits, including:
 
     For more info about the available Group Policies and MDM CSPs, see the [Implement Microsoft Passport in your organization](implement-microsoft-passport-in-your-organization.md) topic.
 
-## Where is Microsoft Hello data stored?
+## <a href="" id="where-hello-data-stored"></a>Where is Microsoft Hello data stored?
 
 
 The biometric data used to support Windows Hello is stored on the local device only. It doesn’t roam and is never sent to external devices or servers. This separation helps to stop potential attackers by providing no single collection point that an attacker could potentially compromise to steal biometric data. Additionally, even if an attacker was actually able to get the biometric data, it still can’t be easily converted to a form that could be recognized by the biometric sensor.
 
-##  Has Microsoft set any device requirements for Windows Hello?
+## <a href="" id="hello-device-reqs"></a> Has Microsoft set any device requirements for Windows Hello?
 
 
 We’ve been working with the device manufacturers to help ensure a high-level of performance and protection is met by each sensor and device, based on these requirements:
@@ -54,7 +54,7 @@ We’ve been working with the device manufacturers to help ensure a high-level o
 
 -   **False Reject Rate (FRR).** Represents the instances a biometric identification solution fails to verify an authorized person correctly. Usually represented as a percentage, the sum of the True Accept Rate and False Reject Rate is 1. Can be with or without anti-spoofing or liveness detection.
 
-### Fingerprint sensor requirements
+### <a href="" id="fingerprint-sensor-reqs"></a>Fingerprint sensor requirements
 
 To allow fingerprint matching, you must have devices with fingerprint sensors and software. Fingerprint sensors, or sensors that use an employee’s unique fingerprint as an alternative log on option, can be touch sensors (large area or small area) or swipe sensors. Each type of sensor has its own set of detailed requirements that must be implemented by the manufacturer, but all of the sensors must include anti-spoofing measures (required) and a way to configure them (optional).
 
@@ -74,7 +74,7 @@ To allow fingerprint matching, you must have devices with fingerprint sensors an
 
 -   Effective, real world FRR with Anti-spoofing or liveness detection: &lt;10%
 
-### Facial recognition sensors
+### <a href="" id="facial-sensor-reqs"></a>Facial recognition sensors
 
 To allow facial recognition, you must have devices with integrated special infrared (IR) sensors and software. Facial recognition sensors use special cameras that see in IR light, letting them tell the difference between a photo and a living person while scanning an employee’s facial features. These sensors, like the fingerprint sensors, must also include anti-spoofing measures (required) and a way to configure them (optional).
 

@@ -20,11 +20,11 @@ author: jdeckerMS
 **In this article**
 
 -   [Advantages](#advantages)
--   [Typical use cases](#typical_use_cases)
--   [Create package](#create_package)
--   [Apply package](#apply_package)
--   [Manage a package](#manage_a_package)
--   [Learn more](#learn_more)
+-   [Typical use cases](#typical-use-cases)
+-   [Create package](#create-package)
+-   [Apply package](#apply-package)
+-   [Manage a package](#manage-a-package)
+-   [Learn more](#learn-more)
 
 Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise.
 

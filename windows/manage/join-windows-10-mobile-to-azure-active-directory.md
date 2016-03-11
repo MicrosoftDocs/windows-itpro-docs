@@ -17,14 +17,14 @@ author: jdeckerMS
 
 **In this article**
 
--   [Why join Windows 10 Mobile to Azure AD](#why_join_windows_10_mobile_to_azure_ad)
--   [Are you upgrading current devices to Windows 10 Mobile?](#BKMK_upgrade)
--   [The difference between "add work account" and "join Azure AD"](#add_work_account)
--   [Preparing for Windows 10 Mobile](#preparing_for_windows_10_mobile)
--   [How to join Windows 10 Mobile to Azure AD](#how_to_join_windows_10_mobile_to_azure_ad)
--   [Set up mail and calendar](#set_up_mail_and_calendar)
--   [Use Office and OneDrive apps](#use_office_and_onedrive_apps)
--   [Use Windows Store for Business](#use_windows_store_for_business)
+-   [Why join Windows 10 Mobile to Azure AD](#why-join-windows-10-mobile-to-azure-ad)
+-   [Are you upgrading current devices to Windows 10 Mobile?](#bkmk-upgrade)
+-   [The difference between "Add work account" and "Azure AD Join"](#add-work-account)
+-   [Preparing for Windows 10 Mobile](#preparing-for-windows-10-mobile)
+-   [How to join Windows 10 Mobile to Azure AD](#how-to-join-windows-10-mobile-to-azure-ad)
+-   [Set up mail and calendar](#set-up-mail-and-calendar)
+-   [Use Office and OneDrive apps](#use-office-and-onedrive-apps)
+-   [Use Windows Store for Business](#use-windows-store-for-business)
 
 Devices running Windows 10 Mobile can join Azure Active Directory (Azure AD) when the device is configured during the out-of-box experience (OOBE). This article describes the considerations and options for using Windows 10 Mobile with Azure AD in your organization.
 
@@ -35,7 +35,7 @@ When a device running Windows 10 Mobile is joined to Azure AD, the device can e
 
 -   Single sign-on (SSO) in applications like Mail, Word, and OneDrive using resources backed by Azure AD.
 
--   SSO in Edge browser to Azure AD-connected web applications like Office 365 Portal, Visual Studio, and more than [2500 non-Microsoft apps](http://go.microsoft.com/fwlink/p/?LinkID=746211).
+-   SSO in Microsoft Edge browser to Azure AD-connected web applications like Office 365 Portal, Visual Studio, and more than [2500 non-Microsoft apps](http://go.microsoft.com/fwlink/p/?LinkID=746211).
 
 -   SSO to resources on-premises.
 
@@ -45,7 +45,7 @@ When a device running Windows 10 Mobile is joined to Azure AD, the device can e
 
 -   Use Windows Store for Business to target applications to users.
 
-## Are you upgrading current devices to Windows 10 Mobile?
+## <a href="" id="bkmk-upgrade"></a>Are you upgrading current devices to Windows 10 Mobile?
 
 
 Windows Phone 8.1 only supported the ability to connect the device to personal cloud services using a Microsoft account for authentication. This required creating Microsoft accounts to be used for work purposes. In Windows 10 Mobile, you have the ability to join devices directly to Azure AD without requiring a personal Microsoft account.
@@ -54,16 +54,22 @@ If you have existing Windows Phone 8.1 devices, the first thing to understand is
 
 Before upgrading and joining devices to Azure AD, you will want to consider existing data usage. How users are using the existing devices and what data is stored locally will vary for every customer. Are text messages used for work purposes and need to be backed up and available after the upgrade? Are there photos stored locally or stored associated with an Microsoft account? Are there device and app settings that to be retained? Are there contacts stored in the SIM or associated with an Microsoft account? You will need to explore methods for capturing and storing the data that needs to be retained before you join the devices to Azure AD. Photos, music files, and documents stored locally on the device can be copied from the device using a USB connection to a PC.
 
-To join upgraded mobile devices to Azure AD, [the devices must be reset](reset-a-windows-10-mobile-device.md) to start the out-of-box experience for device setup. When the device is joined to Azure AD, the account used for authentication changes from the Microsoft account to an Azure AD account and this is not a change that can be done while maintaining all existing user data. This is similar to changing a device from personally owned to organizationally owned. When a user joins an organization’s domain, the user is then required to log in as the domain user and start with a fresh user profile. A new user profile means there would not be any persisted settings, apps, or data from the previous personal profile.
+To join upgraded mobile devices to Azure AD, [the devices must be reset](reset-a-windows-10-mobile-device.md) to start the out-of-box experience for device setup. Joining a device to Azure AD is not a change that can be done while maintaining existing user data. This is similar to changing a device from personally owned to organizationally owned. When a user joins an organization’s domain, the user is then required to log in as the domain user and start with a fresh user profile. A new user profile means there would not be any persisted settings, apps, or data from the previous personal profile.
 
-If you want to avoid the device reset process, consider [adding work accounts](#add_work_account) rather than joining the devices to Azure AD.
+If you want to avoid the device reset process, consider [adding work accounts](#add-work-account) rather than joining the devices to Azure AD.
 
-## The difference between "add work account" and "join Azure AD"
+## <a href="" id="add-work-account"></a>The difference between "Add work account" and "Azure AD Join"
 
 
-You can add access to Azure AD-backed resources on the device without resetting the device. However, this method does not provide SSO in the Windows Store and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](http://go.microsoft.com/fwlink/p/?LinkId=734996)
+Even though Azure AD Join on Windows 10 Mobile provides the best overall experience, there are two ways that you can use an added work account instead of joining the device to Azure AD due to organizational requirements.
 
-Using **Settings** &gt; **Accounts** &gt; **Your email and accounts** &gt; **Add work or school account**, users can add their Azure AD account to the device, keeping their Microsoft account as the primary account. If you [enable auto-enrollment in your MDM settings](http://go.microsoft.com/fwlink/p/?LinkID=691615), the device will automatically be enrolled in MDM.
+-   You can complete OOBE using the **Sign in later** option. This lets you start using Windows 10 Mobile with any connected Azure AD account or Microsoft account.
+
+-   You can add access to Azure AD-backed resources on the device without resetting the device.
+
+However, neither of these methods provides SSO in the Windows Store and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](http://go.microsoft.com/fwlink/p/?LinkId=734996)
+
+Using **Settings** &gt; **Accounts** &gt; **Your email and accounts** &gt; **Add work or school account**, users can add their Azure AD account to the device. Alternatively, a work account can be added when the user signs in to an application like Mail, Word, etc. If you [enable auto-enrollment in your MDM settings](http://go.microsoft.com/fwlink/p/?LinkID=691615), the device will automatically be enrolled in MDM.
 
 An added work account provides the same SSO experience in browser apps like Office 365 (Office portal, Outlook Web Access, Calendar, People, OneDrive), Azure AD profile and change password app, and Visual Studio. You get SSO to built-in applications like Mail, Calendar, People, OneDrive and files hosted on OneDrive without prompts for a password. In Office apps like Microsoft Word, Microsoft Excel, etc., you simply select the Azure AD account and you are able to open files without entering a password.
 
@@ -72,13 +78,13 @@ An added work account provides the same SSO experience in browser apps like Offi
 
 -   **Azure AD configuration**
 
-    Currently, Azure AD join only supports self-provisioning, meaning the credentials of the user of the device must be used during the initial setup of the device. If your mobile operator prepares devices on your behalf, this will impact your ability to join the device to Azure AD.
+    Currently, Azure AD Join only supports self-provisioning, meaning the credentials of the user of the device must be used during the initial setup of the device. If your mobile operator prepares devices on your behalf, this will impact your ability to join the device to Azure AD. Many IT administrators may start with a desire to set up devices for their employees, but the Azure AD Join experience is optimized for end-users, including the option for automatic MDM enrollment.
 
     By default, Azure AD is set up to allow devices to join and to allow users to use their corporate credentials on organizational-owned devices or personal devices. The blog post [Azure AD Join on Windows 10 devices](http://go.microsoft.com/fwlink/p/?LinkID=616791) has more information on where you can review your Azure AD settings. You can configure Azure AD to not allow anyone to join, to allow everyone in your organization to join, or you can select specific Azure AD groups which are allowed to join.
 
 -   **Device setup**
 
-    A device running Windows 10 Mobile can only join Azure AD during OOBE. New devices from mobile operators will be in this state when they are received. Windows Phone 8.1 devices that are [upgraded](#BKMK_upgrade) to Windows 10 Mobile will need to be reset to get back to OOBE for device setup.
+    A device running Windows 10 Mobile can only join Azure AD during OOBE. New devices from mobile operators will be in this state when they are received. Windows Phone 8.1 devices that are [upgraded](#bkmk-upgrade) to Windows 10 Mobile will need to be reset to get back to OOBE for device setup.
 
 -   **Mobile device management**
 
@@ -163,11 +169,21 @@ Return to **Settings** &gt; **Accounts** &gt; **Your email and accounts**, and y
 
 Office applications like Microsoft Word and Microsoft PowerPoint will automatically sign you in with your Azure AD account. When you open an Office app, you see a screen that allows you to choose between a Microsoft account and Azure AD account. Office shows this screen while it is automatically signing you in, so just be patient for a couple seconds and Office will automatically sign you in using your Azure AD account.
 
-Microsoft Word automatically shows the documents recently opened on other devices. Opening a document allows you to jump straight to the same section you were last editing on another device. Microsoft PowerPoint shows your recently opened slide decks.
+Microsoft Word automatically shows the documents recently opened on other devices. Opening a document allows you to jump straight to the same section you were last editing on another device.
+
+![word](images/aadjword.jpg)
+
+Microsoft PowerPoint shows your recently opened slide decks.
+
+![powerpoint](images/aadjppt.jpg)
 
 The OneDrive application also uses SSO, showing you all your documents and enabling you to open them without any authentication experience.
 
+![onedrive](images/aadjonedrive.jpg)
+
 In addition to application SSO, Azure AD joined devices also get SSO for browser applications which trust Azure AD, such as web applications, Visual Studio, Office 365 portal, and OneDrive for Business.
+
+![browser apps](images/aadjbrowser.jpg)
 
 OneNote requires a Microsoft account, but you can use it with your Azure AD account as well.
 

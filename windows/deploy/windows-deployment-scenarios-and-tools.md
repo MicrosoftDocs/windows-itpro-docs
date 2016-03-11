@@ -23,7 +23,7 @@ author: CFaw
 -   [Internet Explorer Administration Kit 11](#sec12)
 -   [Windows Server Update Services](#sec13)
 -   [Unified Extensible Firmware Interface](#sec14)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.
 
@@ -31,7 +31,7 @@ Microsoft provides many tools, services, and solutions. These tools include Wind
 
 In this topic, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
 
-## Windows Assessment and Deployment Kit
+## <a href="" id="sec06"></a>Windows Assessment and Deployment Kit
 
 
 Windows ADK contains core assessment and deployment tools and technologies, including Deployment Image Servicing and Management (DISM), Windows Imaging and Configuration Designer (Windows ICD), Windows System Image Manager (Windows SIM), User State Migration Tool (USMT), Volume Activation Management Tool (VAMT), Windows Preinstallation Environment (Windows PE), Windows Assessment Services, Windows Performance Toolkit (WPT), Application Compatibility Toolkit (ACT), and Microsoft SQL Server 2012 Express. For more details, see [Windows ADK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526803  ) or [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
@@ -159,7 +159,7 @@ Figure 7. A machine booted with the Windows ADK default Windows PE boot image.
 
 For more details on Windows PE, see [Windows PE (WinPE)](http://go.microsoft.com/fwlink/p/?LinkId=619233).
 
-## Windows Recovery Environment
+## <a href="" id="sec07"></a>Windows Recovery Environment
 
 
 Windows Recovery Environment (Windows RE) is a diagnostics and recovery toolset included in Windows Vista and later operating systems. The latest version of Windows RE is based on Windows PE. You can also extend Windows RE and add your own tools if needed. If a Windows installation fails to start and Windows RE is installed, you will see an automatic failover into Windows RE.
@@ -170,7 +170,7 @@ Figure 8. A Windows 10 client booted into Windows RE, showing Advanced options.
 
 For more information on Windows RE, see [Windows Recovery Environment](http://go.microsoft.com/fwlink/p/?LinkId=619236).
 
-## Windows Deployment Services
+## <a href="" id="sec08"></a>Windows Deployment Services
 
 
 Windows Deployment Services (WDS) has been updated and improved in several ways starting with Windows 8. Remember that the two main functions you will use are the PXE boot support and multicast. Most of the changes are related to management and increased performance. In Windows Server 2012 R2, WDS also can be used for the Network Unlock feature in BitLocker.
@@ -197,7 +197,7 @@ Also, there are a few new features related to TFTP performance:
 
 Figure 10. TFTP changes are now easy to perform.
 
-## Microsoft Deployment Toolkit 2013 Update 1
+## <a href="" id="sec09"></a>Microsoft Deployment Toolkit 2013 Update 1
 
 
 MDT 2013 Update 1 is a free deployment solution from Microsoft. It provides end-to-end guidance, best practices, and tools for planning, building, and deploying Windows operating systems. MDT builds on top of the core deployment tools in the Windows ADK by contributing guidance, reducing complexity, and adding critical features for an enterprise-ready deployment solution.
@@ -215,7 +215,7 @@ Figure 11. The Deployment Workbench in MDT 2013, showing a task sequence.
 
 For more information on MDT 2013 Update 1, see the [Microsoft Deployment Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=618117) resource center.
 
-## Microsoft Security Compliance Manager 2013
+## <a href="" id="sec10"></a>Microsoft Security Compliance Manager 2013
 
 
 [Microsoft SCM](http://go.microsoft.com/fwlink/p/?LinkId=619246) is a free utility used to create baseline security settings for the Windows client and server environment. The baselines can be exported and then deployed via Group Policy, local policies, MDT, or Configuration Manager. The current version of Security Compliance Manager includes baselines for Windows 8.1 and several earlier versions of Windows, Windows Server, and Internet Explorer.
@@ -224,7 +224,7 @@ For more information on MDT 2013 Update 1, see the [Microsoft Deployment Toolkit
 
 Figure 12. The SCM console showing a baseline configuration for a fictional client's computer security compliance.
 
-## Microsoft Desktop Optimization Pack
+## <a href="" id="sec11"></a>Microsoft Desktop Optimization Pack
 
 
 MDOP is a suite of technologies available to Software Assurance customers through an additional subscription.
@@ -243,7 +243,7 @@ The following components are included in the MDOP suite:
 
 For more information on the benefits of an MDOP subscription, see [Microsoft Desktop Optimization Pack](http://go.microsoft.com/fwlink/p/?LinkId=619247).
 
-## Internet Explorer Administration Kit 11
+## <a href="" id="sec12"></a>Internet Explorer Administration Kit 11
 
 
 There has been a version of IEAK for every version of Internet Explorer since 3.0. It gives you the capability to customize Internet Explorer as you would like. The end result of using IEAK is an Internet Explorer package that can be deployed unattended. The wizard creates one .exe file and one .msi file.
@@ -254,7 +254,7 @@ Figure 13. The User Experience selection screen in IEAK 11.
 
 To download IEAK 11, see the [Internet Explorer Administration Kit (IEAK) Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=619248) page.
 
-## Windows Server Update Services
+## <a href="" id="sec13"></a>Windows Server Update Services
 
 
 WSUS is a server role in Windows Server 2012 R2 that enables you to maintain a local repository of Microsoft updates and then distribute them to machines on your network. WSUS offers approval control and reporting of update status in your environment.
@@ -265,7 +265,7 @@ Figure 14. The Windows Server Update Services console.
 
 For more information on WSUS, see the [Windows Server Update Services Overview](http://go.microsoft.com/fwlink/p/?LinkId=619249).
 
-## Unified Extensible Firmware Interface
+## <a href="" id="sec14"></a>Unified Extensible Firmware Interface
 
 
 For many years BIOS has been the industry standard for booting a PC. BIOS has served us well, but it is time to replace it with something better. **UEFI** is the replacement for BIOS, so it is important to understand the differences between BIOS and UEFI. In this section, you learn the major differences between the two and how they affect operating system deployment.

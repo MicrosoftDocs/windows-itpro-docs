@@ -19,11 +19,11 @@ author: brianlic-msft
 **In this article**
 
 -   [Overview](#overview)
--   [Identity and access control](#identity_and_access_control)
--   [Data protection](#data_protection)
--   [Malware resistance](#malware_resistance)
--   [App platform security](#app_platform_security__)
--   [Related topics](#related_topics)
+-   [Identity and access control](#identity-and-access-control)
+-   [Data protection](#data-protection)
+-   [Malware resistance](#malware-resistance)
+-   [App platform security](#app-platform-security--)
+-   [Related topics](#related-topics)
 
 This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
 
@@ -200,7 +200,7 @@ Table 2. Windows 10 cryptography policies
 
 For a complete list of policies available, see [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkId=733963).
 
-### Enterprise data protection
+### <a href="" id="enterprise-data-protection--"></a>Enterprise data protection
 
 Enterprises have seen huge growth in the convergence of personal and corporate data storage. Personal data is frequently stored on corporate devices and vice versa. This situation increases the potential for compromise of sensitive corporate data.
 
@@ -223,7 +223,7 @@ EDP is currently being tested in select customer evaluation programs. For more i
 
  
 
-### Enlightenment
+### <a href="" id="enlightenment--"></a>Enlightenment
 
 Third-party data loss protection solutions usually require developers to wrap their apps. In contrast, EDP puts the intelligence in Windows 10 Mobile so that it doesn’t require wrappers. As a result, most apps require nothing extra to work with EDP.
 
@@ -353,11 +353,11 @@ Windows 10 Mobile devices use a System on a Chip (SoC) design provided by SoC v
 
 The following sections describe these improvements in more detail.
 
-### Enterprise-grade secure hardware
+### <a href="" id="secure-hardware"></a>Enterprise-grade secure hardware
 
 Taking full advantage of Windows 10 Mobile security features requires advancements in hardware-based security. These advances include UEFI with Secure Boot, TPM, and biometric sensors (hardware dependent).
 
-### UEFI with Secure Boot
+### <a href="" id="uefi-with-secure-boot--"></a>UEFI with Secure Boot
 
 When a Windows 10 Mobile device starts, it begins the process of loading the operating system by locating the bootloader in the device’s storage system. Without safeguards in place, the phone might simply hand control over to the bootloader without even determining whether it’s a trusted operating system or malware.
 
@@ -371,7 +371,7 @@ All Windows 10 Mobile devices always have Secure Boot enabled. In addition, the
 
 Neither Windows 10 Mobile, apps, or even malware can change the UEFI configuration. For more information about UEFI with Secure Boot, read [Protecting the pre-OS environment with UEFI](http://go.microsoft.com/fwlink/p/?LinkId=722909).
 
-### Trusted Platform Module
+### <a href="" id="trusted-platform-module--"></a>Trusted Platform Module
 
 A Trusted Platform Module is a tamper-resistant cryptographic module that enhances the security and privacy of computing platforms. The TPM is incorporated as a component in a trusted computing platform like a PC, tablet, or mobile phone. A trusted computing platform is specially designed to work with the TPM to support privacy and security scenarios that software alone cannot achieve. It is a Windows 10 Mobile device hardware certification requirement to include a TPM in every Windows 10 Mobile device.
 
@@ -404,7 +404,7 @@ Several Windows 10 Mobile security features require TPM:
 
 Still other features will use the TPM if it is available. For example, Microsoft Passport does not require TPM but uses it if it’s available. Organizations can configure policy to require TPM for Microsoft Passport.
 
-### Biometrics
+### <a href="" id="biometrics--"></a>Biometrics
 
 Windows 10 Mobile makes biometrics a core security feature. Microsoft has fully integrated biometrics into the Windows 10 Mobile security components, not just tacked it on top of the platform (as was the case in previous versions of Windows). This is a big change. Earlier biometric implementations were largely front-end methods that simplified authentication. Under the hood, the system used biometrics to access a password, which it then used for authentication behind the scenes. Biometrics may have provided convenience but not necessarily enterprise-grade authentication.
 
@@ -412,17 +412,17 @@ Microsoft has been evangelizing the importance of enterprise-grade biometric sen
 
 In the future, Microsoft expects OEMs to produce even more advanced enterprise-grade biometric sensors and to continue to integrate them into mobile devices. As a result, biometrics will become a commonplace authentication method as part of an MFA system.
 
-### Enterprise-grade secure Windows startup
+### <a href="" id="enterprise-grade-secure-windows-startup--"></a>Enterprise-grade secure Windows startup
 
 UEFI with Secure Boot uses hardware technologies to help protect users from bootkits. Secure Boot can validate the integrity of the devices, firmware, and bootloader. After the bootloader launches, users must rely on the operating system to protect the integrity of the remainder of the system.
 
-### Trusted Boot
+### <a href="" id="trusted-boot--"></a>Trusted Boot
 
 When UEFI with Secure Boot verifies that it trusts the bootloader and starts Windows 10 Mobile, the Windows Trusted Boot feature protects the rest of the startup process by verifying that all Windows startup components are trustworthy (for example, signed by a trusted source) and have integrity. The bootloader verifies the digital signature of the Windows kernel before loading it. The Windows kernel, in turn, verifies every other component of the Windows startup process, including the boot drivers, and startup files.
 
 If someone has modified a file (for example, if malware has tampered with it or it has been corrupted), Trusted Boot will detect the problem and attempt to automatically repair the corrupted component. When repaired, Windows will start normally after only a brief delay.
 
-### Measured Boot
+### <a href="" id="measured-boot--"></a>Measured Boot
 
 The biggest challenge with rootkits and bootkits in earlier versions of Windows was that they could frequently be undetectable to the client. Because they often started before Windows defenses and the antimalware solution—and they had system-level privileges—rootkits and bootkits could completely disguise themselves while continuing to access system resources. Although UEFI with Secure Boot and Trusted Boot could prevent most rootkits and bootkits, intruders could still potentially exploit a few attack vectors (for example, if someone compromised the signature used to sign a boot component, such as a non-Microsoft driver, and used it to sign a malicious one).
 
@@ -430,13 +430,13 @@ Windows 10 Mobile implements the Measured Boot feature, which uses the TPM hard
 
 Measured Boot focuses on acquiring the measurement data and protecting it against tampering. You must couple it, however, with a service that can analyze the data to determine device health and provide a more complete security service. The next section introduces just such a service.
 
-### Device health attestation
+### <a href="" id="device-health-attestation--"></a>Device health attestation
 
 Device health attestation is new feature in Windows 10 Mobile that helps prevent low-level malware infections. Device health attestation uses a device’s TPM and firmware to measure the critical security properties of the device’s BIOS and Windows startup processes. These measurements are made in such a way that even on a system infected with kernel-level malware or a rootkit, an attacker is unlikely to spoof the properties.
 
 You can integrate Device health attestation with Microsoft Intune or non-Microsoft MDM solutions and combine these hardware-measured security properties with other device properties to gain an overall view of the device’s health and compliance state. From there, you can use this integration in a variety of scenarios, from detecting jailbroken devices to monitoring device compliance, generating compliance reports, alerting users or administrators, initiating corrective action on the device, and managing conditional access to resources such as Office 365.
 
-### Conditional Access
+### <a href="" id="conditional-access--"></a>Conditional Access
 
 The example that follows shows how Windows 10 protective measures integrate and work with Intune and non-Microsoft MDM solutions. It demonstrates how the phone security architecture in Windows 10 Mobile helps you monitor and verify compliance and how the security and trust rooted in the device hardware protect corporate resources end to end.
 
@@ -456,22 +456,22 @@ When a user turns on a phone:
 
 Because this solution can detect and prevent low-level malware that may be extremely difficult to detect any other way, Microsoft recommends that you consider implementing a Device health attestation-enabled MDM system like Intune that takes advantage of the Windows 10 Mobile cloud-based health attestation server feature to detect and block devices infected with advanced malware.
 
-## App platform security
+## <a href="" id="app-platform-security--"></a>App platform security
 
 
 Applications built for Windows are designed to be secure and free of defects, but the reality is that human error can create vulnerabilities in code. When malicious users and software identify such vulnerabilities, they may attempt to manipulate data in memory in the hope that they can compromise the system and take control.
 
 To mitigate these risks, Windows 10 Mobile includes a series of improvements to make it more difficult for malware to compromise the device. Windows 10 Mobile even enables organizations to choose which apps are allowed to run on mobile devices. In addition, it includes improvements that can dramatically reduce the likelihood that newly discovered vulnerabilities can be successful exploited. It takes detailed knowledge of operating system architecture and malware exploit techniques to fully appreciate the impact of these improvements, but the sections that follow explain them at a high level.
 
-### Device Guard
+### <a href="" id="device-guard--"></a>Device Guard
 
 Device Guard is a feature set that consists of both hardware and software system integrity-hardening features. These features revolutionize Windows operating system security by moving the entire operating system to a trust-nothing model.
 
 All apps on Windows 10 Mobile must be digitally signed and come from Windows Store or a trusted enterprise store. Device Guard implements policies that further restrict this. By default, Device Guard supports all apps from Windows Store. You can create policies that define the apps that can and cannot run on the Windows 10 Mobile device. If the app doesn’t have a digital signature or is prevented by policy, or it does not come from a trusted store, it will not run on Windows 10 Mobile.
 
-Advanced hardware features (described earlier in the [Enterprise-grade secure hardware](#secure_hardware) section) drive these security offerings. By integrating these hardware features further into the core operating system, Windows 10 Mobile can use them in new ways. To deliver this additional security, Device Guard requires UEFI with Secure Boot.
+Advanced hardware features (described earlier in the [Enterprise-grade secure hardware](#secure-hardware) section) drive these security offerings. By integrating these hardware features further into the core operating system, Windows 10 Mobile can use them in new ways. To deliver this additional security, Device Guard requires UEFI with Secure Boot.
 
-### AppContainer
+### <a href="" id="appcontainer--"></a>AppContainer
 
 The Windows 10 Mobile security model is based on the principle of least privilege and uses isolation to achieve it. Every app and even portions of the operating system itself run inside their own isolated sandbox called an AppContainer—a secured isolation boundary within which an app and its processes can run. Each AppContainer is defined and implemented through a security policy.
 
@@ -491,7 +491,7 @@ Apps receive the minimal privileges they need to perform their legitimate tasks.
 
 The combination of Device Guard and AppContainer help to prevent unauthorized apps from running. In the event malware slips into the app ecosystem, the AppContainer helps to constrain the app and limit potential damage. The Windows 10 Mobile trust-nothing model doesn’t assume that any component is perfect, however, potential vulnerabilities in apps, AppContainers, and Windows 10 Mobile itself could give an attacker a chance to compromise a system. For this reason, we need redundant vulnerability mitigations. The next several topics describe some of the redundant mitigations in Windows 10 Mobile.
 
-### Address Space Layout Randomization
+### <a href="" id="address-space-layout-randomization--"></a>Address Space Layout Randomization
 
 One of the most common techniques attackers use to gain access to a system is to find a vulnerability in a privileged process that is already running, guess or find a location in memory where important system code and data reside, and then overwrite that information with a malicious payload. In the early days of operating systems, any malware that could write directly to the system memory could do such a thing; the malware would simply overwrite system memory in well-known and predictable locations.
 
@@ -503,13 +503,13 @@ Figure 3. ASLR at work
 
 Microsoft has substantively improved the ASLR implementation in Windows 10 Mobile over previous versions, especially with 64-bit system and application processes that can take advantage of a vastly increased memory space, making it even more difficult for malware to predict where Windows 10 Mobile stores vital data. When used on systems that have TPMs, ASLR memory randomization will be increasingly unique across devices, making it even more difficult for a successful exploit that works on one system to work reliably on another. Microsoft also holistically applied ASLR across the entire system in Windows 10 Mobile rather than it working only on specific apps.
 
-### Data Execution Prevention
+### <a href="" id="data-execution-prevention--"></a>Data Execution Prevention
 
 Malware depends on its ability to put a malicious payload into memory with the hope that an unsuspecting user will execute it later. ASLR makes that much more difficult.
 
 Extending that protection, it would be great if you could prevent malware from running if it wrote to an area that you have allocated solely for the storage of information. Data Execution Prevention (DEP) does exactly that, substantially reducing the range of memory that malicious code can use for its benefit. DEP uses the **No execute** bit on modern CPUs to mark blocks of memory as read only so that malware can’t use those blocks to execute malicious code. All Windows 10 and Windows 10 Mobile devices support DEP.
 
-### Windows heap
+### <a href="" id="windows-heap--"></a>Windows heap
 
 The heap is a location in memory that Windows uses to store dynamic application data. Microsoft continues to improve on earlier Windows heap designs by further mitigating the risk of heap exploits that an attacker could use.
 
@@ -521,11 +521,11 @@ Windows 10 Mobile has several important improvements to the security of the hea
 
 -   Windows 10 Mobile uses “guard pages” before and after blocks of memory as tripwires. If an attacker attempts to write past a block of memory (a common technique known as a buffer overflow), the attacker will have to overwrite a guard page. Any attempt to modify a guard page is considered a memory corruption, and Windows 10 Mobile responds by instantly terminating the app.
 
-### Memory reservations
+### <a href="" id="memory-reservations--"></a>Memory reservations
 
 Microsoft reserves the lowest 64 KB of process memory for the operating system. Apps are no longer allowed to allocate that portion of the memory, which makes it more difficult for malware to overwrite critical system data structures in memory.
 
-### Control Flow Guard
+### <a href="" id="control-flow-guard--"></a>Control Flow Guard
 
 When Windows loads applications into memory, it allocates space to those applications based on the size of the code, requested memory, and other factors. When an application begins to execute code, it calls additional code located in other memory addresses. The relationships among the code locations are well known—they are written in the code itself—but until Windows 10 Mobile, the operating system didn’t enforce the flow among these locations, giving attackers the opportunity to change the flow to meet their needs. In other words, an application exploit takes advantage of this behavior by running code that the application may not typically run.
 
@@ -533,7 +533,7 @@ Windows 10 Mobile mitigates this kind of threat through the Control Flow Guard 
 
 You cannot configure CFG; rather, an application developer can take advantage of CFG by configuring it when he or she compiles the application. Consider asking application developers and software vendors to deliver trustworthy Windows applications compiled with CFG enabled. Of course, browsers are a key entry point for attacks; thus Microsoft Edge and other Windows features take full advantage of CFG.
 
-### Protected processes
+### <a href="" id="protected-processes--"></a>Protected processes
 
 In general, preventing a computer security incident is more cost-effective than repairing the damage an incident can cause. For malware in particular, most security controls are designed to prevent an attack from being initially successful. The reasoning is that if malware cannot infect the system, the system is immune to malware.
 
@@ -597,7 +597,7 @@ Figure 4. The IT process for Store for Business
 
 For details about the process of distributing apps through Store for Business, see [Find and acquire apps](../manage/find-and-acquire-apps.md).
 
-### The user side
+### <a href="" id="the-user-side--"></a>The user side
 
 After you have prepared Store for Business, the user side of the process takes over. This side of the process is designed to be user friendly, with the primary app deployment method—through Store for Business—streamlined and straightforward. This process doesn’t require an MDM system or any on-premises infrastructure. In fact, the user never sees the “for Business” label, just the familiar Windows Store.
 

@@ -18,10 +18,10 @@ author: CFaw
 
 **In this article**
 
--   [In-place upgrade](#in_place_upgrade)
--   [Dynamic provisioning](#dynamic_provisioning)
--   [Traditional deployment](#traditional_deployment)
--   [Related topics](#related_topics)
+-   [In-place upgrade](#in-place-upgrade)
+-   [Dynamic provisioning](#dynamic-provisioning)
+-   [Traditional deployment](#traditional-deployment)
+-   [Related topics](#related-topics)
 
 To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task.
 

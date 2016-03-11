@@ -18,15 +18,15 @@ author: TrudyHa
 
 **In this article**
 
--   [What is Windows To Go?](#what_is_windows_to_go_)
--   [Usage scenarios](#usage_scenarios)
--   [Infrastructure considerations](#infrastructure_considerations)
--   [Activation considerations](#activation_considerations)
--   [Organizational unit structure and use of Group Policy Objects](#organizational_unit_structure_and_use_of_group_policy_objects)
--   [Computer account management](#computer_account_management)
--   [User account and data management](#user_account_and_data_management)
--   [Remote connectivity](#remote_connectivity)
--   [Related topics](#related_topics)
+-   [What is Windows To Go?](#what-is-windows-to-go-)
+-   [Usage scenarios](#usage-scenarios)
+-   [Infrastructure considerations](#infrastructure-considerations)
+-   [Activation considerations](#activation-considerations)
+-   [Organizational unit structure and use of Group Policy Objects](#organizational-unit-structure-and-use-of-group-policy-objects)
+-   [Computer account management](#computer-account-management)
+-   [User account and data management](#user-account-and-data-management)
+-   [Remote connectivity](#remote-connectivity)
+-   [Related topics](#related-topics)
 
 The following information is provided to help you plan and design a new deployment of a Windows To Go in your production environment. It provides answers to the “what”, “why”, and “when” questions an IT professional might have when planning to deploy Windows To Go.
 

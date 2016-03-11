@@ -73,27 +73,27 @@ By carefully planning, designing, testing, and deploying a solution based on you
 
 The process of designing and deploying a Windows security audit policy involves the following tasks, which are described in greater detail throughout this document:
 
--   [Identifying your Windows security audit policy deployment goals](#BKMK_1)
+-   [Identifying your Windows security audit policy deployment goals](#bkmk-1)
 
     This section helps define the business objectives that will guide your Windows security audit policy. It also helps you define the resources, users, and computers that will be the focus of your security auditing.
 
--   [Mapping the security audit policy to groups of users, computers, and resources in your organization](#BKMK_2)
+-   [Mapping the security audit policy to groups of users, computers, and resources in your organization](#bkmk-2)
 
     This section explains how to integrate security audit policy settings with domain Group Policy settings for different groups of users, computers, and resources. In addition, if your network includes multiple versions of Windows client and server operating systems, it also explains when to use basic audit policy settings and when to use advanced security audit policy settings.
 
--   [Mapping your security auditing goals to a security audit policy configuration](#BKMK_3)
+-   [Mapping your security auditing goals to a security audit policy configuration](#bkmk-3)
 
     This section explains the categories of Windows security auditing settings that are available. It also identifies individual Windows security auditing policy settings that can be of particular value to address auditing scenarios.
 
--   [Planning for security audit monitoring and management](#BKMK_4)
+-   [Planning for security audit monitoring and management](#bkmk-4)
 
     This section helps you plan to collect, analyze, and store Windows audit data. Depending on the number of computers and types of activity that you want to audit, Windows event logs can fill up quickly. In addition, this section explains how auditors can access and aggregate event data from multiple servers and desktop computers. It also explains how to address storage requirements, including how much audit data to store and how it must be stored.
 
--   [Deploying the security audit policy](#BKMK_5)
+-   [Deploying the security audit policy](#bkmk-5)
 
     This section provides recommendations and guidelines for the effective deployment of a Windows security audit policy. Configuring and deploying Windows audit policy settings in a test lab environment can help you confirm that the settings you have selected will produce the type of audit data you need. However, only a carefully staged pilot and incremental deployments based on your domain and organizational unit (OU) structure will enable you to confirm that the audit data you generate can be monitored and that it meets your organization's audit needs.
 
-## Identifying your Windows security audit policy deployment goals
+## <a href="" id="bkmk-1"></a>Identifying your Windows security audit policy deployment goals
 
 
 A security audit policy must support and be a critical and integrated aspect of an organization's overall security design and framework.
@@ -110,7 +110,7 @@ To create your Windows security audit plan, begin by identifying:
 
 ### Network environment
 
-An organization's domain and OU structure provide a fundamental starting point for thinking about how to apply a security audit policy because it likely provides a foundation of Group Policy Objects (GPOs) and logical grouping of resources and activities that you can use to apply the audit settings that you choose. It is also likely that certain portions of your domain and OU structure already provide logical groups of users, resources, and activities that justify the time and resources needed to audit them. For information about how to integrate a security audit policy with your domain and OU structure, see [Mapping security audit policy to groups of users, computers, and resources in your organization](#BKMK_2) later in this document.
+An organization's domain and OU structure provide a fundamental starting point for thinking about how to apply a security audit policy because it likely provides a foundation of Group Policy Objects (GPOs) and logical grouping of resources and activities that you can use to apply the audit settings that you choose. It is also likely that certain portions of your domain and OU structure already provide logical groups of users, resources, and activities that justify the time and resources needed to audit them. For information about how to integrate a security audit policy with your domain and OU structure, see [Mapping security audit policy to groups of users, computers, and resources in your organization](#bkmk-2) later in this document.
 
 In addition to your domain model, you should also find out whether your organization creates and maintains a systematic threat model. A good threat model can help you identify threats to key components in your infrastructure, so you can define and apply audit settings that enhance the organization's ability to identify and counter those threats.
 
@@ -298,7 +298,7 @@ Many industries and locales have strict and specific requirements for network op
 
 For more info, see the [System Center Process Pack for IT GRC](http://technet.microsoft.com/library/dd206732.aspx).
 
-## Mapping the security audit policy to groups of users, computers, and resources in your organization
+## <a href="" id="bkmk-2"></a>Mapping the security audit policy to groups of users, computers, and resources in your organization
 
 
 By using Group Policy, you can apply your security audit policy to defined groups of users, computers, and resources. To map a security auditing policy to these defined groups in your organization, you should understand the following considerations for using Group Policy to apply security audit policy settings:
@@ -332,7 +332,7 @@ The following are examples of how audit policies can be applied to an organizati
 
 -   Apply network and system activity audit policies to OUs that contain the organization's most critical servers, such as domain controllers, CAs, email servers, or database servers.
 
-## Mapping your security auditing goals to a security audit policy configuration
+## <a href="" id="bkmk-3"></a>Mapping your security auditing goals to a security audit policy configuration
 
 
 After you identify your security auditing goals, you can begin to map them to a security audit policy configuration. This audit policy configuration must address your most critical security auditing goals, but it also must address your organization's constraints, such as the number of computers that need to be monitored, the number of activities that you want to audit, the number of audit events that your desired audit configuration will generate, and the number of administrators available to analyze and act upon audit data.
@@ -396,7 +396,7 @@ For many organizations, compromising the organization's data resources can cause
 -   **Global Object Access Auditing**. A growing number of organizations are using security auditing to comply with regulatory requirements that govern data security and privacy. But demonstrating that strict controls are being enforced can be extremely difficult. To address this issue, the supported versions of Windows include two **Global Object Access Auditing** policy settings, one for the registry and one for the file system. When you configure these settings, they apply a global system access control SACL on all objects of that class on a system, which cannot be overridden or circumvented.
 
     **Important**  
-    The **Global Object Access Auditing** policy settings must be configured and applied in conjunction with the **Audit File System** and **Audit Registry** audit policy settings in the **Object Access** category. For more information about using the **Global Object Access Auditing** policy settings, see the [Advanced security auditing walkthrough](../keep-secure/advanced-security-auditing-walkthrough.md).
+    The **Global Object Access Auditing** policy settings must be configured and applied in conjunction with the **Audit File System** and **Audit Registry** audit policy settings in the **Object Access** category.
 
      
 
@@ -497,7 +497,7 @@ For example, on a file server that is accessed frequently by legitimate users, y
 
 On the other hand, if the file share has extremely sensitive and valuable information, such as trade secrets, you may want to log every access attempt, whether successful or unsuccessful, so that you have an audit trail of every user who accessed the resource.
 
-## Planning for security audit monitoring and management
+## <a href="" id="bkmk-4"></a>Planning for security audit monitoring and management
 
 
 Networks can contain hundreds of servers running critical services or storing critical data, all of which need to be monitored. The number of client computers on the network can easily range into the tens or even hundreds of thousands. This may not be an issue if the ratio of servers or client computers per administrator is low. Even if an administrator who is responsible for auditing security and performance issues has relatively few computers to monitor, you need to decide how an administrator will obtain event data to review. Following are some options for obtaining the event data.
@@ -526,7 +526,7 @@ You can also configure the audit log size and other key management options by us
 
 In addition, a growing number of organizations are being required to store archived log files for a number of years. You should consult with regulatory compliance officers in your organization to determine whether such guidelines apply to your organization. For more information, see the [IT Compliance Management Guide](http://go.microsoft.com/fwlink/p/?LinkId=163435).
 
-## Deploying the security audit policy
+## <a href="" id="bkmk-5"></a>Deploying the security audit policy
 
 
 Before deploying the audit policy in a production environment, it is critical that you determine the effects of the policy settings that you have configured.

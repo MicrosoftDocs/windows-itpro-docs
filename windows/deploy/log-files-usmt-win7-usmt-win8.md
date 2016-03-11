@@ -13,17 +13,17 @@ author: CFaw
 
 You can use User State Migration Tool (USMT) 10.0 logs to monitor your migration and to troubleshoot errors and failed migrations. This topic describes the available command-line options to enable USMT logs, and new XML elements that configure which types of errors are fatal and should halt the migration, which types are non-fatal and should be skipped so that the migration can continue.
 
-[Log Command-Line Options](#BKMK_CommandLineOptions)
+[Log Command-Line Options](#bkmk-commandlineoptions)
 
-[ScanState and LoadState Logs](#BKMK_ScanLoadStateLogs)
+[ScanState and LoadState Logs](#bkmk-scanloadstatelogs)
 
-[Progress Log](#BKMK_ProgressLog)
+[Progress Log](#bkmk-progresslog)
 
-[List Files Log](#BKMK_ListFilesLog)
+[List Files Log](#bkmk-listfileslog)
 
-[Diagnostic Log](#BKMK_DiagnosticLog)
+[Diagnostic Log](#bkmk-diagnosticlog)
 
-## Log Command-Line Options
+## <a href="" id="bkmk-commandlineoptions"></a>Log Command-Line Options
 
 
 The following table describes each command-line option related to logs, and it provides the log name and a description of what type of information each log contains.
@@ -77,12 +77,12 @@ You cannot store any of the log files in *StorePath*. If you do, the log will be
 
  
 
-## ScanState and LoadState Logs
+## <a href="" id="bkmk-scanloadstatelogs"></a>ScanState and LoadState Logs
 
 
 ScanState and LoadState logs are text files that are create when you run the ScanState and LoadState tools. You can use these logs to help monitor your migration. The content of the log depends on the command-line options that you use and the verbosity level that you specify. For more information about verbosity levels, see Monitoring Options in [ScanState Syntax](scanstate-syntax-usmt-win7-usmt-win8.md).
 
-## Progress Log
+## <a href="" id="bkmk-progresslog"></a>Progress Log
 
 
 You can create a progress log using the **/progress** option. External tools, such as Microsoft System Center Operations Manager 2007, can parse the progress log to update your monitoring systems. The first three fields in each line are fixed as follows:
@@ -218,12 +218,12 @@ The remaining fields are key/value pairs as indicated in the following table.
 
  
 
-## List Files Log
+## <a href="" id="bkmk-listfileslog"></a>List Files Log
 
 
 The List files log (Listfiles.txt) provides a list of the files that were migrated. This list can be used to troubleshoot XML issues or can be retained as a record of the files that were gathered into the migration store. The List Files log is only available for ScanState.exe.
 
-## Diagnostic Log
+## <a href="" id="bkmk-diagnosticlog"></a>Diagnostic Log
 
 
 You can obtain the diagnostic log by setting the environment variable MIG\_ENABLE\_DIAG to a path to an XML file.

@@ -18,8 +18,8 @@ author: brianlic-msft
 **In this article**
 
 -   [Reference](#reference)
--   [Security considerations](#security_considerations)
--   [Related topics](#related_topics)
+-   [Security considerations](#security-considerations)
+-   [Related topics](#related-topics)
 
 Describes the best practices, location, and values for the **Network Security: Allow PKU2U authentication requests to this computer to use online identities** security policy setting.
 

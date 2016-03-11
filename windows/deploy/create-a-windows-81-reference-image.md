@@ -18,14 +18,14 @@ author: CFaw
 
 **In this article**
 
--   [The reference image](#the_reference_image)
+-   [The reference image](#the-reference-image)
 -   [Set up the MDT build lab deployment share](#sec01)
 -   [Add the setup files](#sec02)
 -   [Add applications](#sec03)
 -   [Create the reference image task sequence](#sec04)
 -   [Configure the MDT deployment share rules](#sec05)
 -   [Build the Windows 10 reference image](#sec06)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT) 2013 Update 1. You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you will have a Windows 10 reference image that can be used in your deployment solution.
 
@@ -48,7 +48,7 @@ The reference image described in this documentation is designed primarily for de
 
 -   It's easy to move between lab, test, and production.
 
-## Set up the MDT build lab deployment share
+## <a href="" id="sec01"></a>Set up the MDT build lab deployment share
 
 
 With Windows 10, there is no hard requirement to create reference images; however, to reduce the time needed for deployment, you may want to create a reference image that contains a few base applications as well as all of the latest updates. This section will show you how to create and configure the MDT Build Lab deployment share to create a Windows 10 reference image. Because reference images will be deployed only to virtual machines during the creation process and have specific settings (rules), you should always create a separate deployment share specifically for this process.
@@ -91,7 +91,7 @@ In order to write the reference image back to the deployment share, you need to 
 
 Figure 3. Permissions configured for the MDT\_BA user.
 
-## Add the setup files
+## <a href="" id="sec02"></a>Add the setup files
 
 
 This section will show you how to populate the MDT 2013 Update 1 deployment share with the Windows 10 operating system source files, commonly referred to as setup files, which will be used to create a reference image. Setup files are used during the reference image creation process and are the foundation for the reference image.
@@ -129,7 +129,7 @@ In these steps we assume that you have copied the content of a Windows 10 Enter
 
 Figure 4. The imported Windows 10 operating system after renaming it.
 
-## Add applications
+## <a href="" id="sec03"></a>Add applications
 
 
 Before you create an MDT task sequence, you need to add all of the applications and other sample scripts to the MDT Build Lab share.
@@ -367,7 +367,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2012 Upda
     -Verbose
     ```
 
-## Create the reference image task sequence
+## <a href="" id="sec04"></a>Create the reference image task sequence
 
 
 In order to build and capture your Windows 10 reference image for deployment using MDT, you will create a task sequence. The task sequence will reference the operating system and applications that you previously imported into the MDT Build Lab deployment share to build a Windows 10 reference image.
@@ -520,7 +520,7 @@ Follow these steps to configure Internet Explorer settings in Unattend.xml for t
 
 Figure 10. Windows System Image Manager with the Windows 10 Unattend.xml.
 
-## Configure the MDT deployment share rules
+## <a href="" id="sec05"></a>Configure the MDT deployment share rules
 
 
 Understanding rules is critical to successfully using MDT. Rules are configured using the Rules tab of the deployment share's properties. The Rules tab is essentially a shortcut to edit the CustomSettings.ini file that exists in the E:\\MDTBuildLab\\Control folder. This section discusses how to configure the MDT deployment share rules as part of your Windows 10 Enterprise deployment.
@@ -776,7 +776,7 @@ SkipFinalSummary=YES
 
 -   **SkipFinalSummary.** Skips the final Windows Deployment Wizard summary. Because you use FinishAction=Shutdown, you don't want the wizard to stop in the end so that you need to click OK before the machine shuts down.
 
-## Build the Windows 10 reference image
+## <a href="" id="sec06"></a>Build the Windows 10 reference image
 
 
 Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process.

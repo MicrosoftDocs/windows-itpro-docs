@@ -19,10 +19,10 @@ author: brianlic-msft
 
 **In this article**
 
--   [Where is the error code?](#where_is_the_error_code_)
--   [Error mitigations](#error_mitigations)
--   [Errors with unknown mitigation](#errors_with_unknown_mitigation)
--   [Related topics](#related_topics)
+-   [Where is the error code?](#where-is-the-error-code-)
+-   [Error mitigations](#error-mitigations)
+-   [Errors with unknown mitigation](#errors-with-unknown-mitigation)
+-   [Related topics](#related-topics)
 
 When you set up Microsoft Passport in Windows 10, you may get an error during the **Create a work PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 
@@ -44,9 +44,9 @@ When a user encounters an error when creating the work PIN, advise the user to t
 
 3.  Reboot the device and then try to create the PIN again.
 
-4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again.
+4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a desktop PC, go to **Settings** &gt; **System** &gt; **About** and select **Disconnect from organization**. To unjoin a device running Windows 10 Mobile, you must [reset the device](http://go.microsoft.com/fwlink/p/?LinkId=715697).
 
-5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](http://go.microsoft.com/fwlink/p/?LinkId=715697)
+5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](http://go.microsoft.com/fwlink/p/?LinkId=715697).
 
 If the error occurs again, check the error code against the following table to see if there is another mitigation for that error. When no mitigation is listed in the table, contact Microsoft Support for assistance.
 
@@ -151,17 +151,17 @@ If the error occurs again, check the error code against the following table to s
 <tr class="odd">
 <td align="left">0x801C0016</td>
 <td align="left">The federation provider configuration is empty</td>
-<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml" class="uri) and verify that the file is not empty.</td>
+<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml) and verify that the file is not empty.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C0017</td>
 <td align="left">​The federation provider domain is empty</td>
-<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml" class="uri) and verify that the FPDOMAINNAME element is not empty.</td>
+<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml) and verify that the FPDOMAINNAME element is not empty.</td>
 </tr>
 <tr class="odd">
 <td align="left">0x801C0018</td>
 <td align="left">The federation provider client configuration URL is empty</td>
-<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml" class="uri) and verify that the CLIENTCONFIG element contains a valid URL.</td>
+<td align="left">Go to [http://clientconfig.microsoftonline-p.net/FPURL.xml](http://clientconfig.microsoftonline-p.net/FPURL.xml) and verify that the CLIENTCONFIG element contains a valid URL.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C03E9</td>

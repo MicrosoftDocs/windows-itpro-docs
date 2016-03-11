@@ -34,7 +34,7 @@ The **&lt;OperatingSystem&gt; - Computer Report** screen shows the following inf
 
 2.  In the **Quick Reports** pane, under an operating system heading, click **Computers**.
 
-## Using the &lt;OperatingSystem&gt; - Computer Report Screen
+## <a href="" id="using-the--operatingsystem----computer-report-screen"></a>Using the &lt;OperatingSystem&gt; - Computer Report Screen
 
 
 On the **&lt;OperatingSystem&gt; - Computer Report** screen, you can perform the following actions:

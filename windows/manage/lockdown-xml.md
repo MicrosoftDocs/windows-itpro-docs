@@ -17,12 +17,12 @@ author: jdeckerMS
 
 **In this article**
 
--   [Order of lockdown settings](#order_of_lockdown_settings)
--   [Configuring multiple app packages](#BMK_map)
--   [Lockdown example to use in a lockdown XML file](#lockdown_example_to_use_in_a_lockdown_xml_file)
--   [Add lockdown XML to a provisioning package](#add_lockdown_xml_to_a_provisioning_package)
--   [Push lockdown XML using MDM](#push_lockdown_xml_using_mdm)
--   [Related topics](#related_topics)
+-   [Order of lockdown settings](#order-of-lockdown-settings)
+-   [Configuring multiple app packages](#bmk-map)
+-   [Lockdown example to use in a lockdown XML file](#lockdown-example-to-use-in-a-lockdown-xml-file)
+-   [Add lockdown XML to a provisioning package](#add-lockdown-xml-to-a-provisioning-package)
+-   [Push lockdown XML using MDM](#push-lockdown-xml-using-mdm)
+-   [Related topics](#related-topics)
 
 Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available.
 
@@ -41,7 +41,7 @@ The configuration items must be in the following order when you lock down settin
     -   ActionCenter
     -   Apps
         -   Application product ID, as described in [Product IDs in Windows 10 Mobile](http://go.microsoft.com/fwlink/p/?LinkId=698449)
-        -   App User Model ID, as described in [Configuring Multiple App Packages](#BMK_map)
+        -   App User Model ID, as described in [Configuring Multiple App Packages](#bmk-map)
         -   PinToStart
             -   Size
             -   Location
@@ -66,7 +66,7 @@ The configuration items must be in the following order when you lock down settin
         -   ActionCenter
         -   Apps
             -   Application product ID, as described in [Product IDs in Windows 10 Mobile](http://go.microsoft.com/fwlink/p/?LinkId=698449)
-            -   App User Model ID (AUMID), as described in [Configuring Multiple App Packages](#BMK_map)
+            -   App User Model ID (AUMID), as described in [Configuring Multiple App Packages](#bmk-map)
             -   PinToStart
                 -   Size
                 -   Location
@@ -87,7 +87,7 @@ The configuration items must be in the following order when you lock down settin
             -   Enable tile manipulation
         -   StartScreenSize
 
-## Configuring multiple app packages
+## <a href="" id="bmk-map"></a>Configuring multiple app packages
 
 
 Multiple app packages enable multiple apps to exist inside the same package. Since product IDs identify packages and not applications, specifying a product ID is not enough to distinguish between individual apps inside a multiple app package. Trying to pin application tiles from a multiple app package with just a product ID can result in unexpected behavior.

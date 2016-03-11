@@ -17,7 +17,7 @@ author: brianlic-msft
 
 This topic for the IT professional describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 
-## 
+## <a href="" id="bkmk-version-table"></a>
 
 
 The TPM Services Group Policy settings are located at:
@@ -45,7 +45,7 @@ The TPM Services Group Policy settings are located at:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Turn on TPM backup to Active Directory Domain Services](#BKMK_tpmgp_addsbu)</p></td>
+<td align="left"><p>[Turn on TPM backup to Active Directory Domain Services](#bkmk-tpmgp-addsbu)</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -53,7 +53,7 @@ The TPM Services Group Policy settings are located at:
 <td align="left"><p>X</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Configure the list of blocked TPM commands](#BKMK_tpmgp_clbtc)</p></td>
+<td align="left"><p>[Configure the list of blocked TPM commands](#bkmk-tpmgp-clbtc)</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -61,7 +61,7 @@ The TPM Services Group Policy settings are located at:
 <td align="left"><p>X</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Ignore the default list of blocked TPM commands](#BKMK_tpmgp_idlb)</p></td>
+<td align="left"><p>[Ignore the default list of blocked TPM commands](#bkmk-tpmgp-idlb)</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -69,7 +69,7 @@ The TPM Services Group Policy settings are located at:
 <td align="left"><p>X</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Ignore the local list of blocked TPM commands](#BKMK_tpmgp_illb)</p></td>
+<td align="left"><p>[Ignore the local list of blocked TPM commands](#bkmk-tpmgp-illb)</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -77,7 +77,7 @@ The TPM Services Group Policy settings are located at:
 <td align="left"><p>X</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Configure the level of TPM owner authorization information available to the operating system](#BKMK_tpmgp_oauthos)</p></td>
+<td align="left"><p>[Configure the level of TPM owner authorization information available to the operating system](#bkmk-tpmgp-oauthos)</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -85,7 +85,7 @@ The TPM Services Group Policy settings are located at:
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Standard User Lockout Duration](#BKMK_tpmgp_suld)</p></td>
+<td align="left"><p>[Standard User Lockout Duration](#bkmk-tpmgp-suld)</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -93,7 +93,7 @@ The TPM Services Group Policy settings are located at:
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Standard User Individual Lockout Threshold](#BKMK_tpmgp_suilt)</p></td>
+<td align="left"><p>[Standard User Individual Lockout Threshold](#bkmk-tpmgp-suilt)</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -101,7 +101,7 @@ The TPM Services Group Policy settings are located at:
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Standard User Total Lockout Threshold](#BKMK_tpmgpsutlt)</p></td>
+<td align="left"><p>[Standard User Total Lockout Threshold](#bkmk-tpmgpsutlt)</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -113,12 +113,12 @@ The TPM Services Group Policy settings are located at:
 
  
 
-### Turn on TPM backup to Active Directory Domain Services
+### <a href="" id="bkmk-tpmgp-addsbu"></a>Turn on TPM backup to Active Directory Domain Services
 
 This policy setting allows you to manage the Active Directory Domain Services (AD DS) backup of TPM owner information.
 
 **Note**  
-This policy setting applies to the Windows operating systems listed in the [version table](#BKMK_version_table).
+This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
 
  
 
@@ -135,12 +135,12 @@ If you enable this policy setting, TPM owner information will be automatically a
 
 If you disable or do not configure this policy setting, TPM owner information will not be backed up to AD DS.
 
-### Configure the list of blocked TPM commands
+### <a href="" id="bkmk-tpmgp-clbtc"></a>Configure the list of blocked TPM commands
 
 This policy setting allows you to manage the Group Policy list of Trusted Platform Module (TPM) commands that are blocked by Windows.
 
 **Note**  
-This policy setting applies to the Windows operating systems listed in the [version table](#BKMK_version_table).
+This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
 
  
 
@@ -154,31 +154,31 @@ If you disable or do not configure this policy setting, only those TPM commands 
 
 For information how to enforce or ignore the default and local lists of blocked TPM commands, see
 
--   [Ignore the default list of blocked TPM commands](#BKMK_tpmgp_idlb)
+-   [Ignore the default list of blocked TPM commands](#bkmk-tpmgp-idlb)
 
--   [Ignore the local list of blocked TPM commands](#BKMK_tpmgp_illb)
+-   [Ignore the local list of blocked TPM commands](#bkmk-tpmgp-illb)
 
-### Ignore the default list of blocked TPM commands
+### <a href="" id="bkmk-tpmgp-idlb"></a>Ignore the default list of blocked TPM commands
 
 This policy setting allows you to enforce or ignore the computer's default list of blocked Trusted Platform Module (TPM) commands.
 
 **Note**  
-This policy setting applies to the Windows operating systems listed in the [version table](#BKMK_version_table).
+This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
 
  
 
-The default list of blocked TPM commands is preconfigured by Windows. You can view the default list by typing **tpm.msc** at the command prompt to open the TPM Management Console, navigating to the **Command Management** section, and exposing the **On Default Block List** column. Also see the related policy setting, [Configure the list of blocked TPM commands](#BKMK_tpmgp_clbtc).
+The default list of blocked TPM commands is preconfigured by Windows. You can view the default list by typing **tpm.msc** at the command prompt to open the TPM Management Console, navigating to the **Command Management** section, and exposing the **On Default Block List** column. Also see the related policy setting, [Configure the list of blocked TPM commands](#bkmk-tpmgp-clbtc).
 
 If you enable this policy setting, the Windows operating system will ignore the computer's default list of blocked TPM commands, and it will block only those TPM commands that are specified by Group Policy or the local list.
 
 If you disable or do not configure this policy setting, Windows will block the TPM commands in the default list, in addition to the commands that are specified by Group Policy and the local list of blocked TPM commands.
 
-### Ignore the local list of blocked TPM commands
+### <a href="" id="bkmk-tpmgp-illb"></a>Ignore the local list of blocked TPM commands
 
 This policy setting allows you to enforce or ignore the computer's local list of blocked Trusted Platform Module (TPM) commands.
 
 **Note**  
-This policy setting applies to the Windows operating systems listed in the [version table](#BKMK_version_table).
+This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
 
  
 
@@ -188,12 +188,12 @@ If you enable this policy setting, the Windows operating system will ignore the 
 
 If you disable or do not configure this policy setting, Windows will block the TPM commands in the local list, in addition to the commands that are specified in Group Policy and the default list of blocked TPM commands.
 
-### Configure the level of TPM owner authorization information available to the operating system
+### <a href="" id="bkmk-tpmgp-oauthos"></a>Configure the level of TPM owner authorization information available to the operating system
 
 This policy setting configures how much of the TPM owner authorization information is stored in the registry of the local computer. Depending on the amount of TPM owner authorization information that is stored locally, the Windows operating system and TPM-based applications can perform certain actions in the TPM that require TPM owner authorization without requiring the user to enter the TPM owner password.
 
 **Note**  
-This policy setting applies to the Windows operating systems listed in the [version table](#BKMK_version_table).
+This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
 
  
 
@@ -251,12 +251,12 @@ If you enable this policy setting, the Windows operating system will store the T
 
 If you disable or do not configure this policy setting, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is also disabled or not configured, the default setting is to store the full TPM authorization value in the local registry. If this policy is disabled or not configured, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is enabled, only the administrative delegation and the user delegation blobs are stored in the local registry.
 
-### Standard User Lockout Duration
+### <a href="" id="bkmk-tpmgp-suld"></a>Standard User Lockout Duration
 
 This policy setting allows you to manage the duration in minutes for counting standard user authorization failures for Trusted Platform Module (TPM) commands requiring authorization. An authorization failure occurs each time a standard user sends a command to the TPM and receives an error response that indicates an authorization failure occurred. Authorization failures that are older than the duration you set are ignored. If the number of TPM commands with an authorization failure within the lockout duration equals a threshold, a standard user is prevented from sending commands that require authorization to the TPM.
 
 **Note**  
-This policy setting applies to the Windows operating systems listed in the [version table](#BKMK_version_table).
+This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
 
  
 
@@ -268,20 +268,20 @@ This setting helps administrators prevent the TPM hardware from entering a locko
 
 For each standard user, two thresholds apply. Exceeding either threshold prevents the user from sending a command that requires authorization to the TPM. Use the following policy settings to set the lockout duration:
 
--   [Standard User Individual Lockout Threshold](#BKMK_Individual)   This value is the maximum number of authorization failures that each standard user can have before the user is not allowed to send commands that require authorization to the TPM.
+-   [Standard User Individual Lockout Threshold](#bkmk-individual)   This value is the maximum number of authorization failures that each standard user can have before the user is not allowed to send commands that require authorization to the TPM.
 
--   [Standard User Total Lockout Threshold](#BKMK_Total)   This value is the maximum total number of authorization failures that all standard users can have before all standard users are not allowed to send commands that require authorization to the TPM.
+-   [Standard User Total Lockout Threshold](#bkmk-total)   This value is the maximum total number of authorization failures that all standard users can have before all standard users are not allowed to send commands that require authorization to the TPM.
 
 An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
 
 If you do not configure this policy setting, a default value of 480 minutes (8 hours) is used.
 
-### Standard User Individual Lockout Threshold
+### <a href="" id="bkmk-individual"></a>Standard User Individual Lockout Threshold
 
 This policy setting allows you to manage the maximum number of authorization failures for each standard user for the Trusted Platform Module (TPM). This value is the maximum number of authorization failures that each standard user can have before the user is not allowed to send commands that require authorization to the TPM. If the number of authorization failures for the user within the duration that is set for the **Standard User Lockout Duration** policy setting equals this value, the standard user is prevented from sending commands that require authorization to the Trusted Platform Module (TPM).
 
 **Note**  
-This policy setting applies to the Windows operating systems listed in the [version table](#BKMK_version_table).
+This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
 
  
 
@@ -293,12 +293,12 @@ An administrator with the TPM owner password can fully reset the TPM's hardware 
 
 If you do not configure this policy setting, a default value of 4 is used. A value of zero means that the operating system will not allow standard users to send commands to the TPM, which might cause an authorization failure.
 
-### Standard User Total Lockout Threshold
+### <a href="" id="bkmk-total"></a>Standard User Total Lockout Threshold
 
 This policy setting allows you to manage the maximum number of authorization failures for all standard users for the Trusted Platform Module (TPM). If the total number of authorization failures for all standard users within the duration that is set for the **Standard User Lockout Duration** policy equals this value, all standard users are prevented from sending commands that require authorization to the Trusted Platform Module (TPM).
 
 **Note**  
-This policy setting applies to the Windows operating systems listed in the [version table](#BKMK_version_table).
+This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
 
  
 

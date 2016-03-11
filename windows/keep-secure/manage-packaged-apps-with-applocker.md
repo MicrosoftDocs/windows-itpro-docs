@@ -29,7 +29,7 @@ AppLocker supports only publisher rules for packaged apps. All packaged apps mus
 
 Typically, an app consists of multiple components: the installer that is used to install the app, and one or more exes, dlls, or scripts. With classic Windows apps, not all these components always share common attributes such as the software’s publisher name, product name, and product version. Therefore, AppLocker controls each of these components separately through different rule collections, such as exe, dll, script, and Windows Installer rules. In contrast, all the components of a packaged app share the same publisher name, package name, and package version attributes. Therefore, you can control an entire app with a single rule.
 
-### Comparing classic Windows apps and packaged apps
+### <a href="" id="bkmk-compareclassicmetro"></a>Comparing classic Windows apps and packaged apps
 
 AppLocker policies for packaged apps can only be applied to apps installed on computers running at least Windows Server 2012 or Windows 8, but classic Windows apps can be controlled on devices running at least Windows Server 2008 R2 or Windows 7. The rules for classic Windows apps and packaged apps can be enforced in tandem. The differences between packaged apps and classic Windows apps that you should consider include:
 

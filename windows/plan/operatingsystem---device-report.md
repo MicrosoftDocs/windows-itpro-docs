@@ -36,7 +36,7 @@ The **&lt;OperatingSystem&gt; - Device Report** screen shows the following infor
 
 2.  In the **Quick Reports** pane, under an operating system heading, click **Devices**.
 
-## Using the &lt;OperatingSystem&gt; - Device Report Screen
+## <a href="" id="using-the--operatingsystem----device-report-screen"></a>Using the &lt;OperatingSystem&gt; - Device Report Screen
 
 
 On the **&lt;OperatingSystem&gt; - Device Report** screen, you can:

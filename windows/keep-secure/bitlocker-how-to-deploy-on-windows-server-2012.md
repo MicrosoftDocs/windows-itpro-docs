@@ -19,7 +19,7 @@ This topic for the IT professional explains how to deploy BitLocker and Windows 
 
 For all Windows Server editions, BitLocker must be installed using Server Manager. However, you can still provision BitLocker before the server operating system is installed as part of your deployment.
 
-## Installing BitLocker
+## <a href="" id="installing-bitlocker-"></a>Installing BitLocker
 
 
 BitLocker requires administrator privileges on the server to install. You can install BitLocker either by using Server Manager or Windows PowerShell cmdlets.
@@ -28,7 +28,7 @@ BitLocker requires administrator privileges on the server to install. You can in
 
 -   To install BitLocker using Windows PowerShell
 
-### To install BitLocker using Server Manager
+### <a href="" id="bkmk-blinstallsrvmgr"></a>To install BitLocker using Server Manager
 
 1.  Open Server Manager by selecting the Server Manager icon or running servermanager.exe.
 
@@ -53,7 +53,7 @@ BitLocker requires administrator privileges on the server to install. You can in
 
 9.  If the **Restart the destination server automatically if required** check box is not selected, the **Results pane** of the **Add Roles and Features Wizard** will display the success or failure of the BitLocker feature installation. If required, a notification of additional action necessary to complete the feature installation, such as the restart of the computer, will be displayed in the results text.
 
-### To install BitLocker using Windows PowerShell
+### <a href="" id="bkmk-blinstallwps"></a>To install BitLocker using Windows PowerShell
 
 Windows PowerShell offers administrators another option for BitLocker feature installation. Windows PowerShell installs features using the `servermanager` or `dism` module; however, the `servermanager` and `dism` modules do not always share feature name parity. Because of this, it is advisable to confirm the feature or role name prior to installation.
 

@@ -19,13 +19,13 @@ author: brianlic-msft
 
 **In this article**
 
--   [PIN is tied to the device](#pin_is_tied_to_the_device)
--   [PIN is local to the device](#pin_is_local_to_the_device)
--   [PIN is backed by hardware](#pin_is_backed_by_hardware)
--   [PIN can be complex](#pin_can_be_complex)
--   [What if someone steals the laptop or phone?](#what_if_someone_steals_the_laptop_or_phone_)
--   [Why do you need a PIN to use Windows Hello?](#why_do_you_need_a_pin_to_use_windows_hello_)
--   [Related topics](#related_topics)
+-   [PIN is tied to the device](#pin-is-tied-to-the-device)
+-   [PIN is local to the device](#pin-is-local-to-the-device)
+-   [PIN is backed by hardware](#pin-is-backed-by-hardware)
+-   [PIN can be complex](#pin-can-be-complex)
+-   [What if someone steals the laptop or phone?](#what-if-someone-steals-the-laptop-or-phone-)
+-   [Why do you need a PIN to use Windows Hello?](#why-do-you-need-a-pin-to-use-windows-hello-)
+-   [Related topics](#related-topics)
 
 Microsoft Passport in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a password?
 

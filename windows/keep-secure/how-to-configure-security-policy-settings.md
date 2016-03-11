@@ -17,10 +17,10 @@ author: brianlic-msft
 
 **In this article**
 
--   [To configure a setting using the Local Security Policy console](#BKMK_Local)
--   [To configure a security policy setting using the Local Group Policy Editor console](#BKMK_Domain)
--   [To configure a setting for a domain controller](#BKMK_DC)
--   [Related topics](#related_topics)
+-   [To configure a setting using the Local Security Policy console](#bkmk-local)
+-   [To configure a security policy setting using the Local Group Policy Editor console](#bkmk-domain)
+-   [To configure a setting for a domain controller](#bkmk-dc)
+-   [Related topics](#related-topics)
 
 Describes steps to configure a security policy setting on the local device, on a domain-joined device, and on a domain controller.
 
@@ -28,7 +28,7 @@ You must have Administrators rights on the local device, or you must have the ap
 
 When a local setting is inaccessible, it indicates that a GPO currently controls that setting.
 
-## To configure a setting using the Local Security Policy console
+## <a href="" id="bkmk-local"></a>To configure a setting using the Local Security Policy console
 
 
 1.  To open Local Security Policy, on the **Start** screen, type **secpol.msc**, and then press ENTER.
@@ -50,7 +50,7 @@ When a local setting is inaccessible, it indicates that a GPO currently controls
 
      
 
-## To configure a security policy setting using the Local Group Policy Editor console
+## <a href="" id="bkmk-domain"></a>To configure a security policy setting using the Local Group Policy Editor console
 
 
 You must have the appropriate permissions to install and use the Microsoft Management Console (MMC), and to update a Group Policy Object (GPO) on the domain controller to perform these procedures.
@@ -78,7 +78,7 @@ You must have the appropriate permissions to install and use the Microsoft Manag
 
  
 
-## To configure a setting for a domain controller
+## <a href="" id="bkmk-dc"></a>To configure a setting for a domain controller
 
 
 The following procedure describes how to configure a security policy setting for only a domain controller (from the domain controller).

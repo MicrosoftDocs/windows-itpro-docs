@@ -21,7 +21,7 @@ File hash rules use a system-computed cryptographic hash of the identified file.
 
 For info about the file hash condition, see [Understanding the File Hash Rule Condition in AppLocker](understanding-the-file-hash-rule-condition-in-applocker.md).
 
-You can perform this task by using the Group Policy Management Console for an AppLocker policy in a Group Policy Object (GPO) or by using the Local Security Policy snap-in for an AppLocker policy on a local computer or in a security template. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#BKMK_Using_Snapins).
+You can perform this task by using the Group Policy Management Console for an AppLocker policy in a Group Policy Object (GPO) or by using the Local Security Policy snap-in for an AppLocker policy on a local computer or in a security template. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins).
 
 **To create a new rule with a file hash condition**
 

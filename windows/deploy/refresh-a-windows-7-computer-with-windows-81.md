@@ -21,7 +21,7 @@ author: CFaw
 -   [The computer refresh process](#sec01)
 -   [Create a custom User State Migration Tool (USMT) template](#sec02)
 -   [Refresh a Windows 7 SP1 client](#sec03)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This topic will show you how to use MDT 2013 Update 1 Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process. The refresh scenario, or computer refresh, is a reinstallation of an operating system on the same machine. You can refresh the machine to the same operating system as it is currently running, or to a later version.
 
@@ -31,7 +31,7 @@ For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0
 
 Figure 1. The machines used in this topic.
 
-## The computer refresh process
+## <a href="" id="sec01"></a>The computer refresh process
 
 
 Even though a computer will appear, to the end user, to be upgraded, a computer refresh is not, technically, an in-place upgrade. A computer refresh also involves taking care of user data and settings from the old installation and making sure to restore those at the end of the installation.
@@ -70,7 +70,7 @@ You also can combine the preceding switches with the /uel switch, which excludes
 
 In addition to the command-line switches that control which profiles to migrate, the XML templates control exactly what data is being migrated. You can control data within and outside the user profiles
 
-## Create a custom User State Migration Tool (USMT) template
+## <a href="" id="sec02"></a>Create a custom User State Migration Tool (USMT) template
 
 
 In this section, you learn to migrate additional data using a custom template. You configure the environment to use a custom USMT XML template that will:
@@ -101,7 +101,7 @@ In order to use the custom MigContosoData.xml USMT template, you need to copy it
 
 3.  Save the CustomSettings.ini file.
 
-## Refresh a Windows 7 SP1 client
+## <a href="" id="sec03"></a>Refresh a Windows 7 SP1 client
 
 
 After adding the additional USMT template and configuring the CustomSettings.ini file to use it, you are now ready to refresh a Windows 7 SP1 client to Windows 10. In these steps, we assume you have a Windows 7 SP1 client named PC0001 in your environment that is ready for a refresh to Windows 10.

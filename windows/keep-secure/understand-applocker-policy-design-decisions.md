@@ -62,7 +62,7 @@ You might need to control a limited number of apps because they access sensitive
 <tr class="odd">
 <td align="left"><p>Control only Classic Windows applications, only Universal Windows apps, or both</p></td>
 <td align="left"><p>AppLocker policies control apps by creating an allowed list of apps by file type. Because Universal Windows apps are categorized under the Publisher condition, Classic Windows applications and Universal Windows apps can be controlled together. AppLocker policies for Universal Windows apps can be applied only to apps that are installed on PCs that support the Windows Store, but Classic Windows applications can be controlled with AppLocker on all supported versions of Windows. The rules you currently have configured for Classic Windows applications can remain, and you can create new ones for Universal Windows apps.</p>
-<p>For a comparison of Classic Windows applications and Universal Windows apps, see [Comparing Classic Windows applications and Universal Windows apps for AppLocker policy design decisions](#BKMK_CompareClassicMetro) in this topic.</p></td>
+<p>For a comparison of Classic Windows applications and Universal Windows apps, see [Comparing Classic Windows applications and Universal Windows apps for AppLocker policy design decisions](#bkmk-compareclassicmetro) in this topic.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Control apps by business group and user</p></td>
@@ -101,7 +101,7 @@ The following list contains files or types of files that cannot be managed by Ap
 
  
 
-### Comparing Classic Windows applications and Universal Windows apps for AppLocker policy design decisions
+### <a href="" id="bkmk-compareclassicmetro"></a>Comparing Classic Windows applications and Universal Windows apps for AppLocker policy design decisions
 
 AppLocker policies for Universal Windows apps can only be applied to apps that are installed on computers running Windows operating systems that support Windows Store apps. However, Classic Windows applications can be controlled in Windows Server 2008 R2 and Windows 7, in addition to those computers that support Universal Windows apps. The rules for Classic Windows applications and Universal Windows apps can be enforced together. The differences you should consider for Universal Windows apps are:
 

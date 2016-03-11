@@ -22,7 +22,7 @@ author: TrudyHa
 
 You can customize how you view your report data in Application Compatibility Manager (ACM).
 
-## Modifying the &lt;Operating\_System&gt; Reports View
+## <a href="" id="modifying-the--operating-system--reports-view"></a>Modifying the &lt;Operating\_System&gt; Reports View
 
 
 You can choose which operating systems ACM shows in the compatibility reports. For operating systems that you exclude from the reports, the data continues to be collected but ACM does not display it.

@@ -53,7 +53,7 @@ There are several items to download or create for offline-licensed apps. You'll 
 
 -   **App frameworks** -- App frameworks are required for distributing offline apps, but you might not need to download one. If you already have the required framework, you don't need to download another copy. The Store for Business will select the app framework needed for the app platform and architecture that you selected.
 
-
+<a href="" id="download-offline-licensed-app"></a>
 **To download an offline-licensed app**
 
 1.  Sign in to the Store for Business

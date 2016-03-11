@@ -18,13 +18,13 @@ author: TrudyHa
 
 **In this article**
 
--   [Configure your systems to receive updates on CBB](#configure_your_systems_to_receive_updates_on_cbb)
--   [Defer OS upgrade and update deployments](#defer_OS_upgrade)
--   [Pause upgrades and updates](#pause_upgrades_and_updates)
--   [Create validation groups for deployments](#create_validation_groups_for_deployments)
--   [Peer-to-peer networking for deployments](#peer-to-peer_networking_for_deployments_)
--   [Use Group Policy to configure Windows Update Delivery Optimization](#use_group_policy_to_configure_windows_update_delivery_optimization_)
--   [Related topics](#related_topics)
+-   [Configure your systems to receive updates on CBB](#configure-your-systems-to-receive-updates-on-cbb)
+-   [Defer OS upgrade and update deployments](#defer-os-upgrade)
+-   [Pause upgrades and updates](#pause-upgrades-and-updates)
+-   [Create validation groups for deployments](#create-validation-groups-for-deployments)
+-   [Peer-to-peer networking for deployments](#peer-to-peer-networking-for-deployments-)
+-   [Use Group Policy to configure Windows Update Delivery Optimization](#use-group-policy-to-configure-windows-update-delivery-optimization-)
+-   [Related topics](#related-topics)
 
 This article describes the basic features of a Windows Update for Business deployment. Use this information to familiarize yourself with a simple deployment with a single group of machines connected to Windows Update, in addition to more complex scenarios such as the creation of Windows Update for Business validation groups that receive updates from Windows Update at different time intervals, as well as Windows Update for Business deployments integrated with existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager, or Microsoft Intune.
 
@@ -39,7 +39,7 @@ To use Windows Update for Business, Windows 10-based devices must first be conf
 
 ![figure 3](images/wuforbusiness-fig3-mdm.png)
 
-## Defer OS upgrade and update deployments
+## <a href="" id="defer-os-upgrade"></a>Defer OS upgrade and update deployments
 
 
 Windows Update for Business allows administrators to control when upgrades and updates are deployed to their Windows 10 clients by specifying deferral windows from when they are initially made available on the Windows Update service. As mentioned, there are restrictions as to how long you can delay upgrades and updates. The following table details these restrictions, per deployment category type:
@@ -135,7 +135,7 @@ Administrators can establish validation groups to maintain a level of control ov
 
 ![figure 7](images/wuforbusiness-fig7-validationgroup.png)
 
-## Peer-to-peer networking for deployments
+## <a href="" id="peer-to-peer-networking-for-deployments-"></a>Peer-to-peer networking for deployments
 
 
 Windows Update Delivery Optimization enables Windows Update for Business enrolled devices to download Windows updates and Windows Store apps from sources other than Microsoft. With multiple devices, Delivery Optimization can reduce the amount of Internet bandwidth that is required to keep all of your Windows Update for Business enrolled systems up to date. It can also help ensure that devices get updates and apps more quickly if they have a limited or unreliable Internet connection.
@@ -156,7 +156,7 @@ Delivery Optimization configuration settings can be viewed by going to: Settings
 
 ![figure 8](images/wuforbusiness-fig8a-chooseupdates.png)
 
-## Use Group Policy to configure Windows Update Delivery Optimization
+## <a href="" id="use-group-policy-to-configure-windows-update-delivery-optimization-"></a>Use Group Policy to configure Windows Update Delivery Optimization
 
 
 You can use Group Policy to configure Windows Update Delivery Optimization. To do this, use the following steps:

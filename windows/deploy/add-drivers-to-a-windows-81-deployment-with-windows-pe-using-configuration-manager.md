@@ -20,13 +20,13 @@ author: CFaw
 
 -   [Add drivers for Windows PE](#sec01)
 -   [Add drivers for Windows 10](#sec02)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 In this topic, you will learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines. Even though the Windows PE boot image and the Windows 10 operating system contain many out-of-the-box drivers, it is likely you will have to add new or updated drivers to support all your hardware. In this section, you import drivers for both Windows PE and the full Windows 10 operating system.
 
 For the purposes of this topic, we will use CM01, a machine running Windows Server 2012 R2 Standard that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md).
 
-## Add drivers for Windows PE
+## <a href="" id="sec01"></a>Add drivers for Windows PE
 
 
 This section will show you how to import some network and storage drivers for Windows PE. This section assumes you have downloaded some drivers to the E:\\Sources\\OSD\\DriverSources\\WinPE x64 folder on CM01.
@@ -50,7 +50,7 @@ The Updating Boot Image part of the wizard will appear to hang when displaying D
 
  
 
-## Add drivers for Windows 10
+## <a href="" id="sec02"></a>Add drivers for Windows 10
 
 
 This section illustrates how to add drivers for Windows 10 through an example in which you want to import Windows 10 drivers for the HP EliteBook 8560w model. For the purposes of this section, we assume that you have downloaded the Windows 10 drivers for the HP EliteBook 8560w model and copied them to the E:\\Sources\\OSD\\DriverSources\\Windows 10 x64\\HP EliteBook 8560w folder on CM01.

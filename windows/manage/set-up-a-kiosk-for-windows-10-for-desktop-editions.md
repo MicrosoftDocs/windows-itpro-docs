@@ -22,12 +22,12 @@ author: jdeckerMS
 
 **In this article**
 
--   [Other settings to lock down](#other_settings_to_lock_down)
--   [Assigned access method for Universal Windows apps](#assigned_access_method)
--   [Shell Launcher for Classic Windows applications](#local_user_policy)
--   [Related topics](#related_topics)
+-   [Other settings to lock down](#other-settings-to-lock-down)
+-   [Assigned access method for Universal Windows apps](#assigned-access-method)
+-   [Shell Launcher for Classic Windows applications](#local-user-policy)
+-   [Related topics](#related-topics)
 
-A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign_out_of_assigned_access).
+A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
 **Note**  
 A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
@@ -68,18 +68,18 @@ For a more secure kiosk experience, we recommend that you make the following con
 
      
 
-## Assigned access method for Universal Windows apps
+## <a href="" id="assigned-access-method"></a>Assigned access method for Universal Windows apps
 
 
 Using assigned access, Windows 10 runs the designated Universal Windows app above the lockscreen, so that the assigned access account has no access to any other functionality on the device. You have these choices for setting up assigned access:
 
--   [Use Settings on the PC](#set_up_assigned_access_in_pc_settings) - Windows 10 Pro, Enterprise, and Education
+-   [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) - Windows 10 Pro, Enterprise, and Education
 
--   [Apply a mobile device management (MDM) policy](#set_up_assigned_access_in_mdm) - Windows 10 Enterprise and Education
+-   [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) - Windows 10 Enterprise and Education
 
 -   [Create a provisioning package using Windows Imaging and Configuration Designer (ICD)](#icd) - Windows 10 Enterprise and Education
 
--   [Run a PowerShell script](#set_up_assigned_access_using_windows_powershell) - Windows 10 Pro, Enterprise, and Education
+-   [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) - Windows 10 Pro, Enterprise, and Education
 
 ### Requirements
 
@@ -120,7 +120,7 @@ Assigned Access has one setting, KioskModeApp. In the KioskModeApp setting, you 
 
 [See the technical reference for the Assigned Access configuration service provider.](http://go.microsoft.com/fwlink/p/?LinkId=626608)
 
-### Set up assigned access using Windows Imaging and Configuration Designer (ICD)
+### <a href="" id="icd"></a>Set up assigned access using Windows Imaging and Configuration Designer (ICD)
 
 Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device as a kiosk. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
@@ -249,7 +249,7 @@ If you press **Ctrl + Alt + Del** and do not sign in to another account, after a
 
 To change the default time for assigned access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
 
-## Shell Launcher for Classic Windows applications
+## <a href="" id="local-user-policy"></a>Shell Launcher for Classic Windows applications
 
 
 Using Shell Launcher, you can configure a kiosk device that runs a Classic Windows application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
@@ -380,7 +380,7 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 [Set up a kiosk for Windows 10 for mobile edition](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 
-[Manage and update Windows 10](index.md)
+[Manage and update Windows 10]
 
  
 

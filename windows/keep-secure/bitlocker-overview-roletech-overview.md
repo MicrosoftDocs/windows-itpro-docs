@@ -17,7 +17,7 @@ author: brianlic-msft
 
 This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
 
-## 
+## <a href="" id="bkmk-over"></a>
 
 
 BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
@@ -28,7 +28,7 @@ On computers that do not have a TPM version 1.2 or later, you can still use BitL
 
 In addition to the TPM, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device, such as a USB flash drive, that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer will not start or resume from hibernation until the correct PIN or startup key is presented.
 
-## Practical applications
+## <a href="" id="bkmk-app"></a>Practical applications
 
 
 Data on a lost or stolen computer is vulnerable to unauthorized access, either by running a software-attack tool against it or by transferring the computer's hard disk to a different computer. BitLocker helps mitigate unauthorized data access by enhancing file and system protections. BitLocker also helps render data inaccessible when BitLocker-protected computers are decommissioned or recycled.
@@ -41,7 +41,7 @@ There are two additional tools in the Remote Server Administration Tools, which 
 
 -   **BitLocker Drive Encryption Tools**. BitLocker Drive Encryption Tools include the command-line tools, manage-bde and repair-bde, and the BitLocker cmdlets for Windows PowerShell. Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the BitLocker control panel, and they are appropriate to use for automated deployments and other scripting scenarios. Repair-bde is provided for disaster recovery scenarios in which a BitLocker protected drive cannot be unlocked normally or by using the recovery console.
 
-## New and changed functionality
+## <a href="" id="bkmk-new"></a>New and changed functionality
 
 
 To find out what's new in BitLocker for Windows 10, see [What's new in BitLocker?](../whats-new/bitlocker.md)

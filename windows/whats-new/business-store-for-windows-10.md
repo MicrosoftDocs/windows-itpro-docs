@@ -52,7 +52,7 @@ You'll need this software to work with the Store for Business.
 
 -   IT Pros that are administering Store for Business need a browser compatible with Store for Business running on a PC or mobile device. Supported browsers include: Internet Explorer 10 or later, Microsoft Edge, or current versions of Chrome or Firefox.
 
--   Employees using apps from Store for Business need Windows 10, Version 1511 running on a PC or mobile device.
+-   Employees using apps from Store for Business need Windows 10, version 1511 running on a PC or mobile device.
 
 Microsoft Azure Active Directory (AD) accounts for your employees:
 
@@ -153,7 +153,7 @@ Line-of-business (LOB) apps are also supported via the Business store. You can i
 
 The Business store supports two options to license apps: online and offline. **Online** licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require users and devices to connect to the Store for Business service to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center.
 
-For more information, see [Apps in the Store for Business](../manage/apps-in-the-windows-store-for-business.md#licensing_model).
+For more information, see [Apps in the Store for Business](../manage/apps-in-the-windows-store-for-business.md#licensing-model).
 
 ### Distribute apps and content
 
@@ -302,7 +302,7 @@ Store for Business is currently available in these markets.
 
 -   Vietnam
 
-## ISVs and the Store for Business
+## <a href="" id="isv-wsfb"></a>ISVs and the Store for Business
 
 
 Developers in your organization, or ISVs can create content specific to your organization. In the Store for Business, we call these app line-of-business (LOB) apps, and the devs that create them are LOB publishers. The process looks like this:

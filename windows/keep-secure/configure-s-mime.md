@@ -19,13 +19,13 @@ author: brianlic-msft
 
 **In this article**
 
--   [About message encryption](#about_message_encryption)
--   [About digital signatures](#about_digital_signatures)
+-   [About message encryption](#about-message-encryption)
+-   [About digital signatures](#about-digital-signatures)
 -   [Prerequisites](#prerequisites)
--   [Choose S/MIME settings](#choose_s_mime_settings)
--   [Encrypt or sign individual messages](#encrypt_or_sign_individual_messages)
--   [Read signed or encrypted messages](#read_signed_or_encrypted_messages)
--   [Install certificates from a received message](#install_certificates_from_a_received_message)
+-   [Choose S/MIME settings](#choose-s-mime-settings)
+-   [Encrypt or sign individual messages](#encrypt-or-sign-individual-messages)
+-   [Read signed or encrypted messages](#read-signed-or-encrypted-messages)
+-   [Install certificates from a received message](#install-certificates-from-a-received-message)
 
 S/MIME stands for Secure/Multipurpose Internet Mail Extensions, and provides an added layer of security for email sent to and from an Exchange ActiveSync (EAS) account. In Windows 10, S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them. Users can digitally sign a message, which provides the recipients with a way to verify the identity of the sender and that the message hasn't been tampered with.
 

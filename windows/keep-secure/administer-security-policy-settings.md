@@ -17,13 +17,13 @@ author: brianlic-msft
 
 **In this article**
 
--   [What’s changed in how settings are administered?](#what_s_changed_in_how_settings_are_administered_)
--   [Using the Local Security Policy snap-in](#BKMK_SecPol)
--   [Using the secedit command-line tool](#BKMK_Secedit)
--   [Using the Security Compliance Manager](#BKMK_SCM)
--   [Using the Security Configuration Wizard](#BKMK_SCW)
--   [Working with the Security Configuration Manager](#BKMK_SCMtool)
--   [Working with Group Policy tools](#BKMK_GroupPolicy)
+-   [What’s changed in how settings are administered?](#what-s-changed-in-how-settings-are-administered-)
+-   [Using the Local Security Policy snap-in](#bkmk-secpol)
+-   [Using the secedit command-line tool](#bkmk-secedit)
+-   [Using the Security Compliance Manager](#bkmk-scm)
+-   [Using the Security Configuration Wizard](#bkmk-scw)
+-   [Working with the Security Configuration Manager](#bkmk-scmtool)
+-   [Working with Group Policy tools](#bkmk-grouppolicy)
 
 This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 
@@ -49,7 +49,7 @@ To manage security configurations for multiple computers, you can use one of the
 
 -   Use the Security Templates snap-in to create a security template that contains the security policies you want to apply, and then import the security template into a Group Policy Object. A security template is a file that represents a security configuration, and it can be imported to a GPO, or applied to a local device, or it can be used to analyze security.
 
-## What’s changed in how settings are administered?
+## <a href="" id="what-s-changed-in-how-settings-are-administered-"></a>What’s changed in how settings are administered?
 
 
 Over time, new ways to manage security policy settings have been introduced, which include new operating system features and the addition of new settings. The following table lists different means by which security policy settings can be administered.
@@ -67,31 +67,31 @@ Over time, new ways to manage security policy settings have been introduced, whi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Security Policy snap-in](#BKMK_SecPol)</p></td>
+<td align="left"><p>[Security Policy snap-in](#bkmk-secpol)</p></td>
 <td align="left"><p>Secpol.msc</p>
 <p>MMC snap-in designed to manage only security policy settings.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Security editor command line tool](#BKMK_Secedit)</p></td>
+<td align="left"><p>[Security editor command line tool](#bkmk-secedit)</p></td>
 <td align="left"><p>Secedit.exe</p>
 <p>Configures and analyzes system security by comparing your current configuration to specified security templates.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Security Compliance Manager](#BKMK_SCM)</p></td>
+<td align="left"><p>[Security Compliance Manager](#bkmk-scm)</p></td>
 <td align="left"><p>Tool download</p>
 <p>A Solution Accelerator that helps you plan, deploy, operate, and manage your security baselines for Windows client and server operating systems, and Microsoft applications.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Security Configuration Wizard](#BKMK_SCW)</p></td>
+<td align="left"><p>[Security Configuration Wizard](#bkmk-scw)</p></td>
 <td align="left"><p>Scw.exe</p>
 <p>SCW is a role-based tool available on servers only: You can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Security Configuration Manager tool](#BKMK_SCMtool)</p></td>
+<td align="left"><p>[Security Configuration Manager tool](#bkmk-scmtool)</p></td>
 <td align="left"><p>This tool set allows you to create, apply, and edit the security for your local device, organizational unit, or domain.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Group Policy](#BKMK_GroupPolicy)</p></td>
+<td align="left"><p>[Group Policy](#bkmk-grouppolicy)</p></td>
 <td align="left"><p>Gpmc.msc and Gpedit.msc</p>
 <p>The Group Policy Management Console uses the Group Policy Object editor to expose the local Security options, which can then be incorporated into Group Policy Objects for distribution throughout the domain. The Local Group Policy Editor performs similar functions on the local device.</p></td>
 </tr>
@@ -112,7 +112,7 @@ Over time, new ways to manage security policy settings have been introduced, whi
 
  
 
-## Using the Local Security Policy snap-in
+## <a href="" id="bkmk-secpol"></a>Using the Local Security Policy snap-in
 
 
 The Local Security Policy snap-in (Secpol.msc) restricts the view of local policy objects to the following policies and features:
@@ -137,9 +137,9 @@ The Local Security Policy snap-in (Secpol.msc) restricts the view of local polic
 
 Policies set locally might be overwritten if the computer is joined to the domain.
 
-The Local Security Policy snap-in is part of the Security Configuration Manager tool set. For info about other tools in this tool set, see [Working with the Security Configuration Manager](#BKMK_SCMtool) in this topic.
+The Local Security Policy snap-in is part of the Security Configuration Manager tool set. For info about other tools in this tool set, see [Working with the Security Configuration Manager](#bkmk-scmtool) in this topic.
 
-## Using the secedit command-line tool
+## <a href="" id="bkmk-secedit"></a>Using the secedit command-line tool
 
 
 The secedit command-line tool works with security templates and provides six primary functions:
@@ -156,7 +156,7 @@ The secedit command-line tool works with security templates and provides six pri
 
 -   The **Generate Rollback** parameter saves the server’s current security settings into a security template so it can be used to restore most of the server’s security settings to a known state. The exceptions are that, when applied, the rollback template will not change access control list entries on files or registry entries that were changed by the most recently applied template.
 
-## Using the Security Compliance Manager
+## <a href="" id="bkmk-scm"></a>Using the Security Compliance Manager
 
 
 The Security Compliance Manager is a downloadable tool that helps you plan, deploy, operate, and manage your security baselines for Windows client and server operating systems, and for Microsoft applications. It contains a complete database of recommended security settings, methods to customize your baselines, and the option to implement those settings in multiple formats—including XLS, GPOs, Desired Configuration Management (DCM) packs, or Security Content Automation Protocol (SCAP). The Security Compliance Manager is used to export the baselines to your environment to automate the security baseline deployment and compliance verification process.
@@ -171,7 +171,7 @@ The Security Compliance Manager is a downloadable tool that helps you plan, depl
 
 4.  Open the Help and follow instructions how to customize, compare, or merge your security baselines before deploying those baselines.
 
-## Using the Security Configuration Wizard
+## <a href="" id="bkmk-scw"></a>Using the Security Configuration Wizard
 
 
 The Security Configuration Wizard (SCW) guides you through the process of creating, editing, applying, or rolling back a security policy. A security policy that you create with SCW is an .xml file that, when applied, configures services, network security, specific registry values, and audit policy. SCW is a role-based tool: You can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles. For example, a server might be a file server, a print server, or a domain controller.
@@ -211,7 +211,7 @@ The Security Policy Wizard configures services and network security based on the
 
 For more information about SCW, including procedures, see [Security Configuration Wizard](http://technet.microsoft.com/library/cc754997.aspx).
 
-## Working with the Security Configuration Manager
+## <a href="" id="bkmk-scmtool"></a>Working with the Security Configuration Manager
 
 
 The Security Configuration Manager tool set allows you to create, apply, and edit the security for your local device, organizational unit, or domain.
@@ -233,19 +233,19 @@ The following table lists the features of the Security Configuration Manager.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Security Configuration and Analysis](#BKMK_SecCfgAna)</p></td>
+<td align="left"><p>[Security Configuration and Analysis](#bkmk-seccfgana)</p></td>
 <td align="left"><p>Defines a security policy in a template. These templates can be applied to Group Policy or to your local computer.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Security templates](#BKMK_SecTmpl)</p></td>
+<td align="left"><p>[Security templates](#bkmk-sectmpl)</p></td>
 <td align="left"><p>Defines a security policy in a template. These templates can be applied to Group Policy or to your local computer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Security Settings extension to Group Policy](#BKMK_SecExtensions)</p></td>
+<td align="left"><p>[Security Settings extension to Group Policy](#bkmk-secextensions)</p></td>
 <td align="left"><p>Edits individual security settings on a domain, site, or organizational unit.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Local Security Policy](#BKMK_LocalSecPol)</p></td>
+<td align="left"><p>[Local Security Policy](#bkmk-localsecpol)</p></td>
 <td align="left"><p>Edits individual security settings on your local computer.</p></td>
 </tr>
 <tr class="odd">
@@ -257,11 +257,11 @@ The following table lists the features of the Security Configuration Manager.
 
  
 
-### Security Configuration and Analysis
+### <a href="" id="bkmk-seccfgana"></a>Security Configuration and Analysis
 
 Security Configuration and Analysis is an MMC snap-in for analyzing and configuring local system security.
 
-### Security analysis
+### <a href="" id="h2-359808543"></a>Security analysis
 
 The state of the operating system and apps on a device is dynamic. For example, you may need to temporarily change security levels so that you can immediately resolve an administration or network issue. However, this change can often go unreversed. This means that a computer may no longer meet the requirements for enterprise security.
 
@@ -269,11 +269,11 @@ Regular analysis enables you to track and ensure an adequate level of security o
 
 Security Configuration and Analysis enables you to quickly review security analysis results. It presents recommendations alongside of current system settings and uses visual flags or remarks to highlight any areas where the current settings do not match the proposed level of security. Security Configuration and Analysis also offers the ability to resolve any discrepancies that analysis reveals.
 
-### Security configuration
+### <a href="" id="h2-359810173"></a>Security configuration
 
 Security Configuration and Analysis can also be used to directly configure local system security. Through its use of personal databases, you can import security templates that have been created with Security Templates and apply these templates to the local computer. This immediately configures the system security with the levels specified in the template.
 
-### Security templates
+### <a href="" id="bkmk-sectmpl"></a>Security templates
 
 With the Security Templates snap-in for Microsoft Management Console, you can create a security policy for your device or for your network. It is a single point of entry where the full range of system security can be taken into account. The Security Templates snap-in does not introduce new security parameters, it simply organizes all existing security attributes into one place to ease security administration.
 
@@ -311,7 +311,7 @@ Security templates can be used to define:
 
 Each template is saved as a text-based .inf file. This enables you to copy, paste, import, or export some or all of the template attributes. With the exceptions of Internet Protocol security and public key policies, all security attributes can be contained in a security template.
 
-### Security settings extension to Group Policy
+### <a href="" id="bkmk-secextensions"></a>Security settings extension to Group Policy
 
 Organizational units, domains, and sites are linked to Group Policy Objects. The security settings tool allows you change the security configuration of the Group Policy Object, in turn, affecting multiple computers. With security settings, you can modify the security settings of many devices, depending on the Group Policy Object you modify, from just one device joined to a domain.
 
@@ -331,7 +331,7 @@ You can change the security configuration on multiple computers in two ways:
 
 -   Change a few select settings with security settings.
 
-### Local Security Policy
+### <a href="" id="bkmk-localsecpol"></a>Local Security Policy
 
 A security policy is a combination of security settings that affect the security on a device. You can use your local security policy to edit account policies and local policies on your local device
 
@@ -359,17 +359,17 @@ If you modify the security settings on your local device by using the local secu
 
 For procedures on how to use the Security Configuration Manager, see [Security Configuration Manager How To](http://technet.microsoft.com/library/cc784762(WS.10).aspx). This section contains information in this topic about:
 
--   [Applying security settings](#BKMK_ApplySecSettings)
+-   [Applying security settings](#bkmk-applysecsettings)
 
--   [Importing and exporting security templates](#BKMK_ImpExpSecTmpl)
+-   [Importing and exporting security templates](#bkmk-impexpsectmpl)
 
--   [Analyzing security and viewing results](#BKMK_AnaSecViewResults)
+-   [Analyzing security and viewing results](#bkmk-anasecviewresults)
 
--   [Resolving security discrepancies](#BKMK_ResolveSecDiffs)
+-   [Resolving security discrepancies](#bkmk-resolvesecdiffs)
 
--   [Automating security configuration tasks](#BKMK_AutoSecCfgTasks)
+-   [Automating security configuration tasks](#bkmk-autoseccfgtasks)
 
-### Applying security settings
+### <a href="" id="bkmk-applysecsettings"></a>Applying security settings
 
 Once you have edited the security settings, the settings are refreshed on the computers in the organizational unit linked to your Group Policy Object:
 
@@ -418,13 +418,13 @@ Registry and file settings will maintain the values applied through policy until
 
 You can also decide what users or groups will or will not have a Group Policy Object applied to them regardless of what computer they have logged onto by denying them either the Apply Group Policy or Read permission on that Group Policy Object. Both of these permissions are needed to apply Group Policy.
 
-### Importing and exporting security templates
+### <a href="" id="bkmk-impexpsectmpl"></a>Importing and exporting security templates
 
 Security Configuration and Analysis provides the ability to import and export security templates into or from a database.
 
 If you have made any changes to the analysis database, you can save those settings by exporting them into a template. The export feature provides the ability to save the analysis database settings as a new template file. This template file can then be used to analyze or configure a system, or it can be imported to a Group Policy Object.
 
-### Analyzing security and viewing results
+### <a href="" id="bkmk-anasecviewresults"></a>Analyzing security and viewing results
 
 Security Configuration and Analysis performs security analysis by comparing the current state of system security against an *analysis database*. During creation, the analysis database uses at least one security template. If you choose to import more than one security template, the database will merge the various templates and create one composite template. It resolves conflicts in order of import; the last template that is imported takes precedence.
 
@@ -472,7 +472,7 @@ If you choose to accept the current settings, the corresponding value in the bas
 
 To avoid continued flagging of settings that you have investigated and determined to be reasonable, you can modify the base configuration. The changes are made to a copy of the template.
 
-### Resolving security discrepancies
+### <a href="" id="bkmk-resolvesecdiffs"></a>Resolving security discrepancies
 
 You can resolve discrepancies between analysis database and system settings by:
 
@@ -486,13 +486,13 @@ Changes to the analysis database are made to the stored template in the database
 
 You should use **Configure Computer Now** only to modify security areas *not* affected by Group Policy settings, such as security on local files and folders, registry keys, and system services. Otherwise, when the Group Policy settings are applied, it will take precedence over local settings—such as account policies. In general, do not use **Configure Computer Now** when you are analyzing security for domain-based clients, since you will have to configure each client individually. In this case, you should return to Security Templates, modify the template, and reapply it to the appropriate Group Policy Object.
 
-### Automating security configuration tasks
+### <a href="" id="bkmk-autoseccfgtasks"></a>Automating security configuration tasks
 
 By calling the secedit.exe tool at a command prompt from a batch file or automatic task scheduler, you can use it to automatically create and apply templates, and analyze system security. You can also run it dynamically from a command prompt.
 
 Secedit.exe is useful when you have multiple devices on which security must be analyzed or configured, and you need to perform these tasks during off-hours.
 
-## Working with Group Policy tools
+## <a href="" id="bkmk-grouppolicy"></a>Working with Group Policy tools
 
 
 Group Policy is an infrastructure that allows you to specify managed configurations for users and computers through Group Policy settings and Group Policy Preferences. For Group Policy settings that affect only a local device or user, you can use the Local Group Policy Editor. You can manage Group Policy settings and Group Policy Preferences in an Active Directory Domain Services (AD DS) environment through the Group Policy Management Console (GPMC). Group Policy management tools also are included in the Remote Server Administration Tools pack to provide a way for you to administer Group Policy settings from your desktop.

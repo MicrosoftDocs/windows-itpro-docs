@@ -27,17 +27,17 @@ Before signing up for the Store for Business, make sure you're the global admini
 
 1.  Go to [https://www.microsoft.com/business-store](http://go.microsoft.com/fwlink/p/?LinkId=691845), and click **Sign up**.
 
-    -   If you start the Store for Business sign up process, and don't have an Azure AD directory for your organization, we'll help you create one. For more info, see [Sign up for Azure AD accounts](#o365_welcome).
+    -   If you start the Store for Business sign up process, and don't have an Azure AD directory for your organization, we'll help you create one. For more info, see [Sign up for Azure AD accounts](#o365-welcome).
 
     <!-- -->
 
-    -   If you already have an Azure AD directory, you'll [sign in to Store for Business](#sign_in), and then accept Store for Business terms.
+    -   If you already have an Azure AD directory, you'll [sign in to Store for Business](#sign-in), and then accept Store for Business terms.
 
     ![](images/wsfb-landing.png)
 
     **To sign up for Azure AD accounts through Office 365 for Business**
 
-    -   Signing up for Store for Business will create an Azure AD directory and global administrator account for you. There are just a few steps.
+    -   <a href="" id="o365-welcome"></a>Signing up for Store for Business will create an Azure AD directory and global administrator account for you. There are just a few steps.
 
         Step 1: About you.
 
@@ -71,11 +71,11 @@ Before signing up for the Store for Business, make sure you're the global admini
 
     -   At this point, you'll have an Azure AD directory created with one user account. That user account is the global administrator. You can use that account to sign in to Store for Business.
 
-2.  Sign in with your Azure AD account.
+2.  <a href="" id="sign-in"></a>Sign in with your Azure AD account.
 
     ![](images/wsfb-onboard-7.png)
 
-3.  Read through and accept Store for Business terms.
+3.  <a href="" id="accept-terms"></a>Read through and accept Store for Business terms.
 
 4.  Welcome to the Store for Business. Click **Next** to continue.
 

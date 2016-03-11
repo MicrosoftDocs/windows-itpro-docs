@@ -46,7 +46,7 @@ The **&lt;OperatingSystem&gt; - Application Report** screen shows the following 
 
 2.  In the **Quick Reports** pane, under an operating system heading, click **Applications**.
 
-## Using the &lt;OperatingSystem&gt; - Application Report Screen
+## <a href="" id="using-the--operatingsystem----application-report-screen"></a>Using the &lt;OperatingSystem&gt; - Application Report Screen
 
 
 On the **&lt;OperatingSystem&gt; - Application Report** screen, you can perform the following actions:

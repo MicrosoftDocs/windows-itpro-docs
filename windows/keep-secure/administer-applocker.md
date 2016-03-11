@@ -100,7 +100,7 @@ For more info about enhanced capabilities of AppLocker to control Windows apps, 
 
  
 
-## Using the MMC snap-ins to administer AppLocker
+## <a href="" id="bkmk-using-snapins"></a>Using the MMC snap-ins to administer AppLocker
 
 
 You can administer AppLocker policies by using the Group Policy Management Console to create or edit a Group Policy Object (GPO), or to create or edit an AppLocker policy on a local computer by using the Local Group Policy Editor snap-in or the Local Security Policy snap-in (secpol.msc).

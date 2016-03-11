@@ -20,20 +20,20 @@ Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education t
 
 PCs that meet the Windows 7 or later [certification requirements](http://go.microsoft.com/fwlink/p/?LinkId=618711) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
 
--   [Differences between Windows To Go and a typical installation of Windows](#BKMK_wtgdif)
+-   [Differences between Windows To Go and a typical installation of Windows](#bkmk-wtgdif)
 
--   [Roaming with Windows To Go](#BKMK_wtgroam)
+-   [Roaming with Windows To Go](#bkmk-wtgroam)
 
--   [Prepare for Windows To Go](#wtg_prep_intro)
+-   [Prepare for Windows To Go](#wtg-prep-intro)
 
--   [Hardware considerations for Windows To Go](#wtg_hardware)
+-   [Hardware considerations for Windows To Go](#wtg-hardware)
 
 **Note**  
 Windows To Go is not supported on Windows RT.
 
  
 
-## Differences between Windows To Go and a typical installation of Windows
+## <a href="" id="bkmk-wtgdif"></a>Differences between Windows To Go and a typical installation of Windows
 
 
 Windows To Go workspace operates just like any other installation of Windows with a few exceptions. These exceptions are:
@@ -50,14 +50,14 @@ Windows To Go workspace operates just like any other installation of Windows wit
 
 -   **Upgrading a Windows To Go workspace is not supported.** Older Windows 8 or Windows 8.1 Windows To Go workspaces cannot be upgraded to Windows 10 workspaces, nor can Windows 10 Windows To Go workspaces be upgraded to future versions of Windows 10. For new versions, the workspace needs to be re-imaged with a fresh image of Windows.
 
-## Roaming with Windows To Go
+## <a href="" id="bkmk-wtgroam"></a>Roaming with Windows To Go
 
 
 Windows To Go drives can be booted on multiple computers. When a Windows To Go workspace is first booted on a host computer it will detect all hardware on the computer and install any needed drivers. When the Windows To Go workspace is subsequently booted on that host computer it will be able to identify the host computer and load the correct set of drivers automatically.
 
 The applications that you want to use from the Windows To Go workspace should be tested to make sure they also support roaming. Some applications bind to the computer hardware which will cause difficulties if the workspace is being used with multiple host computers.
 
-## Prepare for Windows To Go
+## <a href="" id="wtg-prep-intro"></a>Prepare for Windows To Go
 
 
 Enterprises install Windows on a large group of computers either by using configuration management software (such as System Center Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
@@ -83,7 +83,7 @@ What remote connectivity solution should be supported in the image if Windows To
 
 For more information about designing and planning your Windows To Go deployment, see [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md).
 
-## Hardware considerations for Windows To Go
+## <a href="" id="wtg-hardware"></a>Hardware considerations for Windows To Go
 
 
 **For USB drives**

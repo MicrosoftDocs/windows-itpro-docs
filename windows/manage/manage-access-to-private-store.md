@@ -21,7 +21,7 @@ The private store is a feature in Store for Business that organizations receive 
 
 ![](images/wsfb-wsappprivatestore.png)
 
-Organizations using an MDM to manage apps can use a policy to show only the private store. When your MDM supports the Store for Business, the MDM can use the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#group_policy_table). More specifically, the **ApplicationManagement/RequirePrivateStoreOnly** policy.
+Organizations using an MDM to manage apps can use a policy to show only the private store. When your MDM supports the Store for Business, the MDM can use the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#group-policy-table). More specifically, the **ApplicationManagement/RequirePrivateStoreOnly** policy.
 
 You can also prevent employees from using the Windows Store. For more information, see [Configure access to Windows Store](stop-employees-from-using-the-windows-store.md).
 

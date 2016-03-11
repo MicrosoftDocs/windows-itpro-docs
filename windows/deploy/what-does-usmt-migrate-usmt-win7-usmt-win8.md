@@ -14,17 +14,17 @@ author: CFaw
 ## In This Topic
 
 
--   [Default Migration Scripts](#BKMK_DefaultMigScripts)
+-   [Default Migration Scripts](#bkmk-defaultmigscripts)
 
--   [User Data](#BKMK_3)
+-   [User Data](#bkmk-3)
 
--   [Operating-System Components](#BKMK_4)
+-   [Operating-System Components](#bkmk-4)
 
--   [Supported Applications](#BKMK_2)
+-   [Supported Applications](#bkmk-2)
 
 -   [What USMT Does Not Migrate](#no)
 
-## Default Migration Scripts
+## <a href="" id="bkmk-defaultmigscripts"></a>Default Migration Scripts
 
 
 The User State Migration Tool (USMT) 10.0 is designed so that an IT engineer can precisely define migrations using the USMT .xml scripting language. USMT provides the following sample scripts:
@@ -43,7 +43,7 @@ The User State Migration Tool (USMT) 10.0 is designed so that an IT engineer ca
 
     -   Access control lists (ACLs) for folders outside the user profile.
 
-## User Data
+## <a href="" id="bkmk-3"></a>User Data
 
 
 This section describes the user data that USMT migrates by default, using the MigUser.xml file. It also defines how to migrate ACLs.
@@ -84,7 +84,7 @@ To migrate ACLs, you must specify the directory to migrate in the MigUser.xml fi
 
  
 
-## Operating-System Components
+## <a href="" id="bkmk-4"></a>Operating-System Components
 
 
 USMT migrates operating-system components to a destination computer from computers running Windows 7 and Windows 8
@@ -151,7 +151,7 @@ Some settings, such as fonts, are not applied by the LoadState tool until after 
 
  
 
-## Supported Applications
+## <a href="" id="bkmk-2"></a>Supported Applications
 
 
 Although it is not required for all applications, it is good practice to install all applications on the destination computer before restoring the user state. Installing applications before migrating settings helps to ensure that the migrated settings are not overwritten by the application installers.
@@ -361,7 +361,7 @@ When you specify the MigApp.xml file, USMT migrates the settings for the followi
 
  
 
-## What USMT Does Not Migrate
+## <a href="" id="no"></a>What USMT Does Not Migrate
 
 
 The following is a list of the settings that USMT does not migrate. If you are having a problem that is not listed here, see [Common Issues](common-issues-usmt-win8.md).

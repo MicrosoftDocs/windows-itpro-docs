@@ -20,13 +20,13 @@ author: CFaw
 
 -   [Add DaRT 10 files and prepare to brand the boot image](#sec01)
 -   [Create a boot image for Configuration Manager using the MDT wizard](#sec02)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 In Microsoft System Center 2012 R2 Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features. This topic shows you how to create a custom Windows PE 5.0 boot image with the Microsoft Deployment Toolkit (MDT) 2013 Update 1 wizard. You can also add the Microsoft Diagnostics and Recovery Toolset (DaRT) 10 to the boot image as part of the boot image creation process.
 
 For the purposes of this topic, we will use two machines: DC01 and CM01. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 Standard. Both are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md).
 
-## Add DaRT 10 files and prepare to brand the boot image
+## <a href="" id="sec01"></a>Add DaRT 10 files and prepare to brand the boot image
 
 
 The steps below outline the process for adding DaRT 10 installation files to the MDT installation directory. You also copy a custom background image to be used later. We assume you have downloaded Microsoft Desktop Optimization Pack (MDOP) 2015 and copied the x64 version of MSDaRT10.msi to the C:\\Setup\\DaRT 10 folder. We also assume you have created a custom background image and saved it in C:\\Setup\\Branding on CM01. In this section, we use a custom background image named ContosoBackground.bmp.
@@ -43,7 +43,7 @@ The steps below outline the process for adding DaRT 10 installation files to the
 
 6.  Copy the **Branding** folder to **E:\\Sources\\OSD**.
 
-## Create a boot image for Configuration Manager using the MDT wizard
+## <a href="" id="sec02"></a>Create a boot image for Configuration Manager using the MDT wizard
 
 
 By using the MDT wizard to create the boot image in Configuration Manager, you gain additional options for adding components and features to the boot image. In this section, you create a boot image for Configuration Manager using the MDT wizard.

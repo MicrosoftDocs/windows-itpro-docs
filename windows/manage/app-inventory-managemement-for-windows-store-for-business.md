@@ -44,7 +44,7 @@ There are a couple of ways to find specific apps, or groups of apps in your inve
 
 **Refine** - Use **Refine** to scope your list of apps by one or more of these app attributes:
 
--   **License** - Online or offline licenses. For more info, see [Apps in Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing_model).
+-   **License** - Online or offline licenses. For more info, see [Apps in Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing-model).
 
 -   **Platforms** - Lists the devices that apps in your inventory were originally written to support. This list is cumulative for all apps in your inventory.
 
@@ -54,7 +54,7 @@ There are a couple of ways to find specific apps, or groups of apps in your inve
 
 ### Manage apps in your inventory
 
-Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing_model). There are different actions you can take depending on the app license type. They're summarized in this table.
+Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
 
 <table>
 <colgroup>
@@ -178,7 +178,7 @@ For each app in your inventory, you can view and manage license details. This gi
 
         Store for Business updates the list of assigned licenses.
 
-### Download offline-licensed app
+### <a href="" id="download-offline-licensed-apps"></a>Download offline-licensed app
 
 Offline licensing is a new feature in Windows 10 and allows apps to be deployed to devices that are not connected to the Internet. This means organizations can deploy apps when users or devices do not have connectivity to the Store.
 
@@ -192,9 +192,9 @@ You can download offline-licensed apps from your inventory. You'll need to downl
 
 -   App framework
 
-For more information about online and offline licenses, see [Apps in the Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing_model).
+For more information about online and offline licenses, see [Apps in the Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing-model).
 
-For more information about downloading offline-licensed apps, see [Download offline apps](../p_ent_manage_Update/download-offline-licensed-app.md).
+For more information about downloading offline-licensed apps, see [Download offline apps](../manage/download-offline-licensed-app.md).
 
  
 

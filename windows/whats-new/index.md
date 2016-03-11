@@ -29,7 +29,7 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 <tbody>
 <tr class="odd">
 <td align="left"><p>[Change history for What's new in Windows 10](change-history-for-what-s-new-in-windows-10.md)</p></td>
-<td align="left"><p>**This topic lists new and updated topics in the What's new in Windows 10 documentation for [Windows 10 and Windows 10 Mobile](../index.md).**</p></td>
+<td align="left"><p>This topic lists new and updated topics in the What's new in Windows 10 documentation for [Windows 10 and Windows 10 Mobile](../index.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[AppLocker](applocker.md)</p></td>

@@ -22,10 +22,10 @@ author: brianlic-msft
 -   [Identity and access control](#identity)
 -   [Information protection](#information)
 -   [Malware resistance](#malware)
--   [Secure the Windows core](#secure_the_windows_core)
--   [Secure the Windows desktop](#secure_the_windows_desktop)
+-   [Secure the Windows core](#secure-the-windows-core)
+-   [Secure the Windows desktop](#secure-the-windows-desktop)
 -   [Conclusion](#conclusion)
--   [Related topics](#related_topics)
+-   [Related topics](#related-topics)
 
 This guide provides a detailed description of the most important security improvements in the Windows 10 operating system, with links to more detailed articles about many of its security features. Wherever possible, specific recommendations are provided to help you implement and configure Windows 10 security features.
 
@@ -40,7 +40,7 @@ Windows 10 is designed to protect against known and emerging security threats a
 
 -   [**Malware resistance**](#malware) includes architectural changes that can isolate critical system and security components from threats. Several new features in Windows 10 help reduce the threat of malware, including VBS, Device Guard, Microsoft Edge, and an entirely new version of Windows Defender. In addition, the many antimalware features from the Windows 8.1 operating system— including AppContainers for application sandboxing and numerous boot-protection features, such as Trusted Boot—have been carried forward and improved in Windows 10.
 
-## Identity and access control
+## <a href="" id="identity"></a>Identity and access control
 
 
 Traditionally, access control is a process that has three components:
@@ -124,7 +124,7 @@ Microsoft Passport effectively mitigates two major security risks. First, it eli
 
 To compromise a Microsoft Passport credential that TPM protects, an attacker must have access to the physical device, and then must find a way to spoof the user’s biometrics or guess his or her PIN—and all of this must be done before TPM anti-hammer capabilities lock the device. This sets the bar magnitudes of order higher than password phishing attacks.
 
-### 
+### <a href="" id="windows-hello"></a>
 
 **Windows Hello**
 
@@ -156,7 +156,7 @@ Figure 1. Set the number of invalid access attempts prior to lockout
 
 Now, your PC is configured with brute-force protection. Restart your PC. When prompted to log on, mistype your password until the PC restarts. Now, try to guess the 48-character recovery key. You will be glad you printed it out beforehand.
 
-## Information protection
+## <a href="" id="information"></a>Information protection
 
 
 When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives; in Windows 10, BitLocker will even protect individual files, with data loss prevention capabilities. Windows consistently improves data protection by improving existing options and by providing new strategies.
@@ -344,7 +344,7 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 
 For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=626935) on the MDOP TechCenter.
 
-## Malware resistance
+## <a href="" id="malware"></a>Malware resistance
 
 
 In movies, security threats always seem to be initiated by a nefarious hacker sitting in front of a monitor with green text scrolling across it. In the real world, the vast majority of security threats occur without any human interaction at all. Just as software has automated so much of our lives, malware has automated attacks on our PCs. Those attacks are relentless. Malware is constantly changing, and when it infects a PC, it can in some cases be extremely difficult to detect and remove.
@@ -437,7 +437,7 @@ This behavior doesn’t limit the choice of operating system. In fact, users typ
 -   **Use an operating system with a Microsoft-signed bootloader.** Microsoft offers a service to sign non-Microsoft bootloaders so that they can be used on the device. In this case, a signature from the Microsoft third-party UEFI CA is used to sign the non-Microsoft bootloader, and the signature itself is added to the UEFI database. Several non-Microsoft operating systems, including several varieties of Linux, have had their bootloaders signed by Microsoft so that they can take advantage of the Secure Boot capability. For more information about the Microsoft third-party UEFI signing policy, read [Microsoft UEFI CA Signing policy updates](http://go.microsoft.com/fwlink/p/?LinkId=626936) and [Pre-submission testing for UEFI submissions](http://go.microsoft.com/fwlink/p/?LinkId=626937).
 
     **Note**  
-    PCs configured to use Device Guard boot only a secured version of Windows and do not permit a third-party bootloader. For more information, see the [Device Guard](#device_guard) section of this document.
+    PCs configured to use Device Guard boot only a secured version of Windows and do not permit a third-party bootloader. For more information, see the [Device Guard](#device-guard) section of this document.
 
      
 
@@ -462,7 +462,7 @@ Think of the VBS environment as a miniature operating system: It has its own ker
 
 -   **Local Security Authority (LSA)** enforces Windows authentication and authorization policies. LSA is a well-known security component that has been part of Windows since 1993. Sensitive portions of LSA are isolated within the VBS environment and are protected by a new feature called Credential Guard.
 
--   **Hypervisor-enforced code integrity** verifies the integrity of kernel-mode code prior to execution. This is a part of the [Device Guard](#device_guard) feature described later in this document.
+-   **Hypervisor-enforced code integrity** verifies the integrity of kernel-mode code prior to execution. This is a part of the [Device Guard](#device-guard) feature described later in this document.
 
 VBS provides two major improvements in Windows 10 security: a new trust boundary between key Windows system components and a secure execution environment within which they run. A trust boundary between key Windows system components is enabled though the VBS environment’s use of platform virtualization to isolate the VBS environment from the Windows operating system. Running the VBS environment and Windows operating system as guests on top of Hyper-V and the processor’s virtualization extensions inherently prevents the guests from interacting with each other outside the limited and highly structured communication channels between the trustlets within the VBS environment and Windows operating system.
 
@@ -504,7 +504,7 @@ The functionality a TPM provides includes:
 
 Microsoft combined this small list of TPM benefits with Windows 10 and other hardware security technologies to provide practical security and privacy benefits.
 
-Among other functions, Windows 10 uses the TPM to protect the encryption keys for BitLocker volumes, virtual smart cards, certificates, and the many other keys that the TPM is used to generate. Windows 10 also uses the TPM to securely record and protect integrity-related measurements of select hardware and Windows boot components for the [Measured Boot](#measure_boot) feature described later in this document. In this scenario, Measured Boot measures each component, from firmware up through the drivers, and then stores those measurements in the PC’s TPM. From there, you can test the measurement log remotely so that a separate system verifies the boot state of the Windows 10 PC.
+Among other functions, Windows 10 uses the TPM to protect the encryption keys for BitLocker volumes, virtual smart cards, certificates, and the many other keys that the TPM is used to generate. Windows 10 also uses the TPM to securely record and protect integrity-related measurements of select hardware and Windows boot components for the [Measured Boot](#measure-boot) feature described later in this document. In this scenario, Measured Boot measures each component, from firmware up through the drivers, and then stores those measurements in the PC’s TPM. From there, you can test the measurement log remotely so that a separate system verifies the boot state of the Windows 10 PC.
 
 Windows 10 supports TPM implementations that comply with either the 1.2 or 2.0 standards. Several improvements have been made in the TPM 2.0 standard, the most notable of which is cryptographic agility. TPM 1.2 is restricted to a fixed set of encryption and hash algorithms. At the time the TPM 1.2 standard was created in the early 2000s, these algorithms were considered cryptographically strong. Since that time, advances in cryptographic algorithms and cryptanalysis attacks have increased expectations for stronger cryptography. TPM 2.0 supports additional algorithms that offer stronger cryptographic protection as well as the ability to plug in algorithms that may be preferred in certain geographies or industries. It also opens the possibility for inclusion of future algorithms without changing the TPM component itself.
 
@@ -531,7 +531,7 @@ All of these features are covered in this document.
 
 **Biometrics**
 
-You read in the [Windows Hello](#Windows_Hello) section of this document that Windows 10 has built-in support for biometric hardware. Windows has included some amount of built-in biometric support since the Windows XP operating system, so what’s different about this in Windows 10?
+You read in the [Windows Hello](#windows-hello) section of this document that Windows 10 has built-in support for biometric hardware. Windows has included some amount of built-in biometric support since the Windows XP operating system, so what’s different about this in Windows 10?
 
 Windows 10 makes biometrics a core security feature. Biometrics is fully integrated into the Windows 10 security components, not just tacked on as an extra part of a larger scheme. This is a big change. Earlier biometric implementations were largely front-end methods to simplify authentication. Under the hood, biometrics was used to access a password, which was then used for authentication behind the scenes. Biometrics may have provided convenience but not necessarily enterprise-grade authentication.
 
@@ -559,7 +559,7 @@ The design is simple but effective. ELAM is a component of a full-featured antim
 
 If you want to learn how to configure ELAM, you can use Group Policy settings to configure how ELAM responds to potentially malicious boot drivers. In the Group Policy Management Editor, go to Computer Configuration\\Administrative Templates\\System\\Early Launch Antimalware, and enable the **Boot-Start Driver Initialization Policy** setting. Now, you can select which driver classifications ELAM loads. When you select the **Good Only** setting, it provides the highest level of security, but test it thoroughly to ensure that it does not prevent users with healthy PCs from starting.
 
-### 
+### <a href="" id="measure-boot"></a>
 
 **Measured Boot**
 
@@ -608,7 +608,7 @@ Applications built for Windows are designed to be secure and free of defects, bu
 
 To mitigate these risks, Windows 10 includes core improvements to make it more difficult for malware to perform buffer overflow, heap spraying, and other low-level attacks and even which code is allowed to run on the PC. In addition, these improvements dramatically reduce the likelihood that newly discovered vulnerabilities result in a successful exploit. It takes detailed knowledge of operating system architecture and malware exploit techniques to fully appreciate the impact of these improvements, but the sections that follow explain them at a high level.
 
-### 
+### <a href="" id="device-guard"></a>
 
 **Device Guard**
 
@@ -662,7 +662,7 @@ The core functionality and protection of Device Guard starts at the hardware lev
 
 Device Guard leverages VBS to isolate its Hypervisor Code Integrity (HVCI) service, which enables Device Guard to protect all kernel mode processes and drivers from vulnerability exploits and zero days. HVCI uses the processor’s IOMMU functionality to force all software running in kernel mode to safely allocate memory. This means that after memory has been allocated, its state must be changed from writable to read only or execute only. By forcing memory into these states, it helps ensure that attacks are unable to inject malicious code into kernel mode processes and drivers through techniques such as buffer overruns or heap spraying. In the end, the VBS environment protects the Device Guard HVCI service from tampering even if the operating system’s kernel has been fully compromised, and HVCI protects kernel mode processes and drivers so that a compromise of this magnitude can’t happen in the first place.
 
-Another Windows 10 feature that employs VBS is Credential Guard. Credential Guard protects credentials by running the Windows authentication service known as LSA, and then storing the user’s derived credentials (for example, NTLM hashes; Kerberos tickets) within the same VBS environment that Device Guard uses to protect its HVCI service. By isolating the LSA service and the user’s derived credentials from both user mode and kernel mode, an attacker that has compromised the operating system core will still be unable to tamper with authentication or access derived credential data. Credential Guard prevents pass-the-hash and ticket types of attacks, which are central to the success of nearly every major network breach you’ve read about, which makes Credential Guard one of the most impactful and important features to deploy within your environment. For more information about how Credential Guard complements Device Guard, see the [Device Guard with Credential Guard](#DGwithCG) section.
+Another Windows 10 feature that employs VBS is Credential Guard. Credential Guard protects credentials by running the Windows authentication service known as LSA, and then storing the user’s derived credentials (for example, NTLM hashes; Kerberos tickets) within the same VBS environment that Device Guard uses to protect its HVCI service. By isolating the LSA service and the user’s derived credentials from both user mode and kernel mode, an attacker that has compromised the operating system core will still be unable to tamper with authentication or access derived credential data. Credential Guard prevents pass-the-hash and ticket types of attacks, which are central to the success of nearly every major network breach you’ve read about, which makes Credential Guard one of the most impactful and important features to deploy within your environment. For more information about how Credential Guard complements Device Guard, see the [Device Guard with Credential Guard](#dgwithcg) section.
 
 **Device Guard with AppLocker**
 
@@ -677,7 +677,7 @@ In another example, you could enable a configurable code integrity policy to all
 
 AppLocker and Device Guard can run side-by-side in your organization, which offers the best of both security features at the same time and provides the most comprehensive security to as many devices as possible. In addition to these features, Microsoft recommends that you continue to maintain an enterprise antivirus solution for a well-rounded enterprise security portfolio.
 
-### 
+### <a href="" id="dgwithcg"></a>
 
 **Device Guard with Credential Guard**
 

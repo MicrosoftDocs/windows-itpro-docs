@@ -31,59 +31,59 @@ For info about which versions of Windows support which versions of the TPM, see 
 
 The following sections provide an overview of the technologies that support the TPM:
 
--   [TPM-based Virtual Smart Card](#BKMK_VSC)
+-   [TPM-based Virtual Smart Card](#bkmk-vsc)
 
--   [Measured Boot with support for attestation](#BKMK_MeasuredBoot)
+-   [Measured Boot with support for attestation](#bkmk-measuredboot)
 
--   [Automated provisioning and management of the TPM](#BKMK_AutoProv)
+-   [Automated provisioning and management of the TPM](#bkmk-autoprov)
 
--   [TPM-based certificate storage](#BKMK_TPMCS)
+-   [TPM-based certificate storage](#bkmk-tpmcs)
 
--   [Physical presence interface](#BKMK_PhysicalPresenceInterface)
+-   [Physical presence interface](#bkmk-physicalpresenceinterface)
 
--   [TPM Cmdlets](#BKMK_TPMcmdlets)
+-   [TPM Cmdlets](#bkmk-tpmcmdlets)
 
--   [TPM Owner Authorization Value](#BKMK_AuthValue)
+-   [TPM Owner Authorization Value](#bkmk-authvalue)
 
--   [States of existence in a TPM](#BKMK_stateex)
+-   [States of existence in a TPM](#bkmk-stateex)
 
--   [Endorsement keys](#BKMK_EndorsementKeys)
+-   [Endorsement keys](#bkmk-endorsementkeys)
 
--   [TPM Key Attestation](#BKMK_KetAttestation)
+-   [TPM Key Attestation](#bkmk-ketattestation)
 
--   [How the TPM mitigates dictionary attacks](#BKMK_HowTPMmitigates)
+-   [How the TPM mitigates dictionary attacks](#bkmk-howtpmmitigates)
 
--   [How do I check the state of my TPM?](#BKMK_CheckState)
+-   [How do I check the state of my TPM?](#bkmk-checkstate)
 
--   [What can I do if my TPM is in reduced functionality mode?](#BKMK_FixRFM)
+-   [What can I do if my TPM is in reduced functionality mode?](#bkmk-fixrfm)
 
 The following topic describes the TPM Services that can be controlled centrally by using Group Policy settings:
 
 [Trusted Platform Module Services Group Policy Settings](trusted-platform-module-services-group-policy-settings.md)
 
-## Automated provisioning and management of the TPM
+## <a href="" id="bkmk-autoprov"></a>Automated provisioning and management of the TPM
 
 
 TPM provisioning can be streamlined to make it easier to deploy systems that are ready for BitLocker and other TPM-dependent features. These enhancements include simplifying the TPM state model to report **Ready**, **Ready with reduced functionality**, or **Not ready**. You can also automatically provision TPMs in the **Ready** state, remote provisioning to remove the requirement for the physical presence of a technician for the initial deployment. In addition, the TPM stack is available in the Windows Preinstallation Environment (Windows PE).
 
 A number of management settings have been added for easier management and configuration of the TPM through Group Policy. The primary new settings include Active Directory-based backup of TPM owner authentication, the level of owner authentication that should be stored locally on the TPM, and the software-based TPM lockout settings for standard users. For more info about backing up owner authentication to Windows Server 2008 R2 AD DS domains, see [AD DS schema extensions to support TPM backup](schema-extensions-for-windows-server-2008-r2-to-support-ad-ds-backup-of-tpm-information-from-windows-8-clients.md).
 
-## Measured Boot with support for attestation
+## <a href="" id="bkmk-measuredboot"></a>Measured Boot with support for attestation
 
 
 The Measured Boot feature provides antimalware software with a trusted (resistant to spoofing and tampering) log of all boot components. Antimalware software can use the log to determine whether components that ran before it are trustworthy versus infected with malware. It can also send the Measured Boot logs to a remote server for evaluation. The remote server can initiate remediation actions by interacting with software on the client or through out-of-band mechanisms, as appropriate.
 
-## TPM-based Virtual Smart Card
+## <a href="" id="bkmk-vsc"></a>TPM-based Virtual Smart Card
 
 
 The Virtual Smart Card emulates the functionality of traditional smart cards, but Virtual Smart Cards use the TPM chip that is available on an organization’s computers, rather than requiring the use of a separate physical smart card and reader. This greatly reduces the management and deployment cost of smart cards in an enterprise. To the end user, the Virtual Smart Card is always available on the computer. If a user needs to use more than one computer, a Virtual Smart Card must be issued to the user for each computer. A computer that is shared among multiple users can host multiple Virtual Smart Cards, one for each user.
 
-## TPM-based certificate storage
+## <a href="" id="bkmk-tpmcs"></a>TPM-based certificate storage
 
 
 The TPM can be used to protect certificates and RSA keys. The TPM key storage provider (KSP) provides easy, convenient use of the TPM as a way of strongly protecting private keys. The TPM KSP can be used to generate keys when an organization enrolls for certificates, and the KSP is managed by templates in the UI. The TPM can also be used to protect certificates that are imported from an outside source. TPM-based certificates can be used exactly as standard certificates with the added functionality that the certificate can never leave the TPM from which the keys were generated. The TPM can now be used for crypto-operations through Cryptography API: Next Generation (CNG). For more info, see [Cryptography API: Next Generation](http://msdn.microsoft.com/library/windows/desktop/aa376210.aspx).
 
-## TPM Owner Authorization Value
+## <a href="" id="bkmk-authvalue"></a>TPM Owner Authorization Value
 
 
 For Windows 8 a change to how the TPM owner authorization value is stored in AD DS was implemented in the AD DS schema. The TPM owner authorization value is now stored in a separate object which is linked to the Computer object. This value was stored as a property in the Computer object itself for the default Windows Server 2008 R2 schemas. Windows Server 2012 domain controllers have the default schema to backup TPM owner authorization information in the separate object. If you are not upgrading your domain controller to Windows Server 2012 you need to extend the schema to support this change. If Active Directory backup of the TPM owner authorization value is enabled in a Windows Server 2008 R2 environment without extending the schema, the TPM provisioning will fail and the TPM will remain in a Not Ready state for computers running Windows 8.
@@ -130,7 +130,7 @@ If the operating system managed TPM authentication setting is changed from "Full
 
  
 
-## TPM Cmdlets
+## <a href="" id="bkmk-tpmcmdlets"></a>TPM Cmdlets
 
 
 If you are using PowerShell to script and manage your computers, you can now manage the TPM using Windows PowerShell as well. To install the TPM cmdlets use the following command:
@@ -139,7 +139,7 @@ If you are using PowerShell to script and manage your computers, you can now man
 
 For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
 
-## Physical presence interface
+## <a href="" id="bkmk-physicalpresenceinterface"></a>Physical presence interface
 
 
 The TCG specifications for TPMs require physical presence to perform some TPM administrative functions, such as turning on and turning off the TPM. Physical presence means a person must physically interact with the system and the TPM interface to confirm or reject changes to TPM status. This typically cannot be automated with scripts or other automation tools unless the individual OEM supplies them. Here are some are examples of TPM administrative tasks that require physical presence:
@@ -149,7 +149,7 @@ The TCG specifications for TPMs require physical presence to perform some TPM ad
 -   Deactivating the TPM
 -   Disabling the TPM temporarily without the owner’s password
 
-## States of existence in a TPM
+## <a href="" id="bkmk-stateex"></a>States of existence in a TPM
 
 
 For each of these TPM 1.2 states of existence, the TPM can transition into another state (for example, moving from disabled to enabled). The states are not exclusive.
@@ -206,19 +206,19 @@ Applications cannot use the TPM until the state is enabled, activated, and owned
 
 The state of the TPM exists independently of the computer’s operating system. When the TPM is enabled, activated, and owned, the state of the TPM is preserved if the operating system is reinstalled.
 
-## Endorsement keys
+## <a href="" id="bkmk-endorsementkeys"></a>Endorsement keys
 
 
 For a TPM to be usable by a trusted application, it must contain an endorsement key, which is an RSA key pair. The private half of the key pair is held inside the TPM, and it is never revealed or accessible outside the TPM. If the TPM does not contain an endorsement key, the application might cause the TPM to generate one automatically as part of the setup.
 
 An endorsement key can be created at various points in the TPM’s lifecycle, but it needs to be created only once for the lifetime of the TPM. The existence of an endorsement key is a requirement before TPM ownership can be taken.
 
-## Key attestation
+## <a href="" id="bkmk-ketattestation"></a>Key attestation
 
 
 TPM key attestation allows a certification authority to verify that a private key is actually protected by a TPM and that the TPM is one that the certification authority trusts. Endorsement keys which have been proven valid can be used to bind the user identity to a device. Moreover, the user certificate with a TPM attested key provides higher security assurance backed up by the non-exportability, anti-hammering, and isolation of keys provided by a TPM.
 
-## How the TPM mitigates dictionary attacks
+## <a href="" id="bkmk-howtpmmitigates"></a>How the TPM mitigates dictionary attacks
 
 
 When a TPM processes a command, it does so in a protected environment, for example, a dedicated microcontroller on a discrete chip or a special hardware-protected mode on the main CPU. A TPM can be used to create a cryptographic key that is not disclosed outside the TPM, but is able to be used in the TPM after the correct authorization value is provided.
@@ -262,12 +262,12 @@ Hardware manufacturers and software developers have the option to use the securi
 
 The intent of selecting 32 failures as the lock-out threshold is so users rarely lock the TPM (even when learning to type new passwords or if they frequently lock and unlock their computers). If users lock the TPM, they must to wait two hours or use some other credential to sign in, such as a user name and password.
 
-## How do I check the state of my TPM?
+## <a href="" id="bkmk-checkstate"></a>How do I check the state of my TPM?
 
 
 You can check the state of the TPM on a PC by running the Trusted Platform Module snap-in (tpm.msc). The **Status** heading tells you the state of your TPM. The TPM can be in one of the following states: **Ready for use**, **Ready for use, with reduced functionality**, and **Not ready for use**. To take advantage of most of the TPM features in Windows 10, the TPM must be **Ready for use**.
 
-## What can I do if my TPM is in reduced functionality mode?
+## <a href="" id="bkmk-fixrfm"></a>What can I do if my TPM is in reduced functionality mode?
 
 
 If your TPM is in reduced functionality mode, some features that rely on the TPM will not function correctly. This is most often caused by doing a clean installation of Windows 10 on a device where Windows 8.1, Windows 8, or Windows 7 had previously been installed on the same hardware. If your TPM is in reduced functionality mode, the Status heading in the Trusted Platform Module snap-in shows **The TPM is ready for use, with reduced functionality**. You can fix this by clearing the TPM.

@@ -17,7 +17,7 @@ author: brianlic-msft
 
 This topic for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
 
-## About TPM lockout
+## <a href="" id="bkmk-lockout1"></a>About TPM lockout
 
 
 The TPM will lock itself to prevent tampering or malicious attacks. TPM lockout often lasts for a variable amount of time or until the computer is turned off. While the TPM is in lockout mode, it generally returns an error message when it receives commands that require an authorization value. One exception is that the TPM always allows the owner at least one attempt to reset the TPM lockout when it is in lockout mode.
@@ -59,21 +59,21 @@ The TPM Group Policy settings in the following list are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
--   [Standard User Lockout Duration](trusted-platform-module-services-group-policy-settings.md#BKMK_Individual)
+-   [Standard User Lockout Duration](trusted-platform-module-services-group-policy-settings.md#bkmk-individual)
 
     This policy setting allows you to manage the duration in minutes for counting standard user authorization failures for TPM commands that require authorization. An authorization failure occurs each time a user sends a command to the TPM and receives an error message that indicates an authorization failure occurred. Authorization failures that are older than the duration you set are ignored. If the number of TPM commands with an authorization failure within the lockout duration equals a threshold, the user is prevented from sending commands to the TPM that require authorization.
 
--   [Standard User Individual Lockout Threshold](trusted-platform-module-services-group-policy-settings.md#BKMK_tpmgp_suld)
+-   [Standard User Individual Lockout Threshold](trusted-platform-module-services-group-policy-settings.md#bkmk-tpmgp-suld)
 
     This policy setting allows you to manage the maximum number of authorization failures for the TPM for each user. This value is the maximum number of authorization failures that each user can have before the user is not allowed to send commands to the TPM that require authorization. If the number of authorization failures equals the duration that is set for the policy setting, the user is prevented from sending commands to the TPM that require authorization.
 
--   [Standard User Total Lockout Threshold](trusted-platform-module-services-group-policy-settings.md#BKMK_Total)
+-   [Standard User Total Lockout Threshold](trusted-platform-module-services-group-policy-settings.md#bkmk-total)
 
     This policy setting allows you to manage the maximum number of authorization failures for the TPM for all standard users. If the total number of authorization failures for all users equals the duration that is set for the policy, all users are prevented from sending commands to the TPM that require authorization.
 
-For information about mitigating dictionary attacks that use the lockout settings, see [TPM fundamentals](tpm-fundamentals-windows-8.md#BKMK_HowTPMmitigates).
+For information about mitigating dictionary attacks that use the lockout settings, see [TPM fundamentals](tpm-fundamentals-windows-8.md#bkmk-howtpmmitigates).
 
-## Use the TPM cmdlets
+## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 
 
 If you are using Windows PowerShell to manage your computers, you can also manage the TPM by using Windows PowerShell. To install the TPM cmdlets, type the following command:
@@ -85,7 +85,7 @@ For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell
 ## Additional resources
 
 
-For more info about TPM, see [TPM technology overview](trusted-platform-module-technology-overview.md#BKMK_AdditionalResources).
+For more info about TPM, see [TPM technology overview](trusted-platform-module-technology-overview.md#bkmk-additionalresources).
 
  
 

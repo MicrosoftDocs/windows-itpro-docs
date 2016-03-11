@@ -16,13 +16,13 @@ This topic outlines the general process that you should follow to migrate files 
 ## In this Topic
 
 
--   [Step One: Plan Your Migration](#BKMK_PlanMig)
+-   [Step One: Plan Your Migration](#bkmk-planmig)
 
--   [Step Two: Collect Files and Settings from the Source Computer](#BKMK_CollectFiles)
+-   [Step Two: Collect Files and Settings from the Source Computer](#bkmk-collectfiles)
 
--   [Step Three: Prepare the Destination Computer and Restore Files and Settings](#BKMK_PrepareDestination)
+-   [Step Three: Prepare the Destination Computer and Restore Files and Settings](#bkmk-preparedestination)
 
-## Step One: Plan Your Migration
+## <a href="" id="bkmk-planmig"></a>Step One: Plan Your Migration
 
 
 1.  [Plan Your Migration](plan-your-migration-usmt-win7-usmt-win8.md). Depending on whether your migration scenario is refreshing or replacing computers, you can choose an online migration or an offline migration using Windows Preinstallation Environment (WinPE) or the files in the Windows.old directory. For more information, see [Common Migration Scenarios](common-migration-scenarios-usmt-win7-usmt-win8.md).
@@ -48,7 +48,7 @@ This topic outlines the general process that you should follow to migrate files 
 
 7.  Review the migration state of the components listed in the Config.xml file, and specify `migrate=no` for any components that you do not want to migrate.
 
-## Step Two: Collect Files and Settings from the Source Computer
+## <a href="" id="bkmk-collectfiles"></a>Step Two: Collect Files and Settings from the Source Computer
 
 
 1.  Back up the source computer.
@@ -71,7 +71,7 @@ This topic outlines the general process that you should follow to migrate files 
 
 4.  Run the **USMTUtils** command with the **/Verify** option to ensure that the store you created is not corrupted.
 
-## Step Three: Prepare the Destination Computer and Restore Files and Settings
+## <a href="" id="bkmk-preparedestination"></a>Step Three: Prepare the Destination Computer and Restore Files and Settings
 
 
 1.  Install the operating system on the destination computer.
