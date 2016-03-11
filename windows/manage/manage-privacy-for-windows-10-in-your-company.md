@@ -33,7 +33,7 @@ Here's what's covered in this article:
 
 -   [Info management settings](#bkmk-othersettings)
 
-    -   [1. Cortana](1-cortana)
+    -   [1. Cortana](#1-cortana)
 
         -   [1.1 Cortana Group Policies](#bkmk-cortana-gp)
 
