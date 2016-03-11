@@ -33,7 +33,7 @@ Here's what's covered in this article:
 
 -   [Info management settings](#bkmk-othersettings)
 
-    -   [1. Cortana](#bkmk-cortana)
+    -   [1. Cortana](1-cortana)
 
         -   [1.1 Cortana Group Policies](#bkmk-cortana-gp)
 
@@ -239,7 +239,7 @@ See the following table for a summary of the management settings. For more info,
 
 ![](images/priv-settings-table-1511.png)
 
-### <a href="" id="bkmk-cortana"></a>1. Cortana
+### 1. Cortana
 
 Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ]( http://go.microsoft.com/fwlink/p/?LinkId=730683).
 
