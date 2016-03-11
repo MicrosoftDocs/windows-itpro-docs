@@ -18,7 +18,6 @@ author: CFaw
 
 **In this article**
 
--   [](#)
 -   [Related topics](#related-topics)
 
 In this topic, you will learn how to monitor a Windows 10 deployment that was started previously using Microsoft System Center 2012 R2 Configuration Manager and the Microsoft Deployment Toolkit (MDT) Deployment Workbench. You will also use the Deployment Workbench to access the computer remotely via the Microsoft Diagnostics and Recovery Toolkit (DaRT) Remote Connection feature.

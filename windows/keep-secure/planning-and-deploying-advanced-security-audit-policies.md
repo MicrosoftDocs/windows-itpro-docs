@@ -531,7 +531,7 @@ In addition, a growing number of organizations are being required to store archi
 
 Before deploying the audit policy in a production environment, it is critical that you determine the effects of the policy settings that you have configured.
 
-The first step in assessing your audit policy deployment is to create a test environment in a lab and use it to simulate the various use scenarios that you have identified to confirm that the audit settings you have selected are configured correctly and generate the type of results you intend. For more information about setting up a lab environment for testing security audit policy, see the [Advanced security auditing walkthrough](../keep-secure/advanced-security-auditing-walkthrough.md).
+The first step in assessing your audit policy deployment is to create a test environment in a lab and use it to simulate the various use scenarios that you have identified to confirm that the audit settings you have selected are configured correctly and generate the type of results you intend.
 
 However, unless you are able to run fairly realistic simulations of network usage patterns, a lab setup cannot provide you with accurate information about the volume of audit data that the audit policy settings you selected will generate and how effective your plan for monitoring audit data will be. To provide this type of information, you need to conduct one or more pilot deployments. These pilot deployments could involve:
 
