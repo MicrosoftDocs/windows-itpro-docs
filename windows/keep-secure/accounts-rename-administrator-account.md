@@ -1,6 +1,7 @@
 ---
-title: Accounts-- Rename administrator account (Windows 10)
-description: This security policy reference topic for the IT professional describes the best practices, location, values, and security considerations for this policy setting.
+title: Accounts Rename administrator account (Windows 10)
+description: This security policy reference topic for the IT professional describes the best practices location values and security considerations for this policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: d21308eb-7c60-4e48-8747-62b8109844f9
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,8 +1,9 @@
 ---
 title: Simulate a Windows 10 deployment in a test environment (Windows 10)
 description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
+MSHAttr: PreferredLib /library
 ms.assetid: 2de86c55-ced9-4078-b280-35e0329aea9c
-keywords: ["deploy, script,"]
+keywords: ["deploy script"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

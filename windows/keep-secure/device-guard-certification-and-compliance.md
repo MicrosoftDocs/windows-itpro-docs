@@ -1,6 +1,7 @@
 ---
 title: Device Guard certification and compliance (Windows 10)
-description: Device Guard is a combination of hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications.
+description: Device Guard is a combination of hardware and software security features that when configured together will lock a device down so that it can only run trusted applications.
+MSHAttr: PreferredLib /library
 ms.assetid: 94167ECA-AB08-431D-95E5-7A363F42C7E3
 ms.prod: W10
 ms.mktglfcycl: deploy

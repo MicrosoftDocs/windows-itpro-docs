@@ -1,6 +1,7 @@
 ---
-title: Microsoft network server-- Attempt S4U2Self to obtain claim information (Windows 10)
-description: Describes the best practices, location, values, management, and security considerations for the Microsoft network server-- Attempt S4U2Self to obtain claim information security policy setting.
+title: Microsoft network server Attempt S4U2Self to obtain claim information (Windows 10)
+description: Describes the best practices location values management and security considerations for the Microsoft network server Attempt S4U2Self to obtain claim information security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: e4508387-35ed-4a3f-a47c-27f8396adbba
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Toolbar Icons in ACM (Windows 10)
 description: The following table shows icons that appear on toolbars and navigational elements in Application Compatibility Manager (ACM).
+MSHAttr: PreferredLib /library
 ms.assetid: 44872da1-c7ad-41b9-8323-d3c3f49b2706
 ms.prod: W10
 ms.mktglfcycl: operate

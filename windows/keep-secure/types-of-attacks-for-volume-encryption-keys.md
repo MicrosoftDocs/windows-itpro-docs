@@ -1,6 +1,7 @@
 ---
 title: Types of attacks for volume encryption keys (Windows 10)
-description: There are many ways Windows helps protect your organization from attacks, including Unified Extensible Firmware Interface (UEFI) secure boot, Trusted Platform Module (TPM), Group Policy, complex passwords, and account lockouts.
+description: There are many ways Windows helps protect your organization from attacks including Unified Extensible Firmware Interface (UEFI) secure boot Trusted Platform Module (TPM) Group Policy complex passwords and account lockouts.
+MSHAttr: PreferredLib /library
 ms.assetid: 405060a9-2009-44fc-9f84-66edad32c6bc
 ms.prod: W10
 ms.mktglfcycl: deploy

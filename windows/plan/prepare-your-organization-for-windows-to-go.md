@@ -1,8 +1,9 @@
 ---
 title: Prepare your organization for Windows To Go (Windows 10)
 description: Prepare your organization for Windows To Go
+MSHAttr: PreferredLib /library
 ms.assetid: f3f3c160-90ad-40a8-aeba-2aedee18f7ff
-keywords: ["mobile, device, USB, deploy"]
+keywords: ["mobile device USB deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,6 +1,7 @@
 ---
 title: Audit IPsec Main Mode (Windows 10)
-description: This topic for the IT professional describes the advanced security audit policy setting, Audit IPsec Main Mode, which determines whether the operating system generates events for the results of the Internet Key Exchange (IKE) protocol and Authenticated Internet Protocol (AuthIP) during Main Mode negotiations.
+description: This topic for the IT professional describes the advanced security audit policy setting Audit IPsec Main Mode which determines whether the operating system generates events for the results of the Internet Key Exchange (IKE) protocol and Authenticated Internet Protocol (AuthIP) during Main Mode negotiations.
+MSHAttr: PreferredLib /library
 ms.assetid: 06ed26ec-3620-4ef4-a47a-c70df9c8827b
 ms.prod: W10
 ms.mktglfcycl: deploy

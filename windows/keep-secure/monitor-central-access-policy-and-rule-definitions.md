@@ -1,6 +1,7 @@
 ---
 title: Monitor central access policy and rule definitions (Windows 10)
 description: This topic for the IT professional describes how to monitor changes to central access policy and central access rule definitions when you use advanced security auditing options to monitor dynamic access control objects.
+MSHAttr: PreferredLib /library
 ms.assetid: 553f98a6-7606-4518-a3c5-347a33105130
 ms.prod: W10
 ms.mktglfcycl: deploy

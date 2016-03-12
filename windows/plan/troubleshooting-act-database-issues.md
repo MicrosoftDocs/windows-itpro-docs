@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting ACT Database Issues (Windows 10)
 description: The following solutions may help you resolve issues that are related to your Microsoft® SQL Server® database for the Application Compatibility Toolkit (ACT).
+MSHAttr: PreferredLib /library
 ms.assetid: c36ab5d8-cc82-4681-808d-3d491551b75e
 ms.prod: W10
 ms.mktglfcycl: operate

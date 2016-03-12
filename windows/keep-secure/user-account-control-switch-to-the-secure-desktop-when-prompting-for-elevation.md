@@ -1,6 +1,7 @@
 ---
-title: User Account Control-- Switch to the secure desktop when prompting for elevation (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the User Account Control-- Switch to the secure desktop when prompting for elevation security policy setting.
+title: User Account Control Switch to the secure desktop when prompting for elevation (Windows 10)
+description: Describes the best practices location values policy management and security considerations for the User Account Control Switch to the secure desktop when prompting for elevation security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 77a067db-c70d-4b02-9861-027503311b8b
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,5 +1,6 @@
 ---
 title: Activate using Key Management Service (Windows 10)
+MSHAttr: PreferredLib /library
 ms.assetid: f2417bfe-7d25-4e82-bc07-de316caa8dac
 description: 
 keywords: ["vamt", "volume activation", "activation", "windows activation"]

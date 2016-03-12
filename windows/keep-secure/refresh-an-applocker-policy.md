@@ -1,6 +1,7 @@
 ---
 title: Refresh an AppLocker policy (Windows 10)
 description: This topic for IT professionals describes the steps to force an update for an AppLocker policy.
+MSHAttr: PreferredLib /library
 ms.assetid: 3f24fcbc-3926-46b9-a1a2-dd036edab8a9
 ms.prod: W10
 ms.mktglfcycl: deploy

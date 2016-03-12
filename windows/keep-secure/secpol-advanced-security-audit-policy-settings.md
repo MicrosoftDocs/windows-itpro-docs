@@ -1,6 +1,7 @@
 ---
 title: Advanced security audit policy settings (Windows 10)
 description: Provides information about the advanced security audit policy settings that are available in Windows and the audit events that they generate.
+MSHAttr: PreferredLib /library
 ms.assetid: 6BF9A642-DBC3-4101-94A3-B2316C553CE3
 ms.prod: W10
 ms.mktglfcycl: deploy

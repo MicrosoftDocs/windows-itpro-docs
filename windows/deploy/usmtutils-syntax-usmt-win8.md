@@ -1,6 +1,7 @@
 ---
 title: UsmtUtils Syntax (Windows 10)
 description: UsmtUtils Syntax
+MSHAttr: PreferredLib /library
 ms.assetid: cdab7f2d-dd68-4016-b9ed-41ffa743b65c
 ms.prod: W10
 ms.mktglfcycl: deploy

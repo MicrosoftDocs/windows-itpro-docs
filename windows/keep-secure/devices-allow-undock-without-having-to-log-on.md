@@ -1,6 +1,7 @@
 ---
-title: Devices-- Allow undock without having to log on (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Devices-- Allow undock without having to log on security policy setting.
+title: Devices Allow undock without having to log on (Windows 10)
+description: Describes the best practices location values and security considerations for the Devices Allow undock without having to log on security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 1d403f5d-ad41-4bb4-9f4a-0779c1c14b8c
 ms.prod: W10
 ms.mktglfcycl: deploy

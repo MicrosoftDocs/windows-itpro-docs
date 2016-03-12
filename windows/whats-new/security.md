@@ -1,6 +1,7 @@
 ---
 title: What's new in Windows 10 security (Windows 10)
 description: There are several key client security improvements Microsoft has made in Windows 10.
+MSHAttr: PreferredLib /library
 ms.assetid: 6B8A5F7A-ABD3-416C-87B0-85F68B214C81
 keywords: ["secure", "data loss prevention", "multifactor authentication"]
 ms.prod: W10

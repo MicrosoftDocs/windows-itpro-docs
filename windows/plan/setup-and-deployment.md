@@ -1,6 +1,7 @@
 ---
 title: Setup and deployment (Windows 10)
 description: This article describes the basic features of a Windows Update for Business deployment.
+MSHAttr: PreferredLib /library
 ms.assetid: E176BB36-3B1B-4707-9665-968D80050DD1
 keywords: ["update", "upgrade", "deployment"]
 ms.prod: w10

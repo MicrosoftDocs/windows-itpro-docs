@@ -1,6 +1,7 @@
 ---
 title: Configure Client Computers (Windows 10)
 description: Configure Client Computers
+MSHAttr: PreferredLib /library
 ms.assetid: a48176c9-b05c-4dd5-a9ef-83073e2370fc
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Modify an object label (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Modify an object label security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Modify an object label security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 3e5a97dd-d363-43a8-ae80-452e866ebfd5
 ms.prod: W10
 ms.mktglfcycl: deploy

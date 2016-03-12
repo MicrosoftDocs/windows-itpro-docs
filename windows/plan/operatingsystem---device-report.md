@@ -1,5 +1,6 @@
 ---
-title: &lt;OperatingSystem&gt; - Device Report (Windows 10)
+title: OperatingSystem Device Report (Windows 10)
+MSHAttr: PreferredLib /library
 ms.assetid: 8b5a936f-a92e-46a7-ac44-6edace262355
 description: 
 ms.prod: W10

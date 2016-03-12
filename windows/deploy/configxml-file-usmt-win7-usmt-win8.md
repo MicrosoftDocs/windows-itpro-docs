@@ -1,6 +1,7 @@
 ---
 title: Config.xml File (Windows 10)
 description: Config.xml File
+MSHAttr: PreferredLib /library
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
 ms.prod: W10
 ms.mktglfcycl: deploy

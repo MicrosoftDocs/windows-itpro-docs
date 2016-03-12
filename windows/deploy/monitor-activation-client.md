@@ -1,5 +1,6 @@
 ---
 title: Monitor activation (Windows 10)
+MSHAttr: PreferredLib /library
 ms.assetid: 264a3e86-c880-4be4-8828-bf4c839dfa26
 description: 
 keywords: ["vamt", "volume activation", "activation", "windows activation"]

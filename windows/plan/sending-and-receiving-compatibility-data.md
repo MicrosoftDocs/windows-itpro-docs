@@ -1,6 +1,7 @@
 ---
 title: Sending and Receiving Compatibility Data (Windows 10)
-description: The Microsoft® Compatibility Exchange is a web service that propagates application compatibility issues between various data sources, for example Microsoft Corporation, independent software vendors (ISVs) and the ACT Community.
+description: The Microsoft® Compatibility Exchange is a web service that propagates application compatibility issues between various data sources for example Microsoft Corporation independent software vendors (ISVs) and the ACT Community.
+MSHAttr: PreferredLib /library
 ms.assetid: b86d2431-1caa-4f95-baf9-52ff6af546cd
 ms.prod: W10
 ms.mktglfcycl: operate

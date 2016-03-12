@@ -1,6 +1,7 @@
 ---
 title: Creating an AppHelp Message in Compatibility Administrator (Windows 10)
-description: The Compatibility Administrator tool enables you to create an AppHelp text message. This is a blocking or non-blocking message that appears when a user starts an application that you know has major functionality issues on the Windows® operating system.
+description: The Compatibility Administrator tool enables you to create an AppHelp text message. This is a blocking or non blocking message that appears when a user starts an application that you know has major functionality issues on the Windows® operating system.
+MSHAttr: PreferredLib /library
 ms.assetid: 5c6e89f5-1942-4aa4-8439-ccf0ecd02848
 ms.prod: W10
 ms.mktglfcycl: operate

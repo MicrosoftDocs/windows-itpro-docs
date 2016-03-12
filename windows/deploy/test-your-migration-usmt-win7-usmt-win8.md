@@ -1,6 +1,7 @@
 ---
 title: Test Your Migration (Windows 10)
 description: Test Your Migration
+MSHAttr: PreferredLib /library
 ms.assetid: 754af276-8386-4eac-8079-3d1e45964a0d
 ms.prod: W10
 ms.mktglfcycl: deploy

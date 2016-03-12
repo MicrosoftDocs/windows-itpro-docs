@@ -1,6 +1,7 @@
 ---
 title: Software Requirements for RAP (Windows 10)
-description: The runtime-analysis package (RAP) has the following software requirements.
+description: The runtime analysis package (RAP) has the following software requirements.
+MSHAttr: PreferredLib /library
 ms.assetid: 0163ce70-f5ba-400c-bdd5-a25511aac91f
 ms.prod: W10
 ms.mktglfcycl: operate

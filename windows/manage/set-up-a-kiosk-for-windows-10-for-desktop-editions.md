@@ -1,6 +1,7 @@
 ---
-title: Set up a kiosk on Windows 10 Pro, Enterprise, or Education (Windows 10)
-description: A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education).
+title: Set up a kiosk on Windows 10 Pro Enterprise or Education (Windows 10)
+description: A single use device is easy to set up in Windows 10 for desktop editions (Pro Enterprise and Education).
+MSHAttr: PreferredLib /library
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 keywords: ["assigned access", "kiosk", "lockdown"]
 ms.prod: W10
@@ -380,7 +381,7 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 [Set up a kiosk for Windows 10 for mobile edition](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 
-[Manage and update Windows 10]
+[Manage and update Windows 10](index.md)
 
  
 

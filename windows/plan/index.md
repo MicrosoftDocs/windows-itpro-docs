@@ -1,6 +1,7 @@
 ---
 title: Plan for Windows 10 deployment (Windows 10)
-description: Windows 10 provides new deployment capabilities, scenarios, and tools by building on technologies introduced in Windows 7, and Windows 8.1, while at the same time introducing new Windows as a service concepts to keep the operating system up to date.
+description: Windows 10 provides new deployment capabilities scenarios and tools by building on technologies introduced in Windows 7 and Windows 8.1 while at the same time introducing new Windows as a service concepts to keep the operating system up to date.
+MSHAttr: PreferredLib /library
 ms.assetid: 002F9B79-B50F-40C5-A7A5-0B4770E6EC15
 keywords: ["deploy", "upgrade", "update", "configure"]
 ms.prod: W10

@@ -1,6 +1,7 @@
 ---
-title: Get apps to run on Device Guard-protected devices (Windows 10)
-description: Windows 10 introduces several new features and settings that when combined all equal what we're calling, Device Guard.
+title: Get apps to run on Device Guard protected devices (Windows 10)
+description: Windows 10 introduces several new features and settings that when combined all equal what we're calling Device Guard.
+MSHAttr: PreferredLib /library
 ms.assetid: E62B68C3-8B9F-4842-90FC-B4EE9FF8A67E
 keywords: ["Package Inspector", "packageinspector.exe", "sign catalog file"]
 ms.prod: W10

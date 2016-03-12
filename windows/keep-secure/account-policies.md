@@ -1,6 +1,7 @@
 ---
 title: Account Policies (Windows 10)
 description: An overview of account policies in Windows and provides links to policy descriptions.
+MSHAttr: PreferredLib /library
 ms.assetid: 711b3797-b87a-4cd9-a2e3-1f8ef18688fb
 ms.prod: W10
 ms.mktglfcycl: deploy

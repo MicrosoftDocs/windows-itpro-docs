@@ -1,8 +1,9 @@
 ---
 title: Best practice recommendations for Windows To Go (Windows 10)
 description: Best practice recommendations for Windows To Go
+MSHAttr: PreferredLib /library
 ms.assetid: 05e6e0ab-94ed-4c0c-a195-0abd006f0a86
-keywords: ["best practices, USB, device, boot"]
+keywords: ["best practices USB device boot"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

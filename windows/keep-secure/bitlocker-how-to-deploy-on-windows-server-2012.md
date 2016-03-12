@@ -1,6 +1,7 @@
 ---
-title: BitLocker-- How to deploy on Windows Server 2012 and later (Windows 10)
+title: BitLocker How to deploy on Windows Server 2012 and later (Windows 10)
 description: This topic for the IT professional explains how to deploy BitLocker and Windows Server 2012 and later.
+MSHAttr: PreferredLib /library
 ms.assetid: 91c18e9e-6ab4-4607-8c75-d983bbe2542f
 ms.prod: W10
 ms.mktglfcycl: deploy

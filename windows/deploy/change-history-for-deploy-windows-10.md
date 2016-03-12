@@ -1,6 +1,7 @@
 ---
 title: Change history for Deploy Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Deploy Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+MSHAttr: PreferredLib /library
 ms.assetid: 19C50373-6B25-4F5C-A6EF-643D36904349
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -11,7 +12,7 @@ author: CFaw
 # Change history for Deploy Windows 10
 
 
-This topic lists new and updated topics in the [Deploy Windows 10] documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## December 2015
 

@@ -1,6 +1,7 @@
 ---
 title: Update Windows 10 images with provisioning packages (Windows 10)
-description: Use a provisioning package to apply settings, profiles, and file assets to a Windows 10 image.
+description: Use a provisioning package to apply settings profiles and file assets to a Windows 10 image.
+MSHAttr: PreferredLib /library
 ms.assetid: 3CA345D2-B60A-4860-A3BF-174713C3D3A6
 keywords: ["provisioning", "bulk deployment", "image"]
 ms.prod: W10

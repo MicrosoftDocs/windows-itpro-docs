@@ -1,6 +1,7 @@
 ---
 title: Change the time zone (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Change the time zone security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Change the time zone security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 3b1afae4-68bb-472f-a43e-49e300d73e50
 ms.prod: W10
 ms.mktglfcycl: deploy

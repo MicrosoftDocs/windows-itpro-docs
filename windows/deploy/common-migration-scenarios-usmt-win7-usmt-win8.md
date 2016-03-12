@@ -1,6 +1,7 @@
 ---
 title: Common Migration Scenarios (Windows 10)
 description: Common Migration Scenarios
+MSHAttr: PreferredLib /library
 ms.assetid: 1d8170d5-e775-4963-b7a5-b55e8987c1e4
 ms.prod: W10
 ms.mktglfcycl: deploy

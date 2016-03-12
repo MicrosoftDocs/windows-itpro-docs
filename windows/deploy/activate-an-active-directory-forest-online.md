@@ -1,6 +1,7 @@
 ---
 title: Activate an Active Directory Forest Online (Windows 10)
 description: Activate an Active Directory Forest Online
+MSHAttr: PreferredLib /library
 ms.assetid: 9b5bc193-799b-4aa5-9d3e-0e495f7195d3
 ms.prod: W10
 ms.mktglfcycl: deploy

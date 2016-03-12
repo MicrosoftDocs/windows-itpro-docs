@@ -1,6 +1,7 @@
 ---
 title: AppLocker processes and interactions (Windows 10)
 description: This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
+MSHAttr: PreferredLib /library
 ms.assetid: 0beec616-6040-4be7-8703-b6c919755d8e
 ms.prod: W10
 ms.mktglfcycl: deploy

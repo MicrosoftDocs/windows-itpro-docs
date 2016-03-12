@@ -1,6 +1,7 @@
 ---
 title: Device Guard signing (Windows 10)
 description: Device Guard signing is a Device Guard feature that is available in the Windows Store for Business.
+MSHAttr: PreferredLib /library
 ms.assetid: 8D9CD2B9-5FC6-4C3D-AA96-F135AFEEBB78
 ms.prod: W10
 ms.mktglfcycl: manage

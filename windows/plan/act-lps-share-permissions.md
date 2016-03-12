@@ -1,6 +1,7 @@
 ---
 title: ACT LPS Share Permissions (Windows 10)
-description: To upload log files to the ACT Log Processing Service (LPS) share, certain permissions must be set at the share level and folder level.
+description: To upload log files to the ACT Log Processing Service (LPS) share certain permissions must be set at the share level and folder level.
+MSHAttr: PreferredLib /library
 ms.assetid: 51f6ddf7-f424-4abe-a0e0-71fe616f9e84
 ms.prod: W10
 ms.mktglfcycl: operate

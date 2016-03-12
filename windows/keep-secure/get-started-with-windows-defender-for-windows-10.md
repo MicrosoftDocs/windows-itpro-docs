@@ -1,6 +1,7 @@
 ---
 title: Update and manage Windows Defender in Windows 10 (Windows 10)
-description: IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), and apply updates to endpoints.
+description: IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS) and apply updates to endpoints.
+MSHAttr: PreferredLib /library
 ms.assetid: 045F5BF2-87D7-4522-97E1-C1D508E063A7
 ms.prod: W10
 ms.mktglfcycl: manage

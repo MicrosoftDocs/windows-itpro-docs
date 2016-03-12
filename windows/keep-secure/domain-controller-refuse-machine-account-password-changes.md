@@ -1,6 +1,7 @@
 ---
-title: Domain controller-- Refuse machine account password changes (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Domain controller-- Refuse machine account password changes security policy setting.
+title: Domain controller Refuse machine account password changes (Windows 10)
+description: Describes the best practices location values and security considerations for the Domain controller Refuse machine account password changes security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 5a7fa2e2-e1a8-4833-90f7-aa83e3b456a9
 ms.prod: W10
 ms.mktglfcycl: deploy

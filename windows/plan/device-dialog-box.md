@@ -1,6 +1,7 @@
 ---
-title: &lt;Device&gt; Dialog Box (Windows 10)
-description: In Application Compatibility Manager (ACM), the &lt;Device&gt; dialog box shows information about the selected device.
+title: Device Dialog Box (Windows 10)
+description: In Application Compatibility Manager (ACM) the Device dialog box shows information about the selected device.
+MSHAttr: PreferredLib /library
 ms.assetid: 5bd7cfda-31ea-4967-8b64-6c0425092f4e
 ms.prod: W10
 ms.mktglfcycl: operate

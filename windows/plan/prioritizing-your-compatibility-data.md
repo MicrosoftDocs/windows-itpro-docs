@@ -1,5 +1,6 @@
 ---
 title: Prioritizing Your Compatibility Data (Windows 10)
+MSHAttr: PreferredLib /library
 ms.assetid: 103e125a-bd2b-4019-9d6a-2e1d50c380b1
 description: 
 ms.prod: W10

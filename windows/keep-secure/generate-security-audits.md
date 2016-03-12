@@ -1,6 +1,7 @@
 ---
 title: Generate security audits (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Generate security audits security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Generate security audits security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: c0e1cd80-840e-4c74-917c-5c2349de885f
 ms.prod: W10
 ms.mktglfcycl: deploy

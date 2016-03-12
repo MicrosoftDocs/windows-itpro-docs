@@ -1,8 +1,9 @@
 ---
 title: Create a custom Windows PE boot image with Configuration Manager (Windows 10)
-description: In Microsoft System Center 2012 R2 Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features.
+description: In Microsoft System Center 2012 R2 Configuration Manager you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features.
+MSHAttr: PreferredLib /library
 ms.assetid: b9e96974-324d-4fa4-b0ce-33cfc49c4809
-keywords: ["tool, customize, deploy, boot image"]
+keywords: ["tool customize deploy boot image"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

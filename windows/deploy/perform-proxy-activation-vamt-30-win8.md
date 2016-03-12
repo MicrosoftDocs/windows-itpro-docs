@@ -1,6 +1,7 @@
 ---
 title: Perform Proxy Activation (Windows 10)
 description: Perform Proxy Activation
+MSHAttr: PreferredLib /library
 ms.assetid: 35a919ed-f1cc-4d10-9c88-9bd634549dc3
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,5 +1,6 @@
 ---
 title: Compatibility Fix Database Management Strategies and Deployment (Windows 10)
+MSHAttr: PreferredLib /library
 ms.assetid: fdfbf02f-c4c4-4739-a400-782204fd3c6c
 description: 
 ms.prod: W10

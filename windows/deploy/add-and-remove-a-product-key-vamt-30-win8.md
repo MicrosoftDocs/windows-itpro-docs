@@ -1,6 +1,7 @@
 ---
 title: Add and Remove a Product Key (Windows 10)
 description: Add and Remove a Product Key
+MSHAttr: PreferredLib /library
 ms.assetid: feac32bb-fb96-4802-81b8-c69220dcfcce
 ms.prod: W10
 ms.mktglfcycl: deploy

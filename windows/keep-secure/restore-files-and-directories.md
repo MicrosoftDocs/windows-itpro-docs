@@ -1,6 +1,7 @@
 ---
 title: Restore files and directories (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Restore files and directories security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Restore files and directories security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: c673c0fa-6f49-4edd-8c1f-c5e8513f701d
 ms.prod: W10
 ms.mktglfcycl: deploy

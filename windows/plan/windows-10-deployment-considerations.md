@@ -1,8 +1,9 @@
 ---
 title: Windows 10 deployment considerations (Windows 10)
 description: There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications.
+MSHAttr: PreferredLib /library
 ms.assetid: A8DD6B37-1E11-4CD6-B588-92C2404219FE
-keywords: ["deploy", "upgrade", "update", "in-place"]
+keywords: ["deploy", "upgrade", "update", "in place"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library

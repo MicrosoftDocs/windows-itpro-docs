@@ -1,6 +1,7 @@
 ---
 title: Executable rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the executable rule collection.
+MSHAttr: PreferredLib /library
 ms.assetid: 65e62f90-6caa-48f8-836a-91f8ac9018ee
 ms.prod: W10
 ms.mktglfcycl: deploy

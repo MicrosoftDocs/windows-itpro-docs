@@ -1,8 +1,9 @@
 ---
 title: Configure MDT settings (Windows 10)
 description: One of the most powerful features in Microsoft Deployment Toolkit (MDT) 2013 is its extension capabilities; there is virtually no limitation to what you can do in terms of customization.
+MSHAttr: PreferredLib /library
 ms.assetid: d3e1280c-3d1b-4fad-8ac4-b65dc711f122
-keywords: ["customize, customization, deploy, features, tools"]
+keywords: ["customize customization deploy features tools"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

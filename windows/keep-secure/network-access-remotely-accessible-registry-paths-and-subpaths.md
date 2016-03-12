@@ -1,6 +1,7 @@
 ---
-title: Network access-- Remotely accessible registry paths and subpaths (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Network access-- Remotely accessible registry paths and subpaths security policy setting.
+title: Network access Remotely accessible registry paths and subpaths (Windows 10)
+description: Describes the best practices location values and security considerations for the Network access Remotely accessible registry paths and subpaths security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 3fcbbf70-a002-4f85-8e86-8dabad21928e
 ms.prod: W10
 ms.mktglfcycl: deploy

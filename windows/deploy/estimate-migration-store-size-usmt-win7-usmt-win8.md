@@ -1,6 +1,7 @@
 ---
 title: Estimate Migration Store Size (Windows 10)
 description: Estimate Migration Store Size
+MSHAttr: PreferredLib /library
 ms.assetid: cfb9062b-7a2a-467a-a24e-0b31ce830093
 ms.prod: W10
 ms.mktglfcycl: deploy

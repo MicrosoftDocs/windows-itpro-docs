@@ -1,6 +1,7 @@
 ---
 title: Installing and Uninstalling Custom Compatibility Databases in Compatibility Administrator (Windows 10)
-description: The Compatibility Administrator tool enables the creation and the use of custom-compatibility and standard-compatibility databases.
+description: The Compatibility Administrator tool enables the creation and the use of custom compatibility and standard compatibility databases.
+MSHAttr: PreferredLib /library
 ms.assetid: 659c9d62-5f32-433d-94aa-12141c01368f
 ms.prod: W10
 ms.mktglfcycl: operate

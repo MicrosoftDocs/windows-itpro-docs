@@ -1,6 +1,7 @@
 ---
-title: Domain member-- Digitally sign secure channel data (when possible) (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Domain member-- Digitally sign secure channel data (when possible) security policy setting.
+title: Domain member Digitally sign secure channel data (when possible) (Windows 10)
+description: Describes the best practices location values and security considerations for the Domain member Digitally sign secure channel data (when possible) security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: a643e491-4f45-40ea-b12c-4dbe47e54f34
 ms.prod: W10
 ms.mktglfcycl: deploy

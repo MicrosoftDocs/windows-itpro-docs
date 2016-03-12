@@ -1,6 +1,7 @@
 ---
 title: Creating and Editing Issues and Solutions (Windows 10)
-description: This section provides step-by-step instructions for adding and editing application compatibility issues and solutions. Your issue and solution data can be uploaded to Microsoft through the Microsoft® Compatibility Exchange.
+description: This section provides step by step instructions for adding and editing application compatibility issues and solutions. Your issue and solution data can be uploaded to Microsoft through the Microsoft® Compatibility Exchange.
+MSHAttr: PreferredLib /library
 ms.assetid: b64fe4e0-24bd-4bbd-9645-80ae5644e774
 ms.prod: W10
 ms.mktglfcycl: operate

@@ -1,6 +1,7 @@
 ---
 title: Create a Device Guard code integrity policy based on a reference device (Windows 10)
-description: To implement Device Guard app protection, you will need to create a code integrity policy. Code integrity policies determine what apps are considered trustworthy and are allowed to run on a protected device.
+description: To implement Device Guard app protection you will need to create a code integrity policy. Code integrity policies determine what apps are considered trustworthy and are allowed to run on a protected device.
+MSHAttr: PreferredLib /library
 ms.assetid: 6C94B14E-E2CE-4F6C-8939-4B375406E825
 ms.prod: W10
 ms.mktglfcycl: deploy

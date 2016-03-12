@@ -1,6 +1,7 @@
 ---
 title: Install VAMT (Windows 10)
 description: Install VAMT
+MSHAttr: PreferredLib /library
 ms.assetid: 2eabd3e2-0a68-43a5-8189-2947e46482fc
 ms.prod: W10
 ms.mktglfcycl: deploy

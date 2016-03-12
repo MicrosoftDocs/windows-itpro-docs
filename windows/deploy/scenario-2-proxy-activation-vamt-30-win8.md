@@ -1,6 +1,7 @@
 ---
-title: Scenario 2-- Proxy Activation (Windows 10)
-description: Scenario 2-- Proxy Activation
+title: Scenario 2 Proxy Activation (Windows 10)
+description: Scenario 2 Proxy Activation
+MSHAttr: PreferredLib /library
 ms.assetid: ed5a8a56-d9aa-4895-918f-dd1898cb2c1a
 ms.prod: W10
 ms.mktglfcycl: deploy

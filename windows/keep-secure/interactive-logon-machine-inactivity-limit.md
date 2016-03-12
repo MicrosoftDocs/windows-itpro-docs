@@ -1,6 +1,7 @@
 ---
-title: Interactive logon-- Machine inactivity limit (Windows 10)
-description: Describes the best practices, location, values, management, and security considerations for the Interactive logon-- Machine inactivity limit security policy setting.
+title: Interactive logon Machine inactivity limit (Windows 10)
+description: Describes the best practices location values management and security considerations for the Interactive logon Machine inactivity limit security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 7065b4a9-0d52-41d5-afc4-5aedfc4162b5
 ms.prod: W10
 ms.mktglfcycl: deploy

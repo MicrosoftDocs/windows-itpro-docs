@@ -1,6 +1,7 @@
 ---
 title: Manage packaged apps with AppLocker (Windows 10)
 description: This topic for IT professionals describes concepts and lists procedures to help you manage Packaged apps with AppLocker as part of your overall application control strategy.
+MSHAttr: PreferredLib /library
 ms.assetid: 6d0c99e7-0284-4547-a30a-0685a9916650
 ms.prod: W10
 ms.mktglfcycl: deploy

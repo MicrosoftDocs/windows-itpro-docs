@@ -1,6 +1,7 @@
 ---
 title: Change the system time (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Change the system time security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Change the system time security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: f2f6637d-acbc-4352-8ca3-ec563f918e65
 ms.prod: W10
 ms.mktglfcycl: deploy

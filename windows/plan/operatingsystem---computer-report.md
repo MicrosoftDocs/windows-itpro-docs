@@ -1,5 +1,6 @@
 ---
-title: &lt;OperatingSystem&gt; - Computer Report (Windows 10)
+title: OperatingSystem Computer Report (Windows 10)
+MSHAttr: PreferredLib /library
 ms.assetid: ed0a56fc-9f2a-4df0-8cef-3a09d6616de8
 description: 
 ms.prod: W10

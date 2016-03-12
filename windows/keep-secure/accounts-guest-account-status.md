@@ -1,6 +1,7 @@
 ---
-title: Accounts-- Guest account status (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Accounts-- Guest account status security policy setting.
+title: Accounts Guest account status (Windows 10)
+description: Describes the best practices location values and security considerations for the Accounts Guest account status security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 07e53fc5-b495-4d02-ab42-5b245d10d0ce
 ms.prod: W10
 ms.mktglfcycl: deploy

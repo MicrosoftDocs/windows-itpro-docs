@@ -1,8 +1,9 @@
 ---
 title: Deploy a Windows 10 image using MDT 2013 Update 1 (Windows 10)
-description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 1 specifically.
+description: This topic will show you how to take your reference image for Windows 10 and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT) and MDT 2013 Update 1 specifically.
+MSHAttr: PreferredLib /library
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
-keywords: ["deployment, automate, tools, configure"]
+keywords: ["deployment automate tools configure"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

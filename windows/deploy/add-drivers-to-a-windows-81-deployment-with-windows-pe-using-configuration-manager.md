@@ -1,8 +1,9 @@
 ---
 title: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager (Windows 10)
-description: In this topic, you will learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines.
+description: In this topic you will learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines.
+MSHAttr: PreferredLib /library
 ms.assetid: 97b3ea46-28d9-407e-8c42-ded2e45e8d5c
-keywords: ["deploy, task sequence"]
+keywords: ["deploy task sequence"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,6 +1,7 @@
 ---
 title: ACT Community Ratings and Process (Windows 10)
 description: The Application Compatibility Toolkit (ACT) Community uses the Microsoft® Compatibility Exchange to share compatibility ratings between all registered ACT Community members.
+MSHAttr: PreferredLib /library
 ms.assetid: be6c8c71-785b-4adf-a375-64ca7d24e26c
 ms.prod: W10
 ms.mktglfcycl: operate

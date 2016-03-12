@@ -1,6 +1,7 @@
 ---
 title: Introduction to VAMT (Windows 10)
 description: Introduction to VAMT
+MSHAttr: PreferredLib /library
 ms.assetid: 0439685e-0bae-4967-b0d4-dd84ca6d7fa7
 ms.prod: W10
 ms.mktglfcycl: deploy

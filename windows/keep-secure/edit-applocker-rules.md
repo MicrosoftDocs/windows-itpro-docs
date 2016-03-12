@@ -1,6 +1,7 @@
 ---
 title: Edit AppLocker rules (Windows 10)
-description: This topic for IT professionals describes the steps to edit a publisher rule, path rule, and file hash rule in AppLocker.
+description: This topic for IT professionals describes the steps to edit a publisher rule path rule and file hash rule in AppLocker.
+MSHAttr: PreferredLib /library
 ms.assetid: 80016cda-b915-46a0-83c6-5e6b0b958e32
 ms.prod: W10
 ms.mktglfcycl: deploy

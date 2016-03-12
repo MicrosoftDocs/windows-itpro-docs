@@ -1,6 +1,7 @@
 ---
 title: Exclude Files and Settings (Windows 10)
 description: Exclude Files and Settings
+MSHAttr: PreferredLib /library
 ms.assetid: df85baf1-6e29-4995-a4bb-ba3f8f7fed0b
 ms.prod: W10
 ms.mktglfcycl: deploy

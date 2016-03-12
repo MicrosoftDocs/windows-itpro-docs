@@ -1,6 +1,7 @@
 ---
 title: Packaged apps and packaged app installer rules in AppLocker (Windows 10)
 description: This topic explains the AppLocker rule collection for packaged app installers and packaged apps.
+MSHAttr: PreferredLib /library
 ms.assetid: 8fd44d08-a0c2-4c5b-a91f-5cb9989f971d
 ms.prod: W10
 ms.mktglfcycl: deploy

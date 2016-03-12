@@ -1,6 +1,7 @@
 ---
 title: Install digital certificates on Windows 10 Mobile (Windows 10)
 description: Digital certificates bind the identity of a user or computer to a pair of keys that can be used to encrypt and sign digital information.
+MSHAttr: PreferredLib /library
 ms.assetid: FF7B1BE9-41F4-44B0-A442-249B650CEE25
 keywords: ["S/MIME", "PFX", "SCEP"]
 ms.prod: W10

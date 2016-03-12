@@ -1,6 +1,7 @@
 ---
 title: VAMT Known Issues (Windows 10)
 description: VAMT Known Issues
+MSHAttr: PreferredLib /library
 ms.assetid: 8992f1f3-830a-4ce7-a248-f3a6377ab77f
 ms.prod: W10
 ms.mktglfcycl: deploy

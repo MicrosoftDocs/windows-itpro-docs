@@ -1,6 +1,7 @@
 ---
 title: Windows Store for Business overview (Windows 10)
-description: With the new Windows Store for Business, organizations can make volume purchases of Windows apps.
+description: With the new Windows Store for Business organizations can make volume purchases of Windows apps.
+MSHAttr: PreferredLib /library
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
 ms.prod: W10
 ms.mktglfcycl: manage

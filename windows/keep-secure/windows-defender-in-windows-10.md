@@ -1,6 +1,7 @@
 ---
 title: Windows Defender in Windows 10 (Windows 10)
-description: This topic provides an overview of Windows Defender, including a list of system requirements and new features.
+description: This topic provides an overview of Windows Defender including a list of system requirements and new features.
+MSHAttr: PreferredLib /library
 ms.assetid: 6A9EB85E-1F3A-40AC-9A47-F44C4A2B55E2
 ms.prod: W10
 ms.mktglfcycl: manage

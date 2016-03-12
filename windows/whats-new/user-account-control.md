@@ -1,6 +1,7 @@
 ---
-title: What's new in User Account Control? (Windows 10)
-description: User Account Control (UAC) helps prevent malware from damaging a computer and helps organizations deploy a better-managed desktop environment.
+title: What's new in User Account Control (Windows 10)
+description: User Account Control (UAC) helps prevent malware from damaging a computer and helps organizations deploy a better managed desktop environment.
+MSHAttr: PreferredLib /library
 ms.assetid: 9281870C-0819-4694-B4F1-260255BB8D07
 ms.prod: W10
 ms.mktglfcycl: explore

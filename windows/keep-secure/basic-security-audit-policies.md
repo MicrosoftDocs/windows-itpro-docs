@@ -1,6 +1,7 @@
 ---
 title: Basic security audit policies (Windows 10)
-description: Before you implement auditing, you must decide on an auditing policy.
+description: Before you implement auditing you must decide on an auditing policy.
+MSHAttr: PreferredLib /library
 ms.assetid: 3B678568-7AD7-4734-9BB4-53CF5E04E1D3
 ms.prod: W10
 ms.mktglfcycl: deploy

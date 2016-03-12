@@ -1,6 +1,7 @@
 ---
 title: Deny log on through Remote Desktop Services (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on through Remote Desktop Services security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Deny log on through Remote Desktop Services security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 84bbb807-287c-4acc-a094-cf0ffdcbca67
 ms.prod: W10
 ms.mktglfcycl: deploy

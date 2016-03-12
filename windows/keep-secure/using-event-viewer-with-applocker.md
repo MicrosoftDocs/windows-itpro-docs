@@ -1,6 +1,7 @@
 ---
 title: Using Event Viewer with AppLocker (Windows 10)
 description: This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
+MSHAttr: PreferredLib /library
 ms.assetid: 109abb10-78b1-4c29-a576-e5a17dfeb916
 ms.prod: W10
 ms.mktglfcycl: deploy

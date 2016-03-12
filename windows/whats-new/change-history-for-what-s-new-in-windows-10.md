@@ -1,6 +1,7 @@
 ---
 title: Change history for What's new in Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+MSHAttr: PreferredLib /library
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -11,7 +12,7 @@ author: TrudyHa
 # Change history for What's new in Windows 10
 
 
-This topic lists new and updated topics in the [What's new in Windows 10] documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [What's new in Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## February 2016
 

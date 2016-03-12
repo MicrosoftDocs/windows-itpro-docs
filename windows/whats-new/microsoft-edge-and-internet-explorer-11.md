@@ -1,6 +1,7 @@
 ---
-title: Browser-- Microsoft Edge and Internet Explorer 11 (Windows 10)
+title: Browser Microsoft Edge and Internet Explorer 11 (Windows 10)
 description: Resources to help you explore the Windows 10 browsing options for your enterprise.
+MSHAttr: PreferredLib /library
 ms.assetid: E986F903-69AD-4145-9D24-0C6D04B3E489
 ms.prod: W10
 ms.mktglfcycl: explore

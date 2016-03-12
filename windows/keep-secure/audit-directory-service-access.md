@@ -1,6 +1,7 @@
 ---
 title: Audit Directory Service Access (Windows 10)
-description: This topic for the IT professional describes the advanced security audit policy setting, Audit Directory Service Access, which determines whether the operating system generates audit events when an Active Directory Domain Services (AD DS) object is accessed.
+description: This topic for the IT professional describes the advanced security audit policy setting Audit Directory Service Access which determines whether the operating system generates audit events when an Active Directory Domain Services (AD DS) object is accessed.
+MSHAttr: PreferredLib /library
 ms.assetid: ba2562ba-4282-4588-b87c-a3fcb771c7d0
 ms.prod: W10
 ms.mktglfcycl: deploy

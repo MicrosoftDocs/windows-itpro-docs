@@ -1,6 +1,7 @@
 ---
-title: Devices-- Allowed to format and eject removable media (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Devices-- Allowed to format and eject removable media security policy setting.
+title: Devices Allowed to format and eject removable media (Windows 10)
+description: Describes the best practices location values and security considerations for the Devices Allowed to format and eject removable media security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: d1b42425-7244-4ab1-9d46-d68de823459c
 ms.prod: W10
 ms.mktglfcycl: deploy

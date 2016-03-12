@@ -1,6 +1,7 @@
 ---
 title: User Account Control (Windows 10)
-description: User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop.
+description: User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better managed desktop.
+MSHAttr: PreferredLib /library
 ms.assetid: 43ac4926-076f-4df2-84af-471ee7d20c38
 ms.prod: W10
 ms.mktglfcycl: operate

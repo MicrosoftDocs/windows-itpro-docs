@@ -1,6 +1,7 @@
 ---
 title: Conflicts and Precedence (Windows 10)
 description: Conflicts and Precedence
+MSHAttr: PreferredLib /library
 ms.assetid: 0e2691a8-ff1e-4424-879b-4d5a2f8a113a
 ms.prod: W10
 ms.mktglfcycl: deploy

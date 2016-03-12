@@ -1,6 +1,7 @@
 ---
 title: Deploy Windows 10 with the Microsoft Deployment Toolkit (Windows 10)
-description: This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 1 specifically.
+description: This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT) and MDT 2013 Update 1 specifically.
+MSHAttr: PreferredLib /library
 ms.assetid: 837f009c-617e-4b3f-9028-2246067ee0fb
 keywords: ["deploy", "tools", "configure", "script"]
 ms.prod: W10

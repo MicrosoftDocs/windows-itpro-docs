@@ -1,6 +1,7 @@
 ---
 title: Change history for Keep Windows 10 secure (Windows 10)
 description: This topic lists new and updated topics in the Keep Windows 10 secure documentation for Windows 10 and Windows 10 Mobile.
+MSHAttr: PreferredLib /library
 ms.assetid: E50EC5E6-71AA-4FF1-8356-574CFDB8079B
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -11,7 +12,7 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 
 
-This topic lists new and updated topics in the [Keep Windows 10 secure] documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## February 2016
 

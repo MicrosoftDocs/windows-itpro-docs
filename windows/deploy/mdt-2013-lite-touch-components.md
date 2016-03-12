@@ -1,8 +1,9 @@
 ---
 title: MDT 2013 Update 1 Lite Touch components (Windows 10)
 description: This topic provides an overview of the features in the Microsoft Deployment Toolkit (MDT) 2013 Update 1 that support Lite Touch Installation (LTI) for Windows 10.
+MSHAttr: PreferredLib /library
 ms.assetid: 7d6fc159-e338-439e-a2e6-1778d0da9089
-keywords: ["deploy, install, deployment, boot, log, monitor"]
+keywords: ["deploy install deployment boot log monitor"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

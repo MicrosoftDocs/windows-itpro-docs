@@ -1,6 +1,7 @@
 ---
 title: Manage and update Windows 10 (Windows 10)
 description: Learn about managing and updating Windows 10.
+MSHAttr: PreferredLib /library
 ms.assetid: E5716355-02AB-4B75-A962-14B1A7F7BDA0
 keywords: ["Windows 10", "MDM", "WSUS", "Windows update"]
 ms.prod: W10

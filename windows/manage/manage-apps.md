@@ -1,6 +1,7 @@
 ---
 title: Manage apps in Windows Store for Business (Windows 10)
 description: Manage settings and access to apps in Windows Store for Business.
+MSHAttr: PreferredLib /library
 ms.assetid: 2F65D4C3-B02C-41CC-92F0-5D9937228202
 ms.prod: W10
 ms.mktglfcycl: manage

@@ -1,6 +1,7 @@
 ---
-title: Domain member-- Disable machine account password changes (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Domain member-- Disable machine account password changes security policy setting.
+title: Domain member Disable machine account password changes (Windows 10)
+description: Describes the best practices location values and security considerations for the Domain member Disable machine account password changes security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 1f660300-a07a-4243-a09f-140aa1ab8867
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Perform KMS Activation (Windows 10)
 description: Perform KMS Activation
+MSHAttr: PreferredLib /library
 ms.assetid: 5a3ae8e6-083e-4153-837e-ab0a225c1d10
 ms.prod: W10
 ms.mktglfcycl: deploy

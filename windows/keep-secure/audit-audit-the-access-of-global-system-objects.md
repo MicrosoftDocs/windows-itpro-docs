@@ -1,6 +1,7 @@
 ---
-title: Audit-- Audit the access of global system objects (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Audit-- Audit the access of global system objects security policy setting.
+title: Audit Audit the access of global system objects (Windows 10)
+description: Describes the best practices location values and security considerations for the Audit Audit the access of global system objects security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 20d40a79-ce89-45e6-9bb4-148f83958460
 ms.prod: W10
 ms.mktglfcycl: deploy

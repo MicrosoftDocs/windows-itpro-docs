@@ -1,8 +1,9 @@
 ---
 title: Add a Windows 10 operating system image using Configuration Manager (Windows 10)
 description: Operating system images are typically the production image used for deployment throughout the organization.
+MSHAttr: PreferredLib /library
 ms.assetid: 77f769cc-1a47-4f36-8082-201cd77b8d3b
-keywords: ["image, deploy, distribute"]
+keywords: ["image deploy distribute"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

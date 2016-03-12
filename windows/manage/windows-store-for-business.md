@@ -1,6 +1,7 @@
 ---
 title: Windows Store for Business (Windows 10)
-description: Welcome to the Windows Store for Business! You can use the Store for Business, to find, acquire, distribute, and manage apps for your organization.
+description: Welcome to the Windows Store for Business You can use the Store for Business to find acquire distribute and manage apps for your organization.
+MSHAttr: PreferredLib /library
 ms.assetid: 527E611E-4D47-44F0-9422-DCC2D1ACBAB8
 ms.prod: W10
 ms.mktglfcycl: manage

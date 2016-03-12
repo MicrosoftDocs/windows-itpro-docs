@@ -1,6 +1,7 @@
 ---
 title: Requirements for deploying AppLocker policies (Windows 10)
 description: This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
+MSHAttr: PreferredLib /library
 ms.assetid: 3e55bda2-3cd7-42c7-bad3-c7dfbe193d48
 ms.prod: W10
 ms.mktglfcycl: deploy

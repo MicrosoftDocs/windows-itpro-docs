@@ -1,6 +1,7 @@
 ---
 title: Account lockout threshold (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Account lockout threshold security policy setting.
+description: Describes the best practices location values and security considerations for the Account lockout threshold security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 4904bb40-a2bd-4fef-a102-260ba8d74e30
 ms.prod: W10
 ms.mktglfcycl: deploy

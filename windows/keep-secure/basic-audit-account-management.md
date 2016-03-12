@@ -1,6 +1,7 @@
 ---
 title: Audit account management (Windows 10)
 description: Determines whether to audit each event of account management on a device.
+MSHAttr: PreferredLib /library
 ms.assetid: 369197E1-7E0E-45A4-89EA-16D91EF01689
 ms.prod: W10
 ms.mktglfcycl: deploy

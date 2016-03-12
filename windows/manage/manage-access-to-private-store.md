@@ -1,6 +1,7 @@
 ---
 title: Manage access to private store (Windows 10)
 description: You can manage access to your private store in Windows Store for Business.
+MSHAttr: PreferredLib /library
 ms.assetid: 4E00109C-2782-474D-98C0-02A05BE613A5
 author: jdeckerMS
 ---

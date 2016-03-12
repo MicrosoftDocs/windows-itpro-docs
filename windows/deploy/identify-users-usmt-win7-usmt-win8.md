@@ -1,6 +1,7 @@
 ---
 title: Identify Users (Windows 10)
 description: Identify Users
+MSHAttr: PreferredLib /library
 ms.assetid: 957a4fe9-79fd-44a2-8c26-33e50f71f9de
 ms.prod: W10
 ms.mktglfcycl: deploy

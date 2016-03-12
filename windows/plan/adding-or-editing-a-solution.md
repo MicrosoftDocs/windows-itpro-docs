@@ -1,6 +1,7 @@
 ---
 title: Adding or Editing a Solution (Windows 10)
-description: If you find your own solutions to compatibility issues, you can enter the solutions in Application Compatibility Manager (ACM). You can use the Microsoft Compatibility Exchange to upload solutions to Microsoft Corporation.
+description: If you find your own solutions to compatibility issues you can enter the solutions in Application Compatibility Manager (ACM). You can use the Microsoft Compatibility Exchange to upload solutions to Microsoft Corporation.
+MSHAttr: PreferredLib /library
 ms.assetid: 86cb8804-d577-4af6-b96f-5e0409784a23
 ms.prod: W10
 ms.mktglfcycl: operate

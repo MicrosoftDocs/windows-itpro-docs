@@ -1,6 +1,7 @@
 ---
 title: Integration with management solutions (Windows 10)
-description: You can integrate Windows Update for Business deployments with existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager, and Microsoft Intune.
+description: You can integrate Windows Update for Business deployments with existing management tools such as Windows Server Update Services (WSUS) System Center Configuration Manager and Microsoft Intune.
+MSHAttr: PreferredLib /library
 ms.assetid: E0CB0CD3-4FE1-46BF-BA6F-5A5A8BD14CC9
 keywords: ["update", "upgrade", "deployment", "manage", "tools"]
 ms.prod: w10

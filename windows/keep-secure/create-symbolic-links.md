@@ -1,6 +1,7 @@
 ---
 title: Create symbolic links (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Create symbolic links security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Create symbolic links security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 882922b9-0ff8-4ee9-8afc-4475515ee3fd
 ms.prod: W10
 ms.mktglfcycl: deploy

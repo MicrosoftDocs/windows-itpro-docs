@@ -1,6 +1,7 @@
 ---
 title: Include Files and Settings (Windows 10)
 description: Include Files and Settings
+MSHAttr: PreferredLib /library
 ms.assetid: 9009c6a5-0612-4478-8742-abe5eb6cbac8
 ms.prod: W10
 ms.mktglfcycl: deploy

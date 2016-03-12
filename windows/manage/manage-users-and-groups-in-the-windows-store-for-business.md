@@ -1,6 +1,7 @@
 ---
 title: Manage user accounts in Windows Store for Business (Windows 10)
-description: Windows Store for Business manages permissions with a set of roles. Currently, you can assign these roles to individuals in your organization, but not to groups.
+description: Windows Store for Business manages permissions with a set of roles. Currently you can assign these roles to individuals in your organization but not to groups.
+MSHAttr: PreferredLib /library
 ms.assetid: 5E7FA071-CABD-4ACA-8AAE-F549EFCE922F
 ms.prod: W10
 ms.mktglfcycl: manage

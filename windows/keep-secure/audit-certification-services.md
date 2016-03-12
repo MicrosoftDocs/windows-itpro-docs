@@ -1,6 +1,7 @@
 ---
 title: Audit Certification Services (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Certification Services, which determines whether the operating system generates events when Active Directory Certificate Services (AD CS) operations are performed.
+description: This topic for the IT professional describes the Advanced Security Audit policy setting Audit Certification Services which determines whether the operating system generates events when Active Directory Certificate Services (AD CS) operations are performed.
+MSHAttr: PreferredLib /library
 ms.assetid: cdefc34e-fb1f-4eff-b766-17713c5a1b03
 ms.prod: W10
 ms.mktglfcycl: deploy

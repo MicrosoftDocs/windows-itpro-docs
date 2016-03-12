@@ -1,6 +1,7 @@
 ---
 title: Perform Local Reactivation (Windows 10)
 description: Perform Local Reactivation
+MSHAttr: PreferredLib /library
 ms.assetid: aacd5ded-da11-4d27-a866-3f57332f5dec
 ms.prod: W10
 ms.mktglfcycl: deploy

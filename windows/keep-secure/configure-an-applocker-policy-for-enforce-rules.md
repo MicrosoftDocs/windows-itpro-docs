@@ -1,6 +1,7 @@
 ---
 title: Configure an AppLocker policy for enforce rules (Windows 10)
 description: This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 5dbbb290-a5ae-4f88-82b3-21e95972e66c
 ms.prod: W10
 ms.mktglfcycl: deploy

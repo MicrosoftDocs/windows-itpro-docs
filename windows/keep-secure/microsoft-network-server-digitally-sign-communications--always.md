@@ -1,6 +1,7 @@
 ---
-title: Microsoft network server-- Digitally sign communications (always) (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Microsoft network server-- Digitally sign communications (always) security policy setting.
+title: Microsoft network server Digitally sign communications (always) (Windows 10)
+description: Describes the best practices location values policy management and security considerations for the Microsoft network server Digitally sign communications (always) security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 2007b622-7bc2-44e8-9cf1-d34b62117ea8
 ms.prod: W10
 ms.mktglfcycl: deploy

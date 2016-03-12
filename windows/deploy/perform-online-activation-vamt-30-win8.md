@@ -1,6 +1,7 @@
 ---
 title: Perform Online Activation (Windows 10)
 description: Perform Online Activation
+MSHAttr: PreferredLib /library
 ms.assetid: 8381792b-a454-4e66-9b4c-e6e4c9303823
 ms.prod: W10
 ms.mktglfcycl: deploy

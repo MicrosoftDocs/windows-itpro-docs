@@ -1,6 +1,7 @@
 ---
-title: Interactive logon-- Smart card removal behavior (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon-- Smart card removal behavior security policy setting.
+title: Interactive logon Smart card removal behavior (Windows 10)
+description: Describes the best practices location values policy management and security considerations for the Interactive logon Smart card removal behavior security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 61487820-9d49-4979-b15d-c7e735999460
 ms.prod: W10
 ms.mktglfcycl: deploy

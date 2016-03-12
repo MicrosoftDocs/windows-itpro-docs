@@ -1,6 +1,7 @@
 ---
 title: Audit Central Access Policy Staging (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Central Access Policy Staging, which determines permissions on a Central Access Policy.
+description: This topic for the IT professional describes the Advanced Security Audit policy setting Audit Central Access Policy Staging which determines permissions on a Central Access Policy.
+MSHAttr: PreferredLib /library
 ms.assetid: D9BB11CE-949A-4B48-82BF-30DC5E6FC67D
 ms.prod: W10
 ms.mktglfcycl: deploy

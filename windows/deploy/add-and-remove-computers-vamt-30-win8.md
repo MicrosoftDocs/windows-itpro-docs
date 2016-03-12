@@ -1,6 +1,7 @@
 ---
 title: Add and Remove Computers (Windows 10)
 description: Add and Remove Computers
+MSHAttr: PreferredLib /library
 ms.assetid: cb6f3a78-ece0-4dc7-b086-cb003d82cd52
 ms.prod: W10
 ms.mktglfcycl: deploy

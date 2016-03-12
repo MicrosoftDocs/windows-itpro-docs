@@ -1,6 +1,7 @@
 ---
 title: Plan for AppLocker policy management (Windows 10)
 description: This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
+MSHAttr: PreferredLib /library
 ms.assetid: dccc196f-6ae0-4ae4-853a-a3312b18751b
 ms.prod: W10
 ms.mktglfcycl: deploy

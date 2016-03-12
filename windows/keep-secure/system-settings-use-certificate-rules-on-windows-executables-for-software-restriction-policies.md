@@ -1,6 +1,7 @@
 ---
-title: System settings-- Use certificate rules on Windows executables for Software Restriction Policies (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the System settings-- Use certificate rules on Windows executables for Software Restriction Policies security policy setting.
+title: System settings Use certificate rules on Windows executables for Software Restriction Policies (Windows 10)
+description: Describes the best practices location values policy management and security considerations for the System settings Use certificate rules on Windows executables for Software Restriction Policies security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 2380d93b-b553-4e56-a0c0-d1ef740d089c
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Create AppLocker default rules (Windows 10)
 description: This topic for IT professionals describes the steps to create a standard set of AppLocker rules that will allow Windows system files to run.
+MSHAttr: PreferredLib /library
 ms.assetid: 21e9dc68-a6f4-4ebe-ac28-4c66a7ab6e18
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Ratings Icons in ACM (Windows 10)
-description: Compatibility ratings can originate from Microsoft, the application vendor, your organization, and from the Application Compatibility Toolkit (ACT) community.
+description: Compatibility ratings can originate from Microsoft the application vendor your organization and from the Application Compatibility Toolkit (ACT) community.
+MSHAttr: PreferredLib /library
 ms.assetid: 0165499e-cb47-4d76-98a6-b871d23e4e83
 ms.prod: W10
 ms.mktglfcycl: operate

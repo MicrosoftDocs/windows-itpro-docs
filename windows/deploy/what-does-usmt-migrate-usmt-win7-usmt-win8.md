@@ -1,6 +1,7 @@
 ---
-title: What Does USMT Migrate? (Windows 10)
-description: What Does USMT Migrate?
+title: What Does USMT Migrate (Windows 10)
+description: What Does USMT Migrate
+MSHAttr: PreferredLib /library
 ms.assetid: f613987d-0f17-43fe-9717-6465865ceda7
 ms.prod: W10
 ms.mktglfcycl: deploy

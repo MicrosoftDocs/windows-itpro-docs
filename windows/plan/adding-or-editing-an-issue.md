@@ -1,6 +1,7 @@
 ---
 title: Adding or Editing an Issue (Windows 10)
-description: In Application Compatibility Manager (ACM), you can enter information about the compatibility issues that you discover.
+description: In Application Compatibility Manager (ACM) you can enter information about the compatibility issues that you discover.
+MSHAttr: PreferredLib /library
 ms.assetid: 8a9fff79-9f88-4ce2-a4e6-b9382f28143d
 ms.prod: W10
 ms.mktglfcycl: operate

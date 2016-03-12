@@ -1,6 +1,7 @@
 ---
 title: Compatibility Monitor User's Guide (Windows 10)
 description: Compatibility Monitor is a tool in the runtime analysis package that you can use to monitor applications for compatibility issues. You can also use the Compatibility Monitor tool to submit compatibility feedback.
+MSHAttr: PreferredLib /library
 ms.assetid: 67d6eff0-1576-44bd-99b4-a3ffa5e205ac
 ms.prod: W10
 ms.mktglfcycl: operate

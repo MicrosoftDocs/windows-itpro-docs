@@ -1,6 +1,7 @@
 ---
 title: Selecting the Send and Receive Status for an Application (Windows 10)
-description: For each application listed in Application Compatibility Manager (ACM), you can select whether to send and receive specific application data through the Microsoft Compatibility Exchange.
+description: For each application listed in Application Compatibility Manager (ACM) you can select whether to send and receive specific application data through the Microsoft Compatibility Exchange.
+MSHAttr: PreferredLib /library
 ms.assetid: ae139093-27cf-4ad8-882d-e0509e78d33a
 ms.prod: W10
 ms.mktglfcycl: operate

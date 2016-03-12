@@ -1,6 +1,7 @@
 ---
 title: AD DS schema extensions to support TPM backup (Windows 10)
 description: This topic provides more details about this change and provides template schema extensions that you can incorporate into your organization.
+MSHAttr: PreferredLib /library
 ms.assetid: beb7097c-e674-4eab-b8e2-6f67c85d1f3f
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Security considerations for AppLocker (Windows 10)
 description: This topic for the IT professional describes the security considerations you need to address when implementing AppLocker.
+MSHAttr: PreferredLib /library
 ms.assetid: 354a5abb-7b31-4bea-a442-aa9666117625
 ms.prod: W10
 ms.mktglfcycl: deploy

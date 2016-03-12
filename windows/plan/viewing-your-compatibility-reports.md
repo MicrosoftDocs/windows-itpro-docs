@@ -1,6 +1,7 @@
 ---
 title: Viewing Your Compatibility Reports (Windows 10)
 description: This section describes the compatibility reports in Application Compatibility Manager (ACM) and how you can work with the reports.
+MSHAttr: PreferredLib /library
 ms.assetid: a28bbfbe-5f05-4a1e-9397-0a3ceb585871
 ms.prod: W10
 ms.mktglfcycl: operate

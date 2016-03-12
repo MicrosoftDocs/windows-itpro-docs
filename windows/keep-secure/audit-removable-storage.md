@@ -1,6 +1,7 @@
 ---
 title: Audit Removable Storage (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Removable Storage, which determines .
+description: This topic for the IT professional describes the Advanced Security Audit policy setting Audit Removable Storage which determines .
+MSHAttr: PreferredLib /library
 ms.assetid: 1746F7B3-8B41-4661-87D8-12F734AFFB26
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Adjust memory quotas for a process (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Adjust memory quotas for a process security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Adjust memory quotas for a process security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 6754a2c8-6d07-4567-9af3-335fd8dd7626
 ms.prod: W10
 ms.mktglfcycl: deploy

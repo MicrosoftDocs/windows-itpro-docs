@@ -1,6 +1,7 @@
 ---
-title: Saving, Opening, and Exporting Reports (Windows 10)
-description: You can perform several common reporting tasks from the Analyze screen, including saving a compatibility report, opening a saved compatibility report (.adq) file, and exporting your report data to a spreadsheet (.xls) file.
+title: Saving Opening and Exporting Reports (Windows 10)
+description: You can perform several common reporting tasks from the Analyze screen including saving a compatibility report opening a saved compatibility report (.adq) file and exporting your report data to a spreadsheet (.xls) file.
+MSHAttr: PreferredLib /library
 ms.assetid: 8be72a6c-63ab-4451-ad79-815e2ac18aa2
 ms.prod: W10
 ms.mktglfcycl: operate

@@ -1,6 +1,7 @@
 ---
 title: Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise (Windows 10)
-description: A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings.
+description: A device in kiosk mode runs a specified app with no access to other device functions menus or settings.
+MSHAttr: PreferredLib /library
 ms.assetid: 35EC82D8-D9E8-45C3-84E9-B0C8C167BFF7
 keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: W10

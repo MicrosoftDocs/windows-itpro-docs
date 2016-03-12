@@ -1,6 +1,7 @@
 ---
 title: AppLocker design guide (Windows 10)
 description: This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
+MSHAttr: PreferredLib /library
 ms.assetid: 1c8e4a7b-3164-4eb4-9277-11b1d5a09c7b
 ms.prod: W10
 ms.mktglfcycl: deploy

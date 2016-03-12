@@ -1,6 +1,7 @@
 ---
 title: Filtering Your Compatibility Data (Windows 10)
-description: You can use Query Builder to filter your compatibility-issue data or reports by selecting specific restriction criteria.
+description: You can use Query Builder to filter your compatibility issue data or reports by selecting specific restriction criteria.
+MSHAttr: PreferredLib /library
 ms.assetid: b64267b5-83c0-4b4d-a075-0975d3a359c8
 ms.prod: W10
 ms.mktglfcycl: operate

@@ -1,6 +1,7 @@
 ---
 title: Audit Logoff (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Logoff, which determines whether the operating system generates audit events when logon sessions are terminated.
+description: This topic for the IT professional describes the Advanced Security Audit policy setting Audit Logoff which determines whether the operating system generates audit events when logon sessions are terminated.
+MSHAttr: PreferredLib /library
 ms.assetid: 681e51f2-ba06-46f5-af8c-d9c48d515432
 ms.prod: W10
 ms.mktglfcycl: deploy

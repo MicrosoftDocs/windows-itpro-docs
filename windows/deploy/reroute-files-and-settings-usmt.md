@@ -1,6 +1,7 @@
 ---
 title: Reroute Files and Settings (Windows 10)
 description: Reroute Files and Settings
+MSHAttr: PreferredLib /library
 ms.assetid: 905e6a24-922c-4549-9732-60fa11862a6c
 ms.prod: W10
 ms.mktglfcycl: deploy

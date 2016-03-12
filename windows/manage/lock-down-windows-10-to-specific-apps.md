@@ -1,6 +1,7 @@
 ---
 title: Lock down Windows 10 to specific apps (Windows 10)
 description: Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps.
+MSHAttr: PreferredLib /library
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: W10

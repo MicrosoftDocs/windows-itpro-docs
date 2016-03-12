@@ -1,6 +1,7 @@
 ---
 title: Audit Detailed File Share (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Detailed File Share, which allows you to audit attempts to access files and folders on a shared folder.
+description: This topic for the IT professional describes the Advanced Security Audit policy setting Audit Detailed File Share which allows you to audit attempts to access files and folders on a shared folder.
+MSHAttr: PreferredLib /library
 ms.assetid: 60310104-b820-4033-a1cb-022a34f064ae
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Customize Windows 10 Start with Group Policy (Windows 10)
-description: In Windows 10 Enterprise and Windows 10 Education, you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain.
+description: In Windows 10 Enterprise and Windows 10 Education you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain.
+MSHAttr: PreferredLib /library
 ms.assetid: F4A47B36-F1EF-41CD-9CBA-04C83E960545
 keywords: ["Start layout", "start menu", "layout", "group policy"]
 ms.prod: W10

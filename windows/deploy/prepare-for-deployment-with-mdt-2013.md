@@ -1,8 +1,9 @@
 ---
 title: Prepare for deployment with MDT 2013 Update 1 (Windows 10)
 description: This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT) 2013 Update 1.
+MSHAttr: PreferredLib /library
 ms.assetid: 5103c418-0c61-414b-b93c-a8e8207d1226
-keywords: ["deploy, system requirements"]
+keywords: ["deploy system requirements"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

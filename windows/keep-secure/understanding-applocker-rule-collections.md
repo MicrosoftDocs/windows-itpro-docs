@@ -1,6 +1,7 @@
 ---
 title: Understanding AppLocker rule collections (Windows 10)
 description: This topic explains the five different types of AppLocker rules used to enforce AppLocker policies.
+MSHAttr: PreferredLib /library
 ms.assetid: 03c05466-4fb3-4880-8d3c-0f6f59fc5579
 ms.prod: W10
 ms.mktglfcycl: deploy

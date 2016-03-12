@@ -1,6 +1,7 @@
 ---
 title: Replace a process level token (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Replace a process level token security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Replace a process level token security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 5add02db-6339-489e-ba21-ccc3ccbe8745
 ms.prod: W10
 ms.mktglfcycl: deploy

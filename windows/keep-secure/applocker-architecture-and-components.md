@@ -1,6 +1,7 @@
 ---
 title: AppLocker architecture and components (Windows 10)
 description: This topic for IT professional describes AppLocker’s basic architecture and its major components.
+MSHAttr: PreferredLib /library
 ms.assetid: efdd8494-553c-443f-bd5f-c8976535135a
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Device Guard deployment guide (Windows 10)
 description: Microsoft Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security.
+MSHAttr: PreferredLib /library
 ms.assetid: 4BA52AA9-64D3-41F3-94B2-B87EC2717486
 keywords: ["virtualization", "security", "malware"]
 ms.prod: W10

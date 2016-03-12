@@ -1,6 +1,7 @@
 ---
 title: Deny log on as a service (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on as a service security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Deny log on as a service security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: f1114964-df86-4278-9b11-e35c66949794
 ms.prod: W10
 ms.mktglfcycl: deploy

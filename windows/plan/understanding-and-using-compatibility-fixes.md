@@ -1,6 +1,7 @@
 ---
 title: Understanding and Using Compatibility Fixes (Windows 10)
-description: As the Windows operating system evolves to support new technology and functionality, the implementations of some functions may change.
+description: As the Windows operating system evolves to support new technology and functionality the implementations of some functions may change.
+MSHAttr: PreferredLib /library
 ms.assetid: 84bf663d-3e0b-4168-99d6-a26e054821b7
 ms.prod: W10
 ms.mktglfcycl: operate

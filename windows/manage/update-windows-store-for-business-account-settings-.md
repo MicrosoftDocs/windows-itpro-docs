@@ -1,6 +1,7 @@
 ---
 title: Update Windows Store for Business account settings (Windows 10)
-description: The Account information page in Windows Store for Business shows information about your organization that you can update, including-- country or region, organization name, default domain, and language preference.
+description: The Account information page in Windows Store for Business shows information about your organization that you can update including country or region organization name default domain and language preference.
+MSHAttr: PreferredLib /library
 ms.assetid: CEFFF451-D7D2-4A35-AF28-4A72B9582585
 ms.prod: W10
 ms.mktglfcycl: manage

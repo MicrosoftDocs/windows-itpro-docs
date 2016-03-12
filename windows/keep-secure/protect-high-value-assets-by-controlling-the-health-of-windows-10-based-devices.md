@@ -1,6 +1,7 @@
 ---
-title: Control the health of Windows 10-based devices (Windows 10)
-description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
+title: Control the health of Windows 10 based devices (Windows 10)
+description: This article details an end to end solution that helps you protect high value assets by enforcing controlling and reporting the health of Windows 10 based devices.
+MSHAttr: PreferredLib /library
 ms.assetid: 45DB1C41-C35D-43C9-A274-3AD5F31FE873
 keywords: ["security", "BYOD", "malware", "device health attestation", "mobile"]
 ms.prod: W10

@@ -1,6 +1,7 @@
 ---
 title: Using the Compatibility Administrator Tool (Windows 10)
 description: This section provides information about using the Compatibility Administrator tool.
+MSHAttr: PreferredLib /library
 ms.assetid: 57271e47-b9b9-4018-a0b5-7115a533166d
 ms.prod: W10
 ms.mktglfcycl: operate

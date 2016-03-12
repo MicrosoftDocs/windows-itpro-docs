@@ -1,6 +1,7 @@
 ---
-title: Identify File Types, Files, and Folders (Windows 10)
-description: Identify File Types, Files, and Folders
+title: Identify File Types Files and Folders (Windows 10)
+description: Identify File Types Files and Folders
+MSHAttr: PreferredLib /library
 ms.assetid: 93bb2a33-c126-4f7a-a961-6c89686d54e0
 ms.prod: W10
 ms.mktglfcycl: deploy

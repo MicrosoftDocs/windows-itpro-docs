@@ -1,6 +1,7 @@
 ---
 title: Deploy Windows 10 (Windows 10)
 description: Learn about deploying Windows 10 for IT professionals.
+MSHAttr: PreferredLib /library
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.prod: W10
 ms.mktglfcycl: deploy

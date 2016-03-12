@@ -1,6 +1,7 @@
 ---
 title: Change history for Manage and update Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Manage and update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+MSHAttr: PreferredLib /library
 ms.assetid: 29144AFA-1DA9-4532-B07D-1EBE34B7E1E0
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -11,7 +12,7 @@ author: jdeckerMS
 # Change history for Manage and update Windows 10
 
 
-This topic lists new and updated topics in the [Manage and update Windows 10] documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## March 2016
 

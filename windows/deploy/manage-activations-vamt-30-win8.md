@@ -1,6 +1,7 @@
 ---
 title: Manage Activations (Windows 10)
 description: Manage Activations
+MSHAttr: PreferredLib /library
 ms.assetid: 53bad9ed-9430-4f64-a8de-80613870862c
 ms.prod: W10
 ms.mktglfcycl: deploy

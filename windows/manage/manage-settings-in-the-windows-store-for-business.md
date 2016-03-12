@@ -1,6 +1,7 @@
 ---
 title: Manage settings for the Windows Store for Business (Windows 10)
-description: You can add users and groups, as well as update some of the settings associated with the Azure Active Directory (AD) tenant.
+description: You can add users and groups as well as update some of the settings associated with the Azure Active Directory (AD) tenant.
+MSHAttr: PreferredLib /library
 ms.assetid: E3283D77-4DB2-40A9-9479-DDBC33D5A895
 ms.prod: W10
 ms.mktglfcycl: manage

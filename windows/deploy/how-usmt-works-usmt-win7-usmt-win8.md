@@ -1,6 +1,7 @@
 ---
 title: How USMT Works (Windows 10)
 description: How USMT Works
+MSHAttr: PreferredLib /library
 ms.assetid: 5c8bd669-9e1e-473d-81e6-652f40b24171
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
-title: Deleting a Data-Collection Package (Windows 10)
-description: In Application Compatibility Manager (ACM), you can delete any of your existing data-collection packages from the database.
+title: Deleting a Data Collection Package (Windows 10)
+description: In Application Compatibility Manager (ACM) you can delete any of your existing data collection packages from the database.
+MSHAttr: PreferredLib /library
 ms.assetid: 1b397d7a-7216-4078-93d9-47c7becbf73e
 ms.prod: W10
 ms.mktglfcycl: operate

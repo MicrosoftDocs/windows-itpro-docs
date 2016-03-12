@@ -1,6 +1,7 @@
 ---
 title: Remove Products (Windows 10)
 description: Remove Products
+MSHAttr: PreferredLib /library
 ms.assetid: 4d44379e-dda1-4a8f-8ebf-395b6c0dad8e
 ms.prod: W10
 ms.mktglfcycl: deploy

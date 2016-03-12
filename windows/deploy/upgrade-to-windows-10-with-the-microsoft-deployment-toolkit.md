@@ -1,8 +1,9 @@
 ---
 title: Upgrade to Windows 10 with the Microsoft Deployment Toolkit (Windows 10)
-description: The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade.
+description: The simplest path to upgrade PCs that are currently running Windows 7 Windows 8 or Windows 8.1 to Windows 10 is through an in place upgrade.
+MSHAttr: PreferredLib /library
 ms.assetid: B8993151-3C1E-4F22-93F4-2C5F2771A460
-keywords: ["upgrade, update, task sequence, deploy"]
+keywords: ["upgrade update task sequence deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

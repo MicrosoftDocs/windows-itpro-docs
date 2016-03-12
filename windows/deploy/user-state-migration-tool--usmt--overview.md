@@ -1,6 +1,7 @@
 ---
 title: User State Migration Tool (USMT) Overview (Windows 10)
 description: User State Migration Tool (USMT) Overview
+MSHAttr: PreferredLib /library
 ms.assetid: 3b649431-ad09-4b17-895a-3fec7ac0a81f
 ms.prod: W10
 ms.mktglfcycl: deploy

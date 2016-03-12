@@ -1,6 +1,7 @@
 ---
-title: Interactive logon-- Do not display last user name (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Interactive logon-- Do not display last user name security policy setting.
+title: Interactive logon Do not display last user name (Windows 10)
+description: Describes the best practices location values and security considerations for the Interactive logon Do not display last user name security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 98b24b03-95fe-4edc-8e97-cbdaa8e314fd
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Getting Started with the User State Migration Tool (USMT) (Windows 10)
 description: Getting Started with the User State Migration Tool (USMT)
+MSHAttr: PreferredLib /library
 ms.assetid: 506ff1d2-94b8-4460-8672-56aad963504b
 ms.prod: W10
 ms.mktglfcycl: deploy

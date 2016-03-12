@@ -1,6 +1,7 @@
 ---
 title: Troubleshoot Windows Store for Business (Windows 10)
 description: Troubleshooting topics for Windows Store for Business.
+MSHAttr: PreferredLib /library
 ms.assetid: 243755A3-9B20-4032-9A77-2207320A242A
 ms.prod: W10
 ms.mktglfcycl: manage

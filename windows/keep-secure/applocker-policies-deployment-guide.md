@@ -1,6 +1,7 @@
 ---
 title: AppLocker deployment guide (Windows 10)
 description: This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
+MSHAttr: PreferredLib /library
 ms.assetid: 38632795-be13-46b0-a7af-487a4340bea1
 ms.prod: W10
 ms.mktglfcycl: deploy

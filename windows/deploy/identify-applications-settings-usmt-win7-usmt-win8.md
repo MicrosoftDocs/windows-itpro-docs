@@ -1,6 +1,7 @@
 ---
 title: Identify Applications Settings (Windows 10)
 description: Identify Applications Settings
+MSHAttr: PreferredLib /library
 ms.assetid: eda68031-9b02-4a5b-a893-3786a6505381
 ms.prod: W10
 ms.mktglfcycl: deploy

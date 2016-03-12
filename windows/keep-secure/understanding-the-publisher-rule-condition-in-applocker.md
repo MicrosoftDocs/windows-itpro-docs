@@ -1,6 +1,7 @@
 ---
 title: Understanding the publisher rule condition in AppLocker (Windows 10)
-description: This topic explains the AppLocker publisher rule condition, what controls are available, and how it is applied.
+description: This topic explains the AppLocker publisher rule condition what controls are available and how it is applied.
+MSHAttr: PreferredLib /library
 ms.assetid: df61ed8f-a97e-4644-9d0a-2169f18c1c4f
 ms.prod: W10
 ms.mktglfcycl: deploy

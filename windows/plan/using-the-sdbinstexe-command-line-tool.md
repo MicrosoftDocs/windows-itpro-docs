@@ -1,6 +1,7 @@
 ---
-title: Using the Sdbinst.exe Command-Line Tool (Windows 10)
-description: You must deploy your customized database (.sdb) files to other computers in your organization before your compatibility fixes, compatibility modes, and AppHelp messages are applied.
+title: Using the Sdbinst.exe Command Line Tool (Windows 10)
+description: You must deploy your customized database (.sdb) files to other computers in your organization before your compatibility fixes compatibility modes and AppHelp messages are applied.
+MSHAttr: PreferredLib /library
 ms.assetid: c1945425-3f8d-4de8-9d2d-59f801f07034
 ms.prod: W10
 ms.mktglfcycl: operate

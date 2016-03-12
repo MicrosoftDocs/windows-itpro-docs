@@ -1,6 +1,7 @@
 ---
 title: Maximum password age (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Maximum password age security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Maximum password age security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 2d6e70e7-c8b0-44fb-8113-870c6120871d
 ms.prod: W10
 ms.mktglfcycl: deploy

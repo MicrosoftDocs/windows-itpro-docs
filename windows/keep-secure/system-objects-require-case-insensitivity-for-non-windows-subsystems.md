@@ -1,6 +1,7 @@
 ---
-title: System objects-- Require case insensitivity for non-Windows subsystems (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the System objects-- Require case insensitivity for non-Windows subsystems security policy setting.
+title: System objects Require case insensitivity for non Windows subsystems (Windows 10)
+description: Describes the best practices location values policy management and security considerations for the System objects Require case insensitivity for non Windows subsystems security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 340d6769-8f33-4067-8470-1458978d1522
 ms.prod: W10
 ms.mktglfcycl: deploy

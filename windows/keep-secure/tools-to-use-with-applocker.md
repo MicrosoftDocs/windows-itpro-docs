@@ -1,6 +1,7 @@
 ---
 title: Tools to use with AppLocker (Windows 10)
 description: This topic for the IT professional describes the tools available to create and administer AppLocker policies.
+MSHAttr: PreferredLib /library
 ms.assetid: db2b7cb3-7643-4be5-84eb-46ba551e1ad1
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,6 +1,7 @@
 ---
 title: Bypass traverse checking (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Bypass traverse checking security policy setting.
+description: Describes the best practices location values policy management and security considerations for the Bypass traverse checking security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: 1c828655-68d3-4140-aa0f-caa903a7087e
 ms.prod: W10
 ms.mktglfcycl: deploy

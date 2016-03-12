@@ -1,6 +1,7 @@
 ---
 title: DLL rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the DLL rule collection.
+MSHAttr: PreferredLib /library
 ms.assetid: a083fd08-c07e-4534-b0e7-1e15d932ce8f
 ms.prod: W10
 ms.mktglfcycl: deploy

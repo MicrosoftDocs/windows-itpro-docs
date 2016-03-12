@@ -1,6 +1,7 @@
 ---
 title: Configure telemetry in your organization (Windows 10)
 description: Use this article to make informed decisions about how you can configure telemetry in your organization. We discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component.
+MSHAttr: PreferredLib /library
 ms.assetid: 68D9BEAD-8ACE-4771-AF10-CCCD65EC7D98
 keywords: ["privacy", "telemetry"]
 ms.prod: W10

@@ -1,6 +1,7 @@
 ---
 title: Activate by Proxy an Active Directory Forest (Windows 10)
 description: Activate by Proxy an Active Directory Forest
+MSHAttr: PreferredLib /library
 ms.assetid: 6475fc87-a6f7-4fa8-b0aa-de19f2dea7e5
 ms.prod: W10
 ms.mktglfcycl: deploy

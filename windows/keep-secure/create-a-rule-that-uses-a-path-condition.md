@@ -1,6 +1,7 @@
 ---
 title: Create a rule that uses a path condition (Windows 10)
 description: This topic for IT professionals shows how to create an AppLocker rule with a path condition.
+MSHAttr: PreferredLib /library
 ms.assetid: 9b2093f5-5976-45fa-90c3-da1e0e845d95
 ms.prod: W10
 ms.mktglfcycl: deploy

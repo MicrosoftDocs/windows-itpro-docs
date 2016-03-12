@@ -1,6 +1,7 @@
 ---
 title: Choose a Migration Store Type (Windows 10)
 description: Choose a Migration Store Type
+MSHAttr: PreferredLib /library
 ms.assetid: 4e163e90-9c57-490b-b849-2ed52ab6765f
 ms.prod: W10
 ms.mktglfcycl: deploy

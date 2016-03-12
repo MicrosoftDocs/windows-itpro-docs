@@ -1,6 +1,7 @@
 ---
-title: Network access-- Do not allow storage of passwords and credentials for network authentication (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Network access-- Do not allow storage of passwords and credentials for network authentication security policy setting.
+title: Network access Do not allow storage of passwords and credentials for network authentication (Windows 10)
+description: Describes the best practices location values policy management and security considerations for the Network access Do not allow storage of passwords and credentials for network authentication security policy setting.
+MSHAttr: PreferredLib /library
 ms.assetid: b9b64360-36ea-40fa-b795-2d6558c46563
 ms.prod: W10
 ms.mktglfcycl: deploy

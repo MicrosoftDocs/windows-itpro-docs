@@ -1,6 +1,7 @@
 ---
 title: Available Data Types and Operators in Compatibility Administrator (Windows 10)
-description: The Compatibility Administrator tool provides a way to query your custom-compatibility databases.
+description: The Compatibility Administrator tool provides a way to query your custom compatibility databases.
+MSHAttr: PreferredLib /library
 ms.assetid: 67d9c03e-ab9d-4fda-8a55-8c5b90266d3b
 ms.prod: W10
 ms.mktglfcycl: operate
