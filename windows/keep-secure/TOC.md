@@ -1,4 +1,4 @@
-# [Keep Windows 10 secure]
+# [Keep Windows 10 secure](index.md)
 ## [Change history for Keep Windows 10 secure](change-history-for-keep-windows-10-secure.md)
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-an-enterprise.md)
 ## [Device Guard certification and compliance](device-guard-certification-and-compliance.md)
