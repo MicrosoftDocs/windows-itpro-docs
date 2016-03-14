@@ -1,5 +1,5 @@
 ---
-Description: Use this guide to learn about the several options and processes you''ll need to consider while you''re planning for, deploying, and customizing Internet Explorer 11 for your employee''s computers.
+description: Use this guide to learn about the several options and processes you'll need to consider while you're planning for, deploying, and customizing Internet Explorer 11 for your employee's devices.
 ms.assetid: bddc2d97-c38d-45c5-9588-1f5bbff2e9c3
 author: eross-msft
 ms.prod: IE11
