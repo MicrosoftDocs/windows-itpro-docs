@@ -31,6 +31,26 @@
             "type_mapping": {
                 "Conceptual": "Content"
             }
+        },
+        {
+            "docset_name": "surface",
+            "build_output_subfolder": "devices/surface",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+        {
+            "docset_name": "surface-hub",
+            "build_output_subfolder": "devices/surface-hub",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
         }
     ],
     "notification_subscribers": ["brianlic@microsoft.com"],
