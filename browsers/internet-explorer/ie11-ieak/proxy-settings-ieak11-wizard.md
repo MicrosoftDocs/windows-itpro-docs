@@ -8,7 +8,7 @@ ms.sitesec: library
 title: Use the Proxy Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ---
 
-# Use the Programs page in the IEAK 11 Wizard
+# Use the Proxy Settings page in the IEAK 11 Wizard
 The **Proxy Settings** page of the Internet Explorer Customization Wizard 11 lets you pick the proxy servers used by your employees to connect for services required by the custom install package.
 
 Using a proxy server lets you limit access to the Internet. You can also use the **Additional Settings** page of the wizard to further restrict your employees from changing the proxy settings.
