@@ -30,18 +30,17 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 
 ![](images/wedge.gif) **To set up automatic detection for DHCP servers**
 
--   Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).<p>
-**Examples:**<br>
-```
-http://www.microsoft.com/webproxy.pac
-http://marketing/config.ins
-http://###.#.###.#/account.pac
-```
+-   Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).
+<p>**Examples:**<br>
+http://www.microsoft.com/webproxy.pac<br>
+http://marketing/config.ins<br>
+http://###.#.###.#/account.pac<p>
 For more detailed info about how to set up your DHCP server, see your server documentation.
 
 ![](images/wedge.gif) **To set up automatic detection for DNS servers**
 
-1.  In your DNS database file, the file that’s used to associate your host (computer) names to static IP addresses in a zone, you need to create a host record named, **WPAD**. This record contains entries for all of the hosts that require static mappings, such as workstations, name servers, and mail servers. It also has the IP address to the web server storing your automatic configuration (.js, .jvs, .pac, or .ins) file.<p>The syntax is: `<host_name> IN A <host_ip_address>`<p>
+1.  In your DNS database file, the file that’s used to associate your host (computer) names to static IP addresses in a zone, you need to create a host record named, **WPAD**. This record contains entries for all of the hosts that require static mappings, such as workstations, name servers, and mail servers. It also has the IP address to the web server storing your automatic configuration (.js, .jvs, .pac, or .ins) file.<p>The syntax is:<br>
+`<host_name> IN A <host_ip_address>`<br>
 `corserv IN A 192.55.200.143`<br>
 `nameserver2 IN A 192.55.200.2`<br>
 `mailserver1 IN A 192.55.200.51`
