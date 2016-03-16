@@ -28,9 +28,9 @@ Because of this, the custom .cab files created by the Internet Explorer Customiz
 ### Understanding digital certificates
 To sign your package and custom programs digitally, you must first obtain a digital certificate. You can obtain a certificate from a certification authority or a privately-controlled certificate server. For more info about obtaining certificates or setting up a certificate server, see the following:
 
--   Microsoft-trusted certification authorities ([Windows root certificate program members](http://go.microsoft.com/fwlin/p/?linkid=59547)).
+-   Microsoft-trusted certification authorities ([Windows root certificate program requirements](http://go.microsoft.com/fwlink/p/?LinkId=759697)).
 
--   Certificates overview documentation ([Certificates](http://go.microsoft.com/fwlin/p/?linkid=68942)).
+-   Certificates overview documentation ([Certificates](http://go.microsoft.com/fwlink/?LinkId=759698)).
 
 -   Microsoft Active Directory Certificate Services ( [Active Directory Certificate Services](http://go.microsoft.com/fwlink/p/?LinkId=259521)).
 
