@@ -9,7 +9,7 @@ title: Create the build computer folder structure using IEAK 11  (Internet Explo
 ---
 
 # Create the build computer folder structure using IEAK 11
-Create your build environment on the computer that you’ll use to build your custom browser package. Your license agreement determines your folder structure and which version of Internet Explorer Administration Kit 11 (IEAK 11) you’ll use:**Internal** or **External**.
+Create your build environment on the computer that you’ll use to build your custom browser package. Your license agreement determines your folder structure and which version of Internet Explorer Administration Kit 11 (IEAK 11) you’ll use: **Internal** or **External**.
 
 |Name             |Version               |Description                                              |
 |-----------------|----------------------|---------------------------------------------------------|
