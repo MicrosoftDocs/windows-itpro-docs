@@ -53,6 +53,6 @@ You must keep your private key, private. To do this, we recommend:
 
 -   **Separate test and release signing.** Set up a parallel code signing infrastructure, using test certificates created by an internal test root certificate authority. This helps to ensure that your certificates aren’t stored on an insecure build system, reducing the likelihood that they will be compromised.
 
--   **Tamperproof storage.** Save your private keys on secure, tamper-proof hardware devices.
+-   **Tamper-proof storage.** Save your private keys on secure, tamper-proof hardware devices.
 
 -   **Security.** Protect your private keys using physical security measures, such as cameras and card readers.
