@@ -34,7 +34,8 @@ Each of these sections also contains information about paths you might take when
 
  
 
-### <a href="" id="first-page"></a>Hi there page
+## <a href="" id="first-page"></a>Hi there page
+
 
 This is the first screen you'll see when you power up the Surface Hub for the first time. It's where you input localization information for your device.
 
@@ -63,7 +64,8 @@ When the settings are accepted, the device will check for a wired network connec
 
 If no wired connection can be found, then the device will attempt to set up a wireless connection, and will display the [Network setup page](#network-setup).
 
-### <a href="" id="network-setup"></a>Network setup page
+## <a href="" id="network-setup"></a>Network setup page
+
 
 If your device does not detect a wired connection that it can use to connect to a network or the Internet, you will see this page. Here you can either connect to a wireless network, or skip making the network connection.
 
@@ -87,7 +89,8 @@ If the device has a wired connection when it starts, and can establish a network
 
 If you want to connect to a secured wireless network from this page, click on the network of your choice, and then provide the necessary information (password or account credentials) to connect. See [Wireless network setup](#wireless).
 
-### <a href="" id="wireless"></a>Wireless network setup
+## <a href="" id="wireless"></a>Wireless network setup
+
 
 This page will be shown when you've selected a secured wireless network.
 
@@ -102,7 +105,8 @@ This page will be shown when you've selected a secured wireless network.
 
 The device will attempt to connect to the specified network. If it's successful, you'll be taken to the [Set up for you page](#set-up-for-you).
 
-### <a href="" id="proxy"></a>Network proxy setup
+## <a href="" id="proxy"></a>Network proxy setup
+
 
 This page will be shown when the device detects a wired connection with limited connectivity. You have three options:
 
@@ -137,7 +141,8 @@ You can skip connecting to a network by selecting **Skip this step**. You'll be 
 
  
 
-### <a href="" id="set-up-for-you"></a>Set up for you page
+## <a href="" id="set-up-for-you"></a>Set up for you page
+
 
 This screen is purely informational, and shows which recommended settings have been enabled by default.
 
@@ -153,7 +158,8 @@ Once you're done reviewing the settings, click **Next** to go on.
 
 The settings shown on the page have already been made, and can't be changed until after first run is completed.
 
-### <a href="" id="device-account"></a>Device account page
+## <a href="" id="device-account"></a>Device account page
+
 
 On this page, the Surface Hub will ask for credentials for the device account that you previously configured. (See [Create and test a device account](prepare-your-environment-for-surface-hub-create-and-test-a-device-account.md).) The Surface Hub will attempt to discover various properties of the account, and may ask for more information on another page if it does not succeed.
 
@@ -197,7 +203,8 @@ The device will use the UPN or DOMAIN\\User name and password for the device acc
 -   Look up the Session Initiation Protocol (SIP) address for the account.
 -   Pull the account’s display name and alias attributes.
 
-### <a href="" id="exchange-server"></a>Exchange server page
+## <a href="" id="exchange-server"></a>Exchange server page
+
 
 This page will only be shown if there's a problem. Typically, it means that the device account that you provided was found in Active Directory (AD) or Azure Active Directory (Azure AD), but the Exchange server for the account was not discovered.
 
@@ -228,7 +235,8 @@ The Surface Hub will attempt to validate the device account on the Exchange serv
 
 If you choose to skip setting up Exchange services, the Surface Hub will stop looking for the Exchange server, and no Exchange services (mail and calendar) will be enabled.
 
-### <a href="" id="exchange-policies"></a>Exchange policies page
+## <a href="" id="exchange-policies"></a>Exchange policies page
+
 
 This page will be shown when:
 
@@ -257,7 +265,8 @@ Another possible reason for not being able to reach Exchange is because of certi
 
 If you choose to skip this check, the Surface Hub will stop looking for the Exchange server and validating EAS policies, and no Exchange services will be enabled. See [Intro to Surface Hub](intro-to-surface-hub.md) for details on setup dependencies.
 
-### <a href="" id="name-this-device"></a>Name this device page
+## <a href="" id="name-this-device"></a>Name this device page
+
 
 This page asks you to provide two names that will be used for identifying the Surface Hub.
 
@@ -284,7 +293,8 @@ While either of the names can be changed later, keep in mind that:
 -   The friendly name should be recognizable and different so that people can distinguish one Surface Hub from another when trying to wirelessly connect.
 -   If you decide to domain join the device, the device name must not be the same as any other device on the account’s Active Directory domain. The device can't join the domain if it is using the same name as another domain-joined device.
 
-### <a href="" id="setup-admins"></a>Set up admins for this device page
+## <a href="" id="setup-admins"></a>Set up admins for this device page
+
 
 On this page, you will choose from several options for how you want to set up admin accounts to locally manage your device.
 
@@ -402,7 +412,8 @@ The following input is required:
 
 This page will attempt to create a new admin account using the credentials that you enter here. If it's successful, then first run will end. If not, you'll be asked for different credentials.
 
-### <a href="" id="update-surface-hub"></a>Update the Surface Hub
+## <a href="" id="update-surface-hub"></a>Update the Surface Hub
+
 
 **Important**  Before you do the updates, make sure you read [Save your BitLocker key](manage-surface-hub-bitlocker.md) in order to make sure you have a backup of the key.
 
@@ -410,7 +421,7 @@ This page will attempt to create a new admin account using the credentials that 
 
 In order to get the latest features and fixes, you should update your Surface Hub as soon as you finish all of the preceding first-run steps.
 
-1.  Make sure the device has access to the Windows Update servers or to Windows Server Update Services (WSUS). To configure WSUS, see [**Using WSUS**](manage-surface-hub-windows-updates.md#using-wsus).
+1.  Make sure the device has access to the Windows Update servers or to Windows Server Update Services (WSUS). To configure WSUS, see [Using WSUS](manage-surface-hub-windows-updates.md#using-wsus).
 2.  Open Settings, click **Update & security**, then **Windows Update**, and then click **Check for updates**.
 3.  If updates are available, they will be downloaded. Once downloading is complete, click the **Update now** button to install the updates.
 4.  Follow the onscreen prompts after the updates are installed. You may need to restart the device.
