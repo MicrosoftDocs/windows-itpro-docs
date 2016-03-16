@@ -25,7 +25,7 @@ The **Security and Privacy Settings** page of the Internet Explorer Customizatio
 
     -   **Import the current content ratings settings.** Pick this option to import your content rating settings from your computer and use them as the preset for your employee’s settings.<p>**Note**<br>Not all Internet content is rated. If you choose to allow users to view unrated sites, some of those sites could contain inappropriate material. To change your settings, click **Modify Settings** to open the **Content Advisor** box, where you can make your changes.
 
-3.  Click **Next** to go to the [Add a Root Certificated](add-root-certificate-ieak11-wizard.md) page or **Back** to go to the [Proxy Settings](proxy-settings-ieak11-wizard.md) page.
+3.  Click **Next** to go to the [Add a Root Certificate](add-root-certificate-ieak11-wizard.md) page or **Back** to go to the [Proxy Settings](proxy-settings-ieak11-wizard.md) page.
 
  
 
