@@ -34,7 +34,7 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 <p>**Examples:**<br>
 http://www.microsoft.com/webproxy.pac<br>
 http://marketing/config.ins<br>
-http://###.#.###.#/account.pac<p>
+http://123.4.567.8/account.pac<p>
 For more detailed info about how to set up your DHCP server, see your server documentation.
 
 ![](images/wedge.gif) **To set up automatic detection for DNS servers**
