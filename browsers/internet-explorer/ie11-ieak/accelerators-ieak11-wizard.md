@@ -27,7 +27,7 @@ The **Add Accelerator** box appears.
 
 5.  Click **Edit** to change your accelerator information, click **Set Default** to make an accelerator the default value for a category, or **Remove** to delete an accelerator.
 
-6.  Click **Next** to go to the [**Favorites, Favorites Bar, and Feeds**](favorites-favoritesbar-and-feeds-ieak11-wizard.md) page or **Back** to go to the [**Important URLs - Home Page and Support**](important-urls-home-page-and-support-ieak11-wizard.md) page.
+6.  Click **Next** to go to the [Favorites, Favorites Bar, and Feeds](favorites-favoritesbar-and-feeds-ieak11-wizard.md) page or **Back** to go to the [Important URLs - Home Page and Support](important-urls-home-page-and-support-ieak11-wizard.md) page.
 
  
 
