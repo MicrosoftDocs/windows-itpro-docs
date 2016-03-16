@@ -13,5 +13,4 @@ The types of media on which your custom install package is available.
 
 |Name |Value |Description |
 |-----|------|------------|
-|Build_LAN |<ul><li>**0.** Don’t create the LAN-based installation package.</li><li>**1.** Create the LAN-based installation package.</li>
-</ul> |Determines whether you want to create a LAN-based installation package.
+|Build_LAN |<ul><li>**0.** Don’t create the LAN-based installation package.</li><li>**1.** Create the LAN-based installation package.</li></ul> |Determines whether you want to create a LAN-based installation package. |
