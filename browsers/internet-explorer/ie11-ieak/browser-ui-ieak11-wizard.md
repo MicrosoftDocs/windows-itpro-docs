@@ -38,7 +38,7 @@ This box should be cleared if you want to offer a custom set of buttons, but wan
 
 9.  Click **Edit** to change your custom toolbar button or **Remove** to delete the button. The removed button will disappear from your employee’s computer after you apply the updated customization. Only custom toolbar buttons can be removed.
 
-10. Click **Next** to go to the [**Search Providers**](search-providers-ieak11-wizard.md) page or **Back** to go to the [**User Experience**](user-experience-ieak11-wizard.md) page.
+10. Click **Next** to go to the [Search Providers](search-providers-ieak11-wizard.md) page or **Back** to go to the [User Experience](user-experience-ieak11-wizard.md) page.
 
  
 
