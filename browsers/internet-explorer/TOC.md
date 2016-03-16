@@ -83,7 +83,7 @@
 #[Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](ie11-ieak/index.md)
 ##[Before you start using IEAK 11](ie11-ieak/before-you-create-custom-pkgs-ieak11.md)
 ###[Hardware and software requirements for IEAK 11](ie11-ieak/hardware-and-software-reqs-ieak11.md)
-###[Determine the licensing version and features to use in IEAK 11](ie11-ieak/ie11-ieak/licensing-version-and-features-ieak11.md)
+###[Determine the licensing version and features to use in IEAK 11](ie11-ieak/licensing-version-and-features-ieak11.md)
 ###[Security features and IEAK 11](ie11-ieak/security-and-ieak11.md)
 ###[File types used or created by IEAK 11](ie11-ieak/file-types-ieak11.md)
 ###[Tasks and references to consider before creating and deploying custom packages using IEAK 11](ie11-ieak/create-manage-deploy-custom-pkgs-ieak11.md)
