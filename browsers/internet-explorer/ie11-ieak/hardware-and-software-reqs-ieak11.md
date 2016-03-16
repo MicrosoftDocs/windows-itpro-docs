@@ -14,7 +14,7 @@ Before you can use the Internet Explorer Administration Kit 11 and the Internet 
 ## Hardware requirements
 Before you start the Internet Explorer Customization Wizard 11, you must check to see how much disk space you have on the drive you're going to use to build the IE11 install package. This drive can be on the same device as the one running the wizard; it just needs to have a secure destination folder.
 
-Before you start to create your install package, you must meet all of the [Internet Explorer 11 requirements](ie11-deploy-guide/system-requirements-and-language-support-for-ie11.md), plus:
+Before you start to create your install package, you must meet all of the [Internet Explorer 11 requirements](../ie11-deploy-guide/system-requirements-and-language-support-for-ie11.md), plus:
 
 -   Up to 100 megabytes (MB) of disk space, depending on how many components you include in the installation package.
 

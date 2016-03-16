@@ -9,7 +9,7 @@ title: Add and approve ActiveX controls using IEAK 11 (Internet Explorer Adminis
 ---
 
 # Add and approve ActiveX controls using IEAK 11
-There are two main approaches to how you can control the use of ActiveX controls in your company. For more info about ActiveX controls, including how to manage the controls using Group Policy, see [Group Policy and ActiveX installation](ie11-deploy-guide/activex-installation-using-group-policy.md) in the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](ie11-deploy-guide/ie11-deployment-guide-for-it-pros.md).
+There are two main approaches to how you can control the use of ActiveX controls in your company. For more info about ActiveX controls, including how to manage the controls using Group Policy, see [Group Policy and ActiveX installation](../ie11-deploy-guide/activex-installation-using-group-policy.md) in the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md).
 
 **Note**<br>
 ActiveX controls are supported in Internet Explorer for the desktop for Windows 7 and Windows 8.1. They are not supported on the immersive version of Internet Explorer for Windows 8.1.
