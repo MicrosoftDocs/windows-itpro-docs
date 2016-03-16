@@ -18,7 +18,7 @@ Extends Protected Mode to further restrict the ability of an attacker to access 
 
 -   Improving security against memory safety exploits in 64-bit tab processes.
 
-This feature is turned off by default. For more info, see [Enhanced Protected Mode problems with Internet Explorer](../ie11-deploy-guide/enhanced-protected-mode-problems-with-ie11).
+This feature is turned off by default. For more info, see [Enhanced Protected Mode problems with Internet Explorer](../ie11-deploy-guide/enhanced-protected-mode-problems-with-ie11.md).
 
 ## Certificates and Digital Signatures
 Web browsers have security features that help protect users from downloading harmful programs. Depending on the security level and the platform that you are using, the user may be prevented from, or warned against, downloading programs that are not digitally signed. Digital signatures show users where programs come from, verify that the programs have not been altered, and ensure that users do not receive unnecessary warnings when installing the custom browser.
