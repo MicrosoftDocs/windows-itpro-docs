@@ -8,7 +8,8 @@ ms.sitesec: library
 title: IExpress Wizard command-line options (Internet Explorer Administration Kit 11 for IT Pros)
 ---
 
-`Applies to:`
+**Applies to:**
+
 - Windows Server 2008 R2 with SP1
 
 # IExpress Wizard command-line options
