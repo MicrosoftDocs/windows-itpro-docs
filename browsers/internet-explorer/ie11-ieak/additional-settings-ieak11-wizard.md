@@ -23,7 +23,7 @@ You’ll only see this page if you are running the **Internal** version of the I
 
 2.  Pick the setting you want to change, and then update its details.
 
-3.  Click **Next** to go to the [**Wizard Complete-Next Steps**](wizard-complete-ieak11-wizard.md) page or **Back** to go to the [**Programs**](programs-ieak11-wizard.md) page.
+3.  Click **Next** to go to the [Wizard Complete-Next Steps](wizard-complete-ieak11-wizard.md) page or **Back** to go to the [Programs](programs-ieak11-wizard.md) page.
 
  
 
