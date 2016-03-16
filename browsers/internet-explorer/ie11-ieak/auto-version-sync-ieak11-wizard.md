@@ -30,7 +30,7 @@ The **Automatic Version Synchronization** page tells you:
 1.  Click **Synchronize**.<p>
 You might receive a security warning before downloading your Setup file, asking if you want to continue. Click **Run** to continue.
 
-2.  Click **Next** to go to the [**Custom Components**](custom-components-ieak11-wizard.md) page or **Back** to go to the [**Feature Selection**](feature-selection-ieak11-wizard.md) page.
+2.  Click **Next** to go to the [Custom Components](custom-components-ieak11-wizard.md) page or **Back** to go to the [Feature Selection](feature-selection-ieak11-wizard.md) page.
 
  
 
