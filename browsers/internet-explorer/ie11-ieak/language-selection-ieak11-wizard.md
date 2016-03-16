@@ -19,7 +19,7 @@ The **Language Selection** page of the Internet Explorer Customization Wizard 11
 You can support as many languages as you want, but each localized version must be in its own install package.<p>
 **Note**<br>To keep your settings across multiple versions of the package, you can pick the same destination folder for all versions. The different language versions are then saved in separate subfolders within that destination folder. Like, for an English version, `C:\Cie\Build1\Flat\Win32_WIN8\en-US\` and for a German version, `C:\Cie\Build1\Flat\Win32_WIN8\de-DE\`.
 
-2.  Click **Next** to go to the [Package Type Selection](package-type-selection-ieak11-wizard.md) page or **Back** to go to the [Platform Selection](platform-selection-ieak11-wizard.md) page.
+2.  Click **Next** to go to the [Package Type Selection](pkg-type-selection-ieak11-wizard.md) page or **Back** to go to the [Platform Selection](platform-selection-ieak11-wizard.md) page.
 
  
 
