@@ -37,7 +37,7 @@ When filling out your exceptions, keep in mind:
 
 6.  Check the **Do not use proxy server for local (intranet) addresses** to bypass your proxy servers for all addresses on your intranet.
 
-7.  Click **Next** to go to the [Security and Privacy Settings](security-and-privacy-settings-ieak11-wizard.md) page or **Back** to go to the [Automatic Configuration](automatic-configuration-ieak11-wizard.md) page.
+7.  Click **Next** to go to the [Security and Privacy Settings](security-and-privacy-settings-ieak11-wizard.md) page or **Back** to go to the [Automatic Configuration](auto-config-ieak11-wizard.md) page.
 
  
 
