@@ -29,8 +29,3 @@ IE11 and IEAK 11 offers differing experiences between Windows 7 and Windows 8.1 
 |Internet Explorer for the desktop         |The desktop browser. This is the only experience available when running IE11 on Windows 7 SP1.  |
 |IE11                                      |The whole browser, which includes both IE and Internet Explorer for the desktop.  |
 |Internet Explorer Customization Wizard 11 |Step-by-step wizard screens that help you create custom IE11 installation packages. |
-
-## Related topics
-[Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
-[Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
-[Microsoft Edge - Deployment Guide for IT Pros](../../edge/index.md)
