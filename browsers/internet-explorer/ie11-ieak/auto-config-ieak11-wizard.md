@@ -41,7 +41,7 @@ You can use the Domain Name System (DNS) and the Dynamic Host Configuration Prot
         **Note**<br>
         If you specify URLs for both auto-config and auto-proxy, the auto-proxy URL will be incorporated into the .ins file. The correct form for the URL is `http://share/test.ins`.
 
-3.  Click **Next** to go to the [**Proxy Settings**](proxy-settings-ieak11-wizard.md) page or **Back** to go to the [**Connection Settings**](connection-settings-ieak11-wizard.md) page.
+3.  Click **Next** to go to the [Proxy Settings](proxy-settings-ieak11-wizard.md) page or **Back** to go to the [Connection Settings](connection-settings-ieak11-wizard.md) page.
 
  
 
