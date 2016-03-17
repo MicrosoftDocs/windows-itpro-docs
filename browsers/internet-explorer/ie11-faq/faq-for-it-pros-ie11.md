@@ -114,9 +114,9 @@ For more information, see [New group policy settings for IE11](../ie11-deploy-gu
 **Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
 Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
 
--   [Internet Explorer Administration Kit Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
+- [Internet Explorer Administration Kit Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
 
--   [Internet Explorer Administration Kit 11 product documentation](http://go.microsoft.com/fwlink/p/?LinkId=327739) on TechNet.
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](http://go.microsoft.com/fwlink/p/?LinkId=760646)
 
 **Q: Where can I get more information about IE11 for IT pros?**<br>
 Visit the [Springboard Series for Microsoft Browsers](http://go.microsoft.com/fwlink/p/?LinkId=313191) webpage on TechNet.
