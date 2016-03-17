@@ -30,7 +30,7 @@ To sign your package and custom programs digitally, you must first obtain a digi
 
 -   Microsoft-trusted certification authorities ([Windows root certificate program requirements](http://go.microsoft.com/fwlink/p/?LinkId=759697)).
 
--   Certificates overview documentation ([Certificates](http://go.microsoft.com/fwlink/?LinkId=759698)).
+-   Certificates overview documentation ([Certificates](http://go.microsoft.com/fwlink/p/?LinkId=759698)).
 
 -   Microsoft Active Directory Certificate Services ( [Active Directory Certificate Services](http://go.microsoft.com/fwlink/p/?LinkId=259521)).
 
