@@ -141,6 +141,11 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 |Let IE decide |Links open in the same type of experience from where they're launched. For example, clicking a link from a Windows Store app, opens IE. However, clicking a link from a desktop app, opens Internet Explorer for the desktop. |
 |Always in IE11 |Links always open in IE. |
 |Always in Internet Explorer for the desktop |Links always open in Internet Explorer for the desktop. |
+
+## Related topics
+- [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
+- [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760644)
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](http://go.microsoft.com/fwlink/p/?LinkId=760646)
  
 
  
