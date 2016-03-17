@@ -21,7 +21,7 @@ You can customize Internet Explorer 11 to support various browser behaviors, mu
 
 In addition, you can configure IE before, during, or after deployment, using these tools:
 
--   **IE Administration Kit 11 (IEAK 11)**. Creates customized installation packages that can be deployed through your software distribution system. For more information about the IEAK 11, see [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](index.md).
+-   **IE Administration Kit 11 (IEAK 11)**. Creates customized installation packages that can be deployed through your software distribution system. For more information about the IEAK 11, see [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](ie11-ieak/index.md).
 
 -   **Group Policy**. Configures and enforces IE11 settings. For more information about settings and configuration options, see [Group policy objects and Internet Explorer 11 (IE11)](group-policy-objects-and-ie11.md).
 
