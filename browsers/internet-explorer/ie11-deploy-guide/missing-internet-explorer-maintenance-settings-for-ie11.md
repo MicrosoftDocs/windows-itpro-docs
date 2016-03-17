@@ -30,7 +30,7 @@ For more information about all of the new options and Group Policy, see:
 
 -   [Administrative templates and Internet Explorer 11](administrative-templates-and-ie11.md)
 
--   [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](ie11-ieak/index.md)
+-   [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md)
 
 -   [Group Policy Settings Reference for Windows and Windows Server](http://go.microsoft.com/fwlink/p/?LinkId=279876)
 

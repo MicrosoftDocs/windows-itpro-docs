@@ -25,7 +25,7 @@ The wizard automatically puts your custom installation files in your `\<build_di
 **Note**<br>Use the localized versions of the IE Customization Wizard 11 to create localized IE11 installation packages.
 
 ## Related topics
-[IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](https://technet.microsoft.com/en-us/library/dn454924.aspx)
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md)
      
 
  

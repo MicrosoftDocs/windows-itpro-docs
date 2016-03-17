@@ -144,8 +144,8 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 
 ## Related topics
 - [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
-- [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](ie11-deploy-guide/index.md)
-- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](ie11-ieak/index.md)
+- [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
  
 
  
