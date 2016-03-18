@@ -116,7 +116,7 @@ Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for do
 
 - [Internet Explorer Administration Kit Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
 
-- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](ie11-ieak/index.md)
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
 
 **Q: Where can I get more information about IE11 for IT pros?**<br>
 Visit the [Springboard Series for Microsoft Browsers](http://go.microsoft.com/fwlink/p/?LinkId=313191) webpage on TechNet.
