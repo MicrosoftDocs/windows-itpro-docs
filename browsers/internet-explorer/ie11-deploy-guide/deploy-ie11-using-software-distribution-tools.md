@@ -1,6 +1,7 @@
 ---
 Description: Deploy Internet Explorer 11 using software distribution tools
 ms.assetid: fd027775-651a-41e1-8ec3-d32eca876d8a
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,6 +1,7 @@
 ---
 Description: Microsoft Edge is pre-installed on all Windows 10-capable devices that meet the minimum system requirements and are on the supported language list.
 ms.assetid: 3C5BC4C4-1060-499E-9905-2504EA6DC6AA
+author: eross-msft
 ms.prod: edge
 ms.mktglfcycl: support
 ms.sitesec: library

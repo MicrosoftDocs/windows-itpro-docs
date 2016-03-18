@@ -1,6 +1,7 @@
 ---
 Description: Create packages for multiple operating systems or languages
 ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +19,7 @@ You'll create multiple versions of your custom browser package if:
 
  ![](images/wedge.gif) **To create a new package**
 
-1.  Create an installation package using the Internet Explorer Customization Wizard 11, as described in the [Internet Explorer Customization Wizard 11 options](http://go.microsoft.com/fwlink/p/?linkid=328022) topic.
+1.  Create an installation package using the Internet Explorer Customization Wizard 11, as described in the [Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options](../ie11-ieak/ieak11-wizard-custom-options.md) topic.
 
 2.  Go to your **CIE/Custom** folder and rename the `Install.ins`file. For example, if you need a version for employees in Texas, rename the file to Texas.ins.
 

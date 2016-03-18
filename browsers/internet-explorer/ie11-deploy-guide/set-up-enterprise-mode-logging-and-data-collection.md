@@ -1,6 +1,7 @@
 ---
 Description: Set up and turn on Enterprise Mode logging and data collection in your organization.
 ms.assetid: 2e98a280-f677-422f-ba2e-f670362afcde
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,7 +1,8 @@
 ---
-Description: You can delete a single site from your global Enterprise Mode site list. If you delete a site by mistake, you’ll need to manually add it back using the instructions in the following topics, based on operating system.
+Description: Delete a single site from your global Enterprise Mode site list.
 title: Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.assetid: 41413459-b57f-48da-aedb-4cbec1e2981a
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

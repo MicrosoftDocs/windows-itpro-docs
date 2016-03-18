@@ -1,6 +1,7 @@
 ---
 Description: Group Policy suggestions for compatibility with Internet Explorer 11
 ms.assetid: 7482c99f-5d79-4344-9e1c-aea9f0a68e18
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

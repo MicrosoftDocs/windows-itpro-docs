@@ -1,6 +1,7 @@
 ---
 Description: Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that''s designed to emulate either Windows Internet Explorer 7 or Windows Internet Explorer 8, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
 ms.assetid: 042E44E8-568D-4717-8FD3-69DD198BBF26
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +19,7 @@ title: Add sites to the Enterprise Mode site list using the Windows 7 and Window
 
 Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that’s designed to emulate either Windows Internet Explorer 7 or Windows Internet Explorer 8, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.<p>**Important**<br>You can only add specific URLs, not Internet or Intranet Zones.
 
-<p>**Note**<br>If you need to include a lot of sites, instead of adding them one at a time, you can create a list of websites and add them all at the same time. For more information, see [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md).
+<p>**Note**<br>If you need to include a lot of sites, instead of adding them one at a time, you can create a list of websites and add them all at the same time. For more information, see [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md).
 
 ## Adding a site to your compatibility list
 You can add individual sites to your compatibility list by using the Enterprise Mode Site List Manager tool.

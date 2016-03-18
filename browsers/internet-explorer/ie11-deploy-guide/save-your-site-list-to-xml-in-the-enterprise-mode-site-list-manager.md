@@ -1,6 +1,7 @@
 ---
 Description: You can save your current Enterprise Mode compatibility site list as an XML file, for distribution and use by your managed systems.
 ms.assetid: 254a986b-494f-4316-92c1-b089ee8b3e0a
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

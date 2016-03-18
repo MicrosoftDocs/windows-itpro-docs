@@ -1,6 +1,7 @@
 ---
 Description: Use the topics in this section to learn about how to use the Enterprise Mode Site List Manager tool.
-ms.assetid: 
+ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,7 +39,7 @@ The following topics give you more information about the things that you can do 
 |[Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md) |How to add websites to your site list using the Windows 10 Enterprise Mode Site List Manager. |
 |[Add sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md) |How to add websites to your site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager. |
 |[Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md) |How to add several websites to your site list at the same time, using a text or XML file and the Windows 10 Enterprise Mode Site List Manager. |
-|[Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool]add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md) |How to add several websites to your site list at the same time, using a text or XML file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager. |
+|[Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md) |How to add several websites to your site list at the same time, using a text or XML file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager. |
 |[Edit the Enterprise Mode site list using the Enterprise Mode Site List Manager tool](edit-the-enterprise-mode-site-list-using-the-enterprise-mode-site-list-manager.md) |How to edit the compatibility mode for specific websites.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
 |[Fix validation problems using the Enterprise Mode Site List Manager tool](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md) |How to fix common site list validation errors.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |
 |[Search your Enterprise Mode site list in the Enterprise Mode Site List Manager tool](search-your-enterprise-mode-site-list-in-the-enterprise-mode-site-list-manager.md) |How to look to see if a site is already in your global Enterprise Mode site list.<p>This topic applies to both versions of the Enterprise Mode Site List Manager tool. |

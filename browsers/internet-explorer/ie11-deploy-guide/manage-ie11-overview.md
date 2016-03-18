@@ -1,6 +1,7 @@
 ---
 Description: Use the topics in this section to learn about how to auto detect your settings, auto configure your configuration settings, and auto configure your proxy configuration settings for Internet Explorer.
 ms.assetid: eb3cce62-fc7b-41e3-97b6-2916b85bcf55
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

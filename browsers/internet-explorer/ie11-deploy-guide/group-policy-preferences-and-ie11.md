@@ -1,6 +1,7 @@
 ---
 Description: Info about Group Policy preferences versus Group Policy settings
 ms.assetid: f2264c97-7f09-4f28-bb5c-58ab80dcc6ee
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

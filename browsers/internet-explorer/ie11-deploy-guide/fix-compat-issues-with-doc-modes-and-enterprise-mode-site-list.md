@@ -1,6 +1,7 @@
 ---
 Description: The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site.
 ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library

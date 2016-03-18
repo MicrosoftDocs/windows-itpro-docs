@@ -1,6 +1,7 @@
 ---
 Description: Administrative templates and Internet Explorer 11
 ms.assetid: 2b390786-f786-41cc-bddc-c55c8a4c5af3
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -68,3 +69,7 @@ Regardless which tool you're using to edit your Group Policy settings, you'll ne
 -   **If you're using the Group Policy Management Console (GPMC) or the Local Group Policy Editor.** See [Edit Administrative Template Policy Settings](http://go.microsoft.com/fwlink/p/?LinkId=214521) for step-by-step instructions about editing your Administrative Templates.
 
 -   **If you're using GPMC with Advanced Group Policy Management (AGPM).** See [Checklist: Create, Edit, and Deploy a GPO](http://go.microsoft.com/fwlink/p/?LinkId=214522) for step-by-step instructions about how to check out a GPO from the AGPM archive, edit it, and request deployment.
+
+## Related topics
+- [Administrative templates (.admx) for Windows 10 download](http://go.microsoft.com/fwlink/p/?LinkId=746579)
+- [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=746580)

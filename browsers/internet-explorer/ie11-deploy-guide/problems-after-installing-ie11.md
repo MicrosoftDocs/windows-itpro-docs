@@ -1,6 +1,7 @@
 ---
 Description: Possible solutions to the problems you might encounter after installing IE11, such as crashing or seeming slow, getting into an unusable state, or problems with adaptive streaming and DRM playback.
 ms.assetid: c4b75ad3-9c4a-4dd2-9fed-69f776f542e6
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -53,7 +54,7 @@ After you turn each item back on, see if IE crashes or slows down. Doing it this
 1.  Open Internet Explorer for the desktop, click the **Tools** menu, and then click **Internet Options**.
 
 2.  On the **Advanced** tab, go to the **Accelerated graphics** section, and then turn on Software Rendering mode by choosing the **Use software rendering instead of GPU rendering** box.<p>
-If the **Use software rendering instead of GPU rendering** option is greyed out, it means that your current video card or video driver doesn't support GPU hardware acceleration. For more information, see [Is Internet Explorer slow? 5 things to try](http://go.microsoft.com/fwlink/p/?LinkId=214531).
+If the **Use software rendering instead of GPU rendering** option is greyed out, it means that your current video card or video driver doesn't support GPU hardware acceleration. For more information, see [Windows 10 Support](http://go.microsoft.com/fwlink/?LinkId=746588).
 
 ## Adaptive streaming and DRM playback don’t work with Windows Server 2012 R2
 IE11 in Windows Server 2012 R2 doesn’t include media features like adaptive streaming or Digital Rights Management (DRM) playback. To add these features, you’ll need to download and install the Media Feature Pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=320789), as well as an app that uses PlayReady DRM from the Windows Store, such as the Xbox Music app or Xbox Video app. The app must be installed to specifically turn on DRM features, while all other media features are installed with the Media Feature Pack.

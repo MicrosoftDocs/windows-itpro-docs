@@ -1,6 +1,7 @@
 ---
 Description: Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings.
 ms.assetid: 2E849894-255D-4F68-AE88-C2E4E31FA165
+author: eross-msft
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library

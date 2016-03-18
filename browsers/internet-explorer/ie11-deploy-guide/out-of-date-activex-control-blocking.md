@@ -1,6 +1,7 @@
 ---
 Description: Use out-of-date ActiveX control blocking to help you know when IE prevents a webpage from loading outdated ActiveX controls and to update the outdated control, so that it’s safer to use.
 ms.assetid: e61866bb-1ff1-4a8d-96f2-61d3534e8199
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -51,6 +52,7 @@ When IE blocks an outdated ActiveX control, you’ll see a notification bar simi
 **Internet Explorer 9 through Internet Explorer 11**
 
 ![Warning about outdated activex controls (ie9+)](images/outdatedcontrolwarning.png)
+
 **Windows Internet Explorer 8**
 
 ![Warning about outdated activex controls (ie8)](images/ieoutdatedcontrolwarning.png)
@@ -94,7 +96,7 @@ reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v DownloadVe
 Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer. Use this configuration option at your own risk.
 
 ## Out-of-date ActiveX control blocking on managed devices
-Out-of-date ActiveX control blocking includes 4 new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative Templates for Internet Explorer](http://go.microsoft.com/fwlink/p/?LinkId=444484) page.
+Out-of-date ActiveX control blocking includes 4 new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative templates (.admx) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=746579) page or the [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=746580) page, depending on your operating system.
 
 ### Group Policy settings
 Here’s a list of the new Group Policy info, including the settings, location, requirements, and Help text strings. All of these settings can be set in either the Computer Configuration or User Configuration scope, but Computer Configuration takes precedence over User Configuration.

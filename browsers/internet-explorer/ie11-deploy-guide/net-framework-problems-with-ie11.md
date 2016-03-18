@@ -1,6 +1,7 @@
 ---
 Description: How to turn managed browser hosting controls back on in Internet Explorer 11.
 ms.assetid: b0b7f60f-9099-45ab-84f4-4ac64d7bcb43
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: support
 ms.sitesec: library

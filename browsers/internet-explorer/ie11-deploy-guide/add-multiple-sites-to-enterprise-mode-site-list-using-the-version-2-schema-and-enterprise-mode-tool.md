@@ -1,6 +1,7 @@
 ---
-Description: You can add multiple sites to your Enterprise Mode site list by creating a custom text (TXT) or Extensible Markup Language (XML) file of problematic sites and then adding it in the Bulk add from file area of the Windows 10 Enterprise Mode Site List Manager tool. You can only add specific URLs, not Internet or Intranet Zones.To add your websites one at a time, see Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool.
+Description: Add multiple sites to your Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool.
 ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
+author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
