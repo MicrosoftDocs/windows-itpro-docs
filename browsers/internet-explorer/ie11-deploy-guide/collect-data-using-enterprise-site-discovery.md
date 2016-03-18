@@ -368,7 +368,7 @@ You can completely remove the data stored on your employee’s computers.
 
  ## Related topics
 * [Enterprise Mode Site List Manager for Windows 10 download](http://go.microsoft.com/fwlink/?LinkId=746562)
-* [Enterprise Mode for Internet Explorer 11 (IE11)](http://go.microsoft.com/fwlink/p/?linkid=618377)
+* [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
  
 
 

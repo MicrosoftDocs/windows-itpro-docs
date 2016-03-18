@@ -1,5 +1,6 @@
 ---
 description: The landing page for IE11 that lets you access the documentation.
+assetid: BE3DC32E-80D9-4D9F-A802-C7DB6C50DBE0
 author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
