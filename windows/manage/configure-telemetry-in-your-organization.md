@@ -120,7 +120,7 @@ The data gathered at this level includes:
 -   **Windows Defender/Endpoint Protection**. Windows Defender and System Center Endpoint Protection requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address.
 
     **Note**  
-    This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](manage-privacy-for-windows-10-in-your-company.md#windows-defender).
+    This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](disconnect-your-organization-from-microsoft.md#windows-defender).
 
     Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates.
 
