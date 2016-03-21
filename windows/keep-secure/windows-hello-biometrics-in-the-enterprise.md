@@ -1,7 +1,6 @@
 ---
 title: Windows Hello biometrics in the enterprise (Windows 10)
 description: Windows Hello is the biometric authentication feature that helps strengthen authentication and helps to guard against potential spoofing through fingerprint matching and facial recognition.
-MSHAttr: PreferredLib /library
 ms.assetid: D3F27D94-2226-4547-86C0-65C84D6DF8BC
 keywords: ["Windows Hello", "enterprise biometrics"]
 ms.prod: W10

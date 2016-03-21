@@ -1,7 +1,6 @@
 ---
 title: Advanced security auditing FAQ (Windows 10)
-description: This topic for the IT professional lists questions and answers about understanding deploying and managing security audit policies.
-MSHAttr: PreferredLib /library
+description: This topic for the IT professional lists questions and answers about understanding, deploying, and managing security audit policies.
 ms.assetid: 80f8f187-0916-43c2-a7e8-ea712b115a06
 ms.prod: W10
 ms.mktglfcycl: deploy

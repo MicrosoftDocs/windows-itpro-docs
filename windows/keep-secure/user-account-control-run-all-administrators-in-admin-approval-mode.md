@@ -1,7 +1,6 @@
 ---
 title: User Account Control Run all administrators in Admin Approval Mode (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the User Account Control Run all administrators in Admin Approval Mode security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Run all administrators in Admin Approval Mode security policy setting.
 ms.assetid: b838c561-7bfc-41ef-a7a5-55857259c7bf
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Run all administrators in Admin Approval Mode** security policy setting.
 

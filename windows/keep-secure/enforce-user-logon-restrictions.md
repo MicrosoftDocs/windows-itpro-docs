@@ -1,7 +1,6 @@
 ---
 title: Enforce user logon restrictions (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Enforce user logon restrictions security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Enforce user logon restrictions security policy setting.
 ms.assetid: 5891cb73-f1ec-48b9-b703-39249e48a29f
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Enforce user logon restrictions** security policy setting.
 

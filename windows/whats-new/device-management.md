@@ -1,7 +1,6 @@
 ---
 title: Enterprise management for Windows 10 devices (Windows 10)
-description: Windows 10 provides mobile device management (MDM) capabilities for PCs laptops tablets and phones that enable enterprise level management of corporate owned and personal devices.
-MSHAttr: PreferredLib /library
+description: Windows 10 provides mobile device management (MDM) capabilities for PCs, laptops, tablets, and phones that enable enterprise-level management of corporate-owned and personal devices.
 ms.assetid: 36DA67A1-25F1-45AD-A36B-AEEAC30C9BC4
 ms.prod: W10
 ms.mktglfcycl: explore

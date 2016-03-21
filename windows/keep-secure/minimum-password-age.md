@@ -1,7 +1,6 @@
 ---
 title: Minimum password age (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Minimum password age security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Minimum password age security policy setting.
 ms.assetid: 91915cb2-1b3f-4fb7-afa0-d03df95e8161
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Minimum password age** security policy setting.
 

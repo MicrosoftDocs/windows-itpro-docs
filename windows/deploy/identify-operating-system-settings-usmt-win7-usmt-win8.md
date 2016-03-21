@@ -1,7 +1,6 @@
 ---
 title: Identify Operating System Settings (Windows 10)
 description: Identify Operating System Settings
-MSHAttr: PreferredLib /library
 ms.assetid: 1704ab18-1765-41fb-a27c-3aa3128fa242
 ms.prod: W10
 ms.mktglfcycl: deploy

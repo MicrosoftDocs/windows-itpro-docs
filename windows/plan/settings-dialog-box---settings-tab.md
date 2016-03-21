@@ -1,7 +1,6 @@
 ---
-title: Settings Dialog Box Settings Tab (Windows 10)
-description: To display the Settings dialog box in Application Compatibility Manager (ACM) on the Tools menu click Settings.
-MSHAttr: PreferredLib /library
+title: Settings Dialog Box - Settings Tab (Windows 10)
+description: To display the Settings dialog box, in Application Compatibility Manager (ACM), on the Tools menu, click Settings.
 ms.assetid: aeec1647-cf91-4f8b-9f6d-dbf4b898d901
 ms.prod: W10
 ms.mktglfcycl: operate

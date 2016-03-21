@@ -1,7 +1,6 @@
 ---
 title: Using the SUA Tool (Windows 10)
-description: By using the Standard User Analyzer (SUA) tool you can test your applications and monitor API calls to detect compatibility issues with the User Account Control (UAC) feature.
-MSHAttr: PreferredLib /library
+description: By using the Standard User Analyzer (SUA) tool, you can test your applications and monitor API calls to detect compatibility issues with the User Account Control (UAC) feature.
 ms.assetid: ebe52061-3816-47f7-a865-07bc5f405f03
 ms.prod: W10
 ms.mktglfcycl: operate

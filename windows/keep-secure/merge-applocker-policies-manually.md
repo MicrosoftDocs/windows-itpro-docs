@@ -1,7 +1,6 @@
 ---
 title: Merge AppLocker policies manually (Windows 10)
 description: This topic for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).
-MSHAttr: PreferredLib /library
 ms.assetid: 3605f293-e5f2-481d-8efd-775f9f23c30f
 ms.prod: W10
 ms.mktglfcycl: deploy

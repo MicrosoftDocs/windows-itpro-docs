@@ -1,9 +1,8 @@
 ---
 title: Build a distributed environment for Windows 10 deployment (Windows 10)
-description: In this topic you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
-MSHAttr: PreferredLib /library
+description: In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
 ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
-keywords: ["replication replicate deploy configure remote"]
+keywords: ["replication, replicate, deploy, configure, remote"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,15 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Replicate deployment shares](#sec01)
--   [Set up Distributed File System Replication (DFS-R) for replication](#sec02)
--   [Replicate the content](#sec03)
--   [Configure Windows Deployment Services (WDS) in a remote site](#sec04)
--   [Deploy the Windows 10 client to the remote site](#sec05)
--   [Related topics](#related-topics)
 
 In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of the deployment solution. With images reaching 5 GB in size or more, you can't deploy machines in a remote office over the wire. You need to replicate the content, so that the clients can do local deployments.
 

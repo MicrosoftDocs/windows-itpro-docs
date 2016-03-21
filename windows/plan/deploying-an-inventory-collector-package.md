@@ -1,6 +1,5 @@
 ---
-title: Deploying an Inventory Collector Package (Windows 10)
-MSHAttr: PreferredLib /library
+title: Deploying an Inventory-Collector Package (Windows 10)
 ms.assetid: 8726ff71-0d17-4449-bdb7-66957ae51c62
 description: 
 ms.prod: W10

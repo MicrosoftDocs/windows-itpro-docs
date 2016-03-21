@@ -1,7 +1,6 @@
 ---
 title: Log Files (Windows 10)
 description: Log Files
-MSHAttr: PreferredLib /library
 ms.assetid: 28185ebd-630a-4bbd-94f4-8c48aad05649
 ms.prod: W10
 ms.mktglfcycl: deploy

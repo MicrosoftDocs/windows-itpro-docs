@@ -1,7 +1,6 @@
 ---
-title: ACT Tools Packages and Services (Windows 10)
+title: ACT Tools, Packages, and Services (Windows 10)
 description: The Application Compatibility Toolkit is included with the Windows ADK. Download the Windows ADK.
-MSHAttr: PreferredLib /library
 ms.assetid: f5a16548-7d7b-4be9-835e-c06158dd0b89
 ms.prod: W10
 ms.mktglfcycl: operate

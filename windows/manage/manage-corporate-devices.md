@@ -1,7 +1,6 @@
 ---
 title: Manage corporate devices (Windows 10)
-description: You can use the same management tools to manage all device types running Windows 10 desktops laptops tablets and phones.
-MSHAttr: PreferredLib /library
+description: You can use the same management tools to manage all device types running Windows 10 desktops, laptops, tablets, and phones.
 ms.assetid: 62D6710C-E59C-4077-9C7E-CE0A92DFC05D
 keywords: ["MDM", "device management"]
 ms.prod: W10
@@ -17,14 +16,6 @@ author: jdeckerMS
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Identity and management options](#identity-and-management-options)
--   [How setting conflicts are resolved](#how-setting-conflicts-are-resolved)
--   [MDM enrollment](#mdm-enrollment)
--   [Learn more](#learn-more)
--   [Related topics](#related-topics)
 
 You can use the same management tools to manage all device types running Windows 10 : desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), Windows PowerShell scripts, Orchestrator runbooks, System Center tools, and so on, will continue to work for Windows 10 on desktop editions.
 

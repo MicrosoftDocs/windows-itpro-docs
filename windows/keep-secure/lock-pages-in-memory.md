@@ -1,7 +1,6 @@
 ---
 title: Lock pages in memory (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Lock pages in memory security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Lock pages in memory security policy setting.
 ms.assetid: cc724979-aec0-496d-be4e-7009aef660a3
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Lock pages in memory** security policy setting.
 

@@ -1,7 +1,6 @@
 ---
-title: Manage Wi Fi Sense in your company (Windows 10)
-description: Wi Fi Sense automatically connects you to Wi Fi so you can get online quickly in more places.
-MSHAttr: PreferredLib /library
+title: Manage Wi-Fi Sense in your company (Windows 10)
+description: Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places.
 ms.assetid: 1845E00D-C4EE-4A8F-A5E5-D00F2735A271
 keywords: ["WiFi Sense", "Shared networks"]
 ms.prod: W10

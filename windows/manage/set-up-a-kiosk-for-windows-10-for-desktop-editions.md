@@ -1,7 +1,6 @@
 ---
-title: Set up a kiosk on Windows 10 Pro Enterprise or Education (Windows 10)
-description: A single use device is easy to set up in Windows 10 for desktop editions (Pro Enterprise and Education).
-MSHAttr: PreferredLib /library
+title: Set up a kiosk on Windows 10 Pro, Enterprise, or Education (Windows 10)
+description: A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education).
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 keywords: ["assigned access", "kiosk", "lockdown"]
 ms.prod: W10
@@ -20,13 +19,6 @@ author: jdeckerMS
 **Looking for Windows Embedded 8.1 Industry information?**
 
 -   [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
-
-**In this article**
-
--   [Other settings to lock down](#other-settings-to-lock-down)
--   [Assigned access method for Universal Windows apps](#assigned-access-method)
--   [Shell Launcher for Classic Windows applications](#local-user-policy)
--   [Related topics](#related-topics)
 
 A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 

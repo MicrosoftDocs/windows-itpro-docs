@@ -1,7 +1,6 @@
 ---
 title: Maintain AppLocker policies (Windows 10)
 description: This topic describes how to maintain rules within AppLocker policies.
-MSHAttr: PreferredLib /library
 ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
 ms.prod: W10
 ms.mktglfcycl: deploy

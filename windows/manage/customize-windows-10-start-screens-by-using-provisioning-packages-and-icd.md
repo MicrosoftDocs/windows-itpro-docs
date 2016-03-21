@@ -1,7 +1,6 @@
 ---
 title: Customize Windows 10 Start with ICD and provisioning packages (Windows 10)
-description: In Windows 10 Enterprise and Windows 10 Education you can use a provisioning package that you create with Windows Imaging and Configuration Designer (ICD) tool to deploy a customized Start layout to users.
-MSHAttr: PreferredLib /library
+description: In Windows 10 Enterprise and Windows 10 Education, you can use a provisioning package that you create with Windows Imaging and Configuration Designer (ICD) tool to deploy a customized Start layout to users.
 ms.assetid: AC952899-86A0-42FC-9E3C-C25F45B1ACAC
 keywords: ["Start layout", "start menu"]
 ms.prod: W10
@@ -20,12 +19,6 @@ author: jdeckerMS
 **Looking for consumer information?**
 
 -   [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
-
-**In this article**
-
--   [How Start layout control works](#bkmk-howstartscreencontrolworks)
--   [Create a provisioning package that contains a customized Start layout](#bkmk-domaingpodeployment)
--   [Related topics](#related-topics)
 
 In Windows 10 Enterprise and Windows 10 Education, you can use a provisioning package that you create with Windows Imaging and Configuration Designer (ICD) tool to deploy a customized Start layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 

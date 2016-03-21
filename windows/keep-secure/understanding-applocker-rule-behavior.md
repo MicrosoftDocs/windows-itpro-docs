@@ -1,7 +1,6 @@
 ---
 title: Understanding AppLocker rule behavior (Windows 10)
 description: This topic describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
-MSHAttr: PreferredLib /library
 ms.assetid: 3e2738a3-8041-4095-8a84-45c1894c97d0
 ms.prod: W10
 ms.mktglfcycl: deploy

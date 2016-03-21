@@ -1,9 +1,8 @@
 ---
 title: Windows To Go frequently asked questions (Windows 10)
 description: Windows To Go frequently asked questions
-MSHAttr: PreferredLib /library
 ms.assetid: bfdfb824-4a19-4401-b369-22c5e6ca9d6e
-keywords: ["FAQ mobile device USB"]
+keywords: ["FAQ, mobile, device, USB"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library

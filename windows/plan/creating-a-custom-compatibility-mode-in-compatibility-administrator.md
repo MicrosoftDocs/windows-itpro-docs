@@ -1,7 +1,6 @@
 ---
 title: Creating a Custom Compatibility Mode in Compatibility Administrator (Windows 10)
-description: Windows® provides several compatibility modes groups of compatibility fixes found to resolve many common application compatibility issues.
-MSHAttr: PreferredLib /library
+description: Windows® provides several compatibility modes, groups of compatibility fixes found to resolve many common application-compatibility issues.
 ms.assetid: 661a1c0d-267f-4a79-8445-62a9a98d09b0
 ms.prod: W10
 ms.mktglfcycl: operate
@@ -20,13 +19,6 @@ author: TrudyHa
 -   Windows 7
 -   Windows Server 2012
 -   Windows Server 2008 R2
-
-**In this article**
-
--   [What Is a Compatibility Mode?](#what-is-a-compatibility-mode-)
--   [Searching for Existing Compatibility Modes](#searching-for-existing-compatibility-modes)
--   [Creating a New Compatibility Mode](#creating-a-new-compatibility-mode)
--   [Related topics](#related-topics)
 
 Windows® provides several *compatibility modes*, groups of compatibility fixes found to resolve many common application-compatibility issues. While working with Compatibility Administrator, you might decide to group some of your individual compatibility fixes into a custom-compatibility mode, which you can then deploy and use on any of your compatibility databases.
 

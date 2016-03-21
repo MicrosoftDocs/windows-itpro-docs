@@ -1,7 +1,6 @@
 ---
 title: Minimum password length (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Minimum password length security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Minimum password length security policy setting.
 ms.assetid: 3d22eb9a-859a-4b6f-82f5-c270c427e17e
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.
 

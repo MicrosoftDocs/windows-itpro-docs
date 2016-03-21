@@ -1,7 +1,6 @@
 ---
-title: Add rules for packaged apps to existing AppLocker rule set (Windows 10)
+title: Add rules for packaged apps to existing AppLocker rule-set (Windows 10)
 description: This topic for IT professionals describes how to update your existing AppLocker policies for packaged apps using the Remote Server Administration Toolkit (RSAT).
-MSHAttr: PreferredLib /library
 ms.assetid: 758c2a9f-c2a3-418c-83bc-fd335a94097f
 ms.prod: W10
 ms.mktglfcycl: deploy

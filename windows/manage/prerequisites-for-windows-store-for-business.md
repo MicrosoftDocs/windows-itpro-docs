@@ -1,7 +1,6 @@
 ---
 title: Prerequisites for Windows Store for Business (Windows 10)
 description: There are a few prerequisites for using Windows Store for Business.
-MSHAttr: PreferredLib /library
 ms.assetid: CEBC6870-FFDD-48AD-8650-8B0DC6B2651D
 ms.prod: W10
 ms.mktglfcycl: manage

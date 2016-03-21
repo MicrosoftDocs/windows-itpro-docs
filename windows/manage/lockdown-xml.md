@@ -1,7 +1,6 @@
 ---
 title: Configure Windows 10 Mobile using Lockdown XML (Windows 10)
-description: Windows 10 Mobile allows enterprises to lock down a device define multiple user roles and configure custom layouts on a device.
-MSHAttr: PreferredLib /library
+description: Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device.
 ms.assetid: 22C8F654-2EC3-4E6D-8666-1EA9FCF90F5F
 ms.prod: W10
 ms.mktglfcycl: manage
@@ -15,15 +14,6 @@ author: jdeckerMS
 **Applies to**
 
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Order of lockdown settings](#order-of-lockdown-settings)
--   [Configuring multiple app packages](#bmk-map)
--   [Lockdown example to use in a lockdown XML file](#lockdown-example-to-use-in-a-lockdown-xml-file)
--   [Add lockdown XML to a provisioning package](#add-lockdown-xml-to-a-provisioning-package)
--   [Push lockdown XML using MDM](#push-lockdown-xml-using-mdm)
--   [Related topics](#related-topics)
 
 Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available.
 

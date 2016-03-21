@@ -1,7 +1,6 @@
 ---
 title: Microsoft network client Digitally sign communications (always) (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Microsoft network client Digitally sign communications (always) security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management and security considerations for the Microsoft network client Digitally sign communications (always) security policy setting.
 ms.assetid: 4b7b0298-b130-40f8-960d-60418ba85f76
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **Microsoft network client: Digitally sign communications (always)** security policy setting.
 

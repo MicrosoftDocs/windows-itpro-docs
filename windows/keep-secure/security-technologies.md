@@ -1,7 +1,6 @@
 ---
 title: Security technologies (Windows 10)
 description: Learn more about the different security technologies that are available in Windows 10 and Windows 10 Mobile.
-MSHAttr: PreferredLib /library
 ms.assetid: BFE2DE22-B0CE-465B-8CF6-28F64464DF08
 ms.prod: W10
 ms.mktglfcycl: deploy

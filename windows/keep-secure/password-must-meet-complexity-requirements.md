@@ -1,7 +1,6 @@
 ---
 title: Password must meet complexity requirements (Windows 10)
-description: Describes the best practices location values and security considerations for the Password must meet complexity requirements security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, and security considerations for the Password must meet complexity requirements security policy setting.
 ms.assetid: 94482ae3-9dda-42df-9782-2f66196e6afe
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,12 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, and security considerations for the **Password must meet complexity requirements** security policy setting.
 

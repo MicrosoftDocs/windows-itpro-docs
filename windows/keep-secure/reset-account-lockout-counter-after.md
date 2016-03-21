@@ -1,7 +1,6 @@
 ---
 title: Reset account lockout counter after (Windows 10)
-description: Describes the best practices location values and security considerations for the Reset account lockout counter after security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, and security considerations for the Reset account lockout counter after security policy setting.
 ms.assetid: d5ccf6dd-5ba7-44a9-8e0b-c478d8b1442c
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,12 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, and security considerations for the **Reset account lockout counter after** security policy setting.
 

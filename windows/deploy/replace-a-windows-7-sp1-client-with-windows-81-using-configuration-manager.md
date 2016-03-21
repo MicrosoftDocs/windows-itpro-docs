@@ -1,9 +1,8 @@
 ---
 title: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager (Windows 10)
-description: In this topic you will learn how to replacing a Windows 7 SP1 computer using Microsoft System Center 2012 R2 Configuration Manager.
-MSHAttr: PreferredLib /library
+description: In this topic, you will learn how to replacing a Windows 7 SP1 computer using Microsoft System Center 2012 R2 Configuration Manager.
 ms.assetid: 3c8a2d53-8f08-475f-923a-bca79ca8ac36
-keywords: ["upgrade install installation replace computer setup"]
+keywords: ["upgrade, install, installation, replace computer, setup"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,16 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Create a replace task sequence](#sec01)
--   [Associate the new machine with the old computer](#sec02)
--   [Create a device collection and add the PC0004 computer](#sec03)
--   [Create a new deployment](#sec04)
--   [Verify the backup](#sec05)
--   [Deploy the new computer](#sec06)
--   [Related topics](#related-topics)
 
 In this topic, you will learn how to replacing a Windows 7 SP1 computer using Microsoft System Center 2012 R2 Configuration Manager. This process is similar to refreshing a computer, but since you are replacing the machine, you have to run the backup job separately from the deployment of Windows 10.
 

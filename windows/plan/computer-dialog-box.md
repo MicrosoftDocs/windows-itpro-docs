@@ -1,7 +1,6 @@
 ---
 title: Computer Dialog Box (Windows 10)
-description: In Application Compatibility Manager (ACM) the Computer dialog box shows information about the selected computer.
-MSHAttr: PreferredLib /library
+description: In Application Compatibility Manager (ACM), the Computer dialog box shows information about the selected computer.
 ms.assetid: f89cbb28-adcd-41cd-9a54-402bc4aaffd9
 ms.prod: W10
 ms.mktglfcycl: operate

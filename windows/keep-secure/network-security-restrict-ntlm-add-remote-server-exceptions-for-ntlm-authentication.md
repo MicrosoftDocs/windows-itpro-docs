@@ -1,7 +1,6 @@
 ---
 title: Network security Restrict NTLM Add remote server exceptions for NTLM authentication (Windows 10)
-description: Describes the best practices location values management aspects and security considerations for the Network security Restrict NTLM Add remote server exceptions for NTLM authentication security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, management aspects, and security considerations for the Network security Restrict NTLM Add remote server exceptions for NTLM authentication security policy setting.
 ms.assetid: 9b017399-0a54-4580-bfae-614c2beda3a1
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication** security policy setting.
 

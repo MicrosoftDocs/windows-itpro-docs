@@ -1,7 +1,6 @@
 ---
 title: Microsoft Passport overview (Windows 10)
-description: In Windows 10 Microsoft Passport replaces passwords with strong two factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
-MSHAttr: PreferredLib /library
+description: In Windows 10, Microsoft Passport replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
 ms.assetid: 292F3BE9-3651-4B20-B83F-85560631EF5B
 keywords: ["password", "hello", "fingerprint", "iris", "biometric"]
 ms.prod: W10

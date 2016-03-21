@@ -1,7 +1,6 @@
 ---
 title: BitLocker Use BitLocker Drive Encryption Tools to manage BitLocker (Windows 10)
 description: This topic for the IT professional describes how to use tools to manage BitLocker.
-MSHAttr: PreferredLib /library
 ms.assetid: e869db9c-e906-437b-8c70-741dd61b5ea6
 ms.prod: W10
 ms.mktglfcycl: deploy

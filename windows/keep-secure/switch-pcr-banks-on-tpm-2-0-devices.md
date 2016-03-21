@@ -1,7 +1,6 @@
 ---
 title: Switch PCR banks on TPM 2.0 devices (Windows 10)
 description: A Platform Configuration Register (PCR) is a memory location in the TPM that has some unique properties.
-MSHAttr: PreferredLib /library
 ms.assetid: 743FCCCB-99A9-4636-8F48-9ECB3A3D10DE
 ms.prod: W10
 ms.mktglfcycl: deploy

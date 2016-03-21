@@ -1,9 +1,8 @@
 ---
 title: Upgrade to Windows 10 with System Center Configuration Manager (Windows 10)
-description: The simplest path to upgrade PCs currently running Windows 7 Windows 8 or Windows 8.1 to Windows 10 is through an in place upgrade. You can use a System Center Configuration Manager task sequence to completely automate the process.
-MSHAttr: PreferredLib /library
+description: The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager task sequence to completely automate the process.
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
-keywords: ["upgrade update task sequence deploy"]
+keywords: ["upgrade, update, task sequence, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 author: CFaw
@@ -15,17 +14,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Proof-of-concept environment](#proof-of-concept-environment)
--   [Upgrade to Windows 10 with System Center 2012 R2 Configuration Manager](#upgrade-to-windows-10-with-system-center-2012-r2-configuration-manager)
--   [Create the task sequence](#create-the-task-sequence)
--   [Create a device collection](#create-a-device-collection)
--   [Deploy the Windows 10 upgrade](#deploy-the-windows-10-upgrade)
--   [Start the Windows 10 upgrade](#start-the-windows-10-upgrade)
--   [Upgrade to Windows 10 with the next version of System Center Configuration Manager](#upgrade-to-windows-10-with-the-next-version-of-system-center-configuration-manager)
--   [Related topics](#related-topics)
 
 The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager task sequence to completely automate the process.
 

@@ -1,7 +1,6 @@
 ---
 title: Deploy Windows 10 with the Microsoft Deployment Toolkit (Windows 10)
-description: This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT) and MDT 2013 Update 1 specifically.
-MSHAttr: PreferredLib /library
+description: This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 1 specifically.
 ms.assetid: 837f009c-617e-4b3f-9028-2246067ee0fb
 keywords: ["deploy", "tools", "configure", "script"]
 ms.prod: W10
@@ -119,7 +118,7 @@ The information in this guide is designed to help you deploy Windows 10. In ord
 
 [Sideload apps in Windows 10](sideload-apps-in-windows-10.md)
 
-[Volume Activation for Windows 10](volume-activation-for-windows-81-client.md)
+[Volume Activation for Windows 10](volume-activation-windows-10.md)
 
  
 

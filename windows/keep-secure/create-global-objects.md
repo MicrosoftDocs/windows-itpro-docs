@@ -1,7 +1,6 @@
 ---
 title: Create global objects (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Create global objects security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Create global objects security policy setting.
 ms.assetid: 9cb6247b-44fc-4815-86f2-cb59b6f0221e
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create global objects** security policy setting.
 

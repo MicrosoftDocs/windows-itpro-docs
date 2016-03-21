@@ -1,7 +1,6 @@
 ---
-title: Creating an Inventory Collector Package (Windows 10)
-description: You can use Application Compatibility Manager (ACM) to create an inventory collector package.
-MSHAttr: PreferredLib /library
+title: Creating an Inventory-Collector Package (Windows 10)
+description: You can use Application Compatibility Manager (ACM) to create an inventory-collector package.
 ms.assetid: 61d041d6-e308-47b3-921b-709d72926d6d
 ms.prod: W10
 ms.mktglfcycl: operate

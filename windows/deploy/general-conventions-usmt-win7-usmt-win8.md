@@ -1,7 +1,6 @@
 ---
 title: General Conventions (Windows 10)
 description: General Conventions
-MSHAttr: PreferredLib /library
 ms.assetid: 5761986e-a847-41bd-bf8e-7c1bd01acbc6
 ms.prod: W10
 ms.mktglfcycl: deploy

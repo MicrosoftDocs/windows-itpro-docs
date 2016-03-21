@@ -1,7 +1,6 @@
 ---
 title: Monitor the resource attributes on files and folders (Windows 10)
 description: This topic for the IT professional describes how to monitor attempts to change settings to the resource attributes on files when you are using advanced security auditing options to monitor dynamic access control objects.
-MSHAttr: PreferredLib /library
 ms.assetid: 4944097b-320f-44c7-88ed-bf55946a358b
 ms.prod: W10
 ms.mktglfcycl: deploy

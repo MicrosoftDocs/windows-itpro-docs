@@ -1,7 +1,6 @@
 ---
 title: Configure security policy settings (Windows 10)
-description: Describes steps to configure a security policy setting on the local device on a domain joined device and on a domain controller.
-MSHAttr: PreferredLib /library
+description: Describes steps to configure a security policy setting on the local device, on a domain-joined device, and on a domain controller.
 ms.assetid: 63b0967b-a9fe-4d92-90af-67469ee20320
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [To configure a setting using the Local Security Policy console](#bkmk-local)
--   [To configure a security policy setting using the Local Group Policy Editor console](#bkmk-domain)
--   [To configure a setting for a domain controller](#bkmk-dc)
--   [Related topics](#related-topics)
 
 Describes steps to configure a security policy setting on the local device, on a domain-joined device, and on a domain controller.
 

@@ -1,7 +1,6 @@
 ---
 title: What's new in Credential Guard (Windows 10)
-description: Credential Guard uses virtualization based security to isolate secrets so that only privileged system software can access them.
-MSHAttr: PreferredLib /library
+description: Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 ms.assetid: 59C206F7-2832-4555-97B4-3070D93CC3C5
 ms.prod: W10
 ms.mktglfcycl: explore

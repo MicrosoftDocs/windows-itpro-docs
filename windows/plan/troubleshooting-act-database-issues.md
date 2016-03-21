@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting ACT Database Issues (Windows 10)
 description: The following solutions may help you resolve issues that are related to your Microsoft® SQL Server® database for the Application Compatibility Toolkit (ACT).
-MSHAttr: PreferredLib /library
 ms.assetid: c36ab5d8-cc82-4681-808d-3d491551b75e
 ms.prod: W10
 ms.mktglfcycl: operate
@@ -20,14 +19,6 @@ author: TrudyHa
 -   Windows 7
 -   Windows Server 2012
 -   Windows Server 2008 R2
-
-**In this article**
-
--   [Connecting to a SQL Server Database](#connecting-to-a-sql-server-database)
--   [Verifying SQL Server Version](#verifying-sql-server-version)
--   [Creating an ACT Database](#creating-an-act-database)
--   [Granting ACT Database Permissions for the ACT Log Processing Service](#granting-act-database-permissions-for-the-act-log-processing-service)
--   [Related topics](#related-topics)
 
 The following solutions may help you resolve issues that are related to your Microsoft® SQL Server® database for the Application Compatibility Toolkit (ACT).
 

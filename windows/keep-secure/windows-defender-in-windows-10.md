@@ -1,7 +1,6 @@
 ---
 title: Windows Defender in Windows 10 (Windows 10)
-description: This topic provides an overview of Windows Defender including a list of system requirements and new features.
-MSHAttr: PreferredLib /library
+description: This topic provides an overview of Windows Defender, including a list of system requirements and new features.
 ms.assetid: 6A9EB85E-1F3A-40AC-9A47-F44C4A2B55E2
 ms.prod: W10
 ms.mktglfcycl: manage
@@ -73,7 +72,12 @@ For more information about what's new in Windows Defender in Windows 10, see [W
 <tbody>
 <tr class="odd">
 <td align="left"><p>[Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)</p></td>
-<td align="left"><p>IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Active Directory or WSUS, and apply updates to endpoints.</p></td>
+<td align="left"><p>IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Active Directory or WSUS, apply updates to endpoints, and manage scans using:</p>
+<ul>
+<li>Group Policy Settings</li>
+<li>Windows Management Instrumentation (WMI)</li>
+<li>Windows PowerShell</li>
+</ul></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Configure Windows Defender in Windows 10](configure-windows-defender-for-windows-10.md)</p></td>

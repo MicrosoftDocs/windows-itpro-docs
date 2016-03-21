@@ -1,9 +1,8 @@
 ---
 title: Deploy a Windows 10 image using MDT 2013 Update 1 (Windows 10)
-description: This topic will show you how to take your reference image for Windows 10 and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT) and MDT 2013 Update 1 specifically.
-MSHAttr: PreferredLib /library
+description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 1 specifically.
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
-keywords: ["deployment automate tools configure"]
+keywords: ["deployment, automate, tools, configure"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,21 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Step 1: Configure Active Directory permissions](#sec01)
--   [Step 2: Set up the MDT production deployment share](#sec02)
--   [Step 3: Add a custom image](#sec03)
--   [Step 4: Add an application](#sec04)
--   [Step 5: Prepare the drivers repository](#sec05)
--   [Step 6: Create the deployment task sequence](#sec06)
--   [Step 7: Configure the MDT production deployment share](#sec07)
--   [Step 8: Deploy the Windows 10 client image](#sec08)
--   [Multicast deployments](#sec09)
--   [Use offline media to deploy Windows 10](#sec10)
--   [Unified Extensible Firmware Interface (UEFI)-based deployments](#sec11)
--   [Related topics](#related-topics)
 
 This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 1 specifically. You will prepare for this by creating a MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. You will then configure the deployment share, create a new task sequence, add applications, add drivers, add rules, and configure Active Directory permissions for deployment.
 

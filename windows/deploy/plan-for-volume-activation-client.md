@@ -1,7 +1,6 @@
 ---
 title: Plan for volume activation (Windows 10)
 description: Product activation is the process of validating software with the manufacturer after it has been installed on a specific computer.
-MSHAttr: PreferredLib /library
 ms.assetid: f84b005b-c362-4a70-a84e-4287c0d2e4ca
 keywords: ["vamt", "volume activation", "activation", "windows activation"]
 ms.prod: W10
@@ -324,7 +323,7 @@ The flow of KMS activation is shown in Figure 3, and it follows this sequence:
 ## See also
 
 
--   [Volume Activation for Windows 10](volume-activation-for-windows-81-client.md)
+-   [Volume Activation for Windows 10](volume-activation-windows-10.md)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Manage TPM lockout (Windows 10)
 description: This topic for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
-MSHAttr: PreferredLib /library
 ms.assetid: bf27adbe-404c-4691-a644-29ec722a3f7b
 ms.prod: W10
 ms.mktglfcycl: deploy

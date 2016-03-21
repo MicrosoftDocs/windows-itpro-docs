@@ -1,7 +1,6 @@
 ---
 title: BCD settings and BitLocker (Windows 10)
 description: This topic for IT professionals describes the BCD settings that are used by BitLocker.
-MSHAttr: PreferredLib /library
 ms.assetid: c4ab7ac9-16dc-4c7e-b061-c0b0deb2c4fa
 ms.prod: W10
 ms.mktglfcycl: deploy

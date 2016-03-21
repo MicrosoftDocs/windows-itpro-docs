@@ -1,7 +1,6 @@
 ---
 title: Log on as a service (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Log on as a service security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Log on as a service security policy setting.
 ms.assetid: acc9a9e0-fd88-4cda-ab54-503120ba1f42
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Log on as a service** security policy setting.
 

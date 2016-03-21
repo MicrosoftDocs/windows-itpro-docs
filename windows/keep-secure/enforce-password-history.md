@@ -1,7 +1,6 @@
 ---
 title: Enforce password history (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Enforce password history security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Enforce password history security policy setting.
 ms.assetid: 8b2ab871-3e52-4dd1-9776-68bb1e935442
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Enforce password history** security policy setting.
 

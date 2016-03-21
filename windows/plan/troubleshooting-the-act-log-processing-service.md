@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting the ACT Log Processing Service (Windows 10)
 description: The following solutions may help you resolve issues that are related to the Application Compatibility Toolkit (ACT) Log Processing Service.
-MSHAttr: PreferredLib /library
 ms.assetid: cb6f90c2-9f7d-4a34-a91e-8ed55b8c256d
 ms.prod: W10
 ms.mktglfcycl: operate
@@ -20,15 +19,6 @@ author: TrudyHa
 -   Windows 7
 -   Windows Server 2012
 -   Windows Server 2008 R2
-
-**In this article**
-
--   [Reviewing Files in ACT Log File Format](#reviewing-files-in-act-log-file-format)
--   [Uploading Files to the ACT Log Processing Service Share After Setting Permissions](#uploading-files-to-the-act-log-processing-service-share-after-setting-permissions)
--   [Working Around Windows Firewall on the Computer That Hosts the ACT Log Processing Service Share](#working-around-windows-firewall-on-the-computer-that-hosts-the-act-log-processing-service-share)
--   [Viewing and Assigning "Log on as a service" Permissions](#viewing-and-assigning--log-on-as-a-service--permissions)
--   [Starting the ACT Log Processing Service](#starting-the-act-log-processing-service)
--   [Related topics](#related-topics)
 
 The following solutions may help you resolve issues that are related to the Application Compatibility Toolkit (ACT) Log Processing Service.
 

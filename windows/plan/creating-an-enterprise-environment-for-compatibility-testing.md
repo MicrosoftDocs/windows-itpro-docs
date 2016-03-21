@@ -1,7 +1,6 @@
 ---
 title: Creating an Enterprise Environment for Compatibility Testing (Windows 10)
 description: The goal of the test environment is to model the operating system that you want to deploy and assess compatibility before deploying the operating system to your production environment.
-MSHAttr: PreferredLib /library
 ms.assetid: cbf6d8b6-7ebc-4faa-bbbd-e02653ed4adb
 ms.prod: W10
 ms.mktglfcycl: operate
@@ -20,14 +19,6 @@ author: TrudyHa
 -   Windows 7
 -   Windows Server 2012
 -   Windows Server 2008 R2
-
-**In this article**
-
--   [Modeling the Production Environment](#modeling-the-production-environment)
--   [Configuring the Test Environment for Automated Testing](#configuring-the-test-environment-for-automated-testing)
--   [Determining When Virtualization Is Appropriate](#determining-when-virtualization-is-appropriate)
--   [Testing Methodology](#testing-methodology)
--   [Related topics](#related-topics)
 
 The goal of the test environment is to model the operating system that you want to deploy and assess compatibility before deploying the operating system to your production environment. Your test environment is composed of computers on which the new operating system is installed. Your test environment can be a long-term investment. Consider retaining the test environment after deployment to assist in future deployment projects.
 

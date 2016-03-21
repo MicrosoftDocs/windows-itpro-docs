@@ -1,7 +1,6 @@
 ---
 title: Document your application control management processes (Windows 10)
 description: This planning topic describes the AppLocker policy maintenance information to record for your design document.
-MSHAttr: PreferredLib /library
 ms.assetid: 6397f789-0e36-4933-9f86-f3f6489cf1fb
 ms.prod: W10
 ms.mktglfcycl: deploy

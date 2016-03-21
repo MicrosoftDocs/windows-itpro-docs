@@ -1,7 +1,6 @@
 ---
 title: Interactive logon Require smart card (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Interactive logon Require smart card security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Require smart card security policy setting.
 ms.assetid: c6a8c040-cbc7-472d-8bc5-579ddf3cbd6c
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **Interactive logon: Require smart card** security policy setting.
 

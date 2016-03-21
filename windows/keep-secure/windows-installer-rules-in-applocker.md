@@ -1,7 +1,6 @@
 ---
 title: Windows Installer rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the Windows Installer rule collection.
-MSHAttr: PreferredLib /library
 ms.assetid: 3fecde5b-88b3-4040-81fa-a2d36d052ec9
 ms.prod: W10
 ms.mktglfcycl: deploy

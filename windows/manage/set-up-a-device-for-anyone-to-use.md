@@ -1,7 +1,6 @@
 ---
 title: Set up a device for anyone to use (kiosk mode) (Windows 10)
-description: You can configure a device running Windows 10 Pro Windows 10 Enterprise Windows 10 Education Windows 10 Mobile or Windows 10 Mobile Enterprise as a kiosk device so that users can only interact with a single application that you select.
-MSHAttr: PreferredLib /library
+description: You can configure a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise as a kiosk device, so that users can only interact with a single application that you select.
 ms.assetid: F1F4FF19-188C-4CDC-AABA-977639C53CA8
 keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: W10

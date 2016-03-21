@@ -1,7 +1,6 @@
 ---
 title: Network security Allow PKU2U authentication requests to this computer to use online identities (Windows 10)
-description: Describes the best practices location and values for the Network Security Allow PKU2U authentication requests to this computer to use online identities security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, and values for the Network Security Allow PKU2U authentication requests to this computer to use online identities security policy setting.
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,12 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, and values for the **Network Security: Allow PKU2U authentication requests to this computer to use online identities** security policy setting.
 

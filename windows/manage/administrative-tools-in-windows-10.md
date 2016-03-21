@@ -1,7 +1,6 @@
 ---
 title: Administrative Tools in Windows 10 (Windows 10)
 description: Administrative Tools is a folder in Control Panel that contains tools for system administrators and advanced users.
-MSHAttr: PreferredLib /library
 ms.assetid: FDC63933-C94C-43CB-8373-629795926DC8
 ms.prod: W10
 ms.mktglfcycl: manage

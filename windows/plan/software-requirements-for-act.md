@@ -1,7 +1,6 @@
 ---
 title: Software Requirements for ACT (Windows 10)
 description: The Application Compatibility Toolkit (ACT) has the following software requirements.
-MSHAttr: PreferredLib /library
 ms.assetid: 9bbc21d4-f2ac-4a91-8add-017b1eacdeee
 ms.prod: W10
 ms.mktglfcycl: operate

@@ -1,7 +1,6 @@
 ---
 title: Offline Migration Reference (Windows 10)
 description: Offline Migration Reference
-MSHAttr: PreferredLib /library
 ms.assetid: f347547c-d601-4c3e-8f2d-0138edeacfda
 ms.prod: W10
 ms.mktglfcycl: deploy

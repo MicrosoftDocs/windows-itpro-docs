@@ -1,7 +1,6 @@
 ---
 title: Taking Inventory of Your Organization (Windows 10)
 description: This section provides information about how to use the Application Compatibility Toolkit (ACT) to identify applications and devices that are installed in your organization.
-MSHAttr: PreferredLib /library
 ms.assetid: d52f138d-c6b2-4ab1-bb38-5b036311a51d
 ms.prod: W10
 ms.mktglfcycl: operate

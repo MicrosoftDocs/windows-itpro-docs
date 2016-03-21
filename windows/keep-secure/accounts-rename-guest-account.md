@@ -1,7 +1,6 @@
 ---
 title: Accounts Rename guest account (Windows 10)
-description: Describes the best practices location values and security considerations for the Accounts Rename guest account security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, and security considerations for the Accounts Rename guest account security policy setting.
 ms.assetid: 9b8052b4-bbb9-4cc1-bfee-ce25390db707
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, and security considerations for the **Accounts: Rename guest account** security policy setting.
 

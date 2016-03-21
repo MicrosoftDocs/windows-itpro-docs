@@ -1,7 +1,6 @@
 ---
 title: Searching for Installed Compatibility Fixes with the Query Tool in Compatibility Administrator (Windows 10)
 description: You can access the Query tool from within Compatibility Administrator. The Query tool provides the same functionality as using the Search feature.
-MSHAttr: PreferredLib /library
 ms.assetid: dd213b55-c71c-407a-ad49-33db54f82f22
 ms.prod: W10
 ms.mktglfcycl: operate
@@ -20,15 +19,6 @@ author: TrudyHa
 -   Windows 7
 -   Windows Server 2012
 -   Windows Server 2008 R2
-
-**In this article**
-
--   [Querying by Using the Program Properties Tab](#querying-by-using-the-program-properties-tab)
--   [Querying by Using the Fix Properties Tab](#querying-by-using-the-fix-properties-tab)
--   [Querying by Using the Fix Description Tab](#querying-by-using-the-fix-description-tab)
--   [Querying by Using the Fix Description Tab](#querying-by-using-the-fix-description-tab)
--   [Exporting Your Search Results](#exporting-your-search-results)
--   [Related topics](#related-topics)
 
 You can access the Query tool from within Compatibility Administrator. The Query tool provides the same functionality as using the Search feature.
 

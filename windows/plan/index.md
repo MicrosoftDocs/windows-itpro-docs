@@ -1,7 +1,6 @@
 ---
 title: Plan for Windows 10 deployment (Windows 10)
-description: Windows 10 provides new deployment capabilities scenarios and tools by building on technologies introduced in Windows 7 and Windows 8.1 while at the same time introducing new Windows as a service concepts to keep the operating system up to date.
-MSHAttr: PreferredLib /library
+description: Windows 10 provides new deployment capabilities, scenarios, and tools by building on technologies introduced in Windows 7, and Windows 8.1, while at the same time introducing new Windows as a service concepts to keep the operating system up to date.
 ms.assetid: 002F9B79-B50F-40C5-A7A5-0B4770E6EC15
 keywords: ["deploy", "upgrade", "update", "configure"]
 ms.prod: W10
@@ -85,6 +84,8 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 [Upgrade to Windows 10 with Configuration Manager](../deploy/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 
 [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=733911)
+
+[Windows 10 and Windows 10 Mobile](../p_ent_nodes/windows-10.md)
 
  
 

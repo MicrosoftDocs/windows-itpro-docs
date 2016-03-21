@@ -1,7 +1,6 @@
 ---
 title: Join Windows 10 Mobile to Azure Active Directory (Windows 10)
-description: Devices running Windows 10 Mobile can join Azure Active Directory (Azure AD) when the device is configured during the out of box experience (OOBE).
-MSHAttr: PreferredLib /library
+description: Devices running Windows 10 Mobile can join Azure Active Directory (Azure AD) when the device is configured during the out-of-box experience (OOBE).
 ms.assetid: 955DD9EC-3519-4752-827E-79CEB1EC8D6B
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,17 +14,6 @@ author: jdeckerMS
 **Applies to**
 
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Why join Windows 10 Mobile to Azure AD](#why-join-windows-10-mobile-to-azure-ad)
--   [Are you upgrading current devices to Windows 10 Mobile?](#bkmk-upgrade)
--   [The difference between "Add work account" and "Azure AD Join"](#add-work-account)
--   [Preparing for Windows 10 Mobile](#preparing-for-windows-10-mobile)
--   [How to join Windows 10 Mobile to Azure AD](#how-to-join-windows-10-mobile-to-azure-ad)
--   [Set up mail and calendar](#set-up-mail-and-calendar)
--   [Use Office and OneDrive apps](#use-office-and-onedrive-apps)
--   [Use Windows Store for Business](#use-windows-store-for-business)
 
 Devices running Windows 10 Mobile can join Azure Active Directory (Azure AD) when the device is configured during the out-of-box experience (OOBE). This article describes the considerations and options for using Windows 10 Mobile with Azure AD in your organization.
 
@@ -42,7 +30,7 @@ When a device running Windows 10 Mobile is joined to Azure AD, the device can e
 
 -   Automatically enroll in your mobile device management (MDM) service.
 
--   Enable enterprise roaming of settings.
+-   Enable enterprise roaming of settings. (Not currently supported but on roadmap)
 
 -   Use Windows Store for Business to target applications to users.
 
@@ -68,7 +56,7 @@ Even though Azure AD Join on Windows 10 Mobile provides the best overall experi
 
 -   You can add access to Azure AD-backed resources on the device without resetting the device.
 
-However, neither of these methods provides SSO in the Windows Store and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](http://go.microsoft.com/fwlink/p/?LinkId=734996)
+However, neither of these methods provides SSO in the Windows Store or SSO to resources on-premises, and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](http://go.microsoft.com/fwlink/p/?LinkId=734996)
 
 Using **Settings** &gt; **Accounts** &gt; **Your email and accounts** &gt; **Add work or school account**, users can add their Azure AD account to the device. Alternatively, a work account can be added when the user signs in to an application like Mail, Word, etc. If you [enable auto-enrollment in your MDM settings](http://go.microsoft.com/fwlink/p/?LinkID=691615), the device will automatically be enrolled in MDM.
 
@@ -89,7 +77,7 @@ An added work account provides the same SSO experience in browser apps like Offi
 
 -   **Mobile device management**
 
-    An MDM service is required for managing Azure AD-joined devices. You can use MDM to push settings to devices, as well as application and certificates used by VPN, Wi-Fi, etc. Azure AD Premium or EDP licenses are required to set up your Azure AD-joined devices to automatically enroll in MDM. [Learn more about setting up your Azure AD tenant for MDM auto-enrollment.](http://go.microsoft.com/fwlink/p/?LinkID=691615)
+    An MDM service is required for managing Azure AD-joined devices. You can use MDM to push settings to devices, as well as application and certificates used by VPN, Wi-Fi, etc. Azure AD Premium or Enterprise Mobility Services (EMS) licenses are required to set up your Azure AD-joined devices to automatically enroll in MDM. [Learn more about setting up your Azure AD tenant for MDM auto-enrollment.](http://go.microsoft.com/fwlink/p/?LinkID=691615)
 
 -   **Microsoft Passport**
 

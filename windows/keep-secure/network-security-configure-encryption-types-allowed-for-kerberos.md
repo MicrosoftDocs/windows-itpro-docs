@@ -1,7 +1,6 @@
 ---
 title: Network security Configure encryption types allowed for Kerberos Win7 only (Windows 10)
-description: Describes the best practices location values and security considerations for the Network security Configure encryption types allowed for Kerberos Win7 only security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values and security considerations for the Network security Configure encryption types allowed for Kerberos Win7 only security policy setting.
 ms.assetid: 303d32cc-415b-44ba-96c0-133934046ece
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,12 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values and security considerations for the **Network security: Configure encryption types allowed for Kerberos Win7 only** security policy setting.
 

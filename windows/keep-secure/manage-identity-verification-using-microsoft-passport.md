@@ -1,7 +1,6 @@
 ---
 title: Manage identity verification using Microsoft Passport (Windows 10)
-description: In Windows 10 Microsoft Passport replaces passwords with strong two factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and a Windows Hello (biometric) or PIN.
-MSHAttr: PreferredLib /library
+description: In Windows 10, Microsoft Passport replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and a Windows Hello (biometric) or PIN.
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
 keywords: ["identity", "PIN", "biometric", "Hello"]
 ms.prod: W10
@@ -17,14 +16,6 @@ author: brianlic-msft
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Benefits of Microsoft Passport](#benefits-of-microsoft-passport)
--   [How Microsoft Passport works: key points](#how-microsoft-passport-works--key-points)
--   [Comparing key-based and certificate-based authentication](#comparing-key-based-and-certificate-based-authentication)
--   [Learn more](#learn-more)
--   [Related topics](#related-topics)
 
 In Windows 10, Microsoft Passport replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and a Windows Hello (biometric) or PIN.
 
@@ -135,7 +126,7 @@ When identity providers such as Active Directory or Azure AD enroll a certificat
 
 [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
 
-[Event ID 300 - Passport successfully created](microsoft-passport-event-id-200.md)
+[Event ID 300 - Passport successfully created](passport-event-300.md)
 
  
 

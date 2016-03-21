@@ -1,9 +1,8 @@
 ---
 title: Create a task sequence with Configuration Manager and MDT (Windows 10)
-description: In this topic you will learn how to create a Microsoft System Center 2012 R2 Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard.
-MSHAttr: PreferredLib /library
+description: In this topic, you will learn how to create a Microsoft System Center 2012 R2 Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard.
 ms.assetid: 0b069bec-5be8-47c6-bf64-7a630f41ac98
-keywords: ["deploy upgrade task sequence install"]
+keywords: ["deploy, upgrade, task sequence, install"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,13 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Create a task sequence using the MDT Integration Wizard](#sec01)
--   [Edit the task sequence](#sec02)
--   [Move the packages](#sec03)
--   [Related topics](#related-topics)
 
 In this topic, you will learn how to create a Microsoft System Center 2012 R2 Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard. Creating task sequences in System Center 2012 R2 Configuration Manager requires many more steps than creating task sequences for MDT Lite Touch installation. Luckily, the MDT wizard helps you through the process and also guides you through creating the needed packages.
 

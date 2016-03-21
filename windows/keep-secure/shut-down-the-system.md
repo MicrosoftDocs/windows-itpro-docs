@@ -1,7 +1,6 @@
 ---
 title: Shut down the system (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Shut down the system security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Shut down the system security policy setting.
 ms.assetid: c8e8f890-153a-401e-a957-ba6a130304bf
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Shut down the system** security policy setting.
 

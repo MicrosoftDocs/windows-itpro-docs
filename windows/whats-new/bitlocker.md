@@ -1,7 +1,6 @@
 ---
 title: What's new in BitLocker (Windows 10)
-description: BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost stolen or inappropriately decommissioned computers.
-MSHAttr: PreferredLib /library
+description: BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
 ms.assetid: 3F2DE365-68A1-4CDB-AB5F-C65574684C7B
 ms.prod: W10
 ms.mktglfcycl: explore

@@ -1,7 +1,6 @@
 ---
 title: ACT Deployment Options (Windows 10)
-description: While planning your deployment of the Application Compatibility Toolkit (ACT) consider which computers you want running the various tools packages and services for ACT.
-MSHAttr: PreferredLib /library
+description: While planning your deployment of the Application Compatibility Toolkit (ACT), consider which computers you want running the various tools, packages, and services for ACT.
 ms.assetid: 90d56dd8-8d57-44e8-bf7a-29aabede45ba
 ms.prod: W10
 ms.mktglfcycl: operate

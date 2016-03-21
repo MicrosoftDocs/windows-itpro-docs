@@ -1,7 +1,6 @@
 ---
 title: Example Filter Queries (Windows 10)
-description: You can filter your compatibility issue data or reports by selecting specific restriction criteria.
-MSHAttr: PreferredLib /library
+description: You can filter your compatibility-issue data or reports by selecting specific restriction criteria.
 ms.assetid: eae59380-56cc-4d57-bd2c-11a0e3c689c9
 ms.prod: W10
 ms.mktglfcycl: operate

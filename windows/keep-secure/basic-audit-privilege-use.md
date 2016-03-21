@@ -1,7 +1,6 @@
 ---
 title: Audit privilege use (Windows 10)
 description: Determines whether to audit each instance of a user exercising a user right.
-MSHAttr: PreferredLib /library
 ms.assetid: C5C6DAAF-8B58-4DFB-B1CE-F0675AE0E9F8
 ms.prod: W10
 ms.mktglfcycl: deploy

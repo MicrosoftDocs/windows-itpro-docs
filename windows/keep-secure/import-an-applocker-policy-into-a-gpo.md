@@ -1,7 +1,6 @@
 ---
 title: Import an AppLocker policy into a GPO (Windows 10)
 description: This topic for IT professionals describes the steps to import an AppLocker policy into a Group Policy Object (GPO).
-MSHAttr: PreferredLib /library
 ms.assetid: 0629ce44-f5e2-48a8-ba47-06544c73261f
 ms.prod: W10
 ms.mktglfcycl: deploy

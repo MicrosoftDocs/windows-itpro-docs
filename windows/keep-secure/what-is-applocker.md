@@ -1,7 +1,6 @@
 ---
 title: What Is AppLocker (Windows 10)
 description: This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
-MSHAttr: PreferredLib /library
 ms.assetid: 44a8a2bb-0f83-4f95-828e-1f364fb65869
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,7 +1,6 @@
 ---
 title: Implement Microsoft Passport in your organization (Windows 10)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
-MSHAttr: PreferredLib /library
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
 keywords: ["identity", "PIN", "biometric", "Hello"]
 ms.prod: W10
@@ -17,14 +16,6 @@ author: brianlic-msft
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Group Policy settings for Passport](#group-policy-settings-for-passport)
--   [MDM policy settings for Passport](#mdm-policy-settings-for-passport)
--   [Prerequisites](#prerequisites)
--   [Passport for BYOD](#passport-for-byod)
--   [Related topics](#related-topics)
 
 You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
 
@@ -344,7 +335,7 @@ The work PIN is managed using the same Passport policies that you can use to man
 
 [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
 
-[Event ID 300 - Passport successfully created](microsoft-passport-event-id-200.md)
+[Event ID 300 - Passport successfully created](passport-event-300.md)
 
  
 

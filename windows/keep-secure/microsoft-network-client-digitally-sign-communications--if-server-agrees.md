@@ -1,7 +1,6 @@
 ---
 title: Microsoft network client Digitally sign communications (if server agrees) (Windows 10)
-description: Describes the best practices location values and security considerations for the Microsoft network client Digitally sign communications (if server agrees) security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, and security considerations for the Microsoft network client Digitally sign communications (if server agrees) security policy setting.
 ms.assetid: e553f700-aae5-425c-8650-f251c90ba5dd
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, and security considerations for the **Microsoft network client: Digitally sign communications (if server agrees)** security policy setting.
 

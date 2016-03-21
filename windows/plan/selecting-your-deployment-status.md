@@ -1,7 +1,6 @@
 ---
 title: Selecting Your Deployment Status (Windows 10)
-description: In Application Compatibility Manager (ACM) you can track the deployment status of your applications and websites.
-MSHAttr: PreferredLib /library
+description: In Application Compatibility Manager (ACM), you can track the deployment status of your applications and websites.
 ms.assetid: 7735d256-77eb-4498-93aa-c838ee6e00fc
 ms.prod: W10
 ms.mktglfcycl: operate

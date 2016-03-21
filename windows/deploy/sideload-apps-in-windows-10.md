@@ -1,7 +1,6 @@
 ---
 title: Sideload LOB apps in Windows 10 (Windows 10)
-description: Sideload line of business apps in Windows 10.
-MSHAttr: PreferredLib /library
+description: Sideload line-of-business apps in Windows 10.
 ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -16,12 +15,6 @@ author: CFaw
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Requirements](#requirements)
--   [How do I sideload an app on desktop](#how-do-i-sideload-an-app-on-desktop)
--   [How do I sideload an app on mobile](#how-do-i-sideload-an-app-on-mobile)
 
 Sideload line-of-business apps in Windows 10.
 

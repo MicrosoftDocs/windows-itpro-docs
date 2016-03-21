@@ -1,7 +1,6 @@
 ---
 title: Setup and deployment (Windows 10)
 description: This article describes the basic features of a Windows Update for Business deployment.
-MSHAttr: PreferredLib /library
 ms.assetid: E176BB36-3B1B-4707-9665-968D80050DD1
 keywords: ["update", "upgrade", "deployment"]
 ms.prod: w10
@@ -16,16 +15,6 @@ author: TrudyHa
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Configure your systems to receive updates on CBB](#configure-your-systems-to-receive-updates-on-cbb)
--   [Defer OS upgrade and update deployments](#defer-os-upgrade)
--   [Pause upgrades and updates](#pause-upgrades-and-updates)
--   [Create validation groups for deployments](#create-validation-groups-for-deployments)
--   [Peer-to-peer networking for deployments](#peer-to-peer-networking-for-deployments-)
--   [Use Group Policy to configure Windows Update Delivery Optimization](#use-group-policy-to-configure-windows-update-delivery-optimization-)
--   [Related topics](#related-topics)
 
 This article describes the basic features of a Windows Update for Business deployment. Use this information to familiarize yourself with a simple deployment with a single group of machines connected to Windows Update, in addition to more complex scenarios such as the creation of Windows Update for Business validation groups that receive updates from Windows Update at different time intervals, as well as Windows Update for Business deployments integrated with existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager, or Microsoft Intune.
 

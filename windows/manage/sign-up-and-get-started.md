@@ -1,7 +1,6 @@
 ---
 title: Sign up and get started (Windows 10)
-description: IT admins can sign up for the Windows Store for Business and get started working with apps.
-MSHAttr: PreferredLib /library
+description: IT admins can sign up for the Windows Store for Business, and get started working with apps.
 ms.assetid: 87C6FA60-3AB9-4152-A85C-6A1588A20C7B
 ms.prod: W10
 ms.mktglfcycl: manage

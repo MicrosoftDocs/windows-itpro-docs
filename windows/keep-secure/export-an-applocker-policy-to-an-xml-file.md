@@ -1,7 +1,6 @@
 ---
 title: Export an AppLocker policy to an XML file (Windows 10)
 description: This topic for IT professionals describes the steps to export an AppLocker policy to an XML file for review or testing.
-MSHAttr: PreferredLib /library
 ms.assetid: 979bd23f-6815-478b-a6a4-a25239cb1080
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,7 +1,6 @@
 ---
-title: Get apps to run on Device Guard protected devices (Windows 10)
-description: Windows 10 introduces several new features and settings that when combined all equal what we're calling Device Guard.
-MSHAttr: PreferredLib /library
+title: Get apps to run on Device Guard-protected devices (Windows 10)
+description: Windows 10 introduces several new features and settings that when combined all equal what we're calling, Device Guard.
 ms.assetid: E62B68C3-8B9F-4842-90FC-B4EE9FF8A67E
 keywords: ["Package Inspector", "packageinspector.exe", "sign catalog file"]
 ms.prod: W10
@@ -16,14 +15,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [What you need to run your apps on Device-Guard protected devices](#what-you-need-to-run-your-apps-on-device-guard-protected-devices)
--   [Create a catalog file for unsigned apps](#create-a-catalog-file-for-unsigned-apps)
--   [Sign your catalog file using Sign Tool](#sign-your-catalog-file-using-sign-tool)
--   [Troubleshooting the Package Inspector](#troubleshooting-the-package-inspector)
--   [Related topics](#related-topics)
 
 Windows 10 introduces several new features and settings that when combined all equal what we're calling, Device Guard. Device Guard can help to protect your enterprise devices against the accidental running of malicious apps by requiring all of your apps to be signed by a trusted entity.
 

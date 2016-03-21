@@ -1,7 +1,6 @@
 ---
 title: Change history for Manage and update Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Manage and update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
-MSHAttr: PreferredLib /library
 ms.assetid: 29144AFA-1DA9-4532-B07D-1EBE34B7E1E0
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -33,6 +32,18 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <td align="left">[Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)</td>
 <td align="left"><p>New</p></td>
 </tr>
+<tr class="even">
+<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-your-enterprise.md)</td>
+<td align="left"><p>Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration.</p></td>
+</tr>
+<tr class="odd">
+<td align="left">[Disconnect from Microsoft and configure privacy settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
+<td align="left"><p>Removed the telemetry content into its own topic.</p></td>
+</tr>
+<tr class="even">
+<td align="left">[Configure telemetry in your organization](configure-telemetry-in-your-organization.md)</td>
+<td align="left"><p>Updated to include Windows Server 2016 Technical Preview.</p></td>
+</tr>
 </tbody>
 </table>
 
@@ -54,7 +65,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[Configure telemetry and other settings in your organization](manage-privacy-for-windows-10-in-your-company.md)</td>
+<td align="left">[Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
 <td align="left"><p>Added call history and email to the Settings &gt; Privacy section.</p>
 <p>Added the Turn off Windows Mail application Group Policy to the Mail synchronization section.</p></td>
 </tr>
@@ -132,7 +143,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Windows Hello biometrics in the enterprise](../keep-secure/windows-hello-biometrics-in-the-enterprise.md)                                       | New         |
 | [Windows Store for Business](windows-store-for-business.md) (multiple topics)                                                                   | New         |
 | [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)                                             | Updated     |
-| [Configure telemetry and other settings in your organization](manage-privacy-for-windows-10-in-your-company.md)                                 | Updated     |
+| [Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)                                 | Updated     |
 | [New policies for Windows 10](new-policies-for-windows-10.md)                                                                                   | Updated     |
 
  

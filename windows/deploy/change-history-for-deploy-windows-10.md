@@ -1,7 +1,6 @@
 ---
 title: Change history for Deploy Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Deploy Windows 10 documentation for Windows 10 and Windows 10 Mobile.
-MSHAttr: PreferredLib /library
 ms.assetid: 19C50373-6B25-4F5C-A6EF-643D36904349
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -19,7 +18,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 
 | New or changed topic                                                                      | Description |
 |-------------------------------------------------------------------------------------------|-------------|
-| [Activate using Key Management Service](activate-using-key-management-service-client.md) | Updated     |
+| [Activate using Key Management Service](activate-using-key-management-service-vamt.md) | Updated     |
 | [Windows 10 edition upgrade](windows-10-edition-upgrades.md)                             | Updated     |
 
  

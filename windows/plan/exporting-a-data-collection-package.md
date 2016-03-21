@@ -1,7 +1,6 @@
 ---
-title: Exporting a Data Collection Package (Windows 10)
-description: In Application Compatibility Manager (ACM) you can export a data collection package as a Windows installer (.msi) file. You can then use the .msi file to install the data collection package on the computers from which you want to gather data.
-MSHAttr: PreferredLib /library
+title: Exporting a Data-Collection Package (Windows 10)
+description: In Application Compatibility Manager (ACM), you can export a data-collection package as a Windows installer (.msi) file. You can then use the .msi file to install the data-collection package on the computers from which you want to gather data.
 ms.assetid: 98fe19e4-9533-4ffc-a275-8b3776ee93ed
 ms.prod: W10
 ms.mktglfcycl: operate

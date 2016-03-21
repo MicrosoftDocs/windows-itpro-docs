@@ -1,7 +1,6 @@
 ---
 title: Microsoft Passport errors during PIN creation (Windows 10)
-description: When you set up Microsoft Passport in Windows 10 you may get an error during the Create a work PIN step.
-MSHAttr: PreferredLib /library
+description: When you set up Microsoft Passport in Windows 10, you may get an error during the Create a work PIN step.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
 keywords: ["PIN", "error", "create a work PIN"]
 ms.prod: W10
@@ -17,13 +16,6 @@ author: brianlic-msft
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Where is the error code?](#where-is-the-error-code-)
--   [Error mitigations](#error-mitigations)
--   [Errors with unknown mitigation](#errors-with-unknown-mitigation)
--   [Related topics](#related-topics)
 
 When you set up Microsoft Passport in Windows 10, you may get an error during the **Create a work PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 
@@ -255,7 +247,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 
 [Microsoft Passport and password changes](microsoft-passport-and-password-changes.md)
 
-[Event ID 300 - Passport successfully created](microsoft-passport-event-id-200.md)
+[Event ID 300 - Passport successfully created](passport-event-300.md)
 
  
 

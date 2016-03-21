@@ -1,7 +1,6 @@
 ---
 title: Fixing Applications by Using the SUA Tool (Windows 10)
-description: On the user interface for the Standard User Analyzer (SUA) tool you can apply fixes to an application.
-MSHAttr: PreferredLib /library
+description: On the user interface for the Standard User Analyzer (SUA) tool, you can apply fixes to an application.
 ms.assetid: 7f5947b1-977b-4d7e-bb52-fbe8e76f6b8b
 ms.prod: W10
 ms.mktglfcycl: operate

@@ -1,7 +1,6 @@
 ---
 title: Add workstations to domain (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Add workstations to domain security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management and security considerations for the Add workstations to domain security policy setting.
 ms.assetid: b0c21af4-c928-4344-b1f1-58ef162ad0b3
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **Add workstations to domain** security policy setting.
 

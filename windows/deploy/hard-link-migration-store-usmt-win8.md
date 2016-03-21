@@ -1,7 +1,6 @@
 ---
-title: Hard Link Migration Store (Windows 10)
-description: Hard Link Migration Store
-MSHAttr: PreferredLib /library
+title: Hard-Link Migration Store (Windows 10)
+description: Hard-Link Migration Store
 ms.assetid: b0598418-4607-4952-bfa3-b6e4aaa2c574
 ms.prod: W10
 ms.mktglfcycl: deploy

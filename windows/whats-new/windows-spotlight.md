@@ -1,7 +1,6 @@
 ---
 title: Windows spotlight on the lock screen (Windows 10)
 description: Windows spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen.
-MSHAttr: PreferredLib /library
 ms.assetid: 1AEA51FA-A647-4665-AD78-2F3FB27AD46A
 keywords: ["lockscreen"]
 ms.prod: W10
@@ -16,13 +15,6 @@ author: TrudyHa
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [What does Windows spotlight include?](#what-does-windows-spotlight-include-)
--   [How do you turn off Windows spotlight?](#how-do-you-turn-off-windows-spotlight-)
--   [How do you disable Windows spotlight for managed devices?](#how-do-you-disable-windows-spotlight-for-managed-devices-)
--   [Related topics](#related-topics)
 
 Windows spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows spotlight is now available in Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education. For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows spotlight background.
 

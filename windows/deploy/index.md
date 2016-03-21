@@ -1,7 +1,6 @@
 ---
 title: Deploy Windows 10 (Windows 10)
 description: Learn about deploying Windows 10 for IT professionals.
-MSHAttr: PreferredLib /library
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -70,7 +69,7 @@ Learn about deploying Windows 10 for IT professionals.
 <td align="left"><p>Sideload line-of-business apps in Windows 10.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Volume Activation [client]](volume-activation-for-windows-81-client.md)</p></td>
+<td align="left"><p>[Volume Activation [client]](volume-activation-windows-10.md)</p></td>
 <td align="left"><p>This guide is designed to help organizations that are planning to use volume activation to deploy and activate Windows 10, including organizations that have used volume activation for earlier versions of Windows.</p></td>
 </tr>
 <tr class="even">
@@ -81,6 +80,11 @@ Learn about deploying Windows 10 for IT professionals.
 </table>
 
  
+
+## Related topics
+
+
+[Windows 10 and Windows 10 Mobile](../index.md)
 
  
 

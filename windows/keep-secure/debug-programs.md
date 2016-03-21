@@ -1,7 +1,6 @@
 ---
 title: Debug programs (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Debug programs security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Debug programs security policy setting.
 ms.assetid: 594d9f2c-8ffc-444b-9522-75615ec87786
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Debug programs** security policy setting.
 

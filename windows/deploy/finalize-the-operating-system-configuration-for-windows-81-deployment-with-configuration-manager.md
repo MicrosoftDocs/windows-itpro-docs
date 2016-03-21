@@ -1,9 +1,8 @@
 ---
 title: Finalize the operating system configuration for Windows 10 deployment with Configuration Manager (Windows 10)
-description: This topic walks you through the steps to finalize the configuration of your Windows 10 operating deployment which includes enablement of the optional Microsoft Deployment Toolkit (MDT) monitoring for Microsoft System Center 2012 R2 Configuration Manager logs folder creation rules configuration content distribution and deployment of the previously created task sequence.
-MSHAttr: PreferredLib /library
+description: This topic walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enablement of the optional Microsoft Deployment Toolkit (MDT) monitoring for Microsoft System Center 2012 R2 Configuration Manager, logs folder creation, rules configuration, content distribution, and deployment of the previously created task sequence.
 ms.assetid: 38b55fa8-e717-4689-bd43-8348751d493e
-keywords: ["configure deploy upgrade"]
+keywords: ["configure, deploy, upgrade"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,16 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Enable MDT monitoring](#sec01)
--   [Create and share the Logs folder](#sec02)
--   [Configure the rules (Windows 10 x64 Settings package)](#sec03)
--   [Distribute content to the CM01 distribution portal](#sec04)
--   [Create a deployment for the task sequence](#sec05)
--   [Configure Configuration Manager to prompt for the computer name during deployment (optional)](#sec06)
--   [Related topics](#related-topics)
 
 This topic walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enablement of the optional Microsoft Deployment Toolkit (MDT) monitoring for Microsoft System Center 2012 R2 Configuration Manager, logs folder creation, rules configuration, content distribution, and deployment of the previously created task sequence.
 

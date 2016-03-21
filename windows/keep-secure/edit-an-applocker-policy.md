@@ -1,7 +1,6 @@
 ---
 title: Edit an AppLocker policy (Windows 10)
 description: This topic for IT professionals describes the steps required to modify an AppLocker policy.
-MSHAttr: PreferredLib /library
 ms.assetid: dbc72d1f-3fe0-46c2-aeeb-96621fce7637
 ms.prod: W10
 ms.mktglfcycl: deploy

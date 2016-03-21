@@ -1,7 +1,6 @@
 ---
 title: Lock down Windows 10 to specific apps (Windows 10)
 description: Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps.
-MSHAttr: PreferredLib /library
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: W10
@@ -16,13 +15,6 @@ author: jdeckerMS
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Install apps](#install-apps)
--   [Use AppLocker to set rules for apps](#use-applocker-to-set-rules-for-apps)
--   [Other settings to lock down](#other-settings-to-lock-down)
--   [Customize Start screen layout for the device](#customize-start-screen-layout-for-the-device)
 
 Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps. The result is similar to [a kiosk device](set-up-a-device-for-anyone-to-use.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.
 

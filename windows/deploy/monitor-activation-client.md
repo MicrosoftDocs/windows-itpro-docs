@@ -1,6 +1,5 @@
 ---
 title: Monitor activation (Windows 10)
-MSHAttr: PreferredLib /library
 ms.assetid: 264a3e86-c880-4be4-8828-bf4c839dfa26
 description: 
 keywords: ["vamt", "volume activation", "activation", "windows activation"]
@@ -44,7 +43,7 @@ You can monitor the success of the activation process for a computer running Win
 ## See also
 
 
--   [Volume Activation for Windows 10](volume-activation-for-windows-81-client.md)
+-   [Volume Activation for Windows 10](volume-activation-windows-10.md)
 
  
 

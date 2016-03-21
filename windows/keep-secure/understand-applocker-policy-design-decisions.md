@@ -1,7 +1,6 @@
 ---
 title: Understand AppLocker policy design decisions (Windows 10)
-description: This topic for the IT professional lists the design questions possible answers and ramifications of the decisions when you plan a deployment of application control policies by using AppLocker within a Windows operating system environment.
-MSHAttr: PreferredLib /library
+description: This topic for the IT professional lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies by using AppLocker within a Windows operating system environment.
 ms.assetid: 3475def8-949a-4b51-b480-dc88b5c1e6e6
 ms.prod: W10
 ms.mktglfcycl: deploy

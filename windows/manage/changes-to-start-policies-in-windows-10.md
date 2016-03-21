@@ -1,7 +1,6 @@
 ---
 title: Changes to Group Policy settings for Windows 10 Start (Windows 10)
 description: Windows 10 has a brand new Start experience.
-MSHAttr: PreferredLib /library
 ms.assetid: 612FB68A-3832-451F-AA97-E73791FEAA9F
 keywords: ["group policy", "start menu", "start screen"]
 ms.prod: W10
@@ -16,12 +15,6 @@ author: jdeckerMS
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Start policy settings supported for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education](#start-policy-settings-supported-for-windows-10-pro--windows-10-enterprise--and-windows-10-education)
--   [Deprecated Group Policy settings for Start](#deprecated-group-policy-settings-for-start-)
--   [Related topics](#related-topics)
 
 Windows 10 has a brand new Start experience. As a result, there are changes to the Group Policy settings that you can use to manage Start. Some policy settings are new or changed, and some old Start policy settings still apply. Other Start policy settings no longer apply and are deprecated.
 

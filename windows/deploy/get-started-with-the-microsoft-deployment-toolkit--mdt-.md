@@ -1,7 +1,6 @@
 ---
 title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10)
-description: This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT) and MDT 2013 Update 1 in particular as part of a Windows operating system deployment.
-MSHAttr: PreferredLib /library
+description: This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 1 in particular, as part of a Windows operating system deployment.
 ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
 keywords: ["deploy", "image", "feature", "install", "tools"]
 ms.prod: W10

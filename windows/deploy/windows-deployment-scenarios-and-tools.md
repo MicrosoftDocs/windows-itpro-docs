@@ -1,9 +1,8 @@
 ---
 title: Windows 10 deployment tools (Windows 10)
-description: To successfully deploy the Windows 10 operating system and applications for your organization it is essential that you know about the available tools to help with the process.
-MSHAttr: PreferredLib /library
+description: To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process.
 ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
-keywords: ["deploy volume activation BitLocker recovery install installation VAMT MDT USMT WDS"]
+keywords: ["deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,19 +11,6 @@ author: CFaw
 
 # Windows 10 deployment tools
 
-
-**In this article**
-
--   [Windows Assessment and Deployment Kit](#sec06)
--   [Windows Recovery Environment](#sec07)
--   [Windows Deployment Services](#sec08)
--   [Microsoft Deployment Toolkit 2013 Update 1](#sec09)
--   [Microsoft Security Compliance Manager 2013](#sec10)
--   [Microsoft Desktop Optimization Pack](#sec11)
--   [Internet Explorer Administration Kit 11](#sec12)
--   [Windows Server Update Services](#sec13)
--   [Unified Extensible Firmware Interface](#sec14)
--   [Related topics](#related-topics)
 
 To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.
 

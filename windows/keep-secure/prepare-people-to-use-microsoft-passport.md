@@ -1,7 +1,6 @@
 ---
 title: Prepare people to use Microsoft Passport (Windows 10)
-description: When you set a policy to require Microsoft Passport in the workplace you will want to prepare people in your organization by explaining how to use Passport.
-MSHAttr: PreferredLib /library
+description: When you set a policy to require Microsoft Passport in the workplace, you will want to prepare people in your organization by explaining how to use Passport.
 ms.assetid: 5270B416-CE31-4DD9-862D-6C22A2AE508B
 keywords: ["identity", "PIN", "biometric", "Hello"]
 ms.prod: W10
@@ -17,14 +16,6 @@ author: brianlic-msft
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [On devices owned by the organization](#on-devices-owned-by-the-organization)
--   [On personal devices](#on-personal-devices)
--   [Using Windows Hello and biometrics](#using-windows-hello-and-biometrics)
--   [Use a phone to sign in to a PC](#bmk-remote)
--   [Related topics](#related-topics)
 
 When you set a policy to require Microsoft Passport in the workplace, you will want to prepare people in your organization by explaining how to use Passport.
 
@@ -119,7 +110,7 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
 
 [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
 
-[Event ID 300 - Passport successfully created](microsoft-passport-event-id-200.md)
+[Event ID 300 - Passport successfully created](passport-event-300.md)
 
  
 

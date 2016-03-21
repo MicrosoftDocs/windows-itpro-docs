@@ -1,7 +1,6 @@
 ---
 title: Device Guard deployment guide (Windows 10)
 description: Microsoft Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security.
-MSHAttr: PreferredLib /library
 ms.assetid: 4BA52AA9-64D3-41F3-94B2-B87EC2717486
 keywords: ["virtualization", "security", "malware"]
 ms.prod: W10
@@ -15,22 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Introduction to Device Guard](#introduction-to-device-guard)
--   [Device Guard overview](#device-guard-overview)
--   [Plan for Device Guard](#plan-for-device-guard)
--   [Approach enterprise code integrity deployment](#approach-enterprise)
--   [Device Guard deployment scenarios](#device-guard-deployment)
--   [Code signing adoption](#code-signing-adoption)
--   [Hardware considerations](#hardware)
--   [Device Guard deployment](#dg-deployment)
--   [Configure hardware-based security features](#configure-hardware)
--   [Catalog files](#catalog-files)
--   [Code integrity policies](#code-integrity-policies)
--   [Create a Device Guard code signing certificate](#create-dg-code)
--   [Related topics](#related-topics)
 
 Microsoft Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security. Windows 10 employs Device Guard as well as code integrity and advanced hardware features such as CPU virtualization extensions, Trusted Platform Module, and second-level address translation to offer comprehensive modern security to its users. This guide explores the individual features in Device Guard as well as how to plan for, configure, and deploy them.
 
@@ -244,10 +227,9 @@ Different hardware features are required to implement the various features of De
 <tr class="even">
 <td align="left"><p>Firmware lock</p></td>
 <td align="left"><ul>
-<li><p>The firmware setup should be locked to prevent other operating systems from starting and to prevent changes to the UEFI settings. You should also disable boot methods other than from the hard drive and configured to suit enterprise customer requirements.</p></li>
-<li><p>The Microsoft UEFI certification authority must be removed from Secure Boot database.</p></li>
-<li><p>You must provide the ability to add an OEM or enterprise certificate to the Secure Boot database.</p></li>
-<li><p>Firmware password or higher authentication must be required to change firmware settings.</p></li>
+<li><p>The firmware setup should be locked to prevent other operating systems from starting and to prevent changes to the UEFI settings.</p></li>
+<li><p>Work with your hardware manufacturer to ensure that the devices are Device Guard ready.</p></li>
+<li><p>You should require a firmware password or higher authentication to change firmware settings.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

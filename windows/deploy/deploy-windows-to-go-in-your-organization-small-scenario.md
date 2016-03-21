@@ -1,9 +1,8 @@
 ---
 title: Deploy Windows To Go in your organization (Windows 10)
 description: This topic helps you to deploy Windows To Go in your organization.
-MSHAttr: PreferredLib /library
 ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
-keywords: ["deployment USB device BitLocker workspace security data"]
+keywords: ["deployment, USB, device, BitLocker, workspace, security, data"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Deployment tips](#deployment-tips)
--   [Basic deployment steps](#basic-deployment-steps)
--   [Advanced deployment steps](#advanced-deployment-steps)
--   [Considerations when using different USB keyboard layouts with Windows To Go](#considerations-when-using-different-usb-keyboard-layouts-with-windows-to-go)
--   [Related topics](#related-topics)
 
 This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you have reviewed the topics [Windows To Go: feature overview](../plan/windows-to-go-feature-overview-scenario.md) and [Prepare your organization for Windows To Go](../plan/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.
 

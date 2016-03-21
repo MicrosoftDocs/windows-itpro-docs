@@ -1,7 +1,6 @@
 ---
-title: Protect BitLocker from pre boot attacks (Windows 10)
-description: This detailed guide will help you understand the circumstances under which the use of pre boot authentication is recommended for devices running Windows 10 Windows 8.1 Windows 8 or Windows 7; and when it can be safely omitted from a device’s configuration.
-MSHAttr: PreferredLib /library
+title: Protect BitLocker from pre-boot attacks (Windows 10)
+description: This detailed guide will help you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device’s configuration.
 ms.assetid: 24d19988-fc79-4c45-b392-b39cba4ec86b
 ms.prod: W10
 ms.mktglfcycl: deploy

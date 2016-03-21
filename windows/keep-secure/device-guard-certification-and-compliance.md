@@ -1,7 +1,6 @@
 ---
 title: Device Guard certification and compliance (Windows 10)
-description: Device Guard is a combination of hardware and software security features that when configured together will lock a device down so that it can only run trusted applications.
-MSHAttr: PreferredLib /library
+description: Device Guard is a combination of hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications.
 ms.assetid: 94167ECA-AB08-431D-95E5-7A363F42C7E3
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -102,10 +101,9 @@ The following table shows the hardware and software you need to install and conf
 <tr class="even">
 <td align="left"><p>Firmware lock</p></td>
 <td align="left"><ul>
-<li><p>The firmware setup should be locked to prevent other operating systems from starting and to prevent changes to the UEFI settings. You should also disable boot methods other than from the hard drive and configured to suit enterprise customer requirements.</p></li>
-<li><p>The Microsoft UEFI certification authority must be removed from Secure Boot database.</p></li>
-<li><p>You must provide the ability to add an OEM or enterprise certificate to the Secure Boot database.</p></li>
-<li><p>Firmware password or higher authentication must be required to change firmware settings.</p></li>
+<li><p>The firmware setup should be locked to prevent other operating systems from starting and to prevent changes to the UEFI settings.</p></li>
+<li><p>• Work with your hardware manufacturer to ensure that the devices are Device Guard ready</p></li>
+<li><p>You should require a firmware password or higher authentication to change firmware settings.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

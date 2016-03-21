@@ -1,7 +1,6 @@
 ---
 title: Interactive logon Machine account lockout threshold (Windows 10)
-description: Describes the best practices location values management and security considerations for the Interactive logon Machine account lockout threshold security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, management, and security considerations for the Interactive logon Machine account lockout threshold security policy setting.
 ms.assetid: ebbd8e22-2611-4ebe-9db9-d49344e631e4
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, management, and security considerations for the **Interactive logon: Machine account lockout threshold** security policy setting.
 

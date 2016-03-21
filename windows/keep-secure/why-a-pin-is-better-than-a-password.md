@@ -1,7 +1,6 @@
 ---
 title: Why a PIN is better than a password (Windows 10)
 description: Microsoft Passport in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a password .
-MSHAttr: PreferredLib /library
 ms.assetid: A6FC0520-01E6-4E90-B53D-6C4C4E780212
 keywords: ["pin", "security", "password"]
 ms.prod: W10
@@ -17,16 +16,6 @@ author: brianlic-msft
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [PIN is tied to the device](#pin-is-tied-to-the-device)
--   [PIN is local to the device](#pin-is-local-to-the-device)
--   [PIN is backed by hardware](#pin-is-backed-by-hardware)
--   [PIN can be complex](#pin-can-be-complex)
--   [What if someone steals the laptop or phone?](#what-if-someone-steals-the-laptop-or-phone-)
--   [Why do you need a PIN to use Windows Hello?](#why-do-you-need-a-pin-to-use-windows-hello-)
--   [Related topics](#related-topics)
 
 Microsoft Passport in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a password?
 

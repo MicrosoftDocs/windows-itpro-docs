@@ -1,7 +1,6 @@
 ---
 title: Optimize AppLocker performance (Windows 10)
 description: This topic for IT professionals describes how to optimize AppLocker policy enforcement.
-MSHAttr: PreferredLib /library
 ms.assetid: a20efa20-bc98-40fe-bd81-28ec4905e0f6
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,7 +1,6 @@
 ---
 title: Using ACT (Windows 10)
 description: This section describes how to use the Application Compatibility Toolkit (ACT) in your organization.
-MSHAttr: PreferredLib /library
 ms.assetid: e6a68f44-7503-450d-a000-a04fbb93a146
 ms.prod: W10
 ms.mktglfcycl: operate

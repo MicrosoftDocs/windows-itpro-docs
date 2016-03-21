@@ -1,9 +1,8 @@
 ---
 title: Prepare for deployment with MDT 2013 Update 1 (Windows 10)
 description: This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT) 2013 Update 1.
-MSHAttr: PreferredLib /library
 ms.assetid: 5103c418-0c61-414b-b93c-a8e8207d1226
-keywords: ["deploy system requirements"]
+keywords: ["deploy, system requirements"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,17 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [System requirements](#sec01)
--   [Install Windows ADK for Windows 10](#sec02)
--   [Install MDT 2013 Update 1](#sec03)
--   [Create the OU structure](#sec04)
--   [Create the MDT service account](#sec05)
--   [Create and share the logs folder](#sec06)
--   [Use CMTrace to read log files (optional)](#sec07)
--   [Related topics](#related-topics)
 
 This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT) 2013 Update 1. It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the files system and in Active Directory.
 

@@ -1,7 +1,6 @@
 ---
 title: Keep Windows 10 secure (Windows 10)
 description: Learn about keeping Windows 10 and Windows 10 Mobile secure.
-MSHAttr: PreferredLib /library
 ms.assetid: EA559BA8-734F-41DB-A74A-D8DBF36BE920
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -81,6 +80,11 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 </table>
 
  
+
+## Related topics
+
+
+[Windows 10 and Windows 10 Mobile](../index.md)
 
  
 

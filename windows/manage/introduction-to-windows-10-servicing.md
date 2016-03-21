@@ -1,7 +1,6 @@
 ---
 title: Windows 10 servicing options for updates and upgrades (Windows 10)
-description: This article describes the new servicing options available in Windows 10 Windows 10 Mobile and IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades.
-MSHAttr: PreferredLib /library
+description: This article describes the new servicing options available in Windows 10, Windows 10 Mobile, and IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades.
 ms.assetid: D1DEB7C0-283F-4D7F-9A11-EE16CB242B42
 keywords: ["update", "LTSB", "lifecycle", "Windows update", "upgrade"]
 ms.prod: W10
@@ -18,16 +17,6 @@ author: jdeckerMS
 -   Windows 10
 -   Windows 10 Mobile
 -   Windows 10 IoT Core (IoT Core)
-
-**In this article**
-
--   [Introduction](#introduction)
--   [Streamlined product development and release cycles](#streamlined-product-development-and-release-cycles)
--   [New Windows 10 delivery and installation alternatives](#new-windows-10-delivery-and-installation-alternatives)
--   [Windows 10 servicing options](#windows-10-servicing-options)
--   [Plan for Windows 10 deployment](#plan-for-windows-10-deployment)
--   [Servicing options and servicing branch designations](#servicing-options-and-servicing-branch-designations)
--   [Related topics](#related-topics)
 
 This article describes the new servicing options available in Windows 10, Windows 10 Mobile, and IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.
 

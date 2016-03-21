@@ -1,7 +1,6 @@
 ---
 title: What's New in ACT 6.1 (Windows 10)
 description: Two major updates have been released since ACT 6.1.
-MSHAttr: PreferredLib /library
 ms.assetid: f12e137d-0b55-4f7d-88e0-149302655d9b
 ms.prod: W10
 ms.mktglfcycl: operate

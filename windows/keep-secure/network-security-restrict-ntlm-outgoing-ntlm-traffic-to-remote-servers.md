@@ -1,7 +1,6 @@
 ---
 title: Network security Restrict NTLM Outgoing NTLM traffic to remote servers (Windows 10)
-description: Describes the best practices location values management aspects and security considerations for the Network Security Restrict NTLM Outgoing NTLM traffic to remote servers security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, management aspects, and security considerations for the Network Security Restrict NTLM Outgoing NTLM traffic to remote servers security policy setting.
 ms.assetid: 63437a90-764b-4f06-aed8-a4a26cf81bd1
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting.
 

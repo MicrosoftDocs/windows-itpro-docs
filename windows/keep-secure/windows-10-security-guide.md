@@ -1,7 +1,6 @@
 ---
 title: Windows 10 security overview (Windows 10)
-description: This guide provides a detailed description of the most important security improvements in the Windows 10 operating system with links to more detailed articles about many of its security features.
-MSHAttr: PreferredLib /library
+description: This guide provides a detailed description of the most important security improvements in the Windows 10 operating system, with links to more detailed articles about many of its security features.
 ms.assetid: 4561D80B-A914-403C-A17C-3BE6FC95B59B
 keywords: ["configure", "feature", "file encryption"]
 ms.prod: W10
@@ -16,17 +15,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Introduction](#introduction)
--   [Identity and access control](#identity)
--   [Information protection](#information)
--   [Malware resistance](#malware)
--   [Secure the Windows core](#secure-the-windows-core)
--   [Secure the Windows desktop](#secure-the-windows-desktop)
--   [Conclusion](#conclusion)
--   [Related topics](#related-topics)
 
 This guide provides a detailed description of the most important security improvements in the Windows 10 operating system, with links to more detailed articles about many of its security features. Wherever possible, specific recommendations are provided to help you implement and configure Windows 10 security features.
 

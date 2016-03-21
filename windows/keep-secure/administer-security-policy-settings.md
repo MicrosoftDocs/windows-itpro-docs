@@ -1,7 +1,6 @@
 ---
 title: Administer security policy settings (Windows 10)
-description: This article discusses different methods to administer security policy settings on a local device or throughout a small or medium sized organization.
-MSHAttr: PreferredLib /library
+description: This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 ms.assetid: 7617d885-9d28-437a-9371-171197407599
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,16 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [What’s changed in how settings are administered?](#what-s-changed-in-how-settings-are-administered-)
--   [Using the Local Security Policy snap-in](#bkmk-secpol)
--   [Using the secedit command-line tool](#bkmk-secedit)
--   [Using the Security Compliance Manager](#bkmk-scm)
--   [Using the Security Configuration Wizard](#bkmk-scw)
--   [Working with the Security Configuration Manager](#bkmk-scmtool)
--   [Working with Group Policy tools](#bkmk-grouppolicy)
 
 This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 

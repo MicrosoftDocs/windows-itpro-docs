@@ -1,6 +1,5 @@
 ---
 title: Identifying Computers for Inventory Collection (Windows 10)
-MSHAttr: PreferredLib /library
 ms.assetid: f5bf2d89-fff2-4960-a153-dc1146b442fb
 description: 
 ms.prod: W10
@@ -20,15 +19,6 @@ author: TrudyHa
 -   Windows 7
 -   Windows Server 2012
 -   Windows Server 2008 R2
-
-**In this article**
-
--   [Managed and Unmanaged Environments](#bmk-managedunmanaged)
--   [Role-Based Applications](#bmk-rolebasedapplications)
--   [Software Distribution](#bmk-softwaredistribution)
--   [Geographic Distribution](#bmk-geographicdistribution)
--   [Computer Types](#bmk-computertypes)
--   [Related topics](#related-topics)
 
 An inventory-collector package gathers inventory data from the computers on which it is installed. This data includes the following:
 

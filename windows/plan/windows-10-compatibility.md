@@ -1,7 +1,6 @@
 ---
 title: Windows 10 compatibility (Windows 10)
-description: Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7 Windows 8 or Windows 8.1 will meet the requirements for Windows 10.
-MSHAttr: PreferredLib /library
+description: Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10.
 ms.assetid: 829BE5B5-330A-4702-807A-8908B4FC94E8
 keywords: ["deploy", "upgrade", "update", "appcompat"]
 ms.prod: W10
@@ -16,11 +15,6 @@ author: TrudyHa
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Recommended application testing process](#recommended-application-testing-process)
--   [Related topics](#related-topics)
 
 Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10.
 

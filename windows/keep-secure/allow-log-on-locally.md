@@ -1,7 +1,6 @@
 ---
 title: Allow log on locally (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Allow log on locally security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Allow log on locally security policy setting.
 ms.assetid: d9e5e1f3-3bff-4da7-a9a2-4bb3e0c79055
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Allow log on locally** security policy setting.
 

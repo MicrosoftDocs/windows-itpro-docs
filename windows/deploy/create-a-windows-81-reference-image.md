@@ -1,9 +1,8 @@
 ---
 title: Create a Windows 10 reference image (Windows 10)
 description: Creating a reference image is important because that image serves as the foundation for the devices in your organization.
-MSHAttr: PreferredLib /library
 ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
-keywords: ["deploy deployment configure customize install installation"]
+keywords: ["deploy, deployment, configure, customize, install, installation"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,17 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [The reference image](#the-reference-image)
--   [Set up the MDT build lab deployment share](#sec01)
--   [Add the setup files](#sec02)
--   [Add applications](#sec03)
--   [Create the reference image task sequence](#sec04)
--   [Configure the MDT deployment share rules](#sec05)
--   [Build the Windows 10 reference image](#sec06)
--   [Related topics](#related-topics)
 
 Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT) 2013 Update 1. You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you will have a Windows 10 reference image that can be used in your deployment solution.
 

@@ -1,7 +1,6 @@
 ---
 title: Deciding Whether to Fix an Application or Deploy a Workaround (Windows 10)
 description: You can fix a compatibility issue by changing the code for the application or by deploying a workaround.
-MSHAttr: PreferredLib /library
 ms.assetid: e495d0c8-bfba-4537-bccd-64c4b52206f1
 ms.prod: W10
 ms.mktglfcycl: operate

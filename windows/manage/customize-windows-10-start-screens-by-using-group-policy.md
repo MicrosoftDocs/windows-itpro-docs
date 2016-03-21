@@ -1,7 +1,6 @@
 ---
 title: Customize Windows 10 Start with Group Policy (Windows 10)
-description: In Windows 10 Enterprise and Windows 10 Education you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain.
-MSHAttr: PreferredLib /library
+description: In Windows 10 Enterprise and Windows 10 Education, you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain.
 ms.assetid: F4A47B36-F1EF-41CD-9CBA-04C83E960545
 keywords: ["Start layout", "start menu", "layout", "group policy"]
 ms.prod: W10
@@ -20,15 +19,6 @@ author: jdeckerMS
 **Looking for consumer information?**
 
 -   [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
-
-**In this article**
-
--   [Operating system requirements](#operating-system-requirements)
--   [How Start layout control works](#bkmk-howstartscreencontrolworks)
--   [Use Group Policy to apply a customized Start layout in a domain](#bkmk-domaingpodeployment)
--   [Use Group Policy to apply a customized Start layout on the local computer](#bkmk-localgpimport)
--   [Update a customized Start layout](#bkmk-updatestartscreenlayout)
--   [Related topics](#related-topics)
 
 In Windows 10 Enterprise and Windows 10 Education, you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 

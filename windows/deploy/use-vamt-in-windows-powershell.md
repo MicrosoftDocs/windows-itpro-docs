@@ -1,7 +1,6 @@
 ---
 title: Use VAMT in Windows PowerShell (Windows 10)
 description: Use VAMT in Windows PowerShell
-MSHAttr: PreferredLib /library
 ms.assetid: 13e0ceec-d827-4681-a5c3-8704349e3ba9
 ms.prod: W10
 ms.mktglfcycl: deploy

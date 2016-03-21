@@ -1,7 +1,6 @@
 ---
 title: Distribute apps using your private store (Windows 10)
 description: The private store is a feature in Windows Store for Business that organizations receive during the sign up process.
-MSHAttr: PreferredLib /library
 ms.assetid: C4644035-845C-4C84-87F0-D87EA8F5BA19
 ms.prod: W10
 ms.mktglfcycl: manage

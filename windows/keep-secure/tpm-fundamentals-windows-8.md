@@ -1,7 +1,6 @@
 ---
 title: TPM fundamentals (Windows 10)
 description: This topic for the IT professional provides a description of the components of the Trusted Platform Module (TPM 1.2 and TPM 2.0) and explains how they are used to mitigate dictionary attacks.
-MSHAttr: PreferredLib /library
 ms.assetid: ac90f5f9-9a15-4e87-b00d-4adcf2ec3000
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,7 +1,6 @@
 ---
 title: Apps in Windows Store for Business (Windows 10)
 description: Windows Store for Business has thousands of apps from many different categories.
-MSHAttr: PreferredLib /library
 ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
 ms.prod: W10
 ms.mktglfcycl: manage

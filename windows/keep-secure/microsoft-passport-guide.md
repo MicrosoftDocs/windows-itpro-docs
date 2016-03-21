@@ -1,7 +1,6 @@
 ---
 title: Microsoft Passport guide (Windows 10)
 description: This guide describes the new Windows Hello and Microsoft Passport technologies that are part of the Windows 10 operating system.
-MSHAttr: PreferredLib /library
 ms.assetid: 11EA7826-DA6B-4E5C-99FB-142CC6BD9E84
 keywords: ["security", "credential", "password", "authentication"]
 ms.prod: W10
@@ -16,17 +15,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Problems with traditional credentials](#problems-with-traditional-credentials)
--   [Solve credential problems](#solve-credential-problems)
--   [What is Windows Hello?](#what-is-windows-hello-)
--   [What is Microsoft Passport?](#what-is-microsoft-passport-)
--   [How Microsoft Passport works](#how-microsoft-passport-works)
--   [Design a Microsoft Passport for Work deployment](#design)
--   [Implement Microsoft Passport](#implement-microsoft-passport)
--   [Roadmap](#roadmap)
 
 This guide describes the new Windows Hello and Microsoft Passport technologies that are part of the Windows 10 operating system. It highlights specific capabilities of these technologies that help mitigate threats from conventional credentials and provides guidance about how to design and deploy these technologies as part of your Windows 10 rollout.
 

@@ -1,7 +1,6 @@
 ---
 title: Trusted Platform Module Technology Overview (Windows 10)
 description: This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication. The topic provides links to other resources about the TPM.
-MSHAttr: PreferredLib /library
 ms.assetid: face8932-b034-4319-86ac-db1163d46538
 ms.prod: W10
 ms.mktglfcycl: deploy

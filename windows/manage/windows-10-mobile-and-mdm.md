@@ -1,7 +1,6 @@
 ---
 title: Windows 10 Mobile and mobile device management (Windows 10)
 description: This guide provides an overview of the mobile device and app management technologies in the Windows 10 Mobile operating system.
-MSHAttr: PreferredLib /library
 ms.assetid: 6CAA1004-CB65-4FEC-9B84-61AAD2125E5E
 keywords: ["telemetry", "BYOD", "MDM"]
 ms.prod: W10
@@ -16,16 +15,6 @@ author: jdeckerMS
 **Applies to**
 
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Overview](#overview)
--   [Device deployment](#device-deployment--)
--   [Device configuration](#device-configuration)
--   [App management](#--app-management)
--   [Device operations](#device-operations)
--   [Device retirement](#device-retirement)
--   [Related topics](#related-topics)
 
 This guide provides an overview of the mobile device and app management technologies in the Windows 10 Mobile operating system. It describes how mobile device management (MDM) systems use the built-in device management client to deploy, configure, maintain, and support phones and small tablets running Windows 10 Mobile.
 

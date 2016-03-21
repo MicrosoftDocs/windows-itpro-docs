@@ -1,7 +1,6 @@
 ---
 title: Frequently Asked Questions (Windows 10)
 description: Frequently Asked Questions
-MSHAttr: PreferredLib /library
 ms.assetid: 813c13a7-6818-4e6e-9284-7ee49493241b
 ms.prod: W10
 ms.mktglfcycl: deploy

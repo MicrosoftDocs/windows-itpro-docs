@@ -1,7 +1,6 @@
 ---
 title: Profile single process (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Profile single process security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Profile single process security policy setting.
 ms.assetid: c0963de4-4f5e-430e-bfcd-dfd68e66a075
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Profile single process** security policy setting.
 

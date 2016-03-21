@@ -1,9 +1,8 @@
 ---
 title: Prepare your organization for Windows To Go (Windows 10)
 description: Prepare your organization for Windows To Go
-MSHAttr: PreferredLib /library
 ms.assetid: f3f3c160-90ad-40a8-aeba-2aedee18f7ff
-keywords: ["mobile device USB deploy"]
+keywords: ["mobile, device, USB, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +15,6 @@ author: TrudyHa
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [What is Windows To Go?](#what-is-windows-to-go-)
--   [Usage scenarios](#usage-scenarios)
--   [Infrastructure considerations](#infrastructure-considerations)
--   [Activation considerations](#activation-considerations)
--   [Organizational unit structure and use of Group Policy Objects](#organizational-unit-structure-and-use-of-group-policy-objects)
--   [Computer account management](#computer-account-management)
--   [User account and data management](#user-account-and-data-management)
--   [Remote connectivity](#remote-connectivity)
--   [Related topics](#related-topics)
 
 The following information is provided to help you plan and design a new deployment of a Windows To Go in your production environment. It provides answers to the “what”, “why”, and “when” questions an IT professional might have when planning to deploy Windows To Go.
 

@@ -1,7 +1,6 @@
 ---
 title: User Account Control Allow UIAccess applications to prompt for elevation without using the secure desktop (Windows 10)
-description: Describes the best practices location values and security considerations for the User Account Control Allow UIAccess applications to prompt for elevation without using the secure desktop security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, and security considerations for the User Account Control Allow UIAccess applications to prompt for elevation without using the secure desktop security policy setting.
 ms.assetid: fce20472-3c93-449d-b520-13c4c74a9892
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, and security considerations for the **User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop** security policy setting.
 

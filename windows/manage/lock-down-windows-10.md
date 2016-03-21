@@ -1,7 +1,6 @@
 ---
 title: Lock down Windows 10 (Windows 10)
 description: Enterprises often need to manage how people use corporate devices. Windows 10 provides a number of features and methods to help you lock down specific parts of a Windows 10 device.
-MSHAttr: PreferredLib /library
 ms.assetid: 955BCD92-0A1A-4C48-98A8-30D7FAF2067D
 keywords: ["lockdown"]
 ms.prod: W10
@@ -45,10 +44,10 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 </tr>
 <tr class="odd">
 <td align="left"><p>[Configure telemetry in your organization](configure-telemetry-in-your-organization.md)</p></td>
-<td align="left"><p>Use this article to make informed decisions about how you can configure telemetry in your organization. We discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component.</p></td>
+<td align="left"><p>Use this article to make informed decisions about how you can configure telemetry in your organization. Telemetry is a term that means different things to different people and organizations. For the purpose of this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to keep Windows devices secure, and to help Microsoft improve the quality of Windows and Microsoft services.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Disconnect from Microsoft and configure privacy settings in your organization](manage-privacy-for-windows-10-in-your-company.md)</p></td>
+<td align="left"><p>[Disconnect from Microsoft and configure privacy settings in your organization](disconnect-your-organization-from-microsoft.md)</p></td>
 <td align="left"><p>If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.</p>
 <p>If you’re looking for content on what each telemetry level means and how to configure it in your organization, see [Configure telemetry in your organization](configure-telemetry-in-your-organization.md).</p></td>
 </tr>
@@ -77,7 +76,7 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 ## Related topics
 
 
-[Lockdown features from Windows Embedded Industry 8.1](../whats-new/lockdown-features-from-windows-embedded-industry-8-1.md)
+[Lockdown features from Windows Embedded Industry 8.1](../whats-new/lockdown-features-windows-10.md)
 
  
 

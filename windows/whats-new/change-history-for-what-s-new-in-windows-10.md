@@ -1,7 +1,6 @@
 ---
 title: Change history for What's new in Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
-MSHAttr: PreferredLib /library
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -30,7 +29,7 @@ This topic lists new and updated topics in the [What's new in Windows 10](index.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[Lockdown features from Windows Embedded Industry 8.1](lockdown-features-from-windows-embedded-industry-8-1.md)</td>
+<td align="left">[Lockdown features from Windows Embedded Industry 8.1](lockdown-features-windows-10.md)</td>
 <td align="left"><p>Updated to include policy setting names for USB filter and Toast notification filter</p></td>
 </tr>
 </tbody>
@@ -81,7 +80,7 @@ This topic lists new and updated topics in the [What's new in Windows 10](index.
 | [BitLocker](bitlocker.md)                                                                                       | New         |
 | [Credential Guard](credential-guard.md)                                                                         | New         |
 | [Device Guard](device-guard-overview.md)                                                                        | New         |
-| [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-from-windows-embedded-industry-8-1.md) | New         |
+| [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md) | New         |
 | [Security auditing](security-auditing.md)                                                                       | New         |
 | [Trusted Platform Module](trusted-platform-module.md)                                                           | New         |
 | [Windows spotlight on the lock screen](windows-spotlight.md)                                                    | New         |

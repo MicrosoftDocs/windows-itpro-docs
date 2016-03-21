@@ -1,9 +1,8 @@
 ---
 title: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager (Windows 10)
 description: This topic will show you how to use a previously created task sequence to refresh a Windows 7 SP1 client with Windows 10 using Microsoft System Center 2012 R2 Configuration Manager and Microsoft Deployment Toolkit (MDT) 2013 Update 1.
-MSHAttr: PreferredLib /library
 ms.assetid: 57c81667-1019-4711-b3de-15ae9c5387c7
-keywords: ["upgrade install installation computer refresh"]
+keywords: ["upgrade, install, installation, computer refresh"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,13 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Create a device collection and add the PC0003 computer](#sec01)
--   [Create a new deployment](#sec02)
--   [Initiate a computer refresh](#sec03)
--   [Related topics](#related-topics)
 
 This topic will show you how to use a previously created task sequence to refresh a Windows 7 SP1 client with Windows 10 using Microsoft System Center 2012 R2 Configuration Manager and Microsoft Deployment Toolkit (MDT) 2013 Update 1. When refreshing a machine to a later version, it appears as an upgrade to the end user, but technically it is not an in-place upgrade. A computer refresh also involves taking care of user data and settings from the old installation and making sure to restore those at the end of the installation. For more information, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-81.md).
 

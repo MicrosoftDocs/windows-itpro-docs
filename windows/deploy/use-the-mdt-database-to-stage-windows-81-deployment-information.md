@@ -1,9 +1,8 @@
 ---
 title: Use the MDT database to stage Windows 10 deployment information (Windows 10)
-description: This topic is designed to teach you how to use the MDT database to pre stage information on your Windows 10 deployment in a Microsoft SQL Server 2012 SP1 Express database rather than include the information in a text file (CustomSettings.ini).
-MSHAttr: PreferredLib /library
+description: This topic is designed to teach you how to use the MDT database to pre-stage information on your Windows 10 deployment in a Microsoft SQL Server 2012 SP1 Express database, rather than include the information in a text file (CustomSettings.ini).
 ms.assetid: 8956ab54-90ba-45d3-a384-4fdec72c4d46
-keywords: ["database permissions settings configure deploy"]
+keywords: ["database, permissions, settings, configure, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,14 +11,6 @@ author: CFaw
 
 # Use the MDT database to stage Windows 10 deployment information
 
-
-**In this article**
-
--   [Database prerequisites](#sec01)
--   [Create the deployment database](#sec02)
--   [Configure database permissions](#sec03)
--   [Create an entry in the database](#sec04)
--   [Related topics](#related-topics)
 
 This topic is designed to teach you how to use the MDT database to pre-stage information on your Windows 10 deployment in a Microsoft SQL Server 2012 SP1 Express database, rather than include the information in a text file (CustomSettings.ini). You can use this process, for example, to add the client machines you want to deploy, specify their computer names and IP addresses, indicate applications to be deployed, and determine many additional settings for the machines.
 

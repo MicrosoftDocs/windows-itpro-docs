@@ -1,7 +1,6 @@
 ---
 title: Return Codes (Windows 10)
 description: Return Codes
-MSHAttr: PreferredLib /library
 ms.assetid: e71bbc6b-d5a6-4e48-ad01-af0012b35f22
 ms.prod: W10
 ms.mktglfcycl: deploy

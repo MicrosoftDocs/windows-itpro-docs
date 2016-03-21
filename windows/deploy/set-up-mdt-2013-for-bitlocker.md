@@ -1,9 +1,8 @@
 ---
 title: Set up MDT for BitLocker (Windows 10)
-MSHAttr: PreferredLib /library
 ms.assetid: 386e6713-5c20-4d2a-a220-a38d94671a38
 description: 
-keywords: ["disk encryption TPM configure secure script"]
+keywords: ["disk, encryption, TPM, configure, secure, script"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,13 +11,6 @@ author: CFaw
 
 # Set up MDT for BitLocker
 
-
-**In this article**
-
--   [Configure Active Directory for BitLocker](#sec01)
--   [Add BIOS configuration tools from Dell, HP, and Lenovo](#sec02)
--   [Configure the Windows 10 task sequence to enable BitLocker](#sec03)
--   [Related topics](#related-topics)
 
 This topic will show you how to configure your environment for BitLocker, the disk volume encryption built into Windows 10 Enterprise and Windows 10 Pro, using MDT. BitLocker in Windows 10 has two requirements in regard to an operating system deployment:
 

@@ -1,6 +1,5 @@
 ---
-title: Log File Locations for Data Collection Packages (Windows 10)
-MSHAttr: PreferredLib /library
+title: Log File Locations for Data-Collection Packages (Windows 10)
 ms.assetid: dcc395e7-2d9c-4935-abab-33c5934ce24a
 description: 
 ms.prod: W10

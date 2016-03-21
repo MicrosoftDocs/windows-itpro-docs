@@ -1,7 +1,6 @@
 ---
 title: TPM recommendations (Windows 10)
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows 10.
-MSHAttr: PreferredLib /library
 ms.assetid: E85F11F5-4E6A-43E7-8205-672F77706561
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -18,17 +17,6 @@ author: brianlic-msft
 -   Windows 10 Mobile
 -   Windows Server 2016 Technical Preview
 -   Windows 10 IoT Core (IoT Core)
-
-**In this article**
-
--   [Overview](#overview)
--   [TPM 1.2 vs. 2.0 comparison](#tpm-1-2-vs--2-0-comparison)
--   [Why TPM 2.0?](#why-tpm-2-0-)
--   [Discrete or firmware TPM?](#discrete-or-firmware-tpm-)
--   [TPM 2.0 Compliance for Windows 10 in the future](#tpm-2-0-compliance-for-windows-10-in-the-future)
--   [TPM and Windows Features](#tpm-and-windows-features)
--   [Chipset options for TPM 2.0](#chipset-options-for-tpm-2-0)
--   [OEM Feedback and Status on TPM 2.0 system availability](#oem-feedback-and-status-on-tpm-2-0-system-availability)
 
 This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows 10.
 

@@ -1,7 +1,6 @@
 ---
 title: Manage private store settings (Windows 10)
 description: The private store is a feature in the Windows Store for Business that organizations receive during the sign up process.
-MSHAttr: PreferredLib /library
 ms.assetid: 2D501538-0C6E-4408-948A-2BF5B05F7A0C
 ms.prod: W10
 ms.mktglfcycl: manage

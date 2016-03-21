@@ -1,7 +1,6 @@
 ---
 title: Security policy settings (Windows 10)
-description: This reference topic describes the common scenarios architecture and processes for security settings.
-MSHAttr: PreferredLib /library
+description: This reference topic describes the common scenarios, architecture, and processes for security settings.
 ms.assetid: e7ac5204-7f6c-4708-a9f6-6af712ca43b9
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,12 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Policy-based security settings management](#policy-based-security-settings-management)
--   [Security Settings extension architecture](#w2k3tr-gpssp-how-ebls)
--   [Security settings policy processes and interactions](#w2k3tr-gpssp-how-hjxe)
 
 This reference topic describes the common scenarios, architecture, and processes for security settings.
 

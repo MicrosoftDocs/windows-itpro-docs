@@ -1,7 +1,6 @@
 ---
 title: Recovery console Allow floppy copy and access to all drives and folders (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Recovery console Allow floppy copy and access to all drives and folders security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management and security considerations for the Recovery console Allow floppy copy and access to all drives and folders security policy setting.
 ms.assetid: a5b4ac0c-f33d-42b5-a866-72afa7cbd0bd
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **Recovery console: Allow floppy copy and access to all drives and folders** security policy setting.
 

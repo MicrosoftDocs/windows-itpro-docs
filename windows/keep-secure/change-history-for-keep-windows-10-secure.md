@@ -1,7 +1,6 @@
 ---
 title: Change history for Keep Windows 10 secure (Windows 10)
 description: This topic lists new and updated topics in the Keep Windows 10 secure documentation for Windows 10 and Windows 10 Mobile.
-MSHAttr: PreferredLib /library
 ms.assetid: E50EC5E6-71AA-4FF1-8356-574CFDB8079B
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -13,6 +12,13 @@ author: brianlic-msft
 
 
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+
+| New or changed topic                                                             | Description                                                                                                                                                                           |
+|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Protect derived domain credentials with Credential Guard](credential-guard.md) | Clarified Credential Guard protections                                                                                                                                                |
+| [Requirements to use AppLocker](requirements-to-use-applocker.md)               | Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy. |
+
+ 
 
 ## February 2016
 

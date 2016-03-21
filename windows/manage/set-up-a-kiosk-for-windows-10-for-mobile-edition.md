@@ -1,7 +1,6 @@
 ---
 title: Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise (Windows 10)
-description: A device in kiosk mode runs a specified app with no access to other device functions menus or settings.
-MSHAttr: PreferredLib /library
+description: A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings.
 ms.assetid: 35EC82D8-D9E8-45C3-84E9-B0C8C167BFF7
 keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: W10
@@ -16,12 +15,6 @@ author: jdeckerMS
 **Applies to**
 
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Apps Corner](#apps-corner)
--   [Enterprise Assigned Access](#enterprise-assigned-access)
--   [Related topics](#related-topics)
 
 A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings. You configure a device running Windows 10 Mobile or Windows 10 Mobile Enterprise for kiosk mode by using the Apps Corner feature. You can also use the Enterprise Assigned Access configuration service provider (CSP) to configure a kiosk experience.
 

@@ -1,9 +1,8 @@
 ---
 title: Windows 10 deployment scenarios (Windows 10)
-description: To successfully deploy the Windows 10 operating system in your organization it is important to understand the different ways that it can be deployed especially now that there are new scenarios to consider.
-MSHAttr: PreferredLib /library
+description: To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider.
 ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
-keywords: ["upgrade in place configuration deploy"]
+keywords: ["upgrade, in-place, configuration, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,13 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [In-place upgrade](#in-place-upgrade)
--   [Dynamic provisioning](#dynamic-provisioning)
--   [Traditional deployment](#traditional-deployment)
--   [Related topics](#related-topics)
 
 To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task.
 

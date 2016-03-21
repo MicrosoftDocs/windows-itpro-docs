@@ -1,7 +1,6 @@
 ---
 title: Audit Application Generated (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting Audit Application Generated which determines whether the operating system generates audit events when applications attempt to use the Windows Auditing application programming interfaces (APIs).
-MSHAttr: PreferredLib /library
+description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Application Generated, which determines whether the operating system generates audit events when applications attempt to use the Windows Auditing application programming interfaces (APIs).
 ms.assetid: 6c58a365-b25b-42b8-98ab-819002e31871
 ms.prod: W10
 ms.mktglfcycl: deploy

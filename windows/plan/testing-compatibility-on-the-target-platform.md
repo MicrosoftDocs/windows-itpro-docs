@@ -1,7 +1,6 @@
 ---
 title: Testing Compatibility on the Target Platform (Windows 10)
-description: This section provides information about setting up a test environment for compatibility testing and about creating and deploying runtime analysis packages to the test environment.
-MSHAttr: PreferredLib /library
+description: This section provides information about setting up a test environment for compatibility testing, and about creating and deploying runtime-analysis packages to the test environment.
 ms.assetid: 8f3e9d58-37c2-41ea-a216-32712baf6cf4
 ms.prod: W10
 ms.mktglfcycl: operate

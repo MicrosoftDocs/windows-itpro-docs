@@ -1,7 +1,6 @@
 ---
 title: Use the Volume Activation Management Tool (Windows 10)
-description: The Volume Activation Management Tool (VAMT) provides several useful features including the ability to perform VAMT proxy activation and to track and monitor several types of product keys.
-MSHAttr: PreferredLib /library
+description: The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to perform VAMT proxy activation and to track and monitor several types of product keys.
 ms.assetid: b11f0aee-7b60-44d1-be40-c960fc6c4c47
 keywords: ["vamt", "volume activation", "activation", "windows activation"]
 ms.prod: W10
@@ -84,7 +83,7 @@ For more information, see:
 ## See also
 
 
--   [Volume Activation for Windows 10](volume-activation-for-windows-81-client.md)
+-   [Volume Activation for Windows 10](volume-activation-windows-10.md)
 
  
 

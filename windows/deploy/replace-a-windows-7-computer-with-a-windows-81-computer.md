@@ -1,9 +1,8 @@
 ---
 title: Replace a Windows 7 computer with a Windows 10 computer (Windows 10)
-description: A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10; however because you are replacing a machine you cannot store the backup on the old computer.
-MSHAttr: PreferredLib /library
+description: A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10; however, because you are replacing a machine, you cannot store the backup on the old computer.
 ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
-keywords: ["deploy deployment replace"]
+keywords: ["deploy, deployment, replace"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Prepare for the computer replace](#sec01)
--   [Perform the computer replace](#sec02)
--   [Related topics](#related-topics)
 
 A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10; however, because you are replacing a machine, you cannot store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it.
 

@@ -1,7 +1,6 @@
 ---
 title: How User Account Control works (Windows 10)
 description: User Account Control (UAC) is a fundamental component of Microsoft's overall security vision. UAC helps mitigate the impact of malware.
-MSHAttr: PreferredLib /library
 ms.assetid: 9f921779-0fd3-4206-b0e4-05a19883ee59
 ms.prod: W10
 ms.mktglfcycl: operate

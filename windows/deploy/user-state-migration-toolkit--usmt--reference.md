@@ -1,7 +1,6 @@
 ---
 title: User State Migration Toolkit (USMT) Reference (Windows 10)
 description: User State Migration Toolkit (USMT) Reference
-MSHAttr: PreferredLib /library
 ms.assetid: 2135dbcf-de49-4cea-b2fb-97dd016e1a1a
 ms.prod: W10
 ms.mktglfcycl: deploy

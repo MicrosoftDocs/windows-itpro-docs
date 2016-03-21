@@ -1,7 +1,6 @@
 ---
 title: Device Guard overview (Windows 10)
-description: Device Guard is a combination of enterprise related hardware and software security features that when configured together will lock a device down so that it can only run trusted applications.
-MSHAttr: PreferredLib /library
+description: Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications.
 ms.assetid: FFE244EE-5804-4CE8-A2A9-48F49DC3AEF2
 keywords: ["Device Guard"]
 ms.prod: W10
@@ -135,7 +134,7 @@ This signing can happen by:
 
 -   **Using a non-Microsoft signing authority.** ISV's and enterprises can use a trusted non-Microsoft signing authority to sign all of their own Classic Windows applications.
 
--   **Using a Microsoft-provided web service (coming later this year).** ISV's and enterprises will be able to use a more secure, Microsoft-provided web service to sign their Classic Windows applications.
+-   **Use the Device Guard signing portal**. Available in the Windows Store for Business, you can use a Microsoft web service to sign your Classic Windows applications. For more info, see [Device Guard signing](../manage/device-guard-signing-portal.md).
 
 ### Code Integrity policy
 

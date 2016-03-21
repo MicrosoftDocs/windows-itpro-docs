@@ -1,7 +1,6 @@
 ---
 title: Configure devices without MDM (Windows 10)
-description: Create a runtime provisioning package to apply settings profiles and file assets to a device running Windows 10 Pro Windows 10 Enterprise Windows 10 Education Windows 10 Mobile or Windows 10 Mobile Enterprise.
-MSHAttr: PreferredLib /library
+description: Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise.
 ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
@@ -17,15 +16,6 @@ author: jdeckerMS
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Advantages](#advantages)
--   [Typical use cases](#typical-use-cases)
--   [Create package](#create-package)
--   [Apply package](#apply-package)
--   [Manage a package](#manage-a-package)
--   [Learn more](#learn-more)
 
 Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise.
 
@@ -92,7 +82,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 3.  Name your project, and click **Next**.
 
-4.  Choose **Common to all Windows editions**, **Common to all Windows desktop editions**, or **Common to all Windows mobile editions**, depending on the devices you intent to provision, and click **Next**.
+4.  Choose **Common to all Windows editions**, **Common to all Windows desktop editions**, or **Common to all Windows mobile editions**, depending on the devices you intend to provision, and click **Next**.
 
 5.  On **New project**, click **Finish**. The workspace for your package opens.
 

@@ -1,7 +1,6 @@
 ---
 title: ACT User Interface Reference (Windows 10)
-description: This section contains information about the user interface for Application Compatibility Manager (ACM) which is a tool in the Application Compatibility Toolkit (ACT).
-MSHAttr: PreferredLib /library
+description: This section contains information about the user interface for Application Compatibility Manager (ACM), which is a tool in the Application Compatibility Toolkit (ACT).
 ms.assetid: 303d3dd7-2cc1-4f5f-b032-b7e288b04893
 ms.prod: W10
 ms.mktglfcycl: operate

@@ -1,6 +1,5 @@
 ---
 title: Appendix Information sent to Microsoft during activation (Windows 10)
-MSHAttr: PreferredLib /library
 ms.assetid: 4bfff495-07d0-4385-86e3-7a077cbd64b8
 description: 
 keywords: ["vamt", "volume activation", "activation", "windows activation"]
@@ -81,7 +80,7 @@ For additional details, see [Windows 10 Privacy Statement](http://go.microsoft.c
 ## See also
 
 
--   [Volume Activation for Windows 10](volume-activation-for-windows-81-client.md)
+-   [Volume Activation for Windows 10](volume-activation-windows-10.md)
 
  
 

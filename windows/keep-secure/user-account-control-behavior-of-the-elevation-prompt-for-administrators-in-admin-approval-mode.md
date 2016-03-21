@@ -1,7 +1,6 @@
 ---
 title: User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode security policy setting.
 ms.assetid: 46a3c3a2-1d2e-4a6f-b5e6-29f9592f535d
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** security policy setting.
 

@@ -1,7 +1,6 @@
 ---
 title: What's new in Windows 10 (Windows 10)
-description: Learn about new features in Windows 10 for IT professionals such as Enterprise Data Protection Microsoft Passport Device Guard and more.
-MSHAttr: PreferredLib /library
+description: Learn about new features in Windows 10 for IT professionals, such as Enterprise Data Protection, Microsoft Passport, Device Guard, and more.
 ms.assetid: F1867017-76A1-4761-A200-7450B96AEF44
 keywords: ["What's new in Windows 10", "Windows 10"]
 ms.prod: W10
@@ -61,7 +60,7 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 <td align="left"><p>Windows 10 provides mobile device management (MDM) capabilities for PCs, laptops, tablets, and phones that enable enterprise-level management of corporate-owned and personal devices.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Lockdown features from Windows Embedded Industry 8.1](lockdown-features-from-windows-embedded-industry-8-1.md)</p></td>
+<td align="left"><p>[Lockdown features from Windows Embedded Industry 8.1](lockdown-features-windows-10.md)</p></td>
 <td align="left"><p>Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. This table maps Windows Embedded Industry 8.1 features to Windows 10 Enterprise features, along with links to documentation.</p></td>
 </tr>
 <tr class="even">
@@ -69,7 +68,7 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 <td align="left"><p>In Windows 10, Microsoft Passport replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Provisioning packages](provisioning-and-upgrade.md)</p></td>
+<td align="left"><p>[Provisioning packages](new-provisioning-packages.md)</p></td>
 <td align="left"><p>With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.</p></td>
 </tr>
 <tr class="even">
@@ -111,6 +110,11 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 [Windows 10 content from Microsoft Ignite](http://go.microsoft.com/fwlink/p/?LinkId=613210)
 
 [Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkId=690485)
+
+## Related topics
+
+
+[Windows 10 and Windows 10 Mobile](../index.md)
 
  
 

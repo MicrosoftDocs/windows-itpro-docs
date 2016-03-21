@@ -1,9 +1,8 @@
 ---
 title: Configure MDT for UserExit scripts (Windows 10)
-description: In this topic you will learn how to configure the MDT rules engine to use a UserExit script to generate computer names based on a prefix and the computer MAC Address.
-MSHAttr: PreferredLib /library
+description: In this topic, you will learn how to configure the MDT rules engine to use a UserExit script to generate computer names based on a prefix and the computer MAC Address.
 ms.assetid: 29a421d1-12d2-414e-86dc-25b62f5238a7
-keywords: ["rules script"]
+keywords: ["rules, script"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,12 +11,6 @@ author: CFaw
 
 # Configure MDT for UserExit scripts
 
-
-**In this article**
-
--   [Configure the rules to call a UserExit script](#configure-the-rules-to-call-a-userexit-script)
--   [The Setname.vbs UserExit script](#the-setname-vbs-userexit-script)
--   [Related topics](#related-topics)
 
 In this topic, you will learn how to configure the MDT rules engine to use a UserExit script to generate computer names based on a prefix and the computer MAC Address. MDT supports calling external VBScripts as part of the Gather process; these scripts are referred to as UserExit scripts. The script also removes the colons in the MAC Address.
 

@@ -1,7 +1,6 @@
 ---
 title: Windows 10 servicing options (Windows 10)
 description: Windows 10 provides a new model for organizations to deploy and upgrade Windows by providing updates to features and capabilities through a continual process.
-MSHAttr: PreferredLib /library
 ms.assetid: 6EF0792C-B587-497D-8489-4A7F5848D92A
 keywords: ["deploy", "upgrade", "update", "servicing"]
 ms.prod: W10
@@ -17,16 +16,6 @@ author: TrudyHa
 
 -   Windows 10
 -   Windows 10 Mobile
-
-**In this article**
-
--   [Key terminology](#key-terminology)
--   [Windows 10 branch overview](#windows-10-branch-overview)
--   [Current Branch versus Current Branch for Business](#current-branch-versus-current-branch-for-business)
--   [Long-Term Servicing Branch](#long-term-servicing-branch)
--   [Windows Insider Program](#windows-insider-program)
--   [Switching between branches](#switching-between-branches)
--   [Related topics](#related-topics)
 
 Windows 10 provides a new model for organizations to deploy and upgrade Windows by providing updates to features and capabilities through a continual process.
 

@@ -1,7 +1,6 @@
 ---
 title: Sign code integrity policy with Device Guard signing (Windows 10)
 description: Signing code integrity policies prevents policies from being tampered with after they're deployed. You can sign code integrity policies with the Device Guard signing portal.
-MSHAttr: PreferredLib /library
 ms.assetid: 63B56B8B-2A40-44B5-B100-DC50C43D20A9
 ms.prod: W10
 ms.mktglfcycl: manage

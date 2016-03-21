@@ -1,7 +1,6 @@
 ---
 title: Configure Windows Defender in Windows 10 (Windows 10)
-description: IT professionals can configure definition updates and cloud based protection in Windows Defender in Windows 10 through Microsoft Active Directory and Windows Server Update Services (WSUS).
-MSHAttr: PreferredLib /library
+description: IT professionals can configure definition updates and cloud-based protection in Windows Defender in Windows 10 through Microsoft Active Directory and Windows Server Update Services (WSUS).
 ms.assetid: 22649663-AC7A-40D8-B1F7-5CAD9E49653D
 ms.prod: W10
 ms.mktglfcycl: manage
@@ -15,16 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Configure definition updates](#configure-definition-updates)
--   [Definition update logic](#definition-update-logic)
--   [Update Windows Defender definitions through Active Directory and WSUS](#update-windows-defender-definitions-through-active-directory-and-wsus)
--   [Manage cloud-based protection](#manage-cloud-based-protection)
--   [Opt-in to Microsoft Update](#opt-in-to-microsoft-update)
--   [Schedule updates for Microsoft Update](#schedule-updates-for-microsoft-update)
--   [Related topics](#related-topics)
 
 IT professionals can configure definition updates and cloud-based protection in Windows Defender in Windows 10 through Microsoft Active Directory and Windows Server Update Services (WSUS).
 

@@ -1,7 +1,6 @@
 ---
 title: Roles and permissions in Windows Store for Business (Windows 10)
-description: The first person to sign in to Windows Store for Business must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in they can give permissions to others employees.
-MSHAttr: PreferredLib /library
+description: The first person to sign in to Windows Store for Business must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees.
 ms.assetid: CB6281E1-37B1-4B8B-991D-BC5ED361F1EE
 ms.prod: W10
 ms.mktglfcycl: manage

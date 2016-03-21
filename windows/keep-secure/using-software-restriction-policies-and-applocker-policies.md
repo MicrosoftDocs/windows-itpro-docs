@@ -1,7 +1,6 @@
 ---
 title: Use Software Restriction Policies and AppLocker policies (Windows 10)
 description: This topic for the IT professional describes how to use Software Restriction Policies (SRP) and AppLocker policies in the same Windows deployment.
-MSHAttr: PreferredLib /library
 ms.assetid: c3366be7-e632-4add-bd10-9df088f74c6d
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,7 +1,6 @@
 ---
 title: Chromebook migration guide (Windows 10)
-description: In this guide you will learn how to migrate a Google Chromebook based learning environment to a Windows 10 based learning environment.
-MSHAttr: PreferredLib /library
+description: In this guide you will learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment.
 ms.assetid: 7A1FA48A-C44A-4F59-B895-86D4D77F8BEA
 keywords: ["migrate", "automate", "device"]
 ms.prod: W10
@@ -16,27 +15,6 @@ author: TrudyHa
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Plan Chromebook migration](#plan-migration)
--   [Plan for app migration or replacement](#plan-app-migrate-replace)
--   [Plan for migration of user and device settings](#plan-migrate-user-device-settings)
--   [Plan for email migration](#plan-email-migrate)
--   [Plan for cloud storage migration](#plan-cloud-storage-migration)
--   [Plan for cloud services migration](#plan-cloud-services)
--   [Plan for Windows device deployment](#plan-windevice-deploy)
--   [Perform Chromebook migration](#perform-chromebook-migration)
--   [Perform network infrastructure remediation](#network-infra-remediation)
--   [Perform AD DS and Azure AD services deployment or remediation](#perform-ad-ds-and-azure-ad-services-deployment-or-remediation)
--   [Prepare device, user, and app management systems](#prepare-device--user--and-app-management-systems)
--   [Perform app migration or replacement](#perform-app-migration-or-replacement-)
--   [Perform migration of user and device settings](#migrate-user-device-settings)
--   [Perform email migration](#perform-email-migration)
--   [Perform cloud storage migration](#perform-cloud-storage-migration)
--   [Perform cloud services migration](#perform-cloud-services-migration)
--   [Perform Windows device deployment](#perform-windows-device-deployment)
--   [Related topics](#related-topics)
 
 In this guide you will learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment. You will learn how to perform the necessary planning steps, including Windows device deployment, migration of user and device settings, app migration or replacement, and cloud storage migration. You will then learn the best method to perform the migration by using automated deployment and migration tools.
 

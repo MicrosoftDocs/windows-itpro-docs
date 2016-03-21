@@ -1,6 +1,5 @@
 ---
 title: Categorizing Your Compatibility Data (Windows 10)
-MSHAttr: PreferredLib /library
 ms.assetid: 6420f012-316f-4ef0-bfbb-14baaa664e6e
 description: 
 ms.prod: W10

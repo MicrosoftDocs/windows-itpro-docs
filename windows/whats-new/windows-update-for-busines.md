@@ -1,7 +1,6 @@
 ---
 title: What's new in Windows Update for Business (Windows 10)
-description: Windows Update for Business enables information technology administrators to keep the Windows 10 based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
-MSHAttr: PreferredLib /library
+description: Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
 ms.assetid: 9271FC9A-6AF1-4BBD-A272-909BF54363F4
 ms.prod: W10
 ms.mktglfcycl: explore

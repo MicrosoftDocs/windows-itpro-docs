@@ -1,7 +1,6 @@
 ---
 title: What's new in Windows 10 security (Windows 10)
 description: There are several key client security improvements Microsoft has made in Windows 10.
-MSHAttr: PreferredLib /library
 ms.assetid: 6B8A5F7A-ABD3-416C-87B0-85F68B214C81
 keywords: ["secure", "data loss prevention", "multifactor authentication"]
 ms.prod: W10
@@ -12,14 +11,6 @@ author: TrudyHa
 
 # What's new in Windows 10 security
 
-
-**In this article**
-
--   [Threat resistance](#threat-resistance)
--   [Information protection](#information-protection)
--   [Identity protection and access control](#identity-protection-and-access-control)
--   [Windows 10 hardware considerations](#hardware)
--   [Related topics](#related-topics)
 
 There are several key client security improvements Microsoft has made in Windows 10. These improvements focus on three key areas — threat resistance, information protection, and identity protection and access control. In addition to an overview of the features themselves, this article discusses the hardware requirements for each new feature and offers configuration recommendations and links to more detailed resources.
 

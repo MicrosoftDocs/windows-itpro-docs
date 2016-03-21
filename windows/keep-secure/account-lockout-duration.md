@@ -1,7 +1,6 @@
 ---
 title: Account lockout duration (Windows 10)
-description: Describes the best practices location values and security considerations for the Account lockout duration security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, and security considerations for the Account lockout duration security policy setting.
 ms.assetid: a4167bf4-27c3-4a9b-8ef0-04e3c6ec3aa4
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,12 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, and security considerations for the **Account lockout duration** security policy setting.
 

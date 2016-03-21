@@ -1,7 +1,6 @@
 ---
 title: Choose the right BitLocker countermeasure (Windows 10)
-description: This section outlines the best countermeasures you can use to protect your organization from bootkits and rootkits brute force sign in Direct Memory Access (DMA) attacks Hyberfil.sys attacks and memory remanence attacks.
-MSHAttr: PreferredLib /library
+description: This section outlines the best countermeasures you can use to protect your organization from bootkits and rootkits, brute force sign-in, Direct Memory Access (DMA) attacks, Hyberfil.sys attacks, and memory remanence attacks.
 ms.assetid: b0b09508-7885-4030-8c61-d91458afdb14
 ms.prod: W10
 ms.mktglfcycl: deploy

@@ -1,9 +1,8 @@
 ---
 title: Create a custom Windows PE boot image with Configuration Manager (Windows 10)
-description: In Microsoft System Center 2012 R2 Configuration Manager you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features.
-MSHAttr: PreferredLib /library
+description: In Microsoft System Center 2012 R2 Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features.
 ms.assetid: b9e96974-324d-4fa4-b0ce-33cfc49c4809
-keywords: ["tool customize deploy boot image"]
+keywords: ["tool, customize, deploy, boot image"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,6 @@ author: CFaw
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Add DaRT 10 files and prepare to brand the boot image](#sec01)
--   [Create a boot image for Configuration Manager using the MDT wizard](#sec02)
--   [Related topics](#related-topics)
 
 In Microsoft System Center 2012 R2 Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features. This topic shows you how to create a custom Windows PE 5.0 boot image with the Microsoft Deployment Toolkit (MDT) 2013 Update 1 wizard. You can also add the Microsoft Diagnostics and Recovery Toolset (DaRT) 10 to the boot image as part of the boot image creation process.
 

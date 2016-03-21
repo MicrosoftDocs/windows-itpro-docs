@@ -1,7 +1,6 @@
 ---
 title: Create permanent shared objects (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Create permanent shared objects security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management, and security considerations for the Create permanent shared objects security policy setting.
 ms.assetid: 6a58438d-65ca-4c4a-a584-450eed976649
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create permanent shared objects** security policy setting.
 

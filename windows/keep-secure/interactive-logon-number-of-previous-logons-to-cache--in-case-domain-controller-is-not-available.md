@@ -1,7 +1,6 @@
 ---
 title: Interactive logon Number of previous logons to cache (in case domain controller is not available) (Windows 10)
-description: Describes the best practices location values policy management and security considerations for the Interactive logon Number of previous logons to cache (in case domain controller is not available) security policy setting.
-MSHAttr: PreferredLib /library
+description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Number of previous logons to cache (in case domain controller is not available) security policy setting.
 ms.assetid: 660e925e-cc3e-4098-a41e-eb8db8062d8d
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -15,13 +14,6 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
-
-**In this article**
-
--   [Reference](#reference)
--   [Policy management](#policy-management)
--   [Security considerations](#security-considerations)
--   [Related topics](#related-topics)
 
 Describes the best practices, location, values, policy management and security considerations for the **Interactive logon: Number of previous logons to cache (in case domain controller is not available)** security policy setting.
 

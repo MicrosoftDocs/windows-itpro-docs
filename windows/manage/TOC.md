@@ -18,7 +18,7 @@
 #### [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 ### [Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)
 ### [Configure telemetry in your organization](configure-telemetry-in-your-organization.md)
-### [Disconnect from Microsoft and configure privacy settings in your organization](manage-privacy-for-windows-10-in-your-company.md)
+### [Disconnect from Microsoft and configure privacy settings in your organization](disconnect-your-organization-from-microsoft.md)
 ### [Configure access to Windows Store](stop-employees-from-using-the-windows-store.md)
 ### [Manage Wi-Fi Sense in your company](manage-wi-fi-sense-in-your-company.md)
 ### [Configure Windows 10 Mobile using Lockdown XML](lockdown-xml.md)

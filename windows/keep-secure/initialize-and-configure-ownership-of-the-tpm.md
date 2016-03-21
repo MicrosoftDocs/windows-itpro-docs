@@ -1,7 +1,6 @@
 ---
 title: Initialize and configure ownership of the TPM (Windows 10)
-description: This topic for the IT professional describes how to initialize and set the ownership the Trusted Platform Module (TPM) turn the TPM on and off and clear TPM keys.
-MSHAttr: PreferredLib /library
+description: This topic for the IT professional describes how to initialize and set the ownership the Trusted Platform Module (TPM), turn the TPM on and off, and clear TPM keys.
 ms.assetid: 1166efaf-7aa3-4420-9279-435d9c6ac6f8
 ms.prod: W10
 ms.mktglfcycl: deploy
