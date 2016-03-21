@@ -13,7 +13,7 @@ You can customize Internet Explorer 11 to support various browser behaviors, mu
 
 |Topic                                                                   |Description                                         |
 |------------------------------------------------------------------------|----------------------------------------------------|
-|[Using IEAK 11 to create packages](using-ieak11-to-create-install-packages.md) |How to use the Internet Explorer Administration Kit 11 (IEAK 11) and the IE Customization Wizard 11 to set up, configure, deploy, and maintain IE11 |
+|[Using IEAK 11 to create packages](using-ieak11-to-create-install-packages.md) |How to use the Internet Explorer Administration Kit 11 (IEAK 11) and the IE Customization Wizard 11 to set up, configure, deploy, and maintain IE11. |
 |[Create packages for multiple operating systems or languages](create-install-packages-for-multiple-operating-systems-or-languages.md) |How to create multiple versions of your custom installation package, to support multiple operating systems or languages. |
 |[Using .INF files to create packages](using-inf-files-to-create-install-packages.md) |How to use the Microsoft® Windows Setup Engine to automate setup tasks and customize your component installations. |
 
@@ -21,7 +21,7 @@ You can customize Internet Explorer 11 to support various browser behaviors, mu
 
 In addition, you can configure IE before, during, or after deployment, using these tools:
 
--   **IE Administration Kit 11 (IEAK 11)**. Creates customized installation packages that can be deployed through your software distribution system. For more information about the IEAK 11, see [IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](http://go.microsoft.com/fwlink/p/?linkid=327741).
+-   **IE Administration Kit 11 (IEAK 11)**. Creates customized installation packages that can be deployed through your software distribution system. For more information about the IEAK 11, see [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md).
 
 -   **Group Policy**. Configures and enforces IE11 settings. For more information about settings and configuration options, see [Group policy objects and Internet Explorer 11 (IE11)](group-policy-objects-and-ie11.md).
 
