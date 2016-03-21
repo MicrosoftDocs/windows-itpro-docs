@@ -65,31 +65,44 @@ In Windows 10, Windows Update for Business recognizes three deployment categori
 
 Both upgrades and updates can be deferred from deployment to client machines by a Windows Update for Business administrator within a bounded rage of time from when those updates are first made available on the Windows Update service. This deferral capability allows administrators to validate deployments as they are pushed to all their Windows Update for Business enrolled clients. The following table defines maximum deferral periods allowed by deployment type:
 
-Category
-Maximum deferral
-Deferral increments
-Classification type
-Classification GUID
-OS upgrades
-8 months
-1 month
-Upgrade
-3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
-OS updates
-4 weeks
-1 week
-Security updates
-0FA1201D-4330-4FA8-8AE9-B877473B6441
-Drivers
-EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
-Updates
-CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
-Other/non-deferrable
-No deferral
-No deferral
-Definition updates
-E0789628-CE08-4437-BE74-2495B842F43B
- 
+<table>
+<tr>
+<th>Category</th>
+<th>Maximum deferral</th>
+<th>Deferral increments</th>
+<th>Classification type</th>
+<th>Classification GUID</th>
+</tr>
+<tr>
+<td>OS upgrades</td>
+<td>8 months</td>
+<td>1 month</td>
+<td>Upgrade</td>
+<td>3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</td>
+</tr>
+<tr>
+<td rowspan="3">OS updates</td>
+<td rowspan="3">4 weeks</td>
+<td rowspan="3">1 week</td>
+<td>Security updates</td>
+<td>0FA1201D-4330-4FA8-8AE9-B877473B6441</td>
+</tr>
+<tr>
+<td>Drivers</td>
+<td>EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0</td>
+</tr>
+<tr>
+<td>Updates</td>
+<td>CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83</td>
+</tr>
+<tr>
+<td>Other/non-deferrable</td>
+<td>No deferral</td>
+<td>No deferral</td>
+<td>Definition updates</td>
+<td>E0789628-CE08-4437-BE74-2495B842F43B</td>
+</tr>
+</table>
 
 ## Related topics
 
