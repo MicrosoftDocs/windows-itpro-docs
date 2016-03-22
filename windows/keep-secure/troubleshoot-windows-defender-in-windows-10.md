@@ -1474,7 +1474,7 @@ Description of the error. </dt>
 <p>To troubleshoot this event:
 <ol>
 <li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/Defender_UpdateDefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
+<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
 
@@ -1578,7 +1578,7 @@ Description of the error. </dt>
 <p>To troubleshoot this event:
 <ol>
 <li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/Defender_UpdateDefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
+<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
 
@@ -2734,7 +2734,7 @@ Most often an error means there was a problem installing an update.
 <p>
 <ol>
 <li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/Defender_UpdateDefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
+<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
 
@@ -2978,7 +2978,7 @@ article</a>.</p>
 <p>
 <ol>
 <li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/Defender_UpdateDefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
+<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
 

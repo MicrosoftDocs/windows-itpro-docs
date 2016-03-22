@@ -129,7 +129,7 @@ The following table lists the Group Policy settings that you can configure for P
 </td>
 </tr>
 <tr>
-<td><a href="prepare_people_to_use_microsoft_passport.htm#BMK_remote">Remote Passport</a></td>
+<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a></td>
 <td>
 <p>Use Remote Passport</p>
 <div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
