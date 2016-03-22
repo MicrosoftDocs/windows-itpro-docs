@@ -50,3 +50,8 @@ IE11 offers differing experiences in Windows 8.1:
 |Internet Explorer or IE |The immersive browser, or IE, without a specific version. |
 |Internet Explorer for the desktop |The desktop browser. This is the only experience available when running IE11 on Windows 7 SP1 |
 |Internet Explorer 11 or IE11 |The whole browser, which includes both IE and Internet Explorer for the desktop. |
+
+## Related topics
+- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
+- [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
