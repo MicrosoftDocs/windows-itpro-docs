@@ -1,7 +1,6 @@
 ---
-title: Create and test a device account Microsoft Surface Hub
+title: Create and test a device account - Microsoft Surface Hub
 description: This topic introduces how to create and test the device account that Microsoft Surface Hub uses to communicate with Microsoft Exchange and Skype.
-MSHAttr: PreferredLib /library
 ms.assetid: C8605B5F-2178-4C3A-B4E0-CE32C70ECF67
 keywords: ["create and test device account", "device account", "Surface Hub and Microsoft Exchange", "Surface Hub and Skype"]
 author: TrudyHa
@@ -95,7 +94,7 @@ While the properties for the basic configuration will allow the device account t
 </tr>
 <tr class="even">
 <td align="left"><p>Allowed device IDs (ActiveSync Device ID)</p></td>
-<td align="left"><p>Your Exchange ActiveSync setup may require that an account must whitelist device IDs so that ActiveSync can retrieve the device account’s mail and calendar. You must ensure that the Surface Hub’s device ID is added to this whitelist. This can either be configured using Windows PowerShell (by setting the <code>ActiveSyncAllowedDeviceIDs</code> property) or the Exchange administrative portal.</p>
+<td align="left"><p>Your Exchange ActiveSync setup may require that an account must whitelist device IDs so that ActiveSync can retrieve the device account’s mail and calendar. You must ensure that the Surface Hub’s device ID is added to this whitelist. This can either be configured using PowerShell (by setting the <code>ActiveSyncAllowedDeviceIDs</code> property) or the Exchange administrative portal.</p>
 <p>You can find out how to find and whitelist a device ID with PowerShell in [Allowing device IDs for ActiveSync](appendix-a--powershell.md#whitelisting-device-ids-cmdlet).</p></td>
 </tr>
 </tbody>

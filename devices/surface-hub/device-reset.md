@@ -1,7 +1,6 @@
 ---
 title: Device reset
 description: You may wish to reset your Microsoft Surface Hub.
-MSHAttr: PreferredLib /library
 ms.assetid: 44E82EEE-1905-464B-A758-C2A1463909FF
 keywords: ["reset Surface Hub"]
 author: TrudyHa

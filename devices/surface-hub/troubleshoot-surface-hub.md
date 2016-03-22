@@ -1,7 +1,6 @@
 ---
 title: Troubleshoot Microsoft Surface Hub
-description: Troubleshoot common problems including setup issues Exchange ActiveSync errors.
-MSHAttr: PreferredLib /library
+description: Troubleshoot common problems, including setup issues, Exchange ActiveSync errors.
 ms.assetid: CF58F74D-8077-48C3-981E-FCFDCA34B34A
 keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync errors"]
 author: TrudyHa
@@ -26,61 +25,107 @@ This section lists causes, and possible fixes to help troubleshoot issues you mi
 
 Possible fixes for issues on the Surface Hub after you've completed the first-run program.
 
-Issue
-Causes
-Possible fixes
-Not receiving automatic accept/decline messages.
-
-The device account isn't configured to automatically accept/decline messages.
-
-Use Windows PowerShell`cmdlet Set-CalendarProcessing $upn -AutomateProcessing AutoAccept`.
-
-The device account isn't configured to process external meeting requests.
-
-Use PowerShell cmdlet `Set-CalendarProcessing $upn -ProcessExternalMeetingMessages $true`.
-
-Calendar is not showing on the Welcome screen, or message "Appointments of date (no account provisioned)" is being displayed.
-
-No device account is set up on this Surface Hub.
-
-Provision a device account through Settings.
-
-Calendar is not showing on the Welcome screen or message "Appointments of date (overprovisioned)" is being displayed.
-
-The device account is provisioned on too many devices.
-
-Remove the device account from other devices that it's provisioned to. This can be done using the Exchange admin portal.
-
-Calendar is not showing on the Welcome screen or message "Appointments of date (invalid credentials)" is being displayed.
-
-The device account's password has expired and is no longer valid.
-
-Update the account's password in Settings. Also see [Password management](prepare-your-environment-for-surface-hub-how-do-i-password-management.md).
-
-Calendar is not showing on the Welcome screen or message "Appointments of date (account policy)" is being displayed.
-
-The device account is using an invalid ActiveSync policy.
-
-Make sure the device account has an ActiveSync policy where `PasswordEnabled == False`.
-
-Calendar is not showing on the Welcome screen or message "Appointments may be out of date" is being displayed.
-
-Exchange is not enabled.
-
-Enable the device account for Exchange services through Settings. You need to make sure you have the right set of ActiveSync policies and have also installed any necessary certificates for Exchange services to work.
-Can't log in to Skype for Business.
-
-The device account does not have a Session Initiation Protocol (SIP) address property.
-
-The account does not have a SIP address property and its User Principal Name (UPN) does not match the actual SIP address. The account must have its SIP address set, or the SIP address should be added using the Settings app.
-
-Can't log in to Skype for Business.
-
-The device account requires a certificate to authenticate into Skype for Business.
-
-Install the appropriate certificate using provisioning packages.
-
- 
+<table>
+<tr>
+<th>Issue</th>
+<th>Causes</th>
+<th>Possible fixes</th>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Not receiving automatic accept/decline messages.</p>
+</td>
+<td>
+<p>The device account isn't configured to automatically accept/decline messages.</p>
+</td>
+<td>
+<p>Use PowerShell<code>cmdlet Set-CalendarProcessing $upn -AutomateProcessing AutoAccept</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The device account isn't configured to process external meeting requests.</p>
+</td>
+<td>
+<p>Use PowerShell cmdlet <code>Set-CalendarProcessing $upn -ProcessExternalMeetingMessages $true</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen, or message "Appointments of date (no account provisioned)" is being displayed.</p>
+</td>
+<td>
+<p>No device account is set up on this Surface Hub.</p>
+</td>
+<td>
+<p>Provision a device account through Settings.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen or message "Appointments of date (overprovisioned)" is being displayed.</p>
+</td>
+<td>
+<p>The device account is provisioned on too many devices.</p>
+</td>
+<td>
+<p>Remove the device account from other devices that it's provisioned to. This can be done using the Exchange admin portal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen or message "Appointments of date (invalid credentials)" is being displayed.</p>
+</td>
+<td>
+<p>The device account's password has expired and is no longer valid.</p>
+</td>
+<td>
+<p>Update the account's password in Settings. Also see <a href="prepare_your_environment_for_surface_hub_how_do_i_password_management.htm">Password management</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen or message "Appointments of date (account policy)" is being displayed.</p>
+</td>
+<td>
+<p>The device account is using an invalid ActiveSync policy.</p>
+</td>
+<td>
+<p>Make sure the device account has an ActiveSync policy where <code>PasswordEnabled == False</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen or message "Appointments may be out of date" is being displayed.</p>
+</td>
+<td>
+<p>Exchange is not enabled.</p>
+</td>
+<td>Enable the device account for Exchange services through Settings. You need to make sure you have the right set of ActiveSync policies and have also installed any necessary certificates for Exchange services to work.</td>
+</tr>
+<tr>
+<td>
+<p>Can't log in to Skype for Business.</p>
+</td>
+<td>
+<p>The device account does not have a Session Initiation Protocol (SIP) address property.</p>
+</td>
+<td>
+<p>The account does not have a SIP address property and its User Principal Name (UPN) does not match the actual SIP address. The account must have its SIP address set, or the SIP address should be added using the Settings app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Can't log in to Skype for Business.</p>
+</td>
+<td>
+<p>The device account requires a certificate to authenticate into Skype for Business.</p>
+</td>
+<td>
+<p>Install the appropriate certificate using provisioning packages.</p>
+</td>
+</tr>
+</table>
 
 ### First run
 

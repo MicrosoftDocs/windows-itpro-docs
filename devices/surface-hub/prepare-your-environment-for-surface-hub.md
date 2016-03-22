@@ -1,7 +1,6 @@
 ---
 title: Prepare your environment for Microsoft Surface Hub
 description: This section contains an overview of the steps required to prepare your environment so that you can use all of the features of Microsoft Surface Hub.
-MSHAttr: PreferredLib /library
 ms.assetid: 336A206C-5893-413E-A270-61BFF3DF7DA9
 keywords: ["prepare environment", "features of Surface Hub", "create and test device account", "check network availability"]
 author: TrudyHa
@@ -67,7 +66,7 @@ In order to ensure that your environment is ready for the Surface Hub, verify th
 
     Test this by running:
 
-    -   Surface Hub device account validation Windows PowerShell scripts
+    -   Surface Hub device account validation PowerShell scripts
     -   Lync Windows app from the Windows Store (if Lync runs successfully, then Skype for Business will most likely run).
 
 2.  Ensure that there is a working network/Internet connection for the device to connect to:

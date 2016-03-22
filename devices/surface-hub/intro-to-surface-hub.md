@@ -1,7 +1,6 @@
 ---
 title: Intro to Microsoft Surface Hub
-description: Microsoft Surface Hub is an all in one productivity device that is intended for brainstorming collaboration and presentations.
-MSHAttr: PreferredLib /library
+description: Microsoft Surface Hub is an all-in-one productivity device that is intended for brainstorming, collaboration, and presentations.
 ms.assetid: 5DAD4489-81CF-47ED-9567-A798B90C7E76
 keywords: ["Surface Hub", "productivity", "collaboration", "presentations", "setup"]
 author: TrudyHa

@@ -1,7 +1,6 @@
 ---
-title: Appendix PowerShell Microsoft Surface Hub
+title: Appendix PowerShell - Microsoft Surface Hub
 description: PowerShell scripts to help set up and manage your Microsoft Surface Hub .
-MSHAttr: PreferredLib /library
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 keywords: ["PowerShell", "set up Surface Hub", "manage Surface Hub"]
 author: TrudyHa
@@ -25,7 +24,7 @@ PowerShell scripts to help set up and manage your Microsoft Surface Hub .
 
 You can check online for updated versions at [Surface Hub device account scripts](http://aka.ms/surfacehubscripts).
 
-## <a href="" id="scripts-for-admins"></a>Windows PowerShell scripts for Surface Hub administrators
+## <a href="" id="scripts-for-admins"></a>PowerShell scripts for Surface Hub administrators
 
 
 What do the scripts do?
@@ -36,7 +35,7 @@ What do the scripts do?
 
 What do you need in order to run the scripts?
 
--   Remote Windows PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.
+-   Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 -   Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 
 **Note**  Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.

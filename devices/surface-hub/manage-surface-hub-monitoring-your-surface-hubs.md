@@ -1,7 +1,6 @@
 ---
 title: Monitor your Microsoft Surface Hub
 description: Monitoring for Microsoft Surface Hub devices is enabled through Microsoft Operations Management Suite (OMS).
-MSHAttr: PreferredLib /library
 ms.assetid: 1D2ED317-DFD9-423D-B525-B16C2B9D6942
 keywords: ["monitor Surface Hub", "Microsoft Operations Management Suite", "OMS"]
 author: TrudyHa

@@ -1,7 +1,6 @@
 ---
-title: Applying ActiveSync policies to device accounts Microsoft Surface Hub
-description: The Microsoft Surface Hub's device account uses ActiveSync to sync mail and calendar. This allows people to join and start scheduled meetings from the Surface Hub and allows them to email any whiteboards they have made during their meeting.
-MSHAttr: PreferredLib /library
+title: Applying ActiveSync policies to device accounts - Microsoft Surface Hub
+description: The Microsoft Surface Hub's device account uses ActiveSync to sync mail and calendar. This allows people to join and start scheduled meetings from the Surface Hub, and allows them to email any whiteboards they have made during their meeting.
 ms.assetid: FAABBA74-3088-4275-B58E-EC1070F4D110
 keywords: ["Surface Hub", "ActiveSync policies"]
 author: TrudyHa

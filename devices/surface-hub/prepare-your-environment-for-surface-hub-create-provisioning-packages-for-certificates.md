@@ -1,7 +1,6 @@
 ---
-title: Create provisioning packages Microsoft Surface Hub
-description: For Windows 10 settings that use the registry or a content services platform (CSP) can be configured using provisioning packages. You can also add certificates during first run using provisioning.
-MSHAttr: PreferredLib /library
+title: Create provisioning packages - Microsoft Surface Hub
+description: For Windows 10, settings that use the registry or a content services platform (CSP) can be configured using provisioning packages. You can also add certificates during first run using provisioning.
 ms.assetid: 8AA25BD4-8A8F-4B95-9268-504A49BA5345
 keywords: ["add certificateprovisioning package"]
 author: TrudyHa

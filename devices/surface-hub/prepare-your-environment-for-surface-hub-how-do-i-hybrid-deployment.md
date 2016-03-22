@@ -1,16 +1,15 @@
 ---
-title: Hybrid deployment Microsoft Surface Hub
+title: Hybrid deployment - Microsoft Surface Hub
 description: A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub.
-MSHAttr: PreferredLib /library
 ms.assetid: 7BFBB7BE-F587-422E-9CE4-C9DDF829E4F1
-keywords: ["hybrid deployment", "device account for Surface Hub", "Exchange hosted on prem", "Exchange hosted online"]
+keywords: ["hybrid deployment", "device account for Surface Hub", "Exchange hosted on-prem", "Exchange hosted online"]
 author: TrudyHa
 ---
 
 # Hybrid deployment - Microsoft Surface Hub
 
 
-A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#hybrid-exchange-on-prem), and [Exchange hosted online](#hybrid-exchange-online). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use Windows PowerShell (see [Appendix: PowerShell](appendix-a--powershell.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided PowerShell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a--powershell.md#acct-verification-ps-scripts).)
+A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#hybrid-exchange-on-prem), and [Exchange hosted online](#hybrid-exchange-online). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a--powershell.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided PowerShell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a--powershell.md#acct-verification-ps-scripts).)
 
 ## <a href="" id="hybrid-exchange-on-prem"></a>Exchange on-prem
 

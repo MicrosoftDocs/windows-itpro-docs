@@ -1,7 +1,6 @@
 ---
-title: On premises deployment Microsoft Surface Hub
-description: This topic explains how you add a device account for your Microsoft Surface Hub when you have a single forest on premises deployment.
-MSHAttr: PreferredLib /library
+title: On-premises deployment - Microsoft Surface Hub
+description: This topic explains how you add a device account for your Microsoft Surface Hub when you have a single-forest, on-premises deployment.
 ms.assetid: 80E12195-A65B-42D1-8B84-ECC3FCBAAFC6
 keywords: ["single forest deployment", "on prem deployment", "device account", "Surface Hub"]
 author: TrudyHa
@@ -12,7 +11,7 @@ author: TrudyHa
 
 This topic explains how you add a device account for your Microsoft Surface Hub when you have a single-forest, on-premises deployment.
 
-If you have a single-forest on-premises deployment with Microsoft Exchange 2013 or later and Skype for Business 2013 or later, then you can [use the provided Windows PowerShell scripts](appendix-a--powershell.md#create-on-premise-ps-scripts) to create device accounts. If you’re using a multi-forest deployment, or are using Exchange 2010 or Lync 2010, you can use equivalent cmdlets that will produce the same results. Those cmdlets are described in this section.
+If you have a single-forest on-premises deployment with Microsoft Exchange 2013 or later and Skype for Business 2013 or later, then you can [use the provided PowerShell scripts](appendix-a--powershell.md#create-on-premise-ps-scripts) to create device accounts. If you’re using a multi-forest deployment, or are using Exchange 2010 or Lync 2010, you can use equivalent cmdlets that will produce the same results. Those cmdlets are described in this section.
 
 1.  Start a remote PowerShell session from a PC and connect to Exchange.
 

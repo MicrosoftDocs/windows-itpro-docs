@@ -1,7 +1,6 @@
 ---
-title: Wireless network management Microsoft Surface Hub
-description: Microsoft Surface Hub offers two options for network connectivity to your corporate network and Internet wireless and wired. While both provide network access we recommend you use a wired connection.
-MSHAttr: PreferredLib /library
+title: Wireless network management - Microsoft Surface Hub
+description: Microsoft Surface Hub offers two options for network connectivity to your corporate network and Internet wireless, and wired. While both provide network access, we recommend you use a wired connection.
 ms.assetid: D2CFB90B-FBAA-4532-B658-9AA33CAEA31D
 keywords: ["network connectivity", "wired connection"]
 author: TrudyHa

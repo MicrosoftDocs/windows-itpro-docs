@@ -1,9 +1,8 @@
 ---
-title: Setup worksheet Microsoft Surface Hub
-description: When you've finished pre setup and are ready to start first time setup for your Microsoft Surface Hub make sure you have all the information listed in this section.
-MSHAttr: PreferredLib /library
+title: Setup worksheet - Microsoft Surface Hub
+description: When you've finished pre-setup and are ready to start first-time setup for your Microsoft Surface Hub, make sure you have all the information listed in this section.
 ms.assetid: AC6F925B-BADE-48F5-8D53-8B6FFF6EE3EB
-keywords: ["Setup worksheet", "pre setup", "first time setup"]
+keywords: ["Setup worksheet", "pre-setup", "first-time setup"]
 author: TrudyHa
 ---
 
@@ -226,7 +225,7 @@ You may need the fully qualified domain name (FQDN).</p>
 <p>USB drive</p>
 </td>
 <td>
-<p>If you know before first run that you want to install certificates or universal apps, follow the steps in <a href="prepare_your_environment_for_surface_hub_create_provisioning_packages_for_certificates.htm">Create provisioning packages</a>. Your provisioning packages will be created on a USB drive.</p>
+<p>If you know before first run that you want to install certificates or universal apps, follow the steps in <a href="prepare-your-environment-for-surface-hub-create-provisioning-packages-for-certificates.md">Create provisioning packages</a>. Your provisioning packages will be created on a USB drive.</p>
 </td>
 <td>
 <p></p>
@@ -236,3 +235,14 @@ You may need the fully qualified domain name (FQDN).</p>
 </td>
 </tr>
 </table>
+
+ 
+
+ 
+
+ 
+
+
+
+
+

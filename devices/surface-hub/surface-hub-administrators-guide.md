@@ -1,7 +1,6 @@
 ---
 title: Microsoft Surface Hub administrator's guide
-description: This guide covers the installation and administration of devices running Surface Hub and is intended for use by anyone responsible for these tasks including IT administrators and developers.
-MSHAttr: PreferredLib /library
+description: This guide covers the installation and administration of devices running Surface Hub, and is intended for use by anyone responsible for these tasks, including IT administrators and developers.
 ms.assetid: e618aab7-3a94-4159-954e-d455ef7b8839
 keywords: ["Surface Hub", "installation", "administration", "administrator's guide"]
 author: TrudyHa
