@@ -338,7 +338,7 @@ Table 5. Windows 10 Mobile account management settings
 It’s common sense to lock a device when it is not in use. Microsoft recommends that you secure Windows 10 Mobile devices and implement a device lock policy. A device password or PIN lock is a best practice for securing apps and data on devices. [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkId=723994) is the name given to the new biometric sign-in option that allows users to use their face, iris, or fingerprints to unlock their compatible device, all of which Windows 10 supports.
 
 **Note**  
-In addition to the device lock restrictions discussed in this section, Windows 10 supports Microsoft Passport for Work, which lets you access apps and services without a password. Microsoft Passport for Work is supported only in Windows 10 for desktop and requires Configuration Manager. In addition, the device must be joined to a domain. For more information, see [Enable Microsoft Passport for work in the organization](http://go.microsoft.com/fwlink/p/?LinkId=723995).
+In addition to the device lock restrictions discussed in this section, Windows 10 supports Microsoft Passport for Work, which lets you access apps and services without a password.
 
  
 

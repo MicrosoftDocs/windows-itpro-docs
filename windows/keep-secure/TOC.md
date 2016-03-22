@@ -394,7 +394,7 @@
 ### [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
 #### [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
 #### [Configure Windows Defender in Windows 10](configure-windows-defender-for-windows-10.md)
-#### [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-for-windows-10.md)
+#### [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
 ## [Enterprise security guides](enterprise-security-guides-portal.md)
 ### [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
 ### [Device Guard deployment guide](device-guard-deployment-guide.md)

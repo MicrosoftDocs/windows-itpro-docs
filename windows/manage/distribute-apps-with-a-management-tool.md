@@ -56,6 +56,13 @@ This diagram shows how you can use a management tool to distribute an online-lic
 
 ![](images/wsfb-online-distribute-mdm.png)
 
+## Related topics
+
+
+[Configure MDM Provider](../manage/configure-mdm-provider.md)
+
+[Manage apps you purchased from the Windows Store for Business with Micosoft InTune](https://technet.microsoft.com/library/mt676514.aspx)
+
  
 
  

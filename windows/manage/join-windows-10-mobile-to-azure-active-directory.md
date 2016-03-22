@@ -77,7 +77,7 @@ An added work account provides the same SSO experience in browser apps like Offi
 
 -   **Mobile device management**
 
-    An MDM service is required for managing Azure AD-joined devices. You can use MDM to push settings to devices, as well as application and certificates used by VPN, Wi-Fi, etc. Azure AD Premium or Enterprise Mobility Services (EMS) licenses are required to set up your Azure AD-joined devices to automatically enroll in MDM. [Learn more about setting up your Azure AD tenant for MDM auto-enrollment.](http://go.microsoft.com/fwlink/p/?LinkID=691615)
+    An MDM service is required for managing Azure AD-joined devices. You can use MDM to push settings to devices, as well as application and certificates used by VPN, Wi-Fi, etc. Azure AD Premium or Enterprise Mobility Suite (EMS) licenses are required to set up your Azure AD-joined devices to automatically enroll in MDM. [Learn more about setting up your Azure AD tenant for MDM auto-enrollment.](http://go.microsoft.com/fwlink/p/?LinkID=691615)
 
 -   **Microsoft Passport**
 

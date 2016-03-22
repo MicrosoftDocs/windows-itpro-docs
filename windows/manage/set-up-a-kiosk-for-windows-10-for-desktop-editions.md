@@ -257,7 +257,7 @@ Using Shell Launcher, you can configure a kiosk device that runs a Classic Windo
 
 ### Configure Shell Launcher
 
-To set a Classic Windows application as the shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using Windows PowerShell.
+To set a Classic Windows application as the shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using PowerShell.
 
 **To turn on Shell Launcher in Windows features**
 

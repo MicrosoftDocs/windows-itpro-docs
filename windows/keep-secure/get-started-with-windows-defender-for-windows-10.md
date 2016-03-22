@@ -1,6 +1,6 @@
 ---
 title: Update and manage Windows Defender in Windows 10 (Windows 10)
-description: IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using Group Policy SettingsWindows Management Instrumentation (WMI)Windows PowerShell.
+description: IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using Group Policy SettingsWindows Management Instrumentation (WMI)PowerShell.
 ms.assetid: 045F5BF2-87D7-4522-97E1-C1D508E063A7
 ms.prod: W10
 ms.mktglfcycl: manage
@@ -19,7 +19,7 @@ IT professionals can manage Windows Defender on Windows 10 endpoints in their o
 
 -   Group Policy Settings
 -   Windows Management Instrumentation (WMI)
--   Windows PowerShell
+-   PowerShell
 
 ## Manage Windows Defender endpoints through Active Directory and WSUS
 
@@ -112,7 +112,7 @@ Turn on email scanning with the following *Group Policy* settings:
 3.  Click **Scan**.
 4.  Double-click **Turn on e-mail scanning**.
 
-    This will open the **Turn on e-mail scanning** window:
+    This will open the **Turn on e-mail scanning** window: ![turn on e-mail scanning window](images/defender-scanemailfiles.png)
 
 5.  Select **Enabled**.
 6.  Click **OK** to apply changes.
@@ -175,16 +175,16 @@ Turn on email scanning with the following *Group Policy* settings:
 3.  Click **Scan**.
 4.  Double-click **Scan archive files**.
 
-    This will open the **Scan archive files** window:
+    This will open the **Scan archive files** window: ![scan archive files window](images/defender-scanarchivefiles.png)
 
 5.  Select **Enabled**.
 6.  Click **OK** to apply changes.
 
 There are a number of archive scan settings in the **Scan** repository you can configure through *Group Policy*, for example:
 
--   Maximum directory depth level into which archive files are unpacked during scanning
--   Maximum size of archive files that will be scanned
--   Maximum percentage CPU utilization permitted during a scan
+-   Maximum directory depth level into which archive files are unpacked during scanning ![specify the maximum depth to scan archive files window](images/defender-scanarchivedepth.png)
+-   Maximum size of archive files that will be scanned ![specify the maximum size of archive files to be scanned window](images/defender-scanarchivesize.png)
+-   Maximum percentage CPU utilization permitted during a scan ![specify the maximum percentage od cpu utilization during a scan window](images/defender-scanarchivecpu.png)
 
 ## Use WMI to disable archive scans
 
@@ -220,7 +220,7 @@ In Endpoint Protection, you can use the advanced scanning options to configure a
 
 [Configure Windows Defender in Windows 10](configure-windows-defender-for-windows-10.md)
 
-[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-for-windows-10.md)
+[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
 
  
 

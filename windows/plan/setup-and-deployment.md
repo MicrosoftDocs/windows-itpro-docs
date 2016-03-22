@@ -90,6 +90,7 @@ Windows Update for Business allows administrators to control when upgrades and u
 </td>
 </tr>
 </table>
+
 Administrators can control deferral periods with Group Policy Objects by using the [Local Group Policy Editor (GPEdit)](http://go.microsoft.com/fwlink/p/?LinkId=734030) or, for domain joined systems, [Group Policy Management Console (GPMC)](http://go.microsoft.com/fwlink/p/?LinkId=699325). For additional details on Group Policy management see [Group Policy management for IT pros](http://go.microsoft.com/fwlink/p/?LinkId=699282).
 
 **Set different deferrals based on update classification in GPedit.msc**

@@ -28,7 +28,7 @@ To create a code integrity policy, you'll first need to create a reference image
 
 **To create a code integrity policy based on a reference device**
 
-1.  On your reference device, start Windows PowerShell as an administrator.
+1.  On your reference device, start PowerShell as an administrator.
 
 2.  In PowerShell, initialize variables by typing:
 

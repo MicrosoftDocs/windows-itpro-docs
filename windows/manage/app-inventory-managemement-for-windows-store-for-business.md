@@ -194,7 +194,7 @@ You can download offline-licensed apps from your inventory. You'll need to downl
 
 For more information about online and offline licenses, see [Apps in the Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing-model).
 
-For more information about downloading offline-licensed apps, see [Download offline apps](../manage/download-offline-licensed-app.md).
+For more information about downloading offline-licensed apps, see [Download offline apps](distribute-offline-apps.md).
 
  
 

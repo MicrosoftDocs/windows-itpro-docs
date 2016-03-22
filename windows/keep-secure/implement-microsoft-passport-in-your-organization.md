@@ -129,7 +129,7 @@ The following table lists the Group Policy settings that you can configure for P
 </td>
 </tr>
 <tr>
-<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a></td>
+<td><a href="prepare_people_to_use_microsoft_passport.htm#BMK_remote">Remote Passport</a></td>
 <td>
 <p>Use Remote Passport</p>
 <div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
@@ -142,151 +142,118 @@ The following table lists the Group Policy settings that you can configure for P
 </td>
 </tr>
 </table>
-<p> </p>
-<h2><a id="MDM_policy_settings_for_Passport"></a><a id="mdm_policy_settings_for_passport"></a><a id="MDM_POLICY_SETTINGS_FOR_PASSPORT"></a>MDM policy settings for Passport</h2>
-<p>The following table lists the MDM policy settings that you can configure for Passport use in your workplace. These MDM policy settings use the <a href="http://go.microsoft.com/fwlink/p/?LinkId=692070">PassportForWork configuration service provider (CSP)</a>.</p>
-<table>
-<tr>
-<th colspan="2">Policy</th>
-<th>Scope</th>
-<th>Default</th>
-<th>Options</th>
-</tr>
-<tr>
-<td>UsePassportForWork</td>
-<td></td>
-<td>Device</td>
-<td>True</td>
-<td>
-<p>True: Passport will be provisioned for all users on the device.</p>
-<p>False: Users will not be able to provision Passport. </p>
-<div class="alert"><b>Note</b>  If Passport is enabled, and then the policy is changed to False, users who previously set up Passport can continue to use it, but will not be able to set up Passport on other devices.</div>
-<div> </div>
-</td>
-</tr>
-<tr>
-<td>RequireSecurityDevice</td>
-<td></td>
-<td>Device</td>
-<td>False</td>
-<td>
-<p>True: Passport will only be provisioned using TPM.</p>
-<p>False: Passport will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
-</td>
-</tr>
-<tr>
-<td rowspan="2">Biometrics</td>
-<td>
-<p>UseBiometrics</p>
-</td>
-<td>Device </td>
-<td>False</td>
-<td>
-<p>True: Biometrics can be used as a gesture in place of a PIN for domain logon.</p>
-<p>False: Only a PIN can be used as a gesture for domain logon.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>FacialFeaturesUser</p>
-<p>EnhancedAntiSpoofing</p>
-</td>
-<td>Device</td>
-<td>Not configured</td>
-<td>
-<p>Not configured: users can choose whether to turn on enhanced anti-spoofing.</p>
-<p>True: Enhanced anti-spoofing is required on devices which support it.</p>
-<p>False: Users cannot turn on enhanced anti-spoofing.</p>
-</td>
-</tr>
-<tr>
-<td rowspan="9">PINComplexity</td>
-</tr>
-<tr>
-<td>Digits </td>
-<td>Device or user</td>
-<td>2 </td>
-<td>
-<p>1: Numbers are not allowed. </p>
-<p>2: At least one number is required.</p>
-</td>
-</tr>
-<tr>
-<td>Lowercase letters </td>
-<td>Device or user</td>
-<td>1 </td>
-<td>
-<p>1: Lowercase letters are not allowed. </p>
-<p>2: At least one lowercase letter is required.</p>
-</td>
-</tr>
-<tr>
-<td>Maximum PIN length </td>
-<td>Device or user</td>
-<td>127 </td>
-<td>
-<p>Maximum length that can be set is 127. Maximum length cannot be less than minimum setting.</p>
-</td>
-</tr>
-<tr>
-<td>Minimum PIN length</td>
-<td>Device or user</td>
-<td>4</td>
-<td>
-<p>Minimum length that can be set is 4. Minimum length cannot be greater than maximum setting.</p>
-</td>
-</tr>
-<tr>
-<td>Expiration </td>
-<td>Device or user</td>
-<td>0</td>
-<td>
-<p>Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it. The largest number you can configure for this policy setting is 730. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then the user’s PIN will never expire. 
-</p>
-</td>
-</tr>
-<tr>
-<td>History</td>
-<td>Device or user</td>
-<td>0</td>
-<td>
-<p>Integer value that specifies the number of past PINs that can be associated to a user account that can’t be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required. 
-</p>
-</td>
-</tr>
-<tr>
-<td>Special characters</td>
-<td>Device or user</td>
-<td>1</td>
-<td>
-<p>1: Special characters are not allowed. </p>
-<p>2: At least one special character is required.</p>
-</td>
-</tr>
-<tr>
-<td>Uppercase letters</td>
-<td>Device or user</td>
-<td>1</td>
-<td>
-<p>1: Uppercase letters are not allowed </p>
-<p>2: At least one uppercase letter is required</p>
-</td>
-</tr>
-<tr>
-<td>Remote</td>
-<td>
-<p>UseRemotePassport</p>
-<div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
-<div> </div>
-</td>
-<td>Device or user</td>
-<td>False</td>
-<td>
-<p>True: <a href="prepare_people_to_use_microsoft_passport.htm#BMK_remote">Remote Passport</a> is enabled.</p>
-<p>False: <a href="prepare_people_to_use_microsoft_passport.htm#BMK_remote">Remote Passport</a> is disabled.</p>
-</td>
-</tr>
-</table>
+
+## MDM policy settings for Passport
+
+
+The following table lists the MDM policy settings that you can configure for Passport use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkId=692070).
+
+Policy
+Scope
+Default
+Options
+UsePassportForWork
+Device
+True
+True: Passport will be provisioned for all users on the device.
+
+False: Users will not be able to provision Passport.
+
+**Note**  If Passport is enabled, and then the policy is changed to False, users who previously set up Passport can continue to use it, but will not be able to set up Passport on other devices.
+
+ 
+
+RequireSecurityDevice
+Device
+False
+True: Passport will only be provisioned using TPM.
+
+False: Passport will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.
+
+Biometrics
+UseBiometrics
+
+Device
+False
+True: Biometrics can be used as a gesture in place of a PIN for domain logon.
+
+False: Only a PIN can be used as a gesture for domain logon.
+
+FacialFeaturesUser
+
+EnhancedAntiSpoofing
+
+Device
+Not configured
+Not configured: users can choose whether to turn on enhanced anti-spoofing.
+
+True: Enhanced anti-spoofing is required on devices which support it.
+
+False: Users cannot turn on enhanced anti-spoofing.
+
+PINComplexity
+Digits
+Device or user
+2
+1: Numbers are not allowed.
+
+2: At least one number is required.
+
+Lowercase letters
+Device or user
+1
+1: Lowercase letters are not allowed.
+
+2: At least one lowercase letter is required.
+
+Maximum PIN length
+Device or user
+127
+Maximum length that can be set is 127. Maximum length cannot be less than minimum setting.
+
+Minimum PIN length
+Device or user
+4
+Minimum length that can be set is 4. Minimum length cannot be greater than maximum setting.
+
+Expiration
+Device or user
+0
+Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it. The largest number you can configure for this policy setting is 730. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then the user’s PIN will never expire.
+
+History
+Device or user
+0
+Integer value that specifies the number of past PINs that can be associated to a user account that can’t be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required.
+
+Special characters
+Device or user
+1
+1: Special characters are not allowed.
+
+2: At least one special character is required.
+
+Uppercase letters
+Device or user
+1
+1: Uppercase letters are not allowed
+
+2: At least one uppercase letter is required
+
+Remote
+UseRemotePassport
+
+**Note**  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+
+ 
+
+Device or user
+False
+True: [Remote Passport](prepare-people-to-use-microsoft-passport.md#bmk-remote) is enabled.
+
+False: [Remote Passport](prepare-people-to-use-microsoft-passport.md#bmk-remote) is disabled.
+
+ 
 
 **Note**  
 If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.

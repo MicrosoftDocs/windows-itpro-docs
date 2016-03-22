@@ -76,7 +76,7 @@ For more information about what's new in Windows Defender in Windows 10, see [W
 <ul>
 <li>Group Policy Settings</li>
 <li>Windows Management Instrumentation (WMI)</li>
-<li>Windows PowerShell</li>
+<li>PowerShell</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -84,7 +84,7 @@ For more information about what's new in Windows Defender in Windows 10, see [W
 <td align="left"><p>IT professionals can configure definition updates and cloud-based protection in Windows Defender in Windows 10 through Active Directory and WSUS.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-for-windows-10.md)</p></td>
+<td align="left"><p>[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)</p></td>
 <td align="left"><p>IT professionals can review information about <em>event IDs</em> in Windows Defender for Windows 10 and see any relevant action they can take.</p></td>
 </tr>
 </tbody>

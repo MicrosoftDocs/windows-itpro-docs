@@ -27,7 +27,7 @@ Always On is a new feature in Windows 10 which enables the active VPN profile to
 
 -   Network change
 
-When a device has multiple profiles with Always On triggers, the user can specify the active profile in **Settings** &gt; **Network & Internet** &gt; **VPN** &gt; VPN profile &gt; **Let apps automatically use this VPN connection**.
+When a device has multiple profiles with Always On triggers, the user can specify the active profile in **Settings** &gt; **Network & Internet** &gt; **VPN** &gt; *VPN profile* &gt; **Let apps automatically use this VPN connection**.
 
 ## App-triggered VPN
 

@@ -46,7 +46,7 @@ You must run Package Inspector on a device that's running a temporary Code Integ
 
 **To create a catalog file for an existing app**
 
-1.  Start Windows PowerShell as an administrator, and create your temporary policy file by typing:
+1.  Start PowerShell as an administrator, and create your temporary policy file by typing:
 
     ``` syntax
     mkdir temp
