@@ -1,7 +1,6 @@
 ---
 title: Microsoft Surface Deployment Accelerator
 description: Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices.
-MSHAttr: PreferredLib /library
 ms.assetid: E7991E90-4AAE-44B6-8822-58BFDE3EADE4
 keywords: ["deploy", "install", "tool"]
 ms.prod: W10
@@ -12,12 +11,6 @@ author: brianlic-msft
 
 # Microsoft Surface Deployment Accelerator
 
-
-**In this article**
-
--   [Microsoft Surface Deployment Accelerator prerequisites](#microsoft-surface-deployment-accelerator-prerequisites)
--   [How Microsoft Surface Deployment Accelerator works](#how-microsoft-surface-deployment-accelerator-works)
--   [Use Microsoft Surface Deployment Accelerator without an Internet connection](#use-microsoft-surface-deployment-accelerator-without-an-internet-connection--)
 
 Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices.
 
@@ -59,7 +52,7 @@ Before you install Microsoft Surface Deployment Accelerator, your environment mu
 
 As you progress through the Microsoft Surface Deployment Accelerator wizard, you will be asked some basic questions about how your deployment solution should be configured. As you select the desired Surface models to be supported and apps to be installed (see Figure 1), the wizard will prepare scripts that download, install, and configure everything needed to perform a complete deployment and capture of a reference image. By using the network boot (PXE) capabilities of Windows Deployment Services (WDS), the resulting solution enables you to boot a Surface device from the network and perform a clean deployment of Windows.
 
-![figure 1](images/sda-fig1.png)
+![figure 1](images/sda-fig1-select-steps.png)
 
 Figure 1: Select desired apps and drivers
 
@@ -77,11 +70,11 @@ With Microsoft Surface Deployment Accelerator v1.9.0258, Surface Pro 3, Surface 
 
 For environments where the Microsoft Surface Deployment Accelerator server will not be able to connect to the Internet, the required Surface files can be downloaded separately. To specify a local source for Surface driver and app files, select the **Copy from a local directory** option and specify the location of your downloaded files (see Figure 2). All of the driver and app files for your selected choices must be placed in the specified folder.
 
-![figure 2](images/sda-fig2.png)
+![figure 2](images/sda-fig2-specify-local.png)
 
 Figure 2. Specify a local source for Surface driver and app files
 
-You can find a full list of available driver downloads at [Download the latest firmware and drivers for Surface devices](7662BF68-8BF7-43F7-81F5-3580A770294A)
+You can find a full list of available driver downloads at [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 
 **Note**  
 Downloaded files do not need to be extracted. The downloaded files can be left as .zip files as long as they are stored in one folder.

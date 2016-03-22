@@ -1,9 +1,8 @@
 ---
 title: Step by step Surface Deployment Accelerator
-description: This article shows you how to install Microsoft Surface Deployment Accelerator (SDA) configure a deployment share for the deployment of Windows to Surface devices and perform a deployment to Surface devices.
-MSHAttr: PreferredLib /library
+description: This article shows you how to install Microsoft Surface Deployment Accelerator (SDA), configure a deployment share for the deployment of Windows to Surface devices, and perform a deployment to Surface devices.
 ms.assetid: A944FB9C-4D81-4868-AFF6-B9D1F5CF1032
-keywords: ["deploy configure"]
+keywords: ["deploy, configure"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,19 +12,12 @@ author: brianlic-msft
 # Step by step: Surface Deployment Accelerator
 
 
-**In this article**
-
--   [How to install Surface Deployment Accelerator](#how-to-install-surface-deployment-accelerator)
--   [Create a deployment share](#create-a-deployment-share)
--   [SDA task sequences](#sda-task-sequences)
--   [Deployment to Surface devices](#deployment-to-surface-devices)
-
 This article shows you how to install Microsoft Surface Deployment Accelerator (SDA), configure a deployment share for the deployment of Windows to Surface devices, and perform a deployment to Surface devices. This article also contains instructions on how to perform these tasks without an Internet connection or without support for Windows Deployment Services network boot (PXE).
 
 ## How to install Surface Deployment Accelerator
 
 
-For information about prerequisites and instructions for how to download and install SDA, see [Microsoft Surface Deployment Accelerator](E7991E90-4AAE-44B6-8822-58BFDE3EADE4).
+For information about prerequisites and instructions for how to download and install SDA, see [Microsoft Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md).
 
 1.  Download SDA, which is included in [Surface Tools for IT](http://go.microsoft.com/fwlink/p/?LinkId=618121) on the Microsoft Download Center.
 
@@ -53,7 +45,7 @@ At this point the tool has not yet prepared any deployment environment or downlo
 ## Create a deployment share
 
 
-The following steps show how you create a deployment share for Windows 10 that supports Surface Pro 3, Surface Pro 4, Surface Book, the Surface app, the Surface Firmware Tool, and the Surface Asset Tag Tool. As you follow the steps below, make the selections that are applicable for your organization. For example, you could choose to deploy Windows 10 to Surface Book only, without any of the Surface apps.
+The following steps show how you create a deployment share for Windows 10 that supports Surface Pro 3, Surface Pro 4, Surface Book, the Surface Firmware Tool, and the Surface Asset Tag Tool. As you follow the steps below, make the selections that are applicable for your organization. For example, you could choose to deploy Windows 10 to Surface Book only, without any of the Surface apps.
 
 **Note**  
 SDA lets you create deployment shares for both Windows 8.1 and Windows 10 deployments, but you can only create a single deployment share at a time. Therefore, to create both Windows 8.1 and Windows 10 deployment shares, you will need to run the tool twice.
@@ -78,7 +70,7 @@ SDA lets you create deployment shares for both Windows 8.1 and Windows 10 depl
 
     -   **Windows 10 Deployment Services**
 
-        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](5aa8ea78-8f95-459a-9e9a-cd96a3d698b9) for more information about how to configure Windows Deployment Services for PXE boot.
+        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](http://go.microsoft.com/fwlink/p/?LinkId=761072) for more information about how to configure Windows Deployment Services for PXE boot.
 
     -   **Windows 10 Source Files**
 
@@ -90,7 +82,7 @@ SDA lets you create deployment shares for both Windows 8.1 and Windows 10 depl
 
 6.  On the **Configure** page, select the check box next to each device or app that you want to include in your deployment share. Note that Surface Pro 4 and Surface Book only support Windows 10 and are not available for the deployment of Windows 8.1. The Surface Firmware Tool is only applicable to Surface Pro 3 and cannot be selected unless Surface Pro 3 drivers are selected, as shown in Figure 4. Click **Next** to continue.
 
-    ![figure 4](images/sdasteps-fig4-selecttool.png)
+    ![figure 4](images/sdasteps-fig4-select.png)
 
     Figure 4. Selecting Surface Firmware Tool requires Surface Pro 3 drivers
 
@@ -129,7 +121,7 @@ All of the downloaded driver and applications files must be located in the same 
 
  
 
-![figure 6](images/sdasteps-fig6-specifyfiles.png)
+![figure 6](images/sdasteps-fig6-specify-driver-app-files.png)
 
 Figure 6. Specify the Surface driver and app files from a local path
 
@@ -147,7 +139,7 @@ The offline media files for the complete SDA deployment share are approximately 
 
  
 
-Before you can create bootable media files within the MDT Deployment Workbench or copy those files to a USB drive, you must first configure that USB drive to be bootable. Using [DiskPart](26a4a166-95fa-4faf-95bc-2d5345f4a57a), create a partition, format the partition as FAT32, and set the partition to be active. To run DiskPart, open an administrative PowerShell or Command Prompt window, and then run the following sequence of commands, as shown in Figure 7:
+Before you can create bootable media files within the MDT Deployment Workbench or copy those files to a USB drive, you must first configure that USB drive to be bootable. Using [DiskPart](http://go.microsoft.com/fwlink/p/?LinkId=761073), create a partition, format the partition as FAT32, and set the partition to be active. To run DiskPart, open an administrative PowerShell or Command Prompt window, and then run the following sequence of commands, as shown in Figure 7:
 
 1.  **diskpart** – Opens DiskPart to manage disks and partitions.
 
@@ -274,7 +266,7 @@ Your USB drive is now configured as bootable offline media that contains all of 
 ## SDA task sequences
 
 
-The SDA deployment share is configured with all of the resources required to perform a Windows deployment to a Surface device. These resources include Windows source files, image, Surface drivers, and Surface apps. The deployment share also contains two pre-configured task sequences, as shown in Figure 13. These task sequences contain the steps required to perform a deployment to a Surface device using the default Windows image from the installation media or to create a reference image complete with Windows updates and applications. To learn more about task sequences, see [MDT 2013 Update 1 Lite Touch components](7d6fc159-e338-439e-a2e6-1778d0da9089).
+The SDA deployment share is configured with all of the resources required to perform a Windows deployment to a Surface device. These resources include Windows source files, image, Surface drivers, and Surface apps. The deployment share also contains two pre-configured task sequences, as shown in Figure 13. These task sequences contain the steps required to perform a deployment to a Surface device using the default Windows image from the installation media or to create a reference image complete with Windows updates and applications. To learn more about task sequences, see [MDT 2013 Update 1 Lite Touch components](../deploy/mdt-2013-lite-touch-components.md).
 
 ![figure 13](images/sdasteps-fig13-taskseq.png)
 
@@ -310,7 +302,7 @@ The **2 – Create Windows Reference Image** task sequence is used to perform a 
 Like the **1 – Deploy Microsoft Surface** task sequence, the **2 – Create Windows Reference Image** task sequence performs a deployment of the unaltered Windows image directly from the installation media. Creation of a reference image should always be performed on a virtual machine. Using a virtual machine as your reference system helps to ensure that the resulting image is compatible with different hardware configurations.
 
 **Note**  
-Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information see [Deploy a Windows 10 image using MDT 2013 Update 1](1d70a3d8-1b1d-4051-b656-c0393a93f83c).
+Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information see [Deploy a Windows 10 image using MDT 2013 Update 1](../deploy/deploy-a-windows-81-image-using-mdt-2013.md).
 
  
 
@@ -387,7 +379,7 @@ To run the Deploy Microsoft Surface task sequence:
 
 7.  On the **Ready** page, verify your selections and then click **Begin** to start the automated deployment to this device. The deployment will not require user interaction again. The Windows Deployment Wizard will close and an **Installation Progress** window is displayed to show progress of the task sequence as the image is applied and applications are installed (Figure 17).
 
-    ![figure 17](images/sdasteps-fig17-installation.png)
+    ![figure 17](images/sdasteps-fig17-installprogresswindow.png)
 
     Figure 17. The **Installation Progress** window
 

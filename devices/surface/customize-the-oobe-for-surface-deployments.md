@@ -1,9 +1,8 @@
 ---
 title: Customize the OOBE for Surface deployments
-description: This article will walk you through the process of customizing the Surface out of box experience for end users in your organization.
-MSHAttr: PreferredLib /library
+description: This article will walk you through the process of customizing the Surface out-of-box experience for end users in your organization.
 ms.assetid: F6910315-9FA9-4297-8FA8-2C284A4B1D87
-keywords: ["deploy customize automate deployment network Pen pair boot"]
+keywords: ["deploy, customize, automate, deployment, network, Pen, pair, boot"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,17 +12,12 @@ author: brianlic-msft
 # Customize the OOBE for Surface deployments
 
 
-**In this article**
-
--   [Scenario 1: Wireless networking in OOBE with MDT 2013](#scenario-1--wireless-networking-in-oobe-with-mdt-2013)
--   [Scenario 2: Surface Pen pairing in OOBE](#scenario-2--surface-pen-pairing-in-oobe)
-
 This article will walk you through the process of customizing the Surface out-of-box experience for end users in your organization.
 
 It is common practice in a Windows deployment to customize the user experience for the first startup of deployed computers — the out-of-box experience, or OOBE.
 
 **Note**  
-OOBE is also often used to describe the phase, or configuration pass, of Windows setup during which the user experience is displayed. For more information about the OOBE phase of setup, see [How Configuration Passes Work](6dde2f60-50ed-4e8d-a9c4-ef546289f72b).
+OOBE is also often used to describe the phase, or configuration pass, of Windows setup during which the user experience is displayed. For more information about the OOBE phase of setup, see [How Configuration Passes Work](../p_adk_online/how-configuration-passes-work-win8.md).
 
  
 
@@ -34,9 +28,9 @@ This article provides a summary of the scenarios where a deployment might requir
 **Note**  
 Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](http://go.microsoft.com/fwlink/p/?LinkId=618117) or System Center Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:
 
--   [Deploy Windows 10 with the Microsoft Deployment Toolkit](837f009c-617e-4b3f-9028-2246067ee0fb)
+-   [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy/deploy-windows-81-with-the-microsoft-deployment-toolkit.md)
 
--   [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](eacd7b7b-dde0-423d-97cd-29bde9e8b363)
+-   [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy/deploy-windows-81-with-system-center-2012-r2-configuration-manager.md)
 
  
 

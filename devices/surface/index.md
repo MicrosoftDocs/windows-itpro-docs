@@ -1,7 +1,6 @@
 ---
 title: Surface
 description: .
-MSHAttr: PreferredLib /library
 ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
 ms.prod: W10
 ms.mktglfcycl: manage
@@ -50,14 +49,6 @@ This library provides guidance to help you deploy Windows on Surface devices, ke
 <tr class="odd">
 <td align="left"><p>[Ethernet adapters and Surface deployment](ethernet-adapters-and-surface-device-deployment.md)</p></td>
 <td align="left"><p>This article provides guidance and answers to help you perform a network deployment to Surface devices.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Install the Arc Touch Bluetooth Mouse app on a Surface device](install-the-arc-touch-bluetooth-mouse-app-on-a-surface-device.md)</p></td>
-<td align="left"><p>Find out about the Arc Touch Bluetooth Mouse app and how you can install it in a [Microsoft Deployment Toolkit (MDT)](http://go.microsoft.com/fwlink/p/?LinkId=618117) deployment share or on a single computer.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Install the Surface app](installing-the-surface-app.md)</p></td>
-<td align="left"><p>Find out how to install the Surface app on your computer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)</p></td>

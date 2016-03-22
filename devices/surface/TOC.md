@@ -4,8 +4,6 @@
 ## [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ## [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap--eap-fast--and-cisco-leap-on-surface-devices.md)
 ## [Ethernet adapters and Surface deployment](ethernet-adapters-and-surface-device-deployment.md)
-## [Install the Arc Touch Bluetooth Mouse app on a Surface device](install-the-arc-touch-bluetooth-mouse-app-on-a-surface-device.md)
-## [Install the Surface app](installing-the-surface-app.md)
 ## [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
 ## [Surface Data Eraser](microsoft-surface-data-eraser.md)
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)

@@ -1,9 +1,8 @@
 ---
 title: Microsoft Surface Diagnostic Toolkit
 description: Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device.
-MSHAttr: PreferredLib /library
 ms.assetid: FC4C3E76-3613-4A84-A384-85FE8809BEF1
-keywords: ["hardware device tool test component"]
+keywords: ["hardware, device, tool, test, component"]
 ms.prod: W8
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,15 +12,9 @@ author: brianlic-msft
 # Microsoft Surface Diagnostic Toolkit
 
 
-**In this article**
-
--   [The tests](#the-tests--)
--   [Command line](#command-line--)
--   [Localization](#localization)
-
 Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device.
 
-The [Microsoft Surface Diagnostic Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=618121) is a small, portable diagnostic tool that runs through a suite of tests to diagnose the hardware of Surface devices. The Microsoft Surface Diagnostic Toolkit executable file is less than 3 MB, which allows it to be easily distributed through email. It does not require installation, so it can be run directly from a USB stick or over the network. The Microsoft Surface Diagnostic Toolkit walks you through several tests of individual components including the touchscreen, cameras, and sensors.
+The [Microsoft Surface Diagnostic Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=618121) is a small, portable diagnostic tool that runs through a suite of tests to diagnose the hardware of Surface devices. The Microsoft Surface Diagnostic Toolkit executable file is less than 3 MB, which allows it to be distributed through email. It does not require installation, so it can be run directly from a USB stick or over the network. The Microsoft Surface Diagnostic Toolkit walks you through several tests of individual components including the touchscreen, cameras, and sensors.
 
 **Note**  
 A Surface device must boot into Windows to run the Microsoft Surface Diagnostic Toolkit. The Microsoft Surface Diagnostic Toolkit will run only on the following Surface devices:
@@ -42,6 +35,11 @@ A Surface device must boot into Windows to run the Microsoft Surface Diagnostic 
 
  
 
+**Note**  
+Security software and built-in security measures in many email applications and services will block executable files that are transferred through email. To email the Surface Diagnostic Toolkit, attach the .zip archive file as downloaded from the Surface Tools for IT page without extracting it first. You can also create a custom .zip archive that contains the .exe file. (For example, if you want to localize the text as described in the [Localization](#localization) section of this article.)
+
+ 
+
 Running the Microsoft Surface Diagnostic Toolkit is a hands-on activity. The test sequence includes several tests that require you to perform actions or observe the outcome of the test, and then click the applicable **Pass** or **Fail** button. Some tests require connectivity to external devices, like an external display. Other tests use the built in Windows troubleshooters. At the end of testing, a visual report of the test results is displayed and you are given the option to save a log file or copy the results to the clipboard.
 
 To run a full set of tests with the Microsoft Surface Diagnostic Toolkit, you should be prepared with the following items:
@@ -50,7 +48,7 @@ To run a full set of tests with the Microsoft Surface Diagnostic Toolkit, you sh
 
 -   A Bluetooth device that can be put into pairing mode
 
--   A MicroSD card
+-   A MicroSD or SD card that is compatible with your Surface device
 
 -   A Surface Pen
 
@@ -357,7 +355,7 @@ Many of the tests performed by the Microsoft Surface Diagnostic Toolkit require 
 
  
 
-### <a href="" id="exclude--"></a>Exclude
+### <a href="" id="exclude--"></a>exclude
 
 Use this argument to exclude specific tests.
 
@@ -451,17 +449,17 @@ See the following list for test names:
 
 -   WindowsUpdateCheckTest
 
-### ForcePlatformSupport
+### forceplatformsupport
 
 Use this argument to force tests to run when the make and model of the device is not properly detected by Windows. Surface Diagnostic Toolkit is intended to run only on Surface devices.
 
 Example:
 
 ```
-Surface_Diagnostic_Toolkit_1.0.60.0.exe ForcePlatformSupport
+Surface_Diagnostic_Toolkit_1.0.60.0.exe forceplatformsupport
 ```
 
-### Include
+### include
 
 Use this argument to include tests when you run Microsoft Surface Diagnostic Toolkit from the command line. Tests specified by the **Include** command will be run even if the test is not supported on the model of Surface device. In the following example, the Surface Book specific tests for the latch mechanism and discrete graphics will be run, even if the command is run on a Surface Pro 4 or other Surface model.
 
@@ -471,7 +469,7 @@ Example:
 Surface_Diagnostic_Toolkit_1.0.60.0.exe “include=DualGraphicsTest,FanTest,MuscleWireTest”
 ```
 
-### <a href="" id="logpath--"></a>Logpath
+### <a href="" id="logpath--"></a>logpath
 
 Use this argument to specify the path for the log file.
 
@@ -500,16 +498,16 @@ By default, the Microsoft Surface Diagnostic Toolkit is available in English onl
     <root />
     ```
 
-3.  Save the file as SurfaceDiagnosticTool.locale in the same location where the Microsoft Surface Diagnostic Toolkit executable file is stored.
+3.  Save the file as SurfaceDiagnosticTool\_v1.0.60.0.locale in the same location where the Microsoft Surface Diagnostic Toolkit executable file is stored.
 
-4.  Run the Microsoft Surface Diagnostic Toolkit executable file, Surface\_Diagnostic\_Toolkit\_v1.0.60.0.exe. The SurfaceDiagnosticTool.locale file will be populated with all of the text from the default prompts.
+4.  Run the Microsoft Surface Diagnostic Toolkit executable file, Surface\_Diagnostic\_Toolkit\_v1.0.60.0.exe. The SurfaceDiagnosticTool\_v1.0.60.0.locale file will be populated with all of the text from the default prompts.
 
-5.  Open the SurfaceDiagnosticTool.locale file in Notepad and change the text of each prompt to your custom or localized text.
+5.  Open the SurfaceDiagnosticTool\_v1.0.60.0.locale file in Notepad and change the text of each prompt to your custom or localized text.
 
-6.  Save the SurfaceDiagnosticTool.locale file.
+6.  Save the SurfaceDiagnosticTool\_v1.0.60.0.locale file.
 
 **Note**  
-The SurfaceDiganosticTool.locale file must be located in the same folder as the Microsoft Surface Diagnostic Toolkit executable to use the custom prompt text.
+The SurfaceDiganosticTool\_v1.0.60.0.locale file must be located in the same folder and have the same name other than the file extension as the Microsoft Surface Diagnostic Toolkit executable file to use the custom prompt text. The SurfaceDiganosticTool\_v1.0.60.0.locale is an .xml file and must use UTF-8 encoding.
 
  
 

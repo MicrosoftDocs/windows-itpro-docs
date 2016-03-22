@@ -1,9 +1,8 @@
 ---
 title: Ethernet adapters and Surface deployment
 description: This article provides guidance and answers to help you perform a network deployment to Surface devices.
-MSHAttr: PreferredLib /library
 ms.assetid: 5273C59E-6039-4E50-96B3-426BB38A64C0
-keywords: ["ethernet deploy removable network connectivity boot firmware device adapter PXE boot USB"]
+keywords: ["ethernet, deploy, removable, network, connectivity, boot, firmware, device, adapter, PXE boot, USB"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,12 +11,6 @@ author: brianlic-msft
 
 # Ethernet adapters and Surface deployment
 
-
-**In this article**
-
--   [Select an Ethernet adapter for Surface devices](#select-an-ethernet-adapter-for-surface-devices)
--   [Boot Surface devices from the network](#boot-surface-devices-from-the-network)
--   [Manage MAC addresses with removable Ethernet adapters](#manage-mac-addresses)
 
 This article provides guidance and answers to help you perform a network deployment to Surface devices.
 

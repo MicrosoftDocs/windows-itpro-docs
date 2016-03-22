@@ -1,9 +1,8 @@
 ---
 title: Download the latest firmware and drivers for Surface devices
 description: This article provides a list of the available downloads for Surface devices and links to download the drivers and firmware for your device.
-MSHAttr: PreferredLib /library
 ms.assetid: 7662BF68-8BF7-43F7-81F5-3580A770294A
-keywords: ["update Surface newest latest download firmware driver tablet hardware device"]
+keywords: ["update Surface, newest, latest, download, firmware, driver, tablet, hardware, device"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,22 +12,11 @@ author: brianlic-msft
 # Download the latest firmware and drivers for Surface devices
 
 
-**In this article**
-
--   [Surface Book](#surface-book)
--   [Surface Pro 4](#surface-pro-4)
--   [Surface Pro 3](#surface-pro-3-)
--   [Surface 3](#surface-3)
--   [Surface 3 LTE](#surface-3-lte)
--   [Surface Pro 2](#surface-pro-2)
--   [Surface Pro](#surface-pro)
--   [Surface RT](#surface-rt)
-
 This article provides a list of the available downloads for Surface devices and links to download the drivers and firmware for your device.
 
 As easy as it is to keep Surface device drivers and firmware up to date automatically with Windows Update, it is sometimes necessary to download and install updates manually, such as during a Windows deployment. For any situation where you need to install drivers and firmware separately from Windows Update, you can find the files available for download at the Microsoft Download Center.
 
-On the Microsoft Download Center page for your device, you will find several files available. These files allow you to deploy drivers and firmware in various ways. You can read more about the different deployment methods for Surface drivers and firmware in [Manage Surface driver and firmware updates](CD1219BA-8EDE-4BC8-BEEF-99B50C211D73).
+On the Microsoft Download Center page for your device, you will find several files available. These files allow you to deploy drivers and firmware in various ways. You can read more about the different deployment methods for Surface drivers and firmware in [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md).
 
 Driver and firmware updates for Surface devices are released in one of two ways:
 
