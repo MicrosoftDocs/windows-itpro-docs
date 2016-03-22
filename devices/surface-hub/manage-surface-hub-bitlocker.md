@@ -1,12 +1,12 @@
 ---
-title: Save your BitLocker key - Microsoft Surface Hub
+title: Save your BitLocker key (Surface Hub)
 description: Every Microsoft Surface Hub is automatically set up with BitLocker drive encryption software. Microsoft strongly recommends that you make sure you back up your BitLocker recovery keys.
 ms.assetid: E11E4AB6-B13E-4ACA-BCE1-4EDC9987E4F2
 keywords: ["Surface Hub", "BitLocker", "Bitlocker recovery keys"]
 author: TrudyHa
 ---
 
-# Save your BitLocker key - Microsoft Surface Hub
+# Save your BitLocker key (Surface Hub)
 
 
 Every Microsoft Surface Hub is automatically set up with BitLocker drive encryption software. Microsoft strongly recommends that you make sure you back up your BitLocker recovery keys.

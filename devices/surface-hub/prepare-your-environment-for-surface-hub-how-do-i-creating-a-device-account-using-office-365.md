@@ -1,12 +1,12 @@
 ---
-title: Create a device account using UI - Microsoft Surface Hub
+title: Create a device account using UI (Surface Hub)
 description: If you prefer to use a graphical user interface, you can create a device account for your Microsoft Surface Hub with either the Office 365 UI or the Exchange Admin Center.
 ms.assetid: D11BCDC4-DABA-4B9A-9ECB-58E02CC8218C
 keywords: ["create device account", "Office 365 UI", "Exchange Admin center", "Office 365 admin center", "Skype for Business", "mobile device mailbox policy"]
 author: TrudyHa
 ---
 
-# Create a device account using UI - Microsoft Surface Hub
+# Create a device account using UI (Surface Hub)
 
 
 If you prefer to use a graphical user interface, you can create a device account for your Microsoft Surface Hub with either the [Office 365 UI](#create-device-acct-o365) or the [Exchange Admin Center](#create-device-acct-eac).

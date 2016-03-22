@@ -1,12 +1,12 @@
 ---
-title: Appendix PowerShell - Microsoft Surface Hub
+title: Appendix PowerShell (Surface Hub)
 description: PowerShell scripts to help set up and manage your Microsoft Surface Hub .
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 keywords: ["PowerShell", "set up Surface Hub", "manage Surface Hub"]
 author: TrudyHa
 ---
 
-# Appendix: PowerShell - Microsoft Surface Hub
+# Appendix: PowerShell (Surface Hub)
 
 
 PowerShell scripts to help set up and manage your Microsoft Surface Hub .

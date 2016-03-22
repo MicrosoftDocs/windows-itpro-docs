@@ -1,12 +1,12 @@
 ---
-title: Manage settings with a local admin account
+title: Manage settings with a local admin account (Surface Hub)
 description: A local admin account will be set up on every Microsoft Surface Hub as part of the first run program. The only way to change the local admin options that you chose at that time is to reset the device.
 ms.assetid: B4B3668B-985D-427E-8495-E30ABEECA679
 keywords: ["local admin account", "Surface Hub", "change local admin options"]
 author: TrudyHa
 ---
 
-# Manage settings with a local admin account
+# Manage settings with a local admin account (Surface Hub)
 
 
 A local admin account will be set up on every Microsoft Surface Hub as part of the first run program. The only way to change the local admin options that you chose at that time is to reset the device.

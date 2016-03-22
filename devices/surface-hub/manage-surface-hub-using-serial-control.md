@@ -1,12 +1,12 @@
 ---
-title: Using a room control system
+title: Using a room control system (Surface Hub)
 description: Room control systems can be used with your Microsoft Surface Hub.
 ms.assetid: DC365002-6B35-45C5-A2B8-3E1EB0CB8B50
 keywords: ["room control system", "Surface Hub"]
 author: TrudyHa
 ---
 
-# Using a room control system
+# Using a room control system (Surface Hub)
 
 
 Room control systems can be used with your Microsoft Surface Hub.

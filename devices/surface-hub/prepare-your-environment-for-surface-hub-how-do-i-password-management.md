@@ -1,12 +1,12 @@
 ---
-title: Password management - Microsoft Surface Hub
+title: Password management (Surface Hub)
 description: Every Microsoft Surface Hub device account requires a password to authenticate and enable features on the device.
 ms.assetid: 0FBFB546-05F0-430E-905E-87111046E4B8
 keywords: ["password", "password management", "password rotation", "device account"]
 author: TrudyHa
 ---
 
-# Password management - Microsoft Surface Hub
+# Password management (Surface Hub)
 
 
 Every Microsoft Surface Hub device account requires a password to authenticate and enable features on the device. For security reasons, you may want to change ( or "rotate") this password. However, if the device account’s password changes, the device account on the Surface Hub will be expired, and all features that depend on the device account will be disabled. You can update the device account’s password on the Surface Hub from the Settings app to re-enable these features.

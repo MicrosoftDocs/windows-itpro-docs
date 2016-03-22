@@ -1,12 +1,12 @@
 ---
-title: Microsoft Exchange properties - Microsoft Surface Hub
+title: Microsoft Exchange properties (Surface Hub)
 description: Some Microsoft Exchange properties of the device account must be set to particular values to have the best meeting experience on Microsoft Surface Hub.
 ms.assetid: 3E84393B-C425-45BF-95A6-D6502BA1BF29
 keywords: ["Microsoft Exchange properties", "device account", "Surface Hub", "Windows PowerShell cmdlet"]
 author: TrudyHa
 ---
 
-# Microsoft Exchange properties - Microsoft Surface Hub
+# Microsoft Exchange properties (Surface Hub)
 
 
 Some Microsoft Exchange properties of the device account must be set to particular values to have the best meeting experience on Microsoft Surface Hub. The following table lists various Exchange properties based on PowerShell cmdlet parameters, their purpose, and the values they should be set to.

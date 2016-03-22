@@ -1,12 +1,12 @@
 ---
-title: Device reset
+title: Device reset (Surface Hub)
 description: You may wish to reset your Microsoft Surface Hub.
 ms.assetid: 44E82EEE-1905-464B-A758-C2A1463909FF
 keywords: ["reset Surface Hub"]
 author: TrudyHa
 ---
 
-# Device reset
+# Device reset (Surface Hub)
 
 
 You may wish to reset your Microsoft Surface Hub.
@@ -19,11 +19,11 @@ Typical reasons for a reset include:
 
 Initiating a reset will return the device to the last cumulative Windows update, and remove all local user files and configuration, including:
 
--   the device account
--   any MDM enrollment
--   domain join or Azure AD join information
--   any local admins on the device
--   any configurations from MDM or the Settings app.
+-   The device account
+-   MDM enrollment
+-   Domain join or Azure AD join information
+-   Local admins on the device
+-   Configurations from MDM or the Settings app.
 
 After the reset, you'll be taken through the [first run program](set-up-your-surface-hub--configure--first-run-program.md) again.
 
