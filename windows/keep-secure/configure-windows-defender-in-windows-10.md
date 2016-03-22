@@ -211,7 +211,7 @@ For more information on scheduling updates, see [Configure definition updates](h
 
 [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
 
-[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-for-windows-10.md)
+[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
 
  
 
