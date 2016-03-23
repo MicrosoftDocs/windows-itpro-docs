@@ -26,7 +26,7 @@ Take advantage of Windows Defender by configuring the settings and definitions u
 -   Microsoft Active Directory *Group Policy* for settings
 -   Windows Server Update Services (WSUS) for definitions
 
-Windows Defender provides the most protection when cloud-based protection is enabled. Learn how to enable cloud-based protection in [Configure Windows Defender in Windows 10](configure-windows-defender-for-windows-10.md).
+Windows Defender provides the most protection when cloud-based protection is enabled. Learn how to enable cloud-based protection in [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md).
 
 **Note**  System Center 2012 R2 Configuration Manager SP1, System Center 2012 Configuration Manager SP2, and Microsoft Intune can provide centralized management of Windows Defender, including:
 -   Settings management
@@ -80,7 +80,7 @@ For more information about what's new in Windows Defender in Windows 10, see [W
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Configure Windows Defender in Windows 10](configure-windows-defender-for-windows-10.md)</p></td>
+<td align="left"><p>[Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)</p></td>
 <td align="left"><p>IT professionals can configure definition updates and cloud-based protection in Windows Defender in Windows 10 through Active Directory and WSUS.</p></td>
 </tr>
 <tr class="odd">
