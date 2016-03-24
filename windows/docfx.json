@@ -15,7 +15,7 @@
     ],
     "globalMetadata": {
         "ROBOTS": "INDEX, FOLLOW",
-		"breadcrumb_path": "/itpro/windows/toc.json"
+		"breadcrumb_path": "./toc.yml"
     },
     "externalReference": [
     ],
