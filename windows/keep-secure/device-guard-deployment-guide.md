@@ -327,7 +327,7 @@ Microsoft recommends that you test-enable this feature on a group of test machin
 <a href="" id="bkmk-depsecureboot"></a>
 1.  To create a new GPO, right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.
 
-    ![figure 2](images/dg-fig2-createou.png)
+![figure 2](images/dg-fig2-createou.png)
 
     Figure 2. Create a new OU-linked GPO
 
