@@ -749,12 +749,10 @@ To deploy a catalog file with Group Policy:
 1.  From either a domain controller or a client PC that has Remote Server Administration Tools (RSAT) installed, open the Group Policy Management Console (GPMC) by running **GPMC.MSC** or by searching for Group Policy Management.
 
 2.  Create a new GPO: right-click the DG Enabled PCs OU, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 13.<p>**Note**<br>The DG Enabled PCs OU is just an example of where to link the test GPO that you created in this section. You can use any OU name. Also, security group filtering is an option when you consider policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section.<p>
-![figure 13](images/dg-fig13-createnewgpo.png)<p>
-Figure 13. Create a new GPO
+![figure 13](images/dg-fig13-createnewgpo.png)<br>Figure 13. Create a new GPO
 
-3.  Name the new GPO **Contoso DG Catalog File GPO Test**.
-
-    This example uses *Contoso DG Catalog File GPO Test* as the name of the GPO. You can choose any name you prefer for this example.
+3.  Name the new GPO **Contoso DG Catalog File GPO Test**.<p>
+This example uses *Contoso DG Catalog File GPO Test* as the name of the GPO. You can choose any name you prefer for this example.
 
 4.  Open the Group Policy Management Editor: right-click the new GPO, and then click **Edit**.
 
