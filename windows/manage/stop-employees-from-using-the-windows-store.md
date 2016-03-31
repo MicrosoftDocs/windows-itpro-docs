@@ -82,7 +82,7 @@ When your MDM tool supports Windows Store for Business, the MDM can use these CS
 
 -   [EnterpriseAssignedAccess](https://msdn.microsoft.com/library/windows/hardware/mt157024.aspx) (Windows 10 Mobile, only)
 
-For more information, see [Configure an MDM provider](configure-mdm-provider.md).
+For more information, see [Configure an MDM provider](configure-mdm-provider-windows-store-for-business.md).
 ## Related topics
 
 

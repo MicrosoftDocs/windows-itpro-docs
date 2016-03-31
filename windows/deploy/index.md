@@ -37,16 +37,16 @@ Learn about deploying Windows 10 for IT professionals.
 <td align="left"><p>To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md)</p></td>
-<td align="left"><p>This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 1 specifically.</p></td>
+<td align="left"><p>[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)</p></td>
+<td align="left"><p>This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 2 specifically.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-81-with-system-center-2012-r2-configuration-manager.md)</p></td>
-<td align="left"><p>If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or, more specifically, MDT 2013 Update 1.</p></td>
+<td align="left"><p>[Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)</p></td>
+<td align="left"><p>If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or, more specifically, MDT 2013 Update 2.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)</p></td>
-<td align="left"><p>The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Deployment Toolkit (MDT) 2013 Update 1 task sequence to completely automate the process.</p></td>
+<td align="left"><p>The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Deployment Toolkit (MDT) 2013 Update 2 task sequence to completely automate the process.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Upgrade to Windows 10 with System Center Configuration Manager](upgrade-to-windows-10-with-system-center-configuraton-manager.md)</p></td>
@@ -57,8 +57,8 @@ Learn about deploying Windows 10 for IT professionals.
 <td align="left"><p>With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Deploy Windows To Go in your organization](deploy-windows-to-go-in-your-organization-small-scenario.md)</p></td>
-<td align="left"><p>This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you have reviewed the topics [Windows To Go: feature overview](../plan/windows-to-go-feature-overview-scenario.md) and [Prepare your organization for Windows To Go](../plan/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.</p></td>
+<td align="left"><p>[Deploy Windows To Go in your organization](deploy-windows-to-go.md)</p></td>
+<td align="left"><p>This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you have reviewed the topics [Windows To Go: feature overview](../plan/windows-to-go-overview.md) and [Prepare your organization for Windows To Go](../plan/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Update Windows 10 images with provisioning packages](update-windows-10-images-with-provisioning-packages.md)</p></td>

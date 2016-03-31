@@ -67,7 +67,7 @@ While the initial Windows 10 release includes a variety of provisioning setting
 ## Traditional deployment
 
 
-New versions of Windows have typically been deployed by organizations using an image-based process built on top of tools provided in the [Windows Assessment and Deployment Kit](windows-adk-scenarios-for-it-pros.md), Windows Deployment Services, the [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md), and [System Center Configuration Manager](deploy-windows-81-with-system-center-2012-r2-configuration-manager.md).
+New versions of Windows have typically been deployed by organizations using an image-based process built on top of tools provided in the [Windows Assessment and Deployment Kit](windows-adk-scenarios-for-it-pros.md), Windows Deployment Services, the [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md), and [System Center Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
 
 With the release of Windows 10, all of these tools are being updated to fully support Windows 10. Although newer scenarios such as in-place upgrade and dynamic provisioning may reduce the need for traditional deployment capabilities in some organizations, these traditional methods remain important and will continue to be available to organizations that need them.
 
@@ -127,7 +127,7 @@ The deployment process for the replace scenario is as follows:
 
 [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=620230)
 
-[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md)
+[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 
 [Windows setup technical reference](http://go.microsoft.com/fwlink/p/?LinkId=619357)
 

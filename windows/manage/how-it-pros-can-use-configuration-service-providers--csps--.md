@@ -28,7 +28,7 @@ The explanation of CSPs and CSP documentation also apply to Windows Mobile 5, Wi
 ## What is a CSP?
 
 
-A CSP is an interface in the operating system between configuration settings specified in a provisioning document and configuration settings on the device. Some of these settings are configurable and some are read-only.
+A CSP is an interface in the client operating system between configuration settings specified in a provisioning document and configuration settings on the device. Their function is similar to that of Group Policy client-side extensions in that they provide an interface to read, set, modify, or delete configuration settings for a given feature. Typically, these settings map to registry keys, files or permissions. Some of these settings are configurable and some are read-only.
 
 Starting in Windows Mobile 5.0, CSPs were used to manage Windows mobile devices. In the Windows 10 platform, the management approach for both desktop and mobile devices converges, taking advantage of the same CSPs to configure and manage all devices running Windows 10.
 
@@ -38,6 +38,18 @@ CSPs are behind many of the management tasks and policies for Windows 10 in Mic
 
 ![how intune maps to csp](images/policytocsp.png)
 
+CSPs receive configuration policies in the XML-based SyncML format pushed to it from an MDM-compliant management server such as Microsoft Intune. Traditional enterprise management systems, such as System Center Configuration Manager, can also target CSPs by using a client-side WMI-to-CSP bridge.
+
+### Synchronization Markup Language (SyncML)
+
+The Open Mobile Alliance Device Management (OMA-DM) protocol uses the XML-based Synchronization Markup Language (SyncML) for data exchange between compliant servers and clients. SyncML offers an open standard to use as an alternative to vendor-specific management solutions (such as WMI). The value for enterprises adopting industry standard management protocols is that it allows the management of a broader set of vendor devices using a single platform (such as Microsoft Intune). Device policies, including VPN connection profiles, are delivered to client devices formatted as in SyncML. The target CSP reads this information and applies the necessary configurations.
+
+### The WMI-to-CSP Bridge
+
+The WMI-to-CSP Bridge is a component allowing configuration of Windows 10 CSPs via scripts and traditional enterprise management software such as Configuration Manager using Windows Management Instrumentation (WMI). The bridge is responsible for reading WMI commands and through a component called the common device configurator pass them to a CSP for application on the device.
+
+[Learn how to use the WMI Bridge Provider with PowerShell.](http://go.microsoft.com/fwlink/p/?LinkId=761090)
+
 ## Why should you learn about CSPs?
 
 
@@ -45,7 +57,7 @@ Generally, enterprises rely on Group Policy or MDM to configure and manage devic
 
 In addition, you may have unmanaged devices, or a large number of devices that you want to configure before enrolling them in management, or you want to apply custom settings that aren't available through your MDM service. The [CSP documentation](#bkmk-csp-doc) can help you understand the settings that can be configured or queried.
 
-In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](../index.md) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](manage-cortana-in-your-enterprise.md) which links to the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
+In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](../index.md) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)) which links to the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
 
 ### CSPs in Windows Imaging and Configuration Designer (ICD)
 
@@ -76,11 +88,15 @@ The [main CSP topic](http://go.microsoft.com/fwlink/p/?LinkId=717390) tells you 
 
 ![csp per windows edition](images/csptable.png)
 
-The documentation for each CSP follows the same structure. After an introduction that explains the purpose of the CSP, a diagram shows the parts of the CSP in tree format. The following example shows the diagram for the [AssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=626608). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes and rectangular elements are settings or policies for which a value must be supplied.
+The documentation for each CSP follows the same structure. After an introduction that explains the purpose of the CSP, a diagram shows the parts of the CSP in tree format.
+
+The full path to a specific configuration setting is represented by its Open Mobile Alliance - Uniform Resource Identifier (OMA-URI). The URI is relative to the devices’ root node (MSFT, for example). Features supported by a particular CSP can be set by addressing the complete OMA-URI path.
+
+The following example shows the diagram for the [AssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=626608). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes and rectangular elements are settings or policies for which a value must be supplied.
 
 ![assigned access csp tree](images/provisioning-csp-assignedaccess.png)
 
-The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following path, you can see it uses the [AssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=626608).
+The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following OMS-URI path for the kiosk mode app settings, you can see it uses the [AssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=626608).
 
 ```XML
 ./Vendor/MSFT/AssignedAccess/KioskModeApp

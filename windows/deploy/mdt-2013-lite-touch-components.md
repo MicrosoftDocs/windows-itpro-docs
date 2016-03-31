@@ -1,6 +1,6 @@
 ---
-title: MDT 2013 Update 1 Lite Touch components (Windows 10)
-description: This topic provides an overview of the features in the Microsoft Deployment Toolkit (MDT) 2013 Update 1 that support Lite Touch Installation (LTI) for Windows 10.
+title: MDT 2013 Update 2 Lite Touch components (Windows 10)
+description: This topic provides an overview of the features in the Microsoft Deployment Toolkit (MDT) 2013 Update 2 that support Lite Touch Installation (LTI) for Windows 10.
 ms.assetid: 7d6fc159-e338-439e-a2e6-1778d0da9089
 keywords: ["deploy, install, deployment, boot, log, monitor"]
 ms.prod: W10
@@ -9,14 +9,14 @@ ms.sitesec: library
 author: CFaw
 ---
 
-# MDT 2013 Update 1 Lite Touch components
+# MDT 2013 Update 2 Lite Touch components
 
 
 **Applies to**
 
 -   Windows 10
 
-This topic provides an overview of the features in the Microsoft Deployment Toolkit (MDT) 2013 Update 1 that support Lite Touch Installation (LTI) for Windows 10. An LTI deployment strategy requires very little infrastructure or user interaction, and can be used to deploy an operating system from a network share or from a physical media, such as a USB flash drive or disc.
+This topic provides an overview of the features in the Microsoft Deployment Toolkit (MDT) 2013 Update 2 that support Lite Touch Installation (LTI) for Windows 10. An LTI deployment strategy requires very little infrastructure or user interaction, and can be used to deploy an operating system from a network share or from a physical media, such as a USB flash drive or disc.
 
 When deploying the Windows operating system using MDT, most of the administration and configuration is done through the Deployment Workbench, but you also can perform many of the tasks using Windows PowerShell. The easiest way to find out how to use PowerShell in MDT is to use the Deployment Workbench to perform an operation and at the end of that task, click View Script. That will give you the PowerShell command.
 
@@ -153,9 +153,9 @@ On the deployment share, you also can enable monitoring. After you enable monito
 ## Related topics
 
 
-[Key features in MDT 2013 Update 1](key-features-in-mdt-2013.md)
+[Key features in MDT 2013 Update 2](key-features-in-mdt-2013.md)
 
-[Prepare for deployment with MDT 2013 Update 1](prepare-for-deployment-with-mdt-2013.md)
+[Prepare for deployment with MDT 2013 Update 2](prepare-for-windows-deployment-with-mdt-2013.md)
 
  
 

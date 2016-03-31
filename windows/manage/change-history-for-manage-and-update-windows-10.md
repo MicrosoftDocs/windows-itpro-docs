@@ -29,20 +29,24 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left">[Application development for Windows as a service](application-development-for-windows-as-a-service.md)</td>
+<td align="left">New</td>
+</tr>
+<tr class="even">
 <td align="left">[Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)</td>
 <td align="left"><p>New</p></td>
 </tr>
-<tr class="even">
-<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-your-enterprise.md)</td>
+<tr class="odd">
+<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md))</td>
 <td align="left"><p>Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration.</p></td>
+</tr>
+<tr class="even">
+<td align="left">[Configure telemetry in your organization](../manage/configure-telemetry-in-your-organization.md)</td>
+<td align="left"><p>Updated to include Windows Server 2016 Technical Preview.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">[Disconnect from Microsoft and configure privacy settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
 <td align="left"><p>Removed the telemetry content into its own topic.</p></td>
-</tr>
-<tr class="even">
-<td align="left">[Configure telemetry in your organization](configure-telemetry-in-your-organization.md)</td>
-<td align="left"><p>Updated to include Windows Server 2016 Technical Preview.</p></td>
 </tr>
 </tbody>
 </table>
@@ -110,11 +114,11 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-your-enterprise.md)</td>
+<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md))</td>
 <td align="left">New</td>
 </tr>
 <tr class="even">
-<td align="left">[Manage Wi-Fi Sense in your company](manage-wi-fi-sense-in-your-company.md)</td>
+<td align="left">[Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md))</td>
 <td align="left">New</td>
 </tr>
 <tr class="odd">
@@ -140,7 +144,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)                                                                         | New         |
 | [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md)                                  | New         |
 | [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)                      | New         |
-| [Windows Hello biometrics in the enterprise](../keep-secure/windows-hello-biometrics-in-the-enterprise.md)                                       | New         |
+| [Windows Hello biometrics in the enterprise](../keep-secure/windows-hello-in-enterprise.md))                                       | New         |
 | [Windows Store for Business](windows-store-for-business.md) (multiple topics)                                                                   | New         |
 | [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)                                             | Updated     |
 | [Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)                                 | Updated     |

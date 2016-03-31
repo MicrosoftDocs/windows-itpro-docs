@@ -28,7 +28,7 @@ The following are prerequisites or recommendations to deploying policies:
 
 -   Understand the capabilities of AppLocker:
 
-    -   [AppLocker](applocker-overview-server.md)
+    -   [AppLocker](applocker-overview.md)
 
 -   Document your application control policy deployment plan by addressing these tasks:
 

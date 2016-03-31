@@ -50,7 +50,7 @@ In the end, many customers will find that pre-boot authentication improves secur
 
 -   [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md)
 
--   [BitLocker overview](bitlocker-overview-roletech-overview.md)
+-   [BitLocker overview](bitlocker-overview.md)
 
  
 

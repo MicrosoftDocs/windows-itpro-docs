@@ -1,5 +1,5 @@
 ---
-title: Integrate Configuration Manager with MDT 2013 Update 1 (Windows 10)
+title: Integrate Configuration Manager with MDT 2013 Update 2 (Windows 10)
 description: This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit with Microsoft System Center 2012 R2 Configuration Manager SP1 when you deploy a new or updated version of the Windows operating system.
 ms.assetid: 3bd1cf92-81e5-48dc-b874-0f5d9472e5a5
 keywords: ["deploy, image, customize, task sequence"]
@@ -9,7 +9,7 @@ ms.sitesec: library
 author: CFaw
 ---
 
-# Integrate Configuration Manager with MDT 2013 Update 1
+# Integrate Configuration Manager with MDT 2013 Update 2
 
 
 **Applies to**
@@ -18,12 +18,12 @@ author: CFaw
 
 This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit with Microsoft System Center 2012 R2 Configuration Manager SP1 when you deploy a new or updated version of the Windows operating system.
 
-MDT 2013 is a free, supported download from Microsoft that adds approximately 280 enhancements to Windows operating system deployment with System Center 2012 R2 Configuration Manager SP1. It is, therefore, recommended that you utilize MDT when deploying the Windows operating system with Configuration Manager SP1. In addition to integrating MDT with Configuration Manager, we also recommend using MDT Lite Touch to create the Windows 10 reference images used in Configuration Manager. For more information on how to create a reference image, see [Create a Windows 10 reference image](create-a-windows-81-reference-image.md).
+MDT 2013 is a free, supported download from Microsoft that adds approximately 280 enhancements to Windows operating system deployment with System Center 2012 R2 Configuration Manager SP1. It is, therefore, recommended that you utilize MDT when deploying the Windows operating system with Configuration Manager SP1. In addition to integrating MDT with Configuration Manager, we also recommend using MDT Lite Touch to create the Windows 10 reference images used in Configuration Manager. For more information on how to create a reference image, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
-## <a href="" id="sec01"></a>Why integrate MDT 2013 Update 1 with Configuration Manager
+## <a href="" id="sec01"></a>Why integrate MDT 2013 Update 2 with Configuration Manager
 
 
-As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT 2013 Update 1 adds to Configuration Manager.
+As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT 2013 Update 2 adds to Configuration Manager.
 
 ### MDT enables dynamic deployment
 
@@ -108,23 +108,23 @@ You can create reference images for Configuration Manager in Configuration Manag
 ## Related topics
 
 
-[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-81-with-configuration-manager.md)
+[Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 
-[Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-50-boot-image-with-configuration-manager.md)
+[Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
 
-[Add a Windows 10 operating system image using Configuration Manager](add-a-windows-81-operating-system-image-using-configuration-manager.md)
+[Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)
 
-[Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-81-using-configuration-manager.md)
+[Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
 
-[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-81-deployment-with-windows-pe-using-configuration-manager.md)
+[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
 
 [Create a task sequence with Configuration Manager and MDT](create-a-task-sequence-with-configuration-manager-and-mdt.md)
 
-[Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-81-using-pxe-and-configuration-manager.md)
+[Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)
 
-[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-sp1-client-with-windows-81-using-configuration-manager.md)
+[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
-[Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-sp1-client-with-windows-81-using-configuration-manager.md)
+[Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 
  
 

@@ -60,7 +60,7 @@ author: CFaw
 
 [User State Migration Tool (USMT) How-to topics](user-state-migration-tool--usmt--how-to-topics.md)
 
-[User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--troubleshooting.md)
+[User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--guidance-and-best-practices-edp.md))
 
  
 

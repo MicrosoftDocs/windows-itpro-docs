@@ -475,9 +475,9 @@ The following steps can be used to configure Network Unlock on these older syste
 ## See also
 
 
--   [BitLocker overview](bitlocker-overview-roletech-overview.md)
+-   [BitLocker overview](bitlocker-overview.md)
 
--   [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions--faq-.md)
+-   [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
 
 -   [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 

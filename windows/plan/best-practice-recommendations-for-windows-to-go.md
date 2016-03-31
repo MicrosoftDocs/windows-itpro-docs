@@ -35,7 +35,7 @@ Additionally, we recommend that when you plan your deployment you should also pl
 ## More information
 
 
-[Windows To Go: feature overview](windows-to-go-feature-overview-scenario.md)
+[Windows To Go: feature overview](windows-to-go-overview.md)
 
 [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)
 

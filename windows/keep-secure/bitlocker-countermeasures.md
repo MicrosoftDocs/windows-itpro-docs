@@ -37,7 +37,7 @@ A TPM is a microchip designed to provide basic security-related functions, prima
 
 By binding the BitLocker encryption key with the TPM and properly configuring the device, it’s nearly impossible for an attacker to gain access to the BitLocker-encrypted data without obtaining an authorized user’s credentials. Therefore, computers with a TPM can provide a high level of protection against attacks that attempt to directly retrieve the BitLocker encryption key.
 
-For more info about TPM, see [Trusted Platform Module](trusted-platform-module-technology-overview.md).
+For more info about TPM, see [Trusted Platform Module](trusted-platform-module-overview.md).
 
 **UEFI and Secure Boot**
 
@@ -160,7 +160,7 @@ Windows InstantGo–certified devices do not have DMA ports, eliminating the ris
 
 -   [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md)
 
--   [BitLocker overview](bitlocker-overview-roletech-overview.md)
+-   [BitLocker overview](bitlocker-overview.md)
 
  
 

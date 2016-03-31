@@ -18,7 +18,7 @@ author: jdeckerMS
 
 Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps. The result is similar to [a kiosk device](set-up-a-device-for-anyone-to-use.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.
 
-You can restrict users to a specific set of apps on a device running Windows 10 Enterprise or Windows 10 Education by using [AppLocker](../keep-secure/applocker-overview-server.md). AppLocker rules specify which apps are allowed to run on the device.
+You can restrict users to a specific set of apps on a device running Windows 10 Enterprise or Windows 10 Education by using [AppLocker](../keep-secure/applocker-overview.md). AppLocker rules specify which apps are allowed to run on the device.
 
 AppLocker rules are organized into collections based on file format. If no AppLocker rules for a specific rule collection exist, all files with that file format are allowed to run. However, when an AppLocker rule for a specific rule collection is created, only the files explicitly allowed in a rule are permitted to run. For more information, see [How AppLocker works](../keep-secure/how-applocker-works-techref.md).
 

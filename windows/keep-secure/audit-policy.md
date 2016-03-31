@@ -44,7 +44,7 @@ The basic audit policy settings under **Security Settings\\Local Policies\\Audit
 
 [Configure security policy settings](how-to-configure-security-policy-settings.md)
 
-[Security auditing](security-auditing-overview-glbl.md)
+[Security auditing](security-auditing-overview.md)
 
  
 

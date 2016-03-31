@@ -87,7 +87,7 @@ AppLocker events are listed in either the **EXE and DLL** log, the **MSI and Scr
 ## Related topics
 
 
-[AppLocker](applocker-overview-server.md)
+[AppLocker](applocker-overview.md)
 
  
 

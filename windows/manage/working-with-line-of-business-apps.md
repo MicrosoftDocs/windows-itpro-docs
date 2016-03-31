@@ -91,7 +91,7 @@ After an ISV submits the LOB app for your company, the Store for Businessadmin n
 
 After you add the app to your inventory, you can choose how to distribute the app. For more information, see:
 
--   [Distribute apps to your employees from the Windows Store for Business](distribute-apps-to-your-employees-from-the-windows-store-for-business.md)
+-   [Distribute apps to your employees from the Windows Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md)
 
 -   [Distribute apps from your private store](distribute-apps-from-your-private-store.md)
 

@@ -29,9 +29,9 @@ Figure 1. The machines used in this topic.
 
 -   [Configure MDT for UserExit scripts](configure-mdt-2013-for-userexit-scripts.md)
 
--   [Simulate a Windows 10 deployment in a test environment](simulate-a-windows-81-deployment-in-a-test-environment.md)
+-   [Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
 
--   [Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-81-deployment-information.md)
+-   [Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
 
 -   [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt-2013.md)
 
@@ -42,17 +42,17 @@ Figure 1. The machines used in this topic.
 ## Related topics
 
 
-[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit--mdt-.md)
+[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
 
-[Create a Windows 10 reference image](create-a-windows-81-reference-image.md)
+[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
 
-[Deploy a Windows 10 image using MDT 2013 Update 1](deploy-a-windows-81-image-using-mdt-2013.md)
+[Deploy a Windows 10 image using MDT 2013 Update 2](deploy-a-windows-10-image-using-mdt.md)
 
-[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-81-deployment.md)
+[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
 
-[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-81.md)
+[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
 
-[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-81-computer.md)
+[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
 
  
 

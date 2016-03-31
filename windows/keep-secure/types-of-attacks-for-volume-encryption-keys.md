@@ -148,7 +148,7 @@ The BitLocker pre-boot authentication feature can successfully mitigate memory r
 
 -   [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md)
 
--   [BitLocker overview](bitlocker-overview-roletech-overview.md)
+-   [BitLocker overview](bitlocker-overview.md)
 
  
 

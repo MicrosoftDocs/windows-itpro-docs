@@ -20,13 +20,13 @@ Describes the best practices, location, values, policy management, and security 
 ## Reference
 
 
-Unlocking a locked device requires logon information. For domain accounts, the **Interactive logon: Require Domain Controller authentication to unlock workstation** policy setting determines whether it is necessary to contact a domain controller to unlock a device. Enabling this policy setting requires a domain controller to authenticate the domain account that is being used to unlock the device. Disabling this policy setting allows a user to unlock the device without the computer verifying the logon information with a domain controller. However, if [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache--in-case-domain-controller-is-not-available.md) is set to a value greater than zero, the user's cached credentials will be used to unlock the system.
+Unlocking a locked device requires logon information. For domain accounts, the **Interactive logon: Require Domain Controller authentication to unlock workstation** policy setting determines whether it is necessary to contact a domain controller to unlock a device. Enabling this policy setting requires a domain controller to authenticate the domain account that is being used to unlock the device. Disabling this policy setting allows a user to unlock the device without the computer verifying the logon information with a domain controller. However, if [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available.md) is set to a value greater than zero, the user's cached credentials will be used to unlock the system.
 
 The device caches (locally in memory) the credentials of any users who have been authenticated. The device uses these cached credentials to authenticate anyone who attempts to unlock the console.
 
 When cached credentials are used, any changes that have recently been made to the account (such as user rights assignments, account lockout, or the account being disabled) are not considered or applied after this authentication process. This means not only that user rights are not updated, but more importantly that disabled accounts are still able to unlock the console of the system.
 
-It is advisable to set **Interactive logon: Require Domain Controller authentication to unlock workstation** to Enabled and set [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache--in-case-domain-controller-is-not-available.md) to 0. When the console of a device is locked by a user or automatically by a screen saver time-out, the console can only be unlocked if the user is able to re-authenticate to the domain controller. If no domain controller is available, users cannot unlock their devices.
+It is advisable to set **Interactive logon: Require Domain Controller authentication to unlock workstation** to Enabled and set [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available.md) to 0. When the console of a device is locked by a user or automatically by a screen saver time-out, the console can only be unlocked if the user is able to re-authenticate to the domain controller. If no domain controller is available, users cannot unlock their devices.
 
 ### Possible values
 
@@ -38,7 +38,7 @@ It is advisable to set **Interactive logon: Require Domain Controller authentica
 
 ### Best practices
 
--   Set **Interactive logon: Require Domain Controller authentication to unlock workstation** to Enabled and set [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache--in-case-domain-controller-is-not-available.md) to 0. When the console of a device is locked by a user or automatically by a screen saver time-out, the console can only be unlocked if the user is able to re-authenticate to the domain controller. If no domain controller is available, users cannot unlock their devices.
+-   Set **Interactive logon: Require Domain Controller authentication to unlock workstation** to Enabled and set [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available.md) to 0. When the console of a device is locked by a user or automatically by a screen saver time-out, the console can only be unlocked if the user is able to re-authenticate to the domain controller. If no domain controller is available, users cannot unlock their devices.
 
 ### Location
 
@@ -117,11 +117,11 @@ By default, the device caches locally in memory the credentials of any users who
 
 ### Countermeasure
 
-Configure the **Interactive logon: Require Domain Controller authentication to unlock workstation** setting to Enabled and configure the [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache--in-case-domain-controller-is-not-available.md) setting to 0.
+Configure the **Interactive logon: Require Domain Controller authentication to unlock workstation** setting to Enabled and configure the [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available.md) setting to 0.
 
 ### Potential impact
 
-When the console on a device is locked by a user or automatically by a screen-saver timeout, the console can be unlocked only if the user can re-authenticate to the domain controller. If no domain controller is available, users cannot unlock their workstations. If you configure the [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache--in-case-domain-controller-is-not-available.md) setting to 0, users whose domain controllers are unavailable (such as mobile or remote users) cannot log on.
+When the console on a device is locked by a user or automatically by a screen-saver timeout, the console can be unlocked only if the user can re-authenticate to the domain controller. If no domain controller is available, users cannot unlock their workstations. If you configure the [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available.md) setting to 0, users whose domain controllers are unavailable (such as mobile or remote users) cannot log on.
 
 ## Related topics
 

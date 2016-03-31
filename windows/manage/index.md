@@ -38,7 +38,7 @@ Learn about managing and updating Windows 10.
 <td align="left"><p>Administrative Tools is a folder in Control Panel that contains tools for system administrators and advanced users.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Cortana integration in your business or enterprise](manage-cortana-in-your-enterprise.md)</p></td>
+<td align="left"><p>[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md))</p></td>
 <td align="left"><p>The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.</p></td>
 </tr>
 <tr class="even">
@@ -66,6 +66,10 @@ Learn about managing and updating Windows 10.
 <td align="left"><p>This article describes the new servicing options available in Windows 10, Windows 10 Mobile, and Windows 10 IoT Core (IoT Core) and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>[Application development for Windows as a service](application-development-for-windows-as-a-service.md)</p></td>
+<td align="left"><p>In today’s environment, where user expectations frequently are set by device-centric experiences, complete product cycles need to be measured in months, not years. Additionally, new releases must be made available on a continual basis, and must be deployable with minimal impact on users. Microsoft designed Windows 10 to meet these requirements by implementing a new approach to innovation, development, and delivery called [Windows as a service (WaaS)](introduction-to-windows-10-servicing.md). The key to enabling significantly shorter product cycles while maintaining high quality levels is an innovative community-centric approach to testing that Microsoft has implemented for Windows 10. The community, known as Windows Insiders, is comprised of millions of users around the world. When Windows Insiders opt in to the community, they test many builds over the course of a product cycle and provide feedback to Microsoft through an iterative methodology called flighting.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>[Windows Store for Business](windows-store-for-business.md)</p></td>
 <td align="left"><p>Welcome to the Windows Store for Business! You can use the Store for Business, to find, acquire, distribute, and manage apps for your organization.</p></td>
 </tr>

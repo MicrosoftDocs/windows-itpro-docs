@@ -368,7 +368,7 @@ There are two schema extensions that you can copy down and add to your AD DS sch
 
     This schema update modifies the ACLs on the TPM object to be less restrictive so that any subsequent operating system which takes ownership of the computer object can update the owner authorization value in AD DS. However, this is less secure as any computer in the domain can now update the OwnerAuth of the TPM object (although it cannot read the OwnerAuth) and DOS attacks can be made from within the enterprise. The recommended mitigation in such a scenario is to do regular backup of TPM objects and enable auditing to track changes for these objects.
 
-To download the schema extensions, see [AD DS schema extensions to support TPM backup](schema-extensions-for-windows-server-2008-r2-to-support-ad-ds-backup-of-tpm-information-from-windows-8-clients.md).
+To download the schema extensions, see [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md).
 
 If you have a Windows Server 2012 domain controller in your environment, the schema extensions are already in place and do not need to be updated.
 
@@ -432,13 +432,13 @@ However, you cannot use recovery passwords generated on a system in FIPS mode fo
 ## More information
 
 
-[Trusted Platform Module](trusted-platform-module-technology-overview.md)
+[Trusted Platform Module](trusted-platform-module-overview.md)
 
 [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md)
 
-[BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions--faq-.md)
+[BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
 
-[BitLocker](bitlocker-overview-roletech-overview.md)
+[BitLocker](bitlocker-overview.md)
 
 [BitLocker Group Policy settings](bitlocker-group-policy-settings.md)
 

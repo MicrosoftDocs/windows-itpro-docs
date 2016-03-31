@@ -29,11 +29,11 @@ Learn more about the different security technologies that are available in Windo
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[AppLocker](applocker-overview-server.md)</p></td>
+<td align="left"><p>[AppLocker](applocker-overview.md)</p></td>
 <td align="left"><p>This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[BitLocker](bitlocker-overview-roletech-overview.md)</p></td>
+<td align="left"><p>[BitLocker](bitlocker-overview.md)</p></td>
 <td align="left"><p>This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.</p></td>
 </tr>
 <tr class="odd">
@@ -41,7 +41,7 @@ Learn more about the different security technologies that are available in Windo
 <td align="left"><p>Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Security auditing](security-auditing-overview-glbl.md)</p></td>
+<td align="left"><p>[Security auditing](security-auditing-overview.md)</p></td>
 <td align="left"><p>Topics in this section are for IT professionals and describes the security auditing features in Windows and how your organization can benefit from using these technologies to enhance the security and manageability of your network.</p></td>
 </tr>
 <tr class="odd">
@@ -49,7 +49,7 @@ Learn more about the different security technologies that are available in Windo
 <td align="left"><p>This reference topic describes the common scenarios, architecture, and processes for security settings.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Trusted Platform Module](trusted-platform-module-technology-overview.md)</p></td>
+<td align="left"><p>[Trusted Platform Module](trusted-platform-module-overview.md)</p></td>
 <td align="left"><p>This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication. The topic provides links to other resources about the TPM.</p></td>
 </tr>
 <tr class="odd">

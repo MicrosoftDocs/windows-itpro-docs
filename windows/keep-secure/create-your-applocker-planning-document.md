@@ -399,7 +399,7 @@ You can use the following form to construct your own AppLocker planning document
 
 -   The AppLocker Policies Design Guide is the predecessor to the AppLocker Policies Deployment Guide. When planning is complete, see the [AppLocker policies deployment guide](applocker-policies-deployment-guide.md).
 
--   For more general info, see [AppLocker](applocker-overview-server.md).
+-   For more general info, see [AppLocker](applocker-overview.md).
 
  
 

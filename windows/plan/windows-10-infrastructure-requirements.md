@@ -44,7 +44,7 @@ For System Center Configuration Manager, Windows 10 support is offered with var
 
  
 
-For more details about System Center Configuration Manager support for Windows 10, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy/deploy-windows-81-with-system-center-2012-r2-configuration-manager.md).
+For more details about System Center Configuration Manager support for Windows 10, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
 
 ## Management tools
 
@@ -110,7 +110,7 @@ Note that Windows 10 Enterprise and Windows 10 Enterprise LTSB installations u
 ## Related topics
 
 
-[Windows 10 servicing options](windows-10-servicing-model.md)
+[Windows 10 servicing options](windows-10-servicing-options.md)
 
 [Windows 10 deployment considerations](windows-10-deployment-considerations.md)
 

@@ -13,10 +13,32 @@ author: brianlic-msft
 
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
-| New or changed topic                                                             | Description                                                                                                                                                                           |
-|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Protect derived domain credentials with Credential Guard](credential-guard.md) | Clarified Credential Guard protections                                                                                                                                                |
-| [Requirements to use AppLocker](requirements-to-use-applocker.md)               | Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy. |
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">New or changed topic</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">[Protect derived domain credentials with Credential Guard](credential-guard.md)</td>
+<td align="left"><p>Clarified Credential Guard protections</p></td>
+</tr>
+<tr class="even">
+<td align="left">[Requirements to use AppLocker](requirements-to-use-applocker.md)</td>
+<td align="left"><p>Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy.</p></td>
+</tr>
+<tr class="odd">
+<td align="left">[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md))</td>
+<td align="left"><p>Added pre-release content about how to set up and deploy enterprise data protection (EDP) in an enterprise environment.</p></td>
+</tr>
+</tbody>
+</table>
 
  
 
@@ -63,11 +85,11 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 | New or changed topic                                                                         | Description |
 |----------------------------------------------------------------------------------------------|-------------|
 | [Windows Defender in Windows 10](windows-defender-in-windows-10.md)                         | New         |
-| [Windows Hello biometrics in the enterprise](windows-hello-biometrics-in-the-enterprise.md) | New         |
-| [AppLocker](applocker-overview-server.md) (multiple topics)                                 | Updated     |
+| [Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)) | New         |
+| [AppLocker](applocker-overview.md) (multiple topics)                                 | Updated     |
 | [Device Guard certification and compliance](device-guard-certification-and-compliance.md)   | Updated     |
 | [Device Guard deployment guide](device-guard-deployment-guide.md)                           | Updated     |
-| [Security auditing](security-auditing-overview-glbl.md) (multiple topics)                   | Updated     |
+| [Security auditing](security-auditing-overview.md) (multiple topics)                   | Updated     |
 | [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)               | Updated     |
 
  

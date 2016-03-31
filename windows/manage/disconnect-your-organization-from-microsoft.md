@@ -1,134 +1,139 @@
 ---
-title: Disconnect from Microsoft and configure privacy settings in your organization (Windows 10)
-description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.If you’re looking for content on what each telemetry level means and how to configure it in your organization, see Configure telemetry in your organization.
+title: Configure telemetry and other settings in your organization (Windows 10)
+description: Learn about the telemetry that Microsoft gathers, the network connections that Windows components make to Microsoft, and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-keywords: ["privacy"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Disconnect from Microsoft and configure privacy settings in your organization
+# Configure telemetry and other settings in your organization
 
 
 **Applies to**
 
 -   Windows 10
 
-If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
+Learn about the telemetry that Microsoft gathers, the network connections that Windows components make to Microsoft, and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 
-If you’re looking for content on what each telemetry level means and how to configure it in your organization, see [Configure telemetry in your organization](configure-telemetry-in-your-organization.md).
+If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
+
+**Note**  Telemetry is a term that means different things to different people and organizations. For the purpose of this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to keep Windows devices secure, and to help Microsoft improve the quality of Windows and Microsoft services. We discuss separately the network connections that Windows features and components make directly to Microsoft Services. It is used to provide a service to the user as part of Windows.
+
+ 
 
 Some of the network connections discussed in this article can be managed in Windows 10 Mobile, Windows 10 Mobile Enterprise, and the July release of Windows 10. However, you must use Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511 to manage them all.
 
-In Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511, you can configure telemetry at the [Security level](configure-telemetry-in-your-organization.md#security-level), turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft services as described in this article to prevent Windows from sending any data to Microsoft. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
-
-The settings in this article assume you are using Windows 10, version 1511 (currently available in the Current Branch and Current Branch for Business). They will also be included in the next update for the Long Term Servicing Branch.
+In Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511, you can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft services as described in this article to prevent Windows from sending any data to Microsoft. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
 
 We are always working on improving Windows 10 for our customers. We invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows 10 work better for your organization.
 
 Here's what's covered in this article:
 
--   [1. Cortana](#cortana)
+-   [Info management settings](#bkmk-othersettings)
 
-    -   [1.1 Cortana Group Policies](#cortana-group-policies)
+    -   [1. Cortana](#bkmk-cortana)
 
-    -   [1.2 Cortana MDM policies](#cortana-mdm-policies)
+        -   [1.1 Cortana Group Policies](#bkmk-cortana-gp)
 
-    -   [1.3 Cortana Windows Provisioning](#cortana-windows-provisioning)
+        -   [1.2 Cortana MDM policies](#bkmk-cortana-mdm)
 
--   [2. Device metadata retrieval](#device-metadata-retrieval)
+        -   [1.3 Cortana Windows Provisioning](#bkmk-cortana-prov)
 
--   [3. Insider Preview builds](#insider-preview-builds)
+    -   [2. Date & Time](#bkmk-datetime)
 
--   [4. Internet Explorer](#internet-explorer)
+    -   [3. Device metadata retrieval](#bkmk-devinst)
 
-    -   [4.1 Internet Explorer Group Policies](#internet-explorer-group-policies)
+    -   [4. Insider Preview builds](#bkmk-previewbuilds)
 
-    -   [4.2 ActiveX control blocking](#internet-explorer-activex-control-blocking)
+    -   [5. Internet Explorer](#bkmk-ie)
 
--   [5. Mail synchronization](#mail-synchronization)
+        -   [5.1 Internet Explorer Group Policies](#bkmk-ie-gp)
 
--   [6. Microsoft Edge](#microsoft-edge)
+        -   [5.2 ActiveX control blocking](#bkmk-ie-activex)
 
-    -   [6.1 Microsoft Edge Group Policies](#microsoft-edge-group-policies)
+    -   [6. Mail synchronization](#bkmk-mailsync)
 
-    -   [6.2 Microsoft Edge MDM policies](#microsoft-edge-mdm-policies)
+    -   [7. Microsoft Edge](#bkmk-edge)
 
-    -   [6.3 Microsoft Edge Windows Provisioning](#microsoft-edge-windows-provisioning)
+        -   [7.1 Microsoft Edge Group Policies](#bkmk-edgegp)
 
--   [7. Network Connection Status Indicator](#network-connection-status-indicator)
+        -   [7.2 Microsoft Edge MDM policies](#bkmk-edge-mdm)
 
--   [8. Offline maps](#offline-maps)
+        -   [7.3 Microsoft Edge Windows Provisioning](#bkmk-edge-prov)
 
--   [9. OneDrive](#onedrive)
+    -   [8. Network Connection Status Indicator](#bkmk-ncsi)
 
--   [10. Preinstalled apps](#preinstalled-apps)
+    -   [9. Offline maps](#bkmk-offlinemaps)
 
--   [11. Settings &gt; Privacy](#settings--privacy)
+    -   [10. OneDrive](#bkmk-onedrive)
 
-    -   [11.1 General](#general)
+    -   [11. Preinstalled apps](#bkmk-preinstalledapps)
 
-    -   [11.2 Location](#location)
+    -   [12. Settings &gt; Privacy](#bkmk-settingssection)
 
-    -   [11.3 Camera](#camera)
+        -   [12.1 General](#bkmk-general)
 
-    -   [11.4 Microphone](#microphone)
+        -   [12.2 Location](#bkmk-priv-location)
 
-    -   [11.5 Speech, inking, & typing](#speech-inking--typing)
+        -   [12.3 Camera](#bkmk-priv-camera)
 
-    -   [11.6 Account info](#account-info)
+        -   [12.4 Microphone](#bkmk-priv-microphone)
 
-    -   [11.7 Contacts](#contacts)
+        -   [12.5 Speech, inking, & typing](#bkmk-priv-speech)
 
-    -   [11.8 Calendar](#calendar)
+        -   [12.6 Account info](#bkmk-priv-accounts)
 
-    -   [11.9 Call history](#settings-call-history)
+        -   [12.7 Contacts](#bkmk-priv-contacts)
 
-    -   [11.10 Email](#settings-email)
+        -   [12.8 Calendar](#bkmk-priv-calendar)
 
-    -   [11.11 Messaging](#settings-messaging)
+        -   [12.9 Call history](#bkmk-priv-callhistory)
 
-    -   [11.12 Radios](#settings-radios)
+        -   [12.10 Email](#bkmk-priv-email)
 
-    -   [11.13 Other devices](#settings-other-devices)
+        -   [12.11 Messaging](#bkmk-priv-messaging)
 
-    -   [11.14 Feedback & diagnostics](#settings-feedback)
+        -   [12.12 Radios](#bkmk-priv-radios)
 
-    -   [11.15 Background apps](#settings-background-apps)
+        -   [12.13 Other devices](#bkmk-priv-other-devices)
 
--   [12. Software Protection Platform](#software-protection-platform)
+        -   [12.14 Feedback & diagnostics](#bkmk-priv-feedback)
 
--   [13. Sync your settings](#sync-your-settings)
+        -   [12.15 Background apps](#bkmk-priv-background)
 
--   [14. Teredo](#teredo)
+    -   [13. Software Protection Platform](#bkmk-spp)
 
--   [15. Wi-Fi Sense](#wi-fi-sense)
+    -   [14. Sync your settings](#bkmk-syncsettings)
 
--   [16. Windows Defender](#windows-defender)
+    -   [15. Teredo](#bkmk-teredo)
 
--   [17. Windows Media Player](#windows-media-player)
+    -   [16. Wi-Fi Sense](#bkmk-wifisense)
 
--   [18. Windows spotlight](#windows-spotlight)
+    -   [17. Windows Defender](#bkmk-defender)
 
--   [19. Windows Store](#windows-store)
+    -   [18. Windows Media Player](#bkmk-wmp)
 
--   [20. Windows Update Delivery Optimization](#windows-update-delivery-optimization)
+    -   [19. Windows spotlight](#bkmk-spotlight)
 
-    -   [20.1 Settings &gt; Update & security](#settings--update-security)
+    -   [20. Windows Store](#bkmk-windowsstore)
 
-    -   [20.2 Delivery Optimization Group Policies](#delivery-optimization-group-policies)
+    -   [21. Windows Update Delivery Optimization](#bkmk-updates)
 
-    -   [20.3 Delivery Optimization MDM policies](#delivery-optimization-mdm-policies)
+        -   [21.1 Settings &gt; Update & security](#bkmk-wudo-ui)
 
-    -   [20.4 Delivery Optimization Windows Provisioning](#delivery-optimization-windows-provisioning)
+        -   [21.2 Delivery Optimization Group Policies](#bkmk-wudo-gp)
 
--   [21. Windows Update](#windows-update)
+        -   [21.3 Delivery Optimization MDM policies](#bkmk-wudo-mdm)
 
-See the following table for a summary of the settings. For more info, see its corresponding section.
+        -   [21.4 Delivery Optimization Windows Provisioning](#bkmk-wudo-prov)
 
-![](images/settings-table.png)
+    -   [22. Windows Update](#bkmk-wu)
+
+-   [Manage your telemetry settings](#bkmk-utc)
+
+-   [How telemetry works](#bkmk-moreutc)
 
 ## What's new in Windows 10, version 1511
 
@@ -183,12 +188,66 @@ Here's a list of changes that were made to this article for Windows 10, version
 
 -   Changed the Windows Update section to apply system-wide settings, and not just per user.
 
-## <a href="" id="cortana"></a>1. Cortana
+## <a href="" id="bkmk-othersettings"></a>Info management settings
 
+
+This section lists the components that make network connections to Microsoft services automatically. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
+
+The settings in this section assume you are using Windows 10, version 1511 (currently available in the Current Branch and Current Branch for Business). They will also be included in the next update for the Long Term Servicing Branch.
+
+-   [1. Cortana](#bkmk-cortana)
+
+-   [2. Date & Time](#bkmk-datetime)
+
+-   [3. Device metadata retrieval](#bkmk-devinst)
+
+-   [4. Insider Preview builds](#bkmk-previewbuilds)
+
+-   [5. Internet Explorer](#bkmk-ie)
+
+-   [6. Mail synchronization](#bkmk-mailsync)
+
+-   [7. Microsoft Edge](#bkmk-edge)
+
+-   [8. Network Connection Status Indicator](#bkmk-ncsi)
+
+-   [9. Offline maps](#bkmk-offlinemaps)
+
+-   [10. OneDrive](#bkmk-onedrive)
+
+-   [11. Preinstalled apps](#bkmk-preinstalledapps)
+
+-   [12. Settings &gt; Privacy](#bkmk-settingssection)
+
+-   [13. Software Protection Platform](#bkmk-spp)
+
+-   [14. Sync your settings](#bkmk-syncsettings)
+
+-   [15. Teredo](#bkmk-teredo)
+
+-   [16. Wi-Fi Sense](#bkmk-wifisense)
+
+-   [17. Windows Defender](#bkmk-defender)
+
+-   [18. Windows Media Player](#bkmk-wmp)
+
+-   [19. Windows spotlight](#bkmk-spotlight)
+
+-   [20. Windows Store](#bkmk-windowsstore)
+
+-   [21. Windows Update](#bkmk-wu)
+
+-   [22. Windows Update Delivery Optimization](#bkmk-updates)
+
+See the following table for a summary of the management settings. For more info, see its corresponding section.
+
+![](images/settings-table.png)
+
+### <a href="" id="bkmk-cortana"></a>1. Cortana
 
 Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ]( http://go.microsoft.com/fwlink/p/?LinkId=730683).
 
-### <a href="" id="cortana-group-policies"></a>1.1 Cortana Group Policies
+### <a href="" id="bkmk-cortana-gp"></a>1.1 Cortana Group Policies
 
 Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Search**.
 
@@ -264,7 +323,7 @@ If your organization tests network traffic, you should not use Fiddler to test W
 
  
 
-### <a href="" id="cortana-mdm-policies"></a>1.2 Cortana MDM policies
+### <a href="" id="bkmk-cortana-mdm"></a>1.2 Cortana MDM policies
 
 The following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
@@ -295,17 +354,25 @@ The following Cortana MDM policies are available in the [Policy CSP](http://msdn
 
  
 
-### <a href="" id="cortana-windows-provisioning"></a>1.3 Cortana Windows Provisioning
+### <a href="" id="bkmk-cortana-prov"></a>1.3 Cortana Windows Provisioning
 
 To use Windows Imaging and Configuration Designer (ICD) to create a provisioning package with the settings for these policies, go to **Runtime settings** &gt; **Policies** to find **Experience** &gt; **AllowCortana** and **Search** &gt; **AllowSearchToUseLocation**.
 
-## <a href="" id="device-metadata-retrieval"></a>2. Device metadata retrieval
+### <a href="" id="bkmk-datetime"></a>2. Date & Time
 
+You can prevent Windows from setting the time automatically.
+
+-   To turn off the feature in the UI: **Settings** &gt; **Time & language** &gt; **Date & time** &gt; **Set time automatically**
+
+    -or-
+
+-   Create a REG\_DWORD registry setting called **NoSync** in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters**, with a value of 1.
+
+### <a href="" id="bkmk-devinst"></a>3. Device metadata retrieval
 
 To prevent Windows from retrieving device metadata from the Internet, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Device Installation** &gt; **Prevent device metadata retrieval from the Internet**.
 
-## <a href="" id="insider-preview-builds"></a>3. Insider Preview builds
-
+### <a href="" id="bkmk-previewbuilds"></a>4. Insider Preview builds
 
 To turn off Insider Preview builds if you're running a released version of Windows 10. If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
 
@@ -335,12 +402,11 @@ To turn off Insider Preview builds if you're running a released version of Windo
 
     -   **2**. (default) Not configured. Users can make their devices available for download and installing preview software.
 
-## <a href="" id="internet-explorer"></a>4. Internet Explorer
-
+### <a href="" id="bkmk-ie"></a>5. Internet Explorer
 
 Use Group Policy to manage settings for Internet Explorer.
 
-### <a href="" id="internet-explorer-group-policies"></a>4.1 Internet Explorer Group Policies
+### <a href="" id="bkmk-ie-gp"></a>5.1 Internet Explorer Group Policies
 
 Find the Internet Explorer Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Internet Explorer**.
 
@@ -388,14 +454,13 @@ Find the Internet Explorer Group Policy objects under **Computer Configuration**
 
  
 
-### <a href="" id="internet-explorer-activex-control-blocking"></a>4.2 ActiveX control blocking
+### <a href="" id="bkmk-ie-activex"></a>5.2 ActiveX control blocking
 
 ActiveX control blocking periodically downloads a new list of out-of-date ActiveX controls that should be blocked. You can turn this off by changing the REG\_DWORD registry setting **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to 0 (zero).
 
 For more info, see [Out-of-date ActiveX control blocking](http://technet.microsoft.com/library/dn761713.aspx).
 
-## <a href="" id="mail-synchronization"></a>5. Mail synchronization
-
+### <a href="" id="bkmk-mailsync"></a>6. Mail synchronization
 
 To turn off mail synchronization for Microsoft Accounts that are configured on a device:
 
@@ -413,12 +478,11 @@ To turn off the Windows Mail app:
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Mail** &gt; **Turn off Windows Mail application**
 
-## <a href="" id="microsoft-edge"></a>6. Microsoft Edge
-
+### <a href="" id="bkmk-edge"></a>7. Microsoft Edge
 
 Use either Group Policy or MDM policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730682).
 
-### <a href="" id="microsoft-edge-group-policies"></a>6.1 Microsoft Edge Group Policies
+### <a href="" id="bkmk-edgegp"></a>7.1 Microsoft Edge Group Policies
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
 
@@ -479,7 +543,7 @@ The Microsoft Edge Group Policy names were changed in Windows 10, version 1511.
 
  
 
-### <a href="" id="microsoft-edge-mdm-policies"></a>6.2 Microsoft Edge MDM policies
+### <a href="" id="bkmk-edge-mdm"></a>7.2 Microsoft Edge MDM policies
 
 The following Microsoft Edge MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
@@ -525,14 +589,13 @@ The following Microsoft Edge MDM policies are available in the [Policy CSP](http
 
  
 
-### <a href="" id="microsoft-edge-windows-provisioning"></a>6.3 Microsoft Edge Windows Provisioning
+### <a href="" id="bkmk-edge-prov"></a>7.3 Microsoft Edge Windows Provisioning
 
 Use Windows ICD to create a provisioning package with the settings for these policies, go to **Runtime settings** &gt; **Policies**.
 
 For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](http://technet.microsoft.com/library/mt270204.aspx).
 
-## <a href="" id="network-connection-status-indicator"></a>7. Network Connection Status Indicator
-
+### <a href="" id="bkmk-ncsi"></a>8. Network Connection Status Indicator
 
 Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftncsi.com to determine if the device can communicate with the Internet. For more info about NCIS, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
 
@@ -540,8 +603,7 @@ You can turn off NCSI through Group Policy:
 
 -   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
 
-## <a href="" id="offline-maps"></a>8. Offline maps
-
+### <a href="" id="bkmk-offlinemaps"></a>9. Offline maps
 
 You can turn off the ability to download and update offline maps.
 
@@ -551,15 +613,13 @@ You can turn off the ability to download and update offline maps.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
 
-## <a href="" id="onedrive"></a>9. OneDrive
-
+### <a href="" id="bkmk-onedrive"></a>10. OneDrive
 
 To turn off OneDrive in your organization:
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **OneDrive** &gt; **Prevent the usage of OneDrive for file storage**
 
-## <a href="" id="preinstalled-apps"></a>10. Preinstalled apps
-
+### <a href="" id="bkmk-preinstalledapps"></a>11. Preinstalled apps
 
 Some preinstalled apps get content before they are opened to ensure a great experience. You can remove these using the steps in this section.
 
@@ -671,12 +731,41 @@ To remove the Get Skype app:
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage**
 
-## <a href="" id="settings--privacy"></a>11. Settings &gt; Privacy
-
+### <a href="" id="bkmk-settingssection"></a>12. Settings &gt; Privacy
 
 Use Settings &gt; Privacy to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
 
-### <a href="" id="general"></a>11.1 General
+-   [12.1 General](#bkmk-general)
+
+-   [12.2 Location](#bkmk-priv-location)
+
+-   [12.3 Camera](#bkmk-priv-camera)
+
+-   [12.4 Microphone](#bkmk-priv-microphone)
+
+-   [12.5 Speech, inking, & typing](#bkmk-priv-speech)
+
+-   [12.6 Account info](#bkmk-priv-accounts)
+
+-   [12.7 Contacts](#bkmk-priv-contacts)
+
+-   [12.8 Calendar](#bkmk-priv-calendar)
+
+-   [12.9 Call history](#bkmk-priv-callhistory)
+
+-   [12.10 Email](#bkmk-priv-email)
+
+-   [12.11 Messaging](#bkmk-priv-messaging)
+
+-   [12.12 Radios](#bkmk-priv-radios)
+
+-   [12.13 Other devices](#bkmk-priv-other-devices)
+
+-   [12.14 Feedback & diagnostics](#bkmk-priv-feedback)
+
+-   [12.15 Background apps](#bkmk-priv-background)
+
+### <a href="" id="bkmk-priv-general"></a>12.1 General
 
 **General** includes options that don't fall into other areas.
 
@@ -748,7 +837,7 @@ To turn off **Let websites provide locally relevant content by accessing my lang
 
 -   Create a new REG\_DWORD registry setting called **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile**, with a value of 1.
 
-### <a href="" id="location"></a>11.2 Location
+### <a href="" id="bkmk-priv-location"></a>12.2 Location
 
 In the **Location** area, you choose whether devices have access to location-specific sensors and which apps have access to the device's location.
 
@@ -801,7 +890,7 @@ To turn off **Choose apps that can use your location**:
 
 -   Turn off each app using the UI.
 
-### <a href="" id="camera"></a>11.3 Camera
+### <a href="" id="bkmk-priv-camera"></a>12.3 Camera
 
 In the **Camera** area, you can choose which apps can access a device's camera.
 
@@ -840,7 +929,7 @@ To turn off **Choose apps that can use your camera**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="microphone"></a>11.4 Microphone
+### <a href="" id="bkmk-priv-microphone"></a>12.4 Microphone
 
 In the **Microphone** area, you can choose which apps can access a device's microphone.
 
@@ -858,7 +947,7 @@ To turn off **Choose apps that can use your microphone**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="speech-inking--typing"></a>11.5 Speech, inking, & typing
+### <a href="" id="bkmk-priv-speech"></a>12.5 Speech, inking, & typing
 
 In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better understand your employee's voice and written input by sampling their voice and writing, and by comparing verbal and written input to contact names and calendar entrees.
 
@@ -883,7 +972,7 @@ To turn off the functionality:
 
     Create a REG\_DWORD registry setting called **HarvestContacts** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore**, with a value of 0 (zero).
 
-### <a href="" id="account-info"></a>11.6 Account info
+### <a href="" id="bkmk-priv-accounts"></a>12.6 Account info
 
 In the **Account Info** area, you can choose which apps can access your name, picture, and other account info.
 
@@ -901,7 +990,7 @@ To turn off **Choose the apps that can access your account info**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="contacts"></a>11.7 Contacts
+### <a href="" id="bkmk-priv-contacts"></a>12.7 Contacts
 
 In the **Contacts** area, you can choose which apps can access an employee's contacts list.
 
@@ -915,7 +1004,7 @@ To turn off **Choose apps that can access contacts**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="calendar"></a>11.8 Calendar
+### <a href="" id="bkmk-priv-calendar"></a>12.8 Calendar
 
 In the **Calendar** area, you can choose which apps have access to an employee's calendar.
 
@@ -933,7 +1022,7 @@ To turn off **Choose apps that can access calendar**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="call-history"></a>11.9 Call history
+### <a href="" id="bkmk-priv-callhistory"></a>12.9 Call history
 
 In the **Call history** area, you can choose which apps have access to an employee's call history.
 
@@ -947,7 +1036,7 @@ To turn off **Let apps access my call history**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="email"></a>11.10 Email
+### <a href="" id="bkmk-priv-email"></a>12.10 Email
 
 In the **Email** area, you can choose which apps have can access and send email.
 
@@ -961,7 +1050,7 @@ To turn off **Let apps access and send email**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="messaging"></a>11.11 Messaging
+### <a href="" id="bkmk-priv-messaging"></a>12.11 Messaging
 
 In the **Messaging** area, you can choose which apps can read or send messages.
 
@@ -979,7 +1068,7 @@ To turn off **Choose apps that can read or send messages**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="radios"></a>11.12 Radios
+### <a href="" id="bkmk-priv-radios"></a>12.12 Radios
 
 In the **Radios** area, you can choose which apps can turn a device's radio on or off.
 
@@ -997,7 +1086,7 @@ To turn off **Choose apps that can control radios**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="other-devices"></a>11.13 Other devices
+### <a href="" id="bkmk-priv-other-devices"></a>12.13 Other devices
 
 In the **Other Devices** area, you can choose whether devices that aren't paired to PCs, such as an Xbox One, can share and sync info.
 
@@ -1015,7 +1104,7 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="feedback--diagnostics"></a>11.14 Feedback & diagnostics
+### <a href="" id="bkmk-priv-feedback"></a>12.14 Feedback & diagnostics
 
 In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft.
 
@@ -1061,6 +1150,8 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
      
 
+    -or-
+
 -   Apply the Group Policy: **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection And Preview Builds\\Allow Telemetry**
 
     -or-
@@ -1087,7 +1178,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
     -   **3**. Maps to the [Full](#bkmk-utc-full) level.
 
-### <a href="" id="background-apps"></a>11.15 Background apps
+### <a href="" id="bkmk-priv-background"></a>12.15 Background apps
 
 In the **Background Apps** area, you can choose which apps can run in the background.
 
@@ -1095,8 +1186,7 @@ To turn off **Let apps run in the background**:
 
 -   Turn off the feature in the UI for each app.
 
-## <a href="" id="software-protection-platform"></a>12. Software Protection Platform
-
+### <a href="" id="bkmk-spp"></a>13. Software Protection Platform
 
 Enterprise customers can manage their Windows activation status with volume licensing using an on-premise Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by applying the following Group Policy:
 
@@ -1104,8 +1194,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
-## <a href="" id="sync-your-settings"></a>13. Sync your settings
-
+### <a href="" id="bkmk-syncsettings"></a>14. Sync your settings
 
 You can control if your settings are synchronized:
 
@@ -1131,17 +1220,15 @@ To turn off Messaging cloud sync:
 
 -   Create a REG\_DWORD registry setting called **CloudServiceSyncEnabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Messaging**, with a value of 0 (zero).
 
-## <a href="" id="teredo"></a>14. Teredo
-
+### <a href="" id="bkmk-teredo"></a>15. Teredo
 
 You can disable Teredo by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](http://technet.microsoft.com/library/cc722030.aspx).
 
 -   From an elevated command prompt, run **netsh interface teredo set state disabled**
 
-## <a href="" id="wi-fi-sense"></a>15. Wi-Fi Sense
+### <a href="" id="bkmk-wifisense"></a>16. Wi-Fi Sense
 
-
-Wi-Fi Sense automatically connects devices to known hotspots and to the wireless networks the person’s contacts have shared with them.
+Wi-Fi Sense automatically connects devices to known hotspots and to the wireless networks the personâ€™s contacts have shared with them.
 
 To turn off **Connect to suggested open hotspots** and **Connect to networks shared by my contacts**:
 
@@ -1163,10 +1250,9 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
 -   Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed.](http://go.microsoft.com/fwlink/p/?LinkId=620910)
 
-When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but they’re non-functional and they can’t be controlled by the employee.
+When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but theyâ€™re non-functional and they canâ€™t be controlled by the employee.
 
-## <a href="" id="windows-defender"></a>16. Windows Defender
-
+### <a href="" id="bkmk-defender"></a>17. Windows Defender
 
 You can opt of the Microsoft Antimalware Protection Service.
 
@@ -1200,10 +1286,17 @@ You can stop sending file samples back to Microsoft.
 
 -   Use the registry to set the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SubmitSamplesConsent** to 0 (zero) to always prompt or 2 to never send.
 
+You can stop downloading definition updates:
+
+-   Enable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
+
+    -and-
+
+-   Enable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
+
 You can also use the registry to turn off Malicious Software Reporting Tool telemetry by setting the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to 1.
 
-## <a href="" id="windows-media-player"></a>17. Windows Media Player
-
+### <a href="" id="bkmk-wmp"></a>18. Windows Media Player
 
 To remove Windows Media Player:
 
@@ -1213,8 +1306,7 @@ To remove Windows Media Player:
 
 -   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
 
-## <a href="" id="windows-spotlight"></a>18. Windows spotlight
-
+### <a href="" id="bkmk-spotlight"></a>19. Windows spotlight
 
 Windows spotlight provides different background images and text on the lock screen. You can control it by using the user interface or through Group Policy.
 
@@ -1245,29 +1337,27 @@ Windows spotlight provides different background images and text on the lock scre
 
 For more info, see [Windows spotlight on the lock screen](../whats-new/windows-spotlight.md).
 
-## <a href="" id="windows-store"></a>19. Windows Store
-
+### <a href="" id="bkmk-windowsstore"></a>20. Windows Store
 
 You can turn off the ability to launch apps from the Windows Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Windows Store will be disabled.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Windows Store**.
 
-## <a href="" id="windows-update-delivery-optmization"></a>20. Windows Update Delivery Optimization
+### <a href="" id="bkmk-updates"></a>21. Windows Update Delivery Optimization
 
-
-Windows Update Delivery Optimization lets you get Windows updates and Windows Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization’s PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
+Windows Update Delivery Optimization lets you get Windows updates and Windows Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organizationâ€™s PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
 By default, PCs running Windows 10 Enterprise and Windows 10 Education will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
 Use the UI, Group Policy, MDM policies, or Windows Provisioning to set up Delivery Optimization.
 
-### <a href="" id="settings--update--security"></a>20.1 Settings &gt; Update & security
+### <a href="" id="bkmk-wudo-ui"></a>21.1 Settings &gt; Update & security
 
 You can set up Delivery Optimization from the **Settings** UI.
 
 -   Go to **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Choose how updates are delivered**.
 
-### <a href="" id="delivery-optimization-group-policies"></a>20.2 Delivery Optimization Group Policies
+### <a href="" id="bkmk-wudo-gp"></a>21.2 Delivery Optimization Group Policies
 
 You can find the Delivery Optimization Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization**.
 
@@ -1324,7 +1414,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 
  
 
-### <a href="" id="delivery-optimization-mdm-policies"></a>20.3 Delivery Optimization MDM policies
+### <a href="" id="bkmk-wudo-mdm"></a>21.3 Delivery Optimization MDM policies
 
 The following Delivery Optimization MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
@@ -1381,7 +1471,7 @@ The following Delivery Optimization MDM policies are available in the [Policy CS
 
  
 
-### <a href="" id="delivery-optimization-windows-provisioning"></a>20.4 Delivery Optimization Windows Provisioning
+### <a href="" id="bkmk-wudo-prov"></a>21.4 Delivery Optimization Windows Provisioning
 
 If you don't have an MDM server in your enterprise, you can use Windows Provisioning to configure the Delivery Optimization policies
 
@@ -1397,8 +1487,7 @@ Use Windows ICD, included with the [Windows Assessment and Deployment Kit (Windo
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730684).
 
-## <a href="" id="windows-update"></a>21. Windows Update
-
+### <a href="" id="bkmk-wu"></a>22. Windows Update
 
 You can turn off Windows Update by setting the following registry entries:
 
@@ -1429,6 +1518,275 @@ You can turn off automatic updates by doing one of the following. This is not re
     -   **5**. Turn off automatic updates.
 
 To learn more, see [Device update management](http://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](http://technet.microsoft.com/library/cc720539.aspx).
+
+## <a href="" id="bkmk-utc"></a>Manage your telemetry settings
+
+
+You can manage your telemetry settings using the management tools youâ€™re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your telemetry levels through a management policy overrides any device-level settings.
+
+You can set your organizationâ€™s devices to use 1 of 4 telemetry levels:
+
+-   [Security](#bkmk-utc-security) (only available on Windows 10 Enterprise, Windows 10 Education, and Windows 10 IoT Core (IoT Core) editions)
+
+-   [Basic](#bkmk-utc-basic)
+
+-   [Enhanced](#bkmk-utc-enhanced)
+
+-   [Full](#bkmk-utc-full)
+
+For more info about these telemetry levels, see [Telemetry levels](#bkmk-telemetrylevels). In Windows 10 Enterprise, Windows 10 Education, and IoT Core, the default telemetry level is [Enhanced](#bkmk-utc-enhanced).
+
+**Important**  
+These telemetry levels only apply to Windows components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. App publishers must let people know about how they use their telemetry, ways to opt in or opt out, and they must separately document their privacy policies.
+
+ 
+
+### Use Group Policy to set the telemetry level
+
+Use a Group Policy object to set your organizationâ€™s telemetry level.
+
+1.  From the Group Policy Management Console, go to **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds**.
+
+2.  Double-click **Allow Telemetry**.
+
+3.  In the **Options** box, select the level that you want to configure, and then click **OK**.
+
+### Use MDM to set the telemetry level
+
+Use the [Policy Configuration Service Provider (CSP)](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to apply the System/AllowTelemetry MDM policy, using one of these telemetry values:
+
+-   **0**. Maps to the [Security](#bkmk-utc-security) level.
+
+-   **1**. Maps to the [Basic](#bkmk-utc-basic) level.
+
+-   **2**. Maps to the [Enhanced](#bkmk-utc-enhanced) level.
+
+-   **3**. Maps to the [Full](#bkmk-utc-full) level.
+
+### Use Windows Provisioning to set the telemetry level
+
+Use Windows Provisioning and the Windows Imaging and Configuration Designer (Windows ICD) tool â€“ part of the [Windows Assessment and Deployment Kit (Windows ADK) toolkit](http://go.microsoft.com/fwlink/p/?LinkId=526803) - to create a provisioning package and runtime setting that sets your organizationâ€™s telemetry level.
+
+After you create the provisioning package, you can email it to your employees, put it on a network share, or integrate the package directly into a custom image using Windows ICD.
+
+**To use Windows ICD to integrate your package into a custom image**
+
+1.  Open Windows ICD, and then click **New provisioning package**.
+
+2.  In the **Name** box, type a name for the provisioning package, and then click **Next**.
+
+3.  Click **Common to all Windows editions** &gt; **Next** &gt; **Finish**.
+
+4.  Go to **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowTelemetry** to configure the policies. You can set it to one of the following:
+
+    -   **Disabled \[Enterprise SKU Only\]**. Maps to the [Security](#bkmk-utc-security) level.
+
+    -   **Basic**. Maps to the [Basic](#bkmk-utc-basic) level.
+
+    -   **Full**. Maps to the [Enhanced](#bkmk-utc-enhanced) level
+
+    -   **Diagnostic**. Maps to the [Full](#bkmk-utc-full) level.
+
+5.  After you've added all of your settings to the provisioning package, click **Export** &gt; **Provisioning package**.
+
+6.  On the **Describe the provisioning package** step, in the **Owner** box, click **IT Admin** &gt; **Next**.
+
+7.  On the **Select security details for the provisioning package** step, if you want to protect the package with a password, select the **Encrypt package** check box. If you'd like to sign the package with a certificate, select the **Sign package** check box and select the certificate to use. Click **Next**.
+
+8.  On the **Select where to save the provisioning package** step, if you want to save it somewhere other than the Windows ICD project folder, choose a new location, and then click **Next**.
+
+9.  On the **Build the provisioning package** step, click **Build**.
+
+### Use Registry Editor to set the telemetry level
+
+Use Registry Editor to manually set the registry level on each device in your organization, or write a script to edit the registry.
+
+If a management policy already exists (from Group Policy, MDM, or Windows Provisioning), it will override this registry setting.
+
+1.  Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection**.
+
+2.  Right-click **DataCollection**, click **New**, and then click **DWORD (32-bit) Value**.
+
+3.  Type **AllowTelemetry**, and then press ENTER.
+
+4.  Double-click **AllowTelemetry** and set the value to one of the following levels, and the click **OK**.
+
+    -   **0**. This setting maps to the [Security](#bkmk-utc-security) level.
+
+    -   **1**. This setting maps to the [Basic](#bkmk-utc-basic) level.
+
+    -   **2**. This setting maps to the [Enhanced](#bkmk-utc-enhanced) level
+
+    -   **3**. This setting maps to the [Full](#bkmk-utc-full) level.
+
+5.  Click **File** &gt; **Export**, and then save the file as a .reg file, such as **C:\\AllowTelemetry.reg**. You can run this file from a script on each device in your organization.
+
+### Additional telemetry controls
+
+There are a few more settings that you can turn off that may send telemetry information:
+
+-   To turn off Windows Update telemetry, you have two choices. Either turn off Windows Update, or set your devices to be managed by an on premises update server, such as [Windows Server Update Services (WSUS)](http://technet.microsoft.com/library/hh852345.aspx) or [System Center Configuration Manager](http://www.microsoft.com/server-cloud/products/system-center-2012-r2-configuration-manager/).
+
+-   Turn off **Windows Defender Cloud-based Protection** and **Automatic sample submission** in **Settings** &gt; **Update & security** &gt; **Windows Defender**.
+
+-   Manage the Malicious Software Removal Tool in your organization. For more info, see Microsoft KB article [891716](http://support.microsoft.com/kb/891716).
+
+-   Turn off Linguistic Data Collection in **Settings** &gt; **Privacy**. At telemetry levels Enhanced and Full, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary. For more info, see the **Get to know me** setting in the [Speech, inking, & typing](#bkmk-priv-speech) section of this article and the **Send Microsoft info about how I write to help us improve typing and writing in the future** setting in the [General](#bkmk-priv-general) section of this article.
+
+    **Note**  
+    Microsoft doesn't intentionally gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
+
+     
+
+## <a href="" id="bkmk-moreutc"></a>How telemetry works
+
+
+Windows uses telemetry information to analyze and fix software problems. It also helps Microsoft improve its software and provide updates that enhance the security and reliability of devices within your organization.
+
+### <a href="" id="bkmk-telemetrylevels"></a>Telemetry levels
+
+This section explains the different telemetry levels in Windows 10. These levels are available on all desktop and mobile editions of Windows 10, with the exception of the Security level which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core.
+
+-   **Security**. Information thatâ€™s required to help keep Windows secure, including info about theConnected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender. This level is available only on Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core.
+
+-   **Basic**. Basic device info, including: quality-related info, app compat, and info from the Security level.
+
+-   **Enhanced** Additional insights, including: how Windows and Windows apps are used, how they perform, advanced reliability info, and info from both the Basic and the Security levels.
+
+-   **Full**. All info necessary to identify and help to fix problems, plus info from the Security, Basic, and Enhanced levels.
+
+As a diagram:
+
+![](images/priv-telemetry-levels.png)
+
+### <a href="" id="bkmk-utc-security"></a>Security level
+
+The Security level gathers only telemetry info thatâ€™s required to keep Windows devices secure. This level is only available on Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core editions.
+
+**Note**  
+If your organization relies on Windows Update for updates, you shouldnâ€™t use the Security level. Because no Windows Update information is gathered at this level, Microsoft canâ€™t tell whether an update successfully installed.
+
+You can continue to use Windows Server Update Services and System Center Configuration Manager while using the Security level.
+
+ 
+
+Security level info includes:
+
+-   **Connected User Experience and Telemetry component settings**. If data has been gathered and is queued to be sent, the Connected User Experience and Telemetry component downloads its settings file from Microsoftâ€™s servers. The data collected by the client for this request includes OS information, device id (used to identify what specific device is requesting settings) and device class (for example, whether the device is server or desktop).
+
+-   **Malicious Software Removal Tool (MSRT)** The MSRT infection report contains information, including device info and IP address.
+
+    **Note**  
+    You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users.
+
+     
+
+-   **Windows Defender**. Windows Defender requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address. To configure this, see [Windows Defender](#bkmk-defender).
+
+    **Note**  
+    This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off.
+
+    Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates; moreover, Window Defender requires updated anti-malware signatures in order to provide security functionality.
+
+     
+
+No user content, such as user files or communications, is gathered at the Security telemetry level, and we take steps to avoid gathering any information that directly identifies a company or user, such as name, email address, or account ID. However, in rare circumstances, MSRT information may unintentionally contain personal information. For instance, some malware may create entries in a computerâ€™s registry that include information such as a username, causing it to be gathered. MSRT reporting is optional and can be turned off at any time.
+
+To set the telemetry level to Security, use a management policy (Group Policy or MDM) or by manually changing the setting in the registry. For more info, see the [Manage your telemetry settings](#bkmk-utc) section of this article.
+
+### <a href="" id="bkmk-utc-basic"></a>Basic level
+
+The Basic level gathers a limited set of info thatâ€™s critical for understanding the device and its configuration. This level also includes the Security level info. This level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version.
+
+Basic level info includes:
+
+-   **Basic device info**. Helps provide an understanding about the various types of devices in the Windows 10 ecosystem, including:
+
+    -   Device attributes, such as camera resolution and display type
+
+    -   Internet Explorer version
+
+    -   Battery attributes, such as capacity and type
+
+    -   Networking attributes, such as mobile operator network and IMEI number
+
+    -   Processor and memory attributes, such as number of cores, speed, and firmware
+
+    -   Operating system attributes, such as Windows edition and IsVirtualDevice
+
+    -   Storage attributes, such as number of drives and memory size
+
+-   **Connected User Experience and Telemetry component quality metrics**. Helps provide an understanding about how the Connected User Experience and Telemetry component is functioning, including uploaded events, dropped events, and the last upload time.
+
+-   **Quality-related information**. Helps Microsoft develop a basic understanding of how a device and its operating system are performing. Some examples are the amount of time a connected standby device was able to fullsleep, the number of crashes or hangs, and application state change details, such as how much processor time and memory were used, and the total uptime for an app.
+
+-   **App compat info**. Helps provide understanding about which apps are installed on a device and to help identify potential compatibility problems.
+
+    -   **General app info and app info for Internet Explorer add-ons**. Includes a list of apps and Internet Explorer add-ons that are installed on a device and whether these apps will work after an upgrade. This app info includes the app name, publisher, version, and basic details about which files have been blocked from usage.
+
+    -   **System info**. Helps provide understanding about whether a device meets the minimum requirements to upgrade to the next version of the operating system. System information includes the amount of memory, as well as info about the processor and BIOS.
+
+    -   **Accessory device info**. Includes a list of accessory devices, such as printers or external storage devices, that are connected to Windows PCs and whether these devices will function after upgrading to a new version of the operating system.
+
+    -   **Driver info**. Includes specific driver usage thatâ€™s meant to help figure out whether apps and devices will function after upgrading to a new version of the operating system. This info can help to determine blocking issues and then help Microsoft and our partners apply fixes and improvements.
+
+-   **Store**. Provides info about how the Windows Store performs, including app downloads, installations, and updates. It also includes Windows Store launches, page views, suspend and resumes, and obtaining licenses.
+
+### <a href="" id="bkmk-utc-enhanced"></a>Enhanced level
+
+The Enhanced level gathers info about how Windows and apps are used and how they perform. This level also includes info from both the Basic and Security levels. This level helps to improve experiences by analyzing user interaction with the operating system and apps. Info from this level can be abstracted into patterns and trends that can help Microsoft determine future improvements.
+
+Enhanced level info includes:
+
+-   **Operating system events**. Helps to gain insights into different areas of the operating system, including networking, Hyper-V, Cortana, and other components.
+
+-   **Operating system app events**. A set of events resulting from Microsoft apps that were downloaded from the Store or pre-installed with Windows, including Photos, Mail, and Microsoft Edge.
+
+-   **Device-specific events**. Contains info about events that are specific to certain devices, such as Surface Hub and Microsoft HoloLens. For example, Microsoft HoloLens sends Holographic Processing Unit (HPU)-related events.
+
+If the Connected User Experience and Telemetry component detects a problem that requires gathering more detailed instrumentation, then the Connected User Experience and Telemetry component will only gather info about the events associated with the specific issue, for no more than 2 weeks. Also, if the operating system or an app crashes or hangs, Microsoft will gather the memory contents of the faulting process only at the time of the crash or hang.
+
+### <a href="" id="bkmk-utc-full"></a>Full level
+
+The Full level gathers info necessary to identify and to help fix problems, following the approval process described below. This level also includes info from the Basic, Enhanced, and Security levels.
+
+Additionally, at this level, devices opted in to the Windows Insider Program will send events that can show Microsoft how pre-release binaries and features are performing. All devices in the Windows Insider Program are automatically set to this level.
+
+If a device experiences problems that are difficult to identify or repeat using Microsoftâ€™s internal testing, additional info becomes necessary. This info can include any user content that might have triggered the problem and is gathered from a small sample of devices that have both opted into the Full telemetry level and have exhibited the problem.
+
+However, before more info is gathered, Microsoftâ€™s privacy governance team, including privacy and other subject matter experts, must approve the diagnostics request made by a Microsoft engineer. If the request is approved, Microsoft engineers can use the following capabilities to get the information:
+
+-   Ability to run a limited, pre-approved list of Microsoft certified diagnostic tools, such as msinfo32.exe, powercfg.exe, and dxdiag.exe.
+
+-   Ability to get registry keys.
+
+-   Ability to gather user content, such as documents, if they might have been the trigger for the issue.
+
+### How is telemetry information handled by Microsoft?
+
+### Collection
+
+Information gathered by the Connected User Experience and Telemetry component complies with Microsoftâ€™s security and privacy policies, as well as international laws and regulations. Only those who can demonstrate a valid business need can access the telemetry info.
+
+### Data Transfer
+
+All telemetry info is encrypted during transfer from the device to the Microsoft Data Management Service. Data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as gaming achievements, are always sent immediately. Normal events are not uploaded on metered networks. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
+
+### Microsoft Data Management Service
+
+The Microsoft Data Management Service routes information to internal cloud storage, where it's compiled into business reports for analysis and research. Sensitive info is stored in a separate data store thatâ€™s locked down to a small subset of Microsoft employees in the Windows Devices Group. The privacy governance team permits access only to people with a valid business justification. The Connected User Experiences and Telemetry component connects to the Microsoft Data Management service at v10.vortex-win.data.microsoft.com. The Connected User Experience and Telemetry component connects to settings-win.data.microsoft.com to collect its settings.
+
+### Usage
+
+Information is used by teams within Microsoft to provide, improve, and personalize experiences, and for security, health, quality, and performance analysis.
+
+An example of personalization is to create individually tailored in-product messages.
+
+Microsoft doesnâ€™t share organization-specific customer information with third parties, except at the customerâ€™s direction or for the limited purposes described in the privacy statement. However, we do share business reports with partners that include aggregated, anonymous telemetry information. Decisions to share info are made by an internal team that includes privacy, legal, and data management professionals.
+
+### Retention
+
+Microsoft believes in and practices information minimization, so we only gather the info we need, and we only store it for as long as itâ€™s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, particularly if there is a regulatory requirement to do so. Info is typically gathered at a fractional sampling rate, which for some client services, can be as low as 1%.
 
  
 

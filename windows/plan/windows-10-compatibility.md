@@ -38,7 +38,7 @@ Historically, organizations have performed extensive, and often exhaustive, test
 ## Related topics
 
 
-[Windows 10 servicing options](windows-10-servicing-model.md)
+[Windows 10 servicing options](windows-10-servicing-options.md)
 
 [Windows 10 deployment considerations](windows-10-deployment-considerations.md)
 

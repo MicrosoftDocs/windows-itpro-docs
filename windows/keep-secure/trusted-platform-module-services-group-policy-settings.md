@@ -125,7 +125,7 @@ This policy setting applies to the Windows operating systems listed in the [vers
 TPM owner information includes a cryptographic hash of the TPM owner password. Certain TPM commands can be run only by the TPM owner. This hash authorizes the TPM to run these commands.
 
 **Important**  
-To back up TPM owner information from a computer running Windows 10, Windows 8.1, or Windows 8, you might need to first set up appropriate schema extensions and access control settings on the domain so that the AD DS backup can succeed. Windows Server 2012 R2 and Windows Server 2012 include the required schema extensions by default. For more information, see [AD DS schema extensions to support TPM backup](schema-extensions-for-windows-server-2008-r2-to-support-ad-ds-backup-of-tpm-information-from-windows-8-clients.md).
+To back up TPM owner information from a computer running Windows 10, Windows 8.1, or Windows 8, you might need to first set up appropriate schema extensions and access control settings on the domain so that the AD DS backup can succeed. Windows Server 2012 R2 and Windows Server 2012 include the required schema extensions by default. For more information, see [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md).
 
  
 
@@ -323,7 +323,7 @@ If you do not configure this policy setting, a default value of 9 is used. A val
 ## Additional resources
 
 
-[Trusted Platform Module Technology Overview](trusted-platform-module-technology-overview.md)
+[Trusted Platform Module Technology Overview](trusted-platform-module-overview.md)
 
 [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
 

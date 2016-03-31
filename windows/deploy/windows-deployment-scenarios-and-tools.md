@@ -14,7 +14,7 @@ author: CFaw
 
 To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.
 
-Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT) 2013 Update 1](deploy-windows-81-with-the-microsoft-deployment-toolkit.md) or [Microsoft System Center 2012 R2 Configuration Manager](deploy-windows-81-with-system-center-2012-r2-configuration-manager.md) that you get the complete deployment solution.
+Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT) 2013 Update 1](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) or [Microsoft System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) that you get the complete deployment solution.
 
 In this topic, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
 
@@ -330,7 +330,7 @@ For more information on UEFI, see the [UEFI firmware](http://go.microsoft.com/fw
 
 [Update Windows 10 images with provisioning packages](update-windows-10-images-with-provisioning-packages.md)
 
-[Deploy Windows To Go](deploy-windows-to-go-in-your-organization-small-scenario.md)
+[Deploy Windows To Go](deploy-windows-to-go.md)
 
 [Sideload apps in Windows 10](sideload-apps-in-windows-10.md)
 

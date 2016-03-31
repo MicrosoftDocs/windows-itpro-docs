@@ -16,12 +16,12 @@ author: CFaw
 
 -   Windows 10
 
-The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Deployment Toolkit (MDT) 2013 Update 1 task sequence to completely automate the process.
+The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Deployment Toolkit (MDT) 2013 Update 2 task sequence to completely automate the process.
 
 ## Proof-of-concept environment
 
 
-For the purposes of this topic, we will use four machines: DC01, MDT01, and PC0001. DC01 is a domain controller and MDT01 is a Windows Server 2012 R2 standard machine, fully patched with the latest security updates, and configured as a member server in the fictional contoso.com domain. PC0001 is a machine with Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md).
+For the purposes of this topic, we will use four machines: DC01, MDT01, and PC0001. DC01 is a domain controller and MDT01 is a Windows Server 2012 R2 standard machine, fully patched with the latest security updates, and configured as a member server in the fictional contoso.com domain. PC0001 is a machine with Windows 7 SP1, targeted for the Windows 10 upgrade. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ![fig 1](images/upgrademdt-fig1-machines.png)
 
@@ -30,7 +30,7 @@ Figure 1. The machines used in this topic.
 ## Set up the upgrade task sequence
 
 
-MDT 2013 Update 1 adds support for Windows 10 deployment, including a new in-place upgrade task sequence template that makes the process really simple.
+MDT 2013 Update 2 adds support for Windows 10 deployment, including a new in-place upgrade task sequence template that makes the process really simple.
 
 ## Create the MDT production deployment share
 

@@ -1012,7 +1012,7 @@ If you're having trouble running this script, try replacing the single quote aft
 
 [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](http://technet.microsoft.com/library/dd378897.aspx)
 
-[Trusted Platform Module](trusted-platform-module-technology-overview.md)
+[Trusted Platform Module](trusted-platform-module-overview.md)
 
  
 

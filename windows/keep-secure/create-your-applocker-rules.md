@@ -26,7 +26,7 @@ AppLocker rules apply to the targeted app, and they are the components that make
 
 You can use a reference device to automatically create a set of default rules for each of the installed apps, test and modify each rule as necessary, and deploy the policies. Creating most of the rules for all the installed apps gives you a starting point to build and test your policies. For info about performing this task, see the following topics:
 
--   [Configure the AppLocker reference device](configure-the-applocker-reference-computer-ops.md)
+-   [Configure the AppLocker reference device](configure-the-appLocker-reference-device.md)
 
 -   [Run the Automatically Generate Rules wizard](run-the-automatically-generate-rules-wizard.md)
 

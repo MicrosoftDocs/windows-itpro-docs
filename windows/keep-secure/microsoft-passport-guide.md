@@ -342,7 +342,7 @@ Which rollout method you choose depends on several factors:
 
 **Deployment requirements**
 
-Table 1 lists six scenarios for deployment of Microsoft Passport for Work in the enterprise. The initial release of Windows 10 supports Azure AD–only scenarios, with support for on-premises Microsoft Passport for Work planned for a release later in 2015 (see the [Roadmap](#roadmap) section for more details).
+Table 1 lists six scenarios for deployment of Microsoft Passport for Work in the enterprise. The initial release of Windows 10 supports Azure AD–only scenarios, with support for on-premises Microsoft Passport for Work planned for a future release (see the [Roadmap](#roadmap) section for more details).
 
 Depending on the scenario you choose, Microsoft Passport for Work deployment may require four elements:
 

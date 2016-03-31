@@ -158,7 +158,7 @@ Use the following table to develop your own objectives and determine which appli
 
  
 
-For more general info, see [AppLocker](applocker-overview-server.md).
+For more general info, see [AppLocker](applocker-overview.md).
 
  
 

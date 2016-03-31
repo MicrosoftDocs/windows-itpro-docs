@@ -90,11 +90,6 @@ Use the [Imaging and Configuration Designer (ICD) tool](http://go.microsoft.com/
 
 17. Double-click the ppkg file and allow it to install.
 
-    **Warning**  
-    When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
-
-     
-
 ## Related topics
 
 

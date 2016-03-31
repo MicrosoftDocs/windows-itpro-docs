@@ -34,7 +34,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 <td align="left"><p>This topic lists new and updated topics in the Plan for Windows 10 deployment documentation for [Windows 10 and Windows 10 Mobile](../index.md).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows 10 servicing options](windows-10-servicing-model.md)</p></td>
+<td align="left"><p>[Windows 10 servicing options](windows-10-servicing-options.md)</p></td>
 <td align="left"><p>Windows 10 provides a new model for organizations to deploy and upgrade Windows by providing updates to features and capabilities through a continual process.</p></td>
 </tr>
 <tr class="odd">
@@ -54,11 +54,11 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 <td align="left"><p>Get an overview of how you can implement and deploy a Windows Update for Business solution and how to maintain enrolled systems.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Guidance for education environments](guidance-for-education-environments.md)</p></td>
+<td align="left"><p>[Guidance for education environments](windows-10-guidance-for-education-environments.md)</p></td>
 <td align="left"><p>Find resources to help you plan your deployment of Windows 10 to desktops, laptops, tablets, and other devices in educational institutions.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows To Go: feature overview](windows-to-go-feature-overview-scenario.md)</p></td>
+<td align="left"><p>[Windows To Go: feature overview](windows-to-go-overview.md)</p></td>
 <td align="left"><p>Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.</p></td>
 </tr>
 <tr class="odd">
@@ -75,9 +75,9 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 
 [Windows 10 servicing options for updates and upgrades](../manage/introduction-to-windows-10-servicing.md)
 
-[Deploy Windows 10 with MDT 2013 Update 1](../deploy/deploy-windows-81-with-the-microsoft-deployment-toolkit.md)
+[Deploy Windows 10 with MDT 2013 Update 1](../deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 
-[Deploy Windows 10 with Configuration Manager and MDT 2013 Update 1](../deploy/deploy-windows-81-with-system-center-2012-r2-configuration-manager.md)
+[Deploy Windows 10 with Configuration Manager and MDT 2013 Update 1](../deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 
 [Upgrade to Windows 10 with MDT 2013 Update 1](../deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 
@@ -85,7 +85,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 
 [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=733911)
 
-[Windows 10 and Windows 10 Mobile](../index.md)
+[Windows 10 and Windows 10 Mobile](../p_ent_nodes/windows-10.md)
 
  
 

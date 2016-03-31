@@ -37,7 +37,7 @@ Configuring policy settings in this category can help you document attempts to a
 
 -   [Audit Credential Validation](audit-credential-validation.md)
 
--   [Audit Kerberos Authentication Service](audit-kerberos-authentication-service-sec-audit.md)
+-   [Audit Kerberos Authentication Service](audit-kerberos-authentication-service.md)
 
 -   [Audit Kerberos Service Ticket Operations](audit-kerberos-service-ticket-operations.md)
 
@@ -69,7 +69,7 @@ Detailed Tracking security policy settings and audit events can be used to monit
 
 -   [Audit Process Creation](audit-process-creation.md)
 
--   [Audit Process Termination](audit-process-termination-sec-audit.md)
+-   [Audit Process Termination](audit-process-termination.md)
 
 -   [Audit RPC Events](audit-rpc-events.md)
 
@@ -89,7 +89,7 @@ DS Access security audit policy settings provide a detailed audit trail of attem
 
 Logon/Logoff security policy settings and audit events allow you to track attempts to log on to a computer interactively or over a network. These events are particularly useful for tracking user activity and identifying potential attacks on network resources. This category includes the following subcategories:
 
--   [Audit Account Lockout](audit-account-lockout-sec-audit.md)
+-   [Audit Account Lockout](audit-account-lockout.md)
 
 -   [Audit User/Device Claims](audit-user-device-claims.md)
 
@@ -123,7 +123,7 @@ This category includes the following subcategories:
 
 -   [Audit Certification Services](audit-certification-services.md)
 
--   [Audit Detailed File Share](audit-detailed-file-share-sec-audit.md)
+-   [Audit Detailed File Share](audit-detailed-file-share.md)
 
 -   [Audit File Share](audit-file-share.md)
 
@@ -131,11 +131,11 @@ This category includes the following subcategories:
 
 -   [Audit Filtering Platform Connection](audit-filtering-platform-connection.md)
 
--   [Audit Filtering Platform Packet Drop](audit-filtering-platform-packet-drop-sec-audit.md)
+-   [Audit Filtering Platform Packet Drop](audit-filtering-platform-packet-drop.md)
 
 -   [Audit Handle Manipulation](audit-handle-manipulation.md)
 
--   [Audit Kernel Object](audit-kernel-object-sec-audit.md)
+-   [Audit Kernel Object](audit-kernel-object.md)
 
 -   [Audit Other Object Access Events](audit-other-object-access-events.md)
 
@@ -143,7 +143,7 @@ This category includes the following subcategories:
 
 -   [Audit Removable Storage](audit-removable-storage.md)
 
--   [Audit SAM](audit-sam-sec-audit.md)
+-   [Audit SAM](audit-sam.md)
 
 -   [Audit Central Access Policy Staging](audit-central-access-policy-staging.md)
 
@@ -167,11 +167,11 @@ Policy Change audit events allow you to track changes to important security poli
 
 Permissions on a network are granted for users or computers to complete defined tasks. Privilege Use security policy settings and audit events allow you to track the use of certain permissions on one or more systems. This category includes the following subcategories:
 
--   [Audit Non-Sensitive Privilege Use](audit-non-sensitive-privilege-use-sec-audit.md)
+-   [Audit Non-Sensitive Privilege Use](audit-non-sensitive-privilege-use.md)
 
--   [Audit Sensitive Privilege Use](audit-sensitive-privilege-use-sec-audit.md)
+-   [Audit Sensitive Privilege Use](audit-sensitive-privilege-use.md)
 
--   [Audit Other Privilege Use Events](audit-other-privilege-use-events-sec-audit.md)
+-   [Audit Other Privilege Use Events](audit-other-privilege-use-events.md)
 
 **System**
 
@@ -202,9 +202,9 @@ If a file or folder SACL and a Global Object Access Auditing policy setting (or 
 
 This category includes the following subcategories:
 
--   [File System (Global Object Access Auditing)](file-system--global-object-access-auditing--sec-audit.md)
+-   [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md)
 
--   [Registry (Global Object Access Auditing)](registry--global-object-access-auditing--sec-audit.md)
+-   [Registry (Global Object Access Auditing)](registry-global-object-access-auditing.md)
 
  
 

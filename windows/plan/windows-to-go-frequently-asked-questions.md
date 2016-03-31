@@ -436,7 +436,7 @@ There is no support in Windows for upgrading a Windows To Go drive. Deployed Win
 
 -   [Windows To Go Step by Step Wiki](http://go.microsoft.com/fwlink/p/?LinkId=618950)
 
--   [Windows To Go: feature overview](windows-to-go-feature-overview-scenario.md)
+-   [Windows To Go: feature overview](windows-to-go-overview.md)
 
 -   [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)
 

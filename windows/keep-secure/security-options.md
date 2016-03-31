@@ -79,11 +79,11 @@ For info about setting security policies, see [Configure security policy setting
 <td align="left"><p>Describes the best practices, location, values, management practices, and security considerations for the <strong>Audit: Shut down system immediately if unable to log security audits</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax](dcom-machine-access-restrictions-in-security-descriptor-definition-language--sddl--syntax.md)</p></td>
+<td align="left"><p>[DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax](dcom-machine-access-restrictions-in-security-descriptor-definition-language-sddl-syntax.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax</strong> policy setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax](dcom-machine-launch-restrictions-in-security-descriptor-definition-language--sddl--syntax.md)</p></td>
+<td align="left"><p>[DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax](dcom-machine-launch-restrictions-in-security-descriptor-definition-language-sddl-syntax.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
@@ -119,15 +119,15 @@ For info about setting security policies, see [Configure security policy setting
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Domain controller: Refuse machine account password changes</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data--always.md)</p></td>
+<td align="left"><p>[Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Domain member: Digitally encrypt or sign secure channel data (always)</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data--when-possible.md)</p></td>
+<td align="left"><p>[Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Domain member: Digitally encrypt secure channel data (when possible)</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data--when-possible.md)</p></td>
+<td align="left"><p>[Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Domain member: Digitally sign secure channel data (when possible)</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">
@@ -139,7 +139,7 @@ For info about setting security policies, see [Configure security policy setting
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Domain member: Maximum machine account password age</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Domain member: Require strong (Windows 2000 or later) session key](domain-member-require-strong--windows-2000-or-later--session-key.md)</p></td>
+<td align="left"><p>[Domain member: Require strong (Windows 2000 or later) session key](domain-member-require-strong-windows-2000-or-later-session-key.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Domain member: Require strong (Windows 2000 or later) session key</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
@@ -171,7 +171,7 @@ For info about setting security policies, see [Configure security policy setting
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>Interactive logon: Message title for users attempting to log on</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache--in-case-domain-controller-is-not-available.md)</p></td>
+<td align="left"><p>[Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>Interactive logon: Number of previous logons to cache (in case domain controller is not available)</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
@@ -191,11 +191,11 @@ For info about setting security policies, see [Configure security policy setting
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>Interactive logon: Smart card removal behavior</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications--always.md)</p></td>
+<td align="left"><p>[Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>Microsoft network client: Digitally sign communications (always)</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications--if-server-agrees.md)</p></td>
+<td align="left"><p>[Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-if-server-agrees.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Microsoft network client: Digitally sign communications (if server agrees)</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
@@ -211,11 +211,11 @@ For info about setting security policies, see [Configure security policy setting
 <td align="left"><p>Describes the best practices, location, values, management, and security considerations for the <strong>Microsoft network server: Attempt S4U2Self to obtain claim information</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications--always.md)</p></td>
+<td align="left"><p>[Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>Microsoft network server: Digitally sign communications (always)</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications--if-client-agrees.md)</p></td>
+<td align="left"><p>[Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-if-client-agrees.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>Microsoft network server: Digitally sign communications (if client agrees)</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">
@@ -303,11 +303,11 @@ For info about setting security policies, see [Configure security policy setting
 <td align="left"><p>This security policy reference topic for the IT professional describes the best practices, location, values, policy management and security considerations for this policy setting. This information applies to computers running at least the Windows Server 2008 operating system.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Network security: Minimum session security for NTLM SSP based (including secure RPC) clients](network-security-minimum-session-security-for-ntlm-ssp-based--including-secure-rpc--clients.md)</p></td>
+<td align="left"><p>[Network security: Minimum session security for NTLM SSP based (including secure RPC) clients](network-security-minimum-session-security-for-ntlm-ssp-based-including-secure-rpc-clients.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Network security: Minimum session security for NTLM SSP based (including secure RPC) servers](network-security-minimum-session-security-for-ntlm-ssp-based--including-secure-rpc--servers.md)</p></td>
+<td align="left"><p>[Network security: Minimum session security for NTLM SSP based (including secure RPC) servers](network-security-minimum-session-security-for-ntlm-ssp-based-including-secure-rpc-servers.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>Network security: Minimum session security for NTLM SSP based (including secure RPC) servers</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
@@ -367,7 +367,7 @@ For info about setting security policies, see [Configure security policy setting
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>System objects: Require case insensitivity for non-Windows subsystems</strong> security policy setting.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)](system-objects-strengthen-default-permissions-of-internal-system-objects--eg-symbolic-links.md)</p></td>
+<td align="left"><p>[System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)](system-objects-strengthen-default-permissions-of-internal-system-objects.md)</p></td>
 <td align="left"><p>Describes the best practices, location, values, policy management and security considerations for the <strong>System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)</strong> security policy setting.</p></td>
 </tr>
 <tr class="even">

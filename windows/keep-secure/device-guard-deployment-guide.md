@@ -18,6 +18,8 @@ author: brianlic-msft
 Microsoft Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security. Windows 10 employs Device Guard as well as code integrity and advanced hardware features such as CPU virtualization extensions, Trusted Platform Module, and second-level address translation to offer comprehensive modern security to its users. This guide explores the individual features in Device Guard as well as how to plan for, configure, and deploy them.
 
 ## Introduction to Device Guard
+
+
 Today’s security threat landscape is more aggressive than ever before. Modern malicious attacks are focused on revenue generation, intellectual property theft, and targeted system degradation, which results in financial loss. Many of these modern attackers are sponsored by nation states with unknown motives and large cyber terrorism budgets. These threats can enter a company through something as simple as an email message and can permanently damage its reputation for securing its software assets, as well as having significant financial impact. Windows 10 introduces several new security features that help mitigate a large percentage of today’s known threats.
 
 It is estimated that more than 300,000 new malware variants are discovered daily. Unfortunately, companies currently use an ancient method to discover this infectious software and prevent its use. In fact, current PCs trust everything that runs until malware signatures determine whether a threat exists; then, the antimalware software attempts to clean the PC, often after the malicious software’s effect has already been noticed. This signature-based system focuses on reacting to an infection and ensuring that the particular infection does not happen again. In this model, the system that drives malware detection relies on the discovery of malicious software; only then can a signature be provided to the client to remediate it, which implies that a computer must be infected first. The time between the detection of the malware and a client being issued a signature could mean the difference between losing data and staying safe.
@@ -29,6 +31,8 @@ Device Guard breaks the current model of detection first-block later, and allows
 Device Guard's features revolutionize the Windows operating system’s security by taking advantage of new virtualization-based security (VBS) options and the trust-nothing mobile device operating system model, which makes its defenses much more difficult for malware to penetrate. By using configurable code integrity policies, organizations are able to choose exactly which applications are allowed to run in their environment. Configurable code integrity is not limited to Windows Store applications and can be used with existing unsigned or signed Win32 applications, without the requirement that the application be repackaged. In addition, configurable code integrity can be deployed as an individual feature if organizations don’t possess the required hardware for Device Guard. Along with code integrity, Windows 10 leverages advanced hardware features such as CPU virtualization extensions, input/output memory management units (IOMMUs), Trusted Platform Module (TPM), and second-level address translation (SLAT) to offer comprehensive modern security to its users. Device Guard deployed with configurable code integrity and Credential Guard will be among the most impactful client-side security deployments an organization can implement today. In this guide, you learn about the individual features found within Device Guard as well as how to plan for, configure, and deploy them. Device Guard with configurable code integrity is intended for deployment alongside additional threat-mitigating Windows features such as Credential Guard and AppLocker.
 
 ## Device Guard overview
+
+
 Device Guard is a feature set that consists of both hardware and software system integrity hardening features. These features revolutionize the Windows operating system’s security by taking advantage of new virtualization-based security options and the trust-nothing mobile device operating system model. A key feature in this model is called *configurable code integrity*, which allows your organization to choose exactly which software or trusted software publishers are allowed to run code on your client machines—exactly what has made mobile phone security so successful. In addition, Device Guard offers organizations a way to sign existing line-of-business (LOB) applications so that they can trust their own code, without the requirement that the application be repackaged. Also, this same method of signing provides organizations with a way to trust individual third-party applications. Device Guard—with configurable code integrity, Credential Guard, and AppLocker—is the most complete security defense that any Microsoft product has ever been able to offer a Windows client.
 
 Advanced hardware features such as CPU virtualization extensions, IOMMUs, and SLAT, drive these new client security offerings. By integrating these hardware features further into the core operating system, Windows 10 leverages them in new ways. For example, the same type 1 hypervisor technology that is used to run virtual machines in Microsoft Hyper-V is used to isolate core Windows services into a virtualization-based, protected container. This is just one example of how Windows 10 integrates advanced hardware features deeper into the operating system to offer comprehensive modern security to its users. These hardware features are now available in consumer and enterprise PC markets and are discussed in detail in the [Hardware considerations](#hardware) section.
@@ -59,6 +63,8 @@ Although AppLocker is not considered a new Device Guard feature, it complements 
 
 **Note**  One example in which Device Guard functionality needs AppLocker supplementation is when your organization would like to limit universal applications. Universal applications have already been validated by Microsoft to be trustworthy to run, but an organization may not want to allow specific universal applications to run in their environment. You can accomplish this enforcement by using an AppLocker rule.
 
+ 
+
 AppLocker and Device Guard should run side-by-side in your organization, which offers the best of both security features at the same time and provides the most comprehensive security to as many devices as possible. In addition to these features, Microsoft recommends that you continue to maintain an enterprise antivirus solution for a well-rounded enterprise security portfolio.
 
 ### <a href="" id="dg-with-cg"></a>
@@ -80,8 +86,9 @@ You can easily manage Device Guard features by using the familiar enterprise and
 -   **Windows PowerShell**. Windows PowerShell is primarily used to create and service code integrity policies. These policies represent the most powerful component of Device Guard. For a step-by-step walkthrough of how to create, audit, service, enforce, and deploy code integrity policies, see the [Code integrity policies](#code-integrity-policies) section.
 
 These options provide the same experience you are used to in order to manage your existing enterprise management solutions. For more information about how to manage and deploy Device Guard hardware and code integrity features in your organization, see the [Device Guard deployment](#dg-deployment) section.
-
 ## Plan for Device Guard
+
+
 In this section, you will learn about the following topics:
 
 -   [Approach enterprise code integrity deployment](#approach-enterprise). Device Guard deployment in your organization requires a planned approach. In this section, you get high-level recommendations for how to approach enterprise code integrity deployment in your organization.
@@ -94,9 +101,12 @@ In this section, you will learn about the following topics:
 
 ## <a href="" id="approach-enterprise"></a>Approach enterprise code integrity deployment
 
+
 Enterprises that want to consider Device Guard should not expect deployment to their entire organization overnight. Device Guard implementation requires that you plan for both end-user and IT pro impact. In addition, the deployment of Device Guard features to your enterprise requires a planned, phased approach to ensure that end-user systems are fully capable and ready to enforce these new security restrictions. Perform the following high-level tasks to approach the deployment of Device Guard to your enterprise:
 
-1.  **Group devices into similar functions**. Categorize machines into the groups described in the [Device Guard deployment scenarios](#device-guard-deployment) section. This begins the roadmap for your Device Guard deployment and provides groups of easier and more difficult implementations. From there, assess the quantity of necessary Device Guard policies. The easiest solution is to lock down your entire enterprise, but it might not fit your individual departments’ needs.<p>To discover an appropriate number of policies for your organization, try to separate the defined groups into departments or roles. Then ask some questions: What software does each department or role need to do their job? Should they be able to install and run other departments’ software? Do we need to create a base code integrity policy that aligns with our application catalog? Should users be able to install any application or only choose from an “allowed” list? Do we allow users to use their own peripheral devices? These questions will help you discover the number of necessary policies for your organization. Finally, try to focus on which people or departments would require an additional level of privileges. For example, should department x be able to install and run application xyz, even though no other department does? If the answer is yes and justifiable, you will need a secondary code integrity policy for that group. If not, you will likely be able to merge several policies to simplify management. For more information about configurable code integrity policies, see the [Code integrity policies](#code-integrity-policies) section.
+1.  **Group devices into similar functions**. Categorize machines into the groups described in the [Device Guard deployment scenarios](#device-guard-deployment) section. This begins the roadmap for your Device Guard deployment and provides groups of easier and more difficult implementations. From there, assess the quantity of necessary Device Guard policies. The easiest solution is to lock down your entire enterprise, but it might not fit your individual departments’ needs.
+
+    To discover an appropriate number of policies for your organization, try to separate the defined groups into departments or roles. Then ask some questions: What software does each department or role need to do their job? Should they be able to install and run other departments’ software? Do we need to create a base code integrity policy that aligns with our application catalog? Should users be able to install any application or only choose from an “allowed” list? Do we allow users to use their own peripheral devices? These questions will help you discover the number of necessary policies for your organization. Finally, try to focus on which people or departments would require an additional level of privileges. For example, should department x be able to install and run application xyz, even though no other department does? If the answer is yes and justifiable, you will need a secondary code integrity policy for that group. If not, you will likely be able to merge several policies to simplify management. For more information about configurable code integrity policies, see the [Code integrity policies](#code-integrity-policies) section.
 
 2.  **Create code integrity policies from “golden” PCs**. After you create the groups of devices, you can create code integrity policies to align with those groups, similar to the way you would manage corporate images. When you have separated these groups and set up golden PCs that mimic the software and hardware those individual groups require, create code integrity policies from each of them. After you create these, you can merge these code integrity policies to create a master policy, or you can manage and deploy them individually. For step-by-step instructions about how to create code integrity policies, see the [Create code integrity policies from golden PCs](#create-code-golden) section.
 
@@ -110,6 +120,7 @@ Enterprises that want to consider Device Guard should not expect deployment to t
 
 ## <a href="" id="device-guard-deployment"></a>Device Guard deployment scenarios
 
+
 To help simplify the deployment of Device Guard to your organization, Microsoft recommends that you group devices into the deployment scenarios described in this section. Device Guard is not a feature that organizations will just simply “turn on”; rather, it typically requires a phased implementation approach. To see where these scenarios fit into an overall Device Guard deployment approach, see the [Approach to enterprise code integrity deployment](#approach-enterprise) section.
 
 **Fixed-workload devices**
@@ -119,6 +130,8 @@ The lists of approved applications on fixed-workload devices rarely change as th
 Device Guard components that are applicable to fixed-workload devices include:
 
 -   KMCI VBS protection
+
+<!-- -->
 
 -   Enforced UMCI policy
 
@@ -150,6 +163,7 @@ Device Guard is not a good way to manage devices in a Bring Your Own Device (BYO
 
 ## Code signing adoption
 
+
 Code signing is crucial to the successful implementation of configurable code integrity policies. These policies can trust the signing certificates from both independent software vendors and customers. In Windows 10, all Windows Store applications are signed. Also, you can easily trust any other signed application by adding the signing certificate to the code integrity policy.
 
 For unsigned applications, customers have multiple options for signing them so that code integrity policies can trust them. The first option is traditional embedded code signing. Organizations that have in-house development teams can incorporate binary code signing into their application development process, and then simply add the signing certificate to their code integrity policies. The second option for signing unsigned applications is to use catalog files. In Windows 10, customers have the ability to create catalog files as they monitor the installation and initial run of an application. For more information about signing existing unsigned LOB applications or third-party applications, see the [Existing line-of-business applications](#existing-lob) section.
@@ -162,6 +176,8 @@ Until now, existing LOB applications were difficult to trust if they were signed
 
 **Note**  
 Catalog files are lists of individual binaries’ hash values. If the scanned application is updated, you will need to create a new catalog file. That said, binary signing is still highly recommended for any future applications so that no catalog files are needed.
+
+ 
 
 When you create a catalog file, you must sign it by using enterprise public key infrastructure (PKI), or a purchased code signing certificate. When signed, code integrity policies can trust the signer or signing certificate of those files. For information about catalog file signing, see the [Catalog files](#catalog-files) section.
 
@@ -239,6 +255,7 @@ Different hardware features are required to implement the various features of De
 
 ## <a href="" id="dg-deployment"></a>Device Guard deployment
 
+
 In this section, you learn about the following topics:
 
 -   [Configure hardware-based security features](#configure-hardware). This section explains how to enable the hardware-based security features in Device Guard. Also, you verify that the features are enabled by using both Windows Management Infrastructure (WMI) and Msinfo32.exe.
@@ -248,6 +265,7 @@ In this section, you learn about the following topics:
 -   [Code integrity policies](#code-integrity-policies). This section provides information on how to create, audit, service, merge, deploy, and remove signed and unsigned configurable code integrity policies.
 
 ## <a href="" id="configure-hardware"></a>Configure hardware-based security features
+
 
 Hardware-based security features make up a large part of Device Guard security offerings. VBS reinforces the most important feature of Device Guard: configurable code integrity. There are three steps to configure hardware-based security features in Device Guard:
 
@@ -266,6 +284,8 @@ In addition to the hardware requirements found in the [Hardware considerations](
 **Note**  
 You can configure these features manually by using Windows PowerShell or Deployment Image Servicing and Management. For specific information about these methods, refer to the [Credential Guard documentation](http://go.microsoft.com/fwlink/p/?LinkId=624529).
 
+ 
+
 ![figure 1](images/dg-fig1-enableos.png)
 
 Figure 1. Enable operating system features for VBS
@@ -280,6 +300,8 @@ Before you begin this process, verify that the target device meets the hardware 
 
 **Note**  
 There are two platform security levels for Secure Boot: stand-alone Secure Boot and Secure Boot with DMA protection. DMA protection provides additional memory protection but will be enabled only on systems whose processors include DMA protection (IOMMU) technologies. Without the presence of IOMMUs and with DMA protection disabled, customers will lose protection from driver-based attacks.
+
+ 
 
 1.  Navigate to the **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard** registry subkey.
 
@@ -298,24 +320,37 @@ Unfortunately, it would be time consuming to perform these steps manually on eve
 **Note**  
 Microsoft recommends that you test-enable this feature on a group of test machines before you deploy it to machines that are currently deployed to users.
 
+ 
 
 **Use Group Policy to deploy Secure Boot**
 
 <a href="" id="bkmk-depsecureboot"></a>
-1.  To create a new GPO, right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.<p>
-![figure 2](images/dg-fig2-createou.png)<br>Figure 2. Create a new OU-linked GPO
+1.  To create a new GPO, right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.
+
+    ![figure 2](images/dg-fig2-createou.png)
+
+    Figure 2. Create a new OU-linked GPO
 
 2.  Name the new GPO **Contoso Secure Boot GPO Test**. This example uses *Contoso Secure Boot GPO Test* as the name of the GPO. You can choose any name for this example. Ideally, the name would align with your existing GPO naming convention.
 
 3.  To open the Group Policy Management Editor, right-click the new GPO, and then click **Edit**.
 
-4.  Within the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Then, right-click **Turn On Virtualization Based Security**, and then click **Edit**.<p>
-![figure 3](images/dg-fig3-enablevbs.png)<br>Figure 3. Enable VBS
+4.  Within the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Then, right-click **Turn On Virtualization Based Security**, and then click **Edit**.
 
-5.  Select the **Enabled** option, and then select **Secure Boot and DMA Protection** from the **Select Platform Security Level** list.<p>
-![figure 4](images/device-guard-gp.png)<br>Figure 4. Enable Secure Boot
+    ![figure 3](images/dg-fig3-enablevbs.png)
 
-    **Note**<br>Device Guard Secure Boot is maximized when combined with DMA protection. If your hardware contains the IOMMUs required for DMA protection, be sure to select the **Secure Boot and DMA Protection** platform security level. If your hardware does not contain IOMMU, there are several mitigations provided by leveraging Secure Boot without DMA Protection.
+    Figure 3. Enable VBS
+
+5.  Select the **Enabled** option, and then select **Secure Boot and DMA Protection** from the **Select Platform Security Level** list.
+
+    ![figure 4](images/device-guard-gp.png)
+
+    Figure 4. Enable Secure Boot
+
+    **Note**  
+    Device Guard Secure Boot is maximized when combined with DMA protection. If your hardware contains the IOMMUs required for DMA protection, be sure to select the **Secure Boot and DMA Protection** platform security level. If your hardware does not contain IOMMU, there are several mitigations provided by leveraging Secure Boot without DMA Protection.
+
+     
 
 6.  Close the Group Policy Management Editor, and then restart the Windows 10 test computer. After you configure this setting, UEFI Secure Boot will be enabled upon restart.
 
@@ -332,6 +367,8 @@ Before you begin this process, verify that the desired computer meets the hardwa
 **Note**  
 All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. Microsoft recommends that you enable this feature on a group of test machines before you enable it on deployed machines.
 
+ 
+
 To configure virtualization-based protection of KMCI manually:
 
 1.  Navigate to the **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard** registry subkey.
@@ -345,9 +382,15 @@ It would be time consuming to perform these steps manually on every protected ma
 **Note**  
 Microsoft recommends that you test-enable this feature on a group of test computers before you deploy it to machines that are currently deployed to users. If untested, there is a possibility that this feature can cause system instability and ultimately cause the client operating system to fail.
 
+ 
+
 To use Group Policy to configure VBS of KMCI:
 
-1.  Create a new GPO: Right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.<p>![figure 5](images/dg-fig5-createnewou.png)<br>Figure 5. Create a new OU-linked GPO
+1.  Create a new GPO: Right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.
+
+    ![figure 5](images/dg-fig5-createnewou.png)
+
+    Figure 5. Create a new OU-linked GPO
 
 2.  Name the new GPO **Contoso VBS CI Protection GPO Test**.
 
@@ -355,9 +398,17 @@ To use Group Policy to configure VBS of KMCI:
 
 3.  Open the Group Policy Management Editor: Right-click the new GPO, and then click **Edit**.
 
-4.  Within the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Then, right-click **Turn On Virtualization Based Security**, and then click **Edit**.<p>![figure 6](images/dg-fig6-enablevbs.png)<br>Figure 6. Enable VBS
+4.  Within the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Then, right-click **Turn On Virtualization Based Security**, and then click **Edit**.
 
-5.  Select the **Enabled** option, and then select the **Enable Virtualization Based Protection of Code Integrity** check box.<p>![figure 7](images/dg-fig7-enablevbsofkmci.png)<br>Figure 7. Enable VBS of KMCI
+    ![figure 6](images/dg-fig6-enablevbs.png)
+
+    Figure 6. Enable VBS
+
+5.  Select the **Enabled** option, and then select the **Enable Virtualization Based Protection of Code Integrity** check box.
+
+    ![figure 7](images/dg-fig7-enablevbsofkmci.png)
+
+    Figure 7. Enable VBS of KMCI
 
 6.  Close the Group Policy Management Editor, and then restart the Windows 10 test computer. With this setting configured, the VBS of the KMCI will take effect upon restart.
 
@@ -386,9 +437,15 @@ To avoid spending an unnecessary amount of time in manual deployments, use Group
 **Note**  
 Microsoft recommends that you enable Credential Guard before you join a machine to the domain to ensure that all credentials are properly protected. Setting the appropriate registry subkeys during your imaging process would be ideal to achieve this protection.
 
+ 
+
 To use Group Policy to enable Credential Guard:
 
-1.  Create a new GPO: right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.<p>![figure 8](images/dg-fig8-createoulinked.png)<br>Figure 8. Create a new OU-linked GPO
+1.  Create a new GPO: right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here** .
+
+    ![figure 8](images/dg-fig8-createoulinked.png)
+
+    Figure 8. Create a new OU-linked GPO
 
 2.  Name the new GPO **Contoso Credential Guard GPO Test**.
 
@@ -396,19 +453,31 @@ To use Group Policy to enable Credential Guard:
 
 3.  Open the Group Policy Management Editor: right-click the new GPO, and then click **Edit**.
 
-4.  Within the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Right-click **Turn On Virtualization Based Security**, and then click **Edit**.<p>![figure 9](images/dg-fig9-enablevbs.png)<br>Figure 9. Enable VBS
+4.  Within the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Right-click **Turn On Virtualization Based Security**, and then click **Edit**.
 
-5.  Select the **Enabled** option, and then select the **Enable Credential Guard** check box.<p>![figure 10](images/dg-fig10-enablecredentialguard.png)<br>Figure 10. Enable Credential Guard
+    ![figure 9](images/dg-fig9-enablevbs.png)
+
+    Figure 9. Enable VBS
+
+5.  Select the **Enabled** option, and then select the **Enable Credential Guard** check box.
+
+    ![figure 10](images/dg-fig10-enablecredentialguard.png)
+
+    Figure 10. Enable Credential Guard
 
 6.  Close Group Policy Management Editor, and then restart the Windows 10 test computer.
-    
-    **Note**<br>
-    The default platform security level is **Secure Boot**. If IOMMUs are available within the protected machines, it is recommended that you select **Secure Boot and DMA Protection** to maximize the mitigations that are available through Credential Guard.  
+
+    **Note**  
+    The default platform security level is **Secure Boot**. If IOMMUs are available within the protected machines, it is recommended that you select **Secure Boot and DMA Protection** to maximize the mitigations that are available through Credential Guard.
+
+     
 
 7.  Check the test client event log for Device Guard GPOs.
 
 **Note**  
 All processed Device Guard policies are logged in event viewer under Application and Services Logs\\Microsoft\\Windows\\DeviceGuard-GPEXT\\Operational.
+
+ 
 
 For additional information about how Credential Guard works as well as additional configuration options, please refer to the [Credential Guard documentation](http://go.microsoft.com/fwlink/p/?LinkId=624529).
 
@@ -422,6 +491,8 @@ Windows 10 and Windows Server 2016 and later have a WMI class for Device Guard�
 The *Win32\_DeviceGuard* WMI class is only available on the Enterprise edition of Windows 10.
 
 The output of this command provides details of the available hardware-based security features as well as those features that are currently enabled. For detailed information about what each property means, refer to Table 1.
+
+ 
 
 Table 1. Win32\_DeviceGuard properties
 
@@ -504,13 +575,23 @@ Table 1. Win32\_DeviceGuard properties
 </tbody>
 </table>
 
-Another method to determine the available and enabled Device Guard features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the Device Guard properties are displayed at the bottom of the **System Summary** section, as shown in Figure 11.<p>![figure 11](images/dg-fig11-dgproperties.png)<br>Figure 11. Device Guard properties in the System Summary
+ 
+
+Another method to determine the available and enabled Device Guard features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the Device Guard properties are displayed at the bottom of the **System Summary** section, as shown in Figure 11.
+
+![figure 11](images/dg-fig11-dgproperties.png)
+
+Figure 11. Device Guard properties in the System Summary
 
 ## Catalog files
+
+
 Enforcement of Device Guard on a system requires that every trusted application have a signature or its binary hashes added to the code integrity policy. For many organizations, this can be an issue when considering unsigned LOB applications. To avoid the requirement that organizations repackage and sign these applications, Windows 10 includes a tool called Package Inspector that monitors an installation process for any deployed and executed binary files. If the tool discovers such files, it itemizes them in a catalog file. These catalog files offer you a way to trust your existing unsigned applications, whether developed in house or by a third party, as well as trust signed applications for which you do not want to trust the signer but rather the specific application. When created, these files can be signed, the signing certificates added to your existing code integrity policies, and the catalog files themselves distributed to the clients.
 
 **Note**  
 The Enterprise edition of Windows 10 or Windows Server 2016 is required to create and use catalog files.
+
+ 
 
 ### <a href="" id="create-catalog-files"></a>
 
@@ -521,12 +602,16 @@ The creation of catalog files is the first step to add an unsigned application t
 **Note**  
 When you establish a naming convention it makes it easier to detect deployed catalog files in the future. In this guide, you will use *\*-Contoso.cat* as the naming convention. For more information about why this practice is helpful to inventory or detect catalog files, see the [Inventory catalog files with System Center Configuration Manager](#inventory-cat-sccm) section.
 
+ 
+
 1.  Be sure that a code integrity policy is currently running in audit mode.
 
     Package Inspector does not always detect installation files that have been removed from the machine during the installation process. To ensure that these binaries are also trusted, the code integrity policy that you created and audited in the [Create code integrity policies from golden PCs](#create-code-golden) and [Audit code integrity policies](#audit-code-integrity) sections should be deployed, in audit mode, to the system on which you are running Package Inspector.
 
     **Note**  
-    This process should **not** be performed on a system running an enforced Device Guard policy, only with a policy running in audit mode. If a policy is currently being enforced, you will not be able to install and run the application. 
+    This process should **not** be performed on a system running an enforced Device Guard policy, only with a policy running in audit mode. If a policy is currently being enforced, you will not be able to install and run the application.
+
+     
 
 2.  Start Package Inspector, and then scan drive C:
 
@@ -534,6 +619,8 @@ When you establish a naming convention it makes it easier to detect deployed cat
 
     **Note**  
     Package inspector can monitor installations on any local drive. In this example, we install the application on drive C, but any other drive can be used.
+
+     
 
 3.  Copy the installation media to drive C.
 
@@ -546,6 +633,8 @@ When you establish a naming convention it makes it easier to detect deployed cat
     **Note**  
     Every binary that is run while Package Inspector is running will be captured in the catalog. Therefore, be sure not to run additional installations or updates during the scan to minimize the risk of trusting the incorrect binaries. Alternatively, if you want to add multiple applications to a single catalog file, simply repeat the installation and run process while the current scan is running.
 
+     
+
 5.  Stop the scan, and then generate definition and catalog files. When application installation and initial setup are finished, stop the Package Inspector scan and generate the catalog and definition files on your desktop by using the following commands:
 
     `$ExamplePath=$env:userprofile+"\Desktop"`
@@ -555,8 +644,11 @@ When you establish a naming convention it makes it easier to detect deployed cat
     `$CatDefName=$ExamplePath+"\LOBApp.cdf"`
 
     `PackageInspector.exe Stop C: -Name $CatFileName -cdfpath $CatDefName`
-     
-     **Note**<br>This scan catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries’ hash values.
+
+**Note**  
+This scan catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries’ hash values.
+
+ 
 
 When finished, the files will be saved to your desktop. To trust this catalog file within a code integrity policy, the catalog must first be signed. Then, the signing certificate can be included in the code integrity policy, and the catalog file can be distributed to the individual client machines. Catalog files can be signed by using a certificate and SignTool.exe, a free tool available in the Windows SDK. For more information about signing catalog files with SignTool.exe, see the [Catalog signing with SignTool.exe](#catsign-signtool) section.
 
@@ -603,6 +695,8 @@ If you do not have a code signing certificate, please see the [Create a Device G
     **Note**  
     In this example, you use the catalog file you created in the [Create catalog files](#create-catalog-files) section. If you are signing another catalog file, be sure to update the *$ExamplePath* and *$CatFileName* variables with the correct information.
 
+     
+
 2.  Import the code signing certificate. Import the code signing certificate that will be used to sign the catalog file to the signing user’s personal store. In this example, you use the certificate that you created in the [Create a Device Guard code signing certificate](#create-dg-code) section.
 
 3.  Sign the catalog file with Signtool.exe:
@@ -619,13 +713,21 @@ If you do not have a code signing certificate, please see the [Create a Device G
     </tbody>
     </table>
 
-    **Note**<br> 
+    **Note**  
     The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoDGSigningCert* is the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the machine on which you are attempting to sign the catalog file.
 
-    **Note**<br>
+     
+
+    **Note**  
     For additional information about Signtool.exe and all additional switches, visit [MSDN Sign Tool page](http://go.microsoft.com/fwlink/p/?LinkId=624163).
 
-4.  Verify the catalog file digital signature. Right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 12.<p>![figure 12](images/dg-fig12-verifysigning.png)<br>Figure 12. Verify that the signing certificate exists
+     
+
+4.  Verify the catalog file digital signature. Right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 12.
+
+    ![figure 12](images/dg-fig12-verifysigning.png)
+
+    Figure 12. Verify that the signing certificate exists
 
 5.  Copy the catalog file to C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}.
 
@@ -640,17 +742,21 @@ To simplify the management of catalog files, you can use Group Policy preference
 **Note**  
 This walkthrough requires that you have previously created a signed catalog file and have a Windows 10 client PC on which to test a Group Policy deployment. For more information about how to create and sign a catalog file, see the [Catalog files](#catalog-files) section.
 
+ 
+
 To deploy a catalog file with Group Policy:
 
 1.  From either a domain controller or a client PC that has Remote Server Administration Tools (RSAT) installed, open the Group Policy Management Console (GPMC) by running **GPMC.MSC** or by searching for Group Policy Management.
 
-2. Create a new GPO: Right-click the DG Enabled PCs OU, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 13.
-    
-    **Note**<br>
+2.  Create a new GPO: right-click the DG Enabled PCs OU, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 13.
+
+    **Note**  
     The DG Enabled PCs OU is just an example of where to link the test GPO that you created in this section. You can use any OU name. Also, security group filtering is an option when you consider policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section.
-    
+
+     
+
     ![figure 13](images/dg-fig13-createnewgpo.png)
-    
+
     Figure 13. Create a new GPO
 
 3.  Name the new GPO **Contoso DG Catalog File GPO Test**.
@@ -682,6 +788,8 @@ To deploy a catalog file with Group Policy:
     **Note**  
     LOBApp-Contoso.cat is not a required catalog name: This name was used in the [Create catalog files](#create-catalog-files) section, and so it was used here, as well.
 
+     
+
 10. On the **Common** tab of the **New File Properties** dialog box, select the **Remove this item when it is no longer applied** option. Doing this ensures that the catalog file is removed from every system, in case you ever need to stop trusting this application.
 
 11. Click **OK** to complete file creation.
@@ -696,6 +804,8 @@ As an alternative to Group Policy, you can use System Center Configuration Manag
 
 **Note**  
 The following example uses a network share named \\\\Shares\\CatalogShare as a source for the catalog files. If you have collection specific catalog files, or prefer to deploy them individually, use whichever folder structure works best for your organization.
+
+ 
 
 1.  Open the Configuration Manager console, and select the Software Library workspace.
 
@@ -772,6 +882,8 @@ When catalog files have been deployed to the machines within your environment, w
 **Note**  
 A standard naming convention for your catalog files will significantly simplify the catalog file software inventory process. In this example, *-Contoso* has been added to all catalog file names.
 
+ 
+
 1.  Open the Configuration Manager console, and select the Administration workspace.
 
 2.  Navigate to **Overview\\Client Settings**, right-click **Client Settings**, and then click **Create Custom Client Device Settings**.
@@ -794,6 +906,8 @@ A standard naming convention for your catalog files will significantly simplify 
 
     **Note**  
     **\*Contoso.cat** is the naming convention used in this example. This should mimic the naming convention you use for your catalog files.
+
+     
 
 7.  In the **Path Properties** dialog box, select **Variable or path name**, and then type **C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}** in the box, as shown in Figure 21.
 
@@ -818,7 +932,11 @@ At the time of the next software inventory cycle, when the targeted clients rece
 **Note**  
 If nothing is displayed in this view, navigate to Software\\Last Software Scan in Resource Explorer to verify that the client has recently completed a software inventory scan.
 
+ 
+
 ## Code integrity policies
+
+
 Code integrity policies maintain the standards by which a computer running Windows 10 determines whether an application is trustworthy and can be run. For an overview of code integrity, see the [Configurable code integrity](#config-code) section.
 
 A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. Code integrity policies follow a similar methodology, that begins with the establishment of a golden PC. Like when imaging, you can have multiple golden PCs based on model, department, application set, and so on. Although the thought process around the creation of code integrity policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional code integrity policies based on what should be allowed to be installed and run and for whom.
@@ -826,12 +944,16 @@ A common system imaging practice in today’s IT organization is to establish a 
 **Note**  
 Each machine can have only **one** code integrity policy at a time. Whichever way you deploy this policy, it is renamed to SIPolicy.p7b and copied to C:\\Windows\\System32\\CodeIntegrity. Keep this in mind when you create your code integrity policies.
 
+ 
+
 Optionally, code integrity policies can align with your software catalog as well as any IT department–approved applications. One simple method to implement code integrity policies is to use existing images to create one master code integrity policy. You do so by creating a code integrity policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, should the applications be installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged or serviced, and managed.
 
 **Note**  
 The following section assumes that you will deploy code integrity policies as part of your Device Guard deployment. Alternatively, configurable code integrity is available without the enablement of Device Guard.
 
- ### <a href="" id="code-integrity-policy-rules"></a>
+ 
+
+### <a href="" id="code-integrity-policy-rules"></a>
 
 **Code integrity policy rules**
 

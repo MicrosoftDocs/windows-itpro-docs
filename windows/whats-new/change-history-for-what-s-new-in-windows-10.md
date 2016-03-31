@@ -53,7 +53,7 @@ This topic lists new and updated topics in the [What's new in Windows 10](index.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[Browser: Microsoft Edge and Internet Explorer 11](microsoft-edge-and-internet-explorer-11.md)</td>
+<td align="left">[Browser: Microsoft Edge and Internet Explorer 11](edge-ie11-whats-new-overview.md))</td>
 <td align="left"><p>Updated to include the &quot;Applies to&quot; section</p></td>
 </tr>
 </tbody>
@@ -67,7 +67,7 @@ This topic lists new and updated topics in the [What's new in Windows 10](index.
 | New or changed topic                                          | Description |
 |---------------------------------------------------------------|-------------|
 | [Security](security.md)                                      | New         |
-| [Windows Update for Business](windows-update-for-busines.md) | New         |
+| [Windows Update for Business](windows-update-for-business.md) | New         |
 
  
 
@@ -84,7 +84,7 @@ This topic lists new and updated topics in the [What's new in Windows 10](index.
 | [Security auditing](security-auditing.md)                                                                       | New         |
 | [Trusted Platform Module](trusted-platform-module.md)                                                           | New         |
 | [Windows spotlight on the lock screen](windows-spotlight.md)                                                    | New         |
-| [Windows Store for Business overview](business-store-for-windows-10.md)                                         | New         |
+| [Windows Store for Business overview](windows-store-for-business-overview.md))                                         | New         |
 
  
 

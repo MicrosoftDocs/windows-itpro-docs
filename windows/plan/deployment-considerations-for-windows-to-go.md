@@ -314,7 +314,7 @@ If you choose to not use the Windows To Go startup options or are using a PC run
 ## Related topics
 
 
-[Windows To Go: feature overview](windows-to-go-feature-overview-scenario.md)
+[Windows To Go: feature overview](windows-to-go-overview.md)
 
 [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)
 

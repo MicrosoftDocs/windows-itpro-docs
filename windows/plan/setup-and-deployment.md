@@ -34,62 +34,29 @@ To use Windows Update for Business, Windows 10-based devices must first be conf
 
 Windows Update for Business allows administrators to control when upgrades and updates are deployed to their Windows 10 clients by specifying deferral windows from when they are initially made available on the Windows Update service. As mentioned, there are restrictions as to how long you can delay upgrades and updates. The following table details these restrictions, per deployment category type:
 
-<table>
-<tr>
-<td rowspan="2">
-<p><b>Group Policy keys</b></p>
-</td>
-<td>
-<p>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\DeferUpgradePeriod</p>
-<ul>
-<li>
-<p>Values: 0-8 where each unit for upgrade is a month
+**Group Policy keys**
 
-</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-<p>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\DeferUpdatePeriod</p>
-<ul>
-<li>
-<p>Values: 0-4 where each unit for update is a week
-</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td rowspan="2">
-<p><b>MDM</b></p>
-<p><i>./Vendor/MSFT/Update/DeferUpgrade</i></p>
-</td>
-<td>
-<p>Software\Microsoft\PolicyManager\current\Update\RequireDeferUpgrade
-</p>
-<ul>
-<li>
-<p>Values: 0-8 where each unit for upgrade is a month
-	
-</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-<p>Software\Microsoft\PolicyManager\current\Update\RequireDeferUpdate</p>
-<ul>
-<li>
-<p>Values: 0-4 where each unit for update is a week
-</p>
-</li>
-</ul>
-</td>
-</tr>
-</table>
+HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\DeferUpgradePeriod
+
+-   Values: 0-8 where each unit for upgrade is a month
+
+HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\DeferUpdatePeriod
+
+-   Values: 0-4 where each unit for update is a week
+
+**MDM**
+
+*./Vendor/MSFT/Update/DeferUpgrade*
+
+Software\\Microsoft\\PolicyManager\\current\\Update\\RequireDeferUpgrade
+
+-   Values: 0-8 where each unit for upgrade is a month
+
+Software\\Microsoft\\PolicyManager\\current\\Update\\RequireDeferUpdate
+
+-   Values: 0-4 where each unit for update is a week
+
+ 
 
 Administrators can control deferral periods with Group Policy Objects by using the [Local Group Policy Editor (GPEdit)](http://go.microsoft.com/fwlink/p/?LinkId=734030) or, for domain joined systems, [Group Policy Management Console (GPMC)](http://go.microsoft.com/fwlink/p/?LinkId=699325). For additional details on Group Policy management see [Group Policy management for IT pros](http://go.microsoft.com/fwlink/p/?LinkId=699282).
 

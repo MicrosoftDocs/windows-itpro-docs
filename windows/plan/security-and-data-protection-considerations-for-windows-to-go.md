@@ -60,7 +60,7 @@ Windows to Go is a core capability of Windows when it is deployed on the drive a
 ## Related topics
 
 
-[Windows To Go: feature overview](windows-to-go-feature-overview-scenario.md)
+[Windows To Go: feature overview](windows-to-go-overview.md)
 
 [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)
 

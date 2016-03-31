@@ -43,12 +43,12 @@ BitLocker Drive Encryption is a data protection feature that integrates with the
 
 -   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the "Configure pre-boot recovery message and URL" section in [BitLocker Group Policy settings](../keep-secure/bitlocker-group-policy-settings.md).
 
-[Learn how to deploy and manage BitLocker within your organization](../keep-secure/bitlocker-overview-roletech-overview.md).
+[Learn how to deploy and manage BitLocker within your organization](../keep-secure/bitlocker-overview.md).
 
 ## Related topics
 
 
-[Trusted Platform Module](../keep-secure/trusted-platform-module-technology-overview.md)
+[Trusted Platform Module](../keep-secure/trusted-platform-module-overview.md)
 
  
 

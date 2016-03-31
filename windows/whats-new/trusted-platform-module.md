@@ -48,7 +48,7 @@ Some things that you can check on the device are:
 
  
 
-[Learn how to deploy and manage TPM within your organization](../keep-secure/trusted-platform-module-technology-overview.md).
+[Learn how to deploy and manage TPM within your organization](../keep-secure/trusted-platform-module-overview.md).
 
  
 

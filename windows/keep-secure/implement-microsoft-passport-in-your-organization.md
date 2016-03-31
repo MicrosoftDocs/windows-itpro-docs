@@ -29,119 +29,104 @@ The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. 
 
 The following table lists the Group Policy settings that you can configure for Passport use in your workplace. These policy settings are available in **Computer Configuration** &gt; **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Passport for Work**.
 
-<table>
-<tr>
-<th colspan="2">Policy</th>
-<th>Options</th>
-</tr>
-<tr>
-<td>Use Microsoft Passport for Work</td>
-<td></td>
-<td>
-<p><b>Not configured</b>: Users can provision Passport for Work, which encrypts their domain password.</p>
-<p><b>Enabled</b>: Device provisions Passport for Work using keys or certificates for all users.</p>
-<p><b>Disabled</b>: Device does not provision Passport for Work for any user.</p>
-</td>
-</tr>
-<tr>
-<td>Use a hardware security device</td>
-<td></td>
-<td>
-<p><b>Not configured</b>: Passport for Work will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
-<p><b>Enabled</b>: Passport for Work will only be provisioned using TPM.</p>
-<p><b>Disabled</b>: Passport for Work will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
-</td>
-</tr>
-<tr>
-<td>Use biometrics</td>
-<td></td>
-<td>
-<p><b>Not configured</b>: Biometrics can be used as a gesture in place of a PIN.</p>
-<p><b>Enabled</b>: Biometrics can be used as a gesture in place of a PIN.</p>
-<p><b>Disabled</b>: Only a PIN can be used as a gesture.</p>
-</td>
-</tr>
-<tr>
-<td rowspan="8">PIN Complexity</td>
-<td>Require digits</td>
-<td>
-<p><b>Not configured</b>: Users must include a digit in their PIN.</p>
-<p><b>Enabled</b>: Users must include a digit in their PIN.</p>
-<p><b>Disabled</b>: Users cannot use digits in their PIN.</p>
-</td>
-</tr>
-<tr>
-<td>Require lowercase letters</td>
-<td>
-<p><b>Not configured</b>: Users cannot use lowercase letters in their PIN.</p>
-<p><b>Enabled</b>: Users must include at least one lowercase letter in their PIN.</p>
-<p><b>Disabled</b>: Users cannot use lowercase letters in their PIN.</p>
-</td>
-</tr>
-<tr>
-<td>Maximum PIN length</td>
-<td>
-<p><b>Not configured</b>: PIN length must be less than or equal to 127.</p>
-<p><b>Enabled</b>: PIN length must be less than or equal to the number you specify.</p>
-<p><b>Disabled</b>: PIN length must be less than or equal to 127.</p>
-</td>
-</tr>
-<tr>
-<td>Minimum PIN length</td>
-<td>
-<p><b>Not configured</b>: PIN length must be greater  than or equal to 4.</p>
-<p><b>Enabled</b>: PIN length must be greater than or equal to the number you specify.</p>
-<p><b>Disabled</b>: PIN length must be greater  than or equal to 4.</p>
-</td>
-</tr>
-<tr>
-<td>Expiration</td>
-<td>
-<p><b>Not configured</b>: PIN does not expire.</p>
-<p><b>Enabled</b>: PIN can be set to expire after any number of days between 1 and 730, or PIN can be set to never expire by setting policy to 0.</p>
-<p><b>Disabled</b>: PIN does not expire.</p>
-</td>
-</tr>
-<tr>
-<td>History</td>
-<td>
-<p><b>Not configured</b>: Previous PINs are not stored.</p>
-<p><b>Enabled</b>: Specify the number of previous PINs that can be associated to a user account that can't be reused.</p>
-<p><b>Disabled</b>: Previous PINs are not stored.</p>
-<div class="alert"><b>Note</b>  Current PIN is included in PIN history.</div>
-<div> </div>
-</td>
-</tr>
-<tr>
-<td>Require special characters</td>
-<td>
-<p><b>Not configured</b>: Users cannot include a special character in their PIN.</p>
-<p><b>Enabled</b>: Users must include at least one special character in their PIN.</p>
-<p><b>Disabled</b>: Users cannot include a special character in their PIN.</p>
-</td>
-</tr>
-<tr>
-<td>Require uppercase letters</td>
-<td>
-<p><b>Not configured</b>: Users cannot include an uppercase letter in their PIN.</p>
-<p><b>Enabled</b>: Users must include at least one uppercase letter in their PIN.</p>
-<p><b>Disabled</b>: Users cannot include an uppercase letter in their PIN.</p>
-</td>
-</tr>
-<tr>
-<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a></td>
-<td>
-<p>Use Remote Passport</p>
-<div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
-<div> </div>
-</td>
-<td>
-<p><b>Not configured</b>: Remote Passport is disabled.</p>
-<p><b>Enabled</b>: Users can use a portable, registered device as a companion device for desktop authentication.</p>
-<p><b>Disabled</b>: Remote Passport is disabled.</p>
-</td>
-</tr>
-</table>
+Policy
+Options
+Use Microsoft Passport for Work
+**Not configured**: Users can provision Passport for Work, which encrypts their domain password.
+
+**Enabled**: Device provisions Passport for Work using keys or certificates for all users.
+
+**Disabled**: Device does not provision Passport for Work for any user.
+
+Use a hardware security device
+**Not configured**: Passport for Work will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.
+
+**Enabled**: Passport for Work will only be provisioned using TPM.
+
+**Disabled**: Passport for Work will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.
+
+Use biometrics
+**Not configured**: Biometrics can be used as a gesture in place of a PIN.
+
+**Enabled**: Biometrics can be used as a gesture in place of a PIN.
+
+**Disabled**: Only a PIN can be used as a gesture.
+
+PIN Complexity
+Require digits
+**Not configured**: Users must include a digit in their PIN.
+
+**Enabled**: Users must include a digit in their PIN.
+
+**Disabled**: Users cannot use digits in their PIN.
+
+Require lowercase letters
+**Not configured**: Users cannot use lowercase letters in their PIN.
+
+**Enabled**: Users must include at least one lowercase letter in their PIN.
+
+**Disabled**: Users cannot use lowercase letters in their PIN.
+
+Maximum PIN length
+**Not configured**: PIN length must be less than or equal to 127.
+
+**Enabled**: PIN length must be less than or equal to the number you specify.
+
+**Disabled**: PIN length must be less than or equal to 127.
+
+Minimum PIN length
+**Not configured**: PIN length must be greater than or equal to 4.
+
+**Enabled**: PIN length must be greater than or equal to the number you specify.
+
+**Disabled**: PIN length must be greater than or equal to 4.
+
+Expiration
+**Not configured**: PIN does not expire.
+
+**Enabled**: PIN can be set to expire after any number of days between 1 and 730, or PIN can be set to never expire by setting policy to 0.
+
+**Disabled**: PIN does not expire.
+
+History
+**Not configured**: Previous PINs are not stored.
+
+**Enabled**: Specify the number of previous PINs that can be associated to a user account that can't be reused.
+
+**Disabled**: Previous PINs are not stored.
+
+**Note**  Current PIN is included in PIN history.
+
+ 
+
+Require special characters
+**Not configured**: Users cannot include a special character in their PIN.
+
+**Enabled**: Users must include at least one special character in their PIN.
+
+**Disabled**: Users cannot include a special character in their PIN.
+
+Require uppercase letters
+**Not configured**: Users cannot include an uppercase letter in their PIN.
+
+**Enabled**: Users must include at least one uppercase letter in their PIN.
+
+**Disabled**: Users cannot include an uppercase letter in their PIN.
+
+[Remote Passport](prepare-people-to-use-microsoft-passport.md#bmk-remote)
+Use Remote Passport
+
+**Note**  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+
+ 
+
+**Not configured**: Remote Passport is disabled.
+
+**Enabled**: Users can use a portable, registered device as a companion device for desktop authentication.
+
+**Disabled**: Remote Passport is disabled.
+
+ 
 
 ## MDM policy settings for Passport
 
@@ -338,7 +323,7 @@ The work PIN is managed using the same Passport policies that you can use to man
 ## Related topics
 
 
-[Windows Hello biometrics in the enterprise](windows-hello-biometrics-in-the-enterprise.md)
+[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md))
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 

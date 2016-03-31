@@ -84,7 +84,7 @@ After you're done, the files are saved to your desktop. You still need to sign t
 ## <a href="" id="catalog-signing-device-guard-portal"></a>Catalog signing with Device Guard signing portal
 
 
-To sign catalog files with the Device Guard signing portal, you need to be signed up with the Windows Store for Business. For more information, see [Sign up for the Windows Store for Business](sign-up-for-windows-store-for-business.md).
+To sign catalog files with the Device Guard signing portal, you need to be signed up with the Windows Store for Business. For more information, see [Sign up for the Windows Store for Business](sign-up-windows-store-for-business.md).
 
 Catalog signing is a vital step to adding your unsigned apps to your code integrity policy.
 

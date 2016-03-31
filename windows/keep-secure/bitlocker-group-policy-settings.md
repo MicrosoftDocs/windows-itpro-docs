@@ -1698,7 +1698,7 @@ TPM initialization might be needed during the BitLocker setup. Enable the **Turn
 
 For more information about this setting, see [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md).
 
-If you are using domain controllers running Windows Server 2003 with Service Pack 1, you must first set up appropriate schema extensions and access control settings on the domain before a backup to AD DS can succeed. For more info, see [Backup the TPM recovery Information to AD DS](backup-thetpm-recovery-information-to-ad-ds.md).
+If you are using domain controllers running Windows Server 2003 with Service Pack 1, you must first set up appropriate schema extensions and access control settings on the domain before a backup to AD DS can succeed. For more info, see [Backup the TPM recovery Information to AD DS](backup-tpm-recovery-information-to-ad-ds.md).
 
 ### <a href="" id="bkmk-rec4"></a>Choose default folder for recovery password
 
@@ -2699,16 +2699,16 @@ PCR 7 measurements are a mandatory logo requirement for systems that support Ins
 ## See also
 
 
-[Trusted Platform Module](trusted-platform-module-technology-overview.md)
+[Trusted Platform Module](trusted-platform-module-overview.md)
 
 
 [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md)
 
 
-[BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions--faq-.md)
+[BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
 
 
-[BitLocker overview](bitlocker-overview-roletech-overview.md)
+[BitLocker overview](bitlocker-overview.md)
 
 
 [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)

@@ -109,7 +109,7 @@ If you want Windows To Go to be able to connect back to organizational resources
 ## Related topics
 
 
-[Windows To Go: feature overview](windows-to-go-feature-overview-scenario.md)
+[Windows To Go: feature overview](windows-to-go-overview.md)
 
 [Deployment considerations for Windows To Go](deployment-considerations-for-windows-to-go.md)
 

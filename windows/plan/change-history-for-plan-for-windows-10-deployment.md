@@ -29,7 +29,7 @@ This topic lists new and updated topics in the [Plan for Windows 10 deployment](
 |--------------------------------------------------------------------------------------------------|-------------|
 | [Chromebook migration guide](chromebook-migration-guide.md)                                     | New         |
 | [Windows Update for Business](windows-update-for-business.md) (multiple topics)                 | New         |
-| [Windows To Go: feature overview](windows-to-go-feature-overview-scenario.md) (multiple topics) | Updated     |
+| [Windows To Go: feature overview](windows-to-go-overview.md) (multiple topics) | Updated     |
 
  
 

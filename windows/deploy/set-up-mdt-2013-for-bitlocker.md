@@ -198,9 +198,9 @@ When configuring a task sequence to run any BitLocker tool, either directly or u
 
 [Configure MDT for UserExit scripts](configure-mdt-2013-for-userexit-scripts.md)
 
-[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-81-deployment-in-a-test-environment.md)
+[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
 
-[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-81-deployment-information.md)
+[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
 
 [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt-2013.md)
 

@@ -111,7 +111,7 @@ Active Directory blog posts on Azure AD and Windows 10:
 
 [Microsoft Passport](microsoft-passport.md)
 
-[Enterprise Data Protection Overview](enterprise-data-protection-overview.md)
+[Enterprise Data Protection Overview](edp-whats-new-overview.md))
 
  
 

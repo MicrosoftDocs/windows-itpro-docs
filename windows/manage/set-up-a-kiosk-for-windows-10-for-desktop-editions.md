@@ -44,6 +44,10 @@ For a more secure kiosk experience, we recommend that you make the following con
 
     Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
 
+-   Remove the power button from the sign-in screen.
+
+    Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.**
+
 -   Disable the camera.
 
     Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.

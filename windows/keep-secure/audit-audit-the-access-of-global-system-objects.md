@@ -38,7 +38,7 @@ Enabling this policy setting can generate a large number of security events, esp
 
 ### Best practices
 
--   Use the advanced security audit policy option, [Audit Kernel Object](audit-kernel-object-sec-audit.md) in Advanced Security Audit Policy Settings\\Object Access, to reduce the number of unrelated audit events that you generate.
+-   Use the advanced security audit policy option, [Audit Kernel Object](audit-kernel-object.md) in Advanced Security Audit Policy Settings\\Object Access, to reduce the number of unrelated audit events that you generate.
 
 ### Location
 
@@ -106,13 +106,13 @@ All auditing capabilities are integrated in Group Policy. You can configure, dep
 
 To audit attempts to access global system objects, you can use one of two security audit policy settings:
 
--   [Audit Kernel Object](audit-kernel-object-sec-audit.md) in Advanced Security Audit Policy Settings\\Object Access
+-   [Audit Kernel Object](audit-kernel-object.md) in Advanced Security Audit Policy Settings\\Object Access
 
 -   [Audit object access](basic-audit-object-access.md) under Security Settings\\Local Policies\\Audit Policy
 
 If possible, use the Advanced Security Audit Policy option to reduce the number of unrelated audit events that you generate.
 
-If the [Audit Kernel Object](audit-kernel-object-sec-audit.md) setting is configured, the following events are generated:
+If the [Audit Kernel Object](audit-kernel-object.md) setting is configured, the following events are generated:
 
 <table>
 <colgroup>
@@ -147,7 +147,7 @@ If the [Audit Kernel Object](audit-kernel-object-sec-audit.md) setting is config
 
  
 
-If the [Audit Kernel Object](audit-kernel-object-sec-audit.md) setting is configured, the following events are generated.
+If the [Audit Kernel Object](audit-kernel-object.md) setting is configured, the following events are generated.
 
 <table>
 <colgroup>

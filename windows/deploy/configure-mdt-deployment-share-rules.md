@@ -90,7 +90,7 @@ To avoid assigning a computer name longer than 15 characters, you can configure 
 Priority=Default
 [Default]
 OSInstall=YES
-OSDComputerName=PC-#Left(?%SerialNumber%?,12)#
+OSDComputerName=PC-#Left("%SerialNumber%",12)#
 ```
 
 In the preceding sample, you still configure the rules to set the computer name to a prefix (PC-) followed by the serial number. However, by adding the Left VBScript function, you configure the rule to use only the first 12 serial-number characters for the name.
@@ -117,9 +117,9 @@ MachineObjectOU=OU=Laptops,OU=Contoso,DC=contoso,DC=com
 
 [Configure MDT for UserExit scripts](configure-mdt-2013-for-userexit-scripts.md)
 
-[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-81-deployment-in-a-test-environment.md)
+[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
 
-[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-81-deployment-information.md)
+[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
 
 [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt-2013.md)
 

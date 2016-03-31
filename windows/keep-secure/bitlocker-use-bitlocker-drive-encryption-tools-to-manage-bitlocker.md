@@ -364,15 +364,15 @@ Active Directory-based protectors are normally used to unlock Failover Cluster e
 ## More information
 
 
-[BitLocker overview](bitlocker-overview-roletech-overview.md)
+[BitLocker overview](bitlocker-overview.md)
 
-[BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions--faq-.md)
+[BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
 
 [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 
 [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
 
-[BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server-2012.md)
+[BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)
 
  
 

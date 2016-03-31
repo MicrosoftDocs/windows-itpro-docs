@@ -125,7 +125,7 @@ Over time, this upgrade process will be optimized to reduce the overall time and
 ## Related topics
 
 
-[Windows 10 servicing options](windows-10-servicing-model.md)
+[Windows 10 servicing options](windows-10-servicing-options.md)
 
 [Windows 10 compatibility](windows-10-compatibility.md)
 

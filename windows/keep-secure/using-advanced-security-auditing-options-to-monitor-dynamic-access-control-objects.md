@@ -84,7 +84,7 @@ This procedure can be configured on computers running any of the supported Windo
 ## Related topics
 
 
-[Security auditing](security-auditing-overview-glbl.md)
+[Security auditing](security-auditing-overview.md)
 
  
 

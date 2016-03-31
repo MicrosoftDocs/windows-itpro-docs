@@ -138,7 +138,7 @@ DLP systems are intended to protect sensitive corporate data through encryption 
 
 You can configure EDP policies to encrypt and protect files automatically based on the network source from which the content was acquired, such as an email server, file share, or a Microsoft SharePoint site. The policies can work with on-premises resources as well as those that originate from the Internet. When specified, any data retrieved from internal network resources will always be protected as business data; even if that data is copied to portable storage, such as a flash drive or CD, the protection remains. In an effort to allow easy corrections of misclassified data, users who feel that EDP has incorrectly protected their personal data can modify the data’s classification. When such a modification occurs, you have access to audit data on the client machine. You can also use a policy to prevent users from reclassifying data. The EDP feature in Windows 10 also includes policy controls that allow you to define which apps have access to business data and even which have access to the corporate virtual private network (VPN).
 
-To manage EDP, you use the same system management tools you probably already use to manage your Windows client computers, such as Configuration Manager and Intune. For more information about EDP, see [Enterprise data protection (EDP) overview](enterprise-data-protection-overview.md).
+To manage EDP, you use the same system management tools you probably already use to manage your Windows client computers, such as Configuration Manager and Intune. For more information about EDP, see [Enterprise data protection (EDP) overview](edp-whats-new-overview.md)).
 
 ### <a href="" id="bitlocker"></a>Improvements in BitLocker
 

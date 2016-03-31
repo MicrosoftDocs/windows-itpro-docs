@@ -20,7 +20,7 @@ This topic for the IT professional describes the steps to create and maintain Ap
 ## Background and prerequisites
 
 
-An AppLocker reference device is a baseline device you can use to configure policies and can subsequently be used to maintain AppLocker policies. For the procedure to configure a reference device, see [Configure the AppLocker reference device](configure-the-applocker-reference-computer-ops.md).
+An AppLocker reference device is a baseline device you can use to configure policies and can subsequently be used to maintain AppLocker policies. For the procedure to configure a reference device, see [Configure the AppLocker reference device](configure-the-appLocker-reference-device.md).
 
 An AppLocker reference device that is used to create and maintain AppLocker policies should contain the corresponding apps for each organizational unit (OU) to mimic your production environment.
 
