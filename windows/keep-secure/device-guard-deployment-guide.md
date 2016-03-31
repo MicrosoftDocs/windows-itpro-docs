@@ -555,9 +555,8 @@ When you establish a naming convention it makes it easier to detect deployed cat
     `$CatDefName=$ExamplePath+"\LOBApp.cdf"`
 
     `PackageInspector.exe Stop C: -Name $CatFileName -cdfpath $CatDefName`
-
-    **Note**  
-    This scan catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries’ hash values.
+     
+     **Note**<br>This scan catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries’ hash values.
 
 When finished, the files will be saved to your desktop. To trust this catalog file within a code integrity policy, the catalog must first be signed. Then, the signing certificate can be included in the code integrity policy, and the catalog file can be distributed to the individual client machines. Catalog files can be signed by using a certificate and SignTool.exe, a free tool available in the Windows SDK. For more information about signing catalog files with SignTool.exe, see the [Catalog signing with SignTool.exe](#catsign-signtool) section.
 
@@ -647,9 +646,6 @@ To deploy a catalog file with Group Policy:
 
 2. Create a new GPO: Right-click the DG Enabled PCs OU, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 13.
     
-    **Note**<br>
-    The DG Enabled PCs OU is just an example of where to link the test GPO that you created in this section. You can use any OU name. Also, security group filtering is an option when you consider policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section.
-    
     ![figure 13](images/dg-fig13-createnewgpo.png)
     
     Figure 13. Create a new GPO
@@ -683,8 +679,6 @@ To deploy a catalog file with Group Policy:
     **Note**  
     LOBApp-Contoso.cat is not a required catalog name: This name was used in the [Create catalog files](#create-catalog-files) section, and so it was used here, as well.
 
-     
-
 10. On the **Common** tab of the **New File Properties** dialog box, select the **Remove this item when it is no longer applied** option. Doing this ensures that the catalog file is removed from every system, in case you ever need to stop trusting this application.
 
 11. Click **OK** to complete file creation.
@@ -699,8 +693,6 @@ As an alternative to Group Policy, you can use System Center Configuration Manag
 
 **Note**  
 The following example uses a network share named \\\\Shares\\CatalogShare as a source for the catalog files. If you have collection specific catalog files, or prefer to deploy them individually, use whichever folder structure works best for your organization.
-
- 
 
 1.  Open the Configuration Manager console, and select the Software Library workspace.
 
@@ -777,8 +769,6 @@ When catalog files have been deployed to the machines within your environment, w
 **Note**  
 A standard naming convention for your catalog files will significantly simplify the catalog file software inventory process. In this example, *-Contoso* has been added to all catalog file names.
 
- 
-
 1.  Open the Configuration Manager console, and select the Administration workspace.
 
 2.  Navigate to **Overview\\Client Settings**, right-click **Client Settings**, and then click **Create Custom Client Device Settings**.
@@ -801,8 +791,6 @@ A standard naming convention for your catalog files will significantly simplify 
 
     **Note**  
     **\*Contoso.cat** is the naming convention used in this example. This should mimic the naming convention you use for your catalog files.
-
-     
 
 7.  In the **Path Properties** dialog box, select **Variable or path name**, and then type **C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}** in the box, as shown in Figure 21.
 
@@ -827,11 +815,7 @@ At the time of the next software inventory cycle, when the targeted clients rece
 **Note**  
 If nothing is displayed in this view, navigate to Software\\Last Software Scan in Resource Explorer to verify that the client has recently completed a software inventory scan.
 
- 
-
 ## Code integrity policies
-
-
 Code integrity policies maintain the standards by which a computer running Windows 10 determines whether an application is trustworthy and can be run. For an overview of code integrity, see the [Configurable code integrity](#config-code) section.
 
 A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. Code integrity policies follow a similar methodology, that begins with the establishment of a golden PC. Like when imaging, you can have multiple golden PCs based on model, department, application set, and so on. Although the thought process around the creation of code integrity policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional code integrity policies based on what should be allowed to be installed and run and for whom.
@@ -839,16 +823,12 @@ A common system imaging practice in today’s IT organization is to establish a 
 **Note**  
 Each machine can have only **one** code integrity policy at a time. Whichever way you deploy this policy, it is renamed to SIPolicy.p7b and copied to C:\\Windows\\System32\\CodeIntegrity. Keep this in mind when you create your code integrity policies.
 
- 
-
 Optionally, code integrity policies can align with your software catalog as well as any IT department–approved applications. One simple method to implement code integrity policies is to use existing images to create one master code integrity policy. You do so by creating a code integrity policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, should the applications be installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged or serviced, and managed.
 
 **Note**  
 The following section assumes that you will deploy code integrity policies as part of your Device Guard deployment. Alternatively, configurable code integrity is available without the enablement of Device Guard.
 
- 
-
-### <a href="" id="code-integrity-policy-rules"></a>
+ ### <a href="" id="code-integrity-policy-rules"></a>
 
 **Code integrity policy rules**
 
