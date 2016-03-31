@@ -646,6 +646,9 @@ To deploy a catalog file with Group Policy:
 
 2. Create a new GPO: Right-click the DG Enabled PCs OU, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 13.
     
+    **Note**<br>
+    The DG Enabled PCs OU is just an example of where to link the test GPO that you created in this section. You can use any OU name. Also, security group filtering is an option when you consider policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section.
+    
     ![figure 13](images/dg-fig13-createnewgpo.png)
     
     Figure 13. Create a new GPO
