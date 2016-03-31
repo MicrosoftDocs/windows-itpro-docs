@@ -619,10 +619,10 @@ If you do not have a code signing certificate, please see the [Create a Device G
     </tbody>
     </table>
 
-    **Note**  
+    **Note**<br> 
     The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoDGSigningCert* is the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the machine on which you are attempting to sign the catalog file.
 
-    **Note**  
+    **Note**<br>
     For additional information about Signtool.exe and all additional switches, visit [MSDN Sign Tool page](http://go.microsoft.com/fwlink/p/?LinkId=624163).
 
 4.  Verify the catalog file digital signature. Right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 12.<p>![figure 12](images/dg-fig12-verifysigning.png)<br>Figure 12. Verify that the signing certificate exists
