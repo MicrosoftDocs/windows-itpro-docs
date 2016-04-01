@@ -5,7 +5,7 @@ ms.assetid: 59C206F7-2832-4555-97B4-3070D93CC3C5
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: brianlic-msft
 ---
 
 # What's new in Credential Guard?

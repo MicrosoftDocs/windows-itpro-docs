@@ -5,7 +5,7 @@ ms.assetid: 3F2DE365-68A1-4CDB-AB5F-C65574684C7B
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: brianlic-msft
 ---
 
 # What's new in BitLocker?

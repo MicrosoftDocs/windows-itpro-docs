@@ -5,7 +5,7 @@ ms.assetid: 6F836FF6-7794-4E7B-89AA-1EABA1BF183F
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: brianlic-msft
 ---
 
 # What's new in AppLocker?

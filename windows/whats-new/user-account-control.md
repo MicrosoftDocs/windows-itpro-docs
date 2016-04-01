@@ -5,7 +5,7 @@ ms.assetid: 9281870C-0819-4694-B4F1-260255BB8D07
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: brianlic-msft
 ---
 
 # What's new in User Account Control?
