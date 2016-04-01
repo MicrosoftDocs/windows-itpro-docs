@@ -17,7 +17,7 @@ author: brianlic-msft
 -   Windows 10 Insider Preview
 -   Windows 10 Mobile Preview
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows SDK Insider Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
+\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
 
 This section includes info about the enlightened Microsoft apps, including how to add them to your **Protected Apps** list in Microsoft Intune. It also includes some testing scenarios that we recommend running through with enterprise data protection (EDP).
 

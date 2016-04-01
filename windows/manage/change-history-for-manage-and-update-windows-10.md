@@ -13,6 +13,30 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## April 2016
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">New or changed topic</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">[Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
+<td align="left"><p>Added the font streaming section.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
 ## March 2016
 
 
@@ -39,14 +63,6 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <tr class="odd">
 <td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md))</td>
 <td align="left"><p>Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration.</p></td>
-</tr>
-<tr class="even">
-<td align="left">[Configure telemetry in your organization](../manage/configure-telemetry-in-your-organization.md)</td>
-<td align="left"><p>Updated to include Windows Server 2016 Technical Preview.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">[Disconnect from Microsoft and configure privacy settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
-<td align="left"><p>Removed the telemetry content into its own topic.</p></td>
 </tr>
 </tbody>
 </table>

@@ -286,51 +286,91 @@ Windows 10 Enterprise LTSB does include Internet Explorer 11, and is compatible
 
 Table 2. Servicing option summary
 
-Comparison
-Windows 10 servicing options
-Current Branch (CB)
-Current Branch for Business (CBB)
-Long-Term Servicing Branch (LTSB)
-**Availability of new feature upgrades for installation**
-Immediate
-Deferred by ~4 months
-Not applicable
-**Supported editions**
-Windows 10 Home, Windows 10 Pro, Windows 10 Education, Windows 10 Enterprise, Windows 10 Mobile, IoT Core, IoT Core Pro
-Windows 10 Pro, Windows 10 Education, Windows 10 Enterprise, Windows 10 Mobile Enterprise, IoT Core Pro
-Windows 10 Enterprise LTSB
-**Minimum length of servicing lifetime**
-Approximately 4 Months
-Approximately 8 months
-10 years
-**Ongoing installation of new feature upgrades required to receive servicing updates**
-Yes
-Yes
-No
-**Supports Windows Update for release deployment**
-Yes
-Yes
-Yes
-**Supports Windows Server Update Services for release deployment**
-Yes (excludes Home)
-Yes
-Yes
-**Supports Configuration Manager/configuration management systems for release deployment**
-Yes (excludes Home)
-Yes
-Yes
-**First party browsers included**
-Microsoft Edge, Internet Explorer 11
-Microsoft Edge, IE11
-IE11
-**Notable Windows system apps removed**
-None
-None
-Microsoft Edge, Windows Store Client, Cortana (limited search available)
-**Notable Windows universal apps removed**
-None
-None
-Outlook Mail/Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, Clock
+<table>
+<tr>
+<th rowspan="2">Comparison</th>
+<th colspan="3">Windows 10 servicing options</th>
+</tr>
+<tr>
+<th>Current Branch (CB)</th>
+<th>Current Branch for Business (CBB)</th>
+<th>Long-Term Servicing Branch (LTSB)</th>
+</tr>
+<tr>
+<td><b>Availability of new feature upgrades for installation</b></td>
+<td>Immediate</td>
+<td>Deferred by ~4 months</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td><b>Supported editions</b></td>
+<td>Windows 10 Home, Windows 10 Pro, Windows 10 Education, Windows 10 Enterprise, Windows 10 Mobile, 
+IoT Core, IoT Core Pro</td>
+<td>Windows 10 Pro, 
+Windows 10 Education,
+Windows 10 Enterprise, Windows 10 Mobile Enterprise, 
+IoT Core Pro</td>
+<td>Windows 10 Enterprise LTSB</td>
+</tr>
+<tr>
+<td><b>Minimum length of servicing lifetime</b></td>
+<td>Approximately 4 Months</td>
+<td>Approximately 8 months</td>
+<td>10 years</td>
+</tr>
+<tr>
+<td><b>Ongoing installation of new feature upgrades required to receive servicing updates</b></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><b>Supports Windows Update for release deployment</b></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><b>Supports Windows Server Update Services for release deployment</b></td>
+<td>Yes
+(excludes Home)
+</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><b>Supports Configuration Manager/configuration management systems for release deployment</b></td>
+<td>Yes
+(excludes Home)
+</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><b>First party browsers included</b></td>
+<td>Microsoft Edge,
+Internet Explorer 11</td>
+<td>Microsoft Edge,
+IE11</td>
+<td>IE11</td>
+</tr>
+<tr>
+<td><b>Notable Windows
+system apps removed
+</b></td>
+<td>None</td>
+<td>None</td>
+<td>Microsoft Edge, Windows Store Client, Cortana (limited search available)</td>
+</tr>
+<tr>
+<td><b>Notable Windows
+universal apps removed
+</b></td>
+<td>None</td>
+<td>None</td>
+<td>Outlook Mail/Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, Clock</td>
+</tr>
+</table>
  
 
 ## Related topics
