@@ -5,7 +5,7 @@ ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: brianlic-msft
 ---
 
 # Configure telemetry and other settings in your organization
@@ -249,7 +249,7 @@ See the following table for a summary of the management settings. For more info,
 
 ### <a href="" id="bkmk-cortana"></a>1. Cortana
 
-Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ]( http://go.microsoft.com/fwlink/p/?LinkId=730683).
+Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730683).
 
 ### <a href="" id="bkmk-cortana-gp"></a>1.1 Cortana Group Policies
 
@@ -1537,9 +1537,9 @@ To learn more, see [Device update management](http://msdn.microsoft.com/library/
 ## <a href="" id="bkmk-utc"></a>Manage your telemetry settings
 
 
-You can manage your telemetry settings using the management tools youâ€™re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your telemetry levels through a management policy overrides any device-level settings.
+You can manage your telemetry settings using the management tools you're already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your telemetry levels through a management policy overrides any device-level settings.
 
-You can set your organizationâ€™s devices to use 1 of 4 telemetry levels:
+You can set your organization's devices to use 1 of 4 telemetry levels:
 
 -   [Security](#bkmk-utc-security) (only available on Windows 10 Enterprise, Windows 10 Education, and Windows 10 IoT Core (IoT Core) editions)
 
@@ -1580,7 +1580,7 @@ Use the [Policy Configuration Service Provider (CSP)](http://msdn.microsoft.com/
 
 ### Use Windows Provisioning to set the telemetry level
 
-Use Windows Provisioning and the Windows Imaging and Configuration Designer (Windows ICD) tool â€“ part of the [Windows Assessment and Deployment Kit (Windows ADK) toolkit](http://go.microsoft.com/fwlink/p/?LinkId=526803) - to create a provisioning package and runtime setting that sets your organizationâ€™s telemetry level.
+Use Windows Provisioning and the Windows Imaging and Configuration Designer (Windows ICD) tool - part of the [Windows Assessment and Deployment Kit (Windows ADK) toolkit](http://go.microsoft.com/fwlink/p/?LinkId=526803) - to create a provisioning package and runtime setting that sets your organization's telemetry level.
 
 After you create the provisioning package, you can email it to your employees, put it on a network share, or integrate the package directly into a custom image using Windows ICD.
 
@@ -1662,7 +1662,7 @@ Windows uses telemetry information to analyze and fix software problems. It also
 
 This section explains the different telemetry levels in Windows 10. These levels are available on all desktop and mobile editions of Windows 10, with the exception of the Security level which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core.
 
--   **Security**. Information thatâ€™s required to help keep Windows secure, including info about theConnected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender. This level is available only on Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core.
+-   **Security**. Information that's required to help keep Windows secure, including info about theConnected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender. This level is available only on Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core.
 
 -   **Basic**. Basic device info, including: quality-related info, app compat, and info from the Security level.
 
@@ -1676,10 +1676,10 @@ As a diagram:
 
 ### <a href="" id="bkmk-utc-security"></a>Security level
 
-The Security level gathers only telemetry info thatâ€™s required to keep Windows devices secure. This level is only available on Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core editions.
+The Security level gathers only telemetry info that's required to keep Windows devices secure. This level is only available on Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core editions.
 
 **Note**  
-If your organization relies on Windows Update for updates, you shouldnâ€™t use the Security level. Because no Windows Update information is gathered at this level, Microsoft canâ€™t tell whether an update successfully installed.
+If your organization relies on Windows Update for updates, you shouldn't use the Security level. Because no Windows Update information is gathered at this level, Microsoft can't tell whether an update successfully installed.
 
 You can continue to use Windows Server Update Services and System Center Configuration Manager while using the Security level.
 
@@ -1705,7 +1705,7 @@ Security level info includes:
 
      
 
-No user content, such as user files or communications, is gathered at the Security telemetry level, and we take steps to avoid gathering any information that directly identifies a company or user, such as name, email address, or account ID. However, in rare circumstances, MSRT information may unintentionally contain personal information. For instance, some malware may create entries in a computerâ€™s registry that include information such as a username, causing it to be gathered. MSRT reporting is optional and can be turned off at any time.
+No user content, such as user files or communications, is gathered at the Security telemetry level, and we take steps to avoid gathering any information that directly identifies a company or user, such as name, email address, or account ID. However, in rare circumstances, MSRT information may unintentionally contain personal information. For instance, some malware may create entries in a computer's registry that include information such as a username, causing it to be gathered. MSRT reporting is optional and can be turned off at any time.
 
 To set the telemetry level to Security, use a management policy (Group Policy or MDM) or by manually changing the setting in the registry. For more info, see the [Manage your telemetry settings](#bkmk-utc) section of this article.
 
@@ -1715,7 +1715,7 @@ The Basic level gathers a limited set of info thatâ€™s critical for underst
 
 Basic level info includes:
 
--   **Basic device info**. Helps provide an understanding about the various types of devices in the Windows 10 ecosystem, including:
+-   **Basic device info**. Helps provide an understanding about the various types of devices in the Windows 10 ecosystem, including:
 
     -   Device attributes, such as camera resolution and display type
 
@@ -1767,9 +1767,9 @@ The Full level gathers info necessary to identify and to help fix problems, foll
 
 Additionally, at this level, devices opted in to the Windows Insider Program will send events that can show Microsoft how pre-release binaries and features are performing. All devices in the Windows Insider Program are automatically set to this level.
 
-If a device experiences problems that are difficult to identify or repeat using Microsoftâ€™s internal testing, additional info becomes necessary. This info can include any user content that might have triggered the problem and is gathered from a small sample of devices that have both opted into the Full telemetry level and have exhibited the problem.
+If a device experiences problems that are difficult to identify or repeat using Microsoft's internal testing, additional info becomes necessary. This info can include any user content that might have triggered the problem and is gathered from a small sample of devices that have both opted into the Full telemetry level and have exhibited the problem.
 
-However, before more info is gathered, Microsoftâ€™s privacy governance team, including privacy and other subject matter experts, must approve the diagnostics request made by a Microsoft engineer. If the request is approved, Microsoft engineers can use the following capabilities to get the information:
+However, before more info is gathered, Microsoft's privacy governance team, including privacy and other subject matter experts, must approve the diagnostics request made by a Microsoft engineer. If the request is approved, Microsoft engineers can use the following capabilities to get the information:
 
 -   Ability to run a limited, pre-approved list of Microsoft certified diagnostic tools, such as msinfo32.exe, powercfg.exe, and dxdiag.exe.
 
@@ -1781,7 +1781,7 @@ However, before more info is gathered, Microsoftâ€™s privacy governance tea
 
 ### Collection
 
-Information gathered by the Connected User Experience and Telemetry component complies with Microsoftâ€™s security and privacy policies, as well as international laws and regulations. Only those who can demonstrate a valid business need can access the telemetry info.
+Information gathered by the Connected User Experience and Telemetry component complies with Microsoft's security and privacy policies, as well as international laws and regulations. Only those who can demonstrate a valid business need can access the telemetry info.
 
 ### Data Transfer
 
@@ -1789,7 +1789,7 @@ All telemetry info is encrypted during transfer from the device to the Microsoft
 
 ### Microsoft Data Management Service
 
-The Microsoft Data Management Service routes information to internal cloud storage, where it's compiled into business reports for analysis and research. Sensitive info is stored in a separate data store thatâ€™s locked down to a small subset of Microsoft employees in the Windows Devices Group. The privacy governance team permits access only to people with a valid business justification. The Connected User Experiences and Telemetry component connects to the Microsoft Data Management service at v10.vortex-win.data.microsoft.com. The Connected User Experience and Telemetry component connects to settings-win.data.microsoft.com to collect its settings.
+The Microsoft Data Management Service routes information to internal cloud storage, where it's compiled into business reports for analysis and research. Sensitive info is stored in a separate data store that's locked down to a small subset of Microsoft employees in the Windows Devices Group. The privacy governance team permits access only to people with a valid business justification. The Connected User Experiences and Telemetry component connects to the Microsoft Data Management service at v10.vortex-win.data.microsoft.com. The Connected User Experience and Telemetry component connects to settings-win.data.microsoft.com to collect its settings.
 
 ### Usage
 
@@ -1797,15 +1797,11 @@ Information is used by teams within Microsoft to provide, improve, and personali
 
 An example of personalization is to create individually tailored in-product messages.
 
-Microsoft doesnâ€™t share organization-specific customer information with third parties, except at the customerâ€™s direction or for the limited purposes described in the privacy statement. However, we do share business reports with partners that include aggregated, anonymous telemetry information. Decisions to share info are made by an internal team that includes privacy, legal, and data management professionals.
+Microsoft doesn't share organization-specific customer information with third parties, except at the customer's direction or for the limited purposes described in the privacy statement. However, we do share business reports with partners that include aggregated, anonymous telemetry information. Decisions to share info are made by an internal team that includes privacy, legal, and data management professionals.
 
 ### Retention
 
-Microsoft believes in and practices information minimization, so we only gather the info we need, and we only store it for as long as itâ€™s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, particularly if there is a regulatory requirement to do so. Info is typically gathered at a fractional sampling rate, which for some client services, can be as low as 1%.
-
- 
-
- 
+Microsoft believes in and practices information minimization, so we only gather the info we need, and we only store it for as long as it's needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, particularly if there is a regulatory requirement to do so. Info is typically gathered at a fractional sampling rate, which for some client services, can be as low as 1%.
 
 
 
