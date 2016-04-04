@@ -198,8 +198,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
 |Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
 |Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything. |
 |Off |EDP is turned off and doesn't help to protect or audit your data.|
-
-
+<p>
 ![microsoft intune: add protection level for protected apps list](images/intune-encryption-level.png)
 
 ## Define your enterprise-managed identity domains
@@ -208,8 +207,7 @@ Specify your company’s enterprise identity, expressed as your primary internet
 You can also specify all the domains owned by your enterprise that are used for user accounts, separating them with the "|" character. For example, if Contoso also has some employees with email addresses or user accounts on the fabrikam.com domain, you would use contoso.com|fabrikam.com.
 
 This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
-
-
+<p>
 ![microsoft intune: add primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 **To add your primary domain**
@@ -231,7 +229,7 @@ After you've added a protection mode to your apps, you'll need to decide where t
 |Network location type |Format          |Description           |
 |----------------------|----------------|----------------------|
 |Enterprise Cloud Domain |contoso.sharepoint.com,proxy1.contoso.com&#x7C;office.com&#x7C;proxy2.contoso.com|Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter. Include the &#x7C; delimiter just before the &#x7C; if you don’t use proxies. For example: [URL,Proxy]&#x7C;[URL,Proxy]. |
-|Enterprise Network Domain |`domain1.contoso.com,domain2.contoso.com` |Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the `,` delimiter.<p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks. |
+|Enterprise Network Domain |domain1.contoso.com,domain2.contoso.com |Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the `,` delimiter.<p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks. |
 |Enterprise Proxy Server |domain1.contoso.com:80;domain2.contoso.com:137 |Specify the proxy server and the port traffic is routed through. If you have multiple resources, you must use the `;` delimiter.<p>This setting is required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when using certain Wi-Fi hotspots at hotels and restaurants. |
 |Enterprise Internal Proxy Server |proxy1.contoso.com;proxy2.contoso.com |Specify the proxy servers your cloud resources will go through. If you have multiple resources, you must use the `;` delimiter. |
 |Enterprise IPv4 Range |**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254 | Specify the addresses for a valid IPv4 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the `-` delimiter between start and end of a range, and the `,` delimiter to separate ranges. |
