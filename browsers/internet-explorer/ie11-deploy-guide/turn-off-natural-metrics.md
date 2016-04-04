@@ -1,5 +1,5 @@
 ---
-Description: Turn off natural metrics for Internet Explorer 11
+description: Turn off natural metrics for Internet Explorer 11
 ms.assetid: e31a27d7-662e-4106-a3d2-c6b0531961d5
 author: eross-msft
 ms.prod: IE11
