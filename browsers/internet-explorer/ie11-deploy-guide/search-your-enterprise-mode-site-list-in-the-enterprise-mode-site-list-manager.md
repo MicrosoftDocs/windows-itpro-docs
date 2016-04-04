@@ -1,5 +1,5 @@
 ---
-Description: Search to see if a specific site already appears in your global Enterprise Mode site list.
+description: Search to see if a specific site already appears in your global Enterprise Mode site list.
 ms.assetid: e399aeaf-6c3b-4cad-93c9-813df6ad47f9 
 author: eross-msft
 ms.prod: IE11

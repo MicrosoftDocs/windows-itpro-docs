@@ -1,5 +1,5 @@
 ---
-Description: How to download and use the Internet Explorer 11 Blocker Toolkit to turn off the automatic delivery of IE11 through the Automatic Updates feature of Windows Update.
+description: How to download and use the Internet Explorer 11 Blocker Toolkit to turn off the automatic delivery of IE11 through the Automatic Updates feature of Windows Update.
 ms.assetid: fafeaaee-171c-4450-99f7-5cc7f8d7ba91
 author: eross-msft
 ms.prod: IE11

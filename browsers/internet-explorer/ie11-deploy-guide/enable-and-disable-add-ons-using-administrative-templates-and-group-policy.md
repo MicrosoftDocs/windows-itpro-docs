@@ -1,5 +1,5 @@
 ---
-Description: Enable and disable add-ons using administrative templates and group policy
+description: Enable and disable add-ons using administrative templates and group policy
 ms.assetid: c6fe1cd3-0bfc-4d23-8016-c9601f674c0b
 author: eross-msft
 ms.prod: IE11

@@ -1,5 +1,5 @@
 ---
-Description: How to fix intranet search problems with Internet Explorer 11
+description: How to fix intranet search problems with Internet Explorer 11
 ms.assetid: 3ee71d93-d9d2-48e1-899e-07932c73faa6
 author: eross-msft
 ms.prod: IE11
