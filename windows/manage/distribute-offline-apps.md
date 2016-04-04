@@ -5,7 +5,7 @@ ms.assetid: 6B9F6876-AA66-4EE4-A448-1371511AC95E
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Distribute offline apps

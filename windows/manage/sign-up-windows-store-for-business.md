@@ -5,7 +5,7 @@ ms.assetid: 296AAC02-5C79-4999-B221-4F5F8CEA1F12
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Sign up for Windows Store for Business

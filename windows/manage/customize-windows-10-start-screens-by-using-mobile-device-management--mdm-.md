@@ -85,9 +85,7 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
 
     <span codelanguage="XML"></span>
     <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
+    
     <thead>
     <tr class="header">
     <th align="left">XML</th>
@@ -122,8 +120,8 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
 
 6.  In **Add or Edit OMA-URI Setting**, enter the following information.
 
-    | Item                         | Information                                                                                                       |
-    |------------------------------|-------------------------------------------------------------------------------------------------------------------|
+    | Item  | Information |
+    |----|----|
     | **Setting name**             | Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.                      |
     | **Setting description**      | Provide a description that gives an overview of the setting and other relevant information to help you locate it. |
     | **Data type**                | **String**                                                                                                        |
