@@ -48,7 +48,7 @@ You can set EDP to 1 of 4 protection and management modes:
 |Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
 |Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything.|
 |Off |EDP is turned off and doesn't help to protect or audit your data.<p>After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives. |
-<p>**Note**<br>For more info about setting your EDP-protection modes, see either [Create an enterprise data protection (EDP) policy using Intune](create-edp-policy-using-intune.md)) or [Create and deploy an enterprise data protection (EDP) policy using Configuration Manager](create-edp-policy-using-sccm.md)), depending on your management solution.
+<p>**Note**<br>For more info about setting your EDP-protection modes, see either [Create an enterprise data protection (EDP) policy using Intune](create-edp-policy-using-intune.md) or [Create and deploy an enterprise data protection (EDP) policy using Configuration Manager](create-edp-policy-using-sccm.md), depending on your management solution.
 
 ## Why use EDP?
 EDP gives you a new way to manage data security for apps and documents, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
