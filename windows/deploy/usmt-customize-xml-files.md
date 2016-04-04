@@ -60,7 +60,7 @@ You can use the asterisk (\*) wildcard character in each of these files. However
 -   **The MigUser.xml file.** Specify this file with both the **ScanState** and **LoadState** commands to migrate user folders, files, and file types. You can modify the MigUser.xml file. This file does not contain rules that migrate specific user accounts. The only way to specify which user accounts to migrate is on the command line using the **ScanState** and the **LoadState** user options.
 
     **Note**  
-    Do not use the MigUser.xml and MigDocs.xml files together. For more information, see the [Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md) and [USMT Best Practices](usmt-best-practices-usmt-win7-usmt-win8.md) topics.
+    Do not use the MigUser.xml and MigDocs.xml files together. For more information, see the [Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md) and [USMT Best Practices](usmt-best-practices.md) topics.
 
      
 

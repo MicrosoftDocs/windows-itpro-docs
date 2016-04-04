@@ -2,7 +2,7 @@
 ## [Change history for What's new in Windows 10](change-history-for-what-s-new-in-windows-10.md)
 ## [AppLocker](applocker.md)
 ## [BitLocker](bitlocker.md)
-## [Browser: Microsoft Edge and Internet Explorer 11](edge-ie11-whats-new-overview.md))
+## [Browser: Microsoft Edge and Internet Explorer 11](edge-ie11-whats-new-overview.md)
 ## [Credential Guard](credential-guard.md)
 ## [Device Guard](device-guard-overview.md)
 ## [Enterprise data protection (EDP)](edp-whats-new-overview.md)

@@ -71,7 +71,7 @@ The following table shows the columns that are available for each screen.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Application Report](operatingsystem---application-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Application Report](act-operatingsystem-application-report.md)</p></td>
 <td align="left"><ul>
 <li><p>Application Name</p></li>
 <li><p>Version</p></li>
@@ -93,7 +93,7 @@ The following table shows the columns that are available for each screen.
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Computer Report](operatingsystem---computer-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Computer Report](act-operatingsystem-computer-report.md)</p></td>
 <td align="left"><ul>
 <li><p>Computer Name</p></li>
 <li><p>Applications with Issues</p></li>
@@ -108,7 +108,7 @@ The following table shows the columns that are available for each screen.
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Device Report](operatingsystem---device-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Device Report](act-operatingsystem-device-report.md)</p></td>
 <td align="left"><ul>
 <li><p>Model</p></li>
 <li><p>Manufacturer</p></li>
@@ -122,7 +122,7 @@ The following table shows the columns that are available for each screen.
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Internet Explorer - Web Site Report](internet-explorer---web-site-report.md)</p></td>
+<td align="left"><p>[Internet Explorer - Web Site Report](internet-explorer-web-site-report.md)</p></td>
 <td align="left"><ul>
 <li><p>Web Site</p></li>
 <li><p>My Assessment</p></li>

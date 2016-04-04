@@ -112,7 +112,7 @@ The following custom .xml file migrates the Sample.doc file from C:\\Engineering
 
 [Conflicts and Precedence](usmt-conflicts-and-precedence.md)
 
-[USMT XML Reference](usmt-xml-reference-usmt-win7-usmt-win8.md)
+[USMT XML Reference](usmt-xml-reference.md)
 
  
 

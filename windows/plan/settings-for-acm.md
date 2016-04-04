@@ -38,11 +38,11 @@ This section provides information about settings that you can configure in Appli
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Settings Dialog Box - Settings Tab](settings-dialog-box---settings-tab.md)</p></td>
+<td align="left"><p>[Settings Dialog Box - Settings Tab](act-settings-dialog-box-settings-tab.md)</p></td>
 <td align="left"><p>To display the <strong>Settings</strong> dialog box, in Application Compatibility Manager (ACM), on the <strong>Tools</strong> menu, click <strong>Settings</strong>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Settings Dialog Box - Preferences Tab](settings-dialog-box---preferences-tab.md)</p></td>
+<td align="left"><p>[Settings Dialog Box - Preferences Tab](act-settings-dialog-box-preferences-tab.md)</p></td>
 <td align="left"><p>To display the <strong>Settings</strong> dialog box, in Application Compatibility Manager (ACM), on the <strong>Tools</strong> menu, click <strong>Settings</strong>.</p></td>
 </tr>
 </tbody>

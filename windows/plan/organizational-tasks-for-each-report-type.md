@@ -45,7 +45,7 @@ The following table shows which tasks can be performed for each report type.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Application Report](operatingsystem---application-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Application Report](act-operatingsystem-application-report.md)</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
@@ -54,7 +54,7 @@ The following table shows which tasks can be performed for each report type.
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Computer Report](operatingsystem---computer-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Computer Report](act-operatingsystem-computer-report.md)</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
@@ -63,7 +63,7 @@ The following table shows which tasks can be performed for each report type.
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Device Report](operatingsystem---device-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Device Report](act-operatingsystem-device-report.md)</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>

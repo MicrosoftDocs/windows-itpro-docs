@@ -38,7 +38,7 @@ You can deploy the resulting .xml file to devices using one of the following met
 
 -   [Windows Imaging and Configuration Designer provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
--   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md)
+-   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
 ## <a href="" id="bkmkcustomizestartscreen"></a>Customize the Start screen on your test computer
 
@@ -127,7 +127,7 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 [Customize Windows 10 Start with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md)
+[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
 [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
 

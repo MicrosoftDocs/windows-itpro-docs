@@ -53,7 +53,7 @@ For information about ensuring that all computers can access the share, see [Tro
 ## Related topics
 
 
-[Settings Dialog Box - Preferences Tab](settings-dialog-box---preferences-tab.md)
+[Settings Dialog Box - Preferences Tab](act-settings-dialog-box-preferences-tab.md)
 
  
 
