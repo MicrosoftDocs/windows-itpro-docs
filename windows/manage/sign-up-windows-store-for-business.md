@@ -85,7 +85,7 @@ Before signing up for the Store for Business, make sure you're the global admini
 
 After signing up for Store for Business, you can:
 
--   **Add users to your Azure AD directory**. If you created your Azure AD directory during Store for Business sign up, additional user accounts are required for employees to install apps you assign to them, or to browse the private store. For more information, see [Manage user accounts in Store for Business](manage-users-and-groups-windows-store-for-business.md)).
+-   **Add users to your Azure AD directory**. If you created your Azure AD directory during Store for Business sign up, additional user accounts are required for employees to install apps you assign to them, or to browse the private store. For more information, see [Manage user accounts in Store for Business](manage-users-and-groups-windows-store-for-business.md).
 
 -   **Assign roles to employees**. For more information, see [Roles and permissions in the Windows Store for Business](roles-and-permissions-windows-store-for-business.md).
 

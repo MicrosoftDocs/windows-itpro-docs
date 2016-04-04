@@ -767,7 +767,7 @@ The following table lists each return code by numeric value, along with the asso
 ## Related topics
 
 
-[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md))
+[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)
 
 [Log Files](usmt-log-files.md)
 

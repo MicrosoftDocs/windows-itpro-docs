@@ -289,7 +289,7 @@ You should also reboot the machine.
 ## Related topics
 
 
-[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md))
+[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)
 
 [Frequently Asked Questions](usmt-faq.md)
 

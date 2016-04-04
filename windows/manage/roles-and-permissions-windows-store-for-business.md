@@ -211,7 +211,7 @@ These permissions allow people to:
 
 4.  
 
-    If you are not finding the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in the Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md))
+    If you are not finding the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in the Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md)
 
  
 

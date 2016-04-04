@@ -38,7 +38,7 @@ Learn about managing and updating Windows 10.
 <td align="left"><p>Administrative Tools is a folder in Control Panel that contains tools for system administrators and advanced users.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md))</p></td>
+<td align="left"><p>[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)</p></td>
 <td align="left"><p>The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.</p></td>
 </tr>
 <tr class="even">

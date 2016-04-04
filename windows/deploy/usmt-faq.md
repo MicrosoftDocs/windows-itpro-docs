@@ -116,7 +116,7 @@ For more information, see [Conflicts and Precedence](usmt-conflicts-and-preceden
 ## Related topics
 
 
-[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md))
+[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)
 
 [Extract Files from a Compressed USMT Migration Store](usmt-extract-files-from-a-compressed-migration-store.md)
 

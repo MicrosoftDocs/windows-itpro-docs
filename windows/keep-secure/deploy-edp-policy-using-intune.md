@@ -40,9 +40,9 @@ After you’ve created your enterprise data protection (EDP) policy, you'll need
 ## Related topics
 
 
-[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md))
+[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md)
 
-[General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md))
+[General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
 
  
 
