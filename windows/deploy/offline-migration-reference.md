@@ -57,7 +57,7 @@ The following user data and settings migrate offline, similar to an online migra
 
 -   Internet Explorer® Favorites
 
-For exceptions to what you can migrate offline, see [What Does USMT Migrate?](what-does-usmt-migrate-usmt-win7-usmt-win8.md)
+For exceptions to what you can migrate offline, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
 ## <a href="" id="bkmk-offlineenvironments"></a>What Offline Environments are Supported?
 
@@ -115,7 +115,7 @@ User-group membership is not preserved during offline migrations. You must confi
 </Configuration>
 ```
 
-For information about the format of a Config.xml file, see [Config.xml File](configxml-file-usmt-win7-usmt-win8.md).
+For information about the format of a Config.xml file, see [Config.xml File](usmt-configxml-file.md).
 
 ## <a href="" id="bkmk-commandlineoptions"></a>Command-Line Options
 
@@ -251,7 +251,7 @@ The following XML example illustrates some of the elements discussed earlier in 
 ## Related topics
 
 
-[Plan Your Migration](plan-your-migration-usmt-win7-usmt-win8.md)
+[Plan Your Migration](usmt-plan-your-migration.md)
 
  
 

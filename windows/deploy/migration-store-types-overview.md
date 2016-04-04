@@ -39,7 +39,7 @@ The compressed migration store is a single image file that contains all files be
 
 A hard-link migration store functions as a map that defines how a collection of bits on the hard disk are “wired” into the file system. You use the new USMT hard-link migration store in the PC Refresh scenario only. This is because the hard-link migration store is maintained on the local computer while the old operating system is removed and the new operating system is installed. Using a hard-link migration store saves network bandwidth and minimizes the server use needed to accomplish the migration.
 
-You use a command-line option,**/hardlink** , to create a hard-link migration store, which functions the same as an uncompressed migration store. Files are not duplicated on the local computer when user state is captured, nor are they duplicated when user state is restored. For more information, see [Hard-Link Migration Store](hard-link-migration-store-usmt-win8.md).
+You use a command-line option,**/hardlink** , to create a hard-link migration store, which functions the same as an uncompressed migration store. Files are not duplicated on the local computer when user state is captured, nor are they duplicated when user state is restored. For more information, see [Hard-Link Migration Store](usmt-hard-link-migration-store.md).
 
 The following flowchart illustrates the procedural differences between a local migration store and a remote migration store. In this example, a hard-link migration store is used for the local store.
 
@@ -59,12 +59,12 @@ If possible, have users store their data within their %UserProfile%\\My Document
 
 ### <a href="" id="bkmk-localonly"></a>The /localonly Command-Line Option
 
-You should use this option to exclude the data from removable drives and network drives mapped on the source computer. For more information about what is excluded when you specify **/LocalOnly**, see [ScanState Syntax](scanstate-syntax-usmt-win7-usmt-win8.md).
+You should use this option to exclude the data from removable drives and network drives mapped on the source computer. For more information about what is excluded when you specify **/LocalOnly**, see [ScanState Syntax](usmt-scanstate-syntax.md).
 
 ## Related topics
 
 
-[Plan Your Migration](plan-your-migration-usmt-win7-usmt-win8.md)
+[Plan Your Migration](usmt-plan-your-migration.md)
 
  
 
