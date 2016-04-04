@@ -85,7 +85,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 
 [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=733911)
 
-[Windows 10 and Windows 10 Mobile](../p_ent_nodes/windows-10.md)
+[Windows 10 and Windows 10 Mobile](../index.md)
 
  
 
