@@ -98,7 +98,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <td align="left">Added instructions for replacing markup characters with escape characters in Start layout XML</td>
 </tr>
 <tr class="even">
-<td align="left">[Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers--csps--.md)</td>
+<td align="left">[Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers.md)</td>
 <td align="left">New</td>
 </tr>
 <tr class="odd">
