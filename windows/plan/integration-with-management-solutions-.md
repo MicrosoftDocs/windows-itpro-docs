@@ -39,7 +39,7 @@ You can configure Windows Update for Business by using MDM policy. To configure 
 
     ![figure 2](images/wuforbusiness-fig11-intune.png)
 
-2.  Configure the device to Consumer Branch for Business by selecting to defer upgrades (as described in [Setup and deployment](setup-and-deployment.md)).
+2.  Configure the device to Consumer Branch for Business by selecting to defer upgrades (as described in [Setup and deployment](setup-and-deployment.md).
 
     **Note**  
     As noted, because WSUS and Windows Update for Business are mutually exclusive policies, do not set **UpdateServiceUrl** if you want to configure to defer upgrades.

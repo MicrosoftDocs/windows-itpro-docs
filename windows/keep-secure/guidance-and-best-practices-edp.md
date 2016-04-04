@@ -37,11 +37,11 @@ This section includes info about the enlightened Microsoft apps, including how t
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Enlightened apps for use with enterprise data protection (EDP)](enlightened-microsoft-apps-and-edp.md))</p></td>
+<td align="left"><p>[Enlightened apps for use with enterprise data protection (EDP)](enlightened-microsoft-apps-and-edp.md)</p></td>
 <td align="left"><p>Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your <strong>Protected Apps</strong> list.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Testing scenarios for enterprise data protection (EDP)](testing-scenarios-for-edp.md))</p></td>
+<td align="left"><p>[Testing scenarios for enterprise data protection (EDP)](testing-scenarios-for-edp.md)</p></td>
 <td align="left"><p>We've come up with a list of suggested testing scenarios that you can use to test EDP in your company.</p></td>
 </tr>
 </tbody>

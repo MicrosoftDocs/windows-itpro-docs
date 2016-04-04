@@ -36,11 +36,11 @@ Microsoft Intune and System Center Configuration Manager (version 1511 or later)
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md))</p></td>
+<td align="left"><p>[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md)</p></td>
 <td align="left"><p>Intune helps you create and deploy your EDP policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md))</p></td>
+<td align="left"><p>[Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md)</p></td>
 <td align="left"><p>Configuration Manager (version 1511 or later) helps you create and deploy your EDP policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.</p></td>
 </tr>
 </tbody>

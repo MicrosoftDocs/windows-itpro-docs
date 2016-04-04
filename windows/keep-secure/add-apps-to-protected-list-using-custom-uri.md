@@ -88,7 +88,7 @@ If you only want to add one app at a time, you can follow the instructions in th
 
 15. Click **OK** to close the **Add or edit OMA-URI Setting** box, and then click **Save Policy**.
 
-    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md)) topic.
+    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md) topic.
 
 **To add Classic Windows applications**
 

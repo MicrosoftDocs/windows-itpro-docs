@@ -131,7 +131,7 @@ After your admin signs up for the Store for Business, they can assign roles to o
 
  
 
-In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](../manage/manage-users-and-groups-windows-store-for-business.md)).
+In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](../manage/manage-users-and-groups-windows-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with the Store for Business.
 

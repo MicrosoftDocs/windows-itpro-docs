@@ -44,7 +44,7 @@ The User State Migration Tool (USMT) 10.0 provides a highly customizable user-p
 
 [User State Migration Tool (USMT) How-to topics](usmt-how-to.md)
 
-[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md))
+[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)
 
 [User State Migration Toolkit (USMT) Reference](usmt-reference.md)
 

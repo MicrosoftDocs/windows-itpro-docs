@@ -57,7 +57,7 @@ Generally, enterprises rely on Group Policy or MDM to configure and manage devic
 
 In addition, you may have unmanaged devices, or a large number of devices that you want to configure before enrolling them in management, or you want to apply custom settings that aren't available through your MDM service. The [CSP documentation](#bkmk-csp-doc) can help you understand the settings that can be configured or queried.
 
-In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](../index.md) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)) which links to the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
+In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](../index.md) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) which links to the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
 
 ### CSPs in Windows Imaging and Configuration Designer (ICD)
 

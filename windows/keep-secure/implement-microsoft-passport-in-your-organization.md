@@ -374,7 +374,7 @@ The work PIN is managed using the same Passport policies that you can use to man
 ## Related topics
 
 
-[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md))
+[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 

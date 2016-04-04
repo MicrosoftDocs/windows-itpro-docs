@@ -40,7 +40,7 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 <td align="left"><p>BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Browser: Microsoft Edge and Internet Explorer 11](edge-ie11-whats-new-overview.md))</p></td>
+<td align="left"><p>[Browser: Microsoft Edge and Internet Explorer 11](edge-ie11-whats-new-overview.md)</p></td>
 <td align="left"><p>Resources to help you explore the Windows 10 browsing options for your enterprise.</p></td>
 </tr>
 <tr class="odd">
@@ -52,7 +52,7 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 <td align="left"><p>Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications. If the app isn’t trusted it can’t run, period. It also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code after the computer restarts because of how decisions are made about what can run and when.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Enterprise data protection (EDP)](edp-whats-new-overview.md))</p></td>
+<td align="left"><p>[Enterprise data protection (EDP)](edp-whats-new-overview.md)</p></td>
 <td align="left"><p>With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data disclosure through apps and services that are outside of the enterprise’s control like email, social media, and the public cloud.</p></td>
 </tr>
 <tr class="even">
@@ -92,7 +92,7 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 <td align="left"><p>Windows spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows spotlight is now available in Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education. For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows spotlight background.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows Store for Business overview](windows-store-for-business-overview.md))</p></td>
+<td align="left"><p>[Windows Store for Business overview](windows-store-for-business-overview.md)</p></td>
 <td align="left"><p>With the new Windows Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps.</p></td>
 </tr>
 <tr class="even">
