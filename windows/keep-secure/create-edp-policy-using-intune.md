@@ -27,11 +27,11 @@ Microsoft Intune helps you create and deploy your enterprise data protection (ED
 
 -   [Manage the EDP protection level for your enterprise data](#manage-the-edp-protection-level-for-your-enterprise-data)
 
--   [Define your enterprise-managed identity domains](#define-your-enterprise--managed-identity-domains)
+-   [Define your enterprise-managed identity domains](#define-your-enterprise-managed-identity-domains)
 
 -   [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data)
 
--   [Choose your optional EDP-related settings](#choose-your-optional-EDP--related-settings)
+-   [Choose your optional EDP-related settings](#choose-your-optional-EDP-related-settings)
 
 ## Add an EDP policy
 After you’ve installed and set up Intune for your organization, you must create an EDP-specific policy.
