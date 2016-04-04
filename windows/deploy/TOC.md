@@ -94,7 +94,7 @@
 ##### [Migrate User Accounts](migrate-user-accounts-usmt.md)
 ##### [Reroute Files and Settings](reroute-files-and-settings-usmt.md)
 ##### [Verify the Condition of a Compressed Migration Store](verify-the-condition-of-a-compressed-migration-store.md)
-#### [User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--troubleshooting.md))
+#### [User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--troubleshooting.md)
 ##### [Common Issues](common-issues-usmt-win8.md)
 ##### [Frequently Asked Questions](frequently-asked-questions-usmt-win7-usmt-win8.md)
 ##### [Log Files](log-files-usmt-win7-usmt-win8.md)
