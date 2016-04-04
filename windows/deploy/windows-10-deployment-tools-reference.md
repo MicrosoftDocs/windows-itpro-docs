@@ -41,7 +41,7 @@ Learn about the tools available to deploy Windows 10.
 <td align="left"><p>The Volume Activation Management Tool (VAMT) enables network administrators and other IT professionals to automate and centrally manage the Windows®, Microsoft® Office, and select other Microsoft products volume and retail-activation process.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[User State Migration Tool (USMT) Technical Reference](user-state-migration-tool--usmt--technical-reference.md)</p></td>
+<td align="left"><p>[User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)</p></td>
 <td align="left"><p>The User State Migration Tool (USMT) 10.0 is included with the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10. USMT provides a highly customizable user-profile migration experience for IT professionals.</p></td>
 </tr>
 </tbody>

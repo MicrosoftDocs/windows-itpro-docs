@@ -32,7 +32,7 @@ When creating custom .xml files, note the following requirements:
     <displayName>My Application</displayName>
     ```
 
-For examples of custom .xml files, see [Custom XML Examples](custom-xml-examples-usmt-win7-usmt-win8.md).
+For examples of custom .xml files, see [Custom XML Examples](usmt-custom-xml-examples.md).
 
  
 
