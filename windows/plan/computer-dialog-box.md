@@ -64,7 +64,7 @@ The following table shows the information available in the *&lt;Computer&gt;* di
 <li><p>The application name, version number, and application vendor.</p></li>
 <li><p>The compatibility rating for the application as determined by your organization.</p></li>
 <li><p>The compatibility information from the application vendor.</p></li>
-<li><p>The compatibility information from the ACT Community, which you can view if you are a member of the ACT Community. For more information, see [Settings Dialog Box - Preferences Tab](settings-dialog-box---preferences-tab.md).</p></li>
+<li><p>The compatibility information from the ACT Community, which you can view if you are a member of the ACT Community. For more information, see [Settings Dialog Box - Preferences Tab](act-settings-dialog-box-preferences-tab.md).</p></li>
 <li><p>The issues that have been opened for the application.</p></li>
 <li><p>The count of computers in your organization on which the application is installed.</p></li>
 </ul></td>

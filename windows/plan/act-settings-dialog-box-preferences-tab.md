@@ -52,7 +52,7 @@ If this check box is selected, ACM notifies you when an update is available for 
 ## Related topics
 
 
-[Settings Dialog Box - Settings Tab](settings-dialog-box---settings-tab.md)
+[Settings Dialog Box - Settings Tab](act-settings-dialog-box-settings-tab.md)
 
  
 

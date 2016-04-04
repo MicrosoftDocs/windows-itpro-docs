@@ -38,19 +38,19 @@ This section describes the compatibility reports in Application Compatibility Ma
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Application Report](operatingsystem---application-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Application Report](act-operatingsystem-application-report.md)</p></td>
 <td align="left"><p>This section describes the compatibility reports in Application Compatibility Manager (ACM) and how you can work with the reports.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Computer Report](operatingsystem---computer-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Computer Report](act-operatingsystem-computer-report.md)</p></td>
 <td align="left"><p>The <strong>&lt;OperatingSystem&gt; - Computer Report</strong> screen shows the following information for each computer in your organization:</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[&lt;OperatingSystem&gt; - Device Report](operatingsystem---device-report.md)</p></td>
+<td align="left"><p>[&lt;OperatingSystem&gt; - Device Report](act-operatingsystem-device-report.md)</p></td>
 <td align="left"><p>The <strong>&lt;OperatingSystem&gt; - Device Report</strong> screen shows the following information for each device installed in your organization:</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Internet Explorer - Web Site Report](internet-explorer---web-site-report.md)</p></td>
+<td align="left"><p>[Internet Explorer - Web Site Report](internet-explorer-web-site-report.md)</p></td>
 <td align="left"><p>The <strong>Internet Explorer - Web Site Report</strong> screen shows the following information for each of the websites visited in your organization:</p></td>
 </tr>
 <tr class="odd">

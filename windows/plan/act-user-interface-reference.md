@@ -38,7 +38,7 @@ This section contains information about the user interface for Application Compa
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Toolbar Icons in ACM](toolbar-icons-in-acm-win-8.md)</p></td>
+<td align="left"><p>[Toolbar Icons in ACM](act-toolbar-icons-in-acm.md)</p></td>
 <td align="left"><p>The following table shows icons that appear on toolbars and navigational elements in Application Compatibility Manager (ACM).</p></td>
 </tr>
 <tr class="even">

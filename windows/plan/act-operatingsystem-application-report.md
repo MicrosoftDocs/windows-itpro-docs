@@ -34,7 +34,7 @@ The **&lt;OperatingSystem&gt; - Application Report** screen shows the following 
 
 -   Compatibility information for the application from the application vendor.
 
--   Compatibility ratings from the ACT Community, if you are a member of the ACT Community. To join the ACT Community, see [Settings Dialog Box - Preferences Tab](settings-dialog-box---preferences-tab.md).
+-   Compatibility ratings from the ACT Community, if you are a member of the ACT Community. To join the ACT Community, see [Settings Dialog Box - Preferences Tab](act-settings-dialog-box-preferences-tab.md).
 
 -   The count of active issues for the application.
 
