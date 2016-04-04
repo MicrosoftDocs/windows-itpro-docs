@@ -52,7 +52,7 @@ The following table describes the command-line encryption options in USMT.
  
 
 **Important**  
-Some encryption algorithms may not be available on your systems. You can verify which algorithms are available by running the UsmtUtils command with the **/ec** option. For more information see [UsmtUtils Syntax](usmtutils-syntax-usmt-win8.md)
+Some encryption algorithms may not be available on your systems. You can verify which algorithms are available by running the UsmtUtils command with the **/ec** option. For more information see [UsmtUtils Syntax](usmt-usmtutils-syntax.md)
 
  
 
