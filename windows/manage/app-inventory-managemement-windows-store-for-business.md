@@ -44,7 +44,7 @@ There are a couple of ways to find specific apps, or groups of apps in your inve
 
 **Refine** - Use **Refine** to scope your list of apps by one or more of these app attributes:
 
--   **License** - Online or offline licenses. For more info, see [Apps in Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing-model).
+-   **License** - Online or offline licenses. For more info, see [Apps in Windows Store for Business](apps-in-windows-store-for-business.md#licensing-model).
 
 -   **Platforms** - Lists the devices that apps in your inventory were originally written to support. This list is cumulative for all apps in your inventory.
 
@@ -54,7 +54,7 @@ There are a couple of ways to find specific apps, or groups of apps in your inve
 
 ### Manage apps in your inventory
 
-Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
+Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Windows Store for Business](apps-in-windows-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
 
 <table>
 <colgroup>
@@ -192,7 +192,7 @@ You can download offline-licensed apps from your inventory. You'll need to downl
 
 -   App framework
 
-For more information about online and offline licenses, see [Apps in the Windows Store for Business](apps-in-the-windows-store-for-business.md#licensing-model).
+For more information about online and offline licenses, see [Apps in the Windows Store for Business](apps-in-windows-store-for-business.md#licensing-model).
 
 For more information about downloading offline-licensed apps, see [Download offline apps](distribute-offline-apps.md).
 
