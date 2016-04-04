@@ -27,11 +27,11 @@ Microsoft Intune helps you create and deploy your enterprise data protection (ED
 
 -   [Manage the EDP protection level for your enterprise data](#manage-the-edp-protection-level-for-your-enterprise-data)
 
--   [Define your enterprise-managed identity domains](#define-your-enterprise-managed-identity-domains)
+-   [Define your enterprise-managed identity domains](#define-your-enterprise--managed-identity-domains)
 
 -   [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data)
 
--   [Choose your optional EDP-related settings](#choose-your-optional-EDP-related-settings)
+-   [Choose your optional EDP-related settings](#choose-your-optional-EDP--related-settings)
 
 ## Add an EDP policy
 After you’ve installed and set up Intune for your organization, you must create an EDP-specific policy.
@@ -223,71 +223,24 @@ After you've added a protection mode to your apps, you'll need to decide where t
 
 1.  Add additional network locations your apps can access by clicking **Add**, typing a description into the **Description** box, and then choosing your location type, including:<p>
 
-|Network location type |Format |Description |
-|----------------------|-------|------------|
-|Enterprise Cloud Domain |contoso.sharepoint.com,proxy1.contoso.com\|office.com\|proxy2.contoso.com|
+|Network location type |Format          |Description           |
+|----------------------|----------------|----------------------|
+|Enterprise Cloud Domain |`contoso.sharepoint.com,proxy1.contoso.com&#x7C;office.com&#x7C;proxy2.contoso.com`|Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the `|` delimiter. Include the `,` delimiter just before the `|` if you don’t use proxies. For example: `[URL,Proxy]|[URL,Proxy]`. |
+|Enterprise Network Domain |`domain1.contoso.com,domain2.contoso.com` |Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the `,` delimiter.<p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks. |
+|Enterprise Proxy Server |`domain1.contoso.com:80;domain2.contoso.com:137` |Specify the proxy server and the port traffic is routed through. If you have multiple resources, you must use the `;` delimiter.<p>This setting is required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when using certain Wi-Fi hotspots at hotels and restaurants. |
+|Enterprise Internal Proxy Server |`proxy1.contoso.com;proxy2.contoso.com` |Specify the proxy servers your cloud resources will go through. If you have multiple resources, you must use the `;` delimiter. |
+|Enterprise IPv4 Range |**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254 | Specify the addresses for a valid IPv4 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the `-` delimiter between start and end of a range, and the `,` delimiter to separate ranges. |
+|Enterprise IPv6 Range |**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff |Specify the addresses for a valid IPv6 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the `-` delimiter between start and end of a range, and the `,` delimiter to separate ranges.
 
+![microsoft intune: choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
 
+2.  Add as many locations as you need, and then click **OK**.<p>The **Add or Edit Enterprise Network Locations box** closes.
 
-    <td align="left"><p></p></td>
-    <td align="left"><p></p></td>
-    <td align="left"><p>Specify the cloud resources traffic to restrict to your protected apps.</p>
-    <p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your <strong>Enterprise Internal Proxy Server</strong> policy. If you have multiple resources, you must use the &quot;|&quot; delimiter. Include the &quot;,&quot; delimiter just before the &quot;|&quot; if you don’t use proxies. For example: <code>[URL,Proxy]|[URL,Proxy]</code>.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Enterprise Network Domain</p></td>
-    <td align="left"><p>domain1.contoso.com,domain2.contoso.com</p></td>
-    <td align="left"><p>Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the &quot;,&quot; delimiter.</p>
-    <p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Enterprise Proxy Server</p></td>
-    <td align="left"><p>domain1.contoso.com:80;domain2.contoso.com:137</p></td>
-    <td align="left"><p>Specify the proxy server and the port traffic is routed through. If you have multiple resources, you must use the &quot;;&quot; delimiter.</p>
-    <p>This setting is required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when using certain Wi-Fi hotspots at hotels and restaurants.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Enterprise Internal Proxy Server</p></td>
-    <td align="left"><p>proxy1.contoso.com;proxy2.contoso.com</p></td>
-    <td align="left"><p>Specify the proxy servers your cloud resources will go through. If you have multiple resources, you must use the &quot;;&quot; delimiter.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Enterprise IPv4 Range</p></td>
-    <td align="left"><p><strong>Starting IPv4 Address:</strong> 3.4.0.1</p>
-    <p><strong>Ending IPv4 Address:</strong> 3.4.255.254</p>
-    <p><strong>Custom URI:</strong> 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254</p></td>
-    <td align="left"><p>Specify the addresses for a valid IPv4 value range within your intranet.</p>
-    <p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the &quot;-&quot; delimiter between start and end of a range, and the &quot;,&quot; delimiter to separate ranges.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Enterprise IPv6 Range</p></td>
-    <td align="left"><p><strong>Starting IPv6 Address:</strong></p>
-    <p>2a01:110::</p>
-    <p><strong>Ending IPv6 Address:</strong> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff</p>
-    <p><strong>Custom URI:</strong> 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</p></td>
-    <td align="left"><p>Specify the addresses for a valid IPv6 value range within your intranet.</p>
-    <p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the &quot;-&quot; delimiter between start and end of a range, and the &quot;,&quot; delimiter to separate ranges.</p></td>
-    </tr>
-    </tbody>
-    </table>
+3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.<p>Adding a data recovery certificate helps you to access locally-protected files on the device. For example, if an employee leaves the company and the IT department has to access EDP-protected data from a Windows 10 company computer. This can also help recover data in case an employee's device is accidentally revoked. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.<p>
 
-     
-
-    ![microsoft intune: choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
-
-2.  Add as many locations as you need, and then click **OK**.
-
-    The **Add or Edit Enterprise Network Locations box** closes.
-
-3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.
-
-    Adding a data recovery certificate helps you to access locally-protected files on the device. For example, if an employee leaves the company and the IT department has to access EDP-protected data from a Windows 10 company computer. This can also help recover data in case an employee's device is accidentally revoked. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
-
-    ![microsoft intune: specify your data recovery certificate for your policy](images/intune-data-recovery.png)
+![microsoft intune: specify your data recovery certificate for your policy](images/intune-data-recovery.png)
 
 ## Choose your optional EDP-related settings
-
-
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
 
 **To add your optional settings**
@@ -303,11 +256,8 @@ After you've decided where your protected apps can access enterprise data on you
 2.  Click **Save Policy**.
 
 ## Related topics
-
-
-[Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md))
-
-[General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md))
+- [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md)
+- [General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
 
  
 
