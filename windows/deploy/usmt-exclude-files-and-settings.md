@@ -166,7 +166,7 @@ To exclude a Sample.doc file from any drive on the computer, use the &lt;script&
 <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>
 ```
 
-[USMT XML Reference](usmt-xml-reference-uusmt-xml-reference.mdid="exone"></a>Example 1: How to exclude all .mp3 files
+[USMT XML Reference](usmt-xml-reference.md)Example 1: How to exclude all .mp3 files
 
 The following .xml file excludes all .mp3 files from the migration:
 
@@ -288,7 +288,7 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
 [Customize USMT XML Files](usmt-customize-xml-files.md)
 
-[USMT XML Reference](usmt-xml-reference-usmt-win7-usmt-win8.musmt-xml-reference.mdmt-win7-usmt-win8.md)
+[USMT XML Reference](usmt-xml-reference.md)
 
  
 
