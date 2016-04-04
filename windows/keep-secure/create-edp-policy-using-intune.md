@@ -21,9 +21,9 @@ Microsoft Intune helps you create and deploy your enterprise data protection (ED
 ## In this topic:
 -   [Add an EDP policy](#add-an-edp-policy)
 
--   [Choose which apps can access your enterprise data](#add-individual-apps-to-your-protected-app-list)
+-   [Choose which apps can access your enterprise data](##add-individual-apps-to-your-protected-app-list)
 
--   [Exempt apps from EDP restrictions](#exempt-apps-from-EDP-restrictions)
+-   [Exempt apps from EDP restrictions](##exempt-apps-from-EDP-restrictions)
 
 -   [Manage the EDP protection level for your enterprise data](#manage-the-edp-protection-level-for-your-enterprise-data)
 
