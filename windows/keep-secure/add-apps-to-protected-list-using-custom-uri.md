@@ -24,7 +24,7 @@ Add multiple apps to your enterprise data protection (EDP) **Protected Apps** li
 **Important**  
 Results can be unpredictable if you configure your policy using both the UI and the Custom URI method together. We recommend using a single method for each policy.
 
-If you only want to add one app at a time, you can follow the instructions in the [Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md)) topic.
+If you only want to add one app at a time, you can follow the instructions in the [Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) topic.
 
  
 
@@ -150,7 +150,7 @@ If you only want to add one app at a time, you can follow the instructions in th
 
 15. Click **OK** to close the **Add or edit OMA-URI Setting** box, and then click **Save Policy**.
 
-    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md)) topic.
+    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md) topic.
 
  
 
