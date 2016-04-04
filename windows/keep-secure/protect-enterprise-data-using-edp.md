@@ -80,44 +80,16 @@ EDP is still in development and is not yet integrated with Azure Rights Manageme
 
 Use the following table to identify the scenarios that require Azure Rights Management, the behavior when Azure Rights Management is not used with EDP, and the recommended workarounds.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">EDP scenario</th>
-<th align="left">Without Azure Rights Management</th>
-<th align="left">Workaround</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Saving enterprise data to USB drives</p></td>
-<td align="left"><p>Data in the new location remains encrypted, but becomes inaccessible on other devices or for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</p></td>
-<td align="left"><p>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.</p>
-<p>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Sharing enterprise data through email attachments</p></td>
-<td align="left"><p>The attachment is sent unprotected.</p></td>
-<td align="left"><p>Store documents on enterprise cloud or network sites, and share links.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Synchronizing data to other services or public cloud storage</p></td>
-<td align="left"><p>Synchronized files aren't protected on additional services or as part of public cloud storage.</p></td>
-<td align="left"><p>Stop the app from synchronizing or don't add the app to your <strong>Protected App</strong> list.</p>
-<p>For more info about adding apps to the <strong>Protected Apps</strong> list, see either the [Create an enterprise data protection (EDP) policy using Intune](create-edp-policy-using-intune.md)) or the [Create and deploy an enterprise data protection (EDP) policy using Configuration Manager](create-edp-policy-using-sccm.md)) topic, depending on your management solution.</p></td>
-</tr>
-</tbody>
-</table>
+|EDP scenario |Without Azure Rights Management |Workaround |
+|-------------|--------------------------------|-----------|
+|Saving enterprise data to USB drives |Data in the new location remains encrypted, but becomes inaccessible on other devices or for other users. For example, the file won't open or the file opens, but doesn't contain readable text. |Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<p>We strongly recommend educating employees about how to limit or eliminate the need for this decryption. |
+|Sharing enterprise data through email attachments |The attachment is sent unprotected. |Store documents on enterprise cloud or network sites, and share links. |
+|Synchronizing data to other services or public cloud storage |Synchronized files aren't protected on additional services or as part of public cloud storage. |Stop the app from synchronizing or don't add the app to your **Protected App** list.<p>For more info about adding apps to the **Protected App** list, see either the [Create an enterprise data protection (EDP) policy using Intune](create-edp-policy-using-intune.md) or the [Create and deploy an enterprise data protection (EDP) policy using Configuration Manager](create-edp-policy-using-sccm.md) topic, depending on your management solution.
 
 ## Next steps
 After deciding to use EDP in your enterprise, you need to:
 
--   [Create an enterprise data protection (EDP) policy](overview-create-edp-policy.md))
+-   [Create an enterprise data protection (EDP) policy](overview-create-edp-policy.md)
 
  
 

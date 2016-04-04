@@ -33,7 +33,7 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 <td align="left"><p>This topic lists new and updated topics in the Keep Windows 10 secure documentation for [Windows 10 and Windows 10 Mobile](../index.md).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md))</p></td>
+<td align="left"><p>[Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)</p></td>
 <td align="left"><p>To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature. Using this feature, you can turn on a global setting that stops your employees from loading untrusted fonts processed using the Graphics Device Interface (GDI) onto your network. Untrusted fonts are any font installed outside of the %windir%/Fonts directory. Blocking untrusted fonts helps prevent both remote (web-based or email-based) and local EOP attacks that can happen during the font file-parsing process.</p></td>
 </tr>
 <tr class="odd">
@@ -45,7 +45,7 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 <td align="left"><p>In Windows 10, Microsoft Passport replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and a Windows Hello (biometric) or PIN.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md))</p></td>
+<td align="left"><p>[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)</p></td>
 <td align="left"><p>Windows Hello is the biometric authentication feature that helps strengthen authentication and helps to guard against potential spoofing through fingerprint matching and facial recognition.</p></td>
 </tr>
 <tr class="even">
@@ -61,7 +61,7 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 <td align="left"><p>Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md))</p></td>
+<td align="left"><p>[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md)</p></td>
 <td align="left"><p>With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures to their personal email account, copies and pastes product info to a public Yammer group or tweet, or saves an in-progress sales report to their public cloud storage.</p></td>
 </tr>
 <tr class="even">
