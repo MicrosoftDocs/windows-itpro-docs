@@ -53,7 +53,7 @@ USMT 10.0 tools can be used on several versions of Windows operating systems, fo
 <td align="left"><p>Includes step-by-step instructions for using USMT, as well as how-to topics for conducting tasks in USMT.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--guidance-and-best-practices-edp.md))</p></td>
+<td align="left"><p>[User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--troubleshooting.md))</p></td>
 <td align="left"><p>Provides answers to frequently asked questions and common issues in USMT, as well as a reference for return codes used in USMT.</p></td>
 </tr>
 <tr class="even">

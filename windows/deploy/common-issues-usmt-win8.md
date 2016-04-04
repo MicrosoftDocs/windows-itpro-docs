@@ -289,7 +289,7 @@ You should also reboot the machine.
 ## Related topics
 
 
-[User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--guidance-and-best-practices-edp.md))
+[User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--troubleshooting.md))
 
 [Frequently Asked Questions](frequently-asked-questions-usmt-win7-usmt-win8.md)
 

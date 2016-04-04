@@ -5,7 +5,7 @@
 ## [Browser: Microsoft Edge and Internet Explorer 11](edge-ie11-whats-new-overview.md))
 ## [Credential Guard](credential-guard.md)
 ## [Device Guard](device-guard-overview.md)
-## [Enterprise data protection (EDP)](edp-whats-new-overview.md))
+## [Enterprise data protection (EDP)](edp-whats-new-overview.md)
 ## [Enterprise management for Windows 10 devices](device-management.md)
 ## [Lockdown features from Windows Embedded Industry 8.1](lockdown-features-windows-10.md)
 ## [Microsoft Passport](microsoft-passport.md)
@@ -15,6 +15,6 @@
 ## [Trusted Platform Module](trusted-platform-module.md)
 ## [User Account Control](user-account-control.md)
 ## [Windows spotlight on the lock screen](windows-spotlight.md)
-## [Windows Store for Business overview](windows-store-for-business-overview.md))
+## [Windows Store for Business overview](windows-store-for-business-overview.md)
 ## [Windows Update for Business](windows-update-for-business.md)
 

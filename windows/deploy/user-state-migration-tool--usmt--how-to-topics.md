@@ -64,7 +64,7 @@ The following table lists topics that describe how to use User State Migration T
 
 [User State Migration Tool (USMT) Overview Topics](user-state-migration-tool--usmt--overview-topics.md)
 
-[User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--guidance-and-best-practices-edp.md))
+[User State Migration Tool (USMT) Troubleshooting](user-state-migration-tool--usmt--troubleshooting.md))
 
 [User State Migration Toolkit (USMT) Reference](user-state-migration-toolkit--usmt--reference.md)
 

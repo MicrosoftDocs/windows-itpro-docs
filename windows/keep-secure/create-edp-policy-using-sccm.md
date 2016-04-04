@@ -390,7 +390,7 @@ After you’ve created your EDP policy, you'll need to deploy it to your organiz
 ## Next steps
 
 
-Enrollment can be done for business or personal devices, allowing the devices to use your managed apps and to sync with your managed content and information. For more info about enrollment, see [Enroll and unenroll devices from enterprise data protection (EDP)](../keep-secure/remove-your-corporate-data-from-enrolled-devices.md).
+Enrollment can be done for business or personal devices, allowing the devices to use your managed apps and to sync with your managed content and information.
 
 ## Related topics
 
