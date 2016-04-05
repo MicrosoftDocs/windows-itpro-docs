@@ -1,48 +1,42 @@
 ---
 title: Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager (Windows 10)
 description: Configuration Manager (version 1511 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
-ms.assetid: 85B99C20-1319-4AA3-8635-C1A87B244529
+ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: brianlic-msft
+author: eross-msft
 ---
 
 # Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager
-
-
 **Applies to:**
 
 -   Windows 10 Insider Preview
 -   Windows 10 Mobile Preview
 -   System Center Configuration Manager (version 1511 or later)
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.]</span>
 
 Configuration Manager (version 1511 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
 
 ## In this topic:
+-   [Add an EDP policy](#add-an-edp-policy)
 
+-   [Choose which apps can access your enterprise data](#choose-which-apps-can-access-your-enterprise-data)
 
--   [Add an EDP policy](#add-edp-policy-sccm)
+-   [Manage the EDP protection level for your enterprise data](#manage-the-edp-protection-level-for-your-enterprise-data)
 
--   [Choose which apps can access your enterprise data](#choose-apps-sccm)
+-   [Define your enterprise-managed identity domains](#define-your-enterprise-managed-identity-domains)
 
--   [Manage the EDP protection level for your enterprise data](#protect-level-sccm)
+-   [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data)
 
--   [Define your enterprise-managed identity domains](#define-identity-domain)
+-   [Choose your optional EDP-related settings](#choose-your-optional-EDP-related-settings)
 
--   [Choose where apps can access enterprise data](#choose-where-apps-sccm)
+-   [Review your configuration choices in the **Summary** screen](#review-your-configuration-choices-in-the-summary-screen)
 
--   [Choose your optional EDP-related settings](#optional-settings)
+-   [Deploy the EDP policy](#deploy-the-edp-policy)
 
--   [Review your configuration choices in the **Summary** screen](#summary-page)
-
--   [Deploy the EDP policy](#deploy-policy-sccm)
-
-## <a href="" id="add-edp-policy-sccm"></a>Add an EDP policy
-
-
+## Add an EDP policy
 After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for EDP, which in turn becomes your EDP policy.
 
 **To create a configuration item for EDP**
@@ -77,7 +71,7 @@ After you’ve installed and set up System Center Configuration Manager for your
 
     The **Configure Enterprise Data Protection settings** page appears, where you'll configure your policy for your organization.
 
-## <a href="" id="choose-apps-sccm"></a>Choose which apps can access your enterprise data
+## Choose which apps can access your enterprise data
 
 
 During the policy-creation process in Configuration Manager, you can choose the apps you want to give access to your enterprise data through EDP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps or unprotected network locations.
@@ -97,7 +91,7 @@ EDP-aware apps are expected to prevent enterprise data from going to unprotected
 
     **To find the Publisher and Product name values for Microsoft Store apps without installing them**
 
-    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
+    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
 
     2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
@@ -209,7 +203,7 @@ EDP-aware apps are expected to prevent enterprise data from going to unprotected
 
     ![create configuration item wizard, adding a desktop app](images/edp-sccm-adddesktopapp.png)
 
-## <a href="" id="protect-level-sccm"></a>Manage the EDP protection level for your enterprise data
+## Manage the EDP protection level for your enterprise data
 
 
 After you've added the apps you want to protect with EDP, you'll need to apply an app management mode.
@@ -253,7 +247,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
 
 ![create configuration item wizard, choosing the app management mode](images/edp-sccm-appmgmt.png)
 
-## <a href="" id="define-identity-domain"></a>Define your enterprise-managed identity domains
+## Define your enterprise-managed identity domains
 
 
 Specify your company’s enterprise identity, expressed as your primary internet domain. For example, if your company is Contoso, its enterprise identity might be contoso.com. The first listed domain (in this example, contoso.com) is the primary enterprise identity string used to tag files protected by any app on the **Protected App** list.
@@ -270,7 +264,7 @@ This list of managed identity domains, along with the primary domain, make up th
 
     If you have multiple domains, you must separate them with the "|" character. For example, contoso.com|fabrikam.com.
 
-## <a href="" id="choose-where-apps-sccm"></a>Choose where apps can access enterprise data
+## Choose where apps can access enterprise data
 
 
 After you've added a management level to your protected apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.
@@ -348,7 +342,7 @@ After you've added a management level to your protected apps, you'll need to dec
 
     Adding a data recovery certificate helps you to access locally-protected files on the device. For example, if an employee leaves the company and the IT department has to access EDP-protected data from a Windows 10 company computer. This can also help recover data in case an employee's device is accidentally revoked. For more info about how to find and export your data recovery certificate, see the[Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
 
-## <a href="" id="optional-settings"></a>Choose your optional EDP-related settings
+## Choose your optional EDP-related settings
 
 
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
@@ -363,7 +357,7 @@ After you've decided where your protected apps can access enterprise data on you
 
         ![create configuration item wizard, choosing additional optional settings for enterprise data protection](images/edp-sccm-optsettings.png)
 
-## <a href="" id="summary-page"></a>Review your configuration choices in the Summary screen
+## Review your configuration choices in the Summary screen
 
 
 After you've finished configuring your policy, you can review all of your info on the **Summary** screen.
@@ -376,16 +370,16 @@ After you've finished configuring your policy, you can review all of your info o
 
     ![create configuration item wizard, reviewing the summary screen before creating the policy](images/edp-sccm-summaryscreen.png)
 
-## <a href="" id="deploy-policy-sccm"></a>Deploy the EDP policy
+## Deploy the EDP policy
 
 
 After you’ve created your EDP policy, you'll need to deploy it to your organization's devices. For info about your deployment options, see these topics:
 
-[Operations and Maintenance for Compliance Settings in Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=708224)
+[Operations and Maintenance for Compliance Settings in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=708224)
 
-[How to Create Configuration Baselines for Compliance Settings in Configuration Manager]( http://go.microsoft.com/fwlink/?LinkId=708225)
+[How to Create Configuration Baselines for Compliance Settings in Configuration Manager]( http://go.microsoft.com/fwlink/p/?LinkId=708225)
 
-[How to Deploy Configuration Baselines in Configuration Manager]( http://go.microsoft.com/fwlink/?LinkId=708226)
+[How to Deploy Configuration Baselines in Configuration Manager]( http://go.microsoft.com/fwlink/p/?LinkId=708226)
 
 ## Next steps
 
@@ -395,11 +389,11 @@ Enrollment can be done for business or personal devices, allowing the devices to
 ## Related topics
 
 
-[System Center Configuration Manager and Endpoint Protection (Version 1511)](http://go.microsoft.com/fwlink/?LinkId=717372)
+[System Center Configuration Manager and Endpoint Protection (Version 1511)](http://go.microsoft.com/fwlink/p/?LinkId=717372)
 
-[TechNet documentation for Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=691623)
+[TechNet documentation for Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=691623)
 
-[Manage mobile devices with Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=691624)
+[Manage mobile devices with Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=691624)
 
  
 

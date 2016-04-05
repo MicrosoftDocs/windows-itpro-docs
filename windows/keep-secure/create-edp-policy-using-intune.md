@@ -66,7 +66,7 @@ The steps to add your apps are based on the type of app it is; either a Universa
 
     **To find the Publisher and Product name values for Microsoft Store apps without installing them**
 
-    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.<p>
+    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.<p>
     **Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the **Protected App** list. For info about how to do this, see the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
 
     2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
@@ -325,7 +325,7 @@ After you've decided where your protected apps can access enterprise data on you
 2.  Click **Save Policy**.
 
 ## Related topics
--[Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md)
+- [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md)
 - [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md)
 - [Create and deploy a VPN policy for enterprise data protection (EDP) using Microsoft Intune](create-vpn-and-edp-policy-using-intune.md)
 - [General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
