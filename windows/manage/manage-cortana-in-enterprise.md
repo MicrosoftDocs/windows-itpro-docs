@@ -45,111 +45,16 @@ We understand that there are concerns about Cortana and enterprise privacy, so w
 ## Set up Cortana using Group Policy and MDM policies
 Set up and manage Cortana by using the following Group Policy and mobile device management (MDM) policies.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Group Policy</th>
-<th align="left">MDM policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana</p></td>
-<td align="left"><p>Experience/AllowCortana</p></td>
-<td align="left"><p>Specifies whether employees can use Cortana.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Employees can still perform searches even with Cortana turned off.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Computer Configuration\Administrative Templates\Control Panel\Regional and Language Options\Allow input personalization</p></td>
-<td align="left"><p>Privacy/AllowInput Personalization</p></td>
-<td align="left"><p>Specifies whether to turn on automatic learning, which allows the collection of speech and handwriting patterns, typing history, contacts, and recent calendar information. It is required for the use of Cortana.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>Cortana won’t work if this setting is turned off (disabled).</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>None</p></td>
-<td align="left"><p>System/AllowLocation</p></td>
-<td align="left"><p>Specifies whether to allow app access to the Location service.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Computer Configuration\Administrative Templates\Windows Components\Search\Don't search the web or display web results</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><p>Specifies whether search can perform queries on the web and if the web results are displayed in search.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>Cortana won’t work if this setting is turned off (disabled).</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Computer Configuration\Administrative Templates\Windows Components\Search\Allow search and Cortana to use location</p></td>
-<td align="left"><p>Search/AllowSearchToUse Location</p></td>
-<td align="left"><p>Specifies whether search and Cortana can provide location aware search and Cortana results.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>Cortana won’t work if this setting is turned off (disabled).</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Computer Configuration\Administrative Templates\Windows Components\Search\Set the SafeSearch setting for Search</p></td>
-<td align="left"><p>Search/SafeSearch Permissions</p></td>
-<td align="left"><p>Specifies what level of safe search (filtering adult content) is required.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>This setting only applies to Windows 10 Mobile.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>User Configuration\Administrative Templates\Windows Components\File Explorer\Turn off display of recent search entries in the File Explorer search box</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><p>Specifies whether the search box can suggest recent queries and prevent entries from being stored in the registry for future reference.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>Cortana won’t work if this setting is turned off (disabled).</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"><p>User Configuration\Administrative Templates\Start Menu and Taskbar\Do not search communications</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><p>Specifies whether the Start menu search box searches communications.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>Cortana won’t work if this setting is turned off (disabled).</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-</tbody>
-</table>
+|Group policy |MDM policy |Description |
+|-------------|-----------|------------|
+|Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana |Experience/AllowCortana |Specifies whether employees can use Cortana.<p>**Note**<br>Employees can still perform searches even with Cortana turned off. |
+|Computer Configuration\Administrative Templates\Control Panel\Regional and Language Options\Allow input personalization |Privacy/AllowInput Personalization |Specifies whether to turn on automatic learning, which allows the collection of speech and handwriting patterns, typing history, contacts, and recent calendar information. It is required for the use of Cortana.<p>**Important**<br>Cortana won’t work if this setting is turned off (disabled). |
+|None |System/AllowLocation |Specifies whether to allow app access to the Location service. |
+|Computer Configuration\Administrative Templates\Windows Components\Search\Don't search the web or display web results |None |Specifies whether search can perform queries on the web and if the web results are displayed in search.<p>**Important**<br>Cortana won’t work if this setting is turned off (disabled). |
+|Computer Configuration\Administrative Templates\Windows Components\Search\Allow search and Cortana to use location |Search/AllowSearchToUse Location |Specifies whether search and Cortana can provide location aware search and Cortana results.<p>**Important**<br>Cortana won’t work if this setting is turned off (disabled). |
+|Computer Configuration\Administrative Templates\Windows Components\Search\Set the SafeSearch setting for Search |Search/SafeSearch Permissions |Specifies what level of safe search (filtering adult content) is required.<p>**Note**<br>This setting only applies to Windows 10 Mobile. |
+|User Configuration\Administrative Templates\Windows Components\File Explorer\Turn off display of recent search entries in the File Explorer search box |None |Specifies whether the search box can suggest recent queries and prevent entries from being stored in the registry for future reference.<p>**Important**<br>Cortana won’t work if this setting is turned off (disabled). |
+|User Configuration\Administrative Templates\Start Menu and Taskbar\Do not search communications |None |Specifies whether the Start menu search box searches communications.<p>**Important**<br>Cortana won’t work if this setting is turned off (disabled). |
 
 **More info:**
 -   For specific info about how to set, manage, and use each of these MDM policies to configure Cortana in your enterprise, see the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkId=717380) topic, located in the configuration service provider reference topics. For specific info about how to set, manage, and use each of these Group Policies to configure Cortana in your enterprise, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=717381).
