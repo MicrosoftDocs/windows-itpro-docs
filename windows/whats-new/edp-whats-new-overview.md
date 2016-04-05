@@ -76,16 +76,16 @@ EDP helps protect your enterprise data from being shared to public spaces, like 
 ## Helping prevent accidental data disclosure to other devices
 EDP helps protect your enterprise data from leaking to other devices while transferring or moving between them. For example, if an employee puts corporate data on a USB key that also includes personal data, the corporate data remains encrypted even though the personal information remains open. Additionally, the encryption continues when the employee copies the encrypted content back to another corporate-managed device.
 
-### Great employee experiences
+## Great employee experiences
 EDP can offer a great user experience by not requiring employees to switch between apps to protect corporate data. For example, while checking work emails in Microsoft Outlook, an employee gets a personal message. Instead of having to leave Outlook, both the work and personal messages appear on the screen, side-by-side.
 
-#### Using protected apps
+### Using protected apps
 Protected apps are allowed to access your enterprise data and will react differently with other non-protected or personal apps. For example, if your EDP-protection mode is set to block, your privileged apps will let the employee copy and paste information between other protected apps, but not with personal apps. Imagine an HR person wants to copy a job description from a protected app to an internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that it couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website and it works without a problem.
 
-#### Copying or downloading enterprise data
+### Copying or downloading enterprise data
 Downloading content from a location like SharePoint or a network file share, or an enterprise web location, such as Office365.com automatically determines that the content is enterprise data and is encrypted as such, while it’s stored locally. The same applies to copying enterprise data to something like a USB drive. Because the content is already marked as enterprise data locally, the encryption is persisted on the new device.
 
-#### Changing the EDP protection
+### Changing the EDP protection
 Employees can change enterprise data protected documents back to personal if the document is wrongly marked as enterprise. However, this requires the employee to take an action and is audited and logged for you to review
 
 ## Turn off EDP
