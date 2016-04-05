@@ -39,7 +39,7 @@ When a personal device is unenrolled, the user's data and apps are untouched, wh
 
 Enterprises have the following identity and management choices.
 
-|Area|Choices|
+| Area | Choices |
 |---|---|                                                                                                                                                                            
 | Identity          | Active Directory; Azure AD                                                                                                                                                  |
 | Grouping          | Domain join; Workgroup; Azure AD join                                                                                                                                       |
