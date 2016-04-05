@@ -43,11 +43,11 @@ After you’ve installed and set up Intune for your organization, you must creat
 
 3.  Go to **Windows**, click the **Enterprise Data Protection (Windows 10 and Mobile and later) policy**, pick the EDP template, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
-    ![microsoft intune: new policy creation screen](images/intune-createnewpolicy.png)
+    ![Microsoft Intune: Create your new policy from the New Policy screen](images/intune-createnewpolicy.png)
 
 4.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
-    ![microsoft intune: required name and optional description fields](images/intune-namedescription.png)
+    ![Microsoft Intune: Fill out the required Name and optional Description fields](images/intune-namedescription.png)
 
 ## Add individual apps to your Protected App list
 During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through EDP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
@@ -89,7 +89,7 @@ The steps to add your apps are based on the type of app it is; either a Universa
           "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
         }
        ```
-    ![microsoft intune: add a universal windows app to the protected apps list](images/intune-addapps.png)
+    ![Microsoft Intune: Add a UWP app to the Protected Apps list](images/intune-addapps.png)
 
     **To find the Publisher and Product name values for apps installed on Windows 10 Mobile phones**
 
@@ -157,7 +157,7 @@ The steps to add your apps are based on the type of app it is; either a Universa
         </tr>                                            
     </table>
 
-    ![microsoft intune: add a classic windows app to the protected apps list](images/intune-add-desktop-app.png)
+    ![Microsoft Intune: Add a Classic Windows app to the Protected Apps list](images/intune-add-desktop-app.png)
 
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
@@ -237,7 +237,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
     </tr>
 </table>
 
-![microsoft intune: add protection level for protected apps list](images/intune-encryption-level.png)
+![Microsoft Intune: Add the protection level for your Protected Apps list](images/intune-encryption-level.png)
 
 ## Define your enterprise-managed identity domains
 Specify your company’s enterprise identity, expressed as your primary internet domain. For example, if your company is Contoso, its enterprise identity might be contoso.com. The first listed domain (in this example, contoso.com) is the primary enterprise identity string used to tag files protected by any app on the **Protected App** list.
@@ -246,7 +246,7 @@ You can also specify all the domains owned by your enterprise that are used for 
 
 This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
 
-![microsoft intune: add primary internet domain for your enterprise identity](images/intune-primary-domain.png)
+![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 **To add your primary domain**
 
@@ -301,13 +301,13 @@ After you've added a protection mode to your apps, you'll need to decide where t
         </tr>                
     </table>
 
-    ![microsoft intune: choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
+    ![Microsoft Intune: Choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
 
 2.  Add as many locations as you need, and then click **OK**.<p>The **Add or Edit Enterprise Network Locations box** closes.
 
 3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.<p>Adding a data recovery certificate helps you to access locally-protected files on the device. For example, if an employee leaves the company and the IT department has to access EDP-protected data from a Windows 10 company computer. This can also help recover data in case an employee's device is accidentally revoked. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.<p>
 
-    ![microsoft intune: specify your data recovery certificate for your policy](images/intune-data-recovery.png)
+    ![Microsoft Intune: Specify a data recovery certificate for your policy](images/intune-data-recovery.png)
 
 ## Choose your optional EDP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
@@ -320,7 +320,7 @@ After you've decided where your protected apps can access enterprise data on you
 
     -   **Protect app content when the device is in a locked state for the apps configured above.** Clicking **Yes** lets EDP help to secure protected app content when a mobile device is locked. We recommend turning this option on to help prevent data leaks from things such as email text that appears on the **Lock** screen of a Windows 10 Mobile phone.
 
-        ![microsoft intune: optional edp settings](images/intune-edpsettings.png)
+        ![Microsoft Intune: Optional EDP settings](images/intune-edpsettings.png)
 
 2.  Click **Save Policy**.
 
