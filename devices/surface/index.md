@@ -5,7 +5,7 @@ ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: heatherpoulsen
 ---
 
 # Surface

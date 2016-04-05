@@ -6,7 +6,7 @@ keywords: ["hardware, device, tool, test, component"]
 ms.prod: W8
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: heatherpoulsen
 ---
 
 # Microsoft Surface Diagnostic Toolkit

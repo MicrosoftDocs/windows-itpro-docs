@@ -6,7 +6,7 @@ keywords: ["ethernet, deploy, removable, network, connectivity, boot, firmware, 
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: heatherpoulsen
 ---
 
 # Ethernet adapters and Surface deployment
@@ -57,7 +57,7 @@ To boot a Surface device from an alternative boot device, follow these steps:
 
  
 
-To support booting from the network in a Windows Preinstallation Environment (WinPE), such as is used in the Microsoft Deployment Toolkit and Configuration Manager, you must add drivers for the Ethernet adapter to WinPE. You can download the drivers for Surface Ethernet adapters from the Microsoft Download Center page for your specific device. For a list of the available downloads for Surface devices, see [Download the latest firmware and drivers for Surface](7662BF68-8BF7-43F7-81F5-3580A770294A).
+To support booting from the network in a Windows Preinstallation Environment (WinPE), such as is used in the Microsoft Deployment Toolkit and Configuration Manager, you must add drivers for the Ethernet adapter to WinPE. You can download the drivers for Surface Ethernet adapters from the Microsoft Download Center page for your specific device. For a list of the available downloads for Surface devices, see [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
 
 ## <a href="" id="manage-mac-addresses"></a>Manage MAC addresses with removable Ethernet adapters
 

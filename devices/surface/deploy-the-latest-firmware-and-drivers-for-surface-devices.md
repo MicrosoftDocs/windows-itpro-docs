@@ -6,7 +6,7 @@ keywords: ["update Surface, newest, latest, download, firmware, driver, tablet, 
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: heatherpoulsen
 ---
 
 # Download the latest firmware and drivers for Surface devices

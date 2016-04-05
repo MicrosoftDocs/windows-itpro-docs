@@ -6,7 +6,7 @@ keywords: ["deploy", "install", "tool"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: heatherpoulsen
 ---
 
 # Microsoft Surface Deployment Accelerator

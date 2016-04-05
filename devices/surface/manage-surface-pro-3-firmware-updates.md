@@ -6,7 +6,7 @@ keywords: ["Surface, Surface Pro 3, firmware, update, device, manage, deploy, dr
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: heatherpoulsen
 ---
 
 # Manage Surface driver and firmware updates
@@ -14,7 +14,7 @@ author: brianlic-msft
 
 This article describes the available options to manage firmware and driver updates for Surface devices.
 
-For a list of the available downloads for Surface devices and links to download the drivers and firmware for your device, see [Download the latest firmware and drivers for Surface devices](7662BF68-8BF7-43F7-81F5-3580A770294A).
+For a list of the available downloads for Surface devices and links to download the drivers and firmware for your device, see [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
 
 On Surface devices, the firmware is exposed to the operating system as a driver and is visible in Device Manager. This allows a Surface device firmware to be automatically updated along with all drivers through Windows Update. This mechanism provides a seamless, automatic experience to receive the latest firmware and driver updates. Although automatic updating is easy for end users, updating firmware and drivers automatically may not always apply to organizations and businesses. Automatic updates with Windows Update may not be applicable where updates are carefully managed, or when you deploy a new operating system to a Surface device.
 
@@ -39,7 +39,7 @@ For instructions on how to deploy with System Center Configuration Manager, refe
 
 **Provisioning packages**
 
-New in Windows 10, provisioning packages (PPKG files) provide a simple method to apply a configuration to a destination device. You can find out more about provisioning packages, including instructions for how to create your own, in [Provisioning packages](287706E5-063F-4AB5-902C-A0DF6D0730BC). For easy application of a complete set of drivers and firmware to devices running Windows 10, a provisioning package is supplied for Surface Pro 3 devices. This file contains all of the instructions and required assets to update a Surface Pro 3 device with Windows 10 to the latest drivers and firmware.
+New in Windows 10, provisioning packages (PPKG files) provide a simple method to apply a configuration to a destination device. You can find out more about provisioning packages, including instructions for how to create your own, in [Provisioning packages](http://go.microsoft.com/fwlink/p/?LinkId=761075). For easy application of a complete set of drivers and firmware to devices running Windows 10, a provisioning package is supplied for Surface Pro 3 devices. This file contains all of the instructions and required assets to update a Surface Pro 3 device with Windows 10 to the latest drivers and firmware.
 
 **Windows PowerShell**
 

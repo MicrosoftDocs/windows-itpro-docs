@@ -6,7 +6,7 @@ keywords: ["network", "wireless", "device", "deploy", "authenticaion", "protocol
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: heatherpoulsen
 ---
 
 # Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices
@@ -77,7 +77,7 @@ To specify the protocol(s) explicitly, follow these steps:
 
 For organizations that manage Surface devices with Configuration Manager, it is even easier to deploy PEAP, EAP-FAST, or Cisco LEAP support to Surface devices. Simply import each MSI file as an application from the Software Library and configure a deployment to your Surface device collection.
 
-For more information on how to deploy applications with Configuration Manager see [How to Create Applications in Configuration Manager](989dfb1d-a003-4200-817d-f917d8ae096b) and [How to Deploy Applications in Configuration Manager](c3721aba-b8f4-45d3-88f3-dbb15de48b00).
+For more information on how to deploy applications with Configuration Manager see [How to Create Applications in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=761079) and [How to Deploy Applications in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=761080).
 
  
 

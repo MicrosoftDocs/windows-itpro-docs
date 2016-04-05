@@ -6,7 +6,7 @@ keywords: ["Surface, Surface Pro 3, security, features, configure, hardware, dev
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: heatherpoulsen
 ---
 
 # Advanced UEFI security features for Surface
@@ -30,18 +30,17 @@ Before you can configure the advanced security features of your Surface device, 
 
 After the v3.11.760.0 UEFI update is installed on a Surface device, an additional UEFI menu named **Advanced Device Security** becomes available. If you click this menu, the following options are displayed:
 
-|                |                                                                                                                                                                                      |                                                 |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| **Option**     | **Description**                                                                                                                                                                      | **Available settings (default listed in bold)** |
-| Network Boot   | Enables or disables the ability of your Surface device to boot from the network (also known as PXE boot).                                                                            | **Enabled**, Not Bootable                       |
-| Side USB       | Enables or disables the USB port on the side of the Surface device. Additionally, the USB port can be enabled, but not allow booting.                                                | **Enabled**, Not Bootable, Disabled             |
-| Docking Port   | Enables or disables the ports on the Surface docking station. Additionally, the docking port can be enabled, but block booting from any USB or Ethernet port in the docking station. | **Enabled**, Not Bootable, Disabled             |
-| Front Camera   | Enables or disables the camera on the front of the Surface device.                                                                                                                   | **Enabled**, Disabled                           |
-| Rear Camera    | Enables or disables the camera on the rear of the Surface device.                                                                                                                    | **Enabled**, Disabled                           |
-| On Board Audio | Enables or disables audio on the Surface device.                                                                                                                                     | **Enabled**, Disabled                           |
-| microSD        | Enables or disables the microSD slot on the Surface device.                                                                                                                          | **Enabled**, Disabled                           |
-| WiFi           | Enables or disables the built-in Wi-Fi transceiver in the Surface device. This also disables Bluetooth.                                                                              | **Enabled**, Disabled                           |
-| Bluetooth      | Enables or disables the built-in Bluetooth transceiver in the Surface device.                                                                                                        | **Enabled**, Disabled                           |
+| Option         | Description                                                                                                                                                                          | Available settings (default listed in bold) |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| Network Boot   | Enables or disables the ability of your Surface device to boot from the network (also known as PXE boot).                                                                            | **Enabled**, Not Bootable                   |
+| Side USB       | Enables or disables the USB port on the side of the Surface device. Additionally, the USB port can be enabled, but not allow booting.                                                | **Enabled**, Not Bootable, Disabled         |
+| Docking Port   | Enables or disables the ports on the Surface docking station. Additionally, the docking port can be enabled, but block booting from any USB or Ethernet port in the docking station. | **Enabled**, Not Bootable, Disabled         |
+| Front Camera   | Enables or disables the camera on the front of the Surface device.                                                                                                                   | **Enabled**, Disabled                       |
+| Rear Camera    | Enables or disables the camera on the rear of the Surface device.                                                                                                                    | **Enabled**, Disabled                       |
+| On Board Audio | Enables or disables audio on the Surface device.                                                                                                                                     | **Enabled**, Disabled                       |
+| microSD        | Enables or disables the microSD slot on the Surface device.                                                                                                                          | **Enabled**, Disabled                       |
+| WiFi           | Enables or disables the built-in Wi-Fi transceiver in the Surface device. This also disables Bluetooth.                                                                              | **Enabled**, Disabled                       |
+| Bluetooth      | Enables or disables the built-in Bluetooth transceiver in the Surface device.                                                                                                        | **Enabled**, Disabled                       |
 
  
 
