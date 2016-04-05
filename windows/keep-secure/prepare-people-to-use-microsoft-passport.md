@@ -6,7 +6,7 @@ keywords: ["identity", "PIN", "biometric", "Hello"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Prepare people to use Microsoft Passport

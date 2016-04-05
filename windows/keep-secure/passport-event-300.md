@@ -6,7 +6,7 @@ keywords: ["ngc"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Event ID 300 - Passport successfully created
