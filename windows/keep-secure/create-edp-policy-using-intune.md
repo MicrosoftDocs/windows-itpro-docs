@@ -82,7 +82,7 @@ The steps to add your apps are based on the type of app it is; either a Universa
         }
         ```
     4.  Copy the `publisherCertificateName` value into the **Publisher Name** box and copy the `packageIdentityName` value into the **Product Name** box of Intune.
-    <p>**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+     <p>**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     <p>For example:<br>
      ``` json
         {
@@ -123,16 +123,33 @@ The steps to add your apps are based on the type of app it is; either a Universa
 
 2.  Click **Desktop App**, pick the options you want (see table), and then click **OK**.
 
-|Option |Manages |
-|-------|--------|
-|All fields left as “*”| All files signed by any publisher. (Not recommended.) |
-|**Publisher** selected | All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps. |
-|**Publisher** and **Product Name** selected |All files for the specified product, signed by the named publisher. |
+    <table>
+        <tr>
+            <th>Option</th>
+            <th>Manages</th>
+        </tr>
+        <tr>
+            <td>All fields left as "*"</td>
+            <td>All files signed by any publisher. (Not recommended.)</td>
+        </tr>
+        <tr>
+            <td><strong>Publisher</strong> selected</td>
+            <td>All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
+        </tr>
+         <tr>
+            <td><strong>Publisher</strong> and <strpng>Product Name</strong> selected</td>
+            <td>All files for the specified product, signed by the named publisher.</td>
+        </tr>              
+    </table>
+
+
+
+
 |**Publisher**, **Product Name** and **File Name** selected |Any version of the named file or package for the specified product, signed by the named publisher.|
 |**Publisher**, **Product Name**, **File Name**, and **File Version, Exactly** selected |Specified version of the named file or package for the specified product, signed by the named publisher. |
 |**Publisher**, **Product Name**, **File Name**, and **File Version, And above** selected |Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened. |
 |**Publisher**, **Product Name**, **File Name**, and **File Version, And below** selected |Specified version or older releases of the named file or package for the specified product, signed by the named publisher. |
-
+<p>
 
 ![microsoft intune: add a classic windows app to the protected apps list](images/intune-add-desktop-app.png)
 
