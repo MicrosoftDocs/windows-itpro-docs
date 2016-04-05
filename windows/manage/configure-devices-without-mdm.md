@@ -49,7 +49,7 @@ Provisioning packages are simple for employees to install. And when they remove 
 
 -   **Configure an off-the-shelf mobile device to be used as a point of sale or inventory terminal**
 
-    Package might include edition upgrade, device name, company root certificate, Wi-Fi profile, security policies, company application, or assigned access (also known as [kiosk mode](set-up-a-device-for-anyone-to-use.md)).
+    Package might include edition upgrade, device name, company root certificate, Wi-Fi profile, security policies, company application, or assigned access (also known as [kiosk mode](set-up-a-device-for-anyone-to-use.md).
 
 -   **Help employees set up personally-owned devices to use for work**
 

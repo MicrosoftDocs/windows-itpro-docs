@@ -120,7 +120,7 @@ Windows To Go was designed for enterprise usage and targets scenarios such as co
 
 Windows To Go can be deployed using standard Windows deployment tools like Diskpart and DISM. The prerequisites for deploying Windows To Go are:
 
--   A Windows To Go recommended USB drive to provision; See the list of currently available USB drives at [Hardware considerations for Windows To Go](windows-to-go-feature-overview-scenario.md#wtg-hardware)
+-   A Windows To Go recommended USB drive to provision; See the list of currently available USB drives at [Hardware considerations for Windows To Go](windows-to-go-overview.md#wtg-hardware)
 
 -   A Windows 10 Enterprise or Windows 10 Education image
 

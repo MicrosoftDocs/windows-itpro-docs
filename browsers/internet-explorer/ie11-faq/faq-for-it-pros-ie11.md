@@ -1,5 +1,5 @@
 ---
-Description: Frequently asked questions about Internet Explorer 11 for IT Pros
+description: Frequently asked questions about Internet Explorer 11 for IT Pros
 ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
 author: eross-msft
 ms.prod: IE11

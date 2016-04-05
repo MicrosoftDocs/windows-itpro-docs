@@ -210,7 +210,7 @@ In Windows 10 Mobile, enterprise data protection (EDP) helps separate personal 
 -   Prevent users from copying corporate data to public locations.
 
 **Note**  
-EDP is currently being tested in select customer evaluation programs. For more information about EDP, see [Enterprise data protection overview](../whats-new/edp-whats-new-overview.md)).
+EDP is currently being tested in select customer evaluation programs. For more information about EDP, see [Enterprise data protection overview](../whats-new/edp-whats-new-overview.md).
 
  
 
@@ -546,13 +546,13 @@ In addition, all UWP apps follow the security principle of least privilege. Apps
 
 The Windows Store app-distribution process and the app sandboxing capabilities of Windows 10 Mobile can dramatically reduce the likelihood that users encounter malicious apps on the system.
 
-For more information about Store for Business, see [Windows Store for Business overview](../whats-new/windows-store-for-business-overview.md)).
+For more information about Store for Business, see [Windows Store for Business overview](../whats-new/windows-store-for-business-overview.md).
 
 ### App management
 
 An enterprise typically exerts some configuration and control over the apps installed on devices. In this way, the organization accomplishes several business goals, such managing software licenses, ensuring mandatory app deployment on required devices, and preventing the installation of unacceptable apps on corporate devices.
 
-An important component in delivering on these goals is Store for Business, which builds on the Windows Store infrastructure that Microsoft hosts and enables you to deploy Windows Store apps across your Windows 10-based devices. Store for Business is both powerful and highly flexible. It allows you to extend and customize features without having to stand up new on-premises infrastructure. It supports and integrates with your existing MDM service but doesn’t require one. (Ask your MDM service vendor about integration with Store for Business.) You can configure Store for Business for a wide variety of scenarios, including online and offline licensing and different app-distribution options. For a more detailed description of the available Store for Business scenarios, see [Windows Store for Business overview](../whats-new/windows-store-for-business-overview.md)).
+An important component in delivering on these goals is Store for Business, which builds on the Windows Store infrastructure that Microsoft hosts and enables you to deploy Windows Store apps across your Windows 10-based devices. Store for Business is both powerful and highly flexible. It allows you to extend and customize features without having to stand up new on-premises infrastructure. It supports and integrates with your existing MDM service but doesn’t require one. (Ask your MDM service vendor about integration with Store for Business.) You can configure Store for Business for a wide variety of scenarios, including online and offline licensing and different app-distribution options. For a more detailed description of the available Store for Business scenarios, see [Windows Store for Business overview](../whats-new/windows-store-for-business-overview.md).
 
 A web-based portal for IT pros simplifies Windows 10 Mobile app deployment. The familiar look of Windows Store was used to design the Store for Business experience. It showcases apps relevant to business use, hand-selected and sorted by category. The store can use Azure AD accounts for all users, linking them to a single, unique organizational identity.
 
@@ -625,7 +625,7 @@ The web browser is a critical component of any security strategy, and for good r
 
 [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkId=722910)
 
-[Windows Store for Business overview](../whats-new/windows-store-for-business-overview.md))
+[Windows Store for Business overview](../whats-new/windows-store-for-business-overview.md)
 
  
 

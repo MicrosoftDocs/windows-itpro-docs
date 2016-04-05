@@ -62,7 +62,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 <td align="left"><p>Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Application Compatibility Toolkit (ACT) Technical Reference](application-compatibility-toolkit--act--technical-reference.md)</p></td>
+<td align="left"><p>[Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md)</p></td>
 <td align="left"><p>The Microsoft® Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system.</p></td>
 </tr>
 </tbody>
@@ -85,7 +85,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 
 [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=733911)
 
-[Windows 10 and Windows 10 Mobile](../p_ent_nodes/windows-10.md)
+[Windows 10 and Windows 10 Mobile](../index.md)
 
  
 

@@ -34,7 +34,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 <td align="left"><p>Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md))</td>
+<td align="left">[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md)</td>
 <td align="left"><p>Added pre-release content about how to set up and deploy enterprise data protection (EDP) in an enterprise environment.</p></td>
 </tr>
 </tbody>
@@ -85,7 +85,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 | New or changed topic                                                                         | Description |
 |----------------------------------------------------------------------------------------------|-------------|
 | [Windows Defender in Windows 10](windows-defender-in-windows-10.md)                         | New         |
-| [Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)) | New         |
+| [Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md) | New         |
 | [AppLocker](applocker-overview.md) (multiple topics)                                 | Updated     |
 | [Device Guard certification and compliance](device-guard-certification-and-compliance.md)   | Updated     |
 | [Device Guard deployment guide](device-guard-deployment-guide.md)                           | Updated     |

@@ -58,7 +58,7 @@ Welcome to the Windows Store for Business! You can use the Store for Business, t
 <td align="left"><p>You can add users and groups, as well as update some of the settings associated with the Azure Active Directory (AD) tenant</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Troubleshoot Windows Store for Business](troubleshoot-windows-store-for-business.md))</p></td>
+<td align="left"><p>[Troubleshoot Windows Store for Business](troubleshoot-windows-store-for-business.md)</p></td>
 <td align="left"><p>Troubleshooting topics for Store for Business.</p></td>
 </tr>
 </tbody>

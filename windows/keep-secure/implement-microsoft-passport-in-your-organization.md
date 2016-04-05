@@ -129,7 +129,7 @@ The following table lists the Group Policy settings that you can configure for P
 </td>
 </tr>
 <tr>
-<td><a href="prepare_people_to_use_microsoft_passport.htm#BMK_remote">Remote Passport</a></td>
+<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a></td>
 <td>
 <p>Use Remote Passport</p>
 <div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
@@ -285,8 +285,8 @@ The following table lists the MDM policy settings that you can configure for Pas
 <td>Device or user</td>
 <td>False</td>
 <td>
-<p>True: <a href="prepare_people_to_use_microsoft_passport.htm#BMK_remote">Remote Passport</a> is enabled.</p>
-<p>False: <a href="prepare_people_to_use_microsoft_passport.htm#BMK_remote">Remote Passport</a> is disabled.</p>
+<p>True: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a> is enabled.</p>
+<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a> is disabled.</p>
 </td>
 </tr>
 </table>
@@ -374,7 +374,7 @@ The work PIN is managed using the same Passport policies that you can use to man
 ## Related topics
 
 
-[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md))
+[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 

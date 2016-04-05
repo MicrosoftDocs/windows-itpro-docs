@@ -1,5 +1,5 @@
 ---
-Description: Use the topics in this section to learn about Group Policy and how to use it to manage Internet Explorer.
+description: Use the topics in this section to learn about Group Policy and how to use it to manage Internet Explorer.
 ms.assetid: 50383d3f-9ac9-4a30-8852-354b6eb9434a
 author: eross-msft
 ms.prod: IE11

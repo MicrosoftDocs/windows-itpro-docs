@@ -71,7 +71,7 @@ The TPM Group Policy settings in the following list are located at:
 
     This policy setting allows you to manage the maximum number of authorization failures for the TPM for all standard users. If the total number of authorization failures for all users equals the duration that is set for the policy, all users are prevented from sending commands to the TPM that require authorization.
 
-For information about mitigating dictionary attacks that use the lockout settings, see [TPM fundamentals](tpm-fundamentals-windows-8.md#bkmk-howtpmmitigates).
+For information about mitigating dictionary attacks that use the lockout settings, see [TPM fundamentals](tpm-fundamentals.md#bkmk-howtpmmitigates).
 
 ## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 
@@ -85,7 +85,7 @@ For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell
 ## Additional resources
 
 
-For more info about TPM, see [TPM technology overview](trusted-platform-module-technology-overview.md#bkmk-additionalresources).
+For more info about TPM, see [TPM technology overview](trusted-platform-module-overview.md#bkmk-additionalresources).
 
  
 

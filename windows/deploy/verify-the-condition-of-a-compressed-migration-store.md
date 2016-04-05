@@ -104,14 +104,14 @@ This example also decrypts the files by specifying the cryptographic algorithm a
 
 ### Next Steps
 
-If the **/verify** option indicates that there are corrupted files in the migration store, you can use the **/extract** option in the UsmtUtils tool to recover data from some corrupted stores. For more information, see [Extract Files from a Compressed USMT Migration Store](extract-files-from-a-compressed-usmt-migration-store.md).
+If the **/verify** option indicates that there are corrupted files in the migration store, you can use the **/extract** option in the UsmtUtils tool to recover data from some corrupted stores. For more information, see [Extract Files from a Compressed USMT Migration Store](usmt-extract-files-from-a-compressed-migration-store.md).
 
 ## Related topics
 
 
-[UsmtUtils Syntax](usmtutils-syntax-usmt-win8.md)
+[UsmtUtils Syntax](usmt-utilities.md)
 
-[Return Codes](return-codes-usmt-win8.md)
+[Return Codes](usmt-return-codes.md)
 
  
 

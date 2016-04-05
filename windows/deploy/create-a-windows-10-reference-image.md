@@ -21,7 +21,7 @@ Creating a reference image is important because that image serves as the foundat
 For the purposes of this topic, we will use four machines: DC01, MDT01, HV01, and PC0001. DC01 is a domain controller, PC0001 is a Windows 10 Enterprise x64 client, and MDT01 is a Windows Server 2012 R2 standard server. HV01 is a Hyper-V host server, but HV01 could be replaced by PC0001 as long as PC0001 has enough memory and is capable of running Hyper-V. MDT01, HV01, and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation.
 
 **Note**  
-For important details about the setup for the steps outlined in this article, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md#proof).
+For important details about the setup for the steps outlined in this article, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
 
  
 

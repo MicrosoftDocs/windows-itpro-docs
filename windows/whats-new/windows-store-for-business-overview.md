@@ -131,7 +131,7 @@ After your admin signs up for the Store for Business, they can assign roles to o
 
  
 
-In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](../manage/manage-users-and-groups-windows-store-for-business.md)).
+In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](../manage/manage-users-and-groups-windows-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with the Store for Business.
 
@@ -153,7 +153,7 @@ Line-of-business (LOB) apps are also supported via the Business store. You can i
 
 The Business store supports two options to license apps: online and offline. **Online** licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require users and devices to connect to the Store for Business service to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center.
 
-For more information, see [Apps in the Store for Business](../manage/apps-in-the-windows-store-for-business.md#licensing-model).
+For more information, see [Apps in the Store for Business](../manage/apps-in-windows-store-for-business.md#licensing-model).
 
 ### Distribute apps and content
 

@@ -99,7 +99,7 @@ Use the [Imaging and Configuration Designer (ICD) tool](http://go.microsoft.com/
 
 [Customize Windows 10 Start with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md)
+[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
  
 

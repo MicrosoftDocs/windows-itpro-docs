@@ -85,11 +85,11 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <td align="left">Added a note to clarify that partial Start layout is only supported in Windows 10, version 1511 and later</td>
 </tr>
 <tr class="odd">
-<td align="left">[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md)</td>
+<td align="left">[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)</td>
 <td align="left">Added instructions for replacing markup characters with escape characters in Start layout XML</td>
 </tr>
 <tr class="even">
-<td align="left">[Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers--csps--.md)</td>
+<td align="left">[Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers.md)</td>
 <td align="left">New</td>
 </tr>
 <tr class="odd">
@@ -142,7 +142,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)                                                                     | New         |
 | [Configure Windows 10 Mobile using Lockdown XML](lockdown-xml.md)                                                                               | New         |
 | [Customize and export Start layout](customize-and-export-start-layout.md)                                                                       | New         |
-| [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md) | New         |
+| [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New         |
 | [Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)                                                               | New         |
 | [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)                                                                         | New         |
 | [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)                                                                         | New         |
