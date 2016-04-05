@@ -83,17 +83,8 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
 
     Example of the same layout file with escape characters replacing the markup characters:
 
-    <span codelanguage="XML"></span>
-    <table>
-    
-    <thead>
-    <tr class="header">
-    <th align="left">XML</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>&amp;lt;wdcml:p xmlns:wdcml=&amp;quot;http://microsoft.com/wdcml&amp;quot;&amp;gt;Example of a layout file produced by Export-StartLayout:&amp;lt;/wdcml:p&amp;gt;&amp;lt;wdcml:snippet xmlns:wdcml=&amp;quot;http://microsoft.com/wdcml&amp;quot;&amp;gt;&amp;lt;![CDATA[&amp;lt;LayoutModificationTemplate Version=&amp;quot;1&amp;quot; xmlns=&amp;quot;http://schemas.microsoft.com/Start/2014/LayoutModification&amp;quot;&amp;gt;
+```
+    &amp;lt;wdcml:p xmlns:wdcml=&amp;quot;http://microsoft.com/wdcml&amp;quot;&amp;gt;Example of a layout file produced by Export-StartLayout:&amp;lt;/wdcml:p&amp;gt;&amp;lt;wdcml:snippet xmlns:wdcml=&amp;quot;http://microsoft.com/wdcml&amp;quot;&amp;gt;&amp;lt;![CDATA[&amp;lt;LayoutModificationTemplate Version=&amp;quot;1&amp;quot; xmlns=&amp;quot;http://schemas.microsoft.com/Start/2014/LayoutModification&amp;quot;&amp;gt;
       &amp;lt;DefaultLayoutOverride&amp;gt;
         &amp;lt;StartLayoutCollection&amp;gt;
           &amp;lt;defaultlayout:StartLayout GroupCellWidth=&amp;quot;6&amp;quot; xmlns:defaultlayout=&amp;quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&amp;quot;&amp;gt;
@@ -105,10 +96,8 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
           &amp;lt;/defaultlayout:StartLayout&amp;gt;
         &amp;lt;/StartLayoutCollection&amp;gt;
       &amp;lt;/DefaultLayoutOverride&amp;gt;
-    &amp;lt;/LayoutModificationTemplate&amp;gt;]]&amp;gt;&amp;lt;/wdcml:snippet&amp;gt;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    &amp;lt;/LayoutModificationTemplate&amp;gt;]]&amp;gt;&amp;lt;/wdcml:snippet&amp;gt;
+```
 
 2.  In the Microsoft Intune administration console, click **Policy** &gt; **Add Policy**.
 

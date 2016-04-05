@@ -126,7 +126,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <td align="left">New</td>
 </tr>
 <tr class="odd">
-<td align="left">Customize Windows 10 Start with mobile device management (MDM)</td>
+<td align="left">[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)</td>
 <td align="left"></td>
 </tr>
 </tbody>
