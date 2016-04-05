@@ -43,13 +43,12 @@ After you’ve installed and set up System Center Configuration Manager for your
 
 1.  Open the System Center Configuration Manager console, click the **Assets and Compliance** node, expand the **Overview** node, expand the **Compliance Settings** node, and then expand the **Configuration Items** node.
 
-    ![system center configuration manager, configuration items screen](images/edp-sccm-addpolicy.png)
+    ![System Center Configuration Manager, Configuration Items screen](images/edp-sccm-addpolicy.png)
 
-2.  Click the **Create Configuration Item** button.
+2.  Click the **Create Configuration Item** button.<p>
+The **Create Configuration Item Wizard** starts.
 
-    The **Create Configuration Item Wizard** starts.
-
-    ![create configuration item wizard, defining the configuration item and choosing the configuration type](images/edp-sccm-generalscreen.png)
+    ![Create Configuration Item wizard, where you will define the configuration item and choose the configuration type](images/edp-sccm-generalscreen.png)
 
 3.  On the **General Information screen**, type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
