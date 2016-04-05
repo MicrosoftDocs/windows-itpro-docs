@@ -122,7 +122,6 @@ The steps to add your apps are based on the type of app it is; either a Universa
 <p>A dialog box appears, letting you pick whether the app is a **Universal App** or a **Desktop App**.
 
 2.  Click **Desktop App**, pick the options you want (see table), and then click **OK**.
-
     <table>
         <tr>
             <th>Option</th>
@@ -158,8 +157,7 @@ The steps to add your apps are based on the type of app it is; either a Universa
         </tr>                                            
     </table>
 
-
-![microsoft intune: add a classic windows app to the protected apps list](images/intune-add-desktop-app.png)
+    ![microsoft intune: add a classic windows app to the protected apps list](images/intune-add-desktop-app.png)
 
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
@@ -190,7 +188,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 4.  Copy the text that has a **Type** of Appx, within in the **RuleCollection** tags, and then go back to Intune and paste the text into the **Value** box of the **Add or edit OMA-URI Setting** box. For example:
 
-    ``` syntax
+    ``` 
     <RuleCollection Type="Appx" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
     ```
     
@@ -216,14 +214,28 @@ If you're running into compatibility issues where your app is incompatible with 
 After you've added the apps you want to protect with EDP, you'll need to apply a management and protection mode.
 
 We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your **Protected Apps** list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
-
-|Mode |Description |
-|-----|------------|
-|Block |EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise. |
-|Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
-|Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything. |
-|Off |EDP is turned off and doesn't help to protect or audit your data.|
-
+<table>
+    <tr>
+        <th>Mode</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Block</td>
+        <td>EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.</td>
+    </tr>
+    <tr>
+        <td>Override</td>
+        <td>EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459).</td>
+    </tr>
+    <tr>
+        <td>Silent</td>
+        <td>EDP runs silently, logging inappropriate data sharing, without blocking anything.</td>
+    </tr>
+    <tr>
+        <td>Off</td>
+        <td>EDP is turned off and doesn't help to protect or audit your data.</td>
+    </tr>
+</table>
 
 ![microsoft intune: add protection level for protected apps list](images/intune-encryption-level.png)
 
@@ -233,7 +245,6 @@ Specify your company’s enterprise identity, expressed as your primary internet
 You can also specify all the domains owned by your enterprise that are used for user accounts, separating them with the "|" character. For example, if Contoso also has some employees with email addresses or user accounts on the fabrikam.com domain, you would use contoso.com|fabrikam.com.
 
 This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
-
 
 ![microsoft intune: add primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
