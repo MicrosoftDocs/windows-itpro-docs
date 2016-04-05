@@ -5,7 +5,7 @@ ms.assetid: 1df0f795-f41c-473b-850c-e98af1ad2f2a
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Volume Activation Management Tool (VAMT) Technical Reference
