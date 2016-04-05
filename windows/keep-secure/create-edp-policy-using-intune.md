@@ -137,32 +137,40 @@ The steps to add your apps are based on the type of app it is; either a Universa
             <td>All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
         </tr>
          <tr>
-            <td><strong>Publisher</strong> and <strpng>Product Name</strong> selected</td>
+            <td><strong>Publisher</strong> and <strong>Product Name</strong> selected</td>
             <td>All files for the specified product, signed by the named publisher.</td>
-        </tr>              
+        </tr>  
+         <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, and <strong>File Name</strong> selected</td>
+            <td>Any version of the named file or package for the specified product, signed by the named publisher.</td>
+        </tr>
+         <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, Exactly</strong> selected</td>
+            <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
+        </tr>
+         <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, And above</strong> selected</td>
+            <td>Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened.</td>
+        </tr>
+         <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, And below</strong> selected</td>
+            <td>Specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
+        </tr>                                            
     </table>
 
-
-
-
-|**Publisher**, **Product Name** and **File Name** selected |Any version of the named file or package for the specified product, signed by the named publisher.|
-|**Publisher**, **Product Name**, **File Name**, and **File Version, Exactly** selected |Specified version of the named file or package for the specified product, signed by the named publisher. |
-|**Publisher**, **Product Name**, **File Name**, and **File Version, And above** selected |Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened. |
-|**Publisher**, **Product Name**, **File Name**, and **File Version, And below** selected |Specified version or older releases of the named file or package for the specified product, signed by the named publisher. |
-<p>
 
 ![microsoft intune: add a classic windows app to the protected apps list](images/intune-add-desktop-app.png)
 
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
-``` syntax
+``` ps1
 Get-AppLockerFileInformation -Path "<path of the exe>"
 ```
 Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Internet Explorer\iexplore.exe"`.
 
 In this example, you'd get the following info:
 
-``` syntax
+``` json
 Path                                          Publisher
 ----                                          ---------
 %PROGRAMFILES%\INTERNET EXPLORER\IEXPLORE.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\INTERNET EXPLOR...
@@ -198,7 +206,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 4.  Copy the text that has a **Type** of EXE, within in the **RuleCollection** tags, and then go back to Intune and paste the text into the **Value** box of the **Add or edit OMA-URI Setting** box. For example:
 
-    ``` syntax
+    ``` 
     <RuleCollection Type="Exe" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
     ```
 
@@ -215,7 +223,8 @@ We recommend that you start with **Silent** or **Override** while verifying with
 |Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
 |Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything. |
 |Off |EDP is turned off and doesn't help to protect or audit your data.|
-<p>
+
+
 ![microsoft intune: add protection level for protected apps list](images/intune-encryption-level.png)
 
 ## Define your enterprise-managed identity domains
@@ -224,7 +233,8 @@ Specify your company’s enterprise identity, expressed as your primary internet
 You can also specify all the domains owned by your enterprise that are used for user accounts, separating them with the "|" character. For example, if Contoso also has some employees with email addresses or user accounts on the fabrikam.com domain, you would use contoso.com|fabrikam.com.
 
 This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
-<p>
+
+
 ![microsoft intune: add primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 **To add your primary domain**
@@ -241,24 +251,52 @@ After you've added a protection mode to your apps, you'll need to decide where t
 
 **To specify where your protected apps can find and send enterprise data on the network**
 
-1.  Add additional network locations your apps can access by clicking **Add**, typing a description into the **Description** box, and then choosing your location type, including:<p>
+1.  Add additional network locations your apps can access by clicking **Add**, typing a description into the **Description** box, and then choosing your location type, including:
+    <table>
+        <tr>
+            <th>Network location type</th>
+            <th>Format</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Enterprise Cloud Domain</td>
+            <td>contoso.sharepoint.com,proxy1.contoso.com|<br>office.com|proxy2.contoso.com</td>
+            <td>Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter. Include the "|" delimiter just before the "|" if you don’t use proxies. For example: [URL,Proxy]|[URL,Proxy].</td>     
+        </tr>
+        <tr>
+            <td>Enterprise Network Domain</td>
+            <td>domain1.contoso.com,domain2.contoso.com</td>
+            <td>Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the "," delimiter.<p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks.</td>                
+        </tr>
+        <tr>
+            <td>Enterprise Proxy Server</td>
+            <td>domain1.contoso.com:80;domain2.contoso.com:137</td>
+            <td>Specify the proxy server and the port traffic is routed through. If you have multiple resources, you must use the ";" delimiter.<p>This setting is required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when using certain Wi-Fi hotspots at hotels and restaurants.</td>                
+        </tr>
+        <tr>
+            <td>Enterprise Internal Proxy Server</td>
+            <td>proxy1.contoso.com;proxy2.contoso.com</td>
+            <td>Specify the proxy servers your cloud resources will go through. If you have multiple resources, you must use the ";" delimiter.</td>                
+        </tr>
+        <tr>
+            <td>Enterprise IPv4 Range</td>
+            <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254</td>
+            <td>Specify the addresses for a valid IPv4 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the "-" delimiter between start and end of a range, and the "," delimiter to separate ranges.</td>
+        </tr>
+        <tr>
+            <td>Enterprise IPv6 Range</td>
+            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
+            <td>Specify the addresses for a valid IPv6 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the "-" delimiter between start and end of a range, and the "," delimiter to separate ranges.</td>
+        </tr>                
+    </table>
 
-|Network location type |Format          |Description           |
-|----------------------|----------------|----------------------|
-|Enterprise Cloud Domain |contoso.sharepoint.com,proxy1.contoso.com&#x7C;office.com&#x7C;proxy2.contoso.com|Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter. Include the &#x7C; delimiter just before the &#x7C; if you don’t use proxies. For example: [URL,Proxy]&#x7C;[URL,Proxy]. |
-|Enterprise Network Domain |domain1.contoso.com,domain2.contoso.com |Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the `,` delimiter.<p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks. |
-|Enterprise Proxy Server |domain1.contoso.com:80;domain2.contoso.com:137 |Specify the proxy server and the port traffic is routed through. If you have multiple resources, you must use the `;` delimiter.<p>This setting is required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when using certain Wi-Fi hotspots at hotels and restaurants. |
-|Enterprise Internal Proxy Server |proxy1.contoso.com;proxy2.contoso.com |Specify the proxy servers your cloud resources will go through. If you have multiple resources, you must use the `;` delimiter. |
-|Enterprise IPv4 Range |**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254 | Specify the addresses for a valid IPv4 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the `-` delimiter between start and end of a range, and the `,` delimiter to separate ranges. |
-|Enterprise IPv6 Range |**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff |Specify the addresses for a valid IPv6 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the `-` delimiter between start and end of a range, and the `,` delimiter to separate ranges.
-
-![microsoft intune: choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
+    ![microsoft intune: choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
 
 2.  Add as many locations as you need, and then click **OK**.<p>The **Add or Edit Enterprise Network Locations box** closes.
 
 3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.<p>Adding a data recovery certificate helps you to access locally-protected files on the device. For example, if an employee leaves the company and the IT department has to access EDP-protected data from a Windows 10 company computer. This can also help recover data in case an employee's device is accidentally revoked. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.<p>
 
-![microsoft intune: specify your data recovery certificate for your policy](images/intune-data-recovery.png)
+    ![microsoft intune: specify your data recovery certificate for your policy](images/intune-data-recovery.png)
 
 ## Choose your optional EDP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
