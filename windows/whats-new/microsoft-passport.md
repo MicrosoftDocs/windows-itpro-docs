@@ -6,7 +6,7 @@ keywords: ["password", "hello", "fingerprint", "iris", "biometric"]
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: jdeckerMS
 ---
 
 # Microsoft Passport overview

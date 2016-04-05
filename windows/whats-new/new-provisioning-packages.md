@@ -5,7 +5,7 @@ ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: jdeckerMS
 ---
 
 # Provisioning packages

@@ -6,7 +6,7 @@ keywords: ["lockdown", "embedded"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: jdeckerMS
 ---
 
 # Lockdown features from Windows Embedded 8.1 Industry

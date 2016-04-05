@@ -6,7 +6,7 @@ keywords: ["lockscreen"]
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: jdeckerMS
 ---
 
 # Windows spotlight on the lock screen
