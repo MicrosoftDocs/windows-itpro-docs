@@ -325,8 +325,12 @@ After you've decided where your protected apps can access enterprise data on you
 2.  Click **Save Policy**.
 
 ## Related topics
+-[Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md)
 - [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md)
+- [Create and deploy a VPN policy for enterprise data protection (EDP) using Microsoft Intune](create-vpn-and-edp-policy-using-intune.md)
 - [General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
+
+
 
  
 
