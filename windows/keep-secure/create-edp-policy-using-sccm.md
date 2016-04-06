@@ -33,7 +33,7 @@ Configuration Manager (version 1511 or later) helps you create and deploy your e
 
 -   [Choose your optional EDP-related settings](#choose-your-optional-EDP-related-settings)
 
--   [Review your configuration choices in the **Summary** screen](#review-your-configuration-choices-in-the-summary-screen)
+-   [Review your configuration choices in the Summary screen](#review-your-configuration-choices-in-the-summary-screen)
 
 -   [Deploy the EDP policy](#deploy-the-edp-policy)
 
@@ -208,7 +208,6 @@ After you've added a management level to your protected apps, you'll need to dec
 **To specify where your protected apps can find and send enterprise data on the network**
 
 1.  Add additional network locations your apps can access by clicking **Add**, and then choosing your location type, including:
-
     <table>
         <tr>
             <th>Network location type</th>
