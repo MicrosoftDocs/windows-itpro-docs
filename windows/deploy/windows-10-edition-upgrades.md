@@ -29,9 +29,9 @@ The following table shows the methods you can use to upgrade editions of Windows
 **Note**<br>Each desktop edition in the table also has an N and KN edition. These editions have had media-related functionality removed. Devices with N or KN editions installed can be upgraded to corresponding N or KN editions using the same methods.
 
 ## Upgrade using mobile device management (MDM)
-To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](http://go.microsoft.com/fwlink/p/?LinkID=690907).
+- To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](http://go.microsoft.com/fwlink/p/?LinkID=690907).
 
-To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](http://go.microsoft.com/fwlink/p/?LinkID=690907).
+- To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](http://go.microsoft.com/fwlink/p/?LinkID=690907).
 
 ## Upgrade using a provisioning package
 The Windows Imaging and Configuration Designer (ICD) tool is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
