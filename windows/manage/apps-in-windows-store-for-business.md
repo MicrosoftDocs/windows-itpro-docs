@@ -5,7 +5,7 @@ ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Apps in Windows Store for Business

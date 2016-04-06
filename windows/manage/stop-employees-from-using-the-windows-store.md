@@ -5,7 +5,7 @@ ms.assetid: 7AA60D3D-2A69-45E7-AAB0-B8AFC29C2E97
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Configure access to Windows Store

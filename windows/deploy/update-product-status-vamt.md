@@ -5,7 +5,7 @@ ms.assetid: 39d4abd4-801a-4e8f-9b8c-425a24a96764
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Update Product Status

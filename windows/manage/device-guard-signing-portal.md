@@ -5,7 +5,7 @@ ms.assetid: 8D9CD2B9-5FC6-4C3D-AA96-F135AFEEBB78
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Device Guard signing

@@ -5,7 +5,7 @@ ms.assetid: B3A45C8C-A96C-4254-9659-A9B364784673
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Configure an MDM provider

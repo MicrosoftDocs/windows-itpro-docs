@@ -5,7 +5,7 @@ ms.assetid: C4644035-845C-4C84-87F0-D87EA8F5BA19
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Distribute apps using your private store

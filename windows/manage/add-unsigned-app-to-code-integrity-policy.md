@@ -5,7 +5,7 @@ ms.assetid: 580E18B1-2FFD-4EE4-8CC5-6F375BE224EA
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Add unsigned app to code integrity policy

@@ -5,7 +5,7 @@ ms.assetid: CEFFF451-D7D2-4A35-AF28-4A72B9582585
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Update Windows Store for Business account settings

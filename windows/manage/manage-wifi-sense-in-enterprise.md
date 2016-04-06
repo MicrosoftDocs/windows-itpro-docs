@@ -6,7 +6,7 @@ keywords: ["WiFi Sense", "Shared networks"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: eross-msft
 ---
 
 # Manage Wi-Fi Sense in your company

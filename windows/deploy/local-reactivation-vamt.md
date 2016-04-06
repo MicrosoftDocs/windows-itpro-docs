@@ -5,7 +5,7 @@ ms.assetid: aacd5ded-da11-4d27-a866-3f57332f5dec
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Perform Local Reactivation
