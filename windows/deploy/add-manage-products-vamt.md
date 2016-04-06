@@ -9,33 +9,15 @@ author: CFaw
 ---
 
 # Add and Manage Products
-
-
 This section describes how to add client computers into the Volume Activation Management Tool (VAMT). After the computers are added, you can manage the products that are installed on your network.
 
 ## In this Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Add and Remove Computers](add-remove-computers-vamt.md)</p></td>
-<td align="left"><p>Describes how to add client computers to VAMT.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Update Product Status](update-product-status-vamt.md)</p></td>
-<td align="left"><p>Describes how to update the status of product license.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Remove Products](remove-products-vamt.md)</p></td>
-<td align="left"><p>Describes how to remove a product from the product list.</p></td>
-</tr>
-</tbody>
-</table>
+|Topic |Description |
+|------|------------|
+|[Add and Remove Computers](add-remove-computers-vamt.md) |Describes how to add client computers to VAMT. |
+|[Update Product Status](update-product-status-vamt.md) |Describes how to update the status of product license. |
+|[Remove Products](remove-products-vamt.md) |Describes how to remove a product from the product list. |
 
  
 

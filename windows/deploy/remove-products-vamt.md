@@ -9,11 +9,9 @@ author: CFaw
 ---
 
 # Remove Products
-
-
 To remove one or more products from the Volume Activation Management Tool (VAMT), you can delete them from the product list view in the center pane.
 
-To delete one or more products:
+**To delete one or more products**
 
 1.  Click a product node in the left-side pane.
 
@@ -34,9 +32,7 @@ To delete one or more products:
 7.  On the **Confirm Delete Selected Products** dialog box, click **OK**.
 
 ## Related topics
-
-
-[Add and Manage Products](add-manage-products-vamt.md)
+- [Add and Manage Products](add-manage-products-vamt.md)
 
  
 

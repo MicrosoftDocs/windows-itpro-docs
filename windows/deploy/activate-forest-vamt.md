@@ -9,18 +9,12 @@ author: CFaw
 ---
 
 # Activate an Active Directory Forest Online
-
-
 You can use the Volume Activation Management Tool (VAMT) Active Directory-Based Activation (ADBA) function to activate an Active Directory (AD) forest over the Internet. ADBA enables certain products to inherit activation from the domain.
 
 **Important**  
 ADBA is only applicable to Generic Volume License Keys (GVLKs) and KMS Host keys (CSVLKs). To use ADBA, one or more KMS Host keys (CSVLKs) must be installed on the AD forest, and client keys (GVLKs) must be installed on the client products.
 
- 
-
 ## Requirements
-
-
 Before performing online activation, ensure that the network and the VAMT installation meet the following requirements:
 
 -   VAMT is installed on a host computer that has Internet access.
@@ -29,7 +23,8 @@ Before performing online activation, ensure that the network and the VAMT instal
 
 -   The KMS Host key (CSVLK) you intend to use is added to VAMT in the **Product Keys** node.
 
-### To Perform an Online Active Directory Forest Activation
+
+**To perform an online Active Directory forest activation**
 
 1.  Open VAMT.
 
@@ -44,8 +39,6 @@ Before performing online activation, ensure that the network and the VAMT instal
     **Important**  
     If you want to rename the ADBA object, you must do it now. After you click **Install Key**, the name cannot be changed.
 
-     
-
 6.  Click **Install Key**.
 
 7.  VAMT displays the **Activating Active Directory** dialog box until it completes the requested action.
@@ -53,17 +46,5 @@ Before performing online activation, ensure that the network and the VAMT instal
 The activated object and the date that is was created appear in the **Active Directory-Based Activation** node in the center pane.
 
 ## Related topics
-
-
-[Scenario 1: Online Activation](scenario-online-activation-vamt.md)
-
-[Add and Remove Computers](add-remove-computers-vamt.md)
-
- 
-
- 
-
-
-
-
-
+- [Scenario 1: Online Activation](scenario-online-activation-vamt.md)
+- [Add and Remove Computers](add-remove-computers-vamt.md)
