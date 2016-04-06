@@ -3,7 +3,7 @@ title: Change history for Manage and update Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Manage and update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 29144AFA-1DA9-4532-B07D-1EBE34B7E1E0
 ms.prod: W10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
 ---
@@ -17,10 +17,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">New or changed topic</th>
@@ -41,10 +38,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">New or changed topic</th>
@@ -73,10 +67,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">New or changed topic</th>
@@ -118,10 +109,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">New or changed topic</th>
@@ -138,7 +126,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <td align="left">New</td>
 </tr>
 <tr class="odd">
-<td align="left">Customize Windows 10 Start with mobile device management (MDM)</td>
+<td align="left">[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)</td>
 <td align="left"></td>
 </tr>
 </tbody>

@@ -18,10 +18,7 @@ Learn about managing and updating Windows 10.
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">Topic</th>

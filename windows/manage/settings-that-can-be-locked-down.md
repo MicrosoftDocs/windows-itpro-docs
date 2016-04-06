@@ -26,11 +26,7 @@ You can use Lockdown.xml to configure lockdown settings.
 The following table lists the settings pages and page groups. Use the page name in the Settings section of Lockdown.xml. The Settings section contains an allow list of pages in the Settings app.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">Main menu</th>

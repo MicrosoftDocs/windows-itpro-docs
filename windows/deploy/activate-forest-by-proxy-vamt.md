@@ -5,7 +5,7 @@ ms.assetid: 6475fc87-a6f7-4fa8-b0aa-de19f2dea7e5
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Activate by Proxy an Active Directory Forest

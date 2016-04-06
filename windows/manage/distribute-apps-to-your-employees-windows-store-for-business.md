@@ -5,7 +5,7 @@ ms.assetid: E591497C-6DFA-49C1-8329-4670F2164E9E
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Distribute apps to your employees from the Windows Store for Business

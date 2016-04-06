@@ -5,7 +5,7 @@ ms.assetid: 34F7FA2B-B848-454B-AC00-ECA49D87B678
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Settings reference: Windows Store for Business

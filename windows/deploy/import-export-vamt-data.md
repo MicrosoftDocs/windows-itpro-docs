@@ -5,7 +5,7 @@ ms.assetid: 09a2c595-1a61-4da6-bd46-4ba8763cfd4f
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Import and Export VAMT Data

@@ -5,7 +5,7 @@ ms.assetid: CEBC6870-FFDD-48AD-8650-8B0DC6B2651D
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Prerequisites for Windows Store for Business

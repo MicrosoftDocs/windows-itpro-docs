@@ -24,10 +24,7 @@ Windows 10 has a brand new Start experience. As a result, there are changes to 
 These policy settings are available in **Administrative Templates\\Start Menu and Taskbar** under **User Configuration**.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">Policy</th>

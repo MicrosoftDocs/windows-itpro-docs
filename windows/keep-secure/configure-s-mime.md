@@ -6,7 +6,7 @@ keywords: ["encrypt", "digital signature"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Configure S/MIME for Windows 10 and Windows 10 Mobile

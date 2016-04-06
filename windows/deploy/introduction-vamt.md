@@ -5,7 +5,7 @@ ms.assetid: 0439685e-0bae-4967-b0d4-dd84ca6d7fa7
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Introduction to VAMT

@@ -6,7 +6,7 @@ keywords: ["identity", "PIN", "biometric", "Hello"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Implement Microsoft Passport in your organization

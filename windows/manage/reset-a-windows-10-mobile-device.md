@@ -50,7 +50,8 @@ To perform a "wipe and persist" reset, preserving the provisioning applied to th
     <SyncBody>
         <Exec>
             <CmdID>3</CmdID>
-            <Item>                <Target><LocURI>./Vendor/MSFT/RemoteWipe/DoWipePersistProvisionedData</LocURI></Target>
+            <Item>                
+                 <Target><LocURI>./Vendor/MSFT/RemoteWipe/DoWipePersistProvisionedData</LocURI></Target>
             </Item>
         </Exec>        
         <Final/>

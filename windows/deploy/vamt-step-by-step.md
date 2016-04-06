@@ -5,7 +5,7 @@ ms.assetid: 455c542c-4860-4b57-a1f0-7e2d28e11a10
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # VAMT Step-by-Step Scenarios

@@ -5,7 +5,7 @@ ms.assetid: d14d152b-ab8a-43cb-a8fd-2279364007b9
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # VAMT Requirements
