@@ -1,0 +1,111 @@
+---
+title: MBAM 2.5 Deployment Checklist
+description: MBAM 2.5 Deployment Checklist
+ms.assetid: 2ba7de17-e3a4-4798-99e0-cd1dc28c5b76
+author: MaggiePucciEvans
+---
+
+# MBAM 2.5 Deployment Checklist
+
+
+You can use this checklist to help you during Microsoft BitLocker Administration and Monitoring (MBAM) deployment with a Stand-alone topology.
+
+**Note**  
+This checklist outlines the recommended steps and a high-level list of items to consider when you deploy Microsoft BitLocker Administration and Monitoring features. We recommend that you copy this checklist into a spreadsheet program and customize it for your use.
+
+ 
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Task</th>
+<th align="left">References</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
+<td align="left"><p>Review and complete all planning steps to prepare your environment for MBAM deployment.</p></td>
+<td align="left"><p>[MBAM 2.5 Planning Checklist](mbam-25-planning-checklist.md)</p></td>
+<td align="left"><p></p></td>
+</tr>
+<tr class="even">
+<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
+<td align="left"><p>Review the supported configurations information to ensure that MBAM supports the selected client and server computers.</p></td>
+<td align="left"><p>[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)</p></td>
+<td align="left"><p></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
+<td align="left"><p>Install the MBAM Server software.</p></td>
+<td align="left"><p>[Installing the MBAM 2.5 Server Software](installing-the-mbam-25-server-software.md)</p></td>
+<td align="left"><p></p></td>
+</tr>
+<tr class="even">
+<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
+<td align="left"><p>Configure the MBAM Server features:</p>
+<ul>
+<li><p>Compliance and Audit Database and Recovery Database</p></li>
+<li><p>Reports</p></li>
+<li><p>Web applications</p></li>
+<li><p>Configuration Manager Integration topology (needed only if you are running MBAM with this topology)</p></li>
+</ul>
+<div class="alert">
+<strong>Note</strong>  
+<p>Note the names of the servers on which you configure each feature. You will use this information throughout the configuration process.</p>
+</div>
+<div>
+ 
+</div></td>
+<td align="left"><p>[Configuring the MBAM 2.5 Server Features](configuring-the-mbam-25-server-features.md)</p></td>
+<td align="left"><p></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
+<td align="left"><p>Validate the MBAM configuration.</p></td>
+<td align="left"><p>[Validating the MBAM 2.5 Server Feature Configuration](validating-the-mbam-25-server-feature-configuration.md)</p></td>
+<td align="left"><p></p></td>
+</tr>
+<tr class="even">
+<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
+<td align="left"><p>Copy the MBAM Group Policy Template and edit the Group Policy settings.</p></td>
+<td align="left"><p>[Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md) and [Editing the MBAM 2.5 Group Policy Settings](editing-the-mbam-25-group-policy-settings.md)</p></td>
+<td align="left"><p></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
+<td align="left"><p>Deploy the MBAM Client software.</p></td>
+<td align="left"><p>[Deploying the MBAM 2.5 Client](deploying-the-mbam-25-client.md)</p></td>
+<td align="left"><p></p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## Got a suggestion for MBAM?
+
+
+Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+
+## Related topics
+
+
+[Deploying MBAM 2.5](deploying-mbam-25.md)
+
+ 
+
+ 
+
+
+
+
+
