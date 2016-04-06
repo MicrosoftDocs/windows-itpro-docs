@@ -83,12 +83,3 @@ The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view onl
     ``` ps1
     get-help get-VamtProduct -examples
     ```
-
- 
-
- 
-
-
-
-
-
