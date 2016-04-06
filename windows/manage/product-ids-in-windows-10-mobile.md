@@ -24,11 +24,7 @@ You can use the product ID and Application User Model (AUMID) in Lockdown.xml to
 The following table lists the product ID and AUMID for each app that is included in Windows 10 Mobile.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">App</th>

@@ -5,7 +5,7 @@ ms.assetid: 13e0ceec-d827-4681-a5c3-8704349e3ba9
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Use VAMT in Windows PowerShell

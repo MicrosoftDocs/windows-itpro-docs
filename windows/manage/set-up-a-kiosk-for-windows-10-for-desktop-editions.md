@@ -288,27 +288,21 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 **To set your custom shell**
 
--   Modify the following PowerShell script as appropriate and run the script on the kiosk device.
+Modify the following PowerShell script as appropriate and run the script on the kiosk device.
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>$COMPUTER = &quot;localhost&quot;
+```
+    $COMPUTER = &quot;localhost&quot;
     $NAMESPACE = &quot;root\standardcimv2\embedded&quot;
 
-# Create a handle to the class instance so we can call the static methods.
+    # Create a handle to the class instance so we can call the static methods.
     $ShellLauncherClass = [wmiclass]&quot;\\$COMPUTER\${NAMESPACE}:WESL_UserSetting&quot;
 
 
-# This well-known security identifier (SID) corresponds to the BUILTIN\Administrators group.
+    # This well-known security identifier (SID) corresponds to the BUILTIN\Administrators group.
 
     $Admins_SID = &quot;S-1-5-32-544&quot;
 
-# Create a function to retrieve the SID for a user account on a machine.
+    # Create a function to retrieve the SID for a user account on a machine.
 
     function Get-UsernameSID($AccountName) {
 
@@ -319,56 +313,53 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
         
     }
 
-# Get the SID for a user account named &quot;Cashier&quot;. Rename &quot;Cashier&quot; to an existing account on your system to test this script.
+    # Get the SID for a user account named &quot;Cashier&quot;. Rename &quot;Cashier&quot; to an existing account on your system to test this script.
 
     $Cashier_SID = Get-UsernameSID(&quot;Cashier&quot;)
 
-# Define actions to take when the shell program exits.
+    # Define actions to take when the shell program exits.
 
     $restart_shell = 0
     $restart_device = 1
     $shutdown_device = 2
 
-# Examples
+    # Examples
 
-# Set the command prompt as the default shell, and restart the device if it&#39;s closed.
+    # Set the command prompt as the default shell, and restart the device if it&#39;s closed.
 
     $ShellLauncherClass.SetDefaultShell(&quot;cmd.exe&quot;, $restart_device)
 
-# Display the default shell to verify that it was added correctly.
+    # Display the default shell to verify that it was added correctly.
 
     $DefaultShellObject = $ShellLauncherClass.GetDefaultShell()
 
     &quot;`nDefault Shell is set to &quot; + $DefaultShellObject.Shell + &quot; and the default action is set to &quot; + $DefaultShellObject.defaultaction
 
-# Set Internet Explorer as the shell for &quot;Cashier&quot;, and restart the machine if it&#39;s closed.
+    # Set Internet Explorer as the shell for &quot;Cashier&quot;, and restart the machine if it&#39;s closed.
 
     $ShellLauncherClass.SetCustomShell($Cashier_SID, &quot;c:\program files\internet explorer\iexplore.exe www.microsoft.com&quot;, ($null), ($null), $restart_shell)
 
-# Set Explorer as the shell for administrators.
+    # Set Explorer as the shell for administrators.
 
     $ShellLauncherClass.SetCustomShell($Admins_SID, &quot;explorer.exe&quot;)
 
-# View all the custom shells defined.
+    # View all the custom shells defined.
 
     &quot;`nCurrent settings for custom shells:&quot;
     Get-WmiObject -namespace $NAMESPACE -computer $COMPUTER -class WESL_UserSetting | Select Sid, Shell, DefaultAction
 
-# Enable Shell Launcher
+    # Enable Shell Launcher
 
     $ShellLauncherClass.SetEnabled($TRUE)
 
     &quot;`nEnabled is set to &quot; + $DefaultShellObject.IsEnabled()
 
-# Remove the new custom shells.
+    # Remove the new custom shells.
 
     $ShellLauncherClass.RemoveCustomShell($Admins_SID)
 
     $ShellLauncherClass.RemoveCustomShell($Cashier_SID)
-    </code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```
 
 ## Related topics
 

@@ -6,7 +6,7 @@ keywords: ["S/MIME", "PFX", "SCEP"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Install digital certificates on Windows 10 Mobile

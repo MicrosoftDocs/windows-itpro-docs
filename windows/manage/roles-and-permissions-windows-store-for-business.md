@@ -5,7 +5,7 @@ ms.assetid: CB6281E1-37B1-4B8B-991D-BC5ED361F1EE
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Roles and permissions in Windows Store for Business

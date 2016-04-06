@@ -6,7 +6,7 @@ keywords: ["telemetry", "BYOD", "MDM"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: AMeeus
 ---
 
 # Windows 10 Mobile and mobile device management

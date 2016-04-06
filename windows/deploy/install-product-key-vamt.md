@@ -5,7 +5,7 @@ ms.assetid: 78812c87-2208-4f8b-9c2c-5a8a18b2d648
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Install a Product Key

@@ -5,7 +5,7 @@ ms.assetid: 5E7FA071-CABD-4ACA-8AAE-F549EFCE922F
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Manage user accounts in Windows Store for Business

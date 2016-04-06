@@ -5,7 +5,7 @@ ms.assetid: 83005FE4-8899-47A6-BEA9-C17CCA0B6B55
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Microsoft Passport and password changes
