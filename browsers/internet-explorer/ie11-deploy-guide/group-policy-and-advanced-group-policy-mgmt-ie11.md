@@ -1,5 +1,5 @@
 ---
-Description: Overview about Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11
+description: Overview about Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11
 ms.assetid: 63a7ef4a-6de2-4d08-aaba-0479131e3406
 author: eross-msft
 ms.prod: IE11
