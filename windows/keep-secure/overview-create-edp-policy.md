@@ -1,7 +1,7 @@
 ---
 title: Create an enterprise data protection (EDP) policy (Windows 10)
 description: Microsoft Intune and System Center Configuration Manager (version 1511 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
-ms.assetid: d2059e74-94bd-4e54-Ab59-1a7b9b52bdc6
+ms.assetid: d2059e74-94bd-4e54-ab59-1a7b9b52bdc6
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library

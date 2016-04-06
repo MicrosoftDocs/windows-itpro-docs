@@ -1,13 +1,15 @@
 ---
 title: Testing scenarios for enterprise data protection (EDP) (Windows 10)
 description: We've come up with a list of suggested testing scenarios that you can use to test enterprise data protection (EDP) in your company.
-ms.assetid: 53DB29D2-D99D-4DB6-B494-90E2B3962CA2
-author: brianlic-msft
+ms.assetid: 53db29d2-d99d-4db6-b494-90e2b3962ca2
+keywords: ["EDP", "Enterprise Data Protection"]
+ms.prod: W10
+ms.mktglfcycl: explore
+ms.sitesec: library
+author: eross-msft
 ---
 
 # Testing scenarios for enterprise data protection (EDP)
-
-
 **Applies to:**
 
 -   Windows 10 Insider Preview
@@ -32,7 +34,7 @@ You can try any of the processes included in these scenarios, but you should foc
 |Use EDP on FAT/exFAT systems |<ol><li>Start an app that uses the FAT or exFAT file system and appears on your **Protected Apps** list.</li><li>Create, edit, write, save, and move files.<p>Basic file and folder operations like copy, move, rename, delete, and so on, should work properly on encrypted files.</li><li>Try copying and moving files or folders between apps that use NTFS, FAT and exFAT file systems.</li></ol> |
 |Use EDP on NTFS systems |<ol><li>Start an app that uses the NTFS file system and appears on your **Protected Apps** list.</li><li>Create, edit, write, save, and move files.<p>Basic file and folder operations like copy, move, rename, delete, and so on, should work properly on encrypted files.</li><li>Try copying and moving files or folders between apps that use NTFS, FAT and exFAT file systems.</li></ol> |
 |Unenroll client devices from EDP |<ul><li>Unenroll a device from EDP by going to **Settings**, click **Accounts**, click **Work**, click the name of the device you want to unenroll, and then click **Remove**.<p>The device should be removed and all of the enterprise content for that managed account should be gone.<p>**Important**<br>Unenrolling a device revokes and erases all of the enterprise data for the managed account.</li></ul> |
-|Verify that app content is protected when a Windows 10 Mobile phone is locked |Check that protected app data doesn't appear on the **Lock** screen of a Windows 10 Mobile phone. |
+|Verify that app content is protected when a Windows 10 Mobile phone is locked |<ul><li>Check that protected app data doesn't appear on the **Lock** screen of a Windows 10 Mobile phone</li></ul> |
 
  
 
