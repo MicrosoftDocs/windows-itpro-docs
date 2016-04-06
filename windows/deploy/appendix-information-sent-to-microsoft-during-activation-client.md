@@ -10,8 +10,6 @@ author: CFaw
 ---
 
 # Appendix: Information sent to Microsoft during activation
-
-
 **Applies to**
 
 -   Windows 10
@@ -71,15 +69,11 @@ When you activate a computer running Windows 10, the following information is s
 Standard computer information is also sent, but your computer’s IP address is only retained temporarily.
 
 ## Use of information
-
-
 Microsoft uses the information to confirm that you have a licensed copy of the software. Microsoft does not use the information to contact individual consumers.
 
 For additional details, see [Windows 10 Privacy Statement](http://go.microsoft.com/fwlink/p/?LinkId=619879).
 
 ## See also
-
-
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
 
  

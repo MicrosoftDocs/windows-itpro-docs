@@ -9,13 +9,9 @@ author: CFaw
 ---
 
 # Add and Remove a Product Key
-
-
 Before you can use a Multiple Activation Key (MAK), retail, or KMS Host key (CSVLK) product key, you must first add it to the Volume Activation Management Tool (VAMT) database.
 
 ## To Add a Product Key
-
-
 1.  Open VAMT.
 
 2.  In the left-side pane, right-click the **Product Keys** node to open the **Actions** menu.
@@ -28,26 +24,11 @@ Before you can use a Multiple Activation Key (MAK), retail, or KMS Host key (CSV
 
     -   To import a Comma Separated Values (CSV) file containing a list of product keys, click **Select a product key file to import**, browse to the file location, click **Open** to import the file, and then click **Add Key(s)**.
 
-**Note**  
-If you are activating a large number of products with a MAK, you should refresh the activation count of the MAK, to ensure that the MAK can support the required number of activations. In the product key list in the center pane, select the MAK and click **Refresh product key data online** in the right-side pane to contact Microsoft and retrieve the number of remaining activations for the MAK. This step requires Internet access. You can only retrieve the remaining activation count for MAKs.
-
- 
+    **Note**  
+    If you are activating a large number of products with a MAK, you should refresh the activation count of the MAK, to ensure that the MAK can support the required number of activations. In the product key list in the center pane, select the MAK and click **Refresh product key data online** in the right-side pane to contact Microsoft and retrieve the number of remaining activations for the MAK. This step requires Internet access. You can only retrieve the remaining activation count for MAKs.
 
 ## Remove a Product Key
-
-
 -   To remove a product key from the list, simply select the key in the list and click **Delete** on the **Selected Items** menu in the right-side pane. Click **Yes** to confirm deletion of the product key. Removing a product key from the VAMT database will not affect the activation state of any products or computers on the network.
 
 ## Related topics
-
-
-[Manage Product Keys](manage-product-keys-vamt.md)
-
- 
-
- 
-
-
-
-
-
+- [Manage Product Keys](manage-product-keys-vamt.md)

@@ -43,11 +43,11 @@ After you’ve installed and set up Intune for your organization, you must creat
 
 3.  Go to **Windows**, click the **Enterprise Data Protection (Windows 10 and Mobile and later) policy**, pick the EDP template, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
-    ![microsoft intune: new policy creation screen](images/intune-createnewpolicy.png)
+    ![Microsoft Intune: Create your new policy from the New Policy screen](images/intune-createnewpolicy.png)
 
 4.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
-    ![microsoft intune: required name and optional description fields](images/intune-namedescription.png)
+    ![Microsoft Intune: Fill out the required Name and optional Description fields](images/intune-namedescription.png)
 
 ## Add individual apps to your Protected App list
 During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through EDP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
@@ -66,7 +66,7 @@ The steps to add your apps are based on the type of app it is; either a Universa
 
     **To find the Publisher and Product name values for Microsoft Store apps without installing them**
 
-    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.<p>
+    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.<p>
     **Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the **Protected App** list. For info about how to do this, see the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
 
     2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
@@ -82,14 +82,14 @@ The steps to add your apps are based on the type of app it is; either a Universa
         }
         ```
     4.  Copy the `publisherCertificateName` value into the **Publisher Name** box and copy the `packageIdentityName` value into the **Product Name** box of Intune.
-    <p>**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+     <p>**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     <p>For example:<br>
      ``` json
         {
           "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
         }
        ```
-    ![microsoft intune: add a universal windows app to the protected apps list](images/intune-addapps.png)
+    ![Microsoft Intune: Add a UWP app to the Protected Apps list](images/intune-addapps.png)
 
     **To find the Publisher and Product name values for apps installed on Windows 10 Mobile phones**
 
@@ -122,30 +122,53 @@ The steps to add your apps are based on the type of app it is; either a Universa
 <p>A dialog box appears, letting you pick whether the app is a **Universal App** or a **Desktop App**.
 
 2.  Click **Desktop App**, pick the options you want (see table), and then click **OK**.
+    <table>
+        <tr>
+            <th>Option</th>
+            <th>Manages</th>
+        </tr>
+        <tr>
+            <td>All fields left as "*"</td>
+            <td>All files signed by any publisher. (Not recommended.)</td>
+        </tr>
+        <tr>
+            <td><strong>Publisher</strong> selected</td>
+            <td>All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
+        </tr>
+         <tr>
+            <td><strong>Publisher</strong> and <strong>Product Name</strong> selected</td>
+            <td>All files for the specified product, signed by the named publisher.</td>
+        </tr>  
+         <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, and <strong>File Name</strong> selected</td>
+            <td>Any version of the named file or package for the specified product, signed by the named publisher.</td>
+        </tr>
+         <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, Exactly</strong> selected</td>
+            <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
+        </tr>
+         <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, And above</strong> selected</td>
+            <td>Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened.</td>
+        </tr>
+         <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, And below</strong> selected</td>
+            <td>Specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
+        </tr>                                            
+    </table>
 
-|Option |Manages |
-|-------|--------|
-|All fields left as “*”| All files signed by any publisher. (Not recommended.) |
-|**Publisher** selected | All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps. |
-|**Publisher** and **Product Name** selected |All files for the specified product, signed by the named publisher. |
-|**Publisher**, **Product Name** and **File Name** selected |Any version of the named file or package for the specified product, signed by the named publisher.|
-|**Publisher**, **Product Name**, **File Name**, and **File Version, Exactly** selected |Specified version of the named file or package for the specified product, signed by the named publisher. |
-|**Publisher**, **Product Name**, **File Name**, and **File Version, And above** selected |Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened. |
-|**Publisher**, **Product Name**, **File Name**, and **File Version, And below** selected |Specified version or older releases of the named file or package for the specified product, signed by the named publisher. |
-
-
-![microsoft intune: add a classic windows app to the protected apps list](images/intune-add-desktop-app.png)
+    ![Microsoft Intune: Add a Classic Windows app to the Protected Apps list](images/intune-add-desktop-app.png)
 
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
-``` syntax
+``` ps1
 Get-AppLockerFileInformation -Path "<path of the exe>"
 ```
 Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Internet Explorer\iexplore.exe"`.
 
 In this example, you'd get the following info:
 
-``` syntax
+``` json
 Path                                          Publisher
 ----                                          ---------
 %PROGRAMFILES%\INTERNET EXPLORER\IEXPLORE.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\INTERNET EXPLOR...
@@ -165,7 +188,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 4.  Copy the text that has a **Type** of Appx, within in the **RuleCollection** tags, and then go back to Intune and paste the text into the **Value** box of the **Add or edit OMA-URI Setting** box. For example:
 
-    ``` syntax
+    ``` 
     <RuleCollection Type="Appx" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
     ```
     
@@ -181,7 +204,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 4.  Copy the text that has a **Type** of EXE, within in the **RuleCollection** tags, and then go back to Intune and paste the text into the **Value** box of the **Add or edit OMA-URI Setting** box. For example:
 
-    ``` syntax
+    ``` 
     <RuleCollection Type="Exe" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
     ```
 
@@ -191,15 +214,30 @@ If you're running into compatibility issues where your app is incompatible with 
 After you've added the apps you want to protect with EDP, you'll need to apply a management and protection mode.
 
 We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your **Protected Apps** list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
+<table>
+    <tr>
+        <th>Mode</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Block</td>
+        <td>EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.</td>
+    </tr>
+    <tr>
+        <td>Override</td>
+        <td>EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459).</td>
+    </tr>
+    <tr>
+        <td>Silent</td>
+        <td>EDP runs silently, logging inappropriate data sharing, without blocking anything.</td>
+    </tr>
+    <tr>
+        <td>Off</td>
+        <td>EDP is turned off and doesn't help to protect or audit your data.</td>
+    </tr>
+</table>
 
-|Mode |Description |
-|-----|------------|
-|Block |EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise. |
-|Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
-|Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything. |
-|Off |EDP is turned off and doesn't help to protect or audit your data.|
-<p>
-![microsoft intune: add protection level for protected apps list](images/intune-encryption-level.png)
+![Microsoft Intune: Add the protection level for your Protected Apps list](images/intune-encryption-level.png)
 
 ## Define your enterprise-managed identity domains
 Specify your company’s enterprise identity, expressed as your primary internet domain. For example, if your company is Contoso, its enterprise identity might be contoso.com. The first listed domain (in this example, contoso.com) is the primary enterprise identity string used to tag files protected by any app on the **Protected App** list.
@@ -207,8 +245,8 @@ Specify your company’s enterprise identity, expressed as your primary internet
 You can also specify all the domains owned by your enterprise that are used for user accounts, separating them with the "|" character. For example, if Contoso also has some employees with email addresses or user accounts on the fabrikam.com domain, you would use contoso.com|fabrikam.com.
 
 This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
-<p>
-![microsoft intune: add primary internet domain for your enterprise identity](images/intune-primary-domain.png)
+
+![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 **To add your primary domain**
 
@@ -224,24 +262,52 @@ After you've added a protection mode to your apps, you'll need to decide where t
 
 **To specify where your protected apps can find and send enterprise data on the network**
 
-1.  Add additional network locations your apps can access by clicking **Add**, typing a description into the **Description** box, and then choosing your location type, including:<p>
+1.  Add additional network locations your apps can access by clicking **Add**, typing a description into the **Description** box, and then choosing your location type, including:
+    <table>
+        <tr>
+            <th>Network location type</th>
+            <th>Format</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Enterprise Cloud Domain</td>
+            <td>contoso.sharepoint.com,proxy1.contoso.com|<br>office.com|proxy2.contoso.com</td>
+            <td>Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter. Include the "|" delimiter just before the "|" if you don’t use proxies. For example: [URL,Proxy]|[URL,Proxy].</td>     
+        </tr>
+        <tr>
+            <td>Enterprise Network Domain</td>
+            <td>domain1.contoso.com,domain2.contoso.com</td>
+            <td>Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the "," delimiter.<p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks.</td>                
+        </tr>
+        <tr>
+            <td>Enterprise Proxy Server</td>
+            <td>domain1.contoso.com:80;domain2.contoso.com:137</td>
+            <td>Specify the proxy server and the port traffic is routed through. If you have multiple resources, you must use the ";" delimiter.<p>This setting is required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when using certain Wi-Fi hotspots at hotels and restaurants.</td>                
+        </tr>
+        <tr>
+            <td>Enterprise Internal Proxy Server</td>
+            <td>proxy1.contoso.com;proxy2.contoso.com</td>
+            <td>Specify the proxy servers your cloud resources will go through. If you have multiple resources, you must use the ";" delimiter.</td>                
+        </tr>
+        <tr>
+            <td>Enterprise IPv4 Range</td>
+            <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254</td>
+            <td>Specify the addresses for a valid IPv4 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the "-" delimiter between start and end of a range, and the "," delimiter to separate ranges.</td>
+        </tr>
+        <tr>
+            <td>Enterprise IPv6 Range</td>
+            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
+            <td>Specify the addresses for a valid IPv6 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the "-" delimiter between start and end of a range, and the "," delimiter to separate ranges.</td>
+        </tr>                
+    </table>
 
-|Network location type |Format          |Description           |
-|----------------------|----------------|----------------------|
-|Enterprise Cloud Domain |contoso.sharepoint.com,proxy1.contoso.com&#x7C;office.com&#x7C;proxy2.contoso.com|Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter. Include the &#x7C; delimiter just before the &#x7C; if you don’t use proxies. For example: [URL,Proxy]&#x7C;[URL,Proxy]. |
-|Enterprise Network Domain |domain1.contoso.com,domain2.contoso.com |Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the `,` delimiter.<p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks. |
-|Enterprise Proxy Server |domain1.contoso.com:80;domain2.contoso.com:137 |Specify the proxy server and the port traffic is routed through. If you have multiple resources, you must use the `;` delimiter.<p>This setting is required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when using certain Wi-Fi hotspots at hotels and restaurants. |
-|Enterprise Internal Proxy Server |proxy1.contoso.com;proxy2.contoso.com |Specify the proxy servers your cloud resources will go through. If you have multiple resources, you must use the `;` delimiter. |
-|Enterprise IPv4 Range |**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254 | Specify the addresses for a valid IPv4 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the `-` delimiter between start and end of a range, and the `,` delimiter to separate ranges. |
-|Enterprise IPv6 Range |**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff |Specify the addresses for a valid IPv6 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the `-` delimiter between start and end of a range, and the `,` delimiter to separate ranges.
-
-![microsoft intune: choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
+    ![Microsoft Intune: Choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
 
 2.  Add as many locations as you need, and then click **OK**.<p>The **Add or Edit Enterprise Network Locations box** closes.
 
 3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.<p>Adding a data recovery certificate helps you to access locally-protected files on the device. For example, if an employee leaves the company and the IT department has to access EDP-protected data from a Windows 10 company computer. This can also help recover data in case an employee's device is accidentally revoked. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.<p>
 
-![microsoft intune: specify your data recovery certificate for your policy](images/intune-data-recovery.png)
+    ![Microsoft Intune: Specify a data recovery certificate for your policy](images/intune-data-recovery.png)
 
 ## Choose your optional EDP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
@@ -254,13 +320,17 @@ After you've decided where your protected apps can access enterprise data on you
 
     -   **Protect app content when the device is in a locked state for the apps configured above.** Clicking **Yes** lets EDP help to secure protected app content when a mobile device is locked. We recommend turning this option on to help prevent data leaks from things such as email text that appears on the **Lock** screen of a Windows 10 Mobile phone.
 
-        ![microsoft intune: optional edp settings](images/intune-edpsettings.png)
+        ![Microsoft Intune: Optional EDP settings](images/intune-edpsettings.png)
 
 2.  Click **Save Policy**.
 
 ## Related topics
+- [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md)
 - [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md)
+- [Create and deploy a VPN policy for enterprise data protection (EDP) using Microsoft Intune](create-vpn-and-edp-policy-using-intune.md)
 - [General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
+
+
 
  
 

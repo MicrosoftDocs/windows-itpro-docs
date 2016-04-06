@@ -9,32 +9,23 @@ author: CFaw
 ---
 
 # Activate by Proxy an Active Directory Forest
-
-
 You can use the Volume Activation Management Tool (VAMT) Active Directory-Based Activation (ADBA) function to activate by proxy an Active Directory (AD) forest for an isolated workgroup that does not have Internet access. ADBA enables certain volume products to inherit activation from the domain.
 
 **Important**  
 ADBA is only applicable to Generic Volume License Keys (GVLKs) and KMS Host key (CSVLK). To use ADBA, one or more KMS Host keys (CSVLK) must be installed on the AD forest, and client keys (GVLKs) must be installed on the client products.
-
- 
 
 In a typical proxy-activation scenario, the VAMT host computer distributes a product key to one or more client computers and collects the installation ID (IID) from each computer. The VAMT host computer sends the IIDs to Microsoft on behalf of the client computers and obtains the corresponding Confirmation IDs (CIDs). The VAMT host computer then installs the CIDs on the client computer to complete the activation. If you use this activation method, only the VAMT host computer needs to have Internet access.
 
 **Note**  
 For workgroups that are isolated from any larger network, you can still perform an AD forest activation. This requires installing a second instance of VAMT on a computer in the isolated group and using removable media to transfer activation data between that computer and another VAMT host computer that has Internet access. You can also activate by proxy a KMS Host key (CSVLK) in the core network if you do not want the host computer to connect to Microsoft over the Internet.
 
- 
-
 ## Requirements
-
-
 Before performing proxy activation, ensure that the network and the VAMT installation meet the following requirements:
+- There is an instance of VAMT that is installed on a computer that has Internet access. If you are performing proxy activation for an isolated workgroup, you must also have VAMT installed on one of the computers in the workgroup.
 
-1.  There is an instance of VAMT that is installed on a computer that has Internet access. If you are performing proxy activation for an isolated workgroup, you must also have VAMT installed on one of the computers in the workgroup.
+- VAMT has administrative permissions to the Active Directory domain.
 
-2.  VAMT has administrative permissions to the Active Directory domain.
-
-### To Perform an Active Directory Forest Proxy Activation
+**To perform an Active Directory forest proxy activation**
 
 1.  Open VAMT.
 
@@ -49,13 +40,11 @@ Before performing proxy activation, ensure that the network and the VAMT install
     **Important**  
     If you want to rename the ADBA object, you must do it now. After you click **Install Key**, the name cannot be changed.
 
-     
-
 6.  Enter the name of the file where you want to save the offline installation ID, or browse to the file location and then click **Open**. If you are activating an AD forest in an isolated workgroup, save the .cilx file to a removable media device.
 
 7.  Click **Install Key**.
 
-8.  VAMT displays the **Activating Active Directory** dialog box until it completes the requested action. The activated object and the date that it was created appear in the **Active Directory-Based Activation** node in the center pane.
+    VAMT displays the **Activating Active Directory** dialog box until it completes the requested action. The activated object and the date that it was created appear in the **Active Directory-Based Activation** node in the center pane.
 
 9.  Insert the removable media into the VAMT host that has Internet access. Make sure that you are on the root node, and that the **Volume Activation Management Tool** view is displayed in the center pane.
 
@@ -74,15 +63,4 @@ Before performing proxy activation, ensure that the network and the VAMT install
 VAMT displays the **Activating Active Directory** dialog box until it completes the requested action. The activated object and the date that it was created appear in the **Active Directory-Based Activation** node in the center pane.
 
 ## Related topics
-
-
-[Add and Remove Computers](add-remove-computers-vamt.md)
-
- 
-
- 
-
-
-
-
-
+- [Add and Remove Computers](add-remove-computers-vamt.md)
