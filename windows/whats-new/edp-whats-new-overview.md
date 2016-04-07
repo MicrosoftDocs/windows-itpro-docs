@@ -1,7 +1,7 @@
 ---
 title: Enterprise data protection (EDP) overview (Windows 10)
 description: With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data disclosure through apps and services that are outside of the enterprise’s control like email, social media, and the public cloud.
-ms.assetid: 42ba3135-cb5e-478b-b1ff-b6eb76f0df14
+ms.assetid: 428A3135-CB5E-478B-B1FF-B6EB76F0DF14
 keywords: ["EDP Overview", "EDP"]
 ms.prod: W10
 ms.mktglfcycl: explore
