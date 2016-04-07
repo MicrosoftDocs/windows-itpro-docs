@@ -12,7 +12,7 @@
 ### [Microsoft Bitlocker Administration and Monitoring 2](mbam-v2/)
 ### [Microsoft Bitlocker Administration and Monitoring 1](mbam-v1/)
 ## [Microsoft Enterprise Desktop Virtualization]()
-### [Microsoft Enterprise Desktop Virtualization 2](mdev-v2/)
+### [Microsoft Enterprise Desktop Virtualization 2](medv-v2/)
 ## [User Experience Virtualization]()
 ### [User Experience Virtualization 2](uev-v2/)
 ### [User Experience Virtualization 2](uev-v1/)
