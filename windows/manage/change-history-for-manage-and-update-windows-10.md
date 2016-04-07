@@ -24,7 +24,10 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <th align="left">Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody><tr class="odd">
+<td align="left">[Administrative tools in Windows 10](administrative-tools-in-windows-10.md)</td>
+<td align="left"><p>Added screenshots of Control Panel and the administrative tools folder.</p></td>
+</tr>
 <tr class="odd">
 <td align="left">[Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
 <td align="left"><p>Added the font streaming section.</p></td>
