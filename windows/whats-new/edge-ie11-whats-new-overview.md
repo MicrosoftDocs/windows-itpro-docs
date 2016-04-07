@@ -1,16 +1,14 @@
 ---
 title: Browser Microsoft Edge and Internet Explorer 11 (Windows 10)
 description: Resources to help you explore the Windows 10 browsing options for your enterprise.
-ms.assetid: E986F903-69AD-4145-9D24-0C6D04B3E489
+ms.assetid: e986f903-69ad-4145-9d24-0c6d04b3e489
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: eross-msft
 ---
 
 # Browser: Microsoft Edge and Internet Explorer 11
-
-
 **Microsoft Edge content applies to:**
 
 -   Windows 10
@@ -20,58 +18,35 @@ author: TrudyHa
 
 -   Windows 10
 
-Resources to help you explore the Windows 10 browsing options for your enterprise.
-
 ## Enterprise guidance
-
-
 Microsoft Edge is the default browser experience for Windows 10 and Windows 10 Mobile. However, if you're running web apps that need ActiveX controls, we recommend that you continue to use Internet Explorer 11 for them. If you don't have IE11 installed anymore, you can download it from the Windows Store or from the [Internet Explorer 11 download page](http://go.microsoft.com/fwlink/p/?linkid=290956).
 
 We also recommend that you upgrade to IE11 if you're running any earlier versions of Internet Explorer. IE11 is supported on Windows 7, Windows 8.1, and Windows 10. So any legacy apps that work with IE11 will continue to work even as you migrate to Windows 10.
 
 ### Microsoft Edge
-
-Microsoft Edge is the new, default web browser for Windows 10 and Windows 10 Mobile, taking you beyond just browsing to actively engaging with the web through features like Web Note, Reading View, and Cortana.
+Microsoft Edge takes you beyond just browsing to actively engaging with the web through features like Web Note, Reading View, and Cortana.
 
 -   **Web Note.** Microsoft Edge lets you annotate, highlight, and call things out directly on webpages.
-
 -   **Reading view.** Microsoft Edge lets you enjoy and print online articles in a distraction-free layout that's optimized for your screen size. While in reading view, you can also save webpages or PDF files to your reading list, for later viewing.
-
 -   **Cortana.** Cortana is automatically enabled on Microsoft Edge. Microsoft Edge lets you highlight words for more info and gives you one-click access to things like restaurant reservations and reviews, without leaving the webpage.
-
 -   **Compatibility and security.** Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or that are included on your Enterprise Mode Site List. You must use IE11 to run older, less secure technology, such as ActiveX controls.
 
 ### IE11
-
 IE11 offers enterprises additional security, manageability, performance, backward compatibility, and modern standards support.
 
 -   **Backward compatibility.** IE11 supports 9 document modes that include high-fidelity emulations for older versions of IE.
-
 -   **Modern web standards.** IE11 supports modern web technologies like HTML5, CSS3, and WebGL, which help to ensure today's modern websites and apps work just as well as your old, legacy websites and apps.
-
 -   **More secure.** IE11 was designed with security in mind and is more secure than older versions. Using security features like SmartScreen and Enhanced Protected Mode can help IE11 reduce your risk.
-
 -   **Faster.** IE11 is significantly faster than previous versions of Internet Explorer, taking advantage of network optimization and hardware-accelerated text, graphics, and JavaScript rendering.
-
 -   **Easier migration to Windows 10.** IE11 is the only version of IE that runs on Windows 7, Windows 8.1, and Windows 10. Upgrading to IE11 on Windows 7 can also help your organization support the next generation of software, services, and devices.
-
 -   **Administration.** IE11 can use the Internet Explorer Administration Kit (IEAK) 11 or MSIs for deployment, and includes more than 1,600 Group Policies and preferences for granular control.
 
 ## Related topics
-
-
-[Web Application Compatibility Lab Kit for Internet Explorer 11](http://go.microsoft.com/fwlink/p/?LinkId=715642)
-
-[Download Internet Explorer 11](http://go.microsoft.com/fwlink/p/?linkid=290956)
-
-[Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=618271)
-
-[Internet Explorer 11 - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?linkid=313986)
-
-[IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](http://go.microsoft.com/fwlink/p/?LinkId=619690)
-
- 
-
+- [Web Application Compatibility Lab Kit for Internet Explorer 11](https://technet.microsoft.com/en-us/browser/mt612809.aspx)
+- [Download Internet Explorer 11](http://windows.microsoft.com/en-US/internet-explorer/download-ie)
+- [Microsoft Edge - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/microsoft-edge/index)
+- [Internet Explorer 11 - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/index)
+- [IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/index)
  
 
 

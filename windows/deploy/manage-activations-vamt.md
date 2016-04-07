@@ -9,45 +9,18 @@ author: jdeckerMS
 ---
 
 # Manage Activations
-
-
 This section describes how to activate a client computer, by using a variety of activation methods.
 
 ## In this Section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Perform Online Activation](online-activation-vamt.md)</p></td>
-<td align="left"><p>Describes how to activate a client computer over the Internet.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Perform Proxy Activation](proxy-activation-vamt.md)</p></td>
-<td align="left"><p>Describes how to perform volume activation for client products that do not have Internet access.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Perform KMS Activation](kms-activation-vamt.md)</p></td>
-<td align="left"><p>Describes how perform volume activation using the Key Management Service (KMS).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Perform Local Reactivation](local-reactivation-vamt.md)</p></td>
-<td align="left"><p>Describes how to reactivate an operating system or Office program that was reinstalled.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Activate an Active Directory Forest Online](activate-forest-vamt.md)</p></td>
-<td align="left"><p>Describes how to use Active Directory-Based Activation to online activate an Active Directory forest.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Activate by Proxy an Active Directory Forest](activate-forest-by-proxy-vamt.md)</p></td>
-<td align="left"><p>Describes how to use Active Directory-Based Activation to proxy activate an Active Directory forest that is not connected to the Internet.</p></td>
-</tr>
-</tbody>
-</table>
+|Topic |Description |
+|------|------------|
+|[Perform Online Activation](online-activation-vamt.md) |Describes how to activate a client computer over the Internet. |
+|[Perform Proxy Activation](proxy-activation-vamt.md) |Describes how to perform volume activation for client products that do not have Internet access. |
+|[Perform KMS Activation](kms-activation-vamt.md) |Describes how perform volume activation using the Key Management Service (KMS). |
+|[Perform Local Reactivation](local-reactivation-vamt.md) |Describes how to reactivate an operating system or Office program that was reinstalled. |
+|[Activate an Active Directory Forest Online](activate-forest-vamt.md) |Describes how to use Active Directory-Based Activation to online activate an Active Directory forest. |
+|[Activate by Proxy an Active Directory Forest](activate-forest-by-proxy-vamt.md) |Describes how to use Active Directory-Based Activation to proxy activate an Active Directory forest that is not connected to the Internet. |
 
  
 

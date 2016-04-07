@@ -20,8 +20,7 @@ There are 3 ways to use this feature:
 
 -   **On.** Helps stop any font processed using GDI from loading outside of the `%windir%/Fonts` directory. It also turns on event logging.
 
--   **Audit.** Turns on event logging, but doesn’t block fonts from loading, regardless of location. The name of the apps that use untrusted fonts appear in your event log.<p>
-**Note**<br>If you aren’t quite ready to deploy this feature into your organization, you can run it in Audit mode to see if not loading untrusted fonts causes any usability or compatibility issues.
+-   **Audit.** Turns on event logging, but doesn’t block fonts from loading, regardless of location. The name of the apps that use untrusted fonts appear in your event log.<p>**Note**<br>If you aren’t quite ready to deploy this feature into your organization, you can run it in Audit mode to see if not loading untrusted fonts causes any usability or compatibility issues.
 
 -   **Exclude apps to load untrusted fonts.** You can exclude specific apps, allowing them to load untrusted fonts, even while this feature is turned on. For instructions, see [Fix apps having problems because of blocked fonts](#fix-apps-having-problems-because-of-blocked-fonts).
 
@@ -94,9 +93,9 @@ After you figure out the problematic fonts, you can try to fix your apps in 2 wa
 
 **To fix your apps by excluding processes**
 
-1.  On each computer with the app installed, open regedit.exe and go to `HKEY_LOCAL_MACHINE\ Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<process_image_name>`. Like, if you want to exclude Microsoft Word processes, you’d use `HKEY_LOCAL_MACHINE\ Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Winword.exe`.
+1.  On each computer with the app installed, open regedit.exe and go to `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<process_image_name>`. Like, if you want to exclude Microsoft Word processes, you’d use `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Winword.exe`.
 
-2.  Add any additional processes that need to be excluded here, and then turn the Blocking untrusted fonts feature on, using steps 2 and 3 in [Turn on and use the Blocking Untrusted Fonts feature.](#turn-on-and-use-the-blocking-untrusted-fonts-feature)
+2.  Add any additional processes that need to be excluded here, and then turn the Blocking untrusted fonts feature on, using steps 2 and 3 in [Turn on and use the Blocking Untrusted Fonts feature](#turn-on-and-use-the-blocking-untrusted-fonts-feature).
 
  
 

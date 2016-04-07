@@ -10,8 +10,6 @@ author: CFaw
 ---
 
 # Monitor activation
-
-
 **Applies to**
 
 -   Windows 10
@@ -41,8 +39,6 @@ You can monitor the success of the activation process for a computer running Win
 -   The VAMT provides a single site from which to manage and monitor volume activations. This is explained in the next section.
 
 ## See also
-
-
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
 
  

@@ -10,8 +10,6 @@ author: jdeckerMS
 ---
 
 # Volume Activation for Windows 10
-
-
 **Applies to**
 
 -   Windows 10

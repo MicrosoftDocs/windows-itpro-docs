@@ -9,15 +9,11 @@ author: jdeckerMS
 ---
 
 # Add and Remove Computers
-
-
 You can add computers that have any of the supported Windows or Office products installed to a Volume Activation Management Tool (VAMT) database by using the **Discover products** function. You can search for computers in an Active Directory domain, by individual computer name or IP address, in a workgroup, or by a general LDAP query. You can remove computers from a VAMT database by using the **Delete** function. After you add the computers, you can add the products that are installed on the computers by running the **Update license status** function.
 
 Before adding computers, ensure that the Windows Management Instrumentation (WMI) firewall exception required by VAMT has been enabled on all target computers. For more information see [Configure Client Computers](configure-client-computers-vamt.md).
 
 ## To add computers to a VAMT database
-
-
 1.  Open VAMT.
 
 2.  Click **Discover products** in the **Actions** menu in the right-side pane to open the **Discover Products** dialog box.
@@ -38,16 +34,12 @@ Before adding computers, ensure that the Windows Management Instrumentation (WMI
 
     To cancel the search, click **Cancel**. When the search is complete the names of the newly-discovered computers appear in the product list view in the center pane.
 
+    ![VAMT, Finding computers dialog box](images/dep-win8-l-vamt-findingcomputerdialog.gif)
+    
     **Important**  
-    Note that this step adds only the computers to the VAMT database, and not the products that are installed on the computers. To add the products, you need to run the **Update license status** function.
-
-     
-
-![vamt find a computer dialog box](images/dep-win8-l-vamt-findingcomputerdialog.gif)
+    This step adds only the computers to the VAMT database, and not the products that are installed on the computers. To add the products, you need to run the **Update license status** function.
 
 ## To add products to VAMT
-
-
 1.  In the **Products** list, select the computers that need to have their product information added to the VAMT database.
 
 2.  You can use the **Filter** function to narrow your search for computers by clicking **Filter** in the right-side pane to open the **Filter Products** dialog box.
@@ -64,20 +56,14 @@ Before adding computers, ensure that the Windows Management Instrumentation (WMI
 
 6.  VAMT displays the **Collecting product information** dialog box while it collects the licensing status of all supported products on the selected computers. When the process is finished, the updated licensing status of each product will appear in the product list view in the center pane.
 
-**Note**  
-If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
-
- 
+    **Note**  
+    If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
 ## To remove computers from a VAMT database
-
-
 You can delete a computer by clicking on it in the product list view, and then clicking **Delete** in the **Selected Item** menu in the right-hand pane. In the **Confirm Delete Selected Products** dialog box that appears, click **Yes** to delete the computer. If a computer has multiple products listed, you must delete each product to completely remove the computer from the VAMT database.
 
 ## Related topics
-
-
-[Add and Manage Products](add-manage-products-vamt.md)
+- [Add and Manage Products](add-manage-products-vamt.md)
 
  
 

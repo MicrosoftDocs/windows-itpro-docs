@@ -9,14 +9,10 @@ author: CFaw
 ---
 
 # Sideload LOB apps in Windows 10
-
-
 **Applies to**
 
 -   Windows 10
 -   Windows 10 Mobile
-
-Sideload line-of-business apps in Windows 10.
 
 "Line-of-Business" (LOB) apps are present in a wide range of businesses and organizations. Organizations value these apps because they solve problems unique to each business.
 
@@ -31,8 +27,6 @@ In Windows 10, sideloading is different than in earlier versions of Windows:
 -   Devices do not have to be joined to a domain
 
 ## Requirements
-
-
 Here's what you'll need to have:
 
 -   Devices need to be unlocked for sideloading (unlock policy enabled)
@@ -50,8 +44,6 @@ And here's what you'll need to do:
 -   Install the app - use PowerShell to install the app package.
 
 ## How do I sideload an app on desktop
-
-
 You can sideload apps on managed or unmanaged devices.
 
 **To turn on sideloading for managed devices**
@@ -74,17 +66,14 @@ You can sideload apps on managed or unmanaged devices.
 
 3.  Import the certificate to the **Trusted Root Certification Authorities** folder.
 
--Or-
+    -OR-
 
-You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 device, see runtime instructions on [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=619162).
+    You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 device, see runtime instructions on [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=619162).
 
 **To install the app**
-
 -   From the folder with the appx package, run the PowerShell `Add-AppxPackage` command to install the appx package.
 
 ## How do I sideload an app on mobile
-
-
 You can sideload apps on managed or unmanaged devices.
 
 **To turn on sideloading for a managed device**
@@ -115,7 +104,7 @@ You can sideload apps on managed or unmanaged devices.
 
 -   From an email, tap a xap, appx, or appx bundle package.
 
-    -Or-
+    -OR-
 
     With your mobile device tethered to a desktop, click a xap, appx, or appx bundle package from the files system to install the app.
 

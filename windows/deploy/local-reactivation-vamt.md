@@ -9,8 +9,6 @@ author: jdeckerMS
 ---
 
 # Perform Local Reactivation
-
-
 If you reinstall Windows® or Microsoft® Office 2010 on a computer that was initially activated using proxy activation (MAK, retail, or CSLVK (KMS host)), and have not made significant changes to the hardware, use this local reactivation procedure to reactivate the program on that computer.
 
 Local reactivation relies upon data that was created during the initial proxy activation and stored in the Volume Activation Management Tool (VAMT) database. The database contains the installation ID (IID) and confirmation ID (Pending CID). Local reactivation uses this data to reapply the CID and reactivate those products. Reapplying the same CID conserves the remaining activations on the key.
@@ -18,10 +16,9 @@ Local reactivation relies upon data that was created during the initial proxy ac
 **Note**  
 During the initial proxy activation, the CID is bound to a digital “fingerprint”, which is calculated from values assigned to several different hardware components in the computer. If the computer has had significant hardware changes, this fingerprint will no longer match the CID. In this case, you must obtain a new CID for the computer from Microsoft.
 
- 
-
 ## To Perform a Local Reactivation
 
+**To perform a local reactivation**
 
 1.  Open VAMT. Make sure that you are connected to the desired database.
 
@@ -42,8 +39,8 @@ During the initial proxy activation, the CID is bound to a digital “fingerprin
 7.  Click a credential option. Choose **Alternate credentials** only if you are reactivating products that require administrator credentials different from the ones you are currently using.
 
 8.  If you are supplying alternate credentials, in the **Windows Security** dialog box type the appropriate user name and password and click **OK**.
-
-9.  VAMT displays the **Apply Confirmation ID** dialog box.
+    
+    VAMT displays the **Apply Confirmation ID** dialog box.
 
 10. If you are using a different product key than the product key used for initial activation, you must complete a new activation to obtain a new CID.
 
@@ -52,15 +49,4 @@ During the initial proxy activation, the CID is bound to a digital “fingerprin
 12. Click **OK**.
 
 ## Related topics
-
-
-[Manage Activations](manage-activations-vamt.md)
-
- 
-
- 
-
-
-
-
-
+- [Manage Activations](manage-activations-vamt.md)
