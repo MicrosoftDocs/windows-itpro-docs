@@ -31,7 +31,7 @@ Describes how to install the MED-V Host Agent, the MED-V Workspace Packager, and
 ## Related topics
 
 
-[Microsoft Enterprise Desktop Virtualization 2.0](microsoft-enterprise-desktop-virtualization-20.md)
+[Microsoft Enterprise Desktop Virtualization 2.0](index.md)
 
  
 

@@ -25,7 +25,7 @@ Provides guidance for planning your deployment following MED-V 2.0 best practice
 ## Related topics
 
 
-[Microsoft Enterprise Desktop Virtualization 2.0](microsoft-enterprise-desktop-virtualization-20.md)
+[Microsoft Enterprise Desktop Virtualization 2.0](index.md)
 
  
 

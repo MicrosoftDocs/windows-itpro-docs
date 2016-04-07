@@ -40,7 +40,7 @@ Describes how to manage configuration settings and printers in a MED-V workspace
 ## Related topics
 
 
-[Microsoft Enterprise Desktop Virtualization 2.0](microsoft-enterprise-desktop-virtualization-20.md)
+[Microsoft Enterprise Desktop Virtualization 2.0](index.md)
 
  
 

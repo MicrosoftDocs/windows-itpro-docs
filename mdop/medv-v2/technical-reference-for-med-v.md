@@ -40,7 +40,7 @@ Provides several checklist examples that you can reference when planning, deploy
 ## Related topics
 
 
-[Microsoft Enterprise Desktop Virtualization 2.0](microsoft-enterprise-desktop-virtualization-20.md)
+[Microsoft Enterprise Desktop Virtualization 2.0](index.md)
 
 [Security and Protection for MED-V](security-and-protection-for-med-v.md)
 

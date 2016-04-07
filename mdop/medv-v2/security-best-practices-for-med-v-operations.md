@@ -39,7 +39,7 @@ A MED-V best practice is to specify that FtsCompletion.exe is run under an accou
 
 [Operations Troubleshooting](operations-troubleshooting-medv2.md)
 
-[Microsoft Enterprise Desktop Virtualization 2.0](microsoft-enterprise-desktop-virtualization-20.md)
+[Microsoft Enterprise Desktop Virtualization 2.0](index.md)
 
  
 

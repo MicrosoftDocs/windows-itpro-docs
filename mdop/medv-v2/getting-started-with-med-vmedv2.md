@@ -28,7 +28,7 @@ Provides information specifically related to MED-V including what’s new in MED
 ## Related topics
 
 
-[Microsoft Enterprise Desktop Virtualization 2.0](microsoft-enterprise-desktop-virtualization-20.md)
+[Microsoft Enterprise Desktop Virtualization 2.0](index.md)
 
  
 

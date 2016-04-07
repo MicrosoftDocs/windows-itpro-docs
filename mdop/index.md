@@ -58,12 +58,12 @@ The following table provides links to the product documentation for the MDOP pro
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Microsoft BitLocker Administration and Monitoring</strong> (MBAM) provides an administrative interface to enterprise-wide BitLocker drive encryption.</p></td>
-<td align="left"><p>[Microsoft BitLocker Administration and Monitoring 2.5](mbam-v25/microsoft-bitlocker-administration-and-monitoring-25.md)</p>
+<td align="left"><p>[Microsoft BitLocker Administration and Monitoring 2.5](mbam-v25/index.md)</p>
 <p>[MBAM 2.5 Video Demonstration: Deploying MBAM 2.5](http://go.microsoft.com/fwlink/?LinkId=518206) (http://go.microsoft.com/fwlink/?LinkId=518206)</p>
 <p>[About MBAM 2.5 SP1](mbam-v25/about-mbam-25-sp1.md)</p>
 <p>[About MBAM 2.0 SP1](mbam-v2/about-mbam-20-sp1.md)</p>
-<p>[Microsoft BitLocker Administration and Monitoring 2 Administrator's Guide](mbam-v2/microsoft-bitlocker-administration-and-monitoring-2-administrators-guide.md)</p>
-<p>[Microsoft BitLocker Administration and Monitoring 1 Administrator's Guide](mbam-v1/microsoft-bitlocker-administration-and-monitoring-1-administrators-guide.md)</p>
+<p>[Microsoft BitLocker Administration and Monitoring 2 Administrator's Guide](mbam-v2/index.md)</p>
+<p>[Microsoft BitLocker Administration and Monitoring 1 Administrator's Guide](mbam-v1/index.md)</p>
 <p>[MBAM Whitepapers on the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=231905) (http://go.microsoft.com/fwlink/p/?LinkId=231905)</p>
 <p>[MBAM 1.0 eBooks](http://go.microsoft.com/fwlink/p/?LinkId=309571) (http://go.microsoft.com/fwlink/p/?LinkId=309571)</p></td>
 </tr>
@@ -77,11 +77,11 @@ The following table provides links to the product documentation for the MDOP pro
 <p><strong>DaRT 6.5</strong> - Windows 7, Windows Server 2008 R2</p>
 <p><strong>DaRT 6.0</strong> - Windows Vista, Windows Server 2008</p>
 <p><strong>DaRT 5.0</strong> - Windows 2000, Windows XP, Windows Server 2003</p></td>
-<td align="left"><p>[Diagnostics and Recovery Toolset 10](dart-v10/diagnostics-and-recovery-toolset-10.md)</p>
+<td align="left"><p>[Diagnostics and Recovery Toolset 10](dart-v10/index.md)</p>
 <p>[About DaRT 8.1](dart-v8/about-dart-81.md)</p>
 <p>[About DaRT 8.0 SP1](dart-v8/about-dart-80-sp1.md)</p>
-<p>[Diagnostics and Recovery Toolset 8 Administrator's Guide](dart-v8/diagnostics-and-recovery-toolset-8-administrators-guide.md)</p>
-<p>[Diagnostics and Recovery Toolset 7 Administrator's Guide](dart-v7/diagnostics-and-recovery-toolset-7-administrators-guide.md)</p>
+<p>[Diagnostics and Recovery Toolset 8 Administrator's Guide](dart-v8/index.md)</p>
+<p>[Diagnostics and Recovery Toolset 7 Administrator's Guide](dart-v7/index.md)</p>
 <p>[DaRT 6.5](http://go.microsoft.com/fwlink/p/?LinkId=232983) (http://go.microsoft.com/fwlink/p/?LinkId=232983)</p>
 <p>[DaRT Whitepapers on the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=232274) (http://go.microsoft.com/fwlink/p/?LinkId=232274)</p>
 <p>[DaRT 8.0 eBook](http://go.microsoft.com/fwlink/p/?LinkId=309573) (http://go.microsoft.com/fwlink/p/?LinkId=309573)</p>
@@ -97,23 +97,23 @@ The following table provides links to the product documentation for the MDOP pro
 <p><strong>MED-V 2.0</strong> - Windows 7</p>
 <p><strong>MED-V 1.0 SP1</strong> - Windows 7, Windows Vista, Windows XP</p>
 <p><strong>MED-V 1.0</strong> - Windows Vista, Windows XP</p></td>
-<td align="left"><p>[Microsoft Enterprise Desktop Virtualization 2.0](medv-v2/microsoft-enterprise-desktop-virtualization-20.md)</p>
+<td align="left"><p>[Microsoft Enterprise Desktop Virtualization 2.0](medv-v2/index.md)</p>
 <p>[About MED-V 1.0 SP1](p_mdop_medv_1/about-med-v-10-sp1.md)</p>
 <p>[Microsoft Enterprise Desktop Virtualization 1.0](74a9483e-87a1-4394-a4d5-50cff5c07297)</p>
 <p>[MED-V Whitepapers on the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=231903) (http://go.microsoft.com/fwlink/p/?LinkId=231903)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Microsoft User Experience Virtualization</strong> (UE-V) captures settings to apply to computers accessed by the user including desktop computers, laptop computers, and VDI sessions.</p></td>
-<td align="left"><p>[Microsoft User Experience Virtualization (UE-V) 2.x](uev-v2/microsoft-user-experience-virtualization--ue-v--2x-new-uevv2.md)</p>
+<td align="left"><p>[Microsoft User Experience Virtualization (UE-V) 2.x](uev-v2/index.md)</p>
 <p>[What's New in UE-V 2.1 SP1](uev-v2/whats-new-in-ue-v-21-sp1uevv21-sp1.md)</p>
 <p>[What's New in UE-V 2.1](uev-v2/whats-new-in-ue-v-21-new-uevv2.md)</p>
 <p>[What's New in UE-V 2.0](uev-v2/whats-new-in-ue-v-20-new-uevv2.md)</p>
 <p>[About User Experience Virtualization 1.0 SP1](uev-v1/about-user-experience-virtualization-10-sp1.md)</p>
-<p>[Microsoft User Experience Virtualization (UE-V) 1.0](uev-v1/microsoft-user-experience-virtualization--ue-v--10.md)</p>
+<p>[Microsoft User Experience Virtualization (UE-V) 1.0](uev-v1/index.md)</p>
 <p>[UE-V 1.0 eBooks](http://go.microsoft.com/fwlink/p/?LinkId=309574) (http://go.microsoft.com/fwlink/p/?LinkId=309574)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[MDOP Solutions and Scenarios](solutions/mdop-solutions-and-scenarios.md)</p></td>
+<td align="left"><p>[MDOP Solutions and Scenarios](solutions/index.md)</p></td>
 <td align="left"><p>[Virtualizing Microsoft Office 2013 for Application Virtualization (App-V) 5.0](solutions/virtualizing-microsoft-office-2013-for-application-virtualization--app-v--50-solutions.md)</p>
 <p>[Virtualizing Microsoft Office 2010 for Application Virtualization (App-V) 5.0](solutions/virtualizing-microsoft-office-2010-for-application-virtualization--app-v--50-solutions.md)</p>
 <p>[Creating App-V 4.5 Databases Using SQL Scripting](solutions/creating-app-v-45-databases-using-sql-scripting.md)</p>

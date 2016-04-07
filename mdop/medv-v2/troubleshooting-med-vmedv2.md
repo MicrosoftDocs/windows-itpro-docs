@@ -25,7 +25,7 @@ Describes how to access and use the MED-V Administration Toolkit to troubleshoot
 ## Related topics
 
 
-[Microsoft Enterprise Desktop Virtualization 2.0](microsoft-enterprise-desktop-virtualization-20.md)
+[Microsoft Enterprise Desktop Virtualization 2.0](index.md)
 
  
 
