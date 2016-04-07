@@ -1,5 +1,5 @@
 # [Microsoft Desktop Optimization Pack](index.md)
-## [Advanced Group Policy Management] (agpm/)
+## [Advanced Group Policy Management](agpm/)
 ## [Application Virtualization]()
 ### [Application Virtualization 4](appv-v4/)
 ### [Application Virtualization 5](appv-v5/)
