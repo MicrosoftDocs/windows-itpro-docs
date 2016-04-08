@@ -1,5 +1,5 @@
 ---
-title: Customize the OOBE for Surface deployments
+title: Customize the OOBE for Surface deployments (Surface)
 description: This article will walk you through the process of customizing the Surface out-of-box experience for end users in your organization.
 ms.assetid: F6910315-9FA9-4297-8FA8-2C284A4B1D87
 keywords: ["deploy, customize, automate, deployment, network, Pen, pair, boot"]
@@ -17,7 +17,7 @@ This article will walk you through the process of customizing the Surface out-of
 It is common practice in a Windows deployment to customize the user experience for the first startup of deployed computers — the out-of-box experience, or OOBE.
 
 **Note**  
-OOBE is also often used to describe the phase, or configuration pass, of Windows setup during which the user experience is displayed. For more information about the OOBE phase of setup, see [How Configuration Passes Work](../p_adk_online/how-configuration-passes-work-win8.md).
+OOBE is also often used to describe the phase, or configuration pass, of Windows setup during which the user experience is displayed. For more information about the OOBE phase of setup, see [How Configuration Passes Work](http://msdn.microsoft.com/library/windows/hardware/dn898581(v=vs.85).aspx).
 
  
 
@@ -28,9 +28,9 @@ This article provides a summary of the scenarios where a deployment might requir
 **Note**  
 Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](http://go.microsoft.com/fwlink/p/?LinkId=618117) or System Center Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:
 
--   [Deploy Windows 10 with the Microsoft Deployment Toolkit](../deploy/deploy-windows-81-with-the-microsoft-deployment-toolkit.md)
+-   [Deploy Windows 10 with the Microsoft Deployment Toolkit](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)
 
--   [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy/deploy-windows-81-with-system-center-2012-r2-configuration-manager.md)
+-   [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager)
 
  
 

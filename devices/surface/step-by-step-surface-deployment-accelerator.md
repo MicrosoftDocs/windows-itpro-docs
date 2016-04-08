@@ -1,5 +1,5 @@
 ---
-title: Step by step Surface Deployment Accelerator
+title: Step by step Surface Deployment Accelerator (Surface)
 description: This article shows you how to install Microsoft Surface Deployment Accelerator (SDA), configure a deployment share for the deployment of Windows to Surface devices, and perform a deployment to Surface devices.
 ms.assetid: A944FB9C-4D81-4868-AFF6-B9D1F5CF1032
 keywords: ["deploy, configure"]
@@ -225,23 +225,15 @@ After you have prepared the USB drive for boot, the next step is to generate off
 
 19. Delete the following lines from the Bootstrap.ini as shown in Figure 11, and then save the file:
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>UserID=
+    ```
+    UserID=
     UserDomain=
     UserPassword=
     DeployRoot=\\SDASERVER\SDAWin10
     UserID=
     UserDomain=
-    UserPassword=</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    UserPassword=
+    ```
 
     ![figure 11](images/sdasteps-fig11-bootstrap.ini.png)
 
@@ -266,7 +258,7 @@ Your USB drive is now configured as bootable offline media that contains all of 
 ## SDA task sequences
 
 
-The SDA deployment share is configured with all of the resources required to perform a Windows deployment to a Surface device. These resources include Windows source files, image, Surface drivers, and Surface apps. The deployment share also contains two pre-configured task sequences, as shown in Figure 13. These task sequences contain the steps required to perform a deployment to a Surface device using the default Windows image from the installation media or to create a reference image complete with Windows updates and applications. To learn more about task sequences, see [MDT 2013 Update 1 Lite Touch components](../deploy/mdt-2013-lite-touch-components.md).
+The SDA deployment share is configured with all of the resources required to perform a Windows deployment to a Surface device. These resources include Windows source files, image, Surface drivers, and Surface apps. The deployment share also contains two pre-configured task sequences, as shown in Figure 13. These task sequences contain the steps required to perform a deployment to a Surface device using the default Windows image from the installation media or to create a reference image complete with Windows updates and applications. To learn more about task sequences, see [MDT 2013 Update 1 Lite Touch components](http://technet.microsoft.com/en-us/itpro/windows/deploy/mdt-2013-lite-touch-components).
 
 ![figure 13](images/sdasteps-fig13-taskseq.png)
 
@@ -302,7 +294,7 @@ The **2 – Create Windows Reference Image** task sequence is used to perform a 
 Like the **1 – Deploy Microsoft Surface** task sequence, the **2 – Create Windows Reference Image** task sequence performs a deployment of the unaltered Windows image directly from the installation media. Creation of a reference image should always be performed on a virtual machine. Using a virtual machine as your reference system helps to ensure that the resulting image is compatible with different hardware configurations.
 
 **Note**  
-Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information see [Deploy a Windows 10 image using MDT 2013 Update 1](../deploy/deploy-a-windows-81-image-using-mdt-2013.md).
+Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information see [Deploy a Windows 10 image using MDT 2013 Update 1](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
 
  
 

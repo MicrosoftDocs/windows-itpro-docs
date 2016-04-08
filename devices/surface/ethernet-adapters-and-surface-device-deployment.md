@@ -1,5 +1,5 @@
 ---
-title: Ethernet adapters and Surface deployment
+title: Ethernet adapters and Surface deployment (Surface)
 description: This article provides guidance and answers to help you perform a network deployment to Surface devices.
 ms.assetid: 5273C59E-6039-4E50-96B3-426BB38A64C0
 keywords: ["ethernet, deploy, removable, network, connectivity, boot, firmware, device, adapter, PXE boot, USB"]

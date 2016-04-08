@@ -1,5 +1,5 @@
 ---
-title: Surface
+title: Surface (Surface)
 description: .
 ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
 ms.prod: W10
@@ -43,7 +43,7 @@ This library provides guidance to help you deploy Windows on Surface devices, ke
 <td align="left"><p>This article provides a list of the available downloads for Surface devices and links to download the drivers and firmware for your device.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap--eap-fast--and-cisco-leap-on-surface-devices.md)</p></td>
+<td align="left"><p>[Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)</p></td>
 <td align="left"><p>Find out how to enable support for PEAP, EAP-FAST, or Cisco LEAP protocols on your Surface device.</p></td>
 </tr>
 <tr class="odd">
@@ -59,12 +59,12 @@ This library provides guidance to help you deploy Windows on Surface devices, ke
 <td align="left"><p>Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)</p></td>
-<td align="left"><p>Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device.</p></td>
-</tr>
-<tr class="odd">
 <td align="left"><p>[Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)</p></td>
 <td align="left"><p>Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>[Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)</p></td>
+<td align="left"><p>Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device.</p></td>
 </tr>
 </tbody>
 </table>
