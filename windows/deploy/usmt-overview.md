@@ -9,8 +9,6 @@ author: CFaw
 ---
 
 # User State Migration Tool (USMT) Overview
-
-
 You can use User State Migration Tool (USMT) 10.0 to streamline and simplify user state migration during large deployments of Windows operating systems. USMT captures user accounts, user files, operating system settings, and application settings, and then migrates them to a new Windows installation. You can use USMT for both PC replacement and PC refresh migrations. For more information, see [Common Migration Scenarios](usmt-common-migration-scenarios.md).
 
 USMT enables you to do the following:
@@ -22,8 +20,6 @@ USMT enables you to do the following:
 -   Perform offline migrations. You can run migrations offline by using the ScanState command in Windows Preinstallation Environment (WinPE) or you can perform migrations from previous installations of Windows contained in Windows.old directories. For more information about migration types, see [Choose a Migration Store Type](usmt-choose-migration-store-type.md) and [Offline Migration Reference](offline-migration-reference.md).
 
 ## Benefits
-
-
 USMT provides the following benefits to businesses that are deploying Windows operating systems:
 
 -   Safely migrates user accounts, operating system and application settings.
@@ -39,8 +35,6 @@ USMT provides the following benefits to businesses that are deploying Windows op
 -   Increases employee satisfaction with the migration experience.
 
 ## Limitations
-
-
 USMT is intended for administrators who are performing large-scale automated deployments. If you are only migrating the user states of a few computers, you can use [Windows Easy Transfer](http://go.microsoft.com/fwlink/p/?LinkId=140248).
 
 There are some scenarios in which the use of USMT is not recommended. These include:
@@ -50,9 +44,7 @@ There are some scenarios in which the use of USMT is not recommended. These incl
 -   Migrations that require customization on a machine-by-machine basis.
 
 ## Related topics
-
-
-[User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)
+- [User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)
 
  
 
