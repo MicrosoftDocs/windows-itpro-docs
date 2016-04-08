@@ -5,7 +5,7 @@ ms.assetid: 22649663-AC7A-40D8-B1F7-5CAD9E49653D
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jasesso-msft
+author: jasesso
 ---
 
 # Configure Windows Defender in Windows 10
