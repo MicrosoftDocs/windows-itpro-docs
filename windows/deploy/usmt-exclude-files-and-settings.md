@@ -24,7 +24,7 @@ In this topic:
 ## Create a custom .xml file
 We recommend that you create a custom .xml file instead of modifying the default migration .xml files. When you use a custom .xml file, you can keep your changes separate from the default .xml files, which makes it easier to track your modifications.
 
-### &lt;include&gt; and &lt;exclude&gt;
+### `<include>` and `<exclude>`
 The migration .xml files, MigApp.xml, MigDocs, and MigUser.xml, contain the &lt;component&gt; element, which typically represents a self-contained component or an application such as Microsoft® Office Outlook® and Word. To exclude the files and registry settings that are associated with these components, use the &lt;include&gt; and &lt;exclude&gt; elements. For example, you can use these elements to migrate all files and settings with pattern X except files and settings with pattern Y, where Y is more specific than X. For the syntax of these elements, see [USMT XML Reference](usmt-xml-reference.md).
 
 **Note**  
@@ -155,7 +155,7 @@ To exclude a Sample.doc file from any drive on the computer, use the &lt;script&
 #### Examples of how to use XML to exclude files, folders, and registry keys
 Here are some examples of how to use XML to exclude files, folders, and registry keys. For more info, see [USMT XML Reference](usmt-xml-reference.md)
 
-##### Example 1: How to exclude all .mp3 files
+**Example 1: How to exclude all .mp3 files**
 The following .xml file excludes all .mp3 files from the migration:
 
 ``` xml
@@ -174,7 +174,7 @@ The following .xml file excludes all .mp3 files from the migration:
     </component>
 </migration>
 ```
-##### Example 2: How to exclude all of the files on a specific drive
+**Example 2: How to exclude all of the files on a specific drive**
 The following .xml file excludes only the files located on the C: drive.
 
 ``` xml
@@ -193,7 +193,7 @@ The following .xml file excludes only the files located on the C: drive.
     </component>
 </migration>
 ```
-##### Example 3: How to exclude registry keys
+**Example 3: How to exclude registry keys**
 The following .xml file unconditionally excludes the HKEY_CURRENT_USER registry key and all of its subkeys.
 
 ``` xml
@@ -218,9 +218,8 @@ The following .xml file unconditionally excludes the HKEY_CURRENT_USER registry 
    </component>
 </migration>
 ```
-
-##### Example 4: How to Exclude C:\\Windows and C:\\Program Files
-The following .xml file unconditionally excludes the system folders of C:\\Windows and C:\\Program Files. Note that all \*.docx, \*.xls and \*.ppt files will not be migrated because the &lt;unconditionalExclude&gt; element takes precedence over the &lt;include&gt; element.
+**Example 4: How to Exclude `C:\Windows` and `C:\Program Files`**
+The following .xml file unconditionally excludes the system folders of `C:\Windows` and `C:\Program Files`. Note that all \*.docx, \*.xls and \*.ppt files will not be migrated because the &lt;unconditionalExclude&gt; element takes precedence over the &lt;include&gt; element.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -247,7 +246,6 @@ The following .xml file unconditionally excludes the system folders of C:\\Windo
    </component>
 </migration>
 ```
-
 ## Create a Config.xml File
 You can create and modify a Config.xml file if you want to exclude components from the migration. Excluding components using this file is easier than modifying the migration .xml files because you do not need to be familiar with the migration rules and syntax. Config.xml is an optional file that you can create using the **/genconfig** command-line option with the ScanState tool. For example, you can use the Config.xml file to exclude the settings for one of the default applications. In addition, creating and modifying this file is the only way to exclude the operating-system settings that are migrated to computers running Windows.
 
