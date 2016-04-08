@@ -15,7 +15,7 @@ In this topic:
 
 -   [Create a custom .xml file](#create-a-custom-xml-file). You can use the following elements to specify what to exclude:
 
-    -   [include and exclude](#include-and-exclude): You can use the &lt;include&gt; and &lt;exclude&gt; elements to exclude objects with conditions. For example, you can migrate all files located in the C:\\ drive, except any .mp3 files. It is important to remember that [Conflicts and Precedence](usmt-conflicts-and-precedence.md) apply to these elements.
+    -   include and exclude: You can use the &lt;include&gt; and &lt;exclude&gt; elements to exclude objects with conditions. For example, you can migrate all files located in the C:\\ drive, except any .mp3 files. It is important to remember that [Conflicts and Precedence](usmt-conflicts-and-precedence.md) apply to these elements.
 
     -   [unconditionalExclude](#example-1-how-to-migrate-all-files-from-c-except-mp3-files): You can use the &lt;unconditionalExclude&gt; element to globally exclude data. This element takes precedence over all other include and exclude rules in the .xml files. Therefore, this element excludes objects regardless of any other &lt;include&gt; rules that are in the .xml files. For example, you can exclude all .mp3 files on the computer, or you can exclude all files from C:\\UserData.
 
@@ -24,7 +24,7 @@ In this topic:
 ## Create a custom .xml file
 We recommend that you create a custom .xml file instead of modifying the default migration .xml files. When you use a custom .xml file, you can keep your changes separate from the default .xml files, which makes it easier to track your modifications.
 
-### `<include>` and `<exclude>`
+### &lt;include&gt; and &lt;exclude&gt;
 The migration .xml files, MigApp.xml, MigDocs, and MigUser.xml, contain the &lt;component&gt; element, which typically represents a self-contained component or an application such as Microsoft® Office Outlook® and Word. To exclude the files and registry settings that are associated with these components, use the &lt;include&gt; and &lt;exclude&gt; elements. For example, you can use these elements to migrate all files and settings with pattern X except files and settings with pattern Y, where Y is more specific than X. For the syntax of these elements, see [USMT XML Reference](usmt-xml-reference.md).
 
 **Note**  
@@ -155,7 +155,7 @@ To exclude a Sample.doc file from any drive on the computer, use the &lt;script&
 #### Examples of how to use XML to exclude files, folders, and registry keys
 Here are some examples of how to use XML to exclude files, folders, and registry keys. For more info, see [USMT XML Reference](usmt-xml-reference.md)
 
-**Example 1: How to exclude all .mp3 files**
+**Example 1: How to exclude all .mp3 files**<br>
 The following .xml file excludes all .mp3 files from the migration:
 
 ``` xml
@@ -174,7 +174,7 @@ The following .xml file excludes all .mp3 files from the migration:
     </component>
 </migration>
 ```
-**Example 2: How to exclude all of the files on a specific drive**
+**Example 2: How to exclude all of the files on a specific drive**<br>
 The following .xml file excludes only the files located on the C: drive.
 
 ``` xml
@@ -193,7 +193,7 @@ The following .xml file excludes only the files located on the C: drive.
     </component>
 </migration>
 ```
-**Example 3: How to exclude registry keys**
+**Example 3: How to exclude registry keys**<br>
 The following .xml file unconditionally excludes the HKEY_CURRENT_USER registry key and all of its subkeys.
 
 ``` xml
@@ -218,7 +218,7 @@ The following .xml file unconditionally excludes the HKEY_CURRENT_USER registry 
    </component>
 </migration>
 ```
-**Example 4: How to Exclude `C:\Windows` and `C:\Program Files`**
+**Example 4: How to Exclude `C:\Windows` and `C:\Program Files`**<br>
 The following .xml file unconditionally excludes the system folders of `C:\Windows` and `C:\Program Files`. Note that all \*.docx, \*.xls and \*.ppt files will not be migrated because the &lt;unconditionalExclude&gt; element takes precedence over the &lt;include&gt; element.
 
 ``` xml
