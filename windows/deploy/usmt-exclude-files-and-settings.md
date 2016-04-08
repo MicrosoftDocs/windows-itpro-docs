@@ -13,13 +13,13 @@ When you specify the migration .xml files, MigApp.xml, Migdocs, and MigUser.xml,
 
 In this topic:
 
--   [Create a custom .xml file](#options). You can use the following elements to specify what to exclude:
+-   [Create a custom .xml file](#create-a-custom-xml-file). You can use the following elements to specify what to exclude:
 
-    -   [include and exclude](#bkmk-includeexclude): You can use the &lt;include&gt; and &lt;exclude&gt; elements to exclude objects with conditions. For example, you can migrate all files located in the C:\\ drive, except any .mp3 files. It is important to remember that [Conflicts and Precedence](usmt-conflicts-and-precedence.md) apply to these elements.
+    -   [include and exclude](#include-and-exclude): You can use the &lt;include&gt; and &lt;exclude&gt; elements to exclude objects with conditions. For example, you can migrate all files located in the C:\\ drive, except any .mp3 files. It is important to remember that [Conflicts and Precedence](usmt-conflicts-and-precedence.md) apply to these elements.
 
-    -   [unconditionalExclude](#exone): You can use the &lt;unconditionalExclude&gt; element to globally exclude data. This element takes precedence over all other include and exclude rules in the .xml files. Therefore, this element excludes objects regardless of any other &lt;include&gt; rules that are in the .xml files. For example, you can exclude all .mp3 files on the computer, or you can exclude all files from C:\\UserData.
+    -   [unconditionalExclude](#example-1-how-to-migrate-all-files-from-c-except-mp3-files): You can use the &lt;unconditionalExclude&gt; element to globally exclude data. This element takes precedence over all other include and exclude rules in the .xml files. Therefore, this element excludes objects regardless of any other &lt;include&gt; rules that are in the .xml files. For example, you can exclude all .mp3 files on the computer, or you can exclude all files from C:\\UserData.
 
--   [Create a Config.xml file](#co): You can create and modify a Config.xml file to exclude an entire component from the migration. For example, you can use this file to exclude the settings for one of the default applications. In addition, creating and modifying a Config.xml file is the only way to exclude the operating-system settings that are migrated to computers running Windows. Excluding components using this file is easier than modifying the migration .xml files because you do not need to be familiar with the migration rules and syntax.
+-   [Create a Config.xml File](#create-a-config-xml-file): You can create and modify a Config.xml file to exclude an entire component from the migration. For example, you can use this file to exclude the settings for one of the default applications. In addition, creating and modifying a Config.xml file is the only way to exclude the operating-system settings that are migrated to computers running Windows. Excluding components using this file is easier than modifying the migration .xml files because you do not need to be familiar with the migration rules and syntax.
 
 ## Create a custom .xml file
 We recommend that you create a custom .xml file instead of modifying the default migration .xml files. When you use a custom .xml file, you can keep your changes separate from the default .xml files, which makes it easier to track your modifications.
@@ -34,11 +34,11 @@ If you specify an &lt;exclude&gt; rule, always specify a corresponding &lt;inclu
 
 -   [Example 2: How to migrate all files located in C:\\Data except files in C:\\Data\\tmp](#example-2-how-to-migrate-all-files-located-in-c-data-except-files-in-c-data-tmp)
 
--   [Example 3: How to exclude the files in a folder but include all subfolders](#ex3)
+-   [Example 3: How to exclude the files in a folder but include all subfolders](#example-3-how-to-exclude-the-files-in-a-folder-but-include-all-subfolders)
 
--   [Example 4: How to exclude a file from a specific folder](#ex4)
+-   [Example 4: How to exclude a file from a specific folder](#example-4-how-to-exclude-a-file-from-a-specific-folder)
 
--   [Example 5: How to exclude a file from any location](#ex5)
+-   [Example 5: How to exclude a file from any location](#example-5-how-to-exclude-a-file-from-any-location)
 
 ### Example 1: How to migrate all files from C:\\ except .mp3 files
 The following .xml file migrates all files located on the C: drive, except any .mp3 files.
@@ -66,10 +66,9 @@ The following .xml file migrates all files located on the C: drive, except any .
 </migration>
 ```
 ### Example 2: How to migrate all files located in C:\\Data except files in C:\\Data\\tmp
-
 The following .xml file migrates all files and subfolders in C:\\Data, except the files and subfolders in C:\\Data\\tmp.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
         <displayName _locID="miguser.sharedvideo">Test component</displayName>
@@ -91,11 +90,10 @@ The following .xml file migrates all files and subfolders in C:\\Data, except th
 </migration>
 ```
 
-### <a href="" id="ex3"></a>Example 3: How to exclude the files in a folder but include all subfolders
-
+### Example 3: How to exclude the files in a folder but include all subfolders
 The following .xml file migrates any subfolders in C:\\EngineeringDrafts, but excludes all files that are in C:\\EngineeringDrafts.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents without subfolders</displayName>
@@ -117,11 +115,10 @@ The following .xml file migrates any subfolders in C:\\EngineeringDrafts, but ex
 </migration>
 ```
 
-### <a href="" id="ex4"></a>Example 4: How to exclude a file from a specific folder
-
+### Example 4: How to exclude a file from a specific folder
 The following .xml file migrates all files and subfolders in C:\\EngineeringDrafts, except for the Sample.doc file in C:\\EngineeringDrafts.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents except Sample.doc</displayName>
@@ -143,25 +140,25 @@ The following .xml file migrates all files and subfolders in C:\\EngineeringDraf
 </migration>
 ```
 
-### <a href="" id="ex5"></a>Example 5: How to exclude a file from any location
-
+### Example 5: How to exclude a file from any location
 To exclude a Sample.doc file from any location on the C: drive, use the &lt;pattern&gt; element. If multiple files exist with the same name on the C: drive, all of these files will be excluded.
 
-``` syntax
+``` xml
 <pattern type="File"> C:\* [Sample.doc] </pattern>
 ```
 
 To exclude a Sample.doc file from any drive on the computer, use the &lt;script&gt; element. If multiple files exist with the same name, all of these files will be excluded.
 
-``` syntax
+``` xml
 <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>
 ```
+#### Examples of how to use XML to exclude files, folders, and registry keys
+Here are some examples of how to use XML to exclude files, folders, and registry keys. For more info, see [USMT XML Reference](usmt-xml-reference.md)
 
-[USMT XML Reference](usmt-xml-reference.md)Example 1: How to exclude all .mp3 files
-
+##### Example 1: How to exclude all .mp3 files
 The following .xml file excludes all .mp3 files from the migration:
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
   <component context="System" type="Documents">
         <displayName>Test</displayName>
@@ -177,12 +174,10 @@ The following .xml file excludes all .mp3 files from the migration:
     </component>
 </migration>
 ```
-
-### <a href="" id="extwo"></a>Example 2: How to exclude all of the files on a specific drive
-
+##### Example 2: How to exclude all of the files on a specific drive
 The following .xml file excludes only the files located on the C: drive.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/allfiles">
     <component type="Documents" context="System">
         <displayName>Test</displayName>
@@ -198,12 +193,10 @@ The following .xml file excludes only the files located on the C: drive.
     </component>
 </migration>
 ```
+##### Example 3: How to exclude registry keys
+The following .xml file unconditionally excludes the HKEY_CURRENT_USER registry key and all of its subkeys.
 
-### <a href="" id="exthree"></a>Example 3: How to exclude registry keys
-
-The following .xml file unconditionally excludes the HKey\_Current\_User registry key and all of its subkeys.
-
-``` syntax
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
    <component type="Documents" context="User">
@@ -226,11 +219,10 @@ The following .xml file unconditionally excludes the HKey\_Current\_User registr
 </migration>
 ```
 
-### <a href="" id="exfour"></a>Example 4: How to Exclude C:\\Windows and C:\\Program Files
-
+##### Example 4: How to Exclude C:\\Windows and C:\\Program Files
 The following .xml file unconditionally excludes the system folders of C:\\Windows and C:\\Program Files. Note that all \*.docx, \*.xls and \*.ppt files will not be migrated because the &lt;unconditionalExclude&gt; element takes precedence over the &lt;include&gt; element.
 
-``` syntax
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
    <component type="Documents" context="System">
@@ -256,9 +248,7 @@ The following .xml file unconditionally excludes the system folders of C:\\Windo
 </migration>
 ```
 
-## <a href="" id="co"></a>Create a Config.xml File
-
-
+## Create a Config.xml File
 You can create and modify a Config.xml file if you want to exclude components from the migration. Excluding components using this file is easier than modifying the migration .xml files because you do not need to be familiar with the migration rules and syntax. Config.xml is an optional file that you can create using the **/genconfig** command-line option with the ScanState tool. For example, you can use the Config.xml file to exclude the settings for one of the default applications. In addition, creating and modifying this file is the only way to exclude the operating-system settings that are migrated to computers running Windows.
 
 -   **To exclude the settings for a default application:** Specify `migrate="no"` for the application under the &lt;Applications&gt; section of the Config.xml file.
@@ -272,14 +262,9 @@ See [Config.xml File](usmt-configxml-file.md) for more information.
 **Note**  
 To exclude a component from the Config.xml file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the Config.xml file will not exclude the component from your migration.
 
- 
-
 ## Related topics
-
-
-[Customize USMT XML Files](usmt-customize-xml-files.md)
-
-[USMT XML Reference](usmt-xml-reference.md)
+- [Customize USMT XML Files](usmt-customize-xml-files.md)
+- [USMT XML Reference](usmt-xml-reference.md)
 
  
 
