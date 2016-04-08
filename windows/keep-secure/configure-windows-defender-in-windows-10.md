@@ -5,7 +5,7 @@ ms.assetid: 22649663-AC7A-40D8-B1F7-5CAD9E49653D
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: jasesso-msft
 ---
 
 # Configure Windows Defender in Windows 10
@@ -153,7 +153,9 @@ The Microsoft Active Protection Service can be configured with the following *Gr
 Use the Windowsdefender.adm *Group Policy* template file to control the policy settings for Windows Defender in Windows 10:
 
 Policy setting: **Configure Microsoft SpyNet Reporting**
+
 Registry key name: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SpyNet\\SpyNetReporting**
+
 Policy description: **Adjusts membership in Microsoft Active Protection Service**
 
 You can also configure preferences using the following PowerShell parameters:
