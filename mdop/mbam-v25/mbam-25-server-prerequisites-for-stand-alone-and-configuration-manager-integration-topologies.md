@@ -14,6 +14,11 @@ If you are deploying MBAM with System Center Configuration Manager, you must com
 
 For a list of the supported hardware and operating systems for MBAM, see [MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md).
 
+**Important**  
+If BitLocker was used without MBAM, you must decrypt the drive and then clear TPM using tpm.msc. MBAM cannot take ownership of TPM if the client PC is already encrypted and the TPM owner password created.
+
+ 
+
 ## Required MBAM roles and accounts
 
 

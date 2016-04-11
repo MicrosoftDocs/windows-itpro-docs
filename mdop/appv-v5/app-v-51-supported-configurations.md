@@ -444,14 +444,16 @@ The App-V client supports the following versions of System Center Configuration 
 
 The following App-V and System Center Configuration Manager version matrix shows all officially supported combinations of App-V and Configuration Manager.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -461,120 +463,154 @@ The following App-V and System Center Configuration Manager version matrix shows
 <th align="left">System Center 2012 Configuration Manager SP1</th>
 <th align="left">System Center 2012 R2 Configuration Manager</th>
 <th align="left">System Center 2012 R2 Configuration Manager SP1</th>
+<th align="left">System Center 2012 Configuration Manager SP2</th>
+<th align="left">System Center Configuration Manager Version 1511</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>App-V 4.5</p></td>
 <td align="left"><p>R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 4.5 CU1</p></td>
 <td align="left"><p>R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>App-V 4.5 SP1</p></td>
 <td align="left"><p>R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 4.5 SP2</p></td>
 <td align="left"><p>R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>App-V 4.6</p></td>
 <td align="left"><p>R2, SP1</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 4.6 SP1</p></td>
 <td align="left"><p>R2, R3, SP2</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>App-V 4.6 SP2</p></td>
 <td align="left"><p>R2, R3, SP2</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 4.6 SP3</p></td>
 <td align="left"><p>R2, R3, SP2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>App-V 5.0</p></td>
 <td align="left"><p>MSI-Wrapper-Only</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 5.0 SP1</p></td>
 <td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>App-V 5.0 SP2</p></td>
 <td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>CU4 - 2922875</p></td>
-<td align="left"><p>CU4 - 2922875</p></td>
-<td align="left"><p>CU1 - 2938441</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>2012 SP1 CU4</p>
+<p>App-V 5.0 HF5 or later</p></td>
+<td align="left"><p>2012 R2 CU1</p>
+<p>App-V 5.0 HF5 or later</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>With App-V 5.0 SP2 HF5 or later</p></td>
+<td align="left"><p>With App-V 5.0 SP2 HF5 or later</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 5.0 SP2 HF4</p></td>
 <td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>CU4 - 2922875</p></td>
-<td align="left"><p>CU4 - 2922875</p></td>
-<td align="left"><p>CU1 - 2938441</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>2012 SP1 CU4</p>
+<p>App-V 5.0 HF5 or later</p></td>
+<td align="left"><p>2012 R2 CU1</p>
+<p>App-V 5.0 HF5 or later</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Requires HF5 or later</p></td>
+<td align="left"><p>Requires HF5 or later</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>App-V 5.0 SP3</p></td>
 <td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>CU4 - 2922875</p></td>
-<td align="left"><p>CU4 - 2922875</p></td>
-<td align="left"><p>CU1 - 2938441</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>2012 SP1 CU4</p></td>
+<td align="left"><p>2012 R2 CU1</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>App-V 5.1</p></td>
 <td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>CU4 - 2922875</p></td>
-<td align="left"><p>CU4 - 2922875</p></td>
-<td align="left"><p>CU1 - 2938441</p></td>
-<td align="left"><p>X</p></td>
+<td align="left"><p>No</p></td>
+<td align="left"><p>2012 SP1 CU4</p></td>
+<td align="left"><p>2012 R2 CU1</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
+<td align="left"><p>Yes</p></td>
 </tr>
 </tbody>
 </table>

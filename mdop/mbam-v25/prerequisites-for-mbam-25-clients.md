@@ -66,6 +66,11 @@ Before you install the MBAM Client software on end users' computers, ensure that
 
  
 
+**Important**  
+If BitLocker was used without MBAM, you must decrypt the drive and then clear TPM using tpm.msc. MBAM cannot take ownership of TPM if the client PC is already encrypted and the TPM owner password created.
+
+ 
+
 ## Got a suggestion for MBAM?
 
 
