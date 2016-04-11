@@ -1,6 +1,6 @@
 ---
-title: Manage Windows 10 Start layout options (Windows 10)
-description: Organizations might want to deploy a customized Start screen and menu to devices running Windows 10 Enterprise or Windows 10 Education.
+title: Manage Windows 10 Start layout and taskbar options (Windows 10)
+description: Organizations might want to deploy a customized Start screen, menu, and taskbar to devices running Windows 10 Enterprise or Windows 10 Education.
 ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
 keywords: ["start screen", "start menu"]
 ms.prod: W10
@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Manage Windows 10 Start layout options
+# Manage Windows 10 Start layout and taskbar options
 
 
 **Applies to**
@@ -20,7 +20,9 @@ author: jdeckerMS
 
 -   [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
 
-Organizations might want to deploy a customized Start screen and menu to devices running Windows 10 Enterprise or Windows 10 Education. A standard Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes.
+Organizations might want to deploy a customized Start screen, Start menu, and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps pinned by default.
+
+## Start options
 
 ![start layout sections](images/startannotated.png)
 
@@ -29,11 +31,6 @@ Some areas of Start can be managed using Group Policy. The layout of Start tiles
 The following table lists the different parts of Start and any applicable policy settings or Settings options. Group Policy settings are in the **User Configuration**\\**Administrative Templates**\\**Start Menu and Taskbar** path except where a different path is listed in the table.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Start</th>
@@ -120,7 +117,16 @@ The following table lists the different parts of Start and any applicable policy
 </tbody>
 </table>
 
- 
+ ## Taskbar options
+
+There are four categories of apps that might be pinned to a taskbar:
+* Default Windows apps, pinned during operating system installation
+* OEM apps, pinned by the OEM as part of the operating system image 
+* Apps pinned by the enterprise, such as in an unattended Windows setup
+
+   **Note**  
+   The earlier method of using [TaskbarLinks](http://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
+* Apps pinned by the user
 
 ## Related topics
 
