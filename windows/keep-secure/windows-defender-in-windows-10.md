@@ -5,7 +5,7 @@ ms.assetid: 6A9EB85E-1F3A-40AC-9A47-F44C4A2B55E2
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: jasesso
 ---
 
 # Windows Defender in Windows 10
