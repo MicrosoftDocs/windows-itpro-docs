@@ -32,7 +32,7 @@ To configure the taskbar:
 1. Create the XML file.
    * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use Export-StartLayout to create the XML, and then add the `<TaskbarLayout>` section from the following sample to the file and edit it to your specific requirements.
    * If you are only configuring the taskbar, use the following sample to create LayoutModification.xml, and then edit the file for your specific requirements.
-2. Apply LayoutModification.xml to devices using [Group Policy](customize-windows-10=start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
+2. Apply LayoutModification.xml to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
 ### Sample XML
 
