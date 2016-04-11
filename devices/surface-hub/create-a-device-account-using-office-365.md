@@ -194,7 +194,7 @@ Now that you're connected to the online services, you can finish setting up the 
 
     ![image showing powershell cmdlet.](images/setupdeviceaccto365-25.png)
 
-4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](prepare-your-environment-for-surface-hub-how-do-i-exchange-properties.md) section.
+4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
     ``` syntax
     Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
@@ -203,7 +203,7 @@ Now that you're connected to the online services, you can finish setting up the 
 
     ![image showing powershell cmdlet.](images/setupdeviceaccto365-26.png)
 
-5.  If you decide to have the password not expire, you can set that with PowerShell cmdlets too. See [Password management](prepare-your-environment-for-surface-hub-how-do-i-password-management.md) for more information.
+5.  If you decide to have the password not expire, you can set that with PowerShell cmdlets too. See [Password management](password-management-for-surface-hub-device-accounts.md) for more information.
 
     ``` syntax
     Set-MsolUser -UserPrincipalName $strEmail -PasswordNeverExpires $True
@@ -222,63 +222,24 @@ In order to enable Skype for Business, your environment will need to meet the fo
 
 1.  Start by creating a remote PowerShell session from a PC.
 
-    <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>Import-Module LyncOnlineConnector  
+    ```PowerShell
+    Import-Module LyncOnlineConnector  
     $cssess=New-CsOnlineSession -Credential $cred  
-    Import-PSSession $cssess -AllowClobber</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    Import-PSSession $cssess -AllowClobber
+    ```
 
 2.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
-    <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
-    &quot;sippoolbl20a04.infra.lync.com&quot; -SipAddressType EmailAddress</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```PowerShell
+    Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
+    "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+    ```
 
     If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
-    <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```PowerShell
+    Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
+    ```
 
 ## <a href="" id="create-device-acct-eac"></a>Create a device account using the Exchange Admin Center
 
@@ -383,7 +344,7 @@ Now that you're connected to the online services, you can finish setting up the 
     Set-Mailbox $strEmail -RoomMailboxPassword (ConvertTo-SecureString  -String "<your password>" -AsPlainText -Force) -EnableRoomMailboxAccount $true
     ```
 
-4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](prepare-your-environment-for-surface-hub-how-do-i-exchange-properties.md) section.
+4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
     ``` syntax
     Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
@@ -402,7 +363,7 @@ Now that you're connected to the online services, you can finish setting up the 
     Set-ADUser $strAlias -Enabled $True
     ```
 
-7.  If you decide to have the password not expire, you can set that with PowerShell cmdlets too. See [Password management](prepare-your-environment-for-surface-hub-how-do-i-password-management.md) for more information.
+7.  If you decide to have the password not expire, you can set that with PowerShell cmdlets too. See [Password management](password-management-for-surface-hub-device-accounts.md) for more information.
 
     ``` syntax
     Set-ADUser $strAlias -PasswordNeverExpires $True
@@ -421,63 +382,24 @@ In order to enable Skype for Business, your environment will need to meet the fo
 
 1.  Start by creating a remote PowerShell session from a PC.
 
-    <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>Import-Module LyncOnlineConnector  
+    ```PowerShell
+    Import-Module LyncOnlineConnector  
     $cssess=New-CsOnlineSession -Credential $cred  
-    Import-PSSession $cssess -AllowClobber</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    Import-PSSession $cssess -AllowClobber
+    ```
 
 2.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
-    <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
-    &quot;sippoolbl20a04.infra.lync.com&quot; -SipAddressType EmailAddress</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```PowerShell
+    Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
+    "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+    ```
 
     If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
-    <span codelanguage="PowerShell"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">PowerShell</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```PowerShell
+    Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
+    ```
 
  
 

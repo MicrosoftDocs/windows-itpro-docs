@@ -15,7 +15,7 @@ By now, you should have gone through all of the previous steps:
 
 -   [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md)
 -   [Physically install your Surface Hub device](physically-install-your-surface-hub-device.md), and
--   [Setup worksheet](prepare-your-environment-for-surface-hub-setup-worksheet.md)
+-   [Setup worksheet](setup-worksheet-surface-hub.md)
 
 Assuming that's the case, first run should be both simple and quick.
 The normal procedure goes through six steps:
@@ -38,7 +38,7 @@ Each of these sections also contains information about paths you might take when
 
 This is the first screen you'll see when you power up the Surface Hub for the first time. It's where you input localization information for your device.
 
-**Note**  This is also where you begin the optional process of deploying a provisioning package. See [Create provisioning packages](prepare-your-environment-for-surface-hub-create-provisioning-packages-for-certificates.md) if that's what you're doing.
+**Note**  This is also where you begin the optional process of deploying a provisioning package. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) if that's what you're doing.
 
  
 
@@ -55,7 +55,7 @@ If the default values shown are correct, then you can click **Next** to go on. O
 
 ### What happens?
 
-**Note**  Once the settings on this page are entered, you can't come back to this screen unless you reset the device (see [Device reset](device-reset.md)). Make sure that the settings are properly configured before proceeding.
+**Note**  Once the settings on this page are entered, you can't come back to this screen unless you reset the device (see [Device reset](device-reset-suface-hub.md)). Make sure that the settings are properly configured before proceeding.
 
  
 
@@ -76,7 +76,7 @@ This screen is shown only if the device fails to detect a wired network. If you 
 
 -   You can select one of the wireless networks shown. If the network is secured, you'll be taken to a login page. See [Wireless network setup](#wireless) for details.
 -   Click **Skip this step** to skip connecting to a network. You'll be taken to the [Set up for you page](#set-up-for-you).
-    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](manage-surface-hub-wireless-network-management.md)).
+    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
 
      
 
@@ -84,7 +84,7 @@ This screen is shown only if the device fails to detect a wired network. If you 
 
 ### What happens?
 
-If the device has a wired connection when it starts, and can establish a network or Internet connection, then this page will not be displayed. If you want to connect the device to a wireless connection, make sure no Ethernet cable is plugged in at first run, which will bring you to this screen. No matter what you choose to set up now, you can [use Settings](manage-surface-hub-wireless-network-management.md) to set up different connections later.
+If the device has a wired connection when it starts, and can establish a network or Internet connection, then this page will not be displayed. If you want to connect the device to a wireless connection, make sure no Ethernet cable is plugged in at first run, which will bring you to this screen. No matter what you choose to set up now, you can [use Settings](wireless-network-management-for-surface-hub.md) to set up different connections later.
 
 If you want to connect to a secured wireless network from this page, click on the network of your choice, and then provide the necessary information (password or account credentials) to connect. See [Wireless network setup](#wireless).
 
@@ -111,7 +111,7 @@ This page will be shown when the device detects a wired connection with limited 
 
 -   You can select a wireless network to use instead of the limited wired connection.
 -   You can skip connecting to a network by selecting **Skip this step**. You'll be taken to the [Set up for you page](#set-up-for-you).
-    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](manage-surface-hub-wireless-network-management.md)).
+    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
 
      
 
@@ -136,7 +136,7 @@ When you click **Next**, the device will attempt to connect to the proxy server.
 
 You can skip connecting to a network by selecting **Skip this step**. You'll be taken to the [Set up for you page](#set-up-for-you).
 
-**Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](manage-surface-hub-wireless-network-management.md)).
+**Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
 
  
 
@@ -160,7 +160,7 @@ The settings shown on the page have already been made, and can't be changed unti
 ## <a href="" id="device-account"></a>Device account page
 
 
-On this page, the Surface Hub will ask for credentials for the device account that you previously configured. (See [Create and test a device account](prepare-your-environment-for-surface-hub-create-and-test-a-device-account.md).) The Surface Hub will attempt to discover various properties of the account, and may ask for more information on another page if it does not succeed.
+On this page, the Surface Hub will ask for credentials for the device account that you previously configured. (See [Create and test a device account](create-and-test-a-device-account-surface-hub.md).) The Surface Hub will attempt to discover various properties of the account, and may ask for more information on another page if it does not succeed.
 
 **Note**  This section does not cover specific errors that can happen during first run. See [Troubleshoot Surface Hub](troubleshoot-surface-hub.md) for more information on errors.
 
@@ -414,7 +414,7 @@ This page will attempt to create a new admin account using the credentials that 
 ## <a href="" id="update-surface-hub"></a>Update the Surface Hub
 
 
-**Important**  Before you do the updates, make sure you read [Save your BitLocker key](manage-surface-hub-bitlocker.md) in order to make sure you have a backup of the key.
+**Important**  Before you do the updates, make sure you read [Save your BitLocker key](save-bitlocker-key-surface-hub.md) in order to make sure you have a backup of the key.
 
  
 

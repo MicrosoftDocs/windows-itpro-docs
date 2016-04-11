@@ -25,7 +25,7 @@ Initiating a reset will return the device to the last cumulative Windows update,
 -   Local admins on the device
 -   Configurations from MDM or the Settings app.
 
-After the reset, you'll be taken through the [first run program](set-up-your-surface-hub--configure--first-run-program.md) again.
+After the reset, you'll be taken through the [first run program](first-run-program-surface-hub.md) again.
 
 ## Related topics
 

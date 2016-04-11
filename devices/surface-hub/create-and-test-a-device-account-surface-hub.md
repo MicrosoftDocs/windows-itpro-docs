@@ -30,7 +30,7 @@ Every device account is unique to a single Surface Hub, and requires some setup:
 
 You can think of a device account as the resource account that people recognize as a conference room’s or meeting space’s account. When you want to schedule a meeting using that conference room, you invite the account to that meeting. In order to use the Surface Hub most effectively, you do the same with the device account that's assigned to each one.
 
-If you already have a resource mailbox account set up for the meeting space where you’re putting a Surface Hub, you can change that resource account into a device account. Once that’s done, all you need to do is add the device account to a Surface Hub. See step 2 of either [On-premises deployment](prepare-your-environment-for-surface-hub-how-do-i-on-premises-deployment.md) or [Online deployment (Office 365)](prepare-your-environment-for-surface-hub-how-do-i-online-deployment.md).
+If you already have a resource mailbox account set up for the meeting space where you’re putting a Surface Hub, you can change that resource account into a device account. Once that’s done, all you need to do is add the device account to a Surface Hub. See step 2 of either [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md) or [Online deployment (Office 365)](online-deployment-surface-hub-device-accounts.md).
 
 The following sections will describe how to create and test a device account before configuring your Surface Hub.
 
@@ -90,7 +90,7 @@ While the properties for the basic configuration will allow the device account t
 <tr class="odd">
 <td align="left"><p>Certificate-based authentication</p></td>
 <td align="left"><p>Certificates may be required for both ActiveSync and Skype for Business. To deploy certificates, you need to use provisioning packages or an MDM solution.</p>
-<p>See [Create provisioning packages](prepare-your-environment-for-surface-hub-create-provisioning-packages-for-certificates.md) for details.</p></td>
+<p>See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) for details.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Allowed device IDs (ActiveSync Device ID)</p></td>
@@ -104,7 +104,7 @@ While the properties for the basic configuration will allow the device account t
 
 ### How do I set up the account?
 
-The best way to set up device accounts is to configure them using remote PowerShell. We provide several PowerShell scripts that will help create new device accounts, or validate existing resource accounts you have in order to help you turn them into compatible Surface Hub device accounts. These PowerShell scripts, and instructions for their use, are in [Appendix: PowerShell](appendix-a--powershell.md).
+The best way to set up device accounts is to configure them using remote PowerShell. We provide several PowerShell scripts that will help create new device accounts, or validate existing resource accounts you have in order to help you turn them into compatible Surface Hub device accounts. These PowerShell scripts, and instructions for their use, are in [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md).
 
 You can check online for updated versions at [Surface Hub device account scripts](http://aka.ms/surfacehubscripts).
 
@@ -114,19 +114,19 @@ Your infrastructure will likely fall into one of three configurations. Which con
 
 ![](images/deploymentoptions-01.png)
 
--   [Online deployment (Office 365)](prepare-your-environment-for-surface-hub-how-do-i-online-deployment.md): Your organization’s environment is deployed entirely on Office 365.
--   [On-premises deployment](prepare-your-environment-for-surface-hub-how-do-i-on-premises-deployment.md): Your organization has servers that it controls, where Active Directory, Exchange, and Skype for Business (or Lync) are hosted.
--   [Hybrid deployment](prepare-your-environment-for-surface-hub-how-do-i-hybrid-deployment.md): Your organization has a mix of services, with some hosted on-premises and some hosted online through Office 365.
+-   [Online deployment (Office 365)](online-deployment-surface-hub-device-accounts.md): Your organization’s environment is deployed entirely on Office 365.
+-   [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md): Your organization has servers that it controls, where Active Directory, Exchange, and Skype for Business (or Lync) are hosted.
+-   [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md): Your organization has a mix of services, with some hosted on-premises and some hosted online through Office 365.
 
-If you prefer to use the Office 365 UI over PowerShell cmdlets, some steps can be performed manually. See [Creating a device account using Office 365](prepare-your-environment-for-surface-hub-how-do-i-creating-a-device-account-using-office-365.md).
+If you prefer to use the Office 365 UI over PowerShell cmdlets, some steps can be performed manually. See [Creating a device account using Office 365](create-a-device-account-using-office-365.md).
 
 ### Device account resources
 
 These sections describe resources used by the Surface Hub device account.
 
--   [Exchange properties](prepare-your-environment-for-surface-hub-how-do-i-exchange-properties.md): The Exchange properties of the device account must be set to particular values for the Surface Hub to work properly.
--   [Applying ActiveSync policies to device accounts](prepare-your-environment-for-surface-hub-how-do-i-applying-activesync-policies.md): The Surface Hub uses ActiveSync to sync both mail and its meeting calendar.
--   [Password management](prepare-your-environment-for-surface-hub-how-do-i-password-management.md): Every device account requires a password to authenticate. This section describes your options for managing this password.
+-   [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md): The Exchange properties of the device account must be set to particular values for the Surface Hub to work properly.
+-   [Applying ActiveSync policies to device accounts](apply-activesync-policies-for-surface-hub-device-accounts.md): The Surface Hub uses ActiveSync to sync both mail and its meeting calendar.
+-   [Password management](password-management-for-surface-hub-device-accounts.md): Every device account requires a password to authenticate. This section describes your options for managing this password.
 
 ## In this section
 
@@ -144,31 +144,31 @@ These sections describe resources used by the Surface Hub device account.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Online deployment](prepare-your-environment-for-surface-hub-how-do-i-online-deployment.md)</p></td>
+<td align="left"><p>[Online deployment](online-deployment-surface-hub-device-accounts.md)</p></td>
 <td align="left"><p>This topic has instructions for adding a device account for your Surface Hub when you have a pure, online deployment.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[On-premises deployment](prepare-your-environment-for-surface-hub-how-do-i-on-premises-deployment.md)</p></td>
+<td align="left"><p>[On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md)</p></td>
 <td align="left"><p>This topic explains how you add a device account for your Surface Hub when you have a single-forest, on-premises deployment.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Hybrid deployment](prepare-your-environment-for-surface-hub-how-do-i-hybrid-deployment.md)</p></td>
-<td align="left"><p>A hybrid deployment requires special processing in order to set up a device account for your Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#hybrid-exchange-on-prem), and [Exchange hosted online](#hybrid-exchange-online). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a--powershell.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided PowerShell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a--powershell.md#acct-verification-ps-scripts).)</p></td>
+<td align="left"><p>[Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md)</p></td>
+<td align="left"><p>A hybrid deployment requires special processing in order to set up a device account for your Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#hybrid-exchange-on-prem), and [Exchange hosted online](#hybrid-exchange-online). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided PowerShell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a--powershell.md#acct-verification-ps-scripts).)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Create a device account using UI](prepare-your-environment-for-surface-hub-how-do-i-creating-a-device-account-using-office-365.md)</p></td>
+<td align="left"><p>[Create a device account using UI](create-a-device-account-using-office-365.md)</p></td>
 <td align="left"><p>If you prefer to use a graphical user interface, you can create a device account for your Surface Hub with either the [Office 365 UI](#create-device-acct-o365) or the [Exchange Admin Center](#create-device-acct-eac).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Microsoft Exchange properties](prepare-your-environment-for-surface-hub-how-do-i-exchange-properties.md)</p></td>
+<td align="left"><p>[Microsoft Exchange properties](exchange-properties-for-surface-hub-device-accounts.md)</p></td>
 <td align="left"><p>Some Exchange properties of the device account must be set to particular values to have the best meeting experience on Surface Hub. The following table lists various Exchange properties based on PowerShell cmdlet parameters, their purpose, and the values they should be set to.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Applying ActiveSync policies to device accounts](prepare-your-environment-for-surface-hub-how-do-i-applying-activesync-policies.md)</p></td>
+<td align="left"><p>[Applying ActiveSync policies to device accounts](apply-activesync-policies-for-surface-hub-device-accounts.md)</p></td>
 <td align="left"><p>The Surface Hub's device account uses ActiveSync to sync mail and calendar. This allows people to join and start scheduled meetings from the Surface Hub, and allows them to email any whiteboards they have made during their meeting.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Password management](prepare-your-environment-for-surface-hub-how-do-i-password-management.md)</p></td>
+<td align="left"><p>[Password management](password-management-for-surface-hub-device-accounts.md)</p></td>
 <td align="left"><p>Every Surface Hub device account requires a password to authenticate and enable features on the device.</p></td>
 </tr>
 </tbody>

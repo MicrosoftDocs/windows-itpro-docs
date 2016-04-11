@@ -161,47 +161,47 @@ Every Surface Hub can be managed locally by an admin who physically logs in to t
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Accessibility](manage-surface-hub-accessibility.md)</p></td>
+<td align="left"><p>[Accessibility](accessibility-surface-hub.md)</p></td>
 <td align="left"><p>Accessibility settings for the Surface Hub can be changed by using the Settings app. You'll find them under <strong>Ease of Access</strong>. Your Surface Hub has the same accessibility options as Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Change the Surface Hub device account](manage-surface-hub-changing-the-device-account.md)</p></td>
+<td align="left"><p>[Change the Surface Hub device account](change-surface-hub-device-account.md)</p></td>
 <td align="left"><p>You can change the device account in Settings to either add an account if one was not already provisioned, or to change any properties of an account that was already provisioned.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Device reset](device-reset.md)</p></td>
+<td align="left"><p>[Device reset](device-reset-suface-hub.md)</p></td>
 <td align="left"><p>You may wish to reset your Surface Hub.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Install apps on your Surface Hub](manage-surface-hub-installing-apps.md)</p></td>
+<td align="left"><p>[Install apps on your Surface Hub](install-apps-on-surface-hub.md)</p></td>
 <td align="left"><p>Admins can install apps can from either the Windows Store or the Windows Store for Business.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Manage settings with a local admin account](manage-surface-hub-locally-managing-settings.md)</p></td>
+<td align="left"><p>[Manage settings with a local admin account](manage-settings-with-local-admin-account-surface-hub.md)</p></td>
 <td align="left"><p>A local admin account will be set up on every Surface Hub as part of the first run program. The only way to change the local admin options that you chose at that time is to reset the device.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Manage settings with an MDM provider](manage-surface-hub-remotely-managing-settings.md)</p></td>
+<td align="left"><p>[Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md)</p></td>
 <td align="left"><p>Surface Hub provides an enterprise management solution to help IT administrators manage policies and business applications on these devices using a mobile device management (MDM) solution.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Monitor your Surface Hub](manage-surface-hub-monitoring-your-surface-hubs.md)</p></td>
+<td align="left"><p>[Monitor your Surface Hub](monitor-surface-hub.md)</p></td>
 <td align="left"><p>Monitoring for Surface Hub devices is enabled through Microsoft Operations Management Suite (OMS).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Save your BitLocker key](manage-surface-hub-bitlocker.md)</p></td>
+<td align="left"><p>[Save your BitLocker key](save-bitlocker-key-surface-hub.md)</p></td>
 <td align="left"><p>Every Surface Hub is automatically set up with BitLocker drive encryption software. Microsoft strongly recommends that you make sure you back up your BitLocker recovery keys.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Using a room control system](manage-surface-hub-using-serial-control.md)</p></td>
+<td align="left"><p>[Using a room control system](use-room-control-system-with-surface-hub.md)</p></td>
 <td align="left"><p>Room control systems can be used with your Surface Hub.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Windows updates](manage-surface-hub-windows-updates.md)</p></td>
+<td align="left"><p>[Windows updates](manage-windows-updates-for-surface-hub.md)</p></td>
 <td align="left"><p>You can manage Windows updates on your Surface Hub by setting the maintenance window, deferring updates, or using WSUS.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Wireless network management](manage-surface-hub-wireless-network-management.md)</p></td>
+<td align="left"><p>[Wireless network management](wireless-network-management-for-surface-hub.md)</p></td>
 <td align="left"><p>Surface Hub offers two options for network connectivity to your corporate network and Internet: wireless, and wired. While both provide network access, we recommend you use a wired connection.</p></td>
 </tr>
 </tbody>

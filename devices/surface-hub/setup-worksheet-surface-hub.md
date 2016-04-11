@@ -99,7 +99,7 @@ admin1, \#MyPassw0rd
 
 USB drive
 
-If you know before first run that you want to install certificates or universal apps, follow the steps in [Create provisioning packages](prepare-your-environment-for-surface-hub-create-provisioning-packages-for-certificates.md). Your provisioning packages will be created on a USB drive.
+If you know before first run that you want to install certificates or universal apps, follow the steps in [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md). Your provisioning packages will be created on a USB drive.
 
  
 

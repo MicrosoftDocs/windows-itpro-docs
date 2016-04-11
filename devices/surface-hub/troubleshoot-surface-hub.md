@@ -54,7 +54,7 @@ Calendar is not showing on the Welcome screen or message "Appointments of date (
 
 The device account's password has expired and is no longer valid.
 
-Update the account's password in Settings. Also see [Password management](prepare-your-environment-for-surface-hub-how-do-i-password-management.md).
+Update the account's password in Settings. Also see [Password management](password-management-for-surface-hub-device-accounts.md).
 
 Calendar is not showing on the Welcome screen or message "Appointments of date (account policy)" is being displayed.
 

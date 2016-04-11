@@ -96,7 +96,7 @@ Review these dependencies to make sure Surface Hub features will work in your en
 </tr>
 <tr class="odd">
 <td align="left"><p>Device account</p></td>
-<td align="left"><p>The device account is an Active Directory and/or Azure AD account that enables several key features for the Surface Hub. Learn more about device accounts in [Create and test a device account](prepare-your-environment-for-surface-hub-create-and-test-a-device-account.md).</p></td>
+<td align="left"><p>The device account is an Active Directory and/or Azure AD account that enables several key features for the Surface Hub. Learn more about device accounts in [Create and test a device account](create-and-test-a-device-account-surface-hub.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Exchange and Exchange ActiveSync</p></td>
@@ -138,7 +138,7 @@ In some ways, adding your new Surface Hub is just like adding any other Microsof
 
 1.  [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md)
 2.  [Physically install your Surface Hub device](physically-install-your-surface-hub-device.md)
-3.  [Run the Surface Hub first-run setup program (OOBE)](set-up-your-surface-hub--configure--first-run-program.md)
+3.  [Run the Surface Hub first-run setup program (OOBE)](first-run-program-surface-hub.md)
 
 After you have your Surface Hub running in your organization, you’ll need info about:
 

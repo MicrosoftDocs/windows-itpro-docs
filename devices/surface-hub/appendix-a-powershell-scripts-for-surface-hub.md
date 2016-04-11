@@ -173,7 +173,7 @@ The account creation scripts cannot modify an already existing account, but can 
 
 ### <a href="" id="create-on-premise-ps-scripts"></a>Create an on-premise account
 
-Creates an account as described in [On-premises deployment](prepare-your-environment-for-surface-hub-how-do-i-on-premises-deployment.md).
+Creates an account as described in [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md).
 
 ```PowerShell
 # SHAccountCreateOnPrem.ps1
@@ -539,7 +539,7 @@ else
 
 ### <a href="" id="create-os356-ps-scripts"></a>Create a device account using Office 365
 
-Creates an account as described in [Create a device account using Office 365](prepare-your-environment-for-surface-hub-how-do-i-creating-a-device-account-using-office-365.md)
+Creates an account as described in [Create a device account using Office 365](create-a-device-account-using-office-365.md)
 
 ```PowerShell
 # SHAccountCreateO365.ps1

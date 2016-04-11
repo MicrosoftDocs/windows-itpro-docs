@@ -19,7 +19,7 @@ Admins can install apps on the device using the Windows Store app available in *
 ## Using the Store for Business
 
 
-For apps purchased through the Store for Business, download the Appxbundle, offline license, and the dependencies for the App from the store to a separate PC. Create a provisioning package and copy it to a USB drive. (See [Create a provisioning package](prepare-your-environment-for-surface-hub-create-provisioning-packages-for-certificates.md).) Move the USB drive to the Surface Hub, and install the app on the device using the Settings app.
+For apps purchased through the Store for Business, download the Appxbundle, offline license, and the dependencies for the App from the store to a separate PC. Create a provisioning package and copy it to a USB drive. (See [Create a provisioning package](provisioning-packages-for-certificates-surface-hub.md).) Move the USB drive to the Surface Hub, and install the app on the device using the Settings app.
 
 ## Related topics
 
