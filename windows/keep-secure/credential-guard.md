@@ -35,7 +35,7 @@ Credential Guard isolates secrets that previous versions of Windows stored in th
 
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
 
-Credential Guard also does not allow older variants of NTLM and Kerberos authentication protocols and cipher suites when using default derived credentials, including NTLMv1, MS-CHAPv2, and weaker Kerberos encryption types, such as DES.
+Credential Guard also does not allow older variants of NTLM, unconstrained Kerberos delegation, and Kerberos authentication protocols and cipher suites when using default derived credentials, including NTLMv1, MS-CHAPv2, and weaker Kerberos encryption types, such as DES.
 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
