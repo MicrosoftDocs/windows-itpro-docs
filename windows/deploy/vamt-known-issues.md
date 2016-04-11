@@ -9,8 +9,6 @@ author: jdeckerMS
 ---
 
 # VAMT Known Issues
-
-
 The following list contains the current known issues with the Volume Activation Management Tool (VAMT) 3.0.
 
 -   The VAMT Windows Management Infrastructure (WMI) remote operations may take longer to execute if the target computer is in a sleep or standby state.
