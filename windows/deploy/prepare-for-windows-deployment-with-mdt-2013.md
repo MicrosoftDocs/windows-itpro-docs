@@ -6,7 +6,7 @@ keywords: ["deploy, system requirements"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Prepare for deployment with MDT 2013 Update 2

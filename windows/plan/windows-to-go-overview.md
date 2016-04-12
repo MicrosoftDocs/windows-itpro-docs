@@ -6,7 +6,7 @@ keywords: ["workspace, mobile, installation, image, USB, device, image"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: mtniehaus
 ---
 
 # Windows To Go: feature overview
