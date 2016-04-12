@@ -26,7 +26,7 @@ You’ll need this software to run EDP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
-|Windows 10 Insider Preview | Microsoft Intune<br>-OR-<br>System Center Configuration Manager (version 1511 or later)<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) topic.|
+|Windows 10 Insider Preview | Microsoft Intune<br>-OR-<br>System Center Configuration Manager (version 1511 or later)<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
 
 ## How EDP works
 EDP helps address your everyday challenges in the enterprise. Including:
