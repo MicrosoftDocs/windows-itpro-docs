@@ -119,19 +119,48 @@ The following table lists the different parts of Start and any applicable policy
 
  ## Taskbar options
 
+Starting in Windows 10, version 1607, you can pin additional apps to the taskbar and remove default pinned apps from the taskbar. You can specify different taskbar configurations based on device locale, region, or operating system edition.
+
+Whether you apply the taskbar configuration to a clean install or an update, users will still be able to:
+* Pin additional apps
+* Change the order of pinned apps
+* Unpin any app
+
+In a clean install, if you apply a taskbar layout, only the apps that you specify will be pinned to the taskbar, as well as any default apps that you do not remove from the taskbar. Users can pin additional apps to the taskbar after the layout is applied.
+
+When a device is upgraded to Windows 10, apps will be pinned to the taskbar already.  Some apps may have been pinned to the taskbar by a user, and others may have been pinned to the taskbar through a customized base image or by using Windows Unattend setup. 
+
 There are four categories of apps that might be pinned to a taskbar:
+* Apps pinned by the user
 * Default Windows apps, pinned during operating system installation
 * OEM apps, pinned by the OEM as part of the operating system image 
 * Apps pinned by the enterprise, such as in an unattended Windows setup
 
-   **Note**  
+ **Note**  
    The earlier method of using [TaskbarLinks](http://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
-* Apps pinned by the user
+
+The new taskbar layout for upgrades to Windows 10, version 1607 or later, will apply the following behavior:
+* If the user pinned the app to the taskbar, those pinned apps remain and new apps will be added to the right.
+* If the user didn't pin the app (it was pinned during installation or by policy) and the app is not in updated layout file, the app will be unpinned.
+* If the user didn't pin the app and the app is in the updated layout file, the app will be pinned to the right.
+* New apps specified in updated layout file are pinned to right of user's pinned apps.
+
+The following example shows how apps will be pinned - Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
+
+![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
+
+
+
+
+  
+
 
 ## Related topics
 
 
 [Customize and export Start layout](customize-and-export-start-layout.md)
+
+[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 
 [Customize Windows 10 Start with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 
