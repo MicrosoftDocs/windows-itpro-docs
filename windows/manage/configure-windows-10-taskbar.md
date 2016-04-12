@@ -23,7 +23,7 @@ In operating systems configured to use a right-to-left language, the taskbar ord
 
 The following example shows how apps will be pinned - Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
 
-![Windows left, user center, enterprise to the right](/images/taskbar-generic.png)
+![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
 
 
 ## Configure taskbar (general)
@@ -109,11 +109,11 @@ By adding `<PinListPlacement="Replace">` as a parameter to `<CustomTaskbarLayout
 ```
 **Before:**
 
-![Taskbar with default apps](/images/taskbar-default.png)
+![Taskbar with default apps](images/taskbar-default.png)
 
 **After:**
 
-![Taskbar with default apps](/images/taskbar-default-removed.png)
+![Taskbar with default apps](images/taskbar-default-removed.png)
 
 ## Configure taskbar (by region)
 
