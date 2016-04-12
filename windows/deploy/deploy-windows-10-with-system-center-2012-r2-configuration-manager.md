@@ -6,7 +6,7 @@ keywords: ["deployment, custom, boot"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Deploy Windows 10 with System Center 2012 R2 Configuration Manager

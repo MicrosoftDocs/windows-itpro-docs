@@ -6,7 +6,7 @@ keywords: ["FAQ, mobile, device, USB"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: mtniehaus
 ---
 
 # Windows To Go: frequently asked questions

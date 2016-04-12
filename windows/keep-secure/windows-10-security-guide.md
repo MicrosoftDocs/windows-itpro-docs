@@ -6,7 +6,7 @@ keywords: ["configure", "feature", "file encryption"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: challum
 ---
 
 # Windows 10 security overview

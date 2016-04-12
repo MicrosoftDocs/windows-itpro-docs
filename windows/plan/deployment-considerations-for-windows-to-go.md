@@ -6,7 +6,7 @@ keywords: ["deploy, mobile, device, USB, boot, image, workspace, driver"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: mtniehaus
 ---
 
 # Deployment considerations for Windows To Go
