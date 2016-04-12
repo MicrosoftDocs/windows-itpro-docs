@@ -253,7 +253,7 @@ If you have multiple domains, you must separate them with the "|" character. For
     ![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 ## Choose where apps can access enterprise data
-After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.<p>
+After you've added a protection level to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.<p>
 **Important**<br>
 -   Every EDP policy should include policy that defines your enterprise network locations.
 
@@ -271,7 +271,7 @@ After you've added a protection mode to your apps, you'll need to decide where t
         <tr>
             <td>Enterprise Cloud Domain</td>
             <td>contoso.sharepoint.com,proxy1.contoso.com|<br>office.com|proxy2.contoso.com</td>
-            <td>Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter. Include the "|" delimiter just before the "|" if you don’t use proxies. For example: [URL,Proxy]|[URL,Proxy].</td>     
+            <td>Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter.<p>Include the "," delimiter just before the "|" if you don’t use proxies. For example:<br> `[URL,Proxy]|[URL,Proxy]`</td>     
         </tr>
         <tr>
             <td>Enterprise Network Domain</td>
