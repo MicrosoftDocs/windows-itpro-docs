@@ -30,7 +30,7 @@ Follow these steps to create the VPN policy you want to use with EDP.
 
     ![Microsoft Intune: Create a new policy using the New Policy screen](images/intune-vpn-createpolicy.png)
 
-3.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
+3.  Type *EdpModeID* into the Name box, along with an optional description for your policy into the **Description** box.
 
     ![Microsoft Intune: Fill in the required Name and optional Description for your policy](images/intune-vpn-titledescription.png)
 
