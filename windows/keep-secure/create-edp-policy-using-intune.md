@@ -245,12 +245,12 @@ You can also specify all the domains owned by your enterprise that are used for 
 
 This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
 
-![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
-
 **To add your primary domain**
 
 -   Type the name of your primary domain into the **Primary domain** field. For example, *contoso.com*.<p>
-If you have multiple domains, you must separate them with the "|" character. For example, contoso.com|fabrikam.com.
+If you have multiple domains, you must separate them with the "|" character. For example, `contoso.com|fabrikam.com`.
+
+    ![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 ## Choose where apps can access enterprise data
 After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.<p>
