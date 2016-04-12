@@ -99,6 +99,7 @@ The final step to making your VPN configuration work with EDP, is to link your t
 
 6.  Click **OK** to save your new OMA-URI setting, and then click **Save Policy.**
 
+
  **To deploy your linked policy**
 
 1.  On the **Configuration policies** page, locate your newly-created policy, click to select it, and then click the **Manage Deployment** button.
