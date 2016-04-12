@@ -26,7 +26,7 @@ You’ll need this software to run EDP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
-|Windows 10 Insider Preview | Microsoft Intune<br>-OR-<br>System Center Configuration Manager (version 1511 or later)<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [Custom URI - Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=733963) documentation.|
+|Windows 10 Insider Preview | Microsoft Intune<br>-OR-<br>System Center Configuration Manager (version 1511 or later)<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
 
 ## How EDP works
 EDP helps address your everyday challenges in the enterprise. Including:
@@ -37,7 +37,7 @@ EDP helps address your everyday challenges in the enterprise. Including:
 
 -   Helping to maintain the ownership and control of your enterprise data.
 
--   Managing apps that aren’t enterprise aware, especially on mobile devices.
+-   Managing apps that aren’t enterprise aware.
 
 ### EDP-protection modes
 You can set EDP to 1 of 4 protection and management modes:
@@ -69,7 +69,7 @@ EDP gives you a new way to manage data security for apps and documents, along wi
     -   **Continuous data encryption.** EDP helps protect enterprise data when it leaves a device. For example, when an employee saves to public cloud storage, or synchronizes with another device.<p>
     Apps such as Microsoft Word work with EDP to continue your data encryption across locations and services. These apps are being referred to as, *enterprise aware*. For example, if an employee opens EDP-encrypted content from Word, edits the content, and then tries to save the edited version with a different name, Word automatically applies EDP to the new document, maintaining the encryption.
 
-    -   **Helping prevent accidental data disclosure to public spaces.** EDP helps protect your enterprise data from being accidentally shared to public spaces, such as public cloud storage. For example, file syncing apps not on your **Protected App** list, such as Dropbox™, won’t be able to sync encrypted files to the employee’s personal cloud storage. Instead, if an employee stores content in their Microsoft OneDrive for Business folder, which is automatically synced with OneDrive for Business (an app on your **Protected App** list), then the document maintains its encryption and can sync freely.
+    -   **Helping prevent accidental data disclosure to public spaces.** EDP helps protect your enterprise data from being accidentally shared to public spaces, such as public cloud storage. For example, if Dropbox™ isn’t on your **Protected App** list, employees won’t be able to sync encrypted files to their personal cloud storage. Instead, if the employee stores the content to an app on your **Protected Apps** list, like Microsoft OneDrive for Business, the encrypted files can sync freely to the cloud, while maintaining the encryption.
 
     -   **Helping prevent accidental data disclosure to other devices.** EDP helps prevent enterprise data from leaking when it's copied or transferred to other devices. For example, if an employee puts enterprise data on a Universal Serial Bus (USB) drive that also has personal data, the enterprise data remains encrypted while the personal data doesn’t.
 
