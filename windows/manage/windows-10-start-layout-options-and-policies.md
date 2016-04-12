@@ -1,6 +1,6 @@
 ---
 title: Manage Windows 10 Start layout and taskbar options (Windows 10)
-description: Organizations might want to deploy a customized Start screen, menu, and taskbar to devices running Windows 10 Enterprise or Windows 10 Education.
+description: Organizations might want to deploy a customized Start layout and taskbar to devices running Windows 10 Enterprise or Windows 10 Education.
 ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
 keywords: ["start screen", "start menu"]
 ms.prod: W10
@@ -16,11 +16,9 @@ author: jdeckerMS
 
 -   Windows 10
 
-**Looking for consumer information?**
+**Looking for consumer information?** See [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
 
--   [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
-
-Organizations might want to deploy a customized Start screen, Start menu, and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps pinned by default.
+Organizations might want to deploy a customized Start layout and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps pinned by default.
 
 ## Start options
 
@@ -121,37 +119,36 @@ The following table lists the different parts of Start and any applicable policy
 
 Starting in Windows 10, version 1607, you can pin additional apps to the taskbar and remove default pinned apps from the taskbar. You can specify different taskbar configurations based on device locale, region, or operating system edition.
 
+There are three categories of apps that might be pinned to a taskbar:
+* Apps pinned by the user
+* Default Windows apps, pinned during operating system installation (Edge, File Explorer, Store)
+* Apps pinned by the enterprise, such as in an unattended Windows setup
+
+ **Note**  
+   The earlier method of using [TaskbarLinks](http://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
+   
+The following example shows how apps will be pinned - Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
+
+![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
+
 Whether you apply the taskbar configuration to a clean install or an update, users will still be able to:
 * Pin additional apps
 * Change the order of pinned apps
 * Unpin any app
 
-In a clean install, if you apply a taskbar layout, only the apps that you specify will be pinned to the taskbar, as well as any default apps that you do not remove from the taskbar. Users can pin additional apps to the taskbar after the layout is applied.
+### Taskbar configuration applied to clean install of Windows 10
+
+In a clean install, if you apply a taskbar layout, only the apps that you specify and default apps that you do not remove will be pinned to the taskbar. Users can pin additional apps to the taskbar after the layout is applied.
+
+### Taskbar configuration applied to Windows 10 upgrades
 
 When a device is upgraded to Windows 10, apps will be pinned to the taskbar already.  Some apps may have been pinned to the taskbar by a user, and others may have been pinned to the taskbar through a customized base image or by using Windows Unattend setup. 
-
-There are four categories of apps that might be pinned to a taskbar:
-* Apps pinned by the user
-* Default Windows apps, pinned during operating system installation
-* OEM apps, pinned by the OEM as part of the operating system image 
-* Apps pinned by the enterprise, such as in an unattended Windows setup
-
- **Note**  
-   The earlier method of using [TaskbarLinks](http://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
 
 The new taskbar layout for upgrades to Windows 10, version 1607 or later, will apply the following behavior:
 * If the user pinned the app to the taskbar, those pinned apps remain and new apps will be added to the right.
 * If the user didn't pin the app (it was pinned during installation or by policy) and the app is not in updated layout file, the app will be unpinned.
 * If the user didn't pin the app and the app is in the updated layout file, the app will be pinned to the right.
 * New apps specified in updated layout file are pinned to right of user's pinned apps.
-
-The following example shows how apps will be pinned - Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
-
-![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
-
-
-
-
   
 
 

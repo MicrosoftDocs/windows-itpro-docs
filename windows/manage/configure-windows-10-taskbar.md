@@ -30,9 +30,10 @@ The following example shows how apps will be pinned - Windows default apps to th
 
 To configure the taskbar:
 1. Create the XML file.
-   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use Export-StartLayout to create the XML, and then add the `<TaskbarLayout>` section from the following sample to the file and edit it to your specific requirements.
-   * If you are only configuring the taskbar, use the following sample to create LayoutModification.xml, and then edit the file for your specific requirements.
-2. Apply LayoutModification.xml to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
+   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use Export-StartLayout to create the XML, and then add the `<TaskbarLayout>` section from the following sample to the file.
+   * If you are only configuring the taskbar, use the following sample to create LayoutModification.xml.
+2. Edit and save the XML file. You can use [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path to identify the apps to pin to the taskbar. 
+3. Apply LayoutModification.xml to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
 ### Sample XML
 
@@ -208,3 +209,13 @@ sample
   </xsd:complexType> 
 </xsd:schema>
 ```
+
+[Customize and export Start layout](customize-and-export-start-layout.md)
+
+[Customize Windows 10 Start with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+
+[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+
+[Customize Windows 10 Start with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+
+[Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)

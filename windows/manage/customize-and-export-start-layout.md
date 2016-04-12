@@ -91,6 +91,37 @@ When you have the Start layout that you want your users to see, use the [Export-
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet does not append the file name extension, and the policy settings require the extension.
+    
+    Example of a layout file produced by Export-StartLayout:
+
+    <span codelanguage="XML"></span>
+    <table>
+    <colgroup>
+    <col width="100%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">XML</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><pre><code>&lt;LayoutModificationTemplate Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
+      &lt;DefaultLayoutOverride&gt;
+        &lt;StartLayoutCollection&gt;
+          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot; xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;&gt;
+            &lt;start:Group Name=&quot;Life at a glance&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot;&gt;
+              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
+              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&quot; /&gt;
+              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
+            &lt;/start:Group&gt;        
+          &lt;/defaultlayout:StartLayout&gt;
+        &lt;/StartLayoutCollection&gt;
+      &lt;/DefaultLayoutOverride&gt;
+    &lt;/LayoutModificationTemplate&gt;</code></pre></td>
+    </tr>
+    </tbody>
+    </table>
 
 ## Configure a partial Start layout
 
