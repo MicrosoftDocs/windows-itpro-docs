@@ -30,12 +30,14 @@ The following example shows how apps will be pinned - Windows default apps to th
 
 To configure the taskbar:
 1. Create the XML file.
-   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use Export-StartLayout to create the XML, and then add the `<TaskbarLayout>` section from the following sample to the file.
+   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use Export-StartLayout to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from the following sample to the file.
    * If you are only configuring the taskbar, use the following sample to create LayoutModification.xml.
-2. Edit and save the XML file. You can use [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path to identify the apps to pin to the taskbar. 
+2. Edit and save the XML file. You can use [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path to identify the apps to pin to the taskbar.
+   * Use `<taskbar:UWA>` and [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
+   * Use `<taskbar:DesktopApp>` and Desktop Application ID or Desktop Application Link Path to pin desktop applications. 
 3. Apply LayoutModification.xml to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
-### Sample XML
+### Sample taskbar configuration XML
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,21 +45,23 @@ To configure the taskbar:
     xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
     xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
     xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
 
-  <TaskbarLayout>
-    <TaskbarPinList>
-      <PinnedApp AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-      <PinnedApp DesktopApplicationID="Microsoft.Windows.Explorer" />
-      <PinnedApp AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-      <PinnedApp AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
-    </TaskbarPinList>
-  </TaskbarLayout>
-
+  <CustomTaskbarLayoutCollection>
+    <defaultlayout:TaskbarLayout>
+      <taskbar:TaskbarPinList>
+        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+      </taskbar:TaskbarPinList>
+    </defaultlayout:TaskbarLayout>
+ </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
 
 ##Keep default apps and add your own
+
+The `<CustomTaskbarLayoutCollection>` section will append listed apps to the taskbar by default. The following sample keeps the default apps pinned and adds pins for Paint, Microsoft Reader, and a command prompt.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,7 +74,6 @@ To configure the taskbar:
   <CustomTaskbarLayoutCollection>
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
-        <taskbar:DesktopApp DesktopApplicationID="Microsoft.InternetExplorer.Default"  />
         <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk" />
         <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
         <taskbar:DesktopApp DesktopApplicationLinkPath="%appdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk" />
@@ -81,8 +84,11 @@ To configure the taskbar:
 ```
 **Before:**
 
+![default apps pinned to taskbar](images/taskbar-default.png)
+
 **After:**
  
+ ![additional apps pinned to taskbar](images/taskbar-default-plus.png)
 
 ##Remove default apps and add your own
 
@@ -118,7 +124,7 @@ By adding `<PinListPlacement="Replace">` as a parameter to `<CustomTaskbarLayout
 
 ## Configure taskbar (by region)
 
-The following example shows you how to configure taskbars by region.
+The following example shows you how to configure taskbars by region. Each region has its own `<TaskbarPinList>` section with a **region** value. A `<TaskbarPinList>` section without a **region** value applies to all regions.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -128,23 +134,24 @@ The following example shows you how to configure taskbars by region.
     xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
     Version="1">
 
-  <TaskbarLayout>
-    <TaskbarPinList region="US|UK">
-      <PinnedApp AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-    </TaskbarPinList>
-    <TaskbarPinList>
-      <PinnedApp DesktopApplicationID="Microsoft.Windows.Explorer" />
-      <PinnedApp AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-    </TaskbarPinList>
-    <TaskbarPinList region="DE|FR">
-      <PinnedApp AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel" />
-    </TaskbarPinList>
-    <TaskbarPinList>
-      <PinnedApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
-      <PinnedApp AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
-    </TaskbarPinList>
-  </TaskbarLayout>
-
+   <CustomTaskbarLayoutCollection>
+    <defaultlayout:TaskbarLayout>
+      <taskbar:TaskbarPinList region="US|UK">
+        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+     </taskbar:TaskbarPinList>
+    <taskbar:TaskbarPinList>
+      <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+      <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
+    </taskbar:TaskbarPinList>
+    <taskbar:TaskbarPinList region="DE|FR">
+      <taskbar:UWA AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel" />
+    </taskbar:TaskbarPinList>
+    <taskbar:TaskbarPinList>
+      <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
+      <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
+    </taskbar:TaskbarPinList>
+  </defaultlayout:TaskbarLayout>
+ </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
 
@@ -156,6 +163,10 @@ The resulting taskbar for computers in Germany or France:
 
 The resulting tasbkar for computers in any other region:
 
+
+
+**Note**  
+[Look up region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
 
 ## Configure taskbar (by Windows 10 edition)
 
@@ -209,6 +220,8 @@ sample
   </xsd:complexType> 
 </xsd:schema>
 ```
+
+## Related topics
 
 [Customize and export Start layout](customize-and-export-start-layout.md)
 

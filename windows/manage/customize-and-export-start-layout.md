@@ -92,7 +92,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet does not append the file name extension, and the policy settings require the extension.
     
-    Example of a layout file produced by Export-StartLayout:
+    Example of a layout file produced by `Export-StartLayout`:
 
     <span codelanguage="XML"></span>
     <table>
