@@ -102,7 +102,7 @@ Out-of-date ActiveX control blocking includes 4 new Group Policy settings that y
 Here’s a list of the new Group Policy info, including the settings, location, requirements, and Help text strings. All of these settings can be set in either the Computer Configuration or User Configuration scope, but Computer Configuration takes precedence over User Configuration.
 
 **Important**<br>
-Out-of-date ActiveX control blocking is turned off in the Local Intranet Zone; therefore, intranet websites and line-of-business apps will continue to use out-of-date ActiveX controls without disruption.
+Out-of-date ActiveX control blocking is turned off in the Local Intranet Zone and the Trusted Sites Zone; therefore, intranet websites and line-of-business apps will continue to use out-of-date ActiveX controls without disruption.
 
 |Setting |Category path |Supported on |Help text |
 |--------|--------------|-------------|----------|
