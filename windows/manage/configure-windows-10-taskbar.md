@@ -58,6 +58,31 @@ To configure the taskbar:
  </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
+### Sample taskbar configuration added to Start layout XML
+
+```xml
+<LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="6" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout">
+        <start:Group Name="Life at a glance" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
+          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+          <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI" />
+          <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+        </start:Group>        
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+    <CustomTaskbarLayoutCollection>
+      <defaultlayout:TaskbarLayout>
+        <taskbar:TaskbarPinList>
+          <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+          <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+        </taskbar:TaskbarPinList>
+      </defaultlayout:TaskbarLayout>
+    </CustomTaskbarLayoutCollection>
+  </DefaultLayoutOverride>
+</LayoutModificationTemplate>
+```
 
 ##Keep default apps and add your own
 
@@ -92,7 +117,9 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 
 ##Remove default apps and add your own
 
-By adding `<PinListPlacement="Replace">` as a parameter to `<CustomTaskbarLayoutCollection>`, you remove all default pinned apps and only the apps that you specify will be pinned to the taskbar.
+By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you remove all default pinned apps; only the apps that you specify will be pinned to the taskbar.
+
+If you only want to remove some of the default pinned apps, you would use this method to remove all default pinned apps and then include the default app that you want to keep in your list of pinned apps.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -120,11 +147,11 @@ By adding `<PinListPlacement="Replace">` as a parameter to `<CustomTaskbarLayout
 
 **After:**
 
-![Taskbar with default apps](images/taskbar-default-removed.png)
+![Taskbar with default apps removed](images/taskbar-default-removed.png)
 
 ## Configure taskbar (by region)
 
-The following example shows you how to configure taskbars by region. Each region has its own `<TaskbarPinList>` section with a **region** value. A `<TaskbarPinList>` section without a **region** value applies to all regions.
+The following example shows you how to configure taskbars by region. When you specify one or more regions in `<taskbar:TaskbarPinList>`, the pinned apps in that section are only pinned on computers that are configured for that region. When specifying taskbar configuration by region, the taskbar will concatenate pinlists together so long as the target computer meets the region requirements. If no region is specified for a `<TaskbarPinList>` node, it will apply to every region.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -155,14 +182,17 @@ The following example shows you how to configure taskbars by region. Each region
 </LayoutModificationTemplate>
 ```
 
-When specifying taskbar configuration by region, the taskbar will concatenate pinlists together so long as the target computer meets the region requirements. If no region is specified for a `<TaskbarPinList>` node, it will apply to every region.
-
 When the preceding example XML for region is applied, the resulting tasbkar for computers in the US or UK:
+
+![taskbar for US and UK locale](images/taskbar-region-usuk.png)
 
 The resulting taskbar for computers in Germany or France:
 
+![taskbar for DE and FR locale](images/taskbar-region-defr.png)
+
 The resulting tasbkar for computers in any other region:
 
+![taskbar for all other regions](images/taskbar-region-other.png)
 
 
 **Note**  
@@ -170,10 +200,34 @@ The resulting tasbkar for computers in any other region:
 
 ## Configure taskbar (by Windows 10 edition)
 
-The following example shows you how to configure taskbars by edition, so that you can apply one configuration to Windows 10 Enterprise and a different configuration to Windows 10 Education.
+The following example shows you how to configure taskbars by edition, so that you can apply one configuration to Windows 10 Enterprise and a different configuration to Windows 10 Education. 
 
 ```xml
-sample
+<?xml version="1.0" encoding="utf-8"?>
+<LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    Version="1">
+  <CustomTaskbarLayoutCollection>
+    <defaultlayout:TaskbarLayout SKU="PPI">
+      <taskbar:TaskbarPinList>
+        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Internet Explorer.lnk" />
+        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk" />
+        <taskbar:UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+      </taskbar:TaskbarPinList>
+    </defaultlayout:TaskbarLayout>
+    <defaultlayout:TaskbarLayout SKU="Server|ServerSolution">
+      <taskbar:TaskbarPinList>
+        <taskbar:UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.lync.exe.15" />
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.OUTLOOK.EXE.15" />
+      </taskbar:TaskbarPinList>
+    </defaultlayout:TaskbarLayout>
+  </CustomTaskbarLayoutCollection>
+</LayoutModificationTemplate>
+
 ```
 
 
@@ -181,43 +235,50 @@ sample
 ## Layout Modification Template schema definition
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-            xmlns:local="http://schemas.microsoft.com/Start/2014/TaskbarLayout" 
-            targetNamespace="http://schemas.microsoft.com/Start/2014/TaskbarLayout" 
-            elementFormDefault="qualified"> 
-  <xsd:complexType name="ct_PinnedUWA"> 
-    <xsd:attribute name="AppUserModelID" type="xsd:string" /> 
-  </xsd:complexType> 
-  <xsd:complexType name="ct_PinnedDesktopApp"> 
-    <xsd:attribute name="DesktopApplicationID" type="xsd:string" /> 
-    <xsd:attribute name="DesktopApplicationLinkPath" type="xsd:string" /> 
-  </xsd:complexType> 
-  <xsd:complexType name="ct_TaskbarPinList"> 
-    <xsd:sequence> 
-      <xsd:choice minOccurs="1" maxOccurs="unbounded"> 
-        <xsd:element name="UWA" type="local:ct_PinnedUWA" /> 
-        <xsd:element name="DesktopApp" type="local:ct_PinnedDesktopApp" /> 
-      </xsd:choice> 
-    </xsd:sequence> 
-    <xsd:attribute name="Region" type="xsd:string" use="optional" /> 
-  </xsd:complexType> 
-  <xsd:simpleType name="st_TaskbarPinListPlacement"> 
-    <xsd:restriction base="xsd:string"> 
-      <xsd:enumeration value="Append" /> 
-      <xsd:enumeration value="Replace" /> 
-    </xsd:restriction> 
-  </xsd:simpleType> 
-  <xsd:attributeGroup name="ag_SelectionAttributes"> 
-    <xsd:attribute name="SKU" type="xsd:string" use="optional"/> 
-    <xsd:attribute name="Region" type="xsd:string" use="optional"/> 
-  </xsd:attributeGroup> 
-  <xsd:complexType name="ct_TaskbarLayout"> 
-    <xsd:sequence> 
-      <xsd:element name="TaskbarPinList" type="local:ct_TaskbarPinList" minOccurs="1" maxOccurs="1" /> 
-    </xsd:sequence> 
-    <xsd:attributeGroup ref="local:ag_SelectionAttributes"/> 
-  </xsd:complexType> 
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:local="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+            targetNamespace="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+            elementFormDefault="qualified">
+
+  <xsd:complexType name="ct_PinnedUWA">
+    <xsd:attribute name="AppUserModelID" type="xsd:string" />
+  </xsd:complexType>
+
+  <xsd:complexType name="ct_PinnedDesktopApp">
+    <xsd:attribute name="DesktopApplicationID" type="xsd:string" />
+    <xsd:attribute name="DesktopApplicationLinkPath" type="xsd:string" />
+  </xsd:complexType>
+
+  <xsd:complexType name="ct_TaskbarPinList">
+    <xsd:sequence>
+      <xsd:choice minOccurs="1" maxOccurs="unbounded">
+        <xsd:element name="UWA" type="local:ct_PinnedUWA" />
+        <xsd:element name="DesktopApp" type="local:ct_PinnedDesktopApp" />
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="Region" type="xsd:string" use="optional" />
+  </xsd:complexType>
+
+  <xsd:simpleType name="st_TaskbarPinListPlacement">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Append" />
+      <xsd:enumeration value="Replace" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:attributeGroup name="ag_SelectionAttributes">
+    <xsd:attribute name="SKU" type="xsd:string" use="optional"/>
+    <xsd:attribute name="Region" type="xsd:string" use="optional"/>
+  </xsd:attributeGroup>
+
+  <xsd:complexType name="ct_TaskbarLayout">
+    <xsd:sequence>
+      <xsd:element name="TaskbarPinList" type="local:ct_TaskbarPinList" minOccurs="1" maxOccurs="1" />
+    </xsd:sequence>
+    <xsd:attributeGroup ref="local:ag_SelectionAttributes"/>
+  </xsd:complexType>
+
 </xsd:schema>
 ```
 
