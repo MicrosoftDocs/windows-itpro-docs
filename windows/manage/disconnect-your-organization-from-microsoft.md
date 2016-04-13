@@ -1,15 +1,15 @@
 ---
-title: Configure telemetry and other settings in your organization (Windows 10)
-description: Learn about the telemetry that Microsoft gathers, the network connections that Windows components make to Microsoft, and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
+title: Disconnect from Microsoft and configure privacy settings in your organization
+description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.If you’re looking for content on what each telemetry level means and how to configure it in your organization, see Configure telemetry in your organization.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
+keywords: privacy
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: brianlic-msft
 ---
 
-# Configure telemetry and other settings in your organization
-
+# Disconnect from Microsoft and configure privacy settings in your organization
 
 **Applies to**
 
