@@ -12,7 +12,7 @@ Use the following procedure to configure the App-V 5.0 client configuration.
 
 **To modify App-V 5.0 client configuration using PowerShell**
 
-1.  To configure the client settings using PowerShell, use the **Set-AppvClientConfiguration** cmdlet. For more information about installing PowerShell, and a list of cmdlets see, [How to install PowerShell](be9fd867-8e37-467a-8a95-b421a1a49f39).
+1.  To configure the client settings using PowerShell, use the **Set-AppvClientConfiguration** cmdlet.
 
 2.  To modify the client configuration, open a PowerShell Command prompt and run the following cmdlet **Set-AppvClientConfiguration** with any required parameters. For example:
 

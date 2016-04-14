@@ -30,7 +30,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 3.  If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at <http://go.microsoft.com/fwlink/?LinkId=397255>.
 
     **Note**  
-    If you are using the Configuration Manager integration with App-V 5.0, most reports are generated from Configuration Manager rather than from App-V 5.0. See [Introduction to Application Management in Configuration Manager](77641e23-45d0-41d9-88ff-cac253ba1e26) and the "Virtualized Application" section of [List of Reports Supplied with Microsoft System Center 2012 R2 Configuration Manager](e3fd6dd4-f036-4913-a378-241c952e9bdf) for more information.
+    If you are using the Configuration Manager integration with App-V 5.0, most reports are generated from Configuration Manager rather than from App-V 5.0.
 
      
 

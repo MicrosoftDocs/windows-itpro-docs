@@ -24,7 +24,7 @@ Microsoft Advanced Group Policy Management (AGPM) provides version control for G
 
 ### Additional references
 
--   [Advanced Group Policy Management 4.0](../agpm/advanced-group-policy-management-40.md)
+-   [Advanced Group Policy Management 4.0](advanced-group-policy-management-40.md)
 
  
 

@@ -112,7 +112,7 @@ The **Search** tool opens a **File Search** window that you can use to find docu
 ### Standalone System Sweeper
 
 **Important**  
-Environments with the Standalone System Sweeper deployed should instead use the Windows Defender Offline (WDO) protection image for malware detection. Because of how the Standalone System Sweeper tool integrates into DaRT, all supported DaRT version deployments cannot apply these anti-malware updates to their DaRT images. For more information, see [Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection](59678283-4b44-4d02-ba8f-0e7315efd5d1).
+Environments with the Standalone System Sweeper deployed should instead use the Windows Defender Offline (WDO) protection image for malware detection. Because of how the Standalone System Sweeper tool integrates into DaRT, all supported DaRT version deployments cannot apply these anti-malware updates to their DaRT images.
 
  
 

@@ -94,8 +94,6 @@ This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Ent
 ## Related topics
 
 
-[Administrator's Guide for Microsoft BitLocker Administration and Monitoring 2](b5e62c77-f365-4492-8c30-95c55304b760)
-
 [Getting Started with MBAM 2.0](getting-started-with-mbam-20-mbam-2.md)
 
  

@@ -58,8 +58,6 @@ You must configure the package converter to always save the package ingredients 
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
-[How to Convert a Package Created in a Previous Version Using PowerShell \[Beta\]](b41d43f5-860e-476a-bd56-f37f25a78537)
-
  
 
  

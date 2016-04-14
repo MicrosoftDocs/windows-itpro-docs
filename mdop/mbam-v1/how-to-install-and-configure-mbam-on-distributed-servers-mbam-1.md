@@ -10,7 +10,7 @@ author: MaggiePucciEvans
 
 The procedures in this topic describe the full installation of the Microsoft BitLocker Administration and Monitoring (MBAM) features on distributed servers.
 
-Each server feature has certain prerequisites. To verify that you have met the prerequisites and hardware and software requirements, see [MBAM 1.0 Deployment Prerequisites](mbam-10-deployment-prerequisites.md) and [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md). In addition, some features require that you provide certain information during the installation process to successfully deploy the feature. You should also review [Planning the Server Infrastructure for MBAM](962f2f48-e800-43f2-ab25-664a8a6298ee) before you begin the MBAM deployment.
+Each server feature has certain prerequisites. To verify that you have met the prerequisites and hardware and software requirements, see [MBAM 1.0 Deployment Prerequisites](mbam-10-deployment-prerequisites.md) and [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md). In addition, some features require that you provide certain information during the installation process to successfully deploy the feature.
 
 **Note**  
 To obtain the setup log files, you have to install MBAM by using the **msiexec** package and the **/l &lt;location&gt;** option. Log files are created in the location that you specify.

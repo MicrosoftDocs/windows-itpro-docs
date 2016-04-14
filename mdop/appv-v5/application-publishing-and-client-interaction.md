@@ -87,7 +87,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 
  
 
-For information about sequencing, see [Application Virtualization 5.0 Sequencing Guide](www.microsoft.com/download/details.aspx?id=27760).
+For information about sequencing, see [Application Virtualization 5.0 Sequencing Guide](http://www.microsoft.com/download/details.aspx?id=27760).
 
 ## <a href="" id="bkmk-appv-file-contents"></a>What’s in the appv file?
 

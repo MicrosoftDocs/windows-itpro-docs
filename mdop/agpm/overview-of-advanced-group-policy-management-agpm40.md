@@ -47,7 +47,7 @@ In an environment where multiple people change GPOs, an AGPM Administrator deleg
 
 ### Additional references
 
--   [Advanced Group Policy Management 4.0](../agpm/advanced-group-policy-management-40.md)
+-   [Advanced Group Policy Management 4.0](advanced-group-policy-management-40.md)
 
  
 

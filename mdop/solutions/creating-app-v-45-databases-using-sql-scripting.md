@@ -146,7 +146,7 @@ The two sample batch files must be placed in the same directory where the rest o
 
     -   Run the create schema.bat file from the directory where it was copied to. Syntax is: “Create\_schema.bat `SQLSERVERNAME`”
 
-        ![AppV46SQLcreatebat](images/AppV46SQLcreatebat.bmp)
+        ![AppV46SQLcreatebat](images/appv46sqlcreatebat.bmp)
 
     -   If this script fails during the creation of the new “APPVIRTDB” database, check the log as indicated to correct the issue. It will be necessary to delete the database that was created with a partial running of the scripts in order to ensure that subsequent attempts will work properly.
 

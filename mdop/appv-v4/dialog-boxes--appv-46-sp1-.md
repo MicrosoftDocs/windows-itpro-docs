@@ -33,11 +33,6 @@ Use any of the following links for more information about the App-V Sequencer di
 
 <a href="" id="antivirus-running-dialog-box--app-v-4-6-sp1-"></a>[Antivirus Running Dialog Box (App-V 4.6 SP1)](antivirus-running-dialog-box--app-v-46-sp1-.md)  
 
-## Related topics
-
-
-[Application Virtualization Sequencer Online Help (App-V 4.6 SP1)](d916f3ae-ab76-4a0d-a7af-31ed4a7d90ae)
-
  
 
  

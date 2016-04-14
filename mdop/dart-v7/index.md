@@ -32,8 +32,6 @@ DaRT is an important part of the Microsoft Desktop Optimization Pack (MDOP), a d
 
 <a href="" id="technical-reference-for-dart-7-0"></a>[Technical Reference for DaRT 7.0](technical-reference-for-dart-70-new-ia.md)  
 
-[Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection](59678283-4b44-4d02-ba8f-0e7315efd5d1)
-
 ### More Information
 
 <a href="" id="release-notes-for-dart-7-0"></a>[Release Notes for DaRT 7.0](release-notes-for-dart-70-new-ia.md)  

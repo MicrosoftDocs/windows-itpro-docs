@@ -72,7 +72,7 @@ In Advanced Group Policy Management (AGPM), both the AGPM Service and the archiv
 
 ### Additional references
 
--   [Advanced Group Policy Management 4.0](../agpm/advanced-group-policy-management-40.md)
+-   [Advanced Group Policy Management 4.0](advanced-group-policy-management-40.md)
 
  
 

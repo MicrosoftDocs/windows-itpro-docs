@@ -8,7 +8,7 @@ author: MaggiePucciEvans
 # Deploying the DaRT 7.0 Recovery Image
 
 
-After you have created the International Organization for Standardization (ISO) file that contains the Microsoft Diagnostics and Recovery Toolset (DaRT) 7 recovery image, you can deploy the DaRT recovery image throughout your enterprise so that it is available to end users and helpdesk agents. There are four supported methods that you can use to deploy the DaRT recovery image (for more information about each method and the advantages and disadvantages of each, see [Planning How to Save and Deploy the DaRT Recovery Image](bc550da2-485f-4c6a-a56a-2a446b88e58c#bkmk-determinehowtosavedartimage)).
+After you have created the International Organization for Standardization (ISO) file that contains the Microsoft Diagnostics and Recovery Toolset (DaRT) 7 recovery image, you can deploy the DaRT recovery image throughout your enterprise so that it is available to end users and helpdesk agents. There are four supported methods that you can use to deploy the DaRT recovery image.
 
 -   Burn the ISO image file to a CD or DVD
 

@@ -10,7 +10,7 @@ author: MaggiePucciEvans
 
 Use these steps to create a connection group by using the App-V Management Console. To use PowerShell to create connection groups, see [How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell.md).
 
-When you place packages in a connection group, their package root paths are merged. If you remove packages, only the remaining packages maintain the merged root. For more information, see [About Merged Root Paths for Packages in Connection Groups](97b35683-9caf-4ce9-8ca5-43452d329b98).
+When you place packages in a connection group, their package root paths are merged. If you remove packages, only the remaining packages maintain the merged root.
 
 **To create a connection group**
 

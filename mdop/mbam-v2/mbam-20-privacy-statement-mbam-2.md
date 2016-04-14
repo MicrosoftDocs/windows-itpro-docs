@@ -47,7 +47,7 @@ We will occasionally update this privacy statement to reflect changes in our pro
 
 ### For More Information
 
-Microsoft welcomes your comments regarding this privacy statement. If you have questions about this statement or believe that we have not adhered to it, please [contact us](contact us).
+Microsoft welcomes your comments regarding this privacy statement. If you have questions about this statement or believe that we have not adhered to it, please contact us.
 
 Microsoft Privacy Microsoft Corporation One Microsoft Way Redmond, Washington 98052 USA
 

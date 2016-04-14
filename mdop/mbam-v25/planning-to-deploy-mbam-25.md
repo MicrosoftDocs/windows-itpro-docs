@@ -8,7 +8,7 @@ author: MaggiePucciEvans
 # Planning to Deploy MBAM 2.5
 
 
-You should consider a number of different deployment configurations and prerequisites before you create your deployment plan for Microsoft BitLocker Administration and Monitoring (MBAM). This section includes information that can help you gather the necessary information to formulate a deployment plan that best meets your business requirements. If you are installing MBAM with the Configuration Manager topology, see [Planning to Deploy MBAM with Configuration Manager](68672830-e2c8-455b-971a-067c40c1333d) for additional planning information.
+You should consider a number of different deployment configurations and prerequisites before you create your deployment plan for Microsoft BitLocker Administration and Monitoring (MBAM). This section includes information that can help you gather the necessary information to formulate a deployment plan that best meets your business requirements.
 
 ## Review the MBAM 2.5 supported configurations
 

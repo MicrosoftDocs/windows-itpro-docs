@@ -107,7 +107,7 @@ You can use the following special terms, which are not case-sensitive, when you 
 
 ### Additional references
 
--   [Advanced Group Policy Management 4.0](../agpm/advanced-group-policy-management-40.md)
+-   [Advanced Group Policy Management 4.0](advanced-group-policy-management-40.md)
 
  
 

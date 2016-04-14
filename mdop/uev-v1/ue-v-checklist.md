@@ -50,8 +50,7 @@ Use this checklist to plan for preparing your computing environment for Microsof
 <tr class="odd">
 <td align="left"><p><strong>Custom settings templates only</strong> – deploy the features that are required to create and store applications other than the UE-V default applications.</p></td>
 <td align="left"><p>[Deploying the Settings Template Catalog for UE-V 1.0](deploying-the-settings-template-catalog-for-ue-v-10.md)</p>
-<p>[Installing the UE-V Generator](installing-the-ue-v-generator.md)</p>
-<p>[Using the UE-V Generator](4ee6e2f1-35ee-426e-9aaa-528c3f04a305)</p></td>
+<p>[Installing the UE-V Generator](installing-the-ue-v-generator.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Familiarize yourself with the administration and management tasks for UE-V.</p></td>

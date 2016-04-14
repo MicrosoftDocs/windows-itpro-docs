@@ -60,8 +60,6 @@ Use the **Add Files to Virtual File System** page of the Application Virtualizat
 
 [Sequencing Wizard](sequencing-wizard.md)
 
-[Application Virtualization Sequencing Wizard – Installation](4223587d-25f2-4a07-8807-97f9e60b01cd)
-
  
 
  

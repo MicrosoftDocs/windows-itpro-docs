@@ -144,11 +144,6 @@ During App-V 5.0 Setup, setup log files are created in the **%temp%** folder of 
 
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
-## Related topics
-
-
-[Security and Privacy for App-V 5.0](2544bb39-007c-404b-b3cf-4c37128183bd)
-
  
 
  

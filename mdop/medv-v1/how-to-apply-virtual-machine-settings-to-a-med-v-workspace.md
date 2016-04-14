@@ -132,7 +132,7 @@ Trim Transfer requires indexing the hard drive, which might take a considerable 
 ## Related topics
 
 
-[Creating a MED-V Image](86bd1301-0d0b-448a-a37c-b606d839aa0e)
+[Creating a MED-V Image](creating-a-med-v-image.md)
 
 [Using the MED-V Management Console User Interface](using-the-med-v-management-console-user-interface.md)
 

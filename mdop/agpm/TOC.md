@@ -11,6 +11,7 @@
 ### [What's New in AGPM 4.0 SP1](whats-new-in-agpm-40-sp1.md)
 ### [Release Notes for Microsoft Advanced Group Policy Management 4.0 SP1](release-notes-for-microsoft-advanced-group-policy-management-40-sp1.md)
 ## [AGPM 4 [NavEngl]](agpm-4-navengl.md)
+### [Advanced Group Policy Management 4.0](advanced-group-policy-management-40.md)
 ### [What's New in AGPM 4.0](whats-new-in-agpm-40.md)
 ### [Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0](step-by-step-guide-for-microsoft-advanced-group-policy-management-40.md)
 ### [Operations Guide for Microsoft Advanced Group Policy Management 4.0](operations-guide-for-microsoft-advanced-group-policy-management-40.md)

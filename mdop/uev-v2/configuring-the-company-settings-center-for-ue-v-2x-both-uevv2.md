@@ -69,17 +69,6 @@ The Company Settings Center can include a hyperlink that users can click to get 
 
 3.  Deploy settings to users’ computers by using the management tool.
 
-## Other resources for Company Settings Center
-
-
-Users can find the following links in the Company Settings Center:
-
--   [What is settings synchronization?](../uev-v2/what-is-settings-synchronization-uevv2.md)
-
--   [Why won't my application settings sync?](../uev-v2/why-wont-my-application-settings-sync-uevv2.md)
-
--   [Why won't my Windows settings sync?](../uev-v2/why-wont-my-windows-settings-sync-uevv2.md)
-
 ## Got a suggestion for UE-V?
 
 
