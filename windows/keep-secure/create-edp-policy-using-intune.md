@@ -37,15 +37,13 @@ Microsoft Intune helps you create and deploy your enterprise data protection (ED
 After you’ve installed and set up Intune for your organization, you must create an EDP-specific policy.
 
 **To add an EDP policy**
-1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy**.
+1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy** from the **Tasks** area.
 
-2.  Click **Add Policy** from the **Tasks** area.
-
-3.  Go to **Windows**, click the **Enterprise Data Protection (Windows 10 and Mobile and later) policy**, pick the EDP template, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
+2.  Go to **Windows**, click the **Enterprise Data Protection (Windows 10 and Mobile and later) policy**, pick the EDP template, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
     ![Microsoft Intune: Create your new policy from the New Policy screen](images/intune-createnewpolicy.png)
 
-4.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
+3.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
     ![Microsoft Intune: Fill out the required Name and optional Description fields](images/intune-namedescription.png)
 
@@ -93,7 +91,7 @@ The steps to add your apps are based on the type of app it is; either a Universa
 
     **To find the Publisher and Product name values for apps installed on Windows 10 Mobile phones**
 
-    1.  If you need to add mobile apps that aren't distributed through the Store for Business, you must use the Windows Device Portal feature.
+    1.  If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
     <p>**Note**<br>Your PC and phone must be on the same wireless network.
 
     2.  On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
@@ -104,10 +102,11 @@ The steps to add your apps are based on the type of app it is; either a Universa
 
     5.  In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
 
-    6.  On the **Apps** tab of the website, click the drop-down box to choose the app you want to know more about.
-    <p>The **Publisher** and **Product Name** values appear.
+    6.  On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
+    
+    7. Start the app for which you're looking for the publisher and product name values
 
-    7.  Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
+    8.  Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
     <p>**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     <p>For example:<br>
      ``` json
@@ -157,8 +156,6 @@ The steps to add your apps are based on the type of app it is; either a Universa
         </tr>                                            
     </table>
 
-    ![Microsoft Intune: Add a Classic Windows app to the Protected Apps list](images/intune-add-desktop-app.png)
-
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
 ``` ps1
@@ -174,6 +171,8 @@ Path                                          Publisher
 %PROGRAMFILES%\INTERNET EXPLORER\IEXPLORE.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\INTERNET EXPLOR...
 ```
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
+
+![Microsoft Intune: Add a Classic Windows app to the Protected Apps list](images/intune-add-desktop-app.png)
 
 ## Exempt apps from EDP restrictions
 If you're running into compatibility issues where your app is incompatible with EDP, but still needs to be used with enterprise data, you can exempt the app from the EDP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
@@ -233,7 +232,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
     </tr>
     <tr>
         <td>Off</td>
-        <td>EDP is turned off and doesn't help to protect or audit your data.</td>
+        <td>EDP is turned off and doesn't help to protect or audit your data.<p>After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives.</td>
     </tr>
 </table>
 
@@ -246,15 +245,15 @@ You can also specify all the domains owned by your enterprise that are used for 
 
 This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
 
-![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
-
 **To add your primary domain**
 
 -   Type the name of your primary domain into the **Primary domain** field. For example, *contoso.com*.<p>
-If you have multiple domains, you must separate them with the "|" character. For example, contoso.com|fabrikam.com.
+If you have multiple domains, you must separate them with the "|" character. For example, `contoso.com|fabrikam.com`.
+
+    ![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 ## Choose where apps can access enterprise data
-After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.<p>
+After you've added a protection level to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.<p>
 **Important**<br>
 -   Every EDP policy should include policy that defines your enterprise network locations.
 
@@ -272,7 +271,7 @@ After you've added a protection mode to your apps, you'll need to decide where t
         <tr>
             <td>Enterprise Cloud Domain</td>
             <td>contoso.sharepoint.com,proxy1.contoso.com|<br>office.com|proxy2.contoso.com</td>
-            <td>Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter. Include the "|" delimiter just before the "|" if you don’t use proxies. For example: [URL,Proxy]|[URL,Proxy].</td>     
+            <td>Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter.<p>Include the "," delimiter just before the "|" if you don’t use proxies. For example:<br> `[URL,Proxy]|[URL,Proxy]`</td>     
         </tr>
         <tr>
             <td>Enterprise Network Domain</td>
