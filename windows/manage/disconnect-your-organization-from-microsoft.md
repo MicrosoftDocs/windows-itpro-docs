@@ -73,7 +73,7 @@ Here's what's covered in this article:
 
     -   [13. Settings &gt; Privacy](#bkmk-settingssection)
 
-        -   [13.1 General](#bkmk-general)
+        -   [13.1 General](https://tnstage.redmond.corp.microsoft.com/en-us/itpro/windows/manage/change-history-for-manage-and-update-windows-10?branch=7087905)
 
         -   [13.2 Location](#bkmk-priv-location)
 
@@ -249,9 +249,8 @@ Use either Group Policy or MDM policies to manage settings for Cortana. For more
 
 Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Search**.
 
-
 | Policy                                               | Description                                                                           |
--------------------------------------------------------|---------------------------------------------------------------------------------------|
+|------------------------------------------------------|---------------------------------------------------------------------------------------|
 | Allow Cortana                                        | Choose whether to let Cortana install and run on the device.                          |
 | Allow search and Cortana to use location             | Choose whether Cortana and Search can provide location-aware search results.          |
 | Do not allow web search                              | Choose whether to search the web from Windows Desktop Search. <br /> Default: Disabled|
@@ -292,7 +291,7 @@ If your organization tests network traffic, you should not use Fiddler to test W
 The following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
 | Policy                                               | Description                                                                                         |
--------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Experience/AllowCortana                              | Choose whether to let Cortana install and run on the device.                                        |
 | Search/AllowSearchToUseLocation                      | Choose whether Cortana and Search can provide location-aware search results. <br /> Default: Allowed|
 
@@ -362,7 +361,7 @@ Use Group Policy to manage settings for Internet Explorer.
 Find the Internet Explorer Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Internet Explorer**.
 
 | Policy                                               | Description                                                                                         |
--------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Turn on Suggested Sites| Choose whether an employee can configure Suggested Sites. <br /> Default: Enabled <br /> You can also turn this off in the UI by clearing the **Internet Options** &gt; **Advanced** &gt; **Enable Suggested Sites** check box.|
 | Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | Choose whether an employee can configure enhanced suggestions, which are presented to the employee as they type in the address bar. <br /> Default: Enabled|
 | Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the address bar. <br /> Default: Disabled </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
@@ -405,7 +404,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 The Microsoft Edge Group Policy names were changed in Windows 10, version 1511. The table below reflects those changes.
 
 | Policy                                               | Description                                                                                         |
--------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Turn off autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
 | Allow employees to send Do Not Track headers         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
 | Turn off password manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
@@ -419,7 +418,7 @@ The Microsoft Edge Group Policy names were changed in Windows 10, version 1511.
 The following Microsoft Edge MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
 | Policy                                               | Description                                                                                         |
--------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Browser/AllowAutoFill                                | Choose whether employees can use autofill on websites. <br /> Default: Allowed                      |
 | Browser/AllowDoNotTrack                              | Choose whether employees can send Do Not Track headers.<br /> Default: Not allowed                  |
 | Browser/AllowPasswordManager                         | Choose whether employees can save passwords locally on their devices. <br /> Default: Allowed       |
@@ -602,7 +601,7 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 -   [13.15 Background apps](#bkmk-priv-background)
 
-### <a href="" id="bkmk-priv-general"></a>13.1 General
+### <a href="" id="bkmk-general"></a>13.1 General
 
 **General** includes options that don't fall into other areas.
 
@@ -1195,7 +1194,7 @@ You can set up Delivery Optimization from the **Settings** UI.
 You can find the Delivery Optimization Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization**.
 
 | Policy                    | Description                                                                                         |
-----------------------------|-----------------------------------------------------------------------------------------------------|
+|---------------------------|-----------------------------------------------------------------------------------------------------|
 | Download Mode             | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>None</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>Group</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>Internet</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li><li><p><strong>LAN</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li></ul>|
 | Group ID                  | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> ** Note** This ID must be a GUID.|
 | Max Cache Age             | Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache. <br /> The default value is 259200 seconds (3 days).|
@@ -1207,7 +1206,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 The following Delivery Optimization MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
 | Policy                    | Description                                                                                         |
-----------------------------|-----------------------------------------------------------------------------------------------------|
+|---------------------------|-----------------------------------------------------------------------------------------------------|
 | DeliveryOptimization/DODownloadMode             | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>0</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>1</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li><li><p><strong>2</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>3</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li></ul>|
 | DeliveryOptimization/DOGroupID                 | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> ** Note** This ID must be a GUID.|
 | DeliveryOptimization/DOMaxCacheAge             | Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache. <br /> The default value is 259200 seconds (3 days).|
