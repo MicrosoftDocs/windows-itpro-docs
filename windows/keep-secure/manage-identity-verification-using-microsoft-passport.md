@@ -99,6 +99,8 @@ When identity providers such as Active Directory or Azure AD enroll a certificat
 ## Learn more
 
 
+[Introduction to Windows Hello](http://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
+
 [What's new in Active Directory Domain Services (AD DS) in Windows Server Technical Preview](http://go.microsoft.com/fwlink/p/?LinkId=708533)
 
 [Windows Hello face authentication](http://go.microsoft.com/fwlink/p/?LinkId=626024)
