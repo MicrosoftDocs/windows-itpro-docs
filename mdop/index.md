@@ -99,7 +99,7 @@ The following table provides links to the product documentation for the MDOP pro
 <p><strong>MED-V 1.0</strong> - Windows Vista, Windows XP</p></td>
 <td align="left"><p>[Microsoft Enterprise Desktop Virtualization 2.0](medv-v2/index.md)</p>
 <p>[About MED-V 1.0 SP1](medv-v1/about-med-v-10-sp1.md)</p>
-<p>[Microsoft Enterprise Desktop Virtualization 1.0](74a9483e-87a1-4394-a4d5-50cff5c07297)</p>
+<p>[Microsoft Enterprise Desktop Virtualization 1.0](medv-v1/index.md)</p>
 <p>[MED-V Whitepapers on the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=231903) (http://go.microsoft.com/fwlink/p/?LinkId=231903)</p></td>
 </tr>
 <tr class="odd">
