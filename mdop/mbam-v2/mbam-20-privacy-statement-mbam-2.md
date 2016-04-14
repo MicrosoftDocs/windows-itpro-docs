@@ -83,7 +83,7 @@ Incorrectly editing the registry may severely damage your system. Before making 
 
 Important Information: Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their PCs. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available on [TechNet](http://technet.microsoft.com/library/cc709644.aspx).
 
-Additional information on how to modify enable and disable error reporting is available at this support article: [(http://support.microsoft.com/kb/188296)]((http://support.microsoft.com/kb/188296)).
+Additional information on how to modify enable and disable error reporting is available at this support article: [(http://support.microsoft.com/kb/188296)](http://support.microsoft.com/kb/188296).
 
 ### Microsoft Update
 
