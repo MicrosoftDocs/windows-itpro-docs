@@ -1,4 +1,4 @@
-# [Microsoft Enterprise Desktop Virtualization 1](microsoft-enterprise-desktop-virtualization-planning-deployment-and-operations-guide-medvv2.md)
+# [Microsoft Enterprise Desktop Virtualization 1](index.md)
 ## [About This Guide[MEDV]](about-this-guidemedv.md)
 ## [Getting Started with MED-V](getting-started-with-med-v.md)
 ### [Overview of MED-V](overview-of-med-v.md)
