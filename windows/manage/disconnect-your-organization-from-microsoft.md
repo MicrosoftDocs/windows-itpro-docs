@@ -1,27 +1,25 @@
 ---
-title: Disconnect from Microsoft and configure privacy settings in your organization
-description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.If you’re looking for content on what each telemetry level means and how to configure it in your organization, see Configure telemetry in your organization.
+title: Disconnect your organization from Microsoft (Windows 10)
+description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-keywords: privacy
+keywords: privacy, disconnect from Microsoft
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: brianlic-msft
 ---
 
-# Disconnect from Microsoft and configure privacy settings in your organization
+# Disconnect your organization from Microsoft
 
 **Applies to**
 
 -   Windows 10
 
-Learn about the telemetry that Microsoft gathers, the network connections that Windows components make to Microsoft, and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
+If you’re looking for content on what each telemetry level means and how to configure it in your organization, see [Configure telemetry in your organization](configure-telemetry-in-your-organization.md).
+
+Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
-
-**Note**  Telemetry is a term that means different things to different people and organizations. For the purpose of this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to keep Windows devices secure, and to help Microsoft improve the quality of Windows and Microsoft services. We discuss separately the network connections that Windows features and components make directly to Microsoft Services. It is used to provide a service to the user as part of Windows.
-
- 
 
 Some of the network connections discussed in this article can be managed in Windows 10 Mobile, Windows 10 Mobile Enterprise, and the July release of Windows 10. However, you must use Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511 to manage them all.
 
@@ -132,10 +130,6 @@ Here's what's covered in this article:
         -   [22.4 Delivery Optimization Windows Provisioning](#bkmk-wudo-prov)
 
     -   [23. Windows Update](#bkmk-wu)
-
--   [Manage your telemetry settings](#bkmk-utc)
-
--   [How telemetry works](#bkmk-moreutc)
 
 ## What's new in Windows 10, version 1511
 
@@ -255,46 +249,14 @@ Use either Group Policy or MDM policies to manage settings for Cortana. For more
 
 Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Search**.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Allow Cortana</p></td>
-<td align="left"><p>Choose whether to let Cortana install and run on the device.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Allow search and Cortana to use location</p></td>
-<td align="left"><p>Choose whether Cortana and Search can provide location-aware search results.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Do not allow web search</p></td>
-<td align="left"><p>Choose whether to search the web from Windows Desktop Search.</p>
-<p>Default: Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Don't search the web or display web results in Search</p></td>
-<td align="left"><p>Choose whether to search the web from Cortana.</p>
-<p>Default: Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Set what information is shared in Search</p></td>
-<td align="left"><p>Control what information is shared with Bing in Search.</p></td>
-</tr>
-</tbody>
-</table>
 
- 
+| Policy                                               | Description                                                                           |
+-------------------------------------------------------|---------------------------------------------------------------------------------------|
+| Allow Cortana                                        | Choose whether to let Cortana install and run on the device.                          |
+| Allow search and Cortana to use location             | Choose whether Cortana and Search can provide location-aware search results.          |
+| Do not allow web search                              | Choose whether to search the web from Windows Desktop Search. <br /> Default: Disabled|
+| Don't search the web or display web results in Search| Choose whether to search the web from Cortana.                                        |
+| Set what information is shared in Search             | Control what information is shared with Bing in Search.                               |
 
 When you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
 
@@ -325,38 +287,14 @@ When you enable the **Don't search the web or display web results in Search** Gr
 **Note**  
 If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
- 
-
 ### <a href="" id="bkmk-cortana-mdm"></a>1.2 Cortana MDM policies
 
 The following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Experience/AllowCortana</p></td>
-<td align="left"><p>Choose whether to let Cortana install and run on the device.</p>
-<p>Default: Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Search/AllowSearchToUseLocation</p></td>
-<td align="left"><p>Choose whether Cortana and Search can provide location-aware search results.</p>
-<p>Default: Allowed</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Policy                                               | Description                                                                                         |
+-------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Experience/AllowCortana                              | Choose whether to let Cortana install and run on the device.                                        |
+| Search/AllowSearchToUseLocation                      | Choose whether Cortana and Search can provide location-aware search results. <br /> Default: Allowed|
 
 ### <a href="" id="bkmk-cortana-prov"></a>1.3 Cortana Windows Provisioning
 
@@ -384,8 +322,6 @@ To turn off font streaming, create a REG\_DWORD registry setting called **Disabl
 
 **Note**  
 This may change in future versions of Windows.
-
- 
 
 ### <a href="" id="bkmk-previewbuilds"></a>5. Insider Preview builds
 
@@ -425,49 +361,13 @@ Use Group Policy to manage settings for Internet Explorer.
 
 Find the Internet Explorer Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Internet Explorer**.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Turn on Suggested Sites</p></td>
-<td align="left"><p>Choose whether an employee can configure Suggested Sites.</p>
-<p>Default: Enabled</p>
-<p>You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; <strong>Advanced</strong> &gt; <strong>Enable Suggested Sites</strong> check box.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar</p></td>
-<td align="left"><p>Choose whether an employee can configure enhanced suggestions, which are presented to the employee as they type in the address bar.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Turn off the auto-complete feature for web addresses</p></td>
-<td align="left"><p>Choose whether auto-complete suggests possible matches when employees are typing web address in the address bar.</p>
-<p>Default: Disabled</p>
-<p>You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; <strong>Advanced</strong> &gt; <strong>Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog</strong> check box.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Disable Periodic Check for Internet Explorer software updates</p></td>
-<td align="left"><p>Choose whether Internet Explorer periodically checks for a new version.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Turn off browser geolocation</p></td>
-<td align="left"><p>Choose whether websites can request location data from Internet Explorer.</p>
-<p>Default: Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Policy                                               | Description                                                                                         |
+-------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Turn on Suggested Sites| Choose whether an employee can configure Suggested Sites. <br /> Default: Enabled <br /> You can also turn this off in the UI by clearing the **Internet Options** &gt; **Advanced** &gt; **Enable Suggested Sites** check box.|
+| Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | Choose whether an employee can configure enhanced suggestions, which are presented to the employee as they type in the address bar. <br /> Default: Enabled|
+| Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the address bar. <br /> Default: Disabled </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
+| Disable Periodic Check for Internet Explorer software updates| Choose whether Internet Explorer periodically checks for a new version. <br /> Default: Enabled |
+| Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> Default: Disabled|
 
 ### <a href="" id="bkmk-ie-activex"></a>6.2 ActiveX control blocking
 
@@ -504,105 +404,27 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 **Note**  
 The Microsoft Edge Group Policy names were changed in Windows 10, version 1511. The table below reflects those changes.
 
- 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Turn off autofill</p></td>
-<td align="left"><p>Choose whether employees can use autofill on websites.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Allow employees to send Do Not Track headers</p></td>
-<td align="left"><p>Choose whether employees can send Do Not Track headers.</p>
-<p>Default: Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Turn off password manager</p></td>
-<td align="left"><p>Choose whether employees can save passwords locally on their devices.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Turn off address bar search suggestions</p></td>
-<td align="left"><p>Choose whether the address bar shows search suggestions.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Turn off the SmartScreen Filter</p></td>
-<td align="left"><p>Choose whether SmartScreen is turned on or off.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Open a new tab with an empty tab</p></td>
-<td align="left"><p>Choose whether a new tab page appears.</p>
-<p>Default: Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Configure corporate Home pages</p></td>
-<td align="left"><p>Choose the corporate Home page for domain-joined devices.</p>
-<p>Set this to <strong>about:blank</strong></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Policy                                               | Description                                                                                         |
+-------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Turn off autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
+| Allow employees to send Do Not Track headers         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
+| Turn off password manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
+| Turn off address bar search suggestions              | Choose whether the address bar shows search suggestions. <br /> Default: Enabled                    |
+| Turn off the SmartScreen Filter                      | Choose whether SmartScreen is turned on or off.  <br /> Default: Enabled                            |
+| Open a new tab with an empty tab                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
+| Configure corporate Home pages                       | Choose the corporate Home page for domain-joined devices. <br /> Set this to **about:blank**        |
 
 ### <a href="" id="bkmk-edge-mdm"></a>8.2 Microsoft Edge MDM policies
 
 The following Microsoft Edge MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Browser/AllowAutoFill</p></td>
-<td align="left"><p>Choose whether employees can use autofill on websites.</p>
-<p>Default: Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Browser/AllowDoNotTrack</p></td>
-<td align="left"><p>Choose whether employees can send Do Not Track headers.</p>
-<p>Default: Not allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Browser/AllowPasswordManager</p></td>
-<td align="left"><p>Choose whether employees can save passwords locally on their devices.</p>
-<p>Default: Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Browser/AllowSearchSuggestionsinAddressBar</p></td>
-<td align="left"><p>Choose whether the address bar shows search suggestions.</p>
-<p>Default: Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Browser/AllowSmartScreen</p></td>
-<td align="left"><p>Choose whether SmartScreen is turned on or off.</p>
-<p>Default: Allowed</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Policy                                               | Description                                                                                         |
+-------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Browser/AllowAutoFill                                | Choose whether employees can use autofill on websites. <br /> Default: Allowed                      |
+| Browser/AllowDoNotTrack                              | Choose whether employees can send Do Not Track headers.<br /> Default: Not allowed                  |
+| Browser/AllowPasswordManager                         | Choose whether employees can save passwords locally on their devices. <br /> Default: Allowed       |
+| Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the address bar shows search suggestions.. <br /> Default: Allowed                   |
+| Browser/AllowSmartScreen                             | Choose whether SmartScreen is turned on or off.  <br /> Default: Allowed                            |
 
 ### <a href="" id="bkmk-edge-prov"></a>8.3 Microsoft Edge Windows Provisioning
 
@@ -830,7 +652,7 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Window
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
 **Note**  
-If the telemetry level is set to either [Basic](#bkmk-utc-basic) or [Security](#bkmk-utc-security), this is turned off automatically.
+If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
 
  
 
@@ -876,8 +698,6 @@ To turn off **Location for this device**:
 
     **Note**  
     You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](http://msdn.microsoft.com/library/dn905224.aspx).
-
-     
 
     -or-
 
@@ -929,10 +749,8 @@ To turn off **Let apps use my camera**:
 
     **Note**  
     You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](http://msdn.microsoft.com/library/dn905224.aspx).
-
-     
-
-    -or-
+    
+   -or-
 
 -   Create a provisioning package with use Windows ICD, using **Runtime settings** &gt; **Policies** &gt; **Camera** &gt; **AllowCamera**, where:
 
@@ -952,7 +770,7 @@ To turn off **Let apps use my microphone**:
 
 -   Turn off the feature in the UI.
 
-    -or-
+   -or-
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the microphone**
 
@@ -975,15 +793,15 @@ To turn off the functionality:
 
 -   Click the **Stop getting to know me** button, and then click **Turn off**.
 
-    -or-
+   -or-
 
 -   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Regional and Language Options** &gt; **Handwriting personalization** &gt; **Turn off automatic learning**
 
-    -or-
+   -or-
 
 -   Create a REG\_DWORD registry setting called **AcceptedPrivacyPolicy** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings**, with a value of 0 (zero).
 
-    -and-
+   -and-
 
     Create a REG\_DWORD registry setting called **HarvestContacts** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore**, with a value of 0 (zero).
 
@@ -995,7 +813,7 @@ To turn off **Let apps access my name, picture, and other account info**:
 
 -   Turn off the feature in the UI.
 
-    -or-
+   -or-
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access account information**
 
@@ -1013,7 +831,7 @@ To turn off **Choose apps that can access contacts**:
 
 -   Turn off the feature in the UI for each app.
 
-    -or-
+   -or-
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access contacts**
 
@@ -1027,7 +845,7 @@ To turn off **Let apps access my calendar**:
 
 -   Turn off the feature in the UI.
 
-    -or-
+   -or-
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the calendar**
 
@@ -1045,7 +863,7 @@ To turn off **Let apps access my call history**:
 
 -   Turn off the feature in the UI.
 
-    -or-
+   -or-
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access call history**
 
@@ -1059,7 +877,7 @@ To turn off **Let apps access and send email**:
 
 -   Turn off the feature in the UI.
 
-    -or-
+   -or-
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access email**
 
@@ -1132,11 +950,11 @@ Feedback frequency only applies to user-generated feedback, not diagnostic and u
 
 -   To change from **Automatically (Recommended)**, use the drop-down list in the UI.
 
-    -or-
+   -or-
 
 -   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Do not show feedback notifications**
 
-    -or-
+   -or-
 
 -   Create the registry keys (REG\_DWORD type):
 
@@ -1158,40 +976,40 @@ Feedback frequency only applies to user-generated feedback, not diagnostic and u
 
 To change the level of diagnostic and usage data sent when you **Send your device data to Microsoft**:
 
--   To change from [Enhanced](#bkmk-utc-enhanced), use the drop-down list in the UI. The other levels are **Basic** and **Full**. For more info about these levels, see [How telemetry works](#bkmk-moreutc).
+-   To change from **Enhanced**, use the drop-down list in the UI. The other levels are **Basic** and **Full**.
 
     **Note**  
-    You can't use the UI to change the telemetry level to [Security](#bkmk-utc-security).
+    You can't use the UI to change the telemetry level to **Security**.
 
      
 
-    -or-
+   -or-
 
 -   Apply the Group Policy: **Computer Configuration\\Administrative Templates\\Windows Components\\Data Collection And Preview Builds\\Allow Telemetry**
 
-    -or-
+   -or-
 
 -   Apply the System/AllowTelemetry MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
 
-    -   **0**. Maps to the [Security](#bkmk-utc-security) level.
+    -   **0**. Maps to the **Security** level.
 
-    -   **1**. Maps to the [Basic](#bkmk-utc-basic) level.
+    -   **1**. Maps to the **Basic** level.
 
-    -   **2**. Maps to the [Enhanced](#bkmk-utc-enhanced) level.
+    -   **2**. Maps to the **Enhanced** level.
 
-    -   **3**. Maps to the [Full](#bkmk-utc-full) level.
+    -   **3**. Maps to the **Full** level.
 
-    -or-
+   -or-
 
 -   Create a provisioning package, using **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowTelemetry**, where:
 
-    -   **0**. Maps to the [Security](#bkmk-utc-security) level.
+    -   **0**. Maps to the **Security** level.
 
-    -   **1**. Maps to the [Basic](#bkmk-utc-basic) level.
+    -   **1**. Maps to the **Basic** level.
 
-    -   **2**. Maps to the [Enhanced](#bkmk-utc-enhanced) level.
+    -   **2**. Maps to the **Enhanced** level.
 
-    -   **3**. Maps to the [Full](#bkmk-utc-full) level.
+    -   **3**. Maps to the **Full** level.
 
 ### <a href="" id="bkmk-priv-background"></a>13.15 Background apps
 
@@ -1263,7 +1081,7 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
     -or-
 
--   Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed.](http://go.microsoft.com/fwlink/p/?LinkId=620910)
+-   Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](http://go.microsoft.com/fwlink/p/?LinkId=620910).
 
 When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but theyâ€™re non-functional and they canâ€™t be controlled by the employee.
 
@@ -1360,7 +1178,7 @@ You can turn off the ability to launch apps from the Windows Store that were pre
 
 ### <a href="" id="bkmk-updates"></a>22. Windows Update Delivery Optimization
 
-Windows Update Delivery Optimization lets you get Windows updates and Windows Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organizationâ€™s PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
+Windows Update Delivery Optimization lets you get Windows updates and Windows Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
 By default, PCs running Windows 10 Enterprise and Windows 10 Education will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
@@ -1376,115 +1194,26 @@ You can set up Delivery Optimization from the **Settings** UI.
 
 You can find the Delivery Optimization Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization**.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Download Mode</p></td>
-<td align="left"><p>Lets you choose where Delivery Optimization gets or sends updates and apps, including</p>
-<ul>
-<li><p><strong>None</strong>. Turns off Delivery Optimization.</p></li>
-<li><p><strong>Group</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li>
-<li><p><strong>Internet</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li>
-<li><p><strong>LAN</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Group ID</p></td>
-<td align="left"><p>Lets you provide a Group ID that limits which PCs can share apps and updates.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>This ID must be a GUID.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Max Cache Age</p></td>
-<td align="left"><p>Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache.</p>
-<p>The default value is 259200 seconds (3 days).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Max Cache Size</p></td>
-<td align="left"><p>Lets you specify the maximum cache size as a percentage of disk size.</p>
-<p>The default value is 20, which represents 20% of the disk.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Max Upload Bandwidth</p></td>
-<td align="left"><p>Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity.</p>
-<p>The default value is 0, which means unlimited possible bandwidth.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Policy                    | Description                                                                                         |
+----------------------------|-----------------------------------------------------------------------------------------------------|
+| Download Mode             | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>None</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>Group</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>Internet</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li><li><p><strong>LAN</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li></ul>|
+| Group ID                  | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> ** Note** This ID must be a GUID.|
+| Max Cache Age             | Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache. <br /> The default value is 259200 seconds (3 days).|
+| Max Cache Size            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
+| Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
 ### <a href="" id="bkmk-wudo-mdm"></a>22.3 Delivery Optimization MDM policies
 
 The following Delivery Optimization MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>DeliveryOptimization/DODownloadMode</p></td>
-<td align="left"><p>Lets you configure where Delivery Optimization gets or sends updates and apps, including:</p>
-<ul>
-<li><p><strong>0</strong>. Turns off Delivery Optimization.</p></li>
-<li><p><strong>1</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li>
-<li><p><strong>2</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li>
-<li><p><strong>3</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DeliveryOptimization/DOGroupID</p></td>
-<td align="left"><p>Lets you provide a Group ID that limits which PCs can share apps and updates.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>This ID must be a GUID.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>DeliveryOptimization/DOMaxCacheAge</p></td>
-<td align="left"><p>Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache.</p>
-<p>The default value is 259200 seconds (3 days).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DeliveryOptimization/DOMaxCacheSize</p></td>
-<td align="left"><p>Lets you specify the maximum cache size as a percentage of disk size.</p>
-<p>The default value is 20, which represents 20% of the disk.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>DeliveryOptimization/DOMaxUploadBandwidth</p></td>
-<td align="left"><p>Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity.</p>
-<p>The default value is 0, which means unlimited possible bandwidth.</p></td>
-</tr>
-</tbody>
-</table>
+| Policy                    | Description                                                                                         |
+----------------------------|-----------------------------------------------------------------------------------------------------|
+| DeliveryOptimization/DODownloadMode             | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>0</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>1</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li><li><p><strong>2</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>3</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li></ul>|
+| DeliveryOptimization/DOGroupID                 | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> ** Note** This ID must be a GUID.|
+| DeliveryOptimization/DOMaxCacheAge             | Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache. <br /> The default value is 259200 seconds (3 days).|
+| DeliveryOptimization/DOMaxCacheSize            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
+| DeliveryOptimization/DOMaxUploadBandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
- 
 
 ### <a href="" id="bkmk-wudo-prov"></a>22.4 Delivery Optimization Windows Provisioning
 
@@ -1541,15 +1270,15 @@ You can manage your telemetry settings using the management tools you're already
 
 You can set your organization's devices to use 1 of 4 telemetry levels:
 
--   [Security](#bkmk-utc-security) (only available on Windows 10 Enterprise, Windows 10 Education, and Windows 10 IoT Core (IoT Core) editions)
+-   **Security** (only available on Windows 10 Enterprise, Windows 10 Education, and Windows 10 IoT Core (IoT Core) editions)
 
--   [Basic](#bkmk-utc-basic)
+-   **Basic**
 
--   [Enhanced](#bkmk-utc-enhanced)
+-   **Enhanced**
 
--   [Full](#bkmk-utc-full)
+-   **Full**
 
-For more info about these telemetry levels, see [Telemetry levels](#bkmk-telemetrylevels). In Windows 10 Enterprise, Windows 10 Education, and IoT Core, the default telemetry level is [Enhanced](#bkmk-utc-enhanced).
+In Windows 10 Enterprise, Windows 10 Education, and IoT Core, the default telemetry level is **Enhanced**.
 
 **Important**  
 These telemetry levels only apply to Windows components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. App publishers must let people know about how they use their telemetry, ways to opt in or opt out, and they must separately document their privacy policies.
@@ -1570,13 +1299,13 @@ Use a Group Policy object to set your organizationâ€™s telemetry level.
 
 Use the [Policy Configuration Service Provider (CSP)](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to apply the System/AllowTelemetry MDM policy, using one of these telemetry values:
 
--   **0**. Maps to the [Security](#bkmk-utc-security) level.
+-   **0**. Maps to the **Security** level.
 
--   **1**. Maps to the [Basic](#bkmk-utc-basic) level.
+-   **1**. Maps to the **Basic** level.
 
--   **2**. Maps to the [Enhanced](#bkmk-utc-enhanced) level.
+-   **2**. Maps to the **Enhanced** level.
 
--   **3**. Maps to the [Full](#bkmk-utc-full) level.
+-   **3**. Maps to the **Full** level.
 
 ### Use Windows Provisioning to set the telemetry level
 
@@ -1594,13 +1323,13 @@ After you create the provisioning package, you can email it to your employees, p
 
 4.  Go to **Runtime settings** &gt; **Policies** &gt; **System** &gt; **AllowTelemetry** to configure the policies. You can set it to one of the following:
 
-    -   **Disabled \[Enterprise SKU Only\]**. Maps to the [Security](#bkmk-utc-security) level.
+    -   **Disabled \[Enterprise SKU Only\]**. Maps to the **Security** level.
 
-    -   **Basic**. Maps to the [Basic](#bkmk-utc-basic) level.
+    -   **Basic**. Maps to the **Basic** level.
 
-    -   **Full**. Maps to the [Enhanced](#bkmk-utc-enhanced) level
+    -   **Full**. Maps to the **Enhanced** level
 
-    -   **Diagnostic**. Maps to the [Full](#bkmk-utc-full) level.
+    -   **Diagnostic**. Maps to the **Full** level.
 
 5.  After you've added all of your settings to the provisioning package, click **Export** &gt; **Provisioning package**.
 
@@ -1626,13 +1355,13 @@ If a management policy already exists (from Group Policy, MDM, or Windows Provis
 
 4.  Double-click **AllowTelemetry** and set the value to one of the following levels, and the click **OK**.
 
-    -   **0**. This setting maps to the [Security](#bkmk-utc-security) level.
+    -   **0**. This setting maps to the **Security** level.
 
-    -   **1**. This setting maps to the [Basic](#bkmk-utc-basic) level.
+    -   **1**. This setting maps to the **Basic** level.
 
-    -   **2**. This setting maps to the [Enhanced](#bkmk-utc-enhanced) level
+    -   **2**. This setting maps to the **Enhanced** level
 
-    -   **3**. This setting maps to the [Full](#bkmk-utc-full) level.
+    -   **3**. This setting maps to the **Full** level.
 
 5.  Click **File** &gt; **Export**, and then save the file as a .reg file, such as **C:\\AllowTelemetry.reg**. You can run this file from a script on each device in your organization.
 
@@ -1650,160 +1379,3 @@ There are a few more settings that you can turn off that may send telemetry info
 
     **Note**  
     Microsoft doesn't intentionally gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
-
-     
-
-## <a href="" id="bkmk-moreutc"></a>How telemetry works
-
-
-Windows uses telemetry information to analyze and fix software problems. It also helps Microsoft improve its software and provide updates that enhance the security and reliability of devices within your organization.
-
-### <a href="" id="bkmk-telemetrylevels"></a>Telemetry levels
-
-This section explains the different telemetry levels in Windows 10. These levels are available on all desktop and mobile editions of Windows 10, with the exception of the Security level which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core.
-
--   **Security**. Information that's required to help keep Windows secure, including info about theConnected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender. This level is available only on Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core.
-
--   **Basic**. Basic device info, including: quality-related info, app compat, and info from the Security level.
-
--   **Enhanced** Additional insights, including: how Windows and Windows apps are used, how they perform, advanced reliability info, and info from both the Basic and the Security levels.
-
--   **Full**. All info necessary to identify and help to fix problems, plus info from the Security, Basic, and Enhanced levels.
-
-As a diagram:
-
-![](images/priv-telemetry-levels.png)
-
-### <a href="" id="bkmk-utc-security"></a>Security level
-
-The Security level gathers only telemetry info that's required to keep Windows devices secure. This level is only available on Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core editions.
-
-**Note**  
-If your organization relies on Windows Update for updates, you shouldn't use the Security level. Because no Windows Update information is gathered at this level, Microsoft can't tell whether an update successfully installed.
-
-You can continue to use Windows Server Update Services and System Center Configuration Manager while using the Security level.
-
- 
-
-Security level info includes:
-
--   **Connected User Experience and Telemetry component settings**. If data has been gathered and is queued to be sent, the Connected User Experience and Telemetry component downloads its settings file from Microsoftâ€™s servers. The data collected by the client for this request includes OS information, device id (used to identify what specific device is requesting settings) and device class (for example, whether the device is server or desktop).
-
--   **Malicious Software Removal Tool (MSRT)** The MSRT infection report contains information, including device info and IP address.
-
-    **Note**  
-    You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users.
-
-     
-
--   **Windows Defender**. Windows Defender requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address. To configure this, see [Windows Defender](#bkmk-defender).
-
-    **Note**  
-    This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off.
-
-    Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates; moreover, Window Defender requires updated anti-malware signatures in order to provide security functionality.
-
-     
-
-No user content, such as user files or communications, is gathered at the Security telemetry level, and we take steps to avoid gathering any information that directly identifies a company or user, such as name, email address, or account ID. However, in rare circumstances, MSRT information may unintentionally contain personal information. For instance, some malware may create entries in a computer's registry that include information such as a username, causing it to be gathered. MSRT reporting is optional and can be turned off at any time.
-
-To set the telemetry level to Security, use a management policy (Group Policy or MDM) or by manually changing the setting in the registry. For more info, see the [Manage your telemetry settings](#bkmk-utc) section of this article.
-
-### <a href="" id="bkmk-utc-basic"></a>Basic level
-
-The Basic level gathers a limited set of info thatâ€™s critical for understanding the device and its configuration. This level also includes the Security level info. This level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version.
-
-Basic level info includes:
-
--   **Basic device info**. Helps provide an understanding about the various types of devices in the Windows 10 ecosystem, including:
-
-    -   Device attributes, such as camera resolution and display type
-
-    -   Internet Explorer version
-
-    -   Battery attributes, such as capacity and type
-
-    -   Networking attributes, such as mobile operator network and IMEI number
-
-    -   Processor and memory attributes, such as number of cores, speed, and firmware
-
-    -   Operating system attributes, such as Windows edition and IsVirtualDevice
-
-    -   Storage attributes, such as number of drives and memory size
-
--   **Connected User Experience and Telemetry component quality metrics**. Helps provide an understanding about how the Connected User Experience and Telemetry component is functioning, including uploaded events, dropped events, and the last upload time.
-
--   **Quality-related information**. Helps Microsoft develop a basic understanding of how a device and its operating system are performing. Some examples are the amount of time a connected standby device was able to fullsleep, the number of crashes or hangs, and application state change details, such as how much processor time and memory were used, and the total uptime for an app.
-
--   **App compat info**. Helps provide understanding about which apps are installed on a device and to help identify potential compatibility problems.
-
-    -   **General app info and app info for Internet Explorer add-ons**. Includes a list of apps and Internet Explorer add-ons that are installed on a device and whether these apps will work after an upgrade. This app info includes the app name, publisher, version, and basic details about which files have been blocked from usage.
-
-    -   **System info**. Helps provide understanding about whether a device meets the minimum requirements to upgrade to the next version of the operating system. System information includes the amount of memory, as well as info about the processor and BIOS.
-
-    -   **Accessory device info**. Includes a list of accessory devices, such as printers or external storage devices, that are connected to Windows PCs and whether these devices will function after upgrading to a new version of the operating system.
-
-    -   **Driver info**. Includes specific driver usage thatâ€™s meant to help figure out whether apps and devices will function after upgrading to a new version of the operating system. This info can help to determine blocking issues and then help Microsoft and our partners apply fixes and improvements.
-
--   **Store**. Provides info about how the Windows Store performs, including app downloads, installations, and updates. It also includes Windows Store launches, page views, suspend and resumes, and obtaining licenses.
-
-### <a href="" id="bkmk-utc-enhanced"></a>Enhanced level
-
-The Enhanced level gathers info about how Windows and apps are used and how they perform. This level also includes info from both the Basic and Security levels. This level helps to improve experiences by analyzing user interaction with the operating system and apps. Info from this level can be abstracted into patterns and trends that can help Microsoft determine future improvements.
-
-Enhanced level info includes:
-
--   **Operating system events**. Helps to gain insights into different areas of the operating system, including networking, Hyper-V, Cortana, and other components.
-
--   **Operating system app events**. A set of events resulting from Microsoft apps that were downloaded from the Store or pre-installed with Windows, including Photos, Mail, and Microsoft Edge.
-
--   **Device-specific events**. Contains info about events that are specific to certain devices, such as Surface Hub and Microsoft HoloLens. For example, Microsoft HoloLens sends Holographic Processing Unit (HPU)-related events.
-
-If the Connected User Experience and Telemetry component detects a problem that requires gathering more detailed instrumentation, then the Connected User Experience and Telemetry component will only gather info about the events associated with the specific issue, for no more than 2 weeks. Also, if the operating system or an app crashes or hangs, Microsoft will gather the memory contents of the faulting process only at the time of the crash or hang.
-
-### <a href="" id="bkmk-utc-full"></a>Full level
-
-The Full level gathers info necessary to identify and to help fix problems, following the approval process described below. This level also includes info from the Basic, Enhanced, and Security levels.
-
-Additionally, at this level, devices opted in to the Windows Insider Program will send events that can show Microsoft how pre-release binaries and features are performing. All devices in the Windows Insider Program are automatically set to this level.
-
-If a device experiences problems that are difficult to identify or repeat using Microsoft's internal testing, additional info becomes necessary. This info can include any user content that might have triggered the problem and is gathered from a small sample of devices that have both opted into the Full telemetry level and have exhibited the problem.
-
-However, before more info is gathered, Microsoft's privacy governance team, including privacy and other subject matter experts, must approve the diagnostics request made by a Microsoft engineer. If the request is approved, Microsoft engineers can use the following capabilities to get the information:
-
--   Ability to run a limited, pre-approved list of Microsoft certified diagnostic tools, such as msinfo32.exe, powercfg.exe, and dxdiag.exe.
-
--   Ability to get registry keys.
-
--   Ability to gather user content, such as documents, if they might have been the trigger for the issue.
-
-### How is telemetry information handled by Microsoft?
-
-### Collection
-
-Information gathered by the Connected User Experience and Telemetry component complies with Microsoft's security and privacy policies, as well as international laws and regulations. Only those who can demonstrate a valid business need can access the telemetry info.
-
-### Data Transfer
-
-All telemetry info is encrypted during transfer from the device to the Microsoft Data Management Service. Data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as gaming achievements, are always sent immediately. Normal events are not uploaded on metered networks. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
-
-### Microsoft Data Management Service
-
-The Microsoft Data Management Service routes information to internal cloud storage, where it's compiled into business reports for analysis and research. Sensitive info is stored in a separate data store that's locked down to a small subset of Microsoft employees in the Windows Devices Group. The privacy governance team permits access only to people with a valid business justification. The Connected User Experiences and Telemetry component connects to the Microsoft Data Management service at v10.vortex-win.data.microsoft.com. The Connected User Experience and Telemetry component connects to settings-win.data.microsoft.com to collect its settings.
-
-### Usage
-
-Information is used by teams within Microsoft to provide, improve, and personalize experiences, and for security, health, quality, and performance analysis.
-
-An example of personalization is to create individually tailored in-product messages.
-
-Microsoft doesn't share organization-specific customer information with third parties, except at the customer's direction or for the limited purposes described in the privacy statement. However, we do share business reports with partners that include aggregated, anonymous telemetry information. Decisions to share info are made by an internal team that includes privacy, legal, and data management professionals.
-
-### Retention
-
-Microsoft believes in and practices information minimization, so we only gather the info we need, and we only store it for as long as it's needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, particularly if there is a regulatory requirement to do so. Info is typically gathered at a fractional sampling rate, which for some client services, can be as low as 1%.
-
-
-
-
-

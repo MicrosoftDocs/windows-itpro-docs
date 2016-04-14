@@ -1,6 +1,7 @@
 ---
 description: Use this article to make informed decisions about how you can configure telemetry in your organization.
-title: Configure telemetry in your organization
+title: Configure telemetry in your organization (Windows 10)
+keywords: privacy
 ---
 
 # Configure telemetry in your organization
@@ -14,7 +15,7 @@ title: Configure telemetry in your organization
 Use this article to make informed decisions about how you can configure telemetry in your organization. Telemetry is a term that means different things to different people and organizations. For the purpose of this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to keep Windows devices secure, and to help Microsoft improve the quality of Windows and Microsoft services.
 
 **Note**  
-This article does not apply to System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager because those components use a different telemetry service than Windows and Windows Server
+This article does not apply to System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager because those components use a different telemetry service than Windows and Windows Server.
 
 It describes the types of telemetry we gather and the ways you can manage its telemetry. This article also lists some examples of how telemetry can provide you with valuable insights into your enterprise deployments, and how Microsoft uses the data to quickly identify and address issues affecting its customers.
 
@@ -22,7 +23,7 @@ We understand that the privacy and security of our customers’ information is i
 
 ## Overview
 
-In previous versions of Windows and Windows Server, Microsoft used telemetry to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC) on Windows Server, and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server 2016 Technical Preview, you can control telemetry streams by using **Settings** &gt; **Privacy**, Group Policy, or MDM.
+In previous versions of Windows and Windows Server, Microsoft used telemetry to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC) on Windows Server, and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server 2016 Technical Preview, you can control telemetry streams by using Settings &gt; Privacy, Group Policy, or MDM.
 
 Microsoft is committed to improving customer experiences in a mobile-first and cloud-first world, and it all starts with our customers. Telemetry is one critical way Microsoft is using data to improve our products and services. Telemetry gives every enterprise customer a voice that helps us shape future versions of Windows, Windows Server and System Center, allowing us to respond quickly to your feedback and providing new features and improved quality to our customers.
 
@@ -34,11 +35,11 @@ For Windows 10, we invite IT pros to join the Windows Insider Program to give u
 
 ### Data collection
 
-Data gathered by the Connected User Experience and Telemetry component complies with Microsoft’s [security and privacy policies](https://privacy.microsoft.com/privacystatement/), as well as international laws and regulations. The principle of least privilege guides access to telemetry data. Only Microsoft personnel who can demonstrate a valid business need can access the telemetry data.
+Data gathered by the Connected User Experience and Telemetry component complies with Microsoft’s [security and privacy policies](https://privacy.microsoft.com/privacystatement), as well as international laws and regulations. The principle of least privilege guides access to telemetry data. Only Microsoft personnel who can demonstrate a valid business need can access the telemetry data.
 
 ### Data transfer
 
-All telemetry data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10,data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection,are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
+All telemetry data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10, data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection, are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
 
 ### Endpoints
 
@@ -58,9 +59,7 @@ Data gathered from telemetry is used by Microsoft teams primarily to improve our
 
 ### Retention
 
-Microsoft only gathers the information we need, and it is only stored for as long as it is needed to provide a service or for analysis. Most of the data is deleted within 30 days.
-
-Windows Error Reporting and Online Crash Analysis data is kept for 60 days.
+Microsoft believes in and practices information minimization. We strive to gather only the info we need, and store it for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Store purchase history. Info is typically gathered at a fractional sampling rate, which can be as low as 1% of clients reporting data. 
 
 ## How is the data gathered?
 
@@ -119,7 +118,7 @@ The data gathered at this level includes:
 -   **Windows Defender/Endpoint Protection**. Windows Defender and System Center Endpoint Protection requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address.
 
     **Note**  
-    This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](manage-privacy-for-windows-10-in-your-company.md#windows-defender).
+    This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](disconnect-your-organization-from-microsoft.md#windows-defender).
 
     Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates.
 
@@ -214,8 +213,6 @@ We do not recommend that you turn off telemetry in your organization as valuable
 **Important**  
 These telemetry levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. You should work with your app vendors to understand their telemetry policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses telemetry, see [Overview of Office Telemetry](http://technet.microsoft.com/library/jj863580.aspx).
 
- 
-
 You can turn on or turn off System Center telemetry gathering. The default is on and the data gathered at this level represents what is gathered by default when System Center telemetry is turned on. However, setting the operating system telemetry level to **Basic** will turn off System Center telemetry, even if the System Center telemetry switch is turned on.
 
 The lowest telemetry setting level supported through management policies is **Security**. The lowest telemetry setting supported through the Settings UI is **Basic**. The default telemetry setting for Windows Server 2016 Technical Preview is **Enhanced.**
@@ -299,6 +296,6 @@ Telemetry plays an important role in quickly identifying and fixing critical rel
 
 Telemetry provides a view of which features and services customers use most. For example, the telemetry data provides us with a heat map of the most commonly deployed Windows Server roles, most used Windows features, and which ones are used the least. This helps us make informed decisions on where we should invest our engineering resources to build a leaner operating system. For System Center, understanding the customer environment for management and monitoring will help drive the support compatibilities matrix, such as host and guest OS. This can help you use existing hardware to meet your business needs and reduce your total cost of ownership, as well as reducing downtime associated with security updates.
 
-### <a href="" id="build-features-that-address-our-customers--needs"></a>Build features that address our customers’ needs
+### Build features that address our customers’ needs
 
 Telemetry also helps us better understand how customers deploy components, use features, and use services to achieve their business goals. Getting insights from that information helps us prioritize our engineering investments in areas that can directly affect our customers’ experiences and workloads. Some examples include customer usage of containers, storage, and networking configurations associated with Windows Server roles like Clustering and Web. Another example could be to find out when is CPU hyper-threading turned off and the resulting impact. We use the insights to drive improvements and intelligence into some of our management and monitoring solutions, to help customers diagnose quality issues, and save money by making fewer help calls to Microsoft.
