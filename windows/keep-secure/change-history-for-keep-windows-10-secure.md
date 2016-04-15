@@ -9,41 +9,17 @@ author: brianlic-msft
 ---
 
 # Change history for Keep Windows 10 secure
-
-
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">New or changed topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">[Protect derived domain credentials with Credential Guard](credential-guard.md)</td>
-<td align="left"><p>Clarified Credential Guard protections</p></td>
-</tr>
-<tr class="even">
-<td align="left">[Requirements to use AppLocker](requirements-to-use-applocker.md)</td>
-<td align="left"><p>Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md)</td>
-<td align="left"><p>Added pre-release content about how to set up and deploy enterprise data protection (EDP) in an enterprise environment.</p></td>
-</tr>
-</tbody>
-</table>
+## March 2016
 
- 
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Protect derived domain credentials with Credential Guard](credential-guard.md) |Clarified Credential Guard protections |
+|[Requirements to use AppLocker](requirements-to-use-applocker.md) |Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy.|
+|[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md) |Added pre-release content about how to set up and deploy enterprise data protection (EDP) in an enterprise environment.|
 
 ## February 2016
-
 
 | New or changed topic                                                                                                                | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------|
