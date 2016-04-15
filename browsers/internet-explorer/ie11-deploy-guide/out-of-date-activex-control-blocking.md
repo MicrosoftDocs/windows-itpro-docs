@@ -88,7 +88,7 @@ IE uses Microsoft’s versionlist.xml file to determine whether an ActiveX contr
 
 You can see your copy of the versionlist.xml file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml`, or you can view Microsoft’s version at [Internet Explorer version list](http://go.microsoft.com/fwlink/p/?LinkId=403864).
 
-**Security Note:**<br>Although we bly recommend against it, if you don’t want your computer to automatically download the updated version list from Microsoft, run the following command from a command prompt:
+**Security Note:**<br>Although we strongly recommend against it, if you don’t want your computer to automatically download the updated version list from Microsoft, run the following command from a command prompt:
 
 ```
 reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v DownloadVersionList /t REG_DWORD /d 0 /f
