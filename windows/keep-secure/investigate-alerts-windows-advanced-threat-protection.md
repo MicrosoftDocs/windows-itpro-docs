@@ -44,7 +44,7 @@ The **Alerts related to this machine** section provides a list of alerts that ar
 
 The **Machine timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine.
 
-You'll see an aggregated view of alerts, a short description of the alert, details on the action taken, and which user ran the action. This helps you see significant activities or behaviors that occurred on a machine within your network in relation to a specific time frame. Several icons are used to identify various detections and their current state. For more information, see [Windows Defender ATP icons](Windows-Defender-ATP-icons).
+You'll see an aggregated view of alerts, a short description of the alert, details on the action taken, and which user ran the action. This helps you see significant activities or behaviors that occurred on a machine within your network in relation to a specific time frame. Several icons are used to identify various detections and their current state. For more information, see [Windows Defender ATP icons](icons-windows-atp.md).
 
 This feature also enables you to selectively drill down into a behavior or event that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a specified time period.
 
