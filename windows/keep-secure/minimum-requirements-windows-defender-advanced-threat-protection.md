@@ -25,13 +25,12 @@ Your organization must use Azure Active Directory (AAD) to manage users. AAD is 
 service onboarding to manage user-based access to the [Windows Defender ATP portal](https://seville.windows.com/).
 
 If you’d like help with using AAD to set up user access, contact the
-[Windows Defender ATP Yammer group](https://www.yammer.com/wsscengineering/#/threads/inGroup?type=in_group&feedId=6869350&view=all) 
-https://www.yammer.com/wsscengineering/\#/threads/inGroup?type=in\_group&feedId=7108776&view=all
+[Windows Defender ATP Yammer group](https://www.yammer.com/wsscengineering/\#/threads/inGroup?type=in\_group&feedId=7108776&view=all)
 or email [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 When you run the onboarding wizard for the first time, you must choose
 where your Windows Defender ATP-related information is stored: in either
-a European or United States datacenter.
+a European or United States data center.
 
 > **Notes**&nbsp;&nbsp;
 -   You cannot change your data storage location after the
