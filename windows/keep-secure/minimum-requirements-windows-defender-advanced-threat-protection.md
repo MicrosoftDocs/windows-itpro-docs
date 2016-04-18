@@ -30,7 +30,7 @@ or email [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 When you run the onboarding wizard for the first time, you must choose
 where your Windows Defender ATP-related information is stored: in either
-a European or United States data center.
+a European or United States datacenter.
 
 > **Notes**&nbsp;&nbsp;
 -   You cannot change your data storage location after the
