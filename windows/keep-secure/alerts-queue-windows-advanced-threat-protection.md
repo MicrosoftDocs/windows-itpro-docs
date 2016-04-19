@@ -36,7 +36,7 @@ There are three mechanisms to pivot the queue against:
 
 1. Sort the queue by opening the drop-down menu in the **Sort by** field and choosing:
 
-  - **Newest** - Sorts alerts by when the alert was last seen on an endpoint. 
+  - **Newest** - Sorts alerts based on when the alert was last seen on an endpoint. 
   - **Time in queue** - Sorts alerts by the length of time an alert has been in the queue.
   - **Severity** - Sorts alerts by their level of severity.
 
