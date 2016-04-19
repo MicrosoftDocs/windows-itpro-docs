@@ -75,6 +75,7 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 **Suppress alert on this machine** | Alerts with the same alert title and on that specific machine only will be suppressed. <br /><br />All other alerts on that machine will not be suppressed. | <ul><li>A security researcher is investigating a malicious script that has been used to attack other machines in your organization.</li><li>A developer regularly creates PowerShell scripts for their team.</li></ul>
 **Suppress alert in my organization** | Alerts with the same alert title on any machine will be suppressed. | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>
 
+
 **Suppress an alert and create a suppression rule:**
 
 1. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the heading of an existing alert.
@@ -87,7 +88,7 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 1. Click the settings icon ![The settings icon looks like a cogwheel or gear](images/settings.png) on the main menu bar at the top of the Windows Defender ATP screen.
 2. Click **Suppression rules**.
 
-![Click the settings icon and then Suppression rules to create and modify rules](images/suppression-rules.png)
+  ![Click the settings icon and then Suppression rules to create and modify rules](images/suppression-rules.png)
 
 > **Note**&nbsp;&nbsp;You can also click **See rules** in the confirmation window that appears when you suppress an alert. 
 
