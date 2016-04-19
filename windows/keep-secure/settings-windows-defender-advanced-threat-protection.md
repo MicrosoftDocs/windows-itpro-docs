@@ -15,7 +15,7 @@ author: DulceMV
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Use the **Settings** menu ![Settings icon](images/settings-icon.png) to configure the time zone, suppression rules, and view license information.
+Use the **Settings** menu ![Settings icon](images/settings.png) to configure the time zone, suppression rules, and view license information.
 
 ## Time zone settings
 The aspect of time is important in the assessment and analysis of perceived and actual cyberattacks.
@@ -24,7 +24,7 @@ Cyberforensic investigations often rely on time stamps to piece together the seq
 
 Windows Defender ATP can display either Coordinated Universal Time (UTC) or local time.
 
-Your current time zone setting is shown in the Windows Defender ATP menu. You can change the displayed time zone in the **Settings** menu ![Settings icon](images/settings-icon.png).
+Your current time zone setting is shown in the Windows Defender ATP menu. You can change the displayed time zone in the **Settings** menu ![Settings icon](images/settings.png).
 
 ### UTC time zone
 Windows Defender ATP uses UTC time by default.
@@ -43,7 +43,7 @@ The Windows Defender ATP time zone is set by default to UTC.
 Setting the time zone also changes the times for all Windows Defender ATP views.
 To set the time zone:
 
-1.	Click the **Settings** menu ![Settings icon](images/settings-icon.png).
+1.	Click the **Settings** menu ![Settings icon](images/settings.png).
 2.	Select the **Timezone:UTC** indicator.
 3.	The time zone indicator changes to **Timezone:Local**. Click it again to change back to **Timezone:UTC**.
 
