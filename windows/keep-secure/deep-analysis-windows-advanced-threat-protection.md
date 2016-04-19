@@ -80,15 +80,16 @@ If you encounter a problem when trying to submit a file, try each of the followi
 1. Ensure the file is a PE. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
 2. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
 3. You can wait a short while and try to submit the file again, in case the queue is full or there was a temporary connection or communication error.
-4. Verify the policy setting enables sample collection and try to submit the file again: 
-  1. Change the following registry entry and values to change the policy on specific endpoints:
+4. Verify the policy setting enables sample collection and try to submit the file again.
+
+  a. Change the following registry entry and values to change the policy on specific endpoints:
  ```
 HKLM\SOFTWARE\Policies\Microsoft\Sense\AllowSampleCollection
   Value = 0 - block sample collection
   Value = 1 - allow sample collection
 ```
-6. Change the organizational unit through the GPO. See [Configure with Group Policy](additional-configuration-windows-advanced-threat-protection.md#configure-with-group-policy).
-7. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
+5. Change the organizational unit through the GPO. See [Configure with Group Policy](additional-configuration-windows-advanced-threat-protection.md#configure-with-group-policy).
+6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 > **Note**&nbsp;&nbsp;If the value *AllowSampleCollection* is not available, the client will allow sample collection by default. 
 
