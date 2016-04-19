@@ -68,7 +68,7 @@ For additional settings, see the [Additional configuration settings section](add
 <span style="background-color: yellow;">Naama note: If it’s a package we create then we’ll set the necessary privileges, otherwise provide guidance (Omri: what is the necessary privileges?)</span>
 
 ## Configure endpoints manually with registry changes 
-You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this when testing the service before you commit to onboarding all endpoints in your network.
+You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
 1.  Extract the contents of the configuration package to a location on
     the endpoint you want to onboard (for example, the Desktop).
