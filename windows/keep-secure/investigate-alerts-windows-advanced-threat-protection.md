@@ -100,7 +100,7 @@ You can get information from the following sections in the file view:
 - File in organization
 - Observed in organization
 
-The file details section shows attributes of the file such as its MD5 and its prevalence worldwide.
+The file details section shows attributes of the file such as its MD5 hash or number and its prevalence worldwide.
 
 The **Deep analysis** section provides the option of submitting a file for deep analysis to gain detailed visibility on observed suspicious behaviors, and associated artifacts. For more information on submitting files for deep analysis, see the **Deep analysis** topic.
 
