@@ -86,7 +86,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
     desktop, type:
 ```*%userprofile%\Desktop\WindowsATPOnboardingScript.sc*```
 
-4.  Press the  **Enter ** key or click  **OK**.
+4.  Press the  **Enter** key or click  **OK**.
 
 See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) topic for details on how you can manually validate that the endpoint is compliant and correctly reports telemetry.
 
