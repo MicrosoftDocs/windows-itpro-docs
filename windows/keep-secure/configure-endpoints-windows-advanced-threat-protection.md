@@ -83,8 +83,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
 3.  Type the location of the script file. If you copied the file the
-    desktop, type:
-```*%userprofile%\Desktop\WindowsATPOnboardingScript.sc*```
+    desktop, type:```*%userprofile%\Desktop\WindowsATPOnboardingScript.sc*```
 
 4.  Press the  **Enter** key or click  **OK**.
 
