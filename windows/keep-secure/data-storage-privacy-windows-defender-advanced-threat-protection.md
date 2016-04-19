@@ -23,7 +23,7 @@ Microsoft will collect and store information from your configured endpoints in a
 
 Information collected includes code file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and machine details (such as GUIDs, names, and the operating system version).
 
-Microsoft stores this data in a Microsoft Azure security-specific data store, and maintains it in accordance with Microsoft privacy practices and [Microsoft Trust Center policies](https://azure.microsoft.com/en-us/support/trust-center/43). 
+Microsoft stores this data in a Microsoft Azure security-specific data store, and maintains it in accordance with Microsoft privacy practices and [Microsoft Trust Center policies](https://azure.microsoft.com/en-us/support/trust-center/). 
 
 Microsoft uses this data to: 
 - Proactively identify indicators of attack (IOAs) in your organization 
@@ -34,7 +34,7 @@ We do not mine your data for advertising or for any other purpose other than pro
 
 ## Do I have flexibility to select where to store my data?
 
-Yes. Data for this new service is stored in Microsoft Azure datacenters in the United States and European Union based on the geolocation properties you specify when you onboard to the service. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations in which your data will reside. Microsoft will not transfer the data from the specified geolocation except in specific circumstances during the TAP stage (see the question [Is there a difference between how you handle data for the TAP program and for General Availability?](Is-there-a-difference-between-how-Microsoft-handles-data-for-the-TAP-program-and-foR-General-Availability?). If you have concerns about storage of data in a particular country, please contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
+Yes. Data for this new service is stored in Microsoft Azure datacenters in the United States and European Union based on the geolocation properties you specify when you onboard to the service. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations in which your data will reside. Microsoft will not transfer the data from the specified geolocation except in specific circumstances during the TAP stage (see the question [Is there a difference between how you handle data for the TAP program and for General Availability?](#Is-there-a-difference-between-how-Microsoft-handles-data-for-the-TAP-program-and-foR-General-Availability?). If you have concerns about storage of data in a particular country, please contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## Is my data isolated from other customer data?
 Yes. The new cloud service provides appropriate segregation at a number of levels, such as isolation of files, configurations, and telemetry data. Aside from data access authentication, simply keeping different data appropriately segregated provides well-recognized protection.

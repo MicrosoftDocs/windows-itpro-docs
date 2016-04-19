@@ -33,7 +33,7 @@ When you open the portal, you’ll see the main areas of the application:
  
  ![Windows Defender Advanced Threat Protection portal](images/portal.png)
  
-You can navigate through the portal using the menu options available in all sections. Refer to Table 3 for a description of each section.
+You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 
 Area | Description 
 :---|:---
@@ -57,6 +57,7 @@ Icon | Description
 ![Active threat icon](images/active-threat-icon.png)| Active threat – Threats actively executing at the time of detection. 
 ![Remediated icon](images/remediated-icon.png)| Remediated – Threat removed from the machine
 ![Not remediated icon](images/not-remediated-icon.png)| Not remediated – Threat not removed from the machine. 
+
 
 ### Related topic
 [Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)

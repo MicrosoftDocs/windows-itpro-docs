@@ -89,9 +89,9 @@ For example, if endpoints are not appearing in the **Machines view** list,you mi
 
 Message | Action
 :---|:---
-Windows Advanced Threat Protection Service failed to connect to server at ```<variable>``` | Check the connection to the URL. See [Configure proxy and Internet connectivity](Configure-proxy-and-Internet-connectivity). |
-  Windows Advanced Threat Protection Service failed to read onboarding parameters. Failure code: ```<variable>``` | Check that GP settings are correct and there are not settings impacting permissions in the policy. |
-Windows Advanced Threat Protection Service failed to persist onboarding information. Failure code: ```<variable>``` | Check that GP settings are correct and there are not settings impacting permissions in the policy.|
+Windows Advanced Threat Protection Service failed to connect to server at ```<variable>``` | Check the connection to the URL. See [Configure proxy and Internet connectivity](#configure-proxy-and-Internet-connectivity). 
+  Windows Advanced Threat Protection Service failed to read onboarding parameters. Failure code: ```<variable>``` | Check that GP settings are correct and there are not settings impacting permissions in the policy. 
+Windows Advanced Threat Protection Service failed to persist onboarding information. Failure code: ```<variable>``` | Check that GP settings are correct and there are not settings impacting permissions in the policy.
 
 
 ## Related topics
