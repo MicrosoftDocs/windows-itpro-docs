@@ -15,5 +15,5 @@
 ### [Microsoft Enterprise Desktop Virtualization 2](medv-v2/)
 ## [User Experience Virtualization]()
 ### [User Experience Virtualization 2](uev-v2/)
-### [User Experience Virtualization 2](uev-v1/)
+### [User Experience Virtualization 1](uev-v1/)
 ## [MDOP Solutions and Scenarios](solutions/)
