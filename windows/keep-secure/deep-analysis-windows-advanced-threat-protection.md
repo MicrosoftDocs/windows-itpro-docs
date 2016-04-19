@@ -14,7 +14,7 @@ ms.sitesec: library
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Cyber security investigations are typically triggered by an alert. Alerts are related to one or more observed files that are often new or unknown. Clicking a file takes you to the file view where you can see the file's metadata. To enrich the data relating to the file you can submit the file for deep analysis. 
+Cyber security investigations are typically triggered by an alert. Alerts are related to one or more observed files that are often new or unknown. Clicking a file takes you to the file view where you can see the file's metadata. To enrich the data related to the file, you can submit the file for deep analysis. 
 
 The deep analysis feature executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IPs. 
 Deep analysis currently supports extensive analysis of PE (portable executable) files (including _.exe_ and _.dll_ files). 
@@ -39,7 +39,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 
 **Submit files for deep analysis:**
 
-1. Select the file you want to submit for deep analysis. You can select or search a file from any of the following views: 
+1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views: 
   - Alerts - click the file links from the **Description** or **Details** in the Alert timeline 
   - **Machines View** - click the file links from the **Description** or **Details** in the **Machine in organization** section 
   - Search box - select **File** from the drop-down menu and enter the file name 
