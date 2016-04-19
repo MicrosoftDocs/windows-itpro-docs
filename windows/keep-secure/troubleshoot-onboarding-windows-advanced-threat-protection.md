@@ -37,15 +37,15 @@ If you don’t see any users in the [Azure Management Portal](https://manage.win
 ## Manage access for all users in Azure Active Directory
 If you remove access for all users to the Windows ATP Service application (by clicking Manage access), you will not see the application in the list of applications in your directory in the [Azure Management Portal](https://manage.windowsazure.com/).
 
-Gain access to the application in the Azure Management Portal again:
+Log in to the application in the Azure Management Portal again:
 
 1.  Sign in to the [Windows Defender ATP portal](https://seville.windows.com/) with the user account you want to give access to.
 
-2.  Confirm you have signed in with the correct details, and click **Accept**.
+2.  Confirm that you have signed in with the correct details, and click **Accept**.
 
 3.  Go to the [Azure Management Portal](https://manage.windowsazure.com/) and navigate to your directory. You will see the **Windows ATP Service** application in the **Applications** section again.
 
-## Ensure the telemetry and diagnostics service is enabled
+## Ensure that the telemetry and diagnostics service is enabled
 
 If the endpoints aren’t reporting correctly, you might need to check that the Windows 10 TAP telemetry and diagnostics service is enabled on the endpoint.
 
@@ -58,7 +58,7 @@ If the endpoints aren’t reporting correctly, you might need to check that the 
 
 The endpoints must be able to connect to the Internet and send their data outside of your organization’s network. You might need to set additional proxy configurations to ensure endpoints can report correctly.
 
-1.  Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure and click **Edit**.
+1.  Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure, and click **Edit**.
 
 2.  In the **Group Policy Management Editor**, go to **Computer configuration**.
 
@@ -74,7 +74,7 @@ The endpoints must be able to connect to the Internet and send their data outsid
 
 You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/en-US/library/aa745633(v=bts.10).aspx) on individual endpoints, or check the status of machines from the [Windows Defender ATP portal](https://seville.windows.com/).
 
-For example, if endpoints are not appearing in the **Machines view** list,you might need to look for event IDs on the endpoints.
+For example, if endpoints are not appearing in the **Machines view** list, you might need to look for event IDs on the endpoints.
 
 > **Note**&nbsp;&nbsp; It can take several days for endpoints to begin reporting to the Windows Defender ATP service.
 
