@@ -41,11 +41,11 @@ Area | Description
 (2) Windows Security Center home | Opens the Windows Security Center home.||
 (3) Settings | Provides access to configuration settings such as time zone, alert suppression rules, and license information.||
 (4) Navigation pane | Use the navigation pane to move between the **Dashboard**, **Alerts queue**, **Machines view**, **Preferences setup**, and **Client onboarding**.||
-|**Dashboard**	| Provides clickable tiles that open detailed information on various alerts that have been detected in your organization. |
-|**Alerts queue** | Enables you to view separate queues of new, in progress, and resolved alerts.|
-|**Machines view**| Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.|
-|**Preferences setup**|	Shows the settings you selected during [service onboarding](service-onboarding-windows-advanced-threat-protection.md), and lets you update your industry preferences and retention policy period.
-|**Client onboarding**|	Allows you to download the onboarding configuration package.
+**Dashboard**	| Provides clickable tiles that open detailed information on various alerts that have been detected in your organization. |
+**Alerts queue** | Enables you to view separate queues of new, in progress, and resolved alerts.|
+**Machines view**| Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.|
+**Preferences setup**|	Shows the settings you selected during [service onboarding](service-onboarding-windows-advanced-threat-protection.md), and lets you update your industry preferences and retention policy period.
+**Client onboarding**|	Allows you to download the onboarding configuration package.
 (5) Main portal| Main area where you will see the different views such as the Dashboard, Alerts queue, and Machines view.|
 (6) Search | Search for machines, files, external IP Addresses, or domains across endpoints. The drop-down combo box allows you to select the entity type.|
 
