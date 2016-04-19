@@ -100,7 +100,7 @@ You have to assign users to the Windows ATP Service application in Azure Active 
 
 15. You can continue assigning roles for other users in your organization now, or you can return to the Windows Defender ATP portal to complete the service onboarding wizard.
 
-    > **Note**&nbsp;&nbsp; You need to assign roles for every user in your organization that requires access to the Windows Defender ATP portal. You can assign roles at any time by going to the Azure Management Portal, clicking **Active Directory** and then finding your directory in the list and following the steps above.
+    > **Note**&nbsp;&nbsp; You need to assign roles for every user in your organization that requires access to the Windows Defender ATP portal. You can assign roles at any time by going to the Azure Management Portal, clicking **Active Directory**, and then finding your directory in the list and following the steps above.
 
 When you have finished assigning roles, return to the [Windows Defender ATP portal](https://seville.windows.com) and refresh the
 page.
