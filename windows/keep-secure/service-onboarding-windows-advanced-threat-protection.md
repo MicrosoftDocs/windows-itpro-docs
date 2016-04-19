@@ -41,7 +41,7 @@ You have to assign users to the Windows ATP Service application in Azure Active 
     
     d.	Sign in with the correct user name and password for an account that has permissions to assign users in AAD.
 
-3. On the ** Microsoft Azure Dashboard**, click ** Browse** in the navigation pane and then click **Active Directory** to open the [Azure Management Portal](https://manage.windowsazure.com/). 
+3. On the **Microsoft Azure Dashboard**, click **Browse** in the navigation pane and then click **Active Directory** to open the [Azure Management Portal](https://manage.windowsazure.com/). 
 
     ![Azure Active Directory menu](images/azure-browse.png)
 
