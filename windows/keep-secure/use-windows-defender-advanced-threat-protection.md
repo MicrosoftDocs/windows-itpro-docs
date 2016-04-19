@@ -19,7 +19,7 @@ A typical security breach investigation requires a member of a security operatio
 1. View an alert on the **Dashboard** or **Alerts queue**
 2. Review the indicators of compromise (IOC) or indications of attack (IOAs)
 3. Review a timeline of alerts, behaviors, and events from the machine
-4. Manage alerts, understand the threat/potential breach, collect information to support taking action, and resolve the alert
+4. Manage alerts, understand the threat or potential breach, collect information to support taking action, and resolve the alert
 
 ![Flowchart describing the four stages of investigation](images/overview.png)
  
@@ -30,7 +30,7 @@ Teams can monitor the overall status of enterprise endpoints from the **Dashboar
 Alerts in the portal help to notify you of detected threat behaviors or activities on your endpoints.
 The **Dashboard** and **Alerts queue** provide important information about your endpoints that can help you address alerts.
 
-The **Dashboard** groups categorize active alerts into **New** or **In progress** queues, and supports filtering by severity levels. It also has clickable tiles that give visual cues on the overall health status of your organization. Each tile opens a detailed view of the corresponding overview.
+The **Dashboard** groups or categorizes active alerts into **New** or **In progress** queues, and supports filtering by severity levels. It also has clickable tiles that give visual cues on the overall health status of your organization. Each tile opens a detailed view of the corresponding overview.
 
 Alerts are organized in three queues, by their workflow status: 
 
