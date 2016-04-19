@@ -60,7 +60,7 @@ The **Machines reporting** tile shows a bar graph that represents the number of 
 ## Investigate machines with active threats
 The **Active malware** tile will only appear if your endpoints are using Windows Defender.
 
-Active malware is defined as threats that were actively executing at the time of detection.
+Active malware is defined as threats that are actively executing at the time of detection.
 
 Hover over each bar to see the number of active detections (as **Threats**) and the number of endpoints with at least one active detection (as **Machines**) over the past 30 days.
 
@@ -72,7 +72,7 @@ The chart is sorted into five categories:
 - **Ransomware** - threats that prevent user access to a machine or its files and demand payment to restore access.
 - **Exploit** - threats that use software vulnerabilities to infect machines.
 - **Threat** - all other threats that don't fit into the **Password stealer**, **Ransomware**, or **Exploit** categories. This includes trojans, worms, backdoors, and viruses.
-- **Low severity** - threats with a low severity, including adware and potentially unwanted software such as browser modifiers.
+- **Low severity** - threats with low severity, including adware and potentially unwanted software such as browser modifiers.
 
 Threats are considered "Active" if there is a very high probability that the malware was executing on your network, as opposed to statically located on-disk.
 
