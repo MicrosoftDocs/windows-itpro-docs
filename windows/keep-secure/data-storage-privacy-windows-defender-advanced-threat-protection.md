@@ -32,7 +32,7 @@ Microsoft uses this data to:
 
 We do not mine your data for advertising or for any other purpose other than providing you the service.
 
-## Do I have flexibility to select where to store my data?
+## Do I have the flexibility to select where to store my data?
 
 Yes. Data for this new service is stored in Microsoft Azure datacenters in the United States and European Union based on the geolocation properties you specify when you onboard to the service. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations in which your data will reside. Microsoft will not transfer the data from the specified geolocation except in specific circumstances during the TAP stage (see the question [Is there a difference between how you handle data for the TAP program and for General Availability?](#Is-there-a-difference-between-how-Microsoft-handles-data-for-the-TAP-program-and-foR-General-Availability?). If you have concerns about storage of data in a particular country, please contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
@@ -53,14 +53,14 @@ Additionally, Microsoft conducts background verification checks of certain opera
 No. Customer data is isolated from other customers and is not shared. However, insights on the data resulting from Microsoft processing (for example, deep file analysis processing), and which don’t contain any customer specific data, might be shared with other customers. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
 
 ## How long will Microsoft store my data? What is Microsoft’s data retention policy?
-Your data privacy is one of our key commitments for the cloud. For this service, at contract termination or expiration your data will be erased from Microsoft’s systems to make it unrecoverable after 90 days from contract termination or expiration. 
+Your data privacy is one of our key commitments for the cloud. For this service, at contract termination or expiration, your data will be erased from Microsoft’s systems to make it unrecoverable after 90 days from contract termination or expiration. 
 
 ## Can you help us maintain regulatory compliance?
 By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run, including this new Microsoft cloud service. 
-Microsoft provides customers with detailed information about our security and compliance programs, including audit reports and compliance packages, to help customers assess our services against their own legal and regulatory requirements. Windows Defender ATP has a roadmap for obtaining national, regional and industry-specific certifications, starting with ISO 27001.The service is designed, implemented and maintained according to the compliance and privacy principles of ISO 27001 as well as Microsoft’s compliance standards.
+Microsoft provides customers with detailed information about our security and compliance programs, including audit reports and compliance packages, to help customers assess our services against their own legal and regulatory requirements. Windows Defender ATP has a roadmap for obtaining national, regional and industry-specific certifications, starting with ISO 27001. The service is designed, implemented, and maintained according to the compliance and privacy principles of ISO 27001, as well as Microsoft’s compliance standards.
 
 ## Is there a difference between how Microsoft handles data for the TAP program and for General Availability?
-When you onboard your service during TAP, you will be asked to choose to store your data in either a European or US datacenter. Your data will not be copied or moved outside of the datacenter you choose, except in the following specific circumstance:
+When you onboard your service during TAP, you will be asked to choose to store your data in a datacenter either in Europe or United States. Your data will not be copied or moved outside of the datacenter you choose, except in the following specific circumstance:
 
 1.	You choose Europe as your datacenter, and
 2.	You [submit a file for deep analysis](deep-analysis-windows-advanced-threat-protection.md).
