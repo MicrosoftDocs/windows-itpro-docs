@@ -84,7 +84,7 @@ You have to assign users to the Windows ATP Service application in Azure Active 
 
 10. Click **Assign**.
 
-11. Confirm that you want to enable access for the user from the notification bar. If you click **Yes**, the user is given access to the Windows Defender ATP portal.  One or more progress bars will appear that indicates the user is being assigned a role, and you will see confirmation messages. You don’t need to do anything with the messages; they will go away after a short period of time.
+11. Confirm that you want to enable access for the user from the notification bar. If you click **Yes**, the user is given access to the Windows Defender ATP portal.  One or more progress bars will appear that indicates the user is being assigned a role, and you will see confirmation messages. You don’t need to do anything with the messages, they will go away after a short period of time.
 
     ![Confirmation page to enable access to users](images/confirm-user-access.png)
 
