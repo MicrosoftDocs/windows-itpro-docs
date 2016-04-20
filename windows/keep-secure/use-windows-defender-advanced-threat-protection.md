@@ -4,7 +4,7 @@ description: Learn about the features on Windows Defender ATP portal, including 
 keywords: dashboard, alerts queue, manage alerts, investigation, investigate alerts, investigate machines, submit files, deep analysis, high, medium, low, severity, 
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:deploy
+ms.mktglfcycl: deploy
 ms.sitesec: library
 ---
 

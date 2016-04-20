@@ -4,7 +4,7 @@ description: Use the menu to configure the time zone, suppression rules, and vie
 keywords: Windows Defender ATP settings, Windows Defender, cybersecurity threat intelligence, advanced threat protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: W10
-ms.mktglfcycl:deploy
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DulceMV
 ---

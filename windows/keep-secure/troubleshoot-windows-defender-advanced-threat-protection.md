@@ -4,7 +4,7 @@ description: Find solutions and work arounds to known issues such as server erro
 keywords: troubleshoot Windows Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:deploy
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---

@@ -4,7 +4,7 @@ description: Change the status of alerts, create suppression rules to hide alert
 keywords: manage alerts, manage, alerts, status, new, in progress, resolved, resolve alerts, suppress, supression, rules, context, history, comments, changes
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:deploy
+ms.mktglfcycl: deploy
 ms.sitesec: library
 ---
 

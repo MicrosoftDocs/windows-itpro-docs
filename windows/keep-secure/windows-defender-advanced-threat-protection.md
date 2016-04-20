@@ -4,7 +4,7 @@ description: Windows Defender Advanced Threat Protection is an enterprise securi
 keywords: introduction to Windows Defender Advanced Threat Protection, introduction to Windows Defender ATP, cybersecurity, advanced persistent threat, enterprise security
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:deploy
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
