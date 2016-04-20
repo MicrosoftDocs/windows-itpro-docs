@@ -11,7 +11,7 @@ author: TrudyHa
 
 This topic has instructions for adding a device account for your Microsoft Surface Hub when you have a pure, online deployment.
 
-If you have a pure, online (O365) deployment, then you can [use the provided PowerShell scripts](appendix-a--powershell.md#create-os356-ps-scripts) to create device accounts. If you’re using Microsoft Exchange 2010 or Lync 2010, you can use equivalent cmdlets that will produce the same results. Those cmdlets are described in this section.
+If you have a pure, online (O365) deployment, then you can [use the provided PowerShell scripts](appendix-a-powershell-scripts-for-surface-hub.md#create-os356-ps-scripts) to create device accounts. If you’re using Microsoft Exchange 2010 or Lync 2010, you can use equivalent cmdlets that will produce the same results. Those cmdlets are described in this section.
 
 1.  Start a remote PowerShell session on a PC and connect to Exchange.
 

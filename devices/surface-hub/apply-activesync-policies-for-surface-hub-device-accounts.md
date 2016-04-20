@@ -19,12 +19,12 @@ For these features to work, the ActiveSync policies for your organization must b
 ## Whitelisting the DeviceID
 
 
-Your organization may have a global policy that prevents syncing of device accounts provisioned on Surface Hubs. To configure this property, see [Allowing device IDs for ActiveSync](appendix-a--powershell.md#whitelisting-device-ids-cmdlet).
+Your organization may have a global policy that prevents syncing of device accounts provisioned on Surface Hubs. To configure this property, see [Allowing device IDs for ActiveSync](appendix-a-powershell-scripts-for-surface-hub.md#whitelisting-device-ids-cmdlet).
 
 ## Setting PasswordEnabled
 
 
-The device account must have an ActiveSync policy where the **PasswordEnabled** attribute is set to False or 0. To configure this property, see [Creating a Surface Hub-compatible Microsoft Exchange ActiveSync policy](appendix-a--powershell.md#create-compatible-as-policy).
+The device account must have an ActiveSync policy where the **PasswordEnabled** attribute is set to False or 0. To configure this property, see [Creating a Surface Hub-compatible Microsoft Exchange ActiveSync policy](appendix-a-powershell-scripts-for-surface-hub.md#create-compatible-as-policy).
 
  
 
