@@ -4,7 +4,7 @@ description: Use the Group Policy Console to configure settings that enable samp
 keywords: configuration settings, Windows Defender ATP configuration settings, Windows Defender Advanced Threat Protection configuration settings, group policy Management Editor, computer configuration, policies, administrative templates, 
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
