@@ -402,7 +402,7 @@
 #### [How User Account Control works](how-user-account-control-works.md)
 #### [User Account Control security policy settings](user-account-control-security-policy-settings.md)
 ### [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
-#### [Minimum requirements for Windows Defender Advanced Threat Protection](minimum-requirements-windows-defender-advanced-threat-protection.md)
+#### [Minimum requirements for Windows Defender ATP](minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Onboard endpoints and set up Windows Defender ATP user access](onboard-configure-windows-advanced-threat-protection.md)
 ##### [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md)
 ##### [Configure Windows Defender ATP endpoints (client onboarding)](configure-endpoints-windows-advanced-threat-protection.md)
