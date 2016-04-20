@@ -19,9 +19,9 @@ Use this procedure if you use Exchange on-prem.
 1.  For this procedure, you'll be using AD admin tools to add an email address for your on-prem domain account. This account will be synced to Office 365.
 
     -   In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
-    -   Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.
-
-![new object box for creating a new user in active directory. ](images/hybriddeployment-01a.png)
+    -   Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.<p>
+    
+        ![new object box for creating a new user in active directory. ](images/hybriddeployment-01a.png)
 
     -   Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
         **Important**  Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
