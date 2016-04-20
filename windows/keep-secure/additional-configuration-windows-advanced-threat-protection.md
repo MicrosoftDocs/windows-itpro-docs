@@ -14,8 +14,6 @@ author: mjcaparas
 **Applies to**
 
 - Windows 10 Insider Preview
-- System Center Configuration Manager
-- Group Policy Management Console
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
@@ -39,7 +37,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 6.  Choose to enable or disable sample sharing from your endpoints.
 
-## Configure sample collection settings with System Center Configuration Manager
+## Configure sample collection settings with Configuration Manager
 
 TBA
 

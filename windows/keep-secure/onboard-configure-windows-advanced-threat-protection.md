@@ -14,8 +14,6 @@ author: mjcaparas
 **Applies to**
 
 - Windows 10 Insider Preview
-- System Center Configuration Manager
-- Group Policy Management Console
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
@@ -26,7 +24,7 @@ There are two stages to onboarding:
 1.  Set up user access in AAD and use a wizard to create a dedicated
     cloud instance for your network (known as “service onboarding”).
 
-2.  Add endpoints to the service with System Center Configuration Manager, scheduled GP updates, or manual
+2.  Add endpoints to the service with scheduled GP updates or manual
     registry changes (known as “endpoint onboarding”).
 
 ## In this section

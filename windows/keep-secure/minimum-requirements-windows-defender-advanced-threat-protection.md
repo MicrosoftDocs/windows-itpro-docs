@@ -13,8 +13,6 @@ ms.sitesec: library
 **Applies to**
 
 - Windows 10 Insider Preview
-- System Center Configuration Manager
-- Group Policy Management Console
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
@@ -59,9 +57,9 @@ disabled you can turn it on by following the instructions in the
 
 ### Deployment channel operating system requirements
 
-You can choose to onboard endpoints with System Center Configuration Manager (SCCM) or a scheduled Group Policy
+You can choose to onboard endpoints with a scheduled Group Policy
 (GP) update (using a GP package that you
-download from the portal or during the service onboarding wizard). You can also apply
+download from the portal or during the service onboarding wizard) or
 manual registry changes.
 
 The following describes the minimum operating system or software version
@@ -69,7 +67,6 @@ required for each deployment channel.
 
 Deployment channel | Minimum server requirements 
 :---|:---
-System Center Configuration Manager | **WHAT VERSIONS**
 Group Policy settings | Windows Server 2008 R2
 Manual registry modifications | No minimum requirements
 
