@@ -288,19 +288,19 @@ You can use the Exchange Admin Center to create a device account:
 
 5.  To apply the ActiveSync policy without using PowerShell, you can do the following:
 
-    1.  In the EAC, click **Recipients** &gt; **Mailboxes** and select a mailbox.
+    -   In the EAC, click **Recipients** &gt; **Mailboxes** and select a mailbox.
 
         ![image showing exchange admin center. ](images/setupdeviceacctexch-08.png)
 
-    2.  In the **Details** pane, scroll to **Phone and Voice Features** and click **View details** to display the **Mobile Device Details** screen.
+    -   In the **Details** pane, scroll to **Phone and Voice Features** and click **View details** to display the **Mobile Device Details** screen.
 
         ![image showing mailbox details. ](images/setupdeviceacctexch-09.png)
 
-    3.  The mobile device mailbox policy that’s currently assigned is displayed. To change the mobile device mailbox policy, click **Browse**.
+    -   The mobile device mailbox policy that’s currently assigned is displayed. To change the mobile device mailbox policy, click **Browse**.
 
         ![image showing the currently assigned mobile device mailbox policy. ](images/setupdeviceacctexch-10.png)
 
-    4.  Choose the appropriate mobile device mailbox policy from the list, click **OK** and then click **Save**.
+    -   Choose the appropriate mobile device mailbox policy from the list, click **OK** and then click **Save**.
 
         ![image showing list of mobile device mailbox policies. ](images/setupdeviceacctexch-11.png)
 

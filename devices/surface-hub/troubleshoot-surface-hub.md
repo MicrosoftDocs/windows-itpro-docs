@@ -25,60 +25,107 @@ This section lists causes, and possible fixes to help troubleshoot issues you mi
 
 Possible fixes for issues on the Surface Hub after you've completed the first-run program.
 
-Issue
-Causes
-Possible fixes
-Not receiving automatic accept/decline messages.
-
-The device account isn't configured to automatically accept/decline messages.
-
-Use PowerShell`cmdlet Set-CalendarProcessing $upn -AutomateProcessing AutoAccept`.
-
-The device account isn't configured to process external meeting requests.
-
-Use PowerShell cmdlet `Set-CalendarProcessing $upn -ProcessExternalMeetingMessages $true`.
-
-Calendar is not showing on the Welcome screen, or message "Appointments of date (no account provisioned)" is being displayed.
-
-No device account is set up on this Surface Hub.
-
-Provision a device account through Settings.
-
-Calendar is not showing on the Welcome screen or message "Appointments of date (overprovisioned)" is being displayed.
-
-The device account is provisioned on too many devices.
-
-Remove the device account from other devices that it's provisioned to. This can be done using the Exchange admin portal.
-
-Calendar is not showing on the Welcome screen or message "Appointments of date (invalid credentials)" is being displayed.
-
-The device account's password has expired and is no longer valid.
-
-Update the account's password in Settings. Also see [Password management](password-management-for-surface-hub-device-accounts.md).
-
-Calendar is not showing on the Welcome screen or message "Appointments of date (account policy)" is being displayed.
-
-The device account is using an invalid ActiveSync policy.
-
-Make sure the device account has an ActiveSync policy where `PasswordEnabled == False`.
-
-Calendar is not showing on the Welcome screen or message "Appointments may be out of date" is being displayed.
-
-Exchange is not enabled.
-
-Enable the device account for Exchange services through Settings. You need to make sure you have the right set of ActiveSync policies and have also installed any necessary certificates for Exchange services to work.
-Can't log in to Skype for Business.
-
-The device account does not have a Session Initiation Protocol (SIP) address property.
-
-The account does not have a SIP address property and its User Principal Name (UPN) does not match the actual SIP address. The account must have its SIP address set, or the SIP address should be added using the Settings app.
-
-Can't log in to Skype for Business.
-
-The device account requires a certificate to authenticate into Skype for Business.
-
-Install the appropriate certificate using provisioning packages.
-
+<table>
+<tr>
+<th>Issue</th>
+<th>Causes</th>
+<th>Possible fixes</th>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Not receiving automatic accept/decline messages.</p>
+</td>
+<td>
+<p>The device account isn't configured to automatically accept/decline messages.</p>
+</td>
+<td>
+<p>Use PowerShell<code>cmdlet Set-CalendarProcessing $upn -AutomateProcessing AutoAccept</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The device account isn't configured to process external meeting requests.</p>
+</td>
+<td>
+<p>Use PowerShell cmdlet <code>Set-CalendarProcessing $upn -ProcessExternalMeetingMessages $true</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen, or message "Appointments of date (no account provisioned)" is being displayed.</p>
+</td>
+<td>
+<p>No device account is set up on this Surface Hub.</p>
+</td>
+<td>
+<p>Provision a device account through Settings.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen or message "Appointments of date (overprovisioned)" is being displayed.</p>
+</td>
+<td>
+<p>The device account is provisioned on too many devices.</p>
+</td>
+<td>
+<p>Remove the device account from other devices that it's provisioned to. This can be done using the Exchange admin portal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen or message "Appointments of date (invalid credentials)" is being displayed.</p>
+</td>
+<td>
+<p>The device account's password has expired and is no longer valid.</p>
+</td>
+<td>
+<p>Update the account's password in Settings. Also see <a href="prepare_your_environment_for_surface_hub_how_do_i_password_management.htm">Password management</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen or message "Appointments of date (account policy)" is being displayed.</p>
+</td>
+<td>
+<p>The device account is using an invalid ActiveSync policy.</p>
+</td>
+<td>
+<p>Make sure the device account has an ActiveSync policy where <code>PasswordEnabled == False</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calendar is not showing on the Welcome screen or message "Appointments may be out of date" is being displayed.</p>
+</td>
+<td>
+<p>Exchange is not enabled.</p>
+</td>
+<td>Enable the device account for Exchange services through Settings. You need to make sure you have the right set of ActiveSync policies and have also installed any necessary certificates for Exchange services to work.</td>
+</tr>
+<tr>
+<td>
+<p>Can't log in to Skype for Business.</p>
+</td>
+<td>
+<p>The device account does not have a Session Initiation Protocol (SIP) address property.</p>
+</td>
+<td>
+<p>The account does not have a SIP address property and its User Principal Name (UPN) does not match the actual SIP address. The account must have its SIP address set, or the SIP address should be added using the Settings app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Can't log in to Skype for Business.</p>
+</td>
+<td>
+<p>The device account requires a certificate to authenticate into Skype for Business.</p>
+</td>
+<td>
+<p>Install the appropriate certificate using provisioning packages.</p>
+</td>
+</tr>
+</table>
  
 
 ### First run
@@ -152,78 +199,131 @@ Possible fixes for issues with Surface Hub first-run program.
 
 ### Device account page, issues for existing account settings
 
-Issue
-Causes
-Error codes
-Possible fixes
-Account could not authenticate with the specified credentials.
-
-The account is not enabled as a user in Active Directory (AD), needs a password to authenticate, or the password is incorrect.
-
-None
-
-Make sure the credentials are entered correctly. Enable the account as a user in AD and add a password, or set the RoomMailboxPassword
-
-.
-Error 0x800C0019 is displayed when providing an Exchange server.
-
-The device account requires a certificate to authenticate.
-
-0x800C0019
-
-Install the appropriate certificate using provisioning packages.
-
-Device account credentials are not valid for the provided Exchange server.
-
-The provided Exchange server is not where the device account's mailbox is hosted.
-
-None
-
-Make sure you are providing the correct Exchange mail server for the device account.
-
-HTTP timeout while trying to reach Exchange server.
-
-0x80072EE2
-
-Couldn't find the provided Exchange server.
-
-The Exchange server provided could not be found.
-
-None
-
-Ensure that you have a working network or Internet connection, and that the Exchange server you provided is correct.
-
-http not supported.
-
-An Exchange server with *http://* instead of *https://* was provided.
-
-None
-
-Use an Exchange server that uses https.
-
-**Note**  
-People land on the page titled "There's a problem with this account" regarding ActiveSync.
-
- 
-
-The ActiveSync policy PasswordEnabled is set to True (or 1).
-
-None
-
-Create a new ActiveSync policy where PasswordEnabled is set to False (or 0), and then apply that policy to the account.
-
-The Surface Hub doesn't have a connection to Exchange.
-
-None
-
-Make sure that you have a working network or Internet connection.
-
-Exchange returns a status code indicating an error.
-
-None
-
-Make sure that you have a working network or Internet connection.
-
+<table>
+<tr>
+<th>Issue</th>
+<th>Causes</th>
+<th>Error codes</th>
+<th>Possible fixes</th>
+</tr>
+<tr>
+<td>
+<p>Account could not authenticate with the specified credentials.</p>
+</td>
+<td>
+<p>The account is not enabled as a user in Active Directory (AD), needs a password to authenticate, or the password is incorrect.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Make sure the credentials are entered correctly. Enable the account as a user in AD and add a password, or set the RoomMailboxPassword</p>. </td>
+</tr>
+<tr>
+<td>
+<p>Error 0x800C0019 is displayed when providing an Exchange server.</p>
+</td>
+<td>
+<p>The device account requires a certificate to authenticate.</p>
+</td>
+<td>
+<p>0x800C0019</p>
+</td>
+<td>
+<p>Install the appropriate certificate using provisioning packages.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Device account credentials are not valid for the provided Exchange server.</p>
+</td>
+<td>
+<p>The provided Exchange server is not where the device account's mailbox is hosted.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Make sure you are providing the correct Exchange mail server for the device account.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HTTP timeout while trying to reach Exchange server.</p>
+</td>
+<td></td>
+<td>
+<p>0x80072EE2</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>Couldn't find the provided Exchange server.</p>
+</td>
+<td>
+<p>The Exchange server provided could not be found.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Ensure that you have a working network or Internet connection, and that the Exchange server you provided is correct.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>http not supported.</p>
+</td>
+<td>
+<p>An Exchange server with <i>http://</i> instead of <i>https://</i> was provided.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Use an Exchange server that uses https.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<div class="alert"><b>Note</b>  <p class="note">People land on the page titled "There's a problem with this account" regarding ActiveSync.</p>
+</div>
+<div> </div>
+</td>
+<td>
+<p>The ActiveSync policy PasswordEnabled is set to True (or 1).</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Create a new ActiveSync policy where PasswordEnabled is set to False (or 0), and then apply that policy to the account.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The Surface Hub doesn't have a connection to Exchange.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Make sure that you have a working network or Internet connection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Exchange returns a status code indicating an error.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Make sure that you have a working network or Internet connection.</p>
+</td>
+</tr>
+</table>
  
 
 ### <a href="" id="first-run-domain-join-page"></a>First run, Domain join page issues
