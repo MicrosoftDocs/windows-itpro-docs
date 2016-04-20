@@ -37,11 +37,6 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 6.  Choose to enable or disable sample sharing from your endpoints.
 
-## Configure sample collection settings with Configuration Manager
-
-TBA
-
-
 ## Related topics
 - [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md)
 - [Configure Windows Defender ATP endpoints (client onboarding)](configure-endpoints-windows-advanced-threat-protection.md)
