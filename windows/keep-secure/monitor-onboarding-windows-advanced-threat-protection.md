@@ -4,7 +4,7 @@ description: Monitor the onboarding of the Windows Defender ATP service to ensur
 keywords: monitor onboarding, monitor Windows Defender ATP onboarding, monitor Windows Defender Advanced Threat Protection onboarding
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
