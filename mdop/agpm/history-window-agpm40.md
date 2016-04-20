@@ -2,7 +2,7 @@
 title: History Window
 description: History Window
 ms.assetid: 5bea62e7-d267-40b2-a66d-fb1be7373a1c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # History Window

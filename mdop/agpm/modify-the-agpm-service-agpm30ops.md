@@ -2,7 +2,7 @@
 title: Modify the AGPM Service
 description: Modify the AGPM Service
 ms.assetid: 3485f85f-59d1-48dc-8748-36826214dcb1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Modify the AGPM Service

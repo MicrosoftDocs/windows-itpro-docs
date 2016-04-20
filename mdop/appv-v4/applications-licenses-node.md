@@ -2,7 +2,7 @@
 title: Applications Licenses Node
 description: Applications Licenses Node
 ms.assetid: 2b8752ff-aa56-483e-b844-966941af2d94
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Applications Licenses Node

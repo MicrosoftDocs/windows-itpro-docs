@@ -2,7 +2,7 @@
 title: Understanding MBAM 2.5 Stand-alone Reports
 description: Understanding MBAM 2.5 Stand-alone Reports
 ms.assetid: 78b5aaf4-8257-4722-8eb9-e0de48db6a11
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Understanding MBAM 2.5 Stand-alone Reports

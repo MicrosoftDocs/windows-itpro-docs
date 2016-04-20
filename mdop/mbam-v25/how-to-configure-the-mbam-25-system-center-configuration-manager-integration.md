@@ -2,7 +2,7 @@
 title: How to Configure the MBAM 2.5 System Center Configuration Manager Integration
 description: How to Configure the MBAM 2.5 System Center Configuration Manager Integration
 ms.assetid: 2b8a4c13-1dad-41e8-89ac-6889c5f7e051
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the MBAM 2.5 System Center Configuration Manager Integration

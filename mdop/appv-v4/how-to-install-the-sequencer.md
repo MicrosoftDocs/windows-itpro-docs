@@ -2,7 +2,7 @@
 title: How to Install the Sequencer
 description: How to Install the Sequencer
 ms.assetid: 2cd16427-a0ba-4870-82d1-3e3c79e1959b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the Sequencer

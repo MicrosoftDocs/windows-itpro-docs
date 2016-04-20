@@ -2,7 +2,7 @@
 title: Packages Node
 description: Packages Node
 ms.assetid: 3465168c-012f-4e9f-905d-611418d2975a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Packages Node

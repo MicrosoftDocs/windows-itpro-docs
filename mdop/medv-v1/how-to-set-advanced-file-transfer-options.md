@@ -2,7 +2,7 @@
 title: How to Set Advanced File Transfer Options
 description: How to Set Advanced File Transfer Options
 ms.assetid: 5e9f8749-a5a9-48c6-9bfc-6b8e0cbe6cab
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Advanced File Transfer Options

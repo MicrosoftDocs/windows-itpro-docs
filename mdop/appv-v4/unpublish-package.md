@@ -2,7 +2,7 @@
 title: UNPUBLISH PACKAGE
 description: UNPUBLISH PACKAGE
 ms.assetid: 1651427c-72a5-4701-bb57-71e14a7a3803
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # UNPUBLISH PACKAGE

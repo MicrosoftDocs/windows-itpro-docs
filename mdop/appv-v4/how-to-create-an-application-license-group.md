@@ -2,7 +2,7 @@
 title: How to Create an Application License Group
 description: How to Create an Application License Group
 ms.assetid: b385324a-8a11-41ee-86e8-8f809235454c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create an Application License Group

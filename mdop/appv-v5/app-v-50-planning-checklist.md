@@ -2,7 +2,7 @@
 title: App-V 5.0 Planning Checklist
 description: App-V 5.0 Planning Checklist
 ms.assetid: 81d3fa62-3c9e-4de7-a9da-cd13112b0862
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V 5.0 Planning Checklist

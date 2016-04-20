@@ -2,7 +2,7 @@
 title: Restarting and Resetting a MED-V Workspace
 description: Restarting and Resetting a MED-V Workspace
 ms.assetid: a959cdb3-a727-47c7-967e-e58f224e74de
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Restarting and Resetting a MED-V Workspace

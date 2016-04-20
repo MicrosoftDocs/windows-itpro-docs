@@ -2,7 +2,7 @@
 title: How to Configure the Image Web Distribution Server
 description: How to Configure the Image Web Distribution Server
 ms.assetid: 2d32ae79-dff5-4c05-a412-dd15452b6007
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Image Web Distribution Server

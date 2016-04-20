@@ -2,7 +2,7 @@
 title: Applications Results Pane
 description: Applications Results Pane
 ms.assetid: 977a4d35-5344-41fa-af66-14957b38ed47
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Applications Results Pane

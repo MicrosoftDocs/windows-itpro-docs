@@ -2,7 +2,7 @@
 title: About Sequencing Phases
 description: About Sequencing Phases
 ms.assetid: c1cb7b6c-204c-48f2-848c-4bd5a3d5ecb6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Sequencing Phases

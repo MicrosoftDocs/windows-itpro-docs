@@ -2,7 +2,7 @@
 title: Advanced Group Policy Management
 description: Advanced Group Policy Management
 ms.assetid: 493ca3c3-c3d6-4bb1-9430-dc1e43c86bb0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Advanced Group Policy Management

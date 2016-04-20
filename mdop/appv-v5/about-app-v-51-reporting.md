@@ -2,7 +2,7 @@
 title: About App-V 5.1 Reporting
 description: About App-V 5.1 Reporting
 ms.assetid: 385dca00-7178-4e35-8d86-c58867ebd65c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About App-V 5.1 Reporting

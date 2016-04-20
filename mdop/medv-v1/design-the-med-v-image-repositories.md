@@ -2,7 +2,7 @@
 title: Design the MED-V Image Repositories
 description: Design the MED-V Image Repositories
 ms.assetid: e153154d-2751-4990-b94d-a2d76242c15f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Design the MED-V Image Repositories

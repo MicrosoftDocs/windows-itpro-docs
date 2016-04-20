@@ -2,7 +2,7 @@
 title: How to Set Up or Disable Application Licensing
 description: How to Set Up or Disable Application Licensing
 ms.assetid: 7c00b531-ec41-4970-b0fc-d84225ce3bb2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up or Disable Application Licensing

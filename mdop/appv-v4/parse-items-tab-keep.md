@@ -2,7 +2,7 @@
 title: Parse Items Tab
 description: Parse Items Tab
 ms.assetid: bdf3fe0d-404a-4745-af52-f415fa321564
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Parse Items Tab

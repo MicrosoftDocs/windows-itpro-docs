@@ -2,7 +2,7 @@
 title: How to Install MED-V Client
 description: How to Install MED-V Client
 ms.assetid: bfac6de7-d96d-4b3e-bd8b-183e051e53c8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install MED-V Client

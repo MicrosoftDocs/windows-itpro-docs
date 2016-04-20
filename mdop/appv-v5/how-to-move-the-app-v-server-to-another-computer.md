@@ -2,7 +2,7 @@
 title: How to Move the App-V Server to Another Computer
 description: How to Move the App-V Server to Another Computer
 ms.assetid: 4fda21be-4d6b-499c-a38a-5afd57b34a47
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Move the App-V Server to Another Computer

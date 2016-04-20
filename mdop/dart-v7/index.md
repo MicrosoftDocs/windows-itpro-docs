@@ -2,7 +2,7 @@
 title: Diagnostics and Recovery Toolset 7 Administrator's Guide
 description: Diagnostics and Recovery Toolset 7 Administrator's Guide
 ms.assetid: bf89eccd-fc03-48ff-9019-a8640e11dd99
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Diagnostics and Recovery Toolset 7 Administrator's Guide

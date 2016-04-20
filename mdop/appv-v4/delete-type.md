@@ -2,7 +2,7 @@
 title: DELETE TYPE
 description: DELETE TYPE
 ms.assetid: f2852723-c894-49f3-a3c5-56f9648bb9ca
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DELETE TYPE

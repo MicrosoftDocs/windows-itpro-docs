@@ -2,7 +2,7 @@
 title: How to Install and Configure MBAM on Distributed Servers
 description: How to Install and Configure MBAM on Distributed Servers
 ms.assetid: 9ee766aa-6339-422a-8d00-4f58e4646a5e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install and Configure MBAM on Distributed Servers

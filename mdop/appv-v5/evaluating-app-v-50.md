@@ -2,7 +2,7 @@
 title: Evaluating App-V 5.0
 description: Evaluating App-V 5.0
 ms.assetid: 0b4a6b12-559d-429f-9659-dc8f4883feab
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Evaluating App-V 5.0

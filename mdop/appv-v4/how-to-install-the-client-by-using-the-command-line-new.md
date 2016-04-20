@@ -2,7 +2,7 @@
 title: How to Install the Client by Using the Command Line
 description: How to Install the Client by Using the Command Line
 ms.assetid: ed372403-64ff-48ff-a3cd-a46cad04a4d5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the Client by Using the Command Line

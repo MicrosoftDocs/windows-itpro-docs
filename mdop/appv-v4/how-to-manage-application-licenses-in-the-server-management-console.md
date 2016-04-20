@@ -2,7 +2,7 @@
 title: How to Manage Application Licenses in the Server Management Console
 description: How to Manage Application Licenses in the Server Management Console
 ms.assetid: 48503b04-0de7-48de-98ee-4623a712a341
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Application Licenses in the Server Management Console

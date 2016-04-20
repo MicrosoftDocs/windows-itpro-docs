@@ -2,7 +2,7 @@
 title: Create a Template
 description: Create a Template
 ms.assetid: 6992bd55-4a4f-401f-9815-c468bac598ef
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Create a Template

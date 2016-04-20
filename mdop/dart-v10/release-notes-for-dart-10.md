@@ -2,7 +2,7 @@
 title: Release Notes for DaRT 10
 description: Release Notes for DaRT 10
 ms.assetid: eb996980-f9c4-42cb-bde9-6b3d4b82b58c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Release Notes for DaRT 10

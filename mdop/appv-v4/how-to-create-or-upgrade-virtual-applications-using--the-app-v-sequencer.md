@@ -2,7 +2,7 @@
 title: How to Create or Upgrade Virtual Applications Using the App-V Sequencer
 description: How to Create or Upgrade Virtual Applications Using the App-V Sequencer
 ms.assetid: 661d4f8c-2527-4654-9d92-15ecc652c0db
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create or Upgrade Virtual Applications Using the App-V Sequencer

@@ -2,7 +2,7 @@
 title: Application Virtualization Client Installer Command-Line Parameters
 description: Application Virtualization Client Installer Command-Line Parameters
 ms.assetid: 508fa404-52a5-4919-8788-2a3dfb00639b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Client Installer Command-Line Parameters

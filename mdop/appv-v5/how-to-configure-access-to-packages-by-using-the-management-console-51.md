@@ -2,7 +2,7 @@
 title: How to Configure Access to Packages by Using the Management Console
 description: How to Configure Access to Packages by Using the Management Console
 ms.assetid: 4fd39bc2-d814-46de-a108-1c21fa404e8a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Access to Packages by Using the Management Console

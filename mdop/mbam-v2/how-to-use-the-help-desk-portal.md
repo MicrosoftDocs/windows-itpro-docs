@@ -2,7 +2,7 @@
 title: How to Use the Help Desk Portal
 description: How to Use the Help Desk Portal
 ms.assetid: c27f7737-10c8-4164-9de8-57987292c89c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Use the Help Desk Portal

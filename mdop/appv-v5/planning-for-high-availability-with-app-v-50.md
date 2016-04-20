@@ -2,7 +2,7 @@
 title: Planning for High Availability with App-V 5.0
 description: Planning for High Availability with App-V 5.0
 ms.assetid: 6d9a6492-23f8-465c-82e5-49c863594156
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for High Availability with App-V 5.0

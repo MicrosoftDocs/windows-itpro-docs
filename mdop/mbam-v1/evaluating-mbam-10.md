@@ -2,7 +2,7 @@
 title: Evaluating MBAM 1.0
 description: Evaluating MBAM 1.0
 ms.assetid: a1e2b674-eda9-4e1c-9b4c-e748470c71f2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Evaluating MBAM 1.0

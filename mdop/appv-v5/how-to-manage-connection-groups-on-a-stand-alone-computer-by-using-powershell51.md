@@ -2,7 +2,7 @@
 title: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell
 description: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell
 ms.assetid: e1589eff-d306-40fb-a0ae-727190dafe26
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell

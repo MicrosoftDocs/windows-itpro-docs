@@ -2,7 +2,7 @@
 title: Request Restoration of a Deleted GPO
 description: Request Restoration of a Deleted GPO
 ms.assetid: bac5ca3b-be47-49b5-bf1b-96280625fda8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Request Restoration of a Deleted GPO

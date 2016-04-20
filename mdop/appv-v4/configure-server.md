@@ -2,7 +2,7 @@
 title: CONFIGURE SERVER
 description: CONFIGURE SERVER
 ms.assetid: c916eddd-74f2-46e4-953d-120b23284e37
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # CONFIGURE SERVER

@@ -2,7 +2,7 @@
 title: How to Install and Configure the Default Application
 description: How to Install and Configure the Default Application
 ms.assetid: 5c5d5ad1-af40-4f83-8234-39e972f2c29a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install and Configure the Default Application

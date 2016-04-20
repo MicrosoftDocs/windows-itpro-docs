@@ -2,7 +2,7 @@
 title: Restore the Archive from a Backup
 description: Restore the Archive from a Backup
 ms.assetid: 49666337-d72c-4e44-99e4-9eb59b2355a9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Restore the Archive from a Backup

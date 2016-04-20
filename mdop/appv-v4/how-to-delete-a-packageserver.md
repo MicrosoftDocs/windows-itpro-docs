@@ -2,7 +2,7 @@
 title: How to Delete a Package
 description: How to Delete a Package
 ms.assetid: 23f9c0e9-8910-47df-9fc0-7bbb5bbf2dc9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Delete a Package

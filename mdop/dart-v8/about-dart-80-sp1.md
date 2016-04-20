@@ -2,7 +2,7 @@
 title: About DaRT 8.0 SP1
 description: About DaRT 8.0 SP1
 ms.assetid: 2e166444-4097-4b23-9f50-d8819f1f4960
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About DaRT 8.0 SP1

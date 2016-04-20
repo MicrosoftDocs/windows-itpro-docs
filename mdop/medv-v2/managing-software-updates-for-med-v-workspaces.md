@@ -2,7 +2,7 @@
 title: Managing Software Updates for MED-V Workspaces
 description: Managing Software Updates for MED-V Workspaces
 ms.assetid: a28d6dcd-cb9f-46ba-8dac-1d990837a3a3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Managing Software Updates for MED-V Workspaces

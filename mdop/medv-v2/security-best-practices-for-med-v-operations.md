@@ -2,7 +2,7 @@
 title: Security Best Practices for MED-V Operations
 description: Security Best Practices for MED-V Operations
 ms.assetid: 231e2b9a-8b49-42fe-93b5-2ef12fe17bac
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Security Best Practices for MED-V Operations

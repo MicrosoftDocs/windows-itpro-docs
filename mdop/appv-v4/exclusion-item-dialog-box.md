@@ -2,7 +2,7 @@
 title: Exclusion Item Dialog Box
 description: Exclusion Item Dialog Box
 ms.assetid: 5523c6d4-95f2-47af-8c06-3ab18004a207
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Exclusion Item Dialog Box

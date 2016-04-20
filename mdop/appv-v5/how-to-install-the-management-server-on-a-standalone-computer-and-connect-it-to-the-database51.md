@@ -2,7 +2,7 @@
 title: How to install the Management Server on a Standalone Computer and Connect it to the Database
 description: How to install the Management Server on a Standalone Computer and Connect it to the Database
 ms.assetid: 3f83c335-d976-4abd-b8f8-d7f5e50b4318
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to install the Management Server on a Standalone Computer and Connect it to the Database

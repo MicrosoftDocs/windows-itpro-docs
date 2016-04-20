@@ -2,7 +2,7 @@
 title: Example MED-V Checklists
 description: Example MED-V Checklists
 ms.assetid: cf9c33e8-1b7a-4306-92f6-edbb70ab23b5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Example MED-V Checklists

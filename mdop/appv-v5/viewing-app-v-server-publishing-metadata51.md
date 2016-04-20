@@ -2,7 +2,7 @@
 title: Viewing App-V Server Publishing Metadata
 description: Viewing App-V Server Publishing Metadata
 ms.assetid: d5fa9eb5-647c-478d-8a4d-0ecda018bce6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Viewing App-V Server Publishing Metadata

@@ -2,7 +2,7 @@
 title: Applications Results Pane Columns in Server Management Console
 description: Applications Results Pane Columns in Server Management Console
 ms.assetid: 8757e3bc-450b-4550-81d2-624906523147
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Applications Results Pane Columns in Server Management Console

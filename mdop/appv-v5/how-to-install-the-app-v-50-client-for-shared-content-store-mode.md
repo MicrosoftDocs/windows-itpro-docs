@@ -2,7 +2,7 @@
 title: How to Install the App-V 5.0 Client for Shared Content Store Mode
 description: How to Install the App-V 5.0 Client for Shared Content Store Mode
 ms.assetid: 88f09e6f-19e7-48ea-965a-907052d1a02f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the App-V 5.0 Client for Shared Content Store Mode

@@ -2,7 +2,7 @@
 title: How to Run a Report
 description: How to Run a Report
 ms.assetid: 72a5419b-aa65-4e60-b23e-3751186b7aed
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Run a Report

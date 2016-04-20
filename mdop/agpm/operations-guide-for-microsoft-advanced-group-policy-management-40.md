@@ -2,7 +2,7 @@
 title: Operations Guide for Microsoft Advanced Group Policy Management 4.0
 description: Operations Guide for Microsoft Advanced Group Policy Management 4.0
 ms.assetid: 0bafeba3-20a9-4360-be5d-03f786df11ee
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Operations Guide for Microsoft Advanced Group Policy Management 4.0

@@ -2,7 +2,7 @@
 title: How to Configure the Client for Application Package Retrieval
 description: How to Configure the Client for Application Package Retrieval
 ms.assetid: 891f2739-da7a-46da-b452-b8c0af075525
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Client for Application Package Retrieval

@@ -2,7 +2,7 @@
 title: About App-V 5.0 Dynamic Configuration
 description: About App-V 5.0 Dynamic Configuration
 ms.assetid: 88afaca1-68c5-45c4-a074-9371c56b5804
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About App-V 5.0 Dynamic Configuration

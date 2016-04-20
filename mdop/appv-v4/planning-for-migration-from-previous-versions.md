@@ -2,7 +2,7 @@
 title: Planning for Migration from Previous Versions
 description: Planning for Migration from Previous Versions
 ms.assetid: 62967bf1-542f-41b0-838f-c62f3430ac73
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for Migration from Previous Versions

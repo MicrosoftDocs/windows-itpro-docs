@@ -2,7 +2,7 @@
 title: Guidance Page
 description: Guidance Page
 ms.assetid: 2d461f7e-bde0-4f20-bfc1-46d52feb701e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Guidance Page

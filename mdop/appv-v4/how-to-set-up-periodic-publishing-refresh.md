@@ -2,7 +2,7 @@
 title: How to Set Up Periodic Publishing Refresh
 description: How to Set Up Periodic Publishing Refresh
 ms.assetid: c358c765-cb88-4881-b4e7-0a2e87304870
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up Periodic Publishing Refresh

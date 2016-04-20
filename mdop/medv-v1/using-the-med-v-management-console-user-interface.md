@@ -2,7 +2,7 @@
 title: Using the MED-V Management Console User Interface
 description: Using the MED-V Management Console User Interface
 ms.assetid: f42714d7-6f0c-4995-ab31-d4ef0845a22c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Using the MED-V Management Console User Interface

@@ -2,7 +2,7 @@
 title: MBAM 2.5 Deployment Checklist
 description: MBAM 2.5 Deployment Checklist
 ms.assetid: 2ba7de17-e3a4-4798-99e0-cd1dc28c5b76
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.5 Deployment Checklist

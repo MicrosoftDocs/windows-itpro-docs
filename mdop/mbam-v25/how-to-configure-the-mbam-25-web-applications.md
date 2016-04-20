@@ -2,7 +2,7 @@
 title: How to Configure the MBAM 2.5 Web Applications
 description: How to Configure the MBAM 2.5 Web Applications
 ms.assetid: 909bf2d3-028c-4ac1-9247-171532a1eeae
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the MBAM 2.5 Web Applications

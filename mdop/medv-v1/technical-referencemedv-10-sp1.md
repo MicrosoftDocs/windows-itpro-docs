@@ -2,7 +2,7 @@
 title: Technical Reference
 description: Technical Reference
 ms.assetid: 387462c7-bb46-40b8-b4cf-ee9453972582
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Technical Reference

@@ -2,7 +2,7 @@
 title: Template Commands
 description: Template Commands
 ms.assetid: 2ec11b3f-0c5c-4788-97bd-bd4bf64ba51a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Template Commands

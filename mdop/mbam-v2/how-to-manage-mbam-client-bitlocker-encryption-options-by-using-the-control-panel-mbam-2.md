@@ -2,7 +2,7 @@
 title: How to Manage MBAM Client BitLocker Encryption Options by Using the Control Panel
 description: How to Manage MBAM Client BitLocker Encryption Options by Using the Control Panel
 ms.assetid: e2ff153e-5770-4a12-b79d-cda998b8a8ab
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage MBAM Client BitLocker Encryption Options by Using the Control Panel

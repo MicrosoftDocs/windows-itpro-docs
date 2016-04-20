@@ -2,7 +2,7 @@
 title: About Publishing
 description: About Publishing
 ms.assetid: 295074d7-123f-4740-b938-e4a371ee72fd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Publishing

@@ -2,7 +2,7 @@
 title: Stand-Alone Delivery Scenario for Application Virtualization Clients
 description: Stand-Alone Delivery Scenario for Application Virtualization Clients
 ms.assetid: 7545b468-f58a-4504-a6d5-3c2d303731c4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Stand-Alone Delivery Scenario for Application Virtualization Clients

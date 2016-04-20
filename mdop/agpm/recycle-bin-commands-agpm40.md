@@ -2,7 +2,7 @@
 title: Recycle Bin Commands
 description: Recycle Bin Commands
 ms.assetid: 347a101f-0ba0-4afc-bd59-752cc06bb904
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Recycle Bin Commands

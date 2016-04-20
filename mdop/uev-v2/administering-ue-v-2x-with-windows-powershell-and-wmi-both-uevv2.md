@@ -2,7 +2,7 @@
 title: Administering UE-V 2.x with Windows PowerShell and WMI
 description: Administering UE-V 2.x with Windows PowerShell and WMI
 ms.assetid: e749ac03-0adf-475a-a4f2-5cc023549b12
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administering UE-V 2.x with Windows PowerShell and WMI

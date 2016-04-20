@@ -2,7 +2,7 @@
 title: Modify the Archive Path
 description: Modify the Archive Path
 ms.assetid: 6d90daf9-58db-4166-b5b3-e84bb261164a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Modify the Archive Path

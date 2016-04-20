@@ -2,7 +2,7 @@
 title: Deploying the Settings Template Catalog for UE-V 1.0
 description: Deploying the Settings Template Catalog for UE-V 1.0
 ms.assetid: 0e6ab5ef-8eeb-40b4-be7b-a841bd83be96
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying the Settings Template Catalog for UE-V 1.0

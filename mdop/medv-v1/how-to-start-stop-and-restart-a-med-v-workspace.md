@@ -2,7 +2,7 @@
 title: How to Start, Stop, and Restart a MED-V Workspace
 description: How to Start, Stop, and Restart a MED-V Workspace
 ms.assetid: 54ce139c-8f32-499e-944b-72f123ebfd2d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Start, Stop, and Restart a MED-V Workspace

@@ -2,7 +2,7 @@
 title: How to Import and Export a Policy
 description: How to Import and Export a Policy
 ms.assetid: c86455de-2096-4bb1-b9d3-22efb42f3317
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Import and Export a Policy

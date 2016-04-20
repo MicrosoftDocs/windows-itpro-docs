@@ -2,7 +2,7 @@
 title: Planning for MBAM 2.5
 description: Planning for MBAM 2.5
 ms.assetid: aebe82c0-e3b6-4bfb-beb0-b99f9c5c5267
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MBAM 2.5

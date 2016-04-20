@@ -2,7 +2,7 @@
 title: Microsoft Application Virtualization Client Management Help
 description: Microsoft Application Virtualization Client Management Help
 ms.assetid: 449eebda-70eb-48b7-855a-db965a680923
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft Application Virtualization Client Management Help

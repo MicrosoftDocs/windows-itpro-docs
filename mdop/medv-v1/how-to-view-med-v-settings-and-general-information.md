@@ -2,7 +2,7 @@
 title: How to View MED-V Settings and General Information
 description: How to View MED-V Settings and General Information
 ms.assetid: c14e3f30-c4e5-47a3-8ad1-0570fc62d991
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to View MED-V Settings and General Information

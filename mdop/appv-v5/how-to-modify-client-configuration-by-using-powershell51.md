@@ -2,7 +2,7 @@
 title: How to Modify Client Configuration by Using PowerShell
 description: How to Modify Client Configuration by Using PowerShell
 ms.assetid: c3a59592-bb0d-43b6-8f4e-44f3a2d5b7ea
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Modify Client Configuration by Using PowerShell

@@ -2,7 +2,7 @@
 title: Deploying the MED-V Workspace Package
 description: Deploying the MED-V Workspace Package
 ms.assetid: f314425a-d60f-4b8d-b71f-d13d1da9297f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying the MED-V Workspace Package

@@ -2,7 +2,7 @@
 title: Deploying Microsoft Office 2013 by Using App-V
 description: Deploying Microsoft Office 2013 by Using App-V
 ms.assetid: 9a7be05e-2a7a-4874-af25-09c0f5037876
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying Microsoft Office 2013 by Using App-V

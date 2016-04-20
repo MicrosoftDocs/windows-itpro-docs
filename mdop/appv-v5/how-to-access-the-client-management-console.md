@@ -2,7 +2,7 @@
 title: How to Access the Client Management Console
 description: How to Access the Client Management Console
 ms.assetid: 3f6303c7-f953-4623-8211-c20d1faa846b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Access the Client Management Console

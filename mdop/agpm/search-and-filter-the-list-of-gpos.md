@@ -2,7 +2,7 @@
 title: Search and Filter the List of GPOs
 description: Search and Filter the List of GPOs
 ms.assetid: 1bc58a38-033c-4aed-9eb4-c239827f5501
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Search and Filter the List of GPOs

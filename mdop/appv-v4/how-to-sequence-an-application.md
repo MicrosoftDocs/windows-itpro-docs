@@ -2,7 +2,7 @@
 title: How to Sequence an Application
 description: How to Sequence an Application
 ms.assetid: bd643dd6-dbf6-4469-bc70-c43ad9c69da9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Sequence an Application

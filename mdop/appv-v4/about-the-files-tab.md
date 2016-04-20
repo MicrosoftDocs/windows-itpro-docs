@@ -2,7 +2,7 @@
 title: About the Files Tab
 description: About the Files Tab
 ms.assetid: 3c20e720-4b0f-465b-b7c4-3013dae1c815
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About the Files Tab

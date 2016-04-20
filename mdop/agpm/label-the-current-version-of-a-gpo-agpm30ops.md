@@ -2,7 +2,7 @@
 title: Label the Current Version of a GPO
 description: Label the Current Version of a GPO
 ms.assetid: 3845211a-0bc9-4875-9906-cb758c443825
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Label the Current Version of a GPO

@@ -2,7 +2,7 @@
 title: App-V Application WMI Class
 description: App-V Application WMI Class
 ms.assetid: b79b0d5a-ba57-442f-8bb4-d7154fc056f9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V Application WMI Class

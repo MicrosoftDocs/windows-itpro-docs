@@ -2,7 +2,7 @@
 title: Planning Your Streaming Solution in an Application Virtualization Server-Based Implementation
 description: Planning Your Streaming Solution in an Application Virtualization Server-Based Implementation
 ms.assetid: 3a57306e-5c54-4fde-8593-fe3b788f18d3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning Your Streaming Solution in an Application Virtualization Server-Based Implementation

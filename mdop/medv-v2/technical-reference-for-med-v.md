@@ -2,7 +2,7 @@
 title: Technical Reference for MED-V
 description: Technical Reference for MED-V
 ms.assetid: 52aa15ae-6ca8-4494-8660-313c7b723406
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Technical Reference for MED-V

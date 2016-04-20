@@ -2,7 +2,7 @@
 title: Internet-Facing Considerations for App-V Clients
 description: Internet-Facing Considerations for App-V Clients
 ms.assetid: 261acde3-7112-492e-8b11-934ae45adc5f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Internet-Facing Considerations for App-V Clients

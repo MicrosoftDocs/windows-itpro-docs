@@ -2,7 +2,7 @@
 title: DaRT 8.0 Privacy Statement
 description: DaRT 8.0 Privacy Statement
 ms.assetid: db474241-e44e-4bca-9be4-3557a3614c2a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DaRT 8.0 Privacy Statement

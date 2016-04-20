@@ -2,7 +2,7 @@
 title: How to Sequence a Package by Using PowerShell
 description: How to Sequence a Package by Using PowerShell
 ms.assetid: 6134c6be-937d-4609-a516-92d49154b290
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Sequence a Package by Using PowerShell

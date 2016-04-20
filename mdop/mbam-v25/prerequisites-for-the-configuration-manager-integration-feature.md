@@ -2,7 +2,7 @@
 title: Prerequisites for the Configuration Manager Integration Feature
 description: Prerequisites for the Configuration Manager Integration Feature
 ms.assetid: b318cbd3-b009-44b8-991b-f7364c1cae88
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Prerequisites for the Configuration Manager Integration Feature

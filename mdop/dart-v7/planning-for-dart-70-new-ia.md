@@ -2,7 +2,7 @@
 title: Planning for DaRT 7.0
 description: Planning for DaRT 7.0
 ms.assetid: 9a60cb08-5efb-40fe-b1e3-9ece831f3b43
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for DaRT 7.0

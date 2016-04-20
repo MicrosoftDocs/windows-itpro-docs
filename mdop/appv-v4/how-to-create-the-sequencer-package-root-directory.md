@@ -2,7 +2,7 @@
 title: How to Create the Sequencer Package Root Directory
 description: How to Create the Sequencer Package Root Directory
 ms.assetid: 23fe28f1-c284-43ee-b8b7-1dfbed94eea5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create the Sequencer Package Root Directory

@@ -2,7 +2,7 @@
 title: How to Publish Application Shortcuts
 description: How to Publish Application Shortcuts
 ms.assetid: fc5efe86-1bbe-438b-b7d8-4f9b815cc58e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Publish Application Shortcuts

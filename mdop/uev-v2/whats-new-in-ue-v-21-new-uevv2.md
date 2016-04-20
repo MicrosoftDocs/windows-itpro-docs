@@ -2,7 +2,7 @@
 title: What's New in UE-V 2.1
 description: What's New in UE-V 2.1
 ms.assetid: 7f385183-7d97-4602-b19a-baa710334ade
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # What's New in UE-V 2.1

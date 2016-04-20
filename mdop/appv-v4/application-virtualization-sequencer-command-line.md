@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencer Command Line
 description: Application Virtualization Sequencer Command Line
 ms.assetid: a6d5ec9f-cc66-4869-9250-5c65d7e1e58e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencer Command Line

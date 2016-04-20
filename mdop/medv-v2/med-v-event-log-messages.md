@@ -2,7 +2,7 @@
 title: MED-V Event Log Messages
 description: MED-V Event Log Messages
 ms.assetid: 7ba7344d-153b-4cc4-a00a-5d42aee9986b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V Event Log Messages

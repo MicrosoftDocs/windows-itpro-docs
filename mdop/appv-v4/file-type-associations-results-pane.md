@@ -2,7 +2,7 @@
 title: File Type Associations Results Pane
 description: File Type Associations Results Pane
 ms.assetid: 881d7fa7-ecde-4a05-b6ee-132fe2c09900
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # File Type Associations Results Pane

@@ -2,7 +2,7 @@
 title: Microsoft Application Virtualization 5.1 Administrator's Guide
 description: Microsoft Application Virtualization 5.1 Administrator's Guide
 ms.assetid: 3049996a-7253-4599-a29a-1b58f9ab14a4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft Application Virtualization 5.1 Administrator's Guide

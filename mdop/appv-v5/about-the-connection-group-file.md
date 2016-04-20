@@ -2,7 +2,7 @@
 title: About the Connection Group File
 description: About the Connection Group File
 ms.assetid: bfeb6013-a7ca-4e36-9fe3-229702e83f0d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About the Connection Group File

@@ -2,7 +2,7 @@
 title: Deploying MBAM 2.5
 description: Deploying MBAM 2.5
 ms.assetid: 45403607-1f4d-42fe-8413-0d4da01808a6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying MBAM 2.5

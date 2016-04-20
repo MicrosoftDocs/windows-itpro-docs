@@ -2,7 +2,7 @@
 title: Configuring Management or Streaming Server for Secure Communications Post-Installation
 description: Configuring Management or Streaming Server for Secure Communications Post-Installation
 ms.assetid: 1062a213-470b-4ae2-b12f-b3e28a6ab745
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring Management or Streaming Server for Secure Communications Post-Installation

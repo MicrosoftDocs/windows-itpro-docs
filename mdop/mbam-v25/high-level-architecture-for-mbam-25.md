@@ -2,7 +2,7 @@
 title: High-Level Architecture for MBAM 2.5
 description: High-Level Architecture for MBAM 2.5
 ms.assetid: b42af25c-961b-4a6a-92d2-916a373eb68b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # High-Level Architecture for MBAM 2.5

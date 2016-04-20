@@ -2,7 +2,7 @@
 title: Maintaining App-V 5.0
 description: Maintaining App-V 5.0
 ms.assetid: 66851ec3-c674-493b-ad6d-db8fcbf1956c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Maintaining App-V 5.0

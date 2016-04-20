@@ -2,7 +2,7 @@
 title: Planning to Create the DaRT 10 Recovery Image
 description: Planning to Create the DaRT 10 Recovery Image
 ms.assetid: a0087d93-b88f-454b-81b2-3c7ce3718023
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning to Create the DaRT 10 Recovery Image

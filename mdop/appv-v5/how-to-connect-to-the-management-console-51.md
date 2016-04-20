@@ -2,7 +2,7 @@
 title: How to Connect to the Management Console
 description: How to Connect to the Management Console
 ms.assetid: 5a15ed86-7db7-4df3-80ca-bde26f3285e1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Connect to the Management Console

@@ -2,7 +2,7 @@
 title: Evaluating MBAM 2.0
 description: Evaluating MBAM 2.0
 ms.assetid: bfc77eec-0fd7-4fec-9c78-6870afa87152
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Evaluating MBAM 2.0

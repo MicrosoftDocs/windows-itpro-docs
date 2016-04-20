@@ -2,7 +2,7 @@
 title: Performing Reviewer Tasks
 description: Performing Reviewer Tasks
 ms.assetid: b5f0805c-da55-45a5-a94c-2473af92b54a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Performing Reviewer Tasks

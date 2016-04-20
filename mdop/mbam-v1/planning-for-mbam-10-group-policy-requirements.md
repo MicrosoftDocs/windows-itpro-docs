@@ -2,7 +2,7 @@
 title: Planning for MBAM 1.0 Group Policy Requirements
 description: Planning for MBAM 1.0 Group Policy Requirements
 ms.assetid: 0fc9c509-7850-4a8e-bb82-b949025bcb02
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MBAM 1.0 Group Policy Requirements

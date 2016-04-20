@@ -2,7 +2,7 @@
 title: How to Install the Application Virtualization Streaming Server
 description: How to Install the Application Virtualization Streaming Server
 ms.assetid: a3065257-fb5a-4d92-98f8-7ef996c61db9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the Application Virtualization Streaming Server

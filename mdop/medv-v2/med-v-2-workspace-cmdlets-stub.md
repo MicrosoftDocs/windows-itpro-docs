@@ -2,7 +2,7 @@
 title: MED-V 2 Workspace Cmdlets
 description: MED-V 2 Workspace Cmdlets
 ms.assetid: 8820156f-8279-4ed0-af88-77fee95c533a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V 2 Workspace Cmdlets

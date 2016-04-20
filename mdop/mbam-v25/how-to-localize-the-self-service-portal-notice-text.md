@@ -2,7 +2,7 @@
 title: How to Localize the Self-Service Portal Notice Text
 description: How to Localize the Self-Service Portal Notice Text
 ms.assetid: a4c878b7-e5c8-45af-a537-761bb2991659
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Localize the Self-Service Portal Notice Text

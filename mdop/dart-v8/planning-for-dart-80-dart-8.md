@@ -2,7 +2,7 @@
 title: Planning for DaRT 8.0
 description: Planning for DaRT 8.0
 ms.assetid: c8be3ab3-dc54-43b9-b9ff-fbd5e1ef29a7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for DaRT 8.0

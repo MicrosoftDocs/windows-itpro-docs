@@ -2,7 +2,7 @@
 title: About the Deployment Tab
 description: About the Deployment Tab
 ms.assetid: 12891798-baa4-45a5-b845-b9505ab95633
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About the Deployment Tab

@@ -2,7 +2,7 @@
 title: How to Grant Access to an Application
 description: How to Grant Access to an Application
 ms.assetid: e54d9e84-21f5-488f-b040-25f374d9289f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Grant Access to an Application

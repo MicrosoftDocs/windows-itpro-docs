@@ -2,7 +2,7 @@
 title: CONFIGURE TYPE
 description: CONFIGURE TYPE
 ms.assetid: 2caf9433-5449-486f-ab94-83ee8e44d7f1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # CONFIGURE TYPE

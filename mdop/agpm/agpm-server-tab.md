@@ -2,7 +2,7 @@
 title: AGPM Server Tab
 description: AGPM Server Tab
 ms.assetid: ce4490b7-b564-49af-8962-858ee39e0016
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # AGPM Server Tab

@@ -2,7 +2,7 @@
 title: Start and Stop the AGPM Service
 description: Start and Stop the AGPM Service
 ms.assetid: b9d26920-c439-4992-9a78-73e4fba8309d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Start and Stop the AGPM Service

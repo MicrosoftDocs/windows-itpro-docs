@@ -2,7 +2,7 @@
 title: Delegate Access to an Individual GPO in the Archive
 description: Delegate Access to an Individual GPO in the Archive
 ms.assetid: 284d2aa2-7c10-4ffa-8978-bbe30867c1c1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Delegate Access to an Individual GPO in the Archive

@@ -2,7 +2,7 @@
 title: How to Create and Use a Project Template
 description: How to Create and Use a Project Template
 ms.assetid: 2063f0b3-47a1-4090-bf99-0f26b107331c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create and Use a Project Template

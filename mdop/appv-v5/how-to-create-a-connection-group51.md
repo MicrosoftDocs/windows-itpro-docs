@@ -2,7 +2,7 @@
 title: How to Create a Connection Group
 description: How to Create a Connection Group
 ms.assetid: 221e2eed-7ebb-42e3-b3d6-11c37c0578e6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create a Connection Group

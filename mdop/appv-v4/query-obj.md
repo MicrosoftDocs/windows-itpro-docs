@@ -2,7 +2,7 @@
 title: QUERY OBJ
 description: QUERY OBJ
 ms.assetid: 55abf0d1-c779-4172-8357-552ab010933b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # QUERY OBJ

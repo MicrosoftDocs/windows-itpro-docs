@@ -2,7 +2,7 @@
 title: Deploying UE-V 1.0
 description: Deploying UE-V 1.0
 ms.assetid: 519598bb-8c81-4af7-bee7-357696bff880
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying UE-V 1.0

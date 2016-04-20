@@ -2,7 +2,7 @@
 title: Domain Delegation Tab
 description: Domain Delegation Tab
 ms.assetid: 5be5841e-92fb-4af6-aa68-0ae50f8d5141
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Domain Delegation Tab

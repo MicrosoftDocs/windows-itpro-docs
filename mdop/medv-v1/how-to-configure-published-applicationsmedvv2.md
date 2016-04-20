@@ -2,7 +2,7 @@
 title: How to Configure Published Applications
 description: How to Configure Published Applications
 ms.assetid: 43a59ff7-5d4e-49dc-84e5-1082bc4dd8f4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Published Applications

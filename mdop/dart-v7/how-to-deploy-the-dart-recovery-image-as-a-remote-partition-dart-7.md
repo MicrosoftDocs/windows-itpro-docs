@@ -2,7 +2,7 @@
 title: How to Deploy the DaRT Recovery Image as a Remote Partition
 description: How to Deploy the DaRT Recovery Image as a Remote Partition
 ms.assetid: 757c9340-8eac-42e8-85de-4302e436713a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deploy the DaRT Recovery Image as a Remote Partition

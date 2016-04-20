@@ -2,7 +2,7 @@
 title: Sequencer Command-Line Error Codes
 description: Sequencer Command-Line Error Codes
 ms.assetid: 3d491314-4923-45fd-9839-c541c5e620bd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Sequencer Command-Line Error Codes

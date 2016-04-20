@@ -2,7 +2,7 @@
 title: How to Change Import Search Paths
 description: How to Change Import Search Paths
 ms.assetid: 0125f2bf-4958-4854-a5a4-a63afe5bb986
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Change Import Search Paths

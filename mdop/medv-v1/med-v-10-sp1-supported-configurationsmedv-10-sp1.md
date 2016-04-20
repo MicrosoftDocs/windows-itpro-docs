@@ -2,7 +2,7 @@
 title: MED-V 1.0 SP1 Supported Configurations
 description: MED-V 1.0 SP1 Supported Configurations
 ms.assetid: 4dcf37c4-a061-43d2-878c-28efc87c3cdd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V 1.0 SP1 Supported Configurations

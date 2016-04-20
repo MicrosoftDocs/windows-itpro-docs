@@ -2,7 +2,7 @@
 title: Select Installer Page (Learn More)
 description: Select Installer Page (Learn More)
 ms.assetid: da05e756-d23e-4557-8ff6-313d695a78a1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Select Installer Page (Learn More)

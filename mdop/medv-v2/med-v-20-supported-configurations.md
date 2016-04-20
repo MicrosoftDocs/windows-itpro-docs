@@ -2,7 +2,7 @@
 title: MED-V 2.0 Supported Configurations
 description: MED-V 2.0 Supported Configurations
 ms.assetid: 88f1d232-aa01-45ab-8da7-d086269250b5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V 2.0 Supported Configurations

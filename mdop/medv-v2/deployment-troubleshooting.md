@@ -2,7 +2,7 @@
 title: Deployment Troubleshooting
 description: Deployment Troubleshooting
 ms.assetid: 9ee980f2-4e77-4020-9f0e-8c2ffdc390ad
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deployment Troubleshooting

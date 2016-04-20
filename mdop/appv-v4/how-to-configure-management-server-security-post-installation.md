@@ -2,7 +2,7 @@
 title: How to Configure Management Server Security Post-Installation
 description: How to Configure Management Server Security Post-Installation
 ms.assetid: 71979fa6-3d0b-4a8b-994e-cb728d013090
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Management Server Security Post-Installation

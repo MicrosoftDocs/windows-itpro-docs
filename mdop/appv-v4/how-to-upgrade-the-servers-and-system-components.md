@@ -2,7 +2,7 @@
 title: How to Upgrade the Servers and System Components
 description: How to Upgrade the Servers and System Components
 ms.assetid: 7d8374fe-5897-452e-923e-556a854b2024
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upgrade the Servers and System Components

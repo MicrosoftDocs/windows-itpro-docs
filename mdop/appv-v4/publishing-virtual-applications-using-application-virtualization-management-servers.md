@@ -2,7 +2,7 @@
 title: Publishing Virtual Applications Using Application Virtualization Management Servers
 description: Publishing Virtual Applications Using Application Virtualization Management Servers
 ms.assetid: f3d79284-3f82-4ca3-b741-1a80b61490da
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Publishing Virtual Applications Using Application Virtualization Management Servers

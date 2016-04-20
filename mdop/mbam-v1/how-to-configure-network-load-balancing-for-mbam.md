@@ -2,7 +2,7 @@
 title: How to Configure Network Load Balancing for MBAM
 description: How to Configure Network Load Balancing for MBAM
 ms.assetid: df2208c3-352b-4a48-9722-237b0c8cd6a5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Network Load Balancing for MBAM

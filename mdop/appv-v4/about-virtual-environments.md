@@ -2,7 +2,7 @@
 title: About Virtual Environments
 description: About Virtual Environments
 ms.assetid: e03a8c72-56c1-4ae9-aa45-0283c50a154c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Virtual Environments

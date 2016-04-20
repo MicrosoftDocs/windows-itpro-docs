@@ -15,7 +15,7 @@ author: eross-msft
 -   Windows 10 Insider Preview
 -   Windows 10 Mobile Preview
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.]</span>
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 After you've created and deployed your enterprise data protection (EDP) policy, you can use Microsoft Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your EDP policy.
 
@@ -30,7 +30,7 @@ Follow these steps to create the VPN policy you want to use with EDP.
 
     ![Microsoft Intune: Create a new policy using the New Policy screen](images/intune-vpn-createpolicy.png)
 
-3.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
+3.  Type *EdpModeID* into the **Name** box, along with an optional description for your policy into the **Description** box.
 
     ![Microsoft Intune: Fill in the required Name and optional Description for your policy](images/intune-vpn-titledescription.png)
 
@@ -98,6 +98,7 @@ The final step to making your VPN configuration work with EDP, is to link your t
         ![Microsoft Intune: Fill in the OMA-URI Settings for the EdpModeID setting](images/intune-vpn-omaurisettings.png)
 
 6.  Click **OK** to save your new OMA-URI setting, and then click **Save Policy.**
+
 
  **To deploy your linked policy**
 

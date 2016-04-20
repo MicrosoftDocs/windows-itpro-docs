@@ -2,7 +2,7 @@
 title: PUBLISH APP
 description: PUBLISH APP
 ms.assetid: f25f06a8-ca23-435b-a0c2-16a5f39b6b97
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # PUBLISH APP

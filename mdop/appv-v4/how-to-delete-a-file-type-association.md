@@ -2,7 +2,7 @@
 title: How to Delete a File Type Association
 description: How to Delete a File Type Association
 ms.assetid: bb2dd1cf-9a5d-45a9-aca1-3c53144b73ec
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Delete a File Type Association

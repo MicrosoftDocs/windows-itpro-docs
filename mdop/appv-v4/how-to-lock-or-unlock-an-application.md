@@ -2,7 +2,7 @@
 title: How to Lock or Unlock an Application
 description: How to Lock or Unlock an Application
 ms.assetid: 8c65d4fd-f336-447f-8c0a-6d65aec9fd00
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Lock or Unlock an Application

@@ -2,7 +2,7 @@
 title: DELETE OBJ
 description: DELETE OBJ
 ms.assetid: fb17a261-f378-4ce6-a538-ab2f0ada0f2d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DELETE OBJ

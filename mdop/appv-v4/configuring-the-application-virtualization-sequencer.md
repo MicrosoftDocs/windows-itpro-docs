@@ -2,7 +2,7 @@
 title: Configuring the Application Virtualization Sequencer
 description: Configuring the Application Virtualization Sequencer
 ms.assetid: cae1c368-9fcd-454e-8fc9-0893345d55bf
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring the Application Virtualization Sequencer

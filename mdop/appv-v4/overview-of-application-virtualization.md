@@ -2,7 +2,7 @@
 title: Overview of Application Virtualization
 description: Overview of Application Virtualization
 ms.assetid: 80545ef4-cf4c-420c-88d6-48e9f226051f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Overview of Application Virtualization

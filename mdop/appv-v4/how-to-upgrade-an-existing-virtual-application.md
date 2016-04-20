@@ -2,7 +2,7 @@
 title: How to Upgrade an Existing Virtual Application
 description: How to Upgrade an Existing Virtual Application
 ms.assetid: ec531576-2423-4c2c-9b9f-da74174a6858
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upgrade an Existing Virtual Application

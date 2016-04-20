@@ -2,7 +2,7 @@
 title: Planning for MBAM 2.5 Group Policy Requirements
 description: Planning for MBAM 2.5 Group Policy Requirements
 ms.assetid: 82d545dc-3fbf-4b46-b62f-47fe178a7c44
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MBAM 2.5 Group Policy Requirements

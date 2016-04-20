@@ -16,7 +16,7 @@ author: eross-msft
 -   Windows 10 Insider Preview
 -   Windows 10 Mobile Preview
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.]</span>
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your **Protected Apps** list.
 
@@ -61,21 +61,21 @@ You can add any or all of the enlightened Microsoft apps to your Protected Apps 
 
 |Product name |App info |
 |-------------|---------|
-|Microsoft Edge |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.MicrosoftEdge<br>**App Type:** Universal app |
+|Microsoft Edge |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.MicrosoftEdge<br>**App Type:** Universal app |
 |IE11 |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** iexplore.exe<br>**App Type:** Desktop app |
-|Microsoft People |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.People<br>**App Type:** Universal app |
-|Word Mobile |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.Word<br>**App Type:** Universal app |
-|Excel Mobile |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.Excel<br>**App Type:** Universal app |
-|PowerPoint Mobile |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.PowerPoint<br>**App Type:** Universal app |
-|OneNote |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.OneNote<br>**App Type:** Universal app |
-|Outlook Mail and Calendar |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** microsoft.windowscommunicationsapps<br>**App Type:** Universal app |
-|Microsoft Photos |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Windows.Photos<br>**App Type:** Universal app |
-|Microsoft OneDrive |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** microsoft.microsoftskydrive<br>**App Type:** Universal app |
-|Groove Music |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneMusic<br>**App Type:** Universal app |
+|Microsoft People |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.People<br>**App Type:** Universal app |
+|Word Mobile |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.Word<br>**App Type:** Universal app |
+|Excel Mobile |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.Excel<br>**App Type:** Universal app |
+|PowerPoint Mobile |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.PowerPoint<br>**App Type:** Universal app |
+|OneNote |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.OneNote<br>**App Type:** Universal app |
+|Outlook Mail and Calendar |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** microsoft.windowscommunicationsapps<br>**App Type:** Universal app |
+|Microsoft Photos |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Windows.Photos<br>**App Type:** Universal app |
+|Microsoft OneDrive |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** microsoft.microsoftskydrive<br>**App Type:** Universal app |
+|Groove Music |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneMusic<br>**App Type:** Universal app |
 |Notepad |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** notepad.exe<br>**App Type:** Desktop app |
 |Microsoft Paint |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** mspaint.exe<br>**App Type:** Desktop app |
-|Microsoft Movies & TV |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneVideo<br>**App Type:** Universal app |
-|Microsoft Messaging |**Publisher:** `CN=Microsoft Corporation O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Messaging<br>**App Type:** Universal app |
+|Microsoft Movies & TV |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneVideo<br>**App Type:** Universal app |
+|Microsoft Messaging |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Messaging<br>**App Type:** Universal app |
 
 
  

@@ -2,7 +2,7 @@
 title: Windows Virtual PC Application Exclude List
 description: Windows Virtual PC Application Exclude List
 ms.assetid: 7715f198-f5ed-421e-8740-0cec2ca4ece3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Windows Virtual PC Application Exclude List

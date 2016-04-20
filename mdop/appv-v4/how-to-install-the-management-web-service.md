@@ -2,7 +2,7 @@
 title: How to Install the Management Web Service
 description: How to Install the Management Web Service
 ms.assetid: cac296f5-8ca0-4ce7-afdb-859ae207d2f1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the Management Web Service

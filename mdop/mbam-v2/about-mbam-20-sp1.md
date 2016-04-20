@@ -2,7 +2,7 @@
 title: About MBAM 2.0 SP1
 description: About MBAM 2.0 SP1
 ms.assetid: 5ba89ed8-bb6e-407b-82c2-e2e36dd1078e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About MBAM 2.0 SP1

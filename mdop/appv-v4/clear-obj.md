@@ -2,7 +2,7 @@
 title: CLEAR OBJ
 description: CLEAR OBJ
 ms.assetid: 1e50b33f-6324-4eae-8573-75c153f786cd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # CLEAR OBJ

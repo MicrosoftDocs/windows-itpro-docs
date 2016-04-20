@@ -2,7 +2,7 @@
 title: Verify Applications Page (Package Accelerators)
 description: Verify Applications Page (Package Accelerators)
 ms.assetid: e58a37db-d042-453f-aa0d-2f324600a35b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Verify Applications Page (Package Accelerators)

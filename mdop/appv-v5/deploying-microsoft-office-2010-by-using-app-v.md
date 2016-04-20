@@ -2,7 +2,7 @@
 title: Deploying Microsoft Office 2010 by Using App-V
 description: Deploying Microsoft Office 2010 by Using App-V
 ms.assetid: 0a9e496e-82a1-4dc0-a496-7b21eaa00f53
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying Microsoft Office 2010 by Using App-V

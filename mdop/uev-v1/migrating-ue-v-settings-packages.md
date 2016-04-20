@@ -2,7 +2,7 @@
 title: Migrating UE-V Settings Packages
 description: Migrating UE-V Settings Packages
 ms.assetid: 93d99254-3e17-4e96-92ad-87059d8554a7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Migrating UE-V Settings Packages

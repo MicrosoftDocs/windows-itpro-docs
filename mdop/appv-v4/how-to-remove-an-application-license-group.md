@@ -2,7 +2,7 @@
 title: How to Remove an Application License Group
 description: How to Remove an Application License Group
 ms.assetid: 35830916-7015-44cd-829b-23599a5029a7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Remove an Application License Group

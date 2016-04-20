@@ -2,7 +2,7 @@
 title: How to Move the MBAM 2.5 Websites
 description: How to Move the MBAM 2.5 Websites
 ms.assetid: 71af9a54-c27b-408f-9d75-37c0d02e730e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Move the MBAM 2.5 Websites

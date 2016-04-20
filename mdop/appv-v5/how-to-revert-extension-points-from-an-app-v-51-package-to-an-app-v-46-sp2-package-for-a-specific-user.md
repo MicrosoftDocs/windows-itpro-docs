@@ -2,7 +2,7 @@
 title: How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 SP2 Package for a Specific User
 description: How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 SP2 Package for a Specific User
 ms.assetid: bd53c5d6-7fd2-4816-b03b-d59da0a35819
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 SP2 Package for a Specific User

@@ -2,7 +2,7 @@
 title: Log Files for the Application Virtualization Sequencer
 description: Log Files for the Application Virtualization Sequencer
 ms.assetid: 1a296544-eab4-46f9-82ce-3136f8b578af
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Log Files for the Application Virtualization Sequencer

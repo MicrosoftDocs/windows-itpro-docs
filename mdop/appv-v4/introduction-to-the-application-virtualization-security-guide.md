@@ -2,7 +2,7 @@
 title: Introduction to the Application Virtualization Security Guide
 description: Introduction to the Application Virtualization Security Guide
 ms.assetid: 50e1d220-7a95-45b8-933b-3dadddebe26f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Introduction to the Application Virtualization Security Guide

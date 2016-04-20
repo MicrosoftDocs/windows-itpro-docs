@@ -2,7 +2,7 @@
 title: How to Modify File-Mapping Information
 description: How to Modify File-Mapping Information
 ms.assetid: d3a9d10a-6cc8-4399-9479-b20f729c4dd9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Modify File-Mapping Information

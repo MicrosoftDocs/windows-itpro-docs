@@ -2,7 +2,7 @@
 title: Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes
 description: Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes
 ms.assetid: 5ef66cd1-ba2b-4383-9f45-e7cde41f1ba1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes

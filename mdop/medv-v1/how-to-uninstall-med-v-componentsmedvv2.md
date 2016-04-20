@@ -2,7 +2,7 @@
 title: How to Uninstall MED-V Components
 description: How to Uninstall MED-V Components
 ms.assetid: 91bdf488-14e7-43ab-972d-9d92421acb86
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Uninstall MED-V Components

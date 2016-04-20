@@ -2,7 +2,7 @@
 title: Deploying the MBAM 1.0 Server Infrastructure
 description: Deploying the MBAM 1.0 Server Infrastructure
 ms.assetid: 90529379-b70e-4c92-b188-3d7aaf1844af
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying the MBAM 1.0 Server Infrastructure

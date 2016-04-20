@@ -2,7 +2,7 @@
 title: Publishing Servers Results Pane Columns
 description: Publishing Servers Results Pane Columns
 ms.assetid: ad875715-50b3-4881-a6b3-586238d12527
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Publishing Servers Results Pane Columns

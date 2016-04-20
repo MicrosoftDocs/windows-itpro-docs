@@ -2,7 +2,7 @@
 title: Administering MBAM 2.0 Features
 description: Administering MBAM 2.0 Features
 ms.assetid: 065e0704-069e-4372-9b86-0b57dd7638dd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administering MBAM 2.0 Features

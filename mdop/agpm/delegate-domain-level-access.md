@@ -2,7 +2,7 @@
 title: Delegate Domain-Level Access
 description: Delegate Domain-Level Access
 ms.assetid: 64c8e773-38cc-4991-9ed2-5a801094d06e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Delegate Domain-Level Access

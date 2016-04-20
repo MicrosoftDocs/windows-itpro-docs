@@ -2,7 +2,7 @@
 title: How to Manage Hardware Compatibility
 description: How to Manage Hardware Compatibility
 ms.assetid: c74b96b9-8161-49bc-b5bb-4838734e7df5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Hardware Compatibility

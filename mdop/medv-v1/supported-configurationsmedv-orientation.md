@@ -2,7 +2,7 @@
 title: Supported Configurations
 description: Supported Configurations
 ms.assetid: c1438455-445a-4bc8-ae20-483b26181f6f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Supported Configurations

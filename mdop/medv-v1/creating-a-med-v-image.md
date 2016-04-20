@@ -2,7 +2,7 @@
 title: Creating a MED-V Image
 description: Creating a MED-V Image
 ms.assetid: 7cbbcd22-83f5-4b60-825f-781b4c6a2d36
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Creating a MED-V Image

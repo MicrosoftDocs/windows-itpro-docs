@@ -2,7 +2,7 @@
 title: Administrators Results Pane Columns
 description: Administrators Results Pane Columns
 ms.assetid: 2ac86625-15a8-471a-846b-a42eae37ed72
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administrators Results Pane Columns

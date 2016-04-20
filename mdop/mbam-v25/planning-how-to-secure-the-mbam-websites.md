@@ -2,7 +2,7 @@
 title: Planning How to Secure the MBAM Websites
 description: Planning How to Secure the MBAM Websites
 ms.assetid: aea1d137-62cf-4da4-9989-541e0b5ad8d8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning How to Secure the MBAM Websites

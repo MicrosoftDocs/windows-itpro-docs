@@ -2,7 +2,7 @@
 title: High Level Architecture for MBAM 1.0
 description: High Level Architecture for MBAM 1.0
 ms.assetid: b1349196-88ed-4d6c-8a1d-998f18127b6b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # High Level Architecture for MBAM 1.0

@@ -2,7 +2,7 @@
 title: How to Configure the Virtual Machine Setup for a MED-V Workspace
 description: How to Configure the Virtual Machine Setup for a MED-V Workspace
 ms.assetid: 50bbf58b-842c-4b63-bb93-3783903f6c7d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Virtual Machine Setup for a MED-V Workspace

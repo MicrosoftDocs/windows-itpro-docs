@@ -2,7 +2,7 @@
 title: Security and Protection for MED-V
 description: Security and Protection for MED-V
 ms.assetid: 5db66d56-eb65-4bff-a9e4-3d52de4256bd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Security and Protection for MED-V

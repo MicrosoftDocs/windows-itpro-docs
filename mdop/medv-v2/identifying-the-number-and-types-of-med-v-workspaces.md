@@ -2,7 +2,7 @@
 title: Identifying the Number and Types of MED-V Workspaces
 description: Identifying the Number and Types of MED-V Workspaces
 ms.assetid: 11642253-6b1f-4c4a-a11e-48d8a360e1ea
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Identifying the Number and Types of MED-V Workspaces

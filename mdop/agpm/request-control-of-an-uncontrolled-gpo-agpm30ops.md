@@ -2,7 +2,7 @@
 title: Request Control of an Uncontrolled GPO
 description: Request Control of an Uncontrolled GPO
 ms.assetid: b668a67a-5a2c-4f6a-8b1c-efa3ca0794d4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Request Control of an Uncontrolled GPO

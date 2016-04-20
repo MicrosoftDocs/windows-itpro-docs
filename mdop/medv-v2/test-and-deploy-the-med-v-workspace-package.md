@@ -2,7 +2,7 @@
 title: Test And Deploy the MED-V Workspace Package
 description: Test And Deploy the MED-V Workspace Package
 ms.assetid: 0238dea7-a08c-4859-b8b1-2b52bc63fda6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Test And Deploy the MED-V Workspace Package

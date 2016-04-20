@@ -2,7 +2,7 @@
 title: How to Manage Virtual Applications Using the Command Line
 description: How to Manage Virtual Applications Using the Command Line
 ms.assetid: 9394f34d-2b1e-4ea7-bf6f-1f56101ab4de
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Virtual Applications Using the Command Line

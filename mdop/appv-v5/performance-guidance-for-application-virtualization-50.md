@@ -2,7 +2,7 @@
 title: Performance Guidance for Application Virtualization 5.0
 description: Performance Guidance for Application Virtualization 5.0
 ms.assetid: 6b3a3255-b957-4b9b-8bfc-a93fe8438a81
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Performance Guidance for Application Virtualization 5.0

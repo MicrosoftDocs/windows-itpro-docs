@@ -2,7 +2,7 @@
 title: Contents Tab Features
 description: Contents Tab Features
 ms.assetid: 725f025a-c30a-4d07-add1-4e0ed9a1a5fd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Contents Tab Features

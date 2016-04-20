@@ -2,7 +2,7 @@
 title: Planning to Deploy MBAM with Configuration Manager
 description: Planning to Deploy MBAM with Configuration Manager
 ms.assetid: fb768306-48c2-40b4-ac4e-c279db987391
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning to Deploy MBAM with Configuration Manager

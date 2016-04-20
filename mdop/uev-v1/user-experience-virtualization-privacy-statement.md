@@ -2,7 +2,7 @@
 title: User Experience Virtualization Privacy Statement
 description: User Experience Virtualization Privacy Statement
 ms.assetid: c2919034-f2cf-48d6-b18e-4dd318252426
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # User Experience Virtualization Privacy Statement

@@ -2,7 +2,7 @@
 title: How to Install Application Virtualization Management Server
 description: How to Install Application Virtualization Management Server
 ms.assetid: 8184be79-8c27-4328-a3c1-183791b5556c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install Application Virtualization Management Server

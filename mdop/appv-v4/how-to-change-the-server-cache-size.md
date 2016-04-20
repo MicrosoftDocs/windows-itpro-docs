@@ -2,7 +2,7 @@
 title: How to Change the Server Cache Size
 description: How to Change the Server Cache Size
 ms.assetid: 24e63744-21c3-458e-b137-9592f4fe785c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Change the Server Cache Size

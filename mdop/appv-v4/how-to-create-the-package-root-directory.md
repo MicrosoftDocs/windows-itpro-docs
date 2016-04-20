@@ -2,7 +2,7 @@
 title: How to Create the Package Root Directory
 description: How to Create the Package Root Directory
 ms.assetid: bcfe3bd4-6c60-409a-8ffa-cc22f27194b1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create the Package Root Directory

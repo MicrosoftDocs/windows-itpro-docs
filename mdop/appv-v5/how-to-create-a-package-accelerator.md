@@ -2,7 +2,7 @@
 title: How to Create a Package Accelerator
 description: How to Create a Package Accelerator
 ms.assetid: dfe305e5-7cf8-498f-9581-4805ffc722bd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create a Package Accelerator

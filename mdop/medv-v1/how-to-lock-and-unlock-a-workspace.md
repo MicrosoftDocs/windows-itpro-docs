@@ -2,7 +2,7 @@
 title: How to Lock and Unlock a Workspace
 description: How to Lock and Unlock a Workspace
 ms.assetid: 027166b9-0e06-4a4e-a8ac-a4d5f429656f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Lock and Unlock a Workspace

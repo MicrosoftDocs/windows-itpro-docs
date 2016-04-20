@@ -2,7 +2,7 @@
 title: DELETE SERVER
 description: DELETE SERVER
 ms.assetid: 4c929639-1c1d-47c3-9225-cc4d7a8736f0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DELETE SERVER

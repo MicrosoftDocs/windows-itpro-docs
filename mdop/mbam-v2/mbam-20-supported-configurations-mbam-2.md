@@ -2,7 +2,7 @@
 title: MBAM 2.0 Supported Configurations
 description: MBAM 2.0 Supported Configurations
 ms.assetid: dca63391-39fe-4273-a570-76d0a2f8a0fd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.0 Supported Configurations

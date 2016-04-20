@@ -2,7 +2,7 @@
 title: How to Manage Applications in the Client Management Console
 description: How to Manage Applications in the Client Management Console
 ms.assetid: 15cb5133-539b-499d-adca-ed02da20194a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Applications in the Client Management Console

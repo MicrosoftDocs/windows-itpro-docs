@@ -2,7 +2,7 @@
 title: Properties Tab
 description: Properties Tab
 ms.assetid: 6ff20678-6766-4f0d-8bbb-f19b224682a1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Properties Tab

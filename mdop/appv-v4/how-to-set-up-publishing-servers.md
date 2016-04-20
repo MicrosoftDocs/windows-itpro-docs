@@ -2,7 +2,7 @@
 title: How to Set Up Publishing Servers
 description: How to Set Up Publishing Servers
 ms.assetid: 2111f079-c202-4c49-b2a6-f4237068b2dc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up Publishing Servers

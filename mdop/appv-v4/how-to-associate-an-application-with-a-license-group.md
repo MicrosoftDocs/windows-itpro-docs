@@ -2,7 +2,7 @@
 title: How to Associate an Application with a License Group
 description: How to Associate an Application with a License Group
 ms.assetid: 85639db3-5751-497e-a9e7-ce4770c0b55f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Associate an Application with a License Group

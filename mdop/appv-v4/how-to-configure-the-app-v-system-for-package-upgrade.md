@@ -2,7 +2,7 @@
 title: How to Configure the App-V System for Package Upgrade
 description: How to Configure the App-V System for Package Upgrade
 ms.assetid: de133898-f887-46c1-9bc9-fbb03feac66a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the App-V System for Package Upgrade

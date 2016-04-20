@@ -2,7 +2,7 @@
 title: How to Load Files and Packages
 description: How to Load Files and Packages
 ms.assetid: f86f5bf1-99a4-44d7-ae2f-e6049c482f68
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Load Files and Packages

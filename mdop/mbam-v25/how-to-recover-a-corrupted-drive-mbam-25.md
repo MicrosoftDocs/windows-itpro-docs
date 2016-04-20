@@ -2,7 +2,7 @@
 title: How to Recover a Corrupted Drive
 description: How to Recover a Corrupted Drive
 ms.assetid: fa5b846b-dda6-4ae4-bf6c-39e4f1d8aa00
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Recover a Corrupted Drive

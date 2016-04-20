@@ -2,7 +2,7 @@
 title: Microsoft Application Virtualization Security Guide
 description: Microsoft Application Virtualization Security Guide
 ms.assetid: 5e794316-cc4f-459e-90ef-79fc9841ba4e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft Application Virtualization Security Guide

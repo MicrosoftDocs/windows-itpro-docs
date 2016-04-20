@@ -2,7 +2,7 @@
 title: About MED-V 2.0
 description: About MED-V 2.0
 ms.assetid: 7ec53f2c-db6e-4a6b-a069-99d0c25cd101
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About MED-V 2.0

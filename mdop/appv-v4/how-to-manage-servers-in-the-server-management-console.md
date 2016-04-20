@@ -2,7 +2,7 @@
 title: How to Manage Servers in the Server Management Console
 description: How to Manage Servers in the Server Management Console
 ms.assetid: 6e851c74-ea86-4fef-bb0c-e690e8e7e7eb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Servers in the Server Management Console

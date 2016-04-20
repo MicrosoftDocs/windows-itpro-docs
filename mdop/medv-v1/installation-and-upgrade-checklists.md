@@ -2,7 +2,7 @@
 title: Installation and Upgrade Checklists
 description: Installation and Upgrade Checklists
 ms.assetid: ccfdde26-4a28-4c14-888d-71b96fe7626e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Installation and Upgrade Checklists

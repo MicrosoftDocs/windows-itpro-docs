@@ -2,7 +2,7 @@
 title: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
 description: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
 ms.assetid: 2a67402e-3119-40ea-a247-24d166af1ced
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services

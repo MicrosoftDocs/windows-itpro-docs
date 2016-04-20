@@ -2,7 +2,7 @@
 title: How to Configure the Server for IIS
 description: How to Configure the Server for IIS
 ms.assetid: 1fcfc583-322f-4a38-90d0-e64bfa9ee3d8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Server for IIS

@@ -2,7 +2,7 @@
 title: DaRT 10 Supported Configurations
 description: DaRT 10 Supported Configurations
 ms.assetid: a07d6562-1fa9-499f-829c-9cc487ede0b7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DaRT 10 Supported Configurations

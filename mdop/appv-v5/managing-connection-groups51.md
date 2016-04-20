@@ -2,7 +2,7 @@
 title: Managing Connection Groups
 description: Managing Connection Groups
 ms.assetid: 22c9d3cb-7246-4173-9742-4ba1c24b0a6a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Managing Connection Groups

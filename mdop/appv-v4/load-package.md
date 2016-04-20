@@ -2,7 +2,7 @@
 title: LOAD PACKAGE
 description: LOAD PACKAGE
 ms.assetid: eb19116d-e5d0-445c-b2f0-3116a09384d7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # LOAD PACKAGE

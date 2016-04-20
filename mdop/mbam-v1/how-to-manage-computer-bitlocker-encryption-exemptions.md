@@ -2,7 +2,7 @@
 title: How to Manage Computer BitLocker Encryption Exemptions
 description: How to Manage Computer BitLocker Encryption Exemptions
 ms.assetid: d4400a0d-b36b-4cf5-a294-1f53ec47f9ee
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Computer BitLocker Encryption Exemptions

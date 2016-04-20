@@ -2,7 +2,7 @@
 title: Client Management Console Publishing Servers Node
 description: Client Management Console Publishing Servers Node
 ms.assetid: 03f2038f-b5f7-4e5b-a8f0-98f5e9d5f644
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Client Management Console: Publishing Servers Node

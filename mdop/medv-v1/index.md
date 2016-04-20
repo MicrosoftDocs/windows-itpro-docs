@@ -2,7 +2,7 @@
 title: Microsoft Enterprise Desktop Virtualization Planning, Deployment, and Operations Guide
 description: Microsoft Enterprise Desktop Virtualization Planning, Deployment, and Operations Guide
 ms.assetid: 7bc3e120-df77-4f4c-bc8e-7aaa4c2a6525
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft Enterprise Desktop Virtualization Planning, Deployment, and Operations Guide

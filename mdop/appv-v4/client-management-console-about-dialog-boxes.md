@@ -2,7 +2,7 @@
 title: Client Management Console About Dialog Boxes
 description: Client Management Console About Dialog Boxes
 ms.assetid: eaf4a05e-513d-4eac-a549-76e63a70893d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Client Management Console: About Dialog Boxes

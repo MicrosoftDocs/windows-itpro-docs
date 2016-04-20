@@ -2,7 +2,7 @@
 title: How to Load or Unload an Application
 description: How to Load or Unload an Application
 ms.assetid: 8c149761-c591-433f-972b-91793a69c654
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Load or Unload an Application

@@ -2,7 +2,7 @@
 title: Application Virtualization Deployment and Upgrade Checklists
 description: Application Virtualization Deployment and Upgrade Checklists
 ms.assetid: 462e5119-cb83-4548-98f2-df668aa0958b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Deployment and Upgrade Checklists

@@ -2,7 +2,7 @@
 title: Managing the Archive
 description: Managing the Archive
 ms.assetid: b11a3d71-74ea-4dd7-b243-6f2880b7af2d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Managing the Archive

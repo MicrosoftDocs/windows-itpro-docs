@@ -2,7 +2,7 @@
 title: Using MBAM with Configuration Manager
 description: Using MBAM with Configuration Manager
 ms.assetid: 03868717-4aa7-4897-8166-9a3df5e9519e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Using MBAM with Configuration Manager

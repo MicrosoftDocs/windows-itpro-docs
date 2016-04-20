@@ -2,7 +2,7 @@
 title: How to Configure User Permissions
 description: How to Configure User Permissions
 ms.assetid: 54e69f46-b028-4ad1-9b80-f06ef5c8f559
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure User Permissions

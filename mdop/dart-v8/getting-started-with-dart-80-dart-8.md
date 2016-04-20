@@ -2,7 +2,7 @@
 title: Getting Started with DaRT 8.0
 description: Getting Started with DaRT 8.0
 ms.assetid: 579d18c5-7434-4a0e-9725-fb81ca5e3c6d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Getting Started with DaRT 8.0

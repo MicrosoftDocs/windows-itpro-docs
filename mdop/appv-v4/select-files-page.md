@@ -2,7 +2,7 @@
 title: Select Files Page
 description: Select Files Page
 ms.assetid: 6d1524ca-6306-4a28-b65f-3ded9d487e75
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Select Files Page

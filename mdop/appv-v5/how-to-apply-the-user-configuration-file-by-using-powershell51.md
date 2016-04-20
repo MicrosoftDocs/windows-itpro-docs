@@ -2,7 +2,7 @@
 title: How to Apply the User Configuration File by Using PowerShell
 description: How to Apply the User Configuration File by Using PowerShell
 ms.assetid: 986e638c-4a0c-4a7e-be73-f4615e8b8000
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Apply the User Configuration File by Using PowerShell

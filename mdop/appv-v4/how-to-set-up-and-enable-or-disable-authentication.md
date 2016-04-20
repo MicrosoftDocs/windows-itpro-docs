@@ -2,7 +2,7 @@
 title: How to Set Up and Enable or Disable Authentication
 description: How to Set Up and Enable or Disable Authentication
 ms.assetid: 1e43d0c5-a467-4a8b-b656-93f75d7deb82
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up and Enable or Disable Authentication

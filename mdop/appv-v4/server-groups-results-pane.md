@@ -2,7 +2,7 @@
 title: Server Groups Results Pane
 description: Server Groups Results Pane
 ms.assetid: ac7b0525-5946-4728-9cf1-c65007852ebe
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Groups Results Pane

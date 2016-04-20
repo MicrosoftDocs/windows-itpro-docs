@@ -2,7 +2,7 @@
 title: How to Modify an Existing Virtual Application Package
 description: How to Modify an Existing Virtual Application Package
 ms.assetid: 86b0fe21-52b0-4a9c-9a66-c78935fe74f1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Modify an Existing Virtual Application Package

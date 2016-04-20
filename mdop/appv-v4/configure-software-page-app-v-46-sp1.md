@@ -2,7 +2,7 @@
 title: Configure Software Page
 description: Configure Software Page
 ms.assetid: 50596eba-ce20-4d36-8e57-bd4b6c6cf92e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configure Software Page

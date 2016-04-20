@@ -2,7 +2,7 @@
 title: Accessibility for App-V 5.0
 description: Accessibility for App-V 5.0
 ms.assetid: 56696523-6332-4bbe-8ddf-32b1dfe38131
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Accessibility for App-V 5.0

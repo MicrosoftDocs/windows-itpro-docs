@@ -2,7 +2,7 @@
 title: Server Management Console Provider Policies Node
 description: Server Management Console Provider Policies Node
 ms.assetid: a5b99158-9af8-45bb-b3b8-61e220529e14
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Management Console: Provider Policies Node

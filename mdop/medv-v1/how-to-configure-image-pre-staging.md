@@ -2,7 +2,7 @@
 title: How to Configure Image Pre-staging
 description: How to Configure Image Pre-staging
 ms.assetid: 92781b5a-208f-45a4-a078-ee90cf9efd9d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Image Pre-staging

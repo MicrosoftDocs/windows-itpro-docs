@@ -2,7 +2,7 @@
 title: Deploying MBAM 2.5 Group Policy Objects
 description: Deploying MBAM 2.5 Group Policy Objects
 ms.assetid: 4b835054-6846-463d-af58-8ac4639a1188
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying MBAM 2.5 Group Policy Objects

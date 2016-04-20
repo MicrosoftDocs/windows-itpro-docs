@@ -2,7 +2,7 @@
 title: Creating a MED-V Workspace
 description: Creating a MED-V Workspace
 ms.assetid: 9578bb99-8a09-44c1-b88f-538901f16ad3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Creating a MED-V Workspace

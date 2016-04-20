@@ -2,7 +2,7 @@
 title: How to Export a Report
 description: How to Export a Report
 ms.assetid: 2f917130-db02-4c72-a45a-7928e51e689e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Export a Report

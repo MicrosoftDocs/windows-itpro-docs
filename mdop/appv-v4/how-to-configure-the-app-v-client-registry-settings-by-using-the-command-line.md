@@ -2,7 +2,7 @@
 title: How to Configure the App-V Client Registry Settings by Using the Command Line
 description: How to Configure the App-V Client Registry Settings by Using the Command Line
 ms.assetid: 3e3d873f-13d2-402f-97b4-f62d0c399171
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the App-V Client Registry Settings by Using the Command Line

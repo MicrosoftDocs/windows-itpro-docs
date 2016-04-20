@@ -2,7 +2,7 @@
 title: Planning to Deploy App-V
 description: Planning to Deploy App-V
 ms.assetid: 39cbf981-d9c6-457f-b047-f9046e1a6442
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning to Deploy App-V

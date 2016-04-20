@@ -2,7 +2,7 @@
 title: Stand-Alone Delivery Scenario Overview
 description: Stand-Alone Delivery Scenario Overview
 ms.assetid: b109f309-f3c1-43af-996f-2a9b138dd171
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Stand-Alone Delivery Scenario Overview

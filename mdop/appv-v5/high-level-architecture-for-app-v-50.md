@@ -2,7 +2,7 @@
 title: High Level Architecture for App-V 5.0
 description: High Level Architecture for App-V 5.0
 ms.assetid: fdf8b841-918f-4672-b352-0f2b9519581b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # High Level Architecture for App-V 5.0

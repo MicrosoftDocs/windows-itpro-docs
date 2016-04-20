@@ -2,7 +2,7 @@
 title: How to Deny Access to an Application
 description: How to Deny Access to an Application
 ms.assetid: 14f5e201-7265-462c-b738-57938dc3fc30
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deny Access to an Application

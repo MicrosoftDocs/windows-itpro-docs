@@ -2,7 +2,7 @@
 title: Package Name Page
 description: Package Name Page
 ms.assetid: 1cea36b7-737d-4c5e-9294-5feba02a3e7d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Package Name Page

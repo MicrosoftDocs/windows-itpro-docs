@@ -2,7 +2,7 @@
 title: Release Notes for App-V 5.0 SP1
 description: Release Notes for App-V 5.0 SP1
 ms.assetid: 21a859cd-41b4-4cc4-9c9c-7ba236084bb0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Release Notes for App-V 5.0 SP1

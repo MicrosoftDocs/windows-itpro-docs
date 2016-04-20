@@ -2,7 +2,7 @@
 title: How to Upgrade a Package Using the Open Package Command
 description: How to Upgrade a Package Using the Open Package Command
 ms.assetid: 67c10440-de8a-4547-a34b-f83206d0cc3b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upgrade a Package Using the Open Package Command

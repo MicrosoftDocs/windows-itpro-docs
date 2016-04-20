@@ -2,7 +2,7 @@
 title: How to Install the MED-V Workspace Packager
 description: How to Install the MED-V Workspace Packager
 ms.assetid: 627478e9-6798-4b32-9a50-7a1b72bea295
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the MED-V Workspace Packager

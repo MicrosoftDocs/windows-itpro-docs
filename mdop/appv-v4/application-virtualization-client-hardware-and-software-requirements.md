@@ -2,7 +2,7 @@
 title: Application Virtualization Client Hardware and Software Requirements
 description: Application Virtualization Client Hardware and Software Requirements
 ms.assetid: 8b877a2c-5721-4b22-a47f-e2838d58ab12
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Client Hardware and Software Requirements

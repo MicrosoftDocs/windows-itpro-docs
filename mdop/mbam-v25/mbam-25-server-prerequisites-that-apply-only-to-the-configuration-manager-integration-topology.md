@@ -2,7 +2,7 @@
 title: MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology
 description: MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology
 ms.assetid: 74180d8d-7b0f-460f-b301-53595cde8381
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.5 Server Prerequisites that Apply Only to the Configuration Manager Integration Topology

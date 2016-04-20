@@ -2,7 +2,7 @@
 title: How to Test URL Redirection
 description: How to Test URL Redirection
 ms.assetid: 38d80088-da1d-4098-b27e-76f9e78f81dc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Test URL Redirection

@@ -2,7 +2,7 @@
 title: Updating MED-V 2.0
 description: Updating MED-V 2.0
 ms.assetid: beea2f54-42d7-4a17-98e0-d243a8562265
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Updating MED-V 2.0

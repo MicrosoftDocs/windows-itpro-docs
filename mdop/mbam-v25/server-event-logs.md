@@ -2,7 +2,7 @@
 title: Server Event Logs
 description: Server Event Logs
 ms.assetid: 04e724d2-28cc-4fa8-86a1-0d4ab0234b11
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Event Logs

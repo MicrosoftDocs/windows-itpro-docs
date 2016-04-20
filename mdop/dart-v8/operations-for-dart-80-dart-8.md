@@ -2,7 +2,7 @@
 title: Operations for DaRT 8.0
 description: Operations for DaRT 8.0
 ms.assetid: a31615de-eb6e-41af-909c-d0b6f3eb3f2f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Operations for DaRT 8.0

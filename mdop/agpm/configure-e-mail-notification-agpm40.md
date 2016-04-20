@@ -2,7 +2,7 @@
 title: Configure E-Mail Notification
 description: Configure E-Mail Notification
 ms.assetid: 06f19556-f296-4a80-86a4-4f446c992204
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configure E-Mail Notification

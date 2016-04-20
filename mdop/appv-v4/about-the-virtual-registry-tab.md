@@ -2,7 +2,7 @@
 title: About the Virtual Registry Tab
 description: About the Virtual Registry Tab
 ms.assetid: ca8d837f-8218-4f86-95fd-13a44dccd022
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About the Virtual Registry Tab

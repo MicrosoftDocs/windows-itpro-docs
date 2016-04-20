@@ -2,7 +2,7 @@
 title: How to Configure a Domain User or Group
 description: How to Configure a Domain User or Group
 ms.assetid: 055aba81-a9c9-4b98-969d-775e603becf3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure a Domain User or Group

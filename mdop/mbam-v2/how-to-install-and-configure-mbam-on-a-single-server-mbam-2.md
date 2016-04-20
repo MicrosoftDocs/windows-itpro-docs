@@ -2,7 +2,7 @@
 title: How to Install and Configure MBAM on a Single Server
 description: How to Install and Configure MBAM on a Single Server
 ms.assetid: 45e6a012-6c8c-4d90-902c-d09de9a0cbea
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install and Configure MBAM on a Single Server

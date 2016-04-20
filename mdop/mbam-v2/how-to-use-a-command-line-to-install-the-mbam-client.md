@@ -2,7 +2,7 @@
 title: How to Use a Command Line to Install the MBAM Client
 description: How to Use a Command Line to Install the MBAM Client
 ms.assetid: 4dc8f944-c2fd-4d89-aed6-e9dc77de3ae4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Use a Command Line to Install the MBAM Client

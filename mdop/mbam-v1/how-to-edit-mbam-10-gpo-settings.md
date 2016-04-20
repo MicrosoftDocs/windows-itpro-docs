@@ -2,7 +2,7 @@
 title: How to Edit MBAM 1.0 GPO Settings
 description: How to Edit MBAM 1.0 GPO Settings
 ms.assetid: 03d12fbc-4302-43fc-9b38-440607d778a1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Edit MBAM 1.0 GPO Settings

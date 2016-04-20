@@ -2,7 +2,7 @@
 title: How to deploy App-V 5.1 Packages Using Electronic Software Distribution
 description: How to deploy App-V 5.1 Packages Using Electronic Software Distribution
 ms.assetid: e1957a5a-1f18-42da-b2c1-a5ae5a4cca7a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to deploy App-V 5.1 Packages Using Electronic Software Distribution

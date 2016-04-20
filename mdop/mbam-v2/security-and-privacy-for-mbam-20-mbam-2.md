@@ -2,7 +2,7 @@
 title: Security and Privacy for MBAM 2.0
 description: Security and Privacy for MBAM 2.0
 ms.assetid: 1b2859f8-2381-4ad7-8744-2caed88570ad
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Security and Privacy for MBAM 2.0

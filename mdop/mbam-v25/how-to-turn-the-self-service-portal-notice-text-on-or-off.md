@@ -2,7 +2,7 @@
 title: How to Turn the Self-Service Portal Notice Text On or Off
 description: How to Turn the Self-Service Portal Notice Text On or Off
 ms.assetid: e786685b-ffdb-4557-ae71-e79528097264
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Turn the Self-Service Portal Notice Text On or Off

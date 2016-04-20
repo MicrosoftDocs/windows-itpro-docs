@@ -2,7 +2,7 @@
 title: How to Apply Virtual Machine Settings to a MED-V Workspace
 description: How to Apply Virtual Machine Settings to a MED-V Workspace
 ms.assetid: b50d0dfb-8d61-4543-9607-a29bbb1ed45f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Apply Virtual Machine Settings to a MED-V Workspace

@@ -2,7 +2,7 @@
 title: Approve or Reject a Pending Action
 description: Approve or Reject a Pending Action
 ms.assetid: 6d78989a-b600-4876-9dd9-bc6207ff2ce7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Approve or Reject a Pending Action

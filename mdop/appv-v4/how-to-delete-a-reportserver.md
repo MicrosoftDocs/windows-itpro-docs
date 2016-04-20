@@ -2,7 +2,7 @@
 title: How to Delete a Report
 description: How to Delete a Report
 ms.assetid: 53350b71-1fb5-4f7e-a684-9ea1116c5c3f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Delete a Report

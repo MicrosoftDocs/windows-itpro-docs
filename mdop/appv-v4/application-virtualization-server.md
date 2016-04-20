@@ -2,7 +2,7 @@
 title: Application Virtualization Server
 description: Application Virtualization Server
 ms.assetid: feea99b2-5e3d-42b1-ad41-157429e5fceb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Server

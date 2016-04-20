@@ -2,7 +2,7 @@
 title: About Sharing Package Accelerators Page
 description: About Sharing Package Accelerators Page
 ms.assetid: 9630cde0-e2c3-476f-8fa1-58b3c9f7d3f7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Sharing Package Accelerators Page

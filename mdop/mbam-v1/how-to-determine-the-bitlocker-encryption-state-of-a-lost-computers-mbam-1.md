@@ -2,7 +2,7 @@
 title: How to Determine the BitLocker Encryption State of a Lost Computers
 description: How to Determine the BitLocker Encryption State of a Lost Computers
 ms.assetid: 9440890a-9c63-463b-9113-f46071446388
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Determine the BitLocker Encryption State of a Lost Computers

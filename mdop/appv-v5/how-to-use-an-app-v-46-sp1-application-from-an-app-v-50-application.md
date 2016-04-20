@@ -2,7 +2,7 @@
 title: How to Use an App-V 4.6 SP1 Application From an App-V 5.0 Application
 description: How to Use an App-V 4.6 SP1 Application From an App-V 5.0 Application
 ms.assetid: 4e78cb32-9c8b-478e-ae8b-c474a7e42487
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Use an App-V 4.6 SP1 Application From an App-V 5.0 Application

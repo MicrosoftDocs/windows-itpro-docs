@@ -2,7 +2,7 @@
 title: How to Set Up or Disable Usage Reporting
 description: How to Set Up or Disable Usage Reporting
 ms.assetid: 8587003a-128d-4b5d-ac70-5b9eddddd3dc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up or Disable Usage Reporting

@@ -2,7 +2,7 @@
 title: How to Configure Streaming Server Security Post-Installation
 description: How to Configure Streaming Server Security Post-Installation
 ms.assetid: 9bde3677-d1aa-4dcc-904e-bb49a268d748
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Streaming Server Security Post-Installation

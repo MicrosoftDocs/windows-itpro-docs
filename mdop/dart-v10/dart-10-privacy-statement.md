@@ -2,7 +2,7 @@
 title: DaRT 10 Privacy Statement
 description: DaRT 10 Privacy Statement
 ms.assetid: 27ad36fe-6816-4fe8-8838-500c05b5b184
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DaRT 10 Privacy Statement

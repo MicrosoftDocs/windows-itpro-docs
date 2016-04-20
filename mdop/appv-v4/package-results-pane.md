@@ -2,7 +2,7 @@
 title: Package Results Pane
 description: Package Results Pane
 ms.assetid: 07b7f737-f26f-4feb-88aa-3d8009c5622d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Package Results Pane

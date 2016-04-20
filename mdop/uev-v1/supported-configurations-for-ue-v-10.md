@@ -2,7 +2,7 @@
 title: Supported Configurations for UE-V 1.0
 description: Supported Configurations for UE-V 1.0
 ms.assetid: d90ab83e-741f-48eb-b1d8-a64cb9259f7a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Supported Configurations for UE-V 1.0

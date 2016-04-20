@@ -2,7 +2,7 @@
 title: Server Management Console File Type Associations Node
 description: Server Management Console File Type Associations Node
 ms.assetid: c22168be-6601-4154-b36b-9ca0fa87e5e0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Management Console: File Type Associations Node

@@ -2,7 +2,7 @@
 title: Planning for MBAM 2.5 High Availability
 description: Planning for MBAM 2.5 High Availability
 ms.assetid: 1e29b30c-33f1-4a52-9442-8c1391f0049c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MBAM 2.5 High Availability

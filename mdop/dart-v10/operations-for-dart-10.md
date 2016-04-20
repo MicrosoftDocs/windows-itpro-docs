@@ -2,7 +2,7 @@
 title: Operations for DaRT 10
 description: Operations for DaRT 10
 ms.assetid: 1776d5ed-96c6-4841-a097-721d8cf5c7f7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Operations for DaRT 10

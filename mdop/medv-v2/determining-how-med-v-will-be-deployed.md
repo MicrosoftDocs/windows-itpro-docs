@@ -2,7 +2,7 @@
 title: Determining How MED-V Will Be Deployed
 description: Determining How MED-V Will Be Deployed
 ms.assetid: addbfef6-799e-4fe7-87d2-7e096a5ef5a5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Determining How MED-V Will Be Deployed

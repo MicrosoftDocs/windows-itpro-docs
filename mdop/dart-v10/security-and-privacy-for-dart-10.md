@@ -2,7 +2,7 @@
 title: Security and Privacy for DaRT 10
 description: Security and Privacy for DaRT 10
 ms.assetid: 9ce5d555-c4e9-4482-a147-27b26579c935
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Security and Privacy for DaRT 10

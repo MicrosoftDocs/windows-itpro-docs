@@ -2,7 +2,7 @@
 title: App-V Installation Checklist
 description: App-V Installation Checklist
 ms.assetid: b17efaab-cd6d-4c30-beb7-c6e7c9c87657
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V Installation Checklist

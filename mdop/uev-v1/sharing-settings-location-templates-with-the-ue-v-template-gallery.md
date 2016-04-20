@@ -2,7 +2,7 @@
 title: Sharing Settings Location Templates with the UE-V Template Gallery
 description: Sharing Settings Location Templates with the UE-V Template Gallery
 ms.assetid: 3830ae0c-96dd-4a8d-96a2-df87aea81b27
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Sharing Settings Location Templates with the UE-V Template Gallery

@@ -2,7 +2,7 @@
 title: MED-V Trim Transfer Technology
 description: MED-V Trim Transfer Technology
 ms.assetid: 2744e855-a486-4028-9606-f0084794ec65
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V Trim Transfer Technology

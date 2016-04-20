@@ -2,7 +2,7 @@
 title: Example MED-V Workspace Deployment Checklist
 description: Example MED-V Workspace Deployment Checklist
 ms.assetid: d8857883-9b2d-40ac-9136-59e4e20e02fe
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Example MED-V Workspace Deployment Checklist

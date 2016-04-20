@@ -2,7 +2,7 @@
 title: How to Generate MBAM Reports
 description: How to Generate MBAM Reports
 ms.assetid: 083550cb-8c3f-49b3-a30e-97d85374d2f4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Generate MBAM Reports

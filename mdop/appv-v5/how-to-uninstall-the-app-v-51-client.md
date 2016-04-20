@@ -2,7 +2,7 @@
 title: How to Uninstall the App-V 5.1 Client
 description: How to Uninstall the App-V 5.1 Client
 ms.assetid: 21f2d946-fc9f-4cd3-899b-ac52b3fbc306
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Uninstall the App-V 5.1 Client

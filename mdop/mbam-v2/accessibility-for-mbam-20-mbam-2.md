@@ -2,7 +2,7 @@
 title: Accessibility for MBAM 2.0
 description: Accessibility for MBAM 2.0
 ms.assetid: 9cd628f1-f594-43ab-8095-4663272940a9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Accessibility for MBAM 2.0

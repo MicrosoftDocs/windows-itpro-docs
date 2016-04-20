@@ -2,7 +2,7 @@
 title: App-V Pre-Installation Checklist
 description: App-V Pre-Installation Checklist
 ms.assetid: 3af609b1-2c09-4edb-b083-b913b6d5e8c4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V Pre-Installation Checklist

@@ -2,7 +2,7 @@
 title: Diagnosing System Failures with Crash Analyzer
 description: Diagnosing System Failures with Crash Analyzer
 ms.assetid: 7ebef49e-a294-4173-adb1-7e6994aa01ad
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Diagnosing System Failures with Crash Analyzer

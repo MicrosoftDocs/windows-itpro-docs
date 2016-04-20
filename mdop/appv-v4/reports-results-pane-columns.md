@@ -2,7 +2,7 @@
 title: Reports Results Pane Columns
 description: Reports Results Pane Columns
 ms.assetid: 907360ca-6a55-4e42-88d2-db1a24cd2a28
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Reports Results Pane Columns

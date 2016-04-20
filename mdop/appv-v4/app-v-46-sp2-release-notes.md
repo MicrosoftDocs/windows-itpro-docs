@@ -2,7 +2,7 @@
 title: App-V 4.6 SP2 Release Notes
 description: App-V 4.6 SP2 Release Notes
 ms.assetid: abb536f0-e187-4c5b-952a-f837abd10ad2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V 4.6 SP2 Release Notes

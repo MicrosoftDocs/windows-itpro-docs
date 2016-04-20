@@ -2,7 +2,7 @@
 title: Viewing MED-V Workspace Configurations
 description: Viewing MED-V Workspace Configurations
 ms.assetid: 5de6cf04-6beb-4ac9-ad52-26ac8c0c8ce6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Viewing MED-V Workspace Configurations

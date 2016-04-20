@@ -2,7 +2,7 @@
 title: Hiding the Default BitLocker Drive Encryption Item in Control Panel
 description: Hiding the Default BitLocker Drive Encryption Item in Control Panel
 ms.assetid: 6e2a9a02-a809-43a1-80a3-1b03c7192c89
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Hiding the Default BitLocker Drive Encryption Item in Control Panel

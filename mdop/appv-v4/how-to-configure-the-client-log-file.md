@@ -2,7 +2,7 @@
 title: How to Configure the Client Log File
 description: How to Configure the Client Log File
 ms.assetid: dd79f8ce-61e2-4dc8-af03-2a353554a1b2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Client Log File

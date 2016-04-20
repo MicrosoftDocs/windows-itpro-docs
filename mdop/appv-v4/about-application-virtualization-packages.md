@@ -2,7 +2,7 @@
 title: About Application Virtualization Packages
 description: About Application Virtualization Packages
 ms.assetid: 69bd35c1-7af3-43db-931b-3074780aa926
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Application Virtualization Packages

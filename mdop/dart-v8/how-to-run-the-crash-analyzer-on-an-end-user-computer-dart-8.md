@@ -2,7 +2,7 @@
 title: How to Run the Crash Analyzer on an End-user Computer
 description: How to Run the Crash Analyzer on an End-user Computer
 ms.assetid: d36213e5-7719-44d7-be65-971c3ef7df2c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Run the Crash Analyzer on an End-user Computer

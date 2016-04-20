@@ -2,7 +2,7 @@
 title: User Access Permissions in Application Virtualization Client
 description: User Access Permissions in Application Virtualization Client
 ms.assetid: 7459374c-810c-45e3-b205-fdd1f8514f80
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # User Access Permissions in Application Virtualization Client

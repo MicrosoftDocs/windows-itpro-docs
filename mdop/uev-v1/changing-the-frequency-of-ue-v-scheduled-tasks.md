@@ -2,7 +2,7 @@
 title: Changing the Frequency of UE-V Scheduled Tasks
 description: Changing the Frequency of UE-V Scheduled Tasks
 ms.assetid: 33c2674e-0df4-4717-9c3d-820a90b16e19
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Changing the Frequency of UE-V Scheduled Tasks

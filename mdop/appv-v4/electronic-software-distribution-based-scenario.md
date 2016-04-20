@@ -2,7 +2,7 @@
 title: Electronic Software Distribution-Based Scenario
 description: Electronic Software Distribution-Based Scenario
 ms.assetid: 18be0f8d-60ee-449b-aa83-93c86d1a908e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Electronic Software Distribution-Based Scenario

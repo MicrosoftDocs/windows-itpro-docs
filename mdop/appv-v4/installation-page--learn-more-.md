@@ -2,7 +2,7 @@
 title: Installation Page (Learn More)
 description: Installation Page (Learn More)
 ms.assetid: a53b8330-dfc3-4540-b147-7c10529f403a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Installation Page (Learn More)

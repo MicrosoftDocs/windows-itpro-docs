@@ -2,7 +2,7 @@
 title: How to Localize a MED-V Image
 description: How to Localize a MED-V Image
 ms.assetid: adc148b3-8cfe-42a0-8847-be6b689a673a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Localize a MED-V Image

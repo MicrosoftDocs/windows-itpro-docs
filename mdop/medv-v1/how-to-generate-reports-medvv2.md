@@ -2,7 +2,7 @@
 title: How to Generate Reports
 description: How to Generate Reports
 ms.assetid: 9f8ba28e-1993-4c11-a28a-493718051e5d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Generate Reports

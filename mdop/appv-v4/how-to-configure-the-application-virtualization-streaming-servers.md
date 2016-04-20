@@ -2,7 +2,7 @@
 title: How to Configure the Application Virtualization Streaming Servers
 description: How to Configure the Application Virtualization Streaming Servers
 ms.assetid: 3e2dde35-9d72-40ba-9fdf-d0338bd4d561
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Application Virtualization Streaming Servers

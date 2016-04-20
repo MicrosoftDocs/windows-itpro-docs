@@ -2,7 +2,7 @@
 title: Planning for MED-V
 description: Planning for MED-V
 ms.assetid: 8124b765-6930-4607-8bd9-93068403c7a2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MED-V

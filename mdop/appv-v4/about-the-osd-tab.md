@@ -2,7 +2,7 @@
 title: About the OSD Tab
 description: About the OSD Tab
 ms.assetid: 7c78cd3a-91f2-4377-8c62-e52912906197
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About the OSD Tab

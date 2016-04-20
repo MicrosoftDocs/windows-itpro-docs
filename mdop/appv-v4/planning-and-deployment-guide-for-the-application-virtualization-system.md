@@ -2,7 +2,7 @@
 title: Planning and Deployment Guide for the Application Virtualization System
 description: Planning and Deployment Guide for the Application Virtualization System
 ms.assetid: 6c012e33-9ac6-4cd8-84ff-54f40973833f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning and Deployment Guide for the Application Virtualization System

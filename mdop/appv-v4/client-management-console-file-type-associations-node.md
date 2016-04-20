@@ -2,7 +2,7 @@
 title: Client Management Console File Type Associations Node
 description: Client Management Console File Type Associations Node
 ms.assetid: f0bc05ce-2cb2-4b06-961b-6c42d0274d28
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Client Management Console: File Type Associations Node

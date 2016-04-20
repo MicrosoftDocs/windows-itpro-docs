@@ -2,7 +2,7 @@
 title: File Type Associations Node
 description: File Type Associations Node
 ms.assetid: a3f35562-32d0-4a43-8604-3a54189ade92
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # File Type Associations Node

@@ -2,7 +2,7 @@
 title: Virtual Services Tab
 description: Virtual Services Tab
 ms.assetid: 9fc4679d-ccb5-4df7-99de-dd7d3a367ecc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Virtual Services Tab

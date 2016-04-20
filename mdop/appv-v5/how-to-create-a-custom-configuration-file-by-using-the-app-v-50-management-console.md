@@ -2,7 +2,7 @@
 title: How to Create a Custom Configuration File by Using the App-V 5.0 Management Console
 description: How to Create a Custom Configuration File by Using the App-V 5.0 Management Console
 ms.assetid: 0d1f6768-be30-4682-8eeb-aa95918b24c3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create a Custom Configuration File by Using the App-V 5.0 Management Console

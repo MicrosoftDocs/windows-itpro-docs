@@ -2,7 +2,7 @@
 title: Getting Started with MBAM 2.5
 description: Getting Started with MBAM 2.5
 ms.assetid: 23d0cfbb-e2ef-4c34-bf29-1b7ab4c48f00
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Getting Started with MBAM 2.5

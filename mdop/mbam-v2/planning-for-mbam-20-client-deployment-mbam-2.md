@@ -2,7 +2,7 @@
 title: Planning for MBAM 2.0 Client Deployment
 description: Planning for MBAM 2.0 Client Deployment
 ms.assetid: 3a92cf29-092f-4cad-bdfa-d5f6aafe554b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MBAM 2.0 Client Deployment

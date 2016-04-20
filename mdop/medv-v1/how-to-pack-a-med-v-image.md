@@ -2,7 +2,7 @@
 title: How to Pack a MED-V Image
 description: How to Pack a MED-V Image
 ms.assetid: e1ce2307-0f1b-4bf8-b146-e4012dc138d2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Pack a MED-V Image

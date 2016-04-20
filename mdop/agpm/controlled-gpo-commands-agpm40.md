@@ -2,7 +2,7 @@
 title: Controlled GPO Commands
 description: Controlled GPO Commands
 ms.assetid: 370d3db9-4efc-4799-983d-e29ba5f32b07
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Controlled GPO Commands

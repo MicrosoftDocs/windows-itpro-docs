@@ -2,7 +2,7 @@
 title: MED-V Client Tools
 description: MED-V Client Tools
 ms.assetid: ea18d82e-2433-4754-85ac-6eac84bcbb01
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V Client Tools

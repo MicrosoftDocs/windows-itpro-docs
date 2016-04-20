@@ -2,7 +2,7 @@
 title: Checklist Administer the AGPM Server and Archive
 description: Checklist Administer the AGPM Server and Archive
 ms.assetid: 0b2eb536-c3cc-462f-a42f-27a53f57bc55
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Checklist: Administer the AGPM Server and Archive

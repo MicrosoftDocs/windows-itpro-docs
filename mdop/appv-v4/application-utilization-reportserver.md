@@ -2,7 +2,7 @@
 title: Application Utilization Report
 description: Application Utilization Report
 ms.assetid: cb961969-c9a3-4d46-8303-121d737d76d8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Utilization Report

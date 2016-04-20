@@ -2,7 +2,7 @@
 title: Application Virtualization Properties General Tab
 description: Application Virtualization Properties General Tab
 ms.assetid: be7449d9-171a-4a11-9382-83b7008ccbdd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Properties: General Tab

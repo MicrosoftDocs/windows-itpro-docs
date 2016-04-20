@@ -2,7 +2,7 @@
 title: App-V Package WMI Class
 description: App-V Package WMI Class
 ms.assetid: 0fc26c3b-9706-4804-be2d-645771dc33ae
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V Package WMI Class

@@ -2,7 +2,7 @@
 title: High Availability for MBAM 2.0
 description: High Availability for MBAM 2.0
 ms.assetid: 244ee013-9e2a-48d2-b842-4e10594fd74f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # High Availability for MBAM 2.0

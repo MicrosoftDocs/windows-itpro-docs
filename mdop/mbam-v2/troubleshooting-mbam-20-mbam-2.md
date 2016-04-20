@@ -2,7 +2,7 @@
 title: Troubleshooting MBAM 2.0
 description: Troubleshooting MBAM 2.0
 ms.assetid: 43933ec7-b5b8-49c5-813f-4c06aa7314ed
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Troubleshooting MBAM 2.0

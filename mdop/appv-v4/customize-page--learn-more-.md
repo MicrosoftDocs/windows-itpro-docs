@@ -2,7 +2,7 @@
 title: Customize Page (Learn More)
 description: Customize Page (Learn More)
 ms.assetid: 893df614-7058-4fcf-ba34-d0f16c856374
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Customize Page (Learn More)

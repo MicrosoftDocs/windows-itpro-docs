@@ -2,7 +2,7 @@
 title: CLEAR APP
 description: CLEAR APP
 ms.assetid: c2e63031-5941-45e4-9863-127231cfa25b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # CLEAR APP

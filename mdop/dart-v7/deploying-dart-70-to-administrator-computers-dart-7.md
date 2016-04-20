@@ -2,7 +2,7 @@
 title: Deploying DaRT 7.0 to Administrator Computers
 description: Deploying DaRT 7.0 to Administrator Computers
 ms.assetid: 8baf26aa-b168-463c-810f-a165918b9d9f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying DaRT 7.0 to Administrator Computers

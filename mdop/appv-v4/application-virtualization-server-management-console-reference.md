@@ -2,7 +2,7 @@
 title: Application Virtualization Server Management Console Reference
 description: Application Virtualization Server Management Console Reference
 ms.assetid: 7c9890f4-7230-44dd-bbe8-95a4b65dc796
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Server Management Console Reference

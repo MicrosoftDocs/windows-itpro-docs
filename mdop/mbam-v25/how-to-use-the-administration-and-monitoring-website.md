@@ -2,7 +2,7 @@
 title: How to Use the Administration and Monitoring Website
 description: How to Use the Administration and Monitoring Website
 ms.assetid: bb96a4e8-d4f4-4e6f-b7db-82d96998bfa6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Use the Administration and Monitoring Website

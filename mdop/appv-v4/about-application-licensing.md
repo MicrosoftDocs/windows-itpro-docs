@@ -2,7 +2,7 @@
 title: About Application Licensing
 description: About Application Licensing
 ms.assetid: 6b487641-1627-4e91-b829-04f001008176
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Application Licensing

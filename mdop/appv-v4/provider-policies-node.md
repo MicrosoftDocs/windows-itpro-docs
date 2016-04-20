@@ -2,7 +2,7 @@
 title: Provider Policies Node
 description: Provider Policies Node
 ms.assetid: 89b47076-7732-4128-93cc-8e6d5b671c8e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Provider Policies Node

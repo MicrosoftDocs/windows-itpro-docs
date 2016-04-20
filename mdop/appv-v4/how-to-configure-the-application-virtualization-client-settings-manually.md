@@ -2,7 +2,7 @@
 title: How to Configure the Application Virtualization Client Settings Manually
 description: How to Configure the Application Virtualization Client Settings Manually
 ms.assetid: 53bd21d8-49eb-4c77-9692-c093ffe4c17c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Application Virtualization Client Settings Manually

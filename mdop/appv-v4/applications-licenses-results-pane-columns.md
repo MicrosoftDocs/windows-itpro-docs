@@ -2,7 +2,7 @@
 title: Applications Licenses Results Pane Columns
 description: Applications Licenses Results Pane Columns
 ms.assetid: bd56b36a-655e-4fc4-9f83-d2ed68882402
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Applications Licenses Results Pane Columns

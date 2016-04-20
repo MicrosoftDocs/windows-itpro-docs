@@ -2,7 +2,7 @@
 title: How to Upgrade a Virtual Application Package (App-V 4.6)
 description: How to Upgrade a Virtual Application Package (App-V 4.6)
 ms.assetid: 3566227e-f3dc-4c32-af1f-e0211588118c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upgrade a Virtual Application Package (App-V 4.6)

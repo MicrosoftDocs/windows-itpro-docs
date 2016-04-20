@@ -2,7 +2,7 @@
 title: Release Notes for MBAM 2.5
 description: Release Notes for MBAM 2.5
 ms.assetid: fcaf03e6-5e39-4771-af3c-a3cd468f3961
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Release Notes for MBAM 2.5

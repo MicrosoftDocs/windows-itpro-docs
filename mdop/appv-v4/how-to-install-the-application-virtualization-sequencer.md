@@ -2,7 +2,7 @@
 title: How to Install the Application Virtualization Sequencer
 description: How to Install the Application Virtualization Sequencer
 ms.assetid: 89cdf60d-18b0-4204-aa9f-b402610f8f0e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the Application Virtualization Sequencer

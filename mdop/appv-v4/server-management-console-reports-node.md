@@ -2,7 +2,7 @@
 title: Server Management Console Reports Node
 description: Server Management Console Reports Node
 ms.assetid: 9dde6332-5882-40dd-8a8f-857216df80ed
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Management Console: Reports Node

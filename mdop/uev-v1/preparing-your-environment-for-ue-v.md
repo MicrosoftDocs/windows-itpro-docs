@@ -2,7 +2,7 @@
 title: Preparing Your Environment for UE-V
 description: Preparing Your Environment for UE-V
 ms.assetid: c93d3b33-e032-451a-9e1b-8534e1625396
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Preparing Your Environment for UE-V

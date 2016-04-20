@@ -2,7 +2,7 @@
 title: Configuring a Windows Virtual PC Image for MED-V
 description: Configuring a Windows Virtual PC Image for MED-V
 ms.assetid: d87a0df8-9e08-4d1e-bfb0-9dc3cebf0d28
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring a Windows Virtual PC Image for MED-V

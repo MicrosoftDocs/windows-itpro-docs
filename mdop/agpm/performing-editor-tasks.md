@@ -2,7 +2,7 @@
 title: Performing Editor Tasks
 description: Performing Editor Tasks
 ms.assetid: b1e62615-2e02-460e-81d1-4a3fbe59f62d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Performing Editor Tasks

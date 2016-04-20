@@ -2,7 +2,7 @@
 title: How to Publish a Connection Group
 description: How to Publish a Connection Group
 ms.assetid: c61db00a-8393-485c-949e-af2098b9e258
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Publish a Connection Group

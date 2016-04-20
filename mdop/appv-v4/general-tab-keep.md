@@ -2,7 +2,7 @@
 title: General Tab
 description: General Tab
 ms.assetid: aeefae39-60cd-4ad4-9575-c07d7e2b1e59
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # General Tab

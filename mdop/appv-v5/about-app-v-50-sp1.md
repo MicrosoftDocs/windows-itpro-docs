@@ -2,7 +2,7 @@
 title: About App-V 5.0 SP1
 description: About App-V 5.0 SP1
 ms.assetid: 2848a51b-452e-4c70-b465-f6717cfa667f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About App-V 5.0 SP1

@@ -2,7 +2,7 @@
 title: How to Deploy a Workspace Image
 description: How to Deploy a Workspace Image
 ms.assetid: ccc8e89b-1625-4b58-837e-4c6d93d46070
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deploy a Workspace Image

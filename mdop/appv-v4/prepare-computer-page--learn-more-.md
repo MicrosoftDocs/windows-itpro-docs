@@ -2,7 +2,7 @@
 title: Prepare Computer Page (Learn More)
 description: Prepare Computer Page (Learn More)
 ms.assetid: a401ce3d-b8f7-4b3f-9be9-ecf6d8b544fd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Prepare Computer Page (Learn More)

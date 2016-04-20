@@ -2,7 +2,7 @@
 title: Microsoft Enterprise Desktop Virtualization 2.0
 description: Microsoft Enterprise Desktop Virtualization 2.0
 ms.assetid: 84109be0-4613-42e9-85fc-fcda8de6e4c4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft Enterprise Desktop Virtualization 2.0

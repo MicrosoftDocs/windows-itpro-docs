@@ -2,7 +2,7 @@
 title: How to Upgrade a Virtual Application by Using the Command Line
 description: How to Upgrade a Virtual Application by Using the Command Line
 ms.assetid: 83c97767-6ea1-42aa-b411-ccc9fa61cf81
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upgrade a Virtual Application by Using the Command Line

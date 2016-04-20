@@ -2,7 +2,7 @@
 title: How to Recover Local Computers by Using the DaRT Recovery Image
 description: How to Recover Local Computers by Using the DaRT Recovery Image
 ms.assetid: f679d522-49ab-429c-93d0-294c3f3e5639
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Recover Local Computers by Using the DaRT Recovery Image

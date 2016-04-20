@@ -2,7 +2,7 @@
 title: Create Package Accelerator (Review Errors) Page
 description: Create Package Accelerator (Review Errors) Page
 ms.assetid: ea3f531d-1887-4b42-a30f-b875d0ccb916
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Create Package Accelerator (Review Errors) Page

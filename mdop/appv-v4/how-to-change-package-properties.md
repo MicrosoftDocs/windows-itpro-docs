@@ -2,7 +2,7 @@
 title: How to Change Package Properties
 description: How to Change Package Properties
 ms.assetid: 6050916a-d4fe-4dac-8f2a-47308dbbf481
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Change Package Properties

@@ -2,7 +2,7 @@
 title: Application Virtualization Properties Connectivity Tab
 description: Application Virtualization Properties Connectivity Tab
 ms.assetid: e07c1352-a2be-4d99-9968-daba515bcde2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Properties: Connectivity Tab

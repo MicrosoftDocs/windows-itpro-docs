@@ -2,7 +2,7 @@
 title: How to Delete a Package Version
 description: How to Delete a Package Version
 ms.assetid: a55adb9d-ffa6-4df3-a2d1-5e0c73c35e1b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Delete a Package Version

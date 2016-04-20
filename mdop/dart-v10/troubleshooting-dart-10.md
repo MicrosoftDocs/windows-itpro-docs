@@ -2,7 +2,7 @@
 title: Troubleshooting DaRT 10
 description: Troubleshooting DaRT 10
 ms.assetid: 76d42a00-3f6b-4730-8857-39fe49535d37
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Troubleshooting DaRT 10

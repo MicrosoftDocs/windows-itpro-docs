@@ -2,7 +2,7 @@
 title: Configuring Certificates to Support Secure Streaming
 description: Configuring Certificates to Support Secure Streaming
 ms.assetid: 88dc76d8-7745-4729-92a1-af089c921244
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring Certificates to Support Secure Streaming

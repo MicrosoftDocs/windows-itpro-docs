@@ -2,7 +2,7 @@
 title: How to Apply a Package Accelerator to Create a Virtual Application Package (App-V 4.6 SP1)
 description: How to Apply a Package Accelerator to Create a Virtual Application Package (App-V 4.6 SP1)
 ms.assetid: ca0bd514-2bbf-4130-8c77-98d991cbe016
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Apply a Package Accelerator to Create a Virtual Application Package (App-V 4.6 SP1)

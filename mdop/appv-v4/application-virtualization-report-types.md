@@ -2,7 +2,7 @@
 title: Application Virtualization Report Types
 description: Application Virtualization Report Types
 ms.assetid: 232ef25e-11a0-49fb-b4b3-54ac83577383
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Report Types

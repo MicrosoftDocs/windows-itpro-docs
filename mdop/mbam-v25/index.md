@@ -2,7 +2,7 @@
 title: Microsoft BitLocker Administration and Monitoring 2.5
 description: Microsoft BitLocker Administration and Monitoring 2.5
 ms.assetid: fd81d7de-b166-47e8-b6c7-d984830762b6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft BitLocker Administration and Monitoring 2.5

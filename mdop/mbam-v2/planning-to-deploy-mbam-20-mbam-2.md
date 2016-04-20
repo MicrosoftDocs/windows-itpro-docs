@@ -2,7 +2,7 @@
 title: Planning to Deploy MBAM 2.0
 description: Planning to Deploy MBAM 2.0
 ms.assetid: 2dc05fcd-aed9-4315-aeaf-92aaa9e0e955
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning to Deploy MBAM 2.0

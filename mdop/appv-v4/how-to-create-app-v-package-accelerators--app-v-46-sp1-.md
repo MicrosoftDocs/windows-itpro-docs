@@ -2,7 +2,7 @@
 title: How to Create App-V Package Accelerators (App-V 4.6 SP1)
 description: How to Create App-V Package Accelerators (App-V 4.6 SP1)
 ms.assetid: 585e692e-cebb-48ac-93ab-b2e7eb7ae7ad
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create App-V Package Accelerators (App-V 4.6 SP1)

@@ -2,7 +2,7 @@
 title: How to Assign the Proper Credentials for Windows Vista
 description: How to Assign the Proper Credentials for Windows Vista
 ms.assetid: cc11d2af-a350-4d16-ba7b-f9c1d89e14b4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Assign the Proper Credentials for Windows Vista

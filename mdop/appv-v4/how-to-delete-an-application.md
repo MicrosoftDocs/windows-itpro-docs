@@ -2,7 +2,7 @@
 title: How to Delete an Application
 description: How to Delete an Application
 ms.assetid: 03b0912d-b14a-4522-916d-71f8b77a8a82
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Delete an Application

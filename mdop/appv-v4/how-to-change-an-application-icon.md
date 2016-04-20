@@ -2,7 +2,7 @@
 title: How to Change an Application Icon
 description: How to Change an Application Icon
 ms.assetid: bd6cfb22-086b-43fd-b6f9-1907b5f16e83
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Change an Application Icon

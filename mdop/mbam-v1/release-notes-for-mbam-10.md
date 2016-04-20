@@ -2,7 +2,7 @@
 title: Release Notes for MBAM 1.0
 description: Release Notes for MBAM 1.0
 ms.assetid: d82fddde-c360-48ef-86a0-d9b5fe066861
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Release Notes for MBAM 1.0

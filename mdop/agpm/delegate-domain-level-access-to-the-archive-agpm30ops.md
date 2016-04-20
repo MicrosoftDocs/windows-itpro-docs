@@ -2,7 +2,7 @@
 title: Delegate Domain-Level Access to the Archive
 description: Delegate Domain-Level Access to the Archive
 ms.assetid: d232069e-71d5-4b4d-b22e-bef11de1cfd4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Delegate Domain-Level Access to the Archive

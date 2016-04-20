@@ -2,7 +2,7 @@
 title: Wizard Pages (AppV 4.6 SP1)
 description: Wizard Pages (AppV 4.6 SP1)
 ms.assetid: dadab8cf-fe6d-4cff-8f6c-e9676f244872
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Wizard Pages (AppV 4.6 SP1)

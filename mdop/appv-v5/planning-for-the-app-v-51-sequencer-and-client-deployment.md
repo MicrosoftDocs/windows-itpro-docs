@@ -2,7 +2,7 @@
 title: Planning for the App-V 5.1 Sequencer and Client Deployment
 description: Planning for the App-V 5.1 Sequencer and Client Deployment
 ms.assetid: d92f8773-fa7d-4926-978a-433978f91202
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for the App-V 5.1 Sequencer and Client Deployment

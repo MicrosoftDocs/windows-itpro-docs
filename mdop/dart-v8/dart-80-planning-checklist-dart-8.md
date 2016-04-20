@@ -2,7 +2,7 @@
 title: DaRT 8.0 Planning Checklist
 description: DaRT 8.0 Planning Checklist
 ms.assetid: 0a0f5a71-b1d6-424c-8174-fc5aad506928
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DaRT 8.0 Planning Checklist

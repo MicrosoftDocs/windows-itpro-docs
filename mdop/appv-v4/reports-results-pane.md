@@ -2,7 +2,7 @@
 title: Reports Results Pane
 description: Reports Results Pane
 ms.assetid: 66beac62-fa55-4ab9-ac19-b9e1772e2d20
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Reports Results Pane

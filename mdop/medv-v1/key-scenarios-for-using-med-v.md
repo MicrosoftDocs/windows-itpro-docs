@@ -2,7 +2,7 @@
 title: Key Scenarios for Using MED-V
 description: Key Scenarios for Using MED-V
 ms.assetid: e35075e2-3401-49ae-810d-1bd51ebc7924
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Key Scenarios for Using MED-V

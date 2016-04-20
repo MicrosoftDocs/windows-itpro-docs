@@ -2,7 +2,7 @@
 title: Creating a Template and Setting a Default Template
 description: Creating a Template and Setting a Default Template
 ms.assetid: 8771b4b5-4dea-4be1-a675-f60cfd3ec5dc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Creating a Template and Setting a Default Template

@@ -2,7 +2,7 @@
 title: Request Deletion of a GPO
 description: Request Deletion of a GPO
 ms.assetid: 576ece5c-dc6d-4b5e-8628-01c15ae2c9a8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Request Deletion of a GPO

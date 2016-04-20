@@ -2,7 +2,7 @@
 title: Creating the DaRT 8.0 Recovery Image
 description: Creating the DaRT 8.0 Recovery Image
 ms.assetid: 39001b8e-86c0-45ef-8f34-2d6199f9922d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Creating the DaRT 8.0 Recovery Image

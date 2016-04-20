@@ -2,7 +2,7 @@
 title: Manage Configurations for UE-V 2.x
 description: Manage Configurations for UE-V 2.x
 ms.assetid: e2332eca-a9cd-4446-8f7c-d17058b03466
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Manage Configurations for UE-V 2.x

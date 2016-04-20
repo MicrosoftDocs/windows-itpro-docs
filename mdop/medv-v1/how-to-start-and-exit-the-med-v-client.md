@@ -2,7 +2,7 @@
 title: How to Start and Exit the MED-V Client
 description: How to Start and Exit the MED-V Client
 ms.assetid: 3762bad1-6937-40fa-ab5d-61a905865214
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Start and Exit the MED-V Client

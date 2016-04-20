@@ -2,7 +2,7 @@
 title: About MED-V 1.0 SP1
 description: About MED-V 1.0 SP1
 ms.assetid: 4c16e935-46c4-49c3-9e53-c60404d5da0c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About MED-V 1.0 SP1

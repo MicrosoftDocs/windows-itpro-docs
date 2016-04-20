@@ -2,7 +2,7 @@
 title: How to Deploy the App-V Databases by Using SQL Scripts
 description: How to Deploy the App-V Databases by Using SQL Scripts
 ms.assetid: 1183b1bc-d4d7-4914-a049-06e82bf2d96d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deploy the App-V Databases by Using SQL Scripts

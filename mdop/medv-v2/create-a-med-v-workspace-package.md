@@ -2,7 +2,7 @@
 title: Create a MED-V Workspace Package
 description: Create a MED-V Workspace Package
 ms.assetid: 3f75fe73-41ac-4389-ae21-5efb2d437f4d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Create a MED-V Workspace Package

@@ -2,7 +2,7 @@
 title: Sync Methods for UE-V 2.x
 description: Sync Methods for UE-V 2.x
 ms.assetid: af0ae894-dfdc-41d2-927b-c2ab1b355ffe
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Sync Methods for UE-V 2.x

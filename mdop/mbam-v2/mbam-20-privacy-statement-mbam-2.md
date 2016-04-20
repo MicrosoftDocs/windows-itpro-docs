@@ -2,7 +2,7 @@
 title: MBAM 2.0 Privacy Statement
 description: MBAM 2.0 Privacy Statement
 ms.assetid: fce72ad4-a837-4d17-8d3b-4d93f1a399be
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.0 Privacy Statement

@@ -2,7 +2,7 @@
 title: How to Manage MBAM Administrator Roles
 description: How to Manage MBAM Administrator Roles
 ms.assetid: c0f25a42-dbff-418d-a776-4fe23ee07d16
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage MBAM Administrator Roles

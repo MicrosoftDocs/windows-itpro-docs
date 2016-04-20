@@ -2,7 +2,7 @@
 title: Configure an AGPM Server Connection
 description: Configure an AGPM Server Connection
 ms.assetid: 409cbbcf-3b0e-459d-9bd2-75cb7b9430b0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configure an AGPM Server Connection

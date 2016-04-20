@@ -2,7 +2,7 @@
 title: Planning for Using App-V with Office
 description: Planning for Using App-V with Office
 ms.assetid: e7a19b43-1746-469f-bad6-8e75cf4b3f67
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for Using App-V with Office

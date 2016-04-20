@@ -2,7 +2,7 @@
 title: Failed Launch Dialog Box (App-V 4.6 SP1)
 description: Failed Launch Dialog Box (App-V 4.6 SP1)
 ms.assetid: 55669552-51b4-48aa-8bd0-6d78c2c930d9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Failed Launch Dialog Box (App-V 4.6 SP1)

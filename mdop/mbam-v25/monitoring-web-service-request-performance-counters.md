@@ -2,7 +2,7 @@
 title: Monitoring Web Service Request Performance Counters
 description: Monitoring Web Service Request Performance Counters
 ms.assetid: bdb812a1-465a-4098-b4c0-cb99890d1b0d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Monitoring Web Service Request Performance Counters

@@ -2,7 +2,7 @@
 title: App-V 5.0 Security Considerations
 description: App-V 5.0 Security Considerations
 ms.assetid: 1e7292a0-7972-4b4f-85a9-eaf33f6c563a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V 5.0 Security Considerations

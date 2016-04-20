@@ -2,7 +2,7 @@
 title: Technical Overview of AGPM
 description: Technical Overview of AGPM
 ms.assetid: 36bc0ab5-f752-474c-8559-721ea95169c2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Technical Overview of AGPM

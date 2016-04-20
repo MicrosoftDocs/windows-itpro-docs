@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencing Wizard Add Files to Virtual File System Page
 description: Application Virtualization Sequencing Wizard Add Files to Virtual File System Page
 ms.assetid: 6b01333b-08bd-4b96-a123-a07a7aafddd1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencing Wizard Add Files to Virtual File System Page

@@ -2,7 +2,7 @@
 title: Application Publishing and Client Interaction for App-V 5
 description: Application Publishing and Client Interaction for App-V 5
 ms.assetid: 9854afdc-00f9-40ec-8275-d168e5151286
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Publishing and Client Interaction for App-V 5

@@ -2,7 +2,7 @@
 title: How to Configure a Deployment Package
 description: How to Configure a Deployment Package
 ms.assetid: 748272a1-6af2-476e-a3f1-87435b8e94b1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure a Deployment Package

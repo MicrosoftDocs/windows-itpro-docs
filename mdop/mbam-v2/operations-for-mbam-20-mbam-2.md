@@ -2,7 +2,7 @@
 title: Operations for MBAM 2.0
 description: Operations for MBAM 2.0
 ms.assetid: ece72016-4ffa-48df-8c12-1e442ee9e980
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Operations for MBAM 2.0

@@ -2,7 +2,7 @@
 title: DELETE PACKAGE
 description: DELETE PACKAGE
 ms.assetid: 8f7a4598-610d-490e-a224-426acce01a9f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DELETE PACKAGE

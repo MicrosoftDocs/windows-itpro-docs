@@ -2,7 +2,7 @@
 title: Change History Tab
 description: Change History Tab
 ms.assetid: 652ef2f0-3a3e-4844-a472-9fa99ec5ee32
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Change History Tab

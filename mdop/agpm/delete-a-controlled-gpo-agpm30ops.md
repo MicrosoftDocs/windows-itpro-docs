@@ -2,7 +2,7 @@
 title: Delete a Controlled GPO
 description: Delete a Controlled GPO
 ms.assetid: f51c1737-c116-4faf-a6f6-c72303f60a3b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Delete a Controlled GPO

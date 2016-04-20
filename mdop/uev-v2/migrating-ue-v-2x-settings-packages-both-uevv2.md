@@ -2,7 +2,7 @@
 title: Migrating UE-V 2.x Settings Packages
 description: Migrating UE-V 2.x Settings Packages
 ms.assetid: f79381f4-e142-405c-b728-5c048502aa70
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Migrating UE-V 2.x Settings Packages

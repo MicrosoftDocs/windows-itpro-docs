@@ -2,7 +2,7 @@
 title: App-V Upgrade Checklist
 description: App-V Upgrade Checklist
 ms.assetid: 64e317d2-d260-4b67-8a49-ba9ac513087a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V Upgrade Checklist

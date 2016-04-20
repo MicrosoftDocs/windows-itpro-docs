@@ -2,7 +2,7 @@
 title: How to Apply Performance Settings to a MED-V Workspace
 description: How to Apply Performance Settings to a MED-V Workspace
 ms.assetid: e0fed1e1-6e8f-4d65-ab83-b950a17661c0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Apply Performance Settings to a MED-V Workspace

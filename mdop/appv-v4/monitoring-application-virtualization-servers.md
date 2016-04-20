@@ -2,7 +2,7 @@
 title: Monitoring Application Virtualization Servers
 description: Monitoring Application Virtualization Servers
 ms.assetid: d84355ae-4fe4-41d9-ac3a-3eaa32d9a61f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Monitoring Application Virtualization Servers

@@ -2,7 +2,7 @@
 title: Feature Visibility Settings
 description: Feature Visibility Settings
 ms.assetid: d3c0b02a-b943-4001-8b9c-dfac8fe58789
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Feature Visibility Settings

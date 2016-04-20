@@ -2,7 +2,7 @@
 title: How to Sequence a New Add-on or Plug-in Application (App-V 4.6 SP1)
 description: How to Sequence a New Add-on or Plug-in Application (App-V 4.6 SP1)
 ms.assetid: 2c018215-66e5-4301-8481-159891a6b35b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Sequence a New Add-on or Plug-in Application (App-V 4.6 SP1)

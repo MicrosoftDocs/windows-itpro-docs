@@ -2,7 +2,7 @@
 title: Client Installation Command Line Reference
 description: Client Installation Command Line Reference
 ms.assetid: 122a593d-3314-4e9b-858a-08a25ed00c32
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Client Installation Command Line Reference

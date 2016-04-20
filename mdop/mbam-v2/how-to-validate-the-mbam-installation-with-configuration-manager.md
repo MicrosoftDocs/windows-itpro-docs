@@ -2,7 +2,7 @@
 title: How to Validate the MBAM Installation with Configuration Manager
 description: How to Validate the MBAM Installation with Configuration Manager
 ms.assetid: 8e268539-91c3-4e8a-baae-faf3605da818
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Validate the MBAM Installation with Configuration Manager

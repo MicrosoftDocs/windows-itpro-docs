@@ -2,7 +2,7 @@
 title: Overview of Advanced Group Policy Management
 description: Overview of Advanced Group Policy Management
 ms.assetid: 028de9dd-848b-42bc-a982-65ba5c433772
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Overview of Advanced Group Policy Management

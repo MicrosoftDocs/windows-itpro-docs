@@ -2,7 +2,7 @@
 title: How to Upgrade the Application Virtualization Sequencer
 description: How to Upgrade the Application Virtualization Sequencer
 ms.assetid: 7f85f140-5034-4227-85ef-81f205e722ef
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upgrade the Application Virtualization Sequencer

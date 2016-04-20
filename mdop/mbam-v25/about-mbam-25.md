@@ -2,7 +2,7 @@
 title: About MBAM 2.5
 description: About MBAM 2.5
 ms.assetid: 1ce218ec-4d2e-4a75-8d1a-68d737a8f3c9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About MBAM 2.5

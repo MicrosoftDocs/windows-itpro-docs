@@ -2,7 +2,7 @@
 title: Virtual Registry Tab
 description: Virtual Registry Tab
 ms.assetid: 25833383-24c4-40a1-b34c-73b2bd3f11e1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Virtual Registry Tab

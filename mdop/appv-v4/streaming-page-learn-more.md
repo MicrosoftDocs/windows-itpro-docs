@@ -2,7 +2,7 @@
 title: Streaming Page
 description: Streaming Page
 ms.assetid: a69a57a0-1bbe-4604-840d-bfa87ec463e1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Streaming Page

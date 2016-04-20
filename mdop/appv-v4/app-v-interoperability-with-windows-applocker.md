@@ -2,7 +2,7 @@
 title: App-V Interoperability with Windows AppLocker
 description: App-V Interoperability with Windows AppLocker
 ms.assetid: 9a488034-607d-411c-b495-ff184c726f49
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V Interoperability with Windows AppLocker

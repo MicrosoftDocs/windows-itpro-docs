@@ -2,7 +2,7 @@
 title: MED-V 2.0 Release Notes
 description: MED-V 2.0 Release Notes
 ms.assetid: b8f7d938-566e-434c-b4b8-28b67cdfd0b1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V 2.0 Release Notes

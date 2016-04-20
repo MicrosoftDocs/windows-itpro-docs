@@ -2,7 +2,7 @@
 title: Manage MED-V Workspace Settings
 description: Manage MED-V Workspace Settings
 ms.assetid: 35ebd16e-31c7-4996-81be-af1d56346803
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Manage MED-V Workspace Settings

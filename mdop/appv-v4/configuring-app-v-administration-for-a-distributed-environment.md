@@ -2,7 +2,7 @@
 title: Configuring App-V Administration for a Distributed Environment
 description: Configuring App-V Administration for a Distributed Environment
 ms.assetid: 53971fa9-8319-435c-be74-c37feb9af1da
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring App-V Administration for a Distributed Environment

@@ -2,7 +2,7 @@
 title: How to Deploy the App-V 5.0 Server Using a Script
 description: How to Deploy the App-V 5.0 Server Using a Script
 ms.assetid: b91a35c8-df9e-4065-9187-abafbe565b84
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deploy the App-V 5.0 Server Using a Script

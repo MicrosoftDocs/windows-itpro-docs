@@ -2,7 +2,7 @@
 title: App-V 5.0 Capacity Planning
 description: App-V 5.0 Capacity Planning
 ms.assetid: 56f48b00-cd91-4280-9481-5372a0e2e792
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V 5.0 Capacity Planning

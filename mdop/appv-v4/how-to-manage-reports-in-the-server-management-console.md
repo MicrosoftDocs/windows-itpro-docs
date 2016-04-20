@@ -2,7 +2,7 @@
 title: How to Manage Reports in the Server Management Console
 description: How to Manage Reports in the Server Management Console
 ms.assetid: 28d99620-6339-43f6-9288-4aa958607c59
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Reports in the Server Management Console

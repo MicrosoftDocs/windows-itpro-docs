@@ -2,7 +2,7 @@
 title: How to Perform DaRT Tasks by Using PowerShell Commands
 description: How to Perform DaRT Tasks by Using PowerShell Commands
 ms.assetid: bc788b00-38c7-4f57-a832-916b68264d89
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Perform DaRT Tasks by Using PowerShell Commands

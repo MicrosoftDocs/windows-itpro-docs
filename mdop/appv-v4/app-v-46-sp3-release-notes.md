@@ -2,7 +2,7 @@
 title: App-V 4.6 SP3 Release Notes
 description: App-V 4.6 SP3 Release Notes
 ms.assetid: 206fadeb-59cc-47b4-836f-191ab1c27ff8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V 4.6 SP3 Release Notes

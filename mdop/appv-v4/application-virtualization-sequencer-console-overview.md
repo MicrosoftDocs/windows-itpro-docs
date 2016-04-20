@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencer Console Overview
 description: Application Virtualization Sequencer Console Overview
 ms.assetid: 681bb40d-2937-4645-82aa-4a44775232d8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencer Console Overview

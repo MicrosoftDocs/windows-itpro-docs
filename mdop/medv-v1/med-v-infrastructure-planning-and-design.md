@@ -2,7 +2,7 @@
 title: MED-V Infrastructure Planning and Design
 description: MED-V Infrastructure Planning and Design
 ms.assetid: 6129b8f6-4b20-4403-8edd-68b007791139
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V Infrastructure Planning and Design

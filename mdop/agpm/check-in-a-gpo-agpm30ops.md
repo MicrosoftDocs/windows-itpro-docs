@@ -2,7 +2,7 @@
 title: Check In a GPO
 description: Check In a GPO
 ms.assetid: 437397db-c94b-4940-b1a4-05442619ebee
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Check In a GPO

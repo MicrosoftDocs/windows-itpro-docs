@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencer Options Dialog Box
 description: Application Virtualization Sequencer Options Dialog Box
 ms.assetid: f71eda8d-8270-439f-a093-867b3a43ebff
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencer Options Dialog Box

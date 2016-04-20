@@ -2,7 +2,7 @@
 title: Logging and Tracing Settings
 description: Logging and Tracing Settings
 ms.assetid: 858b6fbf-65b4-42fa-95a9-69b04e5734d7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Logging and Tracing Settings

@@ -2,7 +2,7 @@
 title: About Microsoft Application Virtualization 4.5
 description: About Microsoft Application Virtualization 4.5
 ms.assetid: 39f45a6f-ac55-4fd7-8a83-865e1a7034f8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Microsoft Application Virtualization 4.5

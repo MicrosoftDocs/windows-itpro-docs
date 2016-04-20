@@ -2,7 +2,7 @@
 title: How to Manage URL Redirection by Using the MED-V Workspace Packager
 description: How to Manage URL Redirection by Using the MED-V Workspace Packager
 ms.assetid: 1a8d25af-479f-42d3-bf5f-c7fd974bbf8c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage URL Redirection by Using the MED-V Workspace Packager

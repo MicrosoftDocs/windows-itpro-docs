@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencer
 description: Application Virtualization Sequencer
 ms.assetid: f078f3c9-7b5c-4ff1-b319-4c076b88bc39
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencer

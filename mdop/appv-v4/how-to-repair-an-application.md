@@ -2,7 +2,7 @@
 title: How to Repair an Application
 description: How to Repair an Application
 ms.assetid: 80b08416-ad86-4ed6-966a-b943e3efb951
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Repair an Application

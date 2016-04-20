@@ -2,7 +2,7 @@
 title: Preparing Your Environment for App-V 5.0
 description: Preparing Your Environment for App-V 5.0
 ms.assetid: 119d990e-a6c6-47b7-a7b0-52f88205e5ec
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Preparing Your Environment for App-V 5.0

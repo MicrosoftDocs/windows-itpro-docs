@@ -2,7 +2,7 @@
 title: Configuring Prerequisite Groups in Active Directory for App-V
 description: Configuring Prerequisite Groups in Active Directory for App-V
 ms.assetid: 0010d534-46c0-44a3-b5c1-621b4d5e2c31
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring Prerequisite Groups in Active Directory for App-V

@@ -2,7 +2,7 @@
 title: How to Edit an Existing Virtual Application
 description: How to Edit an Existing Virtual Application
 ms.assetid: 358b9a69-5695-4c6f-92e1-7ed2b69a2def
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Edit an Existing Virtual Application

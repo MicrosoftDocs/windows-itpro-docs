@@ -2,7 +2,7 @@
 title: Virtual Application Package Additional Components
 description: Virtual Application Package Additional Components
 ms.assetid: 476b0f40-ebd6-4296-92fa-61fa9495c03c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Virtual Application Package Additional Components

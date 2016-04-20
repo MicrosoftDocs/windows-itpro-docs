@@ -2,7 +2,7 @@
 title: Preparing your Environment for MBAM 2.5
 description: Preparing your Environment for MBAM 2.5
 ms.assetid: 7552ba08-9dbf-40cd-8920-203d733fd242
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Preparing your Environment for MBAM 2.5

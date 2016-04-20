@@ -2,7 +2,7 @@
 title: Configuring IIS for Secure Streaming
 description: Configuring IIS for Secure Streaming
 ms.assetid: 9a80a703-4642-4bec-b7af-dc7cb6b76925
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring IIS for Secure Streaming

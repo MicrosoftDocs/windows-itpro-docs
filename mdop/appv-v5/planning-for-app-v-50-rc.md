@@ -2,7 +2,7 @@
 title: Planning for App-V 5.0
 description: Planning for App-V 5.0
 ms.assetid: 69df85b3-06c7-4123-af05-29d537a687ec
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for App-V 5.0

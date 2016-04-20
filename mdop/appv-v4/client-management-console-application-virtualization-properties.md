@@ -2,7 +2,7 @@
 title: Client Management Console Application Virtualization Properties
 description: Client Management Console Application Virtualization Properties
 ms.assetid: 70319e4c-5032-4cb3-bbb8-4292809dcea2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Client Management Console: Application Virtualization Properties

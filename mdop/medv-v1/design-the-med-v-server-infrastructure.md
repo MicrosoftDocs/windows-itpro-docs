@@ -2,7 +2,7 @@
 title: Design the MED-V Server Infrastructure
 description: Design the MED-V Server Infrastructure
 ms.assetid: 2781040f-880e-4e16-945d-a38c0adb4151
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Design the MED-V Server Infrastructure

@@ -2,7 +2,7 @@
 title: Rename a GPO or Template
 description: Rename a GPO or Template
 ms.assetid: 19d17ddf-8b58-4677-929e-9550fa388b93
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Rename a GPO or Template

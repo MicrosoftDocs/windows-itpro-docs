@@ -2,7 +2,7 @@
 title: Creating App-V 4.5 Databases Using SQL Scripting
 description: Creating App-V 4.5 Databases Using SQL Scripting
 ms.assetid: 6cd0b180-163e-463f-a658-939ab9a7cfa1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Creating App-V 4.5 Databases Using SQL Scripting

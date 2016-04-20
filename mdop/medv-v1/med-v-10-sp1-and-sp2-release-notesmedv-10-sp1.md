@@ -2,7 +2,7 @@
 title: MED-V 1.0 SP1 and SP2 Release Notes
 description: MED-V 1.0 SP1 and SP2 Release Notes
 ms.assetid: 0fde8732-8ad2-483c-b094-7996ed9f2766
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V 1.0 SP1 and SP2 Release Notes

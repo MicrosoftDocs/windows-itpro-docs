@@ -2,7 +2,7 @@
 title: How to Set Up a Concurrent License Group
 description: How to Set Up a Concurrent License Group
 ms.assetid: 031abcf6-d8ed-49be-bddb-91b2c695d411
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up a Concurrent License Group

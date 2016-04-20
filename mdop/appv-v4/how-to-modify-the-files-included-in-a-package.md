@@ -2,7 +2,7 @@
 title: How to Modify the Files Included in a Package
 description: How to Modify the Files Included in a Package
 ms.assetid: e331ac85-1c9c-49be-9d96-5444de38fd56
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Modify the Files Included in a Package

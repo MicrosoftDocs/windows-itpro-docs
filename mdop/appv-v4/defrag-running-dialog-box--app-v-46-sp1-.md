@@ -2,7 +2,7 @@
 title: Defrag Running Dialog Box (App-V 4.6 SP1)
 description: Defrag Running Dialog Box (App-V 4.6 SP1)
 ms.assetid: 0ceb0897-377e-4754-a7ab-3bc2b5af1452
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Defrag Running Dialog Box (App-V 4.6 SP1)

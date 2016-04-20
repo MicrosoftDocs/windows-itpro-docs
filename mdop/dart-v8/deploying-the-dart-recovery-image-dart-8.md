@@ -2,7 +2,7 @@
 title: Deploying the DaRT Recovery Image
 description: Deploying the DaRT Recovery Image
 ms.assetid: df5cb54a-be8c-4ed2-89ea-d3c67c2ef4d4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying the DaRT Recovery Image

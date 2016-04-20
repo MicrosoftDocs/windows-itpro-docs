@@ -2,7 +2,7 @@
 title: How to Connect to an Application Virtualization System
 description: How to Connect to an Application Virtualization System
 ms.assetid: ac38216c-5464-4c0b-a4d3-3949ba6358ac
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Connect to an Application Virtualization System

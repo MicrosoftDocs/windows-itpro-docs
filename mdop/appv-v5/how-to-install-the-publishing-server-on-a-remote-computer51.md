@@ -2,7 +2,7 @@
 title: How to Install the Publishing Server on a Remote Computer
 description: How to Install the Publishing Server on a Remote Computer
 ms.assetid: 1c903f78-0558-458d-a149-d5f6fb55aefb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the Publishing Server on a Remote Computer

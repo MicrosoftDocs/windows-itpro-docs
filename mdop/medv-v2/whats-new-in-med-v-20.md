@@ -2,7 +2,7 @@
 title: What's New in MED-V 2.0
 description: What's New in MED-V 2.0
 ms.assetid: 53b10bff-2b6f-463b-bdc2-5edc56526792
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # What's New in MED-V 2.0

@@ -2,7 +2,7 @@
 title: DaRT 8.0 Supported Configurations
 description: DaRT 8.0 Supported Configurations
 ms.assetid: 95d68e5c-d202-4f4a-adef-d2098328172e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DaRT 8.0 Supported Configurations

@@ -2,7 +2,7 @@
 title: How to Deploy the MBAM Client as Part of a Windows Deployment
 description: How to Deploy the MBAM Client as Part of a Windows Deployment
 ms.assetid: 67387de7-8b02-4412-9850-3b8d8e5c18af
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deploy the MBAM Client as Part of a Windows Deployment

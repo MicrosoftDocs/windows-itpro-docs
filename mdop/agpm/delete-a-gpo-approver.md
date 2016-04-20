@@ -2,7 +2,7 @@
 title: Delete a GPO
 description: Delete a GPO
 ms.assetid: 85fca371-5707-49c1-aa51-813fc3a58dfc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Delete a GPO

@@ -2,7 +2,7 @@
 title: How to Recover a Moved Drive
 description: How to Recover a Moved Drive
 ms.assetid: 0c7199d8-9463-4f44-9af3-b70eceeaff1d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Recover a Moved Drive

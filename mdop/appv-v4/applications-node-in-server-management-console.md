@@ -2,7 +2,7 @@
 title: Applications Node in Server Management Console
 description: Applications Node in Server Management Console
 ms.assetid: 27edbd83-0fc2-4a40-9834-d5db5be06681
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Applications Node in Server Management Console

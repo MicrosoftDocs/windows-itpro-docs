@@ -2,7 +2,7 @@
 title: MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies
 description: MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies
 ms.assetid: 76a6047a-5c6e-42ff-af09-a6f382a69537
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies

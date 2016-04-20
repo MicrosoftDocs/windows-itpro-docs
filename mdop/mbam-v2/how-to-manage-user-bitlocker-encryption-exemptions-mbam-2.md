@@ -2,7 +2,7 @@
 title: How to Manage User BitLocker Encryption Exemptions
 description: How to Manage User BitLocker Encryption Exemptions
 ms.assetid: 1bfd9d66-6a9a-4d0e-b54a-e5a6627f5ada
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage User BitLocker Encryption Exemptions

@@ -2,7 +2,7 @@
 title: How to Edit an OSD File
 description: How to Edit an OSD File
 ms.assetid: 0d126ba7-72fb-42ce-982e-90ed01a852c8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Edit an OSD File

@@ -2,7 +2,7 @@
 title: How to Configure the Server to be Trusted for Delegation
 description: How to Configure the Server to be Trusted for Delegation
 ms.assetid: d8d11588-17c0-4bcb-a7e6-86b5e4ba7e1c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Server to be Trusted for Delegation

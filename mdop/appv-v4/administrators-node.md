@@ -2,7 +2,7 @@
 title: Administrators Node
 description: Administrators Node
 ms.assetid: 5f462a0d-af53-4464-9891-7b712193c7e8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administrators Node

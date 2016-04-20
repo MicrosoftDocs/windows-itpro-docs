@@ -2,7 +2,7 @@
 title: Destroy a GPO
 description: Destroy a GPO
 ms.assetid: 09bce8c4-f75b-4633-b80b-d894bbec95c9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Destroy a GPO

@@ -2,7 +2,7 @@
 title: Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes
 description: Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes
 ms.assetid: 561988c4-cc5c-4e15-970b-16e942c8f2ef
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes

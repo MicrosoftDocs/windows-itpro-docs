@@ -2,7 +2,7 @@
 title: Troubleshooting MBAM 1.0
 description: Troubleshooting MBAM 1.0
 ms.assetid: 7d47fbfe-51c0-4619-bed3-163dfd18cdec
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Troubleshooting MBAM 1.0

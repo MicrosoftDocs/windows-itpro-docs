@@ -2,7 +2,7 @@
 title: Getting Started with DaRT 7.0
 description: Getting Started with DaRT 7.0
 ms.assetid: 796f52ce-0935-4d3d-9437-289b4c7b16c3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Getting Started with DaRT 7.0

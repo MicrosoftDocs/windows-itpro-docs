@@ -2,7 +2,7 @@
 title: Server Management Console Application Virtualization System Node
 description: Server Management Console Application Virtualization System Node
 ms.assetid: 9450832e-335c-41e7-af24-fddb8ffc327c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Management Console: Application Virtualization System Node

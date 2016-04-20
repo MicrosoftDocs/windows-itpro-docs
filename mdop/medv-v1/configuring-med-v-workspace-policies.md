@@ -2,7 +2,7 @@
 title: Configuring MED-V Workspace Policies
 description: Configuring MED-V Workspace Policies
 ms.assetid: 0eaed981-cbf3-4b16-a4b7-4705c5705dc7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring MED-V Workspace Policies

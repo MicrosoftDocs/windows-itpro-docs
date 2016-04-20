@@ -2,7 +2,7 @@
 title: How to Make a Connection Group Ignore the Package Version
 description: How to Make a Connection Group Ignore the Package Version
 ms.assetid: db16b095-dbe2-42c7-863d-b0d5d91b2f4c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Make a Connection Group Ignore the Package Version

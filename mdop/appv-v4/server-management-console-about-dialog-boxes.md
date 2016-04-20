@@ -2,7 +2,7 @@
 title: Server Management Console About Dialog Boxes
 description: Server Management Console About Dialog Boxes
 ms.assetid: b5fdee0b-4269-4a48-98a0-ed3f06cff041
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Management Console: About Dialog Boxes

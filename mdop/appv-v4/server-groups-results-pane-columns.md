@@ -2,7 +2,7 @@
 title: Server Groups Results Pane Columns
 description: Server Groups Results Pane Columns
 ms.assetid: e91b1b9b-e58c-4274-ad18-8b157936b9be
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Groups Results Pane Columns

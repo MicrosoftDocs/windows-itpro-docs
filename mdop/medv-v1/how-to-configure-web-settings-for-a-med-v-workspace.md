@@ -2,7 +2,7 @@
 title: How to Configure Web Settings for a MED-V Workspace
 description: How to Configure Web Settings for a MED-V Workspace
 ms.assetid: 9a6cd28f-7e4f-468f-830a-7b1d9abd3af3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Web Settings for a MED-V Workspace

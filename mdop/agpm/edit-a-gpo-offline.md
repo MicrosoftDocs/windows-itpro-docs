@@ -2,7 +2,7 @@
 title: Edit a GPO Offline
 description: Edit a GPO Offline
 ms.assetid: 4a148952-9fe9-4ec4-8df1-b25e37c97a54
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Edit a GPO Offline

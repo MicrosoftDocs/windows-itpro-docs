@@ -2,7 +2,7 @@
 title: Request Deployment of a GPO
 description: Request Deployment of a GPO
 ms.assetid: 9aa9af29-4754-4f72-b624-bb3e1087cbe1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Request Deployment of a GPO

@@ -2,7 +2,7 @@
 title: Diagnostics and Recovery Toolset 8 Administrator's Guide
 description: Diagnostics and Recovery Toolset 8 Administrator's Guide
 ms.assetid: 33685dd7-844f-4864-b504-3ef384ef01de
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Diagnostics and Recovery Toolset 8 Administrator's Guide

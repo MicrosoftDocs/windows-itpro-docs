@@ -2,7 +2,7 @@
 title: MBAM 2.0 Deployment Checklist
 description: MBAM 2.0 Deployment Checklist
 ms.assetid: 7905d31d-f21c-4683-b9c4-95b815e08fab
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.0 Deployment Checklist

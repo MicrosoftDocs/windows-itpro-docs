@@ -2,7 +2,7 @@
 title: Server Management Console Packages Node
 description: Server Management Console Packages Node
 ms.assetid: 458424f6-d586-4fa8-bf61-44c5028a4490
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Management Console: Packages Node

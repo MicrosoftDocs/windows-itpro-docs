@@ -2,7 +2,7 @@
 title: MBAM 2.0 Planning Checklist
 description: MBAM 2.0 Planning Checklist
 ms.assetid: 16b27c27-5f5e-41e2-b526-89a036672fb8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.0 Planning Checklist

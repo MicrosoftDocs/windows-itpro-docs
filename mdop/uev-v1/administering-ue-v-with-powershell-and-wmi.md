@@ -2,7 +2,7 @@
 title: Administering UE-V with PowerShell and WMI
 description: Administering UE-V with PowerShell and WMI
 ms.assetid: 26cc864f-c628-4c04-a18c-dd60fce8187c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administering UE-V with PowerShell and WMI

@@ -2,7 +2,7 @@
 title: How to Configure the Application Virtualization Management Servers
 description: How to Configure the Application Virtualization Management Servers
 ms.assetid: a9f96148-bf2d-486f-98c2-23409bfb0935
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Application Virtualization Management Servers

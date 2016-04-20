@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencer Reference
 description: Application Virtualization Sequencer Reference
 ms.assetid: a2aef256-98c0-4f81-83a2-af4b64208088
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencer Reference

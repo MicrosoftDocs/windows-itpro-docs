@@ -2,7 +2,7 @@
 title: How to Configure Servers for Server-Based Deployment
 description: How to Configure Servers for Server-Based Deployment
 ms.assetid: 6371c37a-46eb-44e8-ad6b-4430c866c8b4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Servers for Server-Based Deployment

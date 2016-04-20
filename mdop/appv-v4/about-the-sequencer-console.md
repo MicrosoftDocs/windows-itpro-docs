@@ -2,7 +2,7 @@
 title: About the Sequencer Console
 description: About the Sequencer Console
 ms.assetid: 36ecba89-a0f5-4d4d-981c-7f581aa43695
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About the Sequencer Console

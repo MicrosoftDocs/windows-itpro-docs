@@ -2,7 +2,7 @@
 title: Validating the MBAM 2.5 Server Feature Configuration
 description: Validating the MBAM 2.5 Server Feature Configuration
 ms.assetid: f4983a33-ce18-4186-a471-dd6415940504
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Validating the MBAM 2.5 Server Feature Configuration

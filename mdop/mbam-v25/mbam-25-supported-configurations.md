@@ -2,7 +2,7 @@
 title: MBAM 2.5 Supported Configurations
 description: MBAM 2.5 Supported Configurations
 ms.assetid: ce689aff-9a55-4ae7-a968-23c7bda9b4d6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.5 Supported Configurations

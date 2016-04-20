@@ -2,7 +2,7 @@
 title: MBAM 1.0 Planning Checklist
 description: MBAM 1.0 Planning Checklist
 ms.assetid: e9439f16-d68b-48ed-99ce-5949356b180b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 1.0 Planning Checklist

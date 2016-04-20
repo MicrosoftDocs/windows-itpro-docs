@@ -2,7 +2,7 @@
 title: About the Virtual Services Tab
 description: About the Virtual Services Tab
 ms.assetid: d31eea1b-9a37-42f1-8d7c-95881716e753
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About the Virtual Services Tab

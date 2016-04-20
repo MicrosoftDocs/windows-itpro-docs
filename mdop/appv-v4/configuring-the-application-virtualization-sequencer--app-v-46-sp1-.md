@@ -2,7 +2,7 @@
 title: Configuring the Application Virtualization Sequencer (App-V 4.6 SP1)
 description: Configuring the Application Virtualization Sequencer (App-V 4.6 SP1)
 ms.assetid: af775165-5b99-4c74-807f-f504377c7be4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring the Application Virtualization Sequencer (App-V 4.6 SP1)

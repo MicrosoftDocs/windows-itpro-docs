@@ -2,7 +2,7 @@
 title: Administering App-V 5.1 by Using PowerShell
 description: Administering App-V 5.1 by Using PowerShell
 ms.assetid: 9e10ff07-2cd9-4dc1-9e99-582f90c36081
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administering App-V 5.1 by Using PowerShell

@@ -2,7 +2,7 @@
 title: Configure Installation Prerequisites
 description: Configure Installation Prerequisites
 ms.assetid: ff9cf28a-3eac-4b6c-8ce9-bfc202f57947
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configure Installation Prerequisites

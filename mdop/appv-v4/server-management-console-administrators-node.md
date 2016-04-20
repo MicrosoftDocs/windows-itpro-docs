@@ -2,7 +2,7 @@
 title: Server Management Console Administrators Node
 description: Server Management Console Administrators Node
 ms.assetid: ab421454-69d1-4c10-8f58-2a35ae89c8b1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Management Console: Administrators Node

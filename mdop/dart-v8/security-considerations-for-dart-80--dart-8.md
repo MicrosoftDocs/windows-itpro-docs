@@ -2,7 +2,7 @@
 title: Security Considerations for DaRT 8.0
 description: Security Considerations for DaRT 8.0
 ms.assetid: 45ef8164-fee7-41a1-9a36-de4e3264e7a8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Security Considerations for DaRT 8.0

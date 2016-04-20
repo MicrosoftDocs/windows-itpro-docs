@@ -2,7 +2,7 @@
 title: Manage MED-V URL Redirection
 description: Manage MED-V URL Redirection
 ms.assetid: 274161c0-b54a-4364-bb63-89996afccd04
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Manage MED-V URL Redirection

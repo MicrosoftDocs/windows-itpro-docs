@@ -2,7 +2,7 @@
 title: How to Configure the Client for Disconnected Operation Mode
 description: How to Configure the Client for Disconnected Operation Mode
 ms.assetid: 3b48464a-b8b4-494b-93e3-9a6d9bd74652
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the Client for Disconnected Operation Mode

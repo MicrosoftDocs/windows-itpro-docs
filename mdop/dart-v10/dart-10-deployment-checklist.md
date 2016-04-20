@@ -2,7 +2,7 @@
 title: DaRT 10 Deployment Checklist
 description: DaRT 10 Deployment Checklist
 ms.assetid: a6b7ba27-a969-4da9-bef0-d019739413cc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DaRT 10 Deployment Checklist

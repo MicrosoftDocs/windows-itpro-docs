@@ -2,7 +2,7 @@
 title: Monitor MED-V Workspaces
 description: Monitor MED-V Workspaces
 ms.assetid: f514afe2-8add-4105-9520-1a491733fa79
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Monitor MED-V Workspaces

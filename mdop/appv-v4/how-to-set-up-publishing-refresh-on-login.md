@@ -2,7 +2,7 @@
 title: How to Set Up Publishing Refresh on Login
 description: How to Set Up Publishing Refresh on Login
 ms.assetid: 196448db-7645-4fd5-a854-ef6405b15db4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up Publishing Refresh on Login

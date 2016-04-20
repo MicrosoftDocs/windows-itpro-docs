@@ -2,7 +2,7 @@
 title: How to Move MBAM 2.0 Features to Another Computer
 description: How to Move MBAM 2.0 Features to Another Computer
 ms.assetid: 49bc0792-60a4-473f-89cc-ada30191e04a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Move MBAM 2.0 Features to Another Computer

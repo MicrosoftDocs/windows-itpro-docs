@@ -2,7 +2,7 @@
 title: Deploying the UE-V Agent
 description: Deploying the UE-V Agent
 ms.assetid: ec1c16c4-4be0-41ff-93bc-3e2b1afb5832
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying the UE-V Agent

@@ -2,7 +2,7 @@
 title: How to Sequence a New Application
 description: How to Sequence a New Application
 ms.assetid: e01e98cd-2378-478f-9739-f72c465bf79a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Sequence a New Application

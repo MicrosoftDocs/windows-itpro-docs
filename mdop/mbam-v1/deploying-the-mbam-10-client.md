@@ -2,7 +2,7 @@
 title: Deploying the MBAM 1.0 Client
 description: Deploying the MBAM 1.0 Client
 ms.assetid: f7ca233f-5035-4ff9-ab3a-f2453b4929d1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying the MBAM 1.0 Client

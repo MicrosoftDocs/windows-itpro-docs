@@ -2,7 +2,7 @@
 title: How to Manage Virtual Applications Manually
 description: How to Manage Virtual Applications Manually
 ms.assetid: 583c5255-d3f4-4197-85cd-2a59868d85de
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Virtual Applications Manually

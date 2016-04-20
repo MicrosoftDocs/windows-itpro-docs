@@ -2,7 +2,7 @@
 title: Configuring Windows Firewall for App-V
 description: Configuring Windows Firewall for App-V
 ms.assetid: 6b5e253c-473f-4afc-a48b-631eda11d9ca
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring Windows Firewall for App-V

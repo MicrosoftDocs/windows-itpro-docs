@@ -2,7 +2,7 @@
 title: End-to-End Planning Scenario for MED-V 2.0
 description: End-to-End Planning Scenario for MED-V 2.0
 ms.assetid: e7833883-be93-4b42-9fa3-5c4d9a919058
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # End-to-End Planning Scenario for MED-V 2.0

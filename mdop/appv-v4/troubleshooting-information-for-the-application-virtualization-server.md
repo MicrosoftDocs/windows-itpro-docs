@@ -2,7 +2,7 @@
 title: Troubleshooting Information for the Application Virtualization Server
 description: Troubleshooting Information for the Application Virtualization Server
 ms.assetid: e9d43d9b-84f2-4d1b-bb90-a13740151e0c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Troubleshooting Information for the Application Virtualization Server

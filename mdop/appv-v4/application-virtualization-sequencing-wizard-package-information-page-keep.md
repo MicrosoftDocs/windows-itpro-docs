@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencing Wizard Package Information Page
 description: Application Virtualization Sequencing Wizard Package Information Page
 ms.assetid: e52efd08-1b05-4bd6-a6e7-5f6bdbde7df7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencing Wizard Package Information Page

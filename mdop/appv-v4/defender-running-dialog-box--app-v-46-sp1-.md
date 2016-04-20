@@ -2,7 +2,7 @@
 title: Defender Running Dialog Box (App-V 4.6 SP1)
 description: Defender Running Dialog Box (App-V 4.6 SP1)
 ms.assetid: 716ec7f9-ddad-45dd-a3c7-4a9d81cfcfd0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Defender Running Dialog Box (App-V 4.6 SP1)

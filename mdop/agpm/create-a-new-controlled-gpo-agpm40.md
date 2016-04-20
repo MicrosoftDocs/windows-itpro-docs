@@ -2,7 +2,7 @@
 title: Create a New Controlled GPO
 description: Create a New Controlled GPO
 ms.assetid: 5ce760f6-9f05-42b4-b787-7835ab8e324e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Create a New Controlled GPO

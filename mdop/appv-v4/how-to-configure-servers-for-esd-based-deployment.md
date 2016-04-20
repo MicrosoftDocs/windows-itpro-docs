@@ -2,7 +2,7 @@
 title: How to Configure Servers for ESD-Based Deployment
 description: How to Configure Servers for ESD-Based Deployment
 ms.assetid: 96208522-3a0c-4606-a10b-fc0ec0a12021
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Servers for ESD-Based Deployment

@@ -2,7 +2,7 @@
 title: Troubleshooting DaRT 7.0
 description: Troubleshooting DaRT 7.0
 ms.assetid: 24c50efa-e9ac-45c4-aca2-b1dcfe834fdd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Troubleshooting DaRT 7.0

@@ -2,7 +2,7 @@
 title: Deploy a GPO
 description: Deploy a GPO
 ms.assetid: 3767b722-db43-40f1-a714-bb8e38bcaa10
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploy a GPO

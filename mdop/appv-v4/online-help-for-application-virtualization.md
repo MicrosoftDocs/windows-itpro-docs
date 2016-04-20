@@ -2,7 +2,7 @@
 title: Online Help for Application Virtualization
 description: Online Help for Application Virtualization
 ms.assetid: 261ede48-976f-473c-84bc-452577efdcdf
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Online Help for Application Virtualization

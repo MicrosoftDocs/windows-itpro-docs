@@ -2,7 +2,7 @@
 title: Updating a MED-V Workspace Image
 description: Updating a MED-V Workspace Image
 ms.assetid: 1b9c4a73-3487-43d2-98e3-43dbc79e10e3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Updating a MED-V Workspace Image

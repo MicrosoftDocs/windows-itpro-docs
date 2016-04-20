@@ -2,7 +2,7 @@
 title: Files Excluded Page Dialog Box (App-V 4.6 SP1)
 description: Files Excluded Page Dialog Box (App-V 4.6 SP1)
 ms.assetid: 9718c7bf-7ed2-44d8-bdac-df013cd0d6c6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Files Excluded Page Dialog Box (App-V 4.6 SP1)

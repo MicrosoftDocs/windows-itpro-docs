@@ -2,7 +2,7 @@
 title: MBAM 2.5 Deployment Prerequisites
 description: MBAM 2.5 Deployment Prerequisites
 ms.assetid: a7b02d01-d182-4031-b373-0271177af14e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.5 Deployment Prerequisites

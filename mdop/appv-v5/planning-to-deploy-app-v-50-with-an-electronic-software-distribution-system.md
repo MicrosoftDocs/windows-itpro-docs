@@ -2,7 +2,7 @@
 title: Planning to Deploy App-V 5.0 with an Electronic Software Distribution System
 description: Planning to Deploy App-V 5.0 with an Electronic Software Distribution System
 ms.assetid: 8cd3f1fb-b84e-4260-9e72-a14d01e7cadf
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning to Deploy App-V 5.0 with an Electronic Software Distribution System

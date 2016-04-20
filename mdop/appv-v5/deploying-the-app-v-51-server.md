@@ -2,7 +2,7 @@
 title: Deploying the App-V 5.1 Server
 description: Deploying the App-V 5.1 Server
 ms.assetid: 987b61dc-00d6-49ba-8f1b-92d7b948e702
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying the App-V 5.1 Server

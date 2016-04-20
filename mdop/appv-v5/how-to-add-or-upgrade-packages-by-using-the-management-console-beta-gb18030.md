@@ -2,7 +2,7 @@
 title: How to Add or Upgrade Packages by Using the Management Console
 description: How to Add or Upgrade Packages by Using the Management Console
 ms.assetid: 4e389d7e-f402-44a7-bc4c-42c2a8440573
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Add or Upgrade Packages by Using the Management Console

@@ -2,7 +2,7 @@
 title: How to Update a MED-V Image
 description: How to Update a MED-V Image
 ms.assetid: 61eacf50-3a00-4bb8-b2f3-7350a6467fa1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Update a MED-V Image

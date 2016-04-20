@@ -2,7 +2,7 @@
 title: Applications Node
 description: Applications Node
 ms.assetid: ded79569-8a3f-47ab-b135-0836bbb039f3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Applications Node

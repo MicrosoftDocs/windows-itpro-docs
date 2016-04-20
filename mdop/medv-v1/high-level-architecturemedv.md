@@ -2,7 +2,7 @@
 title: High-Level Architecture
 description: High-Level Architecture
 ms.assetid: a78e12ad-5aa6-40e0-ae8b-51acaf005712
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # High-Level Architecture

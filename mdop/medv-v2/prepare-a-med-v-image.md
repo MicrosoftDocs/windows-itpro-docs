@@ -2,7 +2,7 @@
 title: Prepare a MED-V Image
 description: Prepare a MED-V Image
 ms.assetid: 1bc757e5-8aef-4163-8542-1bdccc028961
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Prepare a MED-V Image

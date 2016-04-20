@@ -2,7 +2,7 @@
 title: Files Tab
 description: Files Tab
 ms.assetid: 14191e51-11a2-40ab-8855-3408a4bc5a9d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Files Tab

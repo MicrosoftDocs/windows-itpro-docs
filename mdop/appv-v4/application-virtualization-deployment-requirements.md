@@ -2,7 +2,7 @@
 title: Application Virtualization Deployment Requirements
 description: Application Virtualization Deployment Requirements
 ms.assetid: 9564e974-a853-45ae-b605-0a2e3e5cf212
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Deployment Requirements

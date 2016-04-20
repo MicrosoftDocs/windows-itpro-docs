@@ -2,7 +2,7 @@
 title: How to Remove a Server
 description: How to Remove a Server
 ms.assetid: afb2a889-733c-4058-9a50-caa2ca10bd58
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Remove a Server

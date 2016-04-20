@@ -2,7 +2,7 @@
 title: Security and Privacy for MBAM 1.0
 description: Security and Privacy for MBAM 1.0
 ms.assetid: ba4497f1-b9e3-41be-8953-3637d1f83f01
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Security and Privacy for MBAM 1.0

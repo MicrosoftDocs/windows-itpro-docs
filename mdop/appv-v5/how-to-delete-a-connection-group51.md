@@ -2,7 +2,7 @@
 title: How to Delete a Connection Group
 description: How to Delete a Connection Group
 ms.assetid: dfdfb507-8891-4f17-9125-5759c9b74483
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Delete a Connection Group

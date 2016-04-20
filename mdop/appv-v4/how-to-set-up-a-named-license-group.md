@@ -2,7 +2,7 @@
 title: How to Set Up a Named License Group
 description: How to Set Up a Named License Group
 ms.assetid: 8ef6716c-0cb7-4706-ad3b-ac6f27b2e7ad
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up a Named License Group

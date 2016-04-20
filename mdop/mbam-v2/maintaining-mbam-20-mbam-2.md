@@ -2,7 +2,7 @@
 title: Maintaining MBAM 2.0
 description: Maintaining MBAM 2.0
 ms.assetid: 6479e093-840d-45d5-b759-1179aeeeefeb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Maintaining MBAM 2.0

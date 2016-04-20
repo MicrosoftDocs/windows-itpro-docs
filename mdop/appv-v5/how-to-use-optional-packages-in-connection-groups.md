@@ -2,7 +2,7 @@
 title: How to Use Optional Packages in Connection Groups
 description: How to Use Optional Packages in Connection Groups
 ms.assetid: 4d08a81b-55e5-471a-91dc-9a684fb3c9a1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Use Optional Packages in Connection Groups

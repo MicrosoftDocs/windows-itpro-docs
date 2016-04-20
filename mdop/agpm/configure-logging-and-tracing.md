@@ -2,7 +2,7 @@
 title: Configure Logging and Tracing
 description: Configure Logging and Tracing
 ms.assetid: 419231f9-e9db-4f91-a7cf-a0a73db25256
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configure Logging and Tracing

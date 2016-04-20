@@ -2,7 +2,7 @@
 title: Deploying DaRT 10 to Administrator Computers
 description: Deploying DaRT 10 to Administrator Computers
 ms.assetid: c1981cbe-10f8-41f6-8989-bcc9d57a2aa8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying DaRT 10 to Administrator Computers

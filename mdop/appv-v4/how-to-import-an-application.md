@@ -2,7 +2,7 @@
 title: How to Import an Application
 description: How to Import an Application
 ms.assetid: 85aaf5d8-489c-4929-996f-f15d2dab1ad8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Import an Application

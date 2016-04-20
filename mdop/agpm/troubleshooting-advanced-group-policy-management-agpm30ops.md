@@ -2,7 +2,7 @@
 title: Troubleshooting Advanced Group Policy Management
 description: Troubleshooting Advanced Group Policy Management
 ms.assetid: f7ece97c-e9f8-4b18-8c7a-a615c98d5c60
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Troubleshooting Advanced Group Policy Management

@@ -2,7 +2,7 @@
 title: How to Modify an Existing Virtual Application Package (App-V 4.6 SP1)
 description: How to Modify an Existing Virtual Application Package (App-V 4.6 SP1)
 ms.assetid: f43a9927-4325-4b2d-829f-3068e4e84349
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Modify an Existing Virtual Application Package (App-V 4.6 SP1)

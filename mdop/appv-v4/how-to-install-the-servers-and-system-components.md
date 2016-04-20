@@ -2,7 +2,7 @@
 title: How to Install the Servers and System Components
 description: How to Install the Servers and System Components
 ms.assetid: c6f5fef0-522a-4ef1-8585-05b292d0289b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install the Servers and System Components

@@ -2,7 +2,7 @@
 title: Control a Previously Uncontrolled GPO
 description: Control a Previously Uncontrolled GPO
 ms.assetid: 452689a9-4e32-4e3b-8208-56353a82bf36
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Control a Previously Uncontrolled GPO

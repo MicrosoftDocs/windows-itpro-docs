@@ -2,7 +2,7 @@
 title: Operations for MED-V
 description: Operations for MED-V
 ms.assetid: 8f3f367d-fa9d-4468-814a-f0495adfaea4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Operations for MED-V

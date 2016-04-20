@@ -2,7 +2,7 @@
 title: MBAM 2.5 Security Considerations
 description: MBAM 2.5 Security Considerations
 ms.assetid: f6613c63-b32b-45fb-a6e8-673d6dae7d16
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MBAM 2.5 Security Considerations

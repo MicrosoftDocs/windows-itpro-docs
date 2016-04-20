@@ -2,7 +2,7 @@
 title: Production Delegation Tab
 description: Production Delegation Tab
 ms.assetid: 9851637d-d5c1-4d29-8582-e8779500a14e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Production Delegation Tab

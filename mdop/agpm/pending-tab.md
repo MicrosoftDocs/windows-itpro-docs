@@ -2,7 +2,7 @@
 title: Pending Tab
 description: Pending Tab
 ms.assetid: 54a9a977-c0bc-4553-922b-b2e10e162df9
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Pending Tab

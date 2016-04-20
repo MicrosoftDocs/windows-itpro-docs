@@ -2,7 +2,7 @@
 title: Select Guidance Page (Package Accelerators)
 description: Select Guidance Page (Package Accelerators)
 ms.assetid: 608b8823-6eac-40c0-a6dc-2f0bfc0d42a1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Select Guidance Page (Package Accelerators)

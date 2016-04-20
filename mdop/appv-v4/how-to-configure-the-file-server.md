@@ -2,7 +2,7 @@
 title: How to Configure the File Server
 description: How to Configure the File Server
 ms.assetid: 0977554c-1741-411b-85e7-7e1cd017542f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the File Server

@@ -2,7 +2,7 @@
 title: Evaluating MBAM 2.5 in a Test Environment
 description: Evaluating MBAM 2.5 in a Test Environment
 ms.assetid: 72959b7a-e55f-4797-91b3-5be23c8c2844
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Evaluating MBAM 2.5 in a Test Environment

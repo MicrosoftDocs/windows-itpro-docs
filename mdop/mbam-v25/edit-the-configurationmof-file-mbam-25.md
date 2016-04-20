@@ -2,7 +2,7 @@
 title: Edit the Configuration.mof File
 description: Edit the Configuration.mof File
 ms.assetid: 5d8cd76b-8ffc-4d46-b761-1b8350310c48
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Edit the Configuration.mof File

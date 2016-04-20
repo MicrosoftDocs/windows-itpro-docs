@@ -2,7 +2,7 @@
 title: Diagnostics and Recovery Toolset 10
 description: Diagnostics and Recovery Toolset 10
 ms.assetid: 64403eca-ff05-4327-ac33-bdcc96e706c8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Diagnostics and Recovery Toolset 10

@@ -2,7 +2,7 @@
 title: How to Branch a Package
 description: How to Branch a Package
 ms.assetid: bfe46a8a-f0ee-4a71-9e9c-64ac08aac9c1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Branch a Package

@@ -2,7 +2,7 @@
 title: App-V Postinstallation Checklist
 description: App-V Postinstallation Checklist
 ms.assetid: 74db297e-a744-4287-bcc6-0e096ca8b57a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V Postinstallation Checklist

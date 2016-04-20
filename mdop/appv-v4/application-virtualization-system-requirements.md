@@ -2,7 +2,7 @@
 title: Application Virtualization System Requirements
 description: Application Virtualization System Requirements
 ms.assetid: a2798dd9-168e-45eb-8103-e12e128fae7c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization System Requirements

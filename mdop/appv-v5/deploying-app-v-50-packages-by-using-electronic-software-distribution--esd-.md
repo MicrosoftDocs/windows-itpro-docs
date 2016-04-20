@@ -2,7 +2,7 @@
 title: Deploying App-V 5.0 Packages by Using Electronic Software Distribution (ESD)
 description: Deploying App-V 5.0 Packages by Using Electronic Software Distribution (ESD)
 ms.assetid: d1d74af4-229f-4578-8c95-554a3d7cd2f3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying App-V 5.0 Packages by Using Electronic Software Distribution (ESD)

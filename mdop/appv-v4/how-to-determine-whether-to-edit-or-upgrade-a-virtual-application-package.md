@@ -2,7 +2,7 @@
 title: How to Determine Whether to Edit or Upgrade a Virtual Application Package
 description: How to Determine Whether to Edit or Upgrade a Virtual Application Package
 ms.assetid: 33dd5332-6802-46e0-9748-43fcc8f80aa3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Determine Whether to Edit or Upgrade a Virtual Application Package

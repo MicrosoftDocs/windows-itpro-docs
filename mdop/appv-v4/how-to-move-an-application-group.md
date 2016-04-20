@@ -2,7 +2,7 @@
 title: How to Move an Application Group
 description: How to Move an Application Group
 ms.assetid: 7f9f9f2e-f394-4ad3-8615-4237a7dcfb95
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Move an Application Group

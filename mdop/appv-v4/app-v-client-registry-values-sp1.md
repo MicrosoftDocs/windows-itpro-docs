@@ -2,7 +2,7 @@
 title: App-V Client Registry Values
 description: App-V Client Registry Values
 ms.assetid: 46af5209-9762-47b9-afdb-9a2947e013f7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V Client Registry Values

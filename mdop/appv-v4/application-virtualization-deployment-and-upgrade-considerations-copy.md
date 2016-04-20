@@ -2,7 +2,7 @@
 title: Application Virtualization Deployment and Upgrade Considerations
 description: Application Virtualization Deployment and Upgrade Considerations
 ms.assetid: c3c38930-0da3-43e6-b240-945edfd00a01
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Deployment and Upgrade Considerations

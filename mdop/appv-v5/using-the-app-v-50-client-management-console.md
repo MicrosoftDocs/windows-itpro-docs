@@ -2,7 +2,7 @@
 title: Using the App-V 5.0 Client Management Console
 description: Using the App-V 5.0 Client Management Console
 ms.assetid: 36398307-57dd-40f3-9d4f-b09f44fd37c3
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Using the App-V 5.0 Client Management Console

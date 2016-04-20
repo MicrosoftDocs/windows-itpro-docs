@@ -2,7 +2,7 @@
 title: How to Create and Test a MED-V Image
 description: How to Create and Test a MED-V Image
 ms.assetid: 40e4aba6-12cb-4794-967d-2c09dc20d808
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create and Test a MED-V Image

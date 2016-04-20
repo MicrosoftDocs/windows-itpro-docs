@@ -2,7 +2,7 @@
 title: ADD PACKAGE
 description: ADD PACKAGE
 ms.assetid: aa83928d-a234-4395-831e-2a7ef786ff53
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # ADD PACKAGE

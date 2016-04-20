@@ -2,7 +2,7 @@
 title: Installing App-V Management Server or Streaming Server Securely
 description: Installing App-V Management Server or Streaming Server Securely
 ms.assetid: d2a51a81-a80f-427c-a727-611e1eb74f02
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Installing App-V Management Server or Streaming Server Securely

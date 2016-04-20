@@ -2,7 +2,7 @@
 title: Deploying App-V 5.0
 description: Deploying App-V 5.0
 ms.assetid: 77cb19d7-00e6-4b39-b35a-e8a8ca0b807b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying App-V 5.0

@@ -2,7 +2,7 @@
 title: Contents Tab
 description: Contents Tab
 ms.assetid: 8a756bc1-3900-4d83-93c4-7ebc4705d956
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Contents Tab

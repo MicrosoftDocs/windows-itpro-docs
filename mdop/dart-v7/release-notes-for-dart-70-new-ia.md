@@ -2,7 +2,7 @@
 title: Release Notes for DaRT 7.0
 description: Release Notes for DaRT 7.0
 ms.assetid: fad227d0-5c22-4efd-9187-0e5922f7250b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Release Notes for DaRT 7.0

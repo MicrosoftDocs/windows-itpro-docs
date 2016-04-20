@@ -2,7 +2,7 @@
 title: Application Virtualization Properties Import Search Path Tab
 description: Application Virtualization Properties Import Search Path Tab
 ms.assetid: 7f94d472-1d0a-49d8-b307-330936071e13
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Properties: Import Search Path Tab

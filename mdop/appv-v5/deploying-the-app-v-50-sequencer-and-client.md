@@ -2,7 +2,7 @@
 title: Deploying the App-V 5.0 Sequencer and Client
 description: Deploying the App-V 5.0 Sequencer and Client
 ms.assetid: 84cc84bd-5bc0-41aa-9519-0ded2932c078
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying the App-V 5.0 Sequencer and Client

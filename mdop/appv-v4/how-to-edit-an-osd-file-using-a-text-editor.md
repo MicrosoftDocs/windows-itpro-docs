@@ -2,7 +2,7 @@
 title: How to Edit an OSD File Using a Text Editor
 description: How to Edit an OSD File Using a Text Editor
 ms.assetid: f4263a1b-824f-49b9-8060-b8229c9d9960
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Edit an OSD File Using a Text Editor

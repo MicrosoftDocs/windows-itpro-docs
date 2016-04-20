@@ -2,7 +2,7 @@
 title: Review GPO Links
 description: Review GPO Links
 ms.assetid: 3c472448-f16a-493c-a229-5ca60a470965
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Review GPO Links

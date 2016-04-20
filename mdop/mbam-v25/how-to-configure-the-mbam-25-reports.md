@@ -2,7 +2,7 @@
 title: How to Configure the MBAM 2.5 Reports
 description: How to Configure the MBAM 2.5 Reports
 ms.assetid: ec462879-0253-4d9c-83c7-a9bcad479725
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the MBAM 2.5 Reports

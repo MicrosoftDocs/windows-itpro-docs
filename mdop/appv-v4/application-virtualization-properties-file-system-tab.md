@@ -2,7 +2,7 @@
 title: Application Virtualization Properties File System Tab
 description: Application Virtualization Properties File System Tab
 ms.assetid: c7d56d36-8c50-4dfc-afee-83dea06376d4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Properties: File System Tab

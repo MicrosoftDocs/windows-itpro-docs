@@ -2,7 +2,7 @@
 title: Server Groups Node
 description: Server Groups Node
 ms.assetid: 6b2ed086-9100-47d0-be7f-0c5fb4fa55c6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Server Groups Node

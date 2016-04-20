@@ -2,7 +2,7 @@
 title: Preparing your Environment for MBAM 1.0
 description: Preparing your Environment for MBAM 1.0
 ms.assetid: 915f7c3c-70ad-4a90-a434-73e7fba97ecb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Preparing your Environment for MBAM 1.0

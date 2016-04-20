@@ -2,7 +2,7 @@
 title: About DaRT 8.0
 description: About DaRT 8.0
 ms.assetid: ce91efd6-7d78-44cb-bb8f-1f43f768ebaa
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About DaRT 8.0

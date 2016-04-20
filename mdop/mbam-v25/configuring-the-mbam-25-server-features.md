@@ -2,7 +2,7 @@
 title: Configuring the MBAM 2.5 Server Features
 description: Configuring the MBAM 2.5 Server Features
 ms.assetid: 894d1080-5f13-48f7-8fde-82f8d440a4ed
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring the MBAM 2.5 Server Features

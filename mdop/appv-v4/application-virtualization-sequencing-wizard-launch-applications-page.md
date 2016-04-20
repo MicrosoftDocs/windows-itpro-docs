@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencing Wizard Launch Applications Page
 description: Application Virtualization Sequencing Wizard Launch Applications Page
 ms.assetid: 69b1d6e1-00ff-49e3-a245-a4aca225d681
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencing Wizard Launch Applications Page

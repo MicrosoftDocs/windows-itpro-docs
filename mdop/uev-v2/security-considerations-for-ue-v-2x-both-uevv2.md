@@ -2,7 +2,7 @@
 title: Security Considerations for UE-V 2.x
 description: Security Considerations for UE-V 2.x
 ms.assetid: 9d5c3cae-9fcb-4dea-bd67-741b3dea63be
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Security Considerations for UE-V 2.x

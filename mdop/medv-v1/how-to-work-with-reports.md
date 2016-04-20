@@ -2,7 +2,7 @@
 title: How to Work with Reports
 description: How to Work with Reports
 ms.assetid: b7a660c6-74c3-4ced-a395-9e76a4362a46
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Work with Reports

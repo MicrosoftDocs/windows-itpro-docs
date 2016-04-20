@@ -2,7 +2,7 @@
 title: Uncontrolled GPO Commands
 description: Uncontrolled GPO Commands
 ms.assetid: 05a8050f-adc3-465b-8524-bbe95745165c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Uncontrolled GPO Commands

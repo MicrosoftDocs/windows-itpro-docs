@@ -2,7 +2,7 @@
 title: How to Deploy DaRT 8.0
 description: How to Deploy DaRT 8.0
 ms.assetid: ab772e7a-c02f-4847-acdf-8bd362769a77
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deploy DaRT 8.0

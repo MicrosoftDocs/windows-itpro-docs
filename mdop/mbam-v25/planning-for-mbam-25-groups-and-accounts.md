@@ -2,7 +2,7 @@
 title: Planning for MBAM 2.5 Groups and Accounts
 description: Planning for MBAM 2.5 Groups and Accounts
 ms.assetid: 73bb9fe5-5900-4b6f-b271-ade62991fca1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MBAM 2.5 Groups and Accounts

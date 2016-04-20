@@ -2,7 +2,7 @@
 title: How to Reset a TPM Lockout
 description: How to Reset a TPM Lockout
 ms.assetid: dd20a728-c52e-48e6-9f6c-1311c71dee74
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Reset a TPM Lockout

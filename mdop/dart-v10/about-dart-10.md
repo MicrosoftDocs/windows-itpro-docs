@@ -2,7 +2,7 @@
 title: About DaRT 10
 description: About DaRT 10
 ms.assetid: 02378035-58d1-4095-82fe-d60734a746fb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About DaRT 10

@@ -2,7 +2,7 @@
 title: Set a Default Template
 description: Set a Default Template
 ms.assetid: 07208b6b-cb3a-4f6c-9c84-36d4dc1486d8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Set a Default Template

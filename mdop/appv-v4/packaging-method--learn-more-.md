@@ -2,7 +2,7 @@
 title: Packaging Method (Learn More)
 description: Packaging Method (Learn More)
 ms.assetid: 3975a640-1ffd-4b4c-95fd-608469f4c205
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Packaging Method (Learn More)

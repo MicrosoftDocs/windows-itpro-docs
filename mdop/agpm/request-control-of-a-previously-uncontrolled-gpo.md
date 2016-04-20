@@ -2,7 +2,7 @@
 title: Request Control of a Previously Uncontrolled GPO
 description: Request Control of a Previously Uncontrolled GPO
 ms.assetid: 00e8725d-5d7f-4eed-a5e6-c3631632cfbd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Request Control of a Previously Uncontrolled GPO

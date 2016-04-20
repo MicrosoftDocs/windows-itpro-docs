@@ -2,7 +2,7 @@
 title: Managing Automatic Updates for MED-V Workspaces
 description: Managing Automatic Updates for MED-V Workspaces
 ms.assetid: 306f28a2-d653-480d-b737-4b8b3132de5d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Managing Automatic Updates for MED-V Workspaces

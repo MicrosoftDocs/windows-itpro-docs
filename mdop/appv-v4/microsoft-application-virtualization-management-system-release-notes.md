@@ -2,7 +2,7 @@
 title: Microsoft Application Virtualization Management System Release Notes
 description: Microsoft Application Virtualization Management System Release Notes
 ms.assetid: e1a4d5ee-53c7-4b48-814c-a34ce0e698dc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Microsoft Application Virtualization Management System Release Notes

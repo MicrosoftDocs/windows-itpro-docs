@@ -2,7 +2,7 @@
 title: About Application Virtualization Servers
 description: About Application Virtualization Servers
 ms.assetid: 60a45509-2112-44ca-8e28-c73b0c2ff85e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Application Virtualization Servers

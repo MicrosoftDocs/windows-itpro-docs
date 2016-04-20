@@ -2,7 +2,7 @@
 title: Performing BitLocker Management with MBAM 2.5
 description: Performing BitLocker Management with MBAM 2.5
 ms.assetid: 068f3ee0-300c-4083-ba18-7065eef997ad
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Performing BitLocker Management with MBAM 2.5

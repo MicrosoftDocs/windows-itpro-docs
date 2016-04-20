@@ -2,7 +2,7 @@
 title: How to Deploy DaRT 7.0
 description: How to Deploy DaRT 7.0
 ms.assetid: 30522441-40cb-4eca-99b4-dff758f5c647
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deploy DaRT 7.0

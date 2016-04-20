@@ -2,7 +2,7 @@
 title: Performing Approver Tasks
 description: Performing Approver Tasks
 ms.assetid: 9f711824-191b-4b4b-a1c6-a3b2116006a4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Performing Approver Tasks

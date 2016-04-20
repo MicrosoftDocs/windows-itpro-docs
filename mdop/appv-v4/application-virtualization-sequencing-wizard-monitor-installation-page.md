@@ -2,7 +2,7 @@
 title: Application Virtualization Sequencing Wizard Monitor Installation Page
 description: Application Virtualization Sequencing Wizard Monitor Installation Page
 ms.assetid: b54b8145-a57e-4d0d-b776-b5319aadb78e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Sequencing Wizard Monitor Installation Page

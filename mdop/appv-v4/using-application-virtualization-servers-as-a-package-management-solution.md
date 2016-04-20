@@ -2,7 +2,7 @@
 title: Using Application Virtualization Servers as a Package Management Solution
 description: Using Application Virtualization Servers as a Package Management Solution
 ms.assetid: 41597355-e7bb-45e2-b300-7b1724419975
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Using Application Virtualization Servers as a Package Management Solution

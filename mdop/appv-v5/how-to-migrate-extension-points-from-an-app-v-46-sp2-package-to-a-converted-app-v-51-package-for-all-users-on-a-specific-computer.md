@@ -2,7 +2,7 @@
 title: How to Migrate Extension Points From an App-V 4.6 SP2 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer
 description: How to Migrate Extension Points From an App-V 4.6 SP2 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer
 ms.assetid: 4ef823a5-3106-44c5-aecc-29edf69c2fbb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Migrate Extension Points From an App-V 4.6 SP2 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer

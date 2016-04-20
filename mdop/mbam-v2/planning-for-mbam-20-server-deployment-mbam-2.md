@@ -2,7 +2,7 @@
 title: Planning for MBAM 2.0 Server Deployment
 description: Planning for MBAM 2.0 Server Deployment
 ms.assetid: b57f1a42-134f-4997-8697-7fbed08e2fc4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MBAM 2.0 Server Deployment

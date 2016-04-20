@@ -2,7 +2,7 @@
 title: Application Virtualization Client Management Console
 description: Application Virtualization Client Management Console
 ms.assetid: 18635688-8cbe-40d1-894e-acb2749b4e69
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Client Management Console

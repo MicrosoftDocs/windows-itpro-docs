@@ -2,7 +2,7 @@
 title: Security Considerations for MBAM 1.0
 description: Security Considerations for MBAM 1.0
 ms.assetid: 5e1c8b8c-235b-4a92-8b0b-da50dca17353
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Security Considerations for MBAM 1.0

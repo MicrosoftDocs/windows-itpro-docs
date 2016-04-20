@@ -2,7 +2,7 @@
 title: About MBAM 1.0
 description: About MBAM 1.0
 ms.assetid: 99254aaa-2b30-4b2e-8365-0d4b67a89a0c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About MBAM 1.0

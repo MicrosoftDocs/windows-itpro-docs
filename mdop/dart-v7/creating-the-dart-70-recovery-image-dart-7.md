@@ -2,7 +2,7 @@
 title: Creating the DaRT 7.0 Recovery Image
 description: Creating the DaRT 7.0 Recovery Image
 ms.assetid: ebb2ec58-0349-469d-a23f-3f944fe4c1fa
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Creating the DaRT 7.0 Recovery Image

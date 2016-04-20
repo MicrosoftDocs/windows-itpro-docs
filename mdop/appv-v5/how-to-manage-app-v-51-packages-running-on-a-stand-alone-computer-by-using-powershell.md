@@ -2,7 +2,7 @@
 title: How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell
 description: How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell
 ms.assetid: c3fd06f6-102f-43d1-a577-d5ced6ac537d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell

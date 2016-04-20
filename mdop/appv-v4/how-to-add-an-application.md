@@ -2,7 +2,7 @@
 title: How to Add an Application
 description: How to Add an Application
 ms.assetid: 0147233d-f369-4796-8e34-fb1d894af732
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Add an Application

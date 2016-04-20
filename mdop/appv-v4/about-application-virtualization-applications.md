@@ -2,7 +2,7 @@
 title: About Application Virtualization Applications
 description: About Application Virtualization Applications
 ms.assetid: 3bf833b7-d172-4eef-a9e8-4b4f0c7eb15b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Application Virtualization Applications

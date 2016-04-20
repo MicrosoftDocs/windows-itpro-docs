@@ -17,6 +17,10 @@ author: brianlic-msft
 
 User Account Control (UAC) helps prevent malware from damaging a computer and helps organizations deploy a better-managed desktop environment.
 
+You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Univeral Windows Platform apps stop working. You must always set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
+
+For more info about how manage UAC, see [UAC Group Policy Settings and Registry Key Settings](https://technet.microsoft.com/library/dd835564.aspx#BKMK_AdminApprovalMode).
+
 In Windows 10, User Account Control has added some improvements.
 
 ## New features in Windows 10

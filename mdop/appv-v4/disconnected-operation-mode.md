@@ -2,7 +2,7 @@
 title: Disconnected Operation Mode
 description: Disconnected Operation Mode
 ms.assetid: 3f9849ea-ba53-4c68-85d3-87a4218f59c6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Disconnected Operation Mode

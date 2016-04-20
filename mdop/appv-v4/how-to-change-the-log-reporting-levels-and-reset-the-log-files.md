@@ -2,7 +2,7 @@
 title: How to Change the Log Reporting Levels and Reset the Log Files
 description: How to Change the Log Reporting Levels and Reset the Log Files
 ms.assetid: 9561d6fb-b35c-491b-a355-000064583194
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Change the Log Reporting Levels and Reset the Log Files

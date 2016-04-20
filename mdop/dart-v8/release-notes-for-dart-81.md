@@ -2,7 +2,7 @@
 title: Release Notes for DaRT 8.1
 description: Release Notes for DaRT 8.1
 ms.assetid: 44303107-60f4-485c-848a-7e0529f142d4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Release Notes for DaRT 8.1

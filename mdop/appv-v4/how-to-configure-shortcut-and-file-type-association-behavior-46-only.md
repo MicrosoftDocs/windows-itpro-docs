@@ -2,7 +2,7 @@
 title: How to Configure Shortcut and File Type Association Behavior
 description: How to Configure Shortcut and File Type Association Behavior
 ms.assetid: d6fd1728-4de6-4066-b36b-d4837d593d40
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Shortcut and File Type Association Behavior

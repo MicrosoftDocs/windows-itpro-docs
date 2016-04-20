@@ -2,7 +2,7 @@
 title: Managing Applications Deployed to MED-V Workspaces
 description: Managing Applications Deployed to MED-V Workspaces
 ms.assetid: 9a9bcdf5-0aa7-42a3-b6f0-6065adb01bcb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Managing Applications Deployed to MED-V Workspaces

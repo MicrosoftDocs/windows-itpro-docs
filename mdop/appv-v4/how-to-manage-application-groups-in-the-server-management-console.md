@@ -2,7 +2,7 @@
 title: How to Manage Application Groups in the Server Management Console
 description: How to Manage Application Groups in the Server Management Console
 ms.assetid: 46997971-bdc8-4565-aefd-f47e90d6d7a6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Manage Application Groups in the Server Management Console

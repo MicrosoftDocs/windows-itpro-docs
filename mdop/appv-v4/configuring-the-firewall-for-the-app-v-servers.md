@@ -2,7 +2,7 @@
 title: Configuring the Firewall for the App-V Servers
 description: Configuring the Firewall for the App-V Servers
 ms.assetid: f779c450-6c6f-46a8-ac66-5e82e0689d55
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring the Firewall for the App-V Servers

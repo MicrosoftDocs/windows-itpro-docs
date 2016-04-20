@@ -2,7 +2,7 @@
 title: High-Level Architecture of MBAM 2.5 with Stand-alone Topology
 description: High-Level Architecture of MBAM 2.5 with Stand-alone Topology
 ms.assetid: 35f8c5f6-8be3-443d-baf0-56d68b08f3bc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # High-Level Architecture of MBAM 2.5 with Stand-alone Topology

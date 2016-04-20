@@ -2,7 +2,7 @@
 title: App-V 5.1 Prerequisites
 description: App-V 5.1 Prerequisites
 ms.assetid: 1bfa03c1-a4ae-45ec-8a2b-b10c2b94bfb0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V 5.1 Prerequisites

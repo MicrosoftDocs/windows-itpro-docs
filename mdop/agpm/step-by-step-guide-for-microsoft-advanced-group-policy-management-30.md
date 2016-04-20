@@ -2,7 +2,7 @@
 title: Step-by-Step Guide for Microsoft Advanced Group Policy Management 3.0
 description: Step-by-Step Guide for Microsoft Advanced Group Policy Management 3.0
 ms.assetid: d067f465-d7c8-4f6d-b311-66b9b06874f7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Step-by-Step Guide for Microsoft Advanced Group Policy Management 3.0

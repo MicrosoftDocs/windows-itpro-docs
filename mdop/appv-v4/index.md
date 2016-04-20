@@ -2,7 +2,7 @@
 title: Application Virtualization 4
 description: Application Virtualization 4
 ms.assetid: 9da557bc-f433-47d3-8af7-68ec4ff9bd3f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization 4

@@ -2,7 +2,7 @@
 title: How to Publish a Package by Using the Management Console
 description: How to Publish a Package by Using the Management Console
 ms.assetid: 7c6930fc-5c89-4519-a901-512dae155fd2
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Publish a Package by Using the Management Console

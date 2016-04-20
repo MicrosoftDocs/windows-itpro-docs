@@ -2,7 +2,7 @@
 title: MED-V Installation Prerequisites
 description: MED-V Installation Prerequisites
 ms.assetid: cf3c0906-23eb-4c4a-8951-a65741720f95
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # MED-V Installation Prerequisites

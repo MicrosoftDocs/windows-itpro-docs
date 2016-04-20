@@ -2,7 +2,7 @@
 title: How to Create a Connection Group with User-Published and Globally Published Packages
 description: How to Create a Connection Group with User-Published and Globally Published Packages
 ms.assetid: 82f7ea7f-7b14-4506-8940-fdcd6c3e117f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create a Connection Group with User-Published and Globally Published Packages

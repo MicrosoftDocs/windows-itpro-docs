@@ -2,7 +2,7 @@
 title: Compacting the MED-V Virtual Hard Disk
 description: Compacting the MED-V Virtual Hard Disk
 ms.assetid: 5e6122d1-9847-4b33-adab-594919eec3c5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Compacting the MED-V Virtual Hard Disk

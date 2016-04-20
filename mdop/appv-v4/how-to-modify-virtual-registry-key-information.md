@@ -2,7 +2,7 @@
 title: How to Modify Virtual Registry Key Information
 description: How to Modify Virtual Registry Key Information
 ms.assetid: cf2559f2-a8cc-4fc7-916e-8368843c7ebc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Modify Virtual Registry Key Information

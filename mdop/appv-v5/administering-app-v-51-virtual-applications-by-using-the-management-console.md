@@ -2,7 +2,7 @@
 title: Administering App-V 5.1 Virtual Applications by Using the Management Console
 description: Administering App-V 5.1 Virtual Applications by Using the Management Console
 ms.assetid: a4d078aa-ec54-4fa4-9463-bfb3b971d724
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administering App-V 5.1 Virtual Applications by Using the Management Console

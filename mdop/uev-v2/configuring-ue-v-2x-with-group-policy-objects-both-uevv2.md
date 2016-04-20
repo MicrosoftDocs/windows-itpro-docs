@@ -2,7 +2,7 @@
 title: Configuring UE-V 2.x with Group Policy Objects
 description: Configuring UE-V 2.x with Group Policy Objects
 ms.assetid: 2bb55834-26ee-4f19-9860-dfdf3c797143
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring UE-V 2.x with Group Policy Objects

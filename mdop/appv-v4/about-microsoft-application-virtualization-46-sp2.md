@@ -2,7 +2,7 @@
 title: About Microsoft Application Virtualization 4.6 SP2
 description: About Microsoft Application Virtualization 4.6 SP2
 ms.assetid: 1429e314-9c38-472b-8687-3bed6cf0015c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About Microsoft Application Virtualization 4.6 SP2

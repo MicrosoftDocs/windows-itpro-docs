@@ -2,7 +2,7 @@
 title: Examples of Virtual Machine Configurations
 description: Examples of Virtual Machine Configurations
 ms.assetid: 5937601e-41ab-4ca2-8fa1-3c9154710cd6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Examples of Virtual Machine Configurations

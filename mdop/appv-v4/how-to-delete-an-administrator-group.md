@@ -2,7 +2,7 @@
 title: How to Delete an Administrator Group
 description: How to Delete an Administrator Group
 ms.assetid: 398a8028-e128-4020-bbe2-59ba63b5cd48
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Delete an Administrator Group

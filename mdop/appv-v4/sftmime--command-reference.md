@@ -2,7 +2,7 @@
 title: SFTMIME Command Reference
 description: SFTMIME Command Reference
 ms.assetid: a4a69228-9dd3-4623-b773-899d03c0cf10
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # SFTMIME Command Reference

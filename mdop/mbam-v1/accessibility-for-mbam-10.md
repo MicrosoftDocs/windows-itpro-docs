@@ -2,7 +2,7 @@
 title: Accessibility for MBAM 1.0
 description: Accessibility for MBAM 1.0
 ms.assetid: 5c1bf1a3-76cf-458c-ac4a-cd343aace4de
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Accessibility for MBAM 1.0

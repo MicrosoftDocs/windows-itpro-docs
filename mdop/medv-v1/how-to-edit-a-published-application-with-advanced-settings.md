@@ -2,7 +2,7 @@
 title: How to Edit a Published Application with Advanced Settings
 description: How to Edit a Published Application with Advanced Settings
 ms.assetid: 06a79049-9ce9-490f-aad7-fd4fdf185590
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Edit a Published Application with Advanced Settings

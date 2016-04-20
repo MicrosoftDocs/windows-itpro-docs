@@ -2,7 +2,7 @@
 title: Manage MED-V Workspace Applications
 description: Manage MED-V Workspace Applications
 ms.assetid: f58c7504-a77a-41a8-ac38-7e618da131fb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Manage MED-V Workspace Applications

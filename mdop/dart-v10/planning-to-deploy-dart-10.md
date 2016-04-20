@@ -2,7 +2,7 @@
 title: Planning to Deploy DaRT 10
 description: Planning to Deploy DaRT 10
 ms.assetid: 32a39e97-a889-4aae-982c-b85cdc3d9134
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning to Deploy DaRT 10

@@ -2,7 +2,7 @@
 title: Application Virtualization 5
 description: Application Virtualization 5
 ms.assetid: e82eb44b-9ccd-41aa-923b-71400230ad23
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization 5

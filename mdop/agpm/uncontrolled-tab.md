@@ -2,7 +2,7 @@
 title: Uncontrolled Tab
 description: Uncontrolled Tab
 ms.assetid: d7e658bf-a72b-4813-bdc8-2fdb7251e742
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Uncontrolled Tab

@@ -2,7 +2,7 @@
 title: How to Add or Remove an Administrator by Using the Management Console
 description: How to Add or Remove an Administrator by Using the Management Console
 ms.assetid: 7ff8c436-9d2e-446a-9ea2-bbab7e25bf21
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Add or Remove an Administrator by Using the Management Console

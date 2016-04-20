@@ -2,7 +2,7 @@
 title: App-V 4.6 Release Notes
 description: App-V 4.6 Release Notes
 ms.assetid: a3eba129-edac-48bf-a933-3bf43a9873e5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V 4.6 Release Notes

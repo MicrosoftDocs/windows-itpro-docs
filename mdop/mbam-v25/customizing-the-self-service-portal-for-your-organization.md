@@ -2,7 +2,7 @@
 title: Customizing the Self-Service Portal for Your Organization
 description: Customizing the Self-Service Portal for Your Organization
 ms.assetid: f007e02b-e2df-47a9-9762-5909e230aa3f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Customizing the Self-Service Portal for Your Organization

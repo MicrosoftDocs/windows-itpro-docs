@@ -2,7 +2,7 @@
 title: Migrating to App-V 5.1 from a Previous Version
 description: Migrating to App-V 5.1 from a Previous Version
 ms.assetid: e7ee0edc-7544-4c0a-aaca-d922a33bc1bb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Migrating to App-V 5.1 from a Previous Version

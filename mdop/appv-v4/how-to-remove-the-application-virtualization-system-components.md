@@ -2,7 +2,7 @@
 title: How to Remove the Application Virtualization System Components
 description: How to Remove the Application Virtualization System Components
 ms.assetid: 45bb1e43-8708-48b7-9169-e3659f32686f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Remove the Application Virtualization System Components

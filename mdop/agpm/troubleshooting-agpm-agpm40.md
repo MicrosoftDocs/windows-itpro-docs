@@ -2,7 +2,7 @@
 title: Troubleshooting AGPM
 description: Troubleshooting AGPM
 ms.assetid: bedcd817-beb2-47bf-aebd-e3923c4fd06f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Troubleshooting AGPM

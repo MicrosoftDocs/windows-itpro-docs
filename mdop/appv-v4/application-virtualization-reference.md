@@ -2,7 +2,7 @@
 title: Application Virtualization Reference
 description: Application Virtualization Reference
 ms.assetid: 5f994be7-41fa-416b-8a4c-6ed52fcd9b72
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Reference

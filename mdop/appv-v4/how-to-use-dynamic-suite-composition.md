@@ -2,7 +2,7 @@
 title: How To Use Dynamic Suite Composition
 description: How To Use Dynamic Suite Composition
 ms.assetid: 24147feb-a0a8-4791-a8e5-cbe5fe13c762
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How To Use Dynamic Suite Composition

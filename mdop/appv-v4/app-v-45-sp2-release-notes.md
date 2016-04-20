@@ -2,7 +2,7 @@
 title: App-V 4.5 SP2 Release Notes
 description: App-V 4.5 SP2 Release Notes
 ms.assetid: 1b3a8a83-4523-4634-9f75-29bc22ca5815
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # App-V 4.5 SP2 Release Notes

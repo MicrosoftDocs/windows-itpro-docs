@@ -2,7 +2,7 @@
 title: How to Allow Only Administrators to Enable Connection Groups
 description: How to Allow Only Administrators to Enable Connection Groups
 ms.assetid: 60e62426-624f-4f26-851e-41cd78520883
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Allow Only Administrators to Enable Connection Groups

@@ -2,7 +2,7 @@
 title: Delegate Management of a Controlled GPO
 description: Delegate Management of a Controlled GPO
 ms.assetid: 509b02e7-ce0b-4919-b58a-c3a33051152e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Delegate Management of a Controlled GPO

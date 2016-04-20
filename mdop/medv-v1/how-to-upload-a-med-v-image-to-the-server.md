@@ -2,7 +2,7 @@
 title: How to Upload a MED-V Image to the Server
 description: How to Upload a MED-V Image to the Server
 ms.assetid: 0e70dfdf-3e3a-4860-970c-535806caa907
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upload a MED-V Image to the Server

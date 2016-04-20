@@ -2,7 +2,7 @@
 title: Target OS Page
 description: Target OS Page
 ms.assetid: 003fd992-0a7e-494e-9e75-4dd5e0927e15
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Target OS Page

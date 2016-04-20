@@ -2,7 +2,7 @@
 title: How to Upgrade a Sequenced Application Package Using the Command Line
 description: How to Upgrade a Sequenced Application Package Using the Command Line
 ms.assetid: 682fac46-c71d-4731-831b-81bfd5032764
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upgrade a Sequenced Application Package Using the Command Line

@@ -2,7 +2,7 @@
 title: Exclusion Items Tab
 description: Exclusion Items Tab
 ms.assetid: 864e46dd-3d6e-4a1b-acf4-9dc00548117e
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Exclusion Items Tab

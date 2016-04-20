@@ -2,7 +2,7 @@
 title: How to Sequence a New Application (App-V 4.6)
 description: How to Sequence a New Application (App-V 4.6)
 ms.assetid: f2c398c6-9200-4be3-b502-e00386fcd150
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Sequence a New Application (App-V 4.6)

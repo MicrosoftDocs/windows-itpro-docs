@@ -2,7 +2,7 @@
 title: Detecting Network Changes that Affect MED-V
 description: Detecting Network Changes that Affect MED-V
 ms.assetid: fd29b95a-cda2-464d-b86d-50b6bd64b4ca
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Detecting Network Changes that Affect MED-V

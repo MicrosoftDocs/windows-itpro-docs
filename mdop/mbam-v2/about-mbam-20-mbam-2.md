@@ -2,7 +2,7 @@
 title: About MBAM 2.0
 description: About MBAM 2.0
 ms.assetid: b43a0ba9-1c83-4854-a2c5-14eea0070e36
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About MBAM 2.0

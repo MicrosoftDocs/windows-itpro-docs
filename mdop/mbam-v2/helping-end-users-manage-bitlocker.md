@@ -2,7 +2,7 @@
 title: Helping End Users Manage BitLocker
 description: Helping End Users Manage BitLocker
 ms.assetid: 47776fb3-2d94-4970-b687-c35ec3dd6c64
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Helping End Users Manage BitLocker

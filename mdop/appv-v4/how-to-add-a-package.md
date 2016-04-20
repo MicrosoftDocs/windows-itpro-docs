@@ -2,7 +2,7 @@
 title: How to Add a Package
 description: How to Add a Package
 ms.assetid: 5407fdbe-e658-44f6-a9b8-a566b81dedce
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Add a Package

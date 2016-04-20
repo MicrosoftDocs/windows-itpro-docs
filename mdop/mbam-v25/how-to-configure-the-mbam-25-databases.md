@@ -2,7 +2,7 @@
 title: How to Configure the MBAM 2.5 Databases
 description: How to Configure the MBAM 2.5 Databases
 ms.assetid: 66e1c81b-f785-4398-9175-bb5f112c2a35
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure the MBAM 2.5 Databases

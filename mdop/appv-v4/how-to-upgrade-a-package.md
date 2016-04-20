@@ -2,7 +2,7 @@
 title: How to Upgrade a Package
 description: How to Upgrade a Package
 ms.assetid: 831c7556-6f6c-4b3a-aefb-26889094dc1a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Upgrade a Package

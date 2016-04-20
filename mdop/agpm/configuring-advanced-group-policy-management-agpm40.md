@@ -2,7 +2,7 @@
 title: Configuring Advanced Group Policy Management
 description: Configuring Advanced Group Policy Management
 ms.assetid: 8c978ddf-2789-44e4-9c08-de7b4cd1afa0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring Advanced Group Policy Management

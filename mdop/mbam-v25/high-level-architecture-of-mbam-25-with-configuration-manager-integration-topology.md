@@ -2,7 +2,7 @@
 title: High-Level Architecture of MBAM 2.5 with Configuration Manager Integration Topology
 description: High-Level Architecture of MBAM 2.5 with Configuration Manager Integration Topology
 ms.assetid: 075bafa1-792b-4c24-9d8e-5d3153e2112c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # High-Level Architecture of MBAM 2.5 with Configuration Manager Integration Topology

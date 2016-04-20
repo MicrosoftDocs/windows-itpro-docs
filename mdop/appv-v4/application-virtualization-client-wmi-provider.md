@@ -2,7 +2,7 @@
 title: Application Virtualization Client WMI Provider
 description: Application Virtualization Client WMI Provider
 ms.assetid: 384e33e0-6689-4e28-af84-53acee8a5c24
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Client WMI Provider

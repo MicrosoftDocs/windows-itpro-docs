@@ -2,7 +2,7 @@
 title: Creating or Controlling a GPO
 description: Creating or Controlling a GPO
 ms.assetid: 807f3b3f-ad3d-4851-9772-7f54a065632a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Creating or Controlling a GPO

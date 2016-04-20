@@ -2,7 +2,7 @@
 title: Configure Environment Prerequisites
 description: Configure Environment Prerequisites
 ms.assetid: 7379e8e5-1cb2-4b8e-8acc-5c04e26f8c91
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configure Environment Prerequisites

@@ -2,7 +2,7 @@
 title: DaRT 8.0 Deployment Checklist
 description: DaRT 8.0 Deployment Checklist
 ms.assetid: 74e071fb-697c-463f-adce-d09b8d86495f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DaRT 8.0 Deployment Checklist

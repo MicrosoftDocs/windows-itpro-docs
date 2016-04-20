@@ -2,7 +2,7 @@
 title: Overview of the Application Virtualization System Components
 description: Overview of the Application Virtualization System Components
 ms.assetid: 75d88ef7-44d8-4fa7-b7f5-9153f37e570d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Overview of the Application Virtualization System Components

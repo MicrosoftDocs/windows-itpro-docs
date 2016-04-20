@@ -2,7 +2,7 @@
 title: How to Convert a Package Created in a Previous Version of App-V
 description: How to Convert a Package Created in a Previous Version of App-V
 ms.assetid: 3366d399-2891-491d-8de1-f8cfdf39bbab
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Convert a Package Created in a Previous Version of App-V

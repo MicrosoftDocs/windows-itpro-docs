@@ -2,7 +2,7 @@
 title: Select Task Page (Learn More)
 description: Select Task Page (Learn More)
 ms.assetid: 09534c40-bf6c-4b3f-be9a-8624965c9c18
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Select Task Page (Learn More)

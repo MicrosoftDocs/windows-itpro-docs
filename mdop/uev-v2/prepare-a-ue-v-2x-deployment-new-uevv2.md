@@ -2,7 +2,7 @@
 title: Prepare a UE-V 2.x Deployment
 description: Prepare a UE-V 2.x Deployment
 ms.assetid: c429fd06-13ff-48c5-b9c9-fa1ec01ab800
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Prepare a UE-V 2.x Deployment

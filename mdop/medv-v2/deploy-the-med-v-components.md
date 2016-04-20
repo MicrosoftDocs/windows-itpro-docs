@@ -2,7 +2,7 @@
 title: Deploy the MED-V Components
 description: Deploy the MED-V Components
 ms.assetid: fc2c5ef2-9c71-412a-8f6c-93df248f77d6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploy the MED-V Components

@@ -2,7 +2,7 @@
 title: Monitoring and Reporting BitLocker Compliance with MBAM 2.5
 description: Monitoring and Reporting BitLocker Compliance with MBAM 2.5
 ms.assetid: 24a3bccd-8b67-4baa-a181-e4572eaba5bf
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Monitoring and Reporting BitLocker Compliance with MBAM 2.5

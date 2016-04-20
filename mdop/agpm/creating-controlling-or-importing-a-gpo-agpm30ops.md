@@ -2,7 +2,7 @@
 title: Creating, Controlling, or Importing a GPO
 description: Creating, Controlling, or Importing a GPO
 ms.assetid: ce8b232e-7758-4a6a-9e2f-18967da6cdad
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Creating, Controlling, or Importing a GPO

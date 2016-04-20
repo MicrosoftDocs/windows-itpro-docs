@@ -2,7 +2,7 @@
 title: Application Publishing and Client Interaction
 description: Application Publishing and Client Interaction
 ms.assetid: 36a4bf6f-a917-41a6-9856-6248686df352
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Publishing and Client Interaction

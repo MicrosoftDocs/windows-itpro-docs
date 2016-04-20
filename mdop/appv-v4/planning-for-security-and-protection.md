@@ -2,7 +2,7 @@
 title: Planning for Security and Protection
 description: Planning for Security and Protection
 ms.assetid: d0e2ef81-c197-4020-ad85-8d66fe5c178f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for Security and Protection

@@ -2,7 +2,7 @@
 title: DELETE APP
 description: DELETE APP
 ms.assetid: 2f89c0c0-373b-4389-a26d-67b3f9712957
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DELETE APP

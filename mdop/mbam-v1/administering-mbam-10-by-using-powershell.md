@@ -2,7 +2,7 @@
 title: Administering MBAM 1.0 by Using PowerShell
 description: Administering MBAM 1.0 by Using PowerShell
 ms.assetid: 3bf2eca5-4ab7-4e84-9e80-c0c7d709647b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administering MBAM 1.0 by Using PowerShell

@@ -2,7 +2,7 @@
 title: Select Package (Learn More) Page
 description: Select Package (Learn More) Page
 ms.assetid: 0b3d4ca4-ff65-4aa5-87a9-61cbe2ffc8be
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Select Package (Learn More) Page

@@ -2,7 +2,7 @@
 title: How to Delete a MED-V Image
 description: How to Delete a MED-V Image
 ms.assetid: 974a493a-7627-4c64-9294-89441f127916
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Delete a MED-V Image

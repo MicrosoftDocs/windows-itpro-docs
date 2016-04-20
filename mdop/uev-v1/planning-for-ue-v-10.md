@@ -2,7 +2,7 @@
 title: Planning for UE-V 1.0
 description: Planning for UE-V 1.0
 ms.assetid: fc44aa5f-1d4f-4c03-b326-37ecd6bd913f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for UE-V 1.0

@@ -2,7 +2,7 @@
 title: What's New in AGPM 3.0
 description: What's New in AGPM 3.0
 ms.assetid: 0d082b86-63c5-45ce-9529-6e5f37254f9d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # What's New in AGPM 3.0

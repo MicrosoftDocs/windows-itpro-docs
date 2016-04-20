@@ -2,7 +2,7 @@
 title: Configuring Advanced Settings by Using Windows PowerShell
 description: Configuring Advanced Settings by Using Windows PowerShell
 ms.assetid: 437a31cc-2a11-456f-b448-b0b869fb53f7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Configuring Advanced Settings by Using Windows PowerShell

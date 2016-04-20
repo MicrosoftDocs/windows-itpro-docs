@@ -2,7 +2,7 @@
 title: Deploying DaRT 10
 description: Deploying DaRT 10
 ms.assetid: 92cf70fd-006f-4fdc-9fb3-78d9d223148d
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Deploying DaRT 10

@@ -2,7 +2,7 @@
 title: Import a GPO from Production
 description: Import a GPO from Production
 ms.assetid: ad14203a-2e6a-41d4-a05e-4508c80045fd
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Import a GPO from Production

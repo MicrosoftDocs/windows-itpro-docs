@@ -2,7 +2,7 @@
 title: How to Change the Server Logging Level and the Database Parameters
 description: How to Change the Server Logging Level and the Database Parameters
 ms.assetid: e3ebaee5-6c4c-4aa8-9766-c5aeb00f477a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Change the Server Logging Level and the Database Parameters

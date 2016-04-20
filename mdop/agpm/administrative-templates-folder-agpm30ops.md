@@ -2,7 +2,7 @@
 title: Administrative Templates Folder
 description: Administrative Templates Folder
 ms.assetid: 0cc5b570-b6d3-4841-9646-02521c13519c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Administrative Templates Folder

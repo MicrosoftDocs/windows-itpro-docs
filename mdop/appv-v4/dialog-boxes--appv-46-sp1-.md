@@ -2,7 +2,7 @@
 title: Dialog Boxes (AppV 4.6 SP1)
 description: Dialog Boxes (AppV 4.6 SP1)
 ms.assetid: f76b95df-cba4-4a69-8cd8-a888edf437be
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Dialog Boxes (AppV 4.6 SP1)

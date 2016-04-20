@@ -2,7 +2,7 @@
 title: How to Deploy the MED-V Components Through an Electronic Software Distribution System
 description: How to Deploy the MED-V Components Through an Electronic Software Distribution System
 ms.assetid: 8a800bdf-6fa4-47b4-b417-df053289d4e8
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Deploy the MED-V Components Through an Electronic Software Distribution System

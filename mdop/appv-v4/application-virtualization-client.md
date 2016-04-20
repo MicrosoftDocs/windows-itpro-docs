@@ -2,7 +2,7 @@
 title: Application Virtualization Client
 description: Application Virtualization Client
 ms.assetid: d9e1939b-eb9c-49a0-855d-f4c323b84c2f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Client

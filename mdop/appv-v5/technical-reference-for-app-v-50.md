@@ -2,7 +2,7 @@
 title: Technical Reference for App-V 5.0
 description: Technical Reference for App-V 5.0
 ms.assetid: aa899158-41e8-47d3-882c-8c5b96018308
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Technical Reference for App-V 5.0

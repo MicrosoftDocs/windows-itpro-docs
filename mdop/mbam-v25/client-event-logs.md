@@ -2,7 +2,7 @@
 title: Client Event Logs
 description: Client Event Logs
 ms.assetid: d5c2f270-db6a-45f1-8557-8c6fb28fd568
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Client Event Logs

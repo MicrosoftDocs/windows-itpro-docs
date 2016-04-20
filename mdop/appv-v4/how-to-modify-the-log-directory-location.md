@@ -2,7 +2,7 @@
 title: How to Modify the Log Directory Location
 description: How to Modify the Log Directory Location
 ms.assetid: 203c674f-8d46-4d42-9af0-245a2681fc0f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Modify the Log Directory Location

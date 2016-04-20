@@ -2,7 +2,7 @@
 title: Provider Policies Results Pane
 description: Provider Policies Results Pane
 ms.assetid: 17ea0836-bfb5-4966-8778-155444d81e64
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Provider Policies Results Pane

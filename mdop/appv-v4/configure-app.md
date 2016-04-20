@@ -2,7 +2,7 @@
 title: CONFIGURE APP
 description: CONFIGURE APP
 ms.assetid: fcfb4f86-8b7c-4208-bca3-955fd067079f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # CONFIGURE APP

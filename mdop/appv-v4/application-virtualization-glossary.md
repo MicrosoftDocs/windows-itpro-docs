@@ -2,7 +2,7 @@
 title: Application Virtualization Glossary
 description: Application Virtualization Glossary
 ms.assetid: 9eb71774-e288-4f94-8f94-5b98e0d012a7
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Glossary

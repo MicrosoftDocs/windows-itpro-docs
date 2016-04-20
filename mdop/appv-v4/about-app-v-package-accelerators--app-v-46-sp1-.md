@@ -2,7 +2,7 @@
 title: About App-V Package Accelerators (App-V 4.6 SP1)
 description: About App-V Package Accelerators (App-V 4.6 SP1)
 ms.assetid: fc2d2375-8f17-4a6d-b374-771cb947cb8c
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About App-V Package Accelerators (App-V 4.6 SP1)

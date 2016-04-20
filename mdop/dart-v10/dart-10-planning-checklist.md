@@ -2,7 +2,7 @@
 title: DaRT 10 Planning Checklist
 description: DaRT 10 Planning Checklist
 ms.assetid: d6482534-cdf3-4997-bec0-33d0edf6924a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # DaRT 10 Planning Checklist

@@ -2,7 +2,7 @@
 title: Application Virtualization Properties Interface Tab
 description: Application Virtualization Properties Interface Tab
 ms.assetid: bb9cb54e-315a-48bf-a396-b33e2cbd030a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Properties: Interface Tab

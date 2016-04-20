@@ -2,7 +2,7 @@
 title: How to Create a Report
 description: How to Create a Report
 ms.assetid: 70938167-d3b9-45ce-b459-a953c93769b0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Create a Report

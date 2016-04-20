@@ -2,7 +2,7 @@
 title: Overview of MED-V
 description: Overview of MED-V
 ms.assetid: 32a85b79-91b0-4507-a57a-01ff0fa029f5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Overview of MED-V

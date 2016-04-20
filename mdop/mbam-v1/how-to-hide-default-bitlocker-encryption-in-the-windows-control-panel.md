@@ -2,7 +2,7 @@
 title: How to Hide Default BitLocker Encryption in The Windows Control Panel
 description: How to Hide Default BitLocker Encryption in The Windows Control Panel
 ms.assetid: c8503743-220c-497c-9785-e2feeca484d6
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Hide Default BitLocker Encryption in The Windows Control Panel

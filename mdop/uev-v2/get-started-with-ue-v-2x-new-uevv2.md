@@ -2,7 +2,7 @@
 title: Get Started with UE-V 2.x
 description: Get Started with UE-V 2.x
 ms.assetid: 526ecbf0-0dee-4f0b-b017-8f8d25357b14
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Get Started with UE-V 2.x

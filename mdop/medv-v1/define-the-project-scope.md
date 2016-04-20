@@ -2,7 +2,7 @@
 title: Define the Project Scope
 description: Define the Project Scope
 ms.assetid: 84637d2a-2e30-417d-b150-dc81f414b3a5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Define the Project Scope

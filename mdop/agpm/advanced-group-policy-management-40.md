@@ -2,7 +2,7 @@
 title: Advanced Group Policy Management 4.0
 description: Advanced Group Policy Management 4.0
 ms.assetid: 9873a1f7-97fc-4546-9538-b4c0308529c0
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Advanced Group Policy Management 4.0

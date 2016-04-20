@@ -2,7 +2,7 @@
 title: How to Install a Database
 description: How to Install a Database
 ms.assetid: 52e3a19d-b7cf-4f2c-8268-0f8361cc9766
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Install a Database

@@ -2,7 +2,7 @@
 title: About This Guide
 description: About This Guide
 ms.assetid: 17d8f150-226e-45f8-87e3-f425a77243e4
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About This Guide

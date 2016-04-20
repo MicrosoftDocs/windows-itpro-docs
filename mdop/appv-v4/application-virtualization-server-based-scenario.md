@@ -2,7 +2,7 @@
 title: Application Virtualization Server-Based Scenario
 description: Application Virtualization Server-Based Scenario
 ms.assetid: 10ed0b18-087d-470f-951b-5083f4cb076f
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Application Virtualization Server-Based Scenario

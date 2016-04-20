@@ -2,7 +2,7 @@
 title: How to Configure Windows Server 2003 Firewall for App-V
 description: How to Configure Windows Server 2003 Firewall for App-V
 ms.assetid: 2c0e80f8-41e9-4164-ac83-b23b132b489a
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure Windows Server 2003 Firewall for App-V

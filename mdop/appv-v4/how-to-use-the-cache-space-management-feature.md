@@ -2,7 +2,7 @@
 title: How to Use the Cache Space Management Feature
 description: How to Use the Cache Space Management Feature
 ms.assetid: 60965660-c015-46a8-88ac-54cbc050fe33
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Use the Cache Space Management Feature

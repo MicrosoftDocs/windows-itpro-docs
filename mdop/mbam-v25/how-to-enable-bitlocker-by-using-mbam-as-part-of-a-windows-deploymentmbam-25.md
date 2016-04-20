@@ -2,7 +2,7 @@
 title: How to Enable BitLocker by Using MBAM as Part of a Windows Deployment
 description: How to Enable BitLocker by Using MBAM as Part of a Windows Deployment
 ms.assetid: 7609ad7a-bb06-47be-b186-0a2db787c8a5
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Enable BitLocker by Using MBAM as Part of a Windows Deployment

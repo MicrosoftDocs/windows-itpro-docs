@@ -2,7 +2,7 @@
 title: Planning for MBAM 1.0
 description: Planning for MBAM 1.0
 ms.assetid: d4e8a42f-2836-48c8-83c1-40bd58270e19
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Planning for MBAM 1.0

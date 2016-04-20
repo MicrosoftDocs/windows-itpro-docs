@@ -2,7 +2,7 @@
 title: About the Connection Group Virtual Environment
 description: About the Connection Group Virtual Environment
 ms.assetid: 535fa640-cbd9-425e-8437-94650a70c264
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # About the Connection Group Virtual Environment

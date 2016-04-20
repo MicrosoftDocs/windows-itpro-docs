@@ -2,7 +2,7 @@
 title: Viewing MBAM 2.5 Reports for the Stand-alone Topology
 description: Viewing MBAM 2.5 Reports for the Stand-alone Topology
 ms.assetid: 50e93c3a-baf1-4378-8fc0-74dd65d76306
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Viewing MBAM 2.5 Reports for the Stand-alone Topology

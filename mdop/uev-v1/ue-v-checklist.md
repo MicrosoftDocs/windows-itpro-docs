@@ -2,7 +2,7 @@
 title: UE-V Checklist
 description: UE-V Checklist
 ms.assetid: 0e4b9bd5-4e60-4673-b698-90612008fc2b
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # UE-V Checklist

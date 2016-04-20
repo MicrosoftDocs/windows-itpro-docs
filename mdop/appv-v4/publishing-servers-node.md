@@ -2,7 +2,7 @@
 title: Publishing Servers Node
 description: Publishing Servers Node
 ms.assetid: b5823c6c-15bc-4e8d-aeeb-acc366ffedd1
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Publishing Servers Node

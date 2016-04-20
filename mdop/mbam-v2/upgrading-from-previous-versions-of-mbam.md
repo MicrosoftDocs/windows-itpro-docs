@@ -2,7 +2,7 @@
 title: Upgrading from Previous Versions of MBAM
 description: Upgrading from Previous Versions of MBAM
 ms.assetid: 73b425cf-9cd9-4ebc-a35e-1b3bf18596ce
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Upgrading from Previous Versions of MBAM

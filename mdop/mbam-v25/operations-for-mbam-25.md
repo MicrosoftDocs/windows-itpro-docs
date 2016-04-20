@@ -2,7 +2,7 @@
 title: Operations for MBAM 2.5
 description: Operations for MBAM 2.5
 ms.assetid: da0e35be-2dc4-4a24-b69a-530436eb48fc
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Operations for MBAM 2.5

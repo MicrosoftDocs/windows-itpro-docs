@@ -2,7 +2,7 @@
 title: How to Configure VM Computer Name Pattern Properties
 description: How to Configure VM Computer Name Pattern Properties
 ms.assetid: ddf79ace-8cc3-4ee6-be5a-5940b4df5c36
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Configure VM Computer Name Pattern Properties

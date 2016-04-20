@@ -2,7 +2,7 @@
 title: How to Set Up or Disable Database Size
 description: How to Set Up or Disable Database Size
 ms.assetid: 4abaf349-132d-4186-8873-a0e515593b93
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # How to Set Up or Disable Database Size

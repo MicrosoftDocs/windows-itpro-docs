@@ -2,7 +2,7 @@
 title: Delegate Access to the Production Environment
 description: Delegate Access to the Production Environment
 ms.assetid: c1ebae2e-909b-4e64-b368-b7d3cc67b1eb
-author: MaggiePucciEvans
+author: jamiejdt
 ---
 
 # Delegate Access to the Production Environment
