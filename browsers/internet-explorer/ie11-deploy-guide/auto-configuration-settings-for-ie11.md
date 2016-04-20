@@ -1,5 +1,5 @@
 ---
-Description: Auto configuration settings for Internet Explorer 11
+description: Auto configuration settings for Internet Explorer 11
 ms.assetid: 90308d59-45b9-4639-ab1b-497e5ba19023
 author: eross-msft
 ms.prod: IE11

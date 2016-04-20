@@ -1,5 +1,5 @@
 ---
-Description: How to turn on Enterprise Mode and specify a site list. 
+description: How to turn on Enterprise Mode and specify a site list. 
 ms.assetid: 800e9c5a-57a6-4d61-a38a-4cb972d833e1
 author: eross-msft
 ms.prod: IE11

@@ -1,5 +1,5 @@
 ---
-Description: Customize Internet Explorer 11 installation packages
+description: Customize Internet Explorer 11 installation packages
 ms.assetid: 10a14a09-673b-4f8b-8d12-64036135e7fd
 author: eross-msft
 ms.prod: IE11

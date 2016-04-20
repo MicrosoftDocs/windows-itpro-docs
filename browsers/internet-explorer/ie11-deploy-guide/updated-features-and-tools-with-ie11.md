@@ -1,5 +1,5 @@
 ---
-Description: High-level info about some of the new and updated features for Internet Explorer 11.
+description: High-level info about some of the new and updated features for Internet Explorer 11.
 ms.assetid: f53c6f04-7c60-40e7-9fc5-312220f08156
 author: eross-msft
 ms.prod: IE11

@@ -1,6 +1,6 @@
 ---
-Description: Instructions about how to remove sites from a local Enterprise Mode site list.
-ms.assetid: C7D6DD0B-E264-42BB-8C9D-AC2F837018D2
+description: Instructions about how to remove sites from a local Enterprise Mode site list.
+ms.assetid: c7d6dd0b-e264-42bb-8c9d-ac2f837018d2
 author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy
