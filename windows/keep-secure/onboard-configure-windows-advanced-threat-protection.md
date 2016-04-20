@@ -6,10 +6,10 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl:
 ms.sitesec: library
-author: mjcaparas
+author: iaanw
 ---
 
-# Onboard endpoints and set up the Windows Defender ATP user access 
+# Onboard and set up Windows Defender Advanced Threat Protection 
 
 **Applies to**
 
@@ -24,14 +24,14 @@ There are two stages to onboarding:
 1.  Set up user access in AAD and use a wizard to create a dedicated
     cloud instance for your network (known as “service onboarding”).
 
-2.  Add endpoints to the service with scheduled GP updates or manual
+2.  Add endpoints to the service with System Center Configuration Manager, scheduled GP updates, or manual
     registry changes (known as “endpoint onboarding”).
 
 ## In this section
 Topic | Description 
 :---|:---
 [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md) | Learn about managing user access to the Windows Defender ATP portal by assigning users to the Windows Defender ATP service application in ADD.
-[Configure Windows Defender ATP endpoints (client onboarding)](configure-endpoints-windows-advanced-threat-protection.md) | You'll need to configure endpoints for it to report to the Windows Defender ATP service. Learn how you can use the configuration package to configure endpoints in your enterprise.
+[Configure Windows Defender ATP endpoints (endpoint onboarding)](configure-endpoints-windows-advanced-threat-protection.md) | You'll need to configure endpoints for it to report to the Windows Defender ATP service. Learn how you can use the configuration package to configure endpoints in your enterprise.
 [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-advanced-threat-protection.md) | Learn how you can monitor the onboarding to ensure your endpoints are correctly configured and are sending telemetry reports. 
 [Additional Windows Defender ATP configuration settings](additional-configuration-windows-advanced-threat-protection.md) | This topic describes the steps you need to take to configure settings for sample sharing used in the deep analysis feature.
 [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) | This topic contains information on how you can resolve issues that might arise during onboarding.
