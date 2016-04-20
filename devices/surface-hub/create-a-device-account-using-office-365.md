@@ -35,7 +35,7 @@ If you prefer to use a graphical user interface, you can create a device account
 
     ![screen to create a new user account. ](images/setupdeviceaccto365-04.png)
 
-    Click the **Create** button.
+    Click **Create**.
 
 5.  Once the account has been successfully created, click **Close** on the resulting dialog box, and you will see the admin center Active Users list again.
 
@@ -258,11 +258,9 @@ You can use the Exchange Admin Center to create a device account:
 
     ![image showing mailboxes in exchange admin center. ](images/setupdeviceacctexch-01.png)
 
-3.  On the controls above the list of mailboxess, choose **+** to create a new one, and provide a **Display name**, **Name**, and **User logon name**.
+3.  On the controls above the list of mailboxess, choose **+** to create a new one, and provide a **Display name**, **Name**, and **User logon name**, and then click **Save**.
 
     ![image showing creating a new mailbox. ](images/setupdeviceacctexch-02.png)
-
-4.  Click the **Save** button.
 
 ### <a href="" id="create-device-acct-exch-mbx-policy"></a>Create a mobile device mailbox policy from the Exchange Admin Center
 
@@ -400,10 +398,6 @@ In order to enable Skype for Business, your environment will need to meet the fo
     ```PowerShell
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
     ```
-
- 
-
- 
 
 
 
