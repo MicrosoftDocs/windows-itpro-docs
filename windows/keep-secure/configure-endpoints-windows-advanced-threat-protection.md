@@ -83,7 +83,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
 3.  Type the location of the script file. If you copied the file the
-    desktop, type:```*%userprofile%\Desktop\WindowsATPOnboardingScript.sc*```
+    desktop, type: *```%userprofile%\Desktop\WindowsATPOnboardingScript.cmd```*
 
 4.  Press the  **Enter** key or click  **OK**.
 
@@ -94,4 +94,3 @@ See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding iss
 - [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md)
-

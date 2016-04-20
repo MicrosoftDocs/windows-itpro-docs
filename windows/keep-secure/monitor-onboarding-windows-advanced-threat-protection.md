@@ -30,15 +30,15 @@ Monitoring can be done directly on the portal, or by using System Center Configu
 3.  Verify that endpoints are appearing.
 
 
-> **Note**&nbsp;&nbsp;It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the Group Policy (GP) update to be distributed to the endpoint, the time it takes before the user logs on or initiates a GP update, and the time it takes for the endpoint to start reporting to the portal.
+> **Note**&nbsp;&nbsp;It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
-## Monitoring with System Center Configuration Manager 
+## Monitor with System Center Configuration Manager 
 
 Monitoring with SCCM consists of two parts: 
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the endpoints in your network.
 
-2. Checking that the endpoints are compliant with the Windows Defender ATP service (this ensures the endpoint can complete the onboarding process and can continue to report data to the service).
+[[[2. Checking that the endpoints are compliant with the Windows Defender ATP service (this ensures the endpoint can complete the onboarding process and can continue to report data to the service).]]
 
 **To confirm the configuration package has been correctly deployed:**
 
@@ -46,17 +46,17 @@ Monitoring with SCCM consists of two parts:
 
 2. Click **Overview** and then **Deployments**.
 
-3. Click on the deployment with the package name. <span style="background-color: yellow;">What is the name of the deployment, will it always be the same for every user/installation?</span>
+3. Click on the deployment with the package name. <span style="background-color: yellow;">What is the name of the deployment, will it always be the same for every user/installation? - it's chosen by the user</span>
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
 If there are failed deployments (endpoints with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the endpoints. See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) topic for more information.
 
-<span style="background-color: yellow;">Naama: Is this a correct process for idendtifying/resolving issues?</span>
+<span style="background-color: yellow;">Naama: Is this a correct process for idendtifying/resolving issues? YES!</span>
 
 ![image](images/sccm-deployment.png)
 
-**To check that your endpoints are compliant:**
+[[**To check that your endpoints are compliant:**
 
 1. Get the *compliance.cab* file from the SCCM configuration package .zip file (*WindowsATPOnboardingPackage.zip*) that you downloaded during the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com):
 
@@ -86,7 +86,7 @@ If there are failed deployments (endpoints with **Error**, **Requirements Not Me
 
 If there are non-compliant endpoints (endpoints with ?????), you may need to troubleshoot the endpoints. See the [Troubleshoot Windows Defender ATP onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) topic for more information.
 
-<span style="background-color: yellow;">Naama: Is this a correct process for resolving issues?</span>
+<span style="background-color: yellow;">Naama: Is this a correct process for resolving issues?</span>]]]
 
 ## Related topics
 - [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md)
