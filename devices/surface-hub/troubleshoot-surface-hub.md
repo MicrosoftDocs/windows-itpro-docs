@@ -80,7 +80,7 @@ Possible fixes for issues on the Surface Hub after you've completed the first-ru
 <p>The device account's password has expired and is no longer valid.</p>
 </td>
 <td>
-<p>Update the account's password in Settings. Also see <a href="prepare_your_environment_for_surface_hub_how_do_i_password_management.htm">Password management</a>.</p>
+<p>Update the account's password in Settings. Also see <a href="password-management-for-surface-hub-device-accounts.md">Password management</a>.</p>
 </td>
 </tr>
 <tr>

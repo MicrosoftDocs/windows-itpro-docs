@@ -143,7 +143,6 @@ In some ways, adding your new Surface Hub is just like adding any other Microsof
 After you have your Surface Hub running in your organization, you’ll need info about:
 
 -   [Device maintenance and management](manage-surface-hub.md)
--   [Training your employees](../p_ent_surface_hub/train-your-employees-for-surface-hub.md)
 
 In the unlikely event that you run into problems, see [Troubleshoot Surface Hub](troubleshoot-surface-hub.md).
 

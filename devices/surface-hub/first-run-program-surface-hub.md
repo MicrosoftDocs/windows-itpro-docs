@@ -420,7 +420,7 @@ This page will attempt to create a new admin account using the credentials that 
 
 In order to get the latest features and fixes, you should update your Surface Hub as soon as you finish all of the preceding first-run steps.
 
-1.  Make sure the device has access to the Windows Update servers or to Windows Server Update Services (WSUS). To configure WSUS, see [Using WSUS](manage-surface-hub-windows-updates.md#using-wsus).
+1.  Make sure the device has access to the Windows Update servers or to Windows Server Update Services (WSUS). To configure WSUS, see [Using WSUS](manage-windows-updates-for-surface-hub.md#using-wsus).
 2.  Open Settings, click **Update & security**, then **Windows Update**, and then click **Check for updates**.
 3.  If updates are available, they will be downloaded. Once downloading is complete, click the **Update now** button to install the updates.
 4.  Follow the onscreen prompts after the updates are installed. You may need to restart the device.

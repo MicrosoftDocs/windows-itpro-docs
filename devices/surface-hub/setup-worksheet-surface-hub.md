@@ -225,7 +225,7 @@ You may need the fully qualified domain name (FQDN).</p>
 <p>USB drive</p>
 </td>
 <td>
-<p>If you know before first run that you want to install certificates or universal apps, follow the steps in <a href="prepare_your_environment_for_surface_hub_create_provisioning_packages_for_certificates.htm">Create provisioning packages</a>. Your provisioning packages will be created on a USB drive.</p>
+<p>If you know before first run that you want to install certificates or universal apps, follow the steps in <a href="provisioning-packages-for-certificates-surface-hub.md">Create provisioning packages</a>. Your provisioning packages will be created on a USB drive.</p>
 </td>
 <td>
 <p></p>

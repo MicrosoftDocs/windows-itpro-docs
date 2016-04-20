@@ -19,7 +19,7 @@ After initial setup of Microsoft Surface Hub, the device’s settings and config
 -   Local management: using the Settings app on the device
 -   Remote management: using a mobile device management (MDM) solution, like Microsoft Intune, AirWatch, or System Center 2012 R2 Configuration Manager.
 
-For locally-managed devices, administrator credentials are required to use the Settings app. These can be login credentials for Active Directory, Azure Active Directory (Azure AD), or a local admin account. One of these will have been selected during first run (see [Set up admins for this device](set-up-your-surface-hub--configure--first-run-program.md#setup-admins)).
+For locally-managed devices, administrator credentials are required to use the Settings app. These can be login credentials for Active Directory, Azure Active Directory (Azure AD), or a local admin account. One of these will have been selected during first run (see [Set up admins for this device](first-run-program-surface-hub.md#setup-admins)).
 
 For remotely-managed devices, the device must be enrolled into an MDM solution, either during first run or in the Settings app.
 
@@ -143,7 +143,7 @@ Surface Hubs have many settings that are common to other Windows devices, but al
 
 If you plan to deploy multiple Surface Hubs, we recommend that you manage your devices remotely. This requires that your organization use an MDM solution to deploy policies.
 
-Every Surface Hub can be managed locally by an admin who physically logs in to the device. Which method is used to log in is decided during first run (see [Set up admins for this device](set-up-your-surface-hub--configure--first-run-program.md#setup-admins)).
+Every Surface Hub can be managed locally by an admin who physically logs in to the device. Which method is used to log in is decided during first run (see [Set up admins for this device](first-run-program-surface-hub.md#setup-admins)).
 
 ## In this section
 

@@ -209,7 +209,7 @@ The following two methods for deploying provisioning packages apply to any kind 
 
 ### <a href="" id="deploy-via-oobe-prov-pkg"></a>Deploy a provisioning package using first run
 
-1.  When you turn on the Surface Hub for the first time, the first run process will display the page titled **Hi there**. Make sure the settings on this page are correct before you proceed. (See [Hi there page](set-up-your-surface-hub--configure--first-run-program.md#first-page) for details.) Once you've deployed your provisioning package, the first run process will not return here. It will continue to the next screen.
+1.  When you turn on the Surface Hub for the first time, the first run process will display the page titled **Hi there**. Make sure the settings on this page are correct before you proceed. (See [Hi there page](first-run-program-surface-hub.md#first-page) for details.) Once you've deployed your provisioning package, the first run process will not return here. It will continue to the next screen.
 2.  Insert the USB drive into the Surface Hub.
 3.  Press the Windows key on the separate keyboard five times. You’ll see a dialog box asking whether you want to set up your device. Click **Set Up**.
 

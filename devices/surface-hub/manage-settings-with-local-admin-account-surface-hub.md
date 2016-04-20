@@ -13,7 +13,7 @@ A local admin account will be set up on every Microsoft Surface Hub as part of t
 
 Every device can be configured individually by opening the Settings app on the device you want to configure. However, to prevent people who are not administrators from changing the devices’ settings, the Settings app requires local administrator credentials to open the app and change settings.
 
-You can set up a local administrator in one of three ways (see [Setting up admins for this device](set-up-your-surface-hub--configure--first-run-program.md#setup-admins)):
+You can set up a local administrator in one of three ways (see [Setting up admins for this device](first-run-program-surface-hub.md#setup-admins)):
 
 1.  Create a local admin
 2.  Domain join the device (AD)
@@ -56,7 +56,7 @@ Tenant or device admins, plus additional specified employees
 
 ### Create a local admin
 
-To create a local admin, choose to use a local admin during first run. This will create a single local admin account on the Surface Hub with the username and password of your choice. These same credentials will unlock the Settings app (see [Setting up admins for this device](set-up-your-surface-hub--configure--first-run-program.md#setup-admins)). Note that the local admin account information is not backed by any directory service. We recommend you only choose a local admin if the device does not have access to Active Directory or Azure Active Directory. If you decide to change the local admin’s password, you can do so in Settings. However, if you want to change from a local admin you created to a group from your domain or Azure AD organization, then you’ll need to reset the device and go through first-time setup again.
+To create a local admin, choose to use a local admin during first run. This will create a single local admin account on the Surface Hub with the username and password of your choice. These same credentials will unlock the Settings app (see [Setting up admins for this device](first-run-program-surface-hub.md#setup-admins)). Note that the local admin account information is not backed by any directory service. We recommend you only choose a local admin if the device does not have access to Active Directory or Azure Active Directory. If you decide to change the local admin’s password, you can do so in Settings. However, if you want to change from a local admin you created to a group from your domain or Azure AD organization, then you’ll need to reset the device and go through first-time setup again.
 
 ### Domain join the device
 
@@ -75,7 +75,7 @@ Otherwise, if you don’t want to use the device account to join Azure AD, you c
 -   The org account of an admin who will manage the device, or
 -   A separate account that is part of your organization and used only for joining Surface Hubs.
 
-**Note**  If your Azure AD organization is also configured with MDM enrollment, Surface Hubs will also be enrolled into MDM as a result of joining Azure AD. Surface Hubs that have joined Azure AD are subject to receiving MDM policies, and can be widely managed using an MDM solution, which opts these devices into remote management. You may want to choose an account to join Azure AD that benefits how you manage devices—you find more info about this in the [Enroll a Surface Hub into MDM](manage-surface-hub-remotely-managing-settings.md#enroll-into-mdm) section.
+**Note**  If your Azure AD organization is also configured with MDM enrollment, Surface Hubs will also be enrolled into MDM as a result of joining Azure AD. Surface Hubs that have joined Azure AD are subject to receiving MDM policies, and can be widely managed using an MDM solution, which opts these devices into remote management. You may want to choose an account to join Azure AD that benefits how you manage devices—you find more info about this in the [Enroll a Surface Hub into MDM](manage-settings-with-mdm-for-surface-hub.md#enroll-into-mdm) section.
 
  
 
