@@ -147,9 +147,7 @@ Use this procedure if you use Exchange on-prem.
 
     **Note**  You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
-     
-
-    For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
+For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
 
 ## <a href="" id="hybrid-exchange-online"></a>Exchange online
 
@@ -304,13 +302,7 @@ Use this procedure if you use Exchange online.
 
     **Note**  You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
-     
-
-    For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
-
- 
-
- 
+For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
 
 
 
