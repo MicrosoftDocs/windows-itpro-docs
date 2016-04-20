@@ -4,7 +4,7 @@ description: Use the investigation options to get details on which alerts are af
 keywords: investigate, investigation, machines, machine, endpoints, endpoint, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl:deploy
 ms.sitesec: library
 ---
 

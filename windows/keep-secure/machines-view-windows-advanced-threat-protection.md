@@ -4,7 +4,7 @@ description: Investigate affected machines in your network by reviewing alerts, 
 keywords: machines, endpoints, machine, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, active threats, threat category, filter, sort, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, low severity
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl:deploy
 ms.sitesec: library
 ---
 

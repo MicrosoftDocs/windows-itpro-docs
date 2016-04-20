@@ -4,7 +4,7 @@ description: Minimum network and data storage configuration, endpoint hardware a
 keywords: minimum requirements, Windows Defender Advanced Threat Protection minimum requirements, network and data storage, endpoint, endpoint configuration, deployment channel
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl: deploy
+ms.mktglfcycl:deploy
 ms.sitesec: library
 ---
 

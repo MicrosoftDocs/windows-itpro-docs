@@ -4,7 +4,7 @@ description: Use the Dashboard to identify machines at risk, keep track of the s
 keywords: dashboard, alerts, new, in progress, resolved, risk, machines at risk, infections, reporting, statistics, charts, graphs, health, active threats, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl:deploy
 ms.sitesec: library
 ---
 

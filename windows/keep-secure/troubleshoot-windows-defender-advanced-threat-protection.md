@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot Windows Defender Advanced Threat Protection
 description: Find solutions and work arounds to known issues such as server errors when trying to access the service.
-keywords: troubleshoot Windows Defender Adavanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials
+keywords: troubleshoot Windows Defender Advanced Threat Protection, troubleshoot Windows ATP, server error, access denied, invalid credentials
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl:deploy
 ms.sitesec: library
 author: mjcaparas
 ---

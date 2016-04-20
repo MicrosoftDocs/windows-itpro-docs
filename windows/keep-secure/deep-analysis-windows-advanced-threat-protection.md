@@ -4,7 +4,7 @@ description: Submit a file to the deep analysis feature to see a detailed report
 keywords: analysis, deep analysis, analyze, submit, submission, file, malware, threats, infection, executable, report, troubleshoot, sample, sample collection, behaviors, .exe, .dll, .scr
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl:deploy
 ms.sitesec: library
 ---
 
