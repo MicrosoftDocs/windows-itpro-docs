@@ -1,5 +1,5 @@
 ---
-Description: Administrative templates and Internet Explorer 11
+description: Administrative templates and Internet Explorer 11
 ms.assetid: 2b390786-f786-41cc-bddc-c55c8a4c5af3
 author: eross-msft
 ms.prod: IE11

@@ -1,5 +1,5 @@
 ---
-Description: Auto configuration and auto proxy problems with Internet Explorer 11
+description: Auto configuration and auto proxy problems with Internet Explorer 11
 ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
 author: eross-msft
 ms.prod: IE11
@@ -13,7 +13,7 @@ title: Auto configuration and auto proxy problems with Internet Explorer 11 (Int
 You might experience some problems using automatic configuration and auto-proxy with Internet Explorer 11.
 
 ## Branding changes aren't distributed using automatic configuration
-If you've turned on the **Disable external branding of Internet Explorer** Group Policy Object, you won't be able to use automatic configuration to distribute your branding changes to your users' computers. When this object is turned on, it prevents the branding of IE by a non-Microsoft company or entity, such as an Internet service provider or Internet content provider. For more information about automatic configuration, see [Auto configuration settings for Internet Explorer 11](auto-configuration-settings-for-ie11.md) and [Automatic Configuration: Internet Explorer Customization Wizard](http://go.microsoft.com/fwlink/p/?linkid=327743). For more information about Group Policy settings, see [Group policy objects and Internet Explorer 11 (IE11)](group-policy-objects-and-ie11.md).
+If you've turned on the **Disable external branding of Internet Explorer** Group Policy Object, you won't be able to use automatic configuration to distribute your branding changes to your users' computers. When this object is turned on, it prevents the branding of IE by a non-Microsoft company or entity, such as an Internet service provider or Internet content provider. For more information about automatic configuration, see [Auto configuration settings for Internet Explorer 11](auto-configuration-settings-for-ie11.md) and [Use the Automatic Configuration page in the IEAK 11 Wizard](../ie11-ieak/auto-config-ieak11-wizard.md). For more information about Group Policy settings, see [Group policy objects and Internet Explorer 11 (IE11)](group-policy-objects-and-ie11.md).
 
 ## Proxy server setup issues
 If you experience issues while setting up your proxy server, you can try these troubleshooting steps:

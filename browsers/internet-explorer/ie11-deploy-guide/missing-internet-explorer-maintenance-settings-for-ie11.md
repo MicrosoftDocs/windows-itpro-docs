@@ -1,5 +1,5 @@
 ---
-Description: IEM-configured settings have been deprecated for Internet Explorer 10 and newer. Use this topic to learn where to go to fix the affected settings through Group Policy Preferences, Administrative Templates (.admx), or the IEAK.
+description: IEM-configured settings have been deprecated for Internet Explorer 10 and newer. Use this topic to learn where to go to fix the affected settings through Group Policy Preferences, Administrative Templates (.admx), or the IEAK.
 ms.assetid: 89084e01-4e3f-46a6-b90e-48ee58d6821c
 author: eross-msft
 ms.prod: IE11
@@ -30,7 +30,7 @@ For more information about all of the new options and Group Policy, see:
 
 -   [Administrative templates and Internet Explorer 11](administrative-templates-and-ie11.md)
 
--   [IEAK 11 - Internet Explorer Administration Kit 11 Guide](http://go.microsoft.com/fwlink/p/?linkid=327741)
+-   [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md)
 
 -   [Group Policy Settings Reference for Windows and Windows Server](http://go.microsoft.com/fwlink/p/?LinkId=279876)
 

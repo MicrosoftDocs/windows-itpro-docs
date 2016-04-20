@@ -1,5 +1,5 @@
 ---
-Description: High-level info about some of the new and updated features for Internet Explorer 11.
+description: High-level info about some of the new and updated features for Internet Explorer 11.
 ms.assetid: f53c6f04-7c60-40e7-9fc5-312220f08156
 author: eross-msft
 ms.prod: IE11
@@ -32,7 +32,7 @@ Internet Explorer 11 includes several new features and tools. This topic includ
 
 -   **Do Not Track (DNT) exceptions.** IE11 lets websites ask whether to track users as they browse a website. If the user approves the request, IE records an exception to the "Do Not Track" rule and sends headers to the website that allow tracking. By respecting these headers and requesting exceptions to the default privacy settings, website owners can develop a trusted relationship with their users about privacy. For more info, see [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md).
 
--   **IE Administration Kit (IEAK).** Lets you create custom, branded versions of IE11. For more info and to download the tool, see [Internet Explorer Administration Kit (IEAK) Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=392490).
+-   **IE Administration Kit (IEAK).** Lets you create custom, branded versions of IE11. For more info and to download the tool, see [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md).
 
 -   **Unattend Settings.** Lets you update the Unattend.xml file, to customize the home page, favorites, search providers, feeds, Accelerators, Web Slices, and settings for top result searches. For more info, see the [Unattend Settings: Microsoft-Windows-IE-InternetExplorer](http://go.microsoft.com/fwlink/p/?LinkId=263709).
 

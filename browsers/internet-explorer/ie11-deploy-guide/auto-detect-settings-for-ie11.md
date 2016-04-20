@@ -1,5 +1,5 @@
 ---
-Description: Auto detect settings Internet Explorer 11
+description: Auto detect settings Internet Explorer 11
 ms.assetid: c6753cf4-3276-43c5-aae9-200e9e82753f
 author: eross-msft
 ms.prod: IE11
@@ -25,7 +25,7 @@ To use automatic detection, you have to set up your DHCP and DNS servers.<p>**No
 
 1.  Open the Internet Explorer Customization Wizard 11, and go to the **Automatic Configuration** page.
 
-2.  Choose the **Automatically detect configuration settings** box to automatically detect your browser settings. For more information about the **Automatic Configuration** page, see [Automatic Configuration: Internet Explorer Customization Wizard](http://go.microsoft.com/fwlink/p/?linkid=327743).
+2.  Choose the **Automatically detect configuration settings** box to automatically detect your browser settings. For more information about the **Automatic Configuration** page, see [Use the Automatic Configuration page in the IEAK 11 Wizard](../ie11-ieak/auto-config-ieak11-wizard.md).
 
 3.  Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).
 

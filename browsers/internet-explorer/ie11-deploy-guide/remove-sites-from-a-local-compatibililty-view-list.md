@@ -1,6 +1,6 @@
 ---
-Description: Instructions about how to remove sites from a local compatibility view list.
-ms.assetid: F6ECAA75-EBCB-4F8D-8721-4CD6E73C0AC9
+description: Instructions about how to remove sites from a local compatibility view list.
+ms.assetid: f6ecaa75-ebcb-4f8d-8721-4cd6e73c0ac9
 author: eross-msft
 ms.prod: IE11
 ms.mktglfcycl: deploy

@@ -1,5 +1,5 @@
 ---
-Description: Windows Internet Explorer 8 introduced document modes as a way to move from the proprietary coding of web features to a more standardized type of coding that could run on multiple browsers and devices.
+description: Windows Internet Explorer 8 introduced document modes as a way to move from the proprietary coding of web features to a more standardized type of coding that could run on multiple browsers and devices.
 ms.assetid: 00cb1f39-2b20-4d37-9436-62dc03a6320b
 author: eross-msft
 ms.prod: IE11

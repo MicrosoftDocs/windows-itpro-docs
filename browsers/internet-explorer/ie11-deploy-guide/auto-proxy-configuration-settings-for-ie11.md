@@ -1,5 +1,5 @@
 ---
-Description: Auto proxy configuration settings for Internet Explorer 11
+description: Auto proxy configuration settings for Internet Explorer 11
 ms.assetid: 5120aaf9-8ead-438a-8472-3cdd924b7d9e
 author: eross-msft
 ms.prod: IE11

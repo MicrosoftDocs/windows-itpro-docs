@@ -1,5 +1,5 @@
 ---
-Description: Choose how to deploy Internet Explorer 11 (IE11)
+description: Choose how to deploy Internet Explorer 11 (IE11)
 ms.assetid: 21b6a301-c222-40bc-ad0b-27f66fc54d9d
 author: eross-msft
 ms.prod: IE11

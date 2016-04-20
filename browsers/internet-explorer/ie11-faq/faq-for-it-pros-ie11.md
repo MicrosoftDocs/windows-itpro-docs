@@ -1,5 +1,5 @@
 ---
-Description: Frequently asked questions about Internet Explorer 11 for IT Pros
+description: Frequently asked questions about Internet Explorer 11 for IT Pros
 ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
 author: eross-msft
 ms.prod: IE11
@@ -114,9 +114,9 @@ For more information, see [New group policy settings for IE11](../ie11-deploy-gu
 **Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
 Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
 
--   [Internet Explorer Administration Kit Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
+- [Internet Explorer Administration Kit Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
 
--   [Internet Explorer Administration Kit 11 product documentation](http://go.microsoft.com/fwlink/p/?LinkId=327739) on TechNet.
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
 
 **Q: Where can I get more information about IE11 for IT pros?**<br>
 Visit the [Springboard Series for Microsoft Browsers](http://go.microsoft.com/fwlink/p/?LinkId=313191) webpage on TechNet.
@@ -141,6 +141,11 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 |Let IE decide |Links open in the same type of experience from where they're launched. For example, clicking a link from a Windows Store app, opens IE. However, clicking a link from a desktop app, opens Internet Explorer for the desktop. |
 |Always in IE11 |Links always open in IE. |
 |Always in Internet Explorer for the desktop |Links always open in Internet Explorer for the desktop. |
+
+## Related topics
+- [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
+- [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
  
 
  

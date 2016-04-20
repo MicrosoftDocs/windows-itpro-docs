@@ -2,6 +2,8 @@
 description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
 ms.prod: IE11
+ms.mktglfcycl: deploy
+ms.sitesec: library
 author: eross-msft
 title: Collect data using Enterprise Site Discovery
 ---
@@ -366,7 +368,7 @@ You can completely remove the data stored on your employee’s computers.
 
  ## Related topics
 * [Enterprise Mode Site List Manager for Windows 10 download](http://go.microsoft.com/fwlink/?LinkId=746562)
-* [Enterprise Mode for Internet Explorer 11 (IE11)](http://go.microsoft.com/fwlink/p/?linkid=618377)
+* [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
  
 
 
