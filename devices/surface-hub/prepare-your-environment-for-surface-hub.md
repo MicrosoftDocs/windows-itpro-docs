@@ -83,7 +83,7 @@ In order to ensure that your environment is ready for the Surface Hub, verify th
     -   Telemetry client endpoint: https://vortex.data.microsoft.com/
     -   Telemetry settings endpoint: https://settings.data.microsoft.com/
 
-4.  Choose the local admin method you want to set up during first run (see [Set up admins for this device](set-up-your-surface-hub--configure--first-run-program.md#setup-admins)). Also, decide whether you'll be using MDM (see [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md)).
+4.  Choose the local admin method you want to set up during first run (see [Set up admins for this device](first-run-program-surface-hub.md#setup-admins)). Also, decide whether you'll be using MDM (see [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md)).
 5.  You've created provisioning packages, as needed. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
 6.  Have all necessary information available from the [Setup worksheet](setup-worksheet-surface-hub.md).
 
