@@ -27,32 +27,53 @@ Preferably, a local admin is set up only if you do not have Active Directory or 
 
 ### Summary table
 
-How is the local admin set up?
-Requirements
-Which credentials will open Settings?
-A local admin was created
-
-None
-
-The credentials of the local admin account.
-
-The device is joined to a domain (AD)
-
-Your organization is using Active Directory
-
-Credentials of any Active Directory account from the security group that was specified furing first run.
-
-The device is joined to Azure AD
-
-Your organization is using Azure AD Basic
-
-Tenant or device admins
-
-Your organization is using Azure AD Premium
-
-Tenant or device admins, plus additional specified employees
-
- 
+<table>
+<tr>
+<th>How is the local admin set up?</th>
+<th>Requirements</th>
+<th>Which credentials will open Settings?</th>
+</tr>
+<tr>
+<td>A local admin was created<p></p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>The credentials of the local admin account.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The device is joined to a domain (AD)</p>
+</td>
+<td>
+<p>Your organization is using Active Directory</p>
+</td>
+<td>
+<p>Credentials of any Active Directory account from the security group that was specified furing first run.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>The device is joined to Azure AD</p>
+</td>
+<td>
+<p>Your organization is using Azure AD Basic</p>
+</td>
+<td>
+<p>Tenant or device admins</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Your organization is using Azure AD Premium</p>
+</td>
+<td>
+<p>Tenant or device admins, plus additional specified employees</p>
+</td>
+</tr>
+</table>
 
 ### Create a local admin
 
