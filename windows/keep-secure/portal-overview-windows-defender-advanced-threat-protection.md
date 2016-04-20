@@ -4,7 +4,7 @@ description: Use the Windows Defender ATP portal to monitor your enterprise netw
 keywords: Windows Defender ATP portal, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines view, preferences setup, client onboarding, advanced attacks
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl:deploy
 ms.sitesec: library
 author: DulceMV
 ---
