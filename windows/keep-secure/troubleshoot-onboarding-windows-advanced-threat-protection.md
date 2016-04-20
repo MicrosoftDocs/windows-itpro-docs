@@ -4,7 +4,7 @@ description: Troubleshoot issues that might arise during the onboarding of endpo
 keywords: troubleshoot onboarding, onboarding issues, event viewer, azure management portal, data collection and preview builds
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
