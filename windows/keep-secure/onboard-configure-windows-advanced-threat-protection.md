@@ -4,7 +4,7 @@ description: Set up user access in Azure Active Directory and use Group Policy o
 keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
-ms.mktglfcycl:
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: iaanw
 ---
