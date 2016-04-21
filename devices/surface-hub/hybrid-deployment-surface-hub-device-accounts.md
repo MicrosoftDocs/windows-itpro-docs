@@ -35,9 +35,9 @@ Use this procedure if you use Exchange on-prem.
 
     Open your on-prem Exchange Management Shell with administrator permissions, and run this cmdlet.
 
-        ```ps1
-        Enable-Mailbox &#39;HUB01@contoso.com&#39; -RemoteRoutingAddress &#39;HUB01@contoso.com&#39; -Room
-        ```
+    ```ps1
+    Enable-Mailbox &#39;HUB01@contoso.com&#39; -RemoteRoutingAddress &#39;HUB01@contoso.com&#39; -Room
+    ```
     
 5.  Connect to Microsoft Exchange Online and set some properties for the account in Office 365.
 
@@ -45,13 +45,13 @@ Use this procedure if you use Exchange on-prem.
 
     The next steps will be run on your Office 365 tenant.
 
-        ```ps1
-        Set-ExecutionPolicy Unrestricted
-        $org=&#39;contoso.com&#39;
-        $cred=Get-Credential $admin@$org
-        $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri &#39;https://outlook.office365.com/ps1-liveid/&#39; -Credential $cred -Authentication Basic -AllowRedirection
-        Import-PSSession $sess
-        ```
+    ```ps1
+    Set-ExecutionPolicy Unrestricted
+    $org=&#39;contoso.com&#39;
+    $cred=Get-Credential $admin@$org
+    $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri &#39;https://outlook.office365.com/ps1-liveid/&#39; -Credential $cred -Authentication Basic -AllowRedirection
+    Import-PSSession $sess
+    ```
 
 5.  Create a new Exchange ActiveSync policy, or use a compatible existing policy.
 
