@@ -1,5 +1,5 @@
 ---
-title: Windows spotlight on the lock screen (Windows 10)
+title: Windows Spotlight on the lock screen (Windows 10)
 description: Windows Spotlight is an option for the lock screen background that displays different background images on the lock screen.
 ms.assetid: 1AEA51FA-A647-4665-AD78-2F3FB27AD46A
 keywords: ["lockscreen"]
@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Windows spotlight on the lock screen
+# Windows Spotlight on the lock screen
 
 
 **Applies to**
