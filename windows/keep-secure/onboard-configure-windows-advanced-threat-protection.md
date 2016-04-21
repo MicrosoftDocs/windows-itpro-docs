@@ -34,4 +34,4 @@ Topic | Description
 [Configure endpoints](configure-endpoints-windows-advanced-threat-protection.md) | You'll need to configure endpoints for it to report to the Windows Defender ATP service. Learn how you can use the configuration package to configure endpoints in your enterprise.
 [Additional configuration settings](additional-configuration-windows-advanced-threat-protection.md) | Learn how to configure settings for sample sharing used in the deep analysis feature.
 [Monitor onboarding](monitor-onboarding-windows-advanced-threat-protection.md) | Learn how you can monitor the onboarding to ensure your endpoints are correctly configured and are sending telemetry reports. 
-[Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) | Learn about resolving issues that might arise during onboarding.
+[Troubleshoot onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) | Learn about resolving issues that might arise during onboarding.
