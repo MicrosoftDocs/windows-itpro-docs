@@ -7,7 +7,7 @@ author: TrudyHa
 ---
 
 # Hybrid deployment (Surface Hub)
-A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#hybrid-exchange-on-prem), and [Exchange hosted online](#hybrid-exchange-online). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use ps1 (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided ps1 script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts).)
+A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#hybrid-exchange-on-prem), and [Exchange hosted online](#hybrid-exchange-online). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided Powershell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts).)
 
 ## Exchange on-prem
 Use this procedure if you use Exchange on-prem.
@@ -41,7 +41,7 @@ Use this procedure if you use Exchange on-prem.
     
 5.  Connect to Microsoft Exchange Online and set some properties for the account in Office 365.
 
-    Start a remote ps1 session on a PC and connect to Microsoft Exchange. Be sure you have the right permissions set to run the associated cmdlets.
+    Start a remote PowerShell session on a PC and connect to Microsoft Exchange. Be sure you have the right permissions set to run the associated cmdlets.
 
     The next steps will be run on your Office 365 tenant.
 
@@ -111,7 +111,7 @@ Use this procedure if you use Exchange on-prem.
     
     -   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
 
-    -   Start by creating a remote ps1 session from a PC.
+    -   Start by creating a remote PowerShell session from a PC.
 
         ```ps1
         Import-Module LyncOnlineConnector  
@@ -156,7 +156,7 @@ Use this procedure if you use Exchange online.
 
 1.  Create an email account in Office 365.
 
-    Start a remote ps1 session on a PC and connect to Exchange. Be sure you have the right permissions set to run the associated cmdlets.
+    Start a remote PowerShell session on a PC and connect to Exchange. Be sure you have the right permissions set to run the associated cmdlets.
 
     ```ps1
     Set-ExecutionPolicy Unrestricted
@@ -269,7 +269,7 @@ Use this procedure if you use Exchange online.
     
     - Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
 
-     Start by creating a remote ps1 session from a PC.
+     Start by creating a remote PowerShell session from a PC.
 
         ```ps1
         Import-Module LyncOnlineConnector  
