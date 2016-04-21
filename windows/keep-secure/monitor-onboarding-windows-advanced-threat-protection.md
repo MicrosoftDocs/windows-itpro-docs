@@ -90,6 +90,6 @@ If there are non-compliant endpoints (endpoints with ?????), you may need to tro
 
 ## Related topics
 - [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md)
-- [Configure Windows Defender ATP endpoints (client onboarding)](configure-endpoints-windows-advanced-threat-protection.md)
+- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md)

@@ -39,6 +39,6 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 ## Related topics
 - [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md)
-- [Configure Windows Defender ATP endpoints (client onboarding)](configure-endpoints-windows-advanced-threat-protection.md)
+- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-advanced-threat-protection.md)
 - [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md)
