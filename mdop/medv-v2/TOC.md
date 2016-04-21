@@ -76,8 +76,6 @@
 ### [MED-V Event Log Messages](med-v-event-log-messages.md)
 ### [Updating MED-V 2.0](updating-med-v-20.md)
 ### [Windows Virtual PC Application Exclude List](windows-virtual-pc-application-exclude-list.md)
-### [MED-V 2 Configuration Cmdlets](med-v-2-configuration-cmdlets-stub.md)
-### [MED-V 2 Workspace Cmdlets](med-v-2-workspace-cmdlets-stub.md)
 ### [Example MED-V Checklists](example-med-v-checklists.md)
 #### [Example MED-V Environment Planning Checklist](example-med-v-environment-planning-checklist.md)
 #### [Example MED-V Project Planning Checklist](example-med-v-project-planning-checklist.md)
