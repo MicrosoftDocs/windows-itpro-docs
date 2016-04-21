@@ -6,7 +6,7 @@ keywords: ["security", "credential", "password", "authentication"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: brianlic-msft
+author: challum
 ---
 
 # Microsoft Passport guide
