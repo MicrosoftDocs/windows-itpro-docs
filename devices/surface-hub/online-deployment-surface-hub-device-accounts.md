@@ -134,8 +134,8 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     -   In the **Assign licenses** section, you need to select Skype for Business (Plan 2) or Skype for Business (Plan 3), depending on your licensing and what you've decided in terms of needing Enterprise Voice. You'll have to use a Plan 3 license if you want to use Enterprise Voice on your Surface Hub.
     -   Click **Save** and you're done.
 
-    **Note**
-    It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+**Note**
+It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
 
