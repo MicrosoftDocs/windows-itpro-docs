@@ -288,7 +288,7 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 **To set your custom shell**
 
-Modify the following PowerShell script as appropriate and run the script on the kiosk device.
+Modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
 
 ```
     $COMPUTER = “localhost”
@@ -323,9 +323,9 @@ Modify the following PowerShell script as appropriate and run the script on the 
     $restart_device = 1
     $shutdown_device = 2
 
-    # Examples
+    # Examples. You can change these examples to use the program that you want to use as the shell.
 
-    # Set the command prompt as the default shell, and restart the device if it&#39;s closed.
+    # This example sets the command prompt as the default shell, and restarts the device if the command prompt is closed. 
 
     $ShellLauncherClass.SetDefaultShell(“cmd.exe”, $restart_device)
 
@@ -335,7 +335,7 @@ Modify the following PowerShell script as appropriate and run the script on the 
 
     “`nDefault Shell is set to “ + $DefaultShellObject.Shell + “ and the default action is set to “ + $DefaultShellObject.defaultaction
 
-    # Set Internet Explorer as the shell for “Cashier”, and restart the machine if it&#39;s closed.
+    # Set Internet Explorer as the shell for “Cashier”, and restart the machine if Internet Explorer is closed.
 
     $ShellLauncherClass.SetCustomShell($Cashier_SID, “c:\program files\internet explorer\iexplore.exe www.microsoft.com”, ($null), ($null), $restart_shell)
 
