@@ -1,7 +1,7 @@
 ---
 title: View the Windows Defender Advanced Threat Protection Dashboard 
 description: Use the Dashboard to identify machines at risk, keep track of the status of the service, and see statistics and information about machines and alerts.
-keywords: dashboard, alerts, new, in progress, resolved, risk, machines at risk, infections, reporting, statistics, charts, graphs, health, active threats, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
+keywords: dashboard, alerts, new, in progress, resolved, risk, machines at risk, infections, reporting, statistics, charts, graphs, health, active malware detections, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -57,14 +57,14 @@ The **Machines reporting** tile shows a bar graph that represents the number of 
 
 ![The Machines reporting tile shows the number of machines reporting each day for the past 30 days](images/machines-reporting-tile.png)
 
-## Investigate machines with active threats
-The **Active malware** tile will only appear if your endpoints are using Windows Defender.
+## Investigate machines with active malware detections 
+The **Machines with active malware detections** tile will only appear if your endpoints are using Windows Defender.
 
-Active malware is defined as threats that are actively executing at the time of detection.
+Active malware detection is defined as threats that are actively executing at the time of detection.
 
-Hover over each bar to see the number of active detections (as **Threats**) and the number of endpoints with at least one active detection (as **Machines**) over the past 30 days.
+Hover over each bar to see the number of active malware detections (as **Malware detections**) and the number of endpoints with at least one active detection (as **Machines**) over the past 30 days.
 
-![The Machines with active threats tile shows the number of threats and machines for each threat category](images/machines-active-threats-tile.png)
+![The Machines with active malware detections tile shows the number of threats and machines for each threat category](images/machines-active-threats-tile.png)
 
 The chart is sorted into five categories:
 
@@ -76,9 +76,9 @@ The chart is sorted into five categories:
 
 Threats are considered "Active" if there is a very high probability that the malware was executing on your network, as opposed to statically located on-disk.
 
-Clicking on any one of these categories will navigate to the [Machines view](machines-view-windows-advanced-threat-protection.md), filtered by the appropriate category. This lets you see a detailed breakdown of which machines have active threats, and how many threats were detected per machine. 
+Clicking on any of these categories will navigate to the [Machines view](machines-view-windows-advanced-threat-protection.md), filtered by the appropriate category. This lets you see a detailed breakdown of which machines have active malware detections, and how many threats were detected per machine. 
 
-> **Note**&nbsp;&nbsp;The **Active malware** tile will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> **Note**&nbsp;&nbsp;The **Active malware detections** tile will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 ### Related topics
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-advanced-threat-protection.md)
