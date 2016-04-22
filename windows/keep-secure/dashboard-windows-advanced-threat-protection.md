@@ -17,17 +17,18 @@ ms.sitesec: library
 The **Dashboard** displays a snapshot of:
 
 - The latest active alerts on your network
+- Machines reporting 
 - Top machines with active alerts
-- Alert trends
-- Alert mapping
-- Machines reporting
 - The overall status of Windows Defender ATP for the past 30 days
+- Machines with active malware detections
 
 You can explore and investigate alerts and machines to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.
 
 From the **Dashboard** you will see aggregated events to facilitate the identification of significant events or behaviors on a machine. You can also drill down into granular events and low-level indicators.
 
-## View ATP alerts
+It also has clickable tiles that give visual cues on the overall health status of your organization. Each tile opens a detailed view of the corresponding overview.
+
+## ATP alerts
 You can view the overall number of active ATP alerts from the last 30 days in your network from the **ATP alerts** tile. Alerts are grouped into **New** and **In progress**. 
 
 ![Click on each slice or severity to see a list of alerts from the past 30 days](images/atp.png)
@@ -38,7 +39,7 @@ See the [View and organize the Windows Defender Advanced Threat Protection Alert
 
 The **Latest ATP alerts** section includes the latest active alerts in your network. Each row includes an alert severity category and a short description of the alert. Click an alert to see its detailed view, or **Alerts queue** at the top of the list to go directly to the Alerts queue. See the [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-advanced-threat-protection.md) and [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-advanced-threat-protection.md) topics for more information.
 
-## View machines at risk
+## Machines at risk
 This tile shows you a list of machines with the highest number of active alerts. The total number of alerts for each machine is shown in a circle next to the machine name, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to its label).
 
 ![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk.png)
@@ -47,17 +48,17 @@ Click the name of the machine to see details about that machine. See the [Invest
 
 You can also click **Machines view** at the top of the tile to go directly to the **Machines view**, sorted by the number of active alerts. See the [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](machines-view-windows-advanced-threat-protection.md) topic for more information.
 
-## Keep track of the overall status of your network
+## Status
 The **Status** tile informs you if the service is active and running and the specific number of machines (endpoints) reporting to Windows Defender ATP.
 
 ![The Status tile shows an overall indicator of the service and the total number of machines reporting to the service](images/status-tile.png)
 
-## See total number of reporting machines
+## Machines reporting
 The **Machines reporting** tile shows a bar graph that represents the number of machines reporting alerts daily. Hover over individual bars on the graph to see the exact number of machines reporting in each day. 
 
 ![The Machines reporting tile shows the number of machines reporting each day for the past 30 days](images/machines-reporting-tile.png)
 
-## Investigate machines with active malware detections 
+## Machines with active malware detections 
 The **Active malware** tile will only appear if your endpoints are using Windows Defender.
 
 Active malware is defined as threats that are actively executing at the time of detection.

@@ -26,34 +26,13 @@ A typical security breach investigation requires a member of a security operatio
 Security operation teams can use Windows Defender ATP Portal to carry out this end-to-end process without having to leave the portal.
 Teams can monitor the overall status of enterprise endpoints from the **Dashboard**, gain insight on the various alerts, their category, when they were observed, and how long they’ve been in the network at a glance.
 
-## Windows Defender ATP alerts
-Alerts in the portal help to notify you of detected threat behaviors or activities on your endpoints.
-The **Dashboard** and **Alerts queue** provide important information about your endpoints that can help you address alerts.
-
-The **Dashboard** groups or categorizes active alerts into **New** or **In progress** queues, and supports filtering by severity levels. It also has clickable tiles that give visual cues on the overall health status of your organization. Each tile opens a detailed view of the corresponding overview.
-
-Alerts are organized in three queues, by their workflow status: 
-
-- **New**
-- **In progress**
-- **Resolved**
-
-There are three alert severity levels, described in the following table.
-
-Alert severity | Description
-:---|:---
-High (Red) | Threats often associated with APT. These alerts pose a high risk due to the severity of the damage they might inflict on endpoints.
-Medium (Orange) | Threats considered to be abnormal or suspicious in nature such as anomalous registry modifications and loading of executable files.
-Low (Yellow) | Threats associated with prevalent malware and hack-tools that pose a lower risk to endpoints.
-
-
 ### In this section
 
 Topic | Description 
 :---|:---
 [View the Dashboard](dashboard-windows-advanced-threat-protection.md) | The Windows Defender ATP  **Dashboard** provides a snapshot of your network. You can view aggregates of alerts, the overall status of the service of the endpoints on your network, investigate machines, files, and URLs, and see snapshots of threats seen on machines.
 [View and organize the Alerts queue](alerts-queue-windows-advanced-threat-protection.md) | You can sort and filter alerts across your network, and drill down on individual alert queues such as new, in progress, or resolved queues.
-[Investigate alerts](investigate-alerts-windows-advanced-threat-protection.md)| Investigate alerts in Windows Defender ATP which might indicate possible security breaches on endpoints in your organization. 
+[Investigate alerts](investigate-alerts-windows-advanced-threat-protection.md) Investigate alerts in Windows Defender ATP which might indicate possible security breaches on endpoints in your organization. 
 [Investigate machines](machines-view-windows-advanced-threat-protection.md) | The **Machines view** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, as well as the number of threats.
 [Submit files to the Deep analysis feature](deep-analysis-windows-advanced-threat-protection.md) | You can submit files for deep analysis to see detailed information about the file’s activities, observed behaviors, and associated artifacts (such as dropped files, registry modifications, and communications with IPs). 
 [Manage alerts](manage-alerts-windows-advanced-threat-protection.md) | The **Manage Alert** menu on every alert lets you change an alert's status, resolve it, suppress it, or contribute comments about the alert.
