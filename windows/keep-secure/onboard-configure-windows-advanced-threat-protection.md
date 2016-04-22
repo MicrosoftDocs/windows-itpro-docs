@@ -25,7 +25,7 @@ There are two stages to onboarding:
     cloud instance for your network (known as “service onboarding”).
 
 2.  Add endpoints to the service with System Center Configuration Manager, scheduled GP updates, or manual
-    registry changes (known as “endpoint onboarding”).
+    registry changes.
 
 ## In this section
 Topic | Description 
