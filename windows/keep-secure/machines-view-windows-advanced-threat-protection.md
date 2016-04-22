@@ -30,9 +30,9 @@ The Machines view contains the following columns:
 - **Last seen** - when the machine last reported telemetry 
 - **Internal IP** - the local internal Internet Protocol (IP) address of the machine 
 - **Active Alerts** - the number of alerts reported by the machine by severity
-- **Active threats** - the number of active threats reported by the machine
+- **Active malware detections** - the number of active threats reported by the machine
 
-> **Note**&nbsp;&nbsp;The **Active threats** and **Threat category** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product. 
+> **Note**&nbsp;&nbsp;The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product. 
 
 Click any column header to sort the view in ascending or descending order. 
 
