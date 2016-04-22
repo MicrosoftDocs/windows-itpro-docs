@@ -22,7 +22,7 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 
 The following table and screenshot demonstrate the main areas of the **Alerts queue**.
 
-![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/alertsq.png)
+![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/alertsq2.png)
 
 Highlighted area|Area name|Description
 :---|:---|:---
