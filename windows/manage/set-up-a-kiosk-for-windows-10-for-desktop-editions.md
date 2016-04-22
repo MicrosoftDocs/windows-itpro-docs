@@ -359,7 +359,7 @@ Modify the following PowerShell script as appropriate. The comments in the sampl
     $ShellLauncherClass.RemoveCustomShell($Admins_SID)
 
     $ShellLauncherClass.RemoveCustomShell($Cashier_SID)
-    ```
+```
 
 ## Related topics
 
