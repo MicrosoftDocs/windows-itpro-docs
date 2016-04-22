@@ -1,11 +1,11 @@
 ---
 title: Enterprise management for Windows 10 devices (Windows 10)
-description: Windows 10 provides mobile device management (MDM) capabilities for PCs, laptops, tablets, and phones that enable enterprise-level management of corporate-owned and personal devices.
+description: Windows 10 provides mobile device management (MDM) capabilities that enable enterprise-level management of devices.
 ms.assetid: 36DA67A1-25F1-45AD-A36B-AEEAC30C9BC4
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: jdeckerMS
 ---
 
 # Enterprise management for Windows 10 devices
@@ -39,8 +39,8 @@ When a personal device is unenrolled, the user's data and apps are untouched, wh
 
 Enterprises have the following identity and management choices.
 
-|                   |                                                                                                                                                                             |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Area | Choices |
+|---|---|                                                                                                                                                                            
 | Identity          | Active Directory; Azure AD                                                                                                                                                  |
 | Grouping          | Domain join; Workgroup; Azure AD join                                                                                                                                       |
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
@@ -111,7 +111,7 @@ Active Directory blog posts on Azure AD and Windows 10:
 
 [Microsoft Passport](microsoft-passport.md)
 
-[Enterprise Data Protection Overview](edp-whats-new-overview.md))
+[Enterprise Data Protection Overview](edp-whats-new-overview.md)
 
  
 

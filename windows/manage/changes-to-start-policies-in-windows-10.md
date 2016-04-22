@@ -24,10 +24,7 @@ Windows 10 has a brand new Start experience. As a result, there are changes to 
 These policy settings are available in **Administrative Templates\\Start Menu and Taskbar** under **User Configuration**.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">Policy</th>
@@ -160,7 +157,7 @@ The Start policy settings listed below do not work on Windows 10. Most of them 
 
 [Customize Windows 10 Start screens with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 
-[Customize Windows 10 Start screens with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md)
+[Customize Windows 10 Start screens with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
 [Customize Windows 10 Start screens with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 

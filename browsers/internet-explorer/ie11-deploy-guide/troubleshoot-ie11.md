@@ -1,5 +1,5 @@
 ---
-Description: Use the topics in this section to learn how to troubleshoot several of the more common problems experienced with Internet Explorer.
+description: Use the topics in this section to learn how to troubleshoot several of the more common problems experienced with Internet Explorer.
 ms.assetid: 0361c1a6-3faa-42b2-a588-92439eebeeab
 author: eross-msft
 ms.prod: IE11

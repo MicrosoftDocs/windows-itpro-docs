@@ -79,7 +79,7 @@ Here are some things you can do with Windows ICD:
 There are also a few tools included in the Windows ADK that are specific to IT Pros and this documentation is available on TechNet:
 
 -   [Volume Activation Management Tool (VAMT) Technical Reference](volume-activation-management-tool.md)
--   [User State Migration Tool (USMT) Technical Reference](user-state-migration-tool--usmt--technical-reference.md)
+-   [User State Migration Tool (USMT) Technical Reference](usmt-technical-reference.md)
 
  
 

@@ -109,7 +109,7 @@ We recommend that you migrate the settings after you install the application, bu
 ## <a href="" id="bkmk-step4"></a>Step 4: Create the migration XML component for the application
 
 
-After you have completed steps 1 through 3, you will need to create a custom migration .xml file that migrates the application based on the information that you now have. You can use the MigApp.xml file as a model because it contains examples of many of the concepts discussed in this topic. You can also see [Custom XML Examples](custom-xml-examples-usmt-win7-usmt-win8.md) for another sample .xml file.
+After you have completed steps 1 through 3, you will need to create a custom migration .xml file that migrates the application based on the information that you now have. You can use the MigApp.xml file as a model because it contains examples of many of the concepts discussed in this topic. You can also see [Custom XML Examples](usmt-custom-xml-examples.md) for another sample .xml file.
 
 **Note**  
 We recommend that you create a separate .xml file instead of adding your script to the **MigApp.xml** file. This is because the **MigApp.xml** file is a very large file and it will be difficult to read and edit. In addition, if you reinstall USMT for some reason, the **MigApp.xml** file will be overwritten by the default version of the file and you will lose your customized version.
@@ -137,25 +137,25 @@ Your script should do the following:
 
     -   If you must install the application before migrating the settings, delete any settings that are already on the destination computer using the &lt;`destinationCleanup`&gt; element.
 
-For information about the .xml elements and helper functions, see [XML Elements Library](xml-elements-library-usmt-win7-usmt-win8.md).
+For information about the .xml elements and helper functions, see [XML Elements Library](usmt-xml-elements-library.md).
 
 ## <a href="" id="bkmk-step5"></a>Step 5: Test the application settings migration
 
 
 On a test computer, install the operating system that will be installed on the destination computers. For example, if you are planning on migrating from Windows 7 to Windows 10, install Windows 10 and the application. Next, run LoadState on the test computer and verify that all settings migrate. Make corrections if necessary and repeat the process until all the necessary settings are migrated correctly.
 
-To speed up the time it takes to collect and migrate the data, you can migrate only one user at a time, and you can exclude all other components from the migration except the application that you are testing. To specify only User1 in the migration, type: **/ue:\*\\\* /ui:user1**. For more information, see [Exclude Files and Settings](exclude-files-and-settings-usmt.md) and User options in the [ScanState Syntax](scanstate-syntax-usmt-win7-usmt-win8.md) topic. To troubleshoot a problem, check the progress log, and the ScanState and LoadState logs, which contain warnings and errors that may point to problems with the migration.
+To speed up the time it takes to collect and migrate the data, you can migrate only one user at a time, and you can exclude all other components from the migration except the application that you are testing. To specify only User1 in the migration, type: **/ue:\*\\\* /ui:user1**. For more information, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md) and User options in the [ScanState Syntax](usmt-scanstate-syntax.md) topic. To troubleshoot a problem, check the progress log, and the ScanState and LoadState logs, which contain warnings and errors that may point to problems with the migration.
 
 ## Related topics
 
 
-[USMT XML Reference](usmt-xml-reference-usmt-win7-usmt-win8.md)
+[USMT XML Reference](usmt-xml-reference.md)
 
-[Conflicts and Precedence](conflicts-and-precedence-usmt-win7-usmt-win8.md)
+[Conflicts and Precedence](usmt-conflicts-and-precedence.md)
 
-[XML Elements Library](xml-elements-library-usmt-win7-usmt-win8.md)
+[XML Elements Library](usmt-xml-elements-library.md)
 
-[Log Files](log-files-usmt-win7-usmt-win8.md)
+[Log Files](usmt-log-files.md)
 
  
 

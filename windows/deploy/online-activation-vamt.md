@@ -5,17 +5,13 @@ ms.assetid: 8381792b-a454-4e66-9b4c-e6e4c9303823
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Perform Online Activation
-
-
 You can use the Volume Activation Management Tool (VAMT) to enable client products to be activated over the Internet. You can install the client products with any kind of product key that is eligible for online activation—Multiple Activation Key (MAK), retail, and Windows Key Management Services (KMS) host key.
 
 ## Requirements
-
-
 Before performing online activation, ensure that the network and the VAMT installation meet the following requirements:
 
 -   VAMT is installed on a central computer that has network access to all client computers.
@@ -29,7 +25,7 @@ Before performing online activation, ensure that the network and the VAMT instal
 The product keys that are installed on the client products must have a sufficient number of remaining activations. If you are activating a MAK key, you can retrieve the remaining number of activations for that key by selecting the MAK in the product key list in the center pane and then clicking **Refresh product key data online** in the right-side pane. This retrieves the number of remaining activations for the MAK from Microsoft. Note that this step requires Internet access and that the remaining activation count can only be retrieved for MAKs.
 
 ## To Perform an Online Activation
-
+**To perform an online activation**
 
 1.  Open VAMT.
 
@@ -51,28 +47,13 @@ The product keys that are installed on the client products must have a sufficien
 
 8.  VAMT displays the **Activating products** dialog box until it completes the requested action. When activation is complete, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
 
-The same status is shown under the **Status of Last Action** column in the products list view in the center pane.
+    The same status is shown under the **Status of Last Action** column in the products list view in the center pane.
 
-**Note**  
-Online activation does not enable you to save the Confirmation IDs (CIDs). As a result, you cannot perform local reactivation.
-
- 
-
-**Note**  
-You can use online activation to select products that have different key types and activate the products at the same time.
-
- 
+    **Note**  
+    Online activation does not enable you to save the Confirmation IDs (CIDs). As a result, you cannot perform local reactivation.
+    
+    **Note**  
+    You can use online activation to select products that have different key types and activate the products at the same time.
 
 ## Related topics
-
-
-[Manage Activations](manage-activations-vamt.md)
-
- 
-
- 
-
-
-
-
-
+- [Manage Activations](manage-activations-vamt.md)

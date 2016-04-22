@@ -5,7 +5,7 @@ ms.assetid: 045F5BF2-87D7-4522-97E1-C1D508E063A7
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: jasesso
 ---
 
 # Update and manage Windows Defender in Windows 10

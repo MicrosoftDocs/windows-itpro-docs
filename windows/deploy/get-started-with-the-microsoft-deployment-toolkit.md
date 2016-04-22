@@ -20,7 +20,7 @@ This topic will help you gain a better understanding of how to use the Microsoft
 
 In addition to familiarizing you with the features and options available in MDT 2013 Update 2, this topic will walk you through the process of preparing for deploying Windows 10 using MDT by configuring Active Directory, creating an organizational unit (OU) structure, creating service accounts, configuring log files and folders, and installing the tools needed to view the logs and continue with the deployment process.
 
-For the purposes of this topic, we will use two machines: DC01 and MDT01. DC01 is a domain controller and MDT01 is a Windows Server 2012 R2 standard server. MDT01 is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-81-with-the-microsoft-deployment-toolkit.md#proof).
+For the purposes of this topic, we will use two machines: DC01 and MDT01. DC01 is a domain controller and MDT01 is a Windows Server 2012 R2 standard server. MDT01 is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
 
 ![figure 1](images/mdt-05-fig01.png)
 

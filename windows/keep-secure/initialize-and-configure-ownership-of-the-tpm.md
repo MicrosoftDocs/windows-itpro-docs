@@ -268,7 +268,7 @@ For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell
 ## Additional resources
 
 
-For more info about TPM, see [Trusted Platform Module Technology Overview](trusted-platform-module-technology-overview.md#bkmk-additionalresources).
+For more info about TPM, see [Trusted Platform Module Technology Overview](trusted-platform-module-overview.md#bkmk-additionalresources).
 
  
 

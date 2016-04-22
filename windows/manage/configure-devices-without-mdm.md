@@ -1,6 +1,6 @@
 ---
 title: Configure devices without MDM (Windows 10)
-description: Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise.
+description: Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10. 
 ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
@@ -49,7 +49,7 @@ Provisioning packages are simple for employees to install. And when they remove 
 
 -   **Configure an off-the-shelf mobile device to be used as a point of sale or inventory terminal**
 
-    Package might include edition upgrade, device name, company root certificate, Wi-Fi profile, security policies, company application, or assigned access (also known as [kiosk mode](set-up-a-device-for-anyone-to-use.md)).
+    Package might include edition upgrade, device name, company root certificate, Wi-Fi profile, security policies, company application, or assigned access (also known as [kiosk mode](set-up-a-device-for-anyone-to-use.md).
 
 -   **Help employees set up personally-owned devices to use for work**
 

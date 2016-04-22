@@ -799,7 +799,7 @@ When you turn this feature off in the UI, it turns off the advertising ID, not j
 
     -or-
 
--   Create a REG\_DWORD registry setting called **Enabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting called **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo**, with a value of 0 (zero).
 
 To turn off **Turn on SmartScreen Filter to check web content (URLs) that Windows Store apps use**:
 

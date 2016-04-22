@@ -5,7 +5,7 @@ ms.assetid: 006F5FB1-E688-4769-BD9A-CFA6F5829016
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Distribute apps with a management tool
@@ -43,7 +43,7 @@ MDM tool requirements:
 ## Distribute offline-licensed apps
 
 
-If your vendor doesn’t support the ability to synchronize applications from the management tool services or cannot connect to the management tool services, your vendor may support the ability to deploy offline licensed applications by downloading the application and license from the store and then deploying the app through your MDM. For more information on online and offline licensing with Store for Business, see [Apps in the Windows Store for Business.](apps-in-the-windows-store-for-business.md#licensing-model)
+If your vendor doesn’t support the ability to synchronize applications from the management tool services or cannot connect to the management tool services, your vendor may support the ability to deploy offline licensed applications by downloading the application and license from the store and then deploying the app through your MDM. For more information on online and offline licensing with Store for Business, see [Apps in the Windows Store for Business.](apps-in-windows-store-for-business.md#licensing-model)
 
 This diagram shows how you can use a management tool to distribute offline-licensed app to employees in your organization. Once synchronized from Store for Business, management tools can use the Windows Management framework to distribute applications to devices.
 

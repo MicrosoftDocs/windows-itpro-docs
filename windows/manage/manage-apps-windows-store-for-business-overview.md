@@ -5,7 +5,7 @@ ms.assetid: 2F65D4C3-B02C-41CC-92F0-5D9937228202
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Manage apps in Windows Store for Business

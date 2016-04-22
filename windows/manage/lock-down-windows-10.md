@@ -1,6 +1,6 @@
 ---
 title: Lock down Windows 10 (Windows 10)
-description: Enterprises often need to manage how people use corporate devices. Windows 10 provides a number of features and methods to help you lock down specific parts of a Windows 10 device.
+description: Windows 10 provides a number of features and methods to help you lock down specific parts of a Windows 10 device.
 ms.assetid: 955BCD92-0A1A-4C48-98A8-30D7FAF2067D
 keywords: ["lockdown"]
 ms.prod: W10
@@ -51,7 +51,7 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 <td align="left"><p>IT Pros can configure access to Windows Store for client computers in their organization. For some organizations, business policies require blocking access to Windows Store.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md))</p></td>
+<td align="left"><p>[Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)</p></td>
 <td align="left"><p>Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots it knows about through crowdsourcing, or to Wi-Fi networks your contacts have shared with you by using Wi-Fi Sense.</p>
 <p>The initial settings for Wi-Fi Sense are determined by the options you chose when you first set up your PC with Windows 10.</p></td>
 </tr>

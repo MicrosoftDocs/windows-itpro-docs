@@ -1,5 +1,5 @@
 ---
-Description: Use out-of-date ActiveX control blocking to help you know when IE prevents a webpage from loading outdated ActiveX controls and to update the outdated control, so that it’s safer to use.
+description: Use out-of-date ActiveX control blocking to help you know when IE prevents a webpage from loading outdated ActiveX controls and to update the outdated control, so that it’s safer to use.
 ms.assetid: e61866bb-1ff1-4a8d-96f2-61d3534e8199
 author: eross-msft
 ms.prod: IE11
@@ -88,7 +88,7 @@ IE uses Microsoft’s versionlist.xml file to determine whether an ActiveX contr
 
 You can see your copy of the versionlist.xml file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml`, or you can view Microsoft’s version at [Internet Explorer version list](http://go.microsoft.com/fwlink/p/?LinkId=403864).
 
-**Security Note:**<br>Although we bly recommend against it, if you don’t want your computer to automatically download the updated version list from Microsoft, run the following command from a command prompt:
+**Security Note:**<br>Although we strongly recommend against it, if you don’t want your computer to automatically download the updated version list from Microsoft, run the following command from a command prompt:
 
 ```
 reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v DownloadVersionList /t REG_DWORD /d 0 /f
@@ -102,7 +102,7 @@ Out-of-date ActiveX control blocking includes 4 new Group Policy settings that y
 Here’s a list of the new Group Policy info, including the settings, location, requirements, and Help text strings. All of these settings can be set in either the Computer Configuration or User Configuration scope, but Computer Configuration takes precedence over User Configuration.
 
 **Important**<br>
-Out-of-date ActiveX control blocking is turned off in the Local Intranet Zone; therefore, intranet websites and line-of-business apps will continue to use out-of-date ActiveX controls without disruption.
+Out-of-date ActiveX control blocking is turned off in the Local Intranet Zone and the Trusted Sites Zone; therefore, intranet websites and line-of-business apps will continue to use out-of-date ActiveX controls without disruption.
 
 |Setting |Category path |Supported on |Help text |
 |--------|--------------|-------------|----------|

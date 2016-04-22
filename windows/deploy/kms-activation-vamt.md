@@ -5,17 +5,13 @@ ms.assetid: 5a3ae8e6-083e-4153-837e-ab0a225c1d10
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Perform KMS Activation
-
-
 The Volume Activation Management Tool (VAMT) can be used to perform volume activation using the Key Management Service (KMS). You can use VAMT to activate Generic Volume Licensing Keys, or KMS client keys, on products accessible to VAMT. GVLKs are the default product keys used by the volume-license editions of Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft Office 2010. GVLKs are already installed in volume-license editions of these products.
 
 ## Requirements
-
-
 Before configuring KMS activation, ensure that your network and VAMT installation meet the following requirements:
 
 -   KMS host is set up and enabled.
@@ -28,8 +24,9 @@ Before configuring KMS activation, ensure that your network and VAMT installatio
 
 -   VAMT has administrative permissions on all computers to be activated, and Windows Management Instrumentation (WMI) is accessible through the Windows Firewall. For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
 
-## To configure computers for KMS activation
+## To configure devices for KMS activation
 
+**To configure devices for KMS activation**
 
 1.  Open VAMT.
 

@@ -5,7 +5,7 @@ ms.assetid: EE488CC1-E340-4D47-B50B-35BD23CB4D70
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: jasesso
 ---
 
 # Troubleshoot Windows Defender in Windows 10
@@ -15,9 +15,9 @@ author: brianlic-msft
 
 -   Windows 10
 
-IT professionals can review information about *event IDs* in Windows Defender for Windows 10 and see any relevant action they can take.
+IT professionals can review information about event IDs in Windows Defender for Windows 10 and see any relevant action they can take.
 
-## Windows Defender client *event IDs*
+## Windows Defender client event IDs
 
 
 This section provides the following information about Windows Defender client events:
@@ -37,7 +37,7 @@ Use the information in this table to help troubleshoot Windows Defender client e
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
-You can find a complete list of the Microsoft antimalware *event IDs*, the symbol, and the description of each ID in [Windows Server Antimalware Events TechNet](https://technet.microsoft.com/library/dn913615.aspx).
+You can find a complete list of the Microsoft antimalware event IDs, the symbol, and the description of each ID in [Windows Server Antimalware Events TechNet](https://technet.microsoft.com/library/dn913615.aspx).
 
 <table>
 <tr>

@@ -87,7 +87,7 @@ To support pinning applications in multiple app packages, an AUMID parameter can
 
 The following example shows how to pin both Outlook Mail and Outlook Calendar:
 
-``` syntax
+```
 <Apps>
     <!-- Outlook Calendar -->
     <Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}" aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar">

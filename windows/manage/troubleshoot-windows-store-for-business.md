@@ -5,7 +5,7 @@ ms.assetid: 243755A3-9B20-4032-9A77-2207320A242A
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Troubleshoot Windows Store for Business

@@ -6,12 +6,10 @@ keywords: ["vamt", "volume activation", "activation", "windows activation"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Use the Volume Activation Management Tool
-
-
 **Applies to**
 
 -   Windows 10
@@ -35,8 +33,6 @@ The VAMT is distributed as part of the Windows Assessment and Deployment Kit (Wi
 In Windows Server 2012 R2, you can install the VAMT directly from Server Manager without downloading the Windows ADK by selecting the Volume Activation Services role or the Remote Server Administration Tools/Role Administration Tools/Volume Activation Tools feature.
 
 ## Activating with the Volume Activation Management Tool
-
-
 You can use the VAMT to complete the activation process in products by using MAK and retail keys, and you can work with computers individually or in groups. The VAMT enables two activation scenarios:
 
 -   **Online activation**. Online activation enables you to activate over the Internet any products that are installed with MAK, KMS host, or retail product keys. You can activate one or more connected computers within a network. This process requires that each product communicate activation information directly to Microsoft.
@@ -46,26 +42,20 @@ You can use the VAMT to complete the activation process in products by using MAK
     By using this method, only the VAMT host computer requires Internet access. Proxy activation by using the VAMT is beneficial for isolated network segments and for cases where your organization has a mix of retail, MAK, and KMS-based activations.
 
 ## Tracking products and computers with the Volume Activation Management Tool
-
-
 The VAMT provides an overview of the activation and licensing status of computers across your network, as shown in Figure 18. Several prebuilt reports are also available to help you proactively manage licensing.
 
-![image of menu](images/volumeactivationforwindows81-18.jpg)
+![VAMT showing the licensing status of multiple computers](images/volumeactivationforwindows81-18.jpg)
 
 **Figure 18**. The VAMT showing the licensing status of multiple computers
 
 ## Tracking key usage with the Volume Activation Management Tool
-
-
 The VAMT makes it easier to track the various keys that are issued to your organization. You can enter each key into VAMT, and then the VAMT can use those keys for online or proxy activation of clients. The tool can also describe what type of key it is and to which product group it belongs. The VAMT is the most convenient way to quickly determine how many activations remain on a MAK. Figure 19 shows an example of key types and usage.
 
-![image of menu](images/volumeactivationforwindows81-19.jpg)
+![VAMT showing key types and usage](images/volumeactivationforwindows81-19.jpg)
 
 **Figure 19**. The VAMT showing key types and usage
 
 ## Other Volume Activation Management Tool features
-
-
 The VAMT stores information in a Microsoft SQL Server database for performance and flexibility, and it provides a single graphical user interface for managing activations and performing other activation-related tasks, such as:
 
 -   **Adding and removing computers**. You can use the VAMT to discover computers in the local environment. The VAMT can discover computers by querying AD DS, workgroups, or individual computer names or IP addresses, or through a general LDAP query.
@@ -81,8 +71,6 @@ For more information, see:
 -   [VAMT Step-by-Step Scenarios](http://go.microsoft.com/fwlink/p/?LinkId=618267)
 
 ## See also
-
-
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
 
  

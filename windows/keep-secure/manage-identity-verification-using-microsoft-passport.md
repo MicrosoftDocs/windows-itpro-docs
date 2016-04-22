@@ -6,7 +6,7 @@ keywords: ["identity", "PIN", "biometric", "Hello"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Manage identity verification using Microsoft Passport
@@ -98,6 +98,8 @@ When identity providers such as Active Directory or Azure AD enroll a certificat
 
 ## Learn more
 
+
+[Introduction to Windows Hello](http://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 
 [What's new in Active Directory Domain Services (AD DS) in Windows Server Technical Preview](http://go.microsoft.com/fwlink/p/?LinkId=708533)
 

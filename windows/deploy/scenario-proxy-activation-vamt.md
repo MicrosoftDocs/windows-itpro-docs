@@ -5,45 +5,33 @@ ms.assetid: ed5a8a56-d9aa-4895-918f-dd1898cb2c1a
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Scenario 2: Proxy Activation
-
-
 In this scenario, the Volume Activation Management Tool (VAMT) is used to activate products that are installed on workgroup computers in an isolated lab environment. For workgroups which are isolated from the larger network, you can perform proxy activation of Multiple Activation Keys (MAKs), KMS Host keys (CSVLKs), Generic Volume License Keys (GVLKs) (or KMS client keys), or retail keys. Proxy activation is performed by installing a second instance of VAMT on a computer in the isolated workgroup. You can then use removable media to transfer VAMT Computer Information Lists (CILXs) between the instance of VAMT in the isolated workgroup and another VAMT host that has Internet access. The following diagram shows a Multiple Activation Key (MAK) proxy activation scenario:
 
-![vamt mak proxy activation scenario](images/dep-win8-l-vamt-makproxyactivationscenario.jpg)
+![VAMT MAK proxy activation scenario](images/dep-win8-l-vamt-makproxyactivationscenario.jpg)
 
-## Part 1: Install VAMT on a Workgroup Computer in the Isolated Lab
-
-
+## Step 1: Install VAMT on a Workgroup Computer in the Isolated Lab
 1.  Install VAMT on a host computer in the isolated lab workgroup. This computer can be running Windows 7, Windows 8, Windows 10, Windows Server 2008 R2, or Windows Server® 2012.
 
 2.  Click the VAMT icon in the **Start** menu to open VAMT.
 
-## Part 2: Configure the Windows Management Instrumentation Firewall Exception on Target Computers
-
-
+## Step 2: Configure the Windows Management Instrumentation Firewall Exception on Target Computers
 -   Ensure that the Windows Management Instrumentation (WMI) firewall exception has been enabled for all target computers. For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
 
-**Note**  
-To retrieve the license status on the selected computers, VAMT must have administrative permissions on the remote computers and WMI must be accessible through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
+    **Note**  
+    To retrieve the license status on the selected computers, VAMT must have administrative permissions on the remote computers and WMI must be accessible through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
 
- 
-
-## Part 3: Connect to a VAMT Database
-
-
+## Step 3: Connect to a VAMT Database
 1.  If the host computer in the isolated lab workgroup is not already connected to the database, the **Database Connection Settings** dialog box appears when you open VAMT. Select the server and database that contains the computers in the workgroup.
 
 2.  Click **Connect**.
 
 3.  If you are already connected to a database, in the center pane VAMT displays an inventory of the products and product keys, and a license overview of the computers in the database. If you need to connect to a different database, click **Successfully connected to the Server** to open the **Database Connection Settings** dialog box. For more information about how to create VAMT databases and adding VAMT data, see [Manage VAMT Data.](manage-vamt-data.md)
 
-## <a href="" id="part-4--discover-products-"></a>Part 4: Discover Products
-
-
+## Step 4: Discover Products
 1.  In the left-side pane, in the **Products** node, click the product that you want to activate.
 
 2.  To open the **Discover Products** dialog box, click **Discover products** in the right-side pane.
@@ -60,13 +48,11 @@ To retrieve the license status on the selected computers, VAMT must have adminis
 
 4.  Click **Search**.
 
-The **Finding Computers** window appears and displays the search progress as the computers are located.
+    The **Finding Computers** window appears and displays the search progress as the computers are located.
 
 When the search is complete, the products that VAMT discovers appear in the list view in the center pane.
 
-## <a href="" id="bkmk-step5"></a>Part 5: Sort and Filter the List of Computers
-
-
+## Step 5: Sort and Filter the List of Computers
 You can sort the list of products so that it is easier to find the computers that require product keys to be activated:
 
 1.  On the menu bar at the top of the center pane, click **Group by**, and then click **Product**, **Product Key Type**, or **License Status**.
@@ -83,29 +69,23 @@ You can sort the list of products so that it is easier to find the computers tha
 
 5.  Click **Filter**. VAMT displays the filtered list in the product list view in the center pane.
 
-## Part 6: Collect Status Information from the Computers in the Isolated Lab
-
-
+## Step 6: Collect Status Information from the Computers in the Isolated Lab
 To collect the status from select computers in the database, you can select computers in the product list view by using one of the following methods:
 
 -   To select a block of consecutively listed computers, click the first computer that you want to select, and then click the last computer while pressing the **Shift** key.
 
 -   To select computers which are not listed consecutively, hold down the **Ctrl** ley and select each computer for which you want to collect the status information.
 
-To collect status information from the selected computers:
+**To collect status information from the selected computers**
 
 1.  In the right-side **Actions** pane, click **Update license status** in the **Selected Items** menu and then click a credential option. Choose **Alternate Credentials** only if you are updating products that require administrator credentials that are different from the ones that you used to log on to the computer. Otherwise, click **Current Credentials** and continue to step 2.If you are supplying alternate credentials, in the **Windows Security** dialog box type the appropriate user name and password and then click **OK**.
 
 2.  VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
 
-**Note**  
-If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
+    **Note**  
+    If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
- 
-
-## Part 7: Add Product Keys
-
-
+## Step 7: Add Product Keys
 1.  Click the **Product Keys** node in the left-side pane, and then click **Add Product Keys** in the right-side pane to open the **Add Product Keys** dialog box.
 
 2.  In the **Add Product Keys** dialog box, you can select from one of the following methods to add product keys:
@@ -116,12 +96,10 @@ If a computer has more than one supported product installed, VAMT adds an entry 
 
     The keys that you have added appear in the **Product Keys** list view in the center pane.
 
-## Part 8: Install the Product Keys on the Isolated Lab Computers
-
-
+## Step 8: Install the Product Keys on the Isolated Lab Computers
 1.  In the left-side pane, in the **Products** node click the product that you want to install keys onto.
 
-2.  If necessary, sort and filter the list of products so that it is easier to find the computers that must have a product key installed. See [Step 5: Sort the list of computers](#bkmk-step5).
+2.  If necessary, sort and filter the list of products so that it is easier to find the computers that must have a product key installed. See [Step 5: Sort and Filter the List of Computers](#step-5-sort-and-filter-the-list-of-computers).
 
 3.  In the **Products** list view pane, select the individual products which must have keys installed. You can use the **CTRL** key or the **SHIFT** key to select more than one product.
 
@@ -133,22 +111,16 @@ If a computer has more than one supported product installed, VAMT adds an entry 
 
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
-**Note**  
-Product key installation will fail if VAMT finds mismatched key types or editions. VAMT displays the failure status and continues the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](http://go.microsoft.com/fwlink/p/?linkid=238382)
+    **Note**  
+    Product key installation will fail if VAMT finds mismatched key types or editions. VAMT displays the failure status and continues the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](http://go.microsoft.com/fwlink/p/?linkid=238382)
 
- 
+    **Note**  
+    Installing a MAK and overwriting the GVLK on client products must be done with care. If the RTM version of Windows Vista has been installed on the computer for more than 30 days, then its initial grace period has expired. As a result, it will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are available on the network. RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, and volume editions of Office 2010 will not enter RFM.
 
-**Note**  
-Installing a MAK and overwriting the GVLK on client products must be done with care. If the RTM version of Windows Vista has been installed on the computer for more than 30 days, then its initial grace period has expired. As a result, it will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are available on the network. RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, and volume editions of Office 2010 will not enter RFM.
-
- 
-
-## Part 9: Export VAMT Data to a .cilx File
-
-
+## Step 9: Export VAMT Data to a .cilx File
 In this step, you export VAMT from the workgroup’s host computer and save it in a .cilx file. Then you copy the .cilx file to removable media so that you can take it to a VAMT host computer that is connected to the Internet. In MAK proxy activation, it is critical to retain this file, because VAMT uses it to apply the Confirmation IDs (CIDs) to the proper products.
 
-1.  Select the individual products that successfully received a product key in Part 8. If needed, sort and filter the list to find the products.
+1.  Select the individual products that successfully received a product key in Step 8. If needed, sort and filter the list to find the products.
 
 2.  In the right-side **Actions** pane, click **Export list** to open the **Export List** dialog box.
 
@@ -168,14 +140,10 @@ In this step, you export VAMT from the workgroup’s host computer and save it i
 
 7.  If you exported the list to a file on the host computer’s hard drive, copy the file to removable media, such as a disk drive, CD/DVD, or USB storage device.
 
-**Important**  
-Choosing the **Export proxy activation data only** option excludes Personally Identifiable Information (PII) from being saved in the .cilx file. Therefore, the .cilx file must be re-imported into the SQL Server database on the isolated lab workgroup’s VAMT host computer, so that the CIDs that are requested from Microsoft (discussed in Part 10) can be correctly assigned to the computers in the isolated lab group.
+    **Important**  
+    Choosing the **Export proxy activation data only** option excludes Personally Identifiable Information (PII) from being saved in the .cilx file. Therefore, the .cilx file must be re-imported into the SQL Server database on the isolated lab workgroup’s VAMT host computer, so that the CIDs that are requested from Microsoft (discussed in Step 10) can be correctly assigned to the computers in the isolated lab group.
 
- 
-
-## Part 10: Acquire Confirmation IDs from Microsoft on the Internet-Connected Host Computer
-
-
+## Step 10: Acquire Confirmation IDs from Microsoft on the Internet-Connected Host Computer
 1.  Insert the removable media into the VAMT host that has Internet access.
 
 2.  Open VAMT. Make sure you are on the root node, and that the **Volume Activation Management Tool** view is displayed in the center pane.
@@ -186,9 +154,7 @@ Choosing the **Export proxy activation data only** option excludes Personally Id
 
 5.  When the CID collection process is complete, VAMT displays a **Volume Activation Management Tool** message that shows the number of confirmation IDs that were successfully acquired, and the name of the file where the IDs were saved. Click **OK** to close the message.
 
-## Part 11: Import the .cilx File onto the VAMT Host within the Isolated Lab Workgroup
-
-
+## Step 11: Import the .cilx File onto the VAMT Host within the Isolated Lab Workgroup
 1.  Remove the storage device that contains the .cilx file from the Internet-connected VAMT host computer and insert it into the VAMT host computer in the isolated lab.
 
 2.  Open VAMT and verify that you are connected to the database that contains the computer with the product keys that you are activating.
@@ -201,20 +167,16 @@ Choosing the **Export proxy activation data only** option excludes Personally Id
 
 6.  VAMT displays a progress message while the data is being imported. Click **OK** when a message appears and confirms that the data has been successfully imported.
 
-## Part 12: Apply the CIDs and Activate the Isolated Lab Computers
-
-
+## Step 12: Apply the CIDs and Activate the Isolated Lab Computers
 1.  Select the products to which you want to apply CIDs. If needed, sort and filter the list to find the products.
 
 2.  In the right-side **Selected Items** menu, click **Activate**, click **Apply Confirmation ID**, and then select the appropriate credential option. If you click the **Alternate Credentials** option, you will be prompted to enter an alternate user name and password.
 
-VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Sataus** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
+    VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Sataus** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
 
-The same status appears under the **Status of Last Action** column in the product list view in the center pane.
+    The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
-## <a href="" id="part-13---optional--reactivating-reimaged-computers-in-the-isolated-lab-"></a>Part 13: (Optional) Reactivating Reimaged Computers in the Isolated Lab
-
-
+## Step 13: (Optional) Reactivating Reimaged Computers in the Isolated Lab
 If you have captured new images of the computers in the isolated lab, but the underlying hardware of those computers has not changed, VAMT can reactivate those computers using the CIDs that are stored in the database.
 
 1.  Redeploy products to each computer, using the same computer names as before.
@@ -223,24 +185,20 @@ If you have captured new images of the computers in the isolated lab, but the un
 
 3.  In the right-side **Selected Items** menu, click **Activate**, click **Apply Confirmation ID**, and then select the appropriate credential option. If you click the **Alternate Credentials** option, you will be prompted to enter an alternate user name and password.
 
-VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
+    VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
 
-The same status appears under the **Status of Last Action** column in the product list view in the center pane.
+    The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
-**Note**  
-Installing a MAK and overwriting the GVLK on the client products must be done with care. If the Windows activation initial grace period has expired, Windows will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are accessible on the network. RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, and volume editions of Office 2010 will not enter RFM.
+    **Note**  
+    Installing a MAK and overwriting the GVLK on the client products must be done with care. If the Windows activation initial grace period has expired, Windows will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are accessible on the network. 
+    
+    RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, and volume editions of Office 2010 will not enter RFM.
 
- 
-
-**Note**  
-Reapplying the same CID conserves the remaining activations on the MAK.
-
- 
+    **Note**  
+    Reapplying the same CID conserves the remaining activations on the MAK.
 
 ## Related topics
-
-
-[VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
+- [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
 
  
 

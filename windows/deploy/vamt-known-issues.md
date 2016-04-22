@@ -5,12 +5,10 @@ ms.assetid: 8992f1f3-830a-4ce7-a248-f3a6377ab77f
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # VAMT Known Issues
-
-
 The following list contains the current known issues with the Volume Activation Management Tool (VAMT) 3.0.
 
 -   The VAMT Windows Management Infrastructure (WMI) remote operations may take longer to execute if the target computer is in a sleep or standby state.

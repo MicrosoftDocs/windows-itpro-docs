@@ -3,7 +3,7 @@ title: Change history for Manage and update Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Manage and update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 29144AFA-1DA9-4532-B07D-1EBE34B7E1E0
 ms.prod: W10
-ms.mktglfcycl: deploy
+ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
 ---
@@ -17,20 +17,24 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">New or changed topic</th>
 <th align="left">Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody><tr class="odd">
+<td align="left">[Administrative tools in Windows 10](administrative-tools-in-windows-10.md)</td>
+<td align="left"><p>Added screenshots of Control Panel and the administrative tools folder.</p></td>
+</tr>
 <tr class="odd">
 <td align="left">[Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
 <td align="left"><p>Added the font streaming section.</p></td>
+</tr>
+<tr class="odd">
+<td align="left">[Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)</td>
+<td align="left"><p>Made corrections to script and instructions for Shell Launcher.</p></td>
 </tr>
 </tbody>
 </table>
@@ -41,10 +45,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">New or changed topic</th>
@@ -61,7 +62,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <td align="left"><p>New</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md))</td>
+<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)</td>
 <td align="left"><p>Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration.</p></td>
 </tr>
 </tbody>
@@ -73,10 +74,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">New or changed topic</th>
@@ -94,11 +92,11 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <td align="left">Added a note to clarify that partial Start layout is only supported in Windows 10, version 1511 and later</td>
 </tr>
 <tr class="odd">
-<td align="left">[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md)</td>
+<td align="left">[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)</td>
 <td align="left">Added instructions for replacing markup characters with escape characters in Start layout XML</td>
 </tr>
 <tr class="even">
-<td align="left">[Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers--csps--.md)</td>
+<td align="left">[Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers.md)</td>
 <td align="left">New</td>
 </tr>
 <tr class="odd">
@@ -118,10 +116,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">New or changed topic</th>
@@ -130,15 +125,15 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md))</td>
+<td align="left">[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)</td>
 <td align="left">New</td>
 </tr>
 <tr class="even">
-<td align="left">[Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md))</td>
+<td align="left">[Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)</td>
 <td align="left">New</td>
 </tr>
 <tr class="odd">
-<td align="left">Customize Windows 10 Start with mobile device management (MDM)</td>
+<td align="left">[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -154,13 +149,13 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)                                                                     | New         |
 | [Configure Windows 10 Mobile using Lockdown XML](lockdown-xml.md)                                                                               | New         |
 | [Customize and export Start layout](customize-and-export-start-layout.md)                                                                       | New         |
-| [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management--mdm-.md) | New         |
+| [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New         |
 | [Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)                                                               | New         |
 | [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)                                                                         | New         |
 | [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)                                                                         | New         |
 | [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md)                                  | New         |
 | [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)                      | New         |
-| [Windows Hello biometrics in the enterprise](../keep-secure/windows-hello-in-enterprise.md))                                       | New         |
+| [Windows Hello biometrics in the enterprise](../keep-secure/windows-hello-in-enterprise.md)                                       | New         |
 | [Windows Store for Business](windows-store-for-business.md) (multiple topics)                                                                   | New         |
 | [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)                                             | Updated     |
 | [Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)                                 | Updated     |

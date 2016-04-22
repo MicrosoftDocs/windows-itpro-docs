@@ -1,0 +1,41 @@
+---
+title: How to Apply the User Configuration File by Using PowerShell
+description: How to Apply the User Configuration File by Using PowerShell
+ms.assetid: f7d7c595-4fdd-4096-b53d-9eead111c339
+author: jamiejdt
+---
+
+# How to Apply the User Configuration File by Using PowerShell
+
+
+The dynamic user configuration file is applied when a package is published to a specific user and determines how the package will run.
+
+Use the following procedure to specify a user-specific configuration file. The following procedure is based on the example:
+
+**c:\\Packages\\Contoso\\MyApp.appv**
+
+**To apply a user Configuration file**
+
+1.  To add the package to the computer using the PowerShell console type the following command:
+
+    **Add-AppVClientPackage c:\\Packages\\Contoso\\MyApp.appv**.
+
+2.  Use the following command to publish the package to the user and specify the updated the dynamic user configuration file:
+
+    **Publish-AppVClientPackage $pkg –DynamicUserConfigurationPath c:\\Packages\\Contoso\\config.xml**
+
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+## Related topics
+
+
+[Operations for App-V 5.0](operations-for-app-v-50.md)
+
+ 
+
+ 
+
+
+
+
+

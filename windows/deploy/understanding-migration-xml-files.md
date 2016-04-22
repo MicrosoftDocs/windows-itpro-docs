@@ -45,7 +45,7 @@ This topic provides an overview of the default and custom migration XML files an
 ## <a href="" id="bkmk-config"></a>Overview of the Config.xml file
 
 
-The Config.xml file is the configuration file created by the `/genconfig` option of the ScanState tool; it can be used to modify which operating-system components are migrated by USMT. The Config.xml file can be used in conjunction with other XML files, such as in the following example: `scanstate /i:migapps.xml /i:migdocs.xml /genconfig:c:\myFolder\config.xml`. When used this way, the Config.xml file tightly controls aspects of the migration, including user profiles, data, and settings, without modifying or creating other XML files. For more information about the Config.xml file, see [Customize USMT XML Files](customize-usmt-xml-files-usmt-win7-usmt-win8.md) and [Config.xml File](configxml-file-usmt-win7-usmt-win8.md).
+The Config.xml file is the configuration file created by the `/genconfig` option of the ScanState tool; it can be used to modify which operating-system components are migrated by USMT. The Config.xml file can be used in conjunction with other XML files, such as in the following example: `scanstate /i:migapps.xml /i:migdocs.xml /genconfig:c:\myFolder\config.xml`. When used this way, the Config.xml file tightly controls aspects of the migration, including user profiles, data, and settings, without modifying or creating other XML files. For more information about the Config.xml file, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [Config.xml File](usmt-configxml-file.md).
 
 **Note**  
 When modifying the XML elements in the Config.xml file, you should edit an element and set the **migrate** property to **no**, rather than deleting the element from the file. If you delete the element instead of setting the property, the component may still be migrated by rules in other XML files.
@@ -55,7 +55,7 @@ When modifying the XML elements in the Config.xml file, you should edit an eleme
 ## <a href="" id="bkmk-migapp"></a>Overview of the MigApp.xml file
 
 
-The MigApp.xml file installed with USMT includes instructions to migrate the settings for the applications listed in [What Does USMT Migrate?](what-does-usmt-migrate-usmt-win7-usmt-win8.md). You must include the MigApp.xml file when using the ScanState and LoadState tools, by using the `/i` option in order to migrate application settings. The MigDocs.xml and MigUser.xml files do not migrate application settings. You can create a custom XML file to include additional applications. For more information, see [Customize USMT XML Files](customize-usmt-xml-files-usmt-win7-usmt-win8.md).
+The MigApp.xml file installed with USMT includes instructions to migrate the settings for the applications listed in [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md). You must include the MigApp.xml file when using the ScanState and LoadState tools, by using the `/i` option in order to migrate application settings. The MigDocs.xml and MigUser.xml files do not migrate application settings. You can create a custom XML file to include additional applications. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md).
 
 **Important**  
 The MigApps.xml file will only detect and migrate .pst files that are linked to Microsoft Office Outlook. See the [Sample migration rules for customized versions of XML files](#bkmk-samples) section of this document for more information about migrating .pst files that are not linked to Outlook.
@@ -199,7 +199,7 @@ You can use multiple XML files with the ScanState and LoadState tools. Each of t
 <tr class="odd">
 <td align="left"><p>Config.xml file</p></td>
 <td align="left"><p>Operating-system components such as desktop wallpaper and background theme.</p>
-<p>You can also overload config.xml to include some application and document settings by generating the config.xml file with the other default XML files. For more information, see [Customize USMT XML Files](customize-usmt-xml-files-usmt-win7-usmt-win8.md) and [Config.xml File](configxml-file-usmt-win7-usmt-win8.md).</p></td>
+<p>You can also overload config.xml to include some application and document settings by generating the config.xml file with the other default XML files. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [Config.xml File](usmt-configxml-file.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MigApps.xml file</p></td>
@@ -402,7 +402,7 @@ Rules contained in a component that is assigned the user context will be run for
 ### <a href="" id="bkmk-samples"></a>Sample migration rules for customized versions of XML files
 
 **Note**  
-For best practices and requirements for customized XML files in USMT, see [Customize USMT XML Files](customize-usmt-xml-files-usmt-win7-usmt-win8.md) and [General Conventions](general-conventions-usmt-win7-usmt-win8.md).
+For best practices and requirements for customized XML files in USMT, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [General Conventions](usmt-general-conventions.md).
 
  
 
@@ -446,7 +446,7 @@ To exclude Rule 1, there needs to be an exact match of the file name. However, f
 
 **Example 2: Use the UnconditionalExclude element to give a rule precedence over include rules**
 
-If you do not know the file name or location of the file, but you do know the file name extension, you can use the **GenerateDrivePatterns** function. However, the rule will be less specific than the default include rule generated by the MigDocs.xml file, so it will not have precedence. You must use the &lt;UnconditionalExclude&gt; element to give this rule precedence over the default include rule. For more information about the order of precedence for XML migration rules, see [Conflicts and Precedence](conflicts-and-precedence-usmt-win7-usmt-win8.md).
+If you do not know the file name or location of the file, but you do know the file name extension, you can use the **GenerateDrivePatterns** function. However, the rule will be less specific than the default include rule generated by the MigDocs.xml file, so it will not have precedence. You must use the &lt;UnconditionalExclude&gt; element to give this rule precedence over the default include rule. For more information about the order of precedence for XML migration rules, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
 
 ``` syntax
 <unconditionalExclude>
@@ -475,7 +475,7 @@ If you want the &lt;UnconditionalExclude&gt; element to apply to both the system
 </component>
 ```
 
-For more examples of exclude rules that you can use in custom migration XML files, see [Exclude Files and Settings](exclude-files-and-settings-usmt.md).
+For more examples of exclude rules that you can use in custom migration XML files, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md).
 
 ### <a href="" id="bkmk-include"></a>Include rules usage examples
 
@@ -505,10 +505,10 @@ For locations outside the user profile, such as the Program Files folder, you ca
 </include>
 ```
 
-For more examples of include rules that you can use in custom migration XML files, see [Include Files and Settings](include-files-and-settings-usmt.md).
+For more examples of include rules that you can use in custom migration XML files, see [Include Files and Settings](usmt-include-files-and-settings.md).
 
 **Note**  
-For more information about the order of precedence for XML migration rules, see [Conflicts and Precedence](conflicts-and-precedence-usmt-win7-usmt-win8.md).
+For more information about the order of precedence for XML migration rules, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
 
  
 
@@ -517,14 +517,14 @@ For more information about the order of precedence for XML migration rules, see 
 
 You can include additional rules for the migration in the MigDocs.xml file or other XML migration files. For example, you can use the &lt;locationModify&gt; element to move files from the folder where they were gathered to a different folder, when they are applied to the destination computer.
 
-You can use an XML schema (MigXML.xsd) file to validate the syntax of your customized XML files. For more information, see [USMT Resources](usmt-resources-usmt-win8.md).
+You can use an XML schema (MigXML.xsd) file to validate the syntax of your customized XML files. For more information, see [USMT Resources](usmt-resources.md).
 
 ## Related topics
 
 
-[Exclude Files and Settings](exclude-files-and-settings-usmt.md)
+[Exclude Files and Settings](usmt-exclude-files-and-settings.md)
 
-[Include Files and Settings](include-files-and-settings-usmt.md)
+[Include Files and Settings](usmt-include-files-and-settings.md)
 
  
 

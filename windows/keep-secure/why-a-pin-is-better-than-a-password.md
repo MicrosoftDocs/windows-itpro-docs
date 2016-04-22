@@ -6,7 +6,7 @@ keywords: ["pin", "security", "password"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Why a PIN is better than a password

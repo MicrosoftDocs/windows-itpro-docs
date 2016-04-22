@@ -5,7 +5,7 @@ ms.assetid: A0DF4EC2-BE33-41E1-8832-DBB0EBECA31A
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Assign apps to employees

@@ -5,12 +5,10 @@ ms.assetid: 09a2c595-1a61-4da6-bd46-4ba8763cfd4f
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Import and Export VAMT Data
-
-
 You can use the Volume Activation Management Tool (VAMT) to import product-activation data from a Computer Information List (.cilx or .cil) file into SQL Server, and to export product-activation data into a .cilx file. A .cilx file is an XML file that stores computer and product-activation data. You can import data or export data during the following scenarios:
 
 -   Import and merge data from previous versions of VAMT.
@@ -20,12 +18,9 @@ You can use the Volume Activation Management Tool (VAMT) to import product-activ
 **Warning**  
 Editing a .cilx file using an application other than VAMT can corrupt the .cilx file and is not supported.
 
- 
-
 ## Import VAMT Data
 
-
-To import data into VAMT:
+**To import data into VAMT**
 
 1.  Open VAMT.
 
@@ -36,8 +31,6 @@ To import data into VAMT:
 4.  In the **Volume Activation Management Tool** dialog box, click **OK** to begin the import. VAMT displays a progress message while the file is being imported. Click **OK** when a message appears and confirms that the import has completed successfully.
 
 ## Export VAMT Data
-
-
 Exporting VAMT data from a non-Internet-connected VAMT host computer is the first step of proxy activation using multiple VAMT hosts. To export product-activation data to a .cilx file:
 
 1.  In the left-side pane, you can click a product you want to export data for, or click **Products** if the list contains data for all products.
@@ -61,15 +54,4 @@ Exporting VAMT data from a non-Internet-connected VAMT host computer is the firs
 7.  Click **Save**. VAMT displays a progress message while the data is being exported. Click **OK** when a message appears and confirms that the export has completed successfully.
 
 ## Related topics
-
-
-[Perform Proxy Activation](proxy-activation-vamt.md)
-
- 
-
- 
-
-
-
-
-
+- [Perform Proxy Activation](proxy-activation-vamt.md)

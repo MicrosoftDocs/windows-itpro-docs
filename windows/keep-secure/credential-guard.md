@@ -35,11 +35,11 @@ Credential Guard isolates secrets that previous versions of Windows stored in th
 
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
 
-Credential Guard also does not allow older variants of NTLM and Kerberos authentication protocols and cipher suites when using default derived credentials, including NTLMv1, MS-CHAPv2, and weaker Kerberos encryption types, such as DES.
+Credential Guard also does not allow older variants of NTLM, unconstrained Kerberos delegation, and Kerberos authentication protocols and cipher suites when using default derived credentials, including NTLMv1, MS-CHAPv2, and weaker Kerberos encryption types, such as DES.
 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
-![](images/credguard.png)
+![Credential Guard oveview](images/credguard.png)
 
 ## New and changed functionality
 
@@ -89,7 +89,19 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>Trusted Platform Module (TPM) version 1.2 or 2.0</p></td>
-<td align="left"><p>TPM 1.2 and 2.0 provides protection for encryption keys that are stored in the firmware. TPM 1.2 is not supported on Windows 10 (Build 10240); however, it is supported in Windows 10, Version 1511 (Build 10586) and later.</p>
+<td align="left"><p>TPM 1.2 and 2.0 provides protection for encryption keys that are stored in the firmware and are used by Credential Guard. See the following table to determine which TPM versions are supported on your OS.</p>
+<table>
+<th>OS version</th>
+<th>Required TPM</th>
+<tr>
+<td>Windows 10 version 1507</td>
+<td>TPM 2.0</td>
+</tr>
+<tr>
+<td>Windows 10 version 1511</td>
+<td>TPM 2.0 or TPM 1.2</td>
+</tr>
+</table>
 <div class="alert">
 <strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.
 </div>
@@ -168,7 +180,7 @@ First, you must add the virtualization-based security features. You can do this 
 2.  Add the Hyper-V Hypervisor by running the following command:
 
     ``` syntax
-    dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor
+    dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
 
 3.  Add Isolated User Mode by running the following command:
@@ -490,7 +502,7 @@ help2 = Usage:
 help3 = The following parameter is mandatory:
 help4 = -LinkedToGroup:<yes|no|all>
 help5 = "yes" will return only Issuance Policies that are linked to groups. Checks that the linked Issuance Policies are linked to valid groups.
-help6 = "no" will return only Issuance Policies that are not currently linked to any group. 
+help6 = "no" will return only Issuance Policies that are not currently linked to any group.
 help7 = "all" will return all Issuance Policies defined in the forest. Checks that the linked Issuance policies are linked to valid groups.
 help8 = The following parameter is optional:
 help9 = -Identity:<Name, Distinguished Name or Display Name of the Issuance Policy that you want to retrieve>. If you specify an identity, the option specified in the "-LinkedToGroup" parameter is ignored.
@@ -504,7 +516,7 @@ LinkedIPs = The following Issuance Policies are linked to groups:
 displayName = displayName : {0}
 Name = Name : {0}
 dn = distinguishedName : {0}
-        InfoName = Linked Group Name: {0} 
+        InfoName = Linked Group Name: {0}
         InfoDN = Linked Group DN: {0}   
 NonLinkedIPs = The following Issuance Policies are NOT linked to groups:
 '@
@@ -564,15 +576,15 @@ if ($Identity) {
 $errormsg = $getIP_strings.ErrorIPNotFound -f $Identity
 write-host $errormsg -ForegroundColor Red
     }
-    
+
     foreach ($OID in $OIDs) {
-    
+
         if ($OID."msDS-OIDToGroupLink") {
 # In case the Issuance Policy is linked to a group, it is good to check whether there is any problem with the mapping.
             $groupDN = $OID."msDS-OIDToGroupLink"
             $group = get-adgroup -Identity $groupDN
     $groupName = $group.Name
-            
+
 # Analyze the group
             if ($group.groupCategory -ne "Security") {
 $errormsg = $getIP_strings.ErrorNotSecurity -f $Identity, $groupName
@@ -591,7 +603,7 @@ write-host $errormsg -ForegroundColor Red
                 }
             }
         }
-        
+
     }
     return $OIDs
     break
@@ -608,20 +620,20 @@ if (($LinkedToGroup -eq "yes") -or ($LinkedToGroup -eq "all")) {
     write-host ""
     if ($LinkedOIDs -ne $null){
       foreach ($OID in $LinkedOIDs) {
-  
+
 # Display basic information about the Issuance Policies
           ""
   $getIP_strings.displayName -f $OID.displayName
   $getIP_strings.Name -f $OID.Name
   $getIP_strings.dn -f $OID.distinguishedName
-       
-          
+
+
 # Get the linked group.
           $groupDN = $OID."msDS-OIDToGroupLink"
           $group = get-adgroup -Identity $groupDN
           $getIP_strings.InfoName -f $group.Name
           $getIP_strings.InfoDN -f $groupDN
-          
+
 # Analyze the group
           $OIDName = $OID.displayName
     $groupName = $group.Name
@@ -775,8 +787,8 @@ write-host $ErrorMsg.help10
 
 
 
-# Assumption:  The group to which the Issuance Policy is going 
-#              to be linked is (or is going to be created) in 
+# Assumption:  The group to which the Issuance Policy is going
+#              to be linked is (or is going to be created) in
 #              the domain the user running this script is a member of.
 import-module ActiveDirectory
 $root = get-adrootdse
@@ -820,7 +832,7 @@ write-host $tmp -ForeGroundColor Green
 if ($groupOU -eq $null) {
 # default to the Users container
 $groupContainer = $domain.UsersContainer
-} 
+}
 else {
 $searchBase = [string]$domain.DistinguishedName
 $groupContainer = get-adobject -searchBase $searchBase -Filter { (Name -eq $groupOU) -and (objectClass -eq "organizationalUnit")}
@@ -841,7 +853,7 @@ write-host $tmp -ForegroundColor Green
 }
 else{
 $tmp = $ErrorMsg.OUCreationError -f $groupOU
-write-host $tmp -ForeGroundColor Red 
+write-host $tmp -ForeGroundColor Red
 break;
 }
 $groupContainer = get-adobject -searchBase $searchBase -Filter { (Name -eq $groupOU) -and (objectClass -eq "organizationalUnit")}
@@ -880,7 +892,7 @@ $tmp = $ErrorMsg.GroupCreationSuccess -f $groupName
 write-host $tmp -ForegroundColor Green
 }else{
 $tmp = $ErrorMsg.groupCreationError -f $groupName
-write-host $tmp -ForeGroundColor Red 
+write-host $tmp -ForeGroundColor Red
 break
 }
 $group = get-adgroup -Filter { (Name -eq $groupName) -and (objectClass -eq "group") } -searchBase $searchBase
@@ -893,7 +905,7 @@ else {
 $tmp = $ErrorMsg.GroupFound -f $group.Name
 write-host $tmp -ForegroundColor Green
 }
-} 
+}
 else {
 #####
 ## If the group is not specified, we should remove the link if any exists
@@ -911,11 +923,11 @@ write-host $tmp -ForeGroundColor Green
 $tmp = $ErrorMsg.UnlinkError
 write-host $tmp -ForeGroundColor Red
 }
-} 
-else { 
+}
+else {
 $tmp = $ErrorMsg.UnlinkExit
 write-host $tmp
-break 
+break
 }
 }
 else {
@@ -928,7 +940,7 @@ break;
 
 #######################################
 ##  Verify that the group is         ##
-##  Universal, Security, and         ## 
+##  Universal, Security, and         ##
 ##  has no members                   ##
 #######################################
 
@@ -953,7 +965,7 @@ break;
 
 #######################################
 ##  We have verified everything. We  ##
-##  can create the link from the     ## 
+##  can create the link from the     ##
 ##  Issuance Policy to the group.    ##
 #######################################
 
@@ -971,10 +983,10 @@ write-host $tmp -Foreground Green
 $tmp = $ErrorMsg.LinkError
 write-host $tmp -Foreground Red
 }
-} else { 
+} else {
 $tmp = $Errormsg.ExitNoLinkReplacement
 write-host $tmp
-break 
+break
 }
 }
 else {
@@ -1017,8 +1029,3 @@ If you're having trouble running this script, try replacing the single quote aft
  
 
  
-
-
-
-
-

@@ -30,7 +30,7 @@ The synchronization process uses the Microsoft Compatibility Exchange to:
 
 -   Upload your compatibility issues to Microsoft.
 
--   Upload and download compatibility information from the ACT Community, if you are a member of the ACT Community and agree to share your data. For information about configuring your membership in the ACT Community, see [Settings Dialog Box - Preferences Tab](settings-dialog-box---preferences-tab.md).
+-   Upload and download compatibility information from the ACT Community, if you are a member of the ACT Community and agree to share your data. For information about configuring your membership in the ACT Community, see [Settings Dialog Box - Preferences Tab](act-settings-dialog-box-preferences-tab.md).
 
 For information about which data is sent and received through the Microsoft Compatibility exchange, see [Data Sent Through the Microsoft Compatibility Exchange](data-sent-through-the-microsoft-compatibility-exchange.md).
 

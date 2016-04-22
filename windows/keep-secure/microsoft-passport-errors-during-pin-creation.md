@@ -6,7 +6,7 @@ keywords: ["PIN", "error", "create a work PIN"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: jdeckerMS
 ---
 
 # Microsoft Passport errors during PIN creation

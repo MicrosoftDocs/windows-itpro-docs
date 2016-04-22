@@ -6,7 +6,7 @@ keywords: ["Device Guard"]
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: brianlic-msft
 ---
 
 # Device Guard overview

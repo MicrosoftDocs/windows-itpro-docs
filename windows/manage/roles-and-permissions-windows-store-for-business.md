@@ -5,7 +5,7 @@ ms.assetid: CB6281E1-37B1-4B8B-991D-BC5ED361F1EE
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: TrudyHa
 ---
 
 # Roles and permissions in Windows Store for Business
@@ -211,7 +211,7 @@ These permissions allow people to:
 
 4.  
 
-    If you are not finding the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in the Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md))
+    If you are not finding the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in the Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md)
 
  
 

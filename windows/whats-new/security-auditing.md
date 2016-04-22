@@ -5,7 +5,7 @@ ms.assetid: CB35A02E-5C66-449D-8C90-7B73C636F67B
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: TrudyHa
+author: brianlic-msft
 ---
 
 # What's new in security auditing?

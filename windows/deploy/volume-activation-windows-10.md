@@ -6,12 +6,10 @@ keywords: ["vamt", "volume activation", "activation", "windows activation"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: jdeckerMS
 ---
 
 # Volume Activation for Windows 10
-
-
 **Applies to**
 
 -   Windows 10
