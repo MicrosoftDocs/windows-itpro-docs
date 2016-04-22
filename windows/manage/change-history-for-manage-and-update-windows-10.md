@@ -33,7 +33,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 <td align="left"><p>Added the font streaming section.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions)</td>
+<td align="left">[Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)</td>
 <td align="left"><p>Made corrections to script and instructions for Shell Launcher.</p></td>
 </tr>
 </tbody>
