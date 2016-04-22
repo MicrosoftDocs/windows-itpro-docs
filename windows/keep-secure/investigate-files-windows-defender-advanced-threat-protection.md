@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
-## Investigate a file
+# Investigate a file
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach. 
 
 You can get information from the following sections in the file view:
