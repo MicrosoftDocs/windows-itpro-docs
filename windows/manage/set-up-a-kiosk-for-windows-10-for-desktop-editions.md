@@ -16,9 +16,7 @@ author: jdeckerMS
 
 -   Windows 10
 
-**Looking for Windows Embedded 8.1 Industry information?**
-
--   [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
+>  **Looking for Windows Embedded 8.1 Industry information?** See [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
 
 A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
@@ -288,7 +286,7 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 **To set your custom shell**
 
-Modify the following PowerShell script as appropriate and run the script on the kiosk device.
+Modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
 
 ```
     $COMPUTER = “localhost”
@@ -323,9 +321,9 @@ Modify the following PowerShell script as appropriate and run the script on the 
     $restart_device = 1
     $shutdown_device = 2
 
-    # Examples
+    # Examples. You can change these examples to use the program that you want to use as the shell.
 
-    # Set the command prompt as the default shell, and restart the device if it&#39;s closed.
+    # This example sets the command prompt as the default shell, and restarts the device if the command prompt is closed. 
 
     $ShellLauncherClass.SetDefaultShell(“cmd.exe”, $restart_device)
 
@@ -335,7 +333,7 @@ Modify the following PowerShell script as appropriate and run the script on the 
 
     “`nDefault Shell is set to “ + $DefaultShellObject.Shell + “ and the default action is set to “ + $DefaultShellObject.defaultaction
 
-    # Set Internet Explorer as the shell for “Cashier”, and restart the machine if it&#39;s closed.
+    # Set Internet Explorer as the shell for “Cashier”, and restart the machine if Internet Explorer is closed.
 
     $ShellLauncherClass.SetCustomShell($Cashier_SID, “c:\program files\internet explorer\iexplore.exe www.microsoft.com”, ($null), ($null), $restart_shell)
 
@@ -359,7 +357,7 @@ Modify the following PowerShell script as appropriate and run the script on the 
     $ShellLauncherClass.RemoveCustomShell($Admins_SID)
 
     $ShellLauncherClass.RemoveCustomShell($Cashier_SID)
-    ```
+```
 
 ## Related topics
 
