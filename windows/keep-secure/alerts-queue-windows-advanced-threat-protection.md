@@ -6,6 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+author: mjcaparas
 ---
 
 # View and organize the Windows Defender Advanced Threat Protection Alerts queue
@@ -22,12 +23,12 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 
 The following table and screenshot demonstrate the main areas of the **Alerts queue**.
 
-![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/alertsq2.png)
+![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/alertsq.png)
 
 Highlighted area|Area name|Description
 :---|:---|:---
 (1)|**Alerts queue**| Select to show **New**, **In Progress**, or **Resolved alerts**
-(2)|Alerts|Each alert shows:<ul><li>The severity of an alert as a colored bar</li><li>A short description of the alert, including the name of the threat actor (in cases where the attribution is possible)</li><li>The last occurrence of the alert on any machine</li><li>The number of days the alert has been in the queue</li><li>The general category or type of alert, or the alert's kill-chain stage</li><li>The affected machine (if there are multiple machines, the number of affected machines will be shown)</li><li>A **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) that allows you to update the alert's status and add comments</li></ul>Clicking an alert expands to display more information about the threat and brings you to the date in the timeline when the alert was detected.
+(2)|Alerts|Each alert shows:<ul><li>The severity of an alert as a colored bar</li><li>A short description of the alert, including the name of the threat actor (in cases where the attribution is possible)</li><li>The last occurrence of the alert on any machine</li><li>The number of days the alert has been in the queue</li><li>The severity of the alert</li><li>The general category or type of alert, or the alert's kill-chain stage</li><li>The affected machine (if there are multiple machines, the number of affected machines will be shown)</li><li>A **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) that allows you to update the alert's status and add comments</li></ul>Clicking an alert expands to display more information about the threat and brings you to the date in the timeline when the alert was detected.
 (3)|Alerts sorting and filters | You can sort alerts by: <ul><li>**Newest** (when the threat was last seen on your network)</li><li>**Time in queue** (how long the threat has been in your queue)</li><li>**Severity**</li></ul>You can also filter the displayed alerts by:<ul><li>Severity</li><li>Time period</li></ul>See [Windows Defender ATP alerts](use-windows-defender-advanced-threat-protection.md#windows-defender-atp-alerts) for more details.
 
 ##Sort and filter the Alerts queue

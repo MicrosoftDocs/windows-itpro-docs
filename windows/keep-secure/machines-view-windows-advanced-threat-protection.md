@@ -1,7 +1,7 @@
 ---
 title: Investigate machines in the Windows Defender ATP Machines view
 description: Investigate affected machines in your network by reviewing alerts, network connection information, and service health on the Machines view.
-keywords: machines, endpoints, machine, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, active threats, threat category, filter, sort, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, low severity
+keywords: machines, endpoints, machine, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, active malware detections, threat category, filter, sort, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, low severity
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.sitesec: library
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-The **Machines view** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, and the number of threats. This view allows you to identify machines with the highest risk at a glance, and keep track of all the machines that are reporting telemetry in your network. 
+The **Machines view** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, and the number of active malware detections. This view allows you to identify machines with the highest risk at a glance, and keep track of all the machines that are reporting telemetry in your network. 
 
 Use the Machines view in these two main scenarios: 
 
@@ -30,7 +30,7 @@ The Machines view contains the following columns:
 - **Last seen** - when the machine last reported telemetry 
 - **Internal IP** - the local internal Internet Protocol (IP) address of the machine 
 - **Active Alerts** - the number of alerts reported by the machine by severity
-- **Active malware detections** - the number of active threats reported by the machine
+- **Active malware detections** - the number of active malware detections reported by the machine
 
 > **Note**&nbsp;&nbsp;The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product. 
 
@@ -38,7 +38,7 @@ Click any column header to sort the view in ascending or descending order.
 
 ![Screenshot of the Machines view on the portal](images/machines-view.png)
 
-You can sort the **Machines view** by **Machine name**, **Last seen**, **IP**, **Alerts**, and **Active threats**. Scroll down the **Machines view** to see additional machines. 
+You can sort the **Machines view** by **Machine name**, **Last seen**, **IP**, **Active Alerts**, and **Active malware detections**. Scroll down the **Machines view** to see additional machines. 
 
 The view contains two filters: time and threat category.
 
@@ -60,7 +60,7 @@ The threat category filter lets you filter the view by the following categories:
 - Threat
 - Low severity
 
-See the [Investigate machines with active alerts](dashboard-windows-advanced-threat-protection.md#investigate-machines-with-active-threats) topic for a description of each category.
+See the [Investigate machines with active alerts](dashboard-windows-advanced-threat-protection.md#investigate-machines-with-active-malware-detections) topic for a description of each category.
 
 You can also download a full list of all the machines in your organization, in CSV format. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to download the entire list as a CSV file. 
 
