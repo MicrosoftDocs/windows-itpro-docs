@@ -89,7 +89,7 @@ To create an encrypted store using the Config.xml file and the default migration
 <td align="left"><p><em>StorePath</em></p></td>
 <td align="left"><p>Indicates a folder where files and settings will be saved. Note that <em>StorePath</em> cannot be <strong>c:\</strong>. You must specify the <em>StorePath</em> option in the <strong>ScanState</strong> command, except when using the <strong>/genconfig</strong> option. You cannot specify more than one <em>StorePath</em> location.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>/apps</strong></p></td>
 <td align="left"><p>Scans the image for apps and includes them and their associated registry settings.</p></td>
 </tr>
