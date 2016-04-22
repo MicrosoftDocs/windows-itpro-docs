@@ -58,9 +58,9 @@ The **Machines reporting** tile shows a bar graph that represents the number of 
 ![The Machines reporting tile shows the number of machines reporting each day for the past 30 days](images/machines-reporting-tile.png)
 
 ## Investigate machines with active malware detections 
-The **Machines with active malware detections** tile will only appear if your endpoints are using Windows Defender.
+The **Active malware** tile will only appear if your endpoints are using Windows Defender.
 
-Active malware detection is defined as threats that are actively executing at the time of detection.
+Active malware is defined as threats that are actively executing at the time of detection.
 
 Hover over each bar to see the number of active malware detections (as **Malware detections**) and the number of endpoints with at least one active detection (as **Machines**) over the past 30 days.
 
@@ -74,11 +74,11 @@ The chart is sorted into five categories:
 - **Threat** - all other threats that don't fit into the **Password stealer**, **Ransomware**, or **Exploit** categories. This includes trojans, worms, backdoors, and viruses.
 - **Low severity** - threats with low severity, including adware and potentially unwanted software such as browser modifiers.
 
-Threats are considered "Active" if there is a very high probability that the malware was executing on your network, as opposed to statically located on-disk.
+Threats are considered "active" if there is a very high probability that the malware was executing on your network, as opposed to statically located on-disk.
 
 Clicking on any of these categories will navigate to the [Machines view](machines-view-windows-advanced-threat-protection.md), filtered by the appropriate category. This lets you see a detailed breakdown of which machines have active malware detections, and how many threats were detected per machine. 
 
-> **Note**&nbsp;&nbsp;The **Active malware detections** tile will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> **Note**&nbsp;&nbsp;The **Active malware** tile will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 ### Related topics
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-advanced-threat-protection.md)
