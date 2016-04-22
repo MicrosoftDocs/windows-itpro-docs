@@ -16,9 +16,7 @@ author: jdeckerMS
 
 -   Windows 10
 
-**Looking for Windows Embedded 8.1 Industry information?**
-
--   [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
+>  **Looking for Windows Embedded 8.1 Industry information?** See [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
 
 A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
