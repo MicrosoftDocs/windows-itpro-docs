@@ -180,7 +180,7 @@ First, you must add the virtualization-based security features. You can do this 
 2.  Add the Hyper-V Hypervisor by running the following command:
 
     ``` syntax
-    dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor
+    dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
 
 3.  Add Isolated User Mode by running the following command:
