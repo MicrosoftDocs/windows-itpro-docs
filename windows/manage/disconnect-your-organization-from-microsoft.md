@@ -307,7 +307,7 @@ You can prevent Windows from setting the time automatically.
 
     -or-
 
--   Create a REG\_DWORD registry setting called **NoSync** in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters**, with a value of 1.
+-   Create a REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters** with a value of **NoSync**.
 
 ### <a href="" id="bkmk-devinst"></a>3. Device metadata retrieval
 
