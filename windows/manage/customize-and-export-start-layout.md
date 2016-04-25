@@ -49,12 +49,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Enterprise or Windows 10 Education). Install all apps and services that the Start layout should display.
 
-    **Important**  
-    **Start layout** can only be applied to a device using the same architecture (32-bit or 64-bit) as the device on which **Start layout** was created.
-
-     
-
-2.  Create a new user account that you will use to customize the Start layout.
+   2.  Create a new user account that you will use to customize the Start layout.
 
 <a href="" id="bmk-customize-start"></a>
 **To customize Start**

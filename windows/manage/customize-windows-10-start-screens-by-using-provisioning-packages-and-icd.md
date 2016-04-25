@@ -29,7 +29,7 @@ In Windows 10 Enterprise and Windows 10 Education, you can use a provisioning 
 
 Two features enable Start layout control:
 
--   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. **Start layout** can only be applied to a device using the same architecture (32-bit or 64-bit) as the device on which **Start layout** was created.
+-   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     **Note**  
     To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.

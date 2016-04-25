@@ -18,10 +18,9 @@ If you specify an app to be pinned that is not installed on the computer, it won
 
 The order of apps in the xml file dictates order of apps on taskbar from left to right, to the right of any existing apps pinned by user.
 
-**Note**  
-In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
+> **Note**  In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
 
-The following example shows how apps will be pinned - Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
+The following example shows how apps will be pinned: Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
 
 ![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
 
@@ -30,7 +29,7 @@ The following example shows how apps will be pinned - Windows default apps to th
 
 To configure the taskbar:
 1. Create the XML file.
-   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use Export-StartLayout to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from the following sample to the file.
+   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from the following sample to the file.
    * If you are only configuring the taskbar, use the following sample to create LayoutModification.xml.
 2. Edit and save the XML file. You can use [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path to identify the apps to pin to the taskbar.
    * Use `<taskbar:UWA>` and [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
@@ -195,8 +194,7 @@ The resulting tasbkar for computers in any other region:
 ![taskbar for all other regions](images/taskbar-region-other.png)
 
 
-**Note**  
-[Look up region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
+> **Note**  [Look up region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
 
 ## Configure taskbar (by Windows 10 edition)
 
