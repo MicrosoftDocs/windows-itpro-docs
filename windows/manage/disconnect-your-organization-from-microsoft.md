@@ -73,7 +73,7 @@ Here's what's covered in this article:
 
     -   [13. Settings &gt; Privacy](#bkmk-settingssection)
 
-        -   [13.1 General](https://tnstage.redmond.corp.microsoft.com/en-us/itpro/windows/manage/change-history-for-manage-and-update-windows-10?branch=7087905)
+        -   [13.1 General](#bkmk-priv-general)
 
         -   [13.2 Location](#bkmk-priv-location)
 
@@ -1277,7 +1277,7 @@ You can set your organization's devices to use 1 of 4 telemetry levels:
 
 -   **Full**
 
-In Windows 10 Enterprise, Windows 10 Education, and IoT Core, the default telemetry level is **Enhanced**.
+For more info about these telemetry levels, see [Telemetry levels](#bkmk-telemetrylevels). If you choose Express settings during installation, your device is configured for the Full telemetry level. In Windows 10 Enterprise, Windows 10 Education, and Windows 10 IoT Core, unattended installations configure your device for the Enhanced telemetry level.
 
 **Important**  
 These telemetry levels only apply to Windows components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. App publishers must let people know about how they use their telemetry, ways to opt in or opt out, and they must separately document their privacy policies.
