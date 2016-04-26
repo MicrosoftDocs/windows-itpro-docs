@@ -55,11 +55,11 @@ The Connected User Experience and Telemetry component also connects to settings-
 
 ### Data usage
 
-Data gathered from telemetry is used by Microsoft teams primarily to improve our customer experiences, and for security, health, quality, and performance analysis. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the Privacy Statement. We do share business reports with OEMs and third party partners that includes aggregated, anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
+Data gathered from telemetry is used by Microsoft teams primarily to improve our customer experiences, and for security, health, quality, and performance analysis. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the Privacy Statement. We do share business reports with OEMs and third party partners that includes aggregated, anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management. Info is typically gathered at a fractional sampling rate, which can be as low as 1% of clients reporting data.
 
 ### Retention
 
-Microsoft believes in and practices information minimization. We strive to gather only the info we need, and store it for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Store purchase history. Info is typically gathered at a fractional sampling rate, which can be as low as 1% of clients reporting data. 
+Microsoft believes in and practices information minimization. We strive to gather only the info we need, and store it for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Store purchase history. 
 
 ## How is the data gathered?
 
@@ -288,7 +288,7 @@ There are a few more settings that you can turn off that may send telemetry info
 ## Examples of how Microsoft uses the telemetry data
 
 
-### Drive higher apps and driver quality in the ecosystem
+### Drive higher application and driver quality in the ecosystem
 
 Telemetry plays an important role in quickly identifying and fixing critical reliability and security issues in our customers’ deployments and configurations. Insights into the telemetry data we gather helps us to quickly identify crashes or hangs associated with a certain application or driver on a given configuration, like a particular storage type (for example, SCSI) or a memory size. For System Center, job usages and statuses can also help us enhance the job workload and the communication between System Center and its managed products. Microsoft’s ability to get this data from customers and drive improvements into the ecosystem helps raise the bar for the quality of System Center, Windows Server applications, Windows apps, and drivers. Real-time data about Windows installations reduces downtime and the cost associated with troubleshooting unreliable drivers or unstable applications
 
