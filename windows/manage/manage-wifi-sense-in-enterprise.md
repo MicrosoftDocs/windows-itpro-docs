@@ -74,10 +74,10 @@ If your company still uses Unattend, you can manage your Wi-Fi Sense settings by
 ### How employees can change their own Wi-Fi Sense settings
 If you don’t turn off the ability for your employees to use Wi-Fi Sense, they can turn it on locally by selecting **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings**, and then turning on **Connect to suggested open hotspots**.
 
-    ![Wi-Fi Sense options shown to employees if it's not turned off](images/wifisense-settingscreens.png)
+![Wi-Fi Sense options shown to employees if it's not turned off](images/wifisense-settingscreens.png)
 
 ## Related topics
-- [Wi-Fi Sense FAQ](http://go.microsoft.com/fwlink/p/?LinkId=620911)
+- [Wi-Fi Sense and Privacy](http://go.microsoft.com/fwlink/p/?LinkId=620911)
 - [How to configure Wi-Fi Sense on Windows 10 in an enterprise](http://go.microsoft.com/fwlink/p/?LinkId=620959)
 
  
