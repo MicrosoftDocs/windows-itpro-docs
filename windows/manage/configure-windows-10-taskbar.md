@@ -149,9 +149,9 @@ If you only want to remove some of the default pinned apps, you would use this m
 
 ![Taskbar with default apps removed](images/taskbar-default-removed.png)
 
-## Configure taskbar (by region)
+## Configure taskbar by country or region
 
-The following example shows you how to configure taskbars by region. When you specify one or more regions in `<taskbar:TaskbarPinList>`, the pinned apps in that section are only pinned on computers that are configured for that region. When specifying taskbar configuration by region, the taskbar will concatenate pinlists together so long as the target computer meets the region requirements. If no region is specified for a `<TaskbarPinList>` node, it will apply to every region.
+The following example shows you how to configure taskbars by country or region. When you specify one or more country or region in `<taskbar:TaskbarPinList>`, the pinned apps in that section are only pinned on computers that are configured for that country or region. When specifying taskbar configuration by country or region, the taskbar will concatenate pinlists together so long as the target computer meets the country or region requirements. If no country or region is specified for a `<TaskbarPinList>` node, it will apply to every country and region.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -182,7 +182,7 @@ The following example shows you how to configure taskbars by region. When you sp
 </LayoutModificationTemplate>
 ```
 
-When the preceding example XML for region is applied, the resulting tasbkar for computers in the US or UK:
+When the preceding example XML is applied, the resulting tasbkar for computers in the US or UK:
 
 ![taskbar for US and UK locale](images/taskbar-region-usuk.png)
 
@@ -190,12 +190,12 @@ The resulting taskbar for computers in Germany or France:
 
 ![taskbar for DE and FR locale](images/taskbar-region-defr.png)
 
-The resulting tasbkar for computers in any other region:
+The resulting tasbkar for computers in any other country region:
 
 ![taskbar for all other regions](images/taskbar-region-other.png)
 
 
-> **Note**  [Look up region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
+> **Note**  [Look up country and region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
 
 
 
