@@ -13,7 +13,7 @@ Starting in Windows 10, version 1607, administrators can pin additional apps to 
 
 > **Note:** Only the layout of the taskbar can currently be configured by the layout modification XML file.
 
-You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path. 
+You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](http://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path (the local path to the application). 
 
 If you specify an app to be pinned that is not installed on the computer, it won't appear on the taskbar.
 
@@ -34,7 +34,7 @@ To configure the taskbar:
    * If you are only configuring the taskbar, use the following sample to create LayoutModification.xml.
 2. Edit and save the XML file. You can use [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path to identify the apps to pin to the taskbar.
    * Use `<taskbar:UWA>` and [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
-   * Use `<taskbar:DesktopApp>` and Desktop Application ID or Desktop Application Link Path to pin desktop applications. 
+   * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications. 
 3. Apply LayoutModification.xml to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
 ### Sample taskbar configuration XML
@@ -52,7 +52,7 @@ To configure the taskbar:
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
         <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+        <taskbar:DesktopApp DesktopApplicationLinkPath="%windir%/explorer.exe" />
       </taskbar:TaskbarPinList>
     </defaultlayout:TaskbarLayout>
  </CustomTaskbarLayoutCollection>
@@ -76,7 +76,7 @@ To configure the taskbar:
       <defaultlayout:TaskbarLayout>
         <taskbar:TaskbarPinList>
           <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-          <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+          <taskbar:DesktopApp DesktopApplicationLinkPath="%windir%/explorer.exe" />
         </taskbar:TaskbarPinList>
       </defaultlayout:TaskbarLayout>
     </CustomTaskbarLayoutCollection>
@@ -167,7 +167,7 @@ The following example shows you how to configure taskbars by country or region. 
         <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
      </taskbar:TaskbarPinList>
     <taskbar:TaskbarPinList>
-      <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+      <taskbar:DesktopApp DesktopApplicationLinkPath="%windir%/explorer.exe" />
       <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
     </taskbar:TaskbarPinList>
     <taskbar:TaskbarPinList region="DE|FR">
