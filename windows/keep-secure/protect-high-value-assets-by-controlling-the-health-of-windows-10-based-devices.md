@@ -6,7 +6,7 @@ keywords: ["security", "BYOD", "malware", "device health attestation", "mobile"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: arnaudjumelet
 ---
 
 # Control the health of Windows 10-based devices

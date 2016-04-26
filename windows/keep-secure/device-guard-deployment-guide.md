@@ -5,7 +5,7 @@ ms.assetid: 4BA52AA9-64D3-41F3-94B2-B87EC2717486
 keywords: ["virtualization", "security", "malware"]
 ms.prod: W10
 ms.mktglfcycl: deploy
-author: brianlic-msft
+author: challum
 ---
 
 # Device Guard deployment guide
