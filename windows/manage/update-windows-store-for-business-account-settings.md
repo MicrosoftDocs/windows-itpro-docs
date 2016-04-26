@@ -4,6 +4,7 @@ description: The Account information page in Windows Store for Business shows in
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: TrudyHa
 ---
 
 # Update Windows Store for Business account settings
@@ -63,6 +64,7 @@ These countries can provide their VAT number or local equivalent in **Account in
 | India | CST ID, VAT ID |
 | Taiwan | Unified business number|
 
+
 **Tax-exempt status** 
 
 If you qualify for tax-exempt status in your market, start a service request to establish tax exempt status for your organization. 
@@ -79,6 +81,7 @@ You’ll need this documentation:
 | Canada | Certificate of Exemption (or equivalent letter of authorization) |
 | Ireland | 13B/56A Tax Exemption Certificate| 
 | International organizations that hold tax exaemption | Certification / letter confirmation from local tax authorities |
+
 
 **Calculating tax**
 
