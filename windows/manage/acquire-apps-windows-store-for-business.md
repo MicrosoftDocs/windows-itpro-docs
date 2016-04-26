@@ -35,9 +35,6 @@ To acquire an app
 2.	Click Shop, or use Search to find an app. 
 3.	Click the app you want to purchase. 
 4.	On the product description page, choose your license type - either online or offline. 
-    
-    ![Product description page, showing an app with a price](images/wsfb-paid-app-temp.png)
-    
 5. Free apps will be added to Inventory. For apps with a price, you can set the quantity you want to buy. Type the quantity and click **Next**.
 6.	If you don’t have a payment method saved in Account settings, Store for Business will prompt you for one.
 7.	Add your credit card or debit card info, and click **Next**. Your card info is saved as a payment option on **Account information**.

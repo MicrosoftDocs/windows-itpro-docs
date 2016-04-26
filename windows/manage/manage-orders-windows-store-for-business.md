@@ -26,7 +26,7 @@ Click to expand an order, and the following info is available:
 
 ## Invoices
 
-Invoices for orders are available approximatley 24 hours after your purchase. The link opens a .pdf that you can save for your records. Or, just use the copy here on your **Order history**. 
+Invoices for orders are available approximatley 24 hours after your purchase. The link opens a .pdf that you can save for your records.  
 
 ## Buy more licenses
 
@@ -37,7 +37,8 @@ You can purchase more copies of apps that are in your order history.
 1.	Sign in to the [Store for Business](http://businessstore.microsoft.com).
 2.	Click **Manage**, and then choose **Order history**.
 3.  Click an order, and then click **Buy more**.
-4.  The app details page displays how many licenses you already have assigned. Click **Buy more** to purchase additional licenses. 
+
+You can buy more copies of the app from the product page. 
 
 ## Refund an order
 
@@ -56,7 +57,7 @@ Refunds work a little differently for free apps, and apps that have a price. In 
 
 **To refund an order**
 
-Reclaim licenses, and then request a refund. 
+Reclaim licenses, and then request a refund. If you haven't assigned licenses, start on step 5. 
 1.  Sign in to the [Store for Business](http://businessstore.microsoft.com).
 2.	Click **Manage**, and then choose **Inventory**.
 3.	Find the app you want to refund, click the ellipses under **Action**, and then choose **View license details**.

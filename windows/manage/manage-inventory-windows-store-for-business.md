@@ -67,5 +67,3 @@ If you decide that you don't want an app available for employees to install on t
 3.	Find an app, click the ellipses under **Action**, and then choose **Remove from private store**, and then click **Remove**.
 
 The app will still be in your inventory, but your employees will not have access to the app from your private store. 
-
-

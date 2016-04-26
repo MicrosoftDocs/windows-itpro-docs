@@ -22,14 +22,40 @@ We’ll need your business address, email contact, and tax-exemption certificate
  
 **Business address and email contact**<br>Before purchasing apps that have a fee, you need to add or update your organization's business address, and contact email address . 
 
-We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through the Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in the Windows Store for Business. If we don’t have an address, we’ll ask you to enter it during your first purchase. 
+We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through the Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in the Windows Store for Business. If we don’t have an address,we’ll ask you to enter it during your first purchase. 
 
 We need an email address in case we need to contact you about your Store for Business account. This email account should reach the admin for your organization’s O365 or Azure AD tenant that is used with Store for Business. 
 
 To update Organization information, click **Edit organization information**.
 
 ## Organization tax information ##   
-Taxes for Windows Store for Business purchases are determined by your business address. Some countries can provide tax IDs. 
+Taxes for Windows Store for Business purchases are determined by your business address. Businesses in these countries can provide their VAT number or local equivalent:
+- Austria
+- Belgium
+- Croatia
+- Czech Republic
+- Denmark
+- Finland
+- France
+- Germany
+- Greece
+- Hungary
+- Ireland
+- Italy
+- Malta
+- Netherlands
+- Norway
+- Poland
+- Portugal
+- Romania
+- Slovakia
+- South Africa
+- Spain
+- Sweden
+- Switzerland
+- United Kingdom
+
+These countries can provide their VAT number or local equivalent in **Account information**. However, they can only acquire free apps.  
 
 |Market| Tax identifier |
 |------|----------------|
