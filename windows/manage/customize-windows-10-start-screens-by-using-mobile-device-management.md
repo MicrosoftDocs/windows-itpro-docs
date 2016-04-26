@@ -22,6 +22,8 @@ author: jdeckerMS
 
 In Windows 10 Enterprise and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
+> **Note:** Customized taskbar configuration cannot be applied using MDM at this time.
+
 **Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md)
 
 **Warning**  

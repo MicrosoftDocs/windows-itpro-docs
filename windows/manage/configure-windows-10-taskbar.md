@@ -52,7 +52,7 @@ To configure the taskbar:
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
         <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%windir%/explorer.exe" />
+        <taskbar:DesktopApp ="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
       </taskbar:TaskbarPinList>
     </defaultlayout:TaskbarLayout>
  </CustomTaskbarLayoutCollection>
@@ -76,7 +76,7 @@ To configure the taskbar:
       <defaultlayout:TaskbarLayout>
         <taskbar:TaskbarPinList>
           <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-          <taskbar:DesktopApp DesktopApplicationLinkPath="%windir%/explorer.exe" />
+          <taskbar:DesktopApp ="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
         </taskbar:TaskbarPinList>
       </defaultlayout:TaskbarLayout>
     </CustomTaskbarLayoutCollection>
@@ -167,7 +167,7 @@ The following example shows you how to configure taskbars by country or region. 
         <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
      </taskbar:TaskbarPinList>
     <taskbar:TaskbarPinList>
-      <taskbar:DesktopApp DesktopApplicationLinkPath="%windir%/explorer.exe" />
+      <taskbar:DesktopApp ="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
       <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
     </taskbar:TaskbarPinList>
     <taskbar:TaskbarPinList region="DE|FR">
