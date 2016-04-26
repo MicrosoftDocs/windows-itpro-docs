@@ -58,7 +58,7 @@ This section explains the syntax and usage of the **ScanState** command-line opt
 
 The **ScanState** command's syntax is:
 
-scanstate \[*StorePath*\] \[/i:\[*Path*\\\]*FileName*\] \[/o\] \[/v:*VerbosityLevel*\] \[/nocompress\] \[/localonly\] \[/encrypt /key:*KeyString*|/keyfile:\[Path\\\]*FileName*\] \[/l:\[*Path*\\\]*FileName*\] \[/progress:\[*Path*\\\]*FileName*\] \[/r:*TimesToRetry*\] \[/w:*SecondsBeforeRetry*\] \[/c\] \[/p\] \[/all\] \[/ui:\[*DomainName*|*ComputerName*\\\]*UserName*\] \[/ue:\[*DomainName*|*ComputerName*\\\]*UserName*\] \[/uel:*NumberOfDays*|*YYYY/MM/DD*|0\] \[/efs:abort|skip|decryptcopy|copyraw\] \[/genconfig:\[*Path*\\\]*FileName*\[/config:\[*Path*\\\]*FileName*\] \[/?|help\]
+scanstate \[*StorePath*\] \[/apps\] \[/ppkg:*FileName*\] \[/i:\[*Path*\\\]*FileName*\] \[/o\] \[/v:*VerbosityLevel*\] \[/nocompress\] \[/localonly\] \[/encrypt /key:*KeyString*|/keyfile:\[Path\\\]*FileName*\] \[/l:\[*Path*\\\]*FileName*\] \[/progress:\[*Path*\\\]*FileName*\] \[/r:*TimesToRetry*\] \[/w:*SecondsBeforeRetry*\] \[/c\] \[/p\] \[/all\] \[/ui:\[*DomainName*|*ComputerName*\\\]*UserName*\] \[/ue:\[*DomainName*|*ComputerName*\\\]*UserName*\] \[/uel:*NumberOfDays*|*YYYY/MM/DD*|0\] \[/efs:abort|skip|decryptcopy|copyraw\] \[/genconfig:\[*Path*\\\]*FileName*\[/config:\[*Path*\\\]*FileName*\] \[/?|help\]
 
 For example:
 
@@ -88,6 +88,14 @@ To create an encrypted store using the Config.xml file and the default migration
 <tr class="odd">
 <td align="left"><p><em>StorePath</em></p></td>
 <td align="left"><p>Indicates a folder where files and settings will be saved. Note that <em>StorePath</em> cannot be <strong>c:\</strong>. You must specify the <em>StorePath</em> option in the <strong>ScanState</strong> command, except when using the <strong>/genconfig</strong> option. You cannot specify more than one <em>StorePath</em> location.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>/apps</strong></p></td>
+<td align="left"><p>Scans the image for apps and includes them and their associated registry settings.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>/ppkg</strong> [<em>&lt;FileName&gt;</em>]</p></td>
+<td align="left"><p>Exports to a specific file location.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/o</strong></p></td>

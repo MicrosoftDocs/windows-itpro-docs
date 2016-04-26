@@ -16,9 +16,7 @@ author: jdeckerMS
 
 -   Windows 10
 
-**Looking for Windows Embedded 8.1 Industry information?**
-
--   [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
+>  **Looking for Windows Embedded 8.1 Industry information?** See [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
 
 A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
@@ -288,19 +286,19 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 **To set your custom shell**
 
-Modify the following PowerShell script as appropriate and run the script on the kiosk device.
+Modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
 
 ```
-    $COMPUTER = &quot;localhost&quot;
-    $NAMESPACE = &quot;root\standardcimv2\embedded&quot;
+    $COMPUTER = “localhost”
+    $NAMESPACE = “root\standardcimv2\embedded”
 
     # Create a handle to the class instance so we can call the static methods.
-    $ShellLauncherClass = [wmiclass]&quot;\\$COMPUTER\${NAMESPACE}:WESL_UserSetting&quot;
+    $ShellLauncherClass = [wmiclass]”\\$COMPUTER\${NAMESPACE}:WESL_UserSetting”
 
 
     # This well-known security identifier (SID) corresponds to the BUILTIN\Administrators group.
 
-    $Admins_SID = &quot;S-1-5-32-544&quot;
+    $Admins_SID = “S-1-5-32-544”
 
     # Create a function to retrieve the SID for a user account on a machine.
 
@@ -310,12 +308,12 @@ Modify the following PowerShell script as appropriate and run the script on the 
         $NTUserSID = $NTUserObject.Translate([System.Security.Principal.SecurityIdentifier])
 
         return $NTUserSID.Value
-        
+
     }
 
-    # Get the SID for a user account named &quot;Cashier&quot;. Rename &quot;Cashier&quot; to an existing account on your system to test this script.
+    # Get the SID for a user account named “Cashier”. Rename “Cashier” to an existing account on your system to test this script.
 
-    $Cashier_SID = Get-UsernameSID(&quot;Cashier&quot;)
+    $Cashier_SID = Get-UsernameSID(“Cashier”)
 
     # Define actions to take when the shell program exits.
 
@@ -323,43 +321,43 @@ Modify the following PowerShell script as appropriate and run the script on the 
     $restart_device = 1
     $shutdown_device = 2
 
-    # Examples
+    # Examples. You can change these examples to use the program that you want to use as the shell.
 
-    # Set the command prompt as the default shell, and restart the device if it&#39;s closed.
+    # This example sets the command prompt as the default shell, and restarts the device if the command prompt is closed. 
 
-    $ShellLauncherClass.SetDefaultShell(&quot;cmd.exe&quot;, $restart_device)
+    $ShellLauncherClass.SetDefaultShell(“cmd.exe”, $restart_device)
 
     # Display the default shell to verify that it was added correctly.
 
     $DefaultShellObject = $ShellLauncherClass.GetDefaultShell()
 
-    &quot;`nDefault Shell is set to &quot; + $DefaultShellObject.Shell + &quot; and the default action is set to &quot; + $DefaultShellObject.defaultaction
+    “`nDefault Shell is set to “ + $DefaultShellObject.Shell + “ and the default action is set to “ + $DefaultShellObject.defaultaction
 
-    # Set Internet Explorer as the shell for &quot;Cashier&quot;, and restart the machine if it&#39;s closed.
+    # Set Internet Explorer as the shell for “Cashier”, and restart the machine if Internet Explorer is closed.
 
-    $ShellLauncherClass.SetCustomShell($Cashier_SID, &quot;c:\program files\internet explorer\iexplore.exe www.microsoft.com&quot;, ($null), ($null), $restart_shell)
+    $ShellLauncherClass.SetCustomShell($Cashier_SID, “c:\program files\internet explorer\iexplore.exe www.microsoft.com”, ($null), ($null), $restart_shell)
 
     # Set Explorer as the shell for administrators.
 
-    $ShellLauncherClass.SetCustomShell($Admins_SID, &quot;explorer.exe&quot;)
+    $ShellLauncherClass.SetCustomShell($Admins_SID, “explorer.exe”)
 
     # View all the custom shells defined.
 
-    &quot;`nCurrent settings for custom shells:&quot;
+    “`nCurrent settings for custom shells:”
     Get-WmiObject -namespace $NAMESPACE -computer $COMPUTER -class WESL_UserSetting | Select Sid, Shell, DefaultAction
 
     # Enable Shell Launcher
 
     $ShellLauncherClass.SetEnabled($TRUE)
 
-    &quot;`nEnabled is set to &quot; + $DefaultShellObject.IsEnabled()
+    “`nEnabled is set to “ + $DefaultShellObject.IsEnabled()
 
     # Remove the new custom shells.
 
     $ShellLauncherClass.RemoveCustomShell($Admins_SID)
 
     $ShellLauncherClass.RemoveCustomShell($Cashier_SID)
-    ```
+```
 
 ## Related topics
 

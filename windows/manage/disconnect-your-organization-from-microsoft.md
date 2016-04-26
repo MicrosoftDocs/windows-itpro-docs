@@ -370,7 +370,7 @@ You can prevent Windows from setting the time automatically.
 
     -or-
 
--   Create a REG\_DWORD registry setting called **NoSync** in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters**, with a value of 1.
+-   Create a REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters** with a value of **NoSync**.
 
 ### <a href="" id="bkmk-devinst"></a>3. Device metadata retrieval
 
@@ -1549,7 +1549,7 @@ You can set your organization's devices to use 1 of 4 telemetry levels:
 
 -   [Full](#bkmk-utc-full)
 
-For more info about these telemetry levels, see [Telemetry levels](#bkmk-telemetrylevels). In Windows 10 Enterprise, Windows 10 Education, and IoT Core, the default telemetry level is [Enhanced](#bkmk-utc-enhanced).
+For more info about these telemetry levels, see [Telemetry levels](#bkmk-telemetrylevels). If you choose Express settings during installation, your device is configured for the Full telemetry level. In Windows 10 Enterprise, Windows 10 Education, and Windows 10 IoT Core, unattended installations configure your device for the Enhanced telemetry level.
 
 **Important**  
 These telemetry levels only apply to Windows components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. App publishers must let people know about how they use their telemetry, ways to opt in or opt out, and they must separately document their privacy policies.
