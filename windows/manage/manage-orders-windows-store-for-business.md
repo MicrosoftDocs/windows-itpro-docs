@@ -26,7 +26,7 @@ Click to expand an order, and the following info is available:
 
 ## Invoices
 
-Invoices for orders are available approximatley 24 hours after your purchase. The link opens a .pdf that you can save for your records. Or, just use the copy here on the Order history page. 
+Invoices for orders are available approximatley 24 hours after your purchase. The link opens a .pdf that you can save for your records. Or, just use the copy here on your **Order history**. 
 
 ## Buy more licenses
 
@@ -45,7 +45,7 @@ Refunds work a little differently for free apps, and apps that have a price. In 
 
 **Refunds for free apps**
  
- For free apps, there isn't really a refund to request -- you're removing the app from your inventory. You must first reclaim any assigned licenses,and then you can remove the app from your organization's inventory. 
+ For free apps, there isn't really a refund to request -- you're removing the app from your inventory. You must first reclaim any assigned licenses, and then you can remove the app from your organization's inventory. 
  
  **Refunds for apps that have a price**
  
@@ -53,3 +53,19 @@ Refunds work a little differently for free apps, and apps that have a price. In 
  - **Timing** - Refunds are available for the first 30 days after you place your order. For example, if your order is placed on June 1, you can self-refund through June 30.
  - **Avaialble licenses** - You need to have enough available licenses to cover the number of licenses in the order you are refunding. For example, if you purchased 10 copies of an app and you want to request a refund, you must have at least 10 licenses of the app available in your inventory -- those 10 licenses can't be assigned to people in your organization.
  - **Whole order refunds only** - You must refund the complete amount of apps in an order. You can't refund a part of an order. For example, if you purchased 10 copies of an app, but later found you only needed 5 copies, you'll need to request a refund for the 10 apps, and then make a separate order for 5 apps. If you have had multiple orders of the same app, you can refund one order but still keep the rest of the inventory.  
+
+**To refund an order**
+
+First, reclaim licenses. 
+1.  Sign in to the [Store for Business](http://businessstore.microsoft.com).
+2.	Click **Manage**, and then choose **Inventory**.
+3.	Find the app you want to refund, click the ellipses under **Action**, and then choose **View license details**.
+4.  Select the number of licenses you need to reclaim, and then click **Reclaim licenses**.
+
+Then, request a refund. 
+1.	Click **Manage**, and then choose **Order history**.
+2.	Click the order you want to refund, and click **Refund order**.
+
+For free apps, the app will be removed from your inventory. 
+
+For apps with a price, your payment option will be refunded with the cost of the app, and the app will be removed from your inventory.  
