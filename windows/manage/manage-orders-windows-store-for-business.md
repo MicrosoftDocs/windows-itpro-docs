@@ -56,15 +56,13 @@ Refunds work a little differently for free apps, and apps that have a price. In 
 
 **To refund an order**
 
-First, reclaim licenses. 
+Reclaim licenses, and then request a refund. 
 1.  Sign in to the [Store for Business](http://businessstore.microsoft.com).
 2.	Click **Manage**, and then choose **Inventory**.
 3.	Find the app you want to refund, click the ellipses under **Action**, and then choose **View license details**.
-4.  Select the number of licenses you need to reclaim, and then click **Reclaim licenses**.
-
-Then, request a refund. 
-1.	Click **Manage**, and then choose **Order history**.
-2.	Click the order you want to refund, and click **Refund order**.
+4.  Select the number of licenses you need to reclaim, and then click **Reclaim licenses**. 
+5.	Click **Manage**, and then choose **Order history**.
+6.	Click the order you want to refund, and click **Refund order**.
 
 For free apps, the app will be removed from your inventory. 
 
