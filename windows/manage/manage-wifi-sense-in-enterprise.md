@@ -19,13 +19,10 @@ Wi-Fi Sense learns about open Wi-Fi hotspots your Windows PC or Windows phone co
 
 The initial settings for Wi-Fi Sense are determined by the options you chose when you first set up your PC with Windows 10.
 
-**Note**<br>Wi-Fi Sense isn’t available in all countries or regions. 
-
-**Important**<br>We've deprecated the Wi-Fi Sense credential sharing functionality, which means that while you currently see it in the user interface, it's non-functional. The feature and its associated text will be fully-removed from future releases.
+**Note**<br>Wi-Fi Sense isn’t available in all countries or regions.
 
 ## How does Wi-Fi Sense work?
-Wi-Fi Sense connects your employees to open Wi-Fi networks, using crowdsourcing to find the networks that other Windows users are connected to. Typically, these are the open (no password required) Wi-Fi hotspots you see when you’re out and about.
-
+Wi-Fi Sense connects your employees to open Wi-Fi networks. Typically, these are the open (no password required) Wi-Fi hotspots you see when you’re out and about.
 
 ## How to manage Wi-Fi Sense in your company
 In a company environment, you will most likely deploy Windows 10 to your employees' PCs using your preferred deployment method and then manage their settings globally. With that in mind, you have a few options for managing how your employees will use Wi-Fi Sense.
@@ -75,6 +72,14 @@ If your company still uses Unattend, you can manage your Wi-Fi Sense settings by
 If you don’t turn off the ability for your employees to use Wi-Fi Sense, they can turn it on locally by selecting **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings**, and then turning on **Connect to suggested open hotspots**.
 
 ![Wi-Fi Sense options shown to employees if it's not turned off](images/wifisense-settingscreens.png)
+
+**Important**<br>The service that was used to share networks with Facebook friends, Outlook.com contacts, or Skype contacts is no longer available. This means:
+
+The **Connect to networks shared by my contacts** setting will still appear in **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings** on your PC and in **Settings &gt; Network & wireless &gt; Wi‑Fi &gt; Wi‑Fi Sense** on your phone. However, this setting will have no effect now. Regardless of what it’s set to, networks won’t be shared with your contacts. Your contacts won’t be connected to networks you’ve shared with them, and you won’t be connected to networks they’ve shared with you.
+
+Even if you selected **Automatically connect to networks shared by your contacts** when you first set up your Windows 10 device, you still won’t be connected to networks your contacts have shared with you.
+
+If you select the **Share network with my contacts** check box the first time you connect to a new network, the network won’t be shared.
 
 ## Related topics
 - [Wi-Fi Sense and Privacy](http://go.microsoft.com/fwlink/p/?LinkId=620911)
