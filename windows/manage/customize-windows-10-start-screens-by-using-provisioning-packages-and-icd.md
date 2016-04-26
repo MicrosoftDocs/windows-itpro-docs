@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Customize Windows 10 Start with ICD and provisioning packages
+# Customize Windows 10 Start and taskbar with ICD and provisioning packages
 
 
 **Applies to**
@@ -94,11 +94,11 @@ Use the [Imaging and Configuration Designer (ICD) tool](http://go.microsoft.com/
 ## Related topics
 
 
-[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
+[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 
 [Customize and export Start layout](customize-and-export-start-layout.md)
 
-[Customize Windows 10 Start with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 
 [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 

@@ -149,9 +149,11 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 [Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
 
-[Customize Windows 10 Start with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 
-[Customize Windows 10 Start with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+
+[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
 [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 

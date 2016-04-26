@@ -121,11 +121,11 @@ After you use Group Policy to apply a customized Start and taskbar layout on a c
 ## Related topics
 
 
-[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
+[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 
 [Customize and export Start layout](customize-and-export-start-layout.md)
 
-[Customize Windows 10 Start with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
 [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
