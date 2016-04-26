@@ -5,7 +5,7 @@ ms.assetid: 225C9D6F-9329-4DDF-B447-6CE7804E314E
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: TrudyHa
+author: craigash
 ---
 
 # Guidance for education environments

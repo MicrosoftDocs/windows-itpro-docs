@@ -6,7 +6,7 @@ keywords: ["deploy, image, customize, task sequence"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Integrate Configuration Manager with MDT 2013 Update 2

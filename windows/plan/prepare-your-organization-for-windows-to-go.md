@@ -6,7 +6,7 @@ keywords: ["mobile, device, USB, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: mtniehaus
 ---
 
 # Prepare your organization for Windows To Go
