@@ -11,8 +11,9 @@ author: jdeckerMS
 
 Starting in Windows 10, version 1607, administrators can pin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
 
+> **Note:** Only the layout of the taskbar can currently be configured by the layout modification XML file.
 
-You can specify different taskbar configurations based on device locale and region, or operating system edition. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path. 
+You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path. 
 
 If you specify an app to be pinned that is not installed on the computer, it won't appear on the taskbar.
 
@@ -196,37 +197,6 @@ The resulting tasbkar for computers in any other region:
 
 > **Note**  [Look up region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
 
-## Configure taskbar (by Windows 10 edition)
-
-The following example shows you how to configure taskbars by edition, so that you can apply one configuration to Windows 10 Enterprise and a different configuration to Windows 10 Education. 
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-    Version="1">
-  <CustomTaskbarLayoutCollection>
-    <defaultlayout:TaskbarLayout SKU="PPI">
-      <taskbar:TaskbarPinList>
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Internet Explorer.lnk" />
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk" />
-        <taskbar:UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-      </taskbar:TaskbarPinList>
-    </defaultlayout:TaskbarLayout>
-    <defaultlayout:TaskbarLayout SKU="Server|ServerSolution">
-      <taskbar:TaskbarPinList>
-        <taskbar:UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.lync.exe.15" />
-        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.OUTLOOK.EXE.15" />
-      </taskbar:TaskbarPinList>
-    </defaultlayout:TaskbarLayout>
-  </CustomTaskbarLayoutCollection>
-</LayoutModificationTemplate>
-
-```
 
 
 

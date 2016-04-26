@@ -117,7 +117,7 @@ The following table lists the different parts of Start and any applicable policy
 
  ## Taskbar options
 
-Starting in Windows 10, version 1607, you can pin additional apps to the taskbar and remove default pinned apps from the taskbar. You can specify different taskbar configurations based on device locale, region, or operating system edition.
+Starting in Windows 10, version 1607, you can pin additional apps to the taskbar and remove default pinned apps from the taskbar. You can specify different taskbar configurations based on device locale or region.
 
 There are three categories of apps that might be pinned to a taskbar:
 * Apps pinned by the user
