@@ -6,7 +6,7 @@ keywords: ["mobile, device, USB, secure, BitLocker"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: mtniehaus
 ---
 
 # Security and data protection considerations for Windows To Go

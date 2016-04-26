@@ -5,7 +5,7 @@ ms.assetid: 4BA52AA9-64D3-41F3-94B2-B87EC2717486
 keywords: ["virtualization", "security", "malware"]
 ms.prod: W10
 ms.mktglfcycl: deploy
-author: brianlic-msft
+author: challum
 ---
 
 # Device Guard deployment guide
@@ -585,13 +585,10 @@ Figure 11. Device Guard properties in the System Summary
 
 ## Catalog files
 
-
 Enforcement of Device Guard on a system requires that every trusted application have a signature or its binary hashes added to the code integrity policy. For many organizations, this can be an issue when considering unsigned LOB applications. To avoid the requirement that organizations repackage and sign these applications, Windows 10 includes a tool called Package Inspector that monitors an installation process for any deployed and executed binary files. If the tool discovers such files, it itemizes them in a catalog file. These catalog files offer you a way to trust your existing unsigned applications, whether developed in house or by a third party, as well as trust signed applications for which you do not want to trust the signer but rather the specific application. When created, these files can be signed, the signing certificates added to your existing code integrity policies, and the catalog files themselves distributed to the clients.
 
 **Note**  
 The Enterprise edition of Windows 10 or Windows Server 2016 is required to create and use catalog files.
-
- 
 
 ### <a href="" id="create-catalog-files"></a>
 
@@ -648,8 +645,6 @@ When you establish a naming convention it makes it easier to detect deployed cat
 **Note**  
 This scan catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries’ hash values.
 
- 
-
 When finished, the files will be saved to your desktop. To trust this catalog file within a code integrity policy, the catalog must first be signed. Then, the signing certificate can be included in the code integrity policy, and the catalog file can be distributed to the individual client machines. Catalog files can be signed by using a certificate and SignTool.exe, a free tool available in the Windows SDK. For more information about signing catalog files with SignTool.exe, see the [Catalog signing with SignTool.exe](#catsign-signtool) section.
 
 ### <a href="" id="catsign-signtool"></a>
@@ -668,34 +663,12 @@ If you do not have a code signing certificate, please see the [Create a Device G
 
 1.  Initialize the variables that will be used:
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>$ExamplePath=$env:userprofile+&quot;\Desktop&quot;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    '$ExamplePath=$env:userprofile+"\Desktop"'
+    
+    '$CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"'
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>$CatFileName=$ExamplePath+&quot;\LOBApp-Contoso.cat&quot;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
-
-    **Note**  
-    In this example, you use the catalog file you created in the [Create catalog files](#create-catalog-files) section. If you are signing another catalog file, be sure to update the *$ExamplePath* and *$CatFileName* variables with the correct information.
-
-     
+   **Note**  
+   In this example, you use the catalog file you created in the [Create catalog files](#create-catalog-files) section. If you are signing another catalog file, be sure to update the *$ExamplePath* and *$CatFileName* variables with the correct information.
 
 2.  Import the code signing certificate. Import the code signing certificate that will be used to sign the catalog file to the signing user’s personal store. In this example, you use the certificate that you created in the [Create a Device Guard code signing certificate](#create-dg-code) section.
 
@@ -750,14 +723,12 @@ To deploy a catalog file with Group Policy:
 
 2.  Create a new GPO: right-click the DG Enabled PCs OU, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 13.
 
-    **Note**  
-    The DG Enabled PCs OU is just an example of where to link the test GPO that you created in this section. You can use any OU name. Also, security group filtering is an option when you consider policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section.
+   **Note**  
+   The DG Enabled PCs OU is just an example of where to link the test GPO that you created in this section. You can use any OU name. Also, security group filtering is an option when you consider policy partitioning options based on the strategy discussed in the [Approach enterprise code integrity deployment](#approach-enterprise) section.
 
-     
+   ![figure 13](images/dg-fig13-createnewgpo.png)
 
-    ![figure 13](images/dg-fig13-createnewgpo.png)
-
-    Figure 13. Create a new GPO
+   Figure 13. Create a new GPO
 
 3.  Name the new GPO **Contoso DG Catalog File GPO Test**.
 
@@ -1443,19 +1414,17 @@ To deploy and manage a code integrity policy with Group Policy:
 
 6.  In the **Display Code Integrity Policy** dialog box, select the **Enabled** option, and then specify the code integrity policy deployment path.
 
-    In this policy setting, you specify either the local path in which the policy will exist on the client computer or a Universal Naming Convention (UNC) path that the client computers will look to retrieve the latest version of the policy. This example copied the DeviceGuardPolicy.bin file onto the test machine and will enable this setting and use the file path C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 26.
+   In this policy setting, you specify either the local path in which the policy will exist on the client computer or a Universal Naming Convention (UNC) path that the client computers will look to retrieve the latest version of the policy. This example copied the DeviceGuardPolicy.bin file onto the test machine and will enable this setting and use the file path C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 26.
 
-    **Note**  
-    *DeviceGuardPolicy.bin* is not a required policy name: It was simply used in the [Create code integrity policies from golden PCs](#create-code-golden) section and so is used here, as well. Also, this policy file does not need to be copied to every computer. Alternatively, you can copy the code integrity policies to a file share to which the computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
+   **Note**  
+   *DeviceGuardPolicy.bin* is not a required policy name: It was simply used in the [Create code integrity policies from golden PCs](#create-code-golden) section and so is used here, as well. Also, this policy file does not need to be copied to every computer. Alternatively, you can copy the code integrity policies to a file share to which the computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
 
-     
+   ![figure 26](images/dg-fig26-enablecode.png)
 
-    ![figure 26](images/dg-fig26-enablecode.png)
+   Figure 26. Enable the code integrity policy
 
-    Figure 26. Enable the code integrity policy
-
-    **Note**  
-    You may have noticed that the GPO setting references a .p7b file and this example uses a .bin file for the policy. Regardless of the type of policy you deploy (.bin, .p7b, or .p7), they are all converted to SIPolicy.p7b when dropped on the Windows 10 client computers. Make your code integrity policies friendly and allow the system to convert the policy names for you to ensure that the policies are easily distinguishable when viewed in a share or any other central repository.
+   **Note**  
+   You may have noticed that the GPO setting references a .p7b file and this example uses a .bin file for the policy. Regardless of the type of policy you deploy (.bin, .p7b, or .p7), they are all converted to SIPolicy.p7b when dropped on the Windows 10 client computers. Make your code integrity policies friendly and allow the system to convert the policy names for you to ensure that the policies are easily distinguishable when viewed in a share or any other central repository.
 
      
 
