@@ -6,7 +6,7 @@ keywords: ["disk, encryption, TPM, configure, secure, script"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Set up MDT for BitLocker
