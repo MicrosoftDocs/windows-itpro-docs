@@ -43,6 +43,7 @@ Details about the alert is displayed such as:
 
 ![A detailed view of an alert when clicked](images/alert-details.png)
 
+Depending on the type of alert, you click on the name to see a detailed report about the threat. You'll see information such as a brief introduction of the threat, its interests, tools, tactics, and processes, and the areas it affects worldwide.
 
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-advanced-threat-protection.md)
