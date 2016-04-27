@@ -16,7 +16,7 @@ author: jdeckerMS
 
 -   Windows 10
 
-> **Looking for consumer information?** See [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
+> **Looking for consumer information?** See [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630) and topic-to-be-added-for-taskbars
 
 Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
 
