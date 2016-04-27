@@ -141,4 +141,8 @@ Windows Defender ATP monitors and captures questionable behavior on Windows 10 m
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
+- [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)

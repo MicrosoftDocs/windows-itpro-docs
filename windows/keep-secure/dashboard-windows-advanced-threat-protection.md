@@ -83,5 +83,9 @@ Clicking on any of these categories will navigate to the [Machines view](machine
 
 ### Related topics
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](machines-view-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate machines](machines-view-windows-defender-advanced-threat-protection.md)
+- [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
+- [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)

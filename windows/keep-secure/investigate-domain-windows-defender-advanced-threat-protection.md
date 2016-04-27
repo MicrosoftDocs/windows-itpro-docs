@@ -31,3 +31,12 @@ The **Communication with URL in organization** section provides a chronological 
 3. Click the search icon   or press **Enter**. Details about the URL are displayed. Note: search results will only be returned for URLs observed in communications from machines in the organization.
 4. Use the search filters to define the search criteria. You can also use the timeline search box to filter the displayed results of all machines in the organization observed communicating with the URL, the file associated with the communication and the last date observed.
 5. Clicking any of the machine names will take you to that machine's view, where you can continue investigate reported alerts, behaviors, and events.
+
+## Related topics
+- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
+- [Investigate machines](machines-view-windows-defender-advanced-threat-protection.md)
+- [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
+- [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
+- [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
