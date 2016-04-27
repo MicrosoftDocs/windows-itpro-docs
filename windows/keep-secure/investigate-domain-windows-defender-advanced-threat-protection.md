@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
-# Investigate a domain
+# Investigate a domain associated with a Windows Defender ATP alert
 
 Investigate a domain to see if machines and servers in your enterprise network have been communicating with a known malicious domain. 
 

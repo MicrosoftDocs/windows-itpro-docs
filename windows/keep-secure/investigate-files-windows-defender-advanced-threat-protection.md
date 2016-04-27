@@ -1,14 +1,15 @@
 ---
 title: Investigate Windows Defender Advanced Threat Protection files
 description: Use the investigation options to get details on files associated with alerts, behaviours, or events.
-keywords: investigate, investigation, files, malicious activity, attack motivation
+keywords: investigate, investigation, file, malicious activity, attack motivation
 search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
-# Investigate a file
+# Investigate a file associated with a Windows Defender ATP alert
+
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
 You can get information from the following sections in the file view:

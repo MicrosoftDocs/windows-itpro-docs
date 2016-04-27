@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
-# Investigate an IP address
+# Investigate an IP address associated with a Windows Defender ATP alert
 
 Examine possible communication between your machines and external internet protocol (IP) addresses.
 
