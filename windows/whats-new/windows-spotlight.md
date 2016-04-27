@@ -1,6 +1,6 @@
 ---
-title: Windows spotlight on the lock screen (Windows 10)
-description: Windows spotlight is an option for the lock screen background that displays different background images on the lock screen.
+title: Windows Spotlight on the lock screen (Windows 10)
+description: Windows Spotlight is an option for the lock screen background that displays different background images on the lock screen.
 ms.assetid: 1AEA51FA-A647-4665-AD78-2F3FB27AD46A
 keywords: ["lockscreen"]
 ms.prod: W10
@@ -9,21 +9,21 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Windows spotlight on the lock screen
+# Windows Spotlight on the lock screen
 
 
 **Applies to**
 
 -   Windows 10
 
-Windows spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows spotlight is now available in Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education. For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows spotlight background.
+Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is now available in Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education. For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows Spotlight background.
 
-## What does Windows spotlight include?
+## What does Windows Spotlight include?
 
 
 -   **Background image**
 
-    The Windows spotlight displays a new image on the lock screen each day. The initial background image is included during installation. Additional images are downloaded on ongoing basis.
+    The Windows Spotlight displays a new image on the lock screen each day. The initial background image is included during installation. Additional images are downloaded on ongoing basis.
 
     ![lock screen image](images/lockscreen.png)
 
@@ -31,17 +31,22 @@ Windows spotlight is an option for the lock screen background that displays diff
 
     The lock screen background will occasionally suggest Windows 10 features that the user hasn't tried yet, such as **Snap assist**.
 
-## How do you turn off Windows spotlight?
+## How do you turn off Windows spotlight locally?
 
 
-Go to **Settings** &gt; **Personalization** &gt; **Lock screen** &gt; **Background** &gt; **Windows spotlight** &gt; select a different lock screen background
+To turn off Windows Spotlight locally, go to **Settings** &gt; **Personalization** &gt; **Lock screen** &gt; **Background** &gt; **Windows spotlight** &gt; select a different lock screen background
 
 ![personalization background](images/spotlight.png)
 
-## How do you disable Windows spotlight for managed devices?
+## How do you disable Windows Spotlight for managed devices?
 
 
-Windows spotlight is enabled by default. Administrators can replace Windows spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
+Windows 10, Version 1607, provides two new Group Policy settings to help you manage Spotlight on employees' computers.
+
+* **User Configuration\Administrative Templates\Windows Components\Cloud Content\Turn off all Windows Spotlight features** enables enterprises to completely disable all Spotlight features in a single setting.
+* **User Configuration\Administrative Templates\Windows Components\Cloud Content\Configure Spotlight on lock screen** specifically controls the use of the dynamic Spotlight image on the lock screen, and can be enabled or disabled. (A third setting, **Enterprise Spotlight**, does not work in Windows 10, Version 1607.)
+
+Windows Spotlight is enabled by default. Administrators can replace Windows Spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
 
 ![lockscreen policy details](images/lockscreenpolicy.png)
 
