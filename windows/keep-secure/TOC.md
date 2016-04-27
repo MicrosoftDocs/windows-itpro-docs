@@ -415,7 +415,7 @@
 ##### [View the  Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 ##### [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-##### [Investigate machines](machines-view-windows-defender-advanced-threat-protection.md)
+##### [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md)
 ##### [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
 ##### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
