@@ -11,6 +11,8 @@ author: mjcaparas
 
 # View and organize the Windows Defender Advanced Threat Protection Alerts queue
 
+**Applies to:**
+
 - Windows 10 Insider Preview
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>

@@ -10,7 +10,7 @@ ms.sitesec: library
 
 # Minimum requirements for Windows Defender ATP
 
-**Applies to**
+**Applies to:**
 
 - Windows 10 Insider Preview
 

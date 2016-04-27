@@ -11,7 +11,7 @@ author: mjcaparas
 
 # Windows Defender Advanced Threat Protection
 
-**Applies to**
+**Applies to:**
 
 - Windows 10 Insider Preview
 

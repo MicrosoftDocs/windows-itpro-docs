@@ -10,6 +10,12 @@ author: mjcaparas
 ---
 # Investigate a file associated with a Windows Defender ATP alert
 
+**Applies to:**
+
+- Windows 10 Insider Preview
+
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
 You can get information from the following sections in the file view:
