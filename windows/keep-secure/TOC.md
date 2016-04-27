@@ -417,7 +417,6 @@
 ##### [Investigate alerts](investigate-alerts-windows-advanced-threat-protection.md)
 ##### [Investigate machines](machines-view-windows-advanced-threat-protection.md)
 ##### [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
-###### [Submit files to the Deep analysis feature](deep-analysis-windows-advanced-threat-protection.md)
 ##### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](manage-alerts-windows-advanced-threat-protection.md)
