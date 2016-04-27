@@ -41,7 +41,7 @@ Details about the alert is displayed such as:
 - The scope of the breach
 - The alert timeline
 
-[A detailed view of an alert when clicked](images/alert-details.png)
+![A detailed view of an alert when clicked](images/alert-details.png)
 
 
 ### Related topics
