@@ -72,7 +72,7 @@ Investigate the details of an alert raised on a specific machine to identify oth
 
 You can click on affected machines whenever you see them in the portal to open a detailed report about that machine. Affected machines are identified in the following areas:
 
-- The [Machines view](machines-view-windows-defender-advanced-threat-protection.md)
+- The [Machines view](#Investigate-machines-in-the-Windows-Defender-ATP-Machines-view)
 - The [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 - The [Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - Any individual alert

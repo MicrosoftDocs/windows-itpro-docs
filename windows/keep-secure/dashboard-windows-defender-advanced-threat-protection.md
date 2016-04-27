@@ -46,7 +46,7 @@ This tile shows you a list of machines with the highest number of active alerts.
 
 Click the name of the machine to see details about that machine. See the [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-a-machine) topic for more information.
 
-You can also click **Machines view** at the top of the tile to go directly to the **Machines view**, sorted by the number of active alerts. See the [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](machines-view-windows-defender-advanced-threat-protection.md) topic for more information.
+You can also click **Machines view** at the top of the tile to go directly to the **Machines view**, sorted by the number of active alerts. See the [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) topic for more information.
 
 ## Status
 The **Status** tile informs you if the service is active and running and the specific number of machines (endpoints) reporting to Windows Defender ATP.
@@ -77,14 +77,14 @@ The chart is sorted into five categories:
 
 Threats are considered "active" if there is a very high probability that the malware was executing on your network, as opposed to statically located on-disk.
 
-Clicking on any of these categories will navigate to the [Machines view](machines-view-windows-defender-advanced-threat-protection.md), filtered by the appropriate category. This lets you see a detailed breakdown of which machines have active malware detections, and how many threats were detected per machine.
+Clicking on any of these categories will navigate to the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md), filtered by the appropriate category. This lets you see a detailed breakdown of which machines have active malware detections, and how many threats were detected per machine.
 
 > **Note**&nbsp;&nbsp;The **Active malware** tile will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 ### Related topics
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate machines](machines-view-windows-defender-advanced-threat-protection.md)
+- [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
