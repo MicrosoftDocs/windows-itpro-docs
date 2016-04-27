@@ -1,8 +1,8 @@
 ---
 title: Additional Windows Defender ATP configuration settings
 description: Use the Group Policy Console to configure settings that enable sample sharing from your endpoints. These settings are used in the deep analysis feature.
-keywords: configuration settings, Windows Defender ATP configuration settings, Windows Defender Advanced Threat Protection configuration settings, group policy Management Editor, computer configuration, policies, administrative templates, 
-search.product: eADQiWindows 10XVcnh 
+keywords: configuration settings, Windows Defender ATP configuration settings, Windows Defender Advanced Threat Protection configuration settings, group policy Management Editor, computer configuration, policies, administrative templates,
+search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +24,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
     configuration package:
 
     a.  Copy _AtpConfiguration.admx_ into _C:\\Windows\\PolicyDefinitions_
-    
+
     b.  Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_
 
 2.  Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure and click **Edit**.
@@ -38,7 +38,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 6.  Choose to enable or disable sample sharing from your endpoints.
 
 ## Related topics
-- [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md)
-- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-advanced-threat-protection.md)
-- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-advanced-threat-protection.md)
-- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md)
+- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
+- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
