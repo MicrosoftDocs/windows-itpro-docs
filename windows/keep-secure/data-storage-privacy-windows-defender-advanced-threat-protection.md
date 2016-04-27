@@ -63,7 +63,7 @@ Microsoft provides customers with detailed information about our security and co
 When you onboard your service during TAP, you will be asked to choose to store your data in a datacenter either in Europe or United States. Your data will not be copied or moved outside of the datacenter you choose, except in the following specific circumstance:
 
 1.	You choose Europe as your datacenter, and
-2.	You [submit a file for deep analysis](submit-files-for-analysis#investigate-files-windows-defender-advanced-threat-protection.md).
+2.	You [submit a file for deep analysis](investigate-files-windows-defender-advanced-threat-protection.md#submit-files-for-analysis).
 
 In this circumstance, the submitted file will be sent to the US deep analysis laboratory. The results of the analysis will be stored in the European datacenter, and the file and data will be deleted from the US deep analysis laboratory and datacenter.
 
