@@ -27,9 +27,9 @@ In previous versions of Windows and Windows Server, Microsoft used telemetry to 
 
 Microsoft is committed to improving customer experiences in a mobile-first and cloud-first world, and it all starts with our customers. Telemetry is one critical way Microsoft is using data to improve our products and services. Telemetry gives every enterprise customer a voice that helps us shape future versions of Windows, Windows Server and System Center, allowing us to respond quickly to your feedback and providing new features and improved quality to our customers.
 
-Our goal is to leverage the aggregated data to drive changes in the product and ecosystem to improve our customer experiences. We are also partnering with enterprises to provide added value from the telemetry information shared by their devices. Some examples include identifying outdated patches and downloading the latest antimalware signatures to help keep their devices secure, identifying application compatibility issues prior to upgrades, gaining insights into driver reliability issues affecting other customers, and using usage data to tune some of their operations to reduce the total cost of ownership (TCO) and downtime.
+Our goal is to leverage the aggregated data to drive changes in the product and ecosystem to improve our customer experiences. We are also partnering with enterprises to provide added value from the telemetry information shared by their devices. Some examples include identifying outdated patches and downloading the latest antimalware signatures to help keep their devices secure, identifying application compatibility issues prior to upgrades, and gaining insights into driver reliability issues affecting other customers.
 
-For Windows 10, we invite IT pros to join the Windows Insider Program to give us feedback on what we can do to make Windows work better for youcr organization.
+For Windows 10, we invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows work better for youcr organization.
 
 ## How is telemetry data handled by Microsoft?
 
@@ -194,7 +194,7 @@ If the Connected User Experience and Telemetry component detects a problem on Wi
 
 The Full level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the **Basic**, **Enhanced**, and **Security** levels.
 
-Additionally, at this level, devices opted in to the Windows Insider Program will send events, such as reliability and app responsiveness. that can show Microsoft how pre-release binaries and features are performing. These events help us make decisions on which builds are flighted. All devices in the Windows Insider Program are automatically set to this level.
+Additionally, at this level, devices opted in to the [Windows Insider Program](http://insider.windows.com) will send events, such as reliability and app responsiveness. that can show Microsoft how pre-release binaries and features are performing. These events help us make decisions on which builds are flighted. All devices in the [Windows Insider Program](http://insider.windows.com) are automatically set to this level.
 
 If a device experiences problems that are difficult to identify or repeat using Microsoft’s internal testing, additional data becomes necessary. This data can include any user content that might have triggered the problem and is gathered from a small sample of devices that have both opted into the **Full** telemetry level and have exhibited the problem.
 
