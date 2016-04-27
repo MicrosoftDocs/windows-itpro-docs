@@ -6,6 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+author: mjcaparas
 ---
 
 # Use the Windows Defender Advanced Threat Protection portal
