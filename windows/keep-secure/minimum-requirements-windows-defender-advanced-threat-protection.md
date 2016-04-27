@@ -48,12 +48,12 @@ TAP.
 Server and mobile versions of Windows are not supported.
 
 Internet connectivity on endpoints is also required. See the
-[Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md)
+[Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 section for additional proxy configuration settings.
 
 Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10 TAP, but if it has been
 disabled you can turn it on by following the instructions in the
-[Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) section.
+[Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section.
 
 ### Deployment channel operating system requirements
 
