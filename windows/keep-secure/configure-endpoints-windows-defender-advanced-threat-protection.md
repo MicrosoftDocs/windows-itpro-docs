@@ -91,6 +91,6 @@ See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding iss
 
 ## Related topics
 - [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
-- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
+- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
