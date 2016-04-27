@@ -2,7 +2,7 @@
 title: Manage Windows Defender Advanced Threat Protection alerts
 description: Change the status of alerts, create suppression rules to hide alerts, submit comments, and review change history for individual alerts with the Manage Alert menu.
 keywords: manage alerts, manage, alerts, status, new, in progress, resolved, resolve alerts, suppress, supression, rules, context, history, comments, changes
-search.product: eADQiWindows 10XVcnh 
+search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,15 +14,15 @@ ms.sitesec: library
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Windows Defender ATP notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu. 
+Windows Defender ATP notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
 
-See the [Investigate Windows Defender ATP alerts](investigate-alerts-windows-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts) topic for more details on how to investigate alerts.
+See the [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts) topic for more details on how to investigate alerts.
 
-Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the top of the alert to access the Manage Alert menu and manage alerts. 
+Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the top of the alert to access the Manage Alert menu and manage alerts.
 
 ![The manage alert menu lets you change the status of an alert, create suppression rules, or enter comments](images/manage-alert-menu.png)
 
-The **Manage alert** icon appears on the alert's heading in the **New**, **In Progress**, or **Resolved** queues, and on the details page for individual alerts. 
+The **Manage alert** icon appears on the alert's heading in the **New**, **In Progress**, or **Resolved** queues, and on the details page for individual alerts.
 
 You can use the **Manage Alert** menu to:
 
@@ -57,18 +57,18 @@ The comments and change of status are recorded in the [Comments and history wind
 
 ## Suppress alerts
 
-Windows Defender ATP lets you create suppression rules so you can limit the alerts you see in the **Alerts queue**. 
+Windows Defender ATP lets you create suppression rules so you can limit the alerts you see in the **Alerts queue**.
 
-Suppression rules can be created from an existing alert. 
+Suppression rules can be created from an existing alert.
 
 When a suppression rule is created, it will take effect from this point onwards. It will not affect existing alerts already in the queue, but new alerts triggered after the rule is created will not be displayed.
 
-There are two contexts for a suppression rule that you can choose from: 
+There are two contexts for a suppression rule that you can choose from:
 
 - **Suppress alert on this machine**
 - **Suppress alert in my organization**
 
-The context of the rule lets you tailor the queue to ensure that only alerts you are interested in will appear. You can use the examples in the following table to help you choose the context for a suppression rule: 
+The context of the rule lets you tailor the queue to ensure that only alerts you are interested in will appear. You can use the examples in the following table to help you choose the context for a suppression rule:
 
 **Context** | **Definition** |**Example scenarios**
 ---|---|---
@@ -90,14 +90,14 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 
   ![Click the settings icon and then Suppression rules to create and modify rules](images/suppression-rules.png)
 
-> **Note**&nbsp;&nbsp;You can also click **See rules** in the confirmation window that appears when you suppress an alert. 
+> **Note**&nbsp;&nbsp;You can also click **See rules** in the confirmation window that appears when you suppress an alert.
 
 The list of suppression rules shows all the rules that users in your organization have created.
-Each rule shows: 
+Each rule shows:
 
 - (1) The title of the alert that is suppressed
 - (2) Whether the alert was suppressed for a single machine (clicking the machine name will allow you to investigate the machine) or the entire organization
-- (3) The date when the alert was suppressed 
+- (3) The date when the alert was suppressed
 - (4) An option to delete the suppression rule, which will cause alerts with this title to be displayed in the queue from this point onwards.
 
 ![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
@@ -112,7 +112,7 @@ Whenever a change or comment is made to an alert, it is recorded in the **Commen
 1. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the heading of the alert.
 2. Click **Comments and history** to view related comments and history on the alert.
 
-Comments are indicated by a message box icon (![The comments icon looks like a speech bubble](images/comments-icon.png)) and include the username of the commenter and the time the comment was made. 
+Comments are indicated by a message box icon (![The comments icon looks like a speech bubble](images/comments-icon.png)) and include the username of the commenter and the time the comment was made.
 
 **Add a new comment:**
 
@@ -123,13 +123,12 @@ The comment will appear instantly.
 
 You will also be prompted to enter a comment if you change the status of an alert to **Resolved**.
 
-Changes are indicated by a clock icon (![The changes icon looks like an analog clock face](images/changes-icon.png)), and are automatically recorded when: 
+Changes are indicated by a clock icon (![The changes icon looks like an analog clock face](images/changes-icon.png)), and are automatically recorded when:
 
 - The alert is created
-- The status of the alert is changed 
+- The status of the alert is changed
 
 ### Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-advanced-threat-protection.md)
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](machines-view-windows-advanced-threat-protection.md)
-- [Submit files to the Windows Defender ATP Deep analysis feature](deep-analysis-windows-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines view](machines-view-windows-defender-advanced-threat-protection.md)

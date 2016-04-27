@@ -2,7 +2,7 @@
 title: View and organize the Windows Defender ATP Alerts queue
 description: Learn about how the Windows Defender ATP alerts queue work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period
-search.product: eADQiWindows 10XVcnh 
+search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,7 +37,7 @@ There are three mechanisms to pivot the queue against:
 
 1. Sort the queue by opening the drop-down menu in the **Sort by** field and choosing:
 
-  - **Newest** - Sorts alerts based on when the alert was last seen on an endpoint. 
+  - **Newest** - Sorts alerts based on when the alert was last seen on an endpoint.
   - **Time in queue** - Sorts alerts by the length of time an alert has been in the queue.
   - **Severity** - Sorts alerts by their level of severity.
 
@@ -56,10 +56,9 @@ There are three mechanisms to pivot the queue against:
   - **6 months**
 
   > **Note**&nbsp;&nbsp;You can change the sort order (for example, from most recent to least recent) by clicking the sort order icon ![the sort order icon looks like two arrows on top of each other](images/sort-order-icon.png)
-  
+
 ### Related topics
-  
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](machines-view-windows-advanced-threat-protection.md)
-- [Submit files to the Windows Defender ATP Deep analysis feature](deep-analysis-windows-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-advanced-threat-protection.md)
+
+- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines view](machines-view-windows-defender-advanced-threat-protection.md)
+- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)

@@ -2,7 +2,7 @@
 title: Configure Windows Defender ATP endpoints
 description: Use Group Policy to deploy the configuration package or do manual registry changes on endpoints so that they are onboarded to the service.
 keywords: configure endpoints, client onboarding, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
-search.product: eADQiWindows 10XVcnh 
+search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +22,7 @@ You can use a Group Policy (GP) configuration package or an automated script to 
 1. Open the SCCM configuration package .zip file (*WindowsATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com):  <span style="background-color: yellow;">Naama: Confirm package name</span>
 
   a. Click **Client onboarding** on the **Navigation pane**.
-  
+
   b. Select **SCCM**, click **Download package**, and save the .zip file. <span style="background-color: yellow;">Iaan: Need to confirm the UI for this</span>
 
 2.	Copy the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package.
@@ -46,9 +46,9 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 1.  Open the GP configuration package .zip file (*WindowsATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com):
 
     a.  Click **Client onboarding** on the **Navigation pane**.
-    
+
     b.  Select **GP**, click **Download package** and save the .zip file.
-    
+
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called _*OptionalParamsPolicy*_ and the file _*WindowsATPOnboardingPackage.cmd*_.
 
 3. Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
@@ -65,9 +65,9 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 9. Click **OK** and close any open GPMC windows.
 
-For additional settings, see the [Additional configuration settings section](additional-configuration-windows-advanced-threat-protection.md).
+For additional settings, see the [Additional configuration settings section](additional-configuration-windows-defender-advanced-threat-protection.md).
 
-## Configure endpoints manually with registry changes 
+## Configure endpoints manually with registry changes
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
 1.  Extract the contents of the configuration package to a location on
@@ -77,9 +77,9 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
     script:
 
     a.  Click **Start** and type **cmd**.
-    
+
     b.  Right-click **Command prompt** and select **Run as administrator**.
-    
+
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
 3.  Type the location of the script file. If you copied the file the
@@ -87,10 +87,10 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
 4.  Press the  **Enter** key or click  **OK**.
 
-See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) topic for details on how you can manually validate that the endpoint is compliant and correctly reports telemetry.
+See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for details on how you can manually validate that the endpoint is compliant and correctly reports telemetry.
 
 ## Related topics
-- [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md)
-- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-advanced-threat-protection.md)
-- [Additional Windows Defender ATP configuration settings](additional-configuration-windows-advanced-threat-protection.md)
-- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md)
+- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
+- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
+- [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

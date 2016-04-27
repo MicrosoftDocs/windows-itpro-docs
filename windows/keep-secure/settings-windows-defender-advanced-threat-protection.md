@@ -48,7 +48,7 @@ To set the time zone:
 3.	The time zone indicator changes to **Timezone:Local**. Click it again to change back to **Timezone:UTC**.
 
 ## Suppression rules
-The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. See [Suppress alerts](manage-alerts-windows-advanced-threat-protection.md#suppress-alerts).
+The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. See [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).
 
 ## License
 Click the license link in the **Settings** menu to view the license agreement information for Windows Defender ATP.

@@ -2,7 +2,7 @@
 title: Investigate Windows Defender Advanced Threat Protection alerts
 description: Use the investigation options to get details on which alerts are affecting your network, what they mean, and how to resolve them.
 keywords: investigate, investigation, machines, machine, endpoints, endpoint, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
-search.product: eADQiWindows 10XVcnh 
+search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,7 +14,7 @@ ms.sitesec: library
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Alerts in Windows Defender ATP indicate possible security breaches on endpoints in your organization. 
+Alerts in Windows Defender ATP indicate possible security breaches on endpoints in your organization.
 
 There are three alert severity levels, described in the following table.
 
@@ -26,13 +26,13 @@ Low (Yellow) | Threats associated with prevalent malware and hack-tools that pos
 
 Reviewing the various alerts and their severity can help you take the appropriate action to protect your organization's endpoints.
 
-Alerts are organized in three queues, by their workflow status: 
+Alerts are organized in three queues, by their workflow status:
 
 - **New**
 - **In progress**
 - **Resolved**
 
-You can investigate alerts by clicking an alert in [any of the alert queues](alerts-queue-windows-advanced-threat-protection.md).
+You can investigate alerts by clicking an alert in [any of the alert queues](alerts-queue-windows-defender-advanced-threat-protection.md).
 
 Details about the alert is displayed such as:
 - Alert information such as when it was last observed
@@ -46,7 +46,6 @@ Details about the alert is displayed such as:
 Depending on the type of alert, you click on the name to see a detailed report about the threat. You'll see information such as a brief introduction of the threat, its interests, tools, tactics, and processes, and the areas it affects worldwide.
 
 ### Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-advanced-threat-protection.md)
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-advanced-threat-protection.md)
-- [Submit files to the Windows Defender ATP Deep analysis feature](deep-analysis-windows-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)

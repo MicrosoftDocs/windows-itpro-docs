@@ -1,8 +1,8 @@
 ---
-title: Monitor the Windows Defender ATP onboarding 
+title: Monitor the Windows Defender ATP onboarding
 description: Monitor the onboarding of the Windows Defender ATP service to ensure your endpoints are correctly configured and are sending telemetry reports.
 keywords: monitor onboarding, monitor Windows Defender ATP onboarding, monitor Windows Defender Advanced Threat Protection onboarding
-search.product: eADQiWindows 10XVcnh 
+search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,9 +32,9 @@ Monitoring can be done directly on the portal, or by using System Center Configu
 
 > **Note**&nbsp;&nbsp;It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
-## Monitor with System Center Configuration Manager 
+## Monitor with System Center Configuration Manager
 
-Monitoring with SCCM consists of two parts: 
+Monitoring with SCCM consists of two parts:
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the endpoints in your network.
 
@@ -50,7 +50,7 @@ Monitoring with SCCM consists of two parts:
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
-If there are failed deployments (endpoints with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the endpoints. See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) topic for more information.
+If there are failed deployments (endpoints with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the endpoints. See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for more information.
 
 <span style="background-color: yellow;">Naama: Is this a correct process for idendtifying/resolving issues? YES!</span>
 
@@ -66,30 +66,30 @@ If there are failed deployments (endpoints with **Error**, **Requirements Not Me
 
 2. In the SCCM console, click **Assets and Compliance** at the bottom of the navigation pane.
 
-3. Click **Overview** and then **Compliance Settings**. 
+3. Click **Overview** and then **Compliance Settings**.
 
-4. In the main area of the SCCM console, click **Configuration Baselines** and import the provided cab. <span style="background-color: yellow;">Iaan: Need to confirm that 'import' is available/ UI is correct</span> 
- 
-5. Right-click the imported baseline and deploy to a predefined device collection. <span style="background-color: yellow;">Naama: Is this 'export' as in the screenshot, or is that showing something else?</span> 
- 
+4. In the main area of the SCCM console, click **Configuration Baselines** and import the provided cab. <span style="background-color: yellow;">Iaan: Need to confirm that 'import' is available/ UI is correct</span>
+
+5. Right-click the imported baseline and deploy to a predefined device collection. <span style="background-color: yellow;">Naama: Is this 'export' as in the screenshot, or is that showing something else?</span>
+
   ![image](images/export-sccm.png)  
-  
+
   <span style="background-color: yellow;">Iaan: Need to confirm this is what it looks like</span>
 
-6. In the SCCM console, click **Monitoring** at the bottom of the navigation pane. 
+6. In the SCCM console, click **Monitoring** at the bottom of the navigation pane.
 
-7. Click **Overview** and then **Deployments**. 
+7. Click **Overview** and then **Deployments**.
 
 8. Click the deployment with the package name <span style="background-color: yellow;">Naama: What is the name of the deployment, will it always be the same for every user/installation?</span>
 
 <span style="background-color: yellow;">Naama: How does one know if there is an issue?</span>
 
-If there are non-compliant endpoints (endpoints with ?????), you may need to troubleshoot the endpoints. See the [Troubleshoot Windows Defender ATP onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md) topic for more information.
+If there are non-compliant endpoints (endpoints with ?????), you may need to troubleshoot the endpoints. See the [Troubleshoot Windows Defender ATP onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for more information.
 
 <span style="background-color: yellow;">Naama: Is this a correct process for resolving issues?</span>]]]
 
 ## Related topics
-- [Windows Defender ATP service onboarding](service-onboarding-windows-advanced-threat-protection.md)
-- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-advanced-threat-protection.md)
-- [Additional Windows Defender ATP configuration settings](additional-configuration-windows-advanced-threat-protection.md)
-- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-advanced-threat-protection.md)
+- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
+- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
