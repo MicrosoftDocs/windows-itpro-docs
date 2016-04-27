@@ -97,5 +97,6 @@ Windows Advanced Threat Protection Service failed to persist onboarding informat
 ## Related topics
 - [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
+- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
+
