@@ -79,7 +79,7 @@ Network Monitor includes parsers for the ISAKMP (IKE), AH, and ESP protocols. Ne
 
 Network Monitor is available as a free download from Microsoft at <http://go.microsoft.com/fwlink/?linkid=94770>.
 
-**Next: **[Determining the Trusted State of Your Computers](../p_server_archive/determining-the-trusted-state-of-your-computers.md)
+**Next: **[Determining the Trusted State of Your Computers](determining-the-trusted-state-of-your-computers.md)
 
  
 

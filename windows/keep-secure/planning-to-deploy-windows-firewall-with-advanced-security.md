@@ -8,7 +8,7 @@ author: brianlic-msft
 # Planning to Deploy Windows Firewall with Advanced Security
 
 
-After you collect information about your environment and decide on a design by following the guidance in the [Windows Firewall with Advanced Security Design Guide](../p_server_archive/windows-firewall-with-advanced-security-design-guide.md), you can begin to plan the deployment of your design. With the completed design and the information in this topic, you can determine which tasks to perform to deploy Windows Firewall with Advanced Security in your organization.
+After you collect information about your environment and decide on a design by following the guidance in the [Windows Firewall with Advanced Security Design Guide](windows-firewall-with-advanced-security-design-guide.md), you can begin to plan the deployment of your design. With the completed design and the information in this topic, you can determine which tasks to perform to deploy Windows Firewall with Advanced Security in your organization.
 
 ## Reviewing your Windows Firewall with Advanced Security Design
 
@@ -17,11 +17,11 @@ If the design team that created the Windows Firewall with Advanced Security desi
 
 -   The design team's strategy for determining how WMI and security group filters attached to the GPOs will determine which computers apply to which GPO. The deployment team can refer to the following topics in the Windows Firewall with Advanced Security Design Guide:
 
-    -   [Planning Isolation Groups for the Zones](../p_server_archive/planning-isolation-groups-for-the-zones.md)
+    -   [Planning Isolation Groups for the Zones](planning-isolation-groups-for-the-zones.md)
 
-    -   [Planning the GPOs](../p_server_archive/planning-the-gpos.md)
+    -   [Planning the GPOs](planning-the-gpos.md)
 
-    -   [Planning GPO Deployment](../p_server_archive/planning-gpo-deployment.md)
+    -   [Planning GPO Deployment](planning-gpo-deployment.md)
 
 -   The communication to be allowed between members of each of the zones in the isolated domain and computers that are not part of the isolated domain or members of the isolated domain's exemption list.
 
@@ -39,7 +39,7 @@ If the design team that created the Windows Firewall with Advanced Security desi
 
     If at least one set of each does not match between two computers, then the computers cannot successfully communicate.
 
-After the design and deployment teams agree on these issues, they can proceed with the deployment of the Windows Firewall with Advanced Security design. For more information, see [Implementing Your Windows Firewall with Advanced Security Design Plan](../p_server_archive/implementing-your-windows-firewall-with-advanced-security-design-plan.md).
+After the design and deployment teams agree on these issues, they can proceed with the deployment of the Windows Firewall with Advanced Security design. For more information, see [Implementing Your Windows Firewall with Advanced Security Design Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md).
 
  
 

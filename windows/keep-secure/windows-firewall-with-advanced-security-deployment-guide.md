@@ -17,21 +17,21 @@ You can use Windows Firewall to control access to the computer from the network.
 
 This guide is intended for use by system administrators and system engineers. It provides detailed guidance for deploying a Windows Firewall with Advanced Security design that you or an infrastructure specialist or system architect in your organization has selected.
 
-Begin by reviewing the information in [Planning to Deploy Windows Firewall with Advanced Security](../p_server_archive/planning-to-deploy-windows-firewall-with-advanced-security.md).
+Begin by reviewing the information in [Planning to Deploy Windows Firewall with Advanced Security](planning-to-deploy-windows-firewall-with-advanced-security.md).
 
-If you have not yet selected a design, we recommend that you wait to follow the instructions in this guide until after you have reviewed the design options in the [Windows Firewall with Advanced Security Design Guide](../p_server_archive/windows-firewall-with-advanced-security-design-guide.md) and selected the one most appropriate for your organization.
+If you have not yet selected a design, we recommend that you wait to follow the instructions in this guide until after you have reviewed the design options in the [Windows Firewall with Advanced Security Design Guide](windows-firewall-with-advanced-security-design-guide.md) and selected the one most appropriate for your organization.
 
 After you select your design and gather the required information about the zones (isolation, boundary, and encryption), operating systems to support, and other details, you can then use this guide to deploy your Windows Firewall with Advanced Security design in your production environment. This guide provides steps for deploying any of the following primary designs that are described in the Design Guide:
 
--   [Basic Firewall Policy Design](../p_server_archive/basic-firewall-policy-design.md)
+-   [Basic Firewall Policy Design](basic-firewall-policy-design.md)
 
--   [Domain Isolation Policy Design](../p_server_archive/domain-isolation-policy-design.md)
+-   [Domain Isolation Policy Design](domain-isolation-policy-design.md)
 
--   [Server Isolation Policy Design](../p_server_archive/server-isolation-policy-design.md)
+-   [Server Isolation Policy Design](server-isolation-policy-design.md)
 
--   [Certificate-based Isolation Policy Design](../p_server_archive/certificate-based-isolation-policy-design.md)
+-   [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)
 
-Use the checklists in [Implementing Your Windows Firewall with Advanced Security Design Plan](../p_server_archive/implementing-your-windows-firewall-with-advanced-security-design-plan.md) to determine how best to use the instructions in this guide to deploy your particular design.
+Use the checklists in [Implementing Your Windows Firewall with Advanced Security Design Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md) to determine how best to use the instructions in this guide to deploy your particular design.
 
 **Caution**  
 We recommend that you use the techniques documented in this guide only for GPOs that must be deployed to the majority of the computers in your organization, and only when the OU hierarchy in your Active Directory domain does not match the deployment needs of these GPOs. These characteristics are typical of GPOs for server and domain isolation scenarios, but are not typical of most other GPOs. When the OU hierarchy supports it, deploy a GPO by linking it to the lowest level OU that contains all of the accounts to which the GPO applies.
@@ -51,7 +51,7 @@ In a large enterprise environment with hundreds or thousands of GPOs, using this
 
 This guide does not provide:
 
--   Guidance for creating firewall rules for specific network applications. For this information, see [Planning Settings for a Basic Firewall Policy](../p_server_archive/planning-settings-for-a-basic-firewall-policy.md) in the Windows Firewall with Advanced Security Design Guide.
+-   Guidance for creating firewall rules for specific network applications. For this information, see [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md) in the Windows Firewall with Advanced Security Design Guide.
 
 -   Guidance for setting up Active Directory Domain Services (AD DS) to support Group Policy. For more information, see Active Directory Domain Services (<http://go.microsoft.com/fwlink/?linkid=102573>) and Group Policy (<http://go.microsoft.com/fwlink/?linkid=93542>).
 

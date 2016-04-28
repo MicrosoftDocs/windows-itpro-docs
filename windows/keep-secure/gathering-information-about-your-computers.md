@@ -46,7 +46,7 @@ Whether you use an automatic, manual, or hybrid option to gather the information
 
 This inventory will be critical for planning and implementing your Windows Firewall with Advanced Security design.
 
-**Next: **[Gathering Other Relevant Information](../p_server_archive/gathering-other-relevant-information.md)
+**Next: **[Gathering Other Relevant Information](gathering-other-relevant-information.md)
 
  
 

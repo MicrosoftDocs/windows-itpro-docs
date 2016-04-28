@@ -16,7 +16,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 **To deploy predefined firewall rules that block outbound network traffic for common network functions**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](../p_server_archive/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Outbound Rules**.
 

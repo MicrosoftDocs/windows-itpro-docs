@@ -16,13 +16,13 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 This topic describes how to create a standard port rule for a specified protocol or TCP or UDP port number. For other inbound port rule types, see:
 
--   [Create an Inbound ICMP Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](../p_server_archive/create-an-inbound-icmp-rule-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
+-   [Create an Inbound ICMP Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](create-an-inbound-icmp-rule-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
 
--   [Create Inbound Rules to Support RPC on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](../p_server_archive/create-inbound-rules-to-support-rpc-on-windows-8-windows-7--windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
+-   [Create Inbound Rules to Support RPC on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](create-inbound-rules-to-support-rpc-on-windows-8-windows-7--windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
 
 **To create an inbound port rule**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](../p_server_archive/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Inbound Rules**.
 
@@ -38,7 +38,7 @@ This topic describes how to create a standard port rule for a specified protocol
 5.  On the **Program** page, click **All programs**, and then click **Next**.
 
     **Note**  
-    This type of rule is often combined with a program or service rule. If you combine the rule types, you get a firewall rule that limits traffic to a specified port and allows the traffic only when the specified program is running. The specified program cannot receive network traffic on other ports, and other programs cannot receive network traffic on the specified port. If you choose to do this, follow the steps in the [Create an Inbound Program or Service Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](../p_server_archive/create-an-inbound-program-or-service-rule-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md) procedure in addition to the steps in this procedure to create a single rule that filters network traffic using both program and port criteria.
+    This type of rule is often combined with a program or service rule. If you combine the rule types, you get a firewall rule that limits traffic to a specified port and allows the traffic only when the specified program is running. The specified program cannot receive network traffic on other ports, and other programs cannot receive network traffic on the specified port. If you choose to do this, follow the steps in the [Create an Inbound Program or Service Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](create-an-inbound-program-or-service-rule-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md) procedure in addition to the steps in this procedure to create a single rule that filters network traffic using both program and port criteria.
 
      
 

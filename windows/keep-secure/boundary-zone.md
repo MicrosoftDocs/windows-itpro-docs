@@ -22,7 +22,7 @@ The goal of this process is to determine whether the risk of adding a computer t
 
 You must create a group in Active Directory to contain the members of the boundary zones. The settings and rules for the boundary zone are typically very similar to those for the isolated domain, and you can save time and effort by copying those GPOs to serve as a starting point. The primary difference is that the authentication connection security rule must be set to request authentication for both inbound and outbound traffic, instead of requiring inbound authentication and requesting outbound authentication as used by the isolated domain.
 
-Creation of the group and how to link it to the GPOs that apply the rules to members of the group are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](../p_server_archive/planning-group-policy-deployment-for-your-isolation-zones.md) section.
+Creation of the group and how to link it to the GPOs that apply the rules to members of the group are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
 ## GPO settings for boundary zone servers running Windows Server 2012, Windows Server 2008 or Windows Server 2008 R2
 
@@ -49,14 +49,14 @@ The boundary zone GPO for computers running Windows Server 2012, Windows Server�
 
 -   A registry policy that includes the following values:
 
-    -   Enable PMTU discovery. Enabling this setting allows TCP/IP to dynamically determine the largest packet size supported across a connection. The value is found at HKLM\\System\\CurrentControlSet\\Services\\TCPIP\\Parameters\\EnablePMTUDiscovery (dword). The sample GPO preferences XML file in [Appendix A: Sample GPO Template Files for Settings Used in this Guide](../p_server_archive/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) sets the value to **1**.
+    -   Enable PMTU discovery. Enabling this setting allows TCP/IP to dynamically determine the largest packet size supported across a connection. The value is found at HKLM\\System\\CurrentControlSet\\Services\\TCPIP\\Parameters\\EnablePMTUDiscovery (dword). The sample GPO preferences XML file in [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) sets the value to **1**.
 
     **Note**  
-    For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](../p_server_archive/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md)
+    For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md)
 
      
 
-**Next: **[Encryption Zone](../p_server_archive/encryption-zone.md)
+**Next: **[Encryption Zone](encryption-zone.md)
 
  
 

@@ -14,13 +14,13 @@ The bulk of the work in planning server and domain isolation is determining whic
 
 The zones described in this guide include the following:
 
--   [Exemption List](../p_server_archive/exemption-list.md)
+-   [Exemption List](exemption-list.md)
 
--   [Isolated Domain](../p_server_archive/isolated-domain.md)
+-   [Isolated Domain](isolated-domain.md)
 
--   [Boundary Zone](../p_server_archive/boundary-zone.md)
+-   [Boundary Zone](boundary-zone.md)
 
--   [Encryption Zone](../p_server_archive/encryption-zone.md)
+-   [Encryption Zone](encryption-zone.md)
 
  
 

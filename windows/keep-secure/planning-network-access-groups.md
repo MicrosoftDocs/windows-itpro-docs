@@ -56,7 +56,7 @@ Membership in a NAG does not control the level of IPsec traffic protection. The 
 
  
 
-**Next: **[Planning the GPOs](../p_server_archive/planning-the-gpos.md)
+**Next: **[Planning the GPOs](planning-the-gpos.md)
 
  
 

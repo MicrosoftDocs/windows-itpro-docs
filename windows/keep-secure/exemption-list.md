@@ -40,9 +40,9 @@ To keep the number of exemptions as small as possible, you have several options:
 
 -   Consolidate exempted hosts on the same subnet. Where network traffic volume allows, you might be able to locate the servers on a subnet that is exempted, instead of using exemptions for each IP address.
 
-As with defining the boundary zone, create a formal process to approve hosts being added to the exemption list. For a model of processing requests for exemptions, see the decision flowchart in the [Boundary Zone](../p_server_archive/boundary-zone.md) section.
+As with defining the boundary zone, create a formal process to approve hosts being added to the exemption list. For a model of processing requests for exemptions, see the decision flowchart in the [Boundary Zone](boundary-zone.md) section.
 
-**Next: **[Isolated Domain](../p_server_archive/isolated-domain.md)
+**Next: **[Isolated Domain](isolated-domain.md)
 
  
 

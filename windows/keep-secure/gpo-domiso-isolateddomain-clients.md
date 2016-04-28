@@ -17,13 +17,13 @@ Because client computers can sometimes be portable, the settings and rules for t
 
 This GPO provides the following settings:
 
--   No firewall settings are included in this GPO. Woodgrove Bank created separate GPOs for firewall settings (see the [Firewall GPOs](../p_server_archive/firewall-gpos.md) section) in order to share them with all clients in all isolation zones with minimum redundancy.
+-   No firewall settings are included in this GPO. Woodgrove Bank created separate GPOs for firewall settings (see the [Firewall GPOs](firewall-gpos.md) section) in order to share them with all clients in all isolation zones with minimum redundancy.
 
 -   The ICMP protocol is exempted from authentication requirements to support easier network troubleshooting.
 
 -   Diffie-Hellman Group 2 is specified as the key exchange algorithm. This is the strongest algorithm available that is supported by all the operating systems that are being used at Woodgrove Bank. After Woodgrove Bank has completed the upgrade to versions of Windows that support stronger algorithms, such as Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008 or Windows Server 2008 R2, they can remove the weaker key exchange algorithms, and use only the stronger ones.
 
--   The registry settings shown in the following table. For more information, see the description of the registry settings in [Isolated Domain](../p_server_archive/isolated-domain.md).
+-   The registry settings shown in the following table. For more information, see the description of the registry settings in [Isolated Domain](isolated-domain.md).
 
     <table>
     <colgroup>
@@ -169,7 +169,7 @@ This GPO provides the following rules:
 
     -   Authentication mode is set to **Do not authenticate**.
 
-**Next: **[GPO\_DOMISO\_IsolatedDomain\_Servers](../p_server_archive/gpo-domiso-isolateddomain-servers.md)
+**Next: **[GPO\_DOMISO\_IsolatedDomain\_Servers](gpo-domiso-isolateddomain-servers.md)
 
  
 

@@ -16,13 +16,13 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 This topic describes how to create a port rule that allows inbound ICMP network traffic. For other inbound port rule types, see:
 
--   [Create an Inbound Port Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](../p_server_archive/create-an-inbound-port-rule-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
+-   [Create an Inbound Port Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](create-an-inbound-port-rule-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
 
--   [Create Inbound Rules to Support RPC on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](../p_server_archive/create-inbound-rules-to-support-rpc-on-windows-8-windows-7--windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
+-   [Create Inbound Rules to Support RPC on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](create-inbound-rules-to-support-rpc-on-windows-8-windows-7--windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
 
 **To create an inbound ICMP rule**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](../p_server_archive/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Inbound Rules**.
 

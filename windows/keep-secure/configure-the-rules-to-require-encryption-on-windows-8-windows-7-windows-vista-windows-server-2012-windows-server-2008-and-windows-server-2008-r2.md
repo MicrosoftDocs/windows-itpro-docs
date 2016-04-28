@@ -16,7 +16,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 **To modify an authentication request rule to also require encryption**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](../p_server_archive/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Connection Security Rules**.
 
@@ -36,14 +36,14 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
     This disables the data integrity rules section. Make sure the **Data integrity and encryption** list contains all of the combinations that your client computers will use to connect to members of the encryption zone. The client computers receive their rules through the GPO for the zone to which they reside. You must make sure that those rules contain at least one of the data integrity and encryption algorithms that are configured in this rule, or the client computers in that zone will not be able to connect to computers in this zone.
 
-10. If you need to add an algorithm combination, click **Add**, and then select the combination of encryption and integrity algorithms. The options are described in [Configure Data Protection (Quick Mode) Settings on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2](../p_server_archive/configure-data-protection--quick-mode--settings-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-and-windows-server-2008-r2.md).
+10. If you need to add an algorithm combination, click **Add**, and then select the combination of encryption and integrity algorithms. The options are described in [Configure Data Protection (Quick Mode) Settings on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2](configure-data-protection--quick-mode--settings-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-and-windows-server-2008-r2.md).
 
     **Note**  
     Not all of the algorithms available in Windows 8 or Windows Server 2012 can be selected in the Windows Firewall with Advanced Security user interface. To select them, you can use Windows PowerShell.
 
     Quick mode settings can also be configured on a per-rule basis, but not by using the Windows Firewall with Advanced Security user interface. Instead, you can create or modify the rules by using Windows PowerShell.
 
-    For more information, see [Windows Firewall with Advanced Security Administration with Windows PowerShell](../p_server_archive/windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
+    For more information, see [Windows Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
 
      
 

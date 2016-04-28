@@ -27,7 +27,7 @@ In this topic:
 
 **To refresh Group Policy on a computer**
 
--   On a computer running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](../p_server_archive/start-a-command-prompt-as-an-administrator.md), and then type the following command:
+-   On a computer running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](start-a-command-prompt-as-an-administrator.md), and then type the following command:
 
     ``` syntax
     gpupdate /target:computer /force

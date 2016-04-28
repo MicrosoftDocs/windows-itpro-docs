@@ -16,7 +16,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 **To create the authentication request rule**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](../p_server_archive/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, right-click **Connection Security Rules**, and then click **New Rule**.
 
@@ -31,7 +31,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 5.  On the **Authentication Method** page, select the authentication option you want to use on your network. To select multiple methods that are tried in order until one succeeds, click **Advanced**, click **Customize**, and then click **Add** to add methods to the list. Second authentication methods require Authenticated IP (AuthIP), which is supported only on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2.
 
-    1.  **Default**. Selecting this option tells the computer to request authentication by using the method currently defined as the default on the computer. This default might have been configured when the operating system was installed or it might have been configured by Group Policy. Selecting this option is appropriate when you have configured system-wide settings by using the [Configure Authentication Methods on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2](../p_server_archive/configure-authentication-methods-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-and-windows-server-2008-r2.md) procedure.
+    1.  **Default**. Selecting this option tells the computer to request authentication by using the method currently defined as the default on the computer. This default might have been configured when the operating system was installed or it might have been configured by Group Policy. Selecting this option is appropriate when you have configured system-wide settings by using the [Configure Authentication Methods on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2](configure-authentication-methods-on-windows-8-windows-7-windows-vista-windows-server-2012-windows-server-2008-and-windows-server-2008-r2.md) procedure.
 
     2.  **Computer and User (Kerberos V5)**. Selecting this option tells the computer to request authentication of both the computer and the currently logged-on user by using their domain credentials. This authentication method works only with other computers that can use AuthIP, including Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2. User-based authentication using Kerberos V5 is not supported by IKE v1.
 

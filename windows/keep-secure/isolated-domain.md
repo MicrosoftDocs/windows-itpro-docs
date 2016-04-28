@@ -48,14 +48,14 @@ GPOs for computers running Windows 8, Windows 7, Windows Vista, Windows Server
 
 -   A registry policy that includes the following values:
 
-    -   Enable PMTU discovery. Enabling this setting allows TCP/IP to dynamically determine the largest packet size supported across a connection. The value is found at HKLM\\System\\CurrentControlSet\\Services\\TCPIP\\Parameters\\EnablePMTUDiscovery (dword). The sample GPO preferences XML file in [Appendix A: Sample GPO Template Files for Settings Used in this Guide](../p_server_archive/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) sets the value to **1**.
+    -   Enable PMTU discovery. Enabling this setting allows TCP/IP to dynamically determine the largest packet size supported across a connection. The value is found at HKLM\\System\\CurrentControlSet\\Services\\TCPIP\\Parameters\\EnablePMTUDiscovery (dword). The sample GPO preferences XML file in [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) sets the value to **1**.
 
     **Note**  
-    For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](../p_server_archive/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md).
+    For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md).
 
      
 
-**Next: **[Boundary Zone](../p_server_archive/boundary-zone.md)
+**Next: **[Boundary Zone](boundary-zone.md)
 
  
 

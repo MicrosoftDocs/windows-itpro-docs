@@ -8,7 +8,7 @@ author: brianlic-msft
 # Certificate-based Isolation Policy Design Example
 
 
-This design example continues to use the fictitious company Woodgrove Bank, as described in the sections [Firewall Policy Design Example](../p_server_archive/firewall-policy-design-example.md), [Domain Isolation Policy Design Example](../p_server_archive/domain-isolation-policy-design-example.md), and [Server Isolation Policy Design Example](../p_server_archive/server-isolation-policy-design-example.md).
+This design example continues to use the fictitious company Woodgrove Bank, as described in the sections [Firewall Policy Design Example](firewall-policy-design-example.md), [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md), and [Server Isolation Policy Design Example](server-isolation-policy-design-example.md).
 
 One of the servers that must be included in the domain isolation environment is a computer running UNIX that supplies other information to the WGBank dashboard program running on the client computers. This computer sends updated information to the WGBank front-end servers as it becomes available, so it is considered unsolicited inbound traffic to the computers that receive this information.
 
@@ -44,7 +44,7 @@ By using the Active Directory Users and Computers snap-in, Woodgrove Bank create
 
 Woodgrove Bank then created a GPO that contains the certificate, and then attached security group filters to the GPO that allow read and apply permissions to only members of the NAG\_COMPUTER\_WGBUNIX group. The GPO places the certificate in the **Local Computer / Personal / Certificates** certificate store. The certificate used must chain back to a certificate that is in the **Trusted Root Certification Authorities** store on the local computer.
 
-**Next: **[Designing a Windows Firewall with Advanced Security Strategy](../p_server_archive/designing-a-windows-firewall-with-advanced-security-strategy.md)
+**Next: **[Designing a Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md)
 
  
 

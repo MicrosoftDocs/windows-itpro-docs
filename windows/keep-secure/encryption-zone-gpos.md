@@ -12,7 +12,7 @@ Handle encryption zones in a similar manner to the boundary zones. A computer is
 
 The GPO is only for server versions of Windows. Client computers are not expected to participate in the encryption zone. If the need for one occurs, either create a new GPO for that version of Windows, or expand the WMI filter attached to one of the existing encryption zone GPOs to make it apply to the client version of Windows.
 
--   [GPO\_DOMISO\_Encryption\_WS2008](../p_server_archive/gpo-domiso-encryption-ws2008.md)
+-   [GPO\_DOMISO\_Encryption\_WS2008](gpo-domiso-encryption-ws2008.md)
 
  
 

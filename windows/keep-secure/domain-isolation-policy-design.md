@@ -10,7 +10,7 @@ author: brianlic-msft
 
 In the domain isolation policy design, you configure the computers on your network to accept only connections coming from computers that are authenticated as members of the same isolated domain.
 
-This design typically begins with a network configured as described in the [Basic Firewall Policy Design](../p_server_archive/basic-firewall-policy-design.md) section. For this design, you then add connection security and IPsec rules to configure computers in the isolated domain to accept only network traffic from other computers that can authenticate as a member of the isolated domain. After implementing the new rules, your computers reject unsolicited network traffic from computers that are not members of the isolated domain.
+This design typically begins with a network configured as described in the [Basic Firewall Policy Design](basic-firewall-policy-design.md) section. For this design, you then add connection security and IPsec rules to configure computers in the isolated domain to accept only network traffic from other computers that can authenticate as a member of the isolated domain. After implementing the new rules, your computers reject unsolicited network traffic from computers that are not members of the isolated domain.
 
 The isolated domain might not be a single Active Directory domain. It can consist of all the domains in a forest, or domains in separate forests that have two-way trust relationships configured between them.
 
@@ -22,7 +22,7 @@ The design is shown in the following illustration, with the arrows that show the
 
 Characteristics of this design, as shown in the diagram, include the following:
 
--   Isolated domain (area A) - Computers in the isolated domain receive unsolicited inbound traffic only from other members of the isolated domain or from computers referenced in authentication exemption rules. Computers in the isolated domain can send traffic to any computer. This includes unauthenticated traffic to computers that are not in the isolated domain. Computers that cannot join an Active Directory domain, but that can use certificates for authentication, can be part of the isolated domain. For more information, see the [Certificate-based Isolation Policy Design](../p_server_archive/certificate-based-isolation-policy-design.md).
+-   Isolated domain (area A) - Computers in the isolated domain receive unsolicited inbound traffic only from other members of the isolated domain or from computers referenced in authentication exemption rules. Computers in the isolated domain can send traffic to any computer. This includes unauthenticated traffic to computers that are not in the isolated domain. Computers that cannot join an Active Directory domain, but that can use certificates for authentication, can be part of the isolated domain. For more information, see the [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md).
 
 -   Boundary zone (area B) - Computers in the boundary zone are part of the isolated domain but are allowed to accept inbound connections from untrusted computers, such as clients on the Internet.
 
@@ -37,27 +37,27 @@ Characteristics of this design, as shown in the diagram, include the following:
 After implementing this design, your administrative team will have centralized management of the firewall and connection security rules applied to the computers that are running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, and Windows Vista in your organization.
 
 **Important**  
-This design builds on the [Basic Firewall Policy Design](../p_server_archive/basic-firewall-policy-design.md), and in turn serves as the foundation for the [Server Isolation Policy Design](../p_server_archive/server-isolation-policy-design.md). If you plan to deploy all three, we recommend that you do the design work for all three together, and then deploy in the sequence presented.
+This design builds on the [Basic Firewall Policy Design](basic-firewall-policy-design.md), and in turn serves as the foundation for the [Server Isolation Policy Design](server-isolation-policy-design.md). If you plan to deploy all three, we recommend that you do the design work for all three together, and then deploy in the sequence presented.
 
  
 
 This design can be applied to computers that are part of an Active Directory forest. Active Directory is required to provide the centralized management and deployment of Group Policy objects that contain the connection security rules.
 
-In order to expand the isolated domain to include computers that cannot be part of an Active Directory domain, see the [Certificate-based Isolation Policy Design](../p_server_archive/certificate-based-isolation-policy-design.md).
+In order to expand the isolated domain to include computers that cannot be part of an Active Directory domain, see the [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md).
 
 For more information about this design:
 
--   This design coincides with the deployment goals to [Protect Computers from Unwanted Network Traffic](../p_server_archive/protect-computers-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Computers](../p_server_archive/restrict-access-to-only-trusted-computers.md), and optionally [Require Encryption When Accessing Sensitive Network Resources](../p_server_archive/require-encryption-when-accessing-sensitive-network-resources.md).
+-   This design coincides with the deployment goals to [Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Computers](restrict-access-to-only-trusted-computers.md), and optionally [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
 
--   To learn more about this design, see the [Domain Isolation Policy Design Example](../p_server_archive/domain-isolation-policy-design-example.md).
+-   To learn more about this design, see the [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md).
 
--   Before completing the design, gather the information described in [Designing a Windows Firewall with Advanced Security Strategy](../p_server_archive/designing-a-windows-firewall-with-advanced-security-strategy.md).
+-   Before completing the design, gather the information described in [Designing a Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
 
--   To help you make the decisions required in this design, see [Planning Domain Isolation Zones](../p_server_archive/planning-domain-isolation-zones.md) and [Planning Group Policy Deployment for Your Isolation Zones](../p_server_archive/planning-group-policy-deployment-for-your-isolation-zones.md).
+-   To help you make the decisions required in this design, see [Planning Domain Isolation Zones](planning-domain-isolation-zones.md) and [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md).
 
 -   For a list of tasks that you can use to deploy your domain isolation policy design, see "Checklist: Implementing a Domain Isolation Policy Design" in the [Windows Firewall with Advanced Security Deployment Guide](http://go.microsoft.com/fwlink/?linkid=xxxxx) at http://go.microsoft.com/fwlink/?linkid=xxxxx.
 
-**Next:** [Server Isolation Policy Design](../p_server_archive/server-isolation-policy-design.md)
+**Next:** [Server Isolation Policy Design](server-isolation-policy-design.md)
 
  
 

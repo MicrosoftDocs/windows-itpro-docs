@@ -115,7 +115,7 @@ The final step in this part of the process is to record the approximate cost of 
 
 -   What is the projected cost or impact of making the proposed changes to enable the computer to achieve a trusted state?
 
-By answering these questions, you can quickly determine the level of effort and approximate cost of bringing a particular computer or group of computers into the scope of the project. It is important to remember that the state of a computer is transitive, and that by performing the listed remedial actions you can change the state of a computer from untrusted to trusted. After you decide whether to place a computer in a trusted state, you are ready to begin planning and designing the isolation groups, which the next section [Planning Domain Isolation Zones](../p_server_archive/planning-domain-isolation-zones.md) discusses.
+By answering these questions, you can quickly determine the level of effort and approximate cost of bringing a particular computer or group of computers into the scope of the project. It is important to remember that the state of a computer is transitive, and that by performing the listed remedial actions you can change the state of a computer from untrusted to trusted. After you decide whether to place a computer in a trusted state, you are ready to begin planning and designing the isolation groups, which the next section [Planning Domain Isolation Zones](planning-domain-isolation-zones.md) discusses.
 
 The following table is an example of a data sheet that you could use to help capture the current state of a computer and what would be required for the computer to achieve a trusted state.
 
@@ -164,7 +164,7 @@ In the previous table, the computer CLIENT001 is currently "known, untrusted" be
 
 The computer SERVER001 is "trustworthy" because it meets the hardware requirements but its operating system must be upgraded. It also requires antivirus software. The projected cost is the amount of effort that is required to upgrade the operating system and install antivirus software, along with their purchase costs.
 
-With the other information that you have gathered in this section, this information will be the foundation of the efforts performed later in the [Planning Domain Isolation Zones](../p_server_archive/planning-domain-isolation-zones.md) section.
+With the other information that you have gathered in this section, this information will be the foundation of the efforts performed later in the [Planning Domain Isolation Zones](planning-domain-isolation-zones.md) section.
 
 The costs identified in this section only capture the projected cost of the computer upgrades. Many additional design, support, test, and training costs should be accounted for in the overall project plan.
 
@@ -172,7 +172,7 @@ For more information about how to configure firewalls to support IPsec, see "Con
 
 For more information about WMI, see "Windows Management Instrumentation" at <http://go.microsoft.com/fwlink/?linkid=110483>.
 
-**Next: **[Planning Your Windows Firewall with Advanced Security Design](../p_server_archive/planning-your-windows-firewall-with-advanced-security-design.md)
+**Next: **[Planning Your Windows Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)
 
  
 

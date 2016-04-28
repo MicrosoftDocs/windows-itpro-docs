@@ -20,7 +20,7 @@ The following illustration shows an isolated server, and examples of computers t
 
 ![isolated domain with network access groups](images/wfas-domainnag.gif)
 
-This goal, which corresponds to [Server Isolation Policy Design](../p_server_archive/server-isolation-policy-design.md), provides the following features:
+This goal, which corresponds to [Server Isolation Policy Design](server-isolation-policy-design.md), provides the following features:
 
 -   Isolated servers accept unsolicited inbound network traffic only from computers or users that are members of the NAG.
 
@@ -28,13 +28,13 @@ This goal, which corresponds to [Server Isolation Policy Design](../p_server_arc
 
 -   Server isolation can also be configured independently of an isolated domain. To do so, configure only the computers that must communicate with the isolated server with connection security rules to implement authentication and check NAG membership.
 
--   A server isolation zone can be simultaneously configured as an encryption zone. To do this, configure the GPO with rules that force encryption in addition to requiring authentication and restricting access to NAG members. For more information, see [Require Encryption When Accessing Sensitive Network Resources](../p_server_archive/require-encryption-when-accessing-sensitive-network-resources.md).
+-   A server isolation zone can be simultaneously configured as an encryption zone. To do this, configure the GPO with rules that force encryption in addition to requiring authentication and restricting access to NAG members. For more information, see [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
 
 The following components are required for this deployment goal:
 
--   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more GPOs that can be automatically applied to all relevant computers in the domain. For more information about Active Directory, see [Additional Resources](../p_server_archive/additional-resources-wfasdesign.md).
+-   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more GPOs that can be automatically applied to all relevant computers in the domain. For more information about Active Directory, see [Additional Resources](additional-resources-wfasdesign.md).
 
-**Next: **[Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design](../p_server_archive/mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)
+**Next: **[Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)
 
  
 

@@ -14,7 +14,7 @@ To support the additional security requirements of these servers, we recommend t
 
 You must create a group in Active Directory to contain members of the encryption zone. The settings and rules for the encryption zone are typically similar to those for the isolated domain, and you can save time and effort by copying those GPOs to serve as a starting point. You then modify the security methods list to include only algorithm combinations that include encryption protocols.
 
-Creation of the group and how to link it to the GPOs that apply the rules to members of the group are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](../p_server_archive/planning-group-policy-deployment-for-your-isolation-zones.md) section.
+Creation of the group and how to link it to the GPOs that apply the rules to members of the group are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
 ## GPO settings for encryption zone servers running Windows Server 2012, Windows Server 2008 or Windows Server 2008 R2
 
@@ -46,16 +46,16 @@ The GPO for computers that are running Windows Server 2012, Windows Server 2008
 
 -   A registry policy that includes the following values:
 
-    -   Enable PMTU discovery. Enabling this setting allows TCP/IP to dynamically determine the largest packet size supported across a connection. The value is found at HKLM\\System\\CurrentControlSet\\Services\\TCPIP\\Parameters\\EnablePMTUDiscovery (dword). The sample GPO preferences XML file in [Appendix A: Sample GPO Template Files for Settings Used in this Guide](../p_server_archive/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) sets the value to **1**.
+    -   Enable PMTU discovery. Enabling this setting allows TCP/IP to dynamically determine the largest packet size supported across a connection. The value is found at HKLM\\System\\CurrentControlSet\\Services\\TCPIP\\Parameters\\EnablePMTUDiscovery (dword). The sample GPO preferences XML file in [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) sets the value to **1**.
 
     **Note**  
-    For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](../p_server_archive/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md).
+    For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md).
 
      
 
 -   If domain member computers must communicate with computers in the encryption zone, ensure that you include in the isolated domain GPOs quick mode combinations that are compatible with the requirements of the encryption zone GPOs.
 
-**Next: **[Planning Server Isolation Zones](../p_server_archive/planning-server-isolation-zones.md)
+**Next: **[Planning Server Isolation Zones](planning-server-isolation-zones.md)
 
  
 

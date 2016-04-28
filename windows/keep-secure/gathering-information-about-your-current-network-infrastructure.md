@@ -116,7 +116,7 @@ Some of the more common applications and protocols are as follows:
 
 -   **Other traffic**. Windows Firewall with Advanced Security can help secure transmissions between computers by providing authentication of the packets in addition to encrypting the data that they contain. The important thing to do is to identify what must be protected, and the threats that must be mitigated. Examine and model other traffic or traffic types that must be secured.
 
-**Next: **[Gathering Information about Your Active Directory Deployment](../p_server_archive/gathering-information-about-your-active-directory-deployment.md)
+**Next: **[Gathering Information about Your Active Directory Deployment](gathering-information-about-your-active-directory-deployment.md)
 
  
 

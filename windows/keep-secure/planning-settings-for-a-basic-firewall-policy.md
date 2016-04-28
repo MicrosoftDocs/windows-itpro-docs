@@ -46,7 +46,7 @@ The following is a list of the firewall settings that you might consider for inc
 
 -   **Outbound rules**. Only create outbound rules to block network traffic that must be prevented in all cases. If your organization prohibits the use of certain network programs, you can support that policy by blocking the known network traffic used by the program. Be sure to test the restrictions before you deploy them to avoid interfering with traffic for needed and authorized programs.
 
-**Next: **[Planning Domain Isolation Zones](../p_server_archive/planning-domain-isolation-zones.md)
+**Next: **[Planning Domain Isolation Zones](planning-domain-isolation-zones.md)
 
  
 

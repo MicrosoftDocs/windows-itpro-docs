@@ -8,7 +8,7 @@ author: brianlic-msft
 # Documenting the Zones
 
 
-Generally, the task of determining zone membership is not complex, but it can be time-consuming. Use the information generated during the [Designing a Windows Firewall with Advanced Security Strategy](../p_server_archive/designing-a-windows-firewall-with-advanced-security-strategy.md) section of this guide to determine the zone in which to put each host. You can document this zone placement by adding a Group column to the inventory table shown in the Designing a Windows Firewall with Advanced Security Strategy section. A sample is shown here:
+Generally, the task of determining zone membership is not complex, but it can be time-consuming. Use the information generated during the [Designing a Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md) section of this guide to determine the zone in which to put each host. You can document this zone placement by adding a Group column to the inventory table shown in the Designing a Windows Firewall with Advanced Security Strategy section. A sample is shown here:
 
 <table style="width:100%;">
 <colgroup>
@@ -73,7 +73,7 @@ Generally, the task of determining zone membership is not complex, but it can be
 
  
 
-**Next: **[Planning Group Policy Deployment for Your Isolation Zones](../p_server_archive/planning-group-policy-deployment-for-your-isolation-zones.md)
+**Next: **[Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md)
 
  
 

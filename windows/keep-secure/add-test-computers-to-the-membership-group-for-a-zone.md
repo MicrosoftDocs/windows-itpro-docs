@@ -50,7 +50,7 @@ After a computer is a member of the group, you can force a Group Policy refresh 
 
 **To refresh Group Policy on a computer**
 
--   For a computer that is running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](../p_server_archive/start-a-command-prompt-as-an-administrator.md), and then type the following command:
+-   For a computer that is running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](start-a-command-prompt-as-an-administrator.md), and then type the following command:
 
     ``` syntax
     gpupdate /target:computer /force
@@ -63,7 +63,7 @@ After Group Policy is refreshed, you can see which GPOs are currently applied to
 
 **To see which GPOs are applied to a computer**
 
--   For a computer that is running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](../p_server_archive/start-a-command-prompt-as-an-administrator.md), and then type the following command:
+-   For a computer that is running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](start-a-command-prompt-as-an-administrator.md), and then type the following command:
 
     ``` syntax
     gpresult /r /scope:computer

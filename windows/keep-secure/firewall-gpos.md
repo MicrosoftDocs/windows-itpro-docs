@@ -12,7 +12,7 @@ All the computers on Woodgrove Bank's network that run Windows are part of the i
 
 The GPO created for the example Woodgrove Bank scenario include the following:
 
--   [GPO\_DOMISO\_Firewall](../p_server_archive/gpo-domiso-firewall.md)
+-   [GPO\_DOMISO\_Firewall](gpo-domiso-firewall.md)
 
  
 

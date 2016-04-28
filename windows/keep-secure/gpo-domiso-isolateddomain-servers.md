@@ -19,7 +19,7 @@ Because so many of the settings and rules for this GPO are common to those in th
 
      
 
-**Next: **[Boundary Zone GPOs](../p_server_archive/boundary-zone-gpos.md)
+**Next: **[Boundary Zone GPOs](boundary-zone-gpos.md)
 
  
 

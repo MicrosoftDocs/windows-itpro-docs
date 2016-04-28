@@ -40,19 +40,19 @@ After considering these issues, document each GPO that you require, and the deta
 ## Woodgrove Bank example GPOs
 
 
-The Woodgrove Bank example uses the following set of GPOs to support its domain isolation requirements. This section only discusses the rules and settings for server and domain isolation. GPO settings that affect which computers receive the GPO, such as security group filtering and WMI filtering, are discussed in the [Planning GPO Deployment](../p_server_archive/planning-gpo-deployment.md) section.
+The Woodgrove Bank example uses the following set of GPOs to support its domain isolation requirements. This section only discusses the rules and settings for server and domain isolation. GPO settings that affect which computers receive the GPO, such as security group filtering and WMI filtering, are discussed in the [Planning GPO Deployment](planning-gpo-deployment.md) section.
 
 In this section you can find information about the following:
 
--   [Firewall GPOs](../p_server_archive/firewall-gpos.md)
+-   [Firewall GPOs](firewall-gpos.md)
 
--   [Isolated Domain GPOs](../p_server_archive/isolated-domain-gpos.md)
+-   [Isolated Domain GPOs](isolated-domain-gpos.md)
 
--   [Boundary Zone GPOs](../p_server_archive/boundary-zone-gpos.md)
+-   [Boundary Zone GPOs](boundary-zone-gpos.md)
 
--   [Encryption Zone GPOs](../p_server_archive/encryption-zone-gpos.md)
+-   [Encryption Zone GPOs](encryption-zone-gpos.md)
 
--   [Server Isolation GPOs](../p_server_archive/server-isolation-gpos.md)
+-   [Server Isolation GPOs](server-isolation-gpos.md)
 
  
 

@@ -28,36 +28,36 @@ Use the following table to determine which Windows Firewall with Advanced Securi
 <thead>
 <tr class="header">
 <th>Deployment Goals</th>
-<th>[Basic Firewall Policy Design](../p_server_archive/basic-firewall-policy-design.md)</th>
-<th>[Domain Isolation Policy Design](../p_server_archive/domain-isolation-policy-design.md)</th>
-<th>[Server Isolation Policy Design](../p_server_archive/server-isolation-policy-design.md)</th>
-<th>[Certificate-based Isolation Policy Design](../p_server_archive/certificate-based-isolation-policy-design.md)</th>
+<th>[Basic Firewall Policy Design](basic-firewall-policy-design.md)</th>
+<th>[Domain Isolation Policy Design](domain-isolation-policy-design.md)</th>
+<th>[Server Isolation Policy Design](server-isolation-policy-design.md)</th>
+<th>[Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Protect Computers from Unwanted Network Traffic](../p_server_archive/protect-computers-from-unwanted-network-traffic.md)</p></td>
+<td><p>[Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[Restrict Access to Only Trusted Computers](../p_server_archive/restrict-access-to-only-trusted-computers.md)</p></td>
+<td><p>[Restrict Access to Only Trusted Computers](restrict-access-to-only-trusted-computers.md)</p></td>
 <td><p>-</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Restrict Access to Only Specified Users or Computers](../p_server_archive/restrict-access-to-only-specified-users-or-computers.md)</p></td>
+<td><p>[Restrict Access to Only Specified Users or Computers](restrict-access-to-only-specified-users-or-computers.md)</p></td>
 <td><p>-</p></td>
 <td><p>-</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[Require Encryption When Accessing Sensitive Network Resources](../p_server_archive/require-encryption-when-accessing-sensitive-network-resources.md)</p></td>
+<td><p>[Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md)</p></td>
 <td><p>-</p></td>
 <td><p>Optional</p></td>
 <td><p>Optional</p></td>
@@ -70,7 +70,7 @@ Use the following table to determine which Windows Firewall with Advanced Securi
 
 To examine details for a specific design, click the design title at the top of the column in the preceding table.
 
-**Next: **[Basic Firewall Policy Design](../p_server_archive/basic-firewall-policy-design.md)
+**Next: **[Basic Firewall Policy Design](basic-firewall-policy-design.md)
 
  
 

@@ -331,7 +331,7 @@ Use the following procedure if you want to block intranet access for a specific 
 ## <a href="" id="bkmk-links"></a>See also
 
 
--   [Windows Firewall with Advanced Security Overview](../p_server_archive/windows-firewall-with-advanced-security-overview-win8.md)
+-   [Windows Firewall with Advanced Security Overview](windows-firewall-with-advanced-security-overview-win8.md)
 
  
 

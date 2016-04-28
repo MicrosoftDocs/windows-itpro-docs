@@ -29,7 +29,7 @@ Each set of servers that must be accessed by different sets of users should be s
 ## Creating the GPOs
 
 
-Creation of the groups and how to link them to the GPOs that apply the rules to members of the groups are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](../p_server_archive/planning-group-policy-deployment-for-your-isolation-zones.md) section.
+Creation of the groups and how to link them to the GPOs that apply the rules to members of the groups are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
 An isolated server is often a member of the encryption zone. Therefore, copying that GPO set serves as a good starting point. You then modify the rules to additionally restrict access to only NAG members.
 
@@ -69,14 +69,14 @@ The connection security rules described here are identical to the ones for the e
 
 -   A registry policy that includes the following values:
 
-    -   Enable PMTU discovery. Enabling this setting allows TCP/IP to dynamically determine the largest packet size supported across a connection. The value is found at HKLM\\System\\CurrentControlSet\\Services\\TCPIP\\Parameters\\EnablePMTUDiscovery (dword). The sample GPO preferences XML file in [Appendix A: Sample GPO Template Files for Settings Used in this Guide](../p_server_archive/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) sets the value to **1**.
+    -   Enable PMTU discovery. Enabling this setting allows TCP/IP to dynamically determine the largest packet size supported across a connection. The value is found at HKLM\\System\\CurrentControlSet\\Services\\TCPIP\\Parameters\\EnablePMTUDiscovery (dword). The sample GPO preferences XML file in [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md) sets the value to **1**.
 
     **Note**  
-    For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](../p_server_archive/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md).
+    For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md).
 
      
 
-**Next: **[Planning Certificate-based Authentication](../p_server_archive/planning-certificate-based-authentication.md)
+**Next: **[Planning Certificate-based Authentication](planning-certificate-based-authentication.md)
 
  
 

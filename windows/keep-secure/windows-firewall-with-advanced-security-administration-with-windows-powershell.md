@@ -26,7 +26,7 @@ Windows PowerShell and netsh command references are at the following locations.
 ## Scope
 
 
-This guide does not teach you the fundamentals of Windows Firewall with Advanced Security, which can be found in [Windows Firewall with Advanced Security Overview](../p_server_archive/windows-firewall-with-advanced-security-overview-win8.md). It does not teach the fundamentals of Windows PowerShell, and it assumes that you are familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more information about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#bkmk-additionalresources) section of this guide.
+This guide does not teach you the fundamentals of Windows Firewall with Advanced Security, which can be found in [Windows Firewall with Advanced Security Overview](windows-firewall-with-advanced-security-overview-win8.md). It does not teach the fundamentals of Windows PowerShell, and it assumes that you are familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more information about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#bkmk-additionalresources) section of this guide.
 
 ## Audience and user requirements
 
@@ -408,7 +408,7 @@ Windows PowerShell
 New-NetIPsecRule -DisplayName “Require Inbound Authentication” -InboundSecurity Require -OutboundSecurity Request –Phase1AuthSet MyCertAuthSet -KeyModule IKEv2 –RemoteAddress $nonWindowsGateway
 ```
 
-For more information about IKEv2, including scenarios, see [Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012](../p_server_archive/securing-end-to-end-ipsec-connections-by-using-ikev2-in-windows-server-2012.md).
+For more information about IKEv2, including scenarios, see [Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012](securing-end-to-end-ipsec-connections-by-using-ikev2-in-windows-server-2012.md).
 
 ### Copy an IPsec rule from one policy to another
 

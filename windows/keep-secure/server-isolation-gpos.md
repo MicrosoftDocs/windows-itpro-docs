@@ -24,7 +24,7 @@ This GPO is identical to the GPO\_DOMISO\_Encryption\_WS2008 GPO with the follow
 
      
 
-**Next: **[Planning GPO Deployment](../p_server_archive/planning-gpo-deployment.md)
+**Next: **[Planning GPO Deployment](planning-gpo-deployment.md)
 
  
 

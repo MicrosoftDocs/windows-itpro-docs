@@ -191,7 +191,7 @@ You might not find the exact answer for the issue, but you can find good hints. 
 ## <a href="" id="bkmk-links"></a>See also
 
 
--   [Windows Firewall with Advanced Security Overview](../p_server_archive/windows-firewall-with-advanced-security-overview-win8.md)
+-   [Windows Firewall with Advanced Security Overview](windows-firewall-with-advanced-security-overview-win8.md)
 
  
 

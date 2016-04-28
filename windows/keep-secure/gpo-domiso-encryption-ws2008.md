@@ -27,7 +27,7 @@ Rename the **Isolated Domain Rule** to **Encryption Zone Rule**. Leave the authe
 ## Registry settings
 
 
-The encryption zone uses the same registry settings as the isolated domain to optimize IPsec operation. For more information, see the description of the registry settings in [Isolated Domain](../p_server_archive/isolated-domain.md).
+The encryption zone uses the same registry settings as the isolated domain to optimize IPsec operation. For more information, see the description of the registry settings in [Isolated Domain](isolated-domain.md).
 
 ## Firewall rules
 
@@ -38,7 +38,7 @@ Change the action for every inbound firewall rule from **Allow the connection** 
 
 Make sure that the GPO that contains firewall rules for the isolated domain does not also apply to the boundary zone to prevent overlapping, and possibly conflicting rules.
 
-**Next: **[Server Isolation GPOs](../p_server_archive/server-isolation-gpos.md)
+**Next: **[Server Isolation GPOs](server-isolation-gpos.md)
 
  
 

@@ -15,7 +15,7 @@ For GPOs that contain connection security rules that prevent unauthenticated con
 
  
 
-The method discussed in this guide uses the **Domain Computers** built-in group. The advantage of this method is that all new computers that are joined to the domain automatically receive the isolated domain GPO. To do this successfully, you must make sure that the WMI filters and security group filters exclude computers that must not receive the GPOs. Use computer groups that deny both read and apply Group Policy permissions to the GPOs, such as a group used in the CG\_DOMISO\_NOIPSEC example design. Computers that are members of some zones must also be excluded from applying the GPOs for the main isolated domain. For more information, see the "Prevent members of a group from applying a GPO" section in [Assign Security Group Filters to the GPO](../p_server_archive/assign-security-group-filters-to-the-gpo.md).
+The method discussed in this guide uses the **Domain Computers** built-in group. The advantage of this method is that all new computers that are joined to the domain automatically receive the isolated domain GPO. To do this successfully, you must make sure that the WMI filters and security group filters exclude computers that must not receive the GPOs. Use computer groups that deny both read and apply Group Policy permissions to the GPOs, such as a group used in the CG\_DOMISO\_NOIPSEC example design. Computers that are members of some zones must also be excluded from applying the GPOs for the main isolated domain. For more information, see the "Prevent members of a group from applying a GPO" section in [Assign Security Group Filters to the GPO](assign-security-group-filters-to-the-gpo.md).
 
 Without such a group (or groups), you must either add computers individually or use the groups containing computer accounts that are available to you.
 
@@ -55,7 +55,7 @@ After a computer is a member of the group, you can force a Group Policy refresh 
 
 **To refresh Group Policy on a computer**
 
--   For a computer that is running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](../p_server_archive/start-a-command-prompt-as-an-administrator.md), and then type the following command:
+-   For a computer that is running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](start-a-command-prompt-as-an-administrator.md), and then type the following command:
 
     ``` syntax
     gpupdate /target:computer /force
@@ -68,7 +68,7 @@ After Group Policy is refreshed, you can see which GPOs are currently applied to
 
 **To see which GPOs are applied to a computer**
 
--   For a computer that is running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](../p_server_archive/start-a-command-prompt-as-an-administrator.md), and then type the following command:
+-   For a computer that is running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](start-a-command-prompt-as-an-administrator.md), and then type the following command:
 
     ``` syntax
     gpresult /r /scope:computer

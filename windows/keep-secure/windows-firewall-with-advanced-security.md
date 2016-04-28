@@ -126,7 +126,7 @@ See the following topics for more information about Windows Firewall with Advanc
 <tbody>
 <tr class="odd">
 <td><p><strong>Deployment</strong></p></td>
-<td><p>[Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012](../p_server_archive/securing-end-to-end-ipsec-connections-by-using-ikev2-in-windows-server-2012.md) | [Isolating Windows Store Apps on Your Network](../p_server_archive/isolating-windows-store-apps-on-your-network.md) | [Windows Firewall with Advanced Security Administration with Windows PowerShell](../p_server_archive/windows-firewall-with-advanced-security-administration-with-windows-powershell.md)</p></td>
+<td><p>[Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012](securing-end-to-end-ipsec-connections-by-using-ikev2-in-windows-server-2012.md) | [Isolating Windows Store Apps on Your Network](isolating-windows-store-apps-on-your-network.md) | [Windows Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Troubleshooting</strong></p></td>

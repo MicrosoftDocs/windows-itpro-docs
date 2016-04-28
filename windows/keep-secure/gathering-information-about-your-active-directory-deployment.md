@@ -22,7 +22,7 @@ Active Directory is another important item about which you must gather informati
 
 -   **Existing IPsec policy**. Because this project culminates in the implementation of IPsec policy, you must understand how the network currently uses IPsec (if at all). Windows Firewall with Advanced Security connection security rules for Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2 are not compatible with earlier versions of Windows. If you already have IPsec policies deployed to computers running Windows XP and Windows Server 2003 in your organization, you must ensure that the new IPsec policies you deploy enable computers using either the old or new IPsec policies to communicate with each other.
 
-**Next: **[Gathering Information about Your Computers](../p_server_archive/gathering-information-about-your-computers.md)
+**Next: **[Gathering Information about Your Computers](gathering-information-about-your-computers.md)
 
  
 

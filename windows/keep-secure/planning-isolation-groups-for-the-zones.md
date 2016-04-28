@@ -63,11 +63,11 @@ The following table lists typical groups that can be used to manage the domain i
 
  
 
-Multiple GPOs might be delivered to each group. Which one actually becomes applied depends on the security group filters assigned to the GPOs in addition to the results of any WMI filtering assigned to the GPOs. Details of the GPO layout are discussed in the section [Planning the GPOs](../p_server_archive/planning-the-gpos.md).
+Multiple GPOs might be delivered to each group. Which one actually becomes applied depends on the security group filters assigned to the GPOs in addition to the results of any WMI filtering assigned to the GPOs. Details of the GPO layout are discussed in the section [Planning the GPOs](planning-the-gpos.md).
 
 If multiple GPOs are assigned to a group, and similar rules are applied, the rule that most specifically matches the network traffic is the one that is used by the computer. For example, if one IPsec rule says to request authentication for all IP traffic, and a second rule from a different GPO says to require authentication for IP traffic to and from a specific IP address, then the second rule takes precedence because it is more specific.
 
-**Next: **[Planning Network Access Groups](../p_server_archive/planning-network-access-groups.md)
+**Next: **[Planning Network Access Groups](planning-network-access-groups.md)
 
  
 

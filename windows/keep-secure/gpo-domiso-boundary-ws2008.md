@@ -25,7 +25,7 @@ Rename the **Isolated Domain Rule** to **Boundary Zone Rule**. Change the authen
 ## Registry settings
 
 
-The boundary zone uses the same registry settings as the isolated domain to optimize IPsec operation. For more information, see the description of the registry settings in [Isolated Domain](../p_server_archive/isolated-domain.md).
+The boundary zone uses the same registry settings as the isolated domain to optimize IPsec operation. For more information, see the description of the registry settings in [Isolated Domain](isolated-domain.md).
 
 ## Firewall rules
 
@@ -34,7 +34,7 @@ Copy the firewall rules for the boundary zone from the GPO that contains the fir
 
 Make sure that the GPO that contains firewall rules for the isolated domain does not also apply to the boundary zone to prevent overlapping, and possibly conflicting rules.
 
-**Next: **[Encryption Zone GPOs](../p_server_archive/encryption-zone-gpos.md)
+**Next: **[Encryption Zone GPOs](encryption-zone-gpos.md)
 
  
 

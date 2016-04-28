@@ -8,7 +8,7 @@ author: brianlic-msft
 # Server Isolation Policy Design Example
 
 
-This design example continues to use the fictitious company Woodgrove Bank, as described in the [Firewall Policy Design Example](../p_server_archive/firewall-policy-design-example.md) section and the [Domain Isolation Policy Design Example](../p_server_archive/domain-isolation-policy-design-example.md) section.
+This design example continues to use the fictitious company Woodgrove Bank, as described in the [Firewall Policy Design Example](firewall-policy-design-example.md) section and the [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md) section.
 
 In addition to the protections provided by the firewall and domain isolation, Woodgrove Bank wants to provide additional protection to the computers that are running Microsoft SQL Server for the WGBank program. They contain personal data, including each customer's financial history. Government and industry rules and regulations specify that access to this information must be restricted to only those users who have a legitimate business need. This includes a requirement to prevent interception of and access to the information when it is in transit over the network.
 
@@ -42,9 +42,9 @@ The following illustration shows the traffic protection needs for this design ex
 
 **Other traffic notes:**
 
--   All of the design requirements shown in the [Firewall Policy Design Example](../p_server_archive/firewall-policy-design-example.md) section are still enforced.
+-   All of the design requirements shown in the [Firewall Policy Design Example](firewall-policy-design-example.md) section are still enforced.
 
--   All of the design requirements shown in the [Domain Isolation Policy Design Example](../p_server_archive/domain-isolation-policy-design-example.md) section are still enforced.
+-   All of the design requirements shown in the [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md) section are still enforced.
 
 ## Design details
 
@@ -75,7 +75,7 @@ If Woodgrove Bank wants to implement server isolation without domain isolation, 
 
 You do not have to include the encryption-capable rules on all computers. Instead, you can create GPOs that are applied only to members of the NAG, in addition to the standard domain isolation GPO, that contain connection security rules to support encryption.
 
-**Next: **[Certificate-based Isolation Policy Design Example](../p_server_archive/certificate-based-isolation-policy-design-example.md)
+**Next: **[Certificate-based Isolation Policy Design Example](certificate-based-isolation-policy-design-example.md)
 
  
 

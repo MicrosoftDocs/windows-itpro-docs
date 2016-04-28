@@ -30,7 +30,7 @@ In this topic:
 
 **To configure Windows Firewall to suppress the display of a notification for a blocked program and to ignore locally defined rules on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008 or Windows Server 2008 R2**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](../p_server_archive/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the details pane, in the **Overview** section, click **Windows Firewall Properties**.
 

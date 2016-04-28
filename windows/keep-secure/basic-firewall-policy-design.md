@@ -44,7 +44,7 @@ An organization typically uses this design as a first step toward a more compreh
 After implementing this design, your administrative team will have centralized management of the firewall rules applied to all computers that are running Windows in your organization.
 
 **Important**  
-If you also intend to deploy the [Domain Isolation Policy Design](../p_server_archive/domain-isolation-policy-design.md), or the [Server Isolation Policy Design](../p_server_archive/server-isolation-policy-design.md), we recommend that you do the design work for all three designs together, and then deploy in layers that correspond with each design.
+If you also intend to deploy the [Domain Isolation Policy Design](domain-isolation-policy-design.md), or the [Server Isolation Policy Design](server-isolation-policy-design.md), we recommend that you do the design work for all three designs together, and then deploy in layers that correspond with each design.
 
  
 
@@ -52,17 +52,17 @@ The basic firewall design can be applied to computers that are part of an Active
 
 For more information about this design:
 
--   This design coincides with the deployment goal to [Protect Computers from Unwanted Network Traffic](../p_server_archive/protect-computers-from-unwanted-network-traffic.md).
+-   This design coincides with the deployment goal to [Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md).
 
--   To learn more about this design, see [Firewall Policy Design Example](../p_server_archive/firewall-policy-design-example.md).
+-   To learn more about this design, see [Firewall Policy Design Example](firewall-policy-design-example.md).
 
--   Before completing the design, gather the information described in [Designing a Windows Firewall with Advanced Security Strategy](../p_server_archive/designing-a-windows-firewall-with-advanced-security-strategy.md).
+-   Before completing the design, gather the information described in [Designing a Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
 
--   To help you make the decisions required in this design, see [Planning Settings for a Basic Firewall Policy](../p_server_archive/planning-settings-for-a-basic-firewall-policy.md).
+-   To help you make the decisions required in this design, see [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md).
 
 -   For a list of detailed tasks that you can use to deploy your basic firewall policy design, see "Checklist: Implementing a Basic Firewall Policy Design" in the [Windows Firewall with Advanced Security Deployment Guide](http://go.microsoft.com/fwlink/?linkid=98308) at http://go.microsoft.com/fwlink/?linkid=98308.
 
-**Next: **[Domain Isolation Policy Design](../p_server_archive/domain-isolation-policy-design.md)
+**Next: **[Domain Isolation Policy Design](domain-isolation-policy-design.md)
 
  
 

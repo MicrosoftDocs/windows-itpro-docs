@@ -43,44 +43,44 @@ You can also use a membership group for one zone as an exclusion group for anoth
 <tr class="odd">
 <td><p><img src="images/wfas-icon-checkbox.gif" alt="_" /></p></td>
 <td><p>Review important concepts and examples for deploying GPOs in a way that best meets the needs of your organization.</p></td>
-<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Identifying Your Windows Firewall with Advanced Security Deployment Goals](../p_server_archive/identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)</p>
-<p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Planning Group Policy Deployment for Your Isolation Zones](../p_server_archive/planning-group-policy-deployment-for-your-isolation-zones.md)</p></td>
+<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Identifying Your Windows Firewall with Advanced Security Deployment Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)</p>
+<p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md)</p></td>
 </tr>
 <tr class="even">
 <td><p><img src="images/wfas-icon-checkbox.gif" alt="_" /></p></td>
 <td><p>Create the membership group in AD DS that will be used to contain computer accounts that must receive the GPO.</p>
 <p>If some computers in the membership group are running an operating system that does not support WMI filters, such as Windows 2000, create an exclusion group to contain the computer accounts for the computers that cannot be blocked by using a WMI filter.</p></td>
-<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Create a Group Account in Active Directory](../p_server_archive/create-a-group-account-in-active-directory.md)</p></td>
+<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Create a Group Account in Active Directory](create-a-group-account-in-active-directory.md)</p></td>
 </tr>
 <tr class="odd">
 <td><p><img src="images/wfas-icon-checkbox.gif" alt="_" /></p></td>
 <td><p>Create a GPO for each version of Windows that has different implementation requirements.</p></td>
-<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Create a Group Policy Object](../p_server_archive/create-a-group-policy-object.md)</p></td>
+<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Create a Group Policy Object](create-a-group-policy-object.md)</p></td>
 </tr>
 <tr class="even">
 <td><p><img src="images/wfas-icon-checkbox.gif" alt="_" /></p></td>
 <td><p>Create security group filters to limit the GPO to only computers that are members of the membership group and to exclude computers that are members of the exclusion group.</p></td>
-<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Assign Security Group Filters to the GPO](../p_server_archive/assign-security-group-filters-to-the-gpo.md)</p></td>
+<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Assign Security Group Filters to the GPO](assign-security-group-filters-to-the-gpo.md)</p></td>
 </tr>
 <tr class="odd">
 <td><p><img src="images/wfas-icon-checkbox.gif" alt="_" /></p></td>
 <td><p>Create WMI filters to limit each GPO to only the computers that match the criteria in the filter.</p></td>
-<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Create WMI Filters for the GPO](../p_server_archive/create-wmi-filters-for-the-gpo.md)</p></td>
+<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Create WMI Filters for the GPO](create-wmi-filters-for-the-gpo.md)</p></td>
 </tr>
 <tr class="even">
 <td><p><img src="images/wfas-icon-checkbox.gif" alt="_" /></p></td>
 <td><p>If you are working on a GPO that was copied from another, modify the group memberships and WMI filters so that they are correct for the new zone or version of Windows for which this GPO is intended.</p></td>
-<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Modify GPO Filters to Apply to a Different Zone or Version of Windows](../p_server_archive/modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md)</p></td>
+<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Modify GPO Filters to Apply to a Different Zone or Version of Windows](modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md)</p></td>
 </tr>
 <tr class="odd">
 <td><p><img src="images/wfas-icon-checkbox.gif" alt="_" /></p></td>
 <td><p>Link the GPO to the domain level of the Active Directory organizational unit hierarchy.</p></td>
-<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Link the GPO to the Domain](../p_server_archive/link-the-gpo-to-the-domain.md)</p></td>
+<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Link the GPO to the Domain](link-the-gpo-to-the-domain.md)</p></td>
 </tr>
 <tr class="even">
 <td><p><img src="images/wfas-icon-checkbox.gif" alt="_" /></p></td>
 <td><p>Before adding any rules or configuring the GPO, add a few test computers to the membership group, and make sure that the correct GPO is received and applied to each member of the group.</p></td>
-<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Add Test Computers to the Membership Group for a Zone](../p_server_archive/add-test-computers-to-the-membership-group-for-a-zone.md)</p></td>
+<td><p><img src="images/15dd35b6-6cc6-421f-93f8-7109920e7144.gif" alt="Procedure topic" />[Add Test Computers to the Membership Group for a Zone](add-test-computers-to-the-membership-group-for-a-zone.md)</p></td>
 </tr>
 </tbody>
 </table>

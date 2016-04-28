@@ -12,13 +12,13 @@ Before starting the planning process for a Windows Firewall with Advanced Securi
 
 Review each of the following topics for guidance about the kinds of information that you must gather:
 
--   [Gathering Information about Your Current Network Infrastructure](../p_server_archive/gathering-information-about-your-current-network-infrastructure.md)
+-   [Gathering Information about Your Current Network Infrastructure](gathering-information-about-your-current-network-infrastructure.md)
 
--   [Gathering Information about Your Active Directory Deployment](../p_server_archive/gathering-information-about-your-active-directory-deployment.md)
+-   [Gathering Information about Your Active Directory Deployment](gathering-information-about-your-active-directory-deployment.md)
 
--   [Gathering Information about Your Computers](../p_server_archive/gathering-information-about-your-computers.md)
+-   [Gathering Information about Your Computers](gathering-information-about-your-computers.md)
 
--   [Gathering Other Relevant Information](../p_server_archive/gathering-other-relevant-information.md)
+-   [Gathering Other Relevant Information](gathering-other-relevant-information.md)
 
  
 

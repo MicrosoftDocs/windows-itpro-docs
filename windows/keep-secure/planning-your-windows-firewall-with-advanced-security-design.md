@@ -13,9 +13,9 @@ After you have gathered the relevant information in the previous sections, and u
 ## Basic firewall design
 
 
-We recommend that you deploy at least the basic firewall design. As discussed in the [Protect Computers from Unwanted Network Traffic](../p_server_archive/protect-computers-from-unwanted-network-traffic.md) section, host-based firewalls are an important element in a defense-in-depth strategy and complement most other security measures you put in place in your organization.
+We recommend that you deploy at least the basic firewall design. As discussed in the [Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md) section, host-based firewalls are an important element in a defense-in-depth strategy and complement most other security measures you put in place in your organization.
 
-When you are ready to examine the options for firewall policy settings, see the [Planning Settings for a Basic Firewall Policy](../p_server_archive/planning-settings-for-a-basic-firewall-policy.md) section.
+When you are ready to examine the options for firewall policy settings, see the [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md) section.
 
 ## Algorithm and method support and selection
 
@@ -40,7 +40,7 @@ Include this design in your plans:
 
 If you plan on including the basic firewall design as part of your deployment, we recommend that you deploy the firewall policies first to confirm that they work properly. Also plan to enable your connection security rules in request mode at first, instead of the more restrictive require mode, until you are sure that the computers are all correctly protecting network traffic with IPsec. If something is wrong, request mode still allows communications to continue while you are troubleshooting.
 
-When you are ready to examine the options for creating an isolated domain, see the [Planning Domain Isolation Zones](../p_server_archive/planning-domain-isolation-zones.md) section.
+When you are ready to examine the options for creating an isolated domain, see the [Planning Domain Isolation Zones](planning-domain-isolation-zones.md) section.
 
 ## Server isolation design
 
@@ -53,7 +53,7 @@ Include this design in your plans:
 
 If you plan to include domain isolation in your deployment, we recommend that you complete that layer and confirm its correct operation before you implement the additional server isolation elements.
 
-When you are ready to examine the options for isolating servers, see the [Planning Server Isolation Zones](../p_server_archive/planning-server-isolation-zones.md) section.
+When you are ready to examine the options for isolating servers, see the [Planning Server Isolation Zones](planning-server-isolation-zones.md) section.
 
 ## Certificate-based authentication design
 
@@ -68,23 +68,23 @@ Include this design in your plans:
 
 If you plan to include domain or server isolation in your deployment, we recommend that you complete those elements and confirm their correct operation before you add certificate-based authentication to the computers that require it.
 
-When you are ready to examine the options for using certificate-based authentication, see the [Planning Certificate-based Authentication](../p_server_archive/planning-certificate-based-authentication.md) section.
+When you are ready to examine the options for using certificate-based authentication, see the [Planning Certificate-based Authentication](planning-certificate-based-authentication.md) section.
 
 ## Documenting your design
 
 
 After you finish selecting the designs that you will use, you must assign each of your computers to the appropriate isolation zone and document the assignment for use by the deployment team.
 
--   [Documenting the Zones](../p_server_archive/documenting-the-zones.md)
+-   [Documenting the Zones](documenting-the-zones.md)
 
 ## Designing groups and GPOs
 
 
 After you have selected a design and assigned your computers to zones, you can begin laying out the isolation groups for each zone, the network access groups for isolated server access, and the GPOs that you will use to apply the settings and rules to your computers.
 
-When you are ready to examine the options for the groups, filters, and GPOs, see the [Planning Group Policy Deployment for Your Isolation Zones](../p_server_archive/planning-group-policy-deployment-for-your-isolation-zones.md) section.
+When you are ready to examine the options for the groups, filters, and GPOs, see the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
-**Next: **[Planning Settings for a Basic Firewall Policy](../p_server_archive/planning-settings-for-a-basic-firewall-policy.md)
+**Next: **[Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)
 
  
 

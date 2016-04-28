@@ -29,15 +29,15 @@ The next step in implementing your design is to determine in what order each of 
 
 Use the following parent checklists in this section of the guide to become familiar with the deployment tasks for implementing your organization's Windows Firewall with Advanced Security design.
 
--   [Checklist: Implementing a Basic Firewall Policy Design](../p_server_archive/checklist-implementing-a-basic-firewall-policy-design.md)
+-   [Checklist: Implementing a Basic Firewall Policy Design](checklist-implementing-a-basic-firewall-policy-design.md)
 
--   [Checklist: Implementing a Domain Isolation Policy Design](../p_server_archive/checklist-implementing-a-domain-isolation-policy-design.md)
+-   [Checklist: Implementing a Domain Isolation Policy Design](checklist-implementing-a-domain-isolation-policy-design.md)
 
--   [Checklist: Implementing a Domain Isolation Policy Design](../p_server_archive/checklist-implementing-a-domain-isolation-policy-design.md)
+-   [Checklist: Implementing a Domain Isolation Policy Design](checklist-implementing-a-domain-isolation-policy-design.md)
 
--   [Checklist: Implementing a Certificate-based Isolation Policy Design](../p_server_archive/checklist-implementing-a-certificate-based-isolation-policy-design.md)
+-   [Checklist: Implementing a Certificate-based Isolation Policy Design](checklist-implementing-a-certificate-based-isolation-policy-design.md)
 
-The procedures in these checklists use the Group Policy MMC snap-in interfaces to configure firewall and connection security rules in GPOs, but you can also use Windows PowerShell. For more information, see [Windows Firewall with Advanced Security Administration with Windows PowerShell](../p_server_archive/windows-firewall-with-advanced-security-administration-with-windows-powershell.md). This guide recommends using GPOs in a specific way to deploy the rules and settings for your design. For information about deploying your GPOs, see [Planning Group Policy Deployment for Your Isolation Zones](../p_server_archive/planning-group-policy-deployment-for-your-isolation-zones.md) and the checklist [Checklist: Creating Group Policy Objects](../p_server_archive/checklist-creating-group-policy-objects.md).
+The procedures in these checklists use the Group Policy MMC snap-in interfaces to configure firewall and connection security rules in GPOs, but you can also use Windows PowerShell. For more information, see [Windows Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md). This guide recommends using GPOs in a specific way to deploy the rules and settings for your design. For information about deploying your GPOs, see [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) and the checklist [Checklist: Creating Group Policy Objects](checklist-creating-group-policy-objects.md).
 
  
 

@@ -8,7 +8,7 @@ author: brianlic-msft
 # Domain Isolation Policy Design Example
 
 
-This design example continues to use the fictitious company Woodgrove Bank, and builds on the example described in the [Firewall Policy Design Example](../p_server_archive/firewall-policy-design-example.md) section. See that example for an explanation of the basic corporate network infrastructure at Woodgrove Bank with diagrams.
+This design example continues to use the fictitious company Woodgrove Bank, and builds on the example described in the [Firewall Policy Design Example](firewall-policy-design-example.md) section. See that example for an explanation of the basic corporate network infrastructure at Woodgrove Bank with diagrams.
 
 ## Design Requirements
 
@@ -29,7 +29,7 @@ The following illustration shows the traffic protection needed for this design e
 
 **Other traffic notes:**
 
--   All of the design requirements described in the [Firewall Policy Design Example](../p_server_archive/firewall-policy-design-example.md) section are still enforced.
+-   All of the design requirements described in the [Firewall Policy Design Example](firewall-policy-design-example.md) section are still enforced.
 
 ## Design Details
 
@@ -53,7 +53,7 @@ If you are designing GPOs for only Windows 8, Windows 7, Windows Vista, Window
 
  
 
-**Next: **[Server Isolation Policy Design Example](../p_server_archive/server-isolation-policy-design-example.md)
+**Next: **[Server Isolation Policy Design Example](server-isolation-policy-design-example.md)
 
  
 
