@@ -345,10 +345,6 @@ Table 3 lists specific malware threats and the mitigation that Windows 10 provi
 Table 3. Threats and Windows 10 mitigations
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Threat</th>
