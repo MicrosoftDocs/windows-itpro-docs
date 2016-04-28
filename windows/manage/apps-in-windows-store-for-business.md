@@ -47,6 +47,10 @@ Apps in your inventory will have at least one of these supported platforms liste
 
 Apps that you acquire from the Store for Business only work on Windows 10-based devices. Even though an app might list Windows 8 as its supported platform, that tells you what platform the app was originally written for. Apps developed for Windows 8, or Windows phone 8 will work on Windows 10.
 
+Some apps are free, and some apps charge a price. We're continuing to add more paid apps to the Store for Business. Check back if you don't see the app that you're looking for. Currently, you can pay for apps with a credit card. We'll be adding more payment options over time.
+
+Some apps which are available to consumers in Windows Store might not be available in Windows Store for Business. This can happen for a couple of reasons. The app developer might set the app availability so that it is only available to people using Windows Store. Also, business-to-business transaction regulatory requirements might prevent the app being available in Store for Business.
+
 Line-of-business (LOB) apps are also supported using the Store for Business. Admins can invite IT devs and ISVs to be LOB publishers. Apps developed by your LOB publishers that are submitted to the Store are only available to your organization. Once an administrator accepts an app submitted by one of their LOB publishers, the app can be distributed just like any other app from Store for Business. For more information, see Working with Line-of-Business apps.
 
 ## <a href="" id="iap"></a>In-app purchases
