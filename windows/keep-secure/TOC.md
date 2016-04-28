@@ -459,7 +459,7 @@
 ######## [Server Isolation GPOs](server-isolation-gpos.md)
 ####### [Planning GPO Deployment](planning-gpo-deployment.md)
 ##### [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md)
-##### [Additional Resources [WFASDesign]](additional-resources-wfasdesign.md)
+##### [Additional Resources](additional-resources-wfasdesign.md)
 #### [Windows Firewall with Advanced Security Deployment Guide](windows-firewall-with-advanced-security-deployment-guide.md)
 ##### [Planning to Deploy Windows Firewall with Advanced Security](planning-to-deploy-windows-firewall-with-advanced-security.md)
 ##### [Implementing Your Windows Firewall with Advanced Security Design Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md)
