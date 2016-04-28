@@ -62,7 +62,7 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 </tr>
 <tr class="odd">
 <td align="left"><p>[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md)</p></td>
-<td align="left"><p>With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures to their personal email account, copies and pastes product info to a public Yammer group or tweet, or saves an in-progress sales report to their public cloud storage.</p></td>
+<td align="left"><p>With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)</p></td>
