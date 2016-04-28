@@ -27,8 +27,8 @@ In the following sections, complete the instructions that correspond to the vers
     // Microsoft BitLocker Administration and Monitoring 
     //===================================================
 
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL)
     [ SMS_Report (TRUE),
       SMS_Group_Name ("BitLocker Encryption Details"),
       SMS_Class_ID ("MICROSOFT|BITLOCKER_DETAILS|1.0")]
@@ -66,8 +66,8 @@ In the following sections, complete the instructions that correspond to the vers
         String     EnforcePolicyDate;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
     [ SMS_Report(TRUE),
       SMS_Group_Name("BitLocker Policy"),
       SMS_Class_ID("MICROSOFT|MBAM_POLICY|1.0")]
@@ -110,8 +110,8 @@ In the following sections, complete the instructions that correspond to the vers
     };
 
     //Read Win32_OperatingSystem.SKU WMI property in a new class - because SKU is not available before Vista.
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
     [ SMS_Report     (TRUE),
       SMS_Group_Name ("Operating System Ex"),
       SMS_Class_ID   ("MICROSOFT|OPERATING_SYSTEM_EXT|1.0") ]
@@ -124,8 +124,8 @@ In the following sections, complete the instructions that correspond to the vers
     };
 
     //Read Win32_ComputerSystem.PCSystemType WMI property in a new class - because PCSystemType is not available before Vista.
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
     [ SMS_Report     (TRUE),
       SMS_Group_Name ("Computer System Ex"),
       SMS_Class_ID   ("MICROSOFT|COMPUTER_SYSTEM_EXT|1.0") ]
@@ -193,8 +193,8 @@ In the following sections, complete the instructions that correspond to the vers
     // Microsoft BitLocker Administration and Monitoring 
     //===================================================
 
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL)
     [ SMS_Report (TRUE),
       SMS_Group_Name ("BitLocker Encryption Details"),
       SMS_Class_ID ("MICROSOFT|BITLOCKER_DETAILS|1.0")]
@@ -232,8 +232,8 @@ In the following sections, complete the instructions that correspond to the vers
         String     EnforcePolicyDate;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
     [ SMS_Report(TRUE),
       SMS_Group_Name("BitLocker Policy"),
       SMS_Class_ID("MICROSOFT|MBAM_POLICY|1.0"),
@@ -278,8 +278,8 @@ In the following sections, complete the instructions that correspond to the vers
         string    EncodedComputerName;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("Win32Reg_MBAMPolicy_64", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("Win32Reg_MBAMPolicy_64", NOFAIL)
     [ SMS_Report(TRUE),
       SMS_Group_Name("BitLocker Policy"),
       SMS_Class_ID("MICROSOFT|MBAM_POLICY|1.0"),
@@ -325,8 +325,8 @@ In the following sections, complete the instructions that correspond to the vers
     };
 
     //Read Win32_OperatingSystem.SKU WMI property in a new class - because SKU is not available before Vista.
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
     [ SMS_Report     (TRUE),
       SMS_Group_Name ("Operating System Ex"),
       SMS_Class_ID   ("MICROSOFT|OPERATING_SYSTEM_EXT|1.0") ]
@@ -339,8 +339,8 @@ In the following sections, complete the instructions that correspond to the vers
     };
 
     //Read Win32_ComputerSystem.PCSystemType WMI property in a new class - because PCSystemType is not available before Vista.
-#pragma namespace ("\\\\.\\root\\cimv2\\SMS")
-#pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2\\SMS")
+    #pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
     [ SMS_Report     (TRUE),
       SMS_Group_Name ("Computer System Ex"),
       SMS_Class_ID   ("MICROSOFT|COMPUTER_SYSTEM_EXT|1.0") ]
