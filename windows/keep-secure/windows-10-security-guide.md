@@ -355,7 +355,10 @@ Table 3. Threats and Windows 10 mitigations
 <th align="left">Windows 10 mitigation</th>
 </tr>
 </thead>
-<tbody>
+<tbody><tr class="odd">
+<td align="left"><p>"Man in the middle" attacks, when an attacker reroutes communications between two users through the attacker's computer without the knowledge of the two communicating users</p></td>
+<td align="left"><p>Client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require SMB signing and mutual authentication (such as Kerberos).</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>Firmware bootkits replace the firmware with malware.</p></td>
 <td align="left"><p>All certified PCs include a UEFI with Secure Boot, which requires signed firmware for updates to UEFI and Option ROMs.</p></td>
@@ -394,6 +397,22 @@ Table 3. Threats and Windows 10 mitigations
  
 
 The sections that follow describe these improvements in more detail.
+
+**SMB hardening improvements for SYSVOL and NETLOGON connections**
+
+In Windows 10 and Windows Server 2016 Technical Preview, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require SMB signing and mutual authentication (such as Kerberos).
+
+- **What value does this change add?**
+This change reduces the likelihood of man-in-the-middle attacks.
+
+- **What works differently?**
+If SMB signing and mutual authentication are unavailable, a Windows 10 or Windows Server 2016 computer won’t process domain-based Group Policy and scripts.
+
+
+> **Note:** The registry values for these settings aren’t present by default, but the hardening rules still apply until overridden by Group Policy or other registry values.
+
+For more information on these security improvements, (also referred to as UNC hardening), see [Microsoft Knowledge Base article 3000483](http://go.microsoft.com/fwlink/p/?LinkId=789216) and [MS15-011 & MS15-014: Hardening Group Policy](http://go.microsoft.com/fwlink/p/?LinkId=789215).
+ 
 
 **Secure hardware**
 
