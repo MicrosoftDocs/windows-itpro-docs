@@ -1,7 +1,7 @@
 ---
 title: Investigate Windows Defender Advanced Threat Protection IP address
 description: Use the investigation options to examine possible communication between machines and external IP addresses.
-keywords: investigate, investigation, IP address
+keywords: investigate, investigation, IP address, alert, windows defender atp
 search.product: eADQiWindows 10XVcnh 
 ms.prod: W10
 ms.mktglfcycl: deploy
