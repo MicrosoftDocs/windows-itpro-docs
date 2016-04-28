@@ -12,6 +12,7 @@ author: mjcaparas
 # Windows Defender ATP service onboarding
 
 **Applies to:**
+
 - Windows 10 Insider Preview
 - Azure Active Directory
 
