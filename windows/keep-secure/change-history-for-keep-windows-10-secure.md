@@ -16,6 +16,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |New or changed topic | Description |
 |----------------------|-------------|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Clarified Credential Guard protections |
+|[Windows 10 security overview](windows-10-security-guide.md) |Added SMB hardening improvements for SYSVOL and NETLOGON connections |
 
 ## March 2016
 
