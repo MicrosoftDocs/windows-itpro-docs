@@ -25,8 +25,8 @@ To enable the client computers to report BitLocker compliance details through th
     // Microsoft BitLocker Administration and Monitoring 
     //===================================================
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL) 
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL) 
     [Union, ViewSources{"select DeviceId, BitlockerPersistentVolumeId, BitLockerManagementPersistentVolumeId, BitLockerManagementVolumeType, DriveLetter, Compliant, ReasonsForNonCompliance, KeyProtectorTypes, EncryptionMethod, ConversionStatus, ProtectionStatus, IsAutoUnlockEnabled, NoncomplianceDetectedDate, EnforcePolicyDate from Mbam_Volume"}, ViewSpaces{"\\\\.\\root\\microsoft\\mbam"}, dynamic, Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class Win32_BitLockerEncryptionDetails
     {
@@ -62,8 +62,8 @@ To enable the client computers to report BitLocker compliance details through th
         String     EnforcePolicyDate;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
     [DYNPROPS]
     Class Win32Reg_MBAMPolicy
     {
@@ -124,8 +124,8 @@ To enable the client computers to report BitLocker compliance details through th
         EncodedComputerName;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
     [Union, ViewSources{"select Name,OperatingSystemSKU from Win32_OperatingSystem"}, ViewSpaces{"\\\\.\\root\\cimv2"},
     dynamic,Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class CCM_OperatingSystemExtended
@@ -136,8 +136,8 @@ To enable the client computers to report BitLocker compliance details through th
         uint32     SKU;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
     [Union, ViewSources{"select Name,PCSystemType from Win32_ComputerSystem"}, ViewSpaces{"\\\\.\\root\\cimv2"},
     dynamic,Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class CCM_ComputerSystemExtended
@@ -168,8 +168,8 @@ To enable the client computers to report BitLocker compliance details through th
     // Microsoft BitLocker Administration and Monitoring 
     //===================================================
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL) 
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL) 
     [Union, ViewSources{"select DeviceId, BitlockerPersistentVolumeId, BitLockerManagementPersistentVolumeId, BitLockerManagementVolumeType, DriveLetter, Compliant, ReasonsForNonCompliance, KeyProtectorTypes, EncryptionMethod, ConversionStatus, ProtectionStatus, IsAutoUnlockEnabled, NoncomplianceDetectedDate, EnforcePolicyDate from Mbam_Volume"}, ViewSpaces{"\\\\.\\root\\microsoft\\mbam"}, dynamic, Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class Win32_BitLockerEncryptionDetails
     {
@@ -205,8 +205,8 @@ To enable the client computers to report BitLocker compliance details through th
         String     EnforcePolicyDate;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
     [DYNPROPS]
     Class Win32Reg_MBAMPolicy
     {
@@ -267,8 +267,8 @@ To enable the client computers to report BitLocker compliance details through th
         EncodedComputerName;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("Win32Reg_MBAMPolicy_64", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("Win32Reg_MBAMPolicy_64", NOFAIL)
     [DYNPROPS]
     Class Win32Reg_MBAMPolicy_64
     {
@@ -329,8 +329,8 @@ To enable the client computers to report BitLocker compliance details through th
         EncodedComputerName;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
     [Union, ViewSources{"select Name,OperatingSystemSKU from Win32_OperatingSystem"}, ViewSpaces{"\\\\.\\root\\cimv2"},
     dynamic,Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class CCM_OperatingSystemExtended
@@ -341,8 +341,8 @@ To enable the client computers to report BitLocker compliance details through th
         uint32     SKU;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
+    #pragma namespace ("\\\\.\\root\\cimv2")
+    #pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
     [Union, ViewSources{"select Name,PCSystemType from Win32_ComputerSystem"}, ViewSpaces{"\\\\.\\root\\cimv2"},
     dynamic,Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class CCM_ComputerSystemExtended
