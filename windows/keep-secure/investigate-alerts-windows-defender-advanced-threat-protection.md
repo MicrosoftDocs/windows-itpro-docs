@@ -43,6 +43,8 @@ Details about the alert is displayed such as:
 
 ![A detailed view of an alert when clicked](images/alert-details.png)
 
+<a href="images/alert-details.png"><img src="images/alert-details.png"/></a>
+
 Depending on the type of alert, you click on the name to see a detailed report about the threat. You'll see information such as a brief introduction of the threat, its interests, tools, tactics, and processes, and the areas it affects worldwide.
 
 ### Related topics
