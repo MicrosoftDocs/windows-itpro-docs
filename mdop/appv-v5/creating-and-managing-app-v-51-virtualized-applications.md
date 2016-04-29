@@ -146,67 +146,21 @@ Copy on write (CoW) file extensions allow App-V 5.1 to dynamically write to spec
 
 The following table displays the file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V 5.1 client. All other files and directories can be modified.
 
-| File type |
-| --------- |
-| .acm |
-| .asa |
-| .asp |
-| .aspx |
-| .ax |
-| .bat |
-| .cer |
-| .chm |
-| .clb |
-| .cmd |
-| .cnt |
-| .cnv |
-| .com |
-| .cpl |
-| .cpx |
-| .crt |
-| .dll |
-| .drv |
-|  .exe |
-| .fon |
-| .grp |
-| .hlp |
-| .hta |
-| .ime |
-| .inf |
-| .ins |
-| .isp |
-| .its |
-| .js |
-| .jse |
-| .lnk |
-| .msc |
-| .msi |
-| .msp |
-| .mst |
-| .mui |
-| .nls |
-| .ocx |
-| .pal |
-| .pcd |
-| .pif |
-| .reg |
-| .scf |
-| .scr |
-| .sct |
-| .shb |
-| .shs |
-| .sys |
-| .tlb |
-| .tsp |
-| .url |
-| .vb |
-| .vbe |
-| .vbs |
-| .vsmacros |
-| .ws |
-| .esc |
-| .wsf |
-| .wsh |
+**File type** 
+
+| .acm | .cnv | .hta | .msp | .sct | .ws  |
+| .asa | .com | .ime | .mst | .shb | .esc |
+| .asp | .cpl | .inf | .mui | .shs | .wsf |
+| .aspx| .cpx | .ins | .nls | .sys | .wsh |
+| .ax  | .crt | .isp | .ocx | .tlb |
+| .bat | .dll | .its | .pal | .tsp |
+| .cer | .drv | .js  | .pcd | .url |
+| .chm | .exe | .jse | .pif | .vb  |
+| .clb | .fon | .lnk | .reg | .vbe |
+| .cmd | .grp | .msc | .scf | .vbs |
+| .cnt | .hlp | .msi | .scr |. vsmacros |
+
+
 
 ## Modifying an existing virtual application package
 
