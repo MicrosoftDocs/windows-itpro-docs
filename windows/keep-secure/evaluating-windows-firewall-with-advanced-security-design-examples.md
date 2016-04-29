@@ -10,13 +10,13 @@ author: brianlic-msft
 
 The following Windows Firewall with Advanced Security design examples illustrate how you can use Windows Firewall with Advanced Security to improve the security of the computers connected to the network. You can use these topics to evaluate how the firewall and connection security rules work across all Windows Firewall with Advanced Security designs and to determine which design or combination of designs best suits the goals of your organization.
 
--   [Firewall Policy Design Example](91fc4c4c-dca9-422e-be05-42a5e14f5e4a)
+-   [Firewall Policy Design Example](firewall-policy-design-example.md)
 
--   [Domain Isolation Policy Design Example](d918816a-52be-4266-9027-7bc3c36f4916)
+-   [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md)
 
--   [Server Isolation Policy Design Example](c275b916-56cf-4863-9900-e50193cd77ed)
+-   [Server Isolation Policy Design Example](server-isolation-policy-design-example.md)
 
--   [Certificate-based Isolation Policy Design Example](85a83c33-358b-4b73-9b08-ef7589d01f91)
+-   [Certificate-based Isolation Policy Design Example](certificate-based-isolation-policy-design-example.md)
 
  
 

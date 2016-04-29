@@ -11,7 +11,7 @@ author: brianlic-msft
 To use certificates in a server isolation or domain isolation design, you must first set up the infrastructure to deploy the certificates. This is called a public key infrastructure (PKI). The services required for a PKI are available in Windows Server 2012 in the form of the Active Directory Certificate Services (AD CS) role.
 
 **Caution**  
-Creation of a full PKI for an enterprise environment with all of the appropriate security considerations included in the design is beyond the scope of this guide. The following procedure shows you only the basics of installing an issuing certificate server; it is appropriate for a test lab environment only. For more information about deploying AD CS in a production environment, see [Active Directory Certificate Services Overview](e37b2335-0796-449f-aaf4-0520e508f47d) in the Windows Server 2012 Technical Library (http://technet.microsoft.com/library/hh831740.aspx).
+Creation of a full PKI for an enterprise environment with all of the appropriate security considerations included in the design is beyond the scope of this guide. The following procedure shows you only the basics of installing an issuing certificate server; it is appropriate for a test lab environment only. For more information about deploying AD CS in a production environment, see [Active Directory Certificate Services Overview](http://technet.microsoft.com/library/hh831740.aspx).
 
  
 

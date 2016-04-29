@@ -14,7 +14,7 @@ The term *domain* in this context means a boundary of communications trust inste
 
 For most implementations, an isolated domain will contain the largest number of computers. Other isolation zones can be created for the solution if their communication requirements differ from those of the isolated domain. Examples of these differences are what result in the boundary and encryption zones described in this guide. Conceptually, the isolated domain is just the largest isolation zone, and a superset to the other zones.
 
-You must create a group in Active Directory to contain members of the isolated domain. You then apply one of several GPOs that contain connection security and firewall rules to the group so that authentication on all inbound network connections is enforced. Creation of the group and how to link the GPOs that apply the rules to its members are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](cdbe81c3-6dbf-41c2-b003-3ac4fd4e67dd) section.
+You must create a group in Active Directory to contain members of the isolated domain. You then apply one of several GPOs that contain connection security and firewall rules to the group so that authentication on all inbound network connections is enforced. Creation of the group and how to link the GPOs that apply the rules to its members are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
 The GPOs for the isolated domain should contain the following connection security rules and settings.
 

@@ -26,7 +26,7 @@ Windows PowerShell and netsh command references are at the following locations.
 ## Scope
 
 
-This guide does not teach you the fundamentals of Windows Firewall with Advanced Security, which can be found in [Windows Firewall with Advanced Security Overview](windows-firewall-with-advanced-security-overview-win8.md). It does not teach the fundamentals of Windows PowerShell, and it assumes that you are familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more information about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#bkmk-additionalresources) section of this guide.
+This guide does not teach you the fundamentals of Windows Firewall with Advanced Security, which can be found in [Windows Firewall with Advanced Security Overview](windows-firewall-with-advanced-security.md). It does not teach the fundamentals of Windows PowerShell, and it assumes that you are familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more information about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#bkmk-additionalresources) section of this guide.
 
 ## Audience and user requirements
 

@@ -23,7 +23,7 @@ The following illustration shows an isolated domain, with one of the zones that 
 
 ![domain isolation](images/wfas-domainiso.gif)
 
-These goals, which correspond to [Domain Isolation Policy Design](3aa75a74-adef-41e4-bf2d-afccf2c47d46) and [Certificate-based Isolation Policy Design](a706e809-ddf3-42a4-9991-6e5d987ebf38), provide the following benefits:
+These goals, which correspond to [Domain Isolation Policy Design](domain-isolation-policy-design.md) and [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md), provide the following benefits:
 
 -   Computers in the isolated domain accept unsolicited inbound network traffic only when it can be authenticated as coming from another computer in the isolated domain. Exemption rules can be defined to allow inbound traffic from trusted computers that for some reason cannot perform IPsec authentication.
 
@@ -45,9 +45,9 @@ These goals also support optional zones that can be created to add customized pr
 
 The following components are required for this deployment goal:
 
--   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more GPOs that can be automatically applied to all relevant computers in the domain. For more information about Active Directory, see [Additional Resources \[lhs\]](508b3d05-e9c9-4df9-bae4-750d4ad03302).
+-   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more GPOs that can be automatically applied to all relevant computers in the domain. For more information about Active Directory, see [Additional Resources](additional-resources-wfasdesign.md).
 
-**Next: **[Require Encryption When Accessing Sensitive Network Resources](261bd90d-5a8a-4de1-98c7-6d07e5d81267)
+**Next: **[Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md)
 
  
 

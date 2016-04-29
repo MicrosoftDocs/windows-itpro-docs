@@ -12,7 +12,7 @@ Windows Firewall with Advanced Security in Windows Server 2012, Windows Server 
 
 The interface for Windows Firewall with Advanced Security is much more capable and flexible than the consumer-friendly interface found in the Windows Firewall Control Panel. They both interact with the same underlying services, but provide different levels of control over those services. While the Windows Firewall Control Panel meets the needs for protecting a single computer in a home environment, it does not provide enough centralized management or security features to help secure more complex network traffic found in a typical business enterprise environment.
 
-For more overview information about Windows Firewall with Advanced Security and see [Windows Firewall with Advanced Security Overview](9ae80ae1-a693-48ed-917a-f03ea92b550d).
+For more overview information about Windows Firewall with Advanced Security and see [Windows Firewall with Advanced Security Overview](windows-firewall-with-advanced-security.md).
 
 ## About this guide
 
@@ -132,7 +132,7 @@ The following table identifies and defines terms used throughout this guide.
 
  
 
-**Next:**[Understanding the Windows Firewall with Advanced Security Design Process](b9774295-8dd3-47e3-9f5a-7fa748ae9fba)
+**Next:**[Understanding the Windows Firewall with Advanced Security Design Process](understanding-the-windows-firewall-with-advanced-security-design-process.md)
 
  
 

@@ -14,7 +14,7 @@ Reports of targeted attacks against organizations, governments, and individuals 
 
 Running a host-based firewall on every computer that your organization manages is an important layer in a "defense-in-depth" security strategy. A host-based firewall can help protect against attacks that originate from inside the network and also provide additional protection against attacks from outside the network that manage to penetrate the perimeter firewall. It also travels with a portable computer to provide protection when it is away from the organization's network.
 
-A host-based firewall helps secure a computer by dropping all network traffic that does not match the administrator-designed rule set for permitted network traffic. This design, which corresponds to [Basic Firewall Policy Design](0c75637e-86b7-4fb3-9910-04c5cf186305), provides the following benefits:
+A host-based firewall helps secure a computer by dropping all network traffic that does not match the administrator-designed rule set for permitted network traffic. This design, which corresponds to [Basic Firewall Policy Design](basic-firewall-policy-design.md), provides the following benefits:
 
 -   Network traffic that is a reply to a request from the local computer is permitted into the computer from the network.
 
@@ -32,7 +32,7 @@ The following component is recommended for this deployment goal:
 
 Other means of deploying a firewall policy are available, such as creating scripts that use the **netsh** command-line tool, and then running those scripts on each computer in the organization. This guide uses Active Directory as a recommended means of deployment because of its ability to scale to very large organizations.
 
-**Next: **[Restrict Access to Only Trusted Computers](29805c5c-a8e4-4600-86b9-7abb9a068919)
+**Next: **[Restrict Access to Only Trusted Computers](restrict-access-to-only-trusted-computers.md)
 
  
 

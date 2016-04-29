@@ -28,23 +28,23 @@ The following table lists the three main tasks for articulating, refining, and s
 <td><p>Evaluate predefined Windows Firewall with Advanced Security deployment goals that are provided in this section of the guide, and combine one or more goals to reach your organizational objectives.</p></td>
 <td><p>Predefined deployment goals:</p>
 <ul>
-<li><p>[Protect Computers from Unwanted Network Traffic](fe94e9b8-c456-4343-af5f-5511b8047d29)</p></li>
-<li><p>[Restrict Access to Only Trusted Computers](29805c5c-a8e4-4600-86b9-7abb9a068919)</p></li>
-<li><p>[Require Encryption When Accessing Sensitive Network Resources](261bd90d-5a8a-4de1-98c7-6d07e5d81267)</p></li>
-<li><p>[Restrict Access to Sensitive Resources to Only Specified Users or Computers](09cd6d03-c1ce-45ed-a894-d7f7aaa9b6f0)</p></li>
+<li><p>[Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md)</p></li>
+<li><p>[Restrict Access to Only Trusted Computers](restrict-access-to-only-trusted-computers.md)</p></li>
+<li><p>[Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md)</p></li>
+<li><p>[Restrict Access to Sensitive Resources to Only Specified Users or Computers](restrict-access-to-only-specified-users-or-computers.md)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Map one goal or a combination of the predefined deployment goals to an existing Windows Firewall with Advanced Security design.</p></td>
 <td><ul>
-<li><p>[Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design](39bb8fa5-4601-45ae-83c5-121d42f7f82c)</p></li>
+<li><p>[Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>Based on the status of your current infrastructure, document your deployment goals for your Windows Firewall with Advanced Security design into a deployment plan.</p></td>
 <td><ul>
-<li><p>[Designing A Windows Firewall with Advanced Security Strategy](36230ca4-ee8d-4b2c-ab4f-5492b4400340)</p></li>
-<li><p>[Planning Your Windows Firewall with Advanced Security Design](6622d31d-a62c-4506-8cea-275bf42e755f)</p></li>
+<li><p>[Designing A Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md)</p></li>
+<li><p>[Planning Your Windows Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)</p></li>
 </ul></td>
 </tr>
 </tbody>

@@ -10,19 +10,19 @@ author: brianlic-msft
 
 Designing any deployment starts by performing several important tasks:
 
--   [Identifying Your Windows Firewall with Advanced Security Design Goals](bba6fa3a-2318-4cb7-aa75-f2910d9c406d)
+-   [Identifying Your Windows Firewall with Advanced Security Design Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)
 
--   [Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design](39bb8fa5-4601-45ae-83c5-121d42f7f82c)
+-   [Mapping Your Deployment Goals to a Windows Firewall with Advanced Security Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)
 
--   [Evaluating Windows Firewall with Advanced Security Design Examples](6da09290-8cda-4731-8fce-07fc030f9f4f)
+-   [Evaluating Windows Firewall with Advanced Security Design Examples](evaluating-windows-firewall-with-advanced-security-design-examples.md)
 
 After you identify your deployment goals and map them to a Windows Firewall with Advanced Security design, you can begin documenting the design based on the processes that are described in the following topics:
 
--   [Designing A Windows Firewall with Advanced Security Strategy](36230ca4-ee8d-4b2c-ab4f-5492b4400340)
+-   [Designing A Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md)
 
--   [Planning Your Windows Firewall with Advanced Security Design](6622d31d-a62c-4506-8cea-275bf42e755f)
+-   [Planning Your Windows Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)
 
-**Next:**[Identifying Your Windows Firewall with Advanced Security Design Goals](bba6fa3a-2318-4cb7-aa75-f2910d9c406d)
+**Next:**[Identifying Your Windows Firewall with Advanced Security Design Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)
 
  
 
