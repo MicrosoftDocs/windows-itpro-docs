@@ -52,7 +52,7 @@ The following table lists the three main tasks for articulating, refining, and s
 
  
 
-**Next:**[Protect Computers from Unwanted Network Traffic](fe94e9b8-c456-4343-af5f-5511b8047d29)
+**Next:**[Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md)
 
  
 

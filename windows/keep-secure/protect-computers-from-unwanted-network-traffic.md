@@ -28,7 +28,7 @@ A host-based firewall helps secure a computer by dropping all network traffic th
 
 The following component is recommended for this deployment goal:
 
--   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more Group Policy objects (GPOs) that can be automatically applied to all relevant computers in the domain. For more information about Active Directory, see [Additional Resources \[lhs\]](508b3d05-e9c9-4df9-bae4-750d4ad03302).
+-   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more Group Policy objects (GPOs) that can be automatically applied to all relevant computers in the domain. For more information about Active Directory, see [Additional Resources](additional-resources-wfasdesign.md).
 
 Other means of deploying a firewall policy are available, such as creating scripts that use the **netsh** command-line tool, and then running those scripts on each computer in the organization. This guide uses Active Directory as a recommended means of deployment because of its ability to scale to very large organizations.
 
