@@ -146,8 +146,9 @@ Copy on write (CoW) file extensions allow App-V 5.1 to dynamically write to spec
 
 The following table displays the file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V 5.1 client. All other files and directories can be modified.
 
-**File type** 
 
+File type 
+---------
 | .acm | .cnv | .hta | .msp | .sct | .ws  |
 | .asa | .com | .ime | .mst | .shb | .esc |
 | .asp | .cpl | .inf | .mui | .shs | .wsf |
