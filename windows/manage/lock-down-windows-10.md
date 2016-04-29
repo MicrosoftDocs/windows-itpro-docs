@@ -43,8 +43,8 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 <td align="left"><p>Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps. The result is similar to [a kiosk device](set-up-a-device-for-anyone-to-use.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Configure telemetry in your organization](configure-telemetry-in-your-organization.md)</p></td>
-<td align="left"><p>Use this article to make informed decisions about how you can configure telemetry in your organization.</p></td>
+<td align="left"><p>[Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)</p></td>
+<td align="left"><p>Use this article to make informed decisions about how you can configure Windows telemetry in your organization.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Disconnect your organization from Microsoft](disconnect-your-organization-from-microsoft.md)</p></td>

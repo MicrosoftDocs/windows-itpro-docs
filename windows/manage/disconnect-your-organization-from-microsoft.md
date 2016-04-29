@@ -15,7 +15,7 @@ author: brianlic-msft
 
 -   Windows 10
 
-If you’re looking for content on what each telemetry level means and how to configure it in your organization, see [Configure telemetry in your organization](configure-telemetry-in-your-organization.md).
+If you’re looking for content on what each telemetry level means and how to configure it in your organization, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md).
 
 Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 

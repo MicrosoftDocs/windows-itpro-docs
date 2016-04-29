@@ -1,10 +1,10 @@
 ---
 description: Use this article to make informed decisions about how you can configure telemetry in your organization.
-title: Configure telemetry in your organization (Windows 10)
+title: Configure Windows telemetry in your organization (Windows 10)
 keywords: privacy
 ---
 
-# Configure telemetry in your organization
+# Configure Windows telemetry in your organization
 
 **Applies to**
 
