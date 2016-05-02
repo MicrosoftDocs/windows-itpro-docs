@@ -4,9 +4,11 @@
 ## [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ## [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
 ## [Ethernet adapters and Surface deployment](ethernet-adapters-and-surface-device-deployment.md)
+## [Manage Surface Dock firmware updates](manage-surface-dock-firmware-updates.md)
 ## [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
 ## [Surface Data Eraser](microsoft-surface-data-eraser.md)
 ## [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)
+## [Surface Dock Updater](surface-dock-updater.md)
 

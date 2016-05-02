@@ -14,7 +14,21 @@ author: heatherpoulsen
 
 Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.
 
-[Microsoft Surface Data Eraser](http://go.microsoft.com/fwlink/p/?LinkId=691148) is a tool that boots from a USB stick and allows you to perform a secure wipe of all data from a Surface Book, Surface Pro 4, Surface Pro 3, or Surface Pro 2 device. A Microsoft Surface Data Eraser USB stick requires only the ability to boot from USB. The USB tool is easy to create by using the provided wizard, the Microsoft Surface Data Eraser Wrapper, and is easy to use with a simple graphic interface, no command line needed. To learn more about the data wiping capabilities and practices Microsoft uses during the service process for Surface, see [Protecting your data if you send your Surface in for service](http://go.microsoft.com/fwlink/p/?LinkId=691222).
+[Microsoft Surface Data Eraser](http://go.microsoft.com/fwlink/p/?LinkId=691148) is a tool that boots from a USB stick and allows you to perform a secure wipe of all data from a compatible Surface device. A Microsoft Surface Data Eraser USB stick requires only the ability to boot from USB. The USB tool is easy to create by using the provided wizard, the Microsoft Surface Data Eraser Wrapper, and is easy to use with a simple graphic interface, no command line needed. To learn more about the data wiping capabilities and practices Microsoft uses during the service process for Surface, see [Protecting your data if you send your Surface in for service](http://go.microsoft.com/fwlink/p/?LinkId=691222).
+
+Compatible Surface devices include:
+
+-   Surface Book
+
+-   Surface Pro 4
+
+-   Surface Pro3
+
+-   Surface 3
+
+-   Surface 3 LTE
+
+-   Surface Pro 2
 
 Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
@@ -27,19 +41,7 @@ Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 -   Standard practice when performing reimaging for devices used with sensitive data
 
 **Note**  
-The following devices are incompatible with Microsoft Surface Data Eraser:
-
--   Surface devices running Windows RT
-
-    -   Surface
-
-    -   Surface 2
-
--   Surface 3
-
--   Surface Pro
-
--   Third-party devices
+Third-party devices, Surface devices running Windows RT (including Surface and Surface 2), and Surface Pro are not compatible with Microsoft Surface Data Eraser.
 
  
 
@@ -48,7 +50,7 @@ Because the ability to boot to USB is required to run Microsoft Surface Data Era
 
  
 
-## Create a Microsoft Surface Data Eraser USB stick
+## How to create a Microsoft Surface Data Eraser USB stick
 
 
 To create a Microsoft Surface Data Eraser USB stick, first install the Microsoft Surface Data Eraser setup tool from the Microsoft Download Center using the link provided at the beginning of this article. You do not need a Surface device to *create* the USB stick. After you have downloaded the installation file to your computer, follow these steps to install the Microsoft Surface Data Eraser creation tool:
