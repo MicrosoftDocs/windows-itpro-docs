@@ -105,11 +105,6 @@ Each app in the Store for Business has an online, or an offline license. For mor
 
  
 
-**Note**  
-Removing apps from inventory is not currently supported.
-
- 
-
 The actions in the table are how you distribute apps, and manage app licenses. We'll cover those in the next sections. Working with offline-licensed apps has different steps. For more information on distributing offline-licensed apps, see [Distribute offline apps](distribute-offline-apps.md).
 
 ### Distribute apps
@@ -122,15 +117,45 @@ For online-licensed apps, there are a couple of ways to distribute apps from you
 
 If you use a management tool that supports Store for Business, you can distribute apps with your management tool. Once it is configured to work with Store for Business, your managment tool will have access to all apps in your inventory. For more information, see [Distribute apps with a management tool](distribute-apps-with-management-tool.md).
 
-### Assign apps
+Once an app is in your private store, people in your org can install the app on their devices. For more information, see [Distribute apps using your private store](distribute-apps-from-your-private-store.md).
 
-You can assign apps directly to people in your organization. You can assign apps to individuals, a few people, or to a group. For more information, see [Assign apps to employees](assign-apps-to-employees.md).
+**To make an app in inventory available in your private store**
 
-### Private store
+1.	Sign in to the [Store for Business](http://businessstore.microsoft.com).
+2.	Click **Manage**, and then choose **Inventory**.
+3.	Click **Refine**, and then choose **Online**. Store for Business will update the list of apps on the **Inventory** page.
+4.	From an app in **Inventory**, click the ellipses under **Action**, and then choose **Add to private store**.
 
-The private store is a feature in the Store for Business. Once an online-licensed app is in your inventory, you can make it available in your private store. When you add apps to the private store, all employees in your organization can view and download the app. Employees access the private store as a page in Windows Store app.
+The value under Private store for the app will change to pending. It will take approximately twelve hours before the app is available in the private store. 
 
-For more information, see [Distribute apps using your private store](distribute-apps-from-your-private-store.md).
+Employees can claim apps that admins added to the private store by doing the following.
+
+**To claim an app from the private store**
+
+1.	Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Windows Store app.
+2.	Click the private store tab.
+3.	Click the app you want to install, and then click **Install**.
+
+Another way to distribute apps is by assigning them to people in your organization.
+
+If you decide that you don't want an app available for employees to install on their own, you can remove it from your private store.
+
+**To remove an app from the private store**
+ 
+1.  Sign in to the [Store for Business](http://businessstore.microsoft.com).
+2.	Click **Manage**, and then choose **Inventory**.
+3.	Find an app, click the ellipses under **Action**, and then choose **Remove from private store**, and then click **Remove**.
+
+The app will still be in your inventory, but your employees will not have access to the app from your private store. 
+
+**To assign an app to an employee**
+
+1.	Sign in to the [Store for Business](http://businessstore.microsoft.com).
+2.	Click **Manage**, and then choose **Inventory**.
+3.	Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
+4.	Type the email address for the employee that you're assigning the app to, and click **Confirm**.
+
+Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**.
 
 ### Manage app licenses
 

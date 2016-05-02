@@ -6,7 +6,7 @@ keywords: ["replication, replicate, deploy, configure, remote"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Build a distributed environment for Windows 10 deployment

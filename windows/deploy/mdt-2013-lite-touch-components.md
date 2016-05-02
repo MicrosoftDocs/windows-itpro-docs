@@ -6,7 +6,7 @@ keywords: ["deploy, install, deployment, boot, log, monitor"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # MDT 2013 Update 2 Lite Touch components
