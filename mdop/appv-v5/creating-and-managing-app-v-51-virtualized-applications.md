@@ -138,67 +138,19 @@ Copy on write (CoW) file extensions allow App-V 5.1 to dynamically write to spec
 
 The following table displays the file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V 5.1 client. All other files and directories can be modified.
 
-| File type |
-| --------- |
-| .acm |
-| .asa |
-| .asp |
-| .aspx |
-| .ax |
-| .bat |
-| .cer |
-| .chm |
-| .clb |
-| .cmd |
-| .cnt |
-| .cnv |
-| .com |
-| .cpl |
-| .cpx |
-| .crt |
-| .dll |
-| .drv |
-|  .exe |
-| .fon |
-| .grp |
-| .hlp |
-| .hta |
-| .ime |
-| .inf |
-| .ins |
-| .isp |
-| .its |
-| .js |
-| .jse |
-| .lnk |
-| .msc |
-| .msi |
-| .msp |
-| .mst |
-| .mui |
-| .nls |
-| .ocx |
-| .pal |
-| .pcd |
-| .pif |
-| .reg |
-| .scf |
-| .scr |
-| .sct |
-| .shb |
-| .shs |
-| .sys |
-| .tlb |
-| .tsp |
-| .url |
-| .vb |
-| .vbe |
-| .vbs |
-| .vsmacros |
-| .ws |
-| .esc |
-| .wsf |
-| .wsh |
+| File Type  	|             	|             	|            	|            	|            	|
+|------------	|-------------	|-------------	|------------	|------------	|------------	|
+| .acm       	| .asa        	| .asp        	| .aspx      	| .ax        	| .bat       	|
+| .cer       	| .chm        	| .clb        	| .cmd       	| .cnt       	| .cnv       	|
+| .com       	| .cpl        	| .cpx        	| .crt       	| .dll       	| .drv       	|
+| .esc       	| .exe        	| .fon        	| .grp       	| .hlp       	| .hta       	|
+| .ime       	| .inf        	| .ins        	| .isp       	| .its       	| .js        	|
+| .jse       	| .lnk        	| .msc        	| .msi       	| .msp       	| .mst       	|
+| .mui       	| .nls        	| .ocx        	| .pal       	| .pcd       	| .pif       	|
+| .reg       	| .scf        	| .scr        	| .sct       	| .shb       	| .shs       	|
+| .sys       	| .tlb        	| .tsp        	| .url       	| .vb        	| .vbe       	|
+| .vbs       	| .vsmacros   	| .ws         	| .wsf       	| .wsh       	|            	|
+
 
 ## Modifying an existing virtual application package
 
@@ -249,21 +201,9 @@ The App-V 5.1 Sequencer can detect common sequencing issues during sequencing. T
 
 You can also find additional information about sequencing errors using the Windows Event Viewer.
 
-## Got a suggestion for App-V?
-
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## <a href="" id="other-resources-for-the-app-v-5-1-sequencer-"></a>Other resources for the App-V 5.1 sequencer
 
 
 -   [Operations for App-V 5.1](operations-for-app-v-51.md)
-
- 
-
- 
-
-
-
-
 
