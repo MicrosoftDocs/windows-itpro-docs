@@ -20,8 +20,6 @@ When you run the Microsoft Surface Dock Updater installer you will be prompted t
 **Note**  
 Updating Surface Dock firmware requires connectivity to the Surface Dock, available only on Surface Pro 3, Surface Pro 4, and Surface Book devices. A Surface Pro 3, Surface Pro 4, or Surface Book is required to successfully install Microsoft Surface Dock Updater.
 
- 
-
 ## Update a Surface Dock with Microsoft Surface Dock Updater
 
 
@@ -99,7 +97,6 @@ Microsoft Surface Dock Updater logs its progress into the Event Log, as shown in
 | 12105    | Error                                                    |
 
  
-
 ![figure 8](images/surfacedockupdater-fig8-737test.png)
 
 Figure 8. Surface Dock Updater events in Event Viewer
@@ -108,12 +105,3 @@ Figure 8. Surface Dock Updater events in Event Viewer
 
 
 [Manage Surface Dock firmware updates](manage-surface-dock-firmware-updates.md)
-
- 
-
- 
-
-
-
-
-
