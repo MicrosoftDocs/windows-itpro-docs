@@ -14,7 +14,7 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 ## In this library
 
 
-[What's new in Windows 10](whats-new/index.md)
+[What's new in Windows 10](whats-new/)
 
 [Plan for Windows 10 deployment](plan/index.md)
 
