@@ -21,37 +21,33 @@ You can use a Group Policy (GP) configuration package or an automated script to 
 
 ## Configure with System Center Configuration Manager (SCCM)
 
-1. Open the SCCM configuration package .zip file (*WindowsATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com):  <span style="background-color: yellow;">Naama: Confirm package name</span>
+1. Open the SCCM configuration package .zip file (*WindowsATPOnboardingPackage_ConfigurationManager.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com): 
 
-  a. Click **Client onboarding** on the **Navigation pane**.
+    a. Click **Client onboarding** on the **Navigation pane**.
 
-  b. Select **SCCM**, click **Download package**, and save the .zip file. <span style="background-color: yellow;">Iaan: Need to confirm the UI for this</span>
+    b. Select **SCCM**, click **Download package**, and save the .zip file. 
 
 2.	Copy the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package.
 
-<span style="background-color: yellow;">Iaan: Will confirm ui for this</span>
+3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic. 
 
-3. In the SCCM console, go to **Software Library**.
-4. Under **Application Management**, right-click **Packages** and select **Import**.
-5. Click **Browse** and choose the package that was downloaded from the portal (zip file).
-6. The package will appear under the Packages page.
-7. Right-click the Package and choose deploy.
-8. Choose a predefined device collection to deploy the package to.
+4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
 
-<span style="background-color: yellow;">Naama note: If it’s a package we create then we’ll set the necessary privileges, otherwise provide guidance (Omri: what is the necessary privileges?)</span>
+    a. Choose a predefined device collection to deploy the package to.
+
 
 ## Configure with Group Policy
 Using the GP configuration package ensures your endpoints will be correctly configured to report to the Windows Defender ATP service.
 
 > **Note**&nbsp;&nbsp; To use GP updates to deploy the package, you must be on Windows Server 2008 R2 or later. The endpoints must be running Windows 10 TAP.
 
-1.  Open the GP configuration package .zip file (*WindowsATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com):
+1.  Open the GP configuration package .zip file (*WindowsATPOnboardingPackage_GroupPolicy.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com):
 
     a.  Click **Client onboarding** on the **Navigation pane**.
 
     b.  Select **GP**, click **Download package** and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called _*OptionalParamsPolicy*_ and the file _*WindowsATPOnboardingPackage.cmd*_.
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called *OptionalParamsPolicy* and the file *WindowsATPOnboardingScript.cmd*.
 
 3. Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -63,7 +59,7 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
-8. Go to the **Actions** tab and click **New…** Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared _*WindowsATPOnboardingPackage.cmd*_ file.
+8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared *WindowsATPOnboardingScript.cmd* file.
 
 9. Click **OK** and close any open GPMC windows.
 
@@ -84,7 +80,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-3.  Type the location of the script file. If you copied the file the
+3.  Type the location of the script file. If you copied the file to the
     desktop, type: *```%userprofile%\Desktop\WindowsATPOnboardingScript.cmd```*
 
 4.  Press the  **Enter** key or click  **OK**.

@@ -9,7 +9,7 @@ ms.sitesec: library
 author: mjcaparas
 ---
 
-# Monitor the Windows Defender Advanced Threat Protection onboarding
+# Monitor Windows Defender Advanced Threat Protection onboarding
 
 **Applies to:**
 
@@ -40,7 +40,7 @@ Monitoring with SCCM consists of two parts:
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the endpoints in your network.
 
-[[[2. Checking that the endpoints are compliant with the Windows Defender ATP service (this ensures the endpoint can complete the onboarding process and can continue to report data to the service).]]
+2. Checking that the endpoints are compliant with the Windows Defender ATP service (this ensures the endpoint can complete the onboarding process and can continue to report data to the service).
 
 **To confirm the configuration package has been correctly deployed:**
 
@@ -48,47 +48,13 @@ Monitoring with SCCM consists of two parts:
 
 2. Click **Overview** and then **Deployments**.
 
-3. Click on the deployment with the package name. <span style="background-color: yellow;">What is the name of the deployment, will it always be the same for every user/installation? - it's chosen by the user</span>
+3. Click on the deployment with the package name. 
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
 If there are failed deployments (endpoints with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the endpoints. See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for more information.
 
-<span style="background-color: yellow;">Naama: Is this a correct process for idendtifying/resolving issues? YES!</span>
-
-![image](images/sccm-deployment.png)
-
-[[**To check that your endpoints are compliant:**
-
-1. Get the *compliance.cab* file from the SCCM configuration package .zip file (*WindowsATPOnboardingPackage.zip*) that you downloaded during the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com):
-
-  1. Click **Client onboarding** on the **Navigation pane**.
-  2. Select **SCCM**, click **Download package** and save the .zip file. <span style="background-color: yellow;">Iaan: Need to confirm the UI for this</span>
-  3. Extract the *compliance.cab* file from the package.
-
-2. In the SCCM console, click **Assets and Compliance** at the bottom of the navigation pane.
-
-3. Click **Overview** and then **Compliance Settings**.
-
-4. In the main area of the SCCM console, click **Configuration Baselines** and import the provided cab. <span style="background-color: yellow;">Iaan: Need to confirm that 'import' is available/ UI is correct</span>
-
-5. Right-click the imported baseline and deploy to a predefined device collection. <span style="background-color: yellow;">Naama: Is this 'export' as in the screenshot, or is that showing something else?</span>
-
-  ![image](images/export-sccm.png)  
-
-  <span style="background-color: yellow;">Iaan: Need to confirm this is what it looks like</span>
-
-6. In the SCCM console, click **Monitoring** at the bottom of the navigation pane.
-
-7. Click **Overview** and then **Deployments**.
-
-8. Click the deployment with the package name <span style="background-color: yellow;">Naama: What is the name of the deployment, will it always be the same for every user/installation?</span>
-
-<span style="background-color: yellow;">Naama: How does one know if there is an issue?</span>
-
-If there are non-compliant endpoints (endpoints with ?????), you may need to troubleshoot the endpoints. See the [Troubleshoot Windows Defender ATP onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for more information.
-
-<span style="background-color: yellow;">Naama: Is this a correct process for resolving issues?</span>]]]
+![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
 ## Related topics
 - [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)

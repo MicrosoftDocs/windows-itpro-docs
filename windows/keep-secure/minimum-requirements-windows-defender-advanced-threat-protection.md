@@ -58,8 +58,8 @@ disabled you can turn it on by following the instructions in the
 ### Deployment channel operating system requirements
 
 You can choose to onboard endpoints with a scheduled Group Policy
-(GP) update (using a GP package that you
-download from the portal or during the service onboarding wizard) or
+(GP) or System Center Configuration Manager (SCCM) update (using a configuration package that you
+download from the portal or during the service onboarding wizard), or by making
 manual registry changes.
 
 The following describes the minimum operating system or software version
@@ -68,5 +68,6 @@ required for each deployment channel.
 Deployment channel | Minimum server requirements 
 :---|:---
 Group Policy settings | Windows Server 2008 R2
+System Center Configuration Manager | SCCM 2012
 Manual registry modifications | No minimum requirements
 
