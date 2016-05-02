@@ -1,5 +1,5 @@
 ---
-title: Disconnect your organization from Microsoft (Windows 10)
+title: Configure Windows 10 devices to stop data flow to Microsoft (Windows 10)
 description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 keywords: privacy, disconnect from Microsoft
@@ -9,7 +9,7 @@ ms.sitesec: library
 author: brianlic-msft
 ---
 
-# Disconnect your organization from Microsoft
+# Configure Windows 10 devices to stop data flow to Microsoft
 
 **Applies to**
 
