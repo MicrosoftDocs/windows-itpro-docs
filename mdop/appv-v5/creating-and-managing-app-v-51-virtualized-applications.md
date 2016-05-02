@@ -13,8 +13,6 @@ After you have properly deployed the Microsoft Application Virtualization (App-V
 **Note**  
 For more information about configuring the App-V 5.1 sequencer, sequencing best practices, and an example of creating and updating a virtual application, see the [Microsoft Application Virtualization 5.0 Sequencing Guide](http://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V 5.0 Sequencing Guide.docx).
 
- 
-
 ## Sequencing an application
 
 
@@ -28,9 +26,7 @@ You can use the App-V 5.1 Sequencer to perform the following tasks:
 
     **Note**  
     You must create shortcuts and save them to an available network location to allow roaming. If a shortcut is created and saved in a private location, the package must be published locally to the computer running the App-V 5.1 client.
-
-     
-
+ 
 -   Convert existing virtual packages.
 
 The sequencer uses the **%TMP% \\ Scratch** or **%TEMP% \\ Scratch** directory and the **Temp** directory to store temporary files during sequencing. On the computer that runs the sequencer, you should configure these directories with free disk space equivalent to the estimated application installation requirements. Configuring the temp directories and the Temp directory on different hard drive partitions can help improve performance during sequencing.
@@ -48,18 +44,14 @@ When you use the sequencer to create a new virtual application, the following li
 -   User configuration file. The user configuration file determines how the virtual application will run on target computers.
 
 **Important**  
-You must configure the %TMP% and %TEMP% folders that the package converter uses to be a secure location and directory. A secure location is only accessible by an administrator. Additionally, when you sequence the package you should save the package to a location that is secure, or make sure that no other user is allowed to be logged in during the conversion and monitoring process.
-
- 
+You must configure the %TMP% and %TEMP% folders that the package converter uses to be a secure location and directory. A secure location is only accessible by an administrator. Additionally, when you sequence the package you should save the package to a location that is secure, or make sure that no other user is allowed to be logged in during the conversion and monitoring process. 
 
 The **Options** dialog box in the sequencer console contains the following tabs:
 
 -   **General**. Use this tab to enable Microsoft Updates to run during sequencing. Select **Append Package Version to Filename** to configure the sequence to add a version number to the virtualized package that is being sequenced. Select **Always trust the source of Package Accelerators** to create virtualized packages using a package accelerator without being prompted for authorization.
 
     **Important**  
-    Package Accelerators created using App-V 4.6 are not supported by App-V 5.1.
-
-     
+    Package Accelerators created using App-V 4.6 are not supported by App-V 5.1.     
 
 -   **Parse Items**. This tab displays the associated file path locations that will be parsed or tokenized into in the virtual environment. Tokens are useful for adding files using the **Package Files** tab in **Advanced Editing**.
 
@@ -137,76 +129,25 @@ The following table lists the supported shell extensions:
 </tbody>
 </table>
 
- 
-
 ## Copy on Write (CoW) file extension support
-
 
 Copy on write (CoW) file extensions allow App-V 5.1 to dynamically write to specific locations contained in the virtual package while it is being used.
 
 The following table displays the file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V 5.1 client. All other files and directories can be modified.
 
-| File type |
-| --------- |
-| .acm |
-| .asa |
-| .asp |
-| .aspx |
-| .ax |
-| .bat |
-| .cer |
-| .chm |
-| .clb |
-| .cmd |
-| .cnt |
-| .cnv |
-| .com |
-| .cpl |
-| .cpx |
-| .crt |
-| .dll |
-| .drv |
-|  .exe |
-| .fon |
-| .grp |
-| .hlp |
-| .hta |
-| .ime |
-| .inf |
-| .ins |
-| .isp |
-| .its |
-| .js |
-| .jse |
-| .lnk |
-| .msc |
-| .msi |
-| .msp |
-| .mst |
-| .mui |
-| .nls |
-| .ocx |
-| .pal |
-| .pcd |
-| .pif |
-| .reg |
-| .scf |
-| .scr |
-| .sct |
-| .shb |
-| .shs |
-| .sys |
-| .tlb |
-| .tsp |
-| .url |
-| .vb |
-| .vbe |
-| .vbs |
-| .vsmacros |
-| .ws |
-| .esc |
-| .wsf |
-| .wsh |
+| File Type  	|             	|             	|            	|            	|            	|
+|------------	|-------------	|-------------	|------------	|------------	|------------	|
+| .acm       	| .asa        	| .asp        	| .aspx      	| .ax        	| .bat       	|
+| .cer       	| .chm        	| .clb        	| .cmd       	| .cnt       	| .cnv       	|
+| .com       	| .cpl        	| .cpx        	| .crt       	| .dll       	| .drv       	|
+| .esc       	| .exe        	| .fon        	| .grp       	| .hlp       	| .hta       	|
+| .ime       	| .inf        	| .ins        	| .isp       	| .its       	| .js        	|
+| .jse       	| .lnk        	| .msc        	| .msi       	| .msp       	| .mst       	|
+| .mui       	| .nls        	| .ocx        	| .pal       	| .pcd       	| .pif       	|
+| .reg       	| .scf        	| .scr        	| .sct       	| .shb       	| .shs       	|
+| .sys       	| .tlb        	| .tsp        	| .url       	| .vb        	| .vbe       	|
+| .vbs       	| .vsmacros   	| .ws         	| .wsf       	| .wsh       	|            	|
+
 
 ## Modifying an existing virtual application package
 
@@ -238,8 +179,6 @@ A template can specify and store multiple settings as follows:
 **Note**  
 Package accelerators created using a previous version of App-V must be recreated using App-V 5.1.
 
- 
-
 You can use App-V 5.1 package accelerators to automatically generate a new virtual application packages. After you have successfully created a package accelerator, you can reuse and share the package accelerator.
 
 In some situations, to create the package accelerator, you might have to install the application locally on the computer that runs the sequencer. In such cases, you should first try to create the package accelerator with the installation media. If multiple missing files are required, you should install the application locally to the computer that runs the sequencer, and then create the package accelerator.
@@ -257,21 +196,9 @@ The App-V 5.1 Sequencer can detect common sequencing issues during sequencing. T
 
 You can also find additional information about sequencing errors using the Windows Event Viewer.
 
-## Got a suggestion for App-V?
-
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## <a href="" id="other-resources-for-the-app-v-5-1-sequencer-"></a>Other resources for the App-V 5.1 sequencer
 
 
 -   [Operations for App-V 5.1](operations-for-app-v-51.md)
-
- 
-
- 
-
-
-
-
 
