@@ -128,10 +128,8 @@ The following table lists the supported shell extensions:
 </tr>
 </tbody>
 </table>
- 
 
 ## Copy on Write (CoW) file extension support
-
 
 Copy on write (CoW) file extensions allow App-V 5.1 to dynamically write to specific locations contained in the virtual package while it is being used.
 
