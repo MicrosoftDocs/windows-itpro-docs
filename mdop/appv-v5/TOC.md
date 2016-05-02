@@ -79,7 +79,6 @@
 ##### [How to Access the Client Management Console 5.1](how-to-access-the-client-management-console51.md)
 ##### [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server  5.1](how-to-configure-the-client-to-receive-package-and-connection-groups-updates-from-the-publishing-server-51.md)
 #### [Migrating to App-V 5.1 from a Previous Version](migrating-to-app-v-51-from-a-previous-version.md)
-##### [Check Registry Keys before installing App-V 5.x Server](check-reg-key-svr.md)
 ##### [How to Convert a Package Created in a Previous Version of App-V 5.1](how-to-convert-a-package-created-in-a-previous-version-of-app-v51.md)
 ##### [How to Migrate Extension Points From an App-V 4.6 SP2 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-a-converted-app-v-51-package-for-all-users-on-a-specific-computer.md)
 ##### [How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.1 for a Specific User](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-app-v-51-for-a-specific-user.md)
