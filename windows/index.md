@@ -14,15 +14,15 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 ## In this library
 
 
-[What's new in Windows 10](whats-new/)
+[What's new in Windows 10](whats-new/index.md)
 
-[Plan for Windows 10 deployment](plan/)
+[Plan for Windows 10 deployment](plan/index.md)
 
-[Deploy Windows 10](deploy/)
+[Deploy Windows 10](deploy/index.md)
 
-[Keep Windows 10 secure](keep-secure/)
+[Keep Windows 10 secure](keep-secure/index.md)
 
-[Manage and update Windows 10](manage/)
+[Manage and update Windows 10](manage/index.md)
 
 ## Related topics
 
