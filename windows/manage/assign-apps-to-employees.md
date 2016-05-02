@@ -28,7 +28,7 @@ Administrators can assign online-licensed apps to employees in their organizatio
 
 4.  Type the email address for the employee that you're assigning the app to, and click **Confirm**.
 
-Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**.
+Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**.
 
  
 

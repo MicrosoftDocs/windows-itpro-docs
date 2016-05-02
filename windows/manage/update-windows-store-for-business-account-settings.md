@@ -133,6 +133,6 @@ Offline licensing is a new licensing option for Windows 10. With offline license
 You have the following distribution options for offline-licensed apps:
 - Include the app in a provisioning package, and then use it as part of imaging a device.
 - Distribute the app through a management tool. 
-For more information, see Distribute apps to your employees from the Store for Business.
+For more information, see [Distribute apps to your employees from the Store for Business](distribute-apps-with-management-tool.md).
 
 
