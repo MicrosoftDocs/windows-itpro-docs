@@ -184,9 +184,9 @@ For example, if endpoints are not appearing in the **Machines view** list, you m
 2.  In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
     open the log.
 
-> **Note**&nbsp;&nbsp; SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
+    > **Note**&nbsp;&nbsp; SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
 
-3.  Events recorded by the service will appear in the log. See following table for a list of events recorded by the service.
+3.  Events recorded by the service will appear in the log. See the following table for a list of events recorded by the service.
 
 Event ID|Message|Description|Action
 :---|:---|:---|:---
@@ -225,6 +225,7 @@ Event ID|Message|Description|Action
 
 <p>  </p>
 <table>
+<tbody style="vertical-align:top;">
 <tr><th>Event ID</th><th>Message</th><th>Description</th><th>Action</th></tr>
 <tr><td>1</td><td>Windows Advanced Threat Protection service started (Version ```variable```).</td><td>Occurs during system start up, shut down, and during onbboarding.</td><td>Normal operating notification; no action required.</td></tr>
 <tr><td>2</td><td>Windows Advanced Threat Protection service shutdown.</td><td>Occurs when the endpoint is shut down or offboarded.</td><td>Normal operating notification; no action required.</td></tr>
@@ -256,6 +257,7 @@ Event ID|Message|Description|Action
 <tr><td>33</td><td>Windows Advanced Threat Protection service failed to persist SENSE GUID. Failure code: ```variable```</td><td>A unique identifier is used to represent each endpoint that is reporting to the portal. <br />If the identifier does not persist, the same machine might appear twice in the portal. </td><td>Check registry permissions on the endpoint to ensure the service can update the registry.</td></tr>
 <tr><td>34</td><td>Windows Advanced Threat Protection service failed to add itself as a dependency on the Connected User Experiences and Telemetry service, causing onboarding process to fail. Failure code: ```variable```</td><td>An error occurred with the Windows telemetry service.</td><td>[Ensure the telemetry service is enabled](#ensure-that-the-telemetry-and-diagnostics-service-is-enabled). <br />Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)</td></tr>
 <tr><td>35</td><td>Windows Advanced Threat Protection service failed to remove itself as a dependency on the Connected User Experiences and Telemetry service. Failure code: ```variable```</td><td><span style="background-color:yellow;">Naama: Should I remove this error? Or just leave it as internal?</span></td><td>TBD</td></tr>
+</tbody>
 </table>
 
 ## Related topics
