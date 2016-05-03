@@ -190,7 +190,7 @@ For example, if endpoints are not appearing in the **Machines view** list, you m
 
 <table>
 <tbody style="vertical-align:top;">
-<tr>
+<tr> 
 <th>Event ID</th>
 <th>Message</th>
 <th>Description</th>
