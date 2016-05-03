@@ -46,6 +46,17 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 |Configure SmartScreen Filter |Windows 10 or later |This policy setting lets you configure whether to turn on SmartScreen Filter. SmartScreen Filter provides warning messages to help protect your employees from potential phishing scams and malicious software. By default, SmartScreen Filter is turned on.<p>If you enable this setting, SmartScreen Filter is turned on and employees can’t turn it off.<p>If you disable this setting, SmartScreen Filter is turned off and employees can’t turn it on.<p>If you don’t configure this setting, employees can choose whether to use SmartScreen Filter. |**Enabled:** Turns on SmartScreen Filter, providing warning messages to your employees about potential phishing scams and malicious software.<p>**Not configured (default):** Employees can turn SmartScreen on or off.<p>**Disabled:** Turns off SmartScreen Filter. |
 |Configure the Enterprise Mode Site List |Windows 10 or later| This policy setting lets you configure whether to use Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy apps.<p>If you enable this setting, Microsoft Edge looks for the Enterprise Mode Site List XML file. This file includes the sites and domains that need to be viewed using Internet Explorer 11 and Enterprise Mode.<p>If you disable or don’t configure this setting, Microsoft Edge won’t use the Enterprise Mode Site List XML file. In this case, employees might experience compatibility problems while using legacy apps. |**Enabled:** Lets you use the Enterprise Mode Site List to address common compatibility problems with legacy apps, if it’s configured. If you use this option, you must also add the location to your site list in the `{URI}` box. When configured, any site on the list will always open in Internet Explorer 11.<p>**Not configured (default):** You won't be able to use the Enterprise Mode site list.<p>**Disabled:** You won't be able to use the Enterprise Mode site list. |
 |Prevent access to the **about:flags** page |Windows 10, Version 1607 or later |This policy setting lets you decide whether employees can access the **about:flags** page, which is used to change developer settings and to enable experimental features.<p>If you enable this policy setting, employees can’t access the **about:flags** page.<p>If you disable or don’t configure this setting, employees can access the **about:flags** page. |**Enabled:** Stops employees from using the **about:flags** page.<p>**Disabled or not configured (default):** Lets employees use the **about:flags** page. |
+|Prevent bypassing SmartScreen prompts for files |Windows 10, Version 1511 or later	|This policy setting lets you decide whether employees can override the SmartScreen Filter warnings about downloading unverified files. 
+
+If you enable this setting, employees can’t ignore SmartScreen Filter warnings and they’re blocked from downloading the unverified files.
+
+If you disable or don’t configure this setting, employees can ignore SmartScreen Filter warnings and continue the download process.
+	Enabled: Stops employees from ignoring the SmartScreen Filter warnings about unverified files.
+ 
+Disabled or not configured (default): Lets employees ignore the SmartScreen Filter warnings about unverified files and lets them continue the download process. 
+
+
+
 
 
 
