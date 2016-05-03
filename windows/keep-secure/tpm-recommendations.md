@@ -49,10 +49,9 @@ Some information relates to pre-released product which may be substantially modi
 ## TPM 1.2 vs. 2.0 comparison
 
 
-From an industry standard, Microsoft has been an industry leader in moving and standardizing on TPM 2.0. As indicated in the table below, TPM 2.0 has many key realized benefits across algorithms, crypto, hierarchy, root keys, authorization and NV RAM.
+From an industry standard, Microsoft has been an industry leader in moving and standardizing on TPM 2.0, which has many key realized benefits across algorithms, crypto, hierarchy, root keys, authorization and NV RAM.
 
 ## Why TPM 2.0?
-
 
 TPM 2.0 products and systems have important security advantages over TPM 1.2, including:
 
@@ -84,11 +83,18 @@ From a security standpoint, discrete and firmware share the same characteristics
 
 For more info, see [fTPM: A Firmware-based TPM 2.0 Implementation](http://research.microsoft.com/apps/pubs/?id=258236).
 
+## Is there any importance for TPM for consumer?
+For end consumers, TPM is behind the scenes but still very relevant for Hello, Passport and in the future, many other key features in Windows 10. It offers the best Passport experience, helps encrypt passwords, secures streaming high quality 4K content and builds on our overall Windows 10 experience story for security as a critical pillar.  Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
+
 ## TPM 2.0 Compliance for Windows 10
 
 ### Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
 - As of July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7, https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx)
+ 
+## Two implementation options: 
+•	Discrete TPM chip as a separate discrete component 
+•	Firmware TPM solution using Intel PTT (platform trust technology) or AMD 
 
 ### Windows 10 Mobile
 
@@ -276,11 +282,12 @@ There are a variety of TPM manufacturers for both discrete and firmware.
 <tr class="even">
 <td align="left">Intel</td>
 <td align="left"><ul>
-<li>Clovertrail</li>
-<li>Haswell</li>
-<li>Broadwell</li>
-<li>Skylake</li>
+<li>Atom (CloverTrail)
 <li>Baytrail</li>
+<li>4th generation(Haswell)</li>
+<li>5th generation(Broadwell)</li>
+<li>Braswell</li>
+<li>Skylake</li>
 </ul></td>
 </tr>
 <tr class="odd">
