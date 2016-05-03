@@ -17,40 +17,9 @@ author: mjcaparas
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Windows Defender Advanced Threat Protection (Windows Defender ATP) is an out-of-the-box Windows enterprise security service that enables enterprise cybersecurity teams to detect and respond to advanced threats on their networks. The service is composed of four main features:
+Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service, built into Windows 10 that enables enterprise customers detect, investigate, and respond to advanced threats on their networks. 
 
--   **Advanced attack detection**: Actionable alerts with real-time
-    visibility into cybersecurity threat incident details
-
--   **File deep analysis**: Dynamic cloud analysis to provide visibility
-    into a file’s underlying behaviors
-
--   **Footprint service**: Proactive exploration of potential attacks, and
-    the ability to map them to specific machines
-
--   **Threat intelligence**: Insights that are validated and enriched by
-    security experts using telemetry gathered from resources worldwide
-
-The following diagram shows these Windows Defender ATP service
-components:
-
-![Windows Defender ATP service components](images/service-components.png)
-
-Investigating these alerts provides additional information and insight
-into known attackers, their goals, and actionable recommendations.
-
-Endpoint investigation capabilities in this service let you drill down
-into security alerts and understand the scope and nature of a potential
-breach. You can submit files for deep analysis and receive the results
-without leaving the [Windows Defender ATP portal](https://seville.windows.com).
-
-Windows Defender ATP works with existing Windows security technologies
-on endpoints, such as Windows Defender, AppLocker, and Device Guard. It
-can also work side-by-side with third-party security solutions and
-antimalware products.
-
-Windows Defender ATP leverages Microsoft technology and expertise to
-detect sophisticated cyber-attacks, providing:
+Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
     collect and process behavioral signals from the operating system
@@ -71,6 +40,36 @@ detect sophisticated cyber-attacks, providing:
     intelligence enables Windows Defender ATP to identify attacker
     tools, techniques, and procedures, and generate alerts when these
     are observed in collected telemetry.
+
+The following diagram shows these Windows Defender ATP service
+components:
+
+![Windows Defender ATP service components](images/service-components.png)
+
+Endpoint investigation capabilities in this service let you drill down
+into security alerts and understand the scope and nature of a potential
+breach. You can submit files for deep analysis and receive the results
+without leaving the [Windows Defender ATP portal](https://seville.windows.com).
+
+Windows Defender ATP works with existing Windows security technologies
+on endpoints, such as Windows Defender, AppLocker, and Device Guard. It
+can also work side-by-side with third-party security solutions and
+antimalware products.
+
+Windows Defender ATP leverages Microsoft technology and expertise to
+detect sophisticated cyber-attacks, providing:
+
+- Behavior-based, cloud-powered, advanced attack detection
+
+    Finds the attacks that made it past all other defenses (post breach detection),provides actionable, correlated alerts for known and unknown adversaries trying to hide their activities on endpoints.
+
+- Rich timeline for forensic investigation and mitigation
+    
+    Easily investigate the scope of breach or suspected behaviors on any machine through a rich machine timeline. File, URLs, and network connection inventory across the network. Gain additional insight using deep collection and analysis (“detonation”) for any file or URLs.
+    
+- Built in threat intel knowledge base
+ 
+    Unparalleled threat optics provides actor details and intent context for every threat intel-based detection – combining first and third-party intelligence sources.
 
 ## In this section
 
