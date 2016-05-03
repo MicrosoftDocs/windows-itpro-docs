@@ -171,7 +171,7 @@ If you chose the EU as your datacenter, you will need to allow the following URL
 
 
 
-## Review errors on endpoints with Event Viewer
+## Review events and errors on endpoints with Event Viewer
 
 You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/en-US/library/aa745633(v=bts.10).aspx) on individual endpoints, or check the status of machines from the [Windows Defender ATP portal](https://seville.windows.com/).
 
@@ -184,11 +184,11 @@ For example, if endpoints are not appearing in the **Machines view** list, you m
 2.  In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
     open the log.
 
-    > **Note**&nbsp;&nbsp; SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
+> **Note**&nbsp;&nbsp; SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
 
 3.  Events recorded by the service will appear in the log. See following table for a list of events recorded by the service.
 
-Error ID|Message|Description|Action
+Event ID|Message|Description|Action
 :---|:---|:---|:---
 1|Windows Advanced Threat Protection service started (Version ```variable```).|Occurs during system start up, shut down, and during onbboarding.|Normal operating notification; no action required.
 2|Windows Advanced Threat Protection service shutdown.|Occurs when the endpoint is shut down or offboarded.|Normal operating notification; no action required.
@@ -206,20 +206,20 @@ Error ID|Message|Description|Action
 14|Service cannot calculate machine ID. Failure code: ```variable```|Internal error.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 15|Windows Advanced Threat Protection cannot start command channel with URL: ```variable```|variable = URL of the Windows Defender ATP processing servers.  <br />The service could not contact the external processing servers at that URL.|Check the connection to the URL. See [Configure proxy and Internet connectivity](#configure-proxy-and-Internet-connectivity).
 17|Windows Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: ```variable```|An error occurred with the Windows telemetry service.|[Ensure the telemetry service is enabled](#ensure-that-the-telemetry-and-diagnostics-service-is-enabled) <br />Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-18|OOBE (Windows Welcome) is completed.|Service will only start after any Windows updates have finished installing. <br />Normal operating notification; no action required.
-19|OOBE (Windows Welcome) has not yet completed.|Service will only start after any Windows updates have finished installing. <br />Normal operating notification; no action required. <br />If this error persists after a system restart, ensure all Windows updates have full installed.
-20|Cannot wait for OOBE (Windows Welcome) to complete. Failure code: ```variable```|Internal error. <br />If this error persists after a system restart, ensure all Windows updates have full installed.
+18|OOBE (Windows Welcome) is completed.|Service will only start after any Windows updates have finished installing.|Normal operating notification; no action required.
+19|OOBE (Windows Welcome) has not yet completed.|Service will only start after any Windows updates have finished installing. |Normal operating notification; no action required. <br />If this error persists after a system restart, ensure all Windows updates have full installed.
+20|Cannot wait for OOBE (Windows Welcome) to complete. Failure code: ```variable```|Internal error. |If this error persists after a system restart, ensure all Windows updates have full installed.
 25|Windows Advanced Threat Protection service failed to reset health status in the registry, causing the onboarding process to fail. Failure code: ```variable```|The endpoint did not onboard correctly and will not be reporting to the portal.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 26|Windows Advanced Threat Protection service failed to set the onboarding status in the registry. Failure code: ```variable```|The endpoint did not onboard correctly. <br />It will report to the portal, however the service may not appear as registered in SCCM or the registry.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 27|Windows Advanced Threat Protection service failed to enable SENSE aware mode in Windows Defender. Onboarding process failed. Failure code: ```variable```|Normally, Windows Defender will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md) <br />Ensure real-time antimalware protection is running properly.
 28|Windows Advanced Threat Protection Connected User Experiences and Telemetry service registration failed. Failure code: ```variable```|An error occurred with the Windows telemetry service.|[Ensure the telemetry service is enabled](#ensure-that-the-telemetry-and-diagnostics-service-is-enabled). <br />Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-29|Windows Advanced Threat Protection service failed to read the offboarding parameters. Failure code: ```variable```|<span style="background-color:yellow;">Naama: Should I remove this error? Or just leave it as internal?</span>
+29|Windows Advanced Threat Protection service failed to read the offboarding parameters. Failure code: ```variable```|<span style="background-color:yellow;">Naama: Should I remove this error? Or just leave it as internal?</span>|TBD
 30|Windows Advanced Threat Protection service failed to disable SENSE aware mode in Windows Defender. Failure code: ```variable```|Normally, Windows Defender will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md) <br />Ensure real-time antimalware protection is running properly.
 31|Windows Advanced Threat Protection Connected User Experiences and Telemetry service unregistration failed. Failure code: ```variable```|An error occurred with the Windows telemetry service.|[Check for errors with the Windows telemetry service](#ensure-that-the-telemetry-and-diagnostics-service-is-enabled).
-32|Windows Advanced Threat Protection service failed to request to stop itself after offboarding process. Failure code: ```variable```|<span style="background-color:yellow;">Naama: Should I remove this error? Or just leave it as internal?</span>
+32|Windows Advanced Threat Protection service failed to request to stop itself after offboarding process. Failure code: ```variable```|<span style="background-color:yellow;">Naama: Should I remove this error? Or just leave it as internal?</span>|TBD
 33|Windows Advanced Threat Protection service failed to persist SENSE GUID. Failure code: ```variable```|A unique identifier is used to represent each endpoint that is reporting to the portal. <br />If the identifier does not persist, the same machine might appear twice in the portal. <br />Check registry permissions on the endpoint to ensure the service can update the registry.
 34|Windows Advanced Threat Protection service failed to add itself as a dependency on the Connected User Experiences and Telemetry service, causing onboarding process to fail. Failure code: ```variable```|An error occurred with the Windows telemetry service.|[Ensure the telemetry service is enabled](#ensure-that-the-telemetry-and-diagnostics-service-is-enabled). <br />Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.  <br />See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-35|Windows Advanced Threat Protection service failed to remove itself as a dependency on the Connected User Experiences and Telemetry service. Failure code: ```variable```|<span style="background-color:yellow;">Naama: Should I remove this error? Or just leave it as internal?</span>
+35|Windows Advanced Threat Protection service failed to remove itself as a dependency on the Connected User Experiences and Telemetry service. Failure code: ```variable```|<span style="background-color:yellow;">Naama: Should I remove this error? Or just leave it as internal?</span>|TBD
 
 
 
