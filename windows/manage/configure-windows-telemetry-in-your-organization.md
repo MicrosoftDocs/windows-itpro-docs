@@ -35,11 +35,18 @@ For Windows 10, we invite IT pros to join the [Windows Insider Program](http://
 
 ### Data collection
 
-Data gathered by the Connected User Experience and Telemetry component complies with Microsoft’s [security and privacy policies](https://privacy.microsoft.com/privacystatement), as well as international laws and regulations. The principle of least privilege guides access to telemetry data. Only Microsoft personnel who can demonstrate a valid business need can access the telemetry data.
+Windows 10 and Windows Server 2016 Technical Preview includes the Connected User Experience and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology to gather and store telemetry events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
 
-### Data transfer
+1. Operating system features and some management applications are instrumented to publish events and data. Examples of management applications include Virtual Machine Manager (VMM), Server Manager, and Storage Spaces.
+2. Events are gathered using public operating system event logging and tracing APIs.
+3. You can configure the telemetry level by using an MDM policy, Group Policy, or registry settings.
+4. The Connected User Experience and Telemetry component transmits telemetry data over HTTPS to Microsoft and uses certificate pinning.
 
-All telemetry data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10, data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection, are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
+Info collected at the Enhanced and Full levels of telemetry is typically gathered at a fractional sampling rate, which can be as low as 1% of devices reporting data at those levels.
+
+### Data transmission
+
+All telemetry data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10, data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection, are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
 
 ### Endpoints
 
