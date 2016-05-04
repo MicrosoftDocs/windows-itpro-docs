@@ -61,6 +61,7 @@ This topic explains how to enable BitLocker on an end user's computer by using M
 | -------- | ----------- |
 | RecoveryServiceEndPoint | A string specifying the MBAM recovery service endpoint. |
 
+Here are a list of common error messages:
 
 | Common return values | Error message |
 | -------------------- | ------------- |
@@ -84,6 +85,7 @@ This topic explains how to enable BitLocker on an end user's computer by using M
    | --------- | ----------- |
    | ReportingServiceEndPoint | A string specifying the MBAM status reporting service endpoint. |
    
+   Here are a list of common error messages:
    
    | Common return values | Error message |
    | -------------------- | ------------- |
@@ -102,6 +104,7 @@ This topic explains how to enable BitLocker on an end user's computer by using M
    | --------- | ----------- |
    | RecoveryServiceEndPoint | A string specifying the MBAM recovery service endpoint. |
    
+   Here are a list of common error messages:
    
    | Common return values | Error message |
    | -------------------- | ------------- |
