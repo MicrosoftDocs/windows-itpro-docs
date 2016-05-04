@@ -60,26 +60,13 @@ The Connected User Experience and Telemetry component also connects to settings-
 
 [Online Crash Analysis](http://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) connects to oca.telemetry.microsoft.com.
 
-### Data usage
+### Data use and access
 
-Data gathered from telemetry is used by Microsoft teams primarily to improve our customer experiences, and for security, health, quality, and performance analysis. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the Privacy Statement. We do share business reports with OEMs and third party partners that includes aggregated, anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management. Info is typically gathered at a fractional sampling rate, which can be as low as 1% of clients reporting data.
+Data gathered from telemetry is used by Microsoft teams primarily to improve our customer experiences, and for security, health, quality, and performance analysis. The principle of least privileged guides access to telemetry data.  Only Microsoft personnel with a valid business need are permitted access to the telemetry data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the Privacy Statement. We do share business reports with OEMs and third party partners that include aggregated, anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
 
 ### Retention
 
 Microsoft believes in and practices information minimization. We strive to gather only the info we need, and store it for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Store purchase history. 
-
-## How is the data gathered?
-
-
-Windows 10 and Windows Server 2016 Technical Preview includes the Connected User Experience and Telemetry component, which uses Event Tracing for Windows (ETW) [tracelogging](http://msdn.microsoft.com/library/dn904632.aspx) technology to gather and store telemetry events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
-
-1.  Operating system features and some management applications are instrumented to publish events and data. Examples of management applications include Virtual Machine Manager (VMM), Server Manager, and Storage Spaces.
-
-2.  Events are gathered using public operating system event logging and tracing APIs.
-
-3.  You can configure the telemetry level by using an MDM policy, Group Policy, or registry settings.
-
-4.  The Connected User Experience and Telemetry component transmits telemetry data over HTTPS to Microsoft and uses certificate pinning.
 
 ## Telemetry levels
 
