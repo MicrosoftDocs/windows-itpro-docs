@@ -31,7 +31,15 @@ Trusted Platform Module (TPM) technology is designed to provide hardware-based, 
 
 The most common TPM functions are used for system integrity measurements and for key creation and use. During the boot process of a system, the boot code that is loaded (including firmware and the operating system components) can be measured and recorded in the TPM. The integrity measurements can be used as evidence for how a system started and to make sure that a TPM-based key was used only when the correct software was used to boot the system.
 
-Different versions of the TPM are defined in specifications by the Trusted Computing Group (TCG).
+Traditionally, TPMs have been discrete chips soldered to a computer’s motherboard. Such implementations allow the computer’s original equipment manufacturer (OEM) to evaluate and certify the TPM separate from the rest of the system. Although discrete TPM implementations are still common, they can be problematic for integrated devices that are small or have low power consumption. Some newer TPM implementations integrate TPM functionality into the same chipset as other platform components while still providing logical separation similar to discrete TPM chips.
+
+TPMs are passive: they receive commands and return responses. To realize the full benefit of a TPM, the OEM must carefully integrate system hardware and firmware with the TPM to send it commands and react to its responses. TPMs were originally designed to provide security and privacy benefits to a platform’s owner and users, but newer versions can provide security and privacy benefits to the system hardware itself. Before it can be used for advanced scenarios, however, a TPM must be provisioned. Windows 10 automatically provisions a TPM, but if the user reinstalls the operating system, he or she may need to tell the operating system to explicitly provision the TPM again before it can use all the TPM’s features.
+
+The Trusted Computing Group (TCG) is the nonprofit organization that publishes and maintains the TPM specification. The TCG exists to develop, define, and promote vendor-neutral, global industry standards that support a hardware-based root of trust for interoperable trusted computing platforms. The TCG also publishes the TPM specification as the international standard ISO/IEC 11889, using the Publicly Available Specification Submission Process that the Joint Technical Committee 1 defines between the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).
+
+OEMs implement the TPM as a component in a trusted computing platform, such as a PC, tablet, or phone. Trusted computing platforms use the TPM to support privacy and security scenarios that software alone cannot achieve. For example, software alone cannot reliably report whether malware is present during the system startup process. The close integration between TPM and platform increases the transparency of the startup process and supports evaluating device health by enabling reliable measuring and reporting of the software that starts the device. Implementation of a TPM as part of a trusted computing platform provides a hardware root of trust—that is, it behaves in a trusted way. For example, if a key stored in a TPM has properties that disallow exporting the key, that key truly cannot leave the TPM.
+
+The TCG designed the TPM as a low-cost, mass-market security solution that addresses the requirements of different customer segments. There are variations in the security properties of different TPM implementations just as there are variations in customer and regulatory requirements for different sectors. In public-sector procurement, for example, some governments have clearly defined security requirements for TPMs whereas others do not.
 
 **Note**  
 Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -41,10 +49,9 @@ Some information relates to pre-released product which may be substantially modi
 ## TPM 1.2 vs. 2.0 comparison
 
 
-From an industry standard, Microsoft has been an industry leader in moving and standardizing on TPM 2.0. As indicated in the table below, TPM 2.0 has many key realized benefits across algorithms, crypto, hierarchy, root keys, authorization and NV RAM.
+From an industry standard, Microsoft has been an industry leader in moving and standardizing on TPM 2.0, which has many key realized benefits across algorithms, crypto, hierarchy, root keys, authorization and NV RAM.
 
 ## Why TPM 2.0?
-
 
 TPM 2.0 products and systems have important security advantages over TPM 1.2, including:
 
@@ -65,7 +72,6 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
 ## Discrete or firmware TPM?
 
-
 Windows uses discrete and firmware TPM in the same way. Windows gains no functional advantage or disadvantage from either option.
 
 From a security standpoint, discrete and firmware share the same characteristics;
@@ -77,20 +83,22 @@ From a security standpoint, discrete and firmware share the same characteristics
 
 For more info, see [fTPM: A Firmware-based TPM 2.0 Implementation](http://research.microsoft.com/apps/pubs/?id=258236).
 
-## TPM 2.0 Compliance for Windows 10 in the future
+## Is there any importance for TPM for consumer?
+For end consumers, TPM is behind the scenes but still very relevant for Hello, Passport and in the future, many other key features in Windows 10. It offers the best Passport experience, helps encrypt passwords, secures streaming high quality 4K content and builds on our overall Windows 10 experience story for security as a critical pillar.  Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
 
-
-All shipping devices for Windows 10 across all SKU types must be using TPM 2.0 discrete or firmware from **July 28, 2016**. This requirement will be enforced through our Windows Hardware Certification program.
+## TPM 2.0 Compliance for Windows 10
 
 ### Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
--   With Windows 10 as with Windows 8, all connected standby systems are required to include TPM 2.0 support.
--   For Windows 10 and later, if a SoC is chosen that includes an integrated fTPM2.0, the device must ship with the fTPM FW support or a discrete TPM 1.2 or 2.0.
--   Starting **July 28th, 2016** all devices shipping with Windows 10 desktop must implement TPM 2.0 and ship with the TPM enabled.
+- As of July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7, https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx)
+ 
+## Two implementation options: 
+•	Discrete TPM chip as a separate discrete component 
+•	Firmware TPM solution using Intel PTT (platform trust technology) or AMD 
 
 ### Windows 10 Mobile
 
--   All devices shipping with Windows 10 Mobile must implement TPM 2.0 and ship with the TPM enabled.
+-   All devices shipping with Windows 10 Mobile must implement TPM 2.0 and ship with the TPM 2.0 enabled.
 
 ### IoT Core
 
@@ -101,7 +109,6 @@ All shipping devices for Windows 10 across all SKU types must be using TPM 2.0 d
 -   TPM is optional for Windows Server SKUs unless the SKU meets the additional qualification (AQ) criteria for the Host Guardian Services scenario in which case TPM 2.0 is required.
 
 ## TPM and Windows Features
-
 
 The following table defines which Windows features require TPM support. Some features are not applicable to Windows 7/8/8.1 and are noted accordingly.
 
@@ -124,7 +131,7 @@ The following table defines which Windows features require TPM support. Some fea
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Measure Boot</td>
+<td align="left">Measured Boot</td>
 <td align="left">Required</td>
 <td align="left">Required</td>
 <td align="left">Required</td>
@@ -147,7 +154,7 @@ The following table defines which Windows features require TPM support. Some fea
 <tr class="even">
 <td align="left">Passport: MSA or Local Account</td>
 <td align="left">n/a</td>
-<td align="left">Not Required</td>
+<td align="left">Required</td>
 <td align="left">Required</td>
 <td align="left">TPM 2.0 is required with HMAC and EK certificate for key attestation support.</td>
 </tr>
@@ -175,7 +182,7 @@ The following table defines which Windows features require TPM support. Some fea
 <tr class="even">
 <td align="left">Device Health Attestation</td>
 <td align="left">n/a</td>
-<td align="left">Not Required</td>
+<td align="left">Required</td>
 <td align="left">Required</td>
 <td align="left"></td>
 </tr>
@@ -240,6 +247,7 @@ There are a variety of TPM manufacturers for both discrete and firmware.
 <td align="left"><ul>
 <li>Infineon</li>
 <li>Nuvoton</li>
+<li>Atmel</li>
 <li>NationZ</li>
 <li>ST Micro</li>
 </ul></td>
@@ -274,11 +282,12 @@ There are a variety of TPM manufacturers for both discrete and firmware.
 <tr class="even">
 <td align="left">Intel</td>
 <td align="left"><ul>
-<li>Clovertrail</li>
-<li>Haswell</li>
-<li>Broadwell</li>
-<li>Skylake</li>
+<li>Atom (CloverTrail)
 <li>Baytrail</li>
+<li>4th generation(Haswell)</li>
+<li>5th generation(Broadwell)</li>
+<li>Braswell</li>
+<li>Skylake</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -301,7 +310,7 @@ There are a variety of TPM manufacturers for both discrete and firmware.
 
 ### Certified TPM parts
 
-Government customers and enterprise customers in regulated industries may have acquisition standards that require use of common certified TPM parts. As a result, OEMs, who provide the devices, may be required to use only certified TPM components on their commercial class systems. Discrete TPM 2.0 vendors have targeted completion of certification by the end of 2015.
+Government customers and enterprise customers in regulated industries may have acquisition standards that require use of common certified TPM parts. As a result, OEMs, who provide the devices, may be required to use only certified TPM components on their commercial class systems. Discrete TPM 2.0 vendors have completion certification.
 
 ### Windows 7 32-bit support
 

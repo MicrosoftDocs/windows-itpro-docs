@@ -34,7 +34,7 @@ Offline-licensed apps offer an alternative to online apps, and provide additiona
 
 You can't distribute offline-licensed apps directly from the Store for Business. Once you download the items for the offline-licensed app, you have three options for distributing the apps:
 
--   **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft WindowsWindows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](https://msdn.microsoft.com/library/windows/hardware/dn898558.aspx).
+-   **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft WindowsWindows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
 -   **Windows ICD**. ICD is GUI tool that you can use to create Windows provisioning answer files, and add third-party drivers, apps, or other assets to an answer file. For more information, see [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx).
 
