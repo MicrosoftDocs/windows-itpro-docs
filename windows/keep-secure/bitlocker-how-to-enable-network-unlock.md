@@ -196,7 +196,12 @@ To create a self-signed certificate, do the following:
     Exportable=true
     RequestType=Cert
     KeyUsage="CERT_KEY_ENCIPHERMENT_KEY_USAGE"
+	KeyUsageProperty="NCRYPT_ALLOW_DECRYPT_FLAG"
     KeyLength=2048
+	Keyspec="AT_KEYEXCHANGE"
+	SMIME=FALSE
+	HashAlgorithm=sha512
+
 
     [Extensions]
     1.3.6.1.4.1.311.21.10 = "{text}"
