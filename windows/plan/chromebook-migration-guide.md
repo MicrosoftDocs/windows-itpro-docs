@@ -6,7 +6,7 @@ keywords: ["migrate", "automate", "device"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: TrudyHa
+author: craigash
 ---
 
 # Chromebook migration guide

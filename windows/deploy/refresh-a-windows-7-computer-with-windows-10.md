@@ -6,7 +6,7 @@ keywords: ["reinstallation, customize, template, script, restore"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Refresh a Windows 7 computer with Windows 10

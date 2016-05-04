@@ -6,7 +6,7 @@ keywords: ["deploy, volume activation, BitLocker, recovery, install, installatio
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Windows 10 deployment tools
