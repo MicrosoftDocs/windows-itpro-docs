@@ -44,7 +44,7 @@ Windows Defender ATP uses the following combination of technology built into Win
 The following diagram shows these Windows Defender ATP service
 components:
 
-![Windows Defender ATP service components](images/service-components.png)
+![Windows Defender ATP service components](images/components.png)
 
 Endpoint investigation capabilities in this service let you drill down
 into security alerts and understand the scope and nature of a potential
@@ -58,6 +58,8 @@ antimalware products.
 
 Windows Defender ATP leverages Microsoft technology and expertise to
 detect sophisticated cyber-attacks, providing:
+
+![Image to show the protection service that Windows Defender ATP provides](images/value-prop.png)
 
 - Behavior-based, cloud-powered, advanced attack detection
 
