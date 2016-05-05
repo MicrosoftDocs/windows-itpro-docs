@@ -18,6 +18,8 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 New or changed topic | Description |
 ---|---|
 [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Corrected script for setting a custom shell using Shell Launcher | 
+| [Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md) | Added section on how to turn off Live Tiles |
+| [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md) | New telemetry content |
 ## April 2016
 
 
@@ -34,7 +36,7 @@ New or changed topic | Description |
 <td align="left"><p>Added screenshots of Control Panel and the administrative tools folder.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md)</td>
+<td align="left">[Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
 <td align="left"><p>Added the font streaming section.</p></td>
 </tr>
 <tr class="odd">
