@@ -16,9 +16,9 @@ title: Collect data using Enterprise Site Discovery
 -   Windows 8.1 Update
 -   Windows 7 with Service Pack 1 (SP1)
 
-Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
+Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
 
-## Requirements
+## Before you begin
 Before you start, you need to make sure you have the following:
 
 -   Latest cumulative security update (for all supported versions of Internet Explorer):
@@ -43,7 +43,7 @@ Before you start, you need to make sure you have the following:
 
         You must use System Center 2012 R2 Configuration Manager or later for these samples to work.
 
-Both the PowerShell script and .mof file need to be copied to the same location on the client computer, before you run the scripts.
+Both the PowerShell script and the Managed Object Format (.MOF) file need to be copied to the same location on the client device, before you run the scripts.
 
 ## What data is collected?
 Data is collected on the configuration characteristics of IE and the sites it browses, as shown here.
@@ -67,7 +67,7 @@ Data is collected on the configuration characteristics of IE and the sites it br
 The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
 
 ## Where is the data stored and how do I collect it?
-The data is stored locally, in an industry-standard WMI class, Managed Object Format (.MOF) file or in an XML file, depending on your configuration. This file remains on the client computer until it’s collected. To collect the files, we recommend:
+The data is stored locally, in an industry-standard WMI class, .MOF file or in an XML file, depending on your configuration. This file remains on the client computer until it’s collected. To collect the files, we recommend:
 
 -   **WMI file**. Use Microsoft Configuration Manager or any agent that can read the contents of a WMI class on your computer.
 
@@ -80,48 +80,55 @@ On average, a website generates about 250bytes of data for each visit, causing o
 <p>**Important**<br>The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
 
 ## Getting ready to use Enterprise Site Discovery
+Before you can start to collect your data, you must run the provided PowerShell script (IETelemetrySetUp.ps1) on your client devices to start generating the site discovery data and to set up a place to store this data locally. Then, you must start collecting the site discovery data from the client devices, using one of these three options:
+
+- Collect your hardware inventory using the MOF Editor, while connecting to a client device.<p>
+-OR-
+- Collect your hardware inventory using the MOF Editor with a .MOF import file.<p>
+-OR-
+- Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+
+### WMI only: Running the PowerShell script to compile the .MOF file and to update security privileges
 You need to set up your computers for data collection by running the provided PowerShell script (IETelemetrySetUp.ps1) to compile the .mof file and to update security privileges for the new WMI classes.
 <p>**Important**<br>You must run this script if you’re using WMI as your data output. It's not necessary if you're using XML as your data output.
 
- ![](images/wedge.gif) **To set up Enterprise Site Discovery**
+![](images/wedge.gif) **To set up Enterprise Site Discovery**
 
--   Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1`. For more info, see [about Execution Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
+- Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1`. For more info, see [about Execution Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
 
-### Optional: Set up your firewall for WMI data
-
+### WMI only: Set up your firewall for WMI data
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
 
- ![](images/wedge.gif) **To set up your firewall**
+![](images/wedge.gif) **To set up your firewall**
 
-1.  In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
+1.	In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
 
-2.  In the left pane, click **Allow an app or feature through Windows Firewall** and scroll down to check the box for **Windows Management Instrumentation (WMI)**.
+2.	In the left pane, click **Allow an app or feature through Windows Firewall** and scroll down to check the box for **Windows Management Instrumentation (WMI)**.
 
-3.  Restart your computer to start collecting your WMI data.
+3.	Restart your computer to start collecting your WMI data.
 
-## Setting up Enterprise Site Discovery using PowerShell
-After you finish the initial setup for Site Discovery using PowerShell, you have the option to continue with PowerShell or to switch to Group Policy.
+## Use PowerShell to finish setting up Enterprise Site Discovery
+You can determine which zones or domains are used for data collection, using PowerShell. If you don’t want to use PowerShell, you can do this using Group Policy. For more info, see [Use Group Policy to finish setting up Enterprise Site Discovery](#use-group-policy-to-finish-setting-up-enterprise-site-discovery).
 <p>**Important**<br>The .ps1 file updates turn on Enterprise Site Discovery and WMI collection for all users on a device.
 
-### Setting up zones or domains for data collection
-You can determine which zones or domains are used for data collection, using PowerShell.
+- **Domain allow list.** If you have a domain allow list, a comma-separated list of domains that should have this feature turned on, you should use this process.
 
--   **Domain allow list.** If you have a domain allow list, a comma-separated list of domains that should have this feature turned on, you should use this process.
-
--   **Zone allow list.** If you have a zone allow list, a comma-separated list of zones that should have this feature turned on, you should use this process.
+- **Zone allow list.** If you have a zone allow list, a comma-separated list of zones that should have this feature turned on, you should use this process.
 
  ![](images/wedge.gif) **To set up data collection using a domain allow list**
-
--   Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
-<p>**Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
+ 
+ - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
+ 
+    **Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
 
  ![](images/wedge.gif) **To set up data collection using a zone allow list**
+ 
+ - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
+ 
+    **Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
 
--   Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
-<p>**Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
-
-## Setting up Enterprise Site Discovery using Group Policy
-If you don’t want to continue using PowerShell, you can switch to Group Policy after the initial Site Discovery setup.
+## Use Group Policy to finish setting up Enterprise Site Discovery
+You can use Group Policy to finish setting up Enterprise Site Discovery. If you don’t want to use Group Policy, you can do this using PowerShell. For more info, see [Use Powershell to finish setting up Enterprise Site Discovery](#use-powershell-to-finish-setting-up-enterprise-site-discovery).
 <p>**Note**<br> All of the Group Policy settings can be used individually or as a group.
 
  ![](images/wedge.gif) **To set up Enterprise Site Discovery using Group Policy**
@@ -136,7 +143,6 @@ If you don’t want to continue using PowerShell, you can switch to Group Policy
 |Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by domain |Manages which domains can collect data |To specify which domains can collect data, you must include your selected domains, one domain per line, in the provided box. It should look like:<p>microsoft.sharepoint.com<br>outlook.com<br>onedrive.com<br>timecard.contoso.com<br>LOBApp.contoso.com |
 
 ### Combining WMI and XML Group Policy settings
-
 You can use both the WMI and XML settings individually or together, based on:
 
  ![](images/wedge.gif) **To turn off Enterprise Site Discovery**
@@ -163,12 +169,17 @@ You can use both the WMI and XML settings individually or together, based on:
   <li><b>Turn on Site Discovery XML output:</b> XML file path</li>
 </ul>
 
-
 ## Use Configuration Manager to collect your data
-After you’ve collected your data, you’ll need to get the local files off of your employee’s computers. To do this, use the hardware inventory process in Configuration Manager, in one of the following ways.
+After you’ve collected your data, you’ll need to get the local files off of your employee’s computers. To do this, use the hardware inventory process in Configuration Manager, using one of these options:
 
-### Collect your hardware inventory using the MOF Editor while connecting to a computer
-You can collect your hardware inventory using the MOF Editor, while you’re connected to your client computers.
+- Collect your hardware inventory using the MOF Editor, while connecting to a client device.<p>
+-OR-
+- Collect your hardware inventory using the MOF Editor with a .MOF import file.<p>
+-OR-
+- Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+
+### Collect your hardware inventory using the MOF Editor while connected to a client device
+You can collect your hardware inventory using the MOF Editor, while you’re connected to your client devices.
 
  ![](images/wedge.gif) **To collect your inventory**
 
@@ -193,8 +204,8 @@ You can collect your hardware inventory using the MOF Editor, while you’re con
 5.  Click **OK** to close the default windows.<br>
 Your environment is now ready to collect your hardware inventory and review the sample reports.
 
-### Collect your hardware inventory using the MOF Editor with a MOF import file
-You can collect your hardware inventory using the MOF Editor and a MOF import file.
+### Collect your hardware inventory using the MOF Editor with a .MOF import file
+You can collect your hardware inventory using the MOF Editor and a .MOF import file.
 
  ![](images/wedge.gif) **To collect your inventory**
 
@@ -207,8 +218,8 @@ You can collect your hardware inventory using the MOF Editor and a MOF import fi
 4.  Click **OK** to close the default windows.<br>
 Your environment is now ready to collect your hardware inventory and review the sample reports.
 
-### Collect your hardware inventory using the SMS\DEF.MOF file
-You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file.
+### Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for System Center Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
 
  ![](images/wedge.gif) **To collect your inventory**
 
@@ -281,7 +292,7 @@ You can collect your hardware inventory using the using the Systems Management S
 3.  Save the file and close it to the same location.<br>
 Your environment is now ready to collect your hardware inventory and review the sample reports.
 
-### Viewing the sample reports
+## View the sample reports with your collected data
 The sample reports, **SCCM Report Sample – ActiveX.rdl** and **SCCM Report Sample – Site Discovery.rdl**, work with System Center 2012, so you can review your collected data.
 
 ### SCCM Report Sample – ActiveX.rdl
@@ -336,7 +347,7 @@ Each site is validated and if successful, added to the global site list when you
 
 3.  Click **OK** to close the **Bulk add sites to the list** menu.
 
-## Turn off data collection on your client computers
+## Turn off data collection on your client devices
 After you’ve collected your data, you’ll need to turn Enterprise Site Discovery off.
 
  ![](images/wedge.gif) **To stop collecting data, using PowerShell**
