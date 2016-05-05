@@ -169,7 +169,7 @@ Complete the following steps to select the appropriate Office 365 Education lice
 <ol>
 <li>Determine the number of faculty members and students who will use the classroom.<br/>Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.
 </li>
-<li>Determine the faculty members and students who need to install Office applications on devices (if any).<br/>Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 1 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.</li>
+<li>Determine the faculty members and students who need to install Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 1 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.</li>
 <br/>
 *Table 1. Comparison of standard and Microsoft Office 365 ProPlus plans*
 
@@ -193,7 +193,7 @@ Complete the following steps to select the appropriate Office 365 Education lice
 
 </tbody>
 </table>
-<br/><br/>
+<br/>
 The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
 <br/>
 <li>Determine whether students or faculty need Azure Rights Management.<br/>You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management](https://technet.microsoft.com/library/jj585024.aspx).</li>
