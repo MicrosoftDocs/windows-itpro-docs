@@ -219,7 +219,7 @@ The best user experience is to run Office 365 ProPlus or use native Office apps 
 <tr><td></td><td>Azure Rights Management for faculty</td></tr>
 </tbody>
 </table>
-
+<br/>
 You will use the Office 365 Education license plan information you record in Table 2 in the [Create user accounts in Office 365](#create-user-accounts-in-office-365) section of this guide.</li></ol>
 
 ### Create a new Office 365 Education subscription
