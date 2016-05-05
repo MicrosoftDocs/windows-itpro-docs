@@ -12,19 +12,19 @@ ms.sitesec: library
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
-If you’re looking for content on what each telemetry level means and how to configure it in your organization, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md).
+If you're looking for content on what each telemetry level means and how to configure it in your organization, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md).
 
 Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-Some of the network connections discussed in this article can be managed in Windows 10 Mobile, Windows 10 Mobile Enterprise, and the July release of Windows 10. However, you must use Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511 to manage them all.
+Some of the network connections discussed in this article can be managed in Windows 10 Mobile, Windows 10 Mobile Enterprise, and the July release of Windows 10. However, you must use Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511 to manage them all.
 
-In Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511, you can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft services as described in this article to prevent Windows from sending any data to Microsoft. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
+In Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511, you can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft services as described in this article to prevent Windows from sending any data to Microsoft. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
 
-We are always working on improving Windows 10 for our customers. We invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows 10 work better for your organization.
+We are always working on improving Windows 10 for our customers. We invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows 10 work better for your organization.
 
 Here's what's covered in this article:
 
@@ -132,10 +132,10 @@ Here's what's covered in this article:
 
     -   [24. Windows Update](#bkmk-wu)
 
-## What's new in Windows 10, version 1511
+## What's new in Windows 10, version 1511
 
 
-Here's a list of changes that were made to this article for Windows 10, version 1511:
+Here's a list of changes that were made to this article for Windows 10, version 1511:
 
 -   Added the following new sections:
 
@@ -190,7 +190,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 This section lists the components that make network connections to Microsoft services automatically. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
 
-The settings in this section assume you are using Windows 10, version 1511 (currently available in the Current Branch and Current Branch for Business). They will also be included in the next update for the Long Term Servicing Branch.
+The settings in this section assume you are using Windows 10, version 1511 (currently available in the Current Branch and Current Branch for Business). They will also be included in the next update for the Long Term Servicing Branch.
 
 -   [1. Cortana](#bkmk-cortana)
 
@@ -286,7 +286,7 @@ When you enable the **Don't search the web or display web results in Search** Gr
 
     -   For **Remote port**, choose **All ports**.
 
-**Note**  
+**Note**  
 If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
 ### <a href="" id="bkmk-cortana-mdm"></a>1.2 Cortana MDM policies
@@ -322,12 +322,12 @@ Starting with Windows 10, fonts that are included in Windows but that are not st
 
 To turn off font streaming, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
-**Note**  
+**Note**  
 This may change in future versions of Windows.
 
 ### <a href="" id="bkmk-previewbuilds"></a>5. Insider Preview builds
 
-To turn off Insider Preview builds if you're running a released version of Windows 10. If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
+To turn off Insider Preview builds if you're running a released version of Windows 10. If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
 
 -   Turn off the feature in the UI: **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Stop Insider builds**.
 
@@ -409,8 +409,8 @@ Use either Group Policy or MDM policies to manage settings for Microsoft Edge. F
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
 
-**Note**  
-The Microsoft Edge Group Policy names were changed in Windows 10, version 1511. The table below reflects those changes.
+**Note**  
+The Microsoft Edge Group Policy names were changed in Windows 10, version 1511. The table below reflects those changes.
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -616,10 +616,10 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 To turn off **Let apps use my advertising ID for experiences across apps (turning this off will reset your ID)**:
 
-**Note**  
+**Note**  
 When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
 
- 
+ 
 
 -   Turn off the feature in the UI.
 
@@ -659,10 +659,10 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Window
 
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
-**Note**  
+**Note**  
 If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
 
- 
+ 
 
 -   Turn off the feature in the UI.
 
@@ -704,7 +704,7 @@ To turn off **Location for this device**:
 
     -   **2**. Turned on and the employee can't turn it off.
 
-    **Note**  
+    **Note**  
     You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](http://msdn.microsoft.com/library/dn905224.aspx).
 
     -or-
@@ -755,7 +755,7 @@ To turn off **Let apps use my camera**:
 
     -   **1**. Apps can use the camera.
 
-    **Note**  
+    **Note**  
     You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](http://msdn.microsoft.com/library/dn905224.aspx).
     
    -or-
@@ -792,10 +792,10 @@ To turn off **Choose apps that can use your microphone**:
 
 In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better understand your employee's voice and written input by sampling their voice and writing, and by comparing verbal and written input to contact names and calendar entrees.
 
-**Note**  
+**Note**  
 For more info on how to disable Cortana in your enterprise, see [Cortana](#bkmk-cortana) in this article.
 
- 
+ 
 
 To turn off the functionality:
 
@@ -951,10 +951,10 @@ In the **Feedback & Diagnostics** area, you can choose how often you're asked fo
 
 To change how frequently **Windows should ask for my feedback**:
 
-**Note**  
+**Note**  
 Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device.
 
- 
+ 
 
 -   To change from **Automatically (Recommended)**, use the drop-down list in the UI.
 
@@ -980,16 +980,16 @@ Feedback frequency only applies to user-generated feedback, not diagnostic and u
     | Once a day    | 864000000000                | 1                           |
     | Once a week   | 6048000000000               | 1                           |
 
-     
+     
 
 To change the level of diagnostic and usage data sent when you **Send your device data to Microsoft**:
 
 -   To change from **Enhanced**, use the drop-down list in the UI. The other levels are **Basic** and **Full**.
 
-    **Note**  
+    **Note**  
     You can't use the UI to change the telemetry level to **Security**.
 
-     
+     
 
    -or-
 
@@ -1168,9 +1168,9 @@ Windows spotlight provides different background images and text on the lock scre
 
         -   Set the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
 
-        **Note**  This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**.
+        **Note**  This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**.
 
-         
+         
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows Tips**.
 
@@ -1188,7 +1188,7 @@ You can turn off the ability to launch apps from the Windows Store that were pre
 
 Windows Update Delivery Optimization lets you get Windows updates and Windows Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
-By default, PCs running Windows 10 Enterprise and Windows 10 Education will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
+By default, PCs running Windows 10 Enterprise and Windows 10 Education will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
 Use the UI, Group Policy, MDM policies, or Windows Provisioning to set up Delivery Optimization.
 
