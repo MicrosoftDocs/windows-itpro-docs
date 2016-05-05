@@ -236,9 +236,10 @@ The settings in this section assume you are using Windows 10, version 1511 (curr
 
 -   [22. Windows Store](#bkmk-windowsstore)
 
--   [23. Windows Update](#bkmk-wu)
+-   [23. Windows Update Delivery Optimization](#bkmk-updates)
 
--   [24. Windows Update Delivery Optimization](#bkmk-updates)
+-   [24. Windows Update](#bkmk-wu)
+
 
 See the following table for a summary of the management settings. For more info, see its corresponding section.
 
