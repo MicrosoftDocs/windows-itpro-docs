@@ -146,9 +146,10 @@ Enable the **Automatically detect settings** option in Windows Proxy settings so
 
 5. If the **Use setup script** or **Manual proxy setup** options are enabled then you will need to [configure proxy settings manually by using Netsh](#configure-proxy-server-manually-using-netsh) method for WinHTTP to discover the appropriate proxy settings and connect.
 
-### Configure proxy server manually using Netsh 
+### Configure the proxy server manually using Netsh 
 
-Use Netsh to configure the proxy settings if **Use setup script** or **Manual proxy setup** settings are configured in the Windows Proxy setting of the endpoint to enable connectivity. 
+If **Use setup script** or **Manual proxy setup** settings are configured in the Windows Proxy setting, then endpoints will not be discovered by WinHTTP.
+Use Netsh to configure the proxy settings to enable connectivity. 
 
 You can configure the endpoint by using any of these methods:
 
