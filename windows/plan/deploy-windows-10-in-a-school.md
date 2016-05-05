@@ -172,8 +172,7 @@ Complete the following steps to select the appropriate Office 365 Education lice
 <li>Determine the faculty members and students who need to install Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 1 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.</li>
 <br/>
 *Table 1. Comparison of standard and Microsoft Office 365 ProPlus plans*
-
-
+<br/>
 <table>
 <colgroup>
 <col width="15%" />
@@ -200,7 +199,7 @@ The best user experience is to run Office 365 ProPlus or use native Office apps 
 <li>Record the Office 365 Education license plans needed for the classroom in Table 2.<br/><br/>
 
 *Table 2. Office 365 Education license plans needed for the classroom*
-
+<br/>
 <table>
 <colgroup>
 <col width="15%" />
