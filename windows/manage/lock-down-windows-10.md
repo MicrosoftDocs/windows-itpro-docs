@@ -60,8 +60,12 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 <td align="left"><p>Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)</p></td>
+<td align="left"><p>[Reset a Windows 10 Mobile device](group-policies-for-enterprise-edition-only.md)</p></td>
 <td align="left"><p>There are two methods for resetting a Windows 10 Mobile device: factory reset and &quot;wipe and persist&quot; reset.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>[Group Policies that apply only to Windows 10 Enterprise Edition](reset-a-windows-10-mobile-device.md)</p></td>
+<td align="left"><p>New</p></td>
 </tr>
 </tbody>
 </table>
