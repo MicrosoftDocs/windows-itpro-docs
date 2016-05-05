@@ -1,18 +1,18 @@
 ---
-title: Group Policies that apply only to Windows 10 Enterprise Edition (Windows 10)
-description: Use this topic to learn about Group Policy objects that apply only to Windows 10 Enterprise.
+title: Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education (Windows 10)
+description: Use this topic to learn about Group Policy objects that apply only to Windows 10 Enterprise and Windows 10 Education.
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ---
 
-# Group Policies that apply only to Windows 10 Enterprise Edition
+# Group Policies that apply only to Windows 10 Enterprise and Education Editions
 
 **Applies to**
 
 -   Windows 10
 
-In Windows 10, version 1511, the following Group Policies apply only to Windows 10 Enterprise.
+In Windows 10, version 1511, the following Group Policies apply only to Windows 10 Enterprise and Windows 10 Education.
 
 | Policy name | Policy path | Comments |
 | - | - | - |
