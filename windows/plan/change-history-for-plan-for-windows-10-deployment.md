@@ -19,7 +19,7 @@ This topic lists new and updated topics in the [Plan for Windows 10 deployment](
 | New or changed topic                                                                                                                             | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | [Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) (multiple topics) | New         |
-
+| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md) | New|
  
 
 ## November 2015
