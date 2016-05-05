@@ -49,7 +49,9 @@ This school configuration has the following characteristics:
 - You install a 64-bit version of Windows 10 on the admin device.
 - You install the Windows Assessment and Deployment Kit (Windows ADK) on the admin device.
 - You install the Windows Assessment and Deployment Kit (Windows ADK) on the admin device.
-- You install the 64-bit version of the Microsoft Deployment Toolkit (MDT) 2013 Update 2 on the admin device.<p>**Note**&nbsp;&nbsp;In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
+- You install the 64-bit version of the Microsoft Deployment Toolkit (MDT) 2013 Update 2 on the admin device.
+
+  **Note**&nbsp;&nbsp;In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
 - The devices use Azure AD in Office 365 Education for identity management.
 - If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](http://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).</li>
 - Use [Intune](http://technet.microsoft.com/library/jj676587.aspx), [compliance settings in Office 365](https://support.office.com/en-us/article/Manage-mobile-devices-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd?ui=en-US&rs=en-US&ad=US), or [Group Policy](http://technet.microsoft.com/en-us/library/cc725828%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396) in AD DS to manage devices.
@@ -169,7 +171,7 @@ Complete the following steps to select the appropriate Office 365 Education lice
 <li>Determine the number of faculty members and students who will use the classroom.<br/>Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.
 </li>
 <li>Determine the faculty members and students who need to install Office applications on devices (if any).<br/>Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 1 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.</li>
- 
+<br/><br/>
 *Table 1. Comparison of standard and Microsoft Office 365 ProPlus plans*
 
 
@@ -192,9 +194,9 @@ Complete the following steps to select the appropriate Office 365 Education lice
 
 </tbody>
 </table>
-
+<br/><br/>
 The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
-
+<br/><br/>
 <li>Determine whether students or faculty need Azure Rights Management.<br/>You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management](https://technet.microsoft.com/library/jj585024.aspx).</li>
 <li>Record the Office 365 Education license plans needed for the classroom in Table 2.</li></ol>
 
@@ -427,7 +429,7 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 |Ldifde.exe |This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript | This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com/en-us/scriptcenter/dd939958.aspx).|
 |Windows PowerShell| This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
-
+<p>
 ### Create a source file that contains the user and group accounts
 
 After you have selected your user and group account bulk import method, you’re ready to create the source file that contains the user and group account. You’ll use the source file as the input to the import process. The source file format depends on the method you selected. Table 6 lists the source file format for the bulk import methods.
@@ -439,7 +441,7 @@ After you have selected your user and group account bulk import method, you’re
 |Ldifde.exe|Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript | VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).|
 | Windows PowerShell| Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
-
+<p>
 ### Import the user accounts into AD DS
 
 With the bulk-import source file finished, you’re ready to import the user and group accounts into AD DS. The steps for importing the file are slightly different for each method.
@@ -548,8 +550,7 @@ After you create the Windows Store for Business portal, configure it by using th
 |Offline licensing|Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see [Licensing model: online and offline licenses](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).|
 |Permissions|Allows you to grant other users in your organization the ability to buy, manage, and administer your Windows Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business).|
 |Private store|Allows you to change the organization name used in your Windows Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).|
-
-
+<p>
 ### Find, acquire, and distribute apps in the portal
 
 Now that you have created your Windows Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this by using the Inventory page in Windows Store for Business.
@@ -622,7 +623,7 @@ The MDT deployment process is highly automated, requiring minimal information to
 
 <tr>
 <td valign="top">Windows Deployment Services</td>
-<td>This method:
+<td>This method:<br/><br/>
 <ul>
 <li>Uses diskless booting to initiate MDT deployment.</li>
 <li>Works only with devices that support PXE boot.</li>
@@ -636,7 +637,7 @@ Select this method when you want to deploy Windows over-the-network and perform 
 
 <tr>
 <td valign="top">Bootable media</td>
-<td>This method:
+<td>This method:<br/><br/>
 <ul>
 <li>Initiates MDT deployment by booting from local media, including from USB drives, DVD-ROM, or CD-ROM.</li>
 <li>Deploys Windows 10 over the network, which consumes more network bandwidth than deployment from local media.</li>
@@ -649,7 +650,7 @@ Select this method when you want to deploy Windows over-the-network and are will
 
 <tr>
 <td valign="top">MDT deployment media</td>
-<td>This method:
+<td>This method:<br/><br/>
 <ul>
 <li>Initiates MDT deployment by booting from a local USB hard disk.</li>
 <li>Deploys Windows 10 from local media, which consumes less network bandwidth than over-the-network methods.</li>
@@ -678,7 +679,7 @@ The first step in preparation for Windows 10 deployment is to configure—that i
 
 <table>
 <colgroup>
-<col width="15%" />
+<col width="" />
 <col width="" />
 </colgroup>
 <thead>
@@ -710,7 +711,7 @@ Prior to sideloading the .appx files, obtain the Windows Store .appx files that 
 
 If you have Intune, you can deploy Windows Store apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Windows Store apps, and you can use it for ongoing management of Windows Store apps. This is the preferred method of deploying and managing Windows Store apps.<br/><br/>
 
-In addition, you must prepare your environment for sideloading (deploying) Windows Store apps. For more information about how to:
+In addition, you must prepare your environment for sideloading (deploying) Windows Store apps. For more information about how to:<br/><br/>
 <ul>
 <li>Prepare your environment for sideloading, see [Sideload LOB apps in Windows 10](https://technet.microsoft.com/en-us/itpro/windows/deploy/sideload-apps-in-windows-10).</li>
 <li>Create an MDT application, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).</li>
@@ -794,7 +795,7 @@ For a school, there are many ways to manage devices. Table 10 lists the methods 
 
 <table>
 <colgroup>
-<col width="15%" />
+<col width="" />
 <col width="" />
 </colgroup>
 <thead>
@@ -865,14 +866,13 @@ The disadvantages of this method are:
 
 ### Select Microsoft-recommended settings
 
-
 Microsoft has several recommended settings for educational institutions. Table 11 lists them, provides a brief description of why you need to configure them, and recommends methods for configuring the settings. Review the settings in Table 11 and evaluate their relevancy to your institution. Use the information to help you determine whether you need to configure the setting and which method you will use to do so. At the end, you will have a list of settings that you want to apply to the Windows 10 devices and know which management method you will use to configure the settings.
 
 *Table 11. Recommended settings for educational institutions*
 
 <table>
 <colgroup>
-<col width="15%" />
+<col width="" />
 <col width="" />
 </colgroup>
 <thead>
@@ -974,8 +974,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 </tr>
 
 </tbody>
-</table>
-
+</table><p>
 
 ### Configure settings by using Group Policy
 
@@ -1028,8 +1027,7 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 |   | Identify the necessary devices drivers, and import them to the MDT deployment share.|
 |   | Create an MDT application for each Windows Store and Windows desktop app.|
 |   | Notify the students and faculty about the deployment.|
-
-
+<p>
 ### Perform the deployment
 
 Use the Deployment Wizard to deploy Windows 10. The LTI deployment process is almost fully automated: You provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated. 
@@ -1054,7 +1052,7 @@ After you have deployed Windows 10, the devices are almost ready for use. First,
 1. Review the printer manufacturer’s instructions for installing the printer drivers.
 2. On the admin device, download the printer drivers.
 3. Copy the printer drivers to a USB drive.
-4. On a device, use the same account you used to set up Windows 10 in the [Prepare the device](#prepare-the-device) section to sign in to the device.
+4. On a device, use the same account you used to set up Windows 10 in the [Perform the deployment](#perform-the-deployment) section to sign in to the device.
 5. Insert the USB drive in the device.
 6. Follow the printer manufacturer’s instructions to install the printer drivers from the USB drive.
 7. Verify that the printer drivers were installed correctly by printing a test page.
@@ -1242,7 +1240,7 @@ Follow the same steps described in the [Deploy Windows 10 to devices](#deploy-wi
 
 </tbody>
 </table>
-
+<p>
 ### Summary
 
 Now, you have identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your school configuration should match the typical school configuration that you saw in the [Plan a typical school configuration](#plan-a-typical-school-configuration) section. By performing these maintenance tasks you help ensure that your school stays secure and is configured as you specified. 
