@@ -27,7 +27,7 @@ The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. 
 ## Group Policy settings for Passport
 
 
-The following table lists the Group Policy settings that you can configure for Passport use in your workplace. These policy settings are available in **Computer Configuration** &gt; **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Passport for Work**.
+The following table lists the Group Policy settings that you can configure for Passport use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Passport for Work**.
 
 <table>
 <tr>

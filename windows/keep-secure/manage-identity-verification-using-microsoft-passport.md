@@ -43,6 +43,12 @@ After an initial two-step verification of the user during Passport enrollment, P
 
 As an administrator in an enterprise or educational organization, you can create policies to manage Passport use on Windows 10-based devices that connect to your organization.
 
+## The difference between Passport and Passport for Work
+
+Individuals can create a PIN or Hello gesture on their personal devices for convenient sign-in. This use of Passport provides a layer of protection by being unique to the device on which it is set up, however it is not backed by key-based or certificate-based authentication. 
+
+Passport for Work, which is configured by Group Policy or MDM policy, used key-based or certificate-based authentication. 
+
 ## Benefits of Microsoft Passport
 
 
@@ -60,7 +66,7 @@ Passport helps protect user identities and user credentials. Because no password
 
 Microsoft Passport also enables Windows 10 Mobile devices to be used as [a remote credential](prepare-people-to-use-microsoft-passport.md#bmk-remote) when signing into Windows 10 PCs. During the sign-in process, the Windows 10 PC can connect using Bluetooth to access Microsoft Passport on the user’s Windows 10 Mobile device. Because users carry their phone with them, Microsoft Passport makes implementing two-factor authentication across the enterprise less costly and complex than other solutions.
 
-**Note**  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+> **Note**  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
 
  
 
@@ -79,7 +85,7 @@ Microsoft Passport also enables Windows 10 Mobile devices to be used as [a remo
 
 -   PIN entry and Hello both trigger Windows 10 to verify the user's identity and authenticate using Passport keys or certificates.
 
--   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use separate containers for keys. Non-Microsoft identity providers can generate keys for their users in the same container as the Microsoft account; however, all keys are separated by identity providers' domains to help ensure user privacy.
+-   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
 
 -   Certificates are added to the Passport container and are protected by the Passport gesture.
 
