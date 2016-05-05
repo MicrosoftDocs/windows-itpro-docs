@@ -197,18 +197,30 @@ Complete the following steps to select the appropriate Office 365 Education lice
 The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
 <br/>
 <li>Determine whether students or faculty need Azure Rights Management.<br/>You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management](https://technet.microsoft.com/library/jj585024.aspx).</li>
-<li>Record the Office 365 Education license plans needed for the classroom in Table 2.</li></ol>
+<li>Record the Office 365 Education license plans needed for the classroom in Table 2.<br/><br/>
 
 *Table 2. Office 365 Education license plans needed for the classroom*
 
-|Quantity     | Plan |
-| ---| ----------- |
-|  | Office 365 Education for students |
-|  | Office 365 Education for faculty |
-|  | Azure Rights Management for students |
-|  | Azure Rights Management for faculty |
-<p>
-You will use the Office 365 Education license plan information you record in Table 2 in the [Create user accounts in Office 365](#create-user-accounts-in-office-365) section of this guide.
+<table>
+<colgroup>
+<col width="15%" />
+<col width="" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Quantity</th>
+<th align="left">Plan</th>
+</tr>
+</thead>
+<tbody>
+<tr><td></td><td>Office 365 Education for students</td></tr>
+<tr><td></td><td>Office 365 Education for faculty</td></tr>
+<tr><td></td><td>Azure Rights Management for students</td></tr>
+<tr><td></td><td>Azure Rights Management for faculty</td></tr>
+</tbody>
+</table>
+
+You will use the Office 365 Education license plan information you record in Table 2 in the [Create user accounts in Office 365](#create-user-accounts-in-office-365) section of this guide.</li></ol>
 
 ### Create a new Office 365 Education subscription
 
