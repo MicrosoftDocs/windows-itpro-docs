@@ -121,7 +121,7 @@ If the service is not set for automatic startup, you will need to set it.
 
 For more information about the telemetry service used in Windows 10, see **Manage your telemetry settings** at the [Configure telemetry and other settings in your organization](https://technet.microsoft.com/itpro/windows/manage/disconnect-your-organization-from-microsoft#bkmk-utc) topic.
 
-## Configure proxy and Internet connectivity
+## Configure proxy and Internet connectivity settings
 
 The embedded Windows Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Windows Defender ATP cloud service. This is considered as the appropriate method of communication this type of usage scenario.
 
@@ -133,7 +133,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 ### Configure Web Proxy Auto Detect (WPAD) settings in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings
 
-Enable the **Automatically detect settings** option in Windows Proxy settings so the WinHTTP can use the WPAD feature to locate a proxy server.
+Enable the **Automatically detect settings** option in the Windows Proxy settings so that WinHTTP can use the WPAD feature to locate a proxy server.
 
 1. Click **Start** and select **Settings**.
 
@@ -213,7 +213,7 @@ For more information on how to use Netsh see, [https://technet.microsoft.com/en-
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 
-If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with WD ATP service in port 80 and 443:
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
 - us.vortex-win.data.microsoft.com  
 - eu.vortex-win.data.microsoft.com
@@ -229,14 +229,14 @@ If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  s
 
 ## Verify client connectivity to Windows Defender ATP service URLs
 
-Verify the proxy configuration was completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the WD ATP service URLs.
+Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Windows Defender ATP service URLs.
 
-1. Download the connectivity verification tools to the PC where WD ATP sensor is running on:
+1. Download the connectivity verification tools to the PC where Windows Defender ATP sensor is running on:
 
     - [Download PsTools Suite](https://technet.microsoft.com/en-us/sysinternals/bb896649)
     - [Download PortQry Command Line Port Scanner Version 2.0 utility](https://www.microsoft.com/en-us/download/details.aspx?id=17148)
     
-2. Extract the contents of PsTools and PortQry to a directory on the computer hard drive.
+2. Extract the contents of **PsTools** and **PortQry** to a directory on the computer hard drive.
 
 3.  Open an elevated command-line:
      
@@ -271,9 +271,9 @@ HardDrivePath\portqry.exe -n us.vortex-win.data.microsoft.com -e 443 -p tcp
     - portqry.exe -n www.microsoft.com -e 80 -p tcp
     - portqry.exe -n crl.microsoft.com -e 80 -p tcp
 
-8. Verify that each URL shows that the name is **resolved** and connection status is **listening**.
+8. Verify that each URL shows that the name is **resolved** and the connection status is **listening**.
 
-If the any of the verifications indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. 
+If the any of the verification steps indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. 
 
 
 
