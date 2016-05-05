@@ -34,7 +34,7 @@ New or changed topic | Description |
 <td align="left"><p>Added screenshots of Control Panel and the administrative tools folder.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)</td>
+<td align="left">[Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md)</td>
 <td align="left"><p>Added the font streaming section.</p></td>
 </tr>
 <tr class="odd">

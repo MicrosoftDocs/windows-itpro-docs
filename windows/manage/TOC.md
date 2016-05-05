@@ -17,7 +17,7 @@
 #### [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
 #### [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 ### [Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)
-### [Configure Windows 10 devices to stop data flow to Microsoft](disconnect-your-organization-from-microsoft.md)
+### [Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md)
 ### [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
 ### [Configure access to Windows Store](stop-employees-from-using-the-windows-store.md)
 ### [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)
