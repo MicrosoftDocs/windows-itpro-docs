@@ -63,7 +63,7 @@ There are two ways to check the startup type for the service: from the command l
 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-2.  Enter the following command and press the **Enter** key.
+2.  Enter the following command and press **Enter**.
 
     ```
     sc qc query diagtrack
@@ -90,7 +90,7 @@ There are two ways to check the startup type for the service: from the command l
 
 1.  Open the services console:
 
-    a. Click **Start** and type **services**. Press the **Enter key** to open the console.
+    a. Click **Start** and type **services**. Press **Enter** to open the console.
 
 2.  Scroll through the list of services until you find **Connected User Experiences and Telemetry**. 
 
@@ -109,13 +109,13 @@ If the service is not set for automatic startup, you will need to set it.
 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-2.  Enter the folowing command and press the **Enter** key.
+2.  Enter the following command and press the **Enter**.
 
     ```
     sc config diagtrack start=auto
     ```
 
-3.  You will receive a success message. Confirm the change by typing **```sc qc query diagtrack```** and press the **Enter** key.
+3.  You will receive a success message. Confirm the change by typing **```sc qc query diagtrack```** and press **Enter**.
 
 4.  Now attempt to [onboard the endpoint](onboard-configure-windows-defender-advanced-threat-protection.md#onboard-endpoints-and-set-up-the-windows-defender-atp-user-access).
 
@@ -123,50 +123,156 @@ For more information about the telemetry service used in Windows 10, see **Manag
 
 ## Configure proxy and Internet connectivity
 
-The endpoints must be able to connect to the Internet and send their data outside of your organization's network. You might need to set additional proxy configurations to ensure endpoints can report correctly.
+The embedded Windows Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Windows Defender ATP cloud service. This is considered as the appropriate method of communication this type of usage scenario.
 
-If endpoints in your network use manual or specific proxy configurations to connect to the Internet, you may need to configure the Windows telemetry service on the endpoint to recognise your customized proxy configurations.
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
-You can use GP to make the changes for a large number of endpoints (or across your entire organization), or make manual registry changes if you just need to configure a few endpoints individually.
+- Configure Web Proxy Auto Detect (WPAD) settings in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings
 
-**Use GP to configure the proxy with the Windows telemetry service:**
+- Configure the proxy server manually using Netsh
 
-1.  Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure, and click **Edit**.
+### Configure Web Proxy Auto Detect (WPAD) settings in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings
 
-2.  In the **Group Policy Management Editor**, go to **Computer configuration**.
+Enable the **Automatically detect settings** option in Windows Proxy settings so the WinHTTP can use the WPAD feature to locate a proxy server.
 
-3.  Click **Policies**, then **Administrative templates**.
+1. Click **Start** and select **Settings**.
 
-4.  Click **Windows components** and then **Data Collection and Preview Builds**.
+2. Click **Network & Internet**.
 
-5.  Click **Configure connected user experiences and telemetry** and then
-    configure the GP. The GP accepts a string in the format ```<server name or IP>:<port>```.
+3. Select **Proxy**.
 
-**Make changes to the registry to configure the proxy with the Windows telemetry service:**
+4. Verify that the **Automatically detect settings** option is set to On.
+![Image showing the proxy settings configuration page](images/proxy-settings.png)
 
-1.  Open your preferred registry editing tool. You can use Windows Registry Editor by opening the **Start menu**, typing **regedit** and pressing **Enter**.
+5. If the **Use setup script** or **Manual proxy setup** options are enabled then you will need to [configure proxy settings manually by using Netsh](#configure-proxy-server-manually-using-netsh) method for WinHTTP to discover the appropriate proxy settings and connect.
 
-2.  Navigate to the **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DataCollection** registry key.
+### Configure proxy server manually using Netsh 
 
-3.  Right-click the key and click **New** and **String Value**. Type **TelemetryProxyServer* and press **Enter**.
+Use Netsh to configure the proxy settings if **Use setup script** or **Manual proxy setup** settings are configured in the Windows Proxy setting of the endpoint to enable connectivity. 
 
-4.  Double click the **TelemetryProxyServer** entry and enter the proxy server you want to allow in the format ```<server name or IP>:<port>```. <span style="background-color:yellow;">Naama: Please confirm this is all correct.</span>
+You can configure the endpoint by using any of these methods:
 
-In some cases, you may need to configure your firewall to ensure the Windows Defender ATP service can connect to our processing servers. The URLs for the servers depend on the datacenter location you chose during service onboarding.
+- Importing the configured proxy settings to WinHTTP
+- Configuring the proxy settings manually to WinHTTP
 
-If you chose the US as your datacenter, you will need to allow the following URLs: 
+After configuring the endpoints, you'll need to verify that the correct proxy settings were applied.
 
-- https://us.vortex-win.data.microsoft.com/collect/v1
-- https://sevillegwcus.microsoft.com
-- https://sevillegweus.microsoft.com
-- https://psapp.microsoft.com/PSApp/SubmissionFEService
+**Import the configured proxy settings to WinHTTP**
 
-If you chose the EU as your datacenter, you will need to allow the following URLs:
+1.  Open an elevated command-line prompt on the endpoint:
 
-- https://eu.vortex-win.data.microsoft.com/collect/v1
-- https://sevillegwweu.microsoft.com
-- https://sevillegwneu.microsoft.com
-- https://psappeu.microsoft.com/PSApp/SubmissionFEService
+    a.  Click **Start** and type **cmd**.
+
+    b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2. Enter the following command and press **Enter**:
+
+ ```
+ netsh winhttp import proxy source=ie
+ ```
+ 
+ An output showing the applied WinHTTP proxy settings is displayed.
+ 
+ 
+ **Configure the proxy settings manually to WinHTTP**
+ 
+ 1.  Open an elevated command-line prompt on the endpoint:
+
+    a.  Click **Start** and type **cmd**.
+
+    b.  Right-click **Command prompt** and select **Run as administrator**.
+    
+ 2. Enter the following command and press **Enter**:
+ 
+ ```
+ proxy [proxy-server=] ProxyServerName:PortNumber
+ ```
+    Replace *ProxyServerName* with the fully qualified domain name of the proxy server. 
+    
+    Replace *PortNumber* with the port number that you want to configure the proxy server with.
+    
+ An output showing the applied WinHTTP proxy settings is displayed.
+ 
+
+**Verify that the correct proxy settings were applied**
+ 
+1.  Open an elevated command-line prompt on the endpoint:
+
+    a.  Click **Start** and type **cmd**.
+
+    b.  Right-click **Command prompt** and select **Run as administrator**.
+    
+2. Enter the following command and press **Enter**:
+
+```
+netsh winhttp show proxy
+```
+
+For more information on how to use Netsh see, [https://technet.microsoft.com/en-us/library/cc731131(v=ws.10).aspx](https://technet.microsoft.com/en-us/library/cc731131(v=ws.10).aspx)     
+
+## Enable access to Windows Defender ATP service URLs in the proxy server
+
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with WD ATP service in port 80 and 443:
+
+- us.vortex-win.data.microsoft.com  
+- eu.vortex-win.data.microsoft.com
+- sevillegwcus.microsoft.com
+- sevillegweus.microsoft.com
+- sevillegwweu.microsoft.com
+- sevillegwneu.microsoft.com
+- www.microsoft.com
+- crl.microsoft.com
+- *.blob.core.windows.net
+
+If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted to the above listed URLs.
+
+## Verify client connectivity to Windows Defender ATP service URLs
+
+Verify the proxy configuration was completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the WD ATP service URLs.
+
+1. Download the connectivity verification tools to the PC where WD ATP sensor is running on:
+
+    - [Download PsTools Suite](https://technet.microsoft.com/en-us/sysinternals/bb896649)
+    - [Download PortQry Command Line Port Scanner Version 2.0 utility](https://www.microsoft.com/en-us/download/details.aspx?id=17148)
+    
+2. Extract the contents of PsTools and PortQry to a directory on the computer hard drive.
+
+3.  Open an elevated command-line:
+     
+    a. Click **Start** and type **cmd**.
+
+    b.  Right-click **Command prompt** and select **Run as administrator**.
+    
+4. Enter the following command and press **Enter**:
+```
+HardDrivePath\PsExec.exe -s cmd.exe
+```
+
+    Replace *HardDrivePath* with the path where the PsTools Suite was extracted to:
+![Image showing the command line](images/psexec-cmd.png)
+
+5. Enter the following command and press **Enter**:
+```
+HardDrivePath\portqry.exe -n us.vortex-win.data.microsoft.com -e 443 -p tcp
+```
+    Replace *HardDrivePath* with the path where the PortQry utility was extracted to:
+    ![Image showing the command line](images/portqry.png)
+    
+6.	Verify that the output shows that the name is **resolved** and connection status is **listening**.
+
+7. Repeat the same steps for the remaining URLs with the following arguments:
+
+    - portqry.exe -n eu.vortex-win.data.microsoft.com -e 443 -p tcp
+    - portqry.exe -n sevillegwcus.microsoft.com -e 443 -p tcp
+    - portqry.exe -n sevillegweus.microsoft.com -e 443 -p tcp
+    - portqry.exe -n sevillegwweu.microsoft.com -e 443 -p tcp
+    - portqry.exe -n sevillegwneu.microsoft.com -e 443 -p tcp
+    - portqry.exe -n www.microsoft.com -e 80 -p tcp
+    - portqry.exe -n crl.microsoft.com -e 80 -p tcp
+
+8. Verify that each URL shows that the name is **resolved** and connection status is **listening**.
+
+If the any of the verifications indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. 
 
 
 
