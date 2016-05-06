@@ -19,6 +19,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Corrected script for setting a custom shell using Shell Launcher | 
 | [Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md) | Added section on how to turn off Live Tiles |
 | [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md) | New telemetry content |
+| [Group Policies that apply only to Windows 10 Enterprise and Education Editions](group-policies-for-enterprise-and-education-editions.md) | New |
 
 ## April 2016
 
