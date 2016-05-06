@@ -9,6 +9,7 @@
 ### [Integration with management solutions](integration-with-management-solutions-.md)
 ## [Guidance for education environments](windows-10-guidance-for-education-environments.md)
 ### [Chromebook migration guide](chromebook-migration-guide.md)
+### [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 ## [Windows To Go: feature overview](windows-to-go-overview.md)
 ### [Best practice recommendations for Windows To Go](best-practice-recommendations-for-windows-to-go.md)
 ### [Deployment considerations for Windows To Go](deployment-considerations-for-windows-to-go.md)

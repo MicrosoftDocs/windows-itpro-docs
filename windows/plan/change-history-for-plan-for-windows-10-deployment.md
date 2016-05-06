@@ -13,13 +13,19 @@ author: TrudyHa
 
 This topic lists new and updated topics in the [Plan for Windows 10 deployment](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## May 2016
+
+
+| New or changed topic                                                                                                                             | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md) | New|
+
 ## December 2015
 
 
 | New or changed topic                                                                                                                             | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | [Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) (multiple topics) | New         |
-
  
 
 ## November 2015
