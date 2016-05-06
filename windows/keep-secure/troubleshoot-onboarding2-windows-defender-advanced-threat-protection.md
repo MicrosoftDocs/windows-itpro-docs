@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: iaanw
+author: mjcaparas
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues2
@@ -25,10 +25,10 @@ If you have completed the endpoint onboarding process and don't see endpoints in
 
 To address this issue:
 
-- Ensure that the endpoint is onboarded successfully
-- Ensure that the Windows Defender ATP service is enabled
-- Ensure that the telemetry and diagnostics service is enabled
-- Ensure that the Windows Defender ATP endpoint has internet connection
+- [Ensure that the endpoint is onboarded successfully](#Ensure-that-the-endpoint-is-onboarded-successfully)
+- [Ensure that the Windows Defender ATP service is enabled](#Ensure-that-the-Windows-Defender-ATP-service-is-enabled)
+- [Ensure that the telemetry and diagnostics service is enabled](#Ensure-that-the-telemetry-and-diagnostics-service-is-enabled)
+- [Ensure that the Windows Defender ATP endpoint has internet connection](#Ensure-that-the-Windows-Defender-ATP-endpoint-has-internet-connection)
 
 ### Ensure that the endpoint is onboarded successfully
 
