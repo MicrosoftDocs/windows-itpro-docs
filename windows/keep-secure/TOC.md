@@ -410,7 +410,7 @@
 ##### [Additional configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
 ##### [Monitor onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-##### [Troubleshoot onboarding issues2](troubleshoot-onboarding2-windows-defender-advanced-threat-protection.md)
+##### [Troubleshoot onboarding - updated](other-troubleshooting.md)
 #### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
 #### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 #### [Use the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md)
