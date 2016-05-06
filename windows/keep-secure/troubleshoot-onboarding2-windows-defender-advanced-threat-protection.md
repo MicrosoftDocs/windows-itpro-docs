@@ -129,3 +129,11 @@ ASK ALON HOW SET TO AUTOMATIC IF IT'S NOT SET FROM THE CONSOLE.
 
 ### Ensure that the Windows Defender ATP endpoint has internet connection
 
+The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to be able to report telemetry and communicate with the Windows Defender ATP service. 
+
+WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment. 
+
+To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#
+Verify-client-connectivity-to-Windows-Defender-ATP-service-URLs) topic.
+
+If the verification fails and your environment is using a proxy to connect to the internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md#) topic.

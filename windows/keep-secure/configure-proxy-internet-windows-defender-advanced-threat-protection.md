@@ -143,16 +143,17 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     
 4. Enter the following command and press **Enter**:
 
-```
-HardDrivePath\PsExec.exe -s cmd.exe
-```
+    ```
+    HardDrivePath\PsExec.exe -s cmd.exe
+    ```
     Replace *HardDrivePath* with the path where the PsTools Suite was extracted to:
-![Image showing the command line](images/psexec-cmd.png)
+    ![Image showing the command line](images/psexec-cmd.png)
 
 5. Enter the following command and press **Enter**:
-```
-HardDrivePath\portqry.exe -n us.vortex-win.data.microsoft.com -e 443 -p tcp
-```
+
+    ```
+    HardDrivePath\portqry.exe -n us.vortex-win.data.microsoft.com -e 443 -p tcp
+    ```
     Replace *HardDrivePath* with the path where the PortQry utility was extracted to:
     ![Image showing the command line](images/portqry.png)
     
