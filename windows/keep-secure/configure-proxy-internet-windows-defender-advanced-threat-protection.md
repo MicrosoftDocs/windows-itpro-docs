@@ -12,6 +12,12 @@ author: mjcaparas
 
 # Configure proxy and Internet connectivity settings
 
+**Applies to:**
+
+- Windows 10 Insider Preview
+
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 The embedded Windows Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Windows Defender ATP cloud service. This is considered as the appropriate method of communication this type of usage scenario.
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
