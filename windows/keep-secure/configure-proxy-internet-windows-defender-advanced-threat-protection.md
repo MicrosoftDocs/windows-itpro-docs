@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP proxy and Internet connectivity settings
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service. 
-keywords: troubleshoot onboarding, onboarding issues, event viewer, azure management portal, data collection and preview builds
+keywords: configure, proxy, internet, internet connectivity, settings, proxy settings
 search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -31,7 +31,8 @@ Enable the **Automatically detect settings** option in the Windows Proxy setting
 3. Select **Proxy**.
 
 4. Verify that the **Automatically detect settings** option is set to On.
-![Image showing the proxy settings configuration page](images/proxy-settings.png)
+    
+    ![Image showing the proxy settings configuration page](images/proxy-settings.png)
 
 5. If the **Use setup script** or **Manual proxy setup** options are enabled then you will need to [configure proxy settings manually by using Netsh](#configure-proxy-server-manually-using-netsh) method for WinHTTP to discover the appropriate proxy settings and connect.
 
@@ -60,7 +61,6 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
  ```
  netsh winhttp import proxy source=ie
  ```
- 
  An output showing the applied WinHTTP proxy settings is displayed.
  
  
@@ -134,10 +134,10 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     b.  Right-click **Command prompt** and select **Run as administrator**.
     
 4. Enter the following command and press **Enter**:
+
 ```
 HardDrivePath\PsExec.exe -s cmd.exe
 ```
-
     Replace *HardDrivePath* with the path where the PsTools Suite was extracted to:
 ![Image showing the command line](images/psexec-cmd.png)
 
