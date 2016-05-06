@@ -181,8 +181,6 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 -   Added steps in the [Cortana](#bkmk-cortana) section on how to disable outbound traffic using Windows Firewall.
 
--   Added steps in the [Live tiles](#bkmk-livetiles) section on how to remove the Money and Sports apps.
-
 -   Changed the Windows Update section to apply system-wide settings, and not just per user.
 
 ## <a href="" id="bkmk-othersettings"></a>Info management settings
