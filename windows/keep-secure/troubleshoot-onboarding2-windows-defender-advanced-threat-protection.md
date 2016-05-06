@@ -55,26 +55,13 @@ There are two ways to check the startup type for the service: from the command l
 2.  Enter the following command and press **Enter**.
 
     ```
-    sc qc query diagtrack
+    sc qc diagtrack
     ```
 
 3.  If the service is enabled, it will be set to automatically start. The result should look like the following:
 
     ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
-
-    ```
-    SERVICE_NAME: diagtrack
-        TYPE               : 10  WIN32_OWN_PROCESS
-        START_TYPE         : 2   AUTO_START
-        ERROR_CONTROL      : 1   NORMAL
-        BINARY_PATH_NAME   : C:\WINDOWS\System32\svchost.exe -k utcsvc
-        LOAD_ORDER_GROUP   :
-        TAG                : 0
-        DISPLAY_NAME       : Connected User Experiences and Telemetry
-        DEPENDENCIES       : RpcSs
-        SERVICE_START_NAME : LocalSystem
-    ```
-
+   
 4. If the **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**:
 
     ```
