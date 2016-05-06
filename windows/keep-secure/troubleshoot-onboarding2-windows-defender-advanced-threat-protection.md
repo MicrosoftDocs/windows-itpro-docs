@@ -23,7 +23,7 @@ You might need to troubleshoot the onboarding process if you encounter issues.
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md), then this might indicate endpoint onboarding or a connectivity issue that you need to address.
 
-To address this issue:
+Go through the following verification topics to address this issue:
 
 - [Ensure that the endpoint is onboarded successfully](#Ensure-that-the-endpoint-is-onboarded-successfully)
 - [Ensure that the Windows Defender ATP service is enabled](#Ensure-that-the-Windows-Defender-ATP-service-is-enabled)
