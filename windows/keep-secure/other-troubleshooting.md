@@ -92,12 +92,10 @@ sc qc sense
   If the the service is running, then the result should look like the following screenshot:
   
   ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
-
 3. If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**:
 ```
 sc config sense start=auto
 ```
-
 4.  A success message is displayed. Verify the change by entering the following command and press **Enter**:
 ```
 sc qc sense
@@ -117,12 +115,10 @@ sc qc sense
   
   If the service is running, the result should look like the following screenshot:
   ![Result of the sc query sense command](images/sc-query-sense-running.png)
-
 3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**:
 ```
 sc start sense
 ```
- 
 4. A success message is displayed. Verify the change by entering the following command and press **Enter**:
 ```
 sc qc sense
@@ -147,16 +143,13 @@ There are two ways to check the startup type for the service: from the command l
 ```
 sc qc diagtrack
 ```
- 
   If the service is enabled, then the result should look like the following screenshot:
 
   ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
-  
 4. If the **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**:
 ```
 sc config diagtrack start=auto
 ```
- 
 5. A success message is displayed. Verify the change by entering the following command and press **Enter**:
 ```
 sc qc diagtrack
@@ -191,12 +184,10 @@ sc query diagtrack
   If the service is running, the result should look like the following screenshot:
 
   ![Result of the sc query command for sc query diagtrack](images/windefatp-sc-query-diagtrack.png)
-  
 3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**:
 ```
 sc start diagtrack
 ```
-
 4. A success message is displayed. Verify the change by entering the following command and press **Enter**:
   sc query diagtrack
 
