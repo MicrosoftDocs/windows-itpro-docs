@@ -87,3 +87,22 @@ Check the startup type from the command line:
 3. If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**: sc config sense start=auto
 
 4.  A success message is displayed. Verify the change by entering the following command and press **Enter**: sc qc sense
+
+Check that the service is running from the command line:
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2. Enter the following command and press **Enter**: sc query sense
+
+  If the service is running, the result should look like the following screenshot:
+  
+  ![Result of the sc query sense command](images/sc-query-sense-running.png)
+  
+3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**: sc start sense
+
+4.  A success message is displayed. Verify the change by entering the following command and press **Enter**: sc qc sense
+
+
