@@ -404,7 +404,7 @@
 ### [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 #### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md)
-##### [Service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
+<!--##### [Service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
 ##### [Configure endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 ##### [Configure proxy and Internet settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 ##### [Additional configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
