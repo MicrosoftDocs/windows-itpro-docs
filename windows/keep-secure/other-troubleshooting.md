@@ -26,7 +26,7 @@ If you have completed the endpoint onboarding process and don't see endpoints in
 ### Ensure that the endpoint is onboarded successfully
 If the endpoints aren't reporting correctly, you might need to check that the Windows Defender Advanced Threat Protection service was successfully onboarded on the endpoint.
 
-**Check the onboarding state in Registry**:
+Check the onboarding state in Registry:
 
 1. Click **Start**.
 
@@ -42,7 +42,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
   If the **OnboardingState** value is not set to **1**, follow the instructions on **Identifying and addressing onboarding issues**.
 
-**Identifying and addressing onboarding errors:**    
+Identifying and addressing onboarding errors:   
 
 1. Click **Start**.
 
