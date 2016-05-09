@@ -67,3 +67,13 @@ Event ID | Message | Resolution steps
 7 |  Windows Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | Ensure that the Windows Defender ATP endpoint has internet access, then run the onboarding script again.
 15 | Windows Advanced Threat Protection cannot start command channel with URL: _variable_ | Ensure that the Windows Defender ATP endpoint has internet access.
 
+### Ensure that the Windows Defender ATP service is enabled
+If the endpoints aren't reporting correctly, you might need to check that the Windows 10 Windows Defender Advanced Threat Protection service is enabled on the endpoint.
+
+Check the startup type from the command line:
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
