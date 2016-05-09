@@ -23,4 +23,5 @@ You might need to troubleshoot the onboarding process if you encounter issues.
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after 20 minutes, it might indicate an endpoint onboarding or a connectivity problem.
 
-
+### Ensure that the endpoint is onboarded successfully
+If the endpoints aren't reporting correctly, you might need to check that the Windows Defender Advanced Threat Protection service was successfully onboarded on the endpoint.
