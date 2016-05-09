@@ -102,6 +102,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
   ```
   sc qc sense
   ```
+
 **Check that the service is running from the command line:**
 
 1.  Open an elevated command-line prompt on the endpoint:
@@ -125,6 +126,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
   ```
   sc qc sense
   ```
+
 ### Ensure that telemetry and diagnostics service is enabled
 If the endpoints aren't reporting correctly, you might need to check that the Windows 10 telemetry and diagnostics service is enabled on the endpoint. The service may have been disabled by other programs or user configuration changes.
 
@@ -161,9 +163,9 @@ There are two ways to check the startup type for the service: from the command l
 
 1.  Open the services console:
 
-    a. Click **Start** and type **services**. 
-    
-    b. Press **Enter** to open the console.
+  a. Click **Start** and type **services**. 
+  
+  b. Press **Enter** to open the console.
 
 2.  Scroll through the list of services until you find **Connected User Experiences and Telemetry**. 
 
