@@ -25,8 +25,8 @@ If you have completed the endpoint onboarding process and don't see endpoints in
 Go through the following verification topics to address the issue:
 - Ensure that the endpoint is onboarded successfully
 - Ensure that the Windows Defender ATP service is enabled
-- Ensure that the telemetry and diagnostics service is enabled
-- Ensure that the Windows Defender ATP endpoint has internet connection
+- Ensure that the telemetry and diagnostics service is enabled [in]
+- Ensure that the Windows Defender ATP endpoint has internet connection [in]
 
 
 
@@ -98,7 +98,7 @@ ASK ALON HOW SET TO AUTOMATIC IF IT'S NOT SET FROM THE CONSOLE.
 
     ![Result of the sc query command for sc query diagtrack](images/windefatp-sc-query-diagtrack.png)
     
-4. If the service STATE is not set to RUNNING, then you'll need to enter the following command and press **Enter**:
+4. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**:
 
     ```
     sc start diagtrack
