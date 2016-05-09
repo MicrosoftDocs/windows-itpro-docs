@@ -89,6 +89,7 @@ Check the startup type from the command line:
 4.  A success message is displayed. Verify the change by entering the following command and press **Enter**: sc qc sense
 
 Check that the service is running from the command line:
+
 1.  Open an elevated command-line prompt on the endpoint:
 
   a.  Click **Start** and type **cmd**.
