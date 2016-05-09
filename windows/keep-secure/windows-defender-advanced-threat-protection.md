@@ -24,8 +24,8 @@ Windows Defender ATP uses the following combination of technology built into Win
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
     collect and process behavioral signals from the operating system
     (for example, process, registry, file, and network communications)
-    and sends this telemetry to your Azure Active Directory (AAD)
-    subscription.
+    and sends this telemetry to your private, isolated, cloud instance of Windows Defender ATP.
+    
 
 -   **Cloud security analytics**: Leveraging big-data, machine-learning, and
     unique Microsoft optics across the Windows ecosystem (such as the
