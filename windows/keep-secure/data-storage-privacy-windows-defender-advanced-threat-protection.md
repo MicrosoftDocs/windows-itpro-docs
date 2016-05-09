@@ -32,7 +32,7 @@ Microsoft uses this data to:
 - Generate alerts if a possible attack was detected
 - Provide your security operations with a view into machines, files, and URLs related to threat signals from your network, enabling you to investigate and explore the presence of security threats on the network.
 
-We do not mine your data for advertising or for any other purpose other than providing you the service.
+Microsoft does not mine your data for advertising or for any other purpose other than providing you the service.
 
 ## Do I have the flexibility to select where to store my data?
 
