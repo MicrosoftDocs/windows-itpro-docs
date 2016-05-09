@@ -18,7 +18,7 @@ author: mjcaparas
 
 You might need to troubleshoot the onboarding process if you encounter issues.
 
-Endpoints not reporting correctly
+#Endpoints not reporting correctly
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md), then this might indicate endpoint onboarding or a connectivity issue that you need to address.
 
