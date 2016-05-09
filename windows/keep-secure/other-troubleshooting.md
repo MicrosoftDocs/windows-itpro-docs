@@ -1,6 +1,6 @@
 ---
-title: troubleshoot
-description: troubleshoot
+title: troubleshoot Windows Defender Advanced Threat Protection onboarding issues two
+description: Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
 keywords: troubleshoot
 search.product: eADQiWindows 10XVcnh
 ms.prod: W10
@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
+
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues two
 
 **Applies to:**
