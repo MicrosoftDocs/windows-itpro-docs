@@ -79,5 +79,11 @@ Check the startup type from the command line:
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command and press **Enter**: sc qc sense
+
   If the the service is running, then the result should look like the following screenshot:
+
   ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
+
+3. If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**: sc config sense start=auto
+
+4.  A success message is displayed. Verify the change by entering the following command and press **Enter**: sc qc sense
