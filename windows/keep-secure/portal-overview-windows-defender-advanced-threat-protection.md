@@ -35,6 +35,8 @@ When you open the portal, you’ll see the main areas of the application:
 
  ![Windows Defender Advanced Threat Protection portal](images/portal-image.png)
 
+> **Note**&nbsp;&nbsp; Malware related detections will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+
 You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 
 Area | Description
