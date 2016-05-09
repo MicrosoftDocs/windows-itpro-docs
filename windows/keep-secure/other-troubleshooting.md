@@ -82,6 +82,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 1.  Open an elevated command-line prompt on the endpoint:
 
   a.  Click **Start** and type **cmd**.
+  
   b.  Right-click **Command prompt** and select **Run as administrator**.
  
 2.  Enter the following command and press **Enter**:
