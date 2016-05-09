@@ -401,6 +401,7 @@
 ### [User Account Control](user-account-control-overview.md)
 #### [How User Account Control works](how-user-account-control-works.md)
 #### [User Account Control security policy settings](user-account-control-security-policy-settings.md)
+#### [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md)
 ### [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
 #### [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
 #### [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
