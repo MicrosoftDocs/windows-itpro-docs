@@ -22,20 +22,13 @@ You might need to troubleshoot the onboarding process if you encounter issues.
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after 20 minutes, it might indicate an endpoint onboarding or a connectivity problem.
 
-Go through the following verification topics to address this issue:
-
-- [Ensure that the endpoint is onboarded successfully](#Ensure-that-the-endpoint-is-onboarded-successfully)
-- [Ensure that the Windows Defender ATP service is enabled](#Ensure-that-the-Windows-Defender-ATP-service-is-enabled)
-- [Ensure that the telemetry and diagnostics service is enabled](#Ensure-that-the-telemetry-and-diagnostics-service-is-enabled)
-- [Ensure that the Windows Defender ATP endpoint has internet connection](#Ensure-that-the-Windows-Defender-ATP-endpoint-has-internet-connection)
-
-###Ensure that the endpoint is onboarded successfully
+### Ensure that the endpoint is onboarded successfully
 If the endpoints aren't reporting correctly, you might need to check that the Windows Defender Advanced Threat Protection service was successfully onboarded on the endpoint.
 
 **Check the onboarding state in Registry**
 
 1. Click **Start**.
- 
+
 2. Type **Run**.
 
 3. From the **Run** dialog box, type **regedit** and press **Enter**.
@@ -44,7 +37,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
 5. Check that the **OnboardingState** value is set to **1**.
 
-    ![Image of OnboardingState status in Registry Editor](images/onbaordingstate.png)
+    ![Image of OnboardingState status in Registry Editor](images/onboardingstate.png)
 
     If the **OnboardingState** value is not set to **1**, follow the instructions on **Identifying and addressing onboarding issues**.
     
@@ -73,10 +66,11 @@ Event ID | Message | Resolution steps
 7 |  Windows Advanced Threat Protection service failed to read the onboarding parameters. Failure code: ```variable```| Ensure that the Windows Defender ATP endpoint has internet access, then run the onboarding script again.
 15 | Windows Advanced Threat Protection cannot start command channel with URL: ```variable``` | Ensure that the Windows Defender ATP endpoint has internet access.
 
-###Ensure that the Windows Defender ATP service is enabled
+### Ensure that the Windows Defender ATP service is enabled
 If the endpoints aren't reporting correctly, you might need to check that the Windows 10 Windows Defender Advanced Threat Protection service is enabled on the endpoint. 
 
 **Check the startup type from the command line**
+
 1.  Open an elevated command-line prompt on the endpoint:
 
     a.  Click **Start** and type **cmd**.
@@ -104,6 +98,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
     ```
     
 **Check that the service is running from the command line**
+
 1.  Open an elevated command-line prompt on the endpoint:
 
     a.  Click **Start** and type **cmd**.
