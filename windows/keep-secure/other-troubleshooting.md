@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mjcaparas
 ---
-#Troubleshoot Windows Defender Advanced Threat Protection onboarding issues two
+# Troubleshoot Windows Defender Advanced Threat Protection onboarding issues two
 
 **Applies to:**
 
@@ -18,11 +18,11 @@ author: mjcaparas
 
 You might need to troubleshoot the onboarding process if you encounter issues.
 
-##Endpoints not reporting to the service correctly
+## Endpoints not reporting to the service correctly
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after 20 minutes, it might indicate an endpoint onboarding or a connectivity problem.
 
-###Ensure that the endpoint is onboarded successfully
+### Ensure that the endpoint is onboarded successfully
 If the endpoints aren't reporting correctly, you might need to check that the Windows Defender Advanced Threat Protection service was successfully onboarded on the endpoint.
 
 **Check the onboarding state in Registry:**
@@ -42,8 +42,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
     If the **OnboardingState** value is not set to **1**, follow the instructions on **Identifying and addressing onboarding issues**.
     
 
-
-###Ensure that the Windows Defender ATP endpoint has internet connection
+### Ensure that the Windows Defender ATP endpoint has internet connection
 
 The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to be able to report telemetry and communicate with the Windows Defender ATP service. 
 
