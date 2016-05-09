@@ -1,6 +1,6 @@
 ---
 title: Configure Windows Defender ATP proxy and Internet connectivity settings
-description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service. 
+description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings
 search.product: eADQiWindows 10XVcnh
 ms.prod: W10
@@ -18,9 +18,9 @@ author: mjcaparas
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report telemetry and communicate with the Windows Defender ATP service. 
+The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report telemetry and communicate with the Windows Defender ATP service.
 
-The embedded Windows Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Windows Defender ATP cloud service. 
+The embedded Windows Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Windows Defender ATP cloud service.
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
@@ -39,15 +39,15 @@ Enable the **Automatically detect settings** option in the Windows Proxy setting
 3. Select **Proxy**.
 
 4. Verify that the **Automatically detect settings** option is set to On.
-    
+
     ![Image showing the proxy settings configuration page](images/proxy-settings.png)
 
 5. If the **Use setup script** or **Manual proxy setup** options are enabled then you will need to [configure proxy settings manually by using Netsh](#configure-proxy-server-manually-using-netsh) method for WinHTTP to discover the appropriate proxy settings and connect.
 
-## Configure the proxy server manually using Netsh 
+## Configure the proxy server manually using Netsh
 
 If **Use setup script** or **Manual proxy setup** settings are configured in the Windows Proxy setting, then endpoints will not be discovered by WinHTTP.
-Use Netsh to configure the proxy settings to enable connectivity. 
+Use Netsh to configure the proxy settings to enable connectivity.
 
 You can configure the endpoint by using any of these methods:
 
@@ -70,36 +70,36 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
  netsh winhttp import proxy source=ie
  ```
  An output showing the applied WinHTTP proxy settings is displayed.
- 
- 
+
+
  **Configure the proxy settings manually to WinHTTP**
- 
+
  1.  Open an elevated command-line prompt on the endpoint:
 
     a.  Click **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
-    
+
  2. Enter the following command and press **Enter**:
- 
+
  ```
  proxy [proxy-server=] ProxyServerName:PortNumber
  ```
-    Replace *ProxyServerName* with the fully qualified domain name of the proxy server. 
-    
+    Replace *ProxyServerName* with the fully qualified domain name of the proxy server.
+
     Replace *PortNumber* with the port number that you want to configure the proxy server with.
-    
+
  An output showing the applied WinHTTP proxy settings is displayed.
- 
+
 
 **Verify that the correct proxy settings were applied**
- 
+
 1.  Open an elevated command-line prompt on the endpoint:
 
     a.  Click **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
-    
+
 2. Enter the following command and press **Enter**:
 
 ```
@@ -120,7 +120,7 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 - sevillegwneu.microsoft.com
 - www.microsoft.com
 - crl.microsoft.com
-- *.blob.core.windows.net
+- \*.blob.core.windows.net
 
 If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted to the above listed URLs.
 
@@ -132,15 +132,15 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
     - [Download PsTools Suite](https://technet.microsoft.com/en-us/sysinternals/bb896649)
     - [Download PortQry Command Line Port Scanner Version 2.0 utility](https://www.microsoft.com/en-us/download/details.aspx?id=17148)
-    
+
 2. Extract the contents of **PsTools** and **PortQry** to a directory on the computer hard drive.
 
 3.  Open an elevated command-line:
-     
+
     a. Click **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
-    
+
 4. Enter the following command and press **Enter**:
 
     ```
@@ -156,7 +156,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     ```
     Replace *HardDrivePath* with the path where the PortQry utility was extracted to:
     ![Image showing the command line](images/portqry.png)
-    
+
 6.	Verify that the output shows that the name is **resolved** and connection status is **listening**.
 
 7. Repeat the same steps for the remaining URLs with the following arguments:
@@ -171,4 +171,4 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 8. Verify that each URL shows that the name is **resolved** and the connection status is **listening**.
 
-If the any of the verification steps indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. 
+If the any of the verification steps indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
