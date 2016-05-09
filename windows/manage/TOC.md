@@ -6,6 +6,7 @@
 ### [New policies for Windows 10](new-policies-for-windows-10.md)
 ### [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
 ### [Bulk provisioning for Windows 10 devices](simple-bulk-provisioning.md)
+### [Diagnostics for devices managed by MDM](diagnostics-for-mdm-devices.md)
 ### [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 ### [Introduction to configuration service providers (CSPs)](how-it-pros-can-use-configuration-service-providers.md)
 ## [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
