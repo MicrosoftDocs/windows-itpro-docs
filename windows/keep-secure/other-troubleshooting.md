@@ -67,6 +67,32 @@ Event ID | Message | Resolution steps
 7 |  Windows Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | Ensure that the Windows Defender ATP endpoint has internet access, then run the onboarding script again.
 15 | Windows Advanced Threat Protection cannot start command channel with URL: _variable_ | Ensure that the Windows Defender ATP endpoint has internet access.
 
+ADDED
+
+### Ensure that the Windows Defender ATP service is enabled
+If the endpoints aren't reporting correctly, you might need to check that the Windows 10 Windows Defender Advanced Threat Protection service is enabled on the endpoint.
+
+Check the startup type from the command line:
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2.  Enter the following command and press **Enter**: sc qc sense
+
+  If the the service is running, then the result should look like the following screenshot:
+  ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
+
+3. If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**: sc config sense start=auto
+
+4.  A success message is displayed. Verify the change by entering the following command and press **Enter**: sc qc sense
+
+  TIL HERE
+
+
+FROM HERE DOWNWARDS IS FINE!
 Check the startup type in the services console:
 
 1.  Open the services console:
