@@ -27,11 +27,11 @@ You need to onboard to Windows Defender ATP before you can use the service.
 2.  Add endpoints to the service with System Center Configuration Manager, scheduled GP updates, or manual
     registry changes.-->
 
+<!--[Service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md) | Learn about managing user access to the Windows Defender ATP portal by assigning users to the Windows Defender ATP service application in Azure Active Directory (AAD).-->
+
 ## In this section
 Topic | Description 
 :---|:---
-<!--[Service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md) | Learn about managing user access to the Windows Defender ATP portal by assigning users to the Windows Defender ATP service application in Azure Active Directory (AAD).-->
-
 [Configure endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md) | You'll need to configure endpoints for it to report to the Windows Defender ATP service. Learn how you can use the configuration package to configure endpoints in your enterprise.
 [Configure proxy and Internet settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)| Enable communication with the Windows Defender ATP cloud service by configuring the proxy and Internet connectivity settings.
 [Additional configuration settings] (additional-configuration-windows-defender-advanced-threat-protection.md) | Learn how to configure settings for sample sharing used in the deep analysis feature.
