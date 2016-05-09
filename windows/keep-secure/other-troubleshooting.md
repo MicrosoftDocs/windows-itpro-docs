@@ -22,7 +22,19 @@ You might need to troubleshoot the onboarding process if you encounter issues.
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md), then this might indicate endpoint onboarding or a connectivity issue that you need to address.
 
+Go through the following verification topics to address the issue:
+- Ensure that the endpoint is onboarded successfully
+- Ensure that the Windows Defender ATP service is enabled
+- Ensure that the telemetry and diagnostics service is enabled
+- Ensure that the Windows Defender ATP endpoint has internet connection
 
+
+
+
+
+
+
+**Ensure that telemetry and diagnostics service is enabled**
 If the endpoints aren't reporting correctly, you might need to check that the Windows 10 telemetry and diagnostics service is enabled on the endpoint. The service may have been disabled by other programs or user configuration changes.
 
 You will need to check the startup type and verify that the service is running. 
@@ -57,3 +69,43 @@ There are two ways to check the startup type for the service: from the command l
     ```
     sc qc diagtrack
     ```
+**Check the startup type in the services console:**
+
+1.  Open the services console:
+
+    a. Click **Start** and type **services**. Press **Enter** to open the console.
+
+2.  Scroll through the list of services until you find **Connected User Experiences and Telemetry**. 
+
+3.  Check the **Startup type** column - the service should be set as **Automatic**.
+
+ASK ALON HOW SET TO AUTOMATIC IF IT'S NOT SET FROM THE CONSOLE.
+
+**Check that the service is running from the command line**
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+    a.  Click **Start** and type **cmd**.
+
+    b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2.  Enter the following command and press **Enter**.
+
+    ```
+    sc query diagtrack
+    ```
+3. If the service is running, the result should look like the following:
+
+    ![Result of the sc query command for sc query diagtrack](images/windefatp-sc-query-diagtrack.png)
+    
+4. If the service STATE is not set to RUNNING, then you'll need to enter the following command and press **Enter**:
+
+    ```
+    sc start diagtrack
+    ```
+
+5. A success message is displayed. Verify the change by entering the following command and press **Enter**:
+
+    ```
+    sc query diagtrack
+    ```    
