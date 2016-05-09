@@ -155,9 +155,9 @@ When this policy setting is enabled, it overrides the **User Account Control: Be
 | Administrator policy setting | Enabled | Disabled |
 | - | - | - |
 | **Prompt for credentials on the secure desktop** | The prompt appears on the secure desktop. | The prompt appears on the secure desktop. |
-| **Prompt for consent on the secure desktop ** | The prompt appears on the secure desktop. | The prompt appears on the secure desktop. |
+| **Prompt for consent on the secure desktop** | The prompt appears on the secure desktop. | The prompt appears on the secure desktop. |
 | **Prompt for credentials** | The prompt appears on the secure desktop. | The prompt appears on the interactive user's desktop. |
-| **Prompt for consent ** | The prompt appears on the secure desktop. | The prompt appears on the interactive user's desktop. |
+| **Prompt for consent** | The prompt appears on the secure desktop. | The prompt appears on the interactive user's desktop. |
 | **Prompt for consent for non-Windows binaries** | The prompt appears on the secure desktop. | The prompt appears on the interactive user's desktop. |
 
 When this policy setting is enabled, it overrides the **User Account Control: Behavior of the elevation prompt for standard users** policy setting. The following table describes the behavior of the elevation prompt for each of the standard user policy settings when the **User Account Control: Switch to the secure desktop when prompting for elevation** policy setting is enabled or disabled.
