@@ -2,7 +2,7 @@
 title: Minimum requirements for Windows Defender Advanced Threat Protection
 description: Minimum network and data storage configuration, endpoint hardware and software requirements, and deployment channel requirements for Windows Defender ATP.
 keywords: minimum requirements, Windows Defender Advanced Threat Protection minimum requirements, network and data storage, endpoint, endpoint configuration, deployment channel
-search.product: eADQiWindows 10XVcnh 
+search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,9 +24,9 @@ There are some minimum requirements for onboarding your network and endpoints.
 Your organization must use Azure Active Directory (AAD) to manage users. AAD is used during
 service onboarding to manage user-based access to the [Windows Defender ATP portal](https://seville.windows.com/).
 
-If you’d like help with using AAD to set up user access, contact the
+<!--If you’d like help with using AAD to set up user access, contact the
 [Windows Defender ATP Yammer group](https://www.yammer.com/wsscengineering/\#/threads/inGroup?type=in\_group&feedId=7108776&view=all)
-or email [winatp@microsoft.com](mailto:winatp@microsoft.com).
+or email [winatp@microsoft.com](mailto:winatp@microsoft.com).-->
 
 When you run the onboarding wizard for the first time, you must choose
 where your Windows Defender ATP-related information is stored: in either
@@ -65,9 +65,8 @@ manual registry changes.
 The following describes the minimum operating system or software version
 required for each deployment channel.
 
-Deployment channel | Minimum server requirements 
+Deployment channel | Minimum server requirements
 :---|:---
 Group Policy settings | Windows Server 2008 R2
 System Center Configuration Manager | SCCM 2012
 Manual registry modifications | No minimum requirements
-
