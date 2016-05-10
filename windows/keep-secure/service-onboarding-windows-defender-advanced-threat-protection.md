@@ -22,7 +22,7 @@ You have to assign users to the Windows ATP Service application in Azure Active 
 
 **Manage user access to the Windows Defender ATP portal**:
 
-1.  When you first go to the [Windows Defender ATP portal](https://seville.windows.com/) and your directory does not
+1.  When you first go to the [Windows Defender ATP portal](https://securitycenter.windows.com/) and your directory does not
     have users assigned to the Windows ATP Service application, you will
     be directed to open the [Microsoft Azure Dashboard](https://portal.azure.com) to manage user access.
 
@@ -105,7 +105,7 @@ You have to assign users to the Windows ATP Service application in Azure Active 
 
     > **Note**&nbsp;&nbsp; You need to assign roles for every user in your organization that requires access to the Windows Defender ATP portal. You can assign roles at any time by going to the Azure Management Portal, clicking **Active Directory**, and then finding your directory in the list and following the steps above.
 
-When you have finished assigning roles, return to the [Windows Defender ATP portal](https://seville.windows.com) and refresh the
+When you have finished assigning roles, return to the [Windows Defender ATP portal](https://securitycenter.windows.com) and refresh the
 page.
 
 Follow the steps in the onboarding wizard to complete the onboarding process.

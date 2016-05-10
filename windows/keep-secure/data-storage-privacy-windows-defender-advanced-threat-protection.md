@@ -6,7 +6,6 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: DulceMV
 ---
 
 # Windows Defender ATP data storage and privacy

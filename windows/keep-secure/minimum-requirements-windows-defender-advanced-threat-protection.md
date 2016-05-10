@@ -22,7 +22,7 @@ There are some minimum requirements for onboarding your network and endpoints.
 
 ### Network and data storage and configuration requirements
 Your organization must use Azure Active Directory (AAD) to manage users. AAD is used during
-service onboarding to manage user-based access to the [Windows Defender ATP portal](https://seville.windows.com/).
+service onboarding to manage user-based access to the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 
 <!--If you’d like help with using AAD to set up user access, contact the
 [Windows Defender ATP Yammer group](https://www.yammer.com/wsscengineering/\#/threads/inGroup?type=in\_group&feedId=7108776&view=all)

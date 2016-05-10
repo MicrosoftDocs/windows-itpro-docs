@@ -87,7 +87,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
-2. Enter the following command and press **Enter**: 
+2. Enter the following command and press **Enter**:
   ```
   sc qc sense
   ```
@@ -95,11 +95,11 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
   ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
 
-3. If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**: 
+3. If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**:
   ```
   sc config sense start=auto
   ```
-4.  A success message is displayed. Verify the change by entering the following command and press **Enter**: 
+4.  A success message is displayed. Verify the change by entering the following command and press **Enter**:
   ```
   sc qc sense
   ```
@@ -112,19 +112,19 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
-2. Enter the following command and press **Enter**: 
+2. Enter the following command and press **Enter**:
   ```
   sc query sense
   ```
   If the service is running, the result should look like the following screenshot:
-  
+
   ![Result of the sc query sense command](images/sc-query-sense-running.png)
-  
-3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**: 
+
+3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**:
   ```
   sc start sense
   ```
-4.  A success message is displayed. Verify the change by entering the following command and press **Enter**: 
+4.  A success message is displayed. Verify the change by entering the following command and press **Enter**:
   ```
   sc qc sense
   ```
@@ -144,24 +144,24 @@ There are two ways to check the startup type for the service: from the command l
 
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
-2.  Enter the following command and press **Enter**: 
+2.  Enter the following command and press **Enter**:
   ```
   sc qc diagtrack
   ```
   If the service is enabled, then the result should look like the following screenshot:
-  
+
   ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
-4. If the **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**: 
+4. If the **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**:
   ```
   sc config diagtrack start=auto
   ```
 
-5. A success message is displayed. Verify the change by entering the following command and press **Enter**: 
+5. A success message is displayed. Verify the change by entering the following command and press **Enter**:
   ```
   sc qc diagtrack
   ```
-  
+
 **Check the startup type in the services console**:
 
 1.  Open the services console:
@@ -184,20 +184,20 @@ There are two ways to check the startup type for the service: from the command l
 
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
-2.  Enter the following command and press **Enter**: 
+2.  Enter the following command and press **Enter**:
   ```
   sc query diagtrack
   ```
   If the service is running, the result should look like the following screenshot:
-  
+
   ![Result of the sc query command for sc query diagtrack](images/windefatp-sc-query-diagtrack.png)
 
-3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**: 
+3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**:
   ```
   sc start diagtrack
   ```
 
-4. A success message is displayed. Verify the change by entering the following command and press **Enter**: 
+4. A success message is displayed. Verify the change by entering the following command and press **Enter**:
   ```
   sc query diagtrack
   ```
@@ -230,14 +230,14 @@ If you don't see any users in the [Azure Management Portal](https://manage.windo
 
 4.  Select the type of user and enter their details. There might be multiple steps in the **Add user** dialog box depending on the type of user. When you're done, click **Complete** ![Check icon](images/check-icon.png) or **OK**.
 
-5.  Continue to add users. They will now appear in the **Users** section of the **Windows ATP Service** application. You must assign the user a role before they can access the [Windows Defender ATP portal](https://seville.windows.com/).
+5.  Continue to add users. They will now appear in the **Users** section of the **Windows ATP Service** application. You must assign the user a role before they can access the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 
 ## Manage access for all users in Azure Active Directory
 If you remove access for all users to the Windows ATP Service application (by clicking Manage access), you will not see the application in the list of applications in your directory in the [Azure Management Portal](https://manage.windowsazure.com/).
 
 Log in to the application in the Azure Management Portal again:
 
-1.  Sign in to the [Windows Defender ATP portal](https://seville.windows.com/) with the user account you want to give access to.
+1.  Sign in to the [Windows Defender ATP portal](https://securitycenter.windows.com/) with the user account you want to give access to.
 
 2.  Confirm that you have signed in with the correct details, and click **Accept**.
 
@@ -246,7 +246,7 @@ Log in to the application in the Azure Management Portal again:
 
 ## Review events and errors on endpoints with Event Viewer
 
-You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/en-US/library/aa745633(v=bts.10).aspx) on individual endpoints, or check the status of machines from the [Windows Defender ATP portal](https://seville.windows.com/).
+You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/en-US/library/aa745633(v=bts.10).aspx) on individual endpoints, or check the status of machines from the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 
 For example, if endpoints are not appearing in the **Machines view** list, you might need to look for event IDs on the endpoints.
 
@@ -263,7 +263,7 @@ For example, if endpoints are not appearing in the **Machines view** list, you m
 
 <table>
 <tbody style="vertical-align:top;">
-<tr> 
+<tr>
 <th>Event ID</th>
 <th>Message</th>
 <th>Description</th>
@@ -485,4 +485,3 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
 - [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
-

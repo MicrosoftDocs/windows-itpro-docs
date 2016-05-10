@@ -20,7 +20,7 @@ author: DulceMV
 
 Enterprise security teams can use the portal to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
 
-You can use the [Windows Defender ATP portal](https://seville.windows.com/) to:
+You can use the [Windows Defender ATP portal](https://securitycenter.windows.com/) to:
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses
 - Change Windows Defender ATP settings, including time zone and alert suppression rules

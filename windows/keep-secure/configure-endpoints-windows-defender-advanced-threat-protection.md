@@ -21,15 +21,15 @@ You can use a Group Policy (GP) configuration package or an automated script to 
 
 ## Configure with System Center Configuration Manager (SCCM)
 
-1. Open the SCCM configuration package .zip file (*WindowsATPOnboardingPackage_ConfigurationManager.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com): 
+1. Open the SCCM configuration package .zip file (*WindowsATPOnboardingPackage_ConfigurationManager.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. Click **Client onboarding** on the **Navigation pane**.
 
-    b. Select **SCCM**, click **Download package**, and save the .zip file. 
+    b. Select **SCCM**, click **Download package**, and save the .zip file.
 
 2.	Copy the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package.
 
-3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic. 
+3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
 
 4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
 
@@ -41,7 +41,7 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 > **Note**&nbsp;&nbsp; To use GP updates to deploy the package, you must be on Windows Server 2008 R2 or later. The endpoints must be running Windows 10 TAP.
 
-1.  Open the GP configuration package .zip file (*WindowsATPOnboardingPackage_GroupPolicy.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://seville.windows.com):
+1.  Open the GP configuration package .zip file (*WindowsATPOnboardingPackage_GroupPolicy.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a.  Click **Client onboarding** on the **Navigation pane**.
 

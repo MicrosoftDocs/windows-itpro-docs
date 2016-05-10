@@ -25,7 +25,7 @@ Monitoring can be done directly on the portal, or by using System Center Configu
 
 ## Monitor with the portal
 
-1.  Go to the [Windows Defender ATP portal](https://seville.windows.com).
+1.  Go to the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 
 2.  Click **Machines view**.
 
@@ -48,7 +48,7 @@ Monitoring with SCCM consists of two parts:
 
 2. Click **Overview** and then **Deployments**.
 
-3. Click on the deployment with the package name. 
+3. Click on the deployment with the package name.
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 

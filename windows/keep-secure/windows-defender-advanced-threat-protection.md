@@ -25,7 +25,7 @@ Windows Defender ATP uses the following combination of technology built into Win
     collect and process behavioral signals from the operating system
     (for example, process, registry, file, and network communications)
     and sends this telemetry to your private, isolated, cloud instance of Windows Defender ATP.
-    
+
 
 -   **Cloud security analytics**: Leveraging big-data, machine-learning, and
     unique Microsoft optics across the Windows ecosystem (such as the
@@ -49,7 +49,7 @@ components:
 Endpoint investigation capabilities in this service let you drill down
 into security alerts and understand the scope and nature of a potential
 breach. You can submit files for deep analysis and receive the results
-without leaving the [Windows Defender ATP portal](https://seville.windows.com).
+without leaving the [Windows Defender ATP portal](https://securitycenter.windows.com).
 
 Windows Defender ATP works with existing Windows security technologies
 on endpoints, such as Windows Defender, AppLocker, and Device Guard. It
