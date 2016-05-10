@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender ATP proxy and Internet connectivity settings
+title: Configure Windows Defender ATP endpoint proxy and Internet connectivity settings
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings
 search.product: eADQiWindows 10XVcnh
@@ -10,7 +10,7 @@ author: mjcaparas
 ---
 
 
-# Configure proxy and Internet connectivity settings
+# Configure Windows Defender ATP endpoint proxy and Internet connectivity settings
 
 **Applies to:**
 
@@ -24,11 +24,11 @@ The embedded Windows Defender ATP sensor runs in system context using the LocalS
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
-- Configure Web Proxy Auto Detect (WPAD) settings and configure Windows to automatically detect the proxy server 
+- Configure Web Proxy Auto Detect (WPAD) settings and configure Windows to automatically detect the proxy server
 
 - Configure the proxy server manually using Netsh
 
-## Configure Web Proxy Auto Detect (WPAD) settings and proxy server 
+## Configure Web Proxy Auto Detect (WPAD) settings and proxy server
 
 Configure WPAD in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings.
 

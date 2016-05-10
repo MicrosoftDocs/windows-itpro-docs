@@ -21,8 +21,8 @@ There are some minimum requirements for onboarding your network and endpoints.
 ## Minimum requirements
 
 ### Network and data storage and configuration requirements
-Your organization must use Azure Active Directory (AAD) to manage users. AAD is used during
-service onboarding to manage user-based access to the [Windows Defender ATP portal](https://securitycenter.windows.com/).
+<!---Your organization must use Azure Active Directory (AAD) to manage users. AAD is used during
+service onboarding to manage user-based access to the [Windows Defender ATP portal](https://securitycenter.windows.com/).--->
 
 <!--If you’d like help with using AAD to set up user access, contact the
 [Windows Defender ATP Yammer group](https://www.yammer.com/wsscengineering/\#/threads/inGroup?type=in\_group&feedId=7108776&view=all)
@@ -47,12 +47,11 @@ TAP.
 > **Note**&nbsp;&nbsp; Endpoints that are running Windows
 Server and mobile versions of Windows are not supported.
 
-Internet connectivity on endpoints is also required. See the
-[Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-section for additional proxy configuration settings.
+Internet connectivity on endpoints is also required. See
+[Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+ additional proxy configuration settings.
 
-Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10 TAP, but if it has been
-disabled you can turn it on by following the instructions in the
+Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10 TAP, but if it has been disabled you can turn it on by following the instructions in the
 [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section.
 
 ### Deployment channel operating system requirements
@@ -69,4 +68,4 @@ Deployment channel | Minimum server requirements
 :---|:---
 Group Policy settings | Windows Server 2008 R2
 System Center Configuration Manager | SCCM 2012
-Manual registry modifications | No minimum requirements
+<!--Manual registry modifications | No minimum requirements-->
