@@ -86,7 +86,7 @@ IE opens the app’s website.
 ## How does IE decide which ActiveX controls to block?
 IE uses Microsoft’s versionlist.xml or versionlistWin7.xml file to determine whether an ActiveX control should be stopped from loading. These files are updated with newly-discovered out-of-date ActiveX controls, which IE automatically downloads to your local copy of the file.
 
-You can see your copy of the file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml`, or you can view Microsoft’s version, based on your operating system and version of IE, here:
+You can see your copy of the file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml` or you can view Microsoft’s version, based on your operating system and version of IE, here:
 - [Internet Explorer 11 on Windows 7 SP1 or Windows Server 2008 R2](http://go.microsoft.com/fwlink/p/?LinkId=403864)
 - [All other configurations](https://go.microsoft.com/fwlink/p/?LinkId=403864)
 
