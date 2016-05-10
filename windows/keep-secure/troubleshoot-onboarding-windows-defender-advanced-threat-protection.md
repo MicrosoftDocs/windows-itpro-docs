@@ -18,8 +18,9 @@ author: mjcaparas
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 You might need to troubleshoot the onboarding process if you encounter issues.
+This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, common error codes encountered during onboarding, and steps for resolving problems with Azure Active Directory (AAD). 
 
-## Endpoints not reporting to the service correctly
+## Endpoints are not reporting to the service correctly
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after 20 minutes, it might indicate an endpoint onboarding or a connectivity problem.
 
@@ -42,13 +43,17 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
 3. From the **Run** dialog box, type **regedit** and press **Enter**.
 
-4. In the **Registry Editor** navigate to the Status key under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection**.
+4. In the **Registry Editor** navigate to the Status key under 
+
+   ```
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection
+```
 
 5. Check that the **OnboardingState** value is set to **1**.
 
   ![Image of OnboardingState status in Registry Editor](images/onboardingstate.png)
 
-  If the **OnboardingState** value is not set to **1**, follow the instructions on **Identifying and addressing onboarding issues**.
+  If the **OnboardingState** value is not set to `1`, follow the instructions on **Identifying and addressing onboarding issues**.
 
 **Identifying and addressing onboarding errors**:   
 
@@ -77,7 +82,7 @@ Event ID | Message | Resolution steps
 
 
 ### Ensure that the Windows Defender ATP service is enabled
-If the endpoints aren't reporting correctly, you might need to check that the Windows 10 Windows Defender Advanced Threat Protection service is enabled on the endpoint.
+If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service is enabled on the endpoint. You can use the SC comman line program for querying and managing the service.
 
 **Check the startup type from the command line**:
 
@@ -95,7 +100,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
   ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
 
-3. If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**:
+3. If the service `START\_TYPE` is not set to `AUTO\_START`, then you'll need to enter the following command and press **Enter**:
   ```
   sc config sense start=auto
   ```
@@ -212,36 +217,6 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.    
 
-
-
-
-## Add users to an Azure Active Directory
-If you don't see any users in the [Azure Management Portal](https://manage.windowsazure.com/) during the service onboarding stage, you might need to add users to the directory first.
-
-1.  Go to the Azure Management Portal and select the directory you want to manage.
-
-2.  Click **Users** from the top menu bar.
-
-    ![Example Azure Management Portal organization](images/contoso-users.png)
-
-3.  Click **Add user** from the menu bar at the bottom.
-
-    ![Add user menu](images/add-user.png)
-
-4.  Select the type of user and enter their details. There might be multiple steps in the **Add user** dialog box depending on the type of user. When you're done, click **Complete** ![Check icon](images/check-icon.png) or **OK**.
-
-5.  Continue to add users. They will now appear in the **Users** section of the **Windows ATP Service** application. You must assign the user a role before they can access the [Windows Defender ATP portal](https://securitycenter.windows.com/).
-
-## Manage access for all users in Azure Active Directory
-If you remove access for all users to the Windows ATP Service application (by clicking Manage access), you will not see the application in the list of applications in your directory in the [Azure Management Portal](https://manage.windowsazure.com/).
-
-Log in to the application in the Azure Management Portal again:
-
-1.  Sign in to the [Windows Defender ATP portal](https://securitycenter.windows.com/) with the user account you want to give access to.
-
-2.  Confirm that you have signed in with the correct details, and click **Accept**.
-
-3.  Go to the [Azure Management Portal](https://manage.windowsazure.com/) and navigate to your directory. You will see the **Windows ATP Service** application in the **Applications** section again.
 
 
 ## Review events and errors on endpoints with Event Viewer
@@ -478,6 +453,34 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tbody>
 </table>
 
+
+## There are no users in the Azure Active Directory
+If you don't see any users in the [Azure Management Portal](https://manage.windowsazure.com/) during the service onboarding stage, you might need to add users to the directory first.
+
+1.  Go to the Azure Management Portal and select the directory you want to manage.
+
+2.  Click **Users** from the top menu bar.
+
+    ![Example Azure Management Portal organization](images/contoso-users.png)
+
+3.  Click **Add user** from the menu bar at the bottom.
+
+    ![Add user menu](images/add-user.png)
+
+4.  Select the type of user and enter their details. There might be multiple steps in the **Add user** dialog box depending on the type of user. When you're done, click **Complete** ![Check icon](images/check-icon.png) or **OK**.
+
+5.  Continue to add users. They will now appear in the **Users** section of the **Windows ATP Service** application. You must assign the user a role before they can access the [Windows Defender ATP portal](https://securitycenter.windows.com/).
+
+## The Windows Defender ATP app doesn't appear in the Azure Management Portal
+If you remove access for all users to the Windows ATP Service application (by clicking Manage access), you will not see the application in the list of applications in your directory in the [Azure Management Portal](https://manage.windowsazure.com/).
+
+Log in to the application in the Azure Management Portal again:
+
+1.  Sign in to the [Windows Defender ATP portal](https://securitycenter.windows.com/) with the user account you want to give access to.
+
+2.  Confirm that you have signed in with the correct details, and click **Accept**.
+
+3.  Go to the [Azure Management Portal](https://manage.windowsazure.com/) and navigate to your directory. You will see the **Windows ATP Service** application in the **Applications** section again.
 
 
 ## Related topics

@@ -13,10 +13,12 @@ ms.sitesec: library
 **Applies to:**
 
 - Windows 10 Insider Preview
+- Windows Defender Advanced Threat Protection
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Windows Defender ATP.
+> **Note**&nbsp;&nbsp;This document covers the information specific to the Windows Defender ATP service. Other data shared and stored by Windows Defender and Windows 10 is covered under the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). See the [Windows 10 privacy FAQ for more information](http://windows.microsoft.com/en-au/windows-10/windows-privacy-faq). 
 
 ## What data does Windows Defender ATP collect?
 
@@ -35,12 +37,12 @@ Microsoft does not mine your data for advertising or for any other purpose other
 
 ## Do I have the flexibility to select where to store my data?
 
-Data for this new service is stored in Microsoft Azure datacenters in the United States and European Union based on the geolocation properties subject to the relevant preview program you may be able to specify your preferred geolocation when you onboard to the service. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations in which your data will reside. Microsoft will not transfer the data from the specified geolocation except in specific circumstances during the preview stage.
+Data for this new service is stored in Microsoft Azure datacenters in the United States and European Union based on the geolocation properties. Subject to the relevant preview program you may be able to specify your preferred geolocation when you onboard to the service. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations in which your data will reside. Microsoft will not transfer the data from the specified geolocation except in specific circumstances during the preview stage.
 
 ## Is my data isolated from other customer data?
 Yes. The new cloud service provides appropriate segregation at a number of levels, such as isolation of files, configurations, and telemetry data. Aside from data access authentication, simply keeping different data appropriately segregated provides well-recognized protection.
 
-## How do you prevent malicious insider activities and abuse of high privilege roles?
+## How does Microsoft prevent malicious insider activities and abuse of high privilege roles?
 
 Microsoft developers and administrators have, by design, been given sufficient privileges to carry out their assigned duties to operate and evolve the service. Microsoft deploys combinations of preventive, detective, and reactive controls including the following mechanisms to help protect against unauthorized developer and/or administrative activity:
 
@@ -54,11 +56,11 @@ Additionally, Microsoft conducts background verification checks of certain opera
 No. Customer data is isolated from other customers and is not shared. However, insights on the data resulting from Microsoft processing, and which don’t contain any customer specific data, might be shared with other customers. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
 
 ## How long will Microsoft store my data? What is Microsoft’s data retention policy?
-Your data privacy is one of our key commitments for the cloud. For this service, at contract termination or expiration, your data will be erased from Microsoft’s systems to make it unrecoverable after 90 days from contract termination or expiration.
+Your data privacy is one of Microsoft's key commitments for the cloud. For this service, at contract termination or expiration, your data will be erased from Microsoft’s systems to make it unrecoverable after 90 days (from contract termination or expiration).
 
 ## Can Microsoft help us maintain regulatory compliance?
-By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run, including this new Microsoft cloud service.
 Microsoft provides customers with detailed information about Microsoft's security and compliance programs, including audit reports and compliance packages, to help customers assess Windows Defender ATP services against their own legal and regulatory requirements. Windows Defender ATP has a roadmap for obtaining national, regional and industry-specific certifications, starting with ISO 27001. The service is designed, implemented, and maintained according to the compliance and privacy principles of ISO 27001, as well as Microsoft’s compliance standards.
+By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run, including this new Microsoft cloud service.
 
 ## Is there a difference between how Microsoft handles data for the preview programs and for General Availability?
 Subject to the preview program you are in, you could be asked to choose to store your data in a datacenter either in Europe or United States. Your data will not be copied or moved outside of the datacenter you choose, except in the following specific circumstance:
