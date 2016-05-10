@@ -46,4 +46,4 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 
 3.  Verify that the status for the Application Identity service is **Running**.
 
-Starting with Windows 10, the Application Identity service is now a protected process. Because of this, you can no longer manually set the serice **Startup type** to **Automatic**. 
+Starting with Windows 10, the Application Identity service is now a protected process. Because of this, you can no longer manually set the service **Startup type** to **Automatic**. 
