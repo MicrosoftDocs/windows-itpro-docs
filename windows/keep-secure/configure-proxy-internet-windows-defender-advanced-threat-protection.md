@@ -24,11 +24,13 @@ The embedded Windows Defender ATP sensor runs in system context using the LocalS
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
-- Configure Web Proxy Auto Detect (WPAD) settings in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings
+- Configure Web Proxy Auto Detect (WPAD) settings and configure Windows to automatically detect the proxy server 
 
 - Configure the proxy server manually using Netsh
 
-## Configure Web Proxy Auto Detect (WPAD) settings in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings
+## Configure Web Proxy Auto Detect (WPAD) settings and proxy server 
+
+Configure WPAD in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings.
 
 Enable the **Automatically detect settings** option in the Windows Proxy settings so that WinHTTP can use the WPAD feature to locate a proxy server.
 
