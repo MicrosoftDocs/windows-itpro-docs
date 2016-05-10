@@ -59,8 +59,6 @@ antimalware products.
 Windows Defender ATP leverages Microsoft technology and expertise to
 detect sophisticated cyber-attacks, providing:
 
-![Image to show the protection service that Windows Defender ATP provides](images/value-prop.png)
-
 - Behavior-based, cloud-powered, advanced attack detection
 
     Finds the attacks that made it past all other defenses (post breach detection),provides actionable, correlated alerts for known and unknown adversaries trying to hide their activities on endpoints.
@@ -69,7 +67,7 @@ detect sophisticated cyber-attacks, providing:
 
     Easily investigate the scope of breach or suspected behaviors on any machine through a rich machine timeline. File, URLs, and network connection inventory across the network. Gain additional insight using deep collection and analysis (“detonation”) for any file or URLs.
 
-- Built in threat intel knowledge base
+- Built in unique threat intelligence knowledge base
 
     Unparalleled threat optics provides actor details and intent context for every threat intel-based detection – combining first and third-party intelligence sources.
 

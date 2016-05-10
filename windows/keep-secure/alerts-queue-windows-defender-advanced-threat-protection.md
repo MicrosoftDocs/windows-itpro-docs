@@ -45,7 +45,7 @@ There are three mechanisms to pivot the queue against:
 
 2. Filter alerts by their **Severity** by opening the drop-down menu in the **Filter by** field and selecting one or more of the check boxes:
 
-  - High (Red) - Threats often associated with APT. These alerts pose a high risk due to the severity of the damage they might inflict on endpoints.
+  - High (Red) - Threats often associated with advanced persistent threat (APT). These alerts pose a high risk due to the severity of the damage they might inflict on endpoints.
   - Medium (Orange) - Threats considered to be abnormal or suspicious in nature such as anomalous registry modifications and loading of executable files.
   - Low (Yellow) - Threats associated with prevalent malware and hack-tools that pose a lower risk to endpoints.
 
