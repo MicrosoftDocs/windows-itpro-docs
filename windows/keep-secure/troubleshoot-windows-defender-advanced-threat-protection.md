@@ -16,7 +16,7 @@ author: mjcaparas
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-This section addresses issues that might arise as you use the service.
+This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
 
 ###Server error - Access is denied due to invalid credentials
 If you encounter a server error when trying to access the service, you’ll need to change your browser cookie settings.

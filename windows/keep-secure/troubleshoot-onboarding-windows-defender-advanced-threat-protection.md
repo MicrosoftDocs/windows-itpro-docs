@@ -17,8 +17,8 @@ author: mjcaparas
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-You might need to troubleshoot the onboarding process if you encounter issues.
-This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, common error codes encountered during onboarding, and steps for resolving problems with Azure Active Directory (AAD). 
+You might need to troubleshoot the Windows Defender Advanced Threat Protection boarding process if you encounter issues.
+This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, common error codes encountered during onboarding, and steps for resolving problems with Azure Active Directory (AAD).
 
 ## Endpoints are not reporting to the service correctly
 
@@ -33,7 +33,7 @@ Go through the following verification topics to address this issue:
 
 
 ### Ensure that the endpoint is onboarded successfully
-If the endpoints aren't reporting correctly, you might need to check that the Windows Defender Advanced Threat Protection service was successfully onboarded on the endpoint.
+If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service was successfully onboarded on the endpoint.
 
 **Check the onboarding state in Registry**:
 
@@ -43,7 +43,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
 3. From the **Run** dialog box, type **regedit** and press **Enter**.
 
-4. In the **Registry Editor** navigate to the Status key under 
+4. In the **Registry Editor** navigate to the Status key under
 
    ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection

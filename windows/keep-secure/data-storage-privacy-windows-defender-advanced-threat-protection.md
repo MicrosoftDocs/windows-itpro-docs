@@ -18,7 +18,7 @@ ms.sitesec: library
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Windows Defender ATP.
-> **Note**&nbsp;&nbsp;This document covers the information specific to the Windows Defender ATP service. Other data shared and stored by Windows Defender and Windows 10 is covered under the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). See the [Windows 10 privacy FAQ for more information](http://windows.microsoft.com/en-au/windows-10/windows-privacy-faq). 
+> **Note**&nbsp;&nbsp;This document covers the information specific to the Windows Defender ATP service. Other data shared and stored by Windows Defender and Windows 10 is covered under the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). See the [Windows 10 privacy FAQ for more information](http://windows.microsoft.com/en-au/windows-10/windows-privacy-faq).
 
 ## What data does Windows Defender ATP collect?
 

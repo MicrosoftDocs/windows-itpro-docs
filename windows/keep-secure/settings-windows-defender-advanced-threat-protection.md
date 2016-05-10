@@ -24,7 +24,7 @@ The aspect of time is important in the assessment and analysis of perceived and 
 
 Cyberforensic investigations often rely on time stamps to piece together the sequence of events. It’s important that your system reflects the correct time zone settings.
 
-Windows Defender ATP can display either Coordinated Universal Time (UTC) or local time.
+Windows Defender Advanced Threat Protection can display either Coordinated Universal Time (UTC) or local time.
 
 Your current time zone setting is shown in the Windows Defender ATP menu. You can change the displayed time zone in the **Settings** menu ![Settings icon](images/settings.png).
 

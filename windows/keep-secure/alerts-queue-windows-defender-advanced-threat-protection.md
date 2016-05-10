@@ -17,7 +17,7 @@ author: mjcaparas
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-As a security operations team member, you can manage Windows Defender ATP alerts as part of your routine activities. Alerts will appear in the respective queues according to their current status.
+As a security operations team member, you can manage Windows Defender Advanced Threat Protection alerts as part of your routine activities. Alerts will appear in the respective queues according to their current status.
 
 To see a list of alerts, click any of the queues under the **Alerts queue** option in the navigation pane.
 

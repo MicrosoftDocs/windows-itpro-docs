@@ -16,7 +16,7 @@ ms.sitesec: library
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Windows Defender ATP notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
+Windows Defender Advanced Threat Protection notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
 
 See the [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts) topic for more details on how to investigate alerts.
 
@@ -138,4 +138,3 @@ Changes are indicated by a clock icon (![The changes icon looks like an analog c
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-

@@ -21,7 +21,7 @@ The **Dashboard** displays a snapshot of:
 - The latest active alerts on your network
 - Machines reporting
 - Top machines with active alerts
-- The overall status of Windows Defender ATP for the past 30 days
+- The overall status of Windows Defender Advanced Threat Protection for the past 30 days
 - Machines with active malware detections
 
 You can explore and investigate alerts and machines to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.

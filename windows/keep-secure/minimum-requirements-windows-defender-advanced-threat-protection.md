@@ -29,7 +29,7 @@ service onboarding to manage user-based access to the [Windows Defender ATP port
 or email [winatp@microsoft.com](mailto:winatp@microsoft.com).-->
 
 When you run the onboarding wizard for the first time, you must choose
-where your Windows Defender ATP-related information is stored: in either
+where your Windows Defender Advanced Threat Protection-related information is stored: in either
 a European or United States datacenter.
 
 > **Notes**&nbsp;&nbsp;
@@ -49,7 +49,7 @@ Server and mobile versions of Windows are not supported.
 
 Internet connectivity on endpoints is also required. See
 [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
- additional proxy configuration settings.
+ for additional proxy configuration settings.
 
 Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10 TAP, but if it has been disabled you can turn it on by following the instructions in the
 [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section.

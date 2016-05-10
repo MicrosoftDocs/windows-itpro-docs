@@ -88,7 +88,7 @@ When you investigate a specific machine, you'll see:
 - **Alerts related to this machine**
 - **Machine timeline**
 
-The machine details, IP, and reporting sections display some attributes of the machine such as its name, domain, OS, IP address, and how long it's been reporting telemetry to the Windows Defender ATP service.
+The machine details, IP, and reporting sections display some attributes of the machine such as its name, domain, OS, IP address, and how long it's been reporting telemetry to the Windows Defender Advanced Threat Protection service.
 
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. This list is a simplified version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date that the alert was detected, a short description of the alert, the alert's severity, the alert's threat category, and the alert's status in the queue.
 

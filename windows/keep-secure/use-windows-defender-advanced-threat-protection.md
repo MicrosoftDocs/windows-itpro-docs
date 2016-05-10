@@ -26,7 +26,8 @@ A typical security breach investigation requires a member of a security operatio
 
 ![Flowchart describing the four stages of investigation](images/overview.png)
 
-Security operation teams can use Windows Defender ATP Portal to carry out this end-to-end process without having to leave the portal.
+Security operation teams can use Windows Defender Advanced Threat Protection portal to carry out this end-to-end process without having to leave the portal.
+
 Teams can monitor the overall status of enterprise endpoints from the **Dashboard**, gain insight on the various alerts, their category, when they were observed, and how long they’ve been in the network at a glance.
 
 ### In this section

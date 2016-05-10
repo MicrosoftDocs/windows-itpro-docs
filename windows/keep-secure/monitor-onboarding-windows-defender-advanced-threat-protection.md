@@ -17,7 +17,7 @@ author: mjcaparas
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-You can monitor the onboarding of the Windows Defender ATP service to ensure your endpoints are correctly configured and are sending telemetry reports.
+You can monitor the onboarding of the Windows Defender Advanced Threat Protection service to ensure your endpoints are correctly configured and are sending telemetry reports.
 
 You might need to monitor the onboarding if the package did not configure the registry correctly, or the reporting client did not start or execute correctly.
 
