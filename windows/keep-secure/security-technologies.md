@@ -2,20 +2,15 @@
 title: Security technologies (Windows 10)
 description: Learn more about the different security technologies that are available in Windows 10 and Windows 10 Mobile.
 ms.assetid: BFE2DE22-B0CE-465B-8CF6-28F64464DF08
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Security technologies
-
-
 Learn more about the different security technologies that are available in Windows 10 and Windows 10 Mobile.
-
 ## In this section
-
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -62,14 +57,6 @@ Learn more about the different security technologies that are available in Windo
 </tr>
 </tbody>
 </table>
-
  
-
  
-
  
-
-
-
-
-

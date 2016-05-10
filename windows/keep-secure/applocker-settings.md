@@ -2,23 +2,17 @@
 title: AppLocker settings (Windows 10)
 description: This topic for the IT professional lists the settings used by AppLocker.
 ms.assetid: 9cb4aa19-77c0-4415-9968-bd07dab86839
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # AppLocker settings
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional lists the settings used by AppLocker.
-
 The following table describes the settings and values used by AppLocker.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -61,19 +55,8 @@ The following table describes the settings and values used by AppLocker.
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [AppLocker technical reference](applocker-technical-reference.md)
-
  
-
  
-
-
-
-
-

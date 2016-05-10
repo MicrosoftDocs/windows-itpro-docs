@@ -2,36 +2,23 @@
 title: Audit policy change (Windows 10)
 description: Determines whether to audit every incident of a change to user rights assignment policies, audit policies, or trust policies.
 ms.assetid: 1025A648-6B22-4C85-9F47-FE0897F1FA31
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit policy change
-
-
 **Applies to**
-
 -   Windows 10
-
 Determines whether to audit every incident of a change to user rights assignment policies, audit policies, or trust policies.
-
 If you define this policy setting, you can specify whether to audit successes, audit failures, or not audit the event type at all. Success audits generate an audit entry when a change to user rights assignment policies, audit policies, or trust policies is successful. Failure audits generate an audit entry when a change to user rights assignment policies, audit policies, or trust policies fails.
-
 To set this value to **No auditing**, in the **Properties** dialog box for this policy setting, select the **Define these policy settings** check box and clear the **Success** and **Failure** check boxes.
-
 **Default:**
-
 -   Success on domain controllers.
-
 -   No auditing on member servers.
-
 ## Configure this audit setting
-
-
 You can configure this security setting under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -154,19 +141,8 @@ You can configure this security setting under Computer Configuration\\Windows Se
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Basic security audit policy settings](basic-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

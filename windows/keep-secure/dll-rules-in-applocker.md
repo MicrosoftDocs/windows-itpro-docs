@@ -2,29 +2,20 @@
 title: DLL rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the DLL rule collection.
 ms.assetid: a083fd08-c07e-4534-b0e7-1e15d932ce8f
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # DLL rules in AppLocker
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic describes the file formats and available default rules for the DLL rule collection.
-
 AppLocker defines DLL rules to include only the following file formats:
-
 -   .dll
-
 -   .ocx
-
 The following table lists the default rules that are available for the DLL rule collection.
-
 <table>
 <colgroup>
 <col width="25%" />
@@ -61,29 +52,14 @@ The following table lists the default rules that are available for the DLL rule 
 </tr>
 </tbody>
 </table>
-
  
-
 **Important**  
 If you use DLL rules, a DLL allow rule has to be created for each DLL that is used by all of the allowed apps
-
  
-
 **Caution**  
 When DLL rules are used, AppLocker must check each DLL that an app loads. Therefore, users may experience a reduction in performance if DLL rules are used.
-
  
-
 ## Related topics
-
-
 [Understanding AppLocker default rules](understanding-applocker-default-rules.md)
-
  
-
  
-
-
-
-
-

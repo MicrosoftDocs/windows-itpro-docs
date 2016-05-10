@@ -2,30 +2,20 @@
 title: Security Options (Windows 10)
 description: Provides an introduction to the settings under Security Options of the local security policies and links to information about each setting.
 ms.assetid: 405ea253-8116-4e57-b08e-14a8dcdca92b
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Security Options
-
-
 **Applies to**
-
 -   Windows 10
-
 Provides an introduction to the settings under **Security Options** of the local security policies and links to information about each setting.
-
 The **Security Options** contain the following groupings of security policy settings that allow you to configure the behavior of the local computer. Some of these policies can be included in a Group Policy Object and distributed over your organization.
-
 If you edit policy settings locally on a device, you will affect the settings on only that one device. If you configure the settings in a Group Policy Object (GPO), the settings apply to all devices that are subject to that GPO.
-
 For info about setting security policies, see [Configure security policy settings](how-to-configure-security-policy-settings.md).
-
 ## In this section
-
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -420,21 +410,9 @@ For info about setting security policies, see [Configure security policy setting
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Security policy settings reference](security-policy-settings-reference.md)
-
 [Security policy settings](security-policy-settings.md)
-
  
-
  
-
-
-
-
-

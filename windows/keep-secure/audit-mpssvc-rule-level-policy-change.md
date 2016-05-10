@@ -2,41 +2,26 @@
 title: Audit MPSSVC Rule-Level Policy Change (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit MPSSVC Rule-Level Policy Change, which determines whether the operating system generates audit events when changes are made to policy rules for the Microsoft Protection Service (MPSSVC.exe).
 ms.assetid: 263461b3-c61c-4ec3-9dee-851164845019
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit MPSSVC Rule-Level Policy Change
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit MPSSVC Rule-Level Policy Change**, which determines whether the operating system generates audit events when changes are made to policy rules for the Microsoft Protection Service (MPSSVC.exe).
-
 The Microsoft Protection Service, which is used by Windows Firewall, is an integral part of the computer’s threat protection against malware. The tracked activities include:
-
 -   Active policies when the Windows Firewall service starts.
-
 -   Changes to Windows Firewall rules.
-
 -   Changes to the Windows Firewall exception list.
-
 -   Changes to Windows Firewall settings.
-
 -   Rules ignored or not applied by the Windows Firewall service.
-
 -   Changes to Windows Firewall Group Policy settings.
-
 Changes to firewall rules are important for understanding the security state of the computer and how well it is protected against network attacks.
-
 Event volume: Low
-
 Default: Not configured
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -107,19 +92,8 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

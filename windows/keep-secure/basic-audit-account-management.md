@@ -2,42 +2,26 @@
 title: Audit account management (Windows 10)
 description: Determines whether to audit each event of account management on a device.
 ms.assetid: 369197E1-7E0E-45A4-89EA-16D91EF01689
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit account management
-
-
 **Applies to**
-
 -   Windows 10
-
 Determines whether to audit each event of account management on a device.
-
 Examples of account management events include:
-
 -   A user account or group is created, changed, or deleted.
-
 -   A user account is renamed, disabled, or enabled.
-
 -   A password is set or changed.
-
 If you define this policy setting, you can specify whether to audit successes, audit failures, or not audit the event type at all. Success audits generate an audit entry when any account management event succeeds. Failure audits generate an audit entry when any account management event fails. To set this value to **No auditing**, in the **Properties** dialog box for this policy setting, select the Define these policy settings check box and clear the **Success** and **Failure** check boxes.
-
 **Default:**
-
 -   Success on domain controllers.
-
 -   No auditing on member servers.
-
 ## Configure this audit setting
-
-
 You can configure this security setting by opening the appropriate policy under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -236,19 +220,8 @@ You can configure this security setting by opening the appropriate policy under 
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Basic security audit policy settings](basic-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-
