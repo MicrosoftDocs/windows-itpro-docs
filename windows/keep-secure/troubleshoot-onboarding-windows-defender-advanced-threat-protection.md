@@ -6,10 +6,10 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: iaanw
+author: mjcaparas
 ---
 
-# Troubleshoot Windows Defender Advanced Threat Protection onboarding issues two
+# Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
 
 **Applies to:**
 
@@ -27,7 +27,7 @@ Go through the following verification topics to address this issue:
 
 - [Ensure that the endpoint is onboarded successfully](#Ensure-that-the-endpoint-is-onboarded-successfully)
 - [Ensure that the Windows Defender ATP service is enabled](#Ensure-that-the-Windows-Defender-ATP-service-is-enabled)
-- [Ensure that the telemetry and diagnostics service is enabled](#Ensure-that-the-telemetry-and-diagnostics-service-is-enabled)
+- [Ensure that telemetry and diagnostics service is enabled](#Ensure-that-telemetry-and-diagnostics-service-is-enabled)
 - [Ensure that the Windows Defender ATP endpoint has internet connection](#Ensure-that-the-Windows-Defender-ATP-endpoint-has-internet-connection)
 
 
@@ -74,6 +74,7 @@ Event ID | Message | Resolution steps
 6 | Windows Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | Run the onboarding script again.
 7 |  Windows Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | Ensure that the Windows Defender ATP endpoint has internet access, then run the onboarding script again.
 15 | Windows Advanced Threat Protection cannot start command channel with URL: _variable_ | Ensure that the Windows Defender ATP endpoint has internet access.
+
 
 ### Ensure that the Windows Defender ATP service is enabled
 If the endpoints aren't reporting correctly, you might need to check that the Windows 10 Windows Defender Advanced Threat Protection service is enabled on the endpoint.
@@ -173,7 +174,7 @@ There are two ways to check the startup type for the service: from the command l
 
 3.  Check the **Startup type** column - the service should be set as **Automatic**.
 
-**ASK ALON HOW SET TO AUTOMATIC IF IT'S NOT SET FROM THE CONSOLE.**
+**ASK ALON HOW SET TO AUTOMATIC FROM THE CONSOLE.**
 
 **Check that the service is running from the command line**:
 
