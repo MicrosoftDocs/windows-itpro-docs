@@ -70,7 +70,9 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 </tbody>
 </table>
 
- 
+ ## Learn more
+
+[Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
 ## Related topics
 
