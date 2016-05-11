@@ -11,6 +11,13 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## May 2016
+
+|New or changed topic | Description |
+|----------------------|-------------|
+| [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md) | Added errors 0x80090029 and 0x80070057, and merged entries for error 0x801c03ed. |
+| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
+
 ## April 2016
 
 |New or changed topic | Description |
