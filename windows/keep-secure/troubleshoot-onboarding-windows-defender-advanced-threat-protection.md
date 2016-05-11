@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mjcaparas
+author: iaanw
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
