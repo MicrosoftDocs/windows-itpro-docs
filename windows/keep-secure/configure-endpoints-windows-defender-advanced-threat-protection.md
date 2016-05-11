@@ -20,7 +20,7 @@ author: iaanw
 
 You can use a System Center Configuration Manager (SCCM) package, a Group Policy (GP) configuration package, or an automated script to configure endpoints. 
 
-## Configure with System Center Configuration Manager (SCCM)
+## Configure with System Center Configuration Manager
 
 1. Open the SCCM configuration package .zip file (*WindowsATPOnboardingPackage_ConfigurationManager.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -66,7 +66,8 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 For additional settings, see the [Additional configuration settings section](additional-configuration-windows-defender-advanced-threat-protection.md).
 
-## Configure endpoints manually with registry changes
+## Configure endpoints individually with an automated script
+<a name="manual"></a>
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
 
