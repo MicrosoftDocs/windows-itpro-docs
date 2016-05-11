@@ -58,7 +58,8 @@ If there are failed deployments (endpoints with **Error**, **Requirements Not Me
 ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
 ## Related topics
-- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
+<!--- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
