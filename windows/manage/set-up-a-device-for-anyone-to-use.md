@@ -74,7 +74,9 @@ A Universal Windows app is built on the Universal Windows Platform (UWP), which 
 </tbody>
 </table>
 
- 
+ ## Learn more
+
+[Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
  
 
