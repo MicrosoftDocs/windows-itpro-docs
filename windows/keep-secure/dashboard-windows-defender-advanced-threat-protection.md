@@ -13,6 +13,7 @@ ms.sitesec: library
 **Applies to:**
 
 - Windows 10 Insider Preview
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
@@ -21,7 +22,7 @@ The **Dashboard** displays a snapshot of:
 - The latest active alerts on your network
 - Machines reporting
 - Top machines with active alerts
-- The overall status of Windows Defender Advanced Threat Protection for the past 30 days
+- The overall status of Windows Defender ATP for the past 30 days
 - Machines with active malware detections
 
 You can explore and investigate alerts and machines to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.

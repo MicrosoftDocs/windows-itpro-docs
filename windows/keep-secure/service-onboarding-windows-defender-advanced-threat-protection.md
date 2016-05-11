@@ -15,10 +15,11 @@ author: mjcaparas
 
 - Windows 10 Insider Preview
 - Azure Active Directory
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-You have to assign users to the Windows Defender Advanced Threat Protection Service application in Azure Active Directory (AAD) before they can access the portal.
+You have to assign users to the Windows Defender ATP Service application in Azure Active Directory (AAD) before they can access the portal.
 
 **Manage user access to the Windows Defender ATP portal**:
 

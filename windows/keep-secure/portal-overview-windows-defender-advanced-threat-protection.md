@@ -14,11 +14,12 @@ author: DulceMV
 **Applies to:**
 
 - Windows 10 Insider Preview
+Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 
-Enterprise security teams can use the Windows Defender Advanced Threat Protection portal to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
+Enterprise security teams can use the Windows Defender ATP portal to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
 
 You can use the [Windows Defender ATP portal](https://securitycenter.windows.com/) to:
 - View, sort, and triage alerts from your endpoints

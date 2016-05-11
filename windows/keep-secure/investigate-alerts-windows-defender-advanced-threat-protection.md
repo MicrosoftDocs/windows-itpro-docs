@@ -13,10 +13,11 @@ ms.sitesec: library
 **Applies to:**
 
 - Windows 10 Insider Preview
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Alerts in Windows Defender Advanced Threat Protection indicate possible security breaches on endpoints in your organization.
+Alerts in Windows Defender ATP indicate possible security breaches on endpoints in your organization.
 
 There are three alert severity levels, described in the following table.
 

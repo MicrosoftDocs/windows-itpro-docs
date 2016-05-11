@@ -13,10 +13,11 @@ ms.sitesec: library
 **Applies to:**
 
 - Windows 10 Insider Preview
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Windows Defender Advanced Threat Protection notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
+Windows Defender ATP notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
 
 See the [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts) topic for more details on how to investigate alerts.
 

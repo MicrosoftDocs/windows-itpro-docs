@@ -13,6 +13,7 @@ author: mjcaparas
 **Applies to:**
 
 - Windows 10 Insider Preview
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
@@ -58,7 +59,7 @@ Results of deep analysis are matched against threat intelligence and any matches
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available in the context of the file view.
 
-In the file's page, **Submit for deep analysis** is enabled when the file is available in the Windows Defender Advanced Threat Protection backend sample collection or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
+In the file's page, **Submit for deep analysis** is enabled when the file is available in the Windows Defender ATP backend sample collection or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
 
 > **Note**&nbsp;&nbsp;Only files from Windows 10 can be automatically collected.
 
