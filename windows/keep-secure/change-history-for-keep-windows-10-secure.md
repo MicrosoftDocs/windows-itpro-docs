@@ -17,6 +17,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |----------------------|-------------|
 | [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md) | Added errors 0x80090029 and 0x80070057, and merged entries for error 0x801c03ed. |
 | [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
+|[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md) |Updated info based on changes to the features and functionality.|
 
 ## April 2016
 
