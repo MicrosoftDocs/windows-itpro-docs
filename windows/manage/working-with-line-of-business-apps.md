@@ -41,7 +41,7 @@ What you'll have to set up:
 
 -   LOB publishers need to have an app in the Store, or have an app ready to submit to the Store.
 
-### <a href="" id="add-lob-publisher"></a>Add an LOB publisher (admin)
+### <a href="" id="add-lob-publisher"></a>Add an LOB publisher (Store for Business Admin)
 
 For developers within your own organization, or ISVs you're working with to create LOB apps, you'll need to invite them to become a LOB publisher.
 
@@ -49,7 +49,8 @@ For developers within your own organization, or ISVs you're working with to crea
 
 1.  Sign in to the [Windows Store for Business]( http://go.microsoft.com/fwlink/p/?LinkId=623531).
 2.  Click **Settings**, and then choose **LOB publishers**.
-3.  On the Line-of business publishers page, click **Add** to complete a form and send an email invitation to a developer.
+3.  On the Line-of business publishers page, click **Add** to complete a form and send an email invitation to a developer.<br>
+**Note** This needs to be the email address listed in contact info for the developer account. 
 
 ### <a href="" id="submit-lob-app"></a>Submit apps (LOB publisher)
 
