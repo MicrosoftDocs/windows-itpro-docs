@@ -453,6 +453,7 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tbody>
 </table>
 
+<!--
 
 ## There are no users in the Azure Active Directory
 If you don't see any users in the [Azure Management Portal](https://manage.windowsazure.com/) during the service onboarding stage, you might need to add users to the directory first.
@@ -482,6 +483,7 @@ Log in to the application in the Azure Management Portal again:
 
 3.  Go to the [Azure Management Portal](https://manage.windowsazure.com/) and navigate to your directory. You will see the **Windows ATP Service** application in the **Applications** section again.
 
+-->
 
 ## Related topics
 - [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
