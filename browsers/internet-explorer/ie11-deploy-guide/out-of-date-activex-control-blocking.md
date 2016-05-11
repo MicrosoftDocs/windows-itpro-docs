@@ -84,9 +84,11 @@ IE opens the app’s website.
 **Security Note:**<br>If you don’t fully trust a site, you shouldn’t allow it to launch an outdated app. However, although we don’t recommend it, you can let the webpage launch the app by tapping or clicking **Allow**. This option opens the app without updating or fixing the problem. The next time you visit a webpage running the same outdated app, you’ll get the notification again.
 
 ## How does IE decide which ActiveX controls to block?
-IE uses Microsoft’s versionlist.xml file to determine whether an ActiveX control should be stopped from loading. This file is updated with newly-discovered out-of-date ActiveX controls, which IE automatically downloads to your local copy of the file.
+IE uses Microsoft’s versionlist.xml or versionlistWin7.xml file to determine whether an ActiveX control should be stopped from loading. These files are updated with newly-discovered out-of-date ActiveX controls, which IE automatically downloads to your local copy of the file.
 
-You can see your copy of the versionlist.xml file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml`, or you can view Microsoft’s version at [Internet Explorer version list](http://go.microsoft.com/fwlink/p/?LinkId=403864).
+You can see your copy of the file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml` or you can view Microsoft’s version, based on your operating system and version of IE, here:
+- [Internet Explorer 11 on Windows 7 SP1 or Windows Server 2008 R2](http://go.microsoft.com/fwlink/p/?LinkId=403864)
+- [All other configurations](https://go.microsoft.com/fwlink/p/?LinkId=403864)
 
 **Security Note:**<br>Although we strongly recommend against it, if you don’t want your computer to automatically download the updated version list from Microsoft, run the following command from a command prompt:
 
@@ -171,7 +173,7 @@ Here’s a detailed example and description of what’s included in the VersionA
 ### Inventory your ActiveX controls by using a local WMI class
 For Windows 10 you also have the option to log your inventory info to a local WMI class. Info logged to this class includes all of info you get from the .csv file, plus the CLSID of the loaded ActiveX control or the name of any apps started from an ActiveX control.
 
-### Before you begin
+#### Before you begin
 Before you can use WMI to inventory your ActiveX controls, you need to [download the configuration package (.zip file)](http://go.microsoft.com/fwlink/p/?LinkId=616971), which includes:
 
 -   **ConfigureWMILogging.ps1**. A Windows PowerShell script.
