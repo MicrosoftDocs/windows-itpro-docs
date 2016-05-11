@@ -19,7 +19,7 @@ author: eross-msft
 
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
 
-Enterprise data protection (EDP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. EDP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps. Finally, another data protection technology, Azure Rights Management also works alongside EDP to extend data protection for data that leaves the device, such as when email attachments are sent from an enterprise aware version of a rights management mail client.
+Enterprise data protection (EDP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. EDP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps. Finally, another data protection technology, Azure Rights Management, can help to extend protection for data that leaves the device, such as when email attachments are sent from an enterprise aware version of a rights management mail client.
 
 ## Prerequisites
 You’ll need this software to run EDP in your enterprise:
@@ -37,23 +37,23 @@ EDP helps address your everyday challenges in the enterprise. Including:
 
 -   Helping to maintain the ownership and control of your enterprise data.
 
--   Managing apps that aren’t enterprise aware.
+-   Help control apps that aren’t enterprise aware.
 
 ### EDP-protection modes
 You can set EDP to 1 of 4 protection and management modes:
 
 |Mode|Description|
 |----|-----------|
-|Block |EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
+|Block |EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between apps or attempting to share outside of your organization’s network.|
 |Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
-|Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything.|
+|Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or EDP-protected data, are still blocked.|
 |Off |EDP is turned off and doesn't help to protect or audit your data.<p>After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives. |
 <p>**Note**<br>For more info about setting your EDP-protection modes, see either [Create an enterprise data protection (EDP) policy using Intune](create-edp-policy-using-intune.md) or [Create and deploy an enterprise data protection (EDP) policy using Configuration Manager](create-edp-policy-using-sccm.md), depending on your management solution.
 
 ## Why use EDP?
-EDP gives you a new way to manage data security for apps and documents, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
+EDP gives you a new way to manage data policy enforcement for apps and documents, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
 
--   **Change the way you think about data security.** As an enterprise admin, you need to maintain the security and confidentiality of your enterprise data. EDP helps make sure that your enterprise data is protected on employee-owned devices, even when the employee isn’t using the device. When employees create content on an enterprise-protected device, they can choose to save it as a work document. If it's a work document, it becomes locally-maintained as enterprise data.
+-   **Change the way you think about data policy enforcement.** As an enterprise admin, you need to maintain compliance in your data policy and data access. EDP helps make sure that your enterprise data is protected on both corporate and employee-owned devices, even when the employee isn’t using the device. When employees create content on an enterprise-protected device, they can choose to save it as a work document. If it's a work document, it becomes locally-maintained as enterprise data.
 
 -   **Manage your enterprise documents, apps, and encryption modes.**
 
@@ -61,10 +61,10 @@ EDP gives you a new way to manage data security for apps and documents, along wi
 
     -   **Using protected apps.** Managed apps (apps that you've included on the **Protected Apps** list in your EDP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if EDP management is set to **Block**, your employees can copy and paste from one protected app to another protected app, but not to personal apps. Imagine an HR person wants to copy a job description from a protected app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
 
-    -   **Managed apps and restrictions.** With EDP you can control which apps can access and use your enterprise data. After adding an app to your **Protected App** list, the app is trusted with enterprise data. All apps not on this list are potentially blocked from accessing your enterprise data, depending on your EDP management-mode.<p>
+    -   **Managed apps and restrictions.** With EDP you can control which apps can access and use your enterprise data. After adding an app to your **Protected App** list, the app is trusted with enterprise data. All apps that aren’t on this list are potentially blocked from accessing your enterprise network resources and your EDP-protected data.<p>
     You don’t have to modify line-of-business apps that never touch personal data to list them as protected apps; just include them in the **Protected App** list.
 
-    -   **Deciding your level of data access.** EDP lets you block, allow overrides, or audit employees' data sharing actions. Blocking the action stops it immediately. Allowing overrides let the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without stopping it; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your **Protected App** list.
+    -   **Deciding your level of data access.** EDP lets you block, allow overrides, or audit employees' data sharing actions. Blocking the action stops it immediately. Allowing overrides let the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without blocking anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your **Protected App** list.
 
     -   **Continuous data encryption.** EDP helps protect enterprise data when it leaves a device. For example, when an employee saves to public cloud storage, or synchronizes with another device.<p>
     Apps such as Microsoft Word work with EDP to continue your data encryption across locations and services. These apps are being referred to as, *enterprise aware*. For example, if an employee opens EDP-encrypted content from Word, edits the content, and then tries to save the edited version with a different name, Word automatically applies EDP to the new document, maintaining the encryption.
