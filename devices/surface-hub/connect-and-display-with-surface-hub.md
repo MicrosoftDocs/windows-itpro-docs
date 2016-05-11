@@ -384,7 +384,7 @@ Ports to 55" Surface Hub.
 
 **To use replacement PC mode**
 
-1.  Download and install the Surface Hub Replacement PC driver package on the replacement PC.
+1.  Download and install the [Surface Hub Replacement PC driver package](https://www.microsoft.com/en-us/download/details.aspx?id=52210) on the replacement PC.
 
     **Note**  We recommend that you set sleep or hibernation on the replacement PC so the Surface Hub will turn off the display when it isn't being used.
 
