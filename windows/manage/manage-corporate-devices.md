@@ -94,6 +94,7 @@ For more information about the MDM protocols, see [Mobile device management](htt
 
 ## Learn more
 
+[How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627898.aspx)
 
 [Windows 10, Azure AD and Microsoft Intune: Automatic MDM Enrollment](http://go.microsoft.com/fwlink/p/?LinkId=623321)
 
