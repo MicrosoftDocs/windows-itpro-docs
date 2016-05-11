@@ -403,6 +403,7 @@
 #### [User Account Control security policy settings](user-account-control-security-policy-settings.md)
 ### [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 #### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
+#### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
 #### [Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md)
 <!--##### [Service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
 ##### [Configure endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
@@ -410,7 +411,6 @@
 ##### [Additional configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
 ##### [Monitor onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-#### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
 #### [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md)
 #### [Use the Windows Defender ATP portal](use-windows-defender-advanced-threat-protection.md)
 ##### [View the  Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
@@ -433,4 +433,3 @@
 ### [Microsoft Passport guide](microsoft-passport-guide.md)
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 ### [Windows 10 security overview](windows-10-security-guide.md)
-
