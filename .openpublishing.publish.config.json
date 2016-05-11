@@ -64,7 +64,7 @@
         },
         {
             "docset_name": "education",
-            "build_output_subfolder": "win-cpub-itpro-docs/education",
+            "build_output_subfolder": "education",
             "locale": "en-us",
             "version": 0,
             "open_to_public_contributors": "false",
