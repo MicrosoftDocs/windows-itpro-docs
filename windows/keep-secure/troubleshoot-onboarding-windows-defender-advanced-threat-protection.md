@@ -18,7 +18,7 @@ author: mjcaparas
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 You might need to troubleshoot the Windows Defender Advanced Threat Protection boarding process if you encounter issues.
-This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, common error codes encountered during onboarding, and steps for resolving problems with Azure Active Directory (AAD).
+This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly and common error codes encountered during onboarding. <!--and steps for resolving problems with Azure Active Directory (AAD).-->
 
 ## Endpoints are not reporting to the service correctly
 
