@@ -14,6 +14,7 @@ author: mjcaparas
 **Applies to:**
 
 - Windows 10 Insider Preview
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
@@ -53,7 +54,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection
 
   ![Image of OnboardingState status in Registry Editor](images/onboardingstate.png)
 
-  If the **OnboardingState** value is not set to `1`, follow the instructions on **Identifying and addressing onboarding issues**.
+  If the **OnboardingState** value is not set to **1**, follow the instructions on **Identifying and addressing onboarding issues**.
 
 **Identifying and addressing onboarding errors**:   
 
@@ -81,67 +82,12 @@ Event ID | Message | Resolution steps
 15 | Windows Advanced Threat Protection cannot start command channel with URL: _variable_ | Ensure that the Windows Defender ATP endpoint has internet access.
 
 
-### Ensure that the Windows Defender ATP service is enabled
-If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service is enabled on the endpoint. You can use the SC comman line program for querying and managing the service.
+### Ensure the Windows Defender ATP service is enabled
+If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service is set to automatically start and is running on the endpoint. 
 
-**Check the startup type from the command line**:
+You can use the SC command line program for checking and managing the startup type and running state of the service.
 
-1.  Open an elevated command-line prompt on the endpoint:
-
-  a.  Click **Start** and type **cmd**.
-
-  b.  Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command and press **Enter**:
-  ```
-  sc qc sense
-  ```
-  If the the service is running, then the result should look like the following screenshot:
-
-  ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
-
-3. If the service `START\_TYPE` is not set to `AUTO\_START`, then you'll need to enter the following command and press **Enter**:
-  ```
-  sc config sense start=auto
-  ```
-4.  A success message is displayed. Verify the change by entering the following command and press **Enter**:
-  ```
-  sc qc sense
-  ```
-
-**Check that the service is running from the command line**:
-
-1.  Open an elevated command-line prompt on the endpoint:
-
-  a.  Click **Start** and type **cmd**.
-
-  b.  Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command and press **Enter**:
-  ```
-  sc query sense
-  ```
-  If the service is running, the result should look like the following screenshot:
-
-  ![Result of the sc query sense command](images/sc-query-sense-running.png)
-
-3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**:
-  ```
-  sc start sense
-  ```
-4.  A success message is displayed. Verify the change by entering the following command and press **Enter**:
-  ```
-  sc qc sense
-  ```
-
-### Ensure that telemetry and diagnostics service is enabled
-If the endpoints aren't reporting correctly, you might need to check that the Windows 10 telemetry and diagnostics service is enabled on the endpoint. The service may have been disabled by other programs or user configuration changes.
-
-You will need to check the startup type and verify that the service is running.
-
-There are two ways to check the startup type for the service: from the command line or in the services console.
-
-**Check the startup type from the command line**:
+**Check the Windows Defender ATP service startup type from the command line:**
 
 1.  Open an elevated command-line prompt on the endpoint:
 
@@ -150,24 +96,131 @@ There are two ways to check the startup type for the service: from the command l
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
 2.  Enter the following command and press **Enter**:
-  ```
-  sc qc diagtrack
-  ```
-  If the service is enabled, then the result should look like the following screenshot:
 
-  ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+    ```text
+    sc qc sense
+    ```
 
-4. If the **START_TYPE** is not set to **AUTO_START**, then you'll need to enter the following command and press **Enter**:
-  ```
-  sc config diagtrack start=auto
-  ```
+If the the service is running, then the result should look like the following screenshot:
 
-5. A success message is displayed. Verify the change by entering the following command and press **Enter**:
-  ```
-  sc qc diagtrack
-  ```
+  ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
 
-**Check the startup type in the services console**:
+If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
+
+**Change the Windows Defender ATP service startup type from the command line:**
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2.  Enter the following command and press **Enter**:
+
+    ```text
+    sc config sense start=auto
+    ```
+
+3.  A success message is displayed. Verify the change by entering the following command and press **Enter**:
+
+    ```text
+    sc qc sense
+    ```
+
+**Check the Windows Defender ATP service is running from the command line:**
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2.  Enter the following command and press **Enter**:
+
+    ```text
+    sc query sense
+    ```
+
+If the service is running, the result should look like the following screenshot:
+
+![Result of the sc query sense command](images/sc-query-sense-running.png)
+
+If the service **STATE** is not set to **RUNNING**, then you'll need to start it.
+
+**Start the Windows Defender ATP service from the command line:**
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2.  Enter the following command and press **Enter**:
+
+    ```text
+    sc start sense
+    ```
+
+3.  A success message is displayed. Verify the change by entering the following command and press **Enter**:
+
+    ```text
+    sc qc sense
+    ```
+
+### Ensure the telemetry and diagnostics service is enabled
+If the endpoints aren't reporting correctly, you might need to check that the Windows 10 telemetry and diagnostics service is set to automatically start and is running on the endpoint. The service may have been disabled by other programs or user configuration changes.
+
+
+First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't.)
+
+
+#### Ensure the service is set to automatically start
+
+
+
+**Use the command line to check the Windows 10 telemetry and diganostics service startup type**:
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2.  Enter the following command and press **Enter**:
+
+    ```doscon
+    sc qc diagtrack
+    ```
+
+If the service is enabled, then the result should look like the following screenshot:
+
+![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+
+If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
+
+
+
+**Use the command line to set the Windows 10 telemetry and diganostics service to automatically start:**
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2.  Enter the following command and press **Enter**:
+
+    ```doscon
+    sc config diagtrack start=auto
+    ```
+
+3.  A success message is displayed. Verify the change by entering the following command and press **Enter**:
+
+    ```doscon
+    sc qc diagtrack
+    ```
+
+**Use the Windows Services console to check the Windows 10 telemetry and diganostics service startup type**:
 
 1.  Open the services console:
 
@@ -179,9 +232,28 @@ There are two ways to check the startup type for the service: from the command l
 
 3.  Check the **Startup type** column - the service should be set as **Automatic**.
 
-**ASK ALON HOW SET TO AUTOMATIC FROM THE CONSOLE.**
+If the startup type is not set to **Automatic**, you'll need to change it so the service starts when the endpoint does.
 
-**Check that the service is running from the command line**:
+
+**Use the Windows Services console to set the Windows 10 telemetry and diganostics service to automatically start:**
+
+1.  Open the services console:
+
+  a. Click **Start** and type **services**.
+
+  b. Press **Enter** to open the console.
+
+2.  Scroll through the list of services until you find **Connected User Experiences and Telemetry**.
+
+3.  Right-click on the entry and click **Properties**.
+
+4.  On the **General** tab, change the **Startup type:** to **Automatic**, as shown in the following image. Click OK.
+
+![Select Automatic to change the startup type in the Properties dialog box for the service](images/windefatp-utc-console-autostart.png)
+
+#### Ensure the service is running
+
+**Use the command line to check the Windows 10 telemetry and diganostics service is running**:
 
 1.  Open an elevated command-line prompt on the endpoint:
 
@@ -190,22 +262,67 @@ There are two ways to check the startup type for the service: from the command l
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
 2.  Enter the following command and press **Enter**:
-  ```
-  sc query diagtrack
-  ```
-  If the service is running, the result should look like the following screenshot:
 
-  ![Result of the sc query command for sc query diagtrack](images/windefatp-sc-query-diagtrack.png)
+    ```doscon
+    sc query diagtrack
+    ```
 
-3. If the service **STATE** is not set to **RUNNING**, then you'll need to enter the following command and press **Enter**:
-  ```
-  sc start diagtrack
-  ```
+If the service is running, the result should look like the following screenshot:
 
-4. A success message is displayed. Verify the change by entering the following command and press **Enter**:
-  ```
-  sc query diagtrack
-  ```
+![Result of the sc query command for sc query diagtrack](images/windefatp-sc-query-diagtrack.png)
+
+If the service **STATE** is not set to **RUNNING**, then you'll need to start it.
+
+
+**Use the command line to start the Windows 10 telemetry and diganostics service:**
+
+1.  Open an elevated command-line prompt on the endpoint:
+
+  a.  Click **Start** and type **cmd**.
+
+  b.  Right-click **Command prompt** and select **Run as administrator**.
+
+2.  Enter the following command and press **Enter**:
+
+    ```doscon
+    sc start diagtrack
+    ```
+
+3. A success message is displayed. Verify the change by entering the following command and press **Enter**:
+
+    ```doscon
+    sc query diagtrack
+    ```
+
+**Use the Windows Services console to check the Windows 10 telemetry and diganostics service is running**:
+
+1.  Open the services console:
+
+  a. Click **Start** and type **services**.
+
+  b. Press **Enter** to open the console.
+
+2.  Scroll through the list of services until you find **Connected User Experiences and Telemetry**.
+
+3.  Check the **Status** column - the service should be marked as **Running**.
+
+If the service is not running, you'll need to start it.
+
+
+**Use the Windows Services console to start the Windows 10 telemetry and diganostics service:**
+
+1.  Open the services console:
+
+  a. Click **Start** and type **services**.
+
+  b. Press **Enter** to open the console.
+
+2.  Scroll through the list of services until you find **Connected User Experiences and Telemetry**.
+
+3.  Right-click on the entry and click **Start**, as shown in the following image. 
+
+![Select Start to start the service](images/windefatp-utc-console-start.png)
+
 
 ### Ensure that the Windows Defender ATP endpoint has internet connection
 
