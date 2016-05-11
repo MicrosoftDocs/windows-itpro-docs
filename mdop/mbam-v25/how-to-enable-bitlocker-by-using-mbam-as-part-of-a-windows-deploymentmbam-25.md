@@ -50,275 +50,73 @@ This topic explains how to enable BitLocker on an end user's computer by using M
 
     -   Robust error handling
 
-    You can download the `Invoke-MbamClientDeployment.ps1` script from [Microsoft.com Download Center](https://www.microsoft.com/download/details.aspx?id=48698). This is the main script that your deployment system will call to configure BitLocker drive encryption and record recovery keys with the MBAM Server.
+   You can download the `Invoke-MbamClientDeployment.ps1` script from [Microsoft.com Download Center](https://www.microsoft.com/download/details.aspx?id=48698). This is the main script that your deployment system will call to configure BitLocker drive encryption and record recovery keys with the MBAM Server.
 
-    **WMI deployment methods for MBAM:** The following WMI methods have been added in MBAM 2.5 SP1 to support enabling BitLocker by using the `Invoke-MbamClientDeployment.ps1` PowerShell script.
+   **WMI deployment methods for MBAM:** The following WMI methods have been added in MBAM 2.5 SP1 to support enabling BitLocker by using the `Invoke-MbamClientDeployment.ps1` PowerShell script.
 
-    <a href="" id="mbam-machine-wmi-class"></a>**MBAM\_Machine WMI Class**  
-    **PrepareTpmAndEscrowOwnerAuth:** Reads the TPM OwnerAuth and sends it to the MBAM recovery database by using the MBAM recovery service. If the TPM is not owned and auto-provisioning is not on, it generates a TPM OwnerAuth and takes ownership. If it fails, an error code is returned for troubleshooting.
+   <a href="" id="mbam-machine-wmi-class"></a>**MBAM\_Machine WMI Class**  
+   **PrepareTpmAndEscrowOwnerAuth:** Reads the TPM OwnerAuth and sends it to the MBAM recovery database by using the MBAM recovery service. If the TPM is not owned and auto-provisioning is not on, it generates a TPM OwnerAuth and takes ownership. If it fails, an error code is returned for troubleshooting.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Parameter</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>RecoveryServiceEndPoint</p></td>
-    <td align="left"><p>A string specifying the MBAM recovery service endpoint.</p></td>
-    </tr>
-    </tbody>
-    </table>
+| Parameter | Description |
+| -------- | ----------- |
+| RecoveryServiceEndPoint | A string specifying the MBAM recovery service endpoint. |
 
-     
+Here are a list of common error messages:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Common return values</th>
-    <th align="left">Error message</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>S_OK</strong></p>
-    <p>0 (0x0)</p></td>
-    <td align="left"><p>The method was successful</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>MBAM_E_TPM_NOT_PRESENT</strong></p>
-    <p>2147746304 (0x80040200)</p></td>
-    <td align="left"><p>TPM is not present in the computer or is disabled in the BIOS configuration.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>MBAM_E_TPM_INCORRECT_STATE</strong></p>
-    <p>2147746305 (0x80040201)</p></td>
-    <td align="left"><p>TPM is not in the correct state (enabled, activated and owner installation allowed).</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>MBAM_E_TPM_AUTO_PROVISIONING_PENDING</strong></p>
-    <p>2147746306 (0x80040202)</p></td>
-    <td align="left"><p>MBAM cannot take ownership of TPM because auto-provisioning is pending. Try again after auto-provisioning is completed.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>MBAM_E_TPM_OWNERAUTH_READFAIL</strong></p>
-    <p>2147746307 (0x80040203)</p></td>
-    <td align="left"><p>MBAM cannot read the TPM owner authorization value. The value might have been removed after a successful escrow. On Windows 7, MBAM cannot read the value if the TPM is owned by others.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>MBAM_E_REBOOT_REQUIRED</strong></p>
-    <p>2147746308 (0x80040204)</p></td>
-    <td align="left"><p>The computer must be restarted to set TPM to the correct state. You might need to manually reboot the computer.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>MBAM_E_SHUTDOWN_REQUIRED</strong></p>
-    <p>2147746309 (0x80040205)</p></td>
-    <td align="left"><p>The computer must be shut down and turned back on to set TPM to the correct state. You might need to manually reboot the computer.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_ACCESS_DENIED</strong></p>
-    <p>2151481349 (0x803D0005)</p></td>
-    <td align="left"><p>Access was denied by the remote endpoint.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_ENDPOINT_NOT_FOUND</strong></p>
-    <p>2151481357 (0x803D000D)</p></td>
-    <td align="left"><p>The remote endpoint does not exist or could not be located.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_FAILURE</strong></p>
-    <p>2151481357 (0x803D000F)</p></td>
-    <td align="left"><p>The remote endpoint could not process the request.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_ENDPOINT_UNREACHABLE</strong></p>
-    <p>2151481360 (0x803D0010)</p></td>
-    <td align="left"><p>The remote endpoint was not reachable.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_FAULT_RECEIVED</strong></p>
-    <p>2151481363 (0x803D0013)</p></td>
-    <td align="left"><p>A message containing a fault was received from the remote endpoint. Make sure you are connecting to the correct service endpoint.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_INVALID_ENDPOINT_URL</strong></p>
-    <p>2151481376 (0x803D0020)</p></td>
-    <td align="left"><p>The endpoint address URL is not valid. The URL must start with “http” or “https”.</p></td>
-    </tr>
-    </tbody>
-    </table>
+| Common return values | Error message |
+| -------------------- | ------------- |
+|  **S_OK**<br />0 (0x0) | The method was successful. |
+| **MBAM_E_TPM_NOT_PRESENT**<br />2147746304 (0x80040200) | TPM is not present in the computer or is disabled in the BIOS configuration. |
+| **MBAM_E_TPM_INCORRECT_STATE**<br />2147746305 (0x80040201) | TPM is not in the correct state (enabled, activated and owner installation allowed). |
+| **MBAM_E_TPM_AUTO_PROVISIONING_PENDING**<br />2147746306 (0x80040202) | MBAM cannot take ownership of TPM because auto-provisioning is pending. Try again after auto-provisioning is completed. |
+| **MBAM_E_TPM_OWNERAUTH_READFAIL**<br />2147746307 (0x80040203) | MBAM cannot read the TPM owner authorization value. The value might have been removed after a successful escrow. On Windows 7, MBAM cannot read the value if the TPM is owned by others. |
+| **MBAM_E_REBOOT_REQUIRED**<br />2147746308 (0x80040204) | The computer must be restarted to set TPM to the correct state. You might need to manually reboot the computer. |
+| **MBAM_E_SHUTDOWN_REQUIRED**<br />2147746309 (0x80040205) | The computer must be shut down and turned back on to set TPM to the correct state. You might need to manually reboot the computer. |
+| **WS_E_ENDPOINT_ACCESS_DENIED**<br />2151481349 (0x803D0005) | Access was denied by the remote endpoint. |
+| **WS_E_ENDPOINT_NOT_FOUND**<br />2151481357 (0x803D000D) | The remote endpoint does not exist or could not be located. |
+| **WS_E_ENDPOINT_FAILURE<br />2151481357 (0x803D000F) | The remote endpoint could not process the request. |
+| **WS_E_ENDPOINT_UNREACHABLE**<br />2151481360 (0x803D0010) | The remote endpoint was not reachable. |
+| **WS_E_ENDPOINT_FAULT_RECEIVED**<br />2151481363 (0x803D0013) | A message containing a fault was received from the remote endpoint. Make sure you are connecting to the correct service endpoint. |
+| **WS_E_INVALID_ENDPOINT_URL** 2151481376 (0x803D0020) | The endpoint address URL is not valid. The URL must start with “http” or “https”. |
 
-     
+   **ReportStatus:** Reads the compliance status of the volume and sends it to the MBAM compliance status database by using the MBAM status reporting service. The status includes cipher strength, protector type, protector state and encryption state. If it fails, an error code is returned for troubleshooting.
+   
+   | Parameter | Description |
+   | --------- | ----------- |
+   | ReportingServiceEndPoint | A string specifying the MBAM status reporting service endpoint. |
+   
+   Here are a list of common error messages:
+   
+   | Common return values | Error message |
+   | -------------------- | ------------- |
+   | **S_OK**<br /> 0 (0x0) | The method was successful |
+   | **WS_E_ENDPOINT_ACCESS_DENIED**<br />2151481349 (0x803D0005) | Access was denied by the remote endpoint.|
+   | **WS_E_ENDPOINT_NOT_FOUND**<br />2151481357 (0x803D000D) | The remote endpoint does not exist or could not be located. |
+   | **WS_E_ENDPOINT_FAILURE**<br /> 2151481357 (0x803D000F) | The remote endpoint could not process the request. |
+   | **WS_E_ENDPOINT_UNREACHABLE**<br />2151481360 (0x803D0010) | The remote endpoint was not reachable. |
+   | **WS_E_ENDPOINT_FAULT_RECEIVED**<br />2151481363 (0x803D0013) | A message containing a fault was received from the remote endpoint. Make sure you are connecting to the correct service endpoint. |
+   | **WS_E_INVALID_ENDPOINT_URL**<br />2151481376 (0x803D0020) | The endpoint address URL is not valid. The URL must start with “http” or “https”. |
 
-    **ReportStatus:** Reads the compliance status of the volume and sends it to the MBAM compliance status database by using the MBAM status reporting service. The status includes cipher strength, protector type, protector state and encryption state. If it fails, an error code is returned for troubleshooting.
-
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Parameter</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>ReportingServiceEndPoint</p></td>
-    <td align="left"><p>A string specifying the MBAM status reporting service endpoint.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
-
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Common return values</th>
-    <th align="left">Error message</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>S_OK</strong></p>
-    <p>0 (0x0)</p></td>
-    <td align="left"><p>The method was successful</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_ACCESS_DENIED</strong></p>
-    <p>2151481349 (0x803D0005)</p></td>
-    <td align="left"><p>Access was denied by the remote endpoint.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_ENDPOINT_NOT_FOUND</strong></p>
-    <p>2151481357 (0x803D000D)</p></td>
-    <td align="left"><p>The remote endpoint does not exist or could not be located.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_FAILURE</strong></p>
-    <p>2151481357 (0x803D000F)</p></td>
-    <td align="left"><p>The remote endpoint could not process the request.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_ENDPOINT_UNREACHABLE</strong></p>
-    <p>2151481360 (0x803D0010)</p></td>
-    <td align="left"><p>The remote endpoint was not reachable.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_FAULT_RECEIVED</strong></p>
-    <p>2151481363 (0x803D0013)</p></td>
-    <td align="left"><p>A message containing a fault was received from the remote endpoint. Make sure you are connecting to the correct service endpoint.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_INVALID_ENDPOINT_URL</strong></p>
-    <p>2151481376 (0x803D0020)</p></td>
-    <td align="left"><p>The endpoint address URL is not valid. The URL must start with “http” or “https”.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
-
-    <a href="" id="mbam-volume-wmi-class"></a>**MBAM\_Volume WMI Class**  
-    **EscrowRecoveryKey:** Reads the recovery numerical password and key package of the volume and sends them to the MBAM recovery database by using the MBAM recovery service. If it fails, an error code is returned for troubleshooting.
-
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Parameter</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>RecoveryServiceEndPoint</p></td>
-    <td align="left"><p>A string specifying the MBAM recovery service endpoint.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
-
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Common return values</th>
-    <th align="left">Error message</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>S_OK</strong></p>
-    <p>0 (0x0)</p></td>
-    <td align="left"><p>The method was successful</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>FVE_E_LOCKED_VOLUME</strong></p>
-    <p>2150694912 (0x80310000)</p></td>
-    <td align="left"><p>The volume is locked.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>FVE_E_PROTECTOR_NOT_FOUND</strong></p>
-    <p>2150694963 (0x80310033)</p></td>
-    <td align="left"><p>A Numerical Password protector was not found for the volume.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_ACCESS_DENIED</strong></p>
-    <p>2151481349 (0x803D0005)</p></td>
-    <td align="left"><p>Access was denied by the remote endpoint.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_ENDPOINT_NOT_FOUND</strong></p>
-    <p>2151481357 (0x803D000D)</p></td>
-    <td align="left"><p>The remote endpoint does not exist or could not be located.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_FAILURE</strong></p>
-    <p>2151481357 (0x803D000F)</p></td>
-    <td align="left"><p>The remote endpoint could not process the request.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_ENDPOINT_UNREACHABLE</strong></p>
-    <p>2151481360 (0x803D0010)</p></td>
-    <td align="left"><p>The remote endpoint was not reachable.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>WS_E_ENDPOINT_FAULT_RECEIVED</strong></p>
-    <p>2151481363 (0x803D0013)</p></td>
-    <td align="left"><p>A message containing a fault was received from the remote endpoint. Make sure you are connecting to the correct service endpoint.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>WS_E_INVALID_ENDPOINT_URL</strong></p>
-    <p>2151481376 (0x803D0020)</p></td>
-    <td align="left"><p>The endpoint address URL is not valid. The URL must start with “http” or “https”.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
+   <a href="" id="mbam-volume-wmi-class"></a>**MBAM\_Volume WMI Class**  
+   **EscrowRecoveryKey:** Reads the recovery numerical password and key package of the volume and sends them to the MBAM recovery database by using the MBAM recovery service. If it fails, an error code is returned for troubleshooting.
+   
+   | Parameter | Description |
+   | --------- | ----------- |
+   | RecoveryServiceEndPoint | A string specifying the MBAM recovery service endpoint. |
+   
+   Here are a list of common error messages:
+   
+   | Common return values | Error message |
+   | -------------------- | ------------- |
+   | **S_OK**<br />0 (0x0) | The method was successful |
+   | **FVE_E_LOCKED_VOLUME**<br />2150694912 (0x80310000) | The volume is locked. |
+   | **FVE_E_PROTECTOR_NOT_FOUND**<br />2150694963 (0x80310033) | A Numerical Password protector was not found for the volume. | 
+   | **WS_E_ENDPOINT_ACCESS_DENIED**<br />2151481349 (0x803D0005) | Access was denied by the remote endpoint. |
+   | **WS_E_ENDPOINT_NOT_FOUND**<br />2151481357 (0x803D000D) | The remote endpoint does not exist or could not be located. |
+   | **WS_E_ENDPOINT_FAILURE**<br />2151481357 (0x803D000F) | The remote endpoint could not process the request. |
+   | **WS_E_ENDPOINT_UNREACHABLE**<br />2151481360 (0x803D0010) | The remote endpoint was not reachable. |
+   | **WS_E_ENDPOINT_FAULT_RECEIVED**<br />2151481363 (0x803D0013) | A message containing a fault was received from the remote endpoint. Make sure you are connecting to the correct service endpoint. |
+   | **WS_E_INVALID_ENDPOINT_URL**<br />2151481376 (0x803D0020) | The endpoint address URL is not valid. The URL must start with “http” or “https”. |
      
 
 2.  **Deploy MBAM by using Microsoft Deployment Toolkit (MDT) and PowerShell**
@@ -328,13 +126,9 @@ This topic explains how to enable BitLocker on an end user's computer by using M
         **Note**  
         The `Invoke-MbamClientDeployment.ps1` PowerShell script can be used with any imaging process or tool. This section shows how to integrate it by using MDT, but the steps are similar to integrating it with any other process or tool.
 
-         
-
         **Caution**  
         If you are using BitLocker pre-provisioning (WinPE) and want to maintain the TPM owner authorization value, you must add the `SaveWinPETpmOwnerAuth.wsf` script in WinPE immediately before the installation reboots into the full operating system. **If you do not use this script, you will lose the TPM owner authorization value on reboot.**
-
-         
-
+        
     2.  Copy `Invoke-MbamClientDeployment.ps1` to **&lt;DeploymentShare&gt;\\Scripts**. If you are using pre-provisioning, copy the `SaveWinPETpmOwnerAuth.wsf` file into **&lt;DeploymentShare&gt;\\Scripts**.
 
     3.  Add the MBAM 2.5 SP1 client application to the Applications node in the deployment share.
@@ -467,46 +261,40 @@ This topic explains how to enable BitLocker on an end user's computer by using M
     **Caution**  
     This step describes how to modify the Windows registry. Using Registry Editor incorrectly can cause serious issues that can require you to reinstall Windows. We cannot guarantee that issues resulting from the incorrect use of Registry Editor can be resolved. Use Registry Editor at your own risk.
 
-     
-
     1.  Set the TPM for **Operating system only encryption**, run Regedit.exe, and then import the registry key template from C:\\Program Files\\Microsoft\\MDOP MBAM\\MBAMDeploymentKeyTemplate.reg.
 
     2.  In Regedit.exe, go to HKLM\\SOFTWARE\\Microsoft\\MBAM, and configure the settings that are listed in the following table.
 
         **Note**  
         You can set Group Policy settings or registry values related to MBAM here. These settings will override previously set values.
+        
+        Registry entry
+        Configuration settings
 
-         
+        DeploymentTime
 
-    Registry entry
+        0 = Off
 
-    Configuration settings
+        1 = Use deployment time policy settings (default) – use this setting to enable encryption at the time Windows is deployed to the client computer.
 
-    DeploymentTime
+        UseKeyRecoveryService
 
-    0 = Off
+        0 = Do not use key escrow (the next two registry entries are not required in this case)
 
-    1 = Use deployment time policy settings (default) – use this setting to enable encryption at the time Windows is deployed to the client computer.
+        1 = Use key escrow in Key Recovery system (default)
 
-    UseKeyRecoveryService
+        This is the recommended setting, which enables MBAM to store the recovery keys. The computer must be able to communicate with the MBAM Key Recovery service. Verify that the computer can communicate with the service before you proceed.
 
-    0 = Do not use key escrow (the next two registry entries are not required in this case)
+        KeyRecoveryOptions
 
-    1 = Use key escrow in Key Recovery system (default)
+        0 = Uploads Recovery Key only
 
-    This is the recommended setting, which enables MBAM to store the recovery keys. The computer must be able to communicate with the MBAM Key Recovery service. Verify that the computer can communicate with the service before you proceed.
+        1 = Uploads Recovery Key and Key Recovery Package (default)
 
-    KeyRecoveryOptions
+        KeyRecoveryServiceEndPoint
 
-    0 = Uploads Recovery Key only
+        Set this value to the URL for the server running the Key Recovery service, for example, http://&lt;computer name&gt;/MBAMRecoveryAndHardwareService/CoreService.svc.
 
-    1 = Uploads Recovery Key and Key Recovery Package (default)
-
-    KeyRecoveryServiceEndPoint
-
-    Set this value to the URL for the server running the Key Recovery service, for example, http://&lt;computer name&gt;/MBAMRecoveryAndHardwareService/CoreService.svc.
-
-     
 
 6.  The MBAM Client will restart the system during the MBAM Client deployment. When you are ready for this restart, run the following command at a command prompt as an administrator:
 
@@ -522,20 +310,8 @@ This topic explains how to enable BitLocker on an end user's computer by using M
 
 9.  To delete the bypass registry values, run Regedit.exe, and go to the HKLM\\SOFTWARE\\Microsoft registry entry. Right-click the **MBAM** node, and then click **Delete**.
 
-    **Got a suggestion for MBAM**? Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). **Got a MBAM issue**? Use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopmbam).
-
 ## Related topics
-
 
 [Deploying the MBAM 2.5 Client](deploying-the-mbam-25-client.md)
 
 [Planning for MBAM 2.5 Client Deployment](planning-for-mbam-25-client-deployment.md)
-
- 
-
- 
-
-
-
-
-
