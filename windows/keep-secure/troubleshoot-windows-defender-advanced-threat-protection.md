@@ -19,15 +19,14 @@ author: mjcaparas
 
 This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
 
-###Server error - Access is denied due to invalid credentials
+### Server error - Access is denied due to invalid credentials
 If you encounter a server error when trying to access the service, you’ll need to change your browser cookie settings.
 Configure your browser to allow cookies.
 
 ### No data is shown on the portal
-If no data is displayed on the Dashboard portal even if no errors were encountered in the portal logs or in the browser console, you'll need to whitelist TI and DA endpoints and detonation endpoints that also use the this protocol.
+If no data is displayed on the Dashboard portal even if no errors were encountered in the portal logs or in the browser console, you'll need to whitelist the threat intelligence, data access, and detonation endpoints that also use this protocol.
 
-QUESTIONs TO NAMAA:
-- what dos TI AND DA stand for
+QUESTION TO NAMAA:
 - what are we referring to when we say "this protocol"
 thanks, joey
 
@@ -35,6 +34,7 @@ thanks, joey
 Depending on your region, add the following endpoints to the whitelist:
 
 U.S. region:
+
 - threatintel-cus-prd.cloudapp.net
 - threatintel-eus-prd.cloudapp.net
 - dataaccess-cus-prd.cloudapp.net
@@ -48,6 +48,10 @@ EU region:
 - threatintel-weu-prd.cloudapp.net
 - dataaccess-neu-prd.cloudapp.net
 - dataaccess-weu-prd.cloudapp.net
+
+### Windows Defender ATP service shows event or error logs in the Event Viewer
+
+See the topic [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md) for a list of event IDs that are reported by the Windows Defender ATP service. The topic also contains troubleshooting steps for event errors.
 
 
 ### Related topic

@@ -423,6 +423,7 @@
 ##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender ATP settings](settings-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
+#### [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
 #### [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
 #### [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
