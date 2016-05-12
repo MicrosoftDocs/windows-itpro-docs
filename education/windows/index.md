@@ -8,7 +8,9 @@ author: jdeckerMS
 ---
 
 # Windows 10 for Education
-Learn about using Windows 10 in schools.
+[Windows 10 Education](https://www.microsoft.com/en-us/education/products/windows/default.aspx) empowers staff, administrators, teachers and students to do great things.
+
+[Find out how to get Windows 10 Education for your school.](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)
 
 ## In this section
 
