@@ -25,10 +25,26 @@ Provisioning packages are simple enough that with a short set of written instruc
 
 ## New in Windows 10, Version 1607
 
-The Windows Assessment and Deployment Kit (ADK) for Windows 10 included the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. Windows 10, Version 1607, adds simple wizards for creating provisioning packages to set up shared devices for businesses and schools. 
+The Windows Assessment and Deployment Kit (ADK) for Windows 10 included the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. Windows 10, Version 1607, simplifies common provisioning scenarios. 
 
 ![Configuration Designer options](images/icd.png)
 
+Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT administrators:
+
+* **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
+
+
+* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
+
+
+* **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
+
+    * System Center Configuration Manager and Microsoft Intune hybrid (certificate-based enrollment) 
+    * AirWatch (password-string based enrollment) 
+    * Mobile Iron (password-string based enrollment) 
+    * Other MDMs (cert-based enrollment) 
+
+> **Note:** Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](set-up-students-pcs-to-join-domain.md).
 
 ## Benefits of provisioning packages
 
