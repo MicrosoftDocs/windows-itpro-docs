@@ -13,7 +13,7 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview
+- Windows 10 Insider Preview Build 14332 or later
 - Azure Active Directory
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
