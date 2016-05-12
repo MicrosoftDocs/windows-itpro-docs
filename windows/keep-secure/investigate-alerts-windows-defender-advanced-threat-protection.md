@@ -23,7 +23,7 @@ There are three alert severity levels, described in the following table.
 
 Alert severity | Description
 :---|:---
-High (Red) | Threats often associated with Advanced Persistent Threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on endpoints.
+High (Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on endpoints.
 Medium (Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
 Low (Yellow) | Threats associated with prevalent malware and hack-tools that do not appear to indicate an advanced threat targeting the organization.
 
