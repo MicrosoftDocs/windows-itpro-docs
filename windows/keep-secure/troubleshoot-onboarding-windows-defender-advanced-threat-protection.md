@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Windows Defender ATP onboarding issues
 description: Troubleshoot issues that might arise during the onboarding of endpoints or to the Windows Defender ATP service.
-keywords: troubleshoot onboarding, onboarding issues, event viewer, azure management portal, data collection and preview builds
+keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds
 search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
