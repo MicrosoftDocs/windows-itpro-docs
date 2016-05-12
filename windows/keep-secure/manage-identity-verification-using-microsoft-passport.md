@@ -45,9 +45,9 @@ As an administrator in an enterprise or educational organization, you can create
 
 ## The difference between Passport and Passport for Work
 
-*Individuals can create a PIN or Hello gesture on their personal devices for convenient sign-in. This use of Passport provides a layer of protection by being unique to the device on which it is set up, however it is not backed by key-based or certificate-based authentication. 
+*Individuals can create a PIN or Hello gesture on their personal devices for convenient sign-in. This use of Passport provides a layer of protection by being unique to the device on which it is set up, however it is not backed by key-based or certificate-based authentication.** 
 
-Passport for Work, which is configured by Group Policy or MDM policy, used key-based or certificate-based authentication. *
+*Passport for Work, which is configured by Group Policy or MDM policy, used key-based or certificate-based authentication. *
 
 ## Benefits of Microsoft Passport
 
