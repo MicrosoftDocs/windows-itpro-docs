@@ -20,17 +20,13 @@ The following image shows an example of an error during **Create a work PIN**.
 ## Error mitigations
 When a user encounters an error when creating the work PIN, advise the user to try the following steps. Many errors can be mitigated by one of these steps.
 1.  Try to create the PIN again. Some errors are transient and resolve themselves.
-2.  Log out, log in, and try to create the PIN again.
+2.  Sign out, sign in, and try to create the PIN again.
 3.  Reboot the device and then try to create the PIN again.
 4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a desktop PC, go to **Settings** &gt; **System** &gt; **About** and select **Disconnect from organization**. To unjoin a device running Windows 10 Mobile, you must [reset the device](http://go.microsoft.com/fwlink/p/?LinkId=715697).
 5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](http://go.microsoft.com/fwlink/p/?LinkId=715697).
 If the error occurs again, check the error code against the following table to see if there is another mitigation for that error. When no mitigation is listed in the table, contact Microsoft Support for assistance.
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th align="left">Hex</th>
@@ -39,20 +35,13 @@ If the error occurs again, check the error code against the following table to s
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">0x801C03ED</td>
-<td align="left"><p>Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed</p>
-<p>-or-</p>
-<p>Token was not found in the Authorization header</p>
-<p>-or-</p>
-<p>Failed to read one or more objects</p></td>
-<td align="left">Unjoin the device from Azure Active Directory (Azure AD) and rejoin</td>
-</tr>
+
 <tr class="even">
 <td align="left">0x801C044D</td>
 <td align="left">Authorization token does not contain device ID</td>
 <td align="left">Unjoin the device from Azure AD and rejoin</td>
 </tr>
+
 <tr class="odd">
 <td align="left">0x80090036</td>
 <td align="left">User cancelled an interactive dialog</td>
@@ -77,6 +66,10 @@ If the error occurs again, check the error code against the following table to s
 <td align="left">0x80090005</td>
 <td align="left">NTE_BAD_DATA</td>
 <td align="left">Unjoin the device from Azure AD and rejoin</td>
+</tr><tr class="even">
+<td align="left">0x80090029</td>
+<td align="left">TPM is not set up.</td>
+<td align="left">Sign on with an administrator account. Click **Start**, type "tpm.msc", and select **tpm.msc Microsoft Common Console Document**. In the **Actions** pane, select **Prepare the TPM**. </td>
 </tr>
 <tr class="even">
 <td align="left">0x80090031</td>
@@ -106,17 +99,17 @@ If the error occurs again, check the error code against the following table to s
 <tr class="odd">
 <td align="left">0x801C0010</td>
 <td align="left">The AIK certificate is not valid or trusted</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">Sign out and then sign in again.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C0011</td>
 <td align="left">The attestation statement of the transport key is invalid</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">Sign out and then sign in again.</td>
 </tr>
 <tr class="odd">
 <td align="left">0x801C0012</td>
 <td align="left">Discovery request is not in a valid format</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">Sign out and then sign in again.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C0015</td>
@@ -141,7 +134,7 @@ If the error occurs again, check the error code against the following table to s
 <tr class="even">
 <td align="left">0x801C03E9</td>
 <td align="left">Server response message is invalid</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">Sign out and then sign in again.</td>
 </tr>
 <tr class="odd">
 <td align="left">0x801C03EA</td>
@@ -151,37 +144,42 @@ If the error occurs again, check the error code against the following table to s
 <tr class="even">
 <td align="left">0x801C03EB</td>
 <td align="left">Server response http status is not valid</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">Sign out and then sign in again.</td>
 </tr>
 <tr class="odd">
 <td align="left">0x801C03EC</td>
 <td align="left">Unhandled exception from server.</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">sign out and then sign in again.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C03ED</td>
-<td align="left">The request sent to the server was invalid.</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left"><p>Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed</p>
+<p>-or-</p>
+<p>Token was not found in the Authorization header</p>
+<p>-or-</p>
+<p>Failed to read one or more objects</p>
+<p>-or-</p><p>The request sent to the server was invalid.</p></td>
+<td align="left">Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure Active Directory (Azure AD) and rejoin.</td>
 </tr>
 <tr class="odd">
 <td align="left">0x801C03EE</td>
 <td align="left">Attestation failed</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">Sign out and then sign in again.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C03EF</td>
 <td align="left">The AIK certificate is no longer valid</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">Sign out and then sign in again.</td>
 </tr>
 <tr class="odd">
 <td align="left">​0x801C044D</td>
 <td align="left">Unable to obtain user token</td>
-<td align="left">Log out and then log in again. Check network and credentials.</td>
+<td align="left">Sign out and then sign in again. Check network and credentials.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C044E</td>
 <td align="left">Failed to receive user creds input</td>
-<td align="left">Log out and then log in again.</td>
+<td align="left">Sign out and then sign in again.</td>
 </tr>
 </tbody>
 </table>
@@ -191,6 +189,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | Hex         | Cause                                                                                                 |
 |-------------|-------------------------------------------------------------------------------------------------------|
 | 0x80072f0c  | Unknown                                                                                               |
+| 0x80070057 | Invalid parameter or argument is passed |
 | 0x80090027  | Caller provided wrong parameter. If third-party code receives this error they must change their code. |
 | 0x8009002D  | NTE\_INTERNAL\_ERROR                                                                                  |
 | 0x80090020  | NTE\_FAIL                                                                                             |

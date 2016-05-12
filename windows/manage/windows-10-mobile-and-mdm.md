@@ -883,9 +883,6 @@ Table 19. Microsoft Edge settings for Windows 10 Mobile
 | Allow Search Suggestions in Address Bar         | Whether search suggestions are shown in the address bar                                               |
 | Allow SmartScreen                               | Whether SmartScreen Filter is enabled                                                                 |
 | First Run URL                                   | The URL to open when a user launches Microsoft Edge for the first time                                |
-| Include Sites Bypassing Proxy In Intranet Sites | Whether websites that bypass the proxy server are able to use the Intranet security zone              |
-| Include UNC Paths In Intranet Sites             | Whether URL paths can represent Universal Naming Convention (UNC) paths in the Intranet security zone |
-| Intranet Sites                                  | A list of the websites that are in the Intranet security zone                                         |
 | Prevent Smart Screen Prompt Override For Files  | Whether users can override the SmartScreen Filter warnings about downloading unverified files         |
  
 ## Device operations

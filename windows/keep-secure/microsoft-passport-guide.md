@@ -5,6 +5,7 @@ ms.assetid: 11EA7826-DA6B-4E5C-99FB-142CC6BD9E84
 ms.pagetype: security
 keywords: ["security", "credential", "password", "authentication"]
 ms.prod: W10
+ms.pagetype: security
 ms.mktglfcycl: plan
 ms.sitesec: library
 author: challum
@@ -226,7 +227,8 @@ Table 1. Deployment requirements for Microsoft Passport
 </tbody>
 </table>
  
-Note that the current release of Windows 10 supports the Azure AD–only scenarios. Microsoft provides the forward-looking guidance in Table 1 to help organizations prepare their environments for planned future releases of Microsoft Passport for Work capabilities.
+Note that the current release of Windows 10 supports the Azure AD–only (RTM) and hybrid scenarios (RTM + November Update). Microsoft provides the forward-looking guidance in Table 1 to help organizations prepare their environments for planned future releases of Microsoft Passport for Work capabilities.
+
 **Select policy settings**
 Another key aspect of Microsoft Passport for Work deployment involves the choice of which policy settings to apply to the enterprise. There are two parts to this choice: which policies you deploy to manage Microsoft Passport itself and which policies you deploy to control device management and registration. A complete guide to selecting effective policies is beyond the scope of this guide, but one example reference that may be useful is [Mobile device management capabilities in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=733877).
 ## Implement Microsoft Passport
@@ -255,12 +257,30 @@ In the Windows 10 initial release, Microsoft supports the following Microsoft P
 -   Facial-recognition capability on devices that have compatible IR-capable cameras
 -   Microsoft Passport for personal credentials on individually owned and corporate-managed devices
 -   Microsoft Passport for Work support for organizations that have cloud-only Azure AD deployments
+<<<<<<< HEAD
 -   Group Policy settings to control Microsoft Passport PIN length and complexity
 In future releases of Windows 10, we plan to add support for additional features:
 -   Additional biometric identifier types, including iris recognition
 -   Key-based Microsoft Passport for Work credentials for on-premises Azure AD deployments and hybrid on-premises/Azure AD deployments
 -   Microsoft Passport for Work certificates issued by a trusted PKI, including smart card and virtual smart card certificates
 -   TPM attestation to protect keys so that a malicious user or program can’t create keys in software (because those keys won’t be TPM attested and can thus be identified as fake)
+=======
+
+-   Group Policy and MDM settings to control Microsoft Passport PIN length and complexity
+
+In the November 2015 release, Microsoft supports the following Microsoft Passport and Windows Hello features:
+
+- Key-based Microsoft Passport for Work credentials for on-premises Azure AD deployments and hybrid on-premises/Azure AD deployments
+
+- Microsoft Passport for Work certificates issued by a trusted PKI, including smart card and virtual smart card certificates
+
+In future releases of Windows 10, we plan to add support for additional features:
+
+- Key-based and certificate-based Microsoft Passport for Work credentials for on-premises AD deployments
+ 
+- TPM attestation to protect keys so that a malicious user or program can’t create keys in software (because those keys won’t be TPM attested and can thus be identified as fake)
+
+>>>>>>> master
 In the longer term, Microsoft will continue to improve on and expand the features of both Microsoft Passport and Windows Hello to cover additional customer requirements for manageability and security. We also are working with the FIDO Alliance and a variety of third parties to encourage adoption of Microsoft Passport by both web and LOB application developers.
  
  
