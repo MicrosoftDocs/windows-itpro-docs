@@ -350,7 +350,9 @@ Modify the following PowerShell script as appropriate. The comments in the sampl
 
     $ShellLauncherClass.SetEnabled($TRUE)
 
-    “`nEnabled is set to “ + $DefaultShellObject.IsEnabled()
+    $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
+
+    “`nEnabled is set to “ + $IsShellLauncherEnabled.Enabled
 
     # Remove the new custom shells.
 

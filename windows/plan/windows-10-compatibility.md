@@ -6,7 +6,7 @@ keywords: ["deploy", "upgrade", "update", "appcompat"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: TrudyHa
+author: mtniehaus
 ---
 
 # Windows 10 compatibility

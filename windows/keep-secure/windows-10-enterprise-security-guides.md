@@ -5,7 +5,7 @@ ms.assetid: 57134f84-bd4b-4b1d-b663-4a2d36f5a7f8
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: challum
 ---
 
 # Enterprise security guides
