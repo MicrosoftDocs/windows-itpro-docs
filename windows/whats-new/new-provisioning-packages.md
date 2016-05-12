@@ -16,6 +16,10 @@ author: jdeckerMS
 -   Windows 10
 -   Windows 10 Mobile
 
+Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows Provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management (through a wizard-driven user interface) and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
+
+<iframe width="608" height="391" src="https://mix.office.com/embed/6eldztg4turm" frameborder="0" allowfullscreen></iframe>
+
 With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
 Provisioning packages are simple enough that with a short set of written instructions, a student or non-technical employee can use them to configure their device. This can result in a significant reduction in the time required to configure multiple devices in your organization.
