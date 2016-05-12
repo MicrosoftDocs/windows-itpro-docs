@@ -2,7 +2,7 @@
 title: Manage Wi-Fi Sense in your company (Windows 10)
 description: Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places.
 ms.assetid: 1845e00d-c4ee-4a8f-a5e5-d00f2735a271
-keywords: ["WiFi Sense", "Shared networks"]
+keywords: ["WiFi Sense", "automatically connect to wi-fi", "wi-fi hotspot connection"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,25 +15,19 @@ author: eross-msft
 -   Windows 10
 -   Windows 10 Mobile
 
-Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots it knows about through crowdsourcing, or to Wi-Fi networks your contacts have shared with you by using Wi-Fi Sense.
+Wi-Fi Sense learns about open Wi-Fi hotspots your Windows PC or Windows phone connects to by collecting information about the network, like whether the open Wi-Fi network has a high-quality connection to the Internet. By using that information from your device and from other Wi-Fi Sense customers' devices too, Wi-Fi Sense builds a database of these high-quality networks. When you’re in range of one of these Wi-Fi hotspots, you automatically get connected to it.
 
 The initial settings for Wi-Fi Sense are determined by the options you chose when you first set up your PC with Windows 10.
-<p>**Note**<br>Wi-Fi Sense isn’t available in all countries or regions.
+
+**Note**<br>Wi-Fi Sense isn’t available in all countries or regions.
 
 ## How does Wi-Fi Sense work?
-Wi-Fi Sense connects your employees to the available Wi-Fi networks, including:
-
--   **Open Wi-Fi networks.** Wi-Fi Sense uses crowdsourcing to find the networks that other Windows users are connected to. Typically, these are the open (no password required) Wi-Fi hotspots you see when you’re out and about.
-
--   **Shared Wi-Fi networks.** Wi-Fi Sense uses the Wi-Fi networks that your employee shares with Facebook friends, Outlook.com contacts, or Skype contacts. Sharing doesn’t happen automatically; an employee must connect to a network, enter the network password, and then choose the **Share network with my contacts** box before the network is shared.
-
-**Important**<br>Wi-Fi Sense lets your employees share your network access with their contacts, without telling their contacts the actual network password. Should the contact want to share your network with another contact, he or she would have to share the network directly, by providing the password and clicking to share the network.
-
-Employees can't share network info with their contacts for any company network using the IEEE 802.1X protocol.
+Wi-Fi Sense connects your employees to open Wi-Fi networks. Typically, these are the open (no password required) Wi-Fi hotspots you see when you’re out and about.
 
 ## How to manage Wi-Fi Sense in your company
 In a company environment, you will most likely deploy Windows 10 to your employees' PCs using your preferred deployment method and then manage their settings globally. With that in mind, you have a few options for managing how your employees will use Wi-Fi Sense.
-<p>**Important**<br>Turning off Wi-Fi Sense also turns off all related features, including: connecting automatically to open hotspots, connecting automatically to networks shared by contacts, and sharing networks with contacts.
+
+**Important**<br>Turning off Wi-Fi Sense stops employees from connecting automatically to open hotspots.
 
 ### Using Group Policy (available starting with Windows 10, version 1511)
 You can manage your Wi-Fi Sense settings by using Group Policy and your Group Policy editor.
@@ -75,38 +69,20 @@ If your company still uses Unattend, you can manage your Wi-Fi Sense settings by
 <p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Unattended Windows Setup Reference topic, [WiFiSenseAllowed](http://go.microsoft.com/fwlink/p/?LinkId=620910).
 
 ### How employees can change their own Wi-Fi Sense settings
-If you don’t turn off the ability for your employees to use Wi-Fi Sense, they can turn the settings on locally by selecting **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings**, and then changing one or both of these settings under **Wi-Fi Sense**:
+If you don’t turn off the ability for your employees to use Wi-Fi Sense, they can turn it on locally by selecting **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings**, and then turning on **Connect to suggested open hotspots**.
 
--   Connect to suggested open hotspots
+![Wi-Fi Sense options shown to employees if it's not turned off](images/wifisense-settingscreens.png)
 
--   Connect to networks shared by my contacts
+**Important**<br>The service that was used to share networks with Facebook friends, Outlook.com contacts, or Skype contacts is no longer available. This means:
 
-    ![Wi-Fi Sense options shown to employees if it's not turned off](images/wifisense-settingscreens.png)
+The **Connect to networks shared by my contacts** setting will still appear in **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings** on your PC and in **Settings &gt; Network & wireless &gt; Wi‑Fi &gt; Wi‑Fi Sense** on your phone. However, this setting will have no effect now. Regardless of what it’s set to, networks won’t be shared with your contacts. Your contacts won’t be connected to networks you’ve shared with them, and you won’t be connected to networks they’ve shared with you.
 
-## Important considerations
-Whether to allow your employees to share your password-protected Wi-Fi networks with their contacts to give them Internet access is completely up to you. However, if you decide to allow it, you should consider the following important info.
+Even if you selected **Automatically connect to networks shared by your contacts** when you first set up your Windows 10 device, you still won’t be connected to networks your contacts have shared with you.
 
-### Network considerations
--   Wi-Fi Sense is designed to block contacts given Internet access through your password-protected network from reaching your intranet sites and other devices or files on the shared network.
-
--   Network info can only be shared with contacts using Wi-Fi Sense on PCs running Windows 10 or phones running Windows 10 Mobile. Wi-Fi Sense won’t work with any other operating system.
-
-### Security considerations
--   Your employees must be connected using a Microsoft account to use Wi-Fi Sense.
-
--   Your employees can’t pick individual contacts to share with. Instead, they must pick a group of contacts, such as their Skype contacts. In this case, all of the employee’s Skype contacts will be able to access the shared network.
-
--   Wi-Fi Sense is designed to block contacts from seeing the Wi-Fi network password. For networks you choose to share access to, the password is sent over an encrypted connection, stored in an encrypted file on a Microsoft server, and then sent over an HTTPS connection to the contacts' PC or phone if they use Wi-Fi Sense.
-
--   Access is only shared with your employee’s contacts. Wi-Fi Sense doesn't share networks with the contact's contacts. Should the contact want to share your network with another contact, he or she would have to share the network directly, by providing the password and clicking to share the network.
-
-### Sharing considerations
--   Employees can't share network info with their contacts for any company network using the IEEE 802.1X protocol.
-
--   Your employees can pick which Wi-Fi networks they want to share. The first time the employee connects to a password-protected Wi-Fi network, they’re presented with an option to share the network and to pick the contacts that should be given the info.
+If you select the **Share network with my contacts** check box the first time you connect to a new network, the network won’t be shared.
 
 ## Related topics
-- [Wi-Fi Sense FAQ](http://go.microsoft.com/fwlink/p/?LinkId=620911)
+- [Wi-Fi Sense and Privacy](http://go.microsoft.com/fwlink/p/?LinkId=620911)
 - [How to configure Wi-Fi Sense on Windows 10 in an enterprise](http://go.microsoft.com/fwlink/p/?LinkId=620959)
 
  
