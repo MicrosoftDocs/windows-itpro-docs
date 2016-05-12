@@ -51,3 +51,4 @@ See the topic [Review events and errors on endpoints with Event Viewer](event-er
 
 ### Related topic
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)

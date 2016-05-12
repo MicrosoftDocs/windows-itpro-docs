@@ -32,7 +32,7 @@ Your current time zone setting is shown in the Windows Defender ATP menu. You ca
 ### UTC time zone
 Windows Defender ATP uses UTC time by default.
 
-Setting the Windows Defender ATP time zone to UTC will display all system timestamps (alerts, events, etc.) in UTC for all users. Choosing this setting means that all users will see the same timestamps in Windows Defender ATP, regardless of their regional settings. This can help security analysts working in different locations across the globe to use the same time stamps while investigating events.
+Setting the Windows Defender ATP time zone to UTC will display all system timestamps (alerts, events, and others) in UTC for all users. Choosing this setting means that all users will see the same timestamps in Windows Defender ATP, regardless of their regional settings. This can help security analysts working in different locations across the globe to use the same time stamps while investigating events.
 
 ### Local time zone
 You can choose to have Windows Defender ATP use local time zone settings. All alerts and events will be displayed using your local time zone.

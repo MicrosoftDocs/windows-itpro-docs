@@ -46,9 +46,9 @@ There are three mechanisms to pivot the queue against:
 
 2. Filter alerts by their **Severity** by opening the drop-down menu in the **Filter by** field and selecting one or more of the check boxes:
 
-  - High (Red) - Threats often associated with advanced persistent threat (APT). These alerts pose a high risk due to the severity of the damage they might inflict on endpoints.
-  - Medium (Orange) - Threats considered to be abnormal or suspicious in nature such as anomalous registry modifications and loading of executable files.
-  - Low (Yellow) - Threats associated with prevalent malware and hack-tools that pose a lower risk to endpoints.
+  - High (Red) - Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on endpoints.
+  - Medium (Orange) - Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
+  - Low (Yellow) - Threats associated with prevalent malware and hack-tools that do not appear to indicate an advanced threat targeting the organization.
 
 3. Limit the queue to see alerts from various set periods by clicking the drop-down menu in the date range field (by default, this is selected as **6 months**):
 
@@ -62,7 +62,6 @@ There are three mechanisms to pivot the queue against:
 
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)

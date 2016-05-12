@@ -109,7 +109,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 netsh winhttp show proxy
 ```
 
-For more information on how to use Netsh see, [https://technet.microsoft.com/en-us/library/cc731131(v=ws.10).aspx](https://technet.microsoft.com/en-us/library/cc731131(v=ws.10).aspx)     
+For more information on how to use Netsh see, [Netsh Commands for Windows Hypertext Transfer Protocol (WINHTTP)](https://technet.microsoft.com/en-us/library/cc731131(v=ws.10).aspx)     
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 
@@ -179,7 +179,6 @@ If the any of the verification steps indicate a fail, then verify that you have 
 ## Related topics
 <!--- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
 - [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
