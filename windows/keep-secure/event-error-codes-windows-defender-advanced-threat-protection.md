@@ -1,5 +1,5 @@
 ---
-title: Review events and errors on endpoints with Event Viewer 
+title: Review events and errors on endpoints with Event Viewer
 description: Get descriptions and further troubleshooting steps (if required) for all events reported by the Windows Defender ATP service.
 keywords: troubleshoot, event viewer, lof summary, failure code, failed, Windows Advanced Threat Protection service, cannot start, broken, can't start
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10 Insider Preview
+- Windows 10 Insider Preview Build 14332 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
