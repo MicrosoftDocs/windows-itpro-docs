@@ -37,7 +37,6 @@
 ## [Upgrade to Windows 10 with System Center Configuration Manager](upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 ## [Windows 10 edition upgrade](windows-10-edition-upgrades.md)
 ## [Deploy Windows To Go in your organization](deploy-windows-to-go.md)
-## [Update Windows 10 images with provisioning packages](update-windows-10-images-with-provisioning-packages.md)
 ## [Sideload apps in Windows 10](sideload-apps-in-windows-10.md)
 ## [Volume Activation [client]](volume-activation-windows-10.md)
 ### [Plan for volume activation [client]](plan-for-volume-activation-client.md)
