@@ -17,4 +17,4 @@ Learn about using Windows 10 in schools.
 | tbd | tbd |
 
 ## Related topics
-- [Windows 10 and Windows 10 Mobile](../index.md)
+- [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
