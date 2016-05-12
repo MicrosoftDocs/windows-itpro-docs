@@ -17,6 +17,7 @@ author: jdeckerMS
 |Topic |Description |
 |------|------------|
 |[Use Set up School PCs app](use-set-up-school-pcs-app.md) | Learn how to use the Set up School PCs app to quickly configure new Windows 10 PCs for students. |
+| [Set up students' PCs to join domain](set-up-students-pcs-to-join-domain.md) | Learn how to create provisioning packages to easily configure student's PCs to join your Active Directory domain. |
 | [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md) | Learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. |
 | [Chromebook migration guide](chromebook-migration-guide.md) | Learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment. |
 
