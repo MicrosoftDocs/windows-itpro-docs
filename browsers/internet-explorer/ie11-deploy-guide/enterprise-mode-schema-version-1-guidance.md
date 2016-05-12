@@ -168,6 +168,23 @@ Where http://fabrikam.com doesn't use IE8 Enterprise Mode, but http://fabrikam.c
 </tr>
 </table>
 
+### Use Enterprise Mode and document mode together
+If you want to use both Enterprise Mode and document mode together, you need to be aware that  &lt;emie&gt; entries override &lt;docMode&gt; entries for the same domain. 
+
+For example, say you want all of the sites in the contoso.com domain to open using IE8 Enterprise Mode, except test.contoso.com, which needs to open in document mode 11. Because Enterprise Mode takes precedence over document mode, if you want test.contoso.com to open using document mode, you'll need to explicitly add it as an exclusion to the &lt;emie&gt; parent node.
+
+```xml
+<rules version="1">
+  <emie>
+    <domain exclude="false">contoso.com</domain>
+    <domain exclude="true">test.contoso.com</domain>
+  </emie>
+  <docMode>
+    <domain docMode="11">test.contoso.com</domain>
+  </docMode>
+</rules>
+```
+
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
 - Don’t use protocols. For example, `http://`, `https://`, or custom protocols. They break parsing.
@@ -265,5 +282,3 @@ If you want to target specific sites in your organization.
 </ul>
 </td></tr>
 </table>
-
-
