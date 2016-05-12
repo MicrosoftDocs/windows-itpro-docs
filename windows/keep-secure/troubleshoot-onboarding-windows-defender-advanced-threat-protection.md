@@ -81,7 +81,7 @@ Event ID | Message | Resolution steps
 
 
 ### Ensure the Windows Defender ATP service is enabled
-If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service is set to automatically start and is running on the endpoint. 
+If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service is set to automatically start and is running on the endpoint.
 
 You can use the SC command line program for checking and managing the startup type and running state of the service.
 
@@ -314,7 +314,7 @@ If the service is not running, you'll need to start it.
 
 2.  Scroll through the list of services until you find **Connected User Experiences and Telemetry**.
 
-3.  Right-click on the entry and click **Start**, as shown in the following image. 
+3.  Right-click on the entry and click **Start**, as shown in the following image.
 
 ![Select Start to start the service](images/windef-utc-console-start.png)
 
@@ -362,7 +362,8 @@ Log in to the application in the Azure Management Portal again:
 -->
 
 ## Related topics
-- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)
+<!--- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Configure endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
 - [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)

@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender ATP endpoint proxy and Internet connection
+title: Configure Windows Defender ATP endpoint proxy and Internet connection settings
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings
 search.product: eADQiWindows 10XVcnh
@@ -10,7 +10,7 @@ author: mjcaparas
 ---
 
 
-# Configure Windows Defender ATP endpoint proxy and Internet connectivity settings
+# Configure endpoint proxy and Internet connectivity settings
 
 **Applies to:**
 
@@ -179,6 +179,7 @@ If the any of the verification steps indicate a fail, then verify that you have 
 ## Related topics
 <!--- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Configure endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
 - [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
