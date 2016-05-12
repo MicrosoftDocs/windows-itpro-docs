@@ -27,7 +27,7 @@ Provisioning packages are simple enough that with a short set of written instruc
 
 The Windows Assessment and Deployment Kit (ADK) for Windows 10 included the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. Windows 10, Version 1607, adds simple wizards for creating provisioning packages to set up shared devices for businesses and schools. 
 
-![Configuration Designer options](/images/icd.png)
+![Configuration Designer options](images/icd.png)
 
 
 ## Benefits of provisioning packages
