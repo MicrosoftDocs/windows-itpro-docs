@@ -27,7 +27,7 @@ You have to assign users to the Windows Defender ATP Service application in Azur
     have users assigned to the Windows ATP Service application, you will
     be directed to open the [Microsoft Azure Dashboard](https://portal.azure.com) to manage user access.
 
-    > **Note**&nbsp;&nbsp; In AAD, a directory is essentially a tenant. See the [Azure AD documentation](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx) for more information on how tenants work with AAD.
+    > **Note**&nbsp;&nbsp;In AAD, a directory is essentially a tenant. See the [Azure AD documentation](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx) for more information on how tenants work with AAD.
 
 2.  Ensure you have logged in to Microsoft Azure with an account that
     has permissions to assign users to an application in AAD. You might
@@ -74,7 +74,7 @@ You have to assign users to the Windows Defender ATP Service application in Azur
 
     ![Example selected organization in Azure Active Directory](images/contoso-application.png)
 
-    > **Note**&nbsp;&nbsp; The application might have a slightly different name than the one shown here. It might be called **Windows Defender ATP Service**.
+    > **Note**&nbsp;&nbsp;The application might have a slightly different name than the one shown here. It might be called **Windows Defender ATP Service**.
 
 8. Click **Users** from the top menu bar. A list of users that are in the directory is displayed.
 
@@ -82,7 +82,7 @@ You have to assign users to the Windows Defender ATP Service application in Azur
 
     ![Example user assignment to the windows atp service](images/assign-users.png)
 
-    > **Note**&nbsp;&nbsp; If you do not normally work with AAD, you might not see any users in the directory, or we might have created a test tenant specifically for a single user’s account. See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section for instructions on adding users to a directory.
+    > **Note**&nbsp;&nbsp;If you do not normally work with AAD, you might not see any users in the directory, or we might have created a test tenant specifically for a single user’s account. See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section for instructions on adding users to a directory.
 
 9. Select the user you want manage.
 
@@ -100,11 +100,11 @@ You have to assign users to the Windows Defender ATP Service application in Azur
 
 14. To remove the access for all users, click **Manage access**. If you click **Complete** ![Complete icon](images/check-icon.png), you will not see the Windows ATP Service in the list of applications in your directory.
 
-    > **Note**&nbsp;&nbsp; If you want to give access to users again, see the Manage access for all users in Azure Active Directory topic in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
+    > **Note**&nbsp;&nbsp;If you want to give access to users again, see the Manage access for all users in Azure Active Directory topic in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 15. You can continue assigning roles for other users in your organization now, or you can return to the Windows Defender ATP portal to complete the service onboarding wizard.
 
-    > **Note**&nbsp;&nbsp; You need to assign roles for every user in your organization that requires access to the Windows Defender ATP portal. You can assign roles at any time by going to the Azure Management Portal, clicking **Active Directory**, and then finding your directory in the list and following the steps above.
+    > **Note**&nbsp;&nbsp;You need to assign roles for every user in your organization that requires access to the Windows Defender ATP portal. You can assign roles at any time by going to the Azure Management Portal, clicking **Active Directory**, and then finding your directory in the list and following the steps above.
 
 When you have finished assigning roles, return to the [Windows Defender ATP portal](https://securitycenter.windows.com) and refresh the
 page.
