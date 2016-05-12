@@ -26,6 +26,7 @@ Because this content isn't intended to be a step-by-step guide, not all of the s
 ## In this guide
 |Topic |Description |
 |------|------------|
+|[Change history for Internet Explorer 11](change-history-for-internet-explorer-11.md) |Lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10 and Windows 10 Mobile. |
 |[System requirements and language support for Internet Explorer 11 (IE11)](system-requirements-and-language-support-for-ie11.md) |IE11 is available for a number of systems and languages. This topic provides info about the minimum system requirements and language support. |
 |[List of updated features and tools - Internet Explorer 11 (IE11)](updated-features-and-tools-with-ie11.md) |IE11 includes several new features and tools. This topic includes high-level info about the each of them. |
 |[Install and Deploy Internet Explorer 11 (IE11)](install-and-deploy-ie11.md) |Use the topics in this section to learn how to customize your Internet Explorer installation package, how to choose the right method for installation, and how to deploy IE into your environment. You can also find more info about your virtualization options for legacy apps. |
