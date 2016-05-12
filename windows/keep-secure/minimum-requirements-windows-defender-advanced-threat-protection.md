@@ -34,7 +34,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 -   Review the [Windows Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
 
 ### Endpoint hardware and software requirements
-Endpoints on your network must be running the pre-release version of Windows build 14332 or greater. The hardware requirements for Windows Defender ATP on endpoints is the same as those for Windows build 14332.
+Endpoints on your network must be running Windows 10 Insider Preview Build 14332 or later. The hardware requirements for Windows Defender ATP on endpoints is the same as those for Windows 10 Insider Preview Build 14332 or later.
 
 > **Note**&nbsp;&nbsp;Endpoints that are running Windows Server and mobile versions of Windows are not supported.
 
