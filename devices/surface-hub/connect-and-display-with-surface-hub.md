@@ -14,7 +14,7 @@ You can connect other device to your Surface Hub to display content. This topic 
 ## Guest mode
 
 
-Guest mode uses a wired connection, so people can display content from their devices to the Surface Hub. Windows devices can also provide Touchback and Inkback. Surface Hub's internal PC takes video and audio from the connected device and displays them on the Surface Hub. If Surface Hub encounters an HDCP signal, the source will be re-routed through an alternate path, allowing the source to be displayed full-screen without violating HDCP requirements.
+Guest mode uses a wired connection, so people can display content from their devices to the Surface Hub. If the source device is Windows based, that device can also provide Touchback and Inkback. Surface Hub's internal PC takes video and audio from the connected device and displays them on the Surface Hub. If Surface Hub encounters an HDCP signal, the source will be re-routed through an alternate path, allowing the source to be displayed full-screen without violating HDCP requirements.
 
 ### Ports
 
@@ -42,7 +42,7 @@ Use these ports on the Surface Hub for the guest mode.
 <td><p>Guest input #1</p></td>
 <td><ul>
 <li><p>Support simultaneous guest input display with guest input #2 and guest input #3 (one full resolution, two thumbnail).</p></li>
-<li><p>HDCP complian in bypass mode</p></li>
+<li><p>HDCP compliant in bypass mode</p></li>
 <li><p>Touchback enabled</p></li>
 </ul></td>
 </tr>
@@ -52,7 +52,7 @@ Use these ports on the Surface Hub for the guest mode.
 <td><p>Guest input #2</p></td>
 <td><ul>
 <li><p>Support simultaneous guest input display with guest input #1 and guest input #3 (one full resolution, two thumbnail).</p></li>
-<li><p>HDCP complian in bypass mode</p></li>
+<li><p>HDCP compliant in bypass mode</p></li>
 <li><p>Touchback enabled</p></li>
 </ul></td>
 </tr>
@@ -221,19 +221,19 @@ In replacement PC mode, the embedded computer of the Surface Hub is turned off a
 
 ### Software requirements
 
-You can run Surface Hub in replacement PC mode with 64-bit versions of Windows Home, Windows Pro and Windows Enterprise. You can download the Surface Hub Replacement PC Driver Package from the Microsoft download center. We recommend that you install these drivers on any computer you plan to use as a replacement PC.
+You can run Surface Hub in replacement PC mode with 64-bit versions of Windows 10 Home, Windows 10 Pro and Windows 10 Enterprise. You can download the  [Surface Hub Replacement PC driver package](https://www.microsoft.com/en-us/download/details.aspx?id=52210) from the Microsoft download center. We recommend that you install these drivers on any computer you plan to use as a replacement PC.
 
 ### Hardware requirements
 
-Surface Hub is compatible with a range of hardware. Choose the processor and memory confirmation for your replacement PC so that it supports the app you'll be using. Your replacement PC hardware needs to support 64-bit versions of Windows 10.
+Surface Hub is compatible with a range of hardware. Choose the processor and memory confirmation for your replacement PC so that it supports the programs you'll be using. Your replacement PC hardware needs to support 64-bit versions of Windows 10.
 
 ### Graphics adapter
 
 In replacement PC mode, Surface Hub supports any graphics adapter that can produce a DisplayPort signal. You'll improve your experience with a graphics adapter that can match Surface Hub's resolution and refresh rate. For example, though the best and recommended replacement PC experience on the Surface Hub is with a 120Hz video signal, 60Hz video signals are also supported.
 
-**55" Surface Hubs** - Graphics adapter needs to be capable of a resolution of 1920 x 1080 at 120Hz.
+**55" Surface Hubs** - For best experience, use a graphics card capable of 1080p resolution at 120Hz.
 
-**84" Surface Hubs** - Graphics adapter needs to be capable of outputting four DisplayPort 1.2 streams to produce 2160 pixels at 120Hz (3840 x 2160 at 120Hz vertical refresh). Options for graphics cards include NVIDIA K2200, NVIDIA K4200, and NVIDIA M6000.
+**84" Surface Hubs** - For best experience, use a graphics card capable of outputting four DisplayPort 1.2 streams to produce 2160p at 120Hz (3840 x 2160 at 120Hz vertical refresh). We've verified that this works with the NVIDIA Quadro K2200, NVIDIA Quadro K4200, and NVIDIA Quadro M6000. These are not the only graphics cards - others are available from other vendors. 
 
 Check directly with graphics card vendors for the latest drivers.
 
@@ -268,7 +268,7 @@ Check directly with graphics card vendors for the latest drivers.
 
 ### Ports
 
-Ports to 55" Surface Hub.
+Replacement PC ports on 55" Surface Hub.
 
 ![image showing replacement pc ports on 55" surface hub. ](images/sh-55-rpc-ports.png)
 
@@ -307,6 +307,7 @@ Ports to 55" Surface Hub.
 <li><p>Speakers</p></li>
 <li><p>Microphone</p></li>
 <li><p>Cameras</p></li>
+<li><p>NFC sensor</p></li>
 <li><p>Ambient light sensor</p></li>
 <li><p>Passive infrared sensor</p></li>
 </ul></td>
@@ -324,7 +325,7 @@ Ports to 55" Surface Hub.
 
  
 
-Ports to 55" Surface Hub.
+Replacement PC ports on 84" Surface Hub.
 
 ![image showing replacement pc ports on 84" surface hub. ](images/sh-84-rpc-ports.png)
 
@@ -363,6 +364,7 @@ Ports to 55" Surface Hub.
 <li><p>Speakers</p></li>
 <li><p>Microphone</p></li>
 <li><p>Cameras</p></li>
+<li><p>NFC sensor</p></li>
 <li><p>Ambient light sensor</p></li>
 <li><p>Passive infrared sensor</p></li>
 </ul></td>
@@ -394,9 +396,9 @@ Ports to 55" Surface Hub.
 
 3.  Connect the cables from the Surface Hub's replacement PC ports to the replacement PC. These ports are usually covered by a removable plastic cover.
 
-    55" Surface Hub -- remove one DisplayPort cable, and two USB cables.
+    55" Surface Hub -- connect one DisplayPort cable, and two USB cables.
 
-    84" Surface Hub -- remove two DisplayPort cables, and two USB cables.
+    84" Surface Hub -- connect two DisplayPort cables, and two USB cables.
 
 4.  Toggle the Mode switch to **Replacement PC**. The Mode switch is next to the Replacement PC ports.
 
