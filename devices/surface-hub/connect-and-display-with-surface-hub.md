@@ -293,7 +293,7 @@ Replacement PC ports on 55" Surface Hub.
 <td><p>Video input</p></td>
 <td><p>DisplayPort 1.2</p></td>
 <td><ul>
-<li><p>Full screen display of 1080 pixels at 120 Hz, plus audio</p></li>
+<li><p>Full screen display of 1080p at 120 Hz, plus audio</p></li>
 <li><p>HDCP compliant</p></li>
 </ul></td>
 </tr>
@@ -350,7 +350,7 @@ Replacement PC ports on 84" Surface Hub.
 <td><p>Video input</p></td>
 <td><p>DisplayPort 1.2 (2x)</p></td>
 <td><ul>
-<li><p>Full screen display of 2160 pixels at 120 Hz, plus audio</p></li>
+<li><p>Full screen display of 2160p at 120 Hz, plus audio</p></li>
 <li><p>HDCP compliant</p></li>
 </ul></td>
 </tr>
