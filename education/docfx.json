@@ -19,6 +19,6 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "edu"
+    "dest": "education"
   }
 }
