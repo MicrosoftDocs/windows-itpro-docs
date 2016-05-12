@@ -23,7 +23,7 @@ You can use a Group Policy (GP) configuration package, a System Center Configura
 ## Configure with Group Policy
 Using the GP configuration package ensures your endpoints will be correctly configured to report to the Windows Defender ATP service.
 
-> **Note**&nbsp;&nbsp;To use GP updates to deploy the package, you must be on Windows Server 2008 R2 or later. The endpoints must be running Windows 10 Build 14332 or later.
+> **Note**&nbsp;&nbsp;To use GP updates to deploy the package, you must be on Windows Server 2008 R2 or later. The endpoints must be running Windows 10 Insider Preview Build 14332 or later.
 
 1.  Open the GP configuration package .zip file (*WindowsATPOnboardingPackage_GroupPolicy.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
