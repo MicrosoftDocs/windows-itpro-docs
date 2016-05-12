@@ -6,7 +6,7 @@ keywords: ["upgrade, update, task sequence, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Upgrade to Windows 10 with the Microsoft Deployment Toolkit

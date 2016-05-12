@@ -52,7 +52,7 @@ The following table lists the different parts of Start and any applicable policy
 <p>-and-</p>
 <p>Dynamically inserted app tile</p></td>
 <td align="left"><p>MDM: <strong>Allow Windows Consumer Features</strong></p>
-<p>Group Policy: <strong>Computer Configuration</strong>\<strong>Administrative Templates</strong>\<strong>Windows Components</strong>\<strong>Cloud Content</strong>\<strong>Turn off Microsoft consumer experiences</strong></p>
+<p>Group Policy: <strong>Computer Configuration</strong>\\<strong>Administrative Templates</strong>\\<strong>Windows Components</strong>\\<strong>Cloud Content</strong>\\<strong>Turn off Microsoft consumer experiences</strong></p>
 <div class="alert">
 <strong>Note</strong>  
 <p>This policy also enables or disables notifications for a user's Microsoft account and app tiles from Microsoft dynamically inserted in the default Start menu.</p>

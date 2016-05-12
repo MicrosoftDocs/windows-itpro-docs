@@ -6,7 +6,7 @@ keywords: ["best practices, USB, device, boot"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: mtniehaus
 ---
 
 # Best practice recommendations for Windows To Go

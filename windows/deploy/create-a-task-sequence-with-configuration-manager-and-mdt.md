@@ -6,7 +6,7 @@ keywords: ["deploy, upgrade, task sequence, install"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Create a task sequence with Configuration Manager and MDT

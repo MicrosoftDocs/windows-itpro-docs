@@ -12,10 +12,6 @@ author: jamiejdt
 
 -   [Advanced Group Policy Management 4.0 documents](http://go.microsoft.com/fwlink/?LinkID=158931)
 
--   [Advanced Group Policy Management 3.0 documents](http://go.microsoft.com/fwlink/?LinkID=158930)
-
--   [Advanced Group Policy Management 2.5 documents](http://go.microsoft.com/fwlink/?LinkId=163556)
-
 ### Microsoft Desktop Optimization Pack resources
 
 -   [Microsoft Desktop Optimization Pack (MDOP) for Software Assurance TechCenter](http://go.microsoft.com/fwlink/?LinkID=159870) (http://www.microsoft.com/technet/mdop): Links to MDOP videos and resources.
