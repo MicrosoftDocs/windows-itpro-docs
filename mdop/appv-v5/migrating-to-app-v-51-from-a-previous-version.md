@@ -9,7 +9,7 @@ author: jamiejdt
 
 
 With Microsoft Application Virtualization (App-V) 5.1, you can migrate your existing App-V 4.6 or App-V 5.0 infrastructure to the more flexible, integrated, and easier to manage App-V 5.1 infrastructure.
-However, you cannot migrate directly from App-V 4.x to App-V 5.1, you must migrate to App-V 5.0 first. For more information on migrating from App-V 4.x to App-V 5.0, see [Migrating from a Previous Version](migrating-from-a-previous-version-aap-v-50.md)  
+However, you cannot migrate directly from App-V 4.x to App-V 5.1, you must migrate to App-V 5.0 first. For more information on migrating from App-V 4.x to App-V 5.0, see [Migrating from a Previous Version](migrating-from-a-previous-version-app-v-50.md)  
 
 **Note**  
 App-V 5.1 packages are exactly the same as App-V 5.0 packages. There has been no change in the package format between the versions and therefore, there is no need to convert App-V 5.0 packages to App-V 5.1 packages.
