@@ -17,7 +17,7 @@
 ##### [Planning to Deploy App-V 5.1 with an Electronic Software Distribution System](planning-to-deploy-app-v-51-with-an-electronic-software-distribution-system.md)
 ##### [Planning for the App-V 5.1 Server Deployment](planning-for-the-app-v-51-server-deployment.md)
 ##### [Planning for the App-V 5.1 Sequencer and Client Deployment](planning-for-the-app-v-51-sequencer-and-client-deployment.md)
-##### [Planning for Migrating from a Previous Version of App-V 5.1 ](planning-for-migrating-from-a-previous-version-of-app-v51.md)
+##### [Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v51.md)
 ##### [Planning for Using App-V with Office 5.1](planning-for-using-app-v-with-office51.md)
 ##### [Planning to Use Folder Redirection with App-V 5.1](planning-to-use-folder-redirection-with-app-v51.md)
 #### [App-V 5.1 Planning Checklist](app-v-51-planning-checklist.md)

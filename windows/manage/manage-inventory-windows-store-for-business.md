@@ -1,6 +1,7 @@
 ---
 title: Manage inventory in Windows Store for Business (Windows 10)
 description: When you acquire apps from the Windows Store for Business, we add them to the Inventory for your organization. Once an app is part of your inventory, you can distribute the app, and manage licenses.
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/app-inventory-management-windows-store-for-business
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -38,7 +39,7 @@ Another way to distribute apps is by assigning them to people in your organizati
 3.	Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
 4.	Type the email address for the employee that you're assigning the app to, and click **Confirm**.
 
-Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **MyLibrary**. 
+Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**. 
 
 ## Manage licenses
 For apps in inventory, when you assign an app to an employee, a license for the app is assigned to them. You can manage these licenses, either by assigning them, or reclaiming them so you can assign them to another employee. You can also remove an app from the private store. 
