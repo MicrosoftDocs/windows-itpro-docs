@@ -908,7 +908,7 @@ There are also a number of software vendors who provide software that helps auto
 ## Perform cloud services migration
 
 
-In the [Plan for cloud services migration](#plan-cloud-services)section, you identified the cloud services currently in use, selected the cloud services that you want to migrate, prioritized the cloud services to migrate, and then selected the cloud services migration strategy. You can perform the cloud services migration before or after you deploy the Windows devices.
+In the [Plan for cloud services migration](#plan-cloud-services) section, you identified the cloud services currently in use, selected the cloud services that you want to migrate, prioritized the cloud services to migrate, and then selected the cloud services migration strategy. You can perform the cloud services migration before or after you deploy the Windows devices.
 
 Migrate the cloud services that you currently use to the Microsoft cloud services that you selected. For example, you could migrate from a collaboration website to Office 365 SharePoint. Perform the cloud services migration based on the existing cloud services and the Microsoft cloud services that you selected.
 
