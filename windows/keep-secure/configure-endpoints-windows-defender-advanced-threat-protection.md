@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP endpoints
-description: Use Group Policy to deploy the configuration package or do manual registry changes on endpoints so that they are onboarded to the service.
-keywords: configure endpoints, client onboarding, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
+description: Use Group Policy or SCCM to deploy the configuration package or do manual registry changes on endpoints so that they are onboarded to the service.
+keywords: configure endpoints, client onboarding, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, sccm, system center configuration manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy

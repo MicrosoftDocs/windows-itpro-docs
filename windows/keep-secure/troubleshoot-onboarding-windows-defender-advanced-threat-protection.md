@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Windows Defender ATP onboarding issues
 description: Troubleshoot issues that might arise during the onboarding of endpoints or to the Windows Defender ATP service.
-keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds
+keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, telemetry and diagnostics
 search.product: eADQiWindows 10XVcnh
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -173,7 +173,7 @@ First, you should check that the service is set to start automatically when Wind
 
 ### Ensure the service is set to start
 
-**Use the command line to check the Windows 10 telemetry and diganostics service startup type**:
+**Use the command line to check the Windows 10 telemetry and diagnostics service startup type**:
 
 1.  Open an elevated command-line prompt on the endpoint:
 
@@ -195,7 +195,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 
 
 
-**Use the command line to set the Windows 10 telemetry and diganostics service to automatically start:**
+**Use the command line to set the Windows 10 telemetry and diagnostics service to automatically start:**
 
 1.  Open an elevated command-line prompt on the endpoint:
 
@@ -215,7 +215,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
     sc qc diagtrack
     ```
 
-**Use the Windows Services console to check the Windows 10 telemetry and diganostics service startup type**:
+**Use the Windows Services console to check the Windows 10 telemetry and diagnostics service startup type**:
 
 1.  Open the services console:
 
@@ -230,7 +230,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 If the startup type is not set to **Automatic**, you'll need to change it so the service starts when the endpoint does.
 
 
-**Use the Windows Services console to set the Windows 10 telemetry and diganostics service to automatically start:**
+**Use the Windows Services console to set the Windows 10 telemetry and diagnostics service to automatically start:**
 
 1.  Open the services console:
 
@@ -248,7 +248,7 @@ If the startup type is not set to **Automatic**, you'll need to change it so the
 
 ### Ensure the service is running
 
-**Use the command line to check the Windows 10 telemetry and diganostics service is running**:
+**Use the command line to check the Windows 10 telemetry and diagnostics service is running**:
 
 1.  Open an elevated command-line prompt on the endpoint:
 
@@ -269,7 +269,7 @@ If the service is running, the result should look like the following screenshot:
 If the service **STATE** is not set to **RUNNING**, then you'll need to start it.
 
 
-**Use the command line to start the Windows 10 telemetry and diganostics service:**
+**Use the command line to start the Windows 10 telemetry and diagnostics service:**
 
 1.  Open an elevated command-line prompt on the endpoint:
 
@@ -289,7 +289,7 @@ If the service **STATE** is not set to **RUNNING**, then you'll need to start it
     sc query diagtrack
     ```
 
-**Use the Windows Services console to check the Windows 10 telemetry and diganostics service is running**:
+**Use the Windows Services console to check the Windows 10 telemetry and diagnostics service is running**:
 
 1.  Open the services console:
 
@@ -304,7 +304,7 @@ If the service **STATE** is not set to **RUNNING**, then you'll need to start it
 If the service is not running, you'll need to start it.
 
 
-**Use the Windows Services console to start the Windows 10 telemetry and diganostics service:**
+**Use the Windows Services console to start the Windows 10 telemetry and diagnostics service:**
 
 1.  Open the services console:
 
