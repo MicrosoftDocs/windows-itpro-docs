@@ -109,7 +109,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 <tbody> 
 <tr><th valign="top"><p>Policy name</p></th><th valign="top"><p>Value</p></th><th valign="top"><p>When set</p></th> 
 </tr> 
-<tr><td valign="top" colspan="3"><p><strong>Admin Templates</strong>&gt;<strong>Control Panel</strong>&gt;<strong>Personalization</strong></p></td> 
+<tr><td valign="top" colspan="3"><p><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong></p></td> 
 </tr> 
 <tr><td valign="top"><p>Prevent enabling lock screen slide show</p></td><td valign="top"><p>Enabled</p></td><td valign="top"><p>Always</p></td> 
 </tr> 
@@ -117,7 +117,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr><td valign="top"><p>Prevent changing lock screen and logon image</p></td><td valign="top"><p>Enabled</p></td><td valign="top"><p>Always</p></td> 
 </tr> 
-<tr><td valign="top" colspan="3"><p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>Power Management</strong>&gt;<strong>Button Settings</strong></p></td> 
+<tr><td valign="top" colspan="3"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Button Settings</strong></p></td> 
 </tr> 
 <tr><td valign="top"><p>Select the Power button action (plugged in)</p></td><td valign="top"><p>Sleep</p></td><td valign="top"><p>  SetPowerPolicies=True</p></td> 
 </tr> 
@@ -129,7 +129,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr><td valign="top"><p>Select the lid switch action (on battery)</p></td><td valign="top"><p>Sleep</p></td><td valign="top"><p>SetPowerPolicies=True</p></td> 
 </tr> 
-<tr><td valign="top" colspan="3"><p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>Power Management</strong>&gt;<strong>Sleep Settings</strong></p></td> 
+<tr><td valign="top" colspan="3"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Sleep Settings</strong></p></td> 
 </tr> 
 <tr><td valign="top"><p>Require a password when a computer wakes (plugged in)</p></td><td valign="top"><p>Enabled</p></td><td valign="top"><p>SignInOnResume = True </p></td> 
 </tr> 
@@ -151,10 +151,10 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td valign="top"> <p> Specify the system hibernate timeout (plugged in) </p> </td> <td valign="top"> <p> Enabled, 0 </p> </td> <td valign="top"> <p> SetPowerPolicies=True </p> </td> 
 </tr> 
-<tr> <td valign="top"> <p> Specify the system hibernate timeout (on battery) </p> </td> <td valign="top"> <p> Enabled, 0 </p> </td> <td valign="top"> <p> SetPowerPolicies=True </p> </td> </tr> <tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>System</strong> &gt; <strong>Power Management</strong> &gt; <strong>Video and Display Settings</strong> </p> </td> </tr> 
+<tr> <td valign="top"> <p> Specify the system hibernate timeout (on battery) </p> </td> <td valign="top"> <p> Enabled, 0 </p> </td> <td valign="top"> <p> SetPowerPolicies=True </p> </td> </tr> <tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Power Management</strong>  >  <strong>Video and Display Settings</strong> </p> </td> </tr> 
 <tr> <td valign="top"> <p> Turn off the display (plugged in) </p> </td> <td valign="top"> <p> <em>SleepTimeout</em> </p> </td> <td valign="top"> <p> SetPowerPolicies=True </p> </td> </tr> <tr> <td valign="top"> <p> Turn off the display (on battery </p> </td> <td valign="top"> <p> <em>SleepTimeout</em> </p> </td> <td valign="top"> <p> SetPowerPolicies=True </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>System</strong> &gt; <strong>Logon</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Logon</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Show first sign-in animation </p> </td> <td valign="top"> <p> Disabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
@@ -168,11 +168,11 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td valign="top"> <p> Block user from showing account details on sign-in </p> </td> <td valign="top"> <p> Enabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>System</strong> &gt; <strong>User Profiles</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>User Profiles</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Turn off the advertising ID </p> </td> <td valign="top"> <p> Enabled </p> </td> <td valign="top"> <p> SetEduPolicies = True </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>Windows Components </strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components </strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Do not show Windows Tips </p> </td> <td valign="top"> <p> Enabled </p> </td> <td valign="top"> <p> SetEduPolicies = True </p> </td> 
 </tr> 
@@ -182,7 +182,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td valign="top"> <p> Prevent the usage of OneDrive for file storage </p> </td> <td valign="top"> <p> Enabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>Windows Components</strong> &gt; <strong>Biometrics</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Biometrics</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Allow the use of biometrics </p> </td> <td valign="top"> <p> Disabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
@@ -190,7 +190,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td valign="top"> <p> Allow domain users to log on using biometrics </p> </td> <td valign="top"> <p> Disabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>Windows Components</strong> &gt; <strong>Data Collection and Preview Builds</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Data Collection and Preview Builds</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Toggle user control over Insider builds </p> </td> <td valign="top"> <p> Disabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
@@ -198,11 +198,11 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td valign="top"> <p> Do not show feedback notifications </p> </td> <td valign="top"> <p> Enabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>Windows Components</strong> &gt; <strong>File Explorer</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>File Explorer</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Show lock in the user tile menu </p> </td> <td valign="top"> <p> Disabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>Windows Components</strong> &gt; <strong>Maintenance Scheduler</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Maintenance Scheduler</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Automatic Maintenance Activation Boundary </p> </td> <td valign="top"> <p> <em>MaintenanceStartTime</em> </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
@@ -210,17 +210,17 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td valign="top"> <p> Automatic Maintenance WakeUp Policy </p> </td> <td valign="top"> <p> Enabled </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>Windows Components</strong> &gt; <strong>Microsoft Edge</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Microsoft Edge</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Open a new tab with an empty tab </p> </td> <td valign="top"> <p> Disabled </p> </td> <td valign="top"> <p> SetEduPolicies = True </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Configure corporate home pages </p> </td> <td valign="top"> <p> Enabled, about:blank </p> </td> <td valign="top"> <p> SetEduPolicies = True </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong> &gt; <strong>Windows Components</strong> &gt; <strong>Search</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Search</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Allow Cortana </p> </td> <td valign="top"> <p> Disabled </p> </td> <td valign="top"> <p> SetEduPolicies = True </p> </td> 
 </tr> 
-<tr> <td valign="top" colspan="3"> <p> <strong>Windows Settings</strong> &gt; <strong>Security Settings</strong> &gt; <strong>Local Policies</strong> &gt; <strong>Security Options</strong> </p> </td> 
+<tr> <td valign="top" colspan="3"> <p> <strong>Windows Settings</strong>  >  <strong>Security Settings</strong>  >  <strong>Local Policies</strong>  >  <strong>Security Options</strong> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Interactive logon: Do not display last user name </p> </td> <td valign="top"> <p> - Enabled </p> <p> - Disabled when account model is only guest </p> </td> <td valign="top"> <p> Always </p> </td> 
 </tr> 
