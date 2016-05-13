@@ -1,5 +1,6 @@
 # [Windows 10 for education](index.md)
 ## [Use the Set up School PCs app](use-set-up-school-pcs-app.md)
+## [Set up School PCs app technical reference](set-up-school-pcs-technical.md)
 ## [Set up students' PCs to join domain](set-up-students-pcs-to-join-domain.md)
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 ## [Chromebook migration guide](chromebook-migration-guide.md)
