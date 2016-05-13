@@ -109,8 +109,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 <thead><tr><th><p>Policy name</p></th><th><p>Value</p></th><th><p>When set</p></th> 
 </tr> </thead>
 <tbody>
-<tr><td colspan="3"><p>**Admin Templates** > **Control Panel** > **Personalization**</p></td> 
-</tr> 
+ 
 <tr><td><p>Prevent enabling lock screen slide show</p></td><td><p>Enabled</p></td><td><p>Always</p></td> 
 </tr> 
 
