@@ -105,17 +105,6 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 > **Important**: It is not recommended to set additional policies on PCs configured with the **Set up School PCs** app.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required
 
 
-<table border="1" style="width:100%"> 
-<thead><tr><th><p>Policy name</p></th><th><p>Value</p></th><th><p>When set</p></th> 
-</tr> </thead>
-<tbody>
- 
-<tr><td><p>Prevent enabling lock screen slide show</p></td><td><p>Enabled</p></td><td><p>Always</p></td> 
-</tr> 
-
-<tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny </p> </td> <td> <p> Always </p> </td> </tr> 
-</tbody>
-</table> 
 
 
 
