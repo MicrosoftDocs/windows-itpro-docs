@@ -37,8 +37,6 @@ Before you can do any analysis or make decisions about which apps to migrate or 
 **Note**  
 The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform-testing-webapps) section.
 
- 
-
 You can divide the apps into the following categories:
 
 -   **Apps installed and managed by the institution.** These apps are typically managed in the Apps section in the Google Admin Console. You can record the list of these apps in your app portfolio.
