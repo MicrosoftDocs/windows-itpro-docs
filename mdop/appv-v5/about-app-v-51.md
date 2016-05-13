@@ -172,7 +172,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tr>
 </tbody>
 </table>
-<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](#bkmk-check-reg-key-svr).</p></li>
+<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](check-reg-key-svr.md).</p></li>
 <li><p>Follow the steps in [How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md)</p></li>
 <p> </p></li>
 </ol></td>
