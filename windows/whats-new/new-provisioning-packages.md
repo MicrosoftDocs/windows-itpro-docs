@@ -44,7 +44,7 @@ Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT
     * Mobile Iron (password-string based enrollment) 
     * Other MDMs (cert-based enrollment) 
 
-> **Note:** Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](set-up-students-pcs-to-join-domain.md).
+> **Note:** Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see Set up students' PCs to join domain (link to be added).
 
 ## Benefits of provisioning packages
 
