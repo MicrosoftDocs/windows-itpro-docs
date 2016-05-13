@@ -32,9 +32,9 @@ Use the following information to install the Microsoft Application Virtualizatio
 
 5.  Convert extension points, as needed. For more information, see the following resources:
 
-    -   [How to Migrate Extension Points From an App-V 4.6 SP2 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-a-converted-app-v-51-package-for-all-users-on-a-specific-computer.md)
+    -   [How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-a-converted-app-v-51-package-for-all-users-on-a-specific-computer.md)
 
-    -   [How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.1 for a Specific User](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-app-v-51-for-a-specific-user.md)
+    -   [How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-app-v-51-for-a-specific-user.md)
 
     -   [How to Convert a Package Created in a Previous Version of App-V](how-to-convert-a-package-created-in-a-previous-version-of-app-v51.md)
 
