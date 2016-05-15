@@ -36,6 +36,10 @@ U.S. region:
 - dataaccess-eus-prd.cloudapp.net
 - daasmon-eus-prd.cloudapp.net
 - daasmon-cus-prd.cloudapp.net
+- onboardingservice-prd.trafficmanager.net
+- sevillesettings-prd.trafficmanager.net
+- sevillefeedback-prd.trafficmanager.net
+
 
 EU region:
 
@@ -43,6 +47,9 @@ EU region:
 - threatintel-weu-prd.cloudapp.net
 - dataaccess-neu-prd.cloudapp.net
 - dataaccess-weu-prd.cloudapp.net
+- onboardingservice-prd.trafficmanager.net
+- sevillesettings-prd.trafficmanager.net
+- sevillefeedback-prd.trafficmanager.net
 
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 
