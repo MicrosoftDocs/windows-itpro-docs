@@ -83,6 +83,9 @@ When you run Windows ICD, you have several options for creating your package.
 - Choose **Provision school devices** to quickly create provisioning packages that configure settings and policies tailored for students. Learn more about using Windows ICD to provision student PCs (link tb added).
 - Choose **Advanced provisioning** to create provisioning packages in the advanced settings editor and include classic (Win32) and Universal Windows Platform (UWP) apps for deployment on end-user devices.
 
+> **Important**
+When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+
 ### Using Simple provisioning
 
 1. Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
