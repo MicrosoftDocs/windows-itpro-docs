@@ -4,9 +4,10 @@ description: This guide describes the new Windows Hello and Microsoft Passport t
 ms.assetid: 11EA7826-DA6B-4E5C-99FB-142CC6BD9E84
 keywords: ["security", "credential", "password", "authentication"]
 ms.prod: W10
+ms.pagetype: security
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: brianlic-msft
+author: challum
 ---
 
 # Microsoft Passport guide
@@ -405,7 +406,7 @@ Table 1. Deployment requirements for Microsoft Passport
 
  
 
-Note that the current release of Windows 10 supports the Azure AD–only scenarios. Microsoft provides the forward-looking guidance in Table 1 to help organizations prepare their environments for planned future releases of Microsoft Passport for Work capabilities.
+Note that the current release of Windows 10 supports the Azure AD–only (RTM) and hybrid scenarios (RTM + November Update). Microsoft provides the forward-looking guidance in Table 1 to help organizations prepare their environments for planned future releases of Microsoft Passport for Work capabilities.
 
 **Select policy settings**
 
@@ -465,17 +466,19 @@ In the Windows 10 initial release, Microsoft supports the following Microsoft P
 
 -   Microsoft Passport for Work support for organizations that have cloud-only Azure AD deployments
 
--   Group Policy settings to control Microsoft Passport PIN length and complexity
+-   Group Policy and MDM settings to control Microsoft Passport PIN length and complexity
+
+In the November 2015 release, Microsoft supports the following Microsoft Passport and Windows Hello features:
+
+- Key-based Microsoft Passport for Work credentials for on-premises Azure AD deployments and hybrid on-premises/Azure AD deployments
+
+- Microsoft Passport for Work certificates issued by a trusted PKI, including smart card and virtual smart card certificates
 
 In future releases of Windows 10, we plan to add support for additional features:
 
--   Additional biometric identifier types, including iris recognition
-
--   Key-based Microsoft Passport for Work credentials for on-premises Azure AD deployments and hybrid on-premises/Azure AD deployments
-
--   Microsoft Passport for Work certificates issued by a trusted PKI, including smart card and virtual smart card certificates
-
--   TPM attestation to protect keys so that a malicious user or program can’t create keys in software (because those keys won’t be TPM attested and can thus be identified as fake)
+- Key-based and certificate-based Microsoft Passport for Work credentials for on-premises AD deployments
+ 
+- TPM attestation to protect keys so that a malicious user or program can’t create keys in software (because those keys won’t be TPM attested and can thus be identified as fake)
 
 In the longer term, Microsoft will continue to improve on and expand the features of both Microsoft Passport and Windows Hello to cover additional customer requirements for manageability and security. We also are working with the FIDO Alliance and a variety of third parties to encourage adoption of Microsoft Passport by both web and LOB application developers.
 

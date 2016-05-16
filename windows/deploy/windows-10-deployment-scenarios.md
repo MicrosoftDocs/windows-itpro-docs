@@ -6,7 +6,7 @@ keywords: ["upgrade, in-place, configuration, deploy"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Windows 10 deployment scenarios

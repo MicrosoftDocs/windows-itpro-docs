@@ -15,7 +15,7 @@ author: brianlic-msft
 
 -   Windows 10
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
+\[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 Determines whether to audit the event of a user accessing an Active Directory object that has its own system access control list (SACL) specified.
 
