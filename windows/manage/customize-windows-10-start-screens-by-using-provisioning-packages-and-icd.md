@@ -44,9 +44,13 @@ Three features enable Start and taskbar layout control:
 
 Use the [Imaging and Configuration Designer (ICD) tool](http://go.microsoft.com/fwlink/p/?LinkID=525483) included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that applies a customized Start and taskbar layout. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
-1.  Open ICD (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+> **Important**
+When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-2.  Choose **New provisioning package**.
+1.  Open ICD (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+2. Choose **Advanced provisioning**.
+
+
 
 3.  Name your project, and click **Next**.
 
