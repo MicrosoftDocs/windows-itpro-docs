@@ -25,7 +25,7 @@ Provisioning packages are simple enough that with a short set of written instruc
 
 ## New in Windows 10, Version 1607
 
-The Windows Assessment and Deployment Kit (ADK) for Windows 10 included the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. Windows 10, Version 1607, simplifies common provisioning scenarios. 
+The Windows Assessment and Deployment Kit (ADK) for Windows 10 included the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. Windows ICD for Windows 10, Version 1607, simplifies common provisioning scenarios. 
 
 ![Configuration Designer options](images/icd.png)
 
@@ -90,7 +90,7 @@ For details about the settings you can customize in provisioning packages, see [
 ## Creating a provisioning package
 
 
-With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must install the Windows Assessment and Deployment Kit (ADK) for Windows 10[from the Windows Insider Program site](http://go.microsoft.com/fwlink/p/?linkid=533700).
+With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must install the Windows Assessment and Deployment Kit (ADK) for Windows 10 [from the Windows Insider Program site](http://go.microsoft.com/fwlink/p/?linkid=533700).
 
 While running ADKsetup.exe, select the following features from the **Select the features you want to install** dialog box:
 

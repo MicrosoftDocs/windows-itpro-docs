@@ -23,7 +23,7 @@ Sometimes mobile device management (MDM) isn't available to you for setting up a
 
 Rather than wiping a device and applying a new system image, in Windows 10 you can apply a provisioning package at any time. A provisioning package can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
-You can provide provisioning packages on a network shared folder that employees can access to configure their devices. Or you can put a provisioning package on a USB flash drive or SD card to hand out. You can even send the provisioning package to someone in email.
+You can provide provisioning packages on a network shared folder that employees can access to configure their devices. Or you can put a provisioning package on a USB flash drive or SD card to hand out. 
 
 Provisioning packages are simple for employees to install. And when they remove a provisioning package, policies that the package applied to their device are removed.
 
@@ -71,14 +71,52 @@ Provisioning packages are simple for employees to install. And when they remove 
 
 For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
 
-## Create package
-
+## Create a provisioning package 
 
 Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
+When you run Windows ICD, you have several options for creating your package.
+
+![Simple or advanced provisioning](images/ICDstart-option.png).
+
+- Choose **Simple provisioning** to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
+- Choose **Provision school devices** to quickly create provisioning packages that configure settings and policies tailored for students. Learn more about using Windows ICD to provision student PCs (link tb added).
+- Choose **Advanced provisioning** to create provisioning packages in the advanced settings editor and include classic (Win32) and Universal Windows Platform (UWP) apps for deployment on end-user devices.
+
+### Using Simple provisioning
+
+1. Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+2. Name your project and click **Finish**.
+3. In the **Set up device** step, enter a unique 15-character name for the device. For help generating a unique name, you can use %SERIAL%, which includes a hardware-specific serial number, or you can use %RAND:x%, which generates random characters of x length.
+4. (Optional) You can upgrade the following editions of Windows 10 by providing a product key for the edition to upgrade to.
+        - Home to Education
+        - Pro to Education
+        - Pro to Enterprise
+        - Enterprise to Education
+        - Mobile to Mobile Enterprise
+5.  Click **Set up network**.
+6. Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, type, and (if required) password for the wireless network.
+7. Click **Enroll into Active Directory**.
+8. Toggle **Yes** or **No** for Active Directory enrollment. If you select **Yes**, enter the credentials for an account with permissions to enroll the device. (Optional) Enter a user name and password to create a local administrator account.
+    > **Warning**: If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
+    - Use a least-privileged domain account to join the device to the domain.
+    - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
+    - [Use Group Policy to delete the temporary administrator account](https://blogs.technet.microsoft.com/canitpro/2014/12/10/group-policy-creating-a-standard-local-admin-account/) after the device is enrolled in Active Directory.
+9. Click **Finish**.
+10. Review your settings in the summary. You can return to previous pages to change your selections. Then, toggle **Yes** or **No** to **Protect your package**. If you select **Yes**, enter a password. This password must be entered to apply this provisioning package.
+11. Click **Create**.
+
+
+
+### Using Advanced provisioning
+
+
+
 1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
 
-2.  Choose **New provisioning package**.
+2.  
+
+Choose **New provisioning package**.
 
 3.  Name your project, and click **Next**.
 
