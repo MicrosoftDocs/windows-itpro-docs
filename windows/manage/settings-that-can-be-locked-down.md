@@ -432,12 +432,6 @@ You can specify the quick actions as follows:
 </Settings> 
 ```
 
-The following quick actions buttons are not conditional and will always be displayed:
-
--   QuickActions\_Launcher\_AllSettings
--   SystemSettings\_Launcher\_QuickNote
--   QuickActions\_Launcher\_DeviceDiscovery
-
 Some quick actions are dependent on related settings pages/page groups. When a dependent page/group is not available, then the corresponding quick action will also be hidden.
 
 **Note**  
