@@ -157,11 +157,11 @@ Learn more: [Build and apply a provisioning package](http://go.microsoft.com/fwl
 ## Apply package
 
 
-On a desktop computer, the employee goes to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. The user can also add a provisioning package simply by double-clicking the .ppkg file in email, in local storage, on removable media, or at a URL.
+On a desktop computer, the employee goes to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. The user can also add a provisioning package simply by double-clicking the .ppkg file in local storage, on removable media, or at a URL.
 
 ![add a package option](images/package.png)
 
-On a mobile device, the employee goes to **Settings** &gt; **Accounts** &gt; **Provisioning.** &gt; **Add a package**, and selects the package on removable media to install. The user can also add a provisioning package simply by double-tapping the .ppkg file in email.
+On a mobile device, the employee goes to **Settings** &gt; **Accounts** &gt; **Provisioning.** &gt; **Add a package**, and selects the package on removable media to install. 
 
 ![add provisioning package on phone](images/phoneprovision.png)
 
