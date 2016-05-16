@@ -1,14 +1,17 @@
 ---
-title: How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.1 for a Specific User
-description: How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.1 for a Specific User
+title: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
+description: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
 ms.assetid: 19da3776-5ebe-41e1-9890-12b84ef3c1c7
 author: jamiejdt
 ---
 
-# How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.1 for a Specific User
+# How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
 
 
 Use the following procedure to migrate packages created with App-V using the user configuration file.
+
+**Note**  
+This procedure assumes that you are running the latest version of App-V 4.6.
 
 **To convert a package**
 
@@ -34,7 +37,7 @@ Use the following procedure to migrate packages created with App-V using the use
 
 3.  Open the application using FTAs or shortcuts now. The application should open using App-V 5.1.
 
-    The App-V SP2 package and the converted App-V 5.1 package are published to the user, but the FTAs and shortcuts for the applications have been assumed by the App-V 5.1 package.
+    The App-V 4.6 package and the converted App-V 5.1 package are published to the user, but the FTAs and shortcuts for the applications have been assumed by the App-V 5.1 package.
 
     **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
@@ -43,7 +46,7 @@ Use the following procedure to migrate packages created with App-V using the use
 
 [Operations for App-V 5.1](operations-for-app-v-51.md)
 
-[How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 SP2 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-51-package-to-an-app-v-46-sp2-package-for-a-specific-user.md)
+[How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-51-package-to-an-app-v-46-sp2-package-for-a-specific-user.md)
 
  
 
