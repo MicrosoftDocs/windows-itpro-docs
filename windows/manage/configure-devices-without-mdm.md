@@ -86,14 +86,15 @@ When you run Windows ICD, you have several options for creating your package.
 ### Using Simple provisioning
 
 1. Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+2. Click **Simple provisioning**.
 2. Name your project and click **Finish**.
 3. In the **Set up device** step, enter a unique 15-character name for the device. For help generating a unique name, you can use %SERIAL%, which includes a hardware-specific serial number, or you can use %RAND:x%, which generates random characters of x length.
 4. (Optional) You can upgrade the following editions of Windows 10 by providing a product key for the edition to upgrade to.
-        - Home to Education
-        - Pro to Education
-        - Pro to Enterprise
-        - Enterprise to Education
-        - Mobile to Mobile Enterprise
+    - Home to Education
+    - Pro to Education
+    - Pro to Enterprise
+    - Enterprise to Education
+    - Mobile to Mobile Enterprise
 5.  Click **Set up network**.
 6. Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, type, and (if required) password for the wireless network.
 7. Click **Enroll into Active Directory**.
@@ -113,70 +114,39 @@ When you run Windows ICD, you have several options for creating your package.
 
 
 1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
-
-2.  
-
-Choose **New provisioning package**.
-
+2.  Click **Advanced provisioning**.
+3. Choose **New provisioning package**.
 3.  Name your project, and click **Next**.
-
-4.  Choose **Common to all Windows editions**, **Common to all Windows desktop editions**, or **Common to all Windows mobile editions**, depending on the devices you intend to provision, and click **Next**.
-
+4.  Choose **All Windows editions**, **All Windows desktop editions**, or **All Windows mobile editions**, depending on the devices you intend to provision, and click **Next**.
 5.  On **New project**, click **Finish**. The workspace for your package opens.
-
 6.  Configure settings. [Learn more about specific settings in provisioning packages.]( http://go.microsoft.com/fwlink/p/?LinkId=615916)
-
 7.  On the **File** menu, select **Save.**
-
 8.  On the **Export** menu, select **Provisioning package**.
-
 9.  Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
-
 10. Set a value for **Package Version**.
-
-    **Tip**  
+    > **Tip**  
     You can make changes to existing packages and change the version number to update previously applied packages.
-
-     
-
+  
 11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
-
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
-
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
-
-        **Important**  
+       > **Important**  
         We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
-
-         
-
+        
 12. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.
-
     Optionally, you can click **Browse** to change the default output location.
-
 13. Click **Next**.
-
 14. Click **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.
-
     If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
-
 15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
-
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
-
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
-
 16. Select the **output location** link to go to the location of the package. You can provide that .ppkg to others through any of the following methods:
-
     -   Shared network folder
-
     -   SharePoint site
-
     -   Removable media (USB/SD)
-
     -   Email
-
     -   USB tether (mobile only)
 
 Learn more: [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651)
