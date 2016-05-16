@@ -37,8 +37,6 @@ Before you can do any analysis or make decisions about which apps to migrate or 
 **Note**  
 The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform-testing-webapps) section.
 
- 
-
 You can divide the apps into the following categories:
 
 -   **Apps installed and managed by the institution.** These apps are typically managed in the Apps section in the Google Admin Console. You can record the list of these apps in your app portfolio.
@@ -908,7 +906,7 @@ There are also a number of software vendors who provide software that helps auto
 ## Perform cloud services migration
 
 
-In the [Plan for cloud services migration](#plan-cloud-services)section, you identified the cloud services currently in use, selected the cloud services that you want to migrate, prioritized the cloud services to migrate, and then selected the cloud services migration strategy. You can perform the cloud services migration before or after you deploy the Windows devices.
+In the [Plan for cloud services migration](#plan-cloud-services) section, you identified the cloud services currently in use, selected the cloud services that you want to migrate, prioritized the cloud services to migrate, and then selected the cloud services migration strategy. You can perform the cloud services migration before or after you deploy the Windows devices.
 
 Migrate the cloud services that you currently use to the Microsoft cloud services that you selected. For example, you could migrate from a collaboration website to Office 365 SharePoint. Perform the cloud services migration based on the existing cloud services and the Microsoft cloud services that you selected.
 

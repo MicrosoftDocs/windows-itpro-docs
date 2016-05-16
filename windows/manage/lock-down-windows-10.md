@@ -43,30 +43,36 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 <td align="left"><p>Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps. The result is similar to [a kiosk device](set-up-a-device-for-anyone-to-use.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md)</p></td>
-<td align="left"><p>Learn about the telemetry that Microsoft gathers, the network connections that Windows components make to Microsoft, and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.</p></td>
+<td align="left"><p>[Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)</p></td>
+<td align="left"><p>Use this article to make informed decisions about how you can configure Windows telemetry in your organization.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>[Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md)</p></td>
+<td align="left"><p>Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>[Configure access to Windows Store](stop-employees-from-using-the-windows-store.md)</p></td>
 <td align="left"><p>IT Pros can configure access to Windows Store for client computers in their organization. For some organizations, business policies require blocking access to Windows Store.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>[Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)</p></td>
 <td align="left"><p>Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots it knows about through crowdsourcing, or to Wi-Fi networks your contacts have shared with you by using Wi-Fi Sense.</p>
 <p>The initial settings for Wi-Fi Sense are determined by the options you chose when you first set up your PC with Windows 10.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>[Configure Windows 10 Mobile using Lockdown XML](lockdown-xml.md)</p></td>
 <td align="left"><p>Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>[Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)</p></td>
 <td align="left"><p>There are two methods for resetting a Windows 10 Mobile device: factory reset and &quot;wipe and persist&quot; reset.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ ## Learn more
+
+[Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
 ## Related topics
 
