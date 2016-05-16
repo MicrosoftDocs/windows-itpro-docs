@@ -81,26 +81,20 @@ However, the PC is also configured to not interrupt the user during normal dayti
 The **Set up School PCs** app produces a specialized provisioning package that makes use of the SharedPC configuration service provider (CSP). 
 
 
-* Uninstalled apps
-    * 3D Builder (Microsoft.3DBuilder_8wekyb3d8bbwe) 
-    * ? (Microsoft.Appconnector_8wekyb3d8bbwe) 
-    * Money (Microsoft.BingFinance_8wekyb3d8bbwe)
-    * News (Microsoft.BingNews_8wekyb3d8bbwe) 
-    * Sports (Microsoft.BingSports_8wekyb3d8bbwe)
-    * Weather (Microsoft.BingWeather_8wekyb3d8bbwe) 
-    * Phone dialer (Microsoft.CommsPhone_8wekyb3d8bbwe) 
-    * ? (Microsoft.ConnectivityStore_8wekyb3d8bbwe)
-    * Get Started (Microsoft.Getstarted_8wekyb3d8bbwe)
-    * Microsoft Office Hub (Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe) 
-    * Solitaire (Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe)
-    * Skype (Microsoft.SkypeApp_kzf8qxf38zg5c) 
-    * ? (Microsoft.WindowsPhone_8wekyb3d8bbwe) 
-    * Xbox (Microsoft.XboxApp_8wekyb3d8bbwe)
-    * Xbox (Microsoft.XboxIdentityProvider_8wekyb3d8bbwe)
-    * Groove (Microsoft.ZuneMusic_8wekyb3d8bbwe)
-    * Movies and TV (Microsoft.ZuneVideo_8wekyb3d8bbwe) 
-    * Outlook Mail and Calendar (microsoft.windowscommunicationsapps_8wekyb3d8bbwe)
-* Local Group Policies
+### Uninstalled apps 
+- 3D Builder (Microsoft.3DBuilder_8wekyb3d8bbwe)
+- Weather (Microsoft.BingWeather_8wekyb3d8bbwe)
+- Get Started (Microsoft.Getstarted_8wekyb3d8bbwe)
+- Get Office (Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe)
+- Microsoft Solitaire Collection (Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe)
+- Paid Wi-Fi & Cellular (Microsoft.OneConnect_8wekyb3d8bbwe)
+- Feedback Hub (Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe)
+- Xbox (Microsoft.XboxApp_8wekyb3d8bbwe)
+- Groove Music (Microsoft.ZuneMusic_8wekyb3d8bbwe)
+- Movies & TV (Microsoft.ZuneVideo_8wekyb3d8bbwe)
+- Mail/Calendar (microsoft.windowscommunicationsapps_8wekyb3d8bbwe)
+
+### Local Group Policies
 
 > **Important**: It is not recommended to set additional policies on PCs configured with the **Set up School PCs** app.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required
 
