@@ -429,6 +429,9 @@ You can specify the quick actions as follows:
     <System name="SystemSettings_BatterySaver_LandingPage_OverrideControl" />
     <System name="SystemSettings_QuickAction_QuietHours" />
     <System name="SystemSettings_QuickAction_Camera" />
+    <System name="SystemSettings_Launcher_QuickNote" />
+    <System name="QuickActions_Launcher_AllSettings" />
+    <System name="QuickActions_Launcher_DeviceDiscovery" />
 </Settings> 
 ```
 
