@@ -47,9 +47,9 @@ Watch this video to see a demonstration of using Windows ICD.
 9. Toggle **Yes** or **No** for Active Directory enrollment. If you select **Yes**, enter the credentials for an account with permissions to enroll the device. (Optional) Enter a user name and password to create a local administrator account.
 
     > **Warning**: If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
-    - Use a least-privileged domain account to join the device to the domain.
-    - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
-    - [Use Group Policy to delete the temporary administrator account](https://blogs.technet.microsoft.com/canitpro/2014/12/10/group-policy-creating-a-standard-local-admin-account/) after the device is enrolled in Active Directory.
+      - Use a least-privileged domain account to join the device to the domain.
+      - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
+      - [Use Group Policy to delete the temporary administrator account](https://blogs.technet.microsoft.com/canitpro/2014/12/10/group-policy-creating-a-standard-local-admin-account/) after the device is enrolled in Active Directory.
 
 
 10. Click **Finish**.
