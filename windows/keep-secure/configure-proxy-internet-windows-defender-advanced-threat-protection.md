@@ -69,7 +69,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 
 2. Enter the following command and press **Enter**:
 
- ```
+ ```text
  netsh winhttp import proxy source=ie
  ```
  An output showing the applied WinHTTP proxy settings is displayed.
@@ -85,7 +85,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 
  2. Enter the following command and press **Enter**:
 
- ```
+ ```text
  proxy [proxy-server=] ProxyServerName:PortNumber
  ```
     Replace *ProxyServerName* with the fully qualified domain name of the proxy server.
