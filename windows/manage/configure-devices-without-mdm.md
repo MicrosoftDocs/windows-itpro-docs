@@ -107,7 +107,7 @@ When you build a provisioning package, you may include sensitive information in 
     - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
     - [Use Group Policy to delete the temporary administrator account](https://blogs.technet.microsoft.com/canitpro/2014/12/10/group-policy-creating-a-standard-local-admin-account/) after the device is enrolled in Active Directory.
 9. Click **Finish**.
-10. Review your settings in the summary. You can return to previous pages to change your selections. Then, toggle **Yes** or **No** to **Protect your package**. If you select **Yes**, enter a password. This password must be entered to apply this provisioning package.
+10. Review your settings in the summary. You can return to previous pages to change your selections. Then, under **Protect your package**, toggle **Yes** or **No** to encrypt the provisioning package. If you select **Yes**, enter a password. This password must be entered to apply the encrypted provisioning package.
 11. Click **Create**.
 
 
