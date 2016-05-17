@@ -26,8 +26,6 @@ Many schools use online testing for formative and summative assessments. It's cr
 - Students can’t change settings, extend their display, see notifications, get updates, or use autofill features.
 - Cortana is turned off.
 
-> **Tip!**
-> To exit **Take a Test**, press Ctrl+Alt+Delete. 
 
 **Take a Test** is included in Windows 10 Education. To add **Take a Test** to other editions of Windows 10, see [Add the Take a Test app to Windows 10](#add-the-take-a-test-app-to-windows-10)
 
@@ -35,41 +33,36 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ![Use test account or test url in Take a Test](images/take-a-test-flow.png)
 
-- **Use a test URL and a [dedicated testing account](#set-up-a-dedicated-test-account)** - A user logs into the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
-- **[Put a test URL with an included prefix](#provide-link-to-test) on a web page or OneNote for students to click** - This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
+- **Use a test URL and a dedicated testing account** - A user logs into the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
+- **Put a test URL with an included prefix on a web page or OneNote for students to click** - This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
 
-## Set up a dedicated test account
+[Learn how to set up Take a Test on a single PC](take-a-test-single-pc.md)
 
-To configure a dedicated test account on multiple PCs, you can use:    
-- [Mobile device management (MDM) or Microsoft System Center Configuration Manager](#set-up-test-account-in-mdm-or-configuration-manager)
-- [A provisioning package](#set-up-test-account-in-a-provisioning-package) created in Windows Imaging and Configuration Designer (ICD)
-- [Group Policy](#set-up-test-account-in-group-policy) to deploy a scheduled task that runs a Powershell script
-    
-
-
-
-### Set up test account in MDM or Configuration Manager
-
-### Set up test account in a provisioning package
-
-### Set up test account in Group Policy
-
-#### Create a Powershell script
-
-#### Create a scheduled task in Group Policy
-
-## Provide link to test
+[Learn how to set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
 
 ## Add the Take a Test app to Windows 10
 
+You can add the Take a Test app to Windows 10 Home, Pro, and Enterprise.
 
+### Add Take a Test on a single PC
 
-## Assessment URLs
+Use **Settings** to get **Take a Test** from Windows Update.
 
-This assessment URL utses our lockdown API:
+1. Open **Settings**.
+2. Go to **System** > **Apps & features** > **Manage optional features** > **Add a feature**.
+3. Select **Take a Test**.
 
-- SBAC/AIR:  [http://mobile.tds.airast.org/launchpad/](http://mobile.tds.airast.org/launchpad/).
+### Deploy Take a Test to multiple PCs using DISM
 
+You can deploy the Take a Test package through Deployment Image Servicing and Management (DISM.exe).
+
+1. Get the Take a Test package from the [Microsoft update catalog](http://catalog.update.microsoft.com/).
+2. Upload the package to a network share or to your Windows Server Update Services (WSUS) server.
+3. Create and deploy a DISM script to add the package to offline or online images. For more information on how to add or enable features through DISM, see [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/dism-operating-system-package-servicing-command-line-options).
+
+## Related topics
+
+[Take a Test app technical reference](take-a-test-app-technical.md)
 
 
 

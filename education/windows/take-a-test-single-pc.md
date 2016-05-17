@@ -16,7 +16,7 @@ author: jdeckerMS
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
-Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows 10, Version 1607, creates the right environment for taking a test:
+The **Take a Test** app in Windows 10, Version 1607, creates the right environment for taking a test:
 
 - A Microsoft Edge browser window opens, showing just the test and nothing else.
 - Students aren’t able to go to other websites.
@@ -29,7 +29,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 > **Tip!**
 > To exit **Take a Test**, press Ctrl+Alt+Delete. 
 
-**Take a Test** is included in Windows 10 Education. To add **Take a Test** to other editions of Windows 10, see [Add the Take a Test app to Windows 10](#add-the-take-a-test-app-to-windows-10)
+**Take a Test** is included in Windows 10 Education. To add **Take a Test** to other editions of Windows 10, see [Add the Take a Test app to Windows 10](take-tests-in-windows-10.md#add-the-take-a-test-app-to-windows-10)
 
 ## How you use Take a Test
 
@@ -59,17 +59,23 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ## Provide link to test
 
-## Add the Take a Test app to Windows 10
+Anything hosted on the web can be presented in a locked down manner, not just assessments. To lock down online content, just embed a URL with a specific prefix and devices will be locked down when users follow the link. We recommend using this method for lower stakes assessments. 
 
-### Add Take a Test on a single PC
+1. Create a link to the test URL. Use **ms-edu-secureassessment:** before the URL and **!enforceLockdown** after the URL.
+> ms-edu-secureassessment:<URL>!enforceLockdown
+
+2. Distribute the link. You can use the web, email, OneNote, or any other method of your choosing.
+3. To take the test, click on the link and provide user consent.
 
 
+## Related topics
+[Take tests in Windows 10](take-tests-in-windows-10.md)
 
-## Assessment URLs
+[Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
 
-This assessment URL utses our lockdown API:
+[Take a Test app technical reference](take-a-test-app-technical.md)
 
-- SBAC/AIR:  [http://mobile.tds.airast.org/launchpad/](http://mobile.tds.airast.org/launchpad/).
+
 
 
 
