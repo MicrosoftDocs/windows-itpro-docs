@@ -19,7 +19,7 @@ author: eross-msft
 
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
 
-Enterprise data protection (EDP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. EDP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps. Finally, another data protection technology, Azure Rights Management, can help to extend protection for data that leaves the device, such as when email attachments are sent from an enterprise aware version of a rights management mail client.
+Enterprise data protection (EDP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. EDP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps.
 
 ## Prerequisites
 You’ll need this software to run EDP in your enterprise:
@@ -37,7 +37,7 @@ EDP helps address your everyday challenges in the enterprise. Including:
 
 -   Helping to maintain the ownership and control of your enterprise data.
 
--   Help control apps that aren’t enterprise aware.
+-   Helping control the network and data access and data sharing for apps that aren’t enterprise aware.
 
 ### EDP-protection modes
 You can set EDP to 1 of 4 protection and management modes:
@@ -61,7 +61,7 @@ EDP gives you a new way to manage data policy enforcement for apps and documents
 
     -   **Using protected apps.** Managed apps (apps that you've included on the **Protected Apps** list in your EDP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if EDP management is set to **Block**, your employees can copy and paste from one protected app to another protected app, but not to personal apps. Imagine an HR person wants to copy a job description from a protected app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
 
-    -   **Managed apps and restrictions.** With EDP you can control which apps can access and use your enterprise data. After adding an app to your **Protected App** list, the app is trusted with enterprise data. All apps that aren’t on this list are potentially blocked from accessing your enterprise network resources and your EDP-protected data.<p>
+    -   **Managed apps and restrictions.** With EDP you can control which apps can access and use your enterprise data. After adding an app to your **Protected App** list, the app is trusted with enterprise data. All apps that aren’t on this list are blocked from accessing your enterprise network resources and your EDP-protected data.<p>
     You don’t have to modify line-of-business apps that never touch personal data to list them as protected apps; just include them in the **Protected App** list.
 
     -   **Deciding your level of data access.** EDP lets you block, allow overrides, or audit employees' data sharing actions. Blocking the action stops it immediately. Allowing overrides let the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without blocking anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your **Protected App** list.
