@@ -49,9 +49,10 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 2. Go to **Settings** > **Accounts** > **Work or school access** (final name needs to be updated, still TBD) > **Set up an account for taking tests**.
 3. Select an account to use as the dedicated testing account.
     >**Note**: If you don't have an account on the device, you can create a new account. To do this, go to **Settings** > **Accounts** > **Other Users** > **Add someone else to this PC** > **I don’t have this person’s sign-in information** > **Add a user without a Microsoft account**.
-4. Specify an assessment URL. For 
+4. Specify an assessment URL.  
 
 5. Click **Save**.
+
 6. To take the test, the student signs in to the selected account.
 
 
