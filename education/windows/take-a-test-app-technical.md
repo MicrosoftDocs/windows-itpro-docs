@@ -16,72 +16,66 @@ author: jdeckerMS
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
-Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows 10, Version 1607, creates the right environment for taking a test:
+Take a Test is an app that locks down the PC and displays an online assessment web page.   
 
-- A Microsoft Edge browser window opens, showing just the test and nothing else.
-- Students aren’t able to go to other websites.
-- Students can’t open or access other apps.
-- Students can't share, print, or record their screens.
-- Students can’t copy or paste.
-- Students can’t change settings, extend their display, see notifications, get updates, or use autofill features.
-- Cortana is turned off.
+Whether you are a teacher or IT administrator, you can easily configure Take a Test to meet your testing needs. For high-stakes tests, the app creates a browser-based, locked-down environment for more secure online assessments. This means that students taking the tests that don’t have copy/paste privileges, can’t access to files and applications, and are free from distractions. For simple tests and quizzes, Take a Test can be configured to use the teacher’s preferred assessment website to deliver digital assessments
 
-> **Tip!**
-> To exit **Take a Test**, press Ctrl+Alt+Delete. 
+Assessment vendors can use Take a Test as a platform to lock down the operating system. Take a Test supports the [SBAC browser API standard](http://www.smarterapp.org/documents/SecureBrowserRequirementsSpecifications_0-3.pdf) for high stakes common core testing. (Link to Javascript API when available)
 
-**Take a Test** is included in Windows 10 Education. To add **Take a Test** to other editions of Windows 10, see [Add the Take a Test app to Windows 10](#add-the-take-a-test-app-to-windows-10)
+## PC lockdown for assessment
 
-## How you use Take a Test
+ When the assessment page initiates lock down, the user’s desktop will be locked and the app will be launched above the Windows lock screen to provide a sandbox that ensures the user can only interact with the Take a Test app . After transitioning to the lock screen, Take a Test will apply local MDM policies to further lock down the device. The whole process of going above the lock screen and applying policies is what defines lockdown. The whole lockdown process is atomic, which means that if any part of the lockdown operation fails, the app will not be above lock and won't have any of the policies applied.  
 
-![Use test account or test url in Take a Test](images/take-a-test-flow.png)
+When running above the lock screen:
+- The app runs full screen with no chrome 
 
-- **Use a test URL and a [dedicated testing account](#set-up-a-dedicated-test-account)** - A user logs into the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
-- **[Put a test URL with an included prefix](#provide-link-to-test) on a web page or OneNote for students to click** - This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
+- The hardware print screen button is disabled 
 
-## Set up a dedicated test account
+- Content within the app will show up as black in screen capturing/sharing software Copy/paste is disabled 
 
-- To configure a dedicated test account on a single PC, [use Settings](#set-up-test-account-on-a-single-pc).
-- To configure a dedicated test account on multiple PCs, you can use:
-    - [Mobile device management (MDM) or Microsoft System Center Configuration Manager](#set-up-test-account-in-mdm-or-configuration-manager)
-    - [A provisioning package](#set-up-test-account-in-a-provisioning-package) created in Windows Imaging and Configuration Designer (ICD)
-    - [Group Policy](#set-up-test-account-in-group-policy) to deploy a scheduled task that runs a Powershell script
-    
+- Web apps can query the processes currently running in the user’s device
 
-### Set up a test account on a single PC
+- Extended display shows up as black 
 
-1. Sign into the device with an administrator account.
-2. Go to **Settings** > **Accounts** > **Work or school access** (final name needs to be updated, still TBD) > **Set up an account for taking tests**.
-3. Select an account to use as the dedicated testing account.
-    >**Note**: If you don't have an account on the device, you can create a new account. To do this, go to **Settings** > **Accounts** > **Other Users** > **Add someone else to this PC** > **I don’t have this person’s sign-in information** > **Add a user without a Microsoft account**.
-4. Specify an assessment URL. For 
+- Auto-fill is disabled
 
-5. Click **Save**.
-6. To take the test, log into the selected account.
+## Mobile device management (MDM) policies
 
+When Take a Test is running, the following MDM policies are applied to lock down the PC.
 
-### Set up test account in MDM or Configuration Manager
+| Policy | Description | Value |
+|---|---|---|
+| AllowToasts | Disables toast notifications from being shown | 0 |
+| AllAppStoreAutoUpdate | Disables automatic updates for Windows Store apps that are installed on the PC | 0 |
+| AllowDeviceDiscovery | Disables UI for screen sharing | 0 |
+| AllowInput Panel | Disables the onscreen keyboard which will disable auto-fill | 0 |
+| AllowCortana | Disables Cortana functionality | 0 |
+| AllAutoupdate | Disables Windows Update from starting OS updates | 5 |
 
-### Set up test account in a provisioning package
+## Allowed functionality
 
-### Set up test account in Group Policy
+When Take a Test is running, the following functionality is available to students:
 
-#### Create a Powershell script
+- Assistive technology that is configured to run above the lock screen should run as expected 
 
-#### Create a scheduled task in Group Policy
+- Narrator is available through Windows key + Enter 
 
-## Provide link to test
+- Magnifier is available through Windows key + "+" key 
 
-## Add the Take a Test app to Windows 10
+- Full screen mode is compatible  
 
-### Add Take a Test on a single PC
+- The user can press Alt+Tab when locked down. This results in the user being able to switch between the following:
 
-### Deploy Take a Test to multiple PCs
+    - Take a Test 
+    - Assistive technology that may be running 
+    - Lock Screen
+    > **Note** The app will exit if the user logs into an account from the lock screen. Progress made in the test may be lost or invalidated. 
 
-## Assessment URLs
+- The user can exit the test by pressing one of the following key combinations: 
 
-This assessment URL utses our lockdown API:
+    - Ctrl+Alt+Del 
 
-- SBAC/AIR:  [http://mobile.tds.airast.org/launchpad/](http://mobile.tds.airast.org/launchpad/).
+    - Alt+F4
 
 
 
