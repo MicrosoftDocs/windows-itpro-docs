@@ -24,7 +24,7 @@ Assessment vendors can use Take a Test as a platform to lock down the operating 
 
 ## PC lockdown for assessment
 
- When the assessment page initiates lock down, the user’s desktop will be locked and the app will be launched above the Windows lock screen to provide a sandbox that ensures the user can only interact with the Take a Test app . After transitioning to the lock screen, Take a Test will apply local MDM policies to further lock down the device. The whole process of going above the lock screen and applying policies is what defines lockdown. The whole lockdown process is atomic, which means that if any part of the lockdown operation fails, the app will not be above lock and won't have any of the policies applied.  
+ When the assessment page initiates lock down, the student’s desktop will be locked and the app will be launched above the Windows lock screen to provide a sandbox that ensures the student can only interact with the Take a Test app . After transitioning to the lock screen, Take a Test will apply local MDM policies to further lock down the device. The whole process of going above the lock screen and applying policies is what defines lockdown. The lockdown process is atomic, which means that if any part of the lockdown operation fails, the app will not be above lock and won't have any of the policies applied.  
 
 When running above the lock screen:
 - The app runs full screen with no chrome 
@@ -64,14 +64,14 @@ When Take a Test is running, the following functionality is available to student
 
 - Full screen mode is compatible  
 
-- The user can press Alt+Tab when locked down. This results in the user being able to switch between the following:
+- The student can press Alt+Tab when locked down. This results in the student being able to switch between the following:
 
     - Take a Test 
     - Assistive technology that may be running 
     - Lock Screen
-    > **Note** The app will exit if the user logs into an account from the lock screen. Progress made in the test may be lost or invalidated. 
+    > **Note** The app will exit if the student signs in to an account from the lock screen. Progress made in the test may be lost or invalidated. 
 
-- The user can exit the test by pressing one of the following key combinations: 
+- The student can exit the test by pressing one of the following key combinations: 
 
     - Ctrl+Alt+Del 
 

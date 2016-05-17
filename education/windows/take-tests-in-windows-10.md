@@ -33,7 +33,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ![Use test account or test url in Take a Test](images/take-a-test-flow.png)
 
-- **Use a test URL and a dedicated testing account** - A user logs into the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
+- **Use a test URL and a dedicated testing account** - A user signs in to the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
 - **Put a test URL with an included prefix on a web page or OneNote for students to click** - This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
 
 [Learn how to set up Take a Test on a single PC](take-a-test-single-pc.md)
@@ -42,7 +42,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ## Add the Take a Test app to Windows 10
 
-You can add the Take a Test app to Windows 10 Home, Pro, and Enterprise.
+You can add the Take a Test app to Windows 10 Pro and Enterprise.
 
 ### Add Take a Test on a single PC
 
