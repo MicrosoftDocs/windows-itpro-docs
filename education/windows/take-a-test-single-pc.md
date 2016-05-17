@@ -1,6 +1,6 @@
 ---
-title: Take tests in Windows 10
-description: Learn how to set up and use the Take a Test app.
+title: Set up Take a Test on a single PC
+description: Learn how to set up and use the Take a Test app on a single PC.
 keywords: ["shared cart", "shared PC", "school"]
 ms.prod: W10
 ms.mktglfcycl: plan
@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Take tests in Windows 10
+# Set up Take a Test on a single PC
 **Applies to:**
 
 -   Windows 10 Insider Preview 
@@ -40,27 +40,28 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ## Set up a dedicated test account
 
-To configure a dedicated test account on multiple PCs, you can use:    
-- [Mobile device management (MDM) or Microsoft System Center Configuration Manager](#set-up-test-account-in-mdm-or-configuration-manager)
-- [A provisioning package](#set-up-test-account-in-a-provisioning-package) created in Windows Imaging and Configuration Designer (ICD)
-- [Group Policy](#set-up-test-account-in-group-policy) to deploy a scheduled task that runs a Powershell script
+
     
 
 
 
-### Set up test account in MDM or Configuration Manager
+1. Sign into the device with an administrator account.
+2. Go to **Settings** > **Accounts** > **Work or school access** (final name needs to be updated, still TBD) > **Set up an account for taking tests**.
+3. Select an account to use as the dedicated testing account.
+    >**Note**: If you don't have an account on the device, you can create a new account. To do this, go to **Settings** > **Accounts** > **Other Users** > **Add someone else to this PC** > **I don’t have this person’s sign-in information** > **Add a user without a Microsoft account**.
+4. Specify an assessment URL. For 
 
-### Set up test account in a provisioning package
+5. Click **Save**.
+6. To take the test, log into the selected account.
 
-### Set up test account in Group Policy
 
-#### Create a Powershell script
 
-#### Create a scheduled task in Group Policy
 
 ## Provide link to test
 
 ## Add the Take a Test app to Windows 10
+
+### Add Take a Test on a single PC
 
 
 

@@ -3,5 +3,8 @@
 ## [Set up School PCs app technical reference](set-up-school-pcs-technical.md)
 ## [Set up students' PCs to join domain](set-up-students-pcs-to-join-domain.md)
 ## [Take tests in Windows 10](take-tests-in-windows-10.md)
+### [Set up Take a Test on a single PC](take-a-test-single-pc.md)
+### [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
+### [Take a Test app technical reference](take-a-test-app-technical.md) 
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 ## [Chromebook migration guide](chromebook-migration-guide.md)
