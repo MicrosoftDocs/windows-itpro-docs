@@ -23,7 +23,7 @@ Authorization policy changes that can be audited include:
 
 -   Changing the Encrypting File System (EFS) policy.
 
-Event volume: Low
+Event volume: Very high
 
 Default: Not configured
 
