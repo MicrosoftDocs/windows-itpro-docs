@@ -2,18 +2,22 @@
 title: Lockdown features from Windows Embedded 8.1 Industry (Windows 10)
 description: Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. 
 ms.assetid: 3C006B00-535C-4BA4-9421-B8F952D47A14
-ms.pagetype: security
-keywords: ["lockdown", "embedded"]
+keywords: lockdown, embedded
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: jdeckerMS
 ---
+
 # Lockdown features from Windows Embedded 8.1 Industry
+
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
+
 Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. This table maps Windows Embedded Industry 8.1 features to Windows 10 Enterprise features, along with links to documentation.
+
 <table>
 <colgroup>
 <col width="33%" />
