@@ -6,7 +6,7 @@ keywords: ["update Surface, newest, latest, download, firmware, driver, tablet, 
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: heatherpoulsen
+author: jobotto
 ---
 
 # Download the latest firmware and drivers for Surface devices
@@ -26,14 +26,12 @@ Driver and firmware updates for Surface devices are released in one of two ways:
 
 Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices and are detailed here in this article.
 
-**Note**  
-To simplify the process of locating drivers for your device, downloads for Surface devices have been reorganized to separate pages for each model. Bookmark the Microsoft Download Center page for your device from the links provided on this page. Many of the filenames contain a placeholder denoted with *xxxxxx*, which identifies the current version number or date of the file.
-
+**Note**&nbsp;&nbsp;To simplify the process of locating drivers for your device, downloads for Surface devices have been reorganized to separate pages for each model. Bookmark the Microsoft Download Center page for your device from the links provided on this page. Many of the filenames contain a placeholder denoted with *xxxxxx*, which identifies the current version number or date of the file.
  
 
 Recent additions to the downloads for Surface devices provide you with options to install Windows 10 on your Surface devices and update LTE devices with the latest Windows 10 drivers and firmware.
 
-**Note**  A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](http://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
+**Note**&nbsp;&nbsp;A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](http://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
 
  
 
