@@ -6,7 +6,7 @@ keywords: ["tool", "USB", "data", "erase"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: milada
+author: miladCA
 ---
 
 # Microsoft Surface Data Eraser

@@ -6,7 +6,7 @@ keywords: ["Surface, Surface Pro 3, security, features, configure, hardware, dev
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: milada
+author: miladCA
 ---
 
 # Advanced UEFI security features for Surface
