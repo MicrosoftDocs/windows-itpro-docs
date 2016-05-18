@@ -6,7 +6,7 @@ keywords: ["data protection, encryption, malware resistance, smartphone, device,
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: AMeeus
 ---
 
 # Windows 10 Mobile security guide

@@ -44,24 +44,14 @@ The following table lists the operating systems supported in USMT.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows® XP Professional</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows XP Professional x64 Edition</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
 <td align="left"><p>32-bit versions of Windows Vista</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
+<td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>64-bit versions of Windows Vista</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
+<td align="left"><p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>32-bit versions of Windows 7</p></td>
@@ -101,7 +91,7 @@ The following table lists the operating systems supported in USMT.
 **Note**  
 You can migrate a 32-bit operating system to a 64-bit operating system. However, you cannot migrate a 64-bit operating system to a 32-bit operating system.
 
-USMT does not support any of the Windows Server® operating systems, Windows 2000, or any of the starter editions for Windows XP, Windows Vista, or Windows 7. In addition, USMT only supports migration from Windows XP with Service Pack 3.
+USMT does not support any of the Windows Server® operating systems, Windows 2000, Windows XP, or any of the starter editions for Windows Vista or Windows 7.
 
  
 

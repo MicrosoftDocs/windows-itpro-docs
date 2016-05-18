@@ -401,6 +401,7 @@
 ### [User Account Control](user-account-control-overview.md)
 #### [How User Account Control works](how-user-account-control-works.md)
 #### [User Account Control security policy settings](user-account-control-security-policy-settings.md)
+#### [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md)
 ### [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 #### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)

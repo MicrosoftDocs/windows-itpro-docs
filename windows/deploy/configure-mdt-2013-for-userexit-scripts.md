@@ -6,7 +6,7 @@ keywords: ["rules, script"]
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: mtniehaus
 ---
 
 # Configure MDT for UserExit scripts

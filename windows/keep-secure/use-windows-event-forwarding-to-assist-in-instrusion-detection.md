@@ -5,7 +5,7 @@ ms.assetid: 733263E5-7FD1-45D2-914A-184B9E3E6A3F
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: tedhardyMSFT
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
