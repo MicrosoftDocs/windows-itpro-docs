@@ -2,38 +2,25 @@
 title: Audit Distribution Group Management (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Distribution Group Management, which determines whether the operating system generates audit events for specific distribution-group management tasks.
 ms.assetid: d46693a4-5887-4a58-85db-2f6cba224a66
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Distribution Group Management
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Distribution Group Management**, which determines whether the operating system generates audit events for specific distribution-group management tasks.
-
 Tasks for distribution-group management that can be audited include:
-
 -   A distribution group is created, changed, or deleted.
-
 -   A member is added to or removed from a distribution group.
-
 This subcategory to which this policy belongs is logged only on domain controllers.
-
 **Note**  
 Distribution groups cannot be used to manage access control permissions.
-
  
-
 Event volume: Low
-
 Default: Not configured
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -104,19 +91,8 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

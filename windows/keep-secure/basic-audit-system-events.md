@@ -2,36 +2,23 @@
 title: Audit system events (Windows 10)
 description: Determines whether to audit when a user restarts or shuts down the computer or when an event occurs that affects either the system security or the security log.
 ms.assetid: BF27588C-2AA7-4365-A4BF-3BB377916447
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit system events
-
-
 **Applies to**
-
 -   Windows 10
-
 Determines whether to audit when a user restarts or shuts down the computer or when an event occurs that affects either the system security or the security log.
-
 If you define this policy setting, you can specify whether to audit successes, audit failures, or not audit the event type at all. Success audits generate an audit entry when a logon attempt succeeds. Failure audits generate an audit entry when a logon attempt fails.
-
 To set this value to **No auditing**, in the **Properties** dialog box for this policy setting, select the **Define these policy settings** check box and clear the **Success** and **Failure** check boxes.
-
 **Default:**
-
 -   Success on domain controllers.
-
 -   No auditing on member servers.
-
 ## Configure this audit setting
-
-
 You can configure this security setting by opening the appropriate policy under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -88,19 +75,8 @@ You can configure this security setting by opening the appropriate policy under 
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Basic security audit policy settings](basic-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

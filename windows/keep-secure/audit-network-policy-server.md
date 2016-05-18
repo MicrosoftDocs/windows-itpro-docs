@@ -2,27 +2,19 @@
 title: Audit Network Policy Server (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Network Policy Server, which determines whether the operating system generates audit events for RADIUS (IAS) and Network Access Protection (NAP) activity on user access requests (Grant, Deny, Discard, Quarantine, Lock, and Unlock).
 ms.assetid: 43b2aea4-26df-46da-b761-2b30f51a80f7
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Network Policy Server
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Network Policy Server**, which determines whether the operating system generates audit events for RADIUS (IAS) and Network Access Protection (NAP) activity on user access requests (Grant, Deny, Discard, Quarantine, Lock, and Unlock).
-
 NAP events can be used to help understand the overall health of the network.
-
 Event volume: Medium to high on servers that are running Network Policy Server (NPS); moderate on other servers or on client computers
-
 Default: Success and failure
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -73,19 +65,8 @@ Default: Success and failure
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

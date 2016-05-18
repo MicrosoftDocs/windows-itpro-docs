@@ -2,36 +2,23 @@
 title: Audit object access (Windows 10)
 description: Determines whether to audit the event of a user accessing an object--for example, a file, folder, registry key, printer, and so forth--that has its own system access control list (SACL) specified.
 ms.assetid: D15B6D67-7886-44C2-9972-3F192D5407EA
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit object access
-
-
 **Applies to**
-
 -   Windows 10
-
 Determines whether to audit the event of a user accessing an object--for example, a file, folder, registry key, printer, and so forth--that has its own system access control list (SACL) specified.
-
 If you define this policy setting, you can specify whether to audit successes, audit failures, or not audit the event type at all. Success audits generate an audit entry when a user successfully accesses an object that has an appropriate SACL specified. Failure audits generate an audit entry when a user unsuccessfully attempts to access an object that has a SACL specified.
-
 To set this value to **No auditing**, in the **Properties** dialog box for this policy setting, select the Define these policy settings check box and clear the **Success** and **Failure** check boxes.
-
 **Note**  You can set a SACL on a file system object using the **Security** tab in that object's **Properties** dialog box.
-
  
-
 **Default:** No auditing.
-
 ## Configure this audit setting
-
-
 You can configure this security setting by opening the appropriate policy under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -228,19 +215,8 @@ You can configure this security setting by opening the appropriate policy under 
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Basic security audit policy settings](basic-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-
