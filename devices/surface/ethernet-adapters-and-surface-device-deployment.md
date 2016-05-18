@@ -6,7 +6,7 @@ keywords: ["ethernet, deploy, removable, network, connectivity, boot, firmware, 
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: heatherpoulsen
+author: jobotto
 ---
 
 # Ethernet adapters and Surface deployment
@@ -53,7 +53,7 @@ To boot a Surface device from an alternative boot device, follow these steps:
 3.  Press and release the **Power** button.
 4.  After the system begins to boot from the USB stick or Ethernet adapter, release the **Volume Down** button.
 
-**Note**  In addition to an Ethernet adapter, a keyboard must also be connected to the Surface device to enter the preinstallation environment and navigate the deployment wizard.
+**Note**&nbsp;&nbsp;In addition to an Ethernet adapter, a keyboard must also be connected to the Surface device to enter the preinstallation environment and navigate the deployment wizard.
 
  
 
