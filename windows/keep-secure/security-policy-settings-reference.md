@@ -2,28 +2,19 @@
 title: Security policy settings reference (Windows 10)
 description: This reference of security settings provides information about how to implement and manage security policies, including setting options and security considerations.
 ms.assetid: ef5a4579-15a8-4507-9a43-b7ccddcb0ed1
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Security policy settings reference
-
-
 **Applies to**
-
 -   Windows 10
-
 This reference of security settings provides information about how to implement and manage security policies, including setting options and security considerations.
-
 This reference focuses on those settings that are considered security settings. This reference examines only the settings and features in the Windows operating systems that can help organizations secure their enterprises against malicious software threats. Management features and those security features that you cannot configure are not described in this reference.
-
 Each policy setting described contains referential content such as a detailed explanation of the settings, best practices, default settings, differences between operating system versions, policy management considerations, and security considerations that include a discussion of vulnerability, countermeasures, and potential impact of those countermeasures.
-
 ## In this section
-
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -58,14 +49,6 @@ Each policy setting described contains referential content such as a detailed ex
 </tr>
 </tbody>
 </table>
-
  
-
  
-
  
-
-
-
-
-

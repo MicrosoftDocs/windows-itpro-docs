@@ -2,43 +2,27 @@
 title: Audit IPsec Driver (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit IPsec Driver, which determines whether the operating system generates audit events for the activities of the IPsec driver.
 ms.assetid: c8b8c02f-5ad0-4ee5-9123-ea8cdae356a5
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit IPsec Driver
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit IPsec Driver**, which determines whether the operating system generates audit events for the activities of the IPsec driver.
-
 The IPsec driver, using the IP Filter List from the active IPsec policy, watches for outbound IP packets that must be secured and inbound IP packets that must be verified and decrypted. This security policy setting reports on the following activities of the IPsec driver:
-
 -   Startup and shutdown of IPsec services.
-
 -   Packets dropped due to integrity-check failure.
-
 -   Packets dropped due to replay-check failure.
-
 -   Packets dropped due to being in plaintext.
-
 -   Packets received with an incorrect Security Parameter Index (SPI). (This can indicate malfunctioning hardware or interoperability problems.)
-
 -   Failure to process IPsec filters.
-
 A high rate of packet drops by the IPsec filter driver may indicate attempts to gain access to the network by unauthorized systems.
-
 Failure to process IPsec filters poses a potential security risk because some network interfaces may not get the protection that is provided by the IPsec filter.
-
 Event volume: Medium
-
 Default: Not configured
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -97,19 +81,8 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

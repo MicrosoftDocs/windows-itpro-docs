@@ -2,43 +2,27 @@
 title: Understand AppLocker policy design decisions (Windows 10)
 description: This topic for the IT professional lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies by using AppLocker within a Windows operating system environment.
 ms.assetid: 3475def8-949a-4b51-b480-dc88b5c1e6e6
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Understand AppLocker policy design decisions
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies by using AppLocker within a Windows operating system environment.
-
 When you begin the design and planning process, you should consider the ramifications of your design choices. The resulting decisions will affect your policy deployment scheme and subsequent application control policy maintenance.
-
 You should consider using AppLocker as part of your organization's application control policies if all the following are true:
-
 -   You have deployed or plan to deploy the supported versions of Windows in your organization. For specific operating system version requirements, see [Requirements to Use AppLocker](requirements-to-use-applocker.md).
-
 -   You need improved control over the access to your organization's applications and the data your users access.
-
 -   The number of applications in your organization is known and manageable.
-
 -   You have resources to test policies against the organization's requirements.
-
 -   You have resources to involve Help Desk or to build a self-help process for end-user application access issues.
-
 -   The group's requirements for productivity, manageability, and security can be controlled by restrictive policies.
-
 The following questions are not in priority or sequential order. They should be considered when you deploy application control policies (as appropriate for your targeted environment).
-
 ### Which apps do you need to control in your organization?
-
 You might need to control a limited number of apps because they access sensitive data, or you might have to exclude all applications except those that are sanctioned for business purposes. There might be certain business groups that require strict control, and others that promote independent application usage.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -78,47 +62,27 @@ You might need to control a limited number of apps because they access sensitive
 </tr>
 </tbody>
 </table>
-
  
-
 **Important**  
 The following list contains files or types of files that cannot be managed by AppLocker:
-
 -   AppLocker does not protect against running 16-bit DOS binaries in a NT Virtual DOS Machine (NTVDM). This technology allows running legacy DOS and 16-bit Windows programs on computers that are using Intel 80386 or higher when there is already another operating system running and controlling the hardware. The result is that 16-bit binaries can still run on Windows Server 2008 R2 and Windows 7 when AppLocker is configured to otherwise block binaries and libraries. If it is a requirement to prevent 16-bit applications from running, you must configure the Deny rule in the Executable rule collection for NTVDM.exe.
-
 -   You cannot use AppLocker to prevent code from running outside the Win32 subsystem. In particular, this applies to the (POSIX) subsystem in Windows NT. If it is a requirement to prevent applications from running in the POSIX subsystem, you must disable the subsystem.
-
 -   AppLocker can only control VBScript, JScript, .bat files, .cmd files and Windows PowerShell scripts. It does not control all interpreted code that runs within a host process, for example Perl scripts and macros. Interpreted code is a form of executable code that runs within a host process. For example, Windows batch files (\*.bat) run within the context of the Windows Command Host (cmd.exe). To use AppLocker to control interpreted code, the host process must call AppLocker before it runs the interpreted code, and then enforce the decision that is returned by AppLocker. Not all host processes call into AppLocker. Therefore, AppLocker cannot control every kind of interpreted code, for example Microsoft Office macros.
-
     **Important**  
     You should configure the appropriate security settings of these host processes if you must allow them to run. For example, configure the security settings in Microsoft Office to ensure that only signed and trusted macros are loaded.
-
      
-
 -   AppLocker rules allow or prevent an app from launching. AppLocker does not control the behavior of apps after they are launched. Applications could contain flags that are passed to functions that signal AppLocker to circumvent the rules and allow another .exe or .dll file to be loaded. In practice, an app that is allowed by AppLocker could use these flags to bypass AppLocker rules and launch child processes. You must follow a process that best suits your needs to thoroughly vet each app before allowing them to run using AppLocker rules.
-
     For more info, see [Security considerations for AppLocker](security-considerations-for-applocker.md).
-
  
-
 ### <a href="" id="bkmk-compareclassicmetro"></a>Comparing Classic Windows applications and Universal Windows apps for AppLocker policy design decisions
-
 AppLocker policies for Universal Windows apps can only be applied to apps that are installed on computers running Windows operating systems that support Windows Store apps. However, Classic Windows applications can be controlled in Windows Server 2008 R2 and Windows 7, in addition to those computers that support Universal Windows apps. The rules for Classic Windows applications and Universal Windows apps can be enforced together. The differences you should consider for Universal Windows apps are:
-
 -   All Universal Windows apps can be installed by a standard user, whereas a number of Classic Windows applications require administrative credentials to install. So in an environment where most of the users are standard users, you might not need numerous exe rules, but you might want more explicit policies for packaged apps.
-
 -   Classic Windows applications can be written to change the system state if they run with administrative credentials. Most Universal Windows apps cannot change the system state because they run with limited permissions. When you design your AppLocker policies, it is important to understand whether an app that you are allowing can make system-wide changes.
-
 -   Universal Windows apps can be acquired through the Store, or they can be side-loaded by using Windows PowerShell cmdlets. If you use Windows PowerShell cmdlets, a special Enterprise license is required to acquire Universal Windows apps. Classic Windows applications can be acquired through traditional means, such as through software vendors or retail distribution.
-
 AppLocker controls Universal Windows apps and Classic Windows applications by using different rule collections. You have the choice to control Universal Windows apps, Classic Windows applications, or both.
-
 For more info, see [Packaged apps and packaged app installer rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md).
-
 ### How do you currently control app usage in your organization?
-
 Most organizations have evolved app control policies and methods over time. With heightened security concerns and an emphasis on tighter IT control over desktop use, your organization might decide to consolidate app control practices or design a comprehensive application control scheme. AppLocker includes improvements over SRP in the architecture and management of application control policies.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -153,13 +117,9 @@ Most organizations have evolved app control policies and methods over time. With
 </tr>
 </tbody>
 </table>
-
  
-
 ### Which Windows desktop and server operating systems are running in your organization?
-
 If your organization supports multiple Windows operating systems, app control policy planning becomes more complex. Your initial design decisions should consider the security and management priorities of applications that are installed on each version of the operating system.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -210,13 +170,9 @@ If your organization supports multiple Windows operating systems, app control po
 </tr>
 </tbody>
 </table>
-
  
-
 ### Are there specific groups in your organization that need customized application control policies?
-
 Most business groups or departments have specific security requirements that pertain to data access and the applications used to access that data. You should consider the scope of the project for each group and the group’s priorities before you deploy application control policies for the entire organization.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -241,13 +197,9 @@ Most business groups or departments have specific security requirements that per
 </tr>
 </tbody>
 </table>
-
  
-
 ### Does your IT department have resources to analyze application usage, and to design and manage the policies?
-
 The time and resources that are available to you to perform the research and analysis can affect the detail of your plan and processes for continuing policy management and maintenance.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -270,13 +222,9 @@ The time and resources that are available to you to perform the research and ana
 </tr>
 </tbody>
 </table>
-
  
-
 ### Does your organization have Help Desk support?
-
 Preventing your users from accessing known, deployed, or personal applications will initially cause an increase in end-user support. It will be necessary to address the various support issues in your organization so security policies are followed and business workflow is not hampered.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -299,13 +247,9 @@ Preventing your users from accessing known, deployed, or personal applications w
 </tr>
 </tbody>
 </table>
-
  
-
 ### Do you know what applications require restrictive policies?
-
 Any successful application control policy implementation is based on your knowledge and understanding of app usage within the organization or business group. In addition, the application control design is dependent on the security requirements for data and the apps that access that data.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -328,13 +272,9 @@ Any successful application control policy implementation is based on your knowle
 </tr>
 </tbody>
 </table>
-
  
-
 ### How do you deploy or sanction applications (upgraded or new) in your organization?
-
 Implementing a successful application control policy is based on your knowledge and understanding of application usage within the organization or business group. In addition, the application control design is dependent on the security requirements for data and the applications that access that data. Understanding the upgrade and deployment policy will help shape the construction of the application control policies.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -361,13 +301,9 @@ Implementing a successful application control policy is based on your knowledge 
 </tr>
 </tbody>
 </table>
-
  
-
 ### Does your organization already have SRP deployed?
-
 Although SRP and AppLocker have the same goal, AppLocker is a major revision of SRP.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -397,13 +333,9 @@ Although SRP and AppLocker have the same goal, AppLocker is a major revision of 
 </tr>
 </tbody>
 </table>
-
  
-
 ### What are your organization's priorities when implementing application control policies?
-
 Some organizations will benefit from application control policies as shown by an increase in productivity or conformance, while others will be hindered in performing their duties. Prioritize these aspects for each group to allow you to evaluate the effectiveness of AppLocker.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -430,13 +362,9 @@ Some organizations will benefit from application control policies as shown by an
 </tr>
 </tbody>
 </table>
-
  
-
 ### How are apps currently accessed in your organization?
-
 AppLocker is very effective for organizations that have application restriction requirements if they have environments with a simple topography and application control policy goals that are straightforward. For example, AppLocker can benefit an environment where non-employees have access to computers that are connected to the organizational network, such as a school or library. Large organizations also benefit from AppLocker policy deployment when the goal is to achieve a detailed level of control on the desktop computers with a relatively small number of applications to manage, or when the applications are manageable with a small number of rules.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -468,13 +396,9 @@ AppLocker is very effective for organizations that have application restriction 
 </tr>
 </tbody>
 </table>
-
  
-
 ### Is the structure in Active Directory Domain Services based on the organization's hierarchy?
-
 Designing application control policies based on an organizational structure that is already built into Active Directory Domain Services (AD DS) is easier than converting the existing structure to an organizational structure. Because the effectiveness of application control policies is dependent on the ability to update policies, consider what organizational work needs to be accomplished before deployment begins.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -497,23 +421,10 @@ Designing application control policies based on an organizational structure that
 </tr>
 </tbody>
 </table>
-
  
-
 ## Record your findings
-
-
 The next step in the process is to record and analyze your answers to the preceding questions. If AppLocker is the right solution for your goals, tyou can set your application control policy objectives and plan your AppLocker rules. This process culminates in creating your planning document.
-
 -   For info about setting your policy goals, see [Determine your application control objectives](determine-your-application-control-objectives.md).
-
 -   For info about creating your planning document, see [Create your AppLocker planning document](create-your-applocker-planning-document.md).
-
  
-
  
-
-
-
-
-

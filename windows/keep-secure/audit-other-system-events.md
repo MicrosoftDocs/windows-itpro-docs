@@ -2,38 +2,25 @@
 title: Audit Other System Events (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Other System Events, which determines whether the operating system audits various system events.
 ms.assetid: 2401e4cc-d94e-41ec-82a7-e10914295f8b
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Other System Events
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Other System Events**, which determines whether the operating system audits various system events.
-
 The system events in this category include:
-
 -   Startup and shutdown of the Windows Firewall service and driver.
-
 -   Security policy processing by the Windows Firewall service.
-
 -   Cryptography key file and migration operations.
-
 **Important**  
 Failure to start the Windows Firewall service may result in a computer that is not fully protected against network threats.
-
  
-
 Event volume: Low
-
 Default: Success and failure
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -136,19 +123,8 @@ Default: Success and failure
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

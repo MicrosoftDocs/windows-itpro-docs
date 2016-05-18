@@ -2,30 +2,20 @@
 title: Network security Configure encryption types allowed for Kerberos Win7 only (Windows 10)
 description: Describes the best practices, location, values and security considerations for the Network security Configure encryption types allowed for Kerberos Win7 only security policy setting.
 ms.assetid: 303d32cc-415b-44ba-96c0-133934046ece
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Network security: Configure encryption types allowed for Kerberos Win7 only
-
-
 **Applies to**
-
 -   Windows 10
-
 Describes the best practices, location, values and security considerations for the **Network security: Configure encryption types allowed for Kerberos Win7 only** security policy setting.
-
 ## Reference
-
-
 This policy setting allows you to set the encryption types that the Kerberos protocol is allowed to use. If it is not selected, the encryption type will not be allowed. This setting might affect compatibility with client computers or services and applications. Multiple selections are permitted.
-
 For more information, see [article 977321](http://support.microsoft.com/kb/977321) in the Microsoft Knowledge Base.
-
 The following table lists and explains the allowed encryption types.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -69,37 +59,21 @@ The following table lists and explains the allowed encryption types.
 </tr>
 </tbody>
 </table>
-
  
-
 ### Possible values
-
 The encryption type options include:
-
 -   DES\_CBC\_CRC
-
 -   DES\_CBC\_MD5
-
 -   RC4\_HMAC\_MD5
-
 -   AES128\_HMAC\_SHA1
-
 -   AES256\_HMAC\_SHA1
-
 -   Future encryption types
-
     As of the release of Windows 7 and Windows Server 2008 R2, this is reserved by Microsoft for additional encryption types that might be implemented.
-
 ### Best practices
-
 You must analyze your environment to determine which encryption types will be supported and then select those that meet that evaluation.
-
 ### Location
-
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
-
 ### Default values
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -138,40 +112,18 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 </tr>
 </tbody>
 </table>
-
  
-
 ## Security considerations
-
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
-
 ### Vulnerability
-
 Windows Server 2008 R2 and Windows 7 do not support the DES cryptographic suites because stronger ones are available. To enable Kerberos interoperability with non-Windows versions of the Kerberos protocol, these suites can be enabled. However, doing so might open attack vectors on computers running Windows Server 2008 R2 and Windows 7. You can also disable DES for your computers running Windows Vista and Windows Server 2008.
-
 ### Countermeasure
-
 Do not configure this policy. This will force the computers running Windows Server 2008 R2 and Windows 7 to use the AES or RC4 cryptographic suites.
-
 ### Potential impact
-
 If you do not select any of the encryption types, computers running Windows Server 2008 R2 and Windows 7 might have Kerberos authentication failures when connecting with computers running non-Windows versions of the Kerberos protocol.
-
 If you do select any encryption type, you will lower the effectiveness of encryption for Kerberos authentication but you will improve interoperability with computers running older versions of Windows.
-
 Contemporary non-Windows implementations of the Kerberos protocol support RC4 and AES 128-bit and AES 256-bit encryption. Most implementations, including the MIT Kerberos protocol and the Windows Kerberos protocol, are deprecating DES encryption.
-
 ## Related topics
-
-
 [Security Options](security-options.md)
-
  
-
  
-
-
-
-
-
