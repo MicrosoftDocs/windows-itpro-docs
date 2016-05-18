@@ -2,20 +2,15 @@
 title: Keep Windows 10 secure (Windows 10)
 description: Learn about keeping Windows 10 and Windows 10 Mobile secure.
 ms.assetid: EA559BA8-734F-41DB-A74A-D8DBF36BE920
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Keep Windows 10 secure
-
-
 Learn about keeping Windows 10 and Windows 10 Mobile secure.
-
 ## In this section
-
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,19 +77,8 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Windows 10 and Windows 10 Mobile](../index.md)
-
  
-
  
-
-
-
-
-

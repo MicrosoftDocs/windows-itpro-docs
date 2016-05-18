@@ -2,28 +2,19 @@
 title: Use AppLocker and Software Restriction Policies in the same domain (Windows 10)
 description: This topic for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
 ms.assetid: 2b7e0cec-df62-49d6-a2b7-6b8e30180943
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Use AppLocker and Software Restriction Policies in the same domain
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
-
 ## Using AppLocker and Software Restriction Policies in the same domain
-
-
 AppLocker is supported on systems running Windows 7 and above. Software Restriction Policies (SRP) is supported on systems running Windows Vista or earlier. You can continue to use SRP for application control on your pre-Windows 7 computers, but use AppLocker for computers running Windows Server 2008 R2, Windows 7 and later. It is recommended that you author AppLocker and SRP rules in separate GPOs and target the GPO with SRP policies to systems running Windows Vista or earlier. When both SRP and AppLocker policies are applied to computers running Windows Server 2008 R2, Windows 7 and later, the SRP policies are ignored.
-
 The following table compares the features and functions of Software Restriction Policies (SRP) and AppLocker.
-
 <table>
 <colgroup>
 <col width="33%" />
@@ -157,14 +148,6 @@ The following table compares the features and functions of Software Restriction 
 </tr>
 </tbody>
 </table>
-
  
-
  
-
  
-
-
-
-
-

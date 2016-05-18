@@ -447,6 +447,8 @@ You can turn off NCSI through Group Policy:
 
 -   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
 
+> **Note**  After you apply this policy, you must restart the device for the policy setting to take effect.
+
 ### <a href="" id="bkmk-offlinemaps"></a>11. Offline maps
 
 You can turn off the ability to download and update offline maps.

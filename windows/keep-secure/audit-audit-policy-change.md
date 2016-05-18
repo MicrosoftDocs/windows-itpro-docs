@@ -2,51 +2,32 @@
 title: Audit Audit Policy Change (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Audit Policy Change, which determines whether the operating system generates audit events when changes are made to audit policy.
 ms.assetid: 7153bf75-6978-4d7e-a821-59a699efb8a9
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Audit Policy Change
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Audit Policy Change**, which determines whether the operating system generates audit events when changes are made to audit policy.
-
 Changes to audit policy that are audited include:
-
 -   Changing permissions and audit settings on the audit policy object (by using **auditpol /set /sd**).
-
 -   Changing the system audit policy.
-
 -   Registering and unregistering security event sources.
-
 -   Changing per-user audit settings.
-
 -   Changing the value of **CrashOnAuditFail**.
-
 -   Changing audit settings on an object (for example, modifying the system access control list (SACL) for a file or registry key).
-
     **Note**  
     SACL change auditing is performed when a SACL for an object has changed and the Policy Change category is configured. Discretionary access control list (DACL) and owner change auditing are performed when Object Access auditing is configured and the object's SACL is set for auditing of the DACL or owner change.
-
      
-
 -   Changing anything in the Special Groups list.
-
 **Important**  
 Changes to the audit policy are critical security events.
-
  
-
 Event volume: Low
-
 Default: Success
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -108,19 +89,8 @@ Default: Success
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

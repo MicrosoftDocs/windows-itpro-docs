@@ -2,35 +2,23 @@
 title: Script rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the script rule collection.
 ms.assetid: fee24ca4-935a-4c5e-8a92-8cf1d134d35f
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Script rules in AppLocker
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic describes the file formats and available default rules for the script rule collection.
-
 AppLocker defines script rules to include only the following file formats:
-
 -   .ps1
-
 -   .bat
-
 -   .cmd
-
 -   .vbs
-
 -   .js
-
 The following table lists the default rules that are available for the script rule collection.
-
 <table>
 <colgroup>
 <col width="25%" />
@@ -67,19 +55,8 @@ The following table lists the default rules that are available for the script ru
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Understanding AppLocker default rules](understanding-applocker-default-rules.md)
-
  
-
  
-
-
-
-
-
