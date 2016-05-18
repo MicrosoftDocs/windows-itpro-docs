@@ -11,18 +11,23 @@ author: brianlic-msft
 # Device Guard certification and compliance
 **Applies to**
 -   Windows 10
+
 Device Guard is a combination of hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications. If the app isn’t trusted it can’t run, period. It also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code after the computer restarts because of how decisions are made about what can run and when.
 Device Guard uses the new virtualization-based security in Windows 10 to isolate the Code Integrity service from the Windows kernel itself, letting the service use signatures defined by your enterprise-controlled policy to help determine what is trustworthy. In effect, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
 For details on how to implement Device Guard, see [Device Guard deployment guide](device-guard-deployment-guide.md).
 ## Why use Device Guard
 With thousands of new malicious files created every day, using traditional methods like signature-based detection to fight against malware provides an inadequate defense against new attacks. Device Guard on Windows 10 changes from a mode where apps are trusted unless blocked by an antivirus or other security solutions, to a mode where the operating system trusts only apps authorized by your enterprise.
 Device Guard also helps protect against [zero day attacks](http://go.microsoft.com/fwlink/p/?linkid=534209) and works to combat the challenges of [polymorphic viruses](http://go.microsoft.com/fwlink/p/?LinkId=534210).
+
 ### Advantages to using Device Guard
+
 You can take advantage of the benefits of Device Guard, based on what you turn on and use:
 -   Helps provide strong malware protection with enterprise manageability
 -   Helps provide the most advanced malware protection ever offered on the Windows platform
 -   Offers improved tamper resistance
+
 ## How Device Guard works
+
 Device Guard restricts the Windows 10 operating system to only running code that’s signed by trusted signers, as defined by your Code Integrity policy through specific hardware and security configurations, including:
 -   User Mode Code Integrity (UMCI)
 -   New kernel code integrity rules (including the new Windows Hardware Quality Labs (WHQL) signing constraints)
@@ -72,7 +77,7 @@ The following table shows the hardware and software you need to install and conf
 <td align="left"><p>Firmware lock</p></td>
 <td align="left"><ul>
 <li><p>The firmware setup should be locked to prevent other operating systems from starting and to prevent changes to the UEFI settings.</p></li>
-<li><p>• Work with your hardware manufacturer to ensure that the devices are Device Guard ready</p></li>
+<li><p>Work with your hardware manufacturer to ensure that the devices are Device Guard ready</p></li>
 <li><p>You should require a firmware password or higher authentication to change firmware settings.</p></li>
 </ul></td>
 </tr>

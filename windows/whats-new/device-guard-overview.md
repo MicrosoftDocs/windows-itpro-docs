@@ -3,16 +3,19 @@ title: Device Guard overview (Windows 10)
 description: Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications.
 ms.assetid: FFE244EE-5804-4CE8-A2A9-48F49DC3AEF2
 ms.pagetype: security
-keywords: ["Device Guard"]
+keywords: Device Guard
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
 ---
+
 # Device Guard overview
+
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
+
 Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications. If the app isn’t trusted it can’t run, period. It also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code after the computer restarts because of how decisions are made about what can run and when.
 Device Guard uses the new virtualization-based security in Windows 10 Enterprise to isolate the Code Integrity service from the Microsoft Windows kernel itself, letting the service use signatures defined by your enterprise-controlled policy to help determine what is trustworthy. In effect, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
 For details on how to implement Device Guard, see [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md).

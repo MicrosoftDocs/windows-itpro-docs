@@ -82,9 +82,7 @@ The PC must meet the following hardware and software requirements to use Credent
 <div class="alert">
 <strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.
 </div>
-<div>
- 
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Secure firmware update process</p></td>
