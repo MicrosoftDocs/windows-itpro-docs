@@ -15,7 +15,13 @@ This topic for the IT professional describes the Advanced Security Audit policy 
 Authorization policy changes that can be audited include:
 -   Assigning or removing user rights (privileges) such as **SeCreateTokenPrivilege**, except for the system access rights that are audited by using the [Audit Authentication Policy Change](audit-authentication-policy-change.md) subcategory.
 -   Changing the Encrypting File System (EFS) policy.
+<<<<<<< HEAD
 Event volume: Low
+=======
+
+Event volume: Very high
+
+>>>>>>> master
 Default: Not configured
 <table>
 <colgroup>

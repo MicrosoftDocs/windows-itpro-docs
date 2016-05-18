@@ -22,7 +22,11 @@ App migration or replacement is an essential part of your Chromebook migration. 
 Before you can do any analysis or make decisions about which apps to migrate or replace, you need to identify which apps are currently in use on the Chromebook devices. You will create a list of apps that are currently in use (also called an app portfolio).
 **Note**  
 The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform-testing-webapps) section.
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> master
 You can divide the apps into the following categories:
 -   **Apps installed and managed by the institution.** These apps are typically managed in the Apps section in the Google Admin Console. You can record the list of these apps in your app portfolio.
 -   **Apps installed by faculty or students.** Faculty or students might have installed these apps as a part of a classroom curriculum. Obtain the list of these apps from faculty or students. Ensure you only record apps that are legitimately used as a part of classroom curriculum (and not for personal entertainment or use).
@@ -652,7 +656,14 @@ Manually migrate the cloud storage migration by using the following steps:
 5.  Optionally uninstall the Google Drive app.
 There are also a number of software vendors who provide software that helps automate the migration from Google Drive to OneDrive for Business, Office 365 SharePoint, or OneDrive. For more information about these automated migration tools, contact the vendors.
 ## Perform cloud services migration
+<<<<<<< HEAD
 In the [Plan for cloud services migration](#plan-cloud-services)section, you identified the cloud services currently in use, selected the cloud services that you want to migrate, prioritized the cloud services to migrate, and then selected the cloud services migration strategy. You can perform the cloud services migration before or after you deploy the Windows devices.
+=======
+
+
+In the [Plan for cloud services migration](#plan-cloud-services) section, you identified the cloud services currently in use, selected the cloud services that you want to migrate, prioritized the cloud services to migrate, and then selected the cloud services migration strategy. You can perform the cloud services migration before or after you deploy the Windows devices.
+
+>>>>>>> master
 Migrate the cloud services that you currently use to the Microsoft cloud services that you selected. For example, you could migrate from a collaboration website to Office 365 SharePoint. Perform the cloud services migration based on the existing cloud services and the Microsoft cloud services that you selected.
 There are also a number of software vendors who provide software that helps automate the migration from other cloud services to Microsoft cloud services. For more information about these automated migration tools, contact the vendors.
 ## Perform Windows device deployment
