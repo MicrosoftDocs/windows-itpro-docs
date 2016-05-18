@@ -127,7 +127,7 @@ There are three categories of apps that might be pinned to a taskbar:
  **Note**  
    The earlier method of using [TaskbarLinks](http://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
    
-The following example shows how apps will be pinned - Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
+The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 
 > **Note**  In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
 

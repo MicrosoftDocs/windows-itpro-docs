@@ -21,7 +21,7 @@ The order of apps in the xml file dictates order of apps on taskbar from left to
 
 > **Note**  In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
 
-The following example shows how apps will be pinned: Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
+The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 
 ![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
 
