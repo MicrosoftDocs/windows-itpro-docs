@@ -17,7 +17,9 @@ author: jdeckerMS
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
-[Minecraft: Education Edition](http://education.minecraft.net/) is built for learning. (need more marketing blurb here?)
+[Minecraft: Education Edition](http://education.minecraft.net/) is built for learning. Watch this video to learn more about Minecraft.
+
+<iframe width="501" height="282" src="https://www.youtube.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe>
 
 Teachers and IT administrators can now get early access to **Minecraft Education Edition** and add it their Microsoft Store for Business for distribution. 
 
