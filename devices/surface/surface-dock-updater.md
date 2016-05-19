@@ -94,6 +94,7 @@ Microsoft Surface Dock Updater logs its progress into the Event Log, as shown in
 | 12102    | Event in the DisplayPort chipset firmware update process |
 | 12105    | Error                                                    |
 
+
 Figure 8. Surface Dock Updater events in Event Viewer
 
 ![figure 8](images/surfacedockupdater-fig8-737test.png)
