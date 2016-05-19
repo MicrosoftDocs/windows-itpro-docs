@@ -60,7 +60,7 @@ When the Microsoft Surface Deployment Accelerator completes, you can use the dep
 
 You can modify the task sequence in the MDT Deployment Workbench to [include your own apps](http://go.microsoft.com/fwlink/p/?linkid=691700), or to [pause the automated installation routine](http://go.microsoft.com/fwlink/p/?linkid=691701). While the installation is paused, you can make changes to customize your reference image. After the image is captured, you can configure a deployment task sequence and distribute this custom configuration by using the same network boot capabilities as before.
 
-**Note**&nbsp;&nbsp;With Microsoft Surface Deployment Accelerator v1.9.0258, Surface Pro 3, Surface Pro 4, and Surface Book are supported for Windows 10 deployment, and Surface Pro 3 is supported for Windows 8.1 deployment.
+>**Note:**&nbsp;&nbsp;With Microsoft Surface Deployment Accelerator v1.9.0258, Surface Pro 3, Surface Pro 4, and Surface Book are supported for Windows 10 deployment, and Surface Pro 3 is supported for Windows 8.1 deployment.
 
  
 
@@ -75,7 +75,7 @@ Figure 2. Specify a local source for Surface driver and app files
 
 You can find a full list of available driver downloads at [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 
-**Note**&nbsp;&nbsp;Downloaded files do not need to be extracted. The downloaded files can be left as .zip files as long as they are stored in one folder.
+>**Note:**&nbsp;&nbsp;Downloaded files do not need to be extracted. The downloaded files can be left as .zip files as long as they are stored in one folder.
 
  
 

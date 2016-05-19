@@ -37,7 +37,7 @@ The tool installs in the Surface Deployment Accelerator program group, as shown 
 
 Figure 2. The Surface Deployment Accelerator program group and icon
 
-**Note**&nbsp;&nbsp;At this point the tool has not yet prepared any deployment environment or downloaded any materials from the Internet.
+>**Note:**&nbsp;&nbsp;At this point the tool has not yet prepared any deployment environment or downloaded any materials from the Internet.
 
  
 
@@ -46,7 +46,7 @@ Figure 2. The Surface Deployment Accelerator program group and icon
 
 The following steps show how you create a deployment share for Windows 10 that supports Surface Pro 3, Surface Pro 4, Surface Book, the Surface Firmware Tool, and the Surface Asset Tag Tool. As you follow the steps below, make the selections that are applicable for your organization. For example, you could choose to deploy Windows 10 to Surface Book only, without any of the Surface apps.
 
-**Note**&nbsp;&nbsp;SDA lets you create deployment shares for both Windows 8.1 and Windows 10 deployments, but you can only create a single deployment share at a time. Therefore, to create both Windows 8.1 and Windows 10 deployment shares, you will need to run the tool twice.
+>**Note:**&nbsp;&nbsp;SDA lets you create deployment shares for both Windows 8.1 and Windows 10 deployments, but you can only create a single deployment share at a time. Therefore, to create both Windows 8.1 and Windows 10 deployment shares, you will need to run the tool twice.
 
  
 
@@ -114,7 +114,7 @@ The following steps show how you create a deployment share for Windows 10 that 
 
 If you are unable to connect to the Internet with your deployment server, or if you want to download the Surface drivers and apps separately, you can specify a local source for the driver an app files at the time of deployment share creation. On the **Configure** page of the SDA wizard, select the **Copy from a Local Directory** check box, as shown in Figure 6. The **Download from the Internet** check box will be automatically deselected. Enter the folder location where you have placed the driver and app files in the **Local Path** field, as shown in Figure 6.
 
-**Note**&nbsp;&nbsp;All of the downloaded driver and applications files must be located in the same folder. The driver and app files do not need to be extracted from the downloaded .zip files.
+>**Note:**&nbsp;&nbsp;All of the downloaded driver and applications files must be located in the same folder. The driver and app files do not need to be extracted from the downloaded .zip files.
 
  
 
@@ -122,7 +122,7 @@ If you are unable to connect to the Internet with your deployment server, or if 
 
 Figure 6. Specify the Surface driver and app files from a local path
 
-**Note**&nbsp;&nbsp;The **Copy from a Local Directory** check box is only available in SDA version 1.90.0221 or later.
+>**Note:**&nbsp;&nbsp;The **Copy from a Local Directory** check box is only available in SDA version 1.90.0221 or later.
 
  
 
@@ -130,7 +130,7 @@ Figure 6. Specify the Surface driver and app files from a local path
 
 You can use USB media to perform an SDA deployment if your Surface device is unable to boot from the network. For example, if you do not have a Microsoft Surface Ethernet Adapter or Microsoft Surface dock to facilitate network boot (PXE boot). The USB drive produced by following these steps includes a complete copy of the SDA deployment share and can be run on a Surface device without a network connection.
 
-**Note**&nbsp;&nbsp;The offline media files for the complete SDA deployment share are approximately 9 GB in size. Your USB drive must be at least 9 GB in size. A 16 GB USB drive is recommended.
+>**Note:**&nbsp;&nbsp;The offline media files for the complete SDA deployment share are approximately 9 GB in size. Your USB drive must be at least 9 GB in size. A 16 GB USB drive is recommended.
 
  
 
@@ -144,7 +144,7 @@ Before you can create bootable media files within the MDT Deployment Workbench o
 
 4.  **clean** – Removes all configuration from your USB drive.
 
-    **Warning**&nbsp;&nbsp;This step will remove all information from your drive. Verify that your USB drive does not contain any needed data before you perform the **clean** command.
+    >**Warning:**&nbsp;&nbsp;This step will remove all information from your drive. Verify that your USB drive does not contain any needed data before you perform the **clean** command.
 
      
 
@@ -162,7 +162,7 @@ Before you can create bootable media files within the MDT Deployment Workbench o
 
     Figure 7. Use DiskPart to prepare a USB drive for boot
 
-    **Note**&nbsp;&nbsp;You can format your USB drive with FAT32 from Disk Management, but you must still use DiskPart to set the partition as active for the drive to boot properly.
+    >**Note:**&nbsp;&nbsp;You can format your USB drive with FAT32 from Disk Management, but you must still use DiskPart to set the partition as active for the drive to boot properly.
 
      
 
@@ -269,7 +269,7 @@ When you run the task sequence, you will be prompted to provide the following in
 
 -   A product key, if one is required
 
-    **Note**&nbsp;&nbsp;If you are deploying the same version of Windows as the version that came on your device, no product key is required.
+    >**Note:**&nbsp;&nbsp;If you are deploying the same version of Windows as the version that came on your device, no product key is required.
 
      
 
@@ -285,8 +285,7 @@ The **2 – Create Windows Reference Image** task sequence is used to perform a 
 
 Like the **1 – Deploy Microsoft Surface** task sequence, the **2 – Create Windows Reference Image** task sequence performs a deployment of the unaltered Windows image directly from the installation media. Creation of a reference image should always be performed on a virtual machine. Using a virtual machine as your reference system helps to ensure that the resulting image is compatible with different hardware configurations.
 
-**Note**  
-Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information see [Deploy a Windows 10 image using MDT 2013 Update 1](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
+>**Note:**&nbsp;&nbsp;Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information see [Deploy a Windows 10 image using MDT 2013 Update 1](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
 
  
 
