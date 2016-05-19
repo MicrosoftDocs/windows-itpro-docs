@@ -17,11 +17,9 @@ The Surface Dock provides external connectivity to Surface devices through a sin
 
 Like the firmware for Surface devices, firmware for Surface Dock is also contained within a downloaded driver that is visible in Device Manager. This driver stages the firmware update files on the Surface device. When a Surface Dock is connected and the driver is loaded, the newer version of the firmware staged by the driver is detected and firmware files are copied to the Surface Dock. The Surface Dock then begins a two-phase process to apply the firmware internally. Each phase requires the Surface Dock to be disconnected from the Surface device before the firmware is applied. The driver copies the firmware into the dock, but only applies it when the user disconnects the Surface device from the Surface Dock. This ensures that there are no disruptions because the firmware is only applied when the user leaves their desk with the device.
 
->**Note:**&nbsp;&nbsp;You can learn more about the firmware update process for Surface devices and how firmware is updated through driver installation at the following links:
-
--   [How to manage and update your drivers and firmware for Surface](http://go.microsoft.com/fwlink/p/?LinkId=785353) from Microsoft Mechanics
-
--   [Windows Update Makes Surface Better](http://go.microsoft.com/fwlink/p/?LinkId=785354) on the Microsoft Devices Blog
+>**Note:**&nbsp;&nbsp;You can learn more about the firmware update process for Surface devices and how firmware is updated through driver installation at the following links:<br/>
+- [How to manage and update Surface drivers and firmware](https://technet.microsoft.com/en-us/mt697551) from Microsoft Mechanics
+- [Windows Update Makes Surface Better](http://go.microsoft.com/fwlink/p/?LinkId=785354) on the Microsoft Devices Blog
 
  
 
