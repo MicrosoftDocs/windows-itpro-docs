@@ -16,9 +16,9 @@ author: jdeckerMS
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
-[Minecraft: Education Edition](http://education.minecraft.net/) is built for learning. 
+[Minecraft: Education Edition](http://education.minecraft.net/) is built for learning. (need more marketing blurb here?)
 
-This summer, teachers and IT administrators can get early access to **Minecraft: Education Edition**. 
+Teachers and IT administrators can now get early access to **Minecraft: Education Edition**. 
 
 ![education.minecraft.net](images/minecraft.png)
 
@@ -32,10 +32,10 @@ This summer, teachers and IT administrators can get early access to **Minecraft:
 
 ![teacher](images/teacher.png) 
 
-[Learn how teachers can get and distribute **Minecraft: Education Edition**](teacher.get.minecraft.md)
+[Learn how teachers can get and distribute **Minecraft: Education Edition**](teacher-get-minecraft.md)
 
   
 ![IT administrator](images/school.png)
 
-[Learn how IT administrators can get and distribute **Minecraft: Education Edition**](teacher.get.minecraft.md), and how to manage permissions for Minecraft.
+[Learn how IT administrators can get and distribute **Minecraft: Education Edition**](school-get-minecraft.md), and how to manage permissions for Minecraft.
 

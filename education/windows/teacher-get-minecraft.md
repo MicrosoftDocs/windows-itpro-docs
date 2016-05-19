@@ -16,4 +16,6 @@ author: jdeckerMS
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
-Teachers and IT administrators can use the **Set up School PCs** app to quickly set up computers for students. 
+Teachers 
+
+![Click Get the app](images/teacher-get-app.png) 
