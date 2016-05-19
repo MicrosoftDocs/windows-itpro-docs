@@ -2,43 +2,28 @@
 title: Audit System Integrity (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit System Integrity, which determines whether the operating system audits events that violate the integrity of the security subsystem.
 ms.assetid: 942a9a7f-fa31-4067-88c7-f73978bf2034
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit System Integrity
-
-
 **Applies to**
-
 -   Windows 10
 -   Windows 10 Mobile
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit System Integrity**, which determines whether the operating system audits events that violate the integrity of the security subsystem.
-
 Activities that violate the integrity of the security subsystem include the following:
-
 -   Audited events are lost due to a failure of the auditing system.
-
 -   A process uses an invalid local procedure call (LPC) port in an attempt to impersonate a client, reply to a client address space, read to a client address space, or write from a client address space.
-
 -   A remote procedure call (RPC) integrity violation is detected.
-
 -   A code integrity violation with an invalid hash value of an executable file is detected.
-
 -   Cryptographic tasks are performed.
-
 **Important**  
 Violations of security subsystem integrity are critical and could indicate a potential security attack.
-
  
-
 Event volume: Low
-
 Default: Success and failure
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -97,19 +82,8 @@ Default: Success and failure
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

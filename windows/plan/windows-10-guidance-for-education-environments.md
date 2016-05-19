@@ -5,16 +5,15 @@ ms.assetid: 225C9D6F-9329-4DDF-B447-6CE7804E314E
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
+ms.pagetype: security
 author: craigash
 ---
 
 # Guidance for education environments
 
-
 Find resources to help you plan your deployment of Windows 10 to desktops, laptops, tablets, and other devices in educational institutions.
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -34,14 +33,6 @@ Find resources to help you plan your deployment of Windows 10 to desktops, lapt
 </tr>
 </tbody>
 </table>
-
  
-
  
-
  
-
-
-
-
-

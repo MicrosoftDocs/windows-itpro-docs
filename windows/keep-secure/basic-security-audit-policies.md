@@ -2,23 +2,17 @@
 title: Basic security audit policies (Windows 10)
 description: Before you implement auditing, you must decide on an auditing policy.
 ms.assetid: 3B678568-7AD7-4734-9BB4-53CF5E04E1D3
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Basic security audit policies
-
-
 **Applies to**
-
 -   Windows 10
-
 Before you implement auditing, you must decide on an auditing policy. A basic audit policy specifies categories of security-related events that you want to audit. When this version of Windows is first installed, all auditing categories are disabled. By enabling various auditing event categories, you can implement an auditing policy that suits the security needs of your organization.
-
 The event categories that you can choose to audit are:
-
 -   Audit account logon events
 -   Audit account management
 -   Audit directory service access
@@ -28,12 +22,8 @@ The event categories that you can choose to audit are:
 -   Audit privilege use
 -   Audit process tracking
 -   Audit system events
-
 If you choose to audit access to objects as part of your audit policy, you must enable either the audit directory service access category (for auditing objects on a domain controller), or the audit object access category (for auditing objects on a member server or workstation). Once you have enabled the object access category, you can specify the types of access you want to audit for each group or user.
-
 ## In this section
-
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -64,14 +54,6 @@ If you choose to audit access to objects as part of your audit policy, you must 
 </tr>
 </tbody>
 </table>
-
  
-
  
-
  
-
-
-
-
-

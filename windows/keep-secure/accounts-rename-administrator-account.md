@@ -5,20 +5,18 @@ ms.assetid: d21308eb-7c60-4e48-8747-62b8109844f9
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Accounts: Rename administrator account
 
-
 **Applies to**
-
 -   Windows 10
 
 This security policy reference topic for the IT professional describes the best practices, location, values, and security considerations for this policy setting.
 
 ## Reference
-
 
 The **Accounts: Rename administrator account** policy setting determines whether a different account name is associated with the security identifier (SID) for the administrator account.
 
@@ -27,66 +25,29 @@ Because the administrator account exists on all Windows 10 for desktop editions
 Rename the Administrator account by specifying a value for the **Accounts: Rename administrator account** policy setting.
 
 ### Possible values
-
 -   User-defined text
-
 -   Not defined
 
 ### Best practices
-
 -   Be sure to inform users who are authorized to use this account of the new account name.
 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
-
 ### Default values
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Administrator</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Administrator</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Administrator</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Administrator</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Not defined |
+| Stand-Alone Server Default Settings | Administrator |
+| DC Effective Default Settings | Administrator |
+| Member Server Effective Default Settings | Administrator |
+| Client Computer Effective Default Settings | Administrator |
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -103,7 +64,6 @@ None.
 This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local device by using the Local Security Policy snap-in.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -123,14 +83,6 @@ You must provide users who are authorized to use this account with the new accou
 
 ## Related topics
 
-
 [Security Options](security-options.md)
-
  
-
  
-
-
-
-
-

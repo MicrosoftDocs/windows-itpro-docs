@@ -2,52 +2,44 @@
 title: Windows 10 Mobile security guide (Windows 10)
 description: This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
 ms.assetid: D51EF508-699E-4A68-A7CD-91D821A97205
-keywords: ["data protection, encryption, malware resistance, smartphone, device, Windows Store"]
+keywords: data protection, encryption, malware resistance, smartphone, device, Windows Store
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security; mobile
 author: AMeeus
 ---
 
 # Windows 10 Mobile security guide
 
-
 **Applies to**
-
 -   Windows 10 Mobile
 
 This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
 
 ## Overview
 
-
 Windows 10 Mobile is specifically designed for smartphones and small tablets. It uses the same security technologies as the Windows 10 operating system to help protect against known and emerging security threats across the spectrum of attack vectors. Several broad categories of security work went into Windows 10 Mobile:
 
 -   **Identity and access control.** Microsoft has greatly enhanced identity and access control features to simplify and improve the security of user authentication. These features include Windows Hello and Microsoft Passport, which better protect user identities through easy-to-deploy and easy-to-use multifactor authentication (MFA). (Windows Hello requires either a specialized illuminated infrared \[IR\] camera for facial recognition and iris detection or a finger print reader that supports the Windows Biometric Framework.)
-
 -   **Data protection.** Confidential data is better protected from compromise than ever before. Windows 10 Mobile uses several data-protection technologies and delivers them in a user-friendly and IT-manageable way.
-
 -   **Malware resistance.**Windows 10 Mobile helps protect critical system resources and apps to reduce the threat of malware, including support for enterprise-grade secure hardware and Secure Boot.
+-   **App platform security.** The Windows 10 Mobile enterprise-grade secure app platform provides multiple layers of security. For example, Windows Store checks all apps for malware to help prevent malware from reaching devices. 
 
--   **App platform security.** The Windows 10 Mobile enterprise-grade secure app platform provides multiple layers of security. For example, Windows Store checks all apps for malware to help prevent malware from reaching devices. In addition, AppContainer application isolation helps prevent any malicious app from compromising other apps.
+In addition, AppContainer application isolation helps prevent any malicious app from compromising other apps.
 
 This guide explains each of these technologies and how they help protect your Windows 10 Mobile devices.
 
 ## Identity and access control
 
-
 A fundamental component of security is the notion that a user has a unique identity and that that identity is either allowed or denied access to resources. This notion is traditionally known as access control, which has three parts:
-
 -   **Identification.** The user (subject) asserts a unique identity to the computer system for the purpose of accessing a resource (object), such as a file or an app.
-
 -   **Authentication.** Authentication is the process of proving the asserted identity and verifying that the subject is indeed the subject.
-
 -   **Authorization.** The system compares the authenticated subject’s access rights against the object’s permissions and either allows or denies the requested access.
 
 The way an operating system implements these components makes a difference in preventing attackers from accessing corporate data. Only users who prove their identities and are authorized to access that data can access it. In security, however, there are varying degrees of identity proof and many different requirements for authorization limits. The access control flexibility most corporate environments need presents a challenge for any operating system. Table 1 lists typical Windows access control challenges and the solutions that Windows 10 Mobile offers.
 
 Table 1. Windows 10 Mobile solutions for typical access control challenges
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -78,9 +70,7 @@ Table 1. Windows 10 Mobile solutions for typical access control challenges
 </tr>
 </tbody>
 </table>
-
  
-
 The following sections describe these challenges and solutions in more detail.
 
 ### Microsoft Passport
@@ -88,7 +78,6 @@ The following sections describe these challenges and solutions in more detail.
 Microsoft Passport provides strong MFA, fully integrated into Windows devices, to replace passwords. To authenticate, the user must have a Microsoft Azure Active Directory (Azure AD)–registered device and either a PIN or Windows Hello biometric gesture to unlock the device. Microsoft Passport is conceptually similar to a smart card but more flexible, as it doesn’t require a public key infrastructure or the implementation of additional hardware and supports biometric identification.
 
 Microsoft Passport offers three significant advantages over the previous state of Windows authentication: it’s more flexible, it’s based on industry standards, and it more effectively mitigates risks.
-
 ### It's effective
 
 Microsoft Passport eliminates the use of passwords for logon and so reduces the risk that an attacker will steal and reuse a user’s credentials. User key material, which includes the user’s private key, is available only on the device that generated it. The key material is protected with the TPM, which protects the key material from attackers who want to capture and reuse it. It is a Windows Hardware Certification Program requirement that every Windows 10 Mobile device include a TPM.
@@ -112,26 +101,18 @@ Microsoft Passport is also supported on the desktop, giving organizations a unif
 ### It's standardized
 
 Both software vendors and enterprise customers have come to realize that proprietary identity and authentication systems are a dead end: the future lies with open, interoperable systems that allow secure authentication across a variety of devices, line-of-business (LOB) apps, and external applications and websites. To this end, a group of industry players formed the Fast Identity Online (FIDO) Alliance. The FIDO Alliance is a nonprofit organization that works to address the lack of interoperability among strong authentication devices as well as the problems users face in creating and remembering multiple user names and passwords. The FIDO Alliance plans to change the nature of authentication by developing specifications that define an open, scalable, interoperable set of mechanisms that supplant reliance on passwords to authenticate users of online services securely. This new standard can allow any business network, app, website, or cloud application to interface with a broad variety of existing and future FIDO-enabled devices and operating system platforms using a standardized set of interfaces and protocols.
-
 In 2014, Microsoft joined the board of the FIDO Alliance. FIDO standards enable a universal framework that a global ecosystem delivers for a consistent and greatly improved user experience of strong password-less authentication. The FIDO 1.0 specifications, published in December 2014, provide for two types of authentications: password-less (known as UAF) and second factor (U2F). The FIDO Alliance is working on a set of 2.0 proposals that incorporate the best ideas from its U2F and UAF FIDO 1.0 standards and of course new ideas. Microsoft has contributed Microsoft Passport technology to the FIDO 2.0 specification workgroup for review and feedback and continues to work with the FIDO Alliance as the FIDO 2.0 specification moves forward. Interoperability of FIDO products is a hallmark of FIDO authentication. Microsoft believes that bringing a FIDO solution to market will help solve a critical need for enterprises and consumers alike.
 
 ### Windows Hello
 
 Windows Hello is the new biometric framework for Windows 10. Because biometric identification is built directly into the operating system, it allows you to use your iris, face, or fingerprint to unlock your mobile device. Windows Hello unlocks Microsoft Passport credentials, which enable authentication to resources or relying parties such as software-as-a-service applications like Microsoft Office 365.
-
 Windows Hello supports three biometric sensor options that are suitable for enterprise scenarios:
 
 -   **Facial recognition** uses special IR cameras to reliably tell the difference between a photograph or scan and a living person. Several vendors are shipping external cameras that incorporate this technology, and major manufacturers are already shipping laptops with integrated facial-recognition technology. Both Surface Pro 4 and Surface Book support this technology.
-
 -   **Fingerprint recognition** uses a sensor to scan the user’s fingerprint. Although fingerprint readers have been available for computers running the Windows operating system for years, the detection, anti-spoofing, and recognition algorithms in Windows 10 are more advanced than in previous Windows versions. Most existing fingerprint readers (whether external to or integrated into laptops or USB keyboards) that support the Windows Biometric Framework will work with Windows Hello.
-
 -   **Iris scanning** uses cameras designed to scan the user’s iris, the colorful and highly detailed portion of the eye. Because the data must be accurate, iris scanning uses a combination of an IR light source and a high-quality camera. Microsoft Lumia 950 and 950 XL devices support this technology.
-
-**Note**  
-Users must create an unlock PIN before they enroll a biometric gesture. The device uses this PIN as a fallback mechanism in situations where it cannot capture the biometric gesture.
-
+> **Note:**  Users must create an unlock PIN before they enroll a biometric gesture. The device uses this PIN as a fallback mechanism in situations where it cannot capture the biometric gesture.
  
-
 All three of these biometric factors—the face, the finger, and the iris—are unique to an individual. To capture enough data to uniquely identify an individual, a biometric scanner might initially capture images in multiple conditions or with additional details. For example, an iris scanner will capture images of both eyes; or both with and without eyeglasses or contact lenses.
 
 Spoofing biometric data is often a big concern in enterprise environments. Microsoft employs several anti-spoofing techniques in Windows 10 Mobile that verify the trustworthiness of the biometric device as well as guard against intentional collision with stored biometric measurements. These techniques help improve the false-acceptance rate (the rate at which spoofed biometric data is accepted as authentic) while maintaining the overall usability and manageability of MFA.
@@ -144,17 +125,15 @@ The device that senses the biometric factors must report the data to Windows Hel
 
 ## Data protection
 
-
 Windows 10 Mobile continues to provide solutions that help protect information against unauthorized access and disclosure.
 
-### Device encryption
 
+### Device encryption
 Windows 10 Mobile uses device encryption, based on BitLocker technology, to encrypt all internal storage, including operating system and data storage partitions. The user can activate device encryption, or the IT department can activate and enforce encryption for company-managed devices through MDM tools. When device encryption is turned on, all data stored on the phone is encrypted automatically. A Windows 10 Mobile device with encryption turned on helps protect the confidentiality of data stored if the device is lost or stolen. The combination of Windows Hello lock and data encryption makes it extremely difficult for an unauthorized party to retrieve sensitive information from the device.
 
 You can customize how device encryption works to meet your unique security requirements. Device encryption even enables you to define your own cipher suite. For example, you can specify the algorithm and key size that Windows 10 Mobile uses for data encryption, which Transport Layer Security (TLS) cipher suites are permitted, and whether Federal Information Processing Standard (FIPS) policy is enabled. Table 2 lists the policies you can change to customize device encryption on Windows 10 Mobile devices.
 
 Table 2. Windows 10 cryptography policies
-
 <table>
 <colgroup>
 <col width="33%" />
@@ -186,9 +165,7 @@ Table 2. Windows 10 cryptography policies
 </tr>
 </tbody>
 </table>
-
  
-
 For a complete list of policies available, see [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkId=733963).
 
 ### <a href="" id="enterprise-data-protection--"></a>Enterprise data protection
@@ -200,32 +177,21 @@ One growing risk is authorized users’ accidental disclosure of sensitive data�
 In Windows 10 Mobile, enterprise data protection (EDP) helps separate personal and enterprise data and prevent data leakage. Key features include its ability to:
 
 -   Automatically tag personal and corporate data.
-
 -   Protect data while it’s at rest on local or removable storage.
-
 -   Control which apps can access corporate data.
-
 -   Control which apps can access a virtual private network (VPN) connection.
-
 -   Prevent users from copying corporate data to public locations.
 
-**Note**  
-EDP is currently being tested in select customer evaluation programs. For more information about EDP, see [Enterprise data protection overview](../whats-new/edp-whats-new-overview.md).
-
+> **Note:**  EDP is currently being tested in select customer evaluation programs. For more information about EDP, see [Enterprise data protection overview](../whats-new/edp-whats-new-overview.md).
  
-
 ### <a href="" id="enlightenment--"></a>Enlightenment
 
 Third-party data loss protection solutions usually require developers to wrap their apps. In contrast, EDP puts the intelligence in Windows 10 Mobile so that it doesn’t require wrappers. As a result, most apps require nothing extra to work with EDP.
 
 EDP can enforce policy without the need for an app to change. This means that an app that always handles business data (such as an LOB app) can be added to the allowed list and will always encrypt all data that it handles. However, if the app does not use common controls, cut and paste operations from this app to a non-enterprise app will silently fail. In addition, if the app needs to handle personal data, this data will also be encrypted.
-
 Therefore, to improve the user experience, in some cases, developers should enlighten their apps by adding code to and compiling them to use the EDP application programming interfaces. Those cases include apps that:
-
 -   Don’t use common controls for saving files.
-
 -   Don’t use common controls for text boxes.
-
 -   Work on personal and enterprise data simultaneously (for example, contact apps that display personal and enterprise data in a single view; a browser that displays personal and enterprise web pages on tabs within a single instance).
 
 Figure 1 summarizes when an app might require enlightenment to work with EDP. Microsoft Word is a good example. Not only can Word access personal and enterprise data simultaneously, but it can also transmit enterprise data (for example, email attachments containing enterprise data).
@@ -241,15 +207,10 @@ Figure 1. When is enlightenment required?
 To configure EDP in an MDM solution that supports it, add authorized apps to the EDP allow list. When a device running Windows 10 Mobile enrolls in the MDM solution, apps that this policy doesn’t authorize won’t have access to enterprise data.
 
 EDP works seamlessly until users try to access enterprise data with or try to paste enterprise data into unauthorized apps or locations on the web. For example, copying enterprise data from an authorized app to another authorized app works as usual, but EDP blocks users from copying enterprise data from an authorized app to an unauthorized app. Likewise, EDP blocks users from using an unauthorized app to open a file that contains enterprise data.
-
 In addition, users cannot copy and paste data from authorized apps to unauthorized apps or locations on the Web without triggering one of the EDP protection levels:
-
 -   **Block.** EDP blocks users from completing the operation.
-
 -   **Override.** EDP notifies users that the operation is inappropriate but allows them to override the policy, although it logs the operation in the audit log.
-
 -   **Audit.** EDP does not block or notify users but logs the operation in the audit log.
-
 -   **Off.** EDP does not block or notify users and does not log operations in the audit log.
 
 ### Data separation
@@ -263,9 +224,7 @@ EDP provides the same data separation but neither uses containers nor requires a
 In Windows 10 Mobile, visual cues indicate the status of EDP to users (see Figure 2):
 
 -   **Start screen.** On the Start screen, apps that an EDP policy manages display a visual cue.
-
 -   **Files.** In File Explorer, a visual cue indicates whether a file or folder contains enterprise data and is therefore encrypted.
-
 For example, Erwin is an employee at Fabrikam. He opens Microsoft Edge from the Start screen and sees that the tile indicates that an EDP policy manages the browser. Erwin opens the Fabrikam sales website and downloads a spreadsheet. In File Explorer, Erwin sees that the file he downloaded has a visual cue which indicates that it’s encrypted and contains enterprise data. When Erwin tries to paste data from that spreadsheet into an app that no EDP policy manages (for example, his Twitter app), Erwin might see a message that allows him to override protection while logging the action, depending on the protection level configured in the EDP policy.
 
 ![figure 2](images/mobile-security-guide-fig2.png)
@@ -274,9 +233,7 @@ Figure 2. Visual cues in EDP
 
 ## Malware resistance
 
-
 Just as software has automated so much of our lives, malware has automated attacks on our devices. Those attacks are relentless. Malware is constantly changing, and when it infects a device, it can be difficult to detect and remove.
-
 The best way to fight malware is to prevent the infection from happening. Windows 10 Mobile provides strong malware resistance because it takes advantage of secured hardware and protects both the startup process and the core operating system architecture.
 
 Table 3 lists specific malware threats and the mitigation that Windows 10 Mobile provides.
@@ -334,14 +291,9 @@ Table 3. Threats and Windows 10 Mobile mitigations
 </tr>
 </tbody>
 </table>
-
  
-
-**Note**  
-Windows 10 Mobile devices use a System on a Chip (SoC) design provided by SoC vendors such as Qualcomm. With this architecture, the SoC vendor and device manufacturers provide the pre-UEFI bootloaders and the UEFI environment. The UEFI environment implements the UEFI Secure Boot standard described in section 27 of the UEFI specification, which can be found at [http://www.uefi.org/specsandtesttools](http://go.microsoft.com/fwlink/p/?LinkId=722912). This standard describes the process by which all UEFI drivers and applications are validated against keys provisioned into a UEFI-based device before they are executed.
-
+> **Note:**  Windows 10 Mobile devices use a System on a Chip (SoC) design provided by SoC vendors such as Qualcomm. With this architecture, the SoC vendor and device manufacturers provide the pre-UEFI bootloaders and the UEFI environment. The UEFI environment implements the UEFI Secure Boot standard described in section 27 of the UEFI specification, which can be found at [http://www.uefi.org/specsandtesttools](http://go.microsoft.com/fwlink/p/?LinkId=722912). This standard describes the process by which all UEFI drivers and applications are validated against keys provisioned into a UEFI-based device before they are executed.
  
-
 The following sections describe these improvements in more detail.
 
 ### <a href="" id="secure-hardware"></a>Enterprise-grade secure hardware
@@ -353,11 +305,8 @@ Taking full advantage of Windows 10 Mobile security features requires advanceme
 When a Windows 10 Mobile device starts, it begins the process of loading the operating system by locating the bootloader in the device’s storage system. Without safeguards in place, the phone might simply hand control over to the bootloader without even determining whether it’s a trusted operating system or malware.
 
 UEFI is a standards-based solution that offers a modern-day replacement for the BIOS. In fact, it provides the same functionality as BIOS while adding security features and other advanced capabilities. Like BIOS, UEFI initializes devices, but UEFI components with the Secure Boot feature (version 2.3.1 or later) also help ensure that only trusted firmware in Option ROMs, UEFI apps, and operating system bootloaders can start on the mobile phone.
-
 UEFI can run internal integrity checks that verify the firmware’s digital signature before running it. Because only the mobile phone’s manufacturer has access to the digital certificate required to create a valid firmware signature, UEFI has protection against firmware-based malware that loads before Windows 10 Mobile and can successfully hide its malicious behavior from Windows 10 Mobile. Firmware-based malware of this nature is typically called a bootkit.
-
 When a mobile device with UEFI and Secure Boot starts, the UEFI firmware verifies the bootloader’s digital signature to verify that no one has modified it after it was digitally signed. The firmware also verifies that a trusted authority issued the bootloader’s digital signature. This check helps to ensure that the system starts only after checking that the bootloader is both trusted and unmodified since signing.
-
 All Windows 10 Mobile devices always have Secure Boot enabled. In addition, they trust only the Windows operating system signature.
 
 Neither Windows 10 Mobile, apps, or even malware can change the UEFI configuration. For more information about UEFI with Secure Boot, read [Protecting the pre-OS environment with UEFI](http://go.microsoft.com/fwlink/p/?LinkId=722909).
@@ -369,38 +318,25 @@ A Trusted Platform Module is a tamper-resistant cryptographic module that enhanc
 A proper implementation of a TPM as part of a trusted computing platform provides a hardware root of trust, meaning that the hardware behaves in a trusted way. For example, if you create a key in a TPM with the property that no one can export that key from the TPM, the key absolutely cannot leave the TPM. The close integration of a TPM with a platform increases the transparency of the boot process and supports device health scenarios by enabling reliable report of the software used to start a platform.
 
 The following list describes key functionality that a TPM provides in Windows 10 Mobile:
-
 -   **Manage cryptographic keys.** A TPM can create, store, and permit the use of keys in defined ways. Windows 10 Mobile uses the TPM to protect the encryption keys for BitLocker volumes, virtual smart cards, certificates, and various other keys.
-
 -   **Safeguard and report integrity measurements.**Windows 10 Mobile uses the TPM to record and help protect integrity-related measurements of select hardware and Windows boot components for the Measured Boot feature. In this scenario, Measured Boot measures each component, from firmware up through the drivers, and then stores those measurements in the device’s TPM. From here, you can test the measurement log remotely so that a separate system verifies the boot state of the Windows 10 Mobile device.
-
 -   **Prove a TPM is really a TPM.** Managing cryptographic keys and measuring integrity are so central to protecting privacy and security that a TPM must differentiate itself from malware that masquerades as a TPM.
 
 Windows 10 Mobile supports TPM implementations that comply with the 2.0 standard. The TPM 2.0 standard includes several improvements that make it superior to the 1.2 standard, the most notable of which is cryptographic agility. TPM 1.2 is restricted to a fixed set of encryption and hash algorithms. At the time the TPM 1.2 standard appeared in the early 2000s, the security community considered these algorithms cryptographically strong. Since that time, advances in cryptographic algorithms and cryptanalysis attacks have increased expectations for stronger cryptography. TPM 2.0 supports additional algorithms that offer stronger cryptographic protection as well as the ability to plug in algorithms that certain geographies or industries may prefer. It also opens the possibility for inclusion of future algorithms without changing the TPM component itself.
-
 Many people assume that original equipment manufacturers (OEMs) must implant a TPM in hardware on a motherboard as a discrete module, but TPM can also be effective when implemented in firmware. Windows 10 Mobile supports only firmware TPM that complies with the 2.0 standard. Windows does not differentiate between discrete and firmware-based solutions because both must meet the same implementation and security requirements; therefore, any Windows 10 feature that can take advantage of TPM can be used with Windows 10 Mobile.
 
-**Note**  
-Microsoft requires TPM 2.0 on devices running any version of Windows 10 Mobile. For more information, see [Minimum hardware requirements](http://go.microsoft.com/fwlink/p/?LinkId=733964).
-
+> **Note:**  Microsoft requires TPM 2.0 on devices running any version of Windows 10 Mobile. For more information, see [Minimum hardware requirements](http://go.microsoft.com/fwlink/p/?LinkId=733964).
  
-
 Several Windows 10 Mobile security features require TPM:
-
 -   Virtual smart cards
-
 -   Measured Boot
-
 -   Health attestation (requires TPM 2.0 or later)
-
 Still other features will use the TPM if it is available. For example, Microsoft Passport does not require TPM but uses it if it’s available. Organizations can configure policy to require TPM for Microsoft Passport.
 
 ### <a href="" id="biometrics--"></a>Biometrics
 
 Windows 10 Mobile makes biometrics a core security feature. Microsoft has fully integrated biometrics into the Windows 10 Mobile security components, not just tacked it on top of the platform (as was the case in previous versions of Windows). This is a big change. Earlier biometric implementations were largely front-end methods that simplified authentication. Under the hood, the system used biometrics to access a password, which it then used for authentication behind the scenes. Biometrics may have provided convenience but not necessarily enterprise-grade authentication.
-
 Microsoft has been evangelizing the importance of enterprise-grade biometric sensors to the OEMs that create Windows 10 Mobile devices. These facial-recognition and iris-scanning sensors are fully supported by MFA features such as Microsoft Passport and Windows Hello.
-
 In the future, Microsoft expects OEMs to produce even more advanced enterprise-grade biometric sensors and to continue to integrate them into mobile devices. As a result, biometrics will become a commonplace authentication method as part of an MFA system.
 
 ### <a href="" id="enterprise-grade-secure-windows-startup--"></a>Enterprise-grade secure Windows startup
@@ -416,15 +352,12 @@ If someone has modified a file (for example, if malware has tampered with it or 
 ### <a href="" id="measured-boot--"></a>Measured Boot
 
 The biggest challenge with rootkits and bootkits in earlier versions of Windows was that they could frequently be undetectable to the client. Because they often started before Windows defenses and the antimalware solution—and they had system-level privileges—rootkits and bootkits could completely disguise themselves while continuing to access system resources. Although UEFI with Secure Boot and Trusted Boot could prevent most rootkits and bootkits, intruders could still potentially exploit a few attack vectors (for example, if someone compromised the signature used to sign a boot component, such as a non-Microsoft driver, and used it to sign a malicious one).
-
 Windows 10 Mobile implements the Measured Boot feature, which uses the TPM hardware component to record a series of measurements for critical startup-related components, including firmware, Windows boot components, and drivers. Because Measured Boot uses the hardware-based security capabilities of TPM, which isolates and protects the measurement data against malware attacks, the log data is well protected against even sophisticated attacks.
-
 Measured Boot focuses on acquiring the measurement data and protecting it against tampering. You must couple it, however, with a service that can analyze the data to determine device health and provide a more complete security service. The next section introduces just such a service.
 
 ### <a href="" id="device-health-attestation--"></a>Device health attestation
 
 Device health attestation is new feature in Windows 10 Mobile that helps prevent low-level malware infections. Device health attestation uses a device’s TPM and firmware to measure the critical security properties of the device’s BIOS and Windows startup processes. These measurements are made in such a way that even on a system infected with kernel-level malware or a rootkit, an attacker is unlikely to spoof the properties.
-
 You can integrate Device health attestation with Microsoft Intune or non-Microsoft MDM solutions and combine these hardware-measured security properties with other device properties to gain an overall view of the device’s health and compliance state. From there, you can use this integration in a variety of scenarios, from detecting jailbroken devices to monitoring device compliance, generating compliance reports, alerting users or administrators, initiating corrective action on the device, and managing conditional access to resources such as Office 365.
 
 ### <a href="" id="conditional-access--"></a>Conditional Access
@@ -432,23 +365,15 @@ You can integrate Device health attestation with Microsoft Intune or non-Microso
 The example that follows shows how Windows 10 protective measures integrate and work with Intune and non-Microsoft MDM solutions. It demonstrates how the phone security architecture in Windows 10 Mobile helps you monitor and verify compliance and how the security and trust rooted in the device hardware protect corporate resources end to end.
 
 When a user turns on a phone:
-
 1.  The Secure Boot feature in Windows 10 Mobile helps protect the startup sequence, allows the device to boot into a defined and trusted configuration, and loads a factory-trusted boot loader.
-
 2.  Windows 10 Mobile Trusted Boot takes control when the Secure Boot process is complete, verifying the digital signature of the Windows kernel and the components that are loaded and executed during the startup process.
-
 3.  In parallel to steps 1 and 2, the phone’s TPM runs independently in a hardware-protected security zone (isolated from the boot execution path, which monitors boot activities). It creates a protected, tamper-evident audit trail, signed with a secret that only the TPM can access.
-
 4.  Devices that a Device health attestation-enabled MDM solution manage send a copy of this audit trail to the Microsoft Health Attestation Service (HAS) in a protected, tamper-resistant, and tamper-evident communication channel.
-
 5.  HAS reviews the audit trails, issues an encrypted and signed report, and forwards it to the device.
-
 6.  From your Device health attestation-enabled MDM solution, you can review the report in a protected, tamper-resistant, and tamper-evident communication channel to assess whether the device is running in a compliant (healthy) state, allow access, or trigger corrective action aligned with the organization’s security needs and policies.
-
 Because this solution can detect and prevent low-level malware that may be extremely difficult to detect any other way, Microsoft recommends that you consider implementing a Device health attestation-enabled MDM system like Intune that takes advantage of the Windows 10 Mobile cloud-based health attestation server feature to detect and block devices infected with advanced malware.
 
 ## <a href="" id="app-platform-security--"></a>App platform security
-
 
 Applications built for Windows are designed to be secure and free of defects, but the reality is that human error can create vulnerabilities in code. When malicious users and software identify such vulnerabilities, they may attempt to manipulate data in memory in the hope that they can compromise the system and take control.
 
@@ -473,9 +398,7 @@ A set of default permissions are granted to all AppContainers, including access 
 The AppContainer concept is advantageous for the following reasons:
 
 -   **Attack surface reduction.** Apps can access only those capabilities that are declared in the application code and needed to perform their functions.
-
 -   **User consent and control.** Capabilities that apps use are automatically published to the app details page in the Windows Store. App access to capabilities that may expose sensitive information automatically prompt the user to acknowledge and provide consent.
-
 -   **App isolation.** Communication between Windows apps is tightly controlled. Apps are isolated from one another and can communicate only by using predefined communications channels and data types.
 
 Apps receive the minimal privileges they need to perform their legitimate tasks. This means that even if a malicious attacker exploits an app, the potential damage is limited because the app cannot elevate its privileges and is contained within its AppContainer. Windows Store displays the permissions that the app requires along with the app’s age rating and publisher.
@@ -483,7 +406,6 @@ Apps receive the minimal privileges they need to perform their legitimate tasks.
 The combination of Device Guard and AppContainer help to prevent unauthorized apps from running. In the event malware slips into the app ecosystem, the AppContainer helps to constrain the app and limit potential damage. The Windows 10 Mobile trust-nothing model doesn’t assume that any component is perfect, however, potential vulnerabilities in apps, AppContainers, and Windows 10 Mobile itself could give an attacker a chance to compromise a system. For this reason, we need redundant vulnerability mitigations. The next several topics describe some of the redundant mitigations in Windows 10 Mobile.
 
 ### <a href="" id="address-space-layout-randomization--"></a>Address Space Layout Randomization
-
 One of the most common techniques attackers use to gain access to a system is to find a vulnerability in a privileged process that is already running, guess or find a location in memory where important system code and data reside, and then overwrite that information with a malicious payload. In the early days of operating systems, any malware that could write directly to the system memory could do such a thing; the malware would simply overwrite system memory in well-known and predictable locations.
 
 Address Space Layout Randomization (ASLR) makes that type of attack much more difficult because it randomizes how and where important data is stored in memory. With ASLR, it is more difficult for malware to find the specific location it needs to attack. Figure 3 illustrates how ASLR works, showing how the locations of different critical Windows components can change in memory between restarts.
@@ -503,13 +425,10 @@ Extending that protection, it would be great if you could prevent malware from r
 ### <a href="" id="windows-heap--"></a>Windows heap
 
 The heap is a location in memory that Windows uses to store dynamic application data. Microsoft continues to improve on earlier Windows heap designs by further mitigating the risk of heap exploits that an attacker could use.
-
 Windows 10 Mobile has several important improvements to the security of the heap over previous versions of Windows:
 
 -   Internal data structures that the heap uses are better protected against memory corruption.
-
 -   Heap memory allocations have randomized locations and sizes, making it more difficult for an attacker to predict the location of critical memory to overwrite. Specifically, Windows 10 Mobile adds a random offset to the address of a newly allocated heap, which makes the allocation much less predictable.
-
 -   Windows 10 Mobile uses “guard pages” before and after blocks of memory as tripwires. If an attacker attempts to write past a block of memory (a common technique known as a buffer overflow), the attacker will have to overwrite a guard page. Any attempt to modify a guard page is considered a memory corruption, and Windows 10 Mobile responds by instantly terminating the app.
 
 ### <a href="" id="memory-reservations--"></a>Memory reservations
@@ -519,7 +438,6 @@ Microsoft reserves the lowest 64 KB of process memory for the operating system. 
 ### <a href="" id="control-flow-guard--"></a>Control Flow Guard
 
 When Windows loads applications into memory, it allocates space to those applications based on the size of the code, requested memory, and other factors. When an application begins to execute code, it calls additional code located in other memory addresses. The relationships among the code locations are well known—they are written in the code itself—but until Windows 10 Mobile, the operating system didn’t enforce the flow among these locations, giving attackers the opportunity to change the flow to meet their needs. In other words, an application exploit takes advantage of this behavior by running code that the application may not typically run.
-
 Windows 10 Mobile mitigates this kind of threat through the Control Flow Guard (CFG) feature. When a trusted application that its creator compiled to use CFG calls code, CFG verifies that the code location called is trusted for execution. If CFG doesn’t trust the location, it immediately terminates the application as a potential security risk.
 
 You cannot configure CFG; rather, an application developer can take advantage of CFG by configuring it when he or she compiles the application. Consider asking application developers and software vendors to deliver trustworthy Windows applications compiled with CFG enabled. Of course, browsers are a key entry point for attacks; thus Microsoft Edge and other Windows features take full advantage of CFG.
@@ -565,7 +483,6 @@ Store for Business allows you to find the right apps for your users, acquire the
 You begin the app deployment process by preparing the private store and the apps before your users receive their new Windows 10 Mobile devices.
 
 First, you open [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkId=722910) and use an Azure AD account to log in. This account is linked to the company’s unique organizational identity and must have an Azure AD tenant. In addition, the account must have Azure AD Enterprise Admin permissions if this is the first time you’re using Store for Business. You can delegate later access through permissions within Store for Business.
-
 Next, you locate and acquire any apps you want to deploy to the mobile devices, adding the apps and licenses to the organization’s inventory.
 
 Along with existing Windows Store apps, you can use Store for Business to manage custom LOB apps that are developed for your organization. First, you grant permission for a trusted app developer to submit the apps. You and the developer submit these apps through the [Windows Dev Center](http://go.microsoft.com/fwlink/p/?LinkId=722911), and they must be digitally signed with a trusted certificate. These apps are not published to the retail Windows Store catalog and are not visible to anyone outside the organization.
@@ -573,11 +490,8 @@ Along with existing Windows Store apps, you can use Store for Business to manage
 You can deliver the apps through a private store within Windows Store. The next step, then, is for you to mark the app to be available in the private store, which you do through the Store for Business web portal.
 
 Alternatively, you can choose one of two other app-distribution options in Store for Business web portal:
-
 -   Assign the app to people in your organization by selecting one or more Azure AD identities
-
 -   Add the app to the organization’s private store, and allow all users to discover and install it.
-
 For details about app distribution, see [Distribute apps using your private store](../manage/distribute-apps-from-your-private-store.md).
 
 The IT process for preparing Store for Business for app deployment is shown in Figure 4.
@@ -605,11 +519,8 @@ If the user wants to make a private purchase of apps, music, movies, or TV shows
 Windows 10 Mobile includes critical improvements designed to thwart attacks and malware. The environment is now more resistant to malware thanks to significant improvements to SmartScreen Filters. Internet browsing is a safer experience thanks to Microsoft Edge, a completely new browser.
 
 Windows 10 Mobile includes Microsoft Edge, an entirely new web browser that goes beyond browsing with features like Reading View. Microsoft Edge is more secure than previous Microsoft web browsers in several ways:
-
 -   **Microsoft Edge does not support non-Microsoft binary extensions.** Microsoft Edge supports Flash content and PDF viewing by default through built-in extensions but includes no non-Microsoft binary extensions, such as ActiveX controls or Java.
-
 -   **Microsoft Edge is designed as a UWP app.** It is inherently compartmentalized and runs in an AppContainer that sandboxes the browser from the system, data, and other apps.
-
 -   **Microsoft Edge simplifies security configuration tasks.** Because Microsoft Edge uses a simplified application structure and a single sandbox configuration, fewer security settings are required. In addition, Microsoft established Microsoft Edge default settings that align with security best practices, making it more secure by design.
 
 The web browser is a critical component of any security strategy, and for good reason: it is the user’s interface to the Internet, an environment teeming with malicious sites and nefarious content. Most users cannot perform at least part of their job without a browser, and many users are completely reliant on one. This reality has made the browser the number one pathway from which malicious hackers initiate their attacks.
@@ -626,12 +537,3 @@ The web browser is a critical component of any security strategy, and for good r
 [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkId=722910)
 
 [Windows Store for Business overview](../whats-new/windows-store-for-business-overview.md)
-
- 
-
- 
-
-
-
-
-

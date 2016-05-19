@@ -2,47 +2,29 @@
 title: Using Event Viewer with AppLocker (Windows 10)
 description: This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
 ms.assetid: 109abb10-78b1-4c29-a576-e5a17dfeb916
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Using Event Viewer with AppLocker
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
-
 The AppLocker log contains information about applications that are affected by AppLocker rules. Each event in the log contains detailed info about:
-
 -   Which file is affected and the path of that file
-
 -   Which packaged app is affected and the package identifier of the app
-
 -   Whether the file or packaged app is allowed or blocked
-
 -   The rule type (path, file hash, or publisher)
-
 -   The rule name
-
 -   The security identifier (SID) for the user or group identified in the rule
-
 Review the entries in the Event Viewer to determine if any applications are not included in the rules that you automatically generated. For instance, some line-of-business apps are installed to non-standard locations, such as the root of the active drive (for example: %SystemDrive%).
-
 For info about what to look for in the AppLocker event logs, see [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md).
-
 **To review the AppLocker log in Event Viewer**
-
 1.  Open Event Viewer.
-
 2.  In the console tree under **Application and Services Logs\\Microsoft\\Windows**, click **AppLocker**.
-
 The following table contains information about the events that you can use to determine which apps are affected by AppLocker rules.
-
 <table>
 <colgroup>
 <col width="25%" />
@@ -157,19 +139,8 @@ The following table contains information about the events that you can use to de
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Tools to use with AppLocker](tools-to-use-with-applocker.md)
-
  
-
  
-
-
-
-
-

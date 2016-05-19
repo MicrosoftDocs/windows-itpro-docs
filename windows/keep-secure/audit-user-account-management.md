@@ -2,41 +2,26 @@
 title: Audit User Account Management (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit User Account Management, which determines whether the operating system generates audit events when specific user account management tasks are performed.
 ms.assetid: f7e72998-3858-4197-a443-19586ecc4bfb
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit User Account Management
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the advanced security audit policy setting, **Audit User Account Management**, which determines whether the operating system generates audit events when specific user account management tasks are performed.
-
 Tasks that are audited for user account management include:
-
 -   A user account is created, changed, deleted, renamed, disabled, enabled, locked out, or unlocked.
-
 -   A user account password is set or changed.
-
 -   Security identifier (SID) history is added to a user account.
-
 -   The Directory Services Restore Mode password is set.
-
 -   Permissions are changed on accounts that are members of administrator groups.
-
 -   Credential Manager credentials are backed up or restored.
-
 This policy setting is essential for tracking events that involve provisioning and managing user accounts.
-
 Event volume: Low
-
 Default: Success
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -115,19 +100,8 @@ Default: Success
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-
