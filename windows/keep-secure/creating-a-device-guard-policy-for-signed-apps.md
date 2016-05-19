@@ -2,21 +2,26 @@
 title: Create a Device Guard code integrity policy based on a reference device (Windows 10)
 description: To implement Device Guard app protection, you will need to create a code integrity policy. Code integrity policies determine what apps are considered trustworthy and are allowed to run on a protected device.
 ms.assetid: 6C94B14E-E2CE-4F6C-8939-4B375406E825
-ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
+
 # Create a Device Guard code integrity policy based on a reference device
 **Applies to**
 -   Windows 10
+
 To implement Device Guard app protection, you will need to create a code integrity policy. Code integrity policies determine what apps are considered trustworthy and are allowed to run on a protected device.
+
 ## <a href="" id="create-a-device-guard-code-integrity-policy-based-on--a-reference-device"></a>Create a Device Guard code integrity policy based on a reference device
+
 To create a code integrity policy, you'll first need to create a reference image that includes the signed applications you want to run on your protected devices. For information on how to sign applications, see [Getting apps to run on Device Guard-protected devices](getting-apps-to-run-on-device-guard-protected-devices.md).
-**Note**  Before creating a code integrity policy, make sure your reference device is clean of viruses and malware.
+> **Note:**  Before creating a code integrity policy, make sure your reference device is clean of viruses and malware.
  
 **To create a code integrity policy based on a reference device**
+
 1.  On your reference device, start PowerShell as an administrator.
 2.  In PowerShell, initialize variables by typing:
     ``` syntax
@@ -99,7 +104,7 @@ To create a code integrity policy, you'll first need to create a reference image
     ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin
     ```
 Once you have completed these steps, the Device Guard policy binary file (DeviceGuardPolicy.bin) and original xml file (InitialScan.xml) will be available on your desktop.
-**Note**  We recommend that you keep a copy of InitialScan.xml to use if you need to merge this code integrity policy with another policy, or update policy rule options.
+>**Note:**  We recommend that you keep a copy of InitialScan.xml to use if you need to merge this code integrity policy with another policy, or update policy rule options.
  
 ## Related topics
 [Getting apps to run on Device Guard-protected devices](getting-apps-to-run-on-device-guard-protected-devices.md)

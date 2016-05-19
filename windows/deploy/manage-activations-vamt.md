@@ -2,15 +2,19 @@
 title: Manage Activations (Windows 10)
 description: Manage Activations
 ms.assetid: 53bad9ed-9430-4f64-a8de-80613870862c
-ms.pagetype: activation
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: activation
 author: jdeckerMS
 ---
+
 # Manage Activations
+
 This section describes how to activate a client computer, by using a variety of activation methods.
+
 ## In this Section
+
 |Topic |Description |
 |------|------------|
 |[Perform Online Activation](online-activation-vamt.md) |Describes how to activate a client computer over the Internet. |
