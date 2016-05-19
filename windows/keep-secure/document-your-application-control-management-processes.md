@@ -2,52 +2,31 @@
 title: Document your application control management processes (Windows 10)
 description: This planning topic describes the AppLocker policy maintenance information to record for your design document.
 ms.assetid: 6397f789-0e36-4933-9f86-f3f6489cf1fb
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Document your application control management processes
-
-
 **Applies to**
-
 -   Windows 10
-
 This planning topic describes the AppLocker policy maintenance information to record for your design document.
-
 ## Record your findings
-
-
 To complete this AppLocker planning document, you should first complete the following steps:
-
 1.  [Determine your application control objectives](determine-your-application-control-objectives.md)
-
 2.  [Create a list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md)
-
 3.  [Select the types of rules to create](select-types-of-rules-to-create.md)
-
 4.  [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
-
 5.  [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
-
 The three key areas to determine for AppLocker policy management are:
-
 1.  Support policy
-
     Document the process that you will use for handling calls from users who have attempted to run a blocked app, and ensure that support personnel know recommended troubleshooting steps and escalation points for your policy.
-
 2.  Event processing
-
     Document whether events will be collected in a central location, how that store will be archived, and whether the events will be processed for analysis.
-
 3.  Policy maintenance
-
     Detail how rules will be added to the policy, in which Group Policy Object (GPO) the rules should be defined, and how to modify rules when apps are retired, updated, or added.
-
 The following table contains the added sample data that was collected when determining how to maintain and manage AppLocker policies.
-
 <table style="width:100%;">
 <colgroup>
 <col width="11%" />
@@ -144,17 +123,11 @@ The following table contains the added sample data that was collected when deter
 </tr>
 </tbody>
 </table>
-
  
-
 The following two tables illustrate examples of documenting considerations to maintain and manage AppLocker policies.
-
 **Event processing policy**
-
 One discovery method for app usage is to set the AppLocker enforcement mode to **Audit only**. This will write events to the AppLocker logs, which can be managed and analyzed like other Windows logs. After apps have been identified, you can begin to develop policies regarding the processing and access to AppLocker events.
-
 The following table is an example of what to consider and record.
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -189,15 +162,10 @@ The following table is an example of what to consider and record.
 </tr>
 </tbody>
 </table>
-
  
-
 **Policy maintenance policy**
-
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
-
 The following table is an example of what to consider and record.
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -240,21 +208,9 @@ The following table is an example of what to consider and record.
 </tr>
 </tbody>
 </table>
-
  
-
 ## Next steps
-
-
 After you have determined your application control management strategy for each of the business group's applications, the following task remains:
-
 -   [Create your AppLocker planning document](create-your-applocker-planning-document.md)
-
  
-
  
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: Add multiple apps to your enterprise data protection (EDP) Protected Apps list (Windows 10)
-description: Add multiple apps to your enterprise data protection (EDP) Protected Apps list at the same time, by using the Microsoft Intune Custom URI functionality and the AppLocker Group Policy.
+description: Add multiple apps to your enterprise data protection (EDP) Protected Apps list at the same time, by using the Microsoft Intune Custom URI functionality and the AppLocker.
 ms.assetid: b50db35d-a2a9-4b78-a95d-a1b066e66880
 keywords: ["EDP", "Enterprise Data Protection", "protected apps", "protected app list"]
 ms.prod: W10
@@ -17,7 +17,7 @@ author: eross-msft
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Add multiple apps to your enterprise data protection (EDP) **Protected Apps** list at the same time, by using the Microsoft Intune Custom URI functionality and the AppLocker Group Policy. For more info about how to create a custom URI using Intune, see [Windows 10 custom policy settings in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkID=691330).
+Add multiple apps to your enterprise data protection (EDP) **Protected Apps** list at the same time, by using the Microsoft Intune Custom URI functionality and AppLocker. For more info about how to create a custom URI using Intune, see [Windows 10 custom policy settings in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkID=691330).
 
 **Important**  
 Results can be unpredictable if you configure your policy using both the UI and the Custom URI method together. We recommend using a single method for each policy.
@@ -26,7 +26,7 @@ If you only want to add one app at a time, you can follow the instructions in th
 
 **To add Universal Windows Platform (UWP) apps**
 
-1.  Go to the AppLocker Group Policy UI by opening a command line window and running secpol.msc. The local security policy MMC snap-in opens showing the **Security Settings**.
+1.  Go to the AppLocker UI by opening a command line window and running secpol.msc. The local security policy MMC snap-in opens showing the **Security Settings**.
 
 2.  Double-click **Application Control Policies**, double-click **AppLocker**, right-click **Packaged app Rules**, and then click **Automatically Generate Rules**.<p>
 The **Automatically Generate Packaged app Rules** wizard opens, letting you create EDP-protected app polices for all of the installed apps on the device or for packaged apps within a specific folder.
@@ -69,7 +69,7 @@ After saving the policy, you’ll need to deploy it to your employee’s devices
 
 **To add Classic Windows applications**
 
-1.  Go to the AppLocker Group Policy UI by opening a command line window and running secpol.msc. The local security policy MMC snap-in opens showing the **Security Settings**.
+1.  Go to the AppLocker UI by opening a command line window and running secpol.msc. The local security policy MMC snap-in opens showing the **Security Settings**.
 
 2.  Double-click **Application Control Policies**, double-click **AppLocker**, right-click **Executable Rules**, and then click **Automatically Generate Rules**.<p>
 The **Automatically Generate Executable Rules** wizard opens, letting you create EDP-protected app polices by analyzing the files within a specific folder.

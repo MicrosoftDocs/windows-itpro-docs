@@ -2,32 +2,22 @@
 title: Audit Handle Manipulation (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Handle Manipulation, which determines whether the operating system generates audit events when a handle to an object is opened or closed.
 ms.assetid: 1fbb004a-ccdc-4c80-b3da-a4aa7a9f4091
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Handle Manipulation
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Handle Manipulation**, which determines whether the operating system generates audit events when a handle to an object is opened or closed.
-
 Only objects with configured system access control lists (SACLs) generate these events, and only if the attempted handle operation matches the SACL.
-
 **Important**  
 Handle Manipulation events are generated only for object types where the corresponding File System or Registry Object Access subcategory is enabled. For more information, see [Audit File System](audit-file-system.md) or [Audit Registry](audit-registry.md).
-
  
-
 Event volume: High, depending on how SACLs are configured
-
 Default: Not configured
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -54,19 +44,8 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

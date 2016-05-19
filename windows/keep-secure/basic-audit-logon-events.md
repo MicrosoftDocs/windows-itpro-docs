@@ -2,34 +2,22 @@
 title: Audit logon events (Windows 10)
 description: Determines whether to audit each instance of a user logging on to or logging off from a device.
 ms.assetid: 78B5AFCB-0BBD-4C38-9FE9-6B4571B94A35
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit logon events
-
-
 **Applies to**
-
 -   Windows 10
-
 \[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
-
 Determines whether to audit each instance of a user logging on to or logging off from a device.
-
 Account logon events are generated on domain controllers for domain account activity and on local devices for local account activity. If both account logon and logon audit policy categories are enabled, logons that use a domain account generate a logon or logoff event on the workstation or server, and they generate an account logon event on the domain controller. Additionally, interactive logons to a member server or workstation that use a domain account generate a logon event on the domain controller as the logon scripts and policies are retrieved when a user logs on. For more info about account logon events, see [Audit account logon events](basic-audit-account-logon-events.md).
-
 If you define this policy setting, you can specify whether to audit successes, audit failures, or not audit the event type at all. Success audits generate an audit entry when a logon attempt succeeds. Failure audits generate an audit entry when a logon attempt fails.
-
 To set this value to **No auditing**, in the **Properties** dialog box for this policy setting, select the **Define these policy settings** check box and clear the **Success** and **Failure** check boxes.
-
 ## Configure this audit setting
-
-
 You can configure this security setting by opening the appropriate policy under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
-
 | Logon events | Description                                                                                                                                                                                                     |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 528          | A user successfully logged on to a computer. For information about the type of logon, see the Logon Types table below.                                                                                          |
@@ -59,11 +47,8 @@ You can configure this security setting by opening the appropriate policy under 
 | 552          | A user successfully logged on to a computer using explicit credentials while already logged on as a different user.                                                                                             |
 | 682          | A user has reconnected to a disconnected terminal server session.                                                                                                                                               |
 | 683          | A user disconnected a terminal server session without logging off.                                                                                                                                              |
-
  
-
 When event 528 is logged, a logon type is also listed in the event log. The following table describes each logon type.
-
 | Logon type | Logon title       | Description                                                                                                                                                                                                                                                                                                                |
 |------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2          | Interactive       | A user logged on to this computer.                                                                                                                                                                                                                                                                                         |
@@ -75,19 +60,8 @@ When event 528 is logged, a logon type is also listed in the event log. The foll
 | 9          | NewCredentials    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.                                                                                                                 |
 | 10         | RemoteInteractive | A user logged on to this computer remotely using Terminal Services or Remote Desktop.                                                                                                                                                                                                                                      |
 | 11         | CachedInteractive | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.                                                                                                                                                    |
-
  
-
 ## Related topics
-
-
 [Basic security audit policy settings](basic-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

@@ -2,35 +2,23 @@
 title: Audit Security Group Management (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit Security Group Management, which determines whether the operating system generates audit events when specific security group management tasks are performed.
 ms.assetid: ac2ee101-557b-4c84-b9fa-4fb23331f1aa
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Security Group Management
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the advanced security audit policy setting, **Audit Security Group Management**, which determines whether the operating system generates audit events when specific security group management tasks are performed.
-
 Tasks for security group management include:
-
 -   A security group is created, changed, or deleted.
-
 -   A member is added to or removed from a security group.
-
 -   A group's type is changed.
-
 Security groups can be used for access control permissions and also as distribution lists.
-
 Event volume: Low
-
 Default: Success
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -109,19 +97,8 @@ Default: Success
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

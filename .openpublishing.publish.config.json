@@ -52,7 +52,7 @@
                 "Conceptual": "Content"
             }
         },
-		{
+	    {
             "docset_name": "mdop",
             "build_output_subfolder": "mdop",
             "locale": "en-us",

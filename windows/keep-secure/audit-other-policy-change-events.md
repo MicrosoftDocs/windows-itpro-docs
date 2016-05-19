@@ -2,35 +2,23 @@
 title: Audit Other Policy Change Events (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Other Policy Change Events, which determines whether the operating system generates audit events for security policy changes that are not otherwise audited in the Policy Change category.
 ms.assetid: 8618502e-c21c-41cc-8a49-3dc1eb359e60
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Other Policy Change Events
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Other Policy Change Events**, which determines whether the operating system generates audit events for security policy changes that are not otherwise audited in the Policy Change category.
-
 These other activities in the Policy Change category that can be audited include:
-
 -   Trusted Platform Module (TPM) configuration changes.
-
 -   Kernel-mode cryptographic self tests.
-
 -   Cryptographic provider operations.
-
 -   Cryptographic context operations or modifications.
-
 Event volume: Low
-
 Default: Not configured
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -101,19 +89,8 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

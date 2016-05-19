@@ -2,31 +2,21 @@
 title: Audit Application Group Management (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit Application Group Management, which determines whether the operating system generates audit events when application group management tasks are performed.
 ms.assetid: 1bcaa41e-5027-4a86-96b7-f04eaf1c0606
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Application Group Management
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the advanced security audit policy setting, **Audit Application Group Management**, which determines whether the operating system generates audit events when application group management tasks are performed.
-
 Application group management tasks include:
-
 -   An application group is created, changed, or deleted.
-
 -   A member is added to or removed from an application group.
-
 Event volume: Low
-
 Default: Not configured
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -81,19 +71,8 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

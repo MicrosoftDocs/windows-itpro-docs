@@ -2,24 +2,17 @@
 title: Determine the Group Policy structure and rule enforcement (Windows 10)
 description: This overview topic describes the process to follow when you are planning to deploy AppLocker rules.
 ms.assetid: f435fcbe-c7ac-4ef0-9702-729aab64163f
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Determine the Group Policy structure and rule enforcement
-
-
 **Applies to**
-
 -   Windows 10
-
 This overview topic describes the process to follow when you are planning to deploy AppLocker rules.
-
 ## In this section
-
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -46,29 +39,14 @@ This overview topic describes the process to follow when you are planning to dep
 </tr>
 </tbody>
 </table>
-
  
-
 When you are determining how many Group Policy Objects (GPOs) to create when you apply an AppLocker policy in your organization, you should consider the following:
-
 -   Whether you are creating new GPOs or using existing GPOs
-
 -   Whether you are implementing Software Restriction Policies (SRP) policies and AppLocker policies in the same GPO
-
 -   GPO naming conventions
-
 -   GPO size limits
-
 **Note**  
 There is no default limit on the number of AppLocker rules that you can create. However, in Windows Server 2008 R2, GPOs have a 2 MB size limit for performance. In subsequent versions, that limit is raised to 100 MB.
-
  
-
  
-
  
-
-
-
-
-

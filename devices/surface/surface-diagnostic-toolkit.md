@@ -6,7 +6,7 @@ keywords: ["hardware, device, tool, test, component"]
 ms.prod: W8
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: heatherpoulsen
+author: miladCA
 ---
 
 # Microsoft Surface Diagnostic Toolkit
@@ -16,8 +16,7 @@ Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the ha
 
 The [Microsoft Surface Diagnostic Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=618121) is a small, portable diagnostic tool that runs through a suite of tests to diagnose the hardware of Surface devices. The Microsoft Surface Diagnostic Toolkit executable file is less than 3 MB, which allows it to be distributed through email. It does not require installation, so it can be run directly from a USB stick or over the network. The Microsoft Surface Diagnostic Toolkit walks you through several tests of individual components including the touchscreen, cameras, and sensors.
 
-**Note**  
-A Surface device must boot into Windows to run the Microsoft Surface Diagnostic Toolkit. The Microsoft Surface Diagnostic Toolkit will run only on the following Surface devices:
+>**Note:**&nbsp;&nbsp;A Surface device must boot into Windows to run the Microsoft Surface Diagnostic Toolkit. The Microsoft Surface Diagnostic Toolkit will run only on the following Surface devices:
 
 -   Surface Book
 
@@ -33,12 +32,7 @@ A Surface device must boot into Windows to run the Microsoft Surface Diagnostic 
 
 -   Surface Pro
 
- 
-
-**Note**  
-Security software and built-in security measures in many email applications and services will block executable files that are transferred through email. To email the Surface Diagnostic Toolkit, attach the .zip archive file as downloaded from the Surface Tools for IT page without extracting it first. You can also create a custom .zip archive that contains the .exe file. (For example, if you want to localize the text as described in the [Localization](#localization) section of this article.)
-
- 
+>**Note:**&nbsp;&nbsp;Security software and built-in security measures in many email applications and services will block executable files that are transferred through email. To email the Surface Diagnostic Toolkit, attach the .zip archive file as downloaded from the Surface Tools for IT page without extracting it first. You can also create a custom .zip archive that contains the .exe file. (For example, if you want to localize the text as described in the [Localization](#localization) section of this article.)
 
 Running the Microsoft Surface Diagnostic Toolkit is a hands-on activity. The test sequence includes several tests that require you to perform actions or observe the outcome of the test, and then click the applicable **Pass** or **Fail** button. Some tests require connectivity to external devices, like an external display. Other tests use the built in Windows troubleshooters. At the end of testing, a visual report of the test results is displayed and you are given the option to save a log file or copy the results to the clipboard.
 
@@ -56,8 +50,7 @@ To run a full set of tests with the Microsoft Surface Diagnostic Toolkit, you sh
 
 -   External speakers or headphones
 
-**Note**  
-The Microsoft Surface Diagnostic Toolkit tests verify only the hardware of a Surface device and do not test or resolve issues with the operating system or software.
+>**Note:**&nbsp;&nbsp;The Microsoft Surface Diagnostic Toolkit tests verify only the hardware of a Surface device and do not test or resolve issues with the operating system or software.
 
  
 
@@ -122,8 +115,7 @@ These files and logs are stored in a .zip file saved by the Microsoft Surface Di
 
 ### <a href="" id="type-cover--test"></a>Type Cover test
 
-**Note**  
-A Surface Type Cover is required for this test.
+>**Note:**&nbsp;&nbsp;A Surface Type Cover is required for this test.
 
  
 
@@ -131,8 +123,7 @@ If a Surface Type Cover is not detected, the test prompts you to connect the Typ
 
 ### Integrated keyboard test
 
-**Note**  
-This test is only applicable to Surface Book and requires that the Surface Book be docked to the keyboard.
+>**Note:**&nbsp;&nbsp;This test is only applicable to Surface Book and requires that the Surface Book be docked to the keyboard.
 
  
 
@@ -140,8 +131,7 @@ This test is essentially the same as the Type Cover test, except the integrated 
 
 ### Canvas mode battery test
 
-**Note**  
-This test is only applicable to Surface Book.
+>**Note:**&nbsp;&nbsp;This test is only applicable to Surface Book.
 
  
 
@@ -149,8 +139,7 @@ Depending on which mode Surface Book is in, different batteries are used to powe
 
 ### Clipboard mode battery test
 
-**Note**  
-This test is only applicable to Surface Book.
+>**Note:**&nbsp;&nbsp;This test is only applicable to Surface Book.
 
  
 
@@ -158,8 +147,7 @@ Disconnect the Surface Book from the keyboard to work in clipboard mode. In clip
 
 ### Laptop mode battery test
 
-**Note**  
-This test is only applicable to Surface Book.
+>**Note:**&nbsp;&nbsp;This test is only applicable to Surface Book.
 
  
 
@@ -171,8 +159,7 @@ In this test the battery is discharged for a few seconds and tested for health a
 
 ### Discrete graphics (dGPU) test
 
-**Note**  
-This test is only applicable to Surface Book models with a discrete graphics processor.
+>**Note:**&nbsp;&nbsp;This test is only applicable to Surface Book models with a discrete graphics processor.
 
  
 
@@ -180,8 +167,7 @@ This test will query the device information of current hardware to check for the
 
 ### Discrete graphics (dGPU) fan test
 
-**Note**  
-This test is only applicable to Surface Book models with a discrete graphics processor.
+>**Note:**&nbsp;&nbsp;This test is only applicable to Surface Book models with a discrete graphics processor.
 
  
 
@@ -189,8 +175,7 @@ The discrete graphics processor in the Surface Book includes a separate cooling 
 
 ### Muscle wire test
 
-**Note**  
-This test is only applicable to Surface Book.
+>**Note:**&nbsp;&nbsp;This test is only applicable to Surface Book.
 
  
 
@@ -198,8 +183,7 @@ To disconnect the Surface Book from the keyboard, software must instruct the mus
 
 ### Dead pixel and display artifacts tests
 
-**Note**  
-Before you run this test, be sure to clean the screen of dust or smudges.
+>**Note:**&nbsp;&nbsp;Before you run this test, be sure to clean the screen of dust or smudges.
 
  
 
@@ -219,8 +203,7 @@ The Surface touchscreen should detect input across the entire screen of the devi
 
 ### <a href="" id="digitizer-pen--test"></a>Digitizer pen test
 
-**Note**  
-A Microsoft Surface Pen is required for this test.
+>**Note:**&nbsp;&nbsp;A Microsoft Surface Pen is required for this test.
 
  
 
@@ -240,8 +223,7 @@ This test prompts you to use the volume rocker to turn the volume all the way up
 
 ### <a href="" id="micro-sd-or-sd--slot-test--"></a>Micro SD or SD slot test
 
-**Note**  
-This test requires a micro SD or SD card that is compatible with the slot in your Surface device.
+>**Note:**&nbsp;&nbsp;This test requires a micro SD or SD card that is compatible with the slot in your Surface device.
 
  
 
@@ -253,8 +235,7 @@ This test displays the **Recording** tab of the Sound item in Control Panel. The
 
 ### <a href="" id="video-out--test"></a>Video out test
 
-**Note**  
-This test requires an external display with the applicable connection for your Surface device.
+>**Note:**&nbsp;&nbsp;This test requires an external display with the applicable connection for your Surface device.
 
  
 
@@ -262,8 +243,7 @@ Surface devices provide a Mini DisplayPort connection for connecting to an exter
 
 ### <a href="" id="bluetooth--test"></a>Bluetooth test
 
-**Note**  
-This test requires a Bluetooth device. The device must be set to pairing mode or made discoverable to perform this test.
+>**Note:**&nbsp;&nbsp;This test requires a Bluetooth device. The device must be set to pairing mode or made discoverable to perform this test.
 
  
 
@@ -275,8 +255,7 @@ Use this test to verify that the cameras on your Surface device are operating pr
 
 ### <a href="" id="speaker-test--"></a>Speaker test
 
-**Note**  
-Headphones or external speakers are required to test the headphone jack in this test.
+>**Note:**&nbsp;&nbsp;Headphones or external speakers are required to test the headphone jack in this test.
 
  
 
@@ -284,8 +263,7 @@ This test plays audio over left and right channels respectively, both for the in
 
 ### <a href="" id="network-test--"></a>Network test
 
-**Note**  
-Connect the Surface device to a Wi-Fi network before you run this test. Connections that are made during the test are removed when the test is completed.
+>**Note:**&nbsp;&nbsp;Connect the Surface device to a Wi-Fi network before you run this test. Connections that are made during the test are removed when the test is completed.
 
  
 
@@ -317,8 +295,7 @@ The ambient light sensor is used to automatically adjust screen brightness relat
 
 ### <a href="" id="device-orientation-test--"></a>Device orientation test
 
-**Note**  
-Before you run this test, disable rotation lock from the Action Center if enabled.
+>**Note:**&nbsp;&nbsp;Before you run this test, disable rotation lock from the Action Center if enabled.
 
  
 
@@ -330,8 +307,7 @@ This test cycles the screen through brightness levels from 0 percent to 100 perc
 
 ### <a href="" id="system-assessment--"></a>System assessment
 
-**Note**  
-The Surface device must be connected to AC power before you can run this test.
+>**Note:**&nbsp;&nbsp;The Surface device must be connected to AC power before you can run this test.
 
  
 
@@ -350,8 +326,7 @@ If your Surface device has encountered an error that caused the device to fail o
 
 You can run the Microsoft Surface Diagnostic Toolkit from the command line or as part of a script. The tool supports the following arguments:
 
-**Note**  
-Many of the tests performed by the Microsoft Surface Diagnostic Toolkit require technician interaction. The Microsoft Surface Diagnostic Toolkit cannot run unattended.
+>**Note:**&nbsp;&nbsp;Many of the tests performed by the Microsoft Surface Diagnostic Toolkit require technician interaction. The Microsoft Surface Diagnostic Toolkit cannot run unattended.
 
  
 
@@ -506,8 +481,7 @@ By default, the Microsoft Surface Diagnostic Toolkit is available in English onl
 
 6.  Save the SurfaceDiagnosticTool\_v1.0.60.0.locale file.
 
-**Note**  
-The SurfaceDiganosticTool\_v1.0.60.0.locale file must be located in the same folder and have the same name other than the file extension as the Microsoft Surface Diagnostic Toolkit executable file to use the custom prompt text. The SurfaceDiganosticTool\_v1.0.60.0.locale is an .xml file and must use UTF-8 encoding.
+>**Note:**&nbsp;&nbsp;The SurfaceDiganosticTool\_v1.0.60.0.locale file must be located in the same folder and have the same name other than the file extension as the Microsoft Surface Diagnostic Toolkit executable file to use the custom prompt text. The SurfaceDiganosticTool\_v1.0.60.0.locale is an .xml file and must use UTF-8 encoding.
 
  
 
