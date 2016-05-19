@@ -20,6 +20,7 @@
 #### [Accessibility](accessibility-surface-hub.md)
 #### [Change the Surface Hub device account](change-surface-hub-device-account.md)
 #### [Device reset](device-reset-suface-hub.md)
+#### [End a Surface Hub meeting with I'm Done](i-am-done-finishing-your -surface-hub-meeting.md)
 #### [Install apps on your Surface Hub](install-apps-on-surface-hub.md)
 #### [Manage settings with a local admin account](manage-settings-with-local-admin-account-surface-hub.md)
 #### [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md)

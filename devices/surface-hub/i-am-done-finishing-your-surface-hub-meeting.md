@@ -75,5 +75,13 @@ Accessibility features and apps are returned to default settings when **I'm Done
 The clipboard is cleared to remove data that was copied to the clipboard during the session. 
 
 ## Frequently asked questions
+**What happens if I forget to tap **I'm Done** at the end of a meeting, and someone else uses the Surface Hub later?**<br>
+When you don't tap **I"m Done** at the end of your meeting, Surface Hub enters a Resume state. This is similar to leaving content on a whiteboard in a meeting room, and forgetting to erase the whiteboard. When you return to the meeting room, that content will still be on the whiteboard unless someone erarses it. With Surface Hub, meeting content is still available if an attendee doesn't tap **I'm Done**. However, Surface Hub removes all meeting data during daily maintenance. Any meeting that wasn't ended with **I'm Done** will be cleaned up during maintenance. 
+
+**Are documents recoverable?**<br> 
+Removing files from the hard drive when **I'm Done** is selected is just like any other file deletion from a hard disk drive. 3rd-party software might be able to recover data from the hard disk drive, but file recovery is not a supported feature on Surface Hub. 
+
+**Do the clean-up actions from **I'm Done** comply with the US Department of Defense clearing and sanitizing standard: DoD 5220.22-M?**<br>
+No. Currently, the clean-up actions from **I'm Done** do not comply with this standard.  
 
   
