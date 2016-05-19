@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# For IT administrators: get Minecraft: Education Edition
+# For IT administrators: get Minecraft Education Edition
 
 **Applies to:**
 
@@ -28,3 +28,15 @@ If your school isn't managed by Azure Active Directory, you will be signed up fo
 * Office 365, which includes online versions of Office apps plus 1 TB online storage and [Microsoft Classroom](https://classroom.microsoft.com/), is free for teachers and students. [Sign up your school for Office 365 Education.](https://products.office.com/en-us/academic/office-365-education-plan)
 * If your school has an Office 365 Education subscription, it includes a free Azure AD subscription. [Register your free Azure AD subscription.](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703369%28v=vs.85%29.aspx)
 
+
+## Learn more
+
+[Roles and permissions in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business)
+
+[Troubleshoot Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/troubleshoot-windows-store-for-business)
+
+## Related topics
+
+[Get Minecraft Education Edition](get-minecraft-for-education.md)
+
+[For teachers get Minecraft Education Edition](teacher-get-minecraft.md)
