@@ -1,5 +1,5 @@
 ---
-title: For teachers: get Minecraft: Education Edition
+title: For teachers get Minecraft Education Edition
 description: Learn how teachers can get and distribute Minecraft.
 keywords: ["school"]
 ms.prod: W10
@@ -9,6 +9,7 @@ author: jdeckerMS
 ---
 
 # For teachers: get Minecraft: Education Edition
+
 **Applies to:**
 
 -   Windows 10 
@@ -19,3 +20,12 @@ author: jdeckerMS
 Teachers 
 
 ![Click Get the app](images/teacher-get-app.png) 
+
+![Enter school email address](images/enter-email.png)
+
+![You can get the app now](images/get-the-app.png)
+
+
+
+
+

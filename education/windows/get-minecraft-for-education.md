@@ -1,7 +1,7 @@
 ---
-title: Get Minecraft: Education Edition
-description: Learn how to get and distribute Minecraft: Education Edition.
-keywords: ["school"]
+title: Get Minecraft Education Edition
+description: Learn how to get and distribute Minecraft Education Edition.
+keywords: school
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
@@ -9,6 +9,7 @@ author: jdeckerMS
 ---
 
 # Get Minecraft: Education Edition
+
 **Applies to:**
 
 -   Windows 10  
