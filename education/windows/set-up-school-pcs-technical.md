@@ -38,7 +38,7 @@ The following table tells you what you get using the **Set up School PCs** app i
 
 ## Prerequisites for IT
 
-* If your school uses Azure AD, [configure your directory to allow devices to join](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-setup/).  If the teacher is going to set up a lot of devices, give her appropriate privileges for joining devices or make a special account.
+* If your school uses Azure AD, [configure your directory to allow devices to join](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-setup/).  If the teacher is going to set up a lot of devices, give the teacher appropriate privileges for joining devices or make a special account.
 * Office 365, which includes online versions of Office apps plus 1 TB online storage and [Microsoft Classroom](https://classroom.microsoft.com/), is free for teachers and students. [Sign up your school for Office 365 Education.](https://products.office.com/en-us/academic/office-365-education-plan)
 * If your school has an Office 365 Education subscription, it includes a free Azure AD subscription. [Register your free Azure AD subscription.](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703369%28v=vs.85%29.aspx)
 * After you set up your Office 365 Education tenant, use [Microsoft School Data Sync Preview](https://sis.microsoft.com/) to sync user profiles and class rosters from your Student Information System (SIS).

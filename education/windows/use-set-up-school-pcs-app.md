@@ -35,7 +35,6 @@ The Set up School PCs app helps you set up new computers running Windows 10, ver
 * Windows 10 automatically manages accounts no matter how many students use the PC.
 * Keeps computers up-to-date without interfering with class time using Windows Update and maintenance hours (by default, 12 AM).
 * Customizes the sign-in screen to support students with IDs and temporary users.
-* Automatically manages account profiles on shared computers to maintain performance
 * Locks down the computer to prevent mischievous activity:
     * Prevents students from installing apps
     * Prevents students from removing the computer from the school's device management system
