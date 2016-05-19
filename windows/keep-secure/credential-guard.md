@@ -345,7 +345,7 @@ Now you can set up an authentication policy to use Credential Guard.
 
 Here is a list of scripts that are mentioned in this topic.
 
-### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
+#### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
 
 Save this script file as get-IssuancePolicy.ps1.
 
@@ -533,11 +533,12 @@ write-host "There are no issuance policies which are not mapped to groups"
     }
 }
 ```
-**Note**  
-If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
+> **Note:**  If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
-### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
+#### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
+
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
+
 ``` syntax
 #######################################
 ##     Parameters to be defined      ##
@@ -816,6 +817,7 @@ write-host $tmp -Foreground Red
 > **Note:**  If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
 ## Related topics
+
 - [Isolated User Mode in Windows 10 with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-in-Windows-10-with-Dave-Probert)
 - [Isolated User Mode Processes and Features in Windows 10 with Logan Gabriel (Channel 9)](http://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-Processes-and-Features-in-Windows-10-with-Logan-Gabriel)
 - [More on Processes and Features in Windows 10 Isolated User Mode with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/More-on-Processes-and-Features-in-Windows-10-Isolated-User-Mode-with-Dave-Probert)
