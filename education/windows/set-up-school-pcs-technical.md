@@ -16,7 +16,7 @@ author: jdeckerMS
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
-The Set up School PCs app helps you set up new computers running Windows 10, version 1607. 
+The **Set up School PCs** app helps you set up new computers running Windows 10, version 1607. 
 
 If your school uses Azure Active Directory (Azure AD) or Office 365, the **Set up School PCs** app will create a setup file that connects the computer to your subscription.  You can also use the app to set up school PCs that anyone can use, with or without Internet connectivity. 
 
@@ -34,51 +34,54 @@ The following table tells you what you get using the **Set up School PCs** app i
 |   |    |    |   |   |
 \* Feature applies to Windows 10 Pro, Windows 10 Pro for Education, Windows 10 Enterprise, and Windows 10 Enterprise for EDU
 
-> **Note**: If your school only uses traditional domains through Active Directory, [use Windows Imaging and Configuration Designer](set-up-students-pcs-to-join-domain.md) to configure your PCs. You can only use the Set up School PCs app to set up PCs that are not connected to your traditional domain.
+> **Note**: If your school uses Active Directory, [use Windows Imaging and Configuration Designer](set-up-students-pcs-to-join-domain.md) to configure your PCs to join the domain. You can only use the **Set up School PCs** app to set up PCs that are not connected to your traditional domain.
 
 ## Prerequisites for IT
 
 * If your school uses Azure AD, [configure your directory to allow devices to join](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-setup/).  If the teacher is going to set up a lot of devices, give her appropriate privileges for joining devices or make a special account.
 * Office 365, which includes online versions of Office apps plus 1 TB online storage and [Microsoft Classroom](https://classroom.microsoft.com/), is free for teachers and students. [Sign up your school for Office 365 Education.](https://products.office.com/en-us/academic/office-365-education-plan)
 * If your school has an Office 365 Education subscription, it includes a free Azure AD subscription. [Register your free Azure AD subscription.](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703369%28v=vs.85%29.aspx)
-* After you set up your Office 365 Education tenant, use [Microsoft School Data Sync Preview](https://sis.microsoft.com/) to sync user profiles and class rosters from your Student Information System.
+* After you set up your Office 365 Education tenant, use [Microsoft School Data Sync Preview](https://sis.microsoft.com/) to sync user profiles and class rosters from your Student Information System (SIS).
 
 
 ## Information about Windows Update
 
-It is the intent of the shared PC mode to always be up to date. If using the **Set up School PCs** app, Shared PC mode configures the power states and Windows Update to : 
+Shared PC mode helps ensure that computers are always up-to-date. If a PC is configured using the **Set up School PCs** app, shared PC mode sets the power states and Windows Update to: 
 * Wake nightly
 * Check and install updates
 * Forcibly reboot if necessary to finish applying updates
 
-However, the PC is also configured to not interrupt the user during normal daytime hours with updates or reboots.
+The PC is also configured to not interrupt the user during normal daytime hours with updates or reboots.
 
 ## Guidance for accounts on shared PCs
 
-* On a Windows PC joined to Azure Active Directory
+* We recommend no local admin accounts on the PC to improve the reliability and security of the PC.
+* On a Windows PC joined to Azure Active Directory:
     * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
     * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
-* If shared PC mode with the account manager turned on is set up on a PC that is already in use, existing local accounts will not be deleted. However, all other local accounts created after Shared PC mode is turned on will automatically be deleted at sign off, including admin accounts.
+* If shared PC mode with the account manager turned on is set up on a PC that is already in use, existing local accounts will not be deleted. However, all local accounts created after shared PC mode is set up will automatically be deleted at sign-out, including admin accounts.
     * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
-    * Create admin accounts before enabling Shared PC mode, or 
-    * Create exempt accounts before signing off.
+    * Create admin accounts before setting up shared PC mode, or 
+    * Create exempt accounts before signing out.
 * The account management service supports accounts that are exempt from deletion.
-    * An account can be marked exempt from deletion by adding the account SID to the **HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\** registry key.
+    * An account can be marked exempt from deletion by adding the account SID to the `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\` registry key.
     * To add the account SID to the registry key using PowerShell:
-        * $adminName = "LocalAdmin"
-        * $adminPass = 'Pa$$word123'
-        * iex "net user /add $adminName $adminPass"
-        * $user = New-Object System.Security.Principal.NTAccount($adminName) 
-        * $sid = $user.Translate([System.Security.Principal.SecurityIdentifier]) 
-        * $sid = $sid.Value;
-        * New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force 
-* It is recommended to not have any local admin accounts on the PC to improve the reliability and security of the PC.
+        ```
+        $adminName = "LocalAdmin"
+        $adminPass = 'Pa$$word123'
+        iex "net user /add $adminName $adminPass"
+        $user = New-Object System.Security.Principal.NTAccount($adminName) 
+        $sid = $user.Translate([System.Security.Principal.SecurityIdentifier]) 
+        $sid = $sid.Value;
+        New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
+        ``` 
+
 
 
 
 ## Provisioning package details
 
-The **Set up School PCs** app produces a specialized provisioning package that makes use of the SharedPC configuration service provider (CSP). 
+The **Set up School PCs** app produces a specialized provisioning package that makes use of the `SharedPC` configuration service provider (CSP). 
 
 
 ### Uninstalled apps 
