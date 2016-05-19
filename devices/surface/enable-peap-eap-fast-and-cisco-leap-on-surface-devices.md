@@ -6,7 +6,7 @@ keywords: ["network", "wireless", "device", "deploy", "authenticaion", "protocol
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: milada
+author: miladCA
 ---
 
 # Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices
