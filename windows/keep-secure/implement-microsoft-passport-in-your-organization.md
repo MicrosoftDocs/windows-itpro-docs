@@ -2,22 +2,25 @@
 title: Implement Microsoft Passport in your organization (Windows 10)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
-ms.pagetype: security
-keywords: ["identity", "PIN", "biometric", "Hello"]
+keywords: identity, PIN, biometric, Hello
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: jdeckerMS
 ---
+
 # Implement Microsoft Passport in your organization
+
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
+
 You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
-**Important**  
-The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Microsoft Passport for Work** policy settings to manage PINs.
+> **Important:**  The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Microsoft Passport for Work** policy settings to manage PINs.
  
 ## Group Policy settings for Passport
+
 The following table lists the Group Policy settings that you can configure for Passport use in your workplace. These policy settings are available in **Computer Configuration** &gt; **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Passport for Work**.
 <table>
 <tr>
@@ -132,7 +135,9 @@ The following table lists the Group Policy settings that you can configure for P
 </td>
 </tr>
 </table>
+
 ## MDM policy settings for Passport
+
 The following table lists the MDM policy settings that you can configure for Passport use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkId=692070).
 <table>
 <tr>
@@ -276,10 +281,12 @@ The following table lists the MDM policy settings that you can configure for Pas
 </td>
 </tr>
 </table>
+
 **Note**  
 If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
  
 ## Prerequisites
+
 You’ll need this software to set Microsoft Passport policies in your enterprise.
 <table>
 <colgroup>
@@ -339,16 +346,26 @@ You’ll need this software to set Microsoft Passport policies in your enterpris
 Configuration Manager and MDM provide the ability to manage Passport policy and to deploy and manage certificates protected by Passport.
 Azure AD provides the ability to register devices with your enterprise and to provision Passport for organization accounts.
 Active Directory provides the ability to authorize users and devices using keys protected by Passport if domain controllers are running Windows 10 and the Microsoft Passport provisioning service in Windows 10 AD FS.
+
 ## Passport for BYOD
+
 Passport can be managed on personal devices that your employees use for work purposes using MDM. On personal devices, users can create a personal Passport PIN for unlocking the device and a separate work PIN for access to work resources.
 The work PIN is managed using the same Passport policies that you can use to manage Passport on organization owned devices. The personal PIN is managed separately using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](http://go.microsoft.com/fwlink/p/?LinkID=623244).
+
 ## Related topics
+
 [Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
+
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
+
 [Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
+
 [Prepare people to use Microsoft Passport](prepare-people-to-use-microsoft-passport.md)
+
 [Microsoft Passport and password changes](microsoft-passport-and-password-changes.md)
+
+
 [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
+
 [Event ID 300 - Passport successfully created](passport-event-300.md)
- 
  

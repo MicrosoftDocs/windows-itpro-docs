@@ -2,18 +2,23 @@
 title: Scenario 3 KMS Client Activation (Windows 10)
 description: Scenario 3 KMS Client Activation
 ms.assetid: 72b04e8f-cd35-490c-91ab-27ea799b05d0
-ms.pagetype: activation
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: activation
 author: jdeckerMS
 ---
+
 # Scenario 3: KMS Client Activation
+
 In this scenario, you use the Volume Activation Management Tool (VAMT) to activate Key Management Service (KMS) client keys or Generic Volume License Keys (GVLKs). This can be performed on either Core Network or Isolated Lab computers. By default, volume license editions of Windows Vista, Windows® 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft® Office 2010 use KMS for activation. GVLKs are already installed in volume license editions of these products. You do not have to enter a key to activate a product as a GVLK, unless you are converting a MAK-activated product to a KMS activation. For more information, see [Install a KMS Client Key](install-kms-client-key-vamt.md).
+
 The procedure that is described below assumes the following:
 -   The KMS Service is enabled and available to all KMS clients.
 -   VAMT has been installed and computers have been added to the VAMT database. See Parts 1 through 4 in either [Scenario 1: Online Activation](scenario-online-activation-vamt.md) or [Scenario 2: Proxy Activation](scenario-proxy-activation-vamt.md) for more information.
+
 ## Activate KMS Clients
+
 1.  Open VAMT.
 2.  To set the KMS activation options, on the menu bar click **View**. Then click **Preferences** to open the **Volume Activation Management Tool Preferences** dialog box.
 3.  In the **Volume Activation Management Tool Preferences** dialog box, under **KMS Management Services host selection** select from the following options:
@@ -29,7 +34,9 @@ The procedure that is described below assumes the following:
 8.  Select the products that you want to activate.
 9.  Click **Activate** in the **Selected Items** menu in the right-side **Actions** pane, click **Activate**, point to **Volume activate**, and then click the appropriate credential option. If you click the **Alternate Credentials** option, you will be prompted to enter an alternate user name and password.
 10. VAMT displays the **Activating products** dialog box until it completes the requested action. When activation is complete, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
+
 The same status is shown under the **Status of Last Action** column in the products list view in the center pane.
+
 ## Related topics
 - [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
  
