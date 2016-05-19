@@ -19,7 +19,7 @@ author: jdeckerMS
 |[Use Set up School PCs app](use-set-up-school-pcs-app.md) | Learn how to use the **Set up School PCs** app to quickly configure new Windows 10 PCs for students. |
 | [Set up School PCs app technical reference](set-up-school-pcs-technical.md) | This topic provides prerequisites and provisioning details for using the **Set up School PCs** app. |
 | [Set up students' PCs to join domain](set-up-students-pcs-to-join-domain.md) | Learn how to create provisioning packages to easily configure student's PCs to join your Active Directory domain. |
-| [Get Minecraft for Education](get-minecraft-for-education.md) | Learn how to get early access to Minecraft: Education Edition and distribute it to your students. |
+| [Get Minecraft: Education Edition](get-minecraft-for-education.md) | Learn how to get free early access to **Minecraft: Education Edition** and distribute it to your students. |
 | [Take tests in Windows 10](take-tests-in-windows-10.md) | Learn how to configure and use the **Take a Test** app in Windows 10 |
 | [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md) | Learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. |
 | [Chromebook migration guide](chromebook-migration-guide.md) | Learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment. |

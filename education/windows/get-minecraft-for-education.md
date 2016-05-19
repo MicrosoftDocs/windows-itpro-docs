@@ -1,14 +1,14 @@
 ---
-title: Use Set up School PCs app
-description: Learn how the Set up School PCs app works and how to use it.
-keywords: ["shared cart", "shared PC", "school"]
+title: Get Minecraft: Education Edition
+description: Learn how to get and distribute Minecraft: Education Edition.
+keywords: ["school"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Use the Set up School PCs app
+# Get Minecraft: Education Edition
 **Applies to:**
 
 -   Windows 10  
