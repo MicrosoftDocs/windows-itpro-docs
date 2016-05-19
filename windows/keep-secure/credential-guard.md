@@ -2,32 +2,46 @@
 title: Protect derived domain credentials with Credential Guard (Windows 10)
 description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
-ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 # Protect derived domain credentials with Credential Guard
+
 **Applies to**
 -   Windows 10
 -   Windows Server 2016 Technical Preview
+
 Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
+
 Credential Guard offers the following features and solutions:
+
 -   **Hardware security** Credential Guard increases the security of derived domain credentials by taking advantage of platform security features including, Secure Boot and virtualization.
 -   **Virtualization-based security** Windows services that manage derived domain credentials and other secrets run in a protected environment that is isolated from the running operating system.
 -   **Better protection against advanced persistent threats** Securing derived domain credentials using the virtualization-based security blocks the credential theft attack techniques and tools used in many targeted attacks. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
 -   **Manageability** You can manage Credential Guard by using Group Policy, WMI, from a command prompt, and Windows PowerShell.
+
 ## How it works
-Credential Guard isolates secrets that previous versions of Windows stored in the Local Security Authority (LSA) by using virtualization-based security. Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Credential Guard, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process
+
+Credential Guard isolates secrets that previous versions of Windows stored in the Local Security Authority (LSA) by using virtualization-based security. Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Credential Guard, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
+
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
+
 Credential Guard also does not allow older variants of NTLM, unconstrained Kerberos delegation, and Kerberos authentication protocols and cipher suites when using default derived credentials, including NTLMv1, MS-CHAPv2, and weaker Kerberos encryption types, such as DES.
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
-![Credential Guard oveview](images/credguard.png)
+
+![Credential Guard overview](images/credguard.png)
+
 ## New and changed functionality
+
 To see what was added or changed in Credential Guard, see [What's new in Credential Guard?](../whats-new/credential-guard.md).
+
 ## Hardware and software requirements
+
 The PC must meet the following hardware and software requirements to use Credential Guard:
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,13 +96,11 @@ The PC must meet the following hardware and software requirements to use Credent
 <div class="alert">
 <strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.
 </div>
-<div>
- 
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Secure firmware update process</p></td>
-<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot) Windows Hardware Compatibility Program requirement.</p></td>
+<td align="left"><p>To verify that the firmware complies with the secure firmware update process, you can validate it against the [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot) Windows Hardware Compatibility Program requirement.</p><p>Credential Guard relies on the security of the underlying hardware and firmware. It is critical to keep the firmware updated with the latest security fixes.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>The firmware is updated for [Secure MOR implementation](http://msdn.microsoft.com/library/windows/hardware/mt270973.aspx)</p></td>
@@ -102,21 +114,31 @@ The PC must meet the following hardware and software requirements to use Credent
 </table>
  
 ¹ If you choose the **Secure Boot and DMA protection** option in the Group Policy setting, an IOMMU is required. The **Secure Boot** Group Policy option enables Credential Guard on devices without an IOMMU.
+
 ## Manage Credential Guard
+
 Credential Guard uses virtualization-based security features that must be enabled on each PC before you can use it.
+
 ### Turn on Credential Guard by using Group Policy
+
 You can use Group Policy to enable Credential Guard because it will add the virtualization-based security features for you.
 1.  From the Group Policy Management Console, go to **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard**.
 2.  Double-click **Turn On Virtualization Based Security**, and then click the **Enabled** option.
 3.  **Select Platform Security Level** box, choose **Secure Boot** or **Secure Boot and DMA Protection**.
 4.  In the **Credential Guard Configuration** box, click **Enabled with UEFI lock**, and then click **OK**. If you want to be able to turn off Credential Guard remotely, choose **Enabled without lock**.
-    ![](images/credguard-gp.png)
+
+    ![Credential Guard Group Policy setting](images/credguard-gp.png)
+    
 5.  Close the Group Policy Management Console.
+
 ### Add Credential Guard to an image
+
 If you would like to add Credential Guard to an image, you can do this by adding the virtualization-based security features and then turning on Credential Guard.
+
 ### Add the virtualization-based security features
+
 First, you must add the virtualization-based security features. You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
-**Note**  If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
+> **Note:**  If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
  
 **Add the virtualization-based security features by using Programs and Features**
 1.  Open the Programs and Features control panel.
@@ -124,6 +146,7 @@ First, you must add the virtualization-based security features. You can do this 
 3.  Select the **Isolated User Mode** check box.
 4.  Go to **Hyper-V** -&gt; **Hyper-V Platform**, and then select the **Hyper-V Hypervisor** check box.
 5.  Click **OK**.
+
 **Add the virtualization-based security features to an offline image by using DISM**
 1.  Open an elevated command prompt.
 2.  Add the Hyper-V Hypervisor by running the following command:
@@ -134,12 +157,14 @@ First, you must add the virtualization-based security features. You can do this 
     ``` syntax
     dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
     ```
-**Note**  
-You can also add these features to an online image by using either DISM or Configuration Manager.
+> **Note:**  You can also add these features to an online image by using either DISM or Configuration Manager.
  
 ### Turn on Credential Guard
+
 If you don't use Group Policy, you can enable Credential Guard by using the registry.
+
 **Turn on Credential Guard by using the registry**
+
 1.  Open Registry Editor.
 2.  Enable virtualization-based security:
     -   Go to HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\DeviceGuard.
@@ -149,15 +174,19 @@ If you don't use Group Policy, you can enable Credential Guard by using the regi
     -   Go to HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\LSA.
     -   Add a new DWORD value named **LsaCfgFlags**. Set the value of this registry setting to 1 to enable Credential Guard with UEFI lock, set it to 2 to enable Credential Guard without lock, and set it to 0 to disable it.
 4.  Close Registry Editor.
-**Note**  
-You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
+
+> **Note:**  You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
  
 ### Remove Credential Guard
+
 If you have to remove Credential Guard on a PC, you need to do the following:
+
 1.  If you used Group Policy, disable the Group Policy setting that you used to enable Credential Guard (**Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard** -&gt; **Turn on Virtualization Based Security**).
 2.  Delete the following registry setting: HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\LsaCfgFlags
 3.  Delete the Credential Guard EFI variables by using bcdedit.
+
 **Delete the Credential Guard EFI variables**
+
 1.  From an elevated command prompt, type the following commands:
     ``` syntax
     mountvol X: /s
@@ -172,20 +201,25 @@ If you have to remove Credential Guard on a PC, you need to do the following:
 2.  Restart the PC.
 3.  Accept the prompt to disable Credential Guard.
 4.  Alternatively, you can disable the virtualization-based security features to turn off Credential Guard.
-**Note**  
-The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS.
-If you want to turn off both Credential Guard and virtualization-based security, run the following bcdedit command after turning off all virtualization-based security Group Policy and registry settings:
-**bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS**
+
+> **Note: ** The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Credential Guard and virtualization-based security, run the following bcdedit command after turning off all virtualization-based security Group Policy and registry settings: **bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS**
+
 For more info on virtualization-based security and Device Guard, see [Device Guard deployment guide](device-guard-deployment-guide.md).
  
 ### Check that Credential Guard is running
+
 You can use System Information to ensure that Credential Guard is running on a PC.
+
 1.  Click **Start**, type **msinfo32.exe**, and then click **System Information**.
 2.  Click **System Summary**.
 3.  Confirm that **Credential Guard** is shown next to **Device Guard Security Services Running**.
+
     Here's an example:
-    ![](images/credguard-msinfo32.png)
+    
+    ![System Information](images/credguard-msinfo32.png)
+    
 ## Considerations when using Credential Guard
+
 -   If Credential Guard is enabled on a device after it's joined to a domain, the user and device secrets may already be compromised. We recommend that Credential Guard is enabled before the PC is joined to a domain.
 -   You should perform regular reviews of the PCs that have Credential Guard enabled. This can be done with security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
     -   **Event ID 13** Credential Guard (LsaIso.exe) was started and will protect LSA credentials.
@@ -205,34 +239,51 @@ You can use System Information to ensure that Credential Guard is running on a P
     -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password.
     -   Applications that extract derived domain credentials from Credential Manager will no longer be able to use those credentials.
     -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
+    
 ## Scenarios not protected by Credential Guard
+
 Some ways to store credentials are not protected by Credential Guard, including:
+
 -   Software that manages credentials outside of Windows feature protection
 -   Local accounts and Microsoft Accounts
 -   Credential Guard does not protect the Active Directory database running on Windows Server 2016 Technical Preview domain controllers. It also does not protect credential input pipelines, such as Windows Server 2016 Technical Preview servers running Remote Desktop Gateway. If you're using a Windows Server 2016 Technical Preview server as a client PC, it will get the same protection as it would be running Windows 10 Enterprise.
 -   Key loggers
 -   Physical attacks
 -   Does not prevent an attacker with malware on the PC from using the privileges associated with any credential. We recommend using dedicated PCs for high value accounts, such as IT Pros and users with access high value assets in your organization.
+
 ## Additional mitigations
+
 Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also need to be deployed to make the domain environment more robust.
+
 Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. By deploying authentication policies with compound authentication in Windows Server 2012 R2 or later domains, users can be restricted to only sign on from specific domain-joined devices. However, since devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, authentication policies can require that the device authenticates with its private key. This prevents shared secrets on stolen devices to be used with stolen user passwords or Kerberos secret keys to sign on as the user.
+
 Device certificate authentication has the following requirements:
+
 -   Device domains are Windows Server 2012 or higher and all domain controllers have certificates, which satisfy strict KDC validation (KDC EKU present and the DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension).
 -   Windows 10 devices have the CA issuing the domain controller certificates in the enterprise store.
 -   A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
+
 ### Additional Group Policy settings
+
 There are a few Group Policy settings that you can enable that provide more protection against credential attacks:
+
 -   On the domain controllers, configure the KDC support for claims, compound authentication, and Kerberos armoring system by using Group Policy. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
 -   On devices running Windows 10, you can turn it on by using Group Policy as well. To do this, enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** & **Always send compound authentication first system** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
+
 ### Compound authentication
+
 Compound authentication adds the device identity to the user’s during authentication to the domain and resources. Without compound authentication, only the user’s secrets are validated. With compound authentication, the Kerberos client has to have both the user’s and device’s secrets.
 Enabling compound authentication also enables Kerberos armoring, which provides two additional benefits:
+
 -   User authentication on domain-joined devices will be armored. This means that network captures will contain encrypted Kerberos initial authentication. Without the appropriate device key, Kerberos AS-REQs are protected against offline dictionary attacks.
 -   KDC errors are signed, which provides protection against error spoofing attacks.
+
 ### Deploying machine certificates
+
 If the domain controllers in your organization are running Windows Server 2016 Technical Preview, devices running Windows 10 will automatically enroll a machine certificate when Credential Guard is enabled and the PC is joined to the domain.
 If the domain controllers are running Windows Server 2012 R2, the machine certificates must be provisioned manually on each device. You can do this by creating a certificate template on the domain controller or certificate authority and deploying the machine certificates to each device.
 The same security procedures used for issuing smart cards to users should be applied to machine certificates.
+
 1.  From the Certificate Manager console, right-click **Certificate Templates**, and then click **Manage.**
 2.  Right-click **Workstation Authentication**, and then click **Duplicate Template**.
 3.  Right-click the new template, and then click **Properties**.
@@ -244,14 +295,15 @@ The same security procedures used for issuing smart cards to users should be app
 7.  On the **Extensions** tab, click **Issuance Policies**, and then click **Edit**.
 8.  Under **Issuance Policies**, click**High Assurance**.
 9.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box.
+
 On devices that are running Credential Guard, enroll the devices using the machine authentication certificate by running the following command:
 ``` syntax
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
-**Note**  
-You must restart the device after enrolling the machine authentication certificate.
+> **Note:**  You must restart the device after enrolling the machine authentication certificate.
  
 ### Link the issuance policies to a group
+
 By using an authentication policy, you can ensure that users only sign into devices that are running Credential Guard. Before you deploy the authentication policy though, you must first run a couple of scripts that set up your environment.
 -   The [get-IssuancePolicy.ps1](#bkmk-getscript) shows all of the issuance policies that are available on the certificate authority.
     From a Windows PowerShell command prompt, run the following command:
@@ -264,9 +316,13 @@ By using an authentication policy, you can ensure that users only sign into devi
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:”<name of issuance policy>” –groupOU:”<Name of OU to create>” –groupName:”<name of Universal security group to create>”
     ```
 ### Deploy the authentication policy
+
 Before setting up the authentication policy, you should log any failed attempt to apply an authentication policy on the KDC. To do this in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
+
 Now you can set up an authentication policy to use Credential Guard.
+
 **To add an authentication policy for Credential Guard**
+
 1.  Ensure that your domain controllers are running at least the Windows Server 2012 R2 domain functional level.
 2.  Create a security group that will be used to identify the PCs that will have this authentication policy applied to them.
 3.  Add the computer account to this security group.
@@ -282,13 +338,17 @@ Now you can set up an authentication policy to use Credential Guard.
 13. Click **OK** to close the **Edit Access Control Conditions** box.
 14. Click **OK** to create the authentication policy.
 15. Close Active Directory Administrative Center.
-**Note**  
-When authentication policies in enforcement mode are deployed with Credential Guard, users will not be able to sign in using devices that do not have the machine authentication certificate provisioned. This applies to both local and remote sign in scenarios.
+
+> **Note:**  When authentication policies in enforcement mode are deployed with Credential Guard, users will not be able to sign in using devices that do not have the machine authentication certificate provisioned. This applies to both local and remote sign in scenarios.
  
 ### Appendix: Scripts
+
 Here is a list of scripts that are mentioned in this topic.
-### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
+
+#### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
+
 Save this script file as get-IssuancePolicy.ps1.
+
 ``` syntax
 #######################################
 ##     Parameters to be defined      ##
@@ -473,11 +533,12 @@ write-host "There are no issuance policies which are not mapped to groups"
     }
 }
 ```
-**Note**  
-If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
+> **Note:**  If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
-### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
+#### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
+
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
+
 ``` syntax
 #######################################
 ##     Parameters to be defined      ##
@@ -752,17 +813,18 @@ write-host $tmp -Foreground Red
 }
 }
 ```
-**Note**  
-If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
+
+> **Note:**  If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
 ## Related topics
-[Isolated User Mode in Windows 10 with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-in-Windows-10-with-Dave-Probert)
-[Isolated User Mode Processes and Features in Windows 10 with Logan Gabriel (Channel 9)](http://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-Processes-and-Features-in-Windows-10-with-Logan-Gabriel)
-[More on Processes and Features in Windows 10 Isolated User Mode with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/More-on-Processes-and-Features-in-Windows-10-Isolated-User-Mode-with-Dave-Probert)
-[Mitigating Credential Theft using the Windows 10 Isolated User Mode (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Mitigating-Credential-Theft-using-the-Windows-10-Isolated-User-Mode)
-[Enabling Strict KDC Validation in Windows Kerberos](http://www.microsoft.com/download/details.aspx?id=6382)
-[What's New in Kerberos Authentication for Windows Server 2012](http://technet.microsoft.com/library/hh831747.aspx)
-[Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](http://technet.microsoft.com/library/dd378897.aspx)
-[Trusted Platform Module](trusted-platform-module-overview.md)
+
+- [Isolated User Mode in Windows 10 with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-in-Windows-10-with-Dave-Probert)
+- [Isolated User Mode Processes and Features in Windows 10 with Logan Gabriel (Channel 9)](http://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-Processes-and-Features-in-Windows-10-with-Logan-Gabriel)
+- [More on Processes and Features in Windows 10 Isolated User Mode with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/More-on-Processes-and-Features-in-Windows-10-Isolated-User-Mode-with-Dave-Probert)
+- [Mitigating Credential Theft using the Windows 10 Isolated User Mode (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Mitigating-Credential-Theft-using-the-Windows-10-Isolated-User-Mode)
+- [Enabling Strict KDC Validation in Windows Kerberos](http://www.microsoft.com/download/details.aspx?id=6382)
+- [What's New in Kerberos Authentication for Windows Server 2012](http://technet.microsoft.com/library/hh831747.aspx)
+- [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](http://technet.microsoft.com/library/dd378897.aspx)
+- [Trusted Platform Module](trusted-platform-module-overview.md)
  
  

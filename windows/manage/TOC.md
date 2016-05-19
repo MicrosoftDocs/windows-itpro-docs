@@ -25,6 +25,7 @@
 #### [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md)
 #### [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
 ### [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)
+### [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 ## [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)
 ## [Configure devices without MDM](configure-devices-without-mdm.md)
 ## [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md)

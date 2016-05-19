@@ -2,22 +2,28 @@
 title: Perform KMS Activation (Windows 10)
 description: Perform KMS Activation
 ms.assetid: 5a3ae8e6-083e-4153-837e-ab0a225c1d10
-ms.pagetype: activation
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: activation
 author: jdeckerMS
 ---
+
 # Perform KMS Activation
+
 The Volume Activation Management Tool (VAMT) can be used to perform volume activation using the Key Management Service (KMS). You can use VAMT to activate Generic Volume Licensing Keys, or KMS client keys, on products accessible to VAMT. GVLKs are the default product keys used by the volume-license editions of Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft Office 2010. GVLKs are already installed in volume-license editions of these products.
+
 ## Requirements
+
 Before configuring KMS activation, ensure that your network and VAMT installation meet the following requirements:
 -   KMS host is set up and enabled.
 -   KMS clients can access the KMS host.
 -   VAMT is installed on a central computer with network access to all client computers.
 -   The products to be activated have been added to VAMT. For more information on adding product keys, see [Install a KMS Client Key](install-kms-client-key-vamt.md).
 -   VAMT has administrative permissions on all computers to be activated, and Windows Management Instrumentation (WMI) is accessible through the Windows Firewall. For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
+
 ## To configure devices for KMS activation
+
 **To configure devices for KMS activation**
 1.  Open VAMT.
 2.  If necessary, set up the KMS activation preferences. If you don’t need to set up the preferences, skip to step 6 in this procedure. Otherwise, continue to step 2.
@@ -35,5 +41,4 @@ Before configuring KMS activation, ensure that your network and VAMT installatio
 9.  Click a credential option. Choose **Alternate credentials** only if you are activating products that require administrator credentials different from the ones you are currently using.
 10. If you are supplying alternate credentials, at the prompt, type the appropriate user name and password and click **OK**.
 VAMT displays the **Volume Activation** dialog box until it completes the requested action. When the process is finished, the updated activation status of each product appears in the product list view in the center pane.
- 
  

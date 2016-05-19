@@ -6,7 +6,7 @@ keywords: ["Surface, Surface Pro 3, security, features, configure, hardware, dev
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: heatherpoulsen
+author: miladCA
 ---
 
 # Advanced UEFI security features for Surface
@@ -24,9 +24,7 @@ Before you can configure the advanced security features of your Surface device, 
 ## Manually configure additional security settings
 
 
-**Note**  To enter firmware setup on a Surface device, begin with the device powered off, press and hold the **Volume Up** button, then press and release the **Power** button, then release the **Volume Up** button after the device has begun to boot.
-
- 
+**Note**&nbsp;&nbsp;To enter firmware setup on a Surface device, begin with the device powered off, press and hold the **Volume Up** button, then press and release the **Power** button, then release the **Volume Up** button after the device has begun to boot.
 
 After the v3.11.760.0 UEFI update is installed on a Surface device, an additional UEFI menu named **Advanced Device Security** becomes available. If you click this menu, the following options are displayed:
 
@@ -57,9 +55,8 @@ As an IT professional with administrative privileges, you can automate the confi
 
 **Sample scripts**
 
-**Note**  The UEFI password used in the sample scripts below is presented in clear text. We strongly recommend saving the scripts in a protected location and running them in a controlled environment.
+**Note**&nbsp;&nbsp;The UEFI password used in the sample scripts below is presented in clear text. We strongly recommend saving the scripts in a protected location and running them in a controlled environment.
 
- 
 
 Show all configurable options:
 

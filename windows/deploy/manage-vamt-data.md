@@ -2,14 +2,17 @@
 title: Manage VAMT Data (Windows 10)
 description: Manage VAMT Data
 ms.assetid: 233eefa4-3125-4965-a12d-297a67079dc4
-ms.pagetype: activation
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: activation
 author: jdeckerMS
 ---
+
 # Manage VAMT Data
+
 This section describes how to save, import, export, and merge a Computer Information List (CILX) file using the Volume Activation Management Tool (VAMT).
+
 ## In this Section
 |Topic |Description |
 |------|------------|
