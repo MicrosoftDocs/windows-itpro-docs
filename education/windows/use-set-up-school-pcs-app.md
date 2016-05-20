@@ -24,14 +24,14 @@ Teachers and IT administrators can use the **Set up School PCs** app to quickly 
 
 The Set up School PCs app helps you set up new computers running Windows 10, version 1607. Some benefits of using this app to set up your students' PCs:
 * A computer set up this way is tailored to provide students with the tools they need for learning while removing apps and features that they don't need. 
-    * Places tiles for OneNote, Office 365 web apps, and Microsoft Classroom on the Start menu
+    * Places tiles for OneNote, Office 365 web apps, Sway, and Microsoft Classroom on the Start menu
     * Installs OneDrive for cloud-based documents and places it on the Start menu and task bar 
     * Sets Microsoft Edge as the default browser
     * Uninstalls apps not specific to education, such as Solitaire and Sports
     * Turns off Offers and tips
     * Prevents students from adding personal Microsoft accounts to the computer
-* Significantly improves how fast a student's first sign-in happens.
-* The app connects the PCs to your school’s cloud so IT can manage them.
+* Significantly improves how fast students sign-in.
+* The app connects the PCs to your school’s cloud so IT can manage them (optional).
 * Windows 10 automatically manages accounts no matter how many students use the PC.
 * Keeps computers up-to-date without interfering with class time using Windows Update and maintenance hours (by default, 12 AM).
 * Customizes the sign-in screen to support students with IDs and temporary users.
@@ -44,6 +44,7 @@ The Set up School PCs app helps you set up new computers running Windows 10, ver
 ## Tips for success
 
 * **Run the app at work**: For the best results, run the **Set up School PCs** app on your work device connected to your school's network. That way the app can gather accurate information about your wireless networks and cloud subscriptions.
+    > **Note**: Don't use **Set up Schools PCs** app for PCs that must connect to enterprise networks or to open wi-fi networks that require the user to accept Terms of Use.
 * **Apply to new computers**: The setup file that the **Set up School PCs** app creates should be used on new computers that haven't been set up for accounts yet. If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
 > **Warning**: Only use the setup file on computers that you want to configure and lock down for students. After you apply the setup file to a computer, the computer must be reset to remove the settings.
 * **Turn on student PCs and stay on first screen**: The computer must be on this screen when you insert the USB key.
@@ -53,9 +54,22 @@ The Set up School PCs app helps you set up new computers running Windows 10, ver
 If you have gone past this screen, you may have to reset your PC to start over.  To reset your PC after you have completed the first run experience, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 * **Use more than one USB key**: If you are setting up multiple PCs, you can set them up at the same time.  Just run the **Set up School PCs** app again and save the same settings to another key. That way you can run set up on more than one PC at once.  Create three keys and you can run it on three PCs at once, etc. 
 * **Start fresh**: If the PC has already been set up and you want to return to the first-run-experience to apply a new package, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
-* **Keep it clean**:  We strongly recommend that IT avoid changes to policies unless absolutely necessary, as any changes can impair performance and sign-in time.
+* **Keep it clean**:  We strongly recommend that IT avoid changes to policies unless absolutely necessary, as any changes can impair performance and sign-in time. Get more information at [Set up School PCs app technical reference](set-up-school-pcs-technical.md).
 
 ## Set up School PCs app step-by-step
+
+What you need:
+
+- The **Set up School PCs** app, installed on your work computer, connected to your school's network
+- A USB drive, 1 GB or larger
+
+### Create the setup file in the app
+
+
+
+
+
+### Apply the setup file to PCs
 
 The setup file on your USB drive is named SetupSchoolPCs.ppkg, which is a provisioning package. A provisioning package is a method for applying settings to Windows 10. When Windows 10 refers to "package", it means your setup file, and when it refers to "provisioning", it means applying the setup file to the computer.
 
