@@ -146,7 +146,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 <tr> <td valign="top"> <p> Turn off hybrid sleep (on battery) </p> </td> <td valign="top"> <p> Enabled </p> </td>  
 </tr> 
 <tr> <td valign="top"> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td valign="top"> <p> <em>SleepTimeout</em> </p> </td>  </tr> 
-<tr> <td valign="top"> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td valign="top"> <p> <em>SleepTimeout</em> </p> </td> <td valign="top"> <p> SetPowerPolicies=True </p> </td> 
+<tr> <td valign="top"> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td valign="top"> <p> <em>SleepTimeout</em> </p> </td> 
 </tr> 
 <tr> <td valign="top"> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td valign="top"> <p> Enabled </p> </td>  
 </tr> 
@@ -231,7 +231,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td valign="top" colspan="2"> <p> <strong>Windows Settings</strong>  >  <strong>Security Settings</strong>  >  <strong>Local Policies</strong>  >  <strong>Security Options</strong> </p> </td> 
 </tr> 
-<tr> <td valign="top"> <p> Interactive logon: Do not display last user name </p> </td> <td valign="top"> <p> - Enabled </p> <p> - Disabled when account model is only guest </p> </td>  
+<tr> <td valign="top"> <p> Interactive logon: Do not display last user name </p> </td> <td valign="top"> <p> - Enabled </p>   
 </tr> 
 <tr> <td valign="top"> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart </p> </td> <td valign="top"> <p> Disabled </p> </td> 
 </tr> 
