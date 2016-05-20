@@ -65,5 +65,5 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
  Here's a list of security baselines that are currently available:
  
  -  [Windows 10 security baselines](windows-10-security-baselines.md)
- -  [Windows Server security baselines](windows-server=security-baselines.md)
+ -  [Windows Server security baselines](windows-server-security-baselines.md)
 
