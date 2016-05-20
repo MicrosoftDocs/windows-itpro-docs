@@ -19,7 +19,7 @@ You can enter the Surface UEFI settings on your Surface device by pressing the *
 
 ##PC information 
 
-On the **PC Information** page, detailed information about your Surface device is provided: 
+On the **PC information** page, detailed information about your Surface device is provided: 
 
 - **Model** – Your Surface device’s model will be displayed here, such as Surface Book or Surface Pro 4. The exact configuration of your device is not shown, (such as processor, disk size, or memory size). 
 - **UUID** – This Universally Unique Identification number is specific to your device and is used to identify the device during deployment or management. 
@@ -27,7 +27,7 @@ On the **PC Information** page, detailed information about your Surface device i
 - **Serial Number** – This number is used to identify this specific Surface device for asset tagging and support scenarios.
 - **Asset Tag** – The asset tag is assigned to the Surface device with the [Asset Tag Tool](https://www.microsoft.com/en-us/download/details.aspx?id=44076). 
 
-You will also find detailed information about the firmware of your Surface device. Surface devices have several internal components that each run different versions of firmware. The firmware version of each of the following devices is displayed on the **PC Information** page (as shown in Figure 1): 
+You will also find detailed information about the firmware of your Surface device. Surface devices have several internal components that each run different versions of firmware. The firmware version of each of the following devices is displayed on the **PC information** page (as shown in Figure 1): 
 
 - System UEFI 
 
@@ -93,7 +93,7 @@ On the **Devices** page you can enable or disable specific devices and component
 
 - Onboard Audio (Speakers and Microphone) 
 
-Each device is listed with a slider that you can set into the **On** (enabled) or **Off** (disabled) position, as shown in Figure 5. 
+Each device is listed with a slider button that you can move to **On** (enabled) or **Off** (disabled) position, as shown in Figure 5. 
 
 *Figure 5. Enable and disable specific devices*
 
@@ -123,9 +123,9 @@ You can also turn on and off IPv6 support for PXE with the **Enable IPv6 for PXE
 
 ##About 
 
-The **About** page displays regulatory information, such as compliance with FCC Rules, as shown in Figure 7. 
+The **About** page displays regulatory information, such as compliance with FCC rules, as shown in Figure 7. 
 
-*Figure 7. Regulatory information is displayed on the **About** page*
+*Figure 7. Regulatory information is displayed on the About page*
 
 ![figure 7](images/manage-surface-uefi-fig7.png)
 
@@ -133,6 +133,6 @@ The **About** page displays regulatory information, such as compliance with FCC 
 
 Use the **Restart Now** button on the **Exit** page to exit UEFI settings, as shown in Figure 8. 
 
-*Figure 8. Click **Restart Now** to exit Surface UEFI and restart the device*
+*Figure 8. Click Restart Now to exit Surface UEFI and restart the device*
 
 ![figure 8](images/manage-surface-uefi-fig8.png)
