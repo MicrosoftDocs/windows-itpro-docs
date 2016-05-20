@@ -25,6 +25,9 @@
 ### [General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
 #### [Enlightened apps for use with enterprise data protection (EDP)](enlightened-microsoft-apps-and-edp.md)
 #### [Testing scenarios for enterprise data protection (EDP)](testing-scenarios-for-edp.md)
+## [Use security baselines in your organization](security-baselines.md)
+### [Windows 10 security baselines](windows-10-security-baselines.md)
+### [Windows Server security baselines](windows-server-security-baselines.md)
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
 ## [VPN profile options](vpn-profile-options.md)
 ## [Security technologies](security-technologies.md)
@@ -406,7 +409,6 @@
 #### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
 #### [Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md)
-<!--##### [Service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
 ##### [Configure endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 ##### [Configure proxy and Internet settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 ##### [Additional configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
