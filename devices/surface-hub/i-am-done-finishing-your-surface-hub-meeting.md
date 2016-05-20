@@ -38,7 +38,7 @@ Meeting attendees have access to a limited set of directories on the Surface Hub
 - Pictures
 - Downloads
 
-Surface Hub also clears these directories, since many applications often write to these directories:
+Surface Hub also clears these directories, since many applications often write to them:
 - Desktop
 - Favorites
 - Recent
