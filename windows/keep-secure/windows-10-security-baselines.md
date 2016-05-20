@@ -35,3 +35,6 @@ Here's a list of updates that were made to this version:
 -   Removed Enhanced Mitigation Experience Toolkit settings.
 -   Removed the **Recovery console: Allow automatic administrative logon** setting.
 
+## Related topics
+
+- [Use security baselines in your organization](security-baselines.md)

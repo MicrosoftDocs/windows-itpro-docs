@@ -19,17 +19,7 @@ Use the sections in this topic to learn and what has changed in the Windows Serv
 
 The Windows Server 2012 R2 security baseline is available on the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=799382).
 
-> **Note:**  For Windows Server 2012 R2, we do not recommend applying this baseline to servers that are running the following server roles:
-- Hyper-V
-- Active Directory Certificate Services
-- DHCP
-- DNS
-- File Services
-- Network Policy and Access
-- Print Server 
-- Remote Access Services
-- Remote Desktop Services
-- Web Server  
+> **Note:**  For Windows Server 2012 R2, we do not recommend applying this baseline to servers that are running the following server roles, such as Hyper-V, Active Directory Certificate Services, DHCP, DNS, File Services, Network Policy and Access, Print Server, Remote Access Services, Remote Desktop Services, and Web Server.  
 
 Here's a list of updates that were made to this version:
 
@@ -54,3 +44,7 @@ Additionally, you can change the following settings to help mitigate Pass-the-ha
 -   Add **Enterprise Admins** and **Domain Admins** to the **Deny log on as a service** security policy setting on all devices except for domain controllers and privileged access workstations.
 -   Add **Enterprise Admins** and **Domain Admins** to the **Deny log on locally** security policy setting on all devices except for domain controllers and privileged access workstations.
 -   Disable the **WDigest Authentication** setting.
+
+## Related topics
+
+- [Use security baselines in your organization](security-baselines.md)
