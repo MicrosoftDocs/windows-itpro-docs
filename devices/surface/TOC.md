@@ -6,6 +6,7 @@
 ## [Ethernet adapters and Surface deployment](ethernet-adapters-and-surface-device-deployment.md)
 ## [Manage Surface Dock firmware updates](manage-surface-dock-firmware-updates.md)
 ## [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
+## [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
 ## [Surface Data Eraser](microsoft-surface-data-eraser.md)
 ## [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
