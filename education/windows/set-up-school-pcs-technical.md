@@ -60,7 +60,7 @@ The PC is also configured to not interrupt the user during normal daytime hours 
 * On a Windows PC joined to Azure Active Directory:
     * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
     * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
-* If shared PC mode with the account manager turned on is set up on a PC that is already in use, existing local accounts will not be deleted. However, all local accounts created after shared PC mode is set up will automatically be deleted at sign-out, including admin accounts.
+* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. However, any new local accounts created by the **Start without an account** selection on the sign-in screen (if enabled) will automatically be deleted at sign-out. 
     * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
     * Create admin accounts before setting up shared PC mode, or 
     * Create exempt accounts before signing out.
