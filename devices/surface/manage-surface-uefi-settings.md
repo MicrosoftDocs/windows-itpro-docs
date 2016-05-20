@@ -13,7 +13,7 @@ author: miladCA
 
 Current and future generations of Surface devices, including Surface Pro 4 and Surface Book, use a unique UEFI firmware engineered by Microsoft specifically for these devices. This firmware allows for significantly greater control of the device’s operation over firmware versions in earlier generation Surface devices, including the support for touch, mouse, and keyboard operation. By using the Surface UEFI settings you can easily enable or disable internal devices or components, configure security to protect UEFI settings from being changed, and adjust the Surface device boot settings. 
 
->**Note:**&nbsp;&nbsp;Surface Pro 3, Surface 3, Surface Pro 2, Surface 2, Surface Pro, and Surface devices do not use the Surface UEFI and instead use firmware provided by third-party manufacturers, such as AMI.
+>**Note:**&nbsp;&nbsp;Surface Pro 3, Surface 3, Surface Pro 2, Surface 2, Surface Pro, and Surface do not use the Surface UEFI and instead use firmware provided by third-party manufacturers, such as AMI.
 
 You can enter the Surface UEFI settings on your Surface device by pressing the **Volume Up** button and the **Power** button simultaneously. Hold the **Volume Up** button until the Surface logo is displayed, which indicates that the device has begun to boot. 
 
