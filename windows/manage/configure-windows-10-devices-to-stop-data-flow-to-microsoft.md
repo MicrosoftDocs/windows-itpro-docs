@@ -1094,6 +1094,10 @@ You can opt of the Microsoft Antimalware Protection Service.
     -or-
 
 -   Use the registry to set the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SpyNetReporting** to 0 (zero).
+    
+    -and-
+    
+    From an elevated Windows PowerShell prompt, run **set-mppreference -Mapsreporting 0** 
 
 You can stop sending file samples back to Microsoft.
 
