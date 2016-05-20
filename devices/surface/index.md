@@ -62,18 +62,22 @@ For more information on planning for, deploying, and managing Surface devices in
 <td><p>Explore the available options to manage firmware and driver updates for Surface devices.</p></td>
 </tr>
 <tr class="even">
+<td><p>[Manage Surface UEFI settings](manage-surface-uefi-settings.md)<p></td>
+<td><p>Use Surface UEFI settings to enable or disable devices, configure security settings, and adjust Surface device boot settings.</p></td>
+</tr>
+<tr class="odd">
 <td><p>[Surface Data Eraser](microsoft-surface-data-eraser.md)</p></td>
 <td><p>Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)</p></td>
 <td><p>See how Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)</p></td>
 <td><p>Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Surface Dock Updater](surface-dock-updater.md)</p></td>
 <td><p>Get a detailed walkthrough of Microsoft Surface Dock Updater.</p></td>
 </tr>
