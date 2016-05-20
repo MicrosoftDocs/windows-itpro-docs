@@ -2,17 +2,22 @@
 title: Audit Non-Sensitive Privilege Use (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Non-Sensitive Privilege Use, which determines whether the operating system generates audit events when non-sensitive privileges (user rights) are used.
 ms.assetid: 8fd74783-1059-443e-aa86-566d78606627
-ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
+
 # Audit Non-Sensitive Privilege Use
+
 **Applies to**
 -   Windows 10
+
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Non-Sensitive Privilege Use**, which determines whether the operating system generates audit events when non-sensitive privileges (user rights) are used.
+
 The following privileges are non-sensitive:
+
 -   **Access Credential Manager as a trusted caller**
 -   **Access this computer from the network**
 -   **Add workstations to domain**
@@ -43,37 +48,21 @@ The following privileges are non-sensitive:
 -   **Remove computer from docking station**
 -   **Shut down the system**
 -   **Synchronize directory service data**
+
 If you configure this policy setting, an audit event is generated when a non-sensitive privilege is called. Success audits record successful attempts, and failure audits record unsuccessful attempts.
+
 Event volume: Very high
+
 Default: Not configured
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4672</p></td>
-<td align="left"><p>Special privileges assigned to new logon.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4673</p></td>
-<td align="left"><p>A privileged service was called.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4674</p></td>
-<td align="left"><p>An operation was attempted on a privileged object.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Event ID | Event message |
+| - | - |
+| 4672 | Special privileges assigned to new logon. | 
+| 4673 | A privileged service was called. | 
+| 4674 | An operation was attempted on a privileged object. | 
  
 ## Related topics
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
+
+- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
  
  
