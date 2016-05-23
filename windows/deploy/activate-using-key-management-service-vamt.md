@@ -30,6 +30,8 @@ There are three possible scenarios for volume activation of Windows 10 or Windo
 -   Host KMS on a computer running Windows Server 2012 R2
 -   Host KMS on a computer running an earlier version of Windows
 
+Check out [Windows 10 Volume Activation Tips](https://blogs.technet.microsoft.com/askcore/2015/09/15/windows-10-volume-activation-tips/).
+
 ## Key Management Service in Windows 10
 
 Installing a KMS host key on a computer running Windows 10 allows you to activate other computers running Windows 10 against this KMS host and earlier versions of the client operating system, such as Windows 8.1 or Windows 7.
