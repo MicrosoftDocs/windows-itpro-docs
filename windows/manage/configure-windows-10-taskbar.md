@@ -11,7 +11,7 @@ author: jdeckerMS
 
 Starting in Windows 10, version 1607, administrators can pin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
 
-> **Note:** Only the layout of the taskbar can currently be configured by the layout modification XML file.
+> **Note:** The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
 
 You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](http://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path (the local path to the application). 
 
@@ -31,11 +31,23 @@ The following example shows how apps will be pinned: Windows default apps to the
 To configure the taskbar:
 1. Create the XML file.
    * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from the following sample to the file.
-   * If you are only configuring the taskbar, use the following sample to create LayoutModification.xml.
-2. Edit and save the XML file. You can use [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867), Desktop Application ID, or Desktop Application Link Path to identify the apps to pin to the taskbar.
+   * If you are only configuring the taskbar, use the following sample to create a layout modification XML file.
+2. Edit and save the XML file. You can use [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path to identify the apps to pin to the taskbar.
    * Use `<taskbar:UWA>` and [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
    * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications. 
-3. Apply LayoutModification.xml to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
+3. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
+
+### Tips for finding AUMID and Desktop Application Link Path
+
+In the layout modification XML file, you will need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path. 
+
+The easiest way to find this data for an application is to:
+1.	Pin the application to the Start menu
+2. 	Open Windows PowerShell and run the `Export-StartLayout` cmdlet. 
+3.	Open the generated XML file. 
+4.	Look for an entry corresponding to the app you pinned .
+5.	Look for a property labeled `AppUserModelID` or `DesktopApplicationLinkPath`. 
+
 
 ### Sample taskbar configuration XML
 
@@ -132,7 +144,7 @@ If you only want to remove some of the default pinned apps, you would use this m
   <CustomTaskbarLayoutCollection PinListPlacement="Replace">
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
-        <taskbar:UWA AppUserModelID="Microsoft.InternetExplorer.Default" />
+        <taskbar:DesktopApp DesktopApplicationLinkPath=”%APPDATA%Microsoft\Windows\Start Menu\Programs\Accessories\Internet Explorer.lnk”/>
         <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk" />
         <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
       </taskbar:TaskbarPinList>
@@ -182,7 +194,7 @@ The following example shows you how to configure taskbars by country or region. 
 </LayoutModificationTemplate>
 ```
 
-When the preceding example XML is applied, the resulting tasbkar for computers in the US or UK:
+When the preceding example XML is applied, the resulting taskbar for computers in the US or UK:
 
 ![taskbar for US and UK locale](images/taskbar-region-usuk.png)
 
@@ -190,7 +202,7 @@ The resulting taskbar for computers in Germany or France:
 
 ![taskbar for DE and FR locale](images/taskbar-region-defr.png)
 
-The resulting tasbkar for computers in any other country region:
+The resulting taskbar for computers in any other country region:
 
 ![taskbar for all other regions](images/taskbar-region-other.png)
 
