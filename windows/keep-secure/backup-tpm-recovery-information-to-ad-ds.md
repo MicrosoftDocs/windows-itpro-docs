@@ -2,90 +2,128 @@
 title: Backup the TPM recovery Information to AD DS (Windows 10)
 description: This topic for the IT professional describes how to back up a computer’s Trusted Platform Module (TPM) information to Active Directory Domain Services (AD DS) so that you can use AD DS to administer the TPM from a remote computer.
 ms.assetid: 62bcec80-96a1-464e-8b3f-d177a7565ac5
-ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
+
 # Backup the TPM recovery Information to AD DS
+
 **Applies to**
 -   Windows 10
+
 This topic for the IT professional describes how to back up a computer’s Trusted Platform Module (TPM) information to Active Directory Domain Services (AD DS) so that you can use AD DS to administer the TPM from a remote computer.
+
 ## About administering TPM remotely
+
 Backing up the TPM owner information for a computer allows administrators in a domain to remotely configure the TPM security hardware on the local computer. For example, administrators might want to reset the TPM to the manufacturer’s defaults when they decommission or repurpose computers, without having to be present at the computer.
+
 You can use AD DS to store TPM owner information for use in recovery situations where the TPM owner has forgotten the password or where you must take control of the TPM. There is only one TPM owner password per computer; therefore, the hash of the TPM owner password can be stored as an attribute of the computer object in AD DS. The attribute has the common name (CN) of **ms-TPM-OwnerInformation**.
-**Note**  
-The TPM owner authorization value is stored in AD DS, and it is present in a TPM owner password file as a SHA-1 hash of the TPM owner password, which is base 64–encoded. The actual owner password is not stored.
+
+> **Note:**  The TPM owner authorization value is stored in AD DS, and it is present in a TPM owner password file as a SHA-1 hash of the TPM owner password, which is base 64–encoded. The actual owner password is not stored.
  
 Domain controllers running Windows Server 2012 R2 or Windows Server 2012 include the required AD DS schema objects by default. However, if your domain controller is running Windows Server 2008 R2, you need to update the schema as described in [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md).
+
 This topic contains procedures, some of which are dependent on Visual Basic scripts, to recover TPM information and decommission TPM on remote computers. Sample scripts are available, which you can customize to meet the requirements of your environment.
+
 In this topic:
+
 1.  [Check status of prerequisites](#bkmk-prereqs)
 2.  [Set permissions to back up password information](#bkmk-setperms)
 3.  [Configure Group Policy to back up TPM recovery information in AD DS](#bkmk-configuregp)
 4.  [Use AD DS to recover TPM information](#bkmk-useit)
 5.  [Sample scripts](#bkmk-adds-tpm-scripts)
+
 ## <a href="" id="bkmk-prereqs"></a>Check status of prerequisites
+
 Before you begin your backup, ensure that the following prerequisites are met:
+
 1.  All domain controllers that are accessible by client computers that will be using TPM services are running Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 with the updated schema.
-    **Tip**  
-    For more info about the schema extensions that are required for a TPM backup in Active Directory domains that are running Windows Server 2008 R2, see [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md).
+    
+    > **Tip:**  For more info about the schema extensions that are required for a TPM backup in Active Directory domains that are running Windows Server 2008 R2, see [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md).
      
 2.  You have domain administrator rights in the target forest, or you are using an account that has been granted appropriate permissions to extend the schema for the target forest. Members of the Enterprise Admins or Schema Admins groups are examples of accounts that have the appropriate permissions.
+
 ## <a href="" id="bkmk-setperms"></a>Set permissions to back up password information
+
 This procedure uses the sample script [Add-TPMSelfWriteACE.vbs](#bkmk-add-tpmselfwriteace) to add an access control entry (ACE) so that backing up TPM recovery information is possible. A client computer cannot back up TPM owner information until this ACE is added.
+
 This script is run on the domain controller that you will use to administer the TPM recovery information, and it operates under the following assumptions:
+
 -   You have domain administrator credentials to set permissions for the top-level domain object.
 -   Your target domain is the same as the domain for the user account that is running the script. For example, running the script as TESTDOMAIN\\admin will extend permissions for TESTDOMAIN.
-    **Note**  
-    You might need to modify the sample script if you want to set permissions for multiple domains, but you do not have domain administrator accounts for each of those domains. Find the variable **strPathToDomain** in the script, and modify it for your target domain, for example:
+
+    > **Note:**  You might need to modify the sample script if you want to set permissions for multiple domains, but you do not have domain administrator accounts for each of those domains. Find the variable **strPathToDomain** in the script, and modify it for your target domain, for example:
     `LDAP://DC=testdomain,DC=nttest,DC=microsoft,DC=com`
      
 -   Your domain is configured so that permissions are inherited from the top-level domain object to targeted computer objects.
-    Permissions will not take effect if any container in the hierarchy does not allow inherited permissions. By default, permissions inheritance is set in AD DS. If you are not sure whether your configuration differs from this default, you can continue with the setup steps to set the permissions. You can then verify your configuration as described later in this topic. Or you can click the **Effective Permissions** button while viewing the properties of a computer object, then check that **Self** is approved to write the **msTPM-OwnerInformation** attribute.
+
+    Permissions will not take effect if any container in the hierarchy does not allow inherited permissions. By default, permissions inheritance is set in AD DS. If you are not sure whether your configuration differs from this default, you can continue with the setup steps to set the permissions. 
+    You can then verify your configuration as described later in this topic. Or you can click the **Effective Permissions** button while viewing the properties of a computer object, then check that **Self** is approved to write the **msTPM-OwnerInformation** attribute.
+
 **To add an ACE to allow TPM recovery information backup**
+
 1.  Open the sample script **Add-TPMSelfWriteACE.vbs**.
+
     The script contains a permission extension, and you must modify the value of **strPathToDomain** by using your domain name.
+
 2.  Save your modifications to the script.
 3.  Type the following at a command prompt, and then press ENTER:
+
     **cscript Add-TPMSelfWriteACE.vbs**
+
 This script adds a single ACE to the top-level domain object. The ACE is an inheritable permission that allows the computer (SELF) to write to the **ms-TPM-OwnerInformation** attribute for computer objects in the domain.
 Complete the following procedure to check that the correct permissions are set and to remove TPM and BitLocker ACEs from the top-level domain, if necessary.
+
 **Manage ACEs configured on TPM schema objects**
+
 1.  Open the sample script **List-ACEs.vbs**.
 2.  Modify **List-ACEs.vbs**.
+
     You must modify:
     -   Value of **strPathToDomain**: Use your domain name.
     -   Filter options: The script sets a filter to address BitLocker and TPM schema objects, so you must modify **If IsFilterActive ()** if you want to list or remove other schema objects.
+
 3.  Save your modifications to the script.
 4.  Type the following at a command prompt, and then press ENTER:
+
     **cscript List-ACEs.vbs**
+
     With this script you can optionally remove ACEs from BitLocker and TPM schema objects on the top-level domain.
+
 ## <a href="" id="bkmk-configuregp"></a>Configure Group Policy to back up TPM recovery information in AD DS
+
 Use these procedures to configure the [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md#bkmk-tpmgp-addsbu) policy setting on a local computer. In a production environment, an efficient way to do this is to create or edit a Group Policy Object (GPO) that can target client computers in the domain.
+
 **To enable local policy setting to back up TPM recovery information to AD DS**
+
 1.  Sign in to a domain-joined computer by using a domain account that is a member of the local Administrators group.
 2.  Open the Local Group Policy Editor (gpedit.msc), and in the console tree, navigate to **Computer Configuration\\Administrative Templates\\System**.
 3.  Click **Trusted Platform Module Services**.
 4.  Double-click **Turn on TPM backup to Active Directory Domain Services**.
 5.  Click **Enabled**, and then click **OK**.
-**Important**  
-When this setting is enabled, the TPM owner password cannot be set or changed unless the computer is connected to the domain and AD DS backup of the TPM recovery information succeeds.
+> **Important:**  When this setting is enabled, the TPM owner password cannot be set or changed unless the computer is connected to the domain and AD DS backup of the TPM recovery information succeeds.
  
 ## <a href="" id="bkmk-useit"></a>Use AD DS to recover TPM information
+
 When you need to recover the TPM owner information from AD DS and use it to manage the TPM, you need to read the **ms-TPM-OwnerInformation** object from AD DS, and then manually create a TPM owner password backup file that can be supplied when TPM owner credentials are required.
+
 **To obtain TPM owner backup information from AD DS and create a password file**
+
 1.  Sign in to a domain controller by using domain administrator credentials.
 2.  Copy the sample script file, [Get-TPMOwnerInfo.vbs](#ms-tpm-ownerinformation), to a location on your computer.
 3.  Open a Command Prompt window, and change the default location to the location of the sample script files you saved in the previous step.
 4.  At the command prompt, type **cscript Get-TPMOwnerInfo.vbs**.
+
     The expected output is a string that is the hash of the password that you created earlier.
-    **Note**  
-    If you receive the error message, "Active Directory: The directory property cannot be found in the cache," verify that you are using a domain administrator account, which is required to read the **ms-TPM-OwnerInformation** attribute.
+    > **Note:**  If you receive the error message, "Active Directory: The directory property cannot be found in the cache," verify that you are using a domain administrator account, which is required to read the **ms-TPM-OwnerInformation** attribute.
+    
     The only exception to this requirement is that if users are the Creator Owner of computer objects that they join to the domain, they can possibly read the TPM owner information for their computer objects.
      
 5.  Open Notepad or another text editor, and copy the following code sample into the file, and replace *TpmOwnerPasswordHash* with the string that you recorded in the previous step.
+    
     ``` syntax
     <?xml version="1.0" encoding="UTF-8"?>
     <!--
@@ -101,13 +139,19 @@ When you need to recover the TPM owner information from AD DS and use it to man
     </tpmOwnerData>
     ```
 6.  Save this file with a .tpm extension on a removable storage device, such as a USB flash drive. When you access the TPM, and you are required to provide the TPM owner password, choose the option for reading the password from a file and provide the path to this file.
+
 ## <a href="" id="bkmk-adds-tpm-scripts"></a>Sample scripts
+
 You can use all or portions of the following sample scripts, which are used in the preceding procedures, to configure AD DS for backing up TPM recovery information. Customization is required depending on how your environment is configured.
+
 -   [Add-TPMSelfWriteACE.vbs: Use to add the access control entry (ACE) for the TPM to AD DS](#bkmk-add-tpmselfwriteace)
 -   [List-ACEs.vbs: Use to list or remove the ACEs that are configured on BitLocker and TPM schema objects](#bkmk-list-aces)
 -   [Get-TPMOwnerInfo.vbs: Use to retrieve the TPM recovery information from AD DS for a particular computer](#bkmk-get-tpmownerinfo)
+
 ### <a href="" id="bkmk-add-tpmselfwriteace"></a>Add-TPMSelfWriteACE.vbs
+
 This script adds the access control entry (ACE) for the TPM to AD DS so that the computer can back up TPM recovery information in AD DS.
+
 ``` syntax
 '===============================================================================
 '
@@ -203,8 +247,11 @@ objDomain.Put "ntSecurityDescriptor", Array(objDescriptor)
 objDomain.SetInfo
 WScript.Echo "SUCCESS!"
 ```
+
 ### <a href="" id="bkmk-list-aces"></a>List-ACEs.vbs
+
 This script lists or removes the ACEs that are configured on BitLocker and TPM schema objects for the top-level domain. This enables you to verify that the expected ACEs have been added appropriately or to remove any ACEs that are related to BitLocker or the TPM, if necessary.
+
 ``` syntax
 '===============================================================================
 '
@@ -379,8 +426,11 @@ else
  end if
 end if
 ```
+
 ### <a href="" id="bkmk-get-tpmownerinfo"></a>Get-TPMOwnerInfo.vbs
+
 This script retrieves TPM recovery information from AD DS for a particular computer so that you can verify that only domain administrators (or delegated roles) can read backed up TPM recovery information and verify that the information is being backed up correctly.
+
 ``` syntax
 '=================================================================================
 '
@@ -499,12 +549,12 @@ Set objComputer = objDSO.OpenDSObject(strPath, vbNullString, vbNullString, _
 strOwnerInformation = objComputer.Get("msTPM-OwnerInformation")
 WScript.echo "msTPM-OwnerInformation: " + strOwnerInformation
 ```
+
 ## Additional resources
-[Trusted Platform Module technology overview](trusted-platform-module-overview.md)
-[TPM fundamentals](tpm-fundamentals.md)
-[TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md)
-[TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
-[AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md)
-[Prepare your organization for BitLocker: Planning and Policies](http://technet.microsoft.com/library/jj592683.aspx), see TPM considerations
- 
- 
+
+- [Trusted Platform Module technology overview](trusted-platform-module-overview.md)
+- [TPM fundamentals](tpm-fundamentals.md)
+- [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md)
+- [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
+- [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md)
+- [Prepare your organization for BitLocker: Planning and Policies](http://technet.microsoft.com/library/jj592683.aspx), see TPM considerations
