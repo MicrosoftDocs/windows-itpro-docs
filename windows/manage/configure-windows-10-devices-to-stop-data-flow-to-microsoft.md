@@ -285,8 +285,7 @@ When you enable the **Don't search the web or display web results in Search** Gr
 
     -   For **Remote port**, choose **All ports**.
 
-**Note**  
-If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
+> **Note:**  If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
 ### <a href="" id="bkmk-cortana-mdm"></a>1.2 Cortana MDM policies
 
@@ -321,8 +320,7 @@ Starting with Windows 10, fonts that are included in Windows but that are not st
 
 To turn off font streaming, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
-**Note**  
-This may change in future versions of Windows.
+> **Note:**  This may change in future versions of Windows.
 
 ### <a href="" id="bkmk-previewbuilds"></a>5. Insider Preview builds
 
@@ -408,8 +406,7 @@ Use either Group Policy or MDM policies to manage settings for Microsoft Edge. F
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
 
-**Note**  
-The Microsoft Edge Group Policy names were changed in Windows 10, version 1511. The table below reflects those changes.
+> **Note:**  The Microsoft Edge Group Policy names were changed in Windows 10, version 1511. The table below reflects those changes.
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -447,13 +444,11 @@ You can turn off NCSI through Group Policy:
 
 -   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
 
+> **Note**  After you apply this policy, you must restart the device for the policy setting to take effect.
+
 ### <a href="" id="bkmk-offlinemaps"></a>11. Offline maps
 
 You can turn off the ability to download and update offline maps.
-
--   In the UI: **Settings** &gt; **System** &gt; **Offline maps** &gt; **Automatically update maps**
-
-    -or-
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
 
@@ -615,10 +610,7 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 To turn off **Let apps use my advertising ID for experiences across apps (turning this off will reset your ID)**:
 
-**Note**  
-When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
-
- 
+> **Note:** When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
 
 -   Turn off the feature in the UI.
 
@@ -658,8 +650,7 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Window
 
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
-**Note**  
-If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
+> **Note: **  If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
 
  
 
@@ -791,8 +782,7 @@ To turn off **Choose apps that can use your microphone**:
 
 In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better understand your employee's voice and written input by sampling their voice and writing, and by comparing verbal and written input to contact names and calendar entrees.
 
-**Note**  
-For more info on how to disable Cortana in your enterprise, see [Cortana](#bkmk-cortana) in this article.
+> **Note:**  For more info on how to disable Cortana in your enterprise, see [Cortana](#bkmk-cortana) in this article.
 
  
 
@@ -985,8 +975,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
 -   To change from **Enhanced**, use the drop-down list in the UI. The other levels are **Basic** and **Full**.
 
-    **Note**  
-    You can't use the UI to change the telemetry level to **Security**.
+    > **Note:**  You can't use the UI to change the telemetry level to **Security**.
 
      
 
@@ -1105,6 +1094,10 @@ You can opt of the Microsoft Antimalware Protection Service.
     -or-
 
 -   Use the registry to set the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Spynet\\SpyNetReporting** to 0 (zero).
+    
+    -and-
+    
+    From an elevated Windows PowerShell prompt, run **set-mppreference -Mapsreporting 0** 
 
 You can stop sending file samples back to Microsoft.
 

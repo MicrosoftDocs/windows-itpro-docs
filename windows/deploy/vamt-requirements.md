@@ -5,13 +5,16 @@ ms.assetid: d14d152b-ab8a-43cb-a8fd-2279364007b9
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: activation
 author: jdeckerMS
 ---
 
 # VAMT Requirements
+
 This topic includes info about the product key and system requirements for VAMT.
 
 ## Product Key Requirements
+
 The Volume Activation Management Tool (VAMT) can be used to perform activations using any of the following types of product keys.
 
 |Product key type |Where to obtain |
@@ -20,6 +23,7 @@ The Volume Activation Management Tool (VAMT) can be used to perform activations 
 |Retail product keys |Obtained at time of product purchase. |
 
 ## System Requirements
+
 The following table lists the system requirements for the VAMT host computer.
 
 |Item |Minimum system requirement |
@@ -31,7 +35,8 @@ The following table lists the system requirements for the VAMT host computer.
 |Display |1024x768 or higher resolution monitor |
 |Network |Connectivity to remote computers via Windows® Management Instrumentation (TCP/IP) and Microsoft® Activation Web Service on the Internet via HTTPS |
 |Operating System |Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2, or Windows Server 2012. |
-|Additional Requirements |<ul><li>Connection to a SQL Server database. For more info, see [Install VAMT](install-vamt.md).</li><li>PowerShell 3.0: For Windows 8, Windows 8.1, Windows 10, and Windows Server® 2012, PowerShell is included in the installation. For previous versions of Windows and Windows Server, you must download PowerShell 3.0. To download PowerShell, go to [Download Windows PowerShell 3.0](http://go.microsoft.com/fwlink/p/?LinkId=218356).</li><li>If installing on Windows Server 2008 R2, you must also install .NET Framework 3.51.</li></ul> |
+|Additional Requirements |<ul><li>Connection to a SQL Server database. For more info, see [Install VAMT](install-vamt.md).</li><li>PowerShell 3.0: For Windows 8, Windows 8.1, Windows 10, and Windows Server® 2012, PowerShell is included in the installation. For previous versions of Windows and 
+Windows Server, you must download PowerShell 3.0. To download PowerShell, go to [Download Windows PowerShell 3.0](http://go.microsoft.com/fwlink/p/?LinkId=218356).</li><li>If installing on Windows Server 2008 R2, you must also install .NET Framework 3.51.</li></ul> |
 
 ## Related topics
 - [Install and Configure VAMT](install-configure-vamt.md)

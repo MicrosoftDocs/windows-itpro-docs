@@ -49,8 +49,7 @@ This school configuration has the following characteristics:
 - You install the Windows Assessment and Deployment Kit (Windows ADK) on the admin device.
 - You install the Windows Assessment and Deployment Kit (Windows ADK) on the admin device.
 - You install the 64-bit version of the Microsoft Deployment Toolkit (MDT) 2013 Update 2 on the admin device.
-
-  **Note**&nbsp;&nbsp;In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
+>**Note:**&nbsp;&nbsp;In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
 - The devices use Azure AD in Office 365 Education for identity management.
 - If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](http://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).</li>
 - Use [Intune](http://technet.microsoft.com/library/jj676587.aspx), [compliance settings in Office 365](https://support.office.com/en-us/article/Manage-mobile-devices-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd?ui=en-US&rs=en-US&ad=US), or [Group Policy](http://technet.microsoft.com/en-us/library/cc725828%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396) in AD DS to manage devices.
@@ -140,7 +139,7 @@ Next, install MDT. MDT uses the Windows ADK to help you manage and perform Windo
 
 You can use MDT to deploy 32-bit or 64-bit versions of Windows 10. Install the 64-bit version of MDT to support deployment of 32-bit and 64-bit operating systems.
 
-**Note**&nbsp;&nbsp;If you install the 32-bit version of MDT, you can install only 32-bit versions of Windows 10. Ensure that you download and install the 64-bit version of MDT so that you can install 64-bit and 32 bit versions of the operating system.
+>**Note:**&nbsp;&nbsp;If you install the 32-bit version of MDT, you can install only 32-bit versions of Windows 10. Ensure that you download and install the 64-bit version of MDT so that you can install 64-bit and 32 bit versions of the operating system.
 
 For more information about installing MDT on the admin device, see [Installing a New Instance of MDT](https://technet.microsoft.com/en-us/library/dn759415.aspx#InstallingaNewInstanceofMDT).
 
@@ -225,13 +224,13 @@ You will use the Office 365 Education license plan information you record in Tab
 
 To create a new Office 365 Education subscription for use in the classroom, use your educational institution’s email account. There are no costs to you or to students for signing up for Office 365 Education subscriptions.
 
-**Note**&nbsp;&nbsp;If you already have an Office 365 Education subscription, you can use that subscription and continue to the next section, [Add domains and subdomains](#add-domains-and-subdomains).
+>**Note:**&nbsp;&nbsp;If you already have an Office 365 Education subscription, you can use that subscription and continue to the next section, [Add domains and subdomains](#add-domains-and-subdomains).
 
 #### To create a new Office 365 subscription
 
 1. In Microsoft Edge or Internet Explorer, type `https://portal.office.com/start?sku=faculty` in the address bar.
    
-   **Note**&nbsp;&nbsp;If you have already used your current sign-in account to create a new Office 365 subscription, you will be prompted to sign in. If you want to create a new Office 365 subscription, start an In-Private Window in one of the following:
+   >**Note**&nbsp;&nbsp;If you have already used your current sign-in account to create a new Office 365 subscription, you will be prompted to sign in. If you want to create a new Office 365 subscription, start an In-Private Window in one of the following:<br/>
   - Microsoft Edge by opening the Microsoft Edge app, either pressing Ctrl+Shift+P or clicking or tapping **More actions**, and then clicking or tapping **New InPrivate window**.
   - Internet Explorer 11 by opening Internet Explorer 11, either pressing Ctrl+Shift+P or clicking or tapping **Settings**, clicking or tapping **Safety**, and then clicking or tapping **InPrivate Browsing**.
   
@@ -256,7 +255,7 @@ Now that you have created your new Office 365 Education subscription, add the do
 
 To make it easier for faculty and students to join your Office 365 Education subscription (or *tenant*), allow them to automatically sign up to your tenant (*automatic tenant join*). In automatic tenant join, when a faculty member or student signs up for Office 365, Office 365 automatically adds (joins) the user to your Office 365 tenant.
 
-**Note**&nbsp;&nbsp;By default, automatic tenant join is enabled in Office 365 Education, with the exception of certain areas in Europe, the Middle East, and Africa. These countries require opt-in steps to add new users to existing Office 365 tenants. Check your country requirements to determine the automatic tenant join default configuration. Also, if you use Azure AD Connect, then automatic tenant join is disabled.
+>**Note:**&nbsp;&nbsp;By default, automatic tenant join is enabled in Office 365 Education, with the exception of certain areas in Europe, the Middle East, and Africa. These countries require opt-in steps to add new users to existing Office 365 tenants. Check your country requirements to determine the automatic tenant join default configuration. Also, if you use Azure AD Connect, then automatic tenant join is disabled.
 
 Office 365 uses the domain portion of the user’s email address to know which Office 365 tenant to join. For example, if a faculty member or student provides an email address of user@contoso.edu, then Office 365 automatically performs one of the following tasks:
 
@@ -265,7 +264,7 @@ Office 365 uses the domain portion of the user’s email address to know which O
 
 You will always want faculty and students to join the Office 365 tenant that you created. Ensure that you perform the steps in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) and [Add domains and subdomains](#add-domains-and-subdomains) sections before allowing other faculty and students to join Office 365.
 
-**Note**&nbsp;&nbsp;You cannot merge multiple tenants, so any faculty or students who create their own tenant will need to abandon their existing tenant and join yours.
+>**Note:**&nbsp;&nbsp;You cannot merge multiple tenants, so any faculty or students who create their own tenant will need to abandon their existing tenant and join yours.
 
 All new Office 365 Education subscriptions have automatic tenant join enabled by default, but you can enable or disable automatic tenant join by using the Windows PowerShell commands in Table 3. For more information about how to run these commands, see [How can I prevent students from joining my existing Office 365 tenant](https://support.office.com/en-us/article/Office-365-Education-Self-Sign-up-Technical-FAQ-7fb1b2f9-94c2-4cbb-b01e-a6eca34261d6?ui=en-US&rs=en-US&ad=US#BKMK_PreventJoins).
 
@@ -277,13 +276,13 @@ All new Office 365 Education subscriptions have automatic tenant join enabled by
 | Enable |`Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`|
 | Disable |`Set-MsolCompanySettings -AllowEmailVerifiedUsers $false`|
 <p>
-**Note**&nbsp;&nbsp;If your institution has AD DS, then disable automatic tenant join. Instead, use Azure AD integration with AD DS to add users to your Office 365 tenant.
+>**Note:**&nbsp;&nbsp;If your institution has AD DS, then disable automatic tenant join. Instead, use Azure AD integration with AD DS to add users to your Office 365 tenant.
 
 ### Disable automatic licensing
 
 To reduce your administrative effort, automatically assign Office 365 Education or Office 365 Education Plus licenses to faculty and students when they sign up (automatic licensing). Automatic licensing also enables Office 365 Education or Office 365 Education Plus features that do not require administrative approval.
 
-**Note**&nbsp;&nbsp;By default, automatic licensing is enabled in Office 365 Education. If you want to use automatic licensing, then skip this section and go to the next section.
+>**Note:**&nbsp;&nbsp;By default, automatic licensing is enabled in Office 365 Education. If you want to use automatic licensing, then skip this section and go to the next section.
 
 Although all new Office 365 Education subscriptions have automatic licensing enabled by default, you can enable or disable it for your Office 365 tenant by using the Windows PowerShell commands in Table 4. For more information about how to run these commands, see [How can I prevent students from joining my existing Office 365 tenant](https://support.office.com/en-us/article/Office-365-Education-Self-Sign-up-Technical-FAQ-7fb1b2f9-94c2-4cbb-b01e-a6eca34261d6?ui=en-US&rs=en-US&ad=US#BKMK_PreventJoins).
 
@@ -336,7 +335,7 @@ Now that you have an Office 365 subscription, you need to determine how you will
 
 In this method, you have an on-premises AD DS domain. As shown in Figure 4, the Azure AD Connector tool automatically synchronizes AD DS with Azure AD. When you add or change any user accounts in AD DS, the Azure AD Connector tool automatically updates Azure AD.
 
-**Note**&nbsp;&nbsp;Azure AD Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [Generic LDAP Connector for FIM 2010 R2 Technical Reference](https://technet.microsoft.com/en-us/library/dn510997.aspx?f=255&MSPPError=-2147217396).
+>**Note:**&nbsp;&nbsp;Azure AD Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [Generic LDAP Connector for FIM 2010 R2 Technical Reference](https://technet.microsoft.com/en-us/library/dn510997.aspx?f=255&MSPPError=-2147217396).
 
 ![fig 4](images/deploy-win-10-school-figure4.png)
 
@@ -365,7 +364,7 @@ In this section, you selected the method for creating user accounts in your Offi
 
 You can integrate your on-premises AD DS domain with Azure AD to provide identity management for your Office 365 tenant. With this integration, you can synchronize the users, security groups, and distribution lists in your AD DS domain with Azure AD with the Azure AD Connect tool. Users will be able to sign in to Office 365 automatically by using their email account and the same password they use to sign in to AD DS.
 
-**Note**&nbsp;&nbsp;If your institution does not have an on-premises AD DS domain, you can skip this section.
+>**Note:**&nbsp;&nbsp;If your institution does not have an on-premises AD DS domain, you can skip this section.
 
 ### Select synchronization model
 
@@ -426,7 +425,7 @@ In this section, you selected your synchronization model, deployed Azure AD Conn
 
 You can bulk-import user and group accounts into your on-premises AD DS domain. Bulk-importing accounts helps reduce the time and effort needed to create users compared to creating the accounts manually in the Office 365 Admin portal. First, you select the appropriate method for bulk-importing user accounts into AD DS. Next, you create the .csv file that contains the user accounts. Finally, you use the selected method to import the .csv file into AD DS.
 
-**Note**&nbsp;&nbsp;If your institution doesn’t have an on-premises AD DS domain, you can skip this section.
+>**Note:**&nbsp;&nbsp;If your institution doesn’t have an on-premises AD DS domain, you can skip this section.
 
 ### Select the bulk import method
 
@@ -456,7 +455,7 @@ After you have selected your user and group account bulk import method, you’re
 
 With the bulk-import source file finished, you’re ready to import the user and group accounts into AD DS. The steps for importing the file are slightly different for each method.
 
-**Note**&nbsp;&nbsp;Bulk-import your group accounts first, and then import your user accounts. Importing in this order allows you to specify group membership when you import your user accounts. 
+>**Note:**&nbsp;&nbsp;Bulk-import your group accounts first, and then import your user accounts. Importing in this order allows you to specify group membership when you import your user accounts. 
 
 For more information about how to import user accounts into AD DS by using:
 
@@ -482,7 +481,7 @@ The bulk-add process assigns the same Office 365 Education license plan to all u
 
 For more information about how to bulk-add users to Office 365, see [Add several users at the same time to Office 365](https://support.office.com/en-us/article/Add-several-users-at-the-same-time-to-Office-365-Admin-Help-1f5767ed-e717-4f24-969c-6ea9d412ca88?ui=en-US&rs=en-US&ad=US).
 
-**Note**&nbsp;&nbsp;If you encountered errors during bulk add, resolve them before you continue the bulk-add process. You can view the log file to see which users caused the errors, and then modify the .csv file to correct the problems. Click **Back** to retry the verification process.
+>**Note:**&nbsp;&nbsp;If you encountered errors during bulk add, resolve them before you continue the bulk-add process. You can view the log file to see which users caused the errors, and then modify the .csv file to correct the problems. Click **Back** to retry the verification process.
 
 The email accounts are assigned temporary passwords upon creation. You must communicate these temporary passwords to your users before they can sign in to Office 365.
 
@@ -490,13 +489,13 @@ The email accounts are assigned temporary passwords upon creation. You must comm
 
 Assign SharePoint Online resource permissions to Office 365 security groups, not individual user accounts. For example, create one security group for faculty members and another for students. Then, you can assign unique SharePoint Online resource permissions to faculty members and a different set of permissions to students. Add or remove users from the security groups to grant or revoke access to SharePoint Online resources.
 
-**Note**&nbsp;&nbsp;If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
+>**Note:**&nbsp;&nbsp;If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
 
 For information about creating security groups, see [Create and manage Office 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
 
 You can add and remove users from security groups at any time.
 
-**Note**&nbsp;&nbsp;Office 365 evaluates group membership when users sign in. If you change group membership for a user, that user may need to sign out, and then sign in again for the change to take effect.
+>**Note:**&nbsp;&nbsp;Office 365 evaluates group membership when users sign in. If you change group membership for a user, that user may need to sign out, and then sign in again for the change to take effect.
 
 ### Create email distribution groups
 
@@ -504,7 +503,7 @@ Microsoft Exchange Online uses an email distribution group as a single email rec
 
 You can create email distribution groups based on job role (such as teachers, administration, or students) or specific interests (such as robotics, drama club, or soccer team). You can create any number of distribution groups, and users can be members of more than one group.
 
-**Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until Office 365 completes the Exchange Online creation process before you can perform the following steps. 
+>**Note:**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until Office 365 completes the Exchange Online creation process before you can perform the following steps. 
 
 For information about how to create security groups, see [Create and manage Office 365 groups in Admin Center Preview](https://support.office.com/en-us/article/Create-and-manage-Office-365-groups-in-Admin-Center-Preview-93df5bd4-74c4-45e8-9625-56db92865a6e?ui=en-US&rs=en-US&ad=US).
 
@@ -542,7 +541,8 @@ To create and configure your Windows Store for Business portal, simply use the a
 #### To create and configure a Windows Store for Business portal
 
 1. In Microsoft Edge or Internet Explorer, type `http://microsoft.com/business-store` in the address bar.
-2. On the **Windows Store for Business** page, click **Sign in with an organizational account**.<p>**Note**&nbsp;&nbsp;If your institution has AD DS, then don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
+2. On the **Windows Store for Business** page, click **Sign in with an organizational account**.
+>**Note:**&nbsp;&nbsp;If your institution has AD DS, then don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
 3. On the Windows Store for Business sign-in page, use the administrative account for the Office 365 subscription you created in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) section to sign in.
 4. On the **Windows Store for Business Services Agreement** page, review the agreement, select the **I accept this agreement and certify that I have the authority to bind my organization to its terms** check box, and then click **Accept**
 5. In the **Welcome to the Windows Store for Business** dialog box, click **OK**.
@@ -565,7 +565,7 @@ After you create the Windows Store for Business portal, configure it by using th
 
 Now that you have created your Windows Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this by using the Inventory page in Windows Store for Business.
 
-**Note**&nbsp;&nbsp;Your educational institution can now use a credit card or purchase order to pay for apps in Windows Store for Business.
+>**Note:**&nbsp;&nbsp;Your educational institution can now use a credit card or purchase order to pay for apps in Windows Store for Business.
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users.
 
@@ -596,11 +596,11 @@ Depending on your school’s requirements, you may need any combination of the f
  - Upgrade institution-owned devices to Windows 10 Education.
  - Deploy new instances of Windows 10 Education so that new devices have a known configuration.
 
-**Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Windows Store for Business. These features are not available in Windows 10 Home.
+>**Note:**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Windows Store for Business. These features are not available in Windows 10 Home.
 
 One other consideration is the mix of processor architectures you will support. If you can, support only 64-bit versions of Windows 10. If you have devices that can run only 32 bit versions of Windows 10, you will need to import both 64-bit and 32-bit versions of the Windows 10 editions listed above.
 
-**Note**&nbsp;&nbsp;On devices that have minimal system resources (such as devices with only 2 GB of memory or 32 GB of storage), use 32-bit versions of Windows 10 because 64-bit versions of Windows 10 place more stress on device system resources.
+>**Note:**&nbsp;&nbsp;On devices that have minimal system resources (such as devices with only 2 GB of memory or 32 GB of storage), use 32-bit versions of Windows 10 because 64-bit versions of Windows 10 place more stress on device system resources.
 
 Finally, as a best practice, minimize the number of operating systems that you deploy and manage. If possible, standardize institution-owned devices on one Windows 10 edition (such as a 64-bit version of Windows 10 Education or Windows 10 Pro). Of course, you cannot standardize personal devices on a specific operating system version or processor architecture.
 
@@ -738,9 +738,7 @@ In addition, you must prepare your environment for sideloading (deploying) Windo
 
 To help reduce the effort needed to deploy Microsoft Office 2016 desktop apps, use the Office Deployment Tool, as described in [Deploy Click-to-Run for Office 365 products by using the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219423.aspx?f=255&MSPPError=-2147217396).<br/><br/>
 
-If you have Intune, you can deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Windows desktop apps, and you can use it for ongoing management of the apps. This is the preferred method for deploying and managing Windows desktop apps.<br/><br/>
-
-**Note**&nbsp;&nbsp;You can also deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.<br/><br/>
+If you have Intune, you can deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Windows desktop apps, and you can use it for ongoing management of the apps. This is the preferred method for deploying and managing Windows desktop apps.<br/><br/>**Note:**&nbsp;&nbsp;You can also deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.<br/><br/>
 
 For more information about how to create an MDT application for Window desktop apps, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).
 
@@ -897,7 +895,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 <tr>
 <td valign="top">Use of Microsoft accounts</td>
 <td>You want faculty and students to use only Azure AD accounts for institution-owned devices. For these devices, do not use Microsoft accounts or associate a Microsoft account with the Azure AD accounts.<br/><br/>
-**Note**&nbsp;&nbsp;Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices.<br/><br/>
+**Note:**&nbsp;&nbsp;Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices.<br/><br/>
 **Group Policy.** Configure the [Accounts: Block Microsoft accounts](https://technet.microsoft.com/en-us/library/jj966262.aspx?f=255&MSPPError=-2147217396) Group Policy setting to use the Users can’t add Microsoft accounts setting option.<br/><br/>
 **Intune.** Enable or disable the camera by using the **Allow Microsoft account**, **Allow adding non-Microsoft accounts manually**, and **Allow settings synchronization for Microsoft accounts** policy settings under the **Accounts and Synchronization** section of a **Windows 10 General Configuration** policy.
 </td>
@@ -1042,7 +1040,7 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 
 Use the Deployment Wizard to deploy Windows 10. The LTI deployment process is almost fully automated: You provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated. 
 
-**Note**&nbsp;&nbsp;To fully automate the LTI deployment process, complete the steps in the “Fully Automated LTI Deployment Scenario” section in the [Microsoft Deployment Toolkit Samples Guide](https://technet.microsoft.com/en-us/library/dn781089.aspx).
+>**Note:**&nbsp;&nbsp;To fully automate the LTI deployment process, complete the steps in the “Fully Automated LTI Deployment Scenario” section in the [Microsoft Deployment Toolkit Samples Guide](https://technet.microsoft.com/en-us/library/dn781089.aspx).
 
 In most instances, deployments occur without incident. Only in rare occasions do deployments experience problems.
 
@@ -1055,7 +1053,7 @@ In most instances, deployments occur without incident. Only in rare occasions do
 
 After you have deployed Windows 10, the devices are almost ready for use. First, you must set up the printers that each classroom will use. Typically, you connect the printers to the same network as the devices in the same classroom. If you don’t have printers in your classrooms, skip this section and proceed to the [Verify deployment](#verify-deployment) section.
 
-**Note**&nbsp;&nbsp;If you’re performing an upgrade instead of a new deployment, the printers remain configured as they were in the previous version of Windows. As a result, you can skip this section and proceed to the [Verify deployment](#verify-deployment) section.
+>**Note:**&nbsp;&nbsp;If you’re performing an upgrade instead of a new deployment, the printers remain configured as they were in the previous version of Windows. As a result, you can skip this section and proceed to the [Verify deployment](#verify-deployment) section.
 
 #### To set up printers
 

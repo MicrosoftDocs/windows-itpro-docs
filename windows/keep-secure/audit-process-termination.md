@@ -5,14 +5,13 @@ ms.assetid: 65d88e53-14aa-48a4-812b-557cebbf9e50
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Audit Process Termination
 
-
 **Applies to**
-
 -   Windows 10
 -   Windows 10 Mobile
 
@@ -28,37 +27,12 @@ Event volume: Varies, depending on how the computer is used
 
 Default: Not configured
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4689</p></td>
-<td align="left"><p>A process has exited.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Event ID | Event message |
+| - | - |
+| 4689 | A process has exited. |
 
 ## Related topics
 
-
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
+- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
  
-
  
-
-
-
-
-
