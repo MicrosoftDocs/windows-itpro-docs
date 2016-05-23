@@ -55,14 +55,16 @@ If your policy allows it, people can add Windows Hello to their Passport. Window
 ## <a href="" id="bmk-remote"></a>Use a phone to sign in to a PC
 
 If your enterprise enables phone sign-in, users can pair a phone running Windows 10 Mobile to a PC running Windows 10 and then use an app on the phone to sign in to the PC using their Microsoft Passport credentials.
-> **Note:**  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+
  
 **Prerequisites:**
 -   The PC must be joined to the Active Directory domain or Azure AD cloud domain.
 -   The PC must have Bluetooth connectivity.
 -   The phone must be joined to the Azure AD cloud domain, or the user must have added a work account to their personal phone.
--   The free **Phone Sign-in** app must be installed on the phone.
+-   The **Phone Sign-in** app must be installed on the phone.
+
 **Pair the PC and phone**
+
 1.  On the PC, go to **Settings** &gt; **Devices** &gt; **Bluetooth**. Tap the name of the phone and then tap **Pair** to begin pairing.
 
     ![bluetooth pairing](images/btpair.png)
@@ -72,9 +74,11 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
     ![bluetooth pairing passcode](images/bt-passcode.png)
     
 3.  On the PC, tap **Yes**.
+
 **Sign in to PC using the phone**
+
 1.  Open the **Phone Sign-in** app and tap the name of the PC to sign in to.
-    > **Note: **  The first time that you run the Phone-Sign app, you must add an account.
+    > **Note: **  The first time that you run the **Phone Sign-in** app, you must add an account.
      
 2.  Enter the work PIN that you set up when you joined the phone to the cloud domain or added a work account.
 
