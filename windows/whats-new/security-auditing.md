@@ -2,7 +2,7 @@
 title: What's new in security auditing (Windows 10)
 description: Security auditing is one of the most powerful tools that you can use to maintain the integrity of your system.
 ms.assetid: CB35A02E-5C66-449D-8C90-7B73C636F67B
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
