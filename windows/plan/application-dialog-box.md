@@ -2,8 +2,9 @@
 title: Application Dialog Box (Windows 10)
 description: In Application Compatibility Manager (ACM), the Application dialog box shows information about the selected application.
 ms.assetid: a43e85a6-3cd4-4235-bc4d-01e4d097db7e
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---
