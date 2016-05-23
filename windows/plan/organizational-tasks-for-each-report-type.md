@@ -2,8 +2,9 @@
 title: Organizational Tasks for Each Report Type (Windows 10)
 description: The following table shows which tasks can be performed for each report type.
 ms.assetid: 7463fab1-ba6e-4a9a-9112-0b69a18fe353
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

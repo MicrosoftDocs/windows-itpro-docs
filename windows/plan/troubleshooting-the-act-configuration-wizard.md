@@ -2,8 +2,9 @@
 title: Troubleshooting the ACT Configuration Wizard (Windows 10)
 description: When you start Application Compatibility Manager (ACM) for the first time, the Application Compatibility Toolkit (ACT) Configuration Wizard appears.
 ms.assetid: f4f489c7-50b7-4b07-8b03-79777e1aaefd
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

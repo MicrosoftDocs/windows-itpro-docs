@@ -2,8 +2,9 @@
 title: Managing Your Data-Collection Packages (Windows 10)
 description: This section provides information about using Application Compatibility Manager (ACM) to manage your data-collection packages.
 ms.assetid: 369ae82f-c8ca-42ec-85df-1b760a74e70a
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

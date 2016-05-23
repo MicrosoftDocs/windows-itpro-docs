@@ -2,8 +2,9 @@
 title: Using the SUA Wizard (Windows 10)
 description: The Standard User Analyzer (SUA) Wizard works much like the SUA tool to evaluate User Account Control (UAC) issues. However, the SUA Wizard does not offer detailed analysis, and it cannot disable virtualization or elevate your permissions.
 ms.assetid: 29d07074-3de7-4ace-9a54-678af7255d6c
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

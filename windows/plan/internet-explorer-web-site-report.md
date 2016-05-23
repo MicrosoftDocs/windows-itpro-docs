@@ -2,8 +2,9 @@
 title: Internet Explorer - Web Site Report (Windows 10)
 ms.assetid: f072033d-9d42-47ed-8fb0-dbdc28442910
 description: 
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---
