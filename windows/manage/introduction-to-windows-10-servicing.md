@@ -14,10 +14,9 @@ author: jdeckerMS
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
 -   Windows 10 IoT Core (IoT Core)
 
-This article describes the new servicing options available in Windows 10, Windows 10 Mobile, and IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.
+This article describes the new servicing options available in Windows 10 Wand IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.
 
 **Note**  
 Several of the figures in this article show multiple feature upgrades of Windows being released by Microsoft over time. Be aware that these figures were created with dates that were chosen for illustrative clarity, not for release roadmap accuracy, and should not be used for planning purposes.
@@ -35,8 +34,8 @@ Table 1. Windows 10 servicing options
 
 | Servicing option                  | Availability of new feature upgrades for installation     | Minimum length of servicing lifetime | Key benefits                                                                              | Supported editions                                                                         |
 |-----------------------------------|-----------------------------------------------------------|--------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Current Branch (CB)               | Immediately after first published by Microsoft            | Approximately 4 months               | Makes new features available to users as soon as possible                                 | Home, Pro, Education, Enterprise, Mobile, IoT Core, Windows 10 IoT Core Pro (IoT Core Pro) |
-| Current Branch for Business (CBB) | Approximately 4 months after first published by Microsoft | Approximately 8 months               | Provides additional time to test new feature upgrades before deployment                   | Pro, Education, Enterprise, Mobile Enterprise, IoT Core Pro                                |
+| Current Branch (CB)               | Immediately after first published by Microsoft            | Approximately 4 months               | Makes new features available to users as soon as possible                                 | Home, Pro, Education, Enterprise, IoT Core, Windows 10 IoT Core Pro (IoT Core Pro) |
+| Current Branch for Business (CBB) | Approximately 4 months after first published by Microsoft | Approximately 8 months               | Provides additional time to test new feature upgrades before deployment                   | Pro, Education, Enterprise, IoT Core Pro                                |
 | Long-Term Servicing Branch (LTSB) | Immediately after published by Microsoft                  | 10 Years                             | Enables long-term deployment of selected Windows 10 releases in low-change configurations | Enterprise LTSB                                                                            |
  
 ## Streamlined product development and release cycles
@@ -253,11 +252,11 @@ Table 2. Servicing option summary
 </tr>
 <tr>
 <td><b>Supported editions</b></td>
-<td>Windows 10 Home, Windows 10 Pro, Windows 10 Education, Windows 10 Enterprise, Windows 10 Mobile, 
+<td>Windows 10 Home, Windows 10 Pro, Windows 10 Education, Windows 10 Enterprise,  
 IoT Core, IoT Core Pro</td>
 <td>Windows 10 Pro, 
 Windows 10 Education,
-Windows 10 Enterprise, Windows 10 Mobile Enterprise, 
+Windows 10 Enterprise,  
 IoT Core Pro</td>
 <td>Windows 10 Enterprise LTSB</td>
 </tr>
