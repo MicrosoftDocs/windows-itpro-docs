@@ -106,8 +106,11 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 
 ### Local Group Policies
 
-<table> 
-<thead><tr><th><p>Policy name</p></th><th><p>Value</p></th> 
+> **Important**: It is not recommended to set additional policies on PCs configured with the **Set up School PCs** app.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
+
+<table border="1"> 
+<thead><tr><th colspan="2"><p>Policy path</p></th></tr>
+<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> </thead>
 <tbody>
 <tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong></p></td> 
