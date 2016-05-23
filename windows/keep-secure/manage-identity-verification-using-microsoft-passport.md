@@ -126,6 +126,8 @@ When identity providers such as Active Directory or Azure AD enroll a certificat
 
 [Implement Microsoft Passport in your organization](implement-microsoft-passport-in-your-organization.md)
 
+[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
+
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 
 [Prepare people to use Microsoft Passport](prepare-people-to-use-microsoft-passport.md)
