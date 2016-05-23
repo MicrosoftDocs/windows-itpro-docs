@@ -2,31 +2,21 @@
 title: Windows Installer rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the Windows Installer rule collection.
 ms.assetid: 3fecde5b-88b3-4040-81fa-a2d36d052ec9
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Windows Installer rules in AppLocker
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic describes the file formats and available default rules for the Windows Installer rule collection.
-
 AppLocker defines Windows Installer rules to include only the following file formats:
-
 -   .msi
-
 -   .msp
-
 -   .mst
-
 The purpose of this collection is to allow you to control the installation of files on client computers and servers through Group Policy or the Local Security Policy snap-in. The following table lists the default rules that are available for the Windows Installer rule collection.
-
 <table>
 <colgroup>
 <col width="25%" />
@@ -63,19 +53,8 @@ The purpose of this collection is to allow you to control the installation of fi
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Understanding AppLocker default rules](understanding-applocker-default-rules.md)
-
  
-
  
-
-
-
-
-

@@ -6,7 +6,7 @@ keywords: ["Surface, Surface Pro 3, firmware, update, device, manage, deploy, dr
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: heatherpoulsen
+author: jobotto
 ---
 
 # Manage Surface driver and firmware updates

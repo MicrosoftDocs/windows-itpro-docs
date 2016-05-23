@@ -5,14 +5,13 @@ ms.assetid: 0eaf1c56-672b-4ea9-825a-22dc03eb4041
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Audit Filtering Platform Policy Change
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Filtering Platform Policy Change**, which determines whether the operating system generates audit events for certain IPsec and Windows Filtering Platform actions.
@@ -22,11 +21,8 @@ Windows Filtering Platform (WFP) enables independent software vendors (ISVs) to 
 This security policy setting determines whether the operating system generates audit events for:
 
 -   IPsec services status.
-
 -   Changes to IPsec settings.
-
 -   Status and changes to the Windows Filtering Platform engine and providers.
-
 -   IPsec Policy Agent service activities.
 
 Event volume: Low
@@ -221,19 +217,9 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
 
-
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
+- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
  
-
  
-
-
-
-
-

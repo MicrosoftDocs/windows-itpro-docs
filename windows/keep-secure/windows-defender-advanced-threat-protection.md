@@ -76,7 +76,7 @@ detect sophisticated cyber-attacks, providing:
 
 Topic | Description
 :---|:---
-[Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md) | This overview topic for IT professionals provides information on the minimum requirements to use Windows Defender ATP such as network and data storage configuration, and endpoint hardware ans software requirements, and deployment channels.
+[Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md) | This overview topic for IT professionals provides information on the minimum requirements to use Windows Defender ATP such as network and data storage configuration, and endpoint hardware and software requirements, and deployment channels.
 [Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md) | You'll need to onboard and configure the Windows Defender ATP service and the endpoints in your network before you can use the service. Learn about how you can assign users to the Windows Defender ATP service in Azure Active Directory (AAD) and using a configuration package to configure endpoints.
 [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)| Learn about how Windows Defender ATP collects and handles information and where data is stored.
 [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md) | Understand the main features of the service and how it leverages Microsoft technology to protect enterprise endpoints from sophisticated cyber attacks.
