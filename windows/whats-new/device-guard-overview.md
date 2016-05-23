@@ -4,7 +4,7 @@ description: Device Guard is a combination of enterprise-related hardware and so
 ms.assetid: FFE244EE-5804-4CE8-A2A9-48F49DC3AEF2
 ms.pagetype: security
 keywords: Device Guard
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
