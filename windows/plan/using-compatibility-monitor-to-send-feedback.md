@@ -2,8 +2,9 @@
 title: Using Compatibility Monitor to Send Feedback (Windows 10)
 description: The Microsoft Compatibility Monitor tool is installed as part of the runtime-analysis package.
 ms.assetid: dc59193e-7ff4-4950-8c20-e90c246e469d
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

@@ -2,8 +2,9 @@
 title: ACT Database Migration (Windows 10)
 description: The schema for an ACT database can change when ACT is updated or when a new version of ACT is released.
 ms.assetid: b13369b4-1fb7-4889-b0b8-6d0ab61aac3d
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

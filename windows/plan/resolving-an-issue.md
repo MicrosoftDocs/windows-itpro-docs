@@ -2,8 +2,9 @@
 title: Resolving an Issue (Windows 10)
 description: You can use Application Compatibility Manager (ACM) to flag issues as resolved. Resolving an issue changes the status of the issue from a red x to a green check mark on your report and report detail screens.
 ms.assetid: 96195122-185d-4f6a-8e84-79c3d069e933
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---
