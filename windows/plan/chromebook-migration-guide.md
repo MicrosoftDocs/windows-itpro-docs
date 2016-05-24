@@ -3,7 +3,7 @@ title: Chromebook migration guide (Windows 10)
 description: In this guide you will learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment.
 ms.assetid: 7A1FA48A-C44A-4F59-B895-86D4D77F8BEA
 keywords: migrate, automate, device
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu; devices
