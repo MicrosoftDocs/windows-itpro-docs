@@ -25,7 +25,7 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 > **Note**&nbsp;&nbsp;To use GP updates to deploy the package, you must be on Windows Server 2008 R2 or later. The endpoints must be running Windows 10 Insider Preview Build 14332 or later.
 
-1.  Open the GP configuration package .zip file (*WindowsATPOnboardingPackage_GroupPolicy.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a.  Click **Client onboarding** on the **Navigation pane**.
 
@@ -52,13 +52,13 @@ For additional settings, see the [Additional configuration settings section](add
 
 ## Configure with System Center Configuration Manager
 
-1. Open the SCCM configuration package .zip file (*WindowsATPOnboardingPackage_ConfigurationManager.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. Click **Client onboarding** on the **Navigation pane**.
 
     b. Select **System Center Configuration Manager**, click **Download package**, and save the .zip file.
 
-2.	Copy the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
 
@@ -76,12 +76,12 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
     a.  Click **Client onboarding** on the **Navigation pane**.
 
-    b.  Select **Manually on-board local machine**, click **Download package** and save the .zip file.
+    b.  Select **Local Script**, click **Download package** and save the .zip file.
 
 
 2.  Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
 
-2.  Open an elevated command-line prompt on the endpoint and run the script:
+3.  Open an elevated command-line prompt on the endpoint and run the script:
 
     a.  Click **Start** and type **cmd**.
 
@@ -89,9 +89,9 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-3.  Type the location of the script file. If you copied the file to the desktop, type: *`%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd`*
+4.  Type the location of the script file. If you copied the file to the desktop, type: *`%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd`*
 
-4.  Press the **Enter** key or click **OK**.
+5.  Press the **Enter** key or click **OK**.
 
 See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for details on how you can manually validate that the endpoint is compliant and correctly reports telemetry.
 
