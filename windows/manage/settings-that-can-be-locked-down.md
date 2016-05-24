@@ -429,14 +429,11 @@ You can specify the quick actions as follows:
     <System name="SystemSettings_BatterySaver_LandingPage_OverrideControl" />
     <System name="SystemSettings_QuickAction_QuietHours" />
     <System name="SystemSettings_QuickAction_Camera" />
+    <System name="SystemSettings_Launcher_QuickNote" />
+    <System name="QuickActions_Launcher_AllSettings" />
+    <System name="QuickActions_Launcher_DeviceDiscovery" />
 </Settings> 
 ```
-
-The following quick actions buttons are not conditional and will always be displayed:
-
--   QuickActions\_Launcher\_AllSettings
--   SystemSettings\_Launcher\_QuickNote
--   QuickActions\_Launcher\_DeviceDiscovery
 
 Some quick actions are dependent on related settings pages/page groups. When a dependent page/group is not available, then the corresponding quick action will also be hidden.
 

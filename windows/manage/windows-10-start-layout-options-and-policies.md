@@ -16,7 +16,7 @@ author: jdeckerMS
 
 -   Windows 10
 
-> **Looking for consumer information?** See [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630) and topic-to-be-added-for-taskbars
+> **Looking for consumer information?** See [Customize the Start menu](http://windows.microsoft.com/en-us/windows-10/getstarted-see-whats-on-the-menu) and topic-to-be-added-for-taskbars
 
 Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
 
@@ -127,7 +127,7 @@ There are three categories of apps that might be pinned to a taskbar:
  **Note**  
    The earlier method of using [TaskbarLinks](http://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
    
-The following example shows how apps will be pinned - Windows default apps to the left (blue), apps pinned by the user in the center (orange), and apps that you pin using XML to the right (green).
+The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 
 > **Note**  In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
 

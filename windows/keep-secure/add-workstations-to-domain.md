@@ -5,23 +5,20 @@ ms.assetid: b0c21af4-c928-4344-b1f1-58ef162ad0b3
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Add workstations to domain
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Add workstations to domain** security policy setting.
 
 ## Reference
 
-
 This policy setting determines which users can add a device to a specific domain. For it to take effect, it must be assigned so that it applies to at least one domain controller. A user who is assigned this user right can add up to ten workstations to the domain.
-
 Adding a machine account to the domain allows the device to participate in Active Directory-based networking.
 
 Constant: SeMachineAccountPrivilege
@@ -29,7 +26,6 @@ Constant: SeMachineAccountPrivilege
 ### Possible values
 
 -   User-defined list of accounts
-
 -   Not Defined
 
 ### Best practices
@@ -46,49 +42,16 @@ By default, this setting allows access for Authenticated Users on domain control
 
 The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not Defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not Defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Not Defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>Authenticated Users</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Not Defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Not Defined</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not Defined |
+| Default Domain Controller Policy | Not Defined |
+| Stand-Alone Server Default Settings | Not Defined |
+| Domain Controller Effective Default Settings | Authenticated Users |
+| Member Server Effective Default Settings | Not Defined |
+| Client Computer Effective Default Settings | Not Defined |
 
 ## Policy management
-
 
 Users can also join a computer to a domain if they have the Create Computer Objects permission for an organizational unit (OU) or for the Computers container in the directory. Users who are assigned this permission can add an unlimited number of devices to the domain regardless of whether they have the **Add workstations to domain** user right.
 
@@ -103,23 +66,20 @@ Any change to the user rights assignment for an account becomes effective the ne
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 ## Security considerations
 
-
 This policy has the following security considerations:
 
 ### Vulnerability
 
-The **Add workstations to domain** user right presents a moderate vulnerability. Users with this right could add a device to the domain that is configured in a way that violates organizational security policies. For example, if your organization does not want its users to have administrative privileges on their devices, users could install Windows on their computers and then add the computers to the domain. The user would know the password for the local administrator account, could log on with that account, and then add a personal domain account to the local Administrators group.
+The **Add workstations to domain** user right presents a moderate vulnerability. Users with this right could add a device to the domain that is configured in a way that violates organizational security policies. For example, if your organization does not want its users to have administrative 
+privileges on their devices, users could install Windows on their computers and then add the computers to the domain. The user would know the password for the local administrator account, could log on with that account, and then add a personal domain account to the local Administrators group.
 
 ### Countermeasure
 
@@ -130,15 +90,6 @@ Configure this setting so that only authorized members of the IT team are allowe
 For organizations that have never allowed users to set up their own computers and add them to the domain, this countermeasure has no impact. For those that have allowed some or all users to configure their own devices, this countermeasure forces the organization to establish a formal process for these procedures going forward. It does not affect existing computers unless they are removed from and then added to the domain.
 
 ## Related topics
-
-
-[User Rights Assignment](user-rights-assignment.md)
-
+- [User Rights Assignment](user-rights-assignment.md)
  
-
  
-
-
-
-
-
