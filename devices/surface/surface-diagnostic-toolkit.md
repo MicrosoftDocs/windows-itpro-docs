@@ -409,7 +409,7 @@ Example:
 Surface_Diagnostic_Toolkit_1.0.60.0.exe “include=DualGraphicsTest,FanTest,MuscleWireTest”
 ```
 
-### <a href="" id="logpath--"></a>logpath
+#### logpath
 
 Use this argument to specify the path for the log file.
 
