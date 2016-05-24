@@ -2,8 +2,9 @@
 title: OperatingSystem - Computer Report (Windows 10)
 ms.assetid: ed0a56fc-9f2a-4df0-8cef-3a09d6616de8
 description: 
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

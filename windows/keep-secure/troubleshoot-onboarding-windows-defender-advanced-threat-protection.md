@@ -38,7 +38,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
 **Check the onboarding state in Registry**:
 
-1. Click **Start**, type **Run**, and press **Enter**
+1. Click **Start**, type **Run**, and press **Enter**.
 
 2. From the **Run** dialog box, type **regedit** and press **Enter**.
 

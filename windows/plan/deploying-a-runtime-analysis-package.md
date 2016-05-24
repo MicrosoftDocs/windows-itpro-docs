@@ -2,8 +2,9 @@
 title: Deploying a Runtime-Analysis Package (Windows 10)
 description: When you deploy a runtime-analysis package, you are deploying it to your test environment for compatibility testing.
 ms.assetid: 304bf0be-0e7c-4c5f-baac-bed7f8bef509
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---
