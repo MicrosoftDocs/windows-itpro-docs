@@ -2,8 +2,9 @@
 title: Common Compatibility Issues (Windows 10)
 ms.assetid: f5ad621d-bda2-45b5-ae85-bc92970f602f
 description: 
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

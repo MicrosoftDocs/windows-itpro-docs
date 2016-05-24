@@ -2,8 +2,8 @@
 title: Change history for Plan for Windows 10 deployment (Windows 10)
 description: This topic lists new and updated topics in the Plan for Windows 10 deployment documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 70D9F4F8-F2A4-4FB4-9459-5B2BE7BCAC66
-ms.prod: W10
-ms.mktglfcycl: deploy
+ms.prod: w10
+ms.mktglfcycl: plan
 ms.sitesec: library
 author: TrudyHa
 ---

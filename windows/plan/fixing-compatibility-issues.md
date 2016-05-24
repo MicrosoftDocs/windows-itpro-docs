@@ -2,8 +2,9 @@
 title: Fixing Compatibility Issues (Windows 10)
 description: This section provides step-by-step instructions and describes development tools that you can use to help fix your compatibility issues.
 ms.assetid: 30ba8d14-a41a-41b3-9019-e8658d6974de
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---
