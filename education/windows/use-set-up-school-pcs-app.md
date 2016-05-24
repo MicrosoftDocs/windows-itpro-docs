@@ -25,7 +25,7 @@ Teachers and IT administrators can use the **Set up School PCs** app to quickly 
 The Set up School PCs app helps you set up new computers running Windows 10, version 1607. Some benefits of using this app to set up your students' PCs:
 * A computer set up this way is tailored to provide students with the tools they need for learning while removing apps and features that they don't need. 
     * Places tiles for OneNote, Office 365 web apps, Sway, and Microsoft Classroom on the Start menu
-    * Installs OneDrive for cloud-based documents and places it on the Start menu and task bar 
+    * Installs OneDrive for cloud-based documents and places it on the Start menu and taskbar 
     * Sets Microsoft Edge as the default browser
     * Uninstalls apps not specific to education, such as Solitaire and Sports
     * Turns off Offers and tips
@@ -65,19 +65,39 @@ What you need:
 
 ### Create the setup file in the app
 
+The **Set up School PCs** app guides you through the configuration choices for the student PCs.
 
+1. Open the **Set up School PCs** app and select **Start**.
+
+    ![select start](images/app1.jpg)
+    
+2. Choose **No** to require students to sign in with an account, or choose **Yes** to allow students to use the PC without an account, and then select **Next**.
+
+    ![account required?](images/setup-app-1-access.png)
+
+3. Choose a Wi-Fi network from the list and then select **Next**, or choose **Manually connect to a wireless network** to enter the network information yourself.
+
+    ![choose network](images/setup-app-1-wifi.png)
+
+    - For a manual network connection, enter the network name, security type, and password (if required), and then select **Next**.
+        
+        ![enter network information](images/setup-app-1-wifi-manual.png)
+    
+4. Insert a USB drive, select it in the app, and then select **Save**.
+
+    ![select usb drive](images/setup-app-1-usb.png)
 
 
 
 ### Apply the setup file to PCs
 
-The setup file on your USB drive is named SetupSchoolPCs.ppkg, which is a provisioning package. A provisioning package is a method for applying settings to Windows 10. When Windows 10 refers to "package", it means your setup file, and when it refers to "provisioning", it means applying the setup file to the computer.
+The setup file on your USB drive is named SetupSchoolPCs.ppkg, which is a provisioning package. A provisioning package is a method for applying settings to Windows 10. When Windows 10 refers to *package*, it means your setup file, and when it refers to *provisioning*, it means applying the setup file to the computer.
 
 1. Start with a computer on the first-run setup screen. 
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive. Windows Setup will recognize the drive and ask you if you want to set up the device. Select Set up.
+2. Insert the USB drive. Windows Setup will recognize the drive and ask you if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
