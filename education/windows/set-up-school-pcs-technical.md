@@ -82,7 +82,7 @@ The PC is also configured to not interrupt the user during normal daytime hours 
 
 ## Provisioning package details
 
-The **Set up School PCs** app produces a specialized provisioning package that makes use of the `SharedPC` configuration service provider (CSP). 
+The **Set up School PCs** app produces a specialized provisioning package that makes use of the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294%28v=vs.85%29.aspx). 
 
 ### Education customizations
 
