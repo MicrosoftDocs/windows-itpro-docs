@@ -36,7 +36,7 @@ The full scan will start. When the scan completes, you'll see a message indicati
 The utility also provides other commands that you can run:
 
 ```
-MpCmdRun.exe \[command] [-options]
+MpCmdRun.exe [command] [-options]
 ```
 
 Command | Description 
