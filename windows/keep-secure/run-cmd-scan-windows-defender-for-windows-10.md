@@ -18,16 +18,9 @@ author: mjcaparas
 
 IT professionals can use a command-line utility to run a Windows Defender scan. 
 
-The utility is available in _%Program Files%\Windows Defender\MpCmdRun.exe
+The utility is available in _%Program Files%\Windows Defender\MpCmdRun.exe_
 
 This utility can be handy when you want to automate the use of Windows Defender. 
-
-## Before you start
-
-To complete the procedures in this scenario:
-- You must have administrator credentials
-[CHECK WITH RAM IS THIS IS ACCURATE]
-
 
 **To run a full system scan from the command line**
 
@@ -37,7 +30,7 @@ To complete the procedures in this scenario:
 ```
 C:\Program Files\Windows Defender\mpcmdrun.exe -scan -scantype 2
 ```
-The full scan start. When the scan completes, you'll see a message indicating that the scan is finished. 
+The full scan will start. When the scan completes, you'll see a message indicating that the scan is finished. 
 
 
 The utility also provides other commands that you can run:
