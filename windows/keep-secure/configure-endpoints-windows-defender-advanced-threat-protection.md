@@ -81,7 +81,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
 2.  Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
 
-2.  Open an elevated command-line prompt on the endpoint and run the script:
+3.  Open an elevated command-line prompt on the endpoint and run the script:
 
     a.  Click **Start** and type **cmd**.
 
@@ -89,9 +89,9 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-3.  Type the location of the script file. If you copied the file to the desktop, type: *`%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd`*
+4.  Type the location of the script file. If you copied the file to the desktop, type: *`%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd`*
 
-4.  Press the **Enter** key or click **OK**.
+5.  Press the **Enter** key or click **OK**.
 
 See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for details on how you can manually validate that the endpoint is compliant and correctly reports telemetry.
 
