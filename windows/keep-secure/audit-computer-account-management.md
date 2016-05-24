@@ -2,27 +2,19 @@
 title: Audit Computer Account Management (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit Computer Account Management, which determines whether the operating system generates audit events when a computer account is created, changed, or deleted.
 ms.assetid: 6c406693-57bf-4411-bb6c-ff83ce548991
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Computer Account Management
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the advanced security audit policy setting, **Audit Computer Account Management**, which determines whether the operating system generates audit events when a computer account is created, changed, or deleted.
-
 This policy setting is useful for tracking account-related changes to computers that are members of a domain.
-
 Event volume: Low
-
 Default: Not configured
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -49,19 +41,8 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-

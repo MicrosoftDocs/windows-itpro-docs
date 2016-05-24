@@ -2,51 +2,31 @@
 title: Audit Certification Services (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Certification Services, which determines whether the operating system generates events when Active Directory Certificate Services (AD CS) operations are performed.
 ms.assetid: cdefc34e-fb1f-4eff-b766-17713c5a1b03
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ---
-
 # Audit Certification Services
-
-
 **Applies to**
-
 -   Windows 10
-
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Certification Services**, which determines whether the operating system generates events when Active Directory Certificate Services (AD CS) operations are performed.
-
 Examples of AD CS operations include:
-
 -   AD CS starts, shuts down, is backed up, or is restored.
-
 -   Certificate revocation list (CRL)-related tasks are performed.
-
 -   Certificates are requested, issued, or revoked.
-
 -   Certificate manager settings for AD CS are changed.
-
 -   The configuration and properties of the certification authority (CA) are changed.
-
 -   AD CS templates are modified.
-
 -   Certificates are imported.
-
 -   A CA certificate is published to Active Directory Domain Services.
-
 -   Security permissions for AD CS role services are modified.
-
 -   Keys are archived, imported, or retrieved.
-
 -   The OCSP Responder Service is started or stopped.
-
 Monitoring these operational events is important to ensure that AD CS role services are functioning properly.
-
 Event volume: Low to medium on servers that host AD CS role services
-
 Default: Not configured
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -185,19 +165,8 @@ Default: Not configured
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
  
-
  
-
-
-
-
-
