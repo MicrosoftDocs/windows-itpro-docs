@@ -2,8 +2,9 @@
 title: Surface (Surface)
 description: .
 ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
+ms.pagetype: surface, devices
 ms.sitesec: library
 author: heatherpoulsen
 ---
