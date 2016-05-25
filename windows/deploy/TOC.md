@@ -36,6 +36,8 @@
 ## [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 ## [Upgrade to Windows 10 with System Center Configuration Manager](upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 ## [Windows 10 edition upgrade](windows-10-edition-upgrades.md)
+## [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
+## [Provision PCs with apps and certificates for initial deployments](provision-pcs-with-apps-and-certificates.md)
 ## [Deploy Windows To Go in your organization](deploy-windows-to-go.md)
 ## [Sideload apps in Windows 10](sideload-apps-in-windows-10.md)
 ## [Volume Activation [client]](volume-activation-windows-10.md)
