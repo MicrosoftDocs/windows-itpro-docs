@@ -54,10 +54,3 @@ After you've finished updating and deploying your Group Policy, you can use the 
 
 2.  Open your wizard results in the Group Policy Management Console (GPMC).<p>
 For complete instructions about how to add, open, and use RSoP, see [Use the RSoP Snap-in](http://go.microsoft.com/fwlink/p/?LinkId=395201)
-
- 
-
- 
-
-
-
