@@ -1,4 +1,5 @@
 # [Windows 10 for education](index.md)
+## [Change history for Windows 10 for Education](change-history-edu.md)
 ## [Use the Set up School PCs app](use-set-up-school-pcs-app.md)
 ## [Set up School PCs app technical reference](set-up-school-pcs-technical.md)
 ## [Set up students' PCs to join domain](set-up-students-pcs-to-join-domain.md)
