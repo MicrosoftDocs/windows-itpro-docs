@@ -32,11 +32,11 @@ Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT
 
 * **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
 
-    > [Learn how to use simple provisioning to configure Windows 10 computers.](provision-pcs-for-initial-deployment.md)
+    > [Learn how to use simple provisioning to configure Windows 10 computers.](~/deploy/provision-pcs-for-initial-deployment.md)
 
 * **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
 
-    > [Learn how to use advanced provisioning to configure Windows 10 computers with apps and certificates.](provision-pcs-with apps-and-certificates.md)
+    > [Learn how to use advanced provisioning to configure Windows 10 computers with apps and certificates.](~/deploy/provision-pcs-with apps-and-certificates.md)
 
 * **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
 
