@@ -53,7 +53,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-Mailbox $acctUpn -Type Regular
-    Set-CASMailbox $acctUpn -ActiveSyncMailboxPolicy $easPolicy
+    Set-CASMailbox $acctUpn -ActiveSyncMailboxPolicy $easPolicy.Id
     Set-Mailbox $acctUpn -Type Room
     Set-Mailbox $credNewAccount.UserName -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
     ```
@@ -62,7 +62,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a <tla rid="surface_hub"/> room!"
+    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Connect to Azure AD.
