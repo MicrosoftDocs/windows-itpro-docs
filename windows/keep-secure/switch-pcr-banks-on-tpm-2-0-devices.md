@@ -10,6 +10,7 @@ author: brianlic-msft
 ---
 
 # Switch PCR banks on TPM 2.0 devices
+
 **Applies to**
 -   Windows 10
 
