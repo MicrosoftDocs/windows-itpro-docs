@@ -7,7 +7,7 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-author: jdeckerMS
+author: greg-lindsay
 ---
 
 # Windows 10 servicing options for updates and upgrades
@@ -16,7 +16,7 @@ author: jdeckerMS
 -   Windows 10
 -   Windows 10 IoT Core (IoT Core)
 
-This article describes the new servicing options available in Windows 10 Wand IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.
+This article describes the new servicing options available in Windows 10 and IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.
 
 **Note**  
 Several of the figures in this article show multiple feature upgrades of Windows being released by Microsoft over time. Be aware that these figures were created with dates that were chosen for illustrative clarity, not for release roadmap accuracy, and should not be used for planning purposes.

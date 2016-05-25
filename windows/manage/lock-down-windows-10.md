@@ -67,10 +67,7 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 <td align="left"><p>[Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)</p></td>
 <td align="left"><p>There are two methods for resetting a Windows 10 Mobile device: factory reset and &quot;wipe and persist&quot; reset.</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p>[Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)</p></td>
-<td align="left"><p>New</p></td>
-</tr>
+
 </tbody>
 </table>
 

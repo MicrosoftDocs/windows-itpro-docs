@@ -6,7 +6,7 @@ keywords: update, upgrade, deployment, manage, tools
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.pagetype: servicing; devices
+ms.pagetype: servicing, devices
 author: TrudyHa
 ---
 

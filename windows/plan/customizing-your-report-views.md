@@ -2,8 +2,9 @@
 title: Customizing Your Report Views (Windows 10)
 description: You can customize how you view your report data in Application Compatibility Manager (ACM).
 ms.assetid: ba8da888-6749-43b4-8efb-4f26c7954721
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---
