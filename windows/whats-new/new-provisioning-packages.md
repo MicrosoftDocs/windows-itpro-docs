@@ -18,7 +18,6 @@ author: jdeckerMS
 
 Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows Provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management (through a wizard-driven user interface) and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
 
-
 With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
 Provisioning packages are simple enough that with a short set of written instructions, a student or non-technical employee can use them to configure their device. This can result in a significant reduction in the time required to configure multiple devices in your organization.
@@ -33,9 +32,11 @@ Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT
 
 * **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
 
+    > [Learn how to use simple provisioning to configure Windows 10 computers.](provision-pcs-for-initial-deployment.md)
 
-* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
+* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
 
+    > [Learn how to use advanced provisioning to configure Windows 10 computers with apps and certificates.](provision-pcs-with apps-and-certificates.md)
 
 * **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
 
