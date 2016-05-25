@@ -60,7 +60,8 @@ The PC is also configured to not interrupt the user during normal daytime hours 
 * On a Windows PC joined to Azure Active Directory:
     * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
     * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
-* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. However, any new local accounts created by the **Start without an account** selection on the sign-in screen (if enabled) will automatically be deleted at sign-out. 
+* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. However, any new local accounts created by the **Start without an account** selection on the sign-in screen (if enabled) will automatically be deleted at sign-out.
+* If admin accounts are necessary on the PC
     * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
     * Create admin accounts before setting up shared PC mode, or 
     * Create exempt accounts before signing out.
@@ -78,7 +79,8 @@ The PC is also configured to not interrupt the user during normal daytime hours 
         ``` 
 
 
-
+## Custom images
+Shared PC mode is fully compatible with custom images that may be created by IT departments. Create a custom image and then use sysprep with the /oobe flag to create an image that teachers can use the **Set up School PCs** app to finish provisioning themselves. [More information about sysprep](https://technet.microsoft.com/en-us/library/cc721940(v=ws.10).aspx).
 
 ## Provisioning package details
 
@@ -86,8 +88,16 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 
 ### Education customizations
 
-- Saving content locally to the PC is disabled. This prevents data loss by forcing students to save tothe cloud.
-- A custom Start layout and sign in background image are set. 
+- Saving content locally to the PC is disabled. This prevents data loss by forcing students to save to the cloud.
+- A custom Start layout and sign in background image are set.
+- Prohibits Microsoft Accounts (MSAs) from being created
+- Prohibits unlocking the PC to developer mode
+- Prohibits untrusted Windows Store apps from being installed
+- Prohibits users removing MDM
+- Prohibits users from adding new provisioning packages
+- Prohibits users from removing existing provisioning packages (including the one set by **Set up School PCs**
+- Sets Active hours from 6am to 6pm
+- Sets Windows Update to update nightly
 
 
 ### Uninstalled apps 
@@ -137,17 +147,17 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr><td><p>Require a password when a computer wakes (on battery)</p></td><td><p>Enabled</p></td>
 </tr>
-<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p><em>SleepTimeout</em></p></td>
+<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p>1 hour</p></td>
 </tr> 
-<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p><em>SleepTimeout</em></p></td>
+<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p>1 hour</p></td>
 </tr> 
 <tr> <td> <p> Turn off hybrid sleep (plugged in) </p> </td> <td> <p> Enabled </p> </td>  
 </tr> 
 <tr> <td> <p> Turn off hybrid sleep (on battery) </p> </td> <td> <p> Enabled </p> </td>  
 </tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> <em>SleepTimeout</em> </p> </td>  
+<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> 1 hour </p> </td>  
 </tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p> <em>SleepTimeout</em> </p> </td> 
+<tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p> 1 hour </p> </td> 
 </tr> 
 <tr> <td> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td> <p> Enabled </p> </td>  
 </tr> 
@@ -158,9 +168,9 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 <tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0 </p> </td> 
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Power Management</strong>  >  <strong>Video and Display Settings</strong> </p> </td> </tr> 
-<tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p> <em>SleepTimeout</em> </p> </td> 
+<tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p> 1 hour </p> </td> 
 </tr>
- <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p> <em>SleepTimeout</em> </p> </td>  
+ <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p> 1 hour </p> </td>  
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Logon</strong> </p> </td> 
 </tr> 
@@ -214,7 +224,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Maintenance Scheduler</strong> </p> </td> 
 </tr> 
-<tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> <em>MaintenanceStartTime</em> </p> </td>  
+<tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> 12am </p> </td>  
 </tr> 
 <tr> <td> <p> Automatic Maintenance Random Delay </p> </td> <td> <p> Enabled, 2 hours </p> </td> 
 </tr> 
