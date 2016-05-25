@@ -80,7 +80,7 @@ The PC is also configured to not interrupt the user during normal daytime hours 
 
 
 ## Custom images
-Shared PC mode is fully compatible with custom images that may be created by IT departments. Create a custom image and then use sysprep with the /oobe flag to create an image that teachers can use the **Set up School PCs** app to finish provisioning themselves. [More information about sysprep](https://technet.microsoft.com/en-us/library/cc721940(v=ws.10).aspx).
+Shared PC mode is fully compatible with custom images that may be created by IT departments. Create a custom image and then use sysprep with the `/oobe` flag to create an image that teachers can then apply the **Set up School PCs** provisioning package to. [Learn more about sysprep](https://technet.microsoft.com/en-us/library/cc721940(v=ws.10).aspx).
 
 ## Provisioning package details
 
@@ -90,14 +90,14 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 
 - Saving content locally to the PC is disabled. This prevents data loss by forcing students to save to the cloud.
 - A custom Start layout and sign in background image are set.
-- Prohibits Microsoft Accounts (MSAs) from being created
-- Prohibits unlocking the PC to developer mode
-- Prohibits untrusted Windows Store apps from being installed
-- Prohibits users removing MDM
-- Prohibits users from adding new provisioning packages
-- Prohibits users from removing existing provisioning packages (including the one set by **Set up School PCs**
-- Sets Active hours from 6am to 6pm
-- Sets Windows Update to update nightly
+- Prohibits Microsoft Accounts (MSAs) from being created.
+- Prohibits unlocking the PC to developer mode.
+- Prohibits untrusted Windows Store apps from being installed.
+- Prohibits students from removing MDM.
+- Prohibits students from adding new provisioning packages.
+- Prohibits student from removing existing provisioning packages (including the one set by **Set up School PCs**).
+- Sets active hours from 6 AM to 6 PM.
+- Sets Windows Update to update nightly.
 
 
 ### Uninstalled apps 
