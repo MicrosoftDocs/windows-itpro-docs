@@ -21,4 +21,6 @@ author: jdeckerMS
 | [Chromebook migration guide](chromebook-migration-guide.md) | Learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment. |
 
 ## Related topics
+
 - [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
+- [Try it out: virtual labs for Windows 10 Education](https://technet.microsoft.com/en-us/windows/dn610356)
