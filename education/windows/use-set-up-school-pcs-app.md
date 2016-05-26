@@ -91,13 +91,13 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
 ### Apply the setup file to PCs
 
-The setup file on your USB drive is named SetupSchoolPCs.ppkg, which is a provisioning package. A provisioning package is a method for applying settings to Windows 10. When Windows 10 refers to *package*, it means your setup file, and when it refers to *provisioning*, it means applying the setup file to the computer.
+The setup file on your USB drive is named `SetupSchoolPCs.ppkg`, which is a provisioning package. A provisioning package is a method for applying settings to Windows 10. When Windows 10 refers to *package*, it means your setup file, and when it refers to *provisioning*, it means applying the setup file to the computer.
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive. Windows Setup will recognize the drive and ask you if you want to set up the device. Select **Set up**.
+2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
