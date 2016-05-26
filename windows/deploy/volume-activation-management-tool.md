@@ -2,7 +2,7 @@
 title: Volume Activation Management Tool (VAMT) Technical Reference (Windows 10)
 description: The Volume Activation Management Tool (VAMT) enables network administrators and other IT professionals to automate and centrally manage the Windows®, Microsoft® Office, and select other Microsoft products volume and retail-activation process.
 ms.assetid: 1df0f795-f41c-473b-850c-e98af1ad2f2a
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

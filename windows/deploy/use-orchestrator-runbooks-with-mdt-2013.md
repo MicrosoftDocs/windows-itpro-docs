@@ -3,7 +3,7 @@ title: Use Orchestrator runbooks with MDT (Windows 10)
 description: This topic will show you how to integrate Microsoft System Center 2012 R2 Orchestrator with MDT to replace the existing web services that are used in deployment solutions.
 ms.assetid: 68302780-1f6f-4a9c-9407-b14371fdce3f
 keywords: web services, database
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mdt

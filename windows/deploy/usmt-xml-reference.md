@@ -2,10 +2,10 @@
 title: USMT XML Reference (Windows 10)
 description: USMT XML Reference
 ms.assetid: fb946975-0fee-4ec0-b3ef-7c34945ee96f
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # USMT XML Reference

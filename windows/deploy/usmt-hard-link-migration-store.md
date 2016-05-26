@@ -2,10 +2,10 @@
 title: Hard-Link Migration Store (Windows 10)
 description: Hard-Link Migration Store
 ms.assetid: b0598418-4607-4952-bfa3-b6e4aaa2c574
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Hard-Link Migration Store
