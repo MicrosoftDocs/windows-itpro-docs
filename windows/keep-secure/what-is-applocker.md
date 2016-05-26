@@ -2,18 +2,24 @@
 title: What Is AppLocker (Windows 10)
 description: This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
 ms.assetid: 44a8a2bb-0f83-4f95-828e-1f364fb65869
-ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
+
 # What Is AppLocker?
+
 **Applies to**
 -   Windows 10
+
 This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
+
 AppLocker advances the app control features and functionality of Software Restriction Policies. AppLocker contains new capabilities and extensions that allow you to create rules to allow or deny apps from running based on unique identities of files and to specify which users or groups can run those apps.
+
 Using AppLocker, you can:
+
 -   Control the following types of apps: executable files (.exe and .com), scripts (.js, .ps1, .vbs, .cmd, and .bat), Windows Installer files (.mst, .msi and .msp), and DLL files (.dll and .ocx), and packaged apps and packaged app installers (appx).
 -   Define rules based on file attributes derived from the digital signature, including the publisher, product name, file name, and file version. For example, you can create rules based on the publisher attribute that is persistent through updates, or you can create rules for a specific version of a file.
 -   Assign a rule to a security group or an individual user.
@@ -21,11 +27,17 @@ Using AppLocker, you can:
 -   Use audit-only mode to deploy the policy and understand its impact before enforcing it.
 -   Import and export rules. The import and export affects the entire policy. For example, if you export a policy, all of the rules from all of the rule collections are exported, including the enforcement settings for the rule collections. If you import a policy, all criteria in the existing policy are overwritten.
 -   Streamline creating and managing AppLocker rules by using Windows PowerShell cmdlets.
+
 AppLocker helps reduce administrative overhead and helps reduce the organization's cost of managing computing resources by decreasing the number of help desk calls that result from users running unapproved apps
+
 For information about the application control scenarios that AppLocker addresses, see [AppLocker policy use scenarios](applocker-policy-use-scenarios.md).
+
 ## What features are different between Software Restriction Policies and AppLocker?
+
 **Feature differences**
+
 The following table compares AppLocker to Software Restriction Policies.
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -99,6 +111,7 @@ The following table compares AppLocker to Software Restriction Policies.
 </table>
  
 **Application control function differences**
+
 The following table compares the application control functions of Software Restriction Policies (SRP) and AppLocker.
 <table>
 <colgroup>
@@ -167,6 +180,7 @@ The following table compares the application control functions of Software Restr
 </table>
  
 ## Related topics
-[AppLocker technical reference](applocker-technical-reference.md)
+
+- [AppLocker technical reference](applocker-technical-reference.md)
  
  
