@@ -138,5 +138,5 @@ That's it! Sign out and the computer is now ready for students.
 
 ## Learn more
 
-See [The Set up School PCs app technical reference](set-up-school-pcs-technical.md) for prerequisites and provisioning details. 
+See [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md) for prerequisites and provisioning details. 
 
