@@ -113,9 +113,9 @@ The setup file on your USB drive is named SetupSchoolPCs.ppkg, which is a provis
 
     ![Do you trust this package?](images/trust-package.png)
     
-6. Read and accept the Microsoft Software License Terms. Your last step is to sign in. Use your Azure AD or Office 365 account and password. 
+6. Read and accept the Microsoft Software License Terms.  
 
-    ![Sign in](images/signinprov.jpg)
+    ![Sign in](images/license-terms.png)
     
 7. Select **Use Express settings**.
 

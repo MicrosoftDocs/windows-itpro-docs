@@ -34,7 +34,7 @@ The following table tells you what you get using the **Set up School PCs** app i
 |   |    |    |   |   |
 \* Feature applies to Windows 10 Pro, Windows 10 Pro for Education, Windows 10 Enterprise, and Windows 10 Enterprise for EDU
 
-> **Note**: If your school uses Active Directory, [use Windows Imaging and Configuration Designer](set-up-students-pcs-to-join-domain.md) to configure your PCs to join the domain. You can only use the **Set up School PCs** app to set up PCs that are not connected to your traditional domain.
+> **Note**: If your school uses Active Directory, use Windows Imaging and Configuration Designer to configure your PCs to join the domain. You can only use the **Set up School PCs** app to set up PCs that are not connected to your traditional domain.
 
 ## Prerequisites for IT
 
