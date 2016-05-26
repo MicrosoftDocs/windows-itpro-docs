@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Technical reference for the Set up School PCs app
+# Technical reference for the Set up School PCs app (Preview)
 **Applies to:**
 
 -   Windows 10 Insider Preview 
