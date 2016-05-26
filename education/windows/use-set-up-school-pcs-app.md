@@ -71,7 +71,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
     ![select start](images/app1.jpg)
     
-2. Choose **No** to require students to sign in with an account, or choose **Yes** to allow students to use the PC without an account, and then select **Next**.
+2. Choose **No** to require students to sign in only with an account, or choose **Yes** to allow students to use the PC without an account too, and then select **Next**.
 
     ![account required?](images/setup-app-1-access.png)
 
@@ -93,7 +93,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
 The setup file on your USB drive is named SetupSchoolPCs.ppkg, which is a provisioning package. A provisioning package is a method for applying settings to Windows 10. When Windows 10 refers to *package*, it means your setup file, and when it refers to *provisioning*, it means applying the setup file to the computer.
 
-1. Start with a computer on the first-run setup screen. 
+1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
@@ -134,7 +134,7 @@ The setup file on your USB drive is named SetupSchoolPCs.ppkg, which is a provis
     ![Sign in](images/sign-in-prov.png)
 
     
-That's it! The computer is now ready for students.
+That's it! Sign out and the computer is now ready for students.
 
 ## Learn more
 
