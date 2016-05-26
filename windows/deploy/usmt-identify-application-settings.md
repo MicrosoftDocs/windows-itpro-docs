@@ -2,10 +2,10 @@
 title: Identify Applications Settings (Windows 10)
 description: Identify Applications Settings
 ms.assetid: eda68031-9b02-4a5b-a893-3786a6505381
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Identify Applications Settings

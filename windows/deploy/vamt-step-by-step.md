@@ -2,7 +2,7 @@
 title: VAMT Step-by-Step Scenarios (Windows 10)
 description: VAMT Step-by-Step Scenarios
 ms.assetid: 455c542c-4860-4b57-a1f0-7e2d28e11a10
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

@@ -3,7 +3,7 @@ title: Key features in MDT 2013 Update 2 (Windows 10)
 description: The Microsoft Deployment Toolkit (MDT) has been in existence since 2003, when it was first introduced as Business Desktop Deployment (BDD) 1.0.
 ms.assetid: 858e384f-e9db-4a93-9a8b-101a503e4868
 keywords: deploy, feature, tools, upgrade, migrate, provisioning
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mdt
