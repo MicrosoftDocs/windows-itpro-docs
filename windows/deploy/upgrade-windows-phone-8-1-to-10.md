@@ -94,4 +94,4 @@ For more information about how to do this, see the Try it out: restrict Windows 
 
 ## Related topics
 
-[Windows 10 Mobile and mobile device management](windows-10-mobile-and-mdm.md)
+[Windows 10 Mobile and mobile device management](..\manage\windows-10-mobile-and-mdm.md)
