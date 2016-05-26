@@ -239,6 +239,10 @@ You can use System Information to ensure that Credential Guard is running on a P
     -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password.
     -   Applications that extract derived domain credentials from Credential Manager will no longer be able to use those credentials.
     -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
+
+### Kerberos Considerations
+
+When you enable Credential Guard, you can no longer use Kerberos unconstrained delegation. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process. You must use constrained or resource-based Kerberos delegation instead.
     
 ## Scenarios not protected by Credential Guard
 
