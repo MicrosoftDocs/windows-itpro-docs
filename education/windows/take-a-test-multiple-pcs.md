@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Set up Take a Test on multiple PCs
+# Set up Take a Test on multiple PCs (Preview)
 **Applies to:**
 
 -   Windows 10 Insider Preview 
