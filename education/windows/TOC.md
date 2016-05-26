@@ -1,5 +1,7 @@
 # [Windows 10 for education](index.md)
 ## [Change history for Windows 10 for Education](change-history-edu.md)
+## [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md)
+## [Set up School PCs app technical reference (Preview)](set-up-school-pcs-technical.md)
 ## [Take tests in Windows 10 (Preview)](take-tests-in-windows-10.md)
 ### [Set up Take a Test on a single PC (Preview)](take-a-test-single-pc.md)
 ### [Set up Take a Test on multiple PCs (Preview)](take-a-test-multiple-pcs.md)
