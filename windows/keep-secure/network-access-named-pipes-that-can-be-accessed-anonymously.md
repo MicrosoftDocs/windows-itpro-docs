@@ -2,7 +2,7 @@
 title: Network access Named Pipes that can be accessed anonymously (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Network access Named Pipes that can be accessed anonymously security policy setting.
 ms.assetid: 8897d2a4-813e-4d2b-8518-fcee71e1cf2c
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -2,7 +2,7 @@
 title: Minimum password length (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Minimum password length security policy setting.
 ms.assetid: 3d22eb9a-859a-4b6f-82f5-c270c427e17e
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
