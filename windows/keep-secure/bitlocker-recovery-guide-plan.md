@@ -2,7 +2,7 @@
 title: BitLocker recovery guide (Windows 10)
 description: This topic for IT professionals describes how to recover BitLocker keys from AD DS.
 ms.assetid: d0f722e9-1773-40bf-8456-63ee7a95ea14
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

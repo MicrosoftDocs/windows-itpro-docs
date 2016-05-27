@@ -3,9 +3,10 @@ title: Windows Defender ATP data storage and privacy
 description: Learn about how Windows Defender ATP handles privacy and data that it collects.
 keywords: Windows Defender ATP data storage and privacy, storage, privacy
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 ---
 
 # Windows Defender ATP data storage and privacy
