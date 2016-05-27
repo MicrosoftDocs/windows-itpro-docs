@@ -2,11 +2,19 @@
 title: Identifying Your Windows Firewall with Advanced Security Deployment Goals (Windows 10)
 description: Identifying Your Windows Firewall with Advanced Security Deployment Goals
 ms.assetid: 598cf45e-2e1c-4947-970f-361dfa264bba
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+
 author: brianlic-msft
 ---
 
 # Identifying Your Windows Firewall with Advanced Security Deployment Goals
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016 Technical Preview
 
 Correctly identifying your Windows Firewall with Advanced Security deployment goals is essential for the success of your Windows Firewall with Advanced Security design project. Form a project team that can clearly articulate deployment issues in a vision statement. When you write your vision statement, identify, clarify, and refine your deployment goals. Prioritize and, if possible, combine your deployment goals so that you can design and deploy Windows Firewall with Advanced Security by using an iterative approach. You can take advantage of the predefined Windows Firewall with Advanced Security deployment goals presented in this guide that are relevant to your scenarios.
 
@@ -52,13 +60,4 @@ The following table lists the three main tasks for articulating, refining, and s
 
  
 
-**Next:**[Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md)
-
- 
-
- 
-
-
-
-
-
+**Next:**  [Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md)

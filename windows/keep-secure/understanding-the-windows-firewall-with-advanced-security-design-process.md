@@ -1,12 +1,14 @@
 ---
 title: Understanding the Windows Firewall with Advanced Security Design Process (Windows 10)
 description: Understanding the Windows Firewall with Advanced Security Design Process
-ms.assetid: ab7db2bf-38c8-48eb-82e0-3d284055e7bb
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Understanding the Windows Firewall with Advanced Security Design Process
-
 
 Designing any deployment starts by performing several important tasks:
 
@@ -22,13 +24,4 @@ After you identify your deployment goals and map them to a Windows Firewall with
 
 -   [Planning Your Windows Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)
 
-**Next:**[Identifying Your Windows Firewall with Advanced Security Design Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)
-
- 
-
- 
-
-
-
-
-
+**Next:**  [Identifying Your Windows Firewall with Advanced Security Design Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)
