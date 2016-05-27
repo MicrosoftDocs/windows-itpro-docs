@@ -2,23 +2,21 @@
 title: AD DS schema extensions to support TPM backup (Windows 10)
 description: This topic provides more details about this change and provides template schema extensions that you can incorporate into your organization.
 ms.assetid: beb7097c-e674-4eab-b8e2-6f67c85d1f3f
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # AD DS schema extensions to support TPM backup
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic provides more details about this change and provides template schema extensions that you can incorporate into your organization.
 
 ## Why a schema extension is needed
-
 
 The TPM owner authorization value is now stored in a separate object which is linked to the Computer object. This value was stored as a property in the Computer object itself for the default Windows Server 2008 R2 schemas. Windows Server 2012 domain controllers have the default schema to backup TPM owner authorization information in the separate object. If you are not upgrading your domain controller to Windows Server 2012 you need to extend the schema to support this change. If Active Directory backup of the TPM owner authorization value is enabled in a Windows Server 2008 R2 environment without extending the schema, the TPM provisioning will fail and the TPM will remain in a Not Ready state for computers running Windows 8. The following are the two schema extensions that you can use to bring your Windows Server 2008 R2 domain to parity with Windows Server 2012:
 
@@ -48,11 +46,9 @@ This schema extension brings parity with the Windows Server 2012 schema and is r
 # http://support.microsoft.com/default.aspx?scid=kb;en-us;237677 
 #
 #===============================================================================
-
 #===============================================================================
 # New schema attributes
 #===============================================================================
-
 #
 # ms-TPM-Srk-Pub-Thumbprint
 # GUID: 19d706eb-4d76-44a2-85d6-1c342be3be37
@@ -72,7 +68,6 @@ schemaIdGuid:: 6wbXGXZNokSF1hw0K+O+Nw==
 showInAdvancedViewOnly: TRUE
 isMemberOfPartialAttributeSet: FALSE
 rangeUpper: 20
-
 #
 # ms-TPM-Owner-Information-Temp
 # GUID: c894809d-b513-4ff8-8811-f4f43f5ac7bc
@@ -92,7 +87,6 @@ rangeUpper: 128
 schemaIdGuid:: nYCUyBO1+E+IEfT0P1rHvA==
 showInAdvancedViewOnly: TRUE
 isMemberOfPartialAttributeSet: FALSE
-
 #
 # ms-TPM-Tpm-Information-For-Computer
 # GUID: ea1b7b93-5e48-46d5-bc6c-4df4fda78a35
@@ -113,7 +107,6 @@ schemaIdGuid:: k3sb6khe1Ua8bE30/aeKNQ==
 showInAdvancedViewOnly: TRUE
 isMemberOfPartialAttributeSet: FALSE
 linkId: 2182
-
 #
 # ms-TPM-TpmInformation-For-Computer-BL
 # GUID: 14fa84c9-8ecd-4348-bc91-6d3ced472ab7
@@ -134,41 +127,33 @@ schemaIdGuid:: yYT6FM2OSEO8kW087Ucqtw==
 showInAdvancedViewOnly: TRUE
 systemOnly: TRUE
 linkId: 2183
-
 #
 # Commit the new attributes
 #
-
 dn:
 changetype: modify
 add: schemaUpdateNow
 schemaUpdateNow: 1
 -
-
 #
 # Modify the Computer schema to support the TPM link
 #
-
 dn: CN=computer,CN=Schema,CN=Configuration,DC=X
 changetype: modify
 add: mayContain
 mayContain: msTPM-TpmInformationForComputer
 -
-
 #
 # Commit the modification to the computer class
 #
-
 dn:
 changetype: modify
 add: schemaUpdateNow
 schemaUpdateNow: 1
 -
-
 #===============================================================================
 # New schema classes
 #===============================================================================
-
 #
 # ms-TPM-Information-Objects-Container
 # GUID: e027a8bd-6456-45de-90a3-38593877ee74
@@ -189,7 +174,6 @@ schemaIdGUID:: vagn4FZk3kWQozhZOHfudA==
 defaultSecurityDescriptor: D:(A;;RPWPCRCCDCLCLORCWOWDSDDTSW;;;DA)(A;;RPWPCRCCDCLCLORCWOWDSDDTSW;;;SY)(A;;LOLCCCRP;;;DC)
 defaultHidingValue: TRUE
 defaultObjectCategory: CN=ms-TPM-Information-Objects-Container,CN=Schema,CN=Configuration,DC=X
-
 #
 # ms-TPM-Information-Object
 # GUID: 85045b6a-47a6-4243-a7cc-6890701f662c
@@ -218,21 +202,17 @@ defaultObjectCategory: CN=ms-TPM-Information-Object,CN=Schema,CN=Configuration,D
 # NOTE: If the 'defaultSecurityDescriptor' value above is changed,
 #   also change the other '.ldf' files in this directory, as appropriate.
 #
-
 #
 # Commit the new TPM object class
 #
-
 dn:
 changetype: modify
 add: schemaUpdateNow
 schemaUpdateNow: 1
 -
-
 #===============================================================================
 # New objects
 #===============================================================================
-
 #
 # Add the TPM container to its location in the directory
 #
@@ -246,12 +226,8 @@ You should be aware that only the Computer object that has created the TPM objec
 ### TpmSchemaExtensionACLChanges.ldf
 
 This schema update modifies the ACLs on the TPM object to be less restrictive so that any subsequent operating system which takes ownership of the computer object can update the owner authorization value in AD DS.
-
-**Important**  
-After implementing this schema update, any computer in the domain can update the OwnerAuth of the TPM object (although it cannot read the OwnerAuth). When using this extension, perform a regular backup of the TPM objects and enable auditing to track the changes for these objects.
-
+> **Important**  After implementing this schema update, any computer in the domain can update the OwnerAuth of the TPM object (although it cannot read the OwnerAuth). When using this extension, perform a regular backup of the TPM objects and enable auditing to track the changes for these objects.
  
-
 ``` syntax
 #===============================================================================
 #
@@ -268,7 +244,6 @@ After implementing this schema update, any computer in the domain can update the
 #
 # This conversion does not apply to any 'ms-TPM-Information-Object' that
 # was created before the conversion.
-
 #
 # Change History: 
 #   12/2011 - Created
@@ -283,7 +258,6 @@ After implementing this schema update, any computer in the domain can update the
 # http://support.microsoft.com/default.aspx?scid=kb;en-us;237677 
 #
 #===============================================================================
-
 #
 # Modify the TPM-Information-Object class schema 'defaultSecurityDescriptor' to
 # allow any Domain Computer to write its properties (including the TPM OwnerAuth
@@ -293,29 +267,19 @@ After implementing this schema update, any computer in the domain can update the
 #   with the value in the TPM-Information-Object class description in the
 #   'TpmSchemaExtension.ldf' file
 #
-
 dn: CN=ms-TPM-Information-Object,CN=Schema,CN=Configuration,DC=X
 changetype: modify
 replace: defaultSecurityDescriptor
 defaultSecurityDescriptor: D:(A;;RPWPCRCCDCLCLORCWOWDSDDTSW;;;DA)(A;;RPWPCRCCDCLCLORCWOWDSDDTSW;;;SY)(A;;RPWPLO;;;DC)
 -
-
 #
 # Commit the modification to the TPM-Information-Object schema
 #
-
 dn:
 changetype: modify
 add: schemaUpdateNow
 schemaUpdateNow: 1
 -
 ```
-
  
-
  
-
-
-
-
-

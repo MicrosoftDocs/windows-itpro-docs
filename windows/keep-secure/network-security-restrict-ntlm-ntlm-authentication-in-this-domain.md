@@ -2,23 +2,21 @@
 title: Network security Restrict NTLM NTLM authentication in this domain (Windows 10)
 description: Describes the best practices, location, values, management aspects, and security considerations for the Network Security Restrict NTLM NTLM authentication in this domain security policy setting.
 ms.assetid: 4c7884e9-cc11-4402-96b6-89c77dc908f8
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: Restrict NTLM: NTLM authentication in this domain
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: NTLM authentication in this domain** security policy setting.
 
 ## Reference
-
 
 The **Network Security: Restrict NTLM: NTLM authentication in this domain** policy setting allows you to deny or allow NTLM authentication within a domain from this domain controller. This policy setting does not affect interactive logon to this domain controller.
 
@@ -60,49 +58,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Not configured</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not configured</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Not configured</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>Not configured</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>Not configured</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client computer effective default settings</p></td>
-<td align="left"><p>Not configured</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default domain policy| Not configured| 
+| Default domain controller policy | Not configured| 
+| Stand-alone server default settings | Not configured|
+| Domain controller effective default settings | Not configured| 
+| Member server effective default settings | Not configured | 
+| Client computer effective default settings | Not configured| 
  
-
 ## Policy management
-
 
 This section describes different features and tools available to help you manage this policy.
 
@@ -122,7 +87,6 @@ There are no security audit event policies that can be configured to view output
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
@@ -133,7 +97,8 @@ Malicious attacks on NTLM authentication traffic resulting in a compromised serv
 
 ### Countermeasure
 
-When it has been determined that the NTLM authentication protocol should not be used within a network because you are required to use a more secure protocol such as the Kerberos protocol, then you can select one of several options that this security policy setting offers to restrict NTLM usage within the domain.
+When it has been determined that the NTLM authentication protocol should not be used within a network because you are required to use a more secure protocol such as the Kerberos protocol, then you can select one of several options that this security policy setting offers to restrict NTLM usage 
+within the domain.
 
 ### Potential impact
 
@@ -141,14 +106,4 @@ If you configure this policy setting, numerous NTLM authentication requests coul
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

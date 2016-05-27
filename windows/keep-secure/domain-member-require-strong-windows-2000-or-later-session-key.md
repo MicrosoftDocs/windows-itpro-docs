@@ -2,23 +2,21 @@
 title: Domain member Require strong (Windows 2000 or later) session key (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Domain member Require strong (Windows 2000 or later) session key security policy setting.
 ms.assetid: 5ab8993c-5086-4f09-bc88-1b27454526bd
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Domain member: Require strong (Windows 2000 or later) session key
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Require strong (Windows 2000 or later) session key** security policy setting.
 
 ## Reference
-
 
 The **Domain member: Require strong (Windows 2000 or later) session key** policy setting determines whether a secure channel can be established with a domain controller that is not capable of encrypting secure channel traffic with a strong, 128-bit session key. Enabling this policy setting prevents establishing a secure channel with any domain controller that cannot encrypt secure channel data with a strong key. Disabling this policy setting allows 64-bit session keys.
 
@@ -48,47 +46,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO 
+| Default value 
+| - | - |
+| Default Domain Policy | Not defined | 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Disabled| 
+| DC Effective Default Settings | Disabled| 
+| Member Server Effective Default Settings | Disabled| 
+| Client Computer Effective Default Settings | Disabled| 
  
-
 ## Policy management
 
 
@@ -105,7 +72,6 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 You will you be able to join devices that do not support this policy setting to domains where the domain controllers have this policy setting enabled.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -127,14 +93,4 @@ Devices that do not support this policy setting cannot join domains in which the
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

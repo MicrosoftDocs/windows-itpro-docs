@@ -2,7 +2,8 @@
 title: Display a custom URL message when users try to run a blocked app (Windows 10)
 description: This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
 ms.assetid: 9a2534a5-d1fa-48a9-93c6-989d4857cf85
-ms.prod: W10
+ms.pagetype: security
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
@@ -10,9 +11,7 @@ author: brianlic-msft
 
 # Display a custom URL message when users try to run a blocked app
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
@@ -24,24 +23,9 @@ To complete this procedure, you must have the **Edit Setting** permission to ed
 **To display a custom URL message when users try to run a blocked app**
 
 1.  On the **Start** screen, type **gpmc.msc** to open the Group Policy Management Console (GPMC).
-
 2.  Navigate to the Group Policy Object (GPO) that you want to edit.
-
 3.  Right-click the GPO, and then click **Edit**.
-
 4.  In the console tree under **Policies\\Administrative Templates\\Windows Components**, click **File Explorer**.
-
 5.  In the details pane, double-click **Set a support web page link**.
-
 6.  Click **Enabled**, and then type the URL of the custom Web page in the **Support Web page URL** box.
-
 7.  Click **OK** to apply the setting.
-
- 
-
- 
-
-
-
-
-

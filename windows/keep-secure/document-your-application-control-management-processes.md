@@ -2,34 +2,28 @@
 title: Document your application control management processes (Windows 10)
 description: This planning topic describes the AppLocker policy maintenance information to record for your design document.
 ms.assetid: 6397f789-0e36-4933-9f86-f3f6489cf1fb
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Document your application control management processes
 
-
 **Applies to**
-
 -   Windows 10
 
 This planning topic describes the AppLocker policy maintenance information to record for your design document.
 
 ## Record your findings
 
-
 To complete this AppLocker planning document, you should first complete the following steps:
 
 1.  [Determine your application control objectives](determine-your-application-control-objectives.md)
-
 2.  [Create a list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md)
-
 3.  [Select the types of rules to create](select-types-of-rules-to-create.md)
-
 4.  [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
-
 5.  [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
 
 The three key areas to determine for AppLocker policy management are:
@@ -144,9 +138,7 @@ The following table contains the added sample data that was collected when deter
 </tr>
 </tbody>
 </table>
-
  
-
 The following two tables illustrate examples of documenting considerations to maintain and manage AppLocker policies.
 
 **Event processing policy**
@@ -189,15 +181,10 @@ The following table is an example of what to consider and record.
 </tr>
 </tbody>
 </table>
-
  
-
 **Policy maintenance policy**
-
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
-
 The following table is an example of what to consider and record.
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -240,21 +227,8 @@ The following table is an example of what to consider and record.
 </tr>
 </tbody>
 </table>
-
  
-
 ## Next steps
 
-
 After you have determined your application control management strategy for each of the business group's applications, the following task remains:
-
 -   [Create your AppLocker planning document](create-your-applocker-planning-document.md)
-
- 
-
- 
-
-
-
-
-

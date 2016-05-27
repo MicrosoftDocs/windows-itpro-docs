@@ -2,23 +2,21 @@
 title: Allow log on through Remote Desktop Services (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Allow log on through Remote Desktop Services security policy setting.
 ms.assetid: 6267c376-8199-4f2b-ae56-9c5424e76798
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Allow log on through Remote Desktop Services
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Allow log on through Remote Desktop Services** security policy setting.
 
 ## Reference
-
 
 This policy setting determines which users or groups can access the logon screen of a remote device through a Remote Desktop Services connection. It is possible for a user to establish a Remote Desktop Services connection to a particular server but not be able to log on to the console of that same server.
 
@@ -27,7 +25,6 @@ Constant: SeRemoteInteractiveLogonRight
 ### Possible values
 
 -   User-defined list of accounts
-
 -   Not Defined
 
 ### Best practices
@@ -41,55 +38,19 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 ### Default values
 
 By default, members of the Administrators group have this right on domain controllers, workstations, and servers. The Remote Desktops Users group also has this right on workstations and servers.
-
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not Defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Remote Desktop Users</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Remote Desktop Users</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Remote Desktop Users</p></td>
-</tr>
-</tbody>
-</table>
 
- 
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not Defined |
+| Default Domain Controller Policy | Administrators |
+| Stand-Alone Server Default Settings | Administrators<br>Remote Desktop Users | 
+| Domain Controller Effective Default Settings | Administrators | 
+| Member Server Effective Default Settings | Administrators<br>Remote Desktop Users |
+| Client Computer Effective Default Settings | Administrators<br>Remote Desktop Users |
+ 
 ## Policy management
-
 
 This section describes different features and tools available to help you manage this policy.
 
@@ -108,15 +69,11 @@ Any change to the user rights assignment for an account becomes effective the ne
 Group Policy settings are applied through GPOs in the following order, which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -128,11 +85,8 @@ Any account with the **Allow log on through Remote Desktop Services** user right
 
 For domain controllers, assign the **Allow log on through Remote Desktop Services** user right only to the Administrators group. For other server roles and devices, add the Remote Desktop Users group. For servers that have the Remote Desktop (RD) Session Host role service enabled and do not run in Application Server mode, ensure that only authorized IT personnel who must manage the computers remotely belong to these groups.
 
-**Caution**  
-For RD Session Host servers that run in Application Server mode, ensure that only users who require access to the server have accounts that belong to the Remote Desktop Users group because this built-in group has this logon right by default.
-
+> **Caution:**  For RD Session Host servers that run in Application Server mode, ensure that only users who require access to the server have accounts that belong to the Remote Desktop Users group because this built-in group has this logon right by default.
  
-
 Alternatively, you can assign the **Deny log on through Remote Desktop Services** user right to groups such as Account Operators, Server Operators, and Guests. However, be careful when you use this method because you could block access to legitimate administrators who also belong to a group that has the **Deny log on through Remote Desktop Services** user right.
 
 ### Potential impact
@@ -141,14 +95,6 @@ Removal of the **Allow log on through Remote Desktop Services** user right from 
 
 ## Related topics
 
-
-[User Rights Assignment](user-rights-assignment.md)
-
+- [User Rights Assignment](user-rights-assignment.md)
  
-
  
-
-
-
-
-

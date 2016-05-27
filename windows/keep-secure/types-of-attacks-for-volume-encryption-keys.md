@@ -2,17 +2,16 @@
 title: Types of attacks for volume encryption keys (Windows 10)
 description: There are many ways Windows helps protect your organization from attacks, including Unified Extensible Firmware Interface (UEFI) secure boot, Trusted Platform Module (TPM), Group Policy, complex passwords, and account lockouts.
 ms.assetid: 405060a9-2009-44fc-9f84-66edad32c6bc
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Types of attacks for volume encryption keys
 
-
 **Applies to**
-
 -   Windows 10
 
 There are many ways Windows helps protect your organization from attacks, including Unified Extensible Firmware Interface (UEFI) secure boot, Trusted Platform Module (TPM), Group Policy, complex passwords, and account lockouts.
@@ -26,13 +25,9 @@ Rootkits are a sophisticated and dangerous type of malware that runs in kernel m
 Different types of bootkits and rootkits load at different software levels:
 
 -   **Kernel level.** Rootkits running at the kernel level have the highest privilege in the operating system. They may be able to inject malicious code or replace portions of the core operating system, including both the kernel and device drivers.
-
 -   **Application level.** These rootkits are aimed to replace application binaries with malicious code, such as a Trojan, and can even modify the behavior of existing applications.
-
 -   **Library level.** The purpose of library-level rootkits is to hook, patch, or replace system calls with malicious code that can hide the malware’s presence.
-
 -   **Hypervisor level.** Hypervisor rootkits target the boot sequence. Their primary purpose is to modify the boot sequence to load themselves as a hypervisor.
-
 -   **Firmware level.** These rootkits overwrite the PC’s BIOS firmware, giving the malware low-level access and potentially the ability to install or hide malware, even if it’s cleaned or removed from the hard disk.
 
 Regardless of the operating system or encryption method, rootkits have access to confidential data once installed. Application-level rootkits can read any files the user can access, bypassing volume-level encryption. Kernel-, library-, hypervisor-, and firmware-level rootkits have direct access to system files on encrypted volumes and can also retrieve an encryption key from memory.
@@ -54,9 +49,7 @@ Attackers can find any password if you allow them to guess enough times. The pro
 Three opportunities for brute-force attacks exist:
 
 -   **Against the pre-boot authenticator.** An attacker could attack the device directly by attempting to guess the user’s BitLocker PIN or an equivalent authenticator. The TPM mitigates this approach by invoking an anti-hammering lockout capability that requires the user to wait until the lockout period ends or enter the BitLocker recovery key.
-
 -   **Against the recovery key.** An attacker could attempt to guess the 48-digit BitLocker recovery key. Even without a lockout period, the key is long enough to make brute-force attacks impractical. Specifically, the BitLocker recovery key has 128 bits of entropy; thus, the average brute-force attack would succeed after 18,446,744,073,709,551,616 guesses. If an attacker could guess 1 million passwords per second, the average brute-force attack would require more than 580,000 years to be successful.
-
 -   **Against the operating system sign-in authenticator.** An attacker can attempt to guess a valid user name and password. Windows implements a delay between password guesses, slowing down brute-force attacks. In addition, all recent versions of Windows allow administrators to require complex passwords and password lockouts. Similarly, administrators can use Microsoft Exchange ActiveSync policy or Group Policy to configure Windows 8.1 and Windows 8 to automatically restart and require the user to enter the BitLocker 48-digit recovery key after a specified number of invalid password attempts. When these settings are enabled and users follow best practices for complex passwords, brute-force attacks against the operating system sign-in are impractical.
 
 In general, brute-force sign-in attacks are not practical against Windows when administrators enforce complex passwords and account lockouts.
@@ -67,25 +60,21 @@ Direct memory access (DMA) allows certain types of hardware devices to communica
 
 Unfortunately, DMA ports don’t use authentication and access control to protect the contents of the computer’s memory. Whereas Windows can often prevent system components and apps from reading and writing to protected parts of memory, a device can use DMA to read any location in memory, including the location of any encryption keys.
 
-DMA attacks are relatively easy to execute and require little technical skills. Anyone can download a tool from the Internet, such as those made by [Passware](http://www.lostpassword.com/), [ElcomSoft](http://elcomsoft.com/), and others, and then use a DMA attack to read confidential data from a PC’s memory. Because encryption solutions store their encryption keys in memory, they can be accessed by a DMA attack.
+DMA attacks are relatively easy to execute and require little technical skills. Anyone can download a tool from the Internet, such as those made by [Passware](http://www.lostpassword.com/), [ElcomSoft](http://elcomsoft.com/), and 
+others, and then use a DMA attack to read confidential data from a PC’s memory. Because encryption solutions store their encryption keys in memory, they can be accessed by a DMA attack.
 
 Not all port types are vulnerable to DMA attacks. USB in particular does not allow DMA, but devices that have any of the following port types are vulnerable:
 
 -   FireWire
-
 -   Thunderbolt
-
 -   ExpressCard
-
 -   PCMCIA
-
 -   PCI
-
 -   PCI-X
-
 -   PCI Express
 
-To perform a DMA attack, attackers typically connect a second PC that is running a memory-scanning tool (for example, Passware, ElcomSoft) to the FireWire or Thunderbolt port of the target computer. When connected, the software scans the system memory of the target and locates the encryption key. Once acquired, the key can be used to decrypt the drive and read or modify its contents.
+To perform a DMA attack, attackers typically connect a second PC that is running a memory-scanning tool (for example, Passware, ElcomSoft) to the FireWire or Thunderbolt port of the target computer. When connected, the software 
+scans the system memory of the target and locates the encryption key. Once acquired, the key can be used to decrypt the drive and read or modify its contents.
 
 A much more efficient form of this attack exists in theory: An attacker crafts a custom FireWire or Thunderbolt device that has the DMA attack logic programmed on it. Now, the attacker simply needs to physically connect the device. If the attacker does not have physical access, they could disguise it as a free USB flash drive and distribute it to employees of a target organization. When connected, the attacking device could use a DMA attack to scan the PC’s memory for the encryption key. It could then transmit the key (or any data in the PC’s memory) using the PC’s Internet connection or its own wireless connection. This type of attack would require an extremely high level of sophistication, because it requires that the attacker create a custom device (devices of these types are not readily available in the marketplace at this time).
 
@@ -112,13 +101,9 @@ When performing this type of cold boot attack, the attacker accesses the PC’s 
 To acquire the keys, attackers follow this process:
 
 1.  Freeze the PC’s memory. For example, an attacker can freeze the memory to −50°C by spraying it with aerosol air duster spray.
-
 2.  Restart the PC.
-
 3.  Instead of restarting Windows, boot to another operating system. Typically, this is done by connecting a bootable flash drive or loading a bootable DVD.
-
 4.  The bootable media loads the memory remanence attack tools, which the attacker uses to scan the system memory and locate the encryption keys.
-
 5.  The attacker uses the encryption keys to access the drive’s data.
 
 If the attacker is unable to boot the device to another operating system (for example, if bootable flash drives have been disabled or Secure Boot is enabled), the attacker can attempt to physically remove the frozen memory from the device and attach it to a different, possibly identical device. Fortunately, this process has proven extremely unreliable, as evidenced by the Defence Research and Development Canada (DRDC) Valcartier group’s analysis (see [An In-depth Analysis of the Cold Boot Attack](http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA545078)). On an increasing portion of modern devices, this type of attack is not even possible, because memory is soldered directly to the motherboard.
@@ -126,13 +111,9 @@ If the attacker is unable to boot the device to another operating system (for ex
 Although Princeton’s research proved that this type of attack was possible on devices that have removable memory, device hardware has changed since the research was published in 2008:
 
 -   Secure Boot prevents the malicious tools that the Princeton attack depends on from running on the target device.
-
 -   Windows systems with BIOS or UEFI can be locked down with a password, and booting to a USB drive can be prevented.
-
 -   If booting to USB is required on the device, it can be limited to starting trusted operating systems by using Secure Boot.
-
 -   The discharge rates of memory are highly variable among devices, and many devices have memory that is completely immune to memory remanence attacks.
-
 -   Increased density of memory diminishes their remanence properties and reduces the likelihood that the attack can be successfully executed, even when memory is physically removed and placed in an identical system where the system’s configuration may enable booting to the malicious tools.
 
 Because of these factors, this type of attack is rarely possible on modern devices. Even in cases where the risk factors exist on legacy devices, attackers will find the attack unreliable. For detailed info about the practical uses for forensic memory acquisition and the factors that make a computer vulnerable or resistant to memory remanence attacks, read [An In-depth Analysis of the Cold Boot Attack](http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA545078).
@@ -141,20 +122,7 @@ The BitLocker pre-boot authentication feature can successfully mitigate memory r
 
 ## See also
 
-
 -   [BitLocker countermeasures](bitlocker-countermeasures.md)
-
 -   [Choose the right BitLocker countermeasure](choose-the-right-bitlocker-countermeasure.md)
-
 -   [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md)
-
 -   [BitLocker overview](bitlocker-overview.md)
-
- 
-
- 
-
-
-
-
-

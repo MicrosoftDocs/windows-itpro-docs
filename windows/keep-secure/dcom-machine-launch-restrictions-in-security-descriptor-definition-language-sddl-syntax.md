@@ -2,29 +2,28 @@
 title: DCOM Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the DCOM Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax security policy setting.
 ms.assetid: 4b95d45f-dd62-4c34-ba32-43954528dabe
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
+
 ---
 
 # DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax** security policy setting.
 
 ## Reference
 
-
 This policy setting is similar to the [DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax](dcom-machine-access-restrictions-in-security-descriptor-definition-language-sddl-syntax.md) setting in that it allows you to define additional computer-wide controls that govern access to all DCOM–based applications on a device. However, the ACLs that are specified in this policy setting control local and remote COM launch requests (not access requests) on the device. A simple way to think about this access control is as an additional access check that is performed against a device-wide ACL on each launch of any COM-based server. If the access check fails, the call, activation, or launch request is denied. (This check is in addition to any access check that is run against the server-specific ACLs.) In effect, it provides a minimum authorization standard that must be passed to launch any COM-based server. The DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax policy setting differs in that it provides a minimum access check that is applied to attempts to access an already launched COM-based server.
 
 These device-wide ACLs provide a way to override weak security settings that are specified by an application through CoInitializeSecurity or application-specific security settings. They provide a minimum security standard that must be passed, regardless of the settings of the specific COM-based server. These ACLs provide a centralized location for an administrator to set a general authorization policy that applies to all COM-based servers.
-
-The **DCOM: Machine Launch Restrictions in the Security Descriptor Definition Language (SDDL) syntax** setting allows you to specify an ACL in two ways. You can type the security descriptor in SDDL, or you can grant or deny Local Access and Remote Access permissions to users and groups. We recommend that you use the built-in user interface to specify the ACL contents that you want to apply with this setting. The default ACL settings vary, depending on the version of Windows you are running.
+The **DCOM: Machine Launch Restrictions in the Security Descriptor Definition Language (SDDL) syntax** setting allows you to specify an ACL in two ways. You can type the security descriptor in SDDL, or you can grant or deny Local 
+Access and Remote Access permissions to users and groups. We recommend that you use the built-in user interface to specify the ACL contents that you want to apply with this setting. The default ACL settings vary, depending on the version of Windows you are running.
 
 ### Possible values
 
@@ -44,49 +43,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Blank</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Blank</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Blank</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Blank | 
+| Default Domain Controller Policy | Blank| 
+| Stand-Alone Server Default Settings |Blank | 
+| DC Effective Default Settings | Not defined| 
+| Member Server Effective Default Settings | Not defined | 
+| Client Computer Effective Default Settings | Not defined| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -103,7 +69,6 @@ If you are denied access to activate and launch DCOM applications due to the cha
 You can specify which users and groups can launch and activate DCOM applications on the device locally and remotely by using the **DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax** policy setting. This restores control of the DCOM application to the administrator and specified users. To do this, open the **DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax** setting, and click **Edit Security**. Specify the groups that you want to include and the device launch permissions for those groups. This defines the setting and sets the appropriate SDDL value.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -123,14 +88,4 @@ Windows implements default COM ACLs when they are installed. Modifying these ACL
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

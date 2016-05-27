@@ -2,10 +2,11 @@
 title: Create and deploy a VPN policy for enterprise data protection (EDP) using Microsoft Intune (Windows 10)
 description: After you've created and deployed your enterprise data protection (EDP) policy, you can use Microsoft Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your EDP policy.
 ms.assetid: d0eaba4f-6d7d-4ae4-8044-64680a40cf6b
-keywords: ["EDP", "Enterprise Data Protection"]
-ms.prod: W10
+keywords: EDP, Enterprise Data Protection
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: security
 author: eross-msft
 ---
 

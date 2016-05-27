@@ -2,17 +2,16 @@
 title: Password Policy (Windows 10)
 description: An overview of password policies for Windows and links to information for each policy setting.
 ms.assetid: aec1220d-a875-4575-9050-f02f9c54a3b6
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Password Policy
 
-
 **Applies to**
-
 -   Windows 10
 
 An overview of password policies for Windows and links to information for each policy setting.
@@ -37,58 +36,17 @@ The following topics provide a discussion of password policy implementation and 
 
 ## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Enforce password history](enforce-password-history.md)</p></td>
-<td align="left"><p>Describes the best practices, location, values, policy management, and security considerations for the <strong>Enforce password history</strong> security policy setting.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Maximum password age](maximum-password-age.md)</p></td>
-<td align="left"><p>Describes the best practices, location, values, policy management, and security considerations for the <strong>Maximum password age</strong> security policy setting.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Minimum password age](minimum-password-age.md)</p></td>
-<td align="left"><p>Describes the best practices, location, values, policy management, and security considerations for the <strong>Minimum password age</strong> security policy setting.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Minimum password length](minimum-password-length.md)</p></td>
-<td align="left"><p>Describes the best practices, location, values, policy management, and security considerations for the <strong>Minimum password length</strong> security policy setting.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Password must meet complexity requirements](password-must-meet-complexity-requirements.md)</p></td>
-<td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Password must meet complexity requirements</strong> security policy setting.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Store passwords using reversible encryption](store-passwords-using-reversible-encryption.md)</p></td>
-<td align="left"><p>Describes the best practices, location, values, and security considerations for the <strong>Store passwords using reversible encryption</strong> security policy setting.</p></td>
-</tr>
-</tbody>
-</table>
-
+| Topic | Description |
+| - | - |
+| [Enforce password history](enforce-password-history.md)| Describes the best practices, location, values, policy management, and security considerations for the **Enforce password history** security policy setting.| 
+| [Maximum password age](maximum-password-age.md) | Describes the best practices, location, values, policy management, and security considerations for the **Maximum password age** security policy setting.| 
+| [Minimum password age](minimum-password-age.md) | Describes the best practices, location, values, policy management, and security considerations for the **Minimum password age** security policy setting.| 
+| [Minimum password length](minimum-password-length.md) | Describes the best practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.| 
+| [Password must meet complexity requirements](password-must-meet-complexity-requirements.md) | Describes the best practices, location, values, and security considerations for the **Password must meet complexity requirements** security policy setting.|
+| [Store passwords using reversible encryption](store-passwords-using-reversible-encryption.md) | Describes the best practices, location, values, and security considerations for the **Store passwords using reversible encryption** security policy setting.| 
  
-
 ## Related topics
 
-
-[Configure security policy settings](how-to-configure-security-policy-settings.md)
-
+- [Configure security policy settings](how-to-configure-security-policy-settings.md)
  
-
  
-
-
-
-
-

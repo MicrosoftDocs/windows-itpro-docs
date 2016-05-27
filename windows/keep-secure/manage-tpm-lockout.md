@@ -2,23 +2,20 @@
 title: Manage TPM lockout (Windows 10)
 description: This topic for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
 ms.assetid: bf27adbe-404c-4691-a644-29ec722a3f7b
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
-
 # Manage TPM lockout
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
 
 ## <a href="" id="bkmk-lockout1"></a>About TPM lockout
-
 
 The TPM will lock itself to prevent tampering or malicious attacks. TPM lockout often lasts for a variable amount of time or until the computer is turned off. While the TPM is in lockout mode, it generally returns an error message when it receives commands that require an authorization value. One exception is that the TPM always allows the owner at least one attempt to reset the TPM lockout when it is in lockout mode.
 
@@ -32,28 +29,19 @@ If your TPM has entered lockout mode or is responding slowly to commands, you ca
 
 ## Reset the TPM lockout by using the TPM MMC
 
-
 The following procedure explains the steps to reset the TPM lockout by using the TPM MMC.
 
 **To reset the TPM lockout**
 
 1.  Open the TPM MMC (tpm.msc).
-
 2.  In the **Action** pane, click **Reset TPM Lockout** to start the Reset TPM Lockout Wizard.
-
 3.  Choose one of the following methods to enter the TPM owner password:
-
     -   If you saved your TPM owner password to a .tpm file, click **I have the owner password file**, and then type the path to the file, or click **Browse** to navigate to the file location.
-
     -   If you want to manually enter your TPM owner password, click **I want to enter the owner password**, and then type the password in the text box provided.
 
-        **Note**  
-        If you enabled BitLocker and your TPM at the same time, and you printed your BitLocker recovery password when you turned on BitLocker, your TPM owner password may have printed with it.
-
+        >**Note:**  If you enabled BitLocker and your TPM at the same time, and you printed your BitLocker recovery password when you turned on BitLocker, your TPM owner password may have printed with it.
          
-
 ## Use Group Policy to manage TPM lockout settings
-
 
 The TPM Group Policy settings in the following list are located at:
 
@@ -68,13 +56,12 @@ The TPM Group Policy settings in the following list are located at:
     This policy setting allows you to manage the maximum number of authorization failures for the TPM for each user. This value is the maximum number of authorization failures that each user can have before the user is not allowed to send commands to the TPM that require authorization. If the number of authorization failures equals the duration that is set for the policy setting, the user is prevented from sending commands to the TPM that require authorization.
 
 -   [Standard User Total Lockout Threshold](trusted-platform-module-services-group-policy-settings.md#bkmk-total)
-
+    
     This policy setting allows you to manage the maximum number of authorization failures for the TPM for all standard users. If the total number of authorization failures for all users equals the duration that is set for the policy, all users are prevented from sending commands to the TPM that require authorization.
 
 For information about mitigating dictionary attacks that use the lockout settings, see [TPM fundamentals](tpm-fundamentals.md#bkmk-howtpmmitigates).
 
 ## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
-
 
 If you are using Windows PowerShell to manage your computers, you can also manage the TPM by using Windows PowerShell. To install the TPM cmdlets, type the following command:
 
@@ -84,14 +71,4 @@ For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell
 
 ## Additional resources
 
-
 For more info about TPM, see [TPM technology overview](trusted-platform-module-overview.md#bkmk-additionalresources).
-
- 
-
- 
-
-
-
-
-

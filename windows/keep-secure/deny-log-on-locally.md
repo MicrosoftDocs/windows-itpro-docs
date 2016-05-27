@@ -2,23 +2,21 @@
 title: Deny log on locally (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on locally security policy setting.
 ms.assetid: 00150e88-ec9c-43e1-a70d-33bfe10434db
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Deny log on locally
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Deny log on locally** security policy setting.
 
 ## Reference
-
 
 This policy setting determines which users are prevented from logging on directly at the device's console.
 
@@ -27,13 +25,11 @@ Constant: SeDenyInteractiveLogonRight
 ### Possible values
 
 -   User-defined list of accounts
-
 -   Not defined
 
 ### Best practices
 
 1.  Assign the **Deny log on locally** user right to the local guest account to restrict access by potentially unauthorized users.
-
 2.  Test your modifications to this policy setting in conjunction with the **Allow log on locally** policy setting to determine if the user account is subject to both policies.
 
 ### Location
@@ -44,49 +40,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 
 The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined | 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Not defined| 
+| Domain Controller Effective Default Settings | Not defined| 
+| Member Server Effective Default Settings | Not defined| 
+| Client Computer Effective Default Settings | Not defined| 
  
-
 ## Policy management
-
 
 This section describes features, tools, and guidance to help you manage this policy.
 
@@ -103,17 +66,13 @@ This policy setting supersedes the **Allow log on locally** policy setting if a 
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -131,14 +90,4 @@ If you assign the **Deny log on locally** user right to additional accounts, you
 
 ## Related topics
 
-
-[User Rights Assignment](user-rights-assignment.md)
-
- 
-
- 
-
-
-
-
-
+- [User Rights Assignment](user-rights-assignment.md)

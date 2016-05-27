@@ -2,7 +2,7 @@
 title: Lock down Windows 10 (Windows 10)
 description: Windows 10 provides a number of features and methods to help you lock down specific parts of a Windows 10 device.
 ms.assetid: 955BCD92-0A1A-4C48-98A8-30D7FAF2067D
-keywords: ["lockdown"]
+keywords: lockdown
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -47,7 +47,7 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 <td align="left"><p>Use this article to make informed decisions about how you can configure Windows telemetry in your organization.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md)</p></td>
+<td align="left"><p>[Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)</p></td>
 <td align="left"><p>Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.</p></td>
 </tr>
 <tr class="odd">
@@ -67,23 +67,14 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 <td align="left"><p>[Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)</p></td>
 <td align="left"><p>There are two methods for resetting a Windows 10 Mobile device: factory reset and &quot;wipe and persist&quot; reset.</p></td>
 </tr>
+
 </tbody>
 </table>
 
- ## Learn more
+## Learn more
 
 [Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
 ## Related topics
 
-
 [Lockdown features from Windows Embedded Industry 8.1](../whats-new/lockdown-features-windows-10.md)
-
- 
-
- 
-
-
-
-
-

@@ -2,8 +2,8 @@
 title: Deploying an Inventory-Collector Package (Windows 10)
 ms.assetid: 8726ff71-0d17-4449-bdb7-66957ae51c62
 description: 
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan 
 ms.sitesec: library
 author: TrudyHa
 ---

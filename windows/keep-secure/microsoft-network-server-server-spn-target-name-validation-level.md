@@ -2,23 +2,21 @@
 title: Microsoft network server Server SPN target name validation level (Windows 10)
 description: Describes the best practices, location, and values, policy management and security considerations for the Microsoft network server Server SPN target name validation level security policy setting.
 ms.assetid: 18337f78-eb45-42fd-bdbd-f8cd02c3e154
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Microsoft network server: Server SPN target name validation level
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, and values, policy management and security considerations for the **Microsoft network server: Server SPN target name validation level** security policy setting.
 
 ## Reference
-
 
 This policy setting controls the level of validation that a server with shared folders or printers performs on the service principal name (SPN) that is provided by the client device when the client device establishes a session by using the Server Message Block (SMB) protocol. The level of validation can help prevent a class of attacks against SMB services (referred to as SMB relay attacks). This setting affects both SMB1 and SMB2.
 
@@ -46,11 +44,8 @@ The default setting is Off.
 
 This setting affects the server SMB behavior, and its implementation should be carefully evaluated and tested to prevent disruptions to file and print serving capabilities.
 
-**Note**  
-All Windows operating systems support a client-side SMB component and a server-side SMB component.
-
+>**Note:**  All Windows operating systems support a client-side SMB component and a server-side SMB component.
  
-
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -59,49 +54,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or Group Policy object (GPO)</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Off</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Off</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Off</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>Validation level check not implemented</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>Validation level check not implemented</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Effective GPO default settings on client computers</p></td>
-<td align="left"><p>Validation level check not implemented</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or Group Policy object (GPO) | Default value |
+| - | - |
+| Default domain policy | Off | 
+| Default domain controller policy| Off| 
+| Stand-alone server default settings | Off| 
+| Domain controller effective default settings| Validation level check not implemented| 
+| Member server effective default settings | Validation level check not implemented| 
+| Effective GPO default settings on client computers | Validation level check not implemented| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -118,7 +80,6 @@ None.
 This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -138,14 +99,4 @@ Because the SMB protocol is widely deployed, setting the options to **Accept if 
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

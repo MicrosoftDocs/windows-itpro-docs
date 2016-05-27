@@ -2,23 +2,21 @@
 title: Network security Restrict NTLM Audit incoming NTLM traffic (Windows 10)
 description: Describes the best practices, location, values, management aspects, and security considerations for the Network Security Restrict NTLM Audit incoming NTLM traffic security policy setting.
 ms.assetid: 37e380c2-22e1-44cd-9993-e12815b845cf
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: Restrict NTLM: Audit incoming NTLM traffic
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Audit incoming NTLM traffic** security policy setting.
 
 ## Reference
-
 
 The **Network Security: Restrict NTLM: Audit incoming NTLM traffic** policy setting allows you to audit incoming NTLM traffic.
 
@@ -26,7 +24,8 @@ When this audit policy is enabled within Group Policy, it is enforced on any ser
 
 When you enable this policy on a server, only authentication traffic to that server will be logged.
 
-When you enable this audit policy, it functions in the same way as the [Network Security: Restrict NTLM: Incoming NTLM traffic](network-security-restrict-ntlm-incoming-ntlm-traffic.md) policy, but it does not actually block any traffic. Therefore, you can use it effectively to understand the authentication traffic in your environment, and when you are ready to block that traffic, you can enable the Network Security: Restrict NTLM: Incoming NTLM traffic policy setting and select **Deny all accounts** or **Deny all domain accounts**.
+When you enable this audit policy, it functions in the same way as the [Network Security: Restrict NTLM: Incoming NTLM traffic](network-security-restrict-ntlm-incoming-ntlm-traffic.md) policy, but it does not actually block any traffic. Therefore, you can use it effectively to understand the 
+authentication traffic in your environment, and when you are ready to block that traffic, you can enable the Network Security: Restrict NTLM: Incoming NTLM traffic policy setting and select **Deny all accounts** or **Deny all domain accounts**.
 
 ### Possible values
 
@@ -56,49 +55,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client computer effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default domain policy| Not defined| 
+| Default domain controller policy | Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings | Not defined| 
+| Member server effective default settings | Not defined| 
+| Client computer effective default settings | Not defined| 
  
-
 ## Policy management
-
 
 This section describes different features and tools available to help you manage this policy.
 
@@ -118,7 +84,6 @@ There are no security audit event policies that can be configured to view output
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
@@ -137,14 +102,4 @@ If you do not enable or configure this policy setting, no NTLM authentication tr
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

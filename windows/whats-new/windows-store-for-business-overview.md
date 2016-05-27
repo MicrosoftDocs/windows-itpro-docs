@@ -2,7 +2,8 @@
 title: Windows Store for Business overview (Windows 10)
 description: With the new Windows Store for Business, organizations can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
-ms.prod: W10
+ms.prod: w10
+ms.pagetype: store
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa

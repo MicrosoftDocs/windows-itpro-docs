@@ -2,24 +2,23 @@
 title: Understanding the publisher rule condition in AppLocker (Windows 10)
 description: This topic explains the AppLocker publisher rule condition, what controls are available, and how it is applied.
 ms.assetid: df61ed8f-a97e-4644-9d0a-2169f18c1c4f
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Understanding the publisher rule condition in AppLocker
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic explains the AppLocker publisher rule condition, what controls are available, and how it is applied.
 
 Publisher conditions can be made only for files that are digitally signed; this condition identifies an app based on its digital signature and extended attributes. The digital signature contains information about the company that created the app (the publisher). The extended attributes, which are obtained from the binary resource, contain the name of the product that the app is part of and the version number of the app. The publisher may be a software development company, such as Microsoft, or the Information Technology department of your organization.
-
-Publisher conditions are easier to maintain than file hash conditions and are generally more secure than path conditions. Rules that are specified to the version level might have to be updated when a new version of the file is released. The following table describes the advantages and disadvantages of the publisher condition.
+Publisher conditions are easier to maintain than file hash conditions and are generally more secure than path conditions. Rules that are specified to the version level might have to be updated when a new version of the file is released. The following table describes the advantages and disadvantages 
+of the publisher condition.
 
 <table>
 <colgroup>
@@ -47,9 +46,7 @@ Publisher conditions are easier to maintain than file hash conditions and are ge
 </tr>
 </tbody>
 </table>
-
  
-
 Wildcard characters can be used as values in the publisher rule fields according to the following specifications:
 
 -   **Publisher**
@@ -69,77 +66,24 @@ Wildcard characters can be used as values in the publisher rule fields according
     The asterisk (\*) character used by itself represents any file version. If you want to limit the file version to a specific version or as a starting point, you can state the file version and then use the following options to apply limits:
 
     -   **Exactly**. The rule applies only to this version of the app
-
     -   **And above**. The rule applies to this version and all later versions.
-
     -   **And Below**. The rule applies to this version and all earlier versions.
 
 The following table describes how a publisher condition is applied.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Option</th>
-<th align="left">The publisher condition allows or denies…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>All signed files</strong></p></td>
-<td align="left"><p>All files that are signed by a publisher.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Publisher only</strong></p></td>
-<td align="left"><p>All files that are signed by the named publisher.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Publisher and product name</strong></p></td>
-<td align="left"><p>All files for the specified product that are signed by the named publisher.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Publisher, product name, and file name</strong></p></td>
-<td align="left"><p>Any version of the named file for the named product that is signed by the publisher.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Publisher, product name, file name, and file version</strong></p></td>
-<td align="left"><p><strong>Exactly</strong></p>
-<p>The specified version of the named file for the named product that is signed by the publisher.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Publisher, product name, file name, and file version</strong></p></td>
-<td align="left"><p><strong>And above</strong></p>
-<p>The specified version of the named file and any new releases for the product that are signed by the publisher.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Publisher, product name, file name, and file version</strong></p></td>
-<td align="left"><p><strong>And below</strong></p>
-<p>The specified version of the named file and any older versions for the product that are signed by the publisher.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Custom</strong></p></td>
-<td align="left"><p>You can edit the <strong>Publisher</strong>, <strong>Product name</strong>, <strong>File name</strong>, and <strong>Version</strong> fields to create a custom rule.</p></td>
-</tr>
-</tbody>
-</table>
-
+| Option | The publisher condition allows or denies…|
+| - | - |
+| **All signed files** | All files that are signed by a publisher.| 
+| **Publisher only** | All files that are signed by the named publisher.| 
+| **Publisher and product name** | All files for the specified product that are signed by the named publisher.| 
+| **Publisher, product name, and file name** | Any version of the named file for the named product that is signed by the publisher.| 
+| **Publisher, product name, file name, and file version** | **Exactly**<br/>The specified version of the named file for the named product that is signed by the publisher.| 
+| **Publisher, product name, file name, and file version** | **And above**<br/>The specified version of the named file and any new releases for the product that are signed by the publisher.| 
+| **Publisher, product name, file name, and file version**| **And below**<br/>The specified version of the named file and any older versions for the product that are signed by the publisher.| 
+| **Custom** | You can edit the **Publisher**, **Product name**, **File name**, and **Version** fields to create a custom rule.| 
  
-
 For an overview of the three types of AppLocker rule conditions and explanations of the advantages and disadvantages of each, see [Understanding AppLocker rule condition types](understanding-applocker-rule-condition-types.md).
 
 ## Related topics
 
-
-[How AppLocker works](how-applocker-works-techref.md)
-
- 
-
- 
-
-
-
-
-
+- [How AppLocker works](how-applocker-works-techref.md)

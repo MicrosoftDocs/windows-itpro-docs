@@ -2,30 +2,28 @@
 title: Domain member Digitally encrypt secure channel data (when possible) (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Domain member Digitally encrypt secure channel data (when possible) security policy setting.
 ms.assetid: 73e6023e-0af3-4531-8238-82f0f0e4965b
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Domain member: Digitally encrypt secure channel data (when possible)
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Digitally encrypt secure channel data (when possible)** security policy setting.
 
 ## Reference
 
-
-This setting determines whether all secure channel traffic that is initiated by the domain member meets minimum security requirements. Specifically, it determines whether all secure channel traffic that is initiated by the domain member must be encrypted. Logon information that is transmitted over the secure channel is always encrypted regardless of whether the encryption of all other secure channel traffic is negotiated.
+This setting determines whether all secure channel traffic that is initiated by the domain member meets minimum security requirements. Specifically, it determines whether all secure channel traffic that is initiated by the domain member must be encrypted. Logon information that is transmitted over 
+the secure channel is always encrypted regardless of whether the encryption of all other secure channel traffic is negotiated.
 
 In addition to this policy setting, the following policy settings determine whether a secure channel can be established with a domain controller that is not capable of signing or encrypting secure channel traffic:
 
 -   [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md)
-
 -   [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md)
 
 Setting **Domain member: Digitally encrypt or sign secure channel data (always)** to **Enabled** prevents establishing a secure channel with any domain controller that cannot sign or encrypt all secure channel data.
@@ -46,19 +44,14 @@ When a device joins a domain, a machine account is created. After joining the do
 
     The domain member will not attempt to negotiate secure channel encryption.
 
-    **Note**  
-    If the security policy setting [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md) is enabled, this setting will be overwritten.
-
+    >**Note:**  If the security policy setting [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md) is enabled, this setting will be overwritten.
      
-
 -   Not defined
 
 ### Best practices
 
 -   Set [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md) to **Enabled**.
-
 -   Set **Domain member: Digitally encrypt secure channel data (when possible)** to **Enabled**.
-
 -   Set [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) to **Enabled**.
 
 ### Location
@@ -69,49 +62,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Enabled| 
+| Stand-Alone Server Default Settings | Enabled| 
+| DC Effective Default Settings | Enabled| 
+| Member Server Effective Default Settings| Enabled| 
+| Client Computer Effective Default Settings | Enabled| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -125,7 +85,6 @@ Distribution of this policy through Group Policy does not override the Local Sec
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
@@ -137,9 +96,7 @@ When a device joins a domain, a machine account is created. After it joins the d
 Select one of the following settings as appropriate for your environment to configure the computers in your domain to encrypt or sign secure channel data:
 
 -   [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md)
-
 -   **Domain member: Digitally encrypt secure channel data (when possible)**
-
 -   [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md)
 
 ### Potential impact
@@ -148,14 +105,4 @@ Digital signing of the secure channel is a good idea because it protects domain 
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

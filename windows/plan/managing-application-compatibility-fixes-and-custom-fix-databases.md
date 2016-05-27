@@ -2,8 +2,9 @@
 title: Managing Application-Compatibility Fixes and Custom Fix Databases (Windows 10)
 description: This section provides information about managing your application-compatibility fixes and custom-compatibility fix databases. This section explains the reasons for using compatibility fixes and how to deploy custom-compatibility fix databases.
 ms.assetid: 9c2e9396-908e-4a36-ad67-2e40452ce017
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

@@ -2,24 +2,21 @@
 title: Interactive logon Display user information when the session is locked (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Display user information when the session is locked security policy setting.
 ms.assetid: 9146aa3d-9b2f-47ba-ac03-ff43efb10530
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Interactive logon: Display user information when the session is locked
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Display user information when the session is locked** security policy setting.
 
 ## Reference
-
-
 When a session is locked in a Windows operating system (meaning the user at the computer pressed CTRL+ALT+DEL and the Secure Desktop is displayed), user information is displayed. By default, this information is in the form of **&lt;user name&gt; is logged on**. The displayed user name is the user’s full name as set on the Properties page for that user. These settings do not apply to the logon tiles, which are displayed on the desktop after using the **Switch User** feature. The information that is displayed can be changed to meet your security requirements using the following possible values.
 
 ### Possible values
@@ -52,49 +49,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or Group Policy object (GPO)</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p><strong>User display name, domain and user names</strong></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p><strong>User display name, domain and user names</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Effective GPO default settings on client computers</p></td>
-<td align="left"><p><strong>User display name, domain and user names</strong></p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or Group Policy object (GPO) | Default value |
+| - | - |
+| Default domain policy| Not defined| 
+| Default domain controller policy | Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings | **User display name, domain and user names**| 
+| Member server effective default settings | **User display name, domain and user names**| 
+| Effective GPO default settings on client computers | **User display name, domain and user names**| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -111,7 +75,6 @@ None
 This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -133,14 +96,4 @@ If the policy is enabled and set to **Do not display user information**, an obse
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

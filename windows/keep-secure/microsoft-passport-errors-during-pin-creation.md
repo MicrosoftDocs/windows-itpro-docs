@@ -2,18 +2,17 @@
 title: Microsoft Passport errors during PIN creation (Windows 10)
 description: When you set up Microsoft Passport in Windows 10, you may get an error during the Create a work PIN step.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
-keywords: ["PIN", "error", "create a work PIN"]
-ms.prod: W10
+keywords: PIN, error, create a work PIN
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: jdeckerMS
 ---
 
 # Microsoft Passport errors during PIN creation
 
-
 **Applies to**
-
 -   Windows 10
 -   Windows 10 Mobile
 
@@ -21,26 +20,18 @@ When you set up Microsoft Passport in Windows 10, you may get an error during t
 
 ## Where is the error code?
 
-
 The following image shows an example of an error during **Create a work PIN**.
 
 ![](images/pinerror.png)
 
 ## Error mitigations
 
-
 When a user encounters an error when creating the work PIN, advise the user to try the following steps. Many errors can be mitigated by one of these steps.
-
 1.  Try to create the PIN again. Some errors are transient and resolve themselves.
-
 2.  Sign out, sign in, and try to create the PIN again.
-
 3.  Reboot the device and then try to create the PIN again.
-
 4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a desktop PC, go to **Settings** &gt; **System** &gt; **About** and select **Disconnect from organization**. To unjoin a device running Windows 10 Mobile, you must [reset the device](http://go.microsoft.com/fwlink/p/?LinkId=715697).
-
 5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](http://go.microsoft.com/fwlink/p/?LinkId=715697).
-
 If the error occurs again, check the error code against the following table to see if there is another mitigation for that error. When no mitigation is listed in the table, contact Microsoft Support for assistance.
 
 <table>
@@ -201,12 +192,8 @@ If the error occurs again, check the error code against the following table to s
 </tr>
 </tbody>
 </table>
-
  
-
 ## Errors with unknown mitigation
-
-
 For errors listed in this table, contact Microsoft Support for assistance.
 
 | Hex         | Cause                                                                                                 |
@@ -230,11 +217,9 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0x801C03F0  | ​There is no key registered for the user                                                              |
 | 0x801C03F1  | ​There is no UPN in the token                                                                         |
 | ​0x801C044C | There is no core window for the current thread                                                        |
-
  
 
 ## Related topics
-
 
 [Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
 
@@ -247,12 +232,3 @@ For errors listed in this table, contact Microsoft Support for assistance.
 [Microsoft Passport and password changes](microsoft-passport-and-password-changes.md)
 
 [Event ID 300 - Passport successfully created](passport-event-300.md)
-
- 
-
- 
-
-
-
-
-

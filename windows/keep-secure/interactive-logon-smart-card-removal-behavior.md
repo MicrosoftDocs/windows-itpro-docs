@@ -2,23 +2,21 @@
 title: Interactive logon Smart card removal behavior (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Smart card removal behavior security policy setting.
 ms.assetid: 61487820-9d49-4979-b15d-c7e735999460
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Interactive logon: Smart card removal behavior
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Interactive logon: Smart card removal behavior** security policy setting.
 
 ## Reference
-
 
 This policy setting determines what happens when the smart card for a logged-on user is removed from the smart card reader.
 
@@ -29,7 +27,6 @@ If you select **Force Logoff** in the property sheet for this policy setting, th
 ### Possible values
 
 -   No Action
-
 -   Lock Workstation
 
     If you select this, the workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
@@ -56,49 +53,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>No Action</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>No Action</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>No Action</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>No Action</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | No Action| 
+| DC Effective Default Settings | No Action| 
+| Member Server Effective Default Settings | No Action| 
+| Client Computer Effective Default Settings | No Action| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -115,7 +79,6 @@ None
 This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -137,14 +100,4 @@ If you select **Force Logoff**, users must insert their smart cards and enter th
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

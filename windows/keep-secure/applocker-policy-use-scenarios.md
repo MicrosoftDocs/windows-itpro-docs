@@ -2,17 +2,16 @@
 title: AppLocker policy use scenarios (Windows 10)
 description: This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
 ms.assetid: 33f71578-89f0-4063-ac04-cf4f4ca5c31f
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # AppLocker policy use scenarios
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
@@ -37,46 +36,27 @@ AppLocker can help you improve the management of application control and the mai
 
 5.  **Manageability improvement**
 
-    AppLocker policies can be modified and deployed through your existing Group Policy infrastructure and can work in conjunction with policies created by using Software Restriction Policies. As you manage ongoing change in your support of a business group's apps, you can modify policies and use the AppLocker cmdlets to test the policies for the expected results. You can also design application control policies for situations in which users share computers.
+    AppLocker policies can be modified and deployed through your existing Group Policy infrastructure and can work in conjunction with policies created by using Software Restriction Policies. As you manage ongoing change in your support of a business group's apps, you can modify policies and use 
+    the AppLocker cmdlets to test the policies for the expected results. You can also design application control policies for situations in which users share computers.
 
 ### Use scenarios
 
 The following are examples of scenarios in which AppLocker can be used:
 
 -   Your organization implements a policy to standardize the applications used within each business group, so you need to determine the expected usage compared to the actual usage.
-
 -   The security policy for application usage has changed, and you need to evaluate where and when those deployed apps are being accessed.
-
 -   Your organization's security policy dictates the use of only licensed software, so you need to determine which apps are not licensed or prevent unauthorized users from running licensed software.
-
 -   An app is no longer supported by your organization, so you need to prevent it from being used by everyone.
-
 -   Your organization needs to restrict the use of Universal Windows apps to just those your organization approves of or develops.
-
 -   The potential that unwanted software can be introduced in your environment is high, so you need to reduce this threat.
-
 -   The license to an app has been revoked or is expired in your organization, so you need to prevent it from being used by everyone.
-
 -   A new app or a new version of an app is deployed, and you need to allow certain groups to use it.
-
 -   Specific software tools are not allowed within the organization, or only specific users have access to those tools.
-
 -   A single user or small group of users needs to use a specific app that is denied for all others.
-
 -   Some computers in your organization are shared by people who have different software usage needs.
-
 -   In addition to other measures, you need to control the access to sensitive data through app usage.
 
 ## Related topics
-
-
-[AppLocker technical reference](applocker-technical-reference.md)
-
+- [AppLocker technical reference](applocker-technical-reference.md)
  
-
  
-
-
-
-
-

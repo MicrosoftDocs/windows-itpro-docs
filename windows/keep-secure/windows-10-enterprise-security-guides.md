@@ -2,22 +2,21 @@
 title: Enterprise security guides (Windows 10)
 description: Get proven guidance to help you better secure and protect your enterprise by using technologies such as Credential Guard, Device Guard, Microsoft Passport, and Windows Hello. This section offers technology overviews and step-by-step guides.
 ms.assetid: 57134f84-bd4b-4b1d-b663-4a2d36f5a7f8
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security, devices
 author: challum
+
 ---
 
 # Enterprise security guides
 
-
 ## Purpose
-
 
 Get proven guidance to help you better secure and protect your enterprise by using technologies such as Credential Guard, Device Guard, Microsoft Passport, and Windows Hello. This section offers technology overviews and step-by-step guides.
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -53,14 +52,6 @@ Get proven guidance to help you better secure and protect your enterprise by usi
 </tr>
 </tbody>
 </table>
-
  
-
  
-
  
-
-
-
-
-

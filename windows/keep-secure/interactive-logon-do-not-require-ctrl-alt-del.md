@@ -2,23 +2,20 @@
 title: Interactive logon Do not require CTRL+ALT+DEL (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Do not require CTRL+ALT+DEL security policy setting.
 ms.assetid: 04e2c000-2eb2-4d4b-8179-1e2cb4793e18
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
-
 # Interactive logon: Do not require CTRL+ALT+DEL
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Do not require CTRL+ALT+DEL** security policy setting.
 
 ## Reference
-
 
 This security setting determines whether pressing CTRL+ALT+DEL is required before a user can log on.
 
@@ -33,9 +30,7 @@ A malicious user might install malware that looks like the standard logon dialog
 ### Possible values
 
 -   Enabled
-
 -   Disabled
-
 -   Not defined
 
 ### Best practices
@@ -50,49 +45,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Disabled| 
+| DC Effective Default Settings | Disabled| 
+| Member Server Effective Default Settings | Disabled| 
+| Client Computer Effective Default Settings | Disabled| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -109,7 +71,6 @@ Beginning with Windows Server 2008 and Windows Vista, the CTRL+ALT+DELETE key
 This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -129,14 +90,4 @@ Unless they use a smart card to log on, users must simultaneously press the thre
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)
