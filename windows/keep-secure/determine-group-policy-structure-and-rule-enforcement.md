@@ -2,7 +2,7 @@
 title: Determine the Group Policy structure and rule enforcement (Windows 10)
 description: This overview topic describes the process to follow when you are planning to deploy AppLocker rules.
 ms.assetid: f435fcbe-c7ac-4ef0-9702-729aab64163f
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

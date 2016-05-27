@@ -2,7 +2,7 @@
 title: Accounts Block Microsoft accounts (Windows 10)
 description: Describes the best practices, location, values, management, and security considerations for the Accounts Block Microsoft accounts security policy setting.
 ms.assetid: 94c76f45-057c-4d80-8d01-033cf28ef2f7
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

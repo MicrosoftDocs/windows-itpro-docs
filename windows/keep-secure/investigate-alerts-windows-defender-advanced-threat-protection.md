@@ -3,9 +3,10 @@ title: Investigate Windows Defender Advanced Threat Protection alerts
 description: Use the investigation options to get details on which alerts are affecting your network, what they mean, and how to resolve them.
 keywords: investigate, investigation, machines, machine, endpoints, endpoint, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 ---
 
 # Investigate Windows Defender Advanced Threat Protection alerts

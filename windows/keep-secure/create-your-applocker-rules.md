@@ -2,7 +2,7 @@
 title: Create Your AppLocker rules (Windows 10)
 description: This topic for the IT professional describes what you need to know about AppLocker rules and the methods that you can to create rules.
 ms.assetid: b684a3a5-929c-4f70-8742-04088022f232
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
