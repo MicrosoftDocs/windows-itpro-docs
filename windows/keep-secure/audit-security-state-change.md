@@ -2,44 +2,37 @@
 title: Audit Security State Change (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Security State Change, which determines whether Windows generates audit events for changes in the security state of a system.
 ms.assetid: decb3218-a67d-4efa-afc0-337c79a89a2d
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: security
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Security State Change
 
 **Applies to**
--   Windows 10
--   Windows 10 Mobile
+-   Windows 10
+-   Windows Server 2016
 
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Security State Change**, which determines whether Windows generates audit events for changes in the security state of a system.
 
-Changes in the security state of the operating system include:
+Audit Security State Change contains Windows startup, recovery, and shutdown events, and information about changes in system time.
 
--   System startup and shutdown.
--   Change of system time.
--   System recovery from **CrashOnAuditFail**. This event is logged after a system reboots following **CrashOnAuditFail**.
+**Event volume**: Low.
 
-    > **Important:**  Some auditable activity may not be recorded when a system restarts due to **CrashOnAuditFail**.
-     
-System startup and shutdown events are important for understanding system usage.
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                      |
+|-------------------|-----------------|-----------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | Yes             | No              | Yes              | No               | The volume of events in this subcategory is very low and all of them are important events and have security relevance. <br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Member Server     | Yes             | No              | Yes              | No               | The volume of events in this subcategory is very low and all of them are important events and have security relevance. <br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Workstation       | Yes             | No              | Yes              | No               | The volume of events in this subcategory is very low and all of them are important events and have security relevance. <br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
 
-Event volume: Low
+**Events List:**
 
-Default: Success
+-   [4608](event-4608.md)(S): Windows is starting up.
 
-| Event ID | Event message summary | Minimum requirement |
-| - | - | - |
-| 4608 | Windows is starting up. | Windows Vista, Windows Server 2008 | 
-| 4609 | Windows is shutting down. | Windows Vista, Windows Server 2008 |
-| 4616 | The system time was changed.| Windows Vista, Windows Server 2008 |
-| 4621 | Administrator recovered system from CrashOnAuditFail. Users who are not administrators will now be allowed to log on. Some auditable activity might not have been recorded.| Windows Vista, Windows Server 2008 | 
- 
-## Related topics
+-   [4616](event-4616.md)(S): The system time was changed.
 
-- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
- 
- 
+-   [4621](event-4621.md)(S): Administrator recovered system from CrashOnAuditFail.
+
+>**Note**&nbsp;&nbsp;Event **4609(S): Windows is shutting down** currently doesn’t generate. It is a defined event, but it is never invoked by the operating system.
+

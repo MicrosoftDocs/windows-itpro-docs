@@ -2,37 +2,37 @@
 title: Audit Handle Manipulation (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Handle Manipulation, which determines whether the operating system generates audit events when a handle to an object is opened or closed.
 ms.assetid: 1fbb004a-ccdc-4c80-b3da-a4aa7a9f4091
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: security
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Handle Manipulation
 
 **Applies to**
--   Windows 10
+-   Windows 10
+-   Windows Server 2016
 
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Handle Manipulation**, which determines whether the operating system generates audit events when a handle to an object is opened or closed.
 
-Only objects with configured system access control lists (SACLs) generate these events, and only if the attempted handle operation matches the SACL.
+Audit Handle Manipulation enables generation of “4658: The handle to an object was closed” in [Audit File System](#_Audit_File_System), [Audit Kernel Object](#_Audit_Kernel_Object), [Audit Registry](#_Audit_Registry), [Audit Removable Storage](#_Audit_Removable_Storage) and [Audit SAM](#_Audit_SAM) subcategories, and shows object’s handle duplication and close actions.
 
-> **Important:**  Handle Manipulation events are generated only for object types where the corresponding File System or Registry Object Access subcategory is enabled. For more information, see [Audit File System](audit-file-system.md) or [Audit Registry](audit-registry.md).
- 
+**Event volume**: High.
 
-Event volume: High, depending on how SACLs are configured
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                     |
+|-------------------|-----------------|-----------------|------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | No              | No              | No               | No               | Typically, information about the duplication or closing of an object handle has little to no security relevance and is hard to parse or analyze.<br>There is no recommendation to enable this subcategory for Success or Failure auditing, unless you know exactly what you need to monitor in Object’s Handles level. |
+| Member Server     | No              | No              | No               | No               | Typically, information about the duplication or closing of an object handle has little to no security relevance and is hard to parse or analyze.<br>There is no recommendation to enable this subcategory for Success or Failure auditing, unless you know exactly what you need to monitor in Object’s Handles level. |
+| Workstation       | No              | No              | No               | No               | Typically, information about the duplication or closing of an object handle has little to no security relevance and is hard to parse or analyze.<br>There is no recommendation to enable this subcategory for Success or Failure auditing, unless you know exactly what you need to monitor in Object’s Handles level. |
 
-Default: Not configured
+**Events List:**
 
-| Event ID | Event message |
-| - | - |
-| 4656 | A handle to an object was requested. | 
-| 4658 | The handle to an object was closed.  |
-| 4690 | An attempt was made to duplicate a handle to an object. | 
- 
-## Related topics
+-   [4658](event-4658.md)(S): The handle to an object was closed.
 
-- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
- 
- 
+-   [4690](event-4690.md)(S): An attempt was made to duplicate a handle to an object.
+
+## 4658(S): The handle to an object was closed.
+
+This event doesn’t generate in this subcategory, but you can use this subcategory to enable it. For a description of the event, see “[4658](event-4658.md)(S): The handle to an object was closed” in the Audit File System subcategory.
+

@@ -2,37 +2,37 @@
 title: Audit DPAPI Activity (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit DPAPI Activity, which determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface (DPAPI).
 ms.assetid: be4d4c83-c857-4e3d-a84e-8bcc3f2c99cd
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: security
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit DPAPI Activity
 
 **Applies to**
--   Windows 10
--   Windows 10 Mobile
+-   Windows 10
+-   Windows Server 2016
 
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit DPAPI Activity**, which determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface (DPAPI).
-DPAPI is used to protect secret information such as stored passwords and key information. For more information about DPAPI, see [Windows Data Protection](http://go.microsoft.com/fwlink/p/?linkid=121720) (http://go.microsoft.com/fwlink/p/?linkid=121720).
 
-Event volume: Low
+Audit [DPAPI](https://msdn.microsoft.com/en-us/library/ms995355.aspx) Activity determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface ([DPAPI](https://msdn.microsoft.com/en-us/library/ms995355.aspx)).
 
-Default: Not configured
+**Event volume**: Low.
 
-If this policy setting is configured, the following events appear on computers running the supported versions of the Windows operating system as designated in the **Applies To** list at the beginning of this topic, in addition to Windows Server 2008 and Windows Vista.
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                     |
+|-------------------|-----------------|-----------------|------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | IF              | IF              | IF               | IF               | IF – Events in this subcategory typically have an informational purpose and it is difficult to detect any malicious activity using these events. It’s mainly used for DPAPI troubleshooting. |
+| Member Server     | IF              | IF              | IF               | IF               | IF – Events in this subcategory typically have an informational purpose and it is difficult to detect any malicious activity using these events. It’s mainly used for DPAPI troubleshooting. |
+| Workstation       | IF              | IF              | IF               | IF               | IF – Events in this subcategory typically have an informational purpose and it is difficult to detect any malicious activity using these events. It’s mainly used for DPAPI troubleshooting. |
 
-| Event ID | Event message |
-| - | - |
-| 4692 | Backup of data protection master key was attempted. | 
-| 4693 | Recovery of data protection master key was attempted. | 
-| 4694 | Protection of auditable protected data was attempted. |
-| 4695 | Unprotection of auditable protected data was attempted. | 
- 
-## Related resource
+**Events List:**
 
-- [Advanced Security Audit Policy Settings](advanced-security-audit-policy-settings.md)
- 
- 
+-   [4692](event-4692.md)(S, F): Backup of data protection master key was attempted.
+
+-   [4693](event-4693.md)(S, F): Recovery of data protection master key was attempted.
+
+-   [4694](event-4694.md)(S, F): Protection of auditable protected data was attempted.
+
+-   [4695](event-4695.md)(S, F): Unprotection of auditable protected data was attempted.
+
