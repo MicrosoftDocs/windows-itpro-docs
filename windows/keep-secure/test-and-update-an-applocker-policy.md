@@ -2,7 +2,7 @@
 title: Test and update an AppLocker policy (Windows 10)
 description: This topic discusses the steps required to test an AppLocker policy prior to deployment.
 ms.assetid: 7d53cbef-078c-4d20-8b00-e821e33b6ea1
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

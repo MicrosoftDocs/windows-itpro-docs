@@ -2,7 +2,7 @@
 title: Monitor app usage with AppLocker (Windows 10)
 description: This topic for IT professionals describes how to monitor app usage when AppLocker policies are applied.
 ms.assetid: 0516da6e-ebe4-45b4-a97b-31daba96d1cf
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -2,7 +2,7 @@
 title: Run the Automatically Generate Rules wizard (Windows 10)
 description: This topic for IT professionals describes steps to run the wizard to create AppLocker rules on a reference device.
 ms.assetid: 8cad1e14-d5b2-437c-8f88-70cffd7b3d8e
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
