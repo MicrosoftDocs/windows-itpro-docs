@@ -3,7 +3,7 @@ title: Appendix Information sent to Microsoft during activation (Windows 10)
 ms.assetid: 4bfff495-07d0-4385-86e3-7a077cbd64b8
 description: 
 keywords: vamt, volume activation, activation, windows activation
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
