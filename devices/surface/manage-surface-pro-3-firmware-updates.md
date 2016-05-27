@@ -2,11 +2,12 @@
 title: Manage Surface driver and firmware updates (Surface)
 description: This article describes the available options to manage firmware and driver updates for Surface devices.
 ms.assetid: CD1219BA-8EDE-4BC8-BEEF-99B50C211D73
-keywords: ["Surface, Surface Pro 3, firmware, update, device, manage, deploy, driver, USB"]
-ms.prod: W10
+keywords: Surface, Surface Pro 3, firmware, update, device, manage, deploy, driver, USB
+ms.prod: w10
 ms.mktglfcycl: manage
+ms.pagetype: surface, devices
 ms.sitesec: library
-author: heatherpoulsen
+author: jobotto
 ---
 
 # Manage Surface driver and firmware updates

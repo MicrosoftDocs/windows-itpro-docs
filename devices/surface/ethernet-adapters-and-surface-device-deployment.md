@@ -2,11 +2,12 @@
 title: Ethernet adapters and Surface deployment (Surface)
 description: This article provides guidance and answers to help you perform a network deployment to Surface devices.
 ms.assetid: 5273C59E-6039-4E50-96B3-426BB38A64C0
-keywords: ["ethernet, deploy, removable, network, connectivity, boot, firmware, device, adapter, PXE boot, USB"]
-ms.prod: W10
+keywords: ethernet, deploy, removable, network, connectivity, boot, firmware, device, adapter, PXE boot, USB
+ms.prod: w10
 ms.mktglfcycl: deploy
+ms.pagetype: surface, devices
 ms.sitesec: library
-author: heatherpoulsen
+author: jobotto
 ---
 
 # Ethernet adapters and Surface deployment
@@ -53,7 +54,7 @@ To boot a Surface device from an alternative boot device, follow these steps:
 3.  Press and release the **Power** button.
 4.  After the system begins to boot from the USB stick or Ethernet adapter, release the **Volume Down** button.
 
-**Note**  In addition to an Ethernet adapter, a keyboard must also be connected to the Surface device to enter the preinstallation environment and navigate the deployment wizard.
+>**Note:**&nbsp;&nbsp;In addition to an Ethernet adapter, a keyboard must also be connected to the Surface device to enter the preinstallation environment and navigate the deployment wizard.
 
  
 

@@ -2,8 +2,9 @@
 title: Analyzing Your Compatibility Data (Windows 10)
 description: This section provides information about viewing and working with your compatibility data in Application Compatibility Manager (ACM).
 ms.assetid: b98f3d74-fe22-41a2-afe8-2eb2799933a1
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

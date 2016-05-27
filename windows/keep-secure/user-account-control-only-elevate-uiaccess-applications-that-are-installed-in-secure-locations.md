@@ -5,34 +5,27 @@ ms.assetid: 4333409e-a5be-4f2f-8808-618f53abd22c
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # User Account Control: Only elevate UIAccess applications that are installed in secure locations
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Only elevate UIAccess applications that are installed in secure locations** security policy setting.
 
 ## Reference
 
-
 This policy setting enforces the requirement that apps that request running with a UIAccess integrity level (by means of a marking of UIAccess=true in their app manifest), must reside in a secure location on the file system. Relatively secure locations are limited to the following directories:
 
 -   \\Program Files\\ including subdirectories
-
 -   \\Windows\\system32\\
-
 -   \\Program Files (x86)\\ including subdirectories for 64-bit versions of Windows
 
-**Note**  
-Windows enforces a PKI signature check on any interactive application that requests running with a UIAccess integrity level, regardless of the state of this security setting.
-
+>**Note:**  Windows enforces a PKI signature check on any interactive application that requests running with a UIAccess integrity level, regardless of the state of this security setting.
  
-
 **Background**
 
 User Interface Privilege Isolation (UIPI) implements restrictions in the Windows subsystem that prevent lower-privilege applications from sending messages or installing hooks in higher-privilege processes. Higher-privilege applications are permitted to send messages to lower-privilege processes. UIPI does not interfere with or change the behavior of messages between applications at the same privilege (or integrity) level.
@@ -44,11 +37,9 @@ However, there might be times when an administrative user runs an application wi
 If an application presents a UIAccess attribute when it requests privileges, the application is stating a requirement to bypass UIPI restrictions for sending messages across privilege levels. Devices implement the following policy checks before starting an application with UIAccess privilege.
 
 1.  The application must have a digital signature that can be verified by using a digital certificate that is associated with the Trusted Root Certification Authorities store on the local device
-
 2.  The application must be installed in a local folder that is writeable only by administrators, such as the Program Files directory. The allowed directories for UI automation applications are:
 
     1.  %ProgramFiles% and its subdirectories.
-
     2.  %WinDir% and its subdirectories, except a few subdirectories that are excluded because standard users have write access.
 
 ### Possible values
@@ -73,49 +64,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Enabled| 
+| DC Effective Default Settings | Enabled| 
+| Member Server Effective Default Settings| Enabled| 
+| Client Computer Effective Default Settings | Enabled| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -129,7 +87,6 @@ All auditing capabilities are integrated in Group Policy. You can configure, dep
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
@@ -137,13 +94,9 @@ This section describes how an attacker might exploit a feature or its configurat
 UIAccess integrity allows an application to bypass User Interface Privilege Isolation (UIPI) restrictions when an application is elevated in privilege from a standard user to an administrator. When this setting is enabled, an application that has the UIAccess flag set to true in its manifest can interchange information with applications that are running at a higher privilege level, such as logon prompts and privilege elevation prompts. This ability is required to support accessibility features such as screen readers that are transmitting user interfaces to alternative forms, but it is not required by most applications. A process that is started with UIAccess rights has the following abilities:
 
 -   Set the foreground window.
-
 -   Drive any application window by using the SendInput function.
-
 -   Use read input for all integrity levels by using low-level hooks, raw input, GetKeyState, GetAsyncKeyState, and GetKeyboardInput.
-
 -   Set journal hooks.
-
 -   Use AttachThreadInput to attach a thread to a higher integrity input queue.
 
 ### Countermeasure
@@ -156,14 +109,4 @@ If the application that requests UIAccess meets the UIAccess setting requirement
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

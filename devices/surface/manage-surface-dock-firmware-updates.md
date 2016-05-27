@@ -2,10 +2,12 @@
 title: Manage Surface Dock firmware updates (Surface)
 description: Read about the different methods you can use to manage the process of Surface Dock firmware updates.
 ms.assetid: 86DFC0C0-C842-4CD1-A2D7-4425471FFE3F
-ms.prod: W10
+keywords: firmware, update, install, drivers
+ms.prod: w10
 ms.mktglfcycl: manage
+ms.pagetype: surface, devices
 ms.sitesec: library
-author: heatherpoulsen
+author: jobotto
 ---
 
 # Manage Surface Dock firmware updates
@@ -13,16 +15,13 @@ author: heatherpoulsen
 
 Read about the different methods you can use to manage the process of Surface Dock firmware updates.
 
-The Surface Dock provides external connectivity to Surface devices through a single cable connection that includes Power, Ethernet, Audio, USB 3.0, and DisplayPort. The numerous connections provided by the Surface Dock are enabled by a smart chipset within the Surface Dock device. Like a Surface device’s chipset, the chipset that is built into the Surface Dock is controlled by firmware.
+The Surface Dock provides external connectivity to Surface devices through a single cable connection that includes Power, Ethernet, Audio, USB 3.0, and DisplayPort. The numerous connections provided by the Surface Dock are enabled by a smart chipset within the Surface Dock device. Like a Surface device’s chipset, the chipset that is built into the Surface Dock is controlled by firmware. For more information about the Surface Dock, see the [Surface Dock demonstration](https://technet.microsoft.com/en-us/mt697552) video.
 
 Like the firmware for Surface devices, firmware for Surface Dock is also contained within a downloaded driver that is visible in Device Manager. This driver stages the firmware update files on the Surface device. When a Surface Dock is connected and the driver is loaded, the newer version of the firmware staged by the driver is detected and firmware files are copied to the Surface Dock. The Surface Dock then begins a two-phase process to apply the firmware internally. Each phase requires the Surface Dock to be disconnected from the Surface device before the firmware is applied. The driver copies the firmware into the dock, but only applies it when the user disconnects the Surface device from the Surface Dock. This ensures that there are no disruptions because the firmware is only applied when the user leaves their desk with the device.
 
-**Note**  
-You can learn more about the firmware update process for Surface devices and how firmware is updated through driver installation at the following links:
-
--   [How to manage and update your drivers and firmware for Surface](http://go.microsoft.com/fwlink/p/?LinkId=785353) from Microsoft Mechanics
-
--   [Windows Update Makes Surface Better](http://go.microsoft.com/fwlink/p/?LinkId=785354)on the Microsoft Devices Blog
+>**Note:**&nbsp;&nbsp;You can learn more about the firmware update process for Surface devices and how firmware is updated through driver installation at the following links:<br/>
+- [How to manage and update Surface drivers and firmware](https://technet.microsoft.com/en-us/mt697551) from Microsoft Mechanics
+- [Windows Update Makes Surface Better](http://go.microsoft.com/fwlink/p/?LinkId=785354) on the Microsoft Devices Blog
 
  
 
@@ -70,8 +69,7 @@ There are three methods you can use to update the firmware of the Surface Dock:
 
 Windows Update is the method that most users will use. The drivers for the Surface Dock are downloaded automatically from Windows Update and the dock update process is initiated without additional user interaction. The two-phase dock update process described earlier occurs in the background as the user connects and disconnects the Surface Dock during normal use.
 
-**Note**  
-The driver version that is displayed in Device Manager may be different from the firmware version that the Surface Dock is using.
+>**Note:**&nbsp;&nbsp;The driver version that is displayed in Device Manager may be different from the firmware version that the Surface Dock is using.
 
  
 
@@ -82,10 +80,8 @@ This method is used mostly in environments where Surface device drivers and firm
 
 For more information about how to deploy MSI packages see [Create and deploy an application with System Center Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=785355).
 
-**Note**  
-When drivers are installed through Windows Update or the MSI package, registry keys are added that indicate the version of firmware installed on the Surface Dock and contained within the Surface Dock driver. These registry keys can be found in:
-
-**HLKM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\SurfaceDockFwUpdate\\Parameters**
+>**Note:**&nbsp;&nbsp;When drivers are installed through Windows Update or the MSI package, registry keys are added that indicate the version of firmware installed on the Surface Dock and contained within the Surface Dock driver. These registry keys can be found in:<br/><br/>
+  **HLKM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\SurfaceDockFwUpdate\\Parameters**
 
 Firmware status is displayed for both the main chipset (displayed as **Component10**) and the DisplayPort chipset (displayed as **Component20**). For each chipset there are four keys, where *xx* is **10** or **20** corresponding to each chipset:
 
@@ -97,7 +93,7 @@ Firmware status is displayed for both the main chipset (displayed as **Component
 
 -   **Component*xx*FirmwareUpdateStatusRejectReason** – This key changes as the firmware update is processed. It should result in 0 after the successful installation of Surface Dock firmware.
 
-These registry keys are not present unless you have installed updated Surface Dock drivers through Windows Update or MSI deployment.
+>**Note:**&nbsp;&nbsp;These registry keys are not present unless you have installed updated Surface Dock drivers through Windows Update or MSI deployment.
 
  
 

@@ -4,6 +4,7 @@
 ## [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)
 ## [Manage corporate devices](manage-corporate-devices.md)
 ### [New policies for Windows 10](new-policies-for-windows-10.md)
+### [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 ### [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
 ### [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 ### [Introduction to configuration service providers (CSPs)](how-it-pros-can-use-configuration-service-providers.md)

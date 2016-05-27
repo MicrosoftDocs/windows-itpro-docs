@@ -2,10 +2,10 @@
 title: Exclude Files and Settings (Windows 10)
 description: Exclude Files and Settings
 ms.assetid: df85baf1-6e29-4995-a4bb-ba3f8f7fed0b
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Exclude Files and Settings

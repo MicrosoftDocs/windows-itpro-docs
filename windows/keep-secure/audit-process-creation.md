@@ -5,14 +5,13 @@ ms.assetid: 67e39fcd-ded6-45e8-b1b6-d411e4e93019
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Audit Process Creation
 
-
 **Applies to**
-
 -   Windows 10
 -   Windows 10 Mobile
 
@@ -24,41 +23,13 @@ Event volume: Low to medium, depending on system usage
 
 Default: Not configured
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4688</p></td>
-<td align="left"><p>A new process has been created.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4696</p></td>
-<td align="left"><p>A primary token was assigned to a process.</p></td>
-</tr>
-</tbody>
-</table>
-
+| Event ID | Event message |
+| - | - |
+| 4688 | A new process has been created.| 
+| 4696 | A primary token was assigned to a process.| 
  
-
 ## Related topics
 
-
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
+- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
  
-
  
-
-
-
-
-

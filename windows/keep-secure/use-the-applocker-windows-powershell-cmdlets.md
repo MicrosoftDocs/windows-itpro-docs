@@ -5,28 +5,30 @@ ms.assetid: 374e029c-5c0a-44ab-a57a-2a9dd17dc57d
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Use the AppLocker Windows PowerShell cmdlets
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for IT professionals describes how each AppLocker Windows PowerShell cmdlet can help you administer your AppLocker application control policies.
 
 ## AppLocker Windows PowerShell cmdlets
 
+The five AppLocker cmdlets are designed to streamline the administration of an AppLocker policy. They can be used to help create, test, maintain, and troubleshoot an AppLocker policy. The cmdlets are intended to be used in conjunction with the AppLocker user interface that is accessed through the 
+Microsoft Management Console (MMC) snap-in extension to the Local Security Policy snap-in and Group Policy Management Console.
 
-The five AppLocker cmdlets are designed to streamline the administration of an AppLocker policy. They can be used to help create, test, maintain, and troubleshoot an AppLocker policy. The cmdlets are intended to be used in conjunction with the AppLocker user interface that is accessed through the Microsoft Management Console (MMC) snap-in extension to the Local Security Policy snap-in and Group Policy Management Console.
-
-To edit or update a Group Policy Object (GPO) by using the AppLocker cmdlets, you must have Edit Setting permission. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission. To perform tasks by using the Local Security policy snap-in, you must be a member of the local **Administrators** group, or equivalent, on the computer.
+To edit or update a Group Policy Object (GPO) by using the AppLocker cmdlets, you must have Edit Setting permission. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission. To perform tasks by using the 
+Local Security policy snap-in, you must be a member of the local **Administrators** group, or equivalent, on the computer.
 
 ### Retrieve application information
 
-The [Get-AppLockerFileInformation](http://technet.microsoft.com/library/hh847209.aspx) cmdlet retrieves the AppLocker file information from a list of files or from an event log. File information that is retrieved can include publisher information, file hash information, and file path information. File information from an event log may not contain all of these fields. Files that are not signed do not have any publisher information.
+The [Get-AppLockerFileInformation](http://technet.microsoft.com/library/hh847209.aspx) cmdlet retrieves the AppLocker file information from a list of files or from an event log. File information that is retrieved can include publisher information, file hash information, and file path information. 
+
+File information from an event log may not contain all of these fields. Files that are not signed do not have any publisher information.
 
 ### Set AppLocker policy
 
@@ -38,7 +40,8 @@ The [Get-AppLockerPolicy](http://technet.microsoft.com/library/hh847214.aspx) cm
 
 ### Generate rules for a given user or group
 
-The [New-AppLockerPolicy](http://technet.microsoft.com/library/hh847211.aspx) cmdlet uses a list of file information to automatically generate rules for a given user or group. It can generate rules based on publisher, hash, or path information. Use **Get-AppLockerFileInformation** to create the list of file information.
+The [New-AppLockerPolicy](http://technet.microsoft.com/library/hh847211.aspx) cmdlet uses a list of file information to automatically generate rules for a given user or group. It can generate rules based on publisher, hash, or path information. Use **Get-AppLockerFileInformation** to create the 
+list of file information.
 
 ### Test the AppLocker Policy against a file set
 
@@ -46,14 +49,4 @@ The [Test-AppLockerPolicy](http://technet.microsoft.com/library/hh847213.aspx) c
 
 ## Additional resources
 
-
 -   For steps to perform other AppLocker policy tasks, see [Administer AppLocker](administer-applocker.md).
-
- 
-
- 
-
-
-
-
-

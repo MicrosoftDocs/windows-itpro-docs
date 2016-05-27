@@ -5,27 +5,24 @@ ms.assetid: f88cd819-3dd1-4e38-b560-13fe6881b609
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Maximum lifetime for user ticket renewal
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for user ticket renewal** security policy setting.
 
 ## Reference
 
-
 The **Maximum lifetime for user ticket renewal** policy setting determines the period of time (in days) during which a user’s ticket-granting ticket can be renewed.
 
 The possible values for this Group Policy setting are:
 
 -   A user-defined number of days from 0 through 99,999
-
 -   Not defined
 
 ### Best practices
@@ -42,47 +39,15 @@ Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\K
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>7 days</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>7 days</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| 7 days| 
+| Default Domain Controller Policy| Not defined| 
+| Stand-Alone Server Default Settings | Not applicable| 
+| Domain Controller Effective Default Settings | 7 days| 
+| Member Server Effective Default Settings | Not applicable| 
+| Client Computer Effective Default Settings | Not applicable| 
  
-
 ### Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -98,17 +63,13 @@ Client devices will get the new setting during the next scheduled and successful
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -126,14 +87,4 @@ None. This is the default configuration.
 
 ## Related topics
 
-
-[Kerberos Policy](kerberos-policy.md)
-
- 
-
- 
-
-
-
-
-
+- [Kerberos Policy](kerberos-policy.md)

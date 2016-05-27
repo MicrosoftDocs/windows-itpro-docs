@@ -5,20 +5,18 @@ ms.assetid: 229a385a-a862-4973-899a-413b1b5b6c30
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Remove computer from docking station
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Remove computer from docking station** security policy setting.
 
 ## Reference
-
 
 This security setting determines whether a user can undock a portable device from its docking station without logging on. This policy setting only affects scenarios that involve a portable computer and its docking station.
 
@@ -29,7 +27,6 @@ Constant: SeUndockPrivilege
 ### Possible values
 
 -   User-defined list of accounts
-
 -   Not Defined
 
 ### Best practices
@@ -46,49 +43,16 @@ Although this portable device scenario does not normally apply to servers, by de
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Administrators| 
+| Stand-Alone Server Default Settings | Administrators| 
+| Domain Controller Effective Default Settings | Administrators| 
+| Member Server Effective Default Settings | Administrators| 
+| Client Computer Effective Default Settings | Administrators| 
  
-
 ## Policy management
-
 
 This section describes features, tools, and guidance to help you manage this policy.
 
@@ -101,17 +65,13 @@ Any change to the user rights assignment for an account becomes effective the ne
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -120,11 +80,8 @@ This section describes how an attacker might exploit a feature or its configurat
 Anyone who has the **Remove computer from docking station** user right can log on and then remove a portable device from its docking station. If this setting is not defined, it has the same effect as if everyone was granted this right. However, the value of implementing this countermeasure is reduced by the following factors:
 
 -   If attackers can restart the device, they could remove it from the docking station after the BIOS starts but before the operating system starts.
-
 -   This setting does not affect servers because they typically are not installed in docking stations.
-
 -   An attacker could steal the device and the docking station together.
-
 -   Devices that can be mechanically undocked can be physically removed by the user whether or not they use the Windows undocking functionality.
 
 ### Countermeasure
@@ -137,14 +94,4 @@ By default, only members of the local Administrators group are granted this righ
 
 ## Related topics
 
-
-[User Rights Assignment](user-rights-assignment.md)
-
- 
-
- 
-
-
-
-
-
+- [User Rights Assignment](user-rights-assignment.md)

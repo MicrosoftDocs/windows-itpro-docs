@@ -5,20 +5,18 @@ ms.assetid: 5cb6519a-4f84-4b45-8072-e2aa8a72fb78
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # System settings: Optional subsystems
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **System settings: Optional subsystems** security policy setting.
 
 ## Reference
-
 
 This policy setting determines which subsystems support your applications. You can use this security setting to specify as many subsystems as your environment demands.
 
@@ -27,7 +25,6 @@ The subsystem introduces a security risk that is related to processes that can p
 ### Possible values
 
 -   User-defined list of subsystems
-
 -   Not defined
 
 ### Best practices
@@ -42,49 +39,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>POSIX</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>POSIX</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>POSIX</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>POSIX</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | POSIX| 
+| DC Effective Default Settings | POSIX| 
+| Member Server Effective Default Settings| POSIX| 
+| Client Computer Effective Default Settings | POSIX| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -93,7 +57,6 @@ This section describes features and tools that are available to help you manage 
 None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -113,14 +76,4 @@ Applications that rely on the POSIX subsystem no longer operate. For example, Mi
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

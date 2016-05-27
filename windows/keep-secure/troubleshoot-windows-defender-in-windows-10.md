@@ -5,20 +5,18 @@ ms.assetid: EE488CC1-E340-4D47-B50B-35BD23CB4D70
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security
 author: jasesso
 ---
 
 # Troubleshoot Windows Defender in Windows 10
 
-
 **Applies to**
-
 -   Windows 10
 
 IT professionals can review information about event IDs in Windows Defender for Windows 10 and see any relevant action they can take.
 
 ## Windows Defender client event IDs
-
 
 This section provides the following information about Windows Defender client events:
 
@@ -314,7 +312,6 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>The Windows Defender client encountered an error, and the current scan has stopped. The scan might fail due to a client-side issue. This event record includes the scan ID, type of scan (antivirus, antispyware, antimalware), scan parameters, the user that started the scan, the error code, and a description of the error.
-
 </p>
 <p>To troubleshoot this event:
 <ol>
@@ -1476,7 +1473,6 @@ Description of the error. </dt>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-
 <p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 </ol>
@@ -1580,7 +1576,6 @@ Description of the error. </dt>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-
 <p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 </ol>
@@ -1637,7 +1632,6 @@ Description of the error. </dt>
 <ol>
 <li>Restart the computer and try again.</li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-
 <p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 <li>Contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
@@ -2469,9 +2463,6 @@ or Hang</dt>
 <li>Try to restart the service.<ul>
 <li>For antimalware, antivirus and spyware, at an elevated command prompt, type <b>net stop msmpsvc</b>, and then type <b>net start msmpsvc</b> to restart the antimalware engine.</li>
 <li>For the <i>Network Inspection System</i>, at an elevated command prompt, type <b>net start nissrv</b>, and then type <b>net start nissrv</b> to restart the <i>Network Inspection System</i> engine by using the NiSSRV.exe file.
-
-
-
 </li>
 </ul>
 </li>
@@ -2672,20 +2663,13 @@ Description of the error. </dt>
 </td>
 </tr>
 </table>
-
 ## Windows Defender client error codes
-
-
 If Windows Defender experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
-
 This section provides the following information about Windows Defender client errors.
-
 -   The error code
 -   The possible reason for the error
 -   Advice on what to do now
-
 Use the information in these tables to help troubleshoot Windows Defender error codes.
-
 <table>
 <tr>
 <th colspan="4">External error codes</th>
@@ -2737,7 +2721,6 @@ Use the information in these tables to help troubleshoot Windows Defender error 
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-
 <p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 </ol>
@@ -2981,7 +2964,6 @@ article</a>.</p>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
 <li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-
 <p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 </ol>
@@ -3289,15 +3271,5 @@ article</a>.</p>
 
 ## Related topics
 
-[Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
-
-[Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
-
- 
-
- 
-
-
-
-
-
+- [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
+- [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)

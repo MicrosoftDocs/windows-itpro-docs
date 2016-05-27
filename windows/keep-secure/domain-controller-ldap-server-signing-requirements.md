@@ -5,20 +5,18 @@ ms.assetid: fe122179-7571-465b-98d0-b8ce0f224390
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Domain controller: LDAP server signing requirements
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain controller: LDAP server signing requirements** security policy setting.
 
 ## Reference
-
 
 This policy setting determines whether the Lightweight Directory Access Protocol (LDAP) server requires LDAP clients to negotiate data signing.
 
@@ -28,17 +26,12 @@ This setting does not have any impact on LDAP simple bind or LDAP simple bind th
 
 If signing is required, then LDAP simple bind and LDAP simple bind through SSL requests are rejected.
 
-**Caution**  
-If you set the server to Require signature, you must also set the client device. Not setting the client device results in loss of connection with the server.
-
+>**Caution:**  If you set the server to Require signature, you must also set the client device. Not setting the client device results in loss of connection with the server.
  
-
 ### Possible values
 
 -   None. Data signatures are not required to bind with the server. If the client computer requests data signing, the server supports it.
-
 -   Require signature. The LDAP data-signing option must be negotiated unless Transport Layer Security/Secure Sockets Layer (TLS/SSL) is in use.
-
 -   Not defined.
 
 ### Best practices
@@ -53,49 +46,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>None</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>None</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Not defined| 
+| DC Effective Default Settings | None| 
+| Member Server Effective Default Settings | None| 
+| Client Computer Effective Default Settings | None| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -104,7 +64,6 @@ This section describes features and tools that are available to help you manage 
 None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -122,14 +81,4 @@ Client device that do not support LDAP signing cannot run LDAP queries against t
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

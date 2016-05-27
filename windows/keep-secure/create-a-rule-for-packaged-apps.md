@@ -5,14 +5,13 @@ ms.assetid: e4ffd400-7860-47b3-9118-0e6853c3dfa0
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Create a rule for packaged apps
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for IT professionals shows how to create an AppLocker rule for packaged apps with a publisher condition.
@@ -20,9 +19,7 @@ This topic for IT professionals shows how to create an AppLocker rule for packag
 Packaged apps, also known as Universal Windows apps, are based on an app model that ensures that all the files within an app package share the same identity. Therefore, it is possible to control the entire app using a single AppLocker rule as opposed to the non-packaged apps where each file within the app could have a unique identity. Windows does not support unsigned packaged apps which implies all packaged apps must be signed. AppLocker supports only publisher rules for packaged apps. A publisher rule for a packaged app is based on the following information:
 
 -   Publisher of the package
-
 -   Package name
-
 -   Package version
 
 All the files within a package as well as the package installer share these attributes. Therefore, an AppLocker rule for a packaged app controls both the installation as well as the running of the app. Otherwise, the publisher rules for packaged apps are no different than the rest of the rule collections; they support exceptions, can be increased or decreased in scope, and can be assigned to users and groups.
@@ -34,15 +31,10 @@ You can perform this task by using the Group Policy Management Console for an Ap
 **To create a packaged app rule**
 
 1.  Open the AppLocker console.
-
 2.  On the **Action** menu, or by right-clicking on **Packaged app Rules**, click **Create New Rule**.
-
 3.  On the **Before You Begin** page, click **Next**.
-
 4.  On the **Permissions** page, select the action (allow or deny) and the user or group that the rule should apply to, and then click **Next**.
-
 5.  On the **Publisher** page, you can select a specific reference for the packaged app rule and set the scope for the rule. The following table describes the reference options.
-
     <table>
     <colgroup>
     <col width="33%" />
@@ -69,11 +61,8 @@ You can perform this task by using the Group Policy Management Console for an Ap
     </tr>
     </tbody>
     </table>
-
      
-
     The following table describes setting the scope for the packaged app rule.
-
     <table>
     <colgroup>
     <col width="33%" />
@@ -116,20 +105,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
     </tr>
     </tbody>
     </table>
-
      
-
 6.  Click **Next**.
-
 7.  (Optional) On the **Exceptions** page, specify conditions by which to exclude files from being affected by the rule. This allows you to add exceptions based on the same rule reference and rule scope as you set before. Click **Next**.
-
 8.  On the **Name** page, either accept the automatically generated rule name or type a new rule name, and then click **Create**.
-
- 
-
- 
-
-
-
-
-

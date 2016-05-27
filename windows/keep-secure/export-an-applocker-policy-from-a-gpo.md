@@ -5,14 +5,13 @@ ms.assetid: 7db59719-a8be-418b-bbfd-22cf2176c9c0
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Export an AppLocker policy from a GPO
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for IT professionals describes the steps to export an AppLocker policy from a Group Policy Object (GPO) so that it can be modified.
@@ -24,20 +23,7 @@ To complete this procedure, you must have the **Edit Setting** permission to ed
 **Export the policy from the GPO**
 
 1.  In the Group Policy Management Console (GPMC), open the GPO that you want to edit.
-
 2.  In the console tree under **Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Application Control Policies**, click **AppLocker**.
-
 3.  Right-click **AppLocker**, and then click **Export Policy**.
-
 4.  In the **Export Policy** dialog box, type a name for the exported policy (for example, the name of the GPO), select a location to save the policy, and then click **Save**.
-
 5.  The **AppLocker** dialog box will notify you of how many rules were exported. Click **OK**.
-
- 
-
- 
-
-
-
-
-

@@ -5,20 +5,18 @@ ms.assetid: 660e925e-cc3e-4098-a41e-eb8db8062d8d
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Interactive logon: Number of previous logons to cache (in case domain controller is not available)
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Interactive logon: Number of previous logons to cache (in case domain controller is not available)** security policy setting.
 
 ## Reference
-
 
 The **Interactive logon: Number of previous logons to cache (in case domain controller is not available**) policy setting determines whether a user can log on to a Windows domain by using cached account information. Logon information for domain accounts can be cached locally so that, if a domain controller cannot be contacted on subsequent logons, a user can still log on. This policy setting determines the number of unique users whose logon information is cached locally.
 
@@ -32,12 +30,12 @@ The system cannot log you on now because the domain *DOMAIN NAME* is not availab
 
 The value of this policy setting indicates the number of users whose logon information the server caches locally. If the value is 10, the server caches logon information for 10 users. When an eleventh user logs on to the device, the server overwrites the oldest cached logon session.
 
-Users who access the server console will have their logon credentials cached on that server. A malicious user who is able to access the file system of the server can locate this cached information and use a brute-force attack to determine user passwords. Windows mitigates this type of attack by encrypting the information and keeping the cached credentials in the system's registries, which are spread across numerous physical locations.
+Users who access the server console will have their logon credentials cached on that server. A malicious user who is able to access the file system of the server can locate this cached information and use a brute-force attack to determine user passwords. Windows mitigates this type of attack by 
+encrypting the information and keeping the cached credentials in the system's registries, which are spread across numerous physical locations.
 
 ### Possible values
 
 -   A user-defined number from 0 through 50
-
 -   Not defined
 
 ### Best practices
@@ -52,49 +50,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>10 logons</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>10 logons</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>10 logons</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>10 logons</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | 10 logons| 
+| DC Effective Default Settings | 10 logons| 
+| Member Server Effective Default Settings | 10 logons| 
+| Client Computer Effective Default Settings| 10 logons| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -112,7 +77,6 @@ This policy setting can be configured by using the Group Policy Management Conso
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
@@ -129,18 +93,9 @@ Configure the **Interactive logon: Number of previous logons to cache (in case d
 
 ### Potential impact
 
-Users cannot log on to any devices if there is no domain controller available to authenticate them. Organizations can configure this value to 2 for end-user computers, especially for mobile users. A configuration value of 2 means that the user's logon information is still in the cache, even if a member of the IT department has recently logged on to the device to perform system maintenance. This method allows users to log on to their computers when they are not connected to the organization's network.
+Users cannot log on to any devices if there is no domain controller available to authenticate them. Organizations can configure this value to 2 for end-user computers, especially for mobile users. A configuration value of 2 means that the user's logon information is still in the cache, even if a 
+member of the IT department has recently logged on to the device to perform system maintenance. This method allows users to log on to their computers when they are not connected to the organization's network.
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

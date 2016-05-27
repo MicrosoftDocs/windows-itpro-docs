@@ -2,15 +2,16 @@
 title: Control the health of Windows 10-based devices (Windows 10)
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
 ms.assetid: 45DB1C41-C35D-43C9-A274-3AD5F31FE873
-keywords: ["security", "BYOD", "malware", "device health attestation", "mobile"]
+keywords: security, BYOD, malware, device health attestation, mobile
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security; devices
 author: arnaudjumelet
+
 ---
 
 # Control the health of Windows 10-based devices
-
 
 **Applies to**
 
@@ -19,7 +20,6 @@ author: arnaudjumelet
 This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
 
 ## Introduction
-
 
 In Bring Your Own Device (BYOD) scenarios, employees bring commercially available devices to access both work-related resources and their personal data. Users want to use the device of their choice to access the organization’s applications, data, and resources not only from the internal network but also from anywhere. This phenomenon is also known as the consumerization of IT.
 
@@ -34,7 +34,6 @@ As Microsoft moves forward, security investments are increasingly focused on sec
 Windows 10 is an important component of an end-to-end security solution that focuses not only on the implementation of security preventive defenses, but adds device health attestation capabilities to the overall security strategy.
 
 ## Description of a robust end-to-end security solution
-
 
 Today’s computing threat landscape is increasing at a speed never encountered before. The sophistication of criminal attacks is growing, and there is no doubt that malware now targets both consumers and professionals in all industries.
 
@@ -83,9 +82,7 @@ Depending on the requirements and the sensitivity of the managed asset, device h
 In Windows 10, there are three pillars of investments:
 
 -   **Secure identities.** Microsoft is part of the FIDO Alliance which aims to provide an interoperable method of secure authentication by moving away from the use of passwords for authentication, both on the local system as well as for services like on-premises resources and cloud resources.
-
 -   **Information protection.** Microsoft is making investments to allow organizations to have better control over who has access to important data and what they can do with that data. With Windows 10, organizations can take advantage of policies that specify which applications are considered to be corporate applications and can be trusted to access secure data.
-
 -   **Threat resistance.** Microsoft is helping organizations to better secure enterprise assets against the threats of malware and attacks by using security defenses relying on hardware.
 
 ### Protect, control, and report on the security status of Windows 10-based devices
@@ -94,66 +91,23 @@ This section is an overview that describes different parts of the end-to-end sec
 
 ![figure 3](images/hva-fig3-endtoendoverview3.png)
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Number</th>
-<th align="left">Part of the solution</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>1</strong></p></td>
-<td align="left"><p>Windows 10-based device</p></td>
-<td align="left"><p>The first time a Windows 10-based device is powered on, the out-of-box experience (OOBE) screen is displayed. During setup, the device can be automatically registered into Azure Active Directory (AD) and enrolled in MDM.</p>
-<p>A Windows 10-based device with TPM 2.0 can report health status at any time by using the Health Attestation Service available with all editions of Windows 10.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>2</strong></p></td>
-<td align="left"><p>Identity provider</p></td>
-<td align="left"><p>Azure AD contains users, registered devices, and registered application of organization’s tenant. A device always belongs to a user and a user can have multiple devices. A device is represented as an object with different attributes like the compliance status of the device. A trusted MDM can update the compliance status.</p>
-<p>Azure AD is more than a repository. Azure AD is able to authenticate users and devices and can also authorize access to managed resources. Azure AD has a conditional access control engine that leverages the identity of the user, the location of the device and also the compliance status of the device when making a trusted access decision.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>3</strong></p></td>
-<td align="left"><p>Mobile device management</p></td>
-<td align="left"><p>Windows 10 has MDM support that enables the device to be managed out-of-box without deploying any agent.</p>
-<p>MDM can be Microsoft Intune or any third-party MDM solution that is compatible with Windows 10.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>4</strong></p></td>
-<td align="left"><p>Remote health attestation</p></td>
-<td align="left"><p>The Health Attestation Service is a trusted cloud service operated by Microsoft that performs a series of health checks and reports to MDM what Windows 10 security features are enabled on the device.</p>
-<p>Security verification includes boot state (WinPE, Safe Mode, Debug/test modes) and components that manage security and integrity of runtime operations (BitLocker, Device Guard).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>5</strong></p></td>
-<td align="left"><p>Enterprise managed asset</p></td>
-<td align="left"><p>Enterprise managed asset is the resource to protect.</p>
-<p>For example, the asset can be Office 365, other cloud apps, on-premises web resources published by Azure AD, or even VPN access.</p></td>
-</tr>
-</tbody>
-</table>
-
+| Number | Part of the solution | Description |
+| - | - | - |
+| **1** | Windows 10-based device | The first time a Windows 10-based device is powered on, the out-of-box experience (OOBE) screen is displayed. During setup, the device can be automatically registered into Azure Active Directory (AD) and enrolled in MDM.<br/>A Windows 10-based device with TPM 2.0 can report health status at any time by using the Health Attestation Service available with all editions of Windows 10.|
+| **2** | Identity provider | Azure AD contains users, registered devices, and registered application of organization’s tenant. A device always belongs to a user and a user can have multiple devices. A device is represented as an object with different attributes like the compliance status of the device. A trusted MDM can update the compliance status.<br/>Azure AD is more than a repository. Azure AD is able to authenticate users and devices and can also authorize access to managed resources. Azure AD has a conditional access control engine that leverages the identity of the user, the location of the device and also the compliance status of the device when making a trusted access decision.|
+| **3**|Mobile device management| Windows 10 has MDM support that enables the device to be managed out-of-box without deploying any agent.<br/>MDM can be Microsoft Intune or any third-party MDM solution that is compatible with Windows 10.|
+| **4** | Remote health attestation | The Health Attestation Service is a trusted cloud service operated by Microsoft that performs a series of health checks and reports to MDM what Windows 10 security features are enabled on the device.<br/>Security verification includes boot state (WinPE, Safe Mode, Debug/test modes) and components that manage security and integrity of runtime operations (BitLocker, Device Guard).|
+| **5** | Enterprise managed asset | Enterprise managed asset is the resource to protect.<br/>For example, the asset can be Office 365, other cloud apps, on-premises web resources published by Azure AD, or even VPN access.|
  
-
 The combination of Windows 10-based devices, identity provider, MDM, and remote health attestation creates a robust end-to-end-solution that provides validation of health and compliance of devices that access high-value assets.
 
 ## Protect devices and enterprise credentials against threats
-
 
 This section describes what Windows 10 offers in terms of security defenses and what control can be measured and reported to.
 
 ### Windows 10 hardware-based security defenses
 
 The most aggressive forms of malware try to insert themselves into the boot process as early as possible so that they can take control of the operating system early and prevent protection mechanisms and antimalware software from working. This type of malicious code is often called a rootkit or bootkit. The best way to avoid having to deal with low-level malware is to secure the boot process so that the device is protected from the very start.
-
 Windows 10 supports multiple layers of boot protection. Some of these features are available only if specific types of hardware are installed. For more information, see the [Hardware requirements](#hardware-req) section.
 
 ![figure 4](images/hva-fig4-hardware.png)
@@ -167,7 +121,6 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
     A TPM implements controls that meet the specification described by the Trusted Computing Group (TCG). At the time of this writing, there are two versions of TPM specification produced by TCG that are not compatible with each other:
 
     -   The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
-
     -   The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
     Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Microsoft Passport, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=733948).
@@ -179,19 +132,16 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
     -   Update crypto strength to meet modern security needs
 
         -   Support for SHA-256 for PCRs
-
         -   Support for HMAC command
 
     -   Cryptographic algorithms flexibility to support government needs
 
         -   TPM 1.2 is severely restricted in terms of what algorithms it can support
-
         -   TPM 2.0 can support arbitrary algorithms with minor updates to the TCG specification documents
 
     -   Consistency across implementations
 
         -   The TPM 1.2 specification allows vendors wide latitude when choosing implementation details
-
         -   TPM 2.0 standardizes much of this behavior
 
 -   **Secure Boot.** Devices with UEFI firmware can be configured to load only trusted operating system bootloaders. Secure Boot does not require a TPM.
@@ -199,18 +149,13 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
     The most basic protection is the Secure Boot feature, which is a standard part of the UEFI 2.2+ architecture. On a PC with conventional BIOS, anyone who can take control of the boot process can boot by using an alternative OS loader, and potentially gain access to system resources. When Secure Boot is enabled, you can boot using only an OS loader that’s signed using a certificate stored in the UEFI Secure Boot DB. Naturally, the Microsoft certificate used to digitally sign the Windows 10 OS loaders are in that store, which allows UEFI to validate the certificate as part of its security policy. Secure Boot must be enabled by default on all computers that are certified for Windows 10 under the Windows Hardware Compatibility Program.
 
     Secure Boot is a UEFI firmware-based feature, which allows for the signing and verification of critical boot files and drivers at boot time. Secure Boot checks signature values of the Windows Boot Manager, BCD store, Windows OS loader file, and other boot critical DLLs at boot time before the system is allowed to fully boot into a usable operating system by using policies that are defined by the OEM at build time. Secure Boot prevents many types of boot-based rootkit, malware, and other security-related attacks against the Windows platform. Secure Boot protects the operating system boot process whether booting from local hard disk, USB, PXE, or DVD, or into full Windows or Windows Recovery Environment (RE).
-
     Secure Boot protects the boot environment of a Windows 10 installation by verifying the signatures of the critical boot components to confirm malicious activity did not compromise them. Secure Boot protection ends after the Windows kernel file (ntoskrnl.exe) has been loaded.
 
-    **Note**  
-    Secure Boot protects the platform until the Windows kernel is loaded. Then protections like ELAM take over.
-
+    >**Note:**  Secure Boot protects the platform until the Windows kernel is loaded. Then protections like ELAM take over.
      
-
 -   **Secure Boot configuration policy.** Extends Secure Boot functionality to critical Windows 10 configuration.
 
     Examples of protected configuration information include protecting Disable Execute bit (NX option) or ensuring that the test signing policy (code integrity) cannot be enabled. This ensures that the binaries and configuration of the computer can be trusted after the boot process has completed.
-
     Secure Boot configuration policy does this with UEFI policy. These signatures for these policies are signed in the same way that operating system binaries are signed for use with Secure Boot.
 
     The Secure Boot configuration policy must be signed by a private key that corresponds to one of the public keys stored in the Key Exchange Key (KEK) list. The Microsoft Certificate Authority (CA) will be present in the KEK list of all Windows certified Secure Boot systems. By default, a policy signed by the Microsoft KEK shall be work on all Secure Boot systems. BootMgr must verify the signature against the KEK list before applying a signed policy. With Windows 10, the default Secure Boot configuration policy is embedded in bootmgr.
@@ -223,15 +168,11 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
 
     ELAM can load a Microsoft or non-Microsoft antimalware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the operating system hasn’t started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: Examine every boot driver and determine whether it is on the list of trusted drivers. If it’s not trusted, Windows won’t load it.
 
-    **Note**  
-    Windows Defender, Microsoft's antimalware included by default in Windows 10, supports ELAM; it can be replaced with a third-party antimalware compatible solution. The name of the Windows Defender ELAM driver is WdBoot.sys. Windows Defender in Windows 10 uses its ELAM driver to roll back any malicious changes made to the Windows Defender driver at the next reboot. This prevents kernel mode malware making lasting changes to Windows Defender’s mini-filter driver before shutdown or reboot.
-
+    >**Note:**  Windows Defender, Microsoft's antimalware included by default in Windows 10, supports ELAM; it can be replaced with a third-party antimalware compatible solution. The name of the Windows Defender ELAM driver is WdBoot.sys. Windows Defender in Windows 10 uses its ELAM driver to roll back any malicious changes made to the Windows Defender driver at the next reboot. This prevents kernel mode malware making lasting changes to Windows Defender’s mini-filter driver before shutdown or reboot.
      
-
     The ELAM signed driver is loaded before any other third-party drivers or applications, which allows the antimalware software to detect and block any attempts to tamper with the boot process by trying to load unsigned or untrusted code.
 
     The ELAM driver is a small driver with a small policy database that has a very narrow scope, focused on drivers that are loaded early at system launch. The policy database is stored in a registry hive that is also measured to the TPM, to record the operational parameters of the ELAM driver. An ELAM driver must be signed by Microsoft and the associated certificate must contain the complementary EKU (1.3.6.1.4.1.311.61.4.1).
-
 -   **Virtualization-based security (Hyper-V + Secure Kernel).** Virtualization-based security is a completely new enforced security boundary that allows you to protect critical parts of Windows 10.
 
     Virtualization-based security isolates sensitive code like Kernel Mode Code Integrity or sensitive corporate domain credentials from the rest of the Windows operating system. For more information, refer to the [Virtualization-based security](#virtual) section.
@@ -242,13 +183,9 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
 
     HVCI uses virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified.
 
-    **Note**  
-    Device Guard devices that run Kernel Mode Code Integrity with virtualization-based security must have compatible drivers. For additional information, please read the [Driver compatibility with Device Guard in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=691612) blog post.
-
+    >**Note:**  Device Guard devices that run Kernel Mode Code Integrity with virtualization-based security must have compatible drivers. For additional information, please read the [Driver compatibility with Device Guard in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=691612) blog post.
      
-
     The Device Guard Code Integrity feature lets organizations control what code is trusted to run into the Windows kernel and what applications are approved to run in user mode. It’s configurable by using a policy.
-
     Device Guard Code Integrity policy is a binary file that Microsoft recommends you sign. The signing of the Code Integrity policy aids in the protection against a malicious user with Administrator privileges trying to modify or remove the current Code Integrity policy.
 
 -   **Credential Guard.** Credential Guard protects corporate credentials with hardware-based credential isolation.
@@ -278,14 +215,10 @@ Virtualization-based security helps to protect against a compromised kernel or a
 The following Windows 10 services are protected with virtualization-based security:
 
 -   **Credential Guard** (LSA Credential Isolation): prevents pass-the-hash attacks and enterprise credential theft that happens by reading and dumping the content of lsass memory
-
 -   **Device Guard** (Hyper-V Code Integrity): Device Guard uses the new virtualization-based security in Windows 10 to isolate the Code Integrity service from the Windows kernel itself, which lets the service use signatures defined by your enterprise-controlled policy to help determine what is trustworthy. In effect, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
-
 -   **Other isolated services**: for example, on Windows Server Technical Preview 2016, there is the vTPM feature that allows you to have encrypted virtual machines (VMs) on servers.
 
-**Note**  
-Virtualization-based security is only available with Windows 10 Enterprise. Virtualization-based security requires devices with UEFI (2.3.1 or higher) with Secure Boot enabled, x64 processor with Virtualization Extensions and SLAT enabled. IOMMU, TPM 2.0. and support for Secure Memory overwritten are optional, but recommended.
-
+>**Note:**  Virtualization-based security is only available with Windows 10 Enterprise. Virtualization-based security requires devices with UEFI (2.3.1 or higher) with Secure Boot enabled, x64 processor with Virtualization Extensions and SLAT enabled. IOMMU, TPM 2.0. and support for Secure Memory overwritten are optional, but recommended.
  
 
 The schema below is a high-level view of Windows 10 with virtualization-based security.
@@ -294,15 +227,15 @@ The schema below is a high-level view of Windows 10 with virtualization-based s
 
 ### Credential Guard
 
-In Windows 10, when Credential Guard is enabled, Local Security Authority Subsystem Service (lsass.exe) runs sensitive code in an Isolated user mode to help protect data from malware that may be running in the normal user mode. This helps ensure that protected data is not stolen and reused on remote machines, which mitigates many PtH-style attacks.
+In Windows 10, when Credential Guard is enabled, Local Security Authority Subsystem Service (lsass.exe) runs sensitive code in an Isolated user mode to help protect data from malware that may be running in the normal user mode. This helps ensure that protected data is not stolen and reused on 
+remote machines, which mitigates many PtH-style attacks.
 
 Credential Guard helps protect credentials by encrypting them with either a per-boot or persistent key:
 
 -   **The per-boot key** is used for any in-memory credentials that do not require persistence. An example of such a credential would be a ticket-granting ticket (TGT) session key. This key is negotiated with a Key Distribution Center (KDC) every time authentication occurs and is protected with a per-boot key.
-
 -   **The persistent key**, or some derivative, is used to help protect items that are stored and reloaded after a reboot. Such protection is intended for long-term storage, and must be protected with a consistent key.
-
-Credential Guard is activated by a registry key and then enabled by using an UEFI variable. This is done to protect against remote modifications of the configuration. The use of a UEFI variable implies that physical access is required to change the configuration. When lsass.exe detects that credential isolation is enabled, it then spawns LsaIso.exe as an isolated process, which ensures that it runs within isolated user mode. The startup of LsaIso.exe is performed before initialization of a security support provider, which ensures that the secure mode support routines are ready before any authentication begins.
+Credential Guard is activated by a registry key and then enabled by using an UEFI variable. This is done to protect against remote modifications of the configuration. The use of a UEFI variable implies that physical access is required to change the configuration. When lsass.exe detects that 
+credential isolation is enabled, it then spawns LsaIso.exe as an isolated process, which ensures that it runs within isolated user mode. The startup of LsaIso.exe is performed before initialization of a security support provider, which ensures that the secure mode support routines are ready before any authentication begins.
 
 ### Device Guard
 
@@ -312,17 +245,13 @@ The trust decision to execute code is performed by using Hyper-V Code Integrity,
 
 Hyper-V Code Integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with Administrator privileges. On x64-based versions of Windows 10 kernel-mode drivers must be digitally signed.
 
-**Note**  
-Independently of activation of Device Guard Policy, [Windows 10 by default raises the bar for what runs in the kernel](http://go.microsoft.com/fwlink/p/?LinkId=691613). Windows 10 drivers must be signed by Microsoft, and more specifically, by the WHQL (Windows Hardware Quality Labs) portal. Additionally, starting in October 2015, the WHQL portal will only accept driver submissions, including both kernel and user mode driver submissions, that have a valid Extended Validation (“EV”) Code Signing Certificate.
-
+>**Note:**  Independently of activation of Device Guard Policy, [Windows 10 by default raises the bar for what runs in the kernel](http://go.microsoft.com/fwlink/p/?LinkId=691613). Windows 10 drivers must be signed by Microsoft, and more specifically, by the WHQL (Windows Hardware Quality Labs) portal. Additionally, starting in October 2015, the WHQL portal will only accept driver submissions, including both kernel and user mode driver submissions, that have a valid Extended Validation (“EV”) Code Signing Certificate.
  
-
 With Device Guard in Windows 10, organizations are now able to define their own Code Integrity policy for use on x64 systems running Windows 10 Enterprise. Organizations have the ability to configure the policy that determines what is trusted to run. These include drivers and system files, as well as traditional desktop applications and scripts. The system is then locked down to only run applications that the organization trusts.
 
 Device Guard is a built-in feature of Windows 10 Enterprise that prevents the execution of unwanted code and applications. Device Guard can be configured using two rule actions - allow and deny:
 
 -   **Allow** limits execution of applications to an allowed list of code or trusted publisher and blocks everything else.
-
 -   **Deny** completes the allow trusted publisher approach by blocking the execution of a specific application.
 
 At the time of this writing, and according to Microsoft’s latest research, more than 90 percent of malware is unsigned completely. So implementing a basic Device Guard policy can simply and effectively help block the vast majority of malware. In fact, Device Guard has the potential to go further, and can also help block signed malware.
@@ -332,9 +261,7 @@ Device Guard needs to be planned and configured to be truly effective. It is not
 There are three different parts that make up the Device Guard solution in Windows 10:
 
 -   The first part is a base **set of hardware security features** introduced with the previous version of Windows. TPM for hardware cryptographic operations and UEFI with modern firmware, along with Secure Boot, allows you to control what the device is running when the systems start.
-
 -   After the hardware security feature, there is the code integrity engine. In Windows 10, **Code Integrity is now fully configurable** and now resides in Isolated user mode, a part of the memory that is protected by virtualization-based security.
-
 -   The last part of Device Guard is **manageability**. Code Integrity configuration is exposed through specific Group Policy Objects, PowerShell cmdlets, and MDM configuration service providers (CSPs).
 
 For more information on how to deploy Device Guard in an enterprise, see the [Device Guard deployment guide](device-guard-deployment-guide.md).
@@ -343,7 +270,8 @@ For more information on how to deploy Device Guard in an enterprise, see the [De
 
 As previously described, Device Guard is a powerful way to lock down systems. Device Guard is not intended to be used broadly and it may not always be applicable, but there are some high-interest scenarios.
 
-Device Guard is useful and applicable on fixed workloads systems like cash registers, kiosk machines, Secure Admin Workstations (SAWs), or well managed desktops. Device Guard is highly relevant on systems that have very well-defined software that are expected to run and don’t change too frequently. It could also help protect Information Workers (IWs) beyond just SAWs, as long as what they need to run is known and the set of applications is not going to change on a daily basis.
+Device Guard is useful and applicable on fixed workloads systems like cash registers, kiosk machines, Secure Admin Workstations (SAWs), or well managed desktops. Device Guard is highly relevant on systems that have very well-defined software that are expected to run and don’t change too frequently. 
+It could also help protect Information Workers (IWs) beyond just SAWs, as long as what they need to run is known and the set of applications is not going to change on a daily basis.
 
 SAWs are computers that are built to help significantly reduce the risk of compromise from malware, phishing attacks, bogus websites, and PtH attacks, among other security risks. Although SAWs can’t be considered a “silver bullet” security solution to these attacks, these types of clients are helpful as part of a layered, defense-in-depth approach to security.
 
@@ -355,20 +283,19 @@ It could be challenging to use Device Guard on corporate, lightly-managed workst
 
 Before you can benefit from the protection included in Device Guard, Code Integrity policy must be created by using tools provided by Microsoft, but the policy can be deployed with common management tools, like Group Policy. The Code Integrity policy is a binary-encoded XML document that includes configuration settings for both the User and Kernel-modes of Windows 10, along with restrictions on Windows 10 script hosts. Device Guard Code Integrity policy restricts what code can run on a device.
 
-**Note**  
-Device Guard policy can be signed in Windows 10, which adds additional protection against administrative users changing or removing this policy.
-
+>**Note:**  Device Guard policy can be signed in Windows 10, which adds additional protection against administrative users changing or removing this policy.
  
-
 Signed Device Guard policy offers stronger protection against a malicious local administrator trying to defeat Device Guard.
 
-When the policy is signed, the GUID of the policy is stored in a UEFI pre-OS secure variable which offers tampering protection. The only way to update the Device Guard policy subsequently is to provide a new version of the policy signed by the same signer or from a signer specified as part of the Device Guard policy into the UpdateSigner section.
+When the policy is signed, the GUID of the policy is stored in a UEFI pre-OS secure variable which offers tampering protection. The only way to update the Device Guard policy subsequently is to provide a new version of the policy signed by the same signer or from a signer specified as part of the 
+Device Guard policy into the UpdateSigner section.
 
 ### The importance of signing applications
 
 On computers with Device Guard, Microsoft proposes to move from a world where unsigned apps can be run without restriction to a world where only signed and trusted code is allowed to run on Windows 10.
 
-With Windows 10, organizations will make line-of-business (LOB) apps available to members of the organization through the Windows Store infrastructure. More specifically, LOB apps will be available in a private store within the public Windows Store. Windows Store signs and distributes Universal Windows apps and Classic Windows apps. All apps downloaded from the Windows Store are signed.
+With Windows 10, organizations will make line-of-business (LOB) apps available to members of the organization through the Windows Store infrastructure. More specifically, LOB apps will be available in a private store within the public Windows Store. Windows Store signs and distributes Universal 
+Windows apps and Classic Windows apps. All apps downloaded from the Windows Store are signed.
 
 In organizations today, the vast majority of LOB applications are unsigned. Code signing is frequently viewed as a tough problem to solve for a variety of reasons, like the lack of code signing expertise. Even if code signing is a best practice, a lot of internal applications are not signed.
 
@@ -444,13 +371,10 @@ The following table details the hardware requirements for both virtualization-ba
 </tr>
 </tbody>
 </table>
-
  
-
 This section presented information about several closely related controls in Windows 10. The multi-layer defenses and in-depth approach helps to eradicate low-level malware during boot sequence. Virtualization-based security is a fundamental operating system architecture change that adds a new security boundary. Device Guard and Credential Guard respectively help to block untrusted code and protect corporate domain credentials from theft and reuse. This section also briefly discussed the importance of managing devices and patching vulnerabilities. All these technologies can be used to harden and lock down devices while limiting the risk of attackers compromising them.
 
 ## <a href="" id="detect-unhealthy"></a>Detect an unhealthy Windows 10-based device
-
 
 As of today, many organizations only consider devices to be compliant with company policy after they’ve passed a variety of checks that show, for example, that the operating system is in the correct state, properly configured, and has security protection enabled. Unfortunately, with today’s systems, this form of reporting is not entirely reliable because malware can spoof a software statement about system health. A rootkit, or a similar low-level exploit, can report a false healthy state to traditional compliance tools.
 
@@ -480,11 +404,8 @@ This is the most secure approach available for Windows 10-based devices to dete
 
 A relying party like an MDM can inspect the report generated by the remote health attestation service.
 
-**Note**  
-To use the health attestation feature of Windows 10, the device must be equipped with a discrete or firmware TPM 2.0. There is no restriction on any particular edition of Windows 10.
-
+>**Note:**  To use the health attestation feature of Windows 10, the device must be equipped with a discrete or firmware TPM 2.0. There is no restriction on any particular edition of Windows 10.
  
-
 Windows 10 supports health attestation scenarios by allowing applications access to the underlying health attestation configuration service provider (CSP) so that applications can request a health attestation token. The measurement of the boot sequence can be checked at any time locally by an antimalware or an MDM agent.
 
 Remote device health attestation combined with an MDM provides a hardware-rooted method for reporting the current security status and detecting any changes, without having to trust the software running on the system.
@@ -504,42 +425,26 @@ When starting a device equipped with a TPM, a measurement of different component
 The health attestation process works as follows:
 
 1.  Hardware boot components are measured.
-
 2.  Operating system boot components are measured.
-
 3.  If Device Guard is enabled, current Device Guard policy is measured.
-
 4.  Windows kernel is measured.
-
 5.  Antivirus software is started as the first kernel mode driver.
-
 6.  Boot start drivers are measured.
-
 7.  MDM server through the MDM agent issues a health check command by leveraging the Health Attestation CSP.
-
 8.  Boot measurements are validated by the Health Attestation Service
 
-**Note**  
-By default, the last 100 system boot logs and all associated resume logs are archived in the %SystemRoot%\\logs\\measuredboot folder.
-
+>**Note:**  By default, the last 100 system boot logs and all associated resume logs are archived in the %SystemRoot%\\logs\\measuredboot folder.
 The number of retained logs may be set with the registry **REG\_DWORD** value **PlatformLogRetention** under the **HKLM\\SYSTEM\\CurrentControlSet\\Services\\TPM** key. A value of **0** will turn off log archival and a value of **0xffffffff** will keep all logs.
-
  
-
 The following process describes how health boot measurements are sent to the health attestation service:
 
 1.  The client (a Windows 10-based device with a TPM 2.0) initiates the request with the remote device health attestation service. Because the health attestation server is expected to be a Microsoft cloud service, the URI is already pre-provisioned in the client.
-
 2.  The client then sends the TCG log, the AIK signed data (PCR values, boot counter) and the AIK certificate information.
-
 3.  The remote device heath attestation service then:
 
     1.  Verifies that the AIK certificate is issued by a known and trusted CA and the certificate is valid and not revoked.
-
     2.  Verifies that the signature on the PCR quotes is correct and consistent with the TCG log value.
-
     3.  Parses the properties in the TCG log.
-
     4.  Issues the device health token that contains the health information, the AIK information, and the boot counter information. The health token also contains valid issuance time. The device health token is encrypted and signed, that means that the information is protected and only accessible to issuing health attestation service.
 
 4.  The client stores the health encrypted blob in its local store. The device health token contains device health status, a device ID (the Windows AIK), and the boot counter.
@@ -559,13 +464,9 @@ In a simplified manner, the TPM is a passive component with limited resources. I
 A TPM incorporates in a single component:
 
 -   A RSA 2048-bit key generator
-
 -   A random number generator
-
 -   Nonvolatile memory for storing EK, SRK, and AIK keys
-
 -   A cryptographic engine to encrypt, decrypt, and sign
-
 -   Volatile memory for storing the PCRs and RSA keys
 
 ### Endorsement key
@@ -579,32 +480,24 @@ The endorsement key acts as an identity card for the TPM. For more information, 
 The endorsement key is often accompanied by one or two digital certificates:
 
 -   One certificate is produced by the TPM manufacturer and is called the **endorsement certificate**. The endorsement certificate is used to prove the authenticity of the TPM (for example, that it’s a real TPM manufactured by a specific chip maker) to local processes, applications, or cloud services. The endorsement certificate is created during manufacturing or the first time the TPM is initialized by communicating with an online service.
-
 -   The other certificate is produced by the platform builder and is called the **platform certificate** to indicate that a specific TPM is integrated with a certain device.
-
 For certain devices that use firmware-based TPM produced by Intel or Qualcomm, the endorsement certificate is created when the TPM is initialized during the OOBE of Windows 10.
 
-**Note**  
-Secure Boot protects the platform until the Windows kernel is loaded. Then protections like Trusted Boot, Hyper-V Code Integrity and ELAM take over. A device that uses Intel TPM or Qualcomm TPM gets a signed certificate online from the manufacturer that has created the chip and then stores the signed certificate in TPM storage. For the operation to succeed, if you are filtering Internet access from your client devices, you must authorize the following URLs:
+>**Note:**  Secure Boot protects the platform until the Windows kernel is loaded. Then protections like Trusted Boot, Hyper-V Code Integrity and ELAM take over. A device that uses Intel TPM or Qualcomm TPM gets a signed certificate online from the manufacturer that has created the chip and then stores the signed certificate in TPM storage. For the operation to succeed, if you are filtering Internet access from your client devices, you must authorize the following URLs:
 
 -   For Intel firmware TPM: **https://ekop.intel.com/ekcertservice**
-
 -   For Qualcomm firmware TPM: **https://ekcert.spserv.microsoft.com/**
-
  
-
 ### Attestation Identity Keys
 
 Because the endorsement certificate is unique for each device and does not change, the usage of it may present privacy concerns because it's theoretically possible to track a specific device. To avoid this privacy problem, Windows 10 issues a derived attestation anchor based on the endorsement certificate. This intermediate key, which can be attested to an endorsement key, is the Attestation Identity Key (AIK) and the corresponding certificate is called the AIK certificate. This AIK certificate is issued by a Microsoft cloud service.
 
-**Note**  
-Before the device can report its health using the TPM 2.0 attestation functions, an AIK certificate must be provisioned in conjunction with a third-party service like the Microsoft Cloud CA service. After it is provisioned, the AIK private key can be used to report platform configuration. Windows 10 creates a signature over the platform log state (and a monotonic counter value) at each boot by using the AIK.
-
+>**Note:**  Before the device can report its health using the TPM 2.0 attestation functions, an AIK certificate must be provisioned in conjunction with a third-party service like the Microsoft Cloud CA service. After it is provisioned, the AIK private key can be used to report platform configuration. Windows 10 creates a signature over the platform log state (and a monotonic counter value) at each boot by using the AIK.
  
-
 The AIK is an asymmetric (public/private) key pair that is used as a substitute for the EK as an identity for the TPM for privacy purposes. The private portion of an AIK is never revealed or used outside the TPM and can only be used inside the TPM for a limited set of operations. Furthermore, it can only be used for signing, and only for limited, TPM-defined operations.
 
-Windows 10 creates AIKs protected by the TPM, if available, that are 2048-bit RSA signing keys. Microsoft is hosting a cloud service called Microsoft Cloud CA to establish cryptographically that it is communicating with a real TPM and that the TPM possesses the presented AIK. After the Microsoft Cloud CA service has established these facts, it will issue an AIK certificate to the Windows 10-based device.
+Windows 10 creates AIKs protected by the TPM, if available, that are 2048-bit RSA signing keys. Microsoft is hosting a cloud service called Microsoft Cloud CA to establish cryptographically that it is communicating with a real TPM and that the TPM possesses the presented AIK. After the Microsoft 
+Cloud CA service has established these facts, it will issue an AIK certificate to the Windows 10-based device.
 
 Many existing devices that will upgrade to Windows 10 will not have a TPM, or the TPM will not contain an endorsement certificate. **To accommodate those devices, Windows 10 allows the issuance of AIK certificates without the presence of an endorsement certificate.** Such AIK certificates are not issued by Microsoft Cloud CA. Note that this is not as trustworthy as an endorsement certificate that is burned into the device during manufacturing, but it will provide compatibility for advanced scenarios like Microsoft Passport without TPM.
 
@@ -634,15 +527,13 @@ During the provisioning process, the device may need to be restarted.
 
 Note that the **Get-TpmEndorsementKeyInfo PowerShell** cmdlet can be used with administrative privilege to get information about the endorsement key and certificates of the TPM.
 
-If the TPM ownership is not known but the EK exists, the client library will provision the TPM and will store the resulting **ownerAuth** value into the registry if the policy allows it will store the SRK public portion at the following location: **HKLM\\SYSTEM\\CurrentControlSet\\Services\\TPM\\WMI\\Admin\\SRKPub**
+If the TPM ownership is not known but the EK exists, the client library will provision the TPM and will store the resulting **ownerAuth** value into the registry if the policy allows it will store the SRK public portion at the following location: 
+**HKLM\\SYSTEM\\CurrentControlSet\\Services\\TPM\\WMI\\Admin\\SRKPub**
 
 As part of the provisioning process, Windows 10 will create an AIK with the TPM. When this operation is performed, the resulting AIK public portion is stored in the registry at the following location: **HKLM\\SYSTEM\\CurrentControlSet\\Services\\TPM\\WMI\\WindowsAIKPub**
 
-**Note**  
-For provisioning AIK certificates and filtering Internet access, you must authorize the following wildcard URL: **https://\*.microsoftaik.azure.net**
-
+>**Note:**  For provisioning AIK certificates and filtering Internet access, you must authorize the following wildcard URL: **https://\*.microsoftaik.azure.net**
  
-
 ### Windows 10 Health Attestation CSP
 
 Windows 10 contains a configuration service provider (CSP) specialized for interacting with the health attestation feature. A CSP is a component that plugs into the Windows MDM client and provides a published protocol for how MDM servers can configure settings and manage Windows-based devices. The management protocol is represented as a tree structure that can be specified as URIs with functions to perform on the URIs such as “get”, “set”, “delete”, and so on.
@@ -650,11 +541,8 @@ Windows 10 contains a configuration service provider (CSP) specialized for inte
 The following is a list of functions performed by the Windows 10 Health Attestation CSP:
 
 -   Collects data that is used to verify a device’s health status
-
 -   Forwards the data to the Health Attestation Service
-
 -   Provisions the Health Attestation Certificate that it receives from the Health Attestation Service
-
 -   Upon request, forwards the Health Attestation Certificate (received from the Health Attestation Service) and related runtime information to the MDM server for verification
 
 During a health attestation session, the Health Attestation CSP forwards the TCG logs and PCRs values that are measured during the boot, by using a secure communication channel to the Health Attestation Service.
@@ -665,37 +553,24 @@ When an MDM server validates that a device has attested to the Health Attestatio
 
 The role of Windows Health Attestation Service is essentially to evaluate a set of health data (TCG log and PCR values), make a series of detections (based on available health data) and generate encrypted health blob or produce report to MDM servers.
 
-**Note**  
-Both device and MDM servers must have access to **has.spserv.microsoft.com** using the TCP protocol on port 443 (HTTPS).
-
+>**Note:**  Both device and MDM servers must have access to **has.spserv.microsoft.com** using the TCP protocol on port 443 (HTTPS).
  
-
 Checking that a TPM attestation and the associated log are valid takes several steps:
 
 1.  First, the server must check that the reports are signed by **trustworthy AIKs**. This might be done by checking that the public part of the AIK is listed in a database of assets, or perhaps that a certificate has been checked.
-
 2.  After the key has been checked, the signed attestation (a quote structure) should be checked to see whether it is a **valid signature over PCR values**.
-
 3.  Next the logs should be checked to ensure that they match the PCR values reported.
-
 4.  Finally, the logs themselves should be examined by an MDM solution to see whether they represent **known or valid security configurations**. For example, a simple check might be to see whether the measured early OS components are known to be good, that the ELAM driver is as expected, and that the ELAM driver policy file is up to date. If all of these checks succeed, an attestation statement can be issued that later can be used to determine whether or not the client should be granted access to a resource.
 
 The Health Attestation Service provides the following information to an MDM solution about the health of the device:
 
 -   Secure Boot enablement
-
 -   Boot and kernel debug enablement
-
 -   BitLocker enablement
-
 -   VSM enabled
-
 -   Signed or unsigned Device Guard Code Integrity policy measurement
-
 -   ELAM loaded
-
 -   Safe Mode boot, DEP enablement, test signing enablement
-
 -   Device TPM has been provisioned with a trusted endorsement certificate
 
 For completeness of the measurements, see [Health Attestation CSP](http://go.microsoft.com/fwlink/p/?LinkId=733949).
@@ -743,9 +618,7 @@ The following table presents some key items that can be reported back to MDM dep
 </tr>
 </tbody>
 </table>
-
  
-
 ### Leverage MDM and the Health Attestation Service
 
 To make device health relevant, the MDM solution evaluates the device health report and is configured to the organization’s device health requirements.
@@ -753,9 +626,7 @@ To make device health relevant, the MDM solution evaluates the device health rep
 A solution that leverages MDM and the Health Attestation Service consists of three main parts:
 
 1.  A device with health attestation enabled. This will usually be done as a part of enrollment with an MDM provider (health attestation will be disabled by default).
-
 2.  After this is enabled, and every boot thereafter, the device will send health measurements to the Health Attestation Service hosted by Microsoft, and it will receive a health attestation blob in return.
-
 3.  At any point after this, an MDM server can request the health attestation blob from the device and ask Health Attestation Service to decrypt the content and validate that it’s been attested.
 
 ![figure 9](images/hva-fig8-evaldevicehealth8.png)
@@ -763,55 +634,42 @@ A solution that leverages MDM and the Health Attestation Service consists of thr
 Interaction between a Windows 10-based device, the Health Attestation Service, and MDM can be performed as follows:
 
 1.  The client initiates a session with the MDM server. The URI for the MDM server would be part of the client app that initiates the request. The MDM server at this time could request the health attestation data by using the appropriate CSP URI.
-
 2.  The MDM server specifies a nonce along with the request.
-
 3.  The client then sends the AIK quoted nonce + the boot counter and the health blob information. This health blob is encrypted with a Health Attestation Service public key that only the Health Attestation Service can decrypt.
-
 4.  The MDM server:
 
     1.  Verifies that the nonce is as expected.
-
     2.  Passes the quoted data, the nonce and the encrypted health blob to the Health Attestation Service server.
 
 5.  The Health Attestation Service:
 
     1.  Decrypts the health blob.
-
     2.  Verifies that the boot counter in the quote is correct using the AIK in the health blob and matches the value in the health blob.
-
     3.  Verifies that the nonce matches in the quote and the one that is passed from MDM.
-
     4.  Because the boot counter and the nonce are quoted with the AIK from the health blob, it also proves that the device is the same one as the one for which the health blob has been generated.
-
     5.  Sends data back to the MDM server including health parameters, freshness, and so on.
 
-**Note**  
-The MDM server (relying party) never performs the quote or boot counter validation itself. It gets the quoted data and the health blob (which is encrypted) and sends the data to the Health Attestation Service for validation. This way, the AIK is never visible to the MDM, which thereby addresses privacy concerns.
-
+>**Note:**  The MDM server (relying party) never performs the quote or boot counter validation itself. It gets the quoted data and the health blob (which is encrypted) and sends the data to the Health Attestation Service for validation. This way, the AIK is never visible to the MDM, which thereby addresses privacy concerns.
  
-
 Setting the requirements for device compliance is the first step to ensure that registered devices that do not meet health and compliance requirements are detected, tracked, and have actions enforced by the MDM solution.
 
-Devices that attempt to connect to resources must have their health evaluated so that unhealthy and noncompliant devices can be detected and reported. To be fully efficient, an end-to-end security solution must impose a consequence for unhealthy devices like refusing access to high-value assets. That is the purpose of conditional access control, which is detailed in the next section.
+Devices that attempt to connect to resources must have their health evaluated so that unhealthy and noncompliant devices can be detected and reported. To be fully efficient, an end-to-end security solution must impose a consequence for unhealthy devices like refusing access to high-value assets. 
+That is the purpose of conditional access control, which is detailed in the next section.
 
 ## Control the security of a Windows 10-based device before access is granted
-
 
 Today’s access control technology, in most cases, focuses on ensuring that the right people get access to the right resources. If users can authenticate, they get access to resources using a device that the organization’s IT staff and systems know very little about. Perhaps there is some check such as ensuring that a device is encrypted before giving access to email, but what if the device is infected with malware?
 
 The remote device health attestation process uses measured boot data to verify the health status of the device. The health of the device is then available for an MDM solution like Intune.
 
-**Note**  
-For the latest information on Intune and Windows 10 features support, see the [Microsoft Intune blog](http://go.microsoft.com/fwlink/p/?LinkId=691614) and [What's new in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=733956).
-
+>**Note:**  For the latest information on Intune and Windows 10 features support, see the [Microsoft Intune blog](http://go.microsoft.com/fwlink/p/?LinkId=691614) and [What's new in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=733956).
  
-
 The figure below shows how the Health Attestation Service is expected to work with Microsoft’s cloud-based Intune MDM service.
 
 ![figure 10](images/hva-fig9-intune.png)
 
-An MDM solution can then leverage health state statements and take them to the next level by coupling with client policies that will enable conditional access to be granted based on the device’s ability to prove that it’s malware free, its antimalware system is functional and up to date, the firewall is running, and the devices patch state is compliant.
+An MDM solution can then leverage health state statements and take them to the next level by coupling with client policies that will enable conditional access to be granted based on the device’s ability to prove that it’s malware free, its antimalware system is functional and up to date, the 
+firewall is running, and the devices patch state is compliant.
 
 Finally, resources can be protected by denying access to endpoints that are unable to prove they’re healthy. This feature is much needed for BYOD devices that need to access organizational resources.
 
@@ -823,11 +681,8 @@ Windows 10 has an MDM client that ships as part of the operating system. This e
 
 Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For additional information, see [Azure Active Directory integration with MDM](http://go.microsoft.com/fwlink/p/?LinkId=733954).
 
-**Note**  
-MDM servers do not need to create or download a client to manage Windows 10. For more information, see [Mobile device management](http://go.microsoft.com/fwlink/p/?LinkId=733955).
-
+>**Note:**  MDM servers do not need to create or download a client to manage Windows 10. For more information, see [Mobile device management](http://go.microsoft.com/fwlink/p/?LinkId=733955).
  
-
 The third-party MDM server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users.
 
 ### <a href="" id="management-of-windows-defender-by-third-party-mdm-"></a>Management of Windows Defender by third-party MDM
@@ -848,17 +703,15 @@ If the device is not registered, the user will get a message with instructions o
 
 ### <a href="" id="office-365-conditional-access-control-"></a>Office 365 conditional access control
 
-Azure AD enforces conditional access policies to secure access to Office 365 services. A tenant admin can create a conditional access policy that blocks a user on a non-compliant device from accessing an Office 365 service. The user must conform to the company’s device policies before access can be granted to the service. Alternately, the admin can also create a policy that requires users to just enroll their devices to gain access to an Office 365 service. Policies may be applied to all users of an organization, or limited to a few target groups and enhanced over time to include additional target groups.
+Azure AD enforces conditional access policies to secure access to Office 365 services. A tenant admin can create a conditional access policy that blocks a user on a non-compliant device from accessing an Office 365 service. The user must conform to the company’s device policies before access can be granted to the service. Alternately, the admin can also create a policy that requires users to just enroll their devices to gain access to an Office 365 service. Policies may be applied to all users of an organization, or limited to a few target groups and enhanced over time to include additional 
+target groups.
 
 When a user requests access to an Office 365 service from a supported device platform, Azure AD authenticates the user and device from which the user launches the request; and grants access to the service only when the user conforms to the policy set for the service. Users that do not have their device enrolled are given remediation instructions on how to enroll and become compliant to access corporate Office 365 services.
 
 When a user enrolls, the device is registered with Azure AD, and enrolled with a compatible MDM solution like Intune.
 
-**Note**  
-Microsoft is working with third-party MDM ISVs to support automated MDM enrollment and policy based access checks. Steps to turn on auto-MDM enrollment with Azure AD and Intune are explained in the [Windows 10, Azure AD And Microsoft Intune: Automatic MDM Enrollment Powered By The Cloud!](http://go.microsoft.com/fwlink/p/?LinkId=691615) blog post.
-
+>**Note**  Microsoft is working with third-party MDM ISVs to support automated MDM enrollment and policy based access checks. Steps to turn on auto-MDM enrollment with Azure AD and Intune are explained in the [Windows 10, Azure AD And Microsoft Intune: Automatic MDM Enrollment Powered By The Cloud!](http://go.microsoft.com/fwlink/p/?LinkId=691615) blog post.
  
-
 When a user enrolls a device successfully, the device becomes trusted. Azure AD provides single-sign-on to access company applications and enforces conditional access policy to grant access to a service not only the first time the user requests access, but every time the user requests to renew access.
 
 The user will be denied access to services when sign-in credentials are changed, a device is lost/stolen, or the compliance policy is not met at the time of request for renewal.
@@ -870,24 +723,17 @@ Depending on the type of email application that employees use to access Exchange
 Clients that attempt to access Office 365 will be evaluated for the following properties:
 
 -   Is the device managed by an MDM?
-
 -   Is the device registered with Azure AD?
-
 -   Is the device compliant?
 
 To get to a compliant state, the Windows 10-based device needs to:
 
 -   Enroll with an MDM solution.
-
 -   Register with Azure AD.
-
 -   Be compliant with the device policies set by the MDM solution.
 
-**Note**  
-At the present time, conditional access policies are selectively enforced on users on iOS and Android devices. For more information, see the [Azure AD, Microsoft Intune and Windows 10 – Using the cloud to modernize enterprise mobility!](http://go.microsoft.com/fwlink/p/?LinkId=691616) blog post.
-
+>**Note:**  At the present time, conditional access policies are selectively enforced on users on iOS and Android devices. For more information, see the [Azure AD, Microsoft Intune and Windows 10 – Using the cloud to modernize enterprise mobility!](http://go.microsoft.com/fwlink/p/?LinkId=691616) blog post.
  
-
 ### <a href="" id="cloud-and-on-premises-apps-conditional-access-control-"></a>Cloud and on-premises apps conditional access control
 
 Conditional access control is a powerful policy evaluation engine built into Azure AD. It gives IT pros an easy way to create access rules beyond Office 365 that evaluate the context of a user's logon to make real-time decisions about which applications they should be allowed to access.
@@ -896,15 +742,11 @@ IT pros can configure conditional access control policies for cloud SaaS applica
 
 For more information about conditional access, see [Azure Conditional Access Preview for SaaS Apps.](http://go.microsoft.com/fwlink/p/?LinkId=524807)
 
-**Note**  
-Conditional access control is an Azure AD Premium feature that's also available with EMS. If you don't have an Azure AD Premium subscription, you can get a trial from the [Microsoft Azure](http://go.microsoft.com/fwlink/p/?LinkId=691617) site.
-
+>**Note:**  Conditional access control is an Azure AD Premium feature that's also available with EMS. If you don't have an Azure AD Premium subscription, you can get a trial from the [Microsoft Azure](http://go.microsoft.com/fwlink/p/?LinkId=691617) site.
  
-
 For on-premises applications there are two options to enable conditional access control based on a device's compliance state:
 
 -   For on-premises applications that are published through the Azure AD Application Proxy, you can configure conditional access control policies as you would for cloud applications. For more details, see the [Azure AD Conditional Access preview updated: Now supports On-Premises and Custom LOB apps](http://go.microsoft.com/fwlink/p/?LinkId=691618) blog post.
-
 -   Additionally, Azure AD Connect will sync device compliance information from Azure AD to on-premises AD. ADFS on Windows Server Technical Preview 2016 will support conditional access control based on a device's compliance state. IT pros will configure conditional access control policies in ADFS that use the device's compliance state reported by a compatible MDM solution to secure on-premises applications.
 
 ![figure 13](images/hva-fig12-conditionalaccess12.png)
@@ -912,31 +754,18 @@ For on-premises applications there are two options to enable conditional access 
 The following process describes how Azure AD conditional access works:
 
 1.  User has already enrolled with MDM through Workplace Access/Azure AD join which registers device with Azure AD.
-
 2.  When the device boots or resumes from hibernate, a task “Tpm-HASCertRetr” is triggered to request in background a health attestation blob. Device sends TPM boot measurements to the Health Attestation Service.
-
 3.  Health Attestation Service validates device state and issues an encrypted blob to the device based on the health state with details on failed checks (if any).
-
 4.  User logs on and the MDM agent contacts the Intune/MDM server.
-
 5.  MDM server pushes down new policies if available and queries health blob state and other inventory state.
-
 6.  Device sends a health attestation blob previously acquired and also the value of the other state inventory requested by the Intune/MDM server.
-
 7.  Intune/MDM server sends the health attestation blob to Health Attestation Service to be validated.
-
 8.  Health Attestation Service validates that the device which sent the health attestation blob is healthy, and returns this result to Intune/MDM server.
-
 9.  Intune/MDM server evaluates compliance based on the compliance and the queried inventory/health attestation state from device.
-
 10. Intune/MDM server updates compliance state against device object in Azure AD.
-
 11. User opens app, attempts to access a corporate managed asset.
-
 12. Access gated by compliance claim in Azure AD.
-
 13. If the device is compliant and the user is authorized, an access token is generated.
-
 14. User can access the corporate managed asset.
 
 For more information about Azure AD join, see the [Azure AD & Windows 10: Better Together for Work or School](http://go.microsoft.com/fwlink/p/?LinkId=691619) white paper.
@@ -944,7 +773,6 @@ For more information about Azure AD join, see the [Azure AD & Windows 10: Better
 Conditional access control is a topic that many organizations and IT pros may not know as well as they should. The different attributes that describe a user, a device, compliance, and context of access are very powerful when used with a conditional access engine. Conditional access control is an essential step that helps organizations secure their environment.
 
 ## Takeaways and summary
-
 
 The following list contains high-level key take-aways to improve the security posture of any organization. However, the few take-aways presented in this section should not be interpreted as an exhaustive list of security best practices.
 
@@ -992,18 +820,6 @@ Health attestation is a key feature of Windows 10 that includes client and clou
 
 ## Related topics
 
-
-[Protect derived domain credentials with Credential Guard](credential-guard.md)
-
-[Device Guard deployment guide](device-guard-deployment-guide.md)
-
-[Trusted Platform Module technology overview](http://go.microsoft.com/fwlink/p/?LinkId=733957)
-
- 
-
- 
-
-
-
-
-
+- [Protect derived domain credentials with Credential Guard](credential-guard.md)
+- [Device Guard deployment guide](device-guard-deployment-guide.md)
+- [Trusted Platform Module technology overview](http://go.microsoft.com/fwlink/p/?LinkId=733957)

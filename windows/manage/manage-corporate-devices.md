@@ -117,6 +117,8 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 
 [New policies for Windows 10](new-policies-for-windows-10.md)
 
+[Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
+
 [Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
 
 [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)

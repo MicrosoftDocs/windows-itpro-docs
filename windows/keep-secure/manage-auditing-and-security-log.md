@@ -5,37 +5,32 @@ ms.assetid: 4b946c0d-f904-43db-b2d5-7f0917575347
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Manage auditing and security log
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Manage auditing and security log** security policy setting.
 
 ## Reference
 
-
-This policy setting determines which users can specify object access audit options for individual resources such as files, Active Directory objects, and registry keys. These objects specify their system access control lists (SACL). A user who is assigned this user right can also view and clear the Security log in Event Viewer. For more info about the Object Access audit policy, see [Audit object access](basic-audit-object-access.md).
+This policy setting determines which users can specify object access audit options for individual resources such as files, Active Directory objects, and registry keys. These objects specify their system access control lists (SACL). A user who is assigned this user right can also view and clear the 
+Security log in Event Viewer. For more info about the Object Access audit policy, see [Audit object access](basic-audit-object-access.md).
 
 Constant: SeSecurityPrivilege
 
 ### Possible values
-
 -   User-defined list of accounts
-
 -   Administrators
-
 -   Not Defined
 
 ### Best practices
 
 1.  Before removing this right from a group, investigate whether applications are dependent on this right.
-
 2.  Generally, assigning this user right to groups other than Administrators is not necessary.
 
 ### Location
@@ -48,49 +43,16 @@ By default this setting is Administrators on domain controllers and on stand-alo
 
 The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Administrators| 
+| Stand-Alone Server Default Settings | Administrators| 
+| Domain Controller Effective Default Settings | Administrators| 
+| Member Server Effective Default Settings | Administrators| 
+| Client Computer Effective Default Settings| Administrators| 
  
-
 ## Policy management
-
 
 This section describes features, tools, and guidance to help you manage this policy.
 
@@ -107,17 +69,13 @@ For more information about the Object Access audit policy, see [Audit object acc
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -133,21 +91,8 @@ Ensure that only the local Administrators group has the **Manage auditing and se
 
 Restricting the **Manage auditing and security log** user right to the local Administrators group is the default configuration.
 
-**Warning**  
-If groups other than the local Administrators group have been assigned this user right, removing this user right might cause performance issues with other applications. Before removing this right from a group, investigate whether applications are dependent on this right.
-
+>**Warning:**  If groups other than the local Administrators group have been assigned this user right, removing this user right might cause performance issues with other applications. Before removing this right from a group, investigate whether applications are dependent on this right.
  
-
 ## Related topics
 
-
-[User Rights Assignment](user-rights-assignment.md)
-
- 
-
- 
-
-
-
-
-
+- [User Rights Assignment](user-rights-assignment.md)

@@ -5,27 +5,23 @@ ms.assetid: 38b35489-eb5b-4035-bc87-df63de50509c
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: LDAP client signing requirements
 
-
 **Applies to**
-
 -   Windows 10
 
 This security policy reference topic for the IT professional describes the best practices, location, values, policy management and security considerations for this policy setting. This information applies to computers running at least the Windows Server 2008 operating system.
 
 ## Reference
 
-
 This policy setting determines the level of data signing that is requested on behalf of client devices that issue LDAP BIND requests. The levels of data signing are described in the following list:
 
 -   **None**. The LDAP BIND request is issued with the caller-specified options.
-
 -   **Negotiate signing**. If Transport Layer Security/Secure Sockets Layer (TLS/SSL) has not been started, the LDAP BIND request is initiated with the LDAP data signing option set in addition to the caller-specified options. If TLS/SSL has been started, the LDAP BIND request is initiated with the caller-specified options.
-
 -   **Require signing**. This level is the same as **Negotiate signing**. However, if the LDAP server's intermediate saslBindInProgress response does not indicate that LDAP traffic signing is required, the caller is returned a message that the LDAP BIND command request failed.
 
 Misuse of this policy setting is a common error that can cause data loss or problems with data access or security.
@@ -33,11 +29,8 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 ### Possible values
 
 -   None
-
 -   Negotiate signing
-
 -   Require signature
-
 -   Not Defined
 
 ### Best practices
@@ -52,49 +45,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Negotiate signing</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Negotiate signing</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Negotiate signing</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Negotiate signing</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Negotiate signing| 
+| DC Effective Default Settings | Negotiate signing| 
+| Member Server Effective Default Settings | Negotiate signing| 
+| Client Computer Effective Default Settings | Negotiate signing| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -107,7 +67,6 @@ None. Changes to this policy become effective without a device restart when they
 Modifying this setting may affect compatibility with client devices, services, and applications.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -125,14 +84,4 @@ If you configure the server to require LDAP signatures, you must also configure 
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

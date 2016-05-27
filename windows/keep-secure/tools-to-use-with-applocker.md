@@ -5,14 +5,13 @@ ms.assetid: db2b7cb3-7643-4be5-84eb-46ba551e1ad1
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Tools to use with AppLocker
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for the IT professional describes the tools available to create and administer AppLocker policies.
@@ -51,14 +50,4 @@ The following tools can help you administer the application control policies cre
 
 ## Related topics
 
-
-[AppLocker technical reference](applocker-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
+- [AppLocker technical reference](applocker-technical-reference.md)
