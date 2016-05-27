@@ -2,7 +2,7 @@
 title: AppLocker technical reference (Windows 10)
 description: This overview topic for IT professionals provides links to the topics in the technical reference.
 ms.assetid: 2b2678f8-c46b-4e1d-b8c5-037c0be255ab
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

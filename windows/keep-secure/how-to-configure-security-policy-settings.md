@@ -3,7 +3,7 @@ title: Configure security policy settings (Windows 10)
 description: Describes steps to configure a security policy setting on the local device, on a domain-joined device, and on a domain controller.
 ms.assetid: 63b0967b-a9fe-4d92-90af-67469ee20320
 
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

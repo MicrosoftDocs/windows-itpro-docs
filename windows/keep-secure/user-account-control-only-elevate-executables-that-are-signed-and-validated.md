@@ -2,7 +2,7 @@
 title: User Account Control Only elevate executables that are signed and validated (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Only elevate executables that are signed and validated security policy setting.
 ms.assetid: 64950a95-6985-4db6-9905-1db18557352d
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

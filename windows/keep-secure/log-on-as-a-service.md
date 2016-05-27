@@ -2,7 +2,7 @@
 title: Log on as a service (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Log on as a service security policy setting.
 ms.assetid: acc9a9e0-fd88-4cda-ab54-503120ba1f42
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

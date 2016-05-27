@@ -2,7 +2,7 @@
 title: Determine which apps are digitally signed on a reference device (Windows 10)
 description: This topic for the IT professional describes how to use AppLocker logs and tools to determine which applications are digitally signed.
 ms.assetid: 24609a6b-fdcb-4083-b234-73e23ff8bcb8
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
