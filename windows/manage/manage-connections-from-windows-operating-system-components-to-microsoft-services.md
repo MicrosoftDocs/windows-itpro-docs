@@ -1,9 +1,14 @@
 ---
-title: Configure Windows 10 devices to stop data flow to Microsoft (Windows 10)
-redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services
+title: Manage connections from Windows operating system components to Microsoft services (Windows 10)
+description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
+ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
+keywords: privacy, manage connections to Microsoft
+ms.prod: W10
+ms.mktglfcycl: manage
+ms.sitesec: library
 ---
 
-# Configure Windows 10 devices to stop data flow to Microsoft
+# Manage connections from Windows operating system components to Microsoft services
 
 **Applies to**
 
@@ -1078,7 +1083,7 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 ### <a href="" id="bkmk-defender"></a>19. Windows Defender
 
-You can opt out of the Microsoft Antimalware Protection Service.
+You can disconnect from the Microsoft Antimalware Protection Service.
 
 -   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **MAPS** &gt; **Join Microsoft MAPS**
 
@@ -1204,7 +1209,7 @@ The following Delivery Optimization MDM policies are available in the [Policy CS
 | Policy                    | Description                                                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------------------|
 | DeliveryOptimization/DODownloadMode             | Lets you choose where Delivery Optimization gets or sends updates and apps, including <ul><li><p><strong>0</strong>. Turns off Delivery Optimization.</p></li><li><p><strong>1</strong>. Gets or sends updates and apps to PCs on the same NAT only.</p></li><li><p><strong>2</strong>. Gets or sends updates and apps to PCs on the same local network domain.</p></li><li><p><strong>3</strong>. Gets or sends updates and apps to PCs on the Internet.</p></li></ul>|
-| DeliveryOptimization/DOGroupID                 | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> ** Note** This ID must be a GUID.|
+| DeliveryOptimization/DOGroupID                 | Lets you provide a Group ID that limits which PCs can share apps and updates. <br /> **Note** This ID must be a GUID.|
 | DeliveryOptimization/DOMaxCacheAge             | Lets you specify the maximum time (in seconds) that a file is held in the Delivery Optimization cache. <br /> The default value is 259200 seconds (3 days).|
 | DeliveryOptimization/DOMaxCacheSize            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
 | DeliveryOptimization/DOMaxUploadBandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|

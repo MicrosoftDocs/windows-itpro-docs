@@ -2,10 +2,10 @@
 title: Custom XML Examples (Windows 10)
 description: Custom XML Examples
 ms.assetid: 48f441d9-6c66-43ef-91e9-7c78cde6fcc0
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Custom XML Examples
