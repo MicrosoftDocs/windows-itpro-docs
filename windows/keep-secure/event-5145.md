@@ -178,7 +178,9 @@ REQUSTED\_ACCESS: RESULT ACE\_WHICH\_ ALLOWED\_OR\_DENIED\_ACCESS.
 > *O*:BA*G*:SY*D*:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0×7;;;BA)*S*:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
 
 > - *O*: = Owner. SID of specific security principal, or reserved (pre-defined) value, for example: BA (BUILTIN\_ADMINISTRATORS), WD (Everyone), SY (LOCAL\_SYSTEM), etc. 
-> See the list of possible values in the table below:
+> See the list of possible values in the table below.
+
+## SDDL values for Access Control Entry
 
 | Value | Description                          | Value | Description                     |
 |-------|--------------------------------------|-------|---------------------------------|
