@@ -2,78 +2,45 @@
 title: Audit Kernel Object (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Kernel Object, which determines whether the operating system generates audit events when users attempt to access the system kernel, which includes mutexes and semaphores.
 ms.assetid: 75619d8b-b1eb-445b-afc9-0f9053be97fb
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Kernel Object
 
-
 **Applies to**
-
--   Windows 10
--   Windows 10 Mobile
-
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Kernel Object**, which determines whether the operating system generates audit events when users attempt to access the system kernel, which includes mutexes and semaphores.
-
-Only kernel objects with a matching system access control list (SACL) generate security audit events. The audits generated are usually useful only to developers.
-
-Typically, kernel objects are given SACLs only if the **AuditBaseObjects** or **AuditBaseDirectories** auditing options are enabled.
-
-**Note**  
-The **Audit: Audit the access of global system objects** policy setting controls the default SACL of kernel objects.
-
- 
-
-Event volume: High if you have enabled one of the Global Object Access Auditing settings
-
-Default setting: Not configured
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4659</p></td>
-<td align="left"><p>A handle to an object was requested with intent to delete.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4660</p></td>
-<td align="left"><p>An object was deleted.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4661</p></td>
-<td align="left"><p>A handle to an object was requested.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4663</p></td>
-<td align="left"><p>An attempt was made to access an object.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## Related topics
+-   Windows 10
+-   Windows Server 2016
 
 
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
+Audit Kernel Object determines whether the operating system generates audit events when users attempt to access the system kernel, which includes mutexes and semaphores.
 
- 
+Only kernel objects with a matching system access control list ([SACL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx)) generate security audit events. The audits generated are usually useful only to developers.
 
- 
+Typically, kernel objects are given SACLs only if the AuditBaseObjects or AuditBaseDirectories auditing options are enabled.
 
+The “[Audit: Audit the access of global system objects](https://technet.microsoft.com/en-us/library/jj852233.aspx)” policy setting controls the default SACL of kernel objects.
 
+**Event volume**: High.
+
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                               |
+|-------------------|-----------------|-----------------|------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | No              | No              | No               | No               | Typically Kernel object auditing events have little to no security relevance and are hard to parse or analyze. Also, the volume of these events is typically very high. <br>There is no recommendation to enable this subcategory, unless you know exactly what you need to monitor at the Kernel objects level. |
+| Member Server     | No              | No              | No               | No               | Typically Kernel object auditing events have little to no security relevance and are hard to parse or analyze. Also, the volume of these events is typically very high. <br>There is no recommendation to enable this subcategory, unless you know exactly what you need to monitor at the Kernel objects level. |
+| Workstation       | No              | No              | No               | No               | Typically Kernel object auditing events have little to no security relevance and are hard to parse or analyze. Also, the volume of these events is typically very high. <br>There is no recommendation to enable this subcategory, unless you know exactly what you need to monitor at the Kernel objects level. |
+
+**Events List:**
+
+-   [4656](event-4656.md)(S, F): A handle to an object was requested.
+
+-   [4658](event-4658.md)(S): The handle to an object was closed.
+
+-   [4660](event-4660.md)(S): An object was deleted.
+
+-   [4663](event-4663.md)(S): An attempt was made to access an object.
 
 
 

@@ -2,98 +2,49 @@
 title: Audit Application Group Management (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit Application Group Management, which determines whether the operating system generates audit events when application group management tasks are performed.
 ms.assetid: 1bcaa41e-5027-4a86-96b7-f04eaf1c0606
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Application Group Management
 
-
 **Applies to**
-
--   Windows 10
-
-This topic for the IT professional describes the advanced security audit policy setting, **Audit Application Group Management**, which determines whether the operating system generates audit events when application group management tasks are performed.
-
-Application group management tasks include:
-
--   An application group is created, changed, or deleted.
-
--   A member is added to or removed from an application group.
-
-Event volume: Low
-
-Default: Not configured
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4783</p></td>
-<td align="left"><p>A basic application group was created.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4784</p></td>
-<td align="left"><p>A basic application group was changed.</p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4785</p></td>
-<td align="left"><p>A member was added to a basic application group.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4786</p></td>
-<td align="left"><p>A member was removed from a basic application group.</p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4787</p></td>
-<td align="left"><p>A non-member was added to a basic application group.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4788</p></td>
-<td align="left"><p>A non-member was removed from a basic application group.</p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4789</p></td>
-<td align="left"><p>A basic application group was deleted.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4790</p></td>
-<td align="left"><p>An LDAP query group was created.</p>
-<p></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## Related topics
+-   Windows 10
+-   Windows Server 2016
 
 
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
+Audit Application Group Management generates events for actions related to [application groups](https://technet.microsoft.com/en-us/library/cc771579.aspx), such as group creation, modification, addition or removal of group member and some other actions.
 
- 
+[Application groups](https://technet.microsoft.com/en-us/library/cc771579.aspx) are used by [Authorization Manager](https://technet.microsoft.com/en-us/library/cc726036.aspx).
 
- 
+Audit Application Group Management subcategory is out of scope of this document, because [Authorization Manager](https://technet.microsoft.com/en-us/library/cc726036.aspx) is very rarely in use and it is deprecated starting from Windows Server 2012.
 
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                |
+|-------------------|-----------------|-----------------|------------------|------------------|---------------------------------------------------------|
+| Domain Controller | -               | -               | -                | -                | This subcategory is outside the scope of this document. |
+| Member Server     | -               | -               | -                | -                | This subcategory is outside the scope of this document. |
+| Workstation       | -               | -               | -                | -                | This subcategory is outside the scope of this document. |
 
+## 4783(S): A basic application group was created.
 
+## 4784(S): A basic application group was changed.
 
+## 4785(S): A member was added to a basic application group.
+
+## 4786(S): A member was removed from a basic application group.
+
+## 4787(S): A non-member was added to a basic application group.
+
+## 4788(S): A non-member was removed from a basic application group.
+
+## 4789(S): A basic application group was deleted.
+
+## 4790(S): An LDAP query group was created.
+
+## 4791(S): An LDAP query group was changed.
+
+## 4792(S): An LDAP query group was deleted.
 

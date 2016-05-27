@@ -2,98 +2,70 @@
 title: Audit Sensitive Privilege Use (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Sensitive Privilege Use, which determines whether the operating system generates audit events when sensitive privileges (user rights) are used.
 ms.assetid: 915abf50-42d2-45f6-9fd1-e7bd201b193d
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Sensitive Privilege Use
 
-
 **Applies to**
+-   Windows 10
+-   Windows Server 2016
 
--   Windows 10
 
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Sensitive Privilege Use**, which determines whether the operating system generates audit events when sensitive privileges (user rights) are used.
+Audit Sensitive Privilege Use contains events that show the usage of sensitive privileges. This is the list of sensitive privileges:
 
-Actions that can be audited include:
+-   Act as part of the operating system
 
--   A privileged service is called.
+-   Back up files and directories
 
--   One of the following privileges is called:
+-   Restore files and directories
 
-    **Act as part of the operating system**
+-   Create a token object
 
-    **Back up files and directories**
+-   Debug programs
 
-    **Create a token object**
+-   Enable computer and user accounts to be trusted for delegation
 
-    **Debug programs**
+-   Generate security audits
 
-    **Enable computer and user accounts to be trusted for delegation**
+-   Impersonate a client after authentication
 
-    **Generate security audits**
+-   Load and unload device drivers
 
-    **Impersonate a client after authentication**
+-   Manage auditing and security log
 
-    **Load and unload device drivers**
+-   Modify firmware environment values
 
-    **Manage auditing and security log**
+-   Replace a process-level token
 
-    **Modify firmware environment values**
+-   Take ownership of files or other objects
 
-    **Replace a process-level token**
+The use of two privileges, “Back up files and directories” and “Restore files and directories,” generate events only if the “[Audit: Audit the use of Backup and Restore privilege](https://technet.microsoft.com/en-us/library/jj852206.aspx)” Group Policy setting is enabled on the computer or device. We do not recommend enabling this Group Policy setting because of the high number of events recorded.
 
-    **Restore files and directories**
-
-    **Take ownership of files or other objects**
+This subcategory also contains informational events from the file system Transaction Manager.
 
 If you configure this policy setting, an audit event is generated when sensitive privilege requests are made. Success audits record successful attempts, and failure audits record unsuccessful attempts.
 
-Event volume: High
+**Event volume**: High.
 
-Default: Not configured
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                      |
+|-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | Yes             | Yes             | Yes              | Yes              | We recommend tracking Success and Failure for this subcategory of events, especially if the sensitive privileges were used by a user account. |
+| Member Server     | Yes             | Yes             | Yes              | Yes              | We recommend tracking Success and Failure for this subcategory of events, especially if the sensitive privileges were used by a user account. |
+| Workstation       | Yes             | Yes             | Yes              | Yes              | We recommend tracking Success and Failure for this subcategory of events, especially if the sensitive privileges were used by a user account. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4672</p></td>
-<td align="left"><p>Special privileges assigned to new logon.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4673</p></td>
-<td align="left"><p>A privileged service was called.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4674</p></td>
-<td align="left"><p>An operation was attempted on a privileged object.</p></td>
-</tr>
-</tbody>
-</table>
+**Events List:**
 
- 
+-   [4673](event-4673.md)(S, F): A privileged service was called.
 
-## Related topics
+-   [4674](event-4674.md)(S, F): An operation was attempted on a privileged object.
 
+-   [4985](event-4985.md)(S): The state of a transaction has changed.
 
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
- 
-
- 
-
-
-
+>**Note**&nbsp;&nbsp;For some reason event “[4985](event-4985.md)(S): The state of a transaction has changed" from [Audit File System](#_Audit_File_System) subcategory generates also in this subcategory. See description of event [4985](event-4985.md) in [Audit File System](#_Audit_File_System) subcategory.
 
 

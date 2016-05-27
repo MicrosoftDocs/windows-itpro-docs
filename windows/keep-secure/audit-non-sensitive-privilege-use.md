@@ -1,129 +1,84 @@
 ---
-title: Audit Non-Sensitive Privilege Use (Windows 10)
+title: Audit Non Sensitive Privilege Use (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Non-Sensitive Privilege Use, which determines whether the operating system generates audit events when non-sensitive privileges (user rights) are used.
 ms.assetid: 8fd74783-1059-443e-aa86-566d78606627
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: Mir0sh
 ---
 
-# Audit Non-Sensitive Privilege Use
-
+# Audit Non Sensitive Privilege Use
 
 **Applies to**
+-   Windows 10
+-   Windows Server 2016
 
--   Windows 10
 
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Non-Sensitive Privilege Use**, which determines whether the operating system generates audit events when non-sensitive privileges (user rights) are used.
+Audit Non Sensitive Privilege Use contains events that show usage of non-sensitive privileges. This is the list of non-sensitive privileges:
 
-The following privileges are non-sensitive:
+-   Access Credential Manager as a trusted caller
 
--   **Access Credential Manager as a trusted caller**
+-   Add workstations to domain
 
--   **Access this computer from the network**
+-   Adjust memory quotas for a process
 
--   **Add workstations to domain**
+-   Bypass traverse checking
 
--   **Adjust memory quotas for a process**
+-   Change the system time
 
--   **Allow log on locally**
+-   Change the time zone
 
--   **Allow log on through Terminal Services**
+-   Create a page file
 
--   **Bypass traverse checking**
+-   Create global objects
 
--   **Change the system time**
+-   Create permanent shared objects
 
--   **Create a page file**
+-   Create symbolic links
 
--   **Create global objects**
+-   Force shutdown from a remote system
 
--   **Create permanent shared objects**
+-   Increase a process working set
 
--   **Create symbolic links**
+-   Increase scheduling priority
 
--   **Deny access to this computer from the network**
+-   Lock pages in memory
 
--   **Deny log on as a batch job**
+-   Modify an object label
 
--   **Deny log on as a service**
+-   Perform volume maintenance tasks
 
--   **Deny log on locally**
+-   Profile single process
 
--   **Deny log on through Terminal Services**
+-   Profile system performance
 
--   **Force shutdown from a remote system**
+-   Remove computer from docking station
 
--   **Increase a process working set**
+-   Shut down the system
 
--   **Increase scheduling priority**
+-   Synchronize directory service data
 
--   **Lock pages in memory**
-
--   **Log on as a batch job**
-
--   **Log on as a service**
-
--   **Modify an object label**
-
--   **Perform volume maintenance tasks**
-
--   **Profile single process**
-
--   **Profile system performance**
-
--   **Remove computer from docking station**
-
--   **Shut down the system**
-
--   **Synchronize directory service data**
+This subcategory also contains informational events from filesystem Transaction Manager.
 
 If you configure this policy setting, an audit event is generated when a non-sensitive privilege is called. Success audits record successful attempts, and failure audits record unsuccessful attempts.
 
-Event volume: Very high
+**Event volume**: Very High.
 
-Default: Not configured
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------|-----------------|-----------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | No              | IF              | No               | IF               | We do not recommend Success auditing because the volume of events is very high and typically they are not as important as events from [Audit Sensitive Privilege Use](#_Audit_Sensitive_Privilege) subcategory.<br>IF – You can enable Failure auditing if you need information about failed attempts to use non-sensitive privileges, for example, **SeShutdownPrivilege** or **SeRemoteShutdownPrivilege**. |
+| Member Server     | No              | IF              | No               | IF               | We do not recommend Success auditing because the volume of events is very high and typically they are not as important as events from [Audit Sensitive Privilege Use](#_Audit_Sensitive_Privilege) subcategory.<br>IF – You can enable Failure auditing if you need information about failed attempts to use non-sensitive privileges, for example, **SeShutdownPrivilege** or **SeRemoteShutdownPrivilege**. |
+| Workstation       | No              | IF              | No               | IF               | We do not recommend Success auditing because the volume of events is very high and typically they are not as important as events from [Audit Sensitive Privilege Use](#_Audit_Sensitive_Privilege) subcategory.<br>IF – You can enable Failure auditing if you need information about failed attempts to use non-sensitive privileges, for example, **SeShutdownPrivilege** or **SeRemoteShutdownPrivilege**. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4672</p></td>
-<td align="left"><p>Special privileges assigned to new logon.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4673</p></td>
-<td align="left"><p>A privileged service was called.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4674</p></td>
-<td align="left"><p>An operation was attempted on a privileged object.</p></td>
-</tr>
-</tbody>
-</table>
+**Events List:**
 
- 
+-   [4673](event-4673.md)(S, F): A privileged service was called.
 
-## Related topics
+-   [4674](event-4674.md)(S, F): An operation was attempted on a privileged object.
 
-
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
-
- 
-
- 
-
-
+-   [4985](event-4985.md)(S): The state of a transaction has changed.
 
 
 

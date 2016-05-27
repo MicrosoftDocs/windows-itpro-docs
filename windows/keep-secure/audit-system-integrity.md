@@ -2,21 +2,21 @@
 title: Audit System Integrity (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit System Integrity, which determines whether the operating system audits events that violate the integrity of the security subsystem.
 ms.assetid: 942a9a7f-fa31-4067-88c7-f73978bf2034
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit System Integrity
 
-
 **Applies to**
+-   Windows 10
+-   Windows Server 2016
 
--   Windows 10
--   Windows 10 Mobile
 
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit System Integrity**, which determines whether the operating system audits events that violate the integrity of the security subsystem.
+Audit System Integrity determines whether the operating system audits events that violate the integrity of the security subsystem.
 
 Activities that violate the integrity of the security subsystem include the following:
 
@@ -30,86 +30,39 @@ Activities that violate the integrity of the security subsystem include the foll
 
 -   Cryptographic tasks are performed.
 
-**Important**  
 Violations of security subsystem integrity are critical and could indicate a potential security attack.
 
- 
+**Event volume**: Low.
 
-Event volume: Low
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------------|-----------------|-----------------|------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | Yes             | Yes             | Yes              | Yes              | The main reason why we recommend Success auditing for this subcategory is to be able to get RPC integrity violation errors and auditing subsystem errors (event 4612). However, if you are planning to manually invoke “[4618](event-4618.md)(S): A monitored security event pattern has occurred”, then you also need to enable Success auditing for this subcategory.<br>The main reason why we recommend Failure auditing for this subcategory is to be able to get [Code Integrity](https://technet.microsoft.com/en-us/library/dd348642(v=ws.10).aspx) failure events. |
+| Member Server     | Yes             | Yes             | Yes              | Yes              | The main reason why we recommend Success auditing for this subcategory is to be able to get RPC integrity violation errors and auditing subsystem errors (event 4612). However, if you are planning to manually invoke “[4618](event-4618.md)(S): A monitored security event pattern has occurred”, then you also need to enable Success auditing for this subcategory.<br>The main reason why we recommend Failure auditing for this subcategory is to be able to get [Code Integrity](https://technet.microsoft.com/en-us/library/dd348642(v=ws.10).aspx) failure events. |
+| Workstation       | Yes             | Yes             | Yes              | Yes              | The main reason why we recommend Success auditing for this subcategory is to be able to get RPC integrity violation errors and auditing subsystem errors (event 4612). However, if you are planning to manually invoke “[4618](event-4618.md)(S): A monitored security event pattern has occurred”, then you also need to enable Success auditing for this subcategory.<br>The main reason why we recommend Failure auditing for this subcategory is to be able to get [Code Integrity](https://technet.microsoft.com/en-us/library/dd348642(v=ws.10).aspx) failure events. |
 
-Default: Success and failure
+**Events List:**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4612</p></td>
-<td align="left"><p>Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4615</p></td>
-<td align="left"><p>Invalid use of LPC port.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4618</p></td>
-<td align="left"><p>A monitored security event pattern has occurred.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4816</p></td>
-<td align="left"><p>RPC detected an integrity violation while decrypting an incoming message.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>5038</p></td>
-<td align="left"><p>Code integrity determined that the image hash of a file is not valid. The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5056</p></td>
-<td align="left"><p>A cryptographic self-test was performed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>5057</p></td>
-<td align="left"><p>A cryptographic primitive operation failed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5060</p></td>
-<td align="left"><p>Verification operation failed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>5061</p></td>
-<td align="left"><p>Cryptographic operation.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5062</p></td>
-<td align="left"><p>A kernel-mode cryptographic self-test was performed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>6281</p></td>
-<td align="left"><p>Code Integrity determined that the page hashes of an image file are not valid. The file could be improperly signed without page hashes or corrupt due to unauthorized modification. The invalid hashes could indicate a potential disk device error.</p></td>
-</tr>
-</tbody>
-</table>
+-   [4612](event-4612.md)(S): Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.
 
- 
+-   [4615](event-4615.md)(S): Invalid use of LPC port.
 
-## Related topics
+-   [4618](event-4618.md)(S): A monitored security event pattern has occurred.
 
+-   [4816](event-4816.md)(S): RPC detected an integrity violation while decrypting an incoming message.
 
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
+-   [5038](event-5038.md)(F): Code integrity determined that the image hash of a file is not valid. The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.
 
- 
+-   [5056](event-5056.md)(S): A cryptographic self-test was performed.
 
- 
+-   [5062](event-5062.md)(S): A kernel-mode cryptographic self-test was performed.
 
+-   [5057](event-5057.md)(F): A cryptographic primitive operation failed.
 
+-   [5060](event-5060.md)(F): Verification operation failed.
 
+-   [5061](event-5061.md)(S, F): Cryptographic operation.
 
+-   [6281](event-6281.md)(F): Code Integrity determined that the page hashes of an image file are not valid. The file could be improperly signed without page hashes or corrupt due to unauthorized modification. The invalid hashes could indicate a potential disk device error.
+
+-   [6410](event-6410.md)(F): Code integrity determined that a file does not meet the security requirements to load into a process.
 

@@ -2,78 +2,41 @@
 title: Audit Authorization Policy Change (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Authorization Policy Change, which determines whether the operating system generates audit events when specific changes are made to the authorization policy.
 ms.assetid: ca0587a2-a2b3-4300-aa5d-48b4553c3b36
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Authorization Policy Change
 
-
 **Applies to**
-
--   Windows 10
-
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Authorization Policy Change**, which determines whether the operating system generates audit events when specific changes are made to the authorization policy.
-
-Authorization policy changes that can be audited include:
-
--   Assigning or removing user rights (privileges) such as **SeCreateTokenPrivilege**, except for the system access rights that are audited by using the [Audit Authentication Policy Change](audit-authentication-policy-change.md) subcategory.
-
--   Changing the Encrypting File System (EFS) policy.
-
-Event volume: Low
-
-Default: Not configured
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4704</p></td>
-<td align="left"><p>A user right was assigned.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4705</p></td>
-<td align="left"><p>A user right was removed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4706</p></td>
-<td align="left"><p>A new trust was created to a domain.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4707</p></td>
-<td align="left"><p>A trust to a domain was removed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4714</p></td>
-<td align="left"><p>Encrypted data recovery policy was changed.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## Related topics
+-   Windows 10
+-   Windows Server 2016
 
 
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
+Audit Authorization Policy Change allows you to audit assignment and removal of user rights in user right policies, changes in security token object permission, resource attributes changes and Central Access Policy changes for file system objects.
 
- 
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | Yes             | No              | Yes              | No               | It is important to enable Success audit for this subcategory to be able to get information related to changes in user rights policies.<br>Enable Success audit for this subcategory also if you need to monitor changes of resource attributes or Central Access Policy applied to file system objects.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Member Server     | Yes             | No              | Yes              | No               | It is important to enable Success audit for this subcategory to be able to get information related to changes in user rights policies.<br>Enable Success audit for this subcategory also if you need to monitor changes of resource attributes or Central Access Policy applied to file system objects.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Workstation       | Yes             | No              | Yes              | No               | It is important to enable Success audit for this subcategory to be able to get information related to changes in user rights policies.<br>Enable Success audit for this subcategory also if you need to monitor changes of resource attributes or Central Access Policy applied to file system objects.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
 
- 
+**Events List:**
 
+-   [4703](event-4703.md)(S): A user right was adjusted.
 
+-   [4704](event-4704.md)(S): A user right was assigned.
 
+-   [4705](event-4705.md)(S): A user right was removed.
 
+-   [4670](event-4670.md)(S): Permissions on an object were changed.
+
+-   [4911](event-4911.md)(S): Resource attributes of the object were changed.
+
+-   [4913](event-4913.md)(S): Central Access Policy on the object was changed.
+
+**Event volume**: Medium.
 

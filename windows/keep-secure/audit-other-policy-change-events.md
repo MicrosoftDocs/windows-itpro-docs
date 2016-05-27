@@ -2,118 +2,61 @@
 title: Audit Other Policy Change Events (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Other Policy Change Events, which determines whether the operating system generates audit events for security policy changes that are not otherwise audited in the Policy Change category.
 ms.assetid: 8618502e-c21c-41cc-8a49-3dc1eb359e60
+ms.pagetype: security
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Other Policy Change Events
 
-
 **Applies to**
-
--   Windows 10
-
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Other Policy Change Events**, which determines whether the operating system generates audit events for security policy changes that are not otherwise audited in the Policy Change category.
-
-These other activities in the Policy Change category that can be audited include:
-
--   Trusted Platform Module (TPM) configuration changes.
-
--   Kernel-mode cryptographic self tests.
-
--   Cryptographic provider operations.
-
--   Cryptographic context operations or modifications.
-
-Event volume: Low
-
-Default: Not configured
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Event ID</th>
-<th align="left">Event message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>4670</p></td>
-<td align="left"><p>Permissions on an object were changed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4909</p></td>
-<td align="left"><p>The local policy settings for the TBS were changed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4910</p></td>
-<td align="left"><p>The group policy settings for the TBS were changed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5063</p></td>
-<td align="left"><p>A cryptographic provider operation was attempted.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>5064</p></td>
-<td align="left"><p>A cryptographic context operation was attempted.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5065</p></td>
-<td align="left"><p>A cryptographic context modification was attempted.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>5066</p></td>
-<td align="left"><p>A cryptographic function operation was attempted.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5067</p></td>
-<td align="left"><p>A cryptographic function modification was attempted.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>5068</p></td>
-<td align="left"><p>A cryptographic function provider operation was attempted.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5069</p></td>
-<td align="left"><p>A cryptographic function property operation was attempted.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>5070</p></td>
-<td align="left"><p>A cryptographic function property modification was attempted.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5447</p></td>
-<td align="left"><p>A Windows Filtering Platform filter has been changed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>6144</p></td>
-<td align="left"><p>Security policy in the group policy objects has been applied successfully.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>6145</p></td>
-<td align="left"><p>One or more errors occurred while processing security policy in the group policy objects.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## Related topics
+-   Windows 10
+-   Windows Server 2016
 
 
-[Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
+Audit Other Policy Change Events contains events about EFS Data Recovery Agent policy changes, changes in Windows Filtering Platform filter, status on Security policy settings updates for local Group Policy settings, Central Access Policy changes, and detailed troubleshooting events for Cryptographic Next Generation (CNG) operations.
 
- 
+**Event volume**: Low.
 
- 
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | IF              | Yes             | IF               | Yes              | IF - We do not recommend Success auditing because of event “5447: A Windows Filtering Platform filter has been changed”—this event generates many times during group policy updates and typically is used for troubleshooting purposes for Windows Filtering Platform filters. But you would still need to enable Success auditing for this subcategory if, for example, you must monitor changes in Boot Configuration Data or Central Access Policies.<br>We recommend Failure auditing, to detect errors in applied Security settings which came from Group Policy, and failure events related to Cryptographic Next Generation (CNG) functions. |
+| Member Server     | IF              | Yes             | IF               | Yes              | IF - We do not recommend Success auditing because of event “5447: A Windows Filtering Platform filter has been changed”—this event generates many times during group policy updates and typically is used for troubleshooting purposes for Windows Filtering Platform filters. But you would still need to enable Success auditing for this subcategory if, for example, you must monitor changes in Boot Configuration Data or Central Access Policies.<br>We recommend Failure auditing, to detect errors in applied Security settings which came from Group Policy, and failure events related to Cryptographic Next Generation (CNG) functions. |
+| Workstation       | IF              | Yes             | IF               | Yes              | IF - We do not recommend Success auditing because of event “5447: A Windows Filtering Platform filter has been changed”—this event generates many times during group policy updates and typically is used for troubleshooting purposes for Windows Filtering Platform filters. But you would still need to enable Success auditing for this subcategory if, for example, you must monitor changes in Boot Configuration Data or Central Access Policies.<br>We recommend Failure auditing, to detect errors in applied Security settings which came from Group Policy, and failure events related to Cryptographic Next Generation (CNG) functions. |
 
+**Events List:**
 
+-   [4714](event-4714.md)(S): Encrypted data recovery policy was changed.
 
+-   [4819](event-4819.md)(S): Central Access Policies on the machine have been changed.
 
+-   [4826](event-4826.md)(S): Boot Configuration Data loaded.
+
+-   [4909](event-4909.md)(-): The local policy settings for the TBS were changed.
+
+-   [4910](event-4910.md)(-): The group policy settings for the TBS were changed.
+
+-   [5063](event-5063.md)(S, F): A cryptographic provider operation was attempted.
+
+-   [5064](event-5064.md)(S, F): A cryptographic context operation was attempted.
+
+-   [5065](event-5065.md)(S, F): A cryptographic context modification was attempted.
+
+-   [5066](event-5066.md)(S, F): A cryptographic function operation was attempted.
+
+-   [5067](event-5067.md)(S, F): A cryptographic function modification was attempted.
+
+-   [5068](event-5068.md)(S, F): A cryptographic function provider operation was attempted.
+
+-   [5069](event-5069.md)(S, F): A cryptographic function property operation was attempted.
+
+-   [5070](event-5070.md)(S, F): A cryptographic function property modification was attempted.
+
+-   [5447](event-5447.md)(S): A Windows Filtering Platform filter has been changed.
+
+-   [6144](event-6144.md)(S): Security policy in the group policy objects has been applied successfully.
+
+-   [6145](event-6145.md)(F): One or more errors occurred while processing security policy in the group policy objects.
 
