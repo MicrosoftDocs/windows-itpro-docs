@@ -94,6 +94,7 @@ For more information about the MDM protocols, see [Mobile device management](htt
 
 ## Learn more
 
+[How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627898.aspx)
 
 [Windows 10, Azure AD and Microsoft Intune: Automatic MDM Enrollment](http://go.microsoft.com/fwlink/p/?LinkId=623321)
 
@@ -115,6 +116,8 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 
 
 [New policies for Windows 10](new-policies-for-windows-10.md)
+
+[Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 
 [Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
 

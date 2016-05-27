@@ -5,27 +5,23 @@ ms.assetid: face8932-b034-4319-86ac-db1163d46538
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Trusted Platform Module Technology Overview
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication. The topic provides links to other resources about the TPM.
 
 ## <a href="" id="bkmk-over"></a>Feature description
 
-
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Some of the key advantages of using TPM technology are that you can:
 
 -   Generate, store, and limit the use of cryptographic keys.
-
 -   Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into itself.
-
 -   Help ensure platform integrity by taking and storing security measurements.
 
 The most common TPM functions are used for system integrity measurements and for key creation and use. During the boot process of a system, the boot code that is loaded (including firmware and the operating system components) can be measured and recorded in the TPM. The integrity measurements can be used as evidence for how a system started and to make sure that a TPM-based key was used only when the correct software was used to boot the system.
@@ -38,7 +34,6 @@ Windows can automatically provision and manage the TPM. Group Policy settings ca
 
 ## <a href="" id="bkmk-app"></a>Practical applications
 
-
 Certificates can be installed or created on computers that are using the TPM. After a computer is provisioned, the RSA private key for a certificate is bound to the TPM and cannot be exported. The TPM can also be used as a replacement for smart cards, which reduces the costs associated with creating and disbursing smart cards.
 
 Automated provisioning in the TPM reduces the cost of TPM deployment in an enterprise. New APIs for TPM management can determine if TPM provisioning actions require physical presence of a service technician to approve TPM state change requests during the boot process.
@@ -49,11 +44,9 @@ The TPM has several Group Policy settings that can be used to manage how it is u
 
 ## <a href="" id="bkmk-new"></a>New and changed functionality
 
-
 For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](../whats-new/trusted-platform-module.md).
 
 ## <a href="" id="bkmk-dha"></a>Device health attestation
-
 
 Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device heath attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
 
@@ -63,68 +56,21 @@ Some things that you can check on the device are:
 -   Is BitLocker Drive Encryption supported and enabled?
 -   Is SecureBoot supported and enabled?
 
-**Note**  The device must be running Windows 10 and it must support at least TPM 2.0.
-
+>**Note:**  The device must be running Windows 10 and it must support at least TPM 2.0.
  
-
 ## <a href="" id="bkmk-supportedversions"></a>Supported versions
 
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">TPM version</th>
-<th align="left">Windows 10</th>
-<th align="left">Windows Server 2012 R2, Windows 8.1, and Windows RT</th>
-<th align="left">Windows Server 2012, Windows 8, and Windows RT</th>
-<th align="left">Windows Server 2008 R2 and Windows 7</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>TPM 1.2</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>TPM 2.0</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| TPM version | Windows 10 | Windows Server 2012 R2, Windows 8.1, and Windows RT | Windows Server 2012, Windows 8, and Windows RT | Windows Server 2008 R2 and Windows 7 |
+| - | - | - | - | - |
+| TPM 1.2| X| X| X| X|
+| TPM 2.0| X| X| X| X| 
 
 ## <a href="" id="bkmk-additionalresources"></a>Additional Resources
 
-
-[TPM Fundamentals](tpm-fundamentals.md)
-
-[TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md)
-
-[TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
-
-[AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md)
-
-[Prepare your organization for BitLocker: Planning and Policies - TPM configurations](http://technet.microsoft.com/library/jj592683.aspx)
-
+- [TPM Fundamentals](tpm-fundamentals.md)
+- [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md)
+- [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
+- [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md)
+- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](http://technet.microsoft.com/library/jj592683.aspx)
  
-
  
-
-
-
-
-

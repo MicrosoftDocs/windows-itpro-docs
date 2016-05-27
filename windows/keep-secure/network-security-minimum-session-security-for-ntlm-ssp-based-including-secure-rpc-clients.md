@@ -5,20 +5,18 @@ ms.assetid: 89903de8-23d0-4e0f-9bef-c00cb7aebf00
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: Minimum session security for NTLM SSP based (including secure RPC) clients** security policy setting.
 
 ## Reference
-
 
 This policy setting allows a client device to require the negotiation of 128-bit encryption or NTLMv2 session security. These values are dependent on the **Network security: LAN Manager Authentication Level policy** setting value.
 
@@ -44,49 +42,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Require 128-bit encryption</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Require 128-bit encryption</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Require 128-bit encryption</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Require 128-bit encryption</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined| 
+| Default Domain Controller Policy| Not defined| 
+| Stand-Alone Server Default Settings | Require 128-bit encryption| 
+| DC Effective Default Settings | Require 128-bit encryption| 
+| Member Server Effective Default Settings | Require 128-bit encryption| 
+| Client Computer Effective Default Settings | Require 128-bit encryption| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -99,7 +64,6 @@ None. Changes to this policy become effective without a device restart when they
 The settings for this security policy are dependent on the **Network security: LAN Manager Authentication Level policy** setting value. For info about this policy, see [Network security: LAN Manager authentication level](network-security-lan-manager-authentication-level.md).
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -117,14 +81,4 @@ Client devices that enforce these settings cannot communicate with older servers
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

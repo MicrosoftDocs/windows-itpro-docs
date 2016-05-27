@@ -2,8 +2,9 @@
 title: Deciding Which Applications to Test (Windows 10)
 description: Before starting your compatibility testing on the version of Windows that you want to deploy, you can use the Application Compatibility Toolkit (ACT) to identify which applications should be the focus of your testing.
 ms.assetid: d7c1c28f-b7b4-43ac-bf87-2910a2b603bf
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

@@ -5,14 +5,13 @@ ms.assetid: 0e84003e-6095-46fb-8c4e-2065869bb53b
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Determine your application control objectives
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic helps you with the decisions you need to make to determine what applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
@@ -155,16 +154,5 @@ Use the following table to develop your own objectives and determine which appli
 </tr>
 </tbody>
 </table>
-
  
-
 For more general info, see [AppLocker](applocker-overview.md).
-
- 
-
- 
-
-
-
-
-

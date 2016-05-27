@@ -5,29 +5,24 @@ ms.assetid: a5b4ac0c-f33d-42b5-a866-72afa7cbd0bd
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Recovery console: Allow floppy copy and access to all drives and folders
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Recovery console: Allow floppy copy and access to all drives and folders** security policy setting.
 
 ## Reference
 
-
 This policy setting enables or disables the Recovery Console SET command, which allows you to set the following Recovery Console environment variables.
 
 -   **AllowWildCards**. Enables wildcard support for some commands, such as the DEL command.
-
 -   **AllowAllPaths**. Allows access to all files and folders on the device.
-
 -   **AllowRemovableMedia**. Allows files to be copied to removable media, such as a floppy disk.
-
 -   **NoCopyPrompt**. Suppresses the prompt that typically displays before an existing file is overwritten.
 
 You might forget to remove removable media, such as CD or floppy disk, with sensitive data or applications that a malicious user could then steal. Or you could accidentally leave a startup disk in the computer after using the Recovery Console. If the device is restarted for any reason and the BIOS has been configured to boot from the removable media before the hard disk drive, the server will start from the removable disk. This causes the server's network services to be unavailable.
@@ -35,9 +30,7 @@ You might forget to remove removable media, such as CD or floppy disk, with sens
 ### Possible values
 
 -   Enabled
-
 -   Disabled
-
 -   Not defined
 
 ### Best practices
@@ -52,49 +45,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Disabled| 
+| DC Effective Default Settings | Disabled| 
+| Member Server Effective Default Settings | Disabled| 
+| Client Computer Effective Default Settings | Disabled| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -115,15 +75,11 @@ None.
 Enabling this security option makes the Recovery Console SET command available, which allows you to set the following Recovery Console environment variables:
 
 -   AllowWildCards: Enable wildcard support for some commands (such as the DEL command).
-
 -   AllowAllPaths: Allow access to all files and folders on the device.
-
 -   AllowRemovableMedia: Allow files to be copied to removable media, such as a floppy disk.
-
 -   NoCopyPrompt: Do not prompt when overwriting an existing file.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -141,14 +97,4 @@ Users who have started a server through the Recovery Console and logged in with 
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

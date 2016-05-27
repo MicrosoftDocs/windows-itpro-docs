@@ -5,28 +5,23 @@ ms.assetid: 63437a90-764b-4f06-aed8-a4a26cf81bd1
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting.
 
 ## Reference
 
-
 The **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** policy setting allows you to deny or audit outgoing NTLM traffic from a computer running Windows 7, Windows Server 2008, or later to any remote server running the Windows operating system.
 
-**Warning**  
-Modifying this policy setting may affect compatibility with client computers, services, and applications.
-
+>**Warning:**  Modifying this policy setting may affect compatibility with client computers, services, and applications.
  
-
 ### <a href="" id="bkmk-resoutntlm-possvals"></a>Possible values
 
 -   **Allow all**
@@ -55,49 +50,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client computer effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default domain policy| Not defined| 
+| Default domain controller policy | Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings | Not defined| 
+| Member server effective default settings | Not defined| 
+| Client computer effective default settings | Not defined| 
  
-
 ## Policy management
-
 
 This section describes different features and tools available to help you manage this policy.
 
@@ -117,7 +79,6 @@ There are no security audit event policies that can be configured to view event 
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
@@ -132,18 +93,9 @@ When it has been determined that the NTLM authentication protocol should not be 
 
 ### Potential impact
 
-If you configure this policy setting to deny all requests, numerous NTLM authentication requests to remote servers could fail, which could degrade productivity. Before implementing this restriction through this policy setting, select **Audit all** so that you can review the log for the potential impact, perform an analysis of servers, and create an exception list of servers to exclude from this policy setting by using [Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication](network-security-restrict-ntlm-add-remote-server-exceptions-for-ntlm-authentication.md).
+If you configure this policy setting to deny all requests, numerous NTLM authentication requests to remote servers could fail, which could degrade productivity. Before implementing this restriction through this policy setting, select **Audit all** so that you can review the log for the potential impact, perform an analysis of servers, and create an exception list of servers to exclude from this policy setting by using [Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication](network-security-restrict-ntlm-add-remote-server-exceptions-for-ntlm-authentication.md)
+.
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

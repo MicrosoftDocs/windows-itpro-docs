@@ -5,14 +5,13 @@ ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Maintain AppLocker policies
 
-
 **Applies to**
-
 -   Windows 10
 
 This topic describes how to maintain rules within AppLocker policies.
@@ -20,34 +19,25 @@ This topic describes how to maintain rules within AppLocker policies.
 Common AppLocker maintenance scenarios include:
 
 -   A new app is deployed, and you need to update an AppLocker policy.
-
 -   A new version of an app is deployed, and you need to either update an AppLocker policy or create a new rule to update the policy.
-
 -   An app is no longer supported by your organization, so you need to prevent it from being used.
-
 -   An app appears to be blocked but should be allowed.
-
 -   An app appears to be allowed but should be blocked.
-
 -   A single user or small subset of users needs to use a specific app that is blocked.
 
 There are two methods you can use to maintain AppLocker policies:
 
 -   [Maintaining AppLocker policies by using Group Policy](#bkmk-applkr-use-gp)
-
 -   [Maintaining AppLocker policies on the local computer](#bkmk-applkr-use-locsnapin)
 
 As new apps are deployed or existing apps are removed by your organization or updated by the software publisher, you might need to make revisions to your rules and update the Group Policy Object (GPO) to ensure that your policy is current.
 
-You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the AppLocker policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of GPOs.
+You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the AppLocker policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create 
+versions of GPOs.
 
-**Caution**  
-You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
-
+>**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
  
-
 ## <a href="" id="bkmk-applkr-use-gp"></a>Maintaining AppLocker policies by using Group Policy
-
 
 For every scenario, the steps to maintain an AppLocker policy distributed by Group Policy include the following tasks.
 
@@ -66,11 +56,8 @@ After the AppLocker policy has been exported from the GPO into the AppLocker ref
 To modify AppLocker rules, see the following:
 
 -   [Edit AppLocker rules](edit-applocker-rules.md)
-
 -   [Merge AppLocker policies by using Set-ApplockerPolicy](merge-applocker-policies-by-using-set-applockerpolicy.md) or [Merge AppLocker policies manually](merge-applocker-policies-manually.md)
-
 -   [Delete an AppLocker rule](delete-an-applocker-rule.md)
-
 -   [Enforce AppLocker rules](enforce-applocker-rules.md)
 
 ### Step 4: Test the AppLocker policy
@@ -82,12 +69,9 @@ You should test each collection of rules to ensure that the rules perform as int
 After testing, import the AppLocker policy back into the GPO for implementation. To update the GPO with a modified AppLocker policy, see [Import an AppLocker policy into a GPO](import-an-applocker-policy-into-a-gpo.md).
 
 ### Step 6: Monitor the resulting policy behavior
-
 After deploying a policy, evaluate the policy's effectiveness.
 
 ## <a href="" id="bkmk-applkr-use-locsnapin"></a>Maintaining AppLocker policies by using the Local Security Policy snap-in
-
-
 For every scenario, the steps to maintain an AppLocker policy by using the Local Group Policy Editor or the Local Security Policy snap-in include the following tasks.
 
 ### Step 1: Understand the current behavior of the policy
@@ -114,14 +98,4 @@ After deploying a policy, evaluate the policy's effectiveness.
 
 ## Additional resources
 
-
 -   For steps to perform other AppLocker policy tasks, see [Administer AppLocker](administer-applocker.md).
-
- 
-
- 
-
-
-
-
-

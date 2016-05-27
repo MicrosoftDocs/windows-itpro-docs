@@ -5,30 +5,25 @@ ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: Allow PKU2U authentication requests to this computer to use online identities
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, and values for the **Network Security: Allow PKU2U authentication requests to this computer to use online identities** security policy setting.
 
 ## Reference
 
-
 Starting with Windows Server 2008 R2 and Windows 7, the Negotiate Security Support Provider (SSP) supports an extension SSP, Negoexts.dll. This extension SSP is treated as an authentication protocol by the Windows operating system, and it supports SSPs from Microsoft, including PKU2U. You can also develop or add other SSPs.
 
 When devices are configured to accept authentication requests by using online IDs, Negoexts.dll calls the PKU2U SSP on the computer that is used to log on. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer computers. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
-**Note**  
-The ability to link online IDs can be performed by anyone with an account that has standard user’s credentials through **Credential Manager**.
-
+>**Note:**  The ability to link online IDs can be performed by anyone with an account that has standard user’s credentials through **Credential Manager**.
  
-
 This policy is not configured by default on domain-joined devices. This would disallow the online identities to be able to authenticate to the domain-joined computers in Windows 7 and later.
 
 ### Possible values
@@ -55,49 +50,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or Group Policy Object (GPO)</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Effective GPO default settings on client computers</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or Group Policy Object (GPO) | Default value |
+| - | - |
+| Default domain policy| Not defined| 
+| Default domain controller policy | Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings | Disabled| 
+| Member server effective default settings | Disabled| 
+| Effective GPO default settings on client computers | Disabled| 
  
-
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -115,14 +77,4 @@ If you do not set or disable this policy, the PKU2U protocol will not be used to
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

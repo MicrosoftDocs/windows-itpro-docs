@@ -2,7 +2,8 @@
 title: Windows Store for Business overview (Windows 10)
 description: With the new Windows Store for Business, organizations can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
-ms.prod: W10
+ms.prod: w10
+ms.pagetype: store
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
@@ -85,7 +86,7 @@ For more information, see [Sign up for the Store for Business](../manage/sign-up
 
 ### Set up
 
-After your admin signs up for the Store for Business, they can assign roles to other employees in your company. These are the roles and their permissions.
+After your admin signs up for the Store for Business, they can assign roles to other employees in your company. The admin needs Azure AD User Admin permissions to assign WSFB roles. These are the roles and their permissions.
 
 <table>
 <colgroup>
@@ -137,7 +138,7 @@ Also, if your organization plans to use a management tool, you’ll need to conf
 
 ### Get apps and content
 
-Once signed in to the Store for Business, you can browse and search for all products in the Store for Business catalog. For now, apps in the Store for Business are free. Over time, when paid apps are available, you’ll have more options for paying for apps.
+Once signed in to the Store for Business, you can browse and search for all products in the Store for Business catalog. Some apps are free, and some apps charge a price. We're continuing to add more paid apps to the Store for Business. Check back if you don't see the app that you're looking for. Currently, you can pay for apps with a credit card. We'll be adding more payment options over time. 
 
 **App types** -- These app types are supported in the Store for Business:
 
@@ -212,96 +213,54 @@ For more information, see [Manage settings in the Store for Business](../manage/
 
 Store for Business is currently available in these markets.
 
--   Argentina
-
--   Australia
-
--   Austria
-
--   Belgium (Dutch, French)
-
--   Brazil
-
--   Canada (English, French)
-
--   Chile
-
--   Columbia
-
--   Croatia
-
--   Czech Republic
-
--   Denmark
-
--   Finland
-
--   France
-
--   Germany
-
--   Greece
-
--   Hong Kong SAR
-
--   Hungary
-
--   India
-
--   Indonesia
-
--   Ireland
-
--   Italy
-
--   Japan
-
--   Malaysia
-
--   Mexico
-
--   Netherlands
-
--   New Zealand
-
--   Norway
-
--   Philippines
-
--   Poland
-
--   Portugal
-
--   Romania
-
--   Russia
-
--   Singapore
-
--   Slovakia
-
--   South Africa
-
--   Spain
-
--   Sweden
-
--   Switzerland (French, German)
-
--   Taiwan
-
--   Thailand
-
--   Turkey
-
--   Ukraine
-
--   United Kingdom
-
--   United States
-
--   Vietnam
-
+|Country or locale|Paid apps|Free apps|
+|-----------------|---------|---------|
+|Argentina|X|X|
+|Australia|X|X|
+|Austria|X|X|
+|Belgium (Dutch, French)|X|X|
+|Brazil| |X|
+|Canada (English, French)|X|X|
+|Chile|X|X|
+|Columbia|X|X|
+|Croatia|X|X|
+|Czech Republic|X|X|
+|Denmark|X|X|
+|Finland|X|X|
+|France|X|X|
+|Germany|X|X|
+|Greece|X|X|
+|Hong Kong SAR|X|X|
+|Hungary|X|X|
+|India| |X|
+|Indonesia|X|X|
+|Ireland|X|X|
+|Italy|X|X|
+|Japan|X|X|
+|Malaysia|X|X|
+|Mexico|X|X|
+|Netherlands|X|X|
+|New Zealand|X|X|
+|Norway|X|X|
+|Philippines|X|X|
+|Poland|X|X|
+|Portugal|X|X|
+|Romania|X|X|
+|Russia| |X|
+|Singapore|X|X|
+|Slovakia|X|X|
+|South Africa|X|X|
+|Spain|X|X|
+|Sweden|X|X|
+|Switzerland (French, German)|X|X|
+|Taiwan| |X|
+|Thailand|X|X|
+|Turkey|X|X|
+|Ukraine| |X|
+|United Kingdom|X|X|
+|United States|X|X|
+|Vietnam|X|X|
+  
 ## <a href="" id="isv-wsfb"></a>ISVs and the Store for Business
 
 

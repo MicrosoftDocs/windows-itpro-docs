@@ -5,20 +5,18 @@ ms.assetid: 1eae7def-8f6c-43b6-9474-23911fdc01ba
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # User Account Control: Behavior of the elevation prompt for standard users
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Behavior of the elevation prompt for standard users** security policy setting.
 
 ## Reference
-
 
 This policy setting determines the behavior of the elevation prompt for standard users.
 
@@ -39,7 +37,6 @@ This policy setting determines the behavior of the elevation prompt for standard
 ### Best practices
 
 1.  Configure the **User Account Control: Behavior of the elevation prompt for standard users** to **Automatically deny elevation requests**. This setting requires the user to log on with an administrative account to run programs that require elevation of privilege.
-
 2.  As a security best practice, standard users should not have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, set **Prompt for credentials** so that the users do not choose to always log on with their administrator accounts, and they shift their behavior to use the standard user account.
 
 ### Location
@@ -50,49 +47,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Prompt for credentials on the secure desktop</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Prompt for credentials on the secure desktop</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Prompt for credentials on the secure desktop</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Prompt for credentials on the secure desktop</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Prompt for credentials on the secure desktop| 
+| DC Effective Default Settings | Prompt for credentials on the secure desktop| 
+| Member Server Effective Default Settings | Prompt for credentials on the secure desktop| 
+| Client Computer Effective Default Settings | Prompt for credentials on the secure desktop| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -105,7 +69,6 @@ None. Changes to this policy become effective without a computer restart when th
 All auditing capabilities are integrated in Group Policy. You can configure, deploy, and manage these settings in the Group Policy Management Console (GPMC) or Local Security Policy snap-in for a domain, site, or organizational unit (OU).
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -123,14 +86,4 @@ Users must provide administrative passwords to run programs with elevated privil
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

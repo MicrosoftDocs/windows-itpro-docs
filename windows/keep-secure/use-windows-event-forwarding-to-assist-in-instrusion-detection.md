@@ -5,21 +5,21 @@ ms.assetid: 733263E5-7FD1-45D2-914A-184B9E3E6A3F
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: tedhardyMSFT
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
 
-
 **Applies to**
-
 -   Windows 10
 
 Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 
 Windows Event Forwarding (WEF) reads any operational or administrative event log on a device in your organization and forwards the events you choose to a Windows Event Collector (WEC) server.
 
-To accomplish this, there are two different of subscriptions published to client devices - the Baseline subscription and the suspect subscription. The Baseline subscription enrolls all devices in your organization, and a Suspect subscription only includes devices that have been added by you. The Suspect subscription collects additional events to help build context for system activity and can quickly be updated to accommodate new events and/or scenarios as needed without impacting baseline operations.
+To accomplish this, there are two different of subscriptions published to client devices - the Baseline subscription and the suspect subscription. The Baseline subscription enrolls all devices in your organization, and a Suspect subscription only includes devices that have been added by you. The 
+Suspect subscription collects additional events to help build context for system activity and can quickly be updated to accommodate new events and/or scenarios as needed without impacting baseline operations.
 
 This implementation helps differentiate where events are ultimately stored. Baseline events can be sent to devices with online analytical capability, such as Security Event Manager (SEM), while also sending events to a MapReduce system, such as HDInsight or Hadoop, for long-term storage and deeper analysis. Events from the Suspect subscription are sent directly to a MapReduce system due to volume and lower signal/noise ratio, they are largely used for host forensic analysis.
 
@@ -34,18 +34,13 @@ Here's an approximate scaling guide for WEF events:
 | 0 - 5,000           | SQL or SEM                 |
 | 5,000 - 50,000      | SEM                        |
 | 50,000+             | Hadoop/HDInsight/Data Lake |
-
  
-
 Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#bkmk-appendixc). This is because WEF is a passive system with regards to the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling additional event channels and expanding the size of event log files has not resulted in noticeable performance differences.
 
 For the minimum recommended audit policy and registry system ACL settings, see [Appendix A - Minimum recommended minimum audit policy](#bkmk-appendixa) and [Appendix B - Recommended minimum registry system ACL policy](#bkmk-appendixb).
 
-**Note**  
-These are only minimum values need to meet what the WEF subscription selects.
-
+>**Note:**  These are only minimum values need to meet what the WEF subscription selects.
  
-
 From a WEF subscription management perspective, the event queries provided should be used in two separate subscriptions for ease of maintenance; only machines meeting specific criteria would be allowed access to the targeted subscription, this access would be determined by an algorithm or an analysts’ direction. All devices should have access to the Baseline subscription.
 
 This means you would create two base subscriptions:
@@ -77,7 +72,8 @@ WEF handles VPN, RAS, and DirectAccess scenarios well and will reconnect and sen
 
 ### How is client progress tracked?
 
-The WEC server maintains in its registry the bookmark information and last heartbeat time for each event source for each WEF subscription. When an event source re-connects to a WEC server, the last bookmark position is sent to the device to use as a starting point to resume forwarding events. If a WEF client has no events to send, the WEF client will connect periodically to send a Heartbeat to the WEC server to indicate it is active. This heartbeat value can be individually configured for each subscription.
+The WEC server maintains in its registry the bookmark information and last heartbeat time for each event source for each WEF subscription. When an event source re-connects to a WEC server, the last bookmark position is sent to the device to use as a starting point to resume forwarding events. If a 
+WEF client has no events to send, the WEF client will connect periodically to send a Heartbeat to the WEC server to indicate it is active. This heartbeat value can be individually configured for each subscription.
 
 ### Will WEF work in an IPv4, IPv6, or mixed IPv4/IPv6 environment?
 
@@ -99,7 +95,8 @@ When the event log overwrites existing events (resulting in data loss if the dev
 
 ### What format is used for forwarded events?
 
-WEF has two modes for forwarded events. The default is “Rendered Text” which includes the textual description of the event as you would see it in Event Viewer. This means that the event size is effectively doubled or tripled depending on the size of the rendered description. The alternative mode is “Events” (also sometimes referred to as “Binary” format) – which is just the event XML itself sent in binary XML format (as it would be written to the evtx file.) This is very compact and can more than double the event volume a single WEC server can accommodate.
+WEF has two modes for forwarded events. The default is “Rendered Text” which includes the textual description of the event as you would see it in Event Viewer. This means that the event size is effectively doubled or tripled depending on the size of the rendered description. The alternative mode is 
+“Events” (also sometimes referred to as “Binary” format) – which is just the event XML itself sent in binary XML format (as it would be written to the evtx file.) This is very compact and can more than double the event volume a single WEC server can accommodate.
 
 A subscription “testSubscription” can be configured to use the Events format through the WECUTIL utility:
 
@@ -114,14 +111,12 @@ Event delivery options are part of the WEF subscription configuration parameters
 
 This table outlines the built-in delivery options:
 
-| Event delivery optimization options | Description                                                                                                                                                                                                                                                                                                                            |
-|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Normal                              | This option ensures reliable delivery of events and does not attempt to conserve bandwidth. It is the appropriate choice unless you need tighter control over bandwidth usage or need forwarded events delivered as quickly as possible. It uses pull delivery mode, batches 5 items at a time and sets a batch timeout of 15 minutes. |
-| Minimize bandwidth                  | This option ensures that the use of network bandwidth for event delivery is strictly controlled. It is an appropriate choice if you want to limit the frequency of network connections made to deliver events. It uses push delivery mode and sets a batch timeout of 6 hours. In addition, it uses a heartbeat interval of 6 hours.   |
-| Minimize latency                    | This option ensures that events are delivered with minimal delay. It is an appropriate choice if you are collecting alerts or critical events. It uses push delivery mode and sets a batch timeout of 30 seconds.                                                                                                                      |
-
+| Event delivery optimization options | Description |
+| - | - |
+| Normal | This option ensures reliable delivery of events and does not attempt to conserve bandwidth. It is the appropriate choice unless you need tighter control over bandwidth usage or need forwarded events delivered as quickly as possible. It uses pull delivery mode, batches 5 items at a time and sets a batch timeout of 15 minutes. |
+| Minimize bandwidth | This option ensures that the use of network bandwidth for event delivery is strictly controlled. It is an appropriate choice if you want to limit the frequency of network connections made to deliver events. It uses push delivery mode and sets a batch timeout of 6 hours. In addition, it uses a heartbeat interval of 6 hours. |
+| Minimize latency | This option ensures that events are delivered with minimal delay. It is an appropriate choice if you are collecting alerts or critical events. It uses push delivery mode and sets a batch timeout of 30 seconds. |
  
-
 For more info about delivery options, see [Configure Advanced Subscription Settings](http://technet.microsoft.com/library/cc749167.aspx).
 
 The primary difference is in the latency which events are sent from the client. If none of the built-in options meet your requirements you can set Custom event delivery options for a given subscription from an elevated command prompt:
@@ -129,14 +124,11 @@ The primary difference is in the latency which events are sent from the client. 
 ``` syntax
 @rem required to set the DeliveryMaxItems or DeliveryMaxLatencyTime
 Wecutil ss “SubscriptionNameGoesHere” /cm:Custom
-
 @rem set DeliveryMaxItems to 1 event
 Wecutil ss “SubscriptionNameGoesHere” /dmi:1
-
 @rem set DeliveryMaxLatencyTime to 10 ms
 Wecutil ss “SubscriptionNameGoesHere” /dmlt:10
 ```
-
 ### How do I control which devices have access to a WEF Subscription?
 
 For source initiated subscriptions: Each WEF subscription on a WEC server has its own ACL for machine accounts or security groups containing machine accounts (not user accounts) that are explicitly allowed to participate in that subscription or are explicitly denied access. This ACL applies to only a single WEF subscription (since there can be multiple WEF subscriptions on a given WEC server), other WEF Subscriptions have their own separate ACL.
@@ -152,19 +144,14 @@ Yes. If you desire a High-Availability environment, simply configure multiple WE
 There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is “10k x 10k” – meaning, no more than 10,000 concurrently active WEF Clients per WEC server and no more than 10,000 events/second average event volume.
 
 -   **Disk I/O**. The WEC server does not process or validate the received event, but rather buffers the received event and then logs it to a local event log file (EVTX file). The speed of logging to the EVTX file is limited by the disk write speed. Isolating the EVTX file to its own array or using high speed disks can increase the number of events per second that a single WEC server can receive.
-
 -   **Network Connections**. While a WEF source does not maintain a permanent, persistent connection to the WEC server, it does not immediately disconnect after sending its events. This means that the number of WEF sources that can simultaneously connect to the WEC server is limited to the open TCP ports available on the WEC server.
-
 -   **Registry size**. For each unique device that connects to a WEF subscription, there is a registry key (corresponding to the FQDN of the WEF Client) created to store bookmark and source heartbeat information. If this is not pruned to remove inactive clients this set of registry keys can grow to an unmanageable size over time.
 
     -   When a subscription has &gt;1000 WEF sources connect to it over its operational lifetime, also known as lifetime WEF sources, Event Viewer can become unresponsive for a few minutes when selecting the **Subscriptions** node in the left-navigation, but will function normally afterwards.
-
     -   At &gt;50,000 lifetime WEF sources, Event Viewer is no longer an option and wecutil.exe (included with Windows) must be used to configure and manage subscriptions.
-
     -   At &gt;100,000 lifetime WEF sources, the registry will not be readable and the WEC server will likely have to be rebuilt.
 
 ## Subscription information
-
 
 Below lists all of the items that each subscription collects, the actual subscription XML is available in an Appendix. These are separated out into Baseline and Targeted. The intent is to subscribe all hosts to Baseline, and then enroll (and remove) hosts on an as needed basis to the Targeted subscription.
 
@@ -179,27 +166,20 @@ The subscription is essentially a collection of query statements applied to the 
 To gain the most value out of the baseline subscription we recommend to have the following requirements set on the device to ensure that the clients are already generating the required events to be forwarded off the system.
 
 -   Apply a security audit policy that is a super-set of the recommended minimum audit policy. For more info, see [Appendix A – Minimum Recommended minimum Audit Policy](#bkmk-appendixa). This ensures that the security event log is generating the required events.
-
 -   Apply at least an Audit-Only AppLocker policy to devices.
 
     -   If you are already whitelisting or blacklisting events by using AppLocker, then this requirement is met.
-
     -   AppLocker events contain extremely useful information, such as file hash and digital signature information for executables and scripts.
 
 -   Enable disabled event channels and set the minimum size for modern event files.
-
 -   Currently, there is no GPO template for enabling or setting the maximum size for the modern event files. This must be done by using a GPO. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
 
 The annotated event query can be found in the following. For more info, see [Appendix F – Annotated Baseline Subscription Event Query](#bkmk-appendixf).
 
 -   Anti-malware events from Microsoft Antimalware or Windows Defender. This can be configured for any given anti-malware product easily if it writes to the Windows event log.
-
 -   Security event log Process Create events.
-
 -   AppLocker Process Create events (EXE, script, packaged App installation and execution).
-
 -   Registry modification events. For more info, see [Appendix B – Recommended minimum Registry System ACL Policy](#bkmk-appendixb).
-
 -   OS startup and shutdown
 
     -   Startup event include operating system version, service pack level, QFE version, and boot mode.
@@ -211,7 +191,6 @@ The annotated event query can be found in the following. For more info, see [App
 -   Certificate Authority audit events
 
     -   This is only applicable on systems with the Certificate Authority role installed.
-
     -   Logs certificate requests and responses.
 
 -   User profile events
@@ -231,11 +210,8 @@ The annotated event query can be found in the following. For more info, see [App
     -   Find out what initiated the restart of a device.
 
 -   User initiated interactive logoff event
-
 -   Remote Desktop Services session connect, reconnect, or disconnect.
-
 -   EMET events, if EMET is installed.
-
 -   Event forwarding plugin events
 
     -   For monitoring WEF subscription operations, particularly Partial Success events. This is useful for diagnosing deployment issues.
@@ -243,24 +219,19 @@ The annotated event query can be found in the following. For more info, see [App
 -   Network share create and delete
 
     -   Enables detection of unauthorized share creation.
-
-        **Note**  All shares are re-created when the device starts.
-
+        >**Note:**  All shares are re-created when the device starts.
          
-
 -   Logon sessions
 
     -   Logon success for interactive (local and Remote Interactive/Remote Desktop)
-
     -   Logon success for services for non-built-in accounts, such as LocalSystem, LocalNetwork, and so on.
-
     -   Logon success for batch sessions
-
     -   Logon session close, which are logoff events for non-network sessions.
 
 -   Windows Error Reporting (Application crash events only)
 
     -   This can help detect early signs of intruder not familiar with enterprise environment using targeted malware.
+
 -   Event log service events
 
     -   Errors, start events, and stop events for the Windows Event Log service.
@@ -278,15 +249,12 @@ The annotated event query can be found in the following. For more info, see [App
     -   Visibility into potential beachhead for intruder
 
 -   System time changed
-
 -   SMB Client (mapped drive connections)
-
 -   Account credential validation
 
     -   Local accounts or domain accounts on domain controllers
 
 -   A user was added or removed from the local Administrators security group.
-
 -   Crypto API private key accessed
 
     -   Associated with signing objects using the locally stored private key.
@@ -318,15 +286,12 @@ This adds some possible intruder-related activity to help analyst further refine
 -   Crypto API X509 object and build chain events
 
     -   Detects known bad certificate, CA, or sub-CA
-
     -   Detects unusual process use of CAPI
 
 -   Groups assigned to local logon
 
     -   Gives visibility to groups which enable account wide access
-
     -   Allows better planning for remediation efforts
-
     -   Excludes well known, built-in system accounts.
 
 -   Logon session exit
@@ -344,9 +309,7 @@ This adds some possible intruder-related activity to help analyst further refine
 -   Local credential validation or logon with explicit credentials
 
     -   Generated when the local SAM is authoritative for the account credentials being authenticated.
-
     -   Noisy on domain controllers
-
     -   On client devices this is only generated when local accounts log on.
 
 -   Registry modification audit events
@@ -360,7 +323,6 @@ This adds some possible intruder-related activity to help analyst further refine
 -   Windows PowerShell logging
 
     -   Covers Windows PowerShell 2.0 and later and includes the Windows PowerShell 5.0 logging improvements for in-memory attacks using Windows PowerShell.
-
     -   Includes Windows PowerShell remoting logging
 
 -   User Mode Driver Framework “Driver Loaded” event
@@ -368,7 +330,6 @@ This adds some possible intruder-related activity to help analyst further refine
     -   Can possibly detect a USB device loading multiple device drivers. For example, a USB\_STOR device loading the keyboard or network driver.
 
 ## <a href="" id="bkmk-appendixa"></a>Appendix A - Minimum recommended minimum audit policy
-
 
 If your organizational audit policy enables additional auditing to meet its needs, that is fine. The policy below is the minimum audit policy settings needed to enable events collected by both baseline and targeted subscriptions.
 
@@ -404,11 +365,8 @@ If your organizational audit policy enables additional auditing to meet its need
 | System             | Security State Change           | Success and Failure |
 | System             | Security System Extension       | Success and Failure |
 | System             | System Integrity                | Success and Failure |
-
  
-
 ## <a href="" id="bkmk-appendixb"></a>Appendix B - Recommended minimum registry system ACL policy
-
 
 The Run and RunOnce keys are useful for intruders and malware persistence. It allows code to be run (or run only once then removed, respectively) when a user logs into the system.
 
@@ -416,10 +374,11 @@ This can easily be extended to other Auto-Execution Start Points keys in the reg
 
 Use the following figures to see how you can configure those registry keys.
 
-![default acl for run key](images/runkey.png)![default acl for runonce key](images/runoncekey.png)
+![default acl for run key](images/runkey.png)
+
+![default acl for runonce key](images/runoncekey.png)
 
 ## <a href="" id="bkmk-appendixc"></a>Appendix C - Event channel settings (enable and channel access) methods
-
 
 Some channels are disabled by default and have to be enabled. Others, such as Microsoft-Windows-CAPI2/Operational must have the channel access modified to allow the Event Log Readers built-in security group to read from it.
 
@@ -428,34 +387,25 @@ The recommended and most effective way to do this is to configure the baseline G
 The following GPO snippet performs the following:
 
 -   Enables the **Microsoft-Windows-Capi2/Operational** event channel.
-
 -   Sets the maximum file size for **Microsoft-Windows-Capi2/Operational** to 100MB.
-
 -   Sets the maximum file size for **Microsoft-Windows-AppLocker/EXE and DLL** to 100MB.
-
 -   Sets the maximum channel access for **Microsoft-Windows-Capi2/Operational** to include the built-in Event Log Readers security group.
-
 -   Enables the **Microsoft-Windows-DriverFrameworks-UserMode/Operational** event channel.
-
 -   Sets the maximum file size for **Microsoft-Windows-DriverFrameworks-UserMode/Operational** to 50MB.
 
 ![configure event channels](images/capi-gpo.png)
 
 ## <a href="" id="bkmk-appendixd"></a>Appendix D - Minimum GPO for WEF Client configuration
 
-
 Here are the minimum steps for WEF to operate:
 
 1.  Configure the collector URI(s).
-
 2.  Start the WinRM service.
-
 3.  Add the Network Service account to the built-in Event Log Readers security group. This allows reading from secured event channel, such as the security event channel.
 
 ![configure the wef client](images/wef-client-config.png)
 
 ## <a href="" id="bkmk-appendixe"></a>Appendix E – Annotated baseline subscription event query
-
 
 ``` syntax
 <QueryList>
@@ -622,8 +572,8 @@ Here are the minimum steps for WEF to operate:
 
 ## <a href="" id="bkmk-appendixf"></a>Appendix F – Annotated Suspect Subscription Event Query
 
-
 ``` syntax
+
 <QueryList>
   <Query Id="0" Path="Security">
     <!-- Network logon events-->
@@ -691,25 +641,11 @@ Here are the minimum steps for WEF to operate:
   </Query>
 </QueryList> 
 ```
-
 ## <a href="" id="bkmk-appendixg"></a>Appendix G - Online resources
-
 
 You can get more info with the following links:
 
--   [Event Selection](http://msdn.microsoft.com/library/aa385231(VS.85).aspx)
-
--   [Event Queries and Event XML](http://msdn.microsoft.com/library/bb399427(VS.90).aspx)
-
--   [Event Query Schema](http://msdn.microsoft.com/library/aa385760(VS.85).aspx)
-
+-   [Event Selection](http://msdn.microsoft.com/library/aa385231.aspx)
+-   [Event Queries and Event XML](http://msdn.microsoft.com/library/bb399427.aspx)
+-   [Event Query Schema](http://msdn.microsoft.com/library/aa385760.aspx)
 -   [Windows Event Collector](http://msdn.microsoft.com/library/windows/desktop/bb427443.aspx)
-
- 
-
- 
-
-
-
-
-

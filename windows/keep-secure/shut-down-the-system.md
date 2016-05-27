@@ -5,20 +5,18 @@ ms.assetid: c8e8f890-153a-401e-a957-ba6a130304bf
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Shut down the system
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Shut down the system** security policy setting.
 
 ## Reference
-
 
 This security setting determines if a user who is logged on locally to a device can shut down Windows.
 
@@ -31,15 +29,12 @@ Constant: SeShutdownPrivilege
 ### Possible values
 
 -   A user-defined list of accounts
-
 -   Defaults
-
 -   Not defined
 
 ### Best practices
 
 1.  Ensure that only Administrators and Backup Operators have the **Shut down the system** user right on member servers, and that only Administrators have the user right on domain controllers. Removing these default groups might limit the abilities of users who are assigned to specific administrative roles in your environment. Ensure that their delegated tasks will not be negatively affected.
-
 2.  The ability to shut down domain controllers should be limited to a very small number of trusted administrators. Even though a system shutdown requires the ability to log on to the server, you should be very careful about the accounts and groups that you allow to shut down a domain controller.
 
 ### Location
@@ -52,59 +47,16 @@ By default this setting is Administrators, Backup Operators, Server Operators, a
 
 The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p>
-<p>Server Operators</p>
-<p>Print Operators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p>
-<p>Server Operators</p>
-<p>Print Operators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p>
-<p>Users</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined| 
+| Default Domain Controller Policy | Administrators<br/>Backup Operators<br/>Server Operators<br/>Print Operators| 
+| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators| 
+| Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Server Operators<br/>Print Operators| 
+| Member Server Effective Default Settings | Administrators<br/>Backup Operators| 
+| Client Computer Effective Default Settings | Administrators<br/>Backup Operators<br/>Users| 
  
-
 ## Policy management
-
 
 This section describes features, tools, and guidance to help you manage this policy.
 
@@ -119,17 +71,13 @@ This user right does not have the same effect as **Force shutdown from a remote 
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -151,14 +99,4 @@ The impact of removing these default groups from the **Shut down the system** us
 
 ## Related topics
 
-
-[User Rights Assignment](user-rights-assignment.md)
-
- 
-
- 
-
-
-
-
-
+- [User Rights Assignment](user-rights-assignment.md)

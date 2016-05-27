@@ -5,14 +5,13 @@ ms.assetid: C9F52751-B40D-482E-BE9D-2C61098249D3
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Create a basic audit policy for an event category
 
-
 **Applies to**
-
 -   Windows 10
 
 By defining auditing settings for specific event categories, you can create an auditing policy that suits the security needs of your organization. On devices that are joined to a domain, auditing settings for the event categories are undefined by default. On domain controllers, auditing is turned on by default.
@@ -25,6 +24,7 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
 2.  Click **Audit Policy**.
 3.  In the results pane, double-click an event category that you want to change the auditing policy settings for.
 4.  Do one or both of the following, and then click **OK.**
+
     -   To audit successful attempts, select the **Success** check box.
     -   To audit unsuccessful attempts, select the **Failure** check box.
 
@@ -39,21 +39,12 @@ To complete this procedure, you must be logged on as a member of the Domain Admi
 5.  In the results pane, double-click an event category that you want to change the auditing policy settings for.
 6.  If you are defining auditing policy settings for this event category for the first time, select the **Define these policy settings** check box.
 7.  Do one or both of the following, and then click **OK.**
+
     -   To audit successful attempts, select the **Success** check box.
     -   To audit unsuccessful attempts, select the **Failure** check box.
 
 ## Additional considerations
 
-
 -   To audit object access, enable auditing of the object access event category by following the steps above. Then, enable auditing on the specific object.
 -   After your audit policy is configured, events will be recorded in the Security log. Open the Security log to view these events.
 -   The default auditing policy setting for domain controllers is **No Auditing**. This means that even if auditing is enabled in the domain, the domain controllers do not inherit auditing policy locally. If you want domain auditing policy to apply to domain controllers, you must modify this policy setting.
-
- 
-
- 
-
-
-
-
-

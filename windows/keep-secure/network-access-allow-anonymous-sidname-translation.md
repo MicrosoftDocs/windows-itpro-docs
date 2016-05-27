@@ -5,20 +5,18 @@ ms.assetid: 0144477f-22a6-4d06-b70a-9c9c2196e99e
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network access: Allow anonymous SID/Name translation
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Allow anonymous SID/Name translation** security policy setting.
 
 ## Reference
-
 
 This policy setting enables or disables the ability of an anonymous user to request security identifier (SID) attributes for another user.
 
@@ -50,57 +48,23 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Note defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Note defined| 
+| Stand-Alone Server Default Settings | Disabled| 
+| DC Effective Default Settings | Enabled| 
+| Member Server Effective Default Settings| Disabled| 
+| Client Computer Effective Default Settings | Disabled| 
  
-
 ### Operating system version differences
 
 The default value of this setting has changed between operating systems as follows:
 
 -   The default on domain controllers running Windows Server 2003 R2 or earlier was set to Enabled.
-
 -   The default on domain controllers running Windows Server 2008 and later is set to Disabled.
 
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -113,7 +77,6 @@ None. Changes to this policy become effective without a device restart when they
 Modifying this setting may affect compatibility with client computers, services, and applications.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -131,14 +94,4 @@ Disabled is the default configuration for this policy setting on member devices;
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

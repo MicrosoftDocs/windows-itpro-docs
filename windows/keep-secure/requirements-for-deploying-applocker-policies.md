@@ -5,26 +5,21 @@ ms.assetid: 3e55bda2-3cd7-42c7-bad3-c7dfbe193d48
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Requirements for deploying AppLocker policies
 
-
 **Applies to**
-
 -   Windows 10
 
 This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
 
 The following requirements must be met or addressed before you deploy your AppLocker policies:
-
 -   [Deployment plan](#bkmk-reqdepplan)
-
 -   [Supported operating systems](#bkmk-reqsupportedos)
-
 -   [Policy distribution mechanism](#bkmk-reqpolicydistmech)
-
 -   [Event collection and analysis system](#bkmk-reqeventcollectionsystem)
 
 ### <a href="" id="bkmk-reqdepplan"></a>Deployment plan
@@ -126,9 +121,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </tr>
 </tbody>
 </table>
-
  
-
 **Event processing policy**
 
 <table>
@@ -166,9 +159,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </tr>
 </tbody>
 </table>
-
  
-
 **Policy maintenance policy**
 
 <table>
@@ -210,9 +201,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </tr>
 </tbody>
 </table>
-
  
-
 ### <a href="" id="bkmk-reqsupportedos"></a>Supported operating systems
 
 AppLocker is supported only on certain operating systems. Some features are not available on all operating systems. For more information, see [Requirements to use AppLocker](requirements-to-use-applocker.md).
@@ -224,24 +213,10 @@ You need a way to distribute the AppLocker policies throughout the targeted busi
 ### <a href="" id="bkmk-reqeventcollectionsystem"></a>Event collection and analysis system
 
 Event processing is important to understand application usage. You must have a process in place to collect and analyze AppLocker events so that application usage is appropriately restricted and understood. For procedures to monitor AppLocker events, see:
-
 -   [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md)
-
 -   [Configure an AppLocker policy for enforce rules](configure-an-applocker-policy-for-enforce-rules.md)
-
 -   [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md)
 
 ## See also
 
-
-[AppLocker deployment guide](applocker-policies-deployment-guide.md)
-
-
- 
-
- 
-
-
-
-
-
+- [AppLocker deployment guide](applocker-policies-deployment-guide.md)

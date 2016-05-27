@@ -5,27 +5,24 @@ ms.assetid: 91915cb2-1b3f-4fb7-afa0-d03df95e8161
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Minimum password age
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Minimum password age** security policy setting.
 
 ## Reference
 
-
 The **Minimum password age** policy setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If [Maximum password age](maximum-password-age.md) is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, **Minimum password age** can be any value between 0 and 998 days.
 
 ### Possible values
 
 -   User-specified number of days between 0 and 998
-
 -   Not defined
 
 ### Best practices
@@ -42,49 +39,16 @@ If you set a password for a user and you want that user to change the administra
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or Group Policy Object (GPO)</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>1 day</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>0 days</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>1 day</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>1 day</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Effective GPO default settings on client computers</p></td>
-<td align="left"><p>1 day</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or Group Policy Object (GPO) | Default value |
+| - | - |
+| Default domain policy| 1 day| 
+| Default domain controller policy| Not defined| 
+| Stand-alone server default settings | 0 days| 
+| Domain controller effective default settings | 1 day| 
+| Member server effective default settings | 1 day| 
+| Effective GPO default settings on client computers| 1 day| 
  
-
 ## Policy management
-
 
 This section describes features, tools, and guidance to help you manage this policy.
 
@@ -93,7 +57,6 @@ This section describes features, tools, and guidance to help you manage this pol
 None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -113,14 +76,4 @@ If you set a password for a user but wants that user to change the password when
 
 ## Related topics
 
-
-[Password Policy](password-policy.md)
-
- 
-
- 
-
-
-
-
-
+- [Password Policy](password-policy.md)

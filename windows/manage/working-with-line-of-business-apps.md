@@ -41,7 +41,7 @@ What you'll have to set up:
 
 -   LOB publishers need to have an app in the Store, or have an app ready to submit to the Store.
 
-### <a href="" id="add-lob-publisher"></a>Add an LOB publisher (admin)
+### <a href="" id="add-lob-publisher"></a>Add an LOB publisher (Store for Business Admin)
 
 For developers within your own organization, or ISVs you're working with to create LOB apps, you'll need to invite them to become a LOB publisher.
 
@@ -49,7 +49,8 @@ For developers within your own organization, or ISVs you're working with to crea
 
 1.  Sign in to the [Windows Store for Business]( http://go.microsoft.com/fwlink/p/?LinkId=623531).
 2.  Click **Settings**, and then choose **LOB publishers**.
-3.  On the Line-of business publishers page, click **Add** to complete a form and send an email invitation to a developer.
+3.  On the Line-of business publishers page, click **Add** to complete a form and send an email invitation to a developer.<br>
+**Note** This needs to be the email address listed in contact info for the developer account. 
 
 ### <a href="" id="submit-lob-app"></a>Submit apps (LOB publisher)
 
@@ -77,7 +78,8 @@ After an app is published and available in the Store, ISVs publish an updated ve
 
 5.  Click **Save** to save your changes and start the app submission process.
 
-For more information, see [Organizational licensing options]( http://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](http://go.microsoft.com/fwlink/p/?LinkId=627543).
+For more information, see [Organizational licensing options]( http://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](http://go.microsoft.com/fwlink/p/?LinkId=627543).<br>
+**Note** In order to get the LOB app, the organization must be located in a [supported market](https://technet.microsoft.com/en-us/itpro/windows/whats-new/windows-store-for-business-overview#supported-markets), and you must not have excluded that market when submitting your app.
 
 ### <a href="" id="add-lob-app-to-inventory"></a>Add app to inventory (admin)
 

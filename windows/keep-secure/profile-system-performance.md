@@ -5,20 +5,18 @@ ms.assetid: ffabc3c5-9206-4105-94ea-84f597a54b2e
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Profile system performance
 
-
 **Applies to**
-
 -   Windows 10
 
 This security policy reference topic for the IT professional describes the best practices, location, values, policy management, and security considerations for the **Profile system performance** security policy setting.
 
 ## Reference
-
 
 This security setting determines which users can use Windows performance monitoring tools to monitor the performance of system processes.
 
@@ -27,9 +25,7 @@ Constant: SeSystemProfilePrivilege
 ### Possible values
 
 -   User-defined list of accounts
-
 -   Administrators
-
 -   Not defined
 
 ### Best practices
@@ -46,49 +42,16 @@ By default this setting is Administrators on domain controllers and on stand-alo
 
 The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Administrators| 
+| Stand-Alone Server Default Settings | Administrators| 
+| Domain Controller Effective Default Settings | Administrators| 
+| Member Server Effective Default Settings | Administrators| 
+| Client Computer Effective Default Settings | Administrators| 
  
-
 ## Policy management
-
 
 This section describes features, tools, and guidance to help you manage this policy.
 
@@ -103,17 +66,13 @@ Depending on your version of Windows and your environment, you might need to add
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -131,14 +90,4 @@ None. Restricting the **Profile system performance** user right to the local Adm
 
 ## Related topics
 
-
-[User Rights Assignment](user-rights-assignment.md)
-
- 
-
- 
-
-
-
-
-
+- [User Rights Assignment](user-rights-assignment.md)
