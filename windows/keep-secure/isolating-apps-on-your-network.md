@@ -1,18 +1,24 @@
 ---
 title: Isolating Windows Store Apps on Your Network (Windows 10)
 description: Isolating Windows Store Apps on Your Network
-ms.assetid: fee4cf1b-6dee-4911-a426-f678a70f4c6f
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Isolating Windows Store Apps on Your Network
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016 Technical Preview
 
-When you add new computers and devices that are running Windows 8 to your network, you may want to customize your Windows Firewall configuration to isolate the network access of the new Windows Store apps that run on them. Developers who build Windows Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a computer running Windows 8, appropriate firewall rules are automatically created to enable access. Administrators can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
+When you add new devices to your network, you may want to customize your Windows Firewall configuration to isolate the network access of the new Windows Store apps that run on them. Developers who build Windows Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
 
 For example, a developer can decide that their app should only connect to trusted local networks (such as at home or work), and not to the Internet. In this way, developers can define the scope of network access for their app. This network isolation prevents an app from accessing a network and a connection type (inbound or outbound) if the connection has not been configured for the app. Then the network administrator can customize the firewall to further restrict the resources that the app can access.
 
-The ability to set and enforce these network boundaries ensures that apps that get compromised can only access networks where they have been explicitly granted access. This significantly reduces the scope of their impact on other apps, the computer, and the network. In addition, apps can be isolated and protected from malicious access from the network.
+The ability to set and enforce these network boundaries ensures that apps that get compromised can only access networks where they have been explicitly granted access. This significantly reduces the scope of their impact on other apps, the  device, and the network. In addition, apps can be isolated and protected from malicious access from the network.
 
 When creating new Windows Store apps, a developer can define the following network capabilities for their app:
 
@@ -30,52 +36,46 @@ When creating new Windows Store apps, a developer can define the following netwo
 
 -   **Proximity**
 
-    Provides near-field communication (NFC) with devices that are in close proximity to the computer. Proximity may be used to send files or connect with an application on a proximate device.
+    Provides near-field communication (NFC) with devices that are in close proximity to the  device. Proximity may be used to send files or connect with an application on a proximate device.
 
-**In this document**
+**In this topic**
 
 To isolate Windows Store apps on your network, you need to use Group Policy to define your network isolation settings and create custom Windows Store app firewall rules.
 
--   [Prerequisites](#bkmk-prereq)
+-   [Prerequisites](#prerequisites)
 
--   [Step 1: Define your network](#bkmk-step1)
+-   [Step 1: Define your network](#step-1-Define-your-network)
 
--   [Step 2: Create custom firewall rules](#bkmk-step2)
+-   [Step 2: Create custom firewall rules](#step-2-create-custom-firewall-rules)
 
 ## Prerequisites
 
+-   A domain controller is installed on your network, and your devices are joined to the Windows domain.
 
--   A domain controller is installed on your network, and your computers are joined to the Windows domain.
+-   Your Windows Store app is installed on the client device.
 
--   Your Windows Store app is installed on your client computer.
+-   The Remote Server Administration Tools (RSAT) are installed on your client device. When you perform the following steps from your client device, you can select your Windows Store app when you create Windows Firewall rules.
 
--   The Remote Server Administration Tools (RSAT) are installed on your client computer. When you perform the following steps from your client computer, you can select your Windows Store app when you create Windows Firewall rules.
-
-    **Note**  
-    You can install the RSAT on your computer running Windows 8 from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=238560).
+    >**Note:**  You can install the RSAT on your device running Windows 10 from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 
      
-
-## <a href="" id="bkmk-step1"></a>Step 1: Define your network
-
+## Step 1: Define your network
 
 The **Home\\Work Networking** capability enables access to intranet resources. Administrators can use Group Policy settings to define the scope of the intranet. This ensures that Windows Store apps can access intranet resources appropriately.
-
-The Windows Store Internet Explorer app that is included with Windows 8 uses the network capabilities to detect which zone it should use. The browser uses the network capabilities to ensure that it operates in the correct security zone.
 
 A network endpoint is considered part of the **Home\\Work Network** if:
 
 -   It is part of the local subnet of a trusted network.
 
-    For example, home users generally flag their network as Trusted. Local computers will be designated as such.
+    For example, home users generally flag their network as Trusted. Local  devices will be designated as such.
 
--   A computer is on a network, and it is authenticated to a domain controller.
+-   A  device is on a network, and it is authenticated to a domain controller.
 
     -   Endpoints within the intranet address space are considered private.
 
     -   Endpoints within the local subnet are considered private.
 
--   The computer is configured for DirectAccess, and the endpoint is part of the intranet address space.
+-   The device is configured for DirectAccess, and the endpoint is part of the intranet address space.
 
 The intranet address space is composed of configured Active Directory sites and subnets, and it is configured for Windows network isolation specifically by using Group Policy. You can disable the usage of Active Directory sites and subnets by using Group Policy by declaring that your subnet definitions are authoritative.
 
@@ -109,113 +109,32 @@ All other endpoints that do not meet the previously stated criteria are consider
 
     If you want the proxy definitions that you previously created to be the single source for your proxy definition, click **Enabled**. Otherwise, leave the **Not Configured** default so that you can add additional proxies by using local settings or network isolation heuristics.
 
-## <a href="" id="bkmk-step2"></a>Step 2: Create custom firewall rules
-
+## Step 2: Create custom firewall rules
 
 Windows Store apps can declare many capabilities in addition to the network capabilities discussed previously. For example, apps can declare capabilities to access user identity, the local file system, and certain hardware devices.
 
 The following table provides a complete list of the possible app capabilities.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Capability</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Internet (Client)</strong></p></td>
-<td><p>internetClient</p></td>
-<td><p>Your outgoing Internet connection.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Internet (Client &amp; Server)</strong></p></td>
-<td><p>internetClientServer</p></td>
-<td><p>Your Internet connection, including incoming unsolicited connections from the Internet The app can send information to or from your computer through a firewall. You do not need to declare <strong>internetClient</strong> if this capability is declared.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Home\Work Networking</strong></p></td>
-<td><p>privateNetworkClientServer</p></td>
-<td><p>A home or work network. The app can send information to or from your computer and other computers on the same network.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Document Library Access</strong></p></td>
-<td><p>documentsLibrary</p></td>
-<td><p>Your Documents library, including the capability to add, change, or delete files. The package can only access file types that are declared in the manifest. The app cannot access document libraries on HomeGroup computers.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Picture Library Access</strong></p></td>
-<td><p>picturesLibrary</p></td>
-<td><p>Your Pictures library, including the capability to add, change, or delete files. This capability also includes Picture libraries on HomeGroup computers and picture file types on locally connected media servers.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Video Library Access</strong></p></td>
-<td><p>videosLibrary</p></td>
-<td><p>Your Videos library, including the capability to add, change, or delete files. This capability also includes Video libraries on HomeGroup computers and video file types on locally connected media servers.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Music Library Access</strong></p></td>
-<td><p>musicLibrary</p></td>
-<td><p>Your Music library, including the capability to add, change, or delete files. This capability also includes Music libraries on HomeGroup computers and music file types on locally connected media servers.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Default Windows Credentials</strong></p></td>
-<td><p>defaultWindowsCredentials</p></td>
-<td><p>Your Windows credentials for access to a corporate intranet. This application can impersonate you on the network.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Removable Storage</strong></p></td>
-<td><p>removableStorage</p></td>
-<td><p>A removable storage device, such as an external hard disk, USB flash drive, or MTP portable device, including the capability to add, change, or delete specific files. This package can only access file types that are declared in the manifest.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Shared User Certificates</strong></p></td>
-<td><p>sharedUserCertificates</p></td>
-<td><p>Software and hardware certificates or a smart card, which the app uses to identify you. This capability can be used by an employer, a bank, or government services to identify you.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Location</strong></p></td>
-<td><p>location</p></td>
-<td><p>Provides access to the user's current location.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Microphone</strong></p></td>
-<td><p>microphone</p></td>
-<td><p>Provides access to the microphone's audio feed.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Near-field Proximity</strong></p></td>
-<td><p>proximity</p></td>
-<td><p>Required for near-field communication (NFC) between devices in close proximity. NFC can be used to send files or connect with an app on a proximate device.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Text Messaging</strong></p></td>
-<td><p>sms</p></td>
-<td><p>Provides access to computer text messaging functionality.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Webcam</strong></p></td>
-<td><p>webcam</p></td>
-<td><p>Provides access to the webcam's video feed.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Other devices (represented by GUIDs)</strong></p></td>
-<td><p>&lt;GUID&gt;</p></td>
-<td><p>Includes specialized devices and Windows Portable Devices.</p></td>
-</tr>
-</tbody>
-</table>
+| Capability | Name | Description |
+| - | - | - |
+| **Internet (Client)** | internetClient | Your outgoing Internet connection.|
+| **Internet (Client &amp; Server)** | internetClientServer| Your Internet connection, including incoming unsolicited connections from the Internet The app can send information to or from your device through a firewall. You do not need to declare **internetClient** if this capability is declared. 
+| **Home\Work Networking** |privateNetworkClientServer| A home or work network. The app can send information to or from your  device and other devices on the same network.| 
+| **Document Library Access**| documentsLibrary| Your Documents library, including the capability to add, change, or delete files. The package can only access file types that are declared in the manifest.| 
+| **Picture Library Access**| picturesLibrary| Your Pictures library, including the capability to add, change, or delete files.| 
+| **Video Library Access**| videosLibrary| Your Videos library, including the capability to add, change, or delete files.| 
+| **Music Library Access**| musicLibrary|Your Music library, including the capability to add, change, or delete files.| 
+| **Default Windows Credentials**| defaultWindowsCredentials| Your Windows credentials for access to a corporate intranet. This application can impersonate you on the network.| 
+| **Removable Storage** | removableStorage| A removable storage device, such as an external hard disk, USB flash drive, or MTP portable device, including the capability to add, change, or delete specific files. This package can only access file types that are declared in the manifest.| 
+| **Shared User Certificates**| sharedUserCertificates| Software and hardware certificates or a smart card, which the app uses to identify you. This capability can be used by an employer, a bank, or government services to identify you.| 
+| **Location**| location| Provides access to the user's current location.| 
+| **Microphone** | microphone| Provides access to the microphone's audio feed.| 
+| **Near-field Proximity** | proximity| Required for near-field communication (NFC) between devices in close proximity. NFC can be used to send files or connect with an app on a proximate device.| 
+| **Text Messaging** | sms| Provides access to text messaging functionality.| 
+| **Webcam** | webcam| Provides access to the webcam's video feed.| 
+| **Other devices (represented by GUIDs)** | &lt;GUID&gt;| Includes specialized devices and Windows Portable Devices.| 
 
- 
-
-In Windows Server 2012, it is possible to create a Windows Firewall policy that is scoped to a set of apps that use a specified capability or scoped to a specific Windows Store app.
+You can create a Windows Firewall policy that is scoped to a set of apps that use a specified capability or scoped to a specific Windows Store app.
 
 For example, you could create a Windows Firewall policy to block Internet access for any apps on your network that have the Documents Library capability.
 
@@ -255,16 +174,13 @@ For example, you could create a Windows Firewall policy to block Internet access
 
 17. Click **Predefined set of computers**, select **Internet**, and click **OK**.
 
-    This scopes the rule to block traffic to Internet computers.
+    This scopes the rule to block traffic to Internet  devices.
 
 18. Click the **Programs and Services** tab, and in the **Application Packages** area, click **Settings**.
 
 19. Click **Apply to application packages only**, and then click **OK**.
 
-    **Important**  
-    You must do this to ensure that the rule applies only to Windows Store apps and not to other applications and programs. Non-Windows Store applications and programs declare all capabilities by default, and this rule would apply to them if you do not configure it this way.
-
-     
+    >**Important:**  You must do this to ensure that the rule applies only to Windows Store apps and not to other apps. Desktop apps declare all capabilities by default, and this rule would apply to them if you do not configure it this way.
 
 20. Click **OK** to close the **Properties** dialog box.
 
@@ -328,16 +244,6 @@ Use the following procedure if you want to block intranet access for a specific 
 
 23. Close Group Policy Management.
 
-## <a href="" id="bkmk-links"></a>See also
-
+## See also
 
 -   [Windows Firewall with Advanced Security Overview](windows-firewall-with-advanced-security.md)
-
- 
-
- 
-
-
-
-
-
