@@ -1083,7 +1083,7 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 ### <a href="" id="bkmk-defender"></a>19. Windows Defender
 
-You can opt out of the Microsoft Antimalware Protection Service.
+You can disconnect from the Microsoft Antimalware Protection Service.
 
 -   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **MAPS** &gt; **Join Microsoft MAPS**
 
