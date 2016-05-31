@@ -125,7 +125,9 @@ If a Surface Type Cover is not detected, the test prompts you to connect the Typ
 
 >**Note:**&nbsp;&nbsp;This test is only applicable to Surface Book and requires that the Surface Book be docked to the keyboard.
 
-This test is essentially the same as the Type Cover test, except the integrated keyboard in the Surface Book base is tested rather than the Type Cover. Move the cursor and use the Windows key to bring up the Start menu to confirm that the touchpad and keyboard are operating successfully. This test will display the status of cursor movement and keyboard input for you to verify. Press **ESC** to complete the test.
+This test is essentially the same as the Type Cover test, except the integrated keyboard in the Surface Book base is tested rather than the Type Cover. During the first stage of this test a diagram of the keyboard is displayed. When you press a key, the corresponding key will be marked on the diagram. The test will proceed when every key in the diagram is marked. In the second stage of this test, you are prompted to make several gestures on the keypad. As you perform each gesture (for example, a three finger tap), the gesture will be marked on the screen. When you have performed all gestures, the test will automatically complete.
+
+>**Note:**&nbsp;&nbsp;The F-keys on the diagram require that you press the Function (FN) key simultaneously to activate them. By default, these keys perform other actions. For the Home and End keys, you must press the same keys as F8 and F9, but without the Function (FN) key pressed.
 
 #### Canvas mode battery test
 
