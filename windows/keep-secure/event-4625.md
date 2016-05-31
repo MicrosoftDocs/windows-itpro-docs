@@ -221,7 +221,7 @@ More information: <https://dev.windows.com/en-us/downloads>
 
 -   **Transited Services** \[Type = UnicodeString\] \[Kerberos-only\]**:** the list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user – most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <https://msdn.microsoft.com/en-us/library/cc246072.aspx>
 
--   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager sub-package ([**NTLM-family**](https://msdn.microsoft.com/en-us/library/cc236621.aspx) protocol name) that was used during the logon attempt. Possible values are:
+-   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager sub-package ([NTLM-family](https://msdn.microsoft.com/en-us/library/cc236627.aspx) protocol name) that was used during the logon attempt. Possible values are:
 
     -   “NTLM V1”
 
