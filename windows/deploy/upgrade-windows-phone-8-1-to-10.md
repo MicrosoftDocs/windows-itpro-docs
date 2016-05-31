@@ -46,9 +46,7 @@ The registry CSP is used to push the GUID value to the following registry key fo
 ```
 
 
-The complete SyncML command for the solution is as follows.
-
-Note: The SyncML may vary, depending on your MDM solution.
+The complete SyncML command for the solution is as follows. Note: The SyncML may vary, depending on your MDM solution.
 
 ```
 SyncML xmlns="SYNCML:SYNCML1.1"> 
@@ -72,14 +70,11 @@ SyncML xmlns="SYNCML:SYNCML1.1">
 
 The OMA DM server policy description is provided in the following table:
 
-```
-OMA-URI  ./Vendor/MSFT/Registry/HKLM/SOFTWARE/Microsoft/Provisioning/OMADM/EnterpriseUpgrade 
-```
 
-Data Type  String  
-```
-Value  d369c9b6-2379-466d-9162-afc53361e3c2 
-```
+| OMA-URI  ./Vendor/MSFT/Registry/HKLM/SOFTWARE/Microsoft/Provisioning/OMADM/EnterpriseUpgrade |
+| Data Type  String |
+| Value  d369c9b6-2379-466d-9162-afc53361e3c2 |
+
 
 After the device consumes the policy, it will be able to receive an available upgrade.
 
