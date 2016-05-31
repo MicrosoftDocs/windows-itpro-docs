@@ -135,7 +135,9 @@ This event generates when a logon session is created (on destination machine). I
 
 **Logon Information** \[Version 2\]**: **
 
--   **Logon Type** \[Version 0, 1, 2\] \[Type = UInt32\]**:** the type of logon which was performed. The table below contains the list of possible values for this field:
+-   **Logon Type** \[Version 0, 1, 2\] \[Type = UInt32\]**:** the type of logon which was performed. The table below contains the list of possible values for this field.
+
+## Logon types and descriptions
 
 | Logon Type | Logon Title       | Description                                                                                                                                                                                                                                                                                                                |
 |------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -193,13 +195,13 @@ This event generates when a logon session is created (on destination machine). I
 
 -   **Linked Logon ID** \[Version 2\] \[Type = HexInt64\]**:** A hexadecimal value of the paired logon session. If there is no other logon session associated with this logon session, then the value is “**0x0**”.
 
--   **Network Account Name** \[Version 2\] \[Type = UnicodeString\]**:** User name that will be used for outbound (network) connections. Valid only for [**NewCredentials**](#Windows_Logon_Types) logon type.
+-   **Network Account Name** \[Version 2\] \[Type = UnicodeString\]**:** User name that will be used for outbound (network) connections. Valid only for [NewCredentials](#logon-types-and-descriptions) logon type.
 
-    If not [**NewCredentials**](#Windows_Logon_Types) logon, then this will be a "-" string.
+    If not **NewCredentials** logon, then this will be a "-" string.
 
--   **Network Account Domain** \[Version 2\] \[Type = UnicodeString\]**:** Domain for the user that will be used for outbound (network) connections. Valid only for [**NewCredentials**](#Windows_Logon_Types) logon type.
+-   **Network Account Domain** \[Version 2\] \[Type = UnicodeString\]**:** Domain for the user that will be used for outbound (network) connections. Valid only for [NewCredentials](#logon-types-and-descriptions) logon type.
 
-    If not [**NewCredentials**](#Windows_Logon_Types) logon, then this will be a "-" string.
+    If not **NewCredentials** logon, then this will be a "-" string.
 
 -   **Logon GUID** \[Type = GUID\]: a GUID that can help you correlate this event with another event that can contain the same **Logon GUID**, “[4769](event-4769.md)(S, F): A Kerberos service ticket was requested event on a domain controller.
 
