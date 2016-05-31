@@ -2,7 +2,7 @@
 title: Allow log on through Remote Desktop Services (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Allow log on through Remote Desktop Services security policy setting.
 ms.assetid: 6267c376-8199-4f2b-ae56-9c5424e76798
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

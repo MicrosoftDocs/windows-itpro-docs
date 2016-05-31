@@ -2,7 +2,7 @@
 title: Export an AppLocker policy from a GPO (Windows 10)
 description: This topic for IT professionals describes the steps to export an AppLocker policy from a Group Policy Object (GPO) so that it can be modified.
 ms.assetid: 7db59719-a8be-418b-bbfd-22cf2176c9c0
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

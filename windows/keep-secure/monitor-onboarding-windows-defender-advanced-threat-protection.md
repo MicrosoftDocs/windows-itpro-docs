@@ -3,9 +3,10 @@ title: Monitor Windows Defender ATP onboarding
 description: Monitor the onboarding of the Windows Defender ATP service to ensure your endpoints are correctly configured and are sending telemetry reports.
 keywords: monitor onboarding, monitor Windows Defender ATP onboarding, monitor Windows Defender Advanced Threat Protection onboarding
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: mjcaparas
 ---
 

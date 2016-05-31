@@ -2,7 +2,7 @@
 title: Microsoft network server Disconnect clients when logon hours expire (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Microsoft network server Disconnect clients when logon hours expire security policy setting.
 ms.assetid: 48b5c424-9ba8-416d-be7d-ccaabb3f49af
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
