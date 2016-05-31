@@ -11,6 +11,7 @@
 ### [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
 ### [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
 ### [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
+### [Upgrade a Windows Phone 8.1 to Windows 10 Mobile using MDM](upgrade-a-windows-phone-8-1-to-10.md)
 ### [Configure MDT settings](configure-mdt-2013-settings.md)
 #### [Set up MDT for BitLocker](set-up-mdt-2013-for-bitlocker.md)
 #### [Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)
