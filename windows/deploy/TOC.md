@@ -21,7 +21,6 @@
 #### [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt-2013.md)
 #### [Use web services in MDT](use-web-services-in-mdt-2013.md)
 #### [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt-2013.md)
-### [Upgrade Windows Phone 8.1 to Windows 10](upgrade-windows-phone-8-1-to-10.md)
 ## [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 ### [Integrate Configuration Manager with MDT 2013 Update 2](integrate-configuration-manager-with-mdt-2013.md)
 ### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
