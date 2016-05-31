@@ -23,7 +23,7 @@ author: Mir0sh
 
 This event generates with “[4624](event-4624.md)(S): An account was successfully logged on” and shows the list of groups that the logged-on account belongs to.
 
-You must also enable the Success audit for [Audit Logon](#_Audit_Logon) subcategory to get this event.
+You must also enable the Success audit for [Audit Logon](audit-logon.md) subcategory to get this event.
 
 Multiple events are generated if the group membership information cannot fit in a single security audit event.
 
@@ -142,7 +142,7 @@ Multiple events are generated if the group membership information cannot fit in 
 
 For 4627(S): Group membership information.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Typically this action is reported by the NULL SID account, so we recommend reporting all events with **“Subject\\Security ID”** not equal “**NULL SID**”.
 

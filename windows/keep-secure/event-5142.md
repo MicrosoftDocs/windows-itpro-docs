@@ -98,7 +98,7 @@ This event generates every time network share object was added.
 
 For 5142(S): A network share object was added.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have high-value computers for which you need to monitor creation of new file shares, monitor this event**.** For example, you could monitor domain controllers.
 

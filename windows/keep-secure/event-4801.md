@@ -95,7 +95,7 @@ This event is generated when workstation was unlocked.
 
 For 4801(S): The workstation was unlocked.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Typically this is an informational event, and can give you information about when a machine was unlocked, and which account was used to unlock it.
 

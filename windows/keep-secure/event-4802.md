@@ -95,7 +95,7 @@ This event is generated when screen saver was invoked.
 
 For 4802(S): The screen saver was invoked.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Typically this is an informational event, and can give you information about when a screen saver was invoked on a machine, and which account invoked it.
 

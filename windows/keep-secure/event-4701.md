@@ -100,7 +100,7 @@ This event generates every time a scheduled task is disabled.
 
 For 4701(S): A scheduled task was disabled.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If a highly critical scheduled task exists on some computers, and it should never be disabled, monitor for [4701](event-4701.md) events with the corresponding **Task Name**.
 

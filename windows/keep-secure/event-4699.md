@@ -100,7 +100,7 @@ This event generates every time a scheduled task was deleted.
 
 For 4699(S): A scheduled task was deleted.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   We recommend monitoring all scheduled task deletion events, especially on critical computers or devices. Scheduled tasks are often used by malware to stay in the system after reboot or for other malicious actions. However, this event does not often happen.
 

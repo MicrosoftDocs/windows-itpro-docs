@@ -127,7 +127,7 @@ This event doesn’t mean that device was disabled.
 
 For 6419(S): A request was made to disable a device.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   You can use this event to track the events and event information shown in the following table by using the listed fields:
 

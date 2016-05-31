@@ -139,7 +139,7 @@ This event generates once per session, when first access attempt was made.
 
 For 5140(S, F): A network share object was accessed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have high-value computers for which you need to monitor all access to all shares or specific shares (“**Share Name**”), monitor this event**.** For example, you could monitor share **C$** on domain controllers.
 

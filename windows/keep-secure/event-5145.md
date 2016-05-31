@@ -289,7 +289,7 @@ For more information about SDDL syntax, see these articles: <https://msdn.micros
 
 For 5145(S, F): A network share object was checked to see whether client can be granted desired access.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Monitor this event if the **Network Information\\Source Address** is not from your internal IP range.
 

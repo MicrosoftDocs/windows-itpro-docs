@@ -256,7 +256,7 @@ For new, manually created, domain or local user accounts typical flags are:
 
 For 4720(S): A user account was created.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Some organizations monitor every [4720](event-4720.md) event.
 

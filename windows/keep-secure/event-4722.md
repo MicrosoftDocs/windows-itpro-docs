@@ -113,7 +113,7 @@ For computer accounts, this event generates only on domain controllers.
 
 For 4722(S): A user account was enabled.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a high-value domain or local account for which you need to monitor every change, monitor all [4722](event-4722.md) events with the **“Target Account\\Security ID”** that corresponds to the account.
 

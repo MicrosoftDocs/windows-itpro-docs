@@ -183,7 +183,7 @@ For kernel objects, this event and other auditing events have little to no secur
 
 For other types of objects, the following recommendations apply.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have critical file system objects for which you need to monitor all access attempts, monitor this event for **Object Name**.
 

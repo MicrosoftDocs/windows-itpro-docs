@@ -20,7 +20,7 @@ Audit User/Device Claims allows you to audit user and device claims information 
 
 For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
 
-***Important***: [Audit Logon](#_Audit_Logon) subcategory must also be enabled in order to get events from this subcategory.
+***Important***: [Audit Logon](audit-logon.md) subcategory must also be enabled in order to get events from this subcategory.
 
 **Event volume**:
 

@@ -134,7 +134,7 @@ This event generates only on domain controllers.
 
 For 4764(S): A group’s type was changed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a list of critical local or domain groups in the organization, and need to specifically monitor these groups for any change, especially group type change, monitor events with the “**Group\\Group Name”** values that correspond to the critical distribution groups. Examples of critical local or domain groups are built-in local administrators group, domain admins, enterprise admins, critical distribution groups, and so on.
 

@@ -95,7 +95,7 @@ This event is generated when a workstation was locked.
 
 For 4800(S): The workstation was locked.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Typically this is an informational event, and can give you information about when a machine was locked, and which account was used to lock it.
 

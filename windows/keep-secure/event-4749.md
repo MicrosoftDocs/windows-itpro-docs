@@ -120,7 +120,7 @@ This event generates only on domain controllers.
 
 For 4749(S): A security-disabled global group was created.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor each time a new distribution group is created, to see who created the group and when, monitor this event. Typically, this event is used as an informational event, to be reviewed if needed.
 

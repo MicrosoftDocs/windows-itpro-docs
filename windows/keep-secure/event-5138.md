@@ -180,7 +180,7 @@ This event only generates if the container to which the Active Directory object 
 
 For 5138(S): A directory service object was undeleted.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor undelete operations (restoration) of Active Directory objects with specific classes, monitor for **Class** field with specific class name.
 

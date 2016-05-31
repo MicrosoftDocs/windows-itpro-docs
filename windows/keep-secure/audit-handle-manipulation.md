@@ -16,7 +16,7 @@ author: Mir0sh
 -   Windows Server 2016
 
 
-Audit Handle Manipulation enables generation of “4658: The handle to an object was closed” in [Audit File System](#_Audit_File_System), [Audit Kernel Object](#_Audit_Kernel_Object), [Audit Registry](#_Audit_Registry), [Audit Removable Storage](#_Audit_Removable_Storage) and [Audit SAM](#_Audit_SAM) subcategories, and shows object’s handle duplication and close actions.
+Audit Handle Manipulation enables generation of “4658: The handle to an object was closed” in [Audit File System](audit-file-system.md), [Audit Kernel Object](audit-kernel-object.md), [Audit Registry](audit-registry.md), [Audit Removable Storage](audit-removable-storage.md) and [Audit SAM](audit-sam.md) subcategories, and shows object’s handle duplication and close actions.
 
 **Event volume**: High.
 

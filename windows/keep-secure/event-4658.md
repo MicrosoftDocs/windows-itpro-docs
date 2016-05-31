@@ -23,7 +23,7 @@ author: Mir0sh
 
 This event generates when the handle to an object is closed. The object could be a file system, kernel, or registry object, or a file system object on removable storage or a device.
 
-This event generates only if Success auditing is enabled for [Audit Handle Manipulation](#_Audit_Handle_Manipulation) subcategory.
+This event generates only if Success auditing is enabled for [Audit Handle Manipulation](audit-handle-manipulation.md) subcategory.
 
 Typically this event is needed if you need to know how long the handle to the object was open. Otherwise, it might not have any security relevance.
 
@@ -116,7 +116,7 @@ Typically this event is needed if you need to know how long the handle to the ob
 
 For 4658(S): The handle to an object was closed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Typically this event has little to no security relevance and is hard to parse or analyze. There is no recommendation for this event, unless you know exactly what you need to monitor with it.
 

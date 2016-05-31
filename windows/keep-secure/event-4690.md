@@ -92,7 +92,7 @@ This event generates if an attempt was made to duplicate a handle to an object.
 
 **Source Handle Information:**
 
--   **Source Handle ID** \[Type = Pointer\]: hexadecimal value of a handle which was duplicated. This field can help you correlate this event with other events, for example “4663: An attempt was made to access an object” in [Audit File System](#_Audit_File_System), [Audit Kernel Object](#_Audit_Kernel_Object), [Audit Registry](#_Audit_Registry), [Audit Removable Storage](#_Audit_Removable_Storage) or [Audit SAM](#_Audit_SAM) subcategories.
+-   **Source Handle ID** \[Type = Pointer\]: hexadecimal value of a handle which was duplicated. This field can help you correlate this event with other events, for example “4663: An attempt was made to access an object” in [Audit File System](audit-file-system.md), [Audit Kernel Object](audit-kernel-object.md), [Audit Registry](audit-registry.md), [Audit Removable Storage](audit-removable-storage.md) or [Audit SAM](audit-sam.md) subcategories.
 
 -   **Source Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process which opened the **Source Handle ID** before it was duplicated. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
 
@@ -104,7 +104,7 @@ This event generates if an attempt was made to duplicate a handle to an object.
 
 **New Handle Information:**
 
--   **Target Handle ID** \[Type = Pointer\]: hexadecimal value of the new handle (the copy of **Source Handle ID**). This field can help you correlate this event with other events, for example “4663: An attempt was made to access an object” in [Audit File System](#_Audit_File_System), [Audit Kernel Object](#_Audit_Kernel_Object), [Audit Registry](#_Audit_Registry), [Audit Removable Storage](#_Audit_Removable_Storage) or [Audit SAM](#_Audit_SAM) subcategories.
+-   **Target Handle ID** \[Type = Pointer\]: hexadecimal value of the new handle (the copy of **Source Handle ID**). This field can help you correlate this event with other events, for example “4663: An attempt was made to access an object” in [Audit File System](audit-file-system.md), [Audit Kernel Object](audit-kernel-object.md), [Audit Registry](audit-registry.md), [Audit Removable Storage](audit-removable-storage.md) or [Audit SAM](audit-sam.md) subcategories.
 
 -   **Target Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process which opened the **Target Handle ID**. Process ID (PID) is a number used by the operating system to uniquely identify an active process. You can also correlate this process ID with a process ID in other events, for example, “[4688](event-4688.md): A new process has been created” **Process Information\\New Process ID** field.
 

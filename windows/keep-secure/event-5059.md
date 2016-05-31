@@ -150,7 +150,7 @@ For 5059(S, F): Key migration operation.
 
 -   Typically this event is required for detailed monitoring of KSP-related actions with cryptographic keys. If you need to monitor actions related to specific cryptographic keys (**“Key Name”)** or a specific **“Operation”**, such as **“Export of persistent cryptographic key”**, create monitoring rules and use this event as an information source.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   
 

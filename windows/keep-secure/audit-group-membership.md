@@ -22,7 +22,7 @@ This policy allows you to audit the group membership information in the user's l
 
 For an interactive logon, the security audit event is generated on the computer that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
 
-You must also enable the [Audit Logon](#_Audit_Logon) subcategory.
+You must also enable the [Audit Logon](audit-logon.md) subcategory.
 
 Multiple events are generated if the group membership information cannot fit in a single security audit event
 

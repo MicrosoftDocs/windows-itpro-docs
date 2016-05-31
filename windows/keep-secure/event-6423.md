@@ -127,7 +127,7 @@ Device installation restriction group policies are located here: **\\Computer Co
 
 For 6423(S): The installation of this device is forbidden by system policy.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you want to track device installation policy violations then you need to track every event of this type.
 

@@ -177,7 +177,7 @@ This event only generates if the parent object has a particular entry in its [SA
 
 For 5137(S): A directory service object was created.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor creation of Active Directory objects with specific classes, monitor for **Class** field with specific class name. For example, we recommend that you monitor all new group policy objects creations: **groupPolicyContainer** class.
 

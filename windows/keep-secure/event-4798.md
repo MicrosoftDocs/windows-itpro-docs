@@ -123,7 +123,7 @@ You can also correlate this process ID with a process ID in other events, for ex
 
 For 4798(S): A user's local group membership was enumerated.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have high value domain or local accounts for which you need to monitor each enumeration of their group membership, or any access attempt, monitor events with the **“Subject\\Security ID”** that corresponds to the high value account or accounts.
 

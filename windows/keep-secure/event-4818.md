@@ -172,7 +172,7 @@ This event generates when Dynamic Access Control Proposed [Central Access Policy
 
     -   User Right name, for example SeSecurityPrivilege.
 
-    -   The [Security Descriptor Definition Language](#SDDL) (SDDL) value for the Access Control Entry (ACE) that granted or denied access.
+    -   The [Security Descriptor Definition Language](event-5145.md#sddl-values-for-access-control-entry) (SDDL) value for the Access Control Entry (ACE) that granted or denied access.
 
 **Proposed Central Access Policy results that differ from the current Central Access Policy results:**
 

@@ -94,7 +94,7 @@ This event generates on domain controllers, member servers, and workstations.
 
 For 5376(S): Credential Manager credentials were backed up.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Every [5376](event-5376.md) event should be recorded for all local and domain accounts, because this action (back up Credential Manager) is very rarely used by users and can indicate a virus, or other harmful or malicious activity.
 

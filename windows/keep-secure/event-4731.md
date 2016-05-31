@@ -124,7 +124,7 @@ This event generates on domain controllers, member servers, and workstations.
 
 For 4731(S): A security-enabled local group was created.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor each time a new security group is created, to see who created the group and when, monitor this event.
 

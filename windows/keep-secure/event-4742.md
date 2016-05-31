@@ -33,7 +33,7 @@ Some changes do not invoke a 4742 event, for example, changes made using Active 
 
 You might see this event without any changes inside, that is, where all **Changed Attributes** apear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the **Description** of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4742 event will generate, but all attributes will be “-“.
 
-***Important*:** If you manually change any user-related setting or attribute, for example if you set the SMARTCARD\_REQUIRED flag in **userAccountControl** for the computer account, then the **sAMAccountType** of the computer account will be changed to NORMAL\_USER\_ACCOUNT and you will get “[4738](event-4738.md): A user account was changed” instead of 4742 for this computer account. Essentially, the computer account will “become” a user account. For NORMAL\_USER\_ACCOUNT you will always get events from [Audit User Account Management](#_Audit_User_Account) subcategory. We strongly recommend that you avoid changing any user-related settings manually for computer objects.
+***Important*:** If you manually change any user-related setting or attribute, for example if you set the SMARTCARD\_REQUIRED flag in **userAccountControl** for the computer account, then the **sAMAccountType** of the computer account will be changed to NORMAL\_USER\_ACCOUNT and you will get “[4738](event-4738.md): A user account was changed” instead of 4742 for this computer account. Essentially, the computer account will “become” a user account. For NORMAL\_USER\_ACCOUNT you will always get events from [Audit User Account Management](audit-user-account-management.md) subcategory. We strongly recommend that you avoid changing any user-related settings manually for computer objects.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -259,7 +259,7 @@ TERMSRV/Win81.contoso.local
 
 For 4742(S): A computer account was changed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have critical domain computer accounts (database servers, domain controllers, administration workstations, and so on) for which you need to monitor each change, monitor this event with the **“Computer Account That Was Changed\\Security ID”** that corresponds to the high-value account or accounts.
 

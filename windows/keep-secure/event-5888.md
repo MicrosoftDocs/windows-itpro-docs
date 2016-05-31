@@ -151,7 +151,7 @@ For some reason this event belongs to [Audit System Integrity](event-5890.md) su
 
 For 5888(S): An object in the COM+ Catalog was modified.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a specific COM+ object for which you need to monitor all modifications, monitor all [5888](event-5888.md) events with the corresponding **Object Name**.
 

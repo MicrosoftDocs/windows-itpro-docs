@@ -296,7 +296,7 @@ So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
 For 4741(S): A computer account was created.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If your information security monitoring policy requires you to monitor computer account creation, monitor this event.
 
