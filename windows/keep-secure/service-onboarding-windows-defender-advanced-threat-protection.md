@@ -3,9 +3,10 @@ title: Windows Defender ATP service onboarding
 description: Assign users to the Windows Defender ATP service application in Azure Active Directory to grant access to the portal.
 keywords: service onboarding, Windows Defender Advanced Threat Protection service onboarding, manage users,
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: mjcaparas
 ---
 

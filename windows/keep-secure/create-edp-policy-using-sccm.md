@@ -2,10 +2,11 @@
 title: Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager (Windows 10)
 description: Configuration Manager (version 1511 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
 ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
-keywords: ["EDP", "Enterprise Data Protection", "SCCM", "System Center Configuration Manager", Configuration Manager"]
-ms.prod: W10
+keywords: EDP, Enterprise Data Protection, SCCM, System Center Configuration Manager, Configuration Manager
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: security
 author: eross-msft
 ---
 

@@ -3,9 +3,10 @@ title: Windows Defender Advanced Threat Protection settings
 description: Use the menu to configure the time zone, suppression rules, and view license information.
 keywords: Windows Defender ATP settings, Windows Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license, suppression rules
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: DulceMV
 ---
 

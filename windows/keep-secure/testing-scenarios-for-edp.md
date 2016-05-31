@@ -2,10 +2,11 @@
 title: Testing scenarios for enterprise data protection (EDP) (Windows 10)
 description: We've come up with a list of suggested testing scenarios that you can use to test enterprise data protection (EDP) in your company.
 ms.assetid: 53db29d2-d99d-4db6-b494-90e2b3962ca2
-keywords: ["EDP", "Enterprise Data Protection"]
-ms.prod: W10
+keywords: EDP, Enterprise Data Protection
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: security
 author: eross-msft
 ---
 

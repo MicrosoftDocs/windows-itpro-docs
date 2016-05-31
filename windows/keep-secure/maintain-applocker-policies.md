@@ -2,7 +2,7 @@
 title: Maintain AppLocker policies (Windows 10)
 description: This topic describes how to maintain rules within AppLocker policies.
 ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

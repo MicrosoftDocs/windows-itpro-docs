@@ -2,7 +2,7 @@
 title: AppLocker settings (Windows 10)
 description: This topic for the IT professional lists the settings used by AppLocker.
 ms.assetid: 9cb4aa19-77c0-4415-9968-bd07dab86839
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
