@@ -12,7 +12,7 @@ author: greg-lindsay
 # Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management (MDM)
 
 ## Summary
-This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using MDM. To determine if the device is eligible for an upgrade, see [How to determine whether an upgrade is available for a device](#Howto).
+This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using MDM. To determine if the device is eligible for an upgrade, see [How to determine whether an upgrade is available for a device](#howto).
 
 The Windows Phone 8.1 to Windows 10 Mobile upgrade uses an "opt-in" or "seeker" model. An eligible device must opt-in to be offered the upgrade. For consumers, the Windows 10 Mobile Upgrade Advisor app is available from the Windows Store to perform the opt-in. For Enterprises, Microsoft is offering a centralized management solution through Mobile Device Management (MDM) that can push a management policy to each eligible device to perform the opt-in.
 
@@ -81,7 +81,7 @@ After the device consumes the policy, it will be able to receive an available up
 
 To disable the policy, either delete the OMADM registry key or set the EnterpriseUpgrade string value to anything other than the GUID.
 
-### How to determine whether an upgrade is available for a device<a name="Howto"></a>
+### How to determine whether an upgrade is available for a device <a id="howto"></a>
 
 The Windows 10 Mobile Upgrade Advisor app is not designed or intended for Enterprise customers who want to automate the upgrade process.
 
