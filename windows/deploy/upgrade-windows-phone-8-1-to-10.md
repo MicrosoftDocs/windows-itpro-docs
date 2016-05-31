@@ -9,18 +9,14 @@ ms.pagetype: mdt
 author: greg-lindsay
 ---
 
-# How to enable a Windows Phone 8.1 upgrade to Windows 10 Mobile in an MDM environment
+# Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management (MDM)
 
 ## Summary
-This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile. See the How to determine whether an upgrade is available for a device section to determine whether your device is eligible for the update.
+This article describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile using MDM. To determine if the device is eligible for an upgrade, see How to determine whether an upgrade is available for a device.
 
-The Windows Phone 8.1 to Windows 10 Mobile upgrade uses an "opt-in" or "seeker" model. An eligible device must opt-in to be offered the upgrade.
+The Windows Phone 8.1 to Windows 10 Mobile upgrade uses an "opt-in" or "seeker" model. An eligible device must opt-in to be offered the upgrade. For consumers, the Windows 10 Mobile Upgrade Advisor app is available from the Windows Store to perform the opt-in. For Enterprises, Microsoft is offering a centralized management solution through Mobile Device Management (MDM) that can push a management policy to each eligible device to perform the opt-in.
 
-For consumers, the Windows 10 Mobile Upgrade Advisor app is available from the Windows Store to perform the opt-in.
-
-For Enterprises, Microsoft is offering a centralized management solution through Mobile Device Management (MDM) that can push a management policy to each eligible device to perform the opt-in.
-
-If you use a list of allowed apps (whitelisting) through MDM, see the documentation here to make sure system apps are whitelisted before you upgrade to Windows 10 Mobile. Also, be aware that there are known issues listed in the documentation that could adversely affect the device after you upgrade. See this documentation for rules to avoid.
+If you use a list of allowed applications (known as whitelisting) through MDM, see the documentation here to make sure system applications are whitelisted before you upgrade to Windows 10 Mobile. Also, be aware that there are known issues listed in the documentation that could adversely affect the device after you upgrade. See this documentation for rules to avoid.
 
 Some enterprises may want to control the availability of the Windows 10 Mobile upgrade to their users. With the opt-in model, the enterprise can blacklist the Upgrade Advisor app to prevent their users from upgrading prematurely. For more information about how to blacklist the Upgrade Advisor app, see the How to blacklist the Upgrade Advisor app section. Enterprises that have blacklisted the Upgrade Advisor app can use the solution that's described in this article to select the upgrade timing on a per-device basis.
 
