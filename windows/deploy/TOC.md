@@ -1,5 +1,4 @@
 # [Deploy Windows 10](index.md)
-## [Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 ### [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
@@ -11,7 +10,6 @@
 ### [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
 ### [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
 ### [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
-### [Upgrade a Windows Phone 8.1 to Windows 10 Mobile using MDM](upgrade-a-windows-phone-8-1-to-10.md)
 ### [Configure MDT settings](configure-mdt-2013-settings.md)
 #### [Set up MDT for BitLocker](set-up-mdt-2013-for-bitlocker.md)
 #### [Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)
@@ -39,6 +37,7 @@
 ## [Windows 10 edition upgrade](windows-10-edition-upgrades.md)
 ## [Deploy Windows To Go in your organization](deploy-windows-to-go.md)
 ## [Update Windows 10 images with provisioning packages](update-windows-10-images-with-provisioning-packages.md)
+## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade-windows-phone-8-1-to-10.md)
 ## [Sideload apps in Windows 10](sideload-apps-in-windows-10.md)
 ## [Volume Activation [client]](volume-activation-windows-10.md)
 ### [Plan for volume activation [client]](plan-for-volume-activation-client.md)
@@ -134,4 +133,4 @@
 ###### [Recognized Environment Variables](usmt-recognized-environment-variables.md)
 ###### [XML Elements Library](usmt-xml-elements-library.md)
 ##### [Offline Migration Reference](offline-migration-reference.md)
-
+## [Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md)
