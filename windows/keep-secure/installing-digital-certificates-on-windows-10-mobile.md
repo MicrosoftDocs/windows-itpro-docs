@@ -22,7 +22,7 @@ Certificates in Windows 10 Mobile are primarily used for the following purposes
 -   To authenticate a user to a reverse proxy server that is used to enable Microsoft Exchange ActiveSync (EAS) for email.
 -   For installation and licensing of applications (from the Windows Phone Store or a custom company distribution site).
 
-## Install certificates using Internet Explorer
+## Install certificates using Microsoft Edge
 
 A certificate can be posted on a website and made available to users through a device-accessible URL that they can use to download the certificate. When a user accesses the page and taps the certificate, it opens on the device. The user can inspect the certificate, and if they choose to continue, the certificate is installed on the Windows 10 Mobile device.
 
@@ -42,7 +42,7 @@ Windows 10 Mobile supports root, CA, and client certificate to be configured vi
 3.  The trusted CA certificate is installed directly during MDM request.
 4.  The device accepts certificate enrollment request.
 5.  The device generates private/public key pair.
-6.  The device connects to Internet facing point exposed by MDM server.
+6.  The device connects to Internet-facing point exposed by MDM server.
 7.  MDM server creates a certificate that is signed with proper CA certificate and returns it to device.
 
     > **Note:**  The device supports the pending function to allow server side to do additional verification before issuing the cert. In this case, a pending status is sent back to the device. The device will periodically contact the server, based on preconfigured retry count and retry period parameters. Retrying ends when either:
