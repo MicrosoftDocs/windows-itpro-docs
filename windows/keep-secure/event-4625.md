@@ -17,7 +17,7 @@ author: Mir0sh
 
 <img src="images/event-4625.png" alt="Event 4625 illustration" width="449" height="780" hspace="10" align="left" />
 
-***Subcategories:***&nbsp;[Audit Account Lockout](audit-account-lockout.md) and [Account Logon](account-logon.md)
+***Subcategories:***&nbsp;[Audit Account Lockout](audit-account-lockout.md) and [Audit Logon](audit-logon.md)
 
 ***Event Description:***
 
