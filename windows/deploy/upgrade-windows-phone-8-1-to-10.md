@@ -79,7 +79,7 @@ The OMA DM server policy description is provided in the following table:
 
 After the device consumes the policy, it will be able to receive an available upgrade.
 
-To disable the policy, delete the OMADM registry key or set the EnterpriseUpgrade string value to anything other than the GUID.
+To disable the policy, delete the **OMADM** registry key or set the **EnterpriseUpgrade** string value to anything other than the GUID.
 
 ### How to determine whether an upgrade is available for a device <a id="howto-upgrade-available"></a>
 
