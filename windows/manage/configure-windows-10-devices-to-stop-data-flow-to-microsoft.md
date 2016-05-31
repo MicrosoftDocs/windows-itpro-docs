@@ -285,7 +285,7 @@ When you enable the **Don't search the web or display web results in Search** Gr
 
     -   For **Remote port**, choose **All ports**.
 
-> **Note:**  If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
+> **Note:**  If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
 ### <a href="" id="bkmk-cortana-mdm"></a>1.2 Cortana MDM policies
 
