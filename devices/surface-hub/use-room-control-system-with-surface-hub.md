@@ -64,7 +64,7 @@ You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial 
 
 This diagram shows the correct pinout usedfor an RJ-11 (6P6C) to DB9 cable.
 
-![image showing the wiring diagram. ](images/room-control-wiring-diagram.png)
+![image showing the wiring diagram.](images/room-control-wiring-diagram.png)
 
 ## Command sets
 
