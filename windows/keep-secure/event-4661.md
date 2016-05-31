@@ -29,6 +29,8 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
+<br clear="all">
+
 ***Event XML***:
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
