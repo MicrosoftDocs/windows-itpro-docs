@@ -125,7 +125,7 @@ This event generates every time specific device was disabled.
 
 For 6420(S): A device was disabled.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   You can use this event to track the events and event information shown in the following table by using the listed fields:
 

@@ -114,7 +114,7 @@ It typically occurs when [CredSSP](https://msdn.microsoft.com/en-us/library/cc22
 
 For 5378(F): The requested credentials delegation was disallowed by policy.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have defined CredSSP delegation policy, then this event will show you policy violations. We recommend collecting these events and investigating every policy violation.
 

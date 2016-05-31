@@ -127,7 +127,7 @@ You can also correlate this process ID with a process ID in other events, for ex
 
 For 4799(S): A security-enabled local group membership was enumerated.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a list of critical local security groups in the organization, and need to specifically monitor these groups for any access (in this case, enumeration of group membership), monitor events with the “**Group\\Group Name”** values that correspond to the critical local security groups. Examples of critical local groups are built-in local administrators, built-in backup operators, and so on.
 

@@ -118,7 +118,7 @@ This event generates on domain controllers, member servers, and workstations.
 
 For 4734(S): A security-enabled local group was deleted.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a list of critical local or domain security groups in the organization, and need to specifically monitor these groups for any change, especially group deletion, monitor events with the “**Group\\Group Name”** values that correspond to the critical local or domain security groups. Examples of critical local or domain groups are built-in local administrators group, domain admins, enterprise admins, and so on.
 

@@ -100,7 +100,7 @@ This event generates every time a scheduled task is enabled.
 
 For 4700(S): A scheduled task was enabled.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If a highly critical scheduled task exists on some computers, and for some reason it should never be enabled, monitor for [4700](event-4700.md) events with the corresponding **Task Name**.
 

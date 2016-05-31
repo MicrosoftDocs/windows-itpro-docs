@@ -66,6 +66,6 @@ If you configure this policy setting, an audit event is generated when sensitive
 
 -   [4985](event-4985.md)(S): The state of a transaction has changed.
 
->**Note**&nbsp;&nbsp;For some reason event “[4985](event-4985.md)(S): The state of a transaction has changed" from [Audit File System](#_Audit_File_System) subcategory generates also in this subcategory. See description of event [4985](event-4985.md) in [Audit File System](#_Audit_File_System) subcategory.
+>**Note**&nbsp;&nbsp;For some reason event “[4985](event-4985.md)(S): The state of a transaction has changed" from [Audit File System](audit-file-system.md) subcategory generates also in this subcategory. See description of event [4985](event-4985.md) in [Audit File System](audit-file-system.md) subcategory.
 
 

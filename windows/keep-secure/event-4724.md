@@ -119,7 +119,7 @@ For local accounts, a Failure event generates if the new password fails to meet 
 
 For 4724(S, F): An attempt was made to reset an account's password.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a high-value domain or local user account for which you need to monitor every password reset attempt, monitor all [4724](event-4724.md) events with the **“Target Account\\Security ID”** that corresponds to the account.
 

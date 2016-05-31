@@ -180,7 +180,7 @@ This event only generates if the destination object has a particular entry in it
 
 For 5139(S): A directory service object was moved.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor movement of Active Directory objects with specific classes, monitor for **Class** field with specific class name.
 

@@ -156,7 +156,7 @@ You will typically see these events with “**Subject\\Security ID**” = “**L
 
 For 4616(S): The system time was changed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Report all “**Subject\\Security ID**” not equals **“LOCAL SERVICE”**, which means that the time change was not made not by Windows Time service.
 

@@ -188,7 +188,7 @@ This event only generates if the deleted object has a particular entry in its [S
 
 For 5141(S): A directory service object was deleted.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor deletion of Active Directory objects with specific classes, monitor for **Class** field with specific class name. For example, we recommend that you monitor for group policy objects deletions: **groupPolicyContainer** class.
 

@@ -247,7 +247,7 @@ So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
 For 4738(S): A user account was changed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Some organizations monitor every [4738](event-4738.md) event.
 

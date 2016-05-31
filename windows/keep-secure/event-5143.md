@@ -253,7 +253,7 @@ For more information about SDDL syntax, see these articles: <https://msdn.micros
 
 For 5143(S): A network share object was modified.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have high-value computers for which you need to monitor all modifications to all shares or specific shares (“**Share Name**”), monitor this event**.** For example, you could monitor all changes to the SYSVOL share on domain controllers.
 

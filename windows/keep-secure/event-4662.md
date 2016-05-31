@@ -222,7 +222,7 @@ Here is an example of decoding of **Properties** field:
 
 For 4662(S, F): An operation was performed on an object.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor operations attempts to specific Active Directory classes, monitor for **Object Type** field with specific class name. For example, we recommend that you monitor all operations attempts to **domainDNS** class.
 

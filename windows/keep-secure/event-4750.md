@@ -27,9 +27,9 @@ This event generates only on domain controllers.
 
 Some changes do not invoke a 4750 event, for example, changes made using the Active Directory Users and Computers management console in **Managed By** tab in group account properties.
 
-If you change the name of the group (SAM Account Name), you also get “[4781](event-4781.md): The name of an account was changed” if “[Audit User Account Management](#_Audit_User_Account)” subcategory success auditing is enabled.
+If you change the name of the group (SAM Account Name), you also get “[4781](event-4781.md): The name of an account was changed” if “[Audit User Account Management](audit-user-account-management.md)” subcategory success auditing is enabled.
 
-If you change the group type, you get a change event from the new group type auditing subcategory instead of 4750. If you need to monitor for group type changes, it is better to monitor for “[4764](event-4764.md): A group’s type was changed.” These events are generated for any group type when group type is changed. “[Audit Security Group Management](#_Audit_Security_Group)” subcategory success auditing must be enabled.
+If you change the group type, you get a change event from the new group type auditing subcategory instead of 4750. If you need to monitor for group type changes, it is better to monitor for “[4764](event-4764.md): A group’s type was changed.” These events are generated for any group type when group type is changed. “[Audit Security Group Management](audit-security-group-management.md)” subcategory success auditing must be enabled.
 
 From 4750 event you can get information about changes of **sAMAccountName** and **sIDHistory** attributes or you will see that something changed, but will not be able to see what exactly changed.
 
@@ -138,7 +138,7 @@ From 4750 event you can get information about changes of **sAMAccountName** and 
 
 For 4750(S): A security-disabled global group was changed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a list of critical distribution groups in the organization, and need to specifically monitor these groups for any change, monitor events with the “**Group\\Group Name”** values that correspond to the critical distribution groups.
 

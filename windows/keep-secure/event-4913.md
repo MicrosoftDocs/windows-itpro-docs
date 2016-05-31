@@ -268,7 +268,7 @@ For more information about SDDL syntax, see these articles: <https://msdn.micros
 
 For 4913(S): Central Access Policy on the object was changed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor events related to specific Windows object types (“**Object Type**”), for example **File** or **Key**, monitor this event for the corresponding “**Object Type**.”
 

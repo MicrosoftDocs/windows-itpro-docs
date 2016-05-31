@@ -109,7 +109,7 @@ Note that starting with Microsoft SQL Server 2005, the “SQL Server password po
 
 For 4793(S): The Password Policy Checking API was called.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Typically this is an informational event, and can give you information about when Password Policy Checking APIs were invoked, and who invoked them. The **Provided Account Name** does not always have a value—sometimes it’s not really possible to determine for which account the password policy check was performed.
 

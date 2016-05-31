@@ -138,7 +138,7 @@ Most services installed are configured to **Auto Load**, so that they start auto
 
 For 4697(S): A service was installed in the system.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   We recommend monitoring for this event, especially on high value assets or computers, because a new service installation should be planned and expected. Unexpected service installation should trigger an alert.
 

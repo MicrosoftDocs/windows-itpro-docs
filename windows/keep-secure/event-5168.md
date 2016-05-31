@@ -113,7 +113,7 @@ It often happens because of NTLMv1 or LM protocols usage from client side when â
 
 For 5168(F): SPN check for SMB/SMB2 failed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   We recommend monitoring for any [5168](event-5168.md) event, because it can be a sign of a configuration issue or a malicious authentication attempt.
 

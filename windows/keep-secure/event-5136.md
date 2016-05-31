@@ -226,7 +226,7 @@ For a change operation you will typically see two 5136 events for one action, wi
 
 For 5136(S): A directory service object was modified.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor modifications to specific Active Directory objects, monitor for **DN** field with specific object name. For example, we recommend that you monitor all modifications to “**CN=AdminSDHolder,CN=System,DC=domain,DC=com”** object.
 

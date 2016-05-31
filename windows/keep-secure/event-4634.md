@@ -111,7 +111,7 @@ It may be positively correlated with a “[4624](event-4624.md): An account was 
 
 For 4634(S): An account was logged off.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If a particular **Logon Type** should not be used by a particular account (for example if **Logon Type** 4-Batch or 5-Service is used by a member of a domain administrative group), monitor this event for such actions.
 

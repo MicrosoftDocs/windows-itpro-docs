@@ -121,7 +121,7 @@ For computer accounts, this event generates only on domain controllers.
 
 For 4781(S): The name of an account was changed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have high-value user or computer accounts (or local user accounts) for which you need to monitor each change to the accounts, monitor this event with the **“Target Account\\Security ID”** that corresponds to the high-value accounts.
 

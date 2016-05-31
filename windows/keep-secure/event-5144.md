@@ -98,7 +98,7 @@ This event generates every time a network share object is deleted.
 
 For 5144(S): A network share object was deleted.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have critical network shares for which you need to monitor all changes (especially, the deletion of that share), monitor for specific “**Share Information\\Share Name”.**
 

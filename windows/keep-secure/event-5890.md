@@ -151,7 +151,7 @@ For some reason this event belongs to [Audit System Integrity](event-5890.md) su
 
 For 5890(S): An object was added to the COM+ Catalog.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you need to monitor for creation of new COM+ objects within specific COM+ collection, monitor all [5890](event-5890.md) events with the corresponding **COM+ Catalog Collection** field value.
 

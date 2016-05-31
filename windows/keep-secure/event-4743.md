@@ -112,7 +112,7 @@ This event generates only on domain controllers.
 
 For 4743(S): A computer account was deleted.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have critical domain computer accounts (database servers, domain controllers, administration workstations, and so on) for which you need to monitor each action (especially deletion), monitor this event with the **“Target Computer\\Security ID”** or “**Target Computer\\Account Name**” that corresponds to the high-value account or accounts.
 

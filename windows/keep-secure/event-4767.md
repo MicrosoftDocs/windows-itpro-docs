@@ -111,7 +111,7 @@ For user accounts, this event generates on domain controllers, member servers, a
 
 For 4767(S): A user account was unlocked.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   We recommend monitoring all [4767](event-4767.md) events for local accounts.
 

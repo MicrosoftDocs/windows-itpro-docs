@@ -151,7 +151,7 @@ For some reason this event belongs to [Audit System Integrity](event-5890.md) su
 
 For 5889(S): An object was deleted from the COM+ Catalog.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a specific COM+ object for which you need to monitor all modifications (especially delete operations), monitor all [5889](event-5889.md) events with the corresponding **Object Name**.
 

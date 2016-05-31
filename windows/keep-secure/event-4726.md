@@ -116,7 +116,7 @@ This event generates on domain controllers, member servers, and workstations.
 
 For 4726(S): A user account was deleted.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a high-value domain or local account for which you need to monitor every change (or deletion), monitor all [4726](event-4726.md) events with the **“Target Account\\Security ID”** that corresponds to the account.
 

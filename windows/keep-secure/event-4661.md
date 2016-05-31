@@ -25,7 +25,7 @@ This event indicates that a handle was requested for either an Active Directory 
 
 If access was declined, then Failure event is generated.
 
-This event generates only if Success auditing is enabled for the [Audit Handle Manipulation](#_Audit_Handle_Manipulation) subcategory.
+This event generates only if Success auditing is enabled for the [Audit Handle Manipulation](audit-handle-manipulation.md) subcategory.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -204,7 +204,7 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
 | SeUndockPrivilege               | Remove computer from docking station                           | Required to undock a laptop.<br>With this privilege, the user can undock a portable computer from its docking station without logging on.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | SeUnsolicitedInputPrivilege     | Not applicable                                                 | Required to read unsolicited input from a [*terminal*](https://msdn.microsoft.com/en-us/library/windows/desktop/ms721627(v=vs.85).aspx#_security_terminal_gly) device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
--   **Properties** \[Type = UnicodeString\]: depends on **Object Type**. This field can be empty or contain the list of the object properties that were accessed. See more detailed information in “[4661](event-4661.md): A handle to an object was requested” from [Audit SAM](#_Audit_SAM) subcategory.
+-   **Properties** \[Type = UnicodeString\]: depends on **Object Type**. This field can be empty or contain the list of the object properties that were accessed. See more detailed information in “[4661](event-4661.md): A handle to an object was requested” from [Audit SAM](audit-sam.md) subcategory.
 
 -   **Restricted SID Count** \[Type = UInt32\]: Number of [restricted SIDs](https://msdn.microsoft.com/en-us/library/windows/desktop/aa446583(v=vs.85).aspx) in the token. Applicable to only specific **Object Types**.
 
@@ -212,7 +212,7 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
 
 For 4661(S, F): A handle to an object was requested.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   You can get almost the same information from “[4662](event-4662.md): An operation was performed on an object.” There are no additional recommendations for this event in this document.
 

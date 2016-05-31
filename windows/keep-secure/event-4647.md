@@ -96,5 +96,5 @@ It may be positively correlated with a “[4624](event-4624.md): An account was 
 
 For 4647(S): User initiated logoff.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 

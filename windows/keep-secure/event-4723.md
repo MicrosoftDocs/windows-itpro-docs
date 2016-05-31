@@ -124,7 +124,7 @@ Typically you will see 4723 events with the same **Subject\\Security ID** and **
 
 For 4723(S, F): An attempt was made to change an account's password.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](#GeneralRecommendations).
+> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have a high-value domain or local user account for which you need to monitor every password change attempt, monitor all [4723](event-4723.md) events with the **“Target Account\\Security ID”** that corresponds to the account.
 
