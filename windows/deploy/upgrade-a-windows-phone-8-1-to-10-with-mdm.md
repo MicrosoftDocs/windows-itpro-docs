@@ -1,4 +1,4 @@
-**How to enable a Windows Phone 8.1 upgrade to Windows 10 Mobile in an MDM environment **
+**Enable a Windows Phone 8.1 upgrade to Windows 10 Mobile in an MDM environment **
 
 Summary
 =======
