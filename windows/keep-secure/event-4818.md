@@ -133,7 +133,9 @@ This event generates when Dynamic Access Control Proposed [Central Access Policy
 -   **Access Reasons** \[Type = UnicodeString\]: the list of access check results for Current Access Policy. The format of the result is:<br><br>
 REQUESTED\_ACCESS: RESULT ACE\_WHICH\_PROVEDED\_OR\_DENIED\_ACCESS.
 
-The possible REQUESTED\_ACCESS values are listed in the table below:
+The possible REQUESTED\_ACCESS values are listed in the table below.
+
+## Table of file access codes
 
 | Access                                                | Hexadecimal Value  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
