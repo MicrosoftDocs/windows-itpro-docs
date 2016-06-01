@@ -26,10 +26,10 @@ PowerShell cmdlets are most useful in Windows Server environments where that don
 PowerShell is typically installed under the folder _%SystemRoot%\system32\WindowsPowerShell_.
 
 
-**To use Windows Defender PowerShell cmdlets**
+**Use Windows Defender PowerShell cmdlets**
 
 1. Click **Start**, type **powershell**, and press **Enter**.
-2. Click **Windows PowerShell** to open the shell. 
+2. Click **Windows PowerShell** to open the interface. 
     > **Note:**&nbsp;&nbsp;You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 3. Enter the command and parameters.
 
@@ -40,4 +40,4 @@ Get-Help <cmdlet> -Online
 ```
 Omit the `-online` parameter to get locally cached help.
 
-For a list of the cmdlets and their functions and available parameters, see the [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx).
+For a list of the cmdlets and their functions and available parameters, see the [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) topic.
