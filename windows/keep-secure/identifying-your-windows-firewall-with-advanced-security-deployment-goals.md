@@ -6,7 +6,6 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-
 author: brianlic-msft
 ---
 
@@ -57,7 +56,5 @@ The following table lists the three main tasks for articulating, refining, and s
 </tr>
 </tbody>
 </table>
-
- 
 
 **Next:**  [Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md)
