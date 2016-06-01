@@ -137,6 +137,8 @@ This event generates every time network share object (file or folder) was access
 
 -   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**.
 
+## Table of file access codes
+
 | <span id="File_access_codes" class="anchor"></span>Access | Hexadecimal Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ReadData (or ListDirectory)                               | 0x1               | **ReadData -** For a file object, the right to read the corresponding file data. For a directory object, the right to read the corresponding directory data.<br>**ListDirectory -** For a directory, the right to list the contents of the directory.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -161,7 +163,7 @@ This event generates every time network share object (file or folder) was access
 
 REQUESTED\_ACCESS: RESULT ACE\_WHICH\_ ALLOWED\_OR\_DENIED\_ACCESS.
 
--   REQUESTED\_ACCESS – the name of requested access (see “Table 13. File access codes.”).
+-   REQUESTED\_ACCESS – the name of requested access. See [Table of file access codes](#table-of-file-access-codes), earlier in this topic.
 
 -   RESULT:
 
