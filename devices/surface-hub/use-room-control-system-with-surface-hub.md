@@ -185,7 +185,7 @@ In Replacement PC mode, the power states are only Ready and Off and only change 
 </tbody>
 </table>
 
-For a control device, anything other than 5 / Ready should be considered off. 
+For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and reponses. 
 
 <table>
 <colgroup>
@@ -203,14 +203,10 @@ For a control device, anything other than 5 / Ready should be considered off.
 <tbody>
 <tr class="odd">
 <td align="left"><p>PowerOn</p></td>
-<td align="left"><p>Device turns on (display + PC).</p></td>
-<td align="left"><p>Power=0</p></td>
+<td align="left"><p>Device turns on (display + PC).</p><p>PC service notifies SMC that the PC is ready.</p></td>
+<td align="left"><p>Power=0</p><p>Power=5</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p>PowerOn</p></td>
-<td align="left"><p>PC service notifies SMC that the PC is ready.</p></td>
-<td align="left"><p>Power=5</p></td>
-</tr>
+
 <tr class="even">
 <td align="left"><p>PowerOff</p></td>
 <td align="left"><p>Device transitions to ambient state (PC on, display dim).</p></td>
