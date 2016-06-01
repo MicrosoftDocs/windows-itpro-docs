@@ -130,11 +130,10 @@ This event generates when Dynamic Access Control Proposed [Central Access Policy
 
 **Current Central Access Policy results:**
 
--   **Access Reasons** \[Type = UnicodeString\]: the list of access check results for Current Access Policy. The format of the result is:
+-   **Access Reasons** \[Type = UnicodeString\]: the list of access check results for Current Access Policy. The format of the result is:<br><br>
+REQUESTED\_ACCESS: RESULT ACE\_WHICH\_PROVEDED\_OR\_DENIED\_ACCESS.
 
-> REQUSTED\_ACCESS: RESULT ACE\_WHICH\_PROVEDED\_OR\_DENIED\_ACCESS.
-
--   REQUSTED\_ACCESS – the name of requested access. See the possible REQUSTED\_ACCESS values in the table below:
+The possible REQUESTED\_ACCESS values are listed in the table below:
 
 | Access                                                | Hexadecimal Value  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -176,11 +175,11 @@ This event generates when Dynamic Access Control Proposed [Central Access Policy
 
 **Proposed Central Access Policy results that differ from the current Central Access Policy results:**
 
--   **Access Reasons** \[Type = UnicodeString\]: the list of access check results for Proposed Central Access Policy. Here you will see only ***denied*** requests. The format of the result is:
+-   **Access Reasons** \[Type = UnicodeString\]: the list of access check results for Proposed Central Access Policy. Here you will see only ***denied*** requests. The format of the result is:<br><br>
 
-> REQUSTED\_ACCESS: NOT Granted by RULE\_NAME Rule.
+REQUESTED\_ACCESS: NOT Granted by RULE\_NAME Rule.
 
--   REQUSTED\_ACCESS – the name of requested access. See the possible REQUSTED\_ACCESS values in the table below:
+The possible REQUESTED\_ACCESS values are listed in the table below:
 
 | Access                                                | Hexadecimal Value  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
