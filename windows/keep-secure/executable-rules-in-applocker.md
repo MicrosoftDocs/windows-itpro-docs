@@ -2,7 +2,7 @@
 title: Executable rules in AppLocker (Windows 10)
 description: This topic describes the file formats and available default rules for the executable rule collection.
 ms.assetid: 65e62f90-6caa-48f8-836a-91f8ac9018ee
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

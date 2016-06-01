@@ -2,7 +2,7 @@
 title: Select the types of rules to create (Windows 10)
 description: This topic lists resources you can use when selecting your application control policy rules by using AppLocker.
 ms.assetid: 14751169-0ed1-47cc-822c-8c01a7477784
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

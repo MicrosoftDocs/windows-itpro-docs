@@ -47,7 +47,7 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 <td align="left"><p>Use this article to make informed decisions about how you can configure Windows telemetry in your organization.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md)</p></td>
+<td align="left"><p>[Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)</p></td>
 <td align="left"><p>Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro.</p></td>
 </tr>
 <tr class="odd">

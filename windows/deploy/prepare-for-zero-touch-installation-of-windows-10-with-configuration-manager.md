@@ -2,8 +2,8 @@
 title: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager (Windows 10)
 description: This topic will walk you through the process of integrating Microsoft System Center 2012 R2 Configuration Manager SP1 with Microsoft Deployment Toolkit (MDT) 2013 Update 2, as well as the other preparations needed to deploying Windows 10 via Zero Touch Installation. Additional preparations include the installation of hotfixes as well as activities that speed up the Pre-Boot Execution Environment (PXE).
 ms.assetid: 06e3a221-31ef-47a5-b4da-3b927cb50d08
-keywords: ["install, configure, deploy, deployment"]
-ms.prod: W10
+keywords: install, configure, deploy, deployment
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus

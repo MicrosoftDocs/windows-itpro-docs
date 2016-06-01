@@ -2,7 +2,7 @@
 title: Scenario 1 Online Activation (Windows 10)
 description: Scenario 1 Online Activation
 ms.assetid: 94dba40e-383a-41e4-b74b-9e884facdfd3
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

@@ -2,7 +2,7 @@
 title: Understand AppLocker enforcement settings (Windows 10)
 description: This topic describes the AppLocker enforcement settings for rule collections.
 ms.assetid: 48773007-a343-40bf-8961-b3ff0a450d7e
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

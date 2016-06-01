@@ -2,7 +2,7 @@
 title: Enable the DLL rule collection (Windows 10)
 description: This topic for IT professionals describes the steps to enable the DLL rule collection feature for AppLocker.
 ms.assetid: 88ef9561-6eb2-491a-803a-b8cdbfebae27
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

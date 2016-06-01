@@ -4,9 +4,10 @@ description: IT professionals can run a scan using the command line in Windows D
 keywords: scan, command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security
 author: mjcaparas
 ---
 

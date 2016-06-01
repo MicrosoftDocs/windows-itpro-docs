@@ -2,9 +2,10 @@
 title: Change history for Keep Windows 10 secure (Windows 10)
 description: This topic lists new and updated topics in the Keep Windows 10 secure documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: E50EC5E6-71AA-4FF1-8356-574CFDB8079B
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
