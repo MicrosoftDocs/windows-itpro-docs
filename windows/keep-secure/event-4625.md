@@ -273,33 +273,17 @@ For 4625(F): An account failed to log on.
 
 -   Monitor for all events with the fields and values in the following table:
 
-| **Field**                           | Value to monitor for                                                                                                                                                            |
-|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0XC000005E – “There are currently no logon servers available to service the logon request.”                                                                                     
-                                       This is typically not a security issue but it can be an infrastructure or availability issue.                                                                                    |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0xC0000064 – “User logon with misspelled or bad user account”.                                                                                                                  
-                                       Especially if you get a number of these in a row, it can be a sign of user enumeration attack.                                                                                   |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0xC000006A – “User logon with misspelled or bad password” for critical accounts or service accounts.                                                                            
-                                       Especially watch for a number of such events in a row.                                                                                                                           |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0XC000006D – “This is either due to a bad username or authentication information” for critical accounts or service accounts.                                                    
-                                       Especially watch for a number of such events in a row.                                                                                                                           |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0xC000006F – “User logon outside authorized hours”.                                                                                                                             |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0xC0000070 – “User logon from unauthorized workstation”.                                                                                                                        |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0xC0000072 – “User logon to account disabled by administrator”.                                                                                                                 |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0XC000015B – “The user has not been granted the requested logon type (aka logon right) at this machine”.                                                                        |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0XC0000192 – “An attempt was made to logon, but the Netlogon service was not started”.                                                                                          
-                                       This is typically not a security issue but it can be an infrastructure or availability issue.                                                                                    |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0xC0000193 – “User logon with expired account”.                                                                                                                                 |
-| **Failure Information\\Status** or  
- **Failure Information\\Sub Status**  | 0XC0000413 – “Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine”. |
+| **Field**                                                                        | Value to monitor for                                                                                                                                                                                |
+|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000005E – “There are currently no logon servers available to service the logon request.” <br>This is typically not a security issue but it can be an infrastructure or availability issue. |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000064 – “User logon with misspelled or bad user account”. <br>Especially if you get a number of these in a row, it can be a sign of user enumeration attack.                             |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006A – “User logon with misspelled or bad password” for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.                               |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000006D – “This is either due to a bad username or authentication information” for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.       |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006F – “User logon outside authorized hours”.                                                                                                                                                 |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000070 – “User logon from unauthorized workstation”.                                                                                                                                            |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000072 – “User logon to account disabled by administrator”.                                                                                                                                     |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000015B – “The user has not been granted the requested logon type (aka logon right) at this machine”.                                                                                            |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000192 – “An attempt was made to logon, but the Netlogon service was not started”. <br>This is typically not a security issue but it can be an infrastructure or availability issue.      |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000193 – “User logon with expired account”.                                                                                                                                                     |
+| **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000413 – “Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine”.                     |
 
