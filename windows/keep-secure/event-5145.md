@@ -157,11 +157,11 @@ This event generates every time network share object (file or folder) was access
 
 > <span id="_Ref433878809" class="anchor"></span>Table 13. File access codes.
 
-**Access Check Results** \[Type = UnicodeString\]: the list of access check results. The format of the result is:
+**Access Check Results** \[Type = UnicodeString\]: the list of access check results. The format of the result is:<br><br>
 
-REQUSTED\_ACCESS: RESULT ACE\_WHICH\_ ALLOWED\_OR\_DENIED\_ACCESS.
+REQUESTED\_ACCESS: RESULT ACE\_WHICH\_ ALLOWED\_OR\_DENIED\_ACCESS.
 
--   REQUSTED\_ACCESS – the name of requested access (see “Table 13. File access codes.”).
+-   REQUESTED\_ACCESS – the name of requested access (see “Table 13. File access codes.”).
 
 -   RESULT:
 
