@@ -25,7 +25,7 @@
 ### [General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
 #### [Enlightened apps for use with enterprise data protection (EDP)](enlightened-microsoft-apps-and-edp.md)
 #### [Testing scenarios for enterprise data protection (EDP)](testing-scenarios-for-edp.md)
-## [Use security baselines in your organization](security-baselines.md)
+## [Windows security baselines](security-baselines.md)
 ### [Windows 10 security baselines](windows-10-security-baselines.md)
 ### [Windows Server security baselines](windows-server-security-baselines.md)
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)

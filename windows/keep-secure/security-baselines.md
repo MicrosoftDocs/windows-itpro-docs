@@ -1,5 +1,5 @@
 ---
-title: Windows Security Baselines (Windows 10)
+title: Windows security baselines (Windows 10)
 description: Use this topic to learn what security baselines are and how you can use them in your organization to help keep your devices secure.
 ms.prod: W10
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Windows Security Baselines
+# Windows security baselines
 
 Microsoft is dedicated to provide our customers with a secure operating system, such as Windows 10 and Windows Server, as well as secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control of your environments by providing various configuration capabilities. Even though Windows and Windows Server are designed to be secure out-of-the-box, a large number of organizations still want more granular control of their security configurations. To navigate these large number fo controls, organizations need guidance for configuring various security features. Microsoft provides this guidance in the form of security baselines.
 
