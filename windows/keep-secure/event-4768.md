@@ -285,11 +285,11 @@ The most common values:
 
 **Certificate Information:**
 
-> **Certificate Issuer Name** \[Type = UnicodeString\]**:** the name of the Certification Authority that issued the smart card certificate. Populated in **Issued by** field in certificate.
->
-> **Certificate Serial Number** \[Type = UnicodeString\]**:** smart card certificate’s serial number. Can be found in **Serial number** field in the certificate.
->
-> **Certificate Thumbprint** \[Type = UnicodeString\]**:** smart card certificate’s thumbprint. Can be found in **Thumbprint** field in the certificate.
+- **Certificate Issuer Name** \[Type = UnicodeString\]**:** the name of the Certification Authority that issued the smart card certificate. Populated in **Issued by** field in certificate.
+
+- **Certificate Serial Number** \[Type = UnicodeString\]**:** smart card certificate’s serial number. Can be found in **Serial number** field in the certificate.
+
+- **Certificate Thumbprint** \[Type = UnicodeString\]**:** smart card certificate’s thumbprint. Can be found in **Thumbprint** field in the certificate.
 
 ## Security Monitoring Recommendations
 
