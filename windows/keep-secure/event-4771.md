@@ -188,11 +188,11 @@ The most common values:
 
 **Certificate Information:**
 
-> **Certificate Issuer Name** \[Type = UnicodeString\]**:** the name of Certification Authority which issued smart card certificate. Populated in **Issued by** field in certificate. Always empty for [4771](event-4771.md) events.
->
-> **Certificate Serial Number** \[Type = UnicodeString\]**:** smart card certificate’s serial number. Can be found in **Serial number** field in the certificate. Always empty for [4771](event-4771.md) events.
->
-> **Certificate Thumbprint** \[Type = UnicodeString\]**:** smart card certificate’s thumbprint. Can be found in **Thumbprint** field in the certificate. Always empty for [4771](event-4771.md) events.
+- **Certificate Issuer Name** \[Type = UnicodeString\]**:** the name of Certification Authority which issued smart card certificate. Populated in **Issued by** field in certificate. Always empty for [4771](event-4771.md) events.
+
+- **Certificate Serial Number** \[Type = UnicodeString\]**:** smart card certificate’s serial number. Can be found in **Serial number** field in the certificate. Always empty for [4771](event-4771.md) events.
+
+- **Certificate Thumbprint** \[Type = UnicodeString\]**:** smart card certificate’s thumbprint. Can be found in **Thumbprint** field in the certificate. Always empty for [4771](event-4771.md) events.
 
 ## Security Monitoring Recommendations
 
