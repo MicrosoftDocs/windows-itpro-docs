@@ -1,5 +1,4 @@
 # [Deploy Windows 10](index.md)
-## [Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 ### [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
@@ -38,6 +37,7 @@
 ## [Windows 10 edition upgrade](windows-10-edition-upgrades.md)
 ## [Deploy Windows To Go in your organization](deploy-windows-to-go.md)
 ## [Update Windows 10 images with provisioning packages](update-windows-10-images-with-provisioning-packages.md)
+## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade-windows-phone-8-1-to-10.md)
 ## [Sideload apps in Windows 10](sideload-apps-in-windows-10.md)
 ## [Volume Activation [client]](volume-activation-windows-10.md)
 ### [Plan for volume activation [client]](plan-for-volume-activation-client.md)
@@ -133,4 +133,4 @@
 ###### [Recognized Environment Variables](usmt-recognized-environment-variables.md)
 ###### [XML Elements Library](usmt-xml-elements-library.md)
 ##### [Offline Migration Reference](offline-migration-reference.md)
-
+## [Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md)

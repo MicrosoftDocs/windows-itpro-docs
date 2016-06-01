@@ -13,14 +13,9 @@ Room control systems can be used with your Microsoft Surface Hub.
 
 Using a room control system with your Surface Hub involves connecting room control hardware to the Surface Hub, usually through the RJ11 serial port on the bottom of the Surface Hub.
 
-## Debugging
+## Terminal settings
 
-
-You can use the info in this section for debugging scenarios. You shouldn't need it for a typical installation.
-
-### Terminal settings
-
-To connect to a room control system control panel, you don't need to connect to the Surface Hub, or to configure any terminal settings. For debugging purposes, if you want to connect a PC or laptop to your Surface Hub and send commands from the Surface Hub, you can use a terminal emulator program like Tera Term or PuTTY. These are the terminal settings you'll need:
+To connect to a room control system control panel, you don't need to configure any terminal settings on the Surface Hub. If you want to connect a PC or laptop to your Surface Hub and send serial commands from the Surface Hub, you can use a terminal emulator program like Tera Term or PuTTY. 
 
 <table>
 <colgroup>
@@ -54,20 +49,24 @@ To connect to a room control system control panel, you don't need to connect to 
 <td align="left"><p>Flow control</p></td>
 <td align="left"><p>none</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>Line feed</p></td>
+<td align="left"><p>every carriage return</p></td>
+</tr>
 </tbody>
 </table>
 
  
 
-### Wiring diagram
+## Wiring diagram
 
-You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial port to a room control system. This is the recommended method.
+You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial port to a room control system. This is the recommended method. You can also use an RJ-11 4-conductor cable, but we do not recommend this method.
 
-You can also use an RJ-11 4-conductor cable, but we do not recommend this method. You'll need to convert pin numbers to make sure it's wired correctly. The following diagram shows how to convert the pin numbers.
+This diagram shows the correct pinout usedfor an RJ-11 (6P6C) to DB9 cable.
 
-![image showing the wiring diagram. ](images/roomcontrolwiring.png)
+![image showing the wiring diagram.](images/room-control-wiring-diagram.png)
 
-### Command sets
+## Command sets
 
 Room control systems use common meeting-room scenarios for commands. Commands originate from the room control system, and are communicated over a serial connection to a Surface Hub. Commands are ASCII based, and the Surface Hub will acknowledge when state changes occur.
 
@@ -106,7 +105,7 @@ The following command modifiers are available. Commands terminate with a new lin
 
  
 
-### Power
+## Power
 
 Surface Hub can be in one of these power states.
 
@@ -157,9 +156,72 @@ Surface Hub can be in one of these power states.
 </tbody>
 </table>
 
- 
+In Replacement PC mode, the power states are only Ready and Off and only change the display. The management port can't be used to power on the replacement PC. 
 
-### Brightness
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">State</th>
+<th align="left">Energy Star state</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>0</p></td>
+<td align="left"><p>S5</p></td>
+<td align="left"><p>Off</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>5</p></td>
+<td align="left"><p>50</p></td>
+<td align="left"><p>Ready</p></td>
+</tr>
+</tbody>
+</table>
+
+For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and reponses. 
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">State change</th>
+<th align="left">Response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>PowerOn</p></td>
+<td align="left"><p>Device turns on (display + PC).</p><p>PC service notifies SMC that the PC is ready.</p></td>
+<td align="left"><p>Power=0</p><p>Power=5</p></td>
+</tr>
+
+<tr class="even">
+<td align="left"><p>PowerOff</p></td>
+<td align="left"><p>Device transitions to ambient state (PC on, display dim).</p></td>
+<td align="left"><p>Power=0</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Power?</p></td>
+<td align="left"><p>SMC reports the last-known power state.</p></td>
+<td align="left"><p>Power=<#></p></td>
+</tr>
+</tbody>
+</table>
+
+
+## Brightness
 
 The current brightness level is a range from 0 to 100.
 
@@ -191,18 +253,10 @@ Changes to brightness levels can be sent by a room control system, or other syst
 <p>PC service notifies SMC of new brightness level.</p></td>
 <td align="left"><p>Brightness = 50</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p>Brightness?</p></td>
-<td align="left"><p>SMC sends a message over the control channel to request brightness.</p>
-<p>PC service notifies SMC of new brightness level.</p></td>
-<td align="left"><p>Brightness = 50</p></td>
-</tr>
 </tbody>
-</table>
+</table> 
 
- 
-
-### Volume
+## Volume
 
 The current volume level is a range from 0 to 100.
 
@@ -234,47 +288,14 @@ Changes to volume levels can be sent by a room control system, or other system.
 <p>PC service notifies SMC of new volume level.</p></td>
 <td align="left"><p>Volume = 50</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p>Volume?</p></td>
-<td align="left"><p>SMC sends a message over the control channel to request volume.</p>
-<p>PC service notifies SMC of new volume level.</p></td>
-<td align="left"><p>Volume = 50</p></td>
-</tr>
 </tbody>
 </table>
 
  
 
-### Mute for audio and microphone
+## Mute for audio
 
-Audio and microphone can be muted.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">State</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0</p></td>
-<td align="left"><p>Source is not muted.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1</p></td>
-<td align="left"><p>Source is muted.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-Changes to microphone or audio can be sent by a room control system, or other system.
+Audio can be muted.
 
 <table>
 <colgroup>
@@ -294,32 +315,14 @@ Changes to microphone or audio can be sent by a room control system, or other sy
 <td align="left"><p>AudioMute+</p></td>
 <td align="left"><p>SMC sends the audio mute command.</p>
 <p>PC service notifies SMC that audio is muted.</p></td>
-<td align="left"><p>AudioMute=&lt;#&gt;</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>MicMute+</p></td>
-<td align="left"><p>SMC sends the microphone mute command.</p>
-<p>PC service notifies SMC that microphone is muted.</p></td>
-<td align="left"><p>MicMute=&lt;#&gt;</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>AudioMute?</p></td>
-<td align="left"><p>SMC queries PC service for the current audio state.</p>
-<p>PC service notifies SMC that audio is muted.</p></td>
-<td align="left"><p>AudioMute=&lt;#&gt;</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>MicMute?</p></td>
-<td align="left"><p>SMC queries PC service for the current microphone state.</p>
-<p>PC service notifies SMC that the microphone is muted.</p></td>
-<td align="left"><p>MicMute=&lt;#&gt;</p></td>
+<td align="left"><p>none</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-### Video source
+## Video source
 
 Several display sources can be used.
 
@@ -351,10 +354,6 @@ Several display sources can be used.
 <td align="left"><p>3</p></td>
 <td align="left"><p>VGA</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p>4</p></td>
-<td align="left"><p>Wireless</p></td>
-</tr>
 </tbody>
 </table>
 
@@ -377,7 +376,7 @@ Changes to display source can be sent by a room control system, or other system.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Source=&lt;#&gt;</p></td>
+<td align="left"><p>Source=#</p></td>
 <td align="left"><p>SMC changes to the desired source.</p>
 <p>PC service notifies SMC that the display source has switched.</p></td>
 <td align="left"><p>Source=&lt;#&gt;</p></td>
@@ -389,7 +388,7 @@ Changes to display source can be sent by a room control system, or other system.
 <td align="left"><p>Source=&lt;#&gt;</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Source+</p></td>
+<td align="left"><p>Source-</p></td>
 <td align="left"><p>SMC cycles to the previous active input source.</p>
 <p>PC service notifies SMC of the current input source.</p></td>
 <td align="left"><p>Source=&lt;#&gt;</p></td>
@@ -403,101 +402,7 @@ Changes to display source can be sent by a room control system, or other system.
 </tbody>
 </table>
 
- 
-
-### Starting apps
-
-Surface Hub keyboard supports starting apps with special keys. Room control systems can invoke those keys through the management port. There is no expected response for these commands.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">State</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0</p></td>
-<td align="left"><p>Start large-screen experience (LSX)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1</p></td>
-<td align="left"><p>Start LSX custom app 1</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>2</p></td>
-<td align="left"><p>Start LSX custom app 2</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>3</p></td>
-<td align="left"><p>Start LSX custom app 3</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-Changes to display source can be sent by a room control system, or other system.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">State change</th>
-<th align="left">Response</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>AppKey=&lt;#&gt;</p></td>
-<td align="left"><p>Send a command to</p>
-<p>PC service notifies SMC that the display source has switched.</p></td>
-<td align="left"><p>Source=&lt;#&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### I'm done
-
-People will be able to start the I'm done feature on a Surface Hub from a room control system. I'm done removes any work that was displayed on the Surface Hub before ending the meeting. No information or files are saved on Surface Hub.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">State change</th>
-<th align="left">Response</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>I'm done</p></td>
-<td align="left"><p>Start I'm done activity on Surface Hub.</p></td>
-<td align="left"><p>none</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### Errors
+## Errors
 
 Errors are returned following the format in this table.
 
