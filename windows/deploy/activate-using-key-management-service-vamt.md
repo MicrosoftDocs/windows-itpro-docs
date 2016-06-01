@@ -3,7 +3,7 @@ title: Activate using Key Management Service (Windows 10)
 ms.assetid: f2417bfe-7d25-4e82-bc07-de316caa8dac
 description: 
 keywords: vamt, volume activation, activation, windows activation
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
@@ -29,6 +29,8 @@ There are three possible scenarios for volume activation of Windows 10 or Windo
 -   Host KMS on a computer running Windows 10
 -   Host KMS on a computer running Windows Server 2012 R2
 -   Host KMS on a computer running an earlier version of Windows
+
+Check out [Windows 10 Volume Activation Tips](https://blogs.technet.microsoft.com/askcore/2015/09/15/windows-10-volume-activation-tips/).
 
 ## Key Management Service in Windows 10
 

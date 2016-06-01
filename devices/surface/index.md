@@ -2,8 +2,9 @@
 title: Surface (Surface)
 description: .
 ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
+ms.pagetype: surface, devices
 ms.sitesec: library
 author: heatherpoulsen
 ---
@@ -34,7 +35,7 @@ For more information on planning for, deploying, and managing Surface devices in
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Advanced UEFI security features for Surface](advanced-uefi-security-features-for-surface.md)</p></td>
+<td><p>[Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)</p></td>
 <td><p>Find out how to install and configure the v3.11.760.0 UEFI update to enable additional security options for Surface Pro 3 devices.</p></td>
 </tr>
 <tr class="even">

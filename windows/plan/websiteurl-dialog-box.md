@@ -2,8 +2,9 @@
 title: WebsiteURL Dialog Box (Windows 10)
 description: In Application Compatibility Manager (ACM), the websiteURL dialog box shows information about the selected website.
 ms.assetid: 0dad26e1-4bba-4fef-b160-3fa1f4325da8
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

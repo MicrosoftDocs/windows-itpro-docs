@@ -4,7 +4,7 @@ description: This topic is designed to teach you how to use the MDT database to 
 ms.assetid: 8956ab54-90ba-45d3-a384-4fdec72c4d46
 ms.pagetype: mdt
 keywords: database, permissions, settings, configure, deploy
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus

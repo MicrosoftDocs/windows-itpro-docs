@@ -1,6 +1,7 @@
 ---
 title: Deploy Windows 10 in a school (Windows 10)
 description: Learn how to integrate your school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD). Deploy Windows 10 and apps to new devices or upgrade existing devices to Windows 10. Manage faculty, students, and devices by using Microsoft Intune and Group Policy.
+redirect_url: https://technet.microsoft.com/edu/windows/deploy-windows-10-in-a-school
 keywords: configure, tools, device, school
 ms.prod: w10
 ms.mktglfcycl: plan

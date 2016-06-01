@@ -2,33 +2,48 @@
 title: Configure Windows Defender in Windows 10 (Windows 10)
 description: IT professionals can configure definition updates and cloud-based protection in Windows Defender in Windows 10 through Microsoft Active Directory and Windows Server Update Services (WSUS).
 ms.assetid: 22649663-AC7A-40D8-B1F7-5CAD9E49653D
-ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security
 author: jasesso
 ---
+
 # Configure Windows Defender in Windows 10
+
 **Applies to**
 -   Windows 10
+
 IT professionals can configure definition updates and cloud-based protection in Windows Defender in Windows 10 through Microsoft Active Directory and Windows Server Update Services (WSUS).
+
 ## Configure definition updates
+
 It is important to update definitions regularly to ensure that your endpoints are protected. Definition updates can be configured to suit the requirements of your organization.
+
 Windows Defender supports the same updating options (such as using multiple definition sources) as other Microsoft endpoint protection products; for more information, see [Configuring Definition Updates](https://technet.microsoft.com/library/gg412502.aspx).
+
 When you configure multiple definition sources in Windows Defender, you can configure the fallback order using the following values through *Group Policy* settings:
+
 -   InternalDefinitionUpdateServer - WSUS
 -   MicrosoftUpdateServer - Microsoft Update
 -   MMPC - [Microsoft Malware Protection Center definitions page](http://www.microsoft.com/security/portal/definitions/adl.aspx)
 -   FileShares - file share
+
 Read about deploying administrative template files for Windows Defender in the article [Description of the Windows Defender Group Policy administrative template settings](https://support.microsoft.com/kb/927367).
+
 You can also manage your Windows Defender update configuration settings through System Center Configuration Manager. See [How to Configure Definition Updates for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/jj822983.aspx) for details.
+
 ## Definition update logic
+
 You can update Windows Defender definitions in four ways depending on your business requirements:
+
 -   WSUS, the managed server. You can manage the distribution of updates that are released through Microsoft Update to computers in your enterprise environment; read more on the [Windows Server Update Services](https://technet.microsoft.com/windowsserver/bb332157.aspx) website.
 -   Microsoft Update, the unmanaged server. You can use this method to get regular updates from Microsoft Update.
 -   The [Microsoft Malware Protection Center definitions page](http://www.microsoft.com/security/portal/definitions/adl.aspx), as an alternate download location. You can use this method if you want to download the latest definitions.
 -   File share, where the definition package is downloaded. You can retrieve definition updates from a file share. The file share must be provisioned on a regular basis with the update files.
+
 ## Update Windows Defender definitions through Active Directory and WSUS
+
 This section details how to update Windows Defender definitions for Windows 10 endpoints through Active Directory and WSUS.
 <table>
 <colgroup>
@@ -109,50 +124,78 @@ This section details how to update Windows Defender definitions for Windows 10 
 </table>
  
 ## Manage cloud-based protection
+
 Windows Defender offers improved cloud-based protection and threat intelligence for endpoint protection clients using the Microsoft Active Protection Service. Read more about the Microsoft Active Protection Service community in [Join the Microsoft Active Protection Service community](http://windows.microsoft.com/windows-8/join-maps-community).
+
 You can enable or disable the Microsoft Active Protection Service using *Group Policy* settings and administrative template files.
+
 More information on deploying administrative template files for Windows Defender is available in the article [Description of the Windows Defender Group Policy administrative template settings](https://support.microsoft.com/kb/927367).
+
 The Microsoft Active Protection Service can be configured with the following *Group Policy* settings:
+
 1.  Open the **Group Policy Editor**.
 2.  In the **Local Computer Policy** tree, expand **Computer Configuration**, then **Administrative Templates**, then **Windows Components**, then **Windows Defender**.
 3.  Click on **MAPS**.
 4.  Double-click on **Join Microsoft MAPS**.
 5.  Select your configuration option from the **Join Microsoft MAPS** list.
-    **Note**  Any settings modified on an endpoint will be overridden by the administrator's policy setting.
+
+    >**Note:**  Any settings modified on an endpoint will be overridden by the administrator's policy setting.
      
 Use the Windowsdefender.adm *Group Policy* template file to control the policy settings for Windows Defender in Windows 10:
+
 Policy setting: **Configure Microsoft SpyNet Reporting**
+
 Registry key name: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SpyNet\\SpyNetReporting**
+
 Policy description: **Adjusts membership in Microsoft Active Protection Service**
+
 You can also configure preferences using the following PowerShell parameters:
+
 -   Turn Microsoft Active Protection Service off: *Set-MpPreference -MAPSReporting 0*
 -   Turn Microsoft Active Protection Service on: *Set-MpPreference -MAPSReporting 2*
+
 Read more about this in:
+
 -   [Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
 -   [Defender Cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
-**Note**  Any information that Windows Defender collects is encrypted in transit to our servers, and then stored in secure facilities. Microsoft takes several steps to avoid collecting any information that directly identifies you, such as your name, email address, or account ID.
+
+>**Note:**  Any information that Windows Defender collects is encrypted in transit to our servers, and then stored in secure facilities. Microsoft takes several steps to avoid collecting any information that directly identifies you, such as your name, email address, or account ID.
  
 Read more about how to manage your privacy settings in [Setting your preferences for Windows 10 services](http://windows.microsoft.com/windows-10/services-setting-preferences).
+
 ## Opt-in to Microsoft Update
+
 You can use Microsoft Update to keep definitions on mobile computers running Windows Defender in Windows 10 up to date when they are not connected to the corporate network. If the mobile computer doesn't have a [Windows Server Update Service](https://technet.microsoft.com/windowsserver/bb332157.aspx) (WSUS) connection, the signatures will still come from Microsoft Update. This means that signatures can be pushed down (via Microsoft Update) even if WSUS overrides Windows Update.
+
 You need to opt-in to Microsoft Update on the mobile computer before it can retrieve the definition updates from Microsoft Update.
+
 There are two ways you can opt-in to Microsoft Update in Windows Defender for Windows 10:
+
 1.  Use a VBScript to create a script, then run it on each computer in your network.
 2.  Manually opt-in every computer on your network through the **Settings** menu.
+
 You can create a VBScript and run it on each computer on your network; this is an efficient way to opt-in to Microsoft Update.
+
 **Use a VBScript to opt in to Microsoft Update**
+
 1.  Use the instructions in the MSDN article [Opt-In to Microsoft Update](https://msdn.microsoft.com/library/windows/desktop/aa826676.aspx) to create the VBScript.
 2.  Run the VBScript you created on each computer in your network.
+
 You can manually opt-in each individual computer on your network to receive Microsoft Update.
+
 **Manually opt-in to Microsoft Update**
+
 1.  Open **Windows Update** in **Update & security** settings on the computer you want to opt-in.
 2.  Click **Advanced** options.
 3.  Select the checkbox for **Give me updates for other Microsoft products when I update Windows**.
+
 ## Schedule updates for Microsoft Update
+
 Opting-in to Microsoft Update means that your system administrator can schedule updates to your mobile computer, so that it keeps up-to-date with the latest software versions and security definitions, even when you’re on the road.
+
 For more information on scheduling updates, see [Configure definition updates](https://technet.microsoft.com/library/mt622088.aspx#configure-definition-updates).
+
 ## Related topics
-[Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
-[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
- 
- 
+
+- [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
+- [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)

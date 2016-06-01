@@ -14,8 +14,7 @@ keywords: privacy
 
 Use this article to make informed decisions about how you can configure telemetry in your organization. Telemetry is a term that means different things to different people and organizations. For the purpose of this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to keep Windows devices secure, and to help Microsoft improve the quality of Windows and Microsoft services.
 
-**Note**  
-This article does not apply to System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager because those components use a different telemetry service than Windows and Windows Server.
+>**Note:**  This article does not apply to System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager because those components use a different telemetry service than Windows and Windows Server.
 
 It describes the types of telemetry we gather and the ways you can manage its telemetry. This article also lists some examples of how telemetry can provide you with valuable insights into your enterprise deployments, and how Microsoft uses the data to quickly identify and address issues affecting its customers.
 
@@ -29,7 +28,7 @@ Microsoft is committed to improving customer experiences in a mobile-first and c
 
 Our goal is to leverage the aggregated data to drive changes in the product and ecosystem to improve our customer experiences. We are also partnering with enterprises to provide added value from the telemetry information shared by their devices. Some examples include identifying outdated patches and downloading the latest antimalware signatures to help keep their devices secure, identifying application compatibility issues prior to upgrades, and gaining insights into driver reliability issues affecting other customers.
 
-For Windows 10, we invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows work better for youcr organization.
+For Windows 10, we invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows work better for your organization.
 
 ## How is telemetry data handled by Microsoft?
 
@@ -91,8 +90,7 @@ The levels are cumulative and are illustrated in the following diagram. These le
 
 The Security level gathers only the telemetry info that is required to keep Windows devices, Windows Server, and guests secure with the latest security updates. This level is only available on Windows Server 2016, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and IoT Core editions.
 
-**Note**  
-If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
+> **Note:**  If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
 
 Windows Server Update Services (WSUS) and System Center Configuration Manager functionality is not affected at this level, nor is telemetry data about Windows Server features or System Center gathered.
 
@@ -104,8 +102,7 @@ The data gathered at this level includes:
 
 -   **Malicious Software Removal Tool (MSRT)** The MSRT infection report contains information, including device info and IP address.
 
-    **Note**  
-    You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users. For more info, see Microsoft KB article [891716](http://support.microsoft.com/kb/891716).
+    >**Note:**  You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users. For more info, see Microsoft KB article [891716](http://support.microsoft.com/kb/891716).
 
      
 
@@ -128,7 +125,7 @@ The Basic level gathers a limited set of data that’s critical for understandin
 
 The data gathered at this level includes:
 
--   **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Server 2016 Technical Previewinstances in the ecosystem, including:
+-   **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Server 2016 Technical Preview instances in the ecosystem, including:
 
     -   Device attributes, such as camera resolution and display type
 
@@ -152,7 +149,7 @@ The data gathered at this level includes:
 
 -   **Compatibility data**. Helps provide an understanding about which apps are installed on a device or virtual machine and identifies potential compatibility problems.
 
-    -   **General app data and app data for Internet Explorer add-ons**. Includes a list of apps that are installed on a native or virtualized instance of the OS and whether these apps function correctly after an upgrade.This app data includes the app name, publisher, version, and basic details about which files have been blocked from usage.
+    -   **General app data and app data for Internet Explorer add-ons**. Includes a list of apps that are installed on a native or virtualized instance of the OS and whether these apps function correctly after an upgrade. This app data includes the app name, publisher, version, and basic details about which files have been blocked from usage.
 
     -   **App usage data**. Includes how an app is used, including how long an app is used for, when the app has focus, and when the app is started
 
@@ -168,7 +165,7 @@ The data gathered at this level includes:
 
 ### Enhanced level
 
-The Enhanced level gathers data about how Windows and apps are used and how they perform. This level also includes data from both the **Basic** and **Security** levels. This level helps to improve the user experiencewith the operating system and apps. Data from this level can be abstracted into patterns and trends that can help Microsoft determine future improvements.
+The Enhanced level gathers data about how Windows and apps are used and how they perform. This level also includes data from both the **Basic** and **Security** levels. This level helps to improve the user experience with the operating system and apps. Data from this level can be abstracted into patterns and trends that can help Microsoft determine future improvements.
 
 This is the default level, and the minimum level needed to quickly identify and address Windows, Windows Server, and System Center quality issues.
 
@@ -204,8 +201,7 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 
 We do not recommend that you turn off telemetry in your organization as valuable functionality may be impacted, but we recognize that in some scenarios this may be required. Use the steps in this section to do so for Windows, Windows Server, and System Center.
 
-**Important**  
-These telemetry levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. You should work with your app vendors to understand their telemetry policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses telemetry, see [Overview of Office Telemetry](http://technet.microsoft.com/library/jj863580.aspx).
+>**Important:**  These telemetry levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. You should work with your app vendors to understand their telemetry policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses telemetry, see [Overview of Office Telemetry](http://technet.microsoft.com/library/jj863580.aspx).
 
 You can turn on or turn off System Center telemetry gathering. The default is on and the data gathered at this level represents what is gathered by default when System Center telemetry is turned on. However, setting the operating system telemetry level to **Basic** will turn off System Center telemetry, even if the System Center telemetry switch is turned on.
 
@@ -213,7 +209,7 @@ The lowest telemetry setting level supported through management policies is **Se
 
 ### Configure the operating system telemetry level
 
-You can configure your operating system telemetry settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your telemetry levels through a management policy overrides any devicelevel settings.
+You can configure your operating system telemetry settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your telemetry levels through a management policy overrides any device level settings.
 
 Use the appropriate value in the table below when you configure the management policy.
 
@@ -274,8 +270,7 @@ There are a few more settings that you can turn off that may send telemetry info
 
 -   Turn off **Linguistic Data Collection** in **Settings** &gt; **Privacy**. At telemetry levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
 
-    **Note**  
-    Microsoft do not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
+    >**Note:**  Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
 
      
 
@@ -284,7 +279,7 @@ There are a few more settings that you can turn off that may send telemetry info
 
 ### Drive higher application and driver quality in the ecosystem
 
-Telemetry plays an important role in quickly identifying and fixing critical reliability and security issues in our customers’ deployments and configurations. Insights into the telemetry data we gather helps us to quickly identify crashes or hangs associated with a certain application or driver on a given configuration, like a particular storage type (for example, SCSI) or a memory size. For System Center, job usages and statuses can also help us enhance the job workload and the communication between System Center and its managed products. Microsoft’s ability to get this data from customers and drive improvements into the ecosystem helps raise the bar for the quality of System Center, Windows Server applications, Windows apps, and drivers. Real-time data about Windows installations reduces downtime and the cost associated with troubleshooting unreliable drivers or unstable applications
+Telemetry plays an important role in quickly identifying and fixing critical reliability and security issues in our customers’ deployments and configurations. Insights into the telemetry data we gather helps us to quickly identify crashes or hangs associated with a certain application or driver on a given configuration, like a particular storage type (for example, SCSI) or a memory size. For System Center, job usages and statuses can also help us enhance the job workload and the communication between System Center and its managed products. Microsoft’s ability to get this data from customers and drive improvements into the ecosystem helps raise the bar for the quality of System Center, Windows Server applications, Windows apps, and drivers. Real-time data about Windows installations reduces downtime and the cost associated with troubleshooting unreliable drivers or unstable applications.
 
 ### Reduce your total cost of ownership and downtime
 

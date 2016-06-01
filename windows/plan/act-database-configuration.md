@@ -2,8 +2,9 @@
 title: ACT Database Configuration (Windows 10)
 description: The Application Compatibility Toolkit (ACT) uses a Microsoft® SQL Server® database for storing and sharing compatibility issue data.
 ms.assetid: 032bbfe0-86fa-48ff-b638-b9d6a908c45e
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

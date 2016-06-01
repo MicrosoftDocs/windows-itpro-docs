@@ -2,7 +2,7 @@
 title: Install and Configure VAMT (Windows 10)
 description: Install and Configure VAMT
 ms.assetid: 5c7ae9b9-0dbc-4277-bc4f-8b3e4ab0bf50
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

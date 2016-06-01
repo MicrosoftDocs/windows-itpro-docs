@@ -2,10 +2,10 @@
 title: Determine What to Migrate (Windows 10)
 description: Determine What to Migrate
 ms.assetid: 01ae1d13-c3eb-4618-b39d-ee5d18d55761
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Determine What to Migrate

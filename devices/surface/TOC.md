@@ -1,5 +1,5 @@
 # [Surface](index.md)
-## [Advanced UEFI security features for Surface](advanced-uefi-security-features-for-surface.md)
+## [Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
 ## [Customize the OOBE for Surface deployments](customize-the-oobe-for-surface-deployments.md)
 ## [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ## [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)

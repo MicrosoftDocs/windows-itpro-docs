@@ -2,30 +2,41 @@
 title: Troubleshoot Windows Defender in Windows 10 (Windows 10)
 description: IT professionals can review information about event IDs in Windows Defender for Windows 10 and see any relevant action they can take.
 ms.assetid: EE488CC1-E340-4D47-B50B-35BD23CB4D70
-ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security
 author: jasesso
 ---
+
 # Troubleshoot Windows Defender in Windows 10
+
 **Applies to**
 -   Windows 10
+
 IT professionals can review information about event IDs in Windows Defender for Windows 10 and see any relevant action they can take.
+
 ## Windows Defender client event IDs
+
 This section provides the following information about Windows Defender client events:
+
 -   The text of the message as it appears in the event
 -   The name of the source of the message
 -   The symbolic name that identifies each message in the programming source code
 -   Additional information about the message
+
 Use the information in this table to help troubleshoot Windows Defender client events; these are located in the **Windows Event Viewer**, under **Windows Logs**.
+
 **To view a Windows Defender client event**
+
 1.  Open **Event Viewer**.
 2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
 3.  Double-click on **Operational**.
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
+
 You can find a complete list of the Microsoft antimalware event IDs, the symbol, and the description of each ID in [Windows Server Antimalware Events TechNet](https://technet.microsoft.com/library/dn913615.aspx).
+
 <table>
 <tr>
 <th rowspan="3">Event ID: 1000</th>
@@ -3257,8 +3268,8 @@ article</a>.</p>
 </td>
 </tr>
 </table>
+
 ## Related topics
-[Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
-[Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
- 
- 
+
+- [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
+- [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)

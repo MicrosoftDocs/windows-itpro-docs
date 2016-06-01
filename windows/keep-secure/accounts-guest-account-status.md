@@ -2,7 +2,7 @@
 title: Accounts Guest account status (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Accounts Guest account status security policy setting.
 ms.assetid: 07e53fc5-b495-4d02-ab42-5b245d10d0ce
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
