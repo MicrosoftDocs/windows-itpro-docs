@@ -35,7 +35,7 @@ PowerShell is typically installed under the folder _%SystemRoot%\system32\Window
 
 To open online help for any of the cmdlets type the following:
 
-```
+```text
 Get-Help <cmdlet> -Online
 ```
 Omit the `-online` parameter to get locally cached help.
