@@ -62,7 +62,7 @@ To connect to a room control system control panel, you don't need to configure a
 
 You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial port to a room control system. This is the recommended method. You can also use an RJ-11 4-conductor cable, but we do not recommend this method.
 
-This diagram shows the correct pinout usedfor an RJ-11 (6P6C) to DB9 cable.
+This diagram shows the correct pinout used for an RJ-11 (6P6C) to DB9 cable.
 
 ![image showing the wiring diagram.](images/room-control-wiring-diagram.png)
 
