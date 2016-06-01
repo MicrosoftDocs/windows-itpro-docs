@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-author: iawilt
+author: iaanw
 ---
 
 # Use PowerShell cmdlets to configure and run Windows Defender
