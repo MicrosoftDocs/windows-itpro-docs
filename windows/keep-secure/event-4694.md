@@ -15,7 +15,7 @@ author: Mir0sh
 -   Windows Server 2016
 
 
-This event generates if [DPAPI](https://msdn.microsoft.com/en-us/library/ms995355.aspx) [**CryptProtectData**](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380261(v=vs.85).aspx)() function was used with **CRYPTPROTECT\_AUDIT** flag (dwFlags) enabled.
+This event generates if [DPAPI](https://msdn.microsoft.com/en-us/library/ms995355.aspx)&thinsp; [**CryptProtectData**](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380261(v=vs.85).aspx)() function was used with **CRYPTPROTECT\_AUDIT** flag (dwFlags) enabled.
 
 There is no example of this event in this document.
 
