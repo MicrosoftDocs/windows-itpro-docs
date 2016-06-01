@@ -92,7 +92,7 @@ This event generates every time scheduled task was updated/changed.
 
 -   **Task Name** \[Type = UnicodeString\]**:** updated/changed scheduled task name. The format of this value is “\\task\_path\\task\_name”, where task\_path is a path in Microsoft **Task Scheduler** tree starting from “**Task Scheduler Library**” node:
 
-<img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="1038" height="456" />
+<img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
 -   **Task New Content** \[Type = UnicodeString\]: the new [XML](https://msdn.microsoft.com/en-us/library/aa286548.aspx) for the updated task. Here “[XML Task Definition Format](https://msdn.microsoft.com/en-us/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
 
