@@ -2,37 +2,47 @@
 title: Audit Group Membership (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit Group Membership, which enables you to audit group memberships when they are enumerated on the client PC.
 ms.assetid: 1CD7B014-FBD9-44B9-9274-CC5715DE58B9
+<<<<<<< HEAD
 ms.prod: w10
+=======
+ms.pagetype: security
+ms.prod: W10
+>>>>>>> secaudit
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: security
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Group Membership
 
 **Applies to**
--   Windows 10
+-   Windows 10
+-   Windows Server 2016
 
-This topic for the IT professional describes the advanced security audit policy setting, **Audit Group Membership**, which enables you to audit group memberships when they are enumerated on the client PC.
+
+Audit Group Membership enables you to audit group memberships when they are enumerated on the client computer.
 
 This policy allows you to audit the group membership information in the user's logon token. Events in this subcategory are generated on the computer on which a logon session is created.
 
 For an interactive logon, the security audit event is generated on the computer that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
-> **Note:**  You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**.
- 
+
+You must also enable the [Audit Logon](audit-logon.md) subcategory.
+
 Multiple events are generated if the group membership information cannot fit in a single security audit event
 
-Event volume: High
+**Event volume**:
 
-Default: Not configured
+-   Low on a client computer.
 
-| Event ID | Event message |
-| - | - |
-| 4627 | Group membership information. |
- 
-## Related topics
+-   Medium on a domain controller or network servers.
 
-- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
- 
- 
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-------------------|-----------------|-----------------|------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | Yes             | No              | Yes              | No               | Group membership information for logged in user can help to detect that member of specific domain or local group logged in to the machine (for example, member of database administrators, built-in local administrators, domain administrators, service accounts group or other high value groups).<br>For recommendations for using and analyzing the collected information, see the ***Security Monitoring Recommendations*** sections.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Member Server     | Yes             | No              | Yes              | No               | Group membership information for logged in user can help to detect that member of specific domain or local group logged in to the machine (for example, member of database administrators, built-in local administrators, domain administrators, service accounts group or other high value groups).<br>For recommendations for using and analyzing the collected information, see the ***Security Monitoring Recommendations*** sections.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Workstation       | Yes             | No              | Yes              | No               | Group membership information for logged in user can help to detect that member of specific domain or local group logged in to the machine (for example, member of database administrators, built-in local administrators, domain administrators, service accounts group or other high value groups).<br>For recommendations for using and analyzing the collected information, see the ***Security Monitoring Recommendations*** sections.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+
+**Events List:**
+
+-   [4627](event-4627.md)(S): Group membership information.
+

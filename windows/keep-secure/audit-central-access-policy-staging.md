@@ -2,30 +2,43 @@
 title: Audit Central Access Policy Staging (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Central Access Policy Staging, which determines permissions on a Central Access Policy.
 ms.assetid: D9BB11CE-949A-4B48-82BF-30DC5E6FC67D
+<<<<<<< HEAD
 ms.prod: w10
+=======
+ms.pagetype: security
+ms.prod: W10
+>>>>>>> secaudit
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: security
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Central Access Policy Staging
 
 **Applies to**
--   Windows 10
+-   Windows 10
+-   Windows Server 2016
 
-This topic for the IT professional describes the Advanced Security Audit policy setting, **Audit Central Access Policy Staging**, which determines permissions on a Central Access Policy.
 
-Event volume: Medium
+Audit Central Access Policy Staging allows you to audit access requests where a permission granted or denied by a proposed policy differs from the current central access policy on an object.
 
-Default: Not configured
+If you configure this policy setting, an audit event is generated each time a user accesses an object and the permission granted by the current central access policy on the object differs from that granted by the proposed policy. The resulting audit event is generated as follows:
 
-| Event ID | Event message |
-| - | - |
-| 4818 | Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy |
- 
-## Related topics
+-   Success audits, when configured, record access attempts when the current central access policy grants access, but the proposed policy denies access.
 
-- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
- 
- 
+-   Failure audits, when configured, record access attempts when:
+
+    -   The current central access policy does not grant access, but the proposed policy grants access.
+
+    -   A principal requests the maximum access rights they are allowed and the access rights granted by the current central access policy are different than the access rights granted by the proposed policy.
+
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                     |
+|-------------------|-----------------|-----------------|------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/en-us/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Member Server     | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/en-us/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Workstation       | IF              | No              | IF               | No               | IF - Enable this subcategory if you need to test or troubleshoot Dynamic Access Control Proposed [Central Access Policies](https://technet.microsoft.com/en-us/library/hh831425.aspx).<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+
+**Events List:**
+
+-   [4818](event-4818.md)(S): Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy.
+
