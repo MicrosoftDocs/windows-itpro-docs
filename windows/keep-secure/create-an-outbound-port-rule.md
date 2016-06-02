@@ -1,20 +1,27 @@
 ---
-title: Create an Outbound Port Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008 or Windows Server 2008 R2 (Windows 10)
-description: Create an Outbound Port Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008 or Windows Server 2008 R2
+title: Create an Outbound Port Rule (Windows 10)
+description: Create an Outbound Port Rule
 ms.assetid: 59062b91-756b-42ea-8f2a-832f05d77ddf
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Create an Outbound Port Rule on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008 or Windows Server 2008 R2
+# Create an Outbound Port Rule
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016 Technical Preview
 
-By default, Windows Firewall with Advanced Security allows all outbound network traffic unless it matches a rule that prohibits the traffic. To block outbound network traffic on a specified TCP or UDP port number, use the Windows Firewall with Advanced Security node in the Group Policy Management MMC snap-in to create firewall rules. This type of rule blocks any outbound network traffic that matches the specified TCP or UDP port numbers.
+By default, Windows Firewall with Advanced Security allows all outbound network traffic unless it matches a rule that prohibits the traffic. To block outbound network traffic on a specified TCP or UDP port number, use the Windows Firewall with Advanced Security node in the Group Policy Management console to create firewall rules. This type of rule blocks any outbound network traffic that matches the specified TCP or UDP port numbers.
 
 **Administrative credentials**
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
 
-**To create an outbound port rule**
+To create an outbound port rule
 
 1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
@@ -24,10 +31,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 4.  On the **Rule Type** page of the New Outbound Rule wizard, click **Custom**, and then click **Next**.
 
-    **Note**  
-    Although you can create rules by selecting **Program** or **Port**, those choices limit the number of pages presented by the wizard. If you select **Custom**, you see all of the pages, and have the most flexibility in creating your rules.
-
-     
+    >**Note:**  Although you can create rules by selecting **Program** or **Port**, those choices limit the number of pages presented by the wizard. If you select **Custom**, you see all of the pages, and have the most flexibility in creating your rules.
 
 5.  On the **Program** page, click **All programs**, and then click **Next**.
 
@@ -45,20 +49,4 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 9.  On the **Profile** page, select the network location types to which this rule applies, and then click **Next**.
 
-    **Note**  
-    If this GPO is targeted at server computers running Windows Server 2008 that never move, consider applying the rules to all network location type profiles. This prevents an unexpected change in the applied rules if the network location type changes due to the installation of a new network card or the disconnection of an existing network card’s cable. A disconnected network card is automatically assigned to the Public network location type.
-
-     
-
 10. On the **Name** page, type a name and description for your rule, and then click **Finish**.
-
-If you arrived at this page by clicking a link in a checklist, use your browser’s **Back** button to return to the checklist.
-
- 
-
- 
-
-
-
-
-

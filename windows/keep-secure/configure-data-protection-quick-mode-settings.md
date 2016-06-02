@@ -1,12 +1,19 @@
 ---
-title: Configure Data Protection (Quick Mode) Settings on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2 (Windows 10)
-description: Configure Data Protection (Quick Mode) Settings on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2
+title: Configure Data Protection (Quick Mode) Settings (Windows 10)
+description: Configure Data Protection (Quick Mode) Settings
 ms.assetid: fdcb1b36-e267-4be7-b842-5df9a067c9e0
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Configure Data Protection (Quick Mode) Settings on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2
+# Configure Data Protection (Quick Mode) Settings
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016 Technical Preview
 
 This procedure shows you how to configure the data protection (quick mode) settings for connection security rules in an isolated domain or a standalone isolated server zone.
 
@@ -53,14 +60,3 @@ To complete these procedures, you must be a member of the Domain Administrators 
     6.  In **Key lifetime (in minutes)**, type the number of minutes. When the specified number of minutes has elapsed, any IPsec operations between the two computers that negotiated this key will require a new key. Be careful to balance performance with security requirements. Although a shorter key lifetime results in better security, it also reduces performance because of the more frequent rekeying. We recommend that you use the default value unless your risk analysis indicates the need for a different value.
 
 8.  Click **OK** three times to save your settings.
-
-If you arrived at this page by clicking a link in a checklist, use your browser’s **Back** button to return to the checklist.
-
- 
-
- 
-
-
-
-
-

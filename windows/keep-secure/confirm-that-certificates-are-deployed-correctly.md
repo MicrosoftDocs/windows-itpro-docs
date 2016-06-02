@@ -2,15 +2,22 @@
 title: Confirm That Certificates Are Deployed Correctly (Windows 10)
 description: Confirm That Certificates Are Deployed Correctly
 ms.assetid: de0c8dfe-16b0-4d3b-8e8f-9282f6a65eee
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: securit
 author: brianlic-msft
 ---
 
 # Confirm That Certificates Are Deployed Correctly
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016 Technical Preview
 
-After configuring your certificates and autoenrollment in Group Policy, you can confirm that the policy is being applied as expected, and that the certificates are being properly installed on the workstation computers.
+After configuring your certificates and autoenrollment in Group Policy, you can confirm that the policy is being applied as expected, and that the certificates are being properly installed on the workstation devices.
 
-In these procedures, you refresh Group Policy on a client computer, and then confirm that the certificate is deployed correctly.
+In these procedures, you refresh Group Policy on a client device, and then confirm that the certificate is deployed correctly.
 
 **Administrative credentials**
 
@@ -18,39 +25,24 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 In this topic:
 
--   [Refresh Group Policy on a computer](#bkmk-torefreshgrouppolicyonacomputer)
+-   [Refresh Group Policy on a device](#to-refresh-group-policy-on-a-device)
 
--   [Verify that a certificate is installed](#bkmk-toverifythatacertificateisinstalled)
+-   [Verify that a certificate is installed](#to-verify-that-a-certificate-is-installed)
 
-## <a href="" id="bkmk-torefreshgrouppolicyonacomputer"></a>
+## To refresh Group Policy on a device
 
+ From an elevated command prompt, run the following command:
 
-**To refresh Group Policy on a computer**
+``` syntax
+gpupdate /target:computer /force
+```
 
--   On a computer running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, [Start a Command Prompt as an Administrator](start-a-command-prompt-as-an-administrator.md), and then type the following command:
+After Group Policy is refreshed, you can see which GPOs are currently applied to the device.
 
-    ``` syntax
-    gpupdate /target:computer /force
-    ```
+## To verify that a certificate is installed
 
-After Group Policy is refreshed, you can see which GPOs are currently applied to the computer.
-
-## <a href="" id="bkmk-toverifythatacertificateisinstalled"></a>
-
-
-**To verify that a certificate is installed**
-
-1.  Click the **Start** charm, type **certmgr.msc**, and then press ENTER.
+1.  Open the Cerificates console.
 
 2.  In the navigation pane, expand **Trusted Root Certification Authorities**, and then click **Certificates**.
 
     The CA that you created appears in the list.
-
- 
-
- 
-
-
-
-
-

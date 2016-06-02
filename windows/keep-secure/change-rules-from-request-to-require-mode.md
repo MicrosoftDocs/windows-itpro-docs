@@ -2,13 +2,20 @@
 title: Change Rules from Request to Require Mode (Windows 10)
 description: Change Rules from Request to Require Mode
 ms.assetid: ad969eda-c681-48cb-a2c4-0b6cae5f4cff
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Change Rules from Request to Require Mode
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016 Technical Preview
 
-After you confirm that network traffic is being correctly protected by using IPsec, you can change the rules for the domain isolation and encryption zones to require, instead of request, authentication. Do not change the rules for the boundary zone; they must stay in request mode so that computers in the boundary zone can continue to accept connections from computers that are not part of the isolated domain.
+After you confirm that network traffic is being correctly protected by using IPsec, you can change the rules for the domain isolation and encryption zones to require, instead of request, authentication. Do not change the rules for the boundary zone; they must stay in request mode so that devices in the boundary zone can continue to accept connections from devices that are not part of the isolated domain.
 
 **Administrative credentials**
 
@@ -16,16 +23,11 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 In this topic:
 
--   [Convert a rule in a GPO for Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2](#bkmk-section1)
+-   [Convert a rule from request to require mode](#to-convert-a-rule-from-request-to-require-mode)
 
--   [Convert a rule for an earlier version of Windows](#bkmk-section2)
+-   [Apply the modified GPOs to the client devices](#to-apply-the-modified-gpos-to-the-client-devices)
 
--   [Refresh policy on the client computers to receive the modified GPOs](#bkmk-section3)
-
-## <a href="" id="bkmk-section1"></a>
-
-
-**To convert a rule from request to require mode for Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2**
+## To convert a rule from request to require mode
 
 1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
@@ -37,32 +39,18 @@ In this topic:
 
 5.  In the **Requirements** section, change **Authenticated mode** to **Require inbound and request outbound**, and then click **OK**.
 
-## <a href="" id="bkmk-section3"></a>
+## To apply the modified GPOs to the client devices
 
-
-**To apply the modified GPOs to the client computers**
-
-1.  The next time each computer refreshes its Group Policy, it will receive the updated GPO and apply the modified rule. To force an immediate refresh, [Start a Command Prompt as an Administrator](start-a-command-prompt-as-an-administrator.md) and run the following command:
+1.  The next time each device refreshes its Group Policy, it will receive the updated GPO and apply the modified rule. To force an immediate refresh, run the following command from an elevated command prompt:
 
     ``` syntax
     gpupdate /force
     ```
 
-2.  To verify that the modified GPO is correctly applied to the client computers, you can run one of the following commands:
-
-    On computers that are running Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, or Windows Server 2008 R2, run the following command:
+2.  To verify that the modified GPO is correctly applied to the client devices, you can run the following command:
 
     ``` syntax
     gpresult /r /scope computer
     ```
 
-3.  Examine the command output for the list of GPOs that are applied to the computer, and make sure that the list contains the GPOs you expect to see on that computer.
-
- 
-
- 
-
-
-
-
-
+3.  Examine the command output for the list of GPOs that are applied to the device, and make sure that the list contains the GPOs you expect to see on that device.
