@@ -16,7 +16,9 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 
 |New or changed topic | Description |
 |----------------------|-------------|
-| [Windows security baselines](security-baselines.md) | New |
+| [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md) (multiple topics) | New |
+| [Advanced security audit policy settings](advanced-security-audit-policy-settings.md) (mutiple topics) | New security monitoring reference topics |
+| [Windows security baselines](windows-security-baselines.md) | New |
 
 ## May 2016
 
