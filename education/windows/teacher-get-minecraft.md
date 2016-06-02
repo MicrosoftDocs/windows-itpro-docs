@@ -46,10 +46,32 @@ author: jdeckerMS
 After Minecraft Education Edition is added to your Windows Store for Business, you have three options:
 
 - You can install the app on your PC.
-- You can assign the app to others.  Enter email addresses for your students, and each student will get an email with a link to install the app. This option is best for older, more-tech savvy students who always use the same PC at school.
-- You can download the app to distribute. This downloads a provisioning package (.ppkg) file. You save the file on a USB drive, and install the app on PCs from the UBb drive. This option is best for younger students and for shared computers.
+- You can assign the app to others.  
+- You can download the app to distribute. 
 
 ![App distribution options](images/app-distribution-options.png)
+
+### Install for me
+You can install the app on your PC. 
+
+### Assign to others
+Enter email addresses for your students, and each student will get an email with a link to install the app. This option is best for older, more tech-savvy students who will always use the same PC at school. 
+
+**To assign to others**
+1. Sign in to Windows Store for Business. 
+2. Click **Manage**, and then choose **Inventory**.
+3. Click **Minecraft: Education Edition**, and then click **Assign to others**.</br>
+![Minecraft Education Edition product page](images/minecraft-assign-to-others.png)
+4. Click **Assign to people**. </br>
+ ![Assign to people](images/minecraft-assign-to-people.png)
+5. Type the name, or email address of the student you want to assign the app to, and then click **Assign**.</br>
+![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
+
+Students will receive an email with a link that will install the app on their PC. Students need to click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**. 
+
+
+### Download for others
+This downloads a provisioning package file. You save the file on a USB drive, and install the app on PCs from the USB drive. This option is vest for younger students and for shared computers. 
 
 ## Related topics
 
