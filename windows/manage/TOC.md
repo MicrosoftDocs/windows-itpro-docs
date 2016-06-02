@@ -16,6 +16,7 @@
 ### [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 ### [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 ## [Lock down Windows 10](lock-down-windows-10.md)
+### [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
 ### [Set up a device for anyone to use (kiosk mode)](set-up-a-device-for-anyone-to-use.md)
 #### [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
 #### [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)

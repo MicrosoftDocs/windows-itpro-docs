@@ -11,12 +11,6 @@ author: jdeckerMS
 
 # Lock down Windows 10
 
-
-**Applies to**
-
--   Windows 10
--   Windows 10 Mobile
-
 Enterprises often need to manage how people use corporate devices. Windows 10 provides a number of features and methods to help you lock down specific parts of a Windows 10 device.
 
 ## In this section
@@ -34,6 +28,7 @@ Enterprises often need to manage how people use corporate devices. Windows 10 p
 </tr>
 </thead>
 <tbody>
+<tr><td align="left"><p>[Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)</p></td><td align="left"><p>tbd</p></td></tr>
 <tr class="odd">
 <td align="left"><p>[Set up a device for anyone to use (kiosk mode)](set-up-a-device-for-anyone-to-use.md)</p></td>
 <td align="left"><p>You can configure a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise as a kiosk device, so that users can only interact with a single application that you select.</p></td>
