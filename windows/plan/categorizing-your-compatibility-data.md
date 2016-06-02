@@ -2,8 +2,9 @@
 title: Categorizing Your Compatibility Data (Windows 10)
 ms.assetid: 6420f012-316f-4ef0-bfbb-14baaa664e6e
 description: 
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

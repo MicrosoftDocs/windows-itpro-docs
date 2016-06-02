@@ -2,10 +2,10 @@
 title: Migration Store Encryption (Windows 10)
 description: Migration Store Encryption
 ms.assetid: b28c2657-b986-4487-bd38-cb81500b831d
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Migration Store Encryption

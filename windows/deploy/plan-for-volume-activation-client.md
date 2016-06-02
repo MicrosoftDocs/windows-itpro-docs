@@ -3,7 +3,7 @@ title: Plan for volume activation (Windows 10)
 description: Product activation is the process of validating software with the manufacturer after it has been installed on a specific computer.
 ms.assetid: f84b005b-c362-4a70-a84e-4287c0d2e4ca
 keywords: vamt, volume activation, activation, windows activation
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

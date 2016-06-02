@@ -2,8 +2,9 @@
 title: OperatingSystem - Device Report (Windows 10)
 ms.assetid: 8b5a936f-a92e-46a7-ac44-6edace262355
 description: 
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

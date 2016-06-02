@@ -2,7 +2,7 @@
 title: Audit Policy (Windows 10)
 description: Provides information about basic audit policies that are available in Windows and links to information about each setting.
 ms.assetid: 2e8ea400-e555-43e5-89d6-0898cb89da90
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

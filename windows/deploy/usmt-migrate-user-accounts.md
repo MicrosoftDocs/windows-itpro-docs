@@ -2,10 +2,10 @@
 title: Migrate User Accounts (Windows 10)
 description: Migrate User Accounts
 ms.assetid: a3668361-43c8-4fd2-b26e-9a2deaeaeb09
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Migrate User Accounts

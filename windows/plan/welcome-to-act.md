@@ -2,8 +2,9 @@
 title: Welcome to ACT (Windows 10)
 description: The Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system.
 ms.assetid: 3963db88-83d2-4b9a-872e-31c275d1a321
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

@@ -3,9 +3,10 @@ title: Troubleshoot Windows Defender ATP onboarding issues
 description: Troubleshoot issues that might arise during the onboarding of endpoints or to the Windows Defender ATP service.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, telemetry and diagnostics
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: iaanw
 ---
 
@@ -38,7 +39,7 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
 **Check the onboarding state in Registry**:
 
-1. Click **Start**, type **Run**, and press **Enter**
+1. Click **Start**, type **Run**, and press **Enter**.
 
 2. From the **Run** dialog box, type **regedit** and press **Enter**.
 

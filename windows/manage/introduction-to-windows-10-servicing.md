@@ -7,7 +7,7 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-author: jdeckerMS
+author: greg-lindsay
 ---
 
 # Windows 10 servicing options for updates and upgrades

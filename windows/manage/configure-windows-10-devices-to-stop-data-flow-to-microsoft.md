@@ -1,11 +1,6 @@
 ---
 title: Configure Windows 10 devices to stop data flow to Microsoft (Windows 10)
-description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
-ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-keywords: privacy, stop data flow to Microsoft
-ms.prod: W10
-ms.mktglfcycl: manage
-ms.sitesec: library
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services
 ---
 
 # Configure Windows 10 devices to stop data flow to Microsoft
@@ -285,7 +280,7 @@ When you enable the **Don't search the web or display web results in Search** Gr
 
     -   For **Remote port**, choose **All ports**.
 
-> **Note:**  If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
+> **Note:**  If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
 ### <a href="" id="bkmk-cortana-mdm"></a>1.2 Cortana MDM policies
 
@@ -1083,7 +1078,7 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 ### <a href="" id="bkmk-defender"></a>19. Windows Defender
 
-You can opt of the Microsoft Antimalware Protection Service.
+You can opt out of the Microsoft Antimalware Protection Service.
 
 -   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **MAPS** &gt; **Join Microsoft MAPS**
 

@@ -2,10 +2,10 @@
 title: User State Migration Tool (USMT) Troubleshooting (Windows 10)
 description: User State Migration Tool (USMT) Troubleshooting
 ms.assetid: 770f45bb-2284-463f-a29c-69c04f437533
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # User State Migration Tool (USMT) Troubleshooting

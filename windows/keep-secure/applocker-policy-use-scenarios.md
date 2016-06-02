@@ -2,7 +2,7 @@
 title: AppLocker policy use scenarios (Windows 10)
 description: This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
 ms.assetid: 33f71578-89f0-4063-ac04-cf4f4ca5c31f
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

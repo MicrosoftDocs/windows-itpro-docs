@@ -2,8 +2,9 @@
 title: ACT Product and Documentation Resources (Windows 10)
 description: The following sections provide links to resources and reference material for the Application Compatibility Toolkit (ACT).
 ms.assetid: c7954b5a-164d-4548-af58-cd3a1de5cc43
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---
