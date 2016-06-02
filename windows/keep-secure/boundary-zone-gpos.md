@@ -25,4 +25,4 @@ The boundary zone GPOs discussed in this guide are only for server versions of W
 
 In the Woodgrove Bank example, only the GPO settings for a Web service on at least Windows Server 2008 are discussed.
 
--   [GPO\_DOMISO\_Boundary\_WS2008](gpo-domiso-boundary-ws2008.md)
+-   [GPO\_DOMISO\_Boundary\_WS2008](gpo-domiso-boundary.md)

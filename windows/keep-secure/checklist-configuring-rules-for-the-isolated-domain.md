@@ -26,11 +26,11 @@ The following checklists include tasks for configuring connection security rules
 | Configure IPsec to exempt all ICMP network traffic from IPsec protection. | [Exempt ICMP from Authentication](exempt-icmp-from-authentication.md)| 
 | Create a rule that exempts all network traffic to and from computers on the exemption list from IPsec. | [Create an Authentication Exemption List Rule](create-an-authentication-exemption-list-rule.md)| 
 | Configure the key exchange (main mode) security methods and algorithms to be used. | [Configure Key Exchange (Main Mode) Settings](configure-key-exchange-main-mode-settings.md)| 
-| Configure the data protection (quick mode) algorithm combinations to be used. | [Configure Data Protection (Quick Mode) Settings](configure-data-protection-quick-mode-settings)| 
+| Configure the data protection (quick mode) algorithm combinations to be used. | [Configure Data Protection (Quick Mode) Settings](configure-data-protection-quick-mode-settings.md)| 
 | Configure the authentication methods to be used. | [Configure Authentication Methods](configure-authentication-methods.md)| 
 | Create the rule that requests authentication for all inbound network traffic. | [Create an Authentication Request Rule](create-an-authentication-request-rule.md)| 
 | Link the GPO to the domain level of the AD DS organizational unit hierarchy. | [Link the GPO to the Domain](link-the-gpo-to-the-domain.md)| 
-| Add your test computers to the membership group for the isolated domain. Be sure to add at least one for each operating system supported by a different GPO in the group.| [Add Test Computers to the Membership Group for a Zone](add-test-computers-to-the-membership-group-for-a-zone.md)| 
+| Add your test computers to the membership group for the isolated domain. Be sure to add at least one for each operating system supported by a different GPO in the group.| [Add Test Devices to the Membership Group for a Zone](add-test-devices-to-the-membership-group-for-a-zone.md)| 
 | Verify that the connection security rules are protecting network traffic to and from the test computers. | [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)| 
  
 

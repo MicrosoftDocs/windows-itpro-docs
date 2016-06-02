@@ -27,17 +27,17 @@ The procedures in this section appear in the checklists found earlier in this do
 
 - [Configure Authentication Methods](configure-authentication-methods.md)
 
-- [Configure Data Protection (Quick Mode) Settings](configure-data-protection-quick-mode-settings)
+- [Configure Data Protection (Quick Mode) Settings](configure-data-protection-quick-mode-settings.md)
 
 - [Configure Group Policy to Autoenroll and Deploy Certificates](configure-group-policy-to-autoenroll-and-deploy-certificates.md)
 
-- [Configure Key Exchange (Main Mode) Settings](configure-key-exchange-main-mode-settings)
+- [Configure Key Exchange (Main Mode) Settings](configure-key-exchange-main-mode-settings.md)
 
-- [Configure the Rules to Require Encryption](configure-the-rules-to-require-encryption)
+- [Configure the Rules to Require Encryption](configure-the-rules-to-require-encryption.md)
 
 - [Configure the Windows Firewall Log](configure-the-windows-firewall-log.md)
 
-- [Configure the Workstation Authentication Certificate Template](configure-the-workstation-authentication-certificate-templatewfas-dep.md)
+- [Configure the Workstation Authentication Certificate Template](configure-the-workstation-authentication-certificate-template.md)
 
 - [Configure Windows Firewall to Suppress Notifications When a Program Is Blocked](configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked.md)
 
@@ -63,7 +63,7 @@ The procedures in this section appear in the checklists found earlier in this do
 
 - [Create an Outbound Program or Service Rule](create-an-outbound-program-or-service-rule.md)
 
-- [Create Inbound Rules to Support RPC](create-inbound-rules-to-support-rpc-on-windows-8-windows-7--windows-vista-windows-server-2012-windows-server-2008-or-windows-server-2008-r2.md)
+- [Create Inbound Rules to Support RPC](create-inbound-rules-to-support-rpc.md)
 
 - [Create WMI Filters for the GPO](create-wmi-filters-for-the-gpo.md)
 
@@ -72,8 +72,6 @@ The procedures in this section appear in the checklists found earlier in this do
 - [Enable Predefined Outbound Rules](enable-predefined-outbound-rules.md)
 
 - [Exempt ICMP from Authentication](exempt-icmp-from-authentication.md)
-
-- [Install Active Directory Certificate Services](install-active-directory-certificate-services.md)
 
 - [Link the GPO to the Domain](link-the-gpo-to-the-domain.md)
 
@@ -88,8 +86,6 @@ The procedures in this section appear in the checklists found earlier in this do
 - [Open Windows Firewall with Advanced Security](open-windows-firewall-with-advanced-security.md)
 
 - [Restrict Server Access to Members of a Group Only](restrict-server-access-to-members-of-a-group-only.md)
-
-- [Start a Command Prompt as an Administrator](start-a-command-prompt-as-an-administrator.md)
 
 - [Turn on Windows Firewall and Configure Default Behavior](turn-on-windows-firewall-and-configure-default-behavior.md)
 

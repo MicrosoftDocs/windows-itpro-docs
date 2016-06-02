@@ -35,6 +35,6 @@ This goal provides the following benefits:
 
 The following components are required for this deployment goal:
 
--   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more GPOs that can be automatically applied to all relevant devices in the domain. For more info about Active Directory, see [Additional Resources](additional-resources-wfasdesign.md).
+-   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more GPOs that can be automatically applied to all relevant devices in the domain.
 
 **Next: **[Restrict Access to Only Specified Users or Devices](restrict-access-to-only-specified-users-or-devices.md)
