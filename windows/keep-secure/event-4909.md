@@ -1,0 +1,21 @@
+---
+title: 4909(-) The local policy settings for the TBS were changed. (Windows 10)
+description: Describes security event 4909(-) The local policy settings for the TBS were changed.
+ms.pagetype: security
+ms.prod: W10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+author: Mir0sh
+---
+
+# 4909(-): The local policy settings for the TBS were changed.
+
+**Applies to**
+-   Windows 10
+-   Windows Server 2016
+
+
+Currently this event doesn’t generate. It is a defined event, but it is never invoked by the operating system.
+
+***Subcategory:***&nbsp;[Audit Other Policy Change Events](audit-other-policy-change-events.md)
+
