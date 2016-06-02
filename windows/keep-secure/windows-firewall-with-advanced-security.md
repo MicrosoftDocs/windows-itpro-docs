@@ -1,6 +1,6 @@
 ---
-title: Windows Firewall with Advanced Security Overview (Windows 10)
-description: Windows Firewall with Advanced Security Overview
+title: Windows Firewall with Advanced Security (Windows 10)
+description: Windows Firewall with Advanced Security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,7 +8,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Windows Firewall with Advanced Security Overview
+# Windows Firewall with Advanced Security
 
 **Applies to**
 -   Windows 10

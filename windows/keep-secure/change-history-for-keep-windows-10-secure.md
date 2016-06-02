@@ -12,6 +12,12 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## June 2016
+
+|New or changed topic | Description |
+|----------------------|-------------|
+| [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md) (multiple topics) | New |
+
 ## May 2016
 
 |New or changed topic | Description |
