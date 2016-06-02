@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
+author: Jamiejdt
 ---
 
 # Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management (MDM)

@@ -1,21 +1,23 @@
 ---
-title: Walkthrough: Configure a PXE server to load Windows PE (Windows 10)
+title: Configure a PXE server to load Windows PE (Windows 10)
 description: This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network. 
-keywords: windows pe, windows 10, upgrade, deploy, image
+keywords: upgrade, update, windows, windows 10, pxe, WinPE, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: deployment
+ms.pagetype: deploy
 author: greg-lindsay
 ---
 
-# Walkthrough: Configure a PXE server to load Windows PE
+# Configure a PXE server to load Windows PE
 
 **Applies to**
 
 -   Windows 10
 
-This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network.
+## Summary
+
+This walkthrough describes how to configure a PXE server to load Windows PE by booting a client computer from the network. Using the Windows PE tools and a Windows 10 image file, you can install Windows 10 from the network.
 
 ## Prerequisites
 
@@ -26,19 +28,19 @@ This topic describes how to configure a PXE server to load Windows PE so that 
 
 All four of the roles specified above can be hosted on the same computer or each can be on a separate computer.
 
-## Step 1: Copy Windows PE source files from the deployment computer to the PXE server
-
-### To copy source files to the PXE server:
+## Step 1: Copy Windows PE source files
 
 1. On the deployment computer, click **Start**, and type **deployment**.
+
 2. Right-click **Deployment and Imaging Tools Environment** and then click **Run as administrator**. The Deployment and Imaging Tools Environment shortcut opens a Command Prompt window and automatically sets environment variables to point to all the necessary tools.
-3. Run the following command to copy the base Windows PE files into a new folder. The script requires two arguments: hardware architecture and destination location. 
+
+3. Run the following command to copy the base Windows PE files into a new folder. The script requires two arguments: hardware architecture and destination location. The value of **&lt;architecture&gt;** can be **x86**, **amd64**, or **arm** and **&lt;destination&gt;** is a path to a local directory. If the directory does not already exist, it will be created.
 
     ```
-    copype.cmd <arch> <destination>
+    copype.cmd <architecture> <destination>
     ```
 
-    The value of **&lt;arch&gt;** can be **x86**, **amd64**, or **arm** and **&lt;destination&gt;** is a path to a local directory. If the directory does not already exist, it will be created. For example, the following command copies **amd64** architecture files to the **C:\winpe_amd64** directory:
+    For example, the following command copies **amd64** architecture files to the **C:\winpe_amd64** directory:
 
     ```
     copype.cmd amd64 C:\winpe_amd64
@@ -85,8 +87,6 @@ All four of the roles specified above can be hosted on the same computer or each
 
 ## Step 2: Configure boot settings and copy the BCD file
 
-### To configure boot settings:
-
 1.  Create a BCD store using bcdedit.exe:
 
     ```
@@ -125,9 +125,7 @@ All four of the roles specified above can be hosted on the same computer or each
     copy c:\BCD \\PXE-1\TFTPRoot\Boot
     ```
 
-Your PXE/TFTP server is now configured.
-
-Note: You can view the BCD settings that have been configured using the command **“bcdedit /store &lt;BCD file location&gt; /enum all**:
+Your PXE/TFTP server is now configured. You can view the BCD settings that have been configured using the command “bcdedit /store &lt;BCD file location&gt; /enum all. See the following example:
 
 ```
 C:\>bcdedit /store C:\BCD /enum all
