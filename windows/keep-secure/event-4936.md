@@ -2,7 +2,7 @@
 title: 4936(S) Replication failure ends. (Windows 10)
 description: Describes security event 4936(S) Replication failure ends.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

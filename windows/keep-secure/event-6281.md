@@ -2,7 +2,7 @@
 title: 6281(F) Code Integrity determined that the page hashes of an image file are not valid. (Windows 10)
 description: Describes security event 6281(F) Code Integrity determined that the page hashes of an image file are not valid.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

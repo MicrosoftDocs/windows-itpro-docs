@@ -2,7 +2,7 @@
 title: 4624(S) An account was successfully logged on. (Windows 10)
 description: Describes security event 4624(S) An account was successfully logged on.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

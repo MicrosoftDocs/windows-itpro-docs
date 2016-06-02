@@ -2,7 +2,7 @@
 title: Working with line-of-business apps (Windows 10)
 description: Your company can make line-of-business (LOB) applications available through Windows Store for Business. These apps are custom to your company – they might be internal business apps, or apps specific to your business or industry.
 ms.assetid: 95EB7085-335A-447B-84BA-39C26AEB5AC7
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa

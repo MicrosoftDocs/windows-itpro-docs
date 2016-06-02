@@ -2,7 +2,7 @@
 title: 5069(S, F) A cryptographic function property operation was attempted. (Windows 10)
 description: Describes security event 5069(S, F) A cryptographic function property operation was attempted.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

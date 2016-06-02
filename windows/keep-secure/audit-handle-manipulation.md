@@ -3,7 +3,7 @@ title: Audit Handle Manipulation (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Handle Manipulation, which determines whether the operating system generates audit events when a handle to an object is opened or closed.
 ms.assetid: 1fbb004a-ccdc-4c80-b3da-a4aa7a9f4091
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

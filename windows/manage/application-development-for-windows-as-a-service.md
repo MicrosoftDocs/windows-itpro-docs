@@ -2,7 +2,7 @@
 title: Application development for Windows as a service (Windows 10)
 description: In today’s environment, where user expectations frequently are set by device-centric experiences, complete product cycles need to be measured in months, not years.
 ms.assetid: 28E0D103-B0EE-4B14-8680-6F30BD373ACF
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security

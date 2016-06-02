@@ -2,7 +2,7 @@
 title: 5139(S) A directory service object was moved. (Windows 10)
 description: Describes security event 5139(S) A directory service object was moved.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

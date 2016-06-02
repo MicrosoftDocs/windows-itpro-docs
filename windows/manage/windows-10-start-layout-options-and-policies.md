@@ -3,7 +3,7 @@ title: Manage Windows 10 Start layout options (Windows 10)
 description: Organizations might want to deploy a customized Start screen and menu to devices running Windows 10 Enterprise or Windows 10 Education.
 ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
 keywords: ["start screen", "start menu"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS

@@ -2,7 +2,7 @@
 title: 6424(S) The installation of this device was allowed, after having previously been forbidden by policy. (Windows 10)
 description: Describes security event 6424(S) The installation of this device was allowed, after having previously been forbidden by policy.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

@@ -2,7 +2,7 @@
 title: 4753(S) A security-disabled global group was deleted. (Windows 10)
 description: Describes security event 4753(S) A security-disabled global group was deleted.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

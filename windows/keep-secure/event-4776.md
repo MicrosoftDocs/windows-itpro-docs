@@ -2,7 +2,7 @@
 title: 4776(S, F) The computer attempted to validate the credentials for an account. (Windows 10)
 description: Describes security event 4776(S, F) The computer attempted to validate the credentials for an account.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh
