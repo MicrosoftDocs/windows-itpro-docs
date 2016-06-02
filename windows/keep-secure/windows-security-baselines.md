@@ -43,11 +43,11 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
  
  Here's a list of security baselines that are currently available.
  
- ### Windows 10 security baselines
+### Windows 10 security baselines
  
  -  [Windows 10, Version 1511 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799381)
  -  [Windows 10, Version 1507 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799380)
  
- ### Windows Server security baselines
+### Windows Server security baselines
  
  -  [Windows Server 2012 R2 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799382)
