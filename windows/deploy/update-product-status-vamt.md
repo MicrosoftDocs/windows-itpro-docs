@@ -2,7 +2,7 @@
 title: Update Product Status (Windows 10)
 description: Update Product Status
 ms.assetid: 39d4abd4-801a-4e8f-9b8c-425a24a96764
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

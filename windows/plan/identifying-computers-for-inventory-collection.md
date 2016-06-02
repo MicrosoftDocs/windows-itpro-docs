@@ -2,8 +2,8 @@
 title: Identifying Computers for Inventory Collection (Windows 10)
 ms.assetid: f5bf2d89-fff2-4960-a153-dc1146b442fb
 description: 
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
 ms.sitesec: library
 author: TrudyHa
 ---

@@ -2,8 +2,9 @@
 title: Selecting Your Compatibility Rating (Windows 10)
 description: You can rate the compatibility of your applications, installation packages, or websites, based on whether they run successfully on a 32-bit or 64-bit operating system.
 ms.assetid: 959da499-8fd6-4f32-8771-a0580dd8e0d3
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

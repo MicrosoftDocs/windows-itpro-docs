@@ -2,19 +2,26 @@
 title: Determine your application control objectives (Windows 10)
 description: This topic helps you with the decisions you need to make to determine what applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
 ms.assetid: 0e84003e-6095-46fb-8c4e-2065869bb53b
-ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
+
 # Determine your application control objectives
+
 **Applies to**
 -   Windows 10
+
 This topic helps you with the decisions you need to make to determine what applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
+
 AppLocker is very effective for organizations with app restriction requirements whose environments have a simple topography and the application control policy goals are straightforward. For example, AppLocker can benefit an environment where non-employees have access to computers connected to the organizational network, such as a school or library. Large organizations also benefit from AppLocker policy deployment when the goal is to achieve a detailed level of control on the PCs that they manage for a relatively small number of apps.
+
 There are management and maintenance costs associated with a list of allowed apps. In addition, the purpose of application control policies is to allow or prevent employees from using apps that might actually be productivity tools. Keeping employees or users productive while implementing the policies can cost time and effort. Lastly, creating user support processes and network support processes to keep the organization productive are also concerns.
+
 Use the following table to develop your own objectives and determine which application control feature best addresses those objectives.
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -149,5 +156,3 @@ Use the following table to develop your own objectives and determine which appli
 </table>
  
 For more general info, see [AppLocker](applocker-overview.md).
- 
- 

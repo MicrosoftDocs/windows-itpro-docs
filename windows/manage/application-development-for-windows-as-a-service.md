@@ -6,7 +6,7 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-author: jdeckerMS
+author: greg-lindsay
 ---
 
 # Application development for Windows as a service
