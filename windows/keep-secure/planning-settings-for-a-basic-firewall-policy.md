@@ -2,22 +2,26 @@
 title: Planning Settings for a Basic Firewall Policy (Windows 10)
 description: Planning Settings for a Basic Firewall Policy
 ms.assetid: 4c90df5a-3cbc-4b85-924b-537c2422d735
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Planning Settings for a Basic Firewall Policy
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016 Technical Preview
 
-After you have identified your requirements, and have the information about the network layout and computers available, you can begin to design the GPO settings and rules that will enable you to enforce your requirements on the computers.
+After you have identified your requirements, and have the information about the network layout and devices available, you can begin to design the GPO settings and rules that will enable you to enforce your requirements on the devices.
 
 The following is a list of the firewall settings that you might consider for inclusion in a basic firewall design, together with recommendations to serve as a starting point for your analysis:
 
--   **Profile selection**. The firewall rules can be configured for any of the network location profiles that you see in the Network and Sharing Center: **Domain**, **Public**, and **Private** (on Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2). Most settings are enforced in the Domain profile, without an option for the user to change them. However, you might want to leave the profile settings configurable by the user on computers that can be taken from the organization's physical network and joined to a public or home network. If you lock down the public and private profiles, you might prevent a user from accessing a required network program or service. Because they are not on the organization's network, you cannot fix a connectivity problem by deploying rule changes in a GPO. For each section that follows, consider each profile and apply the rules to those profiles that make sense for your organization.
+-   **Profile selection**. The firewall rules can be configured for any of the network location profiles that you see in the Network and Sharing Center: **Domain**, **Public**, and **Private**. Most settings are enforced in the Domain profile, without an option for the user to change them. However, you might want to leave the profile settings configurable by the user on devices that can be taken from the organization's physical network and joined to a public or home network. If you lock down the public and private profiles, you might prevent a user from accessing a required network program or service. Because they are not on the organization's network, you cannot fix a connectivity problem by deploying rule changes in a GPO. For each section that follows, consider each profile and apply the rules to those profiles that make sense for your organization.
 
-    **Important**  
-    We recommend that on server computers that you set all rules for all profiles to prevent any unexpected profile switch from disrupting network connectivity. You might consider a similar practice for your desktop computers, and only support different profiles on portable computers.
-
-     
+    >**Important:**  We recommend that on server devices that you set all rules for all profiles to prevent any unexpected profile switch from disrupting network connectivity. You might consider a similar practice for your desktop devices, and only support different profiles on portable devices.
 
 -   **Firewall state: On**. We recommend that you prevent the user from turning it off.
 
@@ -35,24 +39,12 @@ The following is a list of the firewall settings that you might consider for inc
 
 -   **Logging**. We recommend that you enable logging to a file on the local hard disk. Be sure to limit the size, such as 4096 KB, to avoid causing performance problems by filling the user's hard disk. Be sure to specify a folder to which the Windows Firewall service account has write permissions.
 
--   **Inbound rules**. Create inbound rules for programs that must be able to receive unsolicited inbound network packets from another computer on the network. Make the rules as specific as possible to reduce the risk of malicious programs exploiting the rules. For example, specify both program and port numbers. Specifying a program ensures that the rule is only active when the program is actually running, and specifying the port number ensures that the program cannot receive unexpected traffic on a different port.
+-   **Inbound rules**. Create inbound rules for programs that must be able to receive unsolicited inbound network packets from another device on the network. Make the rules as specific as possible to reduce the risk of malicious programs exploiting the rules. For example, specify both program and port numbers. Specifying a program ensures that the rule is only active when the program is actually running, and specifying the port number ensures that the program cannot receive unexpected traffic on a different port.
 
-    Inbound rules are common on servers, because they host services to which client computers connect. When you install programs and services on a server, the installation program typically creates and enables the rules for you. Examine the rules to ensure that they do not open up more ports than are required.
+    Inbound rules are common on servers, because they host services to which client devices connect. When you install programs and services on a server, the installation program typically creates and enables the rules for you. Examine the rules to ensure that they do not open up more ports than are required.
 
-    **Important**  
-    If you create inbound rules that permit RPC network traffic by using the **RPC Endpoint Mapper** and **Dynamic RPC** rule options, then all inbound RPC network traffic is permitted because the firewall cannot filter network traffic based on the UUID of the destination application.
-
-     
+    >**Important:**  If you create inbound rules that permit RPC network traffic by using the **RPC Endpoint Mapper** and **Dynamic RPC** rule options, then all inbound RPC network traffic is permitted because the firewall cannot filter network traffic based on the UUID of the destination application.
 
 -   **Outbound rules**. Only create outbound rules to block network traffic that must be prevented in all cases. If your organization prohibits the use of certain network programs, you can support that policy by blocking the known network traffic used by the program. Be sure to test the restrictions before you deploy them to avoid interfering with traffic for needed and authorized programs.
 
 **Next: **[Planning Domain Isolation Zones](planning-domain-isolation-zones.md)
-
- 
-
- 
-
-
-
-
-

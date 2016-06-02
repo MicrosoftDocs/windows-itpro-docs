@@ -35,10 +35,10 @@ The following table lists the three main tasks for articulating, refining, and s
 <td><p>Evaluate predefined Windows Firewall with Advanced Security deployment goals that are provided in this section of the guide, and combine one or more goals to reach your organizational objectives.</p></td>
 <td><p>Predefined deployment goals:</p>
 <ul>
-<li><p>[Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md)</p></li>
-<li><p>[Restrict Access to Only Trusted Computers](restrict-access-to-only-trusted-computers.md)</p></li>
+<li><p>[Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md)</p></li>
+<li><p>[Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)</p></li>
 <li><p>[Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md)</p></li>
-<li><p>[Restrict Access to Sensitive Resources to Only Specified Users or Computers](restrict-access-to-only-specified-users-or-computers.md)</p></li>
+<li><p>[Restrict Access to Sensitive Resources to Only Specified Users or Devices](restrict-access-to-only-specified-users-or-devices.md)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -57,4 +57,4 @@ The following table lists the three main tasks for articulating, refining, and s
 </tbody>
 </table>
 
-**Next:**  [Protect Computers from Unwanted Network Traffic](protect-computers-from-unwanted-network-traffic.md)
+**Next:**  [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md)

@@ -2,15 +2,22 @@
 title: Planning Domain Isolation Zones (Windows 10)
 description: Planning Domain Isolation Zones
 ms.assetid: 70bc7c52-91f0-4a0d-a64a-69d3ea1c6d05
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Planning Domain Isolation Zones
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016 Technical Preview
 
-After you have the required information about your network, Active Directory, and client and server computers, you can use that information to make decisions about the isolation zones you want to use in your environment.
+After you have the required information about your network, Active Directory, and client and server devices, you can use that information to make decisions about the isolation zones you want to use in your environment.
 
-The bulk of the work in planning server and domain isolation is determining which computers to assign to each isolation zone. Correctly choosing the zone for each computer is important to providing the correct level of security without compromising performance or the ability a computer to send or receive required network traffic.
+The bulk of the work in planning server and domain isolation is determining which devices to assign to each isolation zone. Correctly choosing the zone for each device is important to providing the correct level of security without compromising performance or the ability for a device to send or receive required network traffic.
 
 The zones described in this guide include the following:
 
@@ -21,12 +28,3 @@ The zones described in this guide include the following:
 -   [Boundary Zone](boundary-zone.md)
 
 -   [Encryption Zone](encryption-zone.md)
-
- 
-
- 
-
-
-
-
-
