@@ -2,12 +2,8 @@
 title: Audit Directory Service Replication (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit Directory Service Replication, which determines whether the operating system generates audit events when replication between two domain controllers begins and ends.
 ms.assetid: b95d296c-7993-4e8d-8064-a8bbe284bd56
-<<<<<<< HEAD
-ms.prod: w10
-=======
 ms.pagetype: security
 ms.prod: W10
->>>>>>> secaudit
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

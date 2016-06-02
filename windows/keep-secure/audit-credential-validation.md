@@ -2,12 +2,8 @@
 title: Audit Credential Validation (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit Credential Validation, which determines whether the operating system generates audit events on credentials that are submitted for a user account logon request.
 ms.assetid: 6654b33a-922e-4a43-8223-ec5086dfc926
-<<<<<<< HEAD
-ms.prod: w10
-=======
 ms.pagetype: security
 ms.prod: W10
->>>>>>> secaudit
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

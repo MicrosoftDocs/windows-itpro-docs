@@ -2,12 +2,8 @@
 title: Audit Distribution Group Management (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Distribution Group Management, which determines whether the operating system generates audit events for specific distribution-group management tasks.
 ms.assetid: d46693a4-5887-4a58-85db-2f6cba224a66
-<<<<<<< HEAD
-ms.prod: w10
-=======
 ms.pagetype: security
 ms.prod: W10
->>>>>>> secaudit
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh
