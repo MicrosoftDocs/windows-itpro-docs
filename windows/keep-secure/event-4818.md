@@ -131,7 +131,7 @@ This event generates when Dynamic Access Control Proposed [Central Access Policy
 **Current Central Access Policy results:**
 
 -   **Access Reasons** \[Type = UnicodeString\]: the list of access check results for Current Access Policy. The format of the result is:<br><br>
-REQUESTED\_ACCESS: RESULT ACE\_WHICH\_PROVEDED\_OR\_DENIED\_ACCESS.
+REQUESTED\_ACCESS: RESULT ACE\_WHICH\_PROVIDED\_OR\_DENIED\_ACCESS.
 
 The possible REQUESTED\_ACCESS values are listed in the table below.
 
@@ -167,7 +167,7 @@ The possible REQUESTED\_ACCESS values are listed in the table below.
 
     -   Unknown or unchecked
 
--   ACE\_WHICH\_PROVEDED\_OR\_DENIED\_ACCESS:
+-   ACE\_WHICH\_PROVIDED\_OR\_DENIED\_ACCESS:
 
     -   Ownership – if access was granted because of ownership of an object.
 
