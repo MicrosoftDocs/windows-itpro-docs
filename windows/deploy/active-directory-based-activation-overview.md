@@ -2,11 +2,11 @@
 title: Active Directory-Based Activation Overview (Windows 10)
 description: Active Directory-Based Activation Overview
 ms.assetid: c1dac3bd-6a86-4c45-83dd-421e63a398c0
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: CFaw
+author: greg-lindsay
 ---
 
 # Active Directory-Based Activation Overview

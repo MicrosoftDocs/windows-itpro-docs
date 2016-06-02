@@ -3,9 +3,10 @@ title: Configure Windows Defender ATP endpoint proxy and Internet connection set
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, web proxy auto detect, wpad, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: mjcaparas
 ---
 

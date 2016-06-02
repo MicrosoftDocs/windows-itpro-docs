@@ -2,10 +2,10 @@
 title: Migration Store Types Overview (Windows 10)
 description: Migration Store Types Overview
 ms.assetid: 3b6ce746-76c6-43ff-8cd5-02ed0ae0cf70
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Migration Store Types Overview

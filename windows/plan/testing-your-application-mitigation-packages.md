@@ -2,8 +2,9 @@
 title: Testing Your Application Mitigation Packages (Windows 10)
 description: This topic provides details about testing your application-mitigation packages, including recommendations about how to report your information and how to resolve any outstanding issues.
 ms.assetid: ae946f27-d377-4db9-b179-e8875d454ccf
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

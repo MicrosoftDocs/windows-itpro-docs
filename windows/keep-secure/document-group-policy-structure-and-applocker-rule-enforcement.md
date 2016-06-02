@@ -2,23 +2,31 @@
 title: Document the Group Policy structure and AppLocker rule enforcement (Windows 10)
 description: This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker.
 ms.assetid: 389ffa8e-11fc-49ff-b0b1-89553e6fb6e5
-ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
+ms.pagetype: security
 ---
+
 # Document the Group Policy structure and AppLocker rule enforcement
+
 **Applies to**
 -   Windows 10
+
 This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker.
+
 ## Record your findings
+
 To complete this AppLocker planning document, you should first complete the following steps:
+
 1.  [Determine your application control objectives](determine-your-application-control-objectives.md)
 2.  [Create a list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md)
 3.  [Select the types of rules to create](select-types-of-rules-to-create.md)
 4.  [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
+
 After you determine how to structure your Group Policy Objects (GPOs) so that you can apply AppLocker policies, you should record your findings. You can use the following table to determine how many GPOs to create (or edit) and which objects they are linked to. If you decided to create custom rules to allow system files to run, note the high-level rule configuration in the **Use default rule or define new rule condition** column.
+
 The following table includes the sample data that was collected when you determined your enforcement settings and the GPO structure for your AppLocker policies.
 <table>
 <colgroup>
@@ -111,6 +119,7 @@ The following table includes the sample data that was collected when you determi
 </table>
  
 ## Next steps
+
 After you have determined the Group Policy structure and rule enforcement strategy for each business group's apps, the following tasks remain:
 -   [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
 -   [Create your AppLocker planning document](create-your-applocker-planning-document.md)
