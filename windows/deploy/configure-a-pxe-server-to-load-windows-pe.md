@@ -49,10 +49,10 @@ All four of the roles specified above can be hosted on the same computer or each
     The script creates the destination directory structure and copies all the necessary files for that architecture. In the previous example, the following directories are created:
     
     ```
-    C:\\winpe\_amd64
-    C:\\winpe\_amd64\\fwfiles
-    C:\\winpe\_amd64\\media
-    C:\\winpe\_amd64\\mount
+    C:\winpe\_amd64
+    C:\winpe\_amd64\fwfiles
+    C:\winpe\_amd64\media
+    C:\winpe\_amd64\mount
     ```
 4. Mount the base Windows PE image (winpe.wim) to the \mount directory using the DISM tool. Mounting an image file unpacks the file contents into a folder so that you can make changes directly or by using tools such as DISM. See the following example.
 
@@ -118,7 +118,7 @@ All four of the roles specified above can be hosted on the same computer or each
     copy c:\BCD \\PXE-1\TFTPRoot\Boot
     ```
 
-Your PXE/TFTP server is now configured. You can view the BCD settings that have been configured using the command “bcdedit /store &lt;BCD file location&gt; /enum all. The GUID displayed below is an example and your GUID will be different:
+Your PXE/TFTP server is now configured. You can view the BCD settings that have been configured using the command bcdedit /store &lt;BCD file location&gt; /enum all. See the following example. Note: Your GUID will be different than the one shown below.
 
 ```
 C:\>bcdedit /store C:\BCD /enum all
@@ -147,7 +147,7 @@ ramdisksdidevice        boot
 ramdisksdipath          \boot\boot.sdi
 ```
 
-## PXE boot summary
+## PXE boot process summary
 
 The following summarizes the PXE client boot process.
 

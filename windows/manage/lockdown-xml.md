@@ -2,7 +2,7 @@
 title: Configure Windows 10 Mobile using Lockdown XML (Windows 10)
 description: Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device.
 ms.assetid: 22C8F654-2EC3-4E6D-8666-1EA9FCF90F5F
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS

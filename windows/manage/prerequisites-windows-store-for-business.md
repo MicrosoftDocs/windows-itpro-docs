@@ -2,7 +2,7 @@
 title: Prerequisites for Windows Store for Business (Windows 10)
 description: There are a few prerequisites for using Windows Store for Business.
 ms.assetid: CEBC6870-FFDD-48AD-8650-8B0DC6B2651D
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
