@@ -78,19 +78,19 @@ Download for others allows teachers or IT admins to download a packages that the
 - Your students share Windows 10 computers, but sign in with their own Windows account. 
 
 **Requirements**
-- Administrative permissions are required on the PC. If you don't have admin rights on the PC, you won't be able to install the app. 
+- Administrative permissions are required on the PC. If you don't have the correct permissions, you won't be able to install the app. 
 - Windows 10 (at least version 1511) is required for PCs running Minecraft: Education Edition.  
 
-**To download for others**</br>
-This involves a few steps.
+**To download for others**</br>.
+You'll download a .zip file, extract the files, and then use one of the files to install Minecraft: Education Edition on each PC. 
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**. 
 Placeholder: Minecraft: Education Edition page with Download for others tab selected.
-2. **Extract files**. 
-3. **Save to USB drive**.
-4. **Install app**.
- 
-
+2. **Extract files**. Find the .zip file that you downloaded and extract the files. This is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
+3. **Save to USB drive**. After you've extracted the files, save the Minecraft: Education Edition folder to a USB drive, or to a network location that you can access from each PC.  
+4. **Install app**. Use the USB drive to copy the Minecraft folder to each Windows 10 PC where you want to install Minecraft: Education Edition. Open Minecraft: Education Edition folder, right-click **Install Minecraft.bat** and click **Run as administrator**. 
+5. **Quick check**. The install program checks the PC to make sure it can run Minecraft: Education Edition. If your PC passes this test, the app will automatically install.
+6. **Restart**. Once installation is complete, restart each PC. Minecraft: Education Edition app is now ready for any student to use.
 
 ## Related topics
 
