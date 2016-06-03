@@ -4,7 +4,7 @@ description: Use this topic to learn about Group Policy objects that apply only 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: edu
+author: brianlic-msft
 ---
 
 # Group Policies that apply only to Windows 10 Enterprise and Education Editions
