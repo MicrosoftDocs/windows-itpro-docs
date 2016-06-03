@@ -2,7 +2,7 @@
 title: 4904(S) An attempt was made to register a security event source. (Windows 10)
 description: Describes security event 4904(S) An attempt was made to register a security event source.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

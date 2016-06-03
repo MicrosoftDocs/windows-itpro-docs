@@ -2,7 +2,7 @@
 title: Appendix A, Security monitoring recommendations for many audit events (Windows 10)
 description: Appendix A, Security monitoring recommendations for many audit events
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

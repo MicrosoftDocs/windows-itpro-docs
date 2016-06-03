@@ -2,7 +2,7 @@
 title: 4768(S, F) A Kerberos authentication ticket (TGT) was requested. (Windows 10)
 description: Describes security event 4768(S, F) A Kerberos authentication ticket (TGT) was requested.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

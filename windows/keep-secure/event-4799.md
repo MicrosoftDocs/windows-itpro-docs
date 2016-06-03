@@ -2,7 +2,7 @@
 title: 4799(S) A security-enabled local group membership was enumerated. (Windows 10)
 description: Describes security event 4799(S) A security-enabled local group membership was enumerated.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

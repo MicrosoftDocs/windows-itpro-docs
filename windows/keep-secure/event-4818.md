@@ -2,7 +2,7 @@
 title: 4818(S) Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy. (Windows 10)
 description: Describes security event 4818(S) Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

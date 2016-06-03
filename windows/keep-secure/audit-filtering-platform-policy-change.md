@@ -2,12 +2,8 @@
 title: Audit Filtering Platform Policy Change (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Filtering Platform Policy Change, which determines whether the operating system generates audit events for certain IPsec and Windows Filtering Platform actions.
 ms.assetid: 0eaf1c56-672b-4ea9-825a-22dc03eb4041
-<<<<<<< HEAD
-ms.prod: w10
-=======
 ms.pagetype: security
-ms.prod: W10
->>>>>>> secaudit
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

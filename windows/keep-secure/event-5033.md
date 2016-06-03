@@ -2,7 +2,7 @@
 title: 5033(S) The Windows Firewall Driver has started successfully. (Windows 10)
 description: Describes security event 5033(S) The Windows Firewall Driver has started successfully.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh
