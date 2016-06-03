@@ -49,17 +49,17 @@ All four of the roles specified above can be hosted on the same computer or each
     The script creates the destination directory structure and copies all the necessary files for that architecture. In the previous example, the following directories are created:
     
     ```
-    C:\winpe\_amd64
-    C:\winpe\_amd64\fwfiles
-    C:\winpe\_amd64\media
-    C:\winpe\_amd64\mount
+    C:\winpe_amd64
+    C:\winpe_amd64\fwfiles
+    C:\winpe_amd64\media
+    C:\winpe_amd64\mount
     ```
 4. Mount the base Windows PE image (winpe.wim) to the \mount directory using the DISM tool. Mounting an image file unpacks the file contents into a folder so that you can make changes directly or by using tools such as DISM. See the following example.
 
     ```
     Dism /mount-image /imagefile:c:\winpe_amd64\media\sources\boot.wim /index:1 /mountdir:C:\winpe_amd64\mount
     ```
-5. Map a network share to the root TFTP directory on the PXE/TFTP server and create a \Boot folder. Consult your TFTP server documentation to determine the root TFTP server directory, then enable sharing for this directory, and verify it can be accessed on the network. In the following example, the PXE server name is PXE-1 and the TFTP root directory is shared using a network path of \\\PXE-1\TFTPRoot:
+5. Map a network share to the root TFTP directory on the PXE/TFTP server and create a \Boot folder. Consult your TFTP server documentation to determine the root TFTP server directory, then enable sharing for this directory, and verify it can be accessed on the network. In the following example, the PXE server name is PXE-1 and the TFTP root directory is shared using a network path of **\\\PXE-1\TFTPRoot**:
 
     ```
     net use y: \\PXE-1\TFTPRoot
