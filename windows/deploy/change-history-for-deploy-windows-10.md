@@ -15,6 +15,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 | New or changed topic | Description |
 |----------------------|-------------|
 | [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md) | New |
+| [User State Migration Tool Technical Reference](usmt-technical-reference.md) | Updated |
 
 ## May 2016
 | New or changed topic | Description |

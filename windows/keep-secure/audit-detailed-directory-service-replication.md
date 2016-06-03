@@ -6,35 +6,43 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: brianlic-msft
+author: Mir0sh
 ---
 
 # Audit Detailed Directory Service Replication
 
 **Applies to**
--   Windows 10
+-   Windows 10
+-   Windows Server 2016
 
-This topic for the IT professional describes the advanced security audit policy setting, **Audit Detailed Directory Service Replication**, which determines whether the operating system generates audit events that contain detailed tracking information about data that is replicated between domain controllers.
+
+Audit Detailed Directory Service Replication determines whether the operating system generates audit events that contain detailed tracking information about data that is replicated between domain controllers.
 
 This audit subcategory can be useful to diagnose replication issues.
 
-Event volume: These events can create a very high volume of event data.
+**Event volume**: These events can create a very high volume of event data on domain controllers.
 
-Default: Not configured
+| Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                            |
+|-------------------|-----------------|-----------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Domain Controller | No              | No              | IF               | IF               | IF - Events in this subcategory typically have an informational purpose and it is difficult to detect any malicious activity using these events. It’s mainly used for Active Directory replication troubleshooting. |
+| Member Server     | No              | No              | No               | No               | This subcategory makes sense only on domain controllers.                                                                                                                                                            |
+| Workstation       | No              | No              | No               | No               | This subcategory makes sense only on domain controllers.                                                                                                                                                            |
 
-| Event ID | Event message |
-| - | - |
-| 4928 | An Active Directory replica source naming context was established. | 
-| 4929 | An Active Directory replica source naming context was removed. | 
-| 4930 | An Active Directory replica source naming context was modified. | 
-| 4931 | An Active Directory replica destination naming context was modified. | 
-| 4934 | Attributes of an Active Directory object were replicated. | 
-| 4935 | Replication failure begins. | 
-| 4936 | Replication failure ends. | 
-| 4937 | A lingering object was removed from a replica. | 
- 
-## Related topics
+**Events List:**
 
-- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
- 
- 
+-   [4928](event-4928.md)(S, F): An Active Directory replica source naming context was established.
+
+-   [4929](event-4929.md)(S, F): An Active Directory replica source naming context was removed.
+
+-   [4930](event-4930.md)(S, F): An Active Directory replica source naming context was modified.
+
+-   [4931](event-4931.md)(S, F): An Active Directory replica destination naming context was modified.
+
+-   [4934](event-4934.md)(S): Attributes of an Active Directory object were replicated.
+
+-   [4935](event-4935.md)(F): Replication failure begins.
+
+-   [4936](event-4936.md)(S): Replication failure ends.
+
+-   [4937](event-4937.md)(S): A lingering object was removed from a replica.
+
