@@ -5,6 +5,7 @@ ms.assetid: E591497C-6DFA-49C1-8329-4670F2164E9E
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
 ---
 
