@@ -6,7 +6,7 @@ keywords: update, LTSB, lifecycle, Windows update, upgrade
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
+ms.pagetype: security, servicing
 author: greg-lindsay
 ---
 

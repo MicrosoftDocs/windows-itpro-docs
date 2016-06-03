@@ -5,6 +5,7 @@ ms.assetid: 580E18B1-2FFD-4EE4-8CC5-6F375BE224EA
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store, security
 author: TrudyHa
 ---
 

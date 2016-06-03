@@ -6,7 +6,7 @@ keywords: telemetry, BYOD, MDM
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: mobile; devices
+ms.pagetype: mobile, devices, security
 author: AMeeus
 ---
 
