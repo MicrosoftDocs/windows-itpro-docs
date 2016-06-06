@@ -6,6 +6,7 @@ keywords: privacy, manage connections to Microsoft
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: brianlic-msft
 ---
 
 # Manage connections from Windows operating system components to Microsoft services

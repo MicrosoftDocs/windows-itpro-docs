@@ -6,6 +6,7 @@ keywords: lockdown
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security, mobile
 author: jdeckerMS
 ---
 
