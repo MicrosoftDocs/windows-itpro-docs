@@ -5,6 +5,7 @@ ms.assetid: 22C8F654-2EC3-4E6D-8666-1EA9FCF90F5F
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security, mobile
 author: jdeckerMS
 ---
 

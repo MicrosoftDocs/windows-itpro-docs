@@ -101,7 +101,7 @@ This event is generated only on domain controllers.
 
 This event shows changes in “Kerberos policy”. Here is location of Kerberos policies in Group Policy management console:
 
-<img src="images/group-policy-editor.png" alt="Group policy editor illustration" width="490" height="448" />
+<img src="images/group-policy-editor.png" alt="Group policy editor illustration" width="790" height="171" />
 
 ## Security Monitoring Recommendations
 
