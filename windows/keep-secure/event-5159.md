@@ -2,7 +2,7 @@
 title: 5159(F) The Windows Filtering Platform has blocked a bind to a local port. (Windows 10)
 description: Describes security event 5159(F) The Windows Filtering Platform has blocked a bind to a local port.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

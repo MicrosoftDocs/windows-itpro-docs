@@ -3,7 +3,7 @@ title: Audit Filtering Platform Packet Drop (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Filtering Platform Packet Drop, which determines whether the operating system generates audit events when packets are dropped by the Windows Filtering Platform.
 ms.assetid: 95457601-68d1-4385-af20-87916ddab906
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

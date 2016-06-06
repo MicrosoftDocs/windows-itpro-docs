@@ -2,7 +2,7 @@
 title: 1105(S) Event log automatic backup. (Windows 10)
 description: Describes security event 1105(S) Event log automatic backup.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

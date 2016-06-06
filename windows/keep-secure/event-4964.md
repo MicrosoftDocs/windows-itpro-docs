@@ -2,7 +2,7 @@
 title: 4964(S) Special groups have been assigned to a new logon. (Windows 10)
 description: Describes security event 4964(S) Special groups have been assigned to a new logon.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

@@ -2,7 +2,7 @@
 title: Other Events (Windows 10)
 description: Describes the Other Events auditing subcategory.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

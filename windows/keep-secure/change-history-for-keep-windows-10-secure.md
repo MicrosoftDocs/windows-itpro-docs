@@ -2,23 +2,32 @@
 title: Change history for Keep Windows 10 secure (Windows 10)
 description: This topic lists new and updated topics in the Keep Windows 10 secure documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: E50EC5E6-71AA-4FF1-8356-574CFDB8079B
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## June 2016
+
+|New or changed topic | Description |
+|----------------------|-------------|
+| [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md) (multiple topics) | New |
+| [Advanced security audit policy settings](advanced-security-audit-policy-settings.md) (mutiple topics) | New security monitoring reference topics |
+
 ## May 2016
 
 |New or changed topic | Description |
 |----------------------|-------------|
+| [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md) | Changed Internet Explorer to Microsoft Edge |
 | [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md) | Added errors 0x80090029 and 0x80070057, and merged entries for error 0x801c03ed. |
 | [Microsoft Passport guide](microsoft-passport-guide.md) | Updated Roadmap section content |
-| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
 |[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md) |Updated info based on changes to the features and functionality.|
+| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
 
 ## April 2016
 

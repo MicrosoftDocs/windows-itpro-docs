@@ -2,7 +2,7 @@
 title: Create your AppLocker planning document (Windows 10)
 description: This planning topic for the IT professional summarizes the information you need to research and include in your AppLocker planning document.
 ms.assetid: 41e49644-baf4-4514-b089-88adae2d624e
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -2,7 +2,7 @@
 title: 4735(S) A security-enabled local group was changed. (Windows 10)
 description: Describes security event 4735(S) A security-enabled local group was changed.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

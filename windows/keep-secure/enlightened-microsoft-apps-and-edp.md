@@ -2,10 +2,11 @@
 title: List of enlightened Microsoft apps for use with enterprise data protection (EDP) (Windows 10)
 description: Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your Protected Apps list.
 ms.assetid: 17c85ea3-9b66-4b80-b511-8f277cb4345f
-keywords: ["EDP", "Enterprise Data Protection"]
-ms.prod: W10
+keywords: EDP, Enterprise Data Protection
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: security
 author: eross-msft
 ---
 

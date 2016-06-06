@@ -2,7 +2,7 @@
 title: 4663(S) An attempt was made to access an object. (Windows 10)
 description: Describes security event 4663(S) An attempt was made to access an object.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

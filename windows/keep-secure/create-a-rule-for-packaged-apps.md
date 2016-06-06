@@ -2,7 +2,7 @@
 title: Create a rule for packaged apps (Windows 10)
 description: This topic for IT professionals shows how to create an AppLocker rule for packaged apps with a publisher condition.
 ms.assetid: e4ffd400-7860-47b3-9118-0e6853c3dfa0
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

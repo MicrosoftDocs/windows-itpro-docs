@@ -3,9 +3,11 @@ title: Manage Windows Defender Advanced Threat Protection alerts
 description: Change the status of alerts, create suppression rules to hide alerts, submit comments, and review change history for individual alerts with the Manage Alert menu.
 keywords: manage alerts, manage, alerts, status, new, in progress, resolved, resolve alerts, suppress, supression, rules, context, history, comments, changes
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
+author: mjcaparas
 ---
 
 # Manage Windows Defender Advanced Threat Protection alerts

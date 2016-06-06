@@ -2,7 +2,7 @@
 title: 1104(S) The security log is now full. (Windows 10)
 description: Describes security event 1104(S) The security log is now full.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

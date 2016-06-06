@@ -2,7 +2,7 @@
 title: 4715(S) The audit policy (SACL) on an object was changed. (Windows 10)
 description: Describes security event 4715(S) The audit policy (SACL) on an object was changed.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

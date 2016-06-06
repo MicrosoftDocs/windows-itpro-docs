@@ -2,7 +2,7 @@
 title: 4928(S, F) An Active Directory replica source naming context was established. (Windows 10)
 description: Describes security event 4928(S, F) An Active Directory replica source naming context was established.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

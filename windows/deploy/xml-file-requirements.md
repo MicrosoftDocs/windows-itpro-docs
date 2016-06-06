@@ -2,10 +2,10 @@
 title: XML File Requirements (Windows 10)
 description: XML File Requirements
 ms.assetid: 4b567b50-c50a-4a4f-8684-151fe3f8275f
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # XML File Requirements

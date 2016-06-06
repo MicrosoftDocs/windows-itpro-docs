@@ -2,7 +2,7 @@
 title: 6404(-) BranchCache Hosted cache could not be authenticated using the provisioned SSL certificate. (Windows 10)
 description: Describes security event 6404(-) BranchCache Hosted cache could not be authenticated using the provisioned SSL certificate.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

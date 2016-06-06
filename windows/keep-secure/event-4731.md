@@ -2,7 +2,7 @@
 title: 4731(S) A security-enabled local group was created. (Windows 10)
 description: Describes security event 4731(S) A security-enabled local group was created.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

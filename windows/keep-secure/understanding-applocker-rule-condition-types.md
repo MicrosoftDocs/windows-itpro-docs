@@ -2,7 +2,7 @@
 title: Understanding AppLocker rule condition types (Windows 10)
 description: This topic for the IT professional describes the three types of AppLocker rule conditions.
 ms.assetid: c21af67f-60a1-4f7d-952c-a6f769c74729
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

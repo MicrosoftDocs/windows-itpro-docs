@@ -2,7 +2,7 @@
 title: Microsoft Passport and password changes (Windows 10)
 description: When you set up Microsoft Passport, the PIN or biometric (Windows Hello) gesture that you use is specific to that device.
 ms.assetid: 83005FE4-8899-47A6-BEA9-C17CCA0B6B55
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

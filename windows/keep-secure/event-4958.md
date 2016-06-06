@@ -2,7 +2,7 @@
 title: 4958(F) Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer. (Windows 10)
 description: Describes security event 4958(F) Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer.
 ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh

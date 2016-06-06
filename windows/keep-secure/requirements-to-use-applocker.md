@@ -2,7 +2,7 @@
 title: Requirements to use AppLocker (Windows 10)
 description: This topic for the IT professional lists software requirements to use AppLocker on the supported Windows operating systems.
 ms.assetid: dc380535-071e-4794-8f9d-e5d1858156f0
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

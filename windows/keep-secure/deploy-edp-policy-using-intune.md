@@ -2,10 +2,11 @@
 title: Deploy your enterprise data protection (EDP) policy using Microsoft Intune (Windows 10)
 description: After you’ve created your enterprise data protection (EDP) policy, you'll need to deploy it to your organization's enrolled devices.
 ms.assetid: 9c4a01e7-0b1c-4f15-95d0-0389f0686211
-keywords: ["EDP", "Enterprise Data Protection", "Intune"]
-ms.prod: W10
+keywords: EDP, Enterprise Data Protection, Intune
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: security
 author: eross-msft
 ---
 
