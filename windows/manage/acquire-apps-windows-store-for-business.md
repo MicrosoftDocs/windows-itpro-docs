@@ -4,6 +4,8 @@ description: As an admin, you can acquire apps from the Windows Store for Busine
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
+author: TrudyHa
 ---
 
 # Acquire apps in Windows Store for Business

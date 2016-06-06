@@ -2,6 +2,11 @@
 description: Use this article to make informed decisions about how you can configure telemetry in your organization.
 title: Configure Windows telemetry in your organization (Windows 10)
 keywords: privacy
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+author: brianlic-msft
 ---
 
 # Configure Windows telemetry in your organization

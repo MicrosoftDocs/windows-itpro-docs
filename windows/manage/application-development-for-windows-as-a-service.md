@@ -5,7 +5,7 @@ ms.assetid: 28E0D103-B0EE-4B14-8680-6F30BD373ACF
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
+ms.pagetype: security, servicing
 author: greg-lindsay
 ---
 
