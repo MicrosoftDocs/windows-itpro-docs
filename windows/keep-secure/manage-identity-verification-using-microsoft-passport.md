@@ -33,6 +33,12 @@ After an initial two-step verification of the user during Passport enrollment, P
 
 As an administrator in an enterprise or educational organization, you can create policies to manage Passport use on Windows 10-based devices that connect to your organization.
 
+## The difference between Passport and Passport for Work
+
+*Individuals can create a PIN or Hello gesture on their personal devices for convenient sign-in. This use of Passport provides a layer of protection by being unique to the device on which it is set up, however it is not backed by key-based or certificate-based authentication.** 
+
+*Passport for Work, which is configured by Group Policy or MDM policy, used key-based or certificate-based authentication. *
+
 ## Benefits of Microsoft Passport
 
 Reports of identity theft and large-scale hacking are frequent headlines. Nobody wants to be notified that their user name and password have been exposed.
@@ -46,7 +52,13 @@ Imagine that someone is looking over your shoulder as you get money from an ATM 
 Passport helps protect user identities and user credentials. Because no passwords are used, it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Passport credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are generated within isolated environments of TPMs.
 
 Microsoft Passport also enables Windows 10 Mobile devices to be used as [a remote credential](prepare-people-to-use-microsoft-passport.md#bmk-remote) when signing into Windows 10 PCs. During the sign-in process, the Windows 10 PC can connect using Bluetooth to access Microsoft Passport on the user’s Windows 10 Mobile device. Because users carry their phone with them, Microsoft Passport makes implementing two-factor authentication across the enterprise less costly and complex than other solutions.
+<<<<<<< HEAD
+
+> **Note**  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+
+=======
 > **Note:**  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+>>>>>>> refs/remotes/origin/rs1
  
 ## How Microsoft Passport works: key points
 
@@ -56,7 +68,13 @@ Microsoft Passport also enables Windows 10 Mobile devices to be used as [a remo
 -   Authentication is the two-factor authentication with the combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (Windows Hello). The Passport gesture does not roam between devices and is not shared with the server; it is stored locally on a device.
 -   Private key never leaves a device. The authenticating server has a public key that is mapped to the user account during the registration process.
 -   PIN entry and Hello both trigger Windows 10 to verify the user's identity and authenticate using Passport keys or certificates.
+<<<<<<< HEAD
+
+-   *Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.*
+
+=======
 -   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use separate containers for keys. Non-Microsoft identity providers can generate keys for their users in the same container as the Microsoft account; however, all keys are separated by identity providers' domains to help ensure user privacy.
+>>>>>>> refs/remotes/origin/rs1
 -   Certificates are added to the Passport container and are protected by the Passport gesture.
 -   Windows Update behavior: After a reboot is required by Windows Update, the last interactive user is automatically signed on without any user gesture and the session is locked so the user's lock screen apps can run.
 
@@ -90,6 +108,8 @@ When identity providers such as Active Directory or Azure AD enroll a certificat
 ## Related topics
 
 [Implement Microsoft Passport in your organization](implement-microsoft-passport-in-your-organization.md)
+
+[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 
