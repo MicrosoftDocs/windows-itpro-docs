@@ -2,9 +2,10 @@
 title: Reset a Windows 10 Mobile device (Windows 10)
 description: There are two methods for resetting a Windows 10 Mobile device factory reset and \ 0034;wipe and persist \ 0034; reset.
 ms.assetid: B42A71F4-DFEE-4D6E-A904-7942D1AAB73F
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: mobile
 author: jdeckerMS
 ---
 

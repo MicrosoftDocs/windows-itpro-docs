@@ -3,10 +3,10 @@ title: Windows 10 Mobile and mobile device management (Windows 10)
 description: This guide provides an overview of the mobile device and app management technologies in the Windows 10 Mobile operating system.
 ms.assetid: 6CAA1004-CB65-4FEC-9B84-61AAD2125E5E
 keywords: telemetry, BYOD, MDM
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: mobile; devices
+ms.pagetype: mobile, devices, security
 author: AMeeus
 ---
 
