@@ -30,7 +30,7 @@ You can put a PC in shared PC mode by applying a provisioning package when you i
 
 ## Create a provisioning package for shared use
 
-Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device as a kiosk. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device for shared PC mode. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe). 
 
