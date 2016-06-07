@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
+author: Jamiejdt
 ---
 
 # Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management (MDM)
@@ -55,7 +55,7 @@ SyncML xmlns="SYNCML:SYNCML1.1">
       <CmdID>250</CmdID>
       <Item>
         <Target>
-          <LocURI>./Vendor/MSFT/Registry/HKLM/SOFTWARE/Microsoft/Provisioning/OMADM/ EnterpriseUpgrade</LocURI>
+          <LocURI>./Vendor/MSFT/Registry/HKLM/SOFTWARE/Microsoft/Provisioning/OMADM/EnterpriseUpgrade</LocURI>
         </Target>
         <Meta>
           <Format xmlns=”syncml:metinf”>chr</Format>
@@ -91,7 +91,7 @@ Note: The availability of Windows 10 Mobile as an update for existing Windows Ph
 
 ### How to blacklist the Upgrade Advisor app <a id="howto-blacklist"></a>
 
-Some enterprises may want to block their users from installing the Windows 10 Mobile Upgrade Advisor app. With Windows Phone 8.1, you can allow or deny individual apps by adding specific app publishers or the app globally unique identifier (GUID) from the Window Phone Store to an allow or deny XML list. The GUID for a particular application can be found in the URL for the app in the phone store. For example, the GUID to the Windows Phone Upgrade Adviser (fbe47e4f-7769-4103-910e-dca8c43e0b07) is displayed in the following URL:
+Some enterprises may want to block their users from installing the Windows 10 Mobile Upgrade Advisor app. With Windows Phone 8.1, you can allow or deny individual apps by adding specific app publishers or the app globally unique identifier (GUID) from the Window Phone Store to an allow or deny XML list. The GUID for a particular application can be found in the URL for the app in the phone store. For example, the GUID to the Windows 10 Mobile Upgrade Adviser (fbe47e4f-7769-4103-910e-dca8c43e0b07) is displayed in the following URL:
 
 http://windowsphone.com/s?appid=fbe47e4f-7769-4103-910e-dca8c43e0b07
 
