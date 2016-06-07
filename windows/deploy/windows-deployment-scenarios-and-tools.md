@@ -328,7 +328,7 @@ For more information on UEFI, see the [UEFI firmware](http://go.microsoft.com/fw
 ## Related topics
 
 
-[Update Windows 10 images with provisioning packages](update-windows-10-images-with-provisioning-packages.md)
+
 
 [Deploy Windows To Go](deploy-windows-to-go.md)
 

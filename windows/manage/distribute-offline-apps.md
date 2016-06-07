@@ -2,9 +2,10 @@
 title: Distribute offline apps (Windows 10)
 description: Offline licensing is a new licensing option for Windows 10.
 ms.assetid: 6B9F6876-AA66-4EE4-A448-1371511AC95E
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
 ---
 

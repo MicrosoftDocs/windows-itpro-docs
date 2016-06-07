@@ -3,9 +3,10 @@ title: Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise (Wind
 description: A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings.
 ms.assetid: 35EC82D8-D9E8-45C3-84E9-B0C8C167BFF7
 keywords: ["kiosk", "lockdown", "assigned access"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: mobile
 author: jdeckerMS
 ---
 
@@ -72,6 +73,9 @@ In AssignedAccessXml, for Application, you enter the product ID for the app to r
 
 ### Set up assigned access using Windows Imaging and Configuration Designer (ICD)
 
+> **Important**
+When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+
 **To create and apply a provisioning package for a kiosk device**
 
 1.  Create an *AssignedAccess*.xml file that specifies the app the device will run. (You can name use any file name.) For instructions on AssignedAccessXml, see [EnterpriseAssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=618601).
@@ -82,12 +86,13 @@ In AssignedAccessXml, for Application, you enter the product ID for the app to r
      
 
 2.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+3. Choose **Advanced provisioning**.
 
-3.  Choose **New provisioning package**.
+
 
 4.  Name your project, and click **Next**.
 
-5.  Choose **Common to all Windows mobile editions** and click **Next**.
+5.  Choose **All Windows mobile editions** and click **Next**.
 
 6.  On **New project**, click **Finish**. The workspace for your package opens.
 

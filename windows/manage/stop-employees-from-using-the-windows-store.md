@@ -2,7 +2,7 @@
 title: Configure access to Windows Store (Windows 10)
 description: IT Pros can configure access to Windows Store for client computers in their organization. For some organizations, business policies require blocking access to Windows Store.
 ms.assetid: 7AA60D3D-2A69-45E7-AAB0-B8AFC29C2E97
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
