@@ -66,7 +66,7 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
