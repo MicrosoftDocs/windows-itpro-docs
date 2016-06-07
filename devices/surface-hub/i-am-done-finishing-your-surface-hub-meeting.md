@@ -2,6 +2,10 @@
 title: I am done - ending a Surface Hub meeting
 description: To end a Surface Hub meeting, tap I am Done. Surface Hub cleans up the application state, operating system state, and the user interface so that Surface Hub is ready for the next meeting.
 keywords: I am Done, end Surface Hub meeting, finish Surface Hub meeting, clean up Surface Hub meeting
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 

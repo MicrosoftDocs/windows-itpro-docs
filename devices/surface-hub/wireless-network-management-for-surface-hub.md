@@ -2,7 +2,11 @@
 title: Wireless network management (Surface Hub)
 description: Microsoft Surface Hub offers two options for network connectivity to your corporate network and Internet wireless, and wired. While both provide network access, we recommend you use a wired connection.
 ms.assetid: D2CFB90B-FBAA-4532-B658-9AA33CAEA31D
-keywords: ["network connectivity", "wired connection"]
+keywords: network connectivity, wired connection
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub, networking
 author: TrudyHa
 ---
 
@@ -11,7 +15,7 @@ author: TrudyHa
 
 Microsoft Surface Hub offers two options for network connectivity to your corporate network and Internet: wireless, and wired. While both provide network access, we recommend you use a wired connection.
 
-## Modifying, adding or reviewing a network connection
+## Modifying, adding, or reviewing a network connection
 
 
 If a wired network connection is not available, the Surface Hub can use a wireless network for internet access. A properly connected and configured Wi-Fi access point must be available and within range of the Surface Hub.
