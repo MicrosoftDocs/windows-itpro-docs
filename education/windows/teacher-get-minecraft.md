@@ -92,6 +92,9 @@ Placeholder: Minecraft: Education Edition page with Download for others tab sele
 5. **Quick check**. The install program checks the PC to make sure it can run Minecraft: Education Edition. If your PC passes this test, the app will automatically install.
 6. **Restart**. Once installation is complete, restart each PC. Minecraft: Education Edition app is now ready for any student to use.
 
+**Note**:</br>
+If Minecraft: Education Edition does not install, you may need to update other Windows Store apps on your computer before you can install Minecraft: Education Edition. To do this, open the Windows Store for Business and select the Account button in the top right corner of your screen (next to Search.) Select Check for updates and install all available updates. Now Minecraft should install.
+
 ## Related topics
 
 [Get Minecraft Education Edition](get-minecraft-for-education.md)

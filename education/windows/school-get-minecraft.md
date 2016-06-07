@@ -85,7 +85,7 @@ Download for others allows teachers or IT admins to download a packages that the
 - Administrative permissions are required on the PC. If you don't have the correct permissions, you won't be able to install the app. 
 - Windows 10 (at least version 1511) is required for PCs running Minecraft: Education Edition.  
 
-**To download for others**</br>.
+**To download for others**</br>
 You'll download a .zip file, extract the files, and then use one of the files to install Minecraft: Education Edition on each PC. 
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**. 
@@ -97,9 +97,46 @@ Placeholder: Minecraft: Education Edition page with Download for others tab sele
 6. **Restart**. Once installation is complete, restart each PC. Minecraft: Education Edition app is now ready for any student to use.
 
 
-## Manage permissions for Minecraft Education Edition
+## Manage Minecraft Education Edition
+
+### Access to Windows Store for Business
+By default, when a teacher with a work or school account in your edu tenant acquires Minecraft: Education Edition, they are automatically signed up for Window Store for Business, and the **Basic Purchaser** role is assigned to them. **Basic Purchaser** role allows teachers to acquire Minecraft: Education Edition and to distribute it to students. 
+
+However, tenant admins can control whether or not teachers automatically sign up for Windows Store for Business, and get the **Basic Purachaser** role. You can configure this with the **Allow educators in my organization to sign up for the Windows Store for Business.** You'll find this on the **Permissions** page. 
+
+To prevent educators from automatically signing up for Windows Store for Business
+1.  In Windows Store for Business, click **Settings**, and then click **Permissions**. 
+
+    ![Permission page for Windows Store for Business](images/minecraft-admin-permissions.png)
+
+2. Click **Allow educators in my organization to sign up for the Windows Store for Business.**
+
+### Roles and permissions
+Minecraft: Education Edition adds a new role for teachers: **Basic Purchaser**. When a teacher has been granted this role, they can:
+- View the Minecraft product description page 
+- Acquire and manage the app
+- Info on Support page (including links to documentation and access to support through customer service)
 
 ![assign roles to manage Minecraft permissions](images/minecraft-perms.png)
+
+**To assign Basic Purchaser role**
+
+1. Sign in to Store for Business
+
+    **Note**</br>
+    You need to be a Global Administrator, or have the Store for Business Admin role to access the Permissions page.
+
+2. Click **Settings**, and then choose **Permissions**.
+
+    ![Permission page for Windows Store for Business](images/minecraft-admin-permissions.png)
+
+3. Click **Add people**, type a name, select the correct person, choose the role you want to assign, and click **Save**.
+
+    ![Permission page for Windows Store for Business](images/minecraft-assign-roles.png)
+    
+    Windows Store for Business updates the list of people and permissions. 
+    
+    ![Permission page for Windows Store for Business](images/minecraft-assign-roles-2.png)
 
 ## Learn more
 
