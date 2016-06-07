@@ -242,7 +242,7 @@ This list of managed identity domains, along with the primary domain, make up th
 -   Type the name of your primary domain into the **Primary domain** field. For example, *contoso.com*.<p>
 If you have multiple domains, you must separate them with the "|" character. For example, `contoso.com|fabrikam.com`.
 
-    ![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
+    ![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-corporate-identity.png)
 
 ## Choose where apps can access enterprise data
 After you've added a protection level to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.
