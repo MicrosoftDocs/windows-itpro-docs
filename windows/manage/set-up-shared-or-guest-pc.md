@@ -15,15 +15,13 @@ author: jdeckerMS
 
 -   Windows 10
 
-Windows 10, Version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail.
-
-PRO, EDU, & ENT - HOME TOO?
+Windows 10, Version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise.
 
 > **Note:** If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/en-us/edu/windows/use-set-up-school-pcs-app).
 
-A Windows PC in shared PC mode (has what characteristics and behaviors?)
+A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. After setup, the device is ready for multiple users. Users only have non-administrator rights, and they can’t block other users from accessing the device. With a standard Windows PC, accounts would have to be manually cleaned by an administrator (both signed out and deleted). In shared PC mode, accounts that sign in to the PC are either deleted when the user signs out or are deleted when available disk space reaches a set threshold, depending on how you configure the settings for shared PC mode. 
 
-You can put a PC in shared PC mode by applying a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE). The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx). 
+You can put a PC in shared PC mode by applying a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx). 
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
@@ -46,17 +44,17 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
 
 Setting | Value |
 :---|:---|
-EnableSharedPCMode | Set as **True**. This is the only setting required for provisioning a shared PC. The remaining settings in **SharedPC** are optional.</br></br>If you do not set **EnableSharedPCMode** as **True**, you can create a provisioning package using the remaining settings in **SharedPC** but  none of the other settings will be applied.  |
-AccountManagement: AccountModel | (default value 0, min value 0, max value 2 -- ???)<br/>For a shared or guest PC, choose between **Only guest** and **Domain-joined and guest**.<br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account. When the account is signed out, it is deleted immediately. <br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
-AccountManagement: DeletionPolicy | <br/>- **Delete immediately** will delete all accounts on sign-out. <br/>- **Delete at disk space threshold** will start deleting Active Directory and Azure AD accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed.  |
+EnableSharedPCMode | Set as **True**. The remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.</br></br>If you do not set **EnableSharedPCMode** as **True**, you can create a provisioning package using the remaining settings in **SharedPC** but  none of the other settings will be applied.  |
+AccountManagement: AccountModel | For a shared or guest PC, choose between **Only guest** and **Domain-joined and guest**.<br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account. When the account is signed out, it is deleted immediately. <br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
+AccountManagement: DeletionPolicy | - **Delete immediately** will delete all accounts on sign-out. <br/>- **Delete at disk space threshold** will start deleting Active Directory and Azure AD accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed.  |
 AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
 AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
-AccountManagement: EnableAccountManager | Set as **True** if you want to set any other account management policies. If you enable **Shared PC mode** and do not enable the account management service, then...what?|
+AccountManagement: EnableAccountManager | Set as **True** if you want to set any other account management policies. |
 Customization: MaintenanceStartTime | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.   |
-Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. When **SetEduPolicies** is **True**, the following additional policies are applied:<br/>- Local storage locations are restricted. Users can only save files to the cloud. <br/>- Custom Start and taskbar layouts are set.\* <br/>- A custom sign-in screen background image is set.\*<br/><br/>*Only applies to Windows 10 Pro for Education, Enterprise, and Education  |
-Customization: SetPowerPolicies |  These customizations make it easy to set the power settings of the PC.<br/>-	Sleep timeout<br/>o	Specifies when the PC should sleep<br/>-	Set power policies<br/>o	Uses the sleep timeout setting to set when the PC sleeps - HUH?<br/>   |
+Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. When **SetEduPolicies** is **True**, the following additional policies are applied:<br/>- Local storage locations are restricted. Users can only save files to the cloud. <br/>- Custom Start and taskbar layouts are set.\* <br/>- A custom sign-in screen background image is set.\*<br/><br/>\*Only applies to Windows 10 Pro for Education, Enterprise, and Education  |
+Customization: SetPowerPolicies |  When set as **True**:<br/>- Prevents users from changing power settings<br/>- Turns off hibernate<br/>- Enables wake timers for Windows Update<br/>- Turns off all state transitions to sleep  |
 Customization: SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
-Customization: SleepTimeout | Amount of idle time in seconds     |
+Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
   <br/>
 
 ## Apply the provisioning package
