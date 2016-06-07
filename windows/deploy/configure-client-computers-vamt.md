@@ -2,7 +2,7 @@
 title: Configure Client Computers (Windows 10)
 description: Configure Client Computers
 ms.assetid: a48176c9-b05c-4dd5-a9ef-83073e2370fc
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

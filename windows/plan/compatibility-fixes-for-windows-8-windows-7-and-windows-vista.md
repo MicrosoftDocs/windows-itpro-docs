@@ -2,8 +2,9 @@
 title: Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista (Windows 10)
 description: You can fix some compatibility issues that are due to the changes made between Windows operating system versions. These issues can include User Account Control (UAC) restrictions.
 ms.assetid: cd51c824-557f-462a-83bb-54b0771b7dff
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

@@ -2,8 +2,8 @@
 title: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager (Windows 10)
 description: This topic will show you how to use a previously created task sequence to refresh a Windows 7 SP1 client with Windows 10 using Microsoft System Center 2012 R2 Configuration Manager and Microsoft Deployment Toolkit (MDT) 2013 Update 2.
 ms.assetid: 57c81667-1019-4711-b3de-15ae9c5387c7
-keywords: ["upgrade, install, installation, computer refresh"]
-ms.prod: W10
+keywords: upgrade, install, installation, computer refresh
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus

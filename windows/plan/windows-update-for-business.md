@@ -2,7 +2,7 @@
 title: Windows Update for Business (Windows 10)
 description: Get an overview of how you can implement and deploy a Windows Update for Business solution and how to maintain enrolled systems.
 ms.assetid: DF61F8C9-A8A6-4E83-973C-8ABE090DB8C6
-keywords: [update, upgrade, deployment, WSUS
+keywords: update, upgrade, deployment, WSUS
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library

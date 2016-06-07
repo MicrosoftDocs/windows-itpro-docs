@@ -2,23 +2,30 @@
 title: Requirements for deploying AppLocker policies (Windows 10)
 description: This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
 ms.assetid: 3e55bda2-3cd7-42c7-bad3-c7dfbe193d48
-ms.pagetype: security
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
+
 # Requirements for deploying AppLocker policies
+
 **Applies to**
 -   Windows 10
+
 This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
+
 The following requirements must be met or addressed before you deploy your AppLocker policies:
 -   [Deployment plan](#bkmk-reqdepplan)
 -   [Supported operating systems](#bkmk-reqsupportedos)
 -   [Policy distribution mechanism](#bkmk-reqpolicydistmech)
 -   [Event collection and analysis system](#bkmk-reqeventcollectionsystem)
+
 ### <a href="" id="bkmk-reqdepplan"></a>Deployment plan
+
 An AppLocker policy deployment plan is the result of investigating which applications are required and necessary in your organization, which apps are optional, and which apps are forbidden. To develop this plan, see [AppLocker Design Guide](applocker-policies-design-guide.md). The following table is an example of the data you need to collect and the decisions you need to make to successfully deploy AppLocker policies on the supported operating systems (as listed in [Requirements to use AppLocker](requirements-to-use-applocker.md).
+
 <table style="width:100%;">
 <colgroup>
 <col width="11%" />
@@ -116,6 +123,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </table>
  
 **Event processing policy**
+
 <table>
 <colgroup>
 <col width="20%" />
@@ -153,6 +161,7 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </table>
  
 **Policy maintenance policy**
+
 <table>
 <colgroup>
 <col width="20%" />
@@ -194,15 +203,20 @@ An AppLocker policy deployment plan is the result of investigating which applica
 </table>
  
 ### <a href="" id="bkmk-reqsupportedos"></a>Supported operating systems
+
 AppLocker is supported only on certain operating systems. Some features are not available on all operating systems. For more information, see [Requirements to use AppLocker](requirements-to-use-applocker.md).
+
 ### <a href="" id="bkmk-reqpolicydistmech"></a>Policy distribution mechanism
+
 You need a way to distribute the AppLocker policies throughout the targeted business groups. AppLocker uses Group Policy management architecture to effectively distribute application control policies. AppLocker policies can also be configured on individual computers by using the Local Security Policy snap-in.
+
 ### <a href="" id="bkmk-reqeventcollectionsystem"></a>Event collection and analysis system
+
 Event processing is important to understand application usage. You must have a process in place to collect and analyze AppLocker events so that application usage is appropriately restricted and understood. For procedures to monitor AppLocker events, see:
 -   [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md)
 -   [Configure an AppLocker policy for enforce rules](configure-an-applocker-policy-for-enforce-rules.md)
 -   [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md)
+
 ## See also
-[AppLocker deployment guide](applocker-policies-deployment-guide.md)
- 
- 
+
+- [AppLocker deployment guide](applocker-policies-deployment-guide.md)

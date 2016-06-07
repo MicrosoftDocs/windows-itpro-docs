@@ -3,7 +3,7 @@ title: Microsoft Passport errors during PIN creation (Windows 10)
 description: When you set up Microsoft Passport in Windows 10, you may get an error during the Create a work PIN step.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
 keywords: PIN, error, create a work PIN
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

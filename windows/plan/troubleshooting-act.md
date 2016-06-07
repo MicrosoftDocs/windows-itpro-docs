@@ -2,8 +2,9 @@
 title: Troubleshooting ACT (Windows 10)
 description: This section provides troubleshooting information for the Application Compatibility Toolkit (ACT).
 ms.assetid: 5696b0c0-5db5-4111-a1e1-825129e683d8
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---
