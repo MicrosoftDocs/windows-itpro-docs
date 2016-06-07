@@ -74,7 +74,7 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
     ![Provision this device](images/prov.jpg)
     
-4. Select `SetupSchoolPCs.ppkg` and tap **Next**.
+4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
     ![Choose a package](images/choose-package.png)
 
@@ -94,11 +94,11 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
     ![Who owns this PC?](images/who-owns-pc.png)
 
-9. On the **Choose how you'll connect** screen, select **Join Azure AD** and tap **Next**.
+9. On the **Choose how you'll connect** screen, select **Join Azure AD** or **Join a domain** and tap **Next**.
 
     ![Connect to Azure AD](images/connect-aad.png)
 
-10. Your last step is to sign in. Use your Azure AD or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
+10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
 
     ![Sign in](images/sign-in-prov.png)
 
