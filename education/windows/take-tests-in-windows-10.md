@@ -27,7 +27,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 - Cortana is turned off.
 
 
-**Take a Test** is included in Windows 10 Education. To add **Take a Test** to other editions of Windows 10, see [Add the Take a Test app to Windows 10](#add-the-take-a-test-app-to-windows-10)
+**Take a Test** is included in version 1607 of Windows 10 Pro, Pro Education, Education and Enterprise. 
 
 ## How you use Take a Test
 
@@ -40,25 +40,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 [Learn how to set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
 
-## Add the Take a Test app to Windows 10
 
-You can add the Take a Test app to Windows 10 Pro and Enterprise.
-
-### Add Take a Test on a single PC
-
-Use **Settings** to get **Take a Test** from Windows Update.
-
-1. Open **Settings**.
-2. Go to **System** > **Apps & features** > **Manage optional features** > **Add a feature**.
-3. Select **Take a Test**.
-
-### Deploy Take a Test to multiple PCs using DISM
-
-You can deploy the Take a Test package through Deployment Image Servicing and Management (DISM.exe).
-
-1. Get the Take a Test package from the [Microsoft update catalog](http://catalog.update.microsoft.com/).
-2. Upload the package to a network share or to your Windows Server Update Services (WSUS) server.
-3. Create and deploy a DISM script to add the package to offline or online images. For more information on how to add or enable features through DISM, see [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/dism-operating-system-package-servicing-command-line-options).
 
 ## Related topics
 
