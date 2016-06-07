@@ -23,10 +23,10 @@ You can create a Group Policy or mobile device management (MDM) policy that will
 
 <<<<<<< HEAD
 
-The following table lists the Group Policy settings that you can configure for Passport use in your workplace. *These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Passport for Work**.*
+The following table lists the Group Policy settings that you can configure for Passport use in your workplace. *These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.*
 
 =======
-The following table lists the Group Policy settings that you can configure for Passport use in your workplace. These policy settings are available in **Computer Configuration** &gt; **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Passport for Work**.
+The following table lists the Group Policy settings that you can configure for Hello use in your workplace. These policy settings are available in **Computer Configuration** &gt; **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
 >>>>>>> refs/remotes/origin/rs1
 <table>
 <tr>
@@ -34,21 +34,21 @@ The following table lists the Group Policy settings that you can configure for P
 <th>Options</th>
 </tr>
 <tr>
-<td>Use Microsoft Passport for Work</td>
+<td>Use Windows Hello for Business</td>
 <td></td>
 <td>
-<p><b>Not configured</b>: Users can provision Passport for Work, which encrypts their domain password.</p>
-<p><b>Enabled</b>: Device provisions Passport for Work using keys or certificates for all users.</p>
-<p><b>Disabled</b>: Device does not provision Passport for Work for any user.</p>
+<p><b>Not configured</b>: Users can provision Windows Hello for Business, which encrypts their domain password.</p>
+<p><b>Enabled</b>: Device provisions Windows Hello for Business using keys or certificates for all users.</p>
+<p><b>Disabled</b>: Device does not provision Windows Hello for Business for any user.</p>
 </td>
 </tr>
 <tr>
 <td>Use a hardware security device</td>
 <td></td>
 <td>
-<p><b>Not configured</b>: Passport for Work will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
-<p><b>Enabled</b>: Passport for Work will only be provisioned using TPM.</p>
-<p><b>Disabled</b>: Passport for Work will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
+<p><b>Not configured</b>: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
+<p><b>Enabled</b>: Windows Hello for Business will only be provisioned using TPM.</p>
+<p><b>Disabled</b>: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
 </td>
 </tr>
 <tr>
@@ -128,23 +128,23 @@ The following table lists the Group Policy settings that you can configure for P
 </td>
 </tr>
 <tr>
-<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a></td>
+<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone Sign-in</a></td>
 <td>
-<p>Use Remote Passport</p>
+<p>Use Phone Sign-in</p>
 <div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
 <div> </div>
 </td>
 <td>
-<p><b>Not configured</b>: Remote Passport is disabled.</p>
+<p><b>Not configured</b>: Phone sign-in is disabled.</p>
 <p><b>Enabled</b>: Users can use a portable, registered device as a companion device for desktop authentication.</p>
-<p><b>Disabled</b>: Remote Passport is disabled.</p>
+<p><b>Disabled</b>: Phone sign-in is disabled.</p>
 </td>
 </tr>
 </table>
 
 ## MDM policy settings for Passport
 
-The following table lists the MDM policy settings that you can configure for Passport use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkId=692070).
+The following table lists the MDM policy settings that you can configure for Windows Hello for Business use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkId=692070).
 <table>
 <tr>
 <th colspan="2">Policy</th>
@@ -158,9 +158,9 @@ The following table lists the MDM policy settings that you can configure for Pas
 <td>Device</td>
 <td>True</td>
 <td>
-<p>True: Passport will be provisioned for all users on the device.</p>
-<p>False: Users will not be able to provision Passport. </p>
-<div class="alert"><b>Note</b>  If Passport is enabled, and then the policy is changed to False, users who previously set up Passport can continue to use it, but will not be able to set up Passport on other devices.</div>
+<p>True: Windows Hello for Business will be provisioned for all users on the device.</p>
+<p>False: Users will not be able to provision Windows Hello for Business. </p>
+<div class="alert"><b>Note</b>  If Windows Hello for Business is enabled, and then the policy is changed to False, users who previously set up Windows Hello for Business can continue to use it, but will not be able to set up Windows Hello for Business on other devices.</div>
 <div> </div>
 </td>
 </tr>
@@ -170,8 +170,8 @@ The following table lists the MDM policy settings that you can configure for Pas
 <td>Device</td>
 <td>False</td>
 <td>
-<p>True: Passport will only be provisioned using TPM.</p>
-<p>False: Passport will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
+<p>True: Windows Hello for Business will only be provisioned using TPM.</p>
+<p>False: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
 </td>
 </tr>
 <tr>
@@ -182,8 +182,8 @@ The following table lists the MDM policy settings that you can configure for Pas
 <td>Device </td>
 <td>False</td>
 <td>
-<p>True: Biometrics can be used as a gesture in place of a PIN for domain logon.</p>
-<p>False: Only a PIN can be used as a gesture for domain logon.</p>
+<p>True: Biometrics can be used as a gesture in place of a PIN for domain sign-in.</p>
+<p>False: Only a PIN can be used as a gesture for domain sign-in.</p>
 </td>
 </tr>
 <tr>
@@ -282,8 +282,8 @@ The following table lists the MDM policy settings that you can configure for Pas
 <td>Device or user</td>
 <td>False</td>
 <td>
-<p>True: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a> is enabled.</p>
-<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Remote Passport</a> is disabled.</p>
+<p>True: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is enabled.</p>
+<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign0in</a> is disabled.</p>
 </td>
 </tr>
 </table>
@@ -293,7 +293,7 @@ If policy is not configured to explicitly require letters or special characters,
  
 ## Prerequisites
 
-You’ll need this software to set Microsoft Passport policies in your enterprise.
+You’ll need this software to set Windows Hello for Business policies in your enterprise.
 <table>
 <colgroup>
 <col width="25%" />
@@ -303,7 +303,7 @@ You’ll need this software to set Microsoft Passport policies in your enterpris
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Microsoft Passport mode</th>
+<th align="left">Windows Hello for Business mode</th>
 <th align="left">Azure AD</th>
 <th align="left">Active Directory (AD) on-premises (available with production release of Windows Server 2016 Technical Preview)</th>
 <th align="left">Azure AD/AD hybrid (available with production release of Windows Server 2016 Technical Preview)</th>
@@ -349,14 +349,16 @@ You’ll need this software to set Microsoft Passport policies in your enterpris
 </tbody>
 </table>
  
-Configuration Manager and MDM provide the ability to manage Passport policy and to deploy and manage certificates protected by Passport.
-Azure AD provides the ability to register devices with your enterprise and to provision Passport for organization accounts.
-Active Directory provides the ability to authorize users and devices using keys protected by Passport if domain controllers are running Windows 10 and the Microsoft Passport provisioning service in Windows 10 AD FS.
+Configuration Manager and MDM provide the ability to manage Windows Hello for Business policy and to deploy and manage certificates protected by Windows Hello for Business.
 
-## Passport for BYOD
+Azure AD provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
 
-Passport can be managed on personal devices that your employees use for work purposes using MDM. On personal devices, users can create a personal Passport PIN for unlocking the device and a separate work PIN for access to work resources.
-The work PIN is managed using the same Passport policies that you can use to manage Passport on organization owned devices. The personal PIN is managed separately using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](http://go.microsoft.com/fwlink/p/?LinkID=623244).
+Active Directory provides the ability to authorize users and devices using keys protected by Windows Hello for Business if domain controllers are running Windows 10 and the Windows Hello for Business provisioning service in Windows 10 AD FS.
+
+## Windows Hello for BYOD
+
+Windows Hello can be managed on personal devices that your employees use for work purposes using MDM. On personal devices, users can create a personal Windows Hello PIN for unlocking the device and a separate work PIN for access to work resources.
+The work PIN is managed using the same Windows Hello for Business policies that you can use to manage Windows Hello for Business on organization-owned devices. The personal PIN is managed separately using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](http://go.microsoft.com/fwlink/p/?LinkID=623244).
 
 ## Related topics
 
