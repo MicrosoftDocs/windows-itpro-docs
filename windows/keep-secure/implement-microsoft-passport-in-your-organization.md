@@ -3,7 +3,7 @@ title: Implement Microsoft Passport in your organization (Windows 10)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
 keywords: identity, PIN, biometric, Hello
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

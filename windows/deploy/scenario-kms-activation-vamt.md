@@ -2,7 +2,7 @@
 title: Scenario 3 KMS Client Activation (Windows 10)
 description: Scenario 3 KMS Client Activation
 ms.assetid: 72b04e8f-cd35-490c-91ab-27ea799b05d0
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

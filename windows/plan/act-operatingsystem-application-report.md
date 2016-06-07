@@ -2,8 +2,9 @@
 title: OperatingSystem - Application Report (Windows 10)
 description: This section describes the compatibility reports in Application Compatibility Manager (ACM) and how you can work with the reports.
 ms.assetid: 9721485b-6092-4974-8cfe-c84472237a57
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

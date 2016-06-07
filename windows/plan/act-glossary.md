@@ -2,8 +2,9 @@
 title: ACT Glossary (Windows 10)
 description: The following table lists terms and definitions used by the Application Compatibility Toolkit (ACT).
 ms.assetid: 984d1cce-c1ac-4aa8-839a-a23e15da6f32
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

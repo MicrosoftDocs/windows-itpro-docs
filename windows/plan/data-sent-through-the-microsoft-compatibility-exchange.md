@@ -2,8 +2,9 @@
 title: Data Sent Through the Microsoft Compatibility Exchange (Windows 10)
 description: The Microsoft Compatibility Exchange propagates data of various types between Microsoft Corporation, independent software vendors (ISVs) and the Application Compatibility Toolkit (ACT) Community.
 ms.assetid: 3ec61e33-9db8-4367-99d5-e05c2f50e144
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

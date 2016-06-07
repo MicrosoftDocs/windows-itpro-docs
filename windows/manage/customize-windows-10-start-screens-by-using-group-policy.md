@@ -20,7 +20,7 @@ author: jdeckerMS
 
 -   [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
 
-In Windows 10 Enterprise and Windows 10 Education, you can use a Group Policy Object (GPO) to deploy a customized Start and taskbar layout to users in a domain. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start and tskbar layouts for different departments or organizations, with minimal management overhead.
+In Windows 10 Enterprise and Windows 10 Education, you can use a Group Policy Object (GPO) to deploy a customized Start and taskbar layout to users in a domain. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
 
 This topic describes how to update Group Policy settings to display a customized Start and taskbar layout when the users sign in. By creating a domain-based GPO with these settings, you can deploy a customized Start and taskbar layout to users in a domain.
 
@@ -36,7 +36,7 @@ When a full Start layout is applied with this method, the users cannot pin, unpi
 
 Start and taskbar layout control using Group Policy is supported in Windows 10 Enterprise and Windows 10 Education, Version 1607. Start and taskbar layout control is not supported in Windows 10 Pro.
 
-The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed. In Group Policy, ADMX files are used to define Registry-based policy settings in the Administrative Templates category. To find out how to create a central store for Administrative Templates files, see [article 929841](http://go.microsoft.com/fwlink/p/?LinkId=691687) in the Microsoft Knowledge Base.
+The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed. In Group Policy, ADMX files are used to define Registry-based policy settings in the Administrative Templates category. To find out how to create a central store for Administrative Templates files, see [article 929841, written for Windows Vista and still applicable](http://go.microsoft.com/fwlink/p/?LinkId=691687) in the Microsoft Knowledge Base.
 
 ## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 

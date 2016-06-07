@@ -2,9 +2,10 @@
 title: Windows To Go frequently asked questions (Windows 10)
 description: Windows To Go frequently asked questions
 ms.assetid: bfdfb824-4a19-4401-b369-22c5e6ca9d6e
-keywords: ["FAQ, mobile, device, USB"]
-ms.prod: W10
+keywords: FAQ, mobile, device, USB
+ms.prod: w10
 ms.mktglfcycl: deploy
+ms.pagetype: mobility
 ms.sitesec: library
 author: mtniehaus
 ---

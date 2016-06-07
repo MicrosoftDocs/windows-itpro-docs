@@ -2,10 +2,10 @@
 title: Sideload LOB apps in Windows 10 (Windows 10)
 description: Sideload line-of-business apps in Windows 10.
 ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Sideload LOB apps in Windows 10
