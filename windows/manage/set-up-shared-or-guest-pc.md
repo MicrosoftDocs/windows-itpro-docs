@@ -109,9 +109,32 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 ![add a package option](images/package.png)
 
-## How accounts work in shared PC mode
+> **Note:** If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
 
-text
+## Guidance for accounts on shared PCs
+
+* We recommend no local admin accounts on the PC to improve the reliability and security of the PC.
+* When a PC is set up in shared PC mode, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account managment happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Start without an account** will also be deleted automatically at sign out.
+* On a Windows PC joined to Azure Active Directory:
+    * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
+    * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
+* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. However, any new local accounts created by the **Start without an account** selection on the sign-in screen (if enabled) will automatically be deleted at sign-out.
+* If admin accounts are necessary on the PC
+    * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
+    * Create admin accounts before setting up shared PC mode, or 
+    * Create exempt accounts before signing out.
+* The account management service supports accounts that are exempt from deletion.
+    * An account can be marked exempt from deletion by adding the account SID to the `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\` registry key.
+    * To add the account SID to the registry key using PowerShell:
+        ```
+        $adminName = "LocalAdmin"
+        $adminPass = 'Pa$$word123'
+        iex "net user /add $adminName $adminPass"
+        $user = New-Object System.Security.Principal.NTAccount($adminName) 
+        $sid = $user.Translate([System.Security.Principal.SecurityIdentifier]) 
+        $sid = $sid.Value;
+        New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
+        ``` 
 
 ## Policies set by shared PC mode
 
