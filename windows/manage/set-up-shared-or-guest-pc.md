@@ -59,7 +59,55 @@ Customization: SleepTimeout | Specifies all timeouts for when the PC should slee
 
 ## Apply the provisioning package
 
-how to
+You can apply the provisioning package to a PC during initial setup or to a PC that has already been set up.
+
+**During initial setup**
+1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
+
+    ![The first screen to set up a new PC](images/oobe.jpg)
+
+2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+
+    ![Set up device?](images/setupmsg.jpg)
+
+3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
+
+    ![Provision this device](images/prov.jpg)
+    
+4. Select `SetupSchoolPCs.ppkg` and tap **Next**.
+
+    ![Choose a package](images/choose-package.png)
+
+5. Select **Yes, add it**.
+
+    ![Do you trust this package?](images/trust-package.png)
+    
+6. Read and accept the Microsoft Software License Terms.  
+
+    ![Sign in](images/license-terms.png)
+    
+7. Select **Use Express settings**.
+
+    ![Get going fast](images/express-settings.png)
+
+8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
+
+    ![Who owns this PC?](images/who-owns-pc.png)
+
+9. On the **Choose how you'll connect** screen, select **Join Azure AD** and tap **Next**.
+
+    ![Connect to Azure AD](images/connect-aad.png)
+
+10. Your last step is to sign in. Use your Azure AD or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
+
+    ![Sign in](images/sign-in-prov.png)
+
+    
+**After setup**
+
+On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. 
+
+![add a package option](images/package.png)
 
 ## How accounts work in shared PC mode
 
