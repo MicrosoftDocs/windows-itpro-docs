@@ -228,7 +228,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
     </tr>
 </table>
 
-![Microsoft Intune: Add the protection level for your Protected Apps list](images/intune-encryption-level.png)
+![Microsoft Intune: Add the protection level for your Protected Apps list](images/intune-protection-mode.png)
 
 ## Define your enterprise-managed identity domains
 Specify your company’s enterprise identity, expressed as your primary internet domain. For example, if your company is Contoso, its enterprise identity might be contoso.com. The first listed domain (in this example, contoso.com) is the primary enterprise identity string used to tag files protected by any app on the **Protected App** list.
