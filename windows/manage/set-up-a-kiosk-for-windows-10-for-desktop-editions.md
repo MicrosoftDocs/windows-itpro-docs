@@ -3,7 +3,7 @@ title: Set up a kiosk on Windows 10 Pro, Enterprise, or Education (Windows 10)
 description: A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education).
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 keywords: ["assigned access", "kiosk", "lockdown"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS

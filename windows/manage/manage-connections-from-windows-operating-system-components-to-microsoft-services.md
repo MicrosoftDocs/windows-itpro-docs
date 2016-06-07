@@ -3,9 +3,10 @@ title: Manage connections from Windows operating system components to Microsoft 
 description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 keywords: privacy, manage connections to Microsoft
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: brianlic-msft
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
