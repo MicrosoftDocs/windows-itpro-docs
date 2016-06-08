@@ -4,7 +4,7 @@ description: Learn how to integrate your school environment with Microsoft Offic
 keywords: configure, tools, device, school
 ms.prod: w10
 ms.mktglfcycl: plan
-ms.pgtyp: edu
+ms.pagetype: edu
 ms.sitesec: library
 author: craigash
 ---
