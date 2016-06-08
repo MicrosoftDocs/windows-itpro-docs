@@ -92,7 +92,7 @@ By default, IE11 uses the **Display intranet sites in Compatibility View** setti
 To help you move forward, you can now use the Enterprise Mode site list to specify sites or web paths to use the IE7 document mode, which goes down to IE5 “Quirks” mode if the page doesn’t have an explicit `DOCTYPE` tag. Using this document mode effectively helps you provide the Compatibility View functionality for single sites or a group of sites, which after thorough testing, can help you turn off Compatibility View as the default setting for your intranet sites.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.2) tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
  

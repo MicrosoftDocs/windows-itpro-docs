@@ -378,7 +378,7 @@ You can completely remove the data stored on your employee’s computers.
     -   `Remove-Item -Path 'HKCU:\Software\Microsoft\Internet Explorer\WMITelemetry'`
 
  ## Related topics
-* [Enterprise Mode Site List Manager for Windows 10 download](http://go.microsoft.com/fwlink/?LinkId=746562)
+* [Enterprise Mode Site List Manager (schema v.2) download](http://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
  
 
