@@ -4,7 +4,7 @@
 ### [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md)
 ### [Technical reference for the Set up School PCs app (Preview)](set-up-school-pcs-technical.md)
 ### [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md)
-### [Set up student PCs with apps](set-up-students-pcs-with-apps.md)
+### [Provision student PCs with apps](set-up-students-pcs-with-apps.md)
 ## [Take tests in Windows 10 (Preview)](take-tests-in-windows-10.md)
 ### [Set up Take a Test on a single PC (Preview)](take-a-test-single-pc.md)
 ### [Set up Take a Test on multiple PCs (Preview)](take-a-test-multiple-pcs.md)
