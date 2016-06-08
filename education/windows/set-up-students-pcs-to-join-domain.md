@@ -79,7 +79,7 @@ If your school uses Active Directory, use the Windows Imaging and Configuration 
     
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
-    ![Choose a package](images/choose-package.png)
+    ![Choose a package](images/choose-package-icd.png)
 
 5. Select **Yes, add it**.
 
