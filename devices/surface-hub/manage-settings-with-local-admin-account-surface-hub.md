@@ -2,7 +2,11 @@
 title: Manage settings with a local admin account (Surface Hub)
 description: A local admin account will be set up on every Microsoft Surface Hub as part of the first run program. The only way to change the local admin options that you chose at that time is to reset the device.
 ms.assetid: B4B3668B-985D-427E-8495-E30ABEECA679
-keywords: ["local admin account", "Surface Hub", "change local admin options"]
+keywords: local admin account, Surface Hub, change local admin options
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -83,7 +87,7 @@ To create a local admin, choose to use a local admin during first run. This will
 
 After you domain join the device, you can set up a security group from your domain as local administrators on the Surface Hub. You will need to provide credentials that are capable of joining the domain of your choice. After you domain join successfully, you will be asked to pick an existing security group to be set as the local admins. When the Setting app is opened, any user who is a member of that security group can enter their credentials and unlock Settings.
 
-**Note**  Surface Hubs domain join for the sole purpose of using a security group as local admins. Group policies are not applied after the device is domain joined.
+>**Note**  Surface Hubs domain join for the sole purpose of using a security group as local admins. Group policies are not applied after the device is domain joined.
 
  
 
@@ -96,7 +100,7 @@ Otherwise, if you don’t want to use the device account to join Azure AD, you c
 -   The org account of an admin who will manage the device, or
 -   A separate account that is part of your organization and used only for joining Surface Hubs.
 
-**Note**  If your Azure AD organization is also configured with MDM enrollment, Surface Hubs will also be enrolled into MDM as a result of joining Azure AD. Surface Hubs that have joined Azure AD are subject to receiving MDM policies, and can be widely managed using an MDM solution, which opts these devices into remote management. You may want to choose an account to join Azure AD that benefits how you manage devices—you find more info about this in the [Enroll a Surface Hub into MDM](manage-settings-with-mdm-for-surface-hub.md#enroll-into-mdm) section.
+>**Note**  If your Azure AD organization is also configured with MDM enrollment, Surface Hubs will also be enrolled into MDM as a result of joining Azure AD. Surface Hubs that have joined Azure AD are subject to receiving MDM policies, and can be widely managed using an MDM solution, which opts these devices into remote management. You may want to choose an account to join Azure AD that benefits how you manage devices—you find more info about this in the [Enroll a Surface Hub into MDM](manage-settings-with-mdm-for-surface-hub.md#enroll-into-mdm) section.
 
  
 
