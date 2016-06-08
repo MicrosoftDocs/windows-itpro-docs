@@ -1,10 +1,11 @@
 ---
 title: Take a Test app technical reference
 description: The policies and settings applied by the Take a Test app.
-keywords: ["shared cart", "shared PC", "school"]
-ms.prod: W10
+keywords: shared cart, shared PC, school
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
+ms.pagetype: edu
 author: jdeckerMS
 ---
 
