@@ -1,5 +1,3 @@
-[//]: # (# [What's new in Windows 10](../whats-new/index.md))
-[//]: # (# [Plan for Windows 10 deployment](../plan/index.md))
 # [Deploy Windows 10](index.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
@@ -137,5 +135,3 @@
 ###### [XML Elements Library](usmt-xml-elements-library.md)
 ##### [Offline Migration Reference](offline-migration-reference.md)
 ## [Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md)
-[//]: # (# [Keep Windows 10 secure](../keep-secure/index.md))
-[//]: # (# [Manage and update Windows 10](../manage/index.md))
