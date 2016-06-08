@@ -311,7 +311,7 @@ After you've decided where your protected apps can access enterprise data on you
 
     -   **Protect app content when the device is in a locked state for the apps configured above.** Clicking **Yes** lets EDP help to secure protected app content when a mobile device is locked. We recommend turning this option on to help prevent data leaks from things such as email text that appears on the **Lock** screen of a Windows 10 Mobile phone.
 
-        ![Microsoft Intune: Optional EDP settings](images/intune-edpsettings.png)
+        ![Microsoft Intune: Optional EDP settings](images/intune-optional-settings.png)
 
 2.  Click **Save Policy**.
 
