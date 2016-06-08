@@ -13,20 +13,19 @@ author: jdeckerMS
 
 -   Windows 10  
 
+If your school uses Active Directory, use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package that will configure a PC for student use that is joined to the Active Directory domain. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
-> <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
-
-If your school uses Active Directory, use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package that will configure the PC for student use that is joined to the Active Directory domain. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
-
-
-
-##Create the provisioning package
+## Create the provisioning package
 
 1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
-2. Click **Simple provisioning**.
+2. Click **Provision school devices**. 
 
-3. Name your project and click **Finish**.
+  ![Provision school devices](images/icdstart-option.png)
+
+3. Name your project and click **Finish**. The screens for school provisioning will walk you through the following steps.
+
+   ![Wizard for school provisioning](images/icd-school.png)
 
 4. In the **Set up device** step, enter a unique 15-character name for the device. For help generating a unique name, you can use %SERIAL%, which includes a hardware-specific serial number, or you can use %RAND:x%, which generates random characters of x length.
 
@@ -35,9 +34,7 @@ If your school uses Active Directory, use the Windows Imaging and Configuration 
     - Pro to Education
     - Pro to Enterprise
     - Enterprise to Education
-    - Mobile to Mobile Enterprise
-
-
+ 
 6. Click **Set up network**.
 
 7. Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, type, and (if required) password for the wireless network.
@@ -51,6 +48,11 @@ If your school uses Active Directory, use the Windows Imaging and Configuration 
       - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
       - [Use Group Policy to delete the temporary administrator account](https://blogs.technet.microsoft.com/canitpro/2014/12/10/group-policy-creating-a-standard-local-admin-account/) after the device is enrolled in Active Directory.
 
+10. Click **Set up school settings**.
+
+11. Toggle **Yes** or **No** to configure the PC for shared use. 
+
+12. (Optional) Toggle **Yes** or **No** to configure the PC for secure testing. If you select **Yes**, you must also enter the test account to be used and the URL for the test. If you don't configure the test account and URL in this provisioning package, you can do so after the PC is configured; for more information, see [Take tests in Windows 10](take-tests-in-windows-10).
 
 10. Click **Finish**.
 
@@ -63,7 +65,43 @@ If your school uses Active Directory, use the Windows Imaging and Configuration 
 ## Apply package
 
 
-Go to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and select the package to install. 
+1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
-![add a package option](images/package.png)
+    ![The first screen to set up a new PC](images/oobe.jpg)
+
+2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+
+    ![Set up device?](images/setupmsg.jpg)
+
+3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
+
+    ![Provision this device](images/prov.jpg)
+    
+4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
+
+    ![Choose a package](images/choose-package.png)
+
+5. Select **Yes, add it**.
+
+    ![Do you trust this package?](images/trust-package.png)
+    
+6. Read and accept the Microsoft Software License Terms.  
+
+    ![Sign in](images/license-terms.png)
+    
+7. Select **Use Express settings**.
+
+    ![Get going fast](images/express-settings.png)
+
+8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
+
+    ![Who owns this PC?](images/who-owns-pc.png)
+
+9. On the **Choose how you'll connect** screen, select **Join a domain** and tap **Next**.
+
+    ![Connect to Azure AD](images/connect-ad.png)
+
+10. Sign in with  your domain account and password. When you see the progress ring, you can remove the USB drive.
+
+    
 
