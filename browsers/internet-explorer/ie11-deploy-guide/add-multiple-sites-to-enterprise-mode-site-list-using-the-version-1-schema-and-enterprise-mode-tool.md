@@ -48,7 +48,7 @@ Each XML file must include:
 -   **&lt;docMode&gt; tag.**This tag specifies the domains and domain paths that need either to appear using the specific doc mode you assigned to the site. Enterprise Mode takes precedence over document modes, so sites that are already included in the Enterprise Mode site list won’t be affected by this update and will continue to load in Enterprise Mode, as usual. For more specific info about using document modes, see [Fix web compatibility issues using document modes and the Enterprise Mode site list](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md).
 
 ### Enterprise Mode v.1 XML schema example
-The following is an example of what your XML file should look like when you’re done adding your sites. For more info about how to create your XML file, see [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices](enterprise-mode-schema-version-1-guidance.md).
+The following is an example of what your XML file should look like when you’re done adding your sites. For more info about how to create your XML file, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 ```
 <rules version="1">
@@ -96,7 +96,7 @@ You can save the file locally or to a network share. However, you must make sure
 After you’ve added all of your sites to the tool and saved the file to XML, you can configure the rest of the Enterprise Mode functionality to use it. You can also turn Enterprise Mode on locally, so your users have the option to use Enterprise Mode on individual websites from the **Tools** menu. For more information, see [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md).
 
 ## Related topics
-- [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices](enterprise-mode-schema-version-1-guidance.md)
+- [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md)
 - [Download the Enterprise Mode Site List Manager (schema v.1) tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
  
 

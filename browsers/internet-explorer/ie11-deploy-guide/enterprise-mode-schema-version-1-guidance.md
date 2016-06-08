@@ -6,10 +6,10 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices (Internet Explorer 11 for IT Pros)
+title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
 ---
 
-# Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices
+# Enterprise Mode schema v.1 guidance
 
 **Applies to:**
 
