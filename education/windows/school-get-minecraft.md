@@ -14,9 +14,6 @@ author: jdeckerMS
 
 -   Windows 10  
 
-
-> <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
-
 When you sign up for early access to [Minecraft Education Edition](http://education.minecraft.net), Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
 
 > **Note**: If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 subscription when you request Minecraft Education Edition.
@@ -180,6 +177,21 @@ Minecraft: Education Edition adds a new role for teachers: **Basic Purchaser**. 
     Windows Store for Business updates the list of people and permissions. 
     
     ![Permission page for Windows Store for Business](images/minecraft-assign-roles-2.png)
+
+## Private store
+
+When you create you Windows Store for Business account, you'll have a set of apps included for free in your private store. Apps in your private store are available for all people in your organization to install and use. 
+
+These apps will automatically be in your private store:
+- Word mobile
+- Excel mobile
+- PowerPoint mobile
+- OneNote
+- Sway
+- Fresh Paint
+- Minecraft: Education Edition
+
+As an admin, you can remove any of these apps from the private store if you'd prefer to control how apps are distributed. 
 
 ## Learn more
 
