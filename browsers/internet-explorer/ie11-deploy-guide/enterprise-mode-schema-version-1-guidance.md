@@ -18,7 +18,7 @@ title: Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update 
 
 Use the Enterprise Mode Site List Manager tool to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
-If you're using a Windows 10-based device, we strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md).
+If you're using a Windows 10-based device, we strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
 
 ## Enterprise Mode schema v.1 example
 The following is an example of the Enterprise Mode schema v.1. This schema can run on devices running Windows 7, Windows 8.1, and Windows 10.

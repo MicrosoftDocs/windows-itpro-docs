@@ -6,10 +6,10 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Enterprise Mode schema v.2 guidance for Windows 10-based devices (Internet Explorer 11 for IT Pros)
+title: Enterprise Mode schema v.2 guidance (Internet Explorer 11 for IT Pros)
 ---
 
-# Enterprise Mode schema v.2 guidance for Windows 10-based devices
+# Enterprise Mode schema v.2 guidance
 
 **Applies to:**
 
@@ -18,7 +18,7 @@ title: Enterprise Mode schema v.2 guidance for Windows 10-based devices (Interne
 Use the Enterprise Mode Site List Manager tool to create and update your site list for devices running Windows 10, using the version 2.0 (v.2) of the Enterprise Mode schema. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
 **Important**<br>
-These schema updates only apply to devices running Windows 10. For devices running Windows 7 or Windows 8.1, see [Enterprise Mode schema guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md).
+These schema updates only apply to devices running Windows 10. For devices running Windows 7 or Windows 8.1, see [Enterprise Mode schema guidance](enterprise-mode-schema-version-1-guidance.md).
 
 ## Enterprise Mode schema v.2 updates
 Because of the schema changes, you can't combine the old version (v.1) with the new version (v.2) of the schema. If you look at your XML file, you can tell which version you're using by:
@@ -249,7 +249,7 @@ With:
 While the old, replaced attributes aren't supported in the v.2 version of the schema, they'll continue to work in the v.1 version of the schema. If, however, you're using the v.2 version of the schema and these attributes are still there, the v.2 version schema takes precedence. We don’t recommend combining the two schemas, and instead recommend that you move to the v.2 version of the schema to take advantage of the new features.
 
 **Important**<br>
-Saving your v.1 version of the file using the new Enterprise Mode Site List Manager tool for Windows 10 automatically updates the XML to the new v.2 version of the schema.
+Saving your v.1 version of the file using the new Enterprise Mode Site List Manager (schema v.2) tool automatically updates the XML to the new v.2 version of the schema.
 
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:

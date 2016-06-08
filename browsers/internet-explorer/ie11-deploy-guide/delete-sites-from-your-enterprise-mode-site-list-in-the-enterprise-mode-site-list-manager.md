@@ -27,9 +27,9 @@ The site is permanently removed from your list.
 
 If you delete a site by mistake, you’ll need to manually add it back using the instructions in the following topics, based on operating system.
 
--   [Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md)
+-   [Add sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.2) tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md)
 
--   [Add sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md)
+-   [Add sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.1) tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md)
 
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2) tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)

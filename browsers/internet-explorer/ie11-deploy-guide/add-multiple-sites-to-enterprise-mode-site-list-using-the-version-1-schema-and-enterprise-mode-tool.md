@@ -6,10 +6,10 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
+title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1) tool (Internet Explorer 11 for IT Pros)
 ---
 
-# Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool
+# Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1) tool
 
 **Applies to:**
 
@@ -18,7 +18,7 @@ title: Add multiple sites to the Enterprise Mode site list using a file and the 
 
 You can add multiple sites to your Enterprise Mode site list by creating a custom text (TXT) or Extensible Markup Language (XML) file of problematic sites and then adding it in the **Bulk add from file** area of the Enterprise Mode Site List Manager tool. You can only add specific URLs, not Internet or Intranet Zones.
 
-If you want to add your websites one at a time, see Add sites to the [Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md).
+If you want to add your websites one at a time, see Add sites to the [Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.1) tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md).
 
 ## Create an Enterprise Mode site list (TXT) file
 You can create and use a custom text file to add multiple sites to your Enterprise Mode site list at the same time. <p>**Important**<br>This text file is only lets you add multiple sites at the same time. You can’t use this file to deploy Enterprise Mode into your company.
@@ -37,7 +37,7 @@ bing.com/images
 ```
 
 ## Create an Enterprise Mode site list (XML) file using the v.1 version of the Enterprise Mode schema
-You can create and use a custom XML file with the Enterprise Mode Site List Manager tool to add multiple sites to your Enterprise Mode site list at the same time. For more info about the v.1 version of the Enterprise Mode schema, see [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md).
+You can create and use a custom XML file with the Enterprise Mode Site List Manager tool to add multiple sites to your Enterprise Mode site list at the same time. For more info about the v.1 version of the Enterprise Mode schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 Each XML file must include:
 

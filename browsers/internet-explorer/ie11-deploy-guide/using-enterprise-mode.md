@@ -32,13 +32,13 @@ Because we’ve added the IE7 Enterprise Mode option, we’ve had to rename the 
 ## Turning on and using IE7 Enterprise Mode or IE8 Enterprise Mode
 For instructions about how to add IE7 Enterprise Mode or IE8 Enterprise Mode to your webpages and apps, see:
 
--   [Add single sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md)
+-   [Add single sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.2) tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md)
 
--   [Add single sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md)
+-   [Add single sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.1) tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md)
 
--   [Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md)
+-   [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2) tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md)
 
--   [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md)
+-   [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1) tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md)
 
 For instructions and more info about how to fix your compatibility issues using Enterprise Mode, see [Fix web compatibility issues using document modes and the Enterprise Mode site list](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md).
 

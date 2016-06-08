@@ -22,7 +22,7 @@ title: Remove all sites from your Enterprise Mode site list using the Enterprise
 You can clear all of the sites from your global Enterprise Mode site list.
 
 **Important**  
-This is a permanent removal and erases everything. However, if you determine it was a mistake, and you saved an XML copy of your list, you can add the file again by following the steps in the [Add multiple sites to the Enterprise Mode site list using a file and Windows 10 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md) or [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md), depending on your operating system.
+This is a permanent removal and erases everything. However, if you determine it was a mistake, and you saved an XML copy of your list, you can add the file again by following the steps in the [Add multiple sites to the Enterprise Mode site list using a file and Enterprise Mode Site List Manager (schema v.2) tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md) or [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1) tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md), depending on your operating system.
 
  ![](images/wedge.gif) **To clear your compatibility list**
 

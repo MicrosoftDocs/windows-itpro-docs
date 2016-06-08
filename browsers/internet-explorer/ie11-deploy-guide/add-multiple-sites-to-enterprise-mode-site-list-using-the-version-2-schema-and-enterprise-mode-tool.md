@@ -6,10 +6,10 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
+title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2) tool (Internet Explorer 11 for IT Pros)
 ---
 
-# Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool
+# Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2) tool
 
 **Applies to:**
 
@@ -17,11 +17,13 @@ title: Add multiple sites to the Enterprise Mode site list using a file and the 
 
 You can add multiple sites to your Enterprise Mode site list by creating a custom text (TXT) or Extensible Markup Language (XML) file of problematic sites and then adding it in the **Bulk add from file** area of the Windows 10 Enterprise Mode Site List Manager tool. You can only add specific URLs, not Internet or Intranet Zones.
 
-To add your websites one at a time, see [Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md).
+To add your websites one at a time, see [Add sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.2) tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md).
 
 ## Create an Enterprise Mode site list (TXT) file
 
-You can create and use a custom text file with the Windows 10 Enterprise Mode Site List Manager tool to add multiple sites to your Enterprise Mode site list at the same time.<p>**Important:**<br>This text file is only lets you add multiple sites at the same time. You can’t use this file to deploy Enterprise Mode into your company.
+You can create and use a custom text file with the Enterprise Mode Site List Manager (schema v.2) tool to add multiple sites to your Enterprise Mode site list at the same time.
+
+>**Important:**<br>This text file is only lets you add multiple sites at the same time. You can’t use this file to deploy Enterprise Mode into your company.
 
 You must separate each site using commas or carriage returns. For example:
 
@@ -50,7 +52,7 @@ Each XML file must include:
 
 ### Enterprise Mode v.2 XML schema example
 
-The following is an example of what your XML file should look like when you’re done adding your sites. For more info about how to create your XML file, see [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md).
+The following is an example of what your XML file should look like when you’re done adding your sites. For more info about how to create your XML file, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
 
 ```
 <site-list version="205">
@@ -102,8 +104,8 @@ You can save the file locally or to a network share. However, you must make sure
 After you’ve added all of your sites to the tool and saved the file to XML, you can configure the rest of the Enterprise Mode functionality to use it. You can also turn Enterprise Mode on locally, so your users have the option to use Enterprise Mode on individual websites from the **Tools** menu. For more information, see [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md).
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (Schema, version 2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md)
+- [Download the Enterprise Mode Site List Manager (schema v.2) tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md)
  
 
  
