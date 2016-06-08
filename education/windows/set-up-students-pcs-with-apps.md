@@ -22,7 +22,9 @@ If you want to [provision a school PC to join a domain](set-up-students-pcs-to-j
 
 ## Add apps to a provisioning package
 
-1. Follow the steps to [create the provisioning package](set-up-students-pcs-to-join-domain.md#create-the-provisioning-package). On the **Finish** page, select **Switch to advanced editor**.
+1. Follow the steps to [create the provisioning package](set-up-students-pcs-to-join-domain.md#create-the-provisioning-package). 
+
+2. On the **Finish** page, select **Switch to advanced editor**.
 
   ![Switch to advanced editor](images/icd-school-adv-edit.png)
 

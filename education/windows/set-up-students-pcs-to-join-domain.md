@@ -52,7 +52,7 @@ If your school uses Active Directory, use the Windows Imaging and Configuration 
 
 11. Toggle **Yes** or **No** to configure the PC for shared use. 
 
-12. (Optional) Toggle **Yes** or **No** to configure the PC for secure testing. If you select **Yes**, you must also enter the test account to be used and the URL for the test. If you don't configure the test account and URL in this provisioning package, you can do so after the PC is configured; for more information, see [Take tests in Windows 10](take-tests-in-windows-10).
+12. (Optional) Toggle **Yes** or **No** to configure the PC for secure testing. If you select **Yes**, you must also enter the test account to be used and the URL for the test. If you don't configure the test account and URL in this provisioning package, you can do so after the PC is configured; for more information, see [Take tests in Windows 10](take-tests-in-windows-10.md).
 
 10. Click **Finish**.
 
