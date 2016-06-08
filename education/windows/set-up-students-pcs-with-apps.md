@@ -18,11 +18,11 @@ This topic explains how to create and apply a provisioning package that contains
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
 
-If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain) and add apps in the same provisioning package, follow the steps in [Add apps to a provisioning package](#add-apps-to-a-provisioning-package). If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app), and then follow the steps in [Create a provisioning package to add apps after initial setup](#create-a-provisioning-package-to-add-apps-after-initial-setup).
+If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Add apps to a provisioning package](#add-apps-to-a-provisioning-package). If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md), and then follow the steps in [Create a provisioning package to add apps after initial setup](#create-a-provisioning-package-to-add-apps-after-initial-setup).
 
 ## Add apps to a provisioning package
 
-1. Follow the steps to [create the provisioning package](set-up-students-pcs-to-join-domain#create-the-provisioning-package). On the **Finish** page, select **Switch to advanced editor**.
+1. Follow the steps to [create the provisioning package](set-up-students-pcs-to-join-domain.md#create-the-provisioning-package). On the **Finish** page, select **Switch to advanced editor**.
 
   ![Switch to advanced editor](images/icd-school-adv-edit.png)
 
@@ -143,8 +143,9 @@ If your build is successful, the name of the provisioning package, output direct
 **Next step**
 - [Apply the provisioning package to a PC](#apply-package)
 
-## Apply package
+## Apply package 
 
+**During initial setup**
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
     ![The first screen to set up a new PC](images/oobe.jpg)
@@ -184,6 +185,15 @@ If your build is successful, the name of the provisioning package, output direct
 10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
 
     ![Sign in](images/sign-in-prov.png)
+
+    
+**After setup**
+
+On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. 
+
+![add a package option](images/package.png)
+
+
 
 ## Learn more
 -   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
