@@ -2,7 +2,11 @@
 title: Windows updates (Surface Hub)
 description: You can manage Windows updates on your Microsoft Surface Hub by setting the maintenance window, deferring updates, or using Windows Server Update Services (WSUS).
 ms.assetid: A737BD50-2D36-4DE5-A604-55053D549045
-keywords: ["manage Windows updates", "Surface Hub", "Windows Server Update Services", "WSUS"]
+keywords: manage Windows updates, Surface Hub, Windows Server Update Services, WSUS
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -20,7 +24,7 @@ A default maintenance window is set for all new Surface Hubs:
 
 Most Windows updates are downloaded and installed automatically by Surface Hub. You can change the maintenance window to limit when the device can be automatically rebooted after a Windows update installation. For those updates that require a reboot of the device, the update installation will be postponed until the maintenance window begins. If a meeting is scheduled to start during the maintenance window, or if the Surface Hub sensors detect that the device is being used, the pending installation will be postponed to the next maintenance window.
 
-**Note**  : If an update installation has been pending for 28 days, on the 28th day the update will be forcibly installed. The device will ignore meetings or sensor status and reboot during the maintenance window.
+>**Note**: If an update installation has been pending for 28 days, on the 28th day the update will be forcibly installed. The device will ignore meetings or sensor status and reboot during the maintenance window.
 
  
 
