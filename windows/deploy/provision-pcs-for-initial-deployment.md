@@ -42,6 +42,7 @@ In a simple provisioning package, you can configure:
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more. To learn about provisioning packages that include more than the settings in a simple provisioning package, see [Provision PCs with apps and certificates](provision-pcs-with-apps-and-certificates.md). 
 
 > **Tip!**  Use simple provisioning to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
+
 ![open advanced editor](images/icd-simple-edit.png)
 
 ## Create the provisioning package
