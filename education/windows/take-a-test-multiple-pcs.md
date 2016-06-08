@@ -2,9 +2,10 @@
 title: Set up Take a Test on multiple PCs
 description: Learn how to set up and use the Take a Test app on multiple PCs.
 keywords: ["shared cart", "shared PC", "school"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
+ms.pagetype: edu
 author: jdeckerMS
 ---
 
