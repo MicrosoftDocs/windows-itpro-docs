@@ -29,6 +29,8 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 
 -   Simple to apply.
 
+[Learn more about the benefits and uses of provisioning packages.](../whats-new/new-provisioning-packages.md)
+
 ## What does simple provisioning do?
 
 In a simple provisioning package, you can configure:

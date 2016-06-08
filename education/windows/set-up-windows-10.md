@@ -15,13 +15,15 @@ author: jdeckerMS
 -   Windows 10 
 
 
-![Which tool to use to setup Windows 10](images/setup-options.png)
+![Which tool to use to set up Windows 10](images/setup-options.png)
 
 
 
 ## Related topics
 
+[Take tests in Windows 10](take-tests-in-windows-10.md)
 
+[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 
 
 
