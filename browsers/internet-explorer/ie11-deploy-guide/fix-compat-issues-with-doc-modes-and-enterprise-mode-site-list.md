@@ -93,7 +93,7 @@ To help you move forward, you can now use the Enterprise Mode site list to speci
 
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2) tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.1) tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
  
 

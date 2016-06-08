@@ -97,7 +97,7 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 
 ## Related topics
 - [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices](enterprise-mode-schema-version-1-guidance.md)
-- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.1) tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
  
 
  
