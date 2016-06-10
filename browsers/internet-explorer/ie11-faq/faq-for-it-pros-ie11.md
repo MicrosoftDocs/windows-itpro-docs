@@ -9,7 +9,7 @@ title: Internet Explorer 11 - FAQ for IT Pros (Internet Explorer 11 for IT Pros)
 ---
 
 # Internet Explorer 11 - FAQ for IT Pros
-Answering frequently asked questions about Internet Explorer 11 features, operating system support, integration with the Windows operating system, Group Policy, and general configuration.
+Answering frequently asked questions about Internet Explorer 11 (IE11) features, operating system support, integration with the Windows operating system, Group Policy, and general configuration.
 
 ## Frequently Asked Questions
 
