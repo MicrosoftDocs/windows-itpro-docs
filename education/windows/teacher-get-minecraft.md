@@ -147,6 +147,7 @@ If you ran **InstallMinecraftEducationEdition.bat** and Minecraft: Education Edi
 | Scrip starts, but stops quickly. | Policy prevents scripts from running on the PC.  | Contact IT Admin. |
 | App isn't available for other users. | No restart after install. If you don't restart the PC, and just switch users the app will not be available.| Restart PC. </br> Run **InstallMinecraftEducationEdition.bat** again. </br> If a restart doesn't work, contact your IT Admin.  | 
 
+
 If you are still having trouble installing the app, you can get more help on our [Support page](http://go.microsoft.com/fwlink/?LinkID=799757). 
 
 ## Related topics
