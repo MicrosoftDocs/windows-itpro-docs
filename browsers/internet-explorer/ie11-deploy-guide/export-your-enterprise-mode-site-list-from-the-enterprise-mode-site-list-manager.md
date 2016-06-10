@@ -2,7 +2,7 @@
 description: After you create your Enterprise Mode site list in the Enterprise Mode Site List Manager, you can export the contents to an Enterprise Mode (.EMIE) file.
 ms.assetid: 9ee7c13d-6fca-4446-bc22-d23a0213a95d
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat

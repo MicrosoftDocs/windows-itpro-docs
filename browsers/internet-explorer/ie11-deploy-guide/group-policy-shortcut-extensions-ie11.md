@@ -2,7 +2,7 @@
 description: Instructions about how to create and configure shortcut preference extensions to file system objects, URLs, and shell objects.
 ms.assetid: c6fbf990-13e4-4be7-9f08-5bdd43179b3b
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

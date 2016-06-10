@@ -1,7 +1,7 @@
 ---
 title: Change history for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 description: This topic lists new and updated topics in the Internet Explorer 11 documentation for Windows 10 and Windows 10 Mobile.
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ---

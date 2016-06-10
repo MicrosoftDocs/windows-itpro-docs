@@ -2,7 +2,7 @@
 description: Use the topics in this section to learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager in your company.
 ms.assetid: d52ba8ba-b3c7-4314-ba14-0610e1d8456e
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat

@@ -1,7 +1,7 @@
 ---
 description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: eross-msft

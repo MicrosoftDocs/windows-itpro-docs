@@ -2,7 +2,7 @@
 description: Frequently asked questions about Internet Explorer 11 for IT Pros
 ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: explore
 ms.sitesec: library
 title: Internet Explorer 11 - FAQ for IT Pros (Internet Explorer 11 for IT Pros)

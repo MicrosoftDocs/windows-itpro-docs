@@ -2,7 +2,7 @@
 description: When you add multiple sites to your Enterprise Mode site list entries, they’re validated by the Enterprise Mode Site List Manager before they’re entered into your global list.
 ms.assetid: 9f80e39f-dcf1-4124-8931-131357f31d67
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat

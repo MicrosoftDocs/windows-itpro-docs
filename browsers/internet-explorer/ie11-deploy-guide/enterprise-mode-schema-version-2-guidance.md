@@ -2,7 +2,7 @@
 description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 10.
 ms.assetid: 909ca359-5654-4df9-b9fb-921232fc05f5
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat

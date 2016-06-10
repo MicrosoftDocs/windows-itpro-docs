@@ -2,7 +2,7 @@
 description: Use this section to learn about how to turn on and use IE7 Enterprise Mode or IE8 Enterprise Mode.
 ms.assetid: 238ead3d-8920-429a-ac23-02f089c4384a
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -2,7 +2,7 @@
 description: If you need to replace your entire site list because of errors, or simply because it’s out of date, you can import your exported Enterprise Mode site list using the Enterprise Mode Site List Manager.
 ms.assetid: cacd5d68-700b-4a96-b4c9-ca2c40c1ac5f
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
