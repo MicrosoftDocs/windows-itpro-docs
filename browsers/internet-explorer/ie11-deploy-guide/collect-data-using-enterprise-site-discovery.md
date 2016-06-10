@@ -339,11 +339,11 @@ You can import this XML data into the correct version of the Enterprise Mode Sit
 
  ![](images/wedge.gif) **To add your XML data to your Enterprise Mode site list**
 
-1.  Open the Enterprise Mode Site List Manager tool, click **File**, and then click **Bulk add from file**.
+1.  Open the Enterprise Mode Site List Manager, click **File**, and then click **Bulk add from file**.
 ![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
 
 2.  Go to your XML file to add the included sites to the tool, and then click **Open**.<br>
-Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager tool](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
+Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
 
 3.  Click **OK** to close the **Bulk add sites to the list** menu.
 

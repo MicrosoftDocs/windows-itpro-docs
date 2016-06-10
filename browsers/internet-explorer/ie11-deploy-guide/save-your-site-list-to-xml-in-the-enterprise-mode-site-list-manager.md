@@ -29,9 +29,9 @@ You can save your current Enterprise Mode compatibility site list as an XML file
 The first time a user starts Internet Explorer 11 on a managed device; Internet Explorer will look for a new version of the site list at the specified location. If the browser finds an updated site list, IE downloads the new XML site list and uses it.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (schema v.2) tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1) tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
-- [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager-tool.md)
  
 
  

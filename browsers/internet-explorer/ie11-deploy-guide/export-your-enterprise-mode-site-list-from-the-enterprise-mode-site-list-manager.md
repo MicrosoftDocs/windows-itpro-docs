@@ -6,10 +6,10 @@ ms.prod: IE11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Export your Enterprise Mode site list from the Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
+title: Export your Enterprise Mode site list from the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ---
 
-# Export your Enterprise Mode site list from the Enterprise Mode Site List Manager tool
+# Export your Enterprise Mode site list from the Enterprise Mode Site List Manager
 
 **Applies to:**
 
@@ -32,9 +32,9 @@ This file is not intended for distribution to your managed devices. Instead, it 
 
 ## Related topics
 
-- [Download the Enterprise Mode Site List Manager (schema v.2) tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1) tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
-- [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager-tool.md)
  
 
  

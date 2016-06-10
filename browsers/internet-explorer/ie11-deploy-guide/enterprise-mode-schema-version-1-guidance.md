@@ -1,5 +1,5 @@
 ---
-description: Use the Enterprise Mode Site List Manager tool to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
+description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
 ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
 author: eross-msft
 ms.prod: IE11
@@ -16,7 +16,7 @@ title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
 -   Windows 8.1
 -   Windows 7
 
-Use the Enterprise Mode Site List Manager tool to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
+Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
 If you're using a Windows 10-based device, we strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).
 
