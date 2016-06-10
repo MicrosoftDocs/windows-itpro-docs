@@ -56,9 +56,11 @@ If your school uses Active Directory, use the Windows Imaging and Configuration 
 
 10. Click **Finish**.
 
-11. Review your settings in the summary. You can return to previous pages to change your selections. Then, under Protect your package, toggle **Yes** or **No** to encrypt the provisioning package. If you select **Yes**, enter a password. This password must be entered to apply the encrypted provisioning package.
+11. Review your settings in the summary. You can return to previous pages to change your selections. Then, under **Protect your package**, toggle **Yes** or **No** to encrypt the provisioning package. If you select **Yes**, enter a password. This password must be entered to apply the encrypted provisioning package.
 
 12. Click **Create**.
+
+13. You will see the file path for your provisioning package (by default, %windir%\Users\*your alias*\Windows Imaging and Configuration Designer (WICD)\*Project name*). Copy the provisioning package to a USB drive.
 
 > **Important**  When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 

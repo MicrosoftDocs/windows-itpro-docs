@@ -136,18 +136,13 @@ If your build is successful, the name of the provisioning package, output direct
 
     -   Removable media (USB/SD)
 
-    -   Email
-
-    -   USB tether (mobile only)
-
-    -   NFC (mobile only)
-
+   
 **Next step**
 - [Apply the provisioning package to a PC](#apply-package)
 
 ## Apply package 
 
-**During initial setup**
+**During initial setup, from a USB drive**
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
     ![The first screen to set up a new PC](images/oobe.jpg)
@@ -189,9 +184,9 @@ If your build is successful, the name of the provisioning package, output direct
     ![Sign in](images/sign-in-prov.png)
 
     
-**After setup**
+**After setup, from a USB drive, network folder, or SharePoint site**
 
-On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. 
+On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and select the package to install. 
 
 ![add a package option](images/package.png)
 
