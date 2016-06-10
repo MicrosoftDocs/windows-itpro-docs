@@ -25,9 +25,9 @@ Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, lett
 You can add individual sites to your compatibility list by using the Enterprise Mode Site List Manager.<p>
 **Note**<br>If you're using the v.1 version of the Enterprise Mode schema, you'll need to use the Enterprise Mode Site List Manager (schema v.1). For more info, see [Add sites to the Enterprise Mode site list using the WEnterprise Mode Site List Manager (schema v.1)](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md).
 
- ![](images/wedge.gif) **To add a site to your compatibility list using the Windows 10 Enterprise Mode Site List Manager**
+ ![](images/wedge.gif) **To add a site to your compatibility list using the Enterprise Mode Site List Manager (schema v.2)**
 
-1.  In the Windows 10 Enterprise Mode Site List Manager, click **Add**.
+1.  In the Enterprise Mode Site List Manager (schema v.2), click **Add**.
 
 2.  Type the URL for the website that’s experiencing compatibility problems, like *&lt;domain&gt;.com* or *&lt;domain&gt;.com*/*&lt;path&gt;* into the **URL** box.<p>
 Don't include the `http://` or `https://` designation. The tool automatically tries both versions during validation.
