@@ -102,11 +102,11 @@ Download for others allows teachers or IT admins to download a packages that the
 - You want to install this app on each of your student's Windows 10 (at least version 1511) PCs. 
 - Your students share Windows 10 computers, but sign in with their own Windows account. 
 
-**Requirements**
+#### Requirements
 - Administrative permissions are required on the PC. If you don't have the correct permissions, you won't be able to install the app. 
 - Windows 10 (at least version 1511) is required for PCs running Minecraft: Education Edition.
 
-**Check for updates**</br>
+#### Check for updates
 Minecraft: Education Edition will not install if there are updates pending for other apps on the PC. Before installing Minecraft, check to see if there are pending updates for Windows Store apps. 
 
 **To check for app updates**
@@ -121,7 +121,7 @@ Minecraft: Education Edition will not install if there are updates pending for o
       
 4. Restart the computer before installing Minecraft: Education Edition. 
    
-**To download for others**</br>
+#### To download for others
 You'll download a .zip file, extract the files, and then use one of the files to install Minecraft: Education Edition on each PC. 
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**.
@@ -135,8 +135,19 @@ You'll download a .zip file, extract the files, and then use one of the files to
 5. **Quick check**. The install program checks the PC to make sure it can run Minecraft: Education Edition. If your PC passes this test, the app will automatically install.
 6. **Restart**. Once installation is complete, restart each PC. Minecraft: Education Edition app is now ready for any student to use.
 
-**Note**:</br>
-If Minecraft: Education Edition does not install, you may need to update other Windows Store apps on your computer before you can install Minecraft: Education Edition. To do this, open the Windows Store for Business and select the Account button in the top right corner of your screen (next to Search.) Select Check for updates and install all available updates. Now Minecraft should install.
+#### Troubleshoot 
+
+If you ran **InstallMinecraftEducationEdition.bat** and Minecraft: Education Edition isn't available, there are a few things that might have happened.  
+
+| Problem | Possible cause | Solution |
+|---------|----------------|----------|
+| Script ran, but it doesn't look like the app installed. | There might be pending app updates. | Check for app updates (see steps earlier in this topic). </br> Install updates. </br> Restart PC.  </br> Run **InstallMinecraftEducationEdition.bat** again.  | 
+| App won't install. | AppLocker is configured and preventing app installs.  |      Contact IT Admin.  | 
+| App won't install. | Policy prevents users from installing apps on the PC. |  Contact IT Admin. | 
+| Scrip starts, but stops quickly. | Policy prevents scripts from running on the PC.  | Contact IT Admin. |
+| App isn't available for other users. | No restart after install. If you don't restart the PC, and just switch users the app will not be available.| Restart PC. </br> Run **InstallMinecraftEducationEdition.bat** again. </br> If a restart doesn't work, contact your IT Admin.  | 
+
+If you are still having trouble installing the app, you can get more help on our [Support page](http://go.microsoft.com/fwlink/?LinkID=799757). 
 
 ## Related topics
 
