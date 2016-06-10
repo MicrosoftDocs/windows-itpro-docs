@@ -10,7 +10,7 @@ author: brianlic-msft
 
 # Windows security baselines
 
-Microsoft is dedicated to provide our customers with a secure operating system, such as Windows 10 and Windows Server, as well as secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control of your environments by providing various configuration capabilities. Even though Windows and Windows Server are designed to be secure out-of-the-box, a large number of organizations still want more granular control of their security configurations. To navigate these large number fo controls, organizations need guidance for configuring various security features. Microsoft provides this guidance in the form of security baselines.
+Microsoft is dedicated to provide our customers with a secure operating system, such as Windows 10 and Windows Server, as well as secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control of your environments by providing various configuration capabilities. Even though Windows and Windows Server are designed to be secure out-of-the-box, a large number of organizations still want more granular control of their security configurations. To navigate these large number of controls, organizations need guidance for configuring various security features. Microsoft provides this guidance in the form of security baselines.
 
 We recommend implementing an industry-standard configuration that is broadly known and well-tested, such as a Mirosoft security baseline, as opposed to creating one yourself. This helps increase flexibility and reduce costs.  
 
@@ -42,6 +42,8 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
  ## Where can I get the security baselines?
  
  Here's a list of security baselines that are currently available.
+
+ If you want to know what has changed with each security baseline, or if you want to stay up-to-date on what’s happening with them, check out the Microsoft Security Guidance blog.
  
 ### Windows 10 security baselines
  
@@ -51,3 +53,4 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
 ### Windows Server security baselines
  
  -  [Windows Server 2012 R2 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799382)
+
