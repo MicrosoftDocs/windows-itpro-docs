@@ -14,11 +14,13 @@ title: Enterprise Mode schema v.2 guidance (Internet Explorer 11 for IT Pros)
 **Applies to:**
 
 -   Windows 10
+-   Windows 8.1
+-   Windows 7
 
-Use the Enterprise Mode Site List Manager to create and update your site list for devices running Windows 10, using the version 2.0 (v.2) of the Enterprise Mode schema. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
+Use the Enterprise Mode Site List Manager to create and update your site list for devices running Windows 7, Windows 8.1, and Windows 10, using the version 2.0 (v.2) of the Enterprise Mode schema. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
 **Important**<br>
-These schema updates only apply to devices running Windows 10. For devices running Windows 7 or Windows 8.1, see [Enterprise Mode schema guidance](enterprise-mode-schema-version-1-guidance.md).
+If you're running Windows 7 or Windows 8.1 and you've been using the version 1.0 (v.1) of the schema, you can continue to do so, but you won't get the benefits that come with the updated schema. For info about the v.1 schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 ## Enterprise Mode schema v.2 updates
 Because of the schema changes, you can't combine the old version (v.1) with the new version (v.2) of the schema. If you look at your XML file, you can tell which version you're using by:

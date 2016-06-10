@@ -13,7 +13,7 @@ title: Check for a new Enterprise Mode site list xml file (Internet Explorer 11 
 
 **Applies to:**
 
--   Windows 10 and later
+-   Windows 10
 -   Windows 8.1
 -   Windows 7
 -   Windows Server 2012 R2

@@ -13,7 +13,7 @@ title: Collect data using Enterprise Site Discovery
 **Applies to:**
 
 -   Windows 10
--   Windows 8.1 Update
+-   Windows 8.1
 -   Windows 7 with Service Pack 1 (SP1)
 
 Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.

@@ -75,14 +75,14 @@ The following is an example of what your XML file should look like when you’re
 </rules>
 ```
 
-To make sure your site list is up-to-date; wait 65 seconds after opening IE and then check that the `CurrentVersion` value in the `HKEY\CURRENT\USER\Software\Microsoft\Internet Explorer\Main\EnterpriseMode\` registry key matches the version number in your file.<p>**Important**<br>If `CurrentVersion` is not set or is wrong, it means that the XML parsing failed. This can mean that the XML file isn’t there, that there are access problems, or that the XML file format is wrong. Don’t manually change the `CurrentVersion` registry setting. You must make your changes to your site list and then update the list using the import function in the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager.
+To make sure your site list is up-to-date; wait 65 seconds after opening IE and then check that the `CurrentVersion` value in the `HKEY\CURRENT\USER\Software\Microsoft\Internet Explorer\Main\EnterpriseMode\` registry key matches the version number in your file.<p>**Important**<br>If `CurrentVersion` is not set or is wrong, it means that the XML parsing failed. This can mean that the XML file isn’t there, that there are access problems, or that the XML file format is wrong. Don’t manually change the `CurrentVersion` registry setting. You must make your changes to your site list and then update the list using the import function in the Enterprise Mode Site List Manager (.
 
-## Add multiple sites to the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager
-After you create your .xml or .txt file, you can bulk add the sites to the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager.
+## Add multiple sites to the Enterprise Mode Site List Manager (schema v.1)
+After you create your .xml or .txt file, you can bulk add the sites to the Enterprise Mode Site List Manager (schema v.1).
 
  ![](images/wedge.gif) **To add multiple sites**
 
-1.  In the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager, click **Bulk add from file**.
+1.  In the Enterprise Mode Site List Manager (schema v.1), click **Bulk add from file**.
 
 2.  Go to your site list (either .txt or .xml) to add the included sites to the tool, and then click **Open**.<p>
 Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md).
