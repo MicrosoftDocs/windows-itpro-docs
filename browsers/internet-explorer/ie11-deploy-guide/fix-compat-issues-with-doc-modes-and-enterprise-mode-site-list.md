@@ -46,7 +46,7 @@ If that doesn’t work, continue down to the next lowest document mode, stopping
 After you’ve figured out the document mode that fixes your compatibility problems, you can add the site to your Enterprise Mode site list.
 
 **Note**<br>
-There are two versions of the Enterprise Mode site list schema and the Enterprise Mode Site List Manager, based on your operating system. For more info about the schemas, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md) or [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md). For more info about the different site list management tools, see [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager-tool.md).
+There are two versions of the Enterprise Mode site list schema and the Enterprise Mode Site List Manager, based on your operating system. For more info about the schemas, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md) or [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md). For more info about the different site list management tools, see [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md).
 
  ![](images/wedge.gif) **To add your site to the site list**
 
@@ -58,7 +58,7 @@ There are two versions of the Enterprise Mode site list schema and the Enterpris
 Similar to Enterprise Mode, you can specify a document mode for a particular web path—such as contoso.com/ERP—or at a domain level. In the above, the entire contoso.com domain loads in Enterprise Mode, while microsoft.com is forced to load into IE8 Document Mode and bing.com loads in IE11.
 
 **Note**<br>
-For more information about Enterprise Mode, see [What is Enterprise Mode?](what-is-enterprise-mode.md) For more information about the Enterprise Mode Site List Manager and how to add sites to your site list, see [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager-tool.md).
+For more information about Enterprise Mode, see [What is Enterprise Mode?](what-is-enterprise-mode.md) For more information about the Enterprise Mode Site List Manager and how to add sites to your site list, see [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md).
 
 
 ### Review your Enterprise Mode site list
@@ -94,7 +94,7 @@ To help you move forward, you can now use the Enterprise Mode site list to speci
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
-- [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager-tool.md)
+- [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 
  

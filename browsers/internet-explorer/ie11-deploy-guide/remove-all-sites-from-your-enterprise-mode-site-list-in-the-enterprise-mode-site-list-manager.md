@@ -33,7 +33,7 @@ This is a permanent removal and erases everything. However, if you determine it 
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
-- [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager-tool.md)
+- [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 
  
