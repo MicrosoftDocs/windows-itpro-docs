@@ -2,7 +2,7 @@
 description: List of supported hardware and software requirements for Internet Explorer 11 and the Internet Explorer Administration Kit 11.
 ms.assetid: c50b86dc-7184-43d1-8daf-e750eb88dabb
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: plan
 ms.sitesec: library
 title: Hardware and software requirements for Internet Explorer 11 and the IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)

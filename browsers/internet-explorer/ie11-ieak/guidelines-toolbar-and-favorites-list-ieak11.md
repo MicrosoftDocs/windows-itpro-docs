@@ -2,7 +2,7 @@
 description: Customization guidelines for your Internet Explorer toolbar button and Favorites List icons.
 ms.assetid: bddc8f23-9ac1-449d-ad71-f77f43ae3b5c
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: plan
 ms.sitesec: library
 title: Customize the toolbar button and Favorites List icons using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
