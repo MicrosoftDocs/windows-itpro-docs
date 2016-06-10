@@ -373,6 +373,7 @@ Windows 10 Mobile devices use state-of-the-art technology that includes popular
 >**Note:**  Some of these hardware restrictions provide connectivity and assist in data protection. Enterprise data protection is currently being tested in select customer evaluation programs.
  
 Table 7. Windows 10 Mobile hardware restrictions
+
 | Setting                                    | Description                                                                                                                   |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Allow NFC                                  | Whether the NFC radio is enabled                                                                                              |
@@ -1058,7 +1059,7 @@ Table 20. Windows 10 Mobile Enterprise update management settings
 </tr>
 <tr class="odd">
 <td align="left">Nonsecurity upgrades deferred</td>
-<td align="left">Whether nonsecurity upgrades are deferred (You can defer upgrades up to 8 months.)</td>
+<td align="left">Whether nonsecurity upgrades are deferred (You can defer upgrades up to 4 weeks.)</td>
 </tr>
 <tr class="even">
 <td align="left">Pause update deferrals</td>
