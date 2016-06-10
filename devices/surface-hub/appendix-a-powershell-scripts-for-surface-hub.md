@@ -2,7 +2,11 @@
 title: Appendix PowerShell (Surface Hub)
 description: PowerShell scripts to help set up and manage your Microsoft Surface Hub .
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
-keywords: ["PowerShell", "set up Surface Hub", "manage Surface Hub"]
+keywords: PowerShell, set up Surface Hub, manage Surface Hub
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -38,7 +42,7 @@ What do you need in order to run the scripts?
 -   Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 -   Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 
-**Note**  Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.
+>**Note**  Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.
 
  
 
@@ -1669,7 +1673,7 @@ Set-CalendarProcessing $ strRoomUpn -AutomateProcessing AutoAccept
 
 For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests. Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.
 
-**Note**  If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.
+>**Note**  If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.
 
  
 
