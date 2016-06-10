@@ -6,7 +6,7 @@ keywords: update, LTSB, lifecycle, Windows update, upgrade
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.pagetype: security
+ms.pagetype: security, servicing
 author: greg-lindsay
 ---
 
@@ -17,6 +17,8 @@ author: greg-lindsay
 -   Windows 10 IoT Core (IoT Core)
 
 This article describes the new servicing options available in Windows 10 and IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.
+
+For Windows 10 current version numbers by servicing option see: [Windows 10 release information](https://technet.microsoft.com/en-us/windows/mt679505.aspx).
 
 **Note**  
 Several of the figures in this article show multiple feature upgrades of Windows being released by Microsoft over time. Be aware that these figures were created with dates that were chosen for illustrative clarity, not for release roadmap accuracy, and should not be used for planning purposes.

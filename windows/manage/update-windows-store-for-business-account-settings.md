@@ -4,6 +4,7 @@ description: The Account information page in Windows Store for Business shows in
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
 ---
 

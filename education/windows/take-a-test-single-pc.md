@@ -1,10 +1,11 @@
 ---
 title: Set up Take a Test on a single PC
 description: Learn how to set up and use the Take a Test app on a single PC.
-keywords: ["shared cart", "shared PC", "school"]
-ms.prod: W10
+keywords: shared cart, shared PC, school
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
+ms.pagetype: edu
 author: jdeckerMS
 ---
 

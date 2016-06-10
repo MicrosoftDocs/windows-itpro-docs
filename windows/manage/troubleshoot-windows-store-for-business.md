@@ -5,6 +5,7 @@ ms.assetid: 243755A3-9B20-4032-9A77-2207320A242A
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
 ---
 
@@ -31,24 +32,28 @@ The private store for your organization is a page in the Windows Store app that 
 
 1.  Click the people icon in Windows Store app, and click **Sign in**.
 
-    ![](images/wsfb-wsappsignin.png)
+    ![Sign in to Store app with a different account](images/wsfb-wsappsignin.png)
 
 2.  Click **Add account**, and then click **Work or school account**.
 
-    ![](images/wsfb-wsappaddacct.png)
+    ![Choose an account to use](images/wsfb-wsappaddacct.png)
 
 3.  Type the email account and password, and click **Sign in**.
 
-    ![](images/wsfb-wsappworkacct.png)
+    ![Sign in for work or school account](images/wsfb-wsappworkacct.png)
 
 4.  You should see the private store for your organization. In our example, the page is named **Contoso publishing**.
 
-    ![](images/wsfb-wsappprivatestore.png)
+    ![Private store with name highlighted](images/wsfb-wsappprivatestore.png)
 
     Click the private store to see apps in your private store.
 
-    ![](images/wsfb-privatestoreapps.png)
+    ![Private store for Contoso publishing](images/wsfb-privatestoreapps.png)
 
+## Still having trouble?
+
+If you are still having trouble using WSfB or installing the app, you can get more help on our [Support page](http://go.microsoft.com/fwlink/?LinkID=799757).
+                                
  
 
  
