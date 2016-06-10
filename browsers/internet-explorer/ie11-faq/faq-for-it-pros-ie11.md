@@ -79,7 +79,7 @@ For more information, see [Turn on Enterprise Mode and use a site list](../ie11-
 
 **Q: What is the Enterprise Mode Site List Manager tool?**<br>
 Enterprise Mode Site List Manager tool gives you a way to add websites to your Enterprise Mode site list, without having to manually code XML.<p>
-For more information, see all of the topics in [Use the Enterprise Mode Site List Manager tool](../ie11-deploy-guide/use-the-enterprise-mode-site-list-manager-tool.md).
+For more information, see all of the topics in [Use the Enterprise Mode Site List Manager](../ie11-deploy-guide/use-the-enterprise-mode-site-list-manager.md).
 
 **Q: Are browser plug-ins supported in IE11?**<br>
 The immersive version of IE11 provides an add-on–free experience, so browser plugins won't load and dependent content won't be displayed. This doesn't apply to Internet Explorer for the desktop. For more information, see [Browsing Without Plug-ins](http://go.microsoft.com/fwlink/p/?LinkId=242587). However, Internet Explorer for the desktop and IE11 on Windows 7 with SP1 do support browser plugins, including ActiveX controls such as Adobe Flash and Microsoft Silverlight.
@@ -146,11 +146,3 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 - [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
- 
-
- 
-
- 
-
-
-
