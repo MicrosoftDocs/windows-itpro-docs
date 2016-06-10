@@ -12,6 +12,12 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## June 2016
+
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Get Minecraft Education Edition](get-minecraft-for-education.md) </br> [For teachers: get Minecraft Education Edition](teachers-get-minecraft.md) </br> [For IT administrators: get Minecraft Education Edition](school-get-minecraft.md) | New |
+
 ## May 2016
 
 | New or changed topic | Description |
