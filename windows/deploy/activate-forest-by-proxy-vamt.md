@@ -2,7 +2,7 @@
 title: Activate by Proxy an Active Directory Forest (Windows 10)
 description: Activate by Proxy an Active Directory Forest
 ms.assetid: 6475fc87-a6f7-4fa8-b0aa-de19f2dea7e5
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

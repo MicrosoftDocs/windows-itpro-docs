@@ -5,6 +5,7 @@ ms.assetid: e986f903-69ad-4145-9d24-0c6d04b3e489
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: mobile
 author: eross-msft
 ---
 

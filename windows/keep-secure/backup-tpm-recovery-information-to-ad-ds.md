@@ -2,7 +2,7 @@
 title: Backup the TPM recovery Information to AD DS (Windows 10)
 description: This topic for the IT professional describes how to back up a computer’s Trusted Platform Module (TPM) information to Active Directory Domain Services (AD DS) so that you can use AD DS to administer the TPM from a remote computer.
 ms.assetid: 62bcec80-96a1-464e-8b3f-d177a7565ac5
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

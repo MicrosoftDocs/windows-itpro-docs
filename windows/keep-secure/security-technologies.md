@@ -2,7 +2,7 @@
 title: Security technologies (Windows 10)
 description: Learn more about the different security technologies that are available in Windows 10 and Windows 10 Mobile.
 ms.assetid: BFE2DE22-B0CE-465B-8CF6-28F64464DF08
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,6 +24,7 @@ Learn more about the different security technologies that are available in Windo
 | [User Account Control](user-account-control-overview.md)| User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop. With UAC, apps and tasks always run in the security context of a non-administrator account, unless an administrator specifically authorizes administrator-level access to the system. UAC can block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.|
 | [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)| Windows Defender Advanced Threat Protection (Windows Defender ATP) is an out-of-the-box Windows enterprise security service that enables enterprise cybersecurity teams to detect and respond to advanced threats on their networks.|
 | [Windows Defender in Windows 10](windows-defender-in-windows-10.md)| This topic provides an overview of Windows Defender, including a list of system requirements and new features.|
+| [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md) | Windows Firewall with Advanced Security is an important part of a layered security model. By providing host-based, two-way network traffic filtering for a device, Windows Firewall with Advanced Security blocks unauthorized network traffic flowing into or out of the local device. |
 
  
  

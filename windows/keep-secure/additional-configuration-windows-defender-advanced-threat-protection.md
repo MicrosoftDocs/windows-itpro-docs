@@ -3,8 +3,9 @@ title: Additional Windows Defender ATP configuration settings
 description: Use the Group Policy Console to configure settings that enable sample sharing from your endpoints. These settings are used in the deep analysis feature.
 keywords: configuration settings, Windows Defender ATP configuration settings, Windows Defender Advanced Threat Protection configuration settings, group policy Management Editor, computer configuration, policies, administrative templates,
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
+ms.pagetype: security
 ms.sitesec: library
 author: mjcaparas
 ---

@@ -2,7 +2,7 @@
 title: Understanding AppLocker rule exceptions (Windows 10)
 description: This topic describes the result of applying AppLocker rule exceptions to rule collections.
 ms.assetid: e6bb349f-ee60-4c8d-91cd-6442f2d0eb9c
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

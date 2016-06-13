@@ -2,7 +2,7 @@
 title: Manage VAMT Data (Windows 10)
 description: Manage VAMT Data
 ms.assetid: 233eefa4-3125-4965-a12d-297a67079dc4
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation

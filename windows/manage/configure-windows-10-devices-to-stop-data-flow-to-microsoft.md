@@ -1,11 +1,6 @@
 ---
 title: Configure Windows 10 devices to stop data flow to Microsoft (Windows 10)
-description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
-ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-keywords: privacy, stop data flow to Microsoft
-ms.prod: W10
-ms.mktglfcycl: manage
-ms.sitesec: library
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services
 ---
 
 # Configure Windows 10 devices to stop data flow to Microsoft

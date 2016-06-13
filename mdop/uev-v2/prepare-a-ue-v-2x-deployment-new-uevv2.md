@@ -695,6 +695,7 @@ Also…
 -   The UE-V Windows PowerShell feature of the UE-V Agent requires .NET Framework 4 or higher and Windows PowerShell 3.0 or higher to be enabled. Download Windows PowerShell 3.0 [here](http://go.microsoft.com/fwlink/?LinkId=309609).
 
 -   Install .NET Framework 4 or .NET Framework 4.5 on computers that run the Windows 7 or the Windows Server 2008 R2 operating system. The Windows 8, Windows 8.1, and Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
+-   The “Delete Roaming Cache” policy for Mandatory profiles is not supported with UE-V and should not be used.
 
  
 

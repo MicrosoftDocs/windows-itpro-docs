@@ -2,7 +2,7 @@
 title: Microsoft network client Digitally sign communications (if server agrees) (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Microsoft network client Digitally sign communications (if server agrees) security policy setting.
 ms.assetid: e553f700-aae5-425c-8650-f251c90ba5dd
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

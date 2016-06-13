@@ -2,9 +2,10 @@
 title: Create an enterprise data protection (EDP) policy using Microsoft Intune (Windows 10)
 description: Microsoft Intune helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
 ms.assetid: 4b307c99-3016-4d6a-9ae7-3bbebd26e721
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: security
 author: eross-msft
 ---
 
@@ -18,6 +19,9 @@ author: eross-msft
 
 Microsoft Intune helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
 
+## Important note about the June service update
+We've received some great feedback from you, our Windows 10 Insider Preview customers, about our enterprise data protection experiences and processes. Because of that feedback, we're delighted to deliver an enhanced apps policy experience with the June service update. This means that when you open an existing enterprise data protection policy after we release the June service update in your test environment, your existing Windows 10 enterprise data protection app rules (formerly in the **Protected Apps** area) will be removed.<p>To prepare for this change, we recommend that you make an immediate backup of your current app rules as they are today, so you can use them to help reconfigure your app rules with the enhanced experience. When you open an existing enterprise data protection policy after we release the June service update, you'll get a dialog box telling you about this change. Click the **OK** button to close the box and to begin reconfiguring your app rules.<p>![Microsoft Intune: Reconfigure app rules list dialog box](images/edp-intune-app-reconfig-warning.png)<p>Note that if you exit the **Policy** page before you've saved your new policy, your existing deployments won't be affected. However, if you save the policy without reconfiguring your apps, an updated policy will be deployed to your employees with an empty app rules list.
+ 
 ## Add an EDP policy
 After you’ve installed and set up Intune for your organization, you must create an EDP-specific policy.
 
@@ -37,9 +41,9 @@ During the policy-creation process in Intune, you can choose the apps you want t
 
 The steps to add your apps are based on the type of app it is; either a Universal Windows Platform (UWP) app, or a signed Desktop app, also known as a Classic Windows application.
 
-**Important**<br>EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary and will encrypt all files they create or modify, meaning that they could encrypt personal data and cause data loss during the revocation process. Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **Protected App** list.
-<p>
-**Note**<br>If you want to use **File hash** or **Path** rules, instead of Publisher rules, you must follow the steps in the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
+>**Important**<br>EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary and will encrypt all files they create or modify, meaning that they could encrypt personal data and cause data loss during the revocation process. Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **Protected App** list.<p>
+
+>**Note**<br>If you want to use **File hash** or **Path** rules, instead of Publisher rules, you must follow the steps in the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
 
 **To add a UWP app**
 
@@ -49,8 +53,9 @@ The steps to add your apps are based on the type of app it is; either a Universa
 
     **To find the Publisher and Product name values for Microsoft Store apps without installing them**
 
-    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.<p>
-    **Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the **Protected App** list. For info about how to do this, see the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
+    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
+    
+        >**Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the **Protected App** list. For info about how to do this, see the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
 
     2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
@@ -77,7 +82,8 @@ The steps to add your apps are based on the type of app it is; either a Universa
     **To find the Publisher and Product name values for apps installed on Windows 10 Mobile phones**
 
     1.  If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
-    <p>**Note**<br>Your PC and phone must be on the same wireless network.
+    
+        >**Note**<br>Your PC and phone must be on the same wireless network.
 
     2.  On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
@@ -92,7 +98,8 @@ The steps to add your apps are based on the type of app it is; either a Universa
     7. Start the app for which you're looking for the publisher and product name values
 
     8.  Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
-    <p>**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+    
+        >**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     <p>For example:<br>
      ``` json
         {
@@ -238,11 +245,11 @@ If you have multiple domains, you must separate them with the "|" character. For
     ![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 ## Choose where apps can access enterprise data
-After you've added a protection level to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.<p>
-**Important**<br>
--   Every EDP policy should include policy that defines your enterprise network locations.
+After you've added a protection level to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.
 
--   Classless Inter-Domain Routing (CIDR) notation isn’t supported for EDP configurations.
+>**Important**<br>
+-   Every EDP policy should include policy that defines your enterprise network locations.<p>
+- Classless Inter-Domain Routing (CIDR) notation isn’t supported for EDP configurations.
 
 **To specify where your protected apps can find and send enterprise data on the network**
 

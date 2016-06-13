@@ -2,7 +2,7 @@
 title: Kerberos Policy (Windows 10)
 description: Describes the Kerberos Policy settings and provides links to policy setting descriptions.
 ms.assetid: 94017dd9-b1a3-4624-af9f-b29161b4bf38
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

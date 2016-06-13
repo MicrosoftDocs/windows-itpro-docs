@@ -2,7 +2,7 @@
 title: Determine your application control objectives (Windows 10)
 description: This topic helps you with the decisions you need to make to determine what applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
 ms.assetid: 0e84003e-6095-46fb-8c4e-2065869bb53b
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

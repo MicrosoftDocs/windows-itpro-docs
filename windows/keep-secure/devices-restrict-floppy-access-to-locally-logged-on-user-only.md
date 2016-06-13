@@ -2,7 +2,7 @@
 title: Devices Restrict floppy access to locally logged-on user only (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Devices Restrict floppy access to locally logged-on user only security policy setting.
 ms.assetid: 92997910-da95-4c03-ae6f-832915423898
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
