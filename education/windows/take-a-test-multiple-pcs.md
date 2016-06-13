@@ -68,7 +68,7 @@ To configure a dedicated test account on multiple PCs, you can use:
 4. Create a policy that associates the assessment URL to the account, using the following values:
 
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/TesterAccount
-    - **String value** = Enter the account that you created in step 2, using the same account format.
+    - **String value** = Enter the account that you specified in step 2, using the same account format.
     
 5. To take the test, the student signs in to the test account.
 
