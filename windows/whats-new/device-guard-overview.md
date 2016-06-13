@@ -2,7 +2,7 @@
 title: Device Guard overview (Windows 10)
 description: Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications.
 ms.assetid: FFE244EE-5804-4CE8-A2A9-48F49DC3AEF2
-ms.pagetype: security
+ms.pagetype: mobile, security
 keywords: Device Guard
 ms.prod: w10
 ms.mktglfcycl: explore
