@@ -6,7 +6,7 @@ keywords: identity, PIN, biometric, Hello
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: security
+ms.pagetype: security, mobile
 author: jdeckerMS
 ---
 # Manage identity verification using Microsoft Passport
