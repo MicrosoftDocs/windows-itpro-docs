@@ -2,7 +2,7 @@
 description: Customize Internet Explorer 11 installation packages
 ms.assetid: 10a14a09-673b-4f8b-8d12-64036135e7fd
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Customize Internet Explorer 11 installation packages (Internet Explorer 11 for IT Pros)

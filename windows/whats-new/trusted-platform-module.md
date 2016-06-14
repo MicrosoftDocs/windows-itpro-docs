@@ -5,7 +5,7 @@ ms.assetid: CE8BBC2A-EE2D-4DFA-958E-2A178F2E6C44
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
-ms.pagetype: security
+ms.pagetype: security, mobile
 author: brianlic-msft
 ---
 

@@ -2,7 +2,7 @@
 description: Use Setup information (.inf) files to uninstall custom components from your custom browser packages.
 ms.assetid: 8257aa41-58de-4339-81dd-9f2ffcc10a08
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Use Setup information (.inf) files to uninstall custom components (Internet Explorer Administration Kit 11 for IT Pros)
