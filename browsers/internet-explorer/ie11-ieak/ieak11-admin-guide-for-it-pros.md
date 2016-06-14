@@ -3,7 +3,7 @@ description: Use this guide to learn about the several options and processes you
 description: IEAK 11 - Internet Explorer Administration Kit 11 Users Guide
 ms.assetid: 847bd7b4-d5dd-4e10-87b5-4d7d3a99bbac
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: plan
 ms.sitesec: library
 title: Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide (Internet Explorer Administration Kit 11 for IT Pros)

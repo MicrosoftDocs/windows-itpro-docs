@@ -2,7 +2,7 @@
 description: Customize Automatic Search in Internet Explorer so that your employees can type a single word into the Address box to search for frequently used pages.
 ms.assetid: 694e2f92-5e08-49dc-b83f-677d61fa918a
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: manage
 ms.sitesec: library
 title: Customize Automatic Search using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)

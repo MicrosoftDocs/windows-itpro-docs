@@ -2,7 +2,7 @@
 description: Use the \[URL\] .INS file setting to decide whether to use an auto-configured proxy server.
 ms.assetid: 05b09dfa-cf11-408d-92c2-b4ae434a59a7
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Use the URL .INS file to use an auto-configured proxy server (Internet Explorer Administration Kit 11 for IT Pros)
