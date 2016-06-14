@@ -2,7 +2,7 @@
 description: Browser cache changes and roaming profiles
 ms.assetid: 85f0cd01-6f82-4bd1-9c0b-285af1ce3436
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: performance

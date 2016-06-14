@@ -2,7 +2,7 @@
 description: How to use the Automatic Version Synchronization page in the IEAK 11 Customization Wizard to download the IE11 Setup file each time you run the Wizard.
 ms.assetid: bfc7685f-843b-49c3-8b9b-07e69705840c
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Use the Automatic Version Synchronization page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)

@@ -2,7 +2,7 @@
 description: Learn about which version of the IEAK 11 you should run, based on your license agreement.
 ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: plan
 ms.sitesec: library
 title: Determine the licensing version and features to use in IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
