@@ -252,7 +252,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 <tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny </p> </td>  
 </tr> 
 </tbody>
-</table> </br></br>
+</table> 
 
 ## Related topics
 
