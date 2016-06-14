@@ -5,6 +5,7 @@ ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: mobile
 author: jdeckerMS
 ---
 

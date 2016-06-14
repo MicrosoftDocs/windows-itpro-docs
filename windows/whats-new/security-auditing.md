@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
-ms.pagetype: security
+ms.pagetype: security, mobile
 ---
 
 # What's new in security auditing?

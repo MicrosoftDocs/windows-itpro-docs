@@ -6,7 +6,7 @@ keywords: password, hello, fingerprint, iris, biometric
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
-ms.pagetype: security
+ms.pagetype: mobile, security
 author: jdeckerMS
 ---
 

@@ -5,6 +5,7 @@ ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: mobile
 author: greg-lindsay
 ---
 

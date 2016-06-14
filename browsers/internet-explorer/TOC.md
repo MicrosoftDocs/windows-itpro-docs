@@ -26,7 +26,7 @@
 ###[Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](ie11-deploy-guide/enterprise-mode-schema-version-1-guidance.md)
 ###[Check for a new Enterprise Mode site list xml file](ie11-deploy-guide/check-for-new-enterprise-mode-site-list-xml-file.md)
 ###[Turn on local control and logging for Enterprise Mode](ie11-deploy-guide/turn-on-local-control-and-logging-for-enterprise-mode.md)
-###[Use the Enterprise Mode Site List Manager tool](ie11-deploy-guide/use-the-enterprise-mode-site-list-manager-tool.md)
+###[Use the Enterprise Mode Site List Manager tool](ie11-deploy-guide/use-the-enterprise-mode-site-list-manager.md)
 ####[Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](ie11-deploy-guide/add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md)
 ####[Add sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool](ie11-deploy-guide/add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md)
 ####[Add multiple sites to the Enterprise Mode site list using a file and the Windows 10 Enterprise Mode Site List Manager tool](ie11-deploy-guide/add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md)

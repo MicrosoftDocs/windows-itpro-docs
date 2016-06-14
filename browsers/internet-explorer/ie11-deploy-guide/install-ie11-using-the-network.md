@@ -2,7 +2,7 @@
 description: How to install the Internet Explorer 11 update using your network
 ms.assetid: 85f6429d-947a-4031-8f93-e26110a35828
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Install Internet Explorer 11 (IE11) using your network (Internet Explorer 11 for IT Pros)
