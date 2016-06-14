@@ -192,7 +192,7 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 <tr> <td> <p> Specify the system hibernate timeout (plugged in) </p> </td> <td> <p> Enabled, 0 </p> </td> 
 </tr> 
 <tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0 </p> </td> 
-</tr> </table><bbr/>
+</tr> </table><br/>
 <table style="width:100%" border="1"> 
 <caption <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Power Management</strong>  >  <strong>Video and Display Settings</strong>  ></caption>
 <tr><th><p>Policy name</p></th><th><p>Value</p></th> 
@@ -310,7 +310,7 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 </tr> 
 <tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny </p> </td>  
 </tr> 
-</table> </br></br>
+</table> </br>
 
 
 
