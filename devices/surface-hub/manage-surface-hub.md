@@ -2,7 +2,11 @@
 title: Manage Microsoft Surface Hub
 description: How to manage your Surface Hub after finishing the first-run program.
 ms.assetid: FDB6182C-1211-4A92-A930-6C106BCD5DC1
-keywords: ["manage Surface Hub"]
+keywords: manage Surface Hub
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -25,7 +29,7 @@ For remotely-managed devices, the device must be enrolled into an MDM solution, 
 
 Be aware that the two management methods are not mutually exclusive—every device will have the capability to be locally managed, and devices can be remotely managed if you choose.
 
-**Note**  If a device is remotely managed, then any changes to local settings that are also remotely managed will only persist until the next time your Surface Hub syncs with your MDM solution. Once a sync occurs, the settings and policies defined on your MDM solution will be pushed to the device, overwriting the local changes.
+>**Note**  If a device is remotely managed, then any changes to local settings that are also remotely managed will only persist until the next time your Surface Hub syncs with your MDM solution. Once a sync occurs, the settings and policies defined on your MDM solution will be pushed to the device, overwriting the local changes.
 
  
 

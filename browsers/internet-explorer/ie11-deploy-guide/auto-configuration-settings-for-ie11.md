@@ -2,7 +2,7 @@
 description: Auto configuration settings for Internet Explorer 11
 ms.assetid: 90308d59-45b9-4639-ab1b-497e5ba19023
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: networking

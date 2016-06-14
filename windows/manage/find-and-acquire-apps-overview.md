@@ -2,9 +2,10 @@
 title: Find and acquire apps (Windows 10)
 description: Use the Windows Store for Business to find apps for your organization. You can also work with developers to create line-of-business apps that are only available to your organization.
 ms.assetid: 274A5003-5F15-4635-BB8B-953953FD209A
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
 ---
 

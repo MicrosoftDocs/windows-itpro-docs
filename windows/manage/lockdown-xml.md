@@ -2,9 +2,10 @@
 title: Configure Windows 10 Mobile using Lockdown XML (Windows 10)
 description: Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device.
 ms.assetid: 22C8F654-2EC3-4E6D-8666-1EA9FCF90F5F
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security, mobile
 author: jdeckerMS
 ---
 
@@ -492,7 +493,10 @@ The XML example can be used as a lockdown file that is contained in a provisioni
 
 Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
-1.  Follow the instructions at [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651) to create a project, selecting **Common to all Windows mobile editions** for your project.
+> **Important**
+When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+
+1.  Follow the instructions at [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651) to create a project, selecting **All Windows mobile editions** for your project.
 
 2.  In **Available customizations**, go to **Runtime settings** &gt; **EmbeddedLockdownProfiles** &gt; **AssignedAccessXml**.
 

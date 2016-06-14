@@ -2,7 +2,7 @@
 description: How to use the Search Providers page in the IEAK 11 Customization Wizard to add additional providers and set the default.
 ms.assetid: 48cfaba5-f4c0-493c-b656-445311b7bc52
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Use the Search Providers page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)

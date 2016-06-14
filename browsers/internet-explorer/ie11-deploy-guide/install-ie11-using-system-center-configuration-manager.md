@@ -2,7 +2,7 @@
 description: How to install the Internet Explorer 11 update using System Center 2012 R2 Configuration Manager
 ms.assetid: 9ede9722-29b3-4cb7-956d-ffa91e7bedbd
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat

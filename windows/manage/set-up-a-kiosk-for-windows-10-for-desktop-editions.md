@@ -3,7 +3,7 @@ title: Set up a kiosk on Windows 10 Pro, Enterprise, or Education (Windows 10)
 description: A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education).
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 keywords: ["assigned access", "kiosk", "lockdown"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
@@ -119,15 +119,19 @@ Assigned Access has one setting, KioskModeApp. In the KioskModeApp setting, you 
 
 Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device as a kiosk. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
+> **Important**
+When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+
 **Create a provisioning package for a kiosk device**
 
 1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
 
-2.  Choose **New provisioning package**.
+2.  Choose **Advanced provisioning**.
+
 
 3.  Name your project, and click **Next**.
 
-4.  Choose **Common to all Windows desktop editions** and click **Next**.
+4.  Choose **All Windows desktop editions** and click **Next**.
 
 5.  On **New project**, click **Finish**. The workspace for your package opens.
 

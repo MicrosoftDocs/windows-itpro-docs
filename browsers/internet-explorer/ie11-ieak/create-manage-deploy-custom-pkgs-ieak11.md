@@ -2,7 +2,7 @@
 description: Review this list of tasks and references before you create and deploy your Internet Explorer 11 custom install packages.
 ms.assetid: fe71c603-bf07-41e1-a477-ade5b28c9fb3
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: plan
 ms.sitesec: library
 title: Tasks and references to consider before creating and deploying custom packages using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
