@@ -2,7 +2,7 @@
 description: How to use the Favorites, Favorites Bar, and Feeds page in IEAK 11 Customization Wizard to add links, web slices, and feeds to your custom browser package.
 ms.assetid: 84afa831-5642-4b8f-b7df-212a53ec8fc7
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Use the Favorites, Favorites Bar, and Feeds page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)

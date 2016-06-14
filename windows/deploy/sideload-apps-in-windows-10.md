@@ -5,6 +5,7 @@ ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: mobile
 author: greg-lindsay
 ---
 
