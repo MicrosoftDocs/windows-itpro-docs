@@ -2,7 +2,7 @@
 description: Turn on local user control and logging for Enterprise Mode.
 ms.assetid: 6622ecce-24b1-497e-894a-e1fd5a8a66d1
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
