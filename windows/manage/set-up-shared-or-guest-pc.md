@@ -140,20 +140,19 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 > **Important**: It is not recommended to set additional policies on PCs configured for **Shared PC Mode**.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
 
-<table style="width:100%" border="1"> 
-<caption><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong> </caption>
+<table border="1"> 
+<thead><tr><th colspan="2"><p>Policy path</p></th></tr>
 <tr><th><p>Policy name</p></th><th><p>Value</p></th> 
+</tr> </thead>
+<tbody>
+<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong></p></td> 
 </tr> 
-
 <tr><td><p>Prevent enabling lock screen slide show</p></td><td><p>Enabled</p></td>
 </tr> 
 <tr><td><p>Prevent changing lock screen and logon image</p></td><td><p>Enabled</p></td>
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Button Settings</strong></caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> 
-
+<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Button Settings</strong></p></td> 
+</tr> 
 <tr><td><p>Select the Power button action (plugged in)</p></td><td><p>Sleep</p></td> 
 </tr> 
 <tr><td><p>Select the Power button action (on battery)</p></td><td><p>Sleep</p></td> 
@@ -163,12 +162,9 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 <tr><td><p>Select the lid switch action (plugged in)</p></td><td><p>Sleep</p></td>
 </tr> 
 <tr><td><p>Select the lid switch action (on battery)</p></td><td><p>Sleep</p></td>
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Sleep Settings</strong></caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> 
-
+<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Sleep Settings</strong></p></td> 
+</tr> 
 <tr><td><p>Require a password when a computer wakes (plugged in)</p></td><td><p>Enabled</p></td>
 </tr> 
 <tr><td><p>Require a password when a computer wakes (on battery)</p></td><td><p>Enabled</p></td>
@@ -177,140 +173,107 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 </tr> 
 <tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p>1 hour</p></td>
 </tr> 
-<tr> <td> <p> Turn off hybrid sleep (plugged in) </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off hybrid sleep (plugged in) </p> </td> <td> <p> Enabled </p> </td>
 </tr> 
-<tr> <td> <p> Turn off hybrid sleep (on battery) </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off hybrid sleep (on battery) </p> </td> <td> <p> Enabled </p> </td>
 </tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> 1 hour </p> </td>  
+<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> 1 hour </p> </td>
 </tr> 
 <tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p> 1 hour </p> </td> 
 </tr> 
-<tr> <td> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td> <p> Enabled </p> </td>
 </tr> 
 <tr> <td> <p> Allow standby states (S1-S3) when sleeping (on battery) </p> </td> <td> <p> Enabled </p> </td> 
 </tr> 
 <tr> <td> <p> Specify the system hibernate timeout (plugged in) </p> </td> <td> <p> Enabled, 0 </p> </td> 
 </tr> 
 <tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0 </p> </td> 
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Power Management</strong>  >  <strong>Video and Display Settings</strong>  ></caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> 
-
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Video and Display Settings</strong> </p> </td> </tr> 
 <tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p> 1 hour </p> </td> 
 </tr>
- <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p> 1 hour </p> </td>  
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Logon</strong> </caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
+ <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p> 1 hour </p> </td>
 </tr> 
-
-<tr> <td> <p> Show first sign-in animation </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Logon</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Show first sign-in animation </p> </td> <td> <p> Disabled </p> </td>
 </tr> 
 <tr> <td> <p> Hide entry points for Fast User Switching </p> </td> <td> <p> Enabled </p> </td> 
 </tr> 
-<tr> <td> <p> Turn on convenience PIN sign-in </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td> <p> Turn on convenience PIN sign-in </p> </td> <td> <p> Disabled </p> </td>
 </tr> 
-<tr> <td> <p> Turn off picture password sign-in </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off picture password sign-in </p> </td> <td> <p> Enabled </p> </td>
 </tr> 
-<tr> <td> <p> Turn off app notification on the lock screen </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off app notification on the lock screen </p> </td> <td> <p> Enabled </p> </td>
 </tr> 
 <tr> <td> <p> Allow users to select when a password is required when resuming from connected standby </p> </td> <td> <p> Disabled </p> </td> 
 </tr> 
-<tr> <td> <p> Block user from showing account details on sign-in </p> </td> <td> <p> Enabled </p> </td>  
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption><strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>User Profiles</strong> </caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
+<tr> <td> <p> Block user from showing account details on sign-in </p> </td> <td> <p> Enabled </p> </td>
 </tr> 
-
-<tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled </p> </td>  
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption> <strong>Admin Templates</strong>  >  <strong>Windows Components </strong> </caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong> </p> </td> 
 </tr> 
-
+<tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled </p> </td>
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong> </p> </td> 
+</tr> 
 <tr> <td> <p> Do not show Windows Tips </p> </td> <td> <p> Enabled </p> </td> 
 </tr> 
 <tr> <td> <p> Turn off Microsoft consumer experiences </p> </td> <td> <p> Enabled </p> </td> 
 </tr> 
-<tr> <td> <p> Microsoft Passport for Work </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td> <p> Microsoft Passport for Work </p> </td> <td> <p> Disabled </p> </td>
 </tr> 
-<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled </p> </td>  
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Biometrics</strong> </caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
+<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled </p> </td>
 </tr> 
-
-<tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled </p> </td>
 </tr> 
 <tr> <td> <p> Allow users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td> 
 </tr> 
 <tr> <td> <p> Allow domain users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td> 
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Data Collection and Preview Builds</strong></caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> 
- 
-<tr> <td> <p> Toggle user control over Insider builds </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Toggle user control over Insider builds </p> </td> <td> <p> Disabled </p> </td>
 </tr> 
 <tr> <td> <p> Disable pre-release features or settings </p> </td> <td> <p> Disabled </p> </td> 
 </tr> 
 <tr> <td> <p> Do not show feedback notifications </p> </td> <td> <p> Enabled </p> </td> 
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>File Explorer</strong> </caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> 
-
-<tr> <td> <p> Show lock in the user tile menu </p> </td> <td> <p> Disabled </p> </td>  
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption><strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Maintenance Scheduler</strong></caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>File Explorer</strong> </p> </td> 
 </tr> 
- 
-<tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> 12am </p> </td>  
+<tr> <td> <p> Show lock in the user tile menu </p> </td> <td> <p> Disabled </p> </td>
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Maintenance Scheduler</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> 12am </p> </td>
 </tr> 
 <tr> <td> <p> Automatic Maintenance Random Delay </p> </td> <td> <p> Enabled, 2 hours </p> </td> 
 </tr> 
 <tr> <td> <p> Automatic Maintenance WakeUp Policy </p> </td> <td> <p> Enabled </p> </td> 
-</tr> </table><br/>
-<table style="width:100%" border="1">
-<caption> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Microsoft Edge</strong> </caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> 
-
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Microsoft Edge</strong> </p> </td> 
+</tr> 
 <tr> <td> <p> Open a new tab with an empty tab </p> </td> <td> <p> Disabled </p> </td> 
 </tr> 
 <tr> <td> <p> Configure corporate home pages </p> </td> <td> <p> Enabled, about:blank </p> </td> 
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption><strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Search</strong></caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> 
- 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Search</strong> </p> </td> 
+</tr> 
 <tr> <td> <p> Allow Cortana </p> </td> <td> <p> Disabled </p> </td> 
-</tr> </table><br/>
-<table style="width:100%" border="1"> 
-<caption><strong>Windows Settings</strong>  >  <strong>Security Settings</strong>  >  <strong>Local Policies</strong>  >  <strong>Security Options</strong> </caption>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
 </tr> 
- 
-<tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled </p>   </td>
+<tr> <td colspan="2"> <p> <strong>Windows Settings</strong>><strong>Security Settings</strong>><strong>Local Policies</strong>><strong>Security Options</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled </p> </td>
 </tr> 
 <tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart </p> </td> <td> <p> Disabled </p> </td> 
 </tr> 
 <tr> <td> <p> Shutdown: Allow system to be shut down without having to log on </p> </td> <td> <p> Disabled </p> </td> 
 </tr> 
-<tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny </p> </td>  
+<tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny </p> </td>
 </tr> 
-</table> </br>
+</tbody>
+</table> </br></br>
 
 
 
