@@ -2,7 +2,7 @@
 description: Learn about the security features available in Internet Explorer 11 and IEAK 11.
 ms.assetid: 5b64c9cb-f8da-411a-88e4-fa69dea473e2
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: plan
 ms.sitesec: library
 title: Security features and IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
