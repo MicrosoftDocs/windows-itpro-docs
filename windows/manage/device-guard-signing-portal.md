@@ -54,9 +54,8 @@ Device Guard is a feature set that consists of both hardware and software system
 
 When you're uploading files for Device Guard signing, there are a few limits for files and file size:
 
-|                                                       |          |
-|-------------------------------------------------------|----------|
 | Description                                           | Limit    |
+|-------------------------------------------------------|----------|
 | Maximum size for a policy or catalog file             | 3.5 MB   |
 | Maximum size for multiple files (uploaded in a group) | 4 MB     |
 | Maximum number of files per upload                    | 15 files |
@@ -68,9 +67,8 @@ When you're uploading files for Device Guard signing, there are a few limits for
 
 Catalog and policy files have required files types.
 
-|               |                    |
-|---------------|--------------------|
 | File          | Required file type |
+|---------------|--------------------|
 | catalog files | .cat               |
 | policy files  | .bin               |
 
