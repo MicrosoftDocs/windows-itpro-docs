@@ -144,7 +144,7 @@ If you ran **InstallMinecraftEducationEdition.bat** and Minecraft: Education Edi
 | Script ran, but it doesn't look like the app installed. | There might be pending app updates. | Check for app updates (see steps earlier in this topic). </br> Install updates. </br> Restart PC.  </br> Run **InstallMinecraftEducationEdition.bat** again.  | 
 | App won't install. | AppLocker is configured and preventing app installs.  |      Contact IT Admin.  | 
 | App won't install. | Policy prevents users from installing apps on the PC. |  Contact IT Admin. | 
-| Scrip starts, but stops quickly. | Policy prevents scripts from running on the PC.  | Contact IT Admin. |
+| Script starts, but stops quickly. | Policy prevents scripts from running on the PC.  | Contact IT Admin. |
 | App isn't available for other users. | No restart after install. If you don't restart the PC, and just switch users the app will not be available.| Restart PC. </br> Run **InstallMinecraftEducationEdition.bat** again. </br> If a restart doesn't work, contact your IT Admin.  | 
 
 
