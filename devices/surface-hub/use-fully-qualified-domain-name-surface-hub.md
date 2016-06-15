@@ -6,7 +6,7 @@ keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync 
 author: TrudyHa
 ---
 
-# When to us a fully qualified domain name with Surface Hub
+# When to use a fully qualified domain name with Surface Hub
 
 A fully qualified domain name (FQDN) is a domain name that explicitly states the location in the Domain Name System (DNS) hierarchy. All levels of a domain are specified. In the case of Skype for Business on the Surface Hub, there are a few scenarios where you need to use a FQDN.
 - **Multiple DNS suffixes** - When your Skype for Business infrastructure has disjointed namespaces such that one or more servers have a DNS suffix that doesn't match the suffix of the sign-in address (SIP) for Skype for Business.  
