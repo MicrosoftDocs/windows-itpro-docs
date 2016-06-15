@@ -21,13 +21,9 @@ You can create a Group Policy or mobile device management (MDM) policy that will
  
 ## Group Policy settings for Passport
 
-<<<<<<< HEAD
-
 The following table lists the Group Policy settings that you can configure for Passport use in your workplace. *These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.*
 
-=======
-The following table lists the Group Policy settings that you can configure for Hello use in your workplace. These policy settings are available in **Computer Configuration** &gt; **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
->>>>>>> refs/remotes/origin/rs1
+
 <table>
 <tr>
 <th colspan="2">Policy</th>
