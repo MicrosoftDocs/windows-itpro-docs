@@ -1,6 +1,6 @@
 ---
-title: Implement Microsoft Passport in your organization (Windows 10)
-description: You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
+title: Implement Windows Hello in your organization (Windows 10)
+description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
 keywords: identity, PIN, biometric, Hello
 ms.prod: w10
@@ -10,18 +10,18 @@ ms.pagetype: security
 author: jdeckerMS
 ---
 
-# Implement Microsoft Passport in your organization
+# Implement Windows Hello for Business in your organization
 
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
 
-You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
-> **Important:**  The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Microsoft Passport for Work** policy settings to manage PINs.
+You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
+> **Important:**  The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Windows Hello for Business** policy settings to manage PINs.
  
 ## Group Policy settings for Passport
 
-The following table lists the Group Policy settings that you can configure for Passport use in your workplace. *These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.*
+The following table lists the Group Policy settings that you can configure for Hello use in your workplace. *These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.*
 
 
 <table>
