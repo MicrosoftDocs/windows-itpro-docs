@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: eross-msft
+author: jdeckerMS
 ---
 
 # Windows Hello biometrics in the enterprise
