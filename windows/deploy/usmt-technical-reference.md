@@ -13,6 +13,8 @@ The User State Migration Tool (USMT) 10.0 is included with the Windows Assessme
 
 Download the Windows ADK [from this website](http://go.microsoft.com/fwlink/p/?LinkID=526803).
 
+**Note**: USMT version 10.1.10586 supports migration of user settings for installations of Microsoft Office 2003, 2007, 2010, and 2013.
+
 USMT 10.0 includes three command-line tools:
 
 -   ScanState.exe

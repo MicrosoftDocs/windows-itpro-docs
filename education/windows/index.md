@@ -25,4 +25,4 @@ author: jdeckerMS
 ## Related topics
 
 - [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
-- [Try it out: virtual labs for Windows 10 Education](https://technet.microsoft.com/en-us/windows/dn610356)
+- [Try it out: virtual labs and how-to videos for Windows 10 Education](https://technet.microsoft.com/en-us/windows/dn610356)

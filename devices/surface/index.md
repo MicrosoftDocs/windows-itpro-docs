@@ -35,7 +35,7 @@ For more information on planning for, deploying, and managing Surface devices in
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Advanced UEFI security features for Surface](advanced-uefi-security-features-for-surface.md)</p></td>
+<td><p>[Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)</p></td>
 <td><p>Find out how to install and configure the v3.11.760.0 UEFI update to enable additional security options for Surface Pro 3 devices.</p></td>
 </tr>
 <tr class="even">
