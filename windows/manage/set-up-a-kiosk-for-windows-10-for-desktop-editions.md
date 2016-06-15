@@ -303,12 +303,12 @@ $Admins_SID = "S-1-5-32-544"
 # Create a function to retrieve the SID for a user account on a machine.
 
 function Get-UsernameSID($AccountName) {
-    
+
     $NTUserObject = New-Object System.Security.Principal.NTAccount($AccountName)
     $NTUserSID = $NTUserObject.Translate([System.Security.Principal.SecurityIdentifier])
-    
+
     return $NTUserSID.Value
-        
+
 }
 
 # Get the SID for a user account named "Cashier". Rename "Cashier" to an existing account on your system to test this script.
@@ -323,7 +323,7 @@ $shutdown_device = 2
 
 # Examples. You can change these examples to use the program that you want to use as the shell.
 
-# This example sets the command prompt as the default shell, and restarts the device if the command prompt is closed.
+# This example sets the command prompt as the default shell, and restarts the device if the command prompt is closed. 
 
 $ShellLauncherClass.SetDefaultShell("cmd.exe", $restart_device)
 
