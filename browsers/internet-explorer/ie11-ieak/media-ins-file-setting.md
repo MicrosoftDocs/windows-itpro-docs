@@ -2,7 +2,7 @@
 description: Use the \[Media\] .INS file setting to specify the types of media on which your custom install package is available.
 ms.assetid: c57bae60-d520-49a9-a77d-da43f7ebe5b8
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Use the Media .INS file to specify your install media (Internet Explorer Administration Kit 11 for IT Pros)

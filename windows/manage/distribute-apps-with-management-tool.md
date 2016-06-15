@@ -2,9 +2,10 @@
 title: Distribute apps with a management tool (Windows 10)
 description: You can configure a mobile device management (MDM) tool to synchronize your Store for Business inventory. Store for Business management tool services work with MDM tools to manage content.
 ms.assetid: 006F5FB1-E688-4769-BD9A-CFA6F5829016
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
 ---
 
@@ -20,7 +21,7 @@ You can configure a mobile device management (MDM) tool to synchronize your Stor
 
 Your MDM tool needs to be installed and configured in Azure AD, in the same Azure AD directory used with Windows Store for Business.
 
-In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Store for Business. This allows the MDM tool to call Store for Business management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md).
+In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Store for Business. This allows the MDM tool to call Store for Business management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md) and [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 Store for Business services provide:
 
@@ -61,7 +62,7 @@ This diagram shows how you can use a management tool to distribute an online-lic
 
 [Configure MDM Provider](../manage/configure-mdm-provider-windows-store-for-business.md)
 
-[Manage apps you purchased from the Windows Store for Business with Micosoft InTune](https://technet.microsoft.com/library/mt676514.aspx)
+[Manage apps you purchased from the Windows Store for Business with Microsoft InTune](https://technet.microsoft.com/library/mt676514.aspx)
 
  
 

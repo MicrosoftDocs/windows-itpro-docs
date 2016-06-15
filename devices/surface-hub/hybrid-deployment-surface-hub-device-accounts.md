@@ -2,7 +2,11 @@
 title: Hybrid deployment (Surface Hub)
 description: A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub.
 ms.assetid: 7BFBB7BE-F587-422E-9CE4-C9DDF829E4F1
-keywords: ["hybrid deployment", "device account for Surface Hub", "Exchange hosted on-prem", "Exchange hosted online"]
+keywords: hybrid deployment, device account for Surface Hub, Exchange hosted on-prem, Exchange hosted online
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -21,7 +25,7 @@ Use this procedure if you use Exchange on-prem.
 
     - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
 
-        **Important**<br>Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
+        >**Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
 
         ![image showing password dialog box](images/hybriddeployment-02a.png)
         
@@ -147,7 +151,7 @@ Use this procedure if you use Exchange on-prem.
     
     -   Click **Save**.
 
-    **Note**<br>You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+    >**Note** You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
 
@@ -223,7 +227,7 @@ Use this procedure if you use Exchange online.
 
     - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
     
-        **Important**<br>Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
+        >**Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
     
         ![image showing password dialog box](images/hybriddeployment-02a.png)
     
@@ -306,6 +310,6 @@ Use this procedure if you use Exchange online.
     
     - Click **Save**.
 
-        **Note**<br>You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+        >**Note** You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.

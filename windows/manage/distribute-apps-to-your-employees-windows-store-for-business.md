@@ -2,9 +2,10 @@
 title: Distribute apps to your employees from the Windows Store for Business (Windows 10)
 description: Distribute apps to your employees from Windows Store for Business. You can assign apps to employees, or let employees install them from your private store.
 ms.assetid: E591497C-6DFA-49C1-8329-4670F2164E9E
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
 ---
 

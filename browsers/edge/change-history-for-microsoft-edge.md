@@ -9,6 +9,11 @@ ms.sitesec: library
 # Change history for Microsoft Edge
 This topic lists new and updated topics in the Microsoft Edge documentation for both Windows 10 and Windows 10 Mobile.
 
+## June 2016
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Security enhancements for Microsoft Edge](security-enhancements-microsoft-edge.md) |New |
+
 ## May 2016
 
 |New or changed topic | Description |
