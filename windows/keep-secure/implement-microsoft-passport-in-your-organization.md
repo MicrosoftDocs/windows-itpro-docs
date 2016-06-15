@@ -362,14 +362,17 @@ The work PIN is managed using the same Windows Hello for Business policies that 
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 
-[Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
+[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
 
-[Prepare people to use Microsoft Passport](prepare-people-to-use-microsoft-passport.md)
+[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md) 
 
-[Microsoft Passport and password changes](microsoft-passport-and-password-changes.md)
+[Prepare people to use Windows Hello](prepare-people-to-use-microsoft-passport.md)
 
+[Windows Hello and password changes](microsoft-passport-and-password-changes.md)
 
-[Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
+[Windows Hello errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
 
-[Event ID 300 - Passport successfully created](passport-event-300.md)
+[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
+
+[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
  

@@ -17,21 +17,23 @@ author: eross-msft
 
 Windows Hello is the biometric authentication feature that helps strengthen authentication and helps to guard against potential spoofing through fingerprint matching and facial recognition.
 
+> **Note:** When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
+
 Because we realize your employees are going to want to use this new technology in your enterprise, we’ve been actively working with the device manufacturers to create strict design and performance recommendations that help to ensure that you can more confidently introduce Windows Hello biometrics into your organization.
 
 ##How does Windows Hello work?
-Windows Hello lets your employees use fingerprint or facial recognition as an alternative method to unlocking a device. With Windows Hello, authentication happens when the employee provides his or her unique biometric identifier while accessing the device-specific Microsoft Passport credentials.
+Windows Hello lets your employees use fingerprint or facial recognition as an alternative method to unlocking a device. With Windows Hello, authentication happens when the employee provides his or her unique biometric identifier while accessing the device-specific Windows Hello credentials.
 
-The Windows Hello authenticator works with Microsoft Passport to authenticate and allow employees onto your enterprise network. Authentication doesn’t roam among devices, isn’t shared with a server, and can’t easily be extracted from a device. If multiple employees share a device, each employee will use his or her own biometric data on the device.
+The Windows Hello authenticator works to authenticate and allow employees onto your enterprise network. Authentication doesn’t roam among devices, isn’t shared with a server, and can’t easily be extracted from a device. If multiple employees share a device, each employee will use his or her own biometric data on the device.
 
 ## Why should I let my employees use Windows Hello?
 Windows Hello provides many benefits, including:
 
--   Combined with Microsoft Passport, it helps to strengthen your protections against credential theft. Because an attacker must have both the device and the biometric info or PIN, it’s much more difficult to gain access without the employee’s knowledge.
+-   It helps to strengthen your protections against credential theft. Because an attacker must have both the device and the biometric info or PIN, it’s much more difficult to gain access without the employee’s knowledge.
 
 -   Employees get a simple authentication method (backed up with a PIN) that’s always with them, so there’s nothing to lose. No more forgetting passwords!
 
--   Support for Windows Hello is built into the operating system so you can add additional biometric devices and polices as part of a coordinated rollout or to individual employees or groups using Group Policy or Mobile Device Management (MDM) configurations service provider (CSP) policies.<br>For more info about the available Group Policies and MDM CSPs, see the [Implement Microsoft Passport in your organization](implement-microsoft-passport-in-your-organization.md) topic.
+-   Support for Windows Hello is built into the operating system so you can add additional biometric devices and polices as part of a coordinated rollout or to individual employees or groups using Group Policy or Mobile Device Management (MDM) configurations service provider (CSP) policies.<br>For more info about the available Group Policies and MDM CSPs, see the [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md) topic.
 
 ## Where is Microsoft Hello data stored?
 The biometric data used to support Windows Hello is stored on the local device only. It doesn’t roam and is never sent to external devices or servers. This separation helps to stop potential attackers by providing no single collection point that an attacker could potentially compromise to steal biometric data. Additionally, even if an attacker was actually able to get the biometric data, it still can’t be easily converted to a form that could be recognized by the biometric sensor.
@@ -72,8 +74,8 @@ To allow facial recognition, you must have devices with integrated special infra
 -   Effective, real world FRR with Anti-spoofing or liveness detection: &lt;10%
 
 ## Related topics
-- [Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
-- [Implement Microsoft Passport in your organization](implement-microsoft-passport-in-your-organization.md)
+- [Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
+- [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
 - [Microsoft Passport guide](microsoft-passport-guide.md)
 - [Prepare people to use Microsoft Passport](prepare-people-to-use-microsoft-passport.md)
 - [PassportforWork CSP](http://go.microsoft.com/fwlink/p/?LinkId=708219)
