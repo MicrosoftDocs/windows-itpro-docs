@@ -101,7 +101,7 @@ Assigned access does not work on a device that is connected to more than one mon
 
 3.  Choose an account.
 
-4.  Choose an app. Only apps that can run above the lock screen will be displayed. For more information, see [Guidelines for choosing an app for assigned access](guidelnes-for-assigned-access-app.md).
+4.  Choose an app. Only apps that can run above the lock screen will be displayed. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md).
 
 5.  Close **Settings** – your choices are saved automatically, and will be applied the next time that user account logs on.
 
