@@ -23,7 +23,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-ExecutionPolicy Unrestricted
-    $org=&#39;contoso.microsoft.com&#39;
+    $org='contoso.microsoft.com'
     $cred=Get-Credential $admin@$org
     $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
@@ -34,7 +34,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     If you're changing an existing resource mailbox:
 
     ```PowerShell
-    Set-Mailbox -Identity &#39;HUB01&#39; -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+    Set-Mailbox -Identity 'HUB01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
     ```
 
     If you’re creating a new resource mailbox:
