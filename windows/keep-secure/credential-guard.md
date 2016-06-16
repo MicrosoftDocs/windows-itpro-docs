@@ -254,6 +254,10 @@ Some ways to store credentials are not protected by Credential Guard, including:
 -   Key loggers
 -   Physical attacks
 -   Does not prevent an attacker with malware on the PC from using the privileges associated with any credential. We recommend using dedicated PCs for high value accounts, such as IT Pros and users with access high value assets in your organization.
+-   Third-party security packages
+-   Digest and CredSSP credentials
+    -   When Credential Guard is enabled, neither Digest nor CredSSP have access to users' logon credentials. This implies no Single Sign-On use for these protocols.
+-   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.
 
 ## Additional mitigations
 
