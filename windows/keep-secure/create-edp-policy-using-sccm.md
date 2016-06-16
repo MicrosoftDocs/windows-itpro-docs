@@ -13,30 +13,13 @@ author: eross-msft
 # Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager
 **Applies to:**
 
--   Windows 10 Insider Preview
+-   Windows 10 Enterprise  Insider Preview
 -   Windows 10 Mobile Preview
--   System Center Configuration Manager (version 1511 or later)
+-   System Center Configuration Manager (version 1606 or later)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Configuration Manager (version 1511 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
-
-## In this topic:
--   [Add an EDP policy](#add-an-edp-policy)
-
--   [Choose which apps can access your enterprise data](#choose-which-apps-can-access-your-enterprise-data)
-
--   [Manage the EDP protection level for your enterprise data](#manage-the-edp-protection-level-for-your-enterprise-data)
-
--   [Define your enterprise-managed identity domains](#define-your-enterprise-managed-identity-domains)
-
--   [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data)
-
--   [Choose your optional EDP-related settings](#choose-your-optional-EDP-related-settings)
-
--   [Review your configuration choices in the Summary screen](#review-your-configuration-choices-in-the-summary-screen)
-
--   [Deploy the EDP policy](#deploy-the-edp-policy)
 
 ## Add an EDP policy
 After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for EDP, which in turn becomes your EDP policy.
