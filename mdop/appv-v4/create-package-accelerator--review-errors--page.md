@@ -1,9 +1,14 @@
 ---
 title: Create Package Accelerator (Review Errors) Page
 description: Create Package Accelerator (Review Errors) Page
-ms.assetid: ea3f531d-1887-4b42-a30f-b875d0ccb916
 author: jamiejdt
+ms.assetid: ea3f531d-1887-4b42-a30f-b875d0ccb916
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Create Package Accelerator (Review Errors) Page
 

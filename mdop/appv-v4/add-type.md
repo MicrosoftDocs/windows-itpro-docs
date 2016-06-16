@@ -1,9 +1,14 @@
 ---
 title: ADD TYPE
 description: ADD TYPE
-ms.assetid: 8f1d3978-9977-4851-9f46-fee6aefa3535
 author: jamiejdt
+ms.assetid: 8f1d3978-9977-4851-9f46-fee6aefa3535
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # ADD TYPE
 

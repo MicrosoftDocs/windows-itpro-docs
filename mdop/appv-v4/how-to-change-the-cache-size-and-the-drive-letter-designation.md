@@ -1,9 +1,14 @@
 ---
 title: How to Change the Cache Size and the Drive Letter Designation
 description: How to Change the Cache Size and the Drive Letter Designation
-ms.assetid: e7d7b635-079e-41aa-a5e6-655f33b4e317
 author: jamiejdt
+ms.assetid: e7d7b635-079e-41aa-a5e6-655f33b4e317
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Change the Cache Size and the Drive Letter Designation
 

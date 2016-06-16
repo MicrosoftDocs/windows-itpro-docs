@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting Information for the Application Virtualization Server
 description: Troubleshooting Information for the Application Virtualization Server
-ms.assetid: e9d43d9b-84f2-4d1b-bb90-a13740151e0c
 author: jamiejdt
+ms.assetid: e9d43d9b-84f2-4d1b-bb90-a13740151e0c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Troubleshooting Information for the Application Virtualization Server
 

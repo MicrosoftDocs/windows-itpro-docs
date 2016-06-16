@@ -1,9 +1,14 @@
 ---
 title: Command-Line Options for MED-V Installation Files
 description: Command-Line Options for MED-V Installation Files
-ms.assetid: 7b8cd3e4-1d09-44a0-b690-f85b0d0a6b02
 author: jamiejdt
+ms.assetid: 7b8cd3e4-1d09-44a0-b690-f85b0d0a6b02
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Command-Line Options for MED-V Installation Files
 

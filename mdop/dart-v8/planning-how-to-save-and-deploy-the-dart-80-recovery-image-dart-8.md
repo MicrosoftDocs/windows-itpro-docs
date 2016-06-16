@@ -1,9 +1,14 @@
 ---
 title: Planning How to Save and Deploy the DaRT 8.0 Recovery Image
 description: Planning How to Save and Deploy the DaRT 8.0 Recovery Image
-ms.assetid: 939fbe17-0e30-4c85-8782-5b84d69442a7
 author: jamiejdt
+ms.assetid: 939fbe17-0e30-4c85-8782-5b84d69442a7
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning How to Save and Deploy the DaRT 8.0 Recovery Image
 

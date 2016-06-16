@@ -1,9 +1,14 @@
 ---
 title: App-V Desktop Client Security
 description: App-V Desktop Client Security
-ms.assetid: 216b9c16-7bb4-4f94-b9d8-810501285008
 author: jamiejdt
+ms.assetid: 216b9c16-7bb4-4f94-b9d8-810501285008
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # App-V Desktop Client Security
 

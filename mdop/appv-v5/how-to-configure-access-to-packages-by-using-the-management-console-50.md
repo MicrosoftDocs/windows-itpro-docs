@@ -1,9 +1,14 @@
 ---
 title: How to Configure Access to Packages by Using the Management Console
 description: How to Configure Access to Packages by Using the Management Console
-ms.assetid: 8f4c91e4-f4e6-48cf-aa94-6085a054e8f7
 author: jamiejdt
+ms.assetid: 8f4c91e4-f4e6-48cf-aa94-6085a054e8f7
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Configure Access to Packages by Using the Management Console
 

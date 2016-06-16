@@ -1,9 +1,14 @@
 ---
 title: Getting Started with MBAM 1.0
 description: Getting Started with MBAM 1.0
-ms.assetid: 4fab4e4a-d25e-4661-b235-2b45bf5ac3e4
 author: jamiejdt
+ms.assetid: 4fab4e4a-d25e-4661-b235-2b45bf5ac3e4
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Getting Started with MBAM 1.0
 

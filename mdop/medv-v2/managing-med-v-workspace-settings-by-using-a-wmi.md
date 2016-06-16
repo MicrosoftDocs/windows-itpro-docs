@@ -1,9 +1,14 @@
 ---
 title: Managing MED-V Workspace Settings by Using a WMI
 description: Managing MED-V Workspace Settings by Using a WMI
-ms.assetid: 05a665a3-2309-46c1-babb-a3e3bbb0b1f9
 author: jamiejdt
+ms.assetid: 05a665a3-2309-46c1-babb-a3e3bbb0b1f9
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Managing MED-V Workspace Settings by Using a WMI
 

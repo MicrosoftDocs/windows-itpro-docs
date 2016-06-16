@@ -1,9 +1,14 @@
 ---
 title: How to Clear an Application
 description: How to Clear an Application
-ms.assetid: 247b8f40-531c-413e-a2e5-fc990ed0a51a
 author: jamiejdt
+ms.assetid: 247b8f40-531c-413e-a2e5-fc990ed0a51a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Clear an Application
 

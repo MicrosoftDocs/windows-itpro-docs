@@ -1,9 +1,14 @@
 ---
 title: Sequencing Wizard
 description: Sequencing Wizard
-ms.assetid: 81e2f4fa-b06e-4cbe-aeb8-6ceb8f0543a5
 author: jamiejdt
+ms.assetid: 81e2f4fa-b06e-4cbe-aeb8-6ceb8f0543a5
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Sequencing Wizard
 

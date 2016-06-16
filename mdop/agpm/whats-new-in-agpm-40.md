@@ -1,9 +1,14 @@
 ---
 title: What's New in AGPM 4.0
 description: What's New in AGPM 4.0
-ms.assetid: 31775f7f-a59c-4e64-a875-0adc9f5bc835
 author: jamiejdt
+ms.assetid: 31775f7f-a59c-4e64-a875-0adc9f5bc835
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # What's New in AGPM 4.0
 

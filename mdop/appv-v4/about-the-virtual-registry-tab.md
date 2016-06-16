@@ -1,9 +1,14 @@
 ---
 title: About the Virtual Registry Tab
 description: About the Virtual Registry Tab
-ms.assetid: ca8d837f-8218-4f86-95fd-13a44dccd022
 author: jamiejdt
+ms.assetid: ca8d837f-8218-4f86-95fd-13a44dccd022
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About the Virtual Registry Tab
 

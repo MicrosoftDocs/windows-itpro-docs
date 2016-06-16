@@ -1,9 +1,14 @@
 ---
 title: How to Set Up Publishing Servers
 description: How to Set Up Publishing Servers
-ms.assetid: 2111f079-c202-4c49-b2a6-f4237068b2dc
 author: jamiejdt
+ms.assetid: 2111f079-c202-4c49-b2a6-f4237068b2dc
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Set Up Publishing Servers
 

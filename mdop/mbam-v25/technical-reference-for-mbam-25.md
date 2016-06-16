@@ -1,9 +1,14 @@
 ---
 title: Technical Reference for MBAM 2.5
 description: Technical Reference for MBAM 2.5
-ms.assetid: da77a5b6-d5cf-4bae-9475-13a75088ab23
 author: jamiejdt
+ms.assetid: da77a5b6-d5cf-4bae-9475-13a75088ab23
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Technical Reference for MBAM 2.5
 

@@ -1,9 +1,14 @@
 ---
 title: App-V 4.6 SP1 Release Notes
 description: App-V 4.6 SP1 Release Notes
-ms.assetid: aeb6784a-864a-4f4e-976b-40c34dcfd8d6
 author: jamiejdt
+ms.assetid: aeb6784a-864a-4f4e-976b-40c34dcfd8d6
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # App-V 4.6 SP1 Release Notes
 

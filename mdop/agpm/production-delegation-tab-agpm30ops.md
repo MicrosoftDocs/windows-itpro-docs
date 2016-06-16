@@ -1,9 +1,14 @@
 ---
 title: Production Delegation Tab
 description: Production Delegation Tab
-ms.assetid: 9851637d-d5c1-4d29-8582-e8779500a14e
 author: jamiejdt
+ms.assetid: 9851637d-d5c1-4d29-8582-e8779500a14e
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Production Delegation Tab
 

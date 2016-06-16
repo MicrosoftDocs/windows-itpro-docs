@@ -1,9 +1,14 @@
 ---
 title: MED-V 2.0 Supported Configurations
 description: MED-V 2.0 Supported Configurations
-ms.assetid: 88f1d232-aa01-45ab-8da7-d086269250b5
 author: jamiejdt
+ms.assetid: 88f1d232-aa01-45ab-8da7-d086269250b5
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V 2.0 Supported Configurations
 

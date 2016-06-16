@@ -1,9 +1,14 @@
 ---
 title: Using Windows PowerShell to Administer MBAM 2.5
 description: Using Windows PowerShell to Administer MBAM 2.5
-ms.assetid: 64668e76-2cba-433d-8d2d-50df0a4b2997
 author: jamiejdt
+ms.assetid: 64668e76-2cba-433d-8d2d-50df0a4b2997
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Using Windows PowerShell to Administer MBAM 2.5
 

@@ -1,9 +1,14 @@
 ---
 title: How to Enable Reporting on the App-V 5.0 Client by Using PowerShell
 description: How to Enable Reporting on the App-V 5.0 Client by Using PowerShell
-ms.assetid: a7aaf553-0f83-4cd0-8df8-93a5f1ebe497
 author: jamiejdt
+ms.assetid: a7aaf553-0f83-4cd0-8df8-93a5f1ebe497
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Enable Reporting on the App-V 5.0 Client by Using PowerShell
 

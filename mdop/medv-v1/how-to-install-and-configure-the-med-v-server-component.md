@@ -1,9 +1,14 @@
 ---
 title: How to Install and Configure the MED-V Server Component
 description: How to Install and Configure the MED-V Server Component
-ms.assetid: 2d3c5b15-df2c-4ab6-bf78-f47ef8ae7418
 author: jamiejdt
+ms.assetid: 2d3c5b15-df2c-4ab6-bf78-f47ef8ae7418
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Install and Configure the MED-V Server Component
 

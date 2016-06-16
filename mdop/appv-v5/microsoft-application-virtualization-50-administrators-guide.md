@@ -1,9 +1,14 @@
 ---
 title: Microsoft Application Virtualization 5.0 Administrator's Guide
 description: Microsoft Application Virtualization 5.0 Administrator's Guide
-ms.assetid: c46e94b5-32cd-4377-8dc3-8163539be897
 author: jamiejdt
+ms.assetid: c46e94b5-32cd-4377-8dc3-8163539be897
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Microsoft Application Virtualization 5.0 Administrator's Guide
 

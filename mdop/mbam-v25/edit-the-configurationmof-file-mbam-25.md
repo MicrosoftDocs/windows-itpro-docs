@@ -1,9 +1,14 @@
 ---
 title: Edit the Configuration.mof File
 description: Edit the Configuration.mof File
-ms.assetid: 5d8cd76b-8ffc-4d46-b761-1b8350310c48
 author: jamiejdt
+ms.assetid: 5d8cd76b-8ffc-4d46-b761-1b8350310c48
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Edit the Configuration.mof File
 

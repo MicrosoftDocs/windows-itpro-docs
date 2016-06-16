@@ -1,9 +1,14 @@
 ---
 title: Online Help for Application Virtualization
 description: Online Help for Application Virtualization
-ms.assetid: 261ede48-976f-473c-84bc-452577efdcdf
 author: jamiejdt
+ms.assetid: 261ede48-976f-473c-84bc-452577efdcdf
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Online Help for Application Virtualization
 

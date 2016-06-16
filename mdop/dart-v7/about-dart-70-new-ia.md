@@ -1,9 +1,14 @@
 ---
 title: About DaRT 7.0
 description: About DaRT 7.0
-ms.assetid: 217ffafc-6d73-4b80-88d9-71870460d4ab
 author: jamiejdt
+ms.assetid: 217ffafc-6d73-4b80-88d9-71870460d4ab
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # About DaRT 7.0
 

@@ -1,9 +1,14 @@
 ---
 title: About the Properties Tab
 description: About the Properties Tab
-ms.assetid: a6cf6f51-3778-4c8d-9632-3af4005775d2
 author: jamiejdt
+ms.assetid: a6cf6f51-3778-4c8d-9632-3af4005775d2
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About the Properties Tab
 

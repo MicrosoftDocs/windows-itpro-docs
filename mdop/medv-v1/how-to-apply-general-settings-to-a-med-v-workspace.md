@@ -1,9 +1,14 @@
 ---
 title: How to Apply General Settings to a MED-V Workspace
 description: How to Apply General Settings to a MED-V Workspace
-ms.assetid: 6152dced-e301-4fa2-bfa0-aecf3c23f23a
 author: jamiejdt
+ms.assetid: 6152dced-e301-4fa2-bfa0-aecf3c23f23a
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Apply General Settings to a MED-V Workspace
 

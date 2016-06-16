@@ -1,9 +1,14 @@
 ---
 title: DELETE PACKAGE
 description: DELETE PACKAGE
-ms.assetid: 8f7a4598-610d-490e-a224-426acce01a9f
 author: jamiejdt
+ms.assetid: 8f7a4598-610d-490e-a224-426acce01a9f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # DELETE PACKAGE
 

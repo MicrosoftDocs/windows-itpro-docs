@@ -1,9 +1,14 @@
 ---
 title: Overview of the Tools in DaRT 10
 description: Overview of the Tools in DaRT 10
-ms.assetid: 752467dd-b646-4335-82ce-9090d4651f65
 author: jamiejdt
+ms.assetid: 752467dd-b646-4335-82ce-9090d4651f65
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Overview of the Tools in DaRT 10
 

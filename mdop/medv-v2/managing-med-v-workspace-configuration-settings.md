@@ -1,9 +1,14 @@
 ---
 title: Managing MED-V Workspace Configuration Settings
 description: Managing MED-V Workspace Configuration Settings
-ms.assetid: 517d04de-c31f-4b50-b2b3-5f8c312ed37b
 author: jamiejdt
+ms.assetid: 517d04de-c31f-4b50-b2b3-5f8c312ed37b
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Managing MED-V Workspace Configuration Settings
 

@@ -1,9 +1,14 @@
 ---
 title: DaRT 7.0 Supported Configurations
 description: DaRT 7.0 Supported Configurations
-ms.assetid: e9ee87b0-3254-4625-b178-17b2f5b8f8c8
 author: jamiejdt
+ms.assetid: e9ee87b0-3254-4625-b178-17b2f5b8f8c8
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # DaRT 7.0 Supported Configurations
 
