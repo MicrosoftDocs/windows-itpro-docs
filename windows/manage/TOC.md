@@ -21,6 +21,7 @@
 ### [Set up a device for anyone to use (kiosk mode)](set-up-a-device-for-anyone-to-use.md)
 #### [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
 #### [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
+#### [Guidelines for choosing an app for assigned access (kiosk mode)[guidelines-for-assigned-access-app.md)
 ### [Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)
 ### [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 ### [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
