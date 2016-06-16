@@ -1,9 +1,14 @@
 ---
 title: Change History Tab
 description: Change History Tab
-ms.assetid: 652ef2f0-3a3e-4844-a472-9fa99ec5ee32
 author: jamiejdt
+ms.assetid: 652ef2f0-3a3e-4844-a472-9fa99ec5ee32
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Change History Tab
 

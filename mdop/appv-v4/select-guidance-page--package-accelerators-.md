@@ -1,9 +1,14 @@
 ---
 title: Select Guidance Page (Package Accelerators)
 description: Select Guidance Page (Package Accelerators)
-ms.assetid: 608b8823-6eac-40c0-a6dc-2f0bfc0d42a1
 author: jamiejdt
+ms.assetid: 608b8823-6eac-40c0-a6dc-2f0bfc0d42a1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Select Guidance Page (Package Accelerators)
 

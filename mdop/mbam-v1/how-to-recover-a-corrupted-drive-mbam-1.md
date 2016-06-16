@@ -1,9 +1,14 @@
 ---
 title: How to Recover a Corrupted Drive
 description: How to Recover a Corrupted Drive
-ms.assetid: 715491ae-69c0-4fae-ad3f-3bd19a0db2f2
 author: jamiejdt
+ms.assetid: 715491ae-69c0-4fae-ad3f-3bd19a0db2f2
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Recover a Corrupted Drive
 

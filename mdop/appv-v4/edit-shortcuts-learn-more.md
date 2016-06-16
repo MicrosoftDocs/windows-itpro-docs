@@ -1,9 +1,14 @@
 ---
 title: Edit Shortcuts
 description: Edit Shortcuts
-ms.assetid: a0ca75aa-1059-4d0c-894c-2e3474e9f519
 author: jamiejdt
+ms.assetid: a0ca75aa-1059-4d0c-894c-2e3474e9f519
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Edit Shortcuts
 

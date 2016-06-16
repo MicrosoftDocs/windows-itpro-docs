@@ -1,9 +1,14 @@
 ---
 title: Managing Software Updates for MED-V Workspaces
 description: Managing Software Updates for MED-V Workspaces
-ms.assetid: a28d6dcd-cb9f-46ba-8dac-1d990837a3a3
 author: jamiejdt
+ms.assetid: a28d6dcd-cb9f-46ba-8dac-1d990837a3a3
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Managing Software Updates for MED-V Workspaces
 

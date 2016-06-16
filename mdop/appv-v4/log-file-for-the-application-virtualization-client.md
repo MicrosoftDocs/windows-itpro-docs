@@ -1,9 +1,14 @@
 ---
 title: Log File for the Application Virtualization Client
 description: Log File for the Application Virtualization Client
-ms.assetid: ac4b3e4a-a220-4c06-bd60-af7dc318b3a9
 author: jamiejdt
+ms.assetid: ac4b3e4a-a220-4c06-bd60-af7dc318b3a9
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Log File for the Application Virtualization Client
 

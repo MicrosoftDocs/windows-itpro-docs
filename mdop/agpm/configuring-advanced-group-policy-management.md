@@ -1,9 +1,14 @@
 ---
 title: Configuring Advanced Group Policy Management
 description: Configuring Advanced Group Policy Management
-ms.assetid: 836f4a49-2c77-4f6b-8727-9df7ef443141
 author: jamiejdt
+ms.assetid: 836f4a49-2c77-4f6b-8727-9df7ef443141
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Configuring Advanced Group Policy Management
 

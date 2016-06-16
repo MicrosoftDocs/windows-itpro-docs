@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting AGPM
 description: Troubleshooting AGPM
-ms.assetid: bedcd817-beb2-47bf-aebd-e3923c4fd06f
 author: jamiejdt
+ms.assetid: bedcd817-beb2-47bf-aebd-e3923c4fd06f
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Troubleshooting AGPM
 

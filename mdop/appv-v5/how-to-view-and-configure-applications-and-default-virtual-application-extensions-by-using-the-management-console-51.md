@@ -1,9 +1,14 @@
 ---
 title: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 description: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
-ms.assetid: 1e1941d3-fb22-4077-8ec6-7a0cb80335d8
 author: jamiejdt
+ms.assetid: 1e1941d3-fb22-4077-8ec6-7a0cb80335d8
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 

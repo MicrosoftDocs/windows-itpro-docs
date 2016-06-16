@@ -1,9 +1,14 @@
 ---
 title: About Application Virtualization Packages
 description: About Application Virtualization Packages
-ms.assetid: 69bd35c1-7af3-43db-931b-3074780aa926
 author: jamiejdt
+ms.assetid: 69bd35c1-7af3-43db-931b-3074780aa926
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About Application Virtualization Packages
 

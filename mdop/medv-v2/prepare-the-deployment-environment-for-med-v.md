@@ -1,9 +1,14 @@
 ---
 title: Prepare the Deployment Environment for MED-V
 description: Prepare the Deployment Environment for MED-V
-ms.assetid: d15ea370-7fdb-4852-a1ba-730ec7568e3e
 author: jamiejdt
+ms.assetid: d15ea370-7fdb-4852-a1ba-730ec7568e3e
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Prepare the Deployment Environment for MED-V
 

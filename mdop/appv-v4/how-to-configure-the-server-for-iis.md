@@ -1,9 +1,14 @@
 ---
 title: How to Configure the Server for IIS
 description: How to Configure the Server for IIS
-ms.assetid: 1fcfc583-322f-4a38-90d0-e64bfa9ee3d8
 author: jamiejdt
+ms.assetid: 1fcfc583-322f-4a38-90d0-e64bfa9ee3d8
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure the Server for IIS
 

@@ -1,9 +1,14 @@
 ---
 title: Release Notes for DaRT 8.0 SP1
 description: Release Notes for DaRT 8.0 SP1
-ms.assetid: fa7512d8-fb00-4c27-8f65-c15f3a8ff1cc
 author: jamiejdt
+ms.assetid: fa7512d8-fb00-4c27-8f65-c15f3a8ff1cc
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Release Notes for DaRT 8.0 SP1
 

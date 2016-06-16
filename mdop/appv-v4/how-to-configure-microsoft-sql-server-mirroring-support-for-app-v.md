@@ -1,9 +1,14 @@
 ---
 title: How to Configure Microsoft SQL Server Mirroring Support for App-V
 description: How to Configure Microsoft SQL Server Mirroring Support for App-V
-ms.assetid: 6d069eb5-109f-460a-836a-de49473b7035
 author: jamiejdt
+ms.assetid: 6d069eb5-109f-460a-836a-de49473b7035
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure Microsoft SQL Server Mirroring Support for App-V
 

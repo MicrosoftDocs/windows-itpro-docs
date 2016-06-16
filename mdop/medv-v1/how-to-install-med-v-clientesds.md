@@ -1,9 +1,14 @@
 ---
 title: How to Install MED-V Client
 description: How to Install MED-V Client
-ms.assetid: fb35f618-684c-474f-9053-b70bb29c3cc0
 author: jamiejdt
+ms.assetid: fb35f618-684c-474f-9053-b70bb29c3cc0
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Install MED-V Client
 

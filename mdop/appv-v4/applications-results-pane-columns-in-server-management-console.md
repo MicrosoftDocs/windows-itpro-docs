@@ -1,9 +1,14 @@
 ---
 title: Applications Results Pane Columns in Server Management Console
 description: Applications Results Pane Columns in Server Management Console
-ms.assetid: 8757e3bc-450b-4550-81d2-624906523147
 author: jamiejdt
+ms.assetid: 8757e3bc-450b-4550-81d2-624906523147
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Applications Results Pane Columns in Server Management Console
 

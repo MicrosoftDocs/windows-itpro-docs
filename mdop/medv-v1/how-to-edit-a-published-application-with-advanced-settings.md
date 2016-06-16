@@ -1,9 +1,14 @@
 ---
 title: How to Edit a Published Application with Advanced Settings
 description: How to Edit a Published Application with Advanced Settings
-ms.assetid: 06a79049-9ce9-490f-aad7-fd4fdf185590
 author: jamiejdt
+ms.assetid: 06a79049-9ce9-490f-aad7-fd4fdf185590
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Edit a Published Application with Advanced Settings
 

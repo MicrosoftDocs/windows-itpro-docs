@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencer Hardware and Software Requirements
 description: Application Virtualization Sequencer Hardware and Software Requirements
-ms.assetid: c88a1b5b-23e1-4460-afa9-a5f37e32eb05
 author: jamiejdt
+ms.assetid: c88a1b5b-23e1-4460-afa9-a5f37e32eb05
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencer Hardware and Software Requirements
 

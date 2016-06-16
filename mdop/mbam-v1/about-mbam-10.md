@@ -1,9 +1,14 @@
 ---
 title: About MBAM 1.0
 description: About MBAM 1.0
-ms.assetid: 99254aaa-2b30-4b2e-8365-0d4b67a89a0c
 author: jamiejdt
+ms.assetid: 99254aaa-2b30-4b2e-8365-0d4b67a89a0c
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About MBAM 1.0
 

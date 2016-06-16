@@ -1,9 +1,14 @@
 ---
 title: Release Notes for App-V 5.1
 description: Release Notes for App-V 5.1
-ms.assetid: 62c5be3b-0a46-4512-93ed-97c23184f343
 author: jamiejdt
+ms.assetid: 62c5be3b-0a46-4512-93ed-97c23184f343
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Release Notes for App-V 5.1
 
@@ -130,6 +135,13 @@ The Permissions.sql script should be updated according to **Step 2** in [KB arti
 App-V 5.1 does not support Visual Studio 2012.
 
 **Workaround**: None
+
+## Application filename restrictions for App-V 5.x Sequencer
+
+
+The App-V 5.x Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
+
+**Workaround**: Use a different filename
 
 ## Got a suggestion for App-V?
 

@@ -1,9 +1,14 @@
 ---
 title: Select Installer Page (Learn More)
 description: Select Installer Page (Learn More)
-ms.assetid: da05e756-d23e-4557-8ff6-313d695a78a1
 author: jamiejdt
+ms.assetid: da05e756-d23e-4557-8ff6-313d695a78a1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Select Installer Page (Learn More)
 

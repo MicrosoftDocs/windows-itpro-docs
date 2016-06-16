@@ -1,9 +1,14 @@
 ---
 title: Configuring Certificates to Support Secure Streaming
 description: Configuring Certificates to Support Secure Streaming
-ms.assetid: 88dc76d8-7745-4729-92a1-af089c921244
 author: jamiejdt
+ms.assetid: 88dc76d8-7745-4729-92a1-af089c921244
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Configuring Certificates to Support Secure Streaming
 
