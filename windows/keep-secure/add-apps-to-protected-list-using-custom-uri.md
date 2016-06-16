@@ -2,9 +2,10 @@
 title: Add multiple apps to your enterprise data protection (EDP) Protected Apps list (Windows 10)
 description: Add multiple apps to your enterprise data protection (EDP) Protected Apps list at the same time, by using the Microsoft Intune Custom URI functionality and the AppLocker.
 ms.assetid: b50db35d-a2a9-4b78-a95d-a1b066e66880
-keywords: ["EDP", "Enterprise Data Protection", "protected apps", "protected app list"]
-ms.prod: W10
+keywords: EDP, Enterprise Data Protection, protected apps, protected app list
+ms.prod: w10
 ms.mktglfcycl: explore
+ms.pagetype: security
 ms.sitesec: library
 author: eross-msft
 ---

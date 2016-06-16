@@ -2,9 +2,10 @@
 title: Block untrusted fonts in an enterprise (Windows 10)
 description: To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature.
 ms.assetid: a3354c8e-4208-4be6-bc19-56a572c361b4
-keywords: ["font blocking", "untrusted font blocking", "block fonts", "untrusted fonts"]
-ms.prod: W10
+keywords: font blocking, untrusted font blocking, block fonts, untrusted fonts
+ms.prod: w10
 ms.mktglfcycl: deploy
+ms.pagetype: security
 ms.sitesec: library
 author: eross-msft
 ---

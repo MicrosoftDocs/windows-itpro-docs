@@ -2,7 +2,7 @@
 title: Interactive logon Number of previous logons to cache (in case domain controller is not available) (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Number of previous logons to cache (in case domain controller is not available) security policy setting.
 ms.assetid: 660e925e-cc3e-4098-a41e-eb8db8062d8d
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

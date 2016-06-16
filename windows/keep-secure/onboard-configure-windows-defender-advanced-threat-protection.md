@@ -3,9 +3,10 @@ title: Onboard endpoints and set up the Windows Defender ATP user access
 description: Set up user access in Azure Active Directory and use Group Policy, SCCM, or do manual registry changes to onboard endpoints to the service.
 keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy
 search.product: eADQiWindows 10XVcnh
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: iaanw
 ---
 

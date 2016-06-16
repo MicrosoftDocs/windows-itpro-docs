@@ -2,7 +2,7 @@
 title: Create a pagefile (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Create a pagefile security policy setting.
 ms.assetid: dc087897-459d-414b-abe0-cd86c8dccdea
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

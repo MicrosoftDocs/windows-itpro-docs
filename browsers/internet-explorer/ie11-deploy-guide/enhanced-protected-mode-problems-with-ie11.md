@@ -2,7 +2,7 @@
 description: Enhanced Protected Mode problems with Internet Explorer
 ms.assetid: 15890ad1-733d-4f7e-a318-10399b389f45
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

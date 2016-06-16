@@ -2,7 +2,11 @@
 title: Create provisioning packages (Surface Hub)
 description: For Windows 10, settings that use the registry or a content services platform (CSP) can be configured using provisioning packages. You can also add certificates during first run using provisioning.
 ms.assetid: 8AA25BD4-8A8F-4B95-9268-504A49BA5345
-keywords: ["add certificate", "provisioning package"]
+keywords: add certificate, provisioning package
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -34,7 +38,7 @@ Currently, you can use provisioning packages to install certificates and to inst
 
 You may use provisioning packages to install certificates that will allow the device to authenticate to Microsoft Exchange or Skype for Business, or to sideload apps that don't come from the Windows Store (for example, your own in-house apps).
 
-**Note**  Provisioning can only install certificates to the device (local machine) store, and not to the user store. If your organization requires that certificates must be installed to the user store, you must use Mobile Device Management (MDM) to deploy these certificates. See your MDM solution documentation for details.
+>**Note**  Provisioning can only install certificates to the device (local machine) store, and not to the user store. If your organization requires that certificates must be installed to the user store, you must use Mobile Device Management (MDM) to deploy these certificates. See your MDM solution documentation for details.
 
  
 
@@ -54,7 +58,7 @@ In order to create and deploy provisioning packages, all of the following are re
 ### <a href="" id="installing-wicd-prov-pkg"></a>Install the Windows Imaging and Configuration Designer
 
 1.  The Windows Imaging and Configuration Designer (ICD) is installed as part of the Windows 10 ADK. The installer for the ADK can be downloaded from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=718147).
-    **Note**  The ADK must be installed on a separate PC, not on the Surface Hub.
+    >**Note**  The ADK must be installed on a separate PC, not on the Surface Hub.
 
      
 

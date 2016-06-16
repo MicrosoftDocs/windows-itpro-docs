@@ -3,7 +3,7 @@ title: Manage and update Windows 10 (Windows 10)
 description: Learn about managing and updating Windows 10.
 ms.assetid: E5716355-02AB-4B75-A962-14B1A7F7BDA0
 keywords: Windows 10, MDM, WSUS, Windows update
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -74,4 +74,4 @@ Learn about managing and updating Windows 10.
 ## Related topics
 [Windows 10 and Windows 10 Mobile](../index.md)
  
- 
+ [Learn how Microsoft does IT at the IT Showcase](https://www.microsoft.com/itshowcase)

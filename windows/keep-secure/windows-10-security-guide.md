@@ -3,7 +3,7 @@ title: Windows 10 security overview (Windows 10)
 description: This guide provides a detailed description of the most important security improvements in the Windows 10 operating system, with links to more detailed articles about many of its security features.
 ms.assetid: 4561D80B-A914-403C-A17C-3BE6FC95B59B
 keywords: configure, feature, file encryption
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security

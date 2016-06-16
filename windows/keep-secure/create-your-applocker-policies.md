@@ -2,7 +2,7 @@
 title: Create Your AppLocker policies (Windows 10)
 description: This overview topic for the IT professional describes the steps to create an AppLocker policy and prepare it for deployment.
 ms.assetid: d339dee2-4da2-4d4a-b46e-f1dfb7cb4bf0
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -2,10 +2,11 @@
 title: Configure devices without MDM (Windows 10)
 description: Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10. 
 ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
-keywords: ["runtime provisioning", "provisioning package"]
-ms.prod: W10
+keywords: runtime provisioning, provisioning package
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: mobile, devices
 author: jdeckerMS
 ---
 

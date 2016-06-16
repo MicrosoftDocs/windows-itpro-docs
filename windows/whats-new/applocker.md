@@ -2,7 +2,7 @@
 title: What's new in AppLocker (Windows 10)
 description: AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.
 ms.assetid: 6F836FF6-7794-4E7B-89AA-1EABA1BF183F
-ms.pagetype: security
+ms.pagetype: security, mobile
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
