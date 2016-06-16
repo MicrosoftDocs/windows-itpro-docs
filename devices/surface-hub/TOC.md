@@ -27,6 +27,7 @@
 #### [Monitor your Surface Hub](monitor-surface-hub.md)
 #### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 #### [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md)
+#### [Use fully qualified domain name with Surface Hub](use-fully-qualified-domain-name-surface-hub.md)
 #### [Using a room control system](use-room-control-system-with-surface-hub.md)
 #### [Windows updates](manage-windows-updates-for-surface-hub.md)
 #### [Wireless network management](wireless-network-management-for-surface-hub.md)
