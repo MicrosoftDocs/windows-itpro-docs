@@ -285,7 +285,7 @@ Use this procedure if you use Exchange online.
 
         ```ps1
         Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
-        &#39;sippoolbl20a04.infra.lync.com&#39; -SipAddressType EmailAddress
+        'sippoolbl20a04.infra.lync.com' -SipAddressType EmailAddress
         ```
 
      If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
