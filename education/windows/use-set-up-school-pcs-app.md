@@ -1,10 +1,11 @@
 ---
 title: Use Set up School PCs app
 description: Learn how the Set up School PCs app works and how to use it.
-keywords: ["shared cart", "shared PC", "school"]
-ms.prod: W10
+keywords: shared cart, shared PC, school
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
+ms.pagetype: edu
 author: jdeckerMS
 ---
 

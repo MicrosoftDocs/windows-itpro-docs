@@ -2,7 +2,7 @@
 description: Reference about the command-line options and return codes for Internet Explorer Setup.
 ms.assetid: 40c23024-cb5d-4902-ad1b-6e8a189a699f
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Internet Explorer Setup command-line options and return codes (Internet Explorer Administration Kit 11 for IT Pros)

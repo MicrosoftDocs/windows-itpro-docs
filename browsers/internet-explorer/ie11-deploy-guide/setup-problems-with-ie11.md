@@ -2,7 +2,7 @@
 description: Reviewing log files to learn more about potential setup problems with Internet Explorer 11.
 ms.assetid: 2cd79988-17d1-4317-bee9-b3ae2dd110a0
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat

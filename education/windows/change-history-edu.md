@@ -1,15 +1,22 @@
 ---
 title: Change history for Windows 10 for Education (Windows 10)
 description: New and changed topics in Windows 10 for Education
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: edu
 author: jdeckerMS
 ---
 
 # Change history for Windows 10 for Education
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
+
+## June 2016
+
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Get Minecraft Education Edition](get-minecraft-for-education.md) </br> [For teachers: get Minecraft Education Edition](teacher-get-minecraft.md) </br> [For IT administrators: get Minecraft Education Edition](school-get-minecraft.md) | New |
 
 ## May 2016
 
