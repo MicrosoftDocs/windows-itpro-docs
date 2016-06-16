@@ -1,9 +1,14 @@
 ---
 title: How to Change an Application Icon
 description: How to Change an Application Icon
-ms.assetid: 52c870eb-4a54-410b-8abf-79395a53f846
 author: jamiejdt
+ms.assetid: 52c870eb-4a54-410b-8abf-79395a53f846
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Change an Application Icon
 

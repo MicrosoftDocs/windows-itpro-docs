@@ -1,9 +1,14 @@
 ---
 title: File Type Association Results Pane Columns
 description: File Type Association Results Pane Columns
-ms.assetid: eab48e20-9c92-459d-a06b-8e20202d73f6
 author: jamiejdt
+ms.assetid: eab48e20-9c92-459d-a06b-8e20202d73f6
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # File Type Association Results Pane Columns
 

@@ -1,9 +1,14 @@
 ---
 title: Limit the GPO Versions Stored
 description: Limit the GPO Versions Stored
-ms.assetid: da14edc5-0c36-4c54-b122-861c86b99eb1
 author: jamiejdt
+ms.assetid: da14edc5-0c36-4c54-b122-861c86b99eb1
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Limit the GPO Versions Stored
 

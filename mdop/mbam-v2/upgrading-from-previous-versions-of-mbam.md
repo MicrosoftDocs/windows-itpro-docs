@@ -1,9 +1,14 @@
 ---
 title: Upgrading from Previous Versions of MBAM
 description: Upgrading from Previous Versions of MBAM
-ms.assetid: 73b425cf-9cd9-4ebc-a35e-1b3bf18596ce
 author: jamiejdt
+ms.assetid: 73b425cf-9cd9-4ebc-a35e-1b3bf18596ce
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Upgrading from Previous Versions of MBAM
 

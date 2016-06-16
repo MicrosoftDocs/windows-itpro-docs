@@ -1,9 +1,14 @@
 ---
 title: How to Create the Sequencer Package Root Directory
 description: How to Create the Sequencer Package Root Directory
-ms.assetid: 23fe28f1-c284-43ee-b8b7-1dfbed94eea5
 author: jamiejdt
+ms.assetid: 23fe28f1-c284-43ee-b8b7-1dfbed94eea5
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Create the Sequencer Package Root Directory
 

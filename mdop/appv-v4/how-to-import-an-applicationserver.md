@@ -1,9 +1,14 @@
 ---
 title: How to Import an Application
 description: How to Import an Application
-ms.assetid: ab40acad-1025-478d-8e13-0e1ff1bd37e4
 author: jamiejdt
+ms.assetid: ab40acad-1025-478d-8e13-0e1ff1bd37e4
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Import an Application
 

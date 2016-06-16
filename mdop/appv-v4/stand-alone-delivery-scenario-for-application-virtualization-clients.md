@@ -1,9 +1,14 @@
 ---
 title: Stand-Alone Delivery Scenario for Application Virtualization Clients
 description: Stand-Alone Delivery Scenario for Application Virtualization Clients
-ms.assetid: 7545b468-f58a-4504-a6d5-3c2d303731c4
 author: jamiejdt
+ms.assetid: 7545b468-f58a-4504-a6d5-3c2d303731c4
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Stand-Alone Delivery Scenario for Application Virtualization Clients
 

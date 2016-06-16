@@ -1,9 +1,14 @@
 ---
 title: Supported Configurations
 description: Supported Configurations
-ms.assetid: c1438455-445a-4bc8-ae20-483b26181f6f
 author: jamiejdt
+ms.assetid: c1438455-445a-4bc8-ae20-483b26181f6f
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Supported Configurations
 

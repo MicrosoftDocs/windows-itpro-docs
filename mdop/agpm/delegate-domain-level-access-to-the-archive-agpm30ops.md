@@ -1,9 +1,14 @@
 ---
 title: Delegate Domain-Level Access to the Archive
 description: Delegate Domain-Level Access to the Archive
-ms.assetid: d232069e-71d5-4b4d-b22e-bef11de1cfd4
 author: jamiejdt
+ms.assetid: d232069e-71d5-4b4d-b22e-bef11de1cfd4
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Delegate Domain-Level Access to the Archive
 

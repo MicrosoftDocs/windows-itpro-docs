@@ -1,9 +1,14 @@
 ---
 title: Start and Stop the AGPM Service
 description: Start and Stop the AGPM Service
-ms.assetid: 769aa0ce-224a-446f-9958-9518af4ad159
 author: jamiejdt
+ms.assetid: 769aa0ce-224a-446f-9958-9518af4ad159
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Start and Stop the AGPM Service
 

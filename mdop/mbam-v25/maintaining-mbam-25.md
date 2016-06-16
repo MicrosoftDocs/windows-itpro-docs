@@ -1,9 +1,14 @@
 ---
 title: Maintaining MBAM 2.5
 description: Maintaining MBAM 2.5
-ms.assetid: 44d398a0-2ca0-4d47-943c-322345409b59
 author: jamiejdt
+ms.assetid: 44d398a0-2ca0-4d47-943c-322345409b59
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Maintaining MBAM 2.5
 

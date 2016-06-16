@@ -1,9 +1,14 @@
 ---
 title: How to Edit an OSD File Using a Text Editor
 description: How to Edit an OSD File Using a Text Editor
-ms.assetid: f4263a1b-824f-49b9-8060-b8229c9d9960
 author: jamiejdt
+ms.assetid: f4263a1b-824f-49b9-8060-b8229c9d9960
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Edit an OSD File Using a Text Editor
 

@@ -1,9 +1,14 @@
 ---
 title: How to Manually Install the Application Virtualization Client
 description: How to Manually Install the Application Virtualization Client
-ms.assetid: bb67f70b-d525-4317-b254-e4f084c717ab
 author: jamiejdt
+ms.assetid: bb67f70b-d525-4317-b254-e4f084c717ab
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Manually Install the Application Virtualization Client
 

@@ -1,9 +1,14 @@
 ---
 title: Planning for Migration from Previous Versions
 description: Planning for Migration from Previous Versions
-ms.assetid: 62967bf1-542f-41b0-838f-c62f3430ac73
 author: jamiejdt
+ms.assetid: 62967bf1-542f-41b0-838f-c62f3430ac73
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for Migration from Previous Versions
 

@@ -1,9 +1,14 @@
 ---
 title: Planning for App-V 5.0
 description: Planning for App-V 5.0
-ms.assetid: 69df85b3-06c7-4123-af05-29d537a687ec
 author: jamiejdt
+ms.assetid: 69df85b3-06c7-4123-af05-29d537a687ec
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning for App-V 5.0
 

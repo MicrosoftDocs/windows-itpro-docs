@@ -1,9 +1,14 @@
 ---
 title: Working with Custom UE-V Templates and the UE-V Generator
 description: Working with Custom UE-V Templates and the UE-V Generator
-ms.assetid: 7bb2583a-b032-4800-9bf9-eb33528e1d0d
 author: jamiejdt
+ms.assetid: 7bb2583a-b032-4800-9bf9-eb33528e1d0d
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Working with Custom UE-V Templates and the UE-V Generator
 

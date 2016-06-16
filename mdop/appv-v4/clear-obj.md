@@ -1,9 +1,14 @@
 ---
 title: CLEAR OBJ
 description: CLEAR OBJ
-ms.assetid: 1e50b33f-6324-4eae-8573-75c153f786cd
 author: jamiejdt
+ms.assetid: 1e50b33f-6324-4eae-8573-75c153f786cd
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # CLEAR OBJ
 

@@ -1,9 +1,14 @@
 ---
 title: How to Install the App-V Client by Using Setup.exe
 description: How to Install the App-V Client by Using Setup.exe
-ms.assetid: 106a5d97-b5f6-4a16-bf52-a84f4d558c74
 author: jamiejdt
+ms.assetid: 106a5d97-b5f6-4a16-bf52-a84f4d558c74
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the App-V Client by Using Setup.exe
 

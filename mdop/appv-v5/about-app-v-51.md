@@ -1,9 +1,14 @@
 ---
 title: About App-V 5.1
 description: About App-V 5.1
-ms.assetid: 35bc9908-d502-4a9c-873f-8ee17b6d9d74
 author: jamiejdt
+ms.assetid: 35bc9908-d502-4a9c-873f-8ee17b6d9d74
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About App-V 5.1
 

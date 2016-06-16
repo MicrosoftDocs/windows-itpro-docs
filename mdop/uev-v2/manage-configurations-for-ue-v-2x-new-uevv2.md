@@ -1,9 +1,14 @@
 ---
 title: Manage Configurations for UE-V 2.x
 description: Manage Configurations for UE-V 2.x
-ms.assetid: e2332eca-a9cd-4446-8f7c-d17058b03466
 author: jamiejdt
+ms.assetid: e2332eca-a9cd-4446-8f7c-d17058b03466
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Manage Configurations for UE-V 2.x
 

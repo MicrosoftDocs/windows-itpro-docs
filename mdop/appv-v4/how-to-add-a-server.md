@@ -1,9 +1,14 @@
 ---
 title: How to Add a Server
 description: How to Add a Server
-ms.assetid: 1f31678a-8edf-4d35-a812-e4a2abfd979b
 author: jamiejdt
+ms.assetid: 1f31678a-8edf-4d35-a812-e4a2abfd979b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Add a Server
 

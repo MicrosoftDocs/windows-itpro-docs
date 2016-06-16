@@ -1,9 +1,14 @@
 ---
 title: Installing Applications on a Windows Virtual PC Image
 description: Installing Applications on a Windows Virtual PC Image
-ms.assetid: 32651eff-e3c6-4ef4-947d-2beddc695eac
 author: jamiejdt
+ms.assetid: 32651eff-e3c6-4ef4-947d-2beddc695eac
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Installing Applications on a Windows Virtual PC Image
 

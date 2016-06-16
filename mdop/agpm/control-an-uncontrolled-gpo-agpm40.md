@@ -1,9 +1,14 @@
 ---
 title: Control an Uncontrolled GPO
 description: Control an Uncontrolled GPO
-ms.assetid: dc81545c-8da5-4b6f-b266-f01a82e27c6b
 author: jamiejdt
+ms.assetid: dc81545c-8da5-4b6f-b266-f01a82e27c6b
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Control an Uncontrolled GPO
 

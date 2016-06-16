@@ -1,9 +1,14 @@
 ---
 title: DaRT 10 Deployment Checklist
 description: DaRT 10 Deployment Checklist
-ms.assetid: a6b7ba27-a969-4da9-bef0-d019739413cc
 author: jamiejdt
+ms.assetid: a6b7ba27-a969-4da9-bef0-d019739413cc
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # DaRT 10 Deployment Checklist
 

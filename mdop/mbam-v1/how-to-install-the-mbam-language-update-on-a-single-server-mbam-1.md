@@ -1,9 +1,14 @@
 ---
 title: How to Install the MBAM Language Update on a Single Server
 description: How to Install the MBAM Language Update on a Single Server
-ms.assetid: e6fe59a3-a3e1-455c-a059-1f23ee083cf6
 author: jamiejdt
+ms.assetid: e6fe59a3-a3e1-455c-a059-1f23ee083cf6
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the MBAM Language Update on a Single Server
 
