@@ -1,9 +1,14 @@
 ---
 title: How to Convert a Package Created in a Previous Version of App-V
 description: How to Convert a Package Created in a Previous Version of App-V
-ms.assetid: 3366d399-2891-491d-8de1-f8cfdf39bbab
 author: jamiejdt
+ms.assetid: 3366d399-2891-491d-8de1-f8cfdf39bbab
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Convert a Package Created in a Previous Version of App-V
 

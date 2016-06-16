@@ -1,9 +1,14 @@
 ---
 title: How to Deploy a MED-V Workspace in a Windows 7 Image
 description: How to Deploy a MED-V Workspace in a Windows 7 Image
-ms.assetid: a83aba4e-8681-4906-9872-f431c0bb15f9
 author: jamiejdt
+ms.assetid: a83aba4e-8681-4906-9872-f431c0bb15f9
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Deploy a MED-V Workspace in a Windows 7 Image
 

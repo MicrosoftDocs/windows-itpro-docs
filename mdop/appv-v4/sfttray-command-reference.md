@@ -1,9 +1,14 @@
 ---
 title: SFTTRAY Command Reference
 description: SFTTRAY Command Reference
-ms.assetid: 6fa3a939-b047-4d6c-bd1d-dfb93e065eb2
 author: jamiejdt
+ms.assetid: 6fa3a939-b047-4d6c-bd1d-dfb93e065eb2
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # SFTTRAY Command Reference
 

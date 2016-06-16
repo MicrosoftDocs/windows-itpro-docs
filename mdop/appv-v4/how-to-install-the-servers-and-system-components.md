@@ -1,9 +1,14 @@
 ---
 title: How to Install the Servers and System Components
 description: How to Install the Servers and System Components
-ms.assetid: c6f5fef0-522a-4ef1-8585-05b292d0289b
 author: jamiejdt
+ms.assetid: c6f5fef0-522a-4ef1-8585-05b292d0289b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the Servers and System Components
 

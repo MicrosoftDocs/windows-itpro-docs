@@ -1,9 +1,14 @@
 ---
 title: How to Change the Server Logging Level and the Database Parameters
 description: How to Change the Server Logging Level and the Database Parameters
-ms.assetid: e3ebaee5-6c4c-4aa8-9766-c5aeb00f477a
 author: jamiejdt
+ms.assetid: e3ebaee5-6c4c-4aa8-9766-c5aeb00f477a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Change the Server Logging Level and the Database Parameters
 

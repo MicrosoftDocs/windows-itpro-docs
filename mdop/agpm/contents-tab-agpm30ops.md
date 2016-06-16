@@ -1,9 +1,14 @@
 ---
 title: Contents Tab
 description: Contents Tab
-ms.assetid: 6ada6430-cd93-47aa-af6e-d7f5b5620132
 author: jamiejdt
+ms.assetid: 6ada6430-cd93-47aa-af6e-d7f5b5620132
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Contents Tab
 

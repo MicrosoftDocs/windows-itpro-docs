@@ -1,9 +1,14 @@
 ---
 title: Migrating UE-V Settings Packages
 description: Migrating UE-V Settings Packages
-ms.assetid: 93d99254-3e17-4e96-92ad-87059d8554a7
 author: jamiejdt
+ms.assetid: 93d99254-3e17-4e96-92ad-87059d8554a7
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Migrating UE-V Settings Packages
 

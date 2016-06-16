@@ -1,9 +1,14 @@
 ---
 title: How to Set Up or Disable Usage Reporting
 description: How to Set Up or Disable Usage Reporting
-ms.assetid: 8587003a-128d-4b5d-ac70-5b9eddddd3dc
 author: jamiejdt
+ms.assetid: 8587003a-128d-4b5d-ac70-5b9eddddd3dc
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Set Up or Disable Usage Reporting
 

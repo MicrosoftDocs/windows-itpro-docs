@@ -1,9 +1,14 @@
 ---
 title: About MBAM 2.0
 description: About MBAM 2.0
-ms.assetid: b43a0ba9-1c83-4854-a2c5-14eea0070e36
 author: jamiejdt
+ms.assetid: b43a0ba9-1c83-4854-a2c5-14eea0070e36
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About MBAM 2.0
 

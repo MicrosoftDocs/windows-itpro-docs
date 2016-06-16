@@ -1,9 +1,14 @@
 ---
 title: Authentication of MED-V End Users
 description: Authentication of MED-V End Users
-ms.assetid: aaf96eb6-91d1-4f4d-9854-5fc73c7ae7ab
 author: jamiejdt
+ms.assetid: aaf96eb6-91d1-4f4d-9854-5fc73c7ae7ab
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Authentication of MED-V End Users
 

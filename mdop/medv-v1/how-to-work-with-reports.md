@@ -1,9 +1,14 @@
 ---
 title: How to Work with Reports
 description: How to Work with Reports
-ms.assetid: b7a660c6-74c3-4ced-a395-9e76a4362a46
 author: jamiejdt
+ms.assetid: b7a660c6-74c3-4ced-a395-9e76a4362a46
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Work with Reports
 

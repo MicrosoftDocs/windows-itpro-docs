@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting App-V 5.1
 description: Troubleshooting App-V 5.1
-ms.assetid: 435d0e56-0aa2-4168-b5a7-2f03a1f273d4
 author: jamiejdt
+ms.assetid: 435d0e56-0aa2-4168-b5a7-2f03a1f273d4
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Troubleshooting App-V 5.1
 

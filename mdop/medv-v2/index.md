@@ -1,9 +1,14 @@
 ---
 title: Microsoft Enterprise Desktop Virtualization 2.0
 description: Microsoft Enterprise Desktop Virtualization 2.0
-ms.assetid: 84109be0-4613-42e9-85fc-fcda8de6e4c4
 author: jamiejdt
+ms.assetid: 84109be0-4613-42e9-85fc-fcda8de6e4c4
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Microsoft Enterprise Desktop Virtualization 2.0
 

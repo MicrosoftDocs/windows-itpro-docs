@@ -1,9 +1,14 @@
 ---
 title: How to Install the MBAM Language Update on Distributed Servers
 description: How to Install the MBAM Language Update on Distributed Servers
-ms.assetid: 5ddc64c6-0417-4a04-843e-b5e18d9f1a52
 author: jamiejdt
+ms.assetid: 5ddc64c6-0417-4a04-843e-b5e18d9f1a52
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the MBAM Language Update on Distributed Servers
 

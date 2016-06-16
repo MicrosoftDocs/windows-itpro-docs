@@ -1,9 +1,14 @@
 ---
 title: Illustrated Features of an MBAM 2.5 Deployment
 description: Illustrated Features of an MBAM 2.5 Deployment
-ms.assetid: 7b5eff42-af8c-4bd0-a20a-18cc2e779f01
 author: jamiejdt
+ms.assetid: 7b5eff42-af8c-4bd0-a20a-18cc2e779f01
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Illustrated Features of an MBAM 2.5 Deployment
 

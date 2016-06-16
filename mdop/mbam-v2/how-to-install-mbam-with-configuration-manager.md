@@ -1,9 +1,14 @@
 ---
 title: How to Install MBAM with Configuration Manager
 description: How to Install MBAM with Configuration Manager
-ms.assetid: fd0832e4-3b79-4e56-9550-d2f396be6d09
 author: jamiejdt
+ms.assetid: fd0832e4-3b79-4e56-9550-d2f396be6d09
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install MBAM with Configuration Manager
 

@@ -1,9 +1,14 @@
 ---
 title: How to Start and Exit the MED-V Client
 description: How to Start and Exit the MED-V Client
-ms.assetid: 3762bad1-6937-40fa-ab5d-61a905865214
 author: jamiejdt
+ms.assetid: 3762bad1-6937-40fa-ab5d-61a905865214
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Start and Exit the MED-V Client
 

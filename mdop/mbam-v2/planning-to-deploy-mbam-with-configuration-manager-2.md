@@ -1,9 +1,14 @@
 ---
 title: Planning to Deploy MBAM with Configuration Manager
 description: Planning to Deploy MBAM with Configuration Manager
-ms.assetid: fb768306-48c2-40b4-ac4e-c279db987391
 author: jamiejdt
+ms.assetid: fb768306-48c2-40b4-ac4e-c279db987391
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning to Deploy MBAM with Configuration Manager
 

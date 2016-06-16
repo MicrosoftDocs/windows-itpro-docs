@@ -1,9 +1,14 @@
 ---
 title: How to Uninstall the App-V 5.0 Client
 description: How to Uninstall the App-V 5.0 Client
-ms.assetid: 7566fb19-8d52-439a-be42-e004d95fed6f
 author: jamiejdt
+ms.assetid: 7566fb19-8d52-439a-be42-e004d95fed6f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Uninstall the App-V 5.0 Client
 

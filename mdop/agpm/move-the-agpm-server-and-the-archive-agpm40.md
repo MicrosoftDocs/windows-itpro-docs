@@ -1,9 +1,14 @@
 ---
 title: Move the AGPM Server and the Archive
 description: Move the AGPM Server and the Archive
-ms.assetid: 9ec48d3a-c293-45f0-8939-32ccdc062303
 author: jamiejdt
+ms.assetid: 9ec48d3a-c293-45f0-8939-32ccdc062303
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Move the AGPM Server and the Archive
 

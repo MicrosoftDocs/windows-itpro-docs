@@ -1,9 +1,14 @@
 ---
 title: Configuring IIS for Secure Streaming
 description: Configuring IIS for Secure Streaming
-ms.assetid: 9a80a703-4642-4bec-b7af-dc7cb6b76925
 author: jamiejdt
+ms.assetid: 9a80a703-4642-4bec-b7af-dc7cb6b76925
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Configuring IIS for Secure Streaming
 

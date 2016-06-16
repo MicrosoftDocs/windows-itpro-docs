@@ -1,9 +1,14 @@
 ---
 title: Administrative Templates Folder
 description: Administrative Templates Folder
-ms.assetid: 0cc5b570-b6d3-4841-9646-02521c13519c
 author: jamiejdt
+ms.assetid: 0cc5b570-b6d3-4841-9646-02521c13519c
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Administrative Templates Folder
 

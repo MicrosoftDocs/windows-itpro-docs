@@ -1,9 +1,14 @@
 ---
 title: Microsoft User Experience Virtualization (UE-V) 2.1 Release Notes
 description: Microsoft User Experience Virtualization (UE-V) 2.1 Release Notes
-ms.assetid: 79a36c77-fa0c-4651-8028-4a79763a2fd2
 author: jamiejdt
+ms.assetid: 79a36c77-fa0c-4651-8028-4a79763a2fd2
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Microsoft User Experience Virtualization (UE-V) 2.1 Release Notes
 

@@ -1,9 +1,14 @@
 ---
 title: How to Configure Servers for Server-Based Deployment
 description: How to Configure Servers for Server-Based Deployment
-ms.assetid: 6371c37a-46eb-44e8-ad6b-4430c866c8b4
 author: jamiejdt
+ms.assetid: 6371c37a-46eb-44e8-ad6b-4430c866c8b4
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure Servers for Server-Based Deployment
 

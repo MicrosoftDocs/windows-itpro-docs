@@ -1,9 +1,13 @@
 ---
 title: Check Registry Keys before installing App-V 5.x Server
 description: Check Registry Keys before installing App-V 5.x Server
-ms.assetid: 
 author: jamiejdt
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Check Registry Keys before installing App-V 5.x Server
 

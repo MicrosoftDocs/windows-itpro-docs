@@ -1,9 +1,14 @@
 ---
 title: Application Publishing and Client Interaction for App-V 5
 description: Application Publishing and Client Interaction for App-V 5
-ms.assetid: 9854afdc-00f9-40ec-8275-d168e5151286
 author: jamiejdt
+ms.assetid: 9854afdc-00f9-40ec-8275-d168e5151286
+ms.pagetype: mdop
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Publishing and Client Interaction for App-V 5
 

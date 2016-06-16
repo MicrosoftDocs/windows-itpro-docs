@@ -1,9 +1,14 @@
 ---
 title: Tasks for the Application Virtualization Sequencer (App-V 4.6 SP1)
 description: Tasks for the Application Virtualization Sequencer (App-V 4.6 SP1)
-ms.assetid: 58597af9-6a62-4588-ab41-dbf6b7026267
 author: jamiejdt
+ms.assetid: 58597af9-6a62-4588-ab41-dbf6b7026267
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Tasks for the Application Virtualization Sequencer (App-V 4.6 SP1)
 

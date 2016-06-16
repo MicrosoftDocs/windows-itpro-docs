@@ -1,9 +1,14 @@
 ---
 title: Example MED-V Image Preparation Checklist
 description: Example MED-V Image Preparation Checklist
-ms.assetid: d69f252f-624b-439e-814b-b68cdaf7d582
 author: jamiejdt
+ms.assetid: d69f252f-624b-439e-814b-b68cdaf7d582
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Example MED-V Image Preparation Checklist
 

@@ -1,9 +1,14 @@
 ---
 title: Administering MBAM 2.5 Features
 description: Administering MBAM 2.5 Features
-ms.assetid: ca15f818-cf07-4437-8ffa-425af603a3c8
 author: jamiejdt
+ms.assetid: ca15f818-cf07-4437-8ffa-425af603a3c8
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Administering MBAM 2.5 Features
 

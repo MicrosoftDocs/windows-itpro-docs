@@ -1,9 +1,14 @@
 ---
 title: Overview of Application Virtualization
 description: Overview of Application Virtualization
-ms.assetid: 80545ef4-cf4c-420c-88d6-48e9f226051f
 author: jamiejdt
+ms.assetid: 80545ef4-cf4c-420c-88d6-48e9f226051f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Overview of Application Virtualization
 

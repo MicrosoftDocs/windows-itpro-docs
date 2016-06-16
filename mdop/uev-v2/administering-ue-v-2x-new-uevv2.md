@@ -1,9 +1,14 @@
 ---
 title: Administering UE-V 2.x
 description: Administering UE-V 2.x
-ms.assetid: 996e4797-8383-4627-b714-24a84c907798
 author: jamiejdt
+ms.assetid: 996e4797-8383-4627-b714-24a84c907798
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Administering UE-V 2.x
 

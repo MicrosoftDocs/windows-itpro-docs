@@ -1,9 +1,14 @@
 ---
 title: How to Localize the “HelpdeskText” Statement that Points Users to More Self-Service Portal Information
 description: How to Localize the “HelpdeskText” Statement that Points Users to More Self-Service Portal Information
-ms.assetid: 09ba2a07-3186-45d9-adef-4034c70ae7cf
 author: jamiejdt
+ms.assetid: 09ba2a07-3186-45d9-adef-4034c70ae7cf
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Localize the “HelpdeskText” Statement that Points Users to More Self-Service Portal Information
 

@@ -1,9 +1,14 @@
 ---
 title: Deploying the MBAM 2.5 Server Infrastructure
 description: Deploying the MBAM 2.5 Server Infrastructure
-ms.assetid: e85a60cf-4cc1-4906-8da3-442232c374af
 author: jamiejdt
+ms.assetid: e85a60cf-4cc1-4906-8da3-442232c374af
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Deploying the MBAM 2.5 Server Infrastructure
 

@@ -1,9 +1,14 @@
 ---
 title: Import a GPO from Production
 description: Import a GPO from Production
-ms.assetid: ffa02b2a-2a43-4fc0-a06e-7d4b59022cc3
 author: jamiejdt
+ms.assetid: ffa02b2a-2a43-4fc0-a06e-7d4b59022cc3
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Import a GPO from Production
 
