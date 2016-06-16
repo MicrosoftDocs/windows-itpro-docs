@@ -1,9 +1,14 @@
 ---
 title: Planning for High Availability with App-V 5.0
 description: Planning for High Availability with App-V 5.0
-ms.assetid: 6d9a6492-23f8-465c-82e5-49c863594156
 author: jamiejdt
+ms.assetid: 6d9a6492-23f8-465c-82e5-49c863594156
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning for High Availability with App-V 5.0
 

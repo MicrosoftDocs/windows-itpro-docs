@@ -1,9 +1,14 @@
 ---
 title: Deployment of MED-V
 description: Deployment of MED-V
-ms.assetid: 52ea8ae4-ec2e-4cb8-ab38-e6400f47d3ba
 author: jamiejdt
+ms.assetid: 52ea8ae4-ec2e-4cb8-ab38-e6400f47d3ba
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Deployment of MED-V
 

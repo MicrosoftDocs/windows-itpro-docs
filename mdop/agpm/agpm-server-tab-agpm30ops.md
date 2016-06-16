@@ -1,9 +1,14 @@
 ---
 title: AGPM Server Tab
 description: AGPM Server Tab
-ms.assetid: fb3b0265-53ed-4bf6-88a4-c409f5f1bed4
 author: jamiejdt
+ms.assetid: fb3b0265-53ed-4bf6-88a4-c409f5f1bed4
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # AGPM Server Tab
 

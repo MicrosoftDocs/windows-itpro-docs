@@ -1,9 +1,14 @@
 ---
 title: Planning to Use Folder Redirection with App-V
 description: Planning to Use Folder Redirection with App-V
-ms.assetid: 2a4deeed-fdc0-465c-b88a-3a2fbbf27436
 author: jamiejdt
+ms.assetid: 2a4deeed-fdc0-465c-b88a-3a2fbbf27436
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning to Use Folder Redirection with App-V
 

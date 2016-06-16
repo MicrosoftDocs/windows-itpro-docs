@@ -1,9 +1,14 @@
 ---
 title: Administrators Results Pane Columns
 description: Administrators Results Pane Columns
-ms.assetid: 2ac86625-15a8-471a-846b-a42eae37ed72
 author: jamiejdt
+ms.assetid: 2ac86625-15a8-471a-846b-a42eae37ed72
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Administrators Results Pane Columns
 

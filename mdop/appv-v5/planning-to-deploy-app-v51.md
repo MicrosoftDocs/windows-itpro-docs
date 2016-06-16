@@ -1,9 +1,14 @@
 ---
 title: Planning to Deploy App-V
 description: Planning to Deploy App-V
-ms.assetid: 39cbf981-d9c6-457f-b047-f9046e1a6442
 author: jamiejdt
+ms.assetid: 39cbf981-d9c6-457f-b047-f9046e1a6442
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning to Deploy App-V
 

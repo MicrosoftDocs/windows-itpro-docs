@@ -1,9 +1,14 @@
 ---
 title: How to Sequence a New Application (App-V 4.6)
 description: How to Sequence a New Application (App-V 4.6)
-ms.assetid: f2c398c6-9200-4be3-b502-e00386fcd150
 author: jamiejdt
+ms.assetid: f2c398c6-9200-4be3-b502-e00386fcd150
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Sequence a New Application (App-V 4.6)
 

@@ -1,9 +1,14 @@
 ---
 title: Example MED-V System Installation Checklist
 description: Example MED-V System Installation Checklist
-ms.assetid: 9e5673ba-dee4-4680-9c57-a149beab14d3
 author: jamiejdt
+ms.assetid: 9e5673ba-dee4-4680-9c57-a149beab14d3
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Example MED-V System Installation Checklist
 

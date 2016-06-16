@@ -1,9 +1,14 @@
 ---
 title: Review GPO Settings
 description: Review GPO Settings
-ms.assetid: c346bcde-dd6a-4775-aeab-721ca3a361b2
 author: jamiejdt
+ms.assetid: c346bcde-dd6a-4775-aeab-721ca3a361b2
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Review GPO Settings
 

@@ -1,9 +1,14 @@
 ---
 title: UNLOCK APP
 description: UNLOCK APP
-ms.assetid: 91fc8ceb-b4f5-4a06-8193-05189f830943
 author: jamiejdt
+ms.assetid: 91fc8ceb-b4f5-4a06-8193-05189f830943
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # UNLOCK APP
 

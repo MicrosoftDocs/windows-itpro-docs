@@ -1,9 +1,14 @@
 ---
 title: How to Install and Configure the App-V Management Console for a More Secure Environment
 description: How to Install and Configure the App-V Management Console for a More Secure Environment
-ms.assetid: 9d89ef09-cdbf-48fc-99da-b24fc987ef8f
 author: jamiejdt
+ms.assetid: 9d89ef09-cdbf-48fc-99da-b24fc987ef8f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install and Configure the App-V Management Console for a More Secure Environment
 

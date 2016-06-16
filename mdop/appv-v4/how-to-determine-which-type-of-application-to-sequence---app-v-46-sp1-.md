@@ -1,9 +1,14 @@
 ---
 title: How to Determine Which Type of Application to Sequence (App-V 4.6 SP1)
 description: How to Determine Which Type of Application to Sequence (App-V 4.6 SP1)
-ms.assetid: 936abee2-98f1-45fb-9f0d-786e1d7464b1
 author: jamiejdt
+ms.assetid: 936abee2-98f1-45fb-9f0d-786e1d7464b1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Determine Which Type of Application to Sequence (App-V 4.6 SP1)
 

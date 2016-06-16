@@ -1,9 +1,14 @@
 ---
 title: Application Publishing and Client Interaction
 description: Application Publishing and Client Interaction
-ms.assetid: c69a724a-85d1-4e2d-94a2-7ffe0b47d971
 author: jamiejdt
+ms.assetid: c69a724a-85d1-4e2d-94a2-7ffe0b47d971
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Application Publishing and Client Interaction
 

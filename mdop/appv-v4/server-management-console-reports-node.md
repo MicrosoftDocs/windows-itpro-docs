@@ -1,9 +1,14 @@
 ---
 title: Server Management Console Reports Node
 description: Server Management Console Reports Node
-ms.assetid: 9dde6332-5882-40dd-8a8f-857216df80ed
 author: jamiejdt
+ms.assetid: 9dde6332-5882-40dd-8a8f-857216df80ed
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Server Management Console: Reports Node
 

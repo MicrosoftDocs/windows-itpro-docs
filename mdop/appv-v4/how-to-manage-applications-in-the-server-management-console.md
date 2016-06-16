@@ -1,9 +1,14 @@
 ---
 title: How to Manage Applications in the Server Management Console
 description: How to Manage Applications in the Server Management Console
-ms.assetid: 21139a77-9f0f-4787-8173-a7766966ff7f
 author: jamiejdt
+ms.assetid: 21139a77-9f0f-4787-8173-a7766966ff7f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Manage Applications in the Server Management Console
 

@@ -1,9 +1,14 @@
 ---
 title: How to Use an App-V 4.6 Application From an App-V 5.1 Application
 description: How to Use an App-V 4.6 Application From an App-V 5.1 Application
-ms.assetid: 909b4391-762b-4988-b0cf-32b67f1fcf0e
 author: jamiejdt
+ms.assetid: 909b4391-762b-4988-b0cf-32b67f1fcf0e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Use an App-V 4.6 Application From an App-V 5.1 Application
 

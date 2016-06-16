@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencing Wizard Sequence Package Page
 description: Application Virtualization Sequencing Wizard Sequence Package Page
-ms.assetid: 4c603d6a-9139-4867-a085-c6d6b517917e
 author: jamiejdt
+ms.assetid: 4c603d6a-9139-4867-a085-c6d6b517917e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencing Wizard Sequence Package Page
 

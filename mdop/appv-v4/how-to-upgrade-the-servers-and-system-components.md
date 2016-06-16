@@ -1,9 +1,14 @@
 ---
 title: How to Upgrade the Servers and System Components
 description: How to Upgrade the Servers and System Components
-ms.assetid: 7d8374fe-5897-452e-923e-556a854b2024
 author: jamiejdt
+ms.assetid: 7d8374fe-5897-452e-923e-556a854b2024
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Upgrade the Servers and System Components
 

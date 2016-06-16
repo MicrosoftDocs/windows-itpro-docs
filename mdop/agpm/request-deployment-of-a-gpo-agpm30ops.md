@@ -1,9 +1,14 @@
 ---
 title: Request Deployment of a GPO
 description: Request Deployment of a GPO
-ms.assetid: f44ae0fb-bcf7-477b-b99e-9dd6a55ee597
 author: jamiejdt
+ms.assetid: f44ae0fb-bcf7-477b-b99e-9dd6a55ee597
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Request Deployment of a GPO
 

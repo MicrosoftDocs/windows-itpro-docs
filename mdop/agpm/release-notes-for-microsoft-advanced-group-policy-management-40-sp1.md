@@ -1,9 +1,14 @@
 ---
 title: Release Notes for Microsoft Advanced Group Policy Management 4.0 SP1
 description: Release Notes for Microsoft Advanced Group Policy Management 4.0 SP1
-ms.assetid: 91835bf8-e53c-4202-986e-8d37050d1267
 author: jamiejdt
+ms.assetid: 91835bf8-e53c-4202-986e-8d37050d1267
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Release Notes for Microsoft Advanced Group Policy Management 4.0 SP1
 

@@ -1,9 +1,14 @@
 ---
 title: Configuring MED-V Server for Cluster Mode
 description: Configuring MED-V Server for Cluster Mode
-ms.assetid: 41f0b2a3-4ce9-48e1-a6fb-4c13c4228515
 author: jamiejdt
+ms.assetid: 41f0b2a3-4ce9-48e1-a6fb-4c13c4228515
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Configuring MED-V Server for Cluster Mode
 

@@ -1,9 +1,14 @@
 ---
 title: Diagnostics and Recovery Toolset 7 Administrator's Guide
 description: Diagnostics and Recovery Toolset 7 Administrator's Guide
-ms.assetid: bf89eccd-fc03-48ff-9019-a8640e11dd99
 author: jamiejdt
+ms.assetid: bf89eccd-fc03-48ff-9019-a8640e11dd99
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Diagnostics and Recovery Toolset 7 Administrator's Guide
 

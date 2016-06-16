@@ -1,9 +1,14 @@
 ---
 title: Sequencer Command-Line Error Codes
 description: Sequencer Command-Line Error Codes
-ms.assetid: 3d491314-4923-45fd-9839-c541c5e620bd
 author: jamiejdt
+ms.assetid: 3d491314-4923-45fd-9839-c541c5e620bd
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Sequencer Command-Line Error Codes
 

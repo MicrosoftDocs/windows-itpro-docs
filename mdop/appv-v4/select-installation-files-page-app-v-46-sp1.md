@@ -1,9 +1,14 @@
 ---
 title: Select Installation Files Page
 description: Select Installation Files Page
-ms.assetid: 4c8cd49e-ba39-4918-9863-5b3c315d14a5
 author: jamiejdt
+ms.assetid: 4c8cd49e-ba39-4918-9863-5b3c315d14a5
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Select Installation Files Page
 

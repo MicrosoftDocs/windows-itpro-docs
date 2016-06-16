@@ -1,9 +1,14 @@
 ---
 title: Delegate Access to an Individual GPO in the Archive
 description: Delegate Access to an Individual GPO in the Archive
-ms.assetid: 7b37b188-2b6b-4e52-be97-8ef899e9893b
 author: jamiejdt
+ms.assetid: 7b37b188-2b6b-4e52-be97-8ef899e9893b
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Delegate Access to an Individual GPO in the Archive
 

@@ -1,9 +1,14 @@
 ---
 title: Oversized Package Dialog Box (App-V 4.6 SP1)
 description: Oversized Package Dialog Box (App-V 4.6 SP1)
-ms.assetid: 8973a493-6509-4d52-afb6-a9f47d1c5c26
 author: jamiejdt
+ms.assetid: 8973a493-6509-4d52-afb6-a9f47d1c5c26
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Oversized Package Dialog Box (App-V 4.6 SP1)
 

@@ -1,9 +1,14 @@
 ---
 title: Preparing your Environment for MBAM 1.0
 description: Preparing your Environment for MBAM 1.0
-ms.assetid: 915f7c3c-70ad-4a90-a434-73e7fba97ecb
 author: jamiejdt
+ms.assetid: 915f7c3c-70ad-4a90-a434-73e7fba97ecb
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Preparing your Environment for MBAM 1.0
 

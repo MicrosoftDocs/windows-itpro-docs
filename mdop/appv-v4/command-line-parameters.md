@@ -1,9 +1,14 @@
 ---
 title: Command-Line Parameters
 description: Command-Line Parameters
-ms.assetid: d90a0591-f1ce-4cb8-b244-85cc70461922
 author: jamiejdt
+ms.assetid: d90a0591-f1ce-4cb8-b244-85cc70461922
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Command-Line Parameters
 
