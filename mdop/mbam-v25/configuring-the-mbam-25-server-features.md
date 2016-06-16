@@ -1,9 +1,14 @@
 ---
 title: Configuring the MBAM 2.5 Server Features
 description: Configuring the MBAM 2.5 Server Features
-ms.assetid: 894d1080-5f13-48f7-8fde-82f8d440a4ed
 author: jamiejdt
+ms.assetid: 894d1080-5f13-48f7-8fde-82f8d440a4ed
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Configuring the MBAM 2.5 Server Features
 

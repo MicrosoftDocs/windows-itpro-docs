@@ -1,9 +1,14 @@
 ---
 title: Administering App-V 5.1 Virtual Applications by Using the Management Console
 description: Administering App-V 5.1 Virtual Applications by Using the Management Console
-ms.assetid: a4d078aa-ec54-4fa4-9463-bfb3b971d724
 author: jamiejdt
+ms.assetid: a4d078aa-ec54-4fa4-9463-bfb3b971d724
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Administering App-V 5.1 Virtual Applications by Using the Management Console
 

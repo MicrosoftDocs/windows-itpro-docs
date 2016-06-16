@@ -1,9 +1,14 @@
 ---
 title: How to Change the Log Reporting Levels and Reset the Log Files
 description: How to Change the Log Reporting Levels and Reset the Log Files
-ms.assetid: 9561d6fb-b35c-491b-a355-000064583194
 author: jamiejdt
+ms.assetid: 9561d6fb-b35c-491b-a355-000064583194
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Change the Log Reporting Levels and Reset the Log Files
 

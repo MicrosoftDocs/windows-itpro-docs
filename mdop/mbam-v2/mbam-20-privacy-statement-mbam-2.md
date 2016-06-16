@@ -1,9 +1,14 @@
 ---
 title: MBAM 2.0 Privacy Statement
 description: MBAM 2.0 Privacy Statement
-ms.assetid: fce72ad4-a837-4d17-8d3b-4d93f1a399be
 author: jamiejdt
+ms.assetid: fce72ad4-a837-4d17-8d3b-4d93f1a399be
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # MBAM 2.0 Privacy Statement
 

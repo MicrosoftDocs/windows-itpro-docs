@@ -1,9 +1,14 @@
 ---
 title: How to Set Up a Named License Group
 description: How to Set Up a Named License Group
-ms.assetid: 8ef6716c-0cb7-4706-ad3b-ac6f27b2e7ad
 author: jamiejdt
+ms.assetid: 8ef6716c-0cb7-4706-ad3b-ac6f27b2e7ad
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Set Up a Named License Group
 

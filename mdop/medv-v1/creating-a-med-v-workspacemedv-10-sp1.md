@@ -1,9 +1,14 @@
 ---
 title: Creating a MED-V Workspace
 description: Creating a MED-V Workspace
-ms.assetid: 9578bb99-8a09-44c1-b88f-538901f16ad3
 author: jamiejdt
+ms.assetid: 9578bb99-8a09-44c1-b88f-538901f16ad3
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Creating a MED-V Workspace
 

@@ -1,9 +1,14 @@
 ---
 title: About Sharing Package Accelerators Page
 description: About Sharing Package Accelerators Page
-ms.assetid: 9630cde0-e2c3-476f-8fa1-58b3c9f7d3f7
 author: jamiejdt
+ms.assetid: 9630cde0-e2c3-476f-8fa1-58b3c9f7d3f7
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About Sharing Package Accelerators Page
 

@@ -1,9 +1,14 @@
 ---
 title: How to Deploy the App-V Client
 description: How to Deploy the App-V Client
-ms.assetid: 981f57c9-56c3-45da-8261-0972bfad3e5b
 author: jamiejdt
+ms.assetid: 981f57c9-56c3-45da-8261-0972bfad3e5b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Deploy the App-V Client
 

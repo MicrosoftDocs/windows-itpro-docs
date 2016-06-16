@@ -1,9 +1,14 @@
 ---
 title: How to Migrate the App-V SQL Database to a Different SQL Server
 description: How to Migrate the App-V SQL Database to a Different SQL Server
-ms.assetid: 353892a1-9327-4489-a19c-4ec7bd1b736f
 author: jamiejdt
+ms.assetid: 353892a1-9327-4489-a19c-4ec7bd1b736f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Migrate the App-V SQL Database to a Different SQL Server
 

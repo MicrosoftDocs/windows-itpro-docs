@@ -1,9 +1,14 @@
 ---
 title: How to Disable or Modify Disconnected Operation Mode Settings
 description: How to Disable or Modify Disconnected Operation Mode Settings
-ms.assetid: 39f166d7-2d25-4899-8405-b45f051facb8
 author: jamiejdt
+ms.assetid: 39f166d7-2d25-4899-8405-b45f051facb8
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Disable or Modify Disconnected Operation Mode Settings
 

@@ -1,9 +1,14 @@
 ---
 title: Server Management Console About Dialog Boxes
 description: Server Management Console About Dialog Boxes
-ms.assetid: b5fdee0b-4269-4a48-98a0-ed3f06cff041
 author: jamiejdt
+ms.assetid: b5fdee0b-4269-4a48-98a0-ed3f06cff041
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Server Management Console: About Dialog Boxes
 

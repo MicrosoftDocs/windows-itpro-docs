@@ -1,9 +1,14 @@
 ---
 title: Client Installation Command Line Reference
 description: Client Installation Command Line Reference
-ms.assetid: 122a593d-3314-4e9b-858a-08a25ed00c32
 author: jamiejdt
+ms.assetid: 122a593d-3314-4e9b-858a-08a25ed00c32
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Client Installation Command Line Reference
 

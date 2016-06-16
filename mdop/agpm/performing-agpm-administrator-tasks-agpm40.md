@@ -1,9 +1,14 @@
 ---
 title: Performing AGPM Administrator Tasks
 description: Performing AGPM Administrator Tasks
-ms.assetid: bc746f39-bdc9-4e2a-bc48-c3c7905de098
 author: jamiejdt
+ms.assetid: bc746f39-bdc9-4e2a-bc48-c3c7905de098
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Performing AGPM Administrator Tasks
 

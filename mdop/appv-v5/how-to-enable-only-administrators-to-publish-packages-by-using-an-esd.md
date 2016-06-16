@@ -1,9 +1,14 @@
 ---
 title: How to Enable Only Administrators to Publish Packages by Using an ESD
 description: How to Enable Only Administrators to Publish Packages by Using an ESD
-ms.assetid: 03367b26-83d5-4299-ad52-b9177b9cf9a8
 author: jamiejdt
+ms.assetid: 03367b26-83d5-4299-ad52-b9177b9cf9a8
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Enable Only Administrators to Publish Packages by Using an ESD
 

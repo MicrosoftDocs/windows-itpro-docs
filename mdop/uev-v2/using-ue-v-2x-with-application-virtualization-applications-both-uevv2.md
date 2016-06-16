@@ -1,9 +1,14 @@
 ---
 title: Using UE-V 2.x with Application Virtualization Applications
 description: Using UE-V 2.x with Application Virtualization Applications
-ms.assetid: 4644b810-fc48-4fd0-96e4-2fc6cd64d8ad
 author: jamiejdt
+ms.assetid: 4644b810-fc48-4fd0-96e4-2fc6cd64d8ad
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Using UE-V 2.x with Application Virtualization Applications
 

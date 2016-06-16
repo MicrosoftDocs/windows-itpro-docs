@@ -1,9 +1,14 @@
 ---
 title: Review GPO Links
 description: Review GPO Links
-ms.assetid: 3aaba9da-f0aa-466f-bd1c-49f11d00ea54
 author: jamiejdt
+ms.assetid: 3aaba9da-f0aa-466f-bd1c-49f11d00ea54
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Review GPO Links
 

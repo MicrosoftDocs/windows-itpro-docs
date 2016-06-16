@@ -1,9 +1,14 @@
 ---
 title: Create UE-V Settings Location Templates with the UE-V Generator
 description: Create UE-V Settings Location Templates with the UE-V Generator
-ms.assetid: b8e50e2f-0cc6-4f74-bb48-c471fefdc7d8
 author: jamiejdt
+ms.assetid: b8e50e2f-0cc6-4f74-bb48-c471fefdc7d8
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Create UE-V Settings Location Templates with the UE-V Generator
 

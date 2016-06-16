@@ -1,9 +1,14 @@
 ---
 title: Key Scenarios for Using MED-V
 description: Key Scenarios for Using MED-V
-ms.assetid: e35075e2-3401-49ae-810d-1bd51ebc7924
 author: jamiejdt
+ms.assetid: e35075e2-3401-49ae-810d-1bd51ebc7924
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Key Scenarios for Using MED-V
 

@@ -1,9 +1,14 @@
 ---
 title: Improving Security During App-V Sequencing
 description: Improving Security During App-V Sequencing
-ms.assetid: f30206dd-5749-4a27-bbaf-61fc21b9c663
 author: jamiejdt
+ms.assetid: f30206dd-5749-4a27-bbaf-61fc21b9c663
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Improving Security During App-V Sequencing
 

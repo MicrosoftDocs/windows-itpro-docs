@@ -1,9 +1,14 @@
 ---
 title: How to Add or Remove URL Redirection Information in a Deployed MED-V Workspace
 description: How to Add or Remove URL Redirection Information in a Deployed MED-V Workspace
-ms.assetid: bf55848d-bf77-452e-aaa5-4dd4868ff5bd
 author: jamiejdt
+ms.assetid: bf55848d-bf77-452e-aaa5-4dd4868ff5bd
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Add or Remove URL Redirection Information in a Deployed MED-V Workspace
 

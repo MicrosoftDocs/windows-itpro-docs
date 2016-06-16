@@ -1,9 +1,14 @@
 ---
 title: History Window
 description: History Window
-ms.assetid: f11f9ad9-bffe-4c56-8c46-fe9c0a8e55c1
 author: jamiejdt
+ms.assetid: f11f9ad9-bffe-4c56-8c46-fe9c0a8e55c1
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # History Window
 

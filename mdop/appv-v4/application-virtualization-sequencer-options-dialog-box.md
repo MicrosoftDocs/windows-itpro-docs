@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencer Options Dialog Box
 description: Application Virtualization Sequencer Options Dialog Box
-ms.assetid: f71eda8d-8270-439f-a093-867b3a43ebff
 author: jamiejdt
+ms.assetid: f71eda8d-8270-439f-a093-867b3a43ebff
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencer Options Dialog Box
 

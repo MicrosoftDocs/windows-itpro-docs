@@ -1,9 +1,14 @@
 ---
 title: How to Configure the App-V Sequencer
 description: How to Configure the App-V Sequencer
-ms.assetid: 0f43f618-80b0-4715-af17-90f5c673d838
 author: jamiejdt
+ms.assetid: 0f43f618-80b0-4715-af17-90f5c673d838
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure the App-V Sequencer
 

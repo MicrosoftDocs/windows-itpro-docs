@@ -1,9 +1,14 @@
 ---
 title: About App-V 5.1 Dynamic Configuration
 description: About App-V 5.1 Dynamic Configuration
-ms.assetid: 6cc1027c-576f-483b-ad0d-bb700594a92c
 author: jamiejdt
+ms.assetid: 6cc1027c-576f-483b-ad0d-bb700594a92c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About App-V 5.1 Dynamic Configuration
 

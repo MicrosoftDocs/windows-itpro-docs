@@ -1,9 +1,14 @@
 ---
 title: Overview of the Tools in DaRT 7.0
 description: Overview of the Tools in DaRT 7.0
-ms.assetid: 67c5991e-cbe6-4ce9-9fe5-f1761369d1fe
 author: jamiejdt
+ms.assetid: 67c5991e-cbe6-4ce9-9fe5-f1761369d1fe
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Overview of the Tools in DaRT 7.0
 

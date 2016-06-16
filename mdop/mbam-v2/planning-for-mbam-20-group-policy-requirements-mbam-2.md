@@ -1,9 +1,14 @@
 ---
 title: Planning for MBAM 2.0 Group Policy Requirements
 description: Planning for MBAM 2.0 Group Policy Requirements
-ms.assetid: f5e19dcb-eb15-4722-bb71-0734b3799eb8
 author: jamiejdt
+ms.assetid: f5e19dcb-eb15-4722-bb71-0734b3799eb8
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for MBAM 2.0 Group Policy Requirements
 

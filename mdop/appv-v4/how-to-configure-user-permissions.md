@@ -1,9 +1,14 @@
 ---
 title: How to Configure User Permissions
 description: How to Configure User Permissions
-ms.assetid: 54e69f46-b028-4ad1-9b80-f06ef5c8f559
 author: jamiejdt
+ms.assetid: 54e69f46-b028-4ad1-9b80-f06ef5c8f559
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure User Permissions
 

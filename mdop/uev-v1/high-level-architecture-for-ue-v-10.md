@@ -1,9 +1,14 @@
 ---
 title: High-Level Architecture for UE-V 1.0
 description: High-Level Architecture for UE-V 1.0
-ms.assetid: d54f9f10-1a4d-4e56-802d-22d51646e1cc
 author: jamiejdt
+ms.assetid: d54f9f10-1a4d-4e56-802d-22d51646e1cc
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # High-Level Architecture for UE-V 1.0
 

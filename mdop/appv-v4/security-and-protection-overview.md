@@ -1,9 +1,14 @@
 ---
 title: Security and Protection Overview
 description: Security and Protection Overview
-ms.assetid: a43e1c53-7936-4d48-a110-0be26c8e9d97
 author: jamiejdt
+ms.assetid: a43e1c53-7936-4d48-a110-0be26c8e9d97
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Security and Protection Overview
 

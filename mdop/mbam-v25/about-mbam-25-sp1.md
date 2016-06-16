@@ -1,9 +1,14 @@
 ---
 title: About MBAM 2.5 SP1
 description: About MBAM 2.5 SP1
-ms.assetid: 6f12e605-44e6-4646-9c20-aee89c8ff0b7
 author: jamiejdt
+ms.assetid: 6f12e605-44e6-4646-9c20-aee89c8ff0b7
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About MBAM 2.5 SP1
 
