@@ -84,9 +84,13 @@ The above guidelines may help you select or develop an appropriate Windows app f
 ## Related topics
 
 [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
+
 [Set up a device for anyone to use (kiosk mode)](set-up-a-device-for-anyone-to-use.md)
+
 [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
+
 [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
+
 [Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)
 
  
