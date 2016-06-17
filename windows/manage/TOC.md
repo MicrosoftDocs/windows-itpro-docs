@@ -56,7 +56,7 @@
 #### [UE-V 2.x and App-V](uev-using-uev-with-application-virtualization-applications.md)
 ### [Troubleshoot UE-V 2.x](uev-troubleshooting.md)
 ### [Technical Reference for UE-V 2.x](uev-technical-reference.md)
-#### [Sync Methods for UE-V 2.x](sync-methods-for-ue-v-2x-both-uevv2.md)
+#### [Sync Methods for UE-V 2.x](uev-sync-methods.md)
 #### [Sync Trigger Events for UE-V 2.x](uev-sync-trigger-events.md)
 #### [Sync Office 2013 with UE-V 2.0](uev-synchronizing-office-2013-with-uev.md)
 #### [Schema Reference for UE-V 2.x](uev-application-template-schema-reference.md)

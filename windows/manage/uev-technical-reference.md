@@ -18,7 +18,7 @@ This technical reference section includes additional technical documentation abo
 ## Technical reference topics for UE-V 2.x
 
 
--   [Sync Methods for UE-V 2.x](sync-methods-for-ue-v-2x-both-uevv2.md)
+-   [Sync Methods for UE-V 2.x](uev-sync-methods.md)
 
     Defines how UE-V synchronizes settings between computers and the settings storage location. Sync Provider is the default sync method for UE-V 2.0. This topic provides technical reference information for sync methods, including the Sync Provider.
 

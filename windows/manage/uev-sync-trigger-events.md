@@ -9,11 +9,10 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-
 # Sync Trigger Events for UE-V 2.x
 
 
-Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V Agent synchronizes those settings with the settings storage location. UE-V 2 introduces a new *Sync Method* called the *SyncProvider*. For more information about Sync Method configuration, see [Sync Methods for UE-V 2.x](sync-methods-for-ue-v-2x-both-uevv2.md).
+Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V Agent synchronizes those settings with the settings storage location. UE-V 2 introduces a new *Sync Method* called the *SyncProvider*. For more information about Sync Method configuration, see [Sync Methods for UE-V 2.x](uev-sync-methods.md).
 
 ## UE-V 2 Sync Trigger Events
 
