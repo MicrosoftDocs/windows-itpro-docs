@@ -37,7 +37,7 @@
 #### [What's New in UE-V 2.1](whats-new-in-ue-v-21-new-uevv2.md)
 ##### [Microsoft User Experience Virtualization (UE-V) 2.1 Release Notes](microsoft-user-experience-virtualization--ue-v--21-release-notesuevv21.md)
 #### [What's New in UE-V 2.0](uev-whats-new-in-uev-for-windows.md)
-###### [Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes](microsoft-user-experience-virtualization--ue-v--20-release-notesuevv2.md)
+##### [Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes](microsoft-user-experience-virtualization--ue-v--20-release-notesuevv2.md)
 ### [Prepare and Deploy UE-V 2.x](uev-prepare-for-deployment.md)
 #### [Deploy Required Features for UE-V 2.x](uev-deploy-required-features.md)
 #### [Custom Application Deployment for UE-V 2.x](uev-deploy-uev-for-custom-applications.md)
