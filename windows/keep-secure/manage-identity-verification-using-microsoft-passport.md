@@ -42,7 +42,7 @@ As an administrator in an enterprise or educational organization, you can create
 
 - Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Hello provides a layer of protection by being unique to the device on which it is set up, however it is not backed by key-based or certificate-based authentication. 
 
-- Windows Hello for Business, which is configured by Group Policy or MDM policy, used key-based or certificate-based authentication.
+- Windows Hello for Business, which is configured by Group Policy or MDM policy, uses key-based or certificate-based authentication.
 
 ## Benefits of Microsoft Passport
 
