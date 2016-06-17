@@ -1,9 +1,14 @@
 ---
 title: How to Add an Application
 description: How to Add an Application
-ms.assetid: 0147233d-f369-4796-8e34-fb1d894af732
 author: jamiejdt
+ms.assetid: 0147233d-f369-4796-8e34-fb1d894af732
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Add an Application
 

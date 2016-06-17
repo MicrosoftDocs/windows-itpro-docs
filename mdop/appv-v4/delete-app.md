@@ -1,9 +1,14 @@
 ---
 title: DELETE APP
 description: DELETE APP
-ms.assetid: 2f89c0c0-373b-4389-a26d-67b3f9712957
 author: jamiejdt
+ms.assetid: 2f89c0c0-373b-4389-a26d-67b3f9712957
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # DELETE APP
 

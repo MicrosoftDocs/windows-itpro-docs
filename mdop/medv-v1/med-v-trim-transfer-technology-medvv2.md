@@ -1,9 +1,14 @@
 ---
 title: MED-V Trim Transfer Technology
 description: MED-V Trim Transfer Technology
-ms.assetid: 2744e855-a486-4028-9606-f0084794ec65
 author: jamiejdt
+ms.assetid: 2744e855-a486-4028-9606-f0084794ec65
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V Trim Transfer Technology
 

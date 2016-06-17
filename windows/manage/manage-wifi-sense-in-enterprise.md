@@ -6,6 +6,7 @@ keywords: ["WiFi Sense", "automatically connect to wi-fi", "wi-fi hotspot connec
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: mobile
 author: eross-msft
 ---
 

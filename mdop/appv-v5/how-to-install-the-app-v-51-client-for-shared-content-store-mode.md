@@ -1,9 +1,14 @@
 ---
 title: How to Install the App-V 5.1 Client for Shared Content Store Mode
 description: How to Install the App-V 5.1 Client for Shared Content Store Mode
-ms.assetid: 6f3ecb1b-b5b5-4ae0-8de9-b4ffdfd2c216
 author: jamiejdt
+ms.assetid: 6f3ecb1b-b5b5-4ae0-8de9-b4ffdfd2c216
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Install the App-V 5.1 Client for Shared Content Store Mode
 

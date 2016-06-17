@@ -1,9 +1,14 @@
 ---
 title: ADD SERVER
 description: ADD SERVER
-ms.assetid: 4be2ac2e-a410-4711-9f84-f305393c8fa7
 author: jamiejdt
+ms.assetid: 4be2ac2e-a410-4711-9f84-f305393c8fa7
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # ADD SERVER
 

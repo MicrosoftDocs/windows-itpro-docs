@@ -1,9 +1,14 @@
 ---
 title: How to Configure the MBAM 2.5 Web Applications
 description: How to Configure the MBAM 2.5 Web Applications
-ms.assetid: 909bf2d3-028c-4ac1-9247-171532a1eeae
 author: jamiejdt
+ms.assetid: 909bf2d3-028c-4ac1-9247-171532a1eeae
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Configure the MBAM 2.5 Web Applications
 

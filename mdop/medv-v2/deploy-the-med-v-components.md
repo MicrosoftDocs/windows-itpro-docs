@@ -1,9 +1,14 @@
 ---
 title: Deploy the MED-V Components
 description: Deploy the MED-V Components
-ms.assetid: fc2c5ef2-9c71-412a-8f6c-93df248f77d6
 author: jamiejdt
+ms.assetid: fc2c5ef2-9c71-412a-8f6c-93df248f77d6
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Deploy the MED-V Components
 

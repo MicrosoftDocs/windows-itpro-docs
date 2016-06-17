@@ -1,9 +1,14 @@
 ---
 title: Completion Page
 description: Completion Page
-ms.assetid: b2c7776c-2c35-4d25-92b4-6cd8c2bdff42
 author: jamiejdt
+ms.assetid: b2c7776c-2c35-4d25-92b4-6cd8c2bdff42
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Completion Page
 

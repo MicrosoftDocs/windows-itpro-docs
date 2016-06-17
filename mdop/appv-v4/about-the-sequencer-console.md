@@ -1,9 +1,14 @@
 ---
 title: About the Sequencer Console
 description: About the Sequencer Console
-ms.assetid: 36ecba89-a0f5-4d4d-981c-7f581aa43695
 author: jamiejdt
+ms.assetid: 36ecba89-a0f5-4d4d-981c-7f581aa43695
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About the Sequencer Console
 

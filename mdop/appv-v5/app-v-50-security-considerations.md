@@ -1,9 +1,14 @@
 ---
 title: App-V 5.0 Security Considerations
 description: App-V 5.0 Security Considerations
-ms.assetid: 1e7292a0-7972-4b4f-85a9-eaf33f6c563a
 author: jamiejdt
+ms.assetid: 1e7292a0-7972-4b4f-85a9-eaf33f6c563a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # App-V 5.0 Security Considerations
 

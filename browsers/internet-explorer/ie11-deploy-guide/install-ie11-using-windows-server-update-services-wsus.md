@@ -2,7 +2,7 @@
 description: How to install the Internet Explorer 11 update using Windows Server Update Services (WSUS)'
 ms.assetid: 6cbd6797-c670-4236-8423-e0919478f2ce
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Install Internet Explorer 11 (IE11) using Windows Server Update Services (WSUS) (Internet Explorer 11 for IT Pros)

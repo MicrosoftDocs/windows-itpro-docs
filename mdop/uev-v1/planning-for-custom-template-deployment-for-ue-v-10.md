@@ -1,9 +1,14 @@
 ---
 title: Planning for Custom Template Deployment for UE-V 1.0
 description: Planning for Custom Template Deployment for UE-V 1.0
-ms.assetid: be76fc9a-31ca-4290-af11-7640dcb87d50
 author: jamiejdt
+ms.assetid: be76fc9a-31ca-4290-af11-7640dcb87d50
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for Custom Template Deployment for UE-V 1.0
 

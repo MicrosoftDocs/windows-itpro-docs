@@ -23,7 +23,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-ExecutionPolicy Unrestricted
-    $org=&#39;contoso.microsoft.com&#39;
+    $org='contoso.microsoft.com'
     $cred=Get-Credential $admin@$org
     $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
@@ -34,7 +34,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     If you're changing an existing resource mailbox:
 
     ```PowerShell
-    Set-Mailbox -Identity &#39;HUB01&#39; -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+    Set-Mailbox -Identity 'HUB01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
     ```
 
     If you’re creating a new resource mailbox:
@@ -57,7 +57,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-Mailbox $acctUpn -Type Regular
-    Set-CASMailbox $acctUpn -ActiveSyncMailboxPolicy $easPolicy
+    Set-CASMailbox $acctUpn -ActiveSyncMailboxPolicy $easPolicy.Id
     Set-Mailbox $acctUpn -Type Room
     Set-Mailbox $credNewAccount.UserName -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
     ```
@@ -66,7 +66,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a <tla rid="surface_hub"/> room!"
+    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Connect to Azure AD.

@@ -1,9 +1,14 @@
 ---
 title: How to Perform Administrative Tasks in the Application Virtualization Server Management Console
 description: How to Perform Administrative Tasks in the Application Virtualization Server Management Console
-ms.assetid: b80e39eb-4b2a-4f66-8c85-dd5712efed33
 author: jamiejdt
+ms.assetid: b80e39eb-4b2a-4f66-8c85-dd5712efed33
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Perform Administrative Tasks in the Application Virtualization Server Management Console
 

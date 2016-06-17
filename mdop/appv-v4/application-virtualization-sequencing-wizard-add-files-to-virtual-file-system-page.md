@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencing Wizard Add Files to Virtual File System Page
 description: Application Virtualization Sequencing Wizard Add Files to Virtual File System Page
-ms.assetid: 6b01333b-08bd-4b96-a123-a07a7aafddd1
 author: jamiejdt
+ms.assetid: 6b01333b-08bd-4b96-a123-a07a7aafddd1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencing Wizard Add Files to Virtual File System Page
 

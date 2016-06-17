@@ -1,9 +1,14 @@
 ---
 title: Exclusion Item Dialog Box
 description: Exclusion Item Dialog Box
-ms.assetid: 5523c6d4-95f2-47af-8c06-3ab18004a207
 author: jamiejdt
+ms.assetid: 5523c6d4-95f2-47af-8c06-3ab18004a207
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Exclusion Item Dialog Box
 

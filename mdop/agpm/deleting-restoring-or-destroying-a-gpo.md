@@ -1,9 +1,14 @@
 ---
 title: Deleting, Restoring, or Destroying a GPO
 description: Deleting, Restoring, or Destroying a GPO
-ms.assetid: 089c68e7-c1a5-418a-8776-cf23960f10c4
 author: jamiejdt
+ms.assetid: 089c68e7-c1a5-418a-8776-cf23960f10c4
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Deleting, Restoring, or Destroying a GPO
 

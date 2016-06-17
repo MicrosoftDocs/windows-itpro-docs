@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Client Installer Command-Line Parameters
 description: Application Virtualization Client Installer Command-Line Parameters
-ms.assetid: 508fa404-52a5-4919-8788-2a3dfb00639b
 author: jamiejdt
+ms.assetid: 508fa404-52a5-4919-8788-2a3dfb00639b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Client Installer Command-Line Parameters
 

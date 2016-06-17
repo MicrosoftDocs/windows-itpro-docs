@@ -1,9 +1,14 @@
 ---
 title: File Type Association Results Pane
 description: File Type Association Results Pane
-ms.assetid: bc5ceb48-1b9f-45d9-a770-1bac90629c76
 author: jamiejdt
+ms.assetid: bc5ceb48-1b9f-45d9-a770-1bac90629c76
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # File Type Association Results Pane
 

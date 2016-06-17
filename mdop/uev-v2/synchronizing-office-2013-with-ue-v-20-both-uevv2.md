@@ -1,9 +1,14 @@
 ---
 title: Synchronizing Office 2013 with UE-V 2.0
 description: Synchronizing Office 2013 with UE-V 2.0
-ms.assetid: c46feb6d-28a8-4799-888d-053531dc5842
 author: jamiejdt
+ms.assetid: c46feb6d-28a8-4799-888d-053531dc5842
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Synchronizing Office 2013 with UE-V 2.0
 

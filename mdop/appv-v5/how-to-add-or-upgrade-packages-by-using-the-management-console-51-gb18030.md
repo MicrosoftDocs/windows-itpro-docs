@@ -1,9 +1,14 @@
 ---
 title: How to Add or Upgrade Packages by Using the Management Console
 description: How to Add or Upgrade Packages by Using the Management Console
-ms.assetid: 62417b63-06b2-437c-8584-523e1dea97c3
 author: jamiejdt
+ms.assetid: 62417b63-06b2-437c-8584-523e1dea97c3
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Add or Upgrade Packages by Using the Management Console
 

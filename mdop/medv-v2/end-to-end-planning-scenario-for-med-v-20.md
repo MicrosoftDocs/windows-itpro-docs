@@ -1,9 +1,14 @@
 ---
 title: End-to-End Planning Scenario for MED-V 2.0
 description: End-to-End Planning Scenario for MED-V 2.0
-ms.assetid: e7833883-be93-4b42-9fa3-5c4d9a919058
 author: jamiejdt
+ms.assetid: e7833883-be93-4b42-9fa3-5c4d9a919058
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # End-to-End Planning Scenario for MED-V 2.0
 

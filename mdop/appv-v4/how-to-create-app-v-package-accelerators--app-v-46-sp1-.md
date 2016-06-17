@@ -1,9 +1,14 @@
 ---
 title: How to Create App-V Package Accelerators (App-V 4.6 SP1)
 description: How to Create App-V Package Accelerators (App-V 4.6 SP1)
-ms.assetid: 585e692e-cebb-48ac-93ab-b2e7eb7ae7ad
 author: jamiejdt
+ms.assetid: 585e692e-cebb-48ac-93ab-b2e7eb7ae7ad
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Create App-V Package Accelerators (App-V 4.6 SP1)
 

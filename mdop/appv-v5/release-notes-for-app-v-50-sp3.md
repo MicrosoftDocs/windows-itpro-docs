@@ -1,9 +1,14 @@
 ---
 title: Release Notes for App-V 5.0 SP3
 description: Release Notes for App-V 5.0 SP3
-ms.assetid: bc4806e0-2aba-4c7b-9ecc-1b2cc54af1d0
 author: jamiejdt
+ms.assetid: bc4806e0-2aba-4c7b-9ecc-1b2cc54af1d0
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Release Notes for App-V 5.0 SP3
 

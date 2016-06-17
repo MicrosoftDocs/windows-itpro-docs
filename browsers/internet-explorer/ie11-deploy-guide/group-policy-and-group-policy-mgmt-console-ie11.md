@@ -2,7 +2,7 @@
 description: Overview about Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11
 ms.assetid: ae3d227d-3da7-46b8-8a61-c71bfeae0c63
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security 

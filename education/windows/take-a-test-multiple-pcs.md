@@ -28,7 +28,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 - Cortana is turned off.
 
 
-**Take a Test** is included in Windows 10 Education. To add **Take a Test** to other editions of Windows 10, see [Add the Take a Test app to Windows 10](take-tests-in-windows-10.md#add-the-take-a-test-app-to-windows-10)
+**Take a Test** is included in version 1607 of Windows 10 Pro, Pro Education, Education and Enterprise. 
 
 ## How you use Take a Test
 
@@ -68,7 +68,7 @@ To configure a dedicated test account on multiple PCs, you can use:
 4. Create a policy that associates the assessment URL to the account, using the following values:
 
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/TesterAccount
-    - **String value** = Enter the account that you created in step 2, using the same account format.
+    - **String value** = Enter the account that you specified in step 2, using the same account format.
     
 5. To take the test, the student signs in to the test account.
 

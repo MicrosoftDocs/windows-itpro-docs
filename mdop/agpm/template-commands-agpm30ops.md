@@ -1,9 +1,14 @@
 ---
 title: Template Commands
 description: Template Commands
-ms.assetid: 2ec11b3f-0c5c-4788-97bd-bd4bf64ba51a
 author: jamiejdt
+ms.assetid: 2ec11b3f-0c5c-4788-97bd-bd4bf64ba51a
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Template Commands
 

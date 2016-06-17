@@ -1,9 +1,14 @@
 ---
 title: Security and Privacy for UE-V 1.0
 description: Security and Privacy for UE-V 1.0
-ms.assetid: c23d867d-7991-4c78-a123-a8a92758e5ba
 author: jamiejdt
+ms.assetid: c23d867d-7991-4c78-a123-a8a92758e5ba
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Security and Privacy for UE-V 1.0
 

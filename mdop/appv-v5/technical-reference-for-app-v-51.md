@@ -1,9 +1,14 @@
 ---
 title: Technical Reference for App-V 5.1
 description: Technical Reference for App-V 5.1
-ms.assetid: 2b9e8b2b-4cd1-46f3-ba08-e3bc8d5c6127
 author: jamiejdt
+ms.assetid: 2b9e8b2b-4cd1-46f3-ba08-e3bc8d5c6127
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Technical Reference for App-V 5.1
 

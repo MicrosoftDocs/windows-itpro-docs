@@ -1,9 +1,14 @@
 ---
 title: Release Notes for MBAM 1.0
 description: Release Notes for MBAM 1.0
-ms.assetid: d82fddde-c360-48ef-86a0-d9b5fe066861
 author: jamiejdt
+ms.assetid: d82fddde-c360-48ef-86a0-d9b5fe066861
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Release Notes for MBAM 1.0
 

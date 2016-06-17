@@ -1,9 +1,14 @@
 ---
 title: DELETE TYPE
 description: DELETE TYPE
-ms.assetid: f2852723-c894-49f3-a3c5-56f9648bb9ca
 author: jamiejdt
+ms.assetid: f2852723-c894-49f3-a3c5-56f9648bb9ca
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # DELETE TYPE
 

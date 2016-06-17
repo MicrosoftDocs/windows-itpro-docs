@@ -1,9 +1,14 @@
 ---
 title: How to Deploy a MED-V Workspace Through an Electronic Software Distribution System
 description: How to Deploy a MED-V Workspace Through an Electronic Software Distribution System
-ms.assetid: b5134c35-e1de-470c-93f8-ead6218d9dce
 author: jamiejdt
+ms.assetid: b5134c35-e1de-470c-93f8-ead6218d9dce
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Deploy a MED-V Workspace Through an Electronic Software Distribution System
 

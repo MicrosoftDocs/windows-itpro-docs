@@ -1,9 +1,14 @@
 ---
 title: How to Upgrade the Application Virtualization Client
 description: How to Upgrade the Application Virtualization Client
-ms.assetid: 2a75d8b5-da88-456c-85bb-f5bd3d470f7f
 author: jamiejdt
+ms.assetid: 2a75d8b5-da88-456c-85bb-f5bd3d470f7f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Upgrade the Application Virtualization Client
 

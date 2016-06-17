@@ -1,9 +1,14 @@
 ---
 title: About This Guide
 description: About This Guide
-ms.assetid: 17d8f150-226e-45f8-87e3-f425a77243e4
 author: jamiejdt
+ms.assetid: 17d8f150-226e-45f8-87e3-f425a77243e4
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # About This Guide
 

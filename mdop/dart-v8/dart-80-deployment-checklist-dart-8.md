@@ -1,9 +1,14 @@
 ---
 title: DaRT 8.0 Deployment Checklist
 description: DaRT 8.0 Deployment Checklist
-ms.assetid: 74e071fb-697c-463f-adce-d09b8d86495f
 author: jamiejdt
+ms.assetid: 74e071fb-697c-463f-adce-d09b8d86495f
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # DaRT 8.0 Deployment Checklist
 

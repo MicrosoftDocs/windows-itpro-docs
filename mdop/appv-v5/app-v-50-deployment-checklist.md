@@ -1,9 +1,14 @@
 ---
 title: App-V 5.0 Deployment Checklist
 description: App-V 5.0 Deployment Checklist
-ms.assetid: d6d93152-82b4-4b02-8b11-ed21d3331f00
 author: jamiejdt
+ms.assetid: d6d93152-82b4-4b02-8b11-ed21d3331f00
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # App-V 5.0 Deployment Checklist
 
