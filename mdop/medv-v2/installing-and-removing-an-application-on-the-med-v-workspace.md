@@ -1,9 +1,14 @@
 ---
 title: Installing and Removing an Application on the MED-V Workspace
 description: Installing and Removing an Application on the MED-V Workspace
-ms.assetid: 24f32720-51ab-4385-adfe-4f5a65e45fdf
 author: jamiejdt
+ms.assetid: 24f32720-51ab-4385-adfe-4f5a65e45fdf
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Installing and Removing an Application on the MED-V Workspace
 

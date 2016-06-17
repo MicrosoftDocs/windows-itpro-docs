@@ -1,9 +1,14 @@
 ---
 title: How to deploy App-V 5.0 Packages Using Electronic Software Distribution
 description: How to deploy App-V 5.0 Packages Using Electronic Software Distribution
-ms.assetid: 08e5e05b-dbb8-4be7-b2d8-721ef627da81
 author: jamiejdt
+ms.assetid: 08e5e05b-dbb8-4be7-b2d8-721ef627da81
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to deploy App-V 5.0 Packages Using Electronic Software Distribution
 

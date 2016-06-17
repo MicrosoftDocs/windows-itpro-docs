@@ -1,9 +1,14 @@
 ---
 title: Restore the Archive from a Backup
 description: Restore the Archive from a Backup
-ms.assetid: b83f6173-a236-4da2-b16e-8df20920d4cc
 author: jamiejdt
+ms.assetid: b83f6173-a236-4da2-b16e-8df20920d4cc
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Restore the Archive from a Backup
 

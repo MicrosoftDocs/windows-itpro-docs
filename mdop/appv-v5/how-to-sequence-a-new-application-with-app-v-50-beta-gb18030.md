@@ -1,9 +1,14 @@
 ---
 title: How to Sequence a New Application with App-V 5.0
 description: How to Sequence a New Application with App-V 5.0
-ms.assetid: a263fa84-cd6d-4219-a5c2-eb6a553b826c
 author: jamiejdt
+ms.assetid: a263fa84-cd6d-4219-a5c2-eb6a553b826c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Sequence a New Application with App-V 5.0
 

@@ -1,9 +1,14 @@
 ---
 title: Back Up the Archive
 description: Back Up the Archive
-ms.assetid: 538d85eb-3596-4c1d-bbd7-26bc28857c28
 author: jamiejdt
+ms.assetid: 538d85eb-3596-4c1d-bbd7-26bc28857c28
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Back Up the Archive
 

@@ -1,9 +1,14 @@
 ---
 title: How to Connect to an Application Virtualization System
 description: How to Connect to an Application Virtualization System
-ms.assetid: ac38216c-5464-4c0b-a4d3-3949ba6358ac
 author: jamiejdt
+ms.assetid: ac38216c-5464-4c0b-a4d3-3949ba6358ac
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Connect to an Application Virtualization System
 

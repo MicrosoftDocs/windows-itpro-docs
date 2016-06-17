@@ -1,9 +1,14 @@
 ---
 title: Uncontrolled Tab
 description: Uncontrolled Tab
-ms.assetid: d7e658bf-a72b-4813-bdc8-2fdb7251e742
 author: jamiejdt
+ms.assetid: d7e658bf-a72b-4813-bdc8-2fdb7251e742
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Uncontrolled Tab
 

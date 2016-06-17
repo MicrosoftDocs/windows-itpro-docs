@@ -1,9 +1,14 @@
 ---
 title: How to Deny Access to an Application
 description: How to Deny Access to an Application
-ms.assetid: 14f5e201-7265-462c-b738-57938dc3fc30
 author: jamiejdt
+ms.assetid: 14f5e201-7265-462c-b738-57938dc3fc30
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Deny Access to an Application
 

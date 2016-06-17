@@ -1,9 +1,14 @@
 ---
 title: Managing the AGPM Service
 description: Managing the AGPM Service
-ms.assetid: 48ca02aa-6acf-403b-afd4-66ae8a953246
 author: jamiejdt
+ms.assetid: 48ca02aa-6acf-403b-afd4-66ae8a953246
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Managing the AGPM Service
 

@@ -1,9 +1,14 @@
 ---
 title: How to Manually Add an Application
 description: How to Manually Add an Application
-ms.assetid: c635b07a-5c7f-4ab2-ba18-366457146cb9
 author: jamiejdt
+ms.assetid: c635b07a-5c7f-4ab2-ba18-366457146cb9
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Manually Add an Application
 

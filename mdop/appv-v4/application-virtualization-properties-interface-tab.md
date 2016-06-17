@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Properties Interface Tab
 description: Application Virtualization Properties Interface Tab
-ms.assetid: bb9cb54e-315a-48bf-a396-b33e2cbd030a
 author: jamiejdt
+ms.assetid: bb9cb54e-315a-48bf-a396-b33e2cbd030a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Properties: Interface Tab
 

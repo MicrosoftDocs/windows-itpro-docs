@@ -1,9 +1,14 @@
 ---
 title: Prerequisites for MBAM 2.5 Clients
 description: Prerequisites for MBAM 2.5 Clients
-ms.assetid: fc230679-9c84-4b99-a77c-bae7e7bf8145
 author: jamiejdt
+ms.assetid: fc230679-9c84-4b99-a77c-bae7e7bf8145
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Prerequisites for MBAM 2.5 Clients
 

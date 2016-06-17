@@ -1,9 +1,14 @@
 ---
 title: Planning the Application Virtualization Sequencer Implementation
 description: Planning the Application Virtualization Sequencer Implementation
-ms.assetid: 052f32fe-ad13-4921-a8ce-4a657eb2b2bf
 author: jamiejdt
+ms.assetid: 052f32fe-ad13-4921-a8ce-4a657eb2b2bf
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning the Application Virtualization Sequencer Implementation
 

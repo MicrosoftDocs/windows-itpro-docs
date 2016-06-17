@@ -1,9 +1,14 @@
 ---
 title: File Type Associations Node
 description: File Type Associations Node
-ms.assetid: a3f35562-32d0-4a43-8604-3a54189ade92
 author: jamiejdt
+ms.assetid: a3f35562-32d0-4a43-8604-3a54189ade92
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # File Type Associations Node
 

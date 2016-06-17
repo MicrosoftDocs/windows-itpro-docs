@@ -1,9 +1,14 @@
 ---
 title: Planning for Using App-V with Office
 description: Planning for Using App-V with Office
-ms.assetid: e7a19b43-1746-469f-bad6-8e75cf4b3f67
 author: jamiejdt
+ms.assetid: e7a19b43-1746-469f-bad6-8e75cf4b3f67
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning for Using App-V with Office
 

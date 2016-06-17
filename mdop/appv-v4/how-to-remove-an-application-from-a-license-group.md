@@ -1,9 +1,14 @@
 ---
 title: How to Remove an Application from a License Group
 description: How to Remove an Application from a License Group
-ms.assetid: 973dfb11-b4d1-4b79-8f6a-aaea3e52b04f
 author: jamiejdt
+ms.assetid: 973dfb11-b4d1-4b79-8f6a-aaea3e52b04f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Remove an Application from a License Group
 

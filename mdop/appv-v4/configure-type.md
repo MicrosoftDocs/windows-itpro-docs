@@ -1,9 +1,14 @@
 ---
 title: CONFIGURE TYPE
 description: CONFIGURE TYPE
-ms.assetid: 2caf9433-5449-486f-ab94-83ee8e44d7f1
 author: jamiejdt
+ms.assetid: 2caf9433-5449-486f-ab94-83ee8e44d7f1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # CONFIGURE TYPE
 

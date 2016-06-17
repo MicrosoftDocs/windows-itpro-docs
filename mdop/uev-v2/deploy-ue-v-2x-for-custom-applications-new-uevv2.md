@@ -1,9 +1,14 @@
 ---
 title: Deploy UE-V 2.x for Custom Applications
 description: Deploy UE-V 2.x for Custom Applications
-ms.assetid: f7cb089f-d764-4a93-82b6-926fe0385a23
 author: jamiejdt
+ms.assetid: f7cb089f-d764-4a93-82b6-926fe0385a23
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Deploy UE-V 2.x for Custom Applications
 

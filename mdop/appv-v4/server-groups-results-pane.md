@@ -1,9 +1,14 @@
 ---
 title: Server Groups Results Pane
 description: Server Groups Results Pane
-ms.assetid: ac7b0525-5946-4728-9cf1-c65007852ebe
 author: jamiejdt
+ms.assetid: ac7b0525-5946-4728-9cf1-c65007852ebe
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Server Groups Results Pane
 

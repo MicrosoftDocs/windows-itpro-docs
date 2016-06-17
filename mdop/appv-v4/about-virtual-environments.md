@@ -1,9 +1,14 @@
 ---
 title: About Virtual Environments
 description: About Virtual Environments
-ms.assetid: e03a8c72-56c1-4ae9-aa45-0283c50a154c
 author: jamiejdt
+ms.assetid: e03a8c72-56c1-4ae9-aa45-0283c50a154c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About Virtual Environments
 

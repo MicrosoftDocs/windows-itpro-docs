@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencer Online Help
 description: Application Virtualization Sequencer Online Help
-ms.assetid: 0ddeae59-314f-4c61-b85f-6b137b959fa6
 author: jamiejdt
+ms.assetid: 0ddeae59-314f-4c61-b85f-6b137b959fa6
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencer Online Help
 

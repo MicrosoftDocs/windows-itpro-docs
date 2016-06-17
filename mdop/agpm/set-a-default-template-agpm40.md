@@ -1,9 +1,14 @@
 ---
 title: Set a Default Template
 description: Set a Default Template
-ms.assetid: 07208b6b-cb3a-4f6c-9c84-36d4dc1486d8
 author: jamiejdt
+ms.assetid: 07208b6b-cb3a-4f6c-9c84-36d4dc1486d8
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Set a Default Template
 

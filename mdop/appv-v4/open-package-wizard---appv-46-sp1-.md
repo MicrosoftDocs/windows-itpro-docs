@@ -1,9 +1,14 @@
 ---
 title: Open Package Wizard (AppV 4.6 SP1)
 description: Open Package Wizard (AppV 4.6 SP1)
-ms.assetid: 26bdef59-2ea3-4e30-9095-0ee0d0085b2d
 author: jamiejdt
+ms.assetid: 26bdef59-2ea3-4e30-9095-0ee0d0085b2d
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Open Package Wizard (AppV 4.6 SP1)
 

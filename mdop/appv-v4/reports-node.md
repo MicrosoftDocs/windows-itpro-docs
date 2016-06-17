@@ -1,9 +1,14 @@
 ---
 title: Reports Node
 description: Reports Node
-ms.assetid: b7fdc52d-f112-4a65-af25-134398810e9b
 author: jamiejdt
+ms.assetid: b7fdc52d-f112-4a65-af25-134398810e9b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Reports Node
 

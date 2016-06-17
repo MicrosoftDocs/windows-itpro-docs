@@ -1,9 +1,14 @@
 ---
 title: Overview of the Tools in DaRT 8.0
 description: Overview of the Tools in DaRT 8.0
-ms.assetid: 1766c82e-c099-47d4-b186-4689b026a7e0
 author: jamiejdt
+ms.assetid: 1766c82e-c099-47d4-b186-4689b026a7e0
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Overview of the Tools in DaRT 8.0
 

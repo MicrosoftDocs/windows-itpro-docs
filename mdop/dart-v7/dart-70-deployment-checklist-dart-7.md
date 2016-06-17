@@ -1,9 +1,14 @@
 ---
 title: DaRT 7.0 Deployment Checklist
 description: DaRT 7.0 Deployment Checklist
-ms.assetid: 2c68ec15-0624-4a75-8237-05c68b61ad07
 author: jamiejdt
+ms.assetid: 2c68ec15-0624-4a75-8237-05c68b61ad07
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # DaRT 7.0 Deployment Checklist
 

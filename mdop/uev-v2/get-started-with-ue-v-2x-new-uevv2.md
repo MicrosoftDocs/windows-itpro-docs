@@ -1,9 +1,14 @@
 ---
 title: Get Started with UE-V 2.x
 description: Get Started with UE-V 2.x
-ms.assetid: 526ecbf0-0dee-4f0b-b017-8f8d25357b14
 author: jamiejdt
+ms.assetid: 526ecbf0-0dee-4f0b-b017-8f8d25357b14
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Get Started with UE-V 2.x
 

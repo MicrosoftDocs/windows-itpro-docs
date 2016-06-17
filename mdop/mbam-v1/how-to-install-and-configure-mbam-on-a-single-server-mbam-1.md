@@ -1,9 +1,14 @@
 ---
 title: How to Install and Configure MBAM on a Single Server
 description: How to Install and Configure MBAM on a Single Server
-ms.assetid: 55841c63-bad9-44e7-b7fd-ea7037febbd7
 author: jamiejdt
+ms.assetid: 55841c63-bad9-44e7-b7fd-ea7037febbd7
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install and Configure MBAM on a Single Server
 

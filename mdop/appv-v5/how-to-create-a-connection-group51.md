@@ -1,9 +1,14 @@
 ---
 title: How to Create a Connection Group
 description: How to Create a Connection Group
-ms.assetid: 221e2eed-7ebb-42e3-b3d6-11c37c0578e6
 author: jamiejdt
+ms.assetid: 221e2eed-7ebb-42e3-b3d6-11c37c0578e6
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Create a Connection Group
 

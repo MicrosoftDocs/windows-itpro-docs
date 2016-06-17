@@ -1,9 +1,14 @@
 ---
 title: Manage MED-V Workspace Applications
 description: Manage MED-V Workspace Applications
-ms.assetid: f58c7504-a77a-41a8-ac38-7e618da131fb
 author: jamiejdt
+ms.assetid: f58c7504-a77a-41a8-ac38-7e618da131fb
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Manage MED-V Workspace Applications
 

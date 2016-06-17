@@ -1,9 +1,14 @@
 ---
 title: UNLOAD APP
 description: UNLOAD APP
-ms.assetid: f0d729ae-8772-498b-be11-1a4b35499c53
 author: jamiejdt
+ms.assetid: f0d729ae-8772-498b-be11-1a4b35499c53
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # UNLOAD APP
 

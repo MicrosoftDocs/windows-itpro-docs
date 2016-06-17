@@ -1,9 +1,14 @@
 ---
 title: Security Considerations for DaRT 10
 description: Security Considerations for DaRT 10
-ms.assetid: c653daf1-f12a-4667-98cc-f0c89fa38e3f
 author: jamiejdt
+ms.assetid: c653daf1-f12a-4667-98cc-f0c89fa38e3f
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Security Considerations for DaRT 10
 

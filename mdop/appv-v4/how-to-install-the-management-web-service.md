@@ -1,9 +1,14 @@
 ---
 title: How to Install the Management Web Service
 description: How to Install the Management Web Service
-ms.assetid: cac296f5-8ca0-4ce7-afdb-859ae207d2f1
 author: jamiejdt
+ms.assetid: cac296f5-8ca0-4ce7-afdb-859ae207d2f1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the Management Web Service
 

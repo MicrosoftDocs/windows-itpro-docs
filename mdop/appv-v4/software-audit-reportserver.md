@@ -1,9 +1,14 @@
 ---
 title: Software Audit Report
 description: Software Audit Report
-ms.assetid: 55a49ed2-f331-40d3-add6-8e5fcd6816fd
 author: jamiejdt
+ms.assetid: 55a49ed2-f331-40d3-add6-8e5fcd6816fd
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Software Audit Report
 

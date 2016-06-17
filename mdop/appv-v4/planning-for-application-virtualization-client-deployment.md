@@ -1,9 +1,14 @@
 ---
 title: Planning for Application Virtualization Client Deployment
 description: Planning for Application Virtualization Client Deployment
-ms.assetid: a352f80f-f0f9-4fbf-ac10-24c510b2d6be
 author: jamiejdt
+ms.assetid: a352f80f-f0f9-4fbf-ac10-24c510b2d6be
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for Application Virtualization Client Deployment
 

@@ -1,9 +1,14 @@
 ---
 title: Technical Reference for UE-V 2.x
 description: Technical Reference for UE-V 2.x
-ms.assetid: 303cff9a-a96d-4e83-9e94-19b0d3744e1e
 author: jamiejdt
+ms.assetid: 303cff9a-a96d-4e83-9e94-19b0d3744e1e
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Technical Reference for UE-V 2.x
 

@@ -1,9 +1,14 @@
 ---
 title: How to Deploy the MBAM Client to Desktop or Laptop Computers
 description: How to Deploy the MBAM Client to Desktop or Laptop Computers
-ms.assetid: f32927a2-4c05-4da8-acca-1108d1dfdb7e
 author: jamiejdt
+ms.assetid: f32927a2-4c05-4da8-acca-1108d1dfdb7e
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Deploy the MBAM Client to Desktop or Laptop Computers
 

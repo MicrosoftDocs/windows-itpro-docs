@@ -1,9 +1,14 @@
 ---
 title: How to Enable BitLocker by Using MBAM as Part of a Windows Deployment
 description: How to Enable BitLocker by Using MBAM as Part of a Windows Deployment
-ms.assetid: 7609ad7a-bb06-47be-b186-0a2db787c8a5
 author: jamiejdt
+ms.assetid: 7609ad7a-bb06-47be-b186-0a2db787c8a5
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Enable BitLocker by Using MBAM as Part of a Windows Deployment
 
@@ -315,3 +320,4 @@ Here are a list of common error messages:
 [Deploying the MBAM 2.5 Client](deploying-the-mbam-25-client.md)
 
 [Planning for MBAM 2.5 Client Deployment](planning-for-mbam-25-client-deployment.md)
+
