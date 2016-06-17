@@ -1,9 +1,14 @@
 ---
 title: Configuring the Application Virtualization Sequencer
 description: Configuring the Application Virtualization Sequencer
-ms.assetid: cae1c368-9fcd-454e-8fc9-0893345d55bf
 author: jamiejdt
+ms.assetid: cae1c368-9fcd-454e-8fc9-0893345d55bf
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Configuring the Application Virtualization Sequencer
 

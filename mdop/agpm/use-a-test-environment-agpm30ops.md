@@ -1,9 +1,14 @@
 ---
 title: Use a Test Environment
 description: Use a Test Environment
-ms.assetid: 86295084-b39e-4040-bb3f-15c3c1e99b1a
 author: jamiejdt
+ms.assetid: 86295084-b39e-4040-bb3f-15c3c1e99b1a
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Use a Test Environment
 

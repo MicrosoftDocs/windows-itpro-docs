@@ -1,9 +1,14 @@
 ---
 title: MBAM 2.0 Supported Configurations
 description: MBAM 2.0 Supported Configurations
-ms.assetid: dca63391-39fe-4273-a570-76d0a2f8a0fd
 author: jamiejdt
+ms.assetid: dca63391-39fe-4273-a570-76d0a2f8a0fd
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # MBAM 2.0 Supported Configurations
 

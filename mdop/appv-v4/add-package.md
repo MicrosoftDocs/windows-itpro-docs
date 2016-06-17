@@ -1,9 +1,14 @@
 ---
 title: ADD PACKAGE
 description: ADD PACKAGE
-ms.assetid: aa83928d-a234-4395-831e-2a7ef786ff53
 author: jamiejdt
+ms.assetid: aa83928d-a234-4395-831e-2a7ef786ff53
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # ADD PACKAGE
 

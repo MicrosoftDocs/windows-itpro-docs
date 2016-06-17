@@ -1,9 +1,14 @@
 ---
 title: LOAD PACKAGE
 description: LOAD PACKAGE
-ms.assetid: eb19116d-e5d0-445c-b2f0-3116a09384d7
 author: jamiejdt
+ms.assetid: eb19116d-e5d0-445c-b2f0-3116a09384d7
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # LOAD PACKAGE
 

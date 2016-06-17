@@ -1,9 +1,14 @@
 ---
 title: About MED-V 1.0
 description: About MED-V 1.0
-ms.assetid: 89651022-a2ba-4d8a-a3ff-68539ea7a235
 author: jamiejdt
+ms.assetid: 89651022-a2ba-4d8a-a3ff-68539ea7a235
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # About MED-V 1.0
 

@@ -1,9 +1,14 @@
 ---
 title: How to Manage Virtual Applications Manually
 description: How to Manage Virtual Applications Manually
-ms.assetid: 583c5255-d3f4-4197-85cd-2a59868d85de
 author: jamiejdt
+ms.assetid: 583c5255-d3f4-4197-85cd-2a59868d85de
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Manage Virtual Applications Manually
 

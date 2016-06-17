@@ -1,9 +1,14 @@
 ---
 title: Prepare a UE-V 2.x Deployment
 description: Prepare a UE-V 2.x Deployment
-ms.assetid: c429fd06-13ff-48c5-b9c9-fa1ec01ab800
 author: jamiejdt
+ms.assetid: c429fd06-13ff-48c5-b9c9-fa1ec01ab800
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Prepare a UE-V 2.x Deployment
 

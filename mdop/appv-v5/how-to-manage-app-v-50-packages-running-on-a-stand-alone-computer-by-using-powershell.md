@@ -1,9 +1,14 @@
 ---
 title: How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell
 description: How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell
-ms.assetid: 1d6c2d25-81ec-4ff8-9262-6b4cf484a376
 author: jamiejdt
+ms.assetid: 1d6c2d25-81ec-4ff8-9262-6b4cf484a376
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell
 

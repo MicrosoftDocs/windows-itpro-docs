@@ -1,9 +1,14 @@
 ---
 title: Accessibility for MBAM 2.5
 description: Accessibility for MBAM 2.5
-ms.assetid: 03b343a6-9e8e-4868-a52b-cedf0b696d56
 author: jamiejdt
+ms.assetid: 03b343a6-9e8e-4868-a52b-cedf0b696d56
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Accessibility for MBAM 2.5
 

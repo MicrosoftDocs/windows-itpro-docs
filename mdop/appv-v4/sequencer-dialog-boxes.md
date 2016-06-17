@@ -1,9 +1,14 @@
 ---
 title: Sequencer Dialog Boxes
 description: Sequencer Dialog Boxes
-ms.assetid: f660d56b-0244-4167-b077-96ad482e6b36
 author: jamiejdt
+ms.assetid: f660d56b-0244-4167-b077-96ad482e6b36
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Sequencer Dialog Boxes
 

@@ -1,9 +1,14 @@
 ---
 title: How to Deploy a Workspace Image
 description: How to Deploy a Workspace Image
-ms.assetid: b2c77e0d-101d-4956-a27c-8beb0e4f262e
 author: jamiejdt
+ms.assetid: b2c77e0d-101d-4956-a27c-8beb0e4f262e
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Deploy a Workspace Image
 

@@ -1,9 +1,14 @@
 ---
 title: Configuring UE-V 2.x with Group Policy Objects
 description: Configuring UE-V 2.x with Group Policy Objects
-ms.assetid: 2bb55834-26ee-4f19-9860-dfdf3c797143
 author: jamiejdt
+ms.assetid: 2bb55834-26ee-4f19-9860-dfdf3c797143
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Configuring UE-V 2.x with Group Policy Objects
 

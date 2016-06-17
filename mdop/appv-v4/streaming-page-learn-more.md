@@ -1,9 +1,14 @@
 ---
 title: Streaming Page
 description: Streaming Page
-ms.assetid: a69a57a0-1bbe-4604-840d-bfa87ec463e1
 author: jamiejdt
+ms.assetid: a69a57a0-1bbe-4604-840d-bfa87ec463e1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Streaming Page
 

@@ -2,7 +2,7 @@
 description: Use the \[CustomBranding\] .INS file setting to specify the location of your branding cabinet (.cab) file.
 ms.assetid: 9c74e239-65c5-4aa5-812f-e0ed80c5c2b0
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: plan
 ms.sitesec: library
 title: Use the CustomBranding .INS file to create custom branding and setup info (Internet Explorer Administration Kit 11 for IT Pros)

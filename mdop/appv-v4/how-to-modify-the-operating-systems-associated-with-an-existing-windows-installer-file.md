@@ -1,9 +1,14 @@
 ---
 title: How to Modify the Operating Systems Associated With an Existing Windows Installer File
 description: How to Modify the Operating Systems Associated With an Existing Windows Installer File
-ms.assetid: 0633f7e2-aebf-4e00-be02-35bc59dec420
 author: jamiejdt
+ms.assetid: 0633f7e2-aebf-4e00-be02-35bc59dec420
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Modify the Operating Systems Associated With an Existing Windows Installer File
 

@@ -1,9 +1,14 @@
 ---
 title: How to Load or Unload an Application
 description: How to Load or Unload an Application
-ms.assetid: 8c149761-c591-433f-972b-91793a69c654
 author: jamiejdt
+ms.assetid: 8c149761-c591-433f-972b-91793a69c654
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Load or Unload an Application
 

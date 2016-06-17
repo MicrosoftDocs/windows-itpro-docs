@@ -1,9 +1,14 @@
 ---
 title: App-V Package WMI Class
 description: App-V Package WMI Class
-ms.assetid: 0fc26c3b-9706-4804-be2d-645771dc33ae
 author: jamiejdt
+ms.assetid: 0fc26c3b-9706-4804-be2d-645771dc33ae
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # App-V Package WMI Class
 

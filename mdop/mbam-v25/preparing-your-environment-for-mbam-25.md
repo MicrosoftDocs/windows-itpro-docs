@@ -1,9 +1,14 @@
 ---
 title: Preparing your Environment for MBAM 2.5
 description: Preparing your Environment for MBAM 2.5
-ms.assetid: 7552ba08-9dbf-40cd-8920-203d733fd242
 author: jamiejdt
+ms.assetid: 7552ba08-9dbf-40cd-8920-203d733fd242
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Preparing your Environment for MBAM 2.5
 

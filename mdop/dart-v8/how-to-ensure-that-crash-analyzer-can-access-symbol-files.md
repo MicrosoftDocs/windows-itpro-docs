@@ -1,9 +1,14 @@
 ---
 title: How to Ensure that Crash Analyzer Can Access Symbol Files
 description: How to Ensure that Crash Analyzer Can Access Symbol Files
-ms.assetid: 99839013-1cd8-44d1-8484-0e15261c5a4b
 author: jamiejdt
+ms.assetid: 99839013-1cd8-44d1-8484-0e15261c5a4b
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Ensure that Crash Analyzer Can Access Symbol Files
 

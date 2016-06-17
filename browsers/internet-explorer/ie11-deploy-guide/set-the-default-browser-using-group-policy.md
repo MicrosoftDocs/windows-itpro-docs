@@ -2,7 +2,7 @@
 description: Use the Group Policy setting, Set a default associations configuration file, to set the default browser for your company devices running Windows 10.
 ms.assetid: f486c9db-0dc9-4cd6-8a0b-8cb872b1d361
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

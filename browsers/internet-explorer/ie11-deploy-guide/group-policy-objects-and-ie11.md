@@ -2,7 +2,7 @@
 description: Overview of the available Group Policy management tools
 ms.assetid: e33bbfeb-6b80-4e71-8bba-1d0369a87312
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

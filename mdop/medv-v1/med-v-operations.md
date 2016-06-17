@@ -1,9 +1,14 @@
 ---
 title: MED-V Operations
 description: MED-V Operations
-ms.assetid: ce362dc0-47a4-4e66-af64-66734fa50c08
 author: jamiejdt
+ms.assetid: ce362dc0-47a4-4e66-af64-66734fa50c08
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V Operations
 

@@ -1,9 +1,14 @@
 ---
 title: Server Management Console Packages Node
 description: Server Management Console Packages Node
-ms.assetid: 458424f6-d586-4fa8-bf61-44c5028a4490
 author: jamiejdt
+ms.assetid: 458424f6-d586-4fa8-bf61-44c5028a4490
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Server Management Console: Packages Node
 

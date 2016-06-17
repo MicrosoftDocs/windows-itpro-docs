@@ -1,9 +1,14 @@
 ---
 title: DaRT 10 Supported Configurations
 description: DaRT 10 Supported Configurations
-ms.assetid: a07d6562-1fa9-499f-829c-9cc487ede0b7
 author: jamiejdt
+ms.assetid: a07d6562-1fa9-499f-829c-9cc487ede0b7
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # DaRT 10 Supported Configurations
 

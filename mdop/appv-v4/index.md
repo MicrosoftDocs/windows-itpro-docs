@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization 4
 description: Application Virtualization 4
-ms.assetid: 9da557bc-f433-47d3-8af7-68ec4ff9bd3f
 author: jamiejdt
+ms.assetid: 9da557bc-f433-47d3-8af7-68ec4ff9bd3f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization 4
 

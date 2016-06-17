@@ -1,9 +1,14 @@
 ---
 title: Planning for MBAM 2.5 High Availability
 description: Planning for MBAM 2.5 High Availability
-ms.assetid: 1e29b30c-33f1-4a52-9442-8c1391f0049c
 author: jamiejdt
+ms.assetid: 1e29b30c-33f1-4a52-9442-8c1391f0049c
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning for MBAM 2.5 High Availability
 

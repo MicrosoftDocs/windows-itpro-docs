@@ -1,9 +1,14 @@
 ---
 title: How to Set Up Script Actions
 description: How to Set Up Script Actions
-ms.assetid: 367e28f1-d8c2-4845-a01b-2fff9128ccfd
 author: jamiejdt
+ms.assetid: 367e28f1-d8c2-4845-a01b-2fff9128ccfd
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Set Up Script Actions
 

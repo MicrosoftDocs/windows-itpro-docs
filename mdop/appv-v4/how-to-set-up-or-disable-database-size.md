@@ -1,9 +1,14 @@
 ---
 title: How to Set Up or Disable Database Size
 description: How to Set Up or Disable Database Size
-ms.assetid: 4abaf349-132d-4186-8873-a0e515593b93
 author: jamiejdt
+ms.assetid: 4abaf349-132d-4186-8873-a0e515593b93
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Set Up or Disable Database Size
 

@@ -1,9 +1,14 @@
 ---
 title: How to Make a Connection Group Ignore the Package Version
 description: How to Make a Connection Group Ignore the Package Version
-ms.assetid: db16b095-dbe2-42c7-863d-b0d5d91b2f4c
 author: jamiejdt
+ms.assetid: db16b095-dbe2-42c7-863d-b0d5d91b2f4c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Make a Connection Group Ignore the Package Version
 

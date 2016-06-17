@@ -1,9 +1,14 @@
 ---
 title: How to Test URL Redirection
 description: How to Test URL Redirection
-ms.assetid: 38d80088-da1d-4098-b27e-76f9e78f81dc
 author: jamiejdt
+ms.assetid: 38d80088-da1d-4098-b27e-76f9e78f81dc
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Test URL Redirection
 

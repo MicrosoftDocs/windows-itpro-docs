@@ -1,9 +1,14 @@
 ---
 title: Best Practices for Version Control
 description: Best Practices for Version Control
-ms.assetid: 89067f6a-f7ea-4dad-999d-118284cf6c5a
 author: jamiejdt
+ms.assetid: 89067f6a-f7ea-4dad-999d-118284cf6c5a
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Best Practices for Version Control
 

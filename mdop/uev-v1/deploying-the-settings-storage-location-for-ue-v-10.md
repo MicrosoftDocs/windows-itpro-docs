@@ -1,9 +1,14 @@
 ---
 title: Deploying the Settings Storage Location for UE-V 1.0
 description: Deploying the Settings Storage Location for UE-V 1.0
-ms.assetid: b187d44d-649b-487e-98d3-a61ee2be8c2f
 author: jamiejdt
+ms.assetid: b187d44d-649b-487e-98d3-a61ee2be8c2f
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Deploying the Settings Storage Location for UE-V 1.0
 

@@ -1,9 +1,14 @@
 ---
 title: How to Modify Virtual Registry Key Information
 description: How to Modify Virtual Registry Key Information
-ms.assetid: cf2559f2-a8cc-4fc7-916e-8368843c7ebc
 author: jamiejdt
+ms.assetid: cf2559f2-a8cc-4fc7-916e-8368843c7ebc
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Modify Virtual Registry Key Information
 

@@ -1,9 +1,14 @@
 ---
 title: Configuring MBAM 2.5 Server Features by Using Windows PowerShell
 description: Configuring MBAM 2.5 Server Features by Using Windows PowerShell
-ms.assetid: 826429fd-29bb-44be-b47e-5f5c7d20dd1d
 author: jamiejdt
+ms.assetid: 826429fd-29bb-44be-b47e-5f5c7d20dd1d
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Configuring MBAM 2.5 Server Features by Using Windows PowerShell
 

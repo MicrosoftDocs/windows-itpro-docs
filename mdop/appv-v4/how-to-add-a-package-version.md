@@ -1,9 +1,14 @@
 ---
 title: How to Add a Package Version
 description: How to Add a Package Version
-ms.assetid: dbb829c1-e5cb-4a2f-bc17-9a9bb50c671c
 author: jamiejdt
+ms.assetid: dbb829c1-e5cb-4a2f-bc17-9a9bb50c671c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Add a Package Version
 

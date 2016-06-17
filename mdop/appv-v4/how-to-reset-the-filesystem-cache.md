@@ -1,9 +1,14 @@
 ---
 title: How to Reset the FileSystem Cache
 description: How to Reset the FileSystem Cache
-ms.assetid: 7777259d-8c21-4c06-9384-9599b69f9828
 author: jamiejdt
+ms.assetid: 7777259d-8c21-4c06-9384-9599b69f9828
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Reset the FileSystem Cache
 

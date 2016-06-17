@@ -1,9 +1,14 @@
 ---
 title: Prepare Computer Page (Learn More)
 description: Prepare Computer Page (Learn More)
-ms.assetid: a401ce3d-b8f7-4b3f-9be9-ecf6d8b544fd
 author: jamiejdt
+ms.assetid: a401ce3d-b8f7-4b3f-9be9-ecf6d8b544fd
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Prepare Computer Page (Learn More)
 

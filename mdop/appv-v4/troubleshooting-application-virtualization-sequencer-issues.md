@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting Application Virtualization Sequencer Issues
 description: Troubleshooting Application Virtualization Sequencer Issues
-ms.assetid: 2712094b-a0bc-4643-aced-5415535f3fec
 author: jamiejdt
+ms.assetid: 2712094b-a0bc-4643-aced-5415535f3fec
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Troubleshooting Application Virtualization Sequencer Issues
 

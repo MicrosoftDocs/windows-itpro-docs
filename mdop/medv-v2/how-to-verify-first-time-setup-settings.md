@@ -1,9 +1,14 @@
 ---
 title: How to Verify First Time Setup Settings
 description: How to Verify First Time Setup Settings
-ms.assetid: e8a07d4c-5786-4455-ac43-2deac4042efd
 author: jamiejdt
+ms.assetid: e8a07d4c-5786-4455-ac43-2deac4042efd
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Verify First Time Setup Settings
 

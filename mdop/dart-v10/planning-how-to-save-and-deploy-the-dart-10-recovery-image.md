@@ -1,9 +1,14 @@
 ---
 title: Planning How to Save and Deploy the DaRT 10 Recovery Image
 description: Planning How to Save and Deploy the DaRT 10 Recovery Image
-ms.assetid: 9a3e5413-2621-49ce-8bd2-992616691703
 author: jamiejdt
+ms.assetid: 9a3e5413-2621-49ce-8bd2-992616691703
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning How to Save and Deploy the DaRT 10 Recovery Image
 

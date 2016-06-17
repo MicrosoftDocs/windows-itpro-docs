@@ -1,9 +1,14 @@
 ---
 title: MBAM 2.0 Deployment Checklist
 description: MBAM 2.0 Deployment Checklist
-ms.assetid: 7905d31d-f21c-4683-b9c4-95b815e08fab
 author: jamiejdt
+ms.assetid: 7905d31d-f21c-4683-b9c4-95b815e08fab
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # MBAM 2.0 Deployment Checklist
 
