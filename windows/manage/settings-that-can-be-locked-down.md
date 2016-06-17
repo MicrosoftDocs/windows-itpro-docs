@@ -447,7 +447,8 @@ The following table lists the dependencies between quick actions and Settings gr
 
 | Quick action   | Settings group    | Settings page  |
 |-----|-------|-------|
-| SystemSettings\_System\_Display\_QuickAction\_Brightness | SettingsPageSystemDisplay| SettingsPageDisplay | SystemSettings\_System\_Display\_Internal\_Rotation | SettingsPageSystemDisplay | SettingsPageDisplay   |
+| SystemSettings\_System\_Display\_QuickAction\_Brightness | SettingsPageSystemDisplay| SettingsPageDisplay | 
+| SystemSettings\_System\_Display\_Internal\_Rotation | SettingsPageSystemDisplay | SettingsPageDisplay   |
 | SystemSettings\_QuickAction\_WiFi | SettingsPageNetworkWiFi  | SettingsPageNetworkWiFi  |
 | SystemSettings\_QuickAction\_InternetSharing   | SettingsPageNetworkInternetSharing  | SettingsPageNetworkInternetSharing |
 | SystemSettings\_QuickAction\_CellularData | SettingsGroupCellular  | SettingsPageNetworkCellular  |
