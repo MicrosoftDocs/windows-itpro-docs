@@ -230,7 +230,7 @@ After you've added a management level to your protected apps, you'll need to dec
         </tr>                
     </table>
 
-    ![Create Configuration Item wizard, specify the network locations that can be accessed by the protected apps](images/edp-sccm-primarydomain2.png)
+    ![Create Configuration Item wizard, specify the network locations that can be accessed by the protected apps](images/edp-sccm-network-domain.png)
 
 2.  Add as many locations as you need, and then click **OK**.<p>
 The **Add or Edit Enterprise Network Locations box** closes.
