@@ -456,7 +456,7 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Status Code</th>
+<th align="left">Hex Code</th>
 <th align="left">Mapping</th>
 <th align="left">User-Friendly Message</th>
 <th align="left">Action admin should take</th>
@@ -464,149 +464,148 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>-2063532030</p></td>
+<td align="left"><p>0x85010002</p></td>
 <td align="left"><p>E_HTTP_DENIED</p></td>
 <td align="left"><p>The password must be updated.</p></td>
 <td align="left"><p>Update the password.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2147012867</p></td>
+<td align="left"><p>0x80072EFD</p></td>
 <td align="left"><p>WININET_E_CANNOT_CONNECT</p></td>
 <td align="left"><p>Can’t connect to the server right now. Wait a while and try again, or check the account settings.</p></td>
 <td align="left"><p>Verify that the server name is correct and reachable. Verify that the device is connected to the network.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2046817239</p></td>
+<td align="left"><p>0x86000C29</p></td>
 <td align="left"><p>E_NEXUS_STATUS_DEVICE_NOTPROVISIONED (policies don’t match)</p></td>
-<td align="left"><p>The account is configured with policies not compatible with Surface Hub</p>
-.</td>
+<td align="left"><p>The account is configured with policies not compatible with Surface Hub.</p></td>
 <td align="left"><p>Disable the <strong>PasswordEnabled</strong> policy for this account.</p>
 <p>We have a bug were we may surface policy errors if the account doesn’t receive any server notifications within the policy refresh interval.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2046817204</p></td>
+<td align="left"><p>0x86000C4C</p></td>
 <td align="left"><p>E_NEXUS_STATUS_MAXIMUMDEVICESREACHED</p></td>
 <td align="left"><p>The account has too many device partnerships.</p></td>
 <td align="left"><p>Delete one or more partnerships on the server.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2046817270</p></td>
+<td align="left"><p>0x86000C0A</p></td>
 <td align="left"><p>E_NEXUS_STATUS_SERVERERROR_RETRYLATER</p></td>
 <td align="left"><p>Can’t connect to the server right now.</p></td>
 <td align="left"><p>Wait until the server comes back online. If the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2063269885</p></td>
+<td align="left"><p>0x85050003</p></td>
 <td align="left"><p>E_CREDENTIALS_EXPIRED (Credentials have expired and need to be updated)</p></td>
 <td align="left"><p>The password must be updated.</p></td>
 <td align="left"><p>Update the password.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2063269875</p></td>
+<td align="left"><p>0x8505000D</p></td>
 <td align="left"><p>E_AIRSYNC_RESET_RETRY</p></td>
 <td align="left"><p>Can’t connect to the server right now. Wait a while or check the account’s settings.</p></td>
 <td align="left"><p>This is normally a transient error but if the issue persists check the number of devices associated with the account and delete some of them if the number is large.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2046817258</p></td>
+<td align="left"><p>0x86000C16</p></td>
 <td align="left"><p>E_NEXUS_STATUS_USER_HASNOMAILBOX</p></td>
 <td align="left"><p>The mailbox was migrated to a different server.</p></td>
 <td align="left"><p>You should never see this error. If the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2063532028</p></td>
+<td align="left"><p>0x85010004</p></td>
 <td align="left"><p>E_HTTP_FORBIDDEN</p></td>
 <td align="left"><p>Can’t connect to the server right now. Wait a while and try again, or check the account’s settings.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. If the account is using cert based authentication make sure the certificate is still valid and update it if not.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2063400920</p></td>
+<td align="left"><p>0x85030028</p></td>
 <td align="left"><p>E_ACTIVESYNC_PASSWORD_OR_GETCERT</p></td>
 <td align="left"><p>The account’s password or client certificate are missing or invalid.</p></td>
 <td align="left"><p>Update the password and/or deploy the client certificate.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2046817238</p></td>
+<td align="left"><p>0x86000C2A</p></td>
 <td align="left"><p>E_NEXUS_STATUS_DEVICE_POLICYREFRESH</p></td>
 <td align="left"><p>The account is configured with policies not compatible with Surface Hub.</p></td>
 <td align="left"><p>Disable the PasswordEnabled policy for this account.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2063269886</p></td>
+<td align="left"><p>0x85050002</p></td>
 <td align="left"><p>E_CREDENTIALS_UNAVAILABLE</p></td>
 <td align="left"><p>The password must be updated.</p></td>
 <td align="left"><p>Update the password.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2147012894</p></td>
+<td align="left"><p>0x80072EE2</p></td>
 <td align="left"><p>WININET_E_TIMEOUT</p></td>
 <td align="left"><p>The network doesn’t support the minimum idle timeout required to receive server notification, or the server is offline.</p></td>
 <td align="left"><p>Verify that the server is running. Verify the NAT settings.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2063589372</p></td>
+<td align="left"><p>0x85002004</p></td>
 <td align="left"><p>E_FAIL_ABORT</p></td>
 <td align="left"><p>This error is used to interrupt the hanging sync, and will not be exposed to users. It will be shown in the telemetry if you force an interactive sync, delete the account, or update its settings.</p></td>
 <td align="left"><p>Nothing.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2063532009</p></td>
+<td align="left"><p>0x85010017</p></td>
 <td align="left"><p>E_HTTP_SERVICE_UNAVAIL</p></td>
 <td align="left"><p>Can’t connect to the server right now. Wait a while or check the account’s settings.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. Wait until the server comes back online. If the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2046817267</p></td>
+<td align="left"><p>0x86000C0D</p></td>
 <td align="left"><p>E_NEXUS_STATUS_MAILBOX_SERVEROFFLINE</p></td>
 <td align="left"><p>Can’t connect to the server right now. Wait a while or check the account’s settings.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. Wait until the server comes back online. If the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2063400921</p></td>
+<td align="left"><p>0x85030027</p></td>
 <td align="left"><p>E_ACTIVESYNC_GETCERT</p></td>
 <td align="left"><p>The Exchange server requires a certificate.</p></td>
 <td align="left"><p>Import the appropriate EAS certificate on the Surface Hub.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2046817237</p></td>
+<td align="left"><p>0x86000C2B</p></td>
 <td align="left"><p>E_NEXUS_STATUS_INVALID_POLICYKEY</p></td>
 <td align="left"><p>The account is configured with policies not compatible with Surface Hub.</p></td>
 <td align="left"><p>Disable the PasswordEnabled policy for this account.</p>
 <p>We have a bug were we may surface policy errors if the account doesn’t receive any server notifications within the policy refresh interval.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>-2063532027</p></td>
+<td align="left"><p>0x85010005</p></td>
 <td align="left"><p>E_HTTP_NOT_FOUND</p></td>
 <td align="left"><p>The server name is invalid.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. If the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>-2063532012</p></td>
+<td align="left"><p>0x85010014</p></td>
 <td align="left"><p>E_HTTP_SERVER_ERROR</p></td>
 <td align="left"><p>Can’t connect to the server.</p></td>
 <td align="left"><p>Verify the server name to make sure it is correct. Trigger a sync and, if the issue persists, re-provision the account.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>0x80072ee7</p></td>
-<td align="left"></td>
+<td align="left"><p>0x80072EE7</p></td>
+<td align="left"><p>WININET_E_NAME_NOT_RESOLVED</p></td>
 <td align="left"><p>The server name or address could not be resolved.</p></td>
 <td align="left"><p>Make sure the server name is entered correctly.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>0x8007052f</p></td>
-<td align="left"></td>
+<td align="left"><p>0x8007052F</p></td>
+<td align="left"><p>ERROR_ACCOUNT_RESTRICTION</p></td>
 <td align="left"><p>While auto-discovering the Exchange server, a policy is applied that prevents the logged-in user from logging in to the server.</p></td>
 <td align="left"><p>This is a timing issue. Re-verify the account's credentials. Try to re-provision when they're correct.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>0x800c0019</p></td>
-<td align="left"></td>
+<td align="left"><p>0x800C0019</p></td>
+<td align="left"><p>INET_E_INVALID_CERTIFICATE</p></td>
 <td align="left"><p>Security certificate required to access this resource is invalid.</p></td>
 <td align="left"><p>Install the correct ActiveSync certificate needed for the provided device account.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>0x80072f0d</p></td>
-<td align="left"></td>
+<td align="left"><p>0x80072F0D</p></td>
+<td align="left"><p>WININET_E_INVALID_CA</p></td>
 <td align="left"><p>The certificate authority is invalid or is incorrect. Could not auto-discover the Exchange server because a certificate is missing.</p></td>
 <td align="left"><p>Install the correct ActiveSync certificate needed for the provided device account.</p></td>
 </tr>
@@ -615,12 +614,6 @@ This section lists status codes, mapping, user messages, and actions an admin ca
 <td align="left"><p>E_FAIL</p></td>
 <td align="left"><p>The domain provided couldn't be found. The Exchange server could not be auto-discovered and was not provided in the settings.</p></td>
 <td align="left"><p>Make sure that the domain entered is the FQDN, and that there is an Exchange server entered in the Exchange server text box.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x80072efd</p></td>
-<td align="left"></td>
-<td align="left"><p>Fail to connect to Exchange server as a result of a networking issue. It's possible the server was misspelled or it just couldn't be found.</p></td>
-<td align="left"><p>Make sure that the Exchange server ID is entered correctly, and that the device is connected to the right network.</p></td>
 </tr>
 </tbody>
 </table>
