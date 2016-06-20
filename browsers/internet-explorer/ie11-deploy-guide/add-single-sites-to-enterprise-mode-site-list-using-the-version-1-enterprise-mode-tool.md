@@ -2,14 +2,14 @@
 description: Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that's designed to emulate either Windows Internet Explorer 7 or Windows Internet Explorer 8, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
 ms.assetid: 042e44e8-568d-4717-8fd3-69dd198bbf26
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Add sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool (Internet Explorer 11 for IT Pros)
+title: Add sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.1) (Internet Explorer 11 for IT Pros)
 ---
 
-# Add single sites to the Enterprise Mode site list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool
+# Add single sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.1)
 
 **Applies to:**
 
@@ -19,15 +19,15 @@ title: Add sites to the Enterprise Mode site list using the Windows 7 and Window
 
 Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that’s designed to emulate either Windows Internet Explorer 7 or Windows Internet Explorer 8, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.<p>**Important**<br>You can only add specific URLs, not Internet or Intranet Zones.
 
-<p>**Note**<br>If you need to include a lot of sites, instead of adding them one at a time, you can create a list of websites and add them all at the same time. For more information, see [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and 8.1 Enterprise Mode Site List Manager tool](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md).
+<p>**Note**<br>If you need to include a lot of sites, instead of adding them one at a time, you can create a list of websites and add them all at the same time. For more information, see [Add multiple sites to the Enterprise Mode site list using a file and the Windows 7 and 8.1 Enterprise Mode Site List Manager](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md).
 
 ## Adding a site to your compatibility list
-You can add individual sites to your compatibility list by using the Enterprise Mode Site List Manager tool.
-<p>**Note**<br>If you're using Windows 10 and the v.2 version of the Enterprise Mode schema, you'll need to use the Windows 10 Enterprise Mode Site List Manager tool. For more info, see [Add sites to the Enterprise Mode site list using the Windows 10 Enterprise Mode Site List Manager tool](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md).
+You can add individual sites to your compatibility list by using the Enterprise Mode Site List Manager.
+<p>**Note**<br>If you're using the v.2 version of the Enterprise Mode schema, you'll need to use the Enterprise Mode Site List Manager (schema v.1). For more info, see [Add sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.2)](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md).
 
- ![](images/wedge.gif) **To add a site to your compatibility list using the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool**
+ ![](images/wedge.gif) **To add a site to your compatibility list using the Enterprise Mode Site List Manager (schema v.1)**
 
-1.  In the Windows 7 and Windows 8.1 Enterprise Mode Site List Manager tool, click **Add**.
+1.  In the Enterprise Mode Site List Manager (schema v.1), click **Add**.
 
 2.  Type the URL for the website that’s experiencing compatibility problems, like *&lt;domain&gt;.com* or *&lt;domain&gt;.com*/*&lt;path&gt;* into the **URL** box.<p>
 Don't include the `http://` or `https://` designation. The tool automatically tries both versions during validation.
@@ -51,7 +51,7 @@ You can save the file locally or to a network share. However, you must make sure
 After you’ve added all of your sites to the tool and saved the file to XML, you can configure the rest of the Enterprise Mode functionality to use it. You can also turn Enterprise Mode on locally, so your users have the option to use Enterprise Mode on individual websites from the **Tools** menu. For more information, see [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md).
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
  
 
  

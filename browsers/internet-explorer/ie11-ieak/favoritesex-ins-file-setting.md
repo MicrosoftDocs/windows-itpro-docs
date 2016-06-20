@@ -2,7 +2,7 @@
 description: Use the \[FavoritesEx\] .INS file setting to specify your Favorites icon file, whether Favorites is available offline, and your Favorites URLs.
 ms.assetid: 55de376a-d442-478e-8978-3b064407b631
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Use the FavoritesEx .INS file for your Favorites icon and URLs (Internet Explorer Administration Kit 11 for IT Pros)

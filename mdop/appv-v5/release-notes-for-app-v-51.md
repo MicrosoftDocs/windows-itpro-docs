@@ -131,6 +131,13 @@ App-V 5.1 does not support Visual Studio 2012.
 
 **Workaround**: None
 
+## Application filename restrictions for App-V 5.x Sequencer
+
+
+The App-V 5.x Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
+
+**Workaround**: Use a different filename
+
 ## Got a suggestion for App-V?
 
 

@@ -175,7 +175,7 @@ This event generates every time a new process starts.
 
 -   **Process Command Line** \[Version 1, 2\] \[Type = UnicodeString\]**:** contains the name of executable and arguments which were passed to it. You must enable “Administrative Templates\\System\\Audit Process Creation\\Include command line in process creation events” group policy to include command line in process creation events:
 
-    <img src="images/group-policy.png" alt="Group policy illustration" width="790" height="171" />
+    <img src="images/group-policy.png" alt="Group policy illustration" width="490" height="448" />
 
     By default **Process Command Line** field is empty.
 

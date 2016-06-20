@@ -2,7 +2,7 @@
 description: The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site.
 ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
@@ -46,11 +46,11 @@ If that doesn’t work, continue down to the next lowest document mode, stopping
 After you’ve figured out the document mode that fixes your compatibility problems, you can add the site to your Enterprise Mode site list.
 
 **Note**<br>
-There are two versions of the Enterprise Mode site list schema and the Enterprise Mode Site List Manager tool, based on your operating system. For more info about the schemas, see [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md) or [Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md). For more info about the different site list management tools, see [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md).
+There are two versions of the Enterprise Mode site list schema and the Enterprise Mode Site List Manager, based on your operating system. For more info about the schemas, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md) or [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md). For more info about the different site list management tools, see [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md).
 
  ![](images/wedge.gif) **To add your site to the site list**
 
-1.  Open the Enterprise Mode Site List Manager tool, and click **Add**.
+1.  Open the Enterprise Mode Site List Manager, and click **Add**.
 
     ![Enterprise Mode Site List Manager, showing the available modes](images/emie-listmgr.png)
 
@@ -58,13 +58,13 @@ There are two versions of the Enterprise Mode site list schema and the Enterpris
 Similar to Enterprise Mode, you can specify a document mode for a particular web path—such as contoso.com/ERP—or at a domain level. In the above, the entire contoso.com domain loads in Enterprise Mode, while microsoft.com is forced to load into IE8 Document Mode and bing.com loads in IE11.
 
 **Note**<br>
-For more information about Enterprise Mode, see [What is Enterprise Mode?](what-is-enterprise-mode.md) For more information about the Enterprise Mode Site List Manager tool and how to add sites to your site list, see [Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md).
+For more information about Enterprise Mode, see [What is Enterprise Mode?](what-is-enterprise-mode.md) For more information about the Enterprise Mode Site List Manager and how to add sites to your site list, see [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md).
 
 
 ### Review your Enterprise Mode site list
-Take a look at your Enterprise Mode site list and make sure everything is the way you want it. The next step will be to turn the list on and start to use it in your company. The Enterprise Mode Site List Manager tool will look something like:
+Take a look at your Enterprise Mode site list and make sure everything is the way you want it. The next step will be to turn the list on and start to use it in your company. The Enterprise Mode Site List Manager will look something like:
 
-![Enterprise Mode Site List Manager tool, showing the different modes](images/emie-sitelistmgr.png)
+![Enterprise Mode Site List Manager, showing the different modes](images/emie-sitelistmgr.png)
 
 And the underlying XML code will look something like:
 
@@ -92,9 +92,9 @@ By default, IE11 uses the **Display intranet sites in Compatibility View** setti
 To help you move forward, you can now use the Enterprise Mode site list to specify sites or web paths to use the IE7 document mode, which goes down to IE5 “Quirks” mode if the page doesn’t have an explicit `DOCTYPE` tag. Using this document mode effectively helps you provide the Compatibility View functionality for single sites or a group of sites, which after thorough testing, can help you turn off Compatibility View as the default setting for your intranet sites.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager for Windows 10 tool](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager for Windows 7 and Windows 8.1 tool](http://go.microsoft.com/fwlink/p/?LinkID=394378)
-- [Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 
  
