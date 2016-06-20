@@ -1,9 +1,14 @@
 ---
 title: How to Install the App-V Client by Using Setup.msi
 description: How to Install the App-V Client by Using Setup.msi
-ms.assetid: 7221f384-36d6-409a-94a2-86f54fd75322
 author: jamiejdt
+ms.assetid: 7221f384-36d6-409a-94a2-86f54fd75322
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the App-V Client by Using Setup.msi
 

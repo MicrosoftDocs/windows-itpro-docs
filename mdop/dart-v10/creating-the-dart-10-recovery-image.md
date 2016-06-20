@@ -1,9 +1,14 @@
 ---
 title: Creating the DaRT 10 Recovery Image
 description: Creating the DaRT 10 Recovery Image
-ms.assetid: 173556de-2f20-4ea6-9e29-fc5ccc71ebd7
 author: jamiejdt
+ms.assetid: 173556de-2f20-4ea6-9e29-fc5ccc71ebd7
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Creating the DaRT 10 Recovery Image
 

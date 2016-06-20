@@ -1,9 +1,14 @@
 ---
 title: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 description: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
-ms.assetid: 71baf193-a9e8-4ffa-aa7f-e0bffed2e4b2
 author: jamiejdt
+ms.assetid: 71baf193-a9e8-4ffa-aa7f-e0bffed2e4b2
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 

@@ -1,9 +1,14 @@
 ---
 title: How to Modify Client Configuration by Using PowerShell
 description: How to Modify Client Configuration by Using PowerShell
-ms.assetid: 53ccb2cf-ef81-4310-a853-efcb395f006e
 author: jamiejdt
+ms.assetid: 53ccb2cf-ef81-4310-a853-efcb395f006e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Modify Client Configuration by Using PowerShell
 

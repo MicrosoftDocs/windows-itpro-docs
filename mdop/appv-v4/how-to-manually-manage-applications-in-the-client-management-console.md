@@ -1,9 +1,14 @@
 ---
 title: How to Manually Manage Applications in the Client Management Console
 description: How to Manually Manage Applications in the Client Management Console
-ms.assetid: e29caa22-325d-457b-a177-a11f8a8ad57c
 author: jamiejdt
+ms.assetid: e29caa22-325d-457b-a177-a11f8a8ad57c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Manually Manage Applications in the Client Management Console
 

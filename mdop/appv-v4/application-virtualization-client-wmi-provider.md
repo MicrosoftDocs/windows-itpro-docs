@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Client WMI Provider
 description: Application Virtualization Client WMI Provider
-ms.assetid: 384e33e0-6689-4e28-af84-53acee8a5c24
 author: jamiejdt
+ms.assetid: 384e33e0-6689-4e28-af84-53acee8a5c24
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Client WMI Provider
 

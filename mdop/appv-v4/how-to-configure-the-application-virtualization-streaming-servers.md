@@ -1,9 +1,14 @@
 ---
 title: How to Configure the Application Virtualization Streaming Servers
 description: How to Configure the Application Virtualization Streaming Servers
-ms.assetid: 3e2dde35-9d72-40ba-9fdf-d0338bd4d561
 author: jamiejdt
+ms.assetid: 3e2dde35-9d72-40ba-9fdf-d0338bd4d561
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure the Application Virtualization Streaming Servers
 

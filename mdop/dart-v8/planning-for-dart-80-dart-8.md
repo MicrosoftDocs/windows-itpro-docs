@@ -1,9 +1,14 @@
 ---
 title: Planning for DaRT 8.0
 description: Planning for DaRT 8.0
-ms.assetid: c8be3ab3-dc54-43b9-b9ff-fbd5e1ef29a7
 author: jamiejdt
+ms.assetid: c8be3ab3-dc54-43b9-b9ff-fbd5e1ef29a7
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for DaRT 8.0
 

@@ -1,9 +1,14 @@
 ---
 title: Deploying DaRT 7.0
 description: Deploying DaRT 7.0
-ms.assetid: 7bc99bce-b94f-4074-ba88-986ed76f8a6c
 author: jamiejdt
+ms.assetid: 7bc99bce-b94f-4074-ba88-986ed76f8a6c
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Deploying DaRT 7.0
 

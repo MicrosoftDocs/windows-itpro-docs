@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencer Reference
 description: Application Virtualization Sequencer Reference
-ms.assetid: a2aef256-98c0-4f81-83a2-af4b64208088
 author: jamiejdt
+ms.assetid: a2aef256-98c0-4f81-83a2-af4b64208088
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencer Reference
 

@@ -1,9 +1,14 @@
 ---
 title: Accessibility for App-V 5.0
 description: Accessibility for App-V 5.0
-ms.assetid: 56696523-6332-4bbe-8ddf-32b1dfe38131
 author: jamiejdt
+ms.assetid: 56696523-6332-4bbe-8ddf-32b1dfe38131
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Accessibility for App-V 5.0
 

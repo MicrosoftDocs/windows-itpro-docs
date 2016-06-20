@@ -1,9 +1,14 @@
 ---
 title: AGPM 2.5
 description: AGPM 2.5
-ms.assetid: 6db42f2e-88b2-4305-ab6b-d3cd0c5d686c
 author: jamiejdt
+ms.assetid: 6db42f2e-88b2-4305-ab6b-d3cd0c5d686c
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # AGPM 2.5
 

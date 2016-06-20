@@ -1,9 +1,14 @@
 ---
 title: Security and Protection for MED-V
 description: Security and Protection for MED-V
-ms.assetid: 5db66d56-eb65-4bff-a9e4-3d52de4256bd
 author: jamiejdt
+ms.assetid: 5db66d56-eb65-4bff-a9e4-3d52de4256bd
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Security and Protection for MED-V
 

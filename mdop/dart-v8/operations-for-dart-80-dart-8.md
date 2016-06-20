@@ -1,9 +1,14 @@
 ---
 title: Operations for DaRT 8.0
 description: Operations for DaRT 8.0
-ms.assetid: a31615de-eb6e-41af-909c-d0b6f3eb3f2f
 author: jamiejdt
+ms.assetid: a31615de-eb6e-41af-909c-d0b6f3eb3f2f
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Operations for DaRT 8.0
 

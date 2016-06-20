@@ -1,9 +1,14 @@
 ---
 title: High Availability for MBAM 2.0
 description: High Availability for MBAM 2.0
-ms.assetid: 244ee013-9e2a-48d2-b842-4e10594fd74f
 author: jamiejdt
+ms.assetid: 244ee013-9e2a-48d2-b842-4e10594fd74f
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # High Availability for MBAM 2.0
 

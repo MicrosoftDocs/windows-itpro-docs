@@ -1,9 +1,14 @@
 ---
 title: Server Management Console Applications Node
 description: Server Management Console Applications Node
-ms.assetid: e465f816-032d-4824-9924-f2dcf30f2a2c
 author: jamiejdt
+ms.assetid: e465f816-032d-4824-9924-f2dcf30f2a2c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Server Management Console: Applications Node
 

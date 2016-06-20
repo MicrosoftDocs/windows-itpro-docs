@@ -1,9 +1,14 @@
 ---
 title: About the Virtual Services Tab
 description: About the Virtual Services Tab
-ms.assetid: d31eea1b-9a37-42f1-8d7c-95881716e753
 author: jamiejdt
+ms.assetid: d31eea1b-9a37-42f1-8d7c-95881716e753
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About the Virtual Services Tab
 

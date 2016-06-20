@@ -1,9 +1,14 @@
 ---
 title: How to Modify File-Mapping Information
 description: How to Modify File-Mapping Information
-ms.assetid: d3a9d10a-6cc8-4399-9479-b20f729c4dd9
 author: jamiejdt
+ms.assetid: d3a9d10a-6cc8-4399-9479-b20f729c4dd9
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Modify File-Mapping Information
 

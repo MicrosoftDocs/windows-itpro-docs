@@ -1,9 +1,14 @@
 ---
 title: How to Set Up a Concurrent License Group
 description: How to Set Up a Concurrent License Group
-ms.assetid: 031abcf6-d8ed-49be-bddb-91b2c695d411
 author: jamiejdt
+ms.assetid: 031abcf6-d8ed-49be-bddb-91b2c695d411
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Set Up a Concurrent License Group
 

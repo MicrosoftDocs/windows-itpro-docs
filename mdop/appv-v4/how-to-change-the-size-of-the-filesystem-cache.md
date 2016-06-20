@@ -1,9 +1,14 @@
 ---
 title: How to Change the Size of the FileSystem Cache
 description: How to Change the Size of the FileSystem Cache
-ms.assetid: 6ed17ba3-293b-4482-b3fa-31e5f606dad6
 author: jamiejdt
+ms.assetid: 6ed17ba3-293b-4482-b3fa-31e5f606dad6
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Change the Size of the FileSystem Cache
 

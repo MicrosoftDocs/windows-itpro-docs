@@ -1,9 +1,14 @@
 ---
 title: About Microsoft Application Virtualization 4.6 SP3
 description: About Microsoft Application Virtualization 4.6 SP3
-ms.assetid: a6374fb0-1dfa-41f7-9a6a-3d2688492a8b
 author: jamiejdt
+ms.assetid: a6374fb0-1dfa-41f7-9a6a-3d2688492a8b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About Microsoft Application Virtualization 4.6 SP3
 

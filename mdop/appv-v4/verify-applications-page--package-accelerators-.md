@@ -1,9 +1,14 @@
 ---
 title: Verify Applications Page (Package Accelerators)
 description: Verify Applications Page (Package Accelerators)
-ms.assetid: e58a37db-d042-453f-aa0d-2f324600a35b
 author: jamiejdt
+ms.assetid: e58a37db-d042-453f-aa0d-2f324600a35b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Verify Applications Page (Package Accelerators)
 

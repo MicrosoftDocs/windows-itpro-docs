@@ -1,9 +1,14 @@
 ---
 title: Deployment Troubleshooting
 description: Deployment Troubleshooting
-ms.assetid: 9ee980f2-4e77-4020-9f0e-8c2ffdc390ad
 author: jamiejdt
+ms.assetid: 9ee980f2-4e77-4020-9f0e-8c2ffdc390ad
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Deployment Troubleshooting
 

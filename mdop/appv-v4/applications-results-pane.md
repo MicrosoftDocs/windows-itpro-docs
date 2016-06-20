@@ -1,9 +1,14 @@
 ---
 title: Applications Results Pane
 description: Applications Results Pane
-ms.assetid: 977a4d35-5344-41fa-af66-14957b38ed47
 author: jamiejdt
+ms.assetid: 977a4d35-5344-41fa-af66-14957b38ed47
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Applications Results Pane
 

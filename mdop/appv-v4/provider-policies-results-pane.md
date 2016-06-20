@@ -1,9 +1,14 @@
 ---
 title: Provider Policies Results Pane
 description: Provider Policies Results Pane
-ms.assetid: 17ea0836-bfb5-4966-8778-155444d81e64
 author: jamiejdt
+ms.assetid: 17ea0836-bfb5-4966-8778-155444d81e64
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Provider Policies Results Pane
 

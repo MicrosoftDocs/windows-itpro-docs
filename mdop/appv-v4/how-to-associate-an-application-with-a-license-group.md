@@ -1,9 +1,14 @@
 ---
 title: How to Associate an Application with a License Group
 description: How to Associate an Application with a License Group
-ms.assetid: 85639db3-5751-497e-a9e7-ce4770c0b55f
 author: jamiejdt
+ms.assetid: 85639db3-5751-497e-a9e7-ce4770c0b55f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Associate an Application with a License Group
 

@@ -1,9 +1,14 @@
 ---
 title: How to Configure the File Server
 description: How to Configure the File Server
-ms.assetid: 0977554c-1741-411b-85e7-7e1cd017542f
 author: jamiejdt
+ms.assetid: 0977554c-1741-411b-85e7-7e1cd017542f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure the File Server
 

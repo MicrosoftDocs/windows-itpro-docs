@@ -1,9 +1,14 @@
 ---
 title: Accessibility for DaRT 8.0
 description: Accessibility for DaRT 8.0
-ms.assetid: 95f426de-222c-4ec0-9b9b-af817c7fff9b
 author: jamiejdt
+ms.assetid: 95f426de-222c-4ec0-9b9b-af817c7fff9b
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Accessibility for DaRT 8.0
 

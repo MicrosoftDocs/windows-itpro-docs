@@ -1,9 +1,14 @@
 ---
 title: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
 description: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
-ms.assetid: dd71df05-512f-4eb4-a55f-e5b93601323d
 author: jamiejdt
+ms.assetid: dd71df05-512f-4eb4-a55f-e5b93601323d
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
 

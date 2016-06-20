@@ -1,9 +1,14 @@
 ---
 title: How to Configure a Read-only Cache on the App-V Client (VDI)
 description: How to Configure a Read-only Cache on the App-V Client (VDI)
-ms.assetid: 7a41e017-9e23-4a6a-a659-04d23f008b83
 author: jamiejdt
+ms.assetid: 7a41e017-9e23-4a6a-a659-04d23f008b83
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure a Read-only Cache on the App-V Client (VDI)
 

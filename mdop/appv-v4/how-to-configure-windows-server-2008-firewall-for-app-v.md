@@ -1,9 +1,14 @@
 ---
 title: How to Configure Windows Server 2008 Firewall for App-V
 description: How to Configure Windows Server 2008 Firewall for App-V
-ms.assetid: 57f4ed17-0651-4a3c-be1e-29d9520c6aeb
 author: jamiejdt
+ms.assetid: 57f4ed17-0651-4a3c-be1e-29d9520c6aeb
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure Windows Server 2008 Firewall for App-V
 

@@ -1,9 +1,14 @@
 ---
 title: How to Move an Application Group
 description: How to Move an Application Group
-ms.assetid: 7f9f9f2e-f394-4ad3-8615-4237a7dcfb95
 author: jamiejdt
+ms.assetid: 7f9f9f2e-f394-4ad3-8615-4237a7dcfb95
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Move an Application Group
 

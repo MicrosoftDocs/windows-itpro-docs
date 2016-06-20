@@ -1,9 +1,14 @@
 ---
 title: Command-Line Errors
 description: Command-Line Errors
-ms.assetid: eea62568-4e90-4877-9cc7-e27ef5c05068
 author: jamiejdt
+ms.assetid: eea62568-4e90-4877-9cc7-e27ef5c05068
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Command-Line Errors
 

@@ -1,9 +1,14 @@
 ---
 title: Destroy a GPO
 description: Destroy a GPO
-ms.assetid: d74941a3-beef-46cd-a4ca-80a324dcfadf
 author: jamiejdt
+ms.assetid: d74941a3-beef-46cd-a4ca-80a324dcfadf
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Destroy a GPO
 

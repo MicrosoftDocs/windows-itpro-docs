@@ -1,9 +1,14 @@
 ---
 title: MBAM 2.5 Planning Checklist
 description: MBAM 2.5 Planning Checklist
-ms.assetid: ffe11eb8-44db-4886-8300-6dffec8bcfa4
 author: jamiejdt
+ms.assetid: ffe11eb8-44db-4886-8300-6dffec8bcfa4
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # MBAM 2.5 Planning Checklist
 
