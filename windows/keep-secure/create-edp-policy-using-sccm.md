@@ -1,6 +1,6 @@
 ---
 title: Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager (Windows 10)
-description: Configuration Manager (version 1511 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
+description: Configuration Manager (version 1606 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
 ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
 keywords: EDP, Enterprise Data Protection, SCCM, System Center Configuration Manager, Configuration Manager
 ms.prod: w10
@@ -13,13 +13,13 @@ author: eross-msft
 # Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager
 **Applies to:**
 
--   Windows 10 Enterprise  Insider Preview
+-   Windows 10 Insider Preview
 -   Windows 10 Mobile Preview
 -   System Center Configuration Manager (version 1606 or later)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Configuration Manager (version 1511 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
+Configuration Manager (version 1606 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
 
 ## Add an EDP policy
 After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for EDP, which in turn becomes your EDP policy.
@@ -266,7 +266,7 @@ After you’ve created your EDP policy, you'll need to deploy it to your organiz
 - [How to Deploy Configuration Baselines in Configuration Manager]( http://go.microsoft.com/fwlink/p/?LinkId=708226)
 
 ## Related topics
-- [System Center Configuration Manager and Endpoint Protection (Version 1511)](http://go.microsoft.com/fwlink/p/?LinkId=717372)
+- [System Center Configuration Manager and Endpoint Protection (Version 1606)](http://go.microsoft.com/fwlink/p/?LinkId=717372)
 - [TechNet documentation for Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=691623)
 - [Manage mobile devices with Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=691624)
 
