@@ -72,7 +72,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
 <p><strong>Event logs / Applications and Services Logs / Microsoft / AppV</strong></p></li>
 <li><p>In App-V 5.0 SP3, some logs were consolidated and moved to the following location:</p>
 <p><strong>Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog</strong></p>
-<p>For a list of the moved logs, see [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).</p></li>
+<p>For a list of the moved logs, see [About App-V 5.0 SP3](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50-sp3#bkmk-event-logs-moved).</p></li>
 <li><p>Packages that are currently stored on computers that run the App-V 5.1 Client are saved to the following location:</p>
 <p><strong>C:\ProgramData\App-V\&lt;package id&gt;\&lt;version id&gt;</strong></p></li>
 </ul></td>

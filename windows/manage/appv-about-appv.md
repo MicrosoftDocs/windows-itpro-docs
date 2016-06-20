@@ -105,8 +105,8 @@ Review the following information before you start the upgrade:
 <td align="left"><p>Upgrading from App-V 4.x</p></td>
 <td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V 5.1. For more information, see:</p>
 <ul>
-<li><p>“Differences between App-V 4.6 and App-V 5.0” in [About App-V 5.0](about-app-v-50.md)</p></li>
-<li><p>[Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v.md)</p></li>
+<li><p>“Differences between App-V 4.6 and App-V 5.0” in [About App-V 5.0](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50.md)</p></li>
+<li><p>[Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -173,22 +173,22 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tr>
 <tr class="even">
 <td align="left"><p>SQL scripts</p></td>
-<td align="left"><p>Follow the steps in [How to Deploy the App-V Databases by Using SQL Scripts](how-to-deploy-the-app-v-databases-by-using-sql-scripts.md).</p></td>
+<td align="left"><p>Follow the steps in [How to Deploy the App-V Databases by Using SQL Scripts](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/how-to-deploy-the-app-v-databases-by-using-sql-scripts).</p></td>
 </tr>
 </tbody>
 </table>
-<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](check-reg-key-svr.md).</p></li>
+<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/check-reg-key-svr).</p></li>
 <li><p>Follow the steps in [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md)</p></li>
 <p> </p></li>
 </ol></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Step 2: Upgrade the App-V Sequencer.</p></td>
-<td align="left"><p>See [How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md).</p></td>
+<td align="left"><p>See [How to Install the Sequencer](appv-install-the-sequencer.md).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Step 3: Upgrade the App-V Client or App-V RDS Client.</p></td>
-<td align="left"><p>See [How to Deploy the App-V Client](how-to-deploy-the-app-v-client-gb18030.md).</p></td>
+<td align="left"><p>See [How to Deploy the App-V Client](appv-deploy-the-appv-client.md).</p></td>
 </tr>
 </tbody>
 </table>

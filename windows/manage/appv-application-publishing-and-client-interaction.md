@@ -1604,7 +1604,7 @@ In App-V 5.0 SP3, some logs were consolidated and moved to the following locatio
 
 `Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog`
 
-For a list of the moved logs, see [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).
+For a list of the moved logs, see [About App-V 5.0 SP3](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50-sp3.md#bkmk-event-logs-moved).
 
  
 
