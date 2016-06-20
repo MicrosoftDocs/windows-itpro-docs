@@ -14,15 +14,22 @@ author: jdeckerMS
 
 -   Windows 10 
 
-MSA is only intended for consumer services. Enterprises and educational institutions should use enterprise versions where possible, such as Skype for Business, OneDrive for Business, etc. Schools may want to consider using MDM or group policy to block students from adding MSA as a secondary account
+MSA is only intended for consumer services. Schools may want to consider using MDM or group policy to block students from adding MSA as a secondary account
 	
 
-Reminder to schools that they should consider ratings when picking apps from the store
+Reminder to schools that they should consider ratings when picking apps from the store. Enterprises and educational institutions should use enterprise versions where possible, such as Skype for Business, OneDrive for Business, etc. 
 
 
 
 ![Which tool to use to set up Windows 10](images/setup-options.png)
 
+
+## In this section
+
+- [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md)
+- [Technical reference for the Set up School PCs app (Preview)](set-up-school-pcs-technical.md)
+- [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md)
+- [Provision student PCs with apps](set-up-students-pcs-with-apps.md)
 
 
 ## Related topics
