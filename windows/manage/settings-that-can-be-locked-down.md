@@ -445,24 +445,24 @@ Dependent settings group/pages will be automatically enabled when a quick action
 
 The following table lists the dependencies between quick actions and Settings groups/pages.
 
-| Quick action                                               | Settings group                                   | Settings page                      |
-|------------------------------------------------------------|--------------------------------------------------|------------------------------------|
-| SystemSettings\_System\_Display\_QuickAction\_Brightness   | SettingsPageSystemDisplay                        | SettingsPageDisplay                |
-| SystemSettings\_System\_Display\_Internal\_Rotation        | SettingsPageSystemDisplay                        | SettingsPageDisplay                |
-| SystemSettings\_QuickAction\_WiFi                          | SettingsPageNetworkWiFi                          | SettingsPageNetworkWiFi            |
-| SystemSettings\_QuickAction\_InternetSharing               | SettingsPageNetworkInternetSharing               | SettingsPageNetworkInternetSharing |
-| SystemSettings\_QuickAction\_CellularData                  | SettingsGroupCellular                            | SettingsPageNetworkCellular        |
-| SystemSettings\_QuickAction\_AirplaneMode                  | SettingsPageNetworkAirplaneMode                  | SettingsPageNetworkAirplaneMode    |
-| SystemSettings\_Privacy\_LocationEnabledUserPhone          | SettingsGroupPrivacyLocationGlobals              | SettingsPagePrivacyLocation        |
-| SystemSettings\_Network\_VPN\_QuickAction                  | SettingsPageNetworkVPN                           | SettingsPageNetworkVPN             |
-| SystemSettings\_Launcher\_QuickNote                        | N/A                                              | N/A                                |
-| SystemSettings\_Flashlight\_Toggle                         | N/A                                              | N/A                                |
-| SystemSettings\_QuickAction\_Bluetooth                     | SettingsPagePCSystemBluetooth                    | SettingsPagePCSystemBluetooth      |
-| SystemSettings\_BatterySaver\_LandingPage\_OverrideControl | BatterySaver\_LandingPage\_SettingsConfiguration | SettingsPageBatterySaver           |
-| QuickActions\_Launcher\_DeviceDiscovery                    | N/A                                              | N/A                                |
-| QuickActions\_Launcher\_AllSettings                        | N/A                                              | N/A                                |
-| SystemSettings\_QuickAction\_QuietHours                    | N/A                                              | N/A                                |
-| SystemSettings\_QuickAction\_Camera                        | N/A                                              | N/A                                |
+| Quick action   | Settings group    | Settings page  |
+|-----|-------|-------|
+| SystemSettings\_System\_Display\_QuickAction\_Brightness | SettingsPageSystemDisplay| SettingsPageDisplay | 
+| SystemSettings\_System\_Display\_Internal\_Rotation | SettingsPageSystemDisplay | SettingsPageDisplay   |
+| SystemSettings\_QuickAction\_WiFi | SettingsPageNetworkWiFi  | SettingsPageNetworkWiFi  |
+| SystemSettings\_QuickAction\_InternetSharing   | SettingsPageNetworkInternetSharing  | SettingsPageNetworkInternetSharing |
+| SystemSettings\_QuickAction\_CellularData | SettingsGroupCellular  | SettingsPageNetworkCellular  |
+| SystemSettings\_QuickAction\_AirplaneMode  | SettingsPageNetworkAirplaneMode | SettingsPageNetworkAirplaneMode |
+| SystemSettings\_Privacy\_LocationEnabledUserPhone | SettingsGroupPrivacyLocationGlobals   | SettingsPagePrivacyLocation  |
+| SystemSettings\_Network\_VPN\_QuickAction | SettingsPageNetworkVPN   | SettingsPageNetworkVPN  |
+| SystemSettings\_Launcher\_QuickNote | N/A   | N/A    |
+| SystemSettings\_Flashlight\_Toggle  | N/A    | N/A    |
+| SystemSettings\_QuickAction\_Bluetooth   | SettingsPagePCSystemBluetooth   | SettingsPagePCSystemBluetooth  |
+| SystemSettings\_BatterySaver\_LandingPage\_OverrideControl | BatterySaver\_LandingPage\_SettingsConfiguration | SettingsPageBatterySaver   |
+| QuickActions\_Launcher\_DeviceDiscovery  | N/A    | N/A   |
+| QuickActions\_Launcher\_AllSettings    | N/A   | N/A  |
+| SystemSettings\_QuickAction\_QuietHours   | N/A    | N/A   |
+| SystemSettings\_QuickAction\_Camera   | N/A   | N/A   |
 
  
 
