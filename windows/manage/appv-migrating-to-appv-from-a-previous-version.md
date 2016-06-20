@@ -276,7 +276,7 @@ There is no direct method to upgrade to a full App-V 5.1 infrastructure. Use the
 <tbody>
 <tr class="odd">
 <td align="left"><p>Upgrade your environment to the latest version of App-V 4.6.</p></td>
-<td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](../appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy.md).</p></td>
+<td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](https://technet.microsoft.com/en-us/itpro/mdop/appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Deploy App-V 5.1 version of the client.</p></td>
