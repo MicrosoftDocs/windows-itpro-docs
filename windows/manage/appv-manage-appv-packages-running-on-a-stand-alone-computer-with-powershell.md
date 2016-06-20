@@ -274,7 +274,7 @@ The pending task will run later, according to the following rules:
 
  
 
-For more information about pending tasks, see [About App-V 5.0 SP2](about-app-v-50-sp2.md#bkmk-pkg-upgr-pendg-tasks).
+For more information about pending tasks, see [About App-V 5.0 SP2](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50-sp2.md#bkmk-pkg-upgr-pendg-tasks).
 
 **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 

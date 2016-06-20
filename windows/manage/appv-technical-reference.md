@@ -34,7 +34,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Creating App-V 4.5 Databases Using SQL Scripting](../solutions/creating-app-v-45-databases-using-sql-scripting.md)
+[Creating App-V 4.5 Databases Using SQL Scripting](https://technet.microsoft.com/en-us/itpro/mdop/solutions/creating-app-v-45-databases-using-sql-scripting)
 
  
 

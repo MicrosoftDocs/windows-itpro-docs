@@ -44,7 +44,7 @@ This topic contains the following sections:
 <ul>
 <li><p>Files under %appdata%\Microsoft\AppV\Client\Catalog</p></li>
 <li><p>Registry settings under HKEY_CURRENT_USER\Software\Microsoft\AppV\Client\Packages</p>
-<p>For more detail, see [Application Publishing and Client Interaction](application-publishing-and-client-interaction.md#bkmk-clt-inter-roam-reqs).</p></li>
+<p>For more detail, see [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md#bkmk-clt-inter-roam-reqs).</p></li>
 </ul></li>
 <li><p>Ensure that the following folders are available to each user who logs into the computer that is running the App-V 5.0 SP2 or later client:</p>
 <ul>
@@ -123,7 +123,7 @@ The following table describes how folder redirection works when %AppData% is red
 </ul>
 <div class="alert">
 <strong>Note</strong>  
-<p>The App-V client folder redirection sometimes fails to move files from %AppData% to %LocalAppData%. See [Release Notes for App-V 5.0 SP2](release-notes-for-app-v-50-sp2.md#bkmk-folderredirection).</p>
+<p>The App-V client folder redirection sometimes fails to move files from %AppData% to %LocalAppData%. See [Release Notes for App-V 5.0 SP2](appv-release-notes-for-appv-for-windows.md#bkmk-folderredirection).</p>
 </div>
 <div>
  

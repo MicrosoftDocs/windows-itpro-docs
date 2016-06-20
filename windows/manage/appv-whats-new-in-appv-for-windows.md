@@ -13,7 +13,7 @@ ms.prod: w10
 # What's new in App-V 5.0 SP1
 
 
-This section is for users who are already familiar with App-V and want to know what has changed in App-V 5.0 SP1. If you are not already familiar with App-V, you should start by reading [Planning for App-V 5.0](planning-for-app-v-50-rc.md).
+This section is for users who are already familiar with App-V and want to know what has changed in App-V 5.0 SP1. If you are not already familiar with App-V, you should start by reading [Planning for App-V 5.0](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/planning-for-app-v-50-rc.md).
 
 ## Changes in Standard Functionality
 
@@ -22,7 +22,7 @@ The following sections contain information about the changes in standard functio
 
 ### Changes to Supported Languages
 
-For more information, see [About App-V 5.0 SP1](about-app-v-50-sp1.md).
+For more information, see [About App-V 5.0 SP1](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50-sp1.md).
 
 The following list contains more information about the new Language Packs:
 
@@ -47,7 +47,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[About App-V 5.0](about-app-v-50.md)
+[About App-V 5.0](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50.md)
 
  
 

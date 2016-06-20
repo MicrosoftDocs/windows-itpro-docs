@@ -84,7 +84,7 @@ Associated setup logs are saved in the following directory:
 
 **%temp%**
 
-In App-V 5.0 SP3, some logs were consolidated and moved. See [About App-V 5.0 SP3](about-app-v-50-sp3.md#bkmk-event-logs-moved).
+In App-V 5.0 SP3, some logs were consolidated and moved. See [About App-V 5.0 SP3](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50-sp3#bkmk-event-logs-moved).
 
 ## <a href="" id="---------app-v-5-1-reporting"></a> App-V 5.1 reporting
 
