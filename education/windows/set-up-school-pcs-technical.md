@@ -26,14 +26,14 @@ The following table tells you what you get using the **Set up School PCs** app i
 | Feature | No Internet | Azure AD | Office 365 | Azure AD Premium |
 | --- | :---: | :---: | :---: | :---: |
 | **Fast sign-in**<br/>Each student can sign in and start using the computer in less than a minute, even on their first sign-in. | X | X | X | X |
-| **Custom Start experience**\*<br/>The apps students need are pinned to Start, and unnecessary apps are removed. | X | X | X | X |
+| **Custom Start experience**<br/>The apps students need are pinned to Start, and unnecessary apps are removed. | X | X | X | X |
 | **Temporary access, no sign-in required**<br/>This option sets up computers for common use. Anyone can use the computer without an account. | X | X | X | X |
-| **School policies**\*<br/>Settings specific to education create a useful learning environment and the best computer performance. | X | X | X | X |
+| **School policies**<br/>Settings specific to education create a useful learning environment and the best computer performance. | X | X | X | X |
 | **Azure AD Join**<br/>The computers are  joined to your Azure AD or Office 365 subscription for centralized management. |   | X | X | X |
 | **Single sign-on to Office 365**<br/>By signing on with student IDs, students have fast access to Office 365 web apps. |   |    | X | X |
 | **[Settings roaming](https://azure.microsoft.com/en-us/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) via Azure AD**<br/>Student user and application settings data can be synchronized across devices for a personalized experience. |   |    |    | X |
 |   |    |    |   |   |
-\* Feature applies to Windows 10 Pro, Windows 10 Pro for Education, Windows 10 Enterprise, and Windows 10 Enterprise for EDU
+
 
 > **Note**: If your school uses Active Directory, use Windows Imaging and Configuration Designer to configure your PCs to join the domain. You can only use the **Set up School PCs** app to set up PCs that are not connected to your traditional domain.
 
