@@ -16,7 +16,7 @@ author: jdeckerMS
 -   Windows 10
 -   Windows 10 Mobile
 
-In Windows 10, Version 1607, your network users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser. Phone sign-in uses Bluetooth, which means no need to wait for a phone call or to remember a PIN -- just tap the app.
+In Windows 10, Version 1607, your network users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser. Phone sign-in uses Bluetooth, which means no need to wait for a phone call -- just unlock the phone and tap the app.
 
  (add screenshot when I can get the app working)
 
@@ -25,6 +25,7 @@ You can create a Group Policy or mobile device management (MDM) policy that will
  ## Prerequisites
  
  - Both phone and PC must be running Windows 10, Version 1607.
+ - The PC must be running Windows 10 Pro, Enterprise, or Education
  - Both phone and PC must have Bluetooth.
  - The PC must be joined to an Active Directory domain that is connected to an Azure Active Directory (Azure AD) domain, or the PC must be joined to Azure AD.
  - The phone must be joined to Azure AD or have a work account added.
@@ -41,7 +42,7 @@ To enable phone sign-in, you must enable the following policies using Group Poli
     - Set **UsePassportForWork** to **True**
     - Set **Remote\UseRemotePassport** to **True**
 
-Everyone can get the **Phone Sign-in** app from the Windows Store. If you want to distribute the **Phone Sign-in** app, your organization must have set up Windows Store for Business, with Microsoft added as a Line of Business (LOB) publisher.
+Everyone can get the **Microsoft Authenticator** app from the Windows Store. If you want to distribute the **Microsoft Authenticator** app, your organization must have set up Windows Store for Business, with Microsoft added as a Line of Business (LOB) publisher.
 
 [Tell people how to sign in using their phone.](prepare-people-to-use-microsoft-passport.md#bmk-remote)
 

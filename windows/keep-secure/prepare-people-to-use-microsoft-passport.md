@@ -59,7 +59,7 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
 -   The PC must be joined to the Active Directory domain or Azure AD cloud domain.
 -   The PC must have Bluetooth connectivity.
 -   The phone must be joined to the Azure AD cloud domain, or the user must have added a work account to their personal phone.
--   The **Phone Sign-in** app must be installed on the phone.
+-   The **Microsoft Authenticator** app must be installed on the phone.
 
 **Pair the PC and phone**
 
@@ -75,8 +75,8 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
 
 **Sign in to PC using the phone**
 
-1.  Open the **Phone Sign-in** app and tap the name of the PC to sign in to.
-    > **Note: **  The first time that you run the **Phone Sign-in** app, you must add an account.
+1.  Open the **Microsoft Authenticator** app and tap the name of the PC to sign in to.
+    > **Note: **  The first time that you run the **Microsoft Authenticator** app, you must add an account.
      
 2.  Enter the work PIN that you set up when you joined the phone to the cloud domain or added a work account.
 
