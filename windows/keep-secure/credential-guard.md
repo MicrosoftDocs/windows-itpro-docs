@@ -80,7 +80,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>Trusted Platform Module (TPM) version 1.2 or 2.0</p></td>
-<td align="left"><p>TPM 1.2 and 2.0 provides protection for encryption keys that are stored in the firmware and are used by Credential Guard. See the following table to determine which TPM versions are supported on your OS.</p>
+<td align="left"><p>TPM 1.2 and 2.0 provides protection for encryption keys used by virtualization-based security to protect Credential Guard storage where all other keys are stored. See the following table to determine which TPM versions are supported on your OS.</p>
 <table>
 <th>OS version</th>
 <th>Required TPM</th>
@@ -94,7 +94,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 </table>
 <div class="alert">
-<strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.
+<strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the virtualization-based security keys used to protect Credential Guard storage will not bound to the TPM. Instead, the keys will be protected in a UEFI Boot Service variable.
 </div>
 </td>
 </tr>
