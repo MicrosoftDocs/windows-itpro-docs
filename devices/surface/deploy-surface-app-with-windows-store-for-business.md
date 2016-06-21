@@ -87,7 +87,7 @@ To download the required frameworks for the Surface app, follow these steps:
 
 >**Note:**&nbsp;&nbsp;Only the 64-bit (x64) version of each framework is required for Surface devices. Surface devices are native 64-bit UEFI devices and are not compatible with 32-bit (x86) versions of Windows that would require 32-bit frameworks. 
 
-##How to install Surface app on your computer with PowerShell
+##Install Surface app on your computer with PowerShell
 The following procedure provisions the Surface app onto your computer and makes it available for any user accounts created on the computer afterwards.
 1.	Using the procedure described in the [How to download Surface app from a Windows Store for Business account](#how-to-download-surface-app-from-a-windows-store-for-business-account) section of this article, download the Surface app AppxBundle and license file. 
 2.	Begin an elevated PowerShell session.
@@ -115,7 +115,7 @@ Before the Surface app is functional on the computer where it has been provision
     Add-AppxProvisionedPackage –Online –SkipLicense –PackagePath <DownloadPath>\Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe.Appx
     ```
 
-##How to install Surface app with MDT
+##Install Surface app with MDT
 The following procedure uses MDT to automate installation of the Surface app at the time of deployment. The application is provisioned automatically by MDT during deployment and thus you can use this process with existing images. This is the recommended process for deploying the Surface app as part of a Windows deployment to Surface devices because it does not reduce the cross platform compatibility of the Windows image.
 1.	Using the procedure described [earlier in this article](#how-to-download-surface-app-from-a-windows-store-for-business-account), download the Surface app AppxBundle and license file. 
 2.	Using the New Application Wizard in the MDT Deployment Workbench, import the downloaded files as a new **Application with source files**.
