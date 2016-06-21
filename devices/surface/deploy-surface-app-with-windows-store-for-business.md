@@ -25,7 +25,7 @@ The Surface app is a lightweight Windows Store app that provides control of many
 
 If your organization is preparing images that will be deployed to your Surface devices, you may want to include the Surface App (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Windows Store or your Windows Store for Business. 
 
-###Surface app overview
+####Surface app overview
 
 The Surface App is available as a free download from the [Windows Store](https://www.microsoft.com/en-us/store/apps/Surface/9WZDNCRFJB8P). Users can download and install it from the Windows Store, but if your organization uses Windows Store for Business instead, you will need to add it to your store’s inventory and possibly include the app as part of your Windows deployment process. These processes are discussed throughout this article. For more information about Windows Store for Business, see [Windows Store for Business](https://technet.microsoft.com/en-us/windows/store-for-business) in the Windows TechCenter. 
 
@@ -47,7 +47,7 @@ Before users can install or deploy an app from a company’s Windows Store for B
     * After the Surface app is presented in the search results, click the app’s icon.
     * You are presented with the choice - select **Online** or **Offline**, as shown in Figure 2.
     
-    ![Select the Offline Licensing Mode and add the app to your inventory](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline Licensing Mode and add the app to your inventory")
+    ![Select the Offline licensing mode and add the app to your inventory](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline licensing mode and add the app to your inventory")
     
     *Figure 2. Select the Offline licensing mode and add the app to your inventory*
     
