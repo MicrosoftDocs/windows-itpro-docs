@@ -1,9 +1,14 @@
 ---
 title: Create Package Accelerator Page
 description: Create Package Accelerator Page
-ms.assetid: 51cdc262-beda-4a4f-bb3e-66458062a7bd
 author: jamiejdt
+ms.assetid: 51cdc262-beda-4a4f-bb3e-66458062a7bd
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Create Package Accelerator Page
 

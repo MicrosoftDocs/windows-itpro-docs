@@ -1,9 +1,14 @@
 ---
 title: Delete a GPO
 description: Delete a GPO
-ms.assetid: 66be3dde-653e-4c25-8cb7-00e7090c8d31
 author: jamiejdt
+ms.assetid: 66be3dde-653e-4c25-8cb7-00e7090c8d31
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Delete a GPO
 

@@ -1,9 +1,14 @@
 ---
 title: About App-V 5.0 SP2
 description: About App-V 5.0 SP2
-ms.assetid: 16ca8452-cef2-464e-b4b5-c10d4630fa6a
 author: jamiejdt
+ms.assetid: 16ca8452-cef2-464e-b4b5-c10d4630fa6a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About App-V 5.0 SP2
 

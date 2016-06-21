@@ -1,9 +1,14 @@
 ---
 title: Feature Visibility Settings
 description: Feature Visibility Settings
-ms.assetid: 6a844478-a6b0-490d-923f-5a6f82467831
 author: jamiejdt
+ms.assetid: 6a844478-a6b0-490d-923f-5a6f82467831
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Feature Visibility Settings
 

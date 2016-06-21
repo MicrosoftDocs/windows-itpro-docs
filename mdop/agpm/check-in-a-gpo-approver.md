@@ -1,9 +1,14 @@
 ---
 title: Check In a GPO
 description: Check In a GPO
-ms.assetid: e428cfff-651f-4903-bf01-d742714d2fa9
 author: jamiejdt
+ms.assetid: e428cfff-651f-4903-bf01-d742714d2fa9
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Check In a GPO
 

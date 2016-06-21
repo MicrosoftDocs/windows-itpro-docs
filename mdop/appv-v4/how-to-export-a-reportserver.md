@@ -1,9 +1,14 @@
 ---
 title: How to Export a Report
 description: How to Export a Report
-ms.assetid: 2f917130-db02-4c72-a45a-7928e51e689e
 author: jamiejdt
+ms.assetid: 2f917130-db02-4c72-a45a-7928e51e689e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Export a Report
 

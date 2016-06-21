@@ -1,9 +1,14 @@
 ---
 title: REPAIR APP
 description: REPAIR APP
-ms.assetid: 892b556b-612d-4531-890e-4cfc2ac88d9f
 author: jamiejdt
+ms.assetid: 892b556b-612d-4531-890e-4cfc2ac88d9f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # REPAIR APP
 

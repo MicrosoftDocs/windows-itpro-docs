@@ -1,9 +1,14 @@
 ---
 title: About Using the Sequencer Command Line
 description: About Using the Sequencer Command Line
-ms.assetid: 0fd5f81b-17f9-4065-bce2-8785e8aac7c7
 author: jamiejdt
+ms.assetid: 0fd5f81b-17f9-4065-bce2-8785e8aac7c7
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About Using the Sequencer Command Line
 

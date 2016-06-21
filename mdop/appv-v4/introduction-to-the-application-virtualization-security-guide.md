@@ -1,9 +1,14 @@
 ---
 title: Introduction to the Application Virtualization Security Guide
 description: Introduction to the Application Virtualization Security Guide
-ms.assetid: 50e1d220-7a95-45b8-933b-3dadddebe26f
 author: jamiejdt
+ms.assetid: 50e1d220-7a95-45b8-933b-3dadddebe26f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Introduction to the Application Virtualization Security Guide
 

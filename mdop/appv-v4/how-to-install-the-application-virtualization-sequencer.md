@@ -1,9 +1,14 @@
 ---
 title: How to Install the Application Virtualization Sequencer
 description: How to Install the Application Virtualization Sequencer
-ms.assetid: 89cdf60d-18b0-4204-aa9f-b402610f8f0e
 author: jamiejdt
+ms.assetid: 89cdf60d-18b0-4204-aa9f-b402610f8f0e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the Application Virtualization Sequencer
 

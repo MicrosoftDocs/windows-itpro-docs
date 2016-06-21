@@ -1,9 +1,14 @@
 ---
 title: How to Create a Virtual Environment for a Web-Based Application
 description: How to Create a Virtual Environment for a Web-Based Application
-ms.assetid: d2b16e9d-369c-4bd6-b2a0-16dd24c0e32c
 author: jamiejdt
+ms.assetid: d2b16e9d-369c-4bd6-b2a0-16dd24c0e32c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Create a Virtual Environment for a Web-Based Application
 

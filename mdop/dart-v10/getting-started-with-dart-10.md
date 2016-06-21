@@ -1,9 +1,14 @@
 ---
 title: Getting Started with DaRT 10
 description: Getting Started with DaRT 10
-ms.assetid: 593dd317-4fba-4d51-8a80-951590acede6
 author: jamiejdt
+ms.assetid: 593dd317-4fba-4d51-8a80-951590acede6
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Getting Started with DaRT 10
 

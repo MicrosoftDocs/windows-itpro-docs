@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Client Management Console Reference
 description: Application Virtualization Client Management Console Reference
-ms.assetid: aa27537d-e053-45b5-b0ee-cf6606849e0c
 author: jamiejdt
+ms.assetid: aa27537d-e053-45b5-b0ee-cf6606849e0c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Client Management Console Reference
 

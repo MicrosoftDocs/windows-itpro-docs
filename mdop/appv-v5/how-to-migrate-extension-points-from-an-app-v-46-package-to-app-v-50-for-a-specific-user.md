@@ -3,6 +3,10 @@ title: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.0 fo
 description: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.0 for a Specific User
 ms.assetid: dad25992-3c75-4b7d-b4c6-c2edf43baaea
 author: jamiejdt
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
 
 # How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.0 for a Specific User

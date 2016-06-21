@@ -1,9 +1,14 @@
 ---
 title: How to Use Optional Packages in Connection Groups
 description: How to Use Optional Packages in Connection Groups
-ms.assetid: 4d08a81b-55e5-471a-91dc-9a684fb3c9a1
 author: jamiejdt
+ms.assetid: 4d08a81b-55e5-471a-91dc-9a684fb3c9a1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Use Optional Packages in Connection Groups
 

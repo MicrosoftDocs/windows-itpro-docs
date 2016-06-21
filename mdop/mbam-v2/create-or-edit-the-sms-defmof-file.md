@@ -1,9 +1,14 @@
 ---
 title: Create or Edit the Sms\_def.mof File
 description: Create or Edit the Sms\_def.mof File
-ms.assetid: d1747e43-484e-4031-a63b-6342fe588aa2
 author: jamiejdt
+ms.assetid: d1747e43-484e-4031-a63b-6342fe588aa2
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Create or Edit the Sms\_def.mof File
 

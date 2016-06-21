@@ -1,9 +1,14 @@
 ---
 title: Viewing MBAM 2.5 Reports for the Configuration Manager Integration Topology
 description: Viewing MBAM 2.5 Reports for the Configuration Manager Integration Topology
-ms.assetid: 60d11b2f-3a76-4023-8da4-f89e9f35b790
 author: jamiejdt
+ms.assetid: 60d11b2f-3a76-4023-8da4-f89e9f35b790
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Viewing MBAM 2.5 Reports for the Configuration Manager Integration Topology
 

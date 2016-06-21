@@ -1,9 +1,14 @@
 ---
 title: App-V 5.0 SP3 Prerequisites
 description: App-V 5.0 SP3 Prerequisites
-ms.assetid: fa8d5578-3a53-4e8a-95c7-e7a5f6e4a31c
 author: jamiejdt
+ms.assetid: fa8d5578-3a53-4e8a-95c7-e7a5f6e4a31c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # App-V 5.0 SP3 Prerequisites
 

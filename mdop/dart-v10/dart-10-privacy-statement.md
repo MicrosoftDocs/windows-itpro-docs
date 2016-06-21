@@ -1,9 +1,14 @@
 ---
 title: DaRT 10 Privacy Statement
 description: DaRT 10 Privacy Statement
-ms.assetid: 27ad36fe-6816-4fe8-8838-500c05b5b184
 author: jamiejdt
+ms.assetid: 27ad36fe-6816-4fe8-8838-500c05b5b184
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # DaRT 10 Privacy Statement
 

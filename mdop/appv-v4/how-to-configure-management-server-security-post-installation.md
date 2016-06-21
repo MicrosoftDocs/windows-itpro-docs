@@ -1,9 +1,14 @@
 ---
 title: How to Configure Management Server Security Post-Installation
 description: How to Configure Management Server Security Post-Installation
-ms.assetid: 71979fa6-3d0b-4a8b-994e-cb728d013090
 author: jamiejdt
+ms.assetid: 71979fa6-3d0b-4a8b-994e-cb728d013090
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure Management Server Security Post-Installation
 

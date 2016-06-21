@@ -1,9 +1,14 @@
 ---
 title: Example MED-V Project Planning Checklist
 description: Example MED-V Project Planning Checklist
-ms.assetid: 2b599bcb-1808-43ba-a689-1642bda24511
 author: jamiejdt
+ms.assetid: 2b599bcb-1808-43ba-a689-1642bda24511
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Example MED-V Project Planning Checklist
 

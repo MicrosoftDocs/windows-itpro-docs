@@ -1,9 +1,14 @@
 ---
 title: How to Change Deployment Properties
 description: How to Change Deployment Properties
-ms.assetid: 0a214a7a-cc83-4d04-89f9-5727153be918
 author: jamiejdt
+ms.assetid: 0a214a7a-cc83-4d04-89f9-5727153be918
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Change Deployment Properties
 

@@ -1,9 +1,14 @@
 ---
 title: MBAM 1.0 Deployment Prerequisites
 description: MBAM 1.0 Deployment Prerequisites
-ms.assetid: bd9e1010-7d25-43e7-8dc6-b521226a659d
 author: jamiejdt
+ms.assetid: bd9e1010-7d25-43e7-8dc6-b521226a659d
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # MBAM 1.0 Deployment Prerequisites
 

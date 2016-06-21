@@ -1,9 +1,14 @@
 ---
 title: Uncontrolled GPO Commands
 description: Uncontrolled GPO Commands
-ms.assetid: 94c07b09-cb96-4ff2-b963-b25f103e73e9
 author: jamiejdt
+ms.assetid: 94c07b09-cb96-4ff2-b963-b25f103e73e9
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Uncontrolled GPO Commands
 

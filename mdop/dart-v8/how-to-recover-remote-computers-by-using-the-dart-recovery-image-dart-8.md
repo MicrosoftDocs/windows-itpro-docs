@@ -1,9 +1,14 @@
 ---
 title: How to Recover Remote Computers by Using the DaRT Recovery Image
 description: How to Recover Remote Computers by Using the DaRT Recovery Image
-ms.assetid: 363ccd48-6820-4b5b-a43a-323c0b208a9d
 author: jamiejdt
+ms.assetid: 363ccd48-6820-4b5b-a43a-323c0b208a9d
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Recover Remote Computers by Using the DaRT Recovery Image
 

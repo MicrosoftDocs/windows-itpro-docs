@@ -1,9 +1,14 @@
 ---
 title: Viewing App-V Server Publishing Metadata
 description: Viewing App-V Server Publishing Metadata
-ms.assetid: 048dd42a-24d4-4cc4-81f6-7a919aadd9b2
 author: jamiejdt
+ms.assetid: 048dd42a-24d4-4cc4-81f6-7a919aadd9b2
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Viewing App-V Server Publishing Metadata
 

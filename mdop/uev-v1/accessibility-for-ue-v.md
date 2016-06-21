@@ -1,9 +1,14 @@
 ---
 title: Accessibility for UE-V
 description: Accessibility for UE-V
-ms.assetid: 059a76e5-bcf0-4459-b5d2-8b71ff2ef433
 author: jamiejdt
+ms.assetid: 059a76e5-bcf0-4459-b5d2-8b71ff2ef433
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Accessibility for UE-V
 

@@ -1,9 +1,14 @@
 ---
 title: Migrating to App-V 5.1 from a Previous Version
 description: Migrating to App-V 5.1 from a Previous Version
-ms.assetid: e7ee0edc-7544-4c0a-aaca-d922a33bc1bb
 author: jamiejdt
+ms.assetid: e7ee0edc-7544-4c0a-aaca-d922a33bc1bb
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Migrating to App-V 5.1 from a Previous Version
 
@@ -303,7 +308,6 @@ You can also perform additional migration tasks such as reconfiguring end points
 
 [How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-51-package-to-an-app-v-46-package-for-a-specific-user.md)
 
-[How to Use an App-V 4.6 Application From an App-V 5.1 Application](how-to-use-an-app-v-46-application-from-an-app-v-51-application.md)
 
 ## Got a suggestion for App-V?
 

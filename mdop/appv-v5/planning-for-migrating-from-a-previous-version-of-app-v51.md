@@ -1,9 +1,14 @@
 ---
 title: Planning for Migrating from a Previous Version of App-V
 description: Planning for Migrating from a Previous Version of App-V
-ms.assetid: 4a058047-9674-41bc-8050-c58c97a80a9b
 author: jamiejdt
+ms.assetid: 4a058047-9674-41bc-8050-c58c97a80a9b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning for Migrating from a Previous Version of App-V
 

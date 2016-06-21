@@ -1,9 +1,14 @@
 ---
 title: How to Configure Windows Server 2008 for App-V Management Servers
 description: How to Configure Windows Server 2008 for App-V Management Servers
-ms.assetid: 38b4016f-de82-4209-9159-387d20ddee25
 author: jamiejdt
+ms.assetid: 38b4016f-de82-4209-9159-387d20ddee25
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure Windows Server 2008 for App-V Management Servers
 

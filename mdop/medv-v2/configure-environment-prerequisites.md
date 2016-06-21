@@ -1,9 +1,14 @@
 ---
 title: Configure Environment Prerequisites
 description: Configure Environment Prerequisites
-ms.assetid: 7379e8e5-1cb2-4b8e-8acc-5c04e26f8c91
 author: jamiejdt
+ms.assetid: 7379e8e5-1cb2-4b8e-8acc-5c04e26f8c91
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Configure Environment Prerequisites
 

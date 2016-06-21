@@ -1,9 +1,14 @@
 ---
 title: Customizing the Self-Service Portal for Your Organization
 description: Customizing the Self-Service Portal for Your Organization
-ms.assetid: f007e02b-e2df-47a9-9762-5909e230aa3f
 author: jamiejdt
+ms.assetid: f007e02b-e2df-47a9-9762-5909e230aa3f
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Customizing the Self-Service Portal for Your Organization
 

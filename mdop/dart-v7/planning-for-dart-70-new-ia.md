@@ -1,9 +1,14 @@
 ---
 title: Planning for DaRT 7.0
 description: Planning for DaRT 7.0
-ms.assetid: 9a60cb08-5efb-40fe-b1e3-9ece831f3b43
 author: jamiejdt
+ms.assetid: 9a60cb08-5efb-40fe-b1e3-9ece831f3b43
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Planning for DaRT 7.0
 

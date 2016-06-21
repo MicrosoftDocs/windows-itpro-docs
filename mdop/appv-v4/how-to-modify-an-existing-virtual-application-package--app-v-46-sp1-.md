@@ -1,9 +1,14 @@
 ---
 title: How to Modify an Existing Virtual Application Package (App-V 4.6 SP1)
 description: How to Modify an Existing Virtual Application Package (App-V 4.6 SP1)
-ms.assetid: f43a9927-4325-4b2d-829f-3068e4e84349
 author: jamiejdt
+ms.assetid: f43a9927-4325-4b2d-829f-3068e4e84349
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Modify an Existing Virtual Application Package (App-V 4.6 SP1)
 

@@ -1,9 +1,14 @@
 ---
 title: QUERY OBJ
 description: QUERY OBJ
-ms.assetid: 55abf0d1-c779-4172-8357-552ab010933b
 author: jamiejdt
+ms.assetid: 55abf0d1-c779-4172-8357-552ab010933b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # QUERY OBJ
 

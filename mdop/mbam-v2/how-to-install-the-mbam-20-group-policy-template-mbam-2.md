@@ -1,9 +1,14 @@
 ---
 title: How to Install the MBAM 2.0 Group Policy Template
 description: How to Install the MBAM 2.0 Group Policy Template
-ms.assetid: bc193232-d060-4285-842e-d194a74dd3c9
 author: jamiejdt
+ms.assetid: bc193232-d060-4285-842e-d194a74dd3c9
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the MBAM 2.0 Group Policy Template
 

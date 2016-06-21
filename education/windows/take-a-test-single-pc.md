@@ -30,7 +30,7 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 > **Tip!**
 > To exit **Take a Test**, press Ctrl+Alt+Delete. 
 
-**Take a Test** is included in version 1607 of Windows 10 Pro, Pro Education, Education and Enterprise. 
+ 
 
 ## How you use Take a Test
 

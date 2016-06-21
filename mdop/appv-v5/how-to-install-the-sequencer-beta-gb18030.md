@@ -1,9 +1,14 @@
 ---
 title: How to Install the Sequencer
 description: How to Install the Sequencer
-ms.assetid: a122caf0-f408-458c-b119-dc84123c1d58
 author: jamiejdt
+ms.assetid: a122caf0-f408-458c-b119-dc84123c1d58
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Install the Sequencer
 

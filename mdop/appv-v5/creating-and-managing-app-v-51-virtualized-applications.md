@@ -1,9 +1,14 @@
 ---
 title: Creating and Managing App-V 5.1 Virtualized Applications
 description: Creating and Managing App-V 5.1 Virtualized Applications
-ms.assetid: 26be4331-88eb-4cfb-9d82-e63d7ee54576
 author: jamiejdt
+ms.assetid: 26be4331-88eb-4cfb-9d82-e63d7ee54576
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Creating and Managing App-V 5.1 Virtualized Applications
 

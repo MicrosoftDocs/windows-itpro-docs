@@ -1,9 +1,14 @@
 ---
 title: MED-V Infrastructure Planning and Design
 description: MED-V Infrastructure Planning and Design
-ms.assetid: 6129b8f6-4b20-4403-8edd-68b007791139
 author: jamiejdt
+ms.assetid: 6129b8f6-4b20-4403-8edd-68b007791139
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V Infrastructure Planning and Design
 
