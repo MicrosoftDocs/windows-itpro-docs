@@ -55,9 +55,12 @@ To run a full set of tests with the Microsoft Surface Diagnostic Toolkit, you sh
 
 >**Note:**&nbsp;&nbsp;The Microsoft Surface Diagnostic Toolkit tests verify only the hardware of a Surface device and do not resolve issues with the operating system or software.
 
-## Test options
+## Configure test options
+
+Before you select the tests you would like to run, you can select the Options button in the upper right corner of the window (as shown in Figure 1) to configure the behavior of the Microsoft Surface Diagnostic Toolkit. In the Options section of the toolkit you can configure the depth of testing and logs, the save location for log files, and the creation and use of additional language files for the dialog of each test.
 
 
+Figure 1. The Options button appears as a gear icon  
 
 ## The tests
 
