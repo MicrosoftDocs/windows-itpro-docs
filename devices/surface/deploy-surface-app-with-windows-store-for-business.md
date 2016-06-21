@@ -66,9 +66,9 @@ After you add an app to the Windows Store for Business account in Offline mode, 
 3. Under **Actions**, click the ellipsis (…), then **Download for offline** use for the Surface app.
 4. Select the desired **Platform** and **Architecture** options from the available selections for the selected app, as shown in Figure 4.
 
-![Example of the AppxBundle package](images\deploysurfapp-fig4-downloadappxbundle.png "Example of the AppxBundle package")
+    ![Example of the AppxBundle package](images\deploysurfapp-fig4-downloadappxbundle.png "Example of the AppxBundle package")
 
-*Figure 4. Download the AppxBundle package for an app*
+    *Figure 4. Download the AppxBundle package for an app*
 5. Click **Download**. The AppxBundle package will be downloaded. Make sure you note the path of the downloaded file because you’ll need that later in this article.
 6. Click either the **Encoded license** or **Unencoded license** option. Use the Encoded license option with management tools like System Center Configuration Manager or when you use Windows Imaging and Configuration Designer (Windows ICD). Select the Unencoded license option when you use the Deployment Image Servicing and Management (DISM) or deployment solutions based on imaging, including the Microsoft Deployment Toolkit (MDT).
 7. Click **Generate** to generate and download the license for the app. Make sure you note the path of the license file because you’ll need that later in this article.
@@ -78,6 +78,7 @@ After you add an app to the Windows Store for Business account in Offline mode, 
 Figure 5 shows the required frameworks for the Surface app.
 
 ![Required frameworks for the Surface app](images\deploysurfapp-fig5-requiredframework.png "Required frameworks for the Surface app")
+
 *Figure 5. Required frameworks for the Surface app*
 
 To download the required frameworks for the Surface app, follow these steps:
