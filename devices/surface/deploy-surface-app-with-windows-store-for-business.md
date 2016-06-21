@@ -9,7 +9,7 @@ ms.sitesec: library
 author: miladCA
 ---
 
-#Deploy Surface App with Windows Store for Business
+#Deploy Surface app with Windows Store for Business
 
 The Surface app is a lightweight Windows Store app that provides control of many Surface-specific settings and options, including: 
 
