@@ -45,7 +45,7 @@ Before users can install or deploy an app from a company’s Windows Store for B
     * Click the **Shop** menu.
     * In the search box, type **Surface app**, and then click the search icon.
     * After the Surface app is presented in the search results, click the app’s icon.
-    * You are presented with a choice (select **Online** or **Offline**), as shown in Figure 2.
+    * You are presented with a choice (select **Online** or **Offline**), as shown in Figure 2.<br/><br/>
     
     ![Select the Offline licensing mode and add the app to your inventory](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline licensing mode and add the app to your inventory")
     
@@ -134,7 +134,7 @@ For the Surface app to function on the target computer, it will also require the
 
 To configure the frameworks as dependencies of the Surface app, use this process:
 1.	Open the properties of the Surface app in the MDT Deployment Workbench.
-2.	Select the **Dependencies** tab, and then click **Add**.
+2.	Click the **Dependencies** tab, and then click **Add**.
 3.	Select the check box for each framework using the name you provided in the New Application Wizard.
 
 After import, the Surface app will be available for selection in the **Applications** step of the Windows Deployment Wizard. You can also install the application automatically by specifying the application in the deployment task sequence by following this process:
