@@ -25,7 +25,7 @@ The Surface app is a lightweight Windows Store app that provides control of many
 
 If your organization is preparing images that will be deployed to your Surface devices, you may want to include the Surface App (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Windows Store or your Windows Store for Business. 
 
-###Surface App Overview
+###Surface app overview
 
 The Surface App is available as a free download from the [Windows Store](https://www.microsoft.com/en-us/store/apps/Surface/9WZDNCRFJB8P). Users can download and install it from the Windows Store, but if your organization uses Windows Store for Business instead, you will need to add it to your store’s inventory and possibly include the app as part of your Windows deployment process. These processes are discussed throughout this article. For more information about Windows Store for Business, see [Windows Store for Business](https://technet.microsoft.com/en-us/windows/store-for-business) in the Windows TechCenter. 
 
@@ -49,7 +49,7 @@ Before users can install or deploy an app from a company’s Windows Store for B
     
     ![Select the Offline Licensing Mode and add the app to your inventory](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline Licensing Mode and add the app to your inventory")
     
-    *Figure 2. Select the Offline Licensing Mode and add the app to your inventory*
+    *Figure 2. Select the Offline licensing mode and add the app to your inventory*
     
     * Click **Offline** to select the Offline licensing mode.
     * Click **Get the app** to add the app to your Windows Store for Business inventory. As shown in Figure 3, You’ll see a dialog for you to acknowledge that offline apps can be deployed using a management tool or downloaded from the company’s inventory page in their private store.
@@ -62,7 +62,7 @@ Before users can install or deploy an app from a company’s Windows Store for B
 ##How to download Surface app from a Windows Store for Business account
 After you add an app to the Windows Store for Business account in Offline mode, you can download and add the app as an AppxBundle to a deployment share.
 1. Log on to the Windows Store for Business account at https://businessstore.microsoft.com.
-2. Click the **Manage->Inventory** menu. You’ll see a list of all apps in your company’s private store, including the Surface app added earlier in the prior steps of this article.
+2. Click the **Manage->Inventory** menu. A list of all apps in your company’s private store is displayed, including the Surface app you added in the [Add Surface app to a Windows Store for Business account](#add-surface-app-to-a-windows-store-for-business-account) section of this article.
 3. Under **Actions**, click the ellipsis (…), then **Download for offline** use for the Surface app.
 4. Select the desired **Platform** and **Architecture** options from the available selections for the selected app, as shown in Figure 4.
 
@@ -70,7 +70,7 @@ After you add an app to the Windows Store for Business account in Offline mode, 
 
 *Figure 4. Download the AppxBundle package for an app*
 5. Click **Download**. The AppxBundle package will be downloaded. Make sure you note the path of the downloaded file because you’ll need that later in this article.
-6. Click either the **Encoded license** or **Unencoded license** option. Use the Encoded license option with management tools like System Center Configuration Manager or when you use the Windows Imaging and Configuration Designer (Windows ICD). Select the Unencoded license option when you use the Deployment Image Servicing and Management (DISM) or deployment solutions based on imaging, including the Microsoft Deployment Toolkit (MDT).
+6. Click either the **Encoded license** or **Unencoded license** option. Use the Encoded license option with management tools like System Center Configuration Manager or when you use Windows Imaging and Configuration Designer (Windows ICD). Select the Unencoded license option when you use the Deployment Image Servicing and Management (DISM) or deployment solutions based on imaging, including the Microsoft Deployment Toolkit (MDT).
 7. Click **Generate** to generate and download the license for the app. Make sure you note the path of the license file because you’ll need that later in this article.
 
 >**Note:**&nbsp;&nbsp;When you download an app for offline use, such as the Surface app, you may notice a section at the bottom of the page labeled **Required frameworks**. Your target computers must have the frameworks installed for the app to run, so you may need to repeat the download process for each of the required frameworks for your architecture (either x86 or x64) and also include them as part of your Windows deployment discussed later in this article.
@@ -88,7 +88,7 @@ To download the required frameworks for the Surface app, follow these steps:
 
 ##How to install Surface app on your computer with PowerShell
 The following procedure provisions the Surface app onto your computer and makes it available for any user accounts created on the computer afterwards.
-1.	Using the procedure described earlier in this article, download the Surface app AppxBundle and license file. 
+1.	Using the procedure described in the [How to download Surface app from a Windows Store for Business account](#how-to-download-surface-app-from-a-windows-store-for-business-account) section of this article, download the Surface app AppxBundle and license file. 
 2.	Begin an elevated PowerShell session.
 >**Note:**&nbsp;&nbsp;If you don’t run PowerShell as an Administrator, the session won’t have the required permissions to install the app.
 3.	In the elevated PowerShell session, copy and paste the following command:
@@ -104,7 +104,7 @@ The following procedure provisions the Surface app onto your computer and makes 
     ```
 
 4.	The Surface app will now be available on your current Windows computer. 
-Before the Surface app is functional on the computer where it has been provisioned, you must also provision the frameworks described earlier in this article. To provision these frameworks, use the following procedure in the elevated PowerShell session you used to provision the Surface App.
+Before the Surface app is functional on the computer where it has been provisioned, you must also provision the frameworks described earlier in this article. To provision these frameworks, use the following procedure in the elevated PowerShell session you used to provision the Surface app.
 5.	In the elevated PowerShell session, copy and paste the following command:
 ```
     Add-AppxProvisionedPackage –Online –SkipLicense –PackagePath <DownloadPath>\Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe.Appx
@@ -115,10 +115,10 @@ Before the Surface app is functional on the computer where it has been provision
     ```
 
 ##How to install Surface app with MDT
-The following procedure uses MDT to automate installation of the Surface app at the time of deployment. The application is provisioned automatically by MDT during deployment and thus this process can be used with existing images. This is the recommended process for deploying the Surface app as part of a Windows deployment to Surface devices as it does not reduce the cross platform compatibility of the Windows image.
-1.	Using the procedure described earlier in this article, download the Surface app AppxBundle and license file. 
-2.	Using the New Application Wizard in the MDT Deployment Workbench, import the downloaded files as a new Application with source files.
-3.	On the **Command Details** page of the New Application Wizard, specify the default Working Directory and for the Command specify the file name of the AppXBundle, as follows:
+The following procedure uses MDT to automate installation of the Surface app at the time of deployment. The application is provisioned automatically by MDT during deployment and thus you can use this process with existing images. This is the recommended process for deploying the Surface app as part of a Windows deployment to Surface devices because it does not reduce the cross platform compatibility of the Windows image.
+1.	Using the procedure described [earlier in this article](#how-to-download-surface-app-from-a-windows-store-for-business-account), download the Surface app AppxBundle and license file. 
+2.	Using the New Application Wizard in the MDT Deployment Workbench, import the downloaded files as a new **Application with source files**.
+3.	On the **Command Details** page of the New Application Wizard, specify the default **Working Directory** and for the **Command** specify the file name of the AppxBundle, as follows:
 
     * Command:
     ```
