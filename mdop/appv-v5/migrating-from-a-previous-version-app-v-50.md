@@ -18,7 +18,7 @@ With App-V 5.0 you can migrate your existing App-V 4.6 infrastructure to the mor
 Consider the following sections when you plan your migration strategy:
 
 **Note**  
-For more information about the differences between App-V 4.6 and App-V 5.0, see the **Differences between App-4.6 and App-V 5.0 section** of [About App-V 5.0](about-app-v-50.md).
+For more information about the differences between App-V 4.6 and App-V 5.0, see the **Differences between App-V 4.6 and App-V 5.0 section** of [About App-V 5.0](about-app-v-50.md).
 
  
 
@@ -105,7 +105,7 @@ The following table displays the recommended method for upgrading clients.
 </tr>
 <tr class="even">
 <td align="left"><p>Install the App-V 5.0 client with co-existence enabled.</p></td>
-<td align="left"><p>[How to Deploy the App-V 4.6.x and the App-V 5.0 Client on the Same Computer](how-to-deploy-the-app-v-46x-and-the-app-v--50-client-on-the-same-computer.md).</p></td>
+<td align="left"><p>[How to Deploy the App-V 4.6 and the App-V 5.0 Client on the Same Computer](how-to-deploy-the-app-v-46-and-the-app-v--50-client-on-the-same-computer.md).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Sequence and roll out App-V 5.0 packages. As needed, unpublish App-V 4.6 packages.</p></td>
@@ -117,7 +117,7 @@ The following table displays the recommended method for upgrading clients.
  
 
 **Important**  
-You must be running App-V 4.6 SP2 to use coexistence mode. Additionally, when you sequence a package, you must configure the Managing Authority setting, which is in the **User Configuration** is located in the **User Configuration** section.
+You must be running App-V 4.6 SP3 to use coexistence mode. Additionally, when you sequence a package, you must configure the Managing Authority setting, which is in the **User Configuration** is located in the **User Configuration** section.
 
  
 
@@ -139,7 +139,7 @@ There is no direct method to upgrade to a full App-V 5.0 infrastructure. Use the
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Upgrade your environment to App-V 4.6 SP2.</p></td>
+<td align="left"><p>Upgrade your environment to App-V 4.6 SP3.</p></td>
 <td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](../appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy.md).</p></td>
 </tr>
 <tr class="even">
@@ -164,15 +164,15 @@ There is no direct method to upgrade to a full App-V 5.0 infrastructure. Use the
 
 You can also perform additional migration tasks such as reconfiguring end points as well as opening a package created using a prior version on a computer running the App-V 5.0 client. The following links provide more information about performing these tasks.
 
-[How to Migrate Extension Points From an App-V 4.6 SP2 Package to a Converted App-V 5.0 Package for All Users on a Specific Computer](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-a-converted-app-v-50-package-for-all-users-on-a-specific-computer.md)
+[How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V 5.0 Package for All Users on a Specific Computer](how-to-migrate-extension-points-from-an-app-v-46-package-to-a-converted-app-v-50-package-for-all-users-on-a-specific-computer.md)
 
-[How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.0 for a Specific User](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-app-v-50-for-a-specific-user.md)
+[How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.0 for a Specific User](how-to-migrate-extension-points-from-an-app-v-46-package-to-app-v-50-for-a-specific-user.md)
 
-[How to Revert Extension Points from an App-V 5.0 Package to an App-V 4.6 SP2 Package For All Users on a Specific Computer](how-to-revert-extension-points-from-an-app-v-50-package-to-an-app-v-46-sp2-package-for-all-users-on-a-specific-computer.md)
+[How to Revert Extension Points from an App-V 5.0 Package to an App-V 4.6 Package For All Users on a Specific Computer](how-to-revert-extension-points-from-an-app-v-50-package-to-an-app-v-46-package-for-all-users-on-a-specific-computer.md)
 
-[How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 SP2 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-50-package-to-an-app-v-46-sp2-package-for-a-specific-user.md)
+[How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-50-package-to-an-app-v-46-package-for-a-specific-user.md)
 
-[How to Use an App-V 4.6 SP1 Application From an App-V 5.0 Application](how-to-use-an-app-v-46-sp1-application-from-an-app-v-50-application.md)
+[How to Use an App-V 4.6 Application From an App-V 5.0 Application](how-to-use-an-app-v-46-application-from-an-app-v-50-application.md)
 
 ## Got a suggestion for App-V?
 

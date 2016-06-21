@@ -12,6 +12,7 @@ ms.prod: w10
 
 # How to Use an App-V 4.6 Application From an App-V 5.1 Application
 
+*Note:** App-V 4.6 has exited Mainstream support. The following applies to an App-V 4.6 SP3 package.
 
 Use the following procedure to run an App-V 4.6 application with App-V 5.1 applications on a standalone client.
 
@@ -22,7 +23,7 @@ This procedure assumes that you are running the latest version of App-V 4.6.
 
 1.  Select two applications in your environment that can be opened from one another. For example, Microsoft Outlook and Adobe Acrobat Reader. You can access an email attachment created using Adobe Acrobat.
 
-2.  Convert the packages, or create a new package for either of the applications using the App-V 5.1 format. For more information about converting packages see, [How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-a-converted-app-v-51-package-for-all-users-on-a-specific-computer.md) or [How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User](how-to-migrate-extension-points-from-an-app-v-46-sp2-package-to-app-v-51-for-a-specific-user.md).
+2.  Convert the packages, or create a new package for either of the applications using the App-V 5.1 format. For more information about converting packages see, [How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer](how-to-migrate-extension-points-from-an-app-v-46-package-to-a-converted-app-v-51-package-for-all-users-on-a-specific-computer.md) or [How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User](how-to-migrate-extension-points-from-an-app-v-46-package-to-app-v-51-for-a-specific-user.md).
 
 3.  Add and provision the package using the App-V 5.1 management console. For more information adding and provisioning packages see, [How to Add or Upgrade Packages by Using the Management Console](how-to-add-or-upgrade-packages-by-using-the-management-console-51-gb18030.md) and [How to Configure Access to Packages by Using the Management Console](how-to-configure-access-to-packages-by-using-the-management-console-51.md).
 
