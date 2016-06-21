@@ -1,6 +1,6 @@
 ---
-Deploy Surface App with Windows Store for Business (Surface)
-description: Find out how to 
+Deploy Surface app with Windows Store for Business (Surface)
+description: Find out how to add and download Surface app with Windows Store for Business, as well as install Surface app with PowerShell and MDT.
 keywords: surface app, app, deployment, customize
 ms.prod: w10
 ms.mktglfcycl: deploy
