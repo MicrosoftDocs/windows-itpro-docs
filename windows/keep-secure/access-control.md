@@ -9,6 +9,9 @@ ms.pagetype: security
 
 # Access Control Overview
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016
 
 This topic for the IT professional describes access control in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer. Key concepts that make up access control are permissions, ownership of objects, inheritance of permissions, user rights, and object auditing.
 
@@ -111,14 +114,14 @@ User rights grant specific privileges and sign-in rights to users and groups in 
 
 User rights are different from permissions because user rights apply to user accounts, and permissions are associated with objects. Although user rights can apply to individual user accounts, user rights are best administered on a group account basis. There is no support in the access control user interface to grant user rights. However, user rights assignment can be administered through **Local Security Settings**.
 
-For more information about user rights, see [User Rights Assignment](http://technet.microsoft.com/library/dn221963.aspx).
+For more information about user rights, see [User Rights Assignment](user-rights-assignment.md).
 
 ## Object auditing
 
 
 With administrator's rights, you can audit users' successful or failed access to objects. You can select which object access to audit by using the access control user interface, but first you must enable the audit policy by selecting **Audit object access** under **Local Policies** in **Local Security Settings**. You can then view these security-related events in the Security log in Event Viewer.
 
-For more information about auditing, see [Security Auditing Overview](security_auditing_overview_glbl).
+For more information about auditing, see [Security Auditing Overview](security-auditing-overview.md).
 
 ## See also
 

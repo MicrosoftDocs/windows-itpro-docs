@@ -9,6 +9,9 @@ ms.pagetype: security
 
 # Local Accounts
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016
 
 This reference topic for the IT professional describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server. This topic does not describe the default local user accounts for an Active Directory domain controller.
 
@@ -147,7 +150,7 @@ By default, the Guest account is the only member of the default Guests group, wh
 
 When an administrator enables the Guest account, it is a best practice to create a strong password for this account. In addition, the administrator on the computer should also grant only limited rights and permissions for the Guest account. For security reasons, the Guest account should not be used over the network and made accessible to other computers.
 
-When a computer is shutting down or starting up, it is possible that a guest user or anyone with local access could gain unauthorized access to the computer. To help prevent this risk, do not grant the Guest account the [Shut down the system](shut_down_the_system__technical_reference_security_considerations) user right.
+When a computer is shutting down or starting up, it is possible that a guest user or anyone with local access could gain unauthorized access to the computer. To help prevent this risk, do not grant the Guest account the [Shut down the system](shut-down-the-system.md) user right.
 
 In addition, the guest user in the Guest account should not be able to view the event logs. After the Guest account is enabled, it is a best practice to monitor the Guest account frequently to ensure that other users cannot use services and other resources, such as resources that were unintentionally left available by a previous user.
 
@@ -248,7 +251,7 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="odd">
 <td><p>1</p></td>
 <td><p>Policy name</p></td>
-<td><p>[User Account Control: Run all administrators in Admin Approval Mode](user_account_control_run_all_administrators_in_admin_approval_mode_technical_reference_mgmt_security_considerations)</p></td>
+<td><p>[User Account Control: Run all administrators in Admin Approval Mode](user-account-control-run-all-administrators-in-admin-approval-mode.md)</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -263,7 +266,7 @@ The following table shows the Group Policy and registry settings that are used t
 <tr class="even">
 <td><p></p></td>
 <td><p>Policy name</p></td>
-<td><p>[User Account Control: Run all administrators in Admin Approval Mode](user_account_control_run_all_administrators_in_admin_approval_mode_technical_reference_mgmt_security_considerations)</p></td>
+<td><p>[User Account Control: Run all administrators in Admin Approval Mode](user-account-control-run-all-administrators-in-admin-approval-mode.md)</p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -392,7 +395,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <tr class="odd">
 <td><p>1</p></td>
 <td><p>Policy name</p></td>
-<td><p>[Deny access to this computer from the network](deny_access_to_this_computer_from_the_network__technical_reference_security_considerations)</p></td>
+<td><p>[Deny access to this computer from the network](deny-access-to-this-computer-from-the-network.md)</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -408,7 +411,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <tr class="even">
 <td><p></p></td>
 <td><p>Policy name</p></td>
-<td><p>[Deny log on through Remote Desktop Services](deny_log_on_through_remote_desktop_services__technical_reference_security_considerations)</p>
+<td><p>[Deny log on through Remote Desktop Services](deny-log-on-through-remote-desktop-services.md)</p>
 <p>(Windows Server 2008 R2 and later.)</p>
 <p>Deny logon through Terminal Services</p>
 <p>(Windows Server 2008)</p></td>
