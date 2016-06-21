@@ -61,7 +61,7 @@ App-V 5.0 dynamic configuration files customize a package for a specific user. Y
 
 When a dynamic user configuration file is used, none of the App-V 5.0 information for the extension in the manifest file is used. This means that the dynamic user configuration file must include everything for the extension that is specific to App-V 5.0 in the manifest file, as well as the changes that you want to make, such as, deletions and updates. For more information about how to create a custom configuration file, see [How to Create a Custom Configuration File by Using the App-V 5.0 Management Console](how-to-create-a-custom-configuration-file-by-using-the-app-v-50-management-console.md).
 
-[How to Deploy the App-V 4.6.x and the App-V 5.0 Client on the Same Computer](how-to-deploy-the-app-v-46x-and-the-app-v--50-client-on-the-same-computer.md)
+[How to Deploy the App-V 4.6 and the App-V 5.0 Client on the Same Computer](how-to-deploy-the-app-v-46-and-the-app-v--50-client-on-the-same-computer.md)
 
 ## <a href="" id="bkmk-plan-for-scs"></a>Planning for the App-V 5.0 Shared Content Store (SCS)
 

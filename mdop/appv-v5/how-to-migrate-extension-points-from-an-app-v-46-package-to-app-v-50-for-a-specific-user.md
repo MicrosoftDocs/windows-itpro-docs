@@ -1,12 +1,13 @@
 ---
-title: How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.0 for a Specific User
-description: How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.0 for a Specific User
+title: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.0 for a Specific User
+description: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.0 for a Specific User
 ms.assetid: dad25992-3c75-4b7d-b4c6-c2edf43baaea
 author: jamiejdt
 ---
 
-# How to Migrate Extension Points From an App-V 4.6 SP2 Package to App-V 5.0 for a Specific User
+# How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.0 for a Specific User
 
+*Note:** App-V 4.6 has exited Mainstream support.
 
 Use the following procedure to migrate packages created with App-V using the user configuration file.
 

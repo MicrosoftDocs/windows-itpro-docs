@@ -55,7 +55,7 @@ The following procedure does not require an App-V 5.1 management server.
 ## Related topics
 
 
-[How to Revert Extension Points from an App-V 5.1 Package to an App-V 4.6 Package For All Users on a Specific Computer](how-to-revert-extension-points-from-an-app-v-51-package-to-an-app-v-46-sp2-package-for-all-users-on-a-specific-computer.md)
+[How to Revert Extension Points from an App-V 5.1 Package to an App-V 4.6 Package For All Users on a Specific Computer](how-to-revert-extension-points-from-an-app-v-51-package-to-an-app-v-46-package-for-all-users-on-a-specific-computer.md)
 
 [Operations for App-V 5.1](operations-for-app-v-51.md)
 
