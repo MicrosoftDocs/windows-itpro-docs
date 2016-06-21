@@ -33,7 +33,7 @@ The [Microsoft Surface Diagnostic Toolkit](http://go.microsoft.com/fwlink/p/?Lin
 
 - Surface Pro
 
->**Note:**&nbsp;&nbsp;Security software and built-in security measures in many email applications and services will block executable files that are transferred through email. To email the Surface Diagnostic Toolkit, attach the .zip archive file as downloaded from the Surface Tools for IT page without extracting it first. You can also create a custom .zip archive that contains the .exe file. (For example, if you want to localize the text as described in the [Localization](#localization) section of this article.)
+>**Note:**&nbsp;&nbsp;Security software and built-in security measures in many email applications and services will block executable files that are transferred through email. To email the Surface Diagnostic Toolkit, attach the archive file (.zip) as downloaded from the Surface Tools for IT page without extracting it first. You can also create a custom .zip archive that contains the .exe file. (For example, if you want to localize the text as described in the [Localization](#localization) section of this article.)
 
 Running the Microsoft Surface Diagnostic Toolkit is a hands-on activity. The test sequence includes several tests that require you to perform actions or observe the outcome of the test, and then click the applicable **Pass** or **Fail** button. Some tests require connectivity to external devices, like an external display. Other tests use the built in Windows troubleshooters. At the end of testing, a visual report of the test results is displayed and you are given the option to save a log file or copy the results to the clipboard.
 
@@ -49,11 +49,15 @@ To run a full set of tests with the Microsoft Surface Diagnostic Toolkit, you sh
 
 - Room to move the Surface device around
 
-- External speakers or headphones
+- External speakers or headphones with a 3.5mm stereo plug
 
->**Note:**&nbsp;&nbsp;The Microsoft Surface Diagnostic Toolkit tests verify only the hardware of a Surface device and do not test or resolve issues with the operating system or software.
+- A power adapter for your Surface device
 
- 
+>**Note:**&nbsp;&nbsp;The Microsoft Surface Diagnostic Toolkit tests verify only the hardware of a Surface device and do not resolve issues with the operating system or software.
+
+## Test options
+
+
 
 ## The tests
 
