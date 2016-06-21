@@ -24,7 +24,7 @@ The App-V 5.1 client is the component that runs a virtualized application on a t
 
 [How to Uninstall the App-V 5.1 Client](how-to-uninstall-the-app-v-51-client.md)
 
-[How to Deploy the App-V 4.6.x and the App-V 5.1 Client on the Same Computer](how-to-deploy-the-app-v-46x-and-the-app-v--51-client-on-the-same-computer.md)
+[How to Deploy the App-V 4.6 and the App-V 5.1 Client on the Same Computer](how-to-deploy-the-app-v-46-and-the-app-v--51-client-on-the-same-computer.md)
 
 ## Client Configuration Settings
 
