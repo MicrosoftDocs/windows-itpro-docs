@@ -45,7 +45,7 @@ Before users can install or deploy an app from a company’s Windows Store for B
     * Click the **Shop** menu.
     * In the search box, type **Surface app**, and then click the search icon.
     * After the Surface app is presented in the search results, click the app’s icon.
-    * You are presented with a choice (select **Online** or **Offline**), as shown in Figure 2.
+    * You are presented with a choice (select **Online** or **Offline**), as shown in Figure 2.<br/><br/>
     
     ![Select the Offline licensing mode and add the app to your inventory](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline licensing mode and add the app to your inventory")
     
