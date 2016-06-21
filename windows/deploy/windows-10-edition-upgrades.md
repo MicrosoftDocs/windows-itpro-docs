@@ -15,7 +15,7 @@ author: greg-lindsay
 -   Windows 10
 -   Windows 10 Mobile
 
-With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkID=690882). For information about upgrading to Windows 10 from another version of Windows, see [Windows 10 upgrade paths](windows10-upgrade-paths.md).
+With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkID=690882). For information about upgrading to Windows 10 from another version of Windows, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md).
 
 The following table shows the methods you can use to upgrade editions of Windows 10.
 
