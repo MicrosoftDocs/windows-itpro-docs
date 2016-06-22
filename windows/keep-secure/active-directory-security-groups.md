@@ -986,7 +986,7 @@ This security group has not changed since Windows Server 2008.
 
 Members of the Cloneable Domain Controllers group that are domain controllers may be cloned. In Windows Server 2012 R2 and Windows Server 2012, you can deploy domain controllers by copying an existing virtual domain controller. In a virtual environment, you no longer have to repeatedly deploy a server image that is prepared by using sysprep.exe, promote the server to a domain controller, and then complete additional configuration requirements for deploying each domain controller (including adding the virtual domain controller to this security group).
 
-For more information, see [Introduction to Active Directory Domain Services (AD DS) Virtualization (Level 100)](introduction_to_active_directory_domain_services__ad_ds__virtualization__level_100__original).
+For more information, see [Introduction to Active Directory Domain Services (AD DS) Virtualization (Level 100)](https://technet.microsoft.com/en-us/library/hh831734.aspx).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -2602,7 +2602,7 @@ Depending on the account’s domain functional level, members of the Protected U
 
 The Protected Users group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-This group was introduced in Windows Server 2012 R2. For more information about how this group works, see [Protected Users Security Group](protected_users_security_group).
+This group was introduced in Windows Server 2012 R2. For more information about how this group works, see [Protected Users Security Group](https://technet.microsoft.com/en-us/library/dn466518.aspx).
 
 The following table specifies the properties of the Protected Users group.
 

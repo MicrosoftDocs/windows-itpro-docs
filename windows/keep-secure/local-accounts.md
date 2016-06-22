@@ -71,40 +71,13 @@ The default Administrator account cannot be deleted or locked out, but it can be
 
 The default Administrator account is initially installed differently for Windows Server operating systems, and the Windows client operating systems. The following table provides a comparison.
 
-Default restriction
-Windows Server operating systems
-Windows client operating systems
-Administrator account is disabled on installation
-
-No
-
-Yes
-
-Administrator account is set up on first sign-in
-
-Yes
-
-No, keep disabled
-
-Administrator account is used to set up the local server or client computer
-
-Yes
-
-No, use a local user account with **Run as administrator** to obtain administrative rights
-
-Administrator account requires a strong password when it is enabled
-
-Yes
-
-Yes
-
-Administrator account can be disabled, locked out, or renamed
-
-Yes
-
-Yes
-
- 
+| Default restriction | Windows Server operating systems | Windows client operating systems |
+|---------------------|----------------------------------|----------------------------------|
+| Administrator account is disabled on installation | No | Yes |
+| Administrator account is set up on first sign-in | Yes | No, keep disabled |
+| Administrator account is used to set up the local server or client computer | Yes | No, use a local user account with **Run as administrator** to obtain administrative rights |
+| Administrator account requires a strong password when it is enabled | Yes | Yes |
+| Administrator account can be disabled, locked out, or renamed | Yes | Yes |
 
 In summary, for Windows Server operating systems, the Administrator account is used to set up the local server only for tasks that require administrative rights. The default Administrator account is set up by using the default settings that are provided on installation. Initially, the Administrator account is not associated with a password. After installation, when you first set up Windows Server, your first task is to set up the Administrator account properties securely. This includes creating a strong password and securing the **Remote control** and **Remote Desktop Services Profile** settings. You can also disable the Administrator account when it is not required.
 
