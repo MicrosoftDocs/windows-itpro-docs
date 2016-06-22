@@ -172,7 +172,6 @@ You can also perform additional migration tasks such as reconfiguring end points
 
 [How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-50-package-to-an-app-v-46-package-for-a-specific-user.md)
 
-[How to Use an App-V 4.6 Application From an App-V 5.0 Application](how-to-use-an-app-v-46-application-from-an-app-v-50-application.md)
 
 ## Got a suggestion for App-V?
 
