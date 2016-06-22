@@ -34,9 +34,9 @@ This content set contains:
 
 -   [Dynamic Access Control Overview](dynamic-access-control.md)
 
--   [Security Identifiers Technical Overview](security-identifiers.md)
+-   [Security identifiers](security-identifiers.md)
 
--   [Security Principals Technical Overview](security-principals.md)
+-   [Security Principals](security-principals.md)
 
     -   [Local Accounts](local-accounts.md)
 
@@ -125,10 +125,8 @@ For more information about auditing, see [Security Auditing Overview](security-a
 
 ## See also
 
+-   For more information about access control and authorization, see [Access Control and Authorization Overview](https://technet.microsoft.com/en-us/library/jj134043(v=ws.11).aspx).
 
--   For more information about authorization and access control, see [Windows Security Collection](http://go.microsoft.com/fwlink/?LinkId=4565).
-
--   For information about authorization strategy, see [Designing a Resource Authorization Strategy](http://go.microsoft.com/fwlink/?LinkId=4734).
 
  
 
