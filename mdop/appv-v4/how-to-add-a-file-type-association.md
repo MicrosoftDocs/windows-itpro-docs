@@ -1,9 +1,14 @@
 ---
 title: How to Add a File Type Association
 description: How to Add a File Type Association
-ms.assetid: cccfbd00-51ba-4a60-a598-ee97f5ea1215
 author: jamiejdt
+ms.assetid: cccfbd00-51ba-4a60-a598-ee97f5ea1215
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Add a File Type Association
 

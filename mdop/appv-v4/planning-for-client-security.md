@@ -1,9 +1,14 @@
 ---
 title: Planning for Client Security
 description: Planning for Client Security
-ms.assetid: 4840a60f-4c91-489c-ad0b-6671882abf9b
 author: jamiejdt
+ms.assetid: 4840a60f-4c91-489c-ad0b-6671882abf9b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for Client Security
 

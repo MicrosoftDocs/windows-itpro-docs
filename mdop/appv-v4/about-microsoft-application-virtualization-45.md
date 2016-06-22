@@ -1,9 +1,14 @@
 ---
 title: About Microsoft Application Virtualization 4.5
 description: About Microsoft Application Virtualization 4.5
-ms.assetid: 39f45a6f-ac55-4fd7-8a83-865e1a7034f8
 author: jamiejdt
+ms.assetid: 39f45a6f-ac55-4fd7-8a83-865e1a7034f8
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About Microsoft Application Virtualization 4.5
 

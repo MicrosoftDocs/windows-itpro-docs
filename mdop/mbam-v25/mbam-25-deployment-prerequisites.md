@@ -1,9 +1,14 @@
 ---
 title: MBAM 2.5 Deployment Prerequisites
 description: MBAM 2.5 Deployment Prerequisites
-ms.assetid: a7b02d01-d182-4031-b373-0271177af14e
 author: jamiejdt
+ms.assetid: a7b02d01-d182-4031-b373-0271177af14e
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # MBAM 2.5 Deployment Prerequisites
 

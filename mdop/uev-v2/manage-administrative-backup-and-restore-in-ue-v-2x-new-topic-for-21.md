@@ -1,9 +1,14 @@
 ---
 title: Manage Administrative Backup and Restore in UE-V 2.x
 description: Manage Administrative Backup and Restore in UE-V 2.x
-ms.assetid: 2eb5ae75-65e5-4afc-adb6-4e83cf4364ae
 author: jamiejdt
+ms.assetid: 2eb5ae75-65e5-4afc-adb6-4e83cf4364ae
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Manage Administrative Backup and Restore in UE-V 2.x
 

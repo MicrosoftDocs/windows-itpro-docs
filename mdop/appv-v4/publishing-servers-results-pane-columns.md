@@ -1,9 +1,14 @@
 ---
 title: Publishing Servers Results Pane Columns
 description: Publishing Servers Results Pane Columns
-ms.assetid: ad875715-50b3-4881-a6b3-586238d12527
 author: jamiejdt
+ms.assetid: ad875715-50b3-4881-a6b3-586238d12527
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Publishing Servers Results Pane Columns
 

@@ -1,9 +1,14 @@
 ---
 title: Creating a MED-V Image
 description: Creating a MED-V Image
-ms.assetid: 7cbbcd22-83f5-4b60-825f-781b4c6a2d36
 author: jamiejdt
+ms.assetid: 7cbbcd22-83f5-4b60-825f-781b4c6a2d36
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Creating a MED-V Image
 

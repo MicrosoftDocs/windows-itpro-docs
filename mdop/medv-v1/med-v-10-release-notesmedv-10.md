@@ -1,9 +1,14 @@
 ---
 title: MED-V 1.0 Release Notes
 description: MED-V 1.0 Release Notes
-ms.assetid: 006a3537-5c5b-43b5-8df8-4bf6ddd3cd2f
 author: jamiejdt
+ms.assetid: 006a3537-5c5b-43b5-8df8-4bf6ddd3cd2f
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V 1.0 Release Notes
 

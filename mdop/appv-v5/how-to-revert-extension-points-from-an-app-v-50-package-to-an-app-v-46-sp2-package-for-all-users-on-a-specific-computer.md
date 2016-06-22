@@ -1,9 +1,14 @@
 ---
 title: How to Revert Extension Points from an App-V 5.0 Package to an App-V 4.6 SP2 Package For All Users on a Specific Computer
 description: How to Revert Extension Points from an App-V 5.0 Package to an App-V 4.6 SP2 Package For All Users on a Specific Computer
-ms.assetid: 2a43ca1b-6847-4dd1-ade2-336ac4ac6af0
 author: jamiejdt
+ms.assetid: 2a43ca1b-6847-4dd1-ade2-336ac4ac6af0
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Revert Extension Points from an App-V 5.0 Package to an App-V 4.6 SP2 Package For All Users on a Specific Computer
 

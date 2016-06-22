@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting Advanced Group Policy Management
 description: Troubleshooting Advanced Group Policy Management
-ms.assetid: f58849cf-6c5b-44d8-b356-0ed7a5b24cee
 author: jamiejdt
+ms.assetid: f58849cf-6c5b-44d8-b356-0ed7a5b24cee
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Troubleshooting Advanced Group Policy Management
 

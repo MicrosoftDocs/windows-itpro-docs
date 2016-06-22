@@ -1,9 +1,14 @@
 ---
 title: How to Add a Package by Using the Command Line
 description: How to Add a Package by Using the Command Line
-ms.assetid: e75af49e-811a-407a-a7f0-6de8562b9188
 author: jamiejdt
+ms.assetid: e75af49e-811a-407a-a7f0-6de8562b9188
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Add a Package by Using the Command Line
 

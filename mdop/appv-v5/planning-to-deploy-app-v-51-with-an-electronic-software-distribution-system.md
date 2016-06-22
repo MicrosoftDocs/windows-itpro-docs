@@ -1,9 +1,14 @@
 ---
 title: Planning to Deploy App-V 5.1 with an Electronic Software Distribution System
 description: Planning to Deploy App-V 5.1 with an Electronic Software Distribution System
-ms.assetid: c26602c2-5e8d-44e6-90df-adacc593607e
 author: jamiejdt
+ms.assetid: c26602c2-5e8d-44e6-90df-adacc593607e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning to Deploy App-V 5.1 with an Electronic Software Distribution System
 

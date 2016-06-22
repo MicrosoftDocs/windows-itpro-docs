@@ -1,9 +1,14 @@
 ---
 title: How to Use a Command Line to Install the MBAM Server
 description: How to Use a Command Line to Install the MBAM Server
-ms.assetid: 6ffc6d41-a793-42c2-b997-95ba47550648
 author: jamiejdt
+ms.assetid: 6ffc6d41-a793-42c2-b997-95ba47550648
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Use a Command Line to Install the MBAM Server
 

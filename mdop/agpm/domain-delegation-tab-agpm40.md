@@ -1,9 +1,14 @@
 ---
 title: Domain Delegation Tab
 description: Domain Delegation Tab
-ms.assetid: 5be5841e-92fb-4af6-aa68-0ae50f8d5141
 author: jamiejdt
+ms.assetid: 5be5841e-92fb-4af6-aa68-0ae50f8d5141
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Domain Delegation Tab
 

@@ -1,9 +1,14 @@
 ---
 title: How to Publish a Package by Using the Management Console
 description: How to Publish a Package by Using the Management Console
-ms.assetid: e34d2bcf-15ac-4a75-9dc8-79380b36a25f
 author: jamiejdt
+ms.assetid: e34d2bcf-15ac-4a75-9dc8-79380b36a25f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Publish a Package by Using the Management Console
 

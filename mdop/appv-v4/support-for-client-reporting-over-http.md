@@ -1,9 +1,14 @@
 ---
 title: Support for Client Reporting over HTTP
 description: Support for Client Reporting over HTTP
-ms.assetid: 4a26ac80-1fb5-4c05-83de-4d06793f7bf2
 author: jamiejdt
+ms.assetid: 4a26ac80-1fb5-4c05-83de-4d06793f7bf2
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Support for Client Reporting over HTTP
 

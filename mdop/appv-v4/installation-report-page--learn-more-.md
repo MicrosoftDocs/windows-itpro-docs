@@ -1,9 +1,14 @@
 ---
 title: Installation Report Page (Learn More)
 description: Installation Report Page (Learn More)
-ms.assetid: 499cf4db-a39c-4dcf-b1cf-85fd7da11701
 author: jamiejdt
+ms.assetid: 499cf4db-a39c-4dcf-b1cf-85fd7da11701
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Installation Report Page (Learn More)
 

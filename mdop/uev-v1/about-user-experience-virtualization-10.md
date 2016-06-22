@@ -1,9 +1,14 @@
 ---
 title: About User Experience Virtualization 1.0
 description: About User Experience Virtualization 1.0
-ms.assetid: 3758b100-35a8-4e10-ac08-f583fb8ddbd9
 author: jamiejdt
+ms.assetid: 3758b100-35a8-4e10-ac08-f583fb8ddbd9
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About User Experience Virtualization 1.0
 

@@ -1,9 +1,14 @@
 ---
 title: Helping End Users Manage BitLocker
 description: Helping End Users Manage BitLocker
-ms.assetid: 47776fb3-2d94-4970-b687-c35ec3dd6c64
 author: jamiejdt
+ms.assetid: 47776fb3-2d94-4970-b687-c35ec3dd6c64
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Helping End Users Manage BitLocker
 

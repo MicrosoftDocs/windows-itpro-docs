@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting Certificate Permission Issues
 description: Troubleshooting Certificate Permission Issues
-ms.assetid: 06b8cbbc-93fd-44aa-af39-2d780792d3c3
 author: jamiejdt
+ms.assetid: 06b8cbbc-93fd-44aa-af39-2d780792d3c3
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Troubleshooting Certificate Permission Issues
 

@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization 5
 description: Application Virtualization 5
-ms.assetid: e82eb44b-9ccd-41aa-923b-71400230ad23
 author: jamiejdt
+ms.assetid: e82eb44b-9ccd-41aa-923b-71400230ad23
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Application Virtualization 5
 

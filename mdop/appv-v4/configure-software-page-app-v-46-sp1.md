@@ -1,9 +1,14 @@
 ---
 title: Configure Software Page
 description: Configure Software Page
-ms.assetid: 50596eba-ce20-4d36-8e57-bd4b6c6cf92e
 author: jamiejdt
+ms.assetid: 50596eba-ce20-4d36-8e57-bd4b6c6cf92e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Configure Software Page
 

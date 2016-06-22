@@ -1,9 +1,14 @@
 ---
 title: How to Determine Whether to Edit or Upgrade a Virtual Application Package
 description: How to Determine Whether to Edit or Upgrade a Virtual Application Package
-ms.assetid: 33dd5332-6802-46e0-9748-43fcc8f80aa3
 author: jamiejdt
+ms.assetid: 33dd5332-6802-46e0-9748-43fcc8f80aa3
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Determine Whether to Edit or Upgrade a Virtual Application Package
 

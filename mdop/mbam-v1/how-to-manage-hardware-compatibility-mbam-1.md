@@ -1,9 +1,14 @@
 ---
 title: How to Manage Hardware Compatibility
 description: How to Manage Hardware Compatibility
-ms.assetid: c74b96b9-8161-49bc-b5bb-4838734e7df5
 author: jamiejdt
+ms.assetid: c74b96b9-8161-49bc-b5bb-4838734e7df5
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Manage Hardware Compatibility
 

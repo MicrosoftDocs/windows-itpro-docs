@@ -1,9 +1,14 @@
 ---
 title: Release Notes for MBAM 2.0
 description: Release Notes for MBAM 2.0
-ms.assetid: c3f16cf3-94f2-47ac-b3a4-3dc505c6a8dd
 author: jamiejdt
+ms.assetid: c3f16cf3-94f2-47ac-b3a4-3dc505c6a8dd
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Release Notes for MBAM 2.0
 

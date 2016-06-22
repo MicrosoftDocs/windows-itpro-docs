@@ -1,9 +1,14 @@
 ---
 title: Reports Results Pane
 description: Reports Results Pane
-ms.assetid: 66beac62-fa55-4ab9-ac19-b9e1772e2d20
 author: jamiejdt
+ms.assetid: 66beac62-fa55-4ab9-ac19-b9e1772e2d20
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Reports Results Pane
 

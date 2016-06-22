@@ -1,9 +1,14 @@
 ---
 title: Roll Back to a Previous Version of a GPO
 description: Roll Back to a Previous Version of a GPO
-ms.assetid: 2a98ad8f-32cb-41eb-ab99-0318f2a55d81
 author: jamiejdt
+ms.assetid: 2a98ad8f-32cb-41eb-ab99-0318f2a55d81
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Roll Back to a Previous Version of a GPO
 

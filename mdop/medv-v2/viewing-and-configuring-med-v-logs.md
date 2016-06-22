@@ -1,9 +1,14 @@
 ---
 title: Viewing and Configuring MED-V Logs
 description: Viewing and Configuring MED-V Logs
-ms.assetid: a15537ce-981d-4f55-9c3c-e7fbf94b8fe5
 author: jamiejdt
+ms.assetid: a15537ce-981d-4f55-9c3c-e7fbf94b8fe5
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Viewing and Configuring MED-V Logs
 

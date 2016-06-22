@@ -1,9 +1,14 @@
 ---
 title: Virtual File System Tab
 description: Virtual File System Tab
-ms.assetid: 9d084e2a-720d-4a25-9cd5-d0d70868b413
 author: jamiejdt
+ms.assetid: 9d084e2a-720d-4a25-9cd5-d0d70868b413
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Virtual File System Tab
 

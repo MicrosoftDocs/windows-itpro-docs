@@ -1,9 +1,14 @@
 ---
 title: Operations for MBAM 1.0
 description: Operations for MBAM 1.0
-ms.assetid: 2c358fa1-4795-45ab-9316-02db4aaa6d5f
 author: jamiejdt
+ms.assetid: 2c358fa1-4795-45ab-9316-02db4aaa6d5f
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Operations for MBAM 1.0
 

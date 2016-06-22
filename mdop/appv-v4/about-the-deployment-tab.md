@@ -1,9 +1,14 @@
 ---
 title: About the Deployment Tab
 description: About the Deployment Tab
-ms.assetid: 12891798-baa4-45a5-b845-b9505ab95633
 author: jamiejdt
+ms.assetid: 12891798-baa4-45a5-b845-b9505ab95633
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About the Deployment Tab
 

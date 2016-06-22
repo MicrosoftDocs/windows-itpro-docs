@@ -204,6 +204,13 @@ Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 
 [Learn how to get the SID](http://go.microsoft.com/fwlink/p/?LinkId=615517).
 
+To remove assigned access, using PowerShell, run the following cmdlet.
+
+```
+Clear-AssignedAccess
+```
+
+
 ### Set up automatic logon
 
 When your kiosk device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to log on to the assigned access account automatically.
