@@ -43,7 +43,7 @@ Possible fixes for issues on the Surface Hub after you've completed the first-ru
 <p>The device account isn't configured to automatically accept/decline messages.</p>
 </td>
 <td>
-<p>Use PowerShell<code>cmdlet Set-CalendarProcessing $upn -AutomateProcessing AutoAccept</code>.</p>
+<p>Use PowerShell cmdlet <code>Set-CalendarProcessing $upn -AutomateProcessing AutoAccept</code>.</p>
 </td>
 </tr>
 <tr>
@@ -291,7 +291,7 @@ Possible fixes for issues with Surface Hub first-run program.
 </tr>
 <tr>
 <td rowspan="3">
-<div class="alert"><b>Note</b>  <p class="note">People land on the page titled "There's a problem with this account" regarding ActiveSync.</p>
+<div><p>People land on the page titled "There's a problem with this account" regarding ActiveSync.</p>
 </div>
 <div> </div>
 </td>
