@@ -21,7 +21,7 @@ A security identifier (SID) is used to uniquely identify a security principal or
 
 Each account or group, or process running in the security context of the account, has a unique SID that is issued by an authority, such as a Windows domain controller. It is stored in a security database. The system generates the SID that identifies a particular account or group at the time the account or group is created. When a SID has been used as the unique identifier for a user or group, it can never be used again to identify another user or group.
 
-Each time a user signs in, the system creates an access token for that user. The access token contains the userâ€™s SID, user rights, and the SIDs for any groups the user belongs to. This token provides the security context for whatever actions the user performs on that computer.
+Each time a user signs in, the system creates an access token for that user. The access token contains the user's SID, user rights, and the SIDs for any groups the user belongs to. This token provides the security context for whatever actions the user performs on that computer.
 
 In addition to the uniquely created, domain-specific SIDs that are assigned to specific users and groups, there are well-known SIDs that identify generic groups and generic users. For example, the Everyone and World SIDs identify a group that includes all users. Well-known SIDs have values that remain constant across all operating systems.
 
@@ -37,7 +37,7 @@ The operating system generates a SID that identifies a particular account or gro
 
 For every local account and group, the SID is unique for the computer where it was created. No two accounts or groups on the computer ever share the same SID. Likewise, for every domain account and group, the SID is unique within an enterprise. This means that the SID for an account or group that is created in one domain will never match the SID for an account or group created in any other domain in the enterprise.
 
-SIDs always remain unique. Security authorities never issue the same SID twice, and they never reuse SIDs for deleted accounts. For example, if a user with a user account in a Windows domain leaves her job, an administrator deletes her Active Directory account, including the SID that identifies the account. If she later returns to a different job at the same company, an administrator creates a new account, and the Windows Server operating system generates a new SID. The new SID does not match the old one; so none of the userâ€™s access from her old account is transferred to the new account. Her two accounts represent two completely different security principals.
+SIDs always remain unique. Security authorities never issue the same SID twice, and they never reuse SIDs for deleted accounts. For example, if a user with a user account in a Windows domain leaves her job, an administrator deletes her Active Directory account, including the SID that identifies the account. If she later returns to a different job at the same company, an administrator creates a new account, and the Windows Server operating system generates a new SID. The new SID does not match the old one; so none of the user's access from her old account is transferred to the new account. Her two accounts represent two completely different security principals.
 
 ## Security identifier architecture
 
@@ -125,7 +125,7 @@ When a new domain user or group account is created, Active Directory stores the 
 
 Active Directory uses GUIDs internally to identify objects. For example, the GUID is one of an object's properties that is published in the global catalog. Searching the global catalog for a User object GUID produces results if the user has an account somewhere in the enterprise. In fact, searching for any object by **ObjectGUID** might be the most reliable way of finding the object you want to locate. The values of other object properties can change, but the **ObjectGUID** property never changes. When an object is assigned a GUID, it keeps that value for life.
 
-If a user moves from one domain to another, the user gets a new SID. The SID for a group object does not change because groups stay in the domain where they were created. However, if people move, their accounts can move with them. If an employee moves from North America to Europe, but stays in the same company, an administrator for the enterprise can move the employeeâ€™s User object from, for example, Contoso\\NoAm to Contoso\\Europe. If the administrator does this, the User object for the account needs a new SID. The domain identifier portion of a SID that is issued in NoAm is unique to NoAm; so the SID for the user's account in Europe has a different domain identifier. The relative identifier portion of a SID is unique relative to the domain; so if the domain changes, the relative identifier also changes.
+If a user moves from one domain to another, the user gets a new SID. The SID for a group object does not change because groups stay in the domain where they were created. However, if people move, their accounts can move with them. If an employee moves from North America to Europe, but stays in the same company, an administrator for the enterprise can move the employee's User object from, for example, Contoso\\NoAm to Contoso\\Europe. If the administrator does this, the User object for the account needs a new SID. The domain identifier portion of a SID that is issued in NoAm is unique to NoAm; so the SID for the user's account in Europe has a different domain identifier. The relative identifier portion of a SID is unique relative to the domain; so if the domain changes, the relative identifier also changes.
 
 When a User object moves from one domain to another, a new SID must be generated for the user account and stored in the **ObjectSID** property. Before the new value is written to the property, the previous value is copied to another property of a User object, **SIDHistory**. This property can hold multiple values. Each time a User object moves to another domain, a new SID is generated and stored in the **ObjectSID** property, and another value is added to the list of old SIDs in **SIDHistory**. When a user signs in and is successfully authenticated, the domain authentication service queries Active Directory for all the SIDs that are associated with the user, including the user's current SID, the user's old SIDs, and the SIDs for the user's groups. All these SIDs are returned to the authentication client, and they are included in the user's access token. When the user tries to gain access to a resource, any one of the SIDs in the access token (including one of the SIDs in **SIDHistory**), can allow or deny the user access.
 
@@ -205,7 +205,7 @@ The SECURITY\_NT\_AUTHORITY (S-1â€“5) predefined identifier authority produ
 | S-1-5-*domain*-502| krbtgt| A user account that is used by the Key Distribution Center (KDC) service. The account exists only on domain controllers.| 
 | S-1-5-*domain*-512| Domain Admins| A global group with members that are authorized to administer the domain. By default, the Domain Admins group is a member of the Administrators group on all computers that have joined the domain, including domain controllers.<br/>Domain Admins is the default owner of any object that is created in the domain's Active Directory by any member of the group. If members of the group create other objects, such as files, the default owner is the Administrators group.| 
 | S-1-5-*domain*-513| Domain Users| A global group that includes all users in a domain. When you create a new User object in Active Directory, the user is automatically added to this group.| 
-| S-1-5-*domain*-514| Domain Guests| A global group, which by default, has only one member: the domainâ€™s built-in Guest account.| 
+| S-1-5-*domain*-514| Domain Guests| A global group, which by default, has only one member: the domain's built-in Guest account.| 
 | S-1-5-*domain*-515 | Domain Computers| A global group that includes all computers that have joined the domain, excluding domain controllers.| 
 | S-1-5-*domain*-516| Domain Controllers| A global group that includes all domain controllers in the domain. New domain controllers are added to this group automatically.| 
 | S-1-5-*domain*-517 | Cert Publishers| A global group that includes all computers that host an enterprise certification authority.<br/>Cert Publishers are authorized to publish certificates for User objects in Active Directory.| 
@@ -265,7 +265,7 @@ The following table provides examples of domain-relative RIDs that are used to f
 | DOMAIN_ALIAS_RID_REPLICATOR | A local group that is responsible for copying security databases from the primary domain controller to the backup domain controllers. These accounts are used only by the system.| 
 | DOMAIN_ALIAS_RID_RAS_SERVERS | A local group that represents remote access and servers running Internet Authentication Service (IAS). This group permits access to various attributes of User objects.| 
 
-## Changes in security identifierâ€™s functionality
+## Changes in security identifier's functionality
 
 The following table describes changes in SID implementation in the Windows operating systems that are designated in the list.
 
@@ -276,4 +276,4 @@ The following table describes changes in SID implementation in the Windows opera
 
 ## See also
 
-- [Access Control Overview](https://technet.microsoft.com/en-us/library/dn408189.aspx)
+- [Access Control Overview](access-control.md)

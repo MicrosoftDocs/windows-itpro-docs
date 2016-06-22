@@ -26,7 +26,7 @@ This topic contains information about the following types of service accounts:
 
 -   [Group managed service accounts](#bkmk-groupmanagedserviceaccounts)
 
--   [Virtual service accounts](#bkmk-virtualserviceaccounts)
+-   [Virtual accounts](#bkmk-virtualserviceaccounts)
 
 ### <a href="" id="bkmk-standalonemanagedserviceaccounts"></a>Standalone managed service accounts
 

@@ -573,14 +573,10 @@ If the administrators in your environment can sign in locally to managed servers
 
 -   **Ideal**. Restrict workstations from having any network connectivity, except for the domain controllers and servers that the administrator accounts are used to manage. Alternately, use AppLocker application control policies to restrict all applications from running, except for the operating system and approved administrative tools and applications. For more information about AppLocker, see [AppLocker Overview](http://technet.microsoft.com/library/hh831440.aspx).
 
--   
-
 The following procedure describes how to block Internet access by creating a Group Policy Object (GPO) that configures an invalid proxy address on administrative workstations. These instructions apply only to computers running Internet Explorer and other Windows components that use these proxy settings.
 
 **Note**  
 In this procedure, the workstations are dedicated to domain administrators. By simply modifying the administrator accounts to grant permission to administrators to sign in locally, you can create additional OUs to manage administrators that have fewer administrative rights to use the instructions described in the following procedure.
-
- 
 
 **To install administrative workstations in a domain and block Internet and email access (minimum)**
 
@@ -588,12 +584,9 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 2.  Create computer accounts for the new workstations.
 
-    **Note**  
-    You might have to delegate permissions to join the domain by using [KB 932455](http://support.microsoft.com/kb/932455) if the account that joins the workstations to the domain does not already have permissions to join computers to the domain.
+    > **Note**&nbsp;&nbsp;You might have to delegate permissions to join the domain by using [KB 932455](http://support.microsoft.com/kb/932455) if the account that joins the workstations to the domain does not already have permissions to join computers to the domain.
 
-     
-
-    ![ad local accounts](images/adlocalaccounts-proc1-sample1.gif)
+    ![Active Directory local accounts](images/adlocalaccounts-proc1-sample1.gif)
 
 3.  Close Active Directory Users and Computers.
 
@@ -601,13 +594,13 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 5.  Right-click the new OU, and &gt; **Create a GPO in this domain, and Link it here**.
 
-    ![ad local accounts](images/adlocalaccounts-proc1-sample2.png)
+    ![Active Directory local accounts](images/adlocalaccounts-proc1-sample2.png)
 
 6.  Name the GPO, and &gt; **OK**.
 
 7.  Expand the GPO, right-click the new GPO, and &gt; **Edit**.
 
-    ![ad local accounts](images/adlocalaccounts-proc1-sample3.png)
+    ![Active Directory local accounts](images/adlocalaccounts-proc1-sample3.png)
 
 8.  Configure which members of accounts can log on locally to these administrative workstations as follows:
 
@@ -626,7 +619,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     5.  Click **Add User or Group**, type **Administrators**, and &gt; **OK**.
 
-        ![ad local accounts](images/adlocalaccounts-proc1-sample4.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc1-sample4.png)
 
 9.  Configure the proxy configuration:
 
@@ -634,7 +627,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     2.  Double-click **Proxy Settings**, select the **Enable proxy settings** check box, type **127.0.0.1** (the network Loopback IP address) as the proxy address, and &gt; **OK**.
 
-        ![ad local accounts](images/adlocalaccounts-proc1-sample5.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc1-sample5.png)
 
 10. Configure the loopback processing mode to enable the user Group Policy proxy setting to apply to all users on the computer as follows:
 
@@ -691,22 +684,17 @@ In this procedure, the workstations are dedicated to domain administrators. By s
         </tbody>
         </table>
 
-         
-
-        **Note**  
-        This step assumes that Windows Server Update Services (WSUS) is installed and configured in the environment. You can skip this step if you use another tool to deploy software updates. Also, if the public Microsoft Windows Update service only is used on the Internet, then these administrative workstations no longer receive updates.
-
-         
+        > **Note**&nbsp;&nbsp;This step assumes that Windows Server Update Services (WSUS) is installed and configured in the environment. You can skip this step if you use another tool to deploy software updates. Also, if the public Microsoft Windows Update service only is used on the Internet, then these administrative workstations no longer receive updates.
 
 12. Configure the inbound firewall to block all connections as follows:
 
     1.  Right-click **Windows Firewall with Advanced Security LDAP://path**, and &gt; **Properties**.
 
-        ![ad local accounts](images/adlocalaccounts-proc1-sample6.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc1-sample6.png)
 
     2.  On each profile, ensure that the firewall is enabled and that inbound connections are set to **Block all connections**.
 
-        ![ad local accounts](images/adlocalaccounts-proc1-sample7.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc1-sample7.png)
 
     3.  Click **OK** to complete the configuration.
 
@@ -744,11 +732,11 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
 3.  Right-click **Group Policy Objects**, and &gt; **New**.
 
-    ![ad local accounts](images/adlocalaccounts-proc2-sample1.png)
+    ![Active Directory local accounts](images/adlocalaccounts-proc2-sample1.png)
 
 4.  In the **New GPO** dialog box, name the GPO that restricts administrators from signing in to workstations, and &gt; **OK**.
 
-    ![ad local accounts](images/adlocalaccounts-proc2-sample2.png)
+    ![Active Directory local accounts](images/adlocalaccounts-proc2-sample2.png)
 
 5.  Right-click **New GPO**, and &gt; **Edit**.
 
@@ -762,7 +750,7 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     3.  Click **Add User or Group**, click **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![ad local accounts](images/adlocalaccounts-proc2-sample3.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample3.png)
 
         **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -784,7 +772,7 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     3.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![ad local accounts](images/adlocalaccounts-proc2-sample4.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample4.png)
 
         **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -797,7 +785,7 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     6.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![ad local accounts](images/adlocalaccounts-proc2-sample5.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample5.png)
 
         **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -810,11 +798,11 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     1.  Right-click the workstation OU, and then &gt; **Link an Existing GPO**.
 
-        ![ad local accounts](images/adlocalaccounts-proc2-sample6.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample6.png)
 
     2.  Select the GPO that you just created, and &gt; **OK**.
 
-        ![ad local accounts](images/adlocalaccounts-proc2-sample7.png)
+        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample7.png)
 
 10. Test the functionality of enterprise applications on workstations in the first OU and resolve any issues caused by the new policy.
 
@@ -837,7 +825,7 @@ It is a best practice to configure the user objects for all sensitive accounts i
 
 As with any configuration change, test this enabled setting fully to ensure that it performs correctly before you implement it.
 
-![ad local accounts](images/adlocalaccounts-proc3-sample1.png)
+![Active Directory local accounts](images/adlocalaccounts-proc3-sample1.png)
 
 ## <a href="" id="sec-secure-manage-dcs"></a>Secure and manage domain controllers
 
