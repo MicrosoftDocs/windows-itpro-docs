@@ -1,9 +1,14 @@
 ---
 title: Monitoring MED-V Workspace Deployments
 description: Monitoring MED-V Workspace Deployments
-ms.assetid: 5de0cb06-b8a9-48a5-b8b3-836954295765
 author: jamiejdt
+ms.assetid: 5de0cb06-b8a9-48a5-b8b3-836954295765
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Monitoring MED-V Workspace Deployments
 

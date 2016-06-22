@@ -1,9 +1,14 @@
 ---
 title: Applications Licenses Results Pane
 description: Applications Licenses Results Pane
-ms.assetid: 8b519715-b2fe-451e-ad9b-e9b73f454961
 author: jamiejdt
+ms.assetid: 8b519715-b2fe-451e-ad9b-e9b73f454961
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Applications Licenses Results Pane
 

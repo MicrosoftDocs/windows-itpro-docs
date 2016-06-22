@@ -1,9 +1,14 @@
 ---
 title: Disconnected Operation Mode
 description: Disconnected Operation Mode
-ms.assetid: 3f9849ea-ba53-4c68-85d3-87a4218f59c6
 author: jamiejdt
+ms.assetid: 3f9849ea-ba53-4c68-85d3-87a4218f59c6
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Disconnected Operation Mode
 

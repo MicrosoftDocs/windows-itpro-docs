@@ -1,9 +1,14 @@
 ---
 title: Virtualizing Microsoft Office 2010 for Application Virtualization (App-V) 5.0
 description: Virtualizing Microsoft Office 2010 for Application Virtualization (App-V) 5.0
-ms.assetid: bd16c20f-cc47-4172-ae16-47b23c9b7f5c
 author: jamiejdt
+ms.assetid: bd16c20f-cc47-4172-ae16-47b23c9b7f5c
+ms.pagetype: mdop
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Virtualizing Microsoft Office 2010 for Application Virtualization (App-V) 5.0
 

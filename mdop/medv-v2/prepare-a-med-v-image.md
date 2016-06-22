@@ -1,9 +1,14 @@
 ---
 title: Prepare a MED-V Image
 description: Prepare a MED-V Image
-ms.assetid: 1bc757e5-8aef-4163-8542-1bdccc028961
 author: jamiejdt
+ms.assetid: 1bc757e5-8aef-4163-8542-1bdccc028961
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Prepare a MED-V Image
 

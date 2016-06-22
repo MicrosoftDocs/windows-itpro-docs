@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting MBAM 2.0
 description: Troubleshooting MBAM 2.0
-ms.assetid: 43933ec7-b5b8-49c5-813f-4c06aa7314ed
 author: jamiejdt
+ms.assetid: 43933ec7-b5b8-49c5-813f-4c06aa7314ed
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Troubleshooting MBAM 2.0
 

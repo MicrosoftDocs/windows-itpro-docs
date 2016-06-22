@@ -1,9 +1,14 @@
 ---
 title: What's New in App-V 5.0
 description: What's New in App-V 5.0
-ms.assetid: 79ff6e02-e926-4803-87d8-248a6b28099d
 author: jamiejdt
+ms.assetid: 79ff6e02-e926-4803-87d8-248a6b28099d
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # What's New in App-V 5.0
 

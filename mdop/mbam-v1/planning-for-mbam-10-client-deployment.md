@@ -1,9 +1,14 @@
 ---
 title: Planning for MBAM 1.0 Client Deployment
 description: Planning for MBAM 1.0 Client Deployment
-ms.assetid: 3af2e7f3-134b-4ab9-9847-b07474ca6ac3
 author: jamiejdt
+ms.assetid: 3af2e7f3-134b-4ab9-9847-b07474ca6ac3
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for MBAM 1.0 Client Deployment
 

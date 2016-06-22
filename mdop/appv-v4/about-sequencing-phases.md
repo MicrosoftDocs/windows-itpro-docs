@@ -1,9 +1,14 @@
 ---
 title: About Sequencing Phases
 description: About Sequencing Phases
-ms.assetid: c1cb7b6c-204c-48f2-848c-4bd5a3d5ecb6
 author: jamiejdt
+ms.assetid: c1cb7b6c-204c-48f2-848c-4bd5a3d5ecb6
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About Sequencing Phases
 

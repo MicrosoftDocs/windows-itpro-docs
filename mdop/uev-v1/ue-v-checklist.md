@@ -1,9 +1,14 @@
 ---
 title: UE-V Checklist
 description: UE-V Checklist
-ms.assetid: 0e4b9bd5-4e60-4673-b698-90612008fc2b
 author: jamiejdt
+ms.assetid: 0e4b9bd5-4e60-4673-b698-90612008fc2b
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # UE-V Checklist
 

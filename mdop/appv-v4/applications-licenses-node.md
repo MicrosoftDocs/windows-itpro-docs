@@ -1,9 +1,14 @@
 ---
 title: Applications Licenses Node
 description: Applications Licenses Node
-ms.assetid: 2b8752ff-aa56-483e-b844-966941af2d94
 author: jamiejdt
+ms.assetid: 2b8752ff-aa56-483e-b844-966941af2d94
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Applications Licenses Node
 

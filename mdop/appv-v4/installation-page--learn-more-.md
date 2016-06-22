@@ -1,9 +1,14 @@
 ---
 title: Installation Page (Learn More)
 description: Installation Page (Learn More)
-ms.assetid: a53b8330-dfc3-4540-b147-7c10529f403a
 author: jamiejdt
+ms.assetid: a53b8330-dfc3-4540-b147-7c10529f403a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Installation Page (Learn More)
 

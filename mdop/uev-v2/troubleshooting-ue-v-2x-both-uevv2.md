@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting UE-V 2.x
 description: Troubleshooting UE-V 2.x
-ms.assetid: a02847f8-6986-4612-8307-ba1b72d7919b
 author: jamiejdt
+ms.assetid: a02847f8-6986-4612-8307-ba1b72d7919b
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Troubleshooting UE-V 2.x
 

@@ -1,9 +1,14 @@
 ---
 title: REFRESH SERVER
 description: REFRESH SERVER
-ms.assetid: 232df842-a160-46cd-b60b-f464cd9a0086
 author: jamiejdt
+ms.assetid: 232df842-a160-46cd-b60b-f464cd9a0086
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # REFRESH SERVER
 

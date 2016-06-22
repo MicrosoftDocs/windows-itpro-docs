@@ -28,7 +28,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 - Cortana is turned off.
 
 
-**Take a Test** is included in version 1607 of Windows 10 Pro, Pro Education, Education and Enterprise. 
+
 
 ## How you use Take a Test
 

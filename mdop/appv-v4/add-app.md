@@ -1,9 +1,14 @@
 ---
 title: ADD APP
 description: ADD APP
-ms.assetid: 329fd0c8-a795-49be-b0fd-1367c5b4a34b
 author: jamiejdt
+ms.assetid: 329fd0c8-a795-49be-b0fd-1367c5b4a34b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # ADD APP
 

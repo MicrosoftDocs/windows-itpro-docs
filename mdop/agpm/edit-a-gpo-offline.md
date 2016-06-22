@@ -1,9 +1,14 @@
 ---
 title: Edit a GPO Offline
 description: Edit a GPO Offline
-ms.assetid: 4a148952-9fe9-4ec4-8df1-b25e37c97a54
 author: jamiejdt
+ms.assetid: 4a148952-9fe9-4ec4-8df1-b25e37c97a54
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Edit a GPO Offline
 

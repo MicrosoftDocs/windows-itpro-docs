@@ -1,9 +1,14 @@
 ---
 title: Deploying a MED-V Workspace Using an Enterprise Software Distribution System
 description: Deploying a MED-V Workspace Using an Enterprise Software Distribution System
-ms.assetid: 867faed6-74ce-4573-84be-8bf26e66c08c
 author: jamiejdt
+ms.assetid: 867faed6-74ce-4573-84be-8bf26e66c08c
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Deploying a MED-V Workspace Using an Enterprise Software Distribution System
 

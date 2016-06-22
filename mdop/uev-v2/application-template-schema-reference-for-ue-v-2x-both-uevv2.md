@@ -1,9 +1,14 @@
 ---
 title: Application Template Schema Reference for UE-V 2.x
 description: Application Template Schema Reference for UE-V 2.x
-ms.assetid: be8735a5-6a3e-4b1f-ba14-2a3bc3e5a8b6
 author: jamiejdt
+ms.assetid: be8735a5-6a3e-4b1f-ba14-2a3bc3e5a8b6
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Application Template Schema Reference for UE-V 2.x
 

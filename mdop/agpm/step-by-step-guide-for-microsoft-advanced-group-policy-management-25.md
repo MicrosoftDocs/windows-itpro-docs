@@ -1,9 +1,14 @@
 ---
 title: Step-by-Step Guide for Microsoft Advanced Group Policy Management 2.5
 description: Step-by-Step Guide for Microsoft Advanced Group Policy Management 2.5
-ms.assetid: 454298c9-0fab-497a-9808-c0246a4c8db5
 author: jamiejdt
+ms.assetid: 454298c9-0fab-497a-9808-c0246a4c8db5
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Step-by-Step Guide for Microsoft Advanced Group Policy Management 2.5
 

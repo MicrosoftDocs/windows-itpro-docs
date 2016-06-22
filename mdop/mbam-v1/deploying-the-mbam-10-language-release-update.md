@@ -1,9 +1,14 @@
 ---
 title: Deploying the MBAM 1.0 Language Release Update
 description: Deploying the MBAM 1.0 Language Release Update
-ms.assetid: 9dbd85c3-e470-4752-a90f-25754dd46dab
 author: jamiejdt
+ms.assetid: 9dbd85c3-e470-4752-a90f-25754dd46dab
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Deploying the MBAM 1.0 Language Release Update
 

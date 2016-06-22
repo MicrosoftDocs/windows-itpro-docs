@@ -1,9 +1,14 @@
 ---
 title: How to Set Up Publishing Refresh on Login
 description: How to Set Up Publishing Refresh on Login
-ms.assetid: 196448db-7645-4fd5-a854-ef6405b15db4
 author: jamiejdt
+ms.assetid: 196448db-7645-4fd5-a854-ef6405b15db4
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Set Up Publishing Refresh on Login
 

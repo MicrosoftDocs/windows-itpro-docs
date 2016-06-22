@@ -1,9 +1,14 @@
 ---
 title: LOAD APP
 description: LOAD APP
-ms.assetid: 7b727d0c-5423-419d-92ef-7ebbc6343e79
 author: jamiejdt
+ms.assetid: 7b727d0c-5423-419d-92ef-7ebbc6343e79
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # LOAD APP
 

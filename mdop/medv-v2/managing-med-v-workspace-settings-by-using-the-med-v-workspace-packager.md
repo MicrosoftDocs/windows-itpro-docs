@@ -1,9 +1,14 @@
 ---
 title: Managing MED-V Workspace Settings by Using the MED-V Workspace Packager
 description: Managing MED-V Workspace Settings by Using the MED-V Workspace Packager
-ms.assetid: e4b2c516-b9f8-44f9-9eae-caac6c2af3e7
 author: jamiejdt
+ms.assetid: e4b2c516-b9f8-44f9-9eae-caac6c2af3e7
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Managing MED-V Workspace Settings by Using the MED-V Workspace Packager
 

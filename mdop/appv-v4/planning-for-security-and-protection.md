@@ -1,9 +1,14 @@
 ---
 title: Planning for Security and Protection
 description: Planning for Security and Protection
-ms.assetid: d0e2ef81-c197-4020-ad85-8d66fe5c178f
 author: jamiejdt
+ms.assetid: d0e2ef81-c197-4020-ad85-8d66fe5c178f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for Security and Protection
 

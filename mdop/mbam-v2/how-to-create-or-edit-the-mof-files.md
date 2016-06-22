@@ -1,9 +1,14 @@
 ---
 title: How to Create or Edit the mof Files
 description: How to Create or Edit the mof Files
-ms.assetid: 4d19d707-b90f-4057-a6e9-e4221a607190
 author: jamiejdt
+ms.assetid: 4d19d707-b90f-4057-a6e9-e4221a607190
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Create or Edit the mof Files
 

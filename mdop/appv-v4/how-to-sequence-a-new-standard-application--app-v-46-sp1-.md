@@ -1,9 +1,14 @@
 ---
 title: How to Sequence a New Standard Application (App-V 4.6 SP1)
 description: How to Sequence a New Standard Application (App-V 4.6 SP1)
-ms.assetid: c4a2eb33-def8-4535-b93a-3d2de21ce29f
 author: jamiejdt
+ms.assetid: c4a2eb33-def8-4535-b93a-3d2de21ce29f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Sequence a New Standard Application (App-V 4.6 SP1)
 

@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting MED-V by Using the Administration Toolkit
 description: Troubleshooting MED-V by Using the Administration Toolkit
-ms.assetid: 6c096a1c-b9ce-4ec7-8dfd-5286e3b9a617
 author: jamiejdt
+ms.assetid: 6c096a1c-b9ce-4ec7-8dfd-5286e3b9a617
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Troubleshooting MED-V by Using the Administration Toolkit
 

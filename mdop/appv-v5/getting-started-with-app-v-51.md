@@ -1,9 +1,14 @@
 ---
 title: Getting Started with App-V 5.1
 description: Getting Started with App-V 5.1
-ms.assetid: 49a20e1f-0566-4e53-a417-1521393fc974
 author: jamiejdt
+ms.assetid: 49a20e1f-0566-4e53-a417-1521393fc974
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Getting Started with App-V 5.1
 

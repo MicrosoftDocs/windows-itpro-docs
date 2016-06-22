@@ -1,9 +1,14 @@
 ---
 title: Operations Troubleshooting
 description: Operations Troubleshooting
-ms.assetid: 948d7869-accd-44da-974f-93409234dee7
 author: jamiejdt
+ms.assetid: 948d7869-accd-44da-974f-93409234dee7
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Operations Troubleshooting
 

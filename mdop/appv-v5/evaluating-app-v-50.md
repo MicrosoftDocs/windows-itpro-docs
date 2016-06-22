@@ -1,9 +1,14 @@
 ---
 title: Evaluating App-V 5.0
 description: Evaluating App-V 5.0
-ms.assetid: 0b4a6b12-559d-429f-9659-dc8f4883feab
 author: jamiejdt
+ms.assetid: 0b4a6b12-559d-429f-9659-dc8f4883feab
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Evaluating App-V 5.0
 

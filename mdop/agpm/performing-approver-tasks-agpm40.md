@@ -1,9 +1,14 @@
 ---
 title: Performing Approver Tasks
 description: Performing Approver Tasks
-ms.assetid: e0a4b7fe-ce69-4755-9104-c7f523ea6b62
 author: jamiejdt
+ms.assetid: e0a4b7fe-ce69-4755-9104-c7f523ea6b62
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Performing Approver Tasks
 

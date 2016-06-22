@@ -1,9 +1,14 @@
 ---
 title: Technical Reference
 description: Technical Reference
-ms.assetid: 387462c7-bb46-40b8-b4cf-ee9453972582
 author: jamiejdt
+ms.assetid: 387462c7-bb46-40b8-b4cf-ee9453972582
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Technical Reference
 

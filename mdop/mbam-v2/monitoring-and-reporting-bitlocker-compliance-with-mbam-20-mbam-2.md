@@ -1,9 +1,14 @@
 ---
 title: Monitoring and Reporting BitLocker Compliance with MBAM 2.0
 description: Monitoring and Reporting BitLocker Compliance with MBAM 2.0
-ms.assetid: 0b9ba701-0aad-4e16-9b32-73d358047ccc
 author: jamiejdt
+ms.assetid: 0b9ba701-0aad-4e16-9b32-73d358047ccc
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Monitoring and Reporting BitLocker Compliance with MBAM 2.0
 

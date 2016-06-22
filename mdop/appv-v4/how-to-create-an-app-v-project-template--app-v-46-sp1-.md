@@ -1,9 +1,14 @@
 ---
 title: How to Create an App-V Project Template (App-V 4.6 SP1)
 description: How to Create an App-V Project Template (App-V 4.6 SP1)
-ms.assetid: 7e87fba2-b72a-4bc9-92b8-220e25aae99a
 author: jamiejdt
+ms.assetid: 7e87fba2-b72a-4bc9-92b8-220e25aae99a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Create an App-V Project Template (App-V 4.6 SP1)
 

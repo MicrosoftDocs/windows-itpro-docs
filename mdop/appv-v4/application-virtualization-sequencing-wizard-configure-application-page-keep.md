@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencing Wizard Configure Application Page
 description: Application Virtualization Sequencing Wizard Configure Application Page
-ms.assetid: 2927debd-de4b-41d2-9e1c-e8927231f4cc
 author: jamiejdt
+ms.assetid: 2927debd-de4b-41d2-9e1c-e8927231f4cc
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencing Wizard Configure Application Page
 

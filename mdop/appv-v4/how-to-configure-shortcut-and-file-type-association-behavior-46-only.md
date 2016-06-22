@@ -1,9 +1,14 @@
 ---
 title: How to Configure Shortcut and File Type Association Behavior
 description: How to Configure Shortcut and File Type Association Behavior
-ms.assetid: d6fd1728-4de6-4066-b36b-d4837d593d40
 author: jamiejdt
+ms.assetid: d6fd1728-4de6-4066-b36b-d4837d593d40
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure Shortcut and File Type Association Behavior
 

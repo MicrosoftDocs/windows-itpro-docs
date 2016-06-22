@@ -1,9 +1,14 @@
 ---
 title: Checklist Create, Edit, and Deploy a GPO
 description: Checklist Create, Edit, and Deploy a GPO
-ms.assetid: a7a17706-304a-4455-9ada-52508ec620f1
 author: jamiejdt
+ms.assetid: a7a17706-304a-4455-9ada-52508ec620f1
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Checklist: Create, Edit, and Deploy a GPO
 

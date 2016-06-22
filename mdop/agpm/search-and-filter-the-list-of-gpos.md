@@ -1,9 +1,14 @@
 ---
 title: Search and Filter the List of GPOs
 description: Search and Filter the List of GPOs
-ms.assetid: 1bc58a38-033c-4aed-9eb4-c239827f5501
 author: jamiejdt
+ms.assetid: 1bc58a38-033c-4aed-9eb4-c239827f5501
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Search and Filter the List of GPOs
 

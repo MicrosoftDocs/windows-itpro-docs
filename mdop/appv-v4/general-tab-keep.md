@@ -1,9 +1,14 @@
 ---
 title: General Tab
 description: General Tab
-ms.assetid: aeefae39-60cd-4ad4-9575-c07d7e2b1e59
 author: jamiejdt
+ms.assetid: aeefae39-60cd-4ad4-9575-c07d7e2b1e59
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # General Tab
 

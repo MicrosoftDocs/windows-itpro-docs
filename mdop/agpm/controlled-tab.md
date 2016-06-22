@@ -1,9 +1,14 @@
 ---
 title: Controlled Tab
 description: Controlled Tab
-ms.assetid: 8995a9e1-ace4-40b7-a47b-e1e9924541ba
 author: jamiejdt
+ms.assetid: 8995a9e1-ace4-40b7-a47b-e1e9924541ba
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Controlled Tab
 

@@ -1,9 +1,14 @@
 ---
 title: Common Secondary Tab Features
 description: Common Secondary Tab Features
-ms.assetid: 44a15c28-944c-49c1-8534-115ce1c362ed
 author: jamiejdt
+ms.assetid: 44a15c28-944c-49c1-8534-115ce1c362ed
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Common Secondary Tab Features
 

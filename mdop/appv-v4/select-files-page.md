@@ -1,9 +1,14 @@
 ---
 title: Select Files Page
 description: Select Files Page
-ms.assetid: 6d1524ca-6306-4a28-b65f-3ded9d487e75
 author: jamiejdt
+ms.assetid: 6d1524ca-6306-4a28-b65f-3ded9d487e75
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Select Files Page
 

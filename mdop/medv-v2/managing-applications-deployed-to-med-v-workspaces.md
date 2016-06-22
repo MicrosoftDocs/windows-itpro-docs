@@ -1,9 +1,14 @@
 ---
 title: Managing Applications Deployed to MED-V Workspaces
 description: Managing Applications Deployed to MED-V Workspaces
-ms.assetid: 9a9bcdf5-0aa7-42a3-b6f0-6065adb01bcb
 author: jamiejdt
+ms.assetid: 9a9bcdf5-0aa7-42a3-b6f0-6065adb01bcb
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Managing Applications Deployed to MED-V Workspaces
 

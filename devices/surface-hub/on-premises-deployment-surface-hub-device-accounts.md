@@ -25,7 +25,7 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
 
     ```PowerShell
     Set-ExecutionPolicy Unrestricted
-    $org=&#39;contoso.microsoft.com&#39;
+    $org='contoso.microsoft.com'
     $cred=Get-Credential $admin@$org
     $sessExchange = New-PSSession -ConfigurationName microsoft.exchange -Credential $cred -AllowRedirection -Authentication Kerberos -ConnectionUri "http://$strExchangeServer/powershell" -WarningAction SilentlyContinue
     $sessLync = New-PSSession -Credential $cred -ConnectionURI "https://$strLyncFQDN/OcsPowershell" -AllowRedirection -WarningAction SilentlyContinue
@@ -38,7 +38,7 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
     If you're changing an existing resource mailbox:
 
     ```PowerShell
-    Set-Mailbox -Identity &#39;HUB01&#39; -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+    Set-Mailbox -Identity 'HUB01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
     ```
 
     If you’re creating a new resource mailbox:

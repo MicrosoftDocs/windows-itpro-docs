@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Client
 description: Application Virtualization Client
-ms.assetid: d9e1939b-eb9c-49a0-855d-f4c323b84c2f
 author: jamiejdt
+ms.assetid: d9e1939b-eb9c-49a0-855d-f4c323b84c2f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Client
 

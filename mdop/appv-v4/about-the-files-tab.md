@@ -1,9 +1,14 @@
 ---
 title: About the Files Tab
 description: About the Files Tab
-ms.assetid: 3c20e720-4b0f-465b-b7c4-3013dae1c815
 author: jamiejdt
+ms.assetid: 3c20e720-4b0f-465b-b7c4-3013dae1c815
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About the Files Tab
 
