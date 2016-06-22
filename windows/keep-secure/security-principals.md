@@ -9,6 +9,9 @@ ms.pagetype: security
 
 # Security Principals
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016
 
 This reference topic for the IT professional describes security principals in regards to Windows accounts and security groups, in addition to security technologies that are related to security principals.
 
@@ -80,7 +83,7 @@ Permissions are different from user rights in that permissions are attached to o
 
 On computers, user rights enable administrators to control who has the authority to perform operations that affect an entire computer, rather than a particular object. Administrators assign user rights to individual users or groups as part of the security settings for the computer. Although user rights can be managed centrally through Group Policy, they are applied locally. Users can (and usually do) have different user rights on different computers.
 
-For information about which user rights are available and how they can be implemented, see [User Rights Assignment](user_rights_assignment_glbl).
+For information about which user rights are available and how they can be implemented, see [User Rights Assignment](user-rights-assignment.md).
 
 ### <a href="" id="bkmk-authn"></a> Security context in authentication
 

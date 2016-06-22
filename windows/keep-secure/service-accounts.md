@@ -9,6 +9,9 @@ ms.pagetype: security
 
 # Service Accounts
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016
 
 This topic for the IT professional explains group and standalone managed service accounts, and the computer-specific virtual computer account, and it points to resources about these service accounts.
 
@@ -29,7 +32,7 @@ This topic contains information about the following types of service accounts:
 
 A managed service account is designed to isolate domain accounts in crucial applications, such as Internet Information Services (IIS), and eliminate the need for an administrator to manually administer the service principal name (SPN) and credentials for the accounts.
 
-To use managed service accounts, the server on which the application or service is installed must be running at least Windows Server 2008 R2. One managed service account can be used for services on a single computer. Managed service accounts cannot be shared between multiple computers, and they cannot be used in server clusters where a service is replicated on multiple cluster nodes. For this scenario, you must use a group managed service account. For more information, see [Group Managed Service Accounts Overview](group_managed_service_accounts_overview).
+To use managed service accounts, the server on which the application or service is installed must be running at least Windows Server 2008 R2. One managed service account can be used for services on a single computer. Managed service accounts cannot be shared between multiple computers, and they cannot be used in server clusters where a service is replicated on multiple cluster nodes. For this scenario, you must use a group managed service account. For more information, see [Group Managed Service Accounts Overview](https://technet.microsoft.com/library/hh831782(v=ws.11).aspx).
 
 In addition to the enhanced security that is provided by having individual accounts for critical services, there are four important administrative benefits associated with managed service accounts:
 
@@ -113,10 +116,10 @@ The following table provides links to additional resources that are related to s
 <tbody>
 <tr class="odd">
 <td><p><strong>Product evaluation</strong></p></td>
-<td><p>[What's New for Managed Service Accounts](whats_new_for_managed_service_accounts_vil)</p>
+<td><p>[What's New for Managed Service Accounts](https://technet.microsoft.com/library/hh831451(v=ws.11).aspx)</p>
 <p>[Managed Service Accounts Documentation for Windows 7 and Windows Server 2008 R2](http://technet.microsoft.com/library/ff641731.aspx)</p>
 <p>[Service Accounts Step-by-Step Guide](http://technet.microsoft.com/library/dd548356.aspx)</p>
-<p>[Getting Started with Group Managed Service Accounts](getting_started_with_group_managed_service_accounts)</p></td>
+<p>[Getting Started with Group Managed Service Accounts](https://technet.microsoft.com/library/jj128431(v=ws.11).aspx)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Deployment</strong></p></td>
@@ -137,7 +140,7 @@ The following table provides links to additional resources that are related to s
 <tr class="even">
 <td><p><strong>Related technologies</strong></p></td>
 <td><p>[Security Principals Technical Overview](security-principals.md)</p>
-<p>[Active Directory Domain Services Overview](39dd9b55-2512-49d8-8927-a283697f0547)</p></td>
+<p>[What's new in Active Directory Domain Services](https://technet.microsoft.com/library/mt163897.aspx)</p></td>
 </tr>
 </tbody>
 </table>

@@ -9,6 +9,10 @@ ms.pagetype: security
 
 # Security identifiers
 
+**Applies to**
+-   Windows 10
+-   Windows Server 2016
+
 This topic for the IT professional describes security identifiers and how they work in regards to accounts and groups in the Windows operating system.
 
 ## What are security identifiers?

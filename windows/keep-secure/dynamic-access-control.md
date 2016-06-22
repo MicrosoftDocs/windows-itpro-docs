@@ -9,6 +9,8 @@ ms.pagetype: security
 
 # Dynamic Access Control Overview
 
+**Applies to**
+-   Windows Server 2016
 
 This overview topic for the IT professional describes Dynamic Access Control and its associated elements, which were introduced in Windows Server 2012 and Windows 8.
 
@@ -134,8 +136,7 @@ A file server running Windows Server 2012 or Windows Server 2012 R2 must have a 
 
 ## Additional resource
 
-
-For information about implementing solutions based on this technology, see [Dynamic Access Control: Scenario Overview](dynamic_access_control_scenario_overview_pscen_overview).
+[Access control overview](access-control.md)
 
  
 
