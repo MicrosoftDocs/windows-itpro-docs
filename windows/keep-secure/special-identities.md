@@ -9,6 +9,8 @@ ms.pagetype: security
 
 # Special Identities
 
+**Applies to**
+-   Windows Server 2016
 
 This reference topic for the IT professional describes the special identity groups (which are sometimes referred to as security groups) that are used in Windows access control.
 
@@ -143,9 +145,9 @@ Any user who accesses the system through a sign-in process has the Authenticated
 </tr>
 <tr class="even">
 <td><p>Default User Rights</p></td>
-<td><p>[Access this computer from the network](access_this_computer_from_the_network__technical_reference_security_considerations): SeNetworkLogonRight</p>
-<p>[Add workstations to domain](add_workstations_to_domain__technical_reference_security_considerations): SeMachineAccountPrivilege</p>
-<p>[Bypass traverse checking](bypass_traverse_checking__technical_reference_management_security_considerations): SeChangeNotifyPrivilege</p></td>
+<td><p>[Access this computer from the network](access-this-computer-from-the-network.md): SeNetworkLogonRight</p>
+<p>[Add workstations to domain](add-workstations-to-domain.md): SeMachineAccountPrivilege</p>
+<p>[Bypass traverse checking](bypass-traverse-checking.md): SeChangeNotifyPrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -373,8 +375,8 @@ This group includes all domain controllers in an Active Directory forest. Domain
 </tr>
 <tr class="even">
 <td><p>Default User Rights Assignment</p></td>
-<td><p>[Access this computer from the network](access_this_computer_from_the_network__technical_reference_security_considerations): SeNetworkLogonRight</p>
-<p>[Allow log on locally](allow_log_on_locally__technical_reference_security_considerations): SeInteractiveLogonRight</p></td>
+<td><p>[Access this computer from the network](access-this-computer-from-the-network.md): SeNetworkLogonRight</p>
+<p>[Allow log on locally](allow-log-on-locally.md): SeInteractiveLogonRight</p></td>
 </tr>
 </tbody>
 </table>
@@ -416,9 +418,9 @@ Membership is controlled by the operating system.
 </tr>
 <tr class="even">
 <td><p>Default User Rights</p></td>
-<td><p>[Access this computer from the network](access_this_computer_from_the_network__technical_reference_security_considerations): SeNetworkLogonRight</p>
-<p>[Act as part of the operating system](act_as_part_of_the_operating_system__technical_reference_security_considerations): SeTcbPrivilege</p>
-<p>[Bypass traverse checking](bypass_traverse_checking__technical_reference_management_security_considerations): SeChangeNotifyPrivilege</p></td>
+<td><p>[Access this computer from the network](access-this-computer-from-the-network.md): SeNetworkLogonRight</p>
+<p>[Act as part of the operating system](act-as-part-of-the-operating-system.md): SeTcbPrivilege</p>
+<p>[Bypass traverse checking](bypass-traverse-checking.md): SeChangeNotifyPrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -494,14 +496,14 @@ The Local Service account is similar to an Authenticated User account. The Local
 </tr>
 <tr class="even">
 <td><p>Default user rights</p></td>
-<td><p>[Adjust memory quotas for a process](adjust_memory_quotas_for_a_process__technical_reference_security_considerations): SeIncreaseQuotaPrivilege</p>
-<p>[Bypass traverse checking](bypass_traverse_checking__technical_reference_management_security_considerations): SeChangeNotifyPrivilege</p>
-<p>[Change the system time](change_the_system_time__technical_reference_security_considerations): SeSystemtimePrivilege</p>
-<p>[Change the time zone](change_the_time_zone__technical_reference_security_considerations): SeTimeZonePrivilege</p>
-<p>[Create global objects](create_global_objects__technical_reference_security_considerations): SeCreateGlobalPrivilege</p>
-<p>[Generate security audits](generate_security_audits__technical_reference_security_considerations): SeAuditPrivilege</p>
-<p>[Impersonate a client after authentication](impersonate_a_client_after_authentication__technical_reference_security_considerations): SeImpersonatePrivilege</p>
-<p>[Replace a process level token](replace_a_process_level_token__technical_reference_security_considerations): SeAssignPrimaryTokenPrivilege</p></td>
+<td><p>[Adjust memory quotas for a process](adjust-memory-quotas-for-a-process.md): SeIncreaseQuotaPrivilege</p>
+<p>[Bypass traverse checking](bypass-traverse-checking.md): SeChangeNotifyPrivilege</p>
+<p>[Change the system time](change-the-system-time.md): SeSystemtimePrivilege</p>
+<p>[Change the time zone](change-the-time-zone.md): SeTimeZonePrivilege</p>
+<p>[Create global objects](create-global-objects.md): SeCreateGlobalPrivilege</p>
+<p>[Generate security audits](generate-security-audits.md): SeAuditPrivilege</p>
+<p>[Impersonate a client after authentication](impersonate-a-client-after-authentication.md): SeImpersonatePrivilege</p>
+<p>[Replace a process level token](replace-a-process-level-token.md): SeAssignPrimaryTokenPrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -615,13 +617,13 @@ The Network Service account is similar to an Authenticated User account. The Net
 </tr>
 <tr class="even">
 <td><p>Default User Rights</p></td>
-<td><p>[Adjust memory quotas for a process](adjust_memory_quotas_for_a_process__technical_reference_security_considerations): SeIncreaseQuotaPrivilege</p>
-<p>[Bypass traverse checking](bypass_traverse_checking__technical_reference_management_security_considerations): SeChangeNotifyPrivilege</p>
-<p>[Create global objects](create_global_objects__technical_reference_security_considerations): SeCreateGlobalPrivilege</p>
-<p>[Generate security audits](generate_security_audits__technical_reference_security_considerations): SeAuditPrivilege</p>
-<p>[Impersonate a client after authentication](impersonate_a_client_after_authentication__technical_reference_security_considerations): SeImpersonatePrivilege</p>
-<p>[Restore files and directories](restore_files_and_directories__technical_reference_security_considerations): SeAssignPrimaryTokenPrivilege</p>
-<p>[Replace a process level token](replace_a_process_level_token__technical_reference_security_considerations): SeAssignPrimaryTokenPrivilege</p></td>
+<td><p>[Adjust memory quotas for a process](adjust-memory-quotas-for-a-process.md): SeIncreaseQuotaPrivilege</p>
+<p>[Bypass traverse checking](bypass-traverse-checking.md): SeChangeNotifyPrivilege</p>
+<p>[Create global objects](create-global-objects.md): SeCreateGlobalPrivilege</p>
+<p>[Generate security audits](generate-security-audits.md): SeAuditPrivilege</p>
+<p>[Impersonate a client after authentication](impersonate-a-client-after-authentication.md): SeImpersonatePrivilege</p>
+<p>[Restore files and directories](restore-files-and-directories.md): SeRestorePrivilege</p>
+<p>[Replace a process level token](replace-a-process-level-token.md): SeAssignPrimaryTokenPrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -883,8 +885,8 @@ Any service that accesses the system has the Service identity. This identity gro
 </tr>
 <tr class="even">
 <td><p>Default User Rights</p></td>
-<td><p>[Create global objects](create_global_objects__technical_reference_security_considerations): SeCreateGlobalPrivilege</p>
-<p>[Impersonate a client after authentication](impersonate_a_client_after_authentication__technical_reference_security_considerations): SeImpersonatePrivilege</p></td>
+<td><p>[Create global objects](create-global-objects.md): SeCreateGlobalPrivilege</p>
+<p>[Impersonate a client after authentication](impersonate-a-client-after-authentication.md): SeImpersonatePrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -994,8 +996,8 @@ Any user accessing the system through Terminal Services has the Terminal Server 
 </tr>
 <tr class="even">
 <td><p>Default User Rights</p></td>
-<td><p>[Bypass traverse checking](bypass_traverse_checking__technical_reference_management_security_considerations): SeChangeNotifyPrivilege</p>
-<p>[Increase a process working set](increase_a_process_working_set__technical_reference_security_considerations): SeIncreaseWorkingSetPrivilege</p></td>
+<td><p>[Bypass traverse checking](bypass-traverse-checking.md): SeChangeNotifyPrivilege</p>
+<p>[Increase a process working set](increase-a-process-working-set.md): SeIncreaseWorkingSetPrivilege</p></td>
 </tr>
 </tbody>
 </table>

@@ -9,6 +9,8 @@ ms.pagetype: security
 
 # Microsoft Accounts
 
+**Applies to**
+-   Windows 10
 
 This topic for the IT professional explains how a Microsoft account works to enhance security and privacy for users, and how you can manage this consumer account type in your organization.
 
@@ -116,7 +118,7 @@ Depending on your IT and business models, introducing Microsoft accounts into yo
 
 ### <a href="" id="bkmk-restrictuse"></a>Restrict the use of the Microsoft account
 
-If employees are allowed to join the domain with their personal devices, they might expect to connect to enterprise resources by using their Microsoft accounts. If you want to prevent any use of Microsoft accounts within your enterprise, you can configure the local security policy setting [Accounts: Block Microsoft accounts](accounts_block_microsoft_accounts_tech_ref_mgmt_security____w8). However, this setting can prevent the users from signing in to their Windows devices with their Microsoft accounts (if they had set them up to do so) when they are joined to the domain.
+If employees are allowed to join the domain with their personal devices, they might expect to connect to enterprise resources by using their Microsoft accounts. If you want to prevent any use of Microsoft accounts within your enterprise, you can configure the local security policy setting [Accounts: Block Microsoft accounts](accounts-block-microsoft-accounts.md). However, this setting can prevent the users from signing in to their Windows devices with their Microsoft accounts (if they had set them up to do so) when they are joined to the domain.
 
 The default for this setting is **Disabled**, which enables users to use their Microsoft accounts on devices that are joined to your domain. Other options in the setting can:
 
@@ -149,12 +151,12 @@ Only the owner of the Microsoft account can change the password. Passwords can b
 
 ### <a href="" id="bkmk-restrictappinstallationandusage"></a>Restrict app installation and usage
 
-Within your organization, you can set application control policies to regulate app installation and usage for Microsoft accounts. For more information, see [AppLocker Overview](applocker_overview_server) and [Packaged Apps and Packaged App Installer Rules in AppLocker](packaged_apps_and_packaged_app_installer_rules_in_applocker).
+Within your organization, you can set application control policies to regulate app installation and usage for Microsoft accounts. For more information, see [AppLocker](applocker-overview.md) and [Packaged Apps and Packaged App Installer Rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md).
 
 ## See also
 
 
-[Managing Privacy: Using a Microsoft Account to Logon and Resulting Internet Communication](managing_privacy_using_a_microsoft_account_to_logon_and_resulting_internet_communication)
+[Managing Privacy: Using a Microsoft Account to Logon and Resulting Internet Communication](https://technet.microsoft.com/library/jj884082(v=ws.11).aspx)
 
 
  

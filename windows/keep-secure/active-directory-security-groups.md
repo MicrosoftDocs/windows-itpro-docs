@@ -9,6 +9,8 @@ ms.pagetype: security
 
 # Active Directory Security Groups
 
+**Applies to**
+-   Windows Server 2016
 
 This reference topic for the IT professional describes the default Active Directory security groups.
 
@@ -48,7 +50,7 @@ Security groups can provide an efficient way to assign access to resources on yo
 
     For example, a user who is added to the Backup Operators group in Active Directory has the ability to back up and restore files and directories that are located on each domain controller in the domain. This is possible because, by default, the user rights **Backup files and directories** and **Restore files and directories** are automatically assigned to the Backup Operators group. Therefore, members of this group inherit the user rights that are assigned to that group.
 
-    You can use Group Policy to assign user rights to security groups to delegate specific tasks. For more information about using Group Policy, see [User Rights Assignment](user_rights_assignment_glbl).
+    You can use Group Policy to assign user rights to security groups to delegate specific tasks. For more information about using Group Policy, see [User Rights Assignment](user-rights-assignment.md).
 
 -   Assign permissions to security groups for resources.
 
@@ -627,7 +629,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="odd">
 <td><p>Default User Rights</p></td>
-<td><p>[Allow log on locally](allow_log_on_locally__technical_reference_security_considerations): SeInteractiveLogonRight</p></td>
+<td><p>[Allow log on locally](allow-log-on-locally.md): SeInteractiveLogonRight</p></td>
 </tr>
 </tbody>
 </table>
@@ -649,9 +651,9 @@ Membership can be modified by members of the following groups: the default servi
 
 This security group includes the following changes since Windows Server 2008:
 
--   Default user rights changes: **Allow log on through Terminal Services** existed in Windows Server 2008, and it was replaced by [Allow log on through Remote Desktop Services](allow_log_on_through_remote_desktop_services__technical_reference_security_considerations).
+-   Default user rights changes: **Allow log on through Terminal Services** existed in Windows Server 2008, and it was replaced by [Allow log on through Remote Desktop Services](allow-log-on-through-remote-desktop-services.md).
 
--   [Remove computer from docking station](remove_computer_from_docking_station__technical_reference_security_considerations) was removed in Windows Server 2012 R2.
+-   [Remove computer from docking station](remove-computer-from-docking-station.md) was removed in Windows Server 2012 R2.
 
 <table>
 <colgroup>
@@ -699,33 +701,33 @@ This security group includes the following changes since Windows Server 2008:
 </tr>
 <tr class="odd">
 <td><p>Default User Rights</p></td>
-<td><p>[Adjust memory quotas for a process](adjust_memory_quotas_for_a_process__technical_reference_security_considerations): SeIncreaseQuotaPrivilege</p>
-<p>[Access this computer from the network](access_this_computer_from_the_network__technical_reference_security_considerations): SeNetworkLogonRight</p>
-<p>[Allow log on locally](allow_log_on_locally__technical_reference_security_considerations): SeInteractiveLogonRight</p>
-<p>[Allow log on through Remote Desktop Services](allow_log_on_through_remote_desktop_services__technical_reference_security_considerations): SeRemoteInteractiveLogonRight</p>
-<p>[Back up files and directories](back_up_files_and_directories__technical_reference_security_considerations): SeBackupPrivilege</p>
-<p>[Bypass traverse checking](bypass_traverse_checking__technical_reference_management_security_considerations): SeChangeNotifyPrivilege</p>
-<p>[Change the system time](change_the_system_time__technical_reference_security_considerations): SeSystemTimePrivilege</p>
-<p>[Change the time zone](change_the_time_zone__technical_reference_security_considerations): SeTimeZonePrivilege</p>
-<p>[Create a pagefile](create_a_pagefile__technical_reference_security_considerations): SeCreatePagefilePrivilege</p>
-<p>[Create global objects](create_global_objects__technical_reference_security_considerations): SeCreateGlobalPrivilege</p>
-<p>[Create symbolic links](create_symbolic_links__technical_reference_security_considerations): SeCreateSymbolicLinkPrivilege</p>
-<p>[Debug programs](debug_programs__technical_reference_security_considerations): SeDebugPrivilege</p>
-<p>[Enable computer and user accounts to be trusted for delegation](enable_computer_and_user_accounts_to_be_trusted_for_delegation__technical_reference_security_considerations): SeEnableDelegationPrivilege</p>
-<p>[Force shutdown from a remote system](force_shutdown_from_a_remote_system__technical_reference_security_considerations): SeRemoteShutdownPrivilege</p>
-<p>[Impersonate a client after authentication](impersonate_a_client_after_authentication__technical_reference_security_considerations): SeImpersonatePrivilege</p>
-<p>[Increase scheduling priority](increase_scheduling_priority__technical_reference_security_considerations): SeIncreaseBasePriorityPrivilege</p>
-<p>[Load and unload device drivers](load_and_unload_device_drivers__technical_reference_security_considerations): SeLoadDriverPrivilege</p>
-<p>[Log on as a batch job](log_on_as_a_batch_job__technical_reference_security_considerations): SeBatchLogonRight</p>
-<p>[Manage auditing and security log](manage_auditing_and_security_log__technical_reference_security_considerations): SeSecurityPrivilege</p>
-<p>[Modify firmware environment values](modify_firmware_environment_values__technical_reference_security_considerations): SeSystemEnvironmentPrivilege</p>
-<p>[Perform volume maintenance tasks](perform_volume_maintenance_tasks__technical_reference_security_considerations): SeManageVolumePrivilege</p>
-<p>[Profile system performance](profile_system_performance__technical_reference_security_considerations): SeSystemProfilePrivilege</p>
-<p>[Profile single process](profile_single_process__technical_reference_security_considerations): SeProfileSingleProcessPrivilege</p>
-<p>[Remove computer from docking station](remove_computer_from_docking_station__technical_reference_security_considerations): SeUndockPrivilege</p>
-<p>[Restore files and directories](restore_files_and_directories__technical_reference_security_considerations): SeRestorePrivilege</p>
-<p>[Shut down the system](shut_down_the_system__technical_reference_security_considerations): SeShutdownPrivilege</p>
-<p>[Take ownership of files or other objects](take_ownership_of_files_or_other_objects__technical_reference_security_considerations): SeTakeOwnershipPrivilege</p></td>
+<td><p>[Adjust memory quotas for a process](adjust-memory-quotas-for-a-process.md): SeIncreaseQuotaPrivilege</p>
+<p>[Access this computer from the network](access-this-computer-from-the-network.md): SeNetworkLogonRight</p>
+<p>[Allow log on locally](allow-log-on-locally.md): SeInteractiveLogonRight</p>
+<p>[Allow log on through Remote Desktop Services](allow-log-on-through-remote-desktop-services.md): SeRemoteInteractiveLogonRight</p>
+<p>[Back up files and directories](back-up-files-and-directories.md): SeBackupPrivilege</p>
+<p>[Bypass traverse checking](bypass-traverse-checking.md): SeChangeNotifyPrivilege</p>
+<p>[Change the system time](change-the-system-time.md): SeSystemTimePrivilege</p>
+<p>[Change the time zone](change-the-time-zone.md): SeTimeZonePrivilege</p>
+<p>[Create a pagefile](create-a-pagefile.md): SeCreatePagefilePrivilege</p>
+<p>[Create global objects](create-global-objects.md): SeCreateGlobalPrivilege</p>
+<p>[Create symbolic links](create-symbolic-links.md): SeCreateSymbolicLinkPrivilege</p>
+<p>[Debug programs](debug-programs.md): SeDebugPrivilege</p>
+<p>[Enable computer and user accounts to be trusted for delegation](enable-computer-and-user-accounts-to-be-trusted-for-delegation.md): SeEnableDelegationPrivilege</p>
+<p>[Force shutdown from a remote system](force-shutdown-from-a-remote-system.md): SeRemoteShutdownPrivilege</p>
+<p>[Impersonate a client after authentication](impersonate-a-client-after-authentication.md): SeImpersonatePrivilege</p>
+<p>[Increase scheduling priority](increase-scheduling-priority.md): SeIncreaseBasePriorityPrivilege</p>
+<p>[Load and unload device drivers](load-and-unload-device-drivers.md): SeLoadDriverPrivilege</p>
+<p>[Log on as a batch job](log-on-as-a-batch-job.md): SeBatchLogonRight</p>
+<p>[Manage auditing and security log](manage-auditing-and-security-log.md): SeSecurityPrivilege</p>
+<p>[Modify firmware environment values](modify-firmware-environment-values.md): SeSystemEnvironmentPrivilege</p>
+<p>[Perform volume maintenance tasks](perform-volume-maintenance-tasks.md): SeManageVolumePrivilege</p>
+<p>[Profile system performance](profile-system-performance.md): SeSystemProfilePrivilege</p>
+<p>[Profile single process](profile-single-process.md): SeProfileSingleProcessPrivilege</p>
+<p>[Remove computer from docking station](remove-computer-from-docking-station.md): SeUndockPrivilege</p>
+<p>[Restore files and directories](restore-files-and-directories.md): SeRestorePrivilege</p>
+<p>[Shut down the system](shut-down-the-system.md): SeShutdownPrivilege</p>
+<p>[Take ownership of files or other objects](take-ownership-of-files-or-other-objects.md): SeTakeOwnershipPrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -847,11 +849,11 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="odd">
 <td><p>Default User Rights</p></td>
-<td><p>[Allow log on locally](allow_log_on_locally__technical_reference_security_considerations): SeInteractiveLogonRight</p>
-<p>[Back up files and directories](back_up_files_and_directories__technical_reference_security_considerations): SeBackupPrivilege</p>
-<p>[Log on as a batch job](log_on_as_a_batch_job__technical_reference_security_considerations): SeBatchLogonRight</p>
-<p>[Restore files and directories](restore_files_and_directories__technical_reference_security_considerations): SeRestorePrivilege</p>
-<p>[Shut down the system](shut_down_the_system__technical_reference_security_considerations): SeShutdownPrivilege</p></td>
+<td><p>[Allow log on locally](allow-log-on-locally.md): SeInteractiveLogonRight</p>
+<p>[Back up files and directories](back-up-files-and-directories.md): SeBackupPrivilege</p>
+<p>[Log on as a batch job](log-on-as-a-batch-job.md): SeBatchLogonRight</p>
+<p>[Restore files and directories](restore-files-and-directories.md): SeRestorePrivilege</p>
+<p>[Shut down the system](shut-down-the-system.md): SeShutdownPrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -2289,7 +2291,7 @@ Members of the Performance Log Users group can manage performance counters, logs
 
 -   Can use all the features that are available to the Performance Monitor Users group.
 
--   Can create and modify Data Collector Sets after the group is assigned the [Log on as a batch job](log_on_as_a_batch_job__technical_reference_security_considerations) user right.
+-   Can create and modify Data Collector Sets after the group is assigned the [Log on as a batch job](log-on-as-a-batch-job.md) user right.
 
     **Warning**  
     If you are a member of the Performance Log Users group, you must configure Data Collector Sets that you create to run under your credentials.
@@ -2298,7 +2300,7 @@ Members of the Performance Log Users group can manage performance counters, logs
 
 -   Cannot use the Windows Kernel Trace event provider in Data Collector Sets.
 
-For members of the Performance Log Users group to initiate data logging or modify Data Collector Sets, the group must first be assigned the [Log on as a batch job](log_on_as_a_batch_job__technical_reference_security_considerations) user right. To assign this user right, use the Local Security Policy snap-in in Microsoft Management Console.
+For members of the Performance Log Users group to initiate data logging or modify Data Collector Sets, the group must first be assigned the [Log on as a batch job](log-on-as-a-batch-job.md) user right. To assign this user right, use the Local Security Policy snap-in in Microsoft Management Console.
 
 **Note**  
 This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
@@ -2360,7 +2362,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="odd">
 <td><p>Default User Rights</p></td>
-<td><p>[Log on as a batch job](log_on_as_a_batch_job__technical_reference_security_considerations): SeBatchLogonRight</p></td>
+<td><p>[Log on as a batch job](log-on-as-a-batch-job.md): SeBatchLogonRight</p></td>
 </tr>
 </tbody>
 </table>
@@ -2507,8 +2509,8 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="odd">
 <td><p>Default User Rights</p></td>
-<td><p>[Access this computer from the network](access_this_computer_from_the_network__technical_reference_security_considerations): SeNetworkLogonRight</p>
-<p>[Bypass traverse checking](bypass_traverse_checking__technical_reference_management_security_considerations): SeChangeNotifyPrivilege</p></td>
+<td><p>[Access this computer from the network](access-this-computer-from-the-network.md): SeNetworkLogonRight</p>
+<p>[Bypass traverse checking](bypass-traverse-checking.md): SeChangeNotifyPrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -2571,9 +2573,9 @@ This security group has not changed since Windows Server 2008. However, in Windo
 </tr>
 <tr class="odd">
 <td><p>Default User Rights</p></td>
-<td><p>[Allow log on locally](allow_log_on_locally__technical_reference_security_considerations): SeInteractiveLogonRight</p>
-<p>[Load and unload device drivers](load_and_unload_device_drivers__technical_reference_security_considerations): SeLoadDriverPrivilege</p>
-<p>[Shut down the system](shut_down_the_system__technical_reference_security_considerations): SeShutdownPrivilege</p></td>
+<td><p>[Allow log on locally](allow-log-on-locally.md): SeInteractiveLogonRight</p>
+<p>[Load and unload device drivers](load-and-unload-device-drivers.md): SeLoadDriverPrivilege</p>
+<p>[Shut down the system](shut-down-the-system.md): SeShutdownPrivilege</p></td>
 </tr>
 </tbody>
 </table>
@@ -3285,13 +3287,13 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="odd">
 <td><p>Default User Rights</p></td>
-<td><p>[Allow log on locally](allow_log_on_locally__technical_reference_security_considerations): SeInteractiveLogonRight</p>
-<p>[Back up files and directories](back_up_files_and_directories__technical_reference_security_considerations): SeBackupPrivilege</p>
-<p>[Change the system time](change_the_system_time__technical_reference_security_considerations): SeSystemTimePrivilege</p>
-<p>[Change the time zone](change_the_time_zone__technical_reference_security_considerations): SeTimeZonePrivilege</p>
-<p>[Force shutdown from a remote system](force_shutdown_from_a_remote_system__technical_reference_security_considerations): SeRemoteShutdownPrivilege</p>
-<p>[Restore files and directories](restore_files_and_directories__technical_reference_security_considerations): Restore files and directories SeRestorePrivilege</p>
-<p>[Shut down the system](shut_down_the_system__technical_reference_security_considerations): SeShutdownPrivilege</p></td>
+<td><p>[Allow log on locally](allow-log-on-locally.md): SeInteractiveLogonRight</p>
+<p>[Back up files and directories](back-up-files-and-directories.md): SeBackupPrivilege</p>
+<p>[Change the system time](change-the-system-time.md): SeSystemTimePrivilege</p>
+<p>[Change the time zone](change-the-time-zone.md): SeTimeZonePrivilege</p>
+<p>[Force shutdown from a remote system](force-shutdown-from-a-remote-system.md): SeRemoteShutdownPrivilege</p>
+<p>[Restore files and directories](restore-files-and-directories.md): Restore files and directories SeRestorePrivilege</p>
+<p>[Shut down the system](shut-down-the-system.md): SeShutdownPrivilege</p></td>
 </tr>
 </tbody>
 </table>

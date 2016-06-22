@@ -9,6 +9,8 @@ ms.pagetype: security
 
 # Active Directory Accounts
 
+**Applies to**
+-   Windows Server 2016
 
 Windows Server operating systems are installed with default local accounts. In addition, you can create user accounts to meet the requirements of your organization. This reference topic for the IT professional describes the Windows Server default local accounts that are stored locally on the domain controller and are used in Active Directory.
 
@@ -174,7 +176,7 @@ Because the Guest account can provide anonymous access, it is a security risk. I
 
 When the Guest account is required, an Administrator on the domain controller is required to enable the Guest account. The Guest account can be enabled without requiring a password, or it can be enabled with a strong password. The Administrator also grants restricted rights and permissions for the Guest account. To help prevent unauthorized access:
 
--   Do not grant the Guest account the [Shut down the system](shut_down_the_system__technical_reference_security_considerations) user right. When a computer is shutting down or starting up, it is possible that a Guest user or anyone with local access, such as a malicious user, could gain unauthorized access to the computer.
+-   Do not grant the Guest account the [Shut down the system](shut-down-the-system.md) user right. When a computer is shutting down or starting up, it is possible that a Guest user or anyone with local access, such as a malicious user, could gain unauthorized access to the computer.
 
 -   Do not provide the Guest account with the ability to view the event logs. After the Guest account is enabled, it is a best practice to monitor this account frequently to ensure that other users cannot use services and other resources, such as resources that were unintentionally left available by a previous user.
 
@@ -343,21 +345,12 @@ For all account types (users, computers, and services)
 
 -   NTLM authenticated connections are not affected
 
-**Author's Note:  **Need technical input for Note
-
-**Note**  
-Group Managed Service Accounts and Managed Service Accounts…
-
- 
-
 Because it is impossible to predict the specific errors that will occur for any given user in a production operating environment, you must assume all computers and users will be affected.
 
 **Important**  
 Rebooting a computer is the only reliable way to recover functionality as this will cause both the computer account and user accounts to log back in again. Logging in again will request new TGTs that are valid with the new KRBTGT, correcting any KRBTGT related operational issues on that computer.
 
- 
-
-For information how to resolve issues and potential issues from a compromised KRBTGT account, see [Reset the KRBTGT account password](5f4bb6b7-7b20-4d16-b74d-9a59c1ba022b).
+<!-- For information how to resolve issues and potential issues from a compromised KRBTGT account, see "Reset the KRBTGT account password." -->
 
 ### Read-only domain controllers and the KRBTGT account
 
