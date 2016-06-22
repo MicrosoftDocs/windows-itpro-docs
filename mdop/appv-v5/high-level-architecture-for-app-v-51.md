@@ -1,9 +1,14 @@
 ---
 title: High Level Architecture for App-V 5.1
 description: High Level Architecture for App-V 5.1
-ms.assetid: 90406361-55b8-40b7-85c0-449436789d4c
 author: jamiejdt
+ms.assetid: 90406361-55b8-40b7-85c0-449436789d4c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # High Level Architecture for App-V 5.1
 

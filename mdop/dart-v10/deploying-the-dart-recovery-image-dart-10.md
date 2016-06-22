@@ -1,9 +1,14 @@
 ---
 title: Deploying the DaRT Recovery Image
 description: Deploying the DaRT Recovery Image
-ms.assetid: 2b859da6-e31a-4240-8868-93a754328cf2
 author: jamiejdt
+ms.assetid: 2b859da6-e31a-4240-8868-93a754328cf2
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Deploying the DaRT Recovery Image
 

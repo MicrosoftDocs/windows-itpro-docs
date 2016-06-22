@@ -1,9 +1,14 @@
 ---
 title: OSD Tab
 description: OSD Tab
-ms.assetid: e66f1384-1753-4216-b9ee-77e99af93c74
 author: jamiejdt
+ms.assetid: e66f1384-1753-4216-b9ee-77e99af93c74
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # OSD Tab
 

@@ -1,9 +1,14 @@
 ---
 title: Evaluating MBAM 1.0
 description: Evaluating MBAM 1.0
-ms.assetid: a1e2b674-eda9-4e1c-9b4c-e748470c71f2
 author: jamiejdt
+ms.assetid: a1e2b674-eda9-4e1c-9b4c-e748470c71f2
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Evaluating MBAM 1.0
 

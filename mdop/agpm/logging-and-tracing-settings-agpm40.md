@@ -1,9 +1,14 @@
 ---
 title: Logging and Tracing Settings
 description: Logging and Tracing Settings
-ms.assetid: 66d03306-80d8-4132-bf71-2827157b1fc9
 author: jamiejdt
+ms.assetid: 66d03306-80d8-4132-bf71-2827157b1fc9
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Logging and Tracing Settings
 

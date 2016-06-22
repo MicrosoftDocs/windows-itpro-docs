@@ -1,9 +1,14 @@
 ---
 title: How to Determine BitLocker Encryption State of Lost Computers
 description: How to Determine BitLocker Encryption State of Lost Computers
-ms.assetid: dbd23b64-dff3-4913-9acd-affe67b9462e
 author: jamiejdt
+ms.assetid: dbd23b64-dff3-4913-9acd-affe67b9462e
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Determine BitLocker Encryption State of Lost Computers
 

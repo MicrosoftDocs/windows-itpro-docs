@@ -1,9 +1,14 @@
 ---
 title: How to Configure a Deployment Package
 description: How to Configure a Deployment Package
-ms.assetid: 748272a1-6af2-476e-a3f1-87435b8e94b1
 author: jamiejdt
+ms.assetid: 748272a1-6af2-476e-a3f1-87435b8e94b1
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Configure a Deployment Package
 

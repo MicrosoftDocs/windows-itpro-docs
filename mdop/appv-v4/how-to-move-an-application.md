@@ -1,9 +1,14 @@
 ---
 title: How to Move an Application
 description: How to Move an Application
-ms.assetid: 3ebbf30c-b435-4a69-a0ba-2313aaf0017c
 author: jamiejdt
+ms.assetid: 3ebbf30c-b435-4a69-a0ba-2313aaf0017c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Move an Application
 

@@ -1,9 +1,14 @@
 ---
 title: Packages Node
 description: Packages Node
-ms.assetid: 3465168c-012f-4e9f-905d-611418d2975a
 author: jamiejdt
+ms.assetid: 3465168c-012f-4e9f-905d-611418d2975a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Packages Node
 

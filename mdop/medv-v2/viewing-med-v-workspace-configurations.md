@@ -1,9 +1,14 @@
 ---
 title: Viewing MED-V Workspace Configurations
 description: Viewing MED-V Workspace Configurations
-ms.assetid: 5de6cf04-6beb-4ac9-ad52-26ac8c0c8ce6
 author: jamiejdt
+ms.assetid: 5de6cf04-6beb-4ac9-ad52-26ac8c0c8ce6
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Viewing MED-V Workspace Configurations
 

@@ -1,9 +1,14 @@
 ---
 title: How to Delete All Virtual Applications by Using the Command Line
 description: How to Delete All Virtual Applications by Using the Command Line
-ms.assetid: bfe13b5c-825a-4eb1-a979-6c4b8d8b2a9c
 author: jamiejdt
+ms.assetid: bfe13b5c-825a-4eb1-a979-6c4b8d8b2a9c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Delete All Virtual Applications by Using the Command Line
 

@@ -1,9 +1,14 @@
 ---
 title: App-V Application WMI Class
 description: App-V Application WMI Class
-ms.assetid: b79b0d5a-ba57-442f-8bb4-d7154fc056f9
 author: jamiejdt
+ms.assetid: b79b0d5a-ba57-442f-8bb4-d7154fc056f9
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # App-V Application WMI Class
 

@@ -1,9 +1,14 @@
 ---
 title: Release Notes for DaRT 7.0
 description: Release Notes for DaRT 7.0
-ms.assetid: fad227d0-5c22-4efd-9187-0e5922f7250b
 author: jamiejdt
+ms.assetid: fad227d0-5c22-4efd-9187-0e5922f7250b
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Release Notes for DaRT 7.0
 

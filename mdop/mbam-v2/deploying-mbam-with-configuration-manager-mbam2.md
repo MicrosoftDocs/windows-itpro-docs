@@ -1,9 +1,14 @@
 ---
 title: Deploying MBAM with Configuration Manager
 description: Deploying MBAM with Configuration Manager
-ms.assetid: 89d03e29-457a-471d-b893-e0b74a83ec50
 author: jamiejdt
+ms.assetid: 89d03e29-457a-471d-b893-e0b74a83ec50
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Deploying MBAM with Configuration Manager
 

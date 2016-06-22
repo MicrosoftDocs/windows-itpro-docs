@@ -1,9 +1,14 @@
 ---
 title: About App-V 5.0 SP3
 description: About App-V 5.0 SP3
-ms.assetid: 67b5268b-edc1-4027-98b0-b3937dd70a6b
 author: jamiejdt
+ms.assetid: 67b5268b-edc1-4027-98b0-b3937dd70a6b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About App-V 5.0 SP3
 

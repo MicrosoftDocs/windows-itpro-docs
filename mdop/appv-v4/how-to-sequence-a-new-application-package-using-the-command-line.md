@@ -1,9 +1,14 @@
 ---
 title: How to Sequence a New Application Package Using the Command Line
 description: How to Sequence a New Application Package Using the Command Line
-ms.assetid: de72912b-d9e7-45b5-a601-12528f1a4cac
 author: jamiejdt
+ms.assetid: de72912b-d9e7-45b5-a601-12528f1a4cac
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Sequence a New Application Package Using the Command Line
 

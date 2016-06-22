@@ -1,9 +1,14 @@
 ---
 title: DaRT 8.0 Supported Configurations
 description: DaRT 8.0 Supported Configurations
-ms.assetid: 95d68e5c-d202-4f4a-adef-d2098328172e
 author: jamiejdt
+ms.assetid: 95d68e5c-d202-4f4a-adef-d2098328172e
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # DaRT 8.0 Supported Configurations
 

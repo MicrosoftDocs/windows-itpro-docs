@@ -1,9 +1,14 @@
 ---
 title: MED-V 1.0 Installation Checklist
 description: MED-V 1.0 Installation Checklist
-ms.assetid: a81fd5b0-29b3-4ddc-8f60-7d44c2be9794
 author: jamiejdt
+ms.assetid: a81fd5b0-29b3-4ddc-8f60-7d44c2be9794
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V 1.0 Installation Checklist
 

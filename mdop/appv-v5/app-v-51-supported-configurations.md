@@ -1,9 +1,14 @@
 ---
 title: App-V 5.1 Supported Configurations
 description: App-V 5.1 Supported Configurations
-ms.assetid: 8b8db63b-f71c-4ae9-80e7-a6752334e1f6
 author: jamiejdt
+ms.assetid: 8b8db63b-f71c-4ae9-80e7-a6752334e1f6
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # App-V 5.1 Supported Configurations
 

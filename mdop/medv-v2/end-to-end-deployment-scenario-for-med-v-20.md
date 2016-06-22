@@ -1,9 +1,14 @@
 ---
 title: End-to-End Deployment Scenario for MED-V 2.0
 description: End-to-End Deployment Scenario for MED-V 2.0
-ms.assetid: 91bb5a9a-5fb1-4743-8494-9d4dee2ec222
 author: jamiejdt
+ms.assetid: 91bb5a9a-5fb1-4743-8494-9d4dee2ec222
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # End-to-End Deployment Scenario for MED-V 2.0
 

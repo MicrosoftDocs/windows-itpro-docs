@@ -1,9 +1,14 @@
 ---
 title: Client Management Console File Type Associations Node
 description: Client Management Console File Type Associations Node
-ms.assetid: f0bc05ce-2cb2-4b06-961b-6c42d0274d28
 author: jamiejdt
+ms.assetid: f0bc05ce-2cb2-4b06-961b-6c42d0274d28
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Client Management Console: File Type Associations Node
 

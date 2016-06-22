@@ -1,9 +1,14 @@
 ---
 title: Modify the Archive Path
 description: Modify the Archive Path
-ms.assetid: 6d90daf9-58db-4166-b5b3-e84bb261164a
 author: jamiejdt
+ms.assetid: 6d90daf9-58db-4166-b5b3-e84bb261164a
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Modify the Archive Path
 

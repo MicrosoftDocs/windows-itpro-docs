@@ -1,9 +1,14 @@
 ---
 title: Package Name Page (Learn More)
 description: Package Name Page (Learn More)
-ms.assetid: ee75b8f0-bd9d-4460-a256-016ff97c2386
 author: jamiejdt
+ms.assetid: ee75b8f0-bd9d-4460-a256-016ff97c2386
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Package Name Page (Learn More)
 

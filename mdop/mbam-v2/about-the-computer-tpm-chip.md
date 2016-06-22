@@ -1,9 +1,14 @@
 ---
 title: About the Computer TPM Chip
 description: About the Computer TPM Chip
-ms.assetid: 6f1cf18c-277a-4932-886d-14202ca8d175
 author: jamiejdt
+ms.assetid: 6f1cf18c-277a-4932-886d-14202ca8d175
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About the Computer TPM Chip
 

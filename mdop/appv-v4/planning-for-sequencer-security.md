@@ -1,9 +1,14 @@
 ---
 title: Planning for Sequencer Security
 description: Planning for Sequencer Security
-ms.assetid: 8043cb02-476d-4c28-a850-903a8ac5b2d3
 author: jamiejdt
+ms.assetid: 8043cb02-476d-4c28-a850-903a8ac5b2d3
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for Sequencer Security
 

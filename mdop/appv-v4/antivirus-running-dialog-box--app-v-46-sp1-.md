@@ -1,9 +1,14 @@
 ---
 title: Antivirus Running Dialog Box (App-V 4.6 SP1)
 description: Antivirus Running Dialog Box (App-V 4.6 SP1)
-ms.assetid: b720e308-8597-4470-a03e-fc36ffef84aa
 author: jamiejdt
+ms.assetid: b720e308-8597-4470-a03e-fc36ffef84aa
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Antivirus Running Dialog Box (App-V 4.6 SP1)
 

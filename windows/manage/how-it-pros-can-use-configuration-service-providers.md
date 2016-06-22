@@ -215,6 +215,7 @@ Here is a list of CSPs supported on Windows 10 Enterprise, Windows 10 Mobile E
 
 ## Related topics
 
+[What's new in MDM enrollment and management in Windows 10, version 1607](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056(v=vs.85).aspx#whatsnew_1607)
 
 [Lock down Windows 10](lock-down-windows-10.md)
 

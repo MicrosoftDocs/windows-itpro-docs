@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization System Requirements
 description: Application Virtualization System Requirements
-ms.assetid: a2798dd9-168e-45eb-8103-e12e128fae7c
 author: jamiejdt
+ms.assetid: a2798dd9-168e-45eb-8103-e12e128fae7c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization System Requirements
 

@@ -1,9 +1,14 @@
 ---
 title: How to Install Application Virtualization Management Server
 description: How to Install Application Virtualization Management Server
-ms.assetid: 8184be79-8c27-4328-a3c1-183791b5556c
 author: jamiejdt
+ms.assetid: 8184be79-8c27-4328-a3c1-183791b5556c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install Application Virtualization Management Server
 

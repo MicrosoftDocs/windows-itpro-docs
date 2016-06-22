@@ -1,9 +1,14 @@
 ---
 title: Editing a GPO
 description: Editing a GPO
-ms.assetid: ef42eefe-7705-46b2-954d-18966335cbbf
 author: jamiejdt
+ms.assetid: ef42eefe-7705-46b2-954d-18966335cbbf
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Editing a GPO
 

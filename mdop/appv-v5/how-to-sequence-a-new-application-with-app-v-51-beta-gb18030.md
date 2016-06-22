@@ -1,9 +1,14 @@
 ---
 title: How to Sequence a New Application with App-V 5.1
 description: How to Sequence a New Application with App-V 5.1
-ms.assetid: 7d7699b1-0cb8-450d-94e7-5af937e16c21
 author: jamiejdt
+ms.assetid: 7d7699b1-0cb8-450d-94e7-5af937e16c21
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Sequence a New Application with App-V 5.1
 
@@ -50,6 +55,9 @@ author: jamiejdt
     -   If an application installer changes the security access to a new or existing file or directory, those changes are not captured in the package.
 
     -   If short paths have been disabled for the virtualized package’s target volume, you must also sequence the package to a volume that was created and still has short-paths disabled. It cannot be the system volume.
+
+**Note**  
+The App-V 5.x Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
 
 **To sequence a new standard application**
 

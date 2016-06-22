@@ -1,9 +1,14 @@
 ---
 title: How to Create a Package Accelerator
 description: How to Create a Package Accelerator
-ms.assetid: dfe305e5-7cf8-498f-9581-4805ffc722bd
 author: jamiejdt
+ms.assetid: dfe305e5-7cf8-498f-9581-4805ffc722bd
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Create a Package Accelerator
 

@@ -1,9 +1,14 @@
 ---
 title: About Client Configuration Settings
 description: About Client Configuration Settings
-ms.assetid: cc7ae28c-b2ac-4f68-b992-5ccdbd5316a4
 author: jamiejdt
+ms.assetid: cc7ae28c-b2ac-4f68-b992-5ccdbd5316a4
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About Client Configuration Settings
 

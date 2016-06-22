@@ -1,9 +1,14 @@
 ---
 title: How to Add a Package
 description: How to Add a Package
-ms.assetid: 5407fdbe-e658-44f6-a9b8-a566b81dedce
 author: jamiejdt
+ms.assetid: 5407fdbe-e658-44f6-a9b8-a566b81dedce
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Add a Package
 

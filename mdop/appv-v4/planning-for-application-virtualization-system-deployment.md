@@ -1,9 +1,14 @@
 ---
 title: Planning for Application Virtualization System Deployment
 description: Planning for Application Virtualization System Deployment
-ms.assetid: 8215269f-c083-468a-bf0b-886b0d2dd69e
 author: jamiejdt
+ms.assetid: 8215269f-c083-468a-bf0b-886b0d2dd69e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for Application Virtualization System Deployment
 

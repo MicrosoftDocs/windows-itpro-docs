@@ -1,9 +1,14 @@
 ---
 title: Configuring MED-V Workspace Policies
 description: Configuring MED-V Workspace Policies
-ms.assetid: 0eaed981-cbf3-4b16-a4b7-4705c5705dc7
 author: jamiejdt
+ms.assetid: 0eaed981-cbf3-4b16-a4b7-4705c5705dc7
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Configuring MED-V Workspace Policies
 

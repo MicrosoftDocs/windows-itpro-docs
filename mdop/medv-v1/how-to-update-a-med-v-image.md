@@ -1,9 +1,14 @@
 ---
 title: How to Update a MED-V Image
 description: How to Update a MED-V Image
-ms.assetid: 61eacf50-3a00-4bb8-b2f3-7350a6467fa1
 author: jamiejdt
+ms.assetid: 61eacf50-3a00-4bb8-b2f3-7350a6467fa1
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Update a MED-V Image
 

@@ -1,9 +1,14 @@
 ---
 title: Example MED-V Workspace Deployment Checklist
 description: Example MED-V Workspace Deployment Checklist
-ms.assetid: d8857883-9b2d-40ac-9136-59e4e20e02fe
 author: jamiejdt
+ms.assetid: d8857883-9b2d-40ac-9136-59e4e20e02fe
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Example MED-V Workspace Deployment Checklist
 

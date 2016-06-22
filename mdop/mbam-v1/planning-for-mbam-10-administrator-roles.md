@@ -1,9 +1,14 @@
 ---
 title: Planning for MBAM 1.0 Administrator Roles
 description: Planning for MBAM 1.0 Administrator Roles
-ms.assetid: 95be0eb4-25e9-43ca-a8e7-27373d35544d
 author: jamiejdt
+ms.assetid: 95be0eb4-25e9-43ca-a8e7-27373d35544d
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for MBAM 1.0 Administrator Roles
 

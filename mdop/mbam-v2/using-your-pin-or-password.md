@@ -1,9 +1,14 @@
 ---
 title: Using Your PIN or Password
 description: Using Your PIN or Password
-ms.assetid: 7fe2aef4-d3e0-49c8-877d-7fee13dc5b7b
 author: jamiejdt
+ms.assetid: 7fe2aef4-d3e0-49c8-877d-7fee13dc5b7b
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Using Your PIN or Password
 

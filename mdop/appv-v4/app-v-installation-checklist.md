@@ -1,9 +1,14 @@
 ---
 title: App-V Installation Checklist
 description: App-V Installation Checklist
-ms.assetid: b17efaab-cd6d-4c30-beb7-c6e7c9c87657
 author: jamiejdt
+ms.assetid: b17efaab-cd6d-4c30-beb7-c6e7c9c87657
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # App-V Installation Checklist
 

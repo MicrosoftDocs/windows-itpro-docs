@@ -1,9 +1,14 @@
 ---
 title: How to Configure Image Pre-staging
 description: How to Configure Image Pre-staging
-ms.assetid: 92781b5a-208f-45a4-a078-ee90cf9efd9d
 author: jamiejdt
+ms.assetid: 92781b5a-208f-45a4-a078-ee90cf9efd9d
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Configure Image Pre-staging
 
