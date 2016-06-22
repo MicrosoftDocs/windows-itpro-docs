@@ -26,17 +26,17 @@ For information about prerequisites and instructions for how to download and ins
 
 3.  Accept the End User License Agreement (EULA) by selecting the check box, and then click **Install**, as shown in Figure 1.
 
-    ![figure 1](images/sdasteps-fig1.png)
+    ![Surface Deployment Accelerator setup](images/sdasteps-fig1.png "Surface Deployment Accelerator setup")
 
-    Figure 1. SDA setup
+    *Figure 1. SDA setup*
 
 4.  Click **Finish** to complete the installation of SDA.
 
-The tool installs in the Surface Deployment Accelerator program group, as shown in Figure 2.
+The tool installs in the SDA program group, as shown in Figure 2.
 
-![figure 2](images/sdasteps-fig2.png)
+![SDA program group and icon](images/sdasteps-fig2.png "SDA program group and icon")
 
-Figure 2. The Surface Deployment Accelerator program group and icon
+*Figure 2. The SDA program group and icon*
 
 >**Note:**&nbsp;&nbsp;At this point the tool has not yet prepared any deployment environment or downloaded any materials from the Internet.
 
@@ -45,7 +45,7 @@ Figure 2. The Surface Deployment Accelerator program group and icon
 ## Create a deployment share
 
 
-The following steps show how you create a deployment share for Windows 10 that supports Surface Pro 3, Surface Pro 4, Surface Book, the Surface Firmware Tool, and the Surface Asset Tag Tool. As you follow the steps below, make the selections that are applicable for your organization. For example, you could choose to deploy Windows 10 to Surface Book only, without any of the Surface apps.
+The following steps show you how to create a deployment share for Windows 10 that supports Surface 3, Surface Pro 3, Surface Pro 4, Surface Book, the Surface Firmware Tool, the Surface Asset Tag Tool, and Office 365. As you follow the steps below, make the selections that are applicable for your organization. For example, you could choose to deploy Windows 10 to Surface Book only, without any of the Surface apps.
 
 >**Note:**&nbsp;&nbsp;SDA lets you create deployment shares for both Windows 8.1 and Windows 10 deployments, but you can only create a single deployment share at a time. Therefore, to create both Windows 8.1 and Windows 10 deployment shares, you will need to run the tool twice.
 
@@ -55,7 +55,14 @@ The following steps show how you create a deployment share for Windows 10 that 
 
 2.  On the **Welcome** page, click **Next** to continue.
 
-3.  On the **Verify System** page, the SDA wizard verifies the prerequisites required for an SDA deployment share. This process also checks for the presence of the Windows Assessment and Deployment Kit (ADK) for Windows 10 and the Microsoft Deployment Toolkit (MDT) 2013 Update 1. If these tools are not detected, they are downloaded and installed automatically. Click **Next** to continue.
+3.  On the **Verify System** page, the SDA wizard verifies the prerequisites required for an SDA deployment share. This process also checks for the presence of the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10 and the Microsoft Deployment Toolkit (MDT) 2013 Update 2. If these tools are not detected, they are downloaded and installed automatically. Click **Next** to continue.
+
+  >**Note:**&nbsp;&nbsp;As of SDA version 1.96.0405, SDA will install only the components of the Windows ADK that are required for deployment, as follows:
+    * Deployment tools
+    * User State Migration Tool (USMT)
+    * Windows Preinstallation Environment (WinPE)
+
+  >**Note:**&nbsp;&nbsp;As of version 1.96.0405, SDA will install and use MDT 2013 Update 2. Earlier versions of SDA are compatible only with MDT 2013 Update 1.
 
 4.  On the **Windows 8.1** page, to create a Windows 10 deployment share, do not select the **Would you like to support Windows 8.1** check box. Click **Next** to continue.
 
@@ -75,15 +82,17 @@ The following steps show how you create a deployment share for Windows 10 that 
 
         -   **Local Path** – Specify or browse to the root directory of Windows 10 installation files. If you have an ISO file, mount it and browse to the root of the mounted drive. You must have a full set of source files, not just **Install.wim**.
 
-    ![figure 3](images/sdasteps-fig3.png)
+    ![Specify Windows 10 deployment share options](images/sdasteps-fig3.png "Specify Windows 10 deployment share options")
 
-    Figure 3. Specify Windows 10 deployment share options
+    *Figure 3. Specify Windows 10 deployment share options*
 
-6.  On the **Configure** page, select the check box next to each device or app that you want to include in your deployment share. Note that Surface Pro 4 and Surface Book only support Windows 10 and are not available for the deployment of Windows 8.1. The Surface Firmware Tool is only applicable to Surface Pro 3 and cannot be selected unless Surface Pro 3 drivers are selected, as shown in Figure 4. Click **Next** to continue.
+6.  On the **Configure** page, select the check box next to each device or app that you want to include in your deployment share. Note that Surface Pro 4 and Surface Book only support Windows 10 and are not available for the deployment of Windows 8.1. The Surface Firmware Tool is only applicable to Surface 3 and Surface Pro 3 and cannot be selected unless Surface 3 or Surface Pro 3 drivers are selected, as shown in Figure 4. Click **Next** to continue.
 
-    ![figure 4](images/sdasteps-fig4-select.png)
+    ![Firmware tool selection](images/sdasteps-fig4-select.png "Firmware tool selection")
 
-    Figure 4. Selecting Surface Firmware Tool requires Surface Pro 3 drivers
+    *Figure 4. Selecting Surface Firmware Tool requires Surface Pro 3 drivers*
+
+    >**Note:**&nbsp;&nbsp;You cannot select both Surface 3 and Surface 3 LTE models at the same time.
 
 7.  On the **Summary** page confirm your selections and click **Finish** to begin the creation of your deployment share. The process can take several minutes as files are downloaded, the tools are installed, and the deployment share is created. While the SDA scripts are creating your deployment share, an **Installation Progress** window will be displayed, as shown in Figure 5. A typical SDA process includes:
 
@@ -105,9 +114,9 @@ The following steps show how you create a deployment share for Windows 10 that 
 
     -   Creation of rules and task sequences for Windows deployment
 
-    ![figure 5](images/sdasteps-fig5-installwindow.png)
+    ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
 
-    Figure 5. The **Installation Progress** window
+    *Figure 5. The **Installation Progress** window*
 
 8.  When the SDA process completes the creation of your deployment share, a **Success** window is displayed. Click **Finish** to close the window. At this point your deployment share is now ready to perform a Windows deployment to Surface devices.
 
@@ -115,13 +124,13 @@ The following steps show how you create a deployment share for Windows 10 that 
 
 If you are unable to connect to the Internet with your deployment server, or if you want to download the Surface drivers and apps separately, you can specify a local source for the driver an app files at the time of deployment share creation. On the **Configure** page of the SDA wizard, select the **Copy from a Local Directory** check box, as shown in Figure 6. The **Download from the Internet** check box will be automatically deselected. Enter the folder location where you have placed the driver and app files in the **Local Path** field, as shown in Figure 6.
 
->**Note:**&nbsp;&nbsp;All of the downloaded driver and applications files must be located in the same folder. The driver and app files do not need to be extracted from the downloaded .zip files.
+>**Note:**&nbsp;&nbsp;All of the downloaded driver and applications files must be located in the same folder. If a required driver or application file is missing from the selected folder when you click **Next**, a warning is displayed and the wizard will not proceed to the next step.
+>**Note:**&nbsp;&nbsp;The driver and app files do not need to be extracted from the downloaded .zip files.
+>**Note:**&nbsp;&nbsp;Including Office 365 in your deployment share requires an Internet connection and cannot be performed if you use local files.
 
- 
+![Specify Surface driver and app files](images/sdasteps-fig6-specify-driver-app-files.png "Specify Surface driver and app files")
 
-![figure 6](images/sdasteps-fig6-specify-driver-app-files.png)
-
-Figure 6. Specify the Surface driver and app files from a local path
+*Figure 6. Specify the Surface driver and app files from a local path*
 
 >**Note:**&nbsp;&nbsp;The **Copy from a Local Directory** check box is only available in SDA version 1.90.0221 or later.
 
