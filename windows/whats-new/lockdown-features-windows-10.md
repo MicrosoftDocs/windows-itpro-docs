@@ -35,7 +35,7 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 <tr class="odd">
 <td align="left"><p>[Hibernate Once/Resume Many (HORM)](http://go.microsoft.com/fwlink/p/?LinkId=626758): Quick boot to device</p></td>
 <td align="left">N/A</td>
-<td align="left"><p>HORM is not supported in Windows 10. However, with enhancements to the Windows boot process and Unified Extensible Firmware Interface (UEFI) hardware, startup times can be dramatically reduced compared to previous versions.</p></td>
+<td align="left"><p>HORM is supported in Windows 10, version 1607. </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Unified Write Filter](http://go.microsoft.com/fwlink/p/?LinkId=626757): protect a device's physical storage media</p></td>
