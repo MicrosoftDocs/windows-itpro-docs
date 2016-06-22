@@ -124,7 +124,7 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 
 [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 
- 
+[Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md) 
 
  
 

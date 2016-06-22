@@ -3,6 +3,7 @@
 ## [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)
 ## [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)
 ## [Manage corporate devices](manage-corporate-devices.md)
+### [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 ### [New policies for Windows 10](new-policies-for-windows-10.md)
 ### [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 ### [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
