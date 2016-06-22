@@ -57,10 +57,46 @@ To run a full set of tests with the Microsoft Surface Diagnostic Toolkit, you sh
 
 ## Configure test options
 
-Before you select the tests you would like to run, you can select the Options button in the upper right corner of the window (as shown in Figure 1) to configure the behavior of the Microsoft Surface Diagnostic Toolkit. In the Options section of the toolkit you can configure the depth of testing and logs, the save location for log files, and the creation and use of additional language files for the dialog of each test.
+Before you select the tests you want to run, you can click the Tools ![images\surface-diagnostic-kit-gear-icon.png](images\surface-diagnostic-kit-gear-icon.png) button in the upper right corner of the window (as shown in Figure 1) to access the Options section of the Microsoft Surface Diagnostic Toolkit. In the Options section, you can configure the depth of testing and logs, as well as the save location for log files. You can also create and use additional language files for the dialog of each test.
+
+![Tools button highlighted in upper right corner of window](images\surface-diagnostic-kit-fig1-options.png "Tools button highlighted in upper right corner of window")
+
+*Figure 1. The Tools button highighted in upper right corner of window*  
+
+Any options you want to select must be specified before you run the tests. You cannot change the test options after the testing sequence has started.
+
+####Test depth
+You can quickly select among three modes for testing and diagnostics by using the **Test Depth** page. The **Test Depth** page displays a slider with three possible positions, as shown in Figure 2. These positions determine which tests are run and what information is recorded without requiring you to select specific tests with the **Run Specific Tests** button. The three modes allow you to focus the tests of the Microsoft Surface Diagnostic Toolkit on hardware, software, or both hardware and software.
+ 
+![Screen that displays Test Depth slider to select depth of data collection](images/surface-diagnostic-kit-fig2-testdepth.png "Screen that displays Test Depth slider to select depth of data collection")
+
+*Figure 2. The Test Depth slider to select the depth of data collection*
+
+When you select a mode using the Test Depth slider, a configuration file (.ini) with the same name as the Microsoft Surface Diagnostic Toolkit executable (.exe) file is created in the same folder. For example, if the Microsoft Surface Diagnostic Toolkit executable file is SurfaceDiagnosticToolkit.exe, the configuration file will be SurfaceDiagnosticToolkit.ini. When the executable file is run, the options will be automatically set by the configuration file. To run the Microsoft Surface Diagnostic Toolkit in a specific mode on multiple devices, ensure that the .ini file remains in the same folder with the .exe file used on each device.
+
+When the Microsoft Surface Diagnostic Toolkit is run the technician can still use the Run Specific Tests button to enable or disable specific tests. The tests selected on the Please Select Tests to Run page take priority over the tests enabled or disabled by the mode specified on the Test Depth page. When a mode is selected the tests that applicable to that mode will be enabled by default and the tests that are not required for that mode will be disabled.
+
+Each mode has a specific focus and records a different level of information in the log files, as follows:
+
+* **Hardware and Software Focus.** This mode is the default for the Microsoft Surface Diagnostic Toolkit. In this mode all tests that are applicable to the device are run. This mode logs the most information and takes the most time.
+* **Software Experience Focus.** This mode collects information about the device and records it in the log file. No hardware tests are performed in this mode. The following tests are run in this mode:
+  * Windows Update Check Test
+  * Device Information Test
+  * System Assessment Test
+  * Crash Dump Collection Test
+  * Modern Standby Test
+* **Hardware Validation Focus.** This mode tests the hardware of the device but does not collect system log files or device information. All diagnostic tests relevant to the device hardware are run in this mode. The exact tests that are run will vary from device to device depending on the hardware configuration. This mode logs the least information and requires the least amount of time.
 
 
-Figure 1. The Options button appears as a gear icon  
+####Save location
+Use the **Browse** button on the **Save Location** page to select a default location for the Microsoft Surface Diagnostic Toolkit log files to be saved. When the tests complete the user will still be prompted to save a log file and a log file will not be saved automatically. The user must still click the **Save to File** button to save the log files. As with the mode, this save location is stored in the Microsoft Surface Diagnostic Toolkit configuration (.ini) file and if the file does not exist, configuring this option will generate the file.
+
+####Additional language
+See the Localization section later in this article for information about customizing the dialog displayed during each test. Using the **Additional Language** page, you can generate a localization file that can be used to customize the dialog during each test. You can also specify a specific localization file to be used with the Microsoft Surface Diagnostic Toolkit with the **Browse** button.
+
+####Feedback
+You can use the form on the **Feedback** page to inform the product team of any problems that you encounter with the Microsoft Surface Diagnostic Toolkit or to provide any suggestions for how the Microsoft Surface Diagnostic Toolkit could be made better.
+
 
 ## The tests
 
