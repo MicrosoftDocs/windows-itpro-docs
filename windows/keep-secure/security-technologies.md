@@ -15,6 +15,7 @@ Learn more about the different security technologies that are available in Windo
 
 | Topic | Description |
 |-|-|
+| [Access control](access-control.md) | Describes access control in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer. Key concepts that make up access control are permissions, ownership of objects, inheritance of permissions, user rights, and object auditing. |
 | [AppLocker](applocker-overview.md)| This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.|
 | [BitLocker](bitlocker-overview.md)| This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.|
 | [Encrypted Hard Drive](encrypted-hard-drive.md) | Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.|
