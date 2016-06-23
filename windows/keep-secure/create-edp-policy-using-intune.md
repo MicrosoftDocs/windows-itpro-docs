@@ -230,8 +230,8 @@ We recommend that you start with **Silent** or **Override** while verifying with
     <tr>
         <td>Off</td>
         <td>EDP is turned off and doesn't help to protect or audit your data.<p>After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives.</td>
-    </tr>
-</table>
+    </tr> 
+</table>  
 
 ![Microsoft Intune: Add the protection level for your Protected Apps list](images/intune-encryption-level.png)
 
@@ -295,9 +295,9 @@ After you've added a protection level to your apps, you'll need to decide where 
             <td>Enterprise IPv6 Range</td>
             <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:<br>ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
             <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-        </tr>                
-    </table>
-
+        </tr>
+    </table>  
+    
     ![Microsoft Intune: Choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
 
 2.  Add as many locations as you need, and then click **OK**.<p>The **Add or Edit Enterprise Network Locations box** closes.
