@@ -38,7 +38,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>Windows 10 Mobile Enterprise</td>
     </tr>
     <tr>
-        <td rowspan="7">Windows 7</td>
+        <td rowspan="7" nowrap="nowrap">Windows 7</td>
     </tr>
     <tr>
         <td>Starter</td>
@@ -101,7 +101,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
-        <td rowspan="8">Windows 8</td>
+        <td rowspan="8" nowrap="nowrap">Windows 8</td>
     </tr>
     <tr>
         <td>(Core)</td>
@@ -174,7 +174,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
-        <td rowspan="10">Windows 8.1</td>
+        <td rowspan="10" nowrap="nowrap">Windows 8.1</td>
     </tr>
     <tr>
         <td>(Core)</td>
@@ -267,7 +267,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
     </tr>
     <tr>
-        <td rowspan="7">Windows 10</td>
+        <td rowspan="7" nowrap="nowrap">Windows 10</td>
     </tr>
     <tr>
         <td>Home</td>
@@ -333,6 +333,8 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
 
 ## Free upgrade paths
 
+## <a href="" id="bkmk-free-table"></a>
+
 Windows 10 is offered as a free upgrade for the first year after launch of Windows 10, with the following restrictions: 
 - The offer expires on July 29th, 2016.
 - The offer applies to devices connected to the Internet with Windows Update enabled.
@@ -340,15 +342,13 @@ Windows 10 is offered as a free upgrade for the first year after launch of Windo
 - Windows Phone 8.0 users must update to Windows 8.1 before upgrading to Windows 10 Mobile<sup>1</sup>. 
 - Editions that are excluded from the free upgrade offer include: Windows 7 Enterprise, Windows 8/8.1 Enterprise, and Windows RT/RT 8.1<sup>2</sup>. 
 
-<sup>1</sup>The availability of Windows 10 Mobile for Windows 8.1 devices will vary by device manufacturer, device model, country or region, mobile operator or service provider, hardware limitations, and other factors. For a list of eligible phones and important info about the upgrade and Windows 10 Mobile, see [Windows 10 specifications](http://windows.com/specsmobile)
+><sup>1</sup>The availability of Windows 10 Mobile for Windows 8.1 devices will vary by device manufacturer, device model, country or region, mobile operator or service provider, hardware limitations, and other factors. For a list of eligible phones and important info about the upgrade and Windows 10 Mobile, see [Windows 10 specifications](http://windows.com/specsmobile).
 
-<sup>2</sup>Active Software Assurance customers in volume licensing have the benefit to upgrade to Windows 10 Enterprise outside of this offer. Windows 10 is not supported on devices running the RT versions of Windows 8.
+><sup>2</sup>Active Software Assurance customers in volume licensing have the benefit to upgrade to Windows 10 Enterprise outside of this offer. Windows 10 is not supported on devices running the RT versions of Windows 8.
 
-For a list of frequently asked questions about the free upgrade to Windows 10, see [Upgrade to Windows 10: FAQ](http://windows.microsoft.com/en-us/windows-10/upgrade-to-windows-10-faq)
+For a list of frequently asked questions about the free upgrade to Windows 10, see [Upgrade to Windows 10: FAQ](http://windows.microsoft.com/en-us/windows-10/upgrade-to-windows-10-faq).
 
 The following table summarizes the free upgrade paths to Windows 10.
-
-## <a href="" id="bkmk-free-table"></a>
 
 <table border="1" cellpadding="3">
     <tr>
