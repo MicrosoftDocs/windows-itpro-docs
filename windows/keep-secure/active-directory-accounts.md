@@ -659,7 +659,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
         </tr>
         <tr class="odd">
         <td><p>Configure Automatic Updates</p></td>
-        <td><p>Enabled 4- Auto download and schedule the installation 0 – Every day 03:00</p></td>
+        <td><p>Enabled<br>4 - Auto download and schedule the installation<br>0 - Every day 03:00</p></td>
         </tr>
         <tr class="even">
         <td><p>Enable Windows Update Power Management to automatically wake up the system to install scheduled updates</p></td>

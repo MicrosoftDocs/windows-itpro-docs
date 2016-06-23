@@ -41,7 +41,7 @@ SIDs always remain unique. Security authorities never issue the same SID twice, 
 
 ## Security identifier architecture
 
-A security identifier is a data structure in binary format that contains a variable number of values. The first values in the structure contain information about the SID structure. The remaining values are arranged in a hierarchy (similar to a telephone number), and they identify the SID-issuing authority (for example, the Windows ServerÂ 2012 operating system), the SID-issuing domain, and a particular security principal or group. The following image illustrates the structure of a SID.
+A security identifier is a data structure in binary format that contains a variable number of values. The first values in the structure contain information about the SID structure. The remaining values are arranged in a hierarchy (similar to a telephone number), and they identify the SID-issuing authority (for example, the Windows Server 2012 operating system), the SID-issuing domain, and a particular security principal or group. The following image illustrates the structure of a SID.
 
 ![](images/security-identifider-architecture.jpg)
 
@@ -50,7 +50,7 @@ The individual values of a SID are described in the following table.
 | Comment | Description |
 | - | - |
 |  Revision | Indicates the version of the SID structure that is used in a particular SID. |
-| Identifier authority | Identifies the highest level of authority that can issue SIDs for a particular type of security principal. For example, the identifier authority value in the SID for the Everyone group is 1 (World Authority). The identifier authority value in the SID for a specific Windows Server account or group is 5 (NT Authority). |
+| Identifier authority | Identifies the highest level of authority that can issue SIDs for a particular type of security principal. For example, the identifier authority value in the SID for the Everyone group is 1 (World Authority). The identifier authority value in the SID for a specific Windows Server account or group is 5 (NT Authority). |
 | Subauthorities | >Holds the most important information in a SID, which is contained in a series of one or more subauthority values. All values up to, but not including, the last value in the series collectively identify a domain in an enterprise. This part of the series is called the domain identifier. The last value in the series, which is called the relative identifier (RID), identifies a particular account or group relative to a domain. |
 
 The components of a SID are easier to visualize when SIDs are converted from a binary to a string format by using standard notation:
@@ -81,15 +81,15 @@ This SID has four components:
 
 -   A revision level (1)
 
--   An identifier authority value (5, NTÂ Authority)
+-   An identifier authority value (5, NT Authority)
 
 -   A domain identifier (32, Builtin)
 
 -   A relative identifier (544, Administrators)
 
-SIDs for built-in accounts and groups always have the same domain identifier value: 32. This value identifies the domain **Builtin**, which exists on every computer that is running a version of the Windows ServerÂ operating system. It is never necessary to distinguish one computer's built-in accounts and groups from another computer's built-in accounts and groups because they are local in scope. They are local to a single computer, or in the case of domain controllers for a network domain, they are local to several computers that are acting as one.
+SIDs for built-in accounts and groups always have the same domain identifier value: 32. This value identifies the domain **Builtin**, which exists on every computer that is running a version of the Windows Server operating system. It is never necessary to distinguish one computer's built-in accounts and groups from another computer's built-in accounts and groups because they are local in scope. They are local to a single computer, or in the case of domain controllers for a network domain, they are local to several computers that are acting as one.
 
-Built-in accounts and groups need to be distinguished from one another within the scope of the **Builtin** domain. Therefore, the SID for each account and group has a unique relative identifier. A relative identifier value ofÂ 544 is unique to the built-in Administrators group. No other account or group in the **Builtin** domain has a SID with a final value ofÂ 544.
+Built-in accounts and groups need to be distinguished from one another within the scope of the **Builtin** domain. Therefore, the SID for each account and group has a unique relative identifier. A relative identifier value of 544 is unique to the built-in Administrators group. No other account or group in the **Builtin** domain has a SID with a final value of 544.
 
 In another example, consider the SID for the global group, Domain Admins. Every domain in an enterprise has a Domain Admins group, and the SID for each group is different. The following example represents the SID for the Domain Admins group in the Contoso, Ltd. domain (Contoso\\Domain Admins):
 
@@ -101,7 +101,7 @@ The SID for Contoso\\Domain Admins has:
 
 -   A revision level (1)
 
--   An identifier authority (5, NTÂ Authority)
+-   An identifier authority (5, NT Authority)
 
 -   A domain identifier (21-1004336348-1177238915-682003330, Contoso)
 
@@ -175,19 +175,19 @@ The following RID values are used with universal well-known SIDs. The Identifier
 | SECURITY_CREATOR_OWNER_RID | 0 | S-1-3 |
 | SECURITY_CREATOR_GROUP_RID | 1 | S-1-3 |
 
-The SECURITY\_NT\_AUTHORITY (S-1â€“5) predefined identifier authority produces SIDs that are not universal and are meaningful only in installations of the Windows operating systems that are designated in the **Applies To** list at the beginning of this topic. The following table lists the well-known SIDs.
+The SECURITY\_NT\_AUTHORITY (S-1-5) predefined identifier authority produces SIDs that are not universal and are meaningful only in installations of the Windows operating systems that are designated in the **Applies To** list at the beginning of this topic. The following table lists the well-known SIDs.
 
 | SID | Display Name | Description |
 | - | - | - |
 | S-1-5-1 | Dialup | A group that includes all users who are logged on to the system by means of a dial-up connection.| 
-| S-1-5-113 | Local account| You can use this SID when restricting network logon to local accounts instead of â€œadministratorâ€? or equivalent. This SID can be effective in blocking network logon for local users and groups by account type regardless of what they are actually named.|
-| S-1-5-114| Local account and member of Administrators group | You can use this SID when restricting network logon to local accounts instead of â€œadministratorâ€? or equivalent. This SID can be effective in blocking network logon for local users and groups by account type regardless of what they are actually named. |
+| S-1-5-113 | Local account| You can use this SID when restricting network logon to local accounts instead of "administrator" or equivalent. This SID can be effective in blocking network logon for local users and groups by account type regardless of what they are actually named.|
+| S-1-5-114| Local account and member of Administrators group | You can use this SID when restricting network logon to local accounts instead of "administrator" or equivalent. This SID can be effective in blocking network logon for local users and groups by account type regardless of what they are actually named. |
 | S-1-5-2 | Network | A group that includes all users who are logged on by means of a network connection. Access tokens for interactive users do not contain the Network SID.|
 | S-1-5-3 | Batch | A group that includes all users who have logged on by means of a batch queue facility, such as task scheduler jobs.| 
 | S-1-5-4 | Interactive| A group that includes all users who log on interactively. A user can start an interactive logon session by logging on directly at the keyboard, by opening a Remote Desktop Services connection from a remote computer, or by using a remote shell such as Telnet. In each case, the user's access token contains the Interactive SID. If the user signs in by using a Remote Desktop Services connection, the user's access token also contains the Remote Interactive Logon SID.| 
 | S-1-5-5- *X *- *Y * | Logon Session| The  *X * and  *Y * values for these SIDs uniquely identify a particular logon session.| 
 | S-1-5-6 | Service| A group that includes all security principals that have signed in as a service.|
-| S-1-5-7 | Anonymous Logon| A user who has connected to the computer without supplying a user name and password.<br/>The Anonymous Logon identity is different from the identity that is used by Internet Information Services (IIS) for anonymous web access. IIS uses an actual accountâ€”by default, IUSR_ *ComputerName *, for anonymous access to resources on a website. Strictly speaking, such access is not anonymous because the security principal is known even though unidentified people are using the account. IUSR_ *ComputerName * (or whatever you name the account) has a password, and IIS logs on the account when the service starts. As a result, the IIS â€œanonymousâ€? user is a member of Authenticated Users but Anonymous Logon is not.| 
+| S-1-5-7 | Anonymous Logon| A user who has connected to the computer without supplying a user name and password.<br/>The Anonymous Logon identity is different from the identity that is used by Internet Information Services (IIS) for anonymous web access. IIS uses an actual account—by default, IUSR_ *ComputerName *, for anonymous access to resources on a website. Strictly speaking, such access is not anonymous because the security principal is known even though unidentified people are using the account. IUSR_ *ComputerName * (or whatever you name the account) has a password, and IIS logs on the account when the service starts. As a result, the IIS "anonymous" user is a member of Authenticated Users but Anonymous Logon is not.| 
 | S-1-5-8| Proxy| Does not currently apply: this SID is not used.| 
 | S-1-5-9 | Enterprise Domain Controllers| A group that includes all domain controllers in a forest of domains.|
 | S-1-5-10 | Self| A placeholder in an ACE for a user, group, or computer object in Active Directory. When you grant permissions to Self, you grant them to the security principal that is represented by the object. During an access check, the operating system replaces the SID for Self with the SID for the security principal that is represented by the object.| 
