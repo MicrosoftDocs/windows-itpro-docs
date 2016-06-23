@@ -68,7 +68,7 @@ mstsc.exe /remoteGuard /v:<em>target device</em>
 
 ## Considerations when using Remote Credential Guard
 
-- Remote Credential Guard does not support Kerberos Armoring (FAST), especially in cases where the resources require that a user must come from a specified device. If an authentication policies is deployed to limit access to a resource, it will not provide access to such file shares and other resources. The Remote Desktop connection itself should succeed though.
+- Remote Credential Guard does not support Kerberos Armoring (FAST), especially in cases where the resources require that a user must come from a specified device. If an authentication policy is deployed to limit access to a resource, it will not provide access to such file shares and other resources. The Remote Desktop connection itself should succeed though.
 
 - Remote Credential Guard must be turned off if you need to connect to a device that is joined to Azure Active Directory.
 
