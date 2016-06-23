@@ -1,9 +1,14 @@
 ---
 title: What's New in AGPM 3.0
 description: What's New in AGPM 3.0
-ms.assetid: 0d082b86-63c5-45ce-9529-6e5f37254f9d
 author: jamiejdt
+ms.assetid: 0d082b86-63c5-45ce-9529-6e5f37254f9d
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # What's New in AGPM 3.0
 

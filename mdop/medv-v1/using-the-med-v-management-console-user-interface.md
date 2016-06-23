@@ -1,9 +1,14 @@
 ---
 title: Using the MED-V Management Console User Interface
 description: Using the MED-V Management Console User Interface
-ms.assetid: f42714d7-6f0c-4995-ab31-d4ef0845a22c
 author: jamiejdt
+ms.assetid: f42714d7-6f0c-4995-ab31-d4ef0845a22c
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Using the MED-V Management Console User Interface
 

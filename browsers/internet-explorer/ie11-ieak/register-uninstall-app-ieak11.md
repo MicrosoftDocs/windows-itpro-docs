@@ -2,7 +2,7 @@
 description: Learn how to register an uninstall app for your custom components, using IEAK 11.
 ms.assetid: 4da1d408-af4a-4c89-a491-d6f005fd5005
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 title: Register an uninstall app for custom components using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ---

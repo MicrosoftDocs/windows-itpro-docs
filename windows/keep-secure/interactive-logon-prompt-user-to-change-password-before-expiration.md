@@ -2,7 +2,7 @@
 title: Interactive logon Prompt user to change password before expiration (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Prompt user to change password before expiration security policy setting.
 ms.assetid: 8fe94781-40f7-4fbe-8cfd-5e116e6833e9
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

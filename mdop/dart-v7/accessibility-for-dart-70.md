@@ -1,9 +1,14 @@
 ---
 title: Accessibility for DaRT 7.0
 description: Accessibility for DaRT 7.0
-ms.assetid: 41f7bb72-4f1d-44fb-bc3f-8b66557fec2f
 author: jamiejdt
+ms.assetid: 41f7bb72-4f1d-44fb-bc3f-8b66557fec2f
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Accessibility for DaRT 7.0
 

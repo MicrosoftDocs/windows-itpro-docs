@@ -1,9 +1,14 @@
 ---
 title: How to Repair an Application
 description: How to Repair an Application
-ms.assetid: 80b08416-ad86-4ed6-966a-b943e3efb951
 author: jamiejdt
+ms.assetid: 80b08416-ad86-4ed6-966a-b943e3efb951
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Repair an Application
 

@@ -1,9 +1,14 @@
 ---
 title: Delegate Access to a GPO
 description: Delegate Access to a GPO
-ms.assetid: f1d6bb6c-d5bf-4080-a6cb-32774689f804
 author: jamiejdt
+ms.assetid: f1d6bb6c-d5bf-4080-a6cb-32774689f804
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Delegate Access to a GPO
 

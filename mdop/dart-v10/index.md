@@ -1,9 +1,14 @@
 ---
 title: Diagnostics and Recovery Toolset 10
 description: Diagnostics and Recovery Toolset 10
-ms.assetid: 64403eca-ff05-4327-ac33-bdcc96e706c8
 author: jamiejdt
+ms.assetid: 64403eca-ff05-4327-ac33-bdcc96e706c8
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Diagnostics and Recovery Toolset 10
 

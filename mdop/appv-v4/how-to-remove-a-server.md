@@ -1,9 +1,14 @@
 ---
 title: How to Remove a Server
 description: How to Remove a Server
-ms.assetid: afb2a889-733c-4058-9a50-caa2ca10bd58
 author: jamiejdt
+ms.assetid: afb2a889-733c-4058-9a50-caa2ca10bd58
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Remove a Server
 

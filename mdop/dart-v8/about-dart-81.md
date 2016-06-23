@@ -1,9 +1,14 @@
 ---
 title: About DaRT 8.1
 description: About DaRT 8.1
-ms.assetid: dcaddc57-0111-4a9d-8be9-f5ada0eefa7d
 author: jamiejdt
+ms.assetid: dcaddc57-0111-4a9d-8be9-f5ada0eefa7d
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About DaRT 8.1
 

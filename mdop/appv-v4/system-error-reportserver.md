@@ -1,9 +1,14 @@
 ---
 title: System Error Report
 description: System Error Report
-ms.assetid: 4081db2f-92a6-4928-a26b-757048159094
 author: jamiejdt
+ms.assetid: 4081db2f-92a6-4928-a26b-757048159094
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # System Error Report
 

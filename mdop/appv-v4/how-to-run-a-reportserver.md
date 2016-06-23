@@ -1,9 +1,14 @@
 ---
 title: How to Run a Report
 description: How to Run a Report
-ms.assetid: 72a5419b-aa65-4e60-b23e-3751186b7aed
 author: jamiejdt
+ms.assetid: 72a5419b-aa65-4e60-b23e-3751186b7aed
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Run a Report
 

@@ -1,9 +1,14 @@
 ---
 title: SFTMIME Command Reference
 description: SFTMIME Command Reference
-ms.assetid: a4a69228-9dd3-4623-b773-899d03c0cf10
 author: jamiejdt
+ms.assetid: a4a69228-9dd3-4623-b773-899d03c0cf10
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # SFTMIME Command Reference
 

@@ -1,9 +1,14 @@
 ---
 title: UNPUBLISH PACKAGE
 description: UNPUBLISH PACKAGE
-ms.assetid: 1651427c-72a5-4701-bb57-71e14a7a3803
 author: jamiejdt
+ms.assetid: 1651427c-72a5-4701-bb57-71e14a7a3803
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # UNPUBLISH PACKAGE
 

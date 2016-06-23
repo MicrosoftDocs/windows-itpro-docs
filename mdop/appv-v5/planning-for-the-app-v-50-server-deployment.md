@@ -1,9 +1,14 @@
 ---
 title: Planning for the App-V 5.0 Server Deployment
 description: Planning for the App-V 5.0 Server Deployment
-ms.assetid: fd89b324-3961-471a-ad90-c8f9ae7a8155
 author: jamiejdt
+ms.assetid: fd89b324-3961-471a-ad90-c8f9ae7a8155
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning for the App-V 5.0 Server Deployment
 

@@ -1,9 +1,14 @@
 ---
 title: Client Event Logs
 description: Client Event Logs
-ms.assetid: d5c2f270-db6a-45f1-8557-8c6fb28fd568
 author: jamiejdt
+ms.assetid: d5c2f270-db6a-45f1-8557-8c6fb28fd568
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Client Event Logs
 

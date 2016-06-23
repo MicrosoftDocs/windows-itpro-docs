@@ -2,7 +2,11 @@
 title: Hybrid deployment (Surface Hub)
 description: A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub.
 ms.assetid: 7BFBB7BE-F587-422E-9CE4-C9DDF829E4F1
-keywords: ["hybrid deployment", "device account for Surface Hub", "Exchange hosted on-prem", "Exchange hosted online"]
+keywords: hybrid deployment, device account for Surface Hub, Exchange hosted on-prem, Exchange hosted online
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -21,7 +25,7 @@ Use this procedure if you use Exchange on-prem.
 
     - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
 
-        **Important**<br>Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
+        >**Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
 
         ![image showing password dialog box](images/hybriddeployment-02a.png)
         
@@ -36,10 +40,10 @@ Use this procedure if you use Exchange on-prem.
     Open your on-prem Exchange Management Shell with administrator permissions, and run this cmdlet.
 
     ```ps1
-    Enable-Mailbox &#39;HUB01@contoso.com&#39; -RemoteRoutingAddress &#39;HUB01@contoso.com&#39; -Room
+    Enable-Mailbox 'HUB01@contoso.com' -RemoteRoutingAddress 'HUB01@contoso.com' -Room
     ```
     
-5.  Connect to Microsoft Exchange Online and set some properties for the account in Office 365.
+4.  Connect to Microsoft Exchange Online and set some properties for the account in Office 365.
 
     Start a remote PowerShell session on a PC and connect to Microsoft Exchange. Be sure you have the right permissions set to run the associated cmdlets.
 
@@ -47,9 +51,9 @@ Use this procedure if you use Exchange on-prem.
 
     ```ps1
     Set-ExecutionPolicy Unrestricted
-    $org=&#39;contoso.com&#39;
+    $org='contoso.com'
     $cred=Get-Credential $admin@$org
-    $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri &#39;https://outlook.office365.com/ps1-liveid/&#39; -Credential $cred -Authentication Basic -AllowRedirection
+    $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri 'https://outlook.office365.com/ps1-liveid/' -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
     ```
 
@@ -66,7 +70,7 @@ Use this procedure if you use Exchange on-prem.
     Once you have a compatible policy, then you will need to apply the policy to the device account.
 
     ```ps1
-    Set-CASMailbox &#39;HUB01@contoso.com&#39; -ActiveSyncMailboxPolicy $easPolicy
+    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy
     ```
 
 6.  Set Exchange properties.
@@ -74,8 +78,8 @@ Use this procedure if you use Exchange on-prem.
     Setting Exchange properties on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
     ```ps1
-    Set-CalendarProcessing -Identity &#39;HUB01@contoso.com&#39; -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity &#39;HUB01@contoso.com&#39; -AddAdditionalResponse $true -AdditionalResponse &#39;This is a Surface Hub room!&#39;
+    Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+    Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse 'This is a Surface Hub room!'
     ```
 
 7.  Connect to Azure AD.
@@ -95,9 +99,9 @@ Use this procedure if you use Exchange on-prem.
     Once you list out the SKUs, you can add a license using the `Set-MsolUserLicense` cmdlet. In this case, `$strLicense` is the SKU code that you see (for example, *contoso:STANDARDPACK*).
 
     ```ps1
-    Set-MsolUser -UserPrincipalName &#39;HUB01@contoso.com&#39; -UsageLocation &#39;US&#39;
+    Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -UsageLocation 'US'
     Get-MsolAccountSku
-    Set-MsolUserLicense -UserPrincipalName &#39;HUB01@contoso.com&#39; -AddLicenses $strLicense
+    Set-MsolUserLicense -UserPrincipalName 'HUB01@contoso.com' -AddLicenses $strLicense
     ```
 
 9.  Enable the device account with Skype for Business.
@@ -123,7 +127,7 @@ Use this procedure if you use Exchange on-prem.
 
         ```ps1
         Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
-        &#39;sippoolbl20a04.infra.lync.com&#39; -SipAddressType EmailAddress
+        'sippoolbl20a04.infra.lync.com&' -SipAddressType EmailAddress
         ```
         
         If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
@@ -147,7 +151,7 @@ Use this procedure if you use Exchange on-prem.
     
     -   Click **Save**.
 
-    **Note**<br>You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+    >**Note** You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
 
@@ -160,7 +164,7 @@ Use this procedure if you use Exchange online.
 
     ```ps1
     Set-ExecutionPolicy Unrestricted
-    $org=&#39;contoso.microsoft.com
+    $org='contoso.microsoft.com'
     $cred=Get-Credential $admin@$org
     $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/ps1-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
@@ -173,13 +177,13 @@ Use this procedure if you use Exchange online.
     If you're changing an existing resource mailbox:
 
     ```ps1
-    Set-Mailbox -Identity &#39;HUB01&#39; -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+    Set-Mailbox -Identity 'HUB01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
     ```
 
     If you’re creating a new resource mailbox:
 
     ```ps1
-    New-Mailbox -MicrosoftOnlineServicesID &#39;HUB01@contoso.com&#39; -Alias HUB01 -Name "Hub-01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+    New-Mailbox -MicrosoftOnlineServicesID 'HUB01@contoso.com' -Alias HUB01 -Name "Hub-01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
     ```
 
 3.  Create Exchange ActiveSync policy.
@@ -198,9 +202,9 @@ Use this procedure if you use Exchange online.
 
     ```ps1
     Set-Mailbox $acctUpn -Type Regular
-    Set-CASMailbox &#39;HUB01@contoso.com&#39; -ActiveSyncMailboxPolicy $easPolicy
-    Set-Mailbox &#39;HUB01@contoso.com&#39; -Type Room
-    Set-Mailbox &#39;HUB01@contoso.com&#39; -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
+    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy
+    Set-Mailbox 'HUB01@contoso.com' -Type Room
+    Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
     ```
 
 4.  Set Exchange properties.
@@ -208,8 +212,8 @@ Use this procedure if you use Exchange online.
     Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
     ```ps1
-    Set-CalendarProcessing -Identity &#39;HUB01@contoso.com&#39; -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity &#39;HUB01@contoso.com&#39; -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
+    Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+    Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Add email address for your on-prem domain account.
@@ -223,7 +227,7 @@ Use this procedure if you use Exchange online.
 
     - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
     
-        **Important**<br>Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
+        >**Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
     
         ![image showing password dialog box](images/hybriddeployment-02a.png)
     
@@ -252,9 +256,9 @@ Use this procedure if you use Exchange online.
     Once you list out the SKUs, you can add a license using the `Set-MsolUserLicense` cmdlet. In this case, `$strLicense` is the SKU code that you see (for example, *contoso:STANDARDPACK*).
 
     ```ps1
-    Set-MsolUser -UserPrincipalName &#39;HUB01@contoso.com&#39; -UsageLocation &#39;US&#39;
+    Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -UsageLocation 'US'
     Get-MsolAccountSku
-    Set-MsolUserLicense -UserPrincipalName &#39;HUB01@contoso.com&#39; -AddLicenses $strLicense
+    Set-MsolUserLicense -UserPrincipalName 'HUB01@contoso.com' -AddLicenses $strLicense
     ```
 
 9.  Enable the device account with Skype for Business.
@@ -281,7 +285,7 @@ Use this procedure if you use Exchange online.
 
         ```ps1
         Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
-        &#39;sippoolbl20a04.infra.lync.com&#39; -SipAddressType EmailAddress
+        'sippoolbl20a04.infra.lync.com' -SipAddressType EmailAddress
         ```
 
      If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
@@ -306,6 +310,6 @@ Use this procedure if you use Exchange online.
     
     - Click **Save**.
 
-        **Note**<br>You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+        >**Note** You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.

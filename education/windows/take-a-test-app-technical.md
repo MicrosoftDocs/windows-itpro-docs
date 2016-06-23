@@ -1,14 +1,15 @@
 ---
 title: Take a Test app technical reference
 description: The policies and settings applied by the Take a Test app.
-keywords: ["shared cart", "shared PC", "school"]
-ms.prod: W10
+keywords: shared cart, shared PC, school
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
+ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Take a Test app technical reference
+# Take a Test app technical reference (Preview)
 **Applies to:**
 
 -   Windows 10 Insider Preview 
@@ -46,11 +47,11 @@ When Take a Test is running, the following MDM policies are applied to lock down
 | Policy | Description | Value |
 |---|---|---|
 | AllowToasts | Disables toast notifications from being shown | 0 |
-| AllAppStoreAutoUpdate | Disables automatic updates for Windows Store apps that are installed on the PC | 0 |
+| AllowAppStoreAutoUpdate | Disables automatic updates for Windows Store apps that are installed on the PC | 0 |
 | AllowDeviceDiscovery | Disables UI for screen sharing | 0 |
 | AllowInput Panel | Disables the onscreen keyboard which will disable auto-fill | 0 |
 | AllowCortana | Disables Cortana functionality | 0 |
-| AllAutoupdate | Disables Windows Update from starting OS updates | 5 |
+| AllowAutoupdate | Disables Windows Update from starting OS updates | 5 |
 
 ## Allowed functionality
 
@@ -62,20 +63,20 @@ When Take a Test is running, the following functionality is available to student
 
 - Magnifier is available through Windows key + "+" key 
 
-- Full screen mode is compatible  
+    - Full screen mode is compatible  
 
 - The student can press Alt+Tab when locked down. This results in the student being able to switch between the following:
 
     - Take a Test 
     - Assistive technology that may be running 
-    - Lock Screen
+    - Lock Screen (not available if student is using a dedicated test account)
     > **Note** The app will exit if the student signs in to an account from the lock screen. Progress made in the test may be lost or invalidated. 
 
 - The student can exit the test by pressing one of the following key combinations: 
 
     - Ctrl+Alt+Del 
 
-    - Alt+F4
+    - Alt+F4 (**Take a Test** will restart if the student is using a dedicated test account)
 
 
 

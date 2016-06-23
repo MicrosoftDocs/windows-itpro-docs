@@ -1,9 +1,14 @@
 ---
 title: Understanding the BitLocker Encryption Options and BitLocker Drive Encryption Items in Control Panel
 description: Understanding the BitLocker Encryption Options and BitLocker Drive Encryption Items in Control Panel
-ms.assetid: f8a01cc2-0c77-48b9-8351-8194e80b0cf8
 author: jamiejdt
+ms.assetid: f8a01cc2-0c77-48b9-8351-8194e80b0cf8
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Understanding the BitLocker Encryption Options and BitLocker Drive Encryption Items in Control Panel
 

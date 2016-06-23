@@ -2,7 +2,7 @@
 title: Document the Group Policy structure and AppLocker rule enforcement (Windows 10)
 description: This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker.
 ms.assetid: 389ffa8e-11fc-49ff-b0b1-89553e6fb6e5
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft

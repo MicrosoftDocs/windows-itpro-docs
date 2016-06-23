@@ -1,9 +1,14 @@
 ---
 title: Managing Connection Groups
 description: Managing Connection Groups
-ms.assetid: 22c9d3cb-7246-4173-9742-4ba1c24b0a6a
 author: jamiejdt
+ms.assetid: 22c9d3cb-7246-4173-9742-4ba1c24b0a6a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Managing Connection Groups
 

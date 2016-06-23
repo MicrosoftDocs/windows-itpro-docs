@@ -1,9 +1,14 @@
 ---
 title: Applications Results Pane in Server Management Console
 description: Applications Results Pane in Server Management Console
-ms.assetid: 686218bc-6156-40e2-92aa-90981c3d112a
 author: jamiejdt
+ms.assetid: 686218bc-6156-40e2-92aa-90981c3d112a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Applications Results Pane in Server Management Console
 

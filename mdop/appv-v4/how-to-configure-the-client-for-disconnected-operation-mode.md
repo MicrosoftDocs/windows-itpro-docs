@@ -1,9 +1,14 @@
 ---
 title: How to Configure the Client for Disconnected Operation Mode
 description: How to Configure the Client for Disconnected Operation Mode
-ms.assetid: 3b48464a-b8b4-494b-93e3-9a6d9bd74652
 author: jamiejdt
+ms.assetid: 3b48464a-b8b4-494b-93e3-9a6d9bd74652
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure the Client for Disconnected Operation Mode
 

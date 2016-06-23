@@ -2,16 +2,17 @@
 title: Set up Take a Test on multiple PCs
 description: Learn how to set up and use the Take a Test app on multiple PCs.
 keywords: ["shared cart", "shared PC", "school"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
+ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Set up Take a Test on multiple PCs
+# Set up Take a Test on multiple PCs (Preview)
 **Applies to:**
 
--   Windows 10 Insider Preview 
+-   Windows 10 Insider Preview  
 
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
@@ -27,7 +28,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 - Cortana is turned off.
 
 
-**Take a Test** is included in Windows 10 Education. To add **Take a Test** to other editions of Windows 10, see [Add the Take a Test app to Windows 10](take-tests-in-windows-10.md#add-the-take-a-test-app-to-windows-10)
+
 
 ## How you use Take a Test
 
@@ -67,7 +68,7 @@ To configure a dedicated test account on multiple PCs, you can use:
 4. Create a policy that associates the assessment URL to the account, using the following values:
 
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/TesterAccount
-    - **String value** = Enter the account that you created in step 2, using the same account format.
+    - **String value** = Enter the account that you specified in step 2, using the same account format.
     
 5. To take the test, the student signs in to the test account.
 

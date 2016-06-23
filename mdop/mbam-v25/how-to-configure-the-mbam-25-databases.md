@@ -1,9 +1,14 @@
 ---
 title: How to Configure the MBAM 2.5 Databases
 description: How to Configure the MBAM 2.5 Databases
-ms.assetid: 66e1c81b-f785-4398-9175-bb5f112c2a35
 author: jamiejdt
+ms.assetid: 66e1c81b-f785-4398-9175-bb5f112c2a35
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Configure the MBAM 2.5 Databases
 

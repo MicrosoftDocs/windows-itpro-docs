@@ -1,9 +1,14 @@
 ---
 title: DELETE SERVER
 description: DELETE SERVER
-ms.assetid: 4c929639-1c1d-47c3-9225-cc4d7a8736f0
 author: jamiejdt
+ms.assetid: 4c929639-1c1d-47c3-9225-cc4d7a8736f0
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # DELETE SERVER
 

@@ -2,7 +2,11 @@
 title: Online deployment with Office 365 (Surface Hub)
 description: This topic has instructions for adding a device account for your Microsoft Surface Hub when you have a pure, online deployment.
 ms.assetid: D325CA68-A03F-43DF-8520-EACF7C3EDEC1
-keywords: ["device account for Surface Hub", "online deployment"]
+keywords: device account for Surface Hub, online deployment
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -19,7 +23,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-ExecutionPolicy Unrestricted
-    $org=&#39;contoso.microsoft.com&#39;
+    $org='contoso.microsoft.com'
     $cred=Get-Credential $admin@$org
     $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
@@ -30,7 +34,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     If you're changing an existing resource mailbox:
 
     ```PowerShell
-    Set-Mailbox -Identity &#39;HUB01&#39; -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+    Set-Mailbox -Identity 'HUB01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
     ```
 
     If you’re creating a new resource mailbox:
@@ -53,7 +57,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-Mailbox $acctUpn -Type Regular
-    Set-CASMailbox $acctUpn -ActiveSyncMailboxPolicy $easPolicy
+    Set-CASMailbox $acctUpn -ActiveSyncMailboxPolicy $easPolicy.Id
     Set-Mailbox $acctUpn -Type Room
     Set-Mailbox $credNewAccount.UserName -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
     ```
@@ -62,7 +66,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
     ```PowerShell
     Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a <tla rid="surface_hub"/> room!"
+    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Connect to Azure AD.
@@ -134,8 +138,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     -   In the **Assign licenses** section, you need to select Skype for Business (Plan 2) or Skype for Business (Plan 3), depending on your licensing and what you've decided in terms of needing Enterprise Voice. You'll have to use a Plan 3 license if you want to use Enterprise Voice on your Surface Hub.
     -   Click **Save** and you're done.
 
-**Note**<br>
-It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+>**Note**: It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
 

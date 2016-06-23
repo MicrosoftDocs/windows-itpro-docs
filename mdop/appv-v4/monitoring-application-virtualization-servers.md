@@ -1,9 +1,14 @@
 ---
 title: Monitoring Application Virtualization Servers
 description: Monitoring Application Virtualization Servers
-ms.assetid: d84355ae-4fe4-41d9-ac3a-3eaa32d9a61f
 author: jamiejdt
+ms.assetid: d84355ae-4fe4-41d9-ac3a-3eaa32d9a61f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Monitoring Application Virtualization Servers
 

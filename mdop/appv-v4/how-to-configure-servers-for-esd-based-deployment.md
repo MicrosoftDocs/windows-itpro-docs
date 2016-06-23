@@ -1,9 +1,14 @@
 ---
 title: How to Configure Servers for ESD-Based Deployment
 description: How to Configure Servers for ESD-Based Deployment
-ms.assetid: 96208522-3a0c-4606-a10b-fc0ec0a12021
 author: jamiejdt
+ms.assetid: 96208522-3a0c-4606-a10b-fc0ec0a12021
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Configure Servers for ESD-Based Deployment
 

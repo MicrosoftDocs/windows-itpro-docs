@@ -1,9 +1,14 @@
 ---
 title: Managing the UE-V 1.0 Agent and Packages with PowerShell and WMI
 description: Managing the UE-V 1.0 Agent and Packages with PowerShell and WMI
-ms.assetid: c8989b01-1769-4e69-82b1-4aadb261d2d5
 author: jamiejdt
+ms.assetid: c8989b01-1769-4e69-82b1-4aadb261d2d5
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Managing the UE-V 1.0 Agent and Packages with PowerShell and WMI
 

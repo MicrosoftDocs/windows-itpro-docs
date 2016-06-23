@@ -1,9 +1,14 @@
 ---
 title: Request the Creation of a New Controlled GPO
 description: Request the Creation of a New Controlled GPO
-ms.assetid: cb265238-386f-4780-a59a-0c9a4a87d736
 author: jamiejdt
+ms.assetid: cb265238-386f-4780-a59a-0c9a4a87d736
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Request the Creation of a New Controlled GPO
 

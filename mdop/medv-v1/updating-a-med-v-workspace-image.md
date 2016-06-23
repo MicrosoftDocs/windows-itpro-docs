@@ -1,9 +1,14 @@
 ---
 title: Updating a MED-V Workspace Image
 description: Updating a MED-V Workspace Image
-ms.assetid: 1b9c4a73-3487-43d2-98e3-43dbc79e10e3
 author: jamiejdt
+ms.assetid: 1b9c4a73-3487-43d2-98e3-43dbc79e10e3
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Updating a MED-V Workspace Image
 

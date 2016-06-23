@@ -1,9 +1,14 @@
 ---
 title: How to Remove a Package by Using the Command Line
 description: How to Remove a Package by Using the Command Line
-ms.assetid: 47697ec7-20e5-4258-8865-a0a710d41d5a
 author: jamiejdt
+ms.assetid: 47697ec7-20e5-4258-8865-a0a710d41d5a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Remove a Package by Using the Command Line
 

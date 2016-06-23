@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting DaRT 8.0
 description: Troubleshooting DaRT 8.0
-ms.assetid: 0444a390-3251-47f4-b6c8-828d4a2e8af4
 author: jamiejdt
+ms.assetid: 0444a390-3251-47f4-b6c8-828d4a2e8af4
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Troubleshooting DaRT 8.0
 

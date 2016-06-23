@@ -1,9 +1,14 @@
 ---
 title: Managing Printers on a MED-V Workspace
 description: Managing Printers on a MED-V Workspace
-ms.assetid: ba0a65ad-444f-4d18-95eb-8b9fa1a3ffba
 author: jamiejdt
+ms.assetid: ba0a65ad-444f-4d18-95eb-8b9fa1a3ffba
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Managing Printers on a MED-V Workspace
 

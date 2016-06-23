@@ -2,7 +2,7 @@
 title: AppLocker functions (Windows 10)
 description: This topic for the IT professional lists the functions and security levels for the Software Restriction Policies (SRP) and AppLocker features.
 ms.assetid: bf704198-9e74-4731-8c5a-ee0512df34d2
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

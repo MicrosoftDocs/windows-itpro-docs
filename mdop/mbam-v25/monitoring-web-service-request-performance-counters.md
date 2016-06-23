@@ -1,9 +1,14 @@
 ---
 title: Monitoring Web Service Request Performance Counters
 description: Monitoring Web Service Request Performance Counters
-ms.assetid: bdb812a1-465a-4098-b4c0-cb99890d1b0d
 author: jamiejdt
+ms.assetid: bdb812a1-465a-4098-b4c0-cb99890d1b0d
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Monitoring Web Service Request Performance Counters
 

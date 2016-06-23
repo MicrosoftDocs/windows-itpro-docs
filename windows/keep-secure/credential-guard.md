@@ -2,7 +2,7 @@
 title: Protect derived domain credentials with Credential Guard (Windows 10)
 description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -80,7 +80,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>Trusted Platform Module (TPM) version 1.2 or 2.0</p></td>
-<td align="left"><p>TPM 1.2 and 2.0 provides protection for encryption keys that are stored in the firmware and are used by Credential Guard. See the following table to determine which TPM versions are supported on your OS.</p>
+<td align="left"><p>TPM 1.2 and 2.0 provides protection for encryption keys used by virtualization-based security to protect Credential Guard secrets where all other keys are stored. See the following table to determine which TPM versions are supported on your OS.</p>
 <table>
 <th>OS version</th>
 <th>Required TPM</th>
@@ -94,7 +94,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 </table>
 <div class="alert">
-<strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.
+<strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the virtualization-based security keys used to protect Credential Guard secrets will not bound to the TPM. Instead, the keys will be protected in a UEFI Boot Service variable.
 </div>
 </td>
 </tr>
@@ -233,12 +233,16 @@ You can use System Information to ensure that Credential Guard is running on a P
     -   **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.
 -   Passwords are still weak so we recommend that your organization deploy Credential Guard and move away from passwords and to other authentication methods, such as physical smart cards, virtual smart cards, Microsoft Passport, or Microsoft Passport for Work.
 -   Some 3rd party Security Support Providers (SSPs and APs) might not be compatible with Credential Guard. Credential Guard does not allow 3rd party SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs are not supported. We recommend that custom implementations of SSPs/APs are tested against Credential Guard to ensure that the SSPs and APs do not depend on any undocumented or unsupported behaviors. For example, using the KerbQuerySupplementalCredentialsMessage API is not supported. You should not replace the NTLM or Kerberos SSPs with custom SSPs and APs. For more info, see [Restrictions around Registering and Installing a Security Package](http://msdn.microsoft.com/library/windows/desktop/dn865014.aspx) on MSDN.
--   As the depth and breadth of protections provided by Credential Guard are increased, subsequent releases of Windows 10 with Credential Guard running may impact scenarios that were working in the past. For example, Credential Guard may block the use of a particular type of credential or a particular component to prevent malware from taking advantage of vulnerabilities. Therefore, we recommend that scenarios required for operations in an organization are tested before upgrading a device that has Credential Guard running.
+-   As the depth and breadth of protections provided by Credential Guard are increased, subsequent releases of Windows 10 with Credential Guard running may impact scenarios that were working in the past. For example, Credential Guard may block the use of a particular type of credential or a particular component to prevent malwar efrom taking advantage of vulnerabilities. Therefore, we recommend that scenarios required for operations in an organization are tested before upgrading a device that has Credential Guard running.
 -   If you are using Wi-Fi and VPN end points that are based on MS-CHAPv2, they are subject to similar attacks as NTLMv1. We recommend that organizations use certificated-based authentication for Wi-Fi and VPN connections.
 -   Starting with Windows 10, version 1511, domain credentials that are stored with Credential Manager are protected with Credential Guard. Credential Manager allows you to store credentials, such as user names and passwords that you use to log on to websites or other computers on a network. The following considerations apply to the Credential Guard protections for Credential Manager:
-    -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password.
+    -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password. Attempts to use saved credentials will fail, displaying the error message "Logon attempt failed".
     -   Applications that extract derived domain credentials from Credential Manager will no longer be able to use those credentials.
     -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
+
+### Kerberos Considerations
+
+When you enable Credential Guard, you can no longer use Kerberos unconstrained delegation. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process. You must use constrained or resource-based Kerberos delegation instead.
     
 ## Scenarios not protected by Credential Guard
 
@@ -250,6 +254,10 @@ Some ways to store credentials are not protected by Credential Guard, including:
 -   Key loggers
 -   Physical attacks
 -   Does not prevent an attacker with malware on the PC from using the privileges associated with any credential. We recommend using dedicated PCs for high value accounts, such as IT Pros and users with access high value assets in your organization.
+-   Third-party security packages
+-   Digest and CredSSP credentials
+    -   When Credential Guard is enabled, neither Digest nor CredSSP have access to users' logon credentials. This implies no Single Sign-On use for these protocols.
+-   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.
 
 ## Additional mitigations
 

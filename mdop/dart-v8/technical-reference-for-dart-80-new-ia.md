@@ -1,9 +1,14 @@
 ---
 title: Technical Reference for DaRT 8.0
 description: Technical Reference for DaRT 8.0
-ms.assetid: 1d0bf98b-b56b-4ce6-ad19-eb85e1ff1287
 author: jamiejdt
+ms.assetid: 1d0bf98b-b56b-4ce6-ad19-eb85e1ff1287
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Technical Reference for DaRT 8.0
 

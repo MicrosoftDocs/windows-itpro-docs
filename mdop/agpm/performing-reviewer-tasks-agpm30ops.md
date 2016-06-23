@@ -1,9 +1,14 @@
 ---
 title: Performing Reviewer Tasks
 description: Performing Reviewer Tasks
-ms.assetid: 1faf396d-be0d-49ac-b063-0722fda2e43d
 author: jamiejdt
+ms.assetid: 1faf396d-be0d-49ac-b063-0722fda2e43d
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Performing Reviewer Tasks
 

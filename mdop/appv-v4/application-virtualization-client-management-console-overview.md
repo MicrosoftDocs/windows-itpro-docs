@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Client Management Console Overview
 description: Application Virtualization Client Management Console Overview
-ms.assetid: 21d648cc-eca5-475c-be42-228879b7a45a
 author: jamiejdt
+ms.assetid: 21d648cc-eca5-475c-be42-228879b7a45a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Client Management Console Overview
 

@@ -3,7 +3,7 @@ title: New policies for Windows 10 (Windows 10)
 description: Windows 10 includes the following new policies for management, in addition to policies that were available for Windows 8.1 and Windows Phone 8.1.
 ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
 keywords: ["MDM", "Group Policy"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS

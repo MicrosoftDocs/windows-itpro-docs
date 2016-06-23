@@ -2,7 +2,7 @@
 description: Review the file types that are created and used by tools in the Internet Explorer Administration Kit 11 (IEAK 11).
 ms.assetid: e5735074-3e9b-4a00-b1a7-b8fd8baca327
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: plan
 ms.sitesec: library
 title: File types used or created by IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)

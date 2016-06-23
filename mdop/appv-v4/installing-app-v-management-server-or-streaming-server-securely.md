@@ -1,9 +1,14 @@
 ---
 title: Installing App-V Management Server or Streaming Server Securely
 description: Installing App-V Management Server or Streaming Server Securely
-ms.assetid: d2a51a81-a80f-427c-a727-611e1eb74f02
 author: jamiejdt
+ms.assetid: d2a51a81-a80f-427c-a727-611e1eb74f02
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Installing App-V Management Server or Streaming Server Securely
 

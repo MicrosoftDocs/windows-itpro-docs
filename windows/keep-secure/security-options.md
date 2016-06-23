@@ -2,7 +2,7 @@
 title: Security Options (Windows 10)
 description: Provides an introduction to the settings under Security Options of the local security policies and links to information about each setting.
 ms.assetid: 405ea253-8116-4e57-b08e-14a8dcdca92b
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -77,7 +77,7 @@ For info about setting security policies, see [Configure security policy setting
 | [Network access: Do not allow anonymous enumeration of SAM accounts](network-access-do-not-allow-anonymous-enumeration-of-sam-accounts.md)| Describes the best practices, location, values, and security considerations for the **Network access: Do not allow anonymous enumeration of SAM accounts** security policy setting. |
 | [Network access: Do not allow anonymous enumeration of SAM accounts and shares](network-access-do-not-allow-anonymous-enumeration-of-sam-accounts-and-shares.md)| Describes the best practices, location, values, and security considerations for the **Network access: Do not allow anonymous enumeration of SAM accounts and shares** security policy setting. |
 | [Network access: Do not allow storage of passwords and credentials for network authentication](network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication.md)| Describes the best practices, location, values, policy management and security considerations for the **Network access: Do not allow storage of passwords and credentials for network authentication** security policy setting. |
-| [Network access: Let Everyone permissions apply to anonymous users](network-access-let-everyone-permissions-apply-to-anonmous-users.md)| Describes the best practices, location, values, policy management and security considerations for the **Network access: Let Everyone permissions apply to anonymous users** security policy setting. |
+| [Network access: Let Everyone permissions apply to anonymous users](network-access-let-everyone-permissions-apply-to-anonymous-users.md)| Describes the best practices, location, values, policy management and security considerations for the **Network access: Let Everyone permissions apply to anonymous users** security policy setting. |
 | [Network access: Named Pipes that can be accessed anonymously](network-access-named-pipes-that-can-be-accessed-anonymously.md)| Describes the best practices, location, values, policy management and security considerations for the **Network access: Named Pipes that can be accessed anonymously** security policy setting. |
 | [Network access: Remotely accessible registry paths](network-access-remotely-accessible-registry-paths.md)| Describes the best practices, location, values, policy management and security considerations for the **Network access: Remotely accessible registry paths** security policy setting.| 
 | [Network access: Remotely accessible registry paths and subpaths](network-access-remotely-accessible-registry-paths-and-subpaths.md)| Describes the best practices, location, values, and security considerations for the **Network access: Remotely accessible registry paths and subpaths** security policy setting. |

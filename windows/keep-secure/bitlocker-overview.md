@@ -2,7 +2,7 @@
 title: BitLocker (Windows 10)
 description: This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
 ms.assetid: 40526fcc-3e0d-4d75-90e0-c7d0615f33b2
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -77,3 +77,5 @@ When installing the BitLocker optional component on a server you will also need 
 | [BitLocker Recovery Guide](bitlocker-recovery-guide-plan.md)| This topic for IT professionals describes how to recover BitLocker keys from AD DS. |
 | [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md)| This detailed guide will help you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device’s configuration. |
 | [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This topic for IT pros describes how to protect CSVs and SANs with BitLocker.| 
+
+If you're looking for info on how to use it with Windows 10 IoT Core, see [Enabling Secure Boot and BitLocker Device Encryption on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/win10/SB_BL.htm).

@@ -1,9 +1,14 @@
 ---
 title: CONFIGURE PACKAGE
 description: CONFIGURE PACKAGE
-ms.assetid: acc7eaa8-6ada-47b9-a655-2ca2537605b9
 author: jamiejdt
+ms.assetid: acc7eaa8-6ada-47b9-a655-2ca2537605b9
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # CONFIGURE PACKAGE
 

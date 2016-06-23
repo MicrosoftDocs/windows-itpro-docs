@@ -2,7 +2,11 @@
 title: Appendix PowerShell (Surface Hub)
 description: PowerShell scripts to help set up and manage your Microsoft Surface Hub .
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
-keywords: ["PowerShell", "set up Surface Hub", "manage Surface Hub"]
+keywords: PowerShell, set up Surface Hub, manage Surface Hub
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -38,7 +42,7 @@ What do you need in order to run the scripts?
 -   Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 -   Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.
 
-**Note**  Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.
+>**Note**  Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly. You should always run the validation script before adding a device account to Surface Hub.
 
  
 
@@ -304,7 +308,7 @@ PrintAction "Creating a new account..."
 try
 {
     $mailbox = $null
-    $mailbox = (New-Mailbox -UserPrincipalName $credNewAccount.UserName -Alias $credNewAccount.UserName.substring(0,$credNewAccount.UserName.indexOf(&#39;@&#39;)) -room -Name $strDisplayName -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true)
+    $mailbox = (New-Mailbox -UserPrincipalName $credNewAccount.UserName -Alias $credNewAccount.UserName.substring(0,$credNewAccount.UserName.indexOf('@')) -room -Name $strDisplayName -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true)
 } catch { }
 ExitIfError "Failed to create a new mailbox on exchange.";
 $status["Mailbox Setup"] = "Successfully created a mailbox for the new account"
@@ -316,9 +320,9 @@ PrintSuccess "The following mailbox has been created for this room: $strEmail"
 
 ## Create or retrieve a policy that will be applied to surface hub devices ##
 # The policy disables requiring a device password so that the SurfaceHub does not need to be lockable to use Active Sync
-$strPolicy = Read-Host &#39;Please enter the name for a new Surface Hub ActiveSync policy that will be created and applied to this account.
+$strPolicy = Read-Host 'Please enter the name for a new Surface Hub ActiveSync policy that will be created and applied to this account.
 We will configure that policy to be compatible with Surface Hub devices.
-If this script has been used before, please enter the name of the existing policy.&#39;
+If this script has been used before, please enter the name of the existing policy.'
 
 $easpolicy = $null
 try {
@@ -444,11 +448,11 @@ try {
 } catch { }
 if ($Error)
 {
-    $status["Calendar Response Configuration"] = "Failed to configure the account&#39;s response properties"
+    $status["Calendar Response Configuration"] = "Failed to configure the account's response properties"
 }
 else
 {
-    $status["Calendar Response Configuration"] = "Successfully configured the account&#39;s response properties"
+    $status["Calendar Response Configuration"] = "Successfully configured the account's response properties"
 }
 
 $Error.Clear()
@@ -688,9 +692,9 @@ PrintSuccess "The following mailbox has been created for this room: $strEmail"
 
 ## Create or retrieve a policy that will be applied to surface hub devices ##
 # The policy disables requiring a device password so that the SurfaceHub does not need to be lockable to use Active Sync
-$strPolicy = Read-Host &#39;Please enter the name for a new Surface Hub ActiveSync policy that will be created and applied to this account.
+$strPolicy = Read-Host 'Please enter the name for a new Surface Hub ActiveSync policy that will be created and applied to this account.
 We will configure that policy to be compatible with Surface Hub devices.
-If this script has been used before, please enter the name of the existing policy.&#39;
+If this script has been used before, please enter the name of the existing policy.'
 
 $easpolicy = $null
 try {
@@ -820,11 +824,11 @@ try {
 } catch { }
 if ($Error)
 {
-    $status["Calendar Response Configuration"] = "Failed to configure the account&#39;s response properties"
+    $status["Calendar Response Configuration"] = "Failed to configure the account's response properties"
 }
 else
 {
-    $status["Calendar Response Configuration"] = "Successfully configured the account&#39;s response properties"
+    $status["Calendar Response Configuration"] = "Successfully configured the account's response properties"
 }
 
 $Error.Clear()
@@ -862,7 +866,7 @@ catch {}
 $Error.Clear()
 if (![System.String]::IsNullOrEmpty($strRegPool))
 {
-    $strRegPool = $strRegPool.Substring($strRegPool[0].IndexOf(&#39;:&#39;) + 1)
+    $strRegPool = $strRegPool.Substring($strRegPool[0].IndexOf(':') + 1)
 }
 <#
 $strRegPoolEntry = Read-Host "Enter a Skype for Business Registrar Pool, or leave blank to use [$strRegPool]"
@@ -923,7 +927,7 @@ else
     $iLicenseIndex = 0;
     do
     {
-        $iLicenseIndex = Read-Host &#39;Choose the number for the SKU you want to pick&#39;
+        $iLicenseIndex = Read-Host 'Choose the number for the SKU you want to pick'
     } while ($iLicenseIndex -lt 1 -or $iLicenseIndex -gt $skus.Length)
     $strLicenses = $skus[$iLicenseIndex - 1].AccountSkuId
 
@@ -1057,7 +1061,7 @@ function ExitIfError($strMsg)
 }
 
 $strUpn = Read-Host "What is the email address of the account you wish to validate?"
-if (!$strUpn.Contains(&#39;@&#39;))
+if (!$strUpn.Contains('@'))
 {
     CleanupAndFail "$strUpn is not a valid email address"
 }
@@ -1188,7 +1192,7 @@ if ($fHasOnline)
     } 
     catch
     {
-        # This really shouldn&#39;t happen unless there is a network error
+        # This really shouldn't happen unless there is a network error
         CleanupAndFail "Failed to connect to MSOnline"
     }
 }
@@ -1243,8 +1247,8 @@ $credLinkedDomain = $Null
 if (!$fExIsOnline -and ![System.String]::IsNullOrEmpty($mailbox.LinkedMasterAccount) -and !$mailbox.LinkedMasterAccount.EndsWith("\SELF"))
 {
     $strLinkedAccount = $mailbox.LinkedMasterAccount
-    $strLinkedDomain = $strLinkedAccount.substring(0,$strLinkedAccount.IndexOf(&#39;\&#39;))
-    $strLinkedUser = $strLinkedAccount.substring($strLinkedAccount.IndexOf(&#39;\&#39;) + 1)
+    $strLinkedDomain = $strLinkedAccount.substring(0,$strLinkedAccount.IndexOf('\'))
+    $strLinkedUser = $strLinkedAccount.substring($strLinkedAccount.IndexOf('\') + 1)
     $strLinkedServer = Read-Host "What is the domain controller for the $strLinkedDomain"
     $credLinkedDomain = (Get-Credential -Message "Please provide credentials for $strLinkedDomain")
 }
@@ -1272,7 +1276,7 @@ function Validate()
         [switch]$WarningOnly
     )
 
-    Write-Host -NoNewline -ForegroundColor White $Test.PadRight(100,&#39;.&#39;)
+    Write-Host -NoNewline -ForegroundColor White $Test.PadRight(100,'.')
     if ($Condition)
     {
         Write-Host -ForegroundColor Green "Passed"
@@ -1297,7 +1301,7 @@ function Validate()
 
 Validate -WarningOnly -Test "The mailbox $strUpn is enabled as a room account" -Condition ($mailbox.RoomMailboxAccountEnabled -eq $True) -FailureMsg "RoomMailboxEnabled - without a device account, the Surface Hub will not be able to use various key features."
 $calendarProcessing = Get-CalendarProcessing -Identity $strUpn -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
-Validate -Test "The mailbox $strUpn is configured to accept meeting requests" -Condition ($calendarProcessing -ne $null -and $calendarProcessing.AutomateProcessing -eq &#39;AutoAccept&#39;) -FailureMsg "AutomateProcessing - the Surface Hub will not be able to send mail or sync its calendar."
+Validate -Test "The mailbox $strUpn is configured to accept meeting requests" -Condition ($calendarProcessing -ne $null -and $calendarProcessing.AutomateProcessing -eq 'AutoAccept') -FailureMsg "AutomateProcessing - the Surface Hub will not be able to send mail or sync its calendar."
 Validate -WarningOnly -Test "The mailbox $strUpn will not delete meeting comments" -Condition ($calendarProcessing -ne $null -and !$calendarProcessing.DeleteComments) -FailureMsg "DeleteComments - the Surface Hub may be missing some meeting information on the welcome screen and Skype."
 Validate -WarningOnly -Test "The mailbox $strUpn keeps private meetings private" -Condition ($calendarProcessing -ne $null -and !$calendarProcessing.RemovePrivateProperty) -FailureMsg "RemovePrivateProperty - the Surface Hub will make show private meetings."
 Validate -Test "The mailbox $strUpn keeps meeting subjects" -Condition ($calendarProcessing -ne $null -and !$calendarProcessing.DeleteSubject) -FailureMsg "DeleteSubject - the Surface Hub will not keep meeting subject information."
@@ -1342,10 +1346,10 @@ if ($casMailbox)
 # Check the default access level
 $orgSettings = Get-ActiveSyncOrganizationSettings
 $strDefaultAccessLevel = $orgSettings.DefaultAccessLevel
-Validate -Test "ActiveSync devices are allowed" -Condition ($strDefaultAccessLevel -eq &#39;Allow&#39;) -FailureMsg "DeviceType Windows Mail is accessible - devices are not allowed by default - the surface hub will not be able to send mail or sync its calendar."
+Validate -Test "ActiveSync devices are allowed" -Condition ($strDefaultAccessLevel -eq 'Allow') -FailureMsg "DeviceType Windows Mail is accessible - devices are not allowed by default - the surface hub will not be able to send mail or sync its calendar."
 
 # Check if there exists a device access rule that bans the device type Windows Mail
-$blockingRules = Get-ActiveSyncDeviceAccessRule | where {($_.AccessLevel -eq &#39;Block&#39; -or $_.AccessLevel -eq &#39;Quarantine&#39;) -and $_.Characteristic -eq &#39;DeviceType&#39;-and $_.QueryString -eq &#39;WindowsMail&#39;}
+$blockingRules = Get-ActiveSyncDeviceAccessRule | where {($_.AccessLevel -eq 'Block' -or $_.AccessLevel -eq 'Quarantine') -and $_.Characteristic -eq 'DeviceType'-and $_.QueryString -eq 'WindowsMail'}
 Validate -Test "Windows mail devices are not blocked or quarantined" -Condition ($blockingRules -eq $null -or $blockingRules.Length -eq 0) -FailureMsg "DeviceType Windows Mail is accessible - devices are blocked or quaratined - the surface hub will not be able to send mail or sync its calendar."
 
 ## End Exchange ##
@@ -1386,7 +1390,7 @@ if ($fHasOnline)
     Validate -Test "There is an online user account for $strUpn" -Condition ($accountOnline -ne $null) -FailureMsg "Could not find a Microsoft Online account for this user even though some services are online"
     if ($accountOnline)
     {
-        Validate -Test "The password for $strUpn will not expire" -Condition ($accountOnline.PasswordNeverExpires -eq $True) -FailureMsg "PasswordNeverExpires - the admin will need to update the device account&#39;s password on the Surface Hub when it expires."
+        Validate -Test "The password for $strUpn will not expire" -Condition ($accountOnline.PasswordNeverExpires -eq $True) -FailureMsg "PasswordNeverExpires - the admin will need to update the device account's password on the Surface Hub when it expires."
         if ($fIsSfbOnline -and !$fIsExOnline)
         {
             $strLicenseFailureMsg = "Has O365 license - The devices will not be able to use Skype for Business services."
@@ -1422,7 +1426,7 @@ if ($fHasOnPrem)
     Validate -Test "There is a user account for $strOnPremUpn" -Condition ($accountOnprem -ne $null) -FailureMsg "Could not find an Active Directory account for this user"
     if ($accountOnPrem)
     {
-        Validate -WarningOnly -Test "The password for $strOnPremUpn will not expire" -Condition ($accountOnprem.PasswordNeverExpires -eq $True) -FailureMsg "PasswordNeverExpires - the admin will need to update the device account&#39;s password on the Surface Hub when it expires."
+        Validate -WarningOnly -Test "The password for $strOnPremUpn will not expire" -Condition ($accountOnprem.PasswordNeverExpires -eq $True) -FailureMsg "PasswordNeverExpires - the admin will need to update the device account's password on the Surface Hub when it expires."
         Validate -Test "$strOnPremUpn is enabled" -Condition $accountOnPrem.Enabled -FailureMsg "AccountEnabled - this device account will not sign in"
     }
 }
@@ -1525,7 +1529,7 @@ else
 
 ## Collect account data ##
 Write-Host "-----------  Enter info for the account to enable  -----------." -foregroundcolor "magenta"
-$strRoomUri=Read-Host &#39;Please enter the UPN of the account you are enabling (e.g. confroom@surfacehub.microsoft.com)&#39;
+$strRoomUri=Read-Host 'Please enter the UPN of the account you are enabling (e.g. confroom@surfacehub.microsoft.com)'
 
 if ([System.String]::IsNullOrEmpty($strRoomUri))
 {
@@ -1582,7 +1586,7 @@ if ($online)
     }
     else
     {
-        $strRegPool = $strRegPool[0].Substring($strRegPool[0].IndexOf(&#39;:&#39;) + 1)
+        $strRegPool = $strRegPool[0].Substring($strRegPool[0].IndexOf(':') + 1)
     }
 }
 
@@ -1669,7 +1673,7 @@ Set-CalendarProcessing $ strRoomUpn -AutomateProcessing AutoAccept
 
 For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests. Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.
 
-**Note**  If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.
+>**Note**  If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.
 
  
 

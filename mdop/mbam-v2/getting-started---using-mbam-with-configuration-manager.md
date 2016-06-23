@@ -1,9 +1,14 @@
 ---
 title: Getting Started - Using MBAM with Configuration Manager
 description: Getting Started - Using MBAM with Configuration Manager
-ms.assetid: b0a1d3cc-0b01-4b69-a2cd-fd09fb3beda4
 author: jamiejdt
+ms.assetid: b0a1d3cc-0b01-4b69-a2cd-fd09fb3beda4
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Getting Started - Using MBAM with Configuration Manager
 

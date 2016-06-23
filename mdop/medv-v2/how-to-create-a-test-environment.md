@@ -1,9 +1,14 @@
 ---
 title: How to Create a Test Environment
 description: How to Create a Test Environment
-ms.assetid: a0db2299-16f3-4516-8769-7d55ca4a1e98
 author: jamiejdt
+ms.assetid: a0db2299-16f3-4516-8769-7d55ca4a1e98
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Create a Test Environment
 

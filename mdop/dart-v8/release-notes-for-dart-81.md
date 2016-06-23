@@ -1,9 +1,14 @@
 ---
 title: Release Notes for DaRT 8.1
 description: Release Notes for DaRT 8.1
-ms.assetid: 44303107-60f4-485c-848a-7e0529f142d4
 author: jamiejdt
+ms.assetid: 44303107-60f4-485c-848a-7e0529f142d4
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Release Notes for DaRT 8.1
 

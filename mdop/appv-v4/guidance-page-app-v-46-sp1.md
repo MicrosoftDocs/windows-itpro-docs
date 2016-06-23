@@ -1,9 +1,14 @@
 ---
 title: Guidance Page
 description: Guidance Page
-ms.assetid: 2d461f7e-bde0-4f20-bfc1-46d52feb701e
 author: jamiejdt
+ms.assetid: 2d461f7e-bde0-4f20-bfc1-46d52feb701e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Guidance Page
 
