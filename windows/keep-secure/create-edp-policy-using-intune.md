@@ -75,7 +75,8 @@ The steps to add your apps are based on the type of app it is; either a Universa
         }
         ```
     4.  Copy the `publisherCertificateName` value into the **Publisher Name** box and copy the `packageIdentityName` value into the **Product Name** box of Intune.
-     <p>**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+    
+    >**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     <p>For example:<br>
      ``` json
         {
@@ -251,7 +252,8 @@ If you have multiple domains, you must separate them with the "|" character. For
     ![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
 
 ## Choose where apps can access enterprise data
-After you've added a protection level to your apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.
+After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.<p>
+There are no default locations included with EDP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares.  Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT). 
 
 >**Important**<br>
 -   Every EDP policy should include policy that defines your enterprise network locations.<p>
@@ -325,7 +327,7 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1.
 
-    **Important**<br> 
+    >**Important**<br> 
     Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
 
 4. Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic. 
