@@ -18,7 +18,7 @@ author: greg-lindsay
 
 This topic provides a summary of available upgrade paths to Windows 10. You can upgrade to Windows 10 from Windows 7 or a later operating system. This includes upgrading from one release of Windows 10 to later release of Windows 10. Migrating from one edition of Windows 10 to a different edition of the same release is also supported. For more information about migrating to a different edition of Windows 10, see [Windows 10 edition upgrade](windows-10-edition-upgrades.md).
 
->**Windows N/KN**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.  
+>**Windows N/KN**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.  
 
 >**Free upgrade**: Some upgrade paths qualify for a free upgrade using Windows Update. For a list of upgrade paths that are available as part of the free upgrade offer, see [Free upgrade paths](#bkmk-free-table).
 
