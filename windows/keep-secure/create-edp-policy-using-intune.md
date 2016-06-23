@@ -210,6 +210,7 @@ If you're running into compatibility issues where your app is incompatible with 
 After you've added the apps you want to protect with EDP, you'll need to apply a management and protection mode.
 
 We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your **Protected Apps** list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
+
 <table>
     <tr>
         <th>Mode</th>
@@ -259,7 +260,6 @@ After you've added a protection level to your apps, you'll need to decide where 
 **To specify where your protected apps can find and send enterprise data on the network**
 
 1.  Add additional network locations your apps can access by clicking **Add**, typing a description into the **Description** box, and then choosing your location type, including:
-
     <table>
         <tr>
             <th>Network location type</th>
