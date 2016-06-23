@@ -45,12 +45,12 @@ You can use Remote Credential Guard on the client device by setting a Group Poli
 
 ### Turn on Remote Credential Guard by using Group Policy
 
-1. From the Group Policy Management Console, go to Computer Configuration -> Administrative Templates -> System -> Credentials Delegation.
-2. Double-click Restrict delegation of credentials to remote servers.
+1. From the Group Policy Management Console, go to **Computer Configuration** -> **Administrative Templates** -> **System** -> **Credentials Delegation**.
+2. Double-click **Restrict delegation of credentials to remote servers**.
 3. In the Use the following restricted mode box:
-    - If you want to require Remote Credential Guard, choose Require Credential Guard.
-    - If you want to allow Remote Credential Guard choose Prefer Remote Credential Guard.
-4. Click OK.
+    - If you want to require Remote Credential Guard, choose **Require Credential Guard**.
+    - If you want to allow Remote Credential Guard choose **Prefer Remote Credential Guard**.
+4. Click **OK**.
 
     ![Remote Credential Guard Group Policy](images/remote-credential-guard-gp.png)
 
