@@ -60,7 +60,7 @@ The following steps show you how to create a deployment share for Windows 10 th
   >**Note:**&nbsp;&nbsp;As of SDA version 1.96.0405, SDA will install only the components of the Windows ADK that are required for deployment, as follows:
     * Deployment tools
     * User State Migration Tool (USMT)
-    * Windows Preinstallation Environment (WinPE)
+    * Windows Preinstallation Environment (WinPE)</br>
 
   >**Note:**&nbsp;&nbsp;As of SDA version 1.96.0405, SDA will install and use MDT 2013 Update 2. Earlier versions of SDA are compatible only with MDT 2013 Update 1.
 
