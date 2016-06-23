@@ -14,13 +14,13 @@ author: greg-lindsay
 -   Windows 10
 -   Windows 10 Mobile
 
-## Available upgrade paths
+## Upgrade paths
 
-The following table provides a summary of available upgrade paths to Windows 10. The table includes information about upgrading from an existing release of Windows 10 to a newer release of Windows 10. Migration from one edition of Windows 10 to a different edition is also supported. For more information about methods used to upgrade the edition of Windows 10, see [Windows 10 edition upgrade](windows-10-edition-upgrades.md).
+This topic provides a summary of available upgrade paths to Windows 10. You can upgrade to Windows 10 from Windows 7 or a later operating system. This includes upgrading from one release of Windows 10 to later release of Windows 10. Migrating from one edition of Windows 10 to a different edition of the same release is also supported. For more information about migrating to a different edition of Windows 10, see [Windows 10 edition upgrade](windows-10-edition-upgrades.md).
 
-**Note**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.  
+>**Windows N/KN**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.  
 
-Some upgrade paths qualify for a free upgrade. For a list of upgrade paths that are available as part of the free upgrade offer, see [Free upgrade paths](## Free upgrade paths).
+>**Free upgrade**: Some upgrade paths qualify for a free upgrade using Windows Update. For a list of upgrade paths that are available as part of the free upgrade offer, see [Free upgrade paths](#bkmk-free-table).
 
 ✔ = Full upgrade is supported including personal data, settings, and applications.<BR>
 D = Edition downgrade; personal data is maintained, applications and settings are removed.
@@ -347,6 +347,8 @@ Windows 10 is offered as a free upgrade for the first year after launch of Windo
 For a list of frequently asked questions about the free upgrade to Windows 10, see [Upgrade to Windows 10: FAQ](http://windows.microsoft.com/en-us/windows-10/upgrade-to-windows-10-faq)
 
 The following table summarizes the free upgrade paths to Windows 10.
+
+## <a href="" id="bkmk-free-table"></a>
 
 <table border="1" cellpadding="3">
     <tr>
