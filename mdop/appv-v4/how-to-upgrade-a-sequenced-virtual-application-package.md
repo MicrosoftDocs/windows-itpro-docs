@@ -1,9 +1,14 @@
 ---
 title: How to Upgrade a Sequenced Virtual Application Package
 description: How to Upgrade a Sequenced Virtual Application Package
-ms.assetid: ffa989f3-6621-4c59-9599-e3c3b3332f67
 author: jamiejdt
+ms.assetid: ffa989f3-6621-4c59-9599-e3c3b3332f67
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Upgrade a Sequenced Virtual Application Package
 

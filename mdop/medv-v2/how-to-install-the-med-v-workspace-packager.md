@@ -1,9 +1,14 @@
 ---
 title: How to Install the MED-V Workspace Packager
 description: How to Install the MED-V Workspace Packager
-ms.assetid: 627478e9-6798-4b32-9a50-7a1b72bea295
 author: jamiejdt
+ms.assetid: 627478e9-6798-4b32-9a50-7a1b72bea295
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Install the MED-V Workspace Packager
 

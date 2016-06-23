@@ -1,9 +1,14 @@
 ---
 title: How to Perform General Administrative Tasks in the App-V Client Management Console
 description: How to Perform General Administrative Tasks in the App-V Client Management Console
-ms.assetid: 22abdb1e-ab35-440d-bf74-d358dd1a6558
 author: jamiejdt
+ms.assetid: 22abdb1e-ab35-440d-bf74-d358dd1a6558
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Perform General Administrative Tasks in the App-V Client Management Console
 

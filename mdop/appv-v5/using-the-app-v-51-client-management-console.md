@@ -1,9 +1,14 @@
 ---
 title: Using the App-V 5.1 Client Management Console
 description: Using the App-V 5.1 Client Management Console
-ms.assetid: be6d4e35-5701-4f9a-ba8a-bede12662cf1
 author: jamiejdt
+ms.assetid: be6d4e35-5701-4f9a-ba8a-bede12662cf1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Using the App-V 5.1 Client Management Console
 

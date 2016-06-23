@@ -1,9 +1,14 @@
 ---
 title: Deploying the DaRT 7.0 Recovery Image
 description: Deploying the DaRT 7.0 Recovery Image
-ms.assetid: 6bba7bff-800f-44e4-bcfc-e143115607ca
 author: jamiejdt
+ms.assetid: 6bba7bff-800f-44e4-bcfc-e143115607ca
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Deploying the DaRT 7.0 Recovery Image
 

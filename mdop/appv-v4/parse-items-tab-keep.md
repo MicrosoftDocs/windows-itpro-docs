@@ -1,9 +1,14 @@
 ---
 title: Parse Items Tab
 description: Parse Items Tab
-ms.assetid: bdf3fe0d-404a-4745-af52-f415fa321564
 author: jamiejdt
+ms.assetid: bdf3fe0d-404a-4745-af52-f415fa321564
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Parse Items Tab
 

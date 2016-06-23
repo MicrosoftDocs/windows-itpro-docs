@@ -1,9 +1,14 @@
 ---
 title: Performing Editor Tasks
 description: Performing Editor Tasks
-ms.assetid: d4ac3277-2557-41cf-ac90-5adb6c30687c
 author: jamiejdt
+ms.assetid: d4ac3277-2557-41cf-ac90-5adb6c30687c
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Performing Editor Tasks
 

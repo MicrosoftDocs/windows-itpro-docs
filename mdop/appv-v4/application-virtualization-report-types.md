@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Report Types
 description: Application Virtualization Report Types
-ms.assetid: 232ef25e-11a0-49fb-b4b3-54ac83577383
 author: jamiejdt
+ms.assetid: 232ef25e-11a0-49fb-b4b3-54ac83577383
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Report Types
 

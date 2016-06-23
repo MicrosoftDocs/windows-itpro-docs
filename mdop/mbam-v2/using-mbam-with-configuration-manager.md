@@ -1,9 +1,14 @@
 ---
 title: Using MBAM with Configuration Manager
 description: Using MBAM with Configuration Manager
-ms.assetid: 03868717-4aa7-4897-8166-9a3df5e9519e
 author: jamiejdt
+ms.assetid: 03868717-4aa7-4897-8166-9a3df5e9519e
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Using MBAM with Configuration Manager
 

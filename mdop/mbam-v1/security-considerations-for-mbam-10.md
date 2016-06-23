@@ -1,9 +1,14 @@
 ---
 title: Security Considerations for MBAM 1.0
 description: Security Considerations for MBAM 1.0
-ms.assetid: 5e1c8b8c-235b-4a92-8b0b-da50dca17353
 author: jamiejdt
+ms.assetid: 5e1c8b8c-235b-4a92-8b0b-da50dca17353
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Security Considerations for MBAM 1.0
 

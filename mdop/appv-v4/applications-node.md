@@ -1,9 +1,14 @@
 ---
 title: Applications Node
 description: Applications Node
-ms.assetid: ded79569-8a3f-47ab-b135-0836bbb039f3
 author: jamiejdt
+ms.assetid: ded79569-8a3f-47ab-b135-0836bbb039f3
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Applications Node
 

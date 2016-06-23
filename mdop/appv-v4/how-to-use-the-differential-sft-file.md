@@ -1,9 +1,14 @@
 ---
 title: How to Use the Differential SFT File
 description: How to Use the Differential SFT File
-ms.assetid: 607e30fd-2f0e-4e2f-b669-0b3f010aebb0
 author: jamiejdt
+ms.assetid: 607e30fd-2f0e-4e2f-b669-0b3f010aebb0
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Use the Differential SFT File
 

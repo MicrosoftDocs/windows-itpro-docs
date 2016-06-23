@@ -1,9 +1,14 @@
 ---
 title: Sequencer Command-Line Parameters
 description: Sequencer Command-Line Parameters
-ms.assetid: 28fb875a-c302-4d95-b2e0-8dc0c5dbb0f8
 author: jamiejdt
+ms.assetid: 28fb875a-c302-4d95-b2e0-8dc0c5dbb0f8
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Sequencer Command-Line Parameters
 

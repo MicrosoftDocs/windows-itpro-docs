@@ -1,9 +1,14 @@
 ---
 title: Packaging Method (Learn More)
 description: Packaging Method (Learn More)
-ms.assetid: 3975a640-1ffd-4b4c-95fd-608469f4c205
 author: jamiejdt
+ms.assetid: 3975a640-1ffd-4b4c-95fd-608469f4c205
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Packaging Method (Learn More)
 

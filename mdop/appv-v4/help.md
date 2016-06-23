@@ -1,9 +1,14 @@
 ---
 title: HELP
 description: HELP
-ms.assetid: 0ddb5f18-0c0a-45ea-b7c7-2d4749e3d35d
 author: jamiejdt
+ms.assetid: 0ddb5f18-0c0a-45ea-b7c7-2d4749e3d35d
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # HELP
 

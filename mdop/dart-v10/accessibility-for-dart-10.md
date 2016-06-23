@@ -1,9 +1,14 @@
 ---
 title: Accessibility for DaRT 10
 description: Accessibility for DaRT 10
-ms.assetid: 61d7a30c-3551-440d-bdcd-36333052c7b4
 author: jamiejdt
+ms.assetid: 61d7a30c-3551-440d-bdcd-36333052c7b4
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Accessibility for DaRT 10
 

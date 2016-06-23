@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Properties General Tab
 description: Application Virtualization Properties General Tab
-ms.assetid: be7449d9-171a-4a11-9382-83b7008ccbdd
 author: jamiejdt
+ms.assetid: be7449d9-171a-4a11-9382-83b7008ccbdd
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Properties: General Tab
 

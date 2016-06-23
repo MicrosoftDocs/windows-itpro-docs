@@ -1,9 +1,14 @@
 ---
 title: How to Sequence a New Application by Using the Command Line
 description: How to Sequence a New Application by Using the Command Line
-ms.assetid: c3b5c842-6a91-4d0a-9a22-c7b8d1aeb09a
 author: jamiejdt
+ms.assetid: c3b5c842-6a91-4d0a-9a22-c7b8d1aeb09a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Sequence a New Application by Using the Command Line
 

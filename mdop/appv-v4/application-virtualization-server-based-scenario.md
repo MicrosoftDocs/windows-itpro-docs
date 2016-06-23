@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Server-Based Scenario
 description: Application Virtualization Server-Based Scenario
-ms.assetid: 10ed0b18-087d-470f-951b-5083f4cb076f
 author: jamiejdt
+ms.assetid: 10ed0b18-087d-470f-951b-5083f4cb076f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Server-Based Scenario
 

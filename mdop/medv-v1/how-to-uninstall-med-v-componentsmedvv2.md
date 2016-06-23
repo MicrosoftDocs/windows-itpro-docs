@@ -1,9 +1,14 @@
 ---
 title: How to Uninstall MED-V Components
 description: How to Uninstall MED-V Components
-ms.assetid: 91bdf488-14e7-43ab-972d-9d92421acb86
 author: jamiejdt
+ms.assetid: 91bdf488-14e7-43ab-972d-9d92421acb86
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Uninstall MED-V Components
 

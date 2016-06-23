@@ -1,9 +1,14 @@
 ---
 title: How to Move the MBAM 2.5 Databases
 description: How to Move the MBAM 2.5 Databases
-ms.assetid: 34b46f2d-0add-4377-8e4e-04b628fdfcf1
 author: jamiejdt
+ms.assetid: 34b46f2d-0add-4377-8e4e-04b628fdfcf1
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Move the MBAM 2.5 Databases
 

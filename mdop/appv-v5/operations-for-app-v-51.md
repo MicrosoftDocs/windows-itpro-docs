@@ -1,9 +1,14 @@
 ---
 title: Operations for App-V 5.1
 description: Operations for App-V 5.1
-ms.assetid: dd13b5c9-2d1e-442f-91e4-43dec7f17ea2
 author: jamiejdt
+ms.assetid: dd13b5c9-2d1e-442f-91e4-43dec7f17ea2
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Operations for App-V 5.1
 

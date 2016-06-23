@@ -1,9 +1,14 @@
 ---
 title: Technical Reference for MED-V
 description: Technical Reference for MED-V
-ms.assetid: 52aa15ae-6ca8-4494-8660-313c7b723406
 author: jamiejdt
+ms.assetid: 52aa15ae-6ca8-4494-8660-313c7b723406
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Technical Reference for MED-V
 

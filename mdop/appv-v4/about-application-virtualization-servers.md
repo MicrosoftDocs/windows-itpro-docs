@@ -1,9 +1,14 @@
 ---
 title: About Application Virtualization Servers
 description: About Application Virtualization Servers
-ms.assetid: 60a45509-2112-44ca-8e28-c73b0c2ff85e
 author: jamiejdt
+ms.assetid: 60a45509-2112-44ca-8e28-c73b0c2ff85e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # About Application Virtualization Servers
 

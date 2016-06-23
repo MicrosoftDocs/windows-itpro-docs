@@ -1,9 +1,14 @@
 ---
 title: Deploying UE-V 1.0
 description: Deploying UE-V 1.0
-ms.assetid: 519598bb-8c81-4af7-bee7-357696bff880
 author: jamiejdt
+ms.assetid: 519598bb-8c81-4af7-bee7-357696bff880
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Deploying UE-V 1.0
 

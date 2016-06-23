@@ -1,9 +1,14 @@
 ---
 title: LOCK APP
 description: LOCK APP
-ms.assetid: 30673433-4364-499f-8116-cb135fe2716f
 author: jamiejdt
+ms.assetid: 30673433-4364-499f-8116-cb135fe2716f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # LOCK APP
 

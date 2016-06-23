@@ -1,9 +1,14 @@
 ---
 title: How to Connect to the Management Console
 description: How to Connect to the Management Console
-ms.assetid: 67dfdfa1-e7dd-4c5e-aa50-f016bd1dc643
 author: jamiejdt
+ms.assetid: 67dfdfa1-e7dd-4c5e-aa50-f016bd1dc643
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Connect to the Management Console
 
