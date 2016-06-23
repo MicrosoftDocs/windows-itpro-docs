@@ -20,7 +20,11 @@ author: eross-msft
 Microsoft Intune helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
 
 ## Important note about the June service update
-We've received some great feedback from you, our Windows 10 Insider Preview customers, about our enterprise data protection experiences and processes. Because of that feedback, we're delighted to deliver an enhanced apps policy experience with the June service update. This means that when you open an existing enterprise data protection policy after we release the June service update in your test environment, your existing Windows 10 enterprise data protection app rules (formerly in the **Protected Apps** area) will be removed.<p>To prepare for this change, we recommend that you make an immediate backup of your current app rules as they are today, so you can use them to help reconfigure your app rules with the enhanced experience. When you open an existing enterprise data protection policy after we release the June service update, you'll get a dialog box telling you about this change. Click the **OK** button to close the box and to begin reconfiguring your app rules.<p>![Microsoft Intune: Reconfigure app rules list dialog box](images/edp-intune-app-reconfig-warning.png)<p>Note that if you exit the **Policy** page before you've saved your new policy, your existing deployments won't be affected. However, if you save the policy without reconfiguring your apps, an updated policy will be deployed to your employees with an empty app rules list.
+We've received some great feedback from you, our Windows 10 Insider Preview customers, about our enterprise data protection experiences and processes. Because of that feedback, we're delighted to deliver an enhanced apps policy experience with the June service update. This means that when you open an existing enterprise data protection policy after we release the June service update in your test environment, your existing Windows 10 enterprise data protection app rules (formerly in the **Protected Apps** area) will be removed.<p>To prepare for this change, we recommend that you make an immediate backup of your current app rules as they are today, so you can use them to help reconfigure your app rules with the enhanced experience. When you open an existing enterprise data protection policy after we release the June service update, you'll get a dialog box telling you about this change. Click the **OK** button to close the box and to begin reconfiguring your app rules.
+
+![Microsoft Intune: Reconfigure app rules list dialog box](images/edp-intune-app-reconfig-warning.png)
+
+Note that if you exit the **Policy** page before you've saved your new policy, your existing deployments won't be affected. However, if you save the policy without reconfiguring your apps, an updated policy will be deployed to your employees with an empty app rules list.
  
 ## Add an EDP policy
 After you’ve installed and set up Intune for your organization, you must create an EDP-specific policy.
@@ -42,6 +46,7 @@ During the policy-creation process in Intune, you can choose the apps you want t
 The steps to add your apps are based on the type of app it is; either a Universal Windows Platform (UWP) app, or a signed Desktop app, also known as a Classic Windows application.
 
 >**Important**<br>EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary and will encrypt all files they create or modify, meaning that they could encrypt personal data and cause data loss during the revocation process. Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **Protected App** list.<p>
+
 
 >**Note**<br>If you want to use **File hash** or **Path** rules, instead of Publisher rules, you must follow the steps in the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
 
@@ -254,6 +259,7 @@ After you've added a protection level to your apps, you'll need to decide where 
 **To specify where your protected apps can find and send enterprise data on the network**
 
 1.  Add additional network locations your apps can access by clicking **Add**, typing a description into the **Description** box, and then choosing your location type, including:
+
     <table>
         <tr>
             <th>Network location type</th>
@@ -262,7 +268,7 @@ After you've added a protection level to your apps, you'll need to decide where 
         </tr>
         <tr>
             <td>Enterprise Cloud Resources</td>
-            <td>**With proxy:**<p>contoso.sharepoint.com,proxy.contoso.com|contoso.visualstudio.com,proxy.contoso.com<p>**Without proxy:**<p>contoso.sharepoint.com|contoso.visualstudio.com</td>
+            <td>**With proxy:**<p>contoso.sharepoint.com,proxy.contoso.com|<br>contoso.visualstudio.com,proxy.contoso.com<p>**Without proxy:**<p>contoso.sharepoint.com|contoso.visualstudio.com</td>
             <td>Specify the cloud resources to be treated as corporate and protected by EDP.<p>For each cloud resource, you may also optionally specify an internal proxy server that routes your traffic through your Enterprise Internal Proxy Server.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example:<p>`URL <,proxy>|URL <,proxy>`<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the `/*AppCompat*/` string to this setting. For example:<p>`URL <,proxy>|URL <,proxy>|/*AppCompat*/`</td>     
         </tr>
         <tr>
@@ -272,12 +278,12 @@ After you've added a protection level to your apps, you'll need to decide where 
         </tr>
         <tr>
             <td>Enterprise Proxy Servers</td>
-            <td>domain1.contoso.com:80;domain2.contoso.com:137</td>
+            <td>domain1.contoso.com:80;<br>domain2.contoso.com:137</td>
             <td>Specify your externally-facing proxy server addresses, along with the port through which traffic is allowed and protected with EDP.<p>This list shouldn’t include any servers listed in the Enterprise Internal Proxy Servers list, which are used for EDP-protected traffic.<p>This setting is also required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when you’re visiting another company and not on that company’s guest network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
         </tr>
         <tr>
             <td>Enterprise Internal Proxy Servers</td>
-            <td>proxy1.contoso.com;proxy2.contoso.com</td>
+            <td>proxy1.contoso.com;<br>proxy2.contoso.com</td>
             <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-EDP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
         </tr>
         <tr>
@@ -287,7 +293,7 @@ After you've added a protection level to your apps, you'll need to decide where 
         </tr>
         <tr>
             <td>Enterprise IPv6 Range</td>
-            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
+            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:<br>ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
             <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
         </tr>                
     </table>
@@ -329,7 +335,9 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 
 2.	Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
 
-    `cipher /c filename`
+    `cipher /c <filename>`
+
+    Where *&lt;filename&gt;* is the name of the file you created in Step 1.
 
 3.	Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
 
