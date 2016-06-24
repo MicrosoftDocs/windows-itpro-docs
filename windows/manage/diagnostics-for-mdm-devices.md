@@ -15,27 +15,59 @@ author: jdeckerMS
 -   Windows 10
 -   Windows 10 Mobile
 
-[Diagnostics capability for devices managed by any MDM provider.](https://microsoft.sharepoint.com/teams/osg_core_ens/mgmt/OSMan Wiki/MDM Diagnostics - Generating and Processing Log files.aspx)
+(which SKUs?)
 
-[Redstone spec](https://microsoft.sharepoint.com/teams/specstore/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7E8742A2-03A1-451C-BA07-F2573B044CBF%7d&file=DM%20-%20MDM%20Diagnostics-RS.docx&action=default&DefaultItemOpen=1)
-
-The Device Policy State Log, a new log in Windows 10, Version 1607, collects information on the state of policies applied to the device to help you determine which sources are applying policies or configurations to the device. This log is a tool that enables the helpdesk to be more effectively in remotely diagnosing and resolving issues with the device. 
-
-Users can easily generate this log, both on PCs and mobile devices. (screenshot of UI)
-
-
-(run script on log to create report)
-
-There are two sections to the report, Configuration and Policy Information.  The configuration section enumerates the GUID of the sources that are applying configurations to the device.  
-
-The policy information section displays information about the specific policies that are being enforced and on the device.  For each policy you will see the Area grouping, the Policy name, its default and current value, in addition to the configuration source.
+Two new diagnostic tools for Windows 10, version 1607, help IT administrators diagnose and resolve issues with remote devices enrolled in mobile device management (MDM): the [Device Policy State Log](#device-policy-state-log) and [UDiag](#udiag).
 
 
 
+	Device Policy State Log implementation: what does admin have to do on MDM side to enable "export your management log file"?[DK]  Nothing.  Generating the log is entirely a client side behavior.  There is a new capability in the Diagnostic Log CSP that will enable a MDM ISV to trigger generation and capture of the log over the MDM channel. 
 
-Event Trace Log (ETL) file
+	Can admin pull logs without user action? [DK] Yes via the diagnostic log CSP
 
-To generate on desktop or phone:
+	Is MDMDiagnostics.xml the file created by "export your management log file"?  [DK] Yes 
+
+	"Run PowerShell script to process the file" – is that the user doing it? How can this workflow work in an enterprise where employees aren't computer-savvy? [DK] This is intended to be done by the help desk guy.  
+
+	Where did (user|admin) get mdmReportGenerator.ps1?  [DK] Publishing on DLC later this summer
+
+	In Viewing the report, how does the admin make sense of the source GUIDs? [DK] Correlates the value in the table with the entries at the top of the page. 
+
+	UDiag – where does admin get this? [DK] Publishing on DLC later this summer
+
+	Can admins create custom rule sets? [DK] Right now, no.  but open to feedback on this. 
+
+
+## Device Policy State Log
+
+The Device Policy State Log collects information on the state of policies applied to the device to help you determine which sources are applying policies or configurations to the device. Help desk personnel can use this log to diagnose and resolve issues with a remote device. 
+
+There are two sections to the report, Configuration and Policy Information.  The configuration section lists the GUID of the sources that are applying configurations to the device. The GUIDS for some common providers are included in the [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120.aspx) topic. 
+
+The policy information section displays information about the specific policies that are being enforced and on the device.  For each policy, you will see the Area grouping, the Policy name, its default and current value, and the configuration source.
+
+(screenshot report)
+
+Users can easily generate this log, both on PCs and mobile devices. Go to **Settings > Accounts > Work access > Export your management log files**.
+
+- On desktop devices, the file is saved to C:/Users/Public/Documents/MDMDiagnostics/MSMDiagReport.xml
+- On phones, the files is saved to *phone*/Documents/MDMDiagnostics/MDMDiagnostics.xml
+
+(screenshot of UI)
+
+(run mdmReportGenerator.ps1 script on log to create report)
+(download mdmReportGenerator.ps1)
+
+
+
+
+## UDiag
+
+The UDiag tool applies rules to Event Tracing for Windows (ETW) files to help determine the root cause of an issue. 
+
+(download UDiag)
+
+To generate Event Trace Log (ETL) on desktop or phone:
 1. **Settings** > **Accounts** > **Work access** > **Export your management log files**
 2. File is saved:
     - on desktop: Clicking on **Export** will generate the diagnostic log file, and save it in C:\Users\Public\Documents\MDMDiagnostics
@@ -44,7 +76,7 @@ To generate on desktop or phone:
         OR
         - Mail the log file from your phone by selecting the file from This Device\Documents\MDMDiagnostics
 
-UDiag tool: Uses rule-based analysis to determine root cause based on Event Tracing for Windows (ETW) files; reduces the amount of time needed to determine what the root case of an issue is based on ETW analysis
+To analyze ETL using UDiag
 1. Open UDiag, and select Device Management.
 2. Select your source for the log files ("cab of logs" or "directory of logs")
 Investigating log content, identifying patterns, and adding a root cause analysis to the database (Advanced users/providers) 
@@ -77,21 +109,16 @@ Investigating log content, identifying patterns, and adding a root cause analysi
 
  
 
-	Device Policy State Log implementation: what does admin have to do on MDM side to enable "export your management log file"?[DK]  Nothing.  Generating the log is entirely a client side behavior.  There is a new capability in the Diagnostic Log CSP that will enable a MDM ISV to trigger generation and capture of the log over the MDM channel. 
-
-	Can admin pull logs without user action? [DK] Yes via the diagnostic log CSP
-
-	Is MDMDiagnostics.xml the file created by "export your management log file"?  [DK] Yes 
-
-	"Run PowerShell script to process the file" – is that the user doing it? How can this workflow work in an enterprise where employees aren't computer-savvy? [DK] This is intended to be done by the help desk guy.  
-
-	Where did (user|admin) get mdmReportGenerator.ps1?  [DK] Publishing on DLC later this summer
-
-	In Viewing the report, how does the admin make sense of the source GUIDs? [DK] Correlates the value in the table with the entries at the top of the page. 
-
-	UDiag – where does admin get this? [DK] Publishing on DLC later this summer
-
-	Can admins create custom rule sets? [DK] Right now, no.  but open to feedback on this. 
+	
 
 Link to [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx)
 
+[Diagnostics capability for devices managed by any MDM provider.](https://microsoft.sharepoint.com/teams/osg_core_ens/mgmt/OSMan Wiki/MDM Diagnostics - Generating and Processing Log files.aspx)
+
+[Redstone spec](https://microsoft.sharepoint.com/teams/specstore/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7E8742A2-03A1-451C-BA07-F2573B044CBF%7d&file=DM%20-%20MDM%20Diagnostics-RS.docx&action=default&DefaultItemOpen=1)
+
+## Related topics
+
+[DiagnosticLog CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt219118.aspx)
+
+[Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120.aspx)
