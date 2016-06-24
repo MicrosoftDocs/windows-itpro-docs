@@ -1,9 +1,14 @@
 ---
 title: Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0
 description: Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0
-ms.assetid: dc6f9b16-b1d4-48f3-88bb-f29301f0131c
 author: jamiejdt
+ms.assetid: dc6f9b16-b1d4-48f3-88bb-f29301f0131c
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0
 

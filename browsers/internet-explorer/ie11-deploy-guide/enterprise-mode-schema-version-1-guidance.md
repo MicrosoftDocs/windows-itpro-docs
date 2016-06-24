@@ -1,27 +1,27 @@
 ---
-description: Use the Enterprise Mode Site List Manager tool to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
+description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
 ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices (Internet Explorer 11 for IT Pros)
+title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
 ---
 
-# Enterprise Mode schema v.1 guidance for Windows 7 and Windows 8.1 Update devices
+# Enterprise Mode schema v.1 guidance
 
 **Applies to:**
 
 -   Windows 8.1
 -   Windows 7
 
-Use the Enterprise Mode Site List Manager tool to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
+Use the Enterprise Mode Site List Manager (schema v.1) to create and update your Enterprise Mode site list for devices running the v.1 version of the schema, or the Enterprise Mode Site List Manager (schema v.2) to create and update your Enterprise Mode site list for devices running the v.2 version of the schema. We strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md). 
 
-If you're using a Windows 10-based device, we strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance for Windows 10 devices](enterprise-mode-schema-version-2-guidance.md).
+If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
 ## Enterprise Mode schema v.1 example
-The following is an example of the Enterprise Mode schema v.1. This schema can run on devices running Windows 7, Windows 8.1, and Windows 10.
+The following is an example of the Enterprise Mode schema v.1. This schema can run on devices running Windows 7 and Windows 8.1.
 
 **Important**<br>
 Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both http://contoso.com and https://contoso.com.

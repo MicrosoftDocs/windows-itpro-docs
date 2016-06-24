@@ -1,9 +1,14 @@
 ---
 title: MED-V 2.0 Release Notes
 description: MED-V 2.0 Release Notes
-ms.assetid: b8f7d938-566e-434c-b4b8-28b67cdfd0b1
 author: jamiejdt
+ms.assetid: b8f7d938-566e-434c-b4b8-28b67cdfd0b1
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V 2.0 Release Notes
 

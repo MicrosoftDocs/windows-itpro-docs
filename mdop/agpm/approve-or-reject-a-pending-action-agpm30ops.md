@@ -1,9 +1,14 @@
 ---
 title: Approve or Reject a Pending Action
 description: Approve or Reject a Pending Action
-ms.assetid: 6d78989a-b600-4876-9dd9-bc6207ff2ce7
 author: jamiejdt
+ms.assetid: 6d78989a-b600-4876-9dd9-bc6207ff2ce7
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Approve or Reject a Pending Action
 

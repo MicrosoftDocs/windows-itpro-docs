@@ -1,9 +1,14 @@
 ---
 title: Administrative Template Settings
 description: Administrative Template Settings
-ms.assetid: 1abbf0c1-fd32-46a8-a3ba-c005f066523d
 author: jamiejdt
+ms.assetid: 1abbf0c1-fd32-46a8-a3ba-c005f066523d
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Administrative Template Settings
 

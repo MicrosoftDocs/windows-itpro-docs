@@ -1,7 +1,7 @@
 ---
 description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: eross-msft
@@ -13,7 +13,7 @@ title: Collect data using Enterprise Site Discovery
 **Applies to:**
 
 -   Windows 10
--   Windows 8.1 Update
+-   Windows 8.1
 -   Windows 7 with Service Pack 1 (SP1)
 
 Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
@@ -339,11 +339,11 @@ You can import this XML data into the correct version of the Enterprise Mode Sit
 
  ![](images/wedge.gif) **To add your XML data to your Enterprise Mode site list**
 
-1.  Open the Enterprise Mode Site List Manager tool, click **File**, and then click **Bulk add from file**.
+1.  Open the Enterprise Mode Site List Manager, click **File**, and then click **Bulk add from file**.
 ![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
 
 2.  Go to your XML file to add the included sites to the tool, and then click **Open**.<br>
-Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager tool](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
+Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
 
 3.  Click **OK** to close the **Bulk add sites to the list** menu.
 
@@ -378,7 +378,7 @@ You can completely remove the data stored on your employee’s computers.
     -   `Remove-Item -Path 'HKCU:\Software\Microsoft\Internet Explorer\WMITelemetry'`
 
  ## Related topics
-* [Enterprise Mode Site List Manager for Windows 10 download](http://go.microsoft.com/fwlink/?LinkId=746562)
+* [Enterprise Mode Site List Manager (schema v.2) download](http://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
  
 

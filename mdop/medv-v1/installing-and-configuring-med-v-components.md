@@ -1,9 +1,14 @@
 ---
 title: Installing and Configuring MED-V Components
 description: Installing and Configuring MED-V Components
-ms.assetid: 4af90e9f-3c6b-4f7c-8274-56ad24173662
 author: jamiejdt
+ms.assetid: 4af90e9f-3c6b-4f7c-8274-56ad24173662
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Installing and Configuring MED-V Components
 

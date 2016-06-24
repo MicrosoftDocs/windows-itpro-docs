@@ -1,9 +1,14 @@
 ---
 title: Create Package Accelerator Wizard (AppV 4.6 SP1)
 description: Create Package Accelerator Wizard (AppV 4.6 SP1)
-ms.assetid: 976d84e1-86d7-4a9b-a747-2b6eef790c1f
 author: jamiejdt
+ms.assetid: 976d84e1-86d7-4a9b-a747-2b6eef790c1f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Create Package Accelerator Wizard (AppV 4.6 SP1)
 

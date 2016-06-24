@@ -1,9 +1,14 @@
 ---
 title: CONFIGURE APP
 description: CONFIGURE APP
-ms.assetid: fcfb4f86-8b7c-4208-bca3-955fd067079f
 author: jamiejdt
+ms.assetid: fcfb4f86-8b7c-4208-bca3-955fd067079f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # CONFIGURE APP
 

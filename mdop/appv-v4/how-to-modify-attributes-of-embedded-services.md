@@ -1,9 +1,14 @@
 ---
 title: How to Modify Attributes of Embedded Services
 description: How to Modify Attributes of Embedded Services
-ms.assetid: b4057d3f-2e8f-4b1f-9ed5-b65f3da8631a
 author: jamiejdt
+ms.assetid: b4057d3f-2e8f-4b1f-9ed5-b65f3da8631a
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Modify Attributes of Embedded Services
 

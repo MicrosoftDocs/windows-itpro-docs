@@ -1,9 +1,14 @@
 ---
 title: How to Share Folders Between the Host and the MED-V Workspace
 description: How to Share Folders Between the Host and the MED-V Workspace
-ms.assetid: 3cb295f2-c07e-4ee6-aa3c-ce4c8c45c191
 author: jamiejdt
+ms.assetid: 3cb295f2-c07e-4ee6-aa3c-ce4c8c45c191
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Share Folders Between the Host and the MED-V Workspace
 

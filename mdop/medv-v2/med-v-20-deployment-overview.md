@@ -1,9 +1,14 @@
 ---
 title: MED-V 2.0 Deployment Overview
 description: MED-V 2.0 Deployment Overview
-ms.assetid: 0b8998ea-c46f-4c81-a304-f380b2ed7cf8
 author: jamiejdt
+ms.assetid: 0b8998ea-c46f-4c81-a304-f380b2ed7cf8
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V 2.0 Deployment Overview
 

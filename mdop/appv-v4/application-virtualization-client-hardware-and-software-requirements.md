@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Client Hardware and Software Requirements
 description: Application Virtualization Client Hardware and Software Requirements
-ms.assetid: 8b877a2c-5721-4b22-a47f-e2838d58ab12
 author: jamiejdt
+ms.assetid: 8b877a2c-5721-4b22-a47f-e2838d58ab12
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Client Hardware and Software Requirements
 

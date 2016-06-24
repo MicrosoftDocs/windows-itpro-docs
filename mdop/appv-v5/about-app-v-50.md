@@ -1,9 +1,14 @@
 ---
 title: About App-V 5.0
 description: About App-V 5.0
-ms.assetid: 5799141b-44bc-4033-afcc-212235e15f00
 author: jamiejdt
+ms.assetid: 5799141b-44bc-4033-afcc-212235e15f00
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About App-V 5.0
 
@@ -29,7 +34,7 @@ The following list displays what is new with App-V 5.0:
 
 -   **Connection Groups** - App-V 5.0 connection groups allow you to connect and run virtual applications interactively.
 
-## <a href="" id="bkmk-diff-46-50"></a>Differences between App-4.6 and App-V 5.0
+## <a href="" id="bkmk-diff-46-50"></a>Differences between App-V 4.6 and App-V 5.0
 
 
 The following table displays some of the differences between App-V 4.6 and App-V 5.0:

@@ -1,9 +1,14 @@
 ---
 title: UNLOAD PACKAGE
 description: UNLOAD PACKAGE
-ms.assetid: a076eb5a-ce3d-49e4-ac7a-4d4df10e3477
 author: jamiejdt
+ms.assetid: a076eb5a-ce3d-49e4-ac7a-4d4df10e3477
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # UNLOAD PACKAGE
 

@@ -1,9 +1,14 @@
 ---
 title: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
 description: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
-ms.assetid: 19da3776-5ebe-41e1-9890-12b84ef3c1c7
 author: jamiejdt
+ms.assetid: 19da3776-5ebe-41e1-9890-12b84ef3c1c7
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
 
@@ -46,7 +51,7 @@ This procedure assumes that you are running the latest version of App-V 4.6.
 
 [Operations for App-V 5.1](operations-for-app-v-51.md)
 
-[How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-51-package-to-an-app-v-46-sp2-package-for-a-specific-user.md)
+[How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 Package for a Specific User](how-to-revert-extension-points-from-an-app-v-51-package-to-an-app-v-46-package-for-a-specific-user.md)
 
  
 

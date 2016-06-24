@@ -1,9 +1,14 @@
 ---
 title: How to Recover a Moved Drive
 description: How to Recover a Moved Drive
-ms.assetid: 697cd78d-962c-411e-901a-2e9220ba6552
 author: jamiejdt
+ms.assetid: 697cd78d-962c-411e-901a-2e9220ba6552
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Recover a Moved Drive
 

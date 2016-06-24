@@ -1,9 +1,14 @@
 ---
 title: Deploying the App-V 5.0 Sequencer and Client
 description: Deploying the App-V 5.0 Sequencer and Client
-ms.assetid: 84cc84bd-5bc0-41aa-9519-0ded2932c078
 author: jamiejdt
+ms.assetid: 84cc84bd-5bc0-41aa-9519-0ded2932c078
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Deploying the App-V 5.0 Sequencer and Client
 
@@ -19,7 +24,7 @@ The App-V 5.0 client is the component that runs a virtualized application on a t
 
 [How to Uninstall the App-V 5.0 Client](how-to-uninstall-the-app-v-50-client.md)
 
-[How to Deploy the App-V 4.6.x and the App-V 5.0 Client on the Same Computer](how-to-deploy-the-app-v-46x-and-the-app-v--50-client-on-the-same-computer.md)
+[How to Deploy the App-V 4.6 and the App-V 5.0 Client on the Same Computer](how-to-deploy-the-app-v-46-and-the-app-v--50-client-on-the-same-computer.md)
 
 ## Client Configuration Settings
 

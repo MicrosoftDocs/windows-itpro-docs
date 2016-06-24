@@ -1,9 +1,14 @@
 ---
 title: Creating a Template and Setting a Default Template
 description: Creating a Template and Setting a Default Template
-ms.assetid: 8771b4b5-4dea-4be1-a675-f60cfd3ec5dc
 author: jamiejdt
+ms.assetid: 8771b4b5-4dea-4be1-a675-f60cfd3ec5dc
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Creating a Template and Setting a Default Template
 

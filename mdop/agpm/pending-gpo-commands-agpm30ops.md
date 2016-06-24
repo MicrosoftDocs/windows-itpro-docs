@@ -1,9 +1,14 @@
 ---
 title: Pending GPO Commands
 description: Pending GPO Commands
-ms.assetid: 3868dda0-8a41-4bba-9b0c-9f656f9a3cd5
 author: jamiejdt
+ms.assetid: 3868dda0-8a41-4bba-9b0c-9f656f9a3cd5
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Pending GPO Commands
 

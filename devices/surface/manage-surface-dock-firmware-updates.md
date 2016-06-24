@@ -43,7 +43,7 @@ The Surface Dock firmware update process shown in Figure 1 follows these steps:
 
 8.  When the Surface Dock is disconnected for a second time, the Surface dock installs the firmware update to the DisplayPort chipset. This process takes up to 3 minutes to apply.
 
-![figure 1](images/manage-surface-dock-fig1-updateprocess.png)
+![Surface Dock firmware update process](images/manage-surface-dock-fig1-updateprocess.png "Surface Dock firmware update process")
 
 *1- Driver installation can be performed by Windows Update, manual installation, or automatically downloaded with Microsoft Surface Dock Updater*
 

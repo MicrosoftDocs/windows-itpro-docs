@@ -1,9 +1,14 @@
 ---
 title: Configure Installation Prerequisites
 description: Configure Installation Prerequisites
-ms.assetid: ff9cf28a-3eac-4b6c-8ce9-bfc202f57947
 author: jamiejdt
+ms.assetid: ff9cf28a-3eac-4b6c-8ce9-bfc202f57947
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Configure Installation Prerequisites
 

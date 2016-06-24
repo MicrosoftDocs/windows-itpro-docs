@@ -1,9 +1,14 @@
 ---
 title: How to Download and Deploy MDOP Group Policy (.admx) Templates
 description: How to Download and Deploy MDOP Group Policy (.admx) Templates
-ms.assetid: fdb64505-6c66-4fdf-ad74-a6a161191e3f
 author: jamiejdt
+ms.assetid: fdb64505-6c66-4fdf-ad74-a6a161191e3f
+ms.pagetype: mdop
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Download and Deploy MDOP Group Policy (.admx) Templates
 

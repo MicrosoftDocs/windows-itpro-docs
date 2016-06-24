@@ -1,9 +1,14 @@
 ---
 title: App-V 5.1 Planning Checklist
 description: App-V 5.1 Planning Checklist
-ms.assetid: 1e26a861-0612-43a6-972f-375a40a8dcbc
 author: jamiejdt
+ms.assetid: 1e26a861-0612-43a6-972f-375a40a8dcbc
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # App-V 5.1 Planning Checklist
 

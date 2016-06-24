@@ -30,6 +30,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 | [Microsoft Passport guide](microsoft-passport-guide.md) | Updated Roadmap section content |
 |[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md) |Updated info based on changes to the features and functionality.|
 | [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
+|[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (mutiple topics) | New |
 
 ## April 2016
 

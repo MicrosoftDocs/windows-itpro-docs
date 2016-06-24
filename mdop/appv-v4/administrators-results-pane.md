@@ -1,9 +1,14 @@
 ---
 title: Administrators Results Pane
 description: Administrators Results Pane
-ms.assetid: 92f4f924-c73b-45d6-8905-26f0f30aa189
 author: jamiejdt
+ms.assetid: 92f4f924-c73b-45d6-8905-26f0f30aa189
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Administrators Results Pane
 

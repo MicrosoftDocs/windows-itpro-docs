@@ -1,9 +1,14 @@
 ---
 title: Determine Your Streaming Method
 description: Determine Your Streaming Method
-ms.assetid: 50d5e0ec-7f48-4cea-8711-5882bd89153b
 author: jamiejdt
+ms.assetid: 50d5e0ec-7f48-4cea-8711-5882bd89153b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Determine Your Streaming Method
 

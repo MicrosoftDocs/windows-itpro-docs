@@ -1,9 +1,14 @@
 ---
 title: How to Publish and Unpublish an Application on the MED-V Workspace
 description: How to Publish and Unpublish an Application on the MED-V Workspace
-ms.assetid: fd5a62e9-0577-44d2-ae17-61c0aef78ce8
 author: jamiejdt
+ms.assetid: fd5a62e9-0577-44d2-ae17-61c0aef78ce8
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # How to Publish and Unpublish an Application on the MED-V Workspace
 

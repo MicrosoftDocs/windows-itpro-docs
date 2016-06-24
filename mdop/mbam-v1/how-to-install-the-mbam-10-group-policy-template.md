@@ -1,9 +1,14 @@
 ---
 title: How to Install the MBAM 1.0 Group Policy Template
 description: How to Install the MBAM 1.0 Group Policy Template
-ms.assetid: 451a50b0-939c-47ad-9248-a138deade550
 author: jamiejdt
+ms.assetid: 451a50b0-939c-47ad-9248-a138deade550
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the MBAM 1.0 Group Policy Template
 

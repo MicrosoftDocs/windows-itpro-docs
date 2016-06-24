@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencing Wizard Advanced Options Page
 description: Application Virtualization Sequencing Wizard Advanced Options Page
-ms.assetid: 2c4c5d95-d55e-463d-a851-8486f6a724f2
 author: jamiejdt
+ms.assetid: 2c4c5d95-d55e-463d-a851-8486f6a724f2
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencing Wizard Advanced Options Page
 

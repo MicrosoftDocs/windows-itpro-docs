@@ -1,9 +1,14 @@
 ---
 title: How to Install the Client by Using the Command Line
 description: How to Install the Client by Using the Command Line
-ms.assetid: ed372403-64ff-48ff-a3cd-a46cad04a4d5
 author: jamiejdt
+ms.assetid: ed372403-64ff-48ff-a3cd-a46cad04a4d5
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Install the Client by Using the Command Line
 

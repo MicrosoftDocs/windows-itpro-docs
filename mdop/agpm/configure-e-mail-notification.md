@@ -1,9 +1,14 @@
 ---
 title: Configure E-Mail Notification
 description: Configure E-Mail Notification
-ms.assetid: 6e152de0-4376-4963-8d1a-3e7f5866d30f
 author: jamiejdt
+ms.assetid: 6e152de0-4376-4963-8d1a-3e7f5866d30f
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Configure E-Mail Notification
 

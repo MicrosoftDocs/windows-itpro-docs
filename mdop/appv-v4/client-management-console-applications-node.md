@@ -1,9 +1,14 @@
 ---
 title: Client Management Console Applications Node
 description: Client Management Console Applications Node
-ms.assetid: 20cf533c-e0b0-4b81-af4b-b5b519594d1e
 author: jamiejdt
+ms.assetid: 20cf533c-e0b0-4b81-af4b-b5b519594d1e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Client Management Console: Applications Node
 

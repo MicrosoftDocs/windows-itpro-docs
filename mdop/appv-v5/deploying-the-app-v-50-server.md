@@ -1,9 +1,14 @@
 ---
 title: Deploying the App-V 5.0 Server
 description: Deploying the App-V 5.0 Server
-ms.assetid: a47f0dc8-2971-4e4d-8d57-6b69bbed4b63
 author: jamiejdt
+ms.assetid: a47f0dc8-2971-4e4d-8d57-6b69bbed4b63
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Deploying the App-V 5.0 Server
 

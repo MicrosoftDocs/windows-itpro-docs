@@ -2,7 +2,7 @@
 description: How to add and deploy the Internet Explorer 11 update using Microsoft Intune.
 ms.assetid: b2dfc08c-78af-4c22-8867-7be3b92b1616
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Install Internet Explorer 11 (IE11) using Microsoft Intune (Internet Explorer 11 for IT Pros)

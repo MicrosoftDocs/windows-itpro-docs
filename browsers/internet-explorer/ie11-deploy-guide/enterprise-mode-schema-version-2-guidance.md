@@ -1,24 +1,26 @@
 ---
-description: Use the Enterprise Mode Site List Manager tool to create and update your Enterprise Mode site list for devices running Windows 10.
+description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 10.
 ms.assetid: 909ca359-5654-4df9-b9fb-921232fc05f5
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: appcompat
-title: Enterprise Mode schema v.2 guidance for Windows 10-based devices (Internet Explorer 11 for IT Pros)
+title: Enterprise Mode schema v.2 guidance (Internet Explorer 11 for IT Pros)
 ---
 
-# Enterprise Mode schema v.2 guidance for Windows 10-based devices
+# Enterprise Mode schema v.2 guidance
 
 **Applies to:**
 
 -   Windows 10
+-   Windows 8.1
+-   Windows 7
 
-Use the Enterprise Mode Site List Manager tool to create and update your site list for devices running Windows 10, using the version 2.0 (v.2) of the Enterprise Mode schema. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
+Use the Enterprise Mode Site List Manager to create and update your site list for devices running Windows 7, Windows 8.1, and Windows 10, using the version 2.0 (v.2) of the Enterprise Mode schema. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
 **Important**<br>
-These schema updates only apply to devices running Windows 10. For devices running Windows 7 or Windows 8.1, see [Enterprise Mode schema guidance for Windows 7 and Windows 8.1 devices](enterprise-mode-schema-version-1-guidance.md).
+If you're running Windows 7 or Windows 8.1 and you've been using the version 1.0 (v.1) of the schema, you can continue to do so, but you won't get the benefits that come with the updated schema. For info about the v.1 schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 ## Enterprise Mode schema v.2 updates
 Because of the schema changes, you can't combine the old version (v.1) with the new version (v.2) of the schema. If you look at your XML file, you can tell which version you're using by:
@@ -27,7 +29,7 @@ Because of the schema changes, you can't combine the old version (v.1) with the 
 
 -   &lt;site-list&gt;. If your schema root node includes this key, you're using the v.2 version of the schema.
 
-You can continue to use the v.1 version of the schema on Windows 10, but you won't have the benefits of the new v.2 version schema updates and new features. Additionally, if you save the v.1 version of the schema in the new Enterprise Mode Site List Manager tool for Windows 10, it will automatically update the file to use the v.2 version of the schema.
+You can continue to use the v.1 version of the schema on Windows 10, but you won't have the benefits of the new v.2 version schema updates and new features. Additionally, if you save the v.1 version of the schema in the new Enterprise Mode Site List Manager for Windows 10, it will automatically update the file to use the v.2 version of the schema.
 
 ### Enterprise Mode v.2 schema example
 The following is an example of the v.2 version of the Enterprise Mode schema.
@@ -249,7 +251,7 @@ With:
 While the old, replaced attributes aren't supported in the v.2 version of the schema, they'll continue to work in the v.1 version of the schema. If, however, you're using the v.2 version of the schema and these attributes are still there, the v.2 version schema takes precedence. We don’t recommend combining the two schemas, and instead recommend that you move to the v.2 version of the schema to take advantage of the new features.
 
 **Important**<br>
-Saving your v.1 version of the file using the new Enterprise Mode Site List Manager tool for Windows 10 automatically updates the XML to the new v.2 version of the schema.
+Saving your v.1 version of the file using the new Enterprise Mode Site List Manager (schema v.2) automatically updates the XML to the new v.2 version of the schema.
 
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
@@ -260,7 +262,7 @@ We recommend that you not add any of the following items to your schema because 
 - Don’t use query strings, ampersands break parsing.
 
 ## Related topics
-- [Use the Enterprise Mode Site List Manager tool](use-the-enterprise-mode-site-list-manager-tool.md)
+- [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
 
 
 

@@ -1,9 +1,14 @@
 ---
 title: Planning for MBAM 2.0 Server Deployment
 description: Planning for MBAM 2.0 Server Deployment
-ms.assetid: b57f1a42-134f-4997-8697-7fbed08e2fc4
 author: jamiejdt
+ms.assetid: b57f1a42-134f-4997-8697-7fbed08e2fc4
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Planning for MBAM 2.0 Server Deployment
 

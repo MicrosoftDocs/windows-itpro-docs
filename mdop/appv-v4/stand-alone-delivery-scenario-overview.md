@@ -1,9 +1,14 @@
 ---
 title: Stand-Alone Delivery Scenario Overview
 description: Stand-Alone Delivery Scenario Overview
-ms.assetid: b109f309-f3c1-43af-996f-2a9b138dd171
 author: jamiejdt
+ms.assetid: b109f309-f3c1-43af-996f-2a9b138dd171
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Stand-Alone Delivery Scenario Overview
 

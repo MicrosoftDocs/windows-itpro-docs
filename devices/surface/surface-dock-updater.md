@@ -34,15 +34,15 @@ To update a Surface Dock with Microsoft Surface Dock Updater, follow these steps
 
     -   If the tool determines that the firmware of your Surface Dock is up to date, a **You have the latest firmware for this Surface Dock** message is displayed, as shown in Figure 1.
 
-        ![figure 1](images/surfacedockupdater-fig1-uptodate-568pix.png)
+        ![Screen that shows your Surface Dock firmware is up to date](images/surfacedockupdater-fig1-uptodate-568pix.png "Screen that shows your Surface Dock firmware is up to date")
 
-        Figure 1. Your Surface Dock firmware is up to date.
+        *Figure 1. Your Surface Dock firmware is up to date*
 
     -   If Microsoft Surface Dock Updater determines that the firmware of your Surface Dock is not up to date, a **This Surface Dock is not running the latest firmware** message is displayed, as shown in Figure 2.
 
-        ![figure 2](images/surfacedockupdater-fig2a-needsupdating.png)
+        ![Screen that shows your Surface Dock firmware needs to be updated](images/surfacedockupdater-fig2a-needsupdating.png "Screen that shows your Surface Dock firmware needs to be updated")
 
-        Figure 2. Your Surface Dock firmware needs to be updated
+        *Figure 2. Your Surface Dock firmware needs to be updated*
 
 3.  To begin the firmware update process, click **Update** on the **Surface Dock Firmware** page.
 
@@ -50,27 +50,27 @@ To update a Surface Dock with Microsoft Surface Dock Updater, follow these steps
 
 5.  As the firmware update is uploaded to the Surface Dock, a **Progress** page is displayed, as shown in Figure 3. Do not disconnect the Surface Dock while firmware is being uploaded.
 
-    ![figure 3](images/surfacedockupdater-fig3-progress.png)
+    ![Progress of firmware update upload](images/surfacedockupdater-fig3-progress.png "Progress of firmware update upload")
 
-    Figure 3. Progress of firmware update upload to Surface Dock
+    *Figure 3. Progress of firmware update upload to Surface Dock*
 
 6.  After the firmware update has successfully uploaded to the Surface Dock, you are prompted to disconnect and then reconnect the Surface Dock from the Surface device, as shown in Figure 4. The main chipset firmware update will be applied while the Surface Dock is disconnected.
 
-    ![figure 4](images/surfacedockupdater-fig4-disconnect.png)
+    ![Disconnect and reconnect Surface Dock when prompted](images/surfacedockupdater-fig4-disconnect.png "Disconnect and reconnect Surface Dock when prompted")
 
-    Figure 4. Disconnect and reconnect Surface Dock when prompted
+    *Figure 4. Disconnect and reconnect Surface Dock when prompted*
 
 7.  When the main chipset firmware update is verified, the DisplayPort chipset firmware update will be uploaded to the Surface Dock. Upon completion, a **Success** page is displayed and you will again be prompted to disconnect the Surface Dock, as shown in Figure 5.
 
-    ![figure 5](images/surfacedockupdater-fig5-success.png)
+    ![Screen showing successful upload](images/surfacedockupdater-fig5-success.png "Screen showing successful upload")
 
-    Figure 5. Successful upload of Surface Dock firmware
+    *Figure 5. Successful upload of Surface Dock firmware*
 
 8.  After you disconnect the Surface Dock the DisplayPort firmware update will be installed. This process occurs on the Surface Dock hardware while it is disconnected. The Surface Dock must remain powered for up to 3 minutes after it has been disconnected for the firmware update to successfully install. An **Update in Progress** page is displayed (as shown in Figure 6), with a countdown timer to show the estimated time remaining to complete the firmware update installation.
 
-    ![figure 6](images/surfacedockupdater-fig6-countdown.png)
+    ![Countdown timer to complete firmware installation](images/surfacedockupdater-fig6-countdown.png "Countdown timer to complete firmware installation")
 
-    Figure 6. Countdown timer to complete firmware installation on Surface Dock
+    *Figure 6. Countdown timer to complete firmware installation on Surface Dock*
 
 9.  If you want to update multiple Surface Docks in one sitting, you can click the **Update another Surface Dock** button to begin the process on the next Surface Dock.
 
@@ -83,9 +83,9 @@ To update a Surface Dock with Microsoft Surface Dock Updater, follow these steps
 
 If the Surface Dock firmware update process encounters an installation error with either firmware update, the **Encountered an unexpected error** page may be displayed, as shown in Figure 7.
 
-![figure 7](images/surfacedockupdater-fig7-error.png)
+![Firmware update installation error](images/surfacedockupdater-fig7-error.png "Firmware update installation error")
 
-Figure 7. Firmware update installation has encountered an error
+*Figure 7. Firmware update installation has encountered an error*
 
 Microsoft Surface Dock Updater logs its progress into the Event Log, as shown in Figure 8. If you need to troubleshoot an update through this tool, you will find Surface Dock events recorded with the following event IDs:
 
@@ -97,9 +97,9 @@ Microsoft Surface Dock Updater logs its progress into the Event Log, as shown in
 | 12105    | Error                                                    |
 
 
-Figure 8. Surface Dock Updater events in Event Viewer
+![Surface Dock Updater events in Event Viewer](images/surfacedockupdater-fig8-737test.png "Surface Dock Updater events in Event Viewer")
 
-![figure 8](images/surfacedockupdater-fig8-737test.png)
+*Figure 8. Surface Dock Updater events in Event Viewer*
 
 
 ## Related topics

@@ -1,9 +1,14 @@
 ---
 title: Operations for DaRT 10
 description: Operations for DaRT 10
-ms.assetid: 1776d5ed-96c6-4841-a097-721d8cf5c7f7
 author: jamiejdt
+ms.assetid: 1776d5ed-96c6-4841-a097-721d8cf5c7f7
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Operations for DaRT 10
 

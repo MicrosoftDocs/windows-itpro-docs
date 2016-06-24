@@ -1,9 +1,14 @@
 ---
 title: Troubleshooting DaRT 10
 description: Troubleshooting DaRT 10
-ms.assetid: 76d42a00-3f6b-4730-8857-39fe49535d37
 author: jamiejdt
+ms.assetid: 76d42a00-3f6b-4730-8857-39fe49535d37
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Troubleshooting DaRT 10
 

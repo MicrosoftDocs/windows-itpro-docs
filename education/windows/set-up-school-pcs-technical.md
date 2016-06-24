@@ -26,14 +26,14 @@ The following table tells you what you get using the **Set up School PCs** app i
 | Feature | No Internet | Azure AD | Office 365 | Azure AD Premium |
 | --- | :---: | :---: | :---: | :---: |
 | **Fast sign-in**<br/>Each student can sign in and start using the computer in less than a minute, even on their first sign-in. | X | X | X | X |
-| **Custom Start experience**\*<br/>The apps students need are pinned to Start, and unnecessary apps are removed. | X | X | X | X |
+| **Custom Start experience**<br/>The apps students need are pinned to Start, and unnecessary apps are removed. | X | X | X | X |
 | **Temporary access, no sign-in required**<br/>This option sets up computers for common use. Anyone can use the computer without an account. | X | X | X | X |
-| **School policies**\*<br/>Settings specific to education create a useful learning environment and the best computer performance. | X | X | X | X |
+| **School policies**<br/>Settings specific to education create a useful learning environment and the best computer performance. | X | X | X | X |
 | **Azure AD Join**<br/>The computers are  joined to your Azure AD or Office 365 subscription for centralized management. |   | X | X | X |
 | **Single sign-on to Office 365**<br/>By signing on with student IDs, students have fast access to Office 365 web apps. |   |    | X | X |
 | **[Settings roaming](https://azure.microsoft.com/en-us/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) via Azure AD**<br/>Student user and application settings data can be synchronized across devices for a personalized experience. |   |    |    | X |
 |   |    |    |   |   |
-\* Feature applies to Windows 10 Pro, Windows 10 Pro for Education, Windows 10 Enterprise, and Windows 10 Enterprise for EDU
+
 
 > **Note**: If your school uses Active Directory, use Windows Imaging and Configuration Designer to configure your PCs to join the domain. You can only use the **Set up School PCs** app to set up PCs that are not connected to your traditional domain.
 
@@ -152,107 +152,108 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p>1 hour</p></td>
 </tr> 
-<tr> <td> <p> Turn off hybrid sleep (plugged in) </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off hybrid sleep (plugged in) </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td> <p> Turn off hybrid sleep (on battery) </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off hybrid sleep (on battery) </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> 1 hour </p> </td>  
+<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> 1 hour</p> </td>
 </tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p> 1 hour </p> </td> 
+<tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p> 1 hour</p> </td> 
 </tr> 
-<tr> <td> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td> <p> Allow standby states (S1-S3) when sleeping (on battery) </p> </td> <td> <p> Enabled </p> </td> 
+<tr> <td> <p> Allow standby states (S1-S3) when sleeping (on battery) </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
-<tr> <td> <p> Specify the system hibernate timeout (plugged in) </p> </td> <td> <p> Enabled, 0 </p> </td> 
+<tr> <td> <p> Specify the system hibernate timeout (plugged in) </p> </td> <td> <p> Enabled, 0</p> </td> 
 </tr> 
-<tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0 </p> </td> 
+<tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0</p> </td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Power Management</strong>  >  <strong>Video and Display Settings</strong> </p> </td> </tr> 
-<tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p> 1 hour </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Video and Display Settings</strong></p> </td> </tr> 
+<tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p> 1 hour</p> </td> 
 </tr>
- <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p> 1 hour </p> </td>  
+ <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p> 1 hour</p> </td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>Logon</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Logon</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Show first sign-in animation </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td> <p> Show first sign-in animation </p> </td> <td> <p> Disabled</p> </td>
 </tr> 
-<tr> <td> <p> Hide entry points for Fast User Switching </p> </td> <td> <p> Enabled </p> </td> 
+<tr> <td> <p> Hide entry points for Fast User Switching </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
-<tr> <td> <p> Turn on convenience PIN sign-in </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td> <p> Turn on convenience PIN sign-in </p> </td> <td> <p> Disabled</p> </td>
 </tr> 
-<tr> <td> <p> Turn off picture password sign-in </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off picture password sign-in </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td> <p> Turn off app notification on the lock screen </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off app notification on the lock screen </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td> <p> Allow users to select when a password is required when resuming from connected standby </p> </td> <td> <p> Disabled </p> </td> 
+<tr> <td> <p> Allow users to select when a password is required when resuming from connected standby</p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td> <p> Block user from showing account details on sign-in </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Block user from showing account details on sign-in </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>System</strong>  >  <strong>User Profiles</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components </strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong></p> </td> 
 </tr> 
-<tr> <td> <p> Do not show Windows Tips </p> </td> <td> <p> Enabled </p> </td> 
+<tr> <td> <p> Do not show Windows Tips </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
-<tr> <td> <p> Turn off Microsoft consumer experiences </p> </td> <td> <p> Enabled </p> </td> 
+<tr> <td> <p> Turn off Microsoft consumer experiences </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
-<tr> <td> <p> Microsoft Passport for Work </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td> <p> Microsoft Passport for Work </p> </td> <td> <p> Disabled</p> </td>
 </tr> 
-<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled </p> </td>  
+<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Biometrics</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled</p> </td>
 </tr> 
-<tr> <td> <p> Allow users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td> 
+<tr> <td> <p> Allow users to log on using biometrics </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td> <p> Allow domain users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td> 
+<tr> <td> <p> Allow domain users to log on using biometrics </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Data Collection and Preview Builds</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Toggle user control over Insider builds </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td> <p> Toggle user control over Insider builds </p> </td> <td> <p> Disabled</p> </td>
 </tr> 
-<tr> <td> <p> Disable pre-release features or settings </p> </td> <td> <p> Disabled </p> </td> 
+<tr> <td> <p> Disable pre-release features or settings </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td> <p> Do not show feedback notifications </p> </td> <td> <p> Enabled </p> </td> 
+<tr> <td> <p> Do not show feedback notifications </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>File Explorer</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>File Explorer</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Show lock in the user tile menu </p> </td> <td> <p> Disabled </p> </td>  
+<tr> <td> <p> Show lock in the user tile menu </p> </td> <td> <p> Disabled</p> </td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Maintenance Scheduler</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>Maintenance Scheduler</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> 12am </p> </td>  
+<tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> 12am</p> </td>
 </tr> 
-<tr> <td> <p> Automatic Maintenance Random Delay </p> </td> <td> <p> Enabled, 2 hours </p> </td> 
+<tr> <td> <p> Automatic Maintenance Random Delay </p> </td> <td> <p> Enabled, 2 hours</p> </td> 
 </tr> 
-<tr> <td> <p> Automatic Maintenance WakeUp Policy </p> </td> <td> <p> Enabled </p> </td> 
+<tr> <td> <p> Automatic Maintenance WakeUp Policy </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Microsoft Edge</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>Microsoft Edge</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Open a new tab with an empty tab </p> </td> <td> <p> Disabled </p> </td> 
+<tr> <td> <p> Open a new tab with an empty tab </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td> <p> Configure corporate home pages </p> </td> <td> <p> Enabled, about:blank </p> </td> 
+<tr> <td> <p> Configure corporate home pages </p> </td> <td> <p> Enabled, about:blank</p> </td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>  >  <strong>Windows Components</strong>  >  <strong>Search</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>Search</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Allow Cortana </p> </td> <td> <p> Disabled </p> </td> 
+<tr> <td> <p> Allow Cortana </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Windows Settings</strong>  >  <strong>Security Settings</strong>  >  <strong>Local Policies</strong>  >  <strong>Security Options</strong> </p> </td> 
+<tr> <td colspan="2"> <p> <strong>Windows Settings</strong> > <strong>Security Settings</strong> > <strong>Local Policies</strong> > <strong>Security Options</strong></p> </td> 
 </tr> 
-<tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled </p>   </td>
+<tr><td><p>Accounts: Block Microsoft accounts</p></td><td><p>Enabled</p></td></tr>
+<tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart </p> </td> <td> <p> Disabled </p> </td> 
+<tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart</p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td> <p> Shutdown: Allow system to be shut down without having to log on </p> </td> <td> <p> Disabled </p> </td> 
+<tr> <td> <p> Shutdown: Allow system to be shut down without having to log on </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
-<tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny </p> </td>  
+<tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny</p> </td>
 </tr> 
 </tbody>
-</table> </br></br>
+</table> </br>
 
 ## Related topics
 

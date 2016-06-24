@@ -1,9 +1,14 @@
 ---
 title: Deploy a GPO
 description: Deploy a GPO
-ms.assetid: a0a3f292-e3ab-46ae-a0fd-d7b2b4ad8883
 author: jamiejdt
+ms.assetid: a0a3f292-e3ab-46ae-a0fd-d7b2b4ad8883
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Deploy a GPO
 

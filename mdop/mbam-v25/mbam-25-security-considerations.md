@@ -1,9 +1,14 @@
 ---
 title: MBAM 2.5 Security Considerations
 description: MBAM 2.5 Security Considerations
-ms.assetid: f6613c63-b32b-45fb-a6e8-673d6dae7d16
 author: jamiejdt
+ms.assetid: f6613c63-b32b-45fb-a6e8-673d6dae7d16
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # MBAM 2.5 Security Considerations
 

@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencer Command Line
 description: Application Virtualization Sequencer Command Line
-ms.assetid: a6d5ec9f-cc66-4869-9250-5c65d7e1e58e
 author: jamiejdt
+ms.assetid: a6d5ec9f-cc66-4869-9250-5c65d7e1e58e
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencer Command Line
 

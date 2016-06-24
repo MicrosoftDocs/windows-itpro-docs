@@ -1,9 +1,14 @@
 ---
 title: What's New in UE-V 2.0
 description: What's New in UE-V 2.0
-ms.assetid: 5d852beb-f293-4e3a-a33b-c40df59a7515
 author: jamiejdt
+ms.assetid: 5d852beb-f293-4e3a-a33b-c40df59a7515
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # What's New in UE-V 2.0
 

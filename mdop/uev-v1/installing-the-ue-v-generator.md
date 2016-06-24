@@ -1,9 +1,14 @@
 ---
 title: Installing the UE-V Generator
 description: Installing the UE-V Generator
-ms.assetid: 198b9a5f-3dfc-46be-9005-d33451914f87
 author: jamiejdt
+ms.assetid: 198b9a5f-3dfc-46be-9005-d33451914f87
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Installing the UE-V Generator
 

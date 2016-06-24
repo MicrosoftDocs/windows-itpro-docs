@@ -1,9 +1,14 @@
 ---
 title: High-Level Architecture
 description: High-Level Architecture
-ms.assetid: a78e12ad-5aa6-40e0-ae8b-51acaf005712
 author: jamiejdt
+ms.assetid: a78e12ad-5aa6-40e0-ae8b-51acaf005712
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # High-Level Architecture
 

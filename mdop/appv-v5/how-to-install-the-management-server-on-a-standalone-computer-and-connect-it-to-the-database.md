@@ -1,9 +1,14 @@
 ---
 title: How to install the Management Server on a Standalone Computer and Connect it to the Database
 description: How to install the Management Server on a Standalone Computer and Connect it to the Database
-ms.assetid: 95281287-cb56-4117-befd-854268ea147c
 author: jamiejdt
+ms.assetid: 95281287-cb56-4117-befd-854268ea147c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to install the Management Server on a Standalone Computer and Connect it to the Database
 

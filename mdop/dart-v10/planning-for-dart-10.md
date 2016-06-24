@@ -1,9 +1,14 @@
 ---
 title: Planning for DaRT 10
 description: Planning for DaRT 10
-ms.assetid: 2ca0249a-6a9f-4b4e-91f1-f1b34be7b16c
 author: jamiejdt
+ms.assetid: 2ca0249a-6a9f-4b4e-91f1-f1b34be7b16c
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Planning for DaRT 10
 

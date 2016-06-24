@@ -1,9 +1,14 @@
 ---
 title: Modify the AGPM Service Account
 description: Modify the AGPM Service Account
-ms.assetid: 0d8d8c7b-f299-4fee-8414-406492156942
 author: jamiejdt
+ms.assetid: 0d8d8c7b-f299-4fee-8414-406492156942
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Modify the AGPM Service Account
 

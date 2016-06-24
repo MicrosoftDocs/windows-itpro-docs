@@ -1,9 +1,14 @@
 ---
 title: Deploying the UE-V Agent
 description: Deploying the UE-V Agent
-ms.assetid: ec1c16c4-4be0-41ff-93bc-3e2b1afb5832
 author: jamiejdt
+ms.assetid: ec1c16c4-4be0-41ff-93bc-3e2b1afb5832
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Deploying the UE-V Agent
 
