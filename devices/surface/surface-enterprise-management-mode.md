@@ -34,7 +34,7 @@ You can use the Microsoft Surface UEFI Configurator tool in three modes:
 * [Surface UEFI Recovery Request](#recovery-request). Use this mode to respond to a recovery request to unenroll a Surface device from SEMM where a Reset Package operation is not successful.
 
 
-### Download the Microsoft Surface UEFI Configurator
+### Download Microsoft Surface UEFI Configurator
 
 You can download Microsoft Surface UEFI Configurator from the [Surface Tools for IT](https://www.microsoft.com/en-us/download/details.aspx?id=46703) page in the Microsoft Download Center.
 
@@ -46,11 +46,11 @@ Surface UEFI configuration packages are the primary mechanism to implement and m
 
 *Figure 2. Secure a SEMM configuration package with a certificate*
 
-See the [Surface Enterprise Management Mode Certificate Requirements](#surface-enterprise-management-mode-certificate-requirements) section of this article for more information about the requirements for the SEMM certificate.
+See the [Surface Enterprise Management Mode certificate requirements](#surface-enterprise-management-mode-certificate-requirements) section of this article for more information about the requirements for the SEMM certificate.
 
 >**Note**:&nbsp;&nbsp;You can also specify a UEFI password with SEMM that is required to view the **Security**, **Devices**, **Boot Configuration**, or **Enterprise Management** pages of Surface UEFI.
 
-After a device is enrolled in SEMM, the configuration file is read and the settings specified in the file are applied to UEFI. When you run a Configuration Package on a device that is already enrolled in SEMM, the signature of the configuration file is checked against the certificate that is stored in the device firmware. If the signature does not match, no changes are applied to the device.
+After a device is enrolled in SEMM, the configuration file is read and the settings specified in the file are applied to UEFI. When you run a configuration package on a device that is already enrolled in SEMM, the signature of the configuration file is checked against the certificate that is stored in the device firmware. If the signature does not match, no changes are applied to the device.
 
 You can use Surface UEFI settings to enable or disable the operation of individual components, such as cameras, wireless communication, or docking USB port (as shown in Figure 3), and configure advanced settings (as shown in Figure 4).
 
@@ -58,7 +58,7 @@ You can use Surface UEFI settings to enable or disable the operation of individu
 
 *Figure 3. Enable or disable devices in Surface UEFI with SEMM*
 
-[Configure advanced settings in SEMM](images\surface-ent-mgmt-fig4-advancedsettings.png "Configure advanced settings in SEMM")
+![Configure advanced settings in SEMM](images\surface-ent-mgmt-fig4-advancedsettings.png "Configure advanced settings in SEMM")
 
 *Figure 4. Configure advanced settings with SEMM*
 
@@ -78,7 +78,7 @@ You can enable or disable the following devices with SEMM:
 You can configure the following advanced settings with SEMM:
 
 * IPv6 support for PXE boot
-* Alternate boot order, where the Volume Down button and Power button can be pressed together during boot to boot directly to a USB or Ethernet device
+* Alternate boot order, where the Volume Down button and Power button can be pressed together during boot, to boot directly to a USB or Ethernet device
 * Lock the boot order to prevent changes
 * Support for booting to USB devices
 * Display of the Surface UEFI **Security** page
@@ -103,7 +103,7 @@ To enroll a Surface device in SEMM or to apply the UEFI configuration from a con
 
 A Surface UEFI reset package is used to perform only one task — to unenroll a Surface device from SEMM. The reset package contains signed instructions to remove the SEMM certificate from the device’s firmware and to reset UEFI settings to factory default. Like a Surface UEFI configuration package, a reset package must be signed with the same SEMM certificate that is provisioned on the Surface device. When you create a SEMM reset package, you are required to supply the serial number of the Surface device you intend to reset. SEMM reset packages are not universal and are specific to one device.
 
-### Recovery requests
+### Recovery request
 
 In some scenarios, it may be impossible to use a Surface UEFI reset package. (For example, if Windows becomes unusable on the Surface device.) In these scenarios you can unenroll the Surface device from SEMM through the **Enterprise Management** page of Surface UEFI (shown in Figure 7) with a Recovery Request operation.
 
