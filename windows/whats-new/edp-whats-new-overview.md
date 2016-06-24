@@ -26,16 +26,23 @@ Enterprise data protection (EDP) helps to protect against this potential data le
 
 EDP provides:
 - Obvious separation between personal and corporate data, without requiring employees to switch environments or apps.
+
 - Additional data protection for existing line-of-business apps without a need to update the apps.
+
 - Ability to wipe corporate data from devices while leaving personal data alone.
+
 - Use of audit reports for tracking issues and remedial actions.
+
 - Integration with your existing management system (Microsoft Intune, System Center Configuration Manager (version 1511 or later), or your current mobile device management (MDM) system) to configure, deploy, and manage EDP for your company.
 
 ## Enterprise scenarios
 EDP currently addresses these enterprise scenarios:
 - You can encrypt enterprise data on employee-owned and corporate-owned devices.
+
 - You can remotely wipe enterprise data off managed computers, including employee-owned computers, without affecting the personal data.
+
 - You can select specific apps that can access enterprise data, called "allowed apps" that are clearly recognizable to employees. You can also block non-protected apps from accessing enterprise data.
+
 - Your employees won't have their work otherwise interrupted while switching between personal and enterprise apps while the enterprise policies are in place. Switching environments or signing in multiple times isn’t required.
 
 ## Why use EDP?
