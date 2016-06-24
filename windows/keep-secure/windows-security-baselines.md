@@ -43,7 +43,7 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
  
  Here's a list of security baselines that are currently available.
 
- If you want to know what has changed with each security baseline, or if you want to stay up-to-date on what’s happening with them, check out the Microsoft Security Guidance blog.
+ > **Note:**  If you want to know what has changed with each security baseline, or if you want to stay up-to-date on what’s happening with them, check out the [Microsoft Security Guidance](http://blogs.technet.microsoft.com/secguide) blog.
  
 ### Windows 10 security baselines
  
