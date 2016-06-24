@@ -11,9 +11,11 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 Introduced in Windows 10, version 1607, Remote Credential Guard helps you protect your credentials over a Remote Desktop connection by redirecting the Kerberos requests back to the device that's requesting the connection. If the target device is compromised, your credentials are not exposed because both credential and credential derivatives are never sent to the target device.
+
+Remote Credential Guard also provides a single sign on experiences for Remote Desktop sessions.
 
 ## How it works
 
@@ -25,13 +27,13 @@ Do we want to include a technical overview like we did with [Credential Guard](h
 The devices must meet the following requirements in order to use Remote Credential Guard:
 
 - They must use Kerberos authentication.
-- They must be running at least Windows 10, version 1607 or Windows Server 2016 Technical Preview.
+- They must be running at least Windows 10, version 1607 or Windows Server 2016.
 - You are using the Remote Desktop classic Windows app. The Remote Desktop Universal Windows Platform app won't work.
 
 
-## Turn on Remote Credential Guard
+## Enable Remote Credential Guard
 
-You must turn on Remote Credential Guard on the target device by using the registry.
+You must enable Remote Credential Guard on the target device by using the registry.
 
 1. Open Registry Editor.
 2. Enable Remote Credential Guard:
@@ -49,12 +51,14 @@ You can use Remote Credential Guard on the client device by setting a Group Poli
 2. Double-click **Restrict delegation of credentials to remote servers**.
 3. In the Use the following restricted mode box:
     - If you want to require Remote Credential Guard, choose **Require Credential Guard**.
-    - If you want to allow Remote Credential Guard choose **Prefer Remote Credential Guard**.
+    - If you want to allow Remote Credential Guard, choose **Prefer Remote Credential Guard**.
 4. Click **OK**.
 
     ![Remote Credential Guard Group Policy](images/remote-credential-guard-gp.png)
 
 5. Close the Group Policy Management Console.
+
+6. From a command prompt, run **gpupdate.exe /force** to ensure that the Group Policy object is applied.
 
 
 ### Use Remote Credential Guard with a parameter to Remote Desktop Connection 
@@ -72,8 +76,6 @@ mstsc.exe /remoteGuard /v:<em>target device</em>
 
 - Remote Credential Guard must be turned off if you need to connect to a device that is joined to Azure Active Directory.
 
-- If a user is connecting to the remote server and that user is an adminstrator on that remove server, the user can get single-sign-on access, but they can also install software or copy tools that can listen on specific ports.
-
 - Remote Desktop Credential Guard only works with the RDP protocol.
 
-- No credentials or credentials are sent to the target device, but the target device still acquires the Kerberos Service Tickets on its own.
+- No credentials are sent to the target device, but the target device still acquires the Kerberos Service Tickets on its own.
