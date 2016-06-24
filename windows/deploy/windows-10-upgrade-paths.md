@@ -330,10 +330,8 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
     </tr>
 </table>
-
-## Free upgrade paths
-
 ## <a href="" id="bkmk-free-table"></a>
+## Free upgrade paths
 
 Windows 10 is offered as a free upgrade for the first year after launch of Windows 10, with the following restrictions: 
 - The offer expires on July 29th, 2016.
