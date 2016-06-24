@@ -19,6 +19,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |Added an update about needing to reconfigure your enterprise data protection app rules after delivery of the June service update. |
 | [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md) (multiple topics) | New |
 | [Advanced security audit policy settings](advanced-security-audit-policy-settings.md) (mutiple topics) | New security monitoring reference topics |
+| [Windows security baselines](windows-security-baselines.md) | New |
 
 ## May 2016
 
