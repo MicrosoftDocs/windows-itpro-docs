@@ -20,7 +20,7 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 
 >**Windows N/KN**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.  
 
->**Free upgrade**: Some upgrade paths qualify for a free upgrade using Windows Update. For a list of upgrade paths that are available as part of the free upgrade offer, see [Free upgrade paths](#bkmk-free-table).
+>**Free upgrade**: Some upgrade paths qualify for a free upgrade using Windows Update. For a list of upgrade paths that are available as part of the free upgrade offer, see [Free upgrade paths](#Free-upgrade-paths).
 
 ✔ = Full upgrade is supported including personal data, settings, and applications.<BR>
 D = Edition downgrade; personal data is maintained, applications and settings are removed.
@@ -330,7 +330,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
     </tr>
 </table>
-## <a href="" id="bkmk-free-table"></a>
+
 ## Free upgrade paths
 
 Windows 10 is offered as a free upgrade for the first year after launch of Windows 10, with the following restrictions: 
@@ -406,7 +406,8 @@ The following table summarizes the free upgrade paths to Windows 10.
 
 ## Related Topics
 
-[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
+[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)<BR>
+[Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md)
  
 
  
