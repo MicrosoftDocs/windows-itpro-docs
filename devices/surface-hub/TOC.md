@@ -19,7 +19,7 @@
 ### [Manage Microsoft Surface Hub](manage-surface-hub.md)
 #### [Accessibility](accessibility-surface-hub.md)
 #### [Change the Surface Hub device account](change-surface-hub-device-account.md)
-#### [Device reset](device-reset-suface-hub.md)
+#### [Device reset](device-reset-surface-hub.md)
 #### [End a Surface Hub meeting with I'm Done](i-am-done-finishing-your-surface-hub-meeting.md)
 #### [Install apps on your Surface Hub](install-apps-on-surface-hub.md)
 #### [Manage settings with a local admin account](manage-settings-with-local-admin-account-surface-hub.md)
