@@ -1,0 +1,513 @@
+---
+title: Local Accounts (Windows 10)
+description: Local Accounts
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+---
+
+# Local Accounts
+
+**Applies to**
+-   Windows 10
+-   Windows Server 2016
+
+This reference topic for the IT professional describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server. This topic does not describe the default local user accounts for an Active Directory domain controller.
+
+**Did you mean…**
+
+-   [Active Directory Accounts](active-directory-accounts.md)
+
+-   [Microsoft Accounts](microsoft-accounts.md)
+
+## <a href="" id="about-local-user-accounts-"></a>About local user accounts
+
+
+Local user accounts are stored locally on the server. These accounts can be assigned rights and permissions on a particular server, but on that server only. Local user accounts are security principals that are used to secure and manage access to the resources on a standalone or member server for services or users.
+
+This topic describes the following:
+
+-   [Default local user accounts](#sec-default-accounts)
+
+    -   [Administrator account](#sec-administrator)
+
+    -   [Guest Account](#sec-guest)
+
+    -   [HelpAssistant account (installed by using a Remote Assistance session)](#sec-helpassistant)
+
+-   [Default local system accounts](#sec-localsystem)
+
+-   [How to manage local accounts](#sec-manage-accounts)
+
+    -   [Restrict and protect local accounts with administrative rights](#sec-restrict-protect-accounts)
+
+    -   [Enforce local account restrictions for remote access](#sec-enforce-account-restrictions)
+
+    -   [Deny network logon to all local Administrator accounts](#sec-deny-network-logon)
+
+    -   [Create unique passwords for local accounts with administrative rights](#sec-create-unique-passwords)
+
+For information about security principals, see [Security Principals Technical Overview](security-principals.md).
+
+## <a href="" id="sec-default-accounts"></a>Default local user accounts
+
+
+The default local user accounts are built-in accounts that are created automatically when you install the Windows Server operating system on a stand-alone server or member server. The **Applies To** list at the beginning of this article designates the Windows operating systems to which this topic applies.
+
+After the Windows Server operating system is installed, the default local user accounts cannot be removed or deleted. In addition, default local user accounts do not provide access to network resources.
+
+Default local user accounts are used to manage access to the local server’s resources based on the rights and permissions that are assigned to the account. The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in the Local Users and Groups folder in the local Computer Management Microsoft Management Console (MMC). Computer Management is a collection of administrative tools that you can use to manage a single local or remote computer. For more information, see [How to manage local accounts](#sec-manage-accounts) later in this topic.
+
+The default local user accounts that are provided include the Administrator account, Guest account and HelpAssistant account. Each of these default local user accounts is described in the following sections.
+
+### <a href="" id="sec-administrator"></a>Administrator account
+
+The default local Administrator account is a user account for the system administrator. Every computer has an Administrator account (SID S-1-5-*domain*-500, display name Administrator). The Administrator account is the first account that is created during the installation for all Windows Server operating systems, and for Windows client operating systems.
+
+For Windows Server operating systems, the Administrator account gives the user full control of the files, directories, services, and other resources that are under the control of the local server. The Administrator account can be used to create local users, and assign user rights and access control permissions. The Administrator account can also be used take control of local resources at any time simply by changing the user rights and permissions.
+
+The default Administrator account cannot be deleted or locked out, but it can be renamed or disabled.
+
+The default Administrator account is initially installed differently for Windows Server operating systems, and the Windows client operating systems. The following table provides a comparison.
+
+| Default restriction | Windows Server operating systems | Windows client operating systems |
+|---------------------|----------------------------------|----------------------------------|
+| Administrator account is disabled on installation | No | Yes |
+| Administrator account is set up on first sign-in | Yes | No, keep disabled |
+| Administrator account is used to set up the local server or client computer | Yes | No, use a local user account with **Run as administrator** to obtain administrative rights |
+| Administrator account requires a strong password when it is enabled | Yes | Yes |
+| Administrator account can be disabled, locked out, or renamed | Yes | Yes |
+
+In summary, for Windows Server operating systems, the Administrator account is used to set up the local server only for tasks that require administrative rights. The default Administrator account is set up by using the default settings that are provided on installation. Initially, the Administrator account is not associated with a password. After installation, when you first set up Windows Server, your first task is to set up the Administrator account properties securely. This includes creating a strong password and securing the **Remote control** and **Remote Desktop Services Profile** settings. You can also disable the Administrator account when it is not required.
+
+In comparison, for the Windows client operating systems, the Administrator account has access to the local system only. The default Administrator account is initially disabled by default, and this account is not associated with a password. It is a best practice to leave the Administrator account disabled. The default Administrator account is considered only as a setup and disaster recovery account, and it can be used to join the computer to a domain. When administrator access is required, do not sign in as an administrator. You can sign in to your computer with your local (non-administrator) credentials and use **Run as administrator**. For more information, see [Security considerations](#sec-administrator-security).
+
+**Account group membership**
+
+By default, the Administrator account is installed as a member of the Administrators group on the server. It is a best practice to limit the number of users in the Administrators group because members of the Administrators group on a local server have Full Control permissions on that computer.
+
+The Administrator account cannot be deleted or removed from the Administrators group, but it can be renamed or disabled.
+
+**Security considerations**
+
+Because the Administrator account is known to exist on many versions of the Windows operating system, it is a best practice to disable the Administrator account when possible to make it more difficult for malicious users to gain access to to the server or client computer.
+
+You can rename the Administrator account. However, a renamed Administrator account continues to use the same automatically assigned security identifier (SID), which can be discovered by malicious users. For more information about how to rename or disable a user account, see [Disable or activate a local user account](http://technet.microsoft.com/library/cc732112.aspx) and [Rename a local user account](http://technet.microsoft.com/library/cc725595.aspx).
+
+As a security best practice, use your local (non-Administrator) account to sign in and then use **Run as administrator** to accomplish tasks that require a higher level of rights than a standard user account. Do not use the Administrator account to sign in to your computer unless it is entirely necessary. For more information, see [Run a program with administrative credentials](https://technet.microsoft.com/en-us/library/cc732200.aspx).
+
+In comparison, on the Windows client operating system, a user with a local user account that has Administrator rights is considered the system administrator of the client computer. The first local user account that is created during installation is placed in the local Administrators group. However, when multiple users run as local administrators, the IT staff has no control over these users or their client computers.
+
+In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](http://technet.microsoft.com/library/hh831791.aspx) and [Group Policy](http://technet.microsoft.com/windowsserver/bb310732.aspx).
+
+**Note**  
+Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
+
+ 
+
+**Important**  
+Even when the Administrator account has been disabled, it can still be used to gain access to a computer by using safe mode. In the Recovery Console or in safe mode, the Administrator account is automatically enabled. When normal operations are resumed, it is disabled.
+
+ 
+
+### <a href="" id="sec-guest"></a>Guest account
+
+The Guest account (SID S-1-5-32-546) is disabled by default on installation. The Guest account lets occasional or one-time users, who do not have an account on the computer, temporarily sign in to the local server or client computer with limited user rights. By default, the Guest account has a blank password. Because the Guest account can provide anonymous access, it is a security risk. For this reason, it is a best practice to leave the Guest account disabled, unless its use is entirely necessary.
+
+**Account group membership**
+
+By default, the Guest account is the only member of the default Guests group, which lets a user sign in to a server. On occasion, an administrator who is a member of the Administrators group can set up a user with a Guest account on one or more computers.
+
+**Security considerations**
+
+When an administrator enables the Guest account, it is a best practice to create a strong password for this account. In addition, the administrator on the computer should also grant only limited rights and permissions for the Guest account. For security reasons, the Guest account should not be used over the network and made accessible to other computers.
+
+When a computer is shutting down or starting up, it is possible that a guest user or anyone with local access could gain unauthorized access to the computer. To help prevent this risk, do not grant the Guest account the [Shut down the system](shut-down-the-system.md) user right.
+
+In addition, the guest user in the Guest account should not be able to view the event logs. After the Guest account is enabled, it is a best practice to monitor the Guest account frequently to ensure that other users cannot use services and other resources, such as resources that were unintentionally left available by a previous user.
+
+### <a href="" id="sec-helpassistant"></a>HelpAssistant account (installed by using a Remote Assistance session)
+
+The default HelpAssistant account is enabled when a Windows Remote Assistance session is run. The Windows Remote Assistance session can be used to connect from the server to another computer running the Windows operating system. For solicited remote assistance, a user initiates a Windows Remote Assistance session, and it is initiated by invitation. For solicited remote assistance, a user sends an invitation from their computer, through e-mail or as a file, to a person who can provide assistance.
+
+After the user’s invitation for a Windows Remote Assistance session is accepted, the default HelpAssistant account is automatically created. The HelpAssistant account provides limited access to the computer to the person who provides assistance. The HelpAssistant account is managed by the Remote Desktop Help Session Manager service. The HelpAssistant account is automatically deleted after there are no Remote Assistance requests are pending.
+
+The security identifiers (SIDs) that pertain to the default HelpAssistant account include:
+
+-   SID: S-1-5-13, display name Terminal Server User. This group includes all users who sign in to a server with Remote Desktop Services enabled.
+
+-   SID: S-1-5-14, display name Remote Interactive Logon. This group includes all users who sign in to the computer by using Remote Desktop Connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.
+
+For the Windows Server operating system, Remote Assistance is an optional component that is not installed by default. You must install Remote Assistance before it can be used.
+
+In comparison, for the Windows client operating system, the HelpAssistant account is enabled on installation by default. For more information about remote desktop connections for those client operating systems designated in the **Applies To** list at the beginning of this topic, see [Enable Remote Desktop](http://technet.microsoft.com/library/dd744299.aspx).
+
+## <a href="" id="sec-localsystem"></a>Default local system accounts
+
+
+The system account and the Administrator account of the Administrators group have the same file rights and permissions, but they have different functions. The system account is used by the operating system and by services that run under Windows. There are many services and processes in the Windows operating system that need the capability to sign in internally, such as during a Windows installation. The system account was designed for that purpose. It is an internal account that does not show up in User Manager, it cannot be added to any groups, and it cannot have user rights assigned to it.
+
+On the other hand, the system account does appear on an NTFS file system volume in File Manager in the **Permissions** portion of the **Security** menu. By default, the system account is granted Full Control permissions to all files on an NTFS volume. Here the system account has the same functional rights and permissions as the Administrator account.
+
+**Note**  
+To grant the account Administrators group file permissions does not implicitly give permission to the system account. The system account's permissions can be removed from a file, but we do not recommend removing them.
+
+ 
+
+## <a href="" id="sec-manage-accounts"></a>How to manage local user accounts
+
+
+The default local user accounts, and the local user accounts that you create, are located in the Users folder. The Users folder is located in the Local Users and Groups folder in the local Computer Management Microsoft Management Console (MMC), a collection of administrative tools that you can use to manage a single local or remote computer. For more information about creating and managing local user accounts, see [Manage Local Users](http://technet.microsoft.com/library/cc731899.aspx).
+
+You can use Local Users and Groups to assign rights and permissions on the local server, and that server only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a server, such as backing up files and folders or shutting down a server. An access permission is a rule that is associated with an object, usually a file, folder, or printer. It regulates which users can have access to an object on the server and in what manner.
+
+You cannot use Local Users and Groups to view local users and groups after a member server is used as a domain controller. However, you can use Local Users and Groups on a domain controller to target remote computers that are not domain controllers on the network.
+
+**Note**  
+You use Active Directory Users and Computers to manage users and groups in Active Directory.
+
+ 
+
+### <a href="" id="sec-restrict-protect-accounts"></a>Restrict and protect local accounts with administrative rights
+
+An administrator can use a number of approaches to prevent malicious users from using stolen credentials, such as a stolen password or password hash, for a local account on one computer from being used to authenticate on another computer with administrative rights; this is also called "lateral movement".
+
+The simplest approach is to sign in to your computer with a standard user account, instead of using the Administrator account for tasks, for example, to browse the Internet, send email, or use a word processor. When you want to perform an administrative task, for example, to install a new program or to change a setting that affects other users, you don't have to switch to an Administrator account. You can use User Account Control (UAC) to prompt you for permission or an administrator password before performing the task, as described in the next section.
+
+The other approaches that can be used to restrict and protect user accounts with administrative rights include:
+
+-   Enforce local account restrictions for remote access.
+
+-   Deny network logon to all local Administrator accounts.
+
+-   Create unique passwords for local accounts with administrative rights.
+
+Each of these approaches is described in the following sections.
+
+**Note**  
+These approaches do not apply if all administrative local accounts are disabled.
+
+ 
+
+### <a href="" id="sec-enforce-account-restrictions"></a>Enforce local account restrictions for remote access
+
+The User Account Control (UAC) is a security feature in Windows that has been in use in Windows Server 2008 and in Windows Vista, and the operating systems to which the **Applies To** list refers. UAC enables you to stay in control of your computer by informing you when a program makes a change that requires administrator-level permission. UAC works by adjusting the permission level of your user account. By default, UAC is set to notify you when applications try to make changes to your computer, but you can change how often UAC notifies you.
+
+UAC makes it possible for an account with administrative rights to be treated as a standard user non-administrator account until full rights, also called elevation, is requested and approved. For example, UAC lets an administrator enter credentials during a non-administrator's user session to perform occasional administrative tasks without having to switch users, sign out, or use the **Run as** command.
+
+In addition, UAC can require administrators to specifically approve applications that make system-wide changes before those applications are granted permission to run, even in the administrator's user session.
+
+For example, a default feature of UAC is shown when a local account signs in from a remote computer by using Network logon (for example, by using NET.EXE USE). In this instance, it is issued a standard user token with no administrative rights, but with the ability to request or receive elevation. Consequently, local accounts that sign in by using Network logon cannot access administrative shares such as C$, or ADMIN$, or perform any remote administration.
+
+For summary information about UAC, see [User Account Control](http://technet.microsoft.com/library/cc731416.aspx). For detailed information about special conditions when you use UAC, see [User Account Control](http://technet.microsoft.com/library/cc772207.aspx).
+
+The following table shows the Group Policy and registry settings that are used to enforce local account restrictions for remote access.
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>No.</strong></p></td>
+<td><p><strong>Setting</strong></p></td>
+<td><p><strong>Detailed Description</strong></p></td>
+</tr>
+<tr class="even">
+<td><p></p></td>
+<td><p>Policy location</p></td>
+<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options</p></td>
+</tr>
+<tr class="odd">
+<td><p>1</p></td>
+<td><p>Policy name</p></td>
+<td><p>[User Account Control: Run all administrators in Admin Approval Mode](user-account-control-run-all-administrators-in-admin-approval-mode.md)</p></td>
+</tr>
+<tr class="even">
+<td><p></p></td>
+<td><p>Policy setting</p></td>
+<td><p>Enabled</p></td>
+</tr>
+<tr class="odd">
+<td><p>2</p></td>
+<td><p>Policy location</p></td>
+<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options</p></td>
+</tr>
+<tr class="even">
+<td><p></p></td>
+<td><p>Policy name</p></td>
+<td><p>[User Account Control: Run all administrators in Admin Approval Mode](user-account-control-run-all-administrators-in-admin-approval-mode.md)</p></td>
+</tr>
+<tr class="odd">
+<td><p></p></td>
+<td><p>Policy setting</p></td>
+<td><p>Enabled</p></td>
+</tr>
+<tr class="even">
+<td><p>3</p></td>
+<td><p>Registry key</p></td>
+<td><p><strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</strong></p></td>
+</tr>
+<tr class="odd">
+<td><p></p></td>
+<td><p>Registry value name</p></td>
+<td><p>LocalAccountTokenFilterPolicy</p></td>
+</tr>
+<tr class="even">
+<td><p></p></td>
+<td><p>Registry value type</p></td>
+<td><p>DWORD</p></td>
+</tr>
+<tr class="odd">
+<td><p></p></td>
+<td><p>Registry value data</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+**To enforce local account restrictions for remote access**
+
+1.  Start the **Group Policy Management** Console (GPMC).
+
+2.  In the console tree, expand &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;, and then **Group Policy Objects** where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO).
+
+3.  In the console tree, right-click **Group Policy Objects**, and &gt; **New**.
+
+    ![local accounts 1](images/localaccounts-proc1-sample1.png)
+
+4.  In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and &gt; **OK** where *gpo\_name* is the name of the new GPO. The GPO name indicates that the GPO is used to restrict local administrator rights from being carried over to another computer.
+
+    ![local accounts 2](images/localaccounts-proc1-sample2.png)
+
+5.  In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**.
+
+    ![local accounts 3](images/localaccounts-proc1-sample3.png)
+
+6.  Ensure that UAC is enabled and that UAC restrictions apply to the default Administrator account by doing the following:
+
+    1.  Navigate to the Computer Configuration\\Policies\\Windows Settings, and &gt; **Security Options**.
+
+    2.  Double-click **User Account Control: Run all administrators in Admin Approval Mode** &gt; **Enabled** &gt; **OK**.
+
+    3.  Double-click **User Account Control: Admin Approval Mode for the Built-in Administrator account** &gt; **Enabled** &gt; **OK**.
+
+7.  Ensure that the local account restrictions are applied to network interfaces by doing the following:
+
+    1.  Navigate to Computer Configuration\\Preferences and Windows Settings, and &gt; **Registry**.
+
+    2.  Right-click **Registry**, and &gt; **New** &gt; **Registry Item**.
+
+        ![local accounts 4](images/localaccounts-proc1-sample4.png)
+
+    3.  In the **New Registry Properties** dialog box, on the **General** tab, change the setting in the **Action** box to **Replace**.
+
+    4.  Ensure that the **Hive** box is set to **HKEY\_LOCAL\_MACHINE**.
+
+    5.  Click (**…**), browse to the following location for **Key Path** &gt; **Select** for: **SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System**.
+
+    6.  In the **Value name** area, type **LocalAccountTokenFilterPolicy**.
+
+    7.  In the **Value type** box, from the drop-down list, select **REG\_DWORD** to change the value.
+
+    8.  In the **Value data** box, ensure that the value is set to **0**.
+
+    9.  Verify this configuration, and &gt; **OK**.
+
+        ![local accounts 5](images/localaccounts-proc1-sample5.png)
+
+8.  Link the GPO to the first **Workstations** organizational unit (OU) by doing the following:
+
+    1.  Navigate to the &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;\\OU path.
+
+    2.  Right-click the **Workstations** OU, and &gt; **Link an existing GPO**.
+
+        ![local accounts 6](images/localaccounts-proc1-sample6.png)
+
+    3.  Select the GPO that you just created, and &gt; **OK**.
+
+9.  Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy.
+
+10. Create links to all other OUs that contain workstations.
+
+11. Create links to all other OUs that contain servers.
+
+### <a href="" id="sec-deny-network-logon"></a>Deny network logon to all local Administrator accounts
+
+Denying local accounts the ability to perform network logons can help prevent a local account password hash from being reused in a malicious attack. This procedure helps to prevent lateral movement by ensuring that the credentials for local accounts that are stolen from a compromised operating system cannot be used to compromise additional computers that use the same credentials.
+
+**Note**  
+In order to perform this procedure, you must first identify the name of the local, default Administrator account, which might not be the default user name "Administrator", and any other accounts that are members of the local Administrators group.
+
+ 
+
+The following table shows the Group Policy settings that are used to deny network logon for all local Administrator accounts.
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>No.</strong></p></td>
+<td><p><strong>Setting</strong></p></td>
+<td><p><strong>Detailed Description</strong></p></td>
+</tr>
+<tr class="even">
+<td><p></p></td>
+<td><p>Policy location</p></td>
+<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment</p></td>
+</tr>
+<tr class="odd">
+<td><p>1</p></td>
+<td><p>Policy name</p></td>
+<td><p>[Deny access to this computer from the network](deny-access-to-this-computer-from-the-network.md)</p></td>
+</tr>
+<tr class="even">
+<td><p></p></td>
+<td><p>Policy setting</p></td>
+<td><p>User name of the default Administrator account</p>
+<p>(Might be renamed through policy.)</p></td>
+</tr>
+<tr class="odd">
+<td><p>2</p></td>
+<td><p>Policy location</p></td>
+<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment</p></td>
+</tr>
+<tr class="even">
+<td><p></p></td>
+<td><p>Policy name</p></td>
+<td><p>[Deny log on through Remote Desktop Services](deny-log-on-through-remote-desktop-services.md)</p>
+<p>(Windows Server 2008 R2 and later.)</p>
+<p>Deny logon through Terminal Services</p>
+<p>(Windows Server 2008)</p></td>
+</tr>
+<tr class="odd">
+<td><p></p></td>
+<td><p>Policy setting</p></td>
+<td><p>User name of the default Administrator account</p>
+<p>(Might be renamed through policy).</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+**To deny network logon to all local administrator accounts**
+
+1.  Start the **Group Policy Management** Console (GPMC).
+
+2.  In the console tree, expand &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;, and then **Group Policy Objects**, where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO).
+
+3.  In the console tree, right-click **Group Policy Objects**, and &gt; **New**.
+
+4.  In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and then &gt; **OK** where *gpo\_name* is the name of the new GPO indicates that it is being used to restrict the local administrative accounts from interactively signing in to the computer.
+
+    ![local accounts 7](images/localaccounts-proc2-sample1.png)
+
+5.  In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**.
+
+    ![local accounts 8](images/localaccounts-proc2-sample2.png)
+
+6.  Configure the user rights to deny network logons for administrative local accounts as follows:
+
+    1.  Navigate to the Computer Configuration\\Policies\\Windows Settings, and &gt; **User Rights Assignment**.
+
+    2.  Double-click **Deny access to this computer from the network**, and &gt; **Define these policy settings**.
+
+    3.  Click **Add User or Group**, type the name of the default Administrator account, and &gt; **OK**. The default name is Administrator on US English installations, but it can be renamed either by policy or manually.
+
+        ![local accounts 9](images/localaccounts-proc2-sample3.png)
+
+        **Important**  
+        In the **User and group names** box, type the user name of the account that you identified at the start of this process. Do not click **Browse** and do not type the domain name or the local computer name in this dialog box. For example, type only **Administrator**. If the text that you typed resolved to a name that is underlined, includes a computer name, or includes the domain, it restricts the wrong account and causes this mitigation to work incorrectly. Also, be careful that you do not enter the group name Administrator to prevent blocking domain accounts in that group.
+
+         
+
+    4.  For any additional local accounts in the Administrators group on all of the workstations that you are configuring, click **Add User or Group**, type the user names of these accounts in the dialog box in the same manner as described in the previous step, and then click **OK**.
+
+7.  Configure the user rights to deny Remote Desktop (Remote Interactive) logons for administrative local accounts as follows:
+
+    1.  Navigate to Computer Configuration\\Policies\\Windows Settings and Local Policies, and then click **User Rights Assignment**.
+
+        **Note**  
+        Depending on the Windows operating system, you can choose the name of the Remote Interactive logon user right.
+
+         
+
+    2.  On computers that run Windows Server 2008, double-click **Deny logon through Terminal Services**, and then select **Define these policy settings**.
+
+    3.  On computers running Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2, double-click **Deny logon through Remote Desktop Services**, and then select **Define these settings**.
+
+    4.  Click **Add User or Group**, type the user name of the default Administrator account, and &gt; **OK**. (The default name is Administrator on US English installations, but it can be renamed either by policy or manually.
+
+        **Important**  
+        In the **User and group names** box, type the user name of the account that you identified at the start of this process. Do not click **Browse** and do not type the domain name or the local computer name in this dialog box. For example, type only **Administrator**. If the text that you typed resolves to a name that is underlined or includes a domain name, it restricts the wrong account and causes this mitigation to work incorrectly. Also, be careful that you do not enter the group name Administrator because this also blocks domain accounts in that group.
+
+         
+
+    5.  For any additional local accounts in the Administrators group on all of the workstations that you are setting up, click **Add User or Group**, type the user names of these accounts in the dialog box in the same manner as the previous step, and &gt; **OK**.
+
+8.  Link the GPO to the first **Workstations** OU as follows:
+
+    1.  Navigate to the &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;\\OU path.
+
+    2.  Right-click the **Workstations** OU, and &gt; **Link an existing GPO**.
+
+    3.  Select the GPO that you just created, and &gt; **OK**.
+
+9.  Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy.
+
+10. Create links to all other OUs that contain workstations.
+
+11. Create links to all other OUs that contain servers.
+
+    **Note**  
+    You might have to create a separate GPO if the user name of the default Administrator account is different on workstations and servers.
+
+     
+
+### <a href="" id="sec-create-unique-passwords"></a>Create unique passwords for local accounts with administrative rights
+
+Passwords should be unique per individual account. While this is generally true for individual user accounts, many enterprises have identical passwords for common local accounts, such as the default Administrator account. This also occurs when the same passwords are used for local accounts during operating system deployments.
+
+Passwords that are left unchanged or changed synchronously to keep them identical add a significant risk for organizations. Randomizing the passwords mitigates "pass-the-hash" attacks by using different passwords for local accounts, which hampers the ability of malicious users to use password hashes of those accounts to compromise other computers.
+
+Passwords can be randomized by:
+
+-   Purchasing and implementing an enterprise tool to accomplish this task. These tools are commonly referred to as "privileged password management" tools.
+
+-   Configuring, customizing and implementing a free tool to accomplish this task. A sample tool with source code is available at [Solution for management of built-in Administrator account’s password via GPO](http://code.msdn.microsoft.com/windowsdesktop/Solution-for-management-of-ae44e789).
+
+    **Note**  
+    This tool is not supported by Microsoft. There are some important considerations to make before deploying this tool because this tool requires client-side extensions and schema extensions to support password generation and storage.
+
+     
+
+-   Create and implement a custom script or solution to randomize local account passwords.
+
+## <a href="" id="dhcp-references"></a>See also
+
+
+The following resources provide additional information about technologies that are related to local accounts.
+
+-   [Security Principals Technical Overview](security-principals.md)
+
+-   [Security Identifiers Technical Overview](security-identifiers.md)
+
+-   [Access Control Overview](access-control.md)
+
+ 
+
+ 
+
+
+
+
