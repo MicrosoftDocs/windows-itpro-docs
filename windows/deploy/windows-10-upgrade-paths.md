@@ -344,9 +344,7 @@ Windows 10 is offered as a free upgrade for the first year after launch of Windo
 
 ><sup>2</sup>Active Software Assurance customers in volume licensing have the benefit to upgrade to Windows 10 Enterprise outside of this offer. Windows 10 is not supported on devices running the RT versions of Windows 8.
 
-For a list of frequently asked questions about the free upgrade to Windows 10, see [Upgrade to Windows 10: FAQ](http://windows.microsoft.com/en-us/windows-10/upgrade-to-windows-10-faq).
-
-The following table summarizes the free upgrade paths to Windows 10.
+The following table summarizes the free upgrade paths to Windows 10. For a list of frequently asked questions about the free upgrade to Windows 10, see [Upgrade to Windows 10: FAQ](http://windows.microsoft.com/en-us/windows-10/upgrade-to-windows-10-faq).
 
 <table border="1" cellpadding="3">
     <tr>

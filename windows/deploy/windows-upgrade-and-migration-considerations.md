@@ -57,7 +57,10 @@ Value: "DDACLSys_Disabled" = 1
 This feature is disabled if this registry key value exists and is configured to `1`.
 
 ## Related topics
-- [User State Migration Tool (USMT) Overview Topics](usmt-topics.md)
+[User State Migration Tool (USMT) Overview Topics](usmt-topics.md)<BR>
+[Windows 10 upgrade paths](windows-10-upgrade-paths.md)<BR>
+[Windows 10 edition upgrade](windows-10-edition-upgrades.md)
+
 
  
 
