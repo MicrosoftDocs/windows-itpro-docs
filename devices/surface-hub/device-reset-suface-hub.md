@@ -27,7 +27,10 @@ Initiating a reset will return the device to the last cumulative Windows update,
 -   MDM enrollment
 -   Domain join or Azure AD join information
 -   Local admins on the device
--   Configurations from MDM or the Settings app.
+-   Configurations from MDM or the Settings app
+
+**Important Note**</br>
+Performing a device reset may take up to 6 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
 
 After the reset, you'll be taken through the [first run program](first-run-program-surface-hub.md) again.
 
