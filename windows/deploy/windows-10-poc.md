@@ -23,7 +23,7 @@ This following topics provide instructions for setting up a proof of concept (Po
         <td BGCOLOR="#a0e4fa">Description</td>
     </tr>
     <tr>
-        <td>[Configure the PoC environment](configure-the-poc-environment)</td>
+        <td>[Configure the PoC environment](#configure-the-poc-environment)</td>
         <td>Instructions are provided for installing and configuring Hyper-V and configuring VHDs in preparation for different deployment scenarios.</td>
     </tr>
     <tr>
