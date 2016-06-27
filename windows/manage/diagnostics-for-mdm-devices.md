@@ -17,6 +17,8 @@ author: jdeckerMS
 
 (which SKUs?)
 
+(this isn't really MDM-managed only, is it? It can be done locally/email?)
+
 Two new diagnostic tools for Windows 10, version 1607, help IT administrators diagnose and resolve issues with remote devices enrolled in mobile device management (MDM): the [Device Policy State Log](#device-policy-state-log) and [UDiag](#udiag). Windows 10 for desktop editions and Windows 10 Mobile make it simple for users to export log files that you can then analyze with these tools.
 
 ## Export management log files
@@ -69,7 +71,7 @@ Investigating log content, identifying patterns, and adding a root cause analysi
 
 
 
- 	Device Policy State Log implementation: what does admin have to do on MDM side to enable "export your management log file"?[DK]  Nothing.  Generating the log is entirely a client side behavior.  There is a new capability in the Diagnostic Log CSP that will enable a MDM ISV to trigger generation and capture of the log over the MDM channel. 
+ 	
 
 	Can admin pull logs without user action? [DK] Yes via the diagnostic log CSP
 
