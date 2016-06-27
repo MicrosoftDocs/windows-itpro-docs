@@ -326,7 +326,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td>✔</td>
+        <td>D</td>
         <td>✔</td>
     </tr>
 </table>
