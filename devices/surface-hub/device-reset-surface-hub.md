@@ -2,7 +2,6 @@
 title: Device reset (Surface Hub)
 description: You may wish to reset your Microsoft Surface Hub.
 ms.assetid: 44E82EEE-1905-464B-A758-C2A1463909FF
-redirect_url: https://technet.microsoft.com/en-us/itpro/surface-hub/device-reset-surface-hub
 keywords: reset Surface Hub
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -41,12 +40,3 @@ After the reset, you'll be taken through the [first run program](first-run-progr
 [Manage Microsoft Surface Hub](manage-surface-hub.md)
 
 [Microsoft Surface Hub administrator's guide](surface-hub-administrators-guide.md)
-
- 
-
- 
-
-
-
-
-
