@@ -60,7 +60,7 @@ The following steps show you how to create a deployment share for Windows 10 th
   >**Note:**&nbsp;&nbsp;As of SDA version 1.96.0405, SDA will install only the components of the Windows ADK that are required for deployment, as follows:
     * Deployment tools
     * User State Migration Tool (USMT)
-    * Windows Preinstallation Environment (WinPE)</br>
+    * Windows Preinstallation Environment (WinPE)</br></br>
 
   >**Note:**&nbsp;&nbsp;As of SDA version 1.96.0405, SDA will install and use MDT 2013 Update 2. Earlier versions of SDA are compatible only with MDT 2013 Update 1.
 
@@ -116,7 +116,7 @@ The following steps show you how to create a deployment share for Windows 10 th
 
     ![The installatin progress window](images/sdasteps-fig5-installwindow.png "The installatin progress window")
 
-    *Figure 5. The **Installation Progress** window*
+    *Figure 5. The Installation Progress window*
 
 8.  When the SDA process completes the creation of your deployment share, a **Success** window is displayed. Click **Finish** to close the window. At this point your deployment share is now ready to perform a Windows deployment to Surface devices.
 
@@ -250,7 +250,7 @@ After you have prepared the USB drive for boot, the next step is to generate off
 
     ![Select the Update Media Content option](images/sdasteps-fig12-updatemedia.png "Select the Update Media Content option")
     
-    *Figure 12. Select the **Update Media Content** option*
+    *Figure 12. Select the Update Media Content option*
 
 22. The **Update Media Content** window is displayed and shows the progress as the media files are created. When the process completes, click **Finish.**
 
@@ -358,7 +358,7 @@ To run the Deploy Microsoft Surface task sequence:
 
     ![Select the task sequence](images/sdasteps-fig15-deploy.png "Select the task sequence")
 
-    *Figure 15. Select the **1 – Deploy Microsoft Surface** task sequence*
+    *Figure 15. Select the 1 – Deploy Microsoft Surface task sequence*
 
 2.  On the **Computer Details** page, type a name for the Surface device in the **Computer Name** box. In the **Join a domain** section, type your domain name and credentials as shown in Figure 16, and then click **Next**.
 
@@ -378,7 +378,7 @@ To run the Deploy Microsoft Surface task sequence:
 
     ![Installation progress window](images/sdasteps-fig17-installprogresswindow.png "Installation progress window")
 
-    *Figure 17. The **Installation Progress** window*
+    *Figure 17. The Installation Progress window*
 
 8.  When the deployment task sequence completes, a **Success** window is displayed. Click **Finish** to complete the deployment and begin using your Surface device.
 
