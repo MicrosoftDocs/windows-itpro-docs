@@ -264,7 +264,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td>✔</td>
-        <td>✔</td>
+        <td></td>
     </tr>
     <tr>
         <td rowspan="7" nowrap="nowrap">Windows 10</td>
