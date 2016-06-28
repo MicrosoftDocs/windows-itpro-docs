@@ -35,6 +35,7 @@
 ## [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 ## [Upgrade to Windows 10 with System Center Configuration Manager](upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 ## [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md)
+## [Windows 10 upgrade paths](windows-10-upgrade-paths.md)
 ## [Windows 10 edition upgrade](windows-10-edition-upgrades.md)
 ## [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
 ## [Provision PCs with apps and certificates for initial deployments](provision-pcs-with-apps-and-certificates.md)
