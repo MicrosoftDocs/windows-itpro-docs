@@ -279,7 +279,7 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>False</td>
 <td>
 <p>True: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is enabled.</p>
-<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign0in</a> is disabled.</p>
+<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is disabled.</p>
 </td>
 </tr>
 </table>
