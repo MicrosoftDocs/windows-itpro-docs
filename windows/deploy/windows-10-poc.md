@@ -17,7 +17,7 @@ author: greg-lindsay
 
 This following topics provide instructions for setting up a proof of concept (PoC) lab where you can deploy Windows 10 in a private environment using a minimum amount of resources. The lab utilizes the Microsoft Hyper-V platform to run virtual machines that provide all the services and tools required to deploy Windows 10 on a network.
 
-<table border="1" cellpadding="3">
+<table border="1" cellpadding="2">
     <tr>
         <td BGCOLOR="#a0e4fa">Topic</td>
         <td BGCOLOR="#a0e4fa">Description</td>
