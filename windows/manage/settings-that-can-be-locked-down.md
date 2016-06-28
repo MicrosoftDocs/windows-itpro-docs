@@ -373,7 +373,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Accessory app0s</td>
+<td align="left">Accessory apps</td>
 <td align="left">SettingsPagePrivacyAccessories</td>
 </tr>
 <tr class="even">
