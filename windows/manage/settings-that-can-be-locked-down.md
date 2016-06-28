@@ -68,13 +68,13 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="odd">
 <td align="left"></td>
+<td align="left">Apps for websites</td>
+<td align="left">SettingsPageAppsForWebsites</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
 <td align="left">Storage</td>
 <td align="left">SettingsPageStorageSenseStorageOverview</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Device encryption</td>
-<td align="left">SettingsPageGroupPCSystemDeviceEncryption</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -149,7 +149,7 @@ The following table lists the settings pages and page groups. Use the page name 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Mobile hotspot</td>
-<td align="left">SettingsPageInternetSharing</td>
+<td align="left">SettingsPageNetworkMobileHotspot</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -181,10 +181,15 @@ The following table lists the settings pages and page groups. Use the page name 
 <td align="left">Lock screen</td>
 <td align="left">SettingsPageLockscreen</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"></td>
-<td align="left">Theme</td>
-<td align="left">SettingsPageStartTheme</td>
+<td align="left">Glance screen</td>
+<td align="left">SettingsPageGlance</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Navigation bar</td>
+<td align="left">SettingsNagivationBar</td>
 </tr>
 <tr class="odd">
 <td align="left">Accounts</td>
@@ -203,30 +208,24 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
+<td align="left">Email & app accounts</td>
+<td align="left">SettingsPageAccountsEmailApp</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
 <td align="left">Work access</td>
-<td align="left">SettingsPageAccountsWorkplace</td>
+<td align="left">SettingsPageWorkAccess</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Sync your settings</td>
 <td align="left">SettingsPageAccountsSync</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"><p>Kid's corner</p>
-<p>(disabled in Assigned Access)</p></td>
-<td align="left">SettingsPageKidsCorner</td>
-</tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left"><p>Apps corner</p>
 <p>(disabled in Assigned Access)</p></td>
 <td align="left">SettingsPageAppsCorner</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Provisioning</td>
-<td align="left">SettingsPageProvisioningPage</td>
 </tr>
 <tr class="odd">
 <td align="left">Time and language</td>
@@ -315,6 +314,11 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
+<td align="left">Notifications</td>
+<td align="left">SettingsPagePrivacyNotifications</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
 <td align="left">Speech inking and typing</td>
 <td align="left">SettingsPagePrivacyPersonalization</td>
 </tr>
@@ -335,6 +339,20 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
+<td align="left">Phone calls</td>
+<td align="left">SettingsPagePrivacyPhoneCall</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Call history</td>
+<td align="left">SettingsPagePrivacyCallHistory</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Email</td>
+<td align="left">SettingsPagePrivacyEmail</td>
+</tr><tr class="even">
+<td align="left"></td>
 <td align="left">Messaging</td>
 <td align="left">SettingsPagePrivacyMessaging</td>
 </tr>
@@ -342,6 +360,11 @@ The following table lists the settings pages and page groups. Use the page name 
 <td align="left"></td>
 <td align="left">Radios</td>
 <td align="left">SettingsPagePrivacyRadios</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Continuous App Experiences</td>
+<td align="left">SettingsPagePrivacyCDP</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -377,6 +400,16 @@ The following table lists the settings pages and page groups. Use the page name 
 <td align="left"></td>
 <td align="left">Phone update</td>
 <td align="left">SettingsPageRestoreMusUpdate</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Windows Insider Program</td>
+<td align="left">SettingsPageFlights</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Device encryption</td>
+<td align="left">SettingsPageGroupPCSystemDeviceEncryption</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -426,7 +459,7 @@ You can specify the quick actions as follows:
     <System name="SystemSettings_Privacy_LocationEnabledUserPhone"/>
     <System name="SystemSettings_Network_VPN_QuickAction"/>
     <System name="SystemSettings_Flashlight_Toggle"/>
-    <System name="SystemSettings_QuickAction_Bluetooth"/>
+    <System name="SystemSettings_Device_BluetoothQuickAction"/>
     <System name="SystemSettings_BatterySaver_LandingPage_OverrideControl" />
     <System name="SystemSettings_QuickAction_QuietHours" />
     <System name="SystemSettings_QuickAction_Camera" />
@@ -457,7 +490,7 @@ The following table lists the dependencies between quick actions and Settings gr
 | SystemSettings\_Network\_VPN\_QuickAction | SettingsPageNetworkVPN   | SettingsPageNetworkVPN  |
 | SystemSettings\_Launcher\_QuickNote | N/A   | N/A    |
 | SystemSettings\_Flashlight\_Toggle  | N/A    | N/A    |
-| SystemSettings\_QuickAction\_Bluetooth   | SettingsPagePCSystemBluetooth   | SettingsPagePCSystemBluetooth  |
+| SystemSettings\_Device\_BluetoothQuickAction   | SettingsPagePCSystemBluetooth   | SettingsPagePCSystemBluetooth  |
 | SystemSettings\_BatterySaver\_LandingPage\_OverrideControl | BatterySaver\_LandingPage\_SettingsConfiguration | SettingsPageBatterySaver   |
 | QuickActions\_Launcher\_DeviceDiscovery  | N/A    | N/A   |
 | QuickActions\_Launcher\_AllSettings    | N/A   | N/A  |
