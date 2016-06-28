@@ -48,7 +48,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Notifications and actions</td>
+<td align="left">Notifications & actions</td>
 <td align="left">SettingsPageAppsNotifications</td>
 </tr>
 <tr class="even">
@@ -58,12 +58,12 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Message</td>
+<td align="left">Messaging</td>
 <td align="left">SettingsPageMessaging</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Battery saver</td>
+<td align="left">Battery</td>
 <td align="left">SettingsPageBatterySaver</td>
 </tr>
 <tr class="odd">
@@ -128,7 +128,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Cellular and sim</td>
+<td align="left">Cellular & SIM</td>
 <td align="left">SettingsPageNetworkCellular</td>
 </tr>
 <tr class="even">
@@ -198,7 +198,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Your account</td>
+<td align="left">Your info</td>
 <td align="left">SettingsPageAccountsPicture</td>
 </tr>
 <tr class="odd">
@@ -213,7 +213,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Work access</td>
+<td align="left">Access work or school</td>
 <td align="left">SettingsPageWorkAccess</td>
 </tr>
 <tr class="odd">
@@ -228,13 +228,13 @@ The following table lists the settings pages and page groups. Use the page name 
 <td align="left">SettingsPageAppsCorner</td>
 </tr>
 <tr class="odd">
-<td align="left">Time and language</td>
+<td align="left">Time & language</td>
 <td align="left"></td>
 <td align="left">SettingsPageGroupTimeRegion</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Date and time</td>
+<td align="left">Date & time</td>
 <td align="left">SettingsPageTimeRegionDateTime</td>
 </tr>
 <tr class="odd">
@@ -274,7 +274,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">High contracts</td>
+<td align="left">High contrast</td>
 <td align="left">SettingsPageEaseoOfAccessHighContrast</td>
 </tr>
 <tr class="odd">
@@ -319,7 +319,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Speech inking and typing</td>
+<td align="left">Speech. inking, & typing</td>
 <td align="left">SettingsPagePrivacyPersonalization</td>
 </tr>
 <tr class="odd">
@@ -363,7 +363,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Continuous App Experiences</td>
+<td align="left">Continue App Experiences</td>
 <td align="left">SettingsPagePrivacyCDP</td>
 </tr>
 <tr class="even">
@@ -374,7 +374,7 @@ The following table lists the settings pages and page groups. Use the page name 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Accessory apps</td>
-<td align="left">SettingsPagePrivacyAccessories</td>
+<td align="left">SettingsPageAccessories</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -424,7 +424,7 @@ The following table lists the settings pages and page groups. Use the page name 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">For developers</td>
-<td align="left">SettingsSystemDeveloperOptions</td>
+<td align="left">SettingsPageSystemDeveloperOptions</td>
 </tr>
 <tr class="even">
 <td align="left">OEM</td>
