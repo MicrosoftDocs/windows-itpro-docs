@@ -6,7 +6,7 @@
 ### [New policies for Windows 10](new-policies-for-windows-10.md)
 ### [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 ### [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
-### [Diagnostics for devices managed by MDM](diagnostics-for-mdm-devices.md)
+### [Diagnostics for Windows 10 devices](diagnostics-for-mdm-devices.md)
 ### [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 ### [Introduction to configuration service providers (CSPs)](how-it-pros-can-use-configuration-service-providers.md)
 ## [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)

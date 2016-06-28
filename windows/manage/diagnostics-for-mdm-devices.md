@@ -1,5 +1,5 @@
 ---
-title: Diagnostics for devices managed by MDM  (Windows 10)
+title: Diagnostics for Windows 10 devices  (Windows 10)
 description: Device Policy State log in Windows 10, Version 1607, collects info about policies.
 keywords: ["mdm", "udiag", "device policy", "mdmdiagnostics"]
 ms.prod: W10
@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Diagnostics for devices managed by MDM 
+# Diagnostics for Windows 10 devices  
 
 **Applies to**
 
