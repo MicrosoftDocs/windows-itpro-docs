@@ -1,6 +1,6 @@
 ---
 title: Surface (Surface)
-description: .
+description: 
 ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -85,6 +85,11 @@ For more information on planning for, deploying, and managing Surface devices in
 <tr class="odd">
 <td><p>[Surface Dock Updater](surface-dock-updater.md)</p></td>
 <td><p>Get a detailed walkthrough of Microsoft Surface Dock Updater.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Surface Enterprise Management Mode](surface-enterprise-management-mode.md)</p></td>
+<td><p>See how this feature of Surface devices with Surface UEFI allows you to secure and manage firmware settings within your organization.
+</p></td>
 </tr>
 </tbody>
 </table>
