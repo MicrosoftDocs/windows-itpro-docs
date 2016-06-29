@@ -68,7 +68,7 @@ In Active Directory, default local accounts are used by administrators to manage
 
 Each default local account is automatically assigned to a security group that is preconfigured with the appropriate rights and permissions to perform specific tasks. Active Directory security groups collect user accounts, computer accounts, and other groups into manageable units. For more information, see [Active Directory Security Groups](active-directory-security-groups.md).
 
-On an Active Directory domain controller, each default local account is referred to as a security principal. A security principal is a directory object that is used to secure and manage Active Directory services that provide access to domain controller resources. A security principal includes objects such as user accounts, computer accounts, security groups, or the threads or processes that run in the security context of a user or computer account. For more information, see [Security Principals Technical Overview](security-principals.md).
+On an Active Directory domain controller, each default local account is referred to as a security principal. A security principal is a directory object that is used to secure and manage Active Directory services that provide access to domain controller resources. A security principal includes objects such as user accounts, computer accounts, security groups, or the threads or processes that run in the security context of a user or computer account. For more information, see [Security Principals](security-principals.md).
 
 A security principal is represented by a unique security identifier (SID).The SIDs that are related to each of the default local accounts in Active Directory are described in the sections below.
 
@@ -571,7 +571,7 @@ If the administrators in your environment can sign in locally to managed servers
 
 -   **Better**. Do not grant administrators membership in the local Administrator group on the computer in order to restrict the administrator from bypassing these protections.
 
--   **Ideal**. Restrict workstations from having any network connectivity, except for the domain controllers and servers that the administrator accounts are used to manage. Alternately, use AppLocker application control policies to restrict all applications from running, except for the operating system and approved administrative tools and applications. For more information about AppLocker, see [AppLocker Overview](http://technet.microsoft.com/library/hh831440.aspx).
+-   **Ideal**. Restrict workstations from having any network connectivity, except for the domain controllers and servers that the administrator accounts are used to manage. Alternately, use AppLocker application control policies to restrict all applications from running, except for the operating system and approved administrative tools and applications. For more information about AppLocker, see [AppLocker](applocker-overview.md).
 
 The following procedure describes how to block Internet access by creating a Group Policy Object (GPO) that configures an invalid proxy address on administrative workstations. These instructions apply only to computers running Internet Explorer and other Windows components that use these proxy settings.
 
@@ -584,7 +584,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 2.  Create computer accounts for the new workstations.
 
-    > **Note**&nbsp;&nbsp;You might have to delegate permissions to join the domain by using [KB 932455](http://support.microsoft.com/kb/932455) if the account that joins the workstations to the domain does not already have permissions to join computers to the domain.
+    > **Note**&nbsp;&nbsp;You might have to delegate permissions to join computers to the domain if the account that joins the workstations to the domain does not already have them. For more information, see [Delegation of Administration in Active Directory](http://social.technet.microsoft.com/wiki/contents/articles/20292.delegation-of-administration-in-active-directory.aspx).
 
     ![Active Directory local accounts](images/adlocalaccounts-proc1-sample1.gif)
 
@@ -846,14 +846,6 @@ In addition, installed applications and management agents on domain controllers 
 
 ## See also
 
+- [Security Principals](security-principals.md)
 
-[Security Principals Technical Overview](security-principals.md)
-
-
- 
-
- 
-
-
-
-
+- [Access Control Overview](access-control.md)
