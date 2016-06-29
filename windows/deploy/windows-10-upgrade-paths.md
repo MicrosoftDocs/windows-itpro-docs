@@ -264,7 +264,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td>✔</td>
-        <td>✔</td>
+        <td></td>
     </tr>
     <tr>
         <td rowspan="7" nowrap="nowrap">Windows 10</td>
@@ -326,7 +326,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td>✔</td>
+        <td>D</td>
         <td>✔</td>
     </tr>
 </table>
@@ -392,7 +392,7 @@ The following table summarizes the free upgrade paths to Windows 10. For a list 
        </tr>
     <tr>
         <td></td>
-        <td>Windows 8/8.1 Pro Professional</td>
+        <td>Windows 8/8.1 Pro</td>
         <td rowspan="2">Windows 10 Pro</td>
     </tr>
     <tr>

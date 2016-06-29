@@ -25,7 +25,7 @@ customers.
 
 Security baselines are an essential benefit to customers because they bring together expert knowlege from Microsoft, partners, and customers.
 
-For example, there are over 3,000 Group Policy settings for Windows 10, which does not include over 1,800 Internet Explorer 11 settings. Of those 3,800 settings, only some of them are security-related. While Microsoft provides extensive guidance on different security features, going through each of them can take a long time. You would have to determine the security impact of each setting on your own. After you've done that, you still need to determine what values each of these settings should be. 
+For example, there are over 3,000 Group Policy settings for Windows 10, which does not include over 1,800 Internet Explorer 11 settings. Of those 4,800 settings, only some of them are security-related. While Microsoft provides extensive guidance on different security features, going through each of them can take a long time. You would have to determine the security impact of each setting on your own. After you've done that, you still need to determine what values each of these settings should be. 
 
 In modern organizations, the security threat landscape is constantly evolving. IT pros and policy makers must keep current with security threats and changes to Windows security settings to help mitigate these threats. 
 
