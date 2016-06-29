@@ -236,8 +236,7 @@ Edit the registry to have an account automatically logged on.
 
     -   *DefaultPassword*: set value as the password for the account.
 
-        **Note**  
-        If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
+       > **Note**  If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
 
     -   *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, do not add this key.
 
