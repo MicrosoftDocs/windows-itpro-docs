@@ -180,7 +180,10 @@ When you build a provisioning package, you may include sensitive information in 
 
 ### Set up assigned access using Windows PowerShell
 
-You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices. 
+You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices. Specify the app using the AUMID or AppName. 
+
+- [Learn how to get the AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867).
+- [Learn how to get the AppName](https://msdn.microsoft.com/en-us/library/windows/hardware/mt620046%28v=vs.85%29.aspx) (see **Parameters**).
 
 To open PowerShell on Windows 10, search for PowerShell and find **Windows PowerShell Desktop app** in the results. Run PowerShell as administrator.
 
