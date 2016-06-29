@@ -1002,21 +1002,10 @@ Any user accessing the system through Terminal Services has the Terminal Server 
 </tbody>
 </table>
 
- 
-
 ## See also
 
+- [Active Directory Security Groups](active-directory-security-groups.md)
 
-[Active Directory Security Groups](active-directory-security-groups.md)
+- [Security Principals](security-principals.md)
 
-
-[Security Principals Technical Overview](security-principals.md)
-
-
- 
-
- 
-
-
-
-
+- [Access Control Overview](access-control.md)
