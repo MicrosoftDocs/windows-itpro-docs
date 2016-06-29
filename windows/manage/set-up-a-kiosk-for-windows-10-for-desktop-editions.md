@@ -180,10 +180,7 @@ When you build a provisioning package, you may include sensitive information in 
 
 ### Set up assigned access using Windows PowerShell
 
-You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices. Specify the app using the AUMID or AppName. 
-
-- [Learn how to get the AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867).
-- [Learn how to get the AppName](https://msdn.microsoft.com/en-us/library/windows/hardware/mt620046%28v=vs.85%29.aspx) (see **Parameters**).
+You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices. 
 
 To open PowerShell on Windows 10, search for PowerShell and find **Windows PowerShell Desktop app** in the results. Run PowerShell as administrator.
 
@@ -198,13 +195,15 @@ Set-AssignedAccess -AppUserModelId <AUMID> -UserSID <usersid>
 ```
 Set-AssignedAccess -AppName <CustomApp> -UserName <username>
 ```
-> **Note:** To set up assigned access using `-AppName`, the user account that you specify for assigned access must have logged on at least once. 
 
 ```
 Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 ```
 
+> **Note:** To set up assigned access using `-AppName`, the user account that you specify for assigned access must have logged on at least once. 
 [Learn how to get the AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867).
+
+[Learn how to get the AppName](https://msdn.microsoft.com/en-us/library/windows/hardware/mt620046%28v=vs.85%29.aspx) (see **Parameters**).
 
 [Learn how to get the SID](http://go.microsoft.com/fwlink/p/?LinkId=615517).
 
