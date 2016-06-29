@@ -68,17 +68,18 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 Using assigned access, Windows 10 runs the designated Universal Windows app above the lockscreen, so that the assigned access account has no access to any other functionality on the device. You have these choices for setting up assigned access:
 
--   [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) - Windows 10 Pro, Enterprise, and Education
+| Method | Account type | Windows 10 edition |
+| --- | --- | --- |
+| [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) | Local standard | Pro, Enterprise, Education |
+| [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Create a provisioning package using Windows Imaging and Configuration Designer (ICD)](#icd) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) | Local standard | Pro, Enterprise, Education |
 
--   [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) - Windows 10 Enterprise and Education
 
--   [Create a provisioning package using Windows Imaging and Configuration Designer (ICD)](#icd) - Windows 10 Enterprise and Education
-
--   [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) - Windows 10 Pro, Enterprise, and Education
 
 ### Requirements
 
--   A domain or local user account.
+-   A domain or local user account. 
     
 -   A Universal Windows app that is installed or provisioned for that account and is an above lock screen app. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md). For details on building an above lock screen app, see [Kiosk apps for assigned access: Best practices](http://go.microsoft.com/fwlink/p/?LinkId=708386).
 
@@ -181,7 +182,7 @@ When you build a provisioning package, you may include sensitive information in 
 
 You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices. 
 
-To open PowerShell on Windows 10, search for PowerShell and find **Windows PowerShell Desktop app** in the results.
+To open PowerShell on Windows 10, search for PowerShell and find **Windows PowerShell Desktop app** in the results. Run PowerShell as administrator.
 
 ```
 Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>
@@ -225,7 +226,7 @@ Edit the registry to have an account automatically logged on.
 
 2.  Go to
 
-    ****HKEY\_LOCAL\_MACHINE**\\**SOFTWARE**\\**Microsoft**\\**WindowsNT**\\**CurrentVersion**\\**Winlogon****
+    **HKEY\_LOCAL\_MACHINE\SOFTWARE\\Microsoft\WindowsNT\CurrentVersion\Winlogon**
 
 3.  Set the values for the following keys.
 
@@ -238,8 +239,6 @@ Edit the registry to have an account automatically logged on.
         **Note**  
         If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
 
-         
-
     -   *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, do not add this key.
 
 4.  Close Registry Editor. The next time the computer restarts, the account will be logged on automatically.
@@ -250,7 +249,7 @@ To sign out of an assigned access account, press **Ctrl + Alt + Del**, and then 
 
 If you press **Ctrl + Alt + Del** and do not sign in to another account, after a set time, assigned access will resume. The default time is 30 seconds, but you can change that in the following registry key:
 
-****HKEY\_LOCAL\_MACHINE**\\**SOFTWARE**\\**Microsoft**\\**Windows**\\**CurrentVersion**\\**Authentication**\\**LogonUI****
+**HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI**
 
 To change the default time for assigned access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
 
