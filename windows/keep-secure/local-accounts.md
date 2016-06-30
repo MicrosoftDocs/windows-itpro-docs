@@ -386,7 +386,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <td><p>Policy name</p></td>
 <td><p>[Deny log on through Remote Desktop Services](deny-log-on-through-remote-desktop-services.md)</p>
 <p>(Windows Server 2008 R2 and later.)</p>
-<p>Deny logon through Terminal Services</p>
+<p>Deny logon through Remote Desktop Services</p>
 <p>(Windows Server 2008)</p></td>
 </tr>
 <tr class="odd">
@@ -437,23 +437,16 @@ The following table shows the Group Policy settings that are used to deny networ
 
     1.  Navigate to Computer Configuration\\Policies\\Windows Settings and Local Policies, and then click **User Rights Assignment**.
 
-        **Note**  
-        Depending on the Windows operating system, you can choose the name of the Remote Interactive logon user right.
+    2.  Double-click **Deny log on through Remote Desktop Services**, and then select **Define these settings**.
 
-         
-
-    2.  On computers that run Windows Server 2008, double-click **Deny logon through Terminal Services**, and then select **Define these policy settings**.
-
-    3.  On computers running Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2, double-click **Deny logon through Remote Desktop Services**, and then select **Define these settings**.
-
-    4.  Click **Add User or Group**, type the user name of the default Administrator account, and &gt; **OK**. (The default name is Administrator on US English installations, but it can be renamed either by policy or manually.
+    3.  Click **Add User or Group**, type the user name of the default Administrator account, and &gt; **OK**. (The default name is Administrator on US English installations, but it can be renamed either by policy or manually.
 
         **Important**  
         In the **User and group names** box, type the user name of the account that you identified at the start of this process. Do not click **Browse** and do not type the domain name or the local computer name in this dialog box. For example, type only **Administrator**. If the text that you typed resolves to a name that is underlined or includes a domain name, it restricts the wrong account and causes this mitigation to work incorrectly. Also, be careful that you do not enter the group name Administrator because this also blocks domain accounts in that group.
 
          
 
-    5.  For any additional local accounts in the Administrators group on all of the workstations that you are setting up, click **Add User or Group**, type the user names of these accounts in the dialog box in the same manner as the previous step, and &gt; **OK**.
+    4.  For any additional local accounts in the Administrators group on all of the workstations that you are setting up, click **Add User or Group**, type the user names of these accounts in the dialog box in the same manner as the previous step, and &gt; **OK**.
 
 8.  Link the GPO to the first **Workstations** OU as follows:
 

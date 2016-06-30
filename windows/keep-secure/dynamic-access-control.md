@@ -132,7 +132,7 @@ If clients do not recognize Dynamic Access Control, there must be a two-way trus
 
 If claims are transformed when they leave a forest, all domain controllers in the user’s forest root must be set at the Windows Server 2012 or higher functional level.
 
-A file server running Windows Server 2012 or Windows Server 2012 R2 must have a Group Policy setting that specifies whether it needs to get user claims for user tokens that do not carry claims. This setting is set by default to **Automatic**, which results in this Group Policy setting to be turned **On** if there is a central policy that contains user or device claims for that file server. If the file server contains discretionary ACLs that include user claims, you need to set this Group Policy to **On** so that the server knows to request claims on behalf of users that do not provide claims when they access the server.
+A file server running a server operating system that supports Dyamic Access Control must have a Group Policy setting that specifies whether it needs to get user claims for user tokens that do not carry claims. This setting is set by default to **Automatic**, which results in this Group Policy setting to be turned **On** if there is a central policy that contains user or device claims for that file server. If the file server contains discretionary ACLs that include user claims, you need to set this Group Policy to **On** so that the server knows to request claims on behalf of users that do not provide claims when they access the server.
 
 ## See also
 
