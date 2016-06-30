@@ -350,7 +350,7 @@ Because it is impossible to predict the specific errors that will occur for any 
 **Important**  
 Rebooting a computer is the only reliable way to recover functionality as this will cause both the computer account and user accounts to log back in again. Logging in again will request new TGTs that are valid with the new KRBTGT, correcting any KRBTGT related operational issues on that computer.
 
-<!-- For information how to resolve issues and potential issues from a compromised KRBTGT account, see "Reset the KRBTGT account password." -->
+For information about how to help mitigate the risks associated with a potentially compromised KRBTGT account, see [KRBTGT Account Password Reset Scripts now available for customers](http://blogs.microsoft.com/cybertrust/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/).
 
 ### Read-only domain controllers and the KRBTGT account
 
