@@ -13,19 +13,33 @@ author: greg-lindsay
 
 -   Windows 10
 
-## Setting up a proof of concept (PoC) deployment lab
+## In this guide
 
 This guide provides instructions for setting up a proof of concept (PoC) lab using Hyper-V and a minimum amount of resources. Additional guides will provide detailed steps for deploying Windows 10 on client computers in the PoC environmment.
 
 ## Hardware and software requirements
 
-1 Hyper-V host computer
-- 8 GB RAM or greater (16 GB recommended)
-- 16 GB available hard disk space
+Two computers are required to complete this guide. 
 
+One Hyper-V host computer is required with the following specifications:
+- Windows 8/8.1/10 or Windows Server 2012/2012 R2/2016 installed
+- 8 GB RAM (16 GB recommended)
+- 50 GB available hard disk space (100 GB recommended)
+- SLAT-Capable CPU
+- Internet connection
 
+One client computer is requried with the following specifications: 
+- Windows 7 or a later operating system installed
 
+## Lab setup
 
+The Hyper-V host computer is configured to host four VMs on a private, proof of concept network. Two VMs are running Windows Server 2012 R2 with required network services and tools installed. The remaining VMs are client systems with one VM intended to mirror a host on your corporate network, and one VM running Windows 10 to illustrate a hardware replacement scenario. See the following diagram.
+
+[PoC](images/poc.png)
+
+Note: Instructions are provided in this guide to install and configure Hyper-V. However, you can skip the Hyper-V installation instructions and use an existing Hyper-V host computer if desired.
+
+Links are provided to download trial versions of Windows Server 2012 and all deployment tools necessary to complete the lab.
 
 <table border="1" cellpadding="2">
     <tr>
