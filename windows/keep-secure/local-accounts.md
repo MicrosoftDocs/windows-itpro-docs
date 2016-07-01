@@ -48,7 +48,7 @@ This topic describes the following:
 
     -   [Create unique passwords for local accounts with administrative rights](#sec-create-unique-passwords)
 
-For information about security principals, see [Security Principals Technical Overview](security-principals.md).
+For information about security principals, see [Security Principals](security-principals.md).
 
 ## <a href="" id="sec-default-accounts"></a>Default local user accounts
 
@@ -99,7 +99,7 @@ As a security best practice, use your local (non-Administrator) account to sign 
 
 In comparison, on the Windows client operating system, a user with a local user account that has Administrator rights is considered the system administrator of the client computer. The first local user account that is created during installation is placed in the local Administrators group. However, when multiple users run as local administrators, the IT staff has no control over these users or their client computers.
 
-In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](http://technet.microsoft.com/library/hh831791.aspx) and [Group Policy](http://technet.microsoft.com/windowsserver/bb310732.aspx).
+In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](http://technet.microsoft.com/library/hh831791.aspx).
 
 **Note**  
 Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
@@ -141,7 +141,7 @@ The security identifiers (SIDs) that pertain to the default HelpAssistant accoun
 
 For the Windows Server operating system, Remote Assistance is an optional component that is not installed by default. You must install Remote Assistance before it can be used.
 
-In comparison, for the Windows client operating system, the HelpAssistant account is enabled on installation by default. For more information about remote desktop connections for those client operating systems designated in the **Applies To** list at the beginning of this topic, see [Enable Remote Desktop](http://technet.microsoft.com/library/dd744299.aspx).
+In comparison, for the Windows client operating system, the HelpAssistant account is enabled on installation by default.
 
 ## <a href="" id="sec-localsystem"></a>Default local system accounts
 
@@ -200,7 +200,7 @@ In addition, UAC can require administrators to specifically approve applications
 
 For example, a default feature of UAC is shown when a local account signs in from a remote computer by using Network logon (for example, by using NET.EXE USE). In this instance, it is issued a standard user token with no administrative rights, but with the ability to request or receive elevation. Consequently, local accounts that sign in by using Network logon cannot access administrative shares such as C$, or ADMIN$, or perform any remote administration.
 
-For summary information about UAC, see [User Account Control](http://technet.microsoft.com/library/cc731416.aspx). For detailed information about special conditions when you use UAC, see [User Account Control](http://technet.microsoft.com/library/cc772207.aspx).
+For more information about UAC, see [User Account Control](user-account-control-overview.md).
 
 The following table shows the Group Policy and registry settings that are used to enforce local account restrictions for remote access.
 
@@ -498,16 +498,8 @@ Passwords can be randomized by:
 
 The following resources provide additional information about technologies that are related to local accounts.
 
--   [Security Principals Technical Overview](security-principals.md)
+-   [Security Principals](security-principals.md)
 
--   [Security Identifiers Technical Overview](security-identifiers.md)
+-   [Security Identifiers](security-identifiers.md)
 
 -   [Access Control Overview](access-control.md)
-
- 
-
- 
-
-
-
-
