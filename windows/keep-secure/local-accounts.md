@@ -48,7 +48,7 @@ This topic describes the following:
 
     -   [Create unique passwords for local accounts with administrative rights](#sec-create-unique-passwords)
 
-For information about security principals, see [Security Principals Technical Overview](security-principals.md).
+For information about security principals, see [Security Principals](security-principals.md).
 
 ## <a href="" id="sec-default-accounts"></a>Default local user accounts
 
@@ -99,7 +99,7 @@ As a security best practice, use your local (non-Administrator) account to sign 
 
 In comparison, on the Windows client operating system, a user with a local user account that has Administrator rights is considered the system administrator of the client computer. The first local user account that is created during installation is placed in the local Administrators group. However, when multiple users run as local administrators, the IT staff has no control over these users or their client computers.
 
-In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](http://technet.microsoft.com/library/hh831791.aspx) and [Group Policy](http://technet.microsoft.com/windowsserver/bb310732.aspx).
+In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](http://technet.microsoft.com/library/hh831791.aspx).
 
 **Note**  
 Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
@@ -141,7 +141,7 @@ The security identifiers (SIDs) that pertain to the default HelpAssistant accoun
 
 For the Windows Server operating system, Remote Assistance is an optional component that is not installed by default. You must install Remote Assistance before it can be used.
 
-In comparison, for the Windows client operating system, the HelpAssistant account is enabled on installation by default. For more information about remote desktop connections for those client operating systems designated in the **Applies To** list at the beginning of this topic, see [Enable Remote Desktop](http://technet.microsoft.com/library/dd744299.aspx).
+In comparison, for the Windows client operating system, the HelpAssistant account is enabled on installation by default.
 
 ## <a href="" id="sec-localsystem"></a>Default local system accounts
 
@@ -200,7 +200,7 @@ In addition, UAC can require administrators to specifically approve applications
 
 For example, a default feature of UAC is shown when a local account signs in from a remote computer by using Network logon (for example, by using NET.EXE USE). In this instance, it is issued a standard user token with no administrative rights, but with the ability to request or receive elevation. Consequently, local accounts that sign in by using Network logon cannot access administrative shares such as C$, or ADMIN$, or perform any remote administration.
 
-For summary information about UAC, see [User Account Control](http://technet.microsoft.com/library/cc731416.aspx). For detailed information about special conditions when you use UAC, see [User Account Control](http://technet.microsoft.com/library/cc772207.aspx).
+For more information about UAC, see [User Account Control](user-account-control-overview.md).
 
 The following table shows the Group Policy and registry settings that are used to enforce local account restrictions for remote access.
 
@@ -386,7 +386,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <td><p>Policy name</p></td>
 <td><p>[Deny log on through Remote Desktop Services](deny-log-on-through-remote-desktop-services.md)</p>
 <p>(Windows Server 2008 R2 and later.)</p>
-<p>Deny logon through Terminal Services</p>
+<p>Deny logon through Remote Desktop Services</p>
 <p>(Windows Server 2008)</p></td>
 </tr>
 <tr class="odd">
@@ -437,23 +437,16 @@ The following table shows the Group Policy settings that are used to deny networ
 
     1.  Navigate to Computer Configuration\\Policies\\Windows Settings and Local Policies, and then click **User Rights Assignment**.
 
-        **Note**  
-        Depending on the Windows operating system, you can choose the name of the Remote Interactive logon user right.
+    2.  Double-click **Deny log on through Remote Desktop Services**, and then select **Define these settings**.
 
-         
-
-    2.  On computers that run Windows Server 2008, double-click **Deny logon through Terminal Services**, and then select **Define these policy settings**.
-
-    3.  On computers running Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2, double-click **Deny logon through Remote Desktop Services**, and then select **Define these settings**.
-
-    4.  Click **Add User or Group**, type the user name of the default Administrator account, and &gt; **OK**. (The default name is Administrator on US English installations, but it can be renamed either by policy or manually.
+    3.  Click **Add User or Group**, type the user name of the default Administrator account, and &gt; **OK**. (The default name is Administrator on US English installations, but it can be renamed either by policy or manually.
 
         **Important**  
         In the **User and group names** box, type the user name of the account that you identified at the start of this process. Do not click **Browse** and do not type the domain name or the local computer name in this dialog box. For example, type only **Administrator**. If the text that you typed resolves to a name that is underlined or includes a domain name, it restricts the wrong account and causes this mitigation to work incorrectly. Also, be careful that you do not enter the group name Administrator because this also blocks domain accounts in that group.
 
          
 
-    5.  For any additional local accounts in the Administrators group on all of the workstations that you are setting up, click **Add User or Group**, type the user names of these accounts in the dialog box in the same manner as the previous step, and &gt; **OK**.
+    4.  For any additional local accounts in the Administrators group on all of the workstations that you are setting up, click **Add User or Group**, type the user names of these accounts in the dialog box in the same manner as the previous step, and &gt; **OK**.
 
 8.  Link the GPO to the first **Workstations** OU as follows:
 
@@ -498,16 +491,8 @@ Passwords can be randomized by:
 
 The following resources provide additional information about technologies that are related to local accounts.
 
--   [Security Principals Technical Overview](security-principals.md)
+-   [Security Principals](security-principals.md)
 
--   [Security Identifiers Technical Overview](security-identifiers.md)
+-   [Security Identifiers](security-identifiers.md)
 
 -   [Access Control Overview](access-control.md)
-
- 
-
- 
-
-
-
-
