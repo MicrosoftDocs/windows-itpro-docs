@@ -384,10 +384,7 @@ The following table shows the Group Policy settings that are used to deny networ
 <tr class="even">
 <td><p></p></td>
 <td><p>Policy name</p></td>
-<td><p>[Deny log on through Remote Desktop Services](deny-log-on-through-remote-desktop-services.md)</p>
-<p>(Windows Server 2008 R2 and later.)</p>
-<p>Deny logon through Remote Desktop Services</p>
-<p>(Windows Server 2008)</p></td>
+<td><p>[Deny log on through Remote Desktop Services](deny-log-on-through-remote-desktop-services.md)</p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
