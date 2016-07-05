@@ -116,9 +116,7 @@ If you don't know the publisher or product name, you can find them for both desk
 4.  Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
     >**Important**<br>
-    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
-    
-    For example:
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:
        ```json
         {
             "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
@@ -146,9 +144,7 @@ If you don't know the publisher or product name, you can find them for both desk
 8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
     >**Important**<br>
-    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
-    
-    For example:
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:
        ```json
         {
             "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
@@ -354,8 +350,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
 |Block |EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
 |Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
 |Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or EDP-protected data, are still blocked.|
-|Off (not recommended) |EDP is turned off and doesn't help to protect or audit your data.<p>
-After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives.|
+|Off (not recommended) |EDP is turned off and doesn't help to protect or audit your data.<p>After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives.|
 
 ![Create Configuration Item wizard, choose your EDP-protection level](images/edp-sccm-appmgmt.png)
 
@@ -397,7 +392,7 @@ There are no default locations included with EDP, you must add each of your netw
         </tr>
         <tr>
             <td>Enterprise Cloud Resources</td>
-            <td>**With proxy:** contoso.sharepoint.com,proxy.contoso.com|contoso.visualstudio.<br>com,proxy.contoso.com<p>**Without proxy:** contoso.sharepoint.com|contoso.visualstudio.com</td>
+            <td>**With proxy:** contoso.sharepoint.com,proxy.contoso.com|<br>contoso.visualstudio.com,proxy.contoso.com<p>**Without proxy:** contoso.sharepoint.com|contoso.visualstudio.com</td>
             <td>Specify the cloud resources to be treated as corporate and protected by EDP.<p>For each cloud resource, you may also optionally specify an internal proxy server that routes your traffic through your Enterprise Internal Proxy Server.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: `URL <,proxy>|URL <,proxy>`.<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the `/*AppCompat*/` string to this setting. For example: `URL <,proxy>|URL <,proxy>|/*AppCompat*/`</td>
         </tr>
         <tr>
@@ -417,12 +412,12 @@ There are no default locations included with EDP, you must add each of your netw
         </tr>
         <tr>
             <td>Enterprise IPv4 Range (Required)</td>
-            <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254</td>
+            <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
             <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
         </tr>
         <tr>
             <td>Enterprise IPv6 Range</td>
-            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:<br>ffff:ffff:ffff:ffff:ffff:ffff</td>
+            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
             <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
         </tr>
         <tr>
@@ -469,7 +464,7 @@ If you don’t already have an EFS DRA certificate, you’ll need to create and 
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1. 
 
-**Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
+    **Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
 
 4.	Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic.
 
@@ -494,33 +489,36 @@ If you don’t already have an EFS DRA certificate, you’ll need to create and 
 ### Choose your optional EDP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
 
-    ![Create Configuration Item wizard, Choose any additional, optional settings](images/edp-sccm-additionalsettings.png)
+![Create Configuration Item wizard, Choose any additional, optional settings](images/edp-sccm-additionalsettings.png)
 
 **To set your optional settings**
-1.	Choose to set any or all of the optional settings, and then click **Summary**:
+1.	Choose to set any or all of the optional settings:
 
-- **Show the Personal option in the File ownership menus of File Explorer and the Save As dialog box.** Determines whether users can see the Personal option for files within File Explorer and the **Save As** dialog box. The options are:
+    - **Show the Personal option in the File ownership menus of File Explorer and the Save As dialog box.** Determines whether users can see the Personal option for files within File Explorer and the **Save As** dialog box. The options are:
     
-    - **Yes, or not configured (recommended).** Employees can choose whether a file is **Work** or **Personal** in File Explorer and the **Save As** dialog box. 
+        - **Yes, or not configured (recommended).** Employees can choose whether a file is **Work** or **Personal** in File Explorer and the **Save As** dialog box. 
 	
-    - **No.** Hides the **Personal** option from employees. Be aware that if you pick this option, apps that use the **Save As** dialog box might encrypt new files as corporate data unless a different file path is given during the original file creation. After this happens, decryption of work files becomes more difficult.
+        - **No.** Hides the **Personal** option from employees. Be aware that if you pick this option, apps that use the **Save As** dialog box might encrypt new files as corporate data unless a different file path is given during the original file creation. After this happens, decryption of work files becomes more difficult.
 
-- **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether apps can show corporate data on a Windows 10 Mobile device **Lock** screen. The options are:
+    - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether apps can show corporate data on a Windows 10 Mobile device **Lock** screen. The options are:
 	
-    - **Yes (recommended).** Stop apps from reading corporate data on Windows 10 Mobile device when the screen is locked.
+        - **Yes (recommended).** Stop apps from reading corporate data on Windows 10 Mobile device when the screen is locked.
 	
-    - **No, or not configured.**  Allows apps to read corporate data on Windows 10 Mobile device when the screen is locked.
+        - **No, or not configured.**  Allows apps to read corporate data on Windows 10 Mobile device when the screen is locked.
 
-- **Allow Windows Search to search encrypted corporate data and Store apps.** Determines whether Windows Search can search and index encrypted corporate data and Store apps. The options are:
+    - **Allow Windows Search to search encrypted corporate data and Store apps.** Determines whether Windows Search can search and index encrypted corporate data and Store apps. The options are:
 
-	- **Yes.** Allows Windows Search to search and index encrypted corporate data and Store apps.
+	    - **Yes.** Allows Windows Search to search and index encrypted corporate data and Store apps.
 
-	- **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
+	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
 
-- **Revoke local encryption keys during the unerollment process.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from enterprise data protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
+    - **Revoke local encryption keys during the unerollment process.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from enterprise data protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
 
-    - **Yes, or not configured (recommended).** Revokes local encryption keys from a device during unenrollment.
-    - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you’re migrating between Mobile Device Management (MDM) solutions.
+        - **Yes, or not configured (recommended).** Revokes local encryption keys from a device during unenrollment.
+        
+        - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you’re migrating between Mobile Device Management (MDM) solutions.
+
+2. After you pick all of the settings you want to include, click **Summary**.
 
 ### Review your configuration choices in the Summary screen
 After you've finished configuring your policy, you can review all of your info on the **Summary** screen.
