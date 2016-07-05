@@ -16,7 +16,9 @@ author: jdeckerMS
 
 -   Windows 10
 
-Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10. For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows Spotlight background.
+Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10. 
+
+For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows Spotlight background. For managed devices running Windows 10 Pro, version 1607, administrators can disable suggestions for third party apps.
 
 ## What does Windows Spotlight include?
 
@@ -41,10 +43,16 @@ To turn off Windows Spotlight locally, go to **Settings** &gt; **Personalization
 ## How do you disable Windows Spotlight for managed devices?
 
 
-Windows 10, Version 1607, provides two new Group Policy settings to help you manage Spotlight on employees' computers.
+Windows 10, version 1607, provides three new Group Policy settings to help you manage Spotlight on employees' computers.
+
+**Windows 10 Pro, Enterprise, and Education**
+
+- **User Configuration\Administrative Templates\Windows Components\Cloud Content\Do not suggest third-party content in Windows spotlight** enables enterprises to restrict suggestions to Microsoft apps and services.
+
+**Windows 10 Enterprise and Education**
 
 * **User Configuration\Administrative Templates\Windows Components\Cloud Content\Turn off all Windows Spotlight features** enables enterprises to completely disable all Spotlight features in a single setting.
-* **User Configuration\Administrative Templates\Windows Components\Cloud Content\Configure Spotlight on lock screen** specifically controls the use of the dynamic Spotlight image on the lock screen, and can be enabled or disabled. (A third setting, **Enterprise Spotlight**, does not work in Windows 10, Version 1607.)
+* **User Configuration\Administrative Templates\Windows Components\Cloud Content\Configure Spotlight on lock screen** specifically controls the use of the dynamic Spotlight image on the lock screen, and can be enabled or disabled. (The Group Policy setting **Enterprise Spotlight** does not work in Windows 10, version 1607.)
 
 Windows Spotlight is enabled by default. Administrators can replace Windows Spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
 
