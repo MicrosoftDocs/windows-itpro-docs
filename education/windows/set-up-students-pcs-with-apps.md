@@ -1,37 +1,41 @@
 ---
-title: Provision PCs with apps and certificates (Windows 10)
-description: Create a provisioning package to apply settings to a PC running Windows 10. 
-ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
-keywords: ["runtime provisioning", "provisioning package"]
+title: Provision student PCs with apps
+description: Learn how to use Configuration Designer to easily provision student devices to join Active Directory.
+keywords: ["shared cart", "shared PC", "school"]
 ms.prod: W10
-ms.mktglfcycl: manage
+ms.mktglfcycl: plan
 ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Provision PCs with apps and certificates for initial deployment
+# Provision student PCs with apps
+**Applies to:**
+
+-   Windows 10  
 
 
-**Applies to**
-
--   Windows 10
-
-This topic explains how to create and apply a provisioning package that contains apps and certificates to a device running all desktop editions of Windows 10 except Windows 10 Home. Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
+This topic explains how to create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home. Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
 
-## Advantages
--   You can configure new devices without reimaging.
+If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Add apps to a provisioning package](#add-apps-to-a-provisioning-package). If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md), and then follow the steps in [Create a provisioning package to add apps after initial setup](#create-a-provisioning-package-to-add-apps-after-initial-setup).
 
--   Works on both mobile and desktop devices.
+## Add apps to a provisioning package
 
--   No network connectivity required.
+1. Follow the steps to [create the provisioning package](set-up-students-pcs-to-join-domain.md#create-the-provisioning-package). 
 
--   Simple to apply.
+2. On the **Finish** page, select **Switch to advanced editor**.
 
-[Learn more about the benefits and uses of provisioning packages.](../whats-new/new-provisioning-packages.md)
+  ![Switch to advanced editor](images/icd-school-adv-edit.png)
 
-## Create the provisioning package
+**Next steps**
+- [Add a desktop app to your package](#add-a-desktop-app-to-your-package)
+- [Add a universal app to your package](#add-a-universal-app-to-your-package)
+- [Build your package](#build-your-package)
+- [Apply the provisioning package to a PC](#apply-package)
+
+
+## Create a provisioning package to add apps after initial setup
 
 Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
@@ -45,8 +49,14 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 3. Select **All Windows desktop editions**, click **Next**, and then click **Finish**.  
 
+**Next steps**
+- [Add a desktop app to your package](#add-a-desktop-app-to-your-package)
+- [Add a universal app to your package](#add-a-universal-app-to-your-package)
+- [Build your package](#build-your-package)
+- [Apply the provisioning package to a PC](#apply-package)
 
-### Add a desktop app to your package
+
+## Add a desktop app to your package
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandFiles**. 
 
@@ -56,8 +66,12 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 > **Note**: If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
 
+**Next steps**
+- (optional) [Add a universal app to your package](#add-a-universal-app-to-your-package)
+- [Build your package](#build-your-package)
+- [Apply the provisioning package to a PC](#apply-package)
 
-### Add a universal app to your package
+## Add a universal app to your package
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**. 
 
@@ -69,27 +83,12 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 5. For **UserContextAppLicense**, enter the **LicenseProductID**. (where to get)
 
+**Next steps**
+- (optional) [Add a desktop app to your package](#add-a-desktop-app-to-your-package)
+- [Build your package](#build-your-package)
+- [Apply the provisioning package to a PC](#apply-package)
 
-### Add a certificate to your package
-
-1. In the **Available customizations** pane, go to **Runtime settings** > **Certificates** > **ClientCertificates**. 
-
-2. Enter a **CertificateName** and then click **Add**. 
-
-2. Enter the **CertificatePassword**. 
-
-3. For **CertificatePath**, browse and select the certificate to be used. 
-
-4. Set **ExportCertificate** to **False**.
-
-5. For **KeyLocation**, select **Software only**. 
-
-
-### Add other settings to your package 
-
-For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
-
-### Build your package
+## Build your package
 
 1. When you are done configuring the provisioning package, on the **File** menu, click **Save**.
 
@@ -137,16 +136,13 @@ If your build is successful, the name of the provisioning package, output direct
 
     -   Removable media (USB/SD)
 
-    -   Email
+   
+**Next step**
+- [Apply the provisioning package to a PC](#apply-package)
 
-    -   USB tether (mobile only)
+## Apply package 
 
-    -   NFC (mobile only)
-
-
-
-## Apply package
-
+**During initial setup, from a USB drive**
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
     ![The first screen to set up a new PC](images/oobe.jpg)
@@ -187,6 +183,15 @@ If your build is successful, the name of the provisioning package, output direct
 
     ![Sign in](images/sign-in-prov.png)
 
+    
+**After setup, from a USB drive, network folder, or SharePoint site**
+
+On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and select the package to install. 
+
+![add a package option](images/package.png)
+
+
+
 ## Learn more
 -   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
 
@@ -194,8 +199,4 @@ If your build is successful, the name of the provisioning package, output direct
 
 -   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](http://go.microsoft.com/fwlink/p/?LinkId=615922)
  
-
-
-
-
 

@@ -1,73 +1,40 @@
 ---
-title: Provision PCs with common settings (Windows 10)
-description: Create a provisioning package to apply common settings to a PC running Windows 10. 
-ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
-keywords: ["runtime provisioning", "provisioning package"]
+title: Set up student PCs to join domain
+description: Learn how to use Configuration Designer to easily provision student devices to join Active Directory.
+keywords: ["shared cart", "shared PC", "school"]
 ms.prod: W10
-ms.mktglfcycl: manage
+ms.mktglfcycl: plan
 ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Provision PCs with common settings for initial deployment
+# Set up student PCs to join domain
+**Applies to:**
 
+-   Windows 10  
 
-**Applies to**
-
--   Windows 10
-
-This topic explains how to create and apply a simple provisioning package that contains common enterprise settings to a device running all desktop editions of Windows 10 except Windows 10 Home.
-
-You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
-
-## Advantages
--   You can configure new devices without reimaging.
-
--   Works on both mobile and desktop devices.
-
--   No network connectivity required.
-
--   Simple to apply.
-
-[Learn more about the benefits and uses of provisioning packages.](../whats-new/new-provisioning-packages.md)
-
-## What does simple provisioning do?
-
-In a simple provisioning package, you can configure:
-
-- Device name
-- Upgraded product edition
-- Wi-Fi network 
-- Active Directory enrollment
-- Local administrator account 
-
-Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more. To learn about provisioning packages that include more than the settings in a simple provisioning package, see [Provision PCs with apps and certificates](provision-pcs-with-apps-and-certificates.md). 
-
-> **Tip!**  Use simple provisioning to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
-
-![open advanced editor](images/icd-simple-edit.png)
+If your school uses Active Directory, use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package that will configure a PC for student use that is joined to the Active Directory domain. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 ## Create the provisioning package
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
-
 1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
-2. Click **Simple provisioning**.
+2. Click **Provision school devices**. 
 
-  ![ICD start options](images/icdstart-option.png)   
+  ![Provision school devices](images/icdstart-option.png)
 
-3. Name your project and click **Finish**. The screens for simple provisioning will walk you through the following steps.
+3. Name your project and click **Finish**. The screens for school provisioning will walk you through the following steps.
 
-  ![ICD simple provisioning](images/icd-simple.png)
+   ![Wizard for school provisioning](images/icd-school.png)
 
 4. In the **Set up device** step, enter a unique 15-character name for the device. For help generating a unique name, you can use %SERIAL%, which includes a hardware-specific serial number, or you can use %RAND:x%, which generates random characters of x length.
 
 5. (Optional) You can upgrade the following editions of Windows 10 by providing a product key for the edition to upgrade to.
+    - Home to Education
     - Pro to Education
     - Pro to Enterprise
     - Enterprise to Education
-   
+ 
 6. Click **Set up network**.
 
 7. Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, type, and (if required) password for the wireless network.
@@ -81,15 +48,24 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
       - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
       - [Use Group Policy to delete the temporary administrator account](https://blogs.technet.microsoft.com/canitpro/2014/12/10/group-policy-creating-a-standard-local-admin-account/) after the device is enrolled in Active Directory.
 
+10. Click **Set up school settings**.
+
+11. Toggle **Yes** or **No** to configure the PC for shared use. 
+
+12. (Optional) Toggle **Yes** or **No** to configure the PC for secure testing. If you select **Yes**, you must also enter the test account to be used and the URL for the test. If you don't configure the test account and URL in this provisioning package, you can do so after the PC is configured; for more information, see [Take tests in Windows 10](take-tests-in-windows-10.md).
+
 10. Click **Finish**.
 
 11. Review your settings in the summary. You can return to previous pages to change your selections. Then, under **Protect your package**, toggle **Yes** or **No** to encrypt the provisioning package. If you select **Yes**, enter a password. This password must be entered to apply the encrypted provisioning package.
 
 12. Click **Create**.
 
+13. You will see the file path for your provisioning package (by default, %windir%\Users\*your alias*\Windows Imaging and Configuration Designer (WICD)\*Project name*). Copy the provisioning package to a USB drive.
+
 > **Important**  When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 ## Apply package
+
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
@@ -105,7 +81,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
     
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
-    ![Choose a package](images/choose-package.png)
+    ![Choose a package](images/choose-package-icd.png)
 
 5. Select **Yes, add it**.
 
@@ -123,26 +99,11 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
     ![Who owns this PC?](images/who-owns-pc.png)
 
-9. On the **Choose how you'll connect** screen, select **Join Azure AD** or **Join a domain** and tap **Next**.
+9. On the **Choose how you'll connect** screen, select **Join a domain** and tap **Next**.
 
-    ![Connect to Azure AD](images/connect-aad.png)
+    ![Connect to Azure AD](images/connect-ad.png)
 
-10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
+10. Sign in with  your domain account and password. When you see the progress ring, you can remove the USB drive.
 
-    ![Sign in](images/sign-in-prov.png)
-
-## Learn more
--   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](http://go.microsoft.com/fwlink/p/?LinkId=615921)
-
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](http://go.microsoft.com/fwlink/p/?LinkId=615922)
-
- 
-
- 
-
-
-
-
+    
 
