@@ -21,7 +21,7 @@ author: eross-msft
 
 System Center Configuration Manager (version 1605 Tech Preview or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection mode, and how to find enterprise data on the network.
 
-**Important**<br>
+>**Important**<br>
 If you previously created an EDP policy using System Center Configuration Manager version 1511 or 1602, you’ll need to recreate it using version 1605 Tech Preview or later. Editing an EDP policy created in version 1511 or 1602 is not supported in version 1605 Tech Preview. There is no migration path between EDP policies across these versions.
 
 ## Add an EDP policy
@@ -63,7 +63,7 @@ During the policy-creation process in System Center Configuration Manager, you c
 
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed desktop app (also known as a Classic Windows app), or an AppLocker policy file.
 
-**Important**<br>
+>**Important**<br>
 EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.
 
 Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **App rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
@@ -97,7 +97,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
 1.	Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
 
-    **Note**<br>
+    >**Note**<br>
     If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
 
 2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
@@ -115,7 +115,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
 4.  Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    **Important**<br>
+    >**Important**<br>
     The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     
     For example:
@@ -128,7 +128,7 @@ If you don't know the publisher or product name, you can find them for both desk
 **To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
 1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    **Note**<br>
+    >**Note**<br>
     Your PC and phone must be on the same wireless network.
 
 2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
@@ -145,7 +145,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
 8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    **Important**<br>
+    >**Important**<br>
     The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     
     For example:
@@ -375,7 +375,7 @@ After you've added a protection mode to your apps, you'll need to decide where t
 
 There are no default locations included with EDP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
 
-**Important**<br>
+>**Important**<br>
 - Every EDP policy should include policy that defines your enterprise network locations.
 - Classless Inter-Domain Routing (CIDR) notation isn’t supported for EDP configurations.
 
@@ -457,7 +457,7 @@ There are no default locations included with EDP, you must add each of your netw
 #### Create and verify an Encrypting File System (EFS) DRA certificate for EDP
 If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use EDP in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
 
-**Important**<br>If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy.
+>**Important**<br>If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy.
 
 **To manually create an EFS DRA certificate**
 1. On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
