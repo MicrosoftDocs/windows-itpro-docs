@@ -345,28 +345,30 @@ If you're running into compatibility issues where your app is incompatible with 
 5.	Click **OK**.
 
 ## Manage the EDP-protection level for your enterprise data
-After you've added the apps you want to protect with EDP, you'll need to apply an app management mode.
+After you've added the apps you want to protect with EDP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your **Protected Apps** list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
+We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
 
 |Mode |Description |
 |-----|------------|
-|Block |EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise. |
+|Block |EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
 |Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
-|Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything. |
-|Off (not recommended) |EDP is turned off and doesn't help to protect or audit your data.
-<p>After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives. |
+|Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or EDP-protected data, are still blocked.|
+|Off (not recommended) |EDP is turned off and doesn't help to protect or audit your data.<p>
+After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives.|
 
 ![Create Configuration Item wizard, choose your EDP-protection level](images/edp-sccm-appmgmt.png)
 
 ## Define your enterprise-managed identity domains
-Specify your company’s enterprise identity, expressed as your primary internet domain. For example, if your company is Contoso, its enterprise identity might be contoso.com. The first listed domain (in this example, contoso.com) is the primary enterprise identity string used to tag files protected by any app on the **Protected App** list.
+Corporate identity, usually expressed as your primary internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you’ve marked as protected by EDP. For example, emails using contoso.com are identified as being corporate and are restricted by your enterprise data protection policies.
 
-You can also specify all the domains owned by your enterprise that are used for user accounts, separating them with the "|" character. For example, if Contoso also has some employees with email addresses or user accounts on the fabrikam.com domain, you would use contoso.com|fabrikam.com.
+You can specify multiple domains owned by your enterprise by separating them with the "|" character. For example, (contoso.com|newcontoso.com). With multiple domains, the first one is designated as your corporate identity and all of the additional ones as being owned by the first one. We strongly recommend that you include all of your email address domains in this list.
 
-This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
+**To add your corporate identity**
 
-![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity](images/sccm-primary-domain.png)
+- Type the name of your corporate identity into the **Corporate identity** field. For example, `contoso.com` or `contoso.com|newcontoso.com`.
+
+    ![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity](images/sccm-primary-domain.png) - Need image
 
 **To add your primary domain**
 
