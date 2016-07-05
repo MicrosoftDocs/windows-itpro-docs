@@ -57,12 +57,13 @@ The configuration items must be in the following order when you lock down settin
 -   RoleList
     -   Role (repeat for each role)
         -   ActionCenter
-        -   Apps
-            -   Application product ID, as described in [Product IDs in Windows 10 Mobile](http://go.microsoft.com/fwlink/p/?LinkId=698449)
-            -   App User Model ID (AUMID), as described in [Configuring Multiple App Packages](#bmk-map)
+        -   Apps (contains lists of applications and folders)
+          -   Application product ID, as described in [Product IDs in Windows 10 Mobile](http://go.microsoft.com/fwlink/p/?LinkId=698449), or folder ID and folder name, as described in [EnterpriseAssignedAccess CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt157024%28v=vs.85%29.aspx)
+          -   App User Model ID, as described in [Configuring Multiple App Packages](#bmk-map)
             -   PinToStart
-                -   Size
-                -   Location
+               -   Size
+               -   Location
+               -   Parent folder ID
         -   Buttons
             -   ButtonLockdownList
                 -   Button name
