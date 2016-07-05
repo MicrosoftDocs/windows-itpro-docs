@@ -25,7 +25,7 @@ Provisioning packages are simple enough that with a short set of written instruc
 
 ## New in Windows 10, Version 1607
 
-The Windows Assessment and Deployment Kit (ADK) for Windows 10 included the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. Windows ICD for Windows 10, Version 1607, simplifies common provisioning scenarios. 
+The Windows Assessment and Deployment Kit (ADK) for Windows 10 includes the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. Windows ICD for Windows 10, Version 1607, simplifies common provisioning scenarios. 
 
 ![Configuration Designer options](images/icd.png)
 
@@ -46,7 +46,7 @@ Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT
     * Mobile Iron (password-string based enrollment) 
     * Other MDMs (cert-based enrollment) 
 
-> **Note:** Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see Set up students' PCs to join domain (link to be added).
+> **Note:** Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
 
 ## Benefits of provisioning packages
 
@@ -76,15 +76,16 @@ The following table provides some examples of what can be configured using provi
 
 | Customization options    | Examples                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------|
+| Bulk Active Directory join and device name | Join devices to Active Directory domain and assign device names using hardware-specific serial numbers or random characters |
 | Applications             | Windows apps, line-of-business applications                                                   |
-| Bulk enrollment into MDM | Automatic enrollment into Microsoft Intune or a third-party MDM service                       |
+| Bulk enrollment into MDM | Automatic enrollment into a third-party MDM service\*                       |
 | Certificates             | Root certification authority (CA), client certificates                                        |
 | Connectivity profiles    | Wi-Fi, proxy settings, Email                                                                  |
 | Enterprise policies      | Security restrictions (password, device lock, camera, and so on), encryption, update settings |
 | Data assets              | Documents, music, videos, pictures                                                            |
 | Start menu customization | Start menu layout, application pinning                                                        |
 | Other                    | Home and lock screen wallpaper, computer name, domain join, DNS settings, and so on           |
-
+\* Using a provisioning package for auto-enrollment to System Center Configuration Manager or Configuration Manager/Intune hybrid is not supported. Use the Configuration Manager console to enroll devices.
  
 
 For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
@@ -94,19 +95,13 @@ For details about the settings you can customize in provisioning packages, see [
 
 With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must install the Windows Assessment and Deployment Kit (ADK) for Windows 10 [from the Windows Insider Program site](http://go.microsoft.com/fwlink/p/?linkid=533700).
 
-While running ADKsetup.exe, select the following features from the **Select the features you want to install** dialog box:
-
--   Deployment Tools
-
--   Windows Preinstallation Environment (Windows PE)
+While running ADKsetup.exe for Windows 10, version 1607, select the following feature from the **Select the features you want to install** dialog box:
 
 -   Windows Imaging and Configuration Designer (ICD)
 
--   Windows User State Migration Tool (USMT)
+> **Note:** In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
 
-Windows ICD depends on other tools in order to work correctly. If you only select Windows ICD in the installation wizard, the other tools listed above will also be selected for installation.
-
-Once you have installed Windows ICD, you can use it to create a provisioning package. For detailed instructions on how to create a provisioning package, see [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651).
+After you install Windows ICD, you can use it to create a provisioning package. For detailed instructions on how to create a provisioning package, see [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651).
 
 ## Applying a provisioning package to a device
 
