@@ -204,11 +204,11 @@ These permissions allow people to:
 
 2.  Click **Settings**, and then choose **Permissions**.
 
-    ![](images/wsfb-settings-permissions.png)
+    ![Image showing Permissions page in Windows Store for Business.](images/wsfb-settings-permissions.png)
 
 3.  Click **Add people**, type a name, choose the role you want to assign, and click **Save** .
 
-    ![](images/wsfb-permissions-assignrole.png)
+    ![Image showing Assign roles to people box in Windows Store for Business.](images/wsfb-permissions-assignrole.png)
 
 4.  
 
