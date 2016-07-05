@@ -116,7 +116,7 @@ You can check online for updated versions at [Surface Hub device account scripts
 
 Your infrastructure will likely fall into one of three configurations. Which configuration you have will affect how you prepare for device setup.
 
-![](images/deploymentoptions-01.png)
+![Image showing deployment options: online, on-premises, or hybrid.](images/deploymentoptions-01.png)
 
 -   [Online deployment (Office 365)](online-deployment-surface-hub-device-accounts.md): Your organization’s environment is deployed entirely on Office 365.
 -   [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md): Your organization has servers that it controls, where Active Directory, Exchange, and Skype for Business (or Lync) are hosted.
