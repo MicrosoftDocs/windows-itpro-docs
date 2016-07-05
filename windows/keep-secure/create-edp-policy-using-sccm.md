@@ -344,7 +344,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 5.	Click **OK**.
 
-## Manage the EDP-protection level for your enterprise data
+### Manage the EDP-protection level for your enterprise data
 After you've added the apps you want to protect with EDP, you'll need to apply a management and protection mode.
 
 We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
@@ -359,7 +359,7 @@ After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged file
 
 ![Create Configuration Item wizard, choose your EDP-protection level](images/edp-sccm-appmgmt.png)
 
-## Define your enterprise-managed identity domains
+### Define your enterprise-managed identity domains
 Corporate identity, usually expressed as your primary internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you’ve marked as protected by EDP. For example, emails using contoso.com are identified as being corporate and are restricted by your enterprise data protection policies.
 
 You can specify multiple domains owned by your enterprise by separating them with the "|" character. For example, (contoso.com|newcontoso.com). With multiple domains, the first one is designated as your corporate identity and all of the additional ones as being owned by the first one. We strongly recommend that you include all of your email address domains in this list.
@@ -368,19 +368,27 @@ You can specify multiple domains owned by your enterprise by separating them wit
 
 - Type the name of your corporate identity into the **Corporate identity** field. For example, `contoso.com` or `contoso.com|newcontoso.com`.
 
-    ![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity](images/sccm-primary-domain.png) - Need image
+    ![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity](images/edp-sccm-corp-identity.png)
 
-**To add your primary domain**
+### Choose where apps can access enterprise data
+After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
 
--   Type the name of your primary domain into the **Primary domain** field. For example, *contoso.com*.<p>
-If you have multiple domains, you must separate them with the "|" character. For example, contoso.com|fabrikam.com.
+There are no default locations included with EDP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
 
-## Choose where apps can access enterprise data
-After you've added a management level to your protected apps, you'll need to decide where those apps can access enterprise data on your network. There are 6 options, including your network domain, cloud domain, proxy server, internal proxy server, IPv4 range, and IPv6 range.
+**Important**<br>
+- Every EDP policy should include policy that defines your enterprise network locations.
+- Classless Inter-Domain Routing (CIDR) notation isn’t supported for EDP configurations.
 
-**To specify where your protected apps can find and send enterprise data on the network**
+**To define where your protected apps can find and send enterprise data on you network**
 
-1.  Add additional network locations your apps can access by clicking **Add**, and then choosing your location type, including:
+1. Add additional network locations your apps can access by clicking **Add**.
+
+    The **Add or edit corporate network definition** box appears.
+
+2.	Type a name for your corporate network element into the **Name** box, and then pick what type of network element it is, from the **Network element** drop-down box. This can include any of the options in the following table.
+
+    ![Add or edit corporate network definition box, Add your enterprise network locations](images/edp-sccm-add-network-domain.png)
+
     <table>
         <tr>
             <th>Network location type</th>
@@ -388,65 +396,142 @@ After you've added a management level to your protected apps, you'll need to dec
             <th>Description</th>
         </tr>
         <tr>
-            <td>Enterprise Cloud Domain</td>
-            <td>contoso.sharepoint.com,proxy1.contoso.com|<br>office.com|proxy2.contoso.com</td>
-            <td>Specify the cloud resources traffic to restrict to your protected apps.<p>For each cloud resource, you may also specify an internal proxy server that routes your traffic from your **Enterprise Internal Proxy Server** policy. If you have multiple resources, you must use the &#x7C; delimiter. Include the "|" delimiter just before the "|" if you don’t use proxies. For example: [URL,Proxy]|[URL,Proxy].</td>     
+            <td>Enterprise Cloud Resources</td>
+            <td>**With proxy:** contoso.sharepoint.com,proxy.contoso.com|contoso.visualstudio.<br>com,proxy.contoso.com<p>**Without proxy:** contoso.sharepoint.com|contoso.visualstudio.com</td>
+            <td>Specify the cloud resources to be treated as corporate and protected by EDP.<p>For each cloud resource, you may also optionally specify an internal proxy server that routes your traffic through your Enterprise Internal Proxy Server.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: `URL <,proxy>|URL <,proxy>`.<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the `/*AppCompat*/` string to this setting. For example: `URL <,proxy>|URL <,proxy>|/*AppCompat*/`</td>
         </tr>
         <tr>
-            <td>Enterprise Network Domain</td>
-            <td>domain1.contoso.com,domain2.contoso.com</td>
-            <td>Specify the DNS suffix used in your environment. All traffic to the fully-qualified domains using this DNS suffix will be protected. If you have multiple resources, you must use the "," delimiter.<p>This setting works with the IP Ranges settings to detect whether a network endpoint is enterprise or personal on private networks.</td>                
+            <td>Enterprise Network Domain Names (Required)</td>
+            <td>corp.contoso.com,region.contoso.com</td>
+            <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>                
         </tr>
         <tr>
-            <td>Enterprise Proxy Server</td>
-            <td>domain1.contoso.com:80;domain2.contoso.com:137</td>
-            <td>Specify the proxy server and the port traffic is routed through. If you have multiple resources, you must use the ";" delimiter.<p>This setting is required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when using certain Wi-Fi hotspots at hotels and restaurants.</td>                
+            <td>Enterprise Proxy Servers</td>
+            <td>proxy.contoso.com:80;proxy2.contoso.com:137</td>
+            <td>Specify your externally-facing proxy server addresses, along with the port through which traffic is allowed and protected with EDP.<p>This list shouldn’t include any servers listed in the Enterprise Internal Proxy Servers list, which are used for EDP-protected traffic.<p>This setting is also required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when you’re visiting another company and not on that company’s guest network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
         </tr>
         <tr>
-            <td>Enterprise Internal Proxy Server</td>
-            <td>proxy1.contoso.com;proxy2.contoso.com</td>
-            <td>Specify the proxy servers your cloud resources will go through. If you have multiple resources, you must use the ";" delimiter.</td>                
+            <td>Enterprise Internal Proxy Servers</td>
+            <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
+            <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-EDP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
         </tr>
         <tr>
-            <td>Enterprise IPv4 Range</td>
+            <td>Enterprise IPv4 Range (Required)</td>
             <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254</td>
-            <td>Specify the addresses for a valid IPv4 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the "-" delimiter between start and end of a range, and the "," delimiter to separate ranges.</td>
+            <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
         </tr>
         <tr>
             <td>Enterprise IPv6 Range</td>
-            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
-            <td>Specify the addresses for a valid IPv6 value range within your intranet.<p>If you are adding a single range, you can enter the starting and ending addresses into your management system’s UI. If you want to add multiple addresses, we suggest creating a Custom URI, using the "-" delimiter between start and end of a range, and the "," delimiter to separate ranges.</td>
-        </tr>                
+            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:<br>ffff:ffff:ffff:ffff:ffff:ffff</td>
+            <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
+        </tr>
+        <tr>
+            <td>Neutral Resources</td>
+            <td>sts.contoso.com,sts.contoso2.com</td>
+            <td>Specify your authentication redirection endpoints for your company.<p>These locations are considered enterprise or personal, based on the context of the connection before the redirection.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>
+        </tr>           
     </table>
 
-    ![Create Configuration Item wizard, specify the network locations that can be accessed by the protected apps](images/edp-sccm-network-domain.png)
+3.	Add as many locations as you need, and then click **OK**.
 
-2.  Add as many locations as you need, and then click **OK**.<p>
-The **Add or Edit Enterprise Network Locations box** closes.
+    The **Add or edit corporate network definition** box closes.
 
-3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.<p>
-Adding a data recovery certificate helps you to access locally-protected files on the device. For example, if an employee leaves the company and the IT department has to access EDP-protected data from a Windows 10 company computer. This can also help recover data in case an employee's device is accidentally revoked. For more info about how to find and export your data recovery certificate, see the[Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
+4.	Decide if you want to Windows to look for additional network settings.
 
-## Choose your optional EDP-related settings
+    ![Create Configuration Item wizard, Add whether to search for additional network settings](images/edp-sccm-optsettings.png)
+
+        - **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network.
+
+        - **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
+
+        - **Show the enterprise data protection icon overlay on your allowed apps that are EDP-unaware in the Windows Start menu and on corporate file icons in the File Explorer.** Click this box if you want the enterprise data protection icon overlay to appear on corporate files or in the Start menu, on top the tiles for your unenlightened protected apps.
+
+5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
+
+    After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
+    
+    For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
+
+    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/edp-sccm-dra.png)
+
+#### Create and verify an Encrypting File System (EFS) DRA certificate for EDP
+If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use EDP in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
+
+**Important**<br>If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy.
+
+**To manually create an EFS DRA certificate**
+1. On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
+2. Run this command:
+    
+    `cipher /r:<EFSDRA>`<br>Where `<EFSDRA>` is the name of the .cer and .pfx files that you want to create.
+
+3. When prompted, type and confirm a password to help protect your new Personal Information Exchange (.pfx) file.
+
+    The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1. 
+
+**Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
+
+4.	Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic.
+
+**To verify your data recovery certificate is correctly set up on an EDP client computer**
+1.	Open an app on your protected app list, and then create and save a file so that it’s encrypted by EDP.
+
+2.	Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
+
+    `cipher /c <filename>`<br>Where `<filename>` is the name of the file you created in Step 1.
+
+3.	Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
+
+**To recover your data using the EFS DRA certificate in a test environment**
+1.	Copy your EDP-encrypted file to a location where you have admin access.
+
+2.	Install the EFSDRA.pfx file, using your password.
+
+3.	Open a command prompt with elevated rights, navigate to the encrypted file, and then run this command:
+
+    `cipher /d <encryptedfile.extension>`<br>Where `<encryptedfile.extension>` is the name of your encrypted file. For example, corporatedata.docx.
+
+### Choose your optional EDP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
 
-**To add your optional settings**
--   Choose to set any or all of the optional EDP-related settings:
+    ![Create Configuration Item wizard, Choose any additional, optional settings](images/edp-sccm-additionalsettings.png)
 
-    -   **Block the user from decrypting data that was created or edited by the apps configured above.** Clicking **No**, or leaving the setting blank, lets your employees right-click to decrypt their protected app data, along with the option to decrypt data in the **Save As** box and the **Save As** file picker . Clicking **Yes** removes the **Decrypt** option and saves all data for protected apps as enterprise-encrypted.
+**To set your optional settings**
+1.	Choose to set any or all of the optional settings, and then click **Summary**:
 
-    -   **Protect app content when the device is in a locked state for the apps configured above.** Clicking **Yes** lets EDP help to secure protected app content when a mobile device is locked. We recommend turning this option on to help prevent data leaks from things such as email text that appears on the **Lock** screen of a Windows 10 Mobile phone.
+- **Show the Personal option in the File ownership menus of File Explorer and the Save As dialog box.** Determines whether users can see the Personal option for files within File Explorer and the **Save As** dialog box. The options are:
+    
+    - **Yes, or not configured (recommended).** Employees can choose whether a file is **Work** or **Personal** in File Explorer and the **Save As** dialog box. 
+	
+    - **No.** Hides the **Personal** option from employees. Be aware that if you pick this option, apps that use the **Save As** dialog box might encrypt new files as corporate data unless a different file path is given during the original file creation. After this happens, decryption of work files becomes more difficult.
 
-        ![Create Configuration Item wizard, choose additional optional settings for enterprise data protection](images/edp-sccm-optsettings.png)
+- **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether apps can show corporate data on a Windows 10 Mobile device **Lock** screen. The options are:
+	
+    - **Yes (recommended).** Stop apps from reading corporate data on Windows 10 Mobile device when the screen is locked.
+	
+    - **No, or not configured.**  Allows apps to read corporate data on Windows 10 Mobile device when the screen is locked.
 
-## Review your configuration choices in the Summary screen
+- **Allow Windows Search to search encrypted corporate data and Store apps.** Determines whether Windows Search can search and index encrypted corporate data and Store apps. The options are:
+
+	- **Yes.** Allows Windows Search to search and index encrypted corporate data and Store apps.
+
+	- **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
+
+- **Revoke local encryption keys during the unerollment process.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from enterprise data protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
+
+    - **Yes, or not configured (recommended).** Revokes local encryption keys from a device during unenrollment.
+    - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you’re migrating between Mobile Device Management (MDM) solutions.
+
+### Review your configuration choices in the Summary screen
 After you've finished configuring your policy, you can review all of your info on the **Summary** screen.
 
 **To view the Summary screen**
--   Click the **Summary** button to review your policy choices, and then click **Next** to finish and to save your policy.<p>
-A progress bar appears, showing you progress for your policy. After it's done, click **Close** to return to the **Configuration Items** page.
+- Click the **Summary** button to review your policy choices, and then click **Next** to finish and to save your policy.
 
-    ![Create Configuration Item wizard, review the Summary screen before creating the policy](images/edp-sccm-summaryscreen.png)
+    ![Create Configuration Item wizard, Summary screen for all of your policy choices](images/edp-sccm-summaryscreen.png)
+ 
+    A progress bar appears, showing you progress for your policy. After it's done, click **Close** to return to the **Configuration Items** page.
+
 
 ## Deploy the EDP policy
 After you’ve created your EDP policy, you'll need to deploy it to your organization's devices. For info about your deployment options, see these topics:
