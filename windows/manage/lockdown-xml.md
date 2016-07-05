@@ -31,12 +31,13 @@ The configuration items must be in the following order when you lock down settin
 
 -   Default profile
     -   ActionCenter
-    -   Apps
-        -   Application product ID, as described in [Product IDs in Windows 10 Mobile](http://go.microsoft.com/fwlink/p/?LinkId=698449)
+    -   Apps (contains lists of applications and folders)
+        -   Application product ID, as described in [Product IDs in Windows 10 Mobile](http://go.microsoft.com/fwlink/p/?LinkId=698449), or folder ID and folder name, as described in [EnterpriseAssignedAccess CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt157024%28v=vs.85%29.aspx)
         -   App User Model ID, as described in [Configuring Multiple App Packages](#bmk-map)
         -   PinToStart
             -   Size
             -   Location
+            -   Parent folder ID
     -   Buttons
         -   ButtonLockdownList
             -   Button name
@@ -124,6 +125,16 @@ The XML example can be used as a lockdown file that is contained in a provisioni
     <Default>
         <ActionCenter enabled="true" />
         <Apps>
+            <!-- Create folder -->
+            <Application folderId="1" folderName="foldername">
+               <PinToStart>
+                 <Size>Large</Size>
+                 <Location>
+                   <LocationX>0</LocationX>
+                   <LocationY>2</LocationY>
+                 </Location>
+              </PinToStart>
+           </Application>
             <!-- Settings -->
             <Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}">
                 <PinToStart>
@@ -134,7 +145,7 @@ The XML example can be used as a lockdown file that is contained in a provisioni
                     </Location>
                 </PinToStart>
             </Application>
-            <!-- Outlook Calendar -->
+            <!-- Outlook Calendar in folder -->
             <Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}" aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar">
                 <PinToStart>
                     <Size>Small</Size>
@@ -142,6 +153,7 @@ The XML example can be used as a lockdown file that is contained in a provisioni
                         <LocationX>0</LocationX>
                         <LocationY>2</LocationY>
                     </Location>
+                    <ParentFolderId>1</ParentFolderId>
                 </PinToStart>
             </Application>
             <!-- Photos -->
