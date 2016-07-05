@@ -232,7 +232,7 @@ Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the 
 For this example, we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/applocker-overview) content.
 
 **To create an app rule and xml file using the AppLocker tool**
-1.	Open the Local Security Policy snap-in (SecPol.msc)..
+1.	Open the Local Security Policy snap-in (SecPol.msc).
     
 2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
 
@@ -250,64 +250,99 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
     ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-permissions.png)
 
-7.	On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
+6.	On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
     ![Create Packaged app Rules wizard, showing the Publisher](images/intune-applocker-publisher.png)
 
-8. In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Photos.
+7. In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Photos.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/intune-applocker-select-apps.png)
+    ![Create Packaged app Rules wizard, showing the Select applications page](images/intune-applocker-select-apps.png)
 
-9. On the updated **Publisher** page, click **Create**.
+8. On the updated **Publisher** page, click **Create**.
 
+    ![Create Packaged app Rules wizard, showing the Microsoft Photos on the Publisher page](images/intune-applocker-publisher-with-app.png)
 
+9. Review the Local Security Policy snap-in to make sure your rule is correct.
 
+    ![Local security snap-in, showing the new rule](images/intune-local-security-snapin-updated.png)
 
+10.	In the left pane, right-click on **AppLocker**, and then click **Export policy**.
 
+    The **Export policy** box opens, letting you export and save your new policy as XML.
 
+    ![Local security snap-in, showing the Export Policy option](images/intune-local-security-export.png)
 
+11.	In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
 
+    The policy is saved and you’ll see a message that says 1 rule was exported from the policy.
 
+    **Example XML file**<br>
+    This is the XML file that AppLocker creates for Microsoft Photos.
 
+    ```xml
+     <AppLockerPolicy Version="1">
+        <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
+        <RuleCollection Type ="Msi" EnforcementMode="NotConfigured" />
+        <RuleCollection Type ="Script" EnforcementMode="NotConfigured" />
+        <RuleCollection Type ="Dll" EnforcementMode="NotConfigured" />
+        <RuleCollection Type ="Appx" EnforcementMode="NotConfigured">
+            <FilePublisherRule Id="5e0c752b-5921-4f72-8146-80ad5f582110" Name="Microsoft.Windows.Photos, version 16.526.0.0 and above, from Microsoft Corporation" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+                <Conditions>
+                    <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.Photos" BinaryName="*">
+                        <BinaryVersionRange LowSection="16.526.0.0" HighSection="*" />
+                    </FilePublisherCondition>
+                </Conditions>
+            </FilePublisherRule>
+        </RuleCollection>
+	</AppLockerPolicy>
+    ```
+12. After you’ve created your XML file, you need to import it by using System Center Configuration Manager.
 
+**To import your Applocker policy file app rule using 1System Center Configuration Manager**
+1.	From the **App rules** area, click **Add**.
+    
+    The **Add app rule** box appears.
 
+    ![Create Configuration Item wizard, add an AppLocker policy](images/edp-sccm-addapplockerfile.png)
 
+2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Allowed app list*.
 
+3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
 
+    Allow turns on EDP, helping to protect that app’s corporate data through the enforcement of EDP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from EDP restrictions](#exempt-apps-from-edp) section.
 
+4.	Pick the **AppLocker policy file** from the **Rule template** drop-down list.
 
+    The box changes to let you import your AppLocker XML policy file.
 
+5. Click the ellipsis (...) to browse for your AppLocker XML file, click **Open**, and then click **OK** to close the **Add app rule** box.
 
+    The file is imported and the apps are added to your **App Rules** list.
 
+#### Exempt apps from EDP restrictions
+If you're running into compatibility issues where your app is incompatible with EDP, but still needs to be used with enterprise data, you can exempt the app from the EDP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
+**To exempt a store app, a desktop app, or an AppLocker policy file app rule**
 
+1.	From the **App rules** area, click **Add**.
+    
+    The **Add app rule** box appears.
 
+2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Exempt apps list*.
 
+3.	Click **Exempt** from the **Enterprise data protection mode** drop-down list.
 
+    Be aware that when you exempt apps, they’re allowed to bypass the EDP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-app-rules-to-your-policy) section of this topic.
 
+4.	Fill out the rest of the app rule info, based on the type of rule you’re adding:
 
+    - **Store app.** Follow the **Publisher** and **Product name** instructions in the [Add a store app rule to your policy](#add-a-store-app-rule-to-your-policy) section of this topic.
 
+    - **Desktop app.** Follow the **Publisher**, **Product name**, **Binary name**, and **Version** instructions in the [Add a desktop app rule to your policy](#add-a-desktop-app-rule-to-your-policy) section of this topic.
 
+    - **AppLocker policy file.** Follow the **Import** instructions in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section of this topic, using a list of exempted apps.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+5.	Click **OK**.
 
 ## Manage the EDP-protection level for your enterprise data
 After you've added the apps you want to protect with EDP, you'll need to apply an app management mode.
