@@ -9,34 +9,35 @@ author: greg-lindsay
 ---
 
 # Deploy Windows 10 in a test lab
+
 **Applies to**
 
 -   Windows 10
 
 ## In this guide
 
-This guide provides instructions for setting up a proof of concept (PoC) lab using Hyper-V and a minimum amount of resources. Additional guides will provide detailed steps for deploying Windows 10 on client computers in the PoC environmment.
+This guide provides instructions for configuring a test lab to be used as a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Additional guides leverage the PoC environment and provide detailed steps for deploying Windows 10 under common scenarios with current deployment tools. The following topics are available in this guide:
 
 <table border="0" cellpadding="2">
     <tr>
         <td BGCOLOR="#a0e4fa">Topic</td>
         <td BGCOLOR="#a0e4fa">Description</td>
+    <tr>
+        <td>[Hardware and software requirements](#hardware-and-software-requirements)</td>
+        <td>Prerequisites to configure the PoC environment.</td>
+    </tr>
+    <tr>
+        <td>[Lab setup](#lab-setup)</td>
+        <td>A summary of the PoC environment.</td>
     </tr>
     <tr>
         <td>[Configure the PoC environment](#configure-the-poc-environment)</td>
-        <td>Instructions are provided for installing and configuring Hyper-V and configuring VHDs in preparation for different deployment scenarios.</td>
+        <td>Step by step instructions to configure the PoC environment.</td>
     </tr>
-    <tr>
-        <td>Topic 2</td>
-        <td>Description 2</td>
     </tr>
-    <tr>
-        <td>Topic 3</td>
-        <td>Description 3</td>
-    </tr>
-    <tr>
-        <td>Topic 4</td>
-        <td>Description 4</td>
+     <tr>
+        <td>[Windows 10 deployment PoC guides](#windows-10-poc-guides)</td>
+        <td>A list of guides providing step by step instructions to deploy Windows 10 in the PoC environment.</td>
     </tr>
 </table>
 
@@ -46,36 +47,73 @@ Two computers are required to complete this guide:
 
 <table border="1" cellpadding="2">
     <tr>
-        <td BGCOLOR="#a0e4fa">Computer 1: Hyper-V host</td>
-        <td BGCOLOR="#a0e4fa">Computer 2: Client</td>
+        <td></td>
+        <td BGCOLOR="#a0e4fa">**Computer 1**</td>
+        <td BGCOLOR="#a0e4fa">**Computer 2**</td>
     </tr>
     <tr>
-        <td>Windows 8/8.1/10 or Windows Server 2012/2012 R2/2016 installed<BR>
-            8 GB RAM (16 GB recommended)<BR>
-            50 GB available hard disk space (100 GB recommended)<BR>
-            SLAT-Capable CPU<BR>
-            Internet connection</td>
-        <td>Windows 7 or a later operating system installed</td>
+        <td>Role</td>
+        <td>Hyper-V host</td>
+        <td>Client</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>This computer will run Hyper-V, the Hyper-V management tools and the Hyper-V Windows PowerShell module.</td>
+        <td>This computer is a test system on your corporate network that will be converted to a VHD.</td>
+    </tr>
+    <tr>
+        <td>OS</td>
+        <td>Windows 8/8.1/10 or Windows Server 2012/2012 R2/2016</td>
+        <td>Windows 7 or a later*</td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>8 GB RAM (16 GB recommended)</td>
+        <td>Any</td>
+    </tr>
+    <tr>
+        <td>Disk</td>
+        <td>50 GB available hard disk space (100 GB recommended)</td>
+        <td>Any</td>
+    </tr>
+    <tr>
+        <td>CPU</td>
+        <td>SLAT-Capable CPU</td>
+        <td>Any</td>
+    </tr>
+    <tr>
+        <td>Network</td>
+        <td>Internet connection</td>
+        <td>Any</td>
     </tr>
 </table>
 
+*This guide does not provide specific instructions for upgrading or downgrading the architecture of the client PC from 32-bit or 64-bit. An in-place upgrade can only be performed if the pre- and post-upgrade architecture is the same. To change the architecture of the client PC during the upgrade process, use the wipe and reload scenario procedures.
+
 ## Lab setup
 
-The Hyper-V host computer is configured to host four VMs on a private, proof of concept network. Two VMs are running Windows Server 2012 R2 with required network services and tools installed. The remaining VMs are client systems with one VM intended to mirror a host on your corporate network, and one VM running Windows 10 to illustrate a hardware replacement scenario. See the following diagram.
+The Hyper-V host computer is configured to host four VMs on a private, proof of concept network. 
+- Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
+- Two VMs are client systems with one VM intended to mirror a host on your corporate network, and one VM running Windows 10 to illustrate a hardware replacement scenario.
+
+Links are provided to download trial versions of Windows Server 2012 and all deployment tools necessary to complete the lab. See the following diagram:
 
 ![PoC](images/poc.png)
 
-Note: Instructions are provided in this guide to install and configure Hyper-V. However, you can skip the Hyper-V installation instructions and use an existing Hyper-V host computer if desired.
+**Note**:
+>If you have an existing Hyper-V host, you can use this host if desired and skip the Hyper-V installation section in this guide.
 
-Links are provided to download trial versions of Windows Server 2012 and all deployment tools necessary to complete the lab.
-
-
+>The two Windows Server VMs can be combined into a single VM to conserve RAM and disk space if required. However, instructions in this guide assume two server systems are used.
 
 ## Configure the PoC environment
 
-### Requirements
+### In this section
 
-To complete the procedures in this topic
+[Install Hyper-V](#install-hyper-v)
+[Download VHDs](#download-vhds)
+[Configure Hyper-V](#configure-hyper-v)
+[Configure VHDs](#configure-vhds)
+[Verify the configuration](#verify-the-configuration)
 
 ### Install Hyper-V
 
@@ -100,11 +138,16 @@ Important  If you know that your processor supports SLAT, but you still get an e
 
 ![security BIOS settings](images/sec-bios.png)
 
-### Configure Hyper-V
-
 ### Download VHDs
 
+### Configure Hyper-V
+
 ### Configure VHDs
+
+## Windows 10 PoC guides
+
+- [Step by step: Deploy Windows 10 PoC with System Center Configuration Manager](windows-10-poc-sccm.md)
+- [Step by step: Deploy Windows 10 PoC with the Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
 
 ## Related Topics
 
