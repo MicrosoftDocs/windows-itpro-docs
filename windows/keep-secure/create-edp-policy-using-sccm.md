@@ -15,11 +15,14 @@ author: eross-msft
 
 -   Windows 10 Insider Preview
 -   Windows 10 Mobile Preview
--   System Center Configuration Manager (version 1606 or later)
+-   System Center Configuration Manager (version 1605 Tech Preview or later)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Configuration Manager (version 1606 or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network.
+System Center Configuration Manager (version 1605 Tech Preview or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection mode, and how to find enterprise data on the network.
+
+**Important**<br>
+If you previously created an EDP policy using System Center Configuration Manager version 1511 or 1602, you’ll need to recreate it using version 1605 Tech Preview or later. Editing an EDP policy created in version 1511 or 1602 is not supported in version 1605 Tech Preview. There is no migration path between EDP policies across these versions.
 
 ## Add an EDP policy
 After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for EDP, which in turn becomes your EDP policy.
@@ -49,60 +52,130 @@ The **Create Configuration Item Wizard** starts.
 
     ![Create Configuration Item wizard, choose the supported platforms for the policy](images/edp-sccm-supportedplat.png)
 
-6.  On the **Device Settings** screen, click **Enterprise Data Protection**, and then click **Next**.
+6.  On the **Device Settings** screen, click **Enterprise data protection**, and then click **Next**.
 
     ![Create Configuration Item wizard, choose the enterprise data protection settings](images/edp-sccm-devicesettings.png)
 
-The **Configure Enterprise Data Protection settings** page appears, where you'll configure your policy for your organization.
+The **Configure enterprise data protection settings** page appears, where you'll configure your policy for your organization.
 
-## Choose which apps can access your enterprise data
-During the policy-creation process in Configuration Manager, you can choose the apps you want to give access to your enterprise data through EDP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps or unprotected network locations.
+### Add app rules to your policy
+During the policy-creation process in System Center Configuration Manager, you can choose the apps you want to give access to your enterprise data through EDP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
-The steps to add your apps are based on the type of app it is; either a Universal Windows Platform (UWP) app, or a signed Classic Windows application.
+The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed desktop app (also known as a Classic Windows app), or an AppLocker policy file.
 
-**Important**<br>EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary and will encrypt all files they create or modify, meaning that they could encrypt personal data and cause data leaks during the revocation process. Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **Protected App** list.
+**Important**<br>
+EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.
 
-**To add a UWP app**
+Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **App rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
-1.  From the **Configure the following apps to be protected by EDP** table in the **Protected Apps** area, click **Add.**
+#### Add a store app rule to your policy
+For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
 
-2.  Click **Universal App**, type the **Publisher Name** and the **Product Name** into the associated boxes, and then click **OK**. If you don't have the publisher or product name, you can find them by following these steps.
+**To add a store app**
 
-    **To find the Publisher and Product name values for Microsoft Store apps without installing them**
+1.	From the **App rules** area, click **Add**.
+    
+    The **Add app rule** box appears.
 
-    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
+    ![Create Configuration Item wizard, add a universal store app](images/edp-sccm-adduniversalapp.png)
 
-    2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
+2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Microsoft OneNote*.
 
-    3.  In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/*9wzdncrfhvjl*/applockerdata, where *9wzdncrfhvjl* is replaced with your ID value.
+3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
 
-        The API runs and opens a text editor with the app details.
+    Allow turns on EDP, helping to protect that app’s corporate data through the enforcement of EDP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from EDP restrictions](#exempt-apps-from-edp) section.
 
-        ``` json
+4.	Pick **Store App** from the **Rule template** drop-down list.
+
+    The box changes to show the store app rule options.
+
+5.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.Office.OneNote`.
+
+If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
+
+**To find the Publisher and Product Name values for Store apps without installing them**
+
+1.	Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
+
+    **Note**<br>
+    If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
+
+2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
+
+3.	In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata, where `9wzdncrfhvjl` is replaced with your ID value.
+
+    The API runs and opens a text editor with the app details.
+
+    ``` json
         {
-          "packageIdentityName": "Microsoft.Office.OneNote",
-          "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+        "packageIdentityName": "Microsoft.Office.OneNote",
+        "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+        }
+    ```
+
+4.  Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
+
+    **Important**<br>
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+    
+    For example:
+       ```json
+        {
+            "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
         }
         ```
 
-    4.  Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of the **Add app** box, and then click **OK**.
-    <p>**Important**<br>If you don’t see the **Product Name** box, it could mean that your tenant is not on the latest build and that you need to wait until it's upgraded. Same applies if you see the **AppId** box. The **AppId** box has been removed in the latest build and should disappear (along with any entries) when your tenant is upgraded.
-    <p>**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:<br>    
+**To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
+1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-        ```
+    **Note**<br>
+    Your PC and phone must be on the same wireless network.
+
+2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
+
+3.	On the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
+
+4.	Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
+
+5.	In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
+
+6.	On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
+
+7.	Start the app for which you're looking for the publisher and product name values.
+
+8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
+
+    **Important**<br>
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+    
+    For example:
+       ```json
         {
-          "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+            "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
         }
         ```
 
-        ![Create Configuration Item wizard, add a Universal Windows Platform (UWP) app](images/edp-sccm-adduniversalapp.png)
+#### Add a desktop app rule to your policy
+For this example, we’re going to add Internet Explorer, a desktop app, to the **App Rules** list.
 
-**To add a Classic Windows application**
+**To add a desktop app to your policy**
+1.	From the **App rules** area, click **Add**.
+    
+    The **Add app rule** box appears.
 
-1.  From the **Configure the following apps to be protected by EDP** table in the **Protected Apps** area, click **Add.**
-<p>A dialog box appears, letting you pick whether the app is a **Universal App** or a **Desktop App**.
+    ![Create Configuration Item wizard, add a classic desktop app](images/edp-sccm-adddesktopapp.png)
 
-2.  Click **Desktop App**, pick the options you want (see table), and then click **OK**.
+2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Internet Explorer*.
+
+3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+
+    Allow turns on EDP, helping to protect that app’s corporate data through the enforcement of EDP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from EDP restrictions](#exempt-apps-from-edp) section.
+
+4.	Pick **Desktop App** from the **Rule template** drop-down list.
+
+    The box changes to show the desktop app rule options.
+
+5.	Pick the options you want to include for the app rule (see table), and then click **OK**.
 
     <table>
         <tr>
@@ -122,20 +195,20 @@ The steps to add your apps are based on the type of app it is; either a Universa
             <td>All files for the specified product, signed by the named publisher.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, and <strong>File Name</strong> selected</td>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, and <strong>Binary name</strong> selected</td>
             <td>Any version of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, Exactly</strong>, selected</td>
-            <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, And above</strong> selected</td>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, and above</strong>, selected</td>
             <td>Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, And below</strong> selected</td>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, And below</strong> selected</td>
             <td>Specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
+        </tr>
+        <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, Exactly</strong> selected</td>
+            <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
     </table>
 
@@ -155,7 +228,74 @@ Path                   Publisher
 ```
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
-![Create Configuration Item wizard, add a Classic Windows app](images/edp-sccm-adddesktopapp.png)
+#### Add an AppLocker policy file
+For this example, we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/applocker-overview) content.
+
+**To create an app rule and xml file using the AppLocker tool**
+1.	Open the Local Security Policy snap-in (SecPol.msc)..
+    
+2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
+
+    ![Local security snap-in, showing the Packaged app Rules](images/intune-local-security-snapin.png)
+
+3.	Right-click in the right-hand pane, and then click **Create New Rule**.
+
+    The **Create Packaged app Rules** wizard appears.
+
+4. On the **Before You Begin** page, click **Next**.
+
+    ![Create Packaged app Rules wizard, showing the Before You Begin page](intune-applocker-before-begin.png)
+
+5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
+
+    ![Create Packaged app Rules wizard, showing the Before You Begin page](intune-applocker-permissions.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Manage the EDP-protection level for your enterprise data
 After you've added the apps you want to protect with EDP, you'll need to apply an app management mode.
