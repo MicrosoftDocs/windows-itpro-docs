@@ -34,7 +34,7 @@ To create a Surface UEFI configuration package, follow these steps:
 
    *Figure 1. Select Configuration Package to create a package for SEMM enrollment and configuration*
 
-4. Click **Certificate Protection** to add your exported certificate file with private key (.pfx), as shown in Figure 2. Browse to the location of your certificate file, select the file, then click **OK**.
+4. Click **Certificate Protection** to add your exported certificate file with private key (.pfx), as shown in Figure 2. Browse to the location of your certificate file, select the file, and then click **OK**.
 
    ![Add the SEM certificate and Surface UEFI password to configuration package](images\surface-semm-enrollment-fig2.png "Add the SEM certificate and Surface UEFI password to configuration package")
 
@@ -64,7 +64,7 @@ To create a Surface UEFI configuration package, follow these steps:
    *Figure 5. Control advanced Surface UEFI settings and Surface UEFI pages with SEMM*
 
 13.	In the **Save As** dialog, specify a name for the Surface UEFI configuration package, browse to the location where you would like to save the file, and then click **Save**.
-14.	When the package is created and saved, the **Successful** page is shown.
+14.	When the package is created and saved, the **Successful** page is displayed.
 
 >**Note**:&nbsp;&nbsp;Record the certificate thumbprint characters that are displayed on this page, as shown in Figure 6. You will need these characters to confirm enrollment of new Surface devices in SEMM. Click **End** to complete package creation and close Microsoft Surface UEFI Configurator.
 
@@ -77,13 +77,13 @@ Now that you have created your Surface UEFI configuration package, you can enrol
 >**Note**:&nbsp;&nbsp;When a Surface UEFI configuration package is created, a log file is created on the Desktop with details of the Configuration Package settings and options.
 
 ## Enroll a Surface device in SEMM
-When the Surface UEFI configuration package is executed, the SEMM certificate and Surface UEFI configuration file are staged in the firmware storage of the Surface device. When the Surface device reboots, Surface UEFI processes these files and begins the process of applying the Surface UEFI configuration or enrolling the Surface device in SEMM, as shown in Figure 7.
+When the Surface UEFI configuration package is executed, the SEMM certificate and Surface UEFI configuration files are staged in the firmware storage of the Surface device. When the Surface device reboots, Surface UEFI processes these files and begins the process of applying the Surface UEFI configuration or enrolling the Surface device in SEMM, as shown in Figure 7.
 
 ![SEMM process for configuration of Surface UEFI or enrollment](images\surface-semm-enroll-fig7.png "SEMM process for configuration of Surface UEFI or enrollment")
 
 *Figure 7. The SEMM process for configuration of Surface UEFI or enrollment of a Surface device*
 
-Before you begin the process of to enroll a Surface device in SEMM, ensure that you have the last two characters of the certificate thumbprint on hand. You will need these characters to confirm the device’s enrollment (see Figure 6).
+Before you begin the process to enroll a Surface device in SEMM, ensure that you have the last two characters of the certificate thumbprint on hand. You will need these characters to confirm the device’s enrollment (see Figure 6).
 
 To enroll a Surface device in SEMM with a Surface UEFI configuration package, follow these steps:
 
@@ -102,7 +102,7 @@ To enroll a Surface device in SEMM with a Surface UEFI configuration package, fo
    
 5. The Surface device is now enrolled in SEMM and will boot to Windows.
 
-You can verify that a Surface device has been successfully enrolled in SEMM by looking for **Microsoft Surface Configuration Package** in **Programs and Features**, as shown in Figure 9, or in the events stored in the **Microsoft Surface UEFI Configurator** log, found under **Applications and Services Logs** in Event Viewer, as shown in Figure 10.
+You can verify that a Surface device has been successfully enrolled in SEMM by looking for **Microsoft Surface Configuration Package** in **Programs and Features** (as shown in Figure 9), or in the events stored in the **Microsoft Surface UEFI Configurator** log, found under **Applications and Services Logs** in Event Viewer (as shown in Figure 10).
 
 ![Verify enrollment of Surface device in SEMM in Programs and Features](images\surface-semm-enroll-fig9.png "Verify enrollment of Surface device in SEMM in Programs and Features")
 
@@ -112,11 +112,11 @@ You can verify that a Surface device has been successfully enrolled in SEMM by l
 
 *Figure 10. Verify the enrollment of a Surface device in SEMM in Event Viewer*
 
-You can also verify that the device is enrolled in SEMM in Surface UEFI, while the device is enrolled Surface UEFI will contain the Enterprise Management page, as shown in Figure 11.
+You can also verify that the device is enrolled in SEMM in Surface UEFI – while the device is enrolled, Surface UEFI will contain the Enterprise Management page (as shown in Figure 11).
 
 ![Surface UEFI Enterprise Management page](images\surface-semm-enroll-fig11.png "Surface UEFI Enterprise Management page")
 
-*Figure 11: The Surface UEFI Enterprise Management page*
+*Figure 11. The Surface UEFI Enterprise Management page*
 
 
 ## Configure Surface UEFI settings with SEMM
