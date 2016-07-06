@@ -64,8 +64,8 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 <td align="left"><p>Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. This table maps Windows Embedded Industry 8.1 features to Windows 10 Enterprise features, along with links to documentation.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Microsoft Passport](microsoft-passport.md)</p></td>
-<td align="left"><p>In Windows 10, Microsoft Passport replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.</p></td>
+<td align="left"><p>[Windows Hello](microsoft-passport.md)</p></td>
+<td align="left"><p>In Windows 10, Windows Hello replaces passwords with strong two-factor authentication that consists of an enrolled device and a PIN or biometric gesture such as a fingerprint.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Provisioning packages](new-provisioning-packages.md)</p></td>
