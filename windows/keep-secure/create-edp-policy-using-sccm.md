@@ -443,11 +443,11 @@ There are no default locations included with EDP, you must add each of your netw
 
 5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
+    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/edp-sccm-dra.png)
+
     After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
     
     For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
-
-    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/edp-sccm-dra.png)
 
 #### Create and verify an Encrypting File System (EFS) DRA certificate for EDP
 If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use EDP in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
@@ -464,7 +464,7 @@ If you don’t already have an EFS DRA certificate, you’ll need to create and 
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1. 
 
-    **Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
+    >**Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
 
 4.	Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic.
 
