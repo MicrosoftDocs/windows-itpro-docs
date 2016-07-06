@@ -155,14 +155,6 @@ Within your organization, you can set application control policies to regulate a
 
 ## See also
 
+- [Managing Privacy: Using a Microsoft Account to Logon and Resulting Internet Communication](https://technet.microsoft.com/library/jj884082(v=ws.11).aspx)
 
-[Managing Privacy: Using a Microsoft Account to Logon and Resulting Internet Communication](https://technet.microsoft.com/library/jj884082(v=ws.11).aspx)
-
-
- 
-
- 
-
-
-
-
+- [Access Control Overview](access-control.md)
