@@ -49,8 +49,10 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
  
  -  [Windows 10, Version 1511 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799381)
  -  [Windows 10, Version 1507 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799380)
- 
+
+
 ### Windows Server security baselines
- 
+
  -  [Windows Server 2012 R2 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799382)
 
+>**Note:**  Microsoft’s Operation Management Services (OMS) helps you monitor security baseline deployments across your servers. To find out more, check out [Operations Management Suite](https://aka.ms/omssecscm).
