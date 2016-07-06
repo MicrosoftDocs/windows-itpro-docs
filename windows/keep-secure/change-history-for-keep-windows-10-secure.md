@@ -12,6 +12,13 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## July 2016
+
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |New |
+
+
 ## June 2016
 
 |New or changed topic | Description |

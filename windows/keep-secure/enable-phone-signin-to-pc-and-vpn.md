@@ -16,7 +16,7 @@ author: jdeckerMS
 -   Windows 10
 -   Windows 10 Mobile
 
-In Windows 10, Version 1607, your network users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser. Phone sign-in uses Bluetooth, which means no need to wait for a phone call or to remember a PIN -- just tap the app.
+In Windows 10, Version 1607, your network users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser. Phone sign-in uses Bluetooth, which means no need to wait for a phone call -- just unlock the phone and tap the app.
 
  (add screenshot when I can get the app working)
 
@@ -25,6 +25,7 @@ You can create a Group Policy or mobile device management (MDM) policy that will
  ## Prerequisites
  
  - Both phone and PC must be running Windows 10, Version 1607.
+ - The PC must be running Windows 10 Pro, Enterprise, or Education
  - Both phone and PC must have Bluetooth.
  - The PC must be joined to an Active Directory domain that is connected to an Azure Active Directory (Azure AD) domain, or the PC must be joined to Azure AD.
  - The phone must be joined to Azure AD or have a work account added.
@@ -34,35 +35,35 @@ You can create a Group Policy or mobile device management (MDM) policy that will
 
 To enable phone sign-in, you must enable the following policies using Group Policy or MDM.
 
--  Group Policy: **Computer Configuration** or **User Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Passport for Work**
-    - Enable **Use Microsoft Passport for Work**
-    - Enable **Remote Passport**
+-  Group Policy: **Computer Configuration** or **User Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Hello for Business**
+    - Enable **Use Windows Hello for Business**
+    - Enable **Phone Sign-in**
 - MDM: 
     - Set **UsePassportForWork** to **True**
     - Set **Remote\UseRemotePassport** to **True**
 
-To distribute the **Phone Sign-in** app, your organization must have set up Windows Store for Business, with Microsoft added as a Line of Business (LOB) publisher.
- - The **Phone Sign-in** app must be added to Windows Store for Business for your organization.
- - Users must install the **Phone sign-in** app on the phone.
-
+Everyone can get the **Microsoft Authenticator** app from the Windows Store. If you want to distribute the **Microsoft Authenticator** app, your organization must have set up Windows Store for Business, with Microsoft added as a Line of Business (LOB) publisher.
 
 [Tell people how to sign in using their phone.](prepare-people-to-use-microsoft-passport.md#bmk-remote)
 
+
 ## Related topics
 
-[Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
+[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
 
-[Implement Microsoft Passport in your organization](implement-microsoft-passport-in-your-organization.md)
+[Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 
-[Prepare people to use Microsoft Passport](prepare-people-to-use-microsoft-passport.md)
+[Prepare people to use Windows Hello](prepare-people-to-use-microsoft-passport.md)
 
-[Microsoft Passport and password changes](microsoft-passport-and-password-changes.md)
+[Windows Hello and password changes](microsoft-passport-and-password-changes.md)
 
-[Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
+[Windows Hello errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
 
-[Event ID 300 - Passport successfully created](passport-event-300.md)
+[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
+
+[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
 
 
  

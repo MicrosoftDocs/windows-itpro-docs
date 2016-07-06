@@ -106,4 +106,4 @@ The following table provides links to additional resources that are related to s
 |---------------|-------------|
 | **Product evaluation** | [What's New for Managed Service Accounts](https://technet.microsoft.com/library/hh831451(v=ws.11).aspx)<br>[Getting Started with Group Managed Service Accounts](https://technet.microsoft.com/library/jj128431(v=ws.11).aspx) |
 | **Deployment** | [Windows Server 2012: Group Managed Service Accounts - Ask Premier Field Engineering (PFE) Platforms - Site Home - TechNet Blogs](http://blogs.technet.com/b/askpfeplat/archive/2012/12/17/windows-server-2012-group-managed-service-accounts.aspx) |
-| **Related technologies** | [Security Principals Technical Overview](security-principals.md)<br>[What's new in Active Directory Domain Services](https://technet.microsoft.com/library/mt163897.aspx) |
+| **Related technologies** | [Security Principals](security-principals.md)<br>[What's new in Active Directory Domain Services](https://technet.microsoft.com/library/mt163897.aspx) |
