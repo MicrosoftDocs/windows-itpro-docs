@@ -79,5 +79,7 @@ When Take a Test is running, the following functionality is available to student
     - Alt+F4 (**Take a Test** will restart if the student is using a dedicated test account)
 
 
+## Learn more
 
+[Take a Test API](https://msdn.microsoft.com/en-us/windows/uwp/apps-for-education/take-a-test-api)
 
