@@ -41,7 +41,7 @@ To create a Surface UEFI configuration package, follow these steps:
    *Figure 2. Add the SEMM certificate and Surface UEFI password to a Surface UEFI configuration package*
 
 5. When you are prompted to confirm the certificate password, enter and confirm the password for your certificate file, and then click **OK**.
-6. Click **Password Protection** to add a password to Surface UEFI. This password will be required whenever you boot to UEFI. If this password is not entered, only the **PC Information**, **About**, **Enterprise Management**, and **Exit** pages will be displayed. This step is optional.
+6. Click **Password Protection** to add a password to Surface UEFI. This password will be required whenever you boot to UEFI. If this password is not entered, only the **PC information**, **About**, **Enterprise management**, and **Exit** pages will be displayed. This step is optional.
 7. When you are prompted, enter and confirm your chosen password for Surface UEFI, and then click **OK**. If you want to clear an existing Surface UEFI password, leave the password field blank.
 8. If you do not want the Surface UEFI package to apply to a particular device, on the **Choose which Surface type you want to target** page, click the slider beneath the corresponding Surface Book or Surface Pro 4 image so that it is in the **Off** position. (As shown in Figure 3.)
 
@@ -57,24 +57,24 @@ To create a Surface UEFI configuration package, follow these steps:
    *Figure 4. Disable or enable individual Surface components*
 
 11.	Click **Next**.
-12.	To enable or disable advanced options in Surface UEFI or the display of Surface UEFI pages, on the **Choose the advanced settings for your devices** page, click the slider beside the desired setting to configure that option to **On** or **Off**. (As show in Figure 5.) In the **UEFI Front Page** section, you can use the sliders for **Security**, **Devices**, and **Boot** to control what pages are available to users who boot into Surface UEFI. (For more information about Surface UEFI settings, see [Manage Surface UEFI settings](https://technet.microsoft.com/en-us/itpro/surface/manage-surface-uefi-settings).) Click **Build** when you have finished selecting options to generate and save the package.
+12.	To enable or disable advanced options in Surface UEFI or the display of Surface UEFI pages, on the **Choose the advanced settings for your devices** page, click the slider beside the desired setting to configure that option to **On** or **Off**. (Shown in Figure 5.) In the **UEFI Front Page** section, you can use the sliders for **Security**, **Devices**, and **Boot** to control what pages are available to users who boot into Surface UEFI. (For more information about Surface UEFI settings, see [Manage Surface UEFI settings](https://technet.microsoft.com/en-us/itpro/surface/manage-surface-uefi-settings).) Click **Build** when you have finished selecting options to generate and save the package.
 
    ![Control advanced Surface UEFI settings and Surface UEFI pages](images\surface-semm-enroll-fig5.png "Control advanced Surface UEFI settings and Surface UEFI pages")
 
    *Figure 5. Control advanced Surface UEFI settings and Surface UEFI pages with SEMM*
 
-13.	In the **Save As** dialog, specify a name for the Surface UEFI configuration package, browse to the location where you would like to save the file, and then click **Save**.
+13.	In the **Save As** dialog box, specify a name for the Surface UEFI configuration package, browse to the location where you would like to save the file, and then click **Save**.
 14.	When the package is created and saved, the **Successful** page is displayed.
 
 >**Note**:&nbsp;&nbsp;Record the certificate thumbprint characters that are displayed on this page, as shown in Figure 6. You will need these characters to confirm enrollment of new Surface devices in SEMM. Click **End** to complete package creation and close Microsoft Surface UEFI Configurator.
 
 ![Display of certificate thumbprint characters](images\surface-semm-enroll-fig6.png "Display of certificate thumbprint characters")
 
-*Figure 6. The last to characters of the certificate thumbprint are displayed on the Successful page*
+*Figure 6. The last two characters of the certificate thumbprint are displayed on the Successful page*
 
 Now that you have created your Surface UEFI configuration package, you can enroll or configure Surface devices.
 
->**Note**:&nbsp;&nbsp;When a Surface UEFI configuration package is created, a log file is created on the Desktop with details of the Configuration Package settings and options.
+>**Note**:&nbsp;&nbsp;When a Surface UEFI configuration package is created, a log file is created on the desktop with details of the configuration package settings and options.
 
 ## Enroll a Surface device in SEMM
 When the Surface UEFI configuration package is executed, the SEMM certificate and Surface UEFI configuration files are staged in the firmware storage of the Surface device. When the Surface device reboots, Surface UEFI processes these files and begins the process of applying the Surface UEFI configuration or enrolling the Surface device in SEMM, as shown in Figure 7.
@@ -112,11 +112,11 @@ You can verify that a Surface device has been successfully enrolled in SEMM by l
 
 *Figure 10. Verify the enrollment of a Surface device in SEMM in Event Viewer*
 
-You can also verify that the device is enrolled in SEMM in Surface UEFI – while the device is enrolled, Surface UEFI will contain the Enterprise Management page (as shown in Figure 11).
+You can also verify that the device is enrolled in SEMM in Surface UEFI – while the device is enrolled, Surface UEFI will contain the **Enterprise management** page (as shown in Figure 11).
 
-![Surface UEFI Enterprise Management page](images\surface-semm-enroll-fig11.png "Surface UEFI Enterprise Management page")
+![Surface UEFI Enterprise management page](images\surface-semm-enroll-fig11.png "Surface UEFI Enterprise management page")
 
-*Figure 11. The Surface UEFI Enterprise Management page*
+*Figure 11. The Surface UEFI Enterprise management page*
 
 
 ## Configure Surface UEFI settings with SEMM
@@ -125,7 +125,7 @@ After a device is enrolled in SEMM, you can run Surface UEFI configuration packa
 
 For more information about how to deploy Windows Installer (.msi) files with Configuration Manager, see [Deploy and manage applications with System Center Configuration Manager](https://technet.microsoft.com/library/mt627959).
 
-If you have secured Surface UEFI with a password, users without the password who attempt to boot to Surface UEFI will only have the **PC Information**, **About**, **Enterprise Management**, and **Exit** pages displayed to them.
+If you have secured Surface UEFI with a password, users without the password who attempt to boot to Surface UEFI will only have the **PC information**, **About**, **Enterprise management**, and **Exit** pages displayed to them.
 
 If you have not secured Surface UEFI with a password or a user enters the password correctly, settings that are configured with SEMM will be dimmed (unavailable) and the text Some settings are managed by your organization will be displayed at the top of the page, as shown in Figure 12.
 
