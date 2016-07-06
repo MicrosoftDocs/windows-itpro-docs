@@ -13,4 +13,5 @@
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)
 ## [Surface Dock Updater](surface-dock-updater.md)
+## [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
 
