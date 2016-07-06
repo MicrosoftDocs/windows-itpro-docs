@@ -8,7 +8,7 @@
 ## [Enterprise data protection (EDP)](edp-whats-new-overview.md)
 ## [Enterprise management for Windows 10 devices](device-management.md)
 ## [Lockdown features from Windows Embedded Industry 8.1](lockdown-features-windows-10.md)
-## [Microsoft Passport](microsoft-passport.md)
+## [Windows Hello](microsoft-passport.md)
 ## [Provisioning packages](new-provisioning-packages.md)
 ## [Security](security.md)
 ## [Security auditing](security-auditing.md)

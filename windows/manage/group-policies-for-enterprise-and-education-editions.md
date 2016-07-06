@@ -17,7 +17,7 @@ In Windows 10, version 1607, the following Group Policies apply only to Windows 
 
 | Policy name | Policy path | Comments |
 | --- | --- | --- |
-| **Configure Spotlight on lock screen** | User Configuration > Administrative Templates > Windows Components > Cloud Content | For more info, see [Windows spotlight on the lock screen](https://technet.microsoft.com/en-us/itpro/windows/whats-new/windows-spotlight). Note that the policy **Do not suggest third-party content in Windows spotlight** does apply to Windows 10 Pro. |
+| **Configure Spotlight on lock screen** | User Configuration > Administrative Templates > Windows Components > Cloud Content | For more info, see [Windows spotlight on the lock screen](https://technet.microsoft.com/en-us/itpro/windows/whats-new/windows-spotlight). Note that an additional **Cloud Content** policy, **Do not suggest third-party content in Windows spotlight**, does apply to Windows 10 Pro. |
 | **Turn off all Windows Spotlight features** | User Configuration > Administrative Templates > Windows Components > Cloud Content | For more info, see [Windows spotlight on the lock screen](https://technet.microsoft.com/en-us/itpro/windows/whats-new/windows-spotlight) |
 | **Turn off Microsoft consumer features** | Computer Configuration > Administrative Templates > Windows Components > Cloud Content | For more info, see [Windows spotlight on the lock screen](https://technet.microsoft.com/en-us/itpro/windows/whats-new/windows-spotlight) |
 | **Do not display the lock screen** | Computer Configuration > Administrative Templates > Control Panel > Personalization | For more info, see [Windows spotlight on the lock screen](https://technet.microsoft.com/en-us/itpro/windows/whats-new/windows-spotlight) |

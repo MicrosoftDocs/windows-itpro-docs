@@ -23,7 +23,7 @@ The **Inventory** page in Windows Store for Business shows all apps in your inve
 
 All of these apps are treated the same once they are in your inventory and you can perform app lifecycle tasks for them: distribute apps, add apps to private store, review license details, and reclaim app licenses.
 
-![](images/wsfb-inventoryaddprivatestore.png)
+![Image shows Inventory page in Windows Store for Business with status status options for an app.](images/wsfb-inventoryaddprivatestore.png)
 
 Store for Business shows this info for each app in your inventory:
 
@@ -168,13 +168,13 @@ For each app in your inventory, you can view and manage license details. This gi
 
 2.  Click **Manage**, and then choose **Inventory**.
 
-3.  Click the ellipses for and app, and then choose **View license details**.
+3.  Click the ellipses for an app, and then choose **View license details**.
 
-    ![](images/wsfb-inventory-viewlicense.png)
+    ![Image showing Inventory page in Windows Store for Business.](images/wsfb-inventory-viewlicense.png)
 
     You'll see the names of people in your organization who have installed the app and are using one of the licenses.
 
-    ![](images/wsfb-licensedetails.png)
+    ![Image showing assigned licenses for an app.](images/wsfb-licensedetails.png)
 
     On **Assigned licenses**, you can do several things:
 
@@ -190,9 +190,9 @@ For each app in your inventory, you can view and manage license details. This gi
 
     **To assign an app to more people**
 
-    -   Click Assign to people, type the email address for the employee that you're assigning the app to, and click **Assign**.
+    -   Click **Assign to people**, type the email address for the employee that you're assigning the app to, and click **Assign**.
 
-        ![](images/wsfb-licenseassign.png)
+        ![Image showing Assign to people dialog for assigning app licenses to people in your organization.](images/wsfb-licenseassign.png)
 
         Store for Business updates the list of assigned licenses.
 
@@ -200,7 +200,7 @@ For each app in your inventory, you can view and manage license details. This gi
 
     -   Choose the person you want to reclaim the license from, click **Reclaim licenses**, and then click **Reclaim licenses**.
 
-        ![](images/wsfb-licensereclaim.png)
+        ![Image showing Assign to people dialog for reclaiming app licenses from people in your organization.](images/wsfb-licensereclaim.png)
 
         Store for Business updates the list of assigned licenses.
 

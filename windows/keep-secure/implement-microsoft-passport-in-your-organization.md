@@ -1,6 +1,6 @@
 ---
-title: Implement Microsoft Passport in your organization (Windows 10)
-description: You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
+title: Implement Windows Hello in your organization (Windows 10)
+description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
 keywords: identity, PIN, biometric, Hello
 ms.prod: w10
@@ -10,24 +10,20 @@ ms.pagetype: security
 author: jdeckerMS
 ---
 
-# Implement Microsoft Passport in your organization
+# Implement Windows Hello for Business in your organization
 
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
 
-You can create a Group Policy or mobile device management (MDM) policy that will implement Microsoft Passport on devices running Windows 10.
-> **Important:**  The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Microsoft Passport for Work** policy settings to manage PINs.
+You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
+> **Important:**  The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Windows Hello for Business** policy settings to manage PINs.
  
 ## Group Policy settings for Passport
 
-<<<<<<< HEAD
+The following table lists the Group Policy settings that you can configure for Hello use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
 
-The following table lists the Group Policy settings that you can configure for Passport use in your workplace. *These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.*
 
-=======
-The following table lists the Group Policy settings that you can configure for Hello use in your workplace. These policy settings are available in **Computer Configuration** &gt; **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
->>>>>>> refs/remotes/origin/rs1
 <table>
 <tr>
 <th colspan="2">Policy</th>
@@ -283,7 +279,7 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>False</td>
 <td>
 <p>True: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is enabled.</p>
-<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign0in</a> is disabled.</p>
+<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is disabled.</p>
 </td>
 </tr>
 </table>
@@ -366,14 +362,17 @@ The work PIN is managed using the same Windows Hello for Business policies that 
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 
-[Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
+[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
 
-[Prepare people to use Microsoft Passport](prepare-people-to-use-microsoft-passport.md)
+[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md) 
 
-[Microsoft Passport and password changes](microsoft-passport-and-password-changes.md)
+[Prepare people to use Windows Hello](prepare-people-to-use-microsoft-passport.md)
 
+[Windows Hello and password changes](microsoft-passport-and-password-changes.md)
 
-[Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
+[Windows Hello errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
 
-[Event ID 300 - Passport successfully created](passport-event-300.md)
+[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
+
+[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
  
