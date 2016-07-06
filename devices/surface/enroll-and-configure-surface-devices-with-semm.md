@@ -1,7 +1,7 @@
 ---
 title: Enroll and configure Surface devices with SEMM (Surface)
 description: Learn how to create a Surface UEFI configuration package to control the settings of Surface UEFI, as well as enroll a Surface device in SEMM.
-keywords:
+keywords: surface enterprise management
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
