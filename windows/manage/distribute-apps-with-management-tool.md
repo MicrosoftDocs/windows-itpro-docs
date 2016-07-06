@@ -48,14 +48,14 @@ If your vendor doesn’t support the ability to synchronize applications from th
 
 This diagram shows how you can use a management tool to distribute offline-licensed app to employees in your organization. Once synchronized from Store for Business, management tools can use the Windows Management framework to distribute applications to devices.
 
-![](images/wsfb-offline-distribute-mdm.png)
+![Image showing flow for distributing offline-licensed app from Windows Store for Business to employees in your organization.](images/wsfb-offline-distribute-mdm.png)
 
 ## Distribute online-licensed apps
 
 
 This diagram shows how you can use a management tool to distribute an online-licensed app to employees in your organization. Once synchronized from Store for Business, management tools use the Windows Management framework to distribute applications to devices. For Online licensed applications, the management tool calls back in to Store for Business management services to assign an application prior to issuing the policy to install the application.
 
-![](images/wsfb-online-distribute-mdm.png)
+![Image showing flow for distributing online-licensed app from Wndows Store for Business.](images/wsfb-online-distribute-mdm.png)
 
 ## Related topics
 
