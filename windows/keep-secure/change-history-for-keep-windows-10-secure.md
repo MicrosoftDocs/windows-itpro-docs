@@ -17,6 +17,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |New or changed topic | Description |
 |----------------------|-------------|
 |[Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |New |
+|[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |New |
 
 
 ## June 2016
