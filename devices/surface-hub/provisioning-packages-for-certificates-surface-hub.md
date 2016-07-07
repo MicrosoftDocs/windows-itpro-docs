@@ -236,15 +236,15 @@ The following two methods for deploying provisioning packages apply to any kind 
 3.  Navigate to **System &gt; Work Access**. Under the header **Related settings**, click on **Add or remove a management package**.
 4.  Here, click the button for **Add a package**.
 
-    ![](images/provisioningpackagesettings-01.png)
+    ![Image showing provisioining packages page in Settings.](images/provisioningpackagesettings-01.png)
 
 5.  Click **Removable media** from the dropdown list. You will see a list of available provisioning packages on the **Settings** page.
 
-    ![](images/provisioningpackagesettings-02.png)
+    ![Image showing add a package page in Settings.](images/provisioningpackagesettings-02.png)
 
 6.  Choose your package and click **Add**.
 
-    ![](images/provisioningpackagesettings-03.png)
+    ![Image showing select a package box.](images/provisioningpackagesettings-03.png)
 
 7.  You may have to re-enter the admin credentials if User Access Control (UAC) asks for them.
 8.  You’ll see a confirmation dialog box. Click **Yes, add it**. The certificate will be installed.
