@@ -12,6 +12,13 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## RELEASE: Windows 10, version 1607
+
+The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
+
+- [Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
+- [Remote Credential Guard](remote-credential-guard.md)
+
 ## July 2016
 
 |New or changed topic | Description |
