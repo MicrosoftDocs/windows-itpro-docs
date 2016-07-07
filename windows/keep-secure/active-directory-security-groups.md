@@ -986,7 +986,7 @@ This security group has not changed since Windows Server 2008.
 
 Members of the Cloneable Domain Controllers group that are domain controllers may be cloned. In Windows Server 2012 R2 and Windows Server 2012, you can deploy domain controllers by copying an existing virtual domain controller. In a virtual environment, you no longer have to repeatedly deploy a server image that is prepared by using sysprep.exe, promote the server to a domain controller, and then complete additional configuration requirements for deploying each domain controller (including adding the virtual domain controller to this security group).
 
-For more information, see [Introduction to Active Directory Domain Services (AD DS) Virtualization (Level 100)](https://technet.microsoft.com/en-us/library/hh831734.aspx).
+For more information, see [Introduction to Active Directory Domain Services (AD DS) Virtualization (Level 100)](https://technet.microsoft.com/library/hh831734.aspx).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -1302,7 +1302,7 @@ This security group has not changed since Windows Server 2008.
 
 Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions.
 
-For information about other means to secure the DNS server service, see [Securing the DNS Server Service](http://technet.microsoft.com/library/cc731367.aspx).
+For more information about security and DNS, see [DNSSEC in Windows Server 2012](https://technet.microsoft.com/library/dn593694(v=ws.11).aspx).
 
 This security group has not changed since Windows Server 2008.
 
@@ -1742,7 +1742,7 @@ Members of this group are Read-Only Domain Controllers in the enterprise. Except
 
 Read-only domain controllers address some of the issues that are commonly found in branch offices. These locations might not have a domain controller. Or, they might have a writable domain controller, but not the physical security, network bandwidth, or local expertise to support it.
 
-For more information, see [AD DS: Read-Only Domain Controllers](http://technet.microsoft.com/library/cc732801.aspx).
+For more information, see [What Is an RODC?](https://technet.microsoft.com/library/cc771030.aspx).
 
 The Enterprise Read-Only Domain Controllers group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -1866,7 +1866,7 @@ This security group has not changed since Windows Server 2008.
 
 This group is authorized to create, edit, or delete Group Policy Objects in the domain. By default, the only member of the group is Administrator.
 
-For information about other features you can use with this security group, see [Group Policy Planning and Deployment Guide](http://technet.microsoft.com/library/cc754948.aspx).
+For information about other features you can use with this security group, see [Group Policy Overview](https://technet.microsoft.com/library/hh831791.aspx).
 
 The Group Policy Creators Owners group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -2525,7 +2525,7 @@ This group has no default members. Because members of this group can load and un
 
 The Print Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-This security group has not changed since Windows Server 2008. However, in Windows Server 2008 R2, functionality was added to manage print administration. For more information, see [Assigning Delegated Print Administrator and Printer Permission Settings in Windows Server 2008 R2](http://technet.microsoft.com/library/ee524015(WS.10).aspx).
+This security group has not changed since Windows Server 2008. However, in Windows Server 2008 R2, functionality was added to manage print administration. For more information, see [Assign Delegated Print Administrator and Printer Permission Settings in Windows Server 2012](https://technet.microsoft.com/library/jj190062(v=ws.11).aspx).
 
 <table>
 <colgroup>
@@ -2602,7 +2602,7 @@ Depending on the account’s domain functional level, members of the Protected U
 
 The Protected Users group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-This group was introduced in Windows Server 2012 R2. For more information about how this group works, see [Protected Users Security Group](https://technet.microsoft.com/en-us/library/dn466518.aspx).
+This group was introduced in Windows Server 2012 R2. For more information about how this group works, see [Protected Users Security Group](https://technet.microsoft.com/library/dn466518.aspx).
 
 The following table specifies the properties of the Protected Users group.
 
@@ -2724,7 +2724,7 @@ This security group has not changed since Windows Server 2008.
 
 Servers that are members in the RDS Endpoint Servers group can run virtual machines and host sessions where user RemoteApp programs and personal virtual desktops run. This group needs to be populated on servers running RD Connection Broker. Session Host servers and RD Virtualization Host servers used in the deployment need to be in this group.
 
-For information about Remote Desktop Services, see [Remote Desktop Services Design Guide](http://technet.microsoft.com/library/gg750997.aspx).
+For information about Remote Desktop Services, see [Host desktops and apps in Remote Desktop Services](https://technet.microsoft.com/library/mt718499.aspx).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -2844,7 +2844,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 Servers in the RDS Remote Access Servers group provide users with access to RemoteApp programs and personal virtual desktops. In Internet facing deployments, these servers are typically deployed in an edge network. This group needs to be populated on servers running RD Connection Broker. RD Gateway servers and RD Web Access servers that are used in the deployment need to be in this group.
 
-For information about RemoteApp programs, see [Overview of RemoteApp](http://technet.microsoft.com/library/cc755055.aspx)
+For more information, see [Host desktops and apps in Remote Desktop Services](https://technet.microsoft.com/library/mt718499.aspx).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -2978,7 +2978,7 @@ Because administration of a Read-only domain controller can be delegated to a do
 
 -   Read-only Domain Name System (DNS)
 
-For information about deploying a Read-only domain controller, see [Read-Only Domain Controllers Step-by-Step Guide](http://technet.microsoft.com/library/cc772234.aspx).
+For information about deploying a Read-only domain controller, see [Understanding Planning and Deployment for Read-Only Domain Controllers](https://technet.microsoft.com/library/cc754719(v=ws.10).aspx).
 
 This security group was introduced in Windows Server 2008, and it has not changed in subsequent versions.
 
@@ -3041,7 +3041,7 @@ Members of the Remote Management Users group can access WMI resources over manag
 
 The Remote Management Users group is generally used to allow users to manage servers through the Server Manager console, whereas the [WinRMRemoteWMIUsers\_](#bkmk-winrmremotewmiusers-) group is allows remotely running Windows PowerShell commands.
 
-For more information, see [WS-Management Protocol (Windows)](http://msdn.microsoft.com/library/aa384470.aspx) and [About WMI (Windows)](http://msdn.microsoft.com/library/aa384642.aspx).
+For more information, see [What's New in MI?](https://msdn.microsoft.com/library/jj819828(v=vs.85).aspx) and [About WMI](http://msdn.microsoft.com/library/aa384642.aspx).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -3105,9 +3105,10 @@ Computers that are members of the Replicator group support file replication in a
 **Important**  
 In Windows Server 2008 R2, FRS cannot be used for replicating DFS folders or custom (non-SYSVOL) data. A Windows Server 2008 R2 domain controller can still use FRS to replicate the contents of a SYSVOL shared resource in a domain that uses FRS for replicating the SYSVOL shared resource between domain controllers.
 
-However, Windows Server 2008 R2 servers cannot use FRS to replicate the contents of any replica set apart from the SYSVOL shared resource. The DFS Replication service is a replacement for FRS, and it can be used to replicate the contents of a SYSVOL shared resource, DFS folders, and other custom (non-SYSVOL) data. You should migrate all non-SYSVOL FRS replica sets to DFS Replication. For more information, see [File Replication Service (FRS) Is Deprecated in Windows Server 2008 R2 (Windows).](http://msdn.microsoft.com/library/windows/desktop/ff384840.aspx)
+However, Windows Server 2008 R2 servers cannot use FRS to replicate the contents of any replica set apart from the SYSVOL shared resource. The DFS Replication service is a replacement for FRS, and it can be used to replicate the contents of a SYSVOL shared resource, DFS folders, and other custom (non-SYSVOL) data. You should migrate all non-SYSVOL FRS replica sets to DFS Replication. For more information, see:
 
- 
+- [File Replication Service (FRS) Is Deprecated in Windows Server 2008 R2 (Windows)](http://msdn.microsoft.com/library/windows/desktop/ff384840.aspx)
+- [DFS Namespaces and DFS Replication Overview](https://technet.microsoft.com/library/jj127250(v=ws.11).aspx)
 
 This security group has not changed since Windows Server 2008.
 
@@ -3581,21 +3582,10 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
- 
-
 ## See also
 
+- [Security Principals](security-principals.md)
 
-[Security Principals Technical Overview](security-principals.md)
+- [Special Identities](special-identities.md)
 
-
-[Special Identities](special-identities.md)
-
-
- 
-
- 
-
-
-
-
+- [Access Control Overview](access-control.md)
