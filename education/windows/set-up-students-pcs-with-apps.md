@@ -193,6 +193,9 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 
 ## Learn more
+
+-  [Develop Universal Windows Education apps](https://msdn.microsoft.com/en-us/windows/uwp/apps-for-education/index)
+
 -   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
 
 -   Watch the video: [Provisioning Windows 10 Devices with New Tools](http://go.microsoft.com/fwlink/p/?LinkId=615921)

@@ -1,5 +1,4 @@
 # [Manage and update Windows 10](index.md)
-## [Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)
 ## [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)
 ## [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)
 ## [Manage corporate devices](manage-corporate-devices.md)
@@ -63,4 +62,4 @@
 #### [Update Windows Store for Business account settings](update-windows-store-for-business-account-settings.md)
 #### [Manage user accounts in Windows Store for Business](manage-users-and-groups-windows-store-for-business.md)
 ### [Troubleshoot Windows Store for Business](troubleshoot-windows-store-for-business.md)
-
+## [Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)

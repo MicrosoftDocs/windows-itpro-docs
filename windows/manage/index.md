@@ -24,10 +24,6 @@ Learn about managing and updating Windows 10.
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><p>[Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)</p></td>
-<td align="left"><p>This topic lists new and updated topics in the Manage and update Windows 10 documentation for [Windows 10 and Windows 10 Mobile](../index.md).</p></td>
-</tr>
 <tr class="even">
 <td align="left"><p>[Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)</p></td>
 <td align="left"><p>Administrative Tools is a folder in Control Panel that contains tools for system administrators and advanced users.</p></td>
@@ -67,6 +63,9 @@ Learn about managing and updating Windows 10.
 <tr class="odd">
 <td align="left"><p>[Windows Store for Business](windows-store-for-business.md)</p></td>
 <td align="left"><p>Welcome to the Windows Store for Business! You can use the Store for Business, to find, acquire, distribute, and manage apps for your organization.</p></td>
+</tr><tr class="odd">
+<td align="left"><p>[Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)</p></td>
+<td align="left"><p>This topic lists new and updated topics in the Manage and update Windows 10 documentation for [Windows 10 and Windows 10 Mobile](../index.md).</p></td>
 </tr>
 </tbody>
 </table>
