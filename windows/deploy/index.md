@@ -15,7 +15,6 @@ Learn about deploying Windows 10 for IT professionals.
 
 |Topic |Description |
 |------|------------|
-|[Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md) |This topic lists new and updated topics in the Deploy Windows 10 documentation for [Windows 10 and Windows 10 Mobile](../index.md). |
 |[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md) |To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task. |
 |[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) |This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 2 specifically. |
 |[Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) |If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or, more specifically, MDT 2013 Update 2. |
@@ -31,6 +30,7 @@ Learn about deploying Windows 10 for IT professionals.
 |[Sideload apps in Windows 10](sideload-apps-in-windows-10.md) |Sideload line-of-business apps in Windows 10. |
 |[Volume Activation [client]](volume-activation-windows-10.md) |This guide is designed to help organizations that are planning to use volume activation to deploy and activate Windows 10, including organizations that have used volume activation for earlier versions of Windows. |
 |[Windows 10 deployment tools reference](windows-10-deployment-tools-reference.md) |Learn about the tools available to deploy Windows 10. |
+|[Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md) |This topic lists new and updated topics in the Deploy Windows 10 documentation for [Windows 10 and Windows 10 Mobile](../index.md). |
 
 ## Related topics
 - [Windows 10 and Windows 10 Mobile](../index.md)

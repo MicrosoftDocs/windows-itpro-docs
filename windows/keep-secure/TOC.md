@@ -1,5 +1,4 @@
 # [Keep Windows 10 secure](index.md)
-## [Change history for Keep Windows 10 secure](change-history-for-keep-windows-10-secure.md)
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
 ## [Device Guard certification and compliance](device-guard-certification-and-compliance.md)
 ### [Get apps to run on Device Guard-protected devices](getting-apps-to-run-on-device-guard-protected-devices.md)
@@ -818,3 +817,4 @@
 ### [Microsoft Passport guide](microsoft-passport-guide.md)
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 ### [Windows 10 security overview](windows-10-security-guide.md)
+## [Change history for Keep Windows 10 secure](change-history-for-keep-windows-10-secure.md)
