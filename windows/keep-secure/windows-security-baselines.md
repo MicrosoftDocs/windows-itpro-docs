@@ -54,7 +54,9 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
 
  -  [Windows Server 2012 R2 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799382)
 
-## How can I monitor the security baseline deployment on my servers?
+## How can I monitor security baseline deployments?
 
- Microsoft’s Operation Management Services (OMS) helps you monitor security baseline deployments across your servers. To find out more, check out [Operations Management Suite](https://aka.ms/omssecscm).
+Microsoft’s Operation Management Services (OMS) helps you monitor security baseline deployments across your servers. To find out more, check out [Operations Management Suite](https://aka.ms/omssecscm).
+
+You can use [System Center Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager) to monitor security baseline deployments on client devices within your organization.
  
