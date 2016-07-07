@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jobotto
 ---
 
-# Unenroll Surface devices from SEMM (Surface)
+# Unenroll Surface devices from SEMM
 
 When a Surface device is enrolled in Surface Enterprise Management Mode (SEMM), a certificate is stored in the firmware of that device. The presence of that certificate and the enrollment in SEMM prevent any unauthorized changes to Surface UEFI settings or options while the device is enrolled in SEMM. To restore control of Surface UEFI settings to the user, the Surface device must be unenrolled from SEMM, a process sometimes described as reset or recovery. There are two methods you can use to unenroll a device from SEMM—a Surface UEFI reset package and a Recovery Request.
 
