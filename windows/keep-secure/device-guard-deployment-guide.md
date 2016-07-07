@@ -57,7 +57,7 @@ AppLocker and Device Guard should run side-by-side in your organization, which o
 
 **Device Guard with Credential Guard**
 
-Although Credential Guard is not a feature within Device Guard, many organizations will likely deploy Credential Guard alongside Device Guard for additional protection against credential theft. Similar to virtualization-based protection of kernel mode code integrity, Credential Guard leverages hypervisor technology to protect domain credentials. This mitigation is targeted at resisting the use of pass-the-hash and pass-the-ticket techniques. By employing multifactor authentication with Credential Guard, organizations can gain additional protection against such threats. For information about how to deploy Credential Guard to your Windows 10 Enterprise clients, see the [Enable Credential Guard](#enable-cg) section. In addition to the client-side enablement of Credential Guard, organizations can deploy mitigations at both the CA and domain controller level to help prevent credential theft. Microsoft will be releasing details about these additional mitigations in the future.
+Although Credential Guard is not a feature within Device Guard, many organizations will likely deploy Credential Guard alongside Device Guard for additional protection against credential theft. Similar to virtualization-based protection of kernel mode code integrity, Credential Guard leverages hypervisor technology to protect domain credentials. This mitigation is targeted at resisting the use of pass-the-hash and pass-the-ticket techniques. By employing multifactor authentication with Credential Guard, organizations can gain additional protection against such threats. For information about how to deploy Credential Guard to your Windows 10 Enterprise clients, see the [Enable Credential Guard](#enable-cg) section. In addition to the client-side enablement of Credential Guard, organizations can deploy mitigations at both the CA and domain controller level to help prevent credential theft. Refer to the [Credential Guard](credential-guard.md) documentation for guidance on these additional mitigations.
 
 **Unified manageability**
 
@@ -752,7 +752,7 @@ To modify the policy rule options of an existing code integrity policy, use the 
 
 You can set several rule options within a code integrity policy. Table 2 lists each rule and its high-level meaning.
 
-Table 2. Code integrity policy - policy rule options
+#### Table 2. Code integrity policy - policy rule options
 
 | Rule option | Description |
 |------------ | ----------- |
@@ -769,15 +769,15 @@ Table 2. Code integrity policy - policy rule options
 | **10 Enabled:Boot Audit on Failure** | Used when the code integrity policy is in enforcement mode. When a driver fails during startup, the code integrity policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
 File rule levels allow administrators to specify the level at which they want to trust their applications. This level of trust could be as low as the hash of each binary and as high as a PCA certificate. File rule levels are specified both when you create a new code integrity policy from a scan and when you create a policy from audit events. In addition, to combine rule levels found in multiple policies, you can merge the policies. When merged, code integrity policies combine their file rules. Each file rule level has its benefit and disadvantage. Use Table 3 to select the appropriate protection level for your available administrative resources and Device Guard deployment scenario.
 
-Table 3. Code integrity policy - file rule levels
+#### Table 3. Code integrity policy - file rule levels
 
 | Rule level | Description |
 |----------- | ----------- |
 | **Hash** | Specifies individual hash values for each discovered binary. Although this level is specific, it can cause additional administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
 | **FileName** | Specifies individual binary file names. Although the hash values for an application are modified when updated, the file names are typically not. This offers less specific security than the hash level but does not typically require a policy update when any binary is modified. |
-| **SignedVersion** | This combines the publisher rule with a file version number. This option allows anything from the specified publisher, with a file version at or above the specified version number, to run. |
+| **SignedVersion** | This combines the publisher rule with a version number. This option allows anything from the specified publisher, with a version at or above the specified version number, to run. |
 | **Publisher** | This is a combination of the PCA certificate and the common name (CN) on the leaf certificate. In the scenario that a PCA certificate is used to sign multiple companies’ applications (such as VeriSign), this rule level allows organizations to trust the PCA certificate but only for the company whose name is on the leaf certificate (for example, Intel for device drivers). This level trusts a certificate with a long validity period but only when combined with a trusted leaf certificate. |
-| **FilePublisher** | This is a combination of the publisher file rule level and the SignedVersion rule level. Any signed file from the trusted publisher that is the specified version or newer is trusted. |
+| **FilePublisher** | This is a combination of “FileName” plus “Publisher” (PCA certificate with CN of leaf) plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
 | **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. Using this level, no policy update would be needed to run the new version of the application. However, leaf certificates have much shorter validity periods than PCA certificates, so additional administrative overhead is associated with updating the code integrity policy when these certificates expire. |
 | **PcaCertificate** | Adds the highest certificate in the provided certificate chain to signers. This is typically one certificate below the root certificate, because the scan does not validate anything above the presented signature by going online or checking local root stores. |
 | **RootCertificate** | Currently unsupported. |

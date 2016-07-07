@@ -92,7 +92,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 [How to Deploy the App-V Client](how-to-deploy-the-app-v-client-51gb18030.md)
 
-[How to Deploy the App-V 4.6.x and the App-V 5.1 Client on the Same Computer](how-to-deploy-the-app-v-46x-and-the-app-v--51-client-on-the-same-computer.md)
+[How to Deploy the App-V 4.6 and the App-V 5.1 Client on the Same Computer](how-to-deploy-the-app-v-46-and-the-app-v--51-client-on-the-same-computer.md)
 
 [How to Install the App-V 5.1 Client for Shared Content Store Mode](how-to-install-the-app-v-51-client-for-shared-content-store-mode.md)
 
