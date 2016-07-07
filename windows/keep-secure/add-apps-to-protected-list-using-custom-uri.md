@@ -1,6 +1,6 @@
 ---
-title: Add multiple apps to your enterprise data protection (EDP) Protected Apps list (Windows 10)
-description: Add multiple apps to your enterprise data protection (EDP) Protected Apps list at the same time, by using the Microsoft Intune Custom URI functionality and the AppLocker.
+title: Add apps to your enterprise data protection (EDP) policy by using the Microsoft Intune custom URI functionality (Windows 10)
+description: Add multiple apps to your enterprise data protection (EDP) allowed app list at the same time, by using the Microsoft Intune Custom URI functionality and AppLocker.
 ms.assetid: b50db35d-a2a9-4b78-a95d-a1b066e66880
 keywords: EDP, Enterprise Data Protection, protected apps, protected app list
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.sitesec: library
 author: eross-msft
 ---
 
-# Add multiple apps to your enterprise data protection (EDP) Protected Apps list
+# Add apps to your enterprise data protection (EDP) policy by using the Microsoft Intune custom URI functionality
 **Applies to:**
 
 -   Windows 10 Insider Preview
@@ -18,7 +18,7 @@ author: eross-msft
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-Add multiple apps to your enterprise data protection (EDP) **Protected Apps** list at the same time, by using the Microsoft Intune Custom URI functionality and AppLocker. For more info about how to create a custom URI using Intune, see [Windows 10 custom policy settings in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkID=691330).
+Add multiple apps to your enterprise data protection (EDP) allowed app list at the same time, by using the Microsoft Intune Custom URI functionality and AppLocker. For more info about how to create a custom URI using Intune, see [Windows 10 custom policy settings in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkID=691330).
 
 **Important**  
 Results can be unpredictable if you configure your policy using both the UI and the Custom URI method together. We recommend using a single method for each policy.
