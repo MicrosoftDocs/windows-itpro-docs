@@ -7,7 +7,9 @@ ms.sitesec: library
 ---
 
 # Change history for Microsoft Edge
-This topic lists new and updated topics in the Microsoft Edge documentation for both Windows 10 and Windows 10 Mobile. For a detailed feature list of what's in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases, see the [Microsoft Edge changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/).
+This topic lists new and updated topics in the Microsoft Edge documentation for both Windows 10 and Windows 10 Mobile.
+
+For a detailed feature list of what's in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases, see the [Microsoft Edge changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/).
 
 
 ## June 2016
