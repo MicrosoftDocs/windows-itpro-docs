@@ -141,7 +141,8 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 - Added the following Group Policies:
 
-    -  Turn off unsolicited network traffic on the Offline Maps settings page
+    - Turn off unsolicited network traffic on the Offline Maps settings page
+    - Turn off all Windows spotlight features
 
 ## <a href="" id="bkmk-othersettings"></a>Info management settings
 
@@ -1067,6 +1068,12 @@ To remove Windows Media Player:
 ### <a href="" id="bkmk-spotlight"></a>21. Windows spotlight
 
 Windows spotlight provides different background images and text on the lock screen. You can control it by using the user interface or through Group Policy.
+
+If you're running Windows 10, version 1607 or later, you only need to enable the following Group Policy:
+
+- **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
+
+If you not running Windows 10, version 1607 or later, you can use the other options in this section.
 
 -   Configure the following in **Settings**:
 
