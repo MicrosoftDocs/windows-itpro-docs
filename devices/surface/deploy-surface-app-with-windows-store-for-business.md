@@ -81,6 +81,8 @@ Figure 5 shows the required frameworks for the Surface app.
 
 *Figure 5. Required frameworks for the Surface app*
 
+>**Note:**&nbsp;&nbsp;The version numbers of the Surface app and required frameworks will change as the apps are updated. Check for the latest version of Surface app and each framework in Windows Store for Business. Always use the Surface app and recommended framework versions as provided by Windows Store for Business. Using outdated frameworks or the incorrect versions may result in errors or application crashes.
+
 To download the required frameworks for the Surface app, follow these steps:
 1.	Click the **Download** button under **Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe**. This downloads the Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe.Appx file to your specified folder.
 2.	Click the **Download** button under **Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe**. This downloads the Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe.Appx file to your specified folder.
