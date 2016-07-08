@@ -17,11 +17,11 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 ### Easier certificate management
 
 
-For Windows 10-based devices, you can use your MDM server to directly deploy client authentication certificates using Personal Information Exchange (PFX), in addition to enrolling using Simple Certificate Enrollment Protocol (SCEP), including certificates to enable Windows Hello for Business in your enterprise. You'll be able to use MDM to enroll, renew, and delete certificates. As in Windows Phone 8.1, you can use the [Certificates app](http://go.microsoft.com/fwlink/p/?LinkId=615824) to review the details of certificates on your device. [Learn how to install digital certificates on Windows 10 Mobile.](https://tnstage.redmond.corp.microsoft.com/en-us/itpro/windows/keep-secure/installing-digital-certificates-on-windows-10-mobile)
+For Windows 10-based devices, you can use your MDM server to directly deploy client authentication certificates using Personal Information Exchange (PFX), in addition to enrolling using Simple Certificate Enrollment Protocol (SCEP), including certificates to enable Windows Hello for Business in your enterprise. You'll be able to use MDM to enroll, renew, and delete certificates. As in Windows Phone 8.1, you can use the [Certificates app](http://go.microsoft.com/fwlink/p/?LinkId=615824) to review the details of certificates on your device. [Learn how to install digital certificates on Windows 10 Mobile.](~/keep-secure/installing-digital-certificates-on-windows-10-mobile.md)
 
 ### Microsoft Passport
 
-In Windows 10, Microsoft Passport replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
+In Windows 10, [Microsoft Passport](~/keep-secure/manage-identity-verification-using-microsoft-passport.md) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
 
 Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services. 
 
