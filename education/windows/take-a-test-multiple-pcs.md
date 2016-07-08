@@ -20,10 +20,10 @@ author: jdeckerMS
 Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows 10, Version 1607, creates the right environment for taking a test:
 
 - A Microsoft Edge browser window opens, showing just the test and nothing else.
+- The clipboard is cleared.
 - Students aren’t able to go to other websites.
 - Students can’t open or access other apps.
 - Students can't share, print, or record their screens.
-- Students can’t copy or paste.
 - Students can’t change settings, extend their display, see notifications, get updates, or use autofill features.
 - Cortana is turned off.
 
