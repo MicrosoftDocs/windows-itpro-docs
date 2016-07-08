@@ -1,6 +1,7 @@
 # [Surface](index.md)
 ## [Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
 ## [Customize the OOBE for Surface deployments](customize-the-oobe-for-surface-deployments.md)
+## [Deploy Surface app with Windows Store for Business](deploy-surface-app-with-windows-store-for-business.md)
 ## [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ## [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
 ## [Ethernet adapters and Surface deployment](ethernet-adapters-and-surface-device-deployment.md)
@@ -12,4 +13,7 @@
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)
 ## [Surface Dock Updater](surface-dock-updater.md)
+## [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
+### [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
+### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
 
