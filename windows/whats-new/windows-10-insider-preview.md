@@ -1,5 +1,5 @@
 ---
-title: Windows 10 Insider Preview (Windows 10)
+title: Documentation for Windows 10 Insider Preview (Windows 10)
 description: Preliminary documentation for some Windows 10 features in Insider Preview.
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 ms.prod: w10
@@ -8,7 +8,7 @@ ms.sitesec: library
 author: TrudyHa
 ---
 
-# Windows 10 Insider Preview
+# Documentation for Windows 10 Insider Preview
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
