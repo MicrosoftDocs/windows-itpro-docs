@@ -12,10 +12,9 @@ author: jdeckerMS
 # Take a Test app technical reference (Preview)
 **Applies to:**
 
--   Windows 10 Insider Preview 
+-   Windows 10 
 
 
-> <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
 Take a Test is an app that locks down the PC and displays an online assessment web page.   
 

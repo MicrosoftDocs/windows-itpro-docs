@@ -12,10 +12,9 @@ author: jdeckerMS
 # Use the Set up School PCs app (Preview)
 **Applies to:**
 
--   Windows 10 Insider Preview  
+-   Windows 10   
 
 
-> <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
 Teachers and IT administrators can use the **Set up School PCs** app to quickly set up computers for students. A computer set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 

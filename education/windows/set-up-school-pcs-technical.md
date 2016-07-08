@@ -12,10 +12,9 @@ author: jdeckerMS
 # Technical reference for the Set up School PCs app (Preview)
 **Applies to:**
 
--   Windows 10 Insider Preview 
+-   Windows 10 
 
 
-> <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
 The **Set up School PCs** app helps you set up new Windows 10 PCs that work great in your school by configuring shared PC mode, available in Windows 10, version 1607. **Set up School PCs** also configures school-specific settings and policies, described in this topic.
 
