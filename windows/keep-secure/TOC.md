@@ -701,6 +701,7 @@
 ### [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
 #### [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
 #### [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
+#### [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md)
 #### [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
 ### [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 #### [Isolating Windows Store Apps on Your Network](isolating-apps-on-your-network.md)
