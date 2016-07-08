@@ -139,6 +139,10 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 -   Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech). 
 
+- Added the following Group Policies:
+
+    -  Turn off unsolicited network traffic on the Offline Maps settings page
+
 ## <a href="" id="bkmk-othersettings"></a>Info management settings
 
 
@@ -358,6 +362,10 @@ You can turn off NCSI through Group Policy:
 You can turn off the ability to download and update offline maps.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
+
+    -and-
+
+- In Windows 10, version 1607 and later, apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Maps** > **Turn off unsolicited network traffic on the Offline Maps settings page**
 
 ### <a href="" id="bkmk-onedrive"></a>12. OneDrive
 
