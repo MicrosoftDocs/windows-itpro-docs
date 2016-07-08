@@ -9,7 +9,7 @@ ms.sitesec: library
 author: Scottmca
 ---
 
-#  Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit
+# Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit
 
 #### Applies to
 * Surface Pro 4
@@ -20,7 +20,7 @@ This article walks you through the recommended process for deploying Windows 10 
 
 By following this procedure, you can create an up-to-date reference image and deploy of this image to your Surface devices, a process known as *reimaging*. Reimaging will erase and overwrite the existing environment on your Surface devices. This process allows you to rapidly configure your Surface devices with identical environments that can be configured to precisely fit your organization’s requirements. 
 
-An alternative to the reimaging process is an upgrade process. The upgrade process is non-destructive and instead of erasing the existing environment on your Surface device, it installs Windows 10 while retaining your user data, applications, and settings. You can read about managing and automating the upgrade process of Surface devices to Windows 10 at [Upgrade Surface devices to Windows 10 with the MDT](). 
+An alternative to the reimaging process is an upgrade process. The upgrade process is non-destructive and instead of erasing the existing environment on your Surface device, it installs Windows 10 while retaining your user data, applications, and settings. You can read about managing and automating the upgrade process of Surface devices to Windows 10 at [Upgrade Surface devices to Windows 10 with MDT](). 
 
 The goal of the deployment process presented by this article is automation. By leveraging the many technologies and tools available from Microsoft, you can create a process that requires only a single touch on the devices being deployed. The automation can load the deployment environment; format the device; prepare an updated Windows image with the drivers required for the device; apply that image to the device; configure the Windows environment with licensing, membership in a domain, and user accounts; install applications; apply any Windows Updates that were not included in the reference image; and log out.
 
