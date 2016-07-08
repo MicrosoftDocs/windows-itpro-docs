@@ -21,9 +21,9 @@ Learn about the network connections that Windows components make to Microsoft an
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-Some of the network connections discussed in this article can be managed in Windows 10 Mobile, Windows 10 Mobile Enterprise, and the July release of Windows 10. However, you must use Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511 to manage them all.
+Some of the network connections discussed in this article can be managed in Windows 10 Mobile, Windows 10 Mobile Enterprise, Windows 10, version 1507, and Windows 10, version 1511. However, you must use Windows 10 Enterprise, version 1607 or Windows 10 Education, version 1607 to manage them all.
 
-In Windows 10 Enterprise, version 1511 or Windows 10 Education, version 1511, you can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft services as described in this article to prevent Windows from sending any data to Microsoft. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
+You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft services as described in this article to prevent Windows from sending any data to Microsoft. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
 
 We are always working on improving Windows 10 for our customers. We invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows 10 work better for your organization.
 
@@ -133,56 +133,11 @@ Here's what's covered in this article:
 
     -   [24. Windows Update](#bkmk-wu)
 
-## What's new in Windows 10, version 1511
+## What's new in Windows 10, version 1607
 
+Here's a list of changes that were made to this article for Windows 10, version 1607:
 
-Here's a list of changes that were made to this article for Windows 10, version 1511:
-
--   Added the following new sections:
-
-    -   [Mail synchronization](#bkmk-mailsync)
-
-    -   [Offline maps](#bkmk-offlinemaps)
-
-    -   [Windows spotlight](#bkmk-spotlight)
-
-    -   [Windows Store](#bkmk-windowsstore)
-
--   Added the following Group Policies:
-
-    -   Open a new tab with an empty tab
-
-    -   Configure corporate Home pages
-
-    -   Let Windows apps access location
-
-    -   Let Windows apps access the camera
-
-    -   Let Windows apps access the microphone
-
-    -   Let Windows apps access account information
-
-    -   Let Windows apps access contacts
-
-    -   Let Windows apps access the calendar
-
-    -   Let Windows apps access messaging
-
-    -   Let Windows apps control radios
-
-    -   Let Windows apps access trusted devices
-
-    -   Do not show feedback notifications
-
-    -   Turn off Automatic Download and Update of Map Data
-
-    -   Force a specific default lock screen image
-
--   Added the AllowLinguisticDataCollection MDM policy.
-
--   Added steps in the [Cortana](#bkmk-cortana) section on how to disable outbound traffic using Windows Firewall.
-
--   Changed the Windows Update section to apply system-wide settings, and not just per user.
+-   Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech). 
 
 ## <a href="" id="bkmk-othersettings"></a>Info management settings
 
@@ -190,55 +145,6 @@ Here's a list of changes that were made to this article for Windows 10, version 
 This section lists the components that make network connections to Microsoft services automatically. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
 
 The settings in this section assume you are using Windows 10, version 1511 (currently available in the Current Branch and Current Branch for Business). They will also be included in the next update for the Long Term Servicing Branch.
-
--   [1. Cortana](#bkmk-cortana)
-
--   [2. Date & Time](#bkmk-datetime)
-
--   [3. Device metadata retrieval](#bkmk-devinst)
-
--   [4. Font streaming](#font-streaming)
-
--   [5. Insider Preview builds](#bkmk-previewbuilds)
-
--   [6. Internet Explorer](#bkmk-ie)
-
--   [7. Live Tiles](#live-tiles)
-
--   [8. Mail synchronization](#bkmk-mailsync)
-
--   [9. Microsoft Edge](#bkmk-edge)
-
--   [10. Network Connection Status Indicator](#bkmk-ncsi)
-
--   [11. Offline maps](#bkmk-offlinemaps)
-
--   [12. OneDrive](#bkmk-onedrive)
-
--   [13. Preinstalled apps](#bkmk-preinstalledapps)
-
--   [14. Settings &gt; Privacy](#bkmk-settingssection)
-
--   [15. Software Protection Platform](#bkmk-spp)
-
--   [16. Sync your settings](#bkmk-syncsettings)
-
--   [17. Teredo](#bkmk-teredo)
-
--   [18. Wi-Fi Sense](#bkmk-wifisense)
-
--   [19. Windows Defender](#bkmk-defender)
-
--   [20. Windows Media Player](#bkmk-wmp)
-
--   [21. Windows spotlight](#bkmk-spotlight)
-
--   [22. Windows Store](#bkmk-windowsstore)
-
--   [23. Windows Update Delivery Optimization](#bkmk-updates)
-
--   [24. Windows Update](#bkmk-wu)
-
 
 See the following table for a summary of the management settings. For more info, see its corresponding section.
 
@@ -785,8 +691,6 @@ In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better
 
 > **Note:**  For more info on how to disable Cortana in your enterprise, see [Cortana](#bkmk-cortana) in this article.
 
- 
-
 To turn off the functionality:
 
 -   Click the **Stop getting to know me** button, and then click **Turn off**.
@@ -801,7 +705,19 @@ To turn off the functionality:
 
    -and-
 
-    Create a REG\_DWORD registry setting called **HarvestContacts** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore**, with a value of 0 (zero).
+-  Create a REG\_DWORD registry setting called **HarvestContacts** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore**, with a value of 0 (zero).
+
+
+If you're running at least Windows 10, version 1607, you can turn off updates to the speech recognition and speech synthesis models:
+
+Apply the Speech/AllowSpeechModelUpdate MDM policy from the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962(v=vs.85).aspx#Speech_AllowSpeechModelUpdate), where:
+
+-   **0** (default). Not allowed.
+-   **1**. Allowed.
+
+   -or-
+
+- Create a REG\_DWORD registry setting called **AllowSpeechModelUpdate** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\Current\\Device\\Speech**, with a value of 0 (zero).
 
 ### <a href="" id="bkmk-priv-accounts"></a>14.6 Account info
 
