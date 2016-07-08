@@ -17,7 +17,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Imaging and Configuration Designer (ICD)
 
-In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
+In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
@@ -37,10 +37,8 @@ When Windows 10 first shipped, it included Microsoft Passport and Windows Hello,
 
 Enterprise administrators can add and remove pinned apps from the taskbar. Users can pin apps, unpin apps, and change the order of pinned apps on the taskbar after the enterprise configuration is applied.
 
-### Changes to CPU utilization
+### Mobile device management and configuration service providers (CSPs)
 
-Total CPU utlization, displayed in Task Manager on the **Processes** and **Performance** tabs, includes VM utilization. 
-
-
+Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilities for managing devices. To learn more about the specific changes in MDM policies for Windows 10, version 1607, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607).
 
 

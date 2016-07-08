@@ -33,11 +33,11 @@ Windows 10 provides mobile device management (MDM) capabilities for PCs, laptop
 ### MDM support
 
 
-MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Windows Store, VPN configuration, and more. To learn more about the changes in MDM policies for Windows 10, version 1607, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607).
+MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Windows Store, VPN configuration, and more. 
 
 MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](http://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
 
-Corporate-owned devices can be enrolled automatically for enterprises using Azure AD.
+Corporate-owned devices can be enrolled automatically for enterprises using Azure AD. [Reference for Mobile device management for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=533172)
 
 ### Unenrollment
 
