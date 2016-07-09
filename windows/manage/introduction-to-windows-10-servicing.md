@@ -110,7 +110,7 @@ At the end of each approximately four month period, Microsoft executes a set of 
 
 Although Windows 10 will enable IT administrators to defer installation of new feature upgrades using Windows Update, enterprises may also want additional control over how and when Windows Update installs releases. With this need in mind, Microsoft [announced Windows Update for Business](http://go.microsoft.com/fwlink/p/?LinkId=624798) in May of 2015. Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing releases. This article will be updated with additional information about the role of Windows Update for Business in servicing Windows 10 devices as it becomes available.
 
-## Windows 10 servicing options
+## Windows 10 servicing branches
 
 Historically, because of the length of time between releases of new Windows versions, and the relatively low number of enterprise devices that were upgraded to newer versions of Windows during their deployment lifetimes, most IT administrators defined servicing as installing the updates that Microsoft published every month. Looking forward, because Microsoft will be publishing new feature upgrades on a continual basis, *servicing* will also include (on some portion of an enterprise's devices) installing new feature upgrades as they become available.
 In fact, when planning to deploy Windows 10 on a device, one of the most important questions for IT administrators to ask is, “What should happen to this device when Microsoft publishes a new feature upgrade?” This is because Microsoft designed Windows 10 to provide businesses with multiple servicing options, centered on enabling different rates of feature upgrade adoption. In particular, IT administrators can configure Windows 10 devices to:
@@ -270,19 +270,19 @@ The content that follows will provide IT administrators with the context needed 
 
 >Some figures in this article show multiple feature upgrades of Windows being released by Microsoft over time. Be aware that these figures were created with dates that were chosen for illustrative clarity, not for release roadmap accuracy, and should not be used for planning purposes.
 
-When it is time to release a build as a new feature upgrade for Windows 10, Microsoft performs several processes in sequence. The first process involves creating either one or two servicing branches in a source code management system. These branches (shown in Figure 1) are required to produce feature upgrade installation media and servicing update packages that can be deployed on different Windows 10 editions, running in different configurations.
+When it is time to release a build as a new feature upgrade for Windows 10, Microsoft performs several processes in sequence. The first process involves creating either one or two servicing branches in a source code management system. These branches (shown in Figure 4) are required to produce feature upgrade installation media and servicing update packages that can be deployed on different Windows 10 editions, running in different configurations.
 
-![figure 1](images/w10servicing-f1-branches.png)
+![figure 4](images/w10servicing-f1-branches.png)
 
-Figure 1. Feature upgrades and servicing branches
+Figure 4. Feature upgrades and servicing branches
 
-In all cases, Microsoft creates a servicing branch (referred to in Figure 1 as Servicing Branch \#1) that is used to produce releases for approximately one year (although the lifetime of the branch will ultimately depend on when Microsoft publishes subsequent feature upgrade releases). If Microsoft has selected the feature upgrade to receive long-term servicing-only support, Microsoft also creates a second servicing branch (referred to in Figure 1 as Servicing Branch \#2) that is used to produce servicing update releases for up to 10 years.
+In all cases, Microsoft creates a servicing branch (referred to in Figure 4 as Servicing Branch \#1) that is used to produce releases for approximately one year (although the lifetime of the branch will ultimately depend on when Microsoft publishes subsequent feature upgrade releases). If Microsoft has selected the feature upgrade to receive long-term servicing-only support, Microsoft also creates a second servicing branch (referred to in Figure 4 as Servicing Branch \#2) that is used to produce servicing update releases for up to 10 years.
 
-As shown in Figure 2, when Microsoft publishes a new feature upgrade, Servicing Branch \#1 is used to produce the various forms of media needed by OEMs, businesses, and consumers to install Windows 10 Home, Pro, Education, and Enterprise editions. Microsoft also produces the files needed by Windows Update to distribute and install the feature upgrade, along with *targeting* information that instructs Windows Update to only install the files on devices configured for *immediate* installation of feature upgrades.
+As shown in Figure 5, when Microsoft publishes a new feature upgrade, Servicing Branch \#1 is used to produce the various forms of media needed by OEMs, businesses, and consumers to install Windows 10 Home, Pro, Education, and Enterprise editions. Microsoft also produces the files needed by Windows Update to distribute and install the feature upgrade, along with *targeting* information that instructs Windows Update to only install the files on devices configured for *immediate* installation of feature upgrades.
 
-![figure 2](images/win10servicing-fig2-featureupgrade.png)
+![figure 5](images/win10servicing-fig2-featureupgrade.png)
 
-Figure 2. Producing feature upgrades from servicing branches
+Figure 5. Producing feature upgrades from servicing branches
 
 Approximately four months after publishing the feature upgrade, Microsoft uses Servicing Branch \#1 again to *republish* updated installation media for Windows 10 Pro, Education, and Enterprise editions. The updated media contains the exact same feature upgrade as contained in the original media except Microsoft also includes all the servicing updates that were published since the feature upgrade was first made available. This enables the feature upgrade to be installed on a device more quickly, and in a way that is potentially less obtrusive to users.
 
@@ -290,15 +290,15 @@ Concurrently, Microsoft also changes the way the feature upgrade is published in
 
 **How Microsoft publishes the Windows 10 Enterprise LTSB Edition**
 
-If Microsoft has selected the feature upgrade to receive long-term servicing support, Servicing Branch \#2 is used to publish the media needed to install the Windows 10 Enterprise LTSB edition. The time between releases of feature upgrades with long-term servicing support will vary between one and three years, and is strongly influenced by input from customers regarding the readiness of the release for long-term enterprise deployment. Figure 2 shows the Windows 10 Enterprise LTSB edition being published at the same time as the other Windows 10 editions, which mirrors the way editions were actually published for Windows 10 in July of 2015. It is important to note that this media is never published to Windows Update for deployment. Installations of the Enterprise LTSB edition on devices must be performed another way.
+If Microsoft has selected the feature upgrade to receive long-term servicing support, Servicing Branch \#2 is used to publish the media needed to install the Windows 10 Enterprise LTSB edition. The time between releases of feature upgrades with long-term servicing support will vary between one and three years, and is strongly influenced by input from customers regarding the readiness of the release for long-term enterprise deployment. Figure 5 shows the Windows 10 Enterprise LTSB edition being published at the same time as the other Windows 10 editions, which mirrors the way editions were actually published for Windows 10 in July of 2015. It is important to note that this media is never published to Windows Update for deployment. Installations of the Enterprise LTSB edition on devices must be performed another way.
 
 **How Microsoft releases Windows 10 servicing updates**
 
-As shown in Figure 3, servicing branches are also used by Microsoft to produce servicing updates containing fixes for security vulnerabilities and other important issues. Servicing updates are published in a way that determines the Windows 10 editions on which they can be installed. For example, servicing updates produced from a given servicing branch can only be installed on devices running a Windows 10 edition produced from the same servicing branch. In addition, because Windows 10 Home does not support deferred installation of feature upgrades, servicing updates produced from Servicing Branch \#1 are targeted at devices running Windows 10 Home only until Microsoft publishes feature upgrades for deferred installation.
+As shown in Figure 6, servicing branches are also used by Microsoft to produce servicing updates containing fixes for security vulnerabilities and other important issues. Servicing updates are published in a way that determines the Windows 10 editions on which they can be installed. For example, servicing updates produced from a given servicing branch can only be installed on devices running a Windows 10 edition produced from the same servicing branch. In addition, because Windows 10 Home does not support deferred installation of feature upgrades, servicing updates produced from Servicing Branch \#1 are targeted at devices running Windows 10 Home only until Microsoft publishes feature upgrades for deferred installation.
 
-![figure 3](images/win10servicing-fig3.png)
+![figure 6](images/win10servicing-fig3.png)
 
-Figure 3. Producing servicing updates from servicing branches
+Figure 6. Producing servicing updates from servicing branches
 
 **Release installation alternatives**
 
@@ -321,24 +321,24 @@ Because there is a one-to-one mapping between servicing options and servicing br
 
 Although Microsoft is currently planning to release approximately two to three feature upgrades per year, the actual frequency and timing of releases will vary. Because the servicing lifetimes of feature upgrades typically end when the servicing lifetimes of other, subsequent feature upgrades begin, the lengths of servicing lifetimes will also vary.
 
-![figure 4](images/win10servicing-fig4-upgradereleases.png)
+![figure 7](images/win10servicing-fig4-upgradereleases.png)
 
-Figure 4. Example release cadence across multiple feature upgrades
+Figure 7. Example release cadence across multiple feature upgrades
 
 To show the variability of servicing lifetimes, and show the paths that feature upgrade installations will take when Windows Update and Windows Server Update Services are used for deployments, Figure 4 contains three feature upgrade releases (labeled *X*, *Y*, and *Z*) and their associated servicing branches. The time period between publishing X and Y is four months, and the time period between publishing Y and Z is six months. X and Z have long-term servicing support, and Y has shorter-term servicing support only.
 
-The same underlying figure will be used in subsequent figures to show all three servicing options in detail. It is important to note that Figure 4 is provided for illustration of servicing concepts only and should not be used for actual Windows 10 release planning.
+The same underlying figure will be used in subsequent figures to show all three servicing options in detail. It is important to note that Figure 7 is provided for illustration of servicing concepts only and should not be used for actual Windows 10 release planning.
 
 To simplify the servicing lifetime and feature upgrade behavior explanations that follow, this document refers to branch designations for a specific feature upgrade as the +0 versions, the designations for the feature upgrade after the +0 version as the +1 (or successor) versions, and the designation for the feature upgrade after the +1 version as the +2 (or second successor) versions.
 
 ### <a href="" id="immediate-upgrade-cb"></a>
 
 **Immediate feature upgrade installation with Current Branch (CB) servicing**
-As shown in Figure 5, the Current Branch (CB) designation refers to Servicing Branch \#1 during the period that starts when Microsoft publishes a feature upgrade targeted for devices configured for *immediate* installation and ends when Microsoft publishes the *successor* feature upgrade targeted for devices configured for *immediate* installation.
+As shown in Figure 8, the Current Branch (CB) designation refers to Servicing Branch \#1 during the period that starts when Microsoft publishes a feature upgrade targeted for devices configured for *immediate* installation and ends when Microsoft publishes the *successor* feature upgrade targeted for devices configured for *immediate* installation.
 
-![figure 5](images/win10servicing-fig5.png)
+![figure 8](images/win10servicing-fig5.png)
 
-Figure 5. Immediate installation with Current Branch Servicing
+Figure 8. Immediate installation with Current Branch Servicing
 
 The role of Servicing Branch \#1 during the CB period is to produce feature upgrades and servicing updates for Windows 10 devices configured for *immediate* installation of new feature upgrades. Microsoft refers to devices configured this way as being *serviced from CBs*. The Windows 10 editions that support servicing from CBs are Home, Pro, Education, and Enterprise. The Current Branch designation is intended to reflect the fact that devices serviced using this approach will be kept as current as possible with respect to the latest Windows 10 feature upgrade release.
 Windows 10 Home supports Windows Update for release deployment. Windows 10 editions (Pro, Education, and Enterprise) support Windows Update, Windows Server Update Services, Configuration Manager, and other configuration management systems:
@@ -350,11 +350,11 @@ It is important to note that devices serviced from CBs must install two to three
 ### <a href="" id="deferred-upgrade-cbb"></a>
 
 **Deferred feature upgrade installation with Current Branch for Business (CBB) servicing**
-As shown in Figure 6, the Current Branch for Business (CBB) designation refers to Servicing Branch \#1 during the period that starts when Microsoft republishes a feature upgrade targeted for devices configured for *deferred* installation and ends when Microsoft republishes the *second successor* feature upgrade targeted for devices configured for *deferred* installation.
+As shown in Figure 9, the Current Branch for Business (CBB) designation refers to Servicing Branch \#1 during the period that starts when Microsoft republishes a feature upgrade targeted for devices configured for *deferred* installation and ends when Microsoft republishes the *second successor* feature upgrade targeted for devices configured for *deferred* installation.
 
-![figure 6](images/win10servicing-fig6.png)
+![figure 9](images/win10servicing-fig6.png)
 
-Figure 6. Deferred installation with Current Branch for Business Servicing
+Figure 9. Deferred installation with Current Branch for Business Servicing
 
 The role of Servicing Branch \#1 during the CBB period is to produce feature upgrades and servicing updates for Windows 10 devices configured for *deferred* installation of new feature upgrades. Microsoft refers to devices configured this way as being *serviced from CBBs*. The Windows 10 editions that support servicing from CBBs are Pro, Education, and Enterprise. The Current Branch for Business designation is intended to reflect the fact that many businesses require IT administrators to test feature upgrades prior to deployment, and servicing devices from CBBs is a pragmatic solution for businesses with testing constraints to remain as current as possible.
 Windows 10 (Pro, Education, and Enterprise editions) support release deployment by using Windows Update, Windows Server Update Services, Configuration Manager, and other configuration management systems:
@@ -367,11 +367,11 @@ Microsoft designed Windows 10 servicing lifetime policies so that CBBs will rec
 
 **Install servicing updates only by using Long-Term Servicing Branch (LTSB) servicing**
 
-As shown in Figure 7, the Long-Term Servicing Branch (LTSB) designation refers to Servicing Branch \#2 from beginning to end. LTSBs begin when a feature upgrade with long-term support is published by Microsoft and end after 10 years. It is important to note that only the Windows 10 Enterprise LTSB edition supports long-term servicing, and there are important differences between this edition and other Windows 10 editions regarding upgradability and feature set (described below in the [Considerations when configuring devices for servicing updates only](#servicing-only) section).
+As shown in Figure 10, the Long-Term Servicing Branch (LTSB) designation refers to Servicing Branch \#2 from beginning to end. LTSBs begin when a feature upgrade with long-term support is published by Microsoft and end after 10 years. It is important to note that only the Windows 10 Enterprise LTSB edition supports long-term servicing, and there are important differences between this edition and other Windows 10 editions regarding upgradability and feature set (described below in the [Considerations when configuring devices for servicing updates only](#servicing-only) section).
 
-![figure 7](images/win10servicing-fig7.png)
+![figure 10](images/win10servicing-fig7.png)
 
-Figure 7. Servicing updates only using LTSB Servicing
+Figure 10. Servicing updates only using LTSB Servicing
 
 The role of LTSBs is to produce servicing updates for devices running Windows 10 configured to install servicing updates only. Devices configured this way are referred to as being *serviced from LTSBs*. The Long-Term Servicing Branch designation is intended to reflect the fact that this servicing option is intended for scenarios where changes to software running on devices must be limited to essential updates (such as those for security vulnerabilities and other important issues) for the duration of deployments.
 Windows 10 Enterprise LTSB supports release deployment by using Windows Update, Windows Server Update Services, Configuration Manager, and other configuration management systems:
