@@ -1,7 +1,7 @@
 ---
 title: Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit (Surface)
 description: Walk through the recommended process of how to deploy Windows 10 to your Surface devices with the Microsoft Deployment Toolkit.
-keywords: windows 10 surface, configure, mdt
+keywords: windows 10 surface, automate, customize, mdt
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface
@@ -16,96 +16,96 @@ author: Scottmca
 * Surface Book
 * Surface 3
 
-This article walks you through the recommended process for deploying Windows 10 to Surface devices with Microsoft deployment technologies. The process described in this article yields a complete Windows 10 environment including updated firmware and drivers for your Surface device along with applications like Microsoft Office 365 and the Surface App. When the process is complete, the Surface device will be ready for use by the end user. You can customize this process to include your own applications and configuration to meet the needs of your organization. You can also follow the guidance provided in this article to integrate deployment to Surface devices into an existing deployment strategies.
+This article walks you through the recommended process to deploy Windows 10 to Surface devices with Microsoft deployment technologies. The process described in this article yields a complete Windows 10 environment including updated firmware and drivers for your Surface device along with applications like Microsoft Office 365 and the Surface app. When the process is complete, the Surface device will be ready for use by the end user. You can customize this process to include your own applications and configuration to meet the needs of your organization. You can also follow the guidance provided in this article to integrate deployment to Surface devices into existing deployment strategies.
 
-By following this procedure, you can create an up-to-date reference image and deploy of this image to your Surface devices, a process known as *reimaging*. Reimaging will erase and overwrite the existing environment on your Surface devices. This process allows you to rapidly configure your Surface devices with identical environments that can be configured to precisely fit your organization’s requirements. 
+By following the procedures in this article, you can create an up-to-date reference image and deploy this image to your Surface devices, a process known as *reimaging*. Reimaging will erase and overwrite the existing environment on your Surface devices. This process allows you to rapidly configure your Surface devices with identical environments that can be configured to precisely fit your organization’s requirements. 
 
-An alternative to the reimaging process is an upgrade process. The upgrade process is non-destructive and instead of erasing the existing environment on your Surface device, it installs Windows 10 while retaining your user data, applications, and settings. You can read about managing and automating the upgrade process of Surface devices to Windows 10 at [Upgrade Surface devices to Windows 10 with MDT](). 
+An alternative to the reimaging process is an upgrade process. The upgrade process is non-destructive and instead of erasing the existing environment on your Surface device, it allows you to install Windows 10 while retaining your user data, applications, and settings. You can read about managing and automating the upgrade process of Surface devices to Windows 10 at [Upgrade Surface devices to Windows 10 with MDT](). 
 
-The goal of the deployment process presented by this article is automation. By leveraging the many technologies and tools available from Microsoft, you can create a process that requires only a single touch on the devices being deployed. The automation can load the deployment environment; format the device; prepare an updated Windows image with the drivers required for the device; apply that image to the device; configure the Windows environment with licensing, membership in a domain, and user accounts; install applications; apply any Windows Updates that were not included in the reference image; and log out.
+The goal of the deployment process presented in this article is automation. By leveraging the many technologies and tools available from Microsoft, you can create a process that requires only a single touch on the devices being deployed. The automation can load the deployment environment; format the device; prepare an updated Windows image with the drivers required for the device; apply that image to the device; configure the Windows environment with licensing, membership in a domain, and user accounts; install applications; apply any Windows updates that were not included in the reference image; and log out.
 
-By automating each aspect of the deployment process, you can not only greatly decrease the effort involved, but you create a process that can be easily repeated and where human error becomes less of a factor. Take for example a scenario where you create a reference image for the device manually, but you accidentally install conflicting applications and cause the image to become unstable. In this scenario you have no choice but to begin again the manual process of creating your image. If in the same scenario you had automated the reference image creation process, you could repair the conflict by simply editing a step in the task sequence and re-running the task sequence.
+By automating each aspect of the deployment process, you not only greatly decrease the effort involved, but you create a process that can be easily repeated and where human error becomes less of a factor. Take for example a scenario where you create a reference image for the device manually, but you accidentally install conflicting applications and cause the image to become unstable. In this scenario you have no choice but to begin again the manual process of creating your image. If in this same scenario you had automated the reference image creation process, you could repair the conflict by simply editing a step in the task sequence and then re-running the task sequence.
 
 ## Deployment tools
 
-The deployment process described in this article leverages a number of Microsoft deployment tools and technologies. Some of these tools and technologies are included in Windows client and Windows Server, such as Hyper-V and Windows Deployment Services (WDS), while others are available as free downloads from Microsoft in the Microsoft Download Center.
+The deployment process described in this article leverages a number of Microsoft deployment tools and technologies. Some of these tools and technologies are included in Windows client and Windows Server, such as Hyper-V and Windows Deployment Services (WDS), while others are available as free downloads from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/windows.aspx).
 
 ### Microsoft Deployment Toolkit
 
-The Microsoft Deployment Toolkit (MDT) is the primary component of a Windows deployment. It serves as a unified interface for most of the Microsoft deployment tools and technologies, such as the Windows Assessment and Deployment Kit (Windows ADK), Windows System Image Manager (WSIM), Deployment Image Servicing and Management (DISM), User State Migration Tool (USMT), and many other tools and technologies. Each of these is discussed throughout this article. The unified interface, called the Deployment Workbench, facilitates automation of the deployment process through a series of stored deployment procedures, known as a task sequence. Along with these task sequences and the many scripts and utilities provided by MDT, the resources for a Windows deployment (driver files, application installation files, and image files) are stored in a network share known as the deployment share. 
+The Microsoft Deployment Toolkit (MDT) is the primary component of a Windows deployment. It serves as a unified interface for most of the Microsoft deployment tools and technologies, such as the Windows Assessment and Deployment Kit (Windows ADK), Windows System Image Manager (Windows SIM), Deployment Image Servicing and Management (DISM), User State Migration Tool (USMT), and many other tools and technologies. Each of these is discussed throughout this article. The unified interface, called the *Deployment Workbench*, facilitates automation of the deployment process through a series of stored deployment procedures, known as a *task sequence*. Along with these task sequences and the many scripts and tools provided by MDT, the resources for a Windows deployment (driver files, application installation files, and image files) are stored in a network share known as the *deployment share*. 
 
 Download and find out more about the [Microsoft Deployment Toolkit](https://technet.microsoft.com/en-us/windows/dn475741).
 
 ### Windows Assessment and Deployment Kit
 
-Although the Microsoft Deployment Toolkit (MDT) is the tool you will interact with most during the deployment process, the deployment tools found in the Windows Assessment and Deployment Kit (Windows ADK) are responsible for performing most of the deployment tasks during the deployment process. While the resources for deployment are held within the MDT deployment share, it is the collection of tools included in Windows ADK that access the image files, stage drivers and Windows Updates, run the deployment experience, provide instructions to Windows Setup, and backup and restore user data.
+Although the Microsoft Deployment Toolkit (MDT) is the tool you will interact with most during the deployment process, the deployment tools found in the Windows ADK are responsible for performing most of the deployment tasks during the deployment process. Although the resources for deployment are held within the MDT deployment share, it is the collection of tools included in Windows ADK that access the image files, stage drivers and Windows Updates, run the deployment experience, provide instructions to Windows Setup, and back up and restore user data.
+
 Download and find out more about the [Windows Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#windowsadk).
 
-### Windows 10 Installation Media
+### Windows 10 installation media
 
 Before you can perform a deployment with MDT, you must first supply a set of operating system installation files and an operating system image. These files and image can be found on the physical installation media (DVD) for Windows 10. You can also find these files in the disk image (ISO file) for Windows 10 that can be downloaded from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
->**Note:**&nbsp;&nbsp;The installation media generated by the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page differs from physical media or media downloaded from the VLSC in that it contains an image file in Electronic Software Download (ESD) format rather than in the Windows Imaging (WIM) format. Installation media with an image file in WIM format is required for use with MDT. Installation media from the Get Windows 10 page cannot be used for Windows deployment with MDT.
+>**Note:**&nbsp;&nbsp;The installation media generated from the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page differs from physical media or media downloaded from the VLSC in that it contains an image file in Electronic Software Download (ESD) format rather than in the Windows Imaging (WIM) format. Installation media with an image file in WIM format is required for use with MDT. Installation media from the Get Windows 10 page cannot be used for Windows deployment with MDT.
 
 ### Windows Server
 
-Although MDT can be installed on a Windows client, to take full advantage of Windows Deployment Services’ ability to network boot, a full Windows Server environment is suggested. To provide network boot for UEFI devices like Surface with WDS, you will need Windows Server 2008 R2 or newer.
+Although MDT can be installed on a Windows client, to take full advantage of Windows Deployment Services’ ability to network boot, a full Windows Server environment is suggested. To provide network boot for UEFI devices like Surface with WDS, you will need Windows Server 2008 R2 or later.
 
 >**Note:**&nbsp;&nbsp;To evaluate the deployment process for Surface devices or to test the deployment process described in this article with the upcoming release of Windows Server 2016, you can download evaluation and preview versions from the [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter).
 
-### Windows Deployment services
+### Windows Deployment Services
 
 Windows Deployment Services (WDS) is leveraged to facilitate network boot capabilities provided by the Preboot Execution Environment (PXE) server. The boot media generated by MDT is loaded onto the Surface device simply by pressing Enter at the prompt when the device attempts to boot from the attached network adapter or Surface Dock.
 
-### Hyper-V Virtualization Platform
+### Hyper-V virtualization platform
 
-The process of creating a reference image should always be performed in a virtual environment. When you use a virtual machine as the platform to build your reference image, you eliminate the need for installation of additional drivers. The drivers for a Hyper-V virtual machine are included by default in the factory Windows 10 image. Avoiding installation of additional drivers, especially complex drivers that include application components like control panel applications, ensures that the image created by your reference image process will be as universally compatible as possible.
+The process of creating a reference image should always be performed in a virtual environment. When you use a virtual machine as the platform to build your reference image, you eliminate the need for installation of additional drivers. The drivers for a Hyper-V virtual machine are included by default in the factory Windows 10 image. When you avoid the installation of additional drivers - especially complex drivers that include application components like control panel applications - you ensure that the image created by your reference image process will be as universally compatible as possible.
 
->**Note:**&nbsp;&nbsp;A Generation 1 virtual machine is recommended when preparing a reference image in a Hyper-V virtual environment.
+>**Note:**&nbsp;&nbsp;A Generation 1 virtual machine is recommended for the preparation of a reference image in a Hyper-V virtual environment.
 
-The goal of reference image creation is not to perform customization, since customizations are performed by MDT at the time of deployment, but to increase performance during deployment by reducing the number of actions that need to occur on each deployed device. The biggest action that can slow down an MDT deployment is the installation of Windows Updates. When MDT performs this step during the deployment process, it downloads the updates on each deployed device and installs them. By installing Windows Updates in your reference image, the updates are already installed when the image is deployed    to the device and the MDT update process only needs to install updates that are new since the image was created or are applicable to products other than Windows, for example Microsoft Office updates.
+Because customizations are performed by MDT at the time of deployment, the goal of reference image creation is not to perform customization but to increase performance during deployment by reducing the number of actions that need to occur on each deployed device. The biggest action that can slow down an MDT deployment is the installation of Windows updates. When MDT performs this step during the deployment process, it downloads the updates on each deployed device and installs them. By installing Windows updates in your reference image, the updates are already installed when the image is deployed to the device and the MDT update process only needs to install updates that are new since the image was created or are applicable to products other than Windows (for example, Microsoft Office updates).
 
->**Note:**&nbsp;&nbsp;Hyper-V is available not only on Windows Server, but also on Windows clients, including Professional and Enterprise editions of Windows 8, Windows 8.1, and Windows 10. Find out more at [Client Hyper-V on Windows 10](https://msdn.microsoft.com/virtualization/hyperv_on_windows/windows_welcome) and [Client Hyper-V on Windows 8 and Windows 8.1](https://technet.microsoft.com/library/hh857623) in the TechNet Library.  Hyper-V is also available as a stand-alone product, Microsoft Hyper-V Server at no cost. You can download [Microsoft Hyper-V Server 2012 R2](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-2012-r2) or [Microsoft Hyper-V Server 2016 Technical Preview](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-technical-preview) from the TechNet Evaluation Center.
+>**Note:**&nbsp;&nbsp;Hyper-V is available not only on Windows Server, but also on Windows clients, including Professional and Enterprise editions of Windows 8, Windows 8.1, and Windows 10. Find out more at [Client Hyper-V on Windows 10](https://msdn.microsoft.com/virtualization/hyperv_on_windows/windows_welcome) and [Client Hyper-V on Windows 8 and Windows 8.1](https://technet.microsoft.com/library/hh857623) in the TechNet Library.  Hyper-V is also available as a standalone product, Microsoft Hyper-V Server, at no cost. You can download [Microsoft Hyper-V Server 2012 R2](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-2012-r2) or [Microsoft Hyper-V Server 2016 Technical Preview](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-technical-preview) from the TechNet Evaluation Center.
 
-Surface Firmware and Drivers
+### Surface firmware and drivers
 
-In order for your deployed Windows environment to function correctly on your Surface devices, you will need to install the drivers used by Windows to communicate with the components of your device. These drivers are available for download in the Microsoft Download Center for each Surface device.
+For your deployed Windows environment to function correctly on your Surface devices, you will need to install the drivers used by Windows to communicate with the components of your device. These drivers are available for download in the Microsoft Download Center for each Surface device. You can find the correct Microsoft Download Center page for your device at [Download Surface Firmware and Drivers](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
-When you navigate to the specific Microsoft Download Center page for your device, you will notice that there are two files available for download. One file is a Windows Installer (.msi) file. This file is used to update drivers on devices already running Windows or with device management solutions. The other file is an archive (.zip) file. This file contains the individual driver files that are used during deployment, or for manual installation with Device Manager. The file that you will need to download is the .zip archive file. You can read more about the difference between the firmware and driver pack file types at [Manage Surface driver and firmware updates](https://technet.microsoft.com/en-us/itpro/surface/manage-surface-pro-3-firmware-updates).
+When you browse to the specific Microsoft Download Center page for your device, you will notice that there are two files available for download. One file is a Windows Installer (.msi) file. This file is used to update drivers on devices that are already running Windows or that have device management solutions. The other file is an archive (.zip) file. This file contains the individual driver files that are used during deployment, or for manual installation with Device Manager. The file that you will need to download is the .zip archive file. You can read more about the difference between the firmware and driver pack file types at [Manage Surface driver and firmware updates](https://technet.microsoft.com/en-us/itpro/surface/manage-surface-pro-3-firmware-updates).
 
-Find the correct Microsoft Download Center page for your device at [Download Surface Firmware and Drivers](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
 In addition to the driver files that help Windows communicate with the hardware components of the Surface device, the .zip file you download will also contain firmware updates. These firmware updates will update the instructions used by the device hardware to communicate between components and Windows. The firmware of Surface device components is updated by installation of specific driver files and thus is installed along with the other drivers during deployment. The firmware of an out-of-date Surface device is thus updated when the device reboots during and after the Windows deployment process.
 
->**Note:**&nbsp;&nbsp;Beginning in Windows 10, the drivers for Surface devices are included in the Windows Preinstallation Environment (WinPE). In earlier versions of Windows, specific drivers, like network drivers, had to be imported and configured in MDT for use in WinPE to successfully deploy to Surface devices.
+>**Note:**&nbsp;&nbsp;Beginning in Windows 10, the drivers for Surface devices are included in the Windows Preinstallation Environment (WinPE). In earlier versions of Windows, specific drivers (like network drivers) had to be imported and configured in MDT for use in WinPE to successfully deploy to Surface devices.
 
 ### Application installation files
 
-In addition to the drivers that are used by Windows to communicate with the Surface device’s hardware and components, you will also need to provide the installation files for any applications that you wish to install on your deployed Surface devices. In order to automate the deployment of an application, you will also need to determine the command line instructions for that application to perform a silent installation. In this article, the Surface App and Microsoft Office 365 will be installed as examples of application installation. The application installation process can be used with any application with installation files that can be launched from command line.
+In addition to the drivers that are used by Windows to communicate with the Surface device’s hardware and components, you will also need to provide the installation files for any applications that you want to install on your deployed Surface devices. To automate the deployment of an application, you will also need to determine the command-line instructions for that application to perform a silent installation. In this article, the Surface app and Microsoft Office 365 will be installed as examples of application installation. The application installation process can be used with any application with installation files that can be launched from command line.
 
->**Note:**&nbsp;&nbsp;If the application files for your application are stored on your organization’s network and will be accessible from your Surface devices during the deployment process, you can deploy that application directly from that network location. To use installation files from a network location, use the **Install Application Without Source Files or Elsewhere on the Network** option in the MDT New Application Wizard covered in the [Import applications](#import-applications) section later in this article.
+>**Note:**&nbsp;&nbsp;If the application files for your application are stored on your organization’s network and will be accessible from your Surface devices during the deployment process, you can deploy that application directly from that network location. To use installation files from a network location, use the **Install Application Without Source Files or Elsewhere on the Network** option in the MDT New Application Wizard, which is described in the [Import applications](#import-applications) section later in this article.
 
 ### Microsoft Surface Deployment Accelerator
 
-If you are looking to deploy only to Surface devices, or you are looking for an accelerated way to perform deployment to Surface devices, you can use the Microsoft Surface Deployment Accelerator to generate an MDT deployment share complete with Surface device drivers, Surface apps, and pre-configured task sequences for creating a reference image and performing deployment to Surface devices. Microsoft Surface Deployment Accelerator can automatically import boot images into WDS and prepare WDS for network boot (PXE). Download the Microsoft Surface Deployment Accelerator from the [Surface Tools for IT](https://www.microsoft.com/en-us/download/details.aspx?id=46703) page in the Microsoft Download Center.
+If you want to deploy only to Surface devices or you want an accelerated method to perform deployment to Surface devices, you can use the Microsoft Surface Deployment Accelerator to generate an MDT deployment share complete with Surface device drivers, Surface apps, and pre-configured task sequences to create a reference image and perform deployment to Surface devices. Microsoft Surface Deployment Accelerator can automatically import boot images into WDS and prepare WDS for network boot (PXE). Download the Microsoft Surface Deployment Accelerator from the [Surface Tools for IT](https://www.microsoft.com/en-us/download/details.aspx?id=46703) page in the Microsoft Download Center.
 
 ### Install the deployment tools
 
 Before you can configure the deployment environment with Windows images, drivers, and applications, you must first install the deployment tools that will be used throughout the deployment process. The three main tools to be installed are WDS, Windows ADK, and MDT. WDS provides the capacity for network boot, Windows ADK provides several deployment tools that perform specific deployment tasks, and MDT provides automation and a central interface from which to manage and control the deployment process.
 
-To boot from the network with either your reference virtual machines or your Surface devices, your deployment environment must include a Windows Server environment. The Windows Server environment is required in order to install WDS and the WDS PXE server. Without PXE support, you will be required to create physical boot media, such as a USB stick to perform your deployment, MDT and Windows ADK will still be required, but Windows Server is not required. Both MDT and Windows ADK can be installed on a Windows client and perform a Windows deployment.
+To boot from the network with either your reference virtual machines or your Surface devices, your deployment environment must include a Windows Server environment. The Windows Server environment is required to install WDS and the WDS PXE server. Without PXE support, you will be required to create physical boot media, such as a USB stick to perform your deployment, MDT and Windows ADK will still be required, but Windows Server is not required. Both MDT and Windows ADK can be installed on a Windows client and perform a Windows deployment.
 
->**Note:**&nbsp;&nbsp;To download deployment tools directly to Windows Server, you must disable [Internet Explorer Enhanced Security Configuration](https://technet.microsoft.com/library/dd883248). On Windows Server 2012 R2, this can be performed directly from Server Manager on the Local Server tab. In the Properties section, IE Enhanced Security Configuration can be found on the right side. You may also need to enable the File Download option for the Internet zone through the Security tab of Internet Options.
+>**Note:**&nbsp;&nbsp;To download deployment tools directly to Windows Server, you must disable [Internet Explorer Enhanced Security Configuration](https://technet.microsoft.com/library/dd883248). On Windows Server 2012 R2, this can be performed directly through the **Server Manager** option on the **Local Server** tab. In the **Properties** section, **IE Enhanced Security Configuration** can be found on the right side. You may also need to enable the **File Download** option for the **Internet** zone through the **Security** tab of **Internet Options**.
 
 #### Install Windows Deployment Services
 
-Windows Deployment Services (WDS) is a Windows Server role. To add the WDS role to a Windows Server 2012 R2 environment, use the Add Roles and Features Wizard, as shown in Figure 1. Launch the Add Roles and Features Wizard from the Manage button of Server Manager. Install both the Deployment Server and Transport Server role services
+Windows Deployment Services (WDS) is a Windows Server role. To add the WDS role to a Windows Server 2012 R2 environment, use the Add Roles and Features Wizard, as shown in Figure 1. Start the Add Roles and Features Wizard from the **Manage** button of **Server Manager**. Install both the Deployment Server and Transport Server role services
 
 ![]()
 
 *Figure 1. Install the Windows Deployment Services server role*
 
-After the WDS role is installed, WDS will need to be configured. You can begin the configuration process from the WDS node of Server Manager by right clicking your server’s name and clicking Windows Deployment Services Management Console. In the Windows Deployment Services window, expand the Servers node to find your server, then right-click and click Configure in the menu to launch the Windows Deployment Services Configuration Wizard, as shown in Figure 2.
+After the WDS role is installed, you need to configure WDS. You can begin the configuration process from the WDS node of Server Manager by right-clicking your server’s name and then clicking **Windows Deployment Services Management Console**. In the **Windows Deployment Services** window, expand the **Servers** node to find your server, right-click your server, and then click **Configure** in the menu to start the Windows Deployment Services Configuration Wizard, as shown in Figure 2.
 
 ![]()
 
@@ -113,46 +113,47 @@ After the WDS role is installed, WDS will need to be configured. You can begin t
 
 >**Note:**&nbsp;&nbsp;Before you configure WDS make sure you have a local NTFS volume that is not your system drive (C:) available for use with WDS. This volume is used to store WDS boot images, deployment images, and configuration.
 
-Using the Windows Deployment Services Configuration Wizard, configure WDS to fit the needs of your organization. Detailed instructions for the installation and configuration of WDS can be found at [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426). On the page PXE Server Initial Settings, be sure to configure WDS so that it will respond to your Surface devices when they attempt to boot from the network. If you have already installed WDS or need to change your PXE server response settings, you can do so on the PXE Response tab of the Properties of your server in the Windows Deployment Services Management Console.
+Using the Windows Deployment Services Configuration Wizard, configure WDS to fit the needs of your organization. Detailed instructions for the installation and configuration of WDS can be found at [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426). On the **PXE Server Initial Settings** page, be sure to configure WDS so that it will respond to your Surface devices when they attempt to boot from the network. If you have already installed WDS or need to change your PXE server response settings, you can do so on the **PXE Response** tab of the **Properties** of your server in the Windows Deployment Services Management Console.
 
->**Note:**&nbsp;&nbsp;You will add boot images to WDS when you update your boot images in MDT. You do not need to add boot images or Windows images to WDS when configuring the role.
+>**Note:**&nbsp;&nbsp;You will add boot images to WDS when you update your boot images in MDT. You do not need to add boot images or Windows images to WDS when you configure the role.
 
 #### Install Windows Assessment and Deployment Kit
 
-To install Windows ADK, run adksetup.exe downloaded from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#adkwin10). Windows ADK must be installed before MDT. You should always download and use the most recent version of Windows ADK. A new version is usually released corresponding with each new version of Windows.
+To install Windows ADK, run the adksetup.exe file that you downloaded from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#adkwin10). Windows ADK must be installed before MDT. You should always download and use the most recent version of Windows ADK. A new version is usually released corresponding with each new version of Windows.
 
->**Note:**&nbsp;&nbsp;You can also use adksetup.exe to download the Windows ADK installation files locally for use on other devices.
+>**Note:**&nbsp;&nbsp;You can also use the adksetup.exe file to download the Windows ADK installation files locally for use on other devices.
 
-When you reach the Select the features you want to install page, you only need to select Deployment Tools and Windows Preinstallation Environment (Windows PE) to deploy Windows 10 using MDT, as shown in Figure 3. 
+When you get to the **Select the features you want to install** page, you only need to select the **Deployment Tools** and **Windows Preinstallation Environment (Windows PE)** check boxes to deploy Windows 10 using MDT, as shown in Figure 3. 
 
 ![]()
 
-*Figure 3. Only Deployment Tools and Windows PE are required for deployment with MDT*
+*Figure 3. Only Deployment Tools and Windows PE options are required for deployment with MDT*
 
 #### Install Microsoft Deployment Toolkit
 
-Once the Windows ADK installation completes successfully, MDT can be installed. When you download MDT, ensure that you download the version that matches the architecture of your deployment server environment. For Windows Server the architecture is 64 bit. Download the MDT installation file ending in x64. When MDT is installed you can use the default options during the installation wizard, as shown in Figure 4.
+After the Windows ADK installation completes successfully, you can install MDT. When you download MDT, ensure that you download the version that matches the architecture of your deployment server environment. For Windows Server the architecture is 64-bit. Download the MDT installation file that ends in **x64**. When MDT is installed you can use the default options during the installation wizard, as shown in Figure 4.
 
 ![]()
 
 *Figure 4. Install the Microsoft Deployment Toolkit with default options*
 
-Before you can open the MDT Deployment Workbench, you must enable execution of scripts in PowerShell. If you do not, you may see the error Initialization Error PowerShell is required to use the Deployment Workbench.  Please install PowerShell then relaunch Deployment Workbench.
-To enable execution of scripts, run the following cmdlet in PowerShell as an Administrator:
+Before you can open the MDT Deployment Workbench, you must enable execution of scripts in PowerShell. If you do not do this, the following error message may be displayed: **Initialization Error PowerShell is required to use the Deployment Workbench.  Please install PowerShell then relaunch Deployment Workbench.**
+
+To enable the execution of scripts, run the following cmdlet in PowerShell as an Administrator:
 
    `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
 ## Create a reference image
 
-Now that the required tools have been installed, you can begin the first step of customizing your deployment environment to your needs, creating a reference image. Since the reference image should be created in a virtual machine where there is no need for drivers to be installed, and since the reference image will not include applications, the MDT deployment environment can be used almost entirely with default settings.
+Now that you have installed the required tools, you can begin the first step of customizing your deployment environment to your needs – create a reference image. Because the reference image should be created in a virtual machine where there is no need for drivers to be installed, and because the reference image will not include applications, you can use the MDT deployment environment almost entirely with default settings.
 
 ### Create a deployment share
 
-Now that you have the tools installed, the next step is to configure MDT for creation of a reference image. Before you can perform the process of creating a reference image, MDT needs to be set up with a repository for scripts, images, and other deployment resources. This repository is known as the deployment share. Once the deployment share is created, you must supply MDT with a complete set of Windows 10 installation files, the last set of tools required before MDT can perform reference image creation.
+Now that you have the tools installed, the next step is to configure MDT for the creation of a reference image. Before you can perform the process of creating a reference image, MDT needs to be set up with a repository for scripts, images, and other deployment resources. This repository is known as the deployment share. After the deployment share is created, you must supply MDT with a complete set of Windows 10 installation files, the last set of tools required before MDT can perform reference image creation.
 
 To create the deployment share, follow these steps:
 
-1. Launch the Deployment Workbench from your Start Menu or Start Screen, as shown in Figure 5.
+1. Open the Deployment Workbench from your Start menu or Start screen, as shown in Figure 5.
 
    ![]()
 
