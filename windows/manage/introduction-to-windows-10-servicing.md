@@ -10,27 +10,46 @@ ms.pagetype: security, servicing
 author: greg-lindsay
 ---
 
-# Windows 10 servicing options for updates and upgrades
+# Windows 10 servicing options
 
 **Applies to**
 -   Windows 10
 -   Windows 10 IoT Core (IoT Core)
 
-This article describes the new servicing options available in Windows 10 and IoT Core and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.
+This article provides detailed information about new servicing options available in Windows 10 and IoT Core. It also provides information on how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles. Before reading this article, you should understand the new Windows 10 servicing model. For an overview of this servicing model, see: [Windows 10 servicing overview](../plan/windows-10-servicing-options.md). 
 
 For Windows 10 current version numbers by servicing option see: [Windows 10 release information](https://technet.microsoft.com/en-us/windows/mt679505.aspx).
-
-**Note**  
-Several of the figures in this article show multiple feature upgrades of Windows being released by Microsoft over time. Be aware that these figures were created with dates that were chosen for illustrative clarity, not for release roadmap accuracy, and should not be used for planning purposes.
  
-## Introduction
+## Key terminology
 
-In enterprise IT environments, the desire to provide users with the latest technologies needs to be balanced with the need for manageability and cost control. In the past, many enterprises managed their Windows deployments homogeneously and performed large-scale upgrades to new releases of Windows (often in parallel with large-scale hardware upgrades) about every three to six years. Today, the rapid evolution of Windows as a platform for device-like experiences is causing businesses to rethink their upgrade strategies. Especially with the release of Windows 10, there are good business reasons to keep a significant portion of your enterprise's devices *current* with the latest release of Windows. For example, during the development of Windows 10, Microsoft:
--   Streamlined the Windows product engineering and release cycle so that Microsoft can deliver the features, experiences, and functionality customers want, more quickly than ever.
--   Created new ways to deliver and install feature upgrades and servicing updates that simplify deployments and on-going management, broaden the base of employees who can be kept current with the latest Windows capabilities and experiences, and lower total cost of ownership.
--   Implemented new servicing options – referred to as Current Branch (CB), Current Branch for Business (CBB), and Long-Term Servicing Branch (LTSB) – that provide pragmatic solutions to keep more devices more current in enterprise environments than was previously possible.
+The following terms are used When discussing the new Windows 10 servicing model:
 
-The remainder of this article provides additional information about each of these areas. This article also provides an overview of the planning implications of the three Windows 10 servicing options (summarized in Table 1) so that IT administrators can be well-grounded conceptually before they start a Windows 10 deployment project.
+<table border="1" cellpadding="2">
+    <tr>
+        <td BGCOLOR="#a0e4fa">**Term**</td>
+        <td BGCOLOR="#a0e4fa">**Description**</td>
+    </tr>
+    <tr>
+        <td>Upgrade</td>
+        <td>A new Windows 10 release that contains additional features and capabilities, released two to three times per year.</td>
+    </tr>
+    <tr>
+        <td>Update</td>
+        <td>Packages of security fixes, reliability fixes, and other bug fixes that are released periodically, typically once a month on Update Tuesday (sometimes referred to as Patch Tuesday). With Windows 10, these are cumulative in nature.</td>
+    </tr>
+    <tr>
+        <td>Branch</td>
+        <td>The windows servicing branch is one of four choices: Windows Insider, Current Branch, Current Branch for Business, or Long-Term Servicing Branch. Branches are determined by the frequency with which the computer is configured to receive feature updates.</td>
+    </tr>
+    <tr>
+        <td>Ring</td>
+        <td>A ring is a groups of PCs that are all on the same branch and have the same update settings. Rings can be used internally by organizations to better control the upgrade rollout process.</td>
+    </tr>
+</table>
+
+## Windows 10 servicing
+
+The following table provides an overview of the planning implications of the three Windows 10 servicing options so that IT administrators can be well-grounded conceptually before they start a Windows 10 deployment project.
 
 Table 1. Windows 10 servicing options
 
@@ -100,6 +119,144 @@ In fact, when planning to deploy Windows 10 on a device, one of the most import
 -   Receive only servicing updates for the duration of their Windows 10 deployment in order to reduce the number of non-essential changes made to the device. For more information, see [Install servicing updates only by using Long-Term Servicing Branch (LTSB) servicing](#install-updates-ltsb).
 The breakout of a company’s devices by the categories above is likely to vary significantly by industry and other factors. What is most important is that companies can decide what works best for them and can choose different options for different devices.
 
+## Current Branch versus Current Branch for Business
+
+When the development of a new Windows 10 feature upgrade is complete, it is initially offered to Current Branch computers; those computers configured for Current Branch for Business will receive the feature upgrade (with additional fixes) at a later date, generally at least four months later. An additional deferral of at least eight months is available to organizations that use tools to control the update process. During this time, monthly security updates will continue to be made available to machines not yet upgraded.
+
+The process to configure a PC for Current Branch for Business is simple. The **Defer upgrades** setting needs to be configured, either manually (through the Settings app), by using Group Policy, or by using mobile device management (MDM).
+
+![figure 1](images/fig1-deferupgrades.png)
+
+Figure 1. Configure the **Defer upgrades** setting
+
+Most organizations today leverage Windows Server Update Services (WSUS) or System Center Configuration Manager to update their PCs. With Windows 10, this does not need to change; all updates are controlled through approvals or automatic deployment rules configured in those products, so new upgrades will not be deployed until the organization chooses. The **Defer upgrades** setting can function as an additional validation check, so that Current Branch for Business machines that are targeted with a new upgrade prior to the end of the initial four-month deferral period will decline to install it; they can install the upgrade any time within the eight-month window after that initial four-month deferral period.
+
+For computers configured to receive updates from Windows Update directly, the **Defer upgrades** setting directly controls when the PC will be upgraded. Computers that are not configured to defer upgrades will be upgraded at the time of the initial Current Branch release; computers that are configured to defer upgrades will be upgraded four months later.
+
+With Windows 10 it is now possible to manage updates for PCs and tablets that have a higher degree of mobility and are not joined to a domain. For these PCs, you can leverage mobile device management (MDM) services or Windows Update for Business to provide the same type of control provided today with WSUS or Configuration Manager.
+
+For PCs enrolled in a mobile device management (MDM) service, Windows 10 provides new update approval mechanisms that could be leveraged to delay the installation of a new feature upgrade or any other update. Windows Update for Business will eventually provide these and other capabilities to manage upgrades and updates; more details on these capabilities will be provided when they are available later in 2015.
+
+With the release of each Current Branch feature update, new ISO images will be made available. You can use these images to upgrade existing machines or to create new custom images. These feature upgrades will also be published with WSUS to enable simple deployment to devices already running Windows 10.
+
+Unlike previous versions of Windows, the servicing lifetime of Current Branch or Current Branch for Business is finite. You must install new feature upgrades on machines running these branches in order to continue receiving monthly security updates. This requires new ways of thinking about software deployment. It is best to align your deployment schedule with the Current Branch release schedule:
+
+-   Begin your evaluation process with the Windows Insider Program releases.
+-   Perform initial pilot deployments by using the Current Branch.
+-   Expand to broad deployment after the Current Branch for Business is available.
+-   Complete deployments by using that release in advance of the availability of the next Current Branch.
+
+![figure 2](images/fig2-deploymenttimeline.png)
+
+Figure 2. Deployment timeline
+
+Some organizations may require more than 12 months to deploy Windows 10 to all of their existing PCs. To address this, it may be necessary to deploy multiple Windows 10 releases, switching to these new releases during the deployment project. Notice how the timelines can overlap, with the evaluation of one release happening during the pilot and deployment of the previous release:
+
+![figure 3](images/fig3-overlaprelease.png)
+
+Figure 3. Overlapping releases
+
+As a result of these overlapping timelines, organizations can choose which release to deploy. Note though that by continuing for longer with one release, that gives you less time to deploy the subsequent release (to both existing Windows 10 PCs as well as newly-migrated ones), so staying with one release for the full lifetime of that release can be detrimental overall.
+
+## Long-Term Servicing Branch
+
+For specialized devices, Windows 10 Enterprise Long Term Servicing Branch (LTSB) ISO images will be made available. These are expected to be on a variable schedule, less often than CB and CBB releases. Once released, these will be supported with security and reliability fixes for an extended period; no new features will be added over its servicing lifetime. Note that LTSB images will not contain most in-box Universal Windows Apps (for example, Microsoft Edge, Cortana, the Windows Store, the Mail and Calendar apps) because the apps or the services that they use will be frequently updated with new functionality and therefore cannot be supported on PCs running the LTSB OS.
+
+These LTSB images can be used to upgrade existing machines or to create new custom images.
+
+Note that Windows 10 Enterprise LTSB installations fully support the Universal Windows Platform, with the ability to run line-of-business apps created using the Windows SDK, Visual Studio, and related tools capable of creating Universal Windows apps. For apps from other ISVs (including those published in the Windows Store), contact the ISV to confirm if they will provide long-term support for their specific apps.
+
+As mentioned previously, there are few, if any, scenarios where an organization would use the Long-Term Servicing Branch for every PC – or even for a majority of them.
+
+## Windows Insider Program
+
+During the development of a new Windows 10 feature update, preview releases will be made available to Windows Insider Program participants. This enables those participants to try out new features, check application compatibility, and provide feedback during the development process.
+
+To obtain Windows Insider Program builds, the Windows Insider Program participants must opt in through the Settings app, and specify their Microsoft account.
+
+Occasionally (typically as features are made available to those in the Windows Insider Program “slow” ring), new ISO images will be released to enable deployment validation, testing, and image creation.
+
+## Switching between branches
+
+During the life of a particular PC, it may be necessary or desirable to switch between the available branches. Depending on the branch you are using, the exact mechanism for doing this can be different; some will be simple, others more involved.
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">For a PC that uses…</th>
+<th align="left">Changing to…</th>
+<th align="left">You need to:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Windows Insider Program</td>
+<td align="left">Current Branch</td>
+<td align="left">Wait for the final Current Branch release.</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Current Branch for Business</td>
+<td align="left">Not directly possible, because Windows Insider Program machines are automatically upgraded to the Current Branch release at the end of the development cycle.</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Not directly possible (requires wipe-and-load).</td>
+</tr>
+<tr class="even">
+<td align="left">Current Branch</td>
+<td align="left">Insider</td>
+<td align="left">Use the Settings app to enroll the device in the Windows Insider Program.</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Current Branch for Business</td>
+<td align="left">Select the <strong>Defer upgrade</strong> setting, or move the PC to a target group or flight that will not receive the next upgrade until it is business ready. Note that this change will not have any immediate impact; it only prevents the installation of the next Current Branch release.</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Not directly possible (requires wipe-and-load).</td>
+</tr>
+<tr class="odd">
+<td align="left">Current Branch for Business</td>
+<td align="left">Insider</td>
+<td align="left">Use the Settings app to enroll the device in the Windows Insider Program.</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Current Branch</td>
+<td align="left">Disable the <strong>Defer upgrade</strong> setting, or move the PC to a target group or flight that will receive the latest Current Branch release.</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Not directly possible (requires wipe-and-load).</td>
+</tr>
+<tr class="even">
+<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Insider</td>
+<td align="left">Use media to upgrade to the latest Windows Insider Program build.</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Current Branch</td>
+<td align="left">Use media to upgrade to a later Current Branch build. (Note that the Current Branch build must be a later build.)</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Current Branch for Business</td>
+<td align="left">Use media to upgrade to a later Current Branch for Business build (Current Branch build plus fixes). Note that it must be a later build.</td>
+</tr>
+</tbody>
+</table>
+
 ## Plan for Windows 10 deployment
 
 The remainder of this article focuses on the description of the three options outlined above, and their planning implications, in more detail. In practice, IT administrators have to focus on two areas when planning a Windows 10 device deployment:
@@ -110,6 +267,8 @@ Configuration Manager?
 The content that follows will provide IT administrators with the context needed to understand why these areas are pivotal, and the choices available to them.
 
 **How Microsoft releases Windows 10 feature upgrades**
+
+>Some figures in this article show multiple feature upgrades of Windows being released by Microsoft over time. Be aware that these figures were created with dates that were chosen for illustrative clarity, not for release roadmap accuracy, and should not be used for planning purposes.
 
 When it is time to release a build as a new feature upgrade for Windows 10, Microsoft performs several processes in sequence. The first process involves creating either one or two servicing branches in a source code management system. These branches (shown in Figure 1) are required to produce feature upgrade installation media and servicing update packages that can be deployed on different Windows 10 editions, running in different configurations.
 
