@@ -102,55 +102,8 @@ Virtual accounts apply to the Windows operating systems that are designated in t
 
 The following table provides links to additional resources that are related to standalone managed service accounts, group managed service accounts, and virtual accounts.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Content type</th>
-<th>References</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Product evaluation</strong></p></td>
-<td><p>[What's New for Managed Service Accounts](https://technet.microsoft.com/library/hh831451(v=ws.11).aspx)</p>
-<p>[Managed Service Accounts Documentation for Windows 7 and Windows Server 2008 R2](http://technet.microsoft.com/library/ff641731.aspx)</p>
-<p>[Service Accounts Step-by-Step Guide](http://technet.microsoft.com/library/dd548356.aspx)</p>
-<p>[Getting Started with Group Managed Service Accounts](https://technet.microsoft.com/library/jj128431(v=ws.11).aspx)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Deployment</strong></p></td>
-<td><p>[Windows Server 2012: Group Managed Service Accounts - Ask Premier Field Engineering (PFE) Platforms - Site Home - TechNet Blogs](http://blogs.technet.com/b/askpfeplat/archive/2012/12/17/windows-server-2012-group-managed-service-accounts.aspx)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Operations</strong></p></td>
-<td><p>[Managed Service Accounts in Active Directory](http://technet.microsoft.com/library/dd378925.aspx)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Tools and settings</strong></p></td>
-<td><p>[Managed Service Accounts in Active Directory Domain Services](http://technet.microsoft.com/library/dd378925.aspx)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Community resources</strong></p></td>
-<td><p>[Managed Service Accounts: Understanding, Implementing, Best Practices, and Troubleshooting](http://blogs.technet.com/b/askds/archive/2009/09/10/managed-service-accounts-understanding-implementing-best-practices-and-troubleshooting.aspx)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Related technologies</strong></p></td>
-<td><p>[Security Principals Technical Overview](security-principals.md)</p>
-<p>[What's new in Active Directory Domain Services](https://technet.microsoft.com/library/mt163897.aspx)</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
+| Content type  | References  |
+|---------------|-------------|
+| **Product evaluation** | [What's New for Managed Service Accounts](https://technet.microsoft.com/library/hh831451(v=ws.11).aspx)<br>[Getting Started with Group Managed Service Accounts](https://technet.microsoft.com/library/jj128431(v=ws.11).aspx) |
+| **Deployment** | [Windows Server 2012: Group Managed Service Accounts - Ask Premier Field Engineering (PFE) Platforms - Site Home - TechNet Blogs](http://blogs.technet.com/b/askpfeplat/archive/2012/12/17/windows-server-2012-group-managed-service-accounts.aspx) |
+| **Related technologies** | [Security Principals](security-principals.md)<br>[What's new in Active Directory Domain Services](https://technet.microsoft.com/library/mt163897.aspx) |

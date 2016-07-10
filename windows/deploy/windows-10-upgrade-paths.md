@@ -392,7 +392,7 @@ The following table summarizes the free upgrade paths to Windows 10. For a list 
        </tr>
     <tr>
         <td></td>
-        <td>Windows 8/8.1 Pro Professional</td>
+        <td>Windows 8/8.1 Pro</td>
         <td rowspan="2">Windows 10 Pro</td>
     </tr>
     <tr>

@@ -21,17 +21,17 @@ Use this procedure if you use Exchange on-prem.
     - In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
     - Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.<p>
     
-        ![new object box for creating a new user in active directory](images/hybriddeployment-01a.png)
+        ![New object box for creating a new user in active directory.](images/hybriddeployment-01a.png)
 
     - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
 
         >**Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
 
-        ![image showing password dialog box](images/hybriddeployment-02a.png)
+        ![Image showing password dialog box.](images/hybriddeployment-02a.png)
         
     -   Click **Finish** to create the account.
 
-        ![image with account name, logon name, and password options for new user](images/hybriddeployment-03a.png)
+        ![Image with account name, logon name, and password options for new user.](images/hybriddeployment-03a.png)
 
 2.  After you've created the account, run a directory synchronization. When it's complete, go to the users page in your Office 365 admin center and verify that the account created in the previous steps has merged to online.
 
@@ -223,17 +223,17 @@ Use this procedure if you use Exchange online.
     - In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
     - Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.
 
-        ![new object box for creating a new user in active directory](images/hybriddeployment-01a.png)
+        ![New object box for creating a new user in Active Directory.](images/hybriddeployment-01a.png)
 
     - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
     
         >**Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
     
-        ![image showing password dialog box](images/hybriddeployment-02a.png)
+        ![Image showing password dialog box.](images/hybriddeployment-02a.png)
     
     - Click **Finish** to create the account.
 
-        ![image with account name, logon name, and password options for new user](images/hybriddeployment-03a.png)
+        ![Image with account name, logon name, and password options for new user.](images/hybriddeployment-03a.png)
 
 6.  Directory synchronization.
 

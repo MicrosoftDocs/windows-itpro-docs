@@ -15,4 +15,6 @@
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)
 ## [Surface Dock Updater](surface-dock-updater.md)
 ## [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
+### [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
+### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
 
