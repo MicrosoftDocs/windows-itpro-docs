@@ -47,7 +47,7 @@ For more information on planning for, deploying, and managing Surface devices in
 <td><p>Find out how to add and download Surface app with Windows Store for Business, as well as install Surface app with PowerShell and MDT.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Deploy Windows 10 to Surface devices with the Microsoft Deployment Toolkit](deploy-windows-10-to-surface-devices-with-mdt.md)</p></td>
+<td><p>[Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)</p></td>
 <td><p>Walk through the recommended process of how to deploy Windows 10 to your Surface devices with the Microsoft Deployment Toolkit.</p></td>
 </tr>
 <tr class="odd">
@@ -95,6 +95,11 @@ For more information on planning for, deploying, and managing Surface devices in
 <td><p>See how this feature of Surface devices with Surface UEFI allows you to secure and manage firmware settings within your organization.
 </p></td>
 </tr>
+<tr class="even">
+<td><p>[Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)</p></td>
+<td><p>Find out how to perform a Windows 10 upgrade deployment to your Surface devices.</p></td>
+</tr>
+
 </tbody>
 </table>
 
