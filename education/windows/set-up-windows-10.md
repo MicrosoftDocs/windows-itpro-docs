@@ -1,5 +1,5 @@
 ---
-title: Setup options for Windows 10
+title: Provisioning options for Windows 10
 description: Decide which option for setting up Windows 10 is right for you.
 keywords: shared cart, shared PC, school
 ms.prod: w10
@@ -9,17 +9,12 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Setup options for Windows 10
+# Provisioning options for Windows 10
 **Applies to:**
 
 -   Windows 10 
 
-MSA is only intended for consumer services. Schools may want to consider using MDM or group policy to block students from adding MSA as a secondary account
-	
-
-Reminder to schools that they should consider ratings when picking apps from the store. Enterprises and educational institutions should use enterprise versions where possible, such as Skype for Business, OneDrive for Business, etc. 
-
-
+You have two tools to choose from to set up PCs for your classroom: **Set up School PCs** app and the **Provision school devices** option in Windows Imaging and Configuratio Designer (ICD). Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account). The following diagram compares the tools.
 
 ![Which tool to use to set up Windows 10](images/setup-options.png)
 
