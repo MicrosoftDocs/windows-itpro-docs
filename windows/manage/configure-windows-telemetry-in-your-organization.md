@@ -108,13 +108,14 @@ To better help customers through this difficult process, Microsoft developed Upg
 With Windows telemetry enabled, Microsoft collects computer, application, and driver compatibility-related information for analysis. We then identify compatibility issues that can block your upgrade and suggest fixes when they are known to Microsoft. 
 
 Use Upgrade Analytics to get:
-•	A visual workflow that guides you from pilot to production
-•	Detailed computer, driver, and application inventory
-•	Powerful computer level search and drill-downs 
-•	Guidance and insights into application and driver compatibility issues with suggested fixes 
-•	Data driven application rationalization tools
-•	Application usage information, allowing targeted validation; workflow to track validation progress and decisions
-•	Data export to commonly used software deployment tools 
+
+- A visual workflow that guides you from pilot to production
+- Detailed computer, driver, and application inventory
+- Powerful computer level search and drill-downs 
+- Guidance and insights into application and driver compatibility issues with suggested fixes 
+- Data driven application rationalization tools
+- Application usage information, allowing targeted validation; workflow to track validation progress and decisions
+- Data export to commonly used software deployment tools 
 
 The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
@@ -371,7 +372,7 @@ There are a few more settings that you can turn off that may send telemetry info
 
 ## Additional resources
 
-FAQs:
+FAQs
 
 - [Cortana, Search, and privacy](http://windows.microsoft.com/en-us/windows-10/cortana-privacy-faq)
 - [Windows 10 feedback, diagnostics, and privacy](http://windows.microsoft.com/en-us/windows-10/feedback-diagnostics-privacy-faq)
@@ -383,18 +384,18 @@ FAQs:
 - [Wi-Fi Sense](http://windows.microsoft.com/en-us/windows-10/wi-fi-sense-faq)
 - [Windows Update Delivery Optimization](http://windows.microsoft.com/en-us/windows-10/windows-update-delivery-optimization-faq)
 
-Blogs:
+Blogs
 
 - [Privacy and Windows 10](https://blogs.windows.com/windowsexperience/2015/09/28/privacy-and-windows-10)
 
-Privacy Statement:
+Privacy Statement
 
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement)
 
-TechNet:
+TechNet
 
 - [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 
-Web Pages:
+Web Pages
 
 - [Privacy at Microsoft](http://privacy.microsoft.com)
