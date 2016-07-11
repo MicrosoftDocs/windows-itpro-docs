@@ -23,7 +23,7 @@ To frame a discussion about telemetry, it is important to understand Microsoftâ€
 
 -	**Control.** We offer customers control of the telemetry they share with us by providing easy-to-use management tools.
 -	**Transparency.** We are provide information about the telemetry that Windows and Windows Server collects so our customers can make informed decisions.
--	**Security.** We encrypt telemetry in transit from your device and protect that data at our data centers using strong security measures. 
+-	**Security.** We encrypt telemetry in transit from your device and protect that data at our secure data centers.
 -	**Strong legal protections.** We respect customersâ€™ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
 -	**No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows telemetry system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
 -	**Benefits to you.** We collect Windows telemetry to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all of our customers.
@@ -46,7 +46,7 @@ Windows as a Service is a fundamental change in how Microsoft plans, builds, and
 The release cadence of Windows as a Service may be fast, so feedback is critical to its success. We rely on telemetry at each stage of the process to inform our decisions and prioritize our efforts. 
 
 ### What is Windows telemetry?
-Windows telemetry is technical data about the device and is used in the following ways:
+Windows telemetry is vital technical data from Windows devices about the device and how Windows and related software are performing. It's used in the following ways:
 
 - 	Keep Windows up to date
 -	Keep Windows secure, reliable, and performant
