@@ -48,7 +48,7 @@ Desktop devices running Windows 10 that are joined to an Active Directory domai
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft System Center Configuration Manager Technical Preview](http://go.microsoft.com/fwlink/p/?LinkId=613622)</p></td>
+<td align="left"><p>[Microsoft System Center Configuration Manager 2016](http://go.microsoft.com/fwlink/p/?LinkId=613622)</p></td>
 <td align="left"><p>Client deployment, upgrade, and management with new and existing features</p></td>
 </tr>
 <tr class="even">

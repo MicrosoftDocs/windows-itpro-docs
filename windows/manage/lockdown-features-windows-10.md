@@ -39,7 +39,7 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 </tr>
 <tr class="even">
 <td align="left"><p>[Unified Write Filter](http://go.microsoft.com/fwlink/p/?LinkId=626757): protect a device's physical storage media</p></td>
-<td align="left">[Unified Writer Filter](http://go.microsoft.com/fwlink/p/?LinkId=626607)</td>
+<td align="left">[Unified Write Filter](http://go.microsoft.com/fwlink/p/?LinkId=626607)</td>
 <td align="left"><p>The Unified Write Filter is continued in Windows 10, with the exception of HORM which has been deprecated.</p></td>
 </tr>
 <tr class="odd">

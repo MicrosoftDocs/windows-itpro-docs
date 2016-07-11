@@ -25,17 +25,27 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 - [Advanced provisioning to deploy certificates and apps](~/deploy/provision-pcs-with-apps-and-certificates.md)
 - [School provisioning to set up classroom devices for Active Directory](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain)
 
+[Learn more about using provisioning packages in Windows 10.](../deploy/provisioning-packages.md)
+
 ## Security
 
 ### Windows Hello for Business
 
-When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the [Windows Hello](~/keep-secure/manage-identity-verification-using-microsoft-passport.md) name in Windows 10, version 1607. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics. 
+When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics. 
+
+Additional changes for Windows Hello in Windows 10, version 1607:
+
+- Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. 
+- Group Policy for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**. 
+- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.
+
+[Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
  
 ## Management
 
 ### Taskbar configuration
 
-Enterprise administrators can add and remove pinned apps from the taskbar. Users can pin apps, unpin apps, and change the order of pinned apps on the taskbar after the enterprise configuration is applied.
+Enterprise administrators can add and remove pinned apps from the taskbar. Users can pin apps, unpin apps, and change the order of pinned apps on the taskbar after the enterprise configuration is applied. [Learn how to configure the taskbar.](../manage/windows-10-start-layout-options-and-policies.md)
 
 ### Mobile device management and configuration service providers (CSPs)
 

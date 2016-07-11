@@ -29,7 +29,7 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 
 -   Simple to apply.
 
-[Learn more about the benefits and uses of provisioning packages.](../whats-new/new-provisioning-packages.md)
+[Learn more about the benefits and uses of provisioning packages.](provisioning-packages.md)
 
 ## Create the provisioning package
 
