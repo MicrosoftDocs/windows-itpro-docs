@@ -153,7 +153,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 This section lists the components that make network connections to Microsoft services automatically. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
 
-The settings in this section assume you are using Windows 10, version 1511 (currently available in the Current Branch and Current Branch for Business). They will also be included in the next update for the Long Term Servicing Branch.
+The settings in this section assume you are using Windows 10, version 1607. They will also be included in the next update for the Long Term Servicing Branch.
 
 See the following table for a summary of the management settings. For more info, see its corresponding section.
 
@@ -192,6 +192,8 @@ Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Ad
 | Set what information is shared in Search             | Control what information is shared with Bing in Search.                               |
 
 When you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
+
+>**Important:** This is no longer required in Windows 10, version 1607. The **Don't search the web or display web results in Search** Group Policy will stop this. 
 
 1.  Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Windows Firewall with Advanced Security** &gt; **Windows Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
 
