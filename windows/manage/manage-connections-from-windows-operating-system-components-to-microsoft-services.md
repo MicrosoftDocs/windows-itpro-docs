@@ -279,6 +279,9 @@ Find the Internet Explorer Group Policy objects under **Computer Configuration**
 | Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the address bar. <br /> Default: Disabled </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
 | Disable Periodic Check for Internet Explorer software updates| Choose whether Internet Explorer periodically checks for a new version. <br /> Default: Enabled |
 | Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> Default: Disabled|
+| Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
+
+>**Note:** After you disable flip ahead and Suggested Sites, there will be one more request to ieonline.news.microsoft.com.
 
 ### <a href="" id="bkmk-ie-activex"></a>6.2 ActiveX control blocking
 
