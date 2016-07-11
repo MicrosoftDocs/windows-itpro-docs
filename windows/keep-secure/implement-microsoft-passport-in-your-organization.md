@@ -301,8 +301,8 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tr class="header">
 <th align="left">Windows Hello for Business mode</th>
 <th align="left">Azure AD</th>
-<th align="left">Active Directory (AD) on-premises (available with production release of Windows Server 2016 Technical Preview)</th>
-<th align="left">Azure AD/AD hybrid (available with production release of Windows Server 2016 Technical Preview)</th>
+<th align="left">Active Directory (AD) on-premises (available with production release of Windows Server 2016)</th>
+<th align="left">Azure AD/AD hybrid (available with production release of Windows Server 2016)</th>
 </tr>
 </thead>
 <tbody>
@@ -310,14 +310,14 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <td align="left">Key-based authentication</td>
 <td align="left">Azure AD subscription</td>
 <td align="left"><ul>
-<li>Active Directory Federation Service (AD FS) (Windows Server 2016 Technical Preview)</li>
+<li>Active Directory Federation Service (AD FS) (Windows Server 2016)</li>
 <li>A few Windows Server 2016 Technical Preview domain controllers on-site</li>
 <li>Microsoft System Center 2012 R2 Configuration Manager SP2</li>
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
 <li>[Azure AD Connect](http://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
-<li>A few Windows Server 2016 Technical Preview domain controllers on-site</li>
+<li>A few Windows Server 2016 domain controllers on-site</li>
 <li>A management solution, such as Configuration Manager, Group Policy, or MDM</li>
 <li>Active Directory Certificate Services (AD CS) without Network Device Enrollment Service (NDES)</li>
 </ul></td>
@@ -330,8 +330,8 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <li>PKI infrastructure</li>
 </ul></td>
 <td align="left"><ul>
-<li>ADFS (Windows Server 2016 Technical Preview)</li>
-<li>Active Directory Domain Services (AD DS) Windows Server 2016 Technical Preview schema</li>
+<li>ADFS (Windows Server 2016)</li>
+<li>Active Directory Domain Services (AD DS) Windows Server 2016 schema</li>
 <li>PKI infrastructure</li>
 <li>Configuration Manager SP2, Intune, or non-Microsoft MDM solution</li>
 </ul></td>
@@ -339,7 +339,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <li>Azure AD subscription</li>
 <li>[Azure AD Connect](http://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
 <li>AD CS with NDES</li>
-<li>Configuration Manager (current branch) or Configuration Manager 2016 Technical Preview for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Passport for Work</li>
+<li>Configuration Manager 2016 for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Passport for Work</li>
 </ul></td>
 </tr>
 </tbody>
