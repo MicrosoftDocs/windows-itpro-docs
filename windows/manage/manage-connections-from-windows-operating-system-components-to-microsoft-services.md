@@ -143,6 +143,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 - Added instructions on how to turn off flip ahead with an Internet Explorer Group Policy.
 - Added a section on how to turn off automatic root updates to stop updating the certificate trust list in [1. Certificate trust lists](#certificate-trust-lists).
 - Added a new setting in [25. Windows Update](#bkmk-wu). 
+- Changed the NCSI URL in [11. Network Connection Status Indicator](#bkmk-ncsi).
 
 - Added the following Group Policies:
 
@@ -375,7 +376,9 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 ### <a href="" id="bkmk-ncsi"></a>11. Network Connection Status Indicator
 
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftncsi.com to determine if the device can communicate with the Internet. For more info about NCIS, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCIS, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
+
+In versions of Windows 10 prior to Windows 10, version 1607, the URL was http://www.msftncsi.com. 
 
 You can turn off NCSI through Group Policy:
 
