@@ -31,113 +31,117 @@ Here's what's covered in this article:
 
 -   [Info management settings](#bkmk-othersettings)
 
-    -   [1. Cortana](#bkmk-cortana)
+    -   [1. Certificate trust lists](#certificate-trust-lists)
 
-        -   [1.1 Cortana Group Policies](#bkmk-cortana-gp)
+    -   [2. Cortana](#bkmk-cortana)
 
-        -   [1.2 Cortana MDM policies](#bkmk-cortana-mdm)
+        -   [2.1 Cortana Group Policies](#bkmk-cortana-gp)
 
-        -   [1.3 Cortana Windows Provisioning](#bkmk-cortana-prov)
+        -   [2.2 Cortana MDM policies](#bkmk-cortana-mdm)
 
-    -   [2. Date & Time](#bkmk-datetime)
+        -   [2.3 Cortana Windows Provisioning](#bkmk-cortana-prov)
 
-    -   [3. Device metadata retrieval](#bkmk-devinst)
+    -   [3. Date & Time](#bkmk-datetime)
 
-    -   [4. Font streaming](#font-streaming)
+    -   [4. Device metadata retrieval](#bkmk-devinst)
 
-    -   [5. Insider Preview builds](#bkmk-previewbuilds)
+    -   [5. Font streaming](#font-streaming)
 
-    -   [6. Internet Explorer](#bkmk-ie)
+    -   [6. Insider Preview builds](#bkmk-previewbuilds)
 
-        -   [6.1 Internet Explorer Group Policies](#bkmk-ie-gp)
+    -   [7. Internet Explorer](#bkmk-ie)
 
-        -   [6.2 ActiveX control blocking](#bkmk-ie-activex)
+        -   [7.1 Internet Explorer Group Policies](#bkmk-ie-gp)
 
-    -   [7. Live Tiles](#live-tiles)
+        -   [7.2 ActiveX control blocking](#bkmk-ie-activex)
+
+    -   [8. Live Tiles](#live-tiles)
     
-    -   [8. Mail synchronization](#bkmk-mailsync)
+    -   [9. Mail synchronization](#bkmk-mailsync)
 
-    -   [9. Microsoft Edge](#bkmk-edge)
+    -   [10. Microsoft Edge](#bkmk-edge)
 
-        -   [9.1 Microsoft Edge Group Policies](#bkmk-edgegp)
+        -   [10.1 Microsoft Edge Group Policies](#bkmk-edgegp)
 
-        -   [9.2 Microsoft Edge MDM policies](#bkmk-edge-mdm)
+        -   [10.2 Microsoft Edge MDM policies](#bkmk-edge-mdm)
 
-        -   [9.3 Microsoft Edge Windows Provisioning](#bkmk-edge-prov)
+        -   [10.3 Microsoft Edge Windows Provisioning](#bkmk-edge-prov)
 
-    -   [10. Network Connection Status Indicator](#bkmk-ncsi)
+    -   [11. Network Connection Status Indicator](#bkmk-ncsi)
 
-    -   [11. Offline maps](#bkmk-offlinemaps)
+    -   [12. Offline maps](#bkmk-offlinemaps)
 
-    -   [12. OneDrive](#bkmk-onedrive)
+    -   [13. OneDrive](#bkmk-onedrive)
 
-    -   [13. Preinstalled apps](#bkmk-preinstalledapps)
+    -   [14. Preinstalled apps](#bkmk-preinstalledapps)
 
-    -   [14. Settings &gt; Privacy](#bkmk-settingssection)
+    -   [15. Settings &gt; Privacy](#bkmk-settingssection)
 
-        -   [14.1 General](#bkmk-priv-general)
+        -   [15.1 General](#bkmk-priv-general)
 
-        -   [14.2 Location](#bkmk-priv-location)
+        -   [15.2 Location](#bkmk-priv-location)
 
-        -   [14.3 Camera](#bkmk-priv-camera)
+        -   [15.3 Camera](#bkmk-priv-camera)
 
-        -   [14.4 Microphone](#bkmk-priv-microphone)
+        -   [15.4 Microphone](#bkmk-priv-microphone)
 
-        -   [14.5 Speech, inking, & typing](#bkmk-priv-speech)
+        -   [15.5 Speech, inking, & typing](#bkmk-priv-speech)
 
-        -   [14.6 Account info](#bkmk-priv-accounts)
+        -   [15.6 Account info](#bkmk-priv-accounts)
 
-        -   [14.7 Contacts](#bkmk-priv-contacts)
+        -   [15.7 Contacts](#bkmk-priv-contacts)
 
-        -   [14.8 Calendar](#bkmk-priv-calendar)
+        -   [15.8 Calendar](#bkmk-priv-calendar)
 
-        -   [14.9 Call history](#bkmk-priv-callhistory)
+        -   [15.9 Call history](#bkmk-priv-callhistory)
 
-        -   [14.10 Email](#bkmk-priv-email)
+        -   [15.10 Email](#bkmk-priv-email)
 
-        -   [14.11 Messaging](#bkmk-priv-messaging)
+        -   [15.11 Messaging](#bkmk-priv-messaging)
 
-        -   [14.12 Radios](#bkmk-priv-radios)
+        -   [15.12 Radios](#bkmk-priv-radios)
 
-        -   [14.13 Other devices](#bkmk-priv-other-devices)
+        -   [15.13 Other devices](#bkmk-priv-other-devices)
 
-        -   [14.14 Feedback & diagnostics](#bkmk-priv-feedback)
+        -   [15.14 Feedback & diagnostics](#bkmk-priv-feedback)
 
-        -   [14.15 Background apps](#bkmk-priv-background)
+        -   [15.15 Background apps](#bkmk-priv-background)
 
-    -   [15. Software Protection Platform](#bkmk-spp)
+    -   [16. Software Protection Platform](#bkmk-spp)
 
-    -   [16. Sync your settings](#bkmk-syncsettings)
+    -   [17. Sync your settings](#bkmk-syncsettings)
 
-    -   [17. Teredo](#bkmk-teredo)
+    -   [18. Teredo](#bkmk-teredo)
 
-    -   [18. Wi-Fi Sense](#bkmk-wifisense)
+    -   [19. Wi-Fi Sense](#bkmk-wifisense)
 
-    -   [19. Windows Defender](#bkmk-defender)
+    -   [20. Windows Defender](#bkmk-defender)
 
-    -   [20. Windows Media Player](#bkmk-wmp)
+    -   [21. Windows Media Player](#bkmk-wmp)
 
-    -   [21. Windows spotlight](#bkmk-spotlight)
+    -   [22. Windows spotlight](#bkmk-spotlight)
 
-    -   [22. Windows Store](#bkmk-windowsstore)
+    -   [23. Windows Store](#bkmk-windowsstore)
 
-    -   [23. Windows Update Delivery Optimization](#bkmk-updates)
+    -   [24. Windows Update Delivery Optimization](#bkmk-updates)
 
-        -   [23.1 Settings &gt; Update & security](#bkmk-wudo-ui)
+        -   [24.1 Settings &gt; Update & security](#bkmk-wudo-ui)
 
-        -   [23.2 Delivery Optimization Group Policies](#bkmk-wudo-gp)
+        -   [24.2 Delivery Optimization Group Policies](#bkmk-wudo-gp)
 
-        -   [23.3 Delivery Optimization MDM policies](#bkmk-wudo-mdm)
+        -   [24.3 Delivery Optimization MDM policies](#bkmk-wudo-mdm)
 
-        -   [23.4 Delivery Optimization Windows Provisioning](#bkmk-wudo-prov)
+        -   [24.4 Delivery Optimization Windows Provisioning](#bkmk-wudo-prov)
 
-    -   [24. Windows Update](#bkmk-wu)
+    -   [25. Windows Update](#bkmk-wu)
 
 ## What's new in Windows 10, version 1607
 
 Here's a list of changes that were made to this article for Windows 10, version 1607:
 
--   Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech). 
+- Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech).
+- Added instructions on how to turn off flip ahead with an Internet Explorer Group Policy.
+- Added a section on how to turn off automatic root updates to stop updating the certificate trust list in [1. Certificate trust lists](#certificate-trust-lists). 
 
 - Added the following Group Policies:
 
@@ -155,11 +159,27 @@ See the following table for a summary of the management settings. For more info,
 
 ![Management settings table](images/settings-table.png)
 
-### <a href="" id="bkmk-cortana"></a>1. Cortana
+
+### <a href="" id="certificate-trust-lists"></a>1. Certificate trust lists
+
+A certificate trust list is a predefined list of items, such as a list of certificate hashes or a list of file name, that are signed by a trusted entity. Windows automatically downloads an updated certificate trust list when it is available.
+
+To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates.
+
+Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\DisableRootAutoUpdate**, with a value of 1.
+
+After that, do the following in a Group Policy:
+
+1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
+2. Double-click **Certificate Path Validation Settings**.
+3. On the **Network Retrieval** tab, click **Define these policy settings**.
+4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
+
+### <a href="" id="bkmk-cortana"></a>2. Cortana
 
 Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730683).
 
-### <a href="" id="bkmk-cortana-gp"></a>1.1 Cortana Group Policies
+### <a href="" id="bkmk-cortana-gp"></a>2.1 Cortana Group Policies
 
 Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Search**.
 
@@ -199,7 +219,7 @@ When you enable the **Don't search the web or display web results in Search** Gr
 
 > **Note:**  If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
-### <a href="" id="bkmk-cortana-mdm"></a>1.2 Cortana MDM policies
+### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana MDM policies
 
 The following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
@@ -208,11 +228,11 @@ The following Cortana MDM policies are available in the [Policy CSP](http://msdn
 | Experience/AllowCortana                              | Choose whether to let Cortana install and run on the device.                                        |
 | Search/AllowSearchToUseLocation                      | Choose whether Cortana and Search can provide location-aware search results. <br /> Default: Allowed|
 
-### <a href="" id="bkmk-cortana-prov"></a>1.3 Cortana Windows Provisioning
+### <a href="" id="bkmk-cortana-prov"></a>2.3 Cortana Windows Provisioning
 
 To use Windows Imaging and Configuration Designer (ICD) to create a provisioning package with the settings for these policies, go to **Runtime settings** &gt; **Policies** to find **Experience** &gt; **AllowCortana** and **Search** &gt; **AllowSearchToUseLocation**.
 
-### <a href="" id="bkmk-datetime"></a>2. Date & Time
+### <a href="" id="bkmk-datetime"></a>3. Date & Time
 
 You can prevent Windows from setting the time automatically.
 
@@ -222,11 +242,11 @@ You can prevent Windows from setting the time automatically.
 
 -   Create a REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters\\Type** with a value of **NoSync**.
 
-### <a href="" id="bkmk-devinst"></a>3. Device metadata retrieval
+### <a href="" id="bkmk-devinst"></a>4. Device metadata retrieval
 
 To prevent Windows from retrieving device metadata from the Internet, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Device Installation** &gt; **Prevent device metadata retrieval from the Internet**.
 
-### <a href="" id="font-streaming"></a>4. Font streaming
+### <a href="" id="font-streaming"></a>5. Font streaming
 
 Starting with Windows 10, fonts that are included in Windows but that are not stored on the local device can be downloaded on demand.
 
@@ -234,7 +254,7 @@ To turn off font streaming, create a REG\_DWORD registry setting called **Disabl
 
 > **Note:**  This may change in future versions of Windows.
 
-### <a href="" id="bkmk-previewbuilds"></a>5. Insider Preview builds
+### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 
 To turn off Insider Preview builds if you're running a released version of Windows 10. If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
 
@@ -264,11 +284,11 @@ To turn off Insider Preview builds if you're running a released version of Windo
 
     -   **2**. (default) Not configured. Users can make their devices available for download and installing preview software.
 
-### <a href="" id="bkmk-ie"></a>6. Internet Explorer
+### <a href="" id="bkmk-ie"></a>7. Internet Explorer
 
 Use Group Policy to manage settings for Internet Explorer.
 
-### <a href="" id="bkmk-ie-gp"></a>6.1 Internet Explorer Group Policies
+### <a href="" id="bkmk-ie-gp"></a>7.1 Internet Explorer Group Policies
 
 Find the Internet Explorer Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Internet Explorer**.
 
@@ -280,22 +300,21 @@ Find the Internet Explorer Group Policy objects under **Computer Configuration**
 | Disable Periodic Check for Internet Explorer software updates| Choose whether Internet Explorer periodically checks for a new version. <br /> Default: Enabled |
 | Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> Default: Disabled|
 | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
+| Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> Default: Enabled |
 
->**Note:** After you disable flip ahead and Suggested Sites, there will be one more request to ieonline.news.microsoft.com.
-
-### <a href="" id="bkmk-ie-activex"></a>6.2 ActiveX control blocking
+### <a href="" id="bkmk-ie-activex"></a>7.2 ActiveX control blocking
 
 ActiveX control blocking periodically downloads a new list of out-of-date ActiveX controls that should be blocked. You can turn this off by changing the REG\_DWORD registry setting **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to 0 (zero).
 
 For more info, see [Out-of-date ActiveX control blocking](http://technet.microsoft.com/library/dn761713.aspx).
 
-### <a href="" id="live-tiles"></a>7. Live Tiles
+### <a href="" id="live-tiles"></a>8. Live Tiles
 
 To turn off Live Tiles:
 
 -   Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Notifications** > **Turn Off notifications network usage**
 
-### <a href="" id="bkmk-mailsync"></a>8. Mail synchronization
+### <a href="" id="bkmk-mailsync"></a>9. Mail synchronization
 
 To turn off mail synchronization for Microsoft Accounts that are configured on a device:
 
@@ -313,11 +332,11 @@ To turn off the Windows Mail app:
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Mail** &gt; **Turn off Windows Mail application**
 
-### <a href="" id="bkmk-edge"></a>9. Microsoft Edge
+### <a href="" id="bkmk-edge"></a>10. Microsoft Edge
 
 Use either Group Policy or MDM policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730682).
 
-### <a href="" id="bkmk-edgegp"></a>9.1 Microsoft Edge Group Policies
+### <a href="" id="bkmk-edgegp"></a>10.1 Microsoft Edge Group Policies
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
 
@@ -333,7 +352,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Open a new tab with an empty tab                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
 | Configure corporate Home pages                       | Choose the corporate Home page for domain-joined devices. <br /> Set this to **about:blank**        |
 
-### <a href="" id="bkmk-edge-mdm"></a>9.2 Microsoft Edge MDM policies
+### <a href="" id="bkmk-edge-mdm"></a>10.2 Microsoft Edge MDM policies
 
 The following Microsoft Edge MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
@@ -345,13 +364,13 @@ The following Microsoft Edge MDM policies are available in the [Policy CSP](http
 | Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the address bar shows search suggestions.. <br /> Default: Allowed                   |
 | Browser/AllowSmartScreen                             | Choose whether SmartScreen is turned on or off.  <br /> Default: Allowed                            |
 
-### <a href="" id="bkmk-edge-prov"></a>9.3 Microsoft Edge Windows Provisioning
+### <a href="" id="bkmk-edge-prov"></a>10.3 Microsoft Edge Windows Provisioning
 
 Use Windows ICD to create a provisioning package with the settings for these policies, go to **Runtime settings** &gt; **Policies**.
 
 For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](http://technet.microsoft.com/library/mt270204.aspx).
 
-### <a href="" id="bkmk-ncsi"></a>10. Network Connection Status Indicator
+### <a href="" id="bkmk-ncsi"></a>11. Network Connection Status Indicator
 
 Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftncsi.com to determine if the device can communicate with the Internet. For more info about NCIS, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
 
@@ -361,7 +380,7 @@ You can turn off NCSI through Group Policy:
 
 > **Note**  After you apply this policy, you must restart the device for the policy setting to take effect.
 
-### <a href="" id="bkmk-offlinemaps"></a>11. Offline maps
+### <a href="" id="bkmk-offlinemaps"></a>12. Offline maps
 
 You can turn off the ability to download and update offline maps.
 
@@ -371,13 +390,13 @@ You can turn off the ability to download and update offline maps.
 
 - In Windows 10, version 1607 and later, apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Maps** > **Turn off unsolicited network traffic on the Offline Maps settings page**
 
-### <a href="" id="bkmk-onedrive"></a>12. OneDrive
+### <a href="" id="bkmk-onedrive"></a>13. OneDrive
 
 To turn off OneDrive in your organization:
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **OneDrive** &gt; **Prevent the usage of OneDrive for file storage**
 
-### <a href="" id="bkmk-preinstalledapps"></a>13. Preinstalled apps
+### <a href="" id="bkmk-preinstalledapps"></a>14. Preinstalled apps
 
 Some preinstalled apps get content before they are opened to ensure a great experience. You can remove these using the steps in this section.
 
@@ -489,41 +508,41 @@ To remove the Get Skype app:
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage**
 
-### <a href="" id="bkmk-settingssection"></a>14. Settings &gt; Privacy
+### <a href="" id="bkmk-settingssection"></a>15. Settings &gt; Privacy
 
 Use Settings &gt; Privacy to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
 
--   [14.1 General](#bkmk-general)
+-   [15.1 General](#bkmk-general)
 
--   [14.2 Location](#bkmk-priv-location)
+-   [15.2 Location](#bkmk-priv-location)
 
--   [14.3 Camera](#bkmk-priv-camera)
+-   [15.3 Camera](#bkmk-priv-camera)
 
--   [14.4 Microphone](#bkmk-priv-microphone)
+-   [15.4 Microphone](#bkmk-priv-microphone)
 
--   [14.5 Speech, inking, & typing](#bkmk-priv-speech)
+-   [15.5 Speech, inking, & typing](#bkmk-priv-speech)
 
--   [14.6 Account info](#bkmk-priv-accounts)
+-   [15.6 Account info](#bkmk-priv-accounts)
 
--   [14.7 Contacts](#bkmk-priv-contacts)
+-   [15.7 Contacts](#bkmk-priv-contacts)
 
--   [14.8 Calendar](#bkmk-priv-calendar)
+-   [15.8 Calendar](#bkmk-priv-calendar)
 
--   [14.9 Call history](#bkmk-priv-callhistory)
+-   [15.9 Call history](#bkmk-priv-callhistory)
 
--   [14.10 Email](#bkmk-priv-email)
+-   [15.10 Email](#bkmk-priv-email)
 
--   [14.11 Messaging](#bkmk-priv-messaging)
+-   [15.11 Messaging](#bkmk-priv-messaging)
 
--   [14.12 Radios](#bkmk-priv-radios)
+-   [15.12 Radios](#bkmk-priv-radios)
 
--   [14.13 Other devices](#bkmk-priv-other-devices)
+-   [15.13 Other devices](#bkmk-priv-other-devices)
 
--   [14.14 Feedback & diagnostics](#bkmk-priv-feedback)
+-   [15.14 Feedback & diagnostics](#bkmk-priv-feedback)
 
--   [14.15 Background apps](#bkmk-priv-background)
+-   [15.15 Background apps](#bkmk-priv-background)
 
-### <a href="" id="bkmk-general"></a>14.1 General
+### <a href="" id="bkmk-general"></a>15.1 General
 
 **General** includes options that don't fall into other areas.
 
@@ -591,7 +610,7 @@ To turn off **Let websites provide locally relevant content by accessing my lang
 
 -   Create a new REG\_DWORD registry setting called **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile**, with a value of 1.
 
-### <a href="" id="bkmk-priv-location"></a>14.2 Location
+### <a href="" id="bkmk-priv-location"></a>15.2 Location
 
 In the **Location** area, you choose whether devices have access to location-specific sensors and which apps have access to the device's location.
 
@@ -642,7 +661,7 @@ To turn off **Choose apps that can use your location**:
 
 -   Turn off each app using the UI.
 
-### <a href="" id="bkmk-priv-camera"></a>14.3 Camera
+### <a href="" id="bkmk-priv-camera"></a>15.3 Camera
 
 In the **Camera** area, you can choose which apps can access a device's camera.
 
@@ -679,7 +698,7 @@ To turn off **Choose apps that can use your camera**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-microphone"></a>14.4 Microphone
+### <a href="" id="bkmk-priv-microphone"></a>15.4 Microphone
 
 In the **Microphone** area, you can choose which apps can access a device's microphone.
 
@@ -697,7 +716,7 @@ To turn off **Choose apps that can use your microphone**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-speech"></a>14.5 Speech, inking, & typing
+### <a href="" id="bkmk-priv-speech"></a>15.5 Speech, inking, & typing
 
 In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better understand your employee's voice and written input by sampling their voice and writing, and by comparing verbal and written input to contact names and calendar entrees.
 
@@ -731,7 +750,7 @@ Apply the Speech/AllowSpeechModelUpdate MDM policy from the [Policy CSP](https:/
 
 - Create a REG\_DWORD registry setting called **AllowSpeechModelUpdate** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\Current\\Device\\Speech**, with a value of 0 (zero).
 
-### <a href="" id="bkmk-priv-accounts"></a>14.6 Account info
+### <a href="" id="bkmk-priv-accounts"></a>15.6 Account info
 
 In the **Account Info** area, you can choose which apps can access your name, picture, and other account info.
 
@@ -749,7 +768,7 @@ To turn off **Choose the apps that can access your account info**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-contacts"></a>14.7 Contacts
+### <a href="" id="bkmk-priv-contacts"></a>15.7 Contacts
 
 In the **Contacts** area, you can choose which apps can access an employee's contacts list.
 
@@ -763,7 +782,7 @@ To turn off **Choose apps that can access contacts**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-calendar"></a>14.8 Calendar
+### <a href="" id="bkmk-priv-calendar"></a>15.8 Calendar
 
 In the **Calendar** area, you can choose which apps have access to an employee's calendar.
 
@@ -781,7 +800,7 @@ To turn off **Choose apps that can access calendar**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-callhistory"></a>14.9 Call history
+### <a href="" id="bkmk-priv-callhistory"></a>15.9 Call history
 
 In the **Call history** area, you can choose which apps have access to an employee's call history.
 
@@ -795,7 +814,7 @@ To turn off **Let apps access my call history**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-email"></a>14.10 Email
+### <a href="" id="bkmk-priv-email"></a>15.10 Email
 
 In the **Email** area, you can choose which apps have can access and send email.
 
@@ -809,7 +828,7 @@ To turn off **Let apps access and send email**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-messaging"></a>14.11 Messaging
+### <a href="" id="bkmk-priv-messaging"></a>15.11 Messaging
 
 In the **Messaging** area, you can choose which apps can read or send messages.
 
@@ -827,7 +846,7 @@ To turn off **Choose apps that can read or send messages**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-radios"></a>14.12 Radios
+### <a href="" id="bkmk-priv-radios"></a>15.12 Radios
 
 In the **Radios** area, you can choose which apps can turn a device's radio on or off.
 
@@ -845,7 +864,7 @@ To turn off **Choose apps that can control radios**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-other-devices"></a>14.13 Other devices
+### <a href="" id="bkmk-priv-other-devices"></a>15.13 Other devices
 
 In the **Other Devices** area, you can choose whether devices that aren't paired to PCs, such as an Xbox One, can share and sync info.
 
@@ -863,7 +882,7 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-feedback"></a>14.14 Feedback & diagnostics
+### <a href="" id="bkmk-priv-feedback"></a>15.14 Feedback & diagnostics
 
 In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft.
 
@@ -936,7 +955,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
     -   **3**. Maps to the **Full** level.
 
-### <a href="" id="bkmk-priv-background"></a>14.15 Background apps
+### <a href="" id="bkmk-priv-background"></a>15.15 Background apps
 
 In the **Background Apps** area, you can choose which apps can run in the background.
 
@@ -944,7 +963,7 @@ To turn off **Let apps run in the background**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-spp"></a>15. Software Protection Platform
+### <a href="" id="bkmk-spp"></a>16. Software Protection Platform
 
 Enterprise customers can manage their Windows activation status with volume licensing using an on-premise Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by applying the following Group Policy:
 
@@ -952,7 +971,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
-### <a href="" id="bkmk-syncsettings"></a>16. Sync your settings
+### <a href="" id="bkmk-syncsettings"></a>17. Sync your settings
 
 You can control if your settings are synchronized:
 
@@ -978,13 +997,13 @@ To turn off Messaging cloud sync:
 
 -   Create a REG\_DWORD registry setting called **CloudServiceSyncEnabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Messaging**, with a value of 0 (zero).
 
-### <a href="" id="bkmk-teredo"></a>17. Teredo
+### <a href="" id="bkmk-teredo"></a>18. Teredo
 
 You can disable Teredo by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](http://technet.microsoft.com/library/cc722030.aspx).
 
 -   From an elevated command prompt, run **netsh interface teredo set state disabled**
 
-### <a href="" id="bkmk-wifisense"></a>18. Wi-Fi Sense
+### <a href="" id="bkmk-wifisense"></a>19. Wi-Fi Sense
 
 Wi-Fi Sense automatically connects devices to known hotspots and to the wireless networks the person’s contacts have shared with them.
 
@@ -1010,7 +1029,7 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
 When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but they’re non-functional and they can’t be controlled by the employee.
 
-### <a href="" id="bkmk-defender"></a>19. Windows Defender
+### <a href="" id="bkmk-defender"></a>20. Windows Defender
 
 You can disconnect from the Microsoft Antimalware Protection Service.
 
@@ -1058,7 +1077,7 @@ You can stop downloading definition updates:
 
 You can also use the registry to turn off Malicious Software Reporting Tool telemetry by setting the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to 1.
 
-### <a href="" id="bkmk-wmp"></a>20. Windows Media Player
+### <a href="" id="bkmk-wmp"></a>21. Windows Media Player
 
 To remove Windows Media Player:
 
@@ -1068,7 +1087,7 @@ To remove Windows Media Player:
 
 -   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
 
-### <a href="" id="bkmk-spotlight"></a>21. Windows spotlight
+### <a href="" id="bkmk-spotlight"></a>22. Windows spotlight
 
 Windows spotlight provides different background images and text on the lock screen. You can control it by using the user interface or through Group Policy.
 
@@ -1105,13 +1124,13 @@ If you not running Windows 10, version 1607 or later, you can use the other opti
 
 For more info, see [Windows spotlight on the lock screen](../whats-new/windows-spotlight.md).
 
-### <a href="" id="bkmk-windowsstore"></a>22. Windows Store
+### <a href="" id="bkmk-windowsstore"></a>23. Windows Store
 
 You can turn off the ability to launch apps from the Windows Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Windows Store will be disabled.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Windows Store**.
 
-### <a href="" id="bkmk-updates"></a>23. Windows Update Delivery Optimization
+### <a href="" id="bkmk-updates"></a>24. Windows Update Delivery Optimization
 
 Windows Update Delivery Optimization lets you get Windows updates and Windows Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
@@ -1119,13 +1138,13 @@ By default, PCs running Windows 10 Enterprise and Windows 10 Education will only
 
 Use the UI, Group Policy, MDM policies, or Windows Provisioning to set up Delivery Optimization.
 
-### <a href="" id="bkmk-wudo-ui"></a>23.1 Settings &gt; Update & security
+### <a href="" id="bkmk-wudo-ui"></a>24.1 Settings &gt; Update & security
 
 You can set up Delivery Optimization from the **Settings** UI.
 
 -   Go to **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Choose how updates are delivered**.
 
-### <a href="" id="bkmk-wudo-gp"></a>23.2 Delivery Optimization Group Policies
+### <a href="" id="bkmk-wudo-gp"></a>24.2 Delivery Optimization Group Policies
 
 You can find the Delivery Optimization Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization**.
 
@@ -1137,7 +1156,7 @@ You can find the Delivery Optimization Group Policy objects under **Computer Con
 | Max Cache Size            | Lets you specify the maximum cache size as a percentage of disk size. <br /> The default value is 20, which represents 20% of the disk.|
 | Max Upload Bandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
-### <a href="" id="bkmk-wudo-mdm"></a>23.3 Delivery Optimization MDM policies
+### <a href="" id="bkmk-wudo-mdm"></a>24.3 Delivery Optimization MDM policies
 
 The following Delivery Optimization MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
@@ -1150,7 +1169,7 @@ The following Delivery Optimization MDM policies are available in the [Policy CS
 | DeliveryOptimization/DOMaxUploadBandwidth      | Lets you specify the maximum upload bandwidth (in KB/second) that a device uses across all concurrent upload activity. <br /> The default value is 0, which means unlimited possible bandwidth.|
 
 
-### <a href="" id="bkmk-wudo-prov"></a>23.4 Delivery Optimization Windows Provisioning
+### <a href="" id="bkmk-wudo-prov"></a>24.4 Delivery Optimization Windows Provisioning
 
 If you don't have an MDM server in your enterprise, you can use Windows Provisioning to configure the Delivery Optimization policies
 
@@ -1166,7 +1185,7 @@ Use Windows ICD, included with the [Windows Assessment and Deployment Kit (Windo
 
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730684).
 
-### <a href="" id="bkmk-wu"></a>24. Windows Update
+### <a href="" id="bkmk-wu"></a>25. Windows Update
 
 You can turn off Windows Update by setting the following registry entries:
 
