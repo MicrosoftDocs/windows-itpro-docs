@@ -64,9 +64,7 @@ During the policy-creation process in System Center Configuration Manager, you c
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed desktop app (also known as a Classic Windows app), or an AppLocker policy file.
 
 >**Important**<br>
-EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.
-
-Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **App rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
+EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process. <p>Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **App rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
 #### Add a store app rule to your policy
 For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
@@ -541,12 +539,3 @@ After you’ve created your EDP policy, you'll need to deploy it to your organiz
 - [System Center Configuration Manager and Endpoint Protection (Version 1606)](http://go.microsoft.com/fwlink/p/?LinkId=717372)
 - [TechNet documentation for Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=691623)
 - [Manage mobile devices with Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=691624)
-
- 
-
- 
-
-
-
-
-
