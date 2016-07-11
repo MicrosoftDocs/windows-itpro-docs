@@ -141,7 +141,8 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 - Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech).
 - Added instructions on how to turn off flip ahead with an Internet Explorer Group Policy.
-- Added a section on how to turn off automatic root updates to stop updating the certificate trust list in [1. Certificate trust lists](#certificate-trust-lists). 
+- Added a section on how to turn off automatic root updates to stop updating the certificate trust list in [1. Certificate trust lists](#certificate-trust-lists).
+- Added a new setting in [25. Windows Update](#bkmk-wu). 
 
 - Added the following Group Policies:
 
@@ -1196,6 +1197,11 @@ You can turn off Windows Update by setting the following registry entries:
     -and-
 
 -   Add a REG\_DWORD value called **DisableWindowsUpdateAccess** to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and set the value to 1.
+
+    -and-
+
+-   Add a REG\_DWORD value called **UseWUServer** to **HKEY\_LOCAL\_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\AU** and set the value to 1.
+
 
 You can turn off automatic updates by doing one of the following. This is not recommended.
 
