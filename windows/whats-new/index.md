@@ -16,17 +16,16 @@ Learn about new features in Windows 10 for IT professionals, such as Enterprise
 
 - [What's new in Windows 10, version 1607](whats-new-windows-10-version-1607.md)
 - [What's new in Windows 10, version 1511](whats-new-windows-10-version-1511.md)
-- [Documentation for Windows 10 Insider Preview](windows-10-insider-preview.md)
+
 
 
  
 
 ## Learn more
 
-
-[Windows 10 content from Microsoft Ignite](http://go.microsoft.com/fwlink/p/?LinkId=613210)
-
-[Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkId=690485)
+- [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history)
+- [Windows 10 content from Microsoft Ignite](http://go.microsoft.com/fwlink/p/?LinkId=613210)
+- [Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkId=690485)
 
 ## Related topics
 

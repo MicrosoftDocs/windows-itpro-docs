@@ -2,7 +2,7 @@
 title: Manage identity verification using Windows Hello for Business (Windows 10)
 description: In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and a biometric or PIN.
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
-keywords: identity, PIN, biometric, Hello
+keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -44,7 +44,7 @@ As an administrator in an enterprise or educational organization, you can create
 
 - Windows Hello for Business, which is configured by Group Policy or MDM policy, uses key-based or certificate-based authentication.
 
-## Benefits of Microsoft Passport
+## Benefits of Windows Hello
 
 Reports of identity theft and large-scale hacking are frequent headlines. Nobody wants to be notified that their user name and password have been exposed.
 
@@ -52,7 +52,7 @@ You may wonder [how a PIN can help protect a device better than a password](why-
 
 In Windows 10, Hello replaces passwords. The Hello provisioning process creates two cryptographic keys bound to the Trusted Platform Module (TPM), if a device has a TPM, or in software. Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Hello enrollment creates a trusted relationship between the identity provider and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identify provider knows from the combination of Hello keys and gesture that this is a verified identity and provides an authentication token that allows Windows 10 to access resources and services. In addition, during the registration process, the attestation claim is produced for every identity provider to cryptographically prove that the Hello keys are tied to TPM. During registration, when the attestation claim is not presented to the identity provider, the identity provider must assume that the Hello key is created in software.
 
-![how authentication works in microsoft passport](images/authflow.png)
+![how authentication works in windows hello](images/authflow.png)
 
 Imagine that someone is looking over your shoulder as you get money from an ATM and sees the PIN that you enter. Having that PIN won't help them access your account because they don't have your ATM card. In the same way, learning your PIN for your device doesn't allow that attacker to access your account because the PIN is local to your specific device and doesn't enable any type of authentication from any other device.
 Hello helps protect user identities and user credentials. Because no passwords are used, it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Hello credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are generated within isolated environments of TPMs.
@@ -70,7 +70,7 @@ Hello also enables Windows 10 Mobile devices to be used as [a remote credential
 -   Authentication is the two-factor authentication with the combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (Windows Hello). The Hello gesture does not roam between devices and is not shared with the server; it is stored locally on a device.
 -   Private key never leaves a device. The authenticating server has a public key that is mapped to the user account during the registration process.
 -   PIN entry and biometric gesture both trigger Windows 10 to verify the user's identity and authenticate using Hello keys or certificates.
--   *Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.*
+-   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
 -   Certificates are added to the Hello container and are protected by the Hello gesture.
 -   Windows Update behavior: After a reboot is required by Windows Update, the last interactive user is automatically signed on without any user gesture and the session is locked so the user's lock screen apps can run.
 
