@@ -41,7 +41,7 @@ System Center Configuration Manager (current branch) version 1606, currently in 
 
     b. Select **System Center Configuration Manager**, click **Download package**, and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.onboarding*.
 
 3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
 
@@ -60,7 +60,7 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
     b.  Select **Group Policy**, click **Download package** and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.onboarding*.
 
 3. Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -72,7 +72,7 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
-8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
+8. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared *WindowsDefenderATPOnboardingScript.onboarding* file.
 
 9. Click **OK** and close any open GPMC windows.
 
@@ -86,7 +86,7 @@ For additional settings, see the [Additional configuration settings section](add
 
     b.  Select **Microsoft Intune**, click **Download package** and save the .zip file.
 
-2. Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
+2. Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.onboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
@@ -132,7 +132,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
     b.  Select **Local Script**, click **Download package** and save the .zip file.
 
 
-2.  Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
+2.  Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.onboarding*.
 
 3.  Open an elevated command-line prompt on the endpoint and run the script:
 
@@ -142,7 +142,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-4.  Type the location of the script file. If you copied the file to the desktop, type: *`%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd`*
+4.  Type the location of the script file. If you copied the file to the desktop, type: *`%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.onboarding`*
 
 5.  Press the **Enter** key or click **OK**.
 
