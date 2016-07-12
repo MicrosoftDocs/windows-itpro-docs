@@ -10,7 +10,7 @@ author: TrudyHa
 # What's new in Windows 10
 
 
-Learn about new features in Windows 10 for IT professionals, such as Enterprise Data Protection, Windows Hello, Device Guard, and more. 
+Windows 10 provides IT professionals with advanced protection against modern security threats and comprehensive management and control over devices and apps, as well as flexible deployment, update, and support options. Learn about new features in Windows 10 for IT professionals, such as Enterprise Data Protection, Windows Hello, Device Guard, and more. 
 
 ## In this section
 
