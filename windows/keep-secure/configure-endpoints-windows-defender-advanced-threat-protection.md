@@ -79,10 +79,6 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 For additional settings, see the [Additional configuration settings section](additional-configuration-windows-defender-advanced-threat-protection.md).
 
 ## Configure with Microsoft Intune
-You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints. 
-
-For more information on using other MDMs see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
-
 The following instructions will guide you on creating policies to manage Windows Defender ATP in Microsoft Intune.
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
@@ -95,7 +91,7 @@ The following instructions will guide you on creating policies to manage Windows
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
-These policies are grouped into two:
+These policies are categorized into two groups:
 - Onboarding - Use the onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
     - Onboarding
     - Health Status for onboarded machines
@@ -119,6 +115,11 @@ Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThrea
   | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Offboarded from Windows Defender ATP  | 0
 
 > **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** and **Health Status for offboarded machines** use read-only properties and can't be remediated.
+
+## Configure endpoints using Mobile Device Management tools
+You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints. 
+
+For more information on using other MDMs see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## Configure endpoints individually with a script
 <a name="manual"></a>
