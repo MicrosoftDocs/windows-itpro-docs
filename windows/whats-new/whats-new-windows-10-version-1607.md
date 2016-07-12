@@ -2,6 +2,7 @@
 title: What's new in Windows 10, version 1607 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
+keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,8 +11,9 @@ author: TrudyHa
 
 # What's new in Windows 10, version 1607
 
-Below is a list of some of the new and updated features in Windows 10, version 1607.
+Below is a list of some of the new and updated features in Windows 10, version 1607 (also known as the Anniversary Update).
 
+> **Note:** For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
  
 ## Deployment
 
@@ -56,3 +58,6 @@ Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilit
 Windows 10, Version 1607, introduces shared PC mode, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise. [Learn how to set up a shared or guest PC.](../manage/set-up-shared-or-guest-pc.md)
 
 
+## Learn more
+
+- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)

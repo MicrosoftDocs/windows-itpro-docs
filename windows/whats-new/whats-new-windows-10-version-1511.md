@@ -12,6 +12,8 @@ author: TrudyHa
 
 Below is a list of some of the new and updated features in Windows 10, version 1511.
 
+> **Note:** For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+
 ## Deployment
 
 ### Provisioning devices using Windows Imaging and Configuration Designer (ICD)
@@ -95,6 +97,10 @@ With Windows 10, your enterprise will have more choice and flexibility in apply
 While Windows Update provides updates to unmanaged devices, most enterprises prefer to manage and control the flow of updates using their device management solution. You can choose to apply the latest updates as soon as they are available, or you can set a source and schedule for updates that works for your specific requirements.
 
 For more information about updating Windows 10, see [Windows 10 servicing options for updates and upgrades](../manage/introduction-to-windows-10-servicing.md).
+
+## Learn more
+
+- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
 
 
  
