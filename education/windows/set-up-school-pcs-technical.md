@@ -9,7 +9,7 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Technical reference for the Set up School PCs app (Preview)
+# Technical reference for the Set up School PCs app 
 **Applies to:**
 
 -   Windows 10 

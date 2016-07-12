@@ -9,7 +9,7 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Set up Take a Test on multiple PCs (Preview)
+# Set up Take a Test on multiple PCs 
 **Applies to:**
 
 -   Windows 10  

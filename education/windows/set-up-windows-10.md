@@ -14,7 +14,7 @@ author: jdeckerMS
 
 -   Windows 10 
 
-You have two tools to choose from to set up PCs for your classroom: **Set up School PCs** app and the **Provision school devices** option in Windows Imaging and Configuratio Designer (ICD). Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account). The following diagram compares the tools.
+You have two tools to choose from to set up PCs for your classroom: **Set up School PCs** app and the **Provision school devices** option in Windows Imaging and Configuration Designer (ICD). Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account). The following diagram compares the tools.
 
 ![Which tool to use to set up Windows 10](images/setup-options.png)
 

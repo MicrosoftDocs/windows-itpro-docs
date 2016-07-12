@@ -9,7 +9,7 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Set up Take a Test on a single PC (Preview)
+# Set up Take a Test on a single PC 
 **Applies to:**
 
 -   Windows 10  
