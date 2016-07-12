@@ -100,7 +100,7 @@ These policies are categorized into two groups:
     - Health Status for offboarded machines
     - Configuration for offboarded machines
 
-> **Warming**&nbsp;&nbsp;These two groups must not be deployed on the same machine at same time, otherwise this will cause unpredictable collisions.
+> **Warning**&nbsp;&nbsp;These two groups must not be deployed on the same machine at same time, otherwise this will cause unpredictable collisions.
 
 Policy | OMA-URI | Type | Description | Value
 :---|:---|:---|:---|:---
