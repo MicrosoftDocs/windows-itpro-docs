@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP endpoints
 description: Use Group Policy or SCCM to deploy the configuration package or do manual registry changes on endpoints so that they are onboarded to the service.
-keywords: configure endpoints, client onboarding, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, sccm, system center configuration manager
+keywords: configure endpoints, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, sccm, system center configuration manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -37,7 +37,7 @@ System Center Configuration Manager (current branch) version 1606, currently in 
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Client onboarding** on the **Navigation pane**.
+    a. Click **Endpoint Management** on the **Navigation pane**.
 
     b. Select **System Center Configuration Manager**, click **Download package**, and save the .zip file.
 
@@ -56,7 +56,7 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Client onboarding** on the **Navigation pane**.
+    a.  Click **Endpoint Management** on the **Navigation pane**.
 
     b.  Select **Group Policy**, click **Download package** and save the .zip file.
 
@@ -82,7 +82,7 @@ For additional settings, see the [Additional configuration settings section](add
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
  
-    a.  Click **Client onboarding** on the **Navigation pane**.
+    a.  Click **Endpoint Management** on the **Navigation pane**.
 
     b.  Select **Local Script**, click **Download package** and save the .zip file.
 
@@ -95,7 +95,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Client onboarding** on the **Navigation pane**.
+    a.  Click **Endpoint Management** on the **Navigation pane**.
 
     b.  Select **Local Script**, click **Download package** and save the .zip file.
 

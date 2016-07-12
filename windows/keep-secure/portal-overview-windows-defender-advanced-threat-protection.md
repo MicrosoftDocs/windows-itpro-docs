@@ -49,7 +49,7 @@ Area | Description
 **Alerts queue** | Enables you to view separate queues of new, in progress, and resolved alerts.
 **Machines view**| Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
 **Preferences setup**|	Shows the settings you selected <!--during [service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md),-->and lets you update your industry preferences and retention policy period.
-**Client onboarding**|	Allows you to download the onboarding configuration package.
+**Endpoint Management**|	Allows you to download the onboarding configuration package.
 (3) Main portal| Main area where you will see the different views such as the Dashboard, Alerts queue, and Machines view.
 (4) Search | Search for machines, files, external IP Addresses, or domains across endpoints. The drop-down combo box allows you to select the entity type.
 
