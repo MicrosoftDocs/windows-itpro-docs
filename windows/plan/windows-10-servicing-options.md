@@ -34,13 +34,13 @@ This new model uses simpler deployment methods, reducing the overall amount of e
 
 The concept of branching goes back many years, and represents how Windows has traditionally been written and serviced. Each release of Windows was from a particular branch of the Windows code, and updates would be made to that release for the lifecycle of that release. This concept still applies now with Windows 10, but is much more visible because it is incorporated directly into the servicing model.
 
-During the development of Windows 10, Microsoft implemented the following new servicing options:
+With Windows 10, Microsoft has implemented the following new servicing options:
 
 ![branches](images/branch.png)
 
-**Windows Insider Program**: To see new features before they are released, to provide feedback on those new features, and to initially validate compatibility with existing applications and hardware, a small number of PCs can leverage the Windows Insider Program branch. These are typically dedicated lab machines used for IT testing, secondary PCs used by IT administrators, and other non-critical devices.
-**Current Branch (CB)**: For early adopters, IT teams, and other broader piloting groups, the Current Branch (CB) can be used to further validate application compatibility and newly-released features.
-**Current Branch for Business (CBB)**. For the majority of people in an organization, the Current Branch for Business (CBB) allows for a staged deployment of new features over a longer period of time.
+**Windows Insider Program**: To see new features before they are released, to provide feedback on those new features, and to initially validate compatibility with existing applications and hardware, a small number of PCs can leverage the Windows Insider Program branch. These are typically dedicated lab machines used for IT testing, secondary PCs used by IT administrators, and other non-critical devices.<BR>
+**Current Branch (CB)**: For early adopters, IT teams, and other broader piloting groups, the Current Branch (CB) can be used to further validate application compatibility and newly-released features.<BR>
+**Current Branch for Business (CBB)**. For the majority of people in an organization, the Current Branch for Business (CBB) allows for a staged deployment of new features over a longer period of time.<BR>
 **Long-Term Servicing Branch (LTSB)**: For critical or specialized devices (for example, operation of factory floor machinery, point-of-sale systems, automated teller machines), the Long-Term Servicing Branch (LTSB) provides a version of Windows 10 Enterprise that receives no new features, while continuing to be supported with security and other updates for a long time. (Note that the Long-Term Servicing Branch is a separate Windows 10 Enterprise image, with many in-box apps, including Microsoft Edge, Cortana, and Windows Store, removed.)<BR>
 
 These servicing options provide pragmatic solutions to keep more devices more current in enterprise environments than was previously possible. Most organizations will leverage all of these choices, with the mix determined by how individual PCs are used. Some examples are shown in the table below:
