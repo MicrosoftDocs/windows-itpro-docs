@@ -379,8 +379,6 @@ ID | Severity | Event description | Description
 1820 | Information | Windows Defender Advanced Threat Protection CSP: Set Nod's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br> TokenName: Contains node name <br> Result: Error details or succeeded.
 
 
-
- 
 <!--
 
 ## There are no users in the Azure Active Directory
