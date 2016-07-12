@@ -43,7 +43,7 @@ For Windows 10, we invite IT pros to join the [Windows Insider Program](http://
 
 Windows as a Service is a fundamental change in how Microsoft plans, builds, and delivers the operating system. Historically, we released a major Windows version every few years. The effort required to deploy large and infrequent Windows versions was substantial. That effort included updating the infrastructure to support the upgrade. Windows as a Service accelerates the cadence to provide rich updates more frequently, and these updates require substantially less effort to roll out than earlier versions of Windows. Since it provides more value to organizations in a shorter timeframe, delivering Windows as a Service is a top priority for us.
 
-The release cadence of Windows as a Service may be fast, so feedback is critical to its success. We rely on telemetry at each stage of the process to inform our decisions and prioritize our efforts. 
+The release cadence of Windows may be fast, so feedback is critical to its success. We rely on telemetry at each stage of the process to inform our decisions and prioritize our efforts. 
 
 ### What is Windows telemetry?
 Windows telemetry is vital technical data from Windows devices about the device and how Windows and related software are performing. It's used in the following ways:
@@ -61,9 +61,9 @@ Here are some specific examples of Windows telemetry data:
 
 ### What is NOT telemetry?
 
-Confusing telemetry with functional data can be easy. Some Windows components and apps connect to Microsoft services directly, but the data they exchange is not telemetry. For example, exchanging a user’s location for local weather or news is not an example of telemetry—it is functional data that the app or service requires to satisfy the user’s request.
+Telemetry can sometimes be confused with functional data. Some Windows components and apps connect to Microsoft services directly, but the data they exchange is not telemetry. For example, exchanging a user’s location for local weather or news is not an example of telemetry—it is functional data that the app or service requires to satisfy the user’s request.
 
-There are subtle differences between telemetry and functionality data. Windows collects and sends telemetry in the background automatically. You can control how much information is gathered by setting the telemetry level. Microsoft tries to avoid collecting personal information wherever possible (for example, if a crash dump is collected and a document was in memory at the time of the crash).    On the other hand, functional data can contain personal information. However, a user action, such as requesting news or asking Cortana a question, usually triggers collection and transmission of functional data.
+There are subtle differences between telemetry and functional data. Windows collects and sends telemetry in the background automatically. You can control how much information is gathered by setting the telemetry level. Microsoft tries to avoid collecting personal information wherever possible (for example, if a crash dump is collected and a document was in memory at the time of the crash).    On the other hand, functional data can contain personal information. However, a user action, such as requesting news or asking Cortana a question, usually triggers collection and transmission of functional data.
 
 If you’re an IT pro that wants to manage Windows functional data sent from your organization to Microsoft, see [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 
@@ -81,9 +81,7 @@ Windows and Windows Server telemetry gives every user a voice in the operating s
 
 Our ability to collect telemetry that drives improvements to Windows and Windows Server helps raise the bar for app and device driver quality. Telemetry helps us to quickly identify and fix critical reliability and security issues with apps and device drivers on given configurations. For example, we can identify an app that hangs on devices using a specific version of a video driver, allowing us to work with the app and device driver vendor to quickly fix the issue. The result is less downtime and reduced costs and increased productivity associated with troubleshooting these issues.
 
-A real-world example of how Windows telemetry helps us quickly identify and fix issues is a particular version of a video driver that was crashing on some devices running Windows 10, causing the device to reboot. We detected the problem in our telemetry, and immediately contacted the third-party developer who builds the video driver. Working with the developer, we provided an updated driver to Windows Insiders within 24 hours. Based on telemetry from the Windows Insiders’ devices, we were able to validate the new version of the video driver, and rolled it out to the broad public as an update the next day. Telemetry helped us find, fix, and resolve a big problem in just 48 hours.  Many people were able to avoid losing data due to unplanned reboots without even knowing there was an issue.
-
-**From an enterprise perspective, this fast response may have avoided lost data and reduced costly support incidents.**
+A real-world example of how Windows telemetry helps us quickly identify and fix issues is a particular version of a video driver that was crashing on some devices running Windows 10, causing the device to reboot. We detected the problem in our telemetry, and immediately contacted the third-party developer who builds the video driver. Working with the developer, we provided an updated driver to Windows Insiders within 24 hours. Based on telemetry from the Windows Insiders’ devices, we were able to validate the new version of the video driver, and rolled it out to the broad public as an update the next day. Telemetry helped us find, fix, and resolve this problem in just 48 hours, providing a better user experience and reducing costly support calls.
 
 ### Improve end-user productivity
 
