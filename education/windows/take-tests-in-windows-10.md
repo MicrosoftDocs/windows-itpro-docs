@@ -9,7 +9,7 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Take tests in Windows 10 (Preview)
+# Take tests in Windows 10 
 **Applies to:**
 
 -   Windows 10   

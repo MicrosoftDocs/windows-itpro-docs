@@ -33,11 +33,11 @@ Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT
 
 * **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
 
-    > [Learn how to use simple provisioning to configure Windows 10 computers.](../deploy/provision-pcs-for-initial-deployment.md)
+    > [Learn how to use simple provisioning to configure Windows 10 computers.](provision-pcs-for-initial-deployment.md)
 
 * **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
 
-    > [Learn how to use advanced provisioning to configure Windows 10 computers with apps and certificates.](../deploy/provision-pcs-with-apps-and-certificates.md)
+    > [Learn how to use advanced provisioning to configure Windows 10 computers with apps and certificates.](provision-pcs-with-apps-and-certificates.md)
 
 * **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
 
@@ -93,11 +93,11 @@ For details about the settings you can customize in provisioning packages, see [
 ## Creating a provisioning package
 
 
-With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must install the Windows Assessment and Deployment Kit (ADK) for Windows 10 [from the Windows Insider Program site](http://go.microsoft.com/fwlink/p/?linkid=533700).
+With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740).
 
 While running ADKsetup.exe for Windows 10, version 1607, select the following feature from the **Select the features you want to install** dialog box:
 
--   Windows Imaging and Configuration Designer (ICD)
+-   Configuration Designer
 
 > **Note:** In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
 
@@ -115,10 +115,11 @@ Provisioning packages can be applied both during image deployment and during run
 
 ## Related topics
 
+- [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
 
+- [LProvision PCs with apps and certificates for initial deployments](provision-pcs-with-apps-and-certificates.md)
 
-
-[Configure devices without MDM](../manage/configure-devices-without-mdm.md)
+- [Configure devices without MDM](../manage/configure-devices-without-mdm.md)
 
  
 

@@ -17,7 +17,7 @@ author: jdeckerMS
 
 |Topic |Description |
 |------|------------|
-| [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md) | Learn how the Set up School PCs app works and how to use it.  |
+| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Learn how the Set up School PCs app works and how to use it.  |
 | [Technical reference for the Set up School PCs app (Preview)](set-up-school-pcs-technical.md) | See the changes that the Set up School PCs app makes to a PC.  |
 | [Get Minecraft Education Edition](get-minecraft-for-education.md) | Learn how to get early access to **Minecraft Education Edition**. |
 | [Take tests in Windows 10](take-tests-in-windows-10.md) | Learn how to configure and use the **Take a Test** app in Windows 10 |

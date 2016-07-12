@@ -9,7 +9,7 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Take a Test app technical reference (Preview)
+# Take a Test app technical reference 
 **Applies to:**
 
 -   Windows 10 

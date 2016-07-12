@@ -15,7 +15,6 @@ Learn about deploying Windows 10 for IT professionals.
 
 |Topic |Description |
 |------|------------|
-|[Deploy Windows 10 in a test lab](windows-10-poc.md) |This guide provides instructions for setting up a proof of concept (PoC) lab using Hyper-V and a minimum amount of resources. |
 |[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md) |To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task. |
 |[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) |This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 2 specifically. |
 |[Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) |If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or, more specifically, MDT 2013 Update 2. |

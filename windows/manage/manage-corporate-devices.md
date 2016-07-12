@@ -48,7 +48,7 @@ Desktop devices running Windows 10 that are joined to an Active Directory domai
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft System Center Configuration Manager Technical Preview](http://go.microsoft.com/fwlink/p/?LinkId=613622)</p></td>
+<td align="left"><p>[Microsoft System Center Configuration Manager 2016](http://go.microsoft.com/fwlink/p/?LinkId=613622)</p></td>
 <td align="left"><p>Client deployment, upgrade, and management with new and existing features</p></td>
 </tr>
 <tr class="even">
@@ -97,7 +97,7 @@ For more information about the MDM protocols, see [Mobile device management](htt
 
 [How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627898.aspx)
 
-[Windows 10, Azure AD and Microsoft Intune: Automatic MDM Enrollment](http://go.microsoft.com/fwlink/p/?LinkId=623321)
+[Azure AD, Microsoft Intune and Windows 10 - Using the cloud to modernize enterprise mobility](https://blogs.technet.microsoft.com/enterprisemobility/2015/06/12/azure-ad-microsoft-intune-and-windows-10-using-the-cloud-to-modernize-enterprise-mobility/)
 
 [Microsoft Intune End User Enrollment Guide](http://go.microsoft.com/fwlink/p/?LinkID=617169)
 

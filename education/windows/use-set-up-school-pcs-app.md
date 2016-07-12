@@ -9,7 +9,7 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Use the Set up School PCs app (Preview)
+# Use the Set up School PCs app 
 **Applies to:**
 
 -   Windows 10   

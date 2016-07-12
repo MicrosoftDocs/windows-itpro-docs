@@ -15,6 +15,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
 
+- [Provisioning packages for Windows 10](provisioning-packages.md)
 - [Provision PCs with apps and certificates for initial deployment](provision-pcs-with-apps-and-certificates.md)
 - [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
 

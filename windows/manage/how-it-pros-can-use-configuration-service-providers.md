@@ -23,7 +23,7 @@ The CSPs are documented on the [Hardware Dev Center](http://go.microsoft.com/fwl
 **Note**  
 The explanation of CSPs and CSP documentation also apply to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
 
- 
+ [See what's new for CSPs in Windows 10, version 1607.](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056(v=vs.85).aspx#whatsnew_1607)
 
 ## What is a CSP?
 
