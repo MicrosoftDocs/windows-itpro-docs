@@ -23,12 +23,12 @@ Endpoints in your organization must be configured so that the Windows Defender A
 
 Windows Defender ATP supports the following deployment tools and methods:
 
-- [System Center Configuration Manager (current branch) version 1606](#configure-with-system-center-configuration-manager-(current-branch)-version-1606) 
-- [System Center 2012 Configuration manager or later versions]
-- [Group Policy]
-- [Microsoft Intune]
-- [Mobile Device Management]
-- [Local script]
+- System Center Configuration Manager (current branch) version 1606 
+- System Center 2012 Configuration manager or later versions
+- Group Policy
+- Microsoft Intune
+- Mobile Device Management
+- Local script
 
 ## Configure endpoints with System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information see, the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx) section.
