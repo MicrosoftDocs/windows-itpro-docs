@@ -96,6 +96,10 @@ While Windows Update provides updates to unmanaged devices, most enterprises pre
 
 For more information about updating Windows 10, see [Windows 10 servicing options for updates and upgrades](../manage/introduction-to-windows-10-servicing.md).
 
+## Learn more
+
+- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
+
 
  
 
