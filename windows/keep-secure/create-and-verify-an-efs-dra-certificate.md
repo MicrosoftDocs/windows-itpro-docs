@@ -1,6 +1,6 @@
 
 ---
-title: Create and verify an Encrypting File System (EFS) DRA certificate (Windows 10)
+title: Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate (Windows 10)
 description: Follow these steps to create, verify, and perform a quick recovery using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ---
 
-# Create and verify an Encrypting File System (EFS) DRA certificate
+# Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
 **Applies to:**
 
 -   Windows 10 Insider Preview
