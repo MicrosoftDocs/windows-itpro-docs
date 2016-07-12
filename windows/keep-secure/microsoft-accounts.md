@@ -14,7 +14,7 @@ ms.pagetype: security
 
 This topic for the IT professional explains how a Microsoft account works to enhance security and privacy for users, and how you can manage this consumer account type in your organization.
 
-Microsoft sites, services, and properties such as Windows Live, MSN, Xbox LIVE, Zune, Windows Phone, and computers running Windows 8.1, Windows 8, and Windows RT use a Microsoft account as a mean of identifying users. Microsoft account is the name for what was previously called Windows Live ID. It has user-defined secrets associated with it, and it consists of a unique email address and a password.
+Microsoft sites, services, and properties such as Windows Live, MSN, Xbox LIVE, Zune, Windows Phone, and computers running Windows 10, Windows 8.1, Windows 8, and Windows RT use a Microsoft account as a mean of identifying users. Microsoft account is the name for what was previously called Windows Live ID. It has user-defined secrets associated with it, and it consists of a unique email address and a password.
 
 There are some benefits and considerations when using Microsoft accounts in the enterprise. For more information, see [Microsoft account in the enterprise](#bkmk-msaccountintheenterprise) later in this topic.
 
@@ -82,11 +82,11 @@ Although the Microsoft account was designed to serve consumers, you might find s
 
 -   **Download Windows Store apps**:
 
-    If your enterprise chooses to distribute software through the Windows Store, your users can use their Microsoft accounts to download and use them on up to five devices running any version of Windows 8.1, Windows 8, or Windows RT.
+    If your enterprise chooses to distribute software through the Windows Store, your users can use their Microsoft accounts to download and use them on up to five devices running any version of Windows 10, Windows 8.1, Windows 8, or Windows RT.
 
 -   **Single sign-on**:
 
-    Your users can use Microsoft account credentials to sign in to devices running Windows 8.1, Windows 8 or Windows RT. When they do this, Windows works with your Windows Store app to provide authenticated experiences for them. Users can associate a Microsoft account with their sign-in credentials for Windows Store apps or websites, so that these credentials roam across any devices running these supported versions.
+    Your users can use Microsoft account credentials to sign in to devices running Windows 10, Windows 8.1, Windows 8 or Windows RT. When they do this, Windows works with your Windows Store app to provide authenticated experiences for them. Users can associate a Microsoft account with their sign-in credentials for Windows Store apps or websites, so that these credentials roam across any devices running these supported versions.
 
 -   **Personalized settings synchronization**:
 
