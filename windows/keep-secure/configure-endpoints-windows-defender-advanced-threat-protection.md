@@ -79,7 +79,6 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 For additional settings, see the [Additional configuration settings section](additional-configuration-windows-defender-advanced-threat-protection.md).
 
 ## Configure endpoints with Microsoft Intune
-The following instructions will guide you on creating policies to manage Windows Defender ATP in Microsoft Intune.
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
  
