@@ -80,6 +80,8 @@ For additional settings, see the [Additional configuration settings section](add
 
 ## Configure endpoints with Microsoft Intune
 
+For more information on using other MDMs see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
+
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
  
     a.  Click **Endpoint Management** on the **Navigation pane**.
