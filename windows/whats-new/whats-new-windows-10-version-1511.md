@@ -12,6 +12,8 @@ author: TrudyHa
 
 Below is a list of some of the new and updated features in Windows 10, version 1511.
 
+> **Note:** For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+
 ## Deployment
 
 ### Provisioning devices using Windows Imaging and Configuration Designer (ICD)

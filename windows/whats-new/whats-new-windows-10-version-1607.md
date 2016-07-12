@@ -13,6 +13,7 @@ author: TrudyHa
 
 Below is a list of some of the new and updated features in Windows 10, version 1607 (also known as the Anniversary Update).
 
+> **Note:** For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
  
 ## Deployment
 
