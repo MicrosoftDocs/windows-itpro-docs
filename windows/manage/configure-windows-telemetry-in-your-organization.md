@@ -95,6 +95,7 @@ Windows telemetry also helps Microsoft better understand how customers use (or d
 
 **These examples show how the use of telemetry data enables Microsoft to build or enhance features which can help organizations increase employee productivity while lowering help desk calls.**
 
+<!--
 ### Insights into your own organization
 
 Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use.  The first of these, called Windows 10 Upgrade Analytics, will be available in Summer 2016.
@@ -119,7 +120,7 @@ Use Upgrade Analytics to get:
 
 The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
-
+-->
 ## How is telemetry data handled by Microsoft?
 
 ### Data collection
