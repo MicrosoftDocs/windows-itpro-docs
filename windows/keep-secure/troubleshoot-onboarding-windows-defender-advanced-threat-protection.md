@@ -55,6 +55,27 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection
 
 If the **OnboardingState** value is not set to **1**, you can use Event Viewer to review errors on the endpoint.
 
+You can check the event viewer for the onboarding script results.
+
+**Check the result of the script**:
+1. Click **Start**, type **Event Viewer**, and press **Enter**.
+
+2. Go to **Windows Logs** > **Application**.
+
+3. Look for an event from **WDATPOnboarding** event source.
+
+If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
+> **Note**&nbsp;&nbsp;The following event IDs are specific to the onboarding script only. 
+
+Event ID | Error Type | Resolution steps
+:---|:---|:---
+5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```
+10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat. Verify that the script was ran as an administrator.
+15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). 
+30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md) 
+40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md) 
+
 **Use Event Viewer to identify and adress onboarding errors**:   
 
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
