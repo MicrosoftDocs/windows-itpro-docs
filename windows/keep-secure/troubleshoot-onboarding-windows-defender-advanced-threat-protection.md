@@ -333,9 +333,15 @@ If the verification fails and your environment is using a proxy to connect to th
 ## Troubleshoot onboarding issues with Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
-Use the following tables to understand the possible causes of issues while onboarding. 
+Use the following tables to understand the possible causes of issues while onboarding:
 
-Microsoft Intune error codes and OMA-URIs:
+- Microsoft Intune error codes and OMA-URIs table
+- Known issues with non-compliance table
+- Mobile Device Management (MDM) event logs table
+
+If none of the event logs and troubleshooting steps work, download and run the Local script from the **Endpoint Management** section on the **Navigation pane** of the portal on the endpoint.  
+
+**Microsoft Intune error codes and OMA-URIs**:
 
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---|:---|:---|:---|:---
@@ -373,7 +379,7 @@ ID | Severity | Event description | Description
 1820 | Information | Windows Defender Advanced Threat Protection CSP: Set Nod's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br> TokenName: Contains node name <br> Result: Error details or succeeded.
 
 
-If none of the event logs and troubleshooting steps work, download and run the Local script from the **Endpoint Management** section on the **Navigation pane** of the portal on the endpoint. 
+
  
 <!--
 
