@@ -1,5 +1,4 @@
 # [Deploy Windows 10](index.md)
-## [Deploy Windows 10 in a test lab](windows-10-poc.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 ### [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
