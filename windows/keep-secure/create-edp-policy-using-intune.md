@@ -304,55 +304,9 @@ There are no default locations included with EDP, you must add each of your netw
 
 2.  Add as many locations as you need, and then click **OK**.<p>The **Add or Edit Enterprise Network Locations box** closes.
 
-3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.<p>After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data.<p>For steps about how to create and verify an EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) DRA certificate](#create-and-verify-an-encrypting-file-system-efs-dra-certificate) section of this topic. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.<p>
+3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.<p>After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data.<p>For steps about how to create and verify an EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) DRA certificate](create-and-verify-an-efs-dra-certificate.md) topic. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.<p>
 
     ![Microsoft Intune: Specify a data recovery certificate for your policy](images/intune-data-recovery.png)
-
-### Create and verify an Encrypting File System (EFS) DRA certificate
-If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use EDP in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
-
->**Important**<br>
-If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. To add your EFS DRA certificate to your policy by using Microsoft Intune, see Step 3 in the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic.
-
-**To manually create an EFS DRA certificate**
-1.	On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
-
-2.	Run this command:
-    
-    `cipher /r:<EFSRA>`
-    
-    Where *&lt;EFSRA&gt;* is the name of the .cer and .pfx files that you want to create.
-
-3.	When prompted, type and confirm a password to help protect your new Personal Information Exchange (.pfx) file.
-
-    The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1.
-
-    >**Important**<br> 
-    Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
-
-4. Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic. 
-
-**To verify your data recovery certificate is correctly set up on an EDP client computer**
-1. Open an app on your protected app list, and then create and save a file so that it’s encrypted by EDP.
-
-2.	Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
-
-    `cipher /c <filename>`
-
-    Where *&lt;filename&gt;* is the name of the file you created in Step 1.
-
-3.	Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
-
-**To recover your data using the EFS DRA certificate in a test environment**
-1.	Copy your EDP-encrypted file to a location where you have admin access.
-
-2.	Install the EFSDRA.pfx file, using your password.
-
-3.	Open a command prompt with elevated rights, navigate to the encrypted file, and then run this command:
-
-    `cipher /d <encryptedfile.extension>`
-    
-    Where *&lt;encryptedfile.extension&gt;* is the name of your encrypted file. For example, corporatedata.docx.
 
 ## Choose your optional EDP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
