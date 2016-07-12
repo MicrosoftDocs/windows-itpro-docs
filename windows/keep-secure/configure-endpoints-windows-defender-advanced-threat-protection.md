@@ -30,10 +30,10 @@ Windows Defender ATP supports the following deployment tools and methods:
 - [Mobile Device Management]
 - [Local script]
 
-## Configure with System Center Configuration Manager (current branch) version 1606
+## Configure endpoints with System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information see, the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx) section.
 
-## Configure with System Center 2012 Configuration Manager or later versions
+## Configure endpoints with System Center 2012 Configuration Manager or later versions
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -49,7 +49,7 @@ System Center Configuration Manager (current branch) version 1606, currently in 
 
     a. Choose a predefined device collection to deploy the package to.
 
-## Configure with Group Policy
+## Configure endpoints with Group Policy
 Using the GP configuration package ensures your endpoints will be correctly configured to report to the Windows Defender ATP service.
 
 > **Note**&nbsp;&nbsp;To use GP updates to deploy the package, you must be on Windows Server 2008 R2 or later. The endpoints must be running Windows 10 Insider Preview Build 14332 or later.
@@ -78,7 +78,7 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 For additional settings, see the [Additional configuration settings section](additional-configuration-windows-defender-advanced-threat-protection.md).
 
-## Configure with Microsoft Intune
+## Configure endpoints with Microsoft Intune
 The following instructions will guide you on creating policies to manage Windows Defender ATP in Microsoft Intune.
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
@@ -116,7 +116,7 @@ Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThrea
 
 > **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** and **Health Status for offboarded machines** use read-only properties and can't be remediated.
 
-## Configure endpoints using Mobile Device Management tools
+## Configure endpoints with Mobile Device Management tools
 You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints. 
 
 For more information on using other MDMs see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
