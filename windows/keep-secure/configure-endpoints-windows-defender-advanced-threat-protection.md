@@ -79,14 +79,46 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 For additional settings, see the [Additional configuration settings section](additional-configuration-windows-defender-advanced-threat-protection.md).
 
 ## Configure with Microsoft Intune
+You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints. 
+
+For more information on using other MDMs see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
+
+The following instructions will guide you on creating policies to manage Windows Defender ATP in Microsoft Intune.
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
  
     a.  Click **Endpoint Management** on the **Navigation pane**.
 
-    b.  Select **Local Script**, click **Download package** and save the .zip file.
+    b.  Select **Microsoft Intune**, click **Download package** and save the .zip file.
 
+2. Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
 
+3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+
+These policies are grouped into two:
+- Onboarding - Use the onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
+    - Onboarding
+    - Health Status for onboarded machines
+    - Configuration for onboarded machines
+- Offboarding - Use the offboarding policies to remove configuration settings on endpoints. These policies can be sub-categorized to:
+    - Offboarding
+    - Health Status for offboarded machines
+    - Configuration for offboarded machines
+
+> **Warming**&nbsp;&nbsp;These two groups must not be deployed on same machine at same time, otherwise this will cause unpredictable collisions.
+
+Policy | OMA-URI | Type | Description | Value
+:---|:---|:---|:---|:---
+Onboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding | String | Onboarding | ?
+Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | Windows Defender ATP service is running | True
+ | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Onboarded to Windows Defender ATP | 1
+  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OrgId | String | Onboarded to Organization ID | ?
+ Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | Windows Defender ATP Sample sharing is enabled | 1
+ Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding | String | Offboarding | ?
+ Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | Windows Defender ATP service is not running | False
+  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Offboarded from Windows Defender ATP  | 0
+
+> **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** and **Health Status for offboarded machines** use read-only properties and can't be remediated.
 
 ## Configure endpoints individually with a script
 <a name="manual"></a>
