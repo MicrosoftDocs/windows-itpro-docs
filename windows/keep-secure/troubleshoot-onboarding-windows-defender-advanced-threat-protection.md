@@ -341,15 +341,34 @@ Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause a
 :---|:---|:---|:---|:---
 0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding |  Possible cause: Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields <br> Troubleshooting steps: Check the event IDs in the [Ensure the endpoint is onboarded successfully](#ensure-the-endpoint-is-onboarded-successfully) section. Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
  | | | Onboarding <br> Offboarding <br> SampleSharing | Possible cause: Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br> Troubleshooting steps: Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```. If it doesn't exist, open an elevated command and add the key. 
-  | | | SenseIsRunning <br> OnboardingState <br> OrgId |  Possible cause: An attempt to remediate by read-only property. The root cause - onboarding has failed. <br> Troubleshooting steps: Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+  | | | SenseIsRunning <br> OnboardingState <br> OrgId |  Possible cause: An attempt to remediate by read-only property. Onboarding has failed. <br> Troubleshooting steps: Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
    | | | All | Possible cause: Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. Currently is supported platforms:  Enterprise, education, and professional. <br> Server is not supported. 
    0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  Possible cause: Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. Currently is supported platforms:  Enterprise, education, and professional. 
 
+**Known issues with non-compliance**
+The following table provides information on issues with non-compliance and how you can address the issues.
 
+Case | Symptoms | Possible cause and troubleshooting steps
+:---|:---|:---
+1 | Machine is compliant by SenseIsRunning OMA-URI. But is non-compliant by OrgId, Onboarding and OnboardingState OMA-URIs. | Possible cause: Check that user passed OOBE after Windows installation or upgrade. During OOBE onboarding couldn't be completed but SENSE is running already. <br> Troubleshooting steps: Wait for OOBE to complete.
+2 |  Machine is compliant by OrgId, Onboarding, and OnboardingState OMA-URIs, but is non-compliant by SenseIsRunning OMA-URI. |  Possible cause: Sense service's startup type is set as "Delayed Start". Sometimes this causes the Microsoft Intune server to report the machine as non-compliant by SenseIsRunning when DM session occurs on system start. <br> Troubleshooting steps: The issue should automatically be fixed within 24 hours.
+3 | Machine is non-compliant | Troubleshooting steps: Ensure that Onboarding and Offboarding policies are not deployed on the same machine at same time.
 
+**Mobile Device Management (MDM) event logs**
+View the MDM event logs to troubleshoot issues that might arise during onboarding:
 
+Log name: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Provider 
+Channel name: Admin
 
+ID | Severity | Event description | Description
+:---|:---|:---|:---
+1801 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Get Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3) | Windows Defender ATP has failed to get specific node's value. <br> TokenName: Contains node name that caused the error. <br> Result: Error details.  
+1802 | Information | Windows Defender Advanced Threat Protection CSP: Get Node's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3) |  Windows Defender ATP has completed to get specific node's value. <br> TokenName: Contains node name <br> Result: Error details or succeeded.
+1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br> TokenName: Contains node name that caused the error <br> Result: Error details.
+1820 | Information | Windows Defender Advanced Threat Protection CSP: Set Nod's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br> TokenName: Contains node name <br> Result: Error details or succeeded.
 
+If none of the event logs and troubleshooting steps work, download and run the Local script from the **Endpoint Management** section on the **Navigation pane** of the portal on the endpoint. 
+ 
 <!--
 
 ## There are no users in the Azure Active Directory
