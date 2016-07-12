@@ -27,10 +27,7 @@ Windows 10 provides IT professionals with advanced protection against modern sec
 - [Windows 10 content from Microsoft Ignite](http://go.microsoft.com/fwlink/p/?LinkId=613210)
 - [Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkId=690485)
 
-## Related topics
 
-
-[Windows 10 and Windows 10 Mobile](../index.md)
 
  
 
