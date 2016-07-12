@@ -68,9 +68,10 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 
 **To recover your EDP-protected desktop data after unenrollment**
 1. Have your employee sign in to the unenrolled device, open a command prompt, and type:
+    
     `Robocopy “%localappdata%\Microsoft\EDP\Recovery” <“new_location”> /EFSRAW`
 
-    Where `<”new_location”>` is a different location from where you store your recovery data. This location can be on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share that you can reach while logged in as a data recovery agent.
+    Where *&lt;”new_location”&gt;* is a different location from where you store your recovery data. This location can be on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share that you can reach while logged in as a data recovery agent.
 
 2. Sign in to a different device with administrator credentials that have access to your organization's Data Recovery Agent (DRA) certificate, and perform the file decryption and recovery by typing:
 
