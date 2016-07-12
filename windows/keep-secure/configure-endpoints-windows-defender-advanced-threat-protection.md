@@ -19,7 +19,35 @@ author: iaanw
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-You can use a Group Policy (GP) configuration package, a System Center Configuration Manager (SCCM) package, or an automated script to configure endpoints.
+Endpoints in your organization must be configured so that the Windows Defender ATP service can get telemetry from them. There are various methods and deployment tools that you can use to configure the endpoints in your organization. 
+
+Windows Defender ATP supports the following deployment tools and methods:
+
+- System Center Configuration Manager (current branch) version 1606 
+- System Center 2012 Configuration manager or later versions
+- Group Policy
+- Microsoft Intune
+- Mobile Device Management
+- Local script
+
+## Configure with System Center Configuration Manager (current branch) version 1606
+System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information see, the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx) section.
+
+## Configure with System Center 2012 Configuration Manager or later versions
+
+1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+
+    a. Click **Client onboarding** on the **Navigation pane**.
+
+    b. Select **System Center Configuration Manager**, click **Download package**, and save the .zip file.
+
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
+
+3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
+
+4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
+
+    a. Choose a predefined device collection to deploy the package to.
 
 ## Configure with Group Policy
 Using the GP configuration package ensures your endpoints will be correctly configured to report to the Windows Defender ATP service.
@@ -50,25 +78,17 @@ Using the GP configuration package ensures your endpoints will be correctly conf
 
 For additional settings, see the [Additional configuration settings section](additional-configuration-windows-defender-advanced-threat-protection.md).
 
+## Configure with Microsoft Intune
 
-## Configure with System Center Configuration Manager
+1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+ 
+    a.  Click **Client onboarding** on the **Navigation pane**.
 
-1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
-
-    a. Click **Client onboarding** on the **Navigation pane**.
-
-    b. Select **System Center Configuration Manager**, click **Download package**, and save the .zip file.
-
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
-
-3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
-
-4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
-
-    a. Choose a predefined device collection to deploy the package to.
+    b.  Select **Local Script**, click **Download package** and save the .zip file.
 
 
-## Configure endpoints individually with an automated script
+
+## Configure endpoints individually with a script
 <a name="manual"></a>
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 

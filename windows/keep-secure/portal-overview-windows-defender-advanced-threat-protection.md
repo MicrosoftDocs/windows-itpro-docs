@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Advanced Threat Protection portal overview
 description: Use the Windows Defender ATP portal to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
-keywords: Windows Defender ATP portal, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines view, preferences setup, client onboarding, advanced attacks
+keywords: Windows Defender ATP portal, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines view, preferences setup, endpoint management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -44,7 +44,7 @@ You can navigate through the portal using the menu options available in all sect
 Area | Description
 :---|:---
 (1) Settings | Provides access to configuration settings such as time zone, alert suppression rules, and license information.
-(2) Navigation pane | Use the navigation pane to move between the **Dashboard**, **Alerts queue**, **Machines view**, **Preferences setup**, and **Client onboarding**.
+(2) Navigation pane | Use the navigation pane to move between the **Dashboard**, **Alerts queue**, **Machines view**, **Preferences setup**, and **Endpoint Management**.
 **Dashboard**	| Provides clickable tiles that open detailed information on various alerts that have been detected in your organization.
 **Alerts queue** | Enables you to view separate queues of new, in progress, and resolved alerts.
 **Machines view**| Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
