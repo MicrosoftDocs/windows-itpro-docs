@@ -104,7 +104,7 @@ If the the service is running, then the result should look like the following sc
 
   ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
 
-If the service **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
+If the service ```START_TYPE``` is not set to ```AUTO_START```, then you'll need to set the service to automatically start.
 
 **Change the Windows Defender ATP service startup type from the command line:**
 
@@ -192,7 +192,7 @@ If the service is enabled, then the result should look like the following screen
 
 ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
-If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
+If the ```START_TYPE``` is not set to ```AUTO_START```, then you'll need to set the service to automatically start.
 
 
 
@@ -329,6 +329,26 @@ WinHTTP is independent of the Internet browsing proxy settings and other user co
 To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls) topic.
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.    
+
+## Troubleshoot onboarding issues with Microsoft Intune
+You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
+
+Use the following tables to understand the possible causes of issues while onboarding. 
+
+Microsoft Intune error codes and OMA-URIs:
+
+Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
+:---|:---|:---|:---|:---
+0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding |  Possible cause: Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields <br> Troubleshooting steps: Check the event IDs in the [Ensure the endpoint is onboarded successfully](#ensure-the-endpoint-is-onboarded-successfully) section. Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+ | | | Onboarding <br> Offboarding <br> SampleSharing | Possible cause: Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br> Troubleshooting steps: Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```. If it doesn't exist, open an elevated command and add the key. 
+  | | | SenseIsRunning <br> OnboardingState <br> OrgId |  Possible cause: An attempt to remediate by read-only property. The root cause - onboarding has failed. <br> Troubleshooting steps: Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+   | | | All | Possible cause: Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. Currently is supported platforms:  Enterprise, education, and professional. <br> Server is not supported. 
+   0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  Possible cause: Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. Currently is supported platforms:  Enterprise, education, and professional. 
+
+
+
+
+
 
 <!--
 
