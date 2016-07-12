@@ -24,6 +24,7 @@ The recovery process included in this topic only works for desktop devices. EDP 
 If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy.
 
 **To manually create an EFS DRA certificate**
+
 1.	On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
 
 2.	Run this command:
@@ -45,6 +46,7 @@ If you already have an EFS DRA certificate for your organization, you can skip c
     To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) topic.
 
 **To verify your data recovery certificate is correctly set up on an EDP client computer**
+
 1. Open an app on your protected app list, and then create and save a file so that it’s encrypted by EDP.
 
 2.	Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
@@ -56,6 +58,7 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 3.	Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
 
 **To recover your data using the EFS DRA certificate in a test environment**
+
 1.	Copy your EDP-encrypted file to a location where you have admin access.
 
 2.	Install the EFSDRA.pfx file, using your password.
@@ -67,6 +70,7 @@ If you already have an EFS DRA certificate for your organization, you can skip c
     Where *&lt;encryptedfile.extension&gt;* is the name of your encrypted file. For example, corporatedata.docx.
 
 **To recover your EDP-protected desktop data after unenrollment**
+
 1. Have your employee sign in to the unenrolled device, open a command prompt, and type:
     
     `Robocopy “%localappdata%\Microsoft\EDP\Recovery” <“new_location”> /EFSRAW`
