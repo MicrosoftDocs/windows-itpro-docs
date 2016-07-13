@@ -6,6 +6,10 @@ _site/
 Tools/NuGet/
 .optemp/
 
+
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config
+
+# User-specific files  
+.vs/
