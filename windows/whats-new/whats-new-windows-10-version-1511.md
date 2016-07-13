@@ -98,6 +98,12 @@ You can also [configure a lockdown state](https://technet.microsoft.com/en-us/it
 
 Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/en-us/itpro/windows/manage/windows-10-start-layout-options-and-policies).
 
+### Customized Start layout
+
+A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Starting in Windows 10, version 1511, administrators can configure a *partial* Start layout, which applies specified tile groups while allowing users to create and customize their own tile groups. Learn how to [customize and export Start layout](../manage/customize-and-export-start-layout.md).
+
+Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](../manage/windows-spotlight.md).
+
 ## Updates
 
 
