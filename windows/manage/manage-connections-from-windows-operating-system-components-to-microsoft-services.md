@@ -166,7 +166,7 @@ See the following table for a summary of the management settings. For more info,
 
 A certificate trust list is a predefined list of items, such as a list of certificate hashes or a list of file name, that are signed by a trusted entity. Windows automatically downloads an updated certificate trust list when it is available.
 
-To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates.
+To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates, which also incldues the disallowed certificate list and the pin rules list.
 
 Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\DisableRootAutoUpdate**, with a value of 1.
 
