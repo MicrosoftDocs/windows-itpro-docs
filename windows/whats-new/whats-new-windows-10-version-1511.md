@@ -23,16 +23,15 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ## Security
 
-### Easier certificate management
+### Bitlocker
 
+The following Bitlocker features were added in Windows 10, version 1511.
 
-For Windows 10-based devices, you can use your MDM server to directly deploy client authentication certificates using Personal Information Exchange (PFX), in addition to enrolling using Simple Certificate Enrollment Protocol (SCEP), including certificates to enable Windows Hello for Business in your enterprise. You'll be able to use MDM to enroll, renew, and delete certificates. As in Windows Phone 8.1, you can use the [Certificates app](http://go.microsoft.com/fwlink/p/?LinkId=615824) to review the details of certificates on your device. [Learn how to install digital certificates on Windows 10 Mobile.](~/keep-secure/installing-digital-certificates-on-windows-10-mobile.md)
-
-### Microsoft Passport
-
-In Windows 10, [Microsoft Passport](~/keep-secure/manage-identity-verification-using-microsoft-passport.md) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
-
-Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services.
+-   **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
+    It provides the following benefits:
+    -   The algorithm is FIPS-compliant.
+    -   Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
+        >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
 
 ### Credential Guard
 
@@ -45,6 +44,24 @@ The following Credential Guard features were added in Windows 10, version 1511.
 -   **Enable Credential Guard without UEFI lock**. You can enable Credential Guard by using the registry. This allows you to disable Credential Guard remotely. However, we recommend that Credential Guard is enabled with UEFI lock. You can configure this by using Group Policy.
 -   **CredSSP/TsPkg credential delegation**. CredSSP/TsPkg cannot delegate default credentials when Credential Guard is enabled.
 
+### Easier certificate management
+
+
+For Windows 10-based devices, you can use your MDM server to directly deploy client authentication certificates using Personal Information Exchange (PFX), in addition to enrolling using Simple Certificate Enrollment Protocol (SCEP), including certificates to enable Windows Hello for Business in your enterprise. You'll be able to use MDM to enroll, renew, and delete certificates. As in Windows Phone 8.1, you can use the [Certificates app](http://go.microsoft.com/fwlink/p/?LinkId=615824) to review the details of certificates on your device. [Learn how to install digital certificates on Windows 10 Mobile.](~/keep-secure/installing-digital-certificates-on-windows-10-mobile.md)
+
+### Microsoft Passport
+
+In Windows 10, [Microsoft Passport](~/keep-secure/manage-identity-verification-using-microsoft-passport.md) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
+
+Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services.
+
+### Security auditing
+
+-   The [WindowsSecurityAuditing](http://go.microsoft.com/fwlink/p/?LinkId=690517) and [Reporting](http://go.microsoft.com/fwlink/p/?LinkId=690525) configuration service providers allow you to add security audit policies to mobile devices.
+
+### Trusted Platform Module
+
+-   Key Storage Providers (KSPs) and srvcrypt support elliptical curve cryptography (ECC).
 
 ## Management
 
