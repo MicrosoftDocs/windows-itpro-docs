@@ -12,6 +12,12 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## July 2016
+
+| New or changed topic | Description |
+| ---|---|
+| [Windows 10 servicing options](introduction-to-windows-10-servicing.md) | Added detailed content on servicing branches, moved from [Windows 10 servicing overview](windows-10-servicing-options.md). |
+
 ## June 2016
 
 | New or changed topic | Description |
