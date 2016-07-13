@@ -17,10 +17,9 @@ Introduced in Windows 10, version 1607, Remote Credential Guard helps you protec
 
 Remote Credential Guard also provides single sign on experiences for Remote Desktop sessions.
 
-## How it works
+Use the following diagrams to help understand how Remote Credential Guard works and what it helps protect against.
 
-Do we want to include a technical overview like we did with [Credential Guard](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard#how-it-works)?
-
+![Remote Credential Guard](images/remote-credential-guard.png)
 
 ## Hardware and software requirements
 
