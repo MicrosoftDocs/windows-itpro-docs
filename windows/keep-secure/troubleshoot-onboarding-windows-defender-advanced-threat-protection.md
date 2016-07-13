@@ -57,7 +57,7 @@ If the **OnboardingState** value is not set to **1**, you can use Event Viewer t
 
 If you configured your endpoints with a deployment tool that required a script, you can check  the event viewer for the onboarding script results.
 
-**Check the result of the script**:
+**Check the result of the script**: <br>
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
 2. Go to **Windows Logs** > **Application**.
