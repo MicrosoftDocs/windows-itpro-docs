@@ -100,7 +100,7 @@ The following example makes Outlook Calendar available on the device.
 </Apps>
 ```
 
-When you list an app, you can also set the app to be pinned to the Start screen by specifying the tile size and location. Tip: draw a grid and mark your app tiles on it to make sure you get the result you want. The width (X axis) in the following example is the limit for Windows 10 Mobile, but the length (Y axis) is unlimited. The number of columns available to you depend on the value for [StartScreenSize](#start-screen-size).
+When you list an app, you can also set the app to be pinned to the Start screen by specifying the tile size and location. Tip: draw a grid and mark your app tiles on it to make sure you get the result you want. The width (X axis) in the following example is the limit for Windows 10 Mobile, but the length (Y axis) is unlimited. The number of columns available to you depends on the value for [StartScreenSize](#start-screen-size).
 
 ![Grid to lay out tiles for Start](images/StartGrid.jpg)
 
@@ -109,7 +109,7 @@ Tile size options are:
 * Medium: 2x2
 * Large: 2x4
 
-You can pin six small tiles or three medium tiles on a single row. A large tile can be combined with two small tiles or one medium tile on the same row. Obviously, you cannot set a medium tile for LocationX=5, or a large tile for LocationX=3, 4, or 5.
+Based on 6 columns, you can pin six small tiles or three medium tiles on a single row. A large tile can be combined with two small tiles or one medium tile on the same row. Obviously, you cannot set a medium tile for LocationX=5, or a large tile for LocationX=3, 4, or 5.
 
 If the tile configuration in your file exceeds the available width, such as setting a large tile to start at position 3 on the X axis, that tile is appended to the bottom of the Start screen. Also, if the tile configuration in your file would result in tiles overlapping each other, the overlapping tiles are instead appended to the bottom of the Start screen.
 
