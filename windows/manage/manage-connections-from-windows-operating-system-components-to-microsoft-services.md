@@ -193,9 +193,9 @@ Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Ad
 | Don't search the web or display web results in Search| Choose whether to search the web from Cortana.                                        |
 | Set what information is shared in Search             | Control what information is shared with Bing in Search.                               |
 
-When you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
+In Windows 10, version 1507 and Windows 10, version 1511, When you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
 
->**Important:** This is no longer required in Windows 10, version 1607. The **Don't search the web or display web results in Search** Group Policy will stop this. 
+>**Important:** These steps are not required in Windows 10, version 1607. 
 
 1.  Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Windows Firewall with Advanced Security** &gt; **Windows Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
 
@@ -221,7 +221,7 @@ When you enable the **Don't search the web or display web results in Search** Gr
 
     -   For **Remote port**, choose **All ports**.
 
-> **Note:**  If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
+If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
 ### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana MDM policies
 
