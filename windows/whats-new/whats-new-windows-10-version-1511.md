@@ -32,7 +32,18 @@ For Windows 10-based devices, you can use your MDM server to directly deploy cl
 
 In Windows 10, [Microsoft Passport](~/keep-secure/manage-identity-verification-using-microsoft-passport.md) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
 
-Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services. 
+Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services.
+
+### Credential Guard
+
+The following Credential Guard features were added in Windows 10, version 1511.
+
+-   **Credential Manager support**. Credentials that are stored with Credential Manager, including domain credentials, are protected with Credential Guard with the following considerations:
+    -   Credentials that are saved by the Remote Desktop Protocol cannot be used. Employees in your organization can manually store credentials in Credential Manager as generic credentials.
+    -   Applications that extract derived domain credentials using undocumented APIs from Credential Manager will no longer be able to use those saved derived credentials.
+    -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
+-   **Enable Credential Guard without UEFI lock**. You can enable Credential Guard by using the registry. This allows you to disable Credential Guard remotely. However, we recommend that Credential Guard is enabled with UEFI lock. You can configure this by using Group Policy.
+-   **CredSSP/TsPkg credential delegation**. CredSSP/TsPkg cannot delegate default credentials when Credential Guard is enabled.
 
 
 ## Management
