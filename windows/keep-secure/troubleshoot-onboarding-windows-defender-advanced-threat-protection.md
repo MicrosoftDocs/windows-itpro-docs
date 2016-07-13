@@ -56,9 +56,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection
 If the **OnboardingState** value is not set to **1**, you can use Event Viewer to review errors on the endpoint.
 
 If you configured your endpoints with a deployment tool that required a script, you can check  the event viewer for the onboarding script results.
-
-**Check the result of the script**:
 <br>
+**Check the result of the script**:
+
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
 2. Go to **Windows Logs** > **Application**.
