@@ -10,9 +10,11 @@ ms.pagetype: security, mobile
 ---
 
 # What's new in security auditing?
+
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
+-   Windows Server 2016
 
 Security auditing is one of the most powerful tools that you can use to maintain the integrity of your system. As part of your overall security strategy, you should determine the level of auditing that is appropriate for your environment. Auditing should identify attacks (successful or not) that pose a threat to your network, and attacks against resources that you have determined to be valuable in your risk assessment.
 

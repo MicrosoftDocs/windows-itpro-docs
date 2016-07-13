@@ -19,7 +19,7 @@ This topic provides an overview of Windows Defender, including a list of system 
 
 For more important information about running Windows Defender on a server platform, see [Windows Defender Overview for Windows Server Technical Preview](https://technet.microsoft.com/library/dn765478.aspx).
 
-Take advantage of Windows Defender by configuring the settings and definitions using the following tools:
+Take advantage of Windows Defender by configuring settings and definitions using the following tools:
 -   Microsoft Active Directory *Group Policy* for settings
 -   Windows Server Update Services (WSUS) for definitions
 

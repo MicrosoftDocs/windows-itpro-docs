@@ -12,7 +12,7 @@ author: brianlic-msft
 
 Microsoft is dedicated to provide our customers with a secure operating system, such as Windows 10 and Windows Server, as well as secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control of your environments by providing various configuration capabilities. Even though Windows and Windows Server are designed to be secure out-of-the-box, a large number of organizations still want more granular control of their security configurations. To navigate these large number of controls, organizations need guidance for configuring various security features. Microsoft provides this guidance in the form of security baselines.
 
-We recommend implementing an industry-standard configuration that is broadly known and well-tested, such as a Mirosoft security baseline, as opposed to creating one yourself. This helps increase flexibility and reduce costs.  
+We recommend implementing an industry-standard configuration that is broadly known and well-tested, such as a Microsoft security baseline, as opposed to creating one yourself. This helps increase flexibility and reduce costs.  
 
 ## What are security baselines?
 
@@ -54,7 +54,9 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
 
  -  [Windows Server 2012 R2 security baseline](http://go.microsoft.com/fwlink/p/?LinkID=799382)
 
-## How can I monitor the security baseline deployment on my servers?
+## How can I monitor security baseline deployments?
 
- Microsoft’s Operation Management Services (OMS) helps you monitor security baseline deployments across your servers. To find out more, check out [Operations Management Suite](https://aka.ms/omssecscm).
+Microsoft’s Operation Management Services (OMS) helps you monitor security baseline deployments across your servers. To find out more, check out [Operations Management Suite](https://aka.ms/omssecscm).
+
+You can use [System Center Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager) to monitor security baseline deployments on client devices within your organization.
  
