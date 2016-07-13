@@ -12,8 +12,6 @@ author: TrudyHa
 
 # Create provisioning packages (Surface Hub)
 
-REWRITE FOR ICD CHANGES
-
 This topic explains how to create and apply a provisioning package to Surface Hub devices. For Surface Hub, you can use provisioning packages to add certificates, customize policies, install Windows apps, or customize Windows Team settings. There are additional options for PCs and mobile devices running Windows 10. 
 
 You can apply a provisioning package on a USB during setup. 
@@ -76,7 +74,7 @@ You may use provisioning packages to install certificates that will allow the de
 
 2. Enter the **CertificatePassword**. 
 
-3. For **CertificatePath**, browse and select the certificate to be used. 
+3. For **CertificatePath**, browse and select the certificate. 
 
 4. Set **ExportCertificate** to **False**.
 
