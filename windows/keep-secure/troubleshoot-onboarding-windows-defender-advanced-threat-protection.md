@@ -55,7 +55,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection
 
 If the **OnboardingState** value is not set to **1**, you can use Event Viewer to review errors on the endpoint.
 
-You can check the event viewer for the onboarding script results.
+If you configured your endpoints with a deployment tool that required a script, you can check  the event viewer for the onboarding script results.
 
 **Check the result of the script**:
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
@@ -401,10 +401,6 @@ ID | Severity | Event description | Description
 1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br><br> TokenName: Contains node name that caused the error <br><br> Result: Error details.
 1820 | Information | Windows Defender Advanced Threat Protection CSP: Set Nod's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br><br> TokenName: Contains node name <br><br> Result: Error details or succeeded.
 
-## Troubleshoot onboarding issues with System Center Configuration Manager (current branch) version 1606
-
-Review the issues in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). 
-If none of the event logs and troubleshooting steps work, download the Local script from the **Endpoint Management** section of the portal, and run it in an elevated command prompt.
 
 <!--
 
