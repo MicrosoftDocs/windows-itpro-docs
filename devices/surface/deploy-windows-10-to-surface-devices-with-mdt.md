@@ -119,9 +119,9 @@ Using the Windows Deployment Services Configuration Wizard, configure WDS to fit
 
 #### Install Windows Assessment and Deployment Kit
 
-To install Windows ADK, run the adksetup.exe file that you downloaded from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#adkwin10). Windows ADK must be installed before MDT. You should always download and use the most recent version of Windows ADK. A new version is usually released corresponding with each new version of Windows.
+To install Windows ADK, run the Adksetup.exe file that you downloaded from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#adkwin10). Windows ADK must be installed before MDT. You should always download and use the most recent version of Windows ADK. A new version is usually released corresponding with each new version of Windows.
 
->**Note:**&nbsp;&nbsp;You can also use the adksetup.exe file to download the Windows ADK installation files locally for use on other devices.
+>**Note:**&nbsp;&nbsp;You can also use the Adksetup.exe file to download the Windows ADK installation files locally for use on other devices.
 
 When you get to the **Select the features you want to install** page, you only need to select the **Deployment Tools** and **Windows Preinstallation Environment (Windows PE)** check boxes to deploy Windows 10 using MDT, as shown in Figure 3. 
 
@@ -169,13 +169,13 @@ To create the deployment share, follow these steps:
 
    * **Path** – Specify a local folder where the deployment share will reside, and then click **Next**.
 
-   >**Note:**&nbsp;&nbsp;Like the WDS remote installation folder, it is recommended that you put this folder on an NTFS volume that is not your system volume.
+      >**Note:**&nbsp;&nbsp;Like the WDS remote installation folder, it is recommended that you put this folder on an NTFS volume that is not your system volume.
 
    * **Share** – Specify a name for the network share under which the local folder specified on the **Path** page will be shared, and then click **Next**.
 
-   >**Note:**&nbsp;&nbsp;The share name cannot contain spaces.
+      >**Note:**&nbsp;&nbsp;The share name cannot contain spaces.
 
-   >**Note:**&nbsp;&nbsp;You can use a Dollar Sign (**$**) to hide your network share so that it will not be displayed when users browse the available network shares on the server in File Explorer.
+      >**Note:**&nbsp;&nbsp;You can use a Dollar Sign (**$**) to hide your network share so that it will not be displayed when users browse the available network shares on the server in File Explorer.
 
    * **Descriptive Name** – Enter a descriptive name for the network share (this descriptive name can contain spaces), and then click **Next**. The descriptive name will be the name of the folder as it appears in the Deployment Workbench.
    * **Options** – You can accept the default options on this page. Click **Next**.
@@ -207,12 +207,12 @@ To import Windows 10 installation files, follow these steps:
    *Figure 7. Create a new folder on the New Folder page*
 
 2. On the **New Folder** page a series of steps is displayed, as follows:
-   * **General Settings** – Enter a name for the folder in the **Folder Name** field (for example Windows 10 Enterprise), add any comments you want in the **Comments** field, and then click **Next**.
+   * **General Settings** – Enter a name for the folder in the **Folder Name** field (for example, Windows 10 Enterprise), add any comments you want in the **Comments** field, and then click **Next**.
    * **Summary** – Review the specified configuration of the new folder on this page, and then click **Next**.
    * **Progress** – A progress bar will be displayed on this page while the folder is created. This page will likely pass very quickly.
    * **Confirmation** – When the new folder has been created, a **Confirmation** page displays the success of the operation. Click **Finish** to close the **New Folder** page.
 3. Expand the Operating Systems folder to see the newly created folder.
-4. Right-click the newly created folder and then click **Import Operating System** to launch the Import Operating System Wizard, as shown in Figure 8.
+4. Right-click the newly created folder, and then click **Import Operating System** to launch the Import Operating System Wizard, as shown in Figure 8.
 
    ![Import source files with the Import Operating System Wizard](images\surface-deploymdt-fig8.png "Import source files with the Import Operating System Wizard")
 
@@ -273,7 +273,7 @@ To boot the reference virtual machine from the network, the MDT deployment share
 
 To update the MDT boot media, follow these steps:
 
-1. Right-click the deployment share in the Deployment Workbench and click **Update Deployment Share** to start the Update Deployment Share Wizard, as shown in Figure 11.
+1. Right-click the deployment share in the Deployment Workbench, and then click **Update Deployment Share** to start the Update Deployment Share Wizard, as shown in Figure 11.
 
    ![Generate boot images with the Update Deployment Share Wizard](images\surface-deploymdt-fig11.png "Generate boot images with the Update Deployment Share Wizard")
 
@@ -321,20 +321,19 @@ To import the MDT boot media into WDS for PXE boot, follow these steps:
 
 If your WDS configuration is properly set up to respond to PXE clients, you should now be able to boot from the network with any device with a network adapter properly configured for network boot (PXE).
 
->**Note:**&nbsp;&nbsp;If your WDS server resides on the same server as DHCP or in a different subnet than the devices you are attempting to boot, additional configuration may be required. For more information, see [Managing Network Boot Programs]().
+>**Note:**&nbsp;&nbsp;If your WDS server resides on the same server as DHCP or in a different subnet than the devices you are attempting to boot, additional configuration may be required. For more information, see [Managing Network Boot Programs](https://technet.microsoft.com/library/cc732351).
 
-### Deploy and Capture a Reference Image
+### Deploy and capture a reference image
 
 Your deployment environment is now set up to create a reference image for Windows 10 complete with Windows Updates.
 
->**Note:**&nbsp;&nbsp;You cannot install version updates (such as Windows 10, Version 1511) in a reference image. To create a reference image with a new version of Windows, you must use installation files from that version of Windows. When  you install a version update in Windows, it effectively performs an upgrade to a new version of Windows, and upgraded installations of Windows cannot be prepared for deployment with Sysprep.
-
+>**Note:**&nbsp;&nbsp;You cannot install version updates (such as Windows 10, Version 1511) in a reference image. To create a reference image with a new version of Windows, you must use installation files from that version of Windows. When  you install a version update in Windows, it effectively performs an upgrade to a new version of Windows, and upgraded installations of Windows cannot be prepared for deployment with Sysprep.<br/><br/>
 By using a fully automated task sequence in an MDT deployment share dedicated to reference image creation, you can greatly reduce the time and effort required to create new reference images and it is the best way to ensure that your organization is ready for feature updates and new versions of Windows 10.
 
 You can now boot from the network with a virtual machine to run the prepared task sequence and generate a reference image. When you prepare your virtual machine in Hyper-V for reference image creation, consider the following:
 
 * Use a Generation 1 virtual machine for the simplicity of drivers and to ensure maximum compatibility with both BIOS and UEFI devices.
-* Ensure your virtual machine has at least 1 GB of system memory at boot. You can ensure that the virtual machine has at least 1 GB of memory at boot but allow the memory to adjust after boot by using Dynamic Memory. You can read more about Dynamic Memory in the [Hyper-V Dynamic Memory Overview]().
+* Ensure your virtual machine has at least 1 GB of system memory at boot. You can ensure that the virtual machine has at least 1 GB of memory at boot but allow the memory to adjust after boot by using Dynamic Memory. You can read more about Dynamic Memory in the [Hyper-V Dynamic Memory Overview](https://technet.microsoft.com/library/hh831766).
 * Ensure your virtual machine uses a legacy network adapter to support network boot (PXE); that network adapter should be connected to the same network as your deployment server, and that network adapter should receive an IP address automatically via DHCP.
 * Configure your boot order such that PXE Boot is the first option.
 
@@ -360,7 +359,7 @@ Perform the reference image deployment and capture using the following steps:
    * **Capture Image** – Click the **Capture an Image of this Reference Computer** option, as shown in Figure 16. In the **Location** field, keep the default location of the Captures folder. You can keep or change the name of the image file in the **File Name** field. When you are finished, click **Next**.
 
    ![Capture an image of the reference machine](images\surface-deploymdt-fig16.png "Capture an image of the reference machine")
-
+    
    *Figure 16. Use the Capture Image page to capture an image of the reference machine after deployment*
 
    * **Ready** – You can review your selections by expanding **Details** on the **Ready** page. Click **Begin** when you are ready to perform the deployment and capture of your reference image.
@@ -451,9 +450,9 @@ The Office Deployment Tool is a free download available in the Microsoft Downloa
 
 Download and install the version of Office Deployment Tool (ODT), for Office 2013 or Office 2016, that fits your organization’s needs and use the steps provided by that page to download the Office installation files for use with MDT.
 
-After you have downloaded the source files for your version of Office Click-to-Run, you need to edit the configuration.xml document with instructions to install Office Click-to-Run silently. To configure the Office Deployment Tool for silent installation, follow these steps:
+After you have downloaded the source files for your version of Office Click-to-Run, you need to edit the Configuration.xml document with instructions to install Office Click-to-Run silently. To configure the Office Deployment Tool for silent installation, follow these steps:
 
-1. Right-click the existing **configuration.xml** file, and then click **Edit**.
+1. Right-click the existing **Configuration.xml** file, and then click **Edit**.
 2. This action opens the file in Notepad. Replace the existing text with the following: 
 
    ```<Configuration> 
@@ -556,7 +555,7 @@ After the task sequence is created it can be modified for increased automation, 
 16.	On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 23), configure the following options:
    * In the **Choose a selection profile** box, select **Nothing**.
    * Click the **Install all drivers from the selection profile** button.
-
+    
    ![Set up deployment task sequence not to choose the drivers to inject into Windows](images\surface-deploymdt-fig23.png "Set up deployment task sequence not to choose the drivers to inject into Windows")
 
    *Figure 23. Set up the deployment task sequence not to choose the drivers to inject into Windows*
@@ -576,8 +575,7 @@ To automate the boot media rules, follow these steps:
 1.	Right-click your deployment share in the Deployment Workbench, and then click **Properties**.
 2.	Click the **Rules** tab, and then click **Edit Bootstrap.ini** to open Bootstrap.ini in Notepad.
 3.	Replace the text of the Bootstrap.ini file with the following text:
-
-   ```
+```
 [Settings]
 Priority=Model,Default
 
@@ -590,12 +588,13 @@ SkipBDDWelcome=YES
 
 [Surface Pro 4]
 DeployRoot=\\STNDeployServer\DeploymentShare$
-   ```
+```
 
 4. Press Ctrl+S to save Bootstrap.ini, and then close Notepad.
 
 You can use a number of variables in both boot media and deployment share rules to apply rules only when certain conditions are met. For example, you can use MAC addresses to identify specific machines where MDT will run fully automated, but will run with required user interaction on all other devices. You can also use the model of the device to instruct the MDT boot media to perform different actions based on computer model, much as the way **[Surface Pro 4]** is listed in Step 3. You can use the following cmdlet in a PowerShell session to see what the Model variable would be on a device:
-   `wmic csproduct get name`
+   
+```wmic csproduct get name```
 
 Rules used in the text shown in Step 3 include:
 
@@ -691,7 +690,7 @@ Rules used in this example include:
 
 You can read about all of the possible deployment share and boot media rules in the [Microsoft Deployment Toolkit Reference](https://technet.microsoft.com/library/dn781091).
 
-### Update and Import Updated MDT Boot Media
+### Update and import updated MDT boot media
 
 The process to update MDT boot media with these new rules and changes to the deployment share is very similar to the process to generate boot media from scratch.
 
