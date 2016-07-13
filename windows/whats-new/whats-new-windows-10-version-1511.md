@@ -34,6 +34,17 @@ In Windows 10, [Microsoft Passport](~/keep-secure/manage-identity-verification-u
 
 Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services. 
 
+### VPN profile options
+
+Windows 10 provides a set of VPN features that both increase enterprise security and provide an improved user experience, including:
+•	Always-on auto connection behavior 
+•	App=triggered VPN 
+•	VPN traffic filters
+•	Lock down VPN
+•	Integration with Microsoft Passport for Work
+
+[Learn more about the VPN options in Windows 10.](../keep-secure/vpn-profile-options.md)
+
 
 ## Management
 
@@ -62,13 +73,11 @@ Enterprises have the following identity and management choices.
 
 | Area | Choices |
 |---|---|                                                                                                                                                                            
-| Identity          | Active Directory; Azure AD                                                                                                                                                  |
-| Grouping          | Domain join; Workgroup; Azure AD join                                                                                                                                       |
+| Identity   | Active Directory; Azure AD         |
+| Grouping   | Domain join; Workgroup; Azure AD join    |
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
- 
-
-**Note**  
+ > **Note**  
 With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](http://go.microsoft.com/fwlink/p/?LinkID=613512).
 
  
