@@ -1095,13 +1095,13 @@ To remove Windows Media Player:
 
 ### <a href="" id="bkmk-spotlight"></a>22. Windows spotlight
 
-Windows spotlight provides different background images and text on the lock screen. You can control it by using the user interface or through Group Policy.
+Windows spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface or through Group Policy.
 
 If you're running Windows 10, version 1607 or later, you only need to enable the following Group Policy:
 
 - **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
 
-If you not running Windows 10, version 1607 or later, you can use the other options in this section.
+If you're not running Windows 10, version 1607 or later, you can use the other options in this section.
 
 -   Configure the following in **Settings**:
 
@@ -1120,7 +1120,7 @@ If you not running Windows 10, version 1607 or later, you can use the other opti
 
         -   Set the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
 
-        **Note**  This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**.
+        **Note:**  This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**.
 
          
 
