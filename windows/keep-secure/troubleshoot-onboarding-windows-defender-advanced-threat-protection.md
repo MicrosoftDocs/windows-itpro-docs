@@ -360,7 +360,7 @@ Use the following tables to understand the possible causes of issues while onboa
 - Known issues with non-compliance table
 - Mobile Device Management (MDM) event logs table
 
-If none of the event logs and troubleshooting steps work, download and run the Local script from the **Endpoint Management** section on the **Navigation pane** of the portal on the endpoint.  
+If none of the event logs and troubleshooting steps work, download the Local script from the **Endpoint Management** section of the portal, and run it in an elevated command prompt.  
 
 **Microsoft Intune error codes and OMA-URIs**:
 
@@ -370,9 +370,9 @@ Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause a
  | | | Onboarding <br> Offboarding <br> SampleSharing | Possible cause: Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br> Troubleshooting steps: Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```. If it doesn't exist, open an elevated command and add the key. 
   | | | SenseIsRunning <br> OnboardingState <br> OrgId |  Possible cause: An attempt to remediate by read-only property. Onboarding has failed. <br> Troubleshooting steps: Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
    | | | All | Possible cause: Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. Currently is supported platforms:  Enterprise, education, and professional. <br> Server is not supported. 
-   0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  Possible cause: Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. Currently is supported platforms:  Enterprise, education, and professional. 
+   0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  Possible cause: Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. Currently is supported platforms:  Enterprise, Education, and Professional. 
 
-
+<br>
 **Known issues with non-compliance**
 
 The following table provides information on issues with non-compliance and how you can address the issues.
@@ -383,7 +383,7 @@ Case | Symptoms | Possible cause and troubleshooting steps
 2 |  Machine is compliant by OrgId, Onboarding, and OnboardingState OMA-URIs, but is non-compliant by SenseIsRunning OMA-URI. |  Possible cause: Sense service's startup type is set as "Delayed Start". Sometimes this causes the Microsoft Intune server to report the machine as non-compliant by SenseIsRunning when DM session occurs on system start. <br> Troubleshooting steps: The issue should automatically be fixed within 24 hours.
 3 | Machine is non-compliant | Troubleshooting steps: Ensure that Onboarding and Offboarding policies are not deployed on the same machine at same time.
 
-
+<br>
 **Mobile Device Management (MDM) event logs**
 
 View the MDM event logs to troubleshoot issues that might arise during onboarding:
@@ -399,6 +399,10 @@ ID | Severity | Event description | Description
 1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br> TokenName: Contains node name that caused the error <br> Result: Error details.
 1820 | Information | Windows Defender Advanced Threat Protection CSP: Set Nod's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br> TokenName: Contains node name <br> Result: Error details or succeeded.
 
+## Troubleshoot onboarding issues with System Center Configuration Manager (current branch) version 1606
+
+Review the issues in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). 
+If none of the event logs and troubleshooting steps work, download the Local script from the **Endpoint Management** section of the portal, and run it in an elevated command prompt.
 
 <!--
 

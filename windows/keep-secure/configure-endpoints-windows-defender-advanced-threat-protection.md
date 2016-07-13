@@ -106,29 +106,15 @@ These policies are categorized into two groups:
 
  ![Table of policies used in Microsoft Intune ](images/oma-uri.png)
 
-<!--
-Policy | OMA-URI | Type | Description | Value
-:---|:---|:---|:---|:---
-Onboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding | String | Onboarding | ?
-Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | Windows Defender ATP service is running | True
- | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Onboarded to Windows Defender ATP | 1
-  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OrgId | String | Onboarded to Organization ID | ?
- Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | Windows Defender ATP Sample sharing is enabled | 1
- Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding | String | Offboarding | ?
- Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | Windows Defender ATP service is not running | False
-  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Offboarded from Windows Defender ATP  | 0
-
--->
-
 > **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** and **Health Status for offboarded machines** use read-only properties and can't be remediated.
 
 ## Configure endpoints with Mobile Device Management tools
 You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints. 
 
-For more information on using other MDMs see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
+For more information on using Windows Defender CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## Configure endpoints individually with a script
-<a name="manual"></a>
+
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
 
