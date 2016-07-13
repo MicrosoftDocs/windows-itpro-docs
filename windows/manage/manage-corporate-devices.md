@@ -116,15 +116,14 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 ## Related topics
 
 
-[New policies for Windows 10](new-policies-for-windows-10.md)
+- [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md) 
+- [New policies for Windows 10](new-policies-for-windows-10.md)
+- [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
+- [Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
+- [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
+- [Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers.md)
 
-[Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 
-[Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
-
-[Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
-
-[Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md) 
 
  
 

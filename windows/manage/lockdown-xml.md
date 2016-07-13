@@ -104,7 +104,7 @@ When you list an app, you can also set the app to be pinned to the Start screen 
 
 ![Grid to lay out tiles for Start](images/StartGrid.jpg)
 
-Tile size options are:
+Tile sizes are:
 * Small: 1x1
 * Medium: 2x2
 * Large: 2x4
