@@ -16,7 +16,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 | New or changed topic | Description |
 | ---|---|
-| [Windows 10 servicing options](introduction-to-windows-10-servicing.md) | Added detailed content on servicing branches, moved from [Windows 10 servicing overview](windows-10-servicing-options.md). |
+| [Windows 10 servicing options](introduction-to-windows-10-servicing.md)  | Added detailed content on servicing branches, moved from [Windows 10 servicing overview](../plan/windows-10-servicing-options.md). |
 
 ## June 2016
 
