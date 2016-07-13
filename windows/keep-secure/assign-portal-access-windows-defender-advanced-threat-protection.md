@@ -28,11 +28,11 @@ Windows Defender ATP users and access permissions are managed in Azure Active Di
 - Full access (Read and Write)
 - Read only access
 
-**Full access** <br>
+**Full access** 
 Users with full access can log in, view all system information as well as resolve alerts, submit files for deep analysis, and download the onboarding package.
 Assigning full access rights requires adding the users to the “Security Administrator” or “Global Administrator” AAD built-in roles.
 
-**Read only access** <br>
+**Read only access** 
 Users with read only access can log in, view all alerts, and related information. 
 They will not be able to change alert states, submit files for deep analysis or perform any state changing operations.
 Assigning read only access rights requires adding the users to the “Security Reader” AAD built-in role.
