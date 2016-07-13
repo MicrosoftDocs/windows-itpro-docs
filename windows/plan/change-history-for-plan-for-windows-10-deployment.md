@@ -18,7 +18,7 @@ This topic lists new and updated topics in the [Plan for Windows 10 deployment](
 
 | New or changed topic                                                                                                                             | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| [Windows 10 servicing overview](windows-10-servicing-options.md) | Content on this page was summarized. Detailed content about servicing branches was moved to the [Windows 10 servicing options](introduction-to-windows-10-servicing) page.|
+| [Windows 10 servicing overview](windows-10-servicing-options.md) | Content on this page was summarized. Detailed content about servicing branches was moved to the [Windows 10 servicing options](../manage/introduction-to-windows-10-servicing.md) page. |
 
 ## May 2016
 
