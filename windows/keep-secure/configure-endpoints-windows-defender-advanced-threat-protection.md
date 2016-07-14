@@ -23,32 +23,12 @@ Endpoints in your organization must be configured so that the Windows Defender A
 
 Windows Defender ATP supports the following deployment tools and methods:
 
+- Group Policy
 - System Center Configuration Manager (current branch) version 1606 
 - System Center 2012 Configuration manager or later versions
-- Group Policy
-- Microsoft Intune
 - Mobile Device Management
+- Microsoft Intune
 - Local script
-
-## Configure endpoints with System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP) section.
-
-## Configure endpoints with System Center 2012 Configuration Manager or later versions
-You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center 2012 Configuration Manager or later versions, including: System Center 2012 R2 Configuration Manager, System Center Configuration Manager and System Center Configuration Manager (current branch), version 1602 or earlier. 
-
-1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
-
-    a. Click **Endpoint Management** on the **Navigation pane**.
-
-    b. Select **System Center Configuration Manager**, click **Download package**, and save the .zip file.
-
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
-
-3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
-
-4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
-
-    a. Choose a predefined device collection to deploy the package to.
 
 ## Configure endpoints with Group Policy
 
@@ -78,6 +58,31 @@ You can use System Center Configuration Manager’s existing functionality to cr
 9. Click **OK** and close any open GPMC windows.
 
 For additional settings, see the [Additional configuration settings section](additional-configuration-windows-defender-advanced-threat-protection.md).
+
+## Configure endpoints with System Center Configuration Manager (current branch) version 1606
+System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP) section.
+
+## Configure endpoints with System Center 2012 Configuration Manager or later versions
+You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center 2012 Configuration Manager or later versions, including: System Center 2012 R2 Configuration Manager, System Center Configuration Manager and System Center Configuration Manager (current branch), version 1602 or earlier. 
+
+1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+
+    a. Click **Endpoint Management** on the **Navigation pane**.
+
+    b. Select **System Center Configuration Manager**, click **Download package**, and save the .zip file.
+
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
+
+3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
+
+4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
+
+    a. Choose a predefined device collection to deploy the package to.
+
+## Configure endpoints with Mobile Device Management tools
+You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints. 
+
+For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## Configure endpoints with Microsoft Intune
 
@@ -109,13 +114,7 @@ These policies are categorized into two groups:
 
 > **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** and **Health Status for offboarded machines** use read-only properties and can't be remediated.
 
-## Configure endpoints with Mobile Device Management tools
-You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints. 
-
-For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
-
-
-## Configure endpoints individually with a script
+## Configure endpoints individually with a local script
 
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
