@@ -31,10 +31,10 @@ Windows Defender ATP supports the following deployment tools and methods:
 - Local script
 
 ## Configure endpoints with System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information see, the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP) section.
+System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP) section.
 
 ## Configure endpoints with System Center 2012 Configuration Manager or later versions
-You can use System Center Configuration Manager’s existing functionality to create a policy to configure you endpoints. This is supported in System Center 2012 Configuration Manager or later versions, including: System Center 2012 R2 Configuration Manager, System Center Configuration Manager and System Center Configuration Manager (current branch), version 1602 or earlier. 
+You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center 2012 Configuration Manager or later versions, including: System Center 2012 R2 Configuration Manager, System Center Configuration Manager and System Center Configuration Manager (current branch), version 1602 or earlier. 
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
