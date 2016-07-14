@@ -27,7 +27,7 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ### Applocker
 
-#### New Apolocker features in Windows 10, version 1507
+#### New Applocker features in Windows 10, version 1507
 
 -   A new parameter was added to the [New-AppLockerPolicy](http://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
 -   A new [AppLocker](http://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
