@@ -34,14 +34,13 @@ This new model uses simpler deployment methods, reducing the overall amount of e
 
 The concept of branching goes back many years, and represents how Windows has traditionally been written and serviced. Each release of Windows was from a particular branch of the Windows code, and updates would be made to that release for the lifecycle of that release. This concept still applies now with Windows 10, but is much more visible because it is incorporated directly into the servicing model.
 
-During the development of Windows 10, Microsoft implemented the following new servicing options:
+Microsoft has implemented the following new servicing options in Windows 10:
 
-![branches](images/branch.png)
-
-**Windows Insider Program**: To see new features before they are released, to provide feedback on those new features, and to initially validate compatibility with existing applications and hardware, a small number of PCs can leverage the Windows Insider Program branch. These are typically dedicated lab machines used for IT testing, secondary PCs used by IT administrators, and other non-critical devices.
-**Current Branch (CB)**: For early adopters, IT teams, and other broader piloting groups, the Current Branch (CB) can be used to further validate application compatibility and newly-released features.
-**Current Branch for Business (CBB)**. For the majority of people in an organization, the Current Branch for Business (CBB) allows for a staged deployment of new features over a longer period of time.
+**Windows Insider Program**: To see new features before they are released, to provide feedback on those new features, and to initially validate compatibility with existing applications and hardware, a small number of PCs can leverage the Windows Insider Program branch. These are typically dedicated lab machines used for IT testing, secondary PCs used by IT administrators, and other non-critical devices.<BR>
+**Current Branch (CB)**: For early adopters, IT teams, and other broader piloting groups, the Current Branch (CB) can be used to further validate application compatibility and newly-released features.<BR>
+**Current Branch for Business (CBB)**. For the majority of people in an organization, the Current Branch for Business (CBB) allows for a staged deployment of new features over a longer period of time.<BR>
 **Long-Term Servicing Branch (LTSB)**: For critical or specialized devices (for example, operation of factory floor machinery, point-of-sale systems, automated teller machines), the Long-Term Servicing Branch (LTSB) provides a version of Windows 10 Enterprise that receives no new features, while continuing to be supported with security and other updates for a long time. (Note that the Long-Term Servicing Branch is a separate Windows 10 Enterprise image, with many in-box apps, including Microsoft Edge, Cortana, and Windows Store, removed.)<BR>
+![branches](images/branch.png)
 
 These servicing options provide pragmatic solutions to keep more devices more current in enterprise environments than was previously possible. Most organizations will leverage all of these choices, with the mix determined by how individual PCs are used. Some examples are shown in the table below:
 
@@ -52,8 +51,8 @@ These servicing options provide pragmatic solutions to keep more devices more cu
 | Pharmaceuticals    | &lt;1%                  | 10%            | 50%                         | 40%                        |
 | Consulting         | 10%                     | 50%            | 35%                         | 5%                         |
 | Software developer | 30%                     | 60%            | 5%                          | 5%                         |
-
-Because every organization is different, the exact breakdown will vary even within a specific industry; these should be considered only examples, not specific recommendations. To determine the appropriate mix for a specific organization, profile how individual PCs are used within the organization, and target them with the appropriate branch.
+<BR>
+Because every organization is different, the exact breakdown will vary even within a specific industry. The examples shown above should not be taken as specific recommendations. To determine the appropriate mix for a specific organization, profile how individual PCs are used within the organization, and target them with the appropriate branch.
 
 -   Retailers often have critical devices (for example, point-of-sale systems) in stores which results in higher percentages of PCs on the Long-Term Servicing Branch. But those used by information workers in support of the retail operations would leverage Current Branch for Business to receive new features.
 
@@ -67,7 +66,7 @@ Because every organization is different, the exact breakdown will vary even with
 
 Note that there are few, if any, scenarios where an entire organization would use the Long-Term Servicing Branch for all PCs – or even for a majority of them.
 
-In addition to implementing these new servicing options, Microsoft streamlined the Windows product engineering and release cycle so that Microsoft can deliver new features, experiences, and functionality more quickly than ever. Microsoft also created new ways to deliver and install feature upgrades and servicing updates that simplify deployments and on-going management, broaden the base of employees who can be kept current with the latest Windows capabilities and experiences, and lower total cost of ownership.
+With these new servicing options, Microsoft streamlined the Windows product engineering and release cycle so that Microsoft can deliver new features, experiences, and functionality more quickly than ever. Microsoft also created new ways to deliver and install feature upgrades and servicing updates that simplify deployments and on-going management, broaden the base of employees who can be kept current with the latest Windows capabilities and experiences, and lower total cost of ownership.
 
 Windows 10 enables organizations to fulfill the desire to provide users with the latest features while balancing the need for manageability and cost control. To keep pace with technology, there are good business reasons to keep a significant portion of your enterprise's devices *current* with the latest release of Windows. 
 

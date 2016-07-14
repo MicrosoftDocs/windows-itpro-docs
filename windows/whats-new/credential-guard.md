@@ -13,6 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
+-   Windows Server 2016
 
 Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 
