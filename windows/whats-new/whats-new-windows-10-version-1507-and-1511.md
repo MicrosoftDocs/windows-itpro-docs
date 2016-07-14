@@ -20,6 +20,8 @@ Below is a list of some of the new and updated features included in  the initial
 
 With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows Provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management (through a wizard-driven user interface) and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
 
+[Learn more about provisioning in Windows 10.](../deploy/provisioning-packages.md)
+
 
 ## Security
 
