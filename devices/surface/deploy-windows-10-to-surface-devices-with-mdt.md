@@ -576,7 +576,7 @@ To automate the boot media rules, follow these steps:
 2.	Click the **Rules** tab, and then click **Edit Bootstrap.ini** to open Bootstrap.ini in Notepad.
 3.	Replace the text of the Bootstrap.ini file with the following text:
 
-```
+   ```
 [Settings]
 Priority=Model,Default
 
@@ -589,7 +589,7 @@ SkipBDDWelcome=YES
 
 [Surface Pro 4]
 DeployRoot=\\STNDeployServer\DeploymentShare$
-```
+   ```
 
 4. Press Ctrl+S to save Bootstrap.ini, and then close Notepad.
 
