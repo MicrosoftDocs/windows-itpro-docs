@@ -392,12 +392,12 @@ There are no default locations included with EDP, you must add each of your netw
                 <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-EDP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
             </tr>
             <tr>
-                <td>Enterprise IPv4 Range (Required, if not using an IPv6 range)</td>
+                <td>Enterprise IPv4 Range (Required, if not using IPv6)</td>
                 <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
                 <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
             </tr>
             <tr>
-                <td>Enterprise IPv6 Range (Required, if not using an IPv4 range)</td>
+                <td>Enterprise IPv6 Range (Required, if not using IPv4)</td>
                 <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
                 <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
             </tr>
