@@ -240,7 +240,7 @@ If you don't specify a button event, all actions for the button are disabled. In
 
 ButtonRemapList lets you change the app that a button will run. You can remap the Search button and any custom buttons included by the OEM. You can't remap the Back, Start, or Camera buttons.
 
->  **Warning**&nbsp;&nbsp;Button remapping can enable a user to open an application that is not in the allow list. Use button lock down to prevent application access for a user role.
+>  **Warning**&nbsp;&nbsp;Button remapping can enable a user to open an application that is not in the allow list for that user role. Use button lock down to prevent application access for a user role.
  
 To remap a button, you specify the button, the event, and the product ID for the app that you want the event to open. 
 In the following example, when a user presses the Search button, the phone dialer will open instead of the Search app.
