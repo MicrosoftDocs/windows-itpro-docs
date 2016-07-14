@@ -42,8 +42,14 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 - Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
+
  
 ## Management
+
+## Use Remote Desktop Connection for PCs joined to Azure Active Directory
+
+From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is joined to Azure Active Directory (Azure AD). [Learn about the requirements and supported configurations.](../manage/connect-to-remote-aadj-pc.md)
+
 
 ### Taskbar configuration
 

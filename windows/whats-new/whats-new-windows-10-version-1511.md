@@ -63,6 +63,18 @@ Microsoft Passport lets users authenticate to a Microsoft account, an Active Dir
 
 -   Key Storage Providers (KSPs) and srvcrypt support elliptical curve cryptography (ECC).
 
+### VPN profile options
+
+Windows 10 provides a set of VPN features that both increase enterprise security and provide an improved user experience, including:
+•	Always-on auto connection behavior 
+•	App=triggered VPN 
+•	VPN traffic filters
+•	Lock down VPN
+•	Integration with Microsoft Passport for Work
+
+[Learn more about the VPN options in Windows 10.](../keep-secure/vpn-profile-options.md)
+
+
 ## Management
 
 Windows 10 provides mobile device management (MDM) capabilities for PCs, laptops, tablets, and phones that enable enterprise-level management of corporate-owned and personal devices.
@@ -90,13 +102,11 @@ Enterprises have the following identity and management choices.
 
 | Area | Choices |
 |---|---|                                                                                                                                                                            
-| Identity          | Active Directory; Azure AD                                                                                                                                                  |
-| Grouping          | Domain join; Workgroup; Azure AD join                                                                                                                                       |
+| Identity   | Active Directory; Azure AD         |
+| Grouping   | Domain join; Workgroup; Azure AD join    |
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
- 
-
-**Note**  
+ > **Note**  
 With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](http://go.microsoft.com/fwlink/p/?LinkID=613512).
 
  
@@ -116,6 +126,12 @@ You can configure a persistent locked down state to [create a kiosk-type device]
 You can also [configure a lockdown state](https://technet.microsoft.com/en-us/itpro/windows/manage/lock-down-windows-10-to-specific-apps) that takes effect when a given user account logs on. The lockdown restricts the user to only the apps that you specify.
 
 Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/en-us/itpro/windows/manage/windows-10-start-layout-options-and-policies).
+
+### Customized Start layout
+
+A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Starting in Windows 10, version 1511, administrators can configure a *partial* Start layout, which applies specified tile groups while allowing users to create and customize their own tile groups. Learn how to [customize and export Start layout](../manage/customize-and-export-start-layout.md).
+
+Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](../manage/windows-spotlight.md).
 
 ## Updates
 
