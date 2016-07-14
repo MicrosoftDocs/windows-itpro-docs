@@ -575,6 +575,7 @@ To automate the boot media rules, follow these steps:
 1.	Right-click your deployment share in the Deployment Workbench, and then click **Properties**.
 2.	Click the **Rules** tab, and then click **Edit Bootstrap.ini** to open Bootstrap.ini in Notepad.
 3.	Replace the text of the Bootstrap.ini file with the following text:
+
 ```
 [Settings]
 Priority=Model,Default
