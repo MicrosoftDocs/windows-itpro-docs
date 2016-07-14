@@ -354,7 +354,7 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.    
 
-## Troubleshoot onboarding issues with Microsoft Intune
+## Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
 Use the following tables to understand the possible causes of issues while onboarding:
