@@ -21,7 +21,7 @@ In addition to the traditional deployment method of reimaging devices, administr
 
 If you are not already familiar with the deployment of Windows or the Microsoft deployment tools and technologies, you should read the Deploy Windows 10 to Surface Devices with MDT article and familiarize yourself with the traditional deployment method before you proceed.
 
-## The upgrade concept
+#### The upgrade concept
 
 When you use the factory installation media to install Windows on a device, you are presented with two options or *installation paths* to install Windows on that device. The first of these installation paths – *clean installation* –  allows you to apply a factory image of Windows to that device, including all default settings. The second of these installation paths – *upgrade* – allows you to apply Windows to the device but retains the device’s users, apps, and settings.
 
