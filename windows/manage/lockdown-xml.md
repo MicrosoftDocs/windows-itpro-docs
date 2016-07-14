@@ -469,6 +469,379 @@ After you deploy your devices, you can still configure lockdown settings through
 
 To push lockdown settings to enrolled devices, use the AssignedAccessXML setting and use the lockdown XML as the value. The lockdown XML will be in a HandheldLockdown section that becomes XML embedded in XML, so the XML that you enter must use escaped characters (such as &lt; in place of &lt;). After the MDM provider pushes your lockdown settings to the device, the CSP processes the file and updates the device.
 
+## Full Lockdown.xml example
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<HandheldLockdown version="1.0" >
+    <Default>
+        <ActionCenter enabled="true" />
+        <Apps>
+            <!-- Settings -->
+            <Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}">
+                <PinToStart>
+                    <Size>Large</Size>
+                    <Location>
+                        <LocationX>0</LocationX>
+                        <LocationY>0</LocationY>
+                    </Location>
+                </PinToStart>
+            </Application>
+            <!-- Outlook Calendar -->
+            <Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}" aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar">
+                <PinToStart>
+                    <Size>Small</Size>
+                    <Location>
+                        <LocationX>0</LocationX>
+                        <LocationY>2</LocationY>
+                    </Location>
+                </PinToStart>
+            </Application>
+            <!-- Photos -->
+            <Application productId="{FCA55E1B-B9A4-4289-882F-084EF4145005}">
+                <PinToStart>
+                    <Size>Medium</Size>
+                    <Location>
+                        <LocationX>2</LocationX>
+                        <LocationY>2</LocationY>
+                    </Location>
+                </PinToStart>
+            </Application>
+            <!-- Edge -->
+            <Application productId="{395589FB-5884-4709-B9DF-F7D558663FFD}" />
+            <!-- Login App -->
+            <Application productId="{C85DC60D-30D4-4C67-A4B4-58282F1D152C}" />
+        </Apps>
+        <Buttons>
+            <ButtonLockdownList>
+                <!-- Lockdown all buttons -->
+                <Button name="Search">
+                </Button>
+                <Button name="Camera">
+                </Button>
+                <Button name="Custom1">
+                </Button>
+                <Button name="Custom2">
+                </Button>
+                <Button name="Custom3">
+                </Button>
+            </ButtonLockdownList>
+            <ButtonRemapList>
+                <Button name="Search">
+                    <ButtonEvent name="Press">
+                        <!-- Edge-->
+                        <Application productId="{395589FB-5884-4709-B9DF-F7D558663FFD}" parameters="" />
+                    </ButtonEvent>
+                </Button>
+            </ButtonRemapList>
+        </Buttons>
+        <CSPRunner>
+            <SyncML xmlns="SYNCML:SYNCML1.2">
+                <SyncBody>
+                    <Replace>
+                        <CmdID>1</CmdID>
+                        <Item>
+                            <Target>
+                                <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeAccentColorID</LocURI>
+                            </Target>
+                            <Meta>
+                                <Format xmlns="syncml:metinf">int</Format>
+                            </Meta>
+                            <!-- zero based index of available theme colors -->
+                            <Data>7</Data>
+                        </Item>
+                    </Replace>
+                    <Final/>
+                </SyncBody>
+            </SyncML>
+            <SyncML xmlns="SYNCML:SYNCML1.2">
+                <SyncBody>
+                    <Replace>
+                        <CmdID>1</CmdID>
+                        <Item>
+                            <Target>
+                                <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeBackground</LocURI>
+                            </Target>
+                            <Meta>
+                                <Format xmlns="syncml:metinf">int</Format>
+                            </Meta>
+                            <!-- 0 for "light", 1 for "dark" -->
+                            <Data>1</Data>
+                        </Item>
+                    </Replace>
+                    <Final/>
+                </SyncBody>
+            </SyncML>
+            <SyncML xmlns="SYNCML:SYNCML1.2">
+                <SyncBody>
+                    <Replace>
+                        <CmdID>2</CmdID>
+                        <Item>
+                            <Target>
+                                <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
+                            </Target>
+                            <Meta>
+                                <Format xmlns="syncml:metinf">chr</Format>
+                                <Type xmlns="syncml:metinf">text/plain</Type>
+                            </Meta>
+                            <Data>c:\windows\system32\lockscreen\480x800\Wallpaper_05.jpg</Data>
+                        </Item>
+                    </Replace>
+                    <Final/>
+                </SyncBody>
+            </SyncML>
+        </CSPRunner>
+        <MenuItems>
+            <DisableMenuItems/>
+        </MenuItems>
+        <Settings>
+            <!-- Quick actions: Brightness, Rotation -->
+            <System name="SystemSettings_System_Display_QuickAction_Brightness"/>
+            <System name="SystemSettings_System_Display_Internal_Rotation"/>
+            <!-- Brightness+Rotation, About -->
+            <System name="SettingsPageGroupPCSystem"/>
+            <System name="SettingsPageDisplay"/>
+            <System name="SettingsPagePCSystemInfo"/>
+            <!-- Ringtones, sounds -->
+            <System name="SettingsPageGroupPersonalization"/>
+            <System name="SettingsPageSounds"/>
+        </Settings>
+        <Tiles>
+            <EnableTileManipulation/>
+        </Tiles>
+        <StartScreenSize>Small</StartScreenSize>
+    </Default>
+    <RoleList>
+        <Role guid="{88501844-3b51-4c9f-9da7-7ca745e7da6b}" name="Associate">
+            <ActionCenter enabled="0"/>
+            <Apps>
+                <!-- Settings -->
+                <Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}">
+                    <PinToStart>
+                        <Size>Small</Size>
+                        <Location>
+                            <LocationX>0</LocationX>
+                            <LocationY>0</LocationY>
+                        </Location>
+                    </PinToStart>
+                </Application>
+                <!-- Outlook Calendar -->
+                <Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}" aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar">
+                    <PinToStart>
+                        <Size>Large</Size>
+                        <Location>
+                            <LocationX>0</LocationX>
+                            <LocationY>2</LocationY>
+                        </Location>
+                    </PinToStart>
+                </Application>
+                <!-- Login App -->
+                <Application productId="{C85DC60D-30D4-4C67-A4B4-58282F1D152C}" />
+            </Apps>
+            <Buttons />
+            <CSPRunner>
+                <SyncML xmlns="SYNCML:SYNCML1.2">
+                    <SyncBody>
+                        <Replace>
+                            <CmdID>1</CmdID>
+                            <Item>
+                                <Target>
+                                    <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeAccentColorID</LocURI>
+                                </Target>
+                                <Meta>
+                                    <Format xmlns="syncml:metinf">int</Format>
+                                </Meta>
+                                <!-- zero based index of available theme colors -->
+                                <Data>10</Data>
+                            </Item>
+                        </Replace>
+                        <Final/>
+                    </SyncBody>
+                </SyncML>
+                <SyncML xmlns="SYNCML:SYNCML1.2">
+                    <SyncBody>
+                        <Replace>
+                            <CmdID>1</CmdID>
+                            <Item>
+                                <Target>
+                                    <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeBackground</LocURI>
+                                </Target>
+                                <Meta>
+                                    <Format xmlns="syncml:metinf">int</Format>
+                                </Meta>
+                                <!-- 0 for "light", 1 for "dark" -->
+                                <Data>0</Data>
+                            </Item>
+                        </Replace>
+                        <Final/>
+                    </SyncBody>
+                </SyncML>
+                <SyncML xmlns="SYNCML:SYNCML1.2">
+                    <SyncBody>
+                        <Replace>
+                            <CmdID>2</CmdID>
+                            <Item>
+                                <Target>
+                                    <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
+                                </Target>
+                                <Meta>
+                                    <Format xmlns="syncml:metinf">chr</Format>
+                                    <Type xmlns="syncml:metinf">text/plain</Type>
+                                </Meta>
+                                <Data>c:\windows\system32\lockscreen\480x800\Wallpaper_08.jpg</Data>
+                            </Item>
+                        </Replace>
+                        <Final/>
+                    </SyncBody>
+                </SyncML>
+            </CSPRunner>
+            <MenuItems>
+                <DisableMenuItems/>
+            </MenuItems>
+            <Settings>
+                <!-- Brightness+Rotation, Notifications, About -->
+                <System name="SettingsPageGroupPCSystem"/>
+                <System name="SettingsPageAppsNotifications"/>
+                <System name="SettingsPageDisplay"/>
+                <System name="SettingsPagePCSystemInfo"/>
+                <!-- Ringtones, sounds -->
+                <System name="SettingsPageGroupPersonalization"/>
+                <System name="SettingsPageSounds"/>
+                <!-- Workplace -->
+                <System name="SettingsPageGroupAccounts"/>
+                <System name="SettingsPageAccountsWorkplace"/>
+            </Settings>
+        </Role>
+        <Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
+            <ActionCenter enabled="true" />
+            <Apps>
+                <!-- Alarms and Clock -->
+                <Application productId="{44F7D2B4-553D-4BEC-A8B7-634CE897ED5F}">
+                    <PinToStart>
+                        <Size>Small</Size>
+                        <Location>
+                            <LocationX>0</LocationX>
+                            <LocationY>0</LocationY>
+                        </Location>
+                    </PinToStart>
+                </Application>
+                <!-- Settings -->
+                <Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}">
+                    <PinToStart>
+                        <Size>Small</Size>
+                        <Location>
+                            <LocationX>1</LocationX>
+                            <LocationY>0</LocationY>
+                        </Location>
+                    </PinToStart>
+                </Application>
+                <!-- Outlook Calendar -->
+                <Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}" aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar">
+                    <PinToStart>
+                        <Size>Medium</Size>
+                        <Location>
+                            <LocationX>2</LocationX>
+                            <LocationY>0</LocationY>
+                        </Location>
+                    </PinToStart>
+                </Application>
+                <!-- Calculator -->
+                <Application productId="{B58171C6-C70C-4266-A2E8-8F9C994F4456}" />
+                <!-- Photos -->
+                <Application productId="{FCA55E1B-B9A4-4289-882F-084EF4145005}">
+                    <PinToStart>
+                        <Size>Small</Size>
+                        <Location>
+                            <LocationX>0</LocationX>
+                            <LocationY>2</LocationY>
+                        </Location>
+                    </PinToStart>
+                </Application>
+                <!-- Store -->
+                <Application productId="{7D47D89A-7900-47C5-93F2-46EB6D94C159}">
+                    <PinToStart>
+                        <Size>Medium</Size>
+                        <Location>
+                            <LocationX>2</LocationX>
+                            <LocationY>2</LocationY>
+                        </Location>
+                    </PinToStart>
+                </Application>
+                <!-- Login App -->
+                <Application productId="{C85DC60D-30D4-4C67-A4B4-58282F1D152C}" />
+            </Apps>
+            <Buttons />
+            <CSPRunner>
+                <SyncML xmlns="SYNCML:SYNCML1.2">
+                    <SyncBody>
+                        <Replace>
+                            <CmdID>1</CmdID>
+                            <Item>
+                                <Target>
+                                    <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeAccentColorID</LocURI>
+                                </Target>
+                                <Meta>
+                                    <Format xmlns="syncml:metinf">int</Format>
+                                </Meta>
+                                <!-- zero based index of available theme colors -->
+                                <Data>2</Data>
+                            </Item>
+                        </Replace>
+                        <Final/>
+                    </SyncBody>
+                </SyncML>
+                <SyncML xmlns="SYNCML:SYNCML1.2">
+                    <SyncBody>
+                        <Replace>
+                            <CmdID>1</CmdID>
+                            <Item>
+                                <Target>
+                                    <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/Theme/ThemeBackground</LocURI>
+                                </Target>
+                                <Meta>
+                                    <Format xmlns="syncml:metinf">int</Format>
+                                </Meta>
+                                <!-- 0 for "light", 1 for "dark" -->
+                                <Data>1</Data>
+                            </Item>
+                        </Replace>
+                        <Final/>
+                    </SyncBody>
+                </SyncML>
+                <SyncML xmlns="SYNCML:SYNCML1.2">
+                    <SyncBody>
+                        <Replace>
+                            <CmdID>2</CmdID>
+                            <Item>
+                                <Target>
+                                    <LocURI>./Vendor/MSFT/EnterpriseAssignedAccess/LockScreenWallpaper/BGFileName</LocURI>
+                                </Target>
+                                <Meta>
+                                    <Format xmlns="syncml:metinf">chr</Format>
+                                    <Type xmlns="syncml:metinf">text/plain</Type>
+                                </Meta>
+                                <Data>c:\windows\system32\lockscreen\480x800\Wallpaper_015.jpg</Data>
+                            </Item>
+                        </Replace>
+                        <Final/>
+                    </SyncBody>
+                </SyncML>
+            </CSPRunner>
+            <MenuItems>
+                <DisableMenuItems/>
+            </MenuItems>
+            <Settings>
+                <!-- Allow all settings -->
+            </Settings>
+            <Tiles>
+                <EnableTileManipulation/>
+            </Tiles>
+        </Role>
+    </RoleList>
+</HandheldLockdown>
+
+```
+
 ## Learn more
 
 [Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
