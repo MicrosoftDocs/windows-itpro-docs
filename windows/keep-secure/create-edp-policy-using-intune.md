@@ -27,319 +27,433 @@ We've received some great feedback from you, our Windows 10 Insider Preview cust
 Note that if you exit the **Policy** page before you've saved your new policy, your existing deployments won't be affected. However, if you save the policy without reconfiguring your apps, an updated policy will be deployed to your employees with an empty app rules list.
  
 ## Add an EDP policy
-After you’ve installed and set up Intune for your organization, you must create an EDP-specific policy.
+After you’ve set up Intune for your organization, you must create an EDP-specific policy.
 
 **To add an EDP policy**
 1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy** from the **Tasks** area.
 
-2.  Go to **Windows**, click the **Enterprise Data Protection (Windows 10 and Mobile and later) policy**, pick the EDP template, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
+2.  Go to **Windows**, click the **Enterprise data protection (Windows 10 Desktop and Mobile and later) policy**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
     ![Microsoft Intune: Create your new policy from the New Policy screen](images/intune-createnewpolicy.png)
 
 3.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
-    ![Microsoft Intune: Fill out the required Name and optional Description fields](images/intune-namedescription.png)
+    ![Microsoft Intune: Fill out the required Name and optional Description fields](images/intune-generalinfo.png)
 
-## Add individual apps to your Protected App list
+### Add app rules to your policy
 During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through EDP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
-The steps to add your apps are based on the type of app it is; either a Universal Windows Platform (UWP) app, or a signed Desktop app, also known as a Classic Windows application.
+The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed desktop app (also known as a Classic Windows app), or an AppLocker policy file.
 
->**Important**<br>EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary and will encrypt all files they create or modify, meaning that they could encrypt personal data and cause data loss during the revocation process. Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **Protected App** list.<p>
+>**Important**<br>
+EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your App Rules list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
->**Note**<br>If you want to use **File hash** or **Path** rules, instead of Publisher rules, you must follow the steps in the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
+<p>
+>**Note**<br>
+If you want to use **File hash** or **Path** rules, instead of **Publisher** rules, you must follow the steps in the [Add apps using Microsoft Intune and custom URI](add-apps-to-protected-list-using-custom-uri.md) topic.
 
-**To add a UWP app**
+#### Add a store app rule to your policy
+For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
 
-1.  From the **Configure the following apps to be protected by EDP** table in the **Protected Apps** area, click **Add.**
+**To add a store app**
+1.	From the **App Rules** area, click **Add**.
 
-2.  Click **Universal App**, type the **Publisher Name** and the **Product Name** into the associated boxes, and then click **OK**. If you don't have the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
+    The **Add App Rule** box appears.
 
-    **To find the Publisher and Product name values for Microsoft Store apps without installing them**
+        ![Microsoft Intune, Add a store app to your policy](images/intune-add-uwp-apps.png)
 
-    1.  Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
-    
-        >**Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the **Protected App** list. For info about how to do this, see the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic.
+2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Microsoft OneNote*.
 
-    2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
+3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
 
-    3.  In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/*9wzdncrfhvjl*/applockerdata, where *9wzdncrfhvjl* is replaced with your ID value.
-    <p>
+    Allow turns on EDP, helping to protect that app’s corporate data through the enforcement of EDP restrictions. Instructions for exempting an app are included in the [Exempt apps from EDP restrictions](#exempt-apps-from-edp-restrictions) section of this topic.
+
+4.	Pick **Store App** from the **Rule template** drop-down list.
+
+    The box changes to show the store app rule options.
+
+5.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is`CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.Office.OneNote`.
+
+If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
+
+**To find the Publisher and Product Name values for Store apps without installing them**
+1.	Go to the [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft OneNote*.
+
+    >**Note**<br>
+    If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the [Add apps using Microsoft Intune and custom URI](add-apps-to-protected-list-using-custom-uri.md) topic.
+
+2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
+
+3.	In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata, where `9wzdncrfhvjl` is replaced with your ID value.
+
     The API runs and opens a text editor with the app details.
 
         ``` json
-        {
-          "packageIdentityName": "Microsoft.Office.OneNote",
-          "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-        }
+            {
+                "packageIdentityName": "Microsoft.Office.OneNote",
+                "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+            }
         ```
-    4.  Copy the `publisherCertificateName` value into the **Publisher Name** box and copy the `packageIdentityName` value into the **Product Name** box of Intune.
+4. Copy the `publisherCertificateName` value into the **Publisher Name** box and copy the `packageIdentityName` value into the **Product Name** box of Intune.
+
+    >**Important**<br>
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:<br>
     
-    >**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
-    <p>For example:<br>
-     ``` json
+    ``` json
         {
-          "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-        }
-       ```
-       
-    ![Microsoft Intune: Add a UWP app to the Protected Apps list](images/intune-addapps.png)
+	       "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+	    }
+    ```
 
-    **To find the Publisher and Product name values for apps installed on Windows 10 Mobile phones**
+**To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
+1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    1.  If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
+    >**Note**<br>
+    Your PC and phone must be on the same wireless network.
+
+2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
+
+3.	In the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
+
+4.	Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
+
+5.	In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
+
+6.	On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
+
+7.	Start the app for which you're looking for the publisher and product name values.
+
+8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
+
+    >**Important**<br>
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:<br>
     
-        >**Note**<br>Your PC and phone must be on the same wireless network.
-
-    2.  On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
-
-    3.  In the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
-
-    4.  Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
-
-    5.  In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
-
-    6.  On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
-    
-    7. Start the app for which you're looking for the publisher and product name values
-
-    8.  Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
-    
-        >**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
-    <p>For example:<br>
-     ``` json
+    ``` json
         {
-          "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-        }
-       ```
+	       "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+	    }
+    ```
 
-**To add a Classic Windows application**
+#### Add a desktop app rule to your policy
+For this example, we’re going to add Internet Explorer, a desktop app, to the **App Rules** list.
 
-1.  From the **Configure the following apps to be protected by EDP** table in the **Protected Apps** area, click **Add.**
-<p>A dialog box appears, letting you pick whether the app is a **Universal App** or a **Desktop App**.
+**To add a desktop app**
+1.	From the **App Rules** area, click **Add**.
 
-2.  Click **Desktop App**, pick the options you want (see table), and then click **OK**.
+    The **Add App Rule** box appears.
+
+        ![Microsoft Intune, Add a desktop app to your policy](images/intune-add-classic-apps.png)
+
+2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Internet Explorer*.
+
+3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+
+    Allow turns on EDP, helping to protect that app’s corporate data through the enforcement of EDP restrictions. Instructions for exempting an app are included in the [Exempt apps from EDP restrictions](#exempt-apps-from-edp-restrictions) section of this topic.
+
+4.	Pick **Desktop App** from the **Rule template** drop-down list.
+
+    The box changes to show the store app rule options.
+
+5. Pick the options you want to include for the app rule (see table), and then click **OK**.
+
     <table>
         <tr>
             <th>Option</th>
             <th>Manages</th>
         </tr>
         <tr>
-            <td>All fields left as "*"</td>
+            <td>All fields left as “*”</td>
             <td>All files signed by any publisher. (Not recommended.)</td>
         </tr>
         <tr>
             <td><strong>Publisher</strong> selected</td>
             <td>All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
         </tr>
-         <tr>
+        <tr>
             <td><strong>Publisher</strong> and <strong>Product Name</strong> selected</td>
             <td>All files for the specified product, signed by the named publisher.</td>
-        </tr>  
-         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, and <strong>File Name</strong> selected</td>
+        </tr>
+        <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, and <strong>Binary name</strong> selected</td>
             <td>Any version of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
-         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, Exactly</strong> selected</td>
-            <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, And above</strong> selected</td>
+        <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, and above</strong>, selected</td>
             <td>Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened.</td>
         </tr>
-         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>File Name</strong>, and <strong>File Version, And below</strong> selected</td>
+        <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, And below</strong> selected</td>
             <td>Specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>                                            
+        </tr>
+        <tr>
+            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, Exactly</strong> selected</td>
+            <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
+        </tr>
     </table>
 
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
-``` ps1
-Get-AppLockerFileInformation -Path "<path of the exe>"
+```ps1
+    Get-AppLockerFileInformation -Path "<path of the exe>"
 ```
-Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Internet Explorer\iexplore.exe"`.
+Where `"<path of the exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Internet Explorer\iexplore.exe"`.
 
 In this example, you'd get the following info:
 
 ``` json
-Path                                          Publisher
-----                                          ---------
-%PROGRAMFILES%\INTERNET EXPLORER\IEXPLORE.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\INTERNET EXPLOR...
+    Path                   Publisher
+    ----                   ---------
+    %PROGRAMFILES%\INTERNET EXPLORER\IEXPLORE.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\INTERNET EXPLOR...
 ```
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
-![Microsoft Intune: Add a Classic Windows app to the Protected Apps list](images/intune-add-desktop-app.png)
+#### Add an AppLocker policy file
+For this example, we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/applocker-overview) content.
 
-## Exempt apps from EDP restrictions
+**To create an app rule and xml file using the AppLocker tool**
+1.	Open the Local Security Policy snap-in (SecPol.msc).
+    
+2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
+
+    ![Local security snap-in, showing the Packaged app Rules](images/intune-local-security-snapin.png)
+
+3.	Right-click in the right-hand pane, and then click **Create New Rule**.
+
+    The **Create Packaged app Rules** wizard appears.
+
+4. On the **Before You Begin** page, click **Next**.
+
+    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-before-begin.png)
+
+5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
+
+    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-permissions.png)
+
+6.	On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
+
+    ![Create Packaged app Rules wizard, showing the Publisher](images/intune-applocker-publisher.png)
+
+7. In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Photos.
+
+    ![Create Packaged app Rules wizard, showing the Select applications page](images/intune-applocker-select-apps.png)
+
+8. On the updated **Publisher** page, click **Create**.
+
+    ![Create Packaged app Rules wizard, showing the Microsoft Photos on the Publisher page](images/intune-applocker-publisher-with-app.png)
+
+9. Review the Local Security Policy snap-in to make sure your rule is correct.
+
+    ![Local security snap-in, showing the new rule](images/intune-local-security-snapin-updated.png)
+
+10.	In the left pane, right-click on **AppLocker**, and then click **Export policy**.
+
+    The **Export policy** box opens, letting you export and save your new policy as XML.
+
+    ![Local security snap-in, showing the Export Policy option](images/intune-local-security-export.png)
+
+11.	In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
+
+    The policy is saved and you’ll see a message that says 1 rule was exported from the policy.
+
+    **Example XML file**<br>
+    This is the XML file that AppLocker creates for Microsoft Photos.
+
+    ```xml
+     <AppLockerPolicy Version="1">
+        <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
+        <RuleCollection Type ="Msi" EnforcementMode="NotConfigured" />
+        <RuleCollection Type ="Script" EnforcementMode="NotConfigured" />
+        <RuleCollection Type ="Dll" EnforcementMode="NotConfigured" />
+        <RuleCollection Type ="Appx" EnforcementMode="NotConfigured">
+            <FilePublisherRule Id="5e0c752b-5921-4f72-8146-80ad5f582110" Name="Microsoft.Windows.Photos, version 16.526.0.0 and above, from Microsoft Corporation" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+                <Conditions>
+                    <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.Photos" BinaryName="*">
+                        <BinaryVersionRange LowSection="16.526.0.0" HighSection="*" />
+                    </FilePublisherCondition>
+                </Conditions>
+            </FilePublisherRule>
+        </RuleCollection>
+	</AppLockerPolicy>
+    ```
+12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
+
+**To import your Applocker policy file app rule using Microsoft Intune**
+1.	From the **App Rules** area, click **Add**.
+    
+    The **Add App Rule** box appears.
+
+        ![Microsoft Intune, Importing your AppLocker policy file using Intune](images/intune-add-applocker-xml-file.png)
+
+2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Allowed app list*.
+
+3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+
+    Allow turns on EDP, helping to protect that app’s corporate data through the enforcement of EDP restrictions. Instructions for exempting an app are included in the [Exempt apps from EDP restrictions](#exempt-apps-from-edp-restrictions) section of this topic.
+
+4.	Pick **AppLocker policy file** from the **Rule template** drop-down list.
+
+    The box changes to let you import your AppLocker XML policy file.
+
+5.	Click **Import**, browse to your AppLocker XML file, click **Open**, and then click **OK** to close the **Add App Rule** box.
+
+    The file is imported and the apps are added to your **App Rules** list.
+
+#### Exempt apps from EDP restrictions
 If you're running into compatibility issues where your app is incompatible with EDP, but still needs to be used with enterprise data, you can exempt the app from the EDP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
-**To exempt an UWP app**
-
-1.  Follow the **Add a UWP app** steps in the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic, through to Step 11.
-
-2.  In the **OMA-URI** box at Step 12, type `./Vendor/MSFT/AppLocker/EnterpriseDataProtection/<your_enterprise_name>edpexempt/StoreApp EXE`.<p>Where **edpexempt** is added as a substring, making the app exempt.
-
-3.  Open File Explorer, go to the location where you saved your new XML file, and open it using an XML editor, such as Notepad.
-
-4.  Copy the text that has a **Type** of Appx, within in the **RuleCollection** tags, and then go back to Intune and paste the text into the **Value** box of the **Add or edit OMA-URI Setting** box. For example:
-
-    ``` 
-    <RuleCollection Type="Appx" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
-    ```
+**To exempt a store app, a desktop app, or an AppLocker policy file app rule**
+1.	From the **App Rules** area, click **Add**.
     
-5.  Click **OK** to close the **Add or edit OMA-URI Setting** box, and then click **Save Policy**.<p>After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md) topic.
+    The **Add App Rule** box appears.
 
-**To exempt a Classic Windows application**
+2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Exempt apps list*.
 
-1.  Follow the **Add a Classic Windows application app** steps in the [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md) topic, through to Step 11.
+3.	Click **Exempt** from the **Enterprise data protection mode** drop-down list.
 
-2.  In the **OMA-URI** box at Step 12, type `./Vendor/MSFT/AppLocker/EnterpriseDataProtection/<your_enterprise_name>edpexempt/EXE`.<p>Where **edpexempt** is added as a substring, making the app exempt.
+    Be aware that when you exempt apps, they’re allowed to bypass the EDP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-app-rules-to-your-policy) section of this topic.
 
-3.  Open File Explorer, go to the location where you saved your new XML file, and open it using an XML editor, such as Notepad.
+4.	Fill out the rest of the app rule info, based on the type of rule you’re adding:
 
-4.  Copy the text that has a **Type** of EXE, within in the **RuleCollection** tags, and then go back to Intune and paste the text into the **Value** box of the **Add or edit OMA-URI Setting** box. For example:
+    - **Store app.** Follow the **Publisher** and **Product name** instructions in the [Add a store app rule to your policy](#add-a-store-app-rule-to-your-policy) section of this topic.
 
-    ``` 
-    <RuleCollection Type="Exe" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
-    ```
+    - **Desktop app.** Follow the **Publisher**, **Product name**, **Binary name**, and **Version** instructions in the [Add a desktop app rule to your policy](#add-a-desktop-app-rule-to-your-policy) section of this topic.
 
-5.  Click **OK** to close the **Add or edit OMA-URI Setting** box, and then click **Save Policy**.<p>After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md) topic.
+    - **AppLocker policy file.** Follow the **Import** instructions in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section of this topic, using a list of exempted apps.
 
-## Manage the EDP protection level for your enterprise data
+5.	Click **OK**.
+
+### Manage the EDP protection mode for your enterprise data
 After you've added the apps you want to protect with EDP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your **Protected Apps** list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
+We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
 
-<table>
-    <tr>
-        <th>Mode</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>Block</td>
-        <td>EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.</td>
-    </tr>
-    <tr>
-        <td>Override</td>
-        <td>EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459).</td>
-    </tr>
-    <tr>
-        <td>Silent</td>
-        <td>EDP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or EDP-protected data, are still blocked.</td>
-    </tr>
-    <tr>
-        <td>Off</td>
-        <td>EDP is turned off and doesn't help to protect or audit your data.<p>After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives.</td>
-    </tr> 
-</table>  
+|Mode |Description |
+|-----|------------|
+|Block |EDP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
+|Override |EDP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
+|Silent |EDP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or EDP-protected data, are still blocked.|
+|Off (not recommended) |EDP is turned off and doesn't help to protect or audit your data.<p>After you turn off EDP, an attempt is made to decrypt any closed EDP-tagged files on the locally attached drives.|
 
-![Microsoft Intune: Add the protection level for your Protected Apps list](images/intune-encryption-level.png)
+![Microsoft Intune, Set the protection mode for your data](images/intune-protection-mode.png)
 
-## Define your enterprise-managed identity domains
-Specify your company’s enterprise identity, expressed as your primary internet domain. For example, if your company is Contoso, its enterprise identity might be contoso.com. The first listed domain (in this example, contoso.com) is the primary enterprise identity string used to tag files protected by any app on the **Protected App** list.
+### Define your enterprise-managed corporate identity
+Corporate identity, usually expressed as your primary Internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you’ve marked as protected by EDP. For example, emails using contoso.com are identified as being corporate and are restricted by your enterprise data protection policies.
 
-You can also specify all the domains owned by your enterprise that are used for user accounts, separating them with the "|" character. For example, if Contoso also has some employees with email addresses or user accounts on the fabrikam.com domain, you would use contoso.com|fabrikam.com.
+You can specify multiple domains owned by your enterprise by separating them with the "|" character. For example, (`contoso.com|newcontoso.com`). With multiple domains, the first one is designated as your corporate identity and all of the additional ones as being owned by the first one. We strongly recommend that you include all of your email address domains in this list.
 
-This list of managed identity domains, along with the primary domain, make up the identity of your managing enterprise. User identities (user@domain) that end in any of the domains on this list, are considered managed.
+**To add your corporate identity**
+- Type the name of your corporate identity into the **Corporate identity** field. For example, `contoso.com` or `contoso.com|newcontoso.com`.
 
-**To add your primary domain**
+    ![Microsoft Intune, Set your primary Internet domains](images/intune-corporate-identity.png)
 
--   Type the name of your primary domain into the **Primary domain** field. For example, *contoso.com*.<p>
-If you have multiple domains, you must separate them with the "|" character. For example, `contoso.com|fabrikam.com`.
+### Choose where apps can access enterprise data
+After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
 
-    ![Microsoft Intune: Add the primary internet domain for your enterprise identity](images/intune-primary-domain.png)
-
-## Choose where apps can access enterprise data
-After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.<p>
-There are no default locations included with EDP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares.  Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT). 
+There are no default locations included with EDP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
 
 >**Important**<br>
--   Every EDP policy should include policy that defines your enterprise network locations.<p>
+- Every EDP policy should include policy that defines your enterprise network locations.<p>
 - Classless Inter-Domain Routing (CIDR) notation isn’t supported for EDP configurations.
 
-**To specify where your protected apps can find and send enterprise data on the network**
+**To define where your protected apps can find and send enterprise data on you network**
 
-1.  Add additional network locations your apps can access by clicking **Add**, typing a description into the **Description** box, and then choosing your location type, including:
+1. Add additional network locations your apps can access by clicking **Add**.
+
+    The **Add or edit corporate network definition** box appears.
+
+2.	Type a name for your corporate network element into the **Name** box, and then pick what type of network element it is, from the **Network element** drop-down box. This can include any of the options in the following table.
+
+    ![Microsoft Intune, Add your corporate network definitions](images/intune-networklocation.png)
+<p>
     <table>
-        <tr>
-            <th>Network location type</th>
-            <th>Format</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Enterprise Cloud Resources</td>
-            <td>**With proxy:**<p>contoso.sharepoint.com,proxy.contoso.com|<br>contoso.visualstudio.com,proxy.contoso.com<p>**Without proxy:**<p>contoso.sharepoint.com|contoso.visualstudio.com</td>
-            <td>Specify the cloud resources to be treated as corporate and protected by EDP.<p>For each cloud resource, you may also optionally specify an internal proxy server that routes your traffic through your Enterprise Internal Proxy Server.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example:<p>`URL <,proxy>|URL <,proxy>`<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the `/*AppCompat*/` string to this setting. For example:<p>`URL <,proxy>|URL <,proxy>|/*AppCompat*/`</td>     
-        </tr>
-        <tr>
-            <td>Enterprise Network Domain Names</td>
-            <td>domain1.contoso.com,domain2.contoso.com</td>
-            <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>                
-        </tr>
-        <tr>
-            <td>Enterprise Proxy Servers</td>
-            <td>domain1.contoso.com:80;<br>domain2.contoso.com:137</td>
-            <td>Specify your externally-facing proxy server addresses, along with the port through which traffic is allowed and protected with EDP.<p>This list shouldn’t include any servers listed in the Enterprise Internal Proxy Servers list, which are used for EDP-protected traffic.<p>This setting is also required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when you’re visiting another company and not on that company’s guest network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
-        </tr>
-        <tr>
-            <td>Enterprise Internal Proxy Servers</td>
-            <td>proxy1.contoso.com;<br>proxy2.contoso.com</td>
-            <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-EDP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
-        </tr>
-        <tr>
-            <td>Enterprise IPv4 Range</td>
-            <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,10.0.0.1-10.255.255.254</td>
-            <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-        </tr>
-        <tr>
-            <td>Enterprise IPv6 Range</td>
-            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:<br>ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110::-2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
-            <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-        </tr>
-    </table>  
-    
-    ![Microsoft Intune: Choose the primary domain and the other network locations for protected apps](images/intune-networklocation.png)
+            <tr>
+                <th>Network location type</th>
+                <th>Format</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Enterprise Cloud Resources</td>
+                <td>**With proxy:** contoso.sharepoint.com,proxy.contoso.com|<br>contoso.visualstudio.com,proxy.contoso.com<p>**Without proxy:** contoso.sharepoint.com|contoso.visualstudio.com</td>
+                <td>Specify the cloud resources to be treated as corporate and protected by EDP.<p>For each cloud resource, you may also optionally specify an internal proxy server that routes your traffic through your Enterprise Internal Proxy Server.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: `URL <,proxy>|URL <,proxy>`.<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the `/*AppCompat*/` string to this setting. For example: `URL <,proxy>|URL <,proxy>|/*AppCompat*/`</td>
+            </tr>
+            <tr>
+                <td>Enterprise Network Domain Names (Required)</td>
+                <td>corp.contoso.com,region.contoso.com</td>
+                <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>                
+            </tr>
+            <tr>
+                <td>Enterprise Proxy Servers</td>
+                <td>proxy.contoso.com:80;proxy2.contoso.com:137</td>
+                <td>Specify your externally-facing proxy server addresses, along with the port through which traffic is allowed and protected with EDP.<p>This list shouldn’t include any servers listed in the Enterprise Internal Proxy Servers list, which are used for EDP-protected traffic.<p>This setting is also required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when you’re visiting another company and not on that company’s guest network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+            </tr>
+            <tr>
+                <td>Enterprise Internal Proxy Servers</td>
+                <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
+                <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-EDP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
+            </tr>
+            <tr>
+                <td>Enterprise IPv4 Range (Required, if not using an IPv6 range)</td>
+                <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
+                <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
+            </tr>
+            <tr>
+                <td>Enterprise IPv6 Range (Required, if not using an IPv4 range)</td>
+                <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
+                <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
+            </tr>
+            <tr>
+                <td>Neutral Resources</td>
+                <td>sts.contoso.com,sts.contoso2.com</td>
+                <td>Specify your authentication redirection endpoints for your company.<p>These locations are considered enterprise or personal, based on the context of the connection before the redirection.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>
+            </tr>           
+        </table>
 
-2.  Add as many locations as you need, and then click **OK**.<p>The **Add or Edit Enterprise Network Locations box** closes.
+3.	Add as many locations as you need, and then click **OK**.
 
-3.  In the **Use a data recovery certificate in case of data loss** box, click **Browse** to add a data recovery certificate for your policy.<p>After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data.<p>For steps about how to create and verify an EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) DRA certificate](#create-and-verify-an-encrypting-file-system-efs-dra-certificate) section of this topic. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.<p>
+    The **Add corporate network definition** box closes.
 
-    ![Microsoft Intune: Specify a data recovery certificate for your policy](images/intune-data-recovery.png)
+4. Decide if you want to Windows to look for additional network settings:
 
-### Create and verify an Encrypting File System (EFS) DRA certificate
-If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use EDP in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
+    - **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network.
 
->**Important**<br>
-If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. To add your EFS DRA certificate to your policy by using Microsoft Intune, see Step 3 in the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic.
+	- **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
+
+	- **Show the enterprise data protection icon overlay on your allowed apps that are EDP-unaware in the Windows Start menu and on corporate file icons in the File Explorer.** Click this box if you want the enterprise data protection icon overlay to appear on corporate files or in the Start menu, on top the tiles for your unenlightened protected apps.
+
+5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
+
+        ![Microsoft Intune, Add your Data Recovery Agent (DRA) certificate](images/intune-data-recovery.png)
+
+    After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data.
+
+    For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
+
+#### Create and verify an Encrypting File System (EFS) DRA certificate for EDP
+If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use EDP in your organization. For the purposes of this section, we’ll use the file name *EFSDRA*; however, this name can be replaced with anything that makes sense to you.
+
+>**Important**<br>If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy.
 
 **To manually create an EFS DRA certificate**
-1.	On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
+1. On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
 
-2.	Run this command:
+2. Run this command:
     
-    `cipher /r:<EFSRA>`
-    
-    Where *&lt;EFSRA&gt;* is the name of the .cer and .pfx files that you want to create.
+    `cipher /r:<EFSDRA>`<br>Where `<EFSDRA>` is the name of the .cer and .pfx files that you want to create.
 
-3.	When prompted, type and confirm a password to help protect your new Personal Information Exchange (.pfx) file.
+3. When prompted, type and confirm a password to help protect your new Personal Information Exchange (.pfx) file.
 
-    The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1.
+    The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1. 
 
-    >**Important**<br> 
-    Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
+    >**Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
 
-4. Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic. 
+4.	Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic.
 
 **To verify your data recovery certificate is correctly set up on an EDP client computer**
-1. Open an app on your protected app list, and then create and save a file so that it’s encrypted by EDP.
+1.	Open an app on your protected app list, and then create and save a file so that it’s encrypted by EDP.
 
 2.	Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
 
-    `cipher /c <filename>`
-
-    Where *&lt;filename&gt;* is the name of the file you created in Step 1.
+    `cipher /c <filename>`<br>Where `<filename>` is the name of the file you created in Step 1.
 
 3.	Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
 
@@ -350,38 +464,50 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 
 3.	Open a command prompt with elevated rights, navigate to the encrypted file, and then run this command:
 
-    `cipher /d <encryptedfile.extension>`
-    
-    Where *&lt;encryptedfile.extension&gt;* is the name of your encrypted file. For example, corporatedata.docx.
+    `cipher /d <encryptedfile.extension>`<br>Where `<encryptedfile.extension>` is the name of your encrypted file. For example, corporatedata.docx.
 
-## Choose your optional EDP-related settings
+### Choose your optional EDP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional EDP settings.
 
-**To add your optional settings**
+![Microsoft Intune, Choose any additional, optional settings](images/intune-optional-settings.png)
 
-1.  Choose to set any or all of the optional EDP-related settings:
+**To set your optional settings**
+1.	Choose to set any or all of the optional settings:
 
-    -   **Allow the user to decrypt data that was created or edited by the apps configured above.** Clicking **Yes**, or turning off this setting in Intune, lets your employees right-click to decrypt their protected app data, along with the option to decrypt data in the **Save As** box and the **Save As** file picker . Clicking **No** removes the **Decrypt** option and saves all data for protected apps as enterprise-encrypted.
+    - **Show the Personal option in the File ownership menus of File Explorer and the Save As dialog box.** Determines whether users can see the Personal option for files within File Explorer and the **Save As** dialog box. The options are:
+    
+        - **Yes, or not configured (recommended).** Employees can choose whether a file is **Work** or **Personal** in File Explorer and the **Save As** dialog box. 
+	
+        - **No.** Hides the **Personal** option from employees. Be aware that if you pick this option, apps that use the **Save As** dialog box might encrypt new files as corporate data unless a different file path is given during the original file creation. After this happens, decryption of work files becomes more difficult.
 
-    -   **Protect app content when the device is in a locked state for the apps configured above.** Clicking **Yes** lets EDP help to secure protected app content when a mobile device is locked. We recommend turning this option on to help prevent data leaks from things such as email text that appears on the **Lock** screen of a Windows 10 Mobile phone.
+    - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether apps can show corporate data on a Windows 10 Mobile device **Lock** screen. The options are:
+	
+        - **Yes (recommended).** Stop apps from reading corporate data on Windows 10 Mobile device when the screen is locked.
+	
+        - **No, or not configured.**  Allows apps to read corporate data on Windows 10 Mobile device when the screen is locked.
 
-        ![Microsoft Intune: Optional EDP settings](images/intune-edpsettings.png)
+    - **Revoke encryption keys on unenroll.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from enterprise data protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
 
-2.  Click **Save Policy**.
+        - **Yes, or not configured (recommended).** Revokes local encryption keys from a device during unenrollment.
+        
+        - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you’re migrating between Mobile Device Management (MDM) solutions.
+
+    - **Allow Windows Search to search encrypted corporate data and Store apps.** Determines whether Windows Search can search and index encrypted corporate data and Store apps. The options are:
+
+	    - **Yes.** Allows Windows Search to search and index encrypted corporate data and Store apps.
+
+	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
+
+    - **Show the enterprise data protection icon overlay.** Determines whether the enterprise data protection icon overlay appears on corporate files or in the **Start** menu, on top of the tiles for your unenlightened protected apps. The options are:
+
+    	- **Yes (recommended).** Allows the enterprise data protection icon overlay to appear for files or on top of the tiles for your unenlightened protected apps in the **Start** menu.
+
+	    - **No, or not configured.** Stops the enterprise data protection icon overlay from appearing for files or on top of the tiles for your unenlightened protected apps in the **Start** menu.
+
+2. Click **Save Policy**.
 
 ## Related topics
 - [Add multiple apps to your enterprise data protection (EDP) Protected Apps list](add-apps-to-protected-list-using-custom-uri.md)
 - [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md)
 - [Create and deploy a VPN policy for enterprise data protection (EDP) using Microsoft Intune](create-vpn-and-edp-policy-using-intune.md)
 - [General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
-
-
-
- 
-
- 
-
-
-
-
-
