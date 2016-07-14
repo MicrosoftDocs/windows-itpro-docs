@@ -7,6 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
 ms.pagetype: security, mobile
+redirect_url: whats-new-windows-10-version-1511.md
 ---
 
 # What's new in security auditing?
