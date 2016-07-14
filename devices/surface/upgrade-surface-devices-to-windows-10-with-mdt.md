@@ -19,7 +19,7 @@ author: Scottmca
 
 In addition to the traditional deployment method of reimaging devices, administrators that want to upgrade Surface devices that are running Windows 8.1 or Windows 10 have the option of deploying upgrades. By performing an upgrade deployment, Windows 10 can be applied to devices without removing users, apps, or configuration. The users of the deployed devices can simply continue using the devices with the same apps and settings that they used prior to the upgrade. The process described in this article shows how to perform a Windows 10 upgrade deployment to Surface devices.
 
-If you are not already familiar with the deployment of Windows or the Microsoft deployment tools and technologies, you should read the Deploy Windows 10 to Surface Devices with MDT article and familiarize yourself with the traditional deployment method before you proceed.
+If you are not already familiar with the deployment of Windows or the Microsoft deployment tools and technologies, you should read [Deploy Windows 10 to Surface devices with MDT]() and familiarize yourself with the traditional deployment method before you proceed.
 
 #### The upgrade concept
 
@@ -33,7 +33,7 @@ Introduced with Windows 10 and MDT 2013 Update 1, you can use the upgrade instal
 
 ## Deployment tools and resources
 
-Performing an upgrade deployment of Windows 10 requires the same tools and resources that are required for a traditional reimaging deployment. You can read about the tools required, including detailed explanations and installation instructions, in the Deploy Windows 10 to Surface Devices with MDT article. To proceed with the upgrade deployment described in this article, you will need the following tools installed and configured:
+Performing an upgrade deployment of Windows 10 requires the same tools and resources that are required for a traditional reimaging deployment. You can read about the tools required, including detailed explanations and installation instructions, in [Deploy Windows 10 to Surface devices with MDT](). To proceed with the upgrade deployment described in this article, you will need the following tools installed and configured:
 
 * [Microsoft Deployment Toolkit (MDT)](https://technet.microsoft.com/en-us/windows/dn475741)
 * [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#windowsadk), which includes:
@@ -121,10 +121,10 @@ After the task sequence is created, you can modify some additional settings to p
 6. Between the two Windows Update steps is an **Install Applications** step. Select that step and then click **Add**.
 7. Hover the mouse over **General** under the **Add** menu, and then choose **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 3.
 
-![A new Install Application step in the deployment task sequence](images\surface-upgrademdt-fig3.png "A new Install Application step in the deployment task sequence")
-
-*Figure 3. A new Install Application step in the deployment task sequence*
-
+  ![A new Install Application step in the deployment task sequence](images\surface-upgrademdt-fig3.png "A new Install Application step in the deployment task sequence")
+  
+  *Figure 3. A new Install Application step in the deployment task sequence*
+  
 8. On the **Properties** tab of the new **Install Application** step, enter **Install Surface App** in the **Name** field.
 9. Select **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
 10. Select **Surface App** from the list of applications, and then click **OK**.
