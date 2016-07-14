@@ -15,14 +15,14 @@ author: eross-msft
 
 -   Windows 10 Insider Preview
 -   Windows 10 Mobile Preview
--   System Center Configuration Manager (version 1605 Tech Preview or later)
+-   System Center Configuration Manager Technical Preview version 1605 or later
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-System Center Configuration Manager (version 1605 Tech Preview or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection mode, and how to find enterprise data on the network.
+System Center Configuration Manager Technical Preview version 1605 or later helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection mode, and how to find enterprise data on the network.
 
 >**Important**<br>
-If you previously created an EDP policy using System Center Configuration Manager version 1511 or 1602, you’ll need to recreate it using version 1605 Tech Preview or later. Editing an EDP policy created in version 1511 or 1602 is not supported in version 1605 Tech Preview. There is no migration path between EDP policies across these versions.
+If you previously created an EDP policy using System Center Configuration Manager version 1511 or 1602, you’ll need to recreate it using Configuration Manager Technical Preview version 1605 or later. Editing an EDP policy created in version 1511 or 1602 is not supported in the Technical Preview version 1605 or later. There is no migration path between EDP policies across these versions.
 
 ## Add an EDP policy
 After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for EDP, which in turn becomes your EDP policy.
