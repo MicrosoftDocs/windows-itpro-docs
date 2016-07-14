@@ -13,9 +13,18 @@ author: TrudyHa
 
 This topic lists new and updated topics in the [Plan for Windows 10 deployment](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+
 ## RELEASE: Windows 10, version 1607
 
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
+
+
+## July 2016
+
+
+| New or changed topic                                                                                                                             | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| [Windows 10 servicing overview](windows-10-servicing-options.md) | Content on this page was summarized. Detailed content about servicing branches was moved to the [Windows 10 servicing options](../manage/introduction-to-windows-10-servicing.md) page. |
 
 
 ## May 2016
