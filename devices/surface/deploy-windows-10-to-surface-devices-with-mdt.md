@@ -553,12 +553,12 @@ After the task sequence is created it can be modified for increased automation, 
 
 15.	Select the **Inject Drivers** step, the next step in the task sequence.
 16.	On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 23), configure the following options:
-   * In the **Choose a selection profile** box, select **Nothing**.
+   * In the **Choose a selection profile** drop-down menu, select **Nothing**.
    * Click the **Install all drivers from the selection profile** button.
     
-   ![Set up deployment task sequence not to choose the drivers to inject into Windows](images\surface-deploymdt-fig23.png "Set up deployment task sequence not to choose the drivers to inject into Windows")
+   ![Configure deployment task sequence not to choose the drivers to inject into Windows](images\surface-deploymdt-fig23.png "Configure deployment task sequence not to choose the drivers to inject into Windows")
 
-   *Figure 23. Set up the deployment task sequence not to choose the drivers to inject into Windows*
+   *Figure 23. Configure the deployment task sequence not to choose the drivers to inject into Windows*
 
 17.	Click **OK** to apply changes to the task sequence and close the task sequence properties window.
 
