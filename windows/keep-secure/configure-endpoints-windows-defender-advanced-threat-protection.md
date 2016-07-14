@@ -14,7 +14,7 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Insider Preview Build 14379 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
@@ -31,7 +31,7 @@ Windows Defender ATP supports the following deployment tools and methods:
 - Local script
 
 ## Configure endpoints with System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information see, the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx) section.
+System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information see, the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP) section.
 
 ## Configure endpoints with System Center 2012 Configuration Manager or later versions
 You can use System Center Configuration Manager’s existing functionality to create a policy to configure you endpoints. This is supported in System Center 2012 Configuration Manager or later versions, including: System Center 2012 R2 Configuration Manager, System Center Configuration Manager and System Center Configuration Manager (current branch), version 1602 or earlier. 
@@ -144,7 +144,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for details on how you can manually validate that the endpoint is compliant and correctly reports telemetry.
 
 ## Related topics
-<!--- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
+- [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
 - [Configure endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 - [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
 - [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
