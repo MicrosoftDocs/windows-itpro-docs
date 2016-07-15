@@ -449,7 +449,7 @@ You can import any number of applications into MDT for installation on your devi
 
 #### Import Microsoft Office 365 Installer
 
-The Office Deployment Tool is a free download available in the Microsoft Download Center that allows IT professionals and system administrators to download and prepare Office installation packages for Office Click-to-Run. You can find the Office Deployment Tool and instructions to download Click-to-Run for Office 365 installation source files at [Download Click-to-Run for Office 365 products by using the Office Deployment Tool](https://technet.microsoft.com/library/jj219424)
+The Office Deployment Tool is a free download available in the Microsoft Download Center that allows IT professionals and system administrators to download and prepare Office installation packages for Office Click-to-Run. You can find the Office Deployment Tool and instructions to download Click-to-Run for Office 365 installation source files at [Download Click-to-Run for Office 365 products by using the Office Deployment Tool](https://technet.microsoft.com/library/jj219424).
 
 Download and install the version of Office Deployment Tool (ODT), for Office 2013 or Office 2016, that fits your organization’s needs and use the steps provided by that page to download the Office installation files for use with MDT.
 
@@ -528,7 +528,7 @@ To create the deployment task sequence, follow these steps:
 
 After the task sequence is created it can be modified for increased automation, such as the installation of applications without user interaction, the selection of drivers, and the installation of Windows updates.
 
-1. Click the **Task Sequences** folder, right-click the new task sequence you created, and then click**Properties**.
+1. Click the **Task Sequences** folder, right-click the new task sequence you created, and then click **Properties**.
 2. Click the **Task Sequence** tab to view the steps that are included in the new task sequence.
 3. Click the **Windows Update (Pre-Application Installation)** step, located under the **State Restore** folder.
 4. Click the **Options** tab, and then clear the **Disable This Step** check box.
@@ -580,7 +580,7 @@ To automate the boot media rules, follow these steps:
 2. Click the **Rules** tab, and then click **Edit Bootstrap.ini** to open Bootstrap.ini in Notepad.
 3. Replace the text of the Bootstrap.ini file with the following text:
 
-```
+  ```
 [Settings]
 Priority=Model,Default
 
