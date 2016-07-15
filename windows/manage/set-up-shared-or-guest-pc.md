@@ -40,23 +40,92 @@ While shared PC mode does not configure Windows Update itself, it is strongly re
 ###Policies and further customization
 Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These are covered in detail below.
 
-##Shared PC mode reference
-Shared PC mode is specified by a set of options. These are the same options that you'll set either via MDM or a provisioning package covered below in Configuring shared PC mode on Windows
-<br/>
+##Configuring shared PC mode on Windows
+You can configure Windows to be in shared PC mode in a couple different ways:
+*MDM
+*A provisioning package created with the Windows Imaging and Configuration Designer (ICD)
 
-Setting | Value |
-:---|:---|
-EnableSharedPCMode | Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. Some of the remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.  |
-AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the *Start without an account* button to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
-AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not.  |
-AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
-AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
-AccountManagement: EnableAccountManager | Set as **True** to enable automatic account management. If this is not set to true, no automatic account management will be done. |
-Customization: MaintenanceStartTime | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.   |
-Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. When **SetEduPolicies** is **True**, the following additional settings are applied:<br/>- Local storage locations are restricted. Users can only save files to the cloud. <br/>- Custom Start and taskbar layouts are set.\* <br/>- A custom sign-in screen background image is set.\* <br/>- Additional educational policies are applied (see full list below).<br/><br/>\*Only applies to Windows 10 Pro for Education, Enterprise, and Education  |
-Customization: SetPowerPolicies |  When set as **True**:<br/>- Prevents users from changing power settings<br/>- Turns off hibernate<br/>- Overrides all power state transitions to sleep (e.g. lid close)  |
-Customization: SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
-Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
+###MDM
+Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx).
+
+###Provisioning package
+You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx), exposed in ICD as SharedPC.
+
+![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
+
+
+## Create a provisioning package for shared use
+
+Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device for shared PC mode. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+
+1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe). 
+
+2. On the **Start page**, select **Advanced provisioning**.
+
+3. Enter a name and (optionally) a description for the project, and click **Next**.
+
+4. Select **All Windows desktop editions**, and click **Next**.
+
+5. Click **Finish**. Your project opens in Windows ICD.
+
+6. Go to **Runtime settings** > **SharedPC**. The following table describes the settings you can configure for **SharedPC**.
+
+
+  <br/>
+
+## Apply the provisioning package
+
+You can apply the provisioning package to a PC during initial setup or to a PC that has already been set up.
+
+**During initial setup**
+1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
+
+    ![The first screen to set up a new PC](images/oobe.jpg)
+
+2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. If there is only one provisioning package on the USB drive, you don't need to press the Windows key five times, Windows will automatically ask you if you want to set up the device. Select **Set up**.
+
+    ![Set up device?](images/setupmsg.jpg)
+
+3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
+
+    ![Provision this device](images/prov.jpg)
+    
+4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
+
+    ![Choose a package](images/choose-package.png)
+
+5. Select **Yes, add it**.
+
+    ![Do you trust this package?](images/trust-package.png)
+    
+6. Read and accept the Microsoft Software License Terms.  
+
+    ![Sign in](images/license-terms.png)
+    
+7. Select **Use Express settings**.
+
+    ![Get going fast](images/express-settings.png)
+
+8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
+
+    ![Who owns this PC?](images/who-owns-pc.png)
+
+9. On the **Choose how you'll connect** screen, select **Join Azure AD** or **Join a domain** and tap **Next**.
+
+    ![Connect to Azure AD](images/connect-aad.png)
+
+10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
+
+    ![Sign in](images/sign-in-prov.png)
+
+    
+**After setup**
+
+On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. 
+
+![add a package option](images/package.png)
+
+> **Note:** If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
 
 ## Guidance for accounts on shared PCs
 
@@ -82,6 +151,26 @@ Customization: SleepTimeout | Specifies all timeouts for when the PC should slee
         $sid = $sid.Value;
         New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
         ``` 
+
+##Shared PC mode reference
+Shared PC mode is specified by a set of options. These are the same options that you'll set either via MDM or a provisioning package covered below in Configuring shared PC mode on Windows
+<br/>
+
+Setting | Value |
+:---|:---|
+EnableSharedPCMode | Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. Some of the remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.  |
+AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the *Start without an account* button to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
+AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not.  |
+AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
+AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
+AccountManagement: EnableAccountManager | Set as **True** to enable automatic account management. If this is not set to true, no automatic account management will be done. |
+Customization: MaintenanceStartTime | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.   |
+Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. When **SetEduPolicies** is **True**, the following additional settings are applied:<br/>- Local storage locations are restricted. Users can only save files to the cloud. <br/>- Custom Start and taskbar layouts are set.\* <br/>- A custom sign-in screen background image is set.\* <br/>- Additional educational policies are applied (see full list below).<br/><br/>\*Only applies to Windows 10 Pro for Education, Enterprise, and Education  |
+Customization: SetPowerPolicies |  When set as **True**:<br/>- Prevents users from changing power settings<br/>- Turns off hibernate<br/>- Overrides all power state transitions to sleep (e.g. lid close)  |
+Customization: SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
+Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
+
+
 
 ## Policies set by shared PC mode
 Shared pc mode sets local group policies to configure the device. Some of these are configurable by setting the options shared pc mode exposes.
@@ -223,92 +312,7 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 </tbody>
 </table> </br></br>
 
-##Configuring shared PC mode on Windows
-You can configure Windows to be in shared PC mode in a couple different ways:
-*MDM
-*A provisioning package created with the Windows Imaging and Configuration Designer (ICD)
 
-###MDM
-Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx).
-
-###Provisioning package
-You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx), exposed in ICD as SharedPC.
-
-![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
-
-
-## Create a provisioning package for shared use
-
-Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device for shared PC mode. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
-
-1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe). 
-
-2. On the **Start page**, select **Advanced provisioning**.
-
-3. Enter a name and (optionally) a description for the project, and click **Next**.
-
-4. Select **All Windows desktop editions**, and click **Next**.
-
-5. Click **Finish**. Your project opens in Windows ICD.
-
-6. Go to **Runtime settings** > **SharedPC**. The following table describes the settings you can configure for **SharedPC**.
-
-
-  <br/>
-
-## Apply the provisioning package
-
-You can apply the provisioning package to a PC during initial setup or to a PC that has already been set up.
-
-**During initial setup**
-1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
-
-    ![The first screen to set up a new PC](images/oobe.jpg)
-
-2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. If there is only one provisioning package on the USB drive, you don't need to press the Windows key five times, Windows will automatically ask you if you want to set up the device. Select **Set up**.
-
-    ![Set up device?](images/setupmsg.jpg)
-
-3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
-
-    ![Provision this device](images/prov.jpg)
-    
-4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
-
-    ![Choose a package](images/choose-package.png)
-
-5. Select **Yes, add it**.
-
-    ![Do you trust this package?](images/trust-package.png)
-    
-6. Read and accept the Microsoft Software License Terms.  
-
-    ![Sign in](images/license-terms.png)
-    
-7. Select **Use Express settings**.
-
-    ![Get going fast](images/express-settings.png)
-
-8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
-
-    ![Who owns this PC?](images/who-owns-pc.png)
-
-9. On the **Choose how you'll connect** screen, select **Join Azure AD** or **Join a domain** and tap **Next**.
-
-    ![Connect to Azure AD](images/connect-aad.png)
-
-10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
-
-    ![Sign in](images/sign-in-prov.png)
-
-    
-**After setup**
-
-On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. 
-
-![add a package option](images/package.png)
-
-> **Note:** If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
 
 ## Related topics
 
