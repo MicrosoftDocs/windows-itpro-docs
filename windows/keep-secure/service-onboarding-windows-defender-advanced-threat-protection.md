@@ -112,7 +112,7 @@ page.
 
 Follow the steps in the onboarding wizard to complete the onboarding process.
 
-At the end of the wizard, you can download the Group Policy configuration package which you will use to configure endpoints on your network. You can also download the package from the **Client onboarding** menu on the portal after you have completed the onboarding wizard.
+At the end of the wizard, you can download the Group Policy configuration package which you will use to configure endpoints on your network. You can also download the package from the **Endpoint Management** menu on the portal after you have completed the onboarding wizard.
 
 ## Related topics
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
