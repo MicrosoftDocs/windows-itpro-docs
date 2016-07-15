@@ -23,7 +23,7 @@ Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 1
 A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. Users who sign-in are signed in as standard users, not admin users.
 
 ###Account models
-It is intended that shared PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC as a standard user. The user who origianlly joined the PC to the domain will have administrative rights when they sign in. If using Azure Active Directory Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a **Start without an account** option on the sign-in screen, which doesn't require any user credentials or authentication and creates a new local account.
+It is intended that shared PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC as a standard user. The user who originally joined the PC to the domain will have administrative rights when they sign in. If using Azure Active Directory Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a **Start without an account** option on the sign-in screen, which doesn't require any user credentials or authentication and creates a new local account.
 
 ###Account management
 When the account management service is turned on in shared PC mode, accounts are automatically deleted. Account deletion is done for Active Directory, Azure Active Directory, and local account types. However, only local accounts that are created by the **Start without an account** option are deleted. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low.
@@ -188,7 +188,7 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 
 ## Policies set by shared PC mode
-Shared pc mode sets local group policies to configure the device. Some of these are configurable by setting the options shared pc mode exposes.
+Shared PC mode sets local group policies to configure the device. Some of these are configurable using the shared pc mode options.
 
 > **Important**: It is not recommended to set additional policies on PCs configured for **Shared PC Mode**.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
 
@@ -197,13 +197,13 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 <tr><th><p>Policy name</p></th><th><p>Value</p></th><th><p>When set?</p></th> 
 </tr> </thead>
 <tbody>
-<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong></p></td> 
+<tr><td colspan="3"><p><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong></p></td> 
 </tr> 
 <tr><td><p>Prevent enabling lock screen slide show</p></td><td><p>Enabled</p></td><td><p>Always</p></td>
 </tr> 
 <tr><td><p>Prevent changing lock screen and logon image</p></td><td><p>Enabled</p></td><td><p>Always</p></td>
 </tr> 
-<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Button Settings</strong></p></td> 
+<tr><td colspan="3"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Button Settings</strong></p></td> 
 </tr> 
 <tr><td><p>Select the Power button action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td> 
 </tr> 
@@ -215,7 +215,7 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 </tr> 
 <tr><td><p>Select the lid switch action (on battery)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td>
 </tr> 
-<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Sleep Settings</strong></p></td> 
+<tr><td colspan="3"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Sleep Settings</strong></p></td> 
 </tr> 
 <tr><td><p>Require a password when a computer wakes (plugged in)</p></td><td><p>Enabled</p></td><td><p>SignInOnResume=True</p></td>
 </tr> 
@@ -241,12 +241,12 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 </tr> 
 <tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0 </p> </td><td><p>SetPowerPolicies=True</p></td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Video and Display Settings</strong> </p> </td> </tr> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Video and Display Settings</strong> </p> </td> </tr> 
 <tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p>*SleepTimeout*</p> </td></td><td><p>SetPowerPolicies=True</p></td>  
 </tr>
  <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p>*SleepTimeout*</p> </td></td><td><p>SetPowerPolicies=True</p></td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Logon</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Logon</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Show first sign-in animation </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
 </tr> 
@@ -262,11 +262,11 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 </tr> 
 <tr> <td> <p> Block user from showing account details on sign-in </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled </p> </td><td><p>SetEduPolicies=True</p></td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Do not show Windows Tips </p>*Only on Pro, Enterprise, and Education* </td> <td> <p> Enabled </p> </td><td><p>SetEduPolicies=True</p></td> 
 </tr> 
@@ -276,7 +276,7 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 </tr> 
 <tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
 </tr> 
@@ -284,7 +284,7 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 </tr> 
 <tr> <td> <p> Allow domain users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Toggle user control over Insider builds </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
 </tr> 
@@ -292,11 +292,11 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 </tr> 
 <tr> <td> <p> Do not show feedback notifications </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>File Explorer</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>File Explorer</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Show lock in the user tile menu </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Maintenance Scheduler</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Maintenance Scheduler</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> *MaintenanceStartTime* </p> </td><td><p>Always</p></td>
 </tr> 
@@ -304,17 +304,17 @@ Shared pc mode sets local group policies to configure the device. Some of these 
 </tr> 
 <tr> <td> <p> Automatic Maintenance WakeUp Policy </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Microsoft Edge</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Microsoft Edge</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Open a new tab with an empty tab </p> </td> <td> <p> Disabled </p> </td><td><p>SetEduPolicies=True</p></td> 
 </tr> 
 <tr> <td> <p> Configure corporate home pages </p> </td> <td> <p> Enabled, about:blank </p> </td><td><p>SetEduPolicies=True</p></td> 
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Search</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Search</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Allow Cortana </p> </td> <td> <p> Disabled </p> </td><td><p>SetEduPolicies=True</p></td>  
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Windows Settings</strong>><strong>Security Settings</strong>><strong>Local Policies</strong>><strong>Security Options</strong> </p> </td> 
+<tr> <td colspan="3"> <p> <strong>Windows Settings</strong>><strong>Security Settings</strong>><strong>Local Policies</strong>><strong>Security Options</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled, Disabled when account model is only guest </p> </td>
 </tr> 
