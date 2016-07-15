@@ -147,7 +147,7 @@ If your build is successful, the name of the provisioning package, output direct
 
 ## Apply package
 
-`WHY OOBE ONLY?`
+**During initial setup, from a USB drive**
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
@@ -188,6 +188,13 @@ If your build is successful, the name of the provisioning package, output direct
 10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
 
     ![Sign in](images/sign-in-prov.png)
+    
+
+**After setup, from a USB drive, network folder, or SharePoint site**
+
+On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and select the package to install. 
+
+![add a package option](images/package.png)
 
 ## Learn more
 -   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)

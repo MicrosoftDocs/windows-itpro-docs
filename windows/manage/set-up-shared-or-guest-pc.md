@@ -104,7 +104,13 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
-16. Select the **output location** link to go to the location of the package. Copy the package to a USB drive.
+16. Select the **output location** link to go to the location of the package. You can provide that .ppkg to others through any of the following methods:
+
+    -   Shared network folder
+
+    -   SharePoint site
+
+    -   Removable media (USB/SD) (select this option to apply to a PC during initial setup)
     
 
 ### Apply the provisioning package
