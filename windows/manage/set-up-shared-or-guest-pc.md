@@ -58,7 +58,8 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 
 ##Configuring shared PC mode on Windows
 You can configure Windows to be in shared PC mode in a couple different ways:
-- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx).
+- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx). Your MDM policy can contain any of the options listed in the [Customization](#customization) section. The following image shows a Microsoft Intune policy with the shared PC options added as OMA-URI settings. [Learn more about Windows 10 policy settings in Microsoft Intune.](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+![custom OMA-URI policy in Intune](images/oma-uri-shared-pc.png) 
 - A provisioning package created with the Windows Imaging and Configuration Designer (ICD): You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx), exposed in ICD as SharedPC.
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
