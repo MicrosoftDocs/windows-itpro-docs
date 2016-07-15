@@ -34,17 +34,18 @@ Shared PC mode is configured to take advantage of maintenance time periods which
 While shared PC mode does not configure Windows Update itself, it is strongly recommended to configure Windows Update to automatically install updates and reboot (if necessary) during maintenance hours. This will help ensure the PC is always up to date and not interrupting users with updates. Use one of the following methods to configure Windows Update:
 
 - Group Policy: Set **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatice Updates** to `4` and check **Install during automatic maintenance**.
-- MDM: Set **Update/AllowAutoUpdate** to `4`. [More information](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
-- Provisioning: In Windows Imaging and Configuration Designer (ICD), set **Policies/Update/AllowAutoUpdate** to `4`. [More information](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
+- MDM: Set **Update/AllowAutoUpdate** to `4`. 
+- Provisioning: In Windows Imaging and Configuration Designer (ICD), set **Policies/Update/AllowAutoUpdate** to `4`. 
+[Learn more about the AllowAutoUpdate settings](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
 
-###Policies and further customization
-Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These are the same options that you'll set either via MDM or a provisioning package covered below in Configuring shared PC mode on Windows, The options are listed in the following table.
+###Customization
+Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These are the same options that you'll set either via MDM or a provisioning package covered below in [Configuring shared PC mode on Windows](#configuring-shared-pc-mode-on-windows). The options are listed in the following table.
 
 | Setting | Value |
 |:---|:---|
 | EnableSharedPCMode | Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. Some of the remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.  |
-| AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the *Start without an account* button to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
-| AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not.  |
+| AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the **Start without an account** option to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
+| AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/><br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not.  |
 | AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
 | AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
 | AccountManagement: EnableAccountManager | Set as **True** to enable automatic account management. If this is not set to true, no automatic account management will be done. |
@@ -77,10 +78,32 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
 
 5. Click **Finish**. Your project opens in Windows ICD.
 
-6. Go to **Runtime settings** > **SharedPC**. The following table describes the settings you can configure for **SharedPC**.
+6. Go to **Runtime settings** > **SharedPC**. [Select the desired settings for shared PC mode.](#customization)
 
-
-  <br/>
+7. On the **File** menu, select **Save.**
+8.  On the **Export** menu, select **Provisioning package**.
+9.  Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
+10. Set a value for **Package Version**.
+    > **Tip**  
+    You can make changes to existing packages and change the version number to update previously applied packages.
+  
+11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
+    -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
+    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
+       > **Important**  
+        We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
+        
+12. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.
+    Optionally, you can click **Browse** to change the default output location.
+13. Click **Next**.
+14. Click **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.
+    If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
+15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
+    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
+    -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
+    -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
+16. Select the **output location** link to go to the location of the package. Copy the package to a USB drive.
+    
 
 ### Apply the provisioning package
 
