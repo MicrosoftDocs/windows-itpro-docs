@@ -21,7 +21,7 @@ This article walks you through the recommended process to deploy Windows 10 to S
 
 By following the procedures in this article, you can create an up-to-date reference image and deploy this image to your Surface devices, a process known as *reimaging*. Reimaging will erase and overwrite the existing environment on your Surface devices. This process allows you to rapidly configure your Surface devices with identical environments that can be configured to precisely fit your organization’s requirements. 
 
-An alternative to the reimaging process is an upgrade process. The upgrade process is non-destructive and instead of erasing the existing environment on your Surface device, it allows you to install Windows 10 while retaining your user data, applications, and settings. You can read about managing and automating the upgrade process of Surface devices to Windows 10 at [Upgrade Surface devices to Windows 10 with MDT](). 
+An alternative to the reimaging process is an upgrade process. The upgrade process is non-destructive and instead of erasing the existing environment on your Surface device, it allows you to install Windows 10 while retaining your user data, applications, and settings. You can read about managing and automating the upgrade process of Surface devices to Windows 10 at [Upgrade Surface devices to Windows 10 with MDT](https://technet.microsoft.com/en-us/itpro/surface/upgrade-surface-devices-to-windows-10-with-mdt). 
 
 The goal of the deployment process presented in this article is automation. By leveraging the many technologies and tools available from Microsoft, you can create a process that requires only a single touch on the devices being deployed. The automation can load the deployment environment; format the device; prepare an updated Windows image with the drivers required for the device; apply that image to the device; configure the Windows environment with licensing, membership in a domain, and user accounts; install applications; apply any Windows updates that were not included in the reference image; and log out.
 
@@ -545,7 +545,7 @@ After the task sequence is created it can be modified for increased automation, 
 10.	Select Office 2016 Click-to-Run from the list of applications, and then click **OK**.
 11.	Repeat Steps 6 through 10 for the Surface app.
 12.	Expand the **Preinstall** folder, and then click the **Enable BitLocker (Offline)** step.
-13.	Open the **Add** menu again and choose **Set Task Sequence Variable** from under the **General** submenu.
+13.	Open the **Add** menu again and choose **Set Task Sequence Variable** from under the **General** menu.
 14. On the **Properties** tab of the new **Set Task Sequence Variable** step (as shown in Figure 22), configure the following options:
   * **Name** – Set DriverGroup001
   * **Task Sequence Variable** – DriverGroup001
