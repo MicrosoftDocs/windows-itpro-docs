@@ -317,7 +317,7 @@ Shared PC mode sets local group policies to configure the device. Some of these 
 <tr> <td colspan="3"> <p> <strong>Windows Settings</strong>><strong>Security Settings</strong>><strong>Local Policies</strong>><strong>Security Options</strong> </p> </td> 
 </tr> 
 <tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled, Disabled when account model is only guest </p> </td>
-</tr> 
+<td><p>Always</p></td></tr> 
 <tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart </p> </td> <td> <p> Disabled </p> </td> <td><p>Always</p></td> 
 </tr> 
 <tr> <td> <p> Shutdown: Allow system to be shut down without having to log on </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>  
