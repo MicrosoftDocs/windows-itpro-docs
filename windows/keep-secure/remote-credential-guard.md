@@ -13,9 +13,13 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Introduced in Windows 10, version 1607, Remote Credential Guard helps you protect your credentials over a Remote Desktop connection by redirecting the Kerberos requests back to the device that's requesting the connection. If the target device is compromised, your credentials are not exposed because both credential and credential derivatives are never sent to the target device.
+Introduced in Windows 10, version 1607, Remote Credential Guard helps you protect your credentials over a Remote Desktop connection by redirecting the Kerberos requests back to the device that's requesting the connection. It also provides single sign on experiences for Remote Desktop sessions. If the target device is compromised, your credentials are not exposed because both credential and credential derivatives are never sent to the target device.
 
-Remote Credential Guard also provides single sign on experiences for Remote Desktop sessions.
+You can use Remote Credential Guard in the following ways:
+
+- Administrator credentials are highly privileged and must be protected. By using Remote Credential Guard to connect, you can be assured that your credentials are not passed over the network to the target device.
+
+- Helpdesk employees in your organization must connect to domain-joined devices that could be compromised. With Remote Credential Guard, the helpdesk employee can use RDP to connect to the target device without compromising their credentials to malware.
 
 Use the following diagrams to help understand how Remote Credential Guard works and what it helps protect against.
 
@@ -83,3 +87,9 @@ mstsc.exe /remoteGuard
 - No credentials are sent to the target device, but the target device still acquires the Kerberos Service Tickets on its own.
 
 - Remote Desktop Gateway is not compatible with Remote Credential Guard.
+
+- You cannot used saved or credentials that are different than yours. You must use the credentials of the user who is logged into the device.
+
+- Both the client and the server must be joined to the same domain or the domains must have a trust relationship.
+
+- The server and client must authenticate using Kerberos.
