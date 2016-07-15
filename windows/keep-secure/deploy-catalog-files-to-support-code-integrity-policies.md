@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Deploy catalog files to support code integrity policies (Windows 10)
+# Deploy catalog files to support code integrity policies
 
 **Applies to**
 -   Windows 10

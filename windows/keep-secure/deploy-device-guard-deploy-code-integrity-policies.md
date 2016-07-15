@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Deploy Device Guard: deploy code integrity policies (Windows 10)
+# Deploy Device Guard: deploy code integrity policies
 
 **Applies to**
 -   Windows 10

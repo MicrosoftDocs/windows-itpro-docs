@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Planning and getting started on the Device Guard deployment process (Windows 10)
+# Planning and getting started on the Device Guard deployment process
 
 **Applies to**
 -   Windows 10

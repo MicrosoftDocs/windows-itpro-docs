@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Requirements and deployment planning guidelines for Device Guard (Windows 10)
+# Requirements and deployment planning guidelines for Device Guard
 
 **Applies to**
 -   Windows 10

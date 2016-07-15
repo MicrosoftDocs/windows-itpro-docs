@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Deploy code integrity policies: steps (Windows 10)
+# Deploy code integrity policies: steps
 
 **Applies to**
 -   Windows 10
