@@ -15,6 +15,7 @@ author: Scottmca
 * Surface Pro 4
 * Surface Book
 * Surface 3
+* Windows 10
 
 This article walks you through the recommended process to deploy Windows 10 to Surface devices with Microsoft deployment technologies. The process described in this article yields a complete Windows 10 environment including updated firmware and drivers for your Surface device along with applications like Microsoft Office 365 and the Surface app. When the process is complete, the Surface device will be ready for use by the end user. You can customize this process to include your own applications and configuration to meet the needs of your organization. You can also follow the guidance provided in this article to integrate deployment to Surface devices into existing deployment strategies.
 
@@ -291,6 +292,7 @@ To update the MDT boot media, follow these steps:
   * **LiteTouchPE_x64.iso**
   * **LiteTouchPE_x64.wim**
 
+
    ![Boot images in the Boot folder after Update Deployment Share Wizard completes](images\surface-deploymdt-fig12.png "Boot images in the Boot folder after Update Deployment Share Wizard completes")
 
    *Figure 12: Boot images displayed in the Boot folder after completion of the Update Deployment Share Wizard*
@@ -357,6 +359,7 @@ Perform the reference image deployment and capture using the following steps:
   * **User Data (Restore)** – Leave the default option of **Do Not Restore User Data and Settings** selected, and then click **Next**.
   * **Locale and Time** – Leave the default options for language and time settings selected. The locale and time settings will be specified during deployment of the image to other devices. Click **Next**.
   * **Capture Image** – Click the **Capture an Image of this Reference Computer** option, as shown in Figure 16. In the **Location** field, keep the default location of the Captures folder. You can keep or change the name of the image file in the **File Name** field. When you are finished, click **Next**.
+
 
    ![Capture an image of the reference machine](images\surface-deploymdt-fig16.png "Capture an image of the reference machine")
     
@@ -450,7 +453,7 @@ The Office Deployment Tool is a free download available in the Microsoft Downloa
 
 Download and install the version of Office Deployment Tool (ODT), for Office 2013 or Office 2016, that fits your organization’s needs and use the steps provided by that page to download the Office installation files for use with MDT.
 
-After you have downloaded the source files for your version of Office Click-to-Run, you need to edit the Configuration.xml document with instructions to install Office Click-to-Run silently. To configure the Office Deployment Tool for silent installation, follow these steps:
+After you have downloaded the source files for your version of Office Click-to-Run, you need to edit the Configuration.xml file with instructions to install Office Click-to-Run silently. To configure the Office Deployment Tool for silent installation, follow these steps:
 
 1. Right-click the existing **Configuration.xml** file, and then click **Edit**.
 2. This action opens the file in Notepad. Replace the existing text with the following: 
@@ -465,7 +468,7 @@ After you have downloaded the source files for your version of Office Click-to-R
 
 3. Save the file.
 
-The default behavior of setup.exe is to look for the source files in the path that contains **setup.exe**. If the installation files are not found in this folder, the Office Deployment Tool will default to online source files from an Internet connection.
+The default behavior of Setup.exe is to look for the source files in the path that contains **Setup.exe**. If the installation files are not found in this folder, the Office Deployment Tool will default to online source files from an Internet connection.
 
 For MDT to perform an automated installation of office, it is important to configure the **Display Level** option to a value of **None**. This setting is used to suppress the installation dialog box for silent installation. It is required that the **AcceptEULA** option is set to **True** to accept the license agreement when the **Display Level** option is set to **None**. With both of these options configured, the installation of Office will occur without the display of dialog boxes which could potentially cause the installation to pause until a user can address an open dialog box.
 
@@ -547,6 +550,7 @@ After the task sequence is created it can be modified for increased automation, 
   * **Task Sequence Variable** – DriverGroup001
   * **Value** – Windows 10 x64\%Make%\%Model%
 
+
    ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images\surface-deploymdt-fig22.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
 
    Figure 22. Configure a new Set Task Sequence Variable step in the deployment task sequence
@@ -555,6 +559,7 @@ After the task sequence is created it can be modified for increased automation, 
 16.	On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 23), configure the following options:
   * In the **Choose a selection profile** drop-down menu, select **Nothing**.
   * Click the **Install all drivers from the selection profile** button.
+
     
    ![Configure deployment task sequence not to choose the drivers to inject into Windows](images\surface-deploymdt-fig23.png "Configure deployment task sequence not to choose the drivers to inject into Windows")
 
@@ -576,7 +581,8 @@ To automate the boot media rules, follow these steps:
 2.	Click the **Rules** tab, and then click **Edit Bootstrap.ini** to open Bootstrap.ini in Notepad.
 3.	Replace the text of the Bootstrap.ini file with the following text:
 
-```[Settings]
+   ```
+[Settings]
 Priority=Model,Default
 
 [Surface Pro 4]
@@ -588,7 +594,7 @@ SkipBDDWelcome=YES
 
 [Surface Pro 4]
 DeployRoot=\\STNDeployServer\DeploymentShare$
-```
+   ```
 
 4. Press Ctrl+S to save Bootstrap.ini, and then close Notepad.
 
@@ -656,36 +662,36 @@ FinishAction=LOGOFF
    ```
 Rules used in this example include:
 
-* **SkipTaskSequence** – This rule is used to skip the Task Sequence page where the user would have to select between available task sequences.
+* **SkipTaskSequence** – This rule is used to skip the **Task Sequence** page where the user would have to select between available task sequences.
 * **TaskSequenceID** – This rule is used to instruct the Windows Deployment Wizard to run a specific task sequence. In this scenario the task sequence ID should match the deployment task sequence you created in the previous section.
 * **OSInstall** – This rule indicates that the Windows Deployment Wizard will be performing an operating system deployment.
-* **SkipCapture** – This rule prevents the Capture Image page from being displayed, prompting the user to create an image of this device after deployment.
-* **SkipAdminPassword** – This rule prevents the Admin Password page from being displayed. The Administrator password specified in the task sequence will still be applied.
-* **SkipProductKey** – This rule prevents the Specify Product Key page from being displayed. The product key specified in the task sequence will still be applied.
-* **SkipComputerBackup** – This rule prevents the Move Data and Settings page from being displayed, where the user is asked if they would like to make a backup of the computer before performing deployment.
-* **SkipBitLocker** – This rule prevents the BitLocker page from being displayed, where the user is asked if BitLocker Drive Encryption should be used to encrypt the device.
-* **SkipBDDWelcome** – This rule prevents the Welcome page from being displayed, where the user is prompted to begin Windows deployment.
-* **SkipUserData** – This rule prevents the User Data (Restore) page from being displayed, where the user is asked to restore previously backed up user data in the new environment.
+* **SkipCapture** – This rule prevents the **Capture Image** page from being displayed, prompting the user to create an image of this device after deployment.
+* **SkipAdminPassword** – This rule prevents the **Admin Password** page from being displayed. The Administrator password specified in the task sequence will still be applied.
+* **SkipProductKey** – This rule prevents the **Specify Product Key** page from being displayed. The product key specified in the task sequence will still be applied.
+* **SkipComputerBackup** – This rule prevents the **Move Data and Settings** page from being displayed, where the user is asked if they would like to make a backup of the computer before performing deployment.
+* **SkipBitLocker** – This rule prevents the **BitLocker** page from being displayed, where the user is asked if BitLocker Drive Encryption should be used to encrypt the device.
+* **SkipBDDWelcome** – This rule prevents the **Welcome** page from being displayed, where the user is prompted to begin Windows deployment.
+* **SkipUserData** – This rule prevents the **User Data (Restore)** page from being displayed, where the user is asked to restore previously backed up user data in the new environment.
 * **UserDataLocation** – This rule prevents the user from being prompted to supply a location on the User Data (Restore) page.
-* **SkipApplications** – This rule prevents the Applications page from being displayed, where the user is prompted to select from available applications to be installed in the new environment.
-* **SkipPackageDisplay** – This rule prevents the Packages page from being displayed, where the user is prompted to select from available packages to be installed in the new environment.
-* **SkipComputerName** – This rule, when combined with the SkipDomainMembership rule, prevents the Computer Details page from being displayed, where the user is asked to supply computer name and join a domain or workgroup.
-* **SkipDomainMembership** – This rule, when combined with the SkipComputerName rule, prevents the Computer Details page from being displayed, where the user is asked to supply computer name and join a domain or workgroup.
+* **SkipApplications** – This rule prevents the **Applications** page from being displayed, where the user is prompted to select from available applications to be installed in the new environment.
+* **SkipPackageDisplay** – This rule prevents the **Packages** page from being displayed, where the user is prompted to select from available packages to be installed in the new environment.
+* **SkipComputerName** – This rule, when combined with the **SkipDomainMembership** rule, prevents the **Computer Details** page from being displayed, where the user is asked to supply computer name and join a domain or workgroup.
+* **SkipDomainMembership** – This rule, when combined with the **SkipComputerName** rule, prevents the **Computer Details** page from being displayed, where the user is asked to supply computer name and join a domain or workgroup.
 * **JoinDomain** – This rule instructs the Windows Deployment Wizard to have the computer join the specified domain using the specified credentials. 
 * **DomainAdmin** – This rule specifies the username for the domain join operation.
 * **DomainAdminDomain** – This rule specifies the domain for the username for the domain join operation.
 * **DomainAdminPassword** – This rule specifies the password for the username for the domain join operation.
-* **SkipLocaleSelection** –  This rule, along with the SkipTimeZone rule, prevents the Locale and Time page from being displayed.
+* **SkipLocaleSelection** –  This rule, along with the **SkipTimeZone** rule, prevents the **Locale and Time** page from being displayed.
 * **KeyboardLocale** – This rule is used to specify the keyboard layout for the deployed Windows environment.
 * **UserLocale** – This rule is used to specify the geographical locale for the deployed Windows environment.
 * **UILanguage** – This rule is used to specify the language to be used in the deployed Windows environment.
-* **SkipTimeZone** –  This rule, along with the SkipLocaleSelection rule, prevents the Locale and Time page from being displayed.
+* **SkipTimeZone** –  This rule, along with the **SkipLocaleSelection** rule, prevents the **Locale and Time** page from being displayed.
 * **TimeZoneName** – This rule is used to specify the time zone for the deployed Windows environment.
 * **UserID** – This rule is used to supply the username under which the MDT actions and task sequence steps are performed.
 * **UserDomain** – This rule is used to supply the domain for the username under which the MDT actions and task sequence steps are performed.
 * **UserPassword** – This rule is used to supply the password for the username under which the MDT actions and task sequence steps are performed.
-* **SkipSummary** – This rule prevents the Summary page from being displayed before the task sequence is run, where the user is prompted to confirm the selections before beginning the task sequence.
-* **SkipFinalSummary** – This rule prevents the Summary page from being displayed when the task sequence has completed.
+* **SkipSummary** – This rule prevents the **Summary** page from being displayed before the task sequence is run, where the user is prompted to confirm the selections before beginning the task sequence.
+* **SkipFinalSummary** – This rule prevents the **Summary** page from being displayed when the task sequence has completed.
 * **FinishAction** – This rule specifies whether to log out, reboot, or shut down the device after the task sequence has completed.
 
 You can read about all of the possible deployment share and boot media rules in the [Microsoft Deployment Toolkit Reference](https://technet.microsoft.com/library/dn781091).

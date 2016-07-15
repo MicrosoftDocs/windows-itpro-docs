@@ -16,6 +16,7 @@ author: Scottmca
 * Surface 3
 * Surface Pro 2
 * Surface Pro
+* Windows 10
 
 In addition to the traditional deployment method of reimaging devices, administrators that want to upgrade Surface devices that are running Windows 8.1 or Windows 10 have the option of deploying upgrades. By performing an upgrade deployment, Windows 10 can be applied to devices without removing users, apps, or configuration. The users of the deployed devices can simply continue using the devices with the same apps and settings that they used prior to the upgrade. The process described in this article shows how to perform a Windows 10 upgrade deployment to Surface devices.
 
@@ -135,6 +136,7 @@ After the task sequence is created, you can modify some additional settings to p
   - **Name** – Set DriverGroup001
   - **Task Sequence Variable** – DriverGroup001
   - **Value** – Windows 10 x64\%Make%\%Model%
+
   
   ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images\surface-upgrademdt-fig4.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
   
@@ -144,6 +146,7 @@ After the task sequence is created, you can modify some additional settings to p
 15. On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 5) configure the following options:
   * In the **Choose a selection profile** drop-down menu, select **Nothing**.
   * Click the **Install all drivers from the selection profile** button.
+  
   
   ![Configure the deployment task sequence to not install drivers](images\surface-upgrademdt-fig5.png "Configure the deployment task sequence to not install drivers")
   
