@@ -593,7 +593,7 @@ SkipBDDWelcome=YES
 
 [Surface Pro 4]
 DeployRoot=\\STNDeployServer\DeploymentShare$
-```
+  ```
 
 4. Press Ctrl+S to save Bootstrap.ini, and then close Notepad.
 
