@@ -52,7 +52,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 2. Add all the files required for the app install, including the data files and the installer.
 
-3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the msiexec /quiet option. 
+3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the `msiexec /quiet` option. 
 
 > **Note**: If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
 
@@ -61,13 +61,13 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**. 
 
-2. For **UserContextApp**, specify the **PackageFamilyName** for the app. (how to find package family name)
+2. For **UserContextApp**, specify the **PackageFamilyName** for the app. `(how to find package family name)`
 
 3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
 
-4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. (how will they know?)
+4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. `(how will they know?)`
 
-5. For **UserContextAppLicense**, enter the **LicenseProductID**. (where to get)
+5. For **UserContextAppLicense**, enter the **LicenseProductID**. `(where to get)`
 
 
 ### Add a certificate to your package
@@ -146,6 +146,8 @@ If your build is successful, the name of the provisioning package, output direct
 
 
 ## Apply package
+
+`WHY OOBE ONLY?`
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
