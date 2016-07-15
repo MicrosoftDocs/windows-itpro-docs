@@ -18,6 +18,8 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |----------------------|-------------|
 |[Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |New |
 |[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |New |
+|[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (multiple topics) | Updated |
+|[Device Guard deployment guide](device-guard-deployment-guide.md) (multiple topics) | Updated |
 
 
 ## June 2016
