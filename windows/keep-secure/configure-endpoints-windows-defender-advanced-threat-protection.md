@@ -115,7 +115,16 @@ These policies are categorized into two groups:
 
 > **Warning**&nbsp;&nbsp;These two groups must not be deployed on the same machine at same time, otherwise this will cause unpredictable collisions.
 
- ![Table of policies used in Microsoft Intune ](images/oma-uri.png)
+Policy | OMA-URI | Type | Description | Value
+:---|:---|:---|:---|:---
+Onboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding | String | Onboarding | Copy content from onboarding MDM file
+Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | Windows Defender ATP service is running | TRUE
+ | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Onboarded to Windows Defender ATP | 1
+  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OrgId | String | Onboarded to Organization ID | Use OrgID from onboarding file
+ Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | Windows Defender ATP Sample sharing is enabled | 0 or 1 <br> Default value: 1
+ Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding | String | Offboarding | Copy content from offboarding MDM file
+ Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | Windows Defender ATP service is not running | FALSE
+  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Offboarded from Windows Defender ATP  | 0
 
 > **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** and **Health Status for offboarded machines** use read-only properties and can't be remediated.
 

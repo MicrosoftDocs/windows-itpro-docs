@@ -116,10 +116,16 @@ Provisioning packages can be applied both during image deployment and during run
 ## Related topics
 
 - [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
-
-- [LProvision PCs with apps and certificates for initial deployments](provision-pcs-with-apps-and-certificates.md)
-
+- [Provision PCs with apps and certificates for initial deployments](provision-pcs-with-apps-and-certificates.md)
 - [Configure devices without MDM](../manage/configure-devices-without-mdm.md)
+- [Set up a shared or guest PC with Windows 10](../manage/set-up-shared-or-guest-pc.md)
+- [Configure devices without MDM](../manage/configure-devices-without-mdm.md)
+- [Set up a device for anyone to use (kiosk mode)](../manage/set-up-a-device-for-anyone-to-use.md)
+- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](../manage/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+- [Set up student PCs to join domain](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain)
+
+
+
 
  
 
