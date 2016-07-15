@@ -43,10 +43,27 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
 
+### VPN profile options
+
+User Convenience Features
+- Name-based Connection Triggering
+- DA-comparable AutoVPN Configuration
+Authentication Options
+- VPN with Phone Sign0in
+- One Time Password (OTP) Settings Exposed Through the UI
+Remote Access Integration
+- Device Compliance Options
+- Enterprise Data Protection (EDP) Integration
+Updated Client and Configuration Options
+- Universal Windows Platform (UWP) VPN Plugins
+- New VPNv2 CSP Configuration Settings
+- Microsoft Intune VPN Policy Updates
+- VPNv2 CSP Configuration using the SCCM/WMI Bridge
+
  
 ## Management
 
-## Use Remote Desktop Connection for PCs joined to Azure Active Directory
+### Use Remote Desktop Connection for PCs joined to Azure Active Directory
 
 From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is joined to Azure Active Directory (Azure AD). [Learn about the requirements and supported configurations.](../manage/connect-to-remote-aadj-pc.md)
 
