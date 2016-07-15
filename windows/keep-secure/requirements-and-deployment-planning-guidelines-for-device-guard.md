@@ -57,8 +57,6 @@ The following tables provide more information about the hardware, firmware, and 
 
 The following tables describes additional hardware and firmware requirements, and the additional protections that are available when those requirements are met. We strongly recommend the following additional protections, which help you maximize the benefits that Device Guard can provide.
 
- to take advantage of all the security options Device Guard can provide.
-
 ### 2015 Additional Qualification Requirements for Device Guard (Windows 10, version 1507 and Windows 10, version 1511)
 
 |Additional Protections - requirement         | Description                                        |
