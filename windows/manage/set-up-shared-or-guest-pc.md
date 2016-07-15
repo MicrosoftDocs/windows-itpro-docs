@@ -33,13 +33,14 @@ Shared PC mode is configured to take advantage of maintenance time periods which
 
 While shared PC mode does not configure Windows Update itself, it is strongly recommended to configure Windows Update to automatically install updates and reboot (if necessary) during maintenance hours. This will help ensure the PC is always up to date and not interrupting users with updates. Use one of the following methods to configure Windows Update:
 
-- Group Policy: Set **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatice Updates** to `4` and check **Install during automatic maintenance**.
+- Group Policy: Set **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates** to `4` and check **Install during automatic maintenance**.
 - MDM: Set **Update/AllowAutoUpdate** to `4`. 
 - Provisioning: In Windows Imaging and Configuration Designer (ICD), set **Policies/Update/AllowAutoUpdate** to `4`. 
+
 [Learn more about the AllowAutoUpdate settings](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
 
 ###Customization
-Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These are the same options that you'll set either via MDM or a provisioning package covered below in [Configuring shared PC mode on Windows](#configuring-shared-pc-mode-on-windows). The options are listed in the following table.
+Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using MDM or a provisioning package as explained in [Configuring shared PC mode on Windows](#configuring-shared-pc-mode-on-windows). The options are listed in the following table.
 
 | Setting | Value |
 |:---|:---|
