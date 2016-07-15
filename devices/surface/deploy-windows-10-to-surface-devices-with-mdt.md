@@ -359,11 +359,10 @@ Perform the reference image deployment and capture using the following steps:
   * **User Data (Restore)** – Leave the default option of **Do Not Restore User Data and Settings** selected, and then click **Next**.
   * **Locale and Time** – Leave the default options for language and time settings selected. The locale and time settings will be specified during deployment of the image to other devices. Click **Next**.
   * **Capture Image** – Click the **Capture an Image of this Reference Computer** option, as shown in Figure 16. In the **Location** field, keep the default location of the Captures folder. You can keep or change the name of the image file in the **File Name** field. When you are finished, click **Next**.
-
-
-   ![Capture an image of the reference machine](images\surface-deploymdt-fig16.png "Capture an image of the reference machine")
+  
+  ![Capture an image of the reference machine](images\surface-deploymdt-fig16.png "Capture an image of the reference machine")
     
-   *Figure 16. Use the Capture Image page to capture an image of the reference machine after deployment*
+  *Figure 16. Use the Capture Image page to capture an image of the reference machine after deployment*
 
   * **Ready** – You can review your selections by expanding **Details** on the **Ready** page. Click **Begin** when you are ready to perform the deployment and capture of your reference image.
 
