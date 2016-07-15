@@ -680,6 +680,7 @@
 ### [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md)
 #### [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md)
 #### [Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)
+#### [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
 #### [Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md)
 ##### [Configure endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 ##### [Configure proxy and Internet settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
