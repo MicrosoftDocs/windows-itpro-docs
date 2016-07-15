@@ -15,14 +15,14 @@ author: eross-msft
 
 -   Windows 10 Insider Preview
 -   Windows 10 Mobile Preview
--   System Center Configuration Manager (version 1605 Tech Preview or later)
+-   System Center Configuration Manager Technical Preview version 1605 or later
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-System Center Configuration Manager (version 1605 Tech Preview or later) helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection mode, and how to find enterprise data on the network.
+System Center Configuration Manager Technical Preview version 1605 or later helps you create and deploy your enterprise data protection (EDP) policy, including letting you choose your protected apps, your EDP-protection mode, and how to find enterprise data on the network.
 
 >**Important**<br>
-If you previously created an EDP policy using System Center Configuration Manager version 1511 or 1602, you’ll need to recreate it using version 1605 Tech Preview or later. Editing an EDP policy created in version 1511 or 1602 is not supported in version 1605 Tech Preview. There is no migration path between EDP policies across these versions.
+If you previously created an EDP policy using System Center Configuration Manager version 1511 or 1602, you’ll need to recreate it using Configuration Manager Technical Preview version 1605 or later. Editing an EDP policy created in version 1511 or 1602 is not supported in the Technical Preview version 1605 or later. There is no migration path between EDP policies across these versions.
 
 ## Add an EDP policy
 After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for EDP, which in turn becomes your EDP policy.
@@ -64,14 +64,14 @@ During the policy-creation process in System Center Configuration Manager, you c
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed desktop app (also known as a Classic Windows app), or an AppLocker policy file.
 
 >**Important**<br>
-EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process. <p>Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **App rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
+EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process. <p>Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **App Rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
 #### Add a store app rule to your policy
 For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
 
 **To add a store app**
 
-1.	From the **App rules** area, click **Add**.
+1.	From the **App Rules** area, click **Add**.
     
     The **Add app rule** box appears.
 
@@ -153,7 +153,7 @@ If you don't know the publisher or product name, you can find them for both desk
 For this example, we’re going to add Internet Explorer, a desktop app, to the **App Rules** list.
 
 **To add a desktop app to your policy**
-1.	From the **App rules** area, click **Add**.
+1.	From the **App Rules** area, click **Add**.
     
     The **Add app rule** box appears.
 
@@ -293,7 +293,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 12. After you’ve created your XML file, you need to import it by using System Center Configuration Manager.
 
 **To import your Applocker policy file app rule using 1System Center Configuration Manager**
-1.	From the **App rules** area, click **Add**.
+1.	From the **App Rules** area, click **Add**.
     
     The **Add app rule** box appears.
 
@@ -318,7 +318,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 **To exempt a store app, a desktop app, or an AppLocker policy file app rule**
 
-1.	From the **App rules** area, click **Add**.
+1.	From the **App Rules** area, click **Add**.
     
     The **Add app rule** box appears.
 
@@ -409,12 +409,12 @@ There are no default locations included with EDP, you must add each of your netw
             <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-EDP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
         </tr>
         <tr>
-            <td>Enterprise IPv4 Range (Required)</td>
+            <td>Enterprise IPv4 Range (Required, if not using IPv6)</td>
             <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
             <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
         </tr>
         <tr>
-            <td>Enterprise IPv6 Range</td>
+            <td>Enterprise IPv6 Range (Required, if not using IPv4)</td>
             <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
             <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
         </tr>
@@ -441,11 +441,11 @@ There are no default locations included with EDP, you must add each of your netw
 
 5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
+    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/edp-sccm-dra.png)
+
     After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
     
     For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
-
-    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/edp-sccm-dra.png)
 
 #### Create and verify an Encrypting File System (EFS) DRA certificate for EDP
 If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use EDP in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
@@ -462,7 +462,7 @@ If you don’t already have an EFS DRA certificate, you’ll need to create and 
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1. 
 
-    **Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
+    >**Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
 
 4.	Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic.
 
