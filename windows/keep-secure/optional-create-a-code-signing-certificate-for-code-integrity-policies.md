@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Optional: Create a code signing certificate for code integrity policies (Windows 10)
+# Optional: Create a code signing certificate for code integrity policies
 
 **Applies to**
 -   Windows 10

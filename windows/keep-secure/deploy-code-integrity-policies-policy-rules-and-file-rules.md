@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Deploy code integrity policies: policy rules and file rules (Windows 10)
+# Deploy code integrity policies: policy rules and file rules
 
 **Applies to**
 -   Windows 10

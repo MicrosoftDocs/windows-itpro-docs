@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Deploy Device Guard: enable virtualization-based security (Windows 10)
+# Deploy Device Guard: enable virtualization-based security
 
 **Applies to**
 -   Windows 10

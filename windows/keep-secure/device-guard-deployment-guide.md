@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 author: brianlic-msft
 ---
 
-# Device Guard deployment guide (Windows 10)
+# Device Guard deployment guide
 
 **Applies to**
 -   Windows 10
