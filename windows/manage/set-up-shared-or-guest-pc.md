@@ -17,11 +17,224 @@ author: jdeckerMS
 
 Windows 10, Version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise.
 
-> **Note:** If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/en-us/edu/windows/use-set-up-school-pcs-app).
+> **Note:** If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/en-us/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional education specific settings.
 
-A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. After setup, the device is ready for multiple users. Users only have non-administrator rights, and they can’t block other users from accessing the device. With a standard Windows PC, accounts would have to be manually cleaned by an administrator (both signed out and deleted). In shared PC mode, accounts that sign in to the PC are either deleted when the user signs out or are deleted when available disk space reaches a set threshold, depending on how you configure the settings for shared PC mode. 
+##Shared PC mode concepts
+A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. Users who sign-in are signed in as standard users, not admin users.
 
-You can put a PC in shared PC mode by applying a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx). 
+###Account models
+It is intended that PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC as standard users. The user who origianlly joined the PC to the domain will have administrative rights when they sign in. If using AAD Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a *Start without an account* button on the sign-in screen which doesn't require any user credentials or authentication and creates a new local account.
+
+###Account management
+When the account management service is turned on in shared PC mode, accounts are automatically deleted. Account deletion is done for AD, AAD, and local account types. However, only local accounts that are created by the *Start without an account* feature are deleted. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low.
+
+###Maintenance and sleep
+Shared PC mode is heavily configured to take advantage of maintenance time periods which run while the PC is not in use. Therefore, sleep is strongly recommended so that the PC can wake up when it is not is use to perform maintenance, clean up accounts, and run Windows Update. The recommended settings can be set by choosing SetPowerPolicies in the list of shared PC options. Additionally, on devices without ACPI wake alarms, shared PC mode will always override RTC wake alarms to be allowed to wake the PC from sleep (by default, RTC wake alarms are off). This ensures that the widest variety of hardware will take advantage of maintenance periods.
+
+<br/>While shared PC mode does not configure Windows Update itself, it is strongly recommended to configure Windows Update to automatically install updates and reboot (if necessary) during maintenance hours. This will help ensure the PC is always up to date and not interrupting users with updates. 
+####With Group Policy
+Set Computer Configuration > Administrative Templates > Windows Components > Windows Update > *Configure Automatice Updates* to 4 and check *Install during automatic maintenance*.
+####With MDM
+Set Update/AllowAutoUpdate to 4. [More information](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
+####With provisioning
+In ICD, set Policies/Update/AllowAutoUpdate to 4. [More information](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
+
+###Policies and further customization
+Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These are covered in detail below.
+
+##Shared PC mode reference
+Shared PC mode is specified by a set of options. These are the same options that you'll set either via MDM or a provisioning package covered below in Configuring shared PC mode on Windows
+<br/>
+
+Setting | Value |
+:---|:---|
+EnableSharedPCMode | Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. Some of the remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.  |
+AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the *Start without an account* button to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
+AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not.  |
+AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
+AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
+AccountManagement: EnableAccountManager | Set as **True** to enable automatic account management. If this is not set to true, no automatic account management will be done. |
+Customization: MaintenanceStartTime | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.   |
+Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. When **SetEduPolicies** is **True**, the following additional settings are applied:<br/>- Local storage locations are restricted. Users can only save files to the cloud. <br/>- Custom Start and taskbar layouts are set.\* <br/>- A custom sign-in screen background image is set.\* <br/>- Additional educational policies are applied (see full list below).<br/><br/>\*Only applies to Windows 10 Pro for Education, Enterprise, and Education  |
+Customization: SetPowerPolicies |  When set as **True**:<br/>- Prevents users from changing power settings<br/>- Turns off hibernate<br/>- Overrides all power state transitions to sleep (e.g. lid close)  |
+Customization: SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
+Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
+
+## Guidance for accounts on shared PCs
+
+* We recommend no local admin accounts on the PC to improve the reliability and security of the PC.
+* When a PC is set up in shared PC mode, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account managment happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Start without an account** will also be deleted automatically at sign out.
+* On a Windows PC joined to Azure Active Directory:
+    * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
+    * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
+* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. However, any new local accounts created by the **Start without an account** selection on the sign-in screen (if enabled) will automatically be deleted at sign-out.
+* If admin accounts are necessary on the PC
+    * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
+    * Create admin accounts before setting up shared PC mode, or 
+    * Create exempt accounts before signing out when turning shared pc mode on.
+* The account management service supports accounts that are exempt from deletion.
+    * An account can be marked exempt from deletion by adding the account SID to the `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\` registry key.
+    * To add the account SID to the registry key using PowerShell:<br/>
+        ```
+        $adminName = "LocalAdmin"
+        $adminPass = 'Pa$$word123'
+        iex "net user /add $adminName $adminPass"
+        $user = New-Object System.Security.Principal.NTAccount($adminName) 
+        $sid = $user.Translate([System.Security.Principal.SecurityIdentifier]) 
+        $sid = $sid.Value;
+        New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
+        ``` 
+
+## Policies set by shared PC mode
+Shared pc mode sets local group policies to configure the device. Some of these are configurable by setting the options shared pc mode exposes.
+
+> **Important**: It is not recommended to set additional policies on PCs configured for **Shared PC Mode**.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
+
+<table border="1"> 
+
+<tr><th><p>Policy name</p></th><th><p>Value</p></th><th><p>When set?</p></th> 
+</tr> </thead>
+<tbody>
+<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong></p></td> 
+</tr> 
+<tr><td><p>Prevent enabling lock screen slide show</p></td><td><p>Enabled</p></td><td><p>Always</p></td>
+</tr> 
+<tr><td><p>Prevent changing lock screen and logon image</p></td><td><p>Enabled</p></td><td><p>Always</p></td>
+</tr> 
+<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Button Settings</strong></p></td> 
+</tr> 
+<tr><td><p>Select the Power button action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td> 
+</tr> 
+<tr><td><p>Select the Power button action (on battery)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td> 
+</tr> 
+<tr><td><p>Select the Sleep button action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td> 
+</tr> 
+<tr><td><p>Select the lid switch action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr><td><p>Select the lid switch action (on battery)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Sleep Settings</strong></p></td> 
+</tr> 
+<tr><td><p>Require a password when a computer wakes (plugged in)</p></td><td><p>Enabled</p></td><td><p>SignInOnResume=True</p></td>
+</tr> 
+<tr><td><p>Require a password when a computer wakes (on battery)</p></td><td><p>Enabled</p></td><td><p>SignInOnResume=True</p></td>
+</tr>
+<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p>*SleepTimeout*</p></td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p>*SleepTimeout*</p></td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr> <td> <p> Turn off hybrid sleep (plugged in) </p> </td> <td> <p> Enabled </p> </td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr> <td> <p> Turn off hybrid sleep (on battery) </p> </td> <td> <p> Enabled </p> </td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p>*SleepTimeout*</p> </td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p>*SleepTimeout*</p> </td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr> <td> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td> <p> Enabled </p> </td><td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr> <td> <p> Allow standby states (S1-S3) when sleeping (on battery) </p> </td> <td> <p> Enabled </p> </td> <td><p>SetPowerPolicies=True</p></td>
+</tr> 
+<tr> <td> <p> Specify the system hibernate timeout (plugged in) </p> </td> <td> <p> Enabled, 0 </p> </td><td><p>SetPowerPolicies=True</p></td> 
+</tr> 
+<tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0 </p> </td><td><p>SetPowerPolicies=True</p></td> 
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Video and Display Settings</strong> </p> </td> </tr> 
+<tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p>*SleepTimeout*</p> </td></td><td><p>SetPowerPolicies=True</p></td>  
+</tr>
+ <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p>*SleepTimeout*</p> </td></td><td><p>SetPowerPolicies=True</p></td> 
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Logon</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Show first sign-in animation </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td> <p> Hide entry points for Fast User Switching </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td> 
+</tr> 
+<tr> <td> <p> Turn on convenience PIN sign-in </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td> <p> Turn off picture password sign-in </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td> <p> Turn off app notification on the lock screen </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td> <p> Allow users to select when a password is required when resuming from connected standby </p> </td> <td> <p> Disabled </p> </td><td><p>SignInOnResume=True</p></td> 
+</tr> 
+<tr> <td> <p> Block user from showing account details on sign-in </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled </p> </td><td><p>SetEduPolicies=True</p></td>
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Do not show Windows Tips </p>*Only on Pro, Enterprise, and Education* </td> <td> <p> Enabled </p> </td><td><p>SetEduPolicies=True</p></td> 
+</tr> 
+<tr> <td> <p> Turn off Microsoft consumer experiences </p>*Only on Pro, Enterprise, and Education* </td> <td> <p> Enabled </p> </td><td><p>SetEduPolicies=True</p></td> 
+</tr> 
+<tr> <td> <p> Microsoft Passport for Work </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td> <p> Allow users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td> 
+</tr> 
+<tr> <td> <p> Allow domain users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td> 
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Toggle user control over Insider builds </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td> <p> Disable pre-release features or settings </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td> 
+</tr> 
+<tr> <td> <p> Do not show feedback notifications </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td> 
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>File Explorer</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Show lock in the user tile menu </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Maintenance Scheduler</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> *MaintenanceStartTime* </p> </td><td><p>Always</p></td>
+</tr> 
+<tr> <td> <p> Automatic Maintenance Random Delay </p> </td> <td> <p> Enabled, 2 hours </p> </td><td><p>Always</p></td> 
+</tr> 
+<tr> <td> <p> Automatic Maintenance WakeUp Policy </p> </td> <td> <p> Enabled </p> </td><td><p>Always</p></td> 
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Microsoft Edge</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Open a new tab with an empty tab </p> </td> <td> <p> Disabled </p> </td><td><p>SetEduPolicies=True</p></td> 
+</tr> 
+<tr> <td> <p> Configure corporate home pages </p> </td> <td> <p> Enabled, about:blank </p> </td><td><p>SetEduPolicies=True</p></td> 
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Search</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Allow Cortana </p> </td> <td> <p> Disabled </p> </td><td><p>SetEduPolicies=True</p></td>  
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Windows Settings</strong>><strong>Security Settings</strong>><strong>Local Policies</strong>><strong>Security Options</strong> </p> </td> 
+</tr> 
+<tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled, Disabled when account model is only guest </p> </td>
+</tr> 
+<tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart </p> </td> <td> <p> Disabled </p> </td> <td><p>Always</p></td> 
+</tr> 
+<tr> <td> <p> Shutdown: Allow system to be shut down without having to log on </p> </td> <td> <p> Disabled </p> </td><td><p>Always</p></td>  
+</tr> 
+<tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny </p> </td><td><p>Always</p></td> 
+</tr> 
+</tbody>
+</table> </br></br>
+
+##Configuring shared PC mode on Windows
+You can configure Windows to be in shared PC mode in a couple different ways:
+*MDM
+*A provisioning package created with the Windows Imaging and Configuration Designer (ICD)
+
+###MDM
+Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx).
+
+###Provisioning package
+You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx), exposed in ICD as SharedPC.
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
@@ -42,19 +255,7 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
 
 6. Go to **Runtime settings** > **SharedPC**. The following table describes the settings you can configure for **SharedPC**.
 
-Setting | Value |
-:---|:---|
-EnableSharedPCMode | Set as **True**. The remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.</br></br>If you do not set **EnableSharedPCMode** as **True**, you can create a provisioning package using the remaining settings in **SharedPC** but  none of the other settings will be applied.  |
-AccountManagement: AccountModel | For a shared or guest PC, choose between **Only guest** and **Domain-joined and guest**.<br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account. When the account is signed out, it is deleted immediately. <br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
-AccountManagement: DeletionPolicy | - **Delete immediately** will delete all accounts on sign-out. <br/>- **Delete at disk space threshold** will start deleting Active Directory and Azure AD accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed.  |
-AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
-AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
-AccountManagement: EnableAccountManager | Set as **True** if you want to set any other account management policies. |
-Customization: MaintenanceStartTime | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.   |
-Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. When **SetEduPolicies** is **True**, the following additional policies are applied:<br/>- Local storage locations are restricted. Users can only save files to the cloud. <br/>- Custom Start and taskbar layouts are set.\* <br/>- A custom sign-in screen background image is set.\*<br/><br/>\*Only applies to Windows 10 Pro for Education, Enterprise, and Education  |
-Customization: SetPowerPolicies |  When set as **True**:<br/>- Prevents users from changing power settings<br/>- Turns off hibernate<br/>- Enables wake timers for Windows Update<br/>- Turns off all state transitions to sleep  |
-Customization: SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
-Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
+
   <br/>
 
 ## Apply the provisioning package
@@ -66,7 +267,7 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. If there is only one provisioning package on the USB drive, you don't need to press the Windows key five times, Windows will automatically ask you if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
@@ -110,172 +311,6 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 ![add a package option](images/package.png)
 
 > **Note:** If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
-
-## Guidance for accounts on shared PCs
-
-* We recommend no local admin accounts on the PC to improve the reliability and security of the PC.
-* When a PC is set up in shared PC mode, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account managment happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Start without an account** will also be deleted automatically at sign out.
-* On a Windows PC joined to Azure Active Directory:
-    * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
-    * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
-* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. However, any new local accounts created by the **Start without an account** selection on the sign-in screen (if enabled) will automatically be deleted at sign-out.
-* If admin accounts are necessary on the PC
-    * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
-    * Create admin accounts before setting up shared PC mode, or 
-    * Create exempt accounts before signing out.
-* The account management service supports accounts that are exempt from deletion.
-    * An account can be marked exempt from deletion by adding the account SID to the `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\` registry key.
-    * To add the account SID to the registry key using PowerShell:
-        ```
-        $adminName = "LocalAdmin"
-        $adminPass = 'Pa$$word123'
-        iex "net user /add $adminName $adminPass"
-        $user = New-Object System.Security.Principal.NTAccount($adminName) 
-        $sid = $user.Translate([System.Security.Principal.SecurityIdentifier]) 
-        $sid = $sid.Value;
-        New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
-        ``` 
-
-## Policies set by shared PC mode
-
-> **Important**: It is not recommended to set additional policies on PCs configured for **Shared PC Mode**.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
-
-<table border="1"> 
-<thead><tr><th colspan="2"><p>Policy path</p></th></tr>
-<tr><th><p>Policy name</p></th><th><p>Value</p></th> 
-</tr> </thead>
-<tbody>
-<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>Control Panel</strong> > <strong>Personalization</strong></p></td> 
-</tr> 
-<tr><td><p>Prevent enabling lock screen slide show</p></td><td><p>Enabled</p></td>
-</tr> 
-<tr><td><p>Prevent changing lock screen and logon image</p></td><td><p>Enabled</p></td>
-</tr> 
-<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Button Settings</strong></p></td> 
-</tr> 
-<tr><td><p>Select the Power button action (plugged in)</p></td><td><p>Sleep</p></td> 
-</tr> 
-<tr><td><p>Select the Power button action (on battery)</p></td><td><p>Sleep</p></td> 
-</tr> 
-<tr><td><p>Select the Sleep button action (plugged in)</p></td><td><p>Sleep</p></td> 
-</tr> 
-<tr><td><p>Select the lid switch action (plugged in)</p></td><td><p>Sleep</p></td>
-</tr> 
-<tr><td><p>Select the lid switch action (on battery)</p></td><td><p>Sleep</p></td>
-</tr> 
-<tr><td colspan="2"><p><strong>Admin Templates</strong> > <strong>System</strong> > <strong>Power Management</strong> > <strong>Sleep Settings</strong></p></td> 
-</tr> 
-<tr><td><p>Require a password when a computer wakes (plugged in)</p></td><td><p>Enabled</p></td>
-</tr> 
-<tr><td><p>Require a password when a computer wakes (on battery)</p></td><td><p>Enabled</p></td>
-</tr>
-<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p>1 hour</p></td>
-</tr> 
-<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p>1 hour</p></td>
-</tr> 
-<tr> <td> <p> Turn off hybrid sleep (plugged in) </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td> <p> Turn off hybrid sleep (on battery) </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> 1 hour </p> </td>
-</tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p> 1 hour </p> </td> 
-</tr> 
-<tr> <td> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td> <p> Allow standby states (S1-S3) when sleeping (on battery) </p> </td> <td> <p> Enabled </p> </td> 
-</tr> 
-<tr> <td> <p> Specify the system hibernate timeout (plugged in) </p> </td> <td> <p> Enabled, 0 </p> </td> 
-</tr> 
-<tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0 </p> </td> 
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Video and Display Settings</strong> </p> </td> </tr> 
-<tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p> 1 hour </p> </td> 
-</tr>
- <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p> 1 hour </p> </td>
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Logon</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Show first sign-in animation </p> </td> <td> <p> Disabled </p> </td>
-</tr> 
-<tr> <td> <p> Hide entry points for Fast User Switching </p> </td> <td> <p> Enabled </p> </td> 
-</tr> 
-<tr> <td> <p> Turn on convenience PIN sign-in </p> </td> <td> <p> Disabled </p> </td>
-</tr> 
-<tr> <td> <p> Turn off picture password sign-in </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td> <p> Turn off app notification on the lock screen </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td> <p> Allow users to select when a password is required when resuming from connected standby </p> </td> <td> <p> Disabled </p> </td> 
-</tr> 
-<tr> <td> <p> Block user from showing account details on sign-in </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Do not show Windows Tips </p> </td> <td> <p> Enabled </p> </td> 
-</tr> 
-<tr> <td> <p> Turn off Microsoft consumer experiences </p> </td> <td> <p> Enabled </p> </td> 
-</tr> 
-<tr> <td> <p> Microsoft Passport for Work </p> </td> <td> <p> Disabled </p> </td>
-</tr> 
-<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled </p> </td>
-</tr> 
-<tr> <td> <p> Allow users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td> 
-</tr> 
-<tr> <td> <p> Allow domain users to log on using biometrics </p> </td> <td> <p> Disabled </p> </td> 
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Toggle user control over Insider builds </p> </td> <td> <p> Disabled </p> </td>
-</tr> 
-<tr> <td> <p> Disable pre-release features or settings </p> </td> <td> <p> Disabled </p> </td> 
-</tr> 
-<tr> <td> <p> Do not show feedback notifications </p> </td> <td> <p> Enabled </p> </td> 
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>File Explorer</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Show lock in the user tile menu </p> </td> <td> <p> Disabled </p> </td>
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Maintenance Scheduler</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Automatic Maintenance Activation Boundary </p> </td> <td> <p> 12am </p> </td>
-</tr> 
-<tr> <td> <p> Automatic Maintenance Random Delay </p> </td> <td> <p> Enabled, 2 hours </p> </td> 
-</tr> 
-<tr> <td> <p> Automatic Maintenance WakeUp Policy </p> </td> <td> <p> Enabled </p> </td> 
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Microsoft Edge</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Open a new tab with an empty tab </p> </td> <td> <p> Disabled </p> </td> 
-</tr> 
-<tr> <td> <p> Configure corporate home pages </p> </td> <td> <p> Enabled, about:blank </p> </td> 
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Search</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Allow Cortana </p> </td> <td> <p> Disabled </p> </td> 
-</tr> 
-<tr> <td colspan="2"> <p> <strong>Windows Settings</strong>><strong>Security Settings</strong>><strong>Local Policies</strong>><strong>Security Options</strong> </p> </td> 
-</tr> 
-<tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled </p> </td>
-</tr> 
-<tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart </p> </td> <td> <p> Disabled </p> </td> 
-</tr> 
-<tr> <td> <p> Shutdown: Allow system to be shut down without having to log on </p> </td> <td> <p> Disabled </p> </td> 
-</tr> 
-<tr> <td> <p> User Account Control: Behavior of the elevation prompt for standard users </p> </td> <td> <p> Auto deny </p> </td>
-</tr> 
-</tbody>
-</table> </br></br>
-
-
 
 ## Related topics
 
