@@ -550,7 +550,6 @@ After the task sequence is created it can be modified for increased automation, 
   * **Task Sequence Variable** – DriverGroup001
   * **Value** – Windows 10 x64\%Make%\%Model%
 
-
    ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images\surface-deploymdt-fig22.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
 
    Figure 22. Configure a new Set Task Sequence Variable step in the deployment task sequence
@@ -560,7 +559,6 @@ After the task sequence is created it can be modified for increased automation, 
   * In the **Choose a selection profile** drop-down menu, select **Nothing**.
   * Click the **Install all drivers from the selection profile** button.
 
-    
    ![Configure deployment task sequence not to choose the drivers to inject into Windows](images\surface-deploymdt-fig23.png "Configure deployment task sequence not to choose the drivers to inject into Windows")
 
    *Figure 23. Configure the deployment task sequence not to choose the drivers to inject into Windows*
@@ -577,11 +575,11 @@ Bootstrap.ini is the simpler of the two rule files. The purpose it serves is to 
 
 To automate the boot media rules, follow these steps:
 
-1.	Right-click your deployment share in the Deployment Workbench, and then click **Properties**.
-2.	Click the **Rules** tab, and then click **Edit Bootstrap.ini** to open Bootstrap.ini in Notepad.
-3.	Replace the text of the Bootstrap.ini file with the following text:
+1. Right-click your deployment share in the Deployment Workbench, and then click **Properties**.
+2. Click the **Rules** tab, and then click **Edit Bootstrap.ini** to open Bootstrap.ini in Notepad.
+3. Replace the text of the Bootstrap.ini file with the following text:
 
-   ```
+```
 [Settings]
 Priority=Model,Default
 
@@ -594,7 +592,7 @@ SkipBDDWelcome=YES
 
 [Surface Pro 4]
 DeployRoot=\\STNDeployServer\DeploymentShare$
-   ```
+```
 
 4. Press Ctrl+S to save Bootstrap.ini, and then close Notepad.
 

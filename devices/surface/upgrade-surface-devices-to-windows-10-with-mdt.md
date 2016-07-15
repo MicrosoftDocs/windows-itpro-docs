@@ -137,7 +137,6 @@ After the task sequence is created, you can modify some additional settings to p
   - **Task Sequence Variable** – DriverGroup001
   - **Value** – Windows 10 x64\%Make%\%Model%
 
-  
   ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images\surface-upgrademdt-fig4.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
   
   *Figure 4. Configure a new Set Task Sequence Variable step in the deployment task sequence*
@@ -146,7 +145,6 @@ After the task sequence is created, you can modify some additional settings to p
 15. On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 5) configure the following options:
   * In the **Choose a selection profile** drop-down menu, select **Nothing**.
   * Click the **Install all drivers from the selection profile** button.
-  
   
   ![Configure the deployment task sequence to not install drivers](images\surface-upgrademdt-fig5.png "Configure the deployment task sequence to not install drivers")
   
