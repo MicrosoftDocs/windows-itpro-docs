@@ -17,27 +17,25 @@ author: jdeckerMS
 
 Windows 10, Version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise.
 
-> **Note:** If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/en-us/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional education specific settings.
+> **Note:** If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/en-us/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
 
 ##Shared PC mode concepts
 A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. Users who sign-in are signed in as standard users, not admin users.
 
 ###Account models
-It is intended that PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC as standard users. The user who origianlly joined the PC to the domain will have administrative rights when they sign in. If using AAD Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a *Start without an account* button on the sign-in screen which doesn't require any user credentials or authentication and creates a new local account.
+It is intended that shared PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC as a standard user. The user who origianlly joined the PC to the domain will have administrative rights when they sign in. If using Azure Active Directory Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a **Start without an account** option on the sign-in screen, which doesn't require any user credentials or authentication and creates a new local account.
 
 ###Account management
-When the account management service is turned on in shared PC mode, accounts are automatically deleted. Account deletion is done for AD, AAD, and local account types. However, only local accounts that are created by the *Start without an account* feature are deleted. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low.
+When the account management service is turned on in shared PC mode, accounts are automatically deleted. Account deletion is done for Active Directory, Azure Active Directory, and local account types. However, only local accounts that are created by the **Start without an account** option are deleted. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low.
 
 ###Maintenance and sleep
-Shared PC mode is heavily configured to take advantage of maintenance time periods which run while the PC is not in use. Therefore, sleep is strongly recommended so that the PC can wake up when it is not is use to perform maintenance, clean up accounts, and run Windows Update. The recommended settings can be set by choosing SetPowerPolicies in the list of shared PC options. Additionally, on devices without ACPI wake alarms, shared PC mode will always override RTC wake alarms to be allowed to wake the PC from sleep (by default, RTC wake alarms are off). This ensures that the widest variety of hardware will take advantage of maintenance periods.
+Shared PC mode is configured to take advantage of maintenance time periods which run while the PC is not in use. Therefore, sleep is strongly recommended so that the PC can wake up when it is not is use to perform maintenance, clean up accounts, and run Windows Update. The recommended settings can be set by choosing **SetPowerPolicies** in the list of shared PC options. Additionally, on devices without Advanced Configuration and Power Interface (ACPI) wake alarms, shared PC mode will always override real-time clock (RTC) wake alarms to be allowed to wake the PC from sleep (by default, RTC wake alarms are off). This ensures that the widest variety of hardware will take advantage of maintenance periods.
 
-<br/>While shared PC mode does not configure Windows Update itself, it is strongly recommended to configure Windows Update to automatically install updates and reboot (if necessary) during maintenance hours. This will help ensure the PC is always up to date and not interrupting users with updates. 
-####With Group Policy
-Set Computer Configuration > Administrative Templates > Windows Components > Windows Update > *Configure Automatice Updates* to 4 and check *Install during automatic maintenance*.
-####With MDM
-Set Update/AllowAutoUpdate to 4. [More information](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
-####With provisioning
-In ICD, set Policies/Update/AllowAutoUpdate to 4. [More information](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
+While shared PC mode does not configure Windows Update itself, it is strongly recommended to configure Windows Update to automatically install updates and reboot (if necessary) during maintenance hours. This will help ensure the PC is always up to date and not interrupting users with updates. Use one of the following methods to configure Windows Update:
+
+- Group Policy: Set **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatice Updates** to `4` and check **Install during automatic maintenance**.
+- MDM: Set **Update/AllowAutoUpdate** to `4`. [More information](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
+- Provisioning: In Windows Imaging and Configuration Designer (ICD), set **Policies/Update/AllowAutoUpdate** to `4`. [More information](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
 
 ###Policies and further customization
 Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These are covered in detail below.
