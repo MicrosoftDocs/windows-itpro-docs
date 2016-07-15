@@ -12,9 +12,9 @@ author: TrudyHa
 
 # Create provisioning packages (Surface Hub)
 
-This topic explains how to create and apply a provisioning package to Surface Hub devices. For Surface Hub, you can use provisioning packages to add certificates, customize policies, install Windows apps, or customize Windows Team settings. There are additional options for PCs and mobile devices running Windows 10. 
+This topic explains how to create a provisioning package using Windows Imaging and Configuration Designer, and apply it to Surface Hub devices. For Surface Hub, you can use provisioning packages to add certificates, customize policies, install Windows apps, or customize Windows Team settings. There are additional options for PCs and mobile devices running Windows 10. 
 
-You can apply a provisioning package on a USB during setup. 
+You can apply a provisioning package using a USB during setup, or through the **Settings** app. 
 
 ## Advantages
 -   You can configure new devices as part of the setup process. 
@@ -30,7 +30,7 @@ You can apply a provisioning package on a USB during setup.
 To create and apply a provisioning package to a Surface Hub, you'll need the following:
 
 -   Access to the **Settings** app on Surface Hub (using admin credentials which were configured at initial setup of the Surface Hub) (is this accurate?).
--   Windows Imaging and Configuration Designer (ICD), which is installed as a part of the windows 10 Assessment and Deployment Kit (ADK).
+-   Windows Imaging and Configuration Designer (ICD), which is installed as a part of the Windows 10 Assessment and Deployment Kit (ADK).
 -   A PC running Windows 10.
 -   USB flash drive.
 
