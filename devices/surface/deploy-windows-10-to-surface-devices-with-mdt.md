@@ -242,7 +242,7 @@ To create the reference image task sequence, follow these steps:
 
    ![Create new task sequence to deploy and update a Windows 10 reference environment](images\surface-deploymdt-fig9.png "Create new task sequence to deploy and update a Windows 10 reference environment")
 
-   *Figure 9: Create a new task sequence to deploy and update a Windows 10 reference environment*
+   *Figure 9. Create a new task sequence to deploy and update a Windows 10 reference environment*
 
 2. The New Task Sequence Wizard presents a series of steps, as follows:
   * **General Settings** – Enter an identifier for the reference image task sequence in the **Task Sequence ID** field, a name for the reference image task sequence in the **Task Sequence Name** field, and any comments for the reference image task sequence in the **Task Sequence Comments** field, and then click **Next**.
@@ -261,7 +261,7 @@ To create the reference image task sequence, follow these steps:
 
    ![Enable Windows Update in the reference image task sequence](images\surface-deploymdt-fig10.png "Enable Windows Update in the reference image task sequence")
 
-   *Figure 10: Enable Windows Update in the reference image task sequence*
+   *Figure 10. Enable Windows Update in the reference image task sequence*
 
 4. Select the **Windows Update (Pre-Application Installation)** option, located under the **State Restore** folder.
 5. Click the **Options** tab, and then clear the **Disable This Step** check box.
@@ -278,7 +278,7 @@ To update the MDT boot media, follow these steps:
 
    ![Generate boot images with the Update Deployment Share Wizard](images\surface-deploymdt-fig11.png "Generate boot images with the Update Deployment Share Wizard")
 
-   *Figure 11: Generate boot images with the Update Deployment Share Wizard*
+   *Figure 11. Generate boot images with the Update Deployment Share Wizard*
 
 2. Use the Update Deployment Share Wizard to create boot images with the following process:
   * **Options** – Click **Completely Regenerate the Boot Images**, and then click **Next**.
@@ -295,7 +295,7 @@ To update the MDT boot media, follow these steps:
 
    ![Boot images in the Boot folder after Update Deployment Share Wizard completes](images\surface-deploymdt-fig12.png "Boot images in the Boot folder after Update Deployment Share Wizard completes")
 
-   *Figure 12: Boot images displayed in the Boot folder after completion of the Update Deployment Share Wizard*
+   *Figure 12. Boot images displayed in the Boot folder after completion of the Update Deployment Share Wizard*
 
 To import the MDT boot media into WDS for PXE boot, follow these steps:
 
@@ -305,13 +305,13 @@ To import the MDT boot media into WDS for PXE boot, follow these steps:
 
    ![Start the Add Image Wizard from the Boot Images folder](images\surface-deploymdt-fig13.png "Start the Add Image Wizard from the Boot Images folder")
 
-   *Figure 13: Start the Add Image Wizard from the Boot Images folder*
+   *Figure 13. Start the Add Image Wizard from the Boot Images folder*
 
 4. Right-click the **Boot Images** folder, and then click **Add Boot Image** to open the Add Image Wizard, as shown in Figure 14.
 
    ![Import the LiteTouchPE_x86.wim MDT boot image](images\surface-deploymdt-fig14.png "Import the LiteTouchPE_x86.wim MDT boot image")
 
-   *Figure 14: Import the LiteTouchPE_x86.wim MDT boot image*
+   *Figure 14. Import the LiteTouchPE_x86.wim MDT boot image*
 
 5. The Add Image Wizard displays a series of steps, as follows:
   * **Image File** – Click **Browse** and navigate to the **Boot** folder in your deployment share, click **LiteTouchPE_x86.wim**, click **Open**, and then click **Next**.
@@ -366,6 +366,7 @@ Perform the reference image deployment and capture using the following steps:
    *Figure 16. Use the Capture Image page to capture an image of the reference machine after deployment*
 
   * **Ready** – You can review your selections by expanding **Details** on the **Ready** page. Click **Begin** when you are ready to perform the deployment and capture of your reference image.
+
 6. Your reference task sequence will run with the specified options.
 
 As the task sequence processes the deployment, it will automatically perform the following tasks:
@@ -456,15 +457,16 @@ Download and install the version of Office Deployment Tool (ODT), for Office 201
 After you have downloaded the source files for your version of Office Click-to-Run, you need to edit the Configuration.xml file with instructions to install Office Click-to-Run silently. To configure the Office Deployment Tool for silent installation, follow these steps:
 
 1. Right-click the existing **Configuration.xml** file, and then click **Edit**.
-2. This action opens the file in Notepad. Replace the existing text with the following: 
-
-   ```<Configuration> 
+2. This action opens the file in Notepad. Replace the existing text with the following:
+  ```
+   <Configuration> 
    <Add OfficeClientEdition="32">  
     <Product ID="O365ProPlusRetail" >  
      <Language ID="en-us" />        
     </Product>  
    </Add> 
-   <Display Level="None" AcceptEULA="TRUE" /> </Configuration>```
+   <Display Level="None" AcceptEULA="TRUE" /> </Configuration>
+```
 
 3. Save the file.
 
@@ -479,7 +481,7 @@ Now that the installation and configuration files are prepared, the application 
 
    ![Enter the command and directory for Office 2016 Click-to-Run](images\surface-deploymdt-fig20.png "Enter the command and directory for Office 2016 Click-to-Run")
 
-   *Figure 20: Enter the command and directory for Office 2016 Click-to-Run*
+   *Figure 20. Enter the command and directory for Office 2016 Click-to-Run*
 
 3. The New Application Wizard walks you through importing the Office 2016 Click-to-Run files, as follows:
   * **Application Type** – Click **Application with Source Files**, and then click **Next**.
@@ -537,7 +539,7 @@ After the task sequence is created it can be modified for increased automation, 
 
    ![A new Install Application step in the deployment task sequence](images\surface-deploymdt-fig21.png "A new Install Application step in the deployment task sequence")
 
-   *Figure 21: A new Install Application step in the deployment task sequence*
+   *Figure 21. A new Install Application step in the deployment task sequence*
 
 8. On the **Properties** tab of the new **Install Application** step, enter **Install Microsoft Office 2016 Click-to-Run** in the **Name** field.
 9. Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
