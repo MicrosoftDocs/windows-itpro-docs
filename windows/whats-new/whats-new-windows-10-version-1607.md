@@ -46,13 +46,12 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 ### VPN profile options
 
 User Convenience Features
-- Name-based Connection Triggering
-- DA-comparable AutoVPN Configuration
+- Name-based connection triggering
 Authentication Options
-- VPN with Phone Sign0in
-- One Time Password (OTP) Settings Exposed Through the UI
+- VPN with phone sign-in
+- One time password (OTP) settings exposed through the UI
 Remote Access Integration
-- Device Compliance Options
+- Device compliance options
 - Enterprise Data Protection (EDP) Integration
 Updated Client and Configuration Options
 - Universal Windows Platform (UWP) VPN Plugins
