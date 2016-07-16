@@ -51,14 +51,14 @@ You will also need to have available the following resources:
 
 ## Prepare the upgrade deployment
 
-Before you begin the process described in this section, you need to have installed and configured the deployment tools outlined in the previous [Deployment tools and resources](#deployment-tools-and-resources) section. For instructions on how to install and configure the deployment tools, see the Install the Deployment tools section in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#deployment-tools) article. You will also have needed to create a deployment share with MDT, described in the section Create a Deployment Share in the aforementioned article.
+Before you begin the process described in this section, you need to have installed and configured the deployment tools outlined in the previous [Deployment tools and resources](#deployment-tools-and-resources) section. For instructions on how to install and configure the deployment tools, see the **Install the deployment tools** section in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#install-the-deployment-tools) article. You will also have needed to create a deployment share with MDT, described in the section Create a Deployment Share in the aforementioned article.
 
 ### Import Windows 10 installation files
 
-Windows 10 installation files only need to be imported if you have not already done so in the deployment share. To import Windows 10 installation files, follow the steps described in the Import Windows installation files section in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#import-windows-installation-files) article.
+Windows 10 installation files only need to be imported if you have not already done so in the deployment share. To import Windows 10 installation files, follow the steps described in the **Import Windows installation files** section in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#import-windows-installation-files) article.
 
 ### Import Surface drivers
-In the import process example shown in the [Deploy Windows 10 to Surface devices with MDT](https://technet.microsoft.com/en-us/itpro/surface/deploy-windows-10-to-surface-devices-with-mdt) article, drivers for Surface Pro 4 were imported for Windows 10. To perform an upgrade deployment of Windows 10 to Surface Pro 3, drivers for Surface Pro 3 must also be imported. To import the Surface drivers for Surface Pro 3, follow these steps:
+In the import process example shown in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md) article, drivers for Surface Pro 4 were imported for Windows 10. To perform an upgrade deployment of Windows 10 to Surface Pro 3, drivers for Surface Pro 3 must also be imported. To import the Surface drivers for Surface Pro 3, follow these steps:
 
 1. Download the Surface Pro 3 firmware and driver pack for Windows 10 archive file (.zip), SurfacePro3_Win10_xxxxxx.zip, from the [Surface Pro 3 download page](https://www.microsoft.com/en-US/download/details.aspx?id=38826) in the Microsoft Download Center.
 2. Extract the contents of the Surface Pro 3 firmware and driver pack archive file to a temporary folder. Keep the driver files separate from other drivers or files.
@@ -89,7 +89,7 @@ In the import process example shown in the [Deploy Windows 10 to Surface devices
 
 ### Import applications
 
-Installation of applications in an upgrade deployment is not always necessary because the applications from the previous environment will remain on the device. (For example, in the [Deploy Windows 10 to Surface devices with MDT](https://technet.microsoft.com/en-us/itpro/surface/deploy-windows-10-to-surface-devices-with-mdt) article, the deployment includes Office 365 which is not required in an upgrade deployment where the user is already using Office 365 on the device.)
+Installation of applications in an upgrade deployment is not always necessary because the applications from the previous environment will remain on the device. (For example, in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md) article, the deployment includes Office 365 which is not required in an upgrade deployment where the user is already using Office 365 on the device.)
 
 There are still some circumstances where you will want to deploy an application, even during an upgrade deployment. For example, you may have Surface Pro 3 devices on which you would like to add the Surface app. To deploy the Surface app in an upgrade scenario use the same process as you would for a traditional deployment. See the [Deploy Surface app with Windows Store for Business](https://technet.microsoft.com/en-us/itpro/surface/deploy-surface-app-with-windows-store-for-business) article for instructions on how to add the Surface app to an MDT task sequence.
 
@@ -207,11 +207,11 @@ FinishAction=LOGOFF
 
 
 
-For more information about the rules configured by this text, see the [Configure deployment share rules section in the Deploy Windows 10 to Surface Devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#configure-deployment-share-rules) article.
+For more information about the rules configured by this text, see the **Configure deployment share rules** section in the [Deploy Windows 10 to Surface Devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#configure-deployment-share-rules) article.
 
 ### Update deployment share
 
-To update the deployment share, right-click the deployment share in the Deployment Workbench and click **Update Deployment Share**, then proceed through the Update Deployment Share Wizard. See the [Update and Import Updated MDT Boot Media section of the Deploy Windows 10 to Surface Devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#update-and-import-updated-mdt-boot-media) article for detailed steps.
+To update the deployment share, right-click the deployment share in the Deployment Workbench and click **Update Deployment Share**, then proceed through the Update Deployment Share Wizard. See the **Update and import updated MDT boot media** section of the [Deploy Windows 10 to Surface Devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#update-and-import-updated-mdt-boot-media) article for detailed steps.
 
 ### Run the upgrade deployment
 
