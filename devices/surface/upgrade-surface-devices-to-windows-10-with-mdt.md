@@ -207,11 +207,11 @@ FinishAction=LOGOFF
 
 
 
-For more information about the rules configured by this text, see the **Configure deployment share rules** section in the [Deploy Windows 10 to Surface Devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#configure-deployment-share-rules) article.
+For more information about the rules configured by this text, see the **Configure deployment share rules** section in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#configure-deployment-share-rules) article.
 
 ### Update deployment share
 
-To update the deployment share, right-click the deployment share in the Deployment Workbench and click **Update Deployment Share**, then proceed through the Update Deployment Share Wizard. See the **Update and import updated MDT boot media** section of the [Deploy Windows 10 to Surface Devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#update-and-import-updated-mdt-boot-media) article for detailed steps.
+To update the deployment share, right-click the deployment share in the Deployment Workbench and click **Update Deployment Share**, then proceed through the Update Deployment Share Wizard. See the **Update and import updated MDT boot media** section of the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md#update-and-import-updated-mdt-boot-media) article for detailed steps.
 
 ### Run the upgrade deployment
 
