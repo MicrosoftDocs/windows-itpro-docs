@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+LocalizationPriority: High
 author: brianlic-msft
 ---
 
