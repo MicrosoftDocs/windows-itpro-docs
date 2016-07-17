@@ -23,6 +23,7 @@ This section includes info about the enlightened Microsoft apps, including how t
 ## In this section
 |Topic |Description |
 |------|------------|
+|[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |A list of all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection(EDP), in your enterprise. |
 |[Enlightened apps for use with enterprise data protection (EDP)](enlightened-microsoft-apps-and-edp.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your **Protected Apps** list. |
 |[Testing scenarios for enterprise data protection (EDP)](testing-scenarios-for-edp.md) |We've come up with a list of suggested testing scenarios that you can use to test EDP in your company. |
 
