@@ -116,15 +116,16 @@ For more information on how to use Netsh see, [Netsh Commands for Windows Hypert
 
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
-- us.vortex-win.data.microsoft.com  
+- *.blob.core.windows.net
+- crl.microsoft.com
 - eu.vortex-win.data.microsoft.com
 - sevillegwcus.microsoft.com
 - sevillegweus.microsoft.com
-- sevillegwweu.microsoft.com
 - sevillegwneu.microsoft.com
+- sevillegwweu.microsoft.com
+- us.vortex-win.data.microsoft.com 
 - www.microsoft.com
-- crl.microsoft.com
-- \*.blob.core.windows.net
+
 
 If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted to the above listed URLs.
 
@@ -165,13 +166,13 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 7. Repeat the same steps for the remaining URLs with the following arguments:
 
-    - portqry.exe -n eu.vortex-win.data.microsoft.com -e 443 -p tcp
-    - portqry.exe -n sevillegwcus.microsoft.com -e 443 -p tcp
-    - portqry.exe -n sevillegweus.microsoft.com -e 443 -p tcp
-    - portqry.exe -n sevillegwweu.microsoft.com -e 443 -p tcp
-    - portqry.exe -n sevillegwneu.microsoft.com -e 443 -p tcp
-    - portqry.exe -n www.microsoft.com -e 80 -p tcp
-    - portqry.exe -n crl.microsoft.com -e 80 -p tcp
+   - portqry.exe -n eu.vortex-win.data.microsoft.com -e 443 -p tcp
+   - portqry.exe -n sevillegwcus.microsoft.com -e 443 -p tcp
+   - portqry.exe -n sevillegweus.microsoft.com -e 443 -p tcp
+   - portqry.exe -n sevillegwweu.microsoft.com -e 443 -p tcp
+   - portqry.exe -n sevillegwneu.microsoft.com -e 443 -p tcp
+   - portqry.exe -n www.microsoft.com -e 80 -p tcp
+   - portqry.exe -n crl.microsoft.com -e 80 -p tcp
 
 8. Verify that each URL shows that the name is **resolved** and the connection status is **listening**.
 
