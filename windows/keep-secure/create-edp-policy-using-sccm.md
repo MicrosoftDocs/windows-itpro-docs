@@ -443,8 +443,6 @@ There are no default locations included with EDP, you must add each of your netw
 
     After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data.
     
-    For steps about how to create and verify an EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) DRA certificate](create-and-verify-an-efs-dra-certificate.md) topic. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
-
     ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/edp-sccm-dra.png)
 
 ### Choose your optional EDP-related settings
