@@ -58,9 +58,7 @@ In order to create and deploy provisioning packages, all of the following are re
 ### <a href="" id="installing-wicd-prov-pkg"></a>Install the Windows Imaging and Configuration Designer
 
 1.  The Windows Imaging and Configuration Designer (ICD) is installed as part of the Windows 10 ADK. The installer for the ADK can be downloaded from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=718147).
-    >**Note**  The ADK must be installed on a separate PC, not on the Surface Hub.
-
-     
+    >**Note**  The ADK must be installed on a separate PC, not on the Surface Hub.  
 
 2.  Run the installer, and set your preferences for installation. When asked what features you want to install, you will see a checklist like the one in the following figure. Note that **Windows Performance Toolkit** and **Windows Assessment Toolkit** should be unchecked, as they are not needed to run the ICD.
 
@@ -73,7 +71,7 @@ In order to create and deploy provisioning packages, all of the following are re
 
     All four of these features are required to run the ICD and create a package for the Surfact Hub.
 
-    ![icd options checklist](images/idcfeatureschecklist.png)
+    ![Image showing Windows ADK install page - select features to install.](images/idcfeatureschecklist.png)
 
 3.  Continue with the installer until the ADK is installed. This may take a while, because the installer downloads remote content.
 
@@ -83,29 +81,29 @@ This example will demonstrate how to create a provisioning package to install a 
 
 1.  On the PC that had the Windows 10 ADK installed, open ICD and choose the **New provisioning package** tile from the main menu.
 
-    ![icd tiles](images/wicd-screen01a.png)
+    ![Image showing Start page in Windows Imaging and Configuration Designer.](images/wicd-screen01a.png)
 
 2.  When the **New project** dialog box opens, type whatever name you like in the **Name** box. The **Location** and **Description** boxes can also be filled at your discretion, though we recommend using the **Description** box to help you distinguish among multiple packages. Click **Next**.
 
-    ![icd tiles](images/wicd-screen02a.png)
+    ![Image showing New project screen for Windows Imaging and Configuration Designer.](images/wicd-screen02a.png)
 
     Select the settings that are **Common to all Windows editions**, and click **Next**.
 
-    ![icd tiles](images/wicd-screen02b.png)
+    ![Image showing project settings in Windows Imaging and Configuration Designer.](images/wicd-screen02b.png)
 
     When asked to import a provisioning package, just click **Finish.**
 
-    ![icd tiles](images/wicd-screen02c.png)
+    ![Image showing option for importing a provisioning package.](images/wicd-screen02c.png)
 
 3.  ICD's main screen will be displayed. This is where you create the provisioning package. In the **Available customizations** pane, expand **Runtime settings** and then expand **Certificates**. Click **Root certificates**.
 
-    ![icd tiles](images/wicd-screen03a.png)
+    ![Image showing Windows Imaging and Configuration Designer's man page.](images/wicd-screen03a.png)
 
     In the center pane, you’ll be asked to specify a **CertificateName** for the Root certificate. You can set this to whatever you want. For the example, we've used the same name as the project. Click **Add**, and an entry will be added in the left pane.
 
 4.  In the **Available customizations** pane on the left, a new category has appeared for **CertificatePath** underneath the **CertificateName** you provided. There’s also a red exclamation icon indicating that there is a required field that needs to be set. Click **CeritficatePath**.
 
-    ![icd tiles](images/wicd-screen04a.png)
+    ![Image showing available customizations in Windows Imaging and Configuration Designer.](images/wicd-screen04a.png)
 
 5.  In the center pane, you’ll be asked to specify the path for the certificate. Enter the name of the .cer file that you want to deploy, either by typing or clicking **Browse**. It must be a root certificate. The provisioning package created will copy the .cer file into the package it creates.
 
@@ -238,15 +236,15 @@ The following two methods for deploying provisioning packages apply to any kind 
 3.  Navigate to **System &gt; Work Access**. Under the header **Related settings**, click on **Add or remove a management package**.
 4.  Here, click the button for **Add a package**.
 
-    ![](images/provisioningpackagesettings-01.png)
+    ![Image showing provisioining packages page in Settings.](images/provisioningpackagesettings-01.png)
 
 5.  Click **Removable media** from the dropdown list. You will see a list of available provisioning packages on the **Settings** page.
 
-    ![](images/provisioningpackagesettings-02.png)
+    ![Image showing add a package page in Settings.](images/provisioningpackagesettings-02.png)
 
 6.  Choose your package and click **Add**.
 
-    ![](images/provisioningpackagesettings-03.png)
+    ![Image showing select a package box.](images/provisioningpackagesettings-03.png)
 
 7.  You may have to re-enter the admin credentials if User Access Control (UAC) asks for them.
 8.  You’ll see a confirmation dialog box. Click **Yes, add it**. The certificate will be installed.
