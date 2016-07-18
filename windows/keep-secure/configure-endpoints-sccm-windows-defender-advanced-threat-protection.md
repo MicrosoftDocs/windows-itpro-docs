@@ -56,7 +56,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
     a. Click Endpoint Management on the Navigation pane.
     b. Under Endpoint offboarding section, select System Center Configuration Manager (current branch) version 1602 or earlier, click Download package, and save the .zip file.
     
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.cmd*.
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
 

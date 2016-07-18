@@ -29,8 +29,6 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
 
-> **Note**&nbsp;&nbsp; If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
-
 ### Onboard and monitor endpoints 
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
@@ -44,9 +42,9 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
 Onboarding - Use the onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
-    - Onboarding
-    - Health Status for onboarded machines
-    - Configuration for onboarded machines
+- Onboarding
+- Health Status for onboarded machines
+- Configuration for onboarded machines
 
 > **Warning**&nbsp;&nbsp;These two groups must not be deployed on the same machine at same time, otherwise this will cause unpredictable collisions.
 
@@ -77,9 +75,9 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune). 
 
 Offboarding - Use the offboarding policies to remove configuration settings on endpoints. These policies can be sub-categorized to:
-    - Offboarding
-    - Health Status for offboarded machines
-    - Configuration for offboarded machines
+- Offboarding
+- Health Status for offboarded machines
+- Configuration for offboarded machines
 
 Policy | OMA-URI | Type | Description | Value
 :---|:---|:---|:---|:---
