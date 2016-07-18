@@ -26,6 +26,7 @@ System Center Configuration Manager (current branch) version 1606, currently in 
 
 > **Note**&nbsp;&nbsp; If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
 
+<span id="sccm1602"/>
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1602 or earlier versions 
 You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center Configuration Manager (current branch), version 1602 or earlier, including: System Center 2012 R2 Configuration Manager and System Center 2012 Configuration Manager. 
 

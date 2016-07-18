@@ -685,7 +685,7 @@
 ###### [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 ###### [Configure endpoints using System Security Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 ####### [Configure endpoints using SCCM 1606](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md#sccm1606)
-####### [Configure endpoints using SCCM 2012](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md#configure-endpoints-using-system-center-configuration-manager-2012-or-later-versions)
+####### [Configure endpoints using SCCM 2012](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md#sccm1602)
 ###### [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 ####### [Configure endpoints using Microsoft Intune](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#configure-endpoints-using-microsoft-intune)
 ###### [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
