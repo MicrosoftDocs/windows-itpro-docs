@@ -36,7 +36,7 @@ You can use System Center Configuration Manager’s existing functionality to cr
 
     a. Click **Endpoint Management** on the **Navigation pane**.
 
-    b. Select **System Center Configuration Manager (current branch) version 1602**, click **Download package**, and save the .zip file.
+    b. Select **System Center Configuration Manager (current branch) version 1602 or earlier**, click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
 
