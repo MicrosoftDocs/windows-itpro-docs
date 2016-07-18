@@ -21,16 +21,6 @@ author: iaanw
 
 You need to onboard to Windows Defender ATP before you can use the service.
 
-<!--There are two stages to onboarding:
-
-1.  Set up user access in AAD and use a wizard to create a dedicated
-    cloud instance for your network (known as “service onboarding”).
-
-2.  Add endpoints to the service with System Center Configuration Manager, scheduled GP updates, or manual
-    registry changes.-->
-
-<!--[Service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md) | Learn about managing user access to the Windows Defender ATP portal by assigning users to the Windows Defender ATP service application in Azure Active Directory (AAD).-->
-
 ## In this section
 Topic | Description
 :---|:---
