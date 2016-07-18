@@ -23,7 +23,7 @@ At Microsoft, we use Windows telemetry to inform our decisions and focus our eff
 To frame a discussion about telemetry, it is important to understand Microsoft’s privacy principles. We earn customer trust every day by focusing on six key privacy principles as described at [privacy.microsoft.com](https://privacy.microsoft.com/). These principles guided the implementation of the Windows telemetry system in the following ways:
 
 -	**Control.** We offer customers control of the telemetry they share with us by providing easy-to-use management tools.
--	**Transparency.** We are provide information about the telemetry that Windows and Windows Server collects so our customers can make informed decisions.
+-	**Transparency.** We provide information about the telemetry that Windows and Windows Server collects so our customers can make informed decisions.
 -	**Security.** We encrypt telemetry in transit from your device and protect that data at our secure data centers.
 -	**Strong legal protections.** We respect customers’ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
 -	**No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows telemetry system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
