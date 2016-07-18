@@ -80,11 +80,11 @@ Offboarding - Use the offboarding policies to remove configuration settings on e
 - Health Status for offboarded machines
 - Configuration for offboarded machines
 
-Policy | OMA-URI | Type | Description | Value
+Policy | OMA-URI | Type | Value | Description
 :---|:---|:---|:---|:---
-Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding | String | Offboarding | Copy content from offboarding MDM file
- Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | Windows Defender ATP service is not running | FALSE
-  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Offboarded from Windows Defender ATP  | 0
+Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding | String | Copy content from offboarding MDM file | Offboarding 
+ Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | FALSE |Windows Defender ATP service is not running
+  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | 0 | Offboarded from Windows Defender ATP
   
   
 ## Related topics
