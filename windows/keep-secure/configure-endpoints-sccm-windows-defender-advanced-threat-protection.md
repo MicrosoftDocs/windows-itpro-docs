@@ -20,7 +20,7 @@ author: mjcaparas
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-<a name="sccm1606"></a>
+<span id="sccm1606"/>
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see the [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP) section.
 
