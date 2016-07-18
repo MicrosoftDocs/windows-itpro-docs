@@ -36,27 +36,7 @@ Monitoring can be done directly on the portal, or by using System Center Configu
 
 > **Note**&nbsp;&nbsp;It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
-## Monitor with System Center Configuration Manager
 
-Monitoring with SCCM consists of two parts:
-
-1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the endpoints in your network.
-
-2. Checking that the endpoints are compliant with the Windows Defender ATP service (this ensures the endpoint can complete the onboarding process and can continue to report data to the service).
-
-**To confirm the configuration package has been correctly deployed:**
-
-1. In the SCCM console, click **Monitoring** at the bottom of the navigation pane.
-
-2. Click **Overview** and then **Deployments**.
-
-3. Click on the deployment with the package name.
-
-4. Review the status indicators under **Completion Statistics** and **Content Status**.
-
-If there are failed deployments (endpoints with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the endpoints. See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for more information.
-
-![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
 ## Related topics
 <!--- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
