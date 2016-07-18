@@ -73,7 +73,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 ## Add a universal app to your package
 
-Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Windows Store for Business apps that you acquire with [offline licensing](../manage/acquire-apps-windows-store-for-business.md), or third-party apps. This procedure will assume you are distributing apps from the Windows Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
+Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Windows Store for Business apps that you acquire with [offline licensing](https://technet.microsoft.com/en-us/itpro/windows/manage/acquire-apps-windows-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Windows Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**. 
 
@@ -91,7 +91,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
     ![generate license for offline app](images/uwp-license.png)
 
-[Learn more about distributing offline apps from the Windows Store for Business.](../manage/distribute-offline-apps.md)
+[Learn more about distributing offline apps from the Windows Store for Business.](https://technet.microsoft.com/en-us/itpro/windows/manage/distribute-offline-apps)
 
 > **Note:** Removing a provisioning package will not remove any apps installed by device context in that provisioning package.
 
