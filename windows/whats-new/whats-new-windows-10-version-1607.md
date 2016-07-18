@@ -43,21 +43,14 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
 
-### VPN profile options
+### VPN 
 
-User Convenience Features
-- Name-based connection triggering
-Authentication Options
 - VPN with phone sign-in
-- One time password (OTP) settings exposed through the UI
-Remote Access Integration
-- Device compliance options
-- Enterprise Data Protection (EDP) integration
-Updated Client and Configuration Options
-- Universal Windows Platform (UWP) VPN plugins
-- New VPNv2 CSP configuration settings -- See [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
-- Microsoft Intune VPN policy updates
-- VPNv2 CSP configuration using the SCCM/WMI bridge
+- The VPN client can integrate with the Conditional Access Framework, a cloud-pased policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
+- The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection.](../keep-secure/protect-enterprise-data-using-edp.md)
+- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
+- Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
+
 
  
 ## Management
