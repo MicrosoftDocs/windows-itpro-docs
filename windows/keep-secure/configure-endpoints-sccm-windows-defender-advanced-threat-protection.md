@@ -81,3 +81,8 @@ Monitoring with SCCM consists of two parts:
 If there are failed deployments (endpoints with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the endpoints. See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for more information.
 
 ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
+
+## Related topics
+- [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) 

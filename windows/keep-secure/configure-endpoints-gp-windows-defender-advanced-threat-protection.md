@@ -103,3 +103,7 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 > **Note**&nbsp;&nbsp;It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
 
+## Related topics
+- [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) 

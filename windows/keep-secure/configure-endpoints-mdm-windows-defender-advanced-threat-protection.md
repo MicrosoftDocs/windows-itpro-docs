@@ -90,3 +90,7 @@ Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding |
 > **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
 
   
+## Related topics
+- [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) 

@@ -60,3 +60,9 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_\<YYYY-MM-DD\>.cmd*
 
 5.  Press the **Enter** key or click **OK**.
+
+
+## Related topics
+- [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
