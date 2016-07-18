@@ -21,6 +21,7 @@ author: mjcaparas
 
 > **Note**&nbsp;&nbsp;To use GP updates to deploy the package, you must be on Windows Server 2008 R2 or later. 
 
+### Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a.  Click **Endpoint Management** on the **Navigation pane**.
@@ -47,7 +48,7 @@ author: mjcaparas
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
-## Configure sample collection settings using Group Policy
+### Configure sample collection settings using Group Policy
 1.  On your GP management machine, copy the following files from the
     configuration package:
 
@@ -65,7 +66,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 6.  Choose to enable or disable sample sharing from your endpoints.
 
-## Offboard endpoints using Group Policy
+### Offboard endpoints
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.

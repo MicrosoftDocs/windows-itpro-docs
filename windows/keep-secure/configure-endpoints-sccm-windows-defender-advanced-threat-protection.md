@@ -10,7 +10,7 @@ ms.pagetype: security
 author: mjcaparas
 ---
 
-# Configure endpoints with System Center Configuration Manager
+# Configure endpoints uisng System Center Configuration Manager
 
 **Applies to:**
 
@@ -24,8 +24,10 @@ System Center Configuration Manager (current branch) version 1606, currently in 
 
 > **Note**&nbsp;&nbsp; If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
 
-## Configure endpoints using System Center 2012 Configuration Manager or later versions
-You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center 2012 Configuration Manager or later versions, including: System Center 2012 R2 Configuration Manager, System Center Configuration Manager and System Center Configuration Manager (current branch), version 1602 or earlier. 
+## Configure endpoints using System Center Configuration Manager (current branch) version 1602 or earlier versions 
+You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center Configuration Manager (current branch), version 1602 or earlier, including: System Center 2012 R2 Configuration Manager and System Center 2012 Configuration Manager. 
+
+### Onboard endpoints 
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -41,7 +43,7 @@ You can use System Center Configuration Manager’s existing functionality to cr
 
     a. Choose a predefined device collection to deploy the package to.
     
-## Offboard endpoints using System Center Configuration Manager
+### Offboard endpoints 
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
@@ -51,7 +53,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
     a. Click Endpoint Management on the Navigation pane.
     b. Under Endpoint offboarding section, select System Center Configuration Manager (current branch) version 1602 or earlier, click Download package, and save the .zip file.
     
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.cmd*.
 
 3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
 
@@ -59,7 +61,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     a. Choose a predefined device collection to deploy the package to.
     
-## Monitor endpoint configuration using System Center Configuration Manager
+### Monitor endpoint configuration using System Center Configuration Manager
 Monitoring with SCCM consists of two parts:
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the endpoints in your network.

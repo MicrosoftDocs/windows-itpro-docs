@@ -31,6 +31,8 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 > **Note**&nbsp;&nbsp; If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
 
+### Onboard and monitor endpoints 
+
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
  
     a.  Click **Endpoint Management** on the **Navigation pane**.
@@ -59,7 +61,7 @@ Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThrea
 
 > **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** and **Health Status for offboarded machines** use read-only properties and can't be remediated.
 
-## Offboard and monitor endpoints using Mobile Device Management tools
+### Offboard and monitor endpoints
 
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
@@ -70,7 +72,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
     a. Click **Endpoint Management** on the **Navigation pane**.
     b. Under **Endpoint offboarding** section, select **Group Policy**, click **Download package** and save the .zip file.
     
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.offboarding*.
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune). 
 

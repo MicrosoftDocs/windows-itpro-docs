@@ -47,7 +47,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
     a. Click **Endpoint Management** on the **Navigation pane**.
     b. Under **Endpoint offboarding** section, select **Group Policy**, click **Download package** and save the .zip file.
     
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_\<YYYY-MM-DD\>.cmd*.
 
 3.  Open an elevated command-line prompt on the endpoint and run the script:
 
@@ -57,6 +57,6 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-4.  Type the location of the script file. If you copied the file to the desktop, type: *`%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd`*
+4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_\<YYYY-MM-DD\>.cmd*
 
 5.  Press the **Enter** key or click **OK**.
