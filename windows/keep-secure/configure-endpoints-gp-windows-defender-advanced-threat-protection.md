@@ -48,7 +48,7 @@ author: mjcaparas
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
-### Configure sample collection settings using Group Policy
+### Configure sample collection settings 
 1.  On your GP management machine, copy the following files from the
     configuration package:
 
@@ -74,6 +74,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. Click **Endpoint Management** on the **Navigation pane**.
+    
     b. Under **Endpoint offboarding** section, select **Group Policy**, click **Download package** and save the .zip file.
     
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
@@ -92,7 +93,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 9.	Click **OK** and close any open GPMC windows.
 
-## Monitor endpoint configuration using Group Policy
+## Monitor endpoint configuration 
 With Group Policy there isn’t an option to monitor deployment of policies on the endpoints. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
 ## Monitor endpoints using the portal 
@@ -106,4 +107,5 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 ## Related topics
 - [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) 
+- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

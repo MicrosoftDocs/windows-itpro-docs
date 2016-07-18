@@ -14,7 +14,7 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Insider Preview Build 14379 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
@@ -35,9 +35,9 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
  
     a.  Click **Endpoint Management** on the **Navigation pane**.
 
-    b.  Select **Microsoft Intune**, click **Download package** and save the .zip file.
+    b.  Select **Mobile Device Management/Microsoft Intune**, click **Download package** and save the .zip file.
 
-2. Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATP.onboarding*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called  *WindowsDefenderATP.onboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
@@ -68,9 +68,10 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. Click **Endpoint Management** on the **Navigation pane**.
-    b. Under **Endpoint offboarding** section, select **Group Policy**, click **Download package** and save the .zip file.
     
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
+    b. Under **Endpoint offboarding** section, select **Mobile Device Management /Microsoft Intune**, click **Download package** and save the .zip file.
+    
+2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune). 
 
@@ -85,10 +86,9 @@ Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding |
  Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | Windows Defender ATP service is not running | FALSE
   | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | Offboarded from Windows Defender ATP  | 0
   
-> **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
-
   
 ## Related topics
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) 
+- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

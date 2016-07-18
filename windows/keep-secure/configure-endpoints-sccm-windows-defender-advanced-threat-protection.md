@@ -15,7 +15,7 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Insider Preview Build 14379 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
@@ -36,7 +36,7 @@ You can use System Center Configuration Manager’s existing functionality to cr
 
     a. Click **Endpoint Management** on the **Navigation pane**.
 
-    b. Select **System Center Configuration Manager**, click **Download package**, and save the .zip file.
+    b. Select **System Center Configuration Manager (current branch) version 1602**, click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -47,14 +47,16 @@ You can use System Center Configuration Manager’s existing functionality to cr
     a. Choose a predefined device collection to deploy the package to.
     
 ### Offboard endpoints 
+
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click Endpoint Management on the Navigation pane.
-    b. Under Endpoint offboarding section, select System Center Configuration Manager (current branch) version 1602 or earlier, click Download package, and save the .zip file.
+     a. Click **Endpoint Management** on the **Navigation pane**.
+    
+    b. Under **Endpoint offboarding** section, select **System Center Configuration Manager (current branch) version 1602 or earlier**, click **Download package**, and save the .zip file.
     
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -64,7 +66,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     a. Choose a predefined device collection to deploy the package to.
     
-### Monitor endpoint configuration using System Center Configuration Manager
+### Monitor endpoint configuration
 Monitoring with SCCM consists of two parts:
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the endpoints in your network.
@@ -89,3 +91,4 @@ If there are failed deployments (endpoints with **Error**, **Requirements Not Me
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) 
+- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
