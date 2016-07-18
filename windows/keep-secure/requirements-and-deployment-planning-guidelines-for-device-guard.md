@@ -17,7 +17,7 @@ This article describes the following:
 
 - [Hardware, firmware, and software requirements for Device Guard](#hardware-firmware-and-software-requirements-for-device-guard)
     - [Device Guard requirements for baseline protections](#device-guard-requirements-for-baseline-protections)
-    - [Device Guard requirements for additional protections](#device-guard-requirements-for-additional-protections)
+    - [Device Guard requirements for improved security](#device-guard-requirements-for-improved-security)
 - [Device Guard deployment in different scenarios: types of devices](#device-guard-deployment-in-different-scenarios-types-of-devices)	
 - [Reviewing your applications: application signing and catalog files](#reviewing-your-applications-application-signing-and-catalog-files)
 - [Code integrity policy formats and signing](#code-integrity-policy-formats-and-signing)
@@ -32,11 +32,13 @@ For example, hardware that includes CPU virtualization extensions and SLAT will 
 
 You can deploy Device Guard in phases, and plan these phases in relation to the computer purchases you plan for your next hardware refresh.
 
-The following tables provide more information about the hardware, firmware, and software required for deployment of various Device Guard features. 
+The following tables provide more information about the hardware, firmware, and software required for deployment of various Device Guard features.
 
-<!-- POTENTIAL FUTURE ADDITION--PUT RIGHT AFTER PREVIOUS SENTENCE: The tables describe baseline protections, plus additional protections associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017. -->
+<!-- POTENTIAL FUTURE ADDITION--PUT RIGHT AFTER PREVIOUS SENTENCE: The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017. -->
 
-> **Note**&nbsp;&nbsp;For new computers running Windows 10, Trusted Platform Module (TPM 2.0) must be enabled by default. This requirement is not restated in the tables that follow.
+> **Notes**
+> - To understand the requirements in the following tables, you will need to be familiar with the main features in Device Guard: configurable code integrity policies, virtualization-based security (VBS), and Universal Extensible Firmware Interface (UEFI) Secure Boot. For information about these features, see [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats).
+> - For new computers running Windows 10, Trusted Platform Module (TPM 2.0) must be enabled by default. This requirement is not restated in the tables that follow.
 
 ## Device Guard requirements for baseline protections
 
@@ -51,15 +53,15 @@ The following tables provide more information about the hardware, firmware, and 
 
 <!-- When additional tables are added, change "The following table lists" to "The following tables list" in the Important just below. -->
 
-> **Important**&nbsp;&nbsp;The preceding table lists requirements for baseline protections. The following table lists requirements for additional protections. You can use Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support additional protections.
+> **Important**&nbsp;&nbsp;The preceding table lists requirements for baseline protections. The following table lists requirements for improved security. You can use Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Device Guard can provide.
 
-## Device Guard requirements for additional protections
+## Device Guard requirements for improved security
 
-The following tables describes additional hardware and firmware requirements, and the additional protections that are available when those requirements are met. We strongly recommend the following additional protections, which help you maximize the benefits that Device Guard can provide.
+The following tables describes additional hardware and firmware requirements, and the improved security that is available when those requirements are met.
 
 ### 2015 Additional Qualification Requirements for Device Guard (Windows 10, version 1507 and Windows 10, version 1511)
 
-|Additional Protections - requirement         | Description                                        |
+| Protections for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
 | Firmware: **Securing Boot Configuration and Management** | **Requirements**:<br>- BIOS password or stronger authentication must be supported.<br>- In the BIOS configuration, BIOS authentication must be set.<br>- There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>- In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.<br><br>**Security benefits**:<br>- BIOS password or stronger authentication helps ensure that only authenticated Platform BIOS administrators can change BIOS settings. This helps protect against a physically present user with BIOS access.<br>- Boot order when locked provides protection against the computer being booted into WinRE or another operating system on bootable media. |
 
