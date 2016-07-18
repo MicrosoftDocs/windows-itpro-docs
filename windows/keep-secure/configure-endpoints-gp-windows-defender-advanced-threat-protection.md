@@ -10,7 +10,7 @@ ms.pagetype: security
 author: mjcaparas
 ---
 
-## Configure endpoints using Group Policy
+# Configure endpoints using Group Policy
 
 **Applies to:**
 
