@@ -10,7 +10,8 @@ ms.pagetype: security
 author: mjcaparas
 ---
 
-# Configure endpoints uisng System Center Configuration Manager
+# Configure endpoints using System Center Configuration Manager
+
 
 **Applies to:**
 
