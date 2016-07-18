@@ -63,7 +63,7 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### 2016 Additional Qualification Requirements for Device Guard (Windows 10 1607)
+### 2016 Additional Qualification Requirements for Device Guard (Windows 10, version 1607)
 
 > **Important**&nbsp;&nbsp;The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Device Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
 
