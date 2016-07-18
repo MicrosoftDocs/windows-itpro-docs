@@ -23,8 +23,6 @@ You can use mobile device management (MDM) solutions to configure endpoints. Win
 
 For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
 
-> **Note**&nbsp;&nbsp; If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
-
 ## Configure endpoints using Microsoft Intune
 
 For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
@@ -46,8 +44,6 @@ Onboarding - Use the onboarding policies to deploy configuration settings on end
 - Health Status for onboarded machines
 - Configuration for onboarded machines
 
-> **Warning**&nbsp;&nbsp;These two groups must not be deployed on the same machine at same time, otherwise this will cause unpredictable collisions.
-
 Policy | OMA-URI | Type | Value | Description
 :---|:---|:---|:---|:---
 Onboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding | String | Copy content from onboarding MDM file |  Onboarding
@@ -57,7 +53,7 @@ Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThrea
  Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | 0 or 1 <br> Default value: 1 | Windows Defender ATP Sample sharing is enabled 
  
 
-> **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** and **Health Status for offboarded machines** use read-only properties and can't be remediated.
+> **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** use read-only properties and can't be remediated.
 
 ### Offboard and monitor endpoints
 
@@ -85,8 +81,10 @@ Policy | OMA-URI | Type | Value | Description
 Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding | String | Copy content from offboarding MDM file | Offboarding 
  Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | FALSE |Windows Defender ATP service is not running
   | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | 0 | Offboarded from Windows Defender ATP
-  
-  
+
+> **Note**&nbsp;&nbsp;Policies **Health Status for offboarded machines** use read-only properties and can't be remediated.
+
+
 ## Related topics
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
