@@ -32,9 +32,7 @@ For example, hardware that includes CPU virtualization extensions and SLAT will 
 
 You can deploy Device Guard in phases, and plan these phases in relation to the computer purchases you plan for your next hardware refresh.
 
-The following tables provide more information about the hardware, firmware, and software required for deployment of various Device Guard features.
-
-<!-- POTENTIAL FUTURE ADDITION--PUT RIGHT AFTER PREVIOUS SENTENCE: The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017. -->
+The following tables provide more information about the hardware, firmware, and software required for deployment of various Device Guard features. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017.
 
 > **Notes**
 > - To understand the requirements in the following tables, you will need to be familiar with the main features in Device Guard: configurable code integrity policies, virtualization-based security (VBS), and Universal Extensible Firmware Interface (UEFI) Secure Boot. For information about these features, see [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats).
@@ -51,9 +49,7 @@ The following tables provide more information about the hardware, firmware, and 
 | Software: **HVCI compatible drivers**       | **Requirements**: See the Windows Hardware Compatibility Program requirements under [Filter.Driver.DeviceGuard.DriverCompatibility](https://msdn.microsoft.com/library/windows/hardware/mt589732(v=vs.85).aspx).<br><br>**Security benefits**: [HVCI Compatible](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/) drivers help ensure that VBS can maintain appropriate memory permissions. This increases resistance to bypassing vulnerable kernel drivers and helps ensure that malware cannot run in kernel. Only code verified through code integrity can run in kernel mode. |
 | Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT<br><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Device Guard. |
 
-<!-- When additional tables are added, change "The following table lists" to "The following tables list" in the Important just below. -->
-
-> **Important**&nbsp;&nbsp;The preceding table lists requirements for baseline protections. The following table lists requirements for improved security. You can use Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Device Guard can provide.
+> **Important**&nbsp;&nbsp;The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Device Guard can provide.
 
 ## Device Guard requirements for improved security
 
@@ -69,7 +65,7 @@ The following tables describes additional hardware and firmware requirements, an
 
 ### 2016 Additional Qualification Requirements for Device Guard (Windows 10 1607)
 
-> **Important**&nbsp;&nbsp;The following table lists requirements for improved security, beyond the level of protection described in the preceding tables. You can use Device Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
+> **Important**&nbsp;&nbsp;The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Device Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
 
 | Protections for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
