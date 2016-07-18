@@ -52,12 +52,12 @@ Authentication Options
 - One time password (OTP) settings exposed through the UI
 Remote Access Integration
 - Device compliance options
-- Enterprise Data Protection (EDP) Integration
+- Enterprise Data Protection (EDP) integration
 Updated Client and Configuration Options
-- Universal Windows Platform (UWP) VPN Plugins
-- New VPNv2 CSP Configuration Settings
-- Microsoft Intune VPN Policy Updates
-- VPNv2 CSP Configuration using the SCCM/WMI Bridge
+- Universal Windows Platform (UWP) VPN plugins
+- New VPNv2 CSP configuration settings -- See [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
+- Microsoft Intune VPN policy updates
+- VPNv2 CSP configuration using the SCCM/WMI bridge
 
  
 ## Management
