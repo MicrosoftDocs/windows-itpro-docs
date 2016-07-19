@@ -43,8 +43,14 @@ You must enable Remote Credential Guard on the target device by using the regist
 1. Open Registry Editor.
 2. Enable Remote Credential Guard:
     - Go to HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa.
-    - Add a new DWORD value named **LsaDisableRestrictedAdmin**. Set the value of this registry setting to 0 to turn on Remote Credential Guard.
+    - Add a new DWORD value named **DisableRestrictedAdmin**. Set the value of this registry setting to 0 to turn on Remote Credential Guard.
 3. Close Registry Editor.
+
+You can add this by running the following from an elevated command prompt:
+
+```
+reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 0 /t REG_DWORD`
+```
 
 ## Using Remote Credential Guard
 
