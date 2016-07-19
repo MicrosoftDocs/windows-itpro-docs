@@ -62,7 +62,7 @@ You can provide additional protection for laptops that don't have TPM by enablng
     
 2.  Set the number of invalid logon attempts to allow, and then click OK.
 
-## Why do you need a PIN to use Windows Hello?
+## Why do you need a PIN to use biometrics?
 Windows Hello enables biometric sign-in for Windows 10: fingerprint, iris, or facial recognition. When you set up Windows Hello, you're asked to create a PIN first. This PIN enables you to sign in using the PIN when you can’t use your preferred biometric because of an injury or because the sensor is unavailable or not working properly.
 
 If you only had a biometric sign-in configured and, for any reason, were unable to use that method to sign in, you would have to sign in using your account name and password, which doesn't provide you the same level of protection as Hello.
