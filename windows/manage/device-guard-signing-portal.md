@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, security
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Device Guard signing
