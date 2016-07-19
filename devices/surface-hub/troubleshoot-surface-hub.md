@@ -8,6 +8,7 @@ ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Troubleshoot Microsoft Surface Hub
