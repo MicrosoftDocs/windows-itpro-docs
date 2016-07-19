@@ -1,9 +1,14 @@
 ---
 title: Select Package Accelerator (Learn More) Page
 description: Select Package Accelerator (Learn More) Page
-ms.assetid: 2db51514-8695-4b5e-b3e5-1e96e3ee4cc7
 author: jamiejdt
+ms.assetid: 2db51514-8695-4b5e-b3e5-1e96e3ee4cc7
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Select Package Accelerator (Learn More) Page
 

@@ -2,9 +2,10 @@
 title: Distribute apps using your private store (Windows 10)
 description: The private store is a feature in Windows Store for Business that organizations receive during the sign up process.
 ms.assetid: C4644035-845C-4C84-87F0-D87EA8F5BA19
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
 ---
 
@@ -22,29 +23,29 @@ You can make an app available in your private store when you acquire the app, or
 
 **To acquire an app and make it available in your private store**
 
-1.  Sign in to the Store for Business.
+1.  Sign in to the [Store for Business](https://businessstore.microsoft.com).
 
 2.  Click an app and then click **Get the app** to acquire the app for your organization.
 
 3.  You'll have a few options for distributing the app -- choose **Add to your private store where all people in your organization can find and install it.**
 
-    ![](images/wsfb-distribute.png)
+    ![Image showing Distribute options for app in the Windows Store for Business.](images/wsfb-distribute.png)
 
     It will take approximately twelve hours before the app is available in the private store.
 
 **To make an app in inventory available in your private store**
 
-1.  Sign in to the Store for Business.
+1.  Sign in to the [Store for Business](https://businessstore.microsoft.com).
 
 2.  Click **Manage**, and then choose **Inventory**.
 
-    ![](images/wsfb-manageinventory.png)
+    ![Image showing Manage menu in Windows Store for Business.](images/wsfb-manageinventory.png)
 
 3.  Click **Refine**, and then choose **Online**. Store for Business will update the list of apps on the **Inventory** page.
 
 4.  From an app in **Inventory**, click the ellipses under **Action**, and then choose **Add to private store**.
 
-    ![](images/wsfb-inventoryaddprivatestore.png)
+    ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png)
 
 The value under **Private store** for the app will change to pending. It will take approximately twelve hours before the app is available in the private store.
 

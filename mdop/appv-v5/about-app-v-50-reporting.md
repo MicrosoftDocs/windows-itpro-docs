@@ -1,9 +1,14 @@
 ---
 title: About App-V 5.0 Reporting
 description: About App-V 5.0 Reporting
-ms.assetid: 27c33dda-f017-41e3-8a78-1b681543ec4f
 author: jamiejdt
+ms.assetid: 27c33dda-f017-41e3-8a78-1b681543ec4f
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About App-V 5.0 Reporting
 

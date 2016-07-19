@@ -2,10 +2,10 @@
 title: USMT Resources (Windows 10)
 description: USMT Resources
 ms.assetid: a0b266c7-4bcb-49f1-b63c-48c6ace86b43
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # USMT Resources

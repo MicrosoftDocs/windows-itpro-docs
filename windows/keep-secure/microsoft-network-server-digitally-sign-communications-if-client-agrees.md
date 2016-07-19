@@ -2,25 +2,24 @@
 title: Microsoft network server Digitally sign communications (if client agrees) (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Microsoft network server Digitally sign communications (if client agrees) security policy setting.
 ms.assetid: c92b2e3d-1dbf-4337-a145-b17a585f4fc1
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Microsoft network server: Digitally sign communications (if client agrees)
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Microsoft network server: Digitally sign communications (if client agrees)** security policy setting.
 
 ## Reference
 
-
-The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with the Server service is permitted.
+The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. 
+This policy setting determines whether SMB packet signing must be negotiated before further communication with the Server service is permitted.
 
 Implementation of digital signatures in high-security networks helps to prevent the impersonation of client computers and servers, which is known as "session hijacking." But misuse of these policy settings is a common error that can cause data loss or problems with data access or security.
 
@@ -33,17 +32,13 @@ Using SMB packet signing can impose up to a 15 percent performance degradation o
 There are three other policy settings that relate to packet-signing requirements for Server Message Block (SMB) communications:
 
 -   [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md)
-
 -   [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-if-server-agrees.md)
-
 -   [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md)
 
 ### Possible values
 
 -   Enabled
-
 -   Disabled
-
 -   Not defined
 
 ### Best practices
@@ -51,11 +46,8 @@ There are three other policy settings that relate to packet-signing requirements
 1.  Configure the following security policy settings as follows:
 
     -   Disable [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md).
-
     -   Disable [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md).
-
     -   Enable [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md).
-
     -   Enable **Microsoft Network Server: Digitally Sign Communications (If Client Agrees)**.
 
 2.  Alternately, you can set all of these policy settings to Enabled, but enabling them can cause slower performance on client devices and prevent them from communicating with legacy SMB applications and operating systems.
@@ -68,49 +60,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy| Enabled| 
+| Stand-Alone Server Default Settings | Not defined| 
+| DC Effective Default Settings | Enabled| 
+| Member Server Effective Default Settings|Not defined| 
+| Client Computer Effective Default Settings | Disabled| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -119,7 +78,6 @@ This section describes features and tools that are available to help you manage 
 None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -134,20 +92,14 @@ SMB is the resource-sharing protocol that is supported by many Windows operating
 Configure the settings as follows:
 
 -   Disable [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md).
-
 -   Disable [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md).
-
 -   Enable [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-if-server-agrees.md).
-
 -   Enable **Microsoft network server: Digitally sign communications (if client agrees)**.
 
 In highly secure environments we recommend that you configure all of these settings to Enabled. However, that configuration may cause slower performance on client devices and prevent communications with earlier SMB applications and operating systems.
 
-**Note**  
-An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
-
+>**Note:**  An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
  
-
 ### Potential impact
 
 SMB file and print-sharing protocol support mutual authentication. This prevents session hijacking attacks and supports message authentication to prevent man-in-the-middle attacks. SMB signing provides this authentication by placing a digital signature into each SMB, which is then verified by the client and the server.
@@ -156,14 +108,4 @@ Implementation of SMB signing may negatively affect performance because each pac
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

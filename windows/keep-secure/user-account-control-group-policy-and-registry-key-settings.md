@@ -1,9 +1,11 @@
 ---
 title: User Account Control Group Policy and registry key settings (Windows 10)
 description: Here's a list of UAC  Group Policy and registry key settings that your organization can use to manage UAC.
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
+author: brianlic-msft
 ---
 
 # User Account Control Group Policy and registry key settings

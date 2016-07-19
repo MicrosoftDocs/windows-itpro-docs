@@ -1,9 +1,14 @@
 ---
 title: MED-V Reporting
 description: MED-V Reporting
-ms.assetid: b379153b-be89-4a76-a284-2bb4591c3490
 author: jamiejdt
+ms.assetid: b379153b-be89-4a76-a284-2bb4591c3490
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # MED-V Reporting
 

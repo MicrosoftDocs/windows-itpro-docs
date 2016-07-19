@@ -2,7 +2,11 @@
 title: Create and test a device account (Surface Hub)
 description: This topic introduces how to create and test the device account that Microsoft Surface Hub uses to communicate with Microsoft Exchange and Skype.
 ms.assetid: C8605B5F-2178-4C3A-B4E0-CE32C70ECF67
-keywords: ["create and test device account", "device account", "Surface Hub and Microsoft Exchange", "Surface Hub and Skype"]
+keywords: create and test device account, device account, Surface Hub and Microsoft Exchange, Surface Hub and Skype
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -19,7 +23,7 @@ A "device account" is an account that the Microsoft Surface Hub uses to:
 
 People can book this account by scheduling a meeting with it. The Surface Hub will be able to join that meeting and provide various features to the meeting attendees.
 
-**Important**  Without a device account, none of these features will work.
+>**Important**  Without a device account, none of these features will work.
 
  
 
@@ -112,7 +116,7 @@ You can check online for updated versions at [Surface Hub device account scripts
 
 Your infrastructure will likely fall into one of three configurations. Which configuration you have will affect how you prepare for device setup.
 
-![](images/deploymentoptions-01.png)
+![Image showing deployment options: online, on-premises, or hybrid.](images/deploymentoptions-01.png)
 
 -   [Online deployment (Office 365)](online-deployment-surface-hub-device-accounts.md): Your organization’s environment is deployed entirely on Office 365.
 -   [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md): Your organization has servers that it controls, where Active Directory, Exchange, and Skype for Business (or Lync) are hosted.

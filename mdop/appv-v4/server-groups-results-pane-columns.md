@@ -1,9 +1,14 @@
 ---
 title: Server Groups Results Pane Columns
 description: Server Groups Results Pane Columns
-ms.assetid: e91b1b9b-e58c-4274-ad18-8b157936b9be
 author: jamiejdt
+ms.assetid: e91b1b9b-e58c-4274-ad18-8b157936b9be
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Server Groups Results Pane Columns
 

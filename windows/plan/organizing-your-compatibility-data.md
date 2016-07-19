@@ -2,8 +2,9 @@
 title: Organizing Your Compatibility Data (Windows 10)
 description: This section provides step-by-step instructions for organizing your compatibility data in Application Compatibility Manager (ACM).
 ms.assetid: e91ae444-5d85-4b5f-b655-a765ecc78b1e
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

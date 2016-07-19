@@ -1,9 +1,14 @@
 ---
 title: Generating MBAM 2.5 Stand-alone Reports
 description: Generating MBAM 2.5 Stand-alone Reports
-ms.assetid: 0ec623ff-5155-4906-aef2-20cdc0f84667
 author: jamiejdt
+ms.assetid: 0ec623ff-5155-4906-aef2-20cdc0f84667
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Generating MBAM 2.5 Stand-alone Reports
 

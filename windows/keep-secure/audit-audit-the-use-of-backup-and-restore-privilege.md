@@ -2,32 +2,28 @@
 title: Audit Audit the use of Backup and Restore privilege (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Audit Audit the use of Backup and Restore privilege security policy setting.
 ms.assetid: f656a2bb-e8d6-447b-8902-53df3a7756c5
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Audit: Audit the use of Backup and Restore privilege
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Audit: Audit the use of Backup and Restore privilege** security policy setting.
 
 ## Reference
 
-
 The **Audit: Audit the use of Backup and Restore privilege** policy setting determines whether to audit the use of all user rights, including Backup and Restore, when the **Audit privilege use** policy setting is configured. Enabling both policy settings generates an audit event for every file that is backed up or restored.
 
 ### Possible values
 
 -   Enabled
-
 -   Disabled
-
 -   Not defined
 
 ### Best practices
@@ -42,49 +38,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Not defined |
+| Stand-Alone Server Default Settings | Disabled | 
+| DC Effective Default Settings | Disabled | 
+| Member Server Effective Default Settings | Disabled | 
+| Client Computer Effective Default Settings | Disabled | 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -102,7 +65,6 @@ Alternately, you can use the advanced audit policy, [Audit Sensitive Privilege U
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
@@ -112,7 +74,6 @@ When the backup and restore function is used, it creates a copy of the file syst
 ### Countermeasure
 
 Enable the **Audit: Audit the use of Backup and Restore privilege** setting. Alternatively, implement automatic log backup by configuring the **AutoBackupLogFiles** registry key. If you enable this option when the [Audit privilege use](basic-audit-privilege-use.md) setting is also enabled, an audit event is generated for every file that is backed up or restored. This information could help you to identify an account that was used to accidentally or maliciously restore data in an unauthorized manner.
-
 For more information about configuring this key, see Microsoft Knowledge Base article [100879](http://go.microsoft.com/fwlink/p/?LinkId=100879).
 
 ### Potential impact
@@ -121,14 +82,6 @@ If you enable this policy setting, a large number of security events could be ge
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
+- [Security Options](security-options.md)
  
-
  
-
-
-
-
-

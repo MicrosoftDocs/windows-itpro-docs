@@ -1,9 +1,14 @@
 ---
 title: Label the Current Version of a GPO
 description: Label the Current Version of a GPO
-ms.assetid: cadc8769-21da-44b0-8122-6cafdb448913
 author: jamiejdt
+ms.assetid: cadc8769-21da-44b0-8122-6cafdb448913
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Label the Current Version of a GPO
 

@@ -2,10 +2,10 @@
 title: Return Codes (Windows 10)
 description: Return Codes
 ms.assetid: e71bbc6b-d5a6-4e48-ad01-af0012b35f22
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Return Codes

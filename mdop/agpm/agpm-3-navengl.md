@@ -1,9 +1,14 @@
 ---
 title: AGPM 3
 description: AGPM 3
-ms.assetid: b0d0051d-2900-4a0f-8307-552ad26b0e3b
 author: jamiejdt
+ms.assetid: b0d0051d-2900-4a0f-8307-552ad26b0e3b
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # AGPM 3
 

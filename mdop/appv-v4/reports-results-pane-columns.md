@@ -1,9 +1,14 @@
 ---
 title: Reports Results Pane Columns
 description: Reports Results Pane Columns
-ms.assetid: 907360ca-6a55-4e42-88d2-db1a24cd2a28
 author: jamiejdt
+ms.assetid: 907360ca-6a55-4e42-88d2-db1a24cd2a28
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Reports Results Pane Columns
 

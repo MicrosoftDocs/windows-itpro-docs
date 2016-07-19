@@ -2,8 +2,9 @@
 title: Settings for ACM (Windows 10)
 description: This section provides information about settings that you can configure in Application Compatibility Manager (ACM).
 ms.assetid: e0126284-4348-4708-8976-a1e404f35971
-ms.prod: W10
-ms.mktglfcycl: operate
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
 ---

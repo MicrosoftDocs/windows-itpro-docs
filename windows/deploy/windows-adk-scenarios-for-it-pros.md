@@ -2,16 +2,16 @@
 title: Windows ADK for Windows 10 scenarios for IT Pros (Windows 10)
 description: The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows.
 ms.assetid: FC4EB39B-29BA-4920-87C2-A00D711AE48B
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # Windows ADK for Windows 10 scenarios for IT Pros
 
 
-The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows. For an overview of what's new in the Windows ADK for Windows 10, see [What's new in kits and tools](http://msdn.microsoft.com/library/windows/hardware/dn927348.aspx).
+The [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/p/?LinkId=526803) (Windows ADK) contains tools that can be used by IT Pros to deploy Windows. For an overview of what's new in the Windows ADK for Windows 10, see [What's new in kits and tools](http://msdn.microsoft.com/library/windows/hardware/dn927348.aspx).
 
 In previous releases of Windows, the Windows ADK docs were published on both TechNet and the MSDN Hardware Dev Center. Starting with the Windows 10 release, Windows ADK documentation is available on the MSDN Hardware Dev Center. For the Windows 10 ADK reference content, see [Desktop manufacturing](http://msdn.microsoft.com/library/windows/hardware/dn938361.aspx).
 

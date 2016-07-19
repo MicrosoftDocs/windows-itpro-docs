@@ -2,7 +2,7 @@
 title: Change history for Manage and update Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Manage and update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 29144AFA-1DA9-4532-B07D-1EBE34B7E1E0
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
@@ -12,14 +12,30 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## July 2016
+
+| New or changed topic | Description |
+| ---|---|
+| [Windows 10 servicing options](introduction-to-windows-10-servicing.md)  | Added detailed content on servicing branches, moved from [Windows 10 servicing overview](../plan/windows-10-servicing-options.md). |
+
+## June 2016
+
+| New or changed topic | Description |
+| ---|---|
+| [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Updated the sample script for Shell Launcher. |
+
 ## May 2016
 
 | New or changed topic | Description |
 | ---|---|
-|[Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) |Removed info about sharing wi-fi network access with contacts, since it's been deprecated. |
-| [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Corrected script for setting a custom shell using Shell Launcher | 
-| [Configure Windows 10 devices to stop data flow to Microsoft](configure-windows-10-devices-to-stop-data-flow-to-microsoft.md) | Added section on how to turn off Live Tiles |
+| [Group Policies that apply only to Windows 10 Enterprise and Education Editions](group-policies-for-enterprise-and-education-editions.md) | New |
+| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added section on how to turn off Live Tiles |
 | [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md) | New telemetry content |
+| [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) |Removed info about sharing wi-fi network access with contacts, since it's been deprecated. |
+| [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Corrected script for setting a custom shell using Shell Launcher |
+| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Removed Windows 10 Mobile from **Applies to** | 
+
+
 
 ## April 2016
 

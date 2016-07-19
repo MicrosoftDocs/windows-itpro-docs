@@ -1,9 +1,14 @@
 ---
 title: How to Create the Package Root Directory
 description: How to Create the Package Root Directory
-ms.assetid: bcfe3bd4-6c60-409a-8ffa-cc22f27194b1
 author: jamiejdt
+ms.assetid: bcfe3bd4-6c60-409a-8ffa-cc22f27194b1
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Create the Package Root Directory
 

@@ -1,9 +1,14 @@
 ---
 title: Side-by-side Privatization Failed Dialog Box (App-V 4.6 SP1)
 description: Side-by-side Privatization Failed Dialog Box (App-V 4.6 SP1)
-ms.assetid: bcdb9b82-b53d-4a36-9f5d-71c021d4be28
 author: jamiejdt
+ms.assetid: bcdb9b82-b53d-4a36-9f5d-71c021d4be28
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Side-by-side Privatization Failed Dialog Box (App-V 4.6 SP1)
 

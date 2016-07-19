@@ -2,23 +2,21 @@
 title: Log on as a batch job (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Log on as a batch job security policy setting.
 ms.assetid: 4eaddb51-0a18-470e-9d3d-5e7cd7970b41
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Log on as a batch job
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Log on as a batch job** security policy setting.
 
 ## Reference
-
 
 This policy setting determines which accounts can log on by using a batch-queue tool such as the Task Scheduler service. When you use the Add Scheduled Task Wizard to schedule a task to run under a particular user name and password, that user is automatically assigned the **Log on as a batch job** user right. When the scheduled time arrives, the Task Scheduler service logs on the user as a batch job instead of as an interactive user, and the task runs in the user's security context.
 
@@ -27,9 +25,7 @@ Constant: SeBatchLogonRight
 ### Possible values
 
 -   User-defined list of accounts
-
 -   Default values
-
 -   Not Defined
 
 ### Best practices
@@ -46,57 +42,16 @@ By default, this setting is for Administrators, Backup Operators, and Performanc
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p>
-<p>Performance Log Users</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p>
-<p>Performance Log Users</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p>
-<p>Performance Log Users</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p>
-<p>Backup Operators</p>
-<p>Performance Log Users</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Administrators</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Administrators<br/>Backup Operators<br/>Performance Log Users| 
+| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users| 
+| Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users| 
+| Member Server Effective Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users| 
+| Client Computer Effective Default Settings | Administrators| 
  
-
 ## Policy management
-
 
 This section describes features, tools, and guidance to help you manage this policy.
 
@@ -111,15 +66,11 @@ Task Scheduler automatically grants this right when a user schedules a task. To 
 Group Policy settings are applied in the following order, which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -139,14 +90,4 @@ If you configure the **Log on as a batch job** setting by using domain-based Gro
 
 ## Related topics
 
-
-[User Rights Assignment](user-rights-assignment.md)
-
- 
-
- 
-
-
-
-
-
+- [User Rights Assignment](user-rights-assignment.md)

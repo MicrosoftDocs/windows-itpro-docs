@@ -1,9 +1,14 @@
 ---
 title: About DaRT 10
 description: About DaRT 10
-ms.assetid: 02378035-58d1-4095-82fe-d60734a746fb
 author: jamiejdt
+ms.assetid: 02378035-58d1-4095-82fe-d60734a746fb
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About DaRT 10
 

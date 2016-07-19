@@ -2,10 +2,12 @@
 title: Working with line-of-business apps (Windows 10)
 description: Your company can make line-of-business (LOB) applications available through Windows Store for Business. These apps are custom to your company – they might be internal business apps, or apps specific to your business or industry.
 ms.assetid: 95EB7085-335A-447B-84BA-39C26AEB5AC7
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Working with line-of-business apps
@@ -78,7 +80,8 @@ After an app is published and available in the Store, ISVs publish an updated ve
 
 5.  Click **Save** to save your changes and start the app submission process.
 
-For more information, see [Organizational licensing options]( http://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](http://go.microsoft.com/fwlink/p/?LinkId=627543).
+For more information, see [Organizational licensing options]( http://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](http://go.microsoft.com/fwlink/p/?LinkId=627543).<br>
+**Note** In order to get the LOB app, the organization must be located in a [supported market](https://technet.microsoft.com/en-us/itpro/windows/whats-new/windows-store-for-business-overview#supported-markets), and you must not have excluded that market when submitting your app.
 
 ### <a href="" id="add-lob-app-to-inventory"></a>Add app to inventory (admin)
 

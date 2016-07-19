@@ -1,9 +1,14 @@
 ---
 title: Application Virtualization Sequencer Console Overview
 description: Application Virtualization Sequencer Console Overview
-ms.assetid: 681bb40d-2937-4645-82aa-4a44775232d8
 author: jamiejdt
+ms.assetid: 681bb40d-2937-4645-82aa-4a44775232d8
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Application Virtualization Sequencer Console Overview
 

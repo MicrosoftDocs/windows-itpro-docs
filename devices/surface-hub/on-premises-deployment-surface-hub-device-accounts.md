@@ -2,8 +2,13 @@
 title: On-premises deployment (Surface Hub)
 description: This topic explains how you add a device account for your Microsoft Surface Hub when you have a single-forest, on-premises deployment.
 ms.assetid: 80E12195-A65B-42D1-8B84-ECC3FCBAAFC6
-keywords: ["single forest deployment", "on prem deployment", "device account", "Surface Hub"]
+keywords: single forest deployment, on prem deployment, device account, Surface Hub
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: high
 ---
 
 # On-premises deployment (Surface Hub)
@@ -21,7 +26,7 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
 
     ```PowerShell
     Set-ExecutionPolicy Unrestricted
-    $org=&#39;contoso.microsoft.com&#39;
+    $org='contoso.microsoft.com'
     $cred=Get-Credential $admin@$org
     $sessExchange = New-PSSession -ConfigurationName microsoft.exchange -Credential $cred -AllowRedirection -Authentication Kerberos -ConnectionUri "http://$strExchangeServer/powershell" -WarningAction SilentlyContinue
     $sessLync = New-PSSession -Credential $cred -ConnectionURI "https://$strLyncFQDN/OcsPowershell" -AllowRedirection -WarningAction SilentlyContinue
@@ -34,7 +39,7 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
     If you're changing an existing resource mailbox:
 
     ```PowerShell
-    Set-Mailbox -Identity &#39;HUB01&#39; -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+    Set-Mailbox -Identity 'HUB01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
     ```
 
     If you’re creating a new resource mailbox:

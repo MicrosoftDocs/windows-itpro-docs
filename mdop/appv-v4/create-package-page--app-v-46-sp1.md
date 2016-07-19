@@ -1,9 +1,14 @@
 ---
 title: Create Package Page
 description: Create Package Page
-ms.assetid: dd7a8709-74cc-459a-88ac-b63d8dcf2ddf
 author: jamiejdt
+ms.assetid: dd7a8709-74cc-459a-88ac-b63d8dcf2ddf
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Create Package Page
 

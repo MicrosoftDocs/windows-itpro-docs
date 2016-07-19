@@ -2,16 +2,18 @@
 title: User State Migration Tool (USMT) Technical Reference (Windows 10)
 description: The User State Migration Tool (USMT) 10.0 is included with the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10. USMT provides a highly customizable user-profile migration experience for IT professionals.
 ms.assetid: f90bf58b-5529-4520-a9f8-b6cb4e4d3add
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # User State Migration Tool (USMT) Technical Reference
 The User State Migration Tool (USMT) 10.0 is included with the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10. USMT provides a highly customizable user-profile migration experience for IT professionals.
 
 Download the Windows ADK [from this website](http://go.microsoft.com/fwlink/p/?LinkID=526803).
+
+**Note**: USMT version 10.1.10586 supports migration of user settings for installations of Microsoft Office 2003, 2007, 2010, and 2013.
 
 USMT 10.0 includes three command-line tools:
 

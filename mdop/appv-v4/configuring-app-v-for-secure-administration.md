@@ -1,9 +1,14 @@
 ---
 title: Configuring App-V for Secure Administration
 description: Configuring App-V for Secure Administration
-ms.assetid: 4543fa81-c8cc-4b10-83b7-060778eb1349
 author: jamiejdt
+ms.assetid: 4543fa81-c8cc-4b10-83b7-060778eb1349
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Configuring App-V for Secure Administration
 

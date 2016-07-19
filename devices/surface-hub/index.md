@@ -2,7 +2,12 @@
 title: Microsoft Surface Hub
 description: Documents related to the Microsoft Surface Hub.
 ms.assetid: 69C99E91-1441-4318-BCAF-FE8207420555
+ms.prod: w10
+ms.mktglfcycl: explore
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Microsoft Surface Hub

@@ -2,10 +2,11 @@
 title: General guidance and best practices for enterprise data protection (EDP) (Windows 10)
 description: This section includes info about the enlightened Microsoft apps, including how to add them to your Protected Apps list in Microsoft Intune. It also includes some testing scenarios that we recommend running through with enterprise data protection (EDP).
 ms.assetid: aa94e733-53be-49a7-938d-1660deaf52b0
-keywords: ["EDP", "Enterprise Data Protection"]
-ms.prod: W10
+keywords: EDP, Enterprise Data Protection
+ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
+ms.pagetype: security
 author: eross-msft
 ---
 
@@ -22,6 +23,7 @@ This section includes info about the enlightened Microsoft apps, including how t
 ## In this section
 |Topic |Description |
 |------|------------|
+|[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |A list of all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your enterprise. |
 |[Enlightened apps for use with enterprise data protection (EDP)](enlightened-microsoft-apps-and-edp.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your **Protected Apps** list. |
 |[Testing scenarios for enterprise data protection (EDP)](testing-scenarios-for-edp.md) |We've come up with a list of suggested testing scenarios that you can use to test EDP in your company. |
 

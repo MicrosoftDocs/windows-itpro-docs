@@ -2,23 +2,21 @@
 title: Network security Restrict NTLM Audit NTLM authentication in this domain (Windows 10)
 description: Describes the best practices, location, values, management aspects, and security considerations for the Network Security Restrict NTLM Audit NTLM authentication in this domain security policy setting.
 ms.assetid: 33183ef9-53b5-4258-8605-73dc46335e6e
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: Restrict NTLM: Audit NTLM authentication in this domain
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Audit NTLM authentication in this domain** security policy setting.
 
 ## Reference
-
 
 The **Network Security: Restrict NTLM: Audit NTLM authentication in this domain** policy setting allows you to audit on the domain controller NTLM authentication in that domain.
 
@@ -54,49 +52,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client computer effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default domain policy| Not defined| 
+| Default domain controller policy | Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings | Not defined| 
+| Member server effective default settings | Not defined| 
+| Client computer effective default settings | Not defined| 
  
-
 ## Policy management
-
 
 This section describes different features and tools available to help you manage this policy.
 
@@ -116,15 +81,14 @@ There are no security audit event policies that can be configured to view output
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
+NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the 
+Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability
 
 Enabling this policy setting will reveal through logging which devices within your network or domain handle NTLM traffic. The identity of these devices can be used in malicious ways if NTLM authentication traffic is compromised. The policy setting does not prevent or mitigate any vulnerability because it is for audit purposes only.
-
 ### Countermeasure
 
 Restrict access to the log files when this policy setting is enabled in your production environment.
@@ -135,14 +99,4 @@ If you do not enable or configure this policy setting, no NTLM authentication tr
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

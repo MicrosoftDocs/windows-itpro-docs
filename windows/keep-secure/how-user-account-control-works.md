@@ -2,23 +2,21 @@
 title: How User Account Control works (Windows 10)
 description: User Account Control (UAC) is a fundamental component of Microsoft's overall security vision. UAC helps mitigate the impact of malware.
 ms.assetid: 9f921779-0fd3-4206-b0e4-05a19883ee59
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: operate
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # How User Account Control works
 
-
 **Applies to**
-
 -   Windows 10
 
 User Account Control (UAC) is a fundamental component of Microsoft's overall security vision. UAC helps mitigate the impact of malware.
 
 ## UAC process and interactions
-
 
 Each app that requires the administrator access token must prompt for consent. The one exception is the relationship that exists between parent and child processes. Child processes inherit the user's access token from the parent process. Both the parent and child processes, however, must have the same integrity level. Windows 10 protects processes by marking their integrity levels. Integrity levels are measurements of trust. A "high" integrity application is one that performs tasks that modify system data, such as a disk partitioning application, while a "low" integrity application is one that performs tasks that could potentially compromise the operating system, such as a Web browser. Apps with lower integrity levels cannot modify data in applications with higher integrity levels. When a standard user attempts to run an app that requires an administrator access token, UAC requires that the user provide valid administrator credentials.
 
@@ -67,11 +65,8 @@ The UAC elevation prompts are color-coded to be app-specific, enabling for immed
 The elevation prompt color-coding is as follows:
 
 -   Red background with a red shield icon: The app is blocked by Group Policy or is from a publisher that is blocked.
-
 -   Blue background with a blue and gold shield icon: The application is a Windows 10 administrative app, such as a Control Panel item.
-
 -   Blue background with a blue shield icon: The application is signed by using Authenticode and is trusted by the local computer.
-
 -   Yellow background with a yellow shield icon: The application is unsigned or signed but is not yet trusted by the local computer.
 
 **Shield icon**
@@ -94,122 +89,185 @@ While malware could present an imitation of the secure desktop, this issue canno
 
 ## UAC Architecture
 
-
 The following diagram details the UAC architecture.
 
 ![uac architecture](images/uacarchitecture.gif)
 
 To better understand each component, review the table below:
 
-Component
-Description
-**User**
-
-User performs operation requiring privilege
-
-If the operation changes the file system or registry, Virtualization is called. All other operations call ShellExecute.
-
-ShellExecute
-
-ShellExecute calls CreateProcess. ShellExecute looks for the ERROR\_ELEVATION\_REQUIRED error from CreateProcess. If it receives the error, ShellExecute calls the Application Information service to attempt to perform the requested task with the elevated prompt.
-
-CreateProcess
-
-If the application requires elevation, CreateProcess rejects the call with ERROR\_ELEVATION\_REQUIRED.
-
-**System**
-
-Application Information service
-
-A system service that helps start apps that require one or more elevated privileges or user rights to run, such as local administrative tasks, and apps that require higher integrity levels. The Application Information service helps start such apps by creating a new process for the application with an administrative user's full access token when elevation is required and (depending on Group Policy) consent is given by the user to do so.
-
-Elevating an ActiveX install
-
-If ActiveX is not installed, the system checks the UAC slider level. If ActiveX is installed, the **User Account Control: Switch to the secure desktop when prompting for elevation** Group Policy setting is checked.
-
-Check UAC slider level
-
-UAC has four levels of notification to choose from and a slider to use to select the notification level:
-
--   High
-
-    If the slider is set to **Always notify**, the system checks whether the secure desktop is enabled.
-
--   Medium
-
-    If the slider is set to **Notify me only when programs try to make changes to my computer**, the **User Account Control: Only elevate executable files that are signed and validated** policy setting is checked:
-
-    -   If the policy setting is enabled, the public key infrastructure (PKI) certification path validation is enforced for a given file before it is permitted to run.
-
-    -   If the policy setting is not enabled (default), the PKI certification path validation is not enforced before a given file is permitted to run. The **User Account Control: Switch to the secure desktop when prompting for elevation** Group Policy setting is checked.
-
--   Low
-
-    If the slider is set to **Notify me only when apps try to make changes to my computer (do not dim by desktop)**, the CreateProcess is called.
-
--   Never Notify
-
-    If the slider is set to **Never notify me when**, UAC prompt will never notify when an app is trying to install or trying to make any change on the computer.
-
-    **Important**  
-    This setting is not recommended. This setting is the same as setting the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** policy setting to **Elevate without prompting**.
-
-     
-
-Secure desktop enabled
-
-The **User Account Control: Switch to the secure desktop when prompting for elevation** policy setting is checked:
-
--   If the secure desktop is enabled, all elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
-
--   If the secure desktop is not enabled, all elevation requests go to the interactive user's desktop, and the per-user settings for administrators and standard users are used.
-
-CreateProcess
-
-CreateProcess calls AppCompat, Fusion, and Installer detection to assess if the app requires elevation. The file is then inspected to determine its requested execution level, which is stored in the application manifest for the file. CreateProcess fails if the requested execution level specified in the manifest does not match the access token and returns an error (ERROR\_ELEVATION\_REQUIRED) to ShellExecute.
-
-AppCompat
-
-The AppCompat database stores information in the application compatibility fix entries for an application.
-
-Fusion
-
-The Fusion database stores information from application manifests that describe the applications. The manifest schema is updated to add a new requested execution level field.
-
-Installer detection
-
-Installer detection detects setup files, which helps prevent installations from being run without the user's knowledge and consent.
-
-**Kernel**
-
-Virtualization
-
-Virtualization technology ensures that non-compliant apps do not silently fail to run or fail in a way that the cause cannot be determined. UAC also provides file and registry virtualization and logging for applications that write to protected areas.
-
-File system and registry
-
-The per-user file and registry virtualization redirects per-computer registry and file write requests to equivalent per-user locations. Read requests are redirected to the virtualized per-user location first and to the per-computer location second.
-
+<table>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+<p><b>User</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>User performs operation requiring privilege</p>
+</td>
+<td>
+<p>If the operation changes the file system or registry, Virtualization is called. All other operations call ShellExecute.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ShellExecute</p>
+</td>
+<td>
+<p>ShellExecute calls CreateProcess. ShellExecute looks for the ERROR_ELEVATION_REQUIRED error from CreateProcess. If it receives the error, ShellExecute calls the Application Information service to attempt to perform the requested task with the elevated prompt.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CreateProcess</p>
+</td>
+<td>
+<p>If the application requires elevation, CreateProcess rejects the call with ERROR_ELEVATION_REQUIRED.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>System</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Application Information service</p>
+</td>
+<td>
+<p>A system service that helps start apps that require one or more elevated privileges or user rights to run, such as local administrative tasks, and apps that require higher integrity levels. The Application Information service helps start such apps by creating a new process for the application with an administrative user's full access token when elevation is required and (depending on Group Policy) consent is given by the user to do so.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Elevating an ActiveX install</p>
+</td>
+<td>
+<p>If ActiveX is not installed, the system checks the UAC slider level. If ActiveX is installed, the <b>User Account Control: Switch to the secure desktop when prompting for elevation</b> Group Policy setting is checked.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Check UAC slider level</p>
+</td>
+<td>
+<p>UAC has four levels of notification to choose from and a slider to use to select the notification level:</p>
+<ul>
+<li>
+<p>High</p>
+<p>If the slider is set to <b>Always notify</b>, the system checks whether the secure desktop is enabled.</p>
+</li>
+<li>
+<p>Medium</p>
+<p>If the slider is set to <b>Notify me only when programs try to make changes to my computer</b>, the <b>User Account Control: Only elevate executable files that are signed and validated</b> policy setting is checked:</p>
+<ul>
+<li>
+<p>If the policy setting is enabled, the public key infrastructure (PKI) certification path validation is enforced for a given file before it is permitted to run.</p>
+</li>
+<li>
+<p>If the policy setting is not enabled (default), the PKI certification path validation is not enforced before a given file is permitted to run. The <b>User Account Control: Switch to the secure desktop when prompting for elevation</b> Group Policy setting is checked.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Low</p>
+<p>If the slider is set to <b>Notify me only when apps try to make changes to my computer (do not dim by desktop)</b>, the CreateProcess is called.</p>
+</li>
+<li>
+<p>Never Notify</p>
+<p>If the slider is set to <b>Never notify me when</b>, UAC prompt will never notify when an app is trying to install or trying to make any change on the computer.</p>
+<div class="alert"><b>Important</b>  <p class="note">This setting is not recommended. This setting is the same as setting the <b>User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode</b> policy setting to <b>Elevate without prompting</b>.</p>
+</div>
+<div> </div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Secure desktop enabled</p>
+</td>
+<td>
+<p>The <b>User Account Control: Switch to the secure desktop when prompting for elevation</b> policy setting is checked: </p>
+<ul>
+<li>
+<p>If the secure desktop is enabled, all elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.</p>
+</li>
+<li>
+<p>If the secure desktop is not enabled, all elevation requests go to the interactive user's desktop, and the per-user settings for administrators and standard users are used.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>CreateProcess</p>
+</td>
+<td>
+<p>CreateProcess calls AppCompat, Fusion, and Installer detection to assess if the app requires elevation. The file is then inspected to determine its requested execution level, which is stored in the application manifest for the file. CreateProcess fails if the requested execution level specified in the manifest does not match the access token and returns an error (ERROR_ELEVATION_REQUIRED) to ShellExecute.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>AppCompat</p>
+</td>
+<td>
+<p>The AppCompat database stores information in the application compatibility fix entries for an application.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fusion</p>
+</td>
+<td>
+<p>The Fusion database stores information from application manifests that describe the applications. The manifest schema is updated to add a new requested execution level field.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Installer detection</p>
+</td>
+<td>
+<p>Installer detection detects setup files, which helps prevent installations from being run without the user's knowledge and consent.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Kernel</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Virtualization</p>
+</td>
+<td>
+<p>Virtualization technology ensures that non-compliant apps do not silently fail to run or fail in a way that the cause cannot be determined. UAC also provides file and registry virtualization and logging for applications that write to protected areas.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>File system and registry</p>
+</td>
+<td>
+<p>The per-user file and registry virtualization redirects per-computer registry and file write requests to equivalent per-user locations. Read requests are redirected to the virtualized per-user location first and to the per-computer location second.</p>
+</td>
+</tr>
+</table>
  
-
 The slider will never turn UAC completely off. If you set it to **Never notify**, it will:
 
 -   Keep the UAC service running.
-
 -   Cause all elevation request initiated by administrators to be auto-approved without showing a UAC prompt.
-
 -   Automatically deny all elevation requests for standard users.
 
-**Important**  
-In order to fully disable UAC you must disable the policy **User Account Control: Run all administrators in Admin Approval Mode**.
-
+>**Important:**  In order to fully disable UAC you must disable the policy **User Account Control: Run all administrators in Admin Approval Mode**.
  
-
-**Warning**  
-Universal Windows apps will not work when UAC is disabled.
-
+>**Warning:**  Universal Windows apps will not work when UAC is disabled.
  
-
 ### Virtualization
 
 Because system administrators in enterprise environments attempt to secure systems, many line-of-business (LOB) applications are designed to use only a standard user access token. As a result, you do not need to replace the majority of apps when UAC is turned on.
@@ -221,9 +279,7 @@ Most app tasks operate properly by using virtualization features. Although virtu
 Virtualization is not an option in the following scenarios:
 
 -   Virtualization does not apply to apps that are elevated and run with a full administrative access token.
-
 -   Virtualization supports only 32-bit apps. Non-elevated 64-bit apps simply receive an access denied message when they attempt to acquire a handle (a unique identifier) to a Windows object. Native Windows 64-bit apps are required to be compatible with UAC and to write data into the correct locations.
-
 -   Virtualization is disabled if the app includes an app manifest with a requested execution level attribute.
 
 ### Request execution levels
@@ -239,40 +295,18 @@ Installation programs are apps designed to deploy software. Most installation pr
 Installer detection only applies to:
 
 -   32-bit executable files.
-
 -   Applications without a requested execution level attribute.
-
 -   Interactive processes running as a standard user with UAC enabled.
 
 Before a 32-bit process is created, the following attributes are checked to determine whether it is an installer:
 
 -   The file name includes keywords such as "install," "setup," or "update."
-
 -   Versioning Resource fields contain the following keywords: Vendor, Company Name, Product Name, File Description, Original Filename, Internal Name, and Export Name.
-
 -   Keywords in the side-by-side manifest are embedded in the executable file.
-
 -   Keywords in specific StringTable entries are linked in the executable file.
-
 -   Key attributes in the resource script data are linked in the executable file.
-
 -   There are targeted sequences of bytes within the executable file.
 
-**Note**  
-The keywords and sequences of bytes were derived from common characteristics observed from various installer technologies.
-
+>**Note:**  The keywords and sequences of bytes were derived from common characteristics observed from various installer technologies.
  
-
-**Note**  
-The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).
-
- 
-
- 
-
- 
-
-
-
-
-
+>**Note:**  The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).

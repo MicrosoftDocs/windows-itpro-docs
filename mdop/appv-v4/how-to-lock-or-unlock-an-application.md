@@ -1,9 +1,14 @@
 ---
 title: How to Lock or Unlock an Application
 description: How to Lock or Unlock an Application
-ms.assetid: 8c65d4fd-f336-447f-8c0a-6d65aec9fd00
 author: jamiejdt
+ms.assetid: 8c65d4fd-f336-447f-8c0a-6d65aec9fd00
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Lock or Unlock an Application
 

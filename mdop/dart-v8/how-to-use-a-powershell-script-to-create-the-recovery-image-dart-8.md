@@ -1,9 +1,14 @@
 ---
 title: How to Use a PowerShell Script to Create the Recovery Image
 description: How to Use a PowerShell Script to Create the Recovery Image
-ms.assetid: d0c71092-535e-43b1-9b1d-6ac819508348
 author: jamiejdt
+ms.assetid: d0c71092-535e-43b1-9b1d-6ac819508348
+ms.pagetype: mdop
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Use a PowerShell Script to Create the Recovery Image
 

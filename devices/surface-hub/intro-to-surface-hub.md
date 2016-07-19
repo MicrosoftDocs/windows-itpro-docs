@@ -2,7 +2,11 @@
 title: Intro to Microsoft Surface Hub
 description: Microsoft Surface Hub is an all-in-one productivity device that is intended for brainstorming, collaboration, and presentations.
 ms.assetid: 5DAD4489-81CF-47ED-9567-A798B90C7E76
-keywords: ["Surface Hub", "productivity", "collaboration", "presentations", "setup"]
+keywords: Surface Hub, productivity, collaboration, presentations, setup
+ms.prod: w10
+ms.mktglfcycl: explore
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -33,7 +37,7 @@ The capabilities of your Surface Hub will depend on what other Microsoft product
 </tr>
 <tr class="even">
 <td align="left"><p>Meetings using Skype for Business</p></td>
-<td align="left"><p>Device account with Skype for Business (Lync 2010 or later) or Skype for Business Online, and a network connection so the account can be accessed.</p></td>
+<td align="left"><p>Device account with Skype for Business (Lync Server 2013 or later) or Skype for Business Online, and a network connection so the account can be accessed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Web browsing through Microsoft Edge</p></td>

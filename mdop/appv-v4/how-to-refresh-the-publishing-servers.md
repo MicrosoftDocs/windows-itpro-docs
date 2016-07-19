@@ -1,9 +1,14 @@
 ---
 title: How to Refresh the Publishing Servers
 description: How to Refresh the Publishing Servers
-ms.assetid: 92e1d7b0-10ee-4531-9049-1056b44934e2
 author: jamiejdt
+ms.assetid: 92e1d7b0-10ee-4531-9049-1056b44934e2
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Refresh the Publishing Servers
 

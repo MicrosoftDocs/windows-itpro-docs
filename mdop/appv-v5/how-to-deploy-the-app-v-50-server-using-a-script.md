@@ -1,9 +1,14 @@
 ---
 title: How to Deploy the App-V 5.0 Server Using a Script
 description: How to Deploy the App-V 5.0 Server Using a Script
-ms.assetid: b91a35c8-df9e-4065-9187-abafbe565b84
 author: jamiejdt
+ms.assetid: b91a35c8-df9e-4065-9187-abafbe565b84
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # How to Deploy the App-V 5.0 Server Using a Script
 

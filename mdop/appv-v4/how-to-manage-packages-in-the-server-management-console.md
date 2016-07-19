@@ -1,9 +1,14 @@
 ---
 title: How to Manage Packages in the Server Management Console
 description: How to Manage Packages in the Server Management Console
-ms.assetid: d13d3896-8575-4d2a-8bb4-1fe15d79c390
 author: jamiejdt
+ms.assetid: d13d3896-8575-4d2a-8bb4-1fe15d79c390
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Manage Packages in the Server Management Console
 

@@ -2,23 +2,21 @@
 title: Network security Restrict NTLM Add remote server exceptions for NTLM authentication (Windows 10)
 description: Describes the best practices, location, values, management aspects, and security considerations for the Network security Restrict NTLM Add remote server exceptions for NTLM authentication security policy setting.
 ms.assetid: 9b017399-0a54-4580-bfae-614c2beda3a1
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication** security policy setting.
 
 ## Reference
-
 
 The **Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication** policy setting allows you to create an exception list of remote servers to which client devices are allowed to use NTLM authentication if the [Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) policy setting is configured.
 
@@ -50,49 +48,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client computer effective default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default domain policy| Not defined| 
+| Default domain controller policy | Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings | Not defined| 
+| Member server effective default settings | Not defined| 
+| Client computer effective default settings| Not defined| 
  
-
 ## Policy management
-
 
 This section describes the features and tools that are available to help you manage this policy.
 
@@ -112,18 +77,19 @@ There are no security audit policies that can be configured to view output from 
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
 
-When it has been determined that the NTLM authentication protocol should not be used from a client device to any remote servers because you are required to use a more secure protocol such as Kerberos, there might be some client applications that still use NTLM. If so, and you set [Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) to any of the deny options, those applications will fail because the outbound NTLM authentication traffic from the client computer will be blocked.
+When it has been determined that the NTLM authentication protocol should not be used from a client device to any remote servers because you are required to use a more secure protocol such as Kerberos, there might be some client applications that still use NTLM. If so, and you set [Network Security: 
+Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) to any of the deny options, those applications will fail because the outbound NTLM authentication traffic from the client computer will be blocked.
 
 If you define an exception list of servers to which client devices are allowed to use NTLM authentication, then NTLM authentication traffic will continue to flow between those client applications and servers. The servers then are vulnerable to any malicious attack that takes advantage of security weaknesses in NTLM.
 
 ### Countermeasure
 
-When you use [Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) in audit-only mode, you can determine by reviewing which client applications are making NTLM authentication requests to the remote servers in your environment. When assessed, you will have to determine on a case-by-case basis if NTLM authentication still minimally meets your security requirements. If not, the client application has to be upgraded to use something other than NTLM authentication.
+When you use [Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) in audit-only mode, you can determine by reviewing which client applications are making NTLM authentication requests to the remote 
+servers in your environment. When assessed, you will have to determine on a case-by-case basis if NTLM authentication still minimally meets your security requirements. If not, the client application has to be upgraded to use something other than NTLM authentication.
 
 ### Potential impact
 
@@ -133,14 +99,4 @@ If this list is not defined and [Network Security: Restrict NTLM: Outgoing NTLM 
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

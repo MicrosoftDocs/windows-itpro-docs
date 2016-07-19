@@ -1,9 +1,14 @@
 ---
 title: Customize Page (Learn More)
 description: Customize Page (Learn More)
-ms.assetid: 893df614-7058-4fcf-ba34-d0f16c856374
 author: jamiejdt
+ms.assetid: 893df614-7058-4fcf-ba34-d0f16c856374
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Customize Page (Learn More)
 

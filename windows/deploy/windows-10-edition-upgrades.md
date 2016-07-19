@@ -2,10 +2,11 @@
 title: Windows 10 edition upgrade (Windows 10)
 description: With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported.
 ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+ms.pagetype: mobile
+author: greg-lindsay
 ---
 
 # Windows 10 edition upgrade
@@ -14,17 +15,17 @@ author: CFaw
 -   Windows 10
 -   Windows 10 Mobile
 
-With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkID=690882).
+With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkID=690882). For a comprehensive list of all possible upgrade paths to Windows 10, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md).
 
-The following table shows the methods you can use to upgrade editions of Windows 10.
+The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer.
 
 |Method |Home > Pro |Home > Education |Pro > Education |Pro > Enterprise |Ent > Education |Mobile > Mobile Enterprise |
 |-------|-----------|-----------------|----------------|-----------------|----------------|--------|
-| Using mobile device management (MDM) |![unsupported](images/crossmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |
-| Using a provisioning package |![unsupported](images/crossmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |
-| Using a command-line tool |![unsupported](images/crossmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![unsupported](images/crossmark.png) |
-| Entering a product key manually |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![supported](images/checkmark.png) |![unsupported](images/crossmark.png) |
-| Purchasing a license from the Windows Store |![supported](images/checkmark.png) |![unsupported](images/crossmark.png) |![unsupported](images/crossmark.png) |![unsupported](images/crossmark.png) |![unsupported](images/crossmark.png) |![unsupported](images/crossmark.png) |
+| Using mobile device management (MDM) |![unsupported](images/x_blk.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |
+| Using a provisioning package |![unsupported](images/x_blk.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |
+| Using a command-line tool |![unsupported](images/x_blk.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![unsupported](images/x_blk.png) |
+| Entering a product key manually |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![supported](images/check_grn.png) |![unsupported](images/x_blk.png) |
+| Purchasing a license from the Windows Store |![supported](images/check_grn.png) |![unsupported](images/x_blk.png) |![unsupported](images/x_blk.png) |![unsupported](images/x_blk.png) |![unsupported](images/x_blk.png) |![unsupported](images/x_blk.png) |
 
 **Note**<br>Each desktop edition in the table also has an N and KN edition. These editions have had media-related functionality removed. Devices with N or KN editions installed can be upgraded to corresponding N or KN editions using the same methods.
 

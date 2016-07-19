@@ -1,9 +1,14 @@
 ---
 title: Deploying MBAM 2.0
 description: Deploying MBAM 2.0
-ms.assetid: 4b0eaf10-81b4-427e-9d43-eb833de935a3
 author: jamiejdt
+ms.assetid: 4b0eaf10-81b4-427e-9d43-eb833de935a3
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Deploying MBAM 2.0
 

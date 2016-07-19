@@ -1,9 +1,14 @@
 ---
 title: Performance Guidance for Application Virtualization 5.1
 description: Performance Guidance for Application Virtualization 5.1
-ms.assetid: 5f2643c7-5cf7-4a29-adb7-45bf9f5b0364
 author: jamiejdt
+ms.assetid: 5f2643c7-5cf7-4a29-adb7-45bf9f5b0364
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Performance Guidance for Application Virtualization 5.1
 

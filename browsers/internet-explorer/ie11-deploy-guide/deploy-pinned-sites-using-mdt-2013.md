@@ -2,7 +2,7 @@
 description: You can pin websites to the Windows 8.1 taskbar for quick access using the Microsoft Deployment Toolkit (MDT) 2013.
 ms.assetid: 24f4dcac-9032-4fe8-bf6d-2d712d61cb0c
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013 (Internet Explorer 11 for IT Pros)

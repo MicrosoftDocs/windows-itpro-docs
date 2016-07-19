@@ -2,9 +2,10 @@
 title: Security and data protection considerations for Windows To Go (Windows 10)
 description: One of the most important requirements to consider when you plan your Windows To Go deployment is to ensure that the data, content, and resources you work with in the Windows To Go workspace is protected and secure.
 ms.assetid: 5f27339f-6761-44f4-8c29-9a25cf8e75fe
-keywords: ["mobile, device, USB, secure, BitLocker"]
-ms.prod: W10
-ms.mktglfcycl: deploy
+keywords: mobile, device, USB, secure, BitLocker
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.pagetype: mobility, security
 ms.sitesec: library
 author: mtniehaus
 ---

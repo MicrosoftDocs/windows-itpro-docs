@@ -2,7 +2,12 @@
 title: Device reset (Surface Hub)
 description: You may wish to reset your Microsoft Surface Hub.
 ms.assetid: 44E82EEE-1905-464B-A758-C2A1463909FF
-keywords: ["reset Surface Hub"]
+redirect_url: https://technet.microsoft.com/en-us/itpro/surface-hub/device-reset-surface-hub
+keywords: reset Surface Hub
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
 ---
 
@@ -23,7 +28,10 @@ Initiating a reset will return the device to the last cumulative Windows update,
 -   MDM enrollment
 -   Domain join or Azure AD join information
 -   Local admins on the device
--   Configurations from MDM or the Settings app.
+-   Configurations from MDM or the Settings app
+
+**Important Note**</br>
+Performing a device reset may take up to 6 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
 
 After the reset, you'll be taken through the [first run program](first-run-program-surface-hub.md) again.
 

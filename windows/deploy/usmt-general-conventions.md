@@ -2,10 +2,10 @@
 title: General Conventions (Windows 10)
 description: General Conventions
 ms.assetid: 5761986e-a847-41bd-bf8e-7c1bd01acbc6
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: CFaw
+author: greg-lindsay
 ---
 
 # General Conventions

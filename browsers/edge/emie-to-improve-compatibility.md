@@ -14,8 +14,6 @@ title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
 **Applies to:**
 
 -   Windows 10
--   Windows 10 Mobile
-
 
 If you have specific web sites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the web sites will automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work properly with Microsoft Edge, you can set all intranet sites to automatically open using IE11.
 
@@ -28,7 +26,7 @@ Microsoft Edge doesn't support ActiveX controls, Browser Helper Objects, VBScrip
 
 ![](images/wedge.gif) **To add sites to your list**
 
-1.  In the Enterprise Mode Site List Manager tool, click **Add**.<p>If you already have an existing site list, you can import it into the tool. After it's in the tool, the xml updates the list, checking **Open in IE** for each site. For info about importing the site list, see [Import your Enterprise Mode site list to the Enterprise Mode Site List Manager](http://go.microsoft.com/fwlink/p/?LinkId=618322).<p>![Enterprise Mode Site List Manager with Open in IE box](images/emie_open_in_ie.png)
+1.  In the Enterprise Mode Site List Manager, click **Add**.<p>If you already have an existing site list, you can import it into the tool. After it's in the tool, the xml updates the list, checking **Open in IE** for each site. For info about importing the site list, see [Import your Enterprise Mode site list to the Enterprise Mode Site List Manager](http://go.microsoft.com/fwlink/p/?LinkId=618322).<p>![Enterprise Mode Site List Manager with Open in IE box](images/emie_open_in_ie.png)
 
 2.  Type or paste the URL for the website that’s experiencing compatibility problems, like *&lt;domain&gt;*.com or *&lt;domain&gt;*.com/*&lt;path&gt;* into the **URL** box. <p>You don’t need to include the `http://` or `https://` designation. The tool will automatically try both versions during validation.
 

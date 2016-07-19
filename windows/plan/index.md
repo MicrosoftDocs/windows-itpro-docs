@@ -2,8 +2,8 @@
 title: Plan for Windows 10 deployment (Windows 10)
 description: Windows 10 provides new deployment capabilities, scenarios, and tools by building on technologies introduced in Windows 7, and Windows 8.1, while at the same time introducing new Windows as a service concepts to keep the operating system up to date.
 ms.assetid: 002F9B79-B50F-40C5-A7A5-0B4770E6EC15
-keywords: ["deploy", "upgrade", "update", "configure"]
-ms.prod: W10
+keywords: deploy, upgrade, update, configure
+ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 author: TrudyHa
@@ -16,12 +16,11 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 |Topic |Description |
 |------|------------|
 |[Change history for Plan for Windows 10 deployment](change-history-for-plan-for-windows-10-deployment.md) |This topic lists new and updated topics in the Plan for Windows 10 deployment documentation for [Windows 10 and Windows 10 Mobile](../index.md). |
-|[Windows 10 servicing options](windows-10-servicing-options.md) |Windows 10 provides a new model for organizations to deploy and upgrade Windows by providing updates to features and capabilities through a continual process. |
+|[Windows 10 servicing overview](windows-10-servicing-options.md) |Windows 10 provides a new model for organizations to deploy and upgrade Windows by providing updates to features and capabilities through a continual process. |
 |[Windows 10 deployment considerations](windows-10-deployment-considerations.md) |There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications. |
 |[Windows 10 compatibility](windows-10-compatibility.md) |Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10. |
 |[Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md) |There are specific infrastructure requirements to deploy and manage Windows 10 that should be in place prior to significant Windows 10 deployments within your organization. |
 |[Windows Update for Business](windows-update-for-business.md) |Get an overview of how you can implement and deploy a Windows Update for Business solution and how to maintain enrolled systems. |
-|[Guidance for education environments](windows-10-guidance-for-education-environments.md) |Find resources to help you plan your deployment of Windows 10 to desktops, laptops, tablets, and other devices in educational institutions. |
 |[Windows To Go: feature overview](windows-to-go-overview.md) |Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs. |
 |[Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) |The Microsoft® Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system. |
 

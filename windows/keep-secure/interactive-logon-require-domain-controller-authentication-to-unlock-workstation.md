@@ -2,23 +2,21 @@
 title: Interactive logon Require Domain Controller authentication to unlock workstation (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Interactive logon Require Domain Controller authentication to unlock workstation security policy setting.
 ms.assetid: 97618ed3-e946-47db-a212-b5e7a4fc6ffc
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Interactive logon: Require Domain Controller authentication to unlock workstation
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Interactive logon: Require Domain Controller authentication to unlock workstation** security policy setting.
 
 ## Reference
-
 
 Unlocking a locked device requires logon information. For domain accounts, the **Interactive logon: Require Domain Controller authentication to unlock workstation** policy setting determines whether it is necessary to contact a domain controller to unlock a device. Enabling this policy setting requires a domain controller to authenticate the domain account that is being used to unlock the device. Disabling this policy setting allows a user to unlock the device without the computer verifying the logon information with a domain controller. However, if [Interactive logon: Number of previous logons to cache (in case domain controller is not available)](interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available.md) is set to a value greater than zero, the user's cached credentials will be used to unlock the system.
 
@@ -31,9 +29,7 @@ It is advisable to set **Interactive logon: Require Domain Controller authentica
 ### Possible values
 
 -   Enabled
-
 -   Disabled
-
 -   Not defined
 
 ### Best practices
@@ -48,49 +44,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Disabled| 
+| DC Effective Default Settings | Disabled| 
+| Member Server Effective Default Settings | Disabled| 
+| Client Computer Effective Default Settings | Disabled| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -108,7 +71,6 @@ This policy setting can be configured by using the Group Policy Management Conso
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
@@ -125,14 +87,4 @@ When the console on a device is locked by a user or automatically by a screen-sa
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

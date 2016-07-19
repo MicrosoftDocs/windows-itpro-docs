@@ -1,9 +1,14 @@
 ---
 title: About App-V 5.0 SP3
 description: About App-V 5.0 SP3
-ms.assetid: 67b5268b-edc1-4027-98b0-b3937dd70a6b
 author: jamiejdt
+ms.assetid: 67b5268b-edc1-4027-98b0-b3937dd70a6b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About App-V 5.0 SP3
 
@@ -197,7 +202,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tbody>
 </table>
 <p> </p></li>
-<li><p>If you are upgrading the App-V Server from App-V SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](#bkmk-check-reg-key-svr).</p></li>
+<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](#bkmk-check-reg-key-svr).</p></li>
 <li><p>Follow the steps in [How to Deploy the App-V 5.0 Server](how-to-deploy-the-app-v-50-server-50sp3.md).</p></li>
 </ol></td>
 </tr>

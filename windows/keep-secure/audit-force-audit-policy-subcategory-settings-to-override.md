@@ -2,23 +2,21 @@
 title: Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings security policy setting.
 ms.assetid: 8ddc06bc-b6d6-4bac-9051-e0d77035bd4e
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** security policy setting.
 
 ## Reference
-
 
 You can manage your audit policy in a more precise way by using audit policy subcategories.
 
@@ -27,7 +25,6 @@ There are over 40 auditing subcategories that provide precise details about acti
 ### Possible values
 
 -   Enabled
-
 -   Disabled
 
 ### Best practices
@@ -42,49 +39,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Not defined | 
+| Stand-Alone Server Default Settings | Enabled |
+| DC Effective Default Settings | Enabled |
+| Member Server Effective Default Settings | Enabled | 
+| Client Computer Effective Default Settings | Enabled | 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -108,7 +72,6 @@ You can use auditpol.exe to display and manage audit policies from a command pro
 
 ## Security considerations
 
-
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
 ### Vulnerability
@@ -121,23 +84,12 @@ Enable audit policy subcategories as needed to track specific events.
 
 ### Potential impacts
 
-If you attempt to modify an audit setting by using Group Policy after enabling this setting through the command-line tools, the Group Policy audit setting is ignored in favor of the custom policy setting. To modify audit settings by using Group Policy, you must first disable the **SCENoApplyLegacyAuditPolicy** key.
-
-**Important**  
-Be very cautious about audit settings that can generate a large volume of traffic. For example, if you enable success or failure auditing for all of the Privilege Use subcategories, the high volume of audit events that are generated can make it difficult to find other types of entries in the security event log. Such a configuration could also have a significant impact on system performance.
-
+If you attempt to modify an audit setting by using Group Policy after enabling this setting through the command-line tools, the Group Policy audit setting is ignored in favor of the custom policy setting. To modify audit settings by using Group Policy, you must first disable the 
+**SCENoApplyLegacyAuditPolicy** key.
+> **Important:**  Be very cautious about audit settings that can generate a large volume of traffic. For example, if you enable success or failure auditing for all of the Privilege Use subcategories, the high volume of audit events that are generated can make it difficult to find other types of entries in the security event log. Such a configuration could also have a significant impact on system performance.
  
-
 ## Related topics
 
-
-[Security Options](security-options.md)
-
+- [Security Options](security-options.md)
  
-
  
-
-
-
-
-

@@ -1,9 +1,14 @@
 ---
 title: Overview of MED-V
 description: Overview of MED-V
-ms.assetid: 393daa9b-2d76-43e1-861a-9d8c00f68cf6
 author: jamiejdt
+ms.assetid: 393daa9b-2d76-43e1-861a-9d8c00f68cf6
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Overview of MED-V
 

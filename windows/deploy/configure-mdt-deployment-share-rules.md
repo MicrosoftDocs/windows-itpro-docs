@@ -2,33 +2,28 @@
 title: Configure MDT deployment share rules (Windows 10)
 description: In this topic, you will learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine.
 ms.assetid: b5ce2360-33cc-4b14-b291-16f75797391b
-keywords: ["rules, configuration, automate, deploy"]
-ms.prod: W10
+keywords: rules, configuration, automate, deploy
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: mdt
 author: mtniehaus
 ---
 
 # Configure MDT deployment share rules
 
-
 In this topic, you will learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine. The rules engine in MDT is powerful: most of the settings used for operating system deployments are retrieved and assigned via the rules engine. In its simplest form, the rules engine is the CustomSettings.ini text file.
 
 ## <a href="" id="sec01"></a>Assign settings
 
-
 When using MDT, you can assign setting in three distinct ways:
-
 -   You can pre-stage the information before deployment.
-
 -   You can prompt the user or technician for information.
-
 -   You can have MDT generate the settings automatically.
 
 In order illustrate these three options, let's look at some sample configurations.
 
 ## <a href="" id="sec02"></a>Sample configurations
-
 
 Before adding the more advanced components like scripts, databases, and web services, consider the commonly used configurations below; they demonstrate the power of the rules engine.
 
@@ -75,12 +70,10 @@ OSDComputerName=PC-%SerialNumber%
 ```
 
 In this sample, you configure the rules to set the computer name to a prefix (PC-) and then the serial number. If the serial number of the machine is CND0370RJ7, the preceding configuration sets the computer name to PC-CND0370RJ7.
-
 **Note**  
+
 Be careful when using the serial number to assign computer names. A serial number can contain more than 15 characters, but the Windows setup limits a computer name to 15 characters.
-
  
-
 ### Generate a limited computer name based on a serial number
 
 To avoid assigning a computer name longer than 15 characters, you can configure the rules in more detail by adding VBScript functions, as follows:
@@ -112,7 +105,6 @@ MachineObjectOU=OU=Laptops,OU=Contoso,DC=contoso,DC=com
 
 ## Related topics
 
-
 [Set up MDT for BitLocker](set-up-mdt-2013-for-bitlocker.md)
 
 [Configure MDT for UserExit scripts](configure-mdt-2013-for-userexit-scripts.md)
@@ -126,12 +118,3 @@ MachineObjectOU=OU=Laptops,OU=Contoso,DC=contoso,DC=com
 [Use web services in MDT](use-web-services-in-mdt-2013.md)
 
 [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt-2013.md)
-
- 
-
- 
-
-
-
-
-

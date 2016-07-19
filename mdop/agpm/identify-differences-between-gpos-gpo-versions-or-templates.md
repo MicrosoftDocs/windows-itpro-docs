@@ -1,9 +1,14 @@
 ---
 title: Identify Differences Between GPOs, GPO Versions, or Templates
 description: Identify Differences Between GPOs, GPO Versions, or Templates
-ms.assetid: 6320afc4-af81-47e8-9f4c-463ff99d5a53
 author: jamiejdt
+ms.assetid: 6320afc4-af81-47e8-9f4c-463ff99d5a53
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Identify Differences Between GPOs, GPO Versions, or Templates
 

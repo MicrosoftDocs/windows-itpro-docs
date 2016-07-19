@@ -1,9 +1,14 @@
 ---
 title: How to Delete a Package Version
 description: How to Delete a Package Version
-ms.assetid: a55adb9d-ffa6-4df3-a2d1-5e0c73c35e1b
 author: jamiejdt
+ms.assetid: a55adb9d-ffa6-4df3-a2d1-5e0c73c35e1b
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Delete a Package Version
 

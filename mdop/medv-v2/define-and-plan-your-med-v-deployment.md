@@ -1,9 +1,14 @@
 ---
 title: Define and Plan your MED-V Deployment
 description: Define and Plan your MED-V Deployment
-ms.assetid: a90945cc-dc37-4548-963d-e0c6f8ba0467
 author: jamiejdt
+ms.assetid: a90945cc-dc37-4548-963d-e0c6f8ba0467
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Define and Plan your MED-V Deployment
 

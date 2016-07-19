@@ -2,8 +2,13 @@
 title: Set up Microsoft Surface Hub
 description: Set up instructions for Surface Hub include a setup worksheet, and a walkthrough of the first-run program.
 ms.assetid: 4D1722BC-704D-4471-BBBE-D0500B006221
-keywords: ["set up instructions", "Surface Hub", "setup worksheet", "first-run program"]
+keywords: set up instructions, Surface Hub, setup worksheet, first-run program
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Set up Microsoft Surface Hub

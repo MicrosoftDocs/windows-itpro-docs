@@ -1,9 +1,14 @@
 ---
 title: Create a Template
 description: Create a Template
-ms.assetid: 6992bd55-4a4f-401f-9815-c468bac598ef
 author: jamiejdt
+ms.assetid: 6992bd55-4a4f-401f-9815-c468bac598ef
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Create a Template
 

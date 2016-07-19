@@ -2,30 +2,27 @@
 title: Network access Shares that can be accessed anonymously (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Network access Shares that can be accessed anonymously security policy setting.
 ms.assetid: f3e4b919-8279-4972-b415-5f815e2f0a1a
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network access: Shares that can be accessed anonymously
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Shares that can be accessed anonymously** security policy setting.
 
 ## Reference
 
-
 This policy setting determines which shared folders can be accessed by anonymous users.
 
 ### Possible values
 
 -   User-defined list of shared folders
-
 -   Not Defined
 
 ### Best practices
@@ -40,49 +37,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or GPO</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DC Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or GPO | Default value |
+| - | - |
+| Default Domain Policy| Not defined| 
+| Default Domain Controller Policy | Not defined| 
+| Stand-Alone Server Default Settings | Not defined| 
+| DC Effective Default Settings | Not defined| 
+| Member Server Effective Default Settings | Not defined| 
+| Client Computer Effective Default Settings | Not defined| 
  
-
 ## Policy management
-
 
 This section describes features and tools that are available to help you manage this policy.
 
@@ -91,7 +55,6 @@ This section describes features and tools that are available to help you manage 
 None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -109,14 +72,4 @@ There should be little impact because this is the default configuration. Only au
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

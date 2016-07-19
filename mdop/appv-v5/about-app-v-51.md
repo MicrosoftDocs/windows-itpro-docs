@@ -1,9 +1,14 @@
 ---
 title: About App-V 5.1
 description: About App-V 5.1
-ms.assetid: 35bc9908-d502-4a9c-873f-8ee17b6d9d74
 author: jamiejdt
+ms.assetid: 35bc9908-d502-4a9c-873f-8ee17b6d9d74
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # About App-V 5.1
 
@@ -63,7 +68,7 @@ See the following links for the App-V 5.1 software prerequisites and supported c
 ## <a href="" id="bkmk-migrate-to-51"></a>Migrating to App-V 5.1
 
 
-Use the following information to upgrade to App-V 5.1 from earlier versions. See [Migrating from a Previous Version](migrating-from-a-previous-version-app-v-50.md) for more information.
+Use the following information to upgrade to App-V 5.1 from earlier versions. See [Migrating to App-V 5.1 from a Previous Version](migrating-to-app-v-51-from-a-previous-version.md) for more information.
 
 ### Before you start the upgrade
 
@@ -90,7 +95,7 @@ Review the following information before you start the upgrade:
 </ol>
 <div class="alert">
 <strong>Note</strong>  
-<p>To use the App-V client user interface, download the existing version from [Application Virtualization 5.0 Client UI Application](http://www.microsoft.com/download/details.aspx?id=41186).</p>
+<p>Prior to App-V 5.0 SP2, the Client Management User Interface (UI) was provided with the App-V Client installation. For App-V 5.0 SP2 installations (or later), you can use the Client Management UI by downloading from [Application Virtualization 5.0 Client UI Application](http://www.microsoft.com/download/details.aspx?id=41186).</p>
 </div>
 <div>
  
@@ -98,7 +103,7 @@ Review the following information before you start the upgrade:
 </tr>
 <tr class="even">
 <td align="left"><p>Upgrading from App-V 4.x</p></td>
-<td align="left"><p>For more information, see:</p>
+<td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V 5.1. For more information, see:</p>
 <ul>
 <li><p>“Differences between App-V 4.6 and App-V 5.0” in [About App-V 5.0](about-app-v-50.md)</p></li>
 <li><p>[Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v.md)</p></li>
@@ -147,7 +152,35 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 <div>
  
 </div></td>
-<td align="left"><p>See [How to Deploy the App-V 5.0 Server](how-to-deploy-the-app-v-50-server-50sp3.md)</p></td>
+<td align="left"><p>Follow these steps:</p>
+<ol>
+<li><p>Do one of the following, depending on the method you are using to upgrade the Management database and/or Reporting database:</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Database upgrade method</th>
+<th align="left">Step</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Windows Installer</p></td>
+<td align="left"><p>Skip this step and go to step 2, “If you are upgrading the App-V Server...”</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>SQL scripts</p></td>
+<td align="left"><p>Follow the steps in [How to Deploy the App-V Databases by Using SQL Scripts](how-to-deploy-the-app-v-databases-by-using-sql-scripts.md).</p></td>
+</tr>
+</tbody>
+</table>
+<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](check-reg-key-svr.md).</p></li>
+<li><p>Follow the steps in [How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md)</p></li>
+<p> </p></li>
+</ol></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Step 2: Upgrade the App-V Sequencer.</p></td>
@@ -174,7 +207,7 @@ App-V 5.1 packages are exactly the same as App-V 5.0 packages. There has been no
 ## <a href="" id="bkmk-whatsnew"></a>What’s New in App-V 5.1
 
 
-These sections are for users who are already familiar with App-V and want to know what has changed in App-V 5.1. If you are not already familiar with App-V, you should start by reading [Planning for App-V 5.0](planning-for-app-v-50-rc.md).
+These sections are for users who are already familiar with App-V and want to know what has changed in App-V 5.1. If you are not already familiar with App-V, you should start by reading [Planning for App-V 5.1](planning-for-app-v-51.md).
 
 ### <a href="" id="bkmk-win10support"></a>App-V support for Windows 10
 

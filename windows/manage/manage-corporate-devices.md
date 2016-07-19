@@ -3,9 +3,10 @@ title: Manage corporate devices (Windows 10)
 description: You can use the same management tools to manage all device types running Windows 10 desktops, laptops, tablets, and phones.
 ms.assetid: 62D6710C-E59C-4077-9C7E-CE0A92DFC05D
 keywords: ["MDM", "device management"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: devices
 author: jdeckerMS
 ---
 
@@ -96,7 +97,7 @@ For more information about the MDM protocols, see [Mobile device management](htt
 
 [How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627898.aspx)
 
-[Windows 10, Azure AD and Microsoft Intune: Automatic MDM Enrollment](http://go.microsoft.com/fwlink/p/?LinkId=623321)
+[Azure AD, Microsoft Intune and Windows 10 - Using the cloud to modernize enterprise mobility](https://blogs.technet.microsoft.com/enterprisemobility/2015/06/12/azure-ad-microsoft-intune-and-windows-10-using-the-cloud-to-modernize-enterprise-mobility/)
 
 [Microsoft Intune End User Enrollment Guide](http://go.microsoft.com/fwlink/p/?LinkID=617169)
 
@@ -116,6 +117,8 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 
 
 [New policies for Windows 10](new-policies-for-windows-10.md)
+
+[Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 
 [Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
 

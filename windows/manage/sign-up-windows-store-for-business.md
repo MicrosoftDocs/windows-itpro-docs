@@ -2,10 +2,12 @@
 title: Sign up for Windows Store for Business (Windows 10)
 description: Before you sign up for Windows Store for Business, at a minimum, you'll need an Azure Active Directory (AD) account for your organization, and you'll need to be the global administrator for your organization.
 ms.assetid: 296AAC02-5C79-4999-B221-4F5F8CEA1F12
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Sign up for Windows Store for Business
@@ -33,7 +35,7 @@ Before signing up for the Store for Business, make sure you're the global admini
 
     -   If you already have an Azure AD directory, you'll [sign in to Store for Business](#sign-in), and then accept Store for Business terms.
 
-    ![](images/wsfb-landing.png)
+    ![Image showing Windows Store for Business page with invitation to sign up, or sign in.](images/wsfb-landing.png)
 
     **To sign up for Azure AD accounts through Office 365 for Business**
 
@@ -43,43 +45,43 @@ Before signing up for the Store for Business, make sure you're the global admini
 
         Type the required info and click **Next.**
 
-        ![](images/wsfb-onboard-1.png)
+        ![Image showing Welcome page for sign up process.](images/wsfb-onboard-1.png)
 
     -   Step 2: Create an ID.
 
         We'll use info you provided on the previous page to build your user ID. Check the info and click **Next**.
 
-        ![](images/wsfb-onboard-2.png)
+        ![Image showing Create your user ID page for sign up process.](images/wsfb-onboard-2.png)
 
     -   Step 3: You're in.
 
         Let us know how you'd like to receive a verification code, and click either **Text me**, or **Call me**. We'll send you a verification code
 
-        ![](images/wsfb-onboard-3.png)
+        ![Image showing confirmation page as part of sign up process.](images/wsfb-onboard-3.png)
 
     -   Verification.
 
         Type your verification code and click **Create my account**.
 
-        ![](images/wsfb-onboard-4.png)
+        ![Image showing verification code step.](images/wsfb-onboard-4.png)
 
     -   Save this info.
 
         Be sure to save the portal sign-in page and your user ID info. Click **You're ready to go**.
 
-        ![](images/wsfb-onboard-5.png)
+        ![Image showing sign-in page and user ID for Windows Store for Business. ](images/wsfb-onboard-5.png)
 
     -   At this point, you'll have an Azure AD directory created with one user account. That user account is the global administrator. You can use that account to sign in to Store for Business.
 
 2.  <a href="" id="sign-in"></a>Sign in with your Azure AD account.
 
-    ![](images/wsfb-onboard-7.png)
+    ![Image showing sign-in page for Windows Store for Business.](images/wsfb-onboard-7.png)
 
 3.  <a href="" id="accept-terms"></a>Read through and accept Store for Business terms.
 
 4.  Welcome to the Store for Business. Click **Next** to continue.
 
-    ![](images/wsfb-firstrun.png)
+    ![Image showing welcome message for Windows Store for Business.](images/wsfb-firstrun.png)
 
 ### Next steps
 

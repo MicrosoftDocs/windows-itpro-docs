@@ -1,9 +1,14 @@
 ---
 title: Applications Results Pane Columns
 description: Applications Results Pane Columns
-ms.assetid: abae5ce2-40df-4f47-8062-f5eb6295c88c
 author: jamiejdt
+ms.assetid: abae5ce2-40df-4f47-8062-f5eb6295c88c
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Applications Results Pane Columns
 

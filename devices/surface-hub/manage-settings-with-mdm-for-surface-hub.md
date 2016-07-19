@@ -2,8 +2,13 @@
 title: Manage settings with an MDM provider (Surface Hub)
 description: Microsoft Surface Hub provides an enterprise management solution to help IT administrators manage policies and business applications on these devices using a mobile device management (MDM) solution.
 ms.assetid: 18EB8464-6E22-479D-B0C3-21C4ADD168FE
-keywords: ["mobile device managemen", "MDM", "manage policies"]
+keywords: mobile device management, MDM, manage policies
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: surfacehub, mobility
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Manage settings with an MDM provider (Surface Hub)
@@ -26,7 +31,7 @@ If you joined your Surface Hub to an Azure Active Directory (Azure AD) subscript
 
 Alternatively, the device can be enrolled like any other Windows device by going to **Settings** &gt; **Accounts** &gt; **Work access**.
 
-![image showing enroll in device maagement page. ](images/managesettingsmdm-enroll.png)
+![Image showing enroll in device maagement page.](images/managesettingsmdm-enroll.png)
 
 ### Manage a device through MDM
 

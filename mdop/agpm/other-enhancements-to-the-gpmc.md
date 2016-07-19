@@ -1,9 +1,14 @@
 ---
 title: Other Enhancements to the GPMC
 description: Other Enhancements to the GPMC
-ms.assetid: ef344101-17e1-4e06-9dc8-2f20ca796774
 author: jamiejdt
+ms.assetid: ef344101-17e1-4e06-9dc8-2f20ca796774
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Other Enhancements to the GPMC
 

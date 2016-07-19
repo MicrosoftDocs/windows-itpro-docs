@@ -1,9 +1,14 @@
 ---
 title: Microsoft Application Virtualization Client Management Help
 description: Microsoft Application Virtualization Client Management Help
-ms.assetid: 449eebda-70eb-48b7-855a-db965a680923
 author: jamiejdt
+ms.assetid: 449eebda-70eb-48b7-855a-db965a680923
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # Microsoft Application Virtualization Client Management Help
 

@@ -2,10 +2,12 @@
 title: Distribute apps with a management tool (Windows 10)
 description: You can configure a mobile device management (MDM) tool to synchronize your Store for Business inventory. Store for Business management tool services work with MDM tools to manage content.
 ms.assetid: 006F5FB1-E688-4769-BD9A-CFA6F5829016
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Distribute apps with a management tool
@@ -20,7 +22,7 @@ You can configure a mobile device management (MDM) tool to synchronize your Stor
 
 Your MDM tool needs to be installed and configured in Azure AD, in the same Azure AD directory used with Windows Store for Business.
 
-In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Store for Business. This allows the MDM tool to call Store for Business management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md).
+In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Store for Business. This allows the MDM tool to call Store for Business management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md) and [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 Store for Business services provide:
 
@@ -47,21 +49,21 @@ If your vendor doesn’t support the ability to synchronize applications from th
 
 This diagram shows how you can use a management tool to distribute offline-licensed app to employees in your organization. Once synchronized from Store for Business, management tools can use the Windows Management framework to distribute applications to devices.
 
-![](images/wsfb-offline-distribute-mdm.png)
+![Image showing flow for distributing offline-licensed app from Windows Store for Business to employees in your organization.](images/wsfb-offline-distribute-mdm.png)
 
 ## Distribute online-licensed apps
 
 
 This diagram shows how you can use a management tool to distribute an online-licensed app to employees in your organization. Once synchronized from Store for Business, management tools use the Windows Management framework to distribute applications to devices. For Online licensed applications, the management tool calls back in to Store for Business management services to assign an application prior to issuing the policy to install the application.
 
-![](images/wsfb-online-distribute-mdm.png)
+![Image showing flow for distributing online-licensed app from Wndows Store for Business.](images/wsfb-online-distribute-mdm.png)
 
 ## Related topics
 
 
 [Configure MDM Provider](../manage/configure-mdm-provider-windows-store-for-business.md)
 
-[Manage apps you purchased from the Windows Store for Business with Micosoft InTune](https://technet.microsoft.com/library/mt676514.aspx)
+[Manage apps you purchased from the Windows Store for Business with Microsoft InTune](https://technet.microsoft.com/library/mt676514.aspx)
 
  
 

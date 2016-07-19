@@ -1,9 +1,14 @@
 ---
 title: Determining why a Device Receives a Noncompliance Message
 description: Determining why a Device Receives a Noncompliance Message
-ms.assetid: 793df330-a0ee-4759-b53a-95618ac74428
 author: jamiejdt
+ms.assetid: 793df330-a0ee-4759-b53a-95618ac74428
+ms.pagetype: mdop, security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Determining why a Device Receives a Noncompliance Message
 

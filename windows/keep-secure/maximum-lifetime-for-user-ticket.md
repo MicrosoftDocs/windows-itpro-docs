@@ -2,30 +2,27 @@
 title: Maximum lifetime for user ticket (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum lifetime for user ticket policy setting.
 ms.assetid: bcb4ff59-334d-4c2f-99af-eca2b64011dc
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Maximum lifetime for user ticket
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for user ticket** policy setting.
 
 ## Reference
 
-
 The **Maximum lifetime for user ticket** policy setting determines the maximum amount of time (in hours) that a user’s ticket-granting ticket can be used. When a user’s ticket-granting ticket expires, a new one must be requested or the existing one must be renewed.
 
 The possible values for this Group Policy setting are:
 
 -   A user-defined number of hours from 0 through 99,999
-
 -   Not defined
 
 If the value for this policy setting is too high, users might be able to access network resources outside of their logon hours, or users whose accounts have been disabled might be able to continue to access network services by using valid service tickets that were issued before their account was disabled. If the value is set to 0, ticket-granting tickets never expire.
@@ -42,49 +39,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\K
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server Type or GPO</th>
-<th align="left">Default Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default Domain Policy</p></td>
-<td align="left"><p>10 hours</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default Domain Controller Policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-Alone Server Default Settings</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain Controller Effective Default Settings</p></td>
-<td align="left"><p>10 hours</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member Server Effective Default Settings</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Client Computer Effective Default Settings</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server Type or GPO | Default Value |
+| - | - |
+| Default Domain Policy| 10 hours| 
+| Default Domain Controller Policy| Not defined| 
+| Stand-Alone Server Default Settings | Not applicable| 
+| Domain Controller Effective Default Settings | 10 hours| 
+| Member Server Effective Default Settings | Not applicable| 
+| Client Computer Effective Default Settings | Not applicable| 
  
-
 ## Policy management
-
 
 This section describes features, tools, and guidance to help you manage this policy.
 
@@ -99,17 +63,13 @@ Client devices will get the new setting during the next scheduled and successful
 Settings are applied in the following order through a Group Policy Object (GPO), which will overwrite settings on the local computer at the next Group Policy update:
 
 1.  Local policy settings
-
 2.  Site policy settings
-
 3.  Domain policy settings
-
 4.  OU policy settings
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -127,14 +87,4 @@ Reducing this setting from the default value reduces the likelihood that the tic
 
 ## Related topics
 
-
-[Kerberos Policy](kerberos-policy.md)
-
- 
-
- 
-
-
-
-
-
+- [Kerberos Policy](kerberos-policy.md)

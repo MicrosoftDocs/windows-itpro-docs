@@ -2,25 +2,24 @@
 title: Network security Allow LocalSystem NULL session fallback (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Network security Allow LocalSystem NULL session fallback security policy setting.
 ms.assetid: 5b72edaa-bec7-4572-b6f0-648fc38f5395
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.pagetype: security
 author: brianlic-msft
 ---
 
 # Network security: Allow LocalSystem NULL session fallback
 
-
 **Applies to**
-
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Network security: Allow LocalSystem NULL session fallback** security policy setting.
 
 ## Reference
 
-
-This policy affects session security during the authentication process between devices running Windows Server 2008 R2 and Windows 7 and later and those devices running earlier versions of the Windows operating system. For computers running Windows Server 2008 R2 and Windows 7 and later, services running as Local System require a service principal name (SPN) to generate the session key. However, if [Network security: Allow Local System to use computer identity for NTLM](network-security-allow-local-system-to-use-computer-identity-for-ntlm.md) is set to disabled, services running as Local System will fall back to using NULL session authentication when they transmit data to servers running versions of Windows earlier than Windows Vista or Windows Server 2008. NULL session does not establish a unique session key for each authentication; and thus, it cannot provide integrity or confidentiality protection. The setting **Network security: Allow LocalSystem NULL session fallback** determines whether services that request the use of session security are allowed to perform signature or encryption functions with a well-known key for application compatibility.
+This policy affects session security during the authentication process between devices running Windows Server 2008 R2 and Windows 7 and later and those devices running earlier versions of the Windows operating system. For computers running Windows Server 2008 R2 and Windows 7 and later, services running as Local System require a service principal name (SPN) to generate the session key. However, if [Network security: Allow Local System to use computer identity for NTLM](network-security-allow-local-system-to-use-computer-identity-for-ntlm.md) is set to disabled, services running as Local 
+System will fall back to using NULL session authentication when they transmit data to servers running versions of Windows earlier than Windows Vista or Windows Server 2008. NULL session does not establish a unique session key for each authentication; and thus, it cannot provide integrity or confidentiality protection. The setting **Network security: Allow LocalSystem NULL session fallback** determines whether services that request the use of session security are allowed to perform signature or encryption functions with a well-known key for application compatibility.
 
 ### Possible values
 
@@ -30,7 +29,8 @@ This policy affects session security during the authentication process between d
 
 -   **Disabled**
 
-    When a service running as Local System connects with a NULL session, session security will be unavailable. Calls seeking encryption or signing will fail. This setting is more secure, but at the risk of degrading application incompatibility. Calls that are using the device identity instead of a NULL session will still have full use of session security.
+    When a service running as Local System connects with a NULL session, session security will be unavailable. Calls seeking encryption or signing will fail. This setting is more secure, but at the risk of degrading application incompatibility. Calls that are using the device identity instead of a 
+    NULL session will still have full use of session security.
 
 -   Not defined. When this policy is not defined, the default takes effect. This is Enabled for versions of the Windows operating system earlier than Windows Server 2008 R2 and Windows 7, and it is Disabled otherwise.
 
@@ -46,49 +46,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Server type or Group Policy Object (GPO)</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Default domain policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default domain controller policy</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stand-alone server default settings</p></td>
-<td align="left"><p>Not defined</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Domain controller effective default settings</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Member server effective default settings</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Effective GPO default settings on client computers</p></td>
-<td align="left"><p>Not applicable</p></td>
-</tr>
-</tbody>
-</table>
-
+| Server type or Group Policy Object (GPO) | Default value |
+| - | - |
+| Default domain policy| Not defined| 
+| Default domain controller policy | Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings | Not applicable| 
+| Member server effective default settings | Not applicable |
+| Effective GPO default settings on client computers | Not applicable| 
  
-
 ## Security considerations
-
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
@@ -106,14 +73,4 @@ If you enable this policy, services that use NULL session with Local System coul
 
 ## Related topics
 
-
-[Security Options](security-options.md)
-
- 
-
- 
-
-
-
-
-
+- [Security Options](security-options.md)

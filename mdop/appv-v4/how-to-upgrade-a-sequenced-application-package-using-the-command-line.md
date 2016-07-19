@@ -1,9 +1,14 @@
 ---
 title: How to Upgrade a Sequenced Application Package Using the Command Line
 description: How to Upgrade a Sequenced Application Package Using the Command Line
-ms.assetid: 682fac46-c71d-4731-831b-81bfd5032764
 author: jamiejdt
+ms.assetid: 682fac46-c71d-4731-831b-81bfd5032764
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w8
 ---
+
 
 # How to Upgrade a Sequenced Application Package Using the Command Line
 

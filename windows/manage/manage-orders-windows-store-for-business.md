@@ -1,9 +1,12 @@
 ---
 title: Manage app orders in Windows Store for Business (Windows 10)
 description: You can view your order history with Windows Store for Business. 
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: store
+author: TrudyHa
+localizationpriority: high
 ---
 
 # Manage app orders in Windows Store for Business

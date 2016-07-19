@@ -2,7 +2,7 @@
 description: Use this guide to learn about the several options and processes you'll need to consider while you're planning for, deploying, and customizing Internet Explorer 11 for your employee's devices.
 ms.assetid: bddc2d97-c38d-45c5-9588-1f5bbff2e9c3
 author: eross-msft
-ms.prod: IE11
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 title: Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Explorer 11 for IT Pros)
@@ -26,11 +26,12 @@ Because this content isn't intended to be a step-by-step guide, not all of the s
 ## In this guide
 |Topic |Description |
 |------|------------|
+|[Change history for Internet Explorer 11](change-history-for-internet-explorer-11.md) |Lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10 and Windows 10 Mobile. |
 |[System requirements and language support for Internet Explorer 11 (IE11)](system-requirements-and-language-support-for-ie11.md) |IE11 is available for a number of systems and languages. This topic provides info about the minimum system requirements and language support. |
 |[List of updated features and tools - Internet Explorer 11 (IE11)](updated-features-and-tools-with-ie11.md) |IE11 includes several new features and tools. This topic includes high-level info about the each of them. |
 |[Install and Deploy Internet Explorer 11 (IE11)](install-and-deploy-ie11.md) |Use the topics in this section to learn how to customize your Internet Explorer installation package, how to choose the right method for installation, and how to deploy IE into your environment. You can also find more info about your virtualization options for legacy apps. |
 |[Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md) |Use IE to collect data on computers running Windows Internet Explorer 8 through IE11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades. |
-|[Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md) |Use the topics in this section to learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager tool in your company. |
+|[Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md) |Use the topics in this section to learn how to set up and use Enterprise Mode and the Enterprise Mode Site List Manager in your company. |
 |[Group Policy and Internet Explorer 11 (IE11)](group-policy-and-ie11.md) |Use the topics in this section to learn about Group Policy and how to use it to manage IE. |
 |[Manage Internet Explorer 11](manage-ie11-overview.md) |Use the topics in this section to learn about how to auto detect your settings, auto configure your configuration settings, and auto configure your proxy configuration settings for IE. |
 |[Troubleshoot Internet Explorer 11 (IE11)](troubleshoot-ie11.md) |Use the topics in this section to learn how to troubleshoot several of the more common problems experienced with IE. |

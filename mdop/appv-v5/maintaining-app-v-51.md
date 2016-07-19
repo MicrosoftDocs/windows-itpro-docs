@@ -1,9 +1,14 @@
 ---
 title: Maintaining App-V 5.1
 description: Maintaining App-V 5.1
-ms.assetid: 5abd17d3-e8af-4261-b914-741ae116b0e7
 author: jamiejdt
+ms.assetid: 5abd17d3-e8af-4261-b914-741ae116b0e7
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
 ---
+
 
 # Maintaining App-V 5.1
 

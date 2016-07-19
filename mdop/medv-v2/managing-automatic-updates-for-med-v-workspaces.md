@@ -1,9 +1,14 @@
 ---
 title: Managing Automatic Updates for MED-V Workspaces
 description: Managing Automatic Updates for MED-V Workspaces
-ms.assetid: 306f28a2-d653-480d-b737-4b8b3132de5d
 author: jamiejdt
+ms.assetid: 306f28a2-d653-480d-b737-4b8b3132de5d
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Managing Automatic Updates for MED-V Workspaces
 

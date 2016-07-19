@@ -1,9 +1,14 @@
 ---
 title: Creating a Windows Virtual PC Image for MED-V
 description: Creating a Windows Virtual PC Image for MED-V
-ms.assetid: fd7c0b1a-0769-4e7b-ad1a-dad19cca081f
 author: jamiejdt
+ms.assetid: fd7c0b1a-0769-4e7b-ad1a-dad19cca081f
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w7
 ---
+
 
 # Creating a Windows Virtual PC Image for MED-V
 

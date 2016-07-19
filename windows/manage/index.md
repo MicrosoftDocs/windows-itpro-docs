@@ -2,23 +2,21 @@
 title: Manage and update Windows 10 (Windows 10)
 description: Learn about managing and updating Windows 10.
 ms.assetid: E5716355-02AB-4B75-A962-14B1A7F7BDA0
-keywords: ["Windows 10", "MDM", "WSUS", "Windows update"]
-ms.prod: W10
+keywords: Windows 10, MDM, WSUS, Windows update
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.pagetype: security
 author: jdeckerMS
 ---
 
 # Manage and update Windows 10
 
-
 Learn about managing and updating Windows 10.
 
 ## In this section
 
-
 <table>
-
 <thead>
 <tr class="header">
 <th align="left">Topic</th>
@@ -59,7 +57,7 @@ Learn about managing and updating Windows 10.
 <td align="left"><p>Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md)</p></td>
+<td align="left"><p>[Windows 10 servicing options](introduction-to-windows-10-servicing.md)</p></td>
 <td align="left"><p>This article describes the new servicing options available in Windows 10, Windows 10 Mobile, and Windows 10 IoT Core (IoT Core) and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.</p></td>
 </tr>
 <tr class="even">
@@ -72,19 +70,8 @@ Learn about managing and updating Windows 10.
 </tr>
 </tbody>
 </table>
-
  
-
 ## Related topics
-
-
 [Windows 10 and Windows 10 Mobile](../index.md)
-
  
-
- 
-
-
-
-
-
+ [Learn how Microsoft does IT at the IT Showcase](https://www.microsoft.com/itshowcase)
