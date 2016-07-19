@@ -32,7 +32,6 @@
 ##### [Deploy your enterprise data protection (EDP) policy](deploy-edp-policy-using-intune.md)
 ##### [Create and deploy a VPN policy for enterprise data protection (EDP) using Microsoft Intune](create-vpn-and-edp-policy-using-intune.md)
 #### [Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md)
-#### [Create and verify an Encrypting File System (EFS) DRA certificate](create-and-verify-an-efs-dra-certificate.md)
 ### [General guidance and best practices for enterprise data protection (EDP)](guidance-and-best-practices-edp.md)
 #### [Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md)
 #### [Enlightened apps for use with enterprise data protection (EDP)](enlightened-microsoft-apps-and-edp.md)
