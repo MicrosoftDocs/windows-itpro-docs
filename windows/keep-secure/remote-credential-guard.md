@@ -49,7 +49,7 @@ You must enable Remote Credential Guard on the target device by using the regist
 You can add this by running the following from an elevated command prompt:
 
 ```
-reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 0 /t REG_DWORD`
+reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 0 /t REG_DWORD
 ```
 
 ## Using Remote Credential Guard
