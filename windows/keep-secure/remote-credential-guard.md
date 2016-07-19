@@ -94,7 +94,7 @@ mstsc.exe /remoteGuard
 
 - Remote Desktop Gateway is not compatible with Remote Credential Guard.
 
-- You cannot used saved or credentials that are different than yours. You must use the credentials of the user who is logged into the device.
+- You cannot used saved credentials or credentials that are different than yours. You must use the credentials of the user who is logged into the device.
 
 - Both the client and the server must be joined to the same domain or the domains must have a trust relationship.
 
