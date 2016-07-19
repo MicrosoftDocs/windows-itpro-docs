@@ -11,9 +11,9 @@ ms.pagetype: security
 author: iaanw
 ---
 
-# BLOCK AT FIRST SIGHT
+# Enable the Block at First Sight feature
 
-Block at First Seen (BAFS) is a feature of Windows Defender cloud protection that provides a way to detect and block new malware within seconds. 
+Block at First Sight (BAFS) is a feature of Windows Defender cloud protection that provides a way to detect and block new malware within seconds. 
 
 When a Windows Defender client encounters a suspicious but previously undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
 
@@ -40,7 +40,7 @@ This feature ensures the device checks in real time with the Microsoft Active Pr
 
 BAFS requires a number of Group Policy settings to be configured correctly or it will not work.
 
-** Configure pre-requisite cloud protection Group Policy settings:**
+**Configure pre-requisite cloud protection Group Policy settings:**
 
 1.  On your GP management machine, Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure and click **Edit**.
 
@@ -67,7 +67,7 @@ BAFS requires a number of Group Policy settings to be configured correctly or it
 
 
 
-** Enable Block at First Sight with Group Policy **
+**Enable Block at First Sight with Group Policy**
 
 1.  On your GP management machine, Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure and click **Edit**.
 
