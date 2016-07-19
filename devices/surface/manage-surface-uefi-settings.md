@@ -2,6 +2,7 @@
 title: Manage Surface UEFI settings (Surface)
 description: Use Surface UEFI settings to enable or disable devices or components, configure security settings, and adjust Surface device boot settings. 
 keywords: firmware, security, features, configure, hardware
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
