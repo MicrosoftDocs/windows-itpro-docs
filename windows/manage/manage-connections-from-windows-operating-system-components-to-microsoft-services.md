@@ -6,7 +6,7 @@ keywords: privacy, manage connections to Microsoft
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-LocalizationPriority: High
+localizationpriority: high
 author: brianlic-msft
 ---
 
