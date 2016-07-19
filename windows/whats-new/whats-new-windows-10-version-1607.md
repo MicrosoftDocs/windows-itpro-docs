@@ -42,8 +42,22 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 - Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
+
+### VPN 
+
+- The VPN client can integrate with the Conditional Access Framework, a cloud-pased policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
+- The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](../keep-secure/protect-enterprise-data-using-edp.md), previously known as Enterprise Data Protection.
+- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
+- Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
+
+
  
 ## Management
+
+### Use Remote Desktop Connection for PCs joined to Azure Active Directory
+
+From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is joined to Azure Active Directory (Azure AD). [Learn about the requirements and supported configurations.](../manage/connect-to-remote-aadj-pc.md)
+
 
 ### Taskbar configuration
 

@@ -10,7 +10,7 @@ ms.pagetype: security
 author: jdeckerMS
 ---
 
-# Prepare people to use Microsoft Passport
+# Prepare people to use Windows Hello
 
 **Applies to**
 -   Windows 10

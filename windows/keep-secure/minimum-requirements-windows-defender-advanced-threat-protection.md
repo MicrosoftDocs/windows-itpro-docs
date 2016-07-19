@@ -43,15 +43,4 @@ Internet connectivity on endpoints is also required. See [Configure Windows Defe
 
 Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10, but if it has been disabled you can turn it on by following the instructions in the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section.
 
-### Deployment channel operating system requirements
 
-You can choose to onboard endpoints with a scheduled Group Policy (GP) or System Center Configuration Manager (SCCM) update (using a configuration package that you download from the portal or during the service onboarding wizard), or by manually running a script to modify the registry.
-
-The following describes the minimum operating system or software version
-required for each deployment channel.
-
-Deployment channel | Minimum server requirements
-:---|:---
-Group Policy settings | Windows Server 2008 R2
-System Center Configuration Manager | SCCM 2012
-Manual (script) | No minimum requirements

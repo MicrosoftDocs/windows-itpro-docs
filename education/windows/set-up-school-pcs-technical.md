@@ -16,7 +16,7 @@ author: jdeckerMS
 
 
 
-The **Set up School PCs** app helps you set up new Windows 10 PCs that work great in your school by configuring shared PC mode, available in Windows 10, version 1607. **Set up School PCs** also configures school-specific settings and policies, described in this topic.
+The **Set up School PCs** app helps you set up new Windows 10 PCs that work great in your school by configuring shared PC mode, available in Windows 10, version 1607.  **Set up School PCs** also configures school-specific settings and policies, described in this topic.
 
 If your school uses Azure Active Directory (Azure AD) or Office 365, the **Set up School PCs** app will create a setup file that connects the computer to your subscription.  You can also use the app to set up school PCs that anyone can use, with or without Internet connectivity. 
 

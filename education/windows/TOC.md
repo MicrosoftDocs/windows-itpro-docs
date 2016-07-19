@@ -2,7 +2,7 @@
 ## [Change history for Windows 10 for Education](change-history-edu.md)
 ## [Setup options for Windows 10](set-up-windows-10.md)
 ### [Use the Set up School PCs app ](use-set-up-school-pcs-app.md)
-### [Technical reference for the Set up School PCs app )](set-up-school-pcs-technical.md)
+### [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md)
 ### [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md)
 ### [Provision student PCs with apps](set-up-students-pcs-with-apps.md)
 ## [Get Minecraft Education Edition](get-minecraft-for-education.md)
