@@ -1,7 +1,7 @@
 ---
-title: Use PowerShell cmdlets to configure and run Windows Defender in Windows 10
-description: In Windows 10, you can use PowerShell cmdlets to run scans, update definitions, and change settings in Windows Defender.
-keywords: scan, command line, mpcmdrun, defender
+title: Enable the Block at First Sight feature to detect malware within seconds
+description: In Windows 10 Anniversary Update the Block at First Sight feature determines and blocks new malware variants in seconds. You can enable the feature with Group Policy
+keywords: scan, BAFS, malware, first seen, first sight, cloud, MAPS, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -11,9 +11,16 @@ ms.pagetype: security
 author: iaanw
 ---
 
-# Enable the Block at First Sight feature
+# Block at First Sight
+
+**Applies to**
+-   Windows 10 Aniversary Update
 
 Block at First Sight (BAFS) is a feature of Windows Defender cloud protection that provides a way to detect and block new malware within seconds. 
+
+You can enable BAFS with Group Policy (GP) or individually on endpoints.
+
+## Backend procesing and near-instant determinations
 
 When a Windows Defender client encounters a suspicious but previously undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
 
@@ -24,17 +31,17 @@ If the BAFS feature is enabled on the client, the file will be locked by Windows
 The file-based determination typically takes 1 to 4 seconds.
 
 The following video describes how this feature works:
-<iframe src="https://osgwiki.com/images/d/de/Windows_Defender_-_Fast_Learning.mp4" width="640" height="360" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe> 
+<iframe src="https://tnstage.redmond.corp.microsoft.com/en-us/itpro/windows/keep-secure/media/Windows_Defender_-_Fast_Learning.mp4" width="640" height="360" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe> 
 
 
-> **Note:**&nbsp;&nbsp;Suspicious file downloads requiring additional back-end processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the back-end. Users will see a longer “Running security scan” message in the browser while the file is being uploaded, leading to slower download times for these files.
+> **Note:**&nbsp;&nbsp;Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to slowerr download times for some files.
 
 
-## ENABLE BLOCK AT FIRST SIGHT
+## Enable Block at First Sight
 
-### USE GROUP POLICY TO CONFIGURE BAFS
+### Use Group Policy to configure Block at First Sight
 
-You can use Group Policy to control whether Windows Defender will continue to lock a suspicious file until it is uploaded to the back-end.
+You can use GP to control whether Windows Defender will continue to lock a suspicious file until it is uploaded to the backend.
 
 This feature ensures the device checks in real time with the Microsoft Active Protection Service (MAPS) before allowing certain content to be run or accessed. If this feature is disabled, the check will not occur, which will lower the protection state of the device.
 
@@ -42,42 +49,45 @@ BAFS requires a number of Group Policy settings to be configured correctly or it
 
 **Configure pre-requisite cloud protection Group Policy settings:**
 
-1.  On your GP management machine, Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure and click **Edit**.
+1.  On your GP management machine, open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure, and click **Edit**.
 
-3.  In the **Group Policy Management Editor**, go to **Computer configuration**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies**, then **Administrative templates**.
+4.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender > MAPS** and configure the follow GPs:
+5.  Expand the tree to **Windows components > Windows Defender > MAPS** and configure the following GPs:
     
     1.  Double-click the **Join Microsoft MAPS** GP and set the option to **Enabled**. Click **OK**.
+    
     1.  Double-click the **Send file samples when further analysis is required** GP and set the option as **Enabled** and the additional options as either of the following:
     
         1. Send safe samples (1)
+        
         1. Send all samples (3)
 
         > **Note:**&nbsp;&nbsp;Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the "Block at First Sight" feature will not function.
 
     1. Click OK after both GPs have been set.
 
-1.  In the **Group Policy Management Editor**, expand the tree to **Windows components > Windows Defender > Real-time Protection**
+1.  In the **Group Policy Management Editor**, expand the tree to **Windows components > Windows Defender > Real-time Protection**:
     
     1.  Double-click the **Scan all downloaded files and attachments** GP and set the option to **Enabled**. Click **OK**.
+    
     1.  Double-click the **Turn off real-time protection** GP and set the option to **Disabled**. Click **OK**.
 
 
 
 **Enable Block at First Sight with Group Policy**
 
-1.  On your GP management machine, Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure and click **Edit**.
+1.  On your GP management machine, open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure, and click **Edit**.
 
-3.  In the **Group Policy Management Editor**, go to **Computer configuration**.
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies**, then **Administrative templates**.
+4.  Click **Policies** then **Administrative templates**.
 
 5.  Expand the tree through **Windows components > Windows Defender > MAPS**.
 
-1.  Double-click the **Configure the ‘Block at First Sight’ feature** and set the option to **Enabled**. Click Next Setting.
+1.  Double-click the **Configure the ‘Block at First Sight’ feature** and set the option to **Enabled**.
 
     > **Note:**&nbsp;&nbsp;The Block at First Sight feature will not function if the pre-requisite group policies have not been correctly set.
 
@@ -89,9 +99,9 @@ To configure un-managed clients that are running Windows 10 Anniversary Update, 
 
 1. Open Windows Defender settings:
 
-    a. Open the Windows Defender app and click Settings
+    a. Open the Windows Defender app and click **Settings**.
     
-    b. On the main Windows Setting page, click Update & Security and then Windows Defender.
+    b. On the main Windows Setting page, click **Update & Security** and then **Windows Defender88.
 
 2.	Switch **Cloud-based Protection** and **Automatic sample submission** to **On**.
 

@@ -31,6 +31,23 @@ Windows Defender provides the most protection when cloud-based protection is ena
 -   Reports and report management
 
 When you enable endpoint protection for your clients, it will install an additional management layer on Windows Defender to manage the in-box Windows Defender agent. While the client user interface will still appear as Windows Defender, the management layer for Endpoint Protection will be listed in the **Add/Remove Programs** control panel, though it will appear as if the full product is installed.
+
+
+### Compatibility with Windows Defender Advanced Threat Protection
+
+Windows Defender Advanced Threat Protection (ATP) is an additional service that helps enterprises to detect, investigate, and respond to advanced persistent threats on their network. 
+
+See the [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) topics for more information about the service.
+
+If you are enrolled in Windows Defender ATP, and you are not using Windows Defender as your real-time protection service on your endpoints, Windows Defender will automatically enter into a passive mode. 
+
+In passive mode, Windows Defender will continue to run (using the *msmpeng.exe* process), and will continue to be updated, however there will be no Windows Defender user interface, scheduled scans won’t run, and Windows Defender will not provide real-time protection from malware.
+
+You can [configure updates for Windows Defender](configure-windows-defender-in-windows-10.md), however you can't move Windows Defender into the normal active mode if your endpoints have an up-to-date third-party product providing real-time protection from malware.
+
+If you uninstall the other product, and choose to use Windows Defender to provide protection to your endpoints, Windows Defender will automatically return to its normal active mode.
+
+
  
 ### Minimum system requirements
 
