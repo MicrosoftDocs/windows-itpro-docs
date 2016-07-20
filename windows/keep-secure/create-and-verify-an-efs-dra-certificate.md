@@ -71,7 +71,7 @@ If you already have an EFS DRA certificate for your organization, you can skip c
     
     Where *&lt;encryptedfile.extension&gt;* is the name of your encrypted file. For example, corporatedata.docx.
 
-**To quickly recover WIP-protected desktop data after unenrollment**
+**To quickly recover WIP-protected desktop data after unenrollment**<br>
 It's possible that you might revoke data from an unenrolled device only to later want to restore it all. This can happen in the case of a missing device being returned or if an unenrolled employee enrolls again. If the employee enrolls again using the original user profile, and the revoked key store is still on the device, all of the revoked data can be restored at once, by following these steps.
 
 >**Important**<br>To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
