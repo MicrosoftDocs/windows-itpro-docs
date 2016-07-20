@@ -90,7 +90,7 @@ The PC must meet the following hardware and software requirements to use Credent
 <td>TPM 2.0</td>
 </tr>
 <tr>
-<td>Windows 10 version 1511</td>
+<td>Windows 10 version 1511 or later</td>
 <td>TPM 2.0 or TPM 1.2</td>
 </tr>
 </table>
@@ -113,7 +113,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>Virtual machine</p></td>
-<td align="left"><p>For PCs running Windows 10, version 1607, you can run Credential Guard on a generation 2 virtual machine.</p></td>
+<td align="left"><p>For PCs running Windows 10, version 1607, you can run Credential Guard on a Generation 2 virtual machine.</p></td>
 </tr>
 </tbody>
 </table>
