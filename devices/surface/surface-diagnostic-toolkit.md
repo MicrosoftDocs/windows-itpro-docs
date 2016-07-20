@@ -3,6 +3,7 @@ title: Microsoft Surface Diagnostic Toolkit (Surface)
 description: Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device.
 ms.assetid: FC4C3E76-3613-4A84-A384-85FE8809BEF1
 keywords: hardware, device, tool, test, component
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
