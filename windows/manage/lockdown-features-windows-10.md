@@ -14,7 +14,7 @@ author: jdeckerMS
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
+
 
 Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. This table maps Windows Embedded Industry 8.1 features to Windows 10 Enterprise features, along with links to documentation.
 
