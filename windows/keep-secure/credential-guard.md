@@ -109,7 +109,11 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="odd">
 <td align="left"><p>Physical PC</p></td>
-<td align="left"><p>For PCs running Windows 10, you cannot run Credential Guard on a virtual machine.</p></td>
+<td align="left"><p>For PCs running Windows 10, version 1511 and Windows 10, version 1507, you cannot run Credential Guard on a virtual machine.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Virtual machine</p></td>
+<td align="left"><p>For PCs running Windows 10, version 1607, you can run Credential Guard on a generation 2 virtual machine.</p></td>
 </tr>
 </tbody>
 </table>
