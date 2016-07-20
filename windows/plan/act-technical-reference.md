@@ -34,13 +34,3 @@ ACT is available in the [Windows Assessment and Deployment Kit (ADK) for Windows
 |[Standard User Analyzer (SUA) User's Guide](sua-users-guide.md) |The Standard User Analyzer (SUA) helps you test your applications and monitor API calls to detect compatibility issues related to the User Account Control (UAC) feature in Windows. |
 |[Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md) |The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows to your organization. |
 |[Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md) |You can fix some compatibility issues that are due to the changes made between Windows operating system versions. These issues can include User Account Control (UAC) restrictions. |
- 
-
- 
-
- 
-
-
-
-
-

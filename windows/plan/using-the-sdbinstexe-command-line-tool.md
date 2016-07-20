@@ -79,18 +79,5 @@ The following table describes the available command-line options.
 </tbody>
 </table>
 
- 
-
 ## Related topics
-
-
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
- 
-
- 
-
-
-
-
-
