@@ -86,27 +86,29 @@ Here's what's covered in this article:
 
         -   [15.4 Microphone](#bkmk-priv-microphone)
 
-        -   [15.5 Speech, inking, & typing](#bkmk-priv-speech)
+        -   [15.5 Notifications](#bkmk-priv-notifications)
 
-        -   [15.6 Account info](#bkmk-priv-accounts)
+        -   [15.6 Speech, inking, & typing](#bkmk-priv-speech)
 
-        -   [15.7 Contacts](#bkmk-priv-contacts)
+        -   [15.7 Account info](#bkmk-priv-accounts)
 
-        -   [15.8 Calendar](#bkmk-priv-calendar)
+        -   [15.8 Contacts](#bkmk-priv-contacts)
 
-        -   [15.9 Call history](#bkmk-priv-callhistory)
+        -   [15.9 Calendar](#bkmk-priv-calendar)
 
-        -   [15.10 Email](#bkmk-priv-email)
+        -   [15.10 Call history](#bkmk-priv-callhistory)
 
-        -   [15.11 Messaging](#bkmk-priv-messaging)
+        -   [15.11 Email](#bkmk-priv-email)
 
-        -   [15.12 Radios](#bkmk-priv-radios)
+        -   [15.12 Messaging](#bkmk-priv-messaging)
 
-        -   [15.13 Other devices](#bkmk-priv-other-devices)
+        -   [15.13 Radios](#bkmk-priv-radios)
 
-        -   [15.14 Feedback & diagnostics](#bkmk-priv-feedback)
+        -   [15.14 Other devices](#bkmk-priv-other-devices)
 
-        -   [15.15 Background apps](#bkmk-priv-background)
+        -   [15.15 Feedback & diagnostics](#bkmk-priv-feedback)
+
+        -   [15.16 Background apps](#bkmk-priv-background)
 
     -   [16. Software Protection Platform](#bkmk-spp)
 
@@ -169,14 +171,17 @@ A certificate trust list is a predefined list of items, such as a list of certif
 
 To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates, which also includes the disallowed certificate list and the pin rules list.
 
-Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\DisableRootAutoUpdate**, with a value of 1.
-
-After that, do the following in a Group Policy:
+Do the following in a Group Policy:
 
 1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
 2. Double-click **Certificate Path Validation Settings**.
-3. On the **Network Retrieval** tab, click **Define these policy settings**.
+3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
 4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
+
+-or-
+
+Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\DisableRootAutoUpdate**, with a value of 1.
+
 
 ### <a href="" id="bkmk-cortana"></a>2. Cortana
 
@@ -196,7 +201,7 @@ Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Ad
 
 In Windows 10, version 1507 and Windows 10, version 1511, When you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
 
->**Important:** These steps are not required in Windows 10, version 1607. 
+>**Important:** These steps are not required for devices running Windows 10, version 1607. 
 
 1.  Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Windows Firewall with Advanced Security** &gt; **Windows Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
 
@@ -304,8 +309,13 @@ Find the Internet Explorer Group Policy objects under **Computer Configuration**
 | Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the address bar. <br /> Default: Disabled </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
 | Disable Periodic Check for Internet Explorer software updates| Choose whether Internet Explorer periodically checks for a new version. <br /> Default: Enabled |
 | Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> Default: Disabled|
-| Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
-| Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> Default: Enabled |
+
+There are two more Group Policy objects that are used by Internet Explorer:
+
+| Path | Policy | Description |
+| - | - | - |
+| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
+| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **RSS Feeds** | Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> Default: Enabled |
 
 ### <a href="" id="bkmk-ie-activex"></a>7.2 ActiveX control blocking
 
@@ -345,7 +355,20 @@ Use either Group Policy or MDM policies to manage settings for Microsoft Edge. F
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
 
-> **Note:**  The Microsoft Edge Group Policy names were changed in Windows 10, version 1511. The table below reflects those changes.
+> **Note:**  The Microsoft Edge Group Policy names were changed in Windows 10, version 1607. The table below reflects those changes.
+
+| Policy                                               | Description                                                                                         |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Configure autofill                                    | Choose whether employees can use autofill on websites. <br /> Default: Enabled                      |
+| Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> Default: Disabled                     |
+| Configure password manager                            | Choose whether employees can save passwords locally on their devices. <br /> Default: Enabled       |
+| Configure search suggestions in Address bar              | Choose whether the address bar shows search suggestions. <br /> Default: Enabled                    |
+| Configure SmartScreen Filter                      | Choose whether SmartScreen is turned on or off.  <br /> Default: Enabled                            |
+| Allow web content on New Tab page                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
+| Configure Home pages                       | Choose the corporate Home page for domain-joined devices. <br /> Set this to **about:blank**        |
+
+
+The Windows 10, version 1511 Microsoft Edge Group Policy names are:
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -527,27 +550,29 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 -   [15.4 Microphone](#bkmk-priv-microphone)
 
--   [15.5 Speech, inking, & typing](#bkmk-priv-speech)
+-   [15.5 Notifications](#bkmk-priv-notifications)
 
--   [15.6 Account info](#bkmk-priv-accounts)
+-   [15.6 Speech, inking, & typing](#bkmk-priv-speech)
 
--   [15.7 Contacts](#bkmk-priv-contacts)
+-   [15.7 Account info](#bkmk-priv-accounts)
 
--   [15.8 Calendar](#bkmk-priv-calendar)
+-   [15.8 Contacts](#bkmk-priv-contacts)
 
--   [15.9 Call history](#bkmk-priv-callhistory)
+-   [15.9 Calendar](#bkmk-priv-calendar)
 
--   [15.10 Email](#bkmk-priv-email)
+-   [15.10 Call history](#bkmk-priv-callhistory)
 
--   [15.11 Messaging](#bkmk-priv-messaging)
+-   [15.11 Email](#bkmk-priv-email)
 
--   [15.12 Radios](#bkmk-priv-radios)
+-   [15.12 Messaging](#bkmk-priv-messaging)
 
--   [15.13 Other devices](#bkmk-priv-other-devices)
+-   [15.13 Radios](#bkmk-priv-radios)
 
--   [15.14 Feedback & diagnostics](#bkmk-priv-feedback)
+-   [15.14 Other devices](#bkmk-priv-other-devices)
 
--   [15.15 Background apps](#bkmk-priv-background)
+-   [15.15 Feedback & diagnostics](#bkmk-priv-feedback)
+
+-   [15.16 Background apps](#bkmk-priv-background)
 
 ### <a href="" id="bkmk-general"></a>15.1 General
 
@@ -591,11 +616,11 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Window
 
     -or-
 
--   Create a REG\_DWORD registry setting called **Enabled** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost\\EnableWebContentEvaluation**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting called **EnableWebContentEvaluation** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost**, with a value of 0 (zero).
 
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
-> **Note: **  If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
+> **Note:**  If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
 
  
 
@@ -616,6 +641,14 @@ To turn off **Let websites provide locally relevant content by accessing my lang
     -or-
 
 -   Create a new REG\_DWORD registry setting called **HttpAcceptLanguageOptOut** in **HKEY\_CURRENT\_USER\\Control Panel\\International\\User Profile**, with a value of 1.
+
+To turn off **Let apps on my other devices open apps and continue experiences on this devices**:
+
+- Turn off the feature in the UI.
+
+To turn off **Let apps on my other devices use Bluetooth to open apps and continue experiences on this device**:
+
+- Turn off the feature in the UI.
 
 ### <a href="" id="bkmk-priv-location"></a>15.2 Location
 
@@ -723,7 +756,21 @@ To turn off **Choose apps that can use your microphone**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-speech"></a>15.5 Speech, inking, & typing
+### <a href="" id="bkmk-priv-notifications"></a>15.5 Notifications
+
+In the **Notifications** area, you can choose which apps have access to notifications.
+
+To turn off **Let apps access my notifications**:
+
+-   Turn off the feature in the UI.
+
+   -or-
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access my notifications**
+
+    -   Set the **Select a setting** box to **Force Deny**.
+
+### <a href="" id="bkmk-priv-speech"></a>15.6 Speech, inking, & typing
 
 In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better understand your employee's voice and written input by sampling their voice and writing, and by comparing verbal and written input to contact names and calendar entrees.
 
@@ -757,7 +804,7 @@ Apply the Speech/AllowSpeechModelUpdate MDM policy from the [Policy CSP](https:/
 
 - Create a REG\_DWORD registry setting called **AllowSpeechModelUpdate** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\Current\\Device\\Speech**, with a value of 0 (zero).
 
-### <a href="" id="bkmk-priv-accounts"></a>15.6 Account info
+### <a href="" id="bkmk-priv-accounts"></a>15.7 Account info
 
 In the **Account Info** area, you can choose which apps can access your name, picture, and other account info.
 
@@ -775,7 +822,7 @@ To turn off **Choose the apps that can access your account info**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-contacts"></a>15.7 Contacts
+### <a href="" id="bkmk-priv-contacts"></a>15.8 Contacts
 
 In the **Contacts** area, you can choose which apps can access an employee's contacts list.
 
@@ -789,7 +836,7 @@ To turn off **Choose apps that can access contacts**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-calendar"></a>15.8 Calendar
+### <a href="" id="bkmk-priv-calendar"></a>15.9 Calendar
 
 In the **Calendar** area, you can choose which apps have access to an employee's calendar.
 
@@ -807,7 +854,7 @@ To turn off **Choose apps that can access calendar**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-callhistory"></a>15.9 Call history
+### <a href="" id="bkmk-priv-callhistory"></a>15.10 Call history
 
 In the **Call history** area, you can choose which apps have access to an employee's call history.
 
@@ -821,7 +868,7 @@ To turn off **Let apps access my call history**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-email"></a>15.10 Email
+### <a href="" id="bkmk-priv-email"></a>15.11 Email
 
 In the **Email** area, you can choose which apps have can access and send email.
 
@@ -835,7 +882,7 @@ To turn off **Let apps access and send email**:
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-messaging"></a>15.11 Messaging
+### <a href="" id="bkmk-priv-messaging"></a>15.12 Messaging
 
 In the **Messaging** area, you can choose which apps can read or send messages.
 
@@ -853,7 +900,7 @@ To turn off **Choose apps that can read or send messages**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-radios"></a>15.12 Radios
+### <a href="" id="bkmk-priv-radios"></a>15.13 Radios
 
 In the **Radios** area, you can choose which apps can turn a device's radio on or off.
 
@@ -871,7 +918,7 @@ To turn off **Choose apps that can control radios**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-other-devices"></a>15.13 Other devices
+### <a href="" id="bkmk-priv-other-devices"></a>15.14 Other devices
 
 In the **Other Devices** area, you can choose whether devices that aren't paired to PCs, such as an Xbox One, can share and sync info.
 
@@ -889,14 +936,13 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-feedback"></a>15.14 Feedback & diagnostics
+### <a href="" id="bkmk-priv-feedback"></a>15.15 Feedback & diagnostics
 
 In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft.
 
 To change how frequently **Windows should ask for my feedback**:
 
-**Note**  
-Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device.
+>**Note:** Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device.
 
  
 
@@ -962,7 +1008,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
     -   **3**. Maps to the **Full** level.
 
-### <a href="" id="bkmk-priv-background"></a>15.15 Background apps
+### <a href="" id="bkmk-priv-background"></a>15.16 Background apps
 
 In the **Background Apps** area, you can choose which apps can run in the background.
 
@@ -1080,7 +1126,11 @@ You can stop downloading definition updates:
 
     -and-
 
--   Enable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
+-   Disable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
+
+You can stop Enhanced Notifications:
+
+- Turn off the feature in the UI.
 
 You can also use the registry to turn off Malicious Software Reporting Tool telemetry by setting the REG\_DWORD value **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to 1.
 
