@@ -124,7 +124,7 @@ The Upgrade Analytics workflow steps you through the discovery and rationalizati
 
 ### Data collection
 
-Windows 10 and Windows Server 2016 Technical Preview includes the Connected User Experience and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology that gathers and stores telemetry events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
+Windows 10 and Windows Server 2016 includes the Connected User Experience and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology that gathers and stores telemetry events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
 
 1. Operating system features and some management applications are instrumented to publish events and data. Examples of management applications include Virtual Machine Manager (VMM), Server Manager, and Storage Spaces.
 2. Events are gathered using public operating system event logging and tracing APIs.
