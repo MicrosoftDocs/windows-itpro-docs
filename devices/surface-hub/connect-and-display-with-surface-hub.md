@@ -130,7 +130,7 @@ When a Surface hub is connected to guest computer with the wired connect USB por
 
 -   HID-compliant mouse
 
-**Universal serial bus conntrollers**
+**Universal serial bus controllers**
 
 -   Generic USB hub
 

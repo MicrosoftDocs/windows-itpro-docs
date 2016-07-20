@@ -116,15 +116,16 @@ For more information on how to use Netsh see, [Netsh Commands for Windows Hypert
 
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
-- us.vortex-win.data.microsoft.com  
+- *.blob.core.windows.net
+- crl.microsoft.com
 - eu.vortex-win.data.microsoft.com
 - sevillegwcus.microsoft.com
 - sevillegweus.microsoft.com
-- sevillegwweu.microsoft.com
 - sevillegwneu.microsoft.com
+- sevillegwweu.microsoft.com
+- us.vortex-win.data.microsoft.com 
 - www.microsoft.com
-- crl.microsoft.com
-- \*.blob.core.windows.net
+
 
 If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted to the above listed URLs.
 
@@ -165,21 +166,18 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 7. Repeat the same steps for the remaining URLs with the following arguments:
 
-    - portqry.exe -n eu.vortex-win.data.microsoft.com -e 443 -p tcp
-    - portqry.exe -n sevillegwcus.microsoft.com -e 443 -p tcp
-    - portqry.exe -n sevillegweus.microsoft.com -e 443 -p tcp
-    - portqry.exe -n sevillegwweu.microsoft.com -e 443 -p tcp
-    - portqry.exe -n sevillegwneu.microsoft.com -e 443 -p tcp
-    - portqry.exe -n www.microsoft.com -e 80 -p tcp
-    - portqry.exe -n crl.microsoft.com -e 80 -p tcp
+   - portqry.exe -n eu.vortex-win.data.microsoft.com -e 443 -p tcp
+   - portqry.exe -n sevillegwcus.microsoft.com -e 443 -p tcp
+   - portqry.exe -n sevillegweus.microsoft.com -e 443 -p tcp
+   - portqry.exe -n sevillegwweu.microsoft.com -e 443 -p tcp
+   - portqry.exe -n sevillegwneu.microsoft.com -e 443 -p tcp
+   - portqry.exe -n www.microsoft.com -e 80 -p tcp
+   - portqry.exe -n crl.microsoft.com -e 80 -p tcp
 
 8. Verify that each URL shows that the name is **resolved** and the connection status is **listening**.
 
 If the any of the verification steps indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
 
 ## Related topics
-<!--- [Windows Defender ATP service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md)-->
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Additional Windows Defender ATP configuration settings](additional-configuration-windows-defender-advanced-threat-protection.md)
-- [Monitor the Windows Defender ATP onboarding](monitor-onboarding-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
