@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Provision PCs with common settings for initial deployment
+# Provision PCs with common settings for initial deployment (simple provisioning)
 
 
 **Applies to**

@@ -97,3 +97,10 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
 [Event ID 300 - Windows Hello successfully created](passport-event-300.md)
 
 [Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md) 
+
+
+helpful note that they can pin the PC to home screen
+
+Band sign-in? no
+
+Phone sign-in with IOS with RS1, future Android

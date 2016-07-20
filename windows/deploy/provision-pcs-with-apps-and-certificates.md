@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Provision PCs with apps and certificates for initial deployment
+# Provision PCs with apps and certificates for initial deployment (advanced provisioning)
 
 
 **Applies to**
