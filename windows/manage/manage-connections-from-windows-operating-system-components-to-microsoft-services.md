@@ -171,16 +171,18 @@ A certificate trust list is a predefined list of items, such as a list of certif
 
 To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates, which also includes the disallowed certificate list and the pin rules list.
 
-Do the following in a Group Policy:
+- Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off Automatic Root Certificates Update**
+
+    -or-
+
+- Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\DisableRootAutoUpdate**, with a value of 1.
+
+After that, do the following in a Group Policy:
 
 1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
 2. Double-click **Certificate Path Validation Settings**.
 3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
 4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
-
--or-
-
-Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\DisableRootAutoUpdate**, with a value of 1.
 
 
 ### <a href="" id="bkmk-cortana"></a>2. Cortana
@@ -314,7 +316,7 @@ There are two more Group Policy objects that are used by Internet Explorer:
 
 | Path | Policy | Description |
 | - | - | - |
-| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
+| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Internet Control Panel** > **Advanced Page**  | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **RSS Feeds** | Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> Default: Enabled |
 
 ### <a href="" id="bkmk-ie-activex"></a>7.2 ActiveX control blocking
