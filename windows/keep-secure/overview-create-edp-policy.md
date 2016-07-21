@@ -24,6 +24,7 @@ Microsoft Intune and System Center Configuration Manager Technical Preview versi
 |------|------------|
 |[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |Intune helps you create and deploy your EDP policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network. |
 |[Create and deploy an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |System Center Configuration Manager Technical Preview version 1605 or later helps you create and deploy your EDP policy, including letting you choose your protected apps, your EDP-protection level, and how to find enterprise data on the network. |
+|[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md)] |Steps to create, verify, and perform a quick recovery using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate. |
  
 
  

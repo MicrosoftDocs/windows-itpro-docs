@@ -53,7 +53,7 @@ Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThrea
  Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | 0 or 1 <br> Default value: 1 | Windows Defender ATP Sample sharing is enabled 
  
 
-> **Note**&nbsp;&nbsp;Policies **Health Status for onboarded machines** use read-only properties and can't be remediated.
+> **Note**&nbsp;&nbsp;The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
 
 ### Offboard and monitor endpoints
 
@@ -82,7 +82,7 @@ Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding |
  Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | FALSE |Windows Defender ATP service is not running
   | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | 0 | Offboarded from Windows Defender ATP
 
-> **Note**&nbsp;&nbsp;Policies **Health Status for offboarded machines** use read-only properties and can't be remediated.
+> **Note**&nbsp;&nbsp;The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
 
 
 ## Related topics
