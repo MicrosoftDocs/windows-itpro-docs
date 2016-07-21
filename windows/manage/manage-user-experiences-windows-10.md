@@ -37,7 +37,7 @@ The following table describes the user experience features that are manageable i
 | **Microsoft account notifications**</br>Toasts that notify you of anything related to your Microsoft account, such as credit cards expiring, as well as family safety | - On by default (commercial content only if the device is joined to Active Directory or Azure Active Directory) </br>- Can restrict to Microsoft content only</br>- Can allow non-Microsoft content</br>- Cannot disable | - Off by default</br>- Can manage | - On by default </br>- Can manage |
 | **Windows tips**</br>Tips that pop up to help navigate Windows | - On by default (commercial content only if the device is joined to Active Directory or Azure Active Directory) </br>- Can restrict to Microsoft content only</br>- Can allow non-Microsoft content</br>- Cannot disable | - Off by default</br>- Can manage | - On by default (commercial content only) </br>- Can restrict to Microsoft content only</br>- Can allow non-Microsoft content</br>- Can disable |
 | **Windows Store** | - On by default </br>- Cannot disable| - On by default</br>- Can manage | - On by default</br>- Can manage  |
-| **Cortana** | - On by default </br>- Can disable| - Off by default</br>- Cannot enable | - On by default</br>- Can manage  |
+| **Cortana** | - On by default </br>- Can manage, except for the **Don't search the web or display web results** settings| - Off by default</br>- Cannot enable | - On by default</br>- Can manage  |
 | **Start menu layout** | - Cannot manage | - Can manage   | - Can manage   |
 | **Taskbar layout** | - Cannot manage  | - Can manage   | - Can manage  |
 
