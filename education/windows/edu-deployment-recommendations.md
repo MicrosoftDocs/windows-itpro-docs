@@ -78,7 +78,7 @@ Both Skype and Xbox include searchable directories that let students find other 
 
 If the school allows the use of personal or Microsoft account in addition to organization accounts, we also recommend that IT administrators inform parents and students that they can optionally remove any identifying information from the directories by:
 * [Managing the user profile](#managing-the-user-profile)
-* [Deleting the account if the user name is part of the identifying information](delete-an-account-if-username-is-identifying)
+* [Deleting the account if the user name is part of the identifying information](#delete-an-account-if-username-is-identifying)
 
 ### Managing the user profile
 #### Skype
