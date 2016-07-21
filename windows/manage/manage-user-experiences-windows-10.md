@@ -22,9 +22,9 @@ Windows 10 is available in several editions, providing choice and convenience to
 
 Windows 10 provides organizations with various options to manage an employee’s user experience so they can ensure a consistent and predictable experience for employees. Based on specific business requirements, IT pros can use Group Policy or mobile device management (MDM) to:
 
-- Provide a default user experience based on their organizational standards
-- Configure a device for a specific, controlled scenario such as a kiosk that displays a single application or shared PC which would automatically reset when the person signs off
-- Restrict access to services such as Cortana or the Windows Store 
+- Provide a default user experience based on their organizational standards.
+- Configure a device for a specific, controlled scenario such as a kiosk that displays a single application or shared PC which would automatically reset when the person signs off.
+- Restrict access to services such as Cortana or the Windows Store.
 
 
 The following table describes the user experience features that are manageable in Windows 10, version 1607: 
