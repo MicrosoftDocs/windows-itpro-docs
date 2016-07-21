@@ -16,7 +16,7 @@ author: mjcaparas
 
 - Windows 10 Insider Preview Build 14332 or later
 - Azure Active Directory
-<!- Office 365-->
+<!--Office 365-->
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
@@ -40,7 +40,7 @@ For more information, see [Assigning admin roles in Office 365](https://support.
 
 Use the following cmdlets to perform the security role assignment:
 
-- Full access: ```Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress “reader@Contoso.onmicrosoft.com”```
-- Read only access: ```Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"```
+- Full access:<br>```Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress “reader@Contoso.onmicrosoft.com”```
+- Read only access:<br>```Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"```
 
 For more information see, [Manage Azure AD group and role membership](https://technet.microsoft.com/en-us/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
