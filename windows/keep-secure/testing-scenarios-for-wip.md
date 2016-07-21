@@ -2,7 +2,7 @@
 title: Testing scenarios for Windows Information Protection (WIP) (Windows 10)
 description: We've come up with a list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
 ms.assetid: 53db29d2-d99d-4db6-b494-90e2b3962ca2
-keywords: WIP, EDP, Enterprise Data Protection
+keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -13,10 +13,8 @@ author: eross-msft
 # Testing scenarios for Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10 Insider Preview
+-   Windows 10, version 1607
 -   Windows 10 Mobile Preview
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 We've come up with a list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
 
