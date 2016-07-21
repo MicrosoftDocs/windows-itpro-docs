@@ -99,8 +99,3 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
 [Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md) 
 
 
-helpful note that they can pin the PC to home screen
-
-Band sign-in? no
-
-Phone sign-in with IOS with RS1, future Android
