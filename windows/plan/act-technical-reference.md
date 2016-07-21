@@ -13,19 +13,32 @@ author: TrudyHa
 
 
 **Applies to**
+- Windows 10, version 1607
+ 
+We've replaced the majority of functionality included in the Application Compatibility Toolkit (ACT) with Upgrade Analytics, a solution in the Microsoft Operations Management Suite. Upgrade Analytics gives enterprises the tools to plan and manage the upgrade process end to end, allowing them to adopt new Windows releases more quickly. With new Windows versions being released multiple times a year, ensuring application and driver compatibility on an ongoing basis is key to adopting new Windows versions as they are released.
+ 
+Microsoft developed Upgrade Analytics in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Analytics was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
+ 
+With Windows telemetry enabled, Upgrade Analytics collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft. 
+ 
+Use Upgrade Analytics to get:
+- A visual workflow that guides you from pilot to production
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+- Detailed computer and application inventory
 
-The Microsoft® Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system.
+- Powerful computer level search and drill-downs 
 
-By using ACT, you can obtain compatibility information from Microsoft and software vendors, identify compatibility issues within your own organization, and share compatibility ratings with other ACT users. The tools in ACT help you analyze and mitigate compatibility issues before you deploy a version of Windows to your organization.
+- Guidance and insights into application and driver compatibility issues, with suggested fixes 
 
-ACT is available in the [Windows Assessment and Deployment Kit (ADK) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740).
+- Data driven application rationalization tools
+
+- Application usage information, allowing targeted validation; workflow to track validation progress and decisions
+
+- Data export to commonly used software deployment tools, including System Center Configuration Manager
+
+The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded. For more information about Upgrade Analytics, see [Manage Windows upgrades with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics)
+
+At the same time, we've kept the Standard User Analyzer tool, which helps you test your apps and to monitor API calls for potential compatibility issues, and the Compatiblility Administrator, which helps you to resolve potential compatibility issues.
 
 ## In this section
 
