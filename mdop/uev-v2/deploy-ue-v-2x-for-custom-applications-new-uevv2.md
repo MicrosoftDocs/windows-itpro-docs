@@ -81,6 +81,7 @@ UE-V settings location templates cannot be created from virtualized applications
 -   Windows operating system files that are located in %Systemroot%
 
 If registry keys and files that are stored in excluded locations are required to synchronize application settings, you can manually add the locations to the settings location template during the template creation process.
+However, only changes to the HKEY\_CURRENT\_USER hive will be sync-ed.
 
 ### Replace the default Microsoft templates
 
