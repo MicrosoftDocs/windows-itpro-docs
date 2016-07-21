@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
 ---
-#Configure Windows 10 taskbar
+# Configure Windows 10 taskbar
 
 Starting in Windows 10, version 1607, administrators can pin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
 
