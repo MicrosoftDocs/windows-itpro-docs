@@ -47,7 +47,7 @@ You can set WIP to 1 of 4 protection and management modes:
 |Override |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
 |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
 |Off |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any closed WIP-tagged files on the locally attached drives. |
-<p>**Note**<br>For more info about setting your WIP-protection modes, see either [Create a Windows Information Protection (WIP) policy using Intune](create-edp-policy-using-intune.md) or [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-edp-policy-using-sccm.md), depending on your management solution.
+<p>**Note**<br>For more info about setting your WIP-protection modes, see either [Create a Windows Information Protection (WIP) policy using Intune](create-wip-policy-using-intune.md) or [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-wip-policy-using-sccm.md), depending on your management solution.
 
 ## Why use WIP?
 WIP gives you a new way to manage data policy enforcement for apps and documents, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
@@ -82,9 +82,9 @@ Use the following table to identify the scenarios that require Azure Rights Mana
 |WIP scenario |Without Azure Rights Management |Workaround |
 |-------------|--------------------------------|-----------|
 |Saving enterprise data to USB drives |Data in the new location remains encrypted, but becomes inaccessible on other devices or for other users. For example, the file won't open or the file opens, but doesn't contain readable text. |Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<p>We strongly recommend educating employees about how to limit or eliminate the need for this decryption. |
-|Synchronizing data to other services or public cloud storage |Synchronized files aren't protected on additional services or as part of public cloud storage. |Stop the app from synchronizing or don't add the app to your **Protected App** list.<p>For more info about adding apps to the **Protected App** list, see either the [Create a Windows Information Protection (WIP) policy using Intune](create-edp-policy-using-intune.md) or the [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-edp-policy-using-sccm.md) topic, depending on your management solution.
+|Synchronizing data to other services or public cloud storage |Synchronized files aren't protected on additional services or as part of public cloud storage. |Stop the app from synchronizing or don't add the app to your **Protected App** list.<p>For more info about adding apps to the **Protected App** list, see either the [Create a Windows Information Protection (WIP) policy using Intune](create-wip-policy-using-intune.md) or the [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-wip-policy-using-sccm.md) topic, depending on your management solution.
 
 ## Next steps
 After deciding to use WIP in your enterprise, you need to:
 
--   [Create a Windows Information Protection (WIP) policy](overview-create-edp-policy.md)
+-   [Create a Windows Information Protection (WIP) policy](overview-create-wip-policy.md)
