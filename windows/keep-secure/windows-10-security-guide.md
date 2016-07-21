@@ -334,7 +334,7 @@ The sections that follow describe these improvements in more detail.
 
 **SMB hardening improvements for SYSVOL and NETLOGON connections**
 
-In Windows 10 and Windows Server 2016 Technical Preview, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require Server Message Block (SMB) signing and mutual authentication (such as Kerberos).
+In Windows 10 and Windows Server 2016, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require Server Message Block (SMB) signing and mutual authentication (such as Kerberos).
 - **What value does this change add?**
 This change reduces the likelihood of man-in-the-middle attacks.
 - **What works differently?**

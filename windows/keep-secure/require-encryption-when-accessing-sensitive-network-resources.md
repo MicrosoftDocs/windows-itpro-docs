@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 The use of authentication in the previously described goal ([Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)) enables a device in the isolated domain to block traffic from untrusted devices. However, it does not prevent an untrusted device from eavesdropping on the network traffic shared between two trusted devices, because by default network packets are not encrypted.
 

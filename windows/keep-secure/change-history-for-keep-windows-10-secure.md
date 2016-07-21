@@ -23,6 +23,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 |New or changed topic | Description |
 |----------------------|-------------|
+|[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md)] |New |
 |[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |New |
 |[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |New |
 |[Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |New |
@@ -47,7 +48,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md) | Added errors 0x80090029 and 0x80070057, and merged entries for error 0x801c03ed. |
 | [Microsoft Passport guide](microsoft-passport-guide.md) | Updated Roadmap section content |
 |[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md) |Updated info based on changes to the features and functionality.|
-| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
+| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (mutiple topics) | New |
 
 ## April 2016

@@ -31,6 +31,10 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 ## Security
 
+### Credential Guard and Device Guard
+
+Isolated User Mode is now included with Hyper-V so you don't have to install it separately.
+
 ### Windows Hello for Business
 
 When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics. 
@@ -49,7 +53,6 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](../keep-secure/protect-enterprise-data-using-edp.md), previously known as Enterprise Data Protection.
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
 - Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
-
 
  
 ## Management

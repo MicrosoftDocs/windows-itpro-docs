@@ -18,10 +18,9 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
 
 - [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
-- [Diagnostics for devices managed by MDM](diagnostics-for-mdm-devices.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 - [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
-- [Guidelines for choosing an app for assigned access (kisok mode)](guidelines-for-assigned-access-app.md)
+- [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 
 ## July 2016
 

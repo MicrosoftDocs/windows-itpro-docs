@@ -37,6 +37,10 @@ Learn about managing and updating Windows 10.
 <td align="left"><p>You can use the same management tools to manage all device types running Windows 10 : desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), PowerShell scripts, Orchestrator runbooks, System Center tools, and so on, will continue to work for Windows 10 on desktop editions.</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>[Windows Spotlight on the lock screen](windows-spotlight.md)</p></td>
+<td align="left"><p>Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)</p></td>
 <td align="left"><p>Organizations might want to deploy a customized Start screen and menu to devices running Windows 10 Enterprise or Windows 10 Education. A standard Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes.</p></td>
 </tr>
