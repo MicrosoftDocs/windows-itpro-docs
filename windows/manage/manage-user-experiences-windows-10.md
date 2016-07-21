@@ -26,7 +26,6 @@ Windows 10 provides organizations with various options to manage an employee’s
 - Configure a device for a specific, controlled scenario such as a kiosk that displays a single application or shared PC which would automatically reset when the person signs off
 - Restrict access to services such as Cortana or the Windows Store 
 
-With Windows 10, version 1607, organizations will be able to limit Windows Spotlight features, such as Start menu app suggestions and tips on the lock screen, to only show content related to Microsoft, and to block non-Microsoft content. In Windows 10 Enterprise and Education, administrators also have the capability to disable these features completely through Group Policy or MDM solutions. (Windows Spotlight is off by default in Windows 10 Education). 
 
 The following table describes the user experience features that are manageable in Windows 10, version 1607: 
 
