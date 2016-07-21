@@ -64,9 +64,7 @@ During the policy-creation process in System Center Configuration Manager, you c
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed desktop app (also known as a Classic Windows app), or an AppLocker policy file.
 
 >**Important**<br>
-EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.
-
-Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **App rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
+EDP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, EDP-unaware apps might not respect the corporate network boundary, and EDP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process. <p>Care must be taken to get a support statement from the software provider that their app is safe with EDP before adding it to your **App rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
 #### Add a store app rule to your policy
 For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
@@ -442,12 +440,12 @@ There are no default locations included with EDP, you must add each of your netw
         - **Show the enterprise data protection icon overlay on your allowed apps that are EDP-unaware in the Windows Start menu and on corporate file icons in the File Explorer.** Click this box if you want the enterprise data protection icon overlay to appear on corporate files or in the Start menu, on top the tiles for your unenlightened protected apps.
 
 5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
+    
+    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/edp-sccm-dra.png)
 
     After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
     
     For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](http://go.microsoft.com/fwlink/p/?LinkId=761462) topic.
-
-    ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/edp-sccm-dra.png)
 
 #### Create and verify an Encrypting File System (EFS) DRA certificate for EDP
 If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use EDP in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
@@ -464,7 +462,7 @@ If you don’t already have an EFS DRA certificate, you’ll need to create and 
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1. 
 
-    **Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
+    >**Important**<br>Because these files can be used to decrypt any EDP file, you must protect them accordingly. We highly recommend storing them as a public key (PKI) on a smart card with strong protection, stored in a secured physical location.
 
 4.	Add your EFS DRA certificate to your EDP policy by using Step 3 of the [Choose where apps can access enterprise data](#choose-where-apps-can-access-enterprise-data) section of this topic.
 
@@ -541,12 +539,3 @@ After you’ve created your EDP policy, you'll need to deploy it to your organiz
 - [System Center Configuration Manager and Endpoint Protection (Version 1606)](http://go.microsoft.com/fwlink/p/?LinkId=717372)
 - [TechNet documentation for Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=691623)
 - [Manage mobile devices with Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=691624)
-
- 
-
- 
-
-
-
-
-

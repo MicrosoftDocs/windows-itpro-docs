@@ -14,6 +14,7 @@ author: brianlic-msft
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
+-   Windows Server 2016
 
 This topic for the IT professional describes new features for the Trusted Platform Module (TPM) in Windows 10.
 

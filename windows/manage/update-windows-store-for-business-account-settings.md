@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Update Windows Store for Business account settings

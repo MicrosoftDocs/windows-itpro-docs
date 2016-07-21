@@ -84,7 +84,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
-> **Note**&nbsp;&nbsp;Depending on machine availability, sample collection time can vary. There is a 1-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
+> **Note**&nbsp;&nbsp;Depending on machine availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
 ## View deep analysis report
 
@@ -121,7 +121,7 @@ HKLM\SOFTWARE\Policies\Microsoft\Sense\AllowSampleCollection
   Value = 0 - block sample collection
   Value = 1 - allow sample collection
 ```
-5. Change the organizational unit through the Group Policy. See [Configure with Group Policy](additional-configuration-windows-defender-advanced-threat-protection.md#configure-with-group-policy).
+5. Change the organizational unit through the Group Policy. See [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md).
 6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 > **Note**&nbsp;&nbsp;If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.

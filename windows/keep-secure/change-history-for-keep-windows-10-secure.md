@@ -16,7 +16,12 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 
 |New or changed topic | Description |
 |----------------------|-------------|
+|[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md) |New |
+|[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |New |
+|[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |New |
 |[Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |New |
+|[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (multiple topics) | Updated |
+|[Device Guard deployment guide](device-guard-deployment-guide.md) (multiple topics) | Updated |
 
 
 ## June 2016

@@ -110,8 +110,8 @@ You can also enable email scanning using the following PowerShell parameter:
 2.  Type **Set-MpPreference -DisableEmailScanning $false**.
 
 Read more about this in:
--   • [Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
--   • [Defender Cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
+-   [Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
+-   [Defender Cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
 
 ## Manage archive scans in Windows Defender
 
