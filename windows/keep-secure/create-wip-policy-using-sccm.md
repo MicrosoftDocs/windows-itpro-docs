@@ -50,7 +50,7 @@ The **Create Configuration Item Wizard** starts.
 
     ![Create Configuration Item wizard, choose the supported platforms for the policy](images/wip-sccm-supportedplat.png)
 
-6.  On the **Device Settings** screen, click **Enterprise data protection**, and then click **Next**.
+6.  On the **Device Settings** screen, click **Windows Information Protection**, and then click **Next**.
 
     ![Create Configuration Item wizard, choose the Windows Information Protection settings](images/wip-sccm-devicesettings.png)
 
@@ -77,7 +77,7 @@ For this example, we’re going to add Microsoft OneNote, a store app, to the **
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Microsoft OneNote*.
 
-3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip) section.
 
@@ -159,7 +159,7 @@ For this example, we’re going to add Internet Explorer, a desktop app, to the 
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Internet Explorer*.
 
-3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip) section.
 
@@ -299,7 +299,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Allowed app list*.
 
-3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip) section.
 
@@ -322,7 +322,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Exempt apps list*.
 
-3.	Click **Exempt** from the **Enterprise data protection mode** drop-down list.
+3.	Click **Exempt** from the **Windows Information Protection mode** drop-down list.
 
     Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-app-rules-to-your-policy) section of this topic.
 
