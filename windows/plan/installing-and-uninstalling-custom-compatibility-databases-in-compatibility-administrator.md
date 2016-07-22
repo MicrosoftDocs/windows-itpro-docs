@@ -59,15 +59,4 @@ When a custom database is no longer necessary, either because the applications a
 2.  On the **File** menu, click **Uninstall**.
 
 ## Related topics
-
-
-[Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md)
-
- 
-
- 
-
-
-
-
-
+[Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)

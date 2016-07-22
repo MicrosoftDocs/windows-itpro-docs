@@ -106,7 +106,6 @@ Use the search bar to look for specific alerts or files associated with the mach
 
 You can also filter by:
 
-- Signed or unsigned files
 - Detections mode: displays Windows ATP Alerts and detections
 - Behaviors mode: displays "detections" and selected events of interest
 - Verbose mode: displays "behaviors" (including "detections"), and all reported events
