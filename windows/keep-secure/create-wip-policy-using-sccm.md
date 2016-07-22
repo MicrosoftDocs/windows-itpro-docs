@@ -112,12 +112,13 @@ If you don't know the publisher or product name, you can find them for both desk
 4.  Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
     >**Important**<br>
-    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:
-       ```json
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:<p>
+    
+    ```json
         {
             "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
         }
-        ```
+    ```
 
 **To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
 1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
@@ -140,12 +141,13 @@ If you don't know the publisher or product name, you can find them for both desk
 8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
     >**Important**<br>
-    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:
-       ```json
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:<p>
+
+    ```json
         {
             "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
         }
-        ```
+    ```
 
 #### Add a desktop app rule to your policy
 For this example, we’re going to add Internet Explorer, a desktop app, to the **App Rules** list.
