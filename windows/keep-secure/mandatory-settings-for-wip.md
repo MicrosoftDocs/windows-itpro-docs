@@ -11,10 +11,8 @@ ms.pagetype: security
 # Mandatory tasks and settings required to turn on Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10 Insider Preview
+-   Windows 10, version 1607
 -   Windows 10 Mobile Preview
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 This list provides all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your enterprise.
 
