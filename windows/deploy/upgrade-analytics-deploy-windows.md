@@ -11,7 +11,7 @@ All of your work up to now involved reviewing and resolving application and driv
 
 The blades in the **Deploy** section are:
 
-### Deploy eligible computers
+## Deploy eligible computers
 
 Computers grouped by deployment decision are listed.
 
