@@ -1010,14 +1010,3 @@ The following table lists the known compatibility modes.
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
