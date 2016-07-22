@@ -40,8 +40,6 @@ Compatibility Administrator enables you to copy your compatibility fixes from on
 If you open the **Events** screen and then perform the copy operation, you can see a description of the action, along with the time stamp, which enables you to view your fix information without confusion.
 
 ## Related topics
-
-
 [Creating a Custom Compatibility Mode in Compatibility Administrator](creating-a-custom-compatibility-mode-in-compatibility-administrator.md)
 
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
