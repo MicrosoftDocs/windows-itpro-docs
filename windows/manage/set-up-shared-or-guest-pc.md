@@ -39,6 +39,10 @@ While shared PC mode does not configure Windows Update itself, it is strongly re
 
 [Learn more about the AllowAutoUpdate settings](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_AllowAutoUpdate)
 
+###App behavior
+
+Apps can take advantage of shared PC mode by changing their app behavior to align with temporary use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences. For information on how an app can query for shared PC mode, see [SharedModeSettings class](https://msdn.microsoft.com/en-us/library/windows/apps/windows.system.profile.sharedmodesettings.aspx).
+
 ###Customization
 Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using MDM or a provisioning package as explained in [Configuring shared PC mode on Windows](#configuring-shared-pc-mode-on-windows). The options are listed in the following table.
 
