@@ -1,6 +1,6 @@
 # [Deploy Windows 10](index.md)
 ## [Manage Windows upgrades with Upgrade Analytics](manage-windows-upgrades-with-upgrade-analytics.md)
-### [Upgrade Analytics architecture](upgrade-analytics-architecture)
+### [Upgrade Analytics architecture](upgrade-analytics-architecture.md)
 ### [Upgrade Analytics requirements](upgrade-analytics-requirements.md)
 ### [Upgrade Analytics release notes](upgrade-analytics-release-notes.md)
 ### [Get started with Upgrade Analytics](upgrade-analytics-get-started.md)
