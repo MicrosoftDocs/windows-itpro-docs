@@ -25,7 +25,7 @@
 ## [Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md)
 ### [Create a Windows Information Protection (WIP) policy](overview-create-wip-policy.md)
 #### [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)
-##### [Add apps to your enterprise data protection (EDP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md)
+##### [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md)
 ##### [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
 ##### [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
 #### [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md)
