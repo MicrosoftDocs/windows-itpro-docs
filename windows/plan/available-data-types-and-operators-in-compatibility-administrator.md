@@ -222,8 +222,6 @@ The following table shows the operators that you can use for querying your custo
  
 
 ## Related topics
-
-
 [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md)
 
  
