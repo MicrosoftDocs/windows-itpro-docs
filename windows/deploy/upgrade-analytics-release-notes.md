@@ -11,7 +11,7 @@ author: MaggiePucciEvans
 
 The compatibility update KB that sends telemetry data from user computers to Upgrade Analytics works only with Windows 7 SP1 and Windows 8.1. Upgrade Analytics cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
 
-With Windows 10, edition 1607, the compatibility update KB is installed automatically.
+<!--With Windows 10, edition 1607, the compatibility update KB is installed automatically.-->
 
 ## User authenticated proxies not supported in this release
 

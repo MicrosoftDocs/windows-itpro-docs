@@ -27,8 +27,8 @@ For more information about what telemetry data Microsoft collects and how that d
 
 ##**Related topics**
 
-[Upgrade Analytics requirements]( https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-analytics-requirements)
+[Upgrade Analytics requirements](upgrade-analytics-requirements.md)
 
-[Upgrade Analytics release notes]( https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-analytics-release-notes)
+[Upgrade Analytics release notes](upgrade-analytics-release-notes.md)
 
-[Get started with Upgrade Analytics]( https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started)
+[Get started with Upgrade Analytics](upgrade-analytics-get-started.md)

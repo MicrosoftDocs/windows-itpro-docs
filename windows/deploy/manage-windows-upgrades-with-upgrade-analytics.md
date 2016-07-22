@@ -33,25 +33,25 @@ Use Upgrade Analytics to get:
 
 The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
->**Important**<br> For system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see:
+**Important**  For system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see:
 
-[Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
+- [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
 
-[Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 
-[Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](http://go.microsoft.com/fwlink/?LinkID=822965)
+- [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](http://go.microsoft.com/fwlink/?LinkID=822965)
 
 ##**Related topics**
 
-[Upgrade Analytics architecture](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-architecture)
+[Upgrade Analytics architecture](upgrade-analytics-architecture.md)
 
-[Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements)
+[Upgrade Analytics requirements](upgrade-analytics-requirements.md)
 
-[Upgrade Analytics release notes](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-release-notes)
+[Upgrade Analytics release notes](upgrade-analytics-release-notes.md)
 
-[Get started with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started)
+[Get started with Upgrade Analytics](upgrade-analytics-get-started.md)
 
-[Use Upgrade Analytics to manage Windows upgrades](https://technet.microsoft.com/itpro/windows/deploy/use-upgrade-analytics-to-manage-windows-upgrades)
+[Use Upgrade Analytics to manage Windows upgrades](use-upgrade-analytics-to-manage-windows-upgrades.md)
 
-[Troubleshoot Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/troubleshoot-upgrade-analytics)
+[Troubleshoot Upgrade Analytics](troubleshoot-upgrade-analytics.md)
 
