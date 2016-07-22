@@ -161,15 +161,4 @@ End Function
 Most of your testing of application-compatibility issues will happen prior to the deployment of a new Windows operating system into your environment. As such, a common approach is to include the custom compatibility-fix database, which includes all of your known issues, in your corporate image. Then, as you update your compatibility-fix database, you can provide the updates by using one of the two mechanisms described in the "Deploying Your Custom Compatibility Fix Databases" section earlier in this topic.
 
 ## Related topics
-
-
 [Managing Application-Compatibility Fixes and Custom Fix Databases](managing-application-compatibility-fixes-and-custom-fix-databases.md)
-
- 
-
- 
-
-
-
-
-

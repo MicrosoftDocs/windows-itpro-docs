@@ -166,8 +166,6 @@ You can export any of your search results into a tab-delimited text (.txt) file 
 2.  Browse to the location where you intend to store the search results file, and then click **Save**.
 
 ## Related topics
-
-
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
  
