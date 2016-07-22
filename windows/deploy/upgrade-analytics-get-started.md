@@ -11,7 +11,7 @@ Use Upgrade Analytics to plan and manage your upgrade project end to end. After 
 
 For more information about what user computer data Microsoft collects and assesses, see [Windows 7-8.1 Telemetry Events and Fields Descriptions](http://go.microsoft.com/fwlink/?LinkId=822965). For information about how Microsoft uses telemetry data, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization).
 
-This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](#_Upgrade_Analytics_requirements) for information about requirements for using Upgrade Analytics.
+This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](upgrade-analytics-requirements.md) for information about requirements for using Upgrade Analytics.
 
 To configure Upgrade Analytics, you’ll need to:
 
