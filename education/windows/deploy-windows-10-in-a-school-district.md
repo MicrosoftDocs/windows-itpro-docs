@@ -826,8 +826,511 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 
 |Method |Description and reason to select this method |
 |-------|---------------------------------------------|
-|Ldifde.exe|This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see Step-by-Step Guide to Bulk Import and Export to Active Directory, LDIFDE—Export/Import data from Active Directory—LDIFDE commands, Import or Export Directory Objects Using Ldifde, and LDIFDE.|
-|VBScript|This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see Step-by-Step Guide to Bulk Import and Export to Active Directory and ADSI Scriptomatic.|
-|Windows PowerShell|This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see Import Bulk Users to Active Directory and PowerShell: Bulk create AD Users from CSV file.|
+|Ldifde.exe|This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
+|VBScript|This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com/en-us/scriptcenter/dd939958.aspx).|
+|Windows PowerShell|This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
 
 *Table 12. AD DS bulk-import account methods*
+
+### Create a source file that contains the user and group accounts
+
+After you have selected your user and group account bulk import method, you’re ready to create the source file that contains the user and group account. You’ll use the source file as the input to the import process. The source file format depends on the method you selected. Table 13 lists the source file format for the bulk import methods.
+
+|Method |Source file format |
+|-------|-------------------|
+|Ldifde.exe |Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
+|VBScript |VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).|
+|Windows PowerShell |Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx). |
+
+### Import the user accounts into AD DS
+
+With the bulk-import source file finished, you’re ready to import the user and group accounts into AD DS. The steps for importing the file are slightly different for each method.
+
+>**Note**&nbsp;&nbsp;Bulk-import your group accounts first, and then import your user accounts. Importing in this order allows you to specify group membership when you import your user accounts. 
+
+For more information about how to import user accounts into AD DS by using:
+
+* Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).
+* VBScript, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).
+* Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
+
+#### Summary
+
+In this section, you selected the bulk-import method, created the source file that contains the user and group accounts, and imported the user and group accounts into AD DS. If you have Azure AD Connect, it automatically synchronizes the new AD DS user and group accounts to Azure AD. Now, you’re ready to assign user licenses for Azure AD Premium in the [Assign user licenses for Azure AD Premium](#assign-user-licenses-for-azure-ad-premium) section later in this guide.
+
+## Bulk-import user and group accounts into Office 365
+
+You can bulk-import user and group accounts directly into Office 365, reducing the time and effort required to create users. First, you bulk-import the user accounts into Office 365. Then, you create the security groups for your institution. Finally, you create the email distribution groups your institution requires.
+
+### Create user accounts in Office 365
+
+Now that you have created your new Office 365 Education subscription, you need to create user accounts. You can add user accounts for the teachers, other faculty, and students who will use the classroom.
+
+>**Note**&nbsp;&nbsp;If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
+
+You can use the Office 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
+
+The bulk-add process assigns the same Office 365 Education license plan to all users on the list. Therefore, you must create a separate list for each license plan you recorded in Table 9. Depending on the number of faculty members who need to use the classroom, you may want to add the faculty Office 365 accounts manually; however, use the bulk-add process to add student accounts.
+
+For more information about how to bulk-add users to Office 365, see [Add several users at the same time to Office 365 - Admin help](https://support.office.com/en-us/article/Add-several-users-at-the-same-time-to-Office-365-Admin-Help-1f5767ed-e717-4f24-969c-6ea9d412ca88?ui=en-US&rs=en-US&ad=US).
+
+>**Note**&nbsp;&nbsp;If you encountered errors during bulk add, resolve them before you continue the bulk-add process. You can view the log file to see which users caused the errors, and then modify the .csv file to correct the problems. Click **Back** to retry the verification process.
+
+The email accounts are assigned temporary passwords on creation. You must communicate these temporary passwords to your users before they can sign in to Office 365.
+
+### Create Office 365 security groups
+
+Assign SharePoint Online resource permissions to Office 365 security groups, not individual user accounts. For example, create one security group for faculty members and another for students. Then, you can assign unique SharePoint Online resource permissions to faculty members and a different set of permissions to students. Add or remove users from the security groups to grant or revoke access to SharePoint Online resources.
+
+>**Note**&nbsp;&nbsp;If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
+
+For information about creating security groups, see Create an Office 365 Group in the admin center Preview.
+
+You can add and remove users from security groups at any time.
+
+>**Note**&nbsp;&nbsp;Office 365 evaluates group membership when users sign in. If you change group membership for a user, that user may have to sign out, and then sign in again for the change to take effect.
+
+### Create email distribution groups
+
+Microsoft Exchange Online uses an email distribution group as a single email recipient for multiple users. For example, you could create an email distribution group that contains all students. Then, you could send a message to the email distribution group instead of individually addressing the message to each student.
+
+You can create email distribution groups based on job role (such as teacher, administration, or student) or specific interests (such as robotics, drama club, or soccer team). You can create any number of distribution groups, and users can be members of more than one group.
+
+>**Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until the creation process ends before you can perform the following steps. 
+
+
+For information about creating security groups, see [Create an Office 365 Group in the admin center](https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&rs=en-001&ad=US).
+
+#### Summary
+
+You have bulk-imported the user accounts into Office 365. First, you selected the bulk-import method. Next, you created the Office 365 security groups in Office 365. Finally, you created the Office 365 email distribution groups. Now, you’re ready to assign user licenses for Azure AD Premium.
+
+## Assign user licenses for Azure AD Premium
+
+If you enabled Azure AD Premium in the [Enable Azure AD Premium](#enable-azure-ad-premium) section, you must now assign Azure AD Premium licenses to the users who need the features this edition offers. For example, you may want the users who have access to confidential student information to use MFA. In this example, you could assign Azure AD Premium only to those users.
+
+For more information about assigning user licenses for Azure AD Premium, see [How to assign EMS/Azure AD Premium licenses to user accounts](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/How-to-assign-Azure-AD-Premium-Licenses-to-user-accounts).
+
+## Create and configure a Windows Store for Business portal
+
+Windows Store for Business allows you to create your own private portal to manage Windows Store apps in your institution. With Windows Store for Business, you can:
+
+* Find and acquire Windows Store apps.
+* Manage apps, app licenses, and updates.
+* Distribute apps to your users. 
+
+For more information about Windows Store for Business, see [Windows Store for Business overview](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview).
+
+This section shows you how to create a Windows Store for Business portal and configure it for your school.
+
+### Create and configure your Windows Store for Business portal
+
+To create and configure your Windows Store for Business portal, simply use the administrative account for your Office 365 subscription to sign in to Windows Store for Business. Windows Store for Business automatically creates a portal for your institution and uses your account as its administrator.
+
+#### To create and configure a Windows Store for Business portal
+
+1. In Microsoft Edge or Internet Explorer, type `http://microsoft.com/business-store` in the address bar.
+2. On the **Windows Store for Business** page, click **Sign in with an organizational account**.
+3. On the Windows Store for Business sign-in page, use the administrative account for the Office 365 subscription you created in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) section to sign in.
+4. On the **Windows Store for Business Services Agreement** page, review the agreement, select the **I accept this agreement and certify that I have the authority to bind my organization to its terms** check box, and then click **Accept**.
+5. In the **Welcome to the Windows Store for Business** dialog box, click **OK**.
+
+After you create the Windows Store for Business portal, configure it by using the commands in the **Settings** menu listed in Table 14. Depending on your institution, you may (or may not) need to change these settings to further customize your portal. 
+
+|Menu selection|What can you do in this menu|
+|--------------|----------------------------|
+|Account information |Displays information about your Windows Store for Business account (no settings can be changed). You make changes to this information in Office 365 or the Azure Management Portal. For more information, see [Update Windows Store for Business account settings](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings).|
+|Device Guard signing |Allows you to upload and sign Device Guard catalog and policy files. For more information about Device Guard, see [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide).|
+|LOB publishers |Allows you to add line-of-business (LOB) publishers that can then publish apps to your private store. LOB publishers are usually internal developers or software vendors that are working with your institution. For more information, see [Working with line-of-business apps](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps).|
+|Management tools |Allows you to add tools that you can use to distribute (deploy) apps in your private store. For more information, see [Distribute apps with a management tool](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-with-management-tool).|
+|Offline licensing|Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see the “Licensing model: online and offline licenses” section in [Apps in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).|
+|Permissions |Allows you to grant other users in your organization the ability to buy, manage, and administer your Windows Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business).|
+|Private store |Allows you to change the organization name used in your Windows Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).|
+
+### Find, acquire, and distribute apps in the portal
+
+Now that you have created your Windows Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this from the **Inventory** page in Windows Store for Business.
+
+>**Note**&nbsp;&nbsp;Your educational institution can now use a credit card or purchase order to pay for apps in Windows Store for Business.
+
+You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users to install the apps.
+
+For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-managemement-windows-store-for-business).
+
+#### Summary
+
+At the end of this section, you should have a properly configured Windows Store for Business portal. You have also found and acquired your apps from Windows Store. Finally, you should have deployed all your Windows Store apps to your users. Now, you’re ready to deploy Windows Store apps to your users.
+
+## Plan for deployment
+
+You will use the LTI deployment process in MDT to deploy Windows 10 to devices or to upgrade devices to Windows 10. Prior to preparing for deployment, you must make some deployment planning decisions, including selecting the operating systems you will use, the approach you will use to create your Windows 10 images, and the method you will use to initiate the LTI deployment process.
+
+### Select the operating systems
+
+Later in the process, you will import the versions of Windows 10 you want to deploy. You can deploy the operating system to new devices, refresh existing devices, or upgrade existing devices. In the case of:
+
+* New devices or refreshing existing devices, you will completely replace the existing operating system on a device with Windows 10.
+* Upgrading existing devices, you will upgrade the existing operating system (the Windows 8.1 or Windows 7 operating system) to Windows 10.
+
+Depending on your school’s requirements, you may need any combination of the following Windows 10 editions:
+
+* **Windows 10 Pro.** Use this operating system to:
+  * Upgrade existing eligible institution-owned and personal devices running Windows 8.1 Pro or Windows 7 Professional to Windows 10 Pro.
+  * Deploy new instances of Windows 10 Pro to devices so that new devices have a known configuration.
+* **Windows 10 Education.** Use this operating system to:
+  * Upgrade institution-owned devices to Windows 10 Education.
+  * Deploy new instances of Windows 10 Education so that new devices have a known configuration.
+
+>**Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Windows Store for Business—features not available in Windows 10 Home. For more information about how to upgrade Windows 10 Home to Windows 10 Pro or Windows 10 Education, see [Windows 10 edition upgrade](https://technet.microsoft.com/itpro/windows/deploy/windows-10-edition-upgrades).
+
+For more information about the Windows 10 editions, see [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+
+One other consideration is the mix of processor architectures you will support. If you can, support only 64 bit versions of Windows 10. If you have devices that can run only 32 bit versions of Windows 10, you will need to import both 64 bit and 32 bit versions of the Windows 10 editions listed above.
+
+>**Note**&nbsp;&nbsp;On devices that have minimal system resources (such as devices with only 2 GB of memory or 32 GB of storage), use 32 bit versions of Windows 10 because 64 bit versions of Windows 10 place more stress on device system resources.
+
+Finally, as a best practice, minimize the number of operating systems that you deploy and manage. If possible, standardize institution-owned devices on one Windows 10 edition (such as a 64 bit version of Windows 10 Education or Windows 10 Pro). Of course, you cannot standardize personal devices on a specific operating system version or processor architecture.
+
+### Select an image approach
+
+A key operating system image decision is whether to use a thin or thick image. Thin images contain only the operating system, and MDT installs the necessary device drivers and apps after the operating system has been installed. Thick images contain the operating system, “core” apps (such as Office), and device drivers. With thick images, MDT installs any device drivers and apps not included in the thick image after the operating system has been installed.
+
+The advantage to a thin image is that the final deployment configuration is dynamic: you can easily change the configuration without having to capture another image. The disadvantage of a thin image is that it takes longer to complete the deployment.
+
+The advantage of a thick image is that the deployment takes less time than it would for a thin image. The disadvantage of a thick image is that you need to capture a new image each time you want to make a change to the operating system, apps, or other software in the image.
+
+This guide discusses thick image deployment. For information about thin image deployments, see [Deploy Windows 10 in a school](https://technet.microsoft.com/edu/windows/deploy-windows-10-in-a-school).
+
+### Select a method to initiate deployment
+The LTI deployment process is highly automated: it requires minimal information to deploy or upgrade Windows 10. The ZTI deployment process is fully automated, but you must manually initiate it. To do so, use the method listed in Table 15 that best meets the needs of your institution.
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Method</th>
+<th align="left">Description and reason to select this method</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Windows Deployment Services</td>
+<td>This method:
+<ul>
+<li>Uses diskless booting to initiate LTI and ZTI deployments.</li>
+<li>Works only with devices that support PXE boot.</li>
+<li>Deploys Windows 10 over the network, which consumes more network bandwidth than deployment from local media.</li>
+<li>Deploys images more slowly than when you use local media.</li>
+<li>Requires that you deploy a Windows Deployment Services server.</li>
+</ul>
+Select this method when you want to deploy Windows over-the-network and perform diskless booting. The advantage of this method is that the diskless media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployments from local media, and you must deploy a Windows Deployment Services server.
+</td>
+</tr>
+
+<tr>
+<td>Bootable media</td>
+<td>This method:
+<ul>
+<li>Initiates LTI or ZTI deployment by booting from local media, including from USB drives, DVD, or CD.</li>
+<li>Deploys Windows 10 over the network, which consumes more network bandwidth than deployment from local media.</li>
+<li>Deploys images more slowly than when using local media.</li>
+<li>Requires no additional infrastructure.</li>
+</ul>
+Select this method when you want to deploy Windows over the network and are willing to boot the target device from local media. The advantage of this method is that the media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployment from local media.
+</td>
+</tr>
+
+<tr>
+<td>Deployment media</td>
+<td>This method:
+<ul>
+<li>Initiates LTI or ZTI deployment by booting from a local USB hard disk.</li>
+<li>Deploys Windows 10 from local media, which consumes less network bandwidth than over-the-network methods.</li>
+<li>Deploys images more quickly than network-based methods do.</li>
+<li>Requires a USB hard disk because of the deployment share’s storage requirements (up to 100 GB).</li>
+</ul>
+Select this method when you want to perform local deployments and are willing to boot the target device from a local USB hard disk. The advantage of this method is that local deployments are faster than over-the-network deployments. The disadvantage of this method is that each time you change the deployment share or distribution point content, you must regenerate the deployment media and update the USB hard disk.
+</td>
+</tr>
+
+</tbody>
+</table>
+
+*Table 15. Methods to initiate LTI and ZTI deployments*
+
+#### Summary
+At the end of this section, you should know the Windows 10 editions and processor architecture that you want to deploy (and will import later in the process). You also determined whether you want to use thin or thick images. Finally, you selected the method for initiating your LTI or ZTI deployment. Now, you can prepare for Windows 10 deployment.
+
+## Prepare for deployment
+
+Before you can deploy Windows 10 and your apps to devices, you need to prepare your MDT environment, Windows Deployment Services, and System Center Configuration Manager (if you selected it to do operating system deployment in the [Select the deployment methods](#select-the-deployment-methods) section). In this section, you ensure that the deployment methods you selected in the [Select the deployment methods](#select-the-deployment-methods) section have the necessary Windows 10 editions and versions, Windows desktop apps, Windows Store apps, and device drivers.
+
+### Configure the MDT deployment share
+
+The first step in preparing for Windows 10 deployment is to configure—that is, populate—the MDT deployment share. Table 16 lists the MDT deployment share configuration tasks that you must perform. Perform the tasks in the order represented in Table 16.
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Task</th>
+<th align="left">Description</th>
+
+</tr>
+</thead>
+<tbody>
+
+
+<tr>
+<td>1. Import operating systems</td>
+<td>Import the operating systems that you selected in the [Select operating systems](#select-operating-systems) section into the deployment share. For more information about how to import operating systems, see [Import an Operating System into the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#ImportanOperatingSystemintotheDeploymentWorkbench).</td>
+</tr>
+
+<tr>
+<td>2. Import device drivers</td>
+<td>Device drivers allow Windows 10 to know a device’s hardware resources and connected hardware accessories. Without the proper device drivers, certain features may be unavailable. For example, without the proper audio driver, a device cannot play sounds; without the proper camera driver, the device cannot take photos or use video chat.<br/><br/>
+Import device drivers for each device in your institution. For more information about how to import device drivers, see [Import Device Drivers into the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#ImportDeviceDriversintotheDeploymentWorkbench).
+</td>
+</tr>
+
+<tr>
+<td>3. Create MDT applications for Windows Store apps</td>
+<td>Create an MDT application for each Windows Store app you want to deploy. You can deploy Windows Store apps by using <i>sideloading</i>, which allows you to use the **Add-AppxPackage** Windows PowerShell cmdlet to deploy the .appx files associated with the app (called *provisioned apps*). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>
+Prior to sideloading the .appx files, obtain the Windows Store .appx files that you will use to deploy (sideload) the apps in your provisioning package. For apps in Windows Store, you will need to obtain the .appx files by performing one of the following tasks:
+<ul>
+<li>For offline-licensed apps, download the .appx files from the Windows Store for Business.</li>
+<li>For apps that are not offline licensed, obtain the .appx files from the app software vendor directly.</li>
+</ul>
+If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Windows Store or Windows Store for Business.<br/><br/>
+If you have Intune or System Center Configuration Manager, you can deploy Windows Store apps after you deploy Windows 10, as described in the [Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune) and [Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager) sections. This method provides granular deployment of Windows Store apps, and you can use it for ongoing management of Windows Store apps. This is the preferred method of deploying and managing Windows Store apps.<br/><br/>
+In addition, you must prepare your environment for sideloading Windows Store apps. For more information about how to:
+<ul>
+<li>Prepare your environment for sideloading, see [Try it out: sideload Windows Store apps](https://technet.microsoft.com/en-us/windows/jj874388.aspx).</li>
+<li>Create an MDT application, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).</li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td>4. Create MDT applications for Windows desktop apps</td>
+<td>You need to create an MDT application for each Windows desktop app you want to deploy. You can obtain the Windows desktop apps from any source, but ensure that you have sufficient licenses for them.<br/><br/>
+To help reduce the effort needed to deploy Microsoft Office 2016 desktop apps, use the Office Deployment Tool, as described in [Deploy Click-to-Run for Office 365 products by using the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219423.aspx).<br/><br/>
+If you have Intune, you can deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune) section. This method provides granular deployment of Windows desktop apps, and you can use it for ongoing management of the apps. This is the preferred method for deploying and managing Windows desktop apps.
+
+>**Note**&nbsp;&nbsp;You can also deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune) section.
+
+For more information about how to create an MDT application for Window desktop apps, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx).
+
+</td>
+</tr>
+
+<tr>
+<td>5. Create task sequences</td>
+<td>You must create separate task sequences for each Windows 10 edition, processor architecture, operating system upgrade process, and new operating system deployment process. Minimally, create a task sequence for each Windows 10 operating system you imported in step 1—for example, (1) if you want to deploy Windows 10 Education to new devices or refresh existing devices with a new deployment of Windows 10 Education, (2) if you want to upgrade existing devices running Windows 8.1 or Windows 7 to Windows 10 Education, or (3) if you want to run deployments and upgrades for both 32 bit and 64 bit versions of Windows 10. To do so, you must create task sequences that will:
+<ul>
+<li>Deploy 64 bit Windows 10 Education to devices.</li>
+<li>Deploy 32 bit Windows 10 Education to devices.</li>
+<li>Upgrade existing devices to 64 bit Windows 10 Education.</li>
+<li>Upgrade existing devices to 32 bit Windows 10 Education.</li>
+</ul>
+Again, you will create the task sequences based on the operating systems that you imported in step 1. For more information about how to create a task sequence, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
+
+</td>
+</tr>
+
+<tr>
+<td>6. Update the deployment share</td>
+<td>Updating a deployment share generates the MDT boot images you use to initiate the Windows 10 deployment process. You can configure the process to create 32 bit and 64 bit versions of the .iso and .wim files you can use to create bootable media or in Windows Deployment Services.<br/><br/>
+For more information about how to update a deployment share, see [Update a Deployment Share in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#UpdateaDeploymentShareintheDeploymentWorkbench).
+
+</td>
+</tr>
+
+
+</tbody>
+</table>
+
+### Configure System Center Configuration Manager
+
+>**Note**&nbsp;&nbsp;If you have already configured your System Center Configuration Manager infrastructure to support the operating system deployment feature or if you selected to deploy Windows 10 by using MDT only, then skip this section and continue to the next section.
+
+Before you can use System Center Configuration Manager to deploy Windows 10 and manage your apps and devices, you must configure System Center Configuration Manager to support the operating system deployment feature. If you don’t have an existing System Center Configuration Manager infrastructure, you will need to deploy a new infrastructure. 
+
+Deploying a new System Center Configuration Manager infrastructure is beyond the scope of this guide, but the following resources can help you deploy a new System Center Configuration Manager infrastructure:
+
+* [Get ready for System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt608540.aspx)
+* [Start using System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt608544.aspx)
+
+#### To configure an existing System Center Configuration Manager infrastructure for operating system deployment
+
+1. Perform any necessary infrastructure remediation.
+
+    Ensure that your existing infrastructure can support the operating system deployment feature. For more information, see [Infrastructure requirements for operating system deployment in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627936.aspx).
+2. Add the Windows PE boot images, Windows 10 operating systems, and other content.
+
+    You need to add the Windows PE boot images, Windows 10 operating system images, and other deployment content that you will use to deploy Windows 10 with ZTI. To add this content, use the Create MDT Task Sequence Wizard.
+
+    You can add this content by using System Center Configuration Manager only (without MDT), but the Create MDT Task Sequence Wizard is the preferred method because the wizard prompts you for all the deployment content you need for a task sequence and provides a much more intuitive user experience. For more information, see [Create ZTI Task Sequences Using the Create MDT Task Sequence Wizard in Configuration Manager](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateZTITaskSequencesUsingtheCreateMDTTaskSequenceWizardinConfigurationManager).
+3. Add device drivers.
+
+    You must add device drivers for the different device types in your district. For example, if you have a mixture of Surface, HP Stream, Dell Inspiron, and Lenovo Yoga devices, then you must have the device drivers for each device.
+
+    Create a System Center Configuration Manager driver package for each device type in your district. For more information, see [Manage drivers in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627934.aspx).
+4. Add Windows apps.
+
+    Install the Windows apps (Windows desktop and Windows Store apps) that you want to deploy after the task sequence deploys your customized image (a thick, reference image that include Windows 10 and your core Windows desktop apps). These apps are in addition to the apps included in your reference image. You can only deploy Windows Store apps after you deploy Windows 10 because you cannot capture Windows Store apps in a reference image. Windows Store apps target users, not devices.
+
+    Create a System Center Configuration Manager application for each Windows desktop or Windows Store app that you want to deploy after you apply the reference image to a device. For more information, see [Deploy and manage applications with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627959.aspx).
+
+### Configure Window Deployment Services for MDT
+
+You can use Windows Deployment Services in conjunction with MDT to automatically initiate boot images on target devices. These boot images can be Windows PE images (which you generated in step 6 in Table 16) or custom images that can deploy operating systems directly to the target devices.
+
+#### To configure Windows Deployment Services for MDT
+
+1. Set up and configure Windows Deployment Services.
+
+    Windows Deployment Services is a server role available in all Windows Server editions. You can enable the Windows Deployment Services server role on a new server or on any server running Windows Server in your institution.
+
+    For more information about how to perform this step, see the following resources:
+    * [Windows Deployment Services Overview](https://technet.microsoft.com/library/hh831764.aspx)
+    * The Windows Deployment Services Help file, included in Windows Deployment Services
+    * [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/en-us/library/jj648426.aspx)
+2. Add LTI boot images (Windows PE images) to Windows Deployment Services.
+    The LTI boot images (.wim files) that you will add to Windows Deployment Services are in the MDT deployment share. Locate the .wim files in the deployment share’s Boot subfolder.
+    For more information about how to perform this step, see [Add LTI Boot Images to Windows Deployment Services](https://technet.microsoft.com/en-us/library/dn759415.aspx#AddLTIBootImagestoWindowsDeploymentServices).
+
+### Configure Window Deployment Services for System Center Configuration Manager
+
+>**Note**&nbsp;&nbsp;If you have already configured your System Center Configuration Manager infrastructure to support PXE boot or selected to deploy Windows 10 by using MDT only, then skip this section and continue to the next.
+
+You can use Windows Deployment Services in conjunction with System Center Configuration to automatically initiate boot images on target devices. These boot images are Windows PE images that you use to boot the target devices, and then initiate Windows 10, app, and device driver deployment.
+
+#### To configure Windows Deployment Services for System Center Configuration Manager
+
+1. Set up and configure Windows Deployment Services.
+    
+    Windows Deployment Services is a server role available in all Windows Server editions. You can enable the Windows Deployment Services server role on a new server or on any server running Windows Server in your institution.
+    
+    For more information about how to perform this step, see the following resources:
+    * [Windows Deployment Services Overview](https://technet.microsoft.com/library/hh831764.aspx)
+    * The Windows Deployment Services Help file, included in Windows Deployment Services
+    * [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/en-us/library/jj648426.aspx)
+2. Configure a distribution point to accept PXE requests in System Center Configuration Manager.
+    To support PXE boot requests, you install the PXE service point site system role. Then, you must configure one or more distribution points to respond to PXE boot request.
+    For more information about how to perform this step, see [Install site system roles for System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt704036.aspx), [Use PXE to deploy Windows over the network with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627940.aspx), and [Configuring distribution points to accept PXE requests](https://technet.microsoft.com/en-us/library/mt627944.aspx#BKMK_PXEDistributionPoint).
+3.	Configure the appropriate boot images (Windows PE images) to deploy from the PXE-enabled distribution point.
+    
+    Before a device can start a boot image from a PXE-enabled distribution point, you must change the properties of the boot image to enable PXE booting. Typically, you create this boot image when you created your MDT task sequence in the Configuration Manager console.
+    
+    For more information about how to perform this step, see [Configure a boot image to deploy from a PXE-enabled distribution point](https://technet.microsoft.com/en-us/library/mt627946.aspx#BKMK_BootImagePXE) and [Manage boot images with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627946.aspx).
+
+#### Summary
+
+Your MDT deployment share and System Center Configuration Manager are now ready for deployment. Windows Deployment Services is ready to initiate the LTI or ZTI deployment process. You have set up and configured Windows Deployment Services for MDT and for System Center Configuration Manager. You have also ensured that your boot images are available to Windows Deployment Services (for LTI) or the distribution points (for ZTI and System Center Configuration Manager). Now, you’re ready to capture the reference images for the different devices you have in your district.
+
+## Capture the reference image
+
+The reference device is a device that you use as the template for all the other devices in your district. On this device, you install any Windows desktop apps the classroom needs. For example, install the Windows desktop apps for Office 365 ProPlus if you selected that student license plan.
+
+After you deploy Windows 10 and the desktop apps to the reference device, you capture an image of the device (the reference image). You import the reference image to an MDT deployment share or into System Center Configuration Manager. Finally, you create a task sequence to deploy the reference image to faculty and student devices.
+
+You will capture multiple reference images, one for each type of device that you have in your organization. You perform the steps in this section for each image (device) that you have in your district. Use LTI in MDT to automate the deployment and capture of the reference image.
+
+>**Note**&nbsp;&nbsp;You can use LTI in MDT or System Center Configuration Manager to automate the deployment and capture of the reference image, but this guide only discusses how to use LTI in MDT to capture the reference image.
+
+### Customize the MDT deployment share
+
+You initially configured the MDT deployment share in the section Configure the MDT deployment share earlier in this guide. In that section, you configured the deployment share for generic use. Now, you need to customize the deployment share to deploy the appropriate Windows 10 edition, desktop apps, and device drivers to each reference device.
+
+#### To customize the MDT deployment share
+
+1. Create a task sequence to deploy the appropriate Windows 10 edition.
+
+    A task sequence can deploy only one Windows 10 edition or version, which means that you must create a task sequence for each Windows 10 edition and version you selected in the section Select the operating systems earlier in this guide. To create task sequences, use the New Task Sequence Wizard. 
+    
+    For more information, see Create a New Task Sequence in the Deployment Workbench.
+2. Create an MDT application for each desktop app you want to include in your reference image.
+
+    You create MDT applications by using the New Application Wizard in the Deployment Workbench. As part of creating the MDT application, specify the command-line parameters used to install the app without user intervention (unattended installation). For more information, see Create a New Application in the Deployment Workbench.
+3. Customize the task sequence to install the MDT applications that you created in step 2.
+
+    You can add an Install Application task sequence step to your task sequence. Then, you can customize the Install Application task sequence step to install a specific app, which automatically installs the app with no user interaction required when your run the task sequence.
+    
+    You need to add an Install Application task sequence step for each app you want to include in your reference image. For more information, see Customize Application Installation in Task Sequences.
+4. Create a selection profile that contains the drivers for the device.
+
+    A selection profile lets you select specific device drivers. For example, if you want to deploy the device drivers for a Surface Pro 4 device, you can create a selection profile that contains only the Surface Pro 4 device drivers.
+    
+    First, in the Out-of-Box Drivers node in the Deployment Workbench, create a folder that will contain your device drivers. Next, import the device drivers into the folder you just created. Finally, create the selection profile and specify the folder that contains the device drivers. For more information, see the following resources:
+
+    * [Create Folders to Organize Device Drivers for LTI Deployments](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateFolderstoOrganizeDeviceDriversforLTIDeployments)
+    * [Create Selection Profiles to Select the Device Drivers for LTI Deployments](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateSelectionProfilestoSelecttheDeviceDriversforLTIDeployments)
+5. Customize the task sequence to use the selection profile that you created in step 4.
+
+    You can customize the **Inject Driver** task sequence step in the **Preinstall** task sequence group in your task sequence to deploy only the device drivers in the selection profile. For more information, see [Configure Task Sequences to Deploy Device Drivers in Selection Profiles for LTI Deployments](https://technet.microsoft.com/en-us/library/dn759415.aspx#ConfigureTaskSequencestoDeployDeviceDriversinSelectionProfilesforLTIDeployments).
+
+### Capture reference image
+
+To capture the reference image, run the LTI task sequence that you created in the previous section. The LTI task sequence will allow you specify a storage location and file name for the .wim file, which contains the captured image.
+
+Use the Deployment Wizard to deploy Windows 10, your apps, and device drivers to the device, and then capture the .wim file. The LTI deployment process is almost fully automated: you provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated.
+
+>**Note**&nbsp;&nbsp;To fully automate the LTI deployment process, complete the steps in the “Fully Automated LTI Deployment Scenario” section of [Microsoft Deployment Toolkit Samples Guide](https://technet.microsoft.com/en-us/library/dn781089.aspx#Anchor_6).
+
+In most instances, deployments occur without incident. Only in rare occasions do deployments experience problems.
+
+#### To deploy Windows 10
+
+1. **Initiate the LTI deployment process.** Initiate the LTI deployment process booting over the network (PXE boot) or from local media. You selected the method for initiating the LTI deployment process in the [Select method to initiate deployment](#select-the-method-to-initiate-deployment) section earlier in this guide.
+2. **Complete the Deployment Wizard.** For more information about how to complete the Deployment Wizard, see the “Running the Deployment Wizard” section in [Using the Microsoft Deployment Toolkit](https://technet.microsoft.com/en-us/library/dn759415.aspx#Anchor_5).
+
+### Import reference image
+
+After you have captured the reference image (.wim file), import the image into the MDT deployment share or into System Center Configuration Manager (depending on which method you selected to perform Windows 10 deployments). You will deploy the reference image to the student and faculty devices in your district.
+
+Both the Deployment Workbench and the Configuration Manager console have wizards that help you import the reference image. After you import the reference image, you need to create a task sequence that will deploy the reference image.
+
+For more information about how to import the reference image into:
+
+* An MDT deployment share, see [Import a Previously Captured Image of a Reference Computer](https://technet.microsoft.com/en-us/library/dn759415.aspx#ImportaPreviouslyCapturedImageofaReferenceComputer).
+* System Center Configuration Manager, see [Manage operating system images with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627939.aspx) and [Customize operating system images with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627938.aspx).
+
+### Create a task sequence to deploy the reference image
+
+You created an LTI task sequence in the Deployment Workbench earlier in this process to deploy Windows 10 and your desktop apps to the reference device. Now that you have captured and imported your reference image, you need to create a tasks sequence to deploy it.
+
+As you might expect, both the Deployment Workbench and the Configuration Manager console have wizards that help you create a starting task sequence. After you create your task sequence, in most instances you will need to customize it to deploy additional apps, device drivers, and other software.
+
+For more information about how to create a task sequence in the:
+
+* Deployment Workbench for a deployment share, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
+* Configuration Manager console, see [Create a task sequence to install an operating system in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627927.aspx).
+
+####Summary
+In this section, you customized the MDT deployment share to deploy Windows 10 and desktop apps to one or more reference devices by creating and customizing MDT applications, device drivers, and applications. Next, you ran the task sequence, which deploys Windows 10, deploys your apps, deploys the appropriate device drivers, and captures an image of the reference device. Then, you imported the captured reference image into a deployment share or System Center Configuration Manager. Finally, you created a task sequence to deploy your captured reference image to faculty and student devices. At this point in the process, you’re ready to deploy Windows 10 and your apps to your devices. 
+
+## Prepare for device management
+
+Before you deploy Windows 10 in your district, you must prepare for device management. You will deploy Windows 10 in a configuration that complies with your requirements, but you want to help ensure that your deployments remain compliant.
+
+You also want to deploy apps and software updates after you deploy Windows 10. You need to manage apps and updates by using System Center Configuration Manager, Intune, or a combination of both (hybrid model).
+
+### Select Microsoft-recommended settings
+
+Microsoft has several recommended settings for educational institutions. Table 17 lists them, provides a brief description of why you need to configure them, and recommends methods for configuring the settings. Review the settings in Table 17 and evaluate their relevancy to your institution.
+
+>**Note**&nbsp;&nbsp;The settings for Intune in Table 17 also apply to the System Center Configuration Manager and Intune management (hybrid) method.
+
+Use the information in Table 17 to help you determine whether you need to configure the setting and which method you will use to do so. At the end, you will have a list of settings that you want to apply to the Windows 10 devices and know which management method you will use to configure the settings.
