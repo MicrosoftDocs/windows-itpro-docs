@@ -18,26 +18,26 @@ author: greg-lindsay
 
 This guide provides instructions for configuring a test lab that can be used as a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Detailed steps are provided for setting up the test lab, and for deploying Windows 10 under common scenarios with current deployment tools. The following topics are available in this guide:
 
-<table border="0" cellpadding="2">
+<table style="border:5px double;" cellpadding="2">
     <tr>
-        <td BGCOLOR="#a0e4fa">Topic</td>
-        <td BGCOLOR="#a0e4fa">Description</td>
+        <td BGCOLOR="#a0e4fa">**Topic**</td>
+        <td BGCOLOR="#a0e4fa">**Description**</td>
     <tr>
         <td>[Hardware and software requirements](#hardware-and-software-requirements)</td>
-        <td>Prerequisites to configure the PoC environment.</td>
+        <td>Prerequisites to configure the test lab environment.</td>
     </tr>
     <tr>
         <td>[Lab setup](#lab-setup)</td>
-        <td>A summary of the PoC environment.</td>
+        <td>A summary of the lab configuration.</td>
     </tr>
     <tr>
         <td>[Configure the PoC environment](#configure-the-poc-environment)</td>
-        <td>Step by step instructions to configure the PoC environment.</td>
+        <td>Step by step instructions to configure the test lab environment.</td>
     </tr>
     </tr>
      <tr>
         <td>[Step by step: Deploy Windows 10](#windows-10-poc-guides)</td>
-        <td>Child topics that provide step by step instructions to deploy Windows 10 using the PoC environment.</td>
+        <td>Instructions to deploy Windows 10 in the lab environment.</td>
     </tr>
 </table>
 
@@ -47,52 +47,52 @@ Two computers are required to complete this guide:
 
 <table border="1" cellpadding="2">
     <tr>
-        <td></td>
+        <td style="border:0px hidden white;"></td>
         <td BGCOLOR="#a0e4fa">**Computer 1**</td>
         <td BGCOLOR="#a0e4fa">**Computer 2**</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">Role</td>
+        <td BGCOLOR="#a8bbc1">Role</td>
         <td>Hyper-V host</td>
         <td>Client</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">Description</td>
+        <td BGCOLOR="#a8bbc1">Description</td>
         <td>This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.</td>
         <td>This computer is a test system on your corporate network that will be converted to a VHD.</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">OS</td>
+        <td BGCOLOR="#a8bbc1">OS</td>
         <td>Windows 8/8.1/10 or Windows Server 2012/2012 R2/2016</td>
         <td>Windows 7 or a later</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">Edition</td>
+        <td BGCOLOR="#a8bbc1">Edition</td>
         <td>Enterprise, Professional, or Education</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">Architecture</td>
+        <td BGCOLOR="#a8bbc1">Architecture</td>
         <td>64-bit</td>
         <td>Any*</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">RAM</td>
+        <td BGCOLOR="#a8bbc1">RAM</td>
         <td>8 GB RAM (16 GB recommended)</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">Disk</td>
+        <td BGCOLOR="#a8bbc1">Disk</td>
         <td>50 GB available hard disk space (100 GB recommended)</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">CPU</td>
+        <td BGCOLOR="#a8bbc1">CPU</td>
         <td>SLAT-Capable CPU</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa">Network</td>
+        <td BGCOLOR="#a8bbc1">Network</td>
         <td>Internet connection</td>
         <td>Any</td>
     </tr>
