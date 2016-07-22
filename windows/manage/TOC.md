@@ -28,7 +28,7 @@
 ### [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)
 ## [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)
 ## [Configure devices without MDM](configure-devices-without-mdm.md)
-## [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md)
+## [Windows 10 servicing options](introduction-to-windows-10-servicing.md)
 ## [Application development for Windows as a service](application-development-for-windows-as-a-service.md)
 ## [Windows Store for Business](windows-store-for-business.md)
 ### [Sign up and get started](sign-up-windows-store-for-business-overview.md)

@@ -29,7 +29,7 @@ In order to function properly, the Surface Hub must have access to a wired or wi
 -   Can receive an IP address using DHCP
 -   Open ports:
     -   HTTPS: 443
-    -   HTTP: 8080
+    -   HTTP: 80
 
 A wired connection is preferred.
 
@@ -79,7 +79,7 @@ In order to ensure that your environment is ready for the Surface Hub, verify th
     -   It must have these ports open:
 
         -   HTTPS: 443
-        -   HTTP: 8080
+        -   HTTP: 80
 
         If your network runs through a proxy, you'll need the proxy address or script information as well.
 
