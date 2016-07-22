@@ -19,7 +19,7 @@ If you don’t already have an EFS DRA certificate, you’ll need to create and 
 The recovery process included in this topic only works for desktop devices. WIP deletes the data on Windows 10 Mobile devices.   
 
 >**Important**<br>
-If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/en-us/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/en-us/library/cc875821.aspx).<p>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
+If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx).<p>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
 
 **To manually create an EFS DRA certificate**
 
@@ -93,15 +93,15 @@ It's possible that you might revoke data from an unenrolled device only to later
     The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location.
 
 ## Related topics
-- [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/en-us/magazine/2007.02.securitywatch.aspx)
+- [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)
 
-- [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/en-us/library/cc875821.aspx)
+- [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx)
 
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-edp-policy-using-intune.md)
 
 - [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md)
 
-- [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/en-us/library/cc875821.aspx#EJAA)
+- [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
 
 
 
