@@ -20,7 +20,7 @@ author: eross-msft
 System Center Configuration Manager 2016 helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
 
 >**Important**<br>
-If you previously created an WIP policy using System Center Configuration Manager version 1511 or 1602, you’ll need to recreate it using version 1605 Tech Preview or later. Editing an WIP policy created in version 1511 or 1602 is not supported in version 1605 Tech Preview. There is no migration path between WIP policies across these versions.
+If you previously created an WIP policy using System Center Configuration Manager version 1511 or 1602 in the Insider Preview program, you’ll need to recreate it using version 1605 Tech Preview or later. Editing an WIP policy created in version 1511 or 1602 is not supported in version 1605 Tech Preview. There is no migration path between WIP policies across these versions.
 
 ## Add an WIP policy
 After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for WIP, which in turn becomes your WIP policy.
