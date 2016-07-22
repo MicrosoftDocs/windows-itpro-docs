@@ -48,7 +48,7 @@ The **Create Configuration Item Wizard** starts.
 
 5.  On the **Supported Platforms** screen, click the **Windows 10** box, and then click **Next**.
 
-    ![Create Configuration Item wizard, choose the supported platforms for the policy](images/wip-sccm-supportwiplat.png)
+    ![Create Configuration Item wizard, choose the supported platforms for the policy](images/wip-sccm-supportedplat.png)
 
 6.  On the **Device Settings** screen, click **Enterprise data protection**, and then click **Next**.
 
