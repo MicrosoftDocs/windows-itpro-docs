@@ -93,15 +93,4 @@ Compatibility fixes are shipped as part of the Windows operating system and are 
 You can apply the compatibility fixes to any of your applications. However, Microsoft does not provide the tools to use the Compatibility Fix infrastructure to create your own custom fixes.
 
 ## Related topics
-
-
 [Managing Application-Compatibility Fixes and Custom Fix Databases](managing-application-compatibility-fixes-and-custom-fix-databases.md)
-
- 
-
- 
-
-
-
-
-
