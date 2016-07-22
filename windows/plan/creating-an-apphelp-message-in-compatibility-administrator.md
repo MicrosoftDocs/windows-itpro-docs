@@ -89,15 +89,4 @@ The following issues might occur with computers running Windows 2000:
 -   Copying an AppHelp entry for a system database or a custom-compatibility fix from a system database might cause Compatibility Administrator to hide the descriptive text.
 
 ## Related topics
-
-
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
- 
-
- 
-
-
-
-
-
