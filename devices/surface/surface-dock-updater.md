@@ -3,6 +3,7 @@ title: Microsoft Surface Dock Updater (Surface)
 description: This article provides a detailed walkthrough of Microsoft Surface Dock Updater.
 ms.assetid: 1FEFF277-F7D1-4CB4-8898-FDFE8CBE1D5C
 keywords: install, update, firmware
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
