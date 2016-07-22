@@ -54,16 +54,6 @@ You can use SUA in either of the following ways:
 </tr>
 </tbody>
 </table>
-
- 
-
-## Related topics
-
-
-[Deciding Whether to Fix an Application or Deploy a Workaround](deciding-whether-to-fix-an-application-or-deploy-a-workaround.md)
-
-[Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
  
 
  
