@@ -13,77 +13,37 @@ author: TrudyHa
 
 
 **Applies to**
+- Windows 10, version 1607
+ 
+We've replaced the majority of functionality included in the Application Compatibility Toolkit (ACT) with Upgrade Analytics, a solution in the Microsoft Operations Management Suite. Upgrade Analytics gives enterprises the tools to plan and manage the upgrade process end to end, allowing them to adopt new Windows releases more quickly. With new Windows versions being released multiple times a year, ensuring application and driver compatibility on an ongoing basis is key to adopting new Windows versions as they are released.
+ 
+Microsoft developed Upgrade Analytics in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Analytics was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
+ 
+With Windows telemetry enabled, Upgrade Analytics collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft. 
+ 
+Use Upgrade Analytics to get:
+- A visual workflow that guides you from pilot to production
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+- Detailed computer and application inventory
 
-The Microsoft® Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system.
+- Powerful computer level search and drill-downs 
 
-By using ACT, you can obtain compatibility information from Microsoft and software vendors, identify compatibility issues within your own organization, and share compatibility ratings with other ACT users. The tools in ACT help you analyze and mitigate compatibility issues before you deploy a version of Windows to your organization.
+- Guidance and insights into application and driver compatibility issues, with suggested fixes 
 
-ACT is available in the [Windows Assessment and Deployment Kit (ADK) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740).
+- Data driven application rationalization tools
+
+- Application usage information, allowing targeted validation; workflow to track validation progress and decisions
+
+- Data export to commonly used software deployment tools, including System Center Configuration Manager
+
+The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded. For more information about Upgrade Analytics, see [Manage Windows upgrades with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics)
+
+At the same time, we've kept the Standard User Analyzer tool, which helps you test your apps and to monitor API calls for potential compatibility issues, and the Compatiblility Administrator, which helps you to resolve potential compatibility issues.
 
 ## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Welcome to ACT](welcome-to-act.md)</p></td>
-<td align="left"><p>The Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system. With ACT, you can obtain compatibility information from Microsoft and software vendors, identify compatibility issues within your own organization, and share compatibility ratings with other ACT users. The tools in ACT help you analyze and mitigate compatibility issues before deploying a version of Windows to your organization.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Configuring ACT](configuring-act.md)</p></td>
-<td align="left"><p>This section provides information about setting up the Application Compatibility Toolkit (ACT) in your organization.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Using ACT](using-act.md)</p></td>
-<td align="left"><p>This section describes how to use the Application Compatibility Toolkit (ACT) in your organization.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Troubleshooting ACT](troubleshooting-act.md)</p></td>
-<td align="left"><p>This section provides troubleshooting information for the Application Compatibility Toolkit (ACT).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[ACT User Interface Reference](act-user-interface-reference.md)</p></td>
-<td align="left"><p>This section contains information about the user interface for Application Compatibility Manager (ACM), which is a tool in the Application Compatibility Toolkit (ACT).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[ACT Product and Documentation Resources](act-product-and-documentation-resources.md)</p></td>
-<td align="left"><p>The following sections provide links to resources and reference material for the Application Compatibility Toolkit (ACT).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[ACT Glossary](act-glossary.md)</p></td>
-<td align="left"><p>The following table lists terms and definitions used by the Application Compatibility Toolkit (ACT).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)</p></td>
-<td align="left"><p>You can fix some compatibility issues that are due to the changes made between Windows operating system versions. These issues can include User Account Control (UAC) restrictions.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+|Topic |Description |
+|------|------------|
+|[Standard User Analyzer (SUA) User's Guide](sua-users-guide.md) |The Standard User Analyzer (SUA) helps you test your applications and monitor API calls to detect compatibility issues related to the User Account Control (UAC) feature in Windows. |
+|[Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md) |The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows to your organization. |
+|[Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md) |You can fix some compatibility issues that are due to the changes made between Windows operating system versions. These issues can include User Account Control (UAC) restrictions. |
