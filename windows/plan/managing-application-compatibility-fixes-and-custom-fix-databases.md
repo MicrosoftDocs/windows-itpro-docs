@@ -56,17 +56,6 @@ This section provides information about managing your application-compatibility 
  
 
 ## Related topics
-
-
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
 [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md)
-
- 
-
- 
-
-
-
-
-
