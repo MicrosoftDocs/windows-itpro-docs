@@ -41,7 +41,7 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as Microsoft Intune or System Center Configuration Manager. 
 
     >**Note**<br>
-    To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-edp-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) topic.
+    To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) topic.
 
 **To verify your data recovery certificate is correctly set up on an WIP client computer**
 
@@ -97,9 +97,9 @@ It's possible that you might revoke data from an unenrolled device only to later
 
 - [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx)
 
-- [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-edp-policy-using-intune.md)
+- [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)
 
-- [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md)
+- [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md)
 
 - [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
 
