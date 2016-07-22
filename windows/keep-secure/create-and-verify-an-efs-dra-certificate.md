@@ -1,7 +1,7 @@
 ---
 title: Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate (Windows 10)
 description: Follow these steps to create, verify, and perform a quick recovery by using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
-keywords: Windows Information Protection, WIP, WIP, Enterprise Data Protection
+keywords: Windows Information Protection, WIP, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -11,10 +11,8 @@ ms.pagetype: security
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
 **Applies to:**
 
--   Windows 10 Insider Preview
+-   Windows 10, version 1607
 -   Windows 10 Mobile Preview
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
 
