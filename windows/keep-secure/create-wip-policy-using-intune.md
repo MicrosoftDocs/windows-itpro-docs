@@ -438,11 +438,11 @@ After you've decided where your protected apps can access enterprise data on you
 	
         - **No.** Hides the **Personal** option from employees. Be aware that if you pick this option, apps that use the **Save As** dialog box might encrypt new files as corporate data unless a different file path is given during the original file creation. After this happens, decryption of work files becomes more difficult.
 
-    - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether apps can show corporate data on a Windows 10 Mobile device **Lock** screen. The options are:
+    - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
 	
-        - **Yes (recommended).** Stop apps from reading corporate data on Windows 10 Mobile device when the screen is locked.
+        - **Yes (recommended).** Turns on the feature and provides the additional protection.
 	
-        - **No, or not configured.**  Allows apps to read corporate data on Windows 10 Mobile device when the screen is locked.
+        - **No, or not configured.**  Doesn't enable this feature.
 
     - **Revoke encryption keys on unenroll.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from Windows Information Protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
 
