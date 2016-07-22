@@ -73,8 +73,6 @@ The following flowchart shows the process of using the SUA Wizard.
     If the remedies do not fix the issue with the application, click **No** again, and the wizard may offer additional remedies. If the additional remedies do not fix the issue, the wizard informs you that there are no more remedies available. For information about how to run the SUA tool for additional investigation, see [Using the SUA Tool](using-the-sua-tool.md).
 
 ## Related topics
-
-
 [SUA User's Guide](sua-users-guide.md)
 
  
