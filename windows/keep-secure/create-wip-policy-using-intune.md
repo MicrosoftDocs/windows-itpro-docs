@@ -15,9 +15,9 @@ author: eross-msft
 -   Windows 10, version 1607
 -   Windows 10 Mobile Preview
 
-Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
+Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
 
-## Important note about the June service update
+## Important note about the June service update for Insider Preview
 We've received some great feedback from you, our Windows 10 Insider Preview customers, about our Windows Information Protection experiences and processes. Because of that feedback, we're delighted to deliver an enhanced apps policy experience with the June service update. This means that when you open an existing Windows Information Protection policy after we release the June service update in your test environment, your existing Windows 10 Windows Information Protection app rules (formerly in the **Protected Apps** area) will be removed.<p>To prepare for this change, we recommend that you make an immediate backup of your current app rules as they are today, so you can use them to help reconfigure your app rules with the enhanced experience. When you open an existing Windows Information Protection policy after we release the June service update, you'll get a dialog box telling you about this change. Click the **OK** button to close the box and to begin reconfiguring your app rules.
 
 ![Microsoft Intune: Reconfigure app rules list dialog box](images/wip-intune-app-reconfig-warning.png)
@@ -30,7 +30,7 @@ After you’ve set up Intune for your organization, you must create an WIP-speci
 **To add an WIP policy**
 1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy** from the **Tasks** area.
 
-2.  Go to **Windows**, click the **Enterprise data protection (Windows 10 Desktop and Mobile and later) policy**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
+2.  Go to **Windows**, click the **Windows Information Protection (Windows 10 Desktop and Mobile and later) policy**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
     ![Microsoft Intune: Create your new policy from the New Policy screen](images/intune-createnewpolicy.png)
 
@@ -43,10 +43,8 @@ During the policy-creation process in Intune, you can choose the apps you want t
 
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed desktop app (also known as a Classic Windows app), or an AppLocker policy file.
 
->**Important**<br>
-WIP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your App Rules list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
+>**Important**<br>WIP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App Rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
-<p>
 >**Note**<br>
 If you want to use **File hash** or **Path** rules, instead of **Publisher** rules, you must follow the steps in the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
 
@@ -58,11 +56,11 @@ For this example, we’re going to add Microsoft OneNote, a store app, to the **
 
     The **Add App Rule** box appears.
 
-        ![Microsoft Intune, Add a store app to your policy](images/intune-add-uwp-apps.png)
+    ![Microsoft Intune, Add a store app to your policy](images/intune-add-uwp-apps.png)
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Microsoft OneNote*.
 
-3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. Instructions for exempting an app are included in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section of this topic.
 
@@ -70,7 +68,7 @@ For this example, we’re going to add Microsoft OneNote, a store app, to the **
 
     The box changes to show the store app rule options.
 
-5.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is`CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.Office.OneNote`.
+5.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.Office.OneNote`.
 
 If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
 
@@ -86,28 +84,28 @@ If you don't know the publisher or product name, you can find them for both desk
 
     The API runs and opens a text editor with the app details.
 
-        ``` json
-            {
-                "packageIdentityName": "Microsoft.Office.OneNote",
-                "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-            }
-        ```
+    ```json
+    {
+        "packageIdentityName": "Microsoft.Office.OneNote",
+        "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    }
+    ```
+
 4. Copy the `publisherCertificateName` value into the **Publisher Name** box and copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
     >**Important**<br>
-    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:<br>
-    
-    ``` json
+    The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:
+        
+    ```json
         {
-	       "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-	    }
+            "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+        }
     ```
 
 **To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
 1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    >**Note**<br>
-    Your PC and phone must be on the same wireless network.
+    >**Note**<br>Your PC and phone must be on the same wireless network.
 
 2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
@@ -144,7 +142,7 @@ For this example, we’re going to add Internet Explorer, a desktop app, to the 
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Internet Explorer*.
 
-3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. Instructions for exempting an app are included in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section of this topic.
 
@@ -284,7 +282,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Allowed app list*.
 
-3.	Click **Allow** from the **Enterprise data protection mode** drop-down list.
+3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
     Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. Instructions for exempting an app are included in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section of this topic.
 
@@ -306,7 +304,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Exempt apps list*.
 
-3.	Click **Exempt** from the **Enterprise data protection mode** drop-down list.
+3.	Click **Exempt** from the **Windows Information Protection mode** drop-down list.
 
     Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-app-rules-to-your-policy) section of this topic.
 
@@ -349,8 +347,8 @@ After you've added a protection mode to your apps, you'll need to decide where t
 
 There are no default locations included with WIP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
 
->**Important**<br>
-- Every WIP policy should include policy that defines your enterprise network locations.<p>
+>**Important**
+- Every WIP policy should include policy that defines your enterprise network locations.
 - Classless Inter-Domain Routing (CIDR) notation isn’t supported for WIP configurations.
 
 **To define where your protected apps can find and send enterprise data on you network**
