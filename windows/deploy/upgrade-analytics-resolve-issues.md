@@ -1,17 +1,15 @@
 ﻿---
-title: Upgrade Analytics: Resolve application and driver issues (Windows 10)
+title: Upgrade Analytics - Resolve application and driver issues (Windows 10)
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Analytics.
 ms.prod: w10
 author: MaggiePucciEvans
 ---
 
-# Upgrade Analytics: Resolve application and driver issues
+# Upgrade Analytics - Resolve application and driver issues
 
 This section of the Upgrade Analytics workflow reports application and driver inventory and shows you which applications have known issues, which applications have no known issues, and which drivers have issues. We identify applications and drivers that need attention and suggest fixes when we know about them.
 
-You can change an application’s upgrade decision and a driver’s upgrade decision from the blades in this section. Select **Decide upgrade readiness** at the bottom of each blade to change available values.
-
-To change an application’s or a driver’s importance level, select **User changes**. Select the item you want to change and then select the appropriate option from the **Select upgrade decision** list.
+You can change an application’s upgrade decision and a driver’s upgrade decision from the blades in this section. To change an application’s or a driver’s importance level, select **User changes**. Select the item you want to change and then select the appropriate option from the **Select upgrade decision** list.
 
 Upgrade decisions include:
 
@@ -34,7 +32,17 @@ Applications with issues known to Microsoft are listed, grouped by upgrade asses
 
 ![Review applications with known issues](images/upgrade-analytics-apps-known-issues.png)
 
-Select **Decide upgrade readiness** to view all applications with issues. In the table view, sort on **UpgradeAssessment** to group applications into **Attention needed** and **Fix available**. Select **User changes** to change the upgrade decision for each application.
+To change an application's upgrade decision:
+
+1. Select **Decide upgrade readiness** to view applications with issues. 
+
+2. In the table view, sort on **UpgradeAssessment** to group applications into **Attention needed** and **Fix available**. 
+
+3. Select **User changes** to change the upgrade decision for each application.
+
+4. Select the applications you want to change to a specific upgrade decision and then then select the appropriate option from the **Select upgrade decision** list.
+
+5. Click **Save** when finished.  
 
 IMORTANT: Ensure that you have the most recent versions of the compatibility update and related KBs installed to get the most up-to-date compatibility information.
 
@@ -48,7 +56,7 @@ For applications assessed as **Attention needed**, review the table below for de
 | Attention needed   | No                                | Does not work with new OS, but won’t block upgrade | The application is not compatible with the new operating system, but won’t block the upgrade.                                                                                                                                                           | No action is required for the upgrade to proceed, however, you’ll have to install a compatible version of the application on the new operating system.<br>                                                                                                                                                                                                                              |
 | Attention needed   | Yes                               | Does not work with new OS, and will block upgrade  | The application is not compatible with the new operating system and will block the upgrade.                                                                                                                                                             | Remove the application before upgrading. <br><br>A compatible version of the application may be available.<br>                                                                                                                                                                                                                                                                      |
 | Attention needed   | Yes                               | May block upgrade, test application                | Issues were detected that may interfere with the upgrade, but need to be investigated further.<br>                                                                                                                                                    | Test the application’s behavior during upgrade. If it blocks the upgrade, remove it before upgrading and reinstall and test it on the new operating system.<br>                                                                                                                                                                                                                         |
-| Attention needed   | Maybe                             | Multiple                                           | <br><br>Different versions of the application have different issues <br><br>\[Make a note here about making sure the inventory scanner is up to date\] or a version of the application has more than one issue affecting its upgrade-readiness. | When you see Multiple in the query detailed view, click **Query** to see details about what issues were detected with the different versions of the application.<br><br>Can also be because data hasn’t been refreshed yet and is still showing computers with old KB installed.<br><br>Think about how to or whether to include more details about why there would be “multiple” |
+| Attention needed   | Maybe                             | Multiple                                           | Multiple issues are affecting the application. See detailed view for more information.| When you see Multiple in the query detailed view, click **Query** to see details about what issues were detected with the different versions of the application. |
 
 For applications assessed as **Fix available**, review the table below for details about known issues and ways to fix them that are known to Microsoft.
 
@@ -71,7 +79,17 @@ Applications with no issues known to Microsoft are listed, grouped by upgrade de
 
 Applications with no known issues that are installed on 2% or less of your total computer inventory \[number of computers application is installed on/total number of computers in your inventory\] are automatically marked **Ready to upgrade** and included in the applications reviewed count. Applications with no known issues that are installed on more than 2% of your total computer inventory are automatically marked **Not reviewed**.
 
-Be sure to review low install count applications for any business critical or important applications that may not yet be upgrade-ready, despite their low installation rates. Change the importance level and upgrade decision by selecting **User input**. Select the applications you want to change to a specific importance level and then select the appropriate option from the **Select importance level** list. Select the applications you want to change to a specific upgrade readiness status and then select the appropriate option from the **Select upgrade decision** list.
+Be sure to review low install count applications for any business critical or important applications that may not yet be upgrade-ready, despite their low installation rates. 
+
+To change an application's upgrade decision:
+
+1. Select **Decide upgrade readiness** to view applications with issues. Select **Table** to view the list in a table. 
+
+2. Select **User changes** to change the upgrade decision for each application.
+
+3. Select the applications you want to change to a specific upgrade decision and then then select the appropriate option from the **Select upgrade decision** list.
+
+4. Click **Save** when finished.  
 
 ## Review drivers with known issues
 
