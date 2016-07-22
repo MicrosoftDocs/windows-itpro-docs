@@ -1,6 +1,6 @@
 ---
 title: Set up a shared or guest PC with Windows 10 (Windows 10)
-description: tbd
+description: Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios.
 keywords: ["shared pc mode"]
 ms.prod: W10
 ms.mktglfcycl: manage

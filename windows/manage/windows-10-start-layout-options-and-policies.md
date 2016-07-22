@@ -123,7 +123,7 @@ Starting in Windows 10, version 1607, you can pin additional apps to the taskbar
 
 There are three categories of apps that might be pinned to a taskbar:
 * Apps pinned by the user
-* Default Windows apps, pinned during operating system installation (Edge, File Explorer, Store)
+* Default Windows apps, pinned during operating system installation (Microsoft Edge, File Explorer, Store)
 * Apps pinned by the enterprise, such as in an unattended Windows setup
 
  **Note**  

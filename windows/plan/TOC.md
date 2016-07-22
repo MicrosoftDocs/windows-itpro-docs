@@ -37,9 +37,5 @@
 ##### [Testing Your Application Mitigation Packages](testing-your-application-mitigation-packages.md)
 #### [Using the Sdbinst.exe Command-Line Tool](using-the-sdbinstexe-command-line-tool.md)
 ### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
-<<<<<<< HEAD
 ## [Change history for Plan for Windows 10 deployment](change-history-for-plan-for-windows-10-deployment.md)
-=======
 
-
->>>>>>> refs/remotes/origin/master
