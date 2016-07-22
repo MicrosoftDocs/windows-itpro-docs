@@ -62,8 +62,6 @@ You can export your search results to a text (.txt) file for later review or arc
 2.  Browse to the location where you want to store your search result file, and then click **Save**.
 
 ## Related topics
-
-
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
  
