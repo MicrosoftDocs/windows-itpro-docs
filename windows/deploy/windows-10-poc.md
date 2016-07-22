@@ -8,7 +8,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ---
 
-# Step by step guide: Demonstrate Windows 10 deployment in a test lab
+# Step by step guide: Deploy Windows 10 in a test lab
 
 **Applies to**
 
@@ -16,7 +16,7 @@ author: greg-lindsay
 
 ## In this guide
 
-This guide provides instructions for configuring a test lab to be used as a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Additional guides leverage the PoC environment and provide detailed steps for deploying Windows 10 under common scenarios with current deployment tools. The following topics are available in this guide:
+This guide provides instructions for configuring a test lab that can be used as a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Detailed steps are provided for setting up the test lab, and for deploying Windows 10 under common scenarios with current deployment tools. The following topics are available in this guide:
 
 <table border="0" cellpadding="2">
     <tr>
