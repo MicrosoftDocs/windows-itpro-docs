@@ -290,7 +290,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
     ```
 12. After you’ve created your XML file, you need to import it by using System Center Configuration Manager.
 
-**To import your Applocker policy file app rule using 1System Center Configuration Manager**
+**To import your Applocker policy file app rule using System Center Configuration Manager**
 1.	From the **App rules** area, click **Add**.
     
     The **Add app rule** box appears.
