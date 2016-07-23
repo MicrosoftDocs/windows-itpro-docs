@@ -1334,3 +1334,494 @@ Microsoft has several recommended settings for educational institutions. Table 1
 >**Note**&nbsp;&nbsp;The settings for Intune in Table 17 also apply to the System Center Configuration Manager and Intune management (hybrid) method.
 
 Use the information in Table 17 to help you determine whether you need to configure the setting and which method you will use to do so. At the end, you will have a list of settings that you want to apply to the Windows 10 devices and know which management method you will use to configure the settings.
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Recommendation</th>
+<th align="left">Description</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Use of Microsoft accounts</td>
+<td>You want faculty and students to use only Azure AD accounts for institution-owned devices. For these devices, do not use Microsoft accounts or associate a Microsoft account with the Azure AD accounts.<br/><br/>
+>**Note**&nbsp;&nbsp;Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices.
+**Group Policy.** Configure the [Accounts: Block Microsoft accounts](https://technet.microsoft.com/en-us/library/jj966262.aspx) Group Policy setting to use the **Users can’t add Microsoft accounts** setting option.<br/><br/>
+**Intune.** To enable or disable the use of Microsoft accounts, use the **Allow Microsoft account**, **Allow adding non-Microsoft accounts manually**, and **Allow settings synchronization for Microsoft accounts** policy settings under the **Accounts and Synchronization** section of a **Windows 10 General Configuration** policy.
+
+</td>
+</tr>
+
+<tr>
+<td>Restrict local administrator accounts on the devices</td>
+<td>Ensure that only authorized users are local administrators on institution-owned devices. Typically, you don’t want students to be administrators on instruction-owned devices. Explicitly specify the users who will be local administrators on a group of devices.<br></br>
+**Group Policy.** Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the **Delete all member users** and **Delete all member groups** check boxes to remove any existing members. For more information about how to configure Local Group preferences, see [Configure a Local Group Item](https://technet.microsoft.com/en-us/library/cc732525.aspx).<br/><br/>
+**Intune.** Not available.
+
+</td>
+</tr>
+
+<tr>
+<td>Restrict the local administrator accounts on the devices</td>
+<td>Ensure that only authorized users are local administrators on institution-owned devices. Typically, you don’t want students to be administrators on instruction-owned devices. Explicitly specify the users who will be local administrators on a group of devices.<br/><br/>
+**Group Policy.** Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the Delete all member users and Delete all member groups check boxes to remove any existing members. For more information about how to configure Local Group preferences, see Configure a Local Group Item.<br/><br/>
+**Intune.** Not available.
+
+</td>
+</tr>
+
+<tr>
+<td>Manage the built-in administrator account created during device deployment</td>
+<td>When you use MDT to deploy Windows 10, the MDT deployment process automatically creates a local Administrator account with the password you specified. As a security best practice, rename the built-in Administrator account and (optionally) disable it.<br/><br/>
+**Group Policy.** To rename the built-in Administrator account, use the **Accounts: Rename administrator account** Group Policy setting. For more information about how to rename the built-in Administrator account, see [To rename the Administrator account using the Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc747484.aspx). You specify the new name for the Administrator account. To disable the built-in Administrator account, use the **Accounts: Administrator account status** Group Policy setting. For more information about how to disable the built-in Administrator account, see [Accounts: Administrator account status](https://technet.microsoft.com/en-us/library/jj852165.aspx).<br/><br/>
+**Intune.** Not available.
+
+</td>
+</tr>
+
+<tr>
+<td>Control Windows Store access</td>
+<td>You can control access to Windows Store and whether existing Windows Store apps receive updates. You can only disable the Windows Store app in Windows 10 Education and Windows 10 Enterprise.<br/><br/>
+**Group Policy.** To disable the Windows Store app, use the **Turn off the Store Application** group policy setting. To prevent Windows Store apps from receiving updates, use the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Windows Store in my enterprise environment?](https://technet.microsoft.com/en-us/library/hh832040.aspx#BKMK_UseGP).<br/><br/>
+**Intune.** To enable or disable Windows Store access, use the **Allow application store** policy setting in the **Apps** section of a **Windows 10 General Configuration policy**.
+
+</td>
+</tr>
+
+<tr>
+<td>Use of Remote Desktop connections to devices</td>
+<td>Remote Desktop connections could allow unauthorized access to the device. Depending on your institution’s policies, you may want to disable Remote Desktop connections on your devices.<br/><br/>
+**Group Policy.** To enable or disable Remote Desktop connections to devices, use the **Allow Users to connect remotely using Remote Desktop** setting in Computer Configuration\Policies\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections.<br/><br/>
+**Intune.** Not available.
+
+</td>
+</tr>
+
+
+<tr>
+<td>Use of camera</td>
+<td>A device’s camera can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the camera on your devices.<br/><br/>
+**Group Policy.** Not available.<br/><br/>
+**Intune.** To enable or disable the camera, use the **Allow camera** policy setting in the **Hardware** section of a **Windows 10 General Configuration** policy.
+
+</td>
+</tr>
+
+<tr>
+<td>Use of audio recording</td>
+<td>Audio recording (by using the Sound Recorder app) can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the Sound Recorder app on your devices.<br/><br/>
+**Group Policy.** To disable the Sound Recorder app, use the **Do not allow Sound Recorder to run** Group Policy setting. You can disable other audio recording apps by using AppLocker policies. To create AppLocker policies, use the information in [Editing an AppLocker Policy](https://technet.microsoft.com/en-us/library/ee791894.aspx) and [Create Your AppLocker Policies](https://technet.microsoft.com/en-us/library/ee791899.aspx).<br/><br/>
+**Intune.** To enable or disable audio recording, use the **Allow voice recording** policy setting in the **Features** section of a **Windows 10 General Configuration** policy.
+
+</td>
+</tr>
+
+<tr>
+<td>Use of screen capture</td>
+<td>Screen captures can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the ability to perform screen captures on your devices.<br/><br/>
+**Group Policy.** Not available.<br/><br/>
+**Intune.** To enable or disable screen capture, use the **Allow screen capture** policy setting in the **System** section of a **Windows 10 General Configuration** policy.
+
+</td>
+</tr>
+
+<tr>
+<td>Use of location services</td>
+<td>Providing a device’s location can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the location service on your devices.<br/><br/>
+**Group Policy.** To enable or disable location services, use the **Turn off location** group policy setting in User Configuration\Windows Components\Location and Sensors.<br/><br/>
+**Intune.** To enable or disable location services, use the **Allow geolocation** policy setting in the **Hardware** section of a **Windows 10 General Configuration** policy.
+
+</td>
+</tr>
+
+<tr>
+<td>Changing wallpaper</td>
+<td>Custom wallpapers can be a source of disclosure or privacy issues in an education environment (if the wallpaper displays information about the user or device). Depending on your institution’s policies, you may want to prevent users from changing the wallpaper on institution-owned devices.<br/><br/>
+**Group Policy.** To configure the wallpaper, use the **Desktop WallPaper** setting in User Configuration\Administrative Templates\Desktop\Desktop.<br/><br/>
+**Intune.** Not available.
+
+</td>
+</tr>
+
+</tbody>
+</table>
+
+### Configure settings by using Group Policy
+
+Now, you’re ready to use Group Policy to configure settings. The steps in this section assume that you have an AD DS infrastructure. Here, you configure the Group Policy settings you selected in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
+
+For more information about Group Policy, see [Group Policy Planning and Deployment Guide](https://technet.microsoft.com/en-us/library/cc754948.aspx).
+
+#### To configure Group Policy settings
+
+1. Create a Group Policy object (GPO) to contain your Group Policy settings by completing the steps in [Create a new Group Policy object](https://technet.microsoft.com/en-us/library/cc738830.aspx).
+2. Configure the settings in the GPO by completing the steps in [Edit a Group Policy object](https://technet.microsoft.com/en-us/library/cc739902.aspx).
+3. Link the GPO to the appropriate AD DS site, domain, or organizational unit by completing the steps in [Link a Group Policy object to a site, domain, or organizational unit](https://technet.microsoft.com/en-us/library/cc738954.aspx).
+
+### Configure settings by using Intune
+
+Now, you’re ready to use Intune to configure settings. The steps in this section assume that you have an Office 365 subscription. Here, you configure the Intune settings that you selected in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
+
+For more information about Intune, see [Microsoft Intune Documentation](https://docs.microsoft.com/en-us/intune/).
+
+#### To configure Intune settings
+
+1. Add Intune to your Office 365 subscription by completing the steps in [Manage Intune licenses](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4).
+2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
+
+### Deploy and manage apps by using Intune
+
+If you selected to deploy and manage apps by using System Center Configuration Manager and Intune in a hybrid configuration, then skip this section and continue to the [Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager) section.
+
+You can use Intune to deploy Windows Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
+
+For more information about how to configure Intune to manage your apps, see the following resources:
+
+* [Add apps with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps)
+* [Deploy apps with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps)
+* [Update apps using Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/update-apps-using-microsoft-intune)
+* [Protect apps and data with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)
+* [Help protect your data with full or selective wipe using Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)
+
+###Deploy and manage apps by using System Center Configuration Manager
+
+You can use System Center Configuration Manager to deploy Windows Store and Windows desktop apps. System Center Configuration Manager allows you to create a System Center Configuration Manager application that you can use to deploy apps to different devices (such as Windows 10 desktop, Windows 10 Mobile, iOS, or Android devices) by using deployment types. You can think of a System Center Configuration Manager application as a box. You can think of deployment types as one or more sets of installation files and installation instructions within that box.
+
+For example, you could create a Skype application that contains a deployment type for Windows 10 desktop, Windows 10 Mobile, iOS, and Android. You can deploy the one application to multiple device types.
+
+>**Note**&nbsp;&nbsp;When you configure System Center Configuration Manager and Intune in a hybrid model, you deploy apps by using System Center Configuration manager as described in this section.
+
+System Center Configuration Manager helps you manage apps by monitoring app installation. You can determine how many of your devices have a specific app installed. Finally, you can allow users to install apps at their discretion or make apps mandatory.
+
+For more information about how to configure System Center Configuration Manager to deploy and manage your apps, see [Deploy and manage applications with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627959.aspx).
+
+### Manage updates by using Intune
+
+If you selected to manage updates by using System Center Configuration Manager and Intune in a hybrid configuration, then skip this section and continue to the [Manage updates by using System Center Configuration Manager](#manage-updates-by-using-system-center-configuration-manager) section.
+
+To help ensure that your users have the most current features and security protection, keep Windows 10 and your apps current with updates. To configure Windows 10 and app updates, use the **Updates** workspace in Intune.
+
+>**Note**&nbsp;&nbsp;You can only manage updates (including antivirus and antimalware updates) for Windows 10 desktop operating systems (not Windows 10 Mobile, iOS, or Android).
+
+For more information about how to configure Intune to manage updates and malware protection, see the following resources:
+
+•	[Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+•	[Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+
+### Manage updates by using System Center Configuration Manager
+
+To ensure that your users have the most current features and security protection, use the software updates feature in System Center Configuration Manager to manage updates. The software updates feature works in conjunction with WSUS to manage updates for Windows 10 devices.
+
+You configure the software updates feature to manage updates for specific versions of Windows and apps. Then, the software updates feature obtains the updates from Windows Updates by using the WSUS server in your environment. This integration provides greater granularity of control over updates and more specific targeting of updates to users and devices (compared to WSUS alone or Intune alone), which allows you to ensure that the right user or device gets the right updates.
+
+>**Note**&nbsp;&nbsp;When you configure System Center Configuration Manager and Intune in a hybrid model, you  use System Center Configuration manager to manage updates as described in this section.
+
+For more information about how to configure System Center Configuration Manager to manage Windows 10 and app updates, see [Deploy and manage software updates in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt634340.aspx).
+
+#### Summary
+
+In this section, you prepared your institution for device management. You identified the configuration settings that you want to use to manage your users and devices. You configured Group Policy or Intune to manage these configuration settings. You configured Intune or System Center Configuration Manager to manage your apps. Finally, you configured Intune or System Center Configuration Manager to manage software updates for Windows 10 and your apps.
+
+## Deploy Windows 10 to devices
+
+You’re ready to deploy Windows 10 to faculty and student devices. You must complete the steps in this section for each student device in the classrooms as well as for any new student devices you add in the future. You can also perform these actions for any device that’s eligible for a Windows 10 upgrade. This section discusses deploying Windows 10 to new devices, refreshing Windows 10 on existing devices, and upgrading existing devices that are running eligible versions of Windows 8.1 or Windows 7 to Windows 10. 
+
+### Prepare for deployment
+
+Prior to deployment of Windows 10, complete the tasks in Table 18. Most of these tasks are already complete, but use this step to make sure.
+
+|Task|   |
+|----|----|
+|1. |Ensure that the target devices have sufficient system resources to run Windows 10.|
+|2. |Identify the necessary devices drivers, and then import them into the MDT deployment share or System Center Configuration Manager.|
+|3. |For each Windows Store and Windows desktop app, create an MDT application or System Center Configuration Manager application.|
+|4. |Notify the students and faculty about the deployment.|
+
+*Table 18. Deployment preparation checklist*
+
+### Perform the deployment
+
+Use the Deployment Wizard to deploy Windows 10. With the LTI deployment process, you provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated.
+
+>**Note**&nbsp;&nbsp;To fully automate the LTI deployment process, complete the steps in the “Fully Automated LTI Deployment Scenario” section in the [Microsoft Deployment Toolkit Samples Guide](https://technet.microsoft.com/en-us/library/dn781089.aspx#Anchor_6).
+
+
+In most instances, deployments occur without incident. Only in rare occasions do deployments experience problems.
+
+#### To use LTI to deploy Windows 10
+
+1. **Initiate the LTI deployment process.** Initiate the LTI deployment process by booting over the network (PXE boot) or from local media. You selected the method for initiating the LTI deployment process in the [Select a method to initiate deployment](#select-a-method-to-initiate-deployment) section earlier in this guide.
+2. **Complete the Deployment Wizard.** For more information about how to complete the Deployment Wizard, see the “Running the Deployment Wizard” section of [Using the Microsoft Deployment Toolkit](https://technet.microsoft.com/en-us/library/dn759415.aspx#Anchor_5).
+
+#### To use ZTI to deploy Windows 10
+
+1.	**Initiate the ZTI deployment process.** Initiate the ZTI deployment process by booting over the network (PXE boot) or from local media. You selected the method for initiating the ZTI deployment process in the [Select a method to initiate deployment](#select-a-method-to-initiate-deployment) section earlier in this guide.
+
+### Set up printers
+
+After you have deployed Windows 10, the devices are almost ready for use. First, you must set up the printers that each classroom will use. Typically, you connect the printers to the same network as the devices in the same classroom. If you don’t have printers in your classrooms, skip this section and proceed to [Verify deployment](#verify-deployment).
+
+#### To set up printers
+
+1. Review the printer manufacturer’s instructions for installing the printer drivers.
+2. On the admin device, download the printer drivers.
+3. Copy the printer drivers to a USB drive.
+4. On a device, use the same account you used to set up Windows 10 in the [Prepare for deployment](#prepare-for-deployment) section to log on to the device.
+5. Plug the USB drive into the device.
+6. Follow the printer manufacturer’s instructions to install the printer drivers from the USB drive.
+7. Verify that the printer drivers were installed correctly by printing a test page.
+8. Complete steps 1–8 for each printer.
+
+### Verify deployment
+
+As a final quality control step, verify the device configuration to ensure that all apps run. Microsoft recommends that you perform all the tasks that the user would perform. Specifically, verify that:
+
+* The device can connect to the Internet and view the appropriate web content in Microsoft Edge.
+* Windows Update is active and current with software updates.
+* Windows Defender is active and current with malware signatures.
+* The SmartScreen Filter is active.
+* All Windows Store apps are properly installed and updated.
+* All Windows desktop apps are properly installed and updated.
+* Printers are properly configured.
+
+When you have verified that the first device is properly configured, you can move to the next device and perform the same steps.
+
+#### Summary
+
+You prepared the devices for deployment by verifying that they have adequate system resources and that the resources in the devices have corresponding Windows 10 device drivers. You performed device deployment over the network or by using local MDT media. Next, you configured the appropriate printers on the devices. Finally, you verified that the devices are properly configured and ready for use.
+
+## Maintain Windows devices and Office 365
+
+After the initial deployment, you need to perform certain tasks to maintain the Windows 10 devices and your Office 365 Education subscription. You should perform these tasks on the following schedule:
+
+* **Monthly.** These tasks help ensure that the devices are current with software updates and properly protected against viruses and malware.
+* **New semester or academic year.** Perform these tasks prior to the start of a new curriculum—for example, at the start of a new academic year or semester. These tasks help ensure that the classroom environments are ready for the next group of students.
+* **As required (ad hoc).** Perform these tasks as necessary in a classroom. For example, a new version of an app may be available, or a student may inadvertently corrupt a device so that you must restore it to the default configuration.
+
+Table 19 lists the school and individual classroom maintenance tasks, the resources for performing the tasks, and the schedule (or frequency) on which you should perform the tasks.
+
+<table>
+<colgroup>
+<col width="40%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Task and resources</th>
+<th align="left">Monthly</th>
+<th align="left">New semester or academic year</th>
+<th align="left">As required</th>
+
+</tr>
+</thead>
+<tbody>
+
+
+<tr>
+<td>Verify that Windows Update is active and current with operating system and software updates.<br/><br/>
+For more information about completing this task when you have:
+<ul>
+<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
+<li>Group Policy, see [Windows Update for Business](https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business).</li>
+<li>WSUS, see [Windows Server Update Services](https://msdn.microsoft.com/en-us/library/bb332157.aspx).</li>
+<li>Neither Intune, Group Policy, nor WSUS, see “Install, upgrade, & activate” in [Windows 10 help](https://support.microsoft.com/en-us/products/windows?os=windows-10).</li>
+</ul>
+</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Verify that Windows Defender is active and current with malware signatures.<br/><br/>
+For more information about completing this task, see [Turn Windows Defender on or off](https://support.microsoft.com/en-us/instantanswers/742778f2-6aad-4a8d-8f5d-db59cebc4f24/how-to-protect-your-windows-10-pc#v1h=tab02) and [Updating Windows Defender](https://support.microsoft.com/en-us/instantanswers/742778f2-6aad-4a8d-8f5d-db59cebc4f24/how-to-protect-your-windows-10-pc#v1h=tab03).
+</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Verify that Windows Defender has run a scan in the past week and that no viruses or malware were found.<br/><br/>
+For more information about completing this task, see the “How do I find and remove a virus?” topic in [Protect my PC from viruses](https://support.microsoft.com/en-us/help/17228/windows-protect-my-pc-from-viruses).
+</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Download and approve updates for Windows 10, apps, device driver, and other software.<br/><br/>
+For more information, see:
+<ul>
+<li>[Manage updates by using Intune](#manage-updates-by-using-intune)</li>
+<li>[Manage updates by using System Center Configuration Manager](#manage-updates-by-using-system-center-configuration-manager)</li>
+</ul>
+</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Verify that you’re using the appropriate Windows 10 servicing options for updates and upgrades (such as selecting whether you want to use Current Branch or Current Branch for Business).<br/><br/>
+For more information about Windows 10 servicing options for updates and upgrades, see [Windows 10 servicing options](https://technet.microsoft.com/itpro/windows/manage/introduction-to-windows-10-servicing).
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Refresh the operating system and apps on devices.<br/><br/>
+For more information about completing this task, see the following resources:
+<ul>
+<li>[Prepare for deployment](#prepare-for-deployment)</li>
+<li>[Capture the reference image](#capture-the-reference-image)</li>
+<li>[Deploy Windows 10 to devices](#deploy-windows-10-to-devices)</li>
+</ul>
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Install any new Windows desktop apps, or update any Windows desktop apps used in the curriculum.<br/><br/>
+For more information, see:
+<ul>
+<li>[Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune)</li>
+<li>[Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager)</li>
+</ul>
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Install new or update existing Windows Store apps used in the curriculum.<br/><br/>
+Windows Store apps are automatically updated from Windows Store. The menu bar in the Windows Store app shows whether any Windows Store app updates are available for download.<br/><br/>
+You can also deploy Windows Store apps directly to devices by using Intune, System Center Configuration Manager, or both in a hybrid configuration. For more information, see:
+<ul>
+<li>[Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune)</li>
+<li>[Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager)</li>
+</ul>
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Remove unnecessary user accounts (and corresponding licenses) from AD DS and Office 365 (if you have an on-premises AD DS infrastructure).<br/><br/>
+For more information about how to:
+<ul>
+<li>Remove unnecessary user accounts, see [Active Directory Administrative Center](https://technet.microsoft.com/windows-server-docs/identity/ad-ds/get-started/adac/active-directory-administrative-center).</li>
+<li>Remove licenses, see [Assign or remove licenses for Office 365 for business](https://support.office.com/en-us/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).</li>
+</ul>
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Add new accounts (and corresponding licenses) to AD DS (if you have an on-premises AD DS infrastructure).<br/><br/>
+For more information about how to:
+<ul>
+<li>Add user accounts, see [Bulk-import user and group accounts into AD DS](#bulk-import-user-and-group-accounts-into-ad-ds).</li>
+<li>Assign licenses, see [Assign or remove licenses for Office 365 for business](https://support.office.com/en-us/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).</li>
+</ul>
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Remove unnecessary user accounts (and corresponding licenses) from Office 365 (if you do not have an on-premises AD DS infrastructure).<br/><br/>
+For more information about how to:
+<ul>
+<li>Remove unnecessary user accounts, see [Delete or restore users](https://support.office.com/en-us/article/Delete-or-restore-users-d5155593-3bac-4d8d-9d8b-f4513a81479e).</li>
+<li>Remove licenses, see [Assign or remove licenses for Office 365 for business](https://support.office.com/en-us/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).</li>
+</ul>
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Add new accounts (and corresponding licenses) to Office 365 (if you don’t have an on-premises AD DS infrastructure).<br/><br/>
+For more information about how to:
+<ul>
+<li>Add user accounts, see [Add users to Office 365 for business](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc) and [Add users individually or in bulk to Office 365](https://www.youtube.com/watch?v=zDs3VltTJps).</li>
+<li>Assign licenses, see [Assign or remove licenses for Office 365 for business](https://support.office.com/en-us/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).</li>
+</ul>
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Create or modify security groups, and manage group membership in Office 365.<br/><br/>
+For more information about how to:
+<ul>
+<li>Create or modify security groups, see [Create an Office 365 Group in the admin center](https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&rs=en-001&ad=US).</li>
+<li>Manage group membership, see [Manage Group membership in the Office 365 admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a).</li>
+</ul>
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Create or modify Exchange Online or Microsoft Exchange Server distribution lists in Office 365.<br/><br/>
+For more information about how to create or modify Exchange Online or Exchange Server distribution lists in Office 365, see [Create and manage distribution groups](https://technet.microsoft.com/library/bb124513.aspx) and [Create, edit, or delete a security group](https://support.office.com/en-us/article/Create-edit-or-delete-a-security-group-55C96B32-E086-4C9E-948B-A018B44510CB).
+</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>Install new student devices.<br/><br/>
+Follow the same steps you followed in the [Deploy Windows 10 to devices](#deploy-windows-10-to-devices) section.
+</td>
+<td></td>
+<td></td>
+<td>x</td>
+</tr>
+
+</tbody>
+</table>
+<br/>
+
+*Table 19. School and individual classroom maintenance tasks, with resources and the schedule for performing them*
+
+#### Summary
+
+You have now identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your district and individual school configuration should match the typical school configuration you saw in the section Plan a typical district configuration. By performing these maintenance tasks, you help ensure that your district as a whole stays secure and is configured as you specified. 
