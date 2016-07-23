@@ -7,11 +7,7 @@ author: MaggiePucciEvans
 
 # Upgrade Analytics requirements
 
-Prior to installing the Upgrade Analytics solution, review the following requirements and recommendations for using the solution to simplify and accelerate your Windows upgrade.
-
-This article introduces the steps needed to get up and running with Upgrade Analytics. We recommend that you review this list of requirements before getting started as you may need to collect information, such as account credentials, and get approval from internal IT groups, such as your network security group, before you can start using Upgrade Analytics.
-
-See *Get started with Upgrade Analytics* for detailed, step-by-step instructions for configuring Upgrade Analytics and getting started on your Windows upgrade project.
+This article introduces concepts and steps needed to get up and running with Upgrade Analytics. We recommend that you review this list of requirements before getting started as you may need to collect information, such as account credentials, and get approval from internal IT groups, such as your network security group, before you can start using Upgrade Analytics.
 
 ## Supported upgrade paths 
 
@@ -61,9 +57,11 @@ NOTE: The compatibility update KB runs under the computer’s system account and
 
 **Enable telemetry and connect data sources.** To allow Upgrade Analytics to collect system, application, and driver data and assess your organization’s upgrade readiness, communication must be established between Upgrade Analytics and user computers. You’ll need to connect Upgrade Analytics to your data sources and enable telemetry to establish communication.
 
-**Configure and deploy Upgrade Analytics deployment script.** Configure and deploy the Upgrade Analytics deployment script to user computers to finish setting up.
-
 **Deploy compatibility update and related KBs.** The compatibility update KB scans your systems and enables application usage tracking. If you don’t already have this KB installed, you can download the applicable version from the Microsoft Update Catalog or deploy it using Windows Server Update Services (WSUS) or your software distribution solution, such as System Center Configuration Manager.
 
-IMPORTANT: The compatibility update and related KBs are frequently updated to include new compatibility issues as they become known to Microsoft. We recommend that you use a deployment system that allows for automatic updates of these KBs. The compatibility update KB scans computers only when it is updated and does not scan computers on a schedule, although an option to kick off the scan manually is available.
+>**Important**<br> The compatibility update and related KBs are frequently updated to include new compatibility issues as they become known to Microsoft. We recommend that you use a deployment system that allows for automatic updates of these KBs. The compatibility update KB collects inventory information from computers only when it is updated. 
 
+**Configure and deploy Upgrade Analytics deployment script.** Configure and deploy the Upgrade Analytics deployment script to user computers to finish setting up.
+
+See [Get started with Upgrade Analytics](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-analytics-get-started
+) for detailed, step-by-step instructions for configuring Upgrade Analytics and getting started on your Windows upgrade project.

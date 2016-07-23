@@ -9,11 +9,11 @@ author: MaggiePucciEvans
 
 ## Supported versions of Windows
 
-The compatibility update KB that sends data from user computers to Upgrade Analytics works only with Windows 7 SP1 and Windows 8.1. Upgrade Analytics cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
+The compatibility update KB that sends telemetry data from user computers to Upgrade Analytics works only with Windows 7 SP1 and Windows 8.1. Upgrade Analytics cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
 
-With Windows 10 edition 1607, the compatibility update KB is installed automatically.
+<!--With Windows 10, edition 1607, the compatibility update KB is installed automatically.-->
 
-## Telemetry
+## User authenticated proxies not supported in this release
 
 User computers communicate with Upgrade Analytics through Windows telemetry. The Windows telemetry client runs in System context and requires a connection to various Microsoft telemetry endpoints. User authenticated proxies are not supported at this time. Work with your Network Administrator to ensure that user computers can communicate with telemetry endpoints.
 
@@ -27,7 +27,7 @@ Windows telemetry data from user computers is encrypted, sent to, and processed 
 
 ## Known issues
 
-When viewing inventory items in table view, the maximum number of rows that can be viewed and exported is limited to 5,000. If you need to view or export more than 5,000 items, reduce the scope of the query so you can export a list with fewer items.
+- When viewing inventory items in table view, the maximum number of rows that can be viewed and exported is limited to 5,000. If you need to view or export more than 5,000 items, reduce the scope of the query so you can export a list with fewer items.
 
-Clicking a column heading a client-side sort. Which means it basically only sorts what’s currently displayed…kind of (it actually does what’s shown + a little more but not the complete query result, not really sure if this is the intended behavior but currently investigating). The bottom line is, if they want sort to work as they expect, they need to write a new query, something like | sort TotalInstalls desc. So I’d recommend removing this line for now.
+- Sorting data by clicking a column heading may not sort your complete list of items. For information about how to sort data in OMS, see [Sorting DocumentDB data using Order By](https://azure.microsoft.com/documentation/articles/documentdb-orderby).
 

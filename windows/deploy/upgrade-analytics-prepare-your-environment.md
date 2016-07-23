@@ -1,19 +1,19 @@
 ﻿---
-title: Upgrade Analytics: Prepare your environment (Windows 10)
+title: Upgrade Analytics - Prepare your environment (Windows 10)
 description: Describes how to prepare your environment so that you can use Upgrade Analytics to manage Windows upgrades.
 ms.prod: w10
 author: MaggiePucciEvans
 ---
 
-# Upgrade Analytics: Prepare your environment
+# Upgrade Analytics - Prepare your environment
 
-This section of the workflow reports your computer and application inventory and lists computers that you can use in a pilot with no known issues or with fixable driver issues. Additionally, you can determine the priority level of applications to indicate which applications the team should focus on to get them upgrade ready.
+This section of the Upgrade Analytics workflow reports your computer and application inventory and lists computers that you can use in a pilot with no known issues or with fixable driver issues. Additionally, you can determine the priority level of applications to indicate which applications the team should focus on to get them upgrade ready.
 
 The blades in the **Prepare your environment** section are:
 
 ## Upgrade overview
 
-Displays the total count of computers sending data to Upgrade Analytics and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
+Displays the total count of computers sharing data with Microsoft and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
 
 Check this blade for data refresh status, including the date and time of the most recent data update and whether user changes are reflected. If a user change is pending when changing the upgrade assessment or importance level of an application or driver, **Data refresh pending** is displayed in orange. User changes are processed once every 24 hours and read **Up to date** in green when there are no pending changes.
 
@@ -25,7 +25,7 @@ Check this blade for data refresh status, including the date and time of the mos
 
 Select **Total computers** for a list of computers and details about them, including:
 
--   Computer ID or computer name
+-   Computer ID and computer name
 
 -   Computer manufacturer
 
@@ -47,18 +47,14 @@ Select **Total applications** for a list of applications discovered on user comp
 
 -   Count of computers the application is installed on
 
--   Count of number of computers that opened the application at least once in the past 30 days
+-   Count of computers that opened the application at least once in the past 30 days
 
 -   Percentage of computers in your total computer inventory that opened the application in the past 30 days
 
 -   Issues detected, if any
 
 -   Upgrade assessment based on analysis of application data
-
--   Importance level (click **User changes** to change)
-
--   Upgrade decision (click **User changes** to change)
-
+   
 -   Roll up level
 
 ## Run a pilot
@@ -81,9 +77,9 @@ Before you start your pilot project, be sure to review upgrade assessment and gu
 
 Select **Export computers** to view pilot-ready computers organized by operating system. After you select the computers you want to use in a pilot, click Export to generate and save a comma-separated value (csv) file.
 
-NOTE: There is a known issue where the maximum number of exported rows must be less than or equal to 5,000.
+>**Important**> When viewing inventory items in table view, the maximum number of rows that can be viewed and exported is limited to 5,000. If you need to view or export more than 5,000 items, reduce the scope of the query so you can export fewer items at a time.
 
-See [Plan for Windows 10 deployment](http://technet.microsoft.com/en-us/itpro/windows/plan/index) for more information about ways to deploy Windows in your organization. Read about [how Microsoft IT deployed Windows as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade) for best practices using the in-place upgrade method.
+See [Plan for Windows 10 deployment](http://technet.microsoft.com/itpro/windows/plan/index) for more information about ways to deploy Windows in your organization. Read about [how Microsoft IT deployed Windows as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade) for best practices using the in-place upgrade method.
 
 ## Prioritize applications
 
