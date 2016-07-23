@@ -10,4 +10,5 @@
 ### [Set up Take a Test on multiple PCs (Preview)](take-a-test-multiple-pcs.md)
 ### [Take a Test app technical reference (Preview)](take-a-test-app-technical.md) 
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
+## [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)
 ## [Chromebook migration guide](chromebook-migration-guide.md)

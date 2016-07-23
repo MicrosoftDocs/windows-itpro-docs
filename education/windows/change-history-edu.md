@@ -12,6 +12,12 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## July 2016
+
+| New or changed topic | Description |
+|----------------------|-------------|
+|[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school.md)|New |
+
 ## June 2016
 
 | New or changed topic | Description |
