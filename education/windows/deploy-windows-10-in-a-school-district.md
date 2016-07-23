@@ -24,19 +24,19 @@ Proper preparation is essential for a successful district deployment. To avoid c
 
 As part of preparing for your district deployment, you need to plan your district configuration — the focus of this guide. Figure 1 illustrates a typical finished district configuration that you can use as a model (the blueprint in our builder analogy) for the finished state.
 
-![]()
+![Typical district configuration for this guide](images/edu-districtdeploy-fig1.png "Typical district configuration for this guide")
 
 *Figure 1. Typical district configuration for this guide*
 
 A *district* consists of multiple schools, typically at different physical locations. Figure 2 illustrates a typical school configuration within the district that this guide uses.
 
-![]()
+![Typical school configuration for this guide](images/edu-districtdeploy-fig2.png "Typical school configuration for this guide")
 
 *Figure 2. Typical school configuration for this guide*
 
 Finally, each school consists of multiple classrooms. Figure 3 shows the classroom configuration this guide uses.
 
-![]()
+![Typical classroom configuration in a school](images/edu-districtdeploy-fig3.png "Typical classroom configuration in a school")
 
 *Figure 3. Typical classroom configuration in a school*
 
@@ -123,7 +123,7 @@ The high-level process for deploying and configuring devices within individual c
 8. On the student and faculty devices, deploy Windows 10 to new or existing devices, or upgrade eligible devices to Windows 10.
 9. On the admin device, manage the Windows 10 devices and apps, the Office 365 subscription, and the AD DS–Azure AD integration.
 
-![]()
+![How district configuration works](images/edu-districtdeploy-fig4.png "How district configuration works")
 
 *Figure 4. How district configuration works*
 
@@ -1825,3 +1825,16 @@ Follow the same steps you followed in the [Deploy Windows 10 to devices](#deploy
 #### Summary
 
 You have now identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your district and individual school configuration should match the typical school configuration you saw in the section Plan a typical district configuration. By performing these maintenance tasks, you help ensure that your district as a whole stays secure and is configured as you specified. 
+
+## Related topics
+
+* [Try it out: Windows 10 deployment (for educational institutions)](https://technet.microsoft.com/en-us/windows/mt574244.aspx)
+* [Try it out: Windows 10 in the classroom](https://technet.microsoft.com/en-us/windows/mt574243.aspx)
+* [Chromebook migration guide](https://technet.microsoft.com/edu/windows/chromebook-migration-guide)
+* [Deploy Windows 10 in a school](https://technet.microsoft.com/edu/windows/deploy-windows-10-in-a-school)
+* [Automate common Windows 10 deployment and configuration tasks for a school environment (video)](https://technet.microsoft.com/en-us/windows/mt723345)
+* [Deploy a custom Windows 10 Start menu layout for a school (video)](https://technet.microsoft.com/en-us/windows/mt723346)
+* [Manage Windows 10 updates and upgrades in a school environment (video)](https://technet.microsoft.com/en-us/windows/mt723347)
+* [Reprovision devices at the end of the school year (video)](https://technet.microsoft.com/en-us/windows/mt723344)
+* [Use MDT to deploy Windows 10 in a school (video)](https://technet.microsoft.com/en-us/windows/mt723343)
+* [Use Windows Store for Business in a school environment (video)](https://technet.microsoft.com/en-us/windows/mt723348)
