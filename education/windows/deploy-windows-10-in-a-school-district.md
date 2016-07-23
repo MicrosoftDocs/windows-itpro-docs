@@ -403,7 +403,6 @@ Use the information in Table 6 to determine which combination of app and update 
 <td>Intune</td>
 <td>Intune is a cloud-based solution that allows you to manage apps and software updates for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Azure AD.<br/><br/>Select this method when you:
 <ul>
-<li>
 <li>Selected MDT only to deploy Windows 10.</li>
 <li>Want to manage institution-owned and personal devices that are not domain joined.</li>
 <li>Want to manage Azure AD domain-joined devices.</li>
@@ -591,21 +590,47 @@ Faculty and students can use Office applications online (standard plans) or run 
 </tr>
 
 </tbody>
-</table>
+</table><br/>
+*Table 8. Comparison of standard and Office 365 ProPlus plans*
 </li>
 <li>Determine whether students or faculty need Azure Rights Management.
 
   You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).</li>
 <li>Record the Office 365 Education license plans needed for the classroom in Table 9.
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Quantity</th>
+<th align="left">Plan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Office 365 Education for students</td>
+</tr>
 
-|Quantity| Plan|
-|--------|-----|
-|   |Office 365 Education for students   |
-|   |Office 365 Education for faculty   |
-|   |Azure Rights Management for students   |
-|   |Azure Rights Management for faculty   |
+<tr>
+<td></td>
+<td>Office 365 Education for faculty</td>
+</tr>
 
+<tr>
+<td></td>
+<td>Azure Rights Management for students</td>
+</tr>
 
+<tr>
+<td></td>
+<td>Azure Rights Management for faculty</td>
+</tr>
+</tbody>
+</table>
+<br/>
 *Table 9. Office 365 Education license plans needed for the classroom*
 </li>
 
@@ -652,7 +677,6 @@ To make it easier for faculty and students to join your Office 365 Education sub
 >**Note**&nbsp;&nbsp;By default, automatic tenant join is enabled in Office 365 Education, with the exception of certain areas in Europe, the Middle East, and Africa. These countries require opt-in steps to add new users to existing Office 365 tenants. Check your country requirements to determine the automatic tenant join default configuration. Also, if you use Azure AD Connect, then automatic tenant join is disabled. For more information, see [Office 365 Education Self-Sign up: Technical FAQ](https://support.office.com/en-us/article/Office-365-Education-Self-Sign-up-Technical-FAQ-7fb1b2f9-94c2-4cbb-b01e-a6eca34261d6?ui=en-US&rs=en-US&ad=US&WT.mc_id=eml_CXM__33537_MOD_EDU_Student_Advantage_Rush).
 
 Office 365 uses the domain portion of the user’s email address to know which Office 365 tenant to join. For example, if a faculty member or student provides an email address of user@contoso.edu, then Office 365 automatically performs one of the following tasks:
-
 * If an Office 365 tenant with that domain name (contoso.edu) exists, Office 365 automatically adds the user to that tenant.
 * If an Office 365 tenant with that domain name (contoso.edu) does not exists, Office 365 automatically creates a new Office 365 tenant with that domain name and adds the user to it.
 
@@ -681,8 +705,8 @@ Although all new Office 365 Education subscriptions have automatic licensing ena
 
 |Action |Windows PowerShell command|
 |-------|--------------------------|
-|Enable |`Set-MsolCompanySettings -AllowAdHocSubscriptions $true`    |
-|Disable|`Set-MsolCompanySettings -AllowAdHocSubscriptions $false`    |
+|Enable |`Set-MsolCompanySettings -AllowAdHocSubscriptions $true` |
+|Disable|`Set-MsolCompanySettings -AllowAdHocSubscriptions $false`|
 
 *Table 11. Windows PowerShell commands to enable or disable automatic licensing*
 
@@ -726,7 +750,7 @@ In this method, you have an on-premises AD DS domain. As shown in Figure 5, the 
 
 >**Note**&nbsp;&nbsp;Azure AD Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [Generic LDAP Connector for FIM 2010 R2 Technical Reference](https://technet.microsoft.com/en-us/library/dn510997.aspx).
 
-![]()
+![Automatic synchronization between AD DS and Azure AD](images/edu-districtdeploy-fig5.png "Automatic synchronization between AD DS and Azure AD")
 
 *Figure 5. Automatic synchronization between AD DS and Azure AD*
 
@@ -736,7 +760,7 @@ For more information about how to perform this step, see the [Integrate on-premi
 
 In this method, you have no on-premises AD DS domain. As shown in Figure 6, you manually prepare a .csv file with the student information from your source, and then manually import the information directly into Azure AD. The .csv file must be in the format that Office 365 specifies.
 
-![]()
+![Bulk import into Azure AD from other sources](images/edu-districtdeploy-fig6.png "Bulk import into Azure AD from other sources")
 
 *Figure 6. Bulk import into Azure AD from other sources*
 
@@ -766,13 +790,13 @@ You can deploy the Azure AD Connect tool:
 
 * On premises. As shown in Figure 7, Azure AD Connect runs on premises, which has the advantage of not requiring a VPN connection to Azure. It does, however, require a virtual machine (VM) or physical server.
 
-  ![]()
+  ![Azure AD Connect on premises](images/edu-districtdeploy-fig7.png "Azure AD Connect on premises")
 
   *Figure 7. Azure AD Connect on premises*
 
 * In Azure. As shown in Figure 8, Azure AD Connect runs on a VM in Azure AD, which has the advantages of being faster to provision (than a physical, on-premises server), offers better site availability, and helps reduce the number of on-premises servers. The disadvantage is that you need to deploy a VPN gateway on premises.
 
-  ![]()
+  ![Azure AD Connect in Azure](images/edu-districtdeploy-fig8.png "Azure AD Connect in Azure")
 
   *Figure 8. Azure AD Connect in Azure*
 
@@ -842,6 +866,8 @@ After you have selected your user and group account bulk import method, you’re
 |Ldifde.exe |Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript |VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).|
 |Windows PowerShell |Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx). |
+
+*Table 13. Source file format for each bulk import method*
 
 ### Import the user accounts into AD DS
 
@@ -947,6 +973,8 @@ After you create the Windows Store for Business portal, configure it by using th
 |Offline licensing|Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see the “Licensing model: online and offline licenses” section in [Apps in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).|
 |Permissions |Allows you to grant other users in your organization the ability to buy, manage, and administer your Windows Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business).|
 |Private store |Allows you to change the organization name used in your Windows Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).|
+
+*Table 14. Menu selections to configure Windows Store for Business settings*
 
 ### Find, acquire, and distribute apps in the portal
 
@@ -1094,7 +1122,7 @@ The first step in preparing for Windows 10 deployment is to configure—that is,
 
 <tr>
 <td>1. Import operating systems</td>
-<td>Import the operating systems that you selected in the [Select operating systems](#select-operating-systems) section into the deployment share. For more information about how to import operating systems, see [Import an Operating System into the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#ImportanOperatingSystemintotheDeploymentWorkbench).</td>
+<td>Import the operating systems that you selected in the [Select the operating systems](#select-the-operating-systems) section into the deployment share. For more information about how to import operating systems, see [Import an Operating System into the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#ImportanOperatingSystemintotheDeploymentWorkbench).</td>
 </tr>
 
 <tr>
@@ -1161,6 +1189,8 @@ For more information about how to update a deployment share, see [Update a Deplo
 
 </tbody>
 </table>
+
+*Table 16. Tasks to configure the MDT deployment share*
 
 ### Configure System Center Configuration Manager
 
@@ -1454,6 +1484,8 @@ Use the information in Table 17 to help you determine whether you need to config
 
 </tbody>
 </table>
+<br/>
+*Table 17. Recommended settings for educational institutions*
 
 ### Configure settings by using Group Policy
 
@@ -1617,7 +1649,6 @@ Table 19 lists the school and individual classroom maintenance tasks, the resour
 <col width="10%" />
 <col width="10%" />
 <col width="10%" />
-
 </colgroup>
 <thead>
 <tr class="header">
@@ -1625,12 +1656,9 @@ Table 19 lists the school and individual classroom maintenance tasks, the resour
 <th align="left">Monthly</th>
 <th align="left">New semester or academic year</th>
 <th align="left">As required</th>
-
 </tr>
 </thead>
 <tbody>
-
-
 <tr>
 <td>Verify that Windows Update is active and current with operating system and software updates.<br/><br/>
 For more information about completing this task when you have:
@@ -1740,12 +1768,6 @@ For more information about how to:
 <td>x</td>
 </tr>
 
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 
 <tr>
 <td>Add new accounts (and corresponding licenses) to AD DS (if you have an on-premises AD DS infrastructure).<br/><br/>
