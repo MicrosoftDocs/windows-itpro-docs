@@ -358,7 +358,8 @@ Use either Group Policy or MDM policies to manage settings for Microsoft Edge. F
 
 Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
 
-> **Note:**  The Microsoft Edge Group Policy names were changed in Windows 10, version 1607. The table below reflects those changes.
+> [!NOTE] 
+> The Microsoft Edge Group Policy names were changed in Windows 10, version 1607. The table below reflects those changes.
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -411,7 +412,8 @@ You can turn off NCSI through Group Policy:
 
 -   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
 
-> **Note**  After you apply this policy, you must restart the device for the policy setting to take effect.
+> [!NOTE] 
+> After you apply this policy, you must restart the device for the policy setting to take effect.
 
 ### <a href="" id="bkmk-offlinemaps"></a>12. Offline maps
 
@@ -583,7 +585,8 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 To turn off **Let apps use my advertising ID for experiences across apps (turning this off will reset your ID)**:
 
-> **Note:** When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
+> [!NOTE] 
+> When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
 
 -   Turn off the feature in the UI.
 
@@ -623,7 +626,8 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Window
 
 To turn off **Send Microsoft info about how I write to help us improve typing and writing in the future**:
 
-> **Note:**  If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
+> [!NOTE] 
+> If the telemetry level is set to either **Basic** or **Security**, this is turned off automatically.
 
  
 
@@ -675,8 +679,8 @@ To turn off **Location for this device**:
 
     -   **2**. Turned on and the employee can't turn it off.
 
-    **Note**  
-    You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](http://msdn.microsoft.com/library/dn905224.aspx).
+    > [!NOTE]   
+    > You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](http://msdn.microsoft.com/library/dn905224.aspx).
 
     -or-
 
@@ -726,8 +730,8 @@ To turn off **Let apps use my camera**:
 
     -   **1**. Apps can use the camera.
 
-    **Note**  
-    You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](http://msdn.microsoft.com/library/dn905224.aspx).
+    > [!NOTE]
+    > You can also set this MDM policy in System Center Configuration Manager using the [WMI Bridge Provider](http://msdn.microsoft.com/library/dn905224.aspx).
     
    -or-
 
@@ -777,7 +781,8 @@ To turn off **Let apps access my notifications**:
 
 In the **Speech, Inking, & Typing** area, you can let Windows and Cortana better understand your employee's voice and written input by sampling their voice and writing, and by comparing verbal and written input to contact names and calendar entrees.
 
-> **Note:**  For more info on how to disable Cortana in your enterprise, see [Cortana](#bkmk-cortana) in this article.
+> [!NOTE] 
+> For more info on how to disable Cortana in your enterprise, see [Cortana](#bkmk-cortana) in this article.
 
 To turn off the functionality:
 
@@ -945,7 +950,8 @@ In the **Feedback & Diagnostics** area, you can choose how often you're asked fo
 
 To change how frequently **Windows should ask for my feedback**:
 
->**Note:** Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device.
+> [!NOTE] 
+> Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device.
 
  
 
@@ -979,7 +985,8 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
 -   To change from **Enhanced**, use the drop-down list in the UI. The other levels are **Basic** and **Full**.
 
-    > **Note:**  You can't use the UI to change the telemetry level to **Security**.
+    > [!NOTE] 
+    > You can't use the UI to change the telemetry level to **Security**.
 
      
 
@@ -1174,7 +1181,8 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
         -   Set the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
 
-        **Note:**  This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**.
+        > [!NOTE] 
+        > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**.
 
          
 
