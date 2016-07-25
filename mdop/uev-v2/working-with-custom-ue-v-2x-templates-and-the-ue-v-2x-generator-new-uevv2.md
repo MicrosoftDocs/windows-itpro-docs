@@ -49,7 +49,8 @@ The UE-V Generator excludes locations, which commonly store application software
 
 -   Windows operating system files that are located in %Systemroot%, which requires administrator rights and might require to set a UAC agreement
 
-If registry keys and files that are stored in these locations are required to synchronize application settings, you can manually add the excluded locations to the settings location template during the template creation process.
+If registry keys and files that are stored in these locations are required to synchronize application settings, you can manually add the excluded locations to the settings location template during the template creation process
+ (except for registry entries in the HKEY\_LOCAL\_MACHINE hive).
 
 ## <a href="" id="edit"></a>Edit Settings Location Templates with the UE-V Generator
 

@@ -69,8 +69,6 @@ If you are unable to find a preloaded compatibility fix for your application, yo
     By default, Compatibility Administrator selects the basic matching criteria for your application. As a best practice, use a limited set of matching information to represent your application, because it reduces the size of the database. However, make sure you have enough information to correctly identify your application.
 
 ## Related topics
-
-
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
  

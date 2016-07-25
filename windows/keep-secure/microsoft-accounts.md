@@ -98,7 +98,7 @@ Although the Microsoft account was designed to serve consumers, you might find s
 
 -   **Integrated social media services**:
 
-    Contact information and status for your users’ friends and associates automatically stay up-to-date from sites such as Hotmail, Outlook, Facebook, Twitter, and LinkedIn. Users can also access and share photos, documents, and other files from sites such as SkyDrive, Facebook, and Flickr.
+    Contact information and status for your users’ friends and associates automatically stay up-to-date from sites such as Hotmail, Outlook, Facebook, Twitter, and LinkedIn. Users can also access and share photos, documents, and other files from sites such as OneDrive, Facebook, and Flickr.
 
 ### Managing the Microsoft account in the domain
 
