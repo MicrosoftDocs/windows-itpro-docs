@@ -64,7 +64,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -80,7 +80,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 
  1.  Open an elevated command-line prompt on the endpoint:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -100,7 +100,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -164,7 +164,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 2.  Open an elevated command-line:
 
-    a. Click **Start** and type **cmd**.
+    a. Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 

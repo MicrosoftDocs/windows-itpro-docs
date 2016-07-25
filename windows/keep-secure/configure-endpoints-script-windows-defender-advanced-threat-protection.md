@@ -25,7 +25,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
 3.  Open an elevated command-line prompt on the endpoint and run the script:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -52,7 +52,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 3.  Open an elevated command-line prompt on the endpoint and run the script:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 

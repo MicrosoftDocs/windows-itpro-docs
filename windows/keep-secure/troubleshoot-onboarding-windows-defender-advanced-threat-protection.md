@@ -276,7 +276,7 @@ If the startup type is not set to **Automatic**, you'll need to change it so the
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-  a.  **Click **Start** and type **cmd**.**
+  a.  **Go to **Start** and type **cmd**.**
 
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -297,7 +297,7 @@ If the service **STATE** is not set to **RUNNING**, then you'll need to start it
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-  a.  **Click **Start** and type **cmd**.**
+  a.  **Go to **Start** and type **cmd**.**
 
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
