@@ -1,5 +1,5 @@
 #[IE11 Deployment Guide for IT Pros](ie11-deploy-guide/index.md)
-##[Change history for Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](change-history-for-internet-explorer-11.md)
+##[Change history for Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](ie11-deploy-guide/change-history-for-internet-explorer-11.md)
 ##[System requirements and language support for Internet Explorer 11](ie11-deploy-guide/system-requirements-and-language-support-for-ie11.md)
 ##[List of updated features and tools - Internet Explorer 11 (IE11)](ie11-deploy-guide/updated-features-and-tools-with-ie11.md)
 ##[Install and Deploy Internet Explorer 11 (IE11)](ie11-deploy-guide/install-and-deploy-ie11.md)
