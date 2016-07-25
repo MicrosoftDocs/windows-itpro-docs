@@ -1,6 +1,6 @@
 ---
-title: Change history for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
-description: This topic lists new and updated topics in the Internet Explorer 11 documentation for Windows 10 and Windows 10 Mobile.
+title: Change history for Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Explorer 11 for IT Pros)
+description: This topic lists new and updated topics in the Internet Explorer 11 Deployment Guide documentation for Windows 10 and Windows 10 Mobile.
 ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.sitesec: library
