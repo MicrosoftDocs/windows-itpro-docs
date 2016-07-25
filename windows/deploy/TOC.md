@@ -1,4 +1,5 @@
 # [Deploy Windows 10](index.md)
+## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Manage Windows upgrades with Upgrade Analytics](manage-windows-upgrades-with-upgrade-analytics.md)
 ### [Upgrade Analytics architecture](upgrade-analytics-architecture.md)
 ### [Upgrade Analytics requirements](upgrade-analytics-requirements.md)
@@ -9,7 +10,6 @@
 #### [Resolve application and driver issues](upgrade-analytics-resolve-issues.md)
 #### [Deploy Windows](upgrade-analytics-deploy-windows.md)
 ### [Troubleshoot Upgrade Analytics](troubleshoot-upgrade-analytics.md)
-## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ## [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 ### [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
 #### [Key features in MDT 2013 Update 2](key-features-in-mdt-2013.md)
