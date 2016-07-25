@@ -42,7 +42,7 @@ The hardware requirements for Windows Defender ATP on endpoints is the same as t
 
 > **Note**&nbsp;&nbsp;Endpoints that are running Windows Server and mobile versions of Windows are not supported.
 
-Internet connectivity on endpoints is also required. See [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)  for additional proxy configuration settings.
+Internet connectivity on endpoints is also required. For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
 Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10, but if it has been disabled you can turn it on by following the instructions in the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section.
 

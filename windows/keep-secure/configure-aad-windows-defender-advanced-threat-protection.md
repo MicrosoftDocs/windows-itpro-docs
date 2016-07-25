@@ -76,5 +76,6 @@ RONEN - I THINK I'M MISSING SOME STEPS HERE - I THINK I NEED TO PUT IN INFORMATI
 SHOULD I INCLUDE THOSE INFORMATION HERE? OR CREATE A SEPARATE TOPIC FOR THAT? OR INCLUDE IT IN THE SPLUNK/ARCSIGHT STEPS?
 
 ## Related topics
+- [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Configure Splunk to consume alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 - [Configure HP ArcSight to consume alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)

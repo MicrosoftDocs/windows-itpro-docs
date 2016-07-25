@@ -119,7 +119,7 @@ HKLM\SOFTWARE\Policies\Microsoft\Sense\AllowSampleCollection
   Value = 0 - block sample collection
   Value = 1 - allow sample collection
 ```
-5. Change the organizational unit through the Group Policy. See [Configure with Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md).
+5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md).
 6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 > **Note**&nbsp;&nbsp;If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.

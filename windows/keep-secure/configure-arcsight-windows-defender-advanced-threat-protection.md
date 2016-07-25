@@ -17,9 +17,9 @@ author: mjcaparas
 - Windows 10, version 1607
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You'll need to configure HP ArcSight so that it can consume Windows Defender ATP alerts. 
+You'll need to configure HP ArcSight so that it can consume Windows Defender ATP alerts.
 
-### Before you begin
+## Before you begin
 
 - Get the following information from your Azure Active Directory (AAD) application:
     - OAuth 2 Token refresh URL
@@ -30,10 +30,10 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
 - Install the HP ArcSight REST FlexConnector package on a server that has access to the Internet. (RONEN - MAY I HAVE THE LINK FROM WHERE CUSTOMERS CAN DOWNLOAD THE PACKAGE)
 - Contact the Windows Defender ATP team to provide you your refresh token or follow the steps in the section "Run restutil to Obtain a Refresh Token for Connector Appliance/ArcSight Management Center" in _______ NEED LINK TO THE PDF AGAIN HERE.
 
-## Configure HP ArcSight 
+## Configure HP ArcSight
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin)
 
-1. Copy the *wdatp-connector.jsonparser.properties* file into the `<root>\current\user\agent\flexagent` folder of the connector installation folder. 
+1. Copy the *wdatp-connector.jsonparser.properties* file into the `<root>\current\user\agent\flexagent` folder of the connector installation folder.
 
 2. Save the *wdatp-connector.properties* file into a folder of your choosing.
 
@@ -49,7 +49,7 @@ The following steps assume that you have completed all the required steps in [Be
 
 Field | Value
 :---|:---
-Configuration File | Type in the name of the client property file. It must match the client property file. 
+Configuration File | Type in the name of the client property file. It must match the client property file.
 Events URL | `https://DataAccess-PRD.trafficmanager.net:444/api/alerts`
 Authentication Type | OAuth 2
 OAuth 2 Client Properties File | Select *wdatp-connector.properties*.
@@ -57,11 +57,13 @@ Refresh Token | Paste the refresh token that your Windows Defender ATP contact p
 
 All other values in the form are optional and can be left blank.
 
-6. Select **Next**, then **Save**. 
+6. Select **Next**, then **Save**.
 
 7. Run the connector. You can choose to run in service mode or application mode. RONEN - Should this be Service mode or Application mode (capitalized S and capitalized A?)
 
 8. In the HP ArcSight console, create a **Windows Defender ATP** channel with an intervals and properties suitable to your enterprise needs.  
 
-## Related topic
+## Related topics
 - [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
+- [Configure Azure Active Directory application for SIEM integration](configure-aad-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to consume alerts](configure-splunk-windows-defender-advanced-threat-protection.md)

@@ -63,7 +63,7 @@ The threat category filter lets you filter the view by the following categories:
 - Threat
 - Low severity
 
-See the [Investigate machines with active alerts](dashboard-windows-defender-advanced-threat-protection.md#investigate-machines-with-active-malware-detections) topic for a description of each category.
+For more information on the description of each category see, [Investigate machines with active alerts](dashboard-windows-defender-advanced-threat-protection.md#investigate-machines-with-active-malware-detections).
 
 You can also download a full list of all the machines in your organization, in CSV format. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to download the entire list as a CSV file.
 

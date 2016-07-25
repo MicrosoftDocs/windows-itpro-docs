@@ -35,7 +35,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
 5.  Press the **Enter** key or click **OK**.
 
-See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for details on how you can manually validate that the endpoint is compliant and correctly reports telemetry.
+For for information on how you can manually validate that the endpoint is compliant and correctly reports telemetry see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 ## Offboard endpoints using a local script
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
@@ -45,9 +45,9 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. Click **Endpoint Management** on the **Navigation pane**.
-    
+
     b. Under **Endpoint offboarding** section, select **Group Policy**, click **Download package** and save the .zip file.
-    
+
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.  Open an elevated command-line prompt on the endpoint and run the script:
