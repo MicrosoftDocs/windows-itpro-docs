@@ -7,11 +7,18 @@ author: MaggiePucciEvans
 
 # Get started with Upgrade Analytics
 
-Use Upgrade Analytics to plan and manage your upgrade project end to end. After you’ve established communications between Upgrade Analytics and users’ computers, the solution collects computer, application, and driver data for analysis. We use this data to identify compatibility issues that can block your upgrade, and suggest fixes that are known to Microsoft.
+Use Upgrade Analytics to plan and manage your upgrade project end to end. After you’ve established communications between user computers and Microsoft, Upgrade Analytics collects computer, application, and driver data for analysis. We use this data to identify compatibility issues that can block your upgrade and suggest fixes that are known to Microsoft.
 
-For more information about what user computer data Microsoft collects and assesses, see [Windows 7-8.1 Telemetry Events and Fields Descriptions](http://go.microsoft.com/fwlink/?LinkId=822965). For information about how Microsoft uses telemetry data, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization).
+For system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see:
 
-This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](upgrade-analytics-requirements.md) for information about requirements for using Upgrade Analytics.
+- [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
+
+- [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+
+- [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](http://go.microsoft.com/fwlink/?LinkID=822965)
+
+
+This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements) for information about requirements for using Upgrade Analytics.
 
 To configure Upgrade Analytics, you’ll need to:
 
@@ -21,15 +28,16 @@ To configure Upgrade Analytics, you’ll need to:
 
 Each task is explained in detail in the following sections.
 
+
 ## Add Upgrade Analytics to Operations Management Suite
 
-Upgrade Analytics is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/).
+Upgrade Analytics is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
-If you are already using OMS, you’ll find Upgrade Analytics in the Solutions Gallery. Select the Upgrade Analytics tile in the gallery and then click **Add** on the solution page. Upgrade Analytics is now visible in your workspace.
+If you are already using OMS, you’ll find Upgrade Analytics in the Solutions Gallery. Select the **Upgrade Analytics** tile in the gallery and then click **Add** on the solution's details page. Upgrade Analytics is now visible in your workspace.
 
 If you are not using OMS:
 
-1.  Go to \[link to new Upgrade Analytics Web page on Microsoft.com\] and select the **Upgrade Analytics Service** link to kick off the onboarding process.
+1.  Go to the [Upgrade Analytics website](http://go.microsoft.com/fwlink/?LinkID=799190&clcid=0x409) and click **Sign up** to kick off the onboarding process.
 
 2.  Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 
@@ -37,11 +45,11 @@ If you are not using OMS:
 
 4.  If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator.
 
-> If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
+    > If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
 
-1.  To add the Upgrade Analytics solution to your workspace, go to the **Solutions Gallery**. Select the Upgrade Analytics tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace Overview portal. Note that you may need to scroll to find Upgrade Analytics.
+1.  To add the Upgrade Analytics solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Analytics** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Analytics.
 
-2.  Click the Upgrade Analytics tile to configure the solution. The **Settings Dashboard** opens.
+2.  Click the **Upgrade Analytics** tile to configure the solution. The **Settings Dashboard** opens.
 
 ## Enable data sharing between your organization and Upgrade Analytics
 
@@ -51,25 +59,19 @@ After you’ve signed in to Operations Management Suite and added the Upgrade An
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. Generate your commercial ID key in OMS and then deploy it to user computers.
 
-1.  On the Settings Dashboard, navigate to the **Windows telemetry panel**.
+1.  On the Settings Dashboard, navigate to the **Windows telemetry** panel.
 
-<!-- PRESERVING ORIGINAL IMAGE CODING JUST IN CASE
-<img src="media/image2.png" width="245" height="291" />
--->
-
-![Windows telemetry panel](images/upgrade-analytics-telemetry.png)
+    ![upgrade-analytics-telemetry](images/upgrade-analytics-telemetry.png)
 
 2. On the Windows telemetry panel, copy and save your commercial ID key. You’ll need to insert this key into the Upgrade Analytics deployment script later so it can be deployed to user computers.
 
-> Important: Regenerate a commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to users’ computers again.
+    >**Important**<br> Regenerate a commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
 
 ## Subscribe to Upgrade Analytics
 
 For Upgrade Analytics to receive and display upgrade readiness data from Microsoft, subscribe your OMS workspace to Upgrade Analytics.
 
-1.  On the **Windows telemetry** panel, click **Subscribe**.
-
-> The button changes to **Unsubscribe**. Unsubscribe from the Upgrade Analytics solution if you no longer want to receive upgrade-readiness data from Microsoft. Note that user computer data will continue to be shared with Microsoft for as long as the opt-in keys are set on user computers and the proxy allows the traffic.
+1.  On the **Windows telemetry** panel, click **Subscribe**. The button changes to **Unsubscribe**. Unsubscribe from the Upgrade Analytics solution if you no longer want to receive upgrade-readiness information from Microsoft. Note that user computer data will continue to be shared with Microsoft for as long as the opt-in keys are set on user computers and the proxy allows the traffic.
 
 1.  Click **Overview** on the Settings Dashboard to return to your OMS workspace portal. The Upgrade Analytics tile now displays summary data. Click the tile to open Upgrade Analytics.
 
@@ -129,35 +131,31 @@ The Upgrade Analytics deployment script does the following:
 
 To run the Upgrade Analytics deployment script:
 
-1.  Download and extract UpgradeAnalytics.zip .
+1.  Download the [Upgrade Analytics deployment script](http://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. The files in the Diagnostics folder are necessary only if you plan to run the script in troubleshooting mode.
 
-> NOTE: The files in the Diagnostics folder are necessary only if you plan to run the script in troubleshooting mode.
-
-1.  Edit the following parameters in RunConfig.bat:
+2.  Edit the following parameters in RunConfig.bat:
 
     1.  Provide a storage location for log information. Example: %SystemDrive%\\UADiagnostics
 
-    2.  You can store log information on a remote file share or a local directory. If the script is blocked from creating the log file for the given path it creates it in the drive with the Windows directory.
+    2.  You can store log information on a remote file share or a local directory. If the script is blocked from creating the log file for the given path, it creates the log files in the drive with the Windows directory.
 
     3.  Input your commercial ID key.
 
     4.  By default, the script sends log information to both the console and the log file. To change the default behavior, use one of the following options:
 
-> *logMode = 0 log to console only*
+        > *logMode = 0 log to console only*
 >
-> *logMode = 1 log to file and console*
+        > *logMode = 1 log to file and console*
 >
-> *logMode = 2 log to file only*
+        > *logMode = 2 log to file only*
 
-1.  For troubleshooting, set isVerboseLogging to $true to generate log information that can help with diagnosing issues. By default, isVerboseLogging is set to $false. Ensure the Diagnostics folder is installed in the same directory as the script to use this mode.
+3.  For troubleshooting, set isVerboseLogging to $true to generate log information that can help with diagnosing issues. By default, isVerboseLogging is set to $false. Ensure the Diagnostics folder is installed in the same directory as the script to use this mode.
 
-2.  Notify users if they need to restart their computers. By default, this is set to off.
+4.  Notify users if they need to restart their computers. By default, this is set to off.
 
-<!-- -->
-
-1.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
+5.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
 
 ## Seeing data from computers in Upgrade Analytics
 
-After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The inventory collection KB takes several minutes to run – if the component does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, it’s fair to expect a majority of your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to all of your computers in your enterprise.
+After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
 
