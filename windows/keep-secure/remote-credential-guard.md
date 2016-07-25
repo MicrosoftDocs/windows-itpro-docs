@@ -62,7 +62,8 @@ You can use Remote Credential Guard on the client device by setting a Group Poli
 2. Double-click **Restrict delegation of credentials to remote servers**.
 3. In the Use the following restricted mode box:
     - If you want to require either [Restricted Admin mode](http://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx) or Remote Credential Guard, choose **Require Credential Guard**. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard cannot be used.
-        > **Note:** Neither Remote Credential Guard nor Restricted Admin mode will send credentials in clear text to the Remote Desktop server.
+        >![NOTE]
+        >Neither Remote Credential Guard nor Restricted Admin mode will send credentials in clear text to the Remote Desktop server.
     - If you want to allow Remote Credential Guard, choose **Prefer Remote Credential Guard**.
 4. Click **OK**.
 
