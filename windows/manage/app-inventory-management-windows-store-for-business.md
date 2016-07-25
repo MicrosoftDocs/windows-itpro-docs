@@ -28,14 +28,19 @@ All of these apps are treated the same once they are in your inventory and you c
 Store for Business shows this info for each app in your inventory:
 
 -   Name
-
 -   Access to actions for the app
-
--   Last modified date
-
--   Supported devices
-
+-   Last modified
+-   Available licenses
 -   Private store status
+
+The last modified date tracks changes about the app as an item in your inventory. The last modified date changes when one of the following happens:
+- First purchase (the date you acquire the app from Windows Store for Business)
+- Purchase additional licenses
+- Assign license
+- Reclaim license
+- Refund order (applies to purchased apps, not free apps)
+
+The last modified date does not correspond to when an app was last updated in the Store. It tracks activity for that app, as an item in your inventory.  
 
 ### Find apps in your inventory
 
