@@ -7,11 +7,13 @@ author: MaggiePucciEvans
 
 # Troubleshoot Upgrade Analytics
 
-If you’re having issues seeing data in Upgrade Analytics after running the script, enable verbose mode in the Upgrade Analytics Deployment script to turn on a more comprehensive mode of logging. To enable:
+If you’re having issues seeing data in Upgrade Analytics after running the Upgrade Analytics Deployment script, make sure it completes successfully without any errors. Check the output of the script in the command window and/or log UA_dateTime_machineName.txt to ensure all steps were completed successfully. In addition, we recommend that you wait at least 48 hours before checking OMS for data after the script first completes without reporting any error. 
+
+If you still don’t see data in Upgrade Analytics, follow these steps:
 
 1.  Download and extract UpgradeAnalytics.zip. Ensure the “Diagnostics” folder is included.
 
-2.  Edit the script as described in [Run the Upgrade Analytics deployment script](#_Run_the_Upgrade).
+2.  Edit the script as described in [Run the Upgrade Analytics deployment script](upgrade-analytics-get-started.md#run-the-upgrade-analytics-deployment-script).
 
 3.  Check that isVerboseLogging is set to $true.
 
