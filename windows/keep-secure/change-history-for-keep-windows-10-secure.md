@@ -17,7 +17,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
 
 - [Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
-- Remote Credential Guard change to link when ready (remote-credential-guard.md)
+- [Remote Credential Guard](remote-credential-guard.md)
 
 ## July 2016
 
