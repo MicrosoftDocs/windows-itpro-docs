@@ -264,7 +264,8 @@ Starting with Windows 10, fonts that are included in Windows but that are not st
 
 To turn off font streaming, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
-> **Note:**  This may change in future versions of Windows.
+> [!NOTE] 
+> This may change in future versions of Windows.
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 
