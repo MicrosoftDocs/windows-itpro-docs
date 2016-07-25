@@ -14,17 +14,15 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10, version 1607.
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 You might need to troubleshoot the Windows Defender Advanced Threat Protection onboarding process if you encounter issues.
 This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, and common error codes encountered during onboarding. <!--and steps for resolving problems with Azure Active Directory (AAD).-->
 
 ## Endpoints are not reporting to the service correctly
 
-If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after 20 minutes, it might indicate an endpoint onboarding or connectivity problem.
+If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an endpoint onboarding or connectivity problem.
 
 Go through the following verification topics to address this issue:
 
@@ -43,22 +41,21 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 
 2. From the **Run** dialog box, type **regedit** and press **Enter**.
 
-4. In the **Registry Editor** navigate to the Status key under:
+3. In the **Registry Editor** navigate to the Status key under:
 
    ```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection
 ```
 
-5. Check the **OnboardingState** value is set to **1**.
+4. Check the **OnboardingState** value is set to **1**.
 
   ![Image of OnboardingState status in Registry Editor](images/onboardingstate.png)
 
 If the **OnboardingState** value is not set to **1**, you can use Event Viewer to review errors on the endpoint.
 
-If you configured your endpoints with a deployment tool that required a script, you can check  the event viewer for the onboarding script results.
-<br>
-**Check the result of the script**:
+You can check the event viewer for the onboarding script results.
 
+**Check the result of the script**:
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
 2. Go to **Windows Logs** > **Application**.
@@ -73,12 +70,13 @@ Event ID | Error Type | Resolution steps
 5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```
 10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```. Verify that the script was ran as an administrator.
 15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). 
-30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
-35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md). 
-40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md). 
+30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md) 
+40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md) 
 
-<br>
-**Use Event Viewer to identify and adress onboarding errors**:   
+
+
+**Use Event Viewer to identify and address onboarding errors**:   
 
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
@@ -105,6 +103,7 @@ Event ID | Message | Resolution steps
 25 | Windows Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
 
 
+
 ### Ensure the Windows Defender ATP service is enabled
 If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service is set to automatically start and is running on the endpoint.
 
@@ -128,7 +127,7 @@ If the the service is running, then the result should look like the following sc
 
   ![Result of the sq query sense command](images/sc-query-sense-autostart.png)
 
-If the service ```START_TYPE``` is not set to ```AUTO_START```, then you'll need to set the service to automatically start.
+If the service `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
 
 **Change the Windows Defender ATP service startup type from the command line:**
 
@@ -216,7 +215,7 @@ If the service is enabled, then the result should look like the following screen
 
 ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
-If the ```START_TYPE``` is not set to ```AUTO_START```, then you'll need to set the service to automatically start.
+If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
 
 
 
@@ -353,6 +352,9 @@ WinHTTP is independent of the Internet browsing proxy settings and other user co
 To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls) topic.
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.    
+
+## Cyber events are not showing up on the portal and logs show event ID 28
+If you don't see cyber events in the portal and checking the logs show the event that states _Windows Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration failed_, you'll need to make sure that the diagnostics service is enabled and running. For more information on how to check, see [Ensure the service is running](#ensure-the-service-is-running).
 
 ## Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.

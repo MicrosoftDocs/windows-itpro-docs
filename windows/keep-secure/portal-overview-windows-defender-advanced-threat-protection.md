@@ -14,11 +14,8 @@ author: DulceMV
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10, version 1607
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 
 Enterprise security teams can use the Windows Defender ATP portal to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
 
@@ -44,12 +41,12 @@ You can navigate through the portal using the menu options available in all sect
 Area | Description
 :---|:---
 (1) Settings | Provides access to configuration settings such as time zone, alert suppression rules, and license information.
-(2) Navigation pane | Use the navigation pane to move between the **Dashboard**, **Alerts queue**, **Machines view**, **Preferences setup**, and **Endpoint Management**.
+(2) Navigation pane | Use the navigation pane to move between the **Dashboard**, **Alerts queue**, **Machines view**, **Preferences setup**, and **Enpoint Management**.
 **Dashboard**	| Provides clickable tiles that open detailed information on various alerts that have been detected in your organization.
 **Alerts queue** | Enables you to view separate queues of new, in progress, and resolved alerts.
 **Machines view**| Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
-**Preferences setup**|	Shows the settings you selected <!--during [service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md),-->and lets you update your industry preferences and retention policy period.
-**Endpoint Management**|	Allows you to download the onboarding configuration package.
+**Preferences setup**|	Shows the settings you selected and lets you update your industry preferences and retention policy period.
+**Enpoint Management**|	Allows you to download the onboarding configuration package.
 (3) Main portal| Main area where you will see the different views such as the Dashboard, Alerts queue, and Machines view.
 (4) Search | Search for machines, files, external IP Addresses, or domains across endpoints. The drop-down combo box allows you to select the entity type.
 

@@ -13,10 +13,8 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10, version 1607
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
@@ -84,7 +82,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
-> **Note**&nbsp;&nbsp;Depending on machine availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
+> **Note**&nbsp;&nbsp;Depending on machine availability, sample collection time can vary. There is a 1-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
 ## View deep analysis report
 
@@ -121,7 +119,7 @@ HKLM\SOFTWARE\Policies\Microsoft\Sense\AllowSampleCollection
   Value = 0 - block sample collection
   Value = 1 - allow sample collection
 ```
-5. Change the organizational unit through the Group Policy. See [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md).
+5. Change the organizational unit through the Group Policy. See [Configure with Group Policy](configure-gp-windows-defender-advanced-threat-protection.md).
 6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 > **Note**&nbsp;&nbsp;If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
