@@ -12,7 +12,6 @@ author: craigash
 
 # Deploy Windows 10 in a school district
 
-
 **Applies to**
 
 - Windows 10
