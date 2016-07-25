@@ -11,6 +11,11 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## July 2016
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Manage Windows upgrades with Upgrade Analytics](manage-windows-upgrades-with-upgrade-analytics.md) | New | 
+
 ## June 2016
 | New or changed topic | Description |
 |----------------------|-------------|
