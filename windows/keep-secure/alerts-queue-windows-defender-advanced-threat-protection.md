@@ -21,7 +21,8 @@ As a security operations team member, you can manage Windows Defender ATP alerts
 
 To see a list of alerts, click any of the queues under the **Alerts queue** option in the navigation pane.
 
-> **Note**&nbsp;&nbsp;By default, the queues are sorted from newest to oldest.
+> [!NOTE]
+> By default, the queues are sorted from newest to oldest.
 
 The following table and screenshot demonstrate the main areas of the **Alerts queue**.
 
@@ -57,7 +58,8 @@ There are three mechanisms to pivot the queue against:
   - **30 days**
   - **6 months**
 
-  > **Note**&nbsp;&nbsp;You can change the sort order (for example, from most recent to least recent) by clicking the sort order icon ![the sort order icon looks like two arrows on top of each other](images/sort-order-icon.png)
+  > [!NOTE]
+  > You can change the sort order (for example, from most recent to least recent) by clicking the sort order icon ![the sort order icon looks like two arrows on top of each other](images/sort-order-icon.png)
 
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)

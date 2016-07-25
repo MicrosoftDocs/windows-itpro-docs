@@ -24,7 +24,8 @@ author: mjcaparas
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP).
 
-> **Note**&nbsp;&nbsp; If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
+> [!NOTE] 
+> If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
 
 <span id="sccm1602"/>
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1602 or earlier versions 
@@ -50,11 +51,12 @@ You can use System Center Configuration Manager’s existing functionality to cr
 
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
-> **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> [!NOTE]
+> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-     a. Click **Endpoint Management** on the **Navigation pane**.
+    a. Click **Endpoint Management** on the **Navigation pane**.
     
     b. Under **Endpoint offboarding** section, select **System Center Configuration Manager (current branch) version 1602 or earlier**, click **Download package**, and save the .zip file.
     

@@ -63,7 +63,8 @@ You can check the event viewer for the onboarding script results.
 3. Look for an event from **WDATPOnboarding** event source.
 
 If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
-> **Note**&nbsp;&nbsp;The following event IDs are specific to the onboarding script only. 
+> [!NOTE]
+> The following event IDs are specific to the onboarding script only. 
 
 Event ID | Error Type | Resolution steps
 :---|:---|:---
@@ -82,7 +83,8 @@ Event ID | Error Type | Resolution steps
 
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
-    > **Note**&nbsp;&nbsp;SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
+    > [!NOTE]
+	> SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
 
 3. Select **Operational** to load the log.
 

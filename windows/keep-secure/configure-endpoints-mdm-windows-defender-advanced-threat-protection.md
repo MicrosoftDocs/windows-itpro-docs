@@ -53,13 +53,15 @@ Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThrea
  Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | 0 or 1 <br> Default value: 1 | Windows Defender ATP Sample sharing is enabled 
  
 
-> **Note**&nbsp;&nbsp;The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
+> [!NOTE]
+> The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
 
 ### Offboard and monitor endpoints
 
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
-> **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> [!NOTE]
+> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -82,7 +84,8 @@ Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding |
  Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | FALSE |Windows Defender ATP service is not running
   | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | 0 | Offboarded from Windows Defender ATP
 
-> **Note**&nbsp;&nbsp;The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
+> [!NOTE]
+> The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
 
 
 ## Related topics

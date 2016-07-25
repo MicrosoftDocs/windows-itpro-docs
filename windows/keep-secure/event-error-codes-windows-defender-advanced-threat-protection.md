@@ -22,7 +22,8 @@ You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/en-US/
 
 For example, if endpoints are not appearing in the **Machines view** list, you might need to look for event IDs on the endpoints. You can then use this table to determine further troubleshooting steps.
 
-> **Note**&nbsp;&nbsp;It can take several days for endpoints to begin reporting to the Windows Defender ATP service.
+> [!NOTE]
+> It can take several days for endpoints to begin reporting to the Windows Defender ATP service.
 
 **Open Event Viewer and find the Windows Defender ATP service event log:**
 
@@ -33,7 +34,8 @@ For example, if endpoints are not appearing in the **Machines view** list, you m
 
   a.  You can also access the log by expanding **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE** and click on **Operational**.
 
-    > **Note**&nbsp;&nbsp;SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
+    > [!NOTE]
+	> SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
 
 3.  Events recorded by the service will appear in the log. See the following table for a list of events recorded by the service.
 

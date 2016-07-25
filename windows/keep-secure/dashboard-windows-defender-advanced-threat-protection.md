@@ -82,7 +82,8 @@ Threats are considered "active" if there is a very high probability that the mal
 
 Clicking on any of these categories will navigate to the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md), filtered by the appropriate category. This lets you see a detailed breakdown of which machines have active malware detections, and how many threats were detected per machine.
 
-> **Note**&nbsp;&nbsp;The **Machines with active malware detections** tile will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> [!NOTE]
+> The **Machines with active malware detections** tile will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 ### Related topics
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)

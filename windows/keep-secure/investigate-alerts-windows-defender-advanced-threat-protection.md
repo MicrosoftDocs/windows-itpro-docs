@@ -63,7 +63,8 @@ The alert spotlight feature helps ease investigations by highlighting alerts rel
 You can click on the machine link from the alert view to see the alerts related to the machine. 
 
 
-  > **Note**&nbsp;&nbsp;This shortcut is not available from the Incident graph machine links.  
+  > [!NOTE]
+  > This shortcut is not available from the Incident graph machine links.  
 
 Alerts related to the machine are displayed under the **Alerts related to this machine** section. 
 Clicking on an alert row takes you the to the date in which the alert was flagged on **Machine timeline**. This eliminates the need to manually filter and drag the machine timeline marker to when the alert was seen on that machine. 

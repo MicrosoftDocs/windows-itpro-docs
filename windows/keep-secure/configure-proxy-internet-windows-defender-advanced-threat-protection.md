@@ -183,7 +183,8 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 If the any of the verification steps indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
 
-> **Note**&nbsp;&nbsp;SenseSnapshot verifies connectivity for all URLs (including EU and U.S.), so you can ignore results of connectivity verification for irrelevant geo-locations.
+> [!NOTE]
+> SenseSnapshot verifies connectivity for all URLs (including EU and U.S.), so you can ignore results of connectivity verification for irrelevant geo-locations.
 
 ## Related topics
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)

@@ -84,7 +84,8 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 1. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the heading of an existing alert.
 2. Choose the context for suppressing the alert.
 
-> **Note**&nbsp;&nbsp;You cannot create a custom or blank suppression rule. You must start from an existing alert.
+> [!NOTE]
+> You cannot create a custom or blank suppression rule. You must start from an existing alert.
 
 **See the list of suppression rules:**
 
@@ -93,7 +94,8 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 
   ![Click the settings icon and then Suppression rules to create and modify rules](images/suppression-rules.png)
 
-> **Note**&nbsp;&nbsp;You can also click **See rules** in the confirmation window that appears when you suppress an alert.
+> [!NOTE]
+> You can also click **See rules** in the confirmation window that appears when you suppress an alert.
 
 The list of suppression rules shows all the rules that users in your organization have created.
 Each rule shows:

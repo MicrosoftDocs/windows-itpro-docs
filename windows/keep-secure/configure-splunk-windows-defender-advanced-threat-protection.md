@@ -35,7 +35,8 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 2. Select **Search & Reporting**, then **Settings** > **Data inputs**.
 
 3. Select **REST** under **Local inputs**.
-> **Note**&nbsp;&nbsp;This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
+> [!NOTE]
+> This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
 
 4. Select **New**.
 

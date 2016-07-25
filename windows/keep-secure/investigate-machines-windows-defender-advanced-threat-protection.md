@@ -35,7 +35,8 @@ The Machines view contains the following columns:
 - **Active Alerts** - the number of alerts reported by the machine by severity
 - **Active malware detections** - the number of active malware detections reported by the machine
 
-> **Note**&nbsp;&nbsp;The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> [!NOTE]
+> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 Click any column header to sort the view in ascending or descending order.
 
@@ -53,7 +54,8 @@ You can filter the view by the following time periods:
 - 30 days
 - 6 months
 
-> **Note**&nbsp;&nbsp;When you select a time period, the list will only display machines that reported within the selected time period. For example, selecting 1 day will only display a list of machines that reported telemetry within the last 24-hour period.
+> [!NOTE]
+> When you select a time period, the list will only display machines that reported within the selected time period. For example, selecting 1 day will only display a list of machines that reported telemetry within the last 24-hour period.
 
 The threat category filter lets you filter the view by the following categories:
 

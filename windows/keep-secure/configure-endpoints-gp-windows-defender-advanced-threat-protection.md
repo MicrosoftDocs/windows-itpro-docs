@@ -19,7 +19,8 @@ author: mjcaparas
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-> **Note**&nbsp;&nbsp;To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later. 
+> [!NOTE]
+> To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later. 
 
 ### Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
@@ -69,7 +70,8 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 ### Offboard endpoints
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
-> **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> [!NOTE]
+> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -101,7 +103,8 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 2.	Click **Machines view**.
 3.	Verify that endpoints are appearing.
 
-> **Note**&nbsp;&nbsp;It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+> [!NOTE]
+> It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
 
 ## Related topics

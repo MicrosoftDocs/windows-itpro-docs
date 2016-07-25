@@ -18,7 +18,8 @@ author: mjcaparas
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Windows Defender ATP.
-> **Note**&nbsp;&nbsp;This document explains the data storage and privacy details related to Windows Defender ATP. For more information related to Windows Defender ATP and other products and services like Windows Defender and Windows 10, see [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). See also [Windows 10 privacy FAQ](http://windows.microsoft.com/en-au/windows-10/windows-privacy-faq) for more information.
+> [!NOTE]
+> This document explains the data storage and privacy details related to Windows Defender ATP. For more information related to Windows Defender ATP and other products and services like Windows Defender and Windows 10, see [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). See also [Windows 10 privacy FAQ](http://windows.microsoft.com/en-au/windows-10/windows-privacy-faq) for more information.
 
 ## What data does Windows Defender ATP collect?
 

@@ -40,7 +40,8 @@ Endpoints on your network must be running Windows 10, version 1607.
 The hardware requirements for Windows Defender ATP on endpoints is the same as those for Windows 10, version 1607.
 
 
-> **Note**&nbsp;&nbsp;Endpoints that are running Windows Server and mobile versions of Windows are not supported.
+> [!NOTE]
+> Endpoints that are running Windows Server and mobile versions of Windows are not supported.
 
 Internet connectivity on endpoints is also required. For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
