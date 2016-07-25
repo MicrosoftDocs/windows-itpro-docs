@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP endpoints
 description: Configure endpoints so that they are onboarded to the service.
-keywords: configure endpoints, client onboarding, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
+keywords: configure endpoints, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

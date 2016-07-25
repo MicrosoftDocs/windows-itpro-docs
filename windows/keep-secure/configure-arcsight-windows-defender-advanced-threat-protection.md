@@ -39,9 +39,9 @@ The following steps assume that you have completed all the required steps in [Be
 
 3. Open an elevated command-line:
 
-    a. Click **Start** and type **cmd**.
+    a. Go to **Start** and type **cmd**.
 
-    b.  Right-click **Command prompt** and select **Run as administrator**.
+    b. Right-click **Command prompt** and select **Run as administrator**.
 
 4. Enter the following command and press **Enter**: ```runagentsetup.bat```. The Connector Setup pop-up window appears.
 
