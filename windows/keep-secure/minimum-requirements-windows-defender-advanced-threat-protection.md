@@ -47,14 +47,14 @@ Internet connectivity on endpoints is also required. For more information on add
 Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10, but if it has been disabled you can turn it on by following the instructions in the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section.
 
 ### Telemetry and diagnostics settings
-You must ensure that the telemetry and diagnostics service is enabled on all the endpoints in your organization. 
+You must ensure that the telemetry and diagnostics service is enabled on all the endpoints in your organization.
 By default, this service is enabled, but it's good practice to check to ensure that you'll get telemetry from them.
 
 **Use the command line to check the Windows 10 telemetry and diagnostics service startup type**:
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-  a.  Click **Start**, type **cmd**, and press **Enter**.
+  a.  Go to **Start** and type **cmd**.
 
   b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -76,9 +76,9 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-  a.  Click **Start**, type **cmd**, and press **Enter**.
+	  a. Go to **Start** and type **cmd**.
 
-  b.  Right-click **Command prompt** and select **Run as administrator**.
+    b. Right-click **Command prompt** and select **Run as administrator**.
 
 2.  Enter the following command, and press **Enter**:
 
@@ -91,4 +91,3 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
     ```text
     sc qc diagtrack
     ```
-
