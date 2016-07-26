@@ -59,6 +59,8 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     Dism /mount-image /imagefile:c:\winpe_amd64\media\sources\boot.wim /index:1 /mountdir:C:\winpe_amd64\mount
     ```
+    Verify that "The operation completed successfully" is displayed. Note: To view currently mounted images, type **dism /get-MountedWiminfo**. 
+
 5. Map a network share to the root TFTP directory on the PXE/TFTP server and create a \Boot folder. Consult your TFTP server documentation to determine the root TFTP server directory, then enable sharing for this directory, and verify it can be accessed on the network. In the following example, the PXE server name is PXE-1 and the TFTP root directory is shared using a network path of **\\\PXE-1\TFTPRoot**:
 
     ```
@@ -66,7 +68,7 @@ All four of the roles specified above can be hosted on the same computer or each
     y:
     md boot
     ```
-6. Copy the PXE boot files from the mounted directory to the \Boot folder. For example:
+6. Copy the PXE boot files from the mounted directory to the \boot folder. For example:
 
     ```
     copy c:\winpe_amd64\mount\windows\boot\pxe\*.* y:\boot
@@ -93,29 +95,37 @@ All four of the roles specified above can be hosted on the same computer or each
 
     ```
     bcdedit /store c:\BCD /create {ramdiskoptions} /d "Ramdisk options"
-    bcdedit /store c:\BCD /set {ramdiskoptions} ramdisksdidevice partition=C:
-    bcdedit /store c:\BCD /set {ramdiskoptions} ramdisksdipath \winpe_amd64\media\boot\boot.sdi
+    bcdedit /store c:\BCD /set {ramdiskoptions} ramdisksdidevice boot
+    bcdedit /store c:\BCD /set {ramdiskoptions} ramdisksdipath \boot\boot.sdi
+    bcdedit /store c:\BCD /create /d "winpe boot image" /application osloader
     ```
+    The last command will return a GUID, for example:
+    ```
+    The entry {a4f89c62-2142-11e6-80b6-00155da04110} was successfully created. 
+    ```
+    Copy this GUID for use in the next set of commands. In the following commands, replace "GUID1" with your GUID.
+
 3.  Create a new boot application entry for the Windows PE image:
 
     ```
-    bcdedit /store c:\BCD /set {GUID1} device ramdisk=[c:]\winpe_amd64\media\sources\boot.wim,{ramdiskoptions} 
+    bcdedit /store c:\BCD /set {GUID1} device ramdisk=[boot]\boot\boot.wim,{ramdiskoptions} 
     bcdedit /store c:\BCD /set {GUID1} path \windows\system32\winload.exe 
-    bcdedit /store c:\BCD /set {GUID1} osdevice ramdisk=[c:]\winpe_amd64\media\sources\boot.wim,{ramdiskoptions} 
+    bcdedit /store c:\BCD /set {GUID1} osdevice ramdisk=[boot]\boot\boot.wim,{ramdiskoptions} 
     bcdedit /store c:\BCD /set {GUID1} systemroot \windows
     bcdedit /store c:\BCD /set {GUID1} detecthal Yes
     bcdedit /store c:\BCD /set {GUID1} winpe Yes
     ```
-4.  Configure BOOTMGR settings:
+4.  Configure BOOTMGR settings (remember to replace GUID1 in the third command with your GUID):
 
     ```
+    bcdedit /store c:\BCD /create {bootmgr} /d "boot manager"
     bcdedit /store c:\BCD /set {bootmgr} timeout 30 
     bcdedit /store c:\BCD -displayorder {GUID1} -addlast
     ```
 5.  Copy the BCD file to your TFTP server:
 
     ```
-    copy c:\BCD \\PXE-1\TFTPRoot\Boot
+    copy c:\BCD \\PXE-1\TFTPRoot\boot\BCD
     ```
 
 Your PXE/TFTP server is now configured. You can view the BCD settings that have been configured using the command bcdedit /store &lt;BCD file location&gt; /enum all. See the following example. Note: Your GUID will be different than the one shown below.
@@ -151,10 +161,11 @@ ramdisksdipath          \boot\boot.sdi
 
 The following summarizes the PXE client boot process.
 
-1.  A client is directed by DHCP options 066 and 067 to download boot\\wdsnbp.com from the TFTP server.
-2.  Wdsnbp.com validates the DHCP/PXE response packet and then the client downloads boot\\pxeboot.com.
-3.  Pxeboot.com requires the client to press the F12 key to initiate a PXE boot.
-4.  The client downloads boot\\bootmgr.exe and the boot\\BCD file from the TFTP server. Note: The BCD store must reside in the \\boot directory on the TFTP server and must be named BCD.
+>The following assumes that you have configured DHCP option 67 (Bootfile Name) to "boot\PXEboot.n12" which enables direct boot to PXE with no user interaction. For more information about DHCP options for network boot, see [Managing Network Boot Programs](https://technet.microsoft.com/en-us/library/cc732351.aspx).
+
+1.  A client is directed by DHCP options 066 and 067 to download boot\\PXEboot.n12 from the TFTP server.
+2.  PXEboot.n12 immediately begins a network boot.
+3.  The client downloads boot\\bootmgr.exe and the boot\\BCD file from the TFTP server. Note: The BCD store must reside in the \\boot directory on the TFTP server and must be named BCD.
 5.  Bootmgr.exe reads the BCD operating system entries and downloads boot\\boot.sdi and the Windows PE image (boot\\boot.wim). Optional files that can also be downloaded include true type fonts (boot\\Fonts\\wgl4\_boot.ttf) and the hibernation state file (\\hiberfil.sys) if these files are present.
 6.  Bootmgr.exe starts Windows PE by calling winload.exe within the Windows PE image.
 7.  Windows PE loads, a command prompt opens and wpeinit.exe is run to initialize Windows PE.
