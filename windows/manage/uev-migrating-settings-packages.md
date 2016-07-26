@@ -2,7 +2,6 @@
 title: Migrating UE-V 2.x Settings Packages
 description: Migrating UE-V 2.x Settings Packages
 author: jamiejdt
-ms.assetid: f79381f4-e142-405c-b728-5c048502aa70
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Migrating UE-V 2.x Settings Packages
 
 
-In the lifecycle of a Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, or 2.1 SP1 deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
+In the lifecycle of a Microsoft User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
 
 -   Upgrade of existing server hardware to a more modern server.
 
@@ -42,18 +41,11 @@ Simply copying the files and folders does not preserve the security settings and
 
     On computers that run the UE-V Agent, update the **SettingsStoragePath** configuration setting to the Universal Naming Convention (UNC) path of the new share.
 
-    **Got a suggestion for UE-V**? Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). **Got a UE-V issue**? Use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+## Have a suggestion for UE-V?
+
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
-
 [Administering UE-V 2.x](uev-administering-uev.md)
-
- 
-
- 
-
-
-
-
 

@@ -2,7 +2,6 @@
 title: Deploy Required Features for UE-V 2.x
 description: Deploy Required Features for UE-V 2.x
 author: jamiejdt
-ms.assetid: 10399bb3-cc7b-4578-bc0c-2f6b597abe4d
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Deploy Required Features for UE-V 2.x
 
 
-All Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 deployments require these features
+All Microsoft User Experience Virtualization (UE-V) deployments require these features
 
 -   [Deploy a Settings Storage Location](#ssl) that is accessible to end users.
 
@@ -435,10 +434,10 @@ msiexec.exe /f "<path to msi file>" /quiet /norestart /l*v "%temp%\UE-VAgentInst
 
 You can then retry the uninstall process or upgrade by installing the newer version of the UE-V Agent.
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

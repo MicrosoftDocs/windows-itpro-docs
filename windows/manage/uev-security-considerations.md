@@ -2,7 +2,6 @@
 title: Security Considerations for UE-V 2.x
 description: Security Considerations for UE-V 2.x
 author: jamiejdt
-ms.assetid: 9d5c3cae-9fcb-4dea-bd67-741b3dea63be
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Security Considerations for UE-V 2.x
 
 
-This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1. For more information, follow the links that are provided here.
+This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for Microsoft User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
 
 ## Security considerations for UE-V configuration
 
@@ -226,10 +225,10 @@ We strongly recommend that you do not pre-create folders. Instead, let the UE-V 
 
 If you redirect UE-V settings to a user’s home directory or a custom Active Directory (AD) directory, ensure that the permissions on the directory are set appropriately for your organization.
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

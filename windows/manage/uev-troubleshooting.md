@@ -2,7 +2,6 @@
 title: Troubleshooting UE-V 2.x
 description: Troubleshooting UE-V 2.x
 author: jamiejdt
-ms.assetid: a02847f8-6986-4612-8307-ba1b72d7919b
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -76,10 +75,10 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 
 -   [Technical Reference for UE-V 2.x](uev-technical-reference.md)
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
  
 

@@ -1,8 +1,7 @@
 ---
-title: Application Template Schema Reference for UE-V 2.x
-description: Application Template Schema Reference for UE-V 2.x
+title: Application Template Schema Reference for UE-V
+description: Application Template Schema Reference for UE-V
 author: jamiejdt
-ms.assetid: be8735a5-6a3e-4b1f-ba14-2a3bc3e5a8b6
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,17 +9,17 @@ ms.prod: w10
 ---
 
 
-# Application Template Schema Reference for UE-V 2.x
+# Application Template Schema Reference for UE-V
 
 
-Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 use XML settings location templates to define the desktop application settings and Windows settings that are captured and applied by UE-V. UE-V includes a set of default settings location templates. You can also create custom settings location templates with the UE-V Generator.
+Microsoft User Experience Virtualization (UE-V) uses XML settings location templates to define the desktop application settings and Windows settings that are captured and applied by UE-V. UE-V includes a set of default settings location templates. You can also create custom settings location templates with the UE-V Generator.
 
-An advanced user can customize the XML file for a settings location template. This topic details the XML structure of the UE-V 2.1 (SP1) and 2.0 settings location templates and provides guidance for editing these files.
+An advanced user can customize the XML file for a settings location template. This topic details the XML structure of the UE-V settings location templates and provides guidance for editing these files.
 
-## UE-V 2.1 and 2.1 SP1 Application Template Schema Reference
+## UE-V Application Template Schema Reference
 
 
-This section details the XML structure of the UE-V 2.1 and 2.1 SP1 settings location template and provides guidance for editing this file.
+This section details the XML structure of the UE-V settings location template and provides guidance for editing this file.
 
 ### In This Section
 
@@ -163,7 +162,7 @@ The DeleteIfNotFound attribute removes the setting from the user’s settings st
 FileMask specifies only certain file types for the folder that is defined by Path. For example, Path might be `C:\users\username\files` and FileMask could be `*.txt` to include only text files.
 
 <a href="" id="registrysetting"></a>**RegistrySetting**  
-RegistrySetting represents a container for registry keys and values and the associated desired behavior on the part of the UE-V Agent. Four child elements are defined within this type: **Path**, **Name**, **Exclude**, and a sequence of the values **Path** and **Name**.
+RegistrySetting represents a container for registry keys and values and the associated desired behavior on the part of the UE-V service. Four child elements are defined within this type: **Path**, **Name**, **Exclude**, and a sequence of the values **Path** and **Name**.
 
 <a href="" id="filesetting"></a>**FileSetting**  
 FileSetting contains parameters associated with files and files paths. Four child elements are defined: **Root**, **Path**, **FileMask**, and **Exclude**. Root is mandatory and the others are optional.
@@ -191,8 +190,7 @@ Settings is a container for all the settings that apply to a particular template
 </tr>
 <tr class="even">
 <td align="left"><p>AlwaysApplySettings</p></td>
-<td align="left"><p>(introduced in 2.1)</p>
-<p>This parameter forces an imported settings package to be applied even if there are no differences between the package and the current state of the application. This parameter should be used only in special cases since it can slow down settings import.</p></td>
+<td align="left"><p>This parameter forces an imported settings package to be applied even if there are no differences between the package and the current state of the application. This parameter should be used only in special cases since it can slow down settings import.</p></td>
 </tr>
 </tbody>
 </table>
@@ -220,7 +218,7 @@ See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character ent
 
 **Type: String**
 
-ID populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime (for example, see the output of the Get-UevTemplate and Get-UevTemplateProgram PowerShell cmdlets). By convention, this tag should not contain any spaces, which simplifies scripting. Version numbers of applications should be specified in this element to allow for easy identification of the template, such as `<ID>MicrosoftCalculator6</ID>` or `<ID>MicrosoftOffice2010Win64</ID>`.
+ID populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime (for example, see the output of the Get-UevTemplate and Get-UevTemplateProgram PowerShell cmdlets). By convention, this tag should not contain any spaces, which simplifies scripting. Version numbers of applications should be specified in this element to allow for easy identification of the template, such as `<ID>MicrosoftCalculator6</ID>` or `<ID>MicrosoftOffice2010Win64</ID>`.
 
 ### <a href="" id="version21"></a>Version Element
 
@@ -493,7 +491,7 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -520,7 +518,7 @@ Application is a container for settings that apply to a particular application. 
 <td align="left"><p>Similar to MSA, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>FixedProfile (Introduced in 2.1)</p></td>
+<td align="left"><p>FixedProfile</p></td>
 <td align="left"><p>Specifies that this template can only be associated with the profile specified within this element, and cannot be changed via WMI or PowerShell.</p></td>
 </tr>
 <tr class="odd">
@@ -556,7 +554,7 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -583,7 +581,7 @@ Common is similar to an Application element, but it is always associated with tw
 <td align="left"><p>Similar to MSA, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>FixedProfile (Introduced in 2.1)</p></td>
+<td align="left"><p>FixedProfile</p></td>
 <td align="left"><p>Specifies that this template can only be associated with the profile specified within this element, and cannot be changed via WMI or PowerShell.</p></td>
 </tr>
 <tr class="odd">
@@ -615,7 +613,7 @@ This element defines the settings for a single application or a suite of applica
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -1864,23 +1862,12 @@ Here is the SettingsLocationTemplate.xsd file showing its elements, child elemen
 </xs:schema>
 ```
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
-
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
+[Working with Custom UE-V Templates and the UE-V Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
 
-[Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
-
-[Technical Reference for UE-V 2.x](uev-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
+[Technical Reference for UE-V](uev-technical-reference.md)

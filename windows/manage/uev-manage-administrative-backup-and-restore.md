@@ -1,8 +1,7 @@
 ---
-title: Manage Administrative Backup and Restore in UE-V 2.x
-description: Manage Administrative Backup and Restore in UE-V 2.x
+title: Manage Administrative Backup and Restore in UE-V
+description: Manage Administrative Backup and Restore in UE-V
 author: jamiejdt
-ms.assetid: 2eb5ae75-65e5-4afc-adb6-4e83cf4364ae
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,12 +9,11 @@ ms.prod: w10
 ---
 
 
-# Manage Administrative Backup and Restore in UE-V 2.x
+# Manage Administrative Backup and Restore in UE-V
 
+As an administrator of Microsoft User Experience Virtualization (UE-V), you can restore application and Windows settings to their original state. You can also restore additional settings when a user adopts a new device.
 
-As an administrator of Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, or 2.1 SP1, you can restore application and Windows settings to their original state. And new in UE-V 2.1, you can also restore additional settings when a user adopts a new device.
-
-## Restore Settings in UE-V 2.1 or UE-V 2.1 SP1 when a User Adopts a New Device
+## Restore Settings in UE-V when a User Adopts a New Device
 
 
 To restore settings when a user adopts a new device, you can put a settings location template in **backup** or **roam (default)** profile using the Set-UevTemplateProfile PowerShell cmdlet. This lets computer settings sync to the new computer, in addition to user settings. Templates assigned to the backup profile are backed up for that device and configured on a per-device basis. To backup settings for a template, use the following cmdlet in Windows PowerShell:
@@ -28,9 +26,9 @@ Set-UevTemplateProfile -ID <TemplateID> -Profile <backup>
 
 -   &lt;backup&gt; can either be Backup or Roaming
 
-When replacing a user’s device UE-V automatically restores settings if the user’s domain, username, and device name all match. All synchronized and any backup data is restored on the device automatically.
+When replacing a user’s device, UE-V automatically restores settings if the user’s domain, username, and device name all match. All synchronized and any backup data is restored on the device automatically.
 
-You can also use the new PowerShell cmdlet, Restore-UevBackup, to restore settings from a different device. To clone the settings packages for the new device, use the following cmdlet in Windows PowerShell:
+You can also use the Windows PowerShell cmdlet, Restore-UevBackup, to restore settings from a different device. To clone the settings packages for the new device, use the following cmdlet in Windows PowerShell:
 
 ``` syntax
 Restore-UevBackup –Machine <MachineName>
@@ -98,9 +96,9 @@ Restoring a user’s device restores the currently registered Template’s setti
 ## Restore Application and Windows Settings to Original State
 
 
-WMI and Windows PowerShell commands let you restore application and Windows settings to the settings values that were on the computer the first time that the application started after the UE-V Agent was installed. This restoring action is performed on a per-application or Windows settings basis. The settings are restored the next time that the application runs, or the settings are restored when the user logs on to the operating system.
+WMI and Windows PowerShell commands let you restore application and Windows settings to the settings values that were on the computer the first time that the application started after the UE-V service was enabled. This restoring action is performed on a per-application or Windows settings basis. The settings are restored the next time that the application runs, or the settings are restored when the user logs on to the operating system.
 
-**To restore application settings and Windows settings with Windows PowerShell for UE-V 2.x**
+**To restore application settings and Windows settings with Windows PowerShell for UE-V**
 
 1.  Open the Windows PowerShell window.
 
@@ -159,23 +157,12 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
 
      
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
-
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
+[Administering UE-V with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
-[Administering UE-V 2.x with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
-
-[Administering UE-V 2.x](uev-administering-uev.md)
-
- 
-
- 
-
-
-
-
-
+[Administering UE-V](uev-administering-uev.md)

@@ -2,7 +2,6 @@
 title: Administering UE-V 2.x
 description: Administering UE-V 2.x
 author: jamiejdt
-ms.assetid: 996e4797-8383-4627-b714-24a84c907798
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Administering UE-V 2.x
 
 
-After you have deployed Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, or 2.1 SP1, you must be able to perform various ongoing administrative tasks, such as managing the configuration of the UE-V Agent and recovering lost settings. These post-installation tasks are described in the following sections.
+After you have deployed Microsoft User Experience Virtualization (UE-V), you must be able to perform various ongoing administrative tasks, such as managing the configuration of the UE-V Agent and recovering lost settings. These post-installation tasks are described in the following sections.
 
 ## Managing UE-V 2.x configurations
 
@@ -70,16 +69,6 @@ You can use UE-V with Microsoft Application Virtualization (App-V) to share sett
 
 -   [Technical Reference for UE-V 2.x](uev-technical-reference.md)
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
-
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
-
- 
-
- 
-
-
-
-
-
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).

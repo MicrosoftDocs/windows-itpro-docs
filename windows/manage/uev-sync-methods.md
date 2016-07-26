@@ -2,7 +2,6 @@
 title: Sync Methods for UE-V 2.x
 description: Sync Methods for UE-V 2.x
 author: jamiejdt
-ms.assetid: af0ae894-dfdc-41d2-927b-c2ab1b355ffe
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Sync Methods for UE-V 2.x
 
 
-The Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 Agent lets you synchronize users’ application and Windows settings with the settings storage location. The *Sync Method* configuration defines how the UE-V Agent uploads and downloads those settings to the settings storage location. UE-V 2.x introduces a new SyncMethod called the *SyncProvider*. For more information about trigger events that start the synchronization of application and Windows settings, see [Sync Trigger Events for UE-V 2.x](uev-sync-trigger-events.md).
+The Microsoft User Experience Virtualization (UE-V) Agent lets you synchronize users’ application and Windows settings with the settings storage location. The *Sync Method* configuration defines how the UE-V Agent uploads and downloads those settings to the settings storage location. UE-V 2.x introduces a new SyncMethod called the *SyncProvider*. For more information about trigger events that start the synchronization of application and Windows settings, see [Sync Trigger Events for UE-V 2.x](uev-sync-trigger-events.md).
 
 ## SyncMethod Configuration
 
@@ -86,10 +85,10 @@ You can configure the sync method in these ways:
 
 -   After installation of the UE-V Agent, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](http://technet.microsoft.com/library/dn458937.aspx)
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

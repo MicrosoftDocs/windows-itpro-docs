@@ -2,7 +2,6 @@
 title: Configuring UE-V 2.x with System Center Configuration Manager 2012
 description: Configuring UE-V 2.x with System Center Configuration Manager 2012
 author: jamiejdt
-ms.assetid: 9a4e2a74-7646-4a77-b58f-2b4456487295
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Configuring UE-V 2.x with System Center Configuration Manager 2012
 
 
-After you install Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, or 2.1 SP1 and their required features, UE-V must be configured. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+After you install Microsoft User Experience Virtualization (UE-V) and its required features, UE-V must be configured. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
 ## UE-V Configuration Pack supported features
 
@@ -228,10 +227,10 @@ To distribute a new Notepad template, you would perform these steps:
 
 The UE-V Configuration Pack for Configuration Manager 2012 SP1 or later can be downloaded [here](http://go.microsoft.com/fwlink/?LinkId=317263).
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

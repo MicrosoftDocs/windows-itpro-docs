@@ -2,7 +2,6 @@
 title: Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI
 description: Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI
 author: jamiejdt
-ms.assetid: b5253050-acc3-4274-90d0-1fa4c480331d
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI
 
 
-Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 use XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V Generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](http://go.microsoft.com/fwlink/p/?LinkId=393495) (http://go.microsoft.com/fwlink/p/?LinkId=393495).
+Microsoft User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V Generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](http://go.microsoft.com/fwlink/p/?LinkId=393495) (http://go.microsoft.com/fwlink/p/?LinkId=393495).
 
 ## Manage UE-V 2 settings location templates by using Windows PowerShell
 
@@ -354,10 +353,11 @@ User Experience Virtualization provides the following set of WMI commands. Admin
 
     -   `& msiexec.exe /i "<path to msi file>" /quiet /norestart /l*v "%temp%\UE-VAgentInstaller.log" SettingsStoragePath=\\server\settingsshare\%username%`
 
-**Got a suggestion for UE-V**? Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). **Got a UE-V issue**? Use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+## Have a suggestion for UE-V?
+
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
-
 
 [Administering UE-V 2.x with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
