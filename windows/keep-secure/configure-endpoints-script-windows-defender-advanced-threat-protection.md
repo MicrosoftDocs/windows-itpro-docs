@@ -21,7 +21,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
     b.  Select **Local Script**, click **Download package** and save the .zip file.
 
 
-2.  Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
+2.  Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
 3.  Open an elevated command-line prompt on the endpoint and run the script:
 

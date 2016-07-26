@@ -23,12 +23,14 @@ author: mjcaparas
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP).
 
-> [!NOTE]
-> If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
-
 <span id="sccm1602"/>
-## Configure endpoints using System Center Configuration Manager (current branch) version 1602 or earlier versions
-You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center Configuration Manager (current branch), version 1602 or earlier, including: System Center 2012 R2 Configuration Manager and System Center 2012 Configuration Manager.
+## Configure endpoints using System Center Configuration Manager earlier versions
+You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in the following System Center Configuration Manager versions:
+
+- System Center 2012 Configuration Manager
+- System Center 2012 R2 Configuration Manager
+- System Center Configuration Manager (current branch), version 1511
+- System Center Configuration Manager (current branch), version 1602
 
 ### Onboard endpoints
 
@@ -36,15 +38,29 @@ You can use System Center Configuration Manager’s existing functionality to cr
 
     a. Click **Endpoint Management** on the **Navigation pane**.
 
-    b. Select **System Center Configuration Manager (current branch) version 1602 or earlier**, click **Download package**, and save the .zip file.
+    b. Select **System Center Configuration Manager 2012/2012 R2/1511/1602**, click **Download package**, and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
 
 4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
 
     a. Choose a predefined device collection to deploy the package to.
+
+### Configure sample collection settings
+If you want to monitor your deployment, you can do it by setting a compliance rule for configuration item in System Center Configuration Manager.
+
+This rule should be a non-remediating compliance rule configuration item that monitors the value of a registry key on targeted machines.
+
+The registry key you should monitor is:
+```
+Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
+Name: “OnboardingState”
+Value: “1”
+```
+For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/en-us/library/gg681958.aspx).
+
 
 ### Offboard endpoints
 
@@ -57,7 +73,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     a. Click **Endpoint Management** on the **Navigation pane**.
 
-    b. Under **Endpoint offboarding** section, select **System Center Configuration Manager (current branch) version 1602 or earlier**, click **Download package**, and save the .zip file.
+    b. Under **Endpoint offboarding** section, select **System Center Configuration Manager System Center Configuration Manager 2012/2012 R2/1511/1602**, click **Download package**, and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -87,6 +103,10 @@ Monitoring with SCCM consists of two parts:
 If there are failed deployments (endpoints with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the endpoints. For more information see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
+
+**Check that the endpoints are compliant with the Windows Defender ATP service:**
+
+OMRI - NEED STEPS HERE.
 
 ## Related topics
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
