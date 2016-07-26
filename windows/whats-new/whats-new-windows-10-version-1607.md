@@ -19,7 +19,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Imaging and Configuration Designer (ICD)
 
-In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
@@ -30,6 +30,10 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 [Learn more about using provisioning packages in Windows 10.](../deploy/provisioning-packages.md)
 
 ## Security
+
+### Credential Guard and Device Guard
+
+Isolated User Mode is now included with Hyper-V so you don't have to install it separately.
 
 ### Windows Hello for Business
 
@@ -43,10 +47,17 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
 
+### VPN 
+
+- The VPN client can integrate with the Conditional Access Framework, a cloud-pased policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
+- The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](../keep-secure/protect-enterprise-data-using-edp.md), previously known as Enterprise Data Protection.
+- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
+- Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
+
  
 ## Management
 
-## Use Remote Desktop Connection for PCs joined to Azure Active Directory
+### Use Remote Desktop Connection for PCs joined to Azure Active Directory
 
 From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is joined to Azure Active Directory (Azure AD). [Learn about the requirements and supported configurations.](../manage/connect-to-remote-aadj-pc.md)
 

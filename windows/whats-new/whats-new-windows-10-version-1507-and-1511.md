@@ -83,13 +83,13 @@ Microsoft Passport lets users authenticate to a Microsoft account, an Active Dir
 
 -   The [WindowsSecurityAuditing](http://go.microsoft.com/fwlink/p/?LinkId=690517) and [Reporting](http://go.microsoft.com/fwlink/p/?LinkId=690525) configuration service providers allow you to add security audit policies to mobile devices.
 
-## New features in Windows 10, version 1507
+#### New features in Windows 10, version 1507
 
 In Windows 10, security auditing has added some improvements:
 -   [New audit subcategories](#bkmk-auditsubcat)
 -   [More info added to existing audit events](#bkmk-moreinfo)
 
-### <a href="" id="bkmk-auditsubcat"></a>New audit subcategories
+##### <a href="" id="bkmk-auditsubcat"></a>New audit subcategories
 
 In Windows 10, two new audit subcategories were added to the Advanced Audit Policy Configuration to provide greater granularity in audit events:
 -   [Audit Group Membership](../keep-secure/audit-group-membership.md) Found in the Logon/Logoff audit category, the Audit Group Membership subcategory allows you to audit the group membership information in a user's logon token. Events in this subcategory are generated when group memberships are enumerated or queried on the PC where the logon session was created. For an interactive logon, the security audit event is generated on the PC that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the PC hosting the resource.
@@ -98,7 +98,7 @@ In Windows 10, two new audit subcategories were added to the Advanced Audit Pol
     Only Success audits are recorded for this category. If you do not configure this policy setting, no audit event is generated when an external device is detected by plug and play.
     A PnP audit event can be used to track down changes in system hardware and will be logged on the PC where the change took place. A list of hardware vendor IDs are included in the event.
 
-### <a href="" id="bkmk-moreinfo"></a>More info added to existing audit events
+##### <a href="" id="bkmk-moreinfo"></a>More info added to existing audit events
 
 With Windows 10, version 1507, we've added more info to existing audit events to make it easier for you to put together a full audit trail and come away with the information you need to protect your enterprise. Improvements were made to the following audit events:
 -   [Changed the kernel default audit policy](#bkmk-kdal)
@@ -109,16 +109,16 @@ With Windows 10, version 1507, we've added more info to existing audit events t
 -   [Added new BCD events](#bkmk-bcd)
 -   [Added new PNP events](#bkmk-pnp)
 
-### <a href="" id="bkmk-kdal"></a>Changed the kernel default audit policy
+##### <a href="" id="bkmk-kdal"></a>Changed the kernel default audit policy
 
 In previous releases, the kernel depended on the Local Security Authority (LSA) to retrieve info in some of its events. In Windows 10, the process creation events audit policy is automatically enabled until an actual audit policy is received from LSA. This results in better auditing of services that may start before LSA starts.
 
-### <a href="" id="bkmk-lsass"></a>Added a default process SACL to LSASS.exe
+##### <a href="" id="bkmk-lsass"></a>Added a default process SACL to LSASS.exe
 
 In Windows 10, a default process SACL was added to LSASS.exe to log processes attempting to access LSASS.exe. The SACL is L"S:(AU;SAFA;0x0010;;;WD)". You can enable this under **Advanced Audit Policy Configuration\\Object Access\\Audit Kernel Object**.
 This can help identify attacks that steal credentials from the memory of a process.
 
-### <a href="" id="bkmk-logon"></a>New fields in the logon event
+##### <a href="" id="bkmk-logon"></a>New fields in the logon event
 
 The logon event ID 4624 has been updated to include more verbose information to make them easier to analyze. The following fields have been added to event 4624:
 1.  **MachineLogon** String: yes or no
@@ -136,7 +136,7 @@ The logon event ID 4624 has been updated to include more verbose information to 
     If the user logs into the PC in restricted admin mode with Remote Desktop, this field will be yes.
     For more info on restricted admin mode, see [Restricted Admin mode for RDP](http://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
 
-### <a href="" id="bkmk-process"></a>New fields in the process creation event
+##### <a href="" id="bkmk-process"></a>New fields in the process creation event
 
 The logon event ID 4688 has been updated to include more verbose information to make them easier to analyze. The following fields have been added to event 4688:
 1.  **TargetUserSid** String
@@ -152,7 +152,7 @@ The logon event ID 4688 has been updated to include more verbose information to 
 6.  **ParentProcessId** String
     A pointer to the actual parent process if it's different from the creator process.
 
-### <a href="" id="bkmk-sam"></a>New Security Account Manager events
+##### <a href="" id="bkmk-sam"></a>New Security Account Manager events
 
 In Windows 10, new SAM events were added to cover SAM APIs that perform read/query operations. In previous versions of Windows, only write operations were audited. The new events are event ID 4798 and event ID 4799. The following APIs are now audited:
 -   SamrEnumerateGroupsInDomain
@@ -168,7 +168,7 @@ In Windows 10, new SAM events were added to cover SAM APIs that perform read/qu
 -   SamrGetMembersInAlias
 -   SamrGetUserDomainPasswordInformation
 
-### <a href="" id="bkmk-bcd"></a>New BCD events
+##### <a href="" id="bkmk-bcd"></a>New BCD events
 
 Event ID 4826 has been added to track the following changes to the Boot Configuration Database (BCD):
 -   DEP/NEX settings
@@ -179,7 +179,7 @@ Event ID 4826 has been added to track the following changes to the Boot Configur
 -   Integrity Services
 -   Disable Winload debugging menu
 
-### <a href="" id="bkmk-pnp"></a>New PNP events
+##### <a href="" id="bkmk-pnp"></a>New PNP events
 
 Event ID 6416 has been added to track when an external device is detected through Plug and Play. One important scenario is if an external device that contains malware is inserted into a high-value machine that doesn’t expect this type of action, such as a domain controller.
 
@@ -199,7 +199,7 @@ The following sections describe the new and changed functionality in the TPM for
 -   [Device Guard](device-guard-overview.md) support
 -   [Credential Guard](../keep-secure/credential-guard.md) support
 
-## <a href="" id="bkmk-dha"></a>Device health attestation
+### <a href="" id="bkmk-dha"></a>Device health attestation
 
 Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device heath attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
 Some things that you can check on the device are:

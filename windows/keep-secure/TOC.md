@@ -15,6 +15,7 @@
 ## [Configure S/MIME for Windows 10 and Windows 10 Mobile](configure-s-mime.md)
 ## [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md)
 ## [Protect derived domain credentials with Credential Guard](credential-guard.md)
+## [Protect Remote Desktop credentials with Remote Credential Guard](remote-credential-guard.md)
 ## [Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md)
 ### [Create an enterprise data protection (EDP) policy](overview-create-edp-policy.md)
 #### [Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md)

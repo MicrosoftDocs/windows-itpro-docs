@@ -26,6 +26,7 @@ In Windows 10, version 1607, the following Group Policies apply only to Windows 
 | **Force a specific default lock screen image** | Computer Configuration > Administrative Templates > Control Panel > Personalization | For more info, see [Windows spotlight on the lock screen](https://technet.microsoft.com/en-us/itpro/windows/whats-new/windows-spotlight) |
 | **Start layout** | User Configuration\Administrative Templates\Start Menu and Taskbar | For more info, see [Manage Windows 10 Start layout options and policies](windows-10-start-layout-options-and-policies.md)  |
 | **Turn off the Store application** | Computer Configuration > Administrative Templates > Windows Components > Store > Turn off the Store application<br><br>User Configuration > Administrative Templates > Windows Components > Store > Turn off the Store | For more info, see [Knowledge Base article# 3135657](https://support.microsoft.com/en-us/kb/3135657). |
+| **Don't search the web or display web results** | Computer Configuration\Administrative Templates\Windows Components\Search\Don't search the web or display web results | For more info, see [Cortana integration in your enterprise](manage-cortana-in-enterprise.md) |
 
 
 
