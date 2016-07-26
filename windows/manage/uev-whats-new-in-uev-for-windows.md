@@ -1,6 +1,6 @@
 ---
-title: What's New in UE-V 2.0
-description: What's New in UE-V 2.0
+title: What's New in UE-V for Windows 10, version 1607
+description: What's New in UE-V for Windows 10, version 1607
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -8,76 +8,94 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
+# What's New in UE-V for Windows 10, version 1607
 
-# What's New in UE-V 2.0
+User Experience Virtualization (UE-V) for Windows 10, version 1607, includes these new features and capabilities compared to UE-V 2.1. See Microsoft User Experience Virtualization for Windows 10, version 1607, Release Notes for more information about the UE-V for Windows 10, version 1607 release.
 
+<!-- NEED LINK TO RELNOTES WHEN IT'S CLEAR WHERE THEY'LL BE -->
 
-Microsoft User Experience Virtualization (UE-V) 2.0 provides these new features and functionality compared to UE-V 1.0. The [Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes](microsoft-user-experience-virtualization--ue-v--20-release-notesuevv2.md) provide more information about the UE-V 2.0 release.
+## UE-V is now a feature in Windows 10
 
-## Client-side cache (CSC) no longer required
+With Windows 10, version 1607 and later releases, UE-V is included with the [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is available with Software Assurance.
 
+If you’re already using UE-V 2.x, performing an in-place upgrade to Windows 10, version 1607, on user devices automatically installs the UE-V service, migrates users’ UE-V configurations, and updates the settings storage path. For more information about how to configure an existing UE-V installation after upgrading user devices to Windows 10, see .
 
-This version of UE-V introduces the **sync provider**, which replaces the requirement for the Windows Offline Files feature to support a client-side cache of settings.
+<!-- CREATE LINK AT END OF PREVIOUS PARAGRAPH. -->
 
-Whereas UE-V used to synchronize settings only when an application opened, closed, or when Windows locked or unlocked, or at logon or logoff, the sync provider also …
+> **Important**&nbsp;&nbsp;You can upgrade your existing UE-V installation to Windows 10 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you’ll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10.
 
--   Synchronizes local application and Windows settings out-of-band using "**trigger events**"
+## New UE-V template generator is available from the Windows 10 ADK
 
--   Uses a **scheduled task** to sync the settings storage package in any interval you choose for your enterprise requirements (every 30 minutes by default)
+UE-V for Windows 10 includes a new template generator, available from a new location. If you are upgrading from an existing UE-V installation, you’ll need to use the new generator to create settings location templates. The UE-V for Windows 10 template generator is now available in the [Windows 10 Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK).
 
-Certain conditions provide more frequent synchronization.
+## Compatibility with Microsoft Enterprise State Roaming
 
--   Settings synchronize when the user clicks the **Sync Now** button in the new Company Settings Center application.
+With Windows 10, version 1607, users can synchronize Windows application settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V on on-premises domain-joined devices only.
 
--   The sync provider can also start for a single application without waiting for the scheduled synchronization task. For example, when an application is closed, any settings changes are written to the local cache, and the sync provider process runs asynchronously to move those new settings changes to the settings storage location.
+In hybrid cloud environments, UE-V can roam win32 applications on-premise while [Enterprise State Roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
 
-## Windows app synchronization
+To configure UE-V to roam Windows desktop and application data only, change the following group policies:
 
+-   Disable “Roam Windows settings” group policy
 
-The developer of a Windows app can define which settings, if any, are to be synchronized, and these settings can now be captured and synchronized with UE-V.
+-   Enable “Do not synchronize Windows Apps” group policy
 
-By default, UE-V synchronizes the settings of many of the Windows apps included in Windows 8 and Windows 8.1. You can modify the list of synchronized apps with Windows PowerShell, Windows Management Instrumentation (WMI), or Group Policy.
+For more information about using UE-V with Enterprise State Roaming, see [Settings and data roaming FAQ](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-faqs/#what-are-the-options-for-roaming-settings-for-existing-windows-desktop-applications).
 
-**Note**  
-UE-V does not synchronize Windows app settings if the domain users link their sign-in credentials to their Microsoft account. This linking synchronizes settings to Microsoft OneDrive so UE-V only synchronizes the desktop applications.
+Additionally, to enable Windows 10 and UE-V to work together, configure these policy settings in the Microsoft User Experience Virtualization node:
 
- 
+-   Enable “Do Not Synchronize Windows Apps”
 
-## Microsoft account linking
+-   Disable “Sync Windows Settings”
 
+## Settings Synchronization Behavior Changed in UE-V for Windows 10
 
-Settings synchronization via OneDrive is new to Windows 8 when you are signed in with a Microsoft account or if you link your Microsoft account to your domain account. If a domain user uses UE-V and has signed in to a Microsoft account, then…
+While earlier versions of UE-V roamed taskbar settings between Windows 10 devices, UE-V for Windows 10, version 1607 does not synchronize taskbar settings between devices running Windows 10 and devices running previous versions of Windows.
 
--   UE-V only synchronizes settings for desktop applications
+In addition, UE-for Windows does not synchronize settings between the Microsoft Calculator in Windows 10 and the Microsoft Calculator in previous versions of Windows.
 
--   Microsoft account handles Windows app settings and Windows desktop settings
+## Support Added for Roaming Network Printers
 
-## Company Settings Center
+Users can now print to their saved network printers from any network device, including their default network printer.
 
+Printer roaming in UE-V requires one of these scenarios:
 
-You can provide your users with some control over which settings are synchronized through an application in UE-V 2 called Company Settings Center. Company Settings Center is installed along with the UE-V Agent, and users can access it from Control Panel, the **Start** menu or **Start** screen, and from the UE-V notification area icon.
+-   The print server can download the required driver when it roams to a new device.
 
-Company Settings Center displays which settings are synchronized and lets users see the synchronization status of UE-V. If you let them, users can use Company Settings Center to select which settings to synchronize. They can also click the **Sync Now** button to synchronize all settings immediately.
+-   The driver for the roaming network printer is pre-installed on any device that needs to access that network printer.
+
+-   The printer driver can be imported from Windows Update.
+
+> **Note**&nbsp;&nbsp;The UE-V printer roaming feature does not roam printer settings or preferences, such as printing double-sided.
+
+## Office 2016 Settings Location Template
+
+UE-V for Windows 10, version 1607 includes the Microsoft Office 2016 settings location template with improved Outlook signature support. We’ve added synchronization of default signature settings for new, reply, and forwarded emails. Users no longer have to choose the default signature settings.
+
+> **Note**&nbsp;&nbsp;An Outlook profile must be created on any device on which a user wants to synchronize their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
+
+UE-V works with Office 365 to determine whether Office 2016 settings are roamed by Office 365. If settings are roamed by Office 365, they are not roamed by UE-V. See [Overview of user and roaming settings for Office 2013](https://technet.microsoft.com/library/jj733593.aspx) for more information.
+
+To enable settings synchronization using UE-V, do one of the following:
+
+-   Use Group Policy to disable Office 365 synchronization
+
+-   Do not enable the Office 365 synchronization experience during Office 2013 installation
+
+UE-V includes Office 2016, Office 2013, and Office 2010 templates. Office 2007 templates are no longer supported. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](http://go.microsoft.com/fwlink/p/?LinkID=246589).
 
 ## Have a suggestion for UE-V?
-
 
 Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
+- [Microsoft User Experience Virtualization](uev-for-windows.md)
 
-[Get Started with UE-V 2.x](uev-getting-started.md)
+- [Get Started with UE-V](uev-getting-started.md)
 
-[Prepare a UE-V 2.x Deployment](uev-prepare-for-deployment.md)
+- [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
-[Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes](microsoft-user-experience-virtualization--ue-v--20-release-notesuevv2.md)
-
- 
-
- 
-
-
-
-
-
+<!--  ARE THE RELEASE NOTES IN A SEPARATE TOPIC?
+- Microsoft User Experience Virtualization for Windows 10, version 1607 Release Notes
+-->

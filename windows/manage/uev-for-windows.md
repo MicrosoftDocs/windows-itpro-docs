@@ -1,6 +1,6 @@
 ---
-title: Microsoft User Experience Virtualization (UE-V) 2.x
-description: Microsoft User Experience Virtualization (UE-V) 2.x
+title: Microsoft User Experience Virtualization for Windows 10, version 1607
+description: Overview of Microsoft User Experience Virtualization for Windows 10, version 1607
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -8,313 +8,88 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
+# Microsoft User Experience Virtualization for Windows 10, version 1607
 
-# Microsoft User Experience Virtualization (UE-V) 2.x
-
-
-Capture and centralize your users’ application settings and Windows OS settings by implementing Microsoft User Experience Virtualization (UE-V) 2.0 or 2.1. Then, apply these settings to the devices users access in your enterprise, like desktop computers, laptops, or virtual desktop infrastructure (VDI) sessions.
+Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Windows Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options. With Microsoft User Experience Virtualization (UE-V), you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.
 
 **With UE-V you can…**
 
--   Specify which application and desktop settings synchronize
+-   Specify which application and Windows settings synchronize
 
 -   Deliver the settings anytime and anywhere users work throughout the enterprise
 
 -   Create custom templates for your third-party or line-of-business applications
 
--   Recover settings after hardware replacement or upgrade, or after reimaging a virtual machine to its initial state
+-   Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state
 
-## Components of UE-V 2.x
+## Components of UE-V
 
+The diagram below illustrates how UE-V components work together to synchronize user settings.
 
-This diagram shows how deployed UE-V components work together to synchronize settings.
+<img src="images/uev-archdiagram.png" alt="UE-V architecture, with server share, desktop, and UE-V service" width="625" height="351" />
 
-![uev2 architectural diagram](images/uev2archdiagram.gif)
+<!--  SIMPLER METHOD FOR CODING IMAGE
+![UE-V architecture, with server share, desktop, and UE-V service](images/uev-archdiagram.png)
+-->
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Component</th>
-<th align="left">Function</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>UE-V Agent</strong></p></td>
-<td align="left"><p>Installed on every computer that needs to synchronize settings, the <strong>UE-V Agent</strong> monitors registered applications and the operating system for any settings changes, then synchronizes those settings between computers.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Settings packages</strong></p></td>
-<td align="left"><p>Application settings and Windows settings are stored in <strong>settings packages</strong> created by the UE-V Agent. Settings packages are built, locally stored, and copied to the settings storage location.</p>
-<ul>
-<li><p>The setting values for <strong>desktop applications</strong> are stored when the user closes the application.</p></li>
-<li><p>Values for <strong>Windows settings</strong> are stored when the user logs off, when the computer is locked, or when the user disconnects remotely from a computer.</p></li>
-</ul>
-<p>The sync provider determines when the application or operating system settings are read from the <strong>Settings Packages</strong> and synchronized.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Settings storage location</strong></p></td>
-<td align="left"><p>This is a standard network share that your users can access. The UE-V Agent verifies the location and creates a hidden system folder in which to store and retrieve user settings.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Settings location templates</strong></p></td>
-<td align="left"><p>UE-V uses XML files as settings location templates to monitor and synchronize desktop application settings and Windows desktop settings between user computers. By default, some settings location templates are included in UE-V . You can also create, edit, or validate custom settings location templates by [managing settings synchronization for custom applications](#customapps).</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Settings location templates are not required for Windows apps.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Windows app list</strong></p></td>
-<td align="left"><p>Settings for Windows apps are captured and applied dynamically. The app developer specifies the settings that are synchronized for each app. UE-V determines which Windows apps are enabled for settings synchronization using a managed list of apps. By default, this list includes most Windows apps.</p>
-<p>You can add or remove applications in the Windows app list by following the procedures shown [here](http://technet.microsoft.com/library/dn458925.aspx).</p></td>
-</tr>
-</tbody>
-</table>
+| **Component**            | **Function**     |
+|--------------------------|------------------|
+| **UE-V service**    | Enabled on every device that needs to synchronize settings, the **UE-V service** monitors registered applications and Windows for any settings changes, then synchronizes those settings between devices. |
+| **Settings packages**                   | Application settings and Windows settings are stored in **settings packages** created by the UE-V service. Settings packages are built, locally stored, and copied to the settings storage location.<br>The setting values for **desktop applications** are stored when the user closes the application.<br>Values for **Windows settings** are stored when the user logs off, when the computer is locked, or when the user disconnects remotely from a computer.<br>The sync provider determines when the application or operating system settings are read from the **Settings Packages** and synchronized. |
+| **Settings storage location**           | This is a standard network share that your users can access. The UE-V service verifies the location and creates a hidden system folder in which to store and retrieve user settings.    |
+| **Settings location templates**         | UE-V uses XML files as settings location templates to monitor and synchronize desktop application settings and Windows desktop settings between user computers. By default, some settings location templates are included in UE-V. You can also create, edit, or validate custom settings location templates by [managing settings synchronization for custom applications](#manage-settings-synchronization-for-custom-applications).<br>**Note**&nbsp;&nbsp;Settings location templates are not required for Windows applications.   |
+| **Universal Windows applications list** | Settings for Windows applications are captured and applied dynamically. The app developer specifies the settings that are synchronized for each app. UE-V determines which Windows applications are enabled for settings synchronization using a managed list of applications. By default, this list includes most Windows applications.<br>You can add or remove applications in the Windows app list by following the procedures in [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).  |
 
- 
-
-### <a href="" id="customapps"></a>Managing Settings Synchronization for Custom Applications
+## Manage Settings Synchronization for Custom Applications
 
 Use these UE-V components to create and manage custom templates for your third-party or line-of-business applications.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>UE-V Generator</strong></p></td>
-<td align="left"><p>Use the <strong>UE-V Generator</strong> to create custom settings location templates that you can then distribute to user computers. The UE-V Generator also lets you edit an existing template or validate a template that was created by using another XML editor.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Settings template catalog</strong></p></td>
-<td align="left"><p>The <strong>settings template catalog</strong> is a folder path on UE-V computers or a Server Message Block (SMB) network share that stores the custom settings location templates. The UE-V Agent checks this location once a day, retrieves new or updated templates, and updates its synchronization behavior.</p>
-<p>If you use only the UE-V default settings location templates, then a settings template catalog is unnecessary. For more information about settings deployment catalogs, see [Configure a UE-V settings template catalog](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).</p></td>
-</tr>
-</tbody>
-</table>
+| Component                     | Description   |
+|-------------------------------|---------------|
+| **UE-V Generator**            | Use the **UE-V generator** to create custom settings location templates that you can then distribute to user computers. The UE-V generator also lets you edit an existing template or validate a template that was created with a different XML editor. <br>With the Windows 10, version 1607 release, the UE-V generator is installed with the [Windows 10 Assessment and Deployment kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK). <br>If you are upgrading from an existing UE-V installation, you’ll need to use the new generator to create new settings location templates. Application templates created with previous versions of the UE-V generator are still supported, however. |
+| **Settings template catalog** | The **settings template catalog** is a folder path on UE-V computers or a Server Message Block (SMB) network share that stores the custom settings location templates. The UE-V service checks this location once a day, retrieves new or updated templates, and updates its synchronization behavior.<br>If you use only the UE-V default settings location templates, then a settings template catalog is unnecessary. For more information about settings deployment catalogs, see [Deploy a UE-V settings template catalog](uev-deploy-uev-for-custom-applications.md#deploycatalogue).  |
 
- 
-
-![ue-v generator process](images/ue-vgeneratorprocess.gif)
+<img src="media/image2.gif" width="595" height="330" />
 
 ## Settings Synchronized by Default
 
+UE-V synchronizes settings for these applications by default. For a complete list and more detailed information, see [Settings that are automatically synchronized in a UE-V deployment](uev-prepare-for-deployment.md#autosyncsettings).
 
-UE-V synchronizes settings for these applications by default. For a complete list and more detailed information, see [Settings that are automatically synchronized in a UE-V deployment](http://technet.microsoft.com/library/dn458932.aspx#autosyncsettings).
+-   Microsoft Office 2016, 2013, 2010, and 2007
 
-Microsoft Office 2013 applications (UE-V 2.1 SP1 and 2.1)
+-   Internet Explorer 8, 9, 10, and 11
 
-Microsoft Office 2010 applications (UE-V 2.1 SP1, 2.1, and 2.0)
+-   Many Windows applications, such as Xbox
 
-Microsoft Office 2007 applications (UE-V 2.0 only)
+-   Many Windows desktop applications, such as Notepad
 
-Internet Explorer 8, 9, and 10
+-   Many Windows settings, such as desktop background or wallpaper
 
-Internet Explorer 11 in UE-V 2.1 SP1 and 2.1
+**Note**
+You can also [customize UE-V to synchronize settings](uev-deploy-uev-for-custom-applications.md) for applications other than those synchronized by default.
 
-Many Windows applications, such as Xbox
+## UE-V for Windows 10, version 1607 Release Notes
 
-Many Windows desktop applications, such as Notepad
+**Upgrade from UE-V 1.0 to the in-box version of UE-V is not supported**
 
-Many Windows settings, such as desktop background or wallpaper
+Client side caching technology (CSC) used in UE-V 1.0, used for pinning the UE-V sync folder, was removed in UE-V 2.x. As a result, upgrading to UE-V 1.0 to UE-V 2.x or the in-box version of UE-V, released with Windows 10, version 1607, is not supported.
 
-**Note**  
-You can also [customize UE-V to synchronize settings](http://technet.microsoft.com/library/dn458942.aspx) for applications other than those synchronized by default.
+To work around this issue, unpin the CSC UE-V 1.0 sync folder and then upgrade to the in-box version of UE-V, released in Windows 10, version 1607.
 
- 
+## Other resources for this feature
 
-## Compare UE-V to other Microsoft products
+-   [Get Started with UE-V](uev-getting-started.md)
 
+-   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
-Use this table to compare UE-V to Synchronize Profiles in Windows 7, Synchronize Profiles in Windows 8, and the Sync PC Settings feature of Microsoft account.
+-   [Administer UE-V](uev-administering-uev.md)
 
-<table style="width:100%;">
-<colgroup>
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Feature</th>
-<th align="left">Synchronize Profiles using Windows 7</th>
-<th align="left">Synchronize Profiles using Windows 8</th>
-<th align="left">Synchronize Profiles using Windows 10</th>
-<th align="left">Microsoft account</th>
-<th align="left">UE-V 2.0</th>
-<th align="left">UE-V 2.1 and 2.1 SP1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Synchronize settings between multiple computers</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Synchronize settings between physical and virtual apps</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Synchronize Windows app settings</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Manage via WMI</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Synchronize settings changes on a regular basis</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Minimal configuration for Setup</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Supported on non-domain joined computers</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Supports Primary Computer Active Directory attribute</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Synchronizes settings between virtual desktop infrastructure (VDI)/Remote Desktop Services (RDS) and rich desktops</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Unlimited setting storage space</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Choice in which app settings to synchronize</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Backup/Restore for IT Pro</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>●</p></td>
-<td align="left"><p>Partial</p></td>
-<td align="left"><p>●</p></td>
-</tr>
-</tbody>
-</table>
+<!-- Are we keeping the troubleshooting topic? 
+-   [Troubleshoot UE-V](uev-troubleshooting.md) 
+-->
 
- 
-
-## UE-V 2.x Release Notes
-
-
-For more information, and for late-breaking news that did not make it into the documentation, see
-
--   [Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes](microsoft-user-experience-virtualization--ue-v--21-sp1-release-notes.md)
-
--   [Microsoft User Experience Virtualization (UE-V) 2.1 Release Notes](microsoft-user-experience-virtualization--ue-v--21-release-notesuevv21.md)
-
--   [Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes](microsoft-user-experience-virtualization--ue-v--20-release-notesuevv2.md)
-
-## Other resources for this product
-
-
--   [Get Started with UE-V 2.x](uev-getting-started.md)
-
--   [Prepare a UE-V 2.x Deployment](uev-prepare-for-deployment.md)
-
--   [Administering UE-V 2.x](uev-administering-uev.md)
-
--   [Troubleshooting UE-V 2.x](uev-troubleshooting.md)
-
--   [Technical Reference for UE-V 2.x](uev-technical-reference.md)
-
-### More information
-
-<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](http://go.microsoft.com/fwlink/p/?LinkId=225286)  
-Learn about the latest MDOP information and resources.
-
-<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032)  
-Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28http://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28http://go.microsoft.com/fwlink/p/?LinkId=242447).
+-   [Technical Reference for UE-V](uev-technical-reference.md)
 
 ## Have a suggestion for UE-V?
 
-
 Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
-
- 
-
- 
-
-
-
-
-
