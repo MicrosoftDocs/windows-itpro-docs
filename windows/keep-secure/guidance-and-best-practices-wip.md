@@ -14,7 +14,7 @@ author: eross-msft
 **Applies to:**
 
 -   Windows 10, version 1607
--   Windows 10 Mobile Preview
+-   Windows 10 Mobile
 
 This section includes info about the enlightened Microsoft apps, including how to add them to your allowed apps list in Microsoft Intune. It also includes some testing scenarios that we recommend running through with Windows Information Protection (WIP).
 

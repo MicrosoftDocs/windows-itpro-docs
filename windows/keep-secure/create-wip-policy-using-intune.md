@@ -13,7 +13,7 @@ author: eross-msft
 **Applies to:**
 
 -   Windows 10, version 1607
--   Windows 10 Mobile Preview
+-   Windows 10 Mobile
 
 Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
 

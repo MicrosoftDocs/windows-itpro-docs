@@ -13,7 +13,7 @@ author: eross-msft
 **Applies to:**
 
 -   Windows 10, version 1607
--   Windows 10 Mobile Preview
+-   Windows 10 Mobile
 
 Microsoft Intune and System Center Configuration Manager 2016 helps you create and deploy your enterprise data protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 

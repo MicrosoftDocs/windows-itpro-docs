@@ -14,7 +14,7 @@ author: eross-msft
 **Applies to:**
 
 -   Windows 10, version 1607
--   Windows 10 Mobile Preview
+-   Windows 10 Mobile
 
 After you’ve created your Windows Information Protection (WIP) policy, you'll need to deploy it to your organization's enrolled devices. Enrollment can be done for business or personal devices, allowing the devices to use your managed apps and to sync with your managed content and information.
 
