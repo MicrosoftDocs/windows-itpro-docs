@@ -2,7 +2,6 @@
 title: Using UE-V 2.x with Application Virtualization Applications
 description: Using UE-V 2.x with Application Virtualization Applications
 author: jamiejdt
-ms.assetid: 4644b810-fc48-4fd0-96e4-2fc6cd64d8ad
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Using UE-V 2.x with Application Virtualization Applications
 
 
-Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 support Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, an additional step is required because you cannot run the UE-V Generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V 4.5, App-V 4.6, and App-V 5.0 packages.
+Microsoft User Experience Virtualization (UE-V) supports Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, an additional step is required because you cannot run the UE-V Generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V 4.5, App-V 4.6, and App-V 5.0 packages.
 
 ## UE-V settings synchronization for App-V applications
 
@@ -35,10 +34,10 @@ UE-V monitors when an application opens by the program name and, optionally, by 
 
 4.  Start the App-V package.
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

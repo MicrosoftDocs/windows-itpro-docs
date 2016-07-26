@@ -2,7 +2,6 @@
 title: Configuring the Company Settings Center for UE-V 2.x
 description: Configuring the Company Settings Center for UE-V 2.x
 author: jamiejdt
-ms.assetid: 48fadb0a-c0dc-4287-9474-f94ce1417003
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Configuring the Company Settings Center for UE-V 2.x
 
 
-Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 include a new application, the Company Settings Center, which helps users manage settings to synchronize. The Company Settings Center is installed by using the UE-V Agent. Users access the Company Settings Center in Control Panel, in the **Start** menu or on the **Start** screen, and via the UE-V notification area icon. Company Settings Center displays which settings are synchronized and helps users see the synchronization status of UE-V. Users can use the Company Settings Center to select which applications or Windows features synchronize their settings between computers. They can also click the **Sync Now** button to synchronize all settings immediately. The administrator can also include a link for support in the Company Settings Center.
+Microsoft User Experience Virtualization (UE-V) includes an application, the Company Settings Center, which helps users manage settings to synchronize. The Company Settings Center is installed by using the UE-V Agent. Users access the Company Settings Center in Control Panel, in the **Start** menu or on the **Start** screen, and via the UE-V notification area icon. Company Settings Center displays which settings are synchronized and helps users see the synchronization status of UE-V. Users can use the Company Settings Center to select which applications or Windows features synchronize their settings between computers. They can also click the **Sync Now** button to synchronize all settings immediately. The administrator can also include a link for support in the Company Settings Center.
 
 ## About the Company Settings Center
 
@@ -74,10 +73,10 @@ The Company Settings Center can include a hyperlink that users can click to get 
 
 3.  Deploy settings to users’ computers by using the management tool.
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
  
 

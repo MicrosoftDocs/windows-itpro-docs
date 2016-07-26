@@ -2,7 +2,6 @@
 title: Changing the Frequency of UE-V 2.x Scheduled Tasks
 description: Changing the Frequency of UE-V 2.x Scheduled Tasks
 author: jamiejdt
-ms.assetid: ee486570-c6cf-4fd9-ba48-0059ba877c10
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Changing the Frequency of UE-V 2.x Scheduled Tasks
 
 
-The Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, or 2.1 SP1 Agent installer, AgentSetup.exe, creates the following scheduled tasks during the UE-V Agent installation:
+The Microsoft User Experience Virtualization (UE-V) Agent installer, AgentSetup.exe, creates the following scheduled tasks during the UE-V Agent installation:
 
 -   **Monitor Application Settings**
 
@@ -311,10 +310,10 @@ The following additional information applies to UE-V scheduled tasks:
 
 -   The Monitor Application Settings scheduled task will update Windows app (AppX) settings in real time, based on Windows app program setting triggers built into each app.
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

@@ -2,7 +2,6 @@
 title: Sync Trigger Events for UE-V 2.x
 description: Sync Trigger Events for UE-V 2.x
 author: jamiejdt
-ms.assetid: 4ed71a13-6a4f-4376-996f-74b126536bbc
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +11,7 @@ ms.prod: w10
 # Sync Trigger Events for UE-V 2.x
 
 
-Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V Agent synchronizes those settings with the settings storage location. UE-V 2 introduces a new *Sync Method* called the *SyncProvider*. For more information about Sync Method configuration, see [Sync Methods for UE-V 2.x](uev-sync-methods.md).
+Microsoft User Experience Virtualization (UE-V) lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V Agent synchronizes those settings with the settings storage location. UE-V 2 introduces a new *Sync Method* called the *SyncProvider*. For more information about Sync Method configuration, see [Sync Methods for UE-V 2.x](uev-sync-methods.md).
 
 ## UE-V 2 Sync Trigger Events
 
@@ -103,10 +102,10 @@ The following table explains the trigger events for classic applications and Win
 
  
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

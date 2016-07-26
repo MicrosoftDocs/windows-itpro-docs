@@ -2,7 +2,6 @@
 title: Microsoft User Experience Virtualization (UE-V) 2.x
 description: Microsoft User Experience Virtualization (UE-V) 2.x
 author: jamiejdt
-ms.assetid: b860fed0-b846-415d-bdd6-ba60231a64be
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -306,10 +305,10 @@ Learn about the latest MDOP information and resources.
 <a href="" id="mdop-information-experience"></a>[MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032)  
 Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28http://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28http://go.microsoft.com/fwlink/p/?LinkId=242447).
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
  
 

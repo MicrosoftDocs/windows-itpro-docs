@@ -2,7 +2,6 @@
 title: Configuring UE-V 2.x with Group Policy Objects
 description: Configuring UE-V 2.x with Group Policy Objects
 author: jamiejdt
-ms.assetid: 2bb55834-26ee-4f19-9860-dfdf3c797143
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Configuring UE-V 2.x with Group Policy Objects
 
 
-Some Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. For information about how to install UE-V Group Policy ADMX files, see [Installing the UE-V 2 Group Policy ADMX Templates](http://technet.microsoft.com/library/dn458891.aspx#admx).
+Some Microsoft User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. For information about how to install UE-V Group Policy ADMX files, see [Installing the UE-V 2 Group Policy ADMX Templates](http://technet.microsoft.com/library/dn458891.aspx#admx).
 
 The following policy settings can be configured for UE-V.
 
@@ -194,7 +193,9 @@ The UE-V Agent uses the following order of precedence to determine synchronizati
 
 4.  Configuration settings that are defined for the computer by using Windows PowerShell or WMI. These configuration settings are stored by the UE-V Agent under this registry location: `HKEY_LOCAL_MACHINE\Software\Microsoft\Uev\Agent\Configuration`.
 
-    **Got a suggestion for UE-V**? Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). **Got a UE-V issue**? Use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+## Have a suggestion for UE-V?
+
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
@@ -202,12 +203,3 @@ The UE-V Agent uses the following order of precedence to determine synchronizati
 [Administering UE-V 2.x](uev-administering-uev.md)
 
 [Manage Configurations for UE-V 2.x](uev-manage-configurations.md)
-
- 
-
- 
-
-
-
-
-

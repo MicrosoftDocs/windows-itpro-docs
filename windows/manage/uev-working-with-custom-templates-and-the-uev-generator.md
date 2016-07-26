@@ -2,7 +2,6 @@
 title: Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
 description: Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
 author: jamiejdt
-ms.assetid: f0bb4920-0132-472c-a564-abf06a884275
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
 
 
-To synchronize application settings between user computers, Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 use *settings location templates*. Some settings location templates are included in User Experience Virtualization. You can also create, edit, or validate custom settings location templates by using the UE-V Generator.
+To synchronize application settings between user computers, Microsoft User Experience Virtualization (UE-V) uses *settings location templates*. Some settings location templates are included in User Experience Virtualization. You can also create, edit, or validate custom settings location templates by using the UE-V Generator.
 
 The UE-V Generator monitors Windows desktop applications to discover and capture the locations where the application stores its settings. The application that is monitored must be a desktop application. The UE-V Generator cannot create a settings location template for the following application types:
 
@@ -148,10 +147,10 @@ Before you share a settings location template on the UE-V template gallery, ensu
 
 Before you deploy any settings location template that you have downloaded from the UE-V gallery, you should first test the template to ensure that the application settings synchronize settings correctly in a test environment.
 
-## Got a suggestion for UE-V?
+## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

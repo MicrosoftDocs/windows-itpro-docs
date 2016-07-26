@@ -2,7 +2,6 @@
 title: Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
 description: Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
 author: jamiejdt
-ms.assetid: 56e6780b-8b2c-4717-91c8-2af63062ab75
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
 
 
-You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 Agent configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](http://go.microsoft.com/fwlink/?LinkId=393495) (http://go.microsoft.com/fwlink/?LinkId=393495).
+You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage Microsoft User Experience Virtualization (UE-V) Agent configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](http://go.microsoft.com/fwlink/?LinkId=393495) (http://go.microsoft.com/fwlink/?LinkId=393495).
 
 **To deploy the UE-V Agent by using Windows PowerShell**
 
@@ -351,9 +350,10 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     </tbody>
     </table>
 
-     
+   
+## Have a suggestion for UE-V?
 
-    **Got a suggestion for UE-V**? Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). **Got a UE-V issue**? Use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev).
+Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
@@ -361,12 +361,3 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
 [Administering UE-V 2.x with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
 [Administering UE-V 2.x](uev-administering-uev.md)
-
- 
-
- 
-
-
-
-
-
