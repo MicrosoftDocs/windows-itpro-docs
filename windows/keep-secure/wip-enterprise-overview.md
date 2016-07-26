@@ -74,4 +74,4 @@ WIP gives you a new way to manage data policy enforcement for apps and documents
 You can turn off all Windows Information Protection and restrictions, reverting to where you were pre-WIP, with no data loss. However, turning off WIP isn't recommended. If you choose to turn it off, you can always turn it back on, but WIP won't retain your decryption and policies info.
 
 ## Related topics
-- [Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-WIP.md)
+- [Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-EDP.md)
