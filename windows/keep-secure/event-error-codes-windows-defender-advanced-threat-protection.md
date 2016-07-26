@@ -89,22 +89,23 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tr>
 <tr>
 <td>7</td>
-<td>Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: ```variable```</td>
-<td>The endpoint did not onboard correctly and will not be reporting to the portal.</td>
+<td>Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure: ```variable```</td>
+<td>Variable = detailed error description. The endpoint did not onboard correctly and will not be reporting to the portal.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)</td>
 </tr>
 <tr>
 <td>8</td>
 <td>Windows Defender Advanced Threat Protection service failed to clean its configuration. Failure code: ```variable```</td>
-<td>The endpoint did not onboard correctly and will not be reporting to the portal.</td>
-<td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
+<td>**During onboarding:** The service failed to clean its configuration during the onboarding. The onboarding process continues. <br><br> **During offboarding:** The service failed to clean its configuration during the offboarding. The offboarding process finished but the service keeps running.
+ </td>
+<td>**Onboarding:** No action required. <br><br> **Offboarding:** Reboot the system.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Windows Defender Advanced Threat Protection service failed to change its start type. Failure code: ```variable```</td>
-<td>The endpoint did not onboard correctly and will not be reporting to the portal.</td>
+<td>**During onboarding:** The endpoint did not onboard correctly and will not be reporting to the portal. <br><br>**During offboarding:** Failed to change the service start type. The offboarding process continues. </td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)</td>
 </tr>
@@ -125,21 +126,14 @@ It may take several hours for the endpoint to appear in the portal.</td>
 <tr>
 <td>12</td>
 <td>Windows Defender Advanced Threat Protection failed to apply the default configuration.</td>
-<td>Service was unable to apply configuration from the processing servers.</td>
+<td>Service was unable to apply the default configuration.</td>
 <td>This is a server error and should resolve after a short period.</td>
 </tr>
 <tr>
 <td>13</td>
-<td>Service machine ID calculated: ```variable```</td>
+<td>Windows Defender Advanced Threat Protection machine ID calculated: ```variable```</td>
 <td>Normal operating process.</td>
 <td>Normal operating notification; no action required.</td>
-</tr>
-<tr>
-<td>14</td>
-<td>Service cannot calculate machine ID. Failure code: ```variable```</td>
-<td>Internal error.</td>
-<td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
-See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)</td>
 </tr>
 <tr>
 <td>15</td>
@@ -177,8 +171,9 @@ If this error persists after a system restart, ensure all Windows updates have f
 </tr>
 <tr>
 <td>25</td>
-<td>Windows Defender Advanced Threat Protection service failed to reset health status in the registry, causing the onboarding process to fail. Failure code: ```variable```</td>
-<td>The endpoint did not onboard correctly and will not be reporting to the portal.</td>
+<td>Windows Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: ```variable```</td>
+<td>The endpoint did not onboard correctly.
+It will report to the portal, however the service may not appear as registered in SCCM or the registry.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)</td>
 </tr>
@@ -221,6 +216,12 @@ Ensure real-time antimalware protection is running properly.</td>
 <td>[Check for errors with the Windows telemetry service](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-the-telemetry-and-diagnostics-service-is-enabled).</td>
 </tr>
 <tr>
+<td>32</td>
+<td>Windows Defender Advanced Threat Protection service failed to request to stop itself after offboarding process. Failure code: %1</td>
+<td>An error occurred during offboarding.</td>
+<td>Reboot the machine.</td>
+</tr>
+<tr>
 <td>33</td>
 <td>Windows Defender Advanced Threat Protection service failed to persist SENSE GUID. Failure code: ```variable```</td>
 <td>A unique identifier is used to represent each endpoint that is reporting to the portal.<br>
@@ -234,6 +235,97 @@ If the identifier does not persist, the same machine might appear twice in the p
 <td>[Ensure the telemetry service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-the-telemetry-and-diagnostics-service-is-enabled).<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Windows Defender Advanced Threat Protection service failed to remove itself as a dependency on the Connected User Experiences and Telemetry service. Failure code: ```variable```</td>
+<td>An error occurred with the Windows telemetry service during offboarding. The offboarding process continues.
+</td>
+<td>Check for errors with the Windows telemetry service.</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Windows Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration succeeded. Completion code: ```variable```</td>
+<td>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>37</td>
+<td>Windows Defender Advanced Threat Protection A module is about to exceed its quota. Module: %1, Quota: {%2} {%3}, Percentage of quota utilization: %4.</td>
+<td>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>38</td>
+<td>Network connection is identified as low. Windows Defender Advanced Threat Protection will contact the server every %1 minutes. Metered connection: %2, internet available: %3, free network available: %4.</td>
+<td>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>39</td>
+<td>Network connection is identified as normal. Windows Defender Advanced Threat Protection will contact the server every %1 minutes. Metered connection: %2, internet available: %3, free network available: %4.</td>
+<td>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>40</td>
+<td>Battery state is identified as low. Windows Defender Advanced Threat Protection will contact the server every %1 minutes. Battery state: %2.</td>
+<td>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>41</td>
+<td>Battery state is identified as normal. Windows Defender Advanced Threat Protection will contact the server every %1 minutes. Battery state: %2.</td>
+<td>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>42</td>
+<td>Windows Defender Advanced Threat Protection WDATP component failed to perform action. Component: %1, Action: %2, Exception Type: %3, Exception message: %4</td>
+<td>Internal error. The service failed to start.</td>
+<td>If this error persists, contact Support.</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Windows Defender Advanced Threat Protection WDATP component failed to perform action. Component: %1, Action: %2, Exception Type: %3, Exception Error: %4, Exception message: %5</td>
+<td>Internal error. The service failed to start.</td>
+<td>If this error persists, contact Support.</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Offboarding of Windows Defender Advanced Threat Protection service completed.</td>
+<td>The service was offboarded.</td>
+<td>Normal operating notification; no action required.</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Failed to register and to start the event trace session [%1]. Error code: %2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>46</td>
+<td>Failed to register and start the event trace session [%1] due to lack of resources. Error code: %2. This is most likely because there are too many active event trace sessions. The service will retry in 1 minute.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>47</td>
+<td>Successfully registered and started the event trace session - recovered after previous failed attempts.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>48</td>
+<td>Failed to add a provider [%1] to event trace session [%2]. Error code: %3. This means that events from this provider will not be reported.</td>
+<td></td>
+<td></td>
 </tr>
 </tr>
 </tbody>
