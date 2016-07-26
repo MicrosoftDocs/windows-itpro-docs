@@ -179,7 +179,7 @@ The levels are cumulative and are illustrated in the following diagram. Also, th
 
 The Security level gathers only the telemetry info that is required to keep Windows devices, Windows Server, and guests protected with the latest security updates. This level is only available on Windows Server 2016, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and Windos IoT Core editions.
 
-> ![NOTE]
+> [!NOTE]  
 > If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
 
 Windows Server Update Services (WSUS) and System Center Configuration Manager functionality is not affected at this level, nor is telemetry data about Windows Server features or System Center gathered.
@@ -192,14 +192,15 @@ The data gathered at this level includes:
 
 -   **Malicious Software Removal Tool (MSRT)** The MSRT infection report contains information, including device info and IP address.
 
-    >**Note:**  You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users. For more info, see Microsoft KB article [891716](http://support.microsoft.com/kb/891716).
+    > [!NOTE]  
+    > You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users. For more info, see Microsoft KB article [891716](http://support.microsoft.com/kb/891716).
 
      
 
 -   **Windows Defender/Endpoint Protection**. Windows Defender and System Center Endpoint Protection requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address.
 
-    **Note**  
-    This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](disconnect-your-organization-from-microsoft.md#windows-defender).
+    > [!NOTE]  
+    > This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](disconnect-your-organization-from-microsoft.md#windows-defender).
 
     Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates.
 
@@ -300,7 +301,8 @@ IT pros can use various methods, including Group Policy and Mobile Device Manage
 
 We do not recommend that you turn off telemetry in your organization as valuable functionality may be impacted, but we recognize that in some scenarios this may be required. Use the steps in this section to do so for Windows, Windows Server, and System Center.
 
->**Important:**  These telemetry levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. You should work with your app vendors to understand their telemetry policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses telemetry, see [Overview of Office Telemetry](http://technet.microsoft.com/library/jj863580.aspx).
+> [!IMPORTANT]  
+> These telemetry levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. You should work with your app vendors to understand their telemetry policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses telemetry, see [Overview of Office Telemetry](http://technet.microsoft.com/library/jj863580.aspx).
 
 You can turn on or turn off System Center telemetry gathering. The default is on and the data gathered at this level represents what is gathered by default when System Center telemetry is turned on. However, setting the operating system telemetry level to **Basic** will turn off System Center telemetry, even if the System Center telemetry switch is turned on.
 
@@ -368,7 +370,8 @@ There are a few more settings that you can turn off that may send telemetry info
 
 -   Turn off **Linguistic Data Collection** in **Settings** &gt; **Privacy**. At telemetry levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
 
-    >**Note:**  Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
+    > [!NOTE]  
+    > Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
 
 ## Additional resources
 
