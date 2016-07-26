@@ -413,7 +413,7 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.  
 
-## Troubleshoot onboarding issues using the script
+## Troubleshoot onboarding issues using the local script
 If you configured your endpoints with a deployment tool that required a script, you can check the event viewer for the onboarding script results.
 
 **Check the result of the script**:
