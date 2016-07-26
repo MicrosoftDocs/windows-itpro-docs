@@ -17,8 +17,8 @@ author: iaanw
 - Windows 10, version 1607.
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You might need to troubleshoot the Windows Defender Advanced Threat Protection onboarding process if you encounter issues.
-This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, and common error codes encountered during onboarding. <!--and steps for resolving problems with Azure Active Directory (AAD).-->
+You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
+This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, and common error codes encountered during onboarding. 
 
 ## Endpoints are not reporting to the service correctly
 
@@ -64,16 +64,16 @@ You can check the event viewer for the onboarding script results.
 
 If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
 > [!NOTE]
-> The following event IDs are specific to the onboarding script only. 
+> The following event IDs are specific to the onboarding script only.
 
 Event ID | Error Type | Resolution steps
 :---|:---|:---
 5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```
 10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```. Verify that the script was ran as an administrator.
-15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). 
+15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights).
 30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md) 
-40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md) 
+35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
 
 
 
@@ -374,10 +374,10 @@ If none of the event logs and troubleshooting steps work, download the Local scr
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---|:---|:---|:---|:---
 0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding |  **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [Ensure the endpoint is onboarded successfully](#ensure-the-endpoint-is-onboarded-successfully) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
- | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```. <br> <br> If it doesn't exist, open an elevated command and add the key. 
+ | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```. <br> <br> If it doesn't exist, open an elevated command and add the key.
   | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
-   | | | All | **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported. 
-   0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. 
+   | | | All | **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported.
+   0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional.
 
 <br>
 **Known issues with non-compliance**
@@ -395,7 +395,7 @@ Case | Symptoms | Possible cause and troubleshooting steps
 
 View the MDM event logs to troubleshoot issues that might arise during onboarding:
 
-Log name: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Provider 
+Log name: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Provider
 
 Channel name: Admin
 
@@ -442,4 +442,3 @@ Log in to the application in the Azure Management Portal again:
 ## Related topics
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
 - [Configure endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
-
