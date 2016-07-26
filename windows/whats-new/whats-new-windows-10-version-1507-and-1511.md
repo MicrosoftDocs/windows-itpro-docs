@@ -319,7 +319,7 @@ Microsoft Edge is the default browser experience for Windows 10 and Windows 10
 
 We also recommend that you upgrade to IE11 if you're running any earlier versions of Internet Explorer. IE11 is supported on Windows 7, Windows 8.1, and Windows 10. So any legacy apps that work with IE11 will continue to work even as you migrate to Windows 10.
 
-[Learn more about Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge/index)
+[Learn more about using Microsoft Edge in the enterprise](https://technet.microsoft.com/itpro/microsoft-edge/enterprise-guidance-using-microsoft-edge-and-ie11)
 
 
 ## Learn more
