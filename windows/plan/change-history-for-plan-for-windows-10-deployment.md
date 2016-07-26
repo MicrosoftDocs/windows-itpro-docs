@@ -24,6 +24,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 | New or changed topic                                                                                                                             | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+|[Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) (multiple topics) |Redirected deprecated content to the [Upgrade Analytics](../deploy/manage-windows-upgrades-with-upgrade-analytics.md) content. Only Standard User Analyzer and Compatibility Administrator continue to be supported.|
 | [Windows 10 servicing overview](windows-10-servicing-options.md) | Content on this page was summarized. Detailed content about servicing branches was moved to the [Windows 10 servicing options](../manage/introduction-to-windows-10-servicing.md) page. |
 
 

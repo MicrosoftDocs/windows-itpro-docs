@@ -1,8 +1,0 @@
-{
-  "locales": [ "zh-cn" ],
-  "files": ["!/*.md", "**/**/*.md", "**/*.md"],
-  "includeDependencies": true,
-  "autoPush": true,
-  "xliffVersion": "2.0",
-  "useJavascriptMarkdownTransformer": true
-}

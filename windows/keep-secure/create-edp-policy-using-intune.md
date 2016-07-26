@@ -422,7 +422,7 @@ There are no default locations included with EDP, you must add each of your netw
 
 5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
-        ![Microsoft Intune, Add your Data Recovery Agent (DRA) certificate](images/intune-data-recovery.png)
+       ![Microsoft Intune, Add your Data Recovery Agent (DRA) certificate](images/intune-data-recovery.png)
 
     After you create and deploy your EDP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data.
 
