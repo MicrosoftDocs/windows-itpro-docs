@@ -48,8 +48,8 @@ Two computers are required to complete this guide:
 <table border="1" cellpadding="2">
     <tr>
         <td style="border:0px hidden white;"></td>
-        <td BGCOLOR="#a0e4fa">**Computer 1**</td>
-        <td BGCOLOR="#a0e4fa">**Computer 2**</td>
+        <td BGCOLOR="#a8bbc1" style="border:0px hidden;">**Computer 1**</td>
+        <td BGCOLOR="#a8bbc1" style="border:0px hidden;">**Computer 2**</td>
     </tr>
     <tr>
         <td BGCOLOR="#a8bbc1">Role</td>
@@ -127,14 +127,17 @@ See the following diagram:
 
 ### Install Hyper-V
 
-Use one of the following procedures to install Hyper-V on the Hyper-V host computer:
-
-- [Install Hyper-V on a computer running Windows 8/8.1/10](#to-install-hyper-v-on-a-computer-running-windows-8-8-1-10)<BR>
-- [Install Hyper-V on a computer running Windows Server 2012/2012 R2/2016](#to-install-hyper-v-on-a-computer-running-windows-server-2012-2012-r2-2016)
-
-####To install Hyper-V on a computer running Windows 8/8.1/10
-
 1. Verify that the computer supports Hyper-V.
+
+    To install Hyper-V, the computer must be running one of the following operating systems, or a later operating system: 
+    - Windows 8 
+    - Windows 8.1
+    - Windows 10
+    - Windows Server 2012
+    - Windows Server 2012 R2
+    - Winodws Server 2016
+
+    Note: A 64-bit operating system is requried to run Hyper-V.
 
     Starting with Windows 8, the host computer’s microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](http://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information. To verify your computer supports SLAT, open an administrator command prompt,  type systeminfo, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. 
     
@@ -148,26 +151,22 @@ Use one of the following procedures to install Hyper-V on the Hyper-V host compu
                                Second Level Address Translation: Yes
                                Data Execution Prevention Available: Yes
     ```   
-    In this example, the computer supports SLAT and Hyper-V. 
+    In the example above, the computer supports SLAT and Hyper-V. 
     
-    If one or more requirements are evaluated as "No" then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the "Virtualization Enabled In Firmware" setting from "No" to "Yes." The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
-
-    Note: A 64-bit operating system is requried to run Hyper-V.
+    If one or more requirements are evaluated as "No" then the computer does not support installing Hyper-V.  However, if only the **"Virtualization Enabled In Firmware"** setting is incompatible, you might be able to enable virtualization in the BIOS and change this setting from "No" to "Yes." The location of this setting will depend on the manufacturer and BIOS version, but is often found associated with the BIOS security settings.
 
 2. Enable Hyper-V.
 
-    The Hyper-V feature is not installed by default. To get it, open an elevated Windows PowerShell window and type the following command:
+    The Hyper-V feature is not installed by default. To get it, open an elevated Windows PowerShell window and type the following command. This command works to install Hyper-V on both Windows client and server operating systems:
 
     ```
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
     ```
-    When you are prompted to restart the computer, choose Yes. The computer might restart more than once.
+    When you are prompted to restart the computer, choose **Yes**. The computer might restart more than once. 
     
     You can also install Hyper-V using the Control Panel in Windows, under Turn Windows features on or off, as shown below:
     
     ![hyper-v feature](images/hyper-v-feature.png)
-
-####To install Hyper-V on a computer running Windows Server 2012/2012 R2/2016
 
 ### Download VHDs
 
