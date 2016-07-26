@@ -17,21 +17,20 @@ author: mjcaparas
 
 - Windows 10 Insider Preview Build 14332  or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+- System Center 2012 Configuration Manager or later versions
 
 <span id="sccm1606"/>
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (current branch) version 1606, currently in technical preview, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://technet.microsoft.com/en-us/library/mt706220.aspx#BKMK_ATP).
 
-> [!NOTE] 
+> [!NOTE]
 > If you intend to use this deployment tool, ensure that you are on Windows 10 Insider Preview Build 14379 or later. This deployment method is only available from that build or later.
 
 <span id="sccm1602"/>
-## Configure endpoints using System Center Configuration Manager (current branch) version 1602 or earlier versions 
-You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center Configuration Manager (current branch), version 1602 or earlier, including: System Center 2012 R2 Configuration Manager and System Center 2012 Configuration Manager. 
+## Configure endpoints using System Center Configuration Manager (current branch) version 1602 or earlier versions
+You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in System Center Configuration Manager (current branch), version 1602 or earlier, including: System Center 2012 R2 Configuration Manager and System Center 2012 Configuration Manager.
 
-### Onboard endpoints 
+### Onboard endpoints
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -46,8 +45,8 @@ You can use System Center Configuration Manager’s existing functionality to cr
 4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
 
     a. Choose a predefined device collection to deploy the package to.
-    
-### Offboard endpoints 
+
+### Offboard endpoints
 
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
@@ -57,9 +56,9 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. Click **Endpoint Management** on the **Navigation pane**.
-    
+
     b. Under **Endpoint offboarding** section, select **System Center Configuration Manager (current branch) version 1602 or earlier**, click **Download package**, and save the .zip file.
-    
+
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682112.aspx#BKMK_Import) topic.
@@ -67,7 +66,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682178.aspx) topic.
 
     a. Choose a predefined device collection to deploy the package to.
-    
+
 ### Monitor endpoint configuration
 Monitoring with SCCM consists of two parts:
 
@@ -92,5 +91,5 @@ If there are failed deployments (endpoints with **Error**, **Requirements Not Me
 ## Related topics
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) 
+- [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
