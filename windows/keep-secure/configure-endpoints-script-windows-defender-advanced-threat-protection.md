@@ -13,7 +13,7 @@ author: mjcaparas
 # Configure endpoints using a local script
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
-
+## Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a.  Click **Endpoint Management** on the **Navigation pane**.
@@ -37,7 +37,10 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
 For for information on how you can manually validate that the endpoint is compliant and correctly reports telemetry see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
-## Offboard endpoints using a local script
+## Configure sample collection settings
+PENDING STEPS FROM OMRI
+
+## Offboard endpoints
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
@@ -62,6 +65,18 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
 5.  Press the **Enter** key or click **OK**.
+
+## Monitor endpoint configuration
+You can follow the different verification steps in the [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) to verify that the script completed successfully and the agent is running.
+
+Monitoring can also be done directly on the portal, or by using the different deployment tools.
+
+### Monitor endpoints using the portal
+1.	Go to the Windows Defender ATP portal.
+
+2.	Click **Machines view**.
+
+3.	Verify that endpoints are appearing.
 
 
 ## Related topics
