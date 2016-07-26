@@ -92,3 +92,10 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
     ```text
     sc qc diagtrack
     ```
+## Windows Defender signature updates are configured
+The Windows Defender ATP agent depends on Windows Defender’s ability to scan files and provide information about them, If Windows Defender is not the active Anti-Malware in your organization, you may need to configure the signature updates. For more information see [Configure Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+
+## Windows Defender Early Launch AntiMalware (ELAM) driver is enabled
+If you're running Windows Defender as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
+
+If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information on how to validate and enable the Windows Defender ELAM driver see, [Ensure the Windows Defender ELAM driver is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-windows-defender-elam-driver-is-enabled).
