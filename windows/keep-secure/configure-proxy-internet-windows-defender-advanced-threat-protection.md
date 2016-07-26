@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP endpoint proxy and Internet connection settings
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
-keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, web proxy auto detect, wpad, netsh, winhttp, proxy server
+keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -24,12 +24,12 @@ The embedded Windows Defender ATP sensor runs in system context using the LocalS
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
-- Configure Web Proxy Auto Detect (WPAD) settings and configure Windows to automatically detect the proxy server
-
-- Configure the proxy server manually using Netsh
+<!-- - Configure Web Proxy Auto Detect (WPAD) settings and configure Windows to automatically detect the proxy server
+- Configure the proxy server manually using Netsh-->
 
 - Configure the proxy server manually using a static proxy
 
+<!--
 ## Configure Web Proxy Auto Detect (WPAD) settings and proxy server
 
 Configure WPAD in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings.
@@ -47,6 +47,7 @@ Enable the **Automatically detect settings** option in the Windows Proxy setting
     ![Image showing the proxy settings configuration page](images/proxy-settings.png)
 
 5. If the **Use setup script** or **Manual proxy setup** options are enabled then you will need to [configure proxy settings manually by using Netsh](#configure-proxy-server-manually-using-netsh) method for WinHTTP to discover the appropriate proxy settings and connect.
+
 
 ## Configure the proxy server manually using Netsh
 
@@ -111,7 +112,7 @@ netsh winhttp show proxy
 ```
 
 For more information on how to use Netsh see, [Netsh Commands for Windows Hypertext Transfer Protocol (WINHTTP)](https://technet.microsoft.com/en-us/library/cc731131(v=ws.10).aspx)     
-
+-->
 ## Configure the proxy server manually using a static proxy
 Configure a static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
 
@@ -138,12 +139,12 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 U.S. region:
 - *.blob.core.windows.net
 - crl.microsoft.com
-- us.vortex-win.data.microsoft.com 
+- us.vortex-win.data.microsoft.com
 - winatp-gw-cus.microsoft.com
 - winatp-gw-eus.microsoft.com
 - www.microsoft.com
 
-EU region: 
+EU region:
 - *.blob.core.windows.net
 - crl.microsoft.com
 - eu.vortex-win.data.microsoft.com
@@ -160,7 +161,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 1. Download the connectivity verification tool to the PC where Windows Defender ATP sensor is running on:
 
-    - Download Snapshot  - NEED LINK ON WHERE TO DOWNLOAD THIS. 
+    - Download Snapshot  - NEED LINK ON WHERE TO DOWNLOAD THIS.
 
 2.  Open an elevated command-line:
 
@@ -171,7 +172,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 3. Enter the following command and press **Enter**:
 
     ```
-    HardDrivePath\PsExec.exe -s -i HardDrivePath\SenseSnapshot.exe 
+    HardDrivePath\PsExec.exe -s -i HardDrivePath\SenseSnapshot.exe
     ```
     Replace *HardDrivePath* with the path where the SenseSnapshot tool was downloaded to, for example ```C:\Programfiles\mytool\sensesnapshottool\SenseSnapshot.exe```.
 
