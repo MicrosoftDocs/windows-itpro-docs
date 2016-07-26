@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: iaanw
+author: mjcaparas
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
@@ -18,9 +18,7 @@ author: iaanw
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
-This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, and common error codes encountered during onboarding. 
-
-## Endpoints are not reporting to the service correctly
+This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, and common error codes encountered during onboarding.
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an endpoint onboarding or connectivity problem.
 
@@ -32,7 +30,7 @@ Go through the following verification topics to address this issue:
 - [Ensure the endpoint has an Internet connection](#Ensure-that-the-Windows-Defender-ATP-endpoint-has-internet-connection)
 
 
-### Ensure the endpoint is onboarded successfully
+## Ensure the endpoint is onboarded successfully
 If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service was successfully onboarded onto the endpoint.
 
 **Check the onboarding state in Registry**:
@@ -53,37 +51,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection
 
 If the **OnboardingState** value is not set to **1**, you can use Event Viewer to review errors on the endpoint.
 
-You can check the event viewer for the onboarding script results.
-
-**Check the result of the script**:
-1. Click **Start**, type **Event Viewer**, and press **Enter**.
-
-2. Go to **Windows Logs** > **Application**.
-
-3. Look for an event from **WDATPOnboarding** event source.
-
-If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
-> [!NOTE]
-> The following event IDs are specific to the onboarding script only.
-
-Event ID | Error Type | Resolution steps
-:---|:---|:---
-5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```
-10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```. Verify that the script was ran as an administrator.
-15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights).
-30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-
-
-
 **Use Event Viewer to identify and address onboarding errors**:   
 
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
-    > [!NOTE]
+  > [!NOTE]
 	> SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
 
 3. Select **Operational** to load the log.
@@ -104,8 +78,95 @@ Event ID | Message | Resolution steps
 15 | Windows Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the endpoint has Internet access](#ensure-the-endpoint-has-an-internet-connection).
 25 | Windows Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
 
+## Ensure the Windows Defender ELAM driver is enabled
+If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled.
 
+**Check the ELAM driver status:**
+1.	Open a command-line prompt on the endpoint:
 
+  a. Click **Start**, type **cmd**, and select **Command prompt**.
+
+2.	Enter the following command, and press Enter:
+```
+sc qc WdBoot
+```
+If the ELAM driver is enabled, the output will be:
+
+```
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WdBoot
+        TYPE               : 1  KERNEL_DRIVER
+        START_TYPE         : 0   BOOT_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : \SystemRoot\system32\drivers\WdBoot.sys
+        LOAD_ORDER_GROUP   : Early-Launch
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Boot Driver
+        DEPENDENCIES       :
+        SERVICE_START_NAME :
+```
+If the ELAM driver is disabled the output will be:
+```
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WdBoot
+        TYPE               : 1  KERNEL_DRIVER
+        START_TYPE         : 0   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : \SystemRoot\system32\drivers\WdBoot.sys
+        LOAD_ORDER_GROUP   : _Early-Launch
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Boot Driver
+        DEPENDENCIES       :
+        SERVICE_START_NAME :
+```
+### Enable the ELAM driver
+
+1. Open an elevated PowerShell console on the endpoint:
+
+  a. Click **Start**, type **powershell**.
+
+  b. Right-click **Command prompt** and select **Run as administrator**.
+
+2. Run the following PowerShell cmdlet:
+```
+'Set-ExecutionPolicy -ExecutionPolicy Bypass’
+```
+3. Run the following PowerShell script:
+
+```
+Add-Type @'
+using System;
+using System.IO;
+using System.Runtime.InteropServices;
+using Microsoft.Win32.SafeHandles;
+using System.ComponentModel;
+
+public static class Elam{
+    [DllImport("Kernel32", CharSet=CharSet.Auto, SetLastError=true)]
+    public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle);
+
+    public static void InstallWdBoot(string path)
+    {
+        Console.Out.WriteLine("About to call create file on {0}", path);
+        var stream = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
+        var handle = stream.SafeFileHandle;
+
+        Console.Out.WriteLine("About to call InstallELAMCertificateInfo on handle {0}", handle.DangerousGetHandle());
+        if (!InstallELAMCertificateInfo(handle))
+        {
+            Console.Out.WriteLine("Call failed.");
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+        }
+        Console.Out.WriteLine("Call successful.");
+    }
+}
+'@
+
+$driverPath = $env:SystemRoot + "\System32\Drivers\WdBoot.sys"
+[Elam]::InstallWdBoot($driverPath)
+```
 ### Ensure the Windows Defender ATP service is enabled
 If the endpoints aren't reporting correctly, you might need to check that the Windows Defender ATP service is set to automatically start and is running on the endpoint.
 
@@ -194,7 +255,6 @@ If the service **STATE** is not set to **RUNNING**, then you'll need to start it
 ### Ensure the telemetry and diagnostics service is enabled
 If the endpoints aren't reporting correctly, you might need to check that the Windows 10 telemetry and diagnostics service is set to automatically start and is running on the endpoint. The service may have been disabled by other programs or user configuration changes.
 
-
 First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't).
 
 ### Ensure the service is set to start
@@ -218,7 +278,6 @@ If the service is enabled, then the result should look like the following screen
 ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
-
 
 
 **Use the command line to set the Windows 10 telemetry and diagnostics service to automatically start:**
@@ -284,9 +343,9 @@ If the startup type is not set to **Automatic**, you'll need to change it so the
 
 2.  Enter the following command, and press **Enter**:
 
-    ```text
-    sc query diagtrack
-    ```
+```text
+sc query diagtrack
+```
 
 If the service is running, the result should look like the following screenshot:
 
@@ -305,15 +364,14 @@ If the service **STATE** is not set to **RUNNING**, then you'll need to start it
 
 2.  Enter the following command, and press **Enter**:
 
-    ```text
-    sc start diagtrack
-    ```
-
+  ```text
+  sc start diagtrack
+  ```
 3. A success message is displayed. Verify the change by entering the following command, and press **Enter**:
 
-    ```text
-    sc query diagtrack
-    ```
+  ```text
+  sc query diagtrack
+  ```
 
 **Use the Windows Services console to check the Windows 10 telemetry and diagnostics service is running**:
 
@@ -353,10 +411,32 @@ WinHTTP is independent of the Internet browsing proxy settings and other user co
 
 To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls) topic.
 
-If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.    
+If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.  
 
-## Cyber events are not showing up on the portal and logs show event ID 28
-If you don't see cyber events in the portal and checking the logs show the event that states _Windows Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration failed_, you'll need to make sure that the diagnostics service is enabled and running. For more information on how to check, see [Ensure the service is running](#ensure-the-service-is-running).
+## Troubleshoot onboarding issues using the script
+If you configured your endpoints with a deployment tool that required a script, you can check the event viewer for the onboarding script results.
+
+**Check the result of the script**:
+1. Click **Start**, type **Event Viewer**, and press **Enter**.
+
+2. Go to **Windows Logs** > **Application**.
+
+3. Look for an event from **WDATPOnboarding** event source.
+
+If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
+> [!NOTE]
+> The following event IDs are specific to the onboarding script only.
+
+Event ID | Error Type | Resolution steps
+:---|:---|:---
+5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```
+10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```. Verify that the script was ran as an administrator.
+15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights).
+15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender ELAM driver, see [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled) for instructions.
+30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+65 | Insufficient privileges| Run the script again with administrator privileges.
 
 ## Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
@@ -399,12 +479,28 @@ Log name: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Provider
 
 Channel name: Admin
 
-ID | Severity | Event description | Description
+ID | Severity | Event description | Troubleshooting steps
 :---|:---|:---|:---
-1801 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Get Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3) | Windows Defender ATP has failed to get specific node's value. <br> TokenName: Contains node name that caused the error. <br> Result: Error details.  
-1802 | Information | Windows Defender Advanced Threat Protection CSP: Get Node's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3) |  Windows Defender ATP has completed to get specific node's value. <br> TokenName: Contains node name <br><br> Result: Error details or succeeded.
-1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br><br> TokenName: Contains node name that caused the error <br><br> Result: Error details.
-1820 | Information | Windows Defender Advanced Threat Protection CSP: Set Nod's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ATP has completed to get specific node's value. <br><br> TokenName: Contains node name <br><br> Result: Error details or succeeded.
+1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ELAM driver needs to be enabled see, [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled) for instructions.
+
+## Troubleshoot onboarding issues using System Center Configuration Manager
+When onboarding endpoints using the following versions of System Center Configuration Manager:
+- System Center 2012 Configuration Manager
+- System Center 2012 R2 Configuration Manager
+- System Center Configuration Manager (current branch) version 1511
+- System Center Configuration Manager (current branch) version 1602
+
+The onboarding is performed by running the onboarding script. For more information on issues that may occur with the script see [Troubleshoot onboarding issues using the script](#troubleshoot-onboarding-issues-using-the-script).
+
+
+
+
+
+<!--
+## Cyber events are not showing up on the portal and logs show event ID 28
+If you don't see cyber events in the portal and checking the logs show the event that states _Windows Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration failed_, you'll need to make sure that the diagnostics service is enabled and running. For more information on how to check, see [Ensure the service is running](#ensure-the-service-is-running).
+-->
+
 
 
 <!--
