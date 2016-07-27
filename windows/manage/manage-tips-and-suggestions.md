@@ -50,6 +50,7 @@ Windows 10, version 1607 (also known as the Anniversary Update), provides organi
 - [Manage Windows 10 Start layout](windows-10-start-layout-options-and-policies.md)
 - [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)
 - [Windows spotlight on the lock screen](../whats-new/windows-spotlight.md)
+- [Windows 10 editions for education customers](https://technet.microsoft.com/en-us/edu/windows/windows-editions-for-education-customers)
 
 
  
