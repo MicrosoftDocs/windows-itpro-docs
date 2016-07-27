@@ -19,6 +19,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 - [Set up Windows 10](set-up-windows-10.md)
 - [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md)
 - [Provision student PCs with apps](set-up-students-pcs-with-apps.md)
+- [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)
 
 
 ## July 2016
