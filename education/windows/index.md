@@ -17,6 +17,7 @@ author: jdeckerMS
 
 |Topic |Description |
 |------|------------|
+| [Windows 10 editions for education customers](windows-editions-for-education-customers.md) | Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education.  |
 | [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md) | Learn how the Set up School PCs app works and how to use it.  |
 | [Technical reference for the Set up School PCs app (Preview)](set-up-school-pcs-technical.md) | See the changes that the Set up School PCs app makes to a PC.  |
 | [Get Minecraft Education Edition](get-minecraft-for-education.md) | Learn how to get early access to **Minecraft Education Edition**. |

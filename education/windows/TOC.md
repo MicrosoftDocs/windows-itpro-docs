@@ -1,5 +1,6 @@
 # [Windows 10 for education](index.md)
 ## [Change history for Windows 10 for Education](change-history-edu.md)
+## [Windows 10 editions for education customers](windows-editions-for-education-customers.md)
 ## [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md)
 ## [Technical reference for the Set up School PCs app (Preview)](set-up-school-pcs-technical.md)
 ## [Get Minecraft Education Edition](get-minecraft-for-education.md)
