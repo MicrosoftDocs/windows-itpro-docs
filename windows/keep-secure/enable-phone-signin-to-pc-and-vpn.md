@@ -18,7 +18,7 @@ author: jdeckerMS
 
 In Windows 10, Version 1607, your network users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser. Phone sign-in uses Bluetooth, which means no need to wait for a phone call -- just unlock the phone and tap the app.
 
- (add screenshot when I can get the app working)
+![Sign in to a device](images/phone-signin-menu.png)
 
 You can create a Group Policy or mobile device management (MDM) policy that will allow users to sign in to a work PC or their company's VPN using the credentials stored on their Windows 10 phone.
 
