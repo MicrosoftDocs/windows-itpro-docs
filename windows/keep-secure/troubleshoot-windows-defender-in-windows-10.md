@@ -1014,39 +1014,6 @@ Description of the error. </dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 </dl>
-<p>NOTE: Whenever Windows Defender, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services which the malware might have changed:<ul>
-<li>Default Internet Explorer or Edge setting</li>
-<li>User Access Control settings</li>
-<li>Chrome settings</li>
-<li>Boot Control Data</li>
-<li>Regedit and Task Manager registry settings</li>
-<li>Windows Update, Background Intelligent Transfer Service, and Remote Procedure Call service</li>
-<li>Windows Operating System files</li></ul>
-The above context applies to the following client and server versions:
-<table>
-<tr>
-<th>Operating system</th>
-<th>Operating system version</th>
-</tr>
-<tr>
-<td>
-<p>Client Operating System </p>
-</td>
-<td>
-<p>Windows Vista (Service Pack 1, or Service Pack 2), Windows 7 and later</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Server Operating System</p>
-</td>
-<td>
-<p>Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2016</p>
-</td>
-</tr>
-</p>
-</dl>
-</p>
 </td>
 </tr>
 <tr>
