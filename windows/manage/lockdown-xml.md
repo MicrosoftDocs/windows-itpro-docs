@@ -262,13 +262,13 @@ In the following example, when a user presses the Search button, the phone diale
 
 ![XML for CSP Runner](images/CSPRunnerXML.jpg)
 
-You can use CSPRunner to include settings that are not defined in AssignedAccessXML. For example, you can include settings from other sections of EnterpriseAssignedAccess CSP, such as lockscreen, theme, and time zone. You can also include settings from other CSPs, such as [Wi-Fi CSP](http://go.microsoft.com/fwlink/p/?LinkID=717460) or [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962%28v=vs.85%29.aspx).
+You can use CSPRunner to include settings that are not defined in AssignedAccessXML. For example, you can include settings from other sections of EnterpriseAssignedAccess CSP, such as lockscreen, theme, and time zone. You can also include settings from other CSPs, such as [Wi-Fi CSP](http://go.microsoft.com/fwlink/p/?LinkID=717460) or [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx).
  
 CSPRunner is helpful when you are configuring a device to support multiple roles. It lets you apply different policies according to the role that is signed on. For example, Wi-Fi could be enabled for a supervisor role and disabled for a stocking clerk role. 
 
 In CSPRunner, you specify the CSP and settings using SyncML, a standardized markup language for device management. A SyncML section can include multiple settings, or you can use multiple SyncML sections -- it's up to you how you want to organize settings in this section.
 
->  **Note**&nbsp;&nbsp;This description of SyncML is just the information that you need to use SyncML in a lockdown XML file. To learn more about SyncML, see [Structure of OMA DM provisioning files](https://msdn.microsoft.com/en-us/windows/hardware/dn914774.aspx).
+>  **Note**&nbsp;&nbsp;This description of SyncML is just the information that you need to use SyncML in a lockdown XML file. To learn more about SyncML, see [Structure of OMA DM provisioning files](https://msdn.microsoft.com/windows/hardware/dn914774.aspx).
 
 Let's start with the structure of SyncML in the following example:
 

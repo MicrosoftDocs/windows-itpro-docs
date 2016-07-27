@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Provision PCs with apps and certificates for initial deployment
+# Provision PCs with apps and certificates for initial deployment (advanced provisioning)
 
 
 **Applies to**
@@ -33,7 +33,7 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 
 ## Create the provisioning package
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
@@ -54,7 +54,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the `msiexec /quiet` option. 
 
-> **Note**: If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
+> **Note**: If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
 
 
 ### Add a universal app to your package

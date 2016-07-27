@@ -65,9 +65,9 @@ In organizations using only Azure AD, you can connect from an Azure AD-joined PC
 
 ## Related topics
 
-[How to use Remote Desktop](http://windows.microsoft.com/en-us/windows-10/how-to-use-remote-desktop)
+[How to use Remote Desktop](https://support.microsoft.com/instantanswers/ff521c86-2803-4bc0-a5da-7df445788eb9/how-to-use-remote-desktop)
 
-[Remote Desktop Connection: frequently asked questions](http://windows.microsoft.com/en-us/windows/remote-desktop-connection-faq#1TC=windows-8) (Windows 8.1 documentation, still applicable to Windows 10)
+
 
 
  
