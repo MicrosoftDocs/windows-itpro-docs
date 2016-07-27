@@ -508,7 +508,7 @@ For more information about installing the Windows ADK, see [Step 2-2: Install Wi
 Next, install MDT. MDT uses the Windows ADK to help you manage and perform Windows 10 and app deployment. It is a free tool available directly from Microsoft.
 You can use MDT to deploy 32-bit or 64-bit versions of Windows 10. Install the 64-bit version of MDT to support deployment of 32-bit and 64-bit operating systems.
 
->**Note**&nbsp;&nbsp;If you install the 32-bit version of MDT, you can install only 32-bit versions of Windows 10. Ensure that you download and install the 64-bit version of MDT so that you can install 64-bit and 32 bit versions of the operating system.
+>**Note**&nbsp;&nbsp;If you install the 32-bit version of MDT, you can install only 32-bit versions of Windows 10. Ensure that you download and install the 64-bit version of MDT so that you can install 64-bit and 32-bit versions of the operating system.
 
 For more information about installing MDT on the admin device, see [Installing a New Instance of MDT](https://technet.microsoft.com/en-us/library/dn759415.aspx#InstallingaNewInstanceofMDT).
 
@@ -522,7 +522,7 @@ For more information about how to create a deployment share, see [Step 3-1: Crea
 
 ### Install the Configuration Manager console
 
->**Note**&nbsp;&nbsp;If you selected System Center Configuration Manager to deploy Windows 10 or manage your devices (in the [Select the deployment methods](#select-the-deployment-methods) and [Select the management methods](#select-the-configuration-setting-management-methods) sections, respectively), perform the steps in this section. Otherwise, skip this section and continue to the next.
+>**Note**&nbsp;&nbsp;If you selected System Center Configuration Manager to deploy Windows 10 or manage your devices (in the [Select the deployment methods](#select-the-deployment-methods) and [Select the configuration setting management methods](#select-the-configuration-setting-management-methods) sections, respectively), perform the steps in this section. Otherwise, skip this section and continue to the next.
 
 You can use System Center Configuration Manager to manage Windows 10 deployments, Windows desktop apps, Windows Store apps, and software updates. To manage System Center Configuration Manager, you use the Configuration Manager console. You must install the Configuration Manager console on every device you use to manage System Center Configuration Manager (specifically, the admin device). The Configuration Manager console is automatically installed when you install System Center Configuration Manager primary site servers.
 
@@ -552,73 +552,24 @@ As a first step in deploying your classroom, create an Office 365 Education subs
 
 Complete the following steps to select the appropriate Office 365 Education license plan for your school:
 
-<ol>
-<li>Determine the number of faculty members and students who will use the classroom.
-Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.</li>
-<br/>
-<li>Determine the faculty members and students who need to install Microsoft Office applications on devices (if any).
-Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 8 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.<br/>
+1. Determine the number of faculty members and students who will use the classroom. Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.</li>
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="35%" />
-<col width="35%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Plan</th>
-<th align="left">Advantages</th>
-<th align="left">Disadvantages</th>
-</tr>
-</thead>
-<tbody>
+2. Determine the faculty members and students who need to install Microsoft Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 8 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.
 
-<tr>
-<td>Office 365 Education</td>
-<td>
-<ul>
-<li>Less expensive than Office 365 ProPlus</li>
-<li>Can be run from any device</li>
-<li>No installation necessary</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Must have an Internet connection to use it</li>
-<li>Does not support all the features found in Office 365 ProPlus</li>
-</ul>
-</td>
-</tr>
-
-<tr>
-<td>Office 365 ProPlus</td>
-<td>
-<ul>
-<li>Only requires an Internet connection every 30 days (for activation)</li>
-<li>Supports the full set of Office features</li>
-<li>Can be installed on five devices per user (there is no limit to the number of devices on which you can run Office apps online)</li>
-</td>
-<td>
-<ul>
-<li>Requires installation</li>
-<li>More expensive than Office 365 Education</li>
-</ul>
-</td>
-</tr>
-
-</tbody>
-</table>
+|Plan  |Advantages  |Disadvantages |
+|----- |----------- |------------- |
+|Office 365 Education |<ul><li>Less expensive than Office 365 ProPlus</li><li>Can be run from any device</li><li>No installation necessary</li></ul> | <ul><li>Must have an Internet connection to use it</li><li>Does not support all the features found in Office 365 ProPlus</li></ul> |
+|Office 365 ProPlus |<ul><li>Only requires an Internet connection every 30 days (for activation)</li><li>Supports the full set of Office features</li><li>Can be installed on five devices per user (there is no limit to the number of devices on which you can run Office apps online)</li></ul> |<ul><li>Requires installation</li><li>More expensive than Office 365 Education</li></ul>|
 
 *Table 8. Comparison of standard and Office 365 ProPlus plans*
-<br/><br/>
-The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.</li>
-<br/><br/>
-<li>Determine whether students or faculty need Azure Rights Management.
 
-  You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).</li>
-<br/>
-<li>Record the Office 365 Education license plans needed for the classroom in Table 9.
+The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
+
+3. Determine whether students or faculty need Azure Rights Management.
+
+    You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).
+
+4. Record the Office 365 Education license plans needed for the classroom in Table 9.
 <table>
 <colgroup>
 <col width="25%" />
@@ -804,7 +755,7 @@ To implement this method, perform the following steps:
    Put the student information in the format the bulk-import feature requires.
 2. Bulk-import the student information into Azure AD.
 
-   For more information about how to perform this step, see the [Bulk-import user accounts in Office 365](#bulk-import-user-accounts-in-office-365) section.
+   For more information about how to perform this step, see the [Bulk-import user and group accounts in Office 365](#bulk-import-user-and-group-accounts-in-office-365) section.
 
 #### Summary
 
@@ -988,7 +939,8 @@ Windows Store for Business allows you to create your own private portal to manag
 
 * Find and acquire Windows Store apps.
 * Manage apps, app licenses, and updates.
-* Distribute apps to your users. 
+* Distribute apps to your users.
+
 
 For more information about Windows Store for Business, see [Windows Store for Business overview](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview).
 
@@ -1049,6 +1001,7 @@ Later in the process, you will import the versions of Windows 10 you want to dep
 * New devices or refreshing existing devices, you will completely replace the existing operating system on a device with Windows 10.
 * Upgrading existing devices, you will upgrade the existing operating system (the Windows 8.1 or Windows 7 operating system) to Windows 10.
 
+
 Depending on your school’s requirements, you may need any combination of the following Windows 10 editions:
 
 - **Windows 10 Pro.** Use this operating system to:
@@ -1063,9 +1016,9 @@ Depending on your school’s requirements, you may need any combination of the f
 
 For more information about the Windows 10 editions, see [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
-One other consideration is the mix of processor architectures you will support. If you can, support only 64 bit versions of Windows 10. If you have devices that can run only 32-bit versions of Windows 10, you will need to import both 64-bit and 32-bit versions of the Windows 10 editions listed above.
+One other consideration is the mix of processor architectures you will support. If you can, support only 64-bit versions of Windows 10. If you have devices that can run only 32-bit versions of Windows 10, you will need to import both 64-bit and 32-bit versions of the Windows 10 editions listed above.
 
->**Note**&nbsp;&nbsp;On devices that have minimal system resources (such as devices with only 2 GB of memory or 32 GB of storage), use 32 bit versions of Windows 10 because 64-bit versions of Windows 10 place more stress on device system resources.
+>**Note**&nbsp;&nbsp;On devices that have minimal system resources (such as devices with only 2 GB of memory or 32 GB of storage), use 32-bit versions of Windows 10 because 64-bit versions of Windows 10 place more stress on device system resources.
 
 Finally, as a best practice, minimize the number of operating systems that you deploy and manage. If possible, standardize institution-owned devices on one Windows 10 edition (such as a 64-bit version of Windows 10 Education or Windows 10 Pro). Of course, you cannot standardize personal devices on a specific operating system version or processor architecture.
 
@@ -1229,7 +1182,7 @@ For more information about how to create an MDT application for Window desktop a
 
 <tr>
 <td valign="top">6. Update the deployment share</td>
-<td>Updating a deployment share generates the MDT boot images you use to initiate the Windows 10 deployment process. You can configure the process to create 32 bit and 64 bit versions of the .iso and .wim files you can use to create bootable media or in Windows Deployment Services.<br/><br/>
+<td>Updating a deployment share generates the MDT boot images you use to initiate the Windows 10 deployment process. You can configure the process to create 32-bit and 64-bit versions of the .iso and .wim files you can use to create bootable media or in Windows Deployment Services.<br/><br/>
 For more information about how to update a deployment share, see [Update a Deployment Share in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#UpdateaDeploymentShareintheDeploymentWorkbench).
 
 </td>
@@ -1251,6 +1204,7 @@ Deploying a new System Center Configuration Manager infrastructure is beyond the
 
 * [Get ready for System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt608540.aspx)
 * [Start using System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt608544.aspx)
+
 
 #### To configure an existing System Center Configuration Manager infrastructure for operating system deployment
 
@@ -1908,7 +1862,7 @@ Follow the same steps you followed in the [Deploy Windows 10 to devices](#deploy
 
 #### Summary
 
-You have now identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your district and individual school configuration should match the typical school configuration you saw in the section Plan a typical district configuration. By performing these maintenance tasks, you help ensure that your district as a whole stays secure and is configured as you specified. 
+You have now identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your district and individual school configuration should match the typical school configuration you saw in the [Plan a typical district configuration](#plan-a-typical-district-configuration) section. By performing these maintenance tasks, you help ensure that your district as a whole stays secure and is configured as you specified. 
 
 ## Related topics
 
