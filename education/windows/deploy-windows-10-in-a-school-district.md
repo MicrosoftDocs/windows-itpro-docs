@@ -556,14 +556,14 @@ Complete the following steps to select the appropriate Office 365 Education lice
 
 2. Determine the faculty members and students who need to install Microsoft Office applications on devices (if any). Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 8 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.
 
-|Plan  |Advantages  |Disadvantages |
-|----- |----------- |------------- |
-|Office 365 Education |<ul><li>Less expensive than Office 365 ProPlus</li><li>Can be run from any device</li><li>No installation necessary</li></ul> | <ul><li>Must have an Internet connection to use it</li><li>Does not support all the features found in Office 365 ProPlus</li></ul> |
-|Office 365 ProPlus |<ul><li>Only requires an Internet connection every 30 days (for activation)</li><li>Supports the full set of Office features</li><li>Can be installed on five devices per user (there is no limit to the number of devices on which you can run Office apps online)</li></ul> |<ul><li>Requires installation</li><li>More expensive than Office 365 Education</li></ul>|
+    |Plan  |Advantages  |Disadvantages |
+    |----- |----------- |------------- |
+    |Office 365 Education |<ul><li>Less expensive than Office 365 ProPlus</li><li>Can be run from any device</li><li>No installation necessary</li></ul> | <ul><li>Must have an Internet connection to use it</li><li>Does not support all the features found in Office 365 ProPlus</li></ul> |
+    |Office 365 ProPlus |<ul><li>Only requires an Internet connection every 30 days (for activation)</li><li>Supports the full set of Office features</li><li>Can be installed on five devices per user (there is no limit to the number of devices on which you can run Office apps online)</li></ul> |<ul><li>Requires installation</li><li>More expensive than Office 365 Education</li></ul>|
 
-*Table 8. Comparison of standard and Office 365 ProPlus plans*
+    *Table 8. Comparison of standard and Office 365 ProPlus plans*
 
-The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
+    The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
 
 3. Determine whether students or faculty need Azure Rights Management.
 
@@ -571,14 +571,14 @@ The best user experience is to run Office 365 ProPlus or use native Office apps 
 
 4. Record the Office 365 Education license plans needed for the classroom in Table 9.
 
-|Quantity |Plan |
-|---------|-----|
-|   |Office 365 Education for students|
-|   |Office 365 Education for faculty|
-|   |Azure Rights Management for students|
-|   |Azure Rights Management for faculty|
+    |Quantity |Plan |
+    |---------|-----|
+    |   |Office 365 Education for students|
+    |   |Office 365 Education for faculty|
+    |   |Azure Rights Management for students|
+    |   |Azure Rights Management for faculty|
 
-*Table 9. Office 365 Education license plans needed for the classroom*
+    *Table 9. Office 365 Education license plans needed for the classroom*
 
 You will use the Office 365 Education license plan information you record in Table 9 in [Create user accounts in Office 365](#create-user-accounts-in-office-365) later in this guide.
 
@@ -1215,6 +1215,7 @@ You can use Windows Deployment Services in conjunction with MDT to automatically
     * [Windows Deployment Services Overview](https://technet.microsoft.com/library/hh831764.aspx)
     * The Windows Deployment Services Help file, included in Windows Deployment Services
     * [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/en-us/library/jj648426.aspx)
+
 2. Add LTI boot images (Windows PE images) to Windows Deployment Services.
     
     The LTI boot images (.wim files) that you will add to Windows Deployment Services are in the MDT deployment share. Locate the .wim files in the deployment share’s Boot subfolder.
@@ -1237,6 +1238,7 @@ You can use Windows Deployment Services in conjunction with System Center Config
     * [Windows Deployment Services Overview](https://technet.microsoft.com/library/hh831764.aspx)
     * The Windows Deployment Services Help file, included in Windows Deployment Services
     * [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/en-us/library/jj648426.aspx)
+
 2. Configure a distribution point to accept PXE requests in System Center Configuration Manager.
 
     To support PXE boot requests, you install the PXE service point site system role. Then, you must configure one or more distribution points to respond to PXE boot request.
@@ -1288,6 +1290,7 @@ You initially configured the MDT deployment share in the [Configure the MDT depl
 
     * [Create Folders to Organize Device Drivers for LTI Deployments](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateFolderstoOrganizeDeviceDriversforLTIDeployments)
     * [Create Selection Profiles to Select the Device Drivers for LTI Deployments](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateSelectionProfilestoSelecttheDeviceDriversforLTIDeployments)
+
 5. Customize the task sequence to use the selection profile that you created in step 4.
 
     You can customize the **Inject Driver** task sequence step in the **Preinstall** task sequence group in your task sequence to deploy only the device drivers in the selection profile. For more information, see [Configure Task Sequences to Deploy Device Drivers in Selection Profiles for LTI Deployments](https://technet.microsoft.com/en-us/library/dn759415.aspx#ConfigureTaskSequencestoDeployDeviceDriversinSelectionProfilesforLTIDeployments).
