@@ -40,8 +40,8 @@ Windows 10, version 1607 (also known as the Anniversary Update), provides organi
 | --- | --- | --- | --- |
 | Windows 10 Pro | No | Yes | Yes (default)  |
 | Windows 10 Enterprise | Yes  | Yes | Yes (default)  |
-| Windows 10 Pro Education | Yes (default)  | Yes | No |
-| Windows 10 Education | Yes (default) | Yes | No  |
+| Windows 10 Pro Education | Yes (default)  | Yes | No (setting cannot be changed) |
+| Windows 10 Education | Yes (default) | Yes | No (setting cannot be changed) |
 
 
 
