@@ -1,6 +1,6 @@
 ---
-title: Configuring UE-V 2.x with Group Policy Objects
-description: Configuring UE-V 2.x with Group Policy Objects
+title: Configuring UE-V with Group Policy Objects
+description: Configuring UE-V with Group Policy Objects
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,10 +9,14 @@ ms.prod: w10
 ---
 
 
-# Configuring UE-V 2.x with Group Policy Objects
+# Configuring UE-V with Group Policy Objects
 
 
-Some Microsoft User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. For information about how to install UE-V Group Policy ADMX files, see [Installing the UE-V 2 Group Policy ADMX Templates](http://technet.microsoft.com/library/dn458891.aspx#admx).
+Some Microsoft User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. 
+
+<!-- REVIEW WHETHER THE FOLLOWING SENTENCE IS RELEVANT:
+For information about how to install UE-V Group Policy ADMX files, see [Installing the UE-V 2 Group Policy ADMX Templates](http://technet.microsoft.com/library/dn458891.aspx#admx).
+-->
 
 The following policy settings can be configured for UE-V.
 
@@ -200,6 +204,6 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Administering UE-V 2.x](uev-administering-uev.md)
+[Administering UE-V](uev-administering-uev.md)
 
-[Manage Configurations for UE-V 2.x](uev-manage-configurations.md)
+[Manage Configurations for UE-V](uev-manage-configurations.md)

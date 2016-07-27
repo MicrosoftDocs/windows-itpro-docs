@@ -1,6 +1,6 @@
 ---
-title: Changing the Frequency of UE-V 2.x Scheduled Tasks
-description: Changing the Frequency of UE-V 2.x Scheduled Tasks
+title: Changing the Frequency of UE-V Scheduled Tasks
+description: Changing the Frequency of UE-V Scheduled Tasks
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Changing the Frequency of UE-V 2.x Scheduled Tasks
+# Changing the Frequency of UE-V Scheduled Tasks
 
 
 The Microsoft User Experience Virtualization (UE-V) Agent installer, AgentSetup.exe, creates the following scheduled tasks during the UE-V Agent installation:
@@ -40,7 +40,7 @@ For more information about
 ## UE-V Scheduled Tasks
 
 
-The following scheduled tasks are included in UE-V 2 with sample scheduled task configuration commands.
+The following scheduled tasks are included in UE-V with sample scheduled task configuration commands.
 
 ### Collect CEIP Data
 
@@ -204,7 +204,7 @@ The **Upload CEIP Data** task runs during the installation if the user or the ad
 
  
 
-## UE-V 2 Scheduled Task Details
+## UE-V Scheduled Task Details
 
 
 The following chart provides additional information about scheduled tasks for UE-V 2:
@@ -304,7 +304,7 @@ The following additional information applies to UE-V scheduled tasks:
 
 -   ll task sequence programs are located in the UE-V Agent installation folder, `%programFiles%\Microsoft User Experience Virtualization\Agent\[architecture]\`, by default.
 
--   The Sync Controller Application Scheduled task is the crucial component when the UE-V SyncMethod is set to “SyncProvider” (UE-V 2 default configuration). This scheduled task keeps the SettingsSToragePath synchronized with the locally cached versions of the settings package files. If users complain that settings do not synchronize often enough, then you can reduce the scheduled task setting to as little as 1 minute.  You can also increase the 30 min default to a higher amount if necessary.
+-   The Sync Controller Application Scheduled task is the crucial component when the UE-V SyncMethod is set to “SyncProvider” (UE-V default configuration). This scheduled task keeps the SettingsSToragePath synchronized with the locally cached versions of the settings package files. If users complain that settings do not synchronize often enough, then you can reduce the scheduled task setting to as little as 1 minute.  You can also increase the 30 min default to a higher amount if necessary.
 
 -   You do not need to disable the Template Auto Update scheduled task if you use another method to keep the clients’ templates in sync (i.e. Group Policy or Configuration Manager Baselines). Leaving the SettingsTemplateCatalog property value blank prevents UE-V from checking the settings catalog for custom templates. This scheduled task runs ApplySettingsCatalog.exe and will essentially return immediately.
 
@@ -318,9 +318,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Administering UE-V 2.x](uev-administering-uev.md)
+[Administering UE-V](uev-administering-uev.md)
 
-[Deploy UE-V 2.x for Custom Applications](uev-deploy-uev-for-custom-applications.md#deploycatalogue)
+[Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md#deploycatalogue)
 
  
 

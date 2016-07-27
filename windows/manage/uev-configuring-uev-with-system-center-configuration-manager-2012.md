@@ -1,6 +1,6 @@
 ---
-title: Configuring UE-V 2.x with System Center Configuration Manager 2012
-description: Configuring UE-V 2.x with System Center Configuration Manager 2012
+title: Configuring UE-V with System Center Configuration Manager 2012
+description: Configuring UE-V with System Center Configuration Manager 2012
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Configuring UE-V 2.x with System Center Configuration Manager 2012
+# Configuring UE-V with System Center Configuration Manager 2012
 
 
 After you install Microsoft User Experience Virtualization (UE-V) and its required features, UE-V must be configured. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
@@ -235,7 +235,7 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Manage Configurations for UE-V 2.x](uev-manage-configurations.md)
+[Manage Configurations for UE-V](uev-manage-configurations.md)
 
  
 

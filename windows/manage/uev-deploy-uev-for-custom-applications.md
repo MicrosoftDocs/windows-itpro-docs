@@ -1,6 +1,6 @@
 ---
-title: Deploy UE-V 2.x for Custom Applications
-description: Deploy UE-V 2.x for Custom Applications
+title: Deploy UE-V for Custom Applications
+description: Deploy UE-V for Custom Applications
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,12 +9,12 @@ ms.prod: w10
 ---
 
 
-# Deploy UE-V 2.x for Custom Applications
+# Deploy UE-V for Custom Applications
 
 
 Microsoft User Experience Virtualization (UE-V) uses XML files called **settings location templates** to monitor and synchronize desktop application settings and Windows desktop settings between user computers. By default, some settings location templates are included in UE-V. But if you want to synchronize settings for desktop applications other than those included in the default templates, you can create your own custom settings location templates by using the UE-V Generator.
 
-Once you have read through the planning material in [Prepare a UE-V 2.x Deployment](uev-prepare-for-deployment.md) and have decided that you want to synchronize settings for custom applications (third-party, line-of-business, etc.), you will deploy the features of UE-V as described in this topic. To start, here are the main steps required to synchronize settings for custom applications:
+Once you have read through the planning material in [Prepare a UE-V Deployment](uev-prepare-for-deployment.md) and have decided that you want to synchronize settings for custom applications (third-party, line-of-business, etc.), you will deploy the features of UE-V as described in this topic. To start, here are the main steps required to synchronize settings for custom applications:
 
 -   [Install the UEV Generator](#uevgen)
 
@@ -43,7 +43,7 @@ Once you have read through the planning material in [Prepare a UE-V 2.x Deployme
 
      
 
-## Prepare to Deploy UE-V 2.x for Custom Applications
+## Prepare to Deploy UE-V for Custom Applications
 
 
 Before you start deploying the UE-V features that handle custom applications, there are just a couple things to review.
@@ -61,7 +61,7 @@ The UE-V Generator monitors an application to discover and capture the locations
 -   Windows apps
 
 **Note**  
-UE-V settings location templates cannot be created from virtualized applications or Terminal Services applications. However, settings that are synchronized by using the templates can be applied to those applications. To create templates that support Virtual Desktop Infrastructure (VDI) and Terminal Services applications, open a version of the Windows Installer (.msi) package of the application by using the UE-V Generator. For more information about synchronizing settings for virtual applications, see [Using UE-V 2.x with Application Virtualization Applications](uev-using-uev-with-application-virtualization-applications.md).
+UE-V settings location templates cannot be created from virtualized applications or Terminal Services applications. However, settings that are synchronized by using the templates can be applied to those applications. To create templates that support Virtual Desktop Infrastructure (VDI) and Terminal Services applications, open a version of the Windows Installer (.msi) package of the application by using the UE-V Generator. For more information about synchronizing settings for virtual applications, see [Using UE-V with Application Virtualization Applications](uev-using-uev-with-application-virtualization-applications.md).
 
  
 
@@ -141,11 +141,11 @@ Install the Microsoft User Experience Virtualization (UE-V) 2.0 Generator on a c
 
 The User Experience Virtualization settings template catalog is a folder path on UE-V computers or a Server Message Block (SMB) network share that stores all the custom settings location templates. A scheduled task in the UE-V Agent checks this location one time each day and updates its synchronization behavior, based on the templates in this folder.
 
-The UE-V Agent registers templates that were added or updated in this folder after the last time that the folder was checked and unregisters templates that are removed. By default, templates are registered and unregistered one time per day at 3:30 A.M. local time by the Task Scheduler and at system startup. To customize the frequency of this scheduled task, see [Changing the Frequency of UE-V 2.x Scheduled Tasks](uev-changing-the-frequency-of-scheduled-tasks.md).
+The UE-V Agent registers templates that were added or updated in this folder after the last time that the folder was checked and unregisters templates that are removed. By default, templates are registered and unregistered one time per day at 3:30 A.M. local time by the Task Scheduler and at system startup. To customize the frequency of this scheduled task, see [Changing the Frequency of UE-V Scheduled Tasks](uev-changing-the-frequency-of-scheduled-tasks.md).
 
 You can configure the settings template catalog path by using the installation command-line options, Group Policy, WMI, or Windows PowerShell. Templates that are stored at the settings template catalog path are automatically registered and unregistered by a scheduled task.
 
-**To configure the settings template catalog for UE-V 2.x**
+**To configure the settings template catalog for UE-V**
 
 1.  Create a new folder on the computer that stores the UE-V settings template catalog.
 
@@ -324,9 +324,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Prepare a UE-V 2.x Deployment](uev-prepare-for-deployment.md)
+[Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
-[Deploy Required Features for UE-V 2.x](uev-deploy-required-features.md)
+[Deploy Required Features for UE-V](uev-deploy-required-features.md)
 
  
 
