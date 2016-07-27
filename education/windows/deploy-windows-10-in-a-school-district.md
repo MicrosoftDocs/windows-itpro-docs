@@ -7,7 +7,7 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 author: craigash
-
+---
 
 # Deploy Windows 10 in a school district
 
@@ -118,13 +118,21 @@ The configuration process requires the following devices:
 The high-level process for deploying and configuring devices within individual classrooms, individual schools, and the district as a whole is as follows and illustrated in Figure 4:
 
 1. Prepare the admin device for use, which includes installing the Windows ADK, MDT, and the Configuration Manager console.
+
 2. On the admin device, create and configure the Office 365 Education subscription that you will use for the district’s classrooms.
+
 3. On the admin device, configure integration between on-premises AD DS and Azure AD (if you have an on premises AD DS configuration).
+
 4. On the admin device, create and configure a Windows Store for Business portal.
+
 5. On the admin device, prepare for management of the Windows 10 devices after deployment.
+
 6. On the reference devices, deploy Windows 10 and the Windows desktop apps on the device, and then capture the reference image from the devices.
+
 7. Import the captured reference images into MDT or System Center Configuration Manager.
+
 8. On the student and faculty devices, deploy Windows 10 to new or existing devices, or upgrade eligible devices to Windows 10.
+
 9. On the admin device, manage the Windows 10 devices and apps, the Office 365 subscription, and the AD DS–Azure AD integration.
 
 ![How district configuration works](images/edu-districtdeploy-fig4.png "How district configuration works")
@@ -160,6 +168,7 @@ These scenarios assume the need to support:
 * AD DS domain-joined and nondomain-joined devices.
 
 Some constraints exist in these scenarios. As you select the deployment and management methods for your device, keep the following constraints in mind:
+
 * You can use Group Policy or Intune to manage configuration settings on a device but not both.
 * You can use System Center Configuration Manager or Intune to manage apps and updates on a device but not both.
 * You cannot manage multiple users on a device with Intune if the device is AD DS domain joined.
@@ -185,8 +194,8 @@ To deploy Windows 10 and your apps, you can use MDT by itself or System Center C
 
 <tr>
 <td valign="top">MDT</td>
-<td>MDT is an on-premises solution that supports initial operating system deployment and upgrade. You can use MDT to deploy and upgrade Windows 10. In addition, you can initially deploy Windows desktop and Windows Store apps and software updates.<br/><br/>
-Select this method when you:
+<td><p>MDT is an on-premises solution that supports initial operating system deployment and upgrade. You can use MDT to deploy and upgrade Windows 10. In addition, you can initially deploy Windows desktop and Windows Store apps and software updates.<br/><br/>
+Select this method when you:</p>
 <ul>
 <li>Want to deploy Windows 10 to institution-owned and personal devices. (Devices need not be domain joined.)</li>
 <li>Don’t have an existing AD DS infrastructure.</li>
@@ -218,8 +227,8 @@ Select this method when you:
 
 <tr>
 <td valign="top">System Center Configuration Manager</td>
-<td>System Center Configuration Manager is an on-premises solution that supports operating system management throughout the entire operating system life cycle. You can use System Center Configuration Manager to deploy and upgrade Windows 10. In addition, you can manage Windows desktop and Windows Store apps and software updates as well as provide antivirus and antimalware protection.<br/><br/>
-Select this method when you:
+<td><p>System Center Configuration Manager is an on-premises solution that supports operating system management throughout the entire operating system life cycle. You can use System Center Configuration Manager to deploy and upgrade Windows 10. In addition, you can manage Windows desktop and Windows Store apps and software updates as well as provide antivirus and antimalware protection.<br/><br/>
+Select this method when you:</p>
 <ul>
 <li>Want to deploy Windows 10 to institution-owned devices that are domain joined (personal devices are typically not domain joined).</li>
 <li>Have an existing AD DS infrastructure (or plan to deploy an AD DS infrastructure).</li>
@@ -277,8 +286,8 @@ For a district, there are many ways to manage the configuration setting for user
 
 <tr>
 <td valign="top">Group Policy</td>
-<td>Group Policy is an integral part of AD DS and allows you to specify configuration settings for Windows 10 and previous versions of Windows.<br/><br/>
-Select this method when you:<br/>
+<td><p>Group Policy is an integral part of AD DS and allows you to specify configuration settings for Windows 10 and previous versions of Windows.<br/><br/>
+Select this method when you:</p>
 
 <ul>
 <li>Want to manage institution-owned devices that are domain joined (personal devices are typically not domain joined).</li>
@@ -306,9 +315,9 @@ Select this method when you:<br/>
 </tr>
 <tr>
 <td valign="top">Intune</td>
-<td>Intune is a cloud-based management system that allows you to specify configuration settings for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Azure AD.<br/><br/>
+<td><p>Intune is a cloud-based management system that allows you to specify configuration settings for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Azure AD.<br/><br/>
 Intune is the cloud-based management system described in this guide, but you can use other MDM providers. If you use an MDM provider other than Intune, integration with System Center Configuration Manager is unavailable.<br/><br/>
-Select this method when you:<br/>
+Select this method when you:</p>
 
 <ul>
 <li>Want to manage institution-owned and personal devices (does not require that the device be domain joined).</li>
@@ -370,9 +379,8 @@ Use the information in Table 6 to determine which combination of app and update 
 
 <tr>
 <td valign="top">System Center Configuration Manager</td>
-<td>System Center Configuration Manager is an on-premises solution that allows you to specify configuration settings for Windows 10; previous versions of Windows; and other operating systems, such as iOS or Android, through integration with Intune.<br/><br/>System Center Configuration Manager supports application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using System Center Configuration Manager. You can also manage Windows desktop and Windows Store applications.<br/><br/>Select this method when you:<br/>
+<td><p>System Center Configuration Manager is an on-premises solution that allows you to specify configuration settings for Windows 10; previous versions of Windows; and other operating systems, such as iOS or Android, through integration with Intune.<br/><br/>System Center Configuration Manager supports application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using System Center Configuration Manager. You can also manage Windows desktop and Windows Store applications.<br/><br/>Select this method when you:</p>
 <ul>
-
 <li>Selected System Center Configuration Manager to deploy Windows 10.</li>
 <li>Want to manage institution-owned devices that are domain joined (personally owned devices are typically not domain joined).</li>
 <li>Want to manage AD DS domain-joined devices.</li>
@@ -381,6 +389,7 @@ Use the information in Table 6 to determine which combination of app and update 
 <li>Want to deploy operating systems.</li>
 <li>Want to provide application management for the entire application life cycle.</li>
 </ul>
+
 <p>The advantages of this method are that:</p>
 <ul>
 <li>You can deploy Windows 10 operating systems.</li>
@@ -402,8 +411,8 @@ Use the information in Table 6 to determine which combination of app and update 
 
 <tr>
 <td valign="top">Intune</td>
-<td>Intune is a cloud-based solution that allows you to manage apps and software updates for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Azure AD.<br/><br/>
-Select this method when you:<br/>
+<td><p>Intune is a cloud-based solution that allows you to manage apps and software updates for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Azure AD.<br/><br/>
+Select this method when you:</p>
 <ul>
 <li>Selected MDT only to deploy Windows 10.</li>
 <li>Want to manage institution-owned and personal devices that are not domain joined.</li>
@@ -429,9 +438,9 @@ Select this method when you:<br/>
 
 <tr>
 <td valign="top">System Center Configuration Manager and Intune (hybrid)</td>
-<td>System Center Configuration Manager and Intune together extend System Center Configuration Manager from an on-premises management system for domain-joined devices to a solution that can manage devices regardless of their location and connectivity options. This hybrid option provides the benefits of both System Center Configuration Manager and Intune.<br/><br/>
-System Center Configuration Manager and Intune in the hybrid configuration allow you to support application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using System Center Configuration Manager, and you can manage Windows desktop and Windows Store applications for both institution-owned and personal devices.
-<p>Select this method when you:</p>
+<td><p>System Center Configuration Manager and Intune together extend System Center Configuration Manager from an on-premises management system for domain-joined devices to a solution that can manage devices regardless of their location and connectivity options. This hybrid option provides the benefits of both System Center Configuration Manager and Intune.<br/><br/>
+System Center Configuration Manager and Intune in the hybrid configuration allow you to support application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using System Center Configuration Manager, and you can manage Windows desktop and Windows Store applications for both institution-owned and personal devices.<br/><br/>
+Select this method when you:</p>
 <ul>
 <li>Selected System Center Configuration Manager to deploy Windows 10.</li>
 <li>Want to manage institution-owned and personal devices (does not require that the device be domain joined).</li>
@@ -545,7 +554,7 @@ Complete the following steps to select the appropriate Office 365 Education lice
 
 <ol>
 <li>Determine the number of faculty members and students who will use the classroom.
-Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.</li>
+Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.<br/></li>
 
 <li>Determine the faculty members and students who need to install Microsoft Office applications on devices (if any).
 Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 8 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.<br/><br/>
@@ -604,10 +613,10 @@ Faculty and students can use Office applications online (standard plans) or run 
 *Table 8. Comparison of standard and Office 365 ProPlus plans*
 <br/><br/>
 The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
-</li>
+<br/></li>
 <li>Determine whether students or faculty need Azure Rights Management.
 
-  You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).</li>
+  You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).<br/></li>
 <li>Record the Office 365 Education license plans needed for the classroom in Table 9.
 <table>
 <colgroup>
@@ -644,7 +653,7 @@ The best user experience is to run Office 365 ProPlus or use native Office apps 
 </table>
 <br/>
 *Table 9. Office 365 Education license plans needed for the classroom*
-</li>
+<br/></li>
 
 You will use the Office 365 Education license plan information you record in Table 9 in [Create user accounts in Office 365](#create-user-accounts-in-office-365) later in this guide.
 
@@ -833,8 +842,11 @@ In this synchronization model (illustrated in Figure 7), you run Azure AD Connec
 #### To deploy AD DS and Azure AD synchronization
 
 1. Configure your environment to meet the prerequisites for installing Azure AD Connect by performing the steps in [Prerequisites for Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect-prerequisites/).
+
 2. In the VM or on the physical device that will run Azure AD Connect, sign in with a domain administrator account.
+
 3. Install Azure AD Connect by performing the steps in [Install Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/#install-azure-ad-connect).
+
 4. Configure Azure AD Connect features based on your institution’s requirements by performing the steps in [Configure sync features](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/#configure-sync-features).
 
 Now that you have used on premises Azure AD Connect to deploy AD DS and Azure AD synchronization, you’re ready to verify that Azure AD Connect is synchronizing AD DS user and group accounts with Azure AD.
@@ -862,7 +874,7 @@ Azure AD Connect should start synchronization immediately. Depending on the numb
 7. In the details pane, double-click one of the security groups.
 
    The list of security group members should mirror the group membership for the corresponding security group in AD DS.
-   8. Close the browser.
+8. Close the browser.
 
 Now that you have verified Azure AD Connect synchronization, you’re ready to assign user licenses for Azure AD Premium.
 
@@ -1094,7 +1106,7 @@ The LTI deployment process is highly automated: it requires minimal information 
 <li>Deploys images more slowly than when you use local media.</li>
 <li>Requires that you deploy a Windows Deployment Services server.</li>
 </ul>
-<p>Select this method when you want to deploy Windows over-the-network and perform diskless booting. The advantage of this method is that the diskless media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployments from local media, and you must deploy a Windows Deployment Services server.</p>
+<br/><br/>Select this method when you want to deploy Windows over-the-network and perform diskless booting. The advantage of this method is that the diskless media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployments from local media, and you must deploy a Windows Deployment Services server.
 </td>
 </tr>
 
@@ -1176,9 +1188,9 @@ Import device drivers for each device in your institution. For more information 
 <li>For offline-licensed apps, download the .appx files from the Windows Store for Business.</li>
 <li>For apps that are not offline licensed, obtain the .appx files from the app software vendor directly.</li>
 </ul>
-<p>If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Windows Store or Windows Store for Business.<br/><br/>
+<br/><br/>If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Windows Store or Windows Store for Business.<br/><br/>
 If you have Intune or System Center Configuration Manager, you can deploy Windows Store apps after you deploy Windows 10, as described in the [Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune) and [Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager) sections. This method provides granular deployment of Windows Store apps, and you can use it for ongoing management of Windows Store apps. This is the preferred method of deploying and managing Windows Store apps.<br/><br/>
-In addition, you must prepare your environment for sideloading Windows Store apps. For more information about how to:</p>
+In addition, you must prepare your environment for sideloading Windows Store apps. For more information about how to:<br/><br/>
 <ul>
 <li>Prepare your environment for sideloading, see [Try it out: sideload Windows Store apps](https://technet.microsoft.com/en-us/windows/jj874388.aspx).</li>
 <li>Create an MDT application, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).</li>
@@ -1298,6 +1310,7 @@ You can use Windows Deployment Services in conjunction with System Center Config
     * The Windows Deployment Services Help file, included in Windows Deployment Services
     * [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/en-us/library/jj648426.aspx)
 2. Configure a distribution point to accept PXE requests in System Center Configuration Manager.
+
     To support PXE boot requests, you install the PXE service point site system role. Then, you must configure one or more distribution points to respond to PXE boot request.
     For more information about how to perform this step, see [Install site system roles for System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt704036.aspx), [Use PXE to deploy Windows over the network with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627940.aspx), and [Configuring distribution points to accept PXE requests](https://technet.microsoft.com/en-us/library/mt627944.aspx#BKMK_PXEDistributionPoint).
 3.	Configure the appropriate boot images (Windows PE images) to deploy from the PXE-enabled distribution point.
