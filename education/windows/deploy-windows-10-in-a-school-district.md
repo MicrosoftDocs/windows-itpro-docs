@@ -16,6 +16,7 @@ author: craigash
 
 - Windows 10
 
+
 This guide shows you how to deploy the Windows 10 operating system in a school district. You learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. This guide also describes how to use Microsoft System Center Configuration Manager, Microsoft Intune, and Group Policy to manage devices. Finally, the guide discusses common, ongoing maintenance tasks that you will perform after initial deployment as well as the automated tools and built-in features of the operating system.
 
 ## Prepare for district deployment
@@ -460,7 +461,6 @@ Select this method when you:<br/>
 
 </tbody>
 </table>
-<br/>
 
 *Table 6. App and update management products*
 
@@ -471,6 +471,8 @@ Record the app and update management methods that you selected in Table 7.
 |   |System Center Configuration Manager by itself|
 |   |Intune by itself|
 |   |System Center Configuration Manager and Intune (hybrid mode)|
+
+*Table 7. App and update management methods selected*
 
 #### Summary
 In this section, you selected the methods that you will use to deploy Windows 10 to the faculty and student devices in your district. You selected the methods that you will use to manage configuration settings. Finally, you selected the methods that you will use to manage Windows desktop apps, Windows Store apps, and software updates.
@@ -595,7 +597,8 @@ Faculty and students can use Office applications online (standard plans) or run 
 </tr>
 
 </tbody>
-</table><br/>
+</table>
+
 *Table 8. Comparison of standard and Office 365 ProPlus plans*
 <br/>
 The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
@@ -1379,8 +1382,8 @@ Use the information in Table 17 to help you determine whether you need to config
 
 <table>
 <colgroup>
-<col width="25%" />
 <col width="75%" />
+<col width="25%" />
 
 </colgroup>
 <thead>
@@ -1559,8 +1562,8 @@ To help ensure that your users have the most current features and security prote
 >**Note**&nbsp;&nbsp;You can only manage updates (including antivirus and antimalware updates) for Windows 10 desktop operating systems (not Windows 10 Mobile, iOS, or Android).
 
 For more information about how to configure Intune to manage updates and malware protection, see the following resources:
-•	[Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-•	[Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+* [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+* [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
 ### Manage updates by using System Center Configuration Manager
 
