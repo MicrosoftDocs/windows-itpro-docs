@@ -54,9 +54,7 @@ Events URL | `https://DataAccess-PRD.trafficmanager.net:444/api/alerts`
 Authentication Type | OAuth 2
 OAuth 2 Client Properties File | Select *wdatp-connector.properties*.
 Refresh Token | Paste the refresh token that your Windows Defender ATP contact provided, or you the one you get after running the `restutil` tool.
-
 All other values in the form are optional and can be left blank.
-
 6. Select **Next**, then **Save**.
 
 7. Run the connector. You can choose to run in service mode or application mode. RONEN - Should this be Service mode or Application mode (capitalized S and capitalized A?)

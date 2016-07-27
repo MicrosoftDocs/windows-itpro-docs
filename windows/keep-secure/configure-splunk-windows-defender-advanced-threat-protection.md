@@ -40,25 +40,24 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 
 4. Select **New**.
 
-5. In the form fill in the following required fields with these values:
+5. In the form fill in the following required fields with the following values, then click **Save**:
+> [!NOTE]
+>All other values in the form are optional and can be left blank.
 
-Field | Value
-:---|:---
-Endpoint URL | `https://DataAccess-PRD.trafficmanager.net:444/api/alerts`
-HTTP Method | GET
-Authentication Type | oauth2
-OAuth 2 Token Refresh URL | Value taken from AAD application
-OAuth 2 Client ID |  Value taken from AAD application
-OAuth 2 Client Secret | Value taken from AAD application
-Response type | json
-Response Handler | JSONArrayHandler
-Polling Interval | Number of seconds that Splunk will ping the Windows Defender ATP endpoint. Accepted values are in seconds.
-Set sourcetype | From list
-Source type | \_json
 
-All other values in the form are optional and can be left blank.
-
-6. Select **Save**.
+  Field | Value
+  :---|:---
+  Endpoint URL | `https://DataAccess-PRD.trafficmanager.net:444/api/alerts`
+  HTTP Method | GET
+  Authentication Type | oauth2
+  OAuth 2 Token Refresh URL | Value taken from AAD application
+  OAuth 2 Client ID |  Value taken from AAD application
+  OAuth 2 Client Secret | Value taken from AAD application
+  Response type | json
+  Response Handler | JSONArrayHandler
+  Polling Interval | Number of seconds that Splunk will ping the Windows Defender ATP endpoint. Accepted values are in seconds.
+  Set sourcetype | From list
+  Source type | \_json
 
 After completing these configuration steps, you can go to the Splunk dashboard and run queries.
 
