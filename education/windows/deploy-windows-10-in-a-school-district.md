@@ -554,8 +554,8 @@ Complete the following steps to select the appropriate Office 365 Education lice
 
 <ol>
 <li>Determine the number of faculty members and students who will use the classroom.
-Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.<br/></li>
-
+Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.</li>
+<br/><br/>
 <li>Determine the faculty members and students who need to install Microsoft Office applications on devices (if any).
 Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 8 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.<br/><br/>
 
@@ -612,11 +612,12 @@ Faculty and students can use Office applications online (standard plans) or run 
 
 *Table 8. Comparison of standard and Office 365 ProPlus plans*
 <br/><br/>
-The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.
-<br/></li>
+The best user experience is to run Office 365 ProPlus or use native Office apps on mobile devices. If neither of these options is available, use Office applications online. In addition, all Office 365 plans provide a better user experience by storing documents in OneDrive for Business, which is included in all Office 365 plans. OneDrive for Business keeps content in sync among devices and helps ensure that users always have access to their documents on any device.</li>
+<br/><br/>
 <li>Determine whether students or faculty need Azure Rights Management.
 
-  You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).<br/></li>
+  You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).</li>
+<br/><br/>
 <li>Record the Office 365 Education license plans needed for the classroom in Table 9.
 <table>
 <colgroup>
@@ -969,7 +970,7 @@ You can create email distribution groups based on job role (such as teacher, adm
 >**Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until the creation process ends before you can perform the following steps. 
 
 
-For information about creating security groups, see [Create an Office 365 Group in the admin center](https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&rs=en-001&ad=US).
+For information about creating email distribution groups, see [Create an Office 365 Group in the admin center](https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&rs=en-001&ad=US).
 
 #### Summary
 
@@ -1106,7 +1107,7 @@ The LTI deployment process is highly automated: it requires minimal information 
 <li>Deploys images more slowly than when you use local media.</li>
 <li>Requires that you deploy a Windows Deployment Services server.</li>
 </ul>
-<br/><br/>Select this method when you want to deploy Windows over-the-network and perform diskless booting. The advantage of this method is that the diskless media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployments from local media, and you must deploy a Windows Deployment Services server.
+<br/>Select this method when you want to deploy Windows over-the-network and perform diskless booting. The advantage of this method is that the diskless media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployments from local media, and you must deploy a Windows Deployment Services server.
 </td>
 </tr>
 
@@ -1119,7 +1120,7 @@ The LTI deployment process is highly automated: it requires minimal information 
 <li>Deploys images more slowly than when using local media.</li>
 <li>Requires no additional infrastructure.</li>
 </ul>
-<p>Select this method when you want to deploy Windows over the network and are willing to boot the target device from local media. The advantage of this method is that the media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployment from local media.</p>
+<br/>Select this method when you want to deploy Windows over the network and are willing to boot the target device from local media. The advantage of this method is that the media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployment from local media.
 </td>
 </tr>
 
@@ -1132,7 +1133,7 @@ The LTI deployment process is highly automated: it requires minimal information 
 <li>Deploys images more quickly than network-based methods do.</li>
 <li>Requires a USB hard disk because of the deployment share’s storage requirements (up to 100 GB).</li>
 </ul>
-<p>Select this method when you want to perform local deployments and are willing to boot the target device from a local USB hard disk. The advantage of this method is that local deployments are faster than over-the-network deployments. The disadvantage of this method is that each time you change the deployment share or distribution point content, you must regenerate the deployment media and update the USB hard disk.</p>
+<br/>Select this method when you want to perform local deployments and are willing to boot the target device from a local USB hard disk. The advantage of this method is that local deployments are faster than over-the-network deployments. The disadvantage of this method is that each time you change the deployment share or distribution point content, you must regenerate the deployment media and update the USB hard disk.
 </td>
 </tr>
 
@@ -1188,7 +1189,7 @@ Import device drivers for each device in your institution. For more information 
 <li>For offline-licensed apps, download the .appx files from the Windows Store for Business.</li>
 <li>For apps that are not offline licensed, obtain the .appx files from the app software vendor directly.</li>
 </ul>
-<br/><br/>If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Windows Store or Windows Store for Business.<br/><br/>
+<br/>If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Windows Store or Windows Store for Business.<br/><br/>
 If you have Intune or System Center Configuration Manager, you can deploy Windows Store apps after you deploy Windows 10, as described in the [Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune) and [Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager) sections. This method provides granular deployment of Windows Store apps, and you can use it for ongoing management of Windows Store apps. This is the preferred method of deploying and managing Windows Store apps.<br/><br/>
 In addition, you must prepare your environment for sideloading Windows Store apps. For more information about how to:<br/><br/>
 <ul>
@@ -1221,7 +1222,7 @@ For more information about how to create an MDT application for Window desktop a
 <li>Upgrade existing devices to 64-bit Windows 10 Education.</li>
 <li>Upgrade existing devices to 32-bit Windows 10 Education.</li>
 </ul>
-Again, you will create the task sequences based on the operating systems that you imported in step 1. For more information about how to create a task sequence, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
+<br/>Again, you will create the task sequences based on the operating systems that you imported in step 1. For more information about how to create a task sequence, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
 
 </td>
 </tr>
