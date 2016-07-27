@@ -570,42 +570,15 @@ The best user experience is to run Office 365 ProPlus or use native Office apps 
     You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).
 
 4. Record the Office 365 Education license plans needed for the classroom in Table 9.
-<table>
-<colgroup>
-<col width="25%" />
-<col width="75%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Quantity</th>
-<th align="left">Plan</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>Office 365 Education for students</td>
-</tr>
 
-<tr>
-<td></td>
-<td>Office 365 Education for faculty</td>
-</tr>
+|Quantity |Plan |
+|---------|-----|
+|   |Office 365 Education for students|
+|   |Office 365 Education for faculty|
+|   |Azure Rights Management for students|
+|   |Azure Rights Management for faculty|
 
-<tr>
-<td></td>
-<td>Azure Rights Management for students</td>
-</tr>
-
-<tr>
-<td></td>
-<td>Azure Rights Management for faculty</td>
-</tr>
-</tbody>
-</table>
-<br/>
 *Table 9. Office 365 Education license plans needed for the classroom*
-<br/><br/></li>
 
 You will use the Office 365 Education license plan information you record in Table 9 in [Create user accounts in Office 365](#create-user-accounts-in-office-365) later in this guide.
 
