@@ -62,7 +62,7 @@ This district configuration has the following characteristics:
 * If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
 * Use [Intune](https://docs.microsoft.com/en-us/intune/), [Mobile Device Management for Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd?ui=en-US&rs=en-US&ad=US), or [Group Policy in AD DS](https://technet.microsoft.com/en-us/library/cc725828.aspx) to manage devices.
 * Each device supports a one-student-per-device or multiple-students-per-device scenario.
-* The devices can be a mixture of different make, model, and processor architecture (32 bit or 64 bit) or be identical.
+* The devices can be a mixture of different make, model, and processor architecture (32-bit or 64-bit) or be identical.
 * To initiate Windows 10 deployment, use a USB flash drive, DVD-ROM or CD-ROM, or Pre-Boot Execution Environment (PXE) boot.
 * The devices can be a mixture of different Windows 10 editions, such as Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education.
 
@@ -555,9 +555,9 @@ Complete the following steps to select the appropriate Office 365 Education lice
 <ol>
 <li>Determine the number of faculty members and students who will use the classroom.
 Office 365 Education licensing plans are available specifically for faculty and students. You must assign faculty and students the correct licensing plan.</li>
-<br/><br/>
+<br/>
 <li>Determine the faculty members and students who need to install Microsoft Office applications on devices (if any).
-Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 8 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.<br/><br/>
+Faculty and students can use Office applications online (standard plans) or run them locally (Office 365 ProPlus plans). Table 8 lists the advantages and disadvantages of standard and Office 365 ProPlus plans.<br/>
 
 <table>
 <colgroup>
@@ -617,7 +617,7 @@ The best user experience is to run Office 365 ProPlus or use native Office apps 
 <li>Determine whether students or faculty need Azure Rights Management.
 
   You can use Azure Rights Management to protect classroom information against unauthorized access. Azure Rights Management protects your information inside or outside the classroom through encryption, identity, and authorization policies, securing your files and email. You can retain control of the information, even when it’s shared with people outside the classroom or your educational institution. Azure Rights Management is free to use with all Office 365 Education license plans. For more information, see [Azure Rights Management Documentation](https://docs.microsoft.com/en-us/rights-management/).</li>
-<br/><br/>
+<br/>
 <li>Record the Office 365 Education license plans needed for the classroom in Table 9.
 <table>
 <colgroup>
@@ -654,7 +654,7 @@ The best user experience is to run Office 365 ProPlus or use native Office apps 
 </table>
 <br/>
 *Table 9. Office 365 Education license plans needed for the classroom*
-<br/></li>
+<br/><br/></li>
 
 You will use the Office 365 Education license plan information you record in Table 9 in [Create user accounts in Office 365](#create-user-accounts-in-office-365) later in this guide.
 
