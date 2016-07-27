@@ -62,17 +62,17 @@ You can suppress Windows Defender Offline notifications with Group Policy.
 
 **Suppress notifications with the Group Policy Management Console**
 
-1.  On your GP management machine, open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure, and click **Edit**.
+1. On your GP management machine, open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), right-click the GPO you want to configure, and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+1. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+1. Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree through **Windows components > Windows Defender > Client Interface**.
+1. Expand the tree through **Windows components > Windows Defender > Client Interface**.
 
-1.  Double-click the **Suppresses reboot notifications** setting and set the option to **Enabled**.
+1. Double-click the **Suppresses reboot notifications** setting and set the option to **Enabled**.
 
- <span style="background-color:yellow">{{Is this the correct setting in GPMC? I can't find a WDO suppress GP setting – this is the only one but it matches the description in the .adm template section. Which makes me wonder if the name of the setting in the template is correct or outdated? See the image below}}</span>
+<span style="background-color:yellow">{{Is this the correct setting in GPMC? I can't find a WDO suppress GP setting – this is the only one but it matches the description in the .adm template section. Which makes me wonder if the name of the setting in the template is correct or outdated? See the image below}}</span>
 
 **Suppress notifications with the ADM template**
 
@@ -88,7 +88,7 @@ You can suppress Windows Defender Offline notifications with Group Policy.
 
 -	Registry path and value name: **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\UXConfiguration**
 
--   Description: **Suppresses WDO notification in UI only (for cases where UI cannot be in lockdown mode).**
+- Description: **Suppresses WDO notification in UI only (for cases where UI cannot be in lockdown mode).**
  
 ![Windows Defender ATP service components](images/defender/gp.png)
 
@@ -118,23 +118,23 @@ You can set up a Windows Defender Offline scan with the following:
 
 1.	Open the **Start** menu, type **windows defender**, and press **Enter** to open the Windows Defender client. 
 
-2.	On the **Home** tab click **Download and Run**.
+1.	On the **Home** tab click **Download and Run**.
 
-![Windows Defender home tab showing the Download and run button](images/defender/download-wdo.png)
+    ![Windows Defender home tab showing the Download and run button](images/defender/download-wdo.png)
 
-3.	Follow the prompts to continue with the scan. You might be warned that you'll be signed out of Windows and that the endpoint will restart.
+1.	Follow the prompts to continue with the scan. You might be warned that you'll be signed out of Windows and that the endpoint will restart.
 
 **Run Windows Defender Offline from Windows Settings**
 
 1.	Open the **Start** menu and click or type **Settings**.
 
-2.	Click **Update & Security** and then **Windows Defender**. Scroll to the bottom of the settings page until you see the **Windows Defender Offline** section.
+1.	Click **Update & Security** and then **Windows Defender**. Scroll to the bottom of the settings page until you see the **Windows Defender Offline** section.
 
-4.	Click **Scan offline**. 
+1.	Click **Scan offline**. 
 
-![Windows Defender Offline setting](images/defender/settings-wdo.png)
+    ![Windows Defender Offline setting](images/defender/settings-wdo.png)
 
-5.	Follow the prompts to continue with the scan. You might be warned that you'll be signed out of Windows and that the endpoint will restart.
+1.	Follow the prompts to continue with the scan. You might be warned that you'll be signed out of Windows and that the endpoint will restart.
 
 **Use Windows Management Instrumentation to configure and run Windows Defender Offline**
 
@@ -174,13 +174,13 @@ Windows Defender Offline scan results will be listed in the main Windows Defende
 
 1.	Open the **Start** menu, type **windows defender**, and press **Enter** to open the Windows Defender client. 
 
-2.	Go to the **History** tab.
+1.	Go to the **History** tab.
 
 1.	Select **All detected items**.
 
-2.	Click **View details**.
+1.	Click **View details**.
 
 Any detected items will display. Items that are detected by Windows Defender Offline will be listed as **Offline** in the **Detection source**:
 
- ![Windows Defender detection source showing as Offline](images/defender/detection-source.png)
+![Windows Defender detection source showing as Offline](images/defender/detection-source.png)
 
