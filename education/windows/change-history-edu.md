@@ -24,9 +24,12 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 ## July 2016
 
+
 | New or changed topic | Description|
 | --- | --- |
 | [Windows 10 editions for education customers](windows-editions-for-education-customers.md)  | New |
+|[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)|New |
+
 
 
 ## June 2016

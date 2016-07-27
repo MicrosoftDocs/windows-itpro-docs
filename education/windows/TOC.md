@@ -15,4 +15,6 @@
 ### [Take a Test app technical reference ](take-a-test-app-technical.md)
 ## [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
+## [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)
 ## [Chromebook migration guide](chromebook-migration-guide.md)
+
