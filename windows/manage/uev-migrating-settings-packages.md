@@ -1,6 +1,6 @@
 ---
-title: Migrating UE-V 2.x Settings Packages
-description: Migrating UE-V 2.x Settings Packages
+title: Migrating UE-V Settings Packages
+description: Migrating UE-V Settings Packages
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Migrating UE-V 2.x Settings Packages
+# Migrating UE-V Settings Packages
 
 
 In the lifecycle of a Microsoft User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
@@ -20,7 +20,7 @@ In the lifecycle of a Microsoft User Experience Virtualization (UE-V) deployment
 
 Simply copying the files and folders does not preserve the security settings and permissions. The following steps describe how to correctly copy the settings package along with their NTFS file system permissions to a new share.
 
-**To preserve UE-V 2 settings packages when you migrate to a new server**
+**To preserve UE-V settings packages when you migrate to a new server**
 
 1.  In a new location on a different server, create a new folder, for example, MySettings.
 
@@ -47,5 +47,5 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 ## Related topics
 
-[Administering UE-V 2.x](uev-administering-uev.md)
+[Administering UE-V](uev-administering-uev.md)
 

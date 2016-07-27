@@ -1,6 +1,6 @@
 ---
-title: Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
-description: Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
+title: Managing the UE-V Service and Packages with Windows PowerShell and WMI
+description: Managing the UE-V Service and Packages with Windows PowerShell and WMI
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,12 +9,13 @@ ms.prod: w10
 ---
 
 
-# Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
+# Managing the UE-V Service and Packages with Windows PowerShell and WMI
 
+You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage Microsoft User Experience Virtualization (UE-V) service configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](https://technet.microsoft.com/library/dn520275.aspx).
 
-You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage Microsoft User Experience Virtualization (UE-V) Agent configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](http://go.microsoft.com/fwlink/?LinkId=393495) (http://go.microsoft.com/fwlink/?LinkId=393495).
+<!-- FOLLOWING SECTION WILL PROBABLY BE DELETED
 
-**To deploy the UE-V Agent by using Windows PowerShell**
+## To deploy the UE-V Agent by using Windows PowerShell
 
 1.  Stage the UE-V installer file in an accessible network share.
 
@@ -29,11 +30,13 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
 
     -   `& msiexec.exe /i "<path to msi file>" /quiet /norestart /l*v "%temp%\UE-VAgentInstaller.log" SettingsStoragePath=\\server\settingsshare\%username%`
 
-**To configure the UE-V Agent by using Windows PowerShell**
+-->
+
+## To configure the UE-V service by using Windows PowerShell
 
 1.  Open a Windows PowerShell window. To manage computer settings that affect all users of the computer by using the *Computer* parameter, open the window with an account that has administrator rights.
 
-2.  Use the following Windows PowerShell commands to configure the agent.
+2.  Use the following Windows PowerShell commands to configure the service.
 
     <table>
     <colgroup>
@@ -50,16 +53,16 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <tr class="odd">
     <td align="left"><p><code>Get-UevConfiguration</code></p>
     <p></p></td>
-    <td align="left"><p>Gets the effective UE-V Agent settings. User-specific settings have precedence over the computer settings.</p></td>
+    <td align="left"><p>Gets the effective UE-V service settings. User-specific settings have precedence over the computer settings.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Get-UevConfiguration - CurrentComputerUser</code></p>
     <p></p></td>
-    <td align="left"><p>Gets the UE-V Agent settings values for the current user only.</p></td>
+    <td align="left"><p>Gets the UE-V service settings values for the current user only.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Get-UevConfiguration -Computer</code></p></td>
-    <td align="left"><p>Gets the UE-V Agent configuration settings values for all users on the computer.</p></td>
+    <td align="left"><p>Gets the UE-V service configuration settings values for all users on the computer.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Get-UevConfiguration -Details</code></p></td>
@@ -75,39 +78,39 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Set-UevConfiguration -Computer –EnableDontSyncWindows8AppSettings</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to not synchronize any Windows apps for all users on the computer.</p></td>
+    <td align="left"><p>Configures the UE-V service to not synchronize any Windows apps for all users on the computer.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration -CurrentComputerUser – EnableDontSyncWindows8AppSettings</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to not synchronize any Windows apps for the current computer user.</p></td>
+    <td align="left"><p>Configures the UE-V service to not synchronize any Windows apps for the current computer user.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Set-UevConfiguration -Computer –EnableFirstUseNotification</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to display notification the first time the agent runs for all users on the computer.</p></td>
+    <td align="left"><p>Configures the UE-V service to display notification the first time the service runs for all users on the computer.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration -Computer –DisableFirstUseNotification</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to not display notification the first time that the agent runs for all users on the computer.</p></td>
+    <td align="left"><p>Configures the UE-V service to not display notification the first time that the service runs for all users on the computer.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Set-UevConfiguration -Computer –EnableSettingsImportNotify</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to notify all users on the computer when settings synchronization is delayed.</p>
+    <td align="left"><p>Configures the UE-V service to notify all users on the computer when settings synchronization is delayed.</p>
     <p>Use the <em>DisableSettingsImportNotify</em> parameter to disable notification.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration - CurrentComputerUser -EnableSettingsImportNotify</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to notify the current user when settings synchronization is delayed.</p>
+    <td align="left"><p>Configures the UE-V service to notify the current user when settings synchronization is delayed.</p>
     <p>Use the <em>DisableSettingsImportNotify</em> parameter to disable notification.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Set-UevConfiguration -Computer –EnableSyncUnlistedWindows8Apps</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to synchronize all Windows apps that are not explicitly disabled by the Windows app list for all users of the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
-    <p>Use the <em>DisableSyncUnlistedWindows8Apps</em> parameter to configure the UE-V Agent to synchronize only Windows apps that are explicitly enabled by the Windows App List.</p></td>
+    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for all users of the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
+    <p>Use the <em>DisableSyncUnlistedWindows8Apps</em> parameter to configure the UE-V service to synchronize only Windows apps that are explicitly enabled by the Windows App List.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration - CurrentComputerUser - EnableSyncUnlistedWindows8Apps</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to synchronize all Windows apps that are not explicitly disabled by the Windows app list for the current user on the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
-    <p>Use the <em>DisableSyncUnlistedWindows8Apps</em> parameter to configure the UE-V Agent to synchronize only Windows apps that are explicitly enabled by the Windows App List.</p></td>
+    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for the current user on the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
+    <p>Use the <em>DisableSyncUnlistedWindows8Apps</em> parameter to configure the UE-V service to synchronize only Windows apps that are explicitly enabled by the Windows App List.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Set-UevConfiguration –Computer –DisableSync</code></p></td>
@@ -126,11 +129,11 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     </tr>
     <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration -Computer -MaxPackageSizeInBytes &lt;size in bytes&gt;</code></p></td>
-    <td align="left"><p>Configures the UE-V agent to report when a settings package file size reaches the defined threshold for all users on the computer. Sets the threshold package size in bytes.</p></td>
+    <td align="left"><p>Configures the UE-V service to report when a settings package file size reaches the defined threshold for all users on the computer. Sets the threshold package size in bytes.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Set-UevConfiguration -CurrentComputerUser -MaxPackageSizeInBytes &lt;size in bytes&gt;</code></p></td>
-    <td align="left"><p>Configures the UE-V agent to report when a settings package file size reaches the defined threshold. Sets the package size warning threshold for the current user.</p></td>
+    <td align="left"><p>Configures the UE-V service to report when a settings package file size reaches the defined threshold. Sets the package size warning threshold for the current user.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration -Computer -SettingsImportNotifyDelayInSeconds</code></p></td>
@@ -179,7 +182,7 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <tr class="odd">
     <td align="left"><p><code>Export-UevConfiguration &lt;settings migration file&gt;</code></p></td>
     <td align="left"><p>Exports the UE-V computer configuration to a settings migration file. The file name extension must be .uev.</p>
-    <p>The <code>Export</code> cmdlet exports all UE-V Agent settings that are configurable with the <em>Computer</em> parameter.</p></td>
+    <p>The <code>Export</code> cmdlet exports all UE-V service settings that are configurable with the <em>Computer</em> parameter.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Import-UevConfiguration &lt;settings migration file&gt;</code></p></td>
@@ -190,11 +193,11 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
 
      
 
-**To export UE-V package settings and repair UE-V templates by using Windows PowerShell**
+## To export UE-V package settings and repair UE-V templates by using Windows PowerShell
 
 1.  Open a Windows PowerShell window as an administrator.
 
-2.  Use the following Windows PowerShell commands to configure the agent.
+2.  Use the following Windows PowerShell commands to configure the service.
 
     <table>
     <colgroup>
@@ -207,25 +210,23 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <td align="left"><p><strong>Description</strong></p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p>Export-UevPackage MicrosoftCalculator6.pkgx</p></td>
+    <td align="left"><p><code>Export-UevPackage MicrosoftCalculator6.pkgx</code></p></td>
     <td align="left"><p>Extracts the settings from a Microsoft Calculator package file and converts them into a human-readable format in XML.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p>Repair-UevTemplateIndex</p></td>
+    <td align="left"><p><code>Repair-UevTemplateIndex</code></p></td>
     <td align="left"><p>Repairs the index of the UE-V settings location templates.</p></td>
     </tr>
     </tbody>
     </table>
 
-     
+## To configure the UE-V service by using WMI
 
-**To configure the UE-V Agent by using WMI**
-
-1.  User Experience Virtualization provides the following set of WMI commands. Administrators can use this interface to configure the UE-V agent at the command line and automate typical configuration tasks.
+1.  User Experience Virtualization provides the following set of WMI commands. Administrators can use this interface to configure the UE-V service at the command line and automate typical configuration tasks.
 
     Use an account with administrator rights to open a Windows PowerShell window.
 
-2.  Use the following WMI commands to configure the agent.
+2.  Use the following WMI commands to configure the service.
 
     <table>
     <colgroup>
@@ -242,15 +243,15 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <tr class="odd">
     <td align="left"><p><code>Get-WmiObject -Namespace root\Microsoft\UEV Configuration</code></p>
     <p></p></td>
-    <td align="left"><p>Displays the active UE-V Agent settings. User-specific settings have precedence over the computer settings.</p></td>
+    <td align="left"><p>Displays the active UE-V service settings. User-specific settings have precedence over the computer settings.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Get-WmiObject -Namespace root\Microsoft\UEV UserConfiguration</code></p></td>
-    <td align="left"><p>Displays the UE-V Agent configuration that is defined for a user.</p></td>
+    <td align="left"><p>Displays the UE-V service configuration that is defined for a user.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Get-WmiObject -Namespace root\Microsoft\UEV ComputerConfiguration</code></p></td>
-    <td align="left"><p>Displays the UE-V Agent configuration that is defined for a computer.</p></td>
+    <td align="left"><p>Displays the UE-V service configuration that is defined for a computer.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Get-WmiObject –Namespace root\Microsoft\Uev ConfigurationItem</code></p></td>
@@ -278,7 +279,7 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <td align="left"><p><code>$config = Get-WmiObject -Namespace root\Microsoft\UEV ComputerConfiguration</code></p>
     <p><code>$config.MaxPackageSizeInBytes = &lt;size_in_bytes&gt;</code></p>
     <p><code>$config.Put()</code></p></td>
-    <td align="left"><p>Configures the UE-V Agent to report when a settings package file size reaches a defined threshold. Set the threshold package file size in bytes for all users of the computer.</p></td>
+    <td align="left"><p>Configures the UE-V service to report when a settings package file size reaches a defined threshold. Set the threshold package file size in bytes for all users of the computer.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>$config = Get-WmiObject -Namespace root\Microsoft\UEV ComputerConfiguration</code></p>
@@ -313,15 +314,13 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     </tbody>
     </table>
 
-     
+Upon configuration of the UE-V service with WMI and Windows PowerShell, the defined configuration is stored in the registry in the following locations.
 
-    Upon configuration of the UE-V Agent with WMI and Windows PowerShell, the defined configuration is stored in the registry in the following locations.
+`\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UEV\Agent\Configuration`
 
-    `\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UEV\Agent\Configuration`
+`\HKEY_CURRENT_USER\SOFTWARE\Microsoft\UEV\Agent\Configuration`
 
-    `\HKEY_CURRENT_USER\SOFTWARE\Microsoft\UEV\Agent\Configuration`
-
-**To export UE-V package settings and repair UE-V templates by using WMI**
+## To export UE-V package settings and repair UE-V templates by using WMI
 
 1.  UE-V provides the following set of WMI commands. Administrators can use this interface to export a package or repair UE-V templates.
 
@@ -357,7 +356,6 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 ## Related topics
 
+[Administering UE-V with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
-[Administering UE-V 2.x with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
-
-[Administering UE-V 2.x](uev-administering-uev.md)
+[Administering UE-V](uev-administering-uev.md)

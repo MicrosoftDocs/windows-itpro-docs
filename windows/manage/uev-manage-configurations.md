@@ -1,6 +1,6 @@
 ---
-title: Manage Configurations for UE-V 2.x
-description: Manage Configurations for UE-V 2.x
+title: Manage Configurations for UE-V
+description: Manage Configurations for UE-V
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,40 +9,40 @@ ms.prod: w10
 ---
 
 
-# Manage Configurations for UE-V 2.x
+# Manage Configurations for UE-V
 
 
 In the course of the Microsoft User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V Agent and also manage storage locations for resources such as settings package files. You might have to perform other tasks, for example, configuring the Company Settings Center to define how users interact with UE-V. The following topics provide guidance for managing these UE-V resources.
 
-## Configuring UE-V 2.x by using Group Policy Objects
+## Configuring UE-V by using Group Policy Objects
 
 
 You can use Group Policy Objects to modify the settings that define how UE-V synchronizes settings on computers.
 
-[Configuring UE-V 2.x with Group Policy Objects](uev-configuring-uev-with-group-policy-objects.md)
+[Configuring UE-V with Group Policy Objects](uev-configuring-uev-with-group-policy-objects.md)
 
-## Configuring UE-V 2.x with System Center Configuration Manager 2012
+## Configuring UE-V with System Center Configuration Manager 2012
 
 
 You can use System Center 2012 Configuration Manager to manage the UE-V Agent by using the UE-V 2 Configuration Pack.
 
-[Configuring UE-V 2.x with System Center Configuration Manager 2012](uev-configuring-uev-with-system-center-configuration-manager-2012.md)
+[Configuring UE-V with System Center Configuration Manager 2012](uev-configuring-uev-with-system-center-configuration-manager-2012.md)
 
-## Administering UE-V 2.x with PowerShell and WMI
+## Administering UE-V with PowerShell and WMI
 
 
 UE-V provides Windows PowerShell cmdlets, which can help administrators perform various UE-V tasks.
 
-[Administering UE-V 2.x with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
+[Administering UE-V with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
-## Configuring the Company Settings Center for UE-V 2.x
+## Configuring the Company Settings Center for UE-V
 
 
 You can configure the Company Settings Center that is installed by using the UE-V Agent to define how users interact with UE-V.
 
-[Configuring the Company Settings Center for UE-V 2.x](uev-configuring-the-company-settings-center.md)
+[Configuring the Company Settings Center for UE-V](uev-configuring-the-company-settings-center.md)
 
-## Examples of configuration settings for UE-V 2.x
+## Examples of configuration settings for UE-V
 
 
 Here are some examples of UE-V configuration settings:
@@ -53,7 +53,7 @@ Here are some examples of UE-V configuration settings:
 
 -   **Register Microsoft Templates:** Specifies whether the default Microsoft templates should be registered during installation.
 
--   **Synchronization Method:** Specifies whether UE-V uses the sync provider or "none". The "SyncProvider" supports computers that are disconnected from the network. "None" applies when the computer is always connected to the network. For more information about the Sync Method, see [Sync Methods for UE-V 2.x](uev-sync-methods.md).
+-   **Synchronization Method:** Specifies whether UE-V uses the sync provider or "none". The "SyncProvider" supports computers that are disconnected from the network. "None" applies when the computer is always connected to the network. For more information about the Sync Method, see [Sync Methods for UE-V](uev-sync-methods.md).
 
 -   **Synchronization Timeout:** Specifies the number of milliseconds that the computer waits before time-out when it retrieves the user settings from the settings storage location.
 
@@ -77,11 +77,11 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Administering UE-V 2.x](uev-administering-uev.md)
+[Administering UE-V](uev-administering-uev.md)
 
-[Deploy Required Features for UE-V 2.x](uev-deploy-required-features.md)
+[Deploy Required Features for UE-V](uev-deploy-required-features.md)
 
-[Deploy UE-V 2.x for Custom Applications](uev-deploy-uev-for-custom-applications.md)
+[Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md)
 
  
 

@@ -1,6 +1,6 @@
 ---
-title: Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
-description: Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
+title: Working with Custom UE-V Templates and the UE-V Generator
+description: Working with Custom UE-V Templates and the UE-V Generator
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
+# Working with Custom UE-V Templates and the UE-V Generator
 
 
 To synchronize application settings between user computers, Microsoft User Experience Virtualization (UE-V) uses *settings location templates*. Some settings location templates are included in User Experience Virtualization. You can also create, edit, or validate custom settings location templates by using the UE-V Generator.
@@ -23,8 +23,6 @@ The UE-V Generator monitors Windows desktop applications to discover and capture
 -   Java applications
 
 -   Windows apps
-
-This topic
 
 **Standard and Nonstandard settings locations:** The UE-V Generator helps you identify where applications search for settings files and registry settings that applications use to store settings information. The generator only discovers settings in locations that are accessible to a standard user. Settings that are stored in other locations are excluded. Discovered settings are grouped into two categories: **Standard** and **Non-standard**. Standard settings are recommended for synchronization, and UE-V can readily capture and apply them. Non-standard settings can potentially synchronize settings but, because of the rules that UE-V uses, these settings might not consistently or dependably synchronize settings. These settings might depend on temporary files, result in unreliable synchronization, or might not be useful. These settings locations are presented in the UE-V Generator. You can choose to include or exclude them on a case-by-case basis.
 
@@ -155,9 +153,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Administering UE-V 2.x](uev-administering-uev.md)
+[Administering UE-V](uev-administering-uev.md)
 
-[Deploy UE-V 2.x for Custom Applications](uev-deploy-uev-for-custom-applications.md)
+[Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md)
 
  
 

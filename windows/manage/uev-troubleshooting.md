@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting UE-V 2.x
-description: Troubleshooting UE-V 2.x
+title: Troubleshooting UE-V
+description: Troubleshooting UE-V
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Troubleshooting UE-V 2.x
+# Troubleshooting UE-V
 
 
 Troubleshooting content is not included in the Administrator's Guide for this product. Instead, you can find troubleshooting information for this product on the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905).
@@ -67,13 +67,13 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 
 -   [Microsoft User Experience Virtualization (UE-V) 2.x](index.md)
 
--   [Get Started with UE-V 2.x](uev-getting-started.md)
+-   [Get Started with UE-V](uev-getting-started.md)
 
--   [Prepare a UE-V 2.x Deployment](uev-prepare-for-deployment.md)
+-   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
--   [Administering UE-V 2.x](uev-administering-uev.md)
+-   [Administering UE-V](uev-administering-uev.md)
 
--   [Technical Reference for UE-V 2.x](uev-technical-reference.md)
+-   [Technical Reference for UE-V](uev-technical-reference.md)
 
 ## Have a suggestion for UE-V?
 

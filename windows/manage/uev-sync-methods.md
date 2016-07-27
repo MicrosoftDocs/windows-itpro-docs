@@ -1,6 +1,6 @@
 ---
-title: Sync Methods for UE-V 2.x
-description: Sync Methods for UE-V 2.x
+title: Sync Methods for UE-V
+description: Sync Methods for UE-V
 author: jamiejdt
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,10 +9,10 @@ ms.prod: w10
 ---
 
 
-# Sync Methods for UE-V 2.x
+# Sync Methods for UE-V
 
 
-The Microsoft User Experience Virtualization (UE-V) Agent lets you synchronize users’ application and Windows settings with the settings storage location. The *Sync Method* configuration defines how the UE-V Agent uploads and downloads those settings to the settings storage location. UE-V 2.x introduces a new SyncMethod called the *SyncProvider*. For more information about trigger events that start the synchronization of application and Windows settings, see [Sync Trigger Events for UE-V 2.x](uev-sync-trigger-events.md).
+The Microsoft User Experience Virtualization (UE-V) Agent lets you synchronize users’ application and Windows settings with the settings storage location. The *Sync Method* configuration defines how the UE-V Agent uploads and downloads those settings to the settings storage location. UE-V introduces a new SyncMethod called the *SyncProvider*. For more information about trigger events that start the synchronization of application and Windows settings, see [Sync Trigger Events for UE-V](uev-sync-trigger-events.md).
 
 ## SyncMethod Configuration
 
@@ -93,11 +93,11 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Deploy Required Features for UE-V 2.x](uev-deploy-required-features.md#ssl)
+[Deploy Required Features for UE-V](uev-deploy-required-features.md#ssl)
 
-[Deploy Required Features for UE-V 2.x](uev-deploy-required-features.md#config)
+[Deploy Required Features for UE-V](uev-deploy-required-features.md#config)
 
-[Technical Reference for UE-V 2.x](uev-technical-reference.md)
+[Technical Reference for UE-V](uev-technical-reference.md)
 
  
 
