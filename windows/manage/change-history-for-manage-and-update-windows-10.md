@@ -26,6 +26,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 | New or changed topic | Description |
 | ---|---|
+| [Manage Windows 10 and Windows Store tips, tricks, and suggestions](manage-tips-and-suggestions.md) | New |
 | [Windows 10 servicing options](introduction-to-windows-10-servicing.md)  | Added detailed content on servicing branches, moved from [Windows 10 servicing overview](../plan/windows-10-servicing-options.md). |
 
 
