@@ -48,7 +48,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Notifications and actions</td>
+<td align="left">Notifications & actions</td>
 <td align="left">SettingsPageAppsNotifications</td>
 </tr>
 <tr class="even">
@@ -58,23 +58,23 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Message</td>
+<td align="left">Messaging</td>
 <td align="left">SettingsPageMessaging</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Battery saver</td>
+<td align="left">Battery</td>
 <td align="left">SettingsPageBatterySaver</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Apps for websites</td>
+<td align="left">SettingsPageAppsForWebsites</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Storage</td>
 <td align="left">SettingsPageStorageSenseStorageOverview</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Device encryption</td>
-<td align="left">SettingsPageGroupPCSystemDeviceEncryption</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -128,7 +128,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Cellular and sim</td>
+<td align="left">Cellular & SIM</td>
 <td align="left">SettingsPageNetworkCellular</td>
 </tr>
 <tr class="even">
@@ -149,7 +149,7 @@ The following table lists the settings pages and page groups. Use the page name 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Mobile hotspot</td>
-<td align="left">SettingsPageInternetSharing</td>
+<td align="left">SettingsPageNetworkMobileHotspot</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -181,10 +181,15 @@ The following table lists the settings pages and page groups. Use the page name 
 <td align="left">Lock screen</td>
 <td align="left">SettingsPageLockscreen</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"></td>
-<td align="left">Theme</td>
-<td align="left">SettingsPageStartTheme</td>
+<td align="left">Glance screen</td>
+<td align="left">SettingsPageGlance</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Navigation bar</td>
+<td align="left">SettingsNagivationBar</td>
 </tr>
 <tr class="odd">
 <td align="left">Accounts</td>
@@ -193,7 +198,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Your account</td>
+<td align="left">Your info</td>
 <td align="left">SettingsPageAccountsPicture</td>
 </tr>
 <tr class="odd">
@@ -203,19 +208,18 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Work access</td>
-<td align="left">SettingsPageAccountsWorkplace</td>
+<td align="left">Email & app accounts</td>
+<td align="left">SettingsPageAccountsEmailApp</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Access work or school</td>
+<td align="left">SettingsPageWorkAccess</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Sync your settings</td>
 <td align="left">SettingsPageAccountsSync</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"><p>Kid's corner</p>
-<p>(disabled in Assigned Access)</p></td>
-<td align="left">SettingsPageKidsCorner</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -223,19 +227,14 @@ The following table lists the settings pages and page groups. Use the page name 
 <p>(disabled in Assigned Access)</p></td>
 <td align="left">SettingsPageAppsCorner</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Provisioning</td>
-<td align="left">SettingsPageProvisioningPage</td>
-</tr>
 <tr class="odd">
-<td align="left">Time and language</td>
+<td align="left">Time & language</td>
 <td align="left"></td>
 <td align="left">SettingsPageGroupTimeRegion</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Date and time</td>
+<td align="left">Date & time</td>
 <td align="left">SettingsPageTimeRegionDateTime</td>
 </tr>
 <tr class="odd">
@@ -275,7 +274,7 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">High contracts</td>
+<td align="left">High contrast</td>
 <td align="left">SettingsPageEaseoOfAccessHighContrast</td>
 </tr>
 <tr class="odd">
@@ -315,7 +314,12 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
-<td align="left">Speech inking and typing</td>
+<td align="left">Notifications</td>
+<td align="left">SettingsPagePrivacyNotifications</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Speech. inking, & typing</td>
 <td align="left">SettingsPagePrivacyPersonalization</td>
 </tr>
 <tr class="odd">
@@ -335,6 +339,20 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
+<td align="left">Phone calls</td>
+<td align="left">SettingsPagePrivacyPhoneCall</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Call history</td>
+<td align="left">SettingsPagePrivacyCallHistory</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Email</td>
+<td align="left">SettingsPagePrivacyEmail</td>
+</tr><tr class="even">
+<td align="left"></td>
 <td align="left">Messaging</td>
 <td align="left">SettingsPagePrivacyMessaging</td>
 </tr>
@@ -345,13 +363,18 @@ The following table lists the settings pages and page groups. Use the page name 
 </tr>
 <tr class="even">
 <td align="left"></td>
+<td align="left">Continue App Experiences</td>
+<td align="left">SettingsPagePrivacyCDP</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
 <td align="left">Background apps</td>
 <td align="left">SettingsPagePrivacyBackgroundApps</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Accessory app0s</td>
-<td align="left">SettingsPagePrivacyAccessories</td>
+<td align="left">Accessory apps</td>
+<td align="left">SettingsPageAccessories</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -378,6 +401,16 @@ The following table lists the settings pages and page groups. Use the page name 
 <td align="left">Phone update</td>
 <td align="left">SettingsPageRestoreMusUpdate</td>
 </tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Windows Insider Program</td>
+<td align="left">SettingsPageFlights</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Device encryption</td>
+<td align="left">SettingsPageGroupPCSystemDeviceEncryption</td>
+</tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Backup</td>
@@ -391,7 +424,7 @@ The following table lists the settings pages and page groups. Use the page name 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">For developers</td>
-<td align="left">SettingsSystemDeveloperOptions</td>
+<td align="left">SettingsPageSystemDeveloperOptions</td>
 </tr>
 <tr class="even">
 <td align="left">OEM</td>
@@ -426,18 +459,15 @@ You can specify the quick actions as follows:
     <System name="SystemSettings_Privacy_LocationEnabledUserPhone"/>
     <System name="SystemSettings_Network_VPN_QuickAction"/>
     <System name="SystemSettings_Flashlight_Toggle"/>
-    <System name="SystemSettings_QuickAction_Bluetooth"/>
+    <System name="SystemSettings_Device_BluetoothQuickAction"/>
     <System name="SystemSettings_BatterySaver_LandingPage_OverrideControl" />
     <System name="SystemSettings_QuickAction_QuietHours" />
     <System name="SystemSettings_QuickAction_Camera" />
+    <System name="SystemSettings_Launcher_QuickNote" />
+    <System name="QuickActions_Launcher_AllSettings" />
+    <System name="QuickActions_Launcher_DeviceDiscovery" />
 </Settings> 
 ```
-
-The following quick actions buttons are not conditional and will always be displayed:
-
--   QuickActions\_Launcher\_AllSettings
--   SystemSettings\_Launcher\_QuickNote
--   QuickActions\_Launcher\_DeviceDiscovery
 
 Some quick actions are dependent on related settings pages/page groups. When a dependent page/group is not available, then the corresponding quick action will also be hidden.
 
@@ -448,24 +478,24 @@ Dependent settings group/pages will be automatically enabled when a quick action
 
 The following table lists the dependencies between quick actions and Settings groups/pages.
 
-| Quick action                                               | Settings group                                   | Settings page                      |
-|------------------------------------------------------------|--------------------------------------------------|------------------------------------|
-| SystemSettings\_System\_Display\_QuickAction\_Brightness   | SettingsPageSystemDisplay                        | SettingsPageDisplay                |
-| SystemSettings\_System\_Display\_Internal\_Rotation        | SettingsPageSystemDisplay                        | SettingsPageDisplay                |
-| SystemSettings\_QuickAction\_WiFi                          | SettingsPageNetworkWiFi                          | SettingsPageNetworkWiFi            |
-| SystemSettings\_QuickAction\_InternetSharing               | SettingsPageNetworkInternetSharing               | SettingsPageNetworkInternetSharing |
-| SystemSettings\_QuickAction\_CellularData                  | SettingsGroupCellular                            | SettingsPageNetworkCellular        |
-| SystemSettings\_QuickAction\_AirplaneMode                  | SettingsPageNetworkAirplaneMode                  | SettingsPageNetworkAirplaneMode    |
-| SystemSettings\_Privacy\_LocationEnabledUserPhone          | SettingsGroupPrivacyLocationGlobals              | SettingsPagePrivacyLocation        |
-| SystemSettings\_Network\_VPN\_QuickAction                  | SettingsPageNetworkVPN                           | SettingsPageNetworkVPN             |
-| SystemSettings\_Launcher\_QuickNote                        | N/A                                              | N/A                                |
-| SystemSettings\_Flashlight\_Toggle                         | N/A                                              | N/A                                |
-| SystemSettings\_QuickAction\_Bluetooth                     | SettingsPagePCSystemBluetooth                    | SettingsPagePCSystemBluetooth      |
-| SystemSettings\_BatterySaver\_LandingPage\_OverrideControl | BatterySaver\_LandingPage\_SettingsConfiguration | SettingsPageBatterySaver           |
-| QuickActions\_Launcher\_DeviceDiscovery                    | N/A                                              | N/A                                |
-| QuickActions\_Launcher\_AllSettings                        | N/A                                              | N/A                                |
-| SystemSettings\_QuickAction\_QuietHours                    | N/A                                              | N/A                                |
-| SystemSettings\_QuickAction\_Camera                        | N/A                                              | N/A                                |
+| Quick action   | Settings group    | Settings page  |
+|-----|-------|-------|
+| SystemSettings\_System\_Display\_QuickAction\_Brightness | SettingsPageSystemDisplay| SettingsPageDisplay | 
+| SystemSettings\_System\_Display\_Internal\_Rotation | SettingsPageSystemDisplay | SettingsPageDisplay   |
+| SystemSettings\_QuickAction\_WiFi | SettingsPageNetworkWiFi  | SettingsPageNetworkWiFi  |
+| SystemSettings\_QuickAction\_InternetSharing   | SettingsPageNetworkInternetSharing  | SettingsPageNetworkInternetSharing |
+| SystemSettings\_QuickAction\_CellularData | SettingsGroupCellular  | SettingsPageNetworkCellular  |
+| SystemSettings\_QuickAction\_AirplaneMode  | SettingsPageNetworkAirplaneMode | SettingsPageNetworkAirplaneMode |
+| SystemSettings\_Privacy\_LocationEnabledUserPhone | SettingsGroupPrivacyLocationGlobals   | SettingsPagePrivacyLocation  |
+| SystemSettings\_Network\_VPN\_QuickAction | SettingsPageNetworkVPN   | SettingsPageNetworkVPN  |
+| SystemSettings\_Launcher\_QuickNote | N/A   | N/A    |
+| SystemSettings\_Flashlight\_Toggle  | N/A    | N/A    |
+| SystemSettings\_Device\_BluetoothQuickAction   | SettingsPagePCSystemBluetooth   | SettingsPagePCSystemBluetooth  |
+| SystemSettings\_BatterySaver\_LandingPage\_OverrideControl | BatterySaver\_LandingPage\_SettingsConfiguration | SettingsPageBatterySaver   |
+| QuickActions\_Launcher\_DeviceDiscovery  | N/A    | N/A   |
+| QuickActions\_Launcher\_AllSettings    | N/A   | N/A  |
+| SystemSettings\_QuickAction\_QuietHours   | N/A    | N/A   |
+| SystemSettings\_QuickAction\_Camera   | N/A   | N/A   |
 
  
 

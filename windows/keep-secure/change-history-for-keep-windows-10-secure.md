@@ -12,6 +12,13 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## RELEASE: Windows 10, version 1607
+
+The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
+
+- [Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
+- [Remote Credential Guard](remote-credential-guard.md)
+
 ## July 2016
 
 |New or changed topic | Description |
@@ -41,7 +48,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 | [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md) | Added errors 0x80090029 and 0x80070057, and merged entries for error 0x801c03ed. |
 | [Microsoft Passport guide](microsoft-passport-guide.md) | Updated Roadmap section content |
 |[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md) |Updated info based on changes to the features and functionality.|
-| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
+| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (mutiple topics) | New |
 
 ## April 2016

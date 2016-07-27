@@ -1,6 +1,6 @@
 ---
-title: Manage Windows 10 Start layout options (Windows 10)
-description: Organizations might want to deploy a customized Start screen and menu to devices running Windows 10 Enterprise or Windows 10 Education.
+title: Manage Windows 10 Start and taskbar layout  (Windows 10)
+description: Organizations might want to deploy a customized Start and taskbar layout to devices running Windows 10 Enterprise or Windows 10 Education.
 ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
 keywords: ["start screen", "start menu"]
 ms.prod: w10
@@ -9,18 +9,20 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Manage Windows 10 Start layout options
+# Manage Windows 10 Start and taskbar layout
 
 
 **Applies to**
 
 -   Windows 10
 
-**Looking for consumer information?**
+> **Looking for consumer information?** See [Customize the Start menu](http://windows.microsoft.com/en-us/windows-10/getstarted-see-whats-on-the-menu) 
 
--   [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
+Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
 
-Organizations might want to deploy a customized Start screen and menu to devices running Windows 10 Enterprise or Windows 10 Education. A standard Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes.
+> **Note:** Taskbar configuration is available starting in Windows 10, version 1607.
+
+## Start options
 
 ![start layout sections](images/startannotated.png)
 
@@ -29,11 +31,6 @@ Some areas of Start can be managed using Group Policy. The layout of Start tiles
 The following table lists the different parts of Start and any applicable policy settings or Settings options. Group Policy settings are in the **User Configuration**\\**Administrative Templates**\\**Start Menu and Taskbar** path except where a different path is listed in the table.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Start</th>
@@ -93,8 +90,8 @@ The following table lists the different parts of Start and any applicable policy
 <p>Group Policy: <strong>Start layout</strong></p>
 <p>Group Policy: <strong>Prevent users from customizing their Start Screen</strong></p>
 <div class="alert">
-<strong>Warning</strong>  
-<p><strong>Start layout</strong> can only be applied to a device using the same architecture (32-bit or 64-bit) as the device on which <strong>Start layout</strong> was created. When a Start screen layout is imported with Group Policy or MDM, the users cannot pin, unpin, or uninstall apps from the Start screen. Users can view and open all apps in the <strong>All Apps</strong> view, but they cannot pin any apps to the Start screen.</p>
+<strong>Note</strong>  
+<p> When a full Start screen layout is imported with Group Policy or MDM, the users cannot pin, unpin, or uninstall apps from the Start screen. Users can view and open all apps in the <strong>All Apps</strong> view, but they cannot pin any apps to the Start screen. When a partial Start screen layout is imported, users cannot change the tile groups applied by the partial layout, but can modify other tile groups and create their own.</p><p><strong>Start layout</strong> policy can be used to pin apps to the taskbar based on an XML File that you provide. Users will be able to change the order of pinned apps, unpin apps, and pin additional apps to the taskbar.
 </div>
 <div>
  
@@ -120,18 +117,57 @@ The following table lists the different parts of Start and any applicable policy
 </tbody>
 </table>
 
- 
+ ## Taskbar options
+
+Starting in Windows 10, version 1607, you can pin additional apps to the taskbar and remove default pinned apps from the taskbar. You can specify different taskbar configurations based on device locale or region.
+
+There are three categories of apps that might be pinned to a taskbar:
+* Apps pinned by the user
+* Default Windows apps, pinned during operating system installation (Microsoft Edge, File Explorer, Store)
+* Apps pinned by the enterprise, such as in an unattended Windows setup
+
+ **Note**  
+   The earlier method of using [TaskbarLinks](http://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
+   
+The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
+
+> **Note**  In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
+
+![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
+
+Whether you apply the taskbar configuration to a clean install or an update, users will still be able to:
+* Pin additional apps
+* Change the order of pinned apps
+* Unpin any app
+
+### Taskbar configuration applied to clean install of Windows 10
+
+In a clean install, if you apply a taskbar layout, only the apps that you specify and default apps that you do not remove will be pinned to the taskbar. Users can pin additional apps to the taskbar after the layout is applied.
+
+### Taskbar configuration applied to Windows 10 upgrades
+
+When a device is upgraded to Windows 10, apps will be pinned to the taskbar already.  Some apps may have been pinned to the taskbar by a user, and others may have been pinned to the taskbar through a customized base image or by using Windows Unattend setup. 
+
+The new taskbar layout for upgrades to Windows 10, version 1607 or later, will apply the following behavior:
+* If the user pinned the app to the taskbar, those pinned apps remain and new apps will be added to the right.
+* If the user didn't pin the app (it was pinned during installation or by policy) and the app is not in updated layout file, the app will be unpinned.
+* If the user didn't pin the app and the app is in the updated layout file, the app will be pinned to the right.
+* New apps specified in updated layout file are pinned to right of user's pinned apps.
+  
+
 
 ## Related topics
 
 
 [Customize and export Start layout](customize-and-export-start-layout.md)
 
-[Customize Windows 10 Start with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+
+[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 
 [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
-[Customize Windows 10 Start with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
 [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
 

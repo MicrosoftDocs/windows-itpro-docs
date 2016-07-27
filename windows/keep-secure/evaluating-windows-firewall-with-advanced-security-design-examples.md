@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 The following Windows Firewall with Advanced Security design examples illustrate how you can use Windows Firewall with Advanced Security to improve the security of the devices connected to the network. You can use these topics to evaluate how the firewall and connection security rules work across all Windows Firewall with Advanced Security designs and to determine which design or combination of designs best suits the goals of your organization.
 

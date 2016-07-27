@@ -12,6 +12,15 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## RELEASE: Windows 10, version 1607
+
+The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
+
+- [Set up Windows 10](set-up-windows-10.md)
+- [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md)
+- [Provision student PCs with apps](set-up-students-pcs-with-apps.md)
+
+
 ## June 2016
 
 | New or changed topic | Description |

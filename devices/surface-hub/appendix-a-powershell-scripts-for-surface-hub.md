@@ -8,7 +8,6 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
-localizationpriority: high
 ---
 
 # Appendix: PowerShell (Surface Hub)
