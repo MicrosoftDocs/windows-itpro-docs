@@ -18,7 +18,7 @@ author: jdeckerMS
 
 > <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
-Since its inception, Windows 10 has included a number of user experience features that provide useful tips, tricks, and suggestions as you use Windows, we well as app suggestions from the Windows Store. These features are designed to help people get the most out of their Windows 10 experience by, for example, sharing new features, providing more details on the features they use, or sharing content available in the Windows Store. Examples of such user experiences include: 
+Since its inception, Windows 10 has included a number of user experience features that provide useful tips, tricks, and suggestions as you use Windows, as well as app suggestions from the Windows Store. These features are designed to help people get the most out of their Windows 10 experience by, for example, sharing new features, providing more details on the features they use, or sharing content available in the Windows Store. Examples of such user experiences include: 
 
 * **Windows Spotlight on the lock screen**.  Daily updated images on the lock screen that can include additional facts and tips in “hotspots” that are revealed on hover. 
 
