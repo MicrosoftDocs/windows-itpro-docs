@@ -13,7 +13,7 @@ author: jdeckerMS
 
 -   Windows 10  
 
-If your school uses Active Directory, use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package that will configure a PC for student use that is joined to the Active Directory domain. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) 
+If your school uses Active Directory, use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package that will configure a PC for student use that is joined to the Active Directory domain. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) 
 
 ## Create the provisioning package
 

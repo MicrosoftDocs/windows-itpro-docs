@@ -85,7 +85,7 @@ When you build a provisioning package, you may include sensitive information in 
 
      
 
-2.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+2.  Open Windows ICD (by default, `%windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe`).
 3. Choose **Advanced provisioning**.
 
 
