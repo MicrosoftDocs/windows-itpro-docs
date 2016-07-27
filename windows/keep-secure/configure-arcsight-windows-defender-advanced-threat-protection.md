@@ -47,13 +47,30 @@ The following steps assume that you have completed all the required steps in [Be
 
 5. In the form fill in the following required fields with these values:
 
-Field | Value
-:---|:---
-Configuration File | Type in the name of the client property file. It must match the client property file.
-Events URL | `https://DataAccess-PRD.trafficmanager.net:444/api/alerts`
-Authentication Type | OAuth 2
-OAuth 2 Client Properties File | Select *wdatp-connector.properties*.
-Refresh Token | Paste the refresh token that your Windows Defender ATP contact provided, or you the one you get after running the `restutil` tool.
+    <table>
+    <tbody style="vertical-align:top;">
+    <tr>
+    <th>Field</th>
+    <th>Value</th>
+    </tr>
+    <tr>
+    <td>Configuration File</td>
+    <td>Type in the name of the client property file. It must match the client property file.</td>
+    </tr>
+    <td>Events URL</td>
+    <td>`https://DataAccess-PRD.trafficmanager.net:444/api/alerts`</td>
+    <tr>
+    <td>Authentication Type</td>
+    <td>OAuth 2</td>
+    </tr>
+    <td>OAuth 2 Client Properties file</td>
+    <td>Select *wdatp-connector.properties*.</td>
+    <tr>
+    <td>Refresh Token</td>
+    <td>Paste the refresh token that your Windows Defender ATP contact provided, or you the one you get after running the `restutil` tool.</td>
+    </tr>
+    </tr>
+    </table>
 All other values in the form are optional and can be left blank.
 6. Select **Next**, then **Save**.
 

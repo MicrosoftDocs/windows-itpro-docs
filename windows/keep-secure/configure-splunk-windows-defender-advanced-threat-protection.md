@@ -44,20 +44,58 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 > [!NOTE]
 >All other values in the form are optional and can be left blank.
 
-
-  Field | Value
-  :---|:---
-  Endpoint URL | `https://DataAccess-PRD.trafficmanager.net:444/api/alerts`
-  HTTP Method | GET
-  Authentication Type | oauth2
-  OAuth 2 Token Refresh URL | Value taken from AAD application
-  OAuth 2 Client ID |  Value taken from AAD application
-  OAuth 2 Client Secret | Value taken from AAD application
-  Response type | json
-  Response Handler | JSONArrayHandler
-  Polling Interval | Number of seconds that Splunk will ping the Windows Defender ATP endpoint. Accepted values are in seconds.
-  Set sourcetype | From list
-  Source type | \_json
+  <table>
+  <tbody style="vertical-align:top;">
+  <tr>
+  <th>Field</th>
+  <th>Value</th>
+  </tr>
+  <tr>
+  <td>Endpoint URL</td>
+  <td>https://DataAccess-PRD.trafficmanager.net:444/api/alerts</td>
+  </tr>
+  <td>Events URL</td>
+  <td>`https://DataAccess-PRD.trafficmanager.net:444/api/alerts`</td>
+  <tr>
+  <td>HTTP Method</td>
+  <td>GET</td>
+  </tr>
+  <td>Authentication Type</td>
+  <td>oauth2</td>
+  <tr>
+  <td>OAuth 2 Token Refresh URL</td>
+  <td>	Value taken from AAD application</td>
+  </tr>
+  <tr>
+  <td>OAuth 2 Client ID</td>
+  <td>Value taken from AAD application</td>
+  </tr>
+  <tr>
+  <td>OAuth 2 Client Secret</td>
+  <td>Value taken from AAD application</td>
+  </tr>
+  <tr>
+  <td>Response type</td>
+  <td>json</td>
+  </tr>
+  <tr>
+  <td>Response Handler</td>
+  <td>JSONArrayHandler</td>
+  </tr>
+  <tr>
+  <td>Polling Interval</td>
+  <td>Number of seconds that Splunk will ping the Windows Defender ATP endpoint. Accepted values are in seconds.</td>
+  </tr>
+  <tr>
+  <td>Set sourcetype</td>
+  <td>From list</td>
+  </tr>
+  <tr>
+  <td>Source type</td>
+  <td>\_json</td>
+  </tr>
+  </tr>
+  </table>
 
 After completing these configuration steps, you can go to the Splunk dashboard and run queries.
 
