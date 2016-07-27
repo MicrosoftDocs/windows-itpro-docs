@@ -115,7 +115,7 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 
 ## Related topics
 
-[Manage user experiences in Windows 10](manage-user-experiences-windows-10.md)
+[Manage Windows 10 and Windows Store tips, tricks, and suggestions](manage-tips-and-suggestions.md)
 
 [New policies for Windows 10](new-policies-for-windows-10.md)
 
