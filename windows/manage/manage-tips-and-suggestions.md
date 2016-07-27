@@ -34,7 +34,14 @@ Windows 10 tips, tricks, and suggestions and Windows Store suggestions can be tu
 
 Windows 10, version 1607 (also known as the Anniversary Update), provides organizations the ability to centrally manage the type of content provided by these features through Group Policy or mobile device management (MDM). The following table describes how administrators can manage suggestions and tips in Windows 10 commercial editions.  
 
+## Options available to manage Windows 10 tips and tricks and Windows Store suggestions
 
+| Windows 10 edition | Disable | ? | ? |
+| --- | --- | --- | --- |
+| Windows 10 Pro | No | Yes | Yes (default)  |
+| Windows 10 Enterprise | Yes  | Yes | Yes (default)  |
+| Windows 10 Pro Education | Yes (default)  | Yes | No |
+| Windows 10 Education | Yes (default) | Yes | No  |
 
 
 
