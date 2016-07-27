@@ -78,10 +78,15 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     copy C:\winpe_amd64\media\boot\boot.sdi y:\boot
     ```
-8.  Copy the bootable Windows PE image (boot.wim) to the \Boot folder.
+8.  Copy the bootable Windows PE image (boot.wim) to the \boot folder.
 
     ```
     copy C:\winpe_amd64\media\sources\boot.wim y:\boot
+    ```
+9. (Optional) Copy true type fonts to the \boot folder
+
+    ```
+    copy C:\winpe_amd64\media\Boot\Fonts y:\boot\Fonts
     ```
 
 ## Step 2: Configure boot settings and copy the BCD file
@@ -103,7 +108,7 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     The entry {a4f89c62-2142-11e6-80b6-00155da04110} was successfully created. 
     ```
-    Copy this GUID for use in the next set of commands. In the following commands, replace "GUID1" with your GUID.
+    Copy this GUID for use in the next set of commands. In each command shown, replace "GUID1" with your GUID.
 
 3.  Create a new boot application entry for the Windows PE image:
 
