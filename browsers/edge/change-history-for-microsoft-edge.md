@@ -11,6 +11,13 @@ This topic lists new and updated topics in the Microsoft Edge documentation for 
 
 For a detailed feature list of what's in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases, see the [Microsoft Edge changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/).
 
+## July 2016
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Enterprise guidance about using Microsoft Edge and Internet Explorer 11](enterprise-guidance-using-microsoft-edge-and-ie11.md) | Content moved from What's New section. |
+|[Available policies for Microsoft Edge](available-policies.md) |Updated |
+
+
 ## June 2016
 |New or changed topic | Description |
 |----------------------|-------------|

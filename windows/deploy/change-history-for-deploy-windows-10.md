@@ -19,6 +19,10 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 - [Provision PCs with apps and certificates for initial deployment](provision-pcs-with-apps-and-certificates.md)
 - [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
 
+## July 2016
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Manage Windows upgrades with Upgrade Analytics](manage-windows-upgrades-with-upgrade-analytics.md) | New |
 
 ## June 2016
 | New or changed topic | Description |
@@ -48,12 +52,3 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 - [Change history for Plan for Windows 10 deployment](../plan/change-history-for-plan-for-windows-10-deployment.md)
 - [Change history for Keep Windows 10 secure](../keep-secure/change-history-for-keep-windows-10-secure.md)
 - [Change history for Manage and update Windows 10](../manage/change-history-for-manage-and-update-windows-10.md)
-
- 
-
- 
-
-
-
-
-

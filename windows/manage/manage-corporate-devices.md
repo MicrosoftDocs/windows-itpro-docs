@@ -115,6 +115,7 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 
 ## Related topics
 
+[Manage Windows 10 and Windows Store tips, tricks, and suggestions](manage-tips-and-suggestions.md)
 
 - [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md) 
 - [New policies for Windows 10](new-policies-for-windows-10.md)
