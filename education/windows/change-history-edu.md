@@ -14,7 +14,6 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 
 
 ## RELEASE: Windows 10, version 1607
-
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
 
 - [Set up Windows 10](set-up-windows-10.md)

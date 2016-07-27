@@ -17,7 +17,6 @@ author: jdeckerMS
 
 |Topic |Description |
 |------|------------|
-
 | [Windows 10 editions for education customers](windows-editions-for-education-customers.md) | Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education.  |
 | [Provisioning options for Windows 10](set-up-windows-10.md) | Learn about your options for setting up Windows 10.  |
 | [Get Minecraft Education Edition](get-minecraft-for-education.md) | Learn how to get early access to **Minecraft Education Edition**. |
