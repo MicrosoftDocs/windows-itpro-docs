@@ -28,7 +28,7 @@ Since its inception, Windows 10 has included a number of user experience feature
 
 * **Windows tips**.  Contextual tips that appear based on specific user actions to reveal related Windows features or help users complete a scenario. 
 
-* **Microsoft account notifications**.  For users who have a connected MSA account, toast notifications about their account like parental control notifications or subscription expiration. 
+* **Microsoft account notifications**.  For users who have a connected Microsoft account, toast notifications about their account like parental control notifications or subscription expiration. 
 
 Windows 10 tips, tricks, and suggestions and Windows Store suggestions can be turned on or off by users.  For example, users are able to select personal photos for the lock screen as opposed to the images provided by Microsoft, or turn off tips, tricks, or suggestions as they use Windows.   
 
