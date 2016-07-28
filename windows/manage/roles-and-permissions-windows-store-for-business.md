@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Roles and permissions in Windows Store for Business
@@ -96,7 +97,7 @@ This table lists the global user accounts and the permissions they have in the S
 
 ### Store for Business roles and permissions
 
-Store for Businesshas a set of roles that help IT admins and employees manage access to apps and tasks for the Store for Business. Employees with these roles will need to use their Azure AD account to access the Store for Business.
+Store for Business has a set of roles that help IT admins and employees manage access to apps and tasks for the Store for Business. Employees with these roles will need to use their Azure AD account to access the Store for Business.
 
 This table lists the roles and their permissions.
 
@@ -204,11 +205,11 @@ These permissions allow people to:
 
 2.  Click **Settings**, and then choose **Permissions**.
 
-    ![](images/wsfb-settings-permissions.png)
+    ![Image showing Permissions page in Windows Store for Business.](images/wsfb-settings-permissions.png)
 
 3.  Click **Add people**, type a name, choose the role you want to assign, and click **Save** .
 
-    ![](images/wsfb-permissions-assignrole.png)
+    ![Image showing Assign roles to people box in Windows Store for Business.](images/wsfb-permissions-assignrole.png)
 
 4.  
 

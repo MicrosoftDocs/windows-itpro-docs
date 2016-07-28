@@ -23,29 +23,27 @@ You can make an app available in your private store when you acquire the app, or
 
 **To acquire an app and make it available in your private store**
 
-1.  Sign in to the Store for Business.
+1.  Sign in to the [Store for Business](https://businessstore.microsoft.com).
 
-2.  Click an app and then click **Get the app** to acquire the app for your organization.
+2.  Click an app, choose the license type, and then click **Get the app** to acquire the app for your organization.
 
-3.  You'll have a few options for distributing the app -- choose **Add to your private store where all people in your organization can find and install it.**
+    ![Image showing Distribute options for app in the Windows Store for Business.](images/wsfb-distribute.png)
 
-    ![](images/wsfb-distribute.png)
+Windows Store for Business add the app to your **Inventory**. Click **Manage**, **Inventory** for app distribution options. 
 
-    It will take approximately twelve hours before the app is available in the private store.
+**To make an app in Inventory available in your private store**
 
-**To make an app in inventory available in your private store**
-
-1.  Sign in to the Store for Business.
+1.  Sign in to the [Store for Business](https://businessstore.microsoft.com).
 
 2.  Click **Manage**, and then choose **Inventory**.
 
-    ![](images/wsfb-manageinventory.png)
+    ![Image showing Manage menu in Windows Store for Business.](images/wsfb-manageinventory.png)
 
 3.  Click **Refine**, and then choose **Online**. Store for Business will update the list of apps on the **Inventory** page.
 
 4.  From an app in **Inventory**, click the ellipses under **Action**, and then choose **Add to private store**.
 
-    ![](images/wsfb-inventoryaddprivatestore.png)
+    ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png)
 
 The value under **Private store** for the app will change to pending. It will take approximately twelve hours before the app is available in the private store.
 

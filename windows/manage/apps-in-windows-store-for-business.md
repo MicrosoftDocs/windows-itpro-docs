@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Apps in Windows Store for Business
@@ -50,7 +51,7 @@ Apps that you acquire from the Store for Business only work on Windows 10-based
 
 Some apps are free, and some apps charge a price. Currently, you can pay for apps with a credit card. We'll be adding more payment options over time.
 
-Some apps which are available to consumers in the Windows Store might not be available to organizations in the Windows Store for Business. App developers can opt-out their apps, and they also need to meet eligibility requirements for Windows Store for Business. For more information, read this info on [Organizational licensing options](https://msdn.microsoft.com/en-us/windows/uwp/publish/organizational-licensing). 
+Some apps which are available to consumers in the Windows Store might not be available to organizations in the Windows Store for Business. App developers can opt-out their apps, and they also need to meet eligibility requirements for Windows Store for Business. For more information, read this info on [Organizational licensing options](https://msdn.microsoft.com/windows/uwp/publish/organizational-licensing). 
 
 **Note**<br>
 We are still setting up the catalog of apps for Windows Store for Business. If you are searching for an app and it isn’t available, please check again in a couple of days.

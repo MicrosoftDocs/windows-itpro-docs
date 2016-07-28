@@ -2,6 +2,7 @@
 title: Manage Surface UEFI settings (Surface)
 description: Use Surface UEFI settings to enable or disable devices or components, configure security settings, and adjust Surface device boot settings. 
 keywords: firmware, security, features, configure, hardware
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -39,9 +40,9 @@ You will also find detailed information about the firmware of your Surface devic
 
 - Touch Firmware 
 
-*Figure 1. System information and firmware version information*
+![System information and firmware version information](images/manage-surface-uefi-figure-1.png "System information and firmware version information")
 
-![figure 1](images/manage-surface-uefi-figure-1.png)
+*Figure 1. System information and firmware version information*
 
 You can find up-to-date information about the latest firmware version for your Surface device in the [Surface Update History](https://www.microsoft.com/surface/en-us/support/install-update-activate/surface-update-history) for your device. 
 
@@ -59,21 +60,21 @@ On the **Security** page of Surface UEFI settings, you can set a password to pro
 
 The password must be at least 6 characters and is case sensitive. 
 
-*Figure 2. Add a password to protect Surface UEFI settings*
+![Add a password to protect Surface UEFI settings](images/manage-surface-uefi-fig2.png "Add a password to protect Surface UEFI settings")
 
-![figure 2](images/manage-surface-uefi-fig2.png)
+*Figure 2. Add a password to protect Surface UEFI settings*
 
 On the **Security** page you can also change the configuration of Secure Boot on your Surface device. Secure Boot technology prevents unauthorized boot code from booting on your Surface device, which protects against bootkit and rootkit-type malware infections. You can disable Secure Boot to allow your Surface device to boot third-party operating systems or bootable media. You can also configure Secure Boot to work with third-party certificates, as shown in Figure 3. Read more about [Secure Boot](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview) in the TechNet Library.
 
-*Figure 3. Configure Secure Boot* 
+![Configure Secure Boot](images/manage-surface-uefi-fig3.png "Configure Secure Boot")
 
-![figure 3](images/manage-surface-uefi-fig3.png)
+*Figure 3. Configure Secure Boot*
 
 You can also enable or disable the Trusted Platform Module (TPM) device on the **Security** page, as shown in Figure 4. The TPM is used to authenticate encryption for your device’s data with BitLocker. Read more about [BitLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/bitlocker-overview) in the TechNet Library. 
 
-*Figure 4. Configure Surface UEFI security settings*
+![Configure Surface UEFI security settings](images/manage-surface-uefi-fig4.png "Configure Surface UEFI security settings")
 
-![figure 4](images/manage-surface-uefi-fig4.png)
+*Figure 4. Configure Surface UEFI security settings*
 
 ##Devices 
 
@@ -95,9 +96,9 @@ On the **Devices** page you can enable or disable specific devices and component
 
 Each device is listed with a slider button that you can move to **On** (enabled) or **Off** (disabled) position, as shown in Figure 5. 
 
-*Figure 5. Enable and disable specific devices*
+![Enable and disable specific devices](images/manage-surface-uefi-fig5.png "Enable and disable specific devices")
 
-![figure 5](images/manage-surface-uefi-fig5.png)
+*Figure 5. Enable and disable specific devices*
 
 ##Boot configuration 
 
@@ -115,9 +116,9 @@ You can boot from a specific device immediately, or you can swipe left on that d
 
 For the specified boot order to take effect, you must set the **Enable Alternate Boot Sequence** option to **On**, as shown in Figure 6. 
 
-*Figure 6. Configure the boot order for your Surface device* 
+![Configure the boot order for your Surface device](images/manage-surface-uefi-fig6.png "Configure the boot order for your Surface device")
 
-![figure 6](images/manage-surface-uefi-fig6.png)
+*Figure 6. Configure the boot order for your Surface device* 
 
 You can also turn on and off IPv6 support for PXE with the **Enable IPv6 for PXE Network Boot** option, for example when performing a Windows deployment using PXE where the PXE server is configured for IPv4 only.  
 
@@ -125,14 +126,14 @@ You can also turn on and off IPv6 support for PXE with the **Enable IPv6 for PXE
 
 The **About** page displays regulatory information, such as compliance with FCC rules, as shown in Figure 7. 
 
-*Figure 7. Regulatory information is displayed on the About page*
+![Regulatory information displayed on the About page](images/manage-surface-uefi-fig7.png "Regulatory information displayed on the About page")
 
-![figure 7](images/manage-surface-uefi-fig7.png)
+*Figure 7. Regulatory information displayed on the About page*
 
 ##Exit 
 
 Use the **Restart Now** button on the **Exit** page to exit UEFI settings, as shown in Figure 8. 
 
-*Figure 8. Click Restart Now to exit Surface UEFI and restart the device*
+![Exit Surface UEFI and restart the device](images/manage-surface-uefi-fig8.png "Exit Surface UEFI and restart the device")
 
-![figure 8](images/manage-surface-uefi-fig8.png)
+*Figure 8. Click Restart Now to exit Surface UEFI and restart the device*
