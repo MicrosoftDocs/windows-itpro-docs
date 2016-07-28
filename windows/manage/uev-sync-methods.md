@@ -73,37 +73,24 @@ This table explains the changes to SyncMethod from UE-V v1.0 to v2.0 to v2.1, as
 </tbody>
 </table>
 
- 
+<!-- TOMMY WILL PROVIDE UPDATES FOR SOME OF THE ITEMS BELOW. THE FIRST ITEM IN PARTICULAR NEEDS ATTENTION. -->
 
 You can configure the sync method in these ways:
 
 -   When you [Deploy the UE-V Agent](http://technet.microsoft.com/library/dn458891.aspx#agent) through a command-line parameter or in a batch script
 
--   Through [Group Policy](http://technet.microsoft.com/library/dn458893.aspx) settings
+-   Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
 
--   With the [System Center Configuration Pack](http://technet.microsoft.com/library/dn458917.aspx) for UE-V
+-   With the [System Center Configuration Pack](uev-configuring-uev-with-system-center-configuration-manager-2012.md) for UE-V
 
--   After installation of the UE-V Agent, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](http://technet.microsoft.com/library/dn458937.aspx)
+-   After installation of the UE-V Agent, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
 ## Have a suggestion for UE-V?
-
 
 Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
-
-[Deploy Required Features for UE-V](uev-deploy-required-features.md#ssl)
-
-[Deploy Required Features for UE-V](uev-deploy-required-features.md#config)
+[Deploy Required UE-V Features](uev-deploy-required-features.md)
 
 [Technical Reference for UE-V](uev-technical-reference.md)
-
- 
-
- 
-
-
-
-
-

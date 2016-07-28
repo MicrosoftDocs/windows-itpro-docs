@@ -20,7 +20,7 @@ First, review these tasks that you’ll need to do to deploy UE-V:
 
 > Before you deploy any UE-V components, review this topic to help you determine which UE-V features to deploy. If you leave this page, be sure to come back and read through the planning information below.
 
--   [Deploy required features for UE-V](uev-deploy-required-features.md)
+-   [Deploy required UE-V features](uev-deploy-required-features.md)
 
 > Every UE-V deployment requires these activities:
 
@@ -28,9 +28,7 @@ First, review these tasks that you’ll need to do to deploy UE-V:
 
 -   [Decide how to manage UE-V configurations](#config)
 
--   [Enable the UE-V](uev-deploy-required-features.md#agent) service on user computers
-
-<!-- WATCH the preceding link, specifically the anchor-bookmark part. -->
+-   [Enable the UE-V service](uev-deploy-required-features.md#enable-the-ue-v-service) on user computers
 
 -   Optionally, you can [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md)
 
@@ -404,11 +402,7 @@ The UE-V service synchronizes user settings for computers that are not always co
 
 Enable this configuration using one of these methods:
 
-<!-- THE FOLLOWING NEEDS TO BE UPDATED WHEN TOMMY PROVIDES FEEDBACK ABOUT WHAT IT SHOULD SAY - THEN THE LINK CAN BE UPDATED ALSO.
--   During UE-V installation, at the command prompt or in a batch file, set the AgentSetup.exe parameter *SyncMethod = None*. See [Deploying the UE-V Agent](https://technet.microsoft.com/library/dn458891.aspx#agent) for more information.
--->
-
--   After the UE-V installation, use the Settings Management feature in System Center 2012 Configuration Manager or the MDOP ADMX templates to push the *SyncMethod = None* configuration.
+-   After you enable the UE-V service on user devices, use the Settings Management feature in System Center 2012 Configuration Manager or the MDOP ADMX templates to push the *SyncMethod = None* configuration.
 
 -   Use Windows PowerShell or Windows Management Instrumentation (WMI) to set the *SyncMethod = None* configuration.
 
