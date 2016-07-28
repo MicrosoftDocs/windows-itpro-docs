@@ -1014,7 +1014,6 @@ Description of the error. </dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 </dl>
-</p>
 </td>
 </tr>
 <tr>
