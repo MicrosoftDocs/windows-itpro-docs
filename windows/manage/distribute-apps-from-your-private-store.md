@@ -25,15 +25,13 @@ You can make an app available in your private store when you acquire the app, or
 
 1.  Sign in to the [Store for Business](https://businessstore.microsoft.com).
 
-2.  Click an app and then click **Get the app** to acquire the app for your organization.
-
-3.  You'll have a few options for distributing the app -- choose **Add to your private store where all people in your organization can find and install it.**
+2.  Click an app, choose the license type, and then click **Get the app** to acquire the app for your organization.
 
     ![Image showing Distribute options for app in the Windows Store for Business.](images/wsfb-distribute.png)
 
-    It will take approximately twelve hours before the app is available in the private store.
+Windows Store for Business add the app to your **Inventory**. Click **Manage**, **Inventory** for app distribution options. 
 
-**To make an app in inventory available in your private store**
+**To make an app in Inventory available in your private store**
 
 1.  Sign in to the [Store for Business](https://businessstore.microsoft.com).
 

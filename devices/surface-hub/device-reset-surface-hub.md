@@ -31,8 +31,16 @@ Initiating a reset will return the device to the last cumulative Windows update,
 
 **To reset a Surface Hub**
 1.	On your Surface Hub, open **Settings**. 
-2.	Click **Update & Security**. 
-3.	Click **Recovery**, and then click **Reset Device**. 
+
+    ![Image showing Settings app for Surface Hub.](images/sh-settings.png)
+ 
+2.	Click **Update & Security**.
+
+    ![Image showing Update & Security group in Settings app for Surface Hub.](images/sh-settings-update-security.png)
+ 
+3.	Click **Recovery**, and then click **Get started**.
+
+    ![Image showing Reset device option in Settings app for Surface Hub.](images/sh-settings-reset-device.png) 
 
 **Important Note**</br>
 Performing a device reset may take up to 6 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.

@@ -12,6 +12,15 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## July 2016
+
+
+| New or changed topic | Description|
+| --- | --- |
+| [Windows 10 editions for education customers](windows-editions-for-education-customers.md)  | New |
+|[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)|New |
+
+
 ## June 2016
 
 | New or changed topic | Description |
