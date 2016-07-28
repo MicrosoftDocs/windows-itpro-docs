@@ -12,11 +12,8 @@ ms.prod: w10
 # Configuring UE-V with Group Policy Objects
 
 
-Some Microsoft User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. 
+Some User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. The Group Policy administrative templates for these settings are included in Windows 10, version 1607. 
 
-<!-- REVIEW WHETHER THE FOLLOWING SENTENCE IS RELEVANT:
-For information about how to install UE-V Group Policy ADMX files, see [Installing the UE-V 2 Group Policy ADMX Templates](http://technet.microsoft.com/library/dn458891.aspx#admx).
--->
 
 The following policy settings can be configured for UE-V.
 
@@ -112,13 +109,19 @@ The following policy settings can be configured for UE-V.
 <td align="left"><p>Tray Icon</p></td>
 <td align="left"><p>Computers Only</p></td>
 <td align="left"><p>This Group Policy setting enables the User Experience Virtualization (UE-V) tray icon.</p></td>
-<td align="left"><p>The default is enabled.</p></td>
+<td align="left"><p>The default is Not Configured.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Use User Experience Virtualization (UE-V)</p></td>
 <td align="left"><p>Computers and Users</p></td>
-<td align="left"><p>This Group Policy setting lets you enable or disable User Experience Virtualization (UE-V).</p></td>
+<td align="left"><p>This setting only has an effect for UE-V 2.x and earlier. For UE-V in Windows 10, version 1607, use the **Enable UE-V** setting.</p></td>
 <td align="left"><p>Enable or disable this Group Policy setting.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Enable UE-V</p></td>
+<td align="left"><p>Computers and Users</p></td>
+<td align="left"><p>This policy setting allows you to enable or disable User Experience Virtualization (UE-V) feature. Reboot is needed for enable to take effect.</p></td>
+<td align="left"><p>This setting only has an effect for UE-V in Windows 10, version 1607. For UE-V 2.x and earlier, choose the **Use User Experience Virtualization (UE-V)** setting.</p></td>
 </tr>
 </tbody>
 </table>
