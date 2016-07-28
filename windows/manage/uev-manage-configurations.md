@@ -71,23 +71,12 @@ Here are some examples of UE-V configuration settings:
 
 ## Have a suggestion for UE-V?
 
-
 Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
-
 [Administering UE-V](uev-administering-uev.md)
 
-[Deploy Required Features for UE-V](uev-deploy-required-features.md)
+[Deploy Required UE-V Features](uev-deploy-required-features.md)
 
-[Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md)
-
- 
-
- 
-
-
-
-
-
+[Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
