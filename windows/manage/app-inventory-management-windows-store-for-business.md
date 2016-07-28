@@ -19,7 +19,7 @@ author: TrudyHa
 
 You can manage all apps that you've acquired on your **Inventory** page.
 
-The **Inventory** page in Windows Store for Business shows all apps in your inventory. This includes all apps that you've acquired from Store for Business, and the line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Inventory** page. On the **New line-of-business apps** page, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md).
+The **Inventory** page in Windows Store for Business shows all apps in your inventory. This includes all apps that you've acquired from Store for Business, and the line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Inventory** page. On the **New line-of-business apps** page, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md). The inventory page includes apps acquired by all people in your organization with the Store for Business Admin role.  
 
 All of these apps are treated the same once they are in your inventory and you can perform app lifecycle tasks for them: distribute apps, add apps to private store, review license details, and reclaim app licenses.
 
