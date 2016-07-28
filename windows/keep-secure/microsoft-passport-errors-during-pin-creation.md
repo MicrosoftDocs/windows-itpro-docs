@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Windows Hello errors during PIN creation

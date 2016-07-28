@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 # Microsoft Passport and password changes
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # VPN profile options

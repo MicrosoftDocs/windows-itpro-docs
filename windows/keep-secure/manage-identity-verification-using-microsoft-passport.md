@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: jdeckerMS
+localizationpriority: high
 ---
 # Manage identity verification using Windows Hello for Business
 

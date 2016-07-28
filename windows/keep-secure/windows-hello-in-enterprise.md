@@ -8,6 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Windows Hello biometrics in the enterprise
