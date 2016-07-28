@@ -12,7 +12,7 @@ ms.prod: w10
 
 Applies to: Windows 10, version 1607
 
-Follow the steps in this topic to deploy Microsoft User Experience Virtualization (UE-V) in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
+Follow the steps in this topic to deploy User Experience Virtualization (UE-V) in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
 
 **Note**
 The information in this section is explained in greater detail throughout the rest of the documentation. If you’ve already determined that UE-V is the right solution and you don’t need to further evaluate it, go to Prepare a UE-V deployment.

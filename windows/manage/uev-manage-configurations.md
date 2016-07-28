@@ -12,7 +12,7 @@ ms.prod: w10
 # Manage Configurations for UE-V
 
 
-In the course of the Microsoft User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V Agent and also manage storage locations for resources such as settings package files. You might have to perform other tasks, for example, configuring the Company Settings Center to define how users interact with UE-V. The following topics provide guidance for managing these UE-V resources.
+In the course of the User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V Agent and also manage storage locations for resources such as settings package files. You might have to perform other tasks, for example, configuring the Company Settings Center to define how users interact with UE-V. The following topics provide guidance for managing these UE-V resources.
 
 ## Configuring UE-V by using Group Policy Objects
 

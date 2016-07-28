@@ -12,7 +12,7 @@ ms.prod: w10
 # Configuring UE-V with System Center Configuration Manager 2012
 
 
-After you install Microsoft User Experience Virtualization (UE-V) and its required features, UE-V must be configured. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+After you enable User Experience Virtualization (UE-V) and its required features, UE-V must be configured. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
 ## UE-V Configuration Pack supported features
 

@@ -12,7 +12,7 @@ ms.prod: w10
 # Technical Reference for UE-V
 
 
-This technical reference section includes additional technical documentation about the various features of Microsoft User Experience Virtualization (UE-V). This information is provided to help the administrator better understand UE-V.
+This technical reference section includes additional technical documentation about the various features of User Experience Virtualization (UE-V). This information is provided to help the administrator better understand UE-V.
 
 ## Technical reference topics for UE-V
 

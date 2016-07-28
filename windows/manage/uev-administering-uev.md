@@ -12,7 +12,7 @@ ms.prod: w10
 # Administering UE-V
 
 
-After you have deployed Microsoft User Experience Virtualization (UE-V), you must be able to perform various ongoing administrative tasks, such as managing the configuration of the UE-V Agent and recovering lost settings. These post-installation tasks are described in the following sections.
+After you have deployed User Experience Virtualization (UE-V), you must be able to perform various ongoing administrative tasks, such as managing the configuration of the UE-V Agent and recovering lost settings. These post-installation tasks are described in the following sections.
 
 ## Managing UE-V configurations
 

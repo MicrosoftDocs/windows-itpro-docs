@@ -12,7 +12,7 @@ ms.prod: w10
 # Security Considerations for UE-V
 
 
-This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for Microsoft User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
+This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
 
 ## Security considerations for UE-V configuration
 
