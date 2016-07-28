@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 After you have the required information about your network, Active Directory, and client and server devices, you can use that information to make decisions about the isolation zones you want to use in your environment.
 

@@ -18,7 +18,7 @@ author: jdeckerMS
 
 >  **Looking for Windows Embedded 8.1 Industry information?** See [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
 
-A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
+A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
 **Note**  
 A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
@@ -68,21 +68,20 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 Using assigned access, Windows 10 runs the designated Universal Windows app above the lockscreen, so that the assigned access account has no access to any other functionality on the device. You have these choices for setting up assigned access:
 
--   [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) - Windows 10 Pro, Enterprise, and Education
+| Method | Account type | Windows 10 edition |
+| --- | --- | --- |
+| [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) | Local standard | Pro, Enterprise, Education |
+| [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Create a provisioning package using Windows Imaging and Configuration Designer (ICD)](#icd) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) | Local standard | Pro, Enterprise, Education |
 
--   [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) - Windows 10 Enterprise and Education
 
--   [Create a provisioning package using Windows Imaging and Configuration Designer (ICD)](#icd) - Windows 10 Enterprise and Education
-
--   [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) - Windows 10 Pro, Enterprise, and Education
 
 ### Requirements
 
--   A domain or local user account.
-
-    The user account must have logged on at least once before you set up assigned access, or no apps will be available for that account. To set up assigned access using MDM, you need the user account (domain\\account).
-
--   A Universal Windows app that is installed for that account and is an above lock screen app. For details on building an above lock screen app, see [Kiosk apps for assigned access: Best practices](http://go.microsoft.com/fwlink/p/?LinkId=708386).
+-   A domain or local user account. 
+    
+-   A Universal Windows app that is installed or provisioned for that account and is an above lock screen app. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md). For details on building an above lock screen app, see [Kiosk apps for assigned access: Best practices](http://go.microsoft.com/fwlink/p/?LinkId=708386).
 
     The app can be your own company app that you have made available in your own app Store. To set up assigned access using MDM or PowerShell, you also need the Application User Model ID (AUMID) for the app. [Learn how to get the AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867).
 
@@ -101,7 +100,7 @@ Assigned access does not work on a device that is connected to more than one mon
 
 3.  Choose an account.
 
-4.  Choose an app. Only apps that can run above the lock screen will be displayed.
+4.  Choose an app. Only apps that can run above the lock screen will be displayed. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md).
 
 5.  Close **Settings** – your choices are saved automatically, and will be applied the next time that user account logs on.
 
@@ -117,17 +116,20 @@ Assigned Access has one setting, KioskModeApp. In the KioskModeApp setting, you 
 
 ### <a href="" id="icd"></a>Set up assigned access using Windows Imaging and Configuration Designer (ICD)
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device as a kiosk. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device as a kiosk. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+
+> **Important**
+When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 **Create a provisioning package for a kiosk device**
 
 1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
 
-2.  Choose **New provisioning package**.
+2.  Choose **Advanced provisioning**.
 
 3.  Name your project, and click **Next**.
 
-4.  Choose **Common to all Windows desktop editions** and click **Next**.
+4.  Choose **All Windows desktop editions** and click **Next**.
 
 5.  On **New project**, click **Finish**. The workspace for your package opens.
 
@@ -178,7 +180,9 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 ### Set up assigned access using Windows PowerShell
 
-You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices. To open PowerShell on Windows 10, search for PowerShell and find **Windows PowerShell Desktop app** in the results.
+You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices. 
+
+To open PowerShell on Windows 10, search for PowerShell and find **Windows PowerShell Desktop app** in the results. Run PowerShell as administrator.
 
 ```
 Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>
@@ -196,7 +200,10 @@ Set-AssignedAccess -AppName <CustomApp> -UserName <username>
 Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 ```
 
+> **Note:** To set up assigned access using `-AppName`, the user account that you specify for assigned access must have logged on at least once. 
 [Learn how to get the AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867).
+
+[Learn how to get the AppName](https://msdn.microsoft.com/library/windows/hardware/mt620046%28v=vs.85%29.aspx) (see **Parameters**).
 
 [Learn how to get the SID](http://go.microsoft.com/fwlink/p/?LinkId=615517).
 
@@ -209,7 +216,7 @@ Clear-AssignedAccess
 
 ### Set up automatic logon
 
-When your kiosk device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to log on to the assigned access account automatically.
+When your kiosk device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to log on to the assigned access account automatically. Make sure that Group Policy settings applied to the device do not prevent automatic logon.
 
 Edit the registry to have an account automatically logged on.
 
@@ -217,12 +224,11 @@ Edit the registry to have an account automatically logged on.
 
     **Note**  
     If you are not familiar with Registry Editor, [learn how to modify the Windows registry](http://go.microsoft.com/fwlink/p/?LinkId=615002).
-
-     
+  
 
 2.  Go to
 
-    ****HKEY\_LOCAL\_MACHINE**\\**SOFTWARE**\\**Microsoft**\\**WindowsNT**\\**CurrentVersion**\\**Winlogon****
+    **HKEY\_LOCAL\_MACHINE\SOFTWARE\\Microsoft\WindowsNT\CurrentVersion\Winlogon**
 
 3.  Set the values for the following keys.
 
@@ -232,10 +238,7 @@ Edit the registry to have an account automatically logged on.
 
     -   *DefaultPassword*: set value as the password for the account.
 
-        **Note**  
-        If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
-
-         
+       > **Note**  If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
 
     -   *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, do not add this key.
 
@@ -247,7 +250,7 @@ To sign out of an assigned access account, press **Ctrl + Alt + Del**, and then 
 
 If you press **Ctrl + Alt + Del** and do not sign in to another account, after a set time, assigned access will resume. The default time is 30 seconds, but you can change that in the following registry key:
 
-****HKEY\_LOCAL\_MACHINE**\\**SOFTWARE**\\**Microsoft**\\**Windows**\\**CurrentVersion**\\**Authentication**\\**LogonUI****
+**HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI**
 
 To change the default time for assigned access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
 

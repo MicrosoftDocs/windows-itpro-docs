@@ -11,10 +11,18 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## RELEASE: Windows 10, version 1607
+
+The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
+
+- [Provisioning packages for Windows 10](provisioning-packages.md)
+- [Provision PCs with apps and certificates for initial deployment](provision-pcs-with-apps-and-certificates.md)
+- [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
+
 ## July 2016
 | New or changed topic | Description |
 |----------------------|-------------|
-| [Manage Windows upgrades with Upgrade Analytics](manage-windows-upgrades-with-upgrade-analytics.md) | New | 
+| [Manage Windows upgrades with Upgrade Analytics](manage-windows-upgrades-with-upgrade-analytics.md) | New |
 
 ## June 2016
 | New or changed topic | Description |
@@ -44,12 +52,3 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 - [Change history for Plan for Windows 10 deployment](../plan/change-history-for-plan-for-windows-10-deployment.md)
 - [Change history for Keep Windows 10 secure](../keep-secure/change-history-for-keep-windows-10-secure.md)
 - [Change history for Manage and update Windows 10](../manage/change-history-for-manage-and-update-windows-10.md)
-
- 
-
- 
-
-
-
-
-
