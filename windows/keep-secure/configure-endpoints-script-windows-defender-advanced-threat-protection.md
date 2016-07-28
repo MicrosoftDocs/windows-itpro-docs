@@ -38,7 +38,25 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 For for information on how you can manually validate that the endpoint is compliant and correctly reports telemetry see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 ## Configure sample collection settings
-PENDING STEPS FROM OMRI
+You can manually configure the sample sharing setting on the endpoint by using *regedit* or creating and running a *.reg* file.  
+
+For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
+
+The configuration is set through the following registry key entry:
+
+```
+Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Name: "SampleSharing"
+Value: 0 or 1
+```
+Where:<br>
+Name type is a D-WORD. <br>
+Possible values are:
+- 0 - doesn't allow sample sharing  from this endpoint
+- 1 - allows sharing of all file types from this endpoint
+
+The default value in case the registry key doesn’t exist is 1.
+
 
 ## Offboard endpoints
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.

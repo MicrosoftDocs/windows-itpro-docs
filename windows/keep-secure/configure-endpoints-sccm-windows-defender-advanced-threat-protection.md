@@ -49,16 +49,26 @@ You can use System Center Configuration Manager’s existing functionality to cr
     a. Choose a predefined device collection to deploy the package to.
 
 ### Configure sample collection settings
-If you want to monitor your deployment, you can do it by setting a compliance rule for configuration item in System Center Configuration Manager.
+You can set a compliance rule for configuration item in System Center Configuration Manager to change the sample share setting on an endpoint.
+This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted machines to make sure they’re complaint.
 
-This rule should be a non-remediating compliance rule configuration item that monitors the value of a registry key on targeted machines.
+For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
 
-The registry key you should monitor is:
+The configuration is set through the following registry key entry:
+
 ```
-Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
-Name: “OnboardingState”
-Value: “1”
+Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Name: "SampleSharing"
+Value: 0 or 1
 ```
+Where:<br>
+Name type is a D-WORD. <br>
+Possible values are:
+- 0 - doesn't allow sample sharing  from this endpoint
+- 1 - allows sharing of all file types from this endpoint
+
+The default value in case the registry key doesn’t exist is 1.
+
 For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/en-us/library/gg681958.aspx).
 
 
@@ -105,8 +115,17 @@ If there are failed deployments (endpoints with **Error**, **Requirements Not Me
 ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
 **Check that the endpoints are compliant with the Windows Defender ATP service:**
+You can set a compliance rule for configuration item in System Center Configuration Manager to monitor your deployment.
 
-OMRI - NEED STEPS HERE.
+This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted machines.
+
+Monitor the following registry key entry:
+```
+Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
+Name: “OnboardingState”
+Value: “1”
+```
+For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/en-us/library/gg681958.aspx).
 
 ## Related topics
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
