@@ -55,7 +55,7 @@ To enable phone sign-in to VPN, you must enable the [policy](#set-policies) for 
 
 ## Get the app
 
-You will be able to get the [Microsoft Authenticator](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/25/microsoft-authenticator-coming-august-15th/) app from the Windows Store on Aug 15. If you want to distribute the **Microsoft Authenticator** app, your organization must have set up Windows Store for Business, with Microsoft added as a [Line of Business (LOB) publisher](../manage/working-with-line-of-business-apps.md).
+If you want to distribute the **Microsoft Authenticator** app, your organization must have set up Windows Store for Business, with Microsoft added as a [Line of Business (LOB) publisher](../manage/working-with-line-of-business-apps.md).
 
 [Tell people how to sign in using their phone.](prepare-people-to-use-microsoft-passport.md#bmk-remote)
 
