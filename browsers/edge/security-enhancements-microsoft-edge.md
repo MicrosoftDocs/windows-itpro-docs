@@ -8,6 +8,13 @@ title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
 ---
 
 # Security enhancements for Microsoft Edge
+
+**Applies to:**
+
+- Windows 10
+- Windows 10 Mobile
+- Windows Server 2016
+
 Microsoft Edge is designed with significant security improvements, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows.
 
 ## Help to protect against web-based security threats
