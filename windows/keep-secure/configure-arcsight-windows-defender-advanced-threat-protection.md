@@ -21,14 +21,19 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
 
 ## Before you begin
 
-- Get the following information from your Azure Active Directory (AAD) application:
+- Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
     - OAuth 2 Token refresh URL
     - OAuth 2 Client ID
     - OAuth 2 Client secret
-- Create your OAUth 2 Client properties file or get it from your Windows Defender ATP contact. For more information, see  I NEED URL FOR THE HYPERLINK HERE TO WHERE YOU GOT THE ARCSIGHT DEVELOPER'S GUIDE PDF.
+- Create your OAUth 2 Client properties file or get it from your Windows Defender ATP contact. For more information, see the ArcSight FlexConnector Developer's guide.
+
+  > [!NOTE]
+  > **For the authorization URL**: Append the following to the value you got from the AAD app: ```?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com``` <br>
+  > **For the redirect_uri value use**: ```https://localhost:44300/wdatpconnector```
+  >
 - Get the *wdatp-connector.properties* file from your Windows Defender ATP contact. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
-- Install the HP ArcSight REST FlexConnector package on a server that has access to the Internet. (RONEN - MAY I HAVE THE LINK FROM WHERE CUSTOMERS CAN DOWNLOAD THE PACKAGE)
-- Contact the Windows Defender ATP team to provide you your refresh token or follow the steps in the section "Run restutil to Obtain a Refresh Token for Connector Appliance/ArcSight Management Center" in _______ NEED LINK TO THE PDF AGAIN HERE.
+- Install the HP ArcSight REST FlexConnector package on a server that has access to the Internet.
+- Contact the Windows Defender ATP team to get your refresh token or follow the steps in the section "Run restutil to Obtain a Refresh Token for Connector Appliance/ArcSight Management Center" in the ArcSight FlexConnector Developer's guide.
 
 ## Configure HP ArcSight
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin)
@@ -46,7 +51,8 @@ The following steps assume that you have completed all the required steps in [Be
 4. Enter the following command and press **Enter**: ```runagentsetup.bat```. The Connector Setup pop-up window appears.
 
 5. In the form fill in the following required fields with these values:
-
+    >[!NOTE]
+    >All other values in the form are optional and can be left blank.
     <table>
     <tbody style="vertical-align:top;">
     <tr>
@@ -67,16 +73,15 @@ The following steps assume that you have completed all the required steps in [Be
     <td>Select *wdatp-connector.properties*.</td>
     <tr>
     <td>Refresh Token</td>
-    <td>Paste the refresh token that your Windows Defender ATP contact provided, or you the one you get after running the `restutil` tool.</td>
+    <td>Paste the refresh token that your Windows Defender ATP contact provided, or run the `restutil` tool to get it.</td>
     </tr>
     </tr>
     </table>
-All other values in the form are optional and can be left blank.
 6. Select **Next**, then **Save**.
 
-7. Run the connector. You can choose to run in service mode or application mode. RONEN - Should this be Service mode or Application mode (capitalized S and capitalized A?)
+7. Run the connector. You can choose to run in Service mode or Application mode.
 
-8. In the HP ArcSight console, create a **Windows Defender ATP** channel with an intervals and properties suitable to your enterprise needs.  
+8. In the HP ArcSight console, create a **Windows Defender ATP** channel with intervals and properties suitable to your enterprise needs. Windows Defender ATP alerts will appear as discrete events, with “Microsoft” as the vendor and “Windows Defender ATP” as the device name.  
 
 ## Related topics
 - [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)

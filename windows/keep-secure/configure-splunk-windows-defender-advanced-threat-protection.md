@@ -21,9 +21,9 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 
 ## Before you begin
 
-- Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk (RONEN - please check if this link is correct.)
-- Contact the Windows Defender ATP team to provide you your refresh token
-- Get the following information from your Azure Active Directory (AAD) application:
+- Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk
+- Contact the Windows Defender ATP team to get your refresh token
+- Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
     - OAuth 2 Token refresh URL
     - OAuth 2 Client ID
     - OAuth 2 Client secret
@@ -32,15 +32,15 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 
 1. Login in to Splunk.
 
-2. Select **Search & Reporting**, then **Settings** > **Data inputs**.
+2. Click **Search & Reporting**, then **Settings** > **Data inputs**.
 
-3. Select **REST** under **Local inputs**.
+3. Click **REST** under **Local inputs**.
 > [!NOTE]
 > This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
 
-4. Select **New**.
+4. Click **New**.
 
-5. In the form fill in the following required fields with the following values, then click **Save**:
+5. Type the following values in the required fields, then click **Save**:
 > [!NOTE]
 >All other values in the form are optional and can be left blank.
 
@@ -54,8 +54,6 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
   <td>Endpoint URL</td>
   <td>https://DataAccess-PRD.trafficmanager.net:444/api/alerts</td>
   </tr>
-  <td>Events URL</td>
-  <td>`https://DataAccess-PRD.trafficmanager.net:444/api/alerts`</td>
   <tr>
   <td>HTTP Method</td>
   <td>GET</td>
@@ -76,7 +74,7 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
   </tr>
   <tr>
   <td>Response type</td>
-  <td>json</td>
+  <td>Json</td>
   </tr>
   <tr>
   <td>Response Handler</td>
@@ -99,8 +97,7 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 
 After completing these configuration steps, you can go to the Splunk dashboard and run queries.
 
-Some sample queries are: RONEN - PLEASE CHECK IF THE FOLLOWING ARE CORRECT - THANK YOU
-```source="rest://windows atp alerts"```
+You can use the following query as an example in Splunk: <br>
 ```source="rest://windows atp alerts"|spath|table*```
 
 
