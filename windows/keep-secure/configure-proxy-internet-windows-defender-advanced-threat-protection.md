@@ -116,76 +116,69 @@ For more information on how to use Netsh see, [Netsh Commands for Windows Hypert
 ## Configure the proxy server manually using a static proxy
 Configure a static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
 
-1. Click **Start**, type **Run**, and press **Enter**.
+The static proxy is configurable through Group Policy (GP). The group policy can be found under: **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**.
 
-2. From the **Run** dialog box, type **regedit** and press **Enter**.
+The registry key that this policy sets can be found at:
+```	HKLM\Software\Policies\Microsoft\Windows\DataCollection              TelemetryProxyServer```
 
-3. In the **Registry Editor** navigate to the Status key under:
-```text
-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection
-```
-4. Right-click **DataCollection** and select **New** > **String value**.
-5. Write the proxy address in the following format:
-```
-[proxy_ip:port]
-```
-6. Restart the PC.
+The policy and the registry key takes the following string format:
+```<server name or ip>:<port>```
+<br>
+For example: 10.0.0.6:8080
 
+If the static proxy settings are configured after onboarding, then you must restart the PC to apply the proxy settings.
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
-U.S. region:
-- *.blob.core.windows.net
-- crl.microsoft.com
-- us.vortex-win.data.microsoft.com
-- winatp-gw-cus.microsoft.com
-- winatp-gw-eus.microsoft.com
-- www.microsoft.com
+Primary Domain Controller | .Microsoft.com DNS record
+:---|:---
+ Central US | winatp-gw-cus.microsoft.com <br> us.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
+ East US (2)| winatp-gw-eus.microsoft.com <br> us.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
+ West Europe | winatp-gw-weu.microsoft.com <br> eu.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
+ North Europe | winatp-gw-neu.microsoft.com <br> eu.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
 
-EU region:
-- *.blob.core.windows.net
-- crl.microsoft.com
-- eu.vortex-win.data.microsoft.com
-- winatp-gw-weu.microsoft.com
-- winatp-gw-neu.microsoft.com
-- www.microsoft.com
-
-If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted to the above listed URLs.
+ If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted to the above listed URLs.
 
 
 ## Verify client connectivity to Windows Defender ATP service URLs
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Windows Defender ATP service URLs.
 
-1. Download the connectivity verification tool to the PC where Windows Defender ATP sensor is running on:
+1. Download the connectivity verification tool to the PC where Windows Defender ATP sensor is running on.
 
-    - Download Snapshot  - NEED LINK ON WHERE TO DOWNLOAD THIS.
+2.  Extract the contents of SenseConnectivtyChecker on the endpoint.
 
-2.  Open an elevated command-line:
+3. Open an elevated command-line:
 
     a. Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
-3. Enter the following command and press **Enter**:
+4. Enter the following command and press **Enter**:
 
     ```
-    HardDrivePath\PsExec.exe -s -i HardDrivePath\SenseSnapshot.exe
+    HardDrivePath\RunSenseConnectivityCheck.cmd
     ```
-    Replace *HardDrivePath* with the path where the SenseSnapshot tool was downloaded to, for example ```C:\Programfiles\mytool\sensesnapshottool\SenseSnapshot.exe```.
+    Replace *HardDrivePath* with the path where the SenseConnectivtyChecker tool was downloaded to, for example ```C:\Work\tools\ConnectivityChecker\RunSenseConnectivityCheck.cmd```.
 
-4. Extract the Snapshot.xml file from the Snapshot.zip created in the *HardDrivePath* folder.
+5. Extract the *ConnectivityCheckResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
-5. Open Snapshot.xml using any XML reader and go to the Connections section of the file.
+6. Open *ConnectivityCheck.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
+The tool checks the connectivity of Windows Defender ATP service URLs that Windows Defender ATP client is configured to interact with. It then prints the results into the *ConnectivityCheck.txt* file for each URL that can potentially be used to communicate with the Windows Defender ATP  services. For example:
+  ```
+  Testing URL : https://xxx.microsoft.com/xxx
+  1 - Default proxy: Succeeded (200)
+  2 - Proxy auto discovery (WPAD): Succeeded (200)
+  3 - Proxy disabled: Succeeded (200)
+  4 - Named proxy: Doesn't exist
+  5 - Command line proxy: Doesn't exist              
+  ```
 
-6.	Verify that the **Result** field of each relevant URL shows that the name is **resolved** and connection status is **listening**.
+If at least one of the connectivity options returns a (200) status, then the Windows Defender ATP client can communicate with the tested URL properly using this connectivity method. <br><br>
 
-If the any of the verification steps indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
-
-> [!NOTE]
-> SenseSnapshot verifies connectivity for all URLs (including EU and U.S.), so you can ignore results of connectivity verification for irrelevant geo-locations.
+If however the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Windows Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 ## Related topics
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
