@@ -109,7 +109,7 @@ The following policy settings can be configured for UE-V.
 <td align="left"><p>Tray Icon</p></td>
 <td align="left"><p>Computers Only</p></td>
 <td align="left"><p>This Group Policy setting enables the User Experience Virtualization (UE-V) tray icon.</p></td>
-<td align="left"><p>The default is Not Configured.</p></td>
+<td align="left"><p>This setting only has an effect for UE-V 2.x and earlier. It has no effect for UE-V in Windows 10, version 1607.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Use User Experience Virtualization (UE-V)</p></td>
