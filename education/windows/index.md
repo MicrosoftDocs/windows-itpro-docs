@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Windows 10 for Education

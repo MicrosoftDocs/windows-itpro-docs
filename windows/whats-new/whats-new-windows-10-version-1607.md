@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
+localizationpriority: high
 ---
 
 # What's new in Windows 10, version 1607

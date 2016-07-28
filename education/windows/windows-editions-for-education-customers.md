@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 author: CelesteDG
+localizationpriority: medium
 ---
 
 # Windows 10 editions for education customers

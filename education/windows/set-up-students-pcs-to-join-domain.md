@@ -6,6 +6,7 @@ ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Set up student PCs to join domain

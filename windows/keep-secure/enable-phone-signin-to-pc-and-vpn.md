@@ -6,6 +6,7 @@ ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Enable phone sign-in to PC or VPN
