@@ -23,10 +23,11 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 |New or changed topic | Description |
 |----------------------|-------------|
+|[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Updated various topics throughout this section for new name and new UI in Microsoft Intune and System Center Configuration Manager. |
 |[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md) |New |
 |[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |New |
-|[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |New |
-|[Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |New |
+|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |New |
+|[Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |New |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (multiple topics) | Updated |
 |[Device Guard deployment guide](device-guard-deployment-guide.md) (multiple topics) | Updated |
 
@@ -35,7 +36,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |Added an update about needing to reconfigure your enterprise data protection app rules after delivery of the June service update. |
+|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Added an update about needing to reconfigure your Windows Information Protection app rules after delivery of the June service update. |
 | [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md) (multiple topics) | New |
 | [Advanced security audit policy settings](advanced-security-audit-policy-settings.md) (mutiple topics) | New security monitoring reference topics |
 | [Windows security baselines](windows-security-baselines.md) | New |
@@ -47,8 +48,8 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md) | Changed Internet Explorer to Microsoft Edge |
 | [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md) | Added errors 0x80090029 and 0x80070057, and merged entries for error 0x801c03ed. |
 | [Microsoft Passport guide](microsoft-passport-guide.md) | Updated Roadmap section content |
-|[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md) |Updated info based on changes to the features and functionality.|
-| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 |
+|[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Updated info based on changes to the features and functionality.|
+| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (mutiple topics) | New |
 
 ## April 2016
@@ -63,7 +64,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 |New or changed topic | Description |
 |----------------------|-------------|
 |[Requirements to use AppLocker](requirements-to-use-applocker.md) |Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy.|
-|[Protect your enterprise data using enterprise data protection (EDP)](protect-enterprise-data-using-edp.md) |Added pre-release content about how to set up and deploy enterprise data protection (EDP) in an enterprise environment.|
+|[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Added pre-release content about how to set up and deploy Windows Information Protection (WIP) in an enterprise environment.|
 
 ## February 2016
 
