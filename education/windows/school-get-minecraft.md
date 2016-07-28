@@ -6,6 +6,7 @@ ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # For IT administrators: get Minecraft Education Edition

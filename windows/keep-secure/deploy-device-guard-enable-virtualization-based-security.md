@@ -28,15 +28,21 @@ For information about enabling Credential Guard, see [Protect derived domain cre
 
 ## Windows feature requirements for virtualization-based security
 
-In addition to the hardware requirements found in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard), you must enable certain operating system features before you can enable VBS: Microsoft Hyper-V and isolated user mode (shown in Figure 1).
+In addition to the hardware requirements found in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard), you must enable certain operating system features before you can enable VBS:
+
+- With Windows 10, version 1607 or Windows Server 2016:<br> 
+Hyper-V Hypervisor  (shown in Figure 1).
+
+- With an earlier version of Windows 10, or Windows Server 2016 Technical Preview 5 or earlier:<br> 
+Hyper-V Hypervisor and Isolated User Mode (not shown).
 
 > **Note**&nbsp;&nbsp;You can configure these features manually by using Windows PowerShell or Deployment Image Servicing and Management. For specific information about these methods, see [Protect derived domain credentials with Credential Guard](credential-guard.md).
  
 ![Turn Windows features on or off](images/dg-fig1-enableos.png)
 
-Figure 1. Enable operating system features for VBS
+Figure 1. Enable operating system feature for VBS
 
-After you enable these features, you can configure any additional hardware-based security features you want. The following sections provide more information:
+After you enable the feature or features, you can configure any additional hardware-based security features you want. The following sections provide more information:
 - [Enable Unified Extensible Firmware Interface Secure Boot](#enable-unified-extensible-firmware-interface-secure-boot)
 - [Enable virtualization-based security for kernel-mode code integrity](#enable-virtualization-based-security-for-kernel-mode-code-integrity)
 
@@ -44,7 +50,7 @@ After you enable these features, you can configure any additional hardware-based
 
 Before you begin this process, verify that the target device meets the hardware requirements for UEFI Secure Boot that are laid out in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard). There are two options to configure UEFI Secure Boot: manual configuration of the appropriate registry keys and Group Policy deployment. Complete the following steps to manually configure UEFI Secure Boot on a computer running Windows 10.
 
-> **Note**&nbsp;&nbsp;There are two platform security levels for Secure Boot: stand-alone Secure Boot and Secure Boot with DMA protection. DMA protection provides additional memory protection but will be enabled only on systems whose processors include input/output memory management units (IOMMUs). Protection against driver-based attacks is provided only on systems that have IOMMUs and that have DMA protection enabled.
+> **Note**&nbsp;&nbsp;There are two platform security levels for Secure Boot: stand-alone Secure Boot and Secure Boot with DMA protection. DMA protection provides additional memory protection but will be enabled only on systems whose processors include input/output memory management units (IOMMUs). Protection against driver-based attacks is provided only on systems that have IOMMUs and that have DMA protection enabled. For more information about how IOMMUs help protect against DMA attacks, see [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats).
 
 1.  Navigate to the **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard** registry subkey.
 
@@ -52,9 +58,9 @@ Before you begin this process, verify that the target device meets the hardware 
 
 3.  Set the **RequirePlatformSecurityFeatures DWORD** value as appropriate:
 
-    -   Set this value to **1** to enable the **Secure Boot** option.
-
-    -   Set this value to **2** to enable the **Secure Boot with DMA Protection** option.
+    | **With Windows 10, version 1607, <br>or Windows Server 2016** | **With an earlier version of Windows 10, <br>or Windows Server 2016 Technical Preview 5 or earlier** |
+    | ---------------- | ---------------- |
+    | **1** enables the **Secure Boot** option<br>**3** enables the **Secure Boot and DMA protection** option | **1** enables the **Secure Boot** option<br>**2** enables the **Secure Boot and DMA protection** option |
 
 4.  Restart the client computer.
 
@@ -80,11 +86,11 @@ Unfortunately, it would be time consuming to perform these steps manually on eve
 
     Figure 6. Enable VBS
 
-5.  Select the **Enabled** option, and then select **Secure Boot and DMA Protection** from the **Select Platform Security Level** list.
+5.  Select the **Enabled** button, and then select **Secure Boot and DMA Protection** from the **Select Platform Security Level** list.
 
     ![Group Policy, Turn On Virtualization Based Security](images/device-guard-gp.png)
 
-    Figure 7. Enable Secure Boot
+    Figure 7. Enable Secure Boot (in Windows 10, version 1607)
 
     > **Note**&nbsp;&nbsp;Device Guard Secure Boot is maximized when combined with DMA protection. If your hardware contains the IOMMUs required for DMA protection, be sure to select the **Secure Boot and DMA Protection** platform security level. If your hardware does not contain IOMMUs, there are several mitigations provided by leveraging Secure Boot without DMA Protection.
 
@@ -102,7 +108,11 @@ Before you begin this process, verify that the desired computer meets the hardwa
 
 **To configure virtualization-based protection of KMCI manually:**
 
-1.  Navigate to the **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard** registry subkey.
+1.  Navigate to the appropriate registry subkey: 
+
+    - With Windows 10, version 1607, or Windows Server 2016:<br>**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios**
+    
+    - With an earlier version of Windows 10, or Windows Server 2016 Technical Preview 5 or earlier:<br>**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard**
 
 2.  Set the **HypervisorEnforcedCodeIntegrity DWORD** value to **1**.
 
@@ -130,11 +140,15 @@ It would be time consuming to perform these steps manually on every protected co
 
     Figure 3. Enable VBS
 
-5.  Select the **Enabled** option, and then select the **Enable Virtualization Based Protection of Code Integrity** check box.
+5.  Select the **Enabled** button, and then for **Virtualization Based Protection of Code Integrity**, select the appropriate option:
+
+    - With Windows 10, version 1607 or Windows Server 2016, choose an enabled option:<br>For an initial deployment or test deployment, we recommend **Enabled without UEFI lock**.<br>When your deployment is stable in your environment, we recommend changing to **Enabled with UEFI lock**. This option helps protect the registry from tampering, either through malware or by an unauthorized person.
+
+    - With earlier versions of Windows 10, or Windows Server 2016 Technical Preview 5 or earlier:<br>Select the **Enable Virtualization Based Protection of Code Integrity** check box.
 
     ![Group Policy, Turn On Virtualization Based Security](images/dg-fig7-enablevbsofkmci.png)
 
-    Figure 4. Enable VBS of KMCI
+    Figure 4. Enable VBS of KMCI (in Windows 10, version 1607)
 
 6.  Close the Group Policy Management Editor, and then restart the Windows 10 test computer. With this setting configured, the VBS of the KMCI will take effect upon restart.
 
@@ -176,7 +190,12 @@ Table 1. Win32\_DeviceGuard properties
 <li><p><strong>1.</strong> If present, hypervisor support is available.</p></li>
 <li><p><strong>2.</strong> If present, Secure Boot is available.</p></li>
 <li><p><strong>3.</strong> If present, DMA protection is available.</p></li>
-</ul></td>
+<li><p><strong>4.</strong> If present, Secure Memory Overwrite is available.</p></li>
+<li><p><strong>5.</strong> If present, NX protections are available.</p></li>
+<li><p><strong>6.</strong> If present, SMM mitigations are available.</p></li>
+</ul>
+<p><strong>Note</strong>: 4, 5, and 6 were added as of Windows 10, version 1607.</p>
+</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>InstanceIdentifier</strong></td>
@@ -188,10 +207,15 @@ Table 1. Win32\_DeviceGuard properties
 <td align="left">This field describes the required security properties to enable virtualization-based security.</td>
 <td align="left"><ul>
 <li><p><strong>0.</strong> Nothing is required.</p></li>
-<li><p><strong>1.</strong> If present, Secure Boot is needed.</p></li>
-<li><p><strong>2.</strong> If present, DMA protection is needed.</p></li>
-<li><p><strong>3.</strong> If present, both Secure Boot and DMA protection are needed.</p></li>
-</ul></td>
+<li><p><strong>1.</strong> If present, hypervisor support is needed.</p></li>
+<li><p><strong>2.</strong> If present, Secure Boot is needed.</p></li>
+<li><p><strong>3.</strong> If present, DMA protection is needed.</p></li>
+<li><p><strong>4.</strong> If present, Secure Memory Overwrite is needed.</p></li>
+<li><p><strong>5.</strong> If present, NX protections are needed.</p></li>
+<li><p><strong>6.</strong> If present, SMM mitigations are needed.</p></li>
+</ul>
+<p><strong>Note</strong>: 4, 5, and 6 were added as of Windows 10, version 1607.</p>
+</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>SecurityServicesConfigured</strong></td>

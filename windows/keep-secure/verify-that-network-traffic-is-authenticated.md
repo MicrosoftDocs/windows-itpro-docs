@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 After you have configured your domain isolation rule to request, rather than require, authentication, you must confirm that the network traffic sent by the devices on the network is being protected by IPsec authentication as expected. If you switch your rules to require authentication before all of the devices have received and applied the correct GPOs, or if there are any errors in your rules, then communications on the network can fail. By first setting the rules to request authentication, any network connections that fail authentication can continue in clear text while you diagnose and troubleshoot.
 

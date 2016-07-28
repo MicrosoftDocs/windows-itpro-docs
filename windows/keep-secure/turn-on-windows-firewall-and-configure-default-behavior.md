@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 To enable Windows Firewall and configure its default behavior, use the Windows Firewall with Advanced Security node in the Group Policy Management console.
 

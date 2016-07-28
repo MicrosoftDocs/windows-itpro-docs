@@ -49,12 +49,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Enterprise or Windows 10 Education). Install all apps and services that the Start layout should display.
 
-    **Important**  
-    **Start layout** can only be applied to a device using the same architecture (32-bit or 64-bit) as the device on which **Start layout** was created.
-
-     
-
-2.  Create a new user account that you will use to customize the Start layout.
+   2.  Create a new user account that you will use to customize the Start layout.
 
 <a href="" id="bmk-customize-start"></a>
 **To customize Start**
@@ -91,6 +86,37 @@ When you have the Start layout that you want your users to see, use the [Export-
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet does not append the file name extension, and the policy settings require the extension.
+    
+    Example of a layout file produced by `Export-StartLayout`:
+
+    <span codelanguage="XML"></span>
+    <table>
+    <colgroup>
+    <col width="100%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">XML</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><pre><code>&lt;LayoutModificationTemplate Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
+      &lt;DefaultLayoutOverride&gt;
+        &lt;StartLayoutCollection&gt;
+          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot; xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;&gt;
+            &lt;start:Group Name=&quot;Life at a glance&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot;&gt;
+              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
+              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&quot; /&gt;
+              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
+            &lt;/start:Group&gt;        
+          &lt;/defaultlayout:StartLayout&gt;
+        &lt;/StartLayoutCollection&gt;
+      &lt;/DefaultLayoutOverride&gt;
+    &lt;/LayoutModificationTemplate&gt;</code></pre></td>
+    </tr>
+    </tbody>
+    </table>
 
 ## Configure a partial Start layout
 
@@ -123,9 +149,11 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 [Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
 
-[Customize Windows 10 Start with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 
-[Customize Windows 10 Start with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+
+[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
 [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
