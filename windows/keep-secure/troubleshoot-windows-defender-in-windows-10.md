@@ -1013,6 +1013,39 @@ Result code associated with threat status. Standard HRESULT values.</dt>
 Description of the error. </dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
+<p>NOTE:
+<p>Whenever Windows Defender, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services which the malware might have changed:<ul>
+<li>Default Internet Explorer or Edge setting</li>
+<li>User Access Control settings</li>
+<li>Chrome settings</li>
+<li>Boot Control Data</li>
+<li>Regedit and Task Manager registry settings</li>
+<li>Windows Update, Background Intelligent Transfer Service, and Remote Procedure Call service</li>
+<li>Windows Operating System files</li></ul>
+The above context applies to the following client and server versions:
+<table>
+<tr>
+<th>Operating system</th>
+<th>Operating system version</th>
+</tr>
+<tr>
+<td>
+<p>Client Operating System </p>
+</td>
+<td>
+<p>Windows Vista (Service Pack 1, or Service Pack 2), Windows 7 and later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Server Operating System</p>
+</td>
+<td>
+<p>Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2016</p>
+</td>
+</tr>
+</table>
+</p>
 </dl>
 </td>
 </tr>
@@ -2662,6 +2695,7 @@ Description of the error. </dt>
 </td>
 </tr>
 </table>
+
 ## Windows Defender client error codes
 If Windows Defender experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
 This section provides the following information about Windows Defender client errors.
