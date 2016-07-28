@@ -80,7 +80,7 @@ The final step to making your VPN configuration work with WIP, is to link your t
 
 3.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
-    ![Microsoft Intune: Fill in the required Name and optional Description for your policy](images/intune-vpn-edpmodeid.png)
+    ![Microsoft Intune: Fill in the required Name and optional Description for your policy](images/intune-vpn-wipmodeid.png)
 
 4.  In the **OMA-URI Settings** area, click **Add** to add your **WIPModeID** info.
 
