@@ -34,9 +34,9 @@ First, review these tasks that you’ll need to do to deploy UE-V:
 
     Review this topic to determine whether you want UE-V to support the synchronization of settings for custom applications (third-party or line-of-business), which requires these UE-V features:
 
-    -   [Install the UE-V template generator](uev-deploy-uev-for-custom-applications.md#uevgen) so you can create, edit, and validate the custom settings location templates required to synchronize custom application settings
+    -   [Install the UE-V template generator](uev-deploy-uev-for-custom-applications.md#install-the-uev-template-generator) so you can create, edit, and validate the custom settings location templates required to synchronize custom application settings
 
-    -   [Create custom settings location templates](uev-deploy-uev-for-custom-applications.md#createcustomtemplates) by using the UE-V generator
+    -   [Create custom settings location templates](uev-deploy-uev-for-custom-applications.md#createcustomtemplates) by using the UE-V template generator
 
     -   [Deploy a UE-V settings template catalog](uev-deploy-uev-for-custom-applications.md#deploycatalogue) to store your custom settings location templates
 
@@ -52,7 +52,7 @@ The workflow diagram below illustrates a typical UE-V deployment and the decisio
 
 -   [Decide whether to synchronize settings for custom applications](#decide-whether-to-synchronize-settings-for-custom-applications)
 
-    If you want to synchronize settings for custom applications, you’ll need to install the UE-V generator during deployment. Use the generator to create custom settings location templates, which involves the following tasks:
+    If you want to synchronize settings for custom applications, you’ll need to install the UE-V template generator during deployment. Use the generator to create custom settings location templates, which involves the following tasks:
 
     -   Review the [settings that are synchronized automatically in a UE-V deployment](#settings-automatically-synchronized-in-a-ue-v-deployment).
 
@@ -423,11 +423,11 @@ If you do not enable VDI mode for non-persistent VDI sessions, certain features 
 
 The VDI template is provided with UE-V and is typically available here after installation: C:\\Program Files\\Microsoft User Experience Virtualization\\Templates\\VdiState.xml
 
-### Prerequisites for UE-V generator support
+### Prerequisites for UE-V template generator support
 
-Install the UE-V generator on the computer that is used to create custom settings location templates. This computer should be able to run the applications whose settings are synchronized. You must be a member of the Administrators group on the computer that runs the UE-V generator software.
+Install the UE-V template generator on the computer that is used to create custom settings location templates. This computer should be able to run the applications whose settings are synchronized. You must be a member of the Administrators group on the computer that runs the UE-V template generator software.
 
-The UE-V generator must be installed on a computer that uses an NTFS file system. The UE-V generator software requires .NET Framework 4. For more information, see [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md).
+The UE-V template generator must be installed on a computer that uses an NTFS file system. The UE-V template generator software requires .NET Framework 4. For more information, see [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md).
 
 ## Other resources for this product
 

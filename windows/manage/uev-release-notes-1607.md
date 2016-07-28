@@ -14,7 +14,7 @@ Applies to: Windows 10, version 1607
 
 This topic includes information required to successfully install and use UE-V that is not included in the User Experience Virtualization (UE-V) documentation. If there are differences between the information in this topic and other UE-V topics, the latest change should be considered authoritative.
 
-### Upgrading from UE-V 1.0 to the Windows 10, version 1607 in-box version of UE-V is blocked
+### Upgrading from UE-V 1.0 to the in-box version of UE-V is blocked
 
 Version 1.0 of UE-V includes client-side caching technology used to pin the UE-V sync folder, however, this technology was removed in UE-V 2.x. As a result, UE-V 1.0 users are blocked from upgrading to UE-V for Windows 10, version 1607.
 
@@ -25,19 +25,6 @@ WORKAROUND: Unpin the UE-V 1.0 client-side caching sync folder and then upgrade 
 When a user generates a valid settings location template for the Skype desktop application, registers it, and then launches the Skype desktop application, Skype crashes. An ACCESS\_VIOLATION is recorded in the Application Event Log.
 
 WORKAROUND: Remove or unregister the Skype template to allow Skype to work again.
-
-### Existing scripts for silent installations of UE-V may fail
-
-Two changes made to the UE-V installer can cause silent installation scripts that worked for previous versions of UE-V to fail when installing UE-V 2.1 SP1. The first is a new requirement that users must accept the license terms and agree to or decline participation in the Customer Experience Improvement Program (CEIP), even during a silent installation. Using the /q parameter is no longer sufficient to indicate acceptance of the license terms and agreement to participate in CEIP.
-
-Second, the installer now forces a computer restart after installing the UE-V Agent. This can cause an install script to fail if it is not expecting the restart (for example, it installs the UE-V Agent first and then immediately installs the generator).
-
-WORKAROUND: The UE-V installer (.msi) has two new command-line parameters that support silent installations.
-
-| Parameter     | Description  |
-|---------------|--------------|
-| /ACCEPTLICENSETERMS=True | Set this parameter to **True** to install UE-V silently. Adding this parameter implies that the user accepts the UE-V license terms, which are found (by default) here: %ProgramFiles%\\Microsoft User Experience Virtualization\\Agent |
-| /NORESTART               | This parameter prevents the mandatory restart after the UE-V agent is installed. A return code of 3010 indicates that a restart is required prior to using UE-V.  |
 
 ### Registry settings do not synchronize between App-V and native applications on the same computer
 
@@ -51,9 +38,9 @@ When a user has both Office 2010 and Office 2013 installed, any common settings 
 
 WORKAROUND: Install only one version of Office or limit which settings are synchronized by UE-V.
 
-### Uninstall and re-install of Windows 8 app reverts settings to initial state
+### Uninstall and re-install of Windows 8 applications reverts settings to initial state
 
-While using UE-V settings synchronization for a Windows 8 app, if the user uninstalls the app and then reinstalls the app, the app’s settings revert to their default values. This happens because the uninstall removes the local (cached) copy of the app’s settings but does not remove the local UE-V settings package. When the app is reinstalled and launched, UE-V gather the app settings that were reset to the app defaults and then uploads the default settings to the central storage location. Other computers running the app then download the default settings. This behavior is identical to the behavior of desktop applications.
+While using UE-V settings synchronization for a Windows 8 application, if the user uninstalls the application and then reinstalls the application, the application’s settings revert to their default values. This happens because the uninstall removes the local (cached) copy of the application’s settings but does not remove the local UE-V settings package. When the application is reinstalled and launched, UE-V gather the application settings that were reset to the application defaults and then uploads the default settings to the central storage location. Other computers running the application then download the default settings. This behavior is identical to the behavior of desktop applications.
 
 WORKAROUND: None.
 
@@ -65,7 +52,7 @@ WORKAROUND: None
 
 ### MSI’s are not localized
 
-UE-V includes a localized setup program for both the UE-V Agent and UE-V generator. These MSI files are still available but the user interface is minimized and the MSI’s only display in English. Despite the file being in English, the setup program installs all supported languages during the installation.
+UE-V includes a localized setup program for both the UE-V Agent and UE-V template generator. These MSI files are still available but the user interface is minimized and the MSI’s only display in English. Despite the file being in English, the setup program installs all supported languages during the installation.
 
 WORKAROUND: None
 
@@ -96,12 +83,6 @@ WORKAROUND: None.
 Operating system settings for Narrator and currency characters specific to the locale (i.e. language and regional settings) will only roam across like operating system versions of Windows. For example, currency characters will not roam between Windows 7 and Windows 8.
 
 WORKAROUND: None
-
-### UE-V 1 agent generates errors when running UE-V 2 templates
-
-If a UE-V 2 settings location template is distributed to a computer installed with a UE-V 1 agent, some settings fail to synchronize between computers and the agent reports errors in the event log.
-
-WORKAROUND: When migrating from UE-V 1 to UE-V 2 and it is likely you’ll have computers running the previous version of the agent, create a separate UE-V 2.x catalog to support the UE-V 2.x Agent and templates.
 
 ## Hotfixes and Knowledge Base articles for UE-V 2.1 SP1
 

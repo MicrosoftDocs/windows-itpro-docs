@@ -21,12 +21,12 @@ In the course of the UE-V lifecycle, you have to manage the configuration of the
 
 [Manage Configurations for UE-V](uev-manage-configurations.md)
 
-## Working with custom UE-V templates and the UE-V Generator
+## Working with custom UE-V templates and the UE-V template generator
 
 
-This topic provides instructions for how to use the UE-V Generator and manage custom settings location templates.
+This topic provides instructions for how to use the UE-V template generator and manage custom settings location templates.
 
-[Working with Custom UE-V Templates and the UE-V Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
+[Working with Custom UE-V Templates and the UE-V Template Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
 
 ## Backup and restore application and Windows settings that are synchronized with UE-V
 

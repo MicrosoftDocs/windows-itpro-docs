@@ -34,15 +34,14 @@ The standard installation of UE-V synchronizes the default Microsoft Windows and
 Before you proceed, ensure that your environment meets the following requirements for running UE-V.
 
 | **Operating system**   | **Edition**  | **Service pack** | **System architecture** | **Windows PowerShell**           | **Microsoft .NET Framework** |
-|-------------------------|-------------|------------------|-------------------------|---------------------------------|------------------------------|
-| Windows 10, version 1607 | ???           | NA               | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | ????        |
+|-------------------------|-------------|------------------|-------------------------|----------------------------------|------------------------------|
+| Windows 10, version 1607 | Windows 10 Enterprise         | NA                                 | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
 | Windows 7                | Ultimate, Enterprise, or Professional Edition   | SP1              | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
 | Windows Server 2008 R2   | Standard, Enterprise, Datacenter, or Web Server | SP1              | 64-bit | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
 | Windows 8 and Windows 8.1 | Enterprise or Pro              | None                             | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4.5  |
 | Windows Server 2012 or Windows Server 2012 R2 | Standard or Datacenter         | None         | 64-bit | Windows PowerShell 3.0 or higher | .NET Framework 4.5 |
 
 ## Step 2: Deploy the settings storage location
-
 
 You’ll need to deploy a settings storage location, a standard network share where user settings are stored in a settings package file. When you create the settings storage share, you should limit access to users that require it. [Deploy a settings storage location](https://technet.microsoft.com/library/dn458891.aspx#ssl) provides more detailed information.
 
@@ -120,7 +119,7 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
     2.  Change the default fonts.
 
-    3.  Open Calculator and set it to **scientific**.
+    3.  Open Notepad and set format -&gt; word wrap **on**.
 
     4.  Change the behavior of any Windows app, as detailed in [Managing UE-V settings location templates using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
 
@@ -130,7 +129,7 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
 3.  Log in to the second device (Computer B) as the same user as Computer A.
 
-4.  Open Windows Desktop and verify that the taskbar location matches that of Computer A. Verify that the default fonts match and that Calculator is set to **scientific**. Also verify the change you made to any Windows app.
+4.  Open Windows Desktop and verify that the taskbar location matches that of Computer A. Verify that the default fonts match and that Notepad is set to **word wrap on**. Also verify the change you made to any Windows app.
 
 You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
 
