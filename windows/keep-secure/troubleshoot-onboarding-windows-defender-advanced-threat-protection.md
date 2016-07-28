@@ -18,9 +18,105 @@ author: mjcaparas
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
-This page provides detailed steps for troubleshooting endpoints that aren't reporting correctly, and common error codes encountered during onboarding.
+This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the endpoints.
 
 If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an endpoint onboarding or connectivity problem.
+
+## Troubleshoot onboarding when deploying with Group Policy
+Deployment with Group Policy is done by running the onboarding script on the endpoints.  The Group Policy console does not indication if the deployment has succeeded or not.
+
+If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
+
+If the script completes successfully, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
+
+## Troubleshoot onboarding issues using System Center Configuration Manager
+When onboarding endpoints using the following versions of System Center Configuration Manager:
+- System Center 2012 Configuration Manager
+- System Center 2012 R2 Configuration Manager
+- System Center Configuration Manager (current branch) version 1511
+- System Center Configuration Manager (current branch) version 1602
+
+
+Deployment with the mentioned versions of System Center Configuration Manager is done by running the onboarding script on the endpoints. You can track the deployment in the Configuration Manager Console.
+
+If the deployment fails, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
+
+If the onboarding completed successfully but the endpoints are not showing up in the Machines view after an hour, see see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
+
+## Troubleshoot onboarding when deploying with a script on the endpoint
+
+**Check the result of the script on the endpoint**:
+1. Click **Start**, type **Event Viewer**, and press **Enter**.
+
+2. Go to **Windows Logs** > **Application**.
+
+3. Look for an event from **WDATPOnboarding** event source.
+
+If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
+> [!NOTE]
+> The following event IDs are specific to the onboarding script only.
+
+Event ID | Error Type | Resolution steps
+:---|:---|:---
+5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```
+10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```. Verify that the script was ran as an administrator.
+15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights).
+15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender ELAM driver, see [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled) for instructions.
+30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+65 | Insufficient privileges| Run the script again with administrator privileges.
+
+## Troubleshoot onboarding issues using Microsoft Intune
+You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
+
+Use the following tables to understand the possible causes of issues while onboarding:
+
+- Microsoft Intune error codes and OMA-URIs table
+- Known issues with non-compliance table
+- Mobile Device Management (MDM) event logs table
+
+If none of the event logs and troubleshooting steps work, download the Local script from the **Endpoint Management** section of the portal, and run it in an elevated command prompt.  
+
+**Microsoft Intune error codes and OMA-URIs**:
+
+Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
+:---|:---|:---|:---|:---
+0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding |  **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [Ensure the endpoint is onboarded successfully](#ensure-the-endpoint-is-onboarded-successfully) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+ | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```. <br> <br> If it doesn't exist, open an elevated command and add the key.
+  | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+   | | | All | **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported.
+   0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional.
+
+<br>
+**Known issues with non-compliance**
+
+The following table provides information on issues with non-compliance and how you can address the issues.
+
+Case | Symptoms | Possible cause and troubleshooting steps
+:---|:---|:---
+1 | Machine is compliant by SenseIsRunning OMA-URI. But is non-compliant by OrgId, Onboarding and OnboardingState OMA-URIs. | **Possible cause:** Check that user passed OOBE after Windows installation or upgrade. During OOBE onboarding couldn't be completed but SENSE is running already. <br><br> **Troubleshooting steps:** Wait for OOBE to complete.
+2 |  Machine is compliant by OrgId, Onboarding, and OnboardingState OMA-URIs, but is non-compliant by SenseIsRunning OMA-URI. |  **Possible cause:** Sense service's startup type is set as "Delayed Start". Sometimes this causes the Microsoft Intune server to report the machine as non-compliant by SenseIsRunning when DM session occurs on system start. <br><br> **Troubleshooting steps:** The issue should automatically be fixed within 24 hours.
+3 | Machine is non-compliant | **Troubleshooting steps:** Ensure that Onboarding and Offboarding policies are not deployed on the same machine at same time.
+
+<br>
+**Mobile Device Management (MDM) event logs**
+
+View the MDM event logs to troubleshoot issues that might arise during onboarding:
+
+Log name: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Provider
+
+Channel name: Admin
+
+ID | Severity | Event description | Troubleshooting steps
+:---|:---|:---|:---
+1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ELAM driver needs to be enabled see, [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled) for instructions.
+
+## Troubleshoot onboarding issues on the endpoint
+
+
+
+
 
 Go through the following verification topics to address this issue:
 
@@ -413,84 +509,8 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.  
 
-## Troubleshoot onboarding issues using the local script
-If you configured your endpoints with a deployment tool that required a script, you can check the event viewer for the onboarding script results.
 
-**Check the result of the script**:
-1. Click **Start**, type **Event Viewer**, and press **Enter**.
 
-2. Go to **Windows Logs** > **Application**.
-
-3. Look for an event from **WDATPOnboarding** event source.
-
-If the script fails and the event is an error, you can check the event ID in the following table to help you troubleshoot the issue.
-> [!NOTE]
-> The following event IDs are specific to the onboarding script only.
-
-Event ID | Error Type | Resolution steps
-:---|:---|:---
-5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```
-10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```. Verify that the script was ran as an administrator.
-15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights).
-15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender ELAM driver, see [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled) for instructions.
-30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location ```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```. The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-65 | Insufficient privileges| Run the script again with administrator privileges.
-
-## Troubleshoot onboarding issues using Microsoft Intune
-You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
-
-Use the following tables to understand the possible causes of issues while onboarding:
-
-- Microsoft Intune error codes and OMA-URIs table
-- Known issues with non-compliance table
-- Mobile Device Management (MDM) event logs table
-
-If none of the event logs and troubleshooting steps work, download the Local script from the **Endpoint Management** section of the portal, and run it in an elevated command prompt.  
-
-**Microsoft Intune error codes and OMA-URIs**:
-
-Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
-:---|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding |  **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [Ensure the endpoint is onboarded successfully](#ensure-the-endpoint-is-onboarded-successfully) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
- | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```. <br> <br> If it doesn't exist, open an elevated command and add the key.
-  | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
-   | | | All | **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported.
-   0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional.
-
-<br>
-**Known issues with non-compliance**
-
-The following table provides information on issues with non-compliance and how you can address the issues.
-
-Case | Symptoms | Possible cause and troubleshooting steps
-:---|:---|:---
-1 | Machine is compliant by SenseIsRunning OMA-URI. But is non-compliant by OrgId, Onboarding and OnboardingState OMA-URIs. | **Possible cause:** Check that user passed OOBE after Windows installation or upgrade. During OOBE onboarding couldn't be completed but SENSE is running already. <br><br> **Troubleshooting steps:** Wait for OOBE to complete.
-2 |  Machine is compliant by OrgId, Onboarding, and OnboardingState OMA-URIs, but is non-compliant by SenseIsRunning OMA-URI. |  **Possible cause:** Sense service's startup type is set as "Delayed Start". Sometimes this causes the Microsoft Intune server to report the machine as non-compliant by SenseIsRunning when DM session occurs on system start. <br><br> **Troubleshooting steps:** The issue should automatically be fixed within 24 hours.
-3 | Machine is non-compliant | **Troubleshooting steps:** Ensure that Onboarding and Offboarding policies are not deployed on the same machine at same time.
-
-<br>
-**Mobile Device Management (MDM) event logs**
-
-View the MDM event logs to troubleshoot issues that might arise during onboarding:
-
-Log name: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Provider
-
-Channel name: Admin
-
-ID | Severity | Event description | Troubleshooting steps
-:---|:---|:---|:---
-1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Windows Defender ELAM driver needs to be enabled see, [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled) for instructions.
-
-## Troubleshoot onboarding issues using System Center Configuration Manager
-When onboarding endpoints using the following versions of System Center Configuration Manager:
-- System Center 2012 Configuration Manager
-- System Center 2012 R2 Configuration Manager
-- System Center Configuration Manager (current branch) version 1511
-- System Center Configuration Manager (current branch) version 1602
-
-The onboarding is performed by running the onboarding script. For more information on issues that may occur with the script see [Troubleshoot onboarding issues using the script](#troubleshoot-onboarding-issues-using-the-script).
 
 
 
