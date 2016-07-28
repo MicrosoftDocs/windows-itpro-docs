@@ -20,6 +20,9 @@ In Windows 10, Version 1607, your network users can use Windows Phone with Windo
 
 ![Sign in to a device](images/phone-signin-menu.png)
 
+> [!NOTE]
+> Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+
 You can create a Group Policy or mobile device management (MDM) policy that will allow users to sign in to a work PC or their company's VPN using the credentials stored on their Windows 10 phone.
 
  ## Prerequisites

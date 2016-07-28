@@ -54,6 +54,9 @@ If your policy allows it, people can use biometrics (fingerprint, iris, and faci
 
 If your enterprise enables phone sign-in, users can pair a phone running Windows 10 Mobile to a PC running Windows 10 and then use an app on the phone to sign in to the PC using their Windows Hello credentials.
 
+> [!NOTE]
+> Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+
  
 **Prerequisites:**
    
