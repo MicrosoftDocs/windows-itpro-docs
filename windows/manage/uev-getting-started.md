@@ -133,7 +133,7 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
 You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
 
-Other resources for this product
+Other resources for this feature
 --------------------------------
 
 -   [User Experience Virtualization](uev-for-windows.md)

@@ -62,10 +62,10 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 
 8.  Click **Save** to publish the article to the TechNet Wiki.
 
-## Other resources for this product
+## Other resources for this feature
 
 
--   [Microsoft User Experience Virtualization (UE-V) 2.x](index.md)
+-   [User Experience Virtualization for Windows 10, version 1607](uev-for-windows.md)
 
 -   [Get Started with UE-V](uev-getting-started.md)
 

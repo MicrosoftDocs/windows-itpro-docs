@@ -41,10 +41,10 @@ This technical reference section includes additional technical documentation abo
 
     Provides a brief overview of accounts, groups, and other security-related considerations for UE-V.
 
-## Other resources for this product
+## Other resources for this feature
 
 
--   [Microsoft User Experience Virtualization (UE-V) 2.x](index.md)
+-   [User Experience Virtualization for Windows 10, version 1607](uev-for-windows.md)
 
 -   [Get Started with UE-V](uev-getting-started.md)
 
