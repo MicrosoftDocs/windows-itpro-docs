@@ -49,20 +49,20 @@ You can use System Center Configuration Manager’s existing functionality to cr
     a. Choose a predefined device collection to deploy the package to.
 
 ### Configure sample collection settings
+For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
+
 You can set a compliance rule for configuration item in System Center Configuration Manager to change the sample share setting on an endpoint.
 This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted machines to make sure they’re complaint.
-
-For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
 
 The configuration is set through the following registry key entry:
 
 ```
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
-Name: "SampleSharing"
+Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 Where:<br>
-Name type is a D-WORD. <br>
+Key type is a D-WORD. <br>
 Possible values are:
 - 0 - doesn't allow sample sharing  from this endpoint
 - 1 - allows sharing of all file types from this endpoint

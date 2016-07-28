@@ -38,15 +38,15 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 For for information on how you can manually validate that the endpoint is compliant and correctly reports telemetry see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 ## Configure sample collection settings
-You can manually configure the sample sharing setting on the endpoint by using *regedit* or creating and running a *.reg* file.  
-
 For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
+
+You can manually configure the sample sharing setting on the endpoint by using *regedit* or creating and running a *.reg* file.  
 
 The configuration is set through the following registry key entry:
 
 ```
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
-Name: "SampleSharing"
+Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 Where:<br>

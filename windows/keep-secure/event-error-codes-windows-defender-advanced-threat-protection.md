@@ -68,14 +68,14 @@ For example, if endpoints are not appearing in the **Machines view** list, you m
 <tr>
 <td>4</td>
 <td>Windows Defender Advanced Threat Protection service contacted the server at ```variable```.</td>
-<td>variable = URL of the Windows Defender ATP processing servers.<br>
+<td>Variable = URL of the Windows Defender ATP processing servers.<br>
 This URL will match that seen in the Firewall or network activity.</td>
 <td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Windows Defender Advanced Threat Protection service failed to connect to the server at ```variable```.</td>
-<td>variable = URL of the Windows Defender ATP processing servers.<br>
+<td>Variable = URL of the Windows Defender ATP processing servers.<br>
 The service could not contact the external processing servers at that URL.</td>
 <td>Check the connection to the URL. See [Configure proxy and Internet connectivity](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#configure-proxy-and-Internet-connectivity).</td>
 </tr>
@@ -138,7 +138,7 @@ It may take several hours for the endpoint to appear in the portal.</td>
 <tr>
 <td>15</td>
 <td>Windows Defender Advanced Threat Protection cannot start command channel with URL: ```variable```.</td>
-<td>variable = URL of the Windows Defender ATP processing servers.<br>
+<td>Variable = URL of the Windows Defender ATP processing servers.<br>
 The service could not contact the external processing servers at that URL.</td>
 <td>Check the connection to the URL. See [Configure proxy and Internet connectivity](#configure-proxy-and-Internet-connectivity).</td>
 </tr>
@@ -246,44 +246,38 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 <tr>
 <td>36</td>
 <td>Windows Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration succeeded. Completion code: ```variable```.</td>
-<td>
-</td>
-<td></td>
+<td>Registering Windows Defender Advanced Threat Protection with the Connected User Experiences and Telemetry service completed successfully.</td>
+<td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
 <td>37</td>
 <td>Windows Defender Advanced Threat Protection A module is about to exceed its quota. Module: %1, Quota: {%2} {%3}, Percentage of quota utilization: %4.</td>
-<td>
-</td>
-<td></td>
+<td>The machine has almost used its allocated quota of the current 24-hour window. It’s about to be throttled.</td>
+<td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
 <td>38</td>
 <td>Network connection is identified as low. Windows Defender Advanced Threat Protection will contact the server every %1 minutes. Metered connection: %2, internet available: %3, free network available: %4.</td>
-<td>
-</td>
-<td></td>
+<td>The machine is using a metered/paid network and will be contacting the server less frequently.</td>
+<td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
 <td>39</td>
 <td>Network connection is identified as normal. Windows Defender Advanced Threat Protection will contact the server every %1 minutes. Metered connection: %2, internet available: %3, free network available: %4.</td>
-<td>
-</td>
-<td></td>
+<td>The machine is not using a metered/paid connection and will contact the server as usual.</td>
+<td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
 <td>40</td>
 <td>Battery state is identified as low. Windows Defender Advanced Threat Protection will contact the server every %1 minutes. Battery state: %2.</td>
-<td>
-</td>
-<td></td>
+<td>The machine has low battery level and will contact the server less frequently.</td>
+<td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
 <td>41</td>
 <td>Battery state is identified as normal. Windows Defender Advanced Threat Protection will contact the server every %1 minutes. Battery state: %2.</td>
-<td>
-</td>
-<td></td>
+<td>The machine doesn’t have low battery level and will contact the server as usual.</td>
+<td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
 <td>42</td>
@@ -306,14 +300,14 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 <tr>
 <td>45</td>
 <td>Failed to register and to start the event trace session [%1]. Error code: %2</td>
-<td>An error occurred on service startup while creating ETW session. This cause service start-up failure.</td>
+<td>An error occurred on service startup while creating ETW session. This caused service start-up failure.</td>
 <td>If this error persists, contact Support.</td>
 </tr>
 <tr>
 <td>46</td>
 <td>Failed to register and start the event trace session [%1] due to lack of resources. Error code: %2. This is most likely because there are too many active event trace sessions. The service will retry in 1 minute.</td>
-<td>An error occurred on service startup while creating ETW session due to lack of resources. The service started and running but doesn’t report any sensors event until the ETW session is started.</td>
-<td>No action required. the service will try to start the session every minutes.</td>
+<td>An error occurred on service startup while creating ETW session due to lack of resources. The service started and is running, but will not report any sensor event until the ETW session is started.</td>
+<td>No action required. The service will try to start the session every minute.</td>
 </tr>
 <tr>
 <td>47</td>
