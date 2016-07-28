@@ -35,11 +35,9 @@ Before you proceed, ensure that your environment meets the following requirement
 
 | **Operating system**   | **Edition**  | **Service pack** | **System architecture** | **Windows PowerShell**           | **Microsoft .NET Framework** |
 |-------------------------|-------------|------------------|-------------------------|----------------------------------|------------------------------|
-| Windows 10, version 1607 | Windows 10 Enterprise         | NA                                 | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
-| Windows 7                | Ultimate, Enterprise, or Professional Edition   | SP1              | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
-| Windows Server 2008 R2   | Standard, Enterprise, Datacenter, or Web Server | SP1              | 64-bit | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
-| Windows 8 and Windows 8.1 | Enterprise or Pro              | None                             | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4.5  |
-| Windows Server 2012 or Windows Server 2012 R2 | Standard or Datacenter         | None         | 64-bit | Windows PowerShell 3.0 or higher | .NET Framework 4.5 |
+| Windows 10, version 1607 | Windows 10 Enterprise         | NA                      | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
+| Windows 8 and Windows 8.1 | Enterprise or Pro              | None                  | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4.5  |
+| Windows Server 2012 or Windows Server 2012 R2 | Standard or Datacenter    | None   | 64-bit                  | Windows PowerShell 3.0 or higher | .NET Framework 4.5 |
 
 ## Step 2: Deploy the settings storage location
 
