@@ -72,7 +72,7 @@ The following table explains the trigger events for classic applications and Win
 <td align="left"><p>Store any application settings changes to settings storage location</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Sync Controller Scheduled Task or “Sync Now” is run from the Company Settings Center</strong></p>
+<td align="left"><p><strong>Sync Controller Scheduled Task</strong></p>
 <p></p></td>
 <td align="left"><p>Application and Windows settings are synchronized between the settings storage location and the local cache.</p>
 <div class="alert">

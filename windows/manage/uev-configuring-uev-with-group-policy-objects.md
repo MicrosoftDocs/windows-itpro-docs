@@ -36,18 +36,6 @@ The following policy settings can be configured for UE-V.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Contact IT Link Text</p></td>
-<td align="left"><p>Computers Only</p></td>
-<td align="left"><p>This Group Policy setting specifies the text of the Contact IT URL hyperlink in the Company Settings Center.</p></td>
-<td align="left"><p>If you enable this Group Policy setting, the Company Settings Center displays the specified text in the link to the Contact IT URL.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Contact IT URL</p></td>
-<td align="left"><p>Computers Only</p></td>
-<td align="left"><p>This Group Policy setting specifies the URL for the Contact IT link in the Company Settings Center.</p></td>
-<td align="left"><p>If you enable this setting, the Company Settings Center Contact IT text links to the specified URL. The link can be of any standard protocol, such as HTTP or mailto.</p></td>
-</tr>
-<tr class="odd">
 <td align="left"><p>Do not use the sync provider</p></td>
 <td align="left"><p>Computers and Users</p></td>
 <td align="left"><p>By using this Group Policy setting, you can configure whether UE-V uses the sync provider feature. This policy setting also lets you enable notification to appear when the import of user settings is delayed.</p></td>

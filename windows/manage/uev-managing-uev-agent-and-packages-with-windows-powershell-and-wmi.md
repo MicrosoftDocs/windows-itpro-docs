@@ -64,14 +64,6 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <td align="left"><p>Gets the details for each configuration setting. Displays where the setting is configured or if it uses the default value. Is displayed if the current setting is valid.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Set-UevConfiguration -Computer –ContactITDescription &lt;IT description&gt;</code></p></td>
-    <td align="left"><p>Sets the text that is displayed in the Company Settings Center for the help link.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><code>Set-UevConfiguration -Computer -ContactITUrl &lt;string&gt;</code></p></td>
-    <td align="left"><p>Sets the URL of the link in the Company Settings Center for the help link. Any URL protocol can be used.</p></td>
-    </tr>
-    <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration -Computer –EnableDontSyncWindows8AppSettings</code></p></td>
     <td align="left"><p>Configures the UE-V service to not synchronize any Windows apps for all users on the computer.</p></td>
     </tr>

@@ -192,9 +192,6 @@ To display a list of Windows apps that can synchronize settings on a computer wi
 
 **Definitions of Get-UevAppxPackage properties**
 
-<a href="" id="displayname"></a>**DisplayName**  
-The name that is displayed to the user in the Company Settings Center application. The `DisplayName` property is derived from the `PackageFamilyName` property.
-
 <a href="" id="packagefamilyname"></a>**PackageFamilyName**  
 The name of the package that is installed for the current user.
 
@@ -223,9 +220,6 @@ To get the computer-configured list of Windows apps, at the Windows PowerShell c
 For either parameter, CurrentComputerUser or Computer, the cmdlet returns a list of the Windows apps that are configured at the user or at the computer level.
 
 **Definitions of properties**
-
-<a href="" id="displayname"></a>**DisplayName**  
-The name that is displayed to the user in the Company Settings Center application. The `DisplayName` property is derived from the `PackageFamilyName` property.
 
 <a href="" id="packagefamilyname"></a>**PackageFamilyName**  
 The name of the package that is installed for the current user.

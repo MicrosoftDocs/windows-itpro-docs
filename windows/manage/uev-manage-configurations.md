@@ -12,7 +12,7 @@ ms.prod: w10
 # Manage Configurations for UE-V
 
 
-In the course of the User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V service and also manage storage locations for resources such as settings package files. You might have to perform other tasks, for example, configuring the Company Settings Center to define how users interact with UE-V. The following topics provide guidance for managing these UE-V resources.
+In the course of the User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V service and also manage storage locations for resources such as settings package files. The following topics provide guidance for managing these UE-V resources.
 
 ## Configuring UE-V by using Group Policy Objects
 
@@ -53,10 +53,6 @@ Here are some examples of UE-V configuration settings:
 -   **Don’t Sync Windows App Settings:** Specifies that UE-V should not synchronize Windows apps.
 
 -   **Enable/Disable First Use Notification:** Specifies whether UE-V displays a dialog box the first time that the UE-V service runs on a user’s computer.
-
--   **Enable/Disable Tray Icon:** Specifies whether UE-V displays an icon in the notification area and any notifications associated with it. The icon provides a link to the Company Settings Center.
-
--   **Custom Contact IT Hyperlink:** Defines the path, text, and description for the **Contact IT** hyperlink in the Company Settings Center.
 
 ## Have a suggestion for UE-V?
 
