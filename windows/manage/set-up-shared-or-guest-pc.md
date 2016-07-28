@@ -15,7 +15,7 @@ author: jdeckerMS
 
 -   Windows 10
 
-Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise.
+Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Pro Education, Education, and Enterprise.
 
 > **Note:** If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
 
@@ -245,8 +245,8 @@ Shared PC mode sets local group policies to configure the device. Some of these 
 <tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong></p></td></tr> 
 <tr> <td> <p>Turn off the advertising ID</p></td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
 <tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components </strong></p></td></tr> 
-<tr> <td> <p>Do not show Windows Tips </p>*Only on Pro, Enterprise, and Education* </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
-<tr> <td> <p>Turn off Microsoft consumer experiences </p>*Only on Pro, Enterprise, and Education* </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
+<tr> <td> <p>Do not show Windows Tips </p>*Only on Pro, Enterprise, Pro Education, and Education* </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
+<tr> <td> <p>Turn off Microsoft consumer experiences </p>*Only on Pro, Enterprise, Pro Education, and Education* </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
 <tr> <td> <p>Microsoft Passport for Work</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Prevent the usage of OneDrive for file storage</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong></p></td></tr> 
