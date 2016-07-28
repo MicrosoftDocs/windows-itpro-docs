@@ -65,7 +65,7 @@ WORKAROUND: None
 
 ### MSI’s are not localized
 
-UE-V includes a localized setup program for both the UE-V Agent and UE-V generator. These MSI files are still available but the user interface is minimized and the MSI’s only display in English. Despite the file being in English, the setup program installs all supported languages during the installation.
+UE-V includes a localized setup program for both the UE-V Agent and UE-V template generator. These MSI files are still available but the user interface is minimized and the MSI’s only display in English. Despite the file being in English, the setup program installs all supported languages during the installation.
 
 WORKAROUND: None
 

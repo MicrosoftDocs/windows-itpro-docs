@@ -12,7 +12,7 @@ ms.prod: w10
 # Application Template Schema Reference for UE-V
 
 
-Microsoft User Experience Virtualization (UE-V) uses XML settings location templates to define the desktop application settings and Windows settings that are captured and applied by UE-V. UE-V includes a set of default settings location templates. You can also create custom settings location templates with the UE-V Generator.
+Microsoft User Experience Virtualization (UE-V) uses XML settings location templates to define the desktop application settings and Windows settings that are captured and applied by UE-V. UE-V includes a set of default settings location templates. You can also create custom settings location templates with the UE-V template generator.
 
 An advanced user can customize the XML file for a settings location template. This topic details the XML structure of the UE-V settings location templates and provides guidance for editing these files.
 
@@ -53,7 +53,7 @@ This section details the XML structure of the UE-V settings location template an
 
 **Type: String**
 
-The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version="1.0"&gt;). Settings location templates created by the UE-V Generator are saved in UTF-8 encoding, although the encoding is not explicitly specified. We recommend that you include the encoding="UTF-8" attribute in this element as a best practice. All templates included with the product specify this tag as well (see the documents in %ProgramFiles%\\Microsoft User Experience Virtualization\\Templates for reference). For example:
+The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version="1.0"&gt;). Settings location templates created by the UE-V template generator are saved in UTF-8 encoding, although the encoding is not explicitly specified. We recommend that you include the encoding="UTF-8" attribute in this element as a best practice. All templates included with the product specify this tag as well (see the documents in %ProgramFiles%\\Microsoft User Experience Virtualization\\Templates for reference). For example:
 
 `<?xml version="1.0" encoding="UTF-8"?>`
 
@@ -208,7 +208,7 @@ Name specifies a unique name for the settings location template. This is used fo
 **Note**  
 UE-V does not reference external DTDs, so it is not possible to use named entities in a settings location template. For example, do not use &reg; to refer to the registered trade mark sign ®. Instead, use canonical numbered references to include these types of special characters, for example, &\#174 for the ® character. This rule applies to all string values in this document.
 
-See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V Generator converts character entities to their Unicode representations automatically.
+See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V template generator converts character entities to their Unicode representations automatically.
 
  
 
@@ -230,7 +230,7 @@ ID populates a unique identifier for a particular template. This tag becomes the
 
 **Maximum Value: 2147483647**
 
-Version identifies the version of the settings location template for administrative tracking of changes. The UE-V Generator automatically increments this number by one each time the template is saved. Notice that this field must be a whole number integer; fractional values, such as `<Version>2.5</Version>` are not allowed.
+Version identifies the version of the settings location template for administrative tracking of changes. The UE-V template generator automatically increments this number by one each time the template is saved. Notice that this field must be a whole number integer; fractional values, such as `<Version>2.5</Version>` are not allowed.
 
 **Hint:** You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
@@ -319,7 +319,7 @@ A value of **True** indicates that the string contains illegal characters. Here 
 -   Program&lt;1&gt;.exe
 
 **Note**  
-The UE-V Generator encodes the greater than and less than characters as &gt; and &lt; respectively.
+The UE-V template generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
  
 
@@ -400,7 +400,7 @@ The product and file version elements may be left unspecified. Doing so makes th
 
 **Example 1:**
 
-Product version: 1.0 specified in the UE-V Generator produces the following XML:
+Product version: 1.0 specified in the UE-V template generator produces the following XML:
 
 ``` syntax
       <ProductVersion>
@@ -411,7 +411,7 @@ Product version: 1.0 specified in the UE-V Generator produces the following XML:
 
 **Example 2:**
 
-File version: 5.0.2.1000 specified in the UE-V Generator produces the following XML:
+File version: 5.0.2.1000 specified in the UE-V template generator produces the following XML:
 
 ``` syntax
       <FileVersion>
@@ -990,7 +990,7 @@ This section details the XML structure of the UE-V 2.0 settings location templat
 
 **Type: String**
 
-The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version="1.0"&gt;). Settings location templates created by the UE-V Generator are saved in UTF-8 encoding, although the encoding is not explicitly specified. We recommend that you include the encoding="UTF-8" attribute in this element as a best practice. All templates included with the product specify this tag as well (see the documents in %ProgramFiles%\\Microsoft User Experience Virtualization\\Templates for reference). For example:
+The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version="1.0"&gt;). Settings location templates created by the UE-V template generator are saved in UTF-8 encoding, although the encoding is not explicitly specified. We recommend that you include the encoding="UTF-8" attribute in this element as a best practice. All templates included with the product specify this tag as well (see the documents in %ProgramFiles%\\Microsoft User Experience Virtualization\\Templates for reference). For example:
 
 `<?xml version="1.0" encoding="UTF-8"?>`
 
@@ -1145,7 +1145,7 @@ Name specifies a unique name for the settings location template. This is used fo
 **Note**  
 UE-V does not reference external DTDs, so it is not possible to use named entities in a settings location template. For example, do not use &reg; to refer to the registered trade mark sign ®. Instead, use canonical numbered references to include these types of special characters, for example, &\#174 for the ® character. This rule applies to all string values in this document.
 
-See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V Generator converts character entities to their Unicode representations automatically.
+See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V template generator converts character entities to their Unicode representations automatically.
 
  
 
@@ -1167,7 +1167,7 @@ ID populates a unique identifier for a particular template. This tag becomes the
 
 **Maximum Value: 2147483647**
 
-Version identifies the version of the settings location template for administrative tracking of changes. The UE-V Generator automatically increments this number by one each time the template is saved. Notice that this field must be a whole number integer; fractional values, such as `<Version>2.5</Version>` are not allowed.
+Version identifies the version of the settings location template for administrative tracking of changes. The UE-V template generator automatically increments this number by one each time the template is saved. Notice that this field must be a whole number integer; fractional values, such as `<Version>2.5</Version>` are not allowed.
 
 **Hint:** You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
@@ -1256,7 +1256,7 @@ A value of **True** indicates that the string contains illegal characters. Here 
 -   Program&lt;1&gt;.exe
 
 **Note**  
-The UE-V Generator encodes the greater than and less than characters as &gt; and &lt; respectively.
+The UE-V template generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
  
 
@@ -1337,7 +1337,7 @@ The product and file version elements may be left unspecified. Doing so makes th
 
 **Example 1:**
 
-Product version: 1.0 specified in the UE-V Generator produces the following XML:
+Product version: 1.0 specified in the UE-V template generator produces the following XML:
 
 ``` syntax
       <ProductVersion>
@@ -1348,7 +1348,7 @@ Product version: 1.0 specified in the UE-V Generator produces the following XML:
 
 **Example 2:**
 
-File version: 5.0.2.1000 specified in the UE-V Generator produces the following XML:
+File version: 5.0.2.1000 specified in the UE-V template generator produces the following XML:
 
 ``` syntax
       <FileVersion>
@@ -1868,6 +1868,6 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 ## Related topics
 
-[Working with Custom UE-V Templates and the UE-V Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
+[Working with Custom UE-V Templates and the UE-V Template Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
 
 [Technical Reference for UE-V](uev-technical-reference.md)

@@ -46,14 +46,14 @@ Use these UE-V components to create and manage custom templates for your third-p
 
 | Component                     | Description   |
 |-------------------------------|---------------|
-| **UE-V Generator**            | Use the **UE-V generator** to create custom settings location templates that you can then distribute to user computers. The UE-V generator also lets you edit an existing template or validate a template that was created with a different XML editor. <br>With the Windows 10, version 1607 release, the UE-V generator is installed with the [Windows 10 Assessment and Deployment kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK). <br>If you are upgrading from an existing UE-V installation, you’ll need to use the new generator to create new settings location templates. Application templates created with previous versions of the UE-V generator are still supported, however. |
+| **UE-V template generator**            | Use the **UE-V template generator** to create custom settings location templates that you can then distribute to user computers. The UE-V template generator also lets you edit an existing template or validate a template that was created with a different XML editor. <br>With the Windows 10, version 1607 release, the UE-V template generator is installed with the [Windows 10 Assessment and Deployment kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK). <br>If you are upgrading from an existing UE-V installation, you’ll need to use the new generator to create new settings location templates. Application templates created with previous versions of the UE-V template generator are still supported, however. |
 | **Settings template catalog** | The **settings template catalog** is a folder path on UE-V computers or a Server Message Block (SMB) network share that stores the custom settings location templates. The UE-V service checks this location once a day, retrieves new or updated templates, and updates its synchronization behavior.<br>If you use only the UE-V default settings location templates, then a settings template catalog is unnecessary. For more information about settings deployment catalogs, see [Deploy a UE-V settings template catalog](uev-deploy-uev-for-custom-applications.md#deploycatalogue).  |
 
 <!-- PRESERVING ORIGINAL IMAGE CODING JUST IN CASE
 <img src="media/image2.gif" width="595" height="330" />
 -->
 
-![UE-V Generator process](images/uev-generator-process.gif)
+![UE-V template generator process](images/uev-generator-process.gif)
 
 ## Settings Synchronized by Default
 

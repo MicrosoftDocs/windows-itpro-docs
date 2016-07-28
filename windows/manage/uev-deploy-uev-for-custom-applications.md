@@ -17,7 +17,7 @@ After you’ve reviewed
 
 To start, here are the main steps required to synchronize settings for custom applications:
 
--   [Install the UE-V template generator](uev-deploy-uev-for-custom-applications.md#uevgen)
+-   [Install the UE-V template generator](#install-the-uev-template-generator)
 
     Use the UEV template generator to create custom XML settings location templates.
 
@@ -126,7 +126,7 @@ To install the UE-V template generator:
 <!--
 Link to <https://technet.microsoft.com/en-us/itpro/mdop/uev-v2/working-with-custom-ue-v-2x-templates-and-the-ue-v-2x-generator-new-uevv2>
 AKA
-[Working with Custom UE-V Templates and the UE-V Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
+[Working with Custom UE-V Templates and the UE-V Template Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
 -->
 
 To verify that the installation was successful, click **Start** &gt; **All Programs** &gt; **Microsoft User Experience Virtualization** &gt; **Microsoft User Experience Virtualization template generator**.
