@@ -165,4 +165,4 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
-[Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md)
+[Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)

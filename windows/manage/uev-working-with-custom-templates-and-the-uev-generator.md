@@ -155,7 +155,7 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Administering UE-V](uev-administering-uev.md)
 
-[Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md)
+[Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
 
  
 

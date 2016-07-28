@@ -30,7 +30,7 @@ First, review these tasks that youâ€™ll need to do to deploy UE-V:
 
 -   [Enable the UE-V service](uev-deploy-required-features.md#enable-the-ue-v-service) on user computers
 
--   Optionally, you can [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md)
+-   Optionally, you can [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
 
     Review this topic to determine whether you want UE-V to support the synchronization of settings for custom applications (third-party or line-of-business), which requires these UE-V features:
 
@@ -294,7 +294,7 @@ If you are deploying UE-V to synchronize settings for custom applications, youâ€
 
 Custom settings location templates must be deployed with an existing deployment infrastructure, like an enterprise software distribution method such as System Center Configuration Manager, with preferences, or by configuring an UE-V settings template catalog. Templates that are deployed with Configuration Manager or Group Policy must be registered by using UE-V WMI or Windows PowerShell.
 
-For more information about custom settings location templates, see [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md). For more information about using UE-V with Configuration Manager, see [Configuring UE-V with System Center Configuration Manager 2012](uev-configuring-uev-with-system-center-configuration-manager-2012.md).
+For more information about custom settings location templates, see [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md). For more information about using UE-V with Configuration Manager, see [Configuring UE-V with System Center Configuration Manager 2012](uev-configuring-uev-with-system-center-configuration-manager-2012.md).
 
 ### Prevent unintentional user settings configuration
 
@@ -427,7 +427,7 @@ The VDI template is provided with UE-V and is typically available here after ins
 
 Install the UE-V generator on the computer that is used to create custom settings location templates. This computer should be able to run the applications whose settings are synchronized. You must be a member of the Administrators group on the computer that runs the UE-V generator software.
 
-The UE-V generator must be installed on a computer that uses an NTFS file system. The UE-V generator software requires .NET Framework 4. For more information, see [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md).
+The UE-V generator must be installed on a computer that uses an NTFS file system. The UE-V generator software requires .NET Framework 4. For more information, see [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md).
 
 ## Other resources for this product
 

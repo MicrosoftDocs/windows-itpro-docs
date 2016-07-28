@@ -27,7 +27,7 @@ The standard installation of UE-V synchronizes the default Microsoft Windows and
 
 -   [Step 4: Test Your UE-V evaluation deployment](#step-4-test-your-UE-V-evaluation-deployment). Run a few tests on two computers with the UE-V service enabled to see how UE-V works and if it meets your organization’s needs.
 
--   Step 5: Deploy UE-V for custom applications (optional). If you want to evaluate how your third-party and line-of-business applications work with UE-V, follow the steps in [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md). Following this link takes you to another topic. Use your browser’s **Back** button to return to this topic.
+-   Step 5: Deploy UE-V for custom applications (optional). If you want to evaluate how your third-party and line-of-business applications work with UE-V, follow the steps in [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md). Following this link takes you to another topic. Use your browser’s **Back** button to return to this topic.
 
 ## Step 1: Confirm prerequisites
 
