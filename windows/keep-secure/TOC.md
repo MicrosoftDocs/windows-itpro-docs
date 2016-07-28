@@ -25,6 +25,7 @@
 #### [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md)
 #### [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md)
 ### [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
+#### [Windows Information Protection (WIP) overview](wip-enterprise-overview.md)
 #### [Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md)
 #### [Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md)
 #### [Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md)
