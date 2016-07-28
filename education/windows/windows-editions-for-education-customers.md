@@ -30,7 +30,7 @@ Existing devices running Windows 10 Pro, currently activated with the original O
 
 Customers with Academic Volume Licensing agreements with rights for Windows can get Windows 10 Pro Education through the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), available at a later date.
 
-Customers that deploy Windows 10 Pro are able to configure the product to have similar feature settings to Windows 10 Pro Education using policies. More detailed information on these policies and the configuration steps required is available in [MManage Windows 10 and Windows Store tips, tricks and suggestions](http://go.microsoft.com/fwlink/?LinkId=822627). We recommend that K-12 customers using commercial Windows 10 Pro read the [document](http://go.microsoft.com/fwlink/?LinkId=822627) and apply desired settings for your environment.
+Customers that deploy Windows 10 Pro are able to configure the product to have similar feature settings to Windows 10 Pro Education using policies. More detailed information on these policies and the configuration steps required is available in [Manage Windows 10 and Windows Store tips, tricks and suggestions](http://go.microsoft.com/fwlink/?LinkId=822627). We recommend that K-12 customers using commercial Windows 10 Pro read the [document](http://go.microsoft.com/fwlink/?LinkId=822627) and apply desired settings for your environment.
 
 ## Windows 10 Education
 

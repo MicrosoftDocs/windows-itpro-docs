@@ -16,6 +16,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 
 |New or changed topic | Description |
 |----------------------|-------------|
+|[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Updated various topics throughout this section for new name and new UI in Microsoft Intune and System Center Configuration Manager. |
 |[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md) |New |
 |[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |New |
 |[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |New |
