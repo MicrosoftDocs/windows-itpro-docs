@@ -299,10 +299,20 @@ Administrators can also use mobile device management (MDM) or Group Policy to di
 
 ## Updates
 
+Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
 
-With Windows 10, your enterprise will have more choice and flexibility in applying operating system updates. You can manage and control updates to devices running Windows 10 Pro and Windows 10 Enterprise using MDM policies.
+By using [Group Policy Objects](http://go.microsoft.com/fwlink/p/?LinkId=699279), Windows Update for Business is an easily established and implemented system which enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
 
-While Windows Update provides updates to unmanaged devices, most enterprises prefer to manage and control the flow of updates using their device management solution. You can choose to apply the latest updates as soon as they are available, or you can set a source and schedule for updates that works for your specific requirements.
+-   **Deployment and validation groups**; where administrators can specify which devices go first in an update wave, and which devices will come later (to ensure any quality bars are met).
+
+-   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
+
+-   **Use with existing tools** such as System Center Configuration Manager and the [Enterprise Mobility Suite](http://go.microsoft.com/fwlink/p/?LinkId=699281).
+
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](http://technet.microsoft.com/library/hh852345.aspx) and [System Center Configuration Manager](http://technet.microsoft.com/library/gg682129.aspx).
+
+
+Learn more about [Windows Update for Business](../plan/windows-update-for-business.md).
 
 For more information about updating Windows 10, see [Windows 10 servicing options for updates and upgrades](../manage/introduction-to-windows-10-servicing.md).
 

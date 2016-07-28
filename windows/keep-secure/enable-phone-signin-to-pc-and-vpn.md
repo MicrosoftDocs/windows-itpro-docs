@@ -47,6 +47,8 @@ Everyone can get the **Microsoft Authenticator** app from the Windows Store. If 
 [Tell people how to sign in using their phone.](prepare-people-to-use-microsoft-passport.md#bmk-remote)
 
 
+
+
 ## Related topics
 
 [Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)

@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Provision PCs with common settings for initial deployment
+# Provision PCs with common settings for initial deployment (simple provisioning)
 
 
 **Applies to**
@@ -49,7 +49,7 @@ Provisioning packages can include management instructions and policies, installa
 
 ## Create the provisioning package
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 

@@ -93,7 +93,7 @@ For details about the settings you can customize in provisioning packages, see [
 ## Creating a provisioning package
 
 
-With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).
+With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
 While running ADKsetup.exe for Windows 10, version 1607, select the following feature from the **Select the features you want to install** dialog box:
 
@@ -122,7 +122,7 @@ Provisioning packages can be applied both during image deployment and during run
 - [Configure devices without MDM](../manage/configure-devices-without-mdm.md)
 - [Set up a device for anyone to use (kiosk mode)](../manage/set-up-a-device-for-anyone-to-use.md)
 - [Customize Windows 10 Start and taskbar with ICD and provisioning packages](../manage/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Set up student PCs to join domain](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain)
+- [Set up student PCs to join domain](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain)
 
 
 

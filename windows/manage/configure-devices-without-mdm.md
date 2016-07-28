@@ -56,8 +56,8 @@ Provisioning packages are simple for employees to install. And when they remove 
 
     Package might include company root certificate, Wi-Fi profiles, security policies, or company application.
 
-    **Note**  
-    Test to make sure that removing the provisioning package from a personal device removes everything that the package installed. Some settings are not reverted when a provisioning package is removed from the device.
+    > [!NOTE]  
+    > Test to make sure that removing the provisioning package from a personal device removes everything that the package installed. Some settings are not reverted when a provisioning package is removed from the device.
 
      
 
@@ -65,8 +65,8 @@ Provisioning packages are simple for employees to install. And when they remove 
 
     Package might include computer name, company root certificate, Wi-Fi profile, or company application.
 
-    **Note**  
-    To return the **Start** menu to a specific state, you must reset the device. When you reset the device, you can apply the provisioning package during the first-run experience.
+    > [!NOTE]  
+    > To return the **Start** menu to a specific state, you must reset the device. When you reset the device, you can apply the provisioning package during the first-run experience.
 
      
 
@@ -74,7 +74,7 @@ For details about the settings you can customize in provisioning packages, see [
 
 ## Create a provisioning package 
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 When you run Windows ICD, you have several options for creating your package.
 
@@ -84,12 +84,12 @@ When you run Windows ICD, you have several options for creating your package.
 - Choose **Provision school devices** to quickly create provisioning packages that configure settings and policies tailored for students. Learn more about using Windows ICD to provision student PCs (link tb added).
 - Choose **Advanced provisioning** to create provisioning packages in the advanced settings editor and include classic (Win32) and Universal Windows Platform (UWP) apps for deployment on end-user devices.
 
-> **Important**
-When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+> [!IMPORTANT]
+> When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 ### Using Simple provisioning
 
-1. Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+1. Open Windows ICD (by default, `%windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe`).
 2. Click **Simple provisioning**.
 2. Name your project and click **Finish**.
 3. In the **Set up device** step, enter a unique 15-character name for the device. For help generating a unique name, you can use %SERIAL%, which includes a hardware-specific serial number, or you can use %RAND:x%, which generates random characters of x length.
@@ -103,7 +103,8 @@ When you build a provisioning package, you may include sensitive information in 
 6. Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, type, and (if required) password for the wireless network.
 7. Click **Enroll into Active Directory**.
 8. Toggle **Yes** or **No** for Active Directory enrollment. If you select **Yes**, enter the credentials for an account with permissions to enroll the device. (Optional) Enter a user name and password to create a local administrator account.
-    > **Warning**: If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
+    > [!WARNING]
+    > If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
     - Use a least-privileged domain account to join the device to the domain.
     - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
     - [Use Group Policy to delete the temporary administrator account](https://blogs.technet.microsoft.com/canitpro/2014/12/10/group-policy-creating-a-standard-local-admin-account/) after the device is enrolled in Active Directory.
@@ -128,14 +129,14 @@ When you build a provisioning package, you may include sensitive information in 
 8.  On the **Export** menu, select **Provisioning package**.
 9.  Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
 10. Set a value for **Package Version**.
-    > **Tip**  
-    You can make changes to existing packages and change the version number to update previously applied packages.
+    > [!TIP]  
+    > You can make changes to existing packages and change the version number to update previously applied packages.
   
 11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
-       > **Important**  
-        We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
+       > [!IMPORTANT]  
+       > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
         
 12. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.
     Optionally, you can click **Browse** to change the default output location.
@@ -179,7 +180,7 @@ On a mobile device, the employee goes to **Settings** &gt; **Accounts** &gt; **P
 
 -   Optionally, keep packages when you reset a mobile device. When you reset a desktop, runtime packages are removed.
 
-    ![](images/resetdevice.png)
+    ![reset a device](images/resetdevice.png)
 
 ## Learn more
 

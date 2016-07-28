@@ -1029,9 +1029,13 @@ To turn off **Let apps run in the background**:
 
 ### <a href="" id="bkmk-spp"></a>16. Software Protection Platform
 
-Enterprise customers can manage their Windows activation status with volume licensing using an on-premise Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by applying the following Group Policy:
+Enterprise customers can manage their Windows activation status with volume licensing using an on-premise Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
 
-**Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Activation**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Activation**
+
+    -or-
+
+-   Apply the Licensing/DisallowKMSClientOnlineAVSValidation MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is disabled (default) and 1 is enabled.
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
@@ -1191,7 +1195,7 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences**.
 
-For more info, see [Manage user experiences in Windows 10, version 1607](../manage/manage-user-experiences-windows-10.md).
+For more info, see [Windows Spotlight on the lock screen](../manage/windows-spotlight.md).
 
 ### <a href="" id="bkmk-windowsstore"></a>23. Windows Store
 

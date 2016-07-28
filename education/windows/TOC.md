@@ -1,5 +1,6 @@
 # [Windows 10 for education](index.md)
 ## [Change history for Windows 10 for Education](change-history-edu.md)
+## [Windows 10 editions for education customers](windows-editions-for-education-customers.md)
 ## [Setup options for Windows 10](set-up-windows-10.md)
 ### [Use the Set up School PCs app ](use-set-up-school-pcs-app.md)
 ### [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md)
@@ -14,4 +15,6 @@
 ### [Take a Test app technical reference ](take-a-test-app-technical.md)
 ## [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
+## [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)
 ## [Chromebook migration guide](chromebook-migration-guide.md)
+
