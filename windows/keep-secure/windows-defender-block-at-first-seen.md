@@ -11,7 +11,7 @@ ms.pagetype: security
 author: iaanw
 ---
 
-# Block at First Sight
+# The Block at First Sight feature in Windows Defender
 
 **Applies to**
 
@@ -108,4 +108,6 @@ To configure un-managed clients that are running Windows 10, Block at First Sigh
 
 >[!NOTE]These settings will be overridden if the network administrator has configured their associated Group Policies. The settings will appear grayed out and you will not be able to modify them if they are being managed by Group Policy.
 
- 
+## Related topics
+
+[Windows Defender in Windows 10](windows-defender-in-windows-10.md)

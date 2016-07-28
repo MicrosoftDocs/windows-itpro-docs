@@ -25,7 +25,13 @@ In Windows 10, Windows Defender Offline can be run with one click directly from 
 
 ## Pre-requisites and requirements
 
-Windows Defender Offline in Windows 10 has the same hardware requirements as Windows 10. See the Windows [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx) and [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049(v=vs.85).aspx) for more details.
+Windows Defender Offline in Windows 10 has the same hardware requirements as Windows 10. 
+
+For more information about Windows 10 requirements, see the following topics:
+
+- [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx)
+
+- [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049(v=vs.85).aspx)
 
 >[!NOTE]Windows Defender Offline is not supported on machines with ARM processors, or on Windows Server Stock Keeping Units.
 
@@ -35,7 +41,7 @@ To run Windows Defender Offline from the endpoint, the user must be logged in wi
 
 Windows Defender Offline uses the most up-to-date signature definitions available; it's updated through the same update session as Windows Defender - usually though Microsoft Update or through the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx). The Windows Defender Offline image is the same platform connected through the hardwired network, so it can update itself from the wired network.
 
-You can still download Windows Defender Offline and create bootable media to run on any PCs that are not connected to the Internet. <span style="background-color:yellow">{{This still true?}}</span>
+You can still download Windows Defender Offline and create bootable media to run on any endpoints that are not connected to the Internet. <span style="background-color:yellow">{{This still true?}}</span>
 
 ## Usage scenarios
 
@@ -78,9 +84,9 @@ You can suppress Windows Defender Offline notifications with Group Policy.
 
 **Suppress notifications with the ADM template:**
 
-1.	Download the windowsdefender.adm Group Policy from the [Group Policy ADM files](https://www.microsoft.com/en-us/download/details.aspx?id=18664) on the Microsoft Download Center if it is not already deployed in Windows and visible in the Group Policy Object Editor or Group Policy Management Console.
+1.	Download the windowsdefender.adm Group Policy from the [Group Policy ADM files](https://www.microsoft.com/download/details.aspx?id=18664) on the Microsoft Download Center if it is not already deployed in Windows and visible in the Group Policy Object Editor or Group Policy Management Console.
 
-2.	Add the windowsdefender.adm Group Policy template as described in the [Add or remove an Administrative Template (.adm file)](https://technet.microsoft.com/en-us/library/cc739134(v=ws.10).aspx) topic.
+2.	Add the windowsdefender.adm Group Policy template as described in the [Add or remove an Administrative Template (.adm file)](https://technet.microsoft.com/library/cc739134(v=ws.10).aspx) topic.
 
 3.	Use the following Group Policy setting: <span style="background-color:yellow">{{ Is this template distributed by default in Windows? Or does an admin need to download it from somewhere? Can they get it from here https://www.microsoft.com/en-us/download/details.aspx?id=18664}}</span>
 
@@ -100,7 +106,7 @@ For information about managing ADMX files and using a central store for Administ
 
 Windows Defender Offline uses up-to-date threat definitions to scan the endpoint for malware that might be hidden. 
 
->[!NOTE]Before you use Windows Defender Offline, make sure you save any files and shut down running programs. The Windows Defender Offline scan takes about 15 minutes to run. It will restart your PC when the scan is complete. 
+>[!NOTE]Before you use Windows Defender Offline, make sure you save any files and shut down running programs. The Windows Defender Offline scan takes about 15 minutes to run. It will restart the endpoint when the scan is complete. 
 
 You can set up a Windows Defender Offline scan with the following:
 
@@ -148,7 +154,7 @@ The following Windows Management Instrumentation script snippet will immediately
 wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start 
 ```
 
-See the following topics for configuration parameters and options:
+For more information about using Windows Management Instrumentation to run a scan in Windows Defender, including configuration parameters and options, see the following topics:
 
 -	[Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/windows/desktop/dn439477(v=vs.85).aspx) 
 
@@ -156,7 +162,7 @@ See the following topics for configuration parameters and options:
 
 You can also use Windows Management Instrumentation to enable and disable certain features in Windows Defender Offline. For example, you can use `Set-MpPreference` to change the `UILockdown` setting to disable and enable notifications. 
 
-See the following topics for configuration parameters and options:
+For more information about using Windows Management Instrumentation to configure Windows Defender Offline, including configuration parameters and options, see the following topics:
 
 -	[Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/windows/desktop/dn439477(v=vs.85).aspx)
 
@@ -170,7 +176,7 @@ To run Windows Defender Offline remotely, xxx. <span style="background-color:yel
 
 Use the PowerShell parameter `Start-MpWDOScan` to run a Windows Defender Offline scan. 
 
-See the [Use PowerShell cmdlets to configure and run Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10) topic for more details on available cmdlets and options.
+For more information on available cmdlets and optios, see the [Use PowerShell cmdlets to configure and run Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10) topic.
 
 ## Review scan results
 
@@ -188,3 +194,6 @@ Any detected items will display. Items that are detected by Windows Defender Off
 
 ![Windows Defender detection source showing as Offline](images/defender/detection-source.png)
 
+## Related topics
+
+[Windows Defender in Windows 10](windows-defender-in-windows-10.md)

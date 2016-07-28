@@ -41,7 +41,7 @@ You can disable enhanced notifications on individual endpoints by configuring th
 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
 ```
 
-5. Double click the **Notifications_Suppress** value and set it to **1**.
+5. Double-click the **Notifications_Suppress** value and set it to **1**.
 
 ![Image of enhanced notification suppression in Registry Editor](images/defender/ux-config-key.png)
 
@@ -119,11 +119,10 @@ You can hide the Windows Defender user interface by modifying the registry or co
 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
 ```
 
-5. Double click the **UILockdown** value and set it to **1**.
+5. Double-click the **UILockdown** value and set it to **1**.
 
 ![Image of Windows Defender user interface setting in Registry Editor](images/defender/ux-uilockdown-key.png)
 
+## Related topics
 
-
-
-
+[Windows Defender in Windows 10](windows-defender-in-windows-10.md)
