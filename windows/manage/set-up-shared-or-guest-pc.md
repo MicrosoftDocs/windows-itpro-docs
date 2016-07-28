@@ -6,6 +6,7 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Set up a shared or guest PC with Windows 10

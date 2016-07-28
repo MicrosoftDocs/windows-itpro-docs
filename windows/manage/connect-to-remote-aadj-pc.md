@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Connect to remote Azure Active Directory-joined PC
