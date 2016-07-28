@@ -1,7 +1,7 @@
 ---
 title: Get Started with UE-V
 description: Get Started with UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

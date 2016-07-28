@@ -1,7 +1,7 @@
 ---
 title: Technical Reference for UE-V
 description: Technical Reference for UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

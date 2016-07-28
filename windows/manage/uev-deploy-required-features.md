@@ -1,7 +1,7 @@
 ---
 title: Deploy required UE-V features
 description: Deploy required UE-V features
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

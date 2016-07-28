@@ -1,7 +1,7 @@
 ---
 title: Sync Trigger Events for UE-V
 description: Sync Trigger Events for UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: Using UE-V with Application Virtualization Applications
 description: Using UE-V with Application Virtualization Applications
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
