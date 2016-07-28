@@ -11,6 +11,11 @@ This topic lists new and updated topics in the Microsoft Edge documentation for 
 
 For a detailed feature list of what's in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases, see the [Microsoft Edge changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/).
 
+## July 2016
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Microsoft Edge - Deployment Guide for IT Pros](index.md)| Updated to include support for Windows Server 2016 and a note about the Long Term Servicing Branch (LTSB) |
+
 
 ## June 2016
 |New or changed topic | Description |
