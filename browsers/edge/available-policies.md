@@ -12,8 +12,9 @@ title: Available policies for Microsoft Edge (Microsoft Edge for IT Pros)
 
 **Applies to:**
 
--   Windows 10 Insider Preview
--   Windows 10 Mobile
+- Windows 10
+- Windows 10 Mobile
+- Windows Server 2016
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 

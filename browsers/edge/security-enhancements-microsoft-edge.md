@@ -8,6 +8,13 @@ title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
 ---
 
 # Security enhancements for Microsoft Edge
+
+**Applies to:**
+
+- Windows 10
+- Windows 10 Mobile
+- Windows Server 2016
+
 Microsoft Edge is designed with significant security improvements, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows.
 
 ## Help to protect against web-based security threats
@@ -43,15 +50,15 @@ Microsoft Edge has a new rendering engine, Microsoft EdgeHTML, which is focused 
 
 The Microsoft EdgeHTML engine also helps to defend against hacking through these new security standards features:
 
-- Support for the W3C standard for [Content Security Policy (CSP)](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/security/content-Security-Policy), which can help web developers defend their sites against cross-site scripting attacks.
+- Support for the W3C standard for [Content Security Policy (CSP)](https://developer.microsoft.com/microsoft-edge/platform/documentation/dev-guide/security/content-Security-Policy), which can help web developers defend their sites against cross-site scripting attacks.
 
-- Support for the [HTTP Strict Transport Security (HSTS)](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/security/HSTS/) security feature (IETF-standard compliant). This helps ensure that connections to important sites, such as to your bank, are always secured.
+- Support for the [HTTP Strict Transport Security (HSTS)](https://developer.microsoft.com/microsoft-edge/platform/documentation/dev-guide/security/HSTS/) security feature (IETF-standard compliant). This helps ensure that connections to important sites, such as to your bank, are always secured.
 
     **Note**<br>
     Both Microsoft Edge and Internet Explorer 11 support HSTS.
 
 #### All web content runs in an app container sandbox
-Internet Explorer 7 on Windows Vista was the first web browser to provide a browsing sandbox, called [Protected Mode](http://windows.microsoft.com/en-US/windows-vista/What-does-Internet-Explorer-protected-mode-do). Protected Mode forced the part of the browser that rendered web content to run with less privilege than the browser controls or the user, providing a level of isolation and protection should a malicious website attempt to exploit a bug in the browser or one of its plug-ins.
+Internet Explorer 7 on Windows Vista was the first web browser to provide a browsing sandbox, called [Protected Mode](http://windows.microsoft.com/windows-vista/What-does-Internet-Explorer-protected-mode-do). Protected Mode forced the part of the browser that rendered web content to run with less privilege than the browser controls or the user, providing a level of isolation and protection should a malicious website attempt to exploit a bug in the browser or one of its plug-ins.
 
 Internet Explorer 10 introduced Enhanced Protected Mode (EPM), based on the Windows 8 app container technology, providing a stronger sandbox by adding deny-by-default and no-read-up semantics. EPM was turned on by default in the Windows 8 and Windows 8.1 immersive browser, but was optional on the Internet Explorer 10 and Internet Explorer 11 desktop versions.
 
@@ -68,10 +75,10 @@ The value of running 64-bit all the time is that it strengthens Windows Address 
 #### New extension model and HTML5 support
 Back in 1996, we introduced ActiveX for web browser extensions in an attempt to let 3rd parties experiment with various forms of alternate content on the web. However, we quickly learned that browser extensions can come at a cost of security and reliability. For example, binary extensions can bring code and data into the browser’s processes without any protection, meaning that if anything goes wrong, the entire browser itself can be compromised or go down.
 
-Based on that learning, we’ve stopped supporting binary extensions in Microsoft Edge and instead encourage everyone to use our new, scripted HTML5-based extension model. For more info about the new extensions, see the [Microsoft Edge Developer Center](https://developer.microsoft.com/en-us/microsoft-edge/extensions/).
+Based on that learning, we’ve stopped supporting binary extensions in Microsoft Edge and instead encourage everyone to use our new, scripted HTML5-based extension model. For more info about the new extensions, see the [Microsoft Edge Developer Center](https://developer.microsoft.com/microsoft-edge/extensions/).
 
 #### Reduced attack surfaces
-In addition to removing support for VBScript, Jscript, VML, Browser Helper Objects, Toolbars, and ActiveX controls, Microsoft Edge also removed support for legacy Internet Explorer [document modes](https://msdn.microsoft.com/en-us/library/jj676915.aspx). Because many IE browser vulnerabilities are only present in legacy document modes, removing support for document modes significantly reduces attack surface, making the browser much more secure than before. However, it also means that it’s not as backward compatible.
+In addition to removing support for VBScript, Jscript, VML, Browser Helper Objects, Toolbars, and ActiveX controls, Microsoft Edge also removed support for legacy Internet Explorer [document modes](https://msdn.microsoft.com/library/jj676915.aspx). Because many IE browser vulnerabilities are only present in legacy document modes, removing support for document modes significantly reduces attack surface, making the browser much more secure than before. However, it also means that it’s not as backward compatible.
 
 Because of the reduced backward compatibility, we’ve given Microsoft Edge the ability to automatically fall back to Internet Explorer 11, using the Enterprise Mode Site List, for any apps that need backward compatibility.
 
