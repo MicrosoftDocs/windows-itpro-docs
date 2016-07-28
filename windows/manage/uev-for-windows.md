@@ -72,17 +72,11 @@ UE-V synchronizes settings for these applications by default. For a complete lis
 **Note**
 You can also [customize UE-V to synchronize settings](uev-deploy-uev-for-custom-applications.md) for applications other than those synchronized by default.
 
-## UE-V for Windows 10, version 1607 Release Notes
-
-**Upgrade from UE-V 1.0 to the in-box version of UE-V is not supported**
-
-Client side caching technology (CSC) used in UE-V 1.0, used for pinning the UE-V sync folder, was removed in UE-V 2.x. As a result, upgrading to UE-V 1.0 to UE-V 2.x or the in-box version of UE-V, released with Windows 10, version 1607, is not supported.
-
-To work around this issue, unpin the CSC UE-V 1.0 sync folder and then upgrade to the in-box version of UE-V, released in Windows 10, version 1607.
-
 ## Other resources for this feature
 
 -   [Get Started with UE-V](uev-getting-started.md)
+
+-   [UE-V Release Notes](uev-release-notes-1607.md)
 
 -   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
