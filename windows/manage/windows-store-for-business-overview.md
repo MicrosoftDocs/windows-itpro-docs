@@ -6,7 +6,6 @@ ms.prod: w10
 ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
-redirect: 
 author: TrudyHa
 ---
 
@@ -15,8 +14,8 @@ author: TrudyHa
 
 **Applies to**
 
--   Windows 10
--   Windows 10 Mobile
+-   Windows 10
+-   Windows 10 Mobile
 
 With the new Windows Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps.
 
@@ -54,7 +53,7 @@ You'll need this software to work with the Store for Business.
 
 -   IT Pros that are administering Store for Business need a browser compatible with Store for Business running on a PC or mobile device. Supported browsers include: Internet Explorer 10 or later, Microsoft Edge, or current versions of Chrome or Firefox.
 
--   Employees using apps from Store for Business need Windows 10, version 1511 running on a PC or mobile device.
+-   Employees using apps from Store for Business need Windows 10, version 1511 running on a PC or mobile device.
 
 Microsoft Azure Active Directory (AD) accounts for your employees:
 
@@ -72,7 +71,7 @@ For more information on Azure AD, see [About Office 365 and Azure Active Directo
 
 While not required, you can use a management tool to distribute and manage apps. Using a management tool allows you to distribute content, scope app availability, and control when app updates are installed. This might make sense for larger organizations that already use a management tool. A couple of things to note about management tools:
 
--   Need to integrate with Windows 10 management framework and Azure AD.
+-   Need to integrate with Windows 10 management framework and Azure AD.
 
 -   Need to sync with the Store for Business inventory to distribute apps.
 
@@ -131,7 +130,7 @@ After your admin signs up for the Store for Business, they can assign roles to o
 </tbody>
 </table>
 
- 
+ 
 
 In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](../manage/manage-users-and-groups-windows-store-for-business.md).
 
@@ -167,7 +166,7 @@ App distribution is handled through two channels, either through the Store for B
 
 -   Curate private store for all employees – A private store can include content you’ve purchased from the Store, and your line-of-business apps that you’ve submitted to the Store for Business. Apps in your private store are available to all of your employees. They can browse the private store and install apps when needed.
 
--   To use the options above users must be signed in with an Azure AD account on a Windows 10 device.
+-   To use the options above users must be signed in with an Azure AD account on a Windows 10 device.
 
 **Using a management tool** – For larger organizations that might want a greater level of control over how apps are distributed and managed, a management tools provides other distribution options:
 
@@ -273,15 +272,6 @@ Developers in your organization, or ISVs can create content specific to your org
 
 -   Admin adds the app to Store for Business inventory.
 
-Once the app is in inventory, admins can choose how to distribute the app. ISVs creating apps through the dev center can make their apps available in the Store for Business. ISVs can opt-in their apps to make them available for offline licensing. Apps purchased in the Store for Business will work only on Windows 10.
+Once the app is in inventory, admins can choose how to distribute the app. ISVs creating apps through the dev center can make their apps available in the Store for Business. ISVs can opt-in their apps to make them available for offline licensing. Apps purchased in the Store for Business will work only on Windows 10.
 
 For more information on line-of-business apps, see [Working with Line-of-Business apps](../manage/working-with-line-of-business-apps.md).
-
- 
-
- 
-
-
-
-
-
