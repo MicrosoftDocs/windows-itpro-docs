@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile, devices
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Configure devices without MDM
