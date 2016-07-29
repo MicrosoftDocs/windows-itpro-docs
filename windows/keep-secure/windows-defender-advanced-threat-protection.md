@@ -14,8 +14,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Insider Preview Build 14332 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service, built into Windows 10 that enables enterprise customers detect, investigate, and respond to advanced threats on their networks.
 
@@ -76,10 +78,8 @@ detect sophisticated cyber-attacks, providing:
 Topic | Description
 :---|:---
 [Minimum requirements](minimum-requirements-windows-defender-advanced-threat-protection.md) | This overview topic for IT professionals provides information on the minimum requirements to use Windows Defender ATP such as network and data storage configuration, and endpoint hardware and software requirements, and deployment channels.
-[Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)| Learn about how Windows Defender ATP collects and handles information and where data is stored.
-[Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md)) | Learn about how Windows Defender works in conjunction with Windows Defender ATP.
-[Assign user access to the Windows Defender ATP portal](assign-portal-access-windows-defender-advanced-threat-protection.md)| Before users can access the portal, they'll need to be granted specific roles in Azure Active Directory.
 [Onboard endpoints and set up access](onboard-configure-windows-defender-advanced-threat-protection.md) | You'll need to onboard and configure the Windows Defender ATP service and the endpoints in your network before you can use the service. Learn about how you can assign users to the Windows Defender ATP service in Azure Active Directory (AAD) and using a configuration package to configure endpoints.
+[Data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md)| Learn about how Windows Defender ATP collects and handles information and where data is stored.
 [Portal overview](portal-overview-windows-defender-advanced-threat-protection.md) | Understand the main features of the service and how it leverages Microsoft technology to protect enterprise endpoints from sophisticated cyber attacks.
 [Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md) | Learn about the capabilities of Windows Defender ATP to help you investigate alerts that might be indicators of possible breaches in your enterprise.
 [Windows Defender Advanced Threat Protection settings](settings-windows-defender-advanced-threat-protection.md) | Learn about setting the time zone and configuring the suppression rules to configure the service to your requirements.  

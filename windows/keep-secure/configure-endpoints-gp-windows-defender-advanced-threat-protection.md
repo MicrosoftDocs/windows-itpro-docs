@@ -17,8 +17,9 @@ author: mjcaparas
 - Windows 10 Insider Preview Build 14332 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-> [!NOTE]
-> To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
+> **Note**&nbsp;&nbsp;To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later. 
 
 ### Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
@@ -44,11 +45,10 @@ author: mjcaparas
 9. Click **OK** and close any open GPMC windows.
 
 ## Additional Windows Defender ATP configuration settings
-For each endpoint, you can state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
-### Configure sample collection settings
+### Configure sample collection settings 
 1.  On your GP management machine, copy the following files from the
     configuration package:
 
@@ -66,21 +66,17 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 6.  Choose to enable or disable sample sharing from your endpoints.
 
->[!NOTE]
-> If you don't set a value, the default value is to enable sample collection.
-
 ### Offboard endpoints
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
-> [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. Click **Endpoint Management** on the **Navigation pane**.
-
+    
     b. Under **Endpoint offboarding** section, select **Group Policy**, click **Download package** and save the .zip file.
-
+    
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.	Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click Edit.
@@ -97,16 +93,15 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 9.	Click **OK** and close any open GPMC windows.
 
-## Monitor endpoint configuration
+## Monitor endpoint configuration 
 With Group Policy there isn’t an option to monitor deployment of policies on the endpoints. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
-## Monitor endpoints using the portal
+## Monitor endpoints using the portal 
 1.	Go to the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 2.	Click **Machines view**.
 3.	Verify that endpoints are appearing.
 
-> [!NOTE]
-> It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+> **Note**&nbsp;&nbsp;It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
 
 ## Related topics

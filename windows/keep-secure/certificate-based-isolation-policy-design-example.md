@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 This design example continues to use the fictitious company Woodgrove Bank, as described in the sections [Firewall Policy Design Example](firewall-policy-design-example.md), [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md), and [Server Isolation Policy Design Example](server-isolation-policy-design-example.md).
 

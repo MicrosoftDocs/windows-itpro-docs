@@ -14,12 +14,14 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Insider Preview Build 14332 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Windows Defender ATP notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
 
-For more information on how to investigate alerts see, [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts).
+See the [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts) topic for more details on how to investigate alerts.
 
 Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the top of the alert to access the Manage Alert menu and manage alerts.
 
@@ -84,8 +86,7 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 1. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the heading of an existing alert.
 2. Choose the context for suppressing the alert.
 
-> [!NOTE]
-> You cannot create a custom or blank suppression rule. You must start from an existing alert.
+> **Note**&nbsp;&nbsp;You cannot create a custom or blank suppression rule. You must start from an existing alert.
 
 **See the list of suppression rules:**
 
@@ -94,8 +95,7 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 
   ![Click the settings icon and then Suppression rules to create and modify rules](images/suppression-rules.png)
 
-> [!NOTE]
-> You can also click **See rules** in the confirmation window that appears when you suppress an alert.
+> **Note**&nbsp;&nbsp;You can also click **See rules** in the confirmation window that appears when you suppress an alert.
 
 The list of suppression rules shows all the rules that users in your organization have created.
 Each rule shows:

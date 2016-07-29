@@ -14,8 +14,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Insider Preview Build 14332 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 A typical security breach investigation requires a member of a security operations team to:
 
@@ -39,6 +41,6 @@ Topic | Description
 [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)| Investigate alerts in Windows Defender ATP which might indicate possible security breaches on endpoints in your organization.
 [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md) | The **Machines view** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, as well as the number of threats.
 [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md) | Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
-[Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md) | Examine possible communication between your machines and external Internet protocol (IP) addresses.
+[Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md) | Examine possible communication between your machines and external internet protocol (IP) addresses.
 [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md) | Investigate a domain to see if machines and servers in your enterprise network have been communicating with a known malicious domain.
 [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md) | The **Manage Alert** menu on every alert lets you change an alert's status, resolve it, suppress it, or contribute comments about the alert.

@@ -14,11 +14,12 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Insider Preview Build 14332 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You need to onboard to Windows Defender ATP before you can use the service.
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
+You need to onboard to Windows Defender ATP before you can use the service.
 
 ## In this section
 Topic | Description

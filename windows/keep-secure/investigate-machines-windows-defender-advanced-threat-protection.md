@@ -14,8 +14,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Insider Preview Build 14332 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 The **Machines view** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, and the number of active malware detections. This view allows you to identify machines with the highest risk at a glance, and keep track of all the machines that are reporting telemetry in your network.
 
@@ -35,8 +37,7 @@ The Machines view contains the following columns:
 - **Active Alerts** - the number of alerts reported by the machine by severity
 - **Active malware detections** - the number of active malware detections reported by the machine
 
-> [!NOTE]
-> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> **Note**&nbsp;&nbsp;The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 Click any column header to sort the view in ascending or descending order.
 
@@ -54,8 +55,7 @@ You can filter the view by the following time periods:
 - 30 days
 - 6 months
 
-> [!NOTE]
-> When you select a time period, the list will only display machines that reported within the selected time period. For example, selecting 1 day will only display a list of machines that reported telemetry within the last 24-hour period.
+> **Note**&nbsp;&nbsp;When you select a time period, the list will only display machines that reported within the selected time period. For example, selecting 1 day will only display a list of machines that reported telemetry within the last 24-hour period.
 
 The threat category filter lets you filter the view by the following categories:
 
@@ -65,7 +65,7 @@ The threat category filter lets you filter the view by the following categories:
 - Threat
 - Low severity
 
-For more information on the description of each category see, [Investigate machines with active alerts](dashboard-windows-defender-advanced-threat-protection.md#investigate-machines-with-active-malware-detections).
+See the [Investigate machines with active alerts](dashboard-windows-defender-advanced-threat-protection.md#investigate-machines-with-active-malware-detections) topic for a description of each category.
 
 You can also download a full list of all the machines in your organization, in CSV format. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to download the entire list as a CSV file.
 
@@ -99,8 +99,6 @@ The **Machine timeline** section provides a chronological view of the events and
 You'll see an aggregated view of alerts, a short description of the alert, details on the action taken, and which user ran the action. This helps you see significant activities or behaviors that occurred on a machine within your network in relation to a specific time frame. Several icons are used to identify various detections and their current state. For more information, see [Windows Defender ATP icons](portal-overview-windows-defender-advanced-threat-protection.md#windows-defender-atp-icons).
 
 This feature also enables you to selectively drill down into a behavior or event that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a specified time period.
-
-You can also use the [Alerts spotlight](investigate-alerts-windows-defender-advanced-threat-protection.md#alerts-spotlight) feature to see the correlation between alerts and events on a specific machine.
 
 ![The timeline shows an interactive history of the alerts seen on a machine](images/timeline.png)
 

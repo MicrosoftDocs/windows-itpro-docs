@@ -14,8 +14,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Insider Preview Build 14332 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Alerts in Windows Defender ATP indicate possible security breaches on endpoints in your organization.
 
@@ -41,38 +43,16 @@ Details displayed about the alert include:
 - When the alert was last observed
 - Alert description
 - Recommended actions
-- The incident graph
+- The potential scope of breach
 - The indicators that triggered the alert
+
+![A detailed view of an alert when clicked](images/alert-details.png)
 
 Alerts attributed to an adversary or actor display a colored tile with the actor name.
 
 Click on the actor's name to see a threat intelligence profile of the actor, including a brief overview of the actor, their interests or targets, tools, tactics, and processes (TTPs) as well as areas where it's active worldwide. You will also see a set of recommended actions to take.
 
 Some actor profiles include a link to download a more comprehensive threat intelligence report.
-
-![A detailed view of an alert when clicked](images/alert-details.png)
-
-## Incident graph
-The incident graph provides a visual representation of where an alert was seen, events that triggered the alert, and which other machines are affected by the event. It provides an illustrated alert footprint on the original machine and expands to show the footprint of each alert event on other machines. 
-
-You can click the circles on the incident graph to expand the nodes and view the associated events or files related to the alert. 
-
-## Alert spotlight
-The alert spotlight feature helps ease investigations by highlighting alerts related to a specific machine and events. You can highlight an alert and its related events in the machine timeline to increase your focus during an investigation.
-
-You can click on the machine link from the alert view to see the alerts related to the machine. 
-
-
-  > [!NOTE]
-  > This shortcut is not available from the Incident graph machine links.  
-
-Alerts related to the machine are displayed under the **Alerts related to this machine** section. 
-Clicking on an alert row takes you the to the date in which the alert was flagged on **Machine timeline**. This eliminates the need to manually filter and drag the machine timeline marker to when the alert was seen on that machine. 
-
-You can also choose to highlight an alert from the **Alerts related to this machine** or from the  **Machine timeline** section to see the correlation between the alert and other events that occurred on the machine. Right-click on any alert from either section and select **Mark related events**. This highlights alerts and events that are related and helps differentiate between the other alerts listed in the timeline. Highlighted events are displayed in all filtering modes whether you choose to view the timeline by **Detections**, **Behaviours**, or **Verbose**. 
-
-You can also remove the highlight by right-clicking a highlighted alert and selecting **Unmark related events**. 
-
 
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
