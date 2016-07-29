@@ -56,19 +56,19 @@ WIP gives you a new way to manage data policy enforcement for apps and documents
 
 -   **Manage your enterprise documents, apps, and encryption modes.**
 
-    -   **Copying or downloading enterprise data.** When an employee or an app downloads content from a location like SharePoint, a network share, or an enterprise web location, while using an WIP-protected device, WIP encrypts the data on the device.
+    -   **Copying or downloading enterprise data.** When an employee or an app downloads content from a location like SharePoint, a network share, or an enterprise web location, while using a WIP-protected device, WIP encrypts the data on the device.
 
     - **Using allowed apps.** Managed apps (apps that you've included on the Allowed Apps list in your WIP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if WIP management is set to **Block**, your employees can copy and paste from one protected app to another allowed app, but not to personal apps. Imagine an HR person wants to copy a job description from an allowed app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
 
     -   **Managed apps and restrictions.** With WIP you can control which apps can access and use your enterprise data. After adding an app to your allowed apps list, the app is trusted with enterprise data. All apps not on this list are blocked from accessing your enterprise data, depending on your WIP management-mode.
-
-    You don’t have to modify line-of-business apps that never touch personal data to list them as allowed apps; just include them in the allowed apps list.
+    
+        You don’t have to modify line-of-business apps that never touch personal data to list them as allowed apps; just include them in the allowed apps list.
 
     -   **Deciding your level of data access.** WIP lets you block, allow overrides, or audit employees' data sharing actions. Blocking the action stops it immediately. Allowing overrides let the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without blocking anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your allowed apps list.
 
     -   **Data encryption at rest.** WIP helps protect enterprise data on local files and on removable media.
     
-    Apps such as Microsoft Word work with WIP to help continue your data protection across local files and removable media. These apps are being referred to as, enterprise aware. For example, if an employee opens WIP-encrypted content from Word, edits the content, and then tries to save the edited version with a different name, Word automatically applies WIP to the new document.
+        Apps such as Microsoft Word work with WIP to help continue your data protection across local files and removable media. These apps are being referred to as, enterprise aware. For example, if an employee opens WIP-encrypted content from Word, edits the content, and then tries to save the edited version with a different name, Word automatically applies WIP to the new document.
 
     -   **Helping prevent accidental data disclosure to public spaces.** WIP helps protect your enterprise data from being accidentally shared to public spaces, such as public cloud storage. For example, if Dropbox™ isn’t on your allowed apps list, employees won’t be able to sync encrypted files to their personal cloud storage. Instead, if the employee stores the content to an app on your allowed apps list, like Microsoft OneDrive for Business, the encrypted files can sync freely to the business cloud, while maintaining the encryption locally.
 
