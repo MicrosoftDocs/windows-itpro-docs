@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP endpoints
-description: Use Group Policy or SCCM to deploy the configuration package or do manual registry changes on endpoints so that they are onboarded to the service.
-keywords: configure endpoints, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, sccm, system center configuration manager
+description: Configure endpoints so that they are onboarded to the service.
+keywords: configure endpoints, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,10 +14,8 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10, version 1607
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Endpoints in your organization must be configured so that the Windows Defender ATP service can get telemetry from them. There are various methods and deployment tools that you can use to configure the endpoints in your organization. 
 

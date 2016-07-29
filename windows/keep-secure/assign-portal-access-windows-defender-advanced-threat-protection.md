@@ -11,15 +11,12 @@ author: mjcaparas
 ---
 
 # Assign user access to the Windows Defender ATP portal
-
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10, version 1607
 - Azure Active Directory
-<!--Office 365-->
+- Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Windows Defender ATP users and access permissions are managed in Azure Active Directory (AAD). User can be assigned one of the following levels of permissions:
 - Full access (Read and Write)

@@ -17,8 +17,6 @@ author: mjcaparas
 - Windows 10 Insider Preview Build 14379 or later
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints. 
 
 For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723297(v=vs.85).aspx).
@@ -35,7 +33,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
     b.  Select **Mobile Device Management/Microsoft Intune**, click **Download package** and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file called  *WindowsDefenderATP.onboarding*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
@@ -53,13 +51,15 @@ Health Status for onboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThrea
  Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | 0 or 1 <br> Default value: 1 | Windows Defender ATP Sample sharing is enabled 
  
 
-> **Note**&nbsp;&nbsp;The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
+> [!NOTE]
+> The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
 
 ### Offboard and monitor endpoints
 
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
-> **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> [!NOTE]
+> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -82,7 +82,8 @@ Offboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding |
  Health Status for offboarded machines | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning | Boolean | FALSE |Windows Defender ATP service is not running
   | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | 0 | Offboarded from Windows Defender ATP
 
-> **Note**&nbsp;&nbsp;The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
+> [!NOTE]
+> The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
 
 
 ## Related topics

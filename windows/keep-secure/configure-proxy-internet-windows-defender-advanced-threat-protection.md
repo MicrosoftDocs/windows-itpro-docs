@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP endpoint proxy and Internet connection settings
 description: Configure the Windows Defender ATP proxy and internet settings to enable communication with the cloud service.
-keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, web proxy auto detect, wpad, netsh, winhttp, proxy server
+keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,10 +15,8 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10, version 1607
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report telemetry and communicate with the Windows Defender ATP service.
 
@@ -26,10 +24,12 @@ The embedded Windows Defender ATP sensor runs in system context using the LocalS
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
-- Configure Web Proxy Auto Detect (WPAD) settings and configure Windows to automatically detect the proxy server
+<!-- - Configure Web Proxy Auto Detect (WPAD) settings and configure Windows to automatically detect the proxy server
+- Configure the proxy server manually using Netsh-->
 
-- Configure the proxy server manually using Netsh
+- Configure the proxy server manually using a static proxy
 
+<!--
 ## Configure Web Proxy Auto Detect (WPAD) settings and proxy server
 
 Configure WPAD in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings.
@@ -48,6 +48,7 @@ Enable the **Automatically detect settings** option in the Windows Proxy setting
 
 5. If the **Use setup script** or **Manual proxy setup** options are enabled then you will need to [configure proxy settings manually by using Netsh](#configure-proxy-server-manually-using-netsh) method for WinHTTP to discover the appropriate proxy settings and connect.
 
+
 ## Configure the proxy server manually using Netsh
 
 If **Use setup script** or **Manual proxy setup** settings are configured in the Windows Proxy setting, then endpoints will not be discovered by WinHTTP.
@@ -64,7 +65,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -80,7 +81,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 
  1.  Open an elevated command-line prompt on the endpoint:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -100,7 +101,7 @@ After configuring the endpoints, you'll need to verify that the correct proxy se
 
 1.  Open an elevated command-line prompt on the endpoint:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -111,72 +112,73 @@ netsh winhttp show proxy
 ```
 
 For more information on how to use Netsh see, [Netsh Commands for Windows Hypertext Transfer Protocol (WINHTTP)](https://technet.microsoft.com/en-us/library/cc731131(v=ws.10).aspx)     
+-->
+## Configure the proxy server manually using a static proxy
+Configure a static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
+
+The static proxy is configurable through Group Policy (GP). The group policy can be found under: **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**.
+
+The registry key that this policy sets can be found at:
+```	HKLM\Software\Policies\Microsoft\Windows\DataCollection              TelemetryProxyServer```
+
+The policy and the registry key takes the following string format:
+```<server name or ip>:<port>```
+<br>
+For example: 10.0.0.6:8080
+
+If the static proxy settings are configured after onboarding, then you must restart the PC to apply the proxy settings.
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
-- *.blob.core.windows.net
-- crl.microsoft.com
-- eu.vortex-win.data.microsoft.com
-- sevillegwcus.microsoft.com
-- sevillegweus.microsoft.com
-- sevillegwneu.microsoft.com
-- sevillegwweu.microsoft.com
-- us.vortex-win.data.microsoft.com 
-- www.microsoft.com
+Primary Domain Controller | .Microsoft.com DNS record
+:---|:---
+ Central US | winatp-gw-cus.microsoft.com <br> us.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
+ East US (2)| winatp-gw-eus.microsoft.com <br> us.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
+ West Europe | winatp-gw-weu.microsoft.com <br> eu.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
+ North Europe | winatp-gw-neu.microsoft.com <br> eu.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
 
+ If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted to the above listed URLs.
 
-If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted to the above listed URLs.
 
 ## Verify client connectivity to Windows Defender ATP service URLs
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Windows Defender ATP service URLs.
 
-1. Download the connectivity verification tools to the PC where Windows Defender ATP sensor is running on:
+1. Download the connectivity verification tool to the PC where Windows Defender ATP sensor is running on.
 
-    - [Download PsTools Suite](https://technet.microsoft.com/en-us/sysinternals/bb896649)
-    - [Download PortQry Command Line Port Scanner Version 2.0 utility](https://www.microsoft.com/en-us/download/details.aspx?id=17148)
+2.  Extract the contents of SenseConnectivtyChecker on the endpoint.
 
-2. Extract the contents of **PsTools** and **PortQry** to a directory on the computer hard drive.
+3. Open an elevated command-line:
 
-3.  Open an elevated command-line:
-
-    a. Click **Start** and type **cmd**.
+    a. Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
 4. Enter the following command and press **Enter**:
 
     ```
-    HardDrivePath\PsExec.exe -s cmd.exe
+    HardDrivePath\RunSenseConnectivityCheck.cmd
     ```
-    Replace *HardDrivePath* with the path where the PsTools Suite was extracted to:
-    ![Image showing the command line](images/psexec-cmd.png)
+    Replace *HardDrivePath* with the path where the SenseConnectivtyChecker tool was downloaded to, for example ```C:\Work\tools\ConnectivityChecker\RunSenseConnectivityCheck.cmd```.
 
-5. Enter the following command and press **Enter**:
+5. Extract the *ConnectivityCheckResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
-    ```
-    HardDrivePath\portqry.exe -n us.vortex-win.data.microsoft.com -e 443 -p tcp
-    ```
-    Replace *HardDrivePath* with the path where the PortQry utility was extracted to:
-    ![Image showing the command line](images/portqry.png)
+6. Open *ConnectivityCheck.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
+The tool checks the connectivity of Windows Defender ATP service URLs that Windows Defender ATP client is configured to interact with. It then prints the results into the *ConnectivityCheck.txt* file for each URL that can potentially be used to communicate with the Windows Defender ATP  services. For example:
+  ```
+  Testing URL : https://xxx.microsoft.com/xxx
+  1 - Default proxy: Succeeded (200)
+  2 - Proxy auto discovery (WPAD): Succeeded (200)
+  3 - Proxy disabled: Succeeded (200)
+  4 - Named proxy: Doesn't exist
+  5 - Command line proxy: Doesn't exist              
+  ```
 
-6.	Verify that the output shows that the name is **resolved** and connection status is **listening**.
+If at least one of the connectivity options returns a (200) status, then the Windows Defender ATP client can communicate with the tested URL properly using this connectivity method. <br><br>
 
-7. Repeat the same steps for the remaining URLs with the following arguments:
-
-   - portqry.exe -n eu.vortex-win.data.microsoft.com -e 443 -p tcp
-   - portqry.exe -n sevillegwcus.microsoft.com -e 443 -p tcp
-   - portqry.exe -n sevillegweus.microsoft.com -e 443 -p tcp
-   - portqry.exe -n sevillegwweu.microsoft.com -e 443 -p tcp
-   - portqry.exe -n sevillegwneu.microsoft.com -e 443 -p tcp
-   - portqry.exe -n www.microsoft.com -e 80 -p tcp
-   - portqry.exe -n crl.microsoft.com -e 80 -p tcp
-
-8. Verify that each URL shows that the name is **resolved** and the connection status is **listening**.
-
-If the any of the verification steps indicate a fail, then verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
+If however the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Windows Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 ## Related topics
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
