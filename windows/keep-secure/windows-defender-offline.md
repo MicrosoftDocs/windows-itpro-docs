@@ -19,8 +19,6 @@ author: iaanw
 
 Windows Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
 
-Read more in [What is Windows Defender Offline?](http://windows.microsoft.com/windows/what-is-windows-defender-offline) 
-
 In Windows 10, Windows Defender Offline can be run with one click directly from the Windows Defender client. In previous versions of Windows, a user had to install Windows Defender Offline to bootable media, restart the endpoint, and load the bootable media.
 
 ## Pre-requisites and requirements
@@ -39,21 +37,15 @@ To run Windows Defender Offline from the endpoint, the user must be logged in wi
  
 ## Windows Defender Offline updates
 
-Windows Defender Offline uses the most up-to-date signature definitions available; it's updated through the same update session as Windows Defender - usually though Microsoft Update or through the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx). The Windows Defender Offline image is the same platform connected through the hardwired network, so it can update itself from the wired network.
+Windows Defender Offline uses the most up-to-date signature definitions available on the endpoint; it's updated whenever Windows Defender is updated with new signature definitions. Depending on your setup, this is usually though Microsoft Update or through the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-You can still download Windows Defender Offline and create bootable media to run on any endpoints that are not connected to the Internet. <span style="background-color:yellow">{{This still true?}}</span>
+>[!NOTE]Before running an offline scan, you should attempt to update the definitions on the endpoint. You can either force an update via Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+
+For information on setting up Windows Defender updates, see the [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md) topic.
 
 ## Usage scenarios
 
-In most instances, Windows Defender will prompt you or the endpoint user to run Windows Defender Offline. You might also choose to run Windows Defender Offline if:
-
-- You have reason to suspect there is malware on the endpoint but that is not being detected by Windows Defender.
-
-- You want to perform the most complete scan available to ensure the endpoint is not infected.
-
-- Windows Defender reports that it has successfully cleaned or remediated a threat, however the threat returns.
-
-If Windows Defender determines that Windows Defender Offline needs to run, it will prompt the user on the endpoint. <span style="background-color:yellow">{{Is this also revealed on SCCM or to the admin? How is that managed?}}</span>
+In Windows 10, version 1607, you can manually force an offline scan. Alternatively, if Windows Defender determines that Windows Defender Offline needs to run, it will prompt the user on the endpoint. The need to perform an offline scan will also be revealed in System Center Configuration Manager, if you're using it to manage your endpoints.
 
 The prompt can occur via a notification, similar to the following:
 
@@ -63,56 +55,69 @@ The user will also be notified within the Windows Defender client:
 
 ![Windows Defender showing the requirement to run Windows Defender Offline](images/defender/client.png)
 
+In Configuration Manager, you can identify the status of endpoints by navigating to **Monitoring > Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**. Windows Defender Offline scans are indicated under **Malware remediation status** as **Offline scan required**.
+
+![System Center Configuration Manager indicating a Windows Defender Offline scan is required](images/defender/sccm-wdo.png)
+
 ## Manage notifications
 <a name="manage-notifications"></a>
 
-You can suppress Windows Defender Offline notifications with Group Policy.
+You can suppress Windows Defender Offline notifications by modifying the registry or with Group Policy. 
 
-**Suppress notifications with the Group Policy Management Console:**
+>[!NOTE]Changing these settings will affect *all* notifications from Windows Defender. Disabling notifications will mean the endpoint user will not see any messages about any threats detected, removed, or if additional steps are required.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+**Use the registry to disable Windows Defender notifications on individual endpoints:**
 
-1. In the **Group Policy Management Editor** go to **Computer configuration**.
+1. Click **Start**, type **Run**, and press **Enter**.
 
-1. Click **Policies** then **Administrative templates**.
+2. From the **Run** dialog box, type **regedit** and press **Enter**.
 
-1. Expand the tree through **Windows components > Windows Defender > Client Interface**.
+4. In the **Registry Editor** navigate to the **ux configuration** key under:
 
-1. Double-click the **Suppresses reboot notifications** setting and set the option to **Enabled**. Click **Ok**. This will disable notifications that ask the endpoint user to reboot the machine to perform additional cleaning.
+    ```text
+    HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\ux configuration
+    ```
 
-<span style="background-color:yellow">{{Is this the correct setting in GPMC? I can't find a WDO suppress GP setting – this is the only one but it matches the description in the .adm template section. Which makes me wonder if the name of the setting in the template is correct or outdated? See the image below}}</span>
+5. Double-click the **Notifications_Suppress** value and set it to **1**.
 
-**Suppress notifications with the ADM template:**
+![Image of enhanced notification suppression in Registry Editor](images/defender/ux-config-key.png)
 
-1.	Download the windowsdefender.adm Group Policy from the [Group Policy ADM files](https://www.microsoft.com/download/details.aspx?id=18664) on the Microsoft Download Center if it is not already deployed in Windows and visible in the Group Policy Object Editor or Group Policy Management Console.
 
-2.	Add the windowsdefender.adm Group Policy template as described in the [Add or remove an Administrative Template (.adm file)](https://technet.microsoft.com/library/cc739134(v=ws.10).aspx) topic.
+**Use Group Policy to suppress Windows Defender notifications:**
 
-3.	Use the following Group Policy setting: <span style="background-color:yellow">{{ Is this template distributed by default in Windows? Or does an admin need to download it from somewhere? Can they get it from here https://www.microsoft.com/en-us/download/details.aspx?id=18664}}</span>
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-- Setting name: **SuppressWdoNotification**
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-- Group Policy location: **Computer Configuration\Administrative Templates\Windows Components\Windows Defender\Client Interface**
+4.  Click **Policies** then **Administrative templates**.
 
-- Registry path and value name: **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\UXConfiguration**
+5.  Expand the tree to **Windows components > Windows Defender > Client Interface**.
 
-- Description: **Suppresses WDO notification in UI only (for cases where UI cannot be in lockdown mode).**
- 
-![Windows Defender ATP service components](images/defender/gp.png)
+1.  Double-click the **Suppress all notifications** setting and set the option to **Enabled**. Click **OK**. This will disable all notifications shown by the Windows Defender client.
 
-For information about managing ADMX files and using a central store for Administrative Templates files, see the [Managing Group Policy ADMX Files Step-by-Step Guide](http://go.microsoft.com/fwlink/?LinkId=75124). For Group Policy planning information, see the [Group Policy Planning and Deployment Guide](http://go.microsoft.com/fwlink/?LinkId=182208).	
+## Configure Windows Defender Offline settings
+
+You can use Windows Management Instrumentation to enable and disable certain features in Windows Defender Offline. For example, you can use `Set-MpPreference` to change the `UILockdown` setting to disable and enable notifications. 
+
+For more information about using Windows Management Instrumentation to configure Windows Defender Offline, including configuration parameters and options, see the following topics:
+
+-	[Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/windows/desktop/dn439477(v=vs.85).aspx)
+
+-	[Windows Defender MSFT_MpPreference class](https://msdn.microsoft.com/en-us/library/windows/desktop/dn455323(v=vs.85).aspx)
+
+For more information about notifications in Windows Defender, see the [Configure enhanced notifications in Windows Defender](windows-defender-enhanced-notifications.md)] topic.
 
 ## Run a scan 
 
-Windows Defender Offline uses up-to-date threat definitions to scan the endpoint for malware that might be hidden. 
+Windows Defender Offline uses up-to-date threat definitions to scan the endpoint for malware that might be hidden. In Windows 10, version 1607, you can manually force an offline scan using Windows Update and Security settings.
 
 >[!NOTE]Before you use Windows Defender Offline, make sure you save any files and shut down running programs. The Windows Defender Offline scan takes about 15 minutes to run. It will restart the endpoint when the scan is complete. 
 
 You can set up a Windows Defender Offline scan with the following:
 
--	Windows Defender
-
 -	Windows Update and Security settings
+
+-	Windows Defender
 
 -	Windows Management Instrumentation
 
@@ -121,16 +126,6 @@ You can set up a Windows Defender Offline scan with the following:
 -	Group Policy
 
 >[!NOTE]The scan is performed outside of the usual Windows operating environment. The user interface will appear different to a normal scan performed by Windows Defender. After the scan is completed, the endpoint will be restarted and Windows will load normally.
-
-**Run Windows Defender Offline from Windows Defender:**
-
-1.	Open the **Start** menu, type **windows defender**, and press **Enter** to open the Windows Defender client. 
-
-1.	On the **Home** tab click **Download and Run**.
-
-    ![Windows Defender home tab showing the Download and run button](images/defender/download-wdo.png)
-
-1.	Follow the prompts to continue with the scan. You might be warned that you'll be signed out of Windows and that the endpoint will restart.
 
 **Run Windows Defender Offline from Windows Settings:**
 
@@ -143,6 +138,17 @@ You can set up a Windows Defender Offline scan with the following:
     ![Windows Defender Offline setting](images/defender/settings-wdo.png)
 
 1.	Follow the prompts to continue with the scan. You might be warned that you'll be signed out of Windows and that the endpoint will restart.
+
+**Run Windows Defender Offline from Windows Defender:**
+
+1.	Open the **Start** menu, type **windows defender**, and press **Enter** to open the Windows Defender client. 
+
+1.	On the **Home** tab click **Download and Run**.
+
+    ![Windows Defender home tab showing the Download and run button](images/defender/download-wdo.png)
+
+1.	Follow the prompts to continue with the scan. You might be warned that you'll be signed out of Windows and that the endpoint will restart.
+
 
 **Use Windows Management Instrumentation to configure and run Windows Defender Offline:**
 
@@ -160,15 +166,6 @@ For more information about using Windows Management Instrumentation to run a sca
 
 -	[MSFT_MpWDOScan class article](https://msdn.microsoft.com/library/windows/desktop/mt622458(v=vs.85).aspx)
 
-You can also use Windows Management Instrumentation to enable and disable certain features in Windows Defender Offline. For example, you can use `Set-MpPreference` to change the `UILockdown` setting to disable and enable notifications. 
-
-For more information about using Windows Management Instrumentation to configure Windows Defender Offline, including configuration parameters and options, see the following topics:
-
--	[Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/windows/desktop/dn439477(v=vs.85).aspx)
-
--	[Windows Defender MSFT_MpPreference class](https://msdn.microsoft.com/en-us/library/windows/desktop/dn455323(v=vs.85).aspx)
-
-For more information about notifications in Windows Defender, see the [Configure enhanced notifications in Windows Defender](windows-defender-enhanced-notifications.md)] topic.
 
 To run Windows Defender Offline remotely, xxx. <span style="background-color:yellow">{{How do we do this? Still in pipeline?}}</span>
 
