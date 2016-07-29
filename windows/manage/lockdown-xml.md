@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Configure Windows 10 Mobile using Lockdown XML
