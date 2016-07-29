@@ -12,7 +12,10 @@ author: brianlic-msft
 
 Microsoft is dedicated to provide our customers with a secure operating system, such as Windows 10 and Windows Server, as well as secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control of your environments by providing various configuration capabilities. Even though Windows and Windows Server are designed to be secure out-of-the-box, a large number of organizations still want more granular control of their security configurations. To navigate these large number of controls, organizations need guidance for configuring various security features. Microsoft provides this guidance in the form of security baselines.
 
-We recommend implementing an industry-standard configuration that is broadly known and well-tested, such as a Microsoft security baseline, as opposed to creating one yourself. This helps increase flexibility and reduce costs.  
+We recommend implementing an industry-standard configuration that is broadly known and well-tested, such as a Microsoft security baseline, as opposed to creating one yourself. This helps increase flexibility and reduce costs.
+
+ > [!NOTE]  
+ > Microsoft Security Compliance Manager 4.0 is available from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53353).  
 
 ## What are security baselines?
 
@@ -37,9 +40,6 @@ To help faster deployments and increase the ease of managing Windows, Microsoft 
  
  - Ensure that user and device configuration settings are compliant with the baseline. 
  - Set configuration settings. For example, you can use Group Policy, System Center Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline. 
-
- > [!NOTE]  
- > Microsoft Security Compliance Manager 4.0 is available from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53353).
  
 ## Where can I get the security baselines?
  
