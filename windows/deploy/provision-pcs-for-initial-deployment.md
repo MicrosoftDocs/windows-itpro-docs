@@ -44,13 +44,14 @@ In a simple provisioning package, you can configure:
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more. To learn about provisioning packages that include more than the settings in a simple provisioning package, see [Provision PCs with apps and certificates](provision-pcs-with-apps-and-certificates.md). 
 
-> **Tip!**  Use simple provisioning to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
+> [!TIP]
+> Use simple provisioning to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
 
 ![open advanced editor](images/icd-simple-edit.png)
 
 ## Create the provisioning package
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK and select **Configuration Designer**.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
@@ -64,7 +65,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 4. In the **Set up device** step, enter a unique 15-character name for the device. For help generating a unique name, you can use %SERIAL%, which includes a hardware-specific serial number, or you can use %RAND:x%, which generates random characters of x length.
 
-5. (Optional) You can upgrade the following editions of Windows 10 by providing a product key for the edition to upgrade to.
+5. (*Optional*) You can upgrade the following editions of Windows 10 by providing a product key for the edition to upgrade to.
     - Pro to Education
     - Pro to Enterprise
     - Enterprise to Education
@@ -75,7 +76,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 8. Click **Enroll into Active Directory**.
 
-9. Toggle **Yes** or **No** for Active Directory enrollment. If you select **Yes**, enter the credentials for an account with permissions to enroll the device. (Optional) Enter a user name and password to create a local administrator account.
+9. Toggle **Yes** or **No** for Active Directory enrollment. If you select **Yes**, enter the credentials for an account with permissions to enroll the device. (*Optional*) Enter a user name and password to create a local administrator account.
 
     > **Warning**: If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
       - Use a least-privileged domain account to join the device to the domain.
@@ -88,7 +89,8 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 12. Click **Create**.
 
-> **Important**  When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+> [!IMPORTANT]
+> When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 ## Apply package
 
