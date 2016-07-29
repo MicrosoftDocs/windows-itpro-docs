@@ -1,7 +1,7 @@
 ---
 title: Managing the UE-V Service and Packages with Windows PowerShell and WMI
 description: Managing the UE-V Service and Packages with Windows PowerShell and WMI
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,7 +11,7 @@ ms.prod: w10
 
 # Managing the UE-V Service and Packages with Windows PowerShell and WMI
 
-You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage Microsoft User Experience Virtualization (UE-V) service configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](https://technet.microsoft.com/library/dn520275.aspx).
+You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage User Experience Virtualization (UE-V) service configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](https://technet.microsoft.com/library/dn520275.aspx).
 
 
 ## To configure the UE-V service by using Windows PowerShell
@@ -62,14 +62,6 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <tr class="odd">
     <td align="left"><p><code>Get-UevConfiguration -Details</code></p></td>
     <td align="left"><p>Gets the details for each configuration setting. Displays where the setting is configured or if it uses the default value. Is displayed if the current setting is valid.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><code>Set-UevConfiguration -Computer –ContactITDescription &lt;IT description&gt;</code></p></td>
-    <td align="left"><p>Sets the text that is displayed in the Company Settings Center for the help link.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><code>Set-UevConfiguration -Computer -ContactITUrl &lt;string&gt;</code></p></td>
-    <td align="left"><p>Sets the URL of the link in the Company Settings Center for the help link. Any URL protocol can be used.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration -Computer –EnableDontSyncWindows8AppSettings</code></p></td>

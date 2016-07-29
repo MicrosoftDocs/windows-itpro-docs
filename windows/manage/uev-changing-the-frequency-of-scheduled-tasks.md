@@ -1,7 +1,7 @@
 ---
 title: Changing the Frequency of UE-V Scheduled Tasks
 description: Changing the Frequency of UE-V Scheduled Tasks
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +12,7 @@ ms.prod: w10
 # Changing the Frequency of UE-V Scheduled Tasks
 
 
-The Microsoft User Experience Virtualization (UE-V) Agent installer, AgentSetup.exe, creates the following scheduled tasks during the UE-V Agent installation:
+When the User Experience Virtualization (UE-V) service is enabled, it creates the following scheduled tasks:
 
 -   **Monitor Application Settings**
 
@@ -22,50 +22,16 @@ The Microsoft User Experience Virtualization (UE-V) Agent installer, AgentSetup.
 
 -   **Template Auto Update**
 
--   **Collect CEIP data**
-
--   **Upload CEIP Data**
-
 **Note**  
-With the exception of Collect CEIP Data, these tasks must remain enabled as UE-V cannot function without them.
-
- 
+These tasks must remain enabled as UE-V cannot function without them.
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 
-For more information about Schtasks.exe, see [How to use Schtasks,exe to Schedule Tasks in Windows Server 2003](http://go.microsoft.com/fwlink/?LinkID=264854).
-
-For more information about
+For more information about Schtasks.exe, see [Schtasks](https://technet.microsoft.com/library/cc725744(v=ws.11).aspx).
 
 ## UE-V Scheduled Tasks
 
-
 The following scheduled tasks are included in UE-V with sample scheduled task configuration commands.
-
-### Collect CEIP Data
-
-If upon installation the user or administrator choses to participate in the Customer Experience Improvement Program (CEIP), UE-V collects data to help improve the product in future releases. This scheduled task only runs at logon. The **Collect CEIP Data** task runs the UevSqmSession.exe, which is located in the UE-V Agent installation directory.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task name</th>
-<th align="left">Default event</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>\Microsoft\UE-V\Collect CEIP data</p></td>
-<td align="left"><p>Logon</p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ### Monitor Application Settings
 
@@ -179,30 +145,6 @@ The **Template Auto Update** task checks the settings template catalog for new, 
 schtasks /change /tn "Microsoft\UE-V\Template Auto Update" /ri 60
 ```
 
-### Upload CEIP Data
-
-The **Upload CEIP Data** task runs during the installation if the user or the administrator chose to participate in the Customer Experience Improvement Program (CEIP). This task uploads the data to the CEIP servers where the data is used to help improve the product for future releases of UE-V. This scheduled task runs at logon and every 4 hours afterwards. The **Upload CEIP data** task runs the UevSqmUploader.exe file, which is located in the UE-V Agent installation directory.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task name</th>
-<th align="left">Default event</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>\Microsoft\UE-V\Upload CEIP data</p></td>
-<td align="left"><p>At logon and every 4 hours</p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ## UE-V Scheduled Task Details
 
@@ -259,22 +201,6 @@ The following chart provides additional information about scheduled tasks for UE
 <td align="left"><p>N/A</p></td>
 <td align="left"><p>Checks the settings template catalog for new, updated, or removed templates. This task only runs if SettingsTemplateCatalog is configured.</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p><strong>Collect CEIP data</strong> (UevSqmSession.exe)</p></td>
-<td align="left"><p>At logon launches service</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>If the user or administrator opts in to the Customer Experience Improvement Program (CEIP), this task collects data that helps improve UE-V future releases.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Upload CEIP Data</strong> (UevSqmUploader.exe)</p></td>
-<td align="left"><p>Runs at logon and at 4:00 AM every day thereafter.</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Only if Network is connected</p></td>
-<td align="left"><p>If the user or administrator opts in to the Customer Experience Improvement Program (CEIP), this task uploads the data to the CEIP servers.</p></td>
-</tr>
 </tbody>
 </table>
 
@@ -302,7 +228,7 @@ To find Scheduled Tasks, perform the following:
 
 The following additional information applies to UE-V scheduled tasks:
 
--   ll task sequence programs are located in the UE-V Agent installation folder, `%programFiles%\Microsoft User Experience Virtualization\Agent\[architecture]\`, by default.
+-   All task sequence programs are located in the UE-V Agent installation folder, `%programFiles%\Microsoft User Experience Virtualization\Agent\[architecture]\`, by default.
 
 -   The Sync Controller Application Scheduled task is the crucial component when the UE-V SyncMethod is set to “SyncProvider” (UE-V default configuration). This scheduled task keeps the SettingsSToragePath synchronized with the locally cached versions of the settings package files. If users complain that settings do not synchronize often enough, then you can reduce the scheduled task setting to as little as 1 minute.  You can also increase the 30 min default to a higher amount if necessary.
 
@@ -312,21 +238,10 @@ The following additional information applies to UE-V scheduled tasks:
 
 ## Have a suggestion for UE-V?
 
-
 Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
-
 [Administering UE-V](uev-administering-uev.md)
 
 [Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md#deploycatalogue)
-
- 
-
- 
-
-
-
-
-

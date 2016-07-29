@@ -1,7 +1,7 @@
 ---
 title: Accessibility for UE-V
 description: Accessibility for UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

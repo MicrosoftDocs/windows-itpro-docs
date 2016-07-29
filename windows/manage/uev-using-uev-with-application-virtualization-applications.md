@@ -1,7 +1,7 @@
 ---
 title: Using UE-V with Application Virtualization Applications
 description: Using UE-V with Application Virtualization Applications
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +12,7 @@ ms.prod: w10
 # Using UE-V with Application Virtualization Applications
 
 
-Microsoft User Experience Virtualization (UE-V) supports Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, an additional step is required because you cannot run the UE-V template generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V 4.5, App-V 4.6, and App-V 5.0 packages.
+User Experience Virtualization (UE-V) supports Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, an additional step is required because you cannot run the UE-V template generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V 4.5, App-V 4.6, and App-V 5.0 packages.
 
 ## UE-V settings synchronization for App-V applications
 

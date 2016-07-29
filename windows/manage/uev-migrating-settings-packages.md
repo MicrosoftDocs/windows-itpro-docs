@@ -1,7 +1,7 @@
 ---
 title: Migrating UE-V Settings Packages
 description: Migrating UE-V Settings Packages
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +12,7 @@ ms.prod: w10
 # Migrating UE-V Settings Packages
 
 
-In the lifecycle of a Microsoft User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
+In the lifecycle of a User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
 
 -   Upgrade of existing server hardware to a more modern server.
 

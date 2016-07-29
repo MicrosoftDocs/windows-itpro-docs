@@ -1,7 +1,7 @@
 ---
 title: Technical Reference for UE-V
 description: Technical Reference for UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +12,7 @@ ms.prod: w10
 # Technical Reference for UE-V
 
 
-This technical reference section includes additional technical documentation about the various features of Microsoft User Experience Virtualization (UE-V). This information is provided to help the administrator better understand UE-V.
+This technical reference section includes additional technical documentation about the various features of User Experience Virtualization (UE-V). This information is provided to help the administrator better understand UE-V.
 
 ## Technical reference topics for UE-V
 
@@ -41,10 +41,10 @@ This technical reference section includes additional technical documentation abo
 
     Provides a brief overview of accounts, groups, and other security-related considerations for UE-V.
 
-## Other resources for this product
+## Other resources for this feature
 
 
--   [Microsoft User Experience Virtualization (UE-V) 2.x](index.md)
+-   [User Experience Virtualization for Windows 10, version 1607](uev-for-windows.md)
 
 -   [Get Started with UE-V](uev-getting-started.md)
 

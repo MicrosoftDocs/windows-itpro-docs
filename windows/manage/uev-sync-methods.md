@@ -1,7 +1,7 @@
 ---
 title: Sync Methods for UE-V
 description: Sync Methods for UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,15 +25,11 @@ This table provides a description of each SyncMethod configuration:
 
 You can configure the sync method in these ways:
 
-<!--  GETTING CONFIRMATION FOR THE FOLLOWING TO BE DELETED:
--   When you [Deploy the UE-V Agent](http://technet.microsoft.com/library/dn458891.aspx#agent) through a command-line parameter or in a batch script
--->
-
 -   Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
 
 -   With the [System Center Configuration Pack](uev-configuring-uev-with-system-center-configuration-manager-2012.md) for UE-V
 
--   After the UE-V service is enabled, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
+-   With [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
 ## Have a suggestion for UE-V?
 

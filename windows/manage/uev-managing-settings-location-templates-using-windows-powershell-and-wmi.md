@@ -1,7 +1,7 @@
 ---
 title: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 description: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +12,7 @@ ms.prod: w10
 # Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 
 
-Microsoft User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](https://technet.microsoft.com/library/dn520275.aspx).
+User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](https://technet.microsoft.com/library/dn520275.aspx).
 
 ## Manage UE-V settings location templates by using Windows PowerShell
 
@@ -192,9 +192,6 @@ To display a list of Windows apps that can synchronize settings on a computer wi
 
 **Definitions of Get-UevAppxPackage properties**
 
-<a href="" id="displayname"></a>**DisplayName**  
-The name that is displayed to the user in the Company Settings Center application. The `DisplayName` property is derived from the `PackageFamilyName` property.
-
 <a href="" id="packagefamilyname"></a>**PackageFamilyName**  
 The name of the package that is installed for the current user.
 
@@ -223,9 +220,6 @@ To get the computer-configured list of Windows apps, at the Windows PowerShell c
 For either parameter, CurrentComputerUser or Computer, the cmdlet returns a list of the Windows apps that are configured at the user or at the computer level.
 
 **Definitions of properties**
-
-<a href="" id="displayname"></a>**DisplayName**  
-The name that is displayed to the user in the Company Settings Center application. The `DisplayName` property is derived from the `PackageFamilyName` property.
 
 <a href="" id="packagefamilyname"></a>**PackageFamilyName**  
 The name of the package that is installed for the current user.

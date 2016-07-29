@@ -1,7 +1,7 @@
 ---
 title: Manage Configurations for UE-V
 description: Manage Configurations for UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,10 +12,9 @@ ms.prod: w10
 # Manage Configurations for UE-V
 
 
-In the course of the Microsoft User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V Agent and also manage storage locations for resources such as settings package files. You might have to perform other tasks, for example, configuring the Company Settings Center to define how users interact with UE-V. The following topics provide guidance for managing these UE-V resources.
+In the course of the User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V service and also manage storage locations for resources such as settings package files. The following topics provide guidance for managing these UE-V resources.
 
 ## Configuring UE-V by using Group Policy Objects
-
 
 You can use Group Policy Objects to modify the settings that define how UE-V synchronizes settings on computers.
 
@@ -23,27 +22,17 @@ You can use Group Policy Objects to modify the settings that define how UE-V syn
 
 ## Configuring UE-V with System Center Configuration Manager 2012
 
-
-You can use System Center 2012 Configuration Manager to manage the UE-V Agent by using the UE-V 2 Configuration Pack.
+You can use System Center 2012 Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
 
 [Configuring UE-V with System Center Configuration Manager 2012](uev-configuring-uev-with-system-center-configuration-manager-2012.md)
 
 ## Administering UE-V with PowerShell and WMI
 
-
 UE-V provides Windows PowerShell cmdlets, which can help administrators perform various UE-V tasks.
 
 [Administering UE-V with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
-## Configuring the Company Settings Center for UE-V
-
-
-You can configure the Company Settings Center that is installed by using the UE-V Agent to define how users interact with UE-V.
-
-[Configuring the Company Settings Center for UE-V](uev-configuring-the-company-settings-center.md)
-
 ## Examples of configuration settings for UE-V
-
 
 Here are some examples of UE-V configuration settings:
 
@@ -59,15 +48,11 @@ Here are some examples of UE-V configuration settings:
 
 -   **Synchronization Enable:** Specifies whether the UE-V settings synchronization is enabled or disabled.
 
--   **Maximum Package Size:** Specifies a settings package file threshold size in bytes at which the UE-V Agent reports a warning.
+-   **Maximum Package Size:** Specifies a settings package file threshold size in bytes at which the UE-V service reports a warning.
 
 -   **Don’t Sync Windows App Settings:** Specifies that UE-V should not synchronize Windows apps.
 
--   **Enable/Disable First Use Notification:** Specifies whether UE-V displays a dialog box the first time that the UE-V Agent runs on a user’s computer.
-
--   **Enable/Disable Tray Icon:** Specifies whether UE-V displays an icon in the notification area and any notifications associated with it. The icon provides a link to the Company Settings Center.
-
--   **Custom Contact IT Hyperlink:** Defines the path, text, and description for the **Contact IT** hyperlink in the Company Settings Center.
+-   **Enable/Disable First Use Notification:** Specifies whether UE-V displays a dialog box the first time that the UE-V service runs on a user’s computer.
 
 ## Have a suggestion for UE-V?
 

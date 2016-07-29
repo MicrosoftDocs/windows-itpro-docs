@@ -1,7 +1,7 @@
 ---
 title: Get Started with UE-V
 description: Get Started with UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +12,7 @@ ms.prod: w10
 
 Applies to: Windows 10, version 1607
 
-Follow the steps in this topic to deploy Microsoft User Experience Virtualization (UE-V) in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
+Follow the steps in this topic to deploy User Experience Virtualization (UE-V) in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
 
 **Note**
 The information in this section is explained in greater detail throughout the rest of the documentation. If you’ve already determined that UE-V is the right solution and you don’t need to further evaluate it, go to Prepare a UE-V deployment.
@@ -35,11 +35,9 @@ Before you proceed, ensure that your environment meets the following requirement
 
 | **Operating system**   | **Edition**  | **Service pack** | **System architecture** | **Windows PowerShell**           | **Microsoft .NET Framework** |
 |-------------------------|-------------|------------------|-------------------------|----------------------------------|------------------------------|
-| Windows 10, version 1607 | Windows 10 Enterprise         | NA                                 | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
-| Windows 7                | Ultimate, Enterprise, or Professional Edition   | SP1              | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
-| Windows Server 2008 R2   | Standard, Enterprise, Datacenter, or Web Server | SP1              | 64-bit | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
-| Windows 8 and Windows 8.1 | Enterprise or Pro              | None                             | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4.5  |
-| Windows Server 2012 or Windows Server 2012 R2 | Standard or Datacenter         | None         | 64-bit | Windows PowerShell 3.0 or higher | .NET Framework 4.5 |
+| Windows 10, version 1607 | Windows 10 Enterprise         | NA                      | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4 or higher   |
+| Windows 8 and Windows 8.1 | Enterprise or Pro              | None                  | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4.5  |
+| Windows Server 2012 or Windows Server 2012 R2 | Standard or Datacenter    | None   | 64-bit                  | Windows PowerShell 3.0 or higher | .NET Framework 4.5 |
 
 ## Step 2: Deploy the settings storage location
 
@@ -133,7 +131,7 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
 You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
 
-Other resources for this product
+Other resources for this feature
 --------------------------------
 
 -   [User Experience Virtualization](uev-for-windows.md)
