@@ -1,8 +1,7 @@
 ---
-title: Deploying Microsoft Office 2010 by Using App-V
+title: Deploying Microsoft Office 2010 by Using App-V (Windows 10)
 description: Deploying Microsoft Office 2010 by Using App-V
 author: jamiejdt
-ms.assetid: ae0b0459-c0d6-4946-b62d-ff153f52d1fb
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Deploying Microsoft Office 2010 by Using App-V
 
 
-You can create Office 2010 packages for Microsoft Application Virtualization (App-V) 5.1 using one of the following methods:
+You can create Office 2010 packages for Microsoft Application Virtualization (App-V) using one of the following methods:
 
 -   Application Virtualization (App-V) Sequencer
 
@@ -36,14 +35,6 @@ The following table shows the App-V versions, methods of Office package creation
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><p>Supported App-V versions</p></td>
-<td align="left"><ul>
-<li><p>4.6</p></li>
-<li><p>5.0</p></li>
-<li><p>5.1</p></li>
-</ul></td>
-</tr>
 <tr class="even">
 <td align="left"><p>Package creation</p></td>
 <td align="left"><ul>
@@ -69,17 +60,17 @@ The following table shows the App-V versions, methods of Office package creation
 
  
 
-## Creating Office 2010 App-V 5.1 using the sequencer
+## Creating Office 2010 App-V using the sequencer
 
 
-Sequencing Office 2010 is one of the main methods for creating an Office 2010 package on App-V 5.1. Microsoft has provided a detailed recipe through a Knowledge Base article. To create an Office 2010 package on App-V 5.1, refer to the following link for detailed instructions:
+Sequencing Office 2010 is one of the main methods for creating an Office 2010 package on App-V. Microsoft has provided a detailed recipe through a Knowledge Base article. To create an Office 2010 package on App-V, refer to the following link for detailed instructions:
 
 [How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://go.microsoft.com/fwlink/p/?LinkId=330676)
 
-## Creating Office 2010 App-V 5.1 packages using package accelerators
+## Creating Office 2010 App-V packages using package accelerators
 
 
-Office 2010 App-V 5.1 packages can be created through package accelerators. Microsoft has provided package accelerators for creating Office 2010 on Windows 10, Windows 8 and Windows 7. To create Office 2010 packages on App-V using Package accelerators, refer to the following pages to access the appropriate package accelerator:
+Office 2010 App-V packages can be created through package accelerators. Microsoft has provided package accelerators for creating Office 2010 on Windows 10, Windows 8 and Windows 7. To create Office 2010 packages on App-V using Package accelerators, refer to the following pages to access the appropriate package accelerator:
 
 -   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=330677)
 
@@ -87,7 +78,7 @@ Office 2010 App-V 5.1 packages can be created through package accelerators. Micr
 
 For detailed instructions on how to create virtual application packages using App-V package accelerators, see [How to Create a Virtual Application Package Using an App-V Package Accelerator](appv-create-a-virtual-application-package-package-accelerator.md).
 
-## Deploying the Microsoft Office package for App-V 5.1
+## Deploying the Microsoft Office package for App-V
 
 
 You can deploy Office 2010 packages by using any of the following App-V deployment methods:
@@ -101,7 +92,7 @@ You can deploy Office 2010 packages by using any of the following App-V deployme
 ## Office App-V package management and customization
 
 
-Office 2010 packages can be managed like any other App-V 5.1 packages through known package management mechanisms. No special instructions are needed, for example, to add, publish, unpublish, or remove Office packages.
+Office 2010 packages can be managed like any other App-V packages through known package management mechanisms. No special instructions are needed, for example, to add, publish, unpublish, or remove Office packages.
 
 ## Microsoft Office integration with Windows
 
@@ -295,18 +286,8 @@ The following table provides a full list of supported integration points for Off
 
 **Dynamic Configuration**
 
-[About App-V 5.1 Dynamic Configuration](appv-dynamic-configuration.md)
+[About App-V Dynamic Configuration](appv-dynamic-configuration.md)
 
-## Got a suggestion for App-V?
+## Have a suggestion for App-V?
 
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
-
- 
-
- 
-
-
-
-
-
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).

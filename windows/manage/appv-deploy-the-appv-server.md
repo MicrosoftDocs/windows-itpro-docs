@@ -1,25 +1,22 @@
 ---
-title: How to Deploy the App-V 5.1 Server
-description: How to Deploy the App-V 5.1 Server
+title: How to Deploy the App-V Server (Windows 10)
+description: How to Deploy the App-V Server
 author: jamiejdt
-ms.assetid: 4729beda-b98f-481b-ae74-ad71c59b1d69
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ---
 
+# How to Deploy the App-V Server
 
-# How to Deploy the App-V 5.1 Server
-
-
-Use the following procedure to install the Microsoft Application Virtualization (App-V) 5.1 server. For information about deploying the App-V 5.1 Server, see [About App-V 5.1](appv-about-appv.md#bkmk-migrate-to-51).
+Use the following procedure to install the Microsoft Application Virtualization (App-V) server. For information about deploying the App-V Server, see [About App-V](appv-about-appv.md#bkmk-migrate-to-51).
 
 **Before you start:**
 
--   Ensure that you’ve installed prerequisite software. See [App-V 5.1 Prerequisites](appv-prerequisites.md).
+-   Ensure that you’ve installed prerequisite software. See [App-V Prerequisites](appv-prerequisites.md).
 
--   Review the server section of [App-V 5.1 Security Considerations](appv-security-considerations.md).
+-   Review the server section of [App-V Security Considerations](appv-security-considerations.md).
 
 -   Specify a port where each component will be hosted.
 
@@ -27,11 +24,11 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
 -   If you use SQL scripts, instead of the Windows Installer, to set up the Management database or Reporting database, you must run the SQL scripts before installing the Management Server or Reporting Server. See [How to Deploy the App-V Databases by Using SQL Scripts](appv-deploy-appv-databases-with-sql-scripts.md).
 
-**To install the App-V 5.1 server**
+**To install the App-V server**
 
-1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it.
+1.  Copy the App-V server installation files to the computer on which you want to install it.
 
-2.  Start the App-V 5.1 server installation by right-clicking and running **appv\_server\_setup.exe** as an administrator, and then click **Install**.
+2.  Start the App-V server installation by right-clicking and running **appv\_server\_setup.exe** as an administrator, and then click **Install**.
 
 3.  Review and accept the license terms, and choose whether to enable Microsoft updates.
 
@@ -63,7 +60,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tr>
     <tr class="even">
     <td align="left"><p>Reporting server</p></td>
-    <td align="left"><p>Provides App-V 5.1 reporting services.</p></td>
+    <td align="left"><p>Provides App-V reporting services.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p>Reporting database</p></td>
@@ -251,24 +248,16 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
     Example: **http://localhost:12345/console.html**. If the installation succeeded, the App-V Management console is displayed with no errors.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
 
 ## Related topics
 
-
-[Deploying App-V 5.1](appv-deploying-appv.md)
+[Deploying App-V](appv-deploying-appv.md)
 
 [How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services](appv-install-the-management-and-reporting-databases-on-separate-computers.md)
 
 [How to Install the Publishing Server on a Remote Computer](appv-install-the-publishing-server-on-a-remote-computer.md)
 
-[How to Deploy the App-V 5.1 Server Using a Script](appv-deploy-the-appv-server-with-a-script.md)
-
- 
-
- 
-
-
-
-
-
+[How to Deploy the App-V Server Using a Script](appv-deploy-the-appv-server-with-a-script.md)

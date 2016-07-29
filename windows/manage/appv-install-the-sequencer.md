@@ -1,8 +1,7 @@
 ---
-title: How to Install the Sequencer
-description: How to Install the Sequencer
+title: Install the App-V Sequencer (Windows 10)
+description: Install the App-V Sequencer
 author: jamiejdt
-ms.assetid: 5e8f1696-9bc0-4f44-8cb7-b809b2daae10
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,101 +9,50 @@ ms.prod: w10
 ---
 
 
-# How to Install the Sequencer
+# Install the App-V Sequencer
+
+Use the App-V Sequencer to convert Win32 applications into virtual packages for deployment to user devices. Those devices must be running the App-V client to allow users to interact with virtual applications.
+
+The App-V Sequencer is included in the Windows 10 Assessment and Deployment Kit (Windows ADK).
+
+**Note**  The computer that will run the sequencer must not have the App-V client enabled on it. As a best practice, choose a computer with the same hardware and software configurations as the computers that will run the virtual applications. The sequencing process is resource intensive, so make sure that the computer that runs the Sequencer has plenty of memory, a fast processor, and a fast hard drive.
+
+To install the App-V Sequencer:
+
+1.  Go to [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).
+
+2.  Click or press the **Get Windows ADK for Windows 10** button on the page to start the ADK installer. On the screen pictured below, select **Microsoft Application Virtualization (App-V) Sequencer** and then click or press **Install**.
 
 
-Use the following procedure to install the Microsoft Application Virtualization (App-V) 5.1 sequencer. The computer that will run the sequencer must not be running any version of the App-V 5.1 client.
+![Selecting APP-V features in ADK](images/appv-adk-select-appv-feature.png)
 
-Upgrading a previous installation of the App-V sequencer is not supported.
+3.  To open the Sequencer, from the **Start** menu, select **Microsoft Application Virtualization Sequencer** .
 
-**Important**  
-For a full list of the sequencer requirements see sequencer sections of [App-V 5.1 Prerequisites](appv-prerequisites.md) and [App-V 5.1 Supported Configurations](appv-supported-configurations.md).
+See [Creating and managing virtual applications](appv-creating-and-managing-virtualized-applications.md) and the [Application Virtualization Sequencing Guide](http://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V%205.0%20Sequencing%20Guide.docx) for information about creating virtual applications with the Sequencer.
 
- 
+## Command-line options for installing the sequencer
 
-You can also use the command line to install the App-V 5.1 sequencer. The following list displays information about options for installing the sequencer using the command line and **appv\_sequencer\_setup.exe**:
+You can also use the command line to install the App-V sequencer. The following list displays information about options for installing the sequencer using the command line and **appv\_sequencer\_setup.exe**:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>/INSTALLDIR</p></td>
-<td align="left"><p>Specifies the installation directory.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/CEIPOPTIN</p></td>
-<td align="left"><p>Enables participation in the Microsoft Customer Experience Improvement Program.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/Log</p></td>
-<td align="left"><p>Specifies where the installation log will be saved, the default location is <strong>%Temp%</strong>. For example, <strong>C:\ Logs \ log.log</strong>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/q</p></td>
-<td align="left"><p>Specifies a quiet or silent installation.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/Uninstall</p></td>
-<td align="left"><p>Specifies the removal of the sequencer.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/ACCEPTEULA</p></td>
-<td align="left"><p>Accepts the license agreement. This is required for an unattended installation. Example usage: <strong>/ACCEPTEULA</strong> or <strong>/ACCEPTEULA=1</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/LAYOUT</p></td>
-<td align="left"><p>Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V 5.1. No value is expected.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/LAYOUTDIR</p></td>
-<td align="left"><p>Specifies the layout directory. Requires a string value. Example usage: <strong>/LAYOUTDIR=”C:\Application Virtualization Client”</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/? Or /h or /help</p></td>
-<td align="left"><p>Displays associated help.</p></td>
-</tr>
-</tbody>
-</table>
+| **Command**       | **Description**  |
+|-------------------|------------------|
+| /INSTALLDIR       | Specifies the installation directory.  |
+| /Log   | Specifies where the installation log will be saved, the default location is **%Temp%**. For example, **C:\\ Logs \\ log.log**.    |
+| /q     | Specifies a quiet or silent installation.      |
+| /Uninstall        | Specifies the removal of the sequencer.  |
+| /ACCEPTEULA       | Accepts the license agreement. This is required for an unattended installation. Example usage: **/ACCEPTEULA** or **/ACCEPTEULA=1**.         |
+| /LAYOUT           | Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V. No value is expected. |
+| /LAYOUTDIR        | Specifies the layout directory. Requires a string value. Example usage:**/LAYOUTDIR=”C:\\Application Virtualization Client”**.    |
+| /? Or /h or /help | Displays associated help.   |
 
- 
+## To troubleshoot the App-V sequencer installation
 
-**To install the App-V 5.1 sequencer**
+For more information regarding the sequencer installation, you can view the error log in the **%temp%** folder. To review the log files, click **Start**, type **%temp%**, and then look for the **appv\_ log**.
 
-1.  Copy the App-V 5.1 sequencer installation files to the computer on which it will be installed. Double-click **appv\_sequencer\_setup.exe** and then click **Install**.
+## Have a suggestion for App-V?
 
-2.  On the **Software License Terms** page, you should review the license terms. To accept the license terms select **I accept the license terms.** Click **Next**.
-
-3.  On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, to enable Microsoft updates select **Use Microsoft Update when I check for updates (recommended).** To disable Microsoft updates from running select **I don’t want to use Microsoft Update**. Click **Next**.
-
-4.  On the **Customer Experience Improvement Program** page, to participate in the program select **Join the Customer Experience Improvement Program**. This will allow information to be collected about how you are using App-V 5.1. If you don’t want to participate in the program select **I don’t want to join the program at this time**. Click **Install**.
-
-5.  To open the sequencer, click **Start** and then click **Microsoft Application Virtualization Sequencer**.
-
-**To troubleshoot the App-V 5.1 sequencer installation**
-
--   For more information regarding the sequencer installation, you can view the error log in the **%temp%** folder. To review the log files, click **Start**, type **%temp%**, and then look for the **appv\_ log**.
-
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
 
 ## Related topics
 
-
 [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
-
- 
-
- 
-
-
-
-
-

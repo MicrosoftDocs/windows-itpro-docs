@@ -1,19 +1,16 @@
 ---
-title: Planning to Use Folder Redirection with App-V
+title: Planning to Use Folder Redirection with App-V (Windows 10)
 description: Planning to Use Folder Redirection with App-V
 author: jamiejdt
-ms.assetid: 6bea9a8f-a915-4d7d-be67-ef1cca1398ed
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ---
 
-
 # Planning to Use Folder Redirection with App-V
 
-
-Microsoft Application Virtualization (App-V) 5.1 supports the use of folder redirection, a feature that enables users and administrators to redirect the path of a folder to a new location.
+Microsoft Application Virtualization (App-V) supports the use of folder redirection, a feature that enables users and administrators to redirect the path of a folder to a new location.
 
 This topic contains the following sections:
 
@@ -46,7 +43,7 @@ This topic contains the following sections:
 <li><p>Registry settings under HKEY_CURRENT_USER\Software\Microsoft\AppV\Client\Packages</p>
 <p>For more detail, see [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md#bkmk-clt-inter-roam-reqs).</p></li>
 </ul></li>
-<li><p>Ensure that the following folders are available to each user who logs into the computer that is running the App-V 5.0 SP2 or later client:</p>
+<li><p>Ensure that the following folders are available to each user who logs into the computer that is running the App-V client:</p>
 <ul>
 <li><p>%AppData% is configured to the desired network location (with or without [Offline Files](http://technet.microsoft.com/library/cc780552.aspx) support).</p></li>
 <li><p>%LocalAppData% is configured to the desired local folder.</p></li>
@@ -58,30 +55,7 @@ This topic contains the following sections:
 <td align="left"><ul>
 <li><p>Configuring %LocalAppData% as a network drive.</p></li>
 <li><p>Redirecting the Start menu to a single folder for multiple users.</p></li>
-<li><p>If roaming AppData (%AppData%) is redirected to a network share that is not available, App-V applications will fail to launch as follows:</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">App-V version</th>
-<th align="left">Scenario description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>In App-V 5.0 through App-V 5.0 SP2 plus hotfixes</p></td>
-<td align="left"><p>This failure will occur regardless of whether Offline Files is enabled.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>In App-V 5.0 SP3 and later</p></td>
-<td align="left"><p>If the unavailable network share has been enabled for Offline Files, the App-V application will start successfully.</p></td>
-</tr>
-</tbody>
-</table>
-<p> </p></li>
+<li><p>If roaming AppData (%AppData%) is redirected to a network share that is not available, App-V applications will fail to launch, unless the unavailable network share has been enabled for Offline Files.</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -121,13 +95,7 @@ The following table describes how folder redirection works when %AppData% is red
 <li><p>While the virtual environment is running, data continues to be saved to the local cache. Data is served only out of %LocalAppData% and is not moved or synchronized with %AppData% until the end user shuts down the computer.</p></li>
 <li><p>Entries to the AppData folder are made using the user context, not the system context.</p></li>
 </ul>
-<div class="alert">
-<strong>Note</strong>  
-<p>The App-V client folder redirection sometimes fails to move files from %AppData% to %LocalAppData%. See [Release Notes for App-V 5.0 SP2](appv-release-notes-for-appv-for-windows.md#bkmk-folderredirection).</p>
-</div>
-<div>
- 
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td align="left"><p>When the virtual environment shuts down</p></td>
@@ -173,18 +141,6 @@ The following table describes how folder redirection works when %AppData% is red
 </tbody>
 </table>
 
- 
+## Have a suggestion for App-V?
 
-## Got a suggestion for App-V?
-
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
-
- 
-
- 
-
-
-
-
-
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).

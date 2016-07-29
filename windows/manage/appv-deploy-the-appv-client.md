@@ -1,8 +1,7 @@
 ---
-title: How to Deploy the App-V Client
+title: How to Deploy the App-V Client (Windows 10)
 description: How to Deploy the App-V Client
 author: jamiejdt
-ms.assetid: 981f57c9-56c3-45da-8261-0972bfad3e5b
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,18 +11,17 @@ ms.prod: w10
 
 # How to Deploy the App-V Client
 
+Use the following procedure to install the Microsoft Application Virtualization (App-V) client and Remote Desktop Services client. You must install the version of the client that matches the operating system of the target computer.
 
-Use the following procedure to install the Microsoft Application Virtualization (App-V) 5.1 client and Remote Desktop Services client. You must install the version of the client that matches the operating system of the target computer.
-
-**What to do before you start**
+## What to do before you start
 
 1.  Review and install the software prerequisites:
 
     Install the prerequisite software that corresponds to the version of App-V that you are installing:
 
-    -   [About App-V 5.1](appv-about-appv.md)
+    -   [About App-V](appv-about-appv.md)
 
-    -   [App-V 5.1 Prerequisites](appv-prerequisites.md)
+    -   [App-V Prerequisites](appv-prerequisites.md)
 
 2.  Review the client coexistence and unsupported scenarios, as applicable to your installation:
 
@@ -35,16 +33,14 @@ Use the following procedure to install the Microsoft Application Virtualization 
     <tbody>
     <tr class="odd">
     <td align="left"><p>Deploying coexisting App-V clients</p></td>
-    <td align="left"><p>[Planning for the App-V 5.1 Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md)</p></td>
+    <td align="left"><p>[Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md)</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p>Unsupported or limited installation scenarios</p></td>
-    <td align="left"><p>See the client section in [App-V 5.1 Supported Configurations](appv-supported-configurations.md)</p></td>
+    <td align="left"><p>See the client section in [App-V Supported Configurations](appv-supported-configurations.md)</p></td>
     </tr>
     </tbody>
     </table>
-
-     
 
 3.  Review the locations for client registry, log, and troubleshooting information:
 
@@ -57,7 +53,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
 <tr class="odd">
 <td align="left"><p>Client registry information</p></td>
 <td align="left"><ul>
-<li><p>By default, after you install the App-V 5.1 client, the client information is stored in the registry in the following registry key:</p>
+<li><p>By default, after you install the App-V client, the client information is stored in the registry in the following registry key:</p>
 <p><strong>HKEY_LOCAL_MACHINE \ SOFTWARE \ MICROSOFT \ APPV \ CLIENT</strong></p></li>
 <li><p>When you deploy a virtualized package to a computer that is running the App-V client, the associated package data is stored in the following location:</p>
 <p><strong>C: \ ProgramData \ App-V</strong></p>
@@ -68,12 +64,12 @@ Use the following procedure to install the Microsoft Application Virtualization 
 <tr class="even">
 <td align="left"><p>Client log files</p></td>
 <td align="left"><ul>
-<li><p>For log file information that is associated with the App-V 5.1 Client, search in the following log:</p>
+<li><p>For log file information that is associated with the App-V Client, search in the following log:</p>
 <p><strong>Event logs / Applications and Services Logs / Microsoft / AppV</strong></p></li>
 <li><p>In App-V 5.0 SP3, some logs were consolidated and moved to the following location:</p>
 <p><strong>Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog</strong></p>
 <p>For a list of the moved logs, see [About App-V 5.0 SP3](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50-sp3#bkmk-event-logs-moved).</p></li>
-<li><p>Packages that are currently stored on computers that run the App-V 5.1 Client are saved to the following location:</p>
+<li><p>Packages that are currently stored on computers that run the App-V Client are saved to the following location:</p>
 <p><strong>C:\ProgramData\App-V\&lt;package id&gt;\&lt;version id&gt;</strong></p></li>
 </ul></td>
 </tr>
@@ -84,11 +80,9 @@ Use the following procedure to install the Microsoft Application Virtualization 
 </tbody>
 </table>
 
- 
+## To install the App-V Client
 
-**To install the App-V 5.1 Client**
-
-1.  Copy the App-V 5.1 client installation file to the computer on which it will be installed. Choose from the following client types:
+1.  Copy the App-V client installation file to the computer on which it will be installed. Choose from the following client types:
 
     <table>
     <colgroup>
@@ -113,9 +107,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tbody>
     </table>
 
-     
-
-2.  Double-click the installation file, and click **Install**. Before the installation begins, the installer checks the computer for any missing [App-V 5.1 Prerequisites](appv-prerequisites.md).
+2.  Double-click the installation file, and click **Install**. Before the installation begins, the installer checks the computer for any missing [App-V Prerequisites](appv-prerequisites.md).
 
 3.  Review and accept the Software License Terms, choose whether to use Microsoft Update and whether to participate in the Microsoft Customer Experience Improvement Program, and click **Install**.
 
@@ -132,18 +124,14 @@ Use the following procedure to install the Microsoft Application Virtualization 
         **Note**  
         After the installation, only the .exe file can be uninstalled.
 
-         
-
-**To install the App-V 5.1 client using a script**
+## To install the App-V client using a script
 
 1.  Install all of the required prerequisite software on the target computers. See [What to do before you start](#bkmk-clt-install-prereqs). If you install the client by using an .msi file, the installation will fail if any prerequisites are missing.
 
-2.  To use a script to install the App-V 5.1 client, use the following parameters with **appv\_client\_setup.exe**.
+2.  To use a script to install the App-V client, use the following parameters with **appv\_client\_setup.exe**.
 
     **Note**  
     The client Windows Installer (.msi) supports the same set of switches, except for the **/LOG** parameter.
-
-     
 
     <table>
     <colgroup>
@@ -173,7 +161,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tr>
     <tr class="even">
     <td align="left"><p>/AUTOLOAD</p></td>
-    <td align="left"><p>Specifies how new packages will be loaded by App-V 5.1 on a specific computer. The following options are enabled: [1]; automatically load all packages [2]; or automatically load no packages [0].<strong>Example usage: /AUTOLOAD=[0|1|2]</strong></p></td>
+    <td align="left"><p>Specifies how new packages will be loaded by App-V on a specific computer. The following options are enabled: [1]; automatically load all packages [2]; or automatically load no packages [0].<strong>Example usage: /AUTOLOAD=[0|1|2]</strong></p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p>/SHAREDCONTENTSTOREMODE</p></td>
@@ -181,7 +169,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tr>
     <tr class="even">
     <td align="left"><p>/MIGRATIONMODE</p></td>
-    <td align="left"><p>Allows the App-V 5.1 client to modify the shortcuts and FTAs that are associated with the packages that are created with a previous version. Example usage: <strong>/MIGRATIONMODE=[0|1]</strong></p></td>
+    <td align="left"><p>Allows the App-V client to modify the shortcuts and FTAs that are associated with the packages that are created with a previous version. Example usage: <strong>/MIGRATIONMODE=[0|1]</strong></p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p>/ENABLEPACKAGESCRIPTS</p></td>
@@ -250,7 +238,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
     <tr class="odd">
     <td align="left"><p>/NORESTART</p></td>
     <td align="left"><p>Prevents the computer from rebooting after the client installation.</p>
-    <p>The parameter prevents the end-user computer from rebooting after each update is installed and lets you schedule the reboot at your convenience. For example, you can install App-V 5.1 and then install Hotfix Package Y without rebooting after the Service Pack installation. After the installation, you must reboot before you start using App-V.</p></td>
+    <p>The parameter prevents the end-user computer from rebooting after each update is installed and lets you schedule the reboot at your convenience. For example, you can install App-V and then install Hotfix Package Y without rebooting after the Service Pack installation. After the installation, you must reboot before you start using App-V.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p>/UNINSTALL</p></td>
@@ -262,7 +250,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tr>
     <tr class="even">
     <td align="left"><p>/LAYOUT</p></td>
-    <td align="left"><p>Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V 5.1. No value is expected.</p></td>
+    <td align="left"><p>Specifies the associated layout action. It also extracts the Windows Installer (.msi) and script files to a folder without installing App-V. No value is expected.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p>/LAYOUTDIR</p></td>
@@ -275,13 +263,11 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tbody>
     </table>
 
-     
-
-**To install the App-V 5.1 client by using the Windows Installer (.msi) file**
+## To install the App-V client by using the Windows Installer (.msi) file
 
 1.  Install the required prerequisites on the target computers. See [What to do before you start](#bkmk-clt-install-prereqs). If any prerequisites are not met, the installation will fail.
 
-2.  Ensure that the target computers do not have any pending restarts before you install the client using the App-V 5.1 Windows Installer (.msi) files. The Windows Installer files do not flag a pending restart.
+2.  Ensure that the target computers do not have any pending restarts before you install the client using the App-V Windows Installer (.msi) files. The Windows Installer files do not flag a pending restart.
 
 3.  Deploy one of the following Windows Installer files to the target computer. The file that you specify must match the configuration of the target computer.
 
@@ -306,23 +292,22 @@ Use the following procedure to install the Microsoft Application Virtualization 
     <td align="left"><p>appv_client_MSI_x64.msi</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p>You are deploying the App-V 5.1 Remote Desktop Services client</p></td>
+    <td align="left"><p>You are deploying the App-V Remote Desktop Services client</p></td>
     <td align="left"><p>appv_client_rds_MSI_x64.msi</p></td>
     </tr>
     </tbody>
     </table>
 
-     
 
 4.  Using the information in the following table, select the appropriate language pack **.msi** to install, based on the desired language for the target computer. The **xxxx** in the table refers to the target locale of the language pack.
 
     **What to know before you start:**
 
-    -   The language packs are common to both the standard App-V 5.1 client and the Remote Desktop Services version of the App-V 5.1 client.
+    -   The language packs are common to both the standard App-V client and the Remote Desktop Services version of the App-V client.
 
-    -   If you install the App-V 5.1 client using the **.exe**, the installer will deploy only the language pack that matches the operating system running on the target computer.
+    -   If you install the App-V client using the **.exe**, the installer will deploy only the language pack that matches the operating system running on the target computer.
 
-    -   To deploy additional language packs on a target computer, use the procedure **To install the App-V 5.1 client by using Windows Installer (.msi) file**.
+    -   To deploy additional language packs on a target computer, use the procedure **To install the App-V client by using Windows Installer (.msi) file**.
 
     <table>
     <colgroup>
@@ -347,24 +332,14 @@ Use the following procedure to install the Microsoft Application Virtualization 
     </tbody>
     </table>
 
-     
+## Have a suggestion for App-V?
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
 
 ## Related topics
 
-
-[Deploying App-V 5.1](appv-deploying-appv.md)
+[Deploying App-V](appv-deploying-appv.md)
 
 [About Client Configuration Settings](appv-client-configuration-settings.md)
 
-[How to Uninstall the App-V 5.1 Client](appv-uninstall-the-appv-client.md)
-
- 
-
- 
-
-
-
-
-
+[How to Uninstall the App-V Client](appv-uninstall-the-appv-client.md)
