@@ -1,7 +1,7 @@
 ---
 title: How to Convert a Package Created in a Previous Version of App-V (Windows 10)
 description: How to Convert a Package Created in a Previous Version of App-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -54,7 +54,7 @@ When you convert packages from App-V 4.6 to App-V for Windows 10, the App-V for 
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -1,7 +1,7 @@
 ---
 title: How to Create a Connection Group with User-Published and Globally Published Packages (Windows 10)
 description: How to Create a Connection Group with User-Published and Globally Published Packages
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -74,7 +74,7 @@ You can create user-entitled connection groups that contain both user-published 
 
 3.  Follow the instructions in [How to Create a Connection Group](appv-create-a-connection-group.md) to create the connection group, and add the user-published and globally published packages.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

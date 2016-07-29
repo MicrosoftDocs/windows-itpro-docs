@@ -1,7 +1,7 @@
 ---
 title: Microsoft Application Virtualization Administrator's Guide (Windows 10)
 description: Microsoft Application Virtualization Administrator's Guide
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -36,9 +36,9 @@ The Microsoft Application Virtualization (App-V) Administrator’s Guide provide
 
 [Performance Guidance for Application Virtualization](appv-performance-guidance.md)**|**[Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)**|**[Viewing App-V Server Publishing Metadata](appv-viewing-appv-server-publishing-metadata.md)**|**[Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](appv-running-locally-installed-applications-inside-a-virtual-environment.md)
 
-### Got a suggestion for App-V?
+### Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
  
 

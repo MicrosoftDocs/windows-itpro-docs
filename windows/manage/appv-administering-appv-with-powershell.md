@@ -1,7 +1,7 @@
 ---
 title: Administering App-V by Using PowerShell (Windows 10)
 description: Administering App-V by Using PowerShell
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -118,10 +118,10 @@ Use the following table for information about App-V PowerShell error handling.
 
  
 
-## Got a suggestion for App-V?
+## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

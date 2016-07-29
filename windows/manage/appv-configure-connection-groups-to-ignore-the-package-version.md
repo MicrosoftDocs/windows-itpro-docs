@@ -1,7 +1,7 @@
 ---
 title: How to Make a Connection Group Ignore the Package Version (Windows 10)
 description: How to Make a Connection Group Ignore the Package Version
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -87,10 +87,10 @@ To upgrade a package in some earlier versions of App-V, you had to perform sever
 
  
 
-## Got a suggestion for App-V?
+## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

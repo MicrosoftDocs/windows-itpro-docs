@@ -1,7 +1,7 @@
 ---
 title: How to Access the Client Management Console (Windows 10)
 description: How to Access the Client Management Console
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,7 +32,7 @@ Use the following procedure to access the client management console.
 
 2.  When the App-V client management console is displayed, click the tab you want to review and perform any required tasks. For more information about the client management console tasks see, [Using the App-V Client Management Console](appv-using-the-client-management-console.md).
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

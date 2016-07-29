@@ -1,7 +1,7 @@
 ---
 title: How to Modify App-V Client Configuration Using the ADMX Template and Group Policy (Windows 10)
 description: How to Modify App-V Client Configuration Using the ADMX Template and Group Policy
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -29,7 +29,7 @@ Use the Microsoft Application Virtualization (App-V) ADMX template to configure 
 
 3.  After you have copied the files open the Group Policy Management Console, to modify the policies associated with your App-V clients browse to **Computer Configuration** / **Policies** / **Administrative Templates** / **System** / **App-V**.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

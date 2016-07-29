@@ -1,7 +1,7 @@
 ---
 title: Deploying App-V Packages by Using Electronic Software Distribution (ESD)
 description: Deploying App-V Packages by Using Electronic Software Distribution (ESD)
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,10 +30,10 @@ Explains how to configure the App-V client to enable only administrators to publ
 
 [How to Enable Only Administrators to Publish Packages by Using an ESD](appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions.md)
 
-## Got a suggestion for App-V?
+## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for using an ESD and App-V
 

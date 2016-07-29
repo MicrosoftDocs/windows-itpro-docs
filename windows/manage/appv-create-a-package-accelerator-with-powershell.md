@@ -1,7 +1,7 @@
 ---
 title: How to Create a Package Accelerator by Using PowerShell (Windows 10)
 description: How to Create a Package Accelerator by Using PowerShell
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,7 +38,7 @@ App-V package accelerators automatically sequence large, complex applications. A
 
     -   **AcceleratorDescriptionFile** - specifies the path to user created package accelerator instructions. The package accelerator instructions are **.txt** or **.rtf** description files that will be packaged with the package created using the package accelerator.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

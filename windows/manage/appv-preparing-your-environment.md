@@ -1,7 +1,7 @@
 ---
 title: Preparing Your Environment for App-V (Windows 10)
 description: Preparing Your Environment for App-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -28,10 +28,10 @@ There are a number of different deployment configurations and prerequisites that
 
     Describes accounts, groups, log files, and other considerations for securing your App-V environment.
 
-## Got a suggestion for App-V?
+## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## <a href="" id="other-resources-for-app-v-5-1-planning-"></a>Other resources for App-V Planning
 

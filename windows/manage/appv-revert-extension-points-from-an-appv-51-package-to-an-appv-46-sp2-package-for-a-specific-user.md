@@ -1,7 +1,7 @@
 ---
 title: How to Revert Extension Points From an App-V Package to an App-V 4.6 Package for a Specific User (Windows 10)
 description: How to Revert Extension Points From an App-V Package to an App-V 4.6 Package for a Specific User
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -31,7 +31,7 @@ Use the following procedure to revert an App-V package to the App-V file format 
 
      
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

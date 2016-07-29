@@ -1,7 +1,7 @@
 ---
 title: How to Add or Upgrade Packages by Using the Management Console (Windows 10)
 description: How to Add or Upgrade Packages by Using the Management Console
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,7 +37,7 @@ You can the following procedure to add or upgrade a package to the App-V Managem
 
 5.  Click **Close** to close the **Add or Upgrade Packages** page.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

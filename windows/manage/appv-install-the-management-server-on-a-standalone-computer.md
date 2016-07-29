@@ -1,7 +1,7 @@
 ---
 title: How to install the Management Server on a Standalone Computer and Connect it to the Database (Windows 10)
 description: How to install the Management Server on a Standalone Computer and Connect it to the Database
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -45,7 +45,7 @@ Use the following procedure to install the management server on a standalone com
 
 9.  To confirm that the setup has completed successfully, open a web browser, and type the following URL: http://managementserver:portnumber/Console. If the installation was successful, you should see the **Management Console** appear without any error messages or warnings being displayed.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

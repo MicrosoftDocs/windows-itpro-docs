@@ -1,7 +1,7 @@
 ---
 title: Enable the App-V desktop client (Windows 10)
 description: Enable the App-V desktop client
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,4 +38,4 @@ See [Using the client management console](appv-using-the-client-management-conso
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
