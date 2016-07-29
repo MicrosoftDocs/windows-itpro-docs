@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 Before starting the planning process for a Windows Firewall with Advanced Security deployment, you must collect and analyze up-to-date information about the network, the directory services, and the devices that are already deployed in the organization. This information enables you to create a design that accounts for all possible elements of the existing infrastructure. If the gathered information is not accurate, problems can occur when devices and devices that were not considered during the planning phase are encountered during implementation.
 

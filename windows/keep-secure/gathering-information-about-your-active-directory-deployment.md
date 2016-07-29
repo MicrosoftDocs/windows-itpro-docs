@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 Active Directory is another important item about which you must gather information. You must understand the forest structure. This includes domain layout, organizational unit (OU) architecture, and site topology. This information makes it possible to know where devices are currently placed, their configuration, and the impact of changes to Active Directory that result from implementing Windows Firewall with Advanced Security. Review the following list for information needed:
 

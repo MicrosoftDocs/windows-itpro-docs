@@ -12,7 +12,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 This is an overview of the Windows Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
 

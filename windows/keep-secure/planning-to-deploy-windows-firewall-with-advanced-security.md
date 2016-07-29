@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 After you collect information about your environment and decide on a design by following the guidance in the [Windows Firewall with Advanced Security Design Guide](windows-firewall-with-advanced-security-design-guide.md), you can begin to plan the deployment of your design. With the completed design and the information in this topic, you can determine which tasks to perform to deploy Windows Firewall with Advanced Security in your organization.
 

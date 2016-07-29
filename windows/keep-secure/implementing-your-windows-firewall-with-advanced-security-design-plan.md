@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 The following are important factors in the implementation of your Windows Firewall with Advanced Security design plan:
 

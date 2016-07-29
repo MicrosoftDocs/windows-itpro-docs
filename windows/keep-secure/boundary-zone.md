@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 In most organizations, some devices must be able to receive network traffic from devices that are not part of the isolated domain, and therefore cannot authenticate. To accept communications from untrusted devices, create a boundary zone within your isolated domain.
 
@@ -60,4 +60,4 @@ The boundary zone GPO for devices running at least Windows Server 2008 should i
 
     >**Note:**  For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md)
 
-**Next:**[Encryption Zone](encryption-zone.md)
+**Next: **[Encryption Zone](encryption-zone.md)

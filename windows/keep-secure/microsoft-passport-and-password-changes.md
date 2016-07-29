@@ -1,6 +1,6 @@
 ---
-title: Windows Hello and password changes (Windows 10)
-description: When you change your password on a device, you may need to sign in with a password on other devices to reset Hello.
+title: Microsoft Passport and password changes (Windows 10)
+description: When you set up Microsoft Passport, the PIN or biometric (Windows Hello) gesture that you use is specific to that device.
 ms.assetid: 83005FE4-8899-47A6-BEA9-C17CCA0B6B55
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,17 +14,17 @@ author: jdeckerMS
 -   Windows 10
 -   Windows 10 Mobile
 
-When you set up Windows Hello, the PIN or biometric gesture that you use is specific to that device. You can set up Hello for the same account on multiple devices. If the PIN or biometric is configured as part of Windows Hello for Business, changing the account password will not impact sign-in or unlock with these gestures since it uses a key or certificate. However, if Windows Hello for Business is not deployed and the password for that account changes, you must provide the new password on each device to continue to use Hello.
+When you set up Microsoft Passport, the PIN or biometric (Windows Hello) gesture that you use is specific to that device. You can set up Passport for the same account on multiple devices. If the PIN or biometric is configured as part of a Microsoft Passport for Work, changing the account password will not impact sign-in or unlock with these gestures since it uses a key or certificate. However, if Microsoft Passport for Work is not deployed and the password for that account changes, you must provide the new password on each device to continue to use Passport.
 
 ## Example
 
 Let's suppose that you have set up a PIN for your Microsoft account on **Device A**. You use your PIN to sign in on **Device A** and then change the password for your Microsoft account.
 Because you were using **Device A** when you changed your password, the PIN on **Device A** will continue to work with no other action on your part.
 
-Suppose instead that you sign in on **Device B** and change your password for your Microsoft account. The next time that you try to sign in on **Device A** using your PIN, sign-in will fail because the account credentials that Hello on **Device A** knows will be outdated.
-> **Note:**  This example also applies to an Active Directory account when [Windows Hello for Business is not implemented](implement-microsoft-passport-in-your-organization.md).
+Suppose instead that you sign in on **Device B** and change your password for your Microsoft account. The next time that you try to sign in on **Device A** using your PIN, sign-in will fail because the account credentials that Passport on **Device A** knows will be outdated.
+> **Note:**  This example also applies to an Active Directory account when [Passport for Work is not implemented](implement-microsoft-passport-in-your-organization.md).
  
-## How to update Hello after you change your password on another device
+## How to update Passport after you change your password on another device
 
 1.  When you try to sign in using your PIN or biometric, you will see the following message: **Your password was changed on a different device. You must sign in to this device once with your new password, and then you can sign in with your PIN.**
 2.  Click **OK.**
@@ -35,19 +35,16 @@ Suppose instead that you sign in on **Device B** and change your password for yo
 
 ## Related topics
 
-[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
+[Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
 
-[Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
-
-[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md) 
+[Implement Microsoft Passport in your organization](implement-microsoft-passport-in-your-organization.md)
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 
-[Prepare people to use Windows Hello](prepare-people-to-use-microsoft-passport.md)
+[Prepare people to use Microsoft Passport](prepare-people-to-use-microsoft-passport.md)
 
-[Windows Hello errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
+[Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
 
-[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
 
-[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md) 
+[Event ID 300 - Passport successfully created](passport-event-300.md)
  

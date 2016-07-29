@@ -13,7 +13,7 @@ author: brianlic-msft
 **Applies to**
 
 - Windows 10
-- Windows Server 2016
+- Windows Server 2016 Technical Preview
 
 ## Group Policy settings
 There are 10 Group Policy settings that can be configured for User Account Control (UAC). The table lists the default for each of the policy settings, and the following sections explain the different UAC policy settings and provide recommendations. These policy settings are located in **Security Settings\\Local Policies\\Security Options** in the Local Security Policy snap-in. For more information about each of the Group Policy settings, see the Group Policy description. For information about the registry key settings, see [Registry key settings](#registry-key-settings).

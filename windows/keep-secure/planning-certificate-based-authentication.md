@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 Sometimes a device cannot join an Active Directory domain, and therefore cannot use Kerberos V5 authentication with domain credentials. However, the device can still participate in the isolated domain by using certificate-based authentication.
 

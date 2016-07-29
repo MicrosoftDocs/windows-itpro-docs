@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 After you have decided on the best logical design of your isolation environment for the network and device security requirements, you can start the implementation plan.
 

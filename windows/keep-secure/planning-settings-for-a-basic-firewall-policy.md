@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 After you have identified your requirements, and have the information about the network layout and devices available, you can begin to design the GPO settings and rules that will enable you to enforce your requirements on the devices.
 

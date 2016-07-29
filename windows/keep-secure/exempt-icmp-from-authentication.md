@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 This procedure shows you how to add exemptions for any network traffic that uses the ICMP protocol.
 

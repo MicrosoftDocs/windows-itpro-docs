@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 In the certificate-based isolation policy design, you provide the same types of protections to your network traffic as described in the [Domain Isolation Policy Design](domain-isolation-policy-design.md) and [Server Isolation Policy Design](server-isolation-policy-design.md) sections. The only difference is the method used to share identification credentials during the authentication of your network traffic.
 

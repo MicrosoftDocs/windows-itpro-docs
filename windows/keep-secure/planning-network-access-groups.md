@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 A network access group (NAG) is used to identify users and devices that have permission to access an isolated server. The server is configured with firewall rules that allow only network connections that are authenticated as originating from a device, and optionally a user, whose accounts are members of its NAG. A member of the isolated domain can belong to as many NAGs as required.
 

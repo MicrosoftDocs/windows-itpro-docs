@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 Windows Firewall with Advanced Security includes many predefined rules for common networking roles and functions. When you install a new server role on a device or enable a network feature on a client device, the installer typically enables the rules required for that role instead of creating new ones. When deploying firewall rules to the devices on the network, you can take advantage of these predefined rules instead of creating new ones. Doing this helps to ensure consistency and accuracy, because the rules have been thoroughly tested and are ready for use.
 

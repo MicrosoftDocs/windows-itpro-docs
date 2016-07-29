@@ -13,13 +13,13 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 In this example, the fictitious company Woodgrove Bank is a financial services institution.
 
 Woodgrove Bank has an Active Directory domain that provides Group Policy-based management for all their Windows devices. The Active Directory domain controllers also host Domain Name System (DNS) for host name resolution. Separate devices host Windows Internet Name Service (WINS) for network basic input/output system (NetBIOS) name resolution. A set of devices that are running UNIX provide the Dynamic Host Configuration Protocol (DHCP) services for automatic IP addressing.
 
-Woodgrove Bank is in the process of migrating their devices from Windows Vista and Windows Server 2008 to Windows 10 and Windows Server 2016. A significant number of the devices at Woodgrove Bank continue to run Windows Vista and Windows Server 2008. Interoperability between the previous and newer operating systems must be maintained. Wherever possible, security features applied to the newer operating systems must also be applied to the previous operating systems.
+Woodgrove Bank is in the process of migrating their devices from Windows Vista and Windows Server 2008 to Windows 10 and Windows Server 2016 Technical Preview. A significant number of the devices at Woodgrove Bank continue to run Windows Vista and Windows Server 2008. Interoperability between the previous and newer operating systems must be maintained. Wherever possible, security features applied to the newer operating systems must also be applied to the previous operating systems.
 
 A key line-of-business program called WGBank consists of a client program running on most of the desktop devices in the organization. This program accesses several front-end server devices that run the server-side part of WGBank. These front-end servers only do the processing — they do not store the data. The data is stored in several back-end database devices that are running Microsoft SQL Server.
 
@@ -60,7 +60,7 @@ Woodgrove Bank uses Active Directory groups and Group Policy Objects to deploy t
 
 -   Client devices that run Windows 10, Windows 8, or Windows 7
 
--   WGBank front-end servers that run Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 or Windows Server 2008 R2 (there are none in place yet, but their solution must support adding them)
+-   WGBank front-end servers that run Windows Server 2016 Technical Preview, Windows Server 2012 R2, Windows Server 2012 or Windows Server 2008 R2 (there are none in place yet, but their solution must support adding them)
 
 -   WGBank partner servers that run Windows Server 2008
 

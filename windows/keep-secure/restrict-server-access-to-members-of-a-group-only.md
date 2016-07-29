@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 After you have configured the IPsec connection security rules that force client devices to authenticate their connections to the isolated server, you must configure the rules that restrict access to only those devices or users who have been identified through the authentication process as members of the isolated server’s access group.
 

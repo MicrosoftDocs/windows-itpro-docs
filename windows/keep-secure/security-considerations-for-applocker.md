@@ -40,8 +40,6 @@ AppLocker can only control VBScript, JScript, .bat files, .cmd files, and Window
 AppLocker rules either allow or prevent an application from launching. AppLocker does not control the behavior of applications after they are launched. Applications could contain flags passed to functions that signal AppLocker to circumvent the rules and allow another .exe or .dll to be loaded. In practice, an application that is allowed by AppLocker could use these flags to bypass AppLocker rules and launch child processes. You must thoroughly examine each application before allowing them to run by using AppLocker rules.
 
 >**Note:**  Two flags that illustrate this condition are `SANDBOX_INERT`, which can be passed to `CreateRestrictedToken`, and `LOAD_IGNORE_CODE_AUTHZ_LEVEL`, which can be passed to `LoadLibraryEx`. Both of these flags signal AppLocker to circumvent the rules and allow a child .exe or .dll to be loaded.
-
-You can block the Windows Subsystem for Linux by blocking LxssManager.dll.
  
 ## Related topics
 

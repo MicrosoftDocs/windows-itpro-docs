@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 This procedure shows you how to configure the data protection (quick mode) settings for connection security rules in an isolated domain or a standalone isolated server zone.
 

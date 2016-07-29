@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 In the domain isolation policy design, you configure the devices on your network to accept only connections coming from devices that are authenticated as members of the same isolated domain.
 

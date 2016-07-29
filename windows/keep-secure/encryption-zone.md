@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 Some servers in the organization host data that is very sensitive, including medical, financial, or other personally identifying data. Government or industry regulations might require that this sensitive information must be encrypted when it is transferred between devices.
 

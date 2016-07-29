@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 You must reconfigure your copied GPO so that it contains the correct security group and WMI filters for its new role. If you are creating the GPO for the isolated domain, use the [Block members of a group from applying a GPO](#to-block-members-of-a-group-from-applying-a-gpo) procedure to prevent members of the boundary and encryption zones from incorrectly applying the GPOs for the main isolated domain.
 

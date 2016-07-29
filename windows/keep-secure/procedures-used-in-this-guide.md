@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 The procedures in this section appear in the checklists found earlier in this document. They should be used only in the context of the checklists in which they appear. They are presented here in alphabetical order.
 

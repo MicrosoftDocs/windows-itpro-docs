@@ -12,7 +12,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 When you add new devices to your network, you may want to customize your Windows Firewall configuration to isolate the network access of the new Windows Store apps that run on them. Developers who build Windows Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
 

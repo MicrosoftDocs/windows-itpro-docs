@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 Domain isolation (as described in the previous goal [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)) prevents devices that are members of the isolated domain from accepting network traffic from untrusted devices. However, some devices on the network might host sensitive data that must be additionally restricted to only those users and computers that have a business requirement to access the data.
 

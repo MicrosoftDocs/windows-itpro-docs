@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 To create the GPO for the boundary zone devices, make a copy of the main domain isolation GPO, and then change the settings to request, instead of require, authentication. To make a copy of a GPO, use the Active Directory Users and devices MMC snap-in.
 
@@ -47,4 +47,4 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 12. Type the name of the group that contains members of the boundary zone, for example **CG\_DOMISO\_Boundary**, and then click **OK**.
 
-13. If required, change the WMI filter to one appropriate for the new GPO. For example, if the original GPO is for client devices running Windows 10, and the new boundary zone GPO is for devices running Windows Server 2016, then select a WMI filter that allows only those devices to read and apply the GPO.
+13. If required, change the WMI filter to one appropriate for the new GPO. For example, if the original GPO is for client devices running Windows 10, and the new boundary zone GPO is for devices running Windows Server 2016 Technical Preview, then select a WMI filter that allows only those devices to read and apply the GPO.

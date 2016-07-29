@@ -12,7 +12,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 The Windows Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Firewall with Advanced Security management. It is designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Firewall with Advanced Security management in Windows.
 

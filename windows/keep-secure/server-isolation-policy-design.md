@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 Technical Preview
 
 In the server isolation policy design, you assign servers to a zone that allows access only to users and devices that authenticate as members of an approved network access group (NAG).
 
