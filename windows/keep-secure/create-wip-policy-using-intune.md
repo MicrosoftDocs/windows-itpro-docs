@@ -24,10 +24,10 @@ We've received some great feedback from you, our Windows 10 Insider Preview cust
 
 Note that if you exit the **Policy** page before you've saved your new policy, your existing deployments won't be affected. However, if you save the policy without reconfiguring your apps, an updated policy will be deployed to your employees with an empty app rules list.
  
-## Add an WIP policy
-After you’ve set up Intune for your organization, you must create an WIP-specific policy.
+## Add a WIP policy
+After you’ve set up Intune for your organization, you must create a WIP-specific policy.
 
-**To add an WIP policy**
+**To add a WIP policy**
 1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy** from the **Tasks** area.
 
 2.  Go to **Windows**, click the **Windows Information Protection (Windows 10 Desktop and Mobile and later) policy**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
