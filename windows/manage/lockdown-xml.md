@@ -22,7 +22,8 @@ This topic provides example XML that you can use in your own lockdown XML file t
 
 Lockdown XML is an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. In this topic, you'll learn how to create an XML file that contains all lockdown entries available in the AssignedAccessXml area of the [EnterpriseAssignedAccess configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkID=618601).
 
->  **Note**&nbsp;&nbsp;On Windows 10 desktop editions, *assigned access* is a feature that lets you configure the device to run a single app above the lockscreen ([kiosk mode](set-up-a-device-for-anyone-to-use.md)). On a Windows 10 Mobile device, assigned access refers to the lockdown settings in AssignedAccessXml in the [EnterpriseAssignedAccess configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkID=618601).
+> [!NOTE]
+>  On Windows 10 desktop editions, *assigned access* is a feature that lets you configure the device to run a single app above the lockscreen ([kiosk mode](set-up-a-device-for-anyone-to-use.md)). On a Windows 10 Mobile device, assigned access refers to the lockdown settings in AssignedAccessXml in the [EnterpriseAssignedAccess configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkID=618601).
 
 If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](how-it-pros-can-use-configuration-service-providers.md) first.
 
@@ -211,7 +212,8 @@ Search | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](im
 Camera | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png)
 Custom 1, 2, and 3 | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png)
 
->  **Note**&nbsp;&nbsp;Custom buttons are hardware buttons that can be added to devices by OEMs.
+> [!NOTE]
+>  Custom buttons are hardware buttons that can be added to devices by OEMs.
 
 In the following example, press-and-hold is disabled for the Back button.
 
@@ -240,7 +242,8 @@ If you don't specify a button event, all actions for the button are disabled. In
 
 ButtonRemapList lets you change the app that a button will run. You can remap the Search button and any custom buttons included by the OEM. You can't remap the Back, Start, or Camera buttons.
 
->  **Warning**&nbsp;&nbsp;Button remapping can enable a user to open an application that is not in the allow list for that user role. Use button lock down to prevent application access for a user role.
+> [!WARNING]
+>  Button remapping can enable a user to open an application that is not in the allow list for that user role. Use button lock down to prevent application access for a user role.
  
 To remap a button, you specify the button, the event, and the product ID for the app that you want the event to open. 
 In the following example, when a user presses the Search button, the phone dialer will open instead of the Search app.
@@ -268,7 +271,8 @@ CSPRunner is helpful when you are configuring a device to support multiple roles
 
 In CSPRunner, you specify the CSP and settings using SyncML, a standardized markup language for device management. A SyncML section can include multiple settings, or you can use multiple SyncML sections -- it's up to you how you want to organize settings in this section.
 
->  **Note**&nbsp;&nbsp;This description of SyncML is just the information that you need to use SyncML in a lockdown XML file. To learn more about SyncML, see [Structure of OMA DM provisioning files](https://msdn.microsoft.com/windows/hardware/dn914774.aspx).
+> [!NOTE]
+> This description of SyncML is just the information that you need to use SyncML in a lockdown XML file. To learn more about SyncML, see [Structure of OMA DM provisioning files](https://msdn.microsoft.com/windows/hardware/dn914774.aspx).
 
 Let's start with the structure of SyncML in the following example:
 
@@ -354,7 +358,9 @@ For a list of the settings and quick actions that you can allow or block, see [S
  ![XML for tiles](images/TilesXML.png)
  
  By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile. If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile. 
- > **Important**   If a device is turned off then back on, the tiles reset to their predefined layout. If a device has only one profile, the only way to reset the tiles is to turn off then turn on the device. If a device has multiple profiles, the device resets the tiles to the predefined layout based on the logged-in user’s profile. 
+ 
+ > [!IMPORTANT]
+ > If a device is turned off then back on, the tiles reset to their predefined layout. If a device has only one profile, the only way to reset the tiles is to turn off then turn on the device. If a device has multiple profiles, the device resets the tiles to the predefined layout based on the logged-in user’s profile. 
  
  ```xml
  <Tiles>

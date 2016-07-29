@@ -46,7 +46,8 @@ Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT
     * Mobile Iron (password-string based enrollment) 
     * Other MDMs (cert-based enrollment) 
 
-> **Note:** Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
+> [!NOTE]
+> Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
 
 ## Benefits of provisioning packages
 
@@ -95,11 +96,14 @@ For details about the settings you can customize in provisioning packages, see [
 
 With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
-While running ADKsetup.exe for Windows 10, version 1607, select the following feature from the **Select the features you want to install** dialog box:
+When you run ADKsetup.exe for Windows 10, version 1607, select the following feature from the **Select the features you want to install** dialog box:
 
--   Configuration Designer
+-   **Configuration Designer**
 
-> **Note:** In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
+![Choose Configuration Designer](images/adk-install.png)
+
+> [!NOTE]
+> In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
 
 After you install Windows ICD, you can use it to create a provisioning package. For detailed instructions on how to create a provisioning package, see [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651).
 
