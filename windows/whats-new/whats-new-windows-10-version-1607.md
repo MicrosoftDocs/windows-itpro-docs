@@ -20,7 +20,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Imaging and Configuration Designer (ICD)
 
-In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
@@ -44,7 +44,7 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. 
 - Group Policy for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**. 
-- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.
+<!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
 
