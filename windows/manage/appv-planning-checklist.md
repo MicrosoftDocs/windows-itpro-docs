@@ -12,12 +12,10 @@ ms.prod: w10
 # App-V Planning Checklist
 
 
-This checklist can be used to help you plan for preparing your computing environment for Microsoft Application Virtualization (App-V) deployment.
+This checklist can be used to help you plan for preparing your organization for an App-V deployment.
 
-**Note**  
-This checklist outlines the recommended steps and a high-level list of items to consider when planning for an App-V deployment. It is recommended that you copy this checklist into a spreadsheet program and customize it for your use.
-
- 
+> [!NOTE]    
+> This checklist outlines the recommended steps and a high-level list of items to consider when planning for an App-V deployment. It is recommended that you copy this checklist and customize it for your use.
 
 <table>
 <colgroup>
@@ -74,23 +72,10 @@ This checklist outlines the recommended steps and a high-level list of items to 
 </tbody>
 </table>
 
- 
-
 ## Have a suggestion for App-V?
-
 
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Planning for App-V](appv-planning-for-appv.md)
-
- 
-
- 
-
-
-
-
-

@@ -12,7 +12,7 @@ ms.prod: w10
 # App-V Prerequisites
 
 
-Before installing Microsoft Application Virtualization (App-V), ensure that you have installed all of the following required prerequisite software.
+Before installing App-V, ensure that you have installed all of the following required prerequisite software.
 
 For a list of supported operating systems and hardware requirements for the App-V Server, Sequencer, and Client, see [App-V Supported Configurations](appv-supported-configurations.md).
 
@@ -56,7 +56,7 @@ The following table indicates the software that is already installed for differe
 <li><p>Windows PowerShell 3.0</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>Installing PowerShell 3.0 requires a restart.</p>
+<p>Installing Windows PowerShell 3.0 requires a restart.</p>
 </div>
 <div>
  
@@ -148,7 +148,7 @@ Install the required prerequisite software for the App-V Server components.
 </tr>
 <tr class="odd">
 <td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p></td>
-<td align="left"><p>Installing PowerShell 3.0 requires a restart.</p></td>
+<td align="left"><p>Installing Windows PowerShell 3.0 requires a restart.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Download and install [KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
@@ -217,12 +217,8 @@ Install the required prerequisite software for the App-V Server components.
 </tbody>
 </table>
 
- 
-
-**Important**  
-JavaScript must be enabled on the browser that opens the Web Management Console.
-
- 
+> [!IMPORTANT]  
+> JavaScript must be enabled on the browser that opens the Web Management Console.
 
 ### Management server database prerequisite software
 
@@ -309,7 +305,7 @@ The Management database is required only if you are using the App-V Management s
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows Server Web Server Role</p></td>
+<td align="left"><p>Web Server Role</p></td>
 <td align="left"><p>This role must be added to a server operating system that is supported for the Management server.</p></td>
 </tr>
 <tr class="odd">
@@ -528,6 +524,9 @@ The Reporting database is required only if you are using the App-V Reporting ser
 
 Install the following prerequisite software for the App-V client.
 
+> [!NOTE]
+> This is not required on Windows 10, version 1607.
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -629,7 +628,7 @@ Install the following prerequisite software for the App-V Remote Desktop Service
 <tr class="even">
 <td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p>
 <p></p></td>
-<td align="left"><p>Installing PowerShell 3.0 requires a restart.</p></td>
+<td align="left"><p>Installing Windows PowerShell 3.0 requires a restart.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
@@ -638,7 +637,6 @@ Install the following prerequisite software for the App-V Remote Desktop Service
 </tbody>
 </table>
 
- 
 
 ## Have a suggestion for App-V?
 
@@ -647,10 +645,8 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-
-[Planning for App-V](appv-planning-for-appv.md)
-
-[App-V Supported Configurations](appv-supported-configurations.md)
+- [Planning for App-V](appv-planning-for-appv.md)
+- [App-V Supported Configurations](appv-supported-configurations.md)
 
  
 

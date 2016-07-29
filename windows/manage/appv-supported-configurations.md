@@ -12,10 +12,9 @@ ms.prod: w10
 # App-V Supported Configurations
 
 
-This topic specifies the requirements to install and run Microsoft Application Virtualization (App-V) in your environment.
+This topic specifies the requirements to install and run App-V in your environment.
 
 ## App-V Server system requirements
-
 
 This section lists the operating system and hardware requirements for all of the App-V Server components.
 
@@ -23,7 +22,7 @@ This section lists the operating system and hardware requirements for all of the
 
 The App-V Server does not support the following scenarios:
 
--   Deployment to a computer that runs Microsoft Windows Server Core.
+-   Deployment to a computer that runs the Server Core installation option.
 
 -   Deployment to a computer that runs a previous version of App-V Server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the App-V 4.5 Application Virtualization Management Service (HWS) server is not supported.
 
@@ -37,10 +36,6 @@ The App-V Server does not support the following scenarios:
 
 The following table lists the operating systems that are supported for the App-V Management server installation.
 
-**Note**  
-Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](http://go.microsoft.com/fwlink/p/?LinkId=31975). See [Microsoft Support Lifecycle Support Policy FAQ](http://go.microsoft.com/fwlink/p/?LinkId=31976) for more information.
-
- 
 
 <table>
 <colgroup>
@@ -56,6 +51,11 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
 <td align="left"><p></p></td>
@@ -76,12 +76,12 @@ Microsoft provides support for the current service pack and, in some cases, the 
 
  
 
-**Important**  
-Deployment of the Management server role to a computer with Remote Desktop Sharing (RDS) enabled is not supported.
+> [!IMPORTANT]  
+> Deployment of the Management server role to a computer with Remote Desktop Services enabled is not supported.
 
  
 
-### <a href="" id="management-server-hardware-requirements-"></a>Management server hardware requirements
+### Management server hardware requirements
 
 -   Processor—1.4 GHz or faster, 64-bit (x64) processor
 
@@ -146,6 +146,11 @@ The following table lists the operating systems that are supported for the App-V
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
@@ -165,7 +170,7 @@ The following table lists the operating systems that are supported for the App-V
 
  
 
-### <a href="" id="publishing-server-hardware-requirements-"></a>Publishing server hardware requirements
+### Publishing server hardware requirements
 
 App-V adds no additional requirements beyond those of Windows Server.
 
@@ -194,6 +199,11 @@ The following table lists the operating systems that are supported for the App-V
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
@@ -213,7 +223,7 @@ The following table lists the operating systems that are supported for the App-V
 
  
 
-### <a href="" id="reporting-server-hardware-requirements-"></a>Reporting server hardware requirements
+### Reporting server hardware requirements
 
 App-V adds no additional requirements beyond those of Windows Server.
 
@@ -261,10 +271,13 @@ The following table lists the SQL Server versions that are supported for the App
 
  
 
-## <a href="" id="bkmk-client-supp-cfgs"></a>App-V client system requirements
+## App-V client system requirements
 
 
 The following table lists the operating systems that are supported for the App-V client installation.
+
+> [!NOTE]  
+> App-V is included with Windows 10, version 1607 and later.
 
 <table>
 <colgroup>
@@ -281,22 +294,27 @@ The following table lists the operating systems that are supported for the App-V
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows 10</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows 8.1</p></td>
+<td align="left"><p>Windows 10, version 1511</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows 8</p></td>
+<td align="left"><p>Windows 10, version 1507</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows 7</p></td>
+<td align="left"><p>Windows 8.1</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Windows 8</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Windows /p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
@@ -313,7 +331,7 @@ The following App-V client installation scenarios are not supported, except as n
 
 -   The App-V Remote Desktop services client is supported only for RDS-enabled servers
 
-### <a href="" id="app-v-client-hardware-requirements-"></a>App-V client hardware requirements
+### App-V client hardware requirements
 
 The following list displays the supported hardware configuration for the App-V client installation.
 
@@ -342,6 +360,11 @@ The following table lists the operating systems that are supported for App-V Rem
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
 <td align="left"><p></p></td>
@@ -630,16 +653,5 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-
-[Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
-
-[App-V Prerequisites](appv-prerequisites.md)
-
- 
-
- 
-
-
-
-
-
+- [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
+- [App-V Prerequisites](appv-prerequisites.md)

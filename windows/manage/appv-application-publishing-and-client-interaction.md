@@ -14,31 +14,7 @@ ms.prod: w10
 
 This article provides technical information about common App-V client operations and their integration with the local operating system.
 
--   [App-V package files created by the Sequencer](#bkmk-appv-pkg-files-list)
-
--   [What’s in the appv file?](#bkmk-appv-file-contents)
-
--   [App-V client data storage locations](#bkmk-files-data-storage)
-
--   [Package registry](#bkmk-pkg-registry)
-
--   [App-V package store behavior](#bkmk-pkg-store-behavior)
-
--   [Roaming registry and data](#bkmk-roaming-reg-data)
-
--   [App-V client application lifecycle management](#bkmk-clt-app-lifecycle)
-
--   [Integration of App-V packages](#bkmk-integr-appv-pkgs)
-
--   [Dynamic configuration processing](#bkmk-dynamic-config)
-
--   [Side-by-side assemblies](#bkmk-sidebyside-assemblies)
-
--   [Client logging](#bkmk-client-logging)
-
-For additional reference information, see [Microsoft Application Virtualization (App-V) Documentation Resources Download Page](http://www.microsoft.com/download/details.aspx?id=27760).
-
-## <a href="" id="bkmk-appv-pkg-files-list"></a>App-V package files created by the Sequencer
+## App-V package files created by the Sequencer
 
 
 The Sequencer creates App-V packages and produces a virtualized application. The sequencing process creates the following files:
@@ -93,7 +69,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 
 For information about sequencing, see [Application Virtualization Sequencing Guide](http://go.microsoft.com/fwlink/?LinkID=269810).
 
-## <a href="" id="bkmk-appv-file-contents"></a>What’s in the appv file?
+## What’s in the appv file?
 
 
 The appv file is a container that stores XML and non-XML files together in a single entity. This file is built from the AppX format, which is based on the Open Packaging Conventions (OPC) standard.
@@ -102,139 +78,40 @@ To view the appv file contents, make a copy of the package, and then rename the 
 
 The appv file contains the following folder and files, which are used when creating and publishing a virtual application:
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Name</th>
-<th align="left">Type</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Root</p></td>
-<td align="left"><p>File folder</p></td>
-<td align="left"><p>Directory that contains the file system for the virtualized application that is captured during sequencing.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Content_Types].xml</p></td>
-<td align="left"><p>XML File</p></td>
-<td align="left"><p>List of the core content types in the appv file (e.g. DLL, EXE, BIN).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>AppxBlockMap.xml</p></td>
-<td align="left"><p>XML File</p></td>
-<td align="left"><p>Layout of the appv file, which uses File, Block, and BlockMap elements that enable location and validation of files in the App-V package.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>AppxManifest.xml</p></td>
-<td align="left"><p>XML File</p></td>
-<td align="left"><p>Metadata for the package that contains the required information for adding, publishing, and launching the package. Includes extension points (file type associations and shortcuts) and the names and GUIDs associated with the package.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>FilesystemMetadata.xml</p></td>
-<td align="left"><p>XML File</p></td>
-<td align="left"><p>List of the files captured during sequencing, including attributes (e.g., directories, files, opaque directories, empty directories,and long and short names).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>PackageHistory.xml</p></td>
-<td align="left"><p>XML File</p></td>
-<td align="left"><p>Information about the sequencing computer (operating system version, Internet Explorer version, .Net Framework version) and process (upgrade, package version).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Registry.dat</p></td>
-<td align="left"><p>DAT File</p></td>
-<td align="left"><p>Registry keys and values captured during the sequencing process for the package.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>StreamMap.xml</p></td>
-<td align="left"><p>XML File</p></td>
-<td align="left"><p>List of files for the primary and publishing feature block. The publishing feature block contains the ICO files and required portions of files (EXE and DLL) for publishing the package. When present, the primary feature block includes files that have been optimized for streaming during the sequencing process.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+| - | - | - |
+| Root | File folder | Directory that contains the file system for the virtualized application that is captured during sequencing. |
+| [Content_Types].xml | XML File | List of the core content types in the appv file (e.g. DLL, EXE, BIN). |
+| AppxBlockMap.xml | XML File | Layout of the appv file, which uses File, Block, and BlockMap elements that enable location and validation of files in the App-V package.|
+| AppxManifest.xml | XML File | Metadata for the package that contains the required information for adding, publishing, and launching the package. Includes extension points (file type associations and shortcuts) and the names and GUIDs associated with the package.|
+| FilesystemMetadata.xml | XML File | List of the files captured during sequencing, including attributes (e.g., directories, files, opaque directories, empty directories,and long and short names). |
+| PackageHistory.xml | XML File | Information about the sequencing computer (operating system version, Internet Explorer version, .Net Framework version) and process (upgrade, package version).|
+| Registry.dat | DAT File | Registry keys and values captured during the sequencing process for the package.|
+| StreamMap.xml | XML File | List of files for the primary and publishing feature block. The publishing feature block contains the ICO files and required portions of files (EXE and DLL) for publishing the package. When present, the primary feature block includes files that have been optimized for streaming during the sequencing process.|
 
  
 
-## <a href="" id="bkmk-files-data-storage"></a>App-V client data storage locations
-
+## App-V client data storage locations
 
 The App-V client performs tasks to ensure that virtual applications run properly and work like locally installed applications. The process of opening and running virtual applications requires mapping from the virtual file system and registry to ensure the application has the required components of a traditional application expected by users. This section describes the assets that are required to run virtual applications and lists the location where App-V stores the assets.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Name</th>
-<th align="left">Location</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Package Store</p></td>
-<td align="left"><p>%ProgramData%\App-V</p></td>
-<td align="left"><p>Default location for read only package files</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Machine Catalog</p></td>
-<td align="left"><p>%ProgramData%\Microsoft\AppV\Client\Catalog</p></td>
-<td align="left"><p>Contains per-machine configuration documents</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>User Catalog</p></td>
-<td align="left"><p>%AppData%\Microsoft\AppV\Client\Catalog</p></td>
-<td align="left"><p>Contains per-user configuration documents</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Shortcut Backups</p></td>
-<td align="left"><p>%AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups</p></td>
-<td align="left"><p>Stores previous integration points that enable restore on package unpublish</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Copy on Write (COW) Roaming</p></td>
-<td align="left"><p>%AppData%\Microsoft\AppV\Client\VFS</p></td>
-<td align="left"><p>Writeable roaming location for package modification</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Copy on Write (COW) Local</p></td>
-<td align="left"><p>%LocalAppData%\Microsoft\AppV\Client\VFS</p></td>
-<td align="left"><p>Writeable non-roaming location for package modification</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Machine Registry</p></td>
-<td align="left"><p>HKLM\Software\Microsoft\AppV</p></td>
-<td align="left"><p>Contains package state information, including VReg for machine or globally published packages (Machine hive)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>User Registry</p></td>
-<td align="left"><p>HKCU\Software\Microsoft\AppV</p></td>
-<td align="left"><p>Contains user package state information including VReg</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>User Registry Classes</p></td>
-<td align="left"><p>HKCU\Software\Classes\AppV</p></td>
-<td align="left"><p>Contains additional user package state information</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Name | Location | Description |
+| - | - | - |
+| Package Store | %ProgramData%\App-V| Default location for read only package files| 
+| Machine Catalog | %ProgramData%\Microsoft\AppV\Client\Catalog| Contains per-machine configuration documents| 
+| User Catalog | %AppData%\Microsoft\AppV\Client\Catalog| Contains per-user configuration documents| 
+| Shortcut Backups | %AppData%\Microsoft\AppV\Client\Integration\ShortCutBackups| Stores previous integration points that enable restore on package unpublish| 
+| Copy on Write (COW) Roaming | %AppData%\Microsoft\AppV\Client\VFS| Writeable roaming location for package modification| 
+| Copy on Write (COW) Local | %LocalAppData%\Microsoft\AppV\Client\VFS| Writeable non-roaming location for package modification| 
+| Machine Registry | HKLM\Software\Microsoft\AppV| Contains package state information, including VReg for machine or globally published packages (Machine hive)| 
+| User Registry | HKCU\Software\Microsoft\AppV| Contains user package state information including VReg| 
+| User Registry Classes | HKCU\Software\Classes\AppV| Contains additional user package state information| 
 
 Additional details for the table are provided in the section below and throughout the document.
 
 ### Package store
 
-The App-V Client manages the applications assets mounted in the package store. This default storage location is `%ProgramData%\App-V`, but you can configure it during or after setup by using the `Set-AppVClientConfiguration` PowerShell command, which modifies the local registry (`PackageInstallationRoot` value under the `HKLM\Software\Microsoft\AppV\Client\Streaming` key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named for the Package GUID and Version GUID.
+The App-V Client manages the applications assets mounted in the package store. This default storage location is `%ProgramData%\App-V`, but you can configure it during or after setup by using the `Set-AppVClientConfiguration` Windows PowerShell cmdlet, which modifies the local registry (`PackageInstallationRoot` value under the `HKLM\Software\Microsoft\AppV\Client\Streaming` key). The package store must be located at a local path on the client operating system. The individual packages are stored in the package store in subdirectories named for the Package GUID and Version GUID.
 
 Example of a path to a specific application:
 
@@ -248,8 +125,8 @@ To change the default location of the package store during setup, see [How to De
 
 If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high performance network location (such as a SAN) is preferable. For more information on shared content store mode, see <http://go.microsoft.com/fwlink/p/?LinkId=392750>.
 
-**Note**  
-The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
+> [!NOTE]  
+> The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
 
  
 
@@ -322,7 +199,7 @@ The App-V Client manages the following two file-based locations:
 </tr>
 <tr class="even">
 <td align="left"><p>Default storage location</p></td>
-<td align="left"><p><code>ppdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
+<td align="left"><p><code>appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Files in the user catalog</p></td>
@@ -355,7 +232,7 @@ The Package Store contains a pristine copy of the package files that have been s
 
 ### COW roaming
 
-The COW Roaming location described above stores changes to files and directories that are targeted to the typical %AppData% location or \\Users\\{username}\\AppData\\Roaming location. These directories and files are then roamed based on the operating system settings.
+The COW Roaming location described above stores changes to files and directories that are targeted to the typical %AppData% location or \\Users\\*<username>*\\AppData\\Roaming location. These directories and files are then roamed based on the operating system settings.
 
 ### COW local
 
@@ -368,21 +245,7 @@ Before an application can access the package registry data, the App-V Client mus
 
 When a new package is added to the App-V Client, a copy of the REGISTRY.DAT file from the package is created at `%ProgramData%\Microsoft\AppV\Client\VREG\{Version GUID}.dat`. The name of the file is the version GUID with the .DAT extension. The reason this copy is made is to ensure that the actual hive file in the package is never in use, which would prevent the removal of the package at a later time.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Registry.dat from Package Store</strong></p></td>
-<td align="left"><p><strong> &gt; </strong></p></td>
-<td align="left"><p><strong>%ProgramData%\Microsoft\AppV\Client\Vreg\{VersionGuid}.dat</strong></p></td>
-</tr>
-</tbody>
-</table>
-
+**Registry.dat from Package Store ** > **%ProgramData%\Microsoft\AppV\Client\Vreg\{VersionGuid}.dat**
  
 
 When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGuid\REGISTRY`. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a userspecific location `HKCU\Software\Microsoft\AppV\Client\Packages\PackageGuid\Registry\User`. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
@@ -509,10 +372,10 @@ The following locations are configured as pass-through locations by default:
 
 The purpose of Pass-through keys is to ensure that a virtual application does not write registry data in the VReg that is required for non-virtual applications for successful operation or integration. The Policies key ensures that Group Policy based settings set by the administrator are utilized and not per package settings. The AppModel key is required for integration with Windows Modern UI based applications. It is recommend that administers do not modify any of the default pass-through keys, but in some instances, based on application behavior may require adding additional pass-through keys.
 
-## <a href="" id="bkmk-pkg-store-behavior"></a>App-V package store behavior
+## App-V package store behavior
 
 
-App-V 5 manages the Package Store, which is the location where the expanded asset files from the appv file are stored. By default, this location is stored at %ProgramData%\\App-V, and is limited in terms of storage capabilities only by free disk space. The package store is organized by the GUIDs for the package and version as mentioned in the previous section.
+App-V manages the Package Store, which is the location where the expanded asset files from the appv file are stored. By default, this location is stored at %ProgramData%\\App-V, and is limited in terms of storage capabilities only by free disk space. The package store is organized by the GUIDs for the package and version as mentioned in the previous section.
 
 ### Add packages
 
@@ -524,7 +387,7 @@ Packages can be explicitly loaded using the PowerShell `Mount-AppVClientPackage`
 
 ### Streaming packages
 
-The App-V Client can be configured to change the default behavior of streaming. All streaming policies are stored under the following registry key: `HKEY_LOCAL_MAcHINE\Software\Microsoft\AppV\Client\Streaming`. Policies are set using the PowerShell cmdlet `Set-AppvClientConfiguration`. The following policies apply to Streaming:
+The App-V Client can be configured to change the default behavior of streaming. All streaming policies are stored under the following registry key: `HKEY_LOCAL_MAcHINE\Software\Microsoft\AppV\Client\Streaming`. Policies are set using the Windows PowerShell cmdlet `Set-AppvClientConfiguration`. The following policies apply to Streaming:
 
 <table>
 <colgroup>
@@ -540,7 +403,7 @@ The App-V Client can be configured to change the default behavior of streaming. 
 <tbody>
 <tr class="odd">
 <td align="left"><p>AllowHighCostLaunch</p></td>
-<td align="left"><p>On Windows 8 and later, it allows streaming over 3G and cellular networks</p></td>
+<td align="left"><p>Allows streaming over 3G and cellular networks</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AutoLoad</p></td>
@@ -588,10 +451,6 @@ App-V packages can be configured with a primary feature block during sequencing.
 
 After the initial stream of any publishing data and the primary feature block, requests for additional files perform stream faults. These blocks of data are downloaded to the package store on an as-needed basis. This allows a user to download only a small part of the package, typically enough to launch the package and run normal tasks. All other blocks are downloaded when a user initiates an operation that requires data not currently in the package store.
 
-For more information on App-V Package streaming visit: <http://go.microsoft.com/fwlink/?LinkId=392770>.
-
-Sequencing for streaming optimization is available at: <http://go.microsoft.com/fwlink/?LinkId=392771>.
-
 ### Package upgrades
 
 App-V Packages require updating throughout the lifecycle of the application. App-V Package upgrades are similar to the package publish operation, as each version will be created in its own PackageRoot location: `%ProgramData%\App-V\{PkgGUID}\{newVerGUID}`. The upgrade operation is optimized by creating hard links to identical- and streamed-files from other versions of the same package.
@@ -603,7 +462,7 @@ The behavior of the App-V Client when packages are removed depends on the method
 ## <a href="" id="bkmk-roaming-reg-data"></a>Roaming registry and data
 
 
-App-V 5 is able to provide a near-native experience when roaming, depending on how the application being used is written. By default, App-V roams AppData that is stored in the roaming location, based on the roaming configuration of the operating system. Other locations for storage of file-based data do not roam from computer to computer, since they are in locations that are not roamed.
+App-V is able to provide a near-native experience when roaming, depending on how the application being used is written. By default, App-V roams AppData that is stored in the roaming location, based on the roaming configuration of the operating system. Other locations for storage of file-based data do not roam from computer to computer, since they are in locations that are not roamed.
 
 ### <a href="" id="bkmk-clt-inter-roam-reqs"></a>Roaming requirements and user catalog data storage
 
@@ -615,8 +474,8 @@ App-V stores data, which represents the state of the user’s catalog, in the fo
 
 Together, these files and registry settings represent the user’s catalog, so either both must be roamed, or neither must be roamed for a given user. App-V does not support roaming %AppData%, but not roaming the user’s profile (registry), or vice versa.
 
-**Note**  
-The **Repair-AppvClientPackage** cmdlet does not repair the publishing state of packages, where the user’s App-V state under `HKEY_CURRENT_USER` is missing or mismatched with the data in %appdata%.
+> [!NOTE]  
+> The **Repair-AppvClientPackage** cmdlet does not repair the publishing state of packages, where the user’s App-V state under `HKEY_CURRENT_USER` is missing or mismatched with the data in %appdata%.
 
  
 
@@ -671,84 +530,23 @@ A typical package has several locations mapped in the user’s backing store for
 
 The following table shows local and roaming locations, when folder redirection has not been implemented.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">VFS directory in package</th>
-<th align="left">Mapped location of backing store</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>ProgramFilesX86</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\ProgramFilesX86</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SystemX86</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\SystemX86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\Windows</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>appv_ROOT</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\appv_ROOT</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>AppData</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Roaming</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\AppData</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
+| VFS directory in package | Mapped location of backing store |
+| - | - |
+| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\ProgramFilesX86 |
+| SystemX86 | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\SystemX86 |
+| Windows | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\Windows |
+| appv\_ROOT | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\appv_ROOT|
+| AppData | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\AppData |
 
 The following table shows local and roaming locations, when folder redirection has been implemented for %AppData%, and the location has been redirected (typically to a network location).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">VFS directory in package</th>
-<th align="left">Mapped location of backing store</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>ProgramFilesX86</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\ProgramFilesX86</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SystemX86</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\SystemX86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\Windows</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>appv_ROOT</p></td>
-<td align="left"><p>C:\users\jsmith\AppData\<strong>Local</strong>\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\appv_ROOT</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>AppData</p></td>
-<td align="left"><p><strong>\\Fileserver</strong>\users\jsmith\roaming\Microsoft\AppV\Client\VFS\&lt;GUID&gt;\AppData</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
+| VFS directory in package | Mapped location of backing store |
+| - | - |
+| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\ProgramFilesX86 |
+| SystemX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\SystemX86 |
+| Windows | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\Windows |
+| appv_ROOT | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\appv\_ROOT |
+| AppData | \\Fileserver\users\Local\roaming\Microsoft\AppV\Client\VFS\<GUID>\AppData |
  
 
 The current App-V Client VFS driver cannot write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. The detailed steps of the processes are:
@@ -797,14 +595,14 @@ This completes the successful roaming of application settings that are present i
 
 This process will re-create both the local and network locations for AppData and remove the registry record of the timestamp.
 
-## <a href="" id="bkmk-clt-app-lifecycle"></a>App-V client application lifecycle management
+## App-V client application lifecycle management
 
 
 In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers via the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are performed as a series of PowerShell commands initiated on the computer running the App-V Client.
 
 This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012 visit: <http://go.microsoft.com/fwlink/?LinkId=392773>.
 
-The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with PowerShell commands. See the How to Deploy the Client section on TechNet at: [How to Deploy the App-V Client](appv-deploy-the-appv-client.md) or utilize the PowerShell:
+The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with PowerShell commands. See [How to enable the App-V Client](appv-enable-the-appv-desktop-client.md) or use Windows PowerShell:
 
 ``` syntax
 get-command *appv*
@@ -834,7 +632,7 @@ Adding an App-V package to the client is the first step of the publishing refres
 
 **How to add an App-V package**
 
-1.  Manual initiation via PowerShell or Task Sequence initiation of the Publishing Refresh process.
+1.  Manual initiation via Windows PowerShell or Task Sequence initiation of the Publishing Refresh process.
 
     1.  The App-V Client makes an HTTP connection and requests a list of applications based on the target. The Publishing refresh process supports targeting machines or users.
 
@@ -880,8 +678,8 @@ Adding an App-V package to the client is the first step of the publishing refres
 
 5.  Remove objects that are not published to the target (user or machine).
 
-    **Note**  
-    This will not perform a package deletion but rather remove integration points for the specific target (user or machine) and remove user catalog files (machine catalog files for globally published).
+    > [!NOTE]  
+    > This will not perform a package deletion but rather remove integration points for the specific target (user or machine) and remove user catalog files (machine catalog files for globally published).
 
      
 
@@ -889,8 +687,8 @@ Adding an App-V package to the client is the first step of the publishing refres
 
 7.  Packages that already have publishing information for the machine or user are immediately restored.
 
-    **Note**  
-    This condition occurs as a product of removal without unpublishing with background addition of the package.
+    > [!NOTE]    
+    > This condition occurs as a product of removal without unpublishing with background addition of the package.
 
      
 
@@ -957,7 +755,7 @@ After the Publishing Refresh process, the user launches and subsequently re-laun
 
 ### Upgrading an App-V package
 
-The App-V 5 package upgrade process differs from the older versions of App-V. App-V supports multiple versions of the same package on a machine entitled to different users. Package versions can be added at any time as the package store and catalogs are updated with the new resources. The only process specific to the addition of new version resources is storage optimization. During an upgrade, only the new files are added to the new version store location and hard links are created for unchanged files. This reduces the overall storage by only presenting the file on one disk location and then projecting it into all folders with a file location entry on the disk. The specific details of upgrading an App-V Package are as follows:
+The App-V package upgrade process differs from the older versions of App-V. App-V supports multiple versions of the same package on a machine entitled to different users. Package versions can be added at any time as the package store and catalogs are updated with the new resources. The only process specific to the addition of new version resources is storage optimization. During an upgrade, only the new files are added to the new version store location and hard links are created for unchanged files. This reduces the overall storage by only presenting the file on one disk location and then projecting it into all folders with a file location entry on the disk. The specific details of upgrading an App-V Package are as follows:
 
 **How to upgrade an App-V package**
 
@@ -973,13 +771,13 @@ The App-V 5 package upgrade process differs from the older versions of App-V. Ap
 
 4.  Perform integration tasks.
 
-    -   Integrate extensions points (EP) from the Manifest and Dynamic Configuration files.
+    1. Integrate extensions points (EP) from the Manifest and Dynamic Configuration files.
 
-    1.  File based EP data is stored in the AppData folder utilizing Junction Points from the package store.
+    2.  File based EP data is stored in the AppData folder utilizing Junction Points from the package store.
 
-    2.  Version 1 EPs already exist when a new version becomes available.
+    3.  Version 1 EPs already exist when a new version becomes available.
 
-    3.  The extension points are switched to the Version 2 location in machine or user catalogs for any newer or updated extension points.
+    4.  The extension points are switched to the Version 2 location in machine or user catalogs for any newer or updated extension points.
 
 5.  Run scripts targeted for publishing timing.
 
@@ -987,124 +785,42 @@ The App-V 5 package upgrade process differs from the older versions of App-V. Ap
 
 ### Upgrading an in-use App-V package
 
-**Starting in App-V 5 SP2**: If you try to upgrade a package that is in use by an end user, the upgrade task is placed in a pending state. The upgrade will run later, according to the following rules:
+If you try to upgrade a package that is in use by an end user, the upgrade task is placed in a pending state. The upgrade will run later, according to the following rules:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task type</th>
-<th align="left">Applicable rule</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>User-based task, e.g., publishing a package to a user</p></td>
-<td align="left"><p>The pending task will be performed after the user logs off and then logs back on.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Globally based task, e.g., enabling a connection group globally</p></td>
-<td align="left"><p>The pending task will be performed when the computer is shut down and then restarted.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Task type | Applicable rule |
+| - | - |
+| User-based task, e.g., publishing a package to a user | The pending task will be performed after the user logs off and then logs back on. |
+| Globally based task, e.g., enabling a connection group globally | The pending task will be performed when the computer is shut down and then restarted. |
 
 When a task is placed in a pending state, the App-V client also generates a registry key for the pending task, as follows:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">User-based or globally based task</th>
-<th align="left">Where the registry key is generated</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>User-based tasks</p></td>
-<td align="left"><p>KEY_CURRENT_USER\Software\Microsoft\AppV\Client\PendingTasks</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Globally based tasks</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\Software\Microsoft\AppV\Client\PendingTasks</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| User-based or globally based task | Where the registry key is generated |
+| - | - |
+| User-based tasks | HKEY\_CURRENT\_USER\Software\Microsoft\AppV\Client\PendingTasks |
+| Globally based tasks | HKEY\_LOCAL\_MACHINE\Software\Microsoft\AppV\Client\PendingTasks |
 
 The following operations must be completed before users can use the newer version of the package:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Add the package to the computer</p></td>
-<td align="left"><p>This task is computer specific and you can perform it at any time by completing the steps in the Package Add section above.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Publish the package</p></td>
-<td align="left"><p>See the Package Publishing section above for steps. This process requires that you update extension points on the system. End users cannot be using the application when you complete this task.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Task | Details |
+| - | - |
+| Add the package to the computer | This task is computer specific and you can perform it at any time by completing the steps in the Package Add section above. |
+| Publish the package |  See the Package Publishing section above for steps. This process requires that you update extension points on the system. End users cannot be using the application when you complete this task. |
 
 Use the following example scenarios as a guide for updating packages.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Scenario</th>
-<th align="left">Requirements</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V package is not in use when you try to upgrade</p></td>
-<td align="left"><p>None of the following components of the package can be in use: virtual application, COM server, or shell extensions.</p>
-<p>The administrator publishes a newer version of the package and the upgrade works the next time a component or application inside the package is launched. The new version of the package is streamed and run. Nothing has changed in this scenario in App-V 5 SP2 from previous releases of App-V 5.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V package is in use when the administrator publishes a newer version of the package</p></td>
-<td align="left"><p>The upgrade operation is set to pending by the App-V Client, which means that it is queued and carried out later when the package is not in use.</p>
-<p>If the package application is in use, the user shuts down the virtual application, after which the upgrade can occur.</p>
-<p>If the package has shell extensions (Office 2013), which are permanently loaded by Windows Explorer, the user cannot be logged in. Users must log off and the log back in to initiate the App-V package upgrade.</p></td>
-</tr>
-</tbody>
-</table>
+| Scenario | Requirements |
+| - | - |
+| App-V package is not in use when you try to upgrade | None of the following components of the package can be in use: virtual application, COM server, or shell extensions.<br/><br/>The administrator publishes a newer version of the package and the upgrade works the next time a component or application inside the package is launched. The new version of the package is streamed and ran. |
+| App-V package is in use when the administrator publishes a newer version of the package | The upgrade operation is set to pending by the App-V Client, which means that it is queued and carried out later when the package is not in use.<br/><br/>If the package application is in use, the user shuts down the virtual application, after which the upgrade can occur.<br/><br/>If the package has shell extensions, which are permanently loaded by Windows Explorer, the user cannot be logged in. Users must log off and the log back in to initiate the App-V package upgrade.|
 
  
-
 ### Global vs user publishing
 
 App-V Packages can be published in one of two ways; User which entitles an App-V package to a specific user or group of users and Global which entitles the App-V package to the entire machine for all users of the machine. Once a package upgrade has been pended and the App-V package is not in use, consider the two types of publishing:
 
 -   **Globally published**: the application is published to a machine; all users on that machine can use it. The upgrade will happen when the App-V Client Service starts, which effectively means a machine restart.
 
--   **User published**: the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user logs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly via PowerShell commands).
+-   **User published**: the application is published to a user. If there are multiple users on the machine, the application can be published to a subset of the users. The upgrade will happen when the user logs in or when it is published again (periodically, ConfigMgr Policy refresh and evaluation, or an App-V periodic publishing/refresh, or explicitly via Windows PowerShell commands).
 
 ### Removing an App-V package
 
@@ -1112,9 +828,9 @@ Removing App-V applications in a Full Infrastructure is an unpublish operation, 
 
 ### Repairing an App-V package
 
-The repair operation is very simple but may affect many locations on the machine. The previously mentioned Copy on Write (COW) locations are removed, and extension points are de-integrated and then re-integrated. Please review the COW data placement locations by reviewing where they are registered in the registry. This operation is done automatically and there is no administrative control other than initiating a Repair operation from the App-V Client Console or via PowerShell (Repair-AppVClientPackage).
+The repair operation is very simple but may affect many locations on the machine. The previously mentioned Copy on Write (COW) locations are removed, and extension points are de-integrated and then re-integrated. Please review the COW data placement locations by reviewing where they are registered in the registry. This operation is done automatically and there is no administrative control other than initiating a Repair operation from the App-V Client Console or via Windows PowerShell (Repair-AppVClientPackage).
 
-## <a href="" id="bkmk-integr-appv-pkgs"></a>Integration of App-V packages
+## Integration of App-V packages
 
 
 The App-V Client and package architecture provides specific integration with the local operating system during the addition and publishing of packages. Three files define the integration or extension points for an App-V Package:
@@ -1172,7 +888,7 @@ From the package manifest and dynamic configuration XML files, the path to a spe
 ``` syntax
 <Extension Category="AppV.Shortcut">
           <Shortcut>
-            <File>[{Common Desktop}]\Adobe Reader 9.lnk</File>
+            <File>[{Common Desktop}]\Adobe Reader.lnk</File>
             <Target>[{AppVPackageRoot}]\Reader\AcroRd32.exe</Target>
             <Icon>[{Windows}]\Installer\{AC76BA86-7AD7-1033-7B44-A94000000001}\SC_Reader.ico</Icon>
             <Arguments />
@@ -1217,7 +933,7 @@ The App-V Client manages the local operating system File Type Associations durin
                 <ShellCommand>
                   <ApplicationId>[{AppVPackageRoot}]\Reader\AcroRd32.exe</ApplicationId>
                   <Name>Read</Name>
-                  <FriendlyName>Open with Adobe Reader 9</FriendlyName>
+                  <FriendlyName>Open with Adobe Reader</FriendlyName>
                   <CommandLine>"[{AppVPackageRoot}]\Reader\AcroRd32.exe" "%1"</CommandLine>
                 </ShellCommand>
               </ShellCommands>
@@ -1255,52 +971,16 @@ Shell extensions are embedded in the package automatically during the sequencing
 
 The following table displays the supported shell extensions.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Handler</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Context menu handler</p></td>
-<td align="left"><p>Adds menu items to the context menu. It is called before the context menu is displayed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Drag-and-drop handler</p></td>
-<td align="left"><p>Controls the action upon right-click drag-and-drop and modifies the context menu that appears.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Drop target handler</p></td>
-<td align="left"><p>Controls the action after a data object is dragged-and-dropped over a drop target such as a file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Data object handler</p></td>
-<td align="left"><p>Controls the action after a file is copied to the clipboard or dragged-and-dropped over a drop target. It can provide additional clipboard formats to the drop target.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Property sheet handler</p></td>
-<td align="left"><p>Replaces or adds pages to the property sheet dialog box of an object.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Infotip handler</p></td>
-<td align="left"><p>Allows retrieving flags and infotip information for an item and displaying it inside a popup tooltip upon mouse- hover.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Column handler</p></td>
-<td align="left"><p>Allows creating and displaying custom columns in Windows Explorer <em>Details view</em>. It can be used to extend sorting and grouping.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Preview handler</p></td>
-<td align="left"><p>Enables a preview of a file to be displayed in the Windows Explorer Preview Pane.</p></td>
-</tr>
-</tbody>
-</table>
+| Handler | Description |
+| - | - |
+| Context menu handler | Adds menu items to the context menu. It is called before the context menu is displayed. |
+| Drag-and-drop handler | Controls the action upon right-click drag-and-drop and modifies the context menu that appears. |
+| Drop target handler | Controls the action after a data object is dragged-and-dropped over a drop target such as a file.|
+| Data object handler| Controls the action after a file is copied to the clipboard or dragged-and-dropped over a drop target. It can provide additional clipboard formats to the drop target.|
+| Property sheet handler| Replaces or adds pages to the property sheet dialog box of an object.|
+| Infotip handler| Allows retrieving flags and infotip information for an item and displaying it inside a popup tooltip upon mouse- hover.|
+| Column handler| Allows creating and displaying custom columns in Windows Explorer *Details view*. It can be used to extend sorting and grouping.|
+| Preview handler| Enables a preview of a file to be displayed in the Windows Explorer Preview Pane.|
 
  
 
@@ -1501,7 +1181,7 @@ App-V Packages contain the Manifest file inside of the appv package file, which 
 
 ### Example for dynamic configuration files
 
-The example below shows the combination of the Manifest, Deployment Configuration and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only and not to be a complete description of the specific categories available in each of the files. For more information review the App-V 5 Sequencing Guide at: <http://go.microsoft.com/fwlink/?LinkID=269810>
+The example below shows the combination of the Manifest, Deployment Configuration and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only and not to be a complete description of the specific categories available in each of the files. For more information review the App-V Sequencing Guide at: [http://go.microsoft.com/fwlink/?LinkID=269810](http://go.microsoft.com/fwlink/?LinkID=269810).
 
 **Manifest**
 
@@ -1569,10 +1249,10 @@ The example below shows the combination of the Manifest, Deployment Configuratio
      </Subsystems>
 ```
 
-## <a href="" id="bkmk-sidebyside-assemblies"></a>Side-by-side assemblies
+## Side-by-side assemblies
 
 
-App-V supports the automatic packaging of side-by-side (SxS) assemblies during sequencing and deployment on the client during virtual application publishing. App-V 5 SP2 supports capturing SxS assemblies during sequencing for assemblies not present on the sequencing machine. And for assemblies consisting of Visual C++ (Version 8 and newer) and/or MSXML run-time, the Sequencer will automatically detect and capture these dependencies even if they were not installed during monitoring. The Side by Side assemblies feature removes the limitations of previous versions of App-V, where the App-V Sequencer did not capture assemblies already present on the sequencing workstation, and privatizing the assemblies which limited to one bit version per package. This behavior resulted in deployed App-V applications to clients missing the required SxS assemblies, causing application launch failures. This forced the packaging process to document and then ensure that all assemblies required for packages were locally installed on the user’s client operating system to ensure support for the virtual applications. Based on the number of assemblies and the lack of application documentation for the required dependencies, this task was both a management and implementation challenge.
+App-V supports the automatic packaging of side-by-side (SxS) assemblies during sequencing and deployment on the client during virtual application publishing. App-V supports capturing SxS assemblies during sequencing for assemblies not present on the sequencing machine. And for assemblies consisting of Visual C++ (Version 8 and newer) and/or MSXML run-time, the Sequencer will automatically detect and capture these dependencies even if they were not installed during monitoring. The Side by Side assemblies feature removes the limitations of previous versions of App-V, where the App-V Sequencer did not capture assemblies already present on the sequencing workstation, and privatizing the assemblies which limited to one bit version per package. This behavior resulted in deployed App-V applications to clients missing the required SxS assemblies, causing application launch failures. This forced the packaging process to document and then ensure that all assemblies required for packages were locally installed on the user’s client operating system to ensure support for the virtual applications. Based on the number of assemblies and the lack of application documentation for the required dependencies, this task was both a management and implementation challenge.
 
 Side by Side Assembly support in App-V has the following features.
 
@@ -1588,24 +1268,15 @@ Side by Side Assembly support in App-V has the following features.
 
 During publishing of an App-V package with SxS assemblies the App-V Client will check for the presence of the assembly on the machine. If the assembly does not exist, the client will deploy the assembly to the machine. Packages that are part of connection groups will rely on the Side by Side assembly installations that are part of the base packages, as the connection group does not contain any information about assembly installation.
 
-**Note**  
-UnPublishing or removing a package with an assembly does not remove the assemblies for that package.
+> [!NOTE]  
+> Unpublishing or removing a package with an assembly does not remove the assemblies for that package.
 
  
 
-## <a href="" id="bkmk-client-logging"></a>Client logging
+## Client logging
 
 
 The App-V client logs information to the Windows Event log in standard ETW format. The specific App-V events can be found in the event viewer, under Applications and Services Logs\\Microsoft\\AppV\\Client.
-
-**Note**  
-In App-V 5.0 SP3, some logs were consolidated and moved to the following location:
-
-`Event logs/Applications and Services Logs/Microsoft/AppV/ServiceLog`
-
-For a list of the moved logs, see [About App-V 5.0 SP3](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50-sp3.md#bkmk-event-logs-moved).
-
- 
 
 There are three specific categories of events recorded described below.
 
@@ -1617,14 +1288,4 @@ There are three specific categories of events recorded described below.
 
 ## Have a suggestion for App-V?
 
-
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
- 
-
- 
-
-
-
-
-

@@ -8,13 +8,11 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-
 # Deploying App-V
 
+App-V supports a number of different deployment options. This section of the App-V Administrator’s Guide includes information you should consider about the deployment of App-V and step-by-step procedures to help you successfully perform the tasks that you must complete at different stages of your deployment.
 
-Microsoft Application Virtualization (App-V) supports a number of different deployment options. This section of the App-V Administrator’s Guide includes information you should consider about the deployment of App-V and step-by-step procedures to help you successfully perform the tasks that you must complete at different stages of your deployment.
-
-## <a href="" id="---------app-v-5-1-deployment-information"></a> App-V Deployment Information
+## App-V Deployment Information
 
 
 -   [Deploying the App-V Sequencer and Client](appv-deploying-the-appv-sequencer-and-client.md)
@@ -46,14 +44,4 @@ Microsoft Application Virtualization (App-V) supports a number of different depl
 
 ## Have a suggestion for App-V?
 
-
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
- 
-
- 
-
-
-
-
-

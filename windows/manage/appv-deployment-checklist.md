@@ -12,12 +12,10 @@ ms.prod: w10
 # App-V Deployment Checklist
 
 
-This checklist can be used to help you during Microsoft Application Virtualization (App-V) deployment.
+This checklist can be used to help you during an App-V deployment.
 
-**Note**  
-This checklist outlines the recommended steps and a high-level list of items to consider when deploying App-V features. It is recommended that you copy this checklist into a spreadsheet program and customize it for your use.
-
- 
+> [!NOTE]
+> This checklist outlines the recommended steps and a high-level list of items to consider when deploying App-V features. It is recommended that you copy this checklist into a spreadsheet program and customize it for your use.
 
 <table>
 <colgroup>
@@ -52,7 +50,7 @@ This checklist outlines the recommended steps and a high-level list of items to 
 <td align="left"><p>Run App-V Setup to deploy the required App-V features for your environment.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>Keep track of the names of the servers and associated URL’s created during installation. This information will be used throughout the installation process.</p>
+<p>Keep track of the names of the servers and associated URLs created during installation. This information will be used throughout the installation process.</p>
 </div>
 <div>
  
@@ -68,8 +66,6 @@ This checklist outlines the recommended steps and a high-level list of items to 
 </tbody>
 </table>
 
- 
-
 ## Have a suggestion for App-V?
 
 
@@ -77,14 +73,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-
 [Deploying App-V](appv-deploying-appv.md)
-
- 
-
- 
-
-
-
-
-
