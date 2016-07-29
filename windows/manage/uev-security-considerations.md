@@ -192,11 +192,11 @@ When you use the Encrypting File System (EFS) to encrypt files on a remote serve
 
 This encryption process does not apply when your system includes Internet Protocol security (IPsec) or Web Distributed Authoring and Versioning (WebDAV). IPsec encrypts data while it is transported over a TCP/IP network. If the file is encrypted before it is copied or moved to a WebDAV folder on a server, it remains encrypted during the transmission and while it is stored on the server.
 
-### Let the UE-V Agent create folders for each user
+### Let the UE-V service create folders for each user
 
-To ensure that UE-V works optimally, create only the root share on the server, and let the UE-V Agent create the folders for each user. UE-V creates these user folders with the appropriate security.
+To ensure that UE-V works optimally, create only the root share on the server, and let the UE-V service create the folders for each user. UE-V creates these user folders with the appropriate security.
 
-This permission configuration enables users to create folders for settings storage. The UE-V Agent creates and secures a settings package folder while it runs in the context of the user. Users receive full control to their settings package folder. Other users do not inherit access to this folder. You do not have to create and secure individual user directories. The agent that runs in the context of the user does it automatically.
+This permission configuration enables users to create folders for settings storage. The UE-V service creates and secures a settings package folder while it runs in the context of the user. Users receive full control to their settings package folder. Other users do not inherit access to this folder. You do not have to create and secure individual user directories. The UE-V service that runs in the context of the user does it automatically.
 
 **Note**
 Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
@@ -205,12 +205,12 @@ Additional security can be configured when a Windows Server is used for the sett
 
 2.  Set the registry key value to *1*.
 
-When this configuration setting is in place, the UE-V Agent verifies that the local Administrators group or current user is the owner of the settings package folder. If not, then the UE-V Agent does not grant access to the folder.
+When this configuration setting is in place, the UE-V service verifies that the local Administrators group or current user is the owner of the settings package folder. If not, then the UE-V service does not grant access to the folder.
 
 
 If you must create folders for the users, ensure that you have the correct permissions set.
 
-We strongly recommend that you do not pre-create folders. Instead, let the UE-V Agent create the folder for the user.
+We strongly recommend that you do not pre-create folders. Instead, let the UE-V service create the folder for the user.
 
 ### Ensure correct permissions to store UE-V 2 settings in a home directory or custom directory
 

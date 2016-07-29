@@ -44,8 +44,7 @@ The following policy settings can be configured for UE-V.
 <tr class="even">
 <td align="left"><p>First Use Notification</p></td>
 <td align="left"><p>Computers Only</p></td>
-<td align="left"><p>This Group Policy setting enables a notification in the notification area that appears when the UE-V</p>
-<p>agent runs for the first time.</p></td>
+<td align="left"><p>This Group Policy setting enables a notification in the notification area that appears when the UE-V service runs for the first time.</p></td>
 <td align="left"><p>The default is enabled.</p></td>
 </tr>
 <tr class="odd">

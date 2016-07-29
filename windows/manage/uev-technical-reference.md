@@ -23,7 +23,7 @@ This technical reference section includes additional technical documentation abo
 
 -   [Sync Trigger Events for UE-V](uev-sync-trigger-events.md)
 
-    Defines when the UE-V Agent synchronizes those settings with the settings storage location. This topic provides technical reference information about when synchronization takes place based upon the sync method deployed.
+    Defines when the UE-V service synchronizes those settings with the settings storage location. This topic provides technical reference information about when synchronization takes place based upon the sync method deployed.
 
 -   [Synchronizing Office 2013 with UE-V 2.0](uev-synchronizing-office-2013-with-uev.md)
 

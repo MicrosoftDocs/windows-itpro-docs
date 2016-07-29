@@ -39,7 +39,7 @@ Simply copying the files and folders does not preserve the security settings and
 
 4.  Grant share-level permissions to the new share. Leave the NTFS file system permissions as they were set by Robocopy.
 
-    On computers that run the UE-V Agent, update the **SettingsStoragePath** configuration setting to the Universal Naming Convention (UNC) path of the new share.
+    On computers on which the UE-V service is enabled, update the **SettingsStoragePath** configuration setting to the Universal Naming Convention (UNC) path of the new share.
 
 ## Have a suggestion for UE-V?
 
