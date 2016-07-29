@@ -43,7 +43,7 @@ When Windows 10 first shipped, it included Microsoft Passport and Windows Hello,
 Additional changes for Windows Hello in Windows 10, version 1607:
 
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. 
-- Group Policy for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**. 
+- Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**. 
 <!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
