@@ -12,7 +12,8 @@ localizationpriority: medium
 
 Starting in Windows 10, version 1607, administrators can pin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
 
-> **Note:** The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
+> [!NOTE]
+> The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
 
 You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](http://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path (the local path to the application). 
 
@@ -20,7 +21,8 @@ If you specify an app to be pinned that is not installed on the computer, it won
 
 The order of apps in the xml file dictates order of apps on taskbar from left to right, to the right of any existing apps pinned by user.
 
-> **Note**  In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
+> [!NOTE]
+> In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
 
 The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 
@@ -220,7 +222,8 @@ The resulting taskbar for computers in any other country region:
 ![taskbar for all other regions](images/taskbar-region-other.png)
 
 
-> **Note**  [Look up country and region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
+> [!NOTE]
+> [Look up country and region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
 
 
 

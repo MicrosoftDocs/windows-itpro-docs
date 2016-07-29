@@ -143,7 +143,8 @@ If you would like to add Credential Guard to an image, you can do this by adding
 ### Add the virtualization-based security features
 
 First, you must add the virtualization-based security features. You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
-> **Note:**  If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
+> [!NOTE]  
+> If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
  
 **Add the virtualization-based security features by using Programs and Features**
 1.  Open the Programs and Features control panel.
@@ -157,7 +158,8 @@ First, you must add the virtualization-based security features. You can do this 
     ``` syntax
     dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
-> **Note:**  You can also add these features to an online image by using either DISM or Configuration Manager.
+> [!NOTE]  
+> You can also add these features to an online image by using either DISM or Configuration Manager.
 
 
 In Windows 10, version 1607, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
@@ -181,14 +183,30 @@ If you don't use Group Policy, you can enable Credential Guard by using the regi
     -   Add a new DWORD value named **LsaCfgFlags**. Set the value of this registry setting to 1 to enable Credential Guard with UEFI lock, set it to 2 to enable Credential Guard without lock, and set it to 0 to disable it.
 4.  Close Registry Editor.
 
-> **Note:**  You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
+> [!NOTE]  
+> You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
+
+**Turn on Credential Guard by using the Device Guard and Credential Guard hardware readiness tool**
+
+You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
+
+```
+DG_Readiness_Tool_v2.0.ps1 -Enable -AutoReboot
+```
  
 ### Remove Credential Guard
 
 If you have to remove Credential Guard on a PC, you need to do the following:
 
 1.  If you used Group Policy, disable the Group Policy setting that you used to enable Credential Guard (**Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard** -&gt; **Turn on Virtualization Based Security**).
-2.  Delete the following registry setting: HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\LsaCfgFlags
+2.  Delete the following registry settings:
+    - HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\LSA\LsaCfgFlags
+    - HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\EnableVirtualizationBasedSecurity
+    - HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\RequirePlatformSecurityFeatures
+
+    > [!IMPORTANT]  
+    > If you manually remove these registry settings, make sure to delete them all. If you don't remove them all, the device might go into BitLocker recovery.
+
 3.  Delete the Credential Guard EFI variables by using bcdedit.
 
 **Delete the Credential Guard EFI variables**
@@ -208,9 +226,18 @@ If you have to remove Credential Guard on a PC, you need to do the following:
 3.  Accept the prompt to disable Credential Guard.
 4.  Alternatively, you can disable the virtualization-based security features to turn off Credential Guard.
 
-> **Note:** The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Credential Guard and virtualization-based security, run the following bcdedit command after turning off all virtualization-based security Group Policy and registry settings: bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
+> [!NOTE]  
+> The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Credential Guard and virtualization-based security, run the following bcdedit command after turning off all virtualization-based security Group Policy and registry settings: bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
 
 For more info on virtualization-based security and Device Guard, see [Device Guard deployment guide](device-guard-deployment-guide.md).
+
+**Turn off Credential Guard by using the Device Guard and Credential Guard hardware readiness tool**
+
+You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
+
+```
+DG_Readiness_Tool_v2.0.ps1 -Disable -AutoReboot
+```
  
 ### Check that Credential Guard is running
 
@@ -223,6 +250,12 @@ You can use System Information to ensure that Credential Guard is running on a P
     Here's an example:
     
     ![System Information](images/credguard-msinfo32.png)
+
+You can also check that Credential Guard is running by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
+
+```
+DG_Readiness_Tool_v2.0.ps1 -Ready
+```
     
 ## Considerations when using Credential Guard
 
@@ -314,7 +347,8 @@ On devices that are running Credential Guard, enroll the devices using the machi
 ``` syntax
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
-> **Note:**  You must restart the device after enrolling the machine authentication certificate.
+> [!NOTE]  
+> You must restart the device after enrolling the machine authentication certificate.
  
 ### Link the issuance policies to a group
 
@@ -353,7 +387,8 @@ Now you can set up an authentication policy to use Credential Guard.
 14. Click **OK** to create the authentication policy.
 15. Close Active Directory Administrative Center.
 
-> **Note:**  When authentication policies in enforcement mode are deployed with Credential Guard, users will not be able to sign in using devices that do not have the machine authentication certificate provisioned. This applies to both local and remote sign in scenarios.
+> [!NOTE]  
+> When authentication policies in enforcement mode are deployed with Credential Guard, users will not be able to sign in using devices that do not have the machine authentication certificate provisioned. This applies to both local and remote sign in scenarios.
  
 ### Appendix: Scripts
 
@@ -547,7 +582,8 @@ write-host "There are no issuance policies which are not mapped to groups"
     }
 }
 ```
-> **Note:**  If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
+> [!NOTE]  
+> If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
 #### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
 
@@ -828,7 +864,8 @@ write-host $tmp -Foreground Red
 }
 ```
 
-> **Note:**  If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
+> [!NOTE]  
+> If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
 ## Related topics
 
