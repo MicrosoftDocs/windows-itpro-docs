@@ -23,9 +23,9 @@ The standard installation of UE-V synchronizes the default Microsoft Windows and
 
 -   [Step 2: Deploy the settings storage location](#step-2-deploy-the-settings-storage-location). Explains how to deploy a settings storage location. All UE-V deployments require a location to store settings packages that contain the synchronized setting values.
 
--   [Step 3: Enable the UE-V service](#step-3-enable-the-UE-V-service-on-user-devices). Explains how to enable to UE-V service on user devices. To synchronize settings using UE-V, devices must have the UE-V service enabled and running.
+-   [Step 3: Enable the UE-V service](#step-3-enable-the-ue-v-service-on-user-devices). Explains how to enable to UE-V service on user devices. To synchronize settings using UE-V, devices must have the UE-V service enabled and running.
 
--   [Step 4: Test Your UE-V evaluation deployment](#step-4-test-your-UE-V-evaluation-deployment). Run a few tests on two computers with the UE-V service enabled to see how UE-V works and if it meets your organization’s needs.
+-   [Step 4: Test Your UE-V evaluation deployment](#step-4-test-your-ue-v-evaluation-deployment). Run a few tests on two computers with the UE-V service enabled to see how UE-V works and if it meets your organization’s needs.
 
 -   Step 5: Deploy UE-V for custom applications (optional). If you want to evaluate how your third-party and line-of-business applications work with UE-V, follow the steps in [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md). Following this link takes you to another topic. Use your browser’s **Back** button to return to this topic.
 
@@ -53,21 +53,19 @@ You’ll need to deploy a settings storage location, a standard network share wh
 
     1.  Set the following share-level Server Message Block (SMB) permissions for the settings storage location folder.
 
-| **User account**             | **Recommended permissions** |
-|------------------------------|-----------------------------|
-| Everyone                     | No permissions              |
-| Security group of UE-V users | Full control                |
+    | **User account**             | **Recommended permissions** |
+    |------------------------------|-----------------------------|
+    | Everyone                     | No permissions              |
+    | Security group of UE-V users | Full control                |
 
-1.  Set the following NTFS file system permissions for the settings storage location folder.
+    2.  Set the following NTFS file system permissions for the settings storage location folder.
 
-| **User account**             | **Recommended permissions**                       | **Folder**                |
-|------------------------------|---------------------------------------------------|---------------------------|
-| Creator/owner                | Full control                                      | Subfolders and files only |
-| Security group of UE-V users | List folder/read data, create folders/append data | This folder only          |
+    | **User account**             | **Recommended permissions**                       | **Folder**                |
+    |------------------------------|---------------------------------------------------|---------------------------|
+    | Creator/owner                | Full control                                      | Subfolders and files only |
+    | Security group of UE-V users | List folder/read data, create folders/append data | This folder only          |
 
-*\*Security Note:* \*
-
-If you create the settings storage share on a computer running a Windows Server operating system, configure UE-V to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable this additional security, specify this setting in the Windows Server Registry Editor:
+**Security Note**&nbsp;&nbsp;If you create the settings storage share on a computer running a Windows Server operating system, configure UE-V to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable this additional security, specify this setting in the Windows Server Registry Editor:
 
 1.  Add a **REG\_DWORD** registry key named **"RepositoryOwnerCheckEnabled"** to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\UEV\\Agent\\Configuration**.
 
