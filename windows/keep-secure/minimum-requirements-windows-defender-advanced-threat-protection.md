@@ -22,10 +22,6 @@ There are some minimum requirements for onboarding your network and endpoints.
 ## Minimum requirements
 
 ### Network and data storage and configuration requirements
-<!---Your organization must use Azure Active Directory (AAD) to manage users. AAD is used during service onboarding to manage user-based access to the [Windows Defender ATP portal](https://securitycenter.windows.com/).--->
-
-<!--If you’d like help with using AAD to set up user access, contact the [Windows Defender ATP Yammer group](https://www.yammer.com/wsscengineering/\#/threads/inGroup?type=in\_group&feedId=7108776&view=all) or email [winatp@microsoft.com](mailto:winatp@microsoft.com).-->
-
 When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: in either a European or United States datacenter.
 
 > **Notes**&nbsp;&nbsp;
@@ -39,14 +35,16 @@ Endpoints on your network must be running Windows 10, version 1607.
 
 The hardware requirements for Windows Defender ATP on endpoints is the same as those for Windows 10, version 1607.
 
-
 > [!NOTE]
 > Endpoints that are running Windows Server and mobile versions of Windows are not supported.
 
 #### Internet connectivity
-Internet connectivity on endpoints is also required.
+Internet connectivity on endpoints is required.
 
-The daily bandwidth utilization on each endpoint is 5MB. The network bandwidth utilization requires ________ (ALON, PLEASE PROVIDE MISSING INFO).
+SENSE can utilize up to 5MB daily of bandwidth in order to communicate with the Windows Defender ATP cloud service and report cyber data.
+
+> [!NOTE]
+> SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
 
 For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
