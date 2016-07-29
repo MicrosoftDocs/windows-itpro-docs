@@ -31,18 +31,22 @@ In modern organizations, the security threat landscape is constantly evolving. I
 
 To help faster deployments and increase the ease of managing Windows, Microsoft provides customers with security baselines that are available in formats that can be consumed, such as Group Policy Objects backups.
  
- ## How can you use security baselines?
+## How can you use security baselines?
  
  You can use security baselines to:
  
  - Ensure that user and device configuration settings are compliant with the baseline. 
  - Set configuration settings. For example, you can use Group Policy, System Center Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline. 
+
+ > [!NOTE]  
+ > Microsoft Security Compliance Manager 4.0 is available from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53353).
  
- ## Where can I get the security baselines?
+## Where can I get the security baselines?
  
  Here's a list of security baselines that are currently available.
 
- > **Note:**  If you want to know what has changed with each security baseline, or if you want to stay up-to-date on what’s happening with them, check out the [Microsoft Security Guidance](http://blogs.technet.microsoft.com/secguide) blog.
+ > [!NOTE]  
+ > If you want to know what has changed with each security baseline, or if you want to stay up-to-date on what’s happening with them, check out the [Microsoft Security Guidance](http://blogs.technet.microsoft.com/secguide) blog.
 
 ### Windows 10 security baselines
  
