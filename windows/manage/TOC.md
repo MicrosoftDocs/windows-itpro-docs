@@ -38,6 +38,7 @@
 ## [Application development for Windows as a service](application-development-for-windows-as-a-service.md)
 ## [Windows Store for Business](windows-store-for-business.md)
 ### [Sign up and get started](sign-up-windows-store-for-business-overview.md)
+####[Windows Store for Business overview](windows-store-for-business-overview.md)
 #### [Prerequisites for Windows Store for Business](prerequisites-windows-store-for-business.md)
 #### [Sign up for Windows Store for Business](sign-up-windows-store-for-business.md)
 #### [Roles and permissions in the Windows Store for Business](roles-and-permissions-windows-store-for-business.md)
