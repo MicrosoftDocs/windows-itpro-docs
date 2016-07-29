@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub, mobility
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Manage settings with an MDM provider (Surface Hub)
@@ -34,7 +35,7 @@ Alternatively, the device can be enrolled like any other Windows device by going
 
 ### Manage a device through MDM
 
-The following table lists the device settings that can be managed remotely using MDM, including the OMA URI paths that 3rd party MDM providers need to create policies. Intune and SCCM have special templates to help create policies to manage these settings.
+The following table lists the device settings that can be managed remotely using MDM, including the OMA URI paths that 3rd party MDM providers need to create policies. Intune and System Center Configuration Manager have special templates to help create policies to manage these settings.
 
 <table>
 <colgroup>

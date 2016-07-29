@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Prerequisites for Windows Store for Business

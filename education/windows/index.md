@@ -17,11 +17,13 @@ author: jdeckerMS
 
 |Topic |Description |
 |------|------------|
+| [Windows 10 editions for education customers](windows-editions-for-education-customers.md) | Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education.  |
 | [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md) | Learn how the Set up School PCs app works and how to use it.  |
 | [Technical reference for the Set up School PCs app (Preview)](set-up-school-pcs-technical.md) | See the changes that the Set up School PCs app makes to a PC.  |
 | [Get Minecraft Education Edition](get-minecraft-for-education.md) | Learn how to get early access to **Minecraft Education Edition**. |
 | [Take tests in Windows 10](take-tests-in-windows-10.md) | Learn how to configure and use the **Take a Test** app in Windows 10 |
-| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md) | Learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. |
+| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md) | Learn how to deploy Windows 10 in a school. |
+| [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md) |Learn how to deploy Windows 10 in a school district.|
 | [Chromebook migration guide](chromebook-migration-guide.md) | Learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment. |
 
 ## Related topics

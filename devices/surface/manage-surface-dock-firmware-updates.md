@@ -2,6 +2,7 @@
 title: Manage Surface Dock firmware updates (Surface)
 description: Read about the different methods you can use to manage the process of Surface Dock firmware updates.
 ms.assetid: 86DFC0C0-C842-4CD1-A2D7-4425471FFE3F
+localizationpriority: high
 keywords: firmware, update, install, drivers
 ms.prod: w10
 ms.mktglfcycl: manage

@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Update Windows Store for Business account settings
@@ -109,7 +110,7 @@ Not all cards available in all countries. When you add a payment option, Store f
 **To add a new payment option** 
 
 1.	Sign in to [Store for Business](http://businessstore.microsoft.com). 
-2.	Click **Settings**, and then click **Account information**. 
+2.	Click **Manage**, and then click **Account information**. 
 3.  Under **My payment options**, tap or click **Show my payment options**, and then select the type of credit card that you want to add. 
 4.	Add information to any required fields, and then click **Next**. 
 
@@ -117,19 +118,27 @@ Once you click Next, the information you provided will be validated with a tes
 
 **Note**: <br>When adding credit or debit cards, you may be prompted to enter a CVV . The CVV is only used for verification purposes and is not stored in our systems after validation. 
 
-**To update a payment option**: 
+**To update a payment option** 
 
 1.	Sign in to [Store for Business](http://businessstore.microsoft.com). 
-2.	Click **Settings**, and then click **Account information**. 
-3.	Under My payment options > Credit Cards, select the payment option that you want to update, and then click Update. 
-4.	Enter any updated information in the appropriate fields, and then click Next. 
-Once you click Next, the information you provided will be validated with a test authorization transaction and, if validated, the payment option will be added to your list of available payment options. Otherwise, you will be prompted for additional information or notified if there are any problems. 
+2.	Click **Manage**, and then click **Account information**. 
+3.	Under **My payment options** > **Credit Cards**, select the payment option that you want to update, and then click **Update**. 
+4.	Enter any updated information in the appropriate fields, and then click **Next**. 
+Once you click **Next**, the information you provided will be validated with a test authorization transaction and, if validated, the payment option will be added to your list of available payment options. Otherwise, you will be prompted for additional information or notified if there are any problems. 
  
 **Note**:<br> Certain actions, like updating or adding a payment option, require temporary “test authorization” transactions to validate the payment option. These may appear on your statement as $0.00 authorizations or as small pending transactions. These transactions are temporary and should not impact your account unless you make several changes in a short period of time or have a low balance.
 
 ##Offline licensing##
 
 Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. 
+
+Admins can decide whether or not offline licenses are shown for apps in Windows Store for Business. 
+
+**To set offline license visibility**
+
+1.	Sign in to [Store for Business](http://businessstore.microsoft.com). 
+2.	Click **Manage**, and then click **Account information**. 
+3.	Under **Offline licensing**, click **Show offline licensed apps to people shopping in the store** to show availability for both online and offline licenses.
 
 You have the following distribution options for offline-licensed apps:
 - Include the app in a provisioning package, and then use it as part of imaging a device.

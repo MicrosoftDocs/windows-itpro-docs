@@ -72,6 +72,7 @@ Windows 10 enables organizations to fulfill the desire to provide users with the
 
 ## Related topics
 
+[Windows 10 release information](https://technet.microsoft.com/windows/release-info)<BR>
 [Windows 10 deployment considerations](windows-10-deployment-considerations.md)<BR>
 [Windows 10 compatibility](windows-10-compatibility.md)<BR>
 [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
