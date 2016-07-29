@@ -19,7 +19,7 @@ author: TrudyHa
 
 You can manage all apps that you've acquired on your **Inventory** page.
 
-The **Inventory** page in Windows Store for Business shows all apps in your inventory. This includes all apps that you've acquired from Store for Business, and the line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Inventory** page. On the **New line-of-business apps** page, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md).
+The **Inventory** page in Windows Store for Business shows all apps in your inventory. This includes all apps that you've acquired from Store for Business, and the line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Inventory** page. On the **New line-of-business apps** page, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md). The inventory page includes apps acquired by all people in your organization with the Store for Business Admin role.  
 
 All of these apps are treated the same once they are in your inventory and you can perform app lifecycle tasks for them: distribute apps, add apps to private store, review license details, and reclaim app licenses.
 
@@ -28,14 +28,19 @@ All of these apps are treated the same once they are in your inventory and you c
 Store for Business shows this info for each app in your inventory:
 
 -   Name
-
 -   Access to actions for the app
-
--   Last modified date
-
--   Supported devices
-
+-   Last modified
+-   Available licenses
 -   Private store status
+
+The last modified date tracks changes about the app as an item in your inventory. The last modified date changes when one of the following happens:
+- First purchase (the date you acquire the app from Windows Store for Business)
+- Purchase additional licenses
+- Assign license
+- Reclaim license
+- Refund order (applies to purchased apps, not free apps)
+
+The last modified date does not correspond to when an app was last updated in the Store. It tracks activity for that app, as an item in your inventory.  
 
 ### Find apps in your inventory
 
