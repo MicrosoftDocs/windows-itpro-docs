@@ -81,21 +81,21 @@ If registry keys and files that are stored in excluded locations are required to
 
 The UE-V service installs a default group of settings location templates for common Microsoft applications and Windows settings. If you customize these templates, or create settings location templates to synchronize settings for custom applications, the UE-V service can be configured to use a settings template catalog to store the templates. In this case, you will need to include the default templates along with the custom templates in the settings template catalog.
 
-<!-- ALL OF THE FOLLOWING PARAGRAPHS NEED TO BE COMMENTED ON BY TOMMY - RE AGENT AND PARAMETERS.
+<!-- YOU CANNOT USE COMMAND-LINE PARAMETERS IN THE WAY YOU USED TO WHEN INSTALLING THE AGENT - THIS SENTENCE IS NO LONGER CORRECT
 When you [Enable the UE-V service](#enable-the-ue-v-service), you can use the command-line parameter RegisterMStemplates to disable the registration of the default Microsoft templates.
+-->
 
-When you use Group Policy to configure the settings template catalog path, you can choose to replace the default Microsoft templates. If you configure the policy settings to replace the default Microsoft templates, all of the default Microsoft templates that are installed by the UE-V Agent are deleted and only the templates that are located in the settings template catalog are used. The UE-V Agent configuration setting parameter RegisterMStemplates must be set to true in order to override the default Microsoft template.
+When you use Group Policy to configure the settings template catalog path, you can choose to replace the default Microsoft templates. If you configure the policy settings to replace the default Microsoft templates, all of the default Microsoft templates that are installed by the UE-V service are deleted and only the templates that are located in the settings template catalog are used.
 
 **Note**
-If you disable this policy setting after it has been enabled, the UE-V Agent does not restore the default Microsoft templates.
+If you disable this policy setting after it has been enabled, the UE-V service does not restore the default Microsoft templates.
 
-If there are customized templates in the settings template catalog that use the same ID as the default Microsoft templates, and the UE-V Agent is not configured to replace the default Microsoft templates, the Microsoft templates are ignored.
+If there are customized templates in the settings template catalog that use the same ID as the default Microsoft templates, and the UE-V service is not configured to replace the default Microsoft templates, the Microsoft templates are ignored.
 
 You can also replace the default templates by using the UE-V Windows PowerShell features. To replace the default Microsoft template with Windows PowerShell, unregister all of the default Microsoft templates, and then register the customized templates.
 
 **Note**
-Old settings packages remain in the settings storage location even if you deploy new settings location templates for an application. These packages are not read by the agent, but neither are they automatically deleted.
--->
+Old settings packages remain in the settings storage location even if you deploy new settings location templates for an application. These packages are not read by the service, but neither are they automatically deleted.
 
 ### Install the UEV template generator
 
@@ -137,7 +137,7 @@ The UE-V settings template catalog is a folder path on UE-V computers or a Serve
 
 The UE-V service checks this folder for templates that were added, updated, or removed. It registers new and changed templates and unregisters removed templates. By default, templates are registered and unregistered one time per day at 3:30 A.M. local time by the Task Scheduler and at system startup. To customize the frequency of this scheduled task, see [Changing the frequency of UE-V scheduled tasks](uev-changing-the-frequency-of-scheduled-tasks.md).
 
-You can configure the settings template catalog path with command-line options, Group Policy, WMI, or Windows PowerShell. Templates stored at the settings template catalog path are automatically registered and unregistered by a scheduled task.
+You can configure the settings template catalog path with Group Policy, WMI, or Windows PowerShell. Templates stored at the settings template catalog path are automatically registered and unregistered by a scheduled task.
 
 **To configure the settings template catalog for UE-V:**
 

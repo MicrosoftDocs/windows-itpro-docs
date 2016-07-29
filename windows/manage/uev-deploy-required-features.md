@@ -43,15 +43,11 @@ Before you define the settings storage location, you must create a root director
 
 The settings storage location is defined by setting the SettingsStoragePath configuration option, which you can configure by using one of these methods:
 
-<!--TOMMY IS ANSWERING A QUESTION ABOUT THE FOLLOWING ITEM - IT MIGHT NOT ACTUALLY WORK AS DESCRIBED, NOW THAT IT'S A SERVICE YOU ENABLE RATHER THAN AN AGENT YOU DEPLOY.
--   When you [Enable the UE-V service](#enable-the-ue-v-service) through a command-line parameter or in a batch script
--->
-
 -   Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
 
 -   With the [System Center Configuration Pack](uev-configuring-uev-with-system-center-configuration-manager-2012.md) for UE-V
 
--   After you enable the UE-V service, by using [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
+-   With [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
 The path must be in a universal naming convention (UNC) path of the server and share. For example, **\\\\Server\\Settingsshare\\**. This configuration option supports the use of variables to enable specific synchronization scenarios. For example, you can use the %username%\\%computername% variables to preserve the end user settings experience in these scenarios:
 
@@ -114,16 +110,12 @@ Windows Server 2008 R2
 
 Windows Server 2012 and Windows Server 2012 R2
 
--   [Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager-2012.md)**:** The UE-V Configuration Pack lets you use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+-   [Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager-2012.md): The UE-V Configuration Pack lets you use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
--   [Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)**:** You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify configurations after you enable the UE-V service.
+-   [Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md): You can use Windows PowerShell and Windows Management Instrumentation (WMI) to modify the configuration of the UE-V service.
 
 **Note**
 Registry modification can result in data loss, or the computer becomes unresponsive. We recommend that you use other configuration methods.
-
-<!--TOMMY IS ANSWERING A QUESTION ABOUT THE FOLLOWING ITEM - IT MIGHT NOT ACTUALLY WORK AS DESCRIBED, NOW THAT IT'S A SERVICE YOU ENABLE RATHER THAN AN AGENT YOU DEPLOY.
--   **Command-line or Batch Script Installation:** Parameters that are used when you [Enable the UE-V service](#enable-the-ue-v-service) configure many UE-V settings. Electronic software distribution systems, such as System Center 2012 Configuration Manager, use these parameters to configure their clients when they deploy and install the UE-V Agent software.
--->
 
 ## Enable the UE-V service
 
