@@ -163,7 +163,7 @@ If your build is successful, the name of the provisioning package, output direct
 
 ## Apply package
 
-**During initial setup, from a USB drive**
+### During initial setup, from a USB drive
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
@@ -206,7 +206,7 @@ If your build is successful, the name of the provisioning package, output direct
     ![Sign in](images/sign-in-prov.png)
     
 
-**After setup, from a USB drive, network folder, or SharePoint site**
+### After setup, from a USB drive, network folder, or SharePoint site
 
 On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and select the package to install. 
 
