@@ -139,7 +139,7 @@ The **Template Auto Update** task checks the settings template catalog for new, 
 
  
 
-**Example:** The following command configures the UE-V Agent to check the settings template catalog store every hour.
+**Example:** The following command configures the UE-V service to check the settings template catalog store every hour.
 
 ``` syntax
 schtasks /change /tn "Microsoft\UE-V\Template Auto Update" /ri 60

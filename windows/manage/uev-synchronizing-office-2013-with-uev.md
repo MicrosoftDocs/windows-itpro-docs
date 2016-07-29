@@ -109,7 +109,7 @@ You can deploy UE-V settings location template with the following methods:
 
     For more information using UE-V and Windows PowerShell, see [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
 
--   **Registering template via Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office 2013 template into the folder defined in the UE-V Agent. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploying the Settings Template Catalog for UE-V 2](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).
+-   **Registering template via Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office 2013 template into the folder defined in the UE-V service. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploying the Settings Template Catalog for UE-V 2](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).
 
 -   **Registering template via Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, then recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to your clients. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2](http://go.microsoft.com/fwlink/?LinkId=317263).
 
@@ -117,12 +117,3 @@ You can deploy UE-V settings location template with the following methods:
 
 
 Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
-
- 
-
- 
-
-
-
-
-

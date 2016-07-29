@@ -17,7 +17,7 @@ User Experience Virtualization (UE-V) uses XML settings location templates to de
 ## Manage UE-V settings location templates by using Windows PowerShell
 
 
-The WMI and Windows PowerShell features of UE-V include the ability to enable, disable, register, update, and unregister settings location templates. By using these features, you can automate the process of registering, updating, or unregistering templates with the UE-V Agent. You can also manually register templates by using WMI and Windows PowerShell commands. By using these features in conjunction with an electronic software distribution solution, Group Policy, or another automated deployment method such as a script, you can further automate that process.
+The WMI and Windows PowerShell features of UE-V include the ability to enable, disable, register, update, and unregister settings location templates. By using these features, you can automate the process of registering, updating, or unregistering templates with the UE-V service. You can also manually register templates by using WMI and Windows PowerShell commands. By using these features in conjunction with an electronic software distribution solution, Group Policy, or another automated deployment method such as a script, you can further automate that process.
 
 You must have administrator permissions to update, register, or unregister a settings location template. Administrator permissions are not required to enable, disable, or list templates.
 
