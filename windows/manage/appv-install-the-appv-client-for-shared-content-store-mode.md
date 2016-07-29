@@ -1,7 +1,7 @@
 ---
 title: How to Install the App-V Client for Shared Content Store Mode (Windows 10)
 description: How to Install the App-V Client for Shared Content Store Mode
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -36,7 +36,7 @@ For more information about SCS mode, see [Shared Content Store in Microsoft App-
 
 2.  After you have completed the installation you can deploy packages to the computer running the client and all package contents will be streamed across the network.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -1,7 +1,7 @@
 ---
 title: Migrating to App-V from a Previous Version (Windows 10)
 description: Migrating to App-V from a Previous Version
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -309,10 +309,10 @@ You can also perform additional migration tasks such as reconfiguring end points
 
 [How to Use an App-V 4.6 Application From an App-V Application](appv-use-an-appv-46-sp1-application-from-an-appv-51-application.md)
 
-## Got a suggestion for App-V?
+## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for performing App-V migration tasks
 

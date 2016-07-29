@@ -1,7 +1,7 @@
 ---
 title: How to Deploy the App-V Server Using a Script (Windows 10)
 description: How to Deploy the App-V Server Using a Script
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -767,7 +767,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
     <td align="left"><p>/EXISTING_MANAGEMENT_DB_NAME</p></td>
     <td align="left"><p>Specifies the name of the existing management database that should be used. Example usage: <strong>/EXISITING_MANAGEMENT_DB_NAME=”AppVMgmtDB”</strong>. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored.</p>
     <p></p>
-    <p><strong>Got a suggestion for App-V</strong>? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). <strong>Got an App-V issue?</strong> Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).</p></td>
+    <p><strong>Have a suggestion for App-V</strong>? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). <strong>Got an App-V issue?</strong> Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).</p></td>
     </tr>
     </tbody>
     </table>

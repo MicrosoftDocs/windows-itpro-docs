@@ -1,7 +1,7 @@
 ---
 title: Accessibility for App-V (Windows 10)
 description: Accessibility for App-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
