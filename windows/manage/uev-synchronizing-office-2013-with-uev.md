@@ -1,6 +1,6 @@
 ---
-title: Synchronizing Office 2013 with UE-V 2.0
-description: Synchronizing Office 2013 with UE-V 2.0
+title: Synchronizing Office 2013 with UE-V
+description: Synchronizing Office 2013 with UE-V
 author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Synchronizing Office 2013 with UE-V 2.0
+# Synchronizing Office 2013 with UE-V
 
 
 Microsoft User Experience Virtualization (UE-V) 2.0 supports the synchronization of Microsoft Office 2013 application setting using a template available from the UE-V template gallery. The combination of UE-V 2 and App-V 5.0 SP2 support of Office 2013 Professional Plus enables the same experience on virtualized instance of Office 2013 from any UE-V-enabled device or virtualized desktop.
