@@ -7,6 +7,7 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Provision PCs with common settings for initial deployment (simple provisioning)

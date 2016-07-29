@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Take a Test app technical reference 
@@ -31,7 +32,9 @@ When running above the lock screen:
 
 - The hardware print screen button is disabled 
 
-- Content within the app will show up as black in screen capturing/sharing software Copy/paste is disabled 
+- Content within the app will show up as black in screen capturing/sharing software 
+
+- System clipboard is cleared 
 
 - Web apps can query the processes currently running in the user’s device
 

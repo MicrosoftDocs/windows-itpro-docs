@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Technical reference for the Set up School PCs app 
@@ -90,7 +91,6 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 
 - Saving content locally to the PC is disabled. This prevents data loss by forcing students to save to the cloud.
 - A custom Start layout and sign in background image are set.
-- Prohibits Microsoft Accounts (MSAs) from being created.
 - Prohibits unlocking the PC to developer mode.
 - Prohibits untrusted Windows Store apps from being installed.
 - Prohibits students from removing MDM.
@@ -242,7 +242,7 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Windows Settings</strong> > <strong>Security Settings</strong> > <strong>Local Policies</strong> > <strong>Security Options</strong></p> </td> 
 </tr> 
-<tr><td><p>Accounts: Block Microsoft accounts</p></td><td><p>Enabled</p></td></tr>
+<tr><td><p>Accounts: Block Microsoft accounts</p><p>**Note** Microsoft accounts can still be used in apps.</p></td><td><p>Enabled</p></td></tr>
 <tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
 <tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart</p> </td> <td> <p> Disabled</p> </td> 

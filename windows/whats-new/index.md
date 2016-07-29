@@ -5,6 +5,7 @@ ms.assetid: F1867017-76A1-4761-A200-7450B96AEF44
 keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
 author: TrudyHa
+localizationpriority: high
 ---
 
 # What's new in Windows 10

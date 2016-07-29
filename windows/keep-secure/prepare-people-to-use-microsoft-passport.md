@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Prepare people to use Microsoft Passport
@@ -52,16 +53,23 @@ If your policy allows it, people can add Windows Hello to their Passport. Window
 
 ![sign in to windows, apps, and services using fingerprint or face](images/hellosettings.png)
 
-## <a href="" id="bmk-remote"></a>Use a phone to sign in to a PC
+## <a href="" id="bmk-remote"></a>Use a phone to sign in to a PC or VPN
 
-If your enterprise enables phone sign-in, users can pair a phone running Windows 10 Mobile to a PC running Windows 10 and then use an app on the phone to sign in to the PC using their Microsoft Passport credentials.
-> **Note:**  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+If your enterprise enables phone sign-in, users can pair a phone running Windows 10 Mobile to a PC running Windows 10 and then use an app on the phone to sign in to the PC using their Windows Hello credentials.
+
+> [!NOTE]
+> Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
  
 **Prerequisites:**
--   The PC must be joined to the Active Directory domain or Azure AD cloud domain.
--   The PC must have Bluetooth connectivity.
--   The phone must be joined to the Azure AD cloud domain, or the user must have added a work account to their personal phone.
--   The free **Phone Sign-in** app must be installed on the phone.
+   
+- Both phone and PC must be running Windows 10, version 1607.
+- The PC must be running Windows 10 Pro, Enterprise, or Education
+- Both phone and PC must have Bluetooth.
+- The **Microsoft Authenticator** app must be installed on the phone.
+- The PC must be joined to an Active Directory domain that is connected to an Azure Active Directory (Azure AD) domain, or the PC must be joined to Azure AD.
+- The phone must be joined to Azure AD or have a work account added.
+- The VPN configuration profile must use certificate-based authentication.
+
 **Pair the PC and phone**
 1.  On the PC, go to **Settings** &gt; **Devices** &gt; **Bluetooth**. Tap the name of the phone and then tap **Pair** to begin pairing.
 
@@ -73,10 +81,18 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
     
 3.  On the PC, tap **Yes**.
 **Sign in to PC using the phone**
-1.  Open the **Phone Sign-in** app and tap the name of the PC to sign in to.
-    > **Note: **  The first time that you run the Phone-Sign app, you must add an account.
+
+1.  Open the **Microsoft Authenticator** app, choose your account, and tap the name of the PC to sign in to.
+    > **Note: **  The first time that you run the **Microsoft Authenticator** app, you must add an account.
+    
+    ![select a device](images/phone-signin-device-select.png)
+
      
 2.  Enter the work PIN that you set up when you joined the phone to the cloud domain or added a work account.
+
+**Connect to VPN**
+
+You simply connect to VPN as you normally would. If the phone's certificates are being used, a notification will be pushed to the phone asking if you approve. If you click **allow** in the notification, you will be prompted for your PIN. After you enter your PIN, the VPN session will connect. 
 
 ## Related topics
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 author: craigash
+localizationpriority: medium
 ---
 
 # Deploy Windows 10 in a school district
