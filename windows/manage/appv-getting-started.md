@@ -26,11 +26,12 @@ For information about previous versions of App-V, see [MDOP Information Experien
 
 To start using App-V to deliver virtual applications to users, you’ll need to download, enable, and install server- and client-side components. The following table provides information about the App-V for Windows 10 components and where to find them.
 
+<!--App-V Remote Desktop Services (RDS) client once had its own row in the table below, and could have its own row again. As of 7/29/2016, it's in the same row as App-V client --> 
+
 | Component  | What it does     | Where to find it     |
 |------------|--|------|
 | App-V server components         | App-V offers five server components that work together to allow you to host and publish virtual applications, generate usage reports, and manage your App-V environment. For information about the server components, see [Deploying the App-V Server](#_Deploying_the_App-V). | The App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from the [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#FileId=65215). <br>You must have a MSDN subscription to download the MDOP ISO package.<br>See [Deploying the App-V Server](appv-deploying-the-appv-server.md) for more information about installing and using the server components. |
-| App-V client         | The App-V client is the component that runs virtualized applications on user devices. The client enables users to interact with icons and file names to start virtualized applications. | The App-V client is automatically installed with Windows 10. <br>For information about enabling the client, see [Enable the App-V desktop client](enable-the-app-v-desktop-client.md).           |
-| App-V Remote Desktop Services (RDS) Client | .       | .        |
+| App-V client and App-V Remote Desktop Services (RDS) client       | The App-V client is the component that runs virtualized applications on user devices. The client enables users to interact with icons and file names to start virtualized applications. | The App-V client is automatically installed with Windows 10. <br>For information about enabling the client, see [Enable the App-V desktop client](enable-the-app-v-desktop-client.md).           |
 | App-V Sequencer      | Use the App-V Sequencer to convert Win32 applications into virtual packages for deployment to user devices. Devices must be running the App-V client to allow users to interact with virtual applications.    | Installed with the [Windows 10 Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK).  |
 
 <!-- The link above to enable-the-app-v-desktop-client.md does not correspond with a topic-file yet. -->
