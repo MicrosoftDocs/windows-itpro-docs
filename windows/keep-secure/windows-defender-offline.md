@@ -62,26 +62,9 @@ In Configuration Manager, you can identify the status of endpoints by navigating
 ## Manage notifications
 <a name="manage-notifications"></a>
 
-You can suppress Windows Defender Offline notifications by modifying the registry or with Group Policy. 
+You can suppress Windows Defender Offline notifications with Group Policy. 
 
 >[!NOTE]Changing these settings will affect *all* notifications from Windows Defender. Disabling notifications will mean the endpoint user will not see any messages about any threats detected, removed, or if additional steps are required.
-
-**Use the registry to disable Windows Defender notifications on individual endpoints:**
-
-1. Click **Start**, type **Run**, and press **Enter**.
-
-2. From the **Run** dialog box, type **regedit** and press **Enter**.
-
-4. In the **Registry Editor** navigate to the **ux configuration** key under:
-
-    ```text
-    HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\ux configuration
-    ```
-
-5. Double-click the **Notifications_Suppress** value and set it to **1**.
-
-![Image of enhanced notification suppression in Registry Editor](images/defender/ux-config-key.png)
-
 
 **Use Group Policy to suppress Windows Defender notifications:**
 
@@ -165,9 +148,6 @@ For more information about using Windows Management Instrumentation to run a sca
 -	[Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/windows/desktop/dn439477(v=vs.85).aspx) 
 
 -	[MSFT_MpWDOScan class article](https://msdn.microsoft.com/library/windows/desktop/mt622458(v=vs.85).aspx)
-
-
-To run Windows Defender Offline remotely, xxx. <span style="background-color:yellow">{{How do we do this? Still in pipeline?}}</span>
 
 **Run Windows Defender Offline using PowerShell:**
 
