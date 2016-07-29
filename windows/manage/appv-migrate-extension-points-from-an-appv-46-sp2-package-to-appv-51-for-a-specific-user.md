@@ -1,8 +1,7 @@
 ---
-title: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
-description: How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
+title: How to Migrate Extension Points From an App-V 4.6 Package to App-V for a Specific User (Windows 10)
+description: How to Migrate Extension Points From an App-V 4.6 Package to App-V for a Specific User
 author: jamiejdt
-ms.assetid: 19da3776-5ebe-41e1-9890-12b84ef3c1c7
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User
+# How to Migrate Extension Points From an App-V 4.6 Package to App-V for a Specific User
 
 
 Use the following procedure to migrate packages created with App-V using the user configuration file.
@@ -34,24 +33,24 @@ This procedure assumes that you are running the latest version of App-V 4.6.
 
     &lt;/UserConfiguration&gt;
 
-2.  To add the App-V 5.1 package, type the following in an elevated PowerShell command prompt window:
+2.  To add the App-V package, type the following in an elevated PowerShell command prompt window:
 
     PS&gt;**$pkg= Add-AppvClientPackage –Path** &lt;Path to package location&gt;
 
     PS&gt;**Publish-AppVClientPackage $pkg -DynamicUserConfiguration** &lt;Path to the user configuration file&gt;
 
-3.  Open the application using FTAs or shortcuts now. The application should open using App-V 5.1.
+3.  Open the application using FTAs or shortcuts now. The application should open using App-V.
 
-    The App-V 4.6 package and the converted App-V 5.1 package are published to the user, but the FTAs and shortcuts for the applications have been assumed by the App-V 5.1 package.
+    The App-V 4.6 package and the converted App-V package are published to the user, but the FTAs and shortcuts for the applications have been assumed by the App-V package.
 
     **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
-[How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 Package for a Specific User](appv-revert-extension-points-from-an-appv-51-package-to-an-appv-46-sp2-package-for-a-specific-user.md)
+[How to Revert Extension Points From an App-V Package to an App-V 4.6 Package for a Specific User](appv-revert-extension-points-from-an-appv-51-package-to-an-appv-46-sp2-package-for-a-specific-user.md)
 
  
 

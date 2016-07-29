@@ -1,8 +1,7 @@
 ---
-title: How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell
-description: How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell
+title: How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell (Windows 10)
+description: How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell
 author: jamiejdt
-ms.assetid: c3fd06f6-102f-43d1-a577-d5ced6ac537d
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell
+# How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell
 
 
 The following sections explain how to perform various management tasks on a stand-alone client computer by using PowerShell:
@@ -281,9 +280,9 @@ For more information about pending tasks, see [About App-V 5.0 SP2](https://tech
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
-[Administering App-V 5.1 by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
 
  
 

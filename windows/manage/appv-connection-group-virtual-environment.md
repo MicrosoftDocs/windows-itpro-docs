@@ -1,8 +1,7 @@
 ---
-title: About the Connection Group Virtual Environment
+title: About the Connection Group Virtual Environment (Windows 10)
 description: About the Connection Group Virtual Environment
 author: jamiejdt
-ms.assetid: b7bb0e3d-8cd5-45a9-b84e-c9ab4196a18c
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,8 +1,7 @@
 ---
-title: What's new in App-V 5.0 SP1
+title: What's new in App-V 5.0 SP1 (Windows 10)
 description: What's new in App-V 5.0 SP1
 author: jamiejdt
-ms.assetid: e97c2dbb-7b40-46a0-8137-9ee4fc2bd071
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

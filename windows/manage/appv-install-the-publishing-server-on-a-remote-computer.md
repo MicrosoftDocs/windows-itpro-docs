@@ -1,8 +1,7 @@
 ---
-title: How to Install the Publishing Server on a Remote Computer
+title: How to Install the Publishing Server on a Remote Computer (Windows 10)
 description: How to Install the Publishing Server on a Remote Computer
 author: jamiejdt
-ms.assetid: 1c903f78-0558-458d-a149-d5f6fb55aefb
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +16,7 @@ Use the following procedure to install the publishing server on a separate compu
 
 **To install the publishing server on a separate computer**
 
-1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on. To start the App-V 5.1 server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
 2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
 
@@ -33,13 +32,13 @@ Use the following procedure to install the publishing server on a separate compu
 
     -   Specify the website name that you want to use for the publishing service. Accept the default if you do not have a custom name.
 
-    -   For the **Port Binding**, specify a unique port number that will be used by App-V 5.1, for example **54321**.
+    -   For the **Port Binding**, specify a unique port number that will be used by App-V, for example **54321**.
 
 7.  On the **Ready to Install** page, click **Install**.
 
-8.  After the installation is complete, the publishing server must be registered with the management server. In the App-V 5.1 management console, use the following steps to register the server:
+8.  After the installation is complete, the publishing server must be registered with the management server. In the App-V management console, use the following steps to register the server:
 
-    1.  Open the App-V 5.1 management server console.
+    1.  Open the App-V management server console.
 
     2.  In the left pane, select **Servers**, and then select **Register New Server**.
 
@@ -68,7 +67,7 @@ Use the following procedure to install the publishing server on a separate compu
 ## Related topics
 
 
-[Deploying App-V 5.1](appv-deploying-appv.md)
+[Deploying App-V](appv-deploying-appv.md)
 
  
 

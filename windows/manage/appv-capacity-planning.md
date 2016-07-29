@@ -1,8 +1,7 @@
 ---
-title: App-V 5.1 Capacity Planning
-description: App-V 5.1 Capacity Planning
+title: App-V Capacity Planning (Windows 10)
+description: App-V Capacity Planning
 author: jamiejdt
-ms.assetid: 7a98062f-5a60-49d6-ab40-dc6057e1dd5a
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,20 +9,20 @@ ms.prod: w10
 ---
 
 
-# App-V 5.1 Capacity Planning
+# App-V Capacity Planning
 
 
-The following recommendations can be used as a baseline to help determine capacity planning information that is appropriate to your organization’s App-V 5.1 infrastructure.
+The following recommendations can be used as a baseline to help determine capacity planning information that is appropriate to your organization’s App-V infrastructure.
 
 **Important**  
-Use the information in this section only as a general guide for planning your App-V 5.1 deployment. Your system capacity requirements will depend on the specific details of your hardware and application environment. Additionally, the performance numbers displayed in this document are examples and your results may vary.
+Use the information in this section only as a general guide for planning your App-V deployment. Your system capacity requirements will depend on the specific details of your hardware and application environment. Additionally, the performance numbers displayed in this document are examples and your results may vary.
 
  
 
 ## Determine the Project Scope
 
 
-Before you design the App-V 5.1 infrastructure, you must determine the project’s scope. The scope consists of determining which applications will be available virtually and to also identify the target users, and their locations. This information will help determine what type of App-V 5.1 infrastructure should be implemented. Decisions about the scope of the project must be based on the specific needs of your organization.
+Before you design the App-V infrastructure, you must determine the project’s scope. The scope consists of determining which applications will be available virtually and to also identify the target users, and their locations. This information will help determine what type of App-V infrastructure should be implemented. Decisions about the scope of the project must be based on the specific needs of your organization.
 
 <table>
 <colgroup>
@@ -39,7 +38,7 @@ Before you design the App-V 5.1 infrastructure, you must determine the project�
 <tbody>
 <tr class="odd">
 <td align="left"><p>Determine Application Scope</p></td>
-<td align="left"><p>Depending on the applications to be virtualized, the App-V 5.1 infrastructure can be set up in different ways. The first task is to define what applications you want to virtualize.</p></td>
+<td align="left"><p>Depending on the applications to be virtualized, the App-V infrastructure can be set up in different ways. The first task is to define what applications you want to virtualize.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Determine Location Scope</p></td>
@@ -50,28 +49,28 @@ Before you design the App-V 5.1 infrastructure, you must determine the project�
 
  
 
-## Determine Which App-V 5.1 Infrastructure is Required
+## Determine Which App-V Infrastructure is Required
 
 
 **Important**  
-Both of the following models require the App-V 5.1 client to be installed on the computer where you plan to run virtual applications.
+Both of the following models require the App-V client to be installed on the computer where you plan to run virtual applications.
 
-You can also manage your App-V 5.1 environment using an Electronic Software Distribution (ESD) solution such as Microsoft Systems Center Configuration Manager. For more information see [How to deploy App-V 5.1 Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
+You can also manage your App-V environment using an Electronic Software Distribution (ESD) solution such as Microsoft Systems Center Configuration Manager. For more information see [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
 
  
 
--   **Standalone Model** - The standalone model allows virtual applications to be Windows Installer-enabled for distribution without streaming. App-V 5.1 in Standalone Mode consists of the sequencer and the client; no additional components are required. Applications are prepared for virtualization using a process called sequencing. For more information see, [Planning for the App-V 5.1 Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md). The stand-alone model is recommended for the following scenarios:
+-   **Standalone Model** - The standalone model allows virtual applications to be Windows Installer-enabled for distribution without streaming. App-V in Standalone Mode consists of the sequencer and the client; no additional components are required. Applications are prepared for virtualization using a process called sequencing. For more information see, [Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md). The stand-alone model is recommended for the following scenarios:
 
-    -   With disconnected remote users who cannot connect to the App-V 5.1 infrastructure.
+    -   With disconnected remote users who cannot connect to the App-V infrastructure.
 
     -   When you are running a software management system, such as Configuration Manager 2012.
 
     -   When network bandwidth limitations inhibit electronic software distribution.
 
--   **Full Infrastructure Model** - The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V 5.1 Full Infrastructure Model consists of one or more App-V 5.1 management servers. The Management Server can be used to publish applications to all clients. The publishing process places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about installing the management server see, [Planning for the App-V 5.1 Server Deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
+-   **Full Infrastructure Model** - The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V Full Infrastructure Model consists of one or more App-V management servers. The Management Server can be used to publish applications to all clients. The publishing process places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about installing the management server see, [Planning for the App-V Server Deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
 
     **Important**  
-    The App-V 5.1 full infrastructure model requires Microsoft SQL Server to store configuration data. For more information see [App-V 5.1 Supported Configurations](appv-supported-configurations.md).
+    The App-V full infrastructure model requires Microsoft SQL Server to store configuration data. For more information see [App-V Supported Configurations](appv-supported-configurations.md).
 
      
 
@@ -79,15 +78,15 @@ You can also manage your App-V 5.1 environment using an Electronic Software Dist
 
     -   For rapid provisioning of applications to target computers.
 
-    -   When you want to use App-V 5.1 reporting.
+    -   When you want to use App-V reporting.
 
 ## End-to-end Server Sizing Guidance
 
 
-The following section provides information about end-to-end App-V 5.1 sizing and planning. For more specific information, refer to the subsequent sections.
+The following section provides information about end-to-end App-V sizing and planning. For more specific information, refer to the subsequent sections.
 
 **Note**  
-Round trip response time on the client is the time taken by the computer running the App-V 5.1 client to receive a successful notification from the publishing server. Round trip response time on the publishing server is the time taken by the computer running the publishing server to receive a successful package metadata update from the management server.
+Round trip response time on the client is the time taken by the computer running the App-V client to receive a successful notification from the publishing server. Round trip response time on the publishing server is the time taken by the computer running the publishing server to receive a successful package metadata update from the management server.
 
  
 
@@ -95,13 +94,13 @@ Round trip response time on the client is the time taken by the computer running
 
 -   A single management server can support up to 50 publishing servers for package metadata refreshes in an acceptable round trip time. (&lt;5 seconds)
 
-## <a href="" id="---------app-v-5-1-management-server-capacity-planning-recommendations"></a> App-V 5.1 Management Server Capacity Planning Recommendations
+## <a href="" id="---------app-v-5-1-management-server-capacity-planning-recommendations"></a> App-V Management Server Capacity Planning Recommendations
 
 
-The App-V 5.1 publishing servers require the management server for package refresh requests and package refresh responses. The management server then sends the information to the management database to retrieve information. For more information about App-V 5.1 management server supported configurations see [App-V 5.1 Supported Configurations](appv-supported-configurations.md).
+The App-V publishing servers require the management server for package refresh requests and package refresh responses. The management server then sends the information to the management database to retrieve information. For more information about App-V management server supported configurations see [App-V Supported Configurations](appv-supported-configurations.md).
 
 **Note**  
-The default refresh time on the App-V 5.1 publishing server is ten minutes.
+The default refresh time on the App-V publishing server is ten minutes.
 
  
 
@@ -116,7 +115,7 @@ When multiple simultaneous publishing servers contact a single management server
 The following table displays more information about each factor that impacts round trip time.
 
 **Note**  
-Round trip response time is the time taken by the computer running the App-V 5.1 publishing server to receive a successful package metadata update from the management server.
+Round trip response time is the time taken by the computer running the App-V publishing server to receive a successful package metadata update from the management server.
 
  
 
@@ -164,7 +163,7 @@ Round trip response time is the time taken by the computer running the App-V 5.1
 
  
 
-The following table displays sample values for each of the previous factors. In each variation, 120 packages are refreshed from the App-V 5.1management server.
+The following table displays sample values for each of the previous factors. In each variation, 120 packages are refreshed from the App-Vmanagement server.
 
 <table>
 <colgroup>
@@ -460,13 +459,13 @@ Using a geographically distributed deployment, where the management server & pub
 
 Whether the management server and publishing servers are connected over a slow link network, or a high speed network, the management server can handle approximately 15,000 package refresh requests in 30 minutes.
 
-## <a href="" id="---------app-v-5-1-reporting-server-capacity-planning-recommendations"></a> App-V 5.1 Reporting Server Capacity Planning Recommendations
+## <a href="" id="---------app-v-5-1-reporting-server-capacity-planning-recommendations"></a> App-V Reporting Server Capacity Planning Recommendations
 
 
-App-V 5.1 clients send reporting data to the reporting server. The reporting server then records the information in the Microsoft SQL Server database and returns a successful notification back to the computer running App-V 5.1 client. For more information about App-V 5.1 Reporting Server supported configurations see [App-V 5.1 Supported Configurations](appv-supported-configurations.md).
+App-V clients send reporting data to the reporting server. The reporting server then records the information in the Microsoft SQL Server database and returns a successful notification back to the computer running App-V client. For more information about App-V Reporting Server supported configurations see [App-V Supported Configurations](appv-supported-configurations.md).
 
 **Note**  
-Round trip response time is the time taken by the computer running the App-V 5.1 client to send the reporting information to the reporting server and receive a successful notification from the reporting server.
+Round trip response time is the time taken by the computer running the App-V client to send the reporting information to the reporting server and receive a successful notification from the reporting server.
 
  
 
@@ -483,7 +482,7 @@ Round trip response time is the time taken by the computer running the App-V 5.1
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Multiple App-V 5.1 clients send reporting information to the reporting server simultaneously.</p></td>
+<td align="left"><p>Multiple App-V clients send reporting information to the reporting server simultaneously.</p></td>
 <td align="left"><p></p>
 <ul>
 <li><p>Round trip response time from the reporting server is 2.6 seconds for 500 clients.</p></li>
@@ -524,19 +523,19 @@ Random delay = 4 \* number of clients / average requests per second.
 
 Example: For 500 clients, with 120 requests per second, the Random delay is, 4 \* 500 / 120 = ~17 minutes.
 
-## <a href="" id="---------app-v-5-1-publishing-server-capacity-planning-recommendations"></a> App-V 5.1 Publishing Server Capacity Planning Recommendations
+## <a href="" id="---------app-v-5-1-publishing-server-capacity-planning-recommendations"></a> App-V Publishing Server Capacity Planning Recommendations
 
 
-Computers running the App-V 5.1 client connect to the App-V 5.1 publishing server to send a publishing refresh request and to receive a response. Round trip response time is measured on the computer running the App-V 5.1 client. Processor time is measured on the publishing server. For more information about App-V 5.1 Publishing Server supported configurations see [App-V 5.1 Supported Configurations](appv-supported-configurations.md).
+Computers running the App-V client connect to the App-V publishing server to send a publishing refresh request and to receive a response. Round trip response time is measured on the computer running the App-V client. Processor time is measured on the publishing server. For more information about App-V Publishing Server supported configurations see [App-V Supported Configurations](appv-supported-configurations.md).
 
 **Important**  
-The following list displays the main factors to consider when setting up the App-V 5.1 publishing server:
+The following list displays the main factors to consider when setting up the App-V publishing server:
 
 -   The number of clients connecting simultaneously to a single publishing server.
 
 -   The number of packages in each refresh.
 
--   The available network bandwidth in your environment between the client and the App-V 5.1 publishing server.
+-   The available network bandwidth in your environment between the client and the App-V publishing server.
 
  
 
@@ -553,7 +552,7 @@ The following list displays the main factors to consider when setting up the App
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Multiple App-V 5.1 clients connect to a single publishing server simultaneously.</p></td>
+<td align="left"><p>Multiple App-V clients connect to a single publishing server simultaneously.</p></td>
 <td align="left"><p></p>
 <ul>
 <li><p>A publishing server running dual core processors can respond to at most 5000 clients requesting a refresh simultaneously.</p></li>
@@ -571,7 +570,7 @@ The following list displays the main factors to consider when setting up the App
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Network between the App-V 5.1 client and the publishing server.</p>
+<td align="left"><p>Network between the App-V client and the publishing server.</p>
 <p></p></td>
 <td align="left"><p></p>
 <ul>
@@ -603,17 +602,17 @@ The publishing server CPU usage is always high during the time interval when it 
 <tr class="header">
 <th align="left">Scenario</th>
 <th align="left">Variation</th>
-<th align="left">Number of App-V 5.1 clients</th>
+<th align="left">Number of App-V clients</th>
 <th align="left">Number of packages</th>
 <th align="left">Processor configuration on the publishing server</th>
-<th align="left">Network connection type publishing server / App-V 5.1 client</th>
-<th align="left">Round trip time on the App-V 5.1 client (in seconds)</th>
+<th align="left">Network connection type publishing server / App-V client</th>
+<th align="left">Round trip time on the App-V client (in seconds)</th>
 <th align="left">CPU utilization on publishing server (in %)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>App-V 5.1 client sends publishing refresh request &amp; receives response, each request containing 120 packages</p></td>
+<td align="left"><p>App-V client sends publishing refresh request &amp; receives response, each request containing 120 packages</p></td>
 <td align="left"><p>Number of clients</p></td>
 <td align="left"><p></p>
 <ul>
@@ -730,13 +729,13 @@ The publishing server CPU usage is always high during the time interval when it 
 
  
 
-## <a href="" id="---------app-v-5-1-streaming-capacity-planning-recommendations"></a> App-V 5.1 Streaming Capacity Planning Recommendations
+## <a href="" id="---------app-v-5-1-streaming-capacity-planning-recommendations"></a> App-V Streaming Capacity Planning Recommendations
 
 
-Computers running the App-V 5.1 client stream the virtual application package from the streaming server. Round trip response time is measured on the computer running the App-V 5.1 client, and is the time taken to stream the entire package.
+Computers running the App-V client stream the virtual application package from the streaming server. Round trip response time is measured on the computer running the App-V client, and is the time taken to stream the entire package.
 
 **Important**  
-The following list identifies the main factors to consider when setting up the App-V 5.1 streaming server:
+The following list identifies the main factors to consider when setting up the App-V streaming server:
 
 -   The number of clients streaming application packages simultaneously from a single streaming server.
 
@@ -759,7 +758,7 @@ The following list identifies the main factors to consider when setting up the A
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Multiple App-V 5.1 clients stream applications from a single streaming server simultaneously.</p></td>
+<td align="left"><p>Multiple App-V clients stream applications from a single streaming server simultaneously.</p></td>
 <td align="left"><p></p>
 <ul>
 <li><p>If the number of clients simultaneously streaming from the same server increases, there is a linear relationship with the package download/streaming time.</p></li>
@@ -774,7 +773,7 @@ The following list identifies the main factors to consider when setting up the A
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Network between the App-V 5.1 client and the streaming server.</p>
+<td align="left"><p>Network between the App-V client and the streaming server.</p>
 <p></p></td>
 <td align="left"><p></p>
 <ul>
@@ -801,15 +800,15 @@ The following table displays sample values for each of the factors in the previo
 <tr class="header">
 <th align="left">Scenario</th>
 <th align="left">Variation</th>
-<th align="left">Number of App-V 5.1 clients</th>
+<th align="left">Number of App-V clients</th>
 <th align="left">Size of each package</th>
-<th align="left">Network connection type streaming server / App-V 5.1 client</th>
-<th align="left">Round trip time on the App-V 5.1 client (in seconds)</th>
+<th align="left">Network connection type streaming server / App-V client</th>
+<th align="left">Round trip time on the App-V client (in seconds)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Multiple App-V 5.1 clients streaming virtual application packages from a streaming server.</p></td>
+<td align="left"><p>Multiple App-V clients streaming virtual application packages from a streaming server.</p></td>
 <td align="left"><p>Number of clients.</p></td>
 <td align="left"><p></p>
 <ul>
@@ -887,7 +886,7 @@ The following table displays sample values for each of the factors in the previo
 <p>160</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Network connection between client and App-V 5.1 streaming server.</p></td>
+<td align="left"><p>Network connection between client and App-V streaming server.</p></td>
 <td align="left"><p>1.5 Mbps Slow link network.</p></td>
 <td align="left"><p></p>
 <ul>
@@ -915,7 +914,7 @@ The following table displays sample values for each of the factors in the previo
 
  
 
-Each App-V 5.1 streaming server should be able to handle a minimum of 200 clients concurrently streaming virtualized applications.
+Each App-V streaming server should be able to handle a minimum of 200 clients concurrently streaming virtualized applications.
 
 **Note**  
 The actual time to it will take to stream is determined primarily by the number of clients streaming simultaneously, number of packages, package size, the server’s network activity, and network conditions.
@@ -926,14 +925,14 @@ For example, an average user can stream a 100 MB package in less than 2 minutes,
 
 The number of clients a streaming server can support can be significantly increased and the peak streaming requirements reduced if you pre-cache your applications. You can also increase the number of clients a streaming server can support by using on-demand streaming delivery and stream optimized packages.
 
-## Combining App-V 5.1 Server Roles
+## Combining App-V Server Roles
 
 
 Discounting scaling and fault-tolerance requirements, the minimum number of servers needed for a location with connectivity to Active Directory is one. This server will host the management server, management server service, and Microsoft SQL Server roles. Server roles, therefore, can be arranged in any desired combination since they do not conflict with one another.
 
 Ignoring scaling requirements, the minimum number of servers necessary to provide a fault-tolerant implementation is four. The management server, and Microsoft SQL Server roles support being placed in fault-tolerant configurations. The management server service can be combined with any of the roles, but remains a single point of failure.
 
-Although there are a number of fault-tolerance strategies and technologies available, not all are applicable to a given service. Additionally, if App-V 5.1 roles are combined, certain fault-tolerance options may no longer apply due to incompatibilities.
+Although there are a number of fault-tolerance strategies and technologies available, not all are applicable to a given service. Additionally, if App-V roles are combined, certain fault-tolerance options may no longer apply due to incompatibilities.
 
 ## Got a suggestion for App-V?
 
@@ -943,9 +942,9 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[App-V 5.1 Supported Configurations](appv-supported-configurations.md)
+[App-V Supported Configurations](appv-supported-configurations.md)
 
-[Planning for High Availability with App-V 5.1](appv-planning-for-high-availability-with-appv.md)
+[Planning for High Availability with App-V](appv-planning-for-high-availability-with-appv.md)
 
 [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
 

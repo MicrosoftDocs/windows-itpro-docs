@@ -1,8 +1,7 @@
 ---
-title: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
+title: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications (Windows 10)
 description: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 author: jamiejdt
-ms.assetid: 71baf193-a9e8-4ffa-aa7f-e0bffed2e4b2
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -53,7 +52,7 @@ There is no Group Policy setting available to manage this registry key, so you h
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>App-V 5.0 SP3 and App-V 5.1</p></td>
+<td align="left"><p>App-V 5.0 SP3 and App-V</p></td>
 <td align="left"><p>Published globally or to the user</p></td>
 </tr>
 <tr class="even">
@@ -179,7 +178,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Technical Reference for App-V 5.1](appv-technical-reference.md)
+[Technical Reference for App-V](appv-technical-reference.md)
 
  
 

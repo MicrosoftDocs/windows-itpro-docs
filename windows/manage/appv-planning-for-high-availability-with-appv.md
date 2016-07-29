@@ -1,6 +1,6 @@
 ---
-title: Planning for High Availability with App-V 5.1 Server
-description: Planning for High Availability with App-V 5.1 Server
+title: Planning for High Availability with App-V Server (Windows 10)
+description: Planning for High Availability with App-V Server
 author: jamiejdt
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,11 +9,11 @@ ms.prod: w10
 ---
 
 
-# Planning for High Availability with App-V 5.1 Server
+# Planning for High Availability with App-V Server
 
-Microsoft Application Virtualization (App-V) 5.1 system configurations can take advantage of options that maintain a high level of available service.
+Microsoft Application Virtualization (App-V) system configurations can take advantage of options that maintain a high level of available service.
 
-Use the information in the following sections to help you understand the options to deploy App-V 5.1 in a highly available configuration.
+Use the information in the following sections to help you understand the options to deploy App-V in a highly available configuration.
 
 -   [Support for Microsoft SQL Server clustering](#bkmk-sqlcluster)
 
@@ -35,7 +35,7 @@ For instructions, see [How to Deploy the App-V Databases by Using SQL Scripts](a
 ## <a href="" id="bkmk-iisloadbal"></a>Support for IIS Network Load Balancing
 
 
-You can use Internet Information Services (IIS) Network Load Balancing to configure a highly available environment for computers running the App-V 5.x Management, Publishing, and Reporting services which are deployed through IIS.
+You can use Internet Information Services (IIS) Network Load Balancing to configure a highly available environment for computers running the App-V Management, Publishing, and Reporting services which are deployed through IIS.
 
 Review the following for more information about configuring IIS and Network Load Balancing for computers running Windows Server operating systems:
 
@@ -54,7 +54,7 @@ Review the following for more information about configuring IIS and Network Load
 
 ## <a href="" id="bkmk-clusterscsmode"></a>Support for clustered file servers when running SCS mode
 
-Running App-V 5.1 Server in Share Content Store (SCS) mode with clustered file servers is supported.
+Running App-V Server in Share Content Store (SCS) mode with clustered file servers is supported.
 
 The following steps can be used to enable this configuration:
 
@@ -78,7 +78,7 @@ Review the following for more information about configuring Windows Server Failo
 
 ## <a href="" id="bkmk-sqlmirroring"></a>Support for Microsoft SQL Server Mirroring
 
-Using Microsoft SQL Server mirroring, where the App-V 5.1 management server database is mirrored utilizing two SQL Server instances, for App-V 5.1 management server databases is supported.
+Using Microsoft SQL Server mirroring, where the App-V management server database is mirrored utilizing two SQL Server instances, for App-V management server databases is supported.
 
 Review the following for more information about configuring Microsoft SQL Server Mirroring:
 
@@ -92,7 +92,7 @@ The following steps can be used to validate the configuration:
 
 2.  Select **Failover** to designate a new master Microsoft SQL Server instance.
 
-3.  Verify that the App-V 5.1 management server continues to function as expected after the failover.
+3.  Verify that the App-V management server continues to function as expected after the failover.
 
 The connection string on the management server can be modified to include **failover partner = &lt;server2&gt;**. This will only help when the primary on the mirror has failed over to the secondary and the computer running the App-V client is doing a fresh connection (say after reboot).
 
@@ -123,7 +123,7 @@ Click any of the following links for more information:
 
 ## <a href="" id="bkmk-sqlalwayson"></a>Support for Microsoft SQL Server Always On configuration
 
-The App-V 5.1 management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration. For more information, see [Always On Availability Groups (SQL Server)](https://technet.microsoft.com/library/hh510230.aspx).
+The App-V management server database supports deployments to computers running Microsoft SQL Server with the **Always On** configuration. For more information, see [Always On Availability Groups (SQL Server)](https://technet.microsoft.com/library/hh510230.aspx).
 
 ## Have a suggestion for App-V?
 

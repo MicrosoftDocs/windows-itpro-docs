@@ -1,8 +1,7 @@
 ---
-title: Administering App-V 5.1 by Using PowerShell
-description: Administering App-V 5.1 by Using PowerShell
+title: Administering App-V by Using PowerShell (Windows 10)
+description: Administering App-V by Using PowerShell
 author: jamiejdt
-ms.assetid: 9e10ff07-2cd9-4dc1-9e99-582f90c36081
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,15 +9,15 @@ ms.prod: w10
 ---
 
 
-# Administering App-V 5.1 by Using PowerShell
+# Administering App-V by Using PowerShell
 
 
-Microsoft Application Virtualization (App-V) 5.1 provides Windows PowerShell cmdlets, which can help administrators perform various App-V 5.1 tasks. The following sections provide more information about using PowerShell with App-V 5.1.
+Microsoft Application Virtualization (App-V) provides Windows PowerShell cmdlets, which can help administrators perform various App-V tasks. The following sections provide more information about using PowerShell with App-V.
 
-## How to administer App-V 5.1 by using PowerShell
+## How to administer App-V by using PowerShell
 
 
-Use the following PowerShell procedures to perform various App-V 5.1 tasks.
+Use the following PowerShell procedures to perform various App-V tasks.
 
 <table>
 <colgroup>
@@ -37,7 +36,7 @@ Use the following PowerShell procedures to perform various App-V 5.1 tasks.
 <td align="left"><p>Describes how to install the PowerShell cmdlets and find cmdlet help and examples.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md)</p></td>
+<td align="left"><p>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md)</p></td>
 <td align="left"><p>Describes how to manage the client package lifecycle on a stand-alone computer using PowerShell.</p></td>
 </tr>
 <tr class="odd">
@@ -65,8 +64,8 @@ Use the following PowerShell procedures to perform various App-V 5.1 tasks.
 <td align="left"><p>Describes how to create a package accelerator using PowerShell. You can use package accelerators automatically sequence large, complex applications.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to Enable Reporting on the App-V 5.1 Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)</p></td>
-<td align="left"><p>Describes how to enable the computer running the App-V 5.1 to send reporting information.</p></td>
+<td align="left"><p>[How to Enable Reporting on the App-V Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)</p></td>
+<td align="left"><p>Describes how to enable the computer running the App-V to send reporting information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[How to Install the App-V Databases and Convert the Associated Security Identifiers by Using PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md)</p></td>
@@ -85,7 +84,7 @@ Make sure that any script you execute with your App-V packages matches the execu
 ## PowerShell Error Handling
 
 
-Use the following table for information about App-V 5.1 PowerShell error handling.
+Use the following table for information about App-V PowerShell error handling.
 
 <table>
 <colgroup>
@@ -127,7 +126,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

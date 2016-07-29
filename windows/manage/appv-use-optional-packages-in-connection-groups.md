@@ -1,8 +1,7 @@
 ---
-title: How to Use Optional Packages in Connection Groups
+title: How to Use Optional Packages in Connection Groups (Windows 10)
 description: How to Use Optional Packages in Connection Groups
 author: jamiejdt
-ms.assetid: 67666f18-b704-4852-a1e4-d13633bd2baf
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -65,7 +64,7 @@ Before using optional packages, see [Requirements for using optional packages in
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>With App-V 5.0 SP3 and App-V 5.1</strong></p>
+<td align="left"><p><strong>With App-V 5.0 SP3 and App-V</strong></p>
 <p>You can add optional packages to connection groups, which enables you to provide different combinations of applications and plug-ins to different end users.</p>
 <p><strong>Example</strong>: You want to distribute Microsoft Office to your end users, but enable a certain plug-in for only a subset of users.</p>
 <p>To do this, create a connection group that contains a package with Office, and another package with Office plug-ins, and then make the plug-ins package optional.</p>
@@ -178,7 +177,7 @@ Before using optional packages, see [Requirements for using optional packages in
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>With App-V 5.0 SP3 and App-V 5.1</strong></p>
+<td align="left"><p><strong>With App-V 5.0 SP3 and App-V</strong></p>
 <p>You can unpublish, delete, or republish an optional package, which is in a connection group, without having to disable or re-enable the connection group on the App-V Client.</p>
 <p>You can also unpublish an optional package and republish it later without having to disable or republish the connection group.</p>
 <p><strong>Example</strong>: If you publish an optional package that contains a Microsoft Office plug-in, and you want to remove the plug-in, you can unpublish the package without having to disable the connection group.</p></td>
@@ -208,7 +207,7 @@ Before using optional packages, see [Requirements for using optional packages in
 <li><p>Unpublish-AppvClientPackage</p></li>
 <li><p>Remove-AppvClientPackage</p></li>
 </ul>
-<p>For more information, see [How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md).</p></td>
+<p>For more information, see [How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md).</p></td>
 </tr>
 </tbody>
 </table>

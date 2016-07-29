@@ -1,8 +1,7 @@
 ---
-title: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
+title: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server (Windows 10)
 description: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
 author: jamiejdt
-ms.assetid: 23b2d03a-20ce-4973-99ee-748f3b682207
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,22 +12,22 @@ ms.prod: w10
 # How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
 
 
-Deploying packages and connection groups using the App-V 5.1 publishing server is helpful because it offers single-point management and high scalability.
+Deploying packages and connection groups using the App-V publishing server is helpful because it offers single-point management and high scalability.
 
-Use the following steps to configure the App-V 5.1 client to receive updates from the publishing server.
+Use the following steps to configure the App-V client to receive updates from the publishing server.
 
 **Note**  
 For the following procedures the management server was installed on a computer named **MyMgmtSrv**, and the publishing server was installed on a computer named **MyPubSrv**.
 
  
 
-**To configure the App-V 5.1 client to receive updates from the publishing server**
+**To configure the App-V client to receive updates from the publishing server**
 
-1.  Deploy the App-V 5.1 management and publishing servers, and add the required packages and connection groups. For more information about adding packages and connection groups, see [How to Add or Upgrade Packages by Using the Management Console](appv-add-or-upgrade-packages-with-the-management-console.md) and [How to Create a Connection Group](appv-create-a-connection-group.md).
+1.  Deploy the App-V management and publishing servers, and add the required packages and connection groups. For more information about adding packages and connection groups, see [How to Add or Upgrade Packages by Using the Management Console](appv-add-or-upgrade-packages-with-the-management-console.md) and [How to Create a Connection Group](appv-create-a-connection-group.md).
 
 2.  To open the management console click the following link, open a browser and type the following: http://MyMgmtSrv/AppvManagement/Console.html in a web browser, and import, publish, and entitle all the packages and connection groups which will be necessary for a particular set of users.
 
-3.  On the computer running the App-V 5.1 client, open an elevated PowerShell command prompt, run the following command:
+3.  On the computer running the App-V client, open an elevated PowerShell command prompt, run the following command:
 
     **Add-AppvPublishingServer  -Name  ABC  -URL  http:// MyPubSrv/AppvPublishing**
 
@@ -60,7 +59,7 @@ For the following procedures the management server was installed on a computer n
 
     The returned Id – in this case 1
 
-4.  On the computer running the App-V 5.1 client, open a PowerShell command prompt, and type the following command:
+4.  On the computer running the App-V client, open a PowerShell command prompt, and type the following command:
 
     **Sync-AppvPublishingServer  -ServerId  1**
 
@@ -71,7 +70,7 @@ For the following procedures the management server was installed on a computer n
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

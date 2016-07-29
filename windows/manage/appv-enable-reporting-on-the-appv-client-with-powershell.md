@@ -1,8 +1,7 @@
 ---
-title: How to Enable Reporting on the App-V 5.1 Client by Using PowerShell
-description: How to Enable Reporting on the App-V 5.1 Client by Using PowerShell
+title: How to Enable Reporting on the App-V Client by Using PowerShell (Windows 10)
+description: How to Enable Reporting on the App-V Client by Using PowerShell
 author: jamiejdt
-ms.assetid: c4c58be6-cc50-44f6-bf4f-8346fc5d0c0e
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,16 +9,16 @@ ms.prod: w10
 ---
 
 
-# How to Enable Reporting on the App-V 5.1 Client by Using PowerShell
+# How to Enable Reporting on the App-V Client by Using PowerShell
 
 
-Use the following procedure to configure the App-V 5.1 for reporting.
+Use the following procedure to configure the App-V for reporting.
 
-**To configure the computer running the App-V 5.1 client for reporting**
+**To configure the computer running the App-V client for reporting**
 
-1.  Install the App-V 5.1 client. For more information about installing the client see [How to Deploy the App-V Client](appv-deploy-the-appv-client.md).
+1.  Install the App-V client. For more information about installing the client see [How to Deploy the App-V Client](appv-deploy-the-appv-client.md).
 
-2.  After you have installed the App-V 5.1 client, use the **Set-AppvClientConfiguration** PowerShell to configure appropriate Reporting Configuration settings:
+2.  After you have installed the App-V client, use the **Set-AppvClientConfiguration** PowerShell to configure appropriate Reporting Configuration settings:
 
     <table>
     <colgroup>
@@ -73,7 +72,7 @@ Use the following procedure to configure the App-V 5.1 for reporting.
 
      
 
-3.  After the appropriate settings have been configured, the computer running the App-V 5.1 client will automatically collect data and will send the data back to the reporting server.
+3.  After the appropriate settings have been configured, the computer running the App-V client will automatically collect data and will send the data back to the reporting server.
 
     Additionally, administrators can manually send the data back in an on-demand manner using the **Send-AppvClientReport** PowerShell cmdlet.
 
@@ -82,7 +81,7 @@ Use the following procedure to configure the App-V 5.1 for reporting.
 ## Related topics
 
 
-[Administering App-V 5.1 by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
 
  
 

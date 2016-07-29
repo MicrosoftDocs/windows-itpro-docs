@@ -1,8 +1,7 @@
 ---
-title: Using the App-V 5.1 Client Management Console
-description: Using the App-V 5.1 Client Management Console
+title: Using the App-V Client Management Console (Windows 10)
+description: Using the App-V Client Management Console
 author: jamiejdt
-ms.assetid: be6d4e35-5701-4f9a-ba8a-bede12662cf1
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,20 +9,20 @@ ms.prod: w10
 ---
 
 
-# Using the App-V 5.1 Client Management Console
+# Using the App-V Client Management Console
 
 
-This topic provides information about how you can configure and manage the Microsoft Application Virtualization (App-V) 5.1 client.
+This topic provides information about how you can configure and manage the Microsoft Application Virtualization (App-V) client.
 
-## Modify App-V 5.1 client configuration
-
-
-The App-V 5.1 client has associated settings that can be configured to determine how the client will run in your environment. You can manage these settings on the computer that runs the client or by using PowerShell or Group Policy. For more information about how to modify the client using PowerShell or Group Policy configuration see, [How to Modify Client Configuration by Using PowerShell](appv-modify-client-configuration-with-powershell.md).
-
-## <a href="" id="the-app-v-5-1-client-management-console-"></a>The App-V 5.1 client management console
+## Modify App-V client configuration
 
 
-You can obtain information about the App-V 5.1 client or perform specific tasks by using the App-V 5.1 client management console. Many of the tasks that you can perform in the client management console you can also perform by using PowerShell. The associated PowerShell cmdlets for each action are also displayed in the following table. For more information about how to use PowerShell, see [Administering App-V 5.1 by Using PowerShell](appv-administering-appv-with-powershell.md).
+The App-V client has associated settings that can be configured to determine how the client will run in your environment. You can manage these settings on the computer that runs the client or by using PowerShell or Group Policy. For more information about how to modify the client using PowerShell or Group Policy configuration see, [How to Modify Client Configuration by Using PowerShell](appv-modify-client-configuration-with-powershell.md).
+
+## <a href="" id="the-app-v-5-1-client-management-console-"></a>The App-V client management console
+
+
+You can obtain information about the App-V client or perform specific tasks by using the App-V client management console. Many of the tasks that you can perform in the client management console you can also perform by using PowerShell. The associated PowerShell cmdlets for each action are also displayed in the following table. For more information about how to use PowerShell, see [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md).
 
 The client management console contains the following described main tabs.
 
@@ -80,7 +79,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

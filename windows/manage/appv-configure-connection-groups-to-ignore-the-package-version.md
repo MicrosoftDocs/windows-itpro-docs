@@ -1,8 +1,7 @@
 ---
-title: How to Make a Connection Group Ignore the Package Version
+title: How to Make a Connection Group Ignore the Package Version (Windows 10)
 description: How to Make a Connection Group Ignore the Package Version
 author: jamiejdt
-ms.assetid: db16b095-dbe2-42c7-863d-b0d5d91b2f4c
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # How to Make a Connection Group Ignore the Package Version
 
 
-Microsoft Application Virtualization (App-V) 5.1 lets you configure a connection group to use any version of a package, which simplifies package upgrades and reduces the number of connection groups you need to create.
+Microsoft Application Virtualization (App-V) lets you configure a connection group to use any version of a package, which simplifies package upgrades and reduces the number of connection groups you need to create.
 
 To upgrade a package in some earlier versions of App-V, you had to perform several steps, including disabling the connection group and modifying the connection group’s XML definition file.
 
@@ -24,8 +23,8 @@ To upgrade a package in some earlier versions of App-V, you had to perform sever
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Task description with App-V 5.1</th>
-<th align="left">How to perform the task with App-V 5.1</th>
+<th align="left">Task description with App-V</th>
+<th align="left">How to perform the task with App-V</th>
 </tr>
 </thead>
 <tbody>
@@ -76,7 +75,7 @@ To upgrade a package in some earlier versions of App-V, you had to perform sever
 <p>For more information, see:</p>
 <ul>
 <li><p>The example XML file, <strong>Connection group XML file with optional packages</strong>, in this section: [How to Use Optional Packages in Connection Groups](appv-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional)</p></li>
-<li><p>[How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md)</p></li>
+<li><p>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md)</p></li>
 </ul></td>
 </tr>
 </tbody>

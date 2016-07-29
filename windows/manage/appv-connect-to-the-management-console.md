@@ -1,8 +1,7 @@
 ---
-title: How to Connect to the Management Console
+title: How to Connect to the Management Console (Windows 10)
 description: How to Connect to the Management Console
 author: jamiejdt
-ms.assetid: 5a15ed86-7db7-4df3-80ca-bde26f3285e1
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,11 +12,11 @@ ms.prod: w10
 # How to Connect to the Management Console
 
 
-Use the following procedure to connect to the App-V 5.1 Management Console.
+Use the following procedure to connect to the App-V Management Console.
 
-**To connect to the App-V 5.1 Management Console**
+**To connect to the App-V Management Console**
 
-1.  Open Internet Explorer browser and type the address for the App-V 5.1. For example, **http://&lt;Management server name&gt;:&lt;Management service port number&gt;/Console.html**.
+1.  Open Internet Explorer browser and type the address for the App-V. For example, **http://&lt;Management server name&gt;:&lt;Management service port number&gt;/Console.html**.
 
 2.  To view different sections of the console, click the desired section in the navigation pane.
 
@@ -26,7 +25,7 @@ Use the following procedure to connect to the App-V 5.1 Management Console.
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

@@ -1,8 +1,7 @@
 ---
-title: How to Load the PowerShell Cmdlets and Get Cmdlet Help
+title: How to Load the PowerShell Cmdlets and Get Cmdlet Help (Windows 10)
 description: How to Load the PowerShell Cmdlets and Get Cmdlet Help
 author: jamiejdt
-ms.assetid: b6ae5460-2c3a-4030-b132-394d9d5a541e
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -44,7 +43,7 @@ Review the following requirements for using the App-V PowerShell cmdlets:
 <td align="left"><p>Users can run App-V Server cmdlets only if you grant them access by using one of the following methods:</p></td>
 <td align="left"><ul>
 <li><p><strong>When you are deploying and configuring the App-V Server</strong>:</p>
-<p>Specify an Active Directory group or individual user that has permissions to manage the App-V environment. See [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md).</p></li>
+<p>Specify an Active Directory group or individual user that has permissions to manage the App-V environment. See [How to Deploy the App-V Server](appv-deploy-the-appv-server.md).</p></li>
 <li><p><strong>After you’ve deployed the App-V Server</strong>:</p>
 <p>Use the App-V Management console to add an additional Active Directory group or user. See [How to Add or Remove an Administrator by Using the Management Console](appv-add-or-remove-an-administrator-with-the-management-console.md).</p></li>
 </ul></td>
@@ -88,7 +87,7 @@ Review the following requirements for using the App-V PowerShell cmdlets:
 <td align="left"><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>-RequirePublishAsAdmin</strong> parameter.</p></td>
 <td align="left"><ul>
 <li><p>[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md#bkmk-admin-only-posh-topic-cg)</p></li>
-<li><p>[How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs)</p></li>
+<li><p>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs)</p></li>
 </ul></td>
 </tr>
 <tr class="even">

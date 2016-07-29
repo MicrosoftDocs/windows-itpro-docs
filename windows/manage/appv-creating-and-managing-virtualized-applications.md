@@ -1,8 +1,7 @@
 ---
-title: Creating and Managing App-V 5.1 Virtualized Applications
-description: Creating and Managing App-V 5.1 Virtualized Applications
+title: Creating and Managing App-V Virtualized Applications (Windows 10)
+description: Creating and Managing App-V Virtualized Applications
 author: jamiejdt
-ms.assetid: 26be4331-88eb-4cfb-9d82-e63d7ee54576
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,36 +9,36 @@ ms.prod: w10
 ---
 
 
-# Creating and Managing App-V 5.1 Virtualized Applications
+# Creating and Managing App-V Virtualized Applications
 
 
-After you have properly deployed the Microsoft Application Virtualization (App-V) 5.1 sequencer, you can use it to monitor and record the installation and setup process for an application to be run as a virtualized application.
+After you have properly deployed the Microsoft Application Virtualization (App-V) sequencer, you can use it to monitor and record the installation and setup process for an application to be run as a virtualized application.
 
 **Note**  
-For more information about configuring the App-V 5.1 sequencer, sequencing best practices, and an example of creating and updating a virtual application, see the [Microsoft Application Virtualization 5.0 Sequencing Guide](http://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V 5.0 Sequencing Guide.docx).
+For more information about configuring the App-V sequencer, sequencing best practices, and an example of creating and updating a virtual application, see the [Microsoft Application Virtualization 5.0 Sequencing Guide](http://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V 5.0 Sequencing Guide.docx).
 
 **Note**  
-The App-V 5.x Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
+The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
 
 ## Sequencing an application
 
 
-You can use the App-V 5.1 Sequencer to perform the following tasks:
+You can use the App-V Sequencer to perform the following tasks:
 
--   Create virtual packages that can be deployed to computers running the App-V 5.1 client.
+-   Create virtual packages that can be deployed to computers running the App-V client.
 
 -   Upgrade existing packages. You can expand an existing package onto the computer running the sequencer and then upgrade the application to create a newer version.
 
 -   Edit configuration information associated with an existing package. For example, you can add a shortcut or modify a file type association.
 
     **Note**  
-    You must create shortcuts and save them to an available network location to allow roaming. If a shortcut is created and saved in a private location, the package must be published locally to the computer running the App-V 5.1 client.
+    You must create shortcuts and save them to an available network location to allow roaming. If a shortcut is created and saved in a private location, the package must be published locally to the computer running the App-V client.
  
 -   Convert existing virtual packages.
 
 The sequencer uses the **%TMP% \\ Scratch** or **%TEMP% \\ Scratch** directory and the **Temp** directory to store temporary files during sequencing. On the computer that runs the sequencer, you should configure these directories with free disk space equivalent to the estimated application installation requirements. Configuring the temp directories and the Temp directory on different hard drive partitions can help improve performance during sequencing.
 
-When you use the sequencer to create a new virtual application, the following listed files are created. These files comprise the App-V 5.1 package.
+When you use the sequencer to create a new virtual application, the following listed files are created. These files comprise the App-V package.
 
 -   .msi file. This Windows Installer (.msi) file is created by the sequencer and is used to install the virtual package on target computers.
 
@@ -59,20 +58,20 @@ The **Options** dialog box in the sequencer console contains the following tabs:
 -   **General**. Use this tab to enable Microsoft Updates to run during sequencing. Select **Append Package Version to Filename** to configure the sequence to add a version number to the virtualized package that is being sequenced. Select **Always trust the source of Package Accelerators** to create virtualized packages using a package accelerator without being prompted for authorization.
 
     **Important**  
-    Package Accelerators created using App-V 4.6 are not supported by App-V 5.1.     
+    Package Accelerators created using App-V 4.6 are not supported by App-V.     
 
 -   **Parse Items**. This tab displays the associated file path locations that will be parsed or tokenized into in the virtual environment. Tokens are useful for adding files using the **Package Files** tab in **Advanced Editing**.
 
 -   **Exclusion Items**. Use this tab to specify which folders and directories should not be monitored during sequencing. To add local application data that is saved in the Local App Data folder in the package, click **New** and specify the location and the associated **Mapping Type**. This option is required for some packages.
 
-App-V 5.1 supports applications that include Microsoft Windows Services. If an application includes a Windows service, the Service will be included in the sequenced virtual package as long as it is installed while being monitored by the sequencer. If a virtual application creates a Windows service when it initially runs, then later, after installation, the application must be run while the sequencer is monitoring so that the Windows Service will be added to the package. Only Services that run under the Local System account are supported. Services that are configured for AutoStart or Delayed AutoStart are started before the first virtual application in a package runs inside the package’s Virtual Environment. Windows Services that are configured to be started on demand by an application are started when the virtual application inside the package starts the Service via API call.
+App-V supports applications that include Microsoft Windows Services. If an application includes a Windows service, the Service will be included in the sequenced virtual package as long as it is installed while being monitored by the sequencer. If a virtual application creates a Windows service when it initially runs, then later, after installation, the application must be run while the sequencer is monitoring so that the Windows Service will be added to the package. Only Services that run under the Local System account are supported. Services that are configured for AutoStart or Delayed AutoStart are started before the first virtual application in a package runs inside the package’s Virtual Environment. Windows Services that are configured to be started on demand by an application are started when the virtual application inside the package starts the Service via API call.
 
-[How to Sequence a New Application with App-V 5.1](appv-sequence-a-new-application.md)
+[How to Sequence a New Application with App-V](appv-sequence-a-new-application.md)
 
-## <a href="" id="---------app-v-5-1-shell-extension-support"></a> App-V 5.1 shell extension support
+## <a href="" id="---------app-v-5-1-shell-extension-support"></a> App-V shell extension support
 
 
-App-V 5.1 supports shell extensions. Shell extensions will be detected and embedded in the package during sequencing.
+App-V supports shell extensions. Shell extensions will be detected and embedded in the package during sequencing.
 
 Shell extensions are embedded in the package automatically during the sequencing process. When the package is published, the shell extension gives users the same functionality as if the application were locally installed.
 
@@ -139,9 +138,9 @@ The following table lists the supported shell extensions:
 
 ## Copy on Write (CoW) file extension support
 
-Copy on write (CoW) file extensions allow App-V 5.1 to dynamically write to specific locations contained in the virtual package while it is being used.
+Copy on write (CoW) file extensions allow App-V to dynamically write to specific locations contained in the virtual package while it is being used.
 
-The following table displays the file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V 5.1 client. All other files and directories can be modified.
+The following table displays the file types that can exist in a virtual package under the VFS directory, but cannot be updated on the computer running the App-V client. All other files and directories can be modified.
 
 | File Type  	|             	|             	|            	|            	|            	|
 |------------	|-------------	|-------------	|------------	|------------	|------------	|
@@ -169,7 +168,7 @@ You can use the sequencer to modify an existing package. The computer on which y
 
 A .appvt file is a project template that can be used to save commonly applied, customized settings. You can then more easily use these settings for future sequencings.
 
-App-V 5.1 project templates differ from App-V 5.1 Application Accelerators because App-V 5.1 Application Accelerators are application-specific, and App-V 5.1 project templates can be applied to multiple applications. Additionally, you cannot use a project template when you use a Package Accelerator to create a virtual application package. The following general settings are saved with an App-V 5.1 project template:
+App-V project templates differ from App-V Application Accelerators because App-V Application Accelerators are application-specific, and App-V project templates can be applied to multiple applications. Additionally, you cannot use a project template when you use a Package Accelerator to create a virtual application package. The following general settings are saved with an App-V project template:
 
 A template can specify and store multiple settings as follows:
 
@@ -185,13 +184,13 @@ A template can specify and store multiple settings as follows:
 
 
 **Note**  
-Package accelerators created using a previous version of App-V must be recreated using App-V 5.1.
+Package accelerators created using a previous version of App-V must be recreated using App-V.
 
-You can use App-V 5.1 package accelerators to automatically generate a new virtual application packages. After you have successfully created a package accelerator, you can reuse and share the package accelerator.
+You can use App-V package accelerators to automatically generate a new virtual application packages. After you have successfully created a package accelerator, you can reuse and share the package accelerator.
 
 In some situations, to create the package accelerator, you might have to install the application locally on the computer that runs the sequencer. In such cases, you should first try to create the package accelerator with the installation media. If multiple missing files are required, you should install the application locally to the computer that runs the sequencer, and then create the package accelerator.
 
-After you have successfully created a Package Accelerator, you can reuse and share the Package Accelerator. Creating App-V 5.1 Package Accelerators is an advanced task. Package Accelerators can contain password and user-specific information. Therefore you must save Package Accelerators and the associated installation media in a secure location, and you should digitally sign the Package Accelerator after you create it so that the publisher can be verified when the App-V 5.1 Package Accelerator is applied.
+After you have successfully created a Package Accelerator, you can reuse and share the Package Accelerator. Creating App-V Package Accelerators is an advanced task. Package Accelerators can contain password and user-specific information. Therefore you must save Package Accelerators and the associated installation media in a secure location, and you should digitally sign the Package Accelerator after you create it so that the publisher can be verified when the App-V Package Accelerator is applied.
 
 [How to Create a Package Accelerator](appv-create-a-package-accelerator.md)
 
@@ -200,13 +199,13 @@ After you have successfully created a Package Accelerator, you can reuse and sha
 ## Sequencer error reporting
 
 
-The App-V 5.1 Sequencer can detect common sequencing issues during sequencing. The **Installation Report** page at the end of the sequencing wizard displays diagnostic messages categorized into **Errors**, **Warnings**, and **Info** depending on the severity of the issue.
+The App-V Sequencer can detect common sequencing issues during sequencing. The **Installation Report** page at the end of the sequencing wizard displays diagnostic messages categorized into **Errors**, **Warnings**, and **Info** depending on the severity of the issue.
 
 You can also find additional information about sequencing errors using the Windows Event Viewer.
 
 
-## <a href="" id="other-resources-for-the-app-v-5-1-sequencer-"></a>Other resources for the App-V 5.1 sequencer
+## <a href="" id="other-resources-for-the-app-v-5-1-sequencer-"></a>Other resources for the App-V sequencer
 
 
--   [Operations for App-V 5.1](appv-operations.md)
+-   [Operations for App-V](appv-operations.md)
 

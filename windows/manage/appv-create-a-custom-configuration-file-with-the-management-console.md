@@ -1,8 +1,7 @@
 ---
-title: How to Create a Custom Configuration File by Using the App-V 5.1 Management Console
-description: How to Create a Custom Configuration File by Using the App-V 5.1 Management Console
+title: How to Create a Custom Configuration File by Using the App-V Management Console (Windows 10)
+description: How to Create a Custom Configuration File by Using the App-V Management Console
 author: jamiejdt
-ms.assetid: f5ab426a-f49a-47b3-93f3-b9d60aada8f4
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,12 +9,12 @@ ms.prod: w10
 ---
 
 
-# How to Create a Custom Configuration File by Using the App-V 5.1 Management Console
+# How to Create a Custom Configuration File by Using the App-V Management Console
 
 
-You can use a dynamic configuration to customize an App-V 5.1 package for a specific user. However, you must first create the dynamic user configuration (.xml) file or the dynamic deployment configuration file before you can use the files. Creation of the file is an advanced manual operation. For general information about dynamic user configuration files, see, [About App-V 5.1 Dynamic Configuration](appv-dynamic-configuration.md).
+You can use a dynamic configuration to customize an App-V package for a specific user. However, you must first create the dynamic user configuration (.xml) file or the dynamic deployment configuration file before you can use the files. Creation of the file is an advanced manual operation. For general information about dynamic user configuration files, see, [About App-V Dynamic Configuration](appv-dynamic-configuration.md).
 
-Use the following procedure to create a Dynamic User Configuration file by using the App-V 5.1 Management console.
+Use the following procedure to create a Dynamic User Configuration file by using the App-V Management console.
 
 **To create a Dynamic User Configuration file**
 
@@ -37,7 +36,7 @@ Use the following procedure to create a Dynamic User Configuration file by using
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

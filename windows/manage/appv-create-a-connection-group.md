@@ -1,8 +1,7 @@
 ---
-title: How to Create a Connection Group
+title: How to Create a Connection Group (Windows 10)
 description: How to Create a Connection Group
 author: jamiejdt
-ms.assetid: 221e2eed-7ebb-42e3-b3d6-11c37c0578e6
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +18,7 @@ When you place packages in a connection group, their package root paths are merg
 
 **To create a connection group**
 
-1.  In the App-V 5.1 Management Console, select **CONNECTION GROUPS** to display the Connection Groups library.
+1.  In the App-V Management Console, select **CONNECTION GROUPS** to display the Connection Groups library.
 
 2.  Select **ADD CONNECTION GROUP** to create a new connection group.
 
@@ -45,7 +44,7 @@ When you place packages in a connection group, their package root paths are merg
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
 [Managing Connection Groups](appv-managing-connection-groups.md)
 

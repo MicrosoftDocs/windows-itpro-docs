@@ -1,8 +1,7 @@
 ---
-title: Planning to Deploy App-V 5.1 with an Electronic Software Distribution System
-description: Planning to Deploy App-V 5.1 with an Electronic Software Distribution System
+title: Planning to Deploy App-V with an Electronic Software Distribution System (Windows 10)
+description: Planning to Deploy App-V with an Electronic Software Distribution System
 author: jamiejdt
-ms.assetid: c26602c2-5e8d-44e6-90df-adacc593607e
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Planning to Deploy App-V 5.1 with an Electronic Software Distribution System
+# Planning to Deploy App-V with an Electronic Software Distribution System
 
 
 If you are using an electronic software distribution system to deploy App-V packages, review the following planning considerations. For information about using System Center Configuration Manager to deploy App-V, see [Introduction to Application Management in Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=281816).

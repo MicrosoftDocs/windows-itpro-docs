@@ -1,8 +1,7 @@
 ---
-title: How to Create a Package Accelerator
+title: How to Create a Package Accelerator (Windows 10)
 description: How to Create a Package Accelerator
 author: jamiejdt
-ms.assetid: b61f3581-7933-443e-b872-a96bed9ff8d7
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # How to Create a Package Accelerator
 
 
-App-V 5.1 package accelerators automatically generate new virtual application packages.
+App-V package accelerators automatically generate new virtual application packages.
 
 **Note**  
 You can use PowerShell to create a package accelerator. For more information see [How to Create a Package Accelerator by Using PowerShell](appv-create-a-package-accelerator-with-powershell.md).
@@ -23,7 +22,7 @@ You can use PowerShell to create a package accelerator. For more information see
 Use the following procedure to create a package accelerator.
 
 **Important**  
-Package Accelerators can contain password and user-specific information. Therefore you must save Package Accelerators and the associated installation media in a secure location, and you should digitally sign the Package Accelerator after you create it so that the publisher can be verified when the App-V 5.1 Package Accelerator is applied.
+Package Accelerators can contain password and user-specific information. Therefore you must save Package Accelerators and the associated installation media in a secure location, and you should digitally sign the Package Accelerator after you create it so that the publisher can be verified when the App-V Package Accelerator is applied.
 
  
 
@@ -39,13 +38,13 @@ Before you begin the following procedure, you should perform the following:
 **To create a package accelerator**
 
 1.  **Important**  
-    The App-V 5.1 Sequencer does not grant any license rights to the software application you are using to create the Package Accelerator. You must abide by all end user license terms for the application you are using. It is your responsibility to make sure the software application’s license terms allow you to create a Package Accelerator using App-V 5.1 Sequencer.
+    The App-V Sequencer does not grant any license rights to the software application you are using to create the Package Accelerator. You must abide by all end user license terms for the application you are using. It is your responsibility to make sure the software application’s license terms allow you to create a Package Accelerator using App-V Sequencer.
 
      
 
-    To start the App-V 5.1 sequencer, on the computer that is running the sequencer, click **Start** / **All Programs** / **Microsoft Application Virtualization** / **Microsoft Application Virtualization Sequencer**.
+    To start the App-V sequencer, on the computer that is running the sequencer, click **Start** / **All Programs** / **Microsoft Application Virtualization** / **Microsoft Application Virtualization Sequencer**.
 
-2.  To start the App-V 5.1 **Create Package Accelerator** wizard, in the App-V 5.1 sequencer console, click **Tools** / **Create Accelerator**.
+2.  To start the App-V **Create Package Accelerator** wizard, in the App-V sequencer console, click **Tools** / **Create Accelerator**.
 
 3.  On the **Select Package** page, to specify an existing virtual application package to use to create the Package Accelerator, click **Browse**, and locate the existing virtual application package (.appv file).
 
@@ -94,7 +93,7 @@ Before you begin the following procedure, you should perform the following:
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
 [How to Create a Virtual Application Package Using an App-V Package Accelerator](appv-create-a-virtual-application-package-package-accelerator.md)
 

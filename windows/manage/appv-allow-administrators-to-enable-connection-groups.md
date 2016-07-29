@@ -1,8 +1,7 @@
 ---
-title: How to Allow Only Administrators to Enable Connection Groups
+title: How to Allow Only Administrators to Enable Connection Groups (Windows 10)
 description: How to Allow Only Administrators to Enable Connection Groups
 author: jamiejdt
-ms.assetid: 42ca3157-5d85-467b-a148-09404f8f737a
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

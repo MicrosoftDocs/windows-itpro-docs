@@ -1,8 +1,7 @@
 ---
-title: How to Uninstall the App-V 5.1 Client
-description: How to Uninstall the App-V 5.1 Client
+title: How to Uninstall the App-V Client (Windows 10)
+description: How to Uninstall the App-V Client
 author: jamiejdt
-ms.assetid: 21f2d946-fc9f-4cd3-899b-ac52b3fbc306
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,17 +9,17 @@ ms.prod: w10
 ---
 
 
-# How to Uninstall the App-V 5.1 Client
+# How to Uninstall the App-V Client
 
 
-Use the following procedure to uninstall the Microsoft Application Virtualization (App-V) 5.1 client from a computer. When you uninstall the App-V 5.1 client all packages published to the computer running the client are also removed. If the uninstall operation does not complete the packages will need to be re-published to the computer running the App-V 5.1 client.
+Use the following procedure to uninstall the Microsoft Application Virtualization (App-V) client from a computer. When you uninstall the App-V client all packages published to the computer running the client are also removed. If the uninstall operation does not complete the packages will need to be re-published to the computer running the App-V client.
 
 **Important**  
-You should ensure that the App-V 5.1 client service is running prior to performing the uninstall procedure.
+You should ensure that the App-V client service is running prior to performing the uninstall procedure.
 
  
 
-**To uninstall the App-V 5.1 Client**
+**To uninstall the App-V Client**
 
 1.  In Control Panel, double-click **Programs** / **Uninstall a Program**, and then double-click **Microsoft Application Virtualization Client**.
 
@@ -34,7 +33,7 @@ You should ensure that the App-V 5.1 client service is running prior to performi
 3.  A progress bar shows the time remaining. When this step finishes, you must restart the computer so that all associated drivers can be stopped to complete the uninstall process.
 
     **Note**  
-    You can also use the command line to uninstall the App-V 5.1 client with the following switch: **/UNINSTALL**.
+    You can also use the command line to uninstall the App-V client with the following switch: **/UNINSTALL**.
 
      
 
@@ -43,7 +42,7 @@ You should ensure that the App-V 5.1 client service is running prior to performi
 ## Related topics
 
 
-[Deploying App-V 5.1](appv-deploying-appv.md)
+[Deploying App-V](appv-deploying-appv.md)
 
  
 
