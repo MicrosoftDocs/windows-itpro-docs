@@ -1,8 +1,7 @@
 ---
-title: Getting Started with App-V 5.1
-description: Getting Started with App-V 5.1
+title: Getting Started with App-V (Windows 10)
+description: Getting Started with App-V
 author: jamiejdt
-ms.assetid: 49a20e1f-0566-4e53-a417-1521393fc974
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,127 +9,71 @@ ms.prod: w10
 ---
 
 
-# Getting Started with App-V 5.1
+# Getting Started with App-V
 
 
-Microsoft Application Virtualization (App-V) 5.1 enables administrators to deploy, update, and support applications as services in real time, on an as-needed basis. Individual applications are transformed from locally installed products into centrally managed services and are available wherever you need, without the need to preconfigure computers or to change operating system settings.
+Microsoft Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Windows Store, and interact with them as if they were installed locally.
 
-App-V consists of the following elements:
+With the release of Windows 10, version 1607, App-V is included with the [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is available with Software Assurance. If you are new to Windows 10 and App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. For information about what you need to know before getting started with App-V, see the [App-V Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Element</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V Management Server</p></td>
-<td align="left"><ul>
-<li><p>Provides a central location for managing the App-V infrastructure, which delivers virtual applications to both the App-V Desktop Client and the Remote Desktop Services (formerly Terminal Services) Client.</p></li>
-<li><p>Uses Microsoft SQL Server® for its data store, where one or more App-V Management servers can share a single SQL Server data store.</p></li>
-<li><p>Authenticates requests and provides security, metering, monitoring, and data gathering. The server uses Active Directory and supporting tools to manage users and applications.</p></li>
-<li><p>Has a management site that lets you configure the App-V infrastructure from any computer. You can add and remove applications, manipulate shortcuts, assign access permissions to users and groups, and create connection groups.</p></li>
-<li><p>Enables communication between the App-V Web Management Console and the SQL Server data store. These components can all be installed on a single server computer, or on one or more separate computers, depending on the required system architecture.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V Publishing Server</p></td>
-<td align="left"><ul>
-<li><p>Provides App-V Clients with entitled applications for the specific user</p></li>
-<li><p>Hosts the virtual application package for streaming.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V Desktop Client</p></td>
-<td align="left"><ul>
-<li><p>Retrieves virtual applications</p></li>
-<li><p>Publishes the applications on the clients</p></li>
-<li><p>Automatically sets up and manages virtual environments at runtime on Windows endpoints.</p></li>
-<li><p>Stores user-specific virtual application settings, such as registry and file changes, in each user's profile.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V Remote Desktop Services (RDS) Client</p></td>
-<td align="left"><p>Enables Remote Desktop Session Host servers to use the capabilities of the App-V Desktop Client for shared desktop sessions.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V Sequencer</p></td>
-<td align="left"><ul>
-<li><p>Is a wizard-based tool that you use to transform traditional applications into virtual applications.</p></li>
-<li><p>Produces the application “package,” which consists of:</p>
-<ol>
-<li><p>a sequenced application (APPV) file</p></li>
-<li><p>a Windows Installer file (MSI) that can be deployed to clients configured for stand-alone operation</p></li>
-<li><p>Several XML files including Report.XML, PackageName_DeploymentConfig.XML, and PackageName_UserConfig.XML. The UserConfig and DeploymentConfig XML files are used to configure custom changes to the default behavior of the package.</p></li>
-</ol></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+If you’re already using App-V 5.1, performing an in-place upgrade to Windows 10 on user devices automatically installs the App-V client and migrates users’ App-V applications and settings. For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-from-an-existing-installation.md).
 
- 
+Important: You can migrate your existing App-V installation to Windows 10 from App-V versions 5.0 SP2 and higher only. If you are using an earlier version of App-V, you’ll need to upgrade from that version to App-V 5.0 SP2 before you upgrade to Windows 10.
 
-For more information about these elements, see [High Level Architecture for App-V 5.1](appv-high-level-architecture.md).
+For information about previous versions of App-V, see [MDOP Information Experience](https://technet.microsoft.com/itpro/mdop/index).
 
-If you are new to this product, we recommend that you read the documentation thoroughly. Before you deploy it to a production environment, we also recommend that you validate your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. For more information about Microsoft training opportunities, see the Microsoft Training Overview at <http://go.microsoft.com/fwlink/p/?LinkId=80347>.
+## Getting started with App-V for Windows 10 (new installations)
 
-**Note**  
-A downloadable version of this administrator’s guide is not available. However, you can learn about a special mode of the TechNet Library that allows you to select articles, group them in a collection, and print them or export them to a file at <http://go.microsoft.com/fwlink/?LinkId=272491> (http://go.microsoft.com/fwlink/?LinkId=272491).
+To start using App-V to deliver virtual applications to users, you’ll need to download, enable, and install server- and client-side components. The following table provides information about the App-V for Windows 10 components and where to find them.
 
- 
+| Component  | What it does     | Where to find it     |
+|------------|--|------|
+| App-V server components         | App-V offers five server components that work together to allow you to host and publish virtual applications, generate usage reports, and manage your App-V environment. For information about the server components, see [Deploying the App-V Server](#_Deploying_the_App-V). | The App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from the [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#FileId=65215). <br>You must have a MSDN subscription to download the MDOP ISO package.<br>See [Deploying the App-V Server](appv-deploying-the-appv-server.md) for more information about installing and using the server components. |
+| App-V client         | The App-V client is the component that runs virtualized applications on user devices. The client enables users to interact with icons and file names to start virtualized applications. | The App-V client is automatically installed with Windows 10. <br>For information about enabling the client, see [Enable the App-V desktop client](enable-the-app-v-desktop-client.md).           |
+| App-V Remote Desktop Services (RDS) Client | .       | .        |
+| App-V Sequencer      | Use the App-V Sequencer to convert Win32 applications into virtual packages for deployment to user devices. Devices must be running the App-V client to allow users to interact with virtual applications.    | Installed with the [Windows 10 Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK).  |
 
-This section of the App-V 5.1 Administrator’s Guide includes high-level information about App-V 5.1 to provide you with a basic understanding of the product before you begin the deployment planning.
+<!-- The link above to enable-the-app-v-desktop-client.md does not correspond with a topic-file yet. -->
 
-## Getting started with App-V 5.1
+For more information about these elements, see [High Level Architecture for App-V](appv-high-level-architecture.md).
+
+If you are new to this product, we recommend that you read the documentation thoroughly. Before you deploy it to a production environment, we also recommend that you validate your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. For information about Microsoft training opportunities, see the [Microsoft Training Overview](https://www.microsoft.com/en-us/learning/default.aspx).
+
+## Getting started with App-V
 
 
--   [About App-V 5.1](appv-about-appv.md)
+-   [About App-V](appv-about-appv.md)
 
-    Provides a high-level overview of App-V 5.1 and how it can be used in your organization.
+    Provides a high-level overview of App-V and how it can be used in your organization.
 
--   [Evaluating App-V 5.1](appv-evaluating-appv.md)
+-   [Evaluating App-V](appv-evaluating-appv.md)
 
-    Provides information about how you can best evaluate App-V 5.1 for use in your organization.
+    Provides information about how you can best evaluate App-V for use in your organization.
 
--   [High Level Architecture for App-V 5.1](appv-high-level-architecture.md)
+-   [High Level Architecture for App-V](appv-high-level-architecture.md)
 
-    Provides a description of the App-V 5.1 features and how they work together.
+    Provides a description of the App-V features and how they work together.
 
--   [Accessibility for App-V 5.1](appv-accessibility.md)
+-   [Accessibility for App-V](appv-accessibility.md)
 
     Provides information about features and services that make this product and its corresponding documentation more accessible for people with disabilities.
 
 ## <a href="" id="other-resources-for-this-product-"></a>Other resources for this product
 
 
--   [Microsoft Application Virtualization 5.1 Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
 
--   [Planning for App-V 5.1](appv-planning-for-appv.md)
+-   [Planning for App-V](appv-planning-for-appv.md)
 
--   [Deploying App-V 5.1](appv-deploying-appv.md)
+-   [Deploying App-V](appv-deploying-appv.md)
 
--   [Operations for App-V 5.1](appv-operations.md)
+-   [Operations for App-V](appv-operations.md)
 
--   [Troubleshooting App-V 5.1](appv-troubleshooting.md)
+-   [Troubleshooting App-V](appv-troubleshooting.md)
 
--   [Technical Reference for App-V 5.1](appv-technical-reference.md)
+-   [Technical Reference for App-V](appv-technical-reference.md)
 
-## Got a suggestion for App-V?
+## Have a suggestion for App-V?
 
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
-
- 
-
- 
-
-
-
-
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
 

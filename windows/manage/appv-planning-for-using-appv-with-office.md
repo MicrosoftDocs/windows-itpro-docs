@@ -1,8 +1,7 @@
 ---
-title: Planning for Using App-V with Office
+title: Planning for Using App-V with Office (Windows 10)
 description: Planning for Using App-V with Office
 author: jamiejdt
-ms.assetid: e7a19b43-1746-469f-bad6-8e75cf4b3f67
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,8 +11,7 @@ ms.prod: w10
 
 # Planning for Using App-V with Office
 
-
-Use the following information to plan how to deploy Office by using Microsoft Application Virtualization (App-V) 5.1. This article includes:
+Use the following information to plan how to deploy Office by using Microsoft Application Virtualization (App-V). This article includes:
 
 -   [App-V support for Language Packs](#bkmk-lang-pack)
 
@@ -25,8 +23,7 @@ Use the following information to plan how to deploy Office by using Microsoft Ap
 
 ## <a href="" id="bkmk-lang-pack"></a>App-V support for Language Packs
 
-
-You can use the App-V 5.1 Sequencer to create plug-in packages for Language Packs, Language Interface Packs, Proofing Tools and ScreenTip Languages. You can then include the plug-in packages in a Connection Group, along with the Office 2013 package that you create by using the Office Deployment Toolkit. The Office applications and the plug-in Language Packs interact seamlessly in the same connection group, just like any other packages that are grouped together in a connection group.
+You can use the App-V Sequencer to create plug-in packages for Language Packs, Language Interface Packs, Proofing Tools and ScreenTip Languages. You can then include the plug-in packages in a Connection Group, along with the Office 2013 package that you create by using the Office Deployment Toolkit. The Office applications and the plug-in Language Packs interact seamlessly in the same connection group, just like any other packages that are grouped together in a connection group.
 
 **Note**  
 Microsoft Visio and Microsoft Project do not provide support for the Thai Language Pack.
@@ -44,12 +41,10 @@ The following table lists the versions of Microsoft Office that App-V supports, 
 <col width="20%" />
 <col width="20%" />
 <col width="20%" />
-<col width="20%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th align="left">Supported Office Version</th>
-<th align="left">Supported App-V Versions</th>
 <th align="left">Package Creation</th>
 <th align="left">Supported Licensing</th>
 <th align="left">Supported Deployments</th>
@@ -62,13 +57,6 @@ The following table lists the versions of Microsoft Office that App-V supports, 
 <ul>
 <li><p>Visio Pro for Office 365</p></li>
 <li><p>Project Pro for Office 365</p></li>
-</ul></td>
-<td align="left"><ul>
-<li><p>App-V 5.0</p></li>
-<li><p>App-V 5.0 SP1</p></li>
-<li><p>App-V 5.0 SP2</p></li>
-<li><p>App-V 5.0 SP3</p></li>
-<li><p>App-V 5.1</p></li>
 </ul></td>
 <td align="left"><p>Office Deployment Tool</p></td>
 <td align="left"><p>Subscription</p></td>
@@ -85,13 +73,6 @@ The following table lists the versions of Microsoft Office that App-V supports, 
 <ul>
 <li><p>Visio Professional 2013</p></li>
 <li><p>Project Professional 2013</p></li>
-</ul></td>
-<td align="left"><ul>
-<li><p>App-V 5.0</p></li>
-<li><p>App-V 5.0 SP1</p></li>
-<li><p>App-V 5.0 SP2</p></li>
-<li><p>App-V 5.0 SP3</p></li>
-<li><p>App-V 5.1</p></li>
 </ul></td>
 <td align="left"><p>Office Deployment Tool</p></td>
 <td align="left"><p>Volume Licensing</p></td>
@@ -110,7 +91,7 @@ The following table lists the versions of Microsoft Office that App-V supports, 
 ## <a href="" id="bkmk-plan-coexisting"></a>Planning for using App-V with coexisting versions of Office
 
 
-You can install more than one version of Microsoft Office side by side on the same computer by using “Microsoft Office coexistence.” You can implement Office coexistence with combinations of all major versions of Office and with installation methods, as applicable, by using the Windows Installer-based (MSi) version of Office, Click-to-Run, and App-V 5.1. However, using Office coexistence is not recommended by Microsoft.
+You can install more than one version of Microsoft Office side by side on the same computer by using “Microsoft Office coexistence.” You can implement Office coexistence with combinations of all major versions of Office and with installation methods, as applicable, by using the Windows Installer-based (MSi) version of Office, Click-to-Run, and App-V. However, using Office coexistence is not recommended by Microsoft.
 
 Microsoft’s recommended best practice is to avoid Office coexistence completely to prevent compatibility issues. However, when you are migrating to a newer version of Office, issues occasionally arise that can’t be resolved immediately, so you can temporarily implement coexistence to help facilitate a faster migration to the latest product version. Using Office coexistence on a long-term basis is never recommended, and your organization should have a plan to fully transition in the immediate future.
 
@@ -295,72 +276,8 @@ The Office 2013 App-V package supports the following integration points with the
 <td align="left"><p>User can search in outlook</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Active X Controls:</p></td>
-<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](http://go.microsoft.com/fwlink/p/?LinkId=331361).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>   Groove.SiteClient</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>   PortalConnect.PersonalSite</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>   SharePoint.openDocuments</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>   SharePoint.ExportDatabase</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>   SharePoint.SpreadSheetLauncher</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>   SharePoint.StssyncHander</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>   SharePoint.DragUploadCtl</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>   SharePoint.DragDownloadCtl</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>   Sharepoint.OpenXMLDocuments</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>   Sharepoint.ClipboardCtl</p></td>
-<td align="left"><p>Active X control</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>   WinProj.Activator</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>   Name.NameCtrl</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>   STSUPld.CopyCtl</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>   CommunicatorMeetingJoinAx.JoinManager</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>   LISTNET.Listnet</p></td>
-<td align="left"><p>Active X Control</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>   OneDrive Pro Browser Helper</p></td>
-<td align="left"><p>Active X Control]</p></td>
+<td align="left"><p>Active X Controls</p></td>
+<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://msdn.microsoft.com/library/vs/alm/ms440037(v=office.14).aspx).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>OneDrive Pro Icon Overlays</p></td>
@@ -381,18 +298,6 @@ The Office 2013 App-V package supports the following integration points with the
 </tbody>
 </table>
 
- 
+## Have a suggestion for App-V?
 
-## Got a suggestion for App-V?
-
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
-
- 
-
- 
-
-
-
-
-
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).

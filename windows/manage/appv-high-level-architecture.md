@@ -1,8 +1,7 @@
 ---
-title: High Level Architecture for App-V 5.1
-description: High Level Architecture for App-V 5.1
+title: High Level Architecture for App-V (Windows 10)
+description: High Level Architecture for App-V
 author: jamiejdt
-ms.assetid: 90406361-55b8-40b7-85c0-449436789d4c
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,15 +9,15 @@ ms.prod: w10
 ---
 
 
-# High Level Architecture for App-V 5.1
+# High Level Architecture for App-V
 
 
-Use the following information to help you simplify you Microsoft Application Virtualization (App-V) 5.1 deployment.
+Use the following information to help you simplify you Microsoft Application Virtualization (App-V) deployment.
 
 ## Architecture Overview
 
 
-A typical App-V 5.1 implementation consists of the following elements.
+A typical App-V implementation consists of the following elements.
 
 <table>
 <colgroup>
@@ -33,49 +32,45 @@ A typical App-V 5.1 implementation consists of the following elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>App-V 5.1 Management Server</p></td>
-<td align="left"><p>The App-V 5.1 Management server provides overall management functionality for the App-V 5.1 infrastructure. Additionally, you can install more than one instance of the management server in your environment which provides the following benefits:</p>
+<td align="left"><p>App-V Management Server</p></td>
+<td align="left"><p>The App-V Management server provides overall management functionality for the App-V infrastructure. Additionally, you can install more than one instance of the management server in your environment which provides the following benefits:</p>
 <ul>
-<li><p>Fault Tolerance and High Availability – Installing and configuring the App-V 5.1 Management server on two separate computers can help in situations when one of the servers is unavailable or offline.</p>
-<p>You can also help increase App-V 5.1 availability by installing the Management server on multiple computers. In this scenario, a network load balancer should also be considered so that server requests are balanced.</p></li>
+<li><p>Fault Tolerance and High Availability – Installing and configuring the App-V Management server on two separate computers can help in situations when one of the servers is unavailable or offline.</p>
+<p>You can also help increase App-V availability by installing the Management server on multiple computers. In this scenario, a network load balancer should also be considered so that server requests are balanced.</p></li>
 <li><p>Scalability – You can add additional management servers as necessary to support a high load, for example you can install multiple servers behind a load balancer.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>App-V 5.1 Publishing Server</p></td>
-<td align="left"><p>The App-V 5.1 publishing server provides functionality for virtual application hosting and streaming. The publishing server does not require a database connection and supports the following protocols:</p>
+<td align="left"><p>App-V Publishing Server</p></td>
+<td align="left"><p>The App-V publishing server provides functionality for virtual application hosting and streaming. The publishing server does not require a database connection and supports the following protocols:</p>
 <ul>
 <li><p>HTTP, and HTTPS</p></li>
 </ul>
-<p>You can also help increase App-V 5.1 availability by installing the Publishing server on multiple computers. A network load balancer should also be considered so that server requests are balanced.</p></td>
+<p>You can also help increase App-V availability by installing the Publishing server on multiple computers. A network load balancer should also be considered so that server requests are balanced.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>App-V 5.1 Reporting Server</p></td>
-<td align="left"><p>The App-V 5.1 Reporting server enables authorized users to run and view existing App-V 5.1 reports and ad hoc reports that can help them manage the App-V 5.1 infrastructure. The Reporting server requires a connection to the App-V 5.1 reporting database. You can also help increase App-V 5.1 availability by installing the Reporting server on multiple computers. A network load balancer should also be considered so that server requests are balanced.</p></td>
+<td align="left"><p>App-V Reporting Server</p></td>
+<td align="left"><p>The App-V Reporting server enables authorized users to run and view existing App-V reports and ad hoc reports that can help them manage the App-V infrastructure. The Reporting server requires a connection to the App-V reporting database. You can also help increase App-V availability by installing the Reporting server on multiple computers. A network load balancer should also be considered so that server requests are balanced.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>App-V 5.1 Client</p></td>
-<td align="left"><p>The App-V 5.1 client enables packages created using App-V 5.1 to run on target computers.</p></td>
+<td align="left"><p>App-V Client</p></td>
+<td align="left"><p>The App-V client enables packages created using App-V to run on target computers.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
 **Note**  
-If you are using App-V 5.1 with Electronic Software Distribution (ESD) you are not required to use the App-V 5.1 Management server, however you can still utilize the reporting and streaming functionality of App-V 5.1.
+If you are using App-V with Electronic Software Distribution (ESD) you are not required to use the App-V Management server. However, you can still utilize the reporting and streaming functionality of App-V.
 
- 
+## Have a suggestion for App-V?
 
-## Got a suggestion for App-V?
-
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
 
 ## Related topics
 
 
-[Getting Started with App-V 5.1](appv-getting-started.md)
+[Getting Started with App-V](appv-getting-started.md)
 
  
 

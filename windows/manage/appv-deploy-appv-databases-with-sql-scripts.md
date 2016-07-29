@@ -1,8 +1,7 @@
 ---
-title: How to Deploy the App-V Databases by Using SQL Scripts
+title: How to Deploy the App-V Databases by Using SQL Scripts (Windows 10)
 description: How to Deploy the App-V Databases by Using SQL Scripts
 author: jamiejdt
-ms.assetid: 1183b1bc-d4d7-4914-a049-06e82bf2d96d
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,9 +21,7 @@ Use the following instructions to use SQL scripts, rather than the Windows Insta
 **Note**  
 If you have already deployed the App-V 5.0 SP3 database, the SQL scripts are not required to upgrade to App-V 5.1.
 
- 
-
-**How to install the App-V databases by using SQL scripts**
+## How to install the App-V databases by using SQL scripts
 
 1.  Before you install the database scripts, review and keep a copy of the App-V license terms. By running the database scripts, you are agreeing to the license terms. If you do not accept them, you should not use this software.
 
@@ -59,21 +56,11 @@ If you have already deployed the App-V 5.0 SP3 database, the SQL scripts are not
     </tbody>
     </table>
 
-     
+> **Caution**&nbsp;&nbsp;The readme.txt file in the ManagementDatabase subfolder is out of date. The information in the updated readme files below is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
 
-    **Caution**  
-    The readme.txt file in the ManagementDatabase subfolder is out of date. The information in the updated readme files below is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
+> **Important**&nbsp;&nbsp;The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.<br>The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340). **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
 
-     
-
-    **Important**  
-    The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.
-
-    The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340). **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
-
-     
-
-**Updated management database README file content**
+### Updated management database README file content
 
 ``` syntax
 ******************************************************************
@@ -138,7 +125,7 @@ Steps to install "AppVManagement" schema in SQL SERVER.
 
 ```
 
-**Updated reporting database README file content**
+### Updated reporting database README file content
 
 ``` syntax
 ******************************************************************
@@ -163,7 +150,6 @@ Steps to install "AppVReporting" schema in SQL SERVER.
     CreateReportingStoredProcs.sql
     CreateStoredProcs.sql
     CreateViews.sql
-    InsertVersionInfo.sql
     Permissions.sql
     ScheduleReportingJob.sql
 
@@ -210,26 +196,19 @@ Steps to install "AppVReporting" schema in SQL SERVER.
     CreateReportingStoredProcs.sql
     CreateStoredProcs.sql
     CreateViews.sql
-    InsertVersionInfo.sql
     Permissions.sql
 ##     ScheduleReportingJob.sql
 
 ```
 
-**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
 
 ## Related topics
 
+<!-- Should 5.1 be put back into the titles and-or filenames of the following related topics? -->
 
-[Deploying the App-V 5.1 Server](appv-deploying-the-appv-server.md)
+[Deploying the App-V Server](appv-deploying-the-appv-server.md)
 
-[How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md)
-
- 
-
- 
-
-
-
-
-
+[How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
