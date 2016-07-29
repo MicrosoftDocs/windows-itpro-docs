@@ -1,8 +1,7 @@
 ---
-title: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
+title: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console (Windows 10)
 description: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
 author: jamiejdt
-ms.assetid: dd71df05-512f-4eb4-a55f-e5b93601323d
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +16,7 @@ Use the following procedure to customize the virtual application extensions for 
 
 **To customize virtual applications extensions for an AD group**
 
-1.  To view the package that you want to configure, open the App-V 5.1 Management Console. To view the configuration that is assigned to a given user group, select the package, and right-click the package name and select **Edit active directory access**. Alternatively, select the package and click **EDIT** in the **AD ACCESS** pane.
+1.  To view the package that you want to configure, open the App-V Management Console. To view the configuration that is assigned to a given user group, select the package, and right-click the package name and select **Edit active directory access**. Alternatively, select the package and click **EDIT** in the **AD ACCESS** pane.
 
 2.  To customize an AD group, you can find the group from the list of **AD Entities with Access**. Then, using the drop-down box in the **Assigned Configuration** pane, select **Custom**, and then click **EDIT**.
 
@@ -34,7 +33,7 @@ Use the following procedure to customize the virtual application extensions for 
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

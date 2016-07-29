@@ -14,12 +14,12 @@ ms.prod: w10
 
 Use the following instructions to use SQL scripts, rather than the Windows Installer, to:
 
--   Install the App-V 5.1 databases
+-   Install the App-V databases
 
 -   Upgrade the App-V databases to a later version
 
 **Note**  
-If you have already deployed the App-V 5.0 SP3 database, the SQL scripts are not required to upgrade to App-V 5.1.
+If you have already deployed the App-V 5.0 SP3 database, the SQL scripts are not required to upgrade to App-V.
 
 ## How to install the App-V databases by using SQL scripts
 
@@ -206,8 +206,6 @@ Steps to install "AppVReporting" schema in SQL SERVER.
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](http://social.technet.microsoft.com/Forums/en-US/mdopappv/threads).
 
 ## Related topics
-
-<!-- Should 5.1 be put back into the titles and-or filenames of the following related topics? -->
 
 [Deploying the App-V Server](appv-deploying-the-appv-server.md)
 

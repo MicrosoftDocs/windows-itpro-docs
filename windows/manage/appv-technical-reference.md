@@ -1,8 +1,7 @@
 ---
-title: Technical Reference for App-V 5.1
-description: Technical Reference for App-V 5.1
+title: Technical Reference for App-V (Windows 10)
+description: Technical Reference for App-V
 author: jamiejdt
-ms.assetid: 2b9e8b2b-4cd1-46f3-ba08-e3bc8d5c6127
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,15 +9,15 @@ ms.prod: w10
 ---
 
 
-# Technical Reference for App-V 5.1
+# Technical Reference for App-V
 
 
-This section provides reference information related to managing App-V 5.1.
+This section provides reference information related to managing App-V.
 
 ## In This Section
 
 
--   [Performance Guidance for Application Virtualization 5.1](appv-performance-guidance.md)
+-   [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
 
     Provides strategy and context for a number of performance optimization practices. Not all practices will be applicable although they are supported and have been tested. Using all suggested practices that are applicable to your organization will provide the optimal end-user experience.
 

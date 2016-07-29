@@ -1,8 +1,7 @@
 ---
-title: About App-V 5.1 Reporting
-description: About App-V 5.1 Reporting
+title: About App-V Reporting (Windows 10)
+description: About App-V Reporting
 author: jamiejdt
-ms.assetid: 385dca00-7178-4e35-8d86-c58867ebd65c
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,17 +9,17 @@ ms.prod: w10
 ---
 
 
-# About App-V 5.1 Reporting
+# About App-V Reporting
 
 
-Microsoft Application Virtualization (App-V) 5.1 includes a built-in reporting feature that helps you collect information about computers running the App-V 5.1 client as well as information about virtual application package usage. You can use this information to generate reports from a centralized database.
+Microsoft Application Virtualization (App-V) includes a built-in reporting feature that helps you collect information about computers running the App-V client as well as information about virtual application package usage. You can use this information to generate reports from a centralized database.
 
-## <a href="" id="---------app-v-5-1-reporting-overview"></a> App-V 5.1 Reporting Overview
+## <a href="" id="---------app-v-5-1-reporting-overview"></a> App-V Reporting Overview
 
 
-The following list displays the end–to-end high-level workflow for reporting in App-V 5.1.
+The following list displays the end–to-end high-level workflow for reporting in App-V.
 
-1.  The App-V 5.1 Reporting server has the following prerequisites:
+1.  The App-V Reporting server has the following prerequisites:
 
     -   Internet Information Service (IIS) web server role
 
@@ -28,41 +27,41 @@ The following list displays the end–to-end high-level workflow for reporting i
 
     -   SQL Server installed and running with SQL Server Reporting Services (SSRS)
 
-    To confirm SQL Server Reporting Services is running, view `http://localhost/Reports` in a web browser as administrator on the server that will host App-V 5.1 Reporting. The SQL Server Reporting Services Home page should display.
+    To confirm SQL Server Reporting Services is running, view `http://localhost/Reports` in a web browser as administrator on the server that will host App-V Reporting. The SQL Server Reporting Services Home page should display.
 
-2.  Install the App-V 5.1 reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V 5.1 client should send data to the reporting server.
+2.  Install the App-V reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V client should send data to the reporting server.
 
 3.  If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at <http://go.microsoft.com/fwlink/?LinkId=397255>.
 
     **Note**  
-    If you are using the Configuration Manager integration with App-V 5.1, most reports are generated from Configuration Manager rather than from App-V 5.1.
+    If you are using the Configuration Manager integration with App-V, most reports are generated from Configuration Manager rather than from App-V.
 
      
 
-4.  After importing the App-V 5.1 PowerShell module using `Import-Module AppvClient` as administrator, enable the App-V 5.1 client. This sample PowerShell cmdlet enables App-V 5.1 reporting:
+4.  After importing the App-V PowerShell module using `Import-Module AppvClient` as administrator, enable the App-V client. This sample PowerShell cmdlet enables App-V reporting:
 
     ``` syntax
     Set-AppvClientConfiguration –reportingserverurl <url>:<port> -reportingenabled 1 – ReportingStartTime <0-23> - ReportingRandomDelay <#min>
     ```
 
-    To immediately send App-V 5.1 report data, run `Send-AppvClientReport` on the App-V 5.1 client.
+    To immediately send App-V report data, run `Send-AppvClientReport` on the App-V client.
 
-    For more information about installing the App-V 5.1 client with reporting enabled see [About Client Configuration Settings](appv-client-configuration-settings.md). To administer App-V 5.1 Reporting with Windows PowerShell, see [How to Enable Reporting on the App-V 5.1 Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md).
+    For more information about installing the App-V client with reporting enabled see [About Client Configuration Settings](appv-client-configuration-settings.md). To administer App-V Reporting with Windows PowerShell, see [How to Enable Reporting on the App-V Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md).
 
-5.  After the reporting server receives the data from the App-V 5.1 client it sends the data to the reporting database. When the database receives and processes the client data, a successful reply is sent to the reporting server and then a notification is sent to the App-V 5.1 client.
+5.  After the reporting server receives the data from the App-V client it sends the data to the reporting database. When the database receives and processes the client data, a successful reply is sent to the reporting server and then a notification is sent to the App-V client.
 
-6.  When the App-V 5.1 client receives the success notification, it empties the data cache to conserve space.
+6.  When the App-V client receives the success notification, it empties the data cache to conserve space.
 
     **Note**  
     By default the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
 
      
 
-    If the App-V 5.1 client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
+    If the App-V client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
 
-### <a href="" id="-------------app-v-5-1-reporting-server-frequently-asked-questions"></a> App-V 5.1 reporting server frequently asked questions
+### <a href="" id="-------------app-v-5-1-reporting-server-frequently-asked-questions"></a> App-V reporting server frequently asked questions
 
-The following table displays answers to common questions about App-V 5.1 reporting
+The following table displays answers to common questions about App-V reporting
 
 <table>
 <colgroup>
@@ -78,14 +77,14 @@ The following table displays answers to common questions about App-V 5.1 reporti
 <tbody>
 <tr class="odd">
 <td align="left"><p>What is the frequency that reporting information is sent to the reporting database?</p></td>
-<td align="left"><p>The frequency depends on how the reporting task is configured on the computer running the App-V 5.1 client. You must configure the frequency / interval for sending the reporting data. App-V 5.1 Reporting is not enabled by default.</p></td>
+<td align="left"><p>The frequency depends on how the reporting task is configured on the computer running the App-V client. You must configure the frequency / interval for sending the reporting data. App-V Reporting is not enabled by default.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>What information is stored in the reporting server database?</p></td>
 <td align="left"><p>The following list displays what is stored in the reporting database:</p>
 <ul>
-<li><p>The operating system running on the computer running the App-V 5.1 client: host name, version, service pack, type - client/server, processor architecture.</p></li>
-<li><p>App-V 5.1 Client information: version.</p></li>
+<li><p>The operating system running on the computer running the App-V client: host name, version, service pack, type - client/server, processor architecture.</p></li>
+<li><p>App-V Client information: version.</p></li>
 <li><p>Published package list: GUID, version GUID, name.</p></li>
 <li><p>Application usage information: name, version, streaming server, user (domain\alias), package version GUID, launch status and time, shutdown time.</p></li>
 </ul></td>
@@ -94,7 +93,7 @@ The following table displays answers to common questions about App-V 5.1 reporti
 <td align="left"><p>What is the average volume of information that is sent to the reporting server?</p></td>
 <td align="left"><p>It depends. The following list displays the three sets of the data sent to the reporting server:</p>
 <ol>
-<li><p>Operating system, and App-V 5.1 client information. ~150 Bytes, every time this data is sent.</p></li>
+<li><p>Operating system, and App-V client information. ~150 Bytes, every time this data is sent.</p></li>
 <li><p>Published package list. ~7 KB for 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there is no change, this information is not sent.</p></li>
 <li><p>Virtual application usage information – about 0.25KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the PowerShell cmdlet, there is an optional argument that controls if the data needs to be re-sent next time around – that argument is <strong>DeleteOnSuccess</strong>.</p>
 <p></p>
@@ -125,21 +124,21 @@ The following table displays answers to common questions about App-V 5.1 reporti
 
  
 
-## <a href="" id="---------app-v-5-1-client-reporting"></a> App-V 5.1 Client Reporting
+## <a href="" id="---------app-v-5-1-client-reporting"></a> App-V Client Reporting
 
 
-To use App-V 5.1 reporting you must install and configure the App-V 5.1 client. After the client has been installed, use the **Set-AppVClientConfiguration** PowerShell cmdlet or the **ADMX Template** to configure reporting. The reporting feature cmdlets are available by using the following link and are prefaced by **Reporting**. For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of App-V 5.1 client reporting configuration using PowerShell.
+To use App-V reporting you must install and configure the App-V client. After the client has been installed, use the **Set-AppVClientConfiguration** PowerShell cmdlet or the **ADMX Template** to configure reporting. The reporting feature cmdlets are available by using the following link and are prefaced by **Reporting**. For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of App-V client reporting configuration using PowerShell.
 
 ### Configuring App-V Client reporting using PowerShell
 
-The following examples show how PowerShell parameters can configure the reporting features of the App-V 5.1 client.
+The following examples show how PowerShell parameters can configure the reporting features of the App-V client.
 
 **Note**  
-The following configuration task can also be configured using Group Policy settings in the App-V 5.1 ADMX template. For more information about using the ADMX template, see [How to Modify App-V 5.1 Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md).
+The following configuration task can also be configured using Group Policy settings in the App-V ADMX template. For more information about using the ADMX template, see [How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md).
 
  
 
-**To enable reporting and to initiate data collection on the computer running the App-V 5.1 client**:
+**To enable reporting and to initiate data collection on the computer running the App-V client**:
 
 `Set-AppVClientConfiguration –ReportingEnabled 1`
 
@@ -157,7 +156,7 @@ This example configures the client to automatically send the reporting data to t
 
 `Set-AppvClientConfiguration –ReportingDataCacheLimit 100`
 
-Configures the maximum size of the reporting cache on the computer running the App-V 5.1 client to 100 MB. If the cache limit is reached before the data is sent to the server, then the log rolls over and data will be overwritten as necessary.
+Configures the maximum size of the reporting cache on the computer running the App-V client to 100 MB. If the cache limit is reached before the data is sent to the server, then the log rolls over and data will be overwritten as necessary.
 
 **To configure the data block size transmitted across the network between the client and the server**:
 
@@ -167,7 +166,7 @@ Specifies the maximum data block that the client sends to 10240 MB.
 
 ### Types of data collected
 
-The following table displays the types of information you can collect by using App-V 5.1 reporting.
+The following table displays the types of information you can collect by using App-V reporting.
 
 <table>
 <colgroup>
@@ -189,7 +188,7 @@ The following table displays the types of information you can collect by using A
 <td align="left"><p>Start and End Times</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>App-V 5.1 Client Version</p></td>
+<td align="left"><p>App-V Client Version</p></td>
 <td align="left"><p>Package Version</p></td>
 <td align="left"><p>Run Status</p></td>
 </tr>
@@ -227,7 +226,7 @@ The client collects and saves this data in an **.xml** format. The data cache is
 
 ### Sending data to the server
 
-You can configure the computer that is running the App-V 5.1 client to automatically send data to the specified reporting server. To specify the server use the **Set-AppvClientConfiguration** cmdlet with the following settings:
+You can configure the computer that is running the App-V client to automatically send data to the specified reporting server. To specify the server use the **Set-AppvClientConfiguration** cmdlet with the following settings:
 
 -   ReportingEnabled
 
@@ -264,8 +263,8 @@ You can also use the **Send-AppVClientReport** cmdlet to manually collect data. 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>If you have an existing App-V 5.1 reporting Server, create a customized scheduled task or script. Specify that the client send the data to the specified location with the desired frequency.</p></td>
-<td align="left"><p>If you do not have an existing App-V 5.1 reporting Server, use the <strong>–URL</strong> parameter to send the data to a specified share. For example:</p>
+<td align="left"><p>If you have an existing App-V reporting Server, create a customized scheduled task or script. Specify that the client send the data to the specified location with the desired frequency.</p></td>
+<td align="left"><p>If you do not have an existing App-V reporting Server, use the <strong>–URL</strong> parameter to send the data to a specified share. For example:</p>
 <p><code>Send-AppVClientReport –URL \\Myshare\MyData\ -DeleteOnSuccess</code></p>
 <p>The previous example will send the reporting data to <strong>\\MyShare\MyData\</strong> location indicated by the <strong>-URL</strong> parameter. After the data has been sent, the cache is cleared.</p>
 <div class="alert">
@@ -283,13 +282,13 @@ You can also use the **Send-AppVClientReport** cmdlet to manually collect data. 
 
 ### Creating Reports
 
-To retrieve report information and create reports using App-V 5.1 you must use one of the following methods:
+To retrieve report information and create reports using App-V you must use one of the following methods:
 
--   **Microsoft SQL Server Reporting Services (SSRS)** - Microsoft SQL Server Reporting Services is available with Microsoft SQL Server. SSRS is not installed when you install the App-V 5.1 reporting server. It must be deployed separately to generate the associated reports.
+-   **Microsoft SQL Server Reporting Services (SSRS)** - Microsoft SQL Server Reporting Services is available with Microsoft SQL Server. SSRS is not installed when you install the App-V reporting server. It must be deployed separately to generate the associated reports.
 
     Use the following link for more information about using [Microsoft SQL Server Reporting Services](http://go.microsoft.com/fwlink/?LinkId=285596).
 
--   **Scripting** – You can generate reports by scripting directly against the App-V 5.1 reporting database. For example:
+-   **Scripting** – You can generate reports by scripting directly against the App-V reporting database. For example:
 
     **Stored Procedure:**
 
@@ -297,7 +296,7 @@ To retrieve report information and create reports using App-V 5.1 you must use o
 
     To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. You should ensure that the Microsoft SQL Server Agent is set to **AutoStart**. For more information see [Autostart SQL Server Agent (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=287045).
 
-    The stored procedure is also created when using the App-V 5.1 database scripts.
+    The stored procedure is also created when using the App-V database scripts.
 
 You should also ensure that the reporting server web service’s **Maximum Concurrent Connections** is set to a value that the server will be able to manage without impacting availability. The recommended number of **Maximum Concurrent Connections** for the **Reporting Web Service** is **10,000**.
 
@@ -309,7 +308,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Deploying the App-V 5.1 Server](appv-deploying-the-appv-server.md)
+[Deploying the App-V Server](appv-deploying-the-appv-server.md)
 
 [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](appv-install-the-reporting-server-on-a-standalone-computer.md)
 

@@ -1,8 +1,7 @@
 ---
-title: Evaluating App-V 5.1
-description: Evaluating App-V 5.1
+title: Evaluating App-V (Windows 10)
+description: Evaluating App-V
 author: jamiejdt
-ms.assetid: 92d80b23-3eca-4be3-a771-e700ad1470db
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,33 +9,33 @@ ms.prod: w10
 ---
 
 
-# Evaluating App-V 5.1
+# Evaluating App-V
 
 
-Before you deploy Microsoft Application Virtualization (App-V) 5.1 into a production environment, you should evaluate it in a lab environment. You can use the information in this topic to set up App-V 5.1 in a lab environment for evaluation purposes only.
+Before you deploy Microsoft Application Virtualization (App-V) into a production environment, you should evaluate it in a lab environment. You can use the information in this topic to set up App-V in a lab environment for evaluation purposes only.
 
-## Configure lab computers for App-V 5.1 Evaluation
+## Configure lab computers for App-V Evaluation
 
 
-Use the following link for information about setting up the App-V 5.1 sequencer on a computer in your lab environment.
+Use the following link for information about setting up the App-V sequencer on a computer in your lab environment.
 
-### Installing the App-V 5.1 Sequencer and Creating Packages
+### Installing the App-V Sequencer and Creating Packages
 
-Use the following links for information about setting up the App-V 5.1 sequencer and creating packages in your lab environment.
+Use the following links for information about setting up the App-V sequencer and creating packages in your lab environment.
 
 -   [How to Install the Sequencer](appv-install-the-sequencer.md)
 
--   [Creating and Managing App-V 5.1 Virtualized Applications](appv-creating-and-managing-virtualized-applications.md)
+-   [Creating and Managing App-V Virtualized Applications](appv-creating-and-managing-virtualized-applications.md)
 
-### <a href="" id="configuring-the-app-v-5-1-server-"></a>Configuring the App-V 5.1 Server
+### <a href="" id="configuring-the-app-v-5-1-server-"></a>Configuring the App-V Server
 
-Use the following links for information about setting up the App-V 5.1 server in your lab environment.
+Use the following links for information about setting up the App-V server in your lab environment.
 
--   [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md)
+-   [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
 
--   [Administering App-V 5.1 Virtual Applications by Using the Management Console](appv-administering-virtual-applications-with-the-management-console.md)
+-   [Administering App-V Virtual Applications by Using the Management Console](appv-administering-virtual-applications-with-the-management-console.md)
 
-### Installing the App-V 5.1 Client
+### Installing the App-V Client
 
 Use the following link for more information about creating and managing virtualized packages in your lab environment.
 
@@ -52,7 +51,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Getting Started with App-V 5.1](appv-getting-started.md)
+[Getting Started with App-V](appv-getting-started.md)
 
  
 

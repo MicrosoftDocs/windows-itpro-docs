@@ -1,8 +1,7 @@
 ---
-title: How to Revert Extension Points from an App-V 5.1 Package to an App-V 4.6 Package For All Users on a Specific Computer
-description: How to Revert Extension Points from an App-V 5.1 Package to an App-V 4.6 Package For All Users on a Specific Computer
+title: How to Revert Extension Points from an App-V Package to an App-V 4.6 Package For All Users on a Specific Computer (Windows 10)
+description: How to Revert Extension Points from an App-V Package to an App-V 4.6 Package For All Users on a Specific Computer
 author: jamiejdt
-ms.assetid: 64640b8e-de6b-4006-a33e-353d285af15e
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,14 +9,14 @@ ms.prod: w10
 ---
 
 
-# How to Revert Extension Points from an App-V 5.1 Package to an App-V 4.6 Package For All Users on a Specific Computer
+# How to Revert Extension Points from an App-V Package to an App-V 4.6 Package For All Users on a Specific Computer
 
 
-Use the following procedure to revert extension points from an App-V 5.1 package to the App-V 4.6 file format using the deployment configuration file.
+Use the following procedure to revert extension points from an App-V package to the App-V 4.6 file format using the deployment configuration file.
 
 **To revert a package**
 
-1.  Ensure that App-V 4.6 package is published to the users but the FTAs and shortcuts have been assumed by App-V 5.1 package using the following migration method, [How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer](appv-migrate-extension-points-from-an-appv-46-sp2-package-to-a-converted-appv-51-package-for-all-users-on-a-specific-computer.md).
+1.  Ensure that App-V 4.6 package is published to the users but the FTAs and shortcuts have been assumed by App-V package using the following migration method, [How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V Package for All Users on a Specific Computer](appv-migrate-extension-points-from-an-appv-46-sp2-package-to-a-converted-appv-51-package-for-all-users-on-a-specific-computer.md).
 
     In the **userConfiguration** section of the deployment configuration file for the converted package, to set the policy, make the following update to the **userConfiguration** section: **ManagingAuthority TakeoverExtensionPointsFrom46="false" PackageName=&lt;Package ID&gt;**
 
@@ -32,7 +31,7 @@ Use the following procedure to revert extension points from an App-V 5.1 package
     Open the application using FTAs or shortcuts. The Application should now open using App-V 4.6.
 
     **Note**  
-    If you do not need the App-V 5.1 package anymore, you can unpublish the App-V 5.1 package and the extension points will automatically revert to App-V 4.6.
+    If you do not need the App-V package anymore, you can unpublish the App-V package and the extension points will automatically revert to App-V 4.6.
 
      
 
@@ -41,7 +40,7 @@ Use the following procedure to revert extension points from an App-V 5.1 package
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

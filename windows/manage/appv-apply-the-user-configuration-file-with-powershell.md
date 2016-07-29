@@ -1,8 +1,7 @@
 ---
-title: How to Apply the User Configuration File by Using PowerShell
+title: How to Apply the User Configuration File by Using PowerShell (Windows 10)
 description: How to Apply the User Configuration File by Using PowerShell
 author: jamiejdt
-ms.assetid: 986e638c-4a0c-4a7e-be73-f4615e8b8000
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -34,7 +33,7 @@ Use the following procedure to specify a user-specific configuration file. The f
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

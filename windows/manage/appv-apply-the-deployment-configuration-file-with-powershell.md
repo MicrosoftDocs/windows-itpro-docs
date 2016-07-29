@@ -1,8 +1,7 @@
 ---
-title: How to Apply the Deployment Configuration File by Using PowerShell
+title: How to Apply the Deployment Configuration File by Using PowerShell (Windows 10)
 description: How to Apply the Deployment Configuration File by Using PowerShell
 author: jamiejdt
-ms.assetid: 78fe0f15-4a36-41e3-96d6-7d5aa77c1e06
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # How to Apply the Deployment Configuration File by Using PowerShell
 
 
-The dynamic deployment configuration file is applied when a package is added or set to a computer running the App-V 5.1 client before the package has been published. The file configures the default settings for package for all users on the computer running the App-V 5.1 client. This section describes the steps used to use a deployment configuration file. The procedure is based on the following example and assumes the following package and configuration files exist on a computer:
+The dynamic deployment configuration file is applied when a package is added or set to a computer running the App-V client before the package has been published. The file configures the default settings for package for all users on the computer running the App-V client. This section describes the steps used to use a deployment configuration file. The procedure is based on the following example and assumes the following package and configuration files exist on a computer:
 
 **c:\\Packages\\Contoso\\MyApp.appv**
 
@@ -37,7 +36,7 @@ The dynamic deployment configuration file is applied when a package is added or 
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

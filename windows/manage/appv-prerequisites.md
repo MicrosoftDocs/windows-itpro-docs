@@ -1,8 +1,7 @@
 ---
-title: App-V 5.1 Prerequisites
-description: App-V 5.1 Prerequisites
+title: App-V Prerequisites (Windows 10)
+description: App-V Prerequisites
 author: jamiejdt
-ms.assetid: 1bfa03c1-a4ae-45ec-8a2b-b10c2b94bfb0
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,12 +9,12 @@ ms.prod: w10
 ---
 
 
-# App-V 5.1 Prerequisites
+# App-V Prerequisites
 
 
-Before installing Microsoft Application Virtualization (App-V) 5.1, ensure that you have installed all of the following required prerequisite software.
+Before installing Microsoft Application Virtualization (App-V), ensure that you have installed all of the following required prerequisite software.
 
-For a list of supported operating systems and hardware requirements for the App-V Server, Sequencer, and Client, see [App-V 5.1 Supported Configurations](appv-supported-configurations.md).
+For a list of supported operating systems and hardware requirements for the App-V Server, Sequencer, and Client, see [App-V Supported Configurations](appv-supported-configurations.md).
 
 ## Summary of software preinstalled on each operating system
 
@@ -43,7 +42,7 @@ The following table indicates the software that is already installed for differe
 <td align="left"><p>All of the prerequisite software is already installed.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>If you are running Windows 8, upgrade to Windows 8.1 before using App-V 5.1.</p>
+<p>If you are running Windows 8, upgrade to Windows 8.1 before using App-V.</p>
 </div>
 <div>
  
@@ -76,7 +75,7 @@ The following table indicates the software that is already installed for differe
 ## App-V Server prerequisite software
 
 
-Install the required prerequisite software for the App-V 5.1 Server components.
+Install the required prerequisite software for the App-V Server components.
 
 ### What to know before you start
 
@@ -141,7 +140,7 @@ Install the required prerequisite software for the App-V 5.1 Server components.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p></td>
-<td align="left"><p>For supported versions, see [App-V 5.1 Supported Configurations](appv-supported-configurations.md).</p></td>
+<td align="left"><p>For supported versions, see [App-V Supported Configurations](appv-supported-configurations.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
@@ -227,7 +226,7 @@ JavaScript must be enabled on the browser that opens the Web Management Console.
 
 ### Management server database prerequisite software
 
-The Management database is required only if you are using the App-V 5.1 Management server.
+The Management database is required only if you are using the App-V Management server.
 
 <table>
 <colgroup>
@@ -402,7 +401,7 @@ The Management database is required only if you are using the App-V 5.1 Manageme
 <tbody>
 <tr class="odd">
 <td align="left"><p>Supported version of SQL Server</p></td>
-<td align="left"><p>For supported versions, see [App-V 5.1 Supported Configurations](appv-supported-configurations.md).</p></td>
+<td align="left"><p>For supported versions, see [App-V Supported Configurations](appv-supported-configurations.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
@@ -468,7 +467,7 @@ The Management database is required only if you are using the App-V 5.1 Manageme
 
 ### Reporting database prerequisite software
 
-The Reporting database is required only if you are using the App-V 5.1 Reporting server.
+The Reporting database is required only if you are using the App-V Reporting server.
 
 <table>
 <colgroup>
@@ -609,7 +608,7 @@ Install the following prerequisite software for the App-V Remote Desktop Service
 
 -   Best practice: The computer that runs the Sequencer should have the same hardware and software configurations as the computers that will run the virtual applications.
 
--   The sequencing process is resource intensive, so make sure that the computer that runs the Sequencer has plenty of memory, a fast processor, and a fast hard drive. The system requirements of locally installed applications cannot exceed those of the Sequencer. For more information, see [App-V 5.1 Supported Configurations](appv-supported-configurations.md).
+-   The sequencing process is resource intensive, so make sure that the computer that runs the Sequencer has plenty of memory, a fast processor, and a fast hard drive. The system requirements of locally installed applications cannot exceed those of the Sequencer. For more information, see [App-V Supported Configurations](appv-supported-configurations.md).
 
 <table>
 <colgroup>
@@ -649,9 +648,9 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Planning for App-V 5.1](appv-planning-for-appv.md)
+[Planning for App-V](appv-planning-for-appv.md)
 
-[App-V 5.1 Supported Configurations](appv-supported-configurations.md)
+[App-V Supported Configurations](appv-supported-configurations.md)
 
  
 

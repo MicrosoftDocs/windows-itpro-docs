@@ -1,8 +1,7 @@
 ---
-title: Operations for App-V 5.1
-description: Operations for App-V 5.1
+title: Operations for App-V (Windows 10)
+description: Operations for App-V
 author: jamiejdt
-ms.assetid: dd13b5c9-2d1e-442f-91e4-43dec7f17ea2
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,19 +9,19 @@ ms.prod: w10
 ---
 
 
-# Operations for App-V 5.1
+# Operations for App-V
 
 
-This section of the Microsoft Application Virtualization (App-V) 5.1 Administrator’s Guide includes information about the various types of App-V 5.1 administration and operating tasks that are typically performed by an administrator. This section also includes step-by-step procedures to help you successfully perform those tasks.
+This section of the Microsoft Application Virtualization (App-V) Administrator’s Guide includes information about the various types of App-V administration and operating tasks that are typically performed by an administrator. This section also includes step-by-step procedures to help you successfully perform those tasks.
 
 ## Operations Information
 
 
--   [Creating and Managing App-V 5.1 Virtualized Applications](appv-creating-and-managing-virtualized-applications.md)
+-   [Creating and Managing App-V Virtualized Applications](appv-creating-and-managing-virtualized-applications.md)
 
     Describes how to create, modify, and convert virtualized packages.
 
--   [Administering App-V 5.1 Virtual Applications by Using the Management Console](appv-administering-virtual-applications-with-the-management-console.md)
+-   [Administering App-V Virtual Applications by Using the Management Console](appv-administering-virtual-applications-with-the-management-console.md)
 
     Describes how to use the App-V Management console to perform tasks such as sequencing an application, changing a package, using a project template, and using a package accelerator.
 
@@ -30,21 +29,21 @@ This section of the Microsoft Application Virtualization (App-V) 5.1 Administrat
 
     Describes how connection groups enable virtualized applications to communicate with each other in the virtual environment; explains how to create, publish, and delete them; and describes how connection groups can help you better manage your virtualized applications.
 
--   [Deploying App-V 5.1 Packages by Using Electronic Software Distribution (ESD)](appv-deploying-packages-with-electronic-software-distribution-solutions.md)
+-   [Deploying App-V Packages by Using Electronic Software Distribution (ESD)](appv-deploying-packages-with-electronic-software-distribution-solutions.md)
 
     Describes how to deploy App-V packages by using an ESD.
 
--   [Using the App-V 5.1 Client Management Console](appv-using-the-client-management-console.md)
+-   [Using the App-V Client Management Console](appv-using-the-client-management-console.md)
 
     Describes how perform client configuration tasks using the client management console.
 
--   [Migrating to App-V 5.1 from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
+-   [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
 
-    Provides instructions for migrating to App-V 5.1 from a previous version.
+    Provides instructions for migrating to App-V from a previous version.
 
--   [Administering App-V 5.1 by Using PowerShell](appv-administering-appv-with-powershell.md)
+-   [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
 
-    Describes the set of Windows PowerShell cmdlets available for administrators performing various App-V 5.1 server tasks.
+    Describes the set of Windows PowerShell cmdlets available for administrators performing various App-V server tasks.
 
 ## Got a suggestion for App-V?
 
@@ -54,17 +53,17 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Other Resources for App-V Operations
 
 
--   [Microsoft Application Virtualization 5.1 Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
 
--   [Getting Started with App-V 5.1](appv-getting-started.md)
+-   [Getting Started with App-V](appv-getting-started.md)
 
--   [Planning for App-V 5.1](appv-planning-for-appv.md)
+-   [Planning for App-V](appv-planning-for-appv.md)
 
--   [Deploying App-V 5.1](appv-deploying-appv.md)
+-   [Deploying App-V](appv-deploying-appv.md)
 
--   [Troubleshooting App-V 5.1](appv-troubleshooting.md)
+-   [Troubleshooting App-V](appv-troubleshooting.md)
 
--   [Technical Reference for App-V 5.1](appv-technical-reference.md)
+-   [Technical Reference for App-V](appv-technical-reference.md)
 
  
 

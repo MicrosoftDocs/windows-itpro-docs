@@ -1,8 +1,7 @@
 ---
-title: How to Sequence a Package by Using PowerShell
+title: How to Sequence a Package by Using PowerShell (Windows 10)
 description: How to Sequence a Package by Using PowerShell
 author: jamiejdt
-ms.assetid: 6134c6be-937d-4609-a516-92d49154b290
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +12,16 @@ ms.prod: w10
 # How to Sequence a Package by Using PowerShell
 
 
-Use the following procedure to create a new App-V 5.1 package using PowerShell.
+Use the following procedure to create a new App-V package using PowerShell.
 
 **Note**  
-Before you use this procedure you must copy the associated installer files to the computer running the sequencer and you have read and understand the sequencer section of [Planning for the App-V 5.1 Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md).
+Before you use this procedure you must copy the associated installer files to the computer running the sequencer and you have read and understand the sequencer section of [Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md).
 
  
 
 **To create a new virtual application using PowerShell**
 
-1.  Install the App-V 5.1 sequencer. For more information about installing the sequencer see [How to Install the Sequencer](appv-install-the-sequencer.md).
+1.  Install the App-V sequencer. For more information about installing the sequencer see [How to Install the Sequencer](appv-install-the-sequencer.md).
 
 2.  To open a PowerShell console click **Start** and type **PowerShell**. Right-click **Windows PowerShell** and select **Run as Administrator**.
 
@@ -54,14 +53,14 @@ Before you use this procedure you must copy the associated installer files to th
 
     -   TemplateFilePath - specifies the path to a template fileif you want to customize the sequencing process.
 
-    -   FullLoad - specifies that the package must be fully downloaded to the computer running the App-V 5.1 before it can be opened.
+    -   FullLoad - specifies that the package must be fully downloaded to the computer running the App-V before it can be opened.
 
     **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
-[Administering App-V 5.1 by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
 
  
 

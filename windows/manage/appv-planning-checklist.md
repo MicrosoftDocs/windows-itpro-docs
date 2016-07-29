@@ -1,8 +1,7 @@
 ---
-title: App-V 5.1 Planning Checklist
-description: App-V 5.1 Planning Checklist
+title: App-V Planning Checklist (Windows 10)
+description: App-V Planning Checklist
 author: jamiejdt
-ms.assetid: 1e26a861-0612-43a6-972f-375a40a8dcbc
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,13 +9,13 @@ ms.prod: w10
 ---
 
 
-# App-V 5.1 Planning Checklist
+# App-V Planning Checklist
 
 
-This checklist can be used to help you plan for preparing your computing environment for Microsoft Application Virtualization (App-V) 5.1 deployment.
+This checklist can be used to help you plan for preparing your computing environment for Microsoft Application Virtualization (App-V) deployment.
 
 **Note**  
-This checklist outlines the recommended steps and a high-level list of items to consider when planning for an App-V 5.1 deployment. It is recommended that you copy this checklist into a spreadsheet program and customize it for your use.
+This checklist outlines the recommended steps and a high-level list of items to consider when planning for an App-V deployment. It is recommended that you copy this checklist into a spreadsheet program and customize it for your use.
 
  
 
@@ -38,26 +37,26 @@ This checklist outlines the recommended steps and a high-level list of items to 
 <tbody>
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Review the getting started information about App-V 5.1 to gain a basic understanding of the product before beginning deployment planning.</p></td>
-<td align="left"><p>[Getting Started with App-V 5.1](appv-getting-started.md)</p></td>
+<td align="left"><p>Review the getting started information about App-V to gain a basic understanding of the product before beginning deployment planning.</p></td>
+<td align="left"><p>[Getting Started with App-V](appv-getting-started.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for App-V 5.1 1.0 Deployment Prerequisites and prepare your computing environment.</p></td>
-<td align="left"><p>[App-V 5.1 Prerequisites](appv-prerequisites.md)</p></td>
+<td align="left"><p>Plan for App-V 1.0 Deployment Prerequisites and prepare your computing environment.</p></td>
+<td align="left"><p>[App-V Prerequisites](appv-prerequisites.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>If you plan to use the App-V 5.1 management server, plan for the required roles.</p></td>
-<td align="left"><p>[Planning for the App-V 5.1 Server Deployment](appv-planning-for-appv-server-deployment.md)</p></td>
+<td align="left"><p>If you plan to use the App-V management server, plan for the required roles.</p></td>
+<td align="left"><p>[Planning for the App-V Server Deployment](appv-planning-for-appv-server-deployment.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for the App-V 5.1 sequencer and client so you to create and run virtualized applications.</p></td>
-<td align="left"><p>[Planning for the App-V 5.1 Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md)</p></td>
+<td align="left"><p>Plan for the App-V sequencer and client so you to create and run virtualized applications.</p></td>
+<td align="left"><p>[Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -68,8 +67,8 @@ This checklist outlines the recommended steps and a high-level list of items to 
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for running App-V 5.1 clients using in shared content store mode.</p></td>
-<td align="left"><p>[How to Install the App-V 5.1 Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md)</p></td>
+<td align="left"><p>Plan for running App-V clients using in shared content store mode.</p></td>
+<td align="left"><p>[How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 </tbody>
@@ -85,7 +84,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Planning for App-V 5.1](appv-planning-for-appv.md)
+[Planning for App-V](appv-planning-for-appv.md)
 
  
 

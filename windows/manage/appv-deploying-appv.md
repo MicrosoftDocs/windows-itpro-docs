@@ -1,8 +1,7 @@
 ---
-title: Deploying App-V 5.1
-description: Deploying App-V 5.1
+title: Deploying App-V (Windows 10)
+description: Deploying App-V
 author: jamiejdt
-ms.assetid: af8742bf-e24b-402a-bcf4-0f2297f26bc4
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,40 +9,40 @@ ms.prod: w10
 ---
 
 
-# Deploying App-V 5.1
+# Deploying App-V
 
 
-Microsoft Application Virtualization (App-V) 5.1 supports a number of different deployment options. This section of the App-V 5.1 Administrator’s Guide includes information you should consider about the deployment of App-V 5.1 and step-by-step procedures to help you successfully perform the tasks that you must complete at different stages of your deployment.
+Microsoft Application Virtualization (App-V) supports a number of different deployment options. This section of the App-V Administrator’s Guide includes information you should consider about the deployment of App-V and step-by-step procedures to help you successfully perform the tasks that you must complete at different stages of your deployment.
 
-## <a href="" id="---------app-v-5-1-deployment-information"></a> App-V 5.1 Deployment Information
-
-
--   [Deploying the App-V 5.1 Sequencer and Client](appv-deploying-the-appv-sequencer-and-client.md)
-
-    This section describes how to install the App-V 5.1 sequencer which is used to virtualize applications, and the App-V 5.1 client which runs on target computers to facilitate virtualized packages.
-
--   [Deploying the App-V 5.1 Server](appv-deploying-the-appv-server.md)
-
-    This section provides information about installing the App-V 5.1 management, publishing, database and reporting severs.
-
--   [App-V 5.1 Deployment Checklist](appv-deployment-checklist.md)
-
-    This section provides a deployment checklist that can be used to assist with installing App-V 5.1.
-
-## Other Resources for Deploying App-V 5.1
+## <a href="" id="---------app-v-5-1-deployment-information"></a> App-V Deployment Information
 
 
--   [Microsoft Application Virtualization 5.1 Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Deploying the App-V Sequencer and Client](appv-deploying-the-appv-sequencer-and-client.md)
 
--   [Getting Started with App-V 5.1](appv-getting-started.md)
+    This section describes how to install the App-V sequencer which is used to virtualize applications, and the App-V client which runs on target computers to facilitate virtualized packages.
 
--   [Planning for App-V 5.1](appv-planning-for-appv.md)
+-   [Deploying the App-V Server](appv-deploying-the-appv-server.md)
 
--   [Operations for App-V 5.1](appv-operations.md)
+    This section provides information about installing the App-V management, publishing, database and reporting severs.
 
--   [Troubleshooting App-V 5.1](appv-troubleshooting.md)
+-   [App-V Deployment Checklist](appv-deployment-checklist.md)
 
--   [Technical Reference for App-V 5.1](appv-technical-reference.md)
+    This section provides a deployment checklist that can be used to assist with installing App-V.
+
+## Other Resources for Deploying App-V
+
+
+-   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+
+-   [Getting Started with App-V](appv-getting-started.md)
+
+-   [Planning for App-V](appv-planning-for-appv.md)
+
+-   [Operations for App-V](appv-operations.md)
+
+-   [Troubleshooting App-V](appv-troubleshooting.md)
+
+-   [Technical Reference for App-V](appv-technical-reference.md)
 
 ## Got a suggestion for App-V?
 

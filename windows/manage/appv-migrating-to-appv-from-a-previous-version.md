@@ -1,8 +1,7 @@
 ---
-title: Migrating to App-V 5.1 from a Previous Version
-description: Migrating to App-V 5.1 from a Previous Version
+title: Migrating to App-V from a Previous Version (Windows 10)
+description: Migrating to App-V from a Previous Version
 author: jamiejdt
-ms.assetid: e7ee0edc-7544-4c0a-aaca-d922a33bc1bb
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,20 +9,20 @@ ms.prod: w10
 ---
 
 
-# Migrating to App-V 5.1 from a Previous Version
+# Migrating to App-V from a Previous Version
 
 
-With Microsoft Application Virtualization (App-V) 5.1, you can migrate your existing App-V 4.6 or App-V 5.0 infrastructure to the more flexible, integrated, and easier to manage App-V 5.1 infrastructure.
-However, you cannot migrate directly from App-V 4.x to App-V 5.1, you must migrate to App-V 5.0 first. For more information on migrating from App-V 4.x to App-V 5.0, see [Migrating from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)  
+With Microsoft Application Virtualization (App-V), you can migrate your existing App-V 4.6 or App-V 5.0 infrastructure to the more flexible, integrated, and easier to manage App-V infrastructure.
+However, you cannot migrate directly from App-V 4.x to App-V, you must migrate to App-V 5.0 first. For more information on migrating from App-V 4.x to App-V 5.0, see [Migrating from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)  
 
 **Note**  
-App-V 5.1 packages are exactly the same as App-V 5.0 packages. There has been no change in the package format between the versions and therefore, there is no need to convert App-V 5.0 packages to App-V 5.1 packages.
+App-V packages are exactly the same as App-V 5.0 packages. There has been no change in the package format between the versions and therefore, there is no need to convert App-V 5.0 packages to App-V packages.
 
-For more information about the differences between App-V 4.6 and App-V 5.1, see the **Differences between App-4.6 and App-V 5.0 section** of [About App-V 5.0](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50).
+For more information about the differences between App-V 4.6 and App-V, see the **Differences between App-4.6 and App-V 5.0 section** of [About App-V 5.0](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50).
 
  
 
-## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V 5.1 Package Converter
+## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V Package Converter
 
 
 You can now use the package converter to convert App-V 4.6 packages that contain scripts, and registry information and scripts from source .osd files are now included in package converter output.
@@ -37,8 +36,8 @@ You can also use the `–OSDsToIncludeInPackage` parameter with the `ConvertFrom
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">New in App-V 5.1</th>
-<th align="left">Prior to App-V 5.1</th>
+<th align="left">New in App-V</th>
+<th align="left">Prior to App-V</th>
 </tr>
 </thead>
 <tbody>
@@ -140,7 +139,7 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 <li><p>Registry information</p></li>
 <li><p>Scripts</p></li>
 </ul></td>
-<td align="left"><p>Each .osd file is converted to a separate, corresponding .xml file that contains the items listed here in App-V 5.1 deployment configuration format. These items can then be copied from these .xml files and placed in the deployment configuration or user configuration files as desired.</p>
+<td align="left"><p>Each .osd file is converted to a separate, corresponding .xml file that contains the items listed here in App-V deployment configuration format. These items can then be copied from these .xml files and placed in the deployment configuration or user configuration files as desired.</p>
 <p>In this example, there are three .xml files, corresponding with the three .osd files in the source directory. Each .xml file contains the environment variables, shortcuts, file type associations, registry information, and scripts in its corresponding .osd file.</p></td>
 </tr>
 <tr class="even">
@@ -210,9 +209,9 @@ After you convert an existing package you should test the package prior to deplo
 When converting a package check for failing files or shortcuts. Locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
 
 **Note**  
-It is recommended that you use the App-V 5.1 sequencer for converting critical applications or applications that need to take advantage of features. See, [How to Sequence a New Application with App-V 5.1](appv-sequence-a-new-application.md).
+It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See, [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
-If a converted package does not open after you convert it, it is also recommended that you re-sequence the application using the App-V 5.1 sequencer.
+If a converted package does not open after you convert it, it is also recommended that you re-sequence the application using the App-V sequencer.
 
  
 
@@ -240,12 +239,12 @@ The following table displays the recommended method for upgrading clients.
 <td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](https://technet.microsoft.com/en-us/itpro/mdop/appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Install the App-V 5.1 client with co-existence enabled.</p></td>
-<td align="left"><p>[How to Deploy the App-V 4.6.x and the App-V 5.1 Client on the Same Computer](appv-deploy-the-appv-46x-and-the-appv--51-client-on-the-same-computer.md).</p></td>
+<td align="left"><p>Install the App-V client with co-existence enabled.</p></td>
+<td align="left"><p>[How to Deploy the App-V 4.6.x and the App-V Client on the Same Computer](appv-deploy-the-appv-46x-and-the-appv--51-client-on-the-same-computer.md).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Sequence and roll out App-V 5.1 packages. As needed, unpublish App-V 4.6 packages.</p></td>
-<td align="left"><p>[How to Sequence a New Application with App-V 5.1](appv-sequence-a-new-application.md).</p></td>
+<td align="left"><p>Sequence and roll out App-V packages. As needed, unpublish App-V 4.6 packages.</p></td>
+<td align="left"><p>[How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).</p></td>
 </tr>
 </tbody>
 </table>
@@ -257,10 +256,10 @@ You must be running the latest version of App-V 4.6 to use coexistence mode. Ad
 
  
 
-## Migrating the App-V 5.1 Server Full Infrastructure
+## Migrating the App-V Server Full Infrastructure
 
 
-There is no direct method to upgrade to a full App-V 5.1 infrastructure. Use the information in the following section for information about upgrading the App-V server.
+There is no direct method to upgrade to a full App-V infrastructure. Use the information in the following section for information about upgrading the App-V server.
 
 <table>
 <colgroup>
@@ -279,12 +278,12 @@ There is no direct method to upgrade to a full App-V 5.1 infrastructure. Use the
 <td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](https://technet.microsoft.com/en-us/itpro/mdop/appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Deploy App-V 5.1 version of the client.</p></td>
+<td align="left"><p>Deploy App-V version of the client.</p></td>
 <td align="left"><p>[How to Deploy the App-V Client](appv-deploy-the-appv-client.md).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Install App-V 5.1 server.</p></td>
-<td align="left"><p>[How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md).</p></td>
+<td align="left"><p>Install App-V server.</p></td>
+<td align="left"><p>[How to Deploy the App-V Server](appv-deploy-the-appv-server.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Migrate existing packages.</p></td>
@@ -298,17 +297,17 @@ There is no direct method to upgrade to a full App-V 5.1 infrastructure. Use the
 ## Additional Migration tasks
 
 
-You can also perform additional migration tasks such as reconfiguring end points as well as opening a package created using a prior version on a computer running the App-V 5.1 client. The following links provide more information about performing these tasks.
+You can also perform additional migration tasks such as reconfiguring end points as well as opening a package created using a prior version on a computer running the App-V client. The following links provide more information about performing these tasks.
 
-[How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V 5.1 Package for All Users on a Specific Computer](appv-migrate-extension-points-from-an-appv-46-sp2-package-to-a-converted-appv-51-package-for-all-users-on-a-specific-computer.md)
+[How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V Package for All Users on a Specific Computer](appv-migrate-extension-points-from-an-appv-46-sp2-package-to-a-converted-appv-51-package-for-all-users-on-a-specific-computer.md)
 
-[How to Migrate Extension Points From an App-V 4.6 Package to App-V 5.1 for a Specific User](appv-migrate-extension-points-from-an-appv-46-sp2-package-to-appv-51-for-a-specific-user.md)
+[How to Migrate Extension Points From an App-V 4.6 Package to App-V for a Specific User](appv-migrate-extension-points-from-an-appv-46-sp2-package-to-appv-51-for-a-specific-user.md)
 
-[How to Revert Extension Points from an App-V 5.1 Package to an App-V 4.6 Package For All Users on a Specific Computer](appv-revert-extension-points-from-an-appv-51-package-to-an-appv-46-sp2-package-for-all-users-on-a-specific-computer.md)
+[How to Revert Extension Points from an App-V Package to an App-V 4.6 Package For All Users on a Specific Computer](appv-revert-extension-points-from-an-appv-51-package-to-an-appv-46-sp2-package-for-all-users-on-a-specific-computer.md)
 
-[How to Revert Extension Points From an App-V 5.1 Package to an App-V 4.6 Package for a Specific User](appv-revert-extension-points-from-an-appv-51-package-to-an-appv-46-sp2-package-for-a-specific-user.md)
+[How to Revert Extension Points From an App-V Package to an App-V 4.6 Package for a Specific User](appv-revert-extension-points-from-an-appv-51-package-to-an-appv-46-sp2-package-for-a-specific-user.md)
 
-[How to Use an App-V 4.6 Application From an App-V 5.1 Application](appv-use-an-appv-46-sp1-application-from-an-appv-51-application.md)
+[How to Use an App-V 4.6 Application From an App-V Application](appv-use-an-appv-46-sp1-application-from-an-appv-51-application.md)
 
 ## Got a suggestion for App-V?
 
@@ -318,9 +317,9 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Other resources for performing App-V migration tasks
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
-[A simplified Microsoft App-V 5.1 Management Server upgrade procedure](http://go.microsoft.com/fwlink/p/?LinkId=786330)
+[A simplified Microsoft App-V Management Server upgrade procedure](http://go.microsoft.com/fwlink/p/?LinkId=786330)
 
  
 

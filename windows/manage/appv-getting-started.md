@@ -16,7 +16,7 @@ Microsoft Application Virtualization (App-V) enables organizations to deliver Wi
 
 With the release of Windows 10, version 1607, App-V is included with the [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is available with Software Assurance. If you are new to Windows 10 and App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. For information about what you need to know before getting started with App-V, see the [App-V Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md).
 
-If you’re already using App-V 5.1, performing an in-place upgrade to Windows 10 on user devices automatically installs the App-V client and migrates users’ App-V applications and settings. For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-from-an-existing-installation.md).
+If you’re already using App-V, performing an in-place upgrade to Windows 10 on user devices automatically installs the App-V client and migrates users’ App-V applications and settings. For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-from-an-existing-installation.md).
 
 Important: You can migrate your existing App-V installation to Windows 10 from App-V versions 5.0 SP2 and higher only. If you are using an earlier version of App-V, you’ll need to upgrade from that version to App-V 5.0 SP2 before you upgrade to Windows 10.
 

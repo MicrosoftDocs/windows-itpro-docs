@@ -1,8 +1,7 @@
 ---
-title: App-V 5.1 Supported Configurations
-description: App-V 5.1 Supported Configurations
+title: App-V Supported Configurations (Windows 10)
+description: App-V Supported Configurations
 author: jamiejdt
-ms.assetid: 8b8db63b-f71c-4ae9-80e7-a6752334e1f6
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,23 +9,23 @@ ms.prod: w10
 ---
 
 
-# App-V 5.1 Supported Configurations
+# App-V Supported Configurations
 
 
-This topic specifies the requirements to install and run Microsoft Application Virtualization (App-V) 5.1 in your environment.
+This topic specifies the requirements to install and run Microsoft Application Virtualization (App-V) in your environment.
 
 ## App-V Server system requirements
 
 
 This section lists the operating system and hardware requirements for all of the App-V Server components.
 
-### Unsupported App-V 5.1 Server scenarios
+### Unsupported App-V Server scenarios
 
-The App-V 5.1 Server does not support the following scenarios:
+The App-V Server does not support the following scenarios:
 
 -   Deployment to a computer that runs Microsoft Windows Server Core.
 
--   Deployment to a computer that runs a previous version of App-V 5.1 Server components. You can install App-V 5.1 side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the App-V 4.5 Application Virtualization Management Service (HWS) server is not supported.
+-   Deployment to a computer that runs a previous version of App-V Server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the App-V 4.5 Application Virtualization Management Service (HWS) server is not supported.
 
 -   Deployment to a computer that runs Microsoft SQL Server Express edition.
 
@@ -36,7 +35,7 @@ The App-V 5.1 Server does not support the following scenarios:
 
 ### Management server operating system requirements
 
-The following table lists the operating systems that are supported for the App-V 5.1 Management server installation.
+The following table lists the operating systems that are supported for the App-V Management server installation.
 
 **Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](http://go.microsoft.com/fwlink/p/?LinkId=31975). See [Microsoft Support Lifecycle Support Policy FAQ](http://go.microsoft.com/fwlink/p/?LinkId=31976) for more information.
@@ -92,7 +91,7 @@ Deployment of the Management server role to a computer with Remote Desktop Shari
 
 ### Management server database requirements
 
-The following table lists the SQL Server versions that are supported for the App-V 5.1 Management database installation.
+The following table lists the SQL Server versions that are supported for the App-V Management database installation.
 
 <table>
 <colgroup>
@@ -130,7 +129,7 @@ The following table lists the SQL Server versions that are supported for the App
 
 ### Publishing server operating system requirements
 
-The following table lists the operating systems that are supported for the App-V 5.1 Publishing server installation.
+The following table lists the operating systems that are supported for the App-V Publishing server installation.
 
 <table>
 <colgroup>
@@ -178,7 +177,7 @@ App-V adds no additional requirements beyond those of Windows Server.
 
 ### Reporting server operating system requirements
 
-The following table lists the operating systems that are supported for the App-V 5.1 Reporting server installation.
+The following table lists the operating systems that are supported for the App-V Reporting server installation.
 
 <table>
 <colgroup>
@@ -226,7 +225,7 @@ App-V adds no additional requirements beyond those of Windows Server.
 
 ### Reporting server database requirements
 
-The following table lists the SQL Server versions that are supported for the App-V 5.1 Reporting database installation.
+The following table lists the SQL Server versions that are supported for the App-V Reporting database installation.
 
 <table>
 <colgroup>
@@ -265,7 +264,7 @@ The following table lists the SQL Server versions that are supported for the App
 ## <a href="" id="bkmk-client-supp-cfgs"></a>App-V client system requirements
 
 
-The following table lists the operating systems that are supported for the App-V 5.1 client installation.
+The following table lists the operating systems that are supported for the App-V client installation.
 
 <table>
 <colgroup>
@@ -312,11 +311,11 @@ The following App-V client installation scenarios are not supported, except as n
 
 -   Computers that run App-V 4.6 SP1 or earlier versions
 
--   The App-V 5.1 Remote Desktop services client is supported only for RDS-enabled servers
+-   The App-V Remote Desktop services client is supported only for RDS-enabled servers
 
 ### <a href="" id="app-v-client-hardware-requirements-"></a>App-V client hardware requirements
 
-The following list displays the supported hardware configuration for the App-V 5.1 client installation.
+The following list displays the supported hardware configuration for the App-V client installation.
 
 -   Processor— 1.4 GHz or faster 32-bit (x86) or 64-bit (x64) processor
 
@@ -327,7 +326,7 @@ The following list displays the supported hardware configuration for the App-V 5
 ## Remote Desktop Services client system requirements
 
 
-The following table lists the operating systems that are supported for App-V 5.1 Remote Desktop Services (RDS) client installation.
+The following table lists the operating systems that are supported for App-V Remote Desktop Services (RDS) client installation.
 
 <table>
 <colgroup>
@@ -376,7 +375,7 @@ App-V adds no additional requirements beyond those of Windows Server.
 ## Sequencer system requirements
 
 
-The following table lists the operating systems that are supported for the App-V 5.1 Sequencer installation.
+The following table lists the operating systems that are supported for the App-V Sequencer installation.
 
 <table>
 <colgroup>
@@ -608,7 +607,7 @@ The following App-V and System Center Configuration Manager version matrix shows
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>App-V 5.1</p></td>
+<td align="left"><p>App-V</p></td>
 <td align="left"><p>MSI-Wrapper Only</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>2012 SP1 CU4</p></td>
@@ -634,7 +633,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
 
-[App-V 5.1 Prerequisites](appv-prerequisites.md)
+[App-V Prerequisites](appv-prerequisites.md)
 
  
 

@@ -1,8 +1,7 @@
 ---
-title: Administering App-V 5.1 Virtual Applications by Using the Management Console
-description: Administering App-V 5.1 Virtual Applications by Using the Management Console
+title: Administering App-V Virtual Applications by Using the Management Console (Windows 10)
+description: Administering App-V Virtual Applications by Using the Management Console
 author: jamiejdt
-ms.assetid: a4d078aa-ec54-4fa4-9463-bfb3b971d724
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,10 +9,10 @@ ms.prod: w10
 ---
 
 
-# Administering App-V 5.1 Virtual Applications by Using the Management Console
+# Administering App-V Virtual Applications by Using the Management Console
 
 
-Use the Microsoft Application Virtualization (App-V) 5.1 management server to manage packages, connection groups, and package access in your environment. The server publishes application icons, shortcuts, and file type associations to authorized computers that run the App-V 5.1 client. One or more management servers typically share a common data store for configuration and package information.
+Use the Microsoft Application Virtualization (App-V) management server to manage packages, connection groups, and package access in your environment. The server publishes application icons, shortcuts, and file type associations to authorized computers that run the App-V client. One or more management servers typically share a common data store for configuration and package information.
 
 The management server uses Active Directory Domain Services (AD DS) groups to manage user authorization and has SQL Server installed to manage the database and data store.
 
@@ -21,14 +20,14 @@ Because the management servers stream applications to end users on demand, these
 
 -   Management Server – Use the management server to manage packages and connection groups.
 
--   Publishing Server – Use the publishing server to deploy packages to computers that run the App-V 5.1 client.
+-   Publishing Server – Use the publishing server to deploy packages to computers that run the App-V client.
 
 -   Management Database - Use the management database to manage the package access and to publish the server’s synchronization with the management server.
 
 ## Management Console tasks
 
 
-The most common tasks that you can perform with the App-V 5.1 Management console are:
+The most common tasks that you can perform with the App-V Management console are:
 
 -   [How to Connect to the Management Console](appv-connect-to-the-management-console.md)
 
@@ -44,7 +43,7 @@ The most common tasks that you can perform with the App-V 5.1 Management console
 
 -   [How to Register and Unregister a Publishing Server by Using the Management Console](appv-register-and-unregister-a-publishing-server-with-the-management-console.md)
 
--   [How to Create a Custom Configuration File by Using the App-V 5.1 Management Console](appv-create-a-custom-configuration-file-with-the-management-console.md)
+-   [How to Create a Custom Configuration File by Using the App-V Management Console](appv-create-a-custom-configuration-file-with-the-management-console.md)
 
 -   [How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console](appv-transfer-access-and-configurations-to-another-version-of-a-package-with-the-management-console.md)
 
@@ -52,7 +51,7 @@ The most common tasks that you can perform with the App-V 5.1 Management console
 
 -   [How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console](appv-view-and-configure-applications-and-default-virtual-application-extensions-with-the-management-console.md)
 
-The main elements of the App-V 5.1 Management Console are:
+The main elements of the App-V Management Console are:
 
 <table>
 <colgroup>
@@ -80,7 +79,7 @@ The main elements of the App-V 5.1 Management Console are:
 </tr>
 <tr class="even">
 <td align="left"><p>Administrators tab</p></td>
-<td align="left"><p>Use the <strong>ADMINISTRATORS</strong> tab to register, add, or remove administrators in your App-V 5.1 environment.</p></td>
+<td align="left"><p>Use the <strong>ADMINISTRATORS</strong> tab to register, add, or remove administrators in your App-V environment.</p></td>
 </tr>
 </tbody>
 </table>
@@ -97,12 +96,12 @@ JavaScript must be enabled on the browser that opens the Web Management Console.
 
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
-## <a href="" id="other-resources-for-this-app-v-5-1-deployment-"></a>Other resources for this App-V 5.1 deployment
+## <a href="" id="other-resources-for-this-app-v-5-1-deployment-"></a>Other resources for this App-V deployment
 
 
--   [Microsoft Application Virtualization 5.1 Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
 
--   [Operations for App-V 5.1](appv-operations.md)
+-   [Operations for App-V](appv-operations.md)
 
  
 

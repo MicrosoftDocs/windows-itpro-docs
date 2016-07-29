@@ -1,8 +1,7 @@
 ---
-title: How to install the Reporting Server on a Standalone Computer and Connect it to the Database
+title: How to install the Reporting Server on a Standalone Computer and Connect it to the Database (Windows 10)
 description: How to install the Reporting Server on a Standalone Computer and Connect it to the Database
 author: jamiejdt
-ms.assetid: 11f07750-4045-4c8d-a583-7d70c9e9aa7b
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,13 +15,13 @@ ms.prod: w10
 Use the following procedure to install the reporting server on a standalone computer and connect it to the database.
 
 **Important**  
-Before performing the following procedure you should read and understand [About App-V 5.1 Reporting](appv-reporting.md).
+Before performing the following procedure you should read and understand [About App-V Reporting](appv-reporting.md).
 
  
 
 **To install the reporting server on a standalone computer and connect it to the database**
 
-1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on. To start the App-V 5.1 server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
 2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
 
@@ -47,7 +46,7 @@ Before performing the following procedure you should read and understand [About 
 
     -   Specify the Website Name that you want to use for the Reporting Service. Leave the default unchanged if you do not have a custom name.
 
-    -   For the **Port binding**, specify a unique port number that will be used by App-V 5.1, for example **55555**. You should also ensure that the port specified is not being used by another website.
+    -   For the **Port binding**, specify a unique port number that will be used by App-V, for example **55555**. You should also ensure that the port specified is not being used by another website.
 
 8.  Click **Install**.
 
@@ -56,11 +55,11 @@ Before performing the following procedure you should read and understand [About 
 ## Related topics
 
 
-[About App-V 5.1 Reporting](appv-reporting.md)
+[About App-V Reporting](appv-reporting.md)
 
-[Deploying App-V 5.1](appv-deploying-appv.md)
+[Deploying App-V](appv-deploying-appv.md)
 
-[How to Enable Reporting on the App-V 5.1 Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)
+[How to Enable Reporting on the App-V Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)
 
  
 

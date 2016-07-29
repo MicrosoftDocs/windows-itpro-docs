@@ -1,8 +1,7 @@
 ---
-title: How to Create a Virtual Application Package Using an App-V Package Accelerator
+title: How to Create a Virtual Application Package Using an App-V Package Accelerator (Windows 10)
 description: How to Create a Virtual Application Package Using an App-V Package Accelerator
 author: jamiejdt
-ms.assetid: eae1e4f8-f14f-4bc8-9867-052561c37297
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,20 +13,20 @@ ms.prod: w10
 
 
 **Important**  
-The App-V 5.1 Sequencer does not grant any license rights to the software application that you use to create the Package Accelerator. You must abide by all end user license terms for the application that you use. It is your responsibility to make sure that the software application’s license terms allow you to create a Package Accelerator with the App-V 5.1 Sequencer.
+The App-V Sequencer does not grant any license rights to the software application that you use to create the Package Accelerator. You must abide by all end user license terms for the application that you use. It is your responsibility to make sure that the software application’s license terms allow you to create a Package Accelerator with the App-V Sequencer.
 
  
 
-Use the following procedure to create a virtual application package with the App-V 5.1 Package Accelerator.
+Use the following procedure to create a virtual application package with the App-V Package Accelerator.
 
 **Note**  
-Before you start this procedure, copy the required Package Accelerator locally to the computer that runs the App-V 5.1 Sequencer. You should also copy all required installation files for the package to a local directory on the computer that runs the Sequencer. This is the directory that you have to specify in step 5 of this procedure.
+Before you start this procedure, copy the required Package Accelerator locally to the computer that runs the App-V Sequencer. You should also copy all required installation files for the package to a local directory on the computer that runs the Sequencer. This is the directory that you have to specify in step 5 of this procedure.
 
  
 
-**To create a virtual application package with an App-V 5.1 Package Accelerator**
+**To create a virtual application package with an App-V Package Accelerator**
 
-1.  To start the App-V Sequencer, on the computer that runs the App-V 5.1 Sequencer, click **Start** / **All Programs** / **Microsoft Application Virtualization** / **Microsoft Application Virtualization Sequencer**.
+1.  To start the App-V Sequencer, on the computer that runs the App-V Sequencer, click **Start** / **All Programs** / **Microsoft Application Virtualization** / **Microsoft Application Virtualization Sequencer**.
 
 2.  To start the **Create New Package Wizard**, click **Create a New Virtual Application Package**. To create the package, select the **Create Package using a Package Accelerator** check box, and then click **Next**.
 
@@ -90,7 +89,7 @@ Before you start this procedure, copy the required Package Accelerator locally t
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

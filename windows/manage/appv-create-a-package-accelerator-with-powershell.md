@@ -1,8 +1,7 @@
 ---
-title: How to Create a Package Accelerator by Using PowerShell
+title: How to Create a Package Accelerator by Using PowerShell (Windows 10)
 description: How to Create a Package Accelerator by Using PowerShell
 author: jamiejdt
-ms.assetid: 0cb98394-4477-4193-8c5f-1c1773c7263a
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,11 +12,11 @@ ms.prod: w10
 # How to Create a Package Accelerator by Using PowerShell
 
 
-App-V 5.1 package accelerators automatically sequence large, complex applications. Additionally, when you apply an App-V 5.1 package accelerator, you are not always required to manually install an application to create the virtualized package.
+App-V package accelerators automatically sequence large, complex applications. Additionally, when you apply an App-V package accelerator, you are not always required to manually install an application to create the virtualized package.
 
 **To create a package accelerator**
 
-1.  Install the App-V 5.1 sequencer. For more information about installing the sequencer see [How to Install the Sequencer](appv-install-the-sequencer.md).
+1.  Install the App-V sequencer. For more information about installing the sequencer see [How to Install the Sequencer](appv-install-the-sequencer.md).
 
 2.  To open a PowerShell console click **Start** and type **PowerShell**. Right-click **Windows PowerShell** and select **Run as Administrator**. Use the **New-AppvPackageAccelerator** cmdlet.
 
@@ -44,7 +43,7 @@ App-V 5.1 package accelerators automatically sequence large, complex application
 ## Related topics
 
 
-[Administering App-V 5.1 by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
 
  
 

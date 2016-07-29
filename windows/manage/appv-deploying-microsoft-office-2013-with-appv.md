@@ -1,8 +1,7 @@
 ---
-title: Deploying Microsoft Office 2013 by Using App-V
+title: Deploying Microsoft Office 2013 by Using App-V (Windows 10)
 description: Deploying Microsoft Office 2013 by Using App-V
 author: jamiejdt
-ms.assetid: 9a7be05e-2a7a-4874-af25-09c0f5037876
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # Deploying Microsoft Office 2013 by Using App-V
 
 
-Use the information in this article to use Microsoft Application Virtualization (App-V) 5.1, or later versions, to deliver Microsoft Office 2013 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md). To successfully deploy Office 2013 with App-V, you need to be familiar with Office 2013 and App-V.
+Use the information in this article to use Microsoft Application Virtualization (App-V), or later versions, to deliver Microsoft Office 2013 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md). To successfully deploy Office 2013 with App-V, you need to be familiar with Office 2013 and App-V.
 
 This topic contains the following sections:
 
@@ -21,7 +20,7 @@ This topic contains the following sections:
 
 -   [Creating an Office 2013 package for App-V with the Office Deployment Tool](#bkmk-create-office-pkg)
 
--   [Publishing the Office package for App-V 5.1](#bkmk-pub-pkg-office)
+-   [Publishing the Office package for App-V](#bkmk-pub-pkg-office)
 
 -   [Customizing and managing Office App-V packages](#bkmk-custmz-manage-office-pkgs)
 
@@ -83,7 +82,7 @@ Before you deploy Office by using App-V, review the following requirements.
 <td align="left"><p>Packaging</p></td>
 <td align="left"><ul>
 <li><p>All of the Office applications that you want to deploy to users must be in a single package.</p></li>
-<li><p>In App-V 5.1 and later, you must use the Office Deployment Tool to create packages. You cannot use the Sequencer.</p></li>
+<li><p>In App-V and later, you must use the Office Deployment Tool to create packages. You cannot use the Sequencer.</p></li>
 <li><p>If you are deploying Microsoft Visio 2013 and Microsoft Project 2013 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2013 and Project 2013 with Office](#bkmk-deploy-visio-project).</p></li>
 </ul></td>
 </tr>
@@ -152,10 +151,10 @@ The following table describes the recommended methods for excluding specific Off
 ## <a href="" id="bkmk-create-office-pkg"></a>Creating an Office 2013 package for App-V with the Office Deployment Tool
 
 
-Complete the following steps to create an Office 2013 package for App-V 5.1 or later.
+Complete the following steps to create an Office 2013 package for App-V or later.
 
 **Important**  
-In App-V 5.1 and later, you must the Office Deployment Tool to create a package. You cannot use the Sequencer to create packages.
+In App-V and later, you must the Office Deployment Tool to create a package. You cannot use the Sequencer to create packages.
 
  
 
@@ -564,7 +563,7 @@ After you download the Office 2013 applications through the Office Deployment To
 
     2.  Start a few Office 2013 applications, such as Excel or Word, to ensure that your package is working as expected.
 
-## <a href="" id="bkmk-pub-pkg-office"></a>Publishing the Office package for App-V 5.1
+## <a href="" id="bkmk-pub-pkg-office"></a>Publishing the Office package for App-V
 
 
 Use the following information to publish an Office package.
@@ -642,9 +641,9 @@ Use the steps in this section to enable Office plug-ins with your Office package
 
 1.  Add a Connection Group through App-V Server, System Center Configuration Manager, or a PowerShell cmdlet.
 
-2.  Sequence your plug-ins using the App-V 5.1 Sequencer. Ensure that Office 2013 is installed on the computer being used to sequence the plug-in. It is recommended you use Office 365 ProPlus(non-virtual) on the sequencing computer when you sequence Office 2013 plug-ins.
+2.  Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2013 is installed on the computer being used to sequence the plug-in. It is recommended you use Office 365 ProPlus(non-virtual) on the sequencing computer when you sequence Office 2013 plug-ins.
 
-3.  Create an App-V 5.1 package that includes the desired plug-ins.
+3.  Create an App-V package that includes the desired plug-ins.
 
 4.  Add a Connection Group through App-V server, System Center Configuration Manager, or a PowerShell cmdlet.
 
@@ -879,7 +878,7 @@ The following table describes the requirements and options for deploying Visio 2
 
 **Dynamic Configuration**
 
-[About App-V 5.1 Dynamic Configuration](appv-dynamic-configuration.md)
+[About App-V Dynamic Configuration](appv-dynamic-configuration.md)
 
 ## Got a suggestion for App-V?
 

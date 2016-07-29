@@ -10,7 +10,7 @@ ms.prod: w10
 
 # Upgrading to App-V for Windows 10 from an existing installation
 
-If you’re already using App-V 5.1 and you’re planning to upgrade user devices to Windows 10, you need to make only the following few adjustments to your existing environment to start using App-V for Windows 10. 
+If you’re already using App-V and you’re planning to upgrade user devices to Windows 10, you need to make only the following few adjustments to your existing environment to start using App-V for Windows 10. 
 
 1. [Upgrade user devices to Windows 10](#upgrade-user-devices-to-windows-10). Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings.
 

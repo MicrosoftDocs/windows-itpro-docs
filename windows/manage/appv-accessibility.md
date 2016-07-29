@@ -1,8 +1,7 @@
 ---
-title: Accessibility for App-V 5.1
-description: Accessibility for App-V 5.1
+title: Accessibility for App-V (Windows 10)
+description: Accessibility for App-V
 author: jamiejdt
-ms.assetid: ef3f7742-f2e9-4748-ad60-74e0961b1bd9
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,15 +9,15 @@ ms.prod: w10
 ---
 
 
-# Accessibility for App-V 5.1
+# Accessibility for App-V
 
 
 Microsoft is committed to making its products and services easier for everyone to use. This section provides information about features and services that make this product and its corresponding documentation more accessible for people with disabilities.
 
-## Keyboard Shortcuts for the App-V 5.1 Management Server
+## Keyboard Shortcuts for the App-V Management Server
 
 
-Following are the keyboard Shortcuts for the App-V 5.1 Management Server:
+Following are the keyboard Shortcuts for the App-V Management Server:
 
 <table>
 <colgroup>
@@ -41,7 +40,7 @@ Following are the keyboard Shortcuts for the App-V 5.1 Management Server:
 <td align="left"><p>Enter</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Refresh the current page of the App-V 5.1 client console.</p></td>
+<td align="left"><p>Refresh the current page of the App-V client console.</p></td>
 <td align="left"><p>F5</p></td>
 </tr>
 </tbody>
@@ -49,10 +48,10 @@ Following are the keyboard Shortcuts for the App-V 5.1 Management Server:
 
  
 
-## Keyboard Shortcuts for the App-V 5.1 Sequencer
+## Keyboard Shortcuts for the App-V Sequencer
 
 
-Following are the keyboard shortcuts for the Virtual Registry tab in the package editor in the App-V 5.1 Sequencer:
+Following are the keyboard shortcuts for the Virtual Registry tab in the package editor in the App-V Sequencer:
 
 <table>
 <colgroup>
@@ -82,7 +81,7 @@ Following are the keyboard shortcuts for the Virtual Registry tab in the package
 ### Access Any Command with a Few Keystrokes
 
 **Important**  
-The information in this section only applies to the App-V 5.1 sequencer. For specific information about the App-V 5.1 server, see the Keyboard Shortcuts for the App-V 5.1 Management Server section of this document.
+The information in this section only applies to the App-V sequencer. For specific information about the App-V server, see the Keyboard Shortcuts for the App-V Management Server section of this document.
 
  
 
@@ -158,7 +157,7 @@ For more information about how accessible technology for computers helps to impr
 ## Related topics
 
 
-[Getting Started with App-V 5.1](appv-getting-started.md)
+[Getting Started with App-V](appv-getting-started.md)
 
  
 

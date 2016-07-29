@@ -1,8 +1,7 @@
 ---
-title: Viewing App-V Server Publishing Metadata
+title: Viewing App-V Server Publishing Metadata (Windows 10)
 description: Viewing App-V Server Publishing Metadata
 author: jamiejdt
-ms.assetid: d5fa9eb5-647c-478d-8a4d-0ecda018bce6
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +16,7 @@ Use this procedure to view publishing metadata, which can help you resolve publi
 
 This article contains the following information:
 
--   [App-V 5.1 requirements for viewing publishing metadata](#bkmk-51-reqs-pub-meta)
+-   [App-V requirements for viewing publishing metadata](#bkmk-51-reqs-pub-meta)
 
 -   [Syntax to use for viewing publishing metadata](#bkmk-syntax-view-pub-meta)
 
@@ -25,10 +24,10 @@ This article contains the following information:
 
 -   [Definition of publishing metadata](#bkmk-whatis-pub-metadata)
 
-## <a href="" id="bkmk-51-reqs-pub-meta"></a>App-V 5.1 requirements for viewing publishing metadata
+## <a href="" id="bkmk-51-reqs-pub-meta"></a>App-V requirements for viewing publishing metadata
 
 
-In App-V 5.1, you must provide the following values in the address when you query the App-V Publishing server for metadata:
+In App-V, you must provide the following values in the address when you query the App-V Publishing server for metadata:
 
 <table>
 <colgroup>
@@ -78,7 +77,7 @@ The following table provides the syntax and query examples.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>App-V 5.0 SP3 and App-V 5.1</p></td>
+<td align="left"><p>App-V 5.0 SP3 and App-V</p></td>
 <td align="left"><p><code>http://&lt;PubServer&gt;:&lt;Publishing Port#&gt;/?ClientVersion=&lt;AppvClientVersion&gt;&amp;ClientOS=&lt;OSStringValue&gt;</code></p></td>
 <td align="left"><table>
 <colgroup>
@@ -124,12 +123,12 @@ The following table provides the syntax and query examples.
 <td align="left"><p><code>http://&lt;PubServer&gt;:&lt;Publishing Port#&gt;/ </code></p>
 <div class="alert">
 <strong>Note</strong>  
-<p><strong>ClientVersion</strong> and <strong>ClientOS</strong> are supported only in App-V 5.0 SP3 and App-V 5.1.</p>
+<p><strong>ClientVersion</strong> and <strong>ClientOS</strong> are supported only in App-V 5.0 SP3 and App-V.</p>
 </div>
 <div>
  
 </div></td>
-<td align="left"><p>See the information for App-V 5.0 SP3 and App-V 5.1.</p></td>
+<td align="left"><p>See the information for App-V 5.0 SP3 and App-V.</p></td>
 <td align="left"><p><code>http://pubsvr01:2718</code></p>
 <p>In the example, A Windows Server 2012 R2 named “pubsvr01” hosts the Management and Publishing services.</p></td>
 </tr>
@@ -253,7 +252,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Technical Reference for App-V 5.1](appv-technical-reference.md)
+[Technical Reference for App-V](appv-technical-reference.md)
 
  
 

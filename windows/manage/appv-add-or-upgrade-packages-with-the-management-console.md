@@ -1,8 +1,7 @@
 ---
-title: How to Add or Upgrade Packages by Using the Management Console
+title: How to Add or Upgrade Packages by Using the Management Console (Windows 10)
 description: How to Add or Upgrade Packages by Using the Management Console
 author: jamiejdt
-ms.assetid: 62417b63-06b2-437c-8584-523e1dea97c3
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +12,7 @@ ms.prod: w10
 # How to Add or Upgrade Packages by Using the Management Console
 
 
-You can the following procedure to add or upgrade a package to the App-V 5.1 Management Console. To upgrade a package that already exists in the Management Console, use the following steps and import the upgraded package using the same package **Name**.
+You can the following procedure to add or upgrade a package to the App-V Management Console. To upgrade a package that already exists in the Management Console, use the following steps and import the upgraded package using the same package **Name**.
 
 **To add a package to the Management Console**
 
@@ -43,7 +42,7 @@ You can the following procedure to add or upgrade a package to the App-V 5.1 Man
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

@@ -1,8 +1,7 @@
 ---
-title: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
+title: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services (Windows 10)
 description: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
 author: jamiejdt
-ms.assetid: 2a67402e-3119-40ea-a247-24d166af1ced
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,7 +21,7 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 **To install the management database and the management server on separate computers**
 
-1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on. To start the App-V 5.1 server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
 2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
 
@@ -51,7 +50,7 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 **To install the reporting database and the reporting server on separate computers**
 
-1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on. To start the App-V 5.1 server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
 2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
 
@@ -78,19 +77,19 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 8.  To start the installation, click **Install**.
 
-**To install the management and reporting databases using App-V 5.1 database scripts**
+**To install the management and reporting databases using App-V database scripts**
 
-1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on.
+1.  Copy the App-V server installation files to the computer on which you want to install it on.
 
-2.  To extract the App-V 5.1 database scripts, open a command prompt and specify the location where the installation files are saved and run the following command:
+2.  To extract the App-V database scripts, open a command prompt and specify the location where the installation files are saved and run the following command:
 
     **appv\_server\_setup.exe** **/LAYOUT** **/LAYOUTDIR=”InstallationExtractionLocation”**.
 
-3.  After the extraction has been completed, to access the App-V 5.1 database scripts and instructions readme file:
+3.  After the extraction has been completed, to access the App-V database scripts and instructions readme file:
 
-    -   The App-V 5.1 Management Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Management Database**.
+    -   The App-V Management Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Management Database**.
 
-    -   The App-V 5.1 Reporting Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Reporting Database**.
+    -   The App-V Reporting Database scripts and instructions readme are located in the following folder: **InstallationExtractionLocation** \\ **Database Scripts** \\ **Reporting Database**.
 
 4.  For each database, copy the scripts to a share and modify them following the instructions in the readme file.
 
@@ -106,7 +105,7 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 ## Related topics
 
 
-[Deploying App-V 5.1](appv-deploying-appv.md)
+[Deploying App-V](appv-deploying-appv.md)
 
  
 

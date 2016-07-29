@@ -1,8 +1,7 @@
 ---
-title: Performance Guidance for Application Virtualization 5.1
-description: Performance Guidance for Application Virtualization 5.1
+title: Performance Guidance for Application Virtualization (Windows 10)
+description: Performance Guidance for Application Virtualization
 author: jamiejdt
-ms.assetid: 5f2643c7-5cf7-4a29-adb7-45bf9f5b0364
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,16 +9,16 @@ ms.prod: w10
 ---
 
 
-# Performance Guidance for Application Virtualization 5.1
+# Performance Guidance for Application Virtualization
 
 
-Learn how to configure App-V 5.1 for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
+Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 
 Implementing multiple methods can help you improve the end-user experience. However, your environment may not support all methods.
 
 You should read and understand the following information before reading this document.
 
--   [Microsoft Application Virtualization 5.1 Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
 
 -   [App-V 5 SP2 Application Publishing and Client Interaction](http://go.microsoft.com/fwlink/?LinkId=395206)
 
@@ -30,14 +29,14 @@ Some terms used in this document may have different meanings depending on extern
 
  
 
-Finally, this document will provide you with the information to configure the computer running App-V 5.1 client and the environment for optimal performance. Optimize your virtual application packages for performance using the sequencer, and to understand how to use User Experience Virtualization (UE-V) or other user environment management technologies to provide the optimal user experience with App-V 5.1 in both Remote Desktop Services (RDS) and non-persistent virtual desktop infrastructure (VDI).
+Finally, this document will provide you with the information to configure the computer running App-V client and the environment for optimal performance. Optimize your virtual application packages for performance using the sequencer, and to understand how to use User Experience Virtualization (UE-V) or other user environment management technologies to provide the optimal user experience with App-V in both Remote Desktop Services (RDS) and non-persistent virtual desktop infrastructure (VDI).
 
 To help determine what information is relevant to your environment you should review each section’s brief overview and applicability checklist.
 
-## <a href="" id="---------app-v-5-1-in-stateful--non-persistent-deployments"></a> App-V 5.1 in stateful\* non-persistent deployments
+## <a href="" id="---------app-v-5-1-in-stateful--non-persistent-deployments"></a> App-V in stateful\* non-persistent deployments
 
 
-This section provides information about an approach that helps ensure a user will have access to all virtual applications within seconds after logging in. This is achieved by uniquely addressing the often long-running App-V 5.1 publishing refresh. As you will discover the basis of the approach, the fastest publishing refresh, is one that doesn’t have to actually do anything. A number of conditions must be met and steps followed to provide the optimal user experience.
+This section provides information about an approach that helps ensure a user will have access to all virtual applications within seconds after logging in. This is achieved by uniquely addressing the often long-running App-V publishing refresh. As you will discover the basis of the approach, the fastest publishing refresh, is one that doesn’t have to actually do anything. A number of conditions must be met and steps followed to provide the optimal user experience.
 
 Use the information in the following section for more information:
 
@@ -172,9 +171,9 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p></p>
 <ul>
-<li><p>Install the App-V 5.1 client version of the client.</p></li>
+<li><p>Install the App-V client version of the client.</p></li>
 <li><p>Install UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [How to Install the App-V 5.1 Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all user- and global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all user- and global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -192,9 +191,9 @@ The following table displays the required steps to prepare the base image and th
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Install the App-V 5.1 client version of the client.</p></li>
+<li><p>Install the App-V client version of the client.</p></li>
 <li><p>Install UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [How to Install the App-V 5.1 Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -292,7 +291,7 @@ The expectation in a stateful environment is that a UPM solution is implemented 
 
 The requirements for the UPM solution are as follows.
 
-To enable an optimized login experience, for example the App-V 5.1 approach for the user, the solution must be capable of:
+To enable an optimized login experience, for example the App-V approach for the user, the solution must be capable of:
 
 -   Persisting the below user integrations as part of the user profile/persona.
 
@@ -309,9 +308,9 @@ To enable an optimized login experience, for example the App-V 5.1 approach for 
 
 -   Capturing changes to the locations, which constitute the user integrations, prior to session logoff.
 
-With App-V 5.1 when you add a publishing server (**Add-AppvPublishingServer**) you can configure synchronization, for example refresh during log on and/or after a specified refresh interval. In both cases a scheduled task is created.
+With App-V when you add a publishing server (**Add-AppvPublishingServer**) you can configure synchronization, for example refresh during log on and/or after a specified refresh interval. In both cases a scheduled task is created.
 
-In previous versions of App-V 5.1, both scheduled tasks were configured using a VBScript that would initiate the user and global refresh. With Hotfix Package 4 for Application Virtualization 5.0 SP2 the user refresh on log on was initiated by **SyncAppvPublishingServer.exe**. This change was introduced to provide UPM solutions a trigger process. This process delays the publish /refresh to allow the UPM solution to apply the user integrations. It will exit once the publishing/refresh is complete.
+In previous versions of App-V, both scheduled tasks were configured using a VBScript that would initiate the user and global refresh. With Hotfix Package 4 for Application Virtualization 5.0 SP2 the user refresh on log on was initiated by **SyncAppvPublishingServer.exe**. This change was introduced to provide UPM solutions a trigger process. This process delays the publish /refresh to allow the UPM solution to apply the user integrations. It will exit once the publishing/refresh is complete.
 
 **User Integrations**
 
@@ -613,7 +612,7 @@ When publishing a virtual application package, the App-V Client will detect if a
 <tbody>
 <tr class="odd">
 <td align="left"><p>Selectively Employ Dynamic Configuration files</p></td>
-<td align="left"><p>The App-V 5.1 client must parse and process these Dynamic Configuration files.</p>
+<td align="left"><p>The App-V client must parse and process these Dynamic Configuration files.</p>
 <p>Be conscious of size and complexity (script execution, VREG inclusions/exclusions) of the file.</p>
 <p>Numerous virtual application packages may already have User- or computer–specific dynamic configurations files.</p></td>
 <td align="left"><p>Publishing times will improve if these files are used selectively or not at all.</p></td>
@@ -709,10 +708,10 @@ Fonts
 
 &lt;!--
 
-## <a href="" id="bkmk-terms1"></a> App-V 5.1 Performance Guidance Terminology
+## <a href="" id="bkmk-terms1"></a> App-V Performance Guidance Terminology
 
 
-The following terms are used when describing concepts and actions related to App-V 5.1 performance optimization.
+The following terms are used when describing concepts and actions related to App-V performance optimization.
 
 -   **Complexity** – Refers to the one or more package characteristics that may impact performance during pre-configure (**Add-AppvClientPackage**) or integration (**Publish-AppvClientPackage**). Some example characteristics are: manifest size, number of virtual fonts, number of files.
 
@@ -730,11 +729,11 @@ The following terms are used when describing concepts and actions related to App
 
 -   **Trigger** – (or Native Action Triggers). UPM uses these types of triggers to initiate monitoring or synchronization operations.
 
--   **User Experience** - In the context of App-V 5.1, the user experience, quantitatively, is the sum of the following parts:
+-   **User Experience** - In the context of App-V, the user experience, quantitatively, is the sum of the following parts:
 
     -   From the point that users initiate a log-in to when they are able to manipulate the desktop.
 
-    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in PowerShell terms, sync) when using the App-V 5.1 full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage Powershell** commands are initiated.
+    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage Powershell** commands are initiated.
 
     -   From start to completion of the publishing refresh. In standalone instances, this is the first to last virtual application published.
 
@@ -750,7 +749,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Microsoft Application Virtualization 5.1 Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+[Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
 
  
 

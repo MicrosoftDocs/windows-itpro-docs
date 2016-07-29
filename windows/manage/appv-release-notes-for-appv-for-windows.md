@@ -1,8 +1,7 @@
 ---
-title: Release Notes for App-V 5.1
-description: Release Notes for App-V 5.1
+title: Release Notes for App-V (Windows 10)
+description: Release Notes for App-V
 author: jamiejdt
-ms.assetid: 62c5be3b-0a46-4512-93ed-97c23184f343
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,37 +9,37 @@ ms.prod: w10
 ---
 
 
-# Release Notes for App-V 5.1
+# Release Notes for App-V
 
 
-The following are known issues in Microsoft Application Virtualization (App-V) 5.1.
+The following are known issues in Microsoft Application Virtualization (App-V).
 
-## Error occurs during publishing refresh between App-V 5.0 SP3 Management Server and App-V 5.1 Client on Windows 10
-
-
-An error is generated during publishing refresh when synchronizing packages from the App-V 5.0 SP3 management server to an App-V 5.1 client on Windows 10 . This error occurs because the App-V 5.0 SP3 server does not understand the Windows 10 operating system that is specified in the publishing URL. The issue is fixed for App-V 5.1 publishing server, but is not backported to versions of App-V 5.0 SP3 or earlier.
-
-**Workaround**: Upgrade the App-V 5.0 Management server to the App-V 5.1 Management server for Windows 10 Clients.
-
-## Custom configurations do not get applied for packages that will be published globally if they are set using the App-V 5.1 Server
+## Error occurs during publishing refresh between App-V 5.0 SP3 Management Server and App-V Client on Windows 10
 
 
-If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration will not be applied to those machines. The App-V 5.1 Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages will not have access to this custom configuration.
+An error is generated during publishing refresh when synchronizing packages from the App-V 5.0 SP3 management server to an App-V client on Windows 10 . This error occurs because the App-V 5.0 SP3 server does not understand the Windows 10 operating system that is specified in the publishing URL. The issue is fixed for App-V publishing server, but is not backported to versions of App-V 5.0 SP3 or earlier.
+
+**Workaround**: Upgrade the App-V 5.0 Management server to the App-V Management server for Windows 10 Clients.
+
+## Custom configurations do not get applied for packages that will be published globally if they are set using the App-V Server
+
+
+If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration will not be applied to those machines. The App-V Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages will not have access to this custom configuration.
 
 **Workaround**: Do one of the following:
 
 -   Assign the package to groups containing only user accounts. This will ensure that the package’s custom configuration will be stored in each user’s profile and will be applied correctly.
 
--   Create a custom deployment configuration file and apply it to the package on the client using the Add-AppvClientPackage cmdlet with the –DynamicDeploymentConfiguration parameter. See [About App-V 5.1 Dynamic Configuration](appv-dynamic-configuration.md) for more information.
+-   Create a custom deployment configuration file and apply it to the package on the client using the Add-AppvClientPackage cmdlet with the –DynamicDeploymentConfiguration parameter. See [About App-V Dynamic Configuration](appv-dynamic-configuration.md) for more information.
 
--   Create a new package with the custom configuration using the App-V 5.1 Sequencer.
+-   Create a new package with the custom configuration using the App-V Sequencer.
 
-## Server files not deleted after new App-V 5.1 Server installation
+## Server files not deleted after new App-V Server installation
 
 
-If you uninstall the App-V 5.0 SP1 Server and then install the App-V 5.1 Server, the installation fails, the wrong version of the Management server is installed, and an error message is returned. The issue occurs because the Server files are not being deleted when you uninstall App-V 5.0 SP1, so the installation process does an upgrade instead of a new installation.
+If you uninstall the App-V 5.0 SP1 Server and then install the App-V Server, the installation fails, the wrong version of the Management server is installed, and an error message is returned. The issue occurs because the Server files are not being deleted when you uninstall App-V 5.0 SP1, so the installation process does an upgrade instead of a new installation.
 
-**Workaround**: Delete this registry key before you start installing App-V 5.1:
+**Workaround**: Delete this registry key before you start installing App-V:
 
 Under HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall, locate and delete the installation GUID key that contains the DWORD value "DisplayName" with value data "Microsoft Application Virtualization (App-V) Server". This is the only key that should be deleted.
 
@@ -54,7 +53,7 @@ File type associations added to an application package manually using the Shortc
 ## When streaming packages in Shared Content Store (SCS) mode to a client that is also managed with AppLocker, additional data is written to the local disk.
 
 
-To decrease the amount of data written to a client’s local disk, you can enable SCS mode on the App-V 5.1 Client to stream the contents of a package on demand. However, if AppLocker manages an application within the package, some data might be written to the client’s local disk that would not otherwise be written.
+To decrease the amount of data written to a client’s local disk, you can enable SCS mode on the App-V Client to stream the contents of a package on demand. However, if AppLocker manages an application within the package, some data might be written to the client’s local disk that would not otherwise be written.
 
 **Workaround**: None
 
@@ -74,7 +73,7 @@ On the Packages page of the Management Console, if you click **Add or Upgrade** 
 ## <a href="" id="upgrading-app-v-management-server-to-5-1-sometimes-fails-with-the-message--a-database-error-occurred-"></a>Upgrading App-V Management Server to 5.1 sometimes fails with the message “A database error occurred”
 
 
-If you install the App-V 5.0 SP1 Management Server, and then try to upgrade to App-V 5.1 Server when multiple connection groups are configured and enabled, the following error is displayed: “A database error occurred. Reason: 'Invalid column name 'PackageOptional'. Invalid column name 'VersionOptional'.”
+If you install the App-V 5.0 SP1 Management Server, and then try to upgrade to App-V Server when multiple connection groups are configured and enabled, the following error is displayed: “A database error occurred. Reason: 'Invalid column name 'PackageOptional'. Invalid column name 'VersionOptional'.”
 
 **Workaround**: Run this command on your SQL database:
 
@@ -132,14 +131,14 @@ The Permissions.sql script should be updated according to **Step 2** in [KB arti
 ## Microsoft Visual Studio 2012 not supported
 
 
-App-V 5.1 does not support Visual Studio 2012.
+App-V does not support Visual Studio 2012.
 
 **Workaround**: None
 
-## Application filename restrictions for App-V 5.x Sequencer
+## Application filename restrictions for App-V Sequencer
 
 
-The App-V 5.x Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
+The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
 
 **Workaround**: Use a different filename
 
@@ -151,7 +150,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[About App-V 5.1](appv-about-appv.md)
+[About App-V](appv-about-appv.md)
 
  
 

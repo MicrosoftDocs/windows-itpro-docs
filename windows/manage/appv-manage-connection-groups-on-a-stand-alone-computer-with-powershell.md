@@ -1,8 +1,7 @@
 ---
-title: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell
+title: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell (Windows 10)
 description: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell
 author: jamiejdt
-ms.assetid: e1589eff-d306-40fb-a0ae-727190dafe26
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -29,7 +28,7 @@ This topic explains the following procedures:
 
 **To add and publish the App-V packages in the connection group**
 
-1.  To add and publish the App-V 5.1 packages to the computer running the App-V client, type the following command:
+1.  To add and publish the App-V packages to the computer running the App-V client, type the following command:
 
     Add-AppvClientPackage –path c:\\tmpstore\\quartfin.appv | Publish-AppvClientPackage
 
@@ -133,9 +132,9 @@ This topic explains the following procedures:
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
-[Administering App-V 5.1 by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
 
  
 

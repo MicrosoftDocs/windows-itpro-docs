@@ -1,8 +1,7 @@
 ---
-title: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
+title: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console (Windows 10)
 description: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
 author: jamiejdt
-ms.assetid: bf53f064-76ae-4eac-9266-d087c480cda7
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +16,7 @@ Use the following procedure to transfer the access and default package configura
 
 **To transfer access and configurations to another version of a package**
 
-1.  To view the package that you want to configure, open the App-V 5.1 Management Console. Select the package to which you will transfer the new configuration, right-click the package and select **transfer default configuration from** or **transfer access and configurations from**, depending on the configuration that you want to transfer.
+1.  To view the package that you want to configure, open the App-V Management Console. Select the package to which you will transfer the new configuration, right-click the package and select **transfer default configuration from** or **transfer access and configurations from**, depending on the configuration that you want to transfer.
 
 2.  To transfer the configuration, in the **Select Previous Version** dialog box, select the package that contains the settings that you want to transfer, and then click **OK**.
 
@@ -30,7 +29,7 @@ Use the following procedure to transfer the access and default package configura
 ## Related topics
 
 
-[Operations for App-V 5.1](appv-operations.md)
+[Operations for App-V](appv-operations.md)
 
  
 

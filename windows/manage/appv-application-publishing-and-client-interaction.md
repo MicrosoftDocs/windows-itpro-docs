@@ -1,8 +1,7 @@
 ---
-title: Application Publishing and Client Interaction
+title: Application Publishing and Client Interaction (Windows 10)
 description: Application Publishing and Client Interaction
 author: jamiejdt
-ms.assetid: 36a4bf6f-a917-41a6-9856-6248686df352
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -666,7 +665,7 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 
 ### App-V and folder redirection
 
-App-V 5.1 supports folder redirection of the roaming AppData folder (%AppData%). When the virtual environment is started, the roaming AppData state from the user’s roaming AppData directory is copied to the local cache. Conversely, when the virtual environment is shut down, the local cache that is associated with a specific user’s roaming AppData is transferred to the actual location of that user’s roaming AppData directory.
+App-V supports folder redirection of the roaming AppData folder (%AppData%). When the virtual environment is started, the roaming AppData state from the user’s roaming AppData directory is copied to the local cache. Conversely, when the virtual environment is shut down, the local cache that is associated with a specific user’s roaming AppData is transferred to the actual location of that user’s roaming AppData directory.
 
 A typical package has several locations mapped in the user’s backing store for settings in both AppData\\Local and AppData\\Roaming. These locations are the Copy on Write locations that are stored per user in the user’s profile, and that are used to store changes made to the package VFS directories and to protect the default package VFS.
 

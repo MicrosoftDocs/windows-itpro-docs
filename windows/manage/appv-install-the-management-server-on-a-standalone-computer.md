@@ -1,8 +1,7 @@
 ---
-title: How to install the Management Server on a Standalone Computer and Connect it to the Database
+title: How to install the Management Server on a Standalone Computer and Connect it to the Database (Windows 10)
 description: How to install the Management Server on a Standalone Computer and Connect it to the Database
 author: jamiejdt
-ms.assetid: 3f83c335-d976-4abd-b8f8-d7f5e50b4318
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +16,7 @@ Use the following procedure to install the management server on a standalone com
 
 **To install the management server on a standalone computer and connect it to the database**
 
-1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on. To start the App-V 5.1 server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
 2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
 
@@ -51,7 +50,7 @@ Use the following procedure to install the management server on a standalone com
 ## Related topics
 
 
-[Deploying App-V 5.1](appv-deploying-appv.md)
+[Deploying App-V](appv-deploying-appv.md)
 
  
 
