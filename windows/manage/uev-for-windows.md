@@ -14,7 +14,7 @@ Many users customize their settings for Windows and for specific applications. C
 
 **With UE-V you can…**
 
--   Specify which application and Windows settings synchronize
+-   Specify which application and Windows settings synchronize across user devices
 
 -   Deliver the settings anytime and anywhere users work throughout the enterprise
 
@@ -40,7 +40,7 @@ The diagram below illustrates how UE-V components work together to synchronize u
 | **Settings location templates**         | UE-V uses XML files as settings location templates to monitor and synchronize desktop application settings and Windows desktop settings between user computers. By default, some settings location templates are included in UE-V. You can also create, edit, or validate custom settings location templates by [managing settings synchronization for custom applications](#manage-settings-synchronization-for-custom-applications).<br>**Note**&nbsp;&nbsp;Settings location templates are not required for Windows applications.   |
 | **Universal Windows applications list** | Settings for Windows applications are captured and applied dynamically. The app developer specifies the settings that are synchronized for each app. UE-V determines which Windows applications are enabled for settings synchronization using a managed list of applications. By default, this list includes most Windows applications.<br>You can add or remove applications in the Windows app list by following the procedures in [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).  |
 
-## Manage Settings Synchronization for Custom Applications
+## Manage settings synchronization for custom applications
 
 Use these UE-V components to create and manage custom templates for your third-party or line-of-business applications.
 
@@ -55,13 +55,13 @@ Use these UE-V components to create and manage custom templates for your third-p
 
 ![UE-V template generator process](images/uev-generator-process.png)
 
-## Settings Synchronized by Default
+## Settings synchronized by default
 
 UE-V synchronizes settings for these applications by default. For a complete list and more detailed information, see [Settings that are automatically synchronized in a UE-V deployment](uev-prepare-for-deployment.md#autosyncsettings).
 
--   Microsoft Office 2016, 2013, 2010, and 2007
+-   Microsoft Office 2016, 2013, and 2010
 
--   Internet Explorer 8, 9, 10, and 11
+-   Internet Explorer 11, 10, and 9
 
 -   Many Windows applications, such as Xbox
 

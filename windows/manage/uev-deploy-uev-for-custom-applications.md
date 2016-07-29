@@ -10,10 +10,9 @@ ms.prod: w10
 
 # Use UE-V with custom applications 
 
-User Experience Virtualization (UE-V) uses XML files called **settings location templates** to monitor and synchronize desktop application settings and Windows desktop settings between user devices. By default, some settings location templates are included in UE-V. However, if you want to synchronize settings for desktop applications other than those included in the default templates, you can create your own custom settings location templates with the UE-V template generator.
+User Experience Virtualization (UE-V) uses XML files called **settings location templates** to monitor and synchronize application settings and Windows settings between user devices. By default, some settings location templates are included in UE-V. However, if you want to synchronize settings for desktop applications other than those included in the default templates, you can create your own custom settings location templates with the UE-V template generator.
 
-After you’ve reviewed 
--   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md) and decided that you want to synchronize settings for custom applications (third-party, line-of-business, e.g.), you’ll need to deploy the features of UE-V described in this topic.
+After you’ve reviewed [Prepare a UE-V Deployment](uev-prepare-for-deployment.md) and decided that you want to synchronize settings for custom applications (third-party, line-of-business, e.g.), you’ll need to deploy the features of UE-V described in this topic.
 
 To start, here are the main steps required to synchronize settings for custom applications:
 
@@ -48,7 +47,7 @@ Before you start deploying the UE-V features that handle custom applications, re
 
 ### The UE-V template generator
 
-The UE-V template generator monitors Win32 applications to discover and capture the locations where the application stores its settings. The application that is monitored must be a traditional application. You use the UE-V template generator to create settings location templates, but it cannot create a settings location template from these application types:
+Use the UE-V template generator to monitor, discover, and capture the locations where Win32 applications store settings. The template generator does not create settings location templates for the following types of applications:
 
 -   Virtualized applications
 
@@ -79,33 +78,31 @@ If registry keys and files that are stored in excluded locations are required to
 
 ### Replace the default Microsoft templates
 
-The UE-V service installs a default group of settings location templates for common Microsoft applications and Windows settings. If you customize these templates, or create settings location templates to synchronize settings for custom applications, the UE-V service can be configured to use a settings template catalog to store the templates. In this case, you will need to include the default templates along with the custom templates in the settings template catalog.
+A default group of settings location templates for common Microsoft applications and Windows settings is included with Windows 10, version 1607. If you customize these templates, or create settings location templates to synchronize settings for custom applications, the UE-V service can be configured to use a settings template catalog to store the templates. In this case, you will need to include the default templates with the custom templates in the settings template catalog.
 
-<!-- YOU CANNOT USE COMMAND-LINE PARAMETERS IN THE WAY YOU USED TO WHEN INSTALLING THE AGENT - THIS SENTENCE IS NO LONGER CORRECT
-When you [Enable the UE-V service](#enable-the-ue-v-service), you can use the command-line parameter RegisterMStemplates to disable the registration of the default Microsoft templates.
--->
+**Important**
+After you enable the UE-V service, you’ll need to register the settings location templates using the `Register-UevTemplate` cmdlet in Windows PowerShell.
 
-When you use Group Policy to configure the settings template catalog path, you can choose to replace the default Microsoft templates. If you configure the policy settings to replace the default Microsoft templates, all of the default Microsoft templates that are installed by the UE-V service are deleted and only the templates that are located in the settings template catalog are used.
-
-**Note**
-If you disable this policy setting after it has been enabled, the UE-V service does not restore the default Microsoft templates.
-
-If there are customized templates in the settings template catalog that use the same ID as the default Microsoft templates, and the UE-V service is not configured to replace the default Microsoft templates, the Microsoft templates are ignored.
-
-You can also replace the default templates by using the UE-V Windows PowerShell features. To replace the default Microsoft template with Windows PowerShell, unregister all of the default Microsoft templates, and then register the customized templates.
+When you use Group Policy to configure the settings template catalog path, you can choose to replace the default Microsoft templates. If you configure the policy settings to replace the default Microsoft templates, all of the default Microsoft templates that are installed with Windows 10, version 1607 are deleted and only the templates that are located in the settings template catalog are used.
 
 **Note**
-Old settings packages remain in the settings storage location even if you deploy new settings location templates for an application. These packages are not read by the service, but neither are they automatically deleted.
+If there are customized templates in the settings template catalog that use the same ID as the default Microsoft templates, the Microsoft templates are ignored.
+
+You can replace the default templates by using the UE-V Windows PowerShell features. To replace the default Microsoft template with Windows PowerShell, unregister all of the default Microsoft templates, and then register the customized templates.
+
+**Note**
+Old settings packages remain in the settings storage location even if you deploy new settings location templates for an application. These packages are not read by the UE-V service, but neither are they automatically deleted.
 
 ### Install the UEV template generator
 
-Use the UE-V template generator to create custom settings location templates that you can then distribute to user devices. You can also edit an existing template or validate a template that was created by using another XML editor with the template generator.
+Use the UE-V template generator to create custom settings location templates that you can then distribute to user devices. You can also use the template generator to edit an existing template or validate a template that was created with another XML editor.
 
 The UE-V template generator is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10.
 
 Install the UE-V template generator on a computer that you can use to create a custom settings location template. This computer should have the applications installed for which custom settings location templates need to be generated.
 
-Important: UE-V for Windows 10, version 1607 includes a new template generator. If you are upgrading from an existing UE-V installation, you’ll need to use the new generator to create settings location templates. Templates created with previous versions of the UE-V template generator will still work.
+**Important**
+UE-V for Windows 10, version 1607 includes a new template generator. If you are upgrading from an existing UE-V installation, you’ll need to use the new generator to create settings location templates. Templates created with previous versions of the UE-V template generator will still work.
 
 **To install the UE-V template generator:**
 
@@ -123,13 +120,7 @@ To install the UE-V template generator:
 
 3.  To open the generator, select **Microsoft Application Virtualization Generator** from the **Start** menu. 
 
-<!--
-Link to <https://technet.microsoft.com/en-us/itpro/mdop/uev-v2/working-with-custom-ue-v-2x-templates-and-the-ue-v-2x-generator-new-uevv2>
-AKA
-[Working with Custom UE-V Templates and the UE-V Template Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
--->
-
-To verify that the installation was successful, click **Start** &gt; **All Programs** &gt; **Microsoft User Experience Virtualization** &gt; **Microsoft User Experience Virtualization template generator**.
+4. See [Working with Custom UE-V Templates and the UE-V Template Generator](uev-working-with-custom-templates-and-the-uev-generator.md) for information about how to use the template generator.
 
 ### Deploy a settings template catalog
 
@@ -137,7 +128,7 @@ The UE-V settings template catalog is a folder path on UE-V computers or a Serve
 
 The UE-V service checks this folder for templates that were added, updated, or removed. It registers new and changed templates and unregisters removed templates. By default, templates are registered and unregistered one time per day at 3:30 A.M. local time by the Task Scheduler and at system startup. To customize the frequency of this scheduled task, see [Changing the frequency of UE-V scheduled tasks](uev-changing-the-frequency-of-scheduled-tasks.md).
 
-You can configure the settings template catalog path with Group Policy, WMI, or Windows PowerShell. Templates stored at the settings template catalog path are automatically registered and unregistered by a scheduled task.
+You can configure the settings template catalog path with command-line options, Group Policy, WMI, or Windows PowerShell. Templates stored at the settings template catalog path are automatically registered and unregistered by a scheduled task.
 
 **To configure the settings template catalog for UE-V:**
 
@@ -244,7 +235,7 @@ Templates that are deployed by using an ESD system or Group Policy objects must 
     **Note**
     Templates on computers are updated daily. The update is based on changes to the settings template catalog.
 
-3.  To manually update templates on a computer that runs the UE-V service, open an elevated command prompt, and browse to **%Program Files%\\Microsoft User Experience Virtualization \\ Agent \\ &lt;x86 or x64 &gt;**, and then run **ApplySettingstemplateCatalog.exe**.
+3.  To manually update templates on a computer that runs the UE-V service, open an elevated command prompt, and browse to **Program Files\\Microsoft User Experience Virtualization \\ Agent \\ &lt;x86 or x64 &gt;**, and then run **ApplySettingstemplateCatalog.exe**.
 
     **Note**
     This program runs automatically during computer startup and daily at 3:30 A. M. to gather any new templates that were recently added to the catalog.
@@ -258,3 +249,4 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 - [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
 - [Deploy Required UE-V Features](uev-deploy-required-features.md)
+
