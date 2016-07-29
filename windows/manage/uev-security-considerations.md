@@ -198,8 +198,7 @@ To ensure that UE-V works optimally, create only the root share on the server, a
 
 This permission configuration enables users to create folders for settings storage. The UE-V service creates and secures a settings package folder while it runs in the context of the user. Users receive full control to their settings package folder. Other users do not inherit access to this folder. You do not have to create and secure individual user directories. The UE-V service that runs in the context of the user does it automatically.
 
-**Note**
-Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
+> **Note**&nbsp;&nbsp;Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
 
 1.  Add the REG\_DWORD registry key RepositoryOwnerCheckEnabled to `HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent\Configuration`.
 
