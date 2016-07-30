@@ -15,7 +15,8 @@ localizationpriority: medium
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+
 
 This topic explains how to create and apply a provisioning package that contains apps and certificates to a device running all desktop editions of Windows 10 except Windows 10 Home. Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
@@ -169,7 +170,7 @@ If your build is successful, the name of the provisioning package, output direct
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
