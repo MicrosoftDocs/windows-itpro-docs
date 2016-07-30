@@ -20,7 +20,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Imaging and Configuration Designer (ICD)
 
-In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install additional features for Windows ICD to run. Starting in version 1607, you can install just the configuration designer component independent of the rest of the imaging components. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
