@@ -139,7 +139,7 @@ In the &lt;Packages&gt; section of the connection group XML file, you list the m
 <li><p><strong>“true”</strong> – package is optional in the connection group</p></li>
 <li><p><strong>“false”</strong> – package is required in the connection group</p></li>
 </ul>
-<p>See [How to Use Optional Packages in Connection Groups](appv-use-optional-packages-in-connection-groups.md).</p></td>
+</td>
 </tr>
 </tbody>
 </table>

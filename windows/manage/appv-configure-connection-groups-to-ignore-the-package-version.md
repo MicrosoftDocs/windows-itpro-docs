@@ -72,11 +72,8 @@ To upgrade a package in some earlier versions of App-V, you had to perform sever
 <li><p>Publish-AppvClientPackage</p></li>
 </ul></li>
 </ol>
-<p>For more information, see:</p>
-<ul>
-<li><p>The example XML file, <strong>Connection group XML file with optional packages</strong>, in this section: [How to Use Optional Packages in Connection Groups](appv-use-optional-packages-in-connection-groups.md#bkmk-apps-plugs-optional)</p></li>
-<li><p>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md)</p></li>
-</ul></td>
+<p>For more information, see [How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md).</p>
+</td>
 </tr>
 </tbody>
 </table>
