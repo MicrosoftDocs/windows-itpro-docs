@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Product IDs in Windows 10 Mobile

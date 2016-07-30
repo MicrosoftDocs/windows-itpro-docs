@@ -43,7 +43,7 @@ If you already have an EFS DRA certificate for your organization, you can skip c
     >**Note**<br>
     To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) topic.
 
-**To verify your data recovery certificate is correctly set up on an WIP client computer**
+**To verify your data recovery certificate is correctly set up on a WIP client computer**
 
 1. Find or create a file that's encrypted using Windows Information Protection. For example, you could open an app on your allowed app list, and then create and save a file so it’s encrypted by WIP. 
 
