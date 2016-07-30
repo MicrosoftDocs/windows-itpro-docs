@@ -1,7 +1,7 @@
 ---
-title: Use PowerShell cmdlets to configure and run Windows Defender in Windows 10
-description: In Windows 10, you can use PowerShell cmdlets to run scans, update definitions, and change settings in Windows Defender.
-keywords: scan, command line, mpcmdrun, defender
+title: Configure enhanced notifications for Windows Defender
+description: In Windows 10, you can enable advanced notifications for endpoints throughout your enterprise network.
+keywords: notifications, defender, endpoint, management, admin
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -11,33 +11,50 @@ ms.pagetype: security
 author: iaanw
 ---
 
-# Use PowerShell cmdlets to configure and run Windows Defender
+# Configure enhanced notifications for Windows Defender in Windows 10
 
 **Applies to:**
 
-- Windows 10
+- Windows 10, version 1607
 
-You can use PowerShell to perform various functions in Windows Defender. Similar to the command prompt or command line, PowerShell is a task-based command-line shell and scripting language designed especially for system administration, and you can read more about it at the [PowerShell hub on MSDN](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx).
+In Windows 10, application notifications about malware detection and remediation by Windows Defender are more robust, consistent, and concise.
 
-For a list of the cmdlets and their functions and available parameters, see the [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) topic.
+Notifications will appear on endpoints when manually triggered and scheduled scans are completed and threats are detected. These notifications will also be seen in the **Notification Summar**, and a summary of scans and threat detections will also appear at regular time intervals.
 
-PowerShell cmdlets are most useful in Windows Server environments that don't rely on a graphical user interface (GUI) to configure software. 
+You can enable and disable enhanced notifications  with the registry or in Windows Settings. 
 
-> **Note:**&nbsp;&nbsp;PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [System Center Configuration Manager](https://technet.microsoft.com/en-us/library/gg682129.aspx), [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), or [Windows Defender Group Policy ADMX templates](https://support.microsoft.com/en-us/kb/927367).
+## Configure enhanced notifications
 
-PowerShell is typically installed under the folder _%SystemRoot%\system32\WindowsPowerShell_.
+You can disable enhanced notifications on individual endpoints by configuring the registry or in Windows Settings. You can also use Group Policy to suppress certain types of notifications, or display additional, customized text to endpoints inside the notifications.
 
+**Use the registry to disable Windows Defender notifications on individual endpoints:**
 
-**Use Windows Defender PowerShell cmdlets**
+1. Click **Start**, type **Run**, and press **Enter**.
 
-1. Click **Start**, type **powershell**, and press **Enter**.
-2. Click **Windows PowerShell** to open the interface. 
-    > **Note:**&nbsp;&nbsp;You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
-3. Enter the command and parameters.
+2. From the **Run** dialog box, type **regedit** and press **Enter**.
 
-To open online help for any of the cmdlets type the following:
+4. In the **Registry Editor** navigate to the **ux configuration** key under:
 
-```text
-Get-Help <cmdlet> -Online
+   ```text
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
 ```
-Omit the `-online` parameter to get locally cached help.
+
+5. Double-click the **Notification_Suppress** value and set it to **1**.
+
+![Image of enhanced notification suppression in Registry Editor](images/defender/ux-config-key.png)
+
+
+**Use Windows Settings to disable enhanced notifications on individual endpoints**
+
+1. Open the **Start** menu and click or type **Settings**.
+
+1. Click **Update & Security** and then **Windows Defender**. Scroll to the bottom of the settings page until you see the **Enhanced notifications** section.
+
+1. Toggle the setting between **On** and **Off**.
+
+![Windows Defender enhanced notifications](images/defender/enhanced-notifications.png)
+
+
+## Related topics
+
+[Windows Defender in Windows 10](windows-defender-in-windows-10.md)
