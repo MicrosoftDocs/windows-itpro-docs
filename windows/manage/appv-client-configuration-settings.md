@@ -10,7 +10,7 @@ ms.prod: w10
 
 # About Client Configuration Settings
 
-The Microsoft Application Virtualization (App-V) client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries. This topic lists the App-V Client configuration settings and explains their uses. You can use PowerShell to modify the client configuration settings. For more information about using PowerShell and App-V see [Administering App-V by Using PowerShell](https://microsoft.sharepoint.com/teams/osg_core_dcp/cpub/partner/Shared%20Documents/APPV&UEV-for-Windows-RS1/App-V/App-V%20updated%20topics%20from%20JAN%20-%20PM%20reviews/appv-administering-appv-with-powershell.md).
+The Microsoft Application Virtualization (App-V) client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries. This topic lists the App-V Client configuration settings and explains their uses. You can use PowerShell to modify the client configuration settings. For more information about using PowerShell and App-V see [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md).
 
 
 
@@ -108,8 +108,6 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-[Deploying the App-V Sequencer and Client](https://microsoft.sharepoint.com/teams/osg_core_dcp/cpub/partner/Shared%20Documents/APPV&UEV-for-Windows-RS1/App-V/App-V%20updated%20topics%20from%20JAN%20-%20PM%20reviews/appv-deploying-the-appv-sequencer-and-client.md)
+[Deploying the App-V Sequencer and Client](appv-deploying-the-appv-sequencer-and-client.md)
 
-[How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](https://microsoft.sharepoint.com/teams/osg_core_dcp/cpub/partner/Shared%20Documents/APPV&UEV-for-Windows-RS1/App-V/App-V%20updated%20topics%20from%20JAN%20-%20PM%20reviews/appv-modify-client-configuration-with-the-admx-template-and-group-policy.md)
-
-[How to Deploy the App-V Client](https://microsoft.sharepoint.com/teams/osg_core_dcp/cpub/partner/Shared%20Documents/APPV&UEV-for-Windows-RS1/App-V/App-V%20updated%20topics%20from%20JAN%20-%20PM%20reviews/appv-deploy-the-appv-client.md)
+[How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md)

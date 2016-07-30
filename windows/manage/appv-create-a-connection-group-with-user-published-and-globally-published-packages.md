@@ -80,14 +80,3 @@ You can create user-entitled connection groups that contain both user-published 
 
 
 [Managing Connection Groups](appv-managing-connection-groups.md)
-
-[How to Use Optional Packages in Connection Groups](appv-use-optional-packages-in-connection-groups.md)
-
- 
-
- 
-
-
-
-
-
