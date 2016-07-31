@@ -1,6 +1,6 @@
 ---
-title: Configuring UE-V with System Center Configuration Manager 2012
-description: Configuring UE-V with System Center Configuration Manager 2012
+title: Configuring UE-V with System Center Configuration Manager
+description: Configuring UE-V with System Center Configuration Manager 
 author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,17 +9,17 @@ ms.prod: w10
 ---
 
 
-# Configuring UE-V with System Center Configuration Manager 2012
+# Configuring UE-V with System Center Configuration Manager 
 
 
-After you enable User Experience Virtualization (UE-V) and its required features, UE-V must be configured. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager 2012 SP1 or later to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+After you deploy User Experience Virtualization (UE-V) and its required features, you can start to configure it to meet your organization's need. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager (2012 SP1 or later) to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
 ## UE-V Configuration Pack supported features
 
 
-The UE-V Configuration Pack includes tools to perform the following tasks:
+The UE-V Configuration Pack includes tools to:
 
--   Create or update UE-V settings location template distribution baselines.
+-   Create or update UE-V settings location template distribution baselines
 
     -   Define UE-V templates to be registered or unregistered
 
@@ -27,7 +27,7 @@ The UE-V Configuration Pack includes tools to perform the following tasks:
 
     -   Distribute and register UE-V templates using standard Configuration Item remediation
 
--   Create or update a UE-V Agent policy configuration item to set or clear these settings.
+-   Create or update a UE-V Agent policy configuration item to set or clear these settings
 
     <table>
     <colgroup>
@@ -78,12 +78,12 @@ The UE-V Configuration Pack includes tools to perform the following tasks:
 
 -   Verify compliance by confirming that UE-V is running.
 
-## Generate a UE-V Agent Policy Configuration Item
+## Generate a UE-V service policy configuration item
 
 
-All UE-V Agent policy and configuration is distributed through a single configuration item that is generated using the UevAgentPolicyGenerator.exe tool. This tool reads the desired configuration from an XML configuration file and creates a CI containing the discovery and remediation settings needed to bring the machine into compliance.
+All UE-V service policy and configuration is distributed through a single configuration item that is generated using the UevAgentPolicyGenerator.exe tool. This tool reads the desired configuration from an XML configuration file and creates a CI containing the discovery and remediation settings needed to bring the machine into compliance.
 
-The UE-V Agent policy configuration item CAB file is created using the UevTemplateBaselineGenerator.exe command line tool, which has these parameters:
+The UE-V service policy configuration item CAB file is created using the UevTemplateBaselineGenerator.exe command line tool, which has these parameters:
 
 -   Site &lt;site code&gt;
 
@@ -104,7 +104,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
  
 
-**Create the First UE-V Policy Configuration Item**
+**Create the first UE-V policy configuration item**
 
 1.  Copy the default settings configuration file from the UE-V Config Pack installation directory to a location visible to your ConfigMgr Admin Console:
 
