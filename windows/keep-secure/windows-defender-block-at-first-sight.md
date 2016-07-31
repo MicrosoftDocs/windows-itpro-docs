@@ -31,10 +31,6 @@ If the Block at First Sight feature is enabled on the client, the file will be l
  
 The file-based determination typically takes 1 to 4 seconds.
 
-The following video describes how this feature works:
-<iframe src="https://tnstage.redmond.corp.microsoft.com/en-us/itpro/windows/keep-secure/media/Windows_Defender_-_Fast_Learning.mp4" width="640" height="360" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe> 
-
-
 >[!NOTE]Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to be slower download times for some files.
 
 
