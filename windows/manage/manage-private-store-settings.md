@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Manage private store settings
@@ -19,9 +20,9 @@ author: TrudyHa
 
 The private store is a feature in the Windows Store for Business that organizations receive during the sign up process. When admins add apps to the private store, all employees in the organization can view and download the apps. Only online-licensed apps can be distributed from your private store.
 
-The name of your private store is shown on a tab in the Windows Store.
+The name of your private store is shown on a tab in the Windows Store app.
 
-![](images/wsfb-wsappprivatestore.png)
+![Image showing Windows Store app with private store tab highlighted.](images/wsfb-wsappprivatestore.png)
 
 You can change the name of your private store in Store for Business.
 
@@ -33,13 +34,13 @@ You can change the name of your private store in Store for Business.
 
     You'll see your private store name.
 
-    ![](images/wsfb-privatestore.png)
+    ![Image showing Private store page in Windows Store for Business.](images/wsfb-privatestore.png)
 
 3.  Click **Change**.
 
 4.  Type a new display name for your private store, and click **Save**.
 
-    ![](images/wsfb-renameprivatestore.png)
+    ![Image showing Private store dialog used to change private store display name.](images/wsfb-renameprivatestore.png)
 
  
 

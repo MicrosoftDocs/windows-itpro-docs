@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Using a room control system (Surface Hub)
@@ -68,7 +69,7 @@ You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial 
 
 This diagram shows the correct pinout used for an RJ-11 (6P6C) to DB9 cable.
 
-![image showing the wiring diagram.](images/room-control-wiring-diagram.png)
+![Image showing the wiring diagram.](images/room-control-wiring-diagram.png)
 
 ## Command sets
 

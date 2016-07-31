@@ -11,11 +11,17 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## July 2016
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Manage Windows upgrades with Upgrade Analytics](manage-windows-upgrades-with-upgrade-analytics.md) | New | 
+
 ## June 2016
 | New or changed topic | Description |
 |----------------------|-------------|
 | [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md) | New |
-| [User State Migration Tool Technical Reference](usmt-technical-reference.md) | Updated |
+| [User State Migration Tool Technical Reference](usmt-technical-reference.md) | Updated support statement for Office 2016 |
+| [Windows 10 upgrade paths](windows-10-upgrade-paths.md) | New |
 
 ## May 2016
 | New or changed topic | Description |

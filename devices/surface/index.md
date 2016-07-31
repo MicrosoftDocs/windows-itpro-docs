@@ -1,6 +1,6 @@
 ---
 title: Surface (Surface)
-description: .
+description: 
 ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -43,6 +43,14 @@ For more information on planning for, deploying, and managing Surface devices in
 <td><p>Walk through the process of customizing the Surface out-of-box experience for end users in your organization.</p></td>
 </tr>
 <tr class="odd">
+<td><p>[Deploy Surface app with Windows Store for Business](deploy-surface-app-with-windows-store-for-business.md)</p></td>
+<td><p>Find out how to add and download Surface app with Windows Store for Business, as well as install Surface app with PowerShell and MDT.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)</p></td>
+<td><p>Walk through the recommended process of how to deploy Windows 10 to your Surface devices with the Microsoft Deployment Toolkit.</p></td>
+</tr>
+<tr class="odd">
 <td><p>[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)</p></td>
 <td><p>Get a list of the available downloads for Surface devices and links to download the drivers and firmware for your device.</p></td>
 </tr>
@@ -82,6 +90,16 @@ For more information on planning for, deploying, and managing Surface devices in
 <td><p>[Surface Dock Updater](surface-dock-updater.md)</p></td>
 <td><p>Get a detailed walkthrough of Microsoft Surface Dock Updater.</p></td>
 </tr>
+<tr class="odd">
+<td><p>[Surface Enterprise Management Mode](surface-enterprise-management-mode.md)</p></td>
+<td><p>See how this feature of Surface devices with Surface UEFI allows you to secure and manage firmware settings within your organization.
+</p></td>
+</tr>
+<tr class="even">
+<td><p>[Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)</p></td>
+<td><p>Find out how to perform a Windows 10 upgrade deployment to your Surface devices.</p></td>
+</tr>
+
 </tbody>
 </table>
 

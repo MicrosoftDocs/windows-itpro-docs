@@ -29,7 +29,8 @@ Credential Guard isolates secrets that previous versions of Windows stored in th
 
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
 
-Credential Guard also does not allow older variants of NTLM, unconstrained Kerberos delegation, and Kerberos authentication protocols and cipher suites when using default derived credentials, including NTLMv1, MS-CHAPv2, and weaker Kerberos encryption types, such as DES.
+Credential Guard also does not allow unconstrained Kerberos delegation, NTLMv1, MS-CHAPv2, Digest, CredSSP, and Kerberos DES encryption.
+
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
 ![Credential Guard overview](images/credguard.png)
@@ -80,7 +81,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>Trusted Platform Module (TPM) version 1.2 or 2.0</p></td>
-<td align="left"><p>TPM 1.2 and 2.0 provides protection for encryption keys that are stored in the firmware and are used by Credential Guard. See the following table to determine which TPM versions are supported on your OS.</p>
+<td align="left"><p>TPM 1.2 and 2.0 provides protection for encryption keys used by virtualization-based security to protect Credential Guard secrets where all other keys are stored. See the following table to determine which TPM versions are supported on your OS.</p>
 <table>
 <th>OS version</th>
 <th>Required TPM</th>
@@ -94,7 +95,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 </table>
 <div class="alert">
-<strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.
+<strong>Note</strong>  If you don't have a TPM installed, Credential Guard will still be enabled, but the virtualization-based security keys used to protect Credential Guard secrets will not bound to the TPM. Instead, the keys will be protected in a UEFI Boot Service variable.
 </div>
 </td>
 </tr>

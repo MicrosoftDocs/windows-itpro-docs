@@ -46,7 +46,7 @@ This is the first screen you'll see when you power up the Surface Hub for the fi
 
  
 
-![icd options checklist](images/setuplocale.png)
+![Image showing ICD options checklist.](images/setuplocale.png)
 
 ### Details
 
@@ -72,7 +72,7 @@ If no wired connection can be found, then the device will attempt to set up a wi
 
 If your device does not detect a wired connection that it can use to connect to a network or the Internet, you will see this page. Here you can either connect to a wireless network, or skip making the network connection.
 
-![](images/setupnetworksetup-1.png)
+![Image shoring Network setup page.](images/setupnetworksetup-1.png)
 
 ### Details
 
@@ -97,7 +97,7 @@ If you want to connect to a secured wireless network from this page, click on th
 
 This page will be shown when you've selected a secured wireless network.
 
-![](images/setupnetworksetup-3.png)
+![Image showing wireless network setup page.](images/setupnetworksetup-3.png)
 
 ### Details
 
@@ -121,11 +121,11 @@ This page will be shown when the device detects a wired connection with limited 
 
 -   You can select **Enter proxy settings** which will allow you to specify how to use the network proxy. You'll be taken to the next screen.
 
-![](images/setupnetworksetup-2.png)
+![Image showing network proxy page.](images/setupnetworksetup-2.png)
 
 This is the screen you'll see if you clicked **Enter proxy settings** on the previous screen.
 
-![](images/setupnetworksetup-4.png)
+![Image showing proxy server setting details.](images/setupnetworksetup-4.png)
 
 ### Details
 
@@ -149,7 +149,7 @@ You can skip connecting to a network by selecting **Skip this step**. You'll be 
 
 This screen is purely informational, and shows which recommended settings have been enabled by default.
 
-![](images/setupsetupforyou.png)
+![Image showing set up for you page.](images/setupsetupforyou.png)
 
 ### Details
 
@@ -170,7 +170,7 @@ On this page, the Surface Hub will ask for credentials for the device account th
 
  
 
-![icd options checklist](images/setupdeviceacct.png)
+![Image showing Enter device account info page.](images/setupdeviceacct.png)
 
 ### Details
 
@@ -192,7 +192,7 @@ If you skip setting it up now, you can add a device account later by using the S
 
 If you click **Skip setting up a device account**, the device will display a dialog box showing what will happen if the device doesn't have a device account. If you choose **Yes, skip this**, you will be sent to the [Name this device page](#name-this-device).
 
-![icd options checklist](images/setupskipdeviceacct.png)
+![Image showing message the is displaed to confirm you want to skip creating a device account.](images/setupskipdeviceacct.png)
 
 ### What happens?
 
@@ -211,7 +211,7 @@ The device will use the UPN or DOMAIN\\User name and password for the device acc
 
 This page will only be shown if there's a problem. Typically, it means that the device account that you provided was found in Active Directory (AD) or Azure Active Directory (Azure AD), but the Exchange server for the account was not discovered.
 
-![icd options checklist](images/setupexchangeserver-01.png)
+![Image showing Exchange server page.](images/setupexchangeserver-01.png)
 
 ### Details
 
@@ -230,7 +230,7 @@ You can enable Exchange services for a device account later by using the Setting
 
 If you click **Skip setting up Exchange services**, the device will display a dialog showing what will happen. If you choose **Yes, skip this**, then Exchange services will not be set up.
 
-![icd options checklist](images/setupexchangeserver-02.png)
+![Image showing confirmation message that is displayed when you skip setting up Exchange services.](images/setupexchangeserver-02.png)
 
 ### What happens?
 
@@ -249,7 +249,7 @@ This page will be shown when:
 -   Exchange supported protocols are not supported by the Surface Hub.
 -   Exchange returns incorrect XML.
 
-![icd options checklist](images/setupexchangepolicies.png)
+![Image showing Exchange policis page.](images/setupexchangepolicies.png)
 
 ### Details
 
@@ -273,7 +273,7 @@ If you choose to skip this check, the Surface Hub will stop looking for the Exch
 
 This page asks you to provide two names that will be used for identifying the Surface Hub.
 
-![icd options checklist](images/setupnamedevice.png)
+![Image showing Name this device page.](images/setupnamedevice.png)
 
 ### Details
 
@@ -307,7 +307,7 @@ Because every Surface Hub can be used by any number of authenticated employees, 
 
  
 
-![icd options checklist](images/setupsetupadmins.png)
+![Image showing Set up admins for this device page.](images/setupsetupadmins.png)
 
 ### Details
 
@@ -348,7 +348,7 @@ Joining Azure AD has two primary benefits:
 1.  Some employees from your organization will be able to access the device as admins, and will be able to start the Settings app and configure the device. People that have admin permissions will be defined in your Azure AD subscription.
 2.  If your Azure AD is connected to a mobile device management (MDM) solution, the device will enroll with that MDM solution so you can apply policies and configuration.
 
-![](images/setupjoiningazuread-1.png)
+![Image showing message when you join your Surface Hub to Azure Active Directory.](images/setupjoiningazuread-1.png)
 
 ### Details
 
@@ -357,11 +357,11 @@ The following input is required:
 -   **User's UPN:** The user principal name (UPN) of an account that can join Azure AD.
 -   **Password:** The password of the account you’re using to join Azure AD.
 
-![](images/setupjoiningazuread-2.png)
+![Image showing account log in info.](images/setupjoiningazuread-2.png)
 
 If you get to this point and don't have valid credentials for an Azure AD account, the device will allow you to continue by creating a local admin account. Click **Set up Windows with a local account instead**.
 
-![](images/setupjoiningazuread-3.png)
+![Image showing Set up an admin account page.](images/setupjoiningazuread-3.png)
 
 ### What happens?
 
@@ -373,7 +373,7 @@ This page will ask for credentials to join a domain so that the Surface Hub can 
 
 Once the device has been domain joined, you must specify a security group from the domain you joined. This security group will be provisioned as administrators on the Surface Hub, and anyone from the security group can enter their domain credentials to access Settings.
 
-![icd options checklist](images/setupdomainjoin.png)
+![Image showing Set up admins using domain join page.](images/setupdomainjoin.png)
 
 ### Details
 
@@ -385,7 +385,7 @@ The following input is required:
 
 After the credentials are verified, you will be asked to type a security group name. This input is required.
 
-![icd options checklist](images/setupsecuritygroup-1.png)
+![Image showing Enter a security group page.](images/setupsecuritygroup-1.png)
 
 ### What happens?
 
@@ -401,7 +401,7 @@ If the join is successful, you'll see the **Enter a security group** page. When 
 
 If you decide not to use Azure Active Directory (Azure AD) or Active Directory (AD) to manage the Surface Hub, you'll need to create a local admin account.
 
-![](images/setuplocaladmin.png)
+![Image showing Set up an admin account for local admin.](images/setuplocaladmin.png)
 
 ### Details
 

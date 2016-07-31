@@ -3,6 +3,7 @@ title: Microsoft Surface Diagnostic Toolkit (Surface)
 description: Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device.
 ms.assetid: FC4C3E76-3613-4A84-A384-85FE8809BEF1
 keywords: hardware, device, tool, test, component
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -33,7 +34,7 @@ The [Microsoft Surface Diagnostic Toolkit](http://go.microsoft.com/fwlink/p/?Lin
 
 - Surface Pro
 
->**Note:**&nbsp;&nbsp;Security software and built-in security measures in many email applications and services will block executable files that are transferred through email. To email the Surface Diagnostic Toolkit, attach the .zip archive file as downloaded from the Surface Tools for IT page without extracting it first. You can also create a custom .zip archive that contains the .exe file. (For example, if you want to localize the text as described in the [Localization](#localization) section of this article.)
+>**Note:**&nbsp;&nbsp;Security software and built-in security measures in many email applications and services will block executable files that are transferred through email. To email the Surface Diagnostic Toolkit, attach the archive file (.zip) as downloaded from the Surface Tools for IT page without extracting it first. You can also create a custom .zip archive that contains the .exe file. (For example, if you want to localize the text as described in the [Localization](#localization) section of this article.)
 
 Running the Microsoft Surface Diagnostic Toolkit is a hands-on activity. The test sequence includes several tests that require you to perform actions or observe the outcome of the test, and then click the applicable **Pass** or **Fail** button. Some tests require connectivity to external devices, like an external display. Other tests use the built in Windows troubleshooters. At the end of testing, a visual report of the test results is displayed and you are given the option to save a log file or copy the results to the clipboard.
 
@@ -49,16 +50,72 @@ To run a full set of tests with the Microsoft Surface Diagnostic Toolkit, you sh
 
 - Room to move the Surface device around
 
-- External speakers or headphones
+- External speakers or headphones with a 3.5mm stereo plug
 
->**Note:**&nbsp;&nbsp;The Microsoft Surface Diagnostic Toolkit tests verify only the hardware of a Surface device and do not test or resolve issues with the operating system or software.
+- A power adapter for your Surface device
 
- 
+>**Note:**&nbsp;&nbsp;The Microsoft Surface Diagnostic Toolkit tests verify only the hardware of a Surface device and do not resolve issues with the operating system or software.
+
+## Configure test options
+
+Before you select the tests you want to run, you can click the Tools ![images\surface-diagnostic-kit-gear-icon.png](images\surface-diagnostic-kit-gear-icon.png) button in the upper right corner of the window (as shown in Figure 1) to access the Options section of the Microsoft Surface Diagnostic Toolkit. In the Options section, you can configure the depth of testing and logs, as well as the save location for log files. You can also create and use additional language files for the dialog of each test.
+
+![Tools button highlighted in upper right corner of window](images\surface-diagnostic-kit-fig1-options.png "Tools button highlighted in upper right corner of window")
+
+*Figure 1. The Tools button highlighted in upper right corner of window*  
+
+>**Note:**&nbsp;&nbsp;Any options you want to select must be specified before you run the tests. You cannot change the test options after the testing sequence has started.
+
+####Test depth
+You can quickly select among three modes for testing and diagnostics by using the **Test Depth** page. The **Test Depth** page displays a slider with three possible positions, as shown in Figure 2. These positions determine which tests are run and what information is recorded without requiring you to select specific tests with the **Run Specific Tests** button. The three modes allow you to focus the tests of the Microsoft Surface Diagnostic Toolkit on hardware, software, or both hardware and software.
+ 
+![Screen that displays Test Depth slider to select depth of data collection](images/surface-diagnostic-kit-fig2-testdepth.png "Screen that displays Test Depth slider to select depth of data collection")
+
+*Figure 2. The Test Depth slider to select the depth of data collection*
+
+When you select a mode by using the Test Depth slider, a configuration file (.ini) with the same name as the Microsoft Surface Diagnostic Toolkit executable (.exe) file is created in the same folder. For example, if the Microsoft Surface Diagnostic Toolkit executable file is SurfaceDiagnosticToolkit.exe, the configuration file will be SurfaceDiagnosticToolkit.ini. When the executable file is run, the options will be automatically set by the configuration file. To run the Microsoft Surface Diagnostic Toolkit in a specific mode on multiple devices, ensure that the .ini file remains in the same folder with the .exe file used on each device.
+
+When you run the Microsoft Surface Diagnostic Toolkit, you can still use the **Run Specific Tests** button to enable or disable specific tests. The tests selected on the **Please Select Tests to Run** page take priority over the tests enabled or disabled by the mode specified on the **Test Depth** page. When a mode is selected the tests that are applicable to that mode will be enabled by default and the tests that are not required for that mode will be disabled.
+
+Each mode has a specific focus and records a different level of information in the log files, as follows:
+
+* **Hardware and Software Focus.** This is the default mode for the Microsoft Surface Diagnostic Toolkit. In this mode all tests that are applicable to the device are run. This mode logs the most information and takes the most time.
+* **Software Experience Focus.** This mode collects information about the device and records it in the log file. No hardware tests are performed in this mode. The following tests are run in this mode:
+  * Windows Update Check Test
+  * Device Information Test
+  * System Assessment Test
+  * Crash Dump Collection Test
+  * Modern Standby Test
+* **Hardware Validation Focus.** This mode tests the hardware of the device but does not collect system log files or device information. All diagnostic tests relevant to the device hardware are run in this mode. The exact tests that are run will vary from device to device depending on the hardware configuration. This mode logs the least information and requires the least amount of time.
+
+
+####Save location
+Use the **Browse** button on the **Save Location** page to select a default location for the Microsoft Surface Diagnostic Toolkit log files to be saved. When the tests complete the user will still be prompted to save a log file and a log file will not be saved automatically. The user must still click the **Save to File** button to save the log files. As with the Test Depth mode, this save location is stored in the Microsoft Surface Diagnostic Toolkit configuration (.ini) file and if the file does not exist, configuring this option will generate the file.
+
+####Additional language
+Refer to the [Localization](#localization) section of this article for information about how to customize the dialog displayed during each test. On the **Additional Language** page, you can generate a localization file that you can use to customize the dialog during each test. You can also specify a specific localization file to be used with the Microsoft Surface Diagnostic Toolkit with the **Browse** button.
+
+####Feedback
+You can use the form on the **Feedback** page to inform the product team of any problems that you encounter with the Microsoft Surface Diagnostic Toolkit or to provide any suggestions for how the Microsoft Surface Diagnostic Toolkit could be improved.
+
 
 ## The tests
 
-
 The Microsoft Surface Diagnostic Toolkit runs several individual tests on a Surface device. Not all tests are applicable to every device. For example, the Home button test is not applicable to Surface Pro 4 where there is no Home button. You can specify which tests to run, or you can choose to run all tests. For tests that require external devices (such as testing output to an external display) but you do not have the required external device at the time of the test, you are given the option to skip the test. If a test fails, you are prompted to continue or stop testing at that time.
+
+When the testing completes, the **Test Results** page is displayed (as shown in Figure 3) and shows the status of each test: passed, failed, or inconclusive (skipped). You can choose to run the tests again; to save a log file, including any additional log files gathered by tests; or to copy the log file text to the clipboard.
+
+![Sample display of Test Results page](images/surface-diagnostic-kit-fig3-results.png "Sample display of Test Results page")
+
+*Figure 3. View of the results of the tests*
+
+When the tests have completed, you can also add additional notes to the log files by clicking **Add additional feedback to results ->** on the **Test Results** page. Use the **Type any additional feedback about these tests** field on the **Test Results** page to add your notes, as shown in Figure 4.
+
+![Window that shows where you can add notes to a log file](images/surface-diagnostic-kit-fig4-notes.png "Window that shows where you can add notes to a log file")
+
+*Figure 4. Add notes to the log file*
+
+Notes that you type on this page are displayed in the log files after the results of the selected tests and before the **Files** section. The section header in the log files for these notes is named **User Feedback**.
 
 #### Windows Update
 
@@ -213,7 +270,7 @@ Insert a micro SD or SD card when you are prompted. When the SD card is detected
 
 #### Microphone test
 
-This test displays the **Recording** tab of the Sound item in Control Panel. The test prompts you to monitor the meter that is displayed next to the **Microphone Array** recording device. A recommended test is to speak and watch for your speech to be detected in the meter. If the meter moves when you speak, the microphone is working correctly. For Surface Book you will be prompted to tap locations near the microphones. This tapping should produce noticeable spikes in the audio meter.
+This test displays a meter that shows the microphone sound level and records audio for a short period of time. Say a few words or make noise and make note that the meter displays the sound level accordingly. A countdown timer is displayed to indicate how much time is remaining for you to record sound. When the countdown timer expires, the recorded audio is played back. Verify that the words or noises sound clear and accurate, and then mark the test as passed or failed depending on the results.
 
 #### Video out test
 
@@ -231,11 +288,13 @@ After you receive a prompt to put the device in pairing mode, the test opens the
 
 Use this test to verify that the cameras on your Surface device are operating properly. Images will be displayed from both the front and rear cameras, and the infrared camera on a Surface Pro 4. Continuous autofocus can be enabled on the rear camera. Move the device closer and farther away from an object to verify the operation of continuous autofocus.
 
+>**Note:**&nbsp;&nbsp;You can also use the **Snapshot to Logs** option to save a snapshot of the video output to the log files.
+
 #### Speaker test
 
 >**Note:**&nbsp;&nbsp;Headphones or external speakers are required to test the headphone jack in this test.
 
-This test plays audio over left and right channels respectively, both for the internal speakers and for speakers or headphones connected to the headphone jack. Mark each channel as a pass or fail as you hear the audio play.
+This test plays audio over left and right channels respectively, both for the internal speakers and for speakers or headphones connected through the headphone jack. Plug in your headphones or speakers to the 3.5mm stereo jack when prompted. The test will automatically detect that a sound playback device has been connected. Mark each channel as a pass or fail as you hear the audio play through the speakers or headphones.
 
 #### Network test
 
@@ -267,15 +326,21 @@ The compass detects which direction the Surface device is facing relative to nor
 
 The ambient light sensor is used to automatically adjust screen brightness relative to the ambient lighting in the environment. Turn the device toward or away from a light source to cause the screen to dim or brighten in response increased or decreased light. The test automatically passes when the screen brightness automatically changes.
 
+>**Note:**&nbsp;&nbsp;You can also block the ambient light from the sensor by holding your hand slightly in front of the light sensor, which is located directly next to the camera. Use the provided meter to determine if you are blocking light from the sensor.
+
 #### Device orientation test
 
 >**Note:**&nbsp;&nbsp;Before you run this test, disable rotation lock from the Action Center if enabled.
 
-The device orientation sensor determines what the angle of the Surface device is, relative to the ground. Rotate the display 90 degrees or 180 degrees to cause the screen orientation to switch between portrait and landscape mode. The test automatically passes when the screen orientation switches.
+The device orientation sensor determines what the angle of the Surface device is, relative to the ground. Rotate the display 90 degrees or 180 degrees to cause the screen orientation to switch between portrait and landscape mode. If you have a Surface Type Cover or the Surface Book keyboard connected, you will be prompted to disconnect the Surface from the keyboard to allow screen rotation. The test automatically passes when the screen orientation switches.
 
 #### Brightness test
 
-This test cycles the screen through brightness levels from 0 percent to 100 percent, and then a message is displayed to confirm if the brightness level changed accordingly. You are then prompted to disconnect the power adapter. The screen should automatically dim when power is disconnected.
+This test cycles the screen through brightness levels from 0 percent to 100 percent, and then a message is displayed to confirm if the brightness level changed accordingly. You are then prompted to test for brightness reaction. To test the reaction of brightness when running on battery, disconnect the power adapter. The screen should automatically dim when power is disconnected.
+
+#### Surface Dock test
+The Microsoft Surface Diagnostic Toolkit uses this test only if a Surface Dock is connected to the device. If a Surface Dock is detected, this test verifies that the Surface Dock driver firmware is updated. For more detailed analysis of Surface Dock firmware status and how to manually initiate the firmware update process, see the [Microsoft Surface Dock Updater](https://technet.microsoft.com/en-us/itpro/surface/surface-dock-updater) article.
+
 
 #### System assessment
 
@@ -290,6 +355,19 @@ Performance and diagnostic trace logs are recorded from Performance Monitor for 
 #### Crash dump collection
 
 If your Surface device has encountered an error that caused the device to fail or produce a blue screen error, this stage of the Microsoft Surface Diagnostic Toolkit records the information from the automatically recorded crash dump files in the diagnostic log. You can use these crash dump files to identify a faulty driver, hardware component, or application through analysis. Use the [Windows Debugging Tool](http://go.microsoft.com/fwlink/p/?LinkId=746488) to analyze these files. If you are not familiar with the analysis of crash dump files, you can describe your issue and post a link to your crash dump files (uploaded to OneDrive or another file sharing service) in the [Windows TechNet Forums](http://go.microsoft.com/fwlink/p/?LinkId=746489).
+
+#### Connected standby text
+
+>**Note:**&nbsp;&nbsp;This test is only available on Surface devices running Windows 8 or Windows 8.1.
+
+If connected standby is enabled on the Surface device, this test passes automatically. If connected standby is not enabled, a failure is recorded for this test. Find out more about Connected Standby and Modern Standby at [Modern Standby](https://msdn.microsoft.com/library/windows/hardware/mt282515) on MSDN.
+
+#### Modern standby test
+
+>**Note:**&nbsp;&nbsp;This test is only available on Surface devices running Windows 10.
+
+This test records log files of the power configuration for the Surface device using the **powercfg.exe /a** command. The test completes automatically and a failure is only recorded if the command does not run.
+
 
 ## Command line
 
@@ -430,25 +508,26 @@ Surface_Diagnostic_Toolkit_1.0.60.0.exe “logpath=C:\Folder with spaces”
 ## Localization
 
 
-By default, the Microsoft Surface Diagnostic Toolkit is available in English only. If you want to localize the text of the Microsoft Surface Diagnostic Toolkit prompts into another language, you can do so by creating a custom localization file. If the localization file exists, the Microsoft Surface Diagnostic Toolkit will override the default English text and use the text contained in the file instead. To create a localization file, follow these steps:
+By default, the Microsoft Surface Diagnostic Toolkit is available in English only. If you want to localize the text of the Microsoft Surface Diagnostic Toolkit prompts into another language, you can do so by creating a custom localization file. To create a new localization file (.locale), follow these steps:
 
-1.  Open Notepad.
+1. Click the Tools ![images\surface-diagnostic-kit-gear-icon.png](images\surface-diagnostic-kit-gear-icon.png) button.
+2. Click the **Additional Language** page.
+3. Click the **Generate** button and the new .locale file is created.
 
-2.  Type the following line at the beginning of the file:
+The locale file that is created when you use these steps will have the same name as your executable file, even if it has been changed from the default. For example, if the Microsoft Surface Diagnostic Toolkit executable file is SurfaceDiagnosticToolkit.exe, the localization file would be SurfaceDiagnosticToolkit.locale. The locale file will be created in the same folder as the executable file. If a localization file with this name already exists, you will be prompted to overwrite the existing file. The file that is created when you click the **Generate** button is always generated in the default language, English.
 
-    ``` syntax
-    <root />
-    ```
+To customize the localization file, open the file in a text or XML editor such as Notepad. To edit the dialog for each test, replace the text for each phrase tag. (For example, `<phrase key="testdialog">text</phrase>`.) To use the file automatically when you start the Microsoft Surface Diagnostic Toolkit, simply save the file with the same name it had when it was created. To save the file for use with other instances of Microsoft Surface Diagnostic Toolkit, copy the file to another location or save the file with another name.
 
-3.  Save the file as SurfaceDiagnosticTool\_v1.0.60.0.locale in the same location where the Microsoft Surface Diagnostic Toolkit executable file is stored.
+If a localization file with the same name and in the same folder as the executable file is detected when Microsoft Surface Diagnostic Toolkit started, the alternate text specified in that localization file replaces the default dialog and prompts. If a custom localization file is not present or the file name is not the same as the executable file, the tool will default to English text. At any point you can also explicitly specify a localization file to be used by the Microsoft Surface Diagnostic Toolkit. To specify a localization file, follow these steps:
+1.	Click the Tools ![images\surface-diagnostic-kit-gear-icon.png](images\surface-diagnostic-kit-gear-icon.png) button.
+2.	Click the **Additional Language** page.
+3.	Click **Browse**.
+4.	Browse to and select your custom localization file.
 
-4.  Run the Microsoft Surface Diagnostic Toolkit executable file, Surface\_Diagnostic\_Toolkit\_v1.0.60.0.exe. The SurfaceDiagnosticTool\_v1.0.60.0.locale file will be populated with all of the text from the default prompts.
+A custom localization file selected through this process does not need a specific name. After you select the custom localization file, the Microsoft Surface Diagnostic Toolkit will import the contents and write them to a .locale file with the same name as the .exe file, just like if you click the **Generate** button to create a new .locale file.
 
-5.  Open the SurfaceDiagnosticTool\_v1.0.60.0.locale file in Notepad and change the text of each prompt to your custom or localized text.
+>**Note:**&nbsp;&nbsp;If you import a localization file by clicking the **Browse** button, an existing localization file will be overwritten without prompting if that file has the same name as the Microsoft Surface Diagnostic Toolkit executable file.
 
-6.  Save the SurfaceDiagnosticTool\_v1.0.60.0.locale file.
-
->**Note:**&nbsp;&nbsp;The SurfaceDiganosticTool\_v1.0.60.0.locale file must be located in the same folder and have the same name other than the file extension as the Microsoft Surface Diagnostic Toolkit executable file to use the custom prompt text. The SurfaceDiganosticTool\_v1.0.60.0.locale is an .xml file and must use UTF-8 encoding.
 
  
 

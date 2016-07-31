@@ -27,7 +27,7 @@ You’ll need this software to run EDP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
-|Windows 10 Insider Preview | Microsoft Intune<br>-OR-<br>System Center Configuration Manager (version 1511 or later)<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
+|Windows 10 Insider Preview | Microsoft Intune<br>-OR-<br>System Center Configuration Manager Technical Preview version 1605 or later<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
 
 ## How EDP works
 EDP helps address your everyday challenges in the enterprise. Including:
@@ -60,7 +60,7 @@ EDP gives you a new way to manage data policy enforcement for apps and documents
 
     -   **Copying or downloading enterprise data.** When an employee or an app downloads content from a location like SharePoint, a network share, or an enterprise web location, while using an EDP-protected device, EDP encrypts the data on the device.
 
-    -   **Using protected apps.** Managed apps (apps that you've included on the **Protected Apps** list in your EDP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if EDP management is set to **Block**, your employees can copy and paste from one protected app to another protected app, but not to personal apps. Imagine an HR person wants to copy a job description from a protected app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
+    - **Using allowed apps.** Managed apps (apps that you've included on the protected apps list in your EDP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if EDP management is set to **Block**, your employees can copy and paste from one protected app to another protected app, but not to personal apps. Imagine an HR person wants to copy a job description from a protected app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
 
     -   **Managed apps and restrictions.** With EDP you can control which apps can access and use your enterprise data. After adding an app to your **Protected App** list, the app is trusted with enterprise data. All apps that aren’t on this list are blocked from accessing your enterprise network resources and your EDP-protected data.<p>
     You don’t have to modify line-of-business apps that never touch personal data to list them as protected apps; just include them in the **Protected App** list.
@@ -90,12 +90,3 @@ Use the following table to identify the scenarios that require Azure Rights Mana
 After deciding to use EDP in your enterprise, you need to:
 
 -   [Create an enterprise data protection (EDP) policy](overview-create-edp-policy.md)
-
- 
-
- 
-
-
-
-
-
