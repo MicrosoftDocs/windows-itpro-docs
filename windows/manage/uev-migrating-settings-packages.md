@@ -1,6 +1,6 @@
 ---
-title: Migrating UE-V Settings Packages
-description: Migrating UE-V Settings Packages
+title: Migrating UE-V settings packages
+description: Migrating UE-V settings packages
 author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -9,14 +9,14 @@ ms.prod: w10
 ---
 
 
-# Migrating UE-V Settings Packages
+# Migrating UE-V settings packages
 
 
 In the lifecycle of a User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
 
--   Upgrade of existing server hardware to a more modern server.
+-   Upgrade of existing server hardware to a more modern server
 
--   Migration of a settings storage location share from a test server to a production server.
+-   Migration of a settings storage location share from a test server to a production server
 
 Simply copying the files and folders does not preserve the security settings and permissions. The following steps describe how to correctly copy the settings package along with their NTFS file system permissions to a new share.
 

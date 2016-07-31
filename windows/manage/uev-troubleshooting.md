@@ -19,17 +19,6 @@ Troubleshooting content is not included in the Administrator's Guide for this pr
 
 You can use the following information to find troubleshooting content or additional technical content for this product.
 
-### Search the MDOP documentation
-
-The first step to find help content in the Administrator’s Guide is to search the MDOP documentation on TechNet. After you search the MDOP documentation, you can search the troubleshooting information for the product in the TechNet Wiki. These search methods are described in the following sections.
-
-**To search the MDOP product documentation**
-
-1.  Open a web browser and browse to the [MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032) home page on TechNet.
-
-2.  Locate the **Search TechNet with Bing** search box and enter your search term.
-
-3.  Review the search results for assistance.
 
 **To search the TechNet Wiki**
 
@@ -42,7 +31,7 @@ The first step to find help content in the Administrator’s Guide is to search 
 ##  Create a troubleshooting article
 
 
-If you have a troubleshooting tip or a best practice to share that is not already included in the MDOP Online Help or TechNet Wiki, you can create your own TechNet Wiki article.
+If you have a troubleshooting tip or a best practice to share that is not already included in TechNet Wiki, you can create your own TechNet Wiki article.
 
 **To create a TechNet Wiki troubleshooting or best practices article**
 
@@ -65,15 +54,15 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 ## Other resources for this feature
 
 
--   [User Experience Virtualization for Windows 10, version 1607](uev-for-windows.md)
+-   [User Experience Virtualization overview](uev-for-windows.md)
 
 -   [Get Started with UE-V](uev-getting-started.md)
 
--   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
+-   [Prepare a UE-V deployment](uev-prepare-for-deployment.md)
 
 -   [Administering UE-V](uev-administering-uev.md)
 
--   [Technical Reference for UE-V](uev-technical-reference.md)
+-   [Technical reference for UE-V](uev-technical-reference.md)
 
 ## Have a suggestion for UE-V?
 
