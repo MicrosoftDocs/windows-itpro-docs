@@ -37,7 +37,7 @@ You can add users and groups, as well as update some of the settings associated 
 <tbody>
 <tr class="odd">
 <td align="left"><p>[Update Windows Store for Business account settings](update-windows-store-for-business-account-settings.md)</p></td>
-<td align="left"><p>The <strong>Account information</strong> page in Windows Store for Business shows information about your organization that you can update, including: country or region, organization name, default domain, and language preference. These are settings in the Azure AD directory that you used when signing up for Store for Business</p></td>
+<td align="left"><p>The <strong>Account information</strong> page in Windows Store for Business shows information about your organization that you can update, including: organization information, payment options, and offline licensing settings.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Manage user accounts in Windows Store for Business](manage-users-and-groups-windows-store-for-business.md)</p></td>

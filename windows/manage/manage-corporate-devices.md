@@ -48,7 +48,7 @@ Desktop devices running Windows 10 that are joined to an Active Directory domai
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft System Center Configuration Manager Technical Preview](http://go.microsoft.com/fwlink/p/?LinkId=613622)</p></td>
+<td align="left"><p>[Microsoft System Center Configuration Manager 2016](http://go.microsoft.com/fwlink/p/?LinkId=613622)</p></td>
 <td align="left"><p>Client deployment, upgrade, and management with new and existing features</p></td>
 </tr>
 <tr class="even">
@@ -95,7 +95,7 @@ For more information about the MDM protocols, see [Mobile device management](htt
 
 ## Learn more
 
-[How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627898.aspx)
+[How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://technet.microsoft.com/library/mt627898.aspx)
 
 [Azure AD, Microsoft Intune and Windows 10 - Using the cloud to modernize enterprise mobility](https://blogs.technet.microsoft.com/enterprisemobility/2015/06/12/azure-ad-microsoft-intune-and-windows-10-using-the-cloud-to-modernize-enterprise-mobility/)
 
@@ -115,16 +115,16 @@ Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager &
 
 ## Related topics
 
+[Manage Windows 10 and Windows Store tips, tricks, and suggestions](manage-tips-and-suggestions.md)
 
-[New policies for Windows 10](new-policies-for-windows-10.md)
+- [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md) 
+- [New policies for Windows 10](new-policies-for-windows-10.md)
+- [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
+- [Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
+- [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
+- [Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers.md)
 
-[Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 
-[Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
-
-[Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
-
- 
 
  
 

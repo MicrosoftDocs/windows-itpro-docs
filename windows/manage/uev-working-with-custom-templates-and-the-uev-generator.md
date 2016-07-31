@@ -1,7 +1,7 @@
 ---
-title: Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
-description: Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
-author: jamiejdt
+title: Working with Custom UE-V Templates and the UE-V Template Generator
+description: Working with Custom UE-V Templates and the UE-V Template Generator
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,12 +9,12 @@ ms.prod: w10
 ---
 
 
-# Working with Custom UE-V 2.x Templates and the UE-V 2.x Generator
+# Working with Custom UE-V Templates and the UE-V Template Generator
 
 
-To synchronize application settings between user computers, Microsoft User Experience Virtualization (UE-V) uses *settings location templates*. Some settings location templates are included in User Experience Virtualization. You can also create, edit, or validate custom settings location templates by using the UE-V Generator.
+To synchronize application settings between user computers, User Experience Virtualization (UE-V) uses *settings location templates*. Some settings location templates are included in User Experience Virtualization. You can also create, edit, or validate custom settings location templates by using the UE-V template generator.
 
-The UE-V Generator monitors Windows desktop applications to discover and capture the locations where the application stores its settings. The application that is monitored must be a desktop application. The UE-V Generator cannot create a settings location template for the following application types:
+The UE-V template generator monitors Windows desktop applications to discover and capture the locations where the application stores its settings. The application that is monitored must be a desktop application. The UE-V template generator cannot create a settings location template for the following application types:
 
 -   Virtualized applications
 
@@ -24,17 +24,15 @@ The UE-V Generator monitors Windows desktop applications to discover and capture
 
 -   Windows apps
 
-This topic
+**Standard and Nonstandard settings locations:** The UE-V template generator helps you identify where applications search for settings files and registry settings that applications use to store settings information. The generator only discovers settings in locations that are accessible to a standard user. Settings that are stored in other locations are excluded. Discovered settings are grouped into two categories: **Standard** and **Non-standard**. Standard settings are recommended for synchronization, and UE-V can readily capture and apply them. Non-standard settings can potentially synchronize settings but, because of the rules that UE-V uses, these settings might not consistently or dependably synchronize settings. These settings might depend on temporary files, result in unreliable synchronization, or might not be useful. These settings locations are presented in the UE-V template generator. You can choose to include or exclude them on a case-by-case basis.
 
-**Standard and Nonstandard settings locations:** The UE-V Generator helps you identify where applications search for settings files and registry settings that applications use to store settings information. The generator only discovers settings in locations that are accessible to a standard user. Settings that are stored in other locations are excluded. Discovered settings are grouped into two categories: **Standard** and **Non-standard**. Standard settings are recommended for synchronization, and UE-V can readily capture and apply them. Non-standard settings can potentially synchronize settings but, because of the rules that UE-V uses, these settings might not consistently or dependably synchronize settings. These settings might depend on temporary files, result in unreliable synchronization, or might not be useful. These settings locations are presented in the UE-V Generator. You can choose to include or exclude them on a case-by-case basis.
-
-The UE-V Generator opens the application as part of the discovery process. The generator can capture settings in the following locations:
+The UE-V template generator opens the application as part of the discovery process. The generator can capture settings in the following locations:
 
 -   **Registry Settings** – Registry locations under **HKEY\_CURRENT\_USER**
 
 -   **Application Settings Files** – Files that are stored under \\ **Users** \\ \[User name\] \\ **AppData** \\ **Roaming**
 
-The UE-V Generator excludes locations, which commonly store application software files, but do not synchronize well between user computers or environments. The UE-V Generator excludes these locations. Excluded locations are as follows:
+The UE-V template generator excludes locations, which commonly store application software files, but do not synchronize well between user computers or environments. The UE-V template generator excludes these locations. Excluded locations are as follows:
 
 -   HKEY\_CURRENT\_USER registry keys and files to which the logged-on user cannot write values
 
@@ -50,17 +48,17 @@ The UE-V Generator excludes locations, which commonly store application software
 
 If registry keys and files that are stored in these locations are required to synchronize application settings, you can manually add the excluded locations to the settings location template during the template creation process.
 
-## <a href="" id="edit"></a>Edit Settings Location Templates with the UE-V Generator
+## <a href="" id="edit"></a>Edit Settings Location Templates with the UE-V template generator
 
 
-Use the UE-V Generator to edit settings location templates. When the revised settings are added to the templates by using the UE-V Generator, the version information within the template is automatically updated to ensure that any existing templates that are deployed in the enterprise are updated correctly.
+Use the UE-V template generator to edit settings location templates. When the revised settings are added to the templates by using the UE-V template generator, the version information within the template is automatically updated to ensure that any existing templates that are deployed in the enterprise are updated correctly.
 
 **Note**  
 If you edit a UE-V 1.0 template by using the UE-V 2 Generator, the template is automatically converted to a UE-V 2 template. UE-V 1.0 Agents can no longer use the edited template.
 
  
 
-**To edit a UE-V settings location template with the UE-V Generator**
+**To edit a UE-V settings location template with the UE-V template generator**
 
 1.  Click **Start**, click **All Programs**, click **Microsoft User Experience Virtualization**, and then click **Microsoft User Experience Virtualization Generator**.
 
@@ -90,7 +88,7 @@ If you edit a UE-V 1.0 template by using the UE-V 2 Generator, the template is a
 
 5.  Click **Save** to save the changes to the settings location template.
 
-6.  Click **Close** to close the Settings Template Wizard. Exit the UE-V Generator application.
+6.  Click **Close** to close the Settings Template Wizard. Exit the UE-V template generator application.
 
     After you edit the settings location template for an application, you should test the template. Deploy the revised settings location template in a lab environment before you put it into production in the enterprise.
 
@@ -111,16 +109,16 @@ If you edit a UE-V 1.0 template by using the UE-V 2 Generator, the template is a
 
 5.  Save the settings location template file, and then close the XML editor.
 
-6.  Validate the modified settings location template file by using the UE-V Generator.
+6.  Validate the modified settings location template file by using the UE-V template generator.
 
 7.  You must register the edited UE-V settings location template before it can synchronize settings between client computers. To register a template, open Windows PowerShell, and then run the following cmdlet: `update-uevtemplate [templatefilename]`. You can then copy the file to the settings storage catalog. The UE-V Agent on users’ computers should then update as scheduled in the scheduled task.
 
-## <a href="" id="validate"></a>Validate Settings Location Templates with the UE-V Generator
+## <a href="" id="validate"></a>Validate Settings Location Templates with the UE-V template generator
 
 
-It is possible to create or edit settings location templates in an XML editor without using the UE-V Generator. If you do, you can use the UE-V Generator to validate that the new or revised XML matches the schema that has been defined for the template.
+It is possible to create or edit settings location templates in an XML editor without using the UE-V template generator. If you do, you can use the UE-V template generator to validate that the new or revised XML matches the schema that has been defined for the template.
 
-**To validate a UE-V settings location template with the UE-V Generator**
+**To validate a UE-V settings location template with the UE-V template generator**
 
 1.  Click **Start**, point to **All Programs**, click **Microsoft User Experience Virtualization**, and then click **Microsoft User Experience Virtualization Generator**.
 
@@ -130,7 +128,7 @@ It is possible to create or edit settings location templates in an XML editor wi
 
 4.  Click **Validate** to continue.
 
-5.  Click **Close** to close the Settings Template Wizard. Exit the UE-V Generator application.
+5.  Click **Close** to close the Settings Template Wizard. Exit the UE-V template generator application.
 
     After you validate the settings location template for an application, you should test the template. Deploy the template in a lab environment before you put it into a production environment in enterprise.
 
@@ -155,9 +153,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Administering UE-V 2.x](uev-administering-uev.md)
+[Administering UE-V](uev-administering-uev.md)
 
-[Deploy UE-V 2.x for Custom Applications](uev-deploy-uev-for-custom-applications.md)
+[Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
 
  
 

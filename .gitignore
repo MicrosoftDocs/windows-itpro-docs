@@ -9,4 +9,4 @@ Tools/NuGet/
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config
-browsers/internet-explorer/ie11-deploy-guide/change-history-for-internet-explorer-11.md
+windows/keep-secure/index.md

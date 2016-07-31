@@ -90,7 +90,7 @@ The PC must meet the following hardware and software requirements to use Credent
 <td>TPM 2.0</td>
 </tr>
 <tr>
-<td>Windows 10 version 1511</td>
+<td>Windows 10 version 1511 or later</td>
 <td>TPM 2.0 or TPM 1.2</td>
 </tr>
 </table>
@@ -109,7 +109,11 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="odd">
 <td align="left"><p>Physical PC</p></td>
-<td align="left"><p>For PCs running Windows 10, you cannot run Credential Guard on a virtual machine.</p></td>
+<td align="left"><p>For PCs running Windows 10, version 1511 and Windows 10, version 1507, you cannot run Credential Guard on a virtual machine.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Virtual machine</p></td>
+<td align="left"><p>For PCs running Windows 10, version 1607, you can run Credential Guard on a Generation 2 virtual machine.</p></td>
 </tr>
 </tbody>
 </table>
@@ -144,9 +148,8 @@ First, you must add the virtualization-based security features. You can do this 
 **Add the virtualization-based security features by using Programs and Features**
 1.  Open the Programs and Features control panel.
 2.  Click **Turn Windows feature on or off**.
-3.  Select the **Isolated User Mode** check box.
-4.  Go to **Hyper-V** -&gt; **Hyper-V Platform**, and then select the **Hyper-V Hypervisor** check box.
-5.  Click **OK**.
+3.  Go to **Hyper-V** -&gt; **Hyper-V Platform**, and then select the **Hyper-V Hypervisor** check box.
+4.  Click **OK**.
 
 **Add the virtualization-based security features to an offline image by using DISM**
 1.  Open an elevated command prompt.
@@ -154,12 +157,14 @@ First, you must add the virtualization-based security features. You can do this 
     ``` syntax
     dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
-3.  Add Isolated User Mode by running the following command:
-    ``` syntax
-    dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
-    ```
 > **Note:**  You can also add these features to an online image by using either DISM or Configuration Manager.
- 
+
+
+In Windows 10, version 1607, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
+
+``` syntax
+dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
+```
 ### Turn on Credential Guard
 
 If you don't use Group Policy, you can enable Credential Guard by using the registry.
@@ -203,7 +208,7 @@ If you have to remove Credential Guard on a PC, you need to do the following:
 3.  Accept the prompt to disable Credential Guard.
 4.  Alternatively, you can disable the virtualization-based security features to turn off Credential Guard.
 
-> **Note: ** The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Credential Guard and virtualization-based security, run the following bcdedit command after turning off all virtualization-based security Group Policy and registry settings: bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
+> **Note:** The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Credential Guard and virtualization-based security, run the following bcdedit command after turning off all virtualization-based security Group Policy and registry settings: bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
 
 For more info on virtualization-based security and Device Guard, see [Device Guard deployment guide](device-guard-deployment-guide.md).
  

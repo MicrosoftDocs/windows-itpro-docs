@@ -1,7 +1,7 @@
 ---
 title: Manage Administrative Backup and Restore in UE-V
 description: Manage Administrative Backup and Restore in UE-V
-author: jamiejdt
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,7 +11,7 @@ ms.prod: w10
 
 # Manage Administrative Backup and Restore in UE-V
 
-As an administrator of Microsoft User Experience Virtualization (UE-V), you can restore application and Windows settings to their original state. You can also restore additional settings when a user adopts a new device.
+As an administrator of User Experience Virtualization (UE-V), you can restore application and Windows settings to their original state. You can also restore additional settings when a user adopts a new device.
 
 ## Restore Settings in UE-V when a User Adopts a New Device
 

@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 This topic discusses several other things that you should examine to see whether they will cause any complications in your ability to deploy Windows Firewall with Advanced Security policies in your organization.
 

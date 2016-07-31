@@ -1,7 +1,7 @@
 ---
-title: Migrating UE-V 2.x Settings Packages
-description: Migrating UE-V 2.x Settings Packages
-author: jamiejdt
+title: Migrating UE-V Settings Packages
+description: Migrating UE-V Settings Packages
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,10 +9,10 @@ ms.prod: w10
 ---
 
 
-# Migrating UE-V 2.x Settings Packages
+# Migrating UE-V Settings Packages
 
 
-In the lifecycle of a Microsoft User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
+In the lifecycle of a User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
 
 -   Upgrade of existing server hardware to a more modern server.
 
@@ -20,7 +20,7 @@ In the lifecycle of a Microsoft User Experience Virtualization (UE-V) deployment
 
 Simply copying the files and folders does not preserve the security settings and permissions. The following steps describe how to correctly copy the settings package along with their NTFS file system permissions to a new share.
 
-**To preserve UE-V 2 settings packages when you migrate to a new server**
+**To preserve UE-V settings packages when you migrate to a new server**
 
 1.  In a new location on a different server, create a new folder, for example, MySettings.
 
@@ -39,7 +39,7 @@ Simply copying the files and folders does not preserve the security settings and
 
 4.  Grant share-level permissions to the new share. Leave the NTFS file system permissions as they were set by Robocopy.
 
-    On computers that run the UE-V Agent, update the **SettingsStoragePath** configuration setting to the Universal Naming Convention (UNC) path of the new share.
+    On computers on which the UE-V service is enabled, update the **SettingsStoragePath** configuration setting to the Universal Naming Convention (UNC) path of the new share.
 
 ## Have a suggestion for UE-V?
 
@@ -47,5 +47,5 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 ## Related topics
 
-[Administering UE-V 2.x](uev-administering-uev.md)
+[Administering UE-V](uev-administering-uev.md)
 

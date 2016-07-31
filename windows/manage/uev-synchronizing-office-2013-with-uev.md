@@ -1,7 +1,7 @@
 ---
-title: Synchronizing Office 2013 with UE-V 2.0
-description: Synchronizing Office 2013 with UE-V 2.0
-author: jamiejdt
+title: Synchronizing Office 2013 with UE-V
+description: Synchronizing Office 2013 with UE-V
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Synchronizing Office 2013 with UE-V 2.0
+# Synchronizing Office 2013 with UE-V
 
 
 Microsoft User Experience Virtualization (UE-V) 2.0 supports the synchronization of Microsoft Office 2013 application setting using a template available from the UE-V template gallery. The combination of UE-V 2 and App-V 5.0 SP2 support of Office 2013 Professional Plus enables the same experience on virtualized instance of Office 2013 from any UE-V-enabled device or virtualized desktop.
@@ -107,9 +107,9 @@ You can deploy UE-V settings location template with the following methods:
     Register-UevTemplate -Path <Path_to_Template>
     ```
 
-    For more information using UE-V and Windows PowerShell, see [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
+    For more information using UE-V and Windows PowerShell, see [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
 
--   **Registering template via Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office 2013 template into the folder defined in the UE-V Agent. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploying the Settings Template Catalog for UE-V 2](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).
+-   **Registering template via Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office 2013 template into the folder defined in the UE-V service. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploying the Settings Template Catalog for UE-V 2](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).
 
 -   **Registering template via Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, then recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to your clients. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2](http://go.microsoft.com/fwlink/?LinkId=317263).
 
@@ -117,12 +117,3 @@ You can deploy UE-V settings location template with the following methods:
 
 
 Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
-
- 
-
- 
-
-
-
-
-

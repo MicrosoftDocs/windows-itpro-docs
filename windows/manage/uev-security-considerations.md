@@ -1,7 +1,7 @@
 ---
-title: Security Considerations for UE-V 2.x
-description: Security Considerations for UE-V 2.x
-author: jamiejdt
+title: Security Considerations for UE-V
+description: Security Considerations for UE-V
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,18 +9,16 @@ ms.prod: w10
 ---
 
 
-# Security Considerations for UE-V 2.x
+# Security Considerations for UE-V
 
 
-This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for Microsoft User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
+This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
 
 ## Security considerations for UE-V configuration
 
 
-**Important**  
+**Important**
 When you create the settings storage share, limit the share access to users who require access.
-
- 
 
 Because settings packages might contain personal information, you should take care to protect them as well as possible. In general, do the following:
 
@@ -30,145 +28,139 @@ Because settings packages might contain personal information, you should take ca
 
 -   Only give users the minimum amount of permissions that they must have. The following tables show the required permissions.
 
-    1.  Set the following share-level SMB permissions for the setting storage location folder.
+1.  Set the following share-level SMB permissions for the setting storage location folder.
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th align="left">User account</th>
-        <th align="left">Recommended permissions</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td align="left"><p>Everyone</p></td>
-        <td align="left"><p>No permissions</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Security group of UE-V</p></td>
-        <td align="left"><p>Full control</p></td>
-        </tr>
-        </tbody>
-        </table>
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">User account</th>
+    <th align="left">Recommended permissions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Everyone</p></td>
+    <td align="left"><p>No permissions</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Security group of UE-V</p></td>
+    <td align="left"><p>Full control</p></td>
+    </tr>
+    </tbody>
+    </table>
 
-         
 
-    2.  Set the following NTFS file system permissions for the settings storage location folder.
+2.  Set the following NTFS file system permissions for the settings storage location folder.
 
-        <table>
-        <colgroup>
-        <col width="33%" />
-        <col width="33%" />
-        <col width="33%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th align="left">User account</th>
-        <th align="left">Recommended permissions</th>
-        <th align="left">Folder</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td align="left"><p>Creator/Owner</p></td>
-        <td align="left"><p>No permissions</p></td>
-        <td align="left"><p>No permissions</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Domain Admins</p></td>
-        <td align="left"><p>Full control</p></td>
-        <td align="left"><p>This folder, subfolders, and files</p></td>
-        </tr>
-        <tr class="odd">
-        <td align="left"><p>Security group of UE-V users</p></td>
-        <td align="left"><p>List folder/read data, create folders/append data</p></td>
-        <td align="left"><p>This folder only</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Everyone</p></td>
-        <td align="left"><p>Remove all permissions</p></td>
-        <td align="left"><p>No permissions</p></td>
-        </tr>
-        </tbody>
-        </table>
+    <table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">User account</th>
+    <th align="left">Recommended permissions</th>
+    <th align="left">Folder</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Creator/Owner</p></td>
+    <td align="left"><p>No permissions</p></td>
+    <td align="left"><p>No permissions</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Domain Admins</p></td>
+    <td align="left"><p>Full control</p></td>
+    <td align="left"><p>This folder, subfolders, and files</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Security group of UE-V users</p></td>
+    <td align="left"><p>List folder/read data, create folders/append data</p></td>
+    <td align="left"><p>This folder only</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Everyone</p></td>
+    <td align="left"><p>Remove all permissions</p></td>
+    <td align="left"><p>No permissions</p></td>
+    </tr>
+    </tbody>
+    </table>
 
-         
+3.  Set the following share-level SMB permissions for the settings template catalog folder.
 
-    3.  Set the following share-level SMB permissions for the settings template catalog folder.
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">User account</th>
+    <th align="left">Recommend permissions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Everyone</p></td>
+    <td align="left"><p>No permissions</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Domain computers</p></td>
+    <td align="left"><p>Read permission Levels</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Administrators</p></td>
+    <td align="left"><p>Read/write permission levels</p></td>
+    </tr>
+    </tbody>
+    </table>
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th align="left">User account</th>
-        <th align="left">Recommend permissions</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td align="left"><p>Everyone</p></td>
-        <td align="left"><p>No permissions</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Domain computers</p></td>
-        <td align="left"><p>Read permission Levels</p></td>
-        </tr>
-        <tr class="odd">
-        <td align="left"><p>Administrators</p></td>
-        <td align="left"><p>Read/write permission levels</p></td>
-        </tr>
-        </tbody>
-        </table>
 
-         
+4.  Set the following NTFS permissions for the settings template catalog folder.
 
-    4.  Set the following NTFS permissions for the settings template catalog folder.
-
-        <table>
-        <colgroup>
-        <col width="33%" />
-        <col width="33%" />
-        <col width="33%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th align="left">User account</th>
-        <th align="left">Recommended permissions</th>
-        <th align="left">Apply to</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td align="left"><p>Creator/Owner</p></td>
-        <td align="left"><p>Full control</p></td>
-        <td align="left"><p>This folder, subfolders, and files</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Domain Computers</p></td>
-        <td align="left"><p>List folder contents and Read permissions</p></td>
-        <td align="left"><p>This folder, subfolders, and files</p></td>
-        </tr>
-        <tr class="odd">
-        <td align="left"><p>Everyone</p></td>
-        <td align="left"><p>No permissions</p></td>
-        <td align="left"><p>No permissions</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Administrators</p></td>
-        <td align="left"><p>Full Control</p></td>
-        <td align="left"><p>This folder, subfolders, and files</p></td>
-        </tr>
-        </tbody>
-        </table>
-
-         
+    <table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">User account</th>
+    <th align="left">Recommended permissions</th>
+    <th align="left">Apply to</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Creator/Owner</p></td>
+    <td align="left"><p>Full control</p></td>
+    <td align="left"><p>This folder, subfolders, and files</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Domain Computers</p></td>
+    <td align="left"><p>List folder contents and Read permissions</p></td>
+    <td align="left"><p>This folder, subfolders, and files</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Everyone</p></td>
+    <td align="left"><p>No permissions</p></td>
+    <td align="left"><p>No permissions</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Administrators</p></td>
+    <td align="left"><p>Full Control</p></td>
+    <td align="left"><p>This folder, subfolders, and files</p></td>
+    </tr>
+    </tbody>
+    </table>
 
 ### Use Windows Server as of Windows Server 2003 to host redirected file shares
 
@@ -200,26 +192,24 @@ When you use the Encrypting File System (EFS) to encrypt files on a remote serve
 
 This encryption process does not apply when your system includes Internet Protocol security (IPsec) or Web Distributed Authoring and Versioning (WebDAV). IPsec encrypts data while it is transported over a TCP/IP network. If the file is encrypted before it is copied or moved to a WebDAV folder on a server, it remains encrypted during the transmission and while it is stored on the server.
 
-### Let the UE-V Agent create folders for each user
+### Let the UE-V service create folders for each user
 
-To ensure that UE-V works optimally, create only the root share on the server, and let the UE-V Agent create the folders for each user. UE-V creates these user folders with the appropriate security.
+To ensure that UE-V works optimally, create only the root share on the server, and let the UE-V service create the folders for each user. UE-V creates these user folders with the appropriate security.
 
-This permission configuration enables users to create folders for settings storage. The UE-V Agent creates and secures a settings package folder while it runs in the context of the user. Users receive full control to their settings package folder. Other users do not inherit access to this folder. You do not have to create and secure individual user directories. The agent that runs in the context of the user does it automatically.
+This permission configuration enables users to create folders for settings storage. The UE-V service creates and secures a settings package folder while it runs in the context of the user. Users receive full control to their settings package folder. Other users do not inherit access to this folder. You do not have to create and secure individual user directories. The UE-V service that runs in the context of the user does it automatically.
 
-**Note**  
-Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
+> **Note**&nbsp;&nbsp;Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
 
 1.  Add the REG\_DWORD registry key RepositoryOwnerCheckEnabled to `HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent\Configuration`.
 
 2.  Set the registry key value to *1*.
 
-When this configuration setting is in place, the UE-V Agent verifies that the local Administrators group or current user is the owner of the settings package folder. If not, then the UE-V Agent does not grant access to the folder.
+When this configuration setting is in place, the UE-V service verifies that the local Administrators group or current user is the owner of the settings package folder. If not, then the UE-V service does not grant access to the folder.
 
- 
 
 If you must create folders for the users, ensure that you have the correct permissions set.
 
-We strongly recommend that you do not pre-create folders. Instead, let the UE-V Agent create the folder for the user.
+We strongly recommend that you do not pre-create folders. Instead, let the UE-V service create the folder for the user.
 
 ### Ensure correct permissions to store UE-V 2 settings in a home directory or custom directory
 
@@ -232,14 +222,4 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 ## Related topics
 
-
-[Technical Reference for UE-V 2.x](uev-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
+[Technical Reference for UE-V](uev-technical-reference.md)

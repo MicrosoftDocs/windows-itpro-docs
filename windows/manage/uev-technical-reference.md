@@ -1,7 +1,7 @@
 ---
-title: Technical Reference for UE-V 2.x
-description: Technical Reference for UE-V 2.x
-author: jamiejdt
+title: Technical Reference for UE-V
+description: Technical Reference for UE-V
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,50 +9,50 @@ ms.prod: w10
 ---
 
 
-# Technical Reference for UE-V 2.x
+# Technical Reference for UE-V
 
 
-This technical reference section includes additional technical documentation about the various features of Microsoft User Experience Virtualization (UE-V). This information is provided to help the administrator better understand UE-V.
+This technical reference section includes additional technical documentation about the various features of User Experience Virtualization (UE-V). This information is provided to help the administrator better understand UE-V.
 
-## Technical reference topics for UE-V 2.x
+## Technical reference topics for UE-V
 
 
--   [Sync Methods for UE-V 2.x](uev-sync-methods.md)
+-   [Sync Methods for UE-V](uev-sync-methods.md)
 
     Defines how UE-V synchronizes settings between computers and the settings storage location. Sync Provider is the default sync method for UE-V 2.0. This topic provides technical reference information for sync methods, including the Sync Provider.
 
--   [Sync Trigger Events for UE-V 2.x](uev-sync-trigger-events.md)
+-   [Sync Trigger Events for UE-V](uev-sync-trigger-events.md)
 
-    Defines when the UE-V Agent synchronizes those settings with the settings storage location. This topic provides technical reference information about when synchronization takes place based upon the sync method deployed.
+    Defines when the UE-V service synchronizes those settings with the settings storage location. This topic provides technical reference information about when synchronization takes place based upon the sync method deployed.
 
 -   [Synchronizing Office 2013 with UE-V 2.0](uev-synchronizing-office-2013-with-uev.md)
 
     Provides guidance for downloading and enabling the Microsoft-authored UE-V 2.0 settings location template that supports Office 2013 settings synchronization.
 
--   [Application Template Schema Reference for UE-V 2.x](uev-application-template-schema-reference.md)
+-   [Application Template Schema Reference for UE-V](uev-application-template-schema-reference.md)
 
     Details the XML structure of UE-V settings location templates and provides guidance for editing these files.
 
--   [Accessibility for UE-V 2.x](uev-accessibility.md)
+-   [Accessibility for UE-V](uev-accessibility.md)
 
     Describes features and services that make UE-V more accessible for people with disabilities.
 
--   [Security Considerations for UE-V 2.x](uev-security-considerations.md)
+-   [Security Considerations for UE-V](uev-security-considerations.md)
 
     Provides a brief overview of accounts, groups, and other security-related considerations for UE-V.
 
-## Other resources for this product
+## Other resources for this feature
 
 
--   [Microsoft User Experience Virtualization (UE-V) 2.x](index.md)
+-   [User Experience Virtualization for Windows 10, version 1607](uev-for-windows.md)
 
--   [Get Started with UE-V 2.x](uev-getting-started.md)
+-   [Get Started with UE-V](uev-getting-started.md)
 
--   [Prepare a UE-V 2.x Deployment](uev-prepare-for-deployment.md)
+-   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
--   [Administering UE-V 2.x](uev-administering-uev.md)
+-   [Administering UE-V](uev-administering-uev.md)
 
--   [Troubleshooting UE-V 2.x](uev-troubleshooting.md)
+-   [Troubleshooting UE-V](uev-troubleshooting.md)
 
 ## Have a suggestion for UE-V?
 

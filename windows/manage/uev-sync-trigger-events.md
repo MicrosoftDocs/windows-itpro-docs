@@ -1,17 +1,17 @@
 ---
-title: Sync Trigger Events for UE-V 2.x
-description: Sync Trigger Events for UE-V 2.x
-author: jamiejdt
+title: Sync Trigger Events for UE-V
+description: Sync Trigger Events for UE-V
+author: MaggiePucciEvans
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ---
 
-# Sync Trigger Events for UE-V 2.x
+# Sync Trigger Events for UE-V
 
 
-Microsoft User Experience Virtualization (UE-V) lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V Agent synchronizes those settings with the settings storage location. UE-V 2 introduces a new *Sync Method* called the *SyncProvider*. For more information about Sync Method configuration, see [Sync Methods for UE-V 2.x](uev-sync-methods.md).
+User Experience Virtualization (UE-V) lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V service synchronizes those settings with the settings storage location. UE-V 2 introduces a new *Sync Method* called the *SyncProvider*. For more information about Sync Method configuration, see [Sync Methods for UE-V](uev-sync-methods.md).
 
 ## UE-V 2 Sync Trigger Events
 
@@ -72,7 +72,7 @@ The following table explains the trigger events for classic applications and Win
 <td align="left"><p>Store any application settings changes to settings storage location</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>Sync Controller Scheduled Task or “Sync Now” is run from the Company Settings Center</strong></p>
+<td align="left"><p><strong>Sync Controller Scheduled Task</strong></p>
 <p></p></td>
 <td align="left"><p>Application and Windows settings are synchronized between the settings storage location and the local cache.</p>
 <div class="alert">
@@ -110,11 +110,11 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 ## Related topics
 
 
-[Technical Reference for UE-V 2.x](uev-technical-reference.md)
+[Technical Reference for UE-V](uev-technical-reference.md)
 
-[Changing the Frequency of UE-V 2.x Scheduled Tasks](uev-changing-the-frequency-of-scheduled-tasks.md)
+[Changing the Frequency of UE-V Scheduled Tasks](uev-changing-the-frequency-of-scheduled-tasks.md)
 
-[Choose the Configuration Method for UE-V 2.x](http://technet.microsoft.com/library/dn458891.aspx#config)
+[Choose the Configuration Method for UE-V](http://technet.microsoft.com/library/dn458891.aspx#config)
 
  
 
