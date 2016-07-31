@@ -31,7 +31,8 @@ For more information about Windows 10 requirements, see the following topics:
 
 - [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049(v=vs.85).aspx)
 
->[!NOTE]Windows Defender Offline is not supported on machines with ARM processors, or on Windows Server Stock Keeping Units.
+>[!NOTE]
+Windows Defender Offline is not supported on machines with ARM processors, or on Windows Server Stock Keeping Units.
 
 To run Windows Defender Offline from the endpoint, the user must be logged in with administrator privileges.
  
@@ -39,7 +40,8 @@ To run Windows Defender Offline from the endpoint, the user must be logged in wi
 
 Windows Defender Offline uses the most up-to-date signature definitions available on the endpoint; it's updated whenever Windows Defender is updated with new signature definitions. Depending on your setup, this is usually though Microsoft Update or through the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
->[!NOTE]Before running an offline scan, you should attempt to update the definitions on the endpoint. You can either force an update via Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+>[!NOTE]
+Before running an offline scan, you should attempt to update the definitions on the endpoint. You can either force an update via Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
 For information on setting up Windows Defender updates, see the [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md) topic.
 
@@ -64,7 +66,8 @@ In Configuration Manager, you can identify the status of endpoints by navigating
 
 You can suppress Windows Defender Offline notifications with Group Policy. 
 
->[!NOTE]Changing these settings will affect *all* notifications from Windows Defender. Disabling notifications will mean the endpoint user will not see any messages about any threats detected, removed, or if additional steps are required.
+>[!NOTE]
+Changing these settings will affect *all* notifications from Windows Defender. Disabling notifications will mean the endpoint user will not see any messages about any threats detected, removed, or if additional steps are required.
 
 **Use Group Policy to suppress Windows Defender notifications:**
 
@@ -94,7 +97,8 @@ For more information about notifications in Windows Defender, see the [Configure
 
 Windows Defender Offline uses up-to-date threat definitions to scan the endpoint for malware that might be hidden. In Windows 10, version 1607, you can manually force an offline scan using Windows Update and Security settings.
 
->[!NOTE]Before you use Windows Defender Offline, make sure you save any files and shut down running programs. The Windows Defender Offline scan takes about 15 minutes to run. It will restart the endpoint when the scan is complete. 
+>[!NOTE]
+Before you use Windows Defender Offline, make sure you save any files and shut down running programs. The Windows Defender Offline scan takes about 15 minutes to run. It will restart the endpoint when the scan is complete. 
 
 You can set up a Windows Defender Offline scan with the following:
 
@@ -108,7 +112,8 @@ You can set up a Windows Defender Offline scan with the following:
 
 -	Group Policy
 
->[!NOTE]The scan is performed outside of the usual Windows operating environment. The user interface will appear different to a normal scan performed by Windows Defender. After the scan is completed, the endpoint will be restarted and Windows will load normally.
+>[!NOTE]
+The scan is performed outside of the usual Windows operating environment. The user interface will appear different to a normal scan performed by Windows Defender. After the scan is completed, the endpoint will be restarted and Windows will load normally.
 
 **Run Windows Defender Offline from Windows Settings:**
 
@@ -153,7 +158,7 @@ For more information about using Windows Management Instrumentation to run a sca
 
 Use the PowerShell parameter `Start-MpWDOScan` to run a Windows Defender Offline scan. 
 
-For more information on available cmdlets and optios, see the [Use PowerShell cmdlets to configure and run Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10) topic.
+For more information on available cmdlets and optios, see the [Use PowerShell cmdlets to configure and run Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md) topic.
 
 ## Review scan results
 
