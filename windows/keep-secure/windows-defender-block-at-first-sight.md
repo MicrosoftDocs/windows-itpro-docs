@@ -31,8 +31,8 @@ If the Block at First Sight feature is enabled on the client, the file will be l
  
 The file-based determination typically takes 1 to 4 seconds.
 
->[!NOTE]
-Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to be slower download times for some files.
+> [!NOTE]
+> Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to be slower download times for some files.
 
 
 ## Enable Block at First Sight
@@ -63,8 +63,8 @@ Block at First Sight requires a number of Group Policy settings to be configured
         
         1. Send all samples (3)
 
-        >[!NOTE]
-        Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the "Block at First Sight" feature will not function.
+        > [!NOTE]
+        > Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the "Block at First Sight" feature will not function.
 
     1. Click OK after both Group Policies have been set.
 
@@ -88,8 +88,8 @@ Block at First Sight requires a number of Group Policy settings to be configured
 
 1.  Double-click the **Configure the ‘Block at First Sight’ feature** setting and set the option to **Enabled**.
 
-    >[!NOTE]
-    The Block at First Sight feature will not function if the pre-requisite group policies have not been correctly set.
+    > [!NOTE]
+    > The Block at First Sight feature will not function if the pre-requisite group policies have not been correctly set.
 
 ### Manually enable Block at First Sight on Individual clients
 
@@ -105,8 +105,8 @@ To configure un-managed clients that are running Windows 10, Block at First Sigh
 
 2.	Switch **Cloud-based Protection** and **Automatic sample submission** to **On**.
 
->[!NOTE]
-These settings will be overridden if the network administrator has configured their associated Group Policies. The settings will appear grayed out and you will not be able to modify them if they are being managed by Group Policy.
+> [!NOTE]
+> These settings will be overridden if the network administrator has configured their associated Group Policies. The settings will appear grayed out and you will not be able to modify them if they are being managed by Group Policy.
 
 ## Related topics
 
