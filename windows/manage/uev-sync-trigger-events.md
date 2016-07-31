@@ -11,9 +11,9 @@ ms.prod: w10
 # Sync Trigger Events for UE-V
 
 
-User Experience Virtualization (UE-V) lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V service synchronizes those settings with the settings storage location. UE-V 2 introduces a new *Sync Method* called the *SyncProvider*. For more information about Sync Method configuration, see [Sync Methods for UE-V](uev-sync-methods.md).
+User Experience Virtualization (UE-V) lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V service synchronizes those settings with the settings storage location. For more information about Sync Method configuration, see [Sync Methods for UE-V](uev-sync-methods.md).
 
-## UE-V 2 Sync Trigger Events
+## UE-V Sync Trigger Events
 
 
 The following table explains the trigger events for classic applications and Windows settings.
@@ -26,7 +26,7 @@ The following table explains the trigger events for classic applications and Win
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>UE-V 2 Trigger Event</strong></p></td>
+<td align="left"><p><strong>UE-V Trigger Event</strong></p></td>
 <td align="left"><p><strong>SyncMethod=SyncProvider</strong></p></td>
 <td align="left"><p><strong>SyncMethod=None</strong></p></td>
 </tr>
@@ -114,7 +114,7 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 [Changing the Frequency of UE-V Scheduled Tasks](uev-changing-the-frequency-of-scheduled-tasks.md)
 
-[Choose the Configuration Method for UE-V](http://technet.microsoft.com/library/dn458891.aspx#config)
+[Choose the Configuration Method for UE-V](uev-deploy-required-features.md)
 
  
 

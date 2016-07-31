@@ -36,7 +36,7 @@
 ## [Configure devices without MDM](configure-devices-without-mdm.md)
 ## [Windows 10 servicing options](introduction-to-windows-10-servicing.md)
 ## [Application development for Windows as a service](application-development-for-windows-as-a-service.md)
-## [User Experience Virtualization for Windows 10, version 1607](uev-for-windows.md)
+## [User Experience Virtualization (UE-V)](uev-for-windows.md)
 ### [Get Started with UE-V](uev-getting-started.md)
 #### [What's New in UE-V for Windows 10, version 1607](uev-whats-new-in-uev-for-windows.md)
 ##### [User Experience Virtualization Release Notes](uev-release-notes-1607.md)
