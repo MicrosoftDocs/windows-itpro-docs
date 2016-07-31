@@ -11,7 +11,7 @@ ms.pagetype: security
 author: iaanw
 ---
 
-# The Block at First Sight feature in Windows Defender
+# Enable the Block at First Sight feature in Windows 10
 
 **Applies to**
 
