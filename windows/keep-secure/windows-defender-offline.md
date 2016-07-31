@@ -173,4 +173,4 @@ Any detected items will display. Items that are detected by Windows Defender Off
 
 ## Related topics
 
-[Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)

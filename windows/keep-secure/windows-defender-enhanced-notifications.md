@@ -19,30 +19,13 @@ author: iaanw
 
 In Windows 10, application notifications about malware detection and remediation by Windows Defender are more robust, consistent, and concise.
 
-Notifications will appear on endpoints when manually triggered and scheduled scans are completed and threats are detected. These notifications will also be seen in the **Notification Summar**, and a summary of scans and threat detections will also appear at regular time intervals.
+Notifications will appear on endpoints when manually triggered and scheduled scans are completed and threats are detected. These notifications will also be seen in the **Notification Center**, and a summary of scans and threat detections will also appear at regular time intervals.
 
 You can enable and disable enhanced notifications  with the registry or in Windows Settings. 
 
 ## Configure enhanced notifications
 
-You can disable enhanced notifications on individual endpoints by configuring the registry or in Windows Settings. You can also use Group Policy to suppress certain types of notifications, or display additional, customized text to endpoints inside the notifications.
-
-**Use the registry to disable Windows Defender notifications on individual endpoints:**
-
-1. Click **Start**, type **Run**, and press **Enter**.
-
-2. From the **Run** dialog box, type **regedit** and press **Enter**.
-
-4. In the **Registry Editor** navigate to the **ux configuration** key under:
-
-   ```text
-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
-```
-
-5. Double-click the **Notification_Suppress** value and set it to **1**.
-
-![Image of enhanced notification suppression in Registry Editor](images/defender/ux-config-key.png)
-
+You can disable enhanced notifications on individual endpoints in Windows Settings. 
 
 **Use Windows Settings to disable enhanced notifications on individual endpoints**
 
@@ -57,4 +40,4 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
 
 ## Related topics
 
-[Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)

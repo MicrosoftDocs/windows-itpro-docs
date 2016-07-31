@@ -106,4 +106,4 @@ To configure un-managed clients that are running Windows 10, Block at First Sigh
 
 ## Related topics
 
-[Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
