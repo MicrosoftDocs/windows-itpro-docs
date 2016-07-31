@@ -28,6 +28,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 |[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |New |
 |[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |New |
 |[Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |New |
+|[Windows Defender in Windows 10](windows-defender-in-windows-10.md) | New and updated topics including Windows Defender Offline, Block at First Sight, Potentially Unwanted Applications, command line management, and Enhanced notifications |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (multiple topics) | Updated |
 |[Device Guard deployment guide](device-guard-deployment-guide.md) (multiple topics) | Updated |
 
