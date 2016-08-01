@@ -148,6 +148,9 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 
 ## Related topics
 
-[Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
+[Prepare a UE-V deployment](uev-prepare-for-deployment.md)
 
-[Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
+[Deploy UE-V for use with custom applications](uev-deploy-uev-for-custom-applications.md)
+
+[Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
+

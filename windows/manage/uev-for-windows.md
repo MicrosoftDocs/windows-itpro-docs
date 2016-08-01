@@ -82,6 +82,8 @@ You can also [customize UE-V to synchronize settings](uev-deploy-uev-for-custom-
 
 -   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
+-   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
+
 -   [Administer UE-V](uev-administering-uev.md)
 
 -   [Technical Reference for UE-V](uev-technical-reference.md)

@@ -26,9 +26,9 @@ When a user generates a valid settings location template for the Skype desktop a
 
 WORKAROUND: Remove or unregister the Skype template to allow Skype to work again.
 
-### Registry settings do not synchronize between App-V and native applications on the same computer
+### Registry settings do not synchronize between App-V and native applications on the same device
 
-When a computer has an application that is installed through both Application Virtualization (App-V) and locally with a Windows Installer (.msi) file, the registry-based settings do not synchronize between the technologies.
+When a device has an application that is installed through both Application Virtualization (App-V) and locally with a Windows Installer (.msi) file, the registry-based settings do not synchronize between the technologies.
 
 WORKAROUND: To resolve this problem, run the application by selecting one of the two technologies, but not both.
 
@@ -47,12 +47,6 @@ WORKAROUND: None.
 ### UE-V does not support roaming settings between 32-bit and 64-bit versions of Microsoft Office
 
 We recommend that you install the 32-bit version of Microsoft Office for both 32-bit and 64-bit operating systems. To choose the Microsoft Office version that you need, click [here](<http://office.microsoft.com/word-help/choose-the-32-bit-or-64-bit-version-of-microsoft-office-HA010369476.aspx>). UE-V supports roaming settings between identical architecture versions of Office. For example, 32-bit Office settings will roam between all 32-bit Office instances. UE-V does not support roaming settings between 32-bit and 64-bit versions of Office.
-
-WORKAROUND: None
-
-### MSI’s are not localized
-
-UE-V includes a localized setup program for both the UE-V Agent and UE-V template generator. These MSI files are still available but the user interface is minimized and the MSI’s only display in English. Despite the file being in English, the setup program installs all supported languages during the installation.
 
 WORKAROUND: None
 

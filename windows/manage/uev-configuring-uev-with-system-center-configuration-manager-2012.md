@@ -109,7 +109,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 1.  Copy the default settings configuration file from the UE-V Config Pack installation directory to a location visible to your ConfigMgr Admin Console:
 
     ``` syntax
-    C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\AgentConfiguration.xml c:\<target path>
+    C:\Program Files (x86)\Windows Kits\10\Microsoft User Experience Virtualization\Management\AgentConfiguration.xml 
     ```
 
     The default configuration file contains five sections:
