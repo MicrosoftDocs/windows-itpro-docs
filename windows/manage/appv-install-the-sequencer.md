@@ -22,10 +22,9 @@ To install the App-V Sequencer:
 
 1.  Go to [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
-2.  Click or press the **Get Windows ADK for Windows 10** button on the page to start the ADK installer. On the screen pictured below, select **Microsoft Application Virtualization (App-V) Sequencer** and then click or press **Install**.
+2.  Click or press the **Get Windows ADK for Windows 10** button on the page to start the ADK installer. On the screen pictured below, select **Microsoft Application Virtualization (App-V) Sequencer**, and then click or press **Install**.
 
-
-![Selecting APP-V features in ADK](images/appv-adk-select-appv-feature.png)
+<!-- ![Selecting APP-V features in ADK](images/appv-adk-select-appv-feature.png) -->
 
 3.  To open the Sequencer, from the **Start** menu, select **Microsoft Application Virtualization (App-V) Sequencer** .
 
@@ -38,7 +37,7 @@ You can also use the command line to install the App-V sequencer. The following 
 | **Command**       | **Description**  |
 |-------------------|------------------|
 | /INSTALLDIR       | Specifies the installation directory.  |
-| /Log   | Specifies where the installation log will be saved, the default location is **%Temp%**. For example, **C:\\ Logs \\ log.log**.    |
+| /Log   | Specifies where the installation log will be saved, the default location is **%Temp%**. For example, **C:\\Logs\\ log.log**.    |
 | /q     | Specifies a quiet or silent installation.      |
 | /Uninstall        | Specifies the removal of the sequencer.  |
 | /ACCEPTEULA       | Accepts the license agreement. This is required for an unattended installation. Example usage: **/ACCEPTEULA** or **/ACCEPTEULA=1**.         |
@@ -56,4 +55,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micro
 
 ## Related topics
 
-[Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
+- [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
