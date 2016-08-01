@@ -86,9 +86,10 @@ You can find a complete list of the Microsoft antimalware event IDs, the symbol,
 **What PUA notifications look like**
 
 When a detection occurs, end users who enabled the PUA detection feature will see the following notification:
-
+![Image showing the potentally unwanted application detection](images/pua1.png)
 
 To see historical PUA detections that occurred on a PC, users can go to History, then **Quarantined items** or **All detected items**.
+![Image showing the potentally unwanted application detection history](images/pua2.png)
 
 **PUA threat file-naming convention**
 
