@@ -73,7 +73,7 @@ Hello also enables Windows 10 Mobile devices to be used as [a remote credential
 -   PIN entry and biometric gesture both trigger Windows 10 to verify the user's identity and authenticate using Hello keys or certificates.
 -   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
 -   Certificates are added to the Hello container and are protected by the Hello gesture.
--   Windows Update behavior: After a reboot is required by Windows Update, the last interactive user is automatically signed on without any user gesture and the session is locked so the user's lock screen apps can run.
+
 
 ## Comparing key-based and certificate-based authentication
 

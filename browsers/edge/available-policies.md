@@ -14,7 +14,6 @@ title: Available policies for Microsoft Edge (Microsoft Edge for IT Pros)
 
 - Windows 10
 - Windows 10 Mobile
-- Windows Server 2016
 
 Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
