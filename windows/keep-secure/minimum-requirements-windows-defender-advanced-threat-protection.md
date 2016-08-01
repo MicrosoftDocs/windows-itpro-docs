@@ -109,7 +109,7 @@ The Windows Defender ATP agent depends on Windows Defender’s ability to scan f
 
 When Windows Defender is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender goes on passive mode. For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](windows-defender-in-windows-10.md# compatibility-with-windows-defender-advanced-threat-protection).
 
-## Windows Defender Early Launch AntiMalware (ELAM) driver is enabled
+## Windows Defender Early Launch Antimalware (ELAM) driver is enabled
 If you're running Windows Defender as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
 
 If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information on how to validate and enable the Windows Defender ELAM driver see, [Ensure the Windows Defender ELAM driver is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-windows-defender-elam-driver-is-enabled).
