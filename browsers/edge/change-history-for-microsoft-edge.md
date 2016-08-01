@@ -14,7 +14,7 @@ For a detailed feature list of what's in the current Microsoft Edge releases, th
 ## July 2016
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Microsoft Edge - Deployment Guide for IT Pros](index.md)| Updated various topics to include a note about the Long Term Servicing Branch (LTSB). |
+|[Microsoft Edge requirements and language support](hardware-and-software-requirements.md)| Updated to include a note about the Long Term Servicing Branch (LTSB). |
 
 
 ## June 2016
