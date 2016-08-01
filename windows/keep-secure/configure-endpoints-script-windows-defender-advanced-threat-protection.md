@@ -53,7 +53,7 @@ You can manually configure the sample sharing setting on the endpoint by using *
 
 The configuration is set through the following registry key entry:
 
-```
+```text
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
