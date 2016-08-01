@@ -31,24 +31,28 @@ You need to add an application in your Azure Active Directory (AAD) tenant then 
 
 6. Choose a client name for the application, for example, *Alert Export Client*.
 
-7. Click **WEB APPLICATION AND/OR WEB API**.
+7. Select **WEB APPLICATION AND/OR WEB API** in the Type section.
 
 8. Assign a sign-on URL and app ID URI to the application, for example, `https://alertexportclient`.
 
 9. Confirm the request details and verify that you have successfully added the app.
 
-10. Select the application you've just created from the directory application list and click **Configure**.
+10. Select the application you've just created from the directory application list and click the **Configure** tab.
 
-11. Type the following URLs in the **Reply URL** field:
+11. Scroll down to the **keys** section and select a duration for the application key.
+
+12. Type the following URLs in the **Reply URL** field:
 
   - `https://DataAccess-PRD.trafficmanager.net:444/api/FetchAccessTokenFromAuthCode`
   - `https://localhost:44300/WDATPconnector`
 
-12. Scroll down to the **keys** section and select a duration for the application key.
-
 13. Click **Save** and copy the key in a safe place. You'll need this key to authenticate the client application on Azure Active Directory.
 
-14. Open a web browser and connect to the following URL: `https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=1234`. An Azure login page appears.
+14. Open a web browser and connect to the following URL: <br>
+```text
+https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=1234
+```
+An Azure login page appears.
 > [!NOTE]
 > - Replace *tenant ID* with your actual tenant ID.
 > - Keep the client secret as is. This is a dummy value, but the parameter must appear.
