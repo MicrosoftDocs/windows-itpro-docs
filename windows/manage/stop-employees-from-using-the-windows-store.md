@@ -85,8 +85,25 @@ When your MDM tool supports Windows Store for Business, the MDM can use these CS
 -   [EnterpriseAssignedAccess](https://msdn.microsoft.com/library/windows/hardware/mt157024.aspx) (Windows 10 Mobile, only)
 
 For more information, see [Configure an MDM provider](configure-mdm-provider-windows-store-for-business.md).
-## Related topics
 
+## Show private store only using Group Policy 
+Applies to Windows 10 Enterprise, version **when was this available?**.
+
+If you're using Windows Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. The Windows Store app will still be available, but will only show your private store tab, and the apps in your private store. 
+
+**To show private store only in Windows Store app**
+
+1. Type **gpedit** in the search bar, and then select **Edit group policy (Control panel)** to find and start Group Policy Editor.
+
+2. In the console tree of the snap-in, go to **User Configuration** or **Computer Configuration** > **Administrative Templates** > **Windows Components**, and then click **Store**.
+
+3. Right-click **Only display the private store within the Windows Store app** in the right pane, and click **Edit**.
+
+    This opens the **Only display the private store within the Windows Store app** policy settings.
+
+4. On the **Only display the private store within the Windows Store app** setting page, click **Enabled**, and then click **OK**.
+
+## Related topics
 
 [Distribute apps using your private store](distribute-apps-from-your-private-store.md)
 
