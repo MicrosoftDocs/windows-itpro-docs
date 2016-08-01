@@ -24,7 +24,7 @@ To install the App-V Sequencer:
 
 2.  Click or press the **Get Windows ADK for Windows 10** button on the page to start the ADK installer. Make sure that **Microsoft Application Virtualization (App-V) Sequencer** is selected during the installation.
 
-<!-- ![Selecting APP-V features in ADK](images/appv-adk-select-appv-feature.png) -->
+    ![Selecting APP-V features in ADK](images/app-v-in-adk.png)
 
 3.  To open the Sequencer, from the **Start** menu, select **Microsoft Application Virtualization (App-V) Sequencer** .
 
