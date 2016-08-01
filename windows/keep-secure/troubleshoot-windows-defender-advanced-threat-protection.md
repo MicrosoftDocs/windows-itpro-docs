@@ -40,7 +40,8 @@ U.S. region:
 - sevillefeedback-prd.trafficmanager.net			
 - sevillesettings-prd.trafficmanager.net			
 - threatintel-cus-prd.cloudapp.net			
-- threatintel-eus-prd.cloudapp.net			
+- threatintel-eus-prd.cloudapp.net
+- winatpauthorization.windows.com
 
 
 
@@ -53,7 +54,7 @@ EU region:
 - sevillesettings-prd.trafficmanager.net
 - threatintel-neu-prd.cloudapp.net
 - threatintel-weu-prd.cloudapp.net
-
+- winatpauthorization.windows.com 
 
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 
