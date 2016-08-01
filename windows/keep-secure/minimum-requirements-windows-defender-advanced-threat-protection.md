@@ -39,7 +39,9 @@ The Windows Defender ATP agent only supports the following editions of Windows 1
 - Windows 10 Pro
 - Windows 10 Pro Education
 
+Endpoints on your network must be running one of these editions.
 
+The hardware requirements for Windows Defender ATP on endpoints is the same as those for the supported editions.
 
 > [!NOTE]
 > Endpoints that are running Windows Server and mobile versions of Windows are not supported.
