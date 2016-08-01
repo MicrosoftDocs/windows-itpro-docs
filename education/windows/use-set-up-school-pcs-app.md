@@ -7,7 +7,6 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 author: jdeckerMS
-localizationpriority: medium
 ---
 
 # Use the Set up School PCs app 

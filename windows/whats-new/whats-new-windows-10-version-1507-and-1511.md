@@ -298,6 +298,14 @@ A standard, customized Start layout can be useful on devices that are common to 
 
 Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](../manage/windows-spotlight.md).
 
+### Windows Store for Business
+**New in Windows 10, version 1511**
+
+With the Windows Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps. 
+
+For more information, see [Windows Store for Business overview](../manage/windows-store-for-business-overview.md).
+
+
 ## Updates
 
 Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.

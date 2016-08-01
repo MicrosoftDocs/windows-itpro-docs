@@ -20,7 +20,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Imaging and Configuration Designer (ICD)
 
-In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install additional features for Windows ICD to run. Starting in version 1607, you can install just the configuration designer component independent of the rest of the imaging components. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
@@ -43,8 +43,8 @@ When Windows 10 first shipped, it included Microsoft Passport and Windows Hello,
 Additional changes for Windows Hello in Windows 10, version 1607:
 
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. 
-- Group Policy for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**. 
-- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.
+- Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**. 
+<!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
 
@@ -64,6 +64,16 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 - [General guidance and best practices for Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/guidance-and-best-practices-wip)
 
 [Learn more about Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)
+
+### Windows Defender
+Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
+
+- [Windows Defender Offline in Windows 10](windows-defender-offline.md) can be run directly from within Windows, without having to create bootable media. 
+- [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
+- [Run a Windows Defender scan from the command line](run-cmd-windows-defender-for-windows-10.md).
+- [Detect and block Potentially Unwanted Applications](enable-pua-windows-defender-for-windows-10.md) during download and install times.
 
 ## Management
 

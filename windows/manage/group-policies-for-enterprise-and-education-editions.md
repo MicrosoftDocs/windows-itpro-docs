@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: brianlic-msft
+localizationpriority: high
 ---
 
 # Group Policies that apply only to Windows 10 Enterprise and Education Editions
@@ -20,7 +21,7 @@ In Windows 10, version 1607, the following Group Policies apply only to Windows 
 | **Configure Spotlight on lock screen** | User Configuration > Administrative Templates > Windows Components > Cloud Content | For more info, see [Windows spotlight on the lock screen](windows-spotlight.md). Note that an additional **Cloud Content** policy, **Do not suggest third-party content in Windows spotlight**, does apply to Windows 10 Pro. |
 | **Turn off all Windows Spotlight features** | User Configuration > Administrative Templates > Windows Components > Cloud Content | For more info, see [Windows spotlight on the lock screen](windows-spotlight.md) |
 | **Turn off Microsoft consumer features** | Computer Configuration > Administrative Templates > Windows Components > Cloud Content | For more info, see [Windows spotlight on the lock screen](windows-spotlight.md) |
-| **Do not display the lock screen** | Computer Configuration > Administrative Templates > Control Panel > Personalization | For more info, see [Windows spotlight on the lock screen](windows-spotlight.md |
+| **Do not display the lock screen** | Computer Configuration > Administrative Templates > Control Panel > Personalization | For more info, see [Windows spotlight on the lock screen](windows-spotlight.md) |
 | **Do not require CTRL+ALT+DEL** </br>combined with</br>**Turn off app notifications on the lock screen** | Computer Configuration > Administrative Templates > System > Logon </br>and</br>Computer Configuration > Windows Settings > Security Settings > Local Policies > Security Options > Interactive logon | When both of these policy settings are enabled, the combination will also disable lock screen apps ([assigned access](set-up-a-device-for-anyone-to-use.md)) on Windows 10 Enterprise and Windows 10 Education only. These policy settings can be applied to Windows 10 Pro, but lock screen apps will not be disabled on Windows 10 Pro. </br></br>**Important:** The description for **Interactive logon: Do not require CTRL+ALT+DEL** in the Group Policy Editor incorrectly states that it only applies to Windows 10 Enterprise and Education. The description will be corrected in a future release.|
 | **Do not show Windows Tips** | Computer Configuration > Administrative Templates > Windows Components > Cloud Content | For more info, see [Windows spotlight on the lock screen](windows-spotlight.md |
 | **Force a specific default lock screen image** | Computer Configuration > Administrative Templates > Control Panel > Personalization | For more info, see [Windows spotlight on the lock screen](windows-spotlight.md) |
