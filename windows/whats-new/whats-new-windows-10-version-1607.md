@@ -38,17 +38,17 @@ Isolated User Mode is now included with Hyper-V so you don't have to install it 
 
 ### Windows Hello for Business
 
-When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics. 
+When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
 
 Additional changes for Windows Hello in Windows 10, version 1607:
 
-- Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. 
-- Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**. 
+- Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
+- Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
 <!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
 
-### VPN 
+### VPN
 
 - The VPN client can integrate with the Conditional Access Framework, a cloud-pased policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](../keep-secure/protect-enterprise-data-using-edp.md), previously known as Enterprise Data Protection.
@@ -68,11 +68,11 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 ### Windows Defender
 Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
 
-- [Windows Defender Offline in Windows 10](windows-defender-offline.md) can be run directly from within Windows, without having to create bootable media. 
+- [Windows Defender Offline in Windows 10](windows-defender-offline.md) can be run directly from within Windows, without having to create bootable media.
 - [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md) to configure options and run scans.
 - [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md) to leverage the Windows Defender cloud for near-instant protection against new malware.
 - [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
-- [Run a Windows Defender scan from the command line](run-cmd-windows-defender-for-windows-10.md).
+- [Run a Windows Defender scan from the command line](run-cmd-scan-windows-defender-for-windows-10.md).
 - [Detect and block Potentially Unwanted Applications](enable-pua-windows-defender-for-windows-10.md) during download and install times.
 
 ## Management
