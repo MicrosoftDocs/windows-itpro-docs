@@ -55,7 +55,7 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
   </tr>
   <tr>
   <td>Endpoint URL</td>
-  <td>```https://DataAccess-PRD.trafficmanager.net:444/api/alerts```</td>
+  <td>https<span></span>://DataAccess-PRD.trafficmanager.net:444/api/alerts</td>
   </tr>
   <tr>
   <td>HTTP Method</td>
