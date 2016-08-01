@@ -714,7 +714,7 @@
 #### [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md)
 #### [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md)
 #### [Run a Windows Defender scan from the command line](run-cmd-scan-windows-defender-for-windows-10.md)
-#### [Detect and block Potentially Unwanted Applications](enable-pua-windows-defender-for-windows-10.md)
+#### [Detect and block Potentially Unwanted Applications with Windows Defender](enable-pua-windows-defender-for-windows-10.md)
 #### [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
 ### [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 #### [Isolating Windows Store Apps on Your Network](isolating-apps-on-your-network.md)
