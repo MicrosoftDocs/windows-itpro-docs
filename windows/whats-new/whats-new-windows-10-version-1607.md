@@ -75,6 +75,11 @@ Several new features and management options have been added to Windows Defender 
 - [Run a Windows Defender scan from the command line](../keep-secure/run-cmd-scan-windows-defender-for-windows-10.md).
 - [Detect and block Potentially Unwanted Applications with Windows Defender](../keep-secure/enable-pua-windows-defender-for-windows-10.md) during download and install times.
 
+### Windows Defender Advanced Threat Protection (ATP)
+With the growing threat from more sophisticated targeted attacks, a new security solution is imperative in securing an increasingly complex network ecosystem. Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service, built into Windows 10 that enables enterprise customers detect, investigate, and respond to advanced threats on their networks.
+
+[Learn more about Windows Defender Advanced Threat Protection (ATP)](../keep-secure/windows-defender-advanced-threat-protection.md)
+
 ## Management
 
 ### Use Remote Desktop Connection for PCs joined to Azure Active Directory
