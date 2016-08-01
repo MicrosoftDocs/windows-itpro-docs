@@ -350,12 +350,12 @@ Configuration Manager and MDM provide the ability to manage Windows Hello for Bu
 
 Azure AD provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
 
-Active Directory provides the ability to authorize users and devices using keys protected by Windows Hello for Business if domain controllers are running Windows 10 and the Windows Hello for Business provisioning service in Windows 10 AD FS.
 
 ## Windows Hello for BYOD
 
-Windows Hello can be managed on personal devices that your employees use for work purposes using MDM. On personal devices, users can create a personal Windows Hello PIN for unlocking the device and a separate work PIN for access to work resources.
-The work PIN is managed using the same Windows Hello for Business policies that you can use to manage Windows Hello for Business on organization-owned devices. The personal PIN is managed separately using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](http://go.microsoft.com/fwlink/p/?LinkID=623244).
+Windows Hello can be managed on personal devices that your employees use for work purposes using MDM. On personal devices, users can create a personal Windows Hello PIN for unlocking the device and used this PIN for access to work resources.
+
+The PIN is managed using the same Windows Hello for Business policies that you can use to manage Windows Hello for Business on organization-owned devices. The PIN can also be managed using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](http://go.microsoft.com/fwlink/p/?LinkID=623244).
 
 ## Related topics
 
