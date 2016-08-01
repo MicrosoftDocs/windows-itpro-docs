@@ -1,7 +1,7 @@
 ---
 title: Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate (Windows 10)
 description: Follow these steps to create, verify, and perform a quick recovery by using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
-keywords: Windows Information Protection, WIP, WIP, Enterprise Data Protection
+keywords: Windows Information Protection, WIP, EDP, Enterprise Data Protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -11,17 +11,15 @@ ms.pagetype: security
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
 **Applies to:**
 
--   Windows 10 Insider Preview
--   Windows 10 Mobile Preview
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+-   Windows 10, version 1607
+-   Windows 10 Mobile
 
 If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
 
 The recovery process included in this topic only works for desktop devices. WIP deletes the data on Windows 10 Mobile devices.   
 
 >**Important**<br>
-If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/en-us/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/en-us/library/cc875821.aspx).<p>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
+If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx).<p>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
 
 **To manually create an EFS DRA certificate**
 
@@ -43,9 +41,9 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as Microsoft Intune or System Center Configuration Manager. 
 
     >**Note**<br>
-    To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-edp-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) topic.
+    To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) topic.
 
-**To verify your data recovery certificate is correctly set up on an WIP client computer**
+**To verify your data recovery certificate is correctly set up on a WIP client computer**
 
 1. Find or create a file that's encrypted using Windows Information Protection. For example, you could open an app on your allowed app list, and then create and save a file so it’s encrypted by WIP. 
 
@@ -95,15 +93,15 @@ It's possible that you might revoke data from an unenrolled device only to later
     The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location.
 
 ## Related topics
-- [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/en-us/magazine/2007.02.securitywatch.aspx)
+- [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)
 
-- [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/en-us/library/cc875821.aspx)
+- [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx)
 
-- [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-edp-policy-using-intune.md)
+- [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)
 
-- [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md)
+- [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md)
 
-- [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/en-us/library/cc875821.aspx#EJAA)
+- [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
 
 
 

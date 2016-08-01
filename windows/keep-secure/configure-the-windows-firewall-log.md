@@ -14,7 +14,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 To configure Windows Firewall to log dropped packets or successful connections, use the Windows Firewall with Advanced Security node in the Group Policy Management MMC snap-in.
 

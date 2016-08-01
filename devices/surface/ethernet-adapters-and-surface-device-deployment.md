@@ -58,8 +58,7 @@ To boot a Surface device from an alternative boot device, follow these steps:
 >**Note:**&nbsp;&nbsp;In addition to an Ethernet adapter, a keyboard must also be connected to the Surface device to enter the preinstallation environment and navigate the deployment wizard.
 
  
-
-To support booting from the network in a Windows Preinstallation Environment (WinPE), such as is used in the Microsoft Deployment Toolkit and Configuration Manager, you must add drivers for the Ethernet adapter to WinPE. You can download the drivers for Surface Ethernet adapters from the Microsoft Download Center page for your specific device. For a list of the available downloads for Surface devices, see [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
+For Windows 10, version 1511 and later – including the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10, version 1511 – the drivers for Microsoft Surface Ethernet Adapters are present by default. If you are using a deployment solution that uses Windows Preinstallation Environment (WinPE), like the Microsoft Deployment Toolkit, and booting from the network with PXE, ensure that your deployment solution is using the latest version of the Windows ADK.
 
 ## <a href="" id="manage-mac-addresses"></a>Manage MAC addresses with removable Ethernet adapters
 
