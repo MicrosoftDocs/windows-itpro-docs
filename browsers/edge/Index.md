@@ -14,7 +14,6 @@ title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros
 
 - Windows 10
 - Windows 10 Mobile
-- Windows Server 2016
 
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge also introduces new features like Web Note, Reading View, and Cortana that you can use along with your normal web browsing abilities.
 
