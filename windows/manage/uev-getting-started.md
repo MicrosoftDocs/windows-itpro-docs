@@ -14,8 +14,8 @@ Applies to: Windows 10, version 1607
 
 Follow the steps in this topic to deploy User Experience Virtualization (UE-V) in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
 
-**Note**
-The information in this section is explained in greater detail throughout the rest of the documentation. If you’ve already determined that UE-V is the right solution and you don’t need to further evaluate it, go to Prepare a UE-V deployment.
+>**Note**
+The information in this section is explained in greater detail throughout the rest of the documentation. If you’ve already determined that UE-V is the right solution and you don’t need to further evaluate it, see [Prepare a UE-V deployment](uev-prepare-for-deployment.md.)
 
 The standard installation of UE-V synchronizes the default Microsoft Windows and Office settings and many Windows applications settings. For best results, ensure that your test environment includes two or more user computers that share network access.
 
@@ -51,14 +51,14 @@ You’ll need to deploy a settings storage location, a standard network share wh
 
 3.  Assign UE-V users permission to create a directory when they connect. Grant full permission to all subdirectories of that directory, but block access to anything above.
 
-    1.  Set the following share-level Server Message Block (SMB) permissions for the settings storage location folder.
+4.  Set the following share-level Server Message Block (SMB) permissions for the settings storage location folder.
 
     | **User account**             | **Recommended permissions** |
     |------------------------------|-----------------------------|
     | Everyone                     | No permissions              |
     | Security group of UE-V users | Full control                |
 
-    2.  Set the following NTFS file system permissions for the settings storage location folder.
+5.  Set the following NTFS file system permissions for the settings storage location folder.
 
     | **User account**             | **Recommended permissions**                       | **Folder**                |
     |------------------------------|---------------------------------------------------|---------------------------|
@@ -77,17 +77,11 @@ For evaluation purposes, enable the service on at least two devices that belong 
 
 The UE-V service is the client-side component that captures user-personalized application and Windows settings and saves them in settings packages. Settings packages are built, locally stored, and copied to the settings storage location.
 
-Before enabling the UE-V service, ensure that you’ve completed the following tasks:
+Before enabling the UE-V service, you'll need to register the UE-V templates for first use. In a PowerShell window, type `register-TemplateName` where **TemplateName** is the name of the UE-V template you want to register, and press ENTER.
 
--   Configure the settings storage location
+With Windows 10, version 1607 and later, the UE-V service is installed on user devices when the operating system is installed. Enable the service to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell.
 
--   Configure the template storage location path
-
--   Register the UE-V templates for first use. In a PowerShell window, type `register-<TemplateName>` where “TemplateName” is the name of the UE-V template you want to register, and press ENTER.
-
-With Windows 10, version 1607 and later, the UE-V service is installed on user devices. Enable the service to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell.
-
-To enable the UE-V service with Group Policy:
+**To enable the UE-V service with Group Policy**
 
 1.  Open the device’s **Group Policy Editor**.
 
@@ -97,7 +91,7 @@ To enable the UE-V service with Group Policy:
 
 4.  Restart the device.
 
-To enable the UE-V service with Windows PowerShell:
+**To enable the UE-V service with Windows PowerShell**
 
 1.  In a PowerShell window, type **Enable-UEV** and press ENTER.
 
@@ -111,28 +105,28 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
 1.  On the first device (Computer A), make one or more of these changes:
 
-    1.  Open Windows Desktop and move the taskbar to a different location in the window.
+    -   Open Windows Desktop and move the taskbar to a different location in the window.
 
-    2.  Change the default fonts.
+    -   Change the default fonts.
 
-    3.  Open Notepad and set format -&gt; word wrap **on**.
+    -   Open Notepad and set format -&gt; word wrap **on**.
 
-    4.  Change the behavior of any Windows app, as detailed in [Managing UE-V settings location templates using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
+    -   Change the behavior of any Windows application, as detailed in [Managing UE-V settings location templates using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
 
-    5.  Disable Microsoft Account settings synchronization and roaming profiles.
+    -   Disable Microsoft Account settings synchronization and roaming profiles.
 
 2.  Log off Computer A. Settings are saved in a UE-V settings package when users lock, logoff, exit an application, or when the sync provider runs (every 30 minutes by default).
 
 3.  Log in to the second device (Computer B) as the same user as Computer A.
 
-4.  Open Windows Desktop and verify that the taskbar location matches that of Computer A. Verify that the default fonts match and that Notepad is set to **word wrap on**. Also verify the change you made to any Windows app.
+4.  Open Windows Desktop and verify that the taskbar location matches that of Computer A. Verify that the default fonts match and that NotePad is set to **word wrap on**. Also verify the change you made to any Windows applications.
 
-You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
+5.  You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
 
 Other resources for this feature
 --------------------------------
 
--   [User Experience Virtualization](uev-for-windows.md)
+-   [User Experience Virtualization overview](uev-for-windows.md)
 
 -   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
