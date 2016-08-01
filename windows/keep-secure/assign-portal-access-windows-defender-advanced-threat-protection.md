@@ -36,7 +36,7 @@ Assigning read only access rights requires adding the users to the “Security R
 
 Use the following steps to assign security roles:
 - Preparations:
-    - Install Azure PowerShell. For more information see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/).
+    - Install Azure PowerShell. For more information see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/).<br> 
         > [!NOTE]
         > You need to run the PowerShell cmdlets in an elevated command-line. 
 - Connect to your Azure Active Directory. For more information see, [Connect-MsolService](https://msdn.microsoft.com/en-us/library/dn194123.aspx).
