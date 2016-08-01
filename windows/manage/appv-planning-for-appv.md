@@ -11,11 +11,9 @@ ms.prod: w10
 
 # Planning for App-V
 
-
-Use this information to plan how to deploy Microsoft Application Virtualization (App-V) so that it does not disrupt your users or the network.
+Use this information to plan how to deploy App-V so that it does not disrupt your users or the network.
 
 ## Planning information
-
 
 -   [Preparing Your Environment for App-V](appv-preparing-your-environment.md)
 
@@ -31,15 +29,13 @@ Use this information to plan how to deploy Microsoft Application Virtualization 
 
 ## Have a suggestion for App-V?
 
-
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## <a href="" id="other-resources-for-app-v-5-1-planning-"></a>Other resources for App-V Planning
-
+## Other resources for App-V planning
 
 -   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
 
--   [Getting Started with App-V](appv-getting-started.md)
+-   [Getting started with App-V](appv-getting-started.md)
 
 -   [Deploying App-V](appv-deploying-appv.md)
 
@@ -47,13 +43,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 -   [Troubleshooting App-V](appv-troubleshooting.md)
 
--   [Technical Reference for App-V](appv-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
+-   [Technical reference for App-V](appv-technical-reference.md)

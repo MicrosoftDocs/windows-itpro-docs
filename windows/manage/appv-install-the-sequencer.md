@@ -15,18 +15,19 @@ Use the App-V Sequencer to convert Win32 applications into virtual packages for 
 
 The App-V Sequencer is included in the Windows 10 Assessment and Deployment Kit (Windows ADK).
 
-**Note**  The computer that will run the sequencer must not have the App-V client enabled on it. As a best practice, choose a computer with the same hardware and software configurations as the computers that will run the virtual applications. The sequencing process is resource intensive, so make sure that the computer that runs the Sequencer has plenty of memory, a fast processor, and a fast hard drive.
+> [!NOTE]  
+> The computer that will run the sequencer must not have the App-V client enabled on it. As a best practice, choose a computer with the same hardware and software configurations as the computers that will run the virtual applications. The sequencing process is resource intensive, so make sure that the computer that runs the Sequencer has plenty of memory, a fast processor, and a fast hard drive.
 
 To install the App-V Sequencer:
 
-1.  Go to [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).
+1.  Go to [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
 2.  Click or press the **Get Windows ADK for Windows 10** button on the page to start the ADK installer. On the screen pictured below, select **Microsoft Application Virtualization (App-V) Sequencer** and then click or press **Install**.
 
 
 ![Selecting APP-V features in ADK](images/appv-adk-select-appv-feature.png)
 
-3.  To open the Sequencer, from the **Start** menu, select **Microsoft Application Virtualization Sequencer** .
+3.  To open the Sequencer, from the **Start** menu, select **Microsoft Application Virtualization (App-V) Sequencer** .
 
 See [Creating and managing virtual applications](appv-creating-and-managing-virtualized-applications.md) and the [Application Virtualization Sequencing Guide](http://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V%205.0%20Sequencing%20Guide.docx) for information about creating virtual applications with the Sequencer.
 

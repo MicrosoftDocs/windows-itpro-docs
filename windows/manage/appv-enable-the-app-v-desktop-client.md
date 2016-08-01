@@ -18,7 +18,7 @@ With Windows 10, the App-V client is installed automatically. You need to enable
 
 1.  Open the device’s **Local Group Policy Editor**.
 
-2.  Navigate to **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **App-V**.
+2.  Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
 
 3.  Run **Enables App-V Client** and then select **Enabled** on the screen that appears.
 
