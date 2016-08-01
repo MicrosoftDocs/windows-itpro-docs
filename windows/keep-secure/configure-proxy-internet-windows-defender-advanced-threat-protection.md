@@ -81,7 +81,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     ```
     Replace *HardDrivePath* with the path where the WDATPConnectivityAnalyzer tool was downloaded to, for example 
     ```text
-    C:\Work\tools\WDATPConnectivityAnalyzer\WDATPConnectivityAnalyzercmd
+    C:\Work\tools\WDATPConnectivityAnalyzer\WDATPConnectivityAnalyzer.cmd
     ```
 
 5. Extract the *WDATPConnectivityAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
