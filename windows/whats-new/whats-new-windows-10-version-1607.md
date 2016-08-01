@@ -20,7 +20,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Imaging and Configuration Designer (ICD)
 
-In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install additional features for Windows ICD to run. Starting in version 1607, you can install just the configuration designer component independent of the rest of the imaging components. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
@@ -38,22 +38,23 @@ Isolated User Mode is now included with Hyper-V so you don't have to install it 
 
 ### Windows Hello for Business
 
-When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics. 
+When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
 
 Additional changes for Windows Hello in Windows 10, version 1607:
 
-- Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. 
-- Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**. 
+- Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
+- Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
 <!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
 
-### VPN 
+### VPN
 
 - The VPN client can integrate with the Conditional Access Framework, a cloud-pased policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](../keep-secure/protect-enterprise-data-using-edp.md), previously known as Enterprise Data Protection.
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
 - Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
+
 
 ### Windows Information Protection (WIP), formerly known as enterprise data protection (EDP)
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
@@ -64,6 +65,16 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 - [General guidance and best practices for Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/guidance-and-best-practices-wip)
 
 [Learn more about Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)
+
+### Windows Defender
+Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
+
+- [Windows Defender Offline in Windows 10](../keep-secure/windows-defender-offline.md) can be run directly from within Windows, without having to create bootable media.
+- [Use PowerShell cmdlets for Windows Defender](../keep-secure/use-powershell-cmdlets-windows-defender-for-windows-10.md) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](../keep-secure/windows-defender-block-at-first-sight.md) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](../keep-secure/windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
+- [Run a Windows Defender scan from the command line](../keep-secure/run-cmd-scan-windows-defender-for-windows-10.md).
+- [Detect and block Potentially Unwanted Applications with Windows Defender](../keep-secure/enable-pua-windows-defender-for-windows-10.md) during download and install times.
 
 ## Management
 

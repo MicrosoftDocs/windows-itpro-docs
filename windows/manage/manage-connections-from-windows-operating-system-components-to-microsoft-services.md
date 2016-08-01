@@ -149,7 +149,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 - Added a section on how to turn off automatic root updates to stop updating the certificate trust list in [1. Certificate trust lists](#certificate-trust-lists).
 - Added a new setting in [25. Windows Update](#bkmk-wu). 
 - Changed the NCSI URL in [11. Network Connection Status Indicator](#bkmk-ncsi).
-- Added a section on how to turn off the automatic download of the Microsoft Account configuration file in [10. Microsoft Account](#bkmk-microsoft-account).
+- Added a section on how to turn off features that depend on Microsoft Account cloud authentication service [10. Microsoft Account](#bkmk-microsoft-account).
 
 - Added the following Group Policies:
 
@@ -356,7 +356,7 @@ To turn off the Windows Mail app:
 
 ### <a href="" id="bkmk-microsoft-account"></a>10. Microsoft Account
 
-To turn off the automatic download of the Microsoft Account configuration file:
+To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways.
 
 -   Change the **Start** REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentControlSet\\Services\\wlidsvc** to 4.
 

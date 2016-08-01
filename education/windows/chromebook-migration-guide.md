@@ -8,7 +8,6 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu, devices
 author: craigash
-localizationpriority: medium
 ---
 
 # Chromebook migration guide
