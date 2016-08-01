@@ -84,10 +84,6 @@ You can also [customize UE-V to synchronize settings](uev-deploy-uev-for-custom-
 
 -   [Administer UE-V](uev-administering-uev.md)
 
-<!-- Are we keeping the troubleshooting topic? 
--   [Troubleshoot UE-V](uev-troubleshooting.md) 
--->
-
 -   [Technical Reference for UE-V](uev-technical-reference.md)
 
 ## Have a suggestion for UE-V?

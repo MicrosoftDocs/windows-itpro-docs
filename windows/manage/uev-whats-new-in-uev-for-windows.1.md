@@ -16,7 +16,7 @@ User Experience Virtualization (UE-V) for Windows 10, version 1607, includes the
 
 ## UE-V is now a feature in Windows 10
 
-With Windows 10, version 1607 and later releases, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and no longer part of the Microsoft Desktop Optimization Pack. 
+With Windows 10, version 1607 and later releases, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack. 
 
 The changes in UE-V for Windows 10, version 1607 impact already existing implementations of UE-V in the following ways:
 
@@ -24,9 +24,7 @@ The changes in UE-V for Windows 10, version 1607 impact already existing impleme
 
 - The UE-V template generator is available from the Windows 10 ADK. In previous releases of UE-V, the template generator was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new template generator to create new settings location templates, existing settings location templates will continue to work. 
 
-For more information about how to configure an existing UE-V installation after upgrading user devices to Windows 10, see .
-
-<!-- CREATE LINK AT END OF PREVIOUS PARAGRAPH. -->
+For more information about how to configure an existing UE-V installation after upgrading user devices to Windows 10, see [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md).
 
 > **Important**&nbsp;&nbsp;You can upgrade your existing UE-V installation to Windows 10 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you’ll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10.
 
