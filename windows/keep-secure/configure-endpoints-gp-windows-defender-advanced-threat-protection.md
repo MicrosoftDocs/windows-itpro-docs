@@ -87,7 +87,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3.	Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click Edit.
+3.	Open the [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 4.	In the **Group Policy Management Editor**, go to **Computer configuration,** then **Preferences**, and then **Control panel settings**.
 
