@@ -25,7 +25,7 @@ There are some minimum requirements for onboarding your network and endpoints.
 ## Minimum requirements
 
 ### Network and data storage and configuration requirements
-When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: in either a European or United States datacenter.
+When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: either in a European or United States datacenter.
 
 > **Notes**&nbsp;&nbsp;
 -   You cannot change your data storage location after the first-time setup.
@@ -49,7 +49,7 @@ The hardware requirements for Windows Defender ATP on endpoints is the same as t
 #### Internet connectivity
 Internet connectivity on endpoints is required.
 
-SENSE can utilize up to 5MB daily of bandwidth in order to communicate with the Windows Defender ATP cloud service and report cyber data.
+SENSE can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
 
 > [!NOTE]
 > SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
