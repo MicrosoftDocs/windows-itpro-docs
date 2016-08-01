@@ -12,7 +12,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
 
@@ -278,6 +278,7 @@ DG_Readiness_Tool_v2.0.ps1 -Ready
     -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password. Attempts to use saved credentials will fail, displaying the error message "Logon attempt failed".
     -   Applications that extract derived domain credentials from Credential Manager will no longer be able to use those credentials.
     -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
+    - Credential Guard uses hardware security so some features, such as Windows To Go, are not supported.
 
 ### Kerberos Considerations
 
@@ -289,7 +290,7 @@ Some ways to store credentials are not protected by Credential Guard, including:
 
 -   Software that manages credentials outside of Windows feature protection
 -   Local accounts and Microsoft Accounts
--   Credential Guard does not protect the Active Directory database running on Windows Server 2016 Technical Preview domain controllers. It also does not protect credential input pipelines, such as Windows Server 2016 Technical Preview servers running Remote Desktop Gateway. If you're using a Windows Server 2016 Technical Preview server as a client PC, it will get the same protection as it would be running Windows 10 Enterprise.
+-   Credential Guard does not protect the Active Directory database running on Windows Server 2016 domain controllers. It also does not protect credential input pipelines, such as Windows Server 2016 servers running Remote Desktop Gateway. If you're using a Windows Server 2016 server as a client PC, it will get the same protection as it would be running Windows 10 Enterprise.
 -   Key loggers
 -   Physical attacks
 -   Does not prevent an attacker with malware on the PC from using the privileges associated with any credential. We recommend using dedicated PCs for high value accounts, such as IT Pros and users with access high value assets in your organization.
@@ -327,7 +328,7 @@ Enabling compound authentication also enables Kerberos armoring, which provides 
 
 ### Deploying machine certificates
 
-If the domain controllers in your organization are running Windows Server 2016 Technical Preview, devices running Windows 10 will automatically enroll a machine certificate when Credential Guard is enabled and the PC is joined to the domain.
+If the domain controllers in your organization are running Windows Server 2016, devices running Windows 10 will automatically enroll a machine certificate when Credential Guard is enabled and the PC is joined to the domain.
 If the domain controllers are running Windows Server 2012 R2, the machine certificates must be provisioned manually on each device. You can do this by creating a certificate template on the domain controller or certificate authority and deploying the machine certificates to each device.
 The same security procedures used for issuing smart cards to users should be applied to machine certificates.
 

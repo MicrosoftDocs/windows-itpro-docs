@@ -23,7 +23,7 @@ After enrollment in Hello, users should use their gesture (such as a PIN or fing
 
 Although the organization may require users to change their Active Directory or Azure Active Directory (AD) account password at regular intervals, changes to their passwords have no effect on Hello.
 
-People who are currently using virtual smart cards for authentication can use their virtual smart card to verify their identity when they set up Hello.
+People who are currently using virtual or physical smart cards for authentication can use their virtual smart card to verify their identity when they set up Hello.
 
 ## On devices owned by the organization
 
@@ -35,13 +35,13 @@ Next, they select a way to connect. Tell the people in your enterprise which opt
 
 ![choose how you'll connect](images/connect.png)
 
-They sign in, and are then asked to verify their identity. People have options to choose from, such as a text message, phone call, or authentication app. After verification, they create their PIN. The **Create a work PIN** screen displays any complexity requirements that you have set, such as minimum length.
+They sign in, and are then asked to verify their identity. People have options to choose from, such as a text message, phone call, or authentication app. After verification, they create their PIN. The **Create a PIN** screen displays any complexity requirements that you have set, such as minimum length.
 
 After Hello is set up, people use their PIN to unlock the device, and that will automatically log them on.
 
 ## On personal devices
 
-People who want to access work resources on their personal devices can add a work or school account in **Settings** &gt; **Accounts** &gt; **Work or school**, and then sign in with work credentials. The person selects the method for receiving the verification code, such as text message or email. The verification code is sent and the person then enters the verification code. After verification, the person enters and confirms new PIN. The person can access any token-based resource using this device without being asked for credentials. (This work account gesture doesn't affect the device unlock PIN.)
+People who want to access work resources on their personal devices can add a work or school account in **Settings** &gt; **Accounts** &gt; **Work or school**, and then sign in with work credentials. The person selects the method for receiving the verification code, such as text message or email. The verification code is sent and the person then enters the verification code. After verification, the person enters and confirms new PIN. The person can access any token-based resource using this device without being asked for credentials. 
 
 People can go to **Settings** &gt; **Accounts** &gt; **Work or school**, select the work account, and then select **Unjoin** to remove the account from their device.
 
@@ -83,10 +83,15 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
 
 **Sign in to PC using the phone**
 
+<<<<<<< HEAD
 1.  Open the **Microsoft Authenticator** app, choose your account, and tap the name of the PC to sign in to.
     > **Note: **  The first time that you run the **Microsoft Authenticator** app, you must add an account.
     
     ![select a device](images/phone-signin-device-select.png)
+=======
+1.  Open the **Microsoft Authenticator** app and tap the name of the PC to sign in to.
+    > **Note: **  The first time that you run the **Microsoft Authenticator** app, you must add an account.
+>>>>>>> parent of 9891b67... from master
      
 2.  Enter the work PIN that you set up when you joined the phone to the cloud domain or added a work account.
 

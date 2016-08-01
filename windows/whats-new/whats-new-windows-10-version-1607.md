@@ -55,6 +55,7 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
 - Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
 
+
 ### Windows Information Protection (WIP), formerly known as enterprise data protection (EDP)
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
 
@@ -74,6 +75,11 @@ Several new features and management options have been added to Windows Defender 
 - [Configure enhanced notifications for Windows Defender in Windows 10](../keep-secure/windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
 - [Run a Windows Defender scan from the command line](../keep-secure/run-cmd-scan-windows-defender-for-windows-10.md).
 - [Detect and block Potentially Unwanted Applications with Windows Defender](../keep-secure/enable-pua-windows-defender-for-windows-10.md) during download and install times.
+
+### Windows Defender Advanced Threat Protection (ATP)
+With the growing threat from more sophisticated targeted attacks, a new security solution is imperative in securing an increasingly complex network ecosystem. Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service, built into Windows 10 that enables enterprise customers detect, investigate, and respond to advanced threats on their networks.
+
+[Learn more about Windows Defender Advanced Threat Protection (ATP)](../keep-secure/windows-defender-advanced-threat-protection.md).
 
 ## Management
 

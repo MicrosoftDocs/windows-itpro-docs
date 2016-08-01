@@ -14,7 +14,7 @@ author: brianlic-msft
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 -   Windows 10 IoT Core (IoT Core)
 
 This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows 10.
@@ -104,7 +104,7 @@ For end consumers, TPM is behind the scenes but still very relevant for Hello, P
 
 -   TPM is optional on IoT Core.
 
-### Windows Server 2016 Technical Preview
+### Windows Server 2016
 
 -   TPM is optional for Windows Server SKUs unless the SKU meets the additional qualification (AQ) criteria for the Host Guardian Services scenario in which case TPM 2.0 is required.
 
