@@ -311,13 +311,13 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 <td>46</td>
 <td>Failed to register and start the event trace session [%1] due to lack of resources. Error code: %2. This is most likely because there are too many active event trace sessions. The service will retry in 1 minute.</td>
 <td>An error occurred on service startup while creating ETW session due to lack of resources. The service started and is running, but will not report any sensor event until the ETW session is started.</td>
-<td>No action required. The service will try to start the session every minute.</td>
+<td>Normal operating notification; no action required. The service will try to start the session every minute.</td>
 </tr>
 <tr>
 <td>47</td>
 <td>Successfully registered and started the event trace session - recovered after previous failed attempts.</td>
 <td>This event follows the previous event after successfully starting of the ETW session.</td>
-<td>No action required.</td>
+<td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
 <td>48</td>
