@@ -15,7 +15,7 @@ Applies to: Windows 10, version 1607
 Follow the steps in this topic to deploy User Experience Virtualization (UE-V) for the first time in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
 
 >**Note**
-The information in this section is explained in greater detail throughout the rest of the documentation. If you’ve already determined that UE-V is the right solution and you don’t need to further evaluate it, see [Prepare a UE-V deployment](uev-prepare-for-deployment.md.)
+The information in this section is explained in greater detail throughout the rest of the documentation. If you’ve already determined that UE-V is the right solution and you don’t need to further evaluate it, see [Prepare a UE-V deployment](uev-prepare-for-deployment.md).
 
 The standard installation of UE-V synchronizes the default Microsoft Windows and Office settings and many Windows applications settings. For best results, ensure that your test environment includes two or more user computers that share network access.
 
