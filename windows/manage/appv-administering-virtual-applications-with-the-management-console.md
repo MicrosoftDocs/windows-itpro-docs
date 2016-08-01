@@ -99,7 +99,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## <a href="" id="other-resources-for-this-app-v-5-1-deployment-"></a>Other resources for this App-V deployment
 
 
--   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Microsoft Application Virtualization Administrator's Guide](appv-for-windows.md)
 
 -   [Operations for App-V](appv-operations.md)
 

@@ -60,7 +60,7 @@ If you are new to this product, we recommend that you read the documentation tho
 ## <a href="" id="other-resources-for-this-product-"></a>Other resources for this product
 
 
--   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Microsoft Application Virtualization Administrator's Guide](appv-for-windows.md)
 
 -   [Planning for App-V](appv-planning-for-appv.md)
 

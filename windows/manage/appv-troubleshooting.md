@@ -67,7 +67,7 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 ## Other resources for troubleshooting App-V
 
 
--   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Microsoft Application Virtualization Administrator's Guide](appv-for-windows.md)
 
 -   [Getting Started with App-V](appv-getting-started.md)
 
