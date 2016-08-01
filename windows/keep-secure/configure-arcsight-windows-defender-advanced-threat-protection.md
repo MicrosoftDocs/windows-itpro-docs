@@ -39,7 +39,7 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
 - Contact the Windows Defender ATP team to get your refresh token or follow the steps in the section "Run restutil to Obtain a Refresh Token for Connector Appliance/ArcSight Management Center" in the ArcSight FlexConnector Developer's guide.
 
 ## Configure HP ArcSight
-The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin)
+The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
 1. Copy the *wdatp-connector.jsonparser.properties* file into the `<root>\current\user\agent\flexagent` folder of the connector installation folder.
 
@@ -56,6 +56,7 @@ The following steps assume that you have completed all the required steps in [Be
 5. In the form fill in the following required fields with these values:
     >[!NOTE]
     >All other values in the form are optional and can be left blank.
+    
     <table>
     <tbody style="vertical-align:top;">
     <tr>
