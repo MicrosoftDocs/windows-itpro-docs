@@ -173,11 +173,12 @@ First, you should check that the service is set to start automatically when Wind
     sc qc diagtrack
     ```
 
-If the service is enabled, then the result should look like the following screenshot:
+    If the service is enabled, then the result should look like the following screenshot:
 
-![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+    ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
-If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
+    If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
+
 
 **Use the command line to set the Windows 10 telemetry and diagnostics service to automatically start:**
 
@@ -227,40 +228,41 @@ If your endpoints are running a third-party antimalware client, the Windows Defe
   a. Click **Start**, type **cmd**, and select **Command prompt**.
 
 2.	Enter the following command, and press Enter:
-```
-sc qc WdBoot
-```
-If the ELAM driver is enabled, the output will be:
+    ```
+    sc qc WdBoot
+    ```
+    If the ELAM driver is enabled, the output will be:
 
-```
-[SC] QueryServiceConfig SUCCESS
+    ```
+    [SC] QueryServiceConfig SUCCESS
 
-SERVICE_NAME: WdBoot
-        TYPE               : 1  KERNEL_DRIVER
-        START_TYPE         : 0   BOOT_START
-        ERROR_CONTROL      : 1   NORMAL
-        BINARY_PATH_NAME   : \SystemRoot\system32\drivers\WdBoot.sys
-        LOAD_ORDER_GROUP   : Early-Launch
-        TAG                : 0
-        DISPLAY_NAME       : Windows Defender Boot Driver
-        DEPENDENCIES       :
-        SERVICE_START_NAME :
-```
-If the ELAM driver is disabled the output will be:
-```
-[SC] QueryServiceConfig SUCCESS
+    SERVICE_NAME: WdBoot
+            TYPE               : 1  KERNEL_DRIVER
+            START_TYPE         : 0   BOOT_START
+            ERROR_CONTROL      : 1   NORMAL
+            BINARY_PATH_NAME   : \SystemRoot\system32\drivers\WdBoot.sys
+            LOAD_ORDER_GROUP   : Early-Launch
+            TAG                : 0
+            DISPLAY_NAME       : Windows Defender Boot Driver
+            DEPENDENCIES       :
+            SERVICE_START_NAME :
+    ```
+    If the ELAM driver is disabled the output will be:
+    ```
+    [SC] QueryServiceConfig SUCCESS
 
-SERVICE_NAME: WdBoot
-        TYPE               : 1  KERNEL_DRIVER
-        START_TYPE         : 0   DEMAND_START
-        ERROR_CONTROL      : 1   NORMAL
-        BINARY_PATH_NAME   : \SystemRoot\system32\drivers\WdBoot.sys
-        LOAD_ORDER_GROUP   : _Early-Launch
-        TAG                : 0
-        DISPLAY_NAME       : Windows Defender Boot Driver
-        DEPENDENCIES       :
-        SERVICE_START_NAME :
-```
+    SERVICE_NAME: WdBoot
+            TYPE               : 1  KERNEL_DRIVER
+            START_TYPE         : 0   DEMAND_START
+            ERROR_CONTROL      : 1   NORMAL
+            BINARY_PATH_NAME   : \SystemRoot\system32\drivers\WdBoot.sys
+            LOAD_ORDER_GROUP   : _Early-Launch
+            TAG                : 0
+            DISPLAY_NAME       : Windows Defender Boot Driver
+            DEPENDENCIES       :
+            SERVICE_START_NAME :
+    ```
+
 ### Enable the ELAM driver
 
 1. Open an elevated PowerShell console on the endpoint:
@@ -276,38 +278,38 @@ SERVICE_NAME: WdBoot
     ```
 3. Run the following PowerShell script:
 
-```text
-Add-Type @'
-using System;
-using System.IO;
-using System.Runtime.InteropServices;
-using Microsoft.Win32.SafeHandles;
-using System.ComponentModel;
+    ```text
+    Add-Type @'
+    using System;
+    using System.IO;
+    using System.Runtime.InteropServices;
+    using Microsoft.Win32.SafeHandles;
+    using System.ComponentModel;
 
-public static class Elam{
-    [DllImport("Kernel32", CharSet=CharSet.Auto, SetLastError=true)]
-    public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle);
+    public static class Elam{
+        [DllImport("Kernel32", CharSet=CharSet.Auto, SetLastError=true)]
+        public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle);
 
-    public static void InstallWdBoot(string path)
-    {
-        Console.Out.WriteLine("About to call create file on {0}", path);
-        var stream = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
-        var handle = stream.SafeFileHandle;
-
-        Console.Out.WriteLine("About to call InstallELAMCertificateInfo on handle {0}", handle.DangerousGetHandle());
-        if (!InstallELAMCertificateInfo(handle))
+        public static void InstallWdBoot(string path)
         {
-            Console.Out.WriteLine("Call failed.");
-            throw new Win32Exception(Marshal.GetLastWin32Error());
-        }
-        Console.Out.WriteLine("Call successful.");
-    }
-}
-'@
+            Console.Out.WriteLine("About to call create file on {0}", path);
+            var stream = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
+            var handle = stream.SafeFileHandle;
 
-$driverPath = $env:SystemRoot + "\System32\Drivers\WdBoot.sys"
-[Elam]::InstallWdBoot($driverPath)
-```
+            Console.Out.WriteLine("About to call InstallELAMCertificateInfo on handle {0}", handle.DangerousGetHandle());
+            if (!InstallELAMCertificateInfo(handle))
+            {
+                Console.Out.WriteLine("Call failed.");
+                throw new Win32Exception(Marshal.GetLastWin32Error());
+            }
+            Console.Out.WriteLine("Call successful.");
+        }
+    }
+    '@
+
+    $driverPath = $env:SystemRoot + "\System32\Drivers\WdBoot.sys"
+    [Elam]::InstallWdBoot($driverPath)
+    ```
 
 
 
