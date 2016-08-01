@@ -56,7 +56,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md) | Added errors 0x80090029 and 0x80070057, and merged entries for error 0x801c03ed. |
 | [Microsoft Passport guide](microsoft-passport-guide.md) | Updated Roadmap section content |
 |[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Updated info based on changes to the features and functionality.|
-| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
+| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (mutiple topics) | New |
 
 ## April 2016
@@ -70,7 +70,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Requirements to use AppLocker](requirements-to-use-applocker.md) |Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy.|
+|[Requirements to use AppLocker](requirements-to-use-applocker.md) |Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 is required to manage AppLocker by using Group Policy.|
 |[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Added pre-release content about how to set up and deploy Windows Information Protection (WIP) in an enterprise environment.|
 
 ## February 2016
