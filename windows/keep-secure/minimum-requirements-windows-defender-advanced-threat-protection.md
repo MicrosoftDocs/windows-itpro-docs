@@ -32,11 +32,14 @@ When you run the onboarding wizard for the first time, you must choose where you
 -   Review the [Windows Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
 
 ### Endpoint hardware and software requirements
-The Windows Defender ATP agent only supports Windows 10, version 1607.
+The Windows Defender ATP agent only supports the following editions of Windows 10:
 
-Endpoints on your network must be running Windows 10, version 1607.
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 
-The hardware requirements for Windows Defender ATP on endpoints is the same as those for Windows 10, version 1607.
+
 
 > [!NOTE]
 > Endpoints that are running Windows Server and mobile versions of Windows are not supported.
