@@ -12,10 +12,12 @@ author: mjcaparas
 
 # Configure endpoints using System Center Configuration Manager
 
-
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332  or later
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - System Center 2012 Configuration Manager or later versions
 

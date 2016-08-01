@@ -15,7 +15,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report telemetry and communicate with the Windows Defender ATP service.
@@ -24,95 +27,8 @@ The embedded Windows Defender ATP sensor runs in system context using the LocalS
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
-<!-- - Configure Web Proxy Auto Detect (WPAD) settings and configure Windows to automatically detect the proxy server
-- Configure the proxy server manually using Netsh-->
-
 - Configure the proxy server manually using a static proxy
 
-<!--
-## Configure Web Proxy Auto Detect (WPAD) settings and proxy server
-
-Configure WPAD in the environment and configure Windows to automatically detect the proxy server through Policy or the local Windows settings.
-
-Enable the **Automatically detect settings** option in the Windows Proxy settings so that WinHTTP can use the WPAD feature to locate a proxy server.
-
-1. Click **Start** and select **Settings**.
-
-2. Click **Network & Internet**.
-
-3. Select **Proxy**.
-
-4. Verify that the **Automatically detect settings** option is set to On.
-
-    ![Image showing the proxy settings configuration page](images/proxy-settings.png)
-
-5. If the **Use setup script** or **Manual proxy setup** options are enabled then you will need to [configure proxy settings manually by using Netsh](#configure-proxy-server-manually-using-netsh) method for WinHTTP to discover the appropriate proxy settings and connect.
-
-
-## Configure the proxy server manually using Netsh
-
-If **Use setup script** or **Manual proxy setup** settings are configured in the Windows Proxy setting, then endpoints will not be discovered by WinHTTP.
-Use Netsh to configure the proxy settings to enable connectivity.
-
-You can configure the endpoint by using any of these methods:
-
-- Importing the configured proxy settings to WinHTTP
-- Configuring the proxy settings manually to WinHTTP
-
-After configuring the endpoints, you'll need to verify that the correct proxy settings were applied.
-
-**Import the configured proxy settings to WinHTTP**
-
-1.  Open an elevated command-line prompt on the endpoint:
-
-    a.  Go to **Start** and type **cmd**.
-
-    b.  Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command and press **Enter**:
-
- ```text
- netsh winhttp import proxy source=ie
- ```
- An output showing the applied WinHTTP proxy settings is displayed.
-
-
- **Configure the proxy settings manually to WinHTTP**
-
- 1.  Open an elevated command-line prompt on the endpoint:
-
-    a.  Go to **Start** and type **cmd**.
-
-    b.  Right-click **Command prompt** and select **Run as administrator**.
-
- 2. Enter the following command and press **Enter**:
-
- ```text
- proxy [proxy-server=] ProxyServerName:PortNumber
- ```
-    Replace *ProxyServerName* with the fully qualified domain name of the proxy server.
-
-    Replace *PortNumber* with the port number that you want to configure the proxy server with.
-
- An output showing the applied WinHTTP proxy settings is displayed.
-
-
-**Verify that the correct proxy settings were applied**
-
-1.  Open an elevated command-line prompt on the endpoint:
-
-    a.  Go to **Start** and type **cmd**.
-
-    b.  Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command and press **Enter**:
-
-```
-netsh winhttp show proxy
-```
-
-For more information on how to use Netsh see, [Netsh Commands for Windows Hypertext Transfer Protocol (WINHTTP)](https://technet.microsoft.com/en-us/library/cc731131(v=ws.10).aspx)     
--->
 ## Configure the proxy server manually using a static proxy
 Configure a static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
 

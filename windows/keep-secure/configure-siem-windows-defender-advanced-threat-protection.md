@@ -14,7 +14,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender ATP supports security information and events management (SIEM) tools to consume alerts. Windows Defender ATP exposes alerts through an HTTPS endpoint hosted in Azure. The endpoint can be configured to get alerts from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for an AAD application that represents the specific SIEM connector installed in your environment.
@@ -22,7 +25,7 @@ Windows Defender ATP supports security information and events management (SIEM) 
 Windows Defender ATP currently supports the following SIEM tools:
 
 - Splunk
-- HPE ArcSight
+- HP ArcSight
 
 To use either of these supported SIEM tools you'll need to:
 

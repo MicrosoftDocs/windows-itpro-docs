@@ -14,13 +14,17 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Group Policy
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 > [!NOTE]
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
 
-### Onboard endpoints
+## Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a.  Click **Endpoint Management** on the **Navigation pane**.

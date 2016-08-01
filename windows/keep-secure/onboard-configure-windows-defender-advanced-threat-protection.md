@@ -14,7 +14,10 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 You need to onboard to Windows Defender ATP before you can use the service.

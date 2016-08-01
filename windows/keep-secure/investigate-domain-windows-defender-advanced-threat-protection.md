@@ -13,7 +13,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Investigate a domain to see if machines and servers in your enterprise network have been communicating with a known malicious domain.

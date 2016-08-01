@@ -13,7 +13,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Examine possible communication between your machines and external internet protocol (IP) addresses.

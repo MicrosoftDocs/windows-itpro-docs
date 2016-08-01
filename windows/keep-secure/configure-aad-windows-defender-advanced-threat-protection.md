@@ -14,7 +14,11 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Azure Active Directory
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 You need to add an application in your Azure Active Directory (AAD) tenant then authorize the Windows Defender ATP Alerts Export application  to communicate with it so that your security information and events management (SIEM) tool can consume alerts from Windows Defender ATP portal.

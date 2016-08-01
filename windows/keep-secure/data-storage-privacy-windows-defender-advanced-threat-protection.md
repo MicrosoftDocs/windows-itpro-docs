@@ -14,7 +14,10 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Windows Defender ATP.
@@ -67,15 +70,4 @@ Your data will be kept for a period of at least 90 days, during which it will be
 ## Can Microsoft help us maintain regulatory compliance?
 Microsoft provides customers with detailed information about Microsoft's security and compliance programs, including audit reports and compliance packages, to help customers assess Windows Defender ATP services against their own legal and regulatory requirements. Windows Defender ATP has a roadmap for obtaining national, regional and industry-specific certifications, starting with ISO 27001. The service is designed, implemented, and maintained according to the compliance and privacy principles of ISO 27001, as well as Microsoft’s compliance standards.
 By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run, including this new Microsoft cloud service.
-
-<!--
-## Is there a difference between how Microsoft handles data for the preview programs and for General Availability?
-Subject to the preview program you are in, you could be asked to choose to store your data in a datacenter either in Europe or United States. Your data will not be copied or moved outside of the datacenter you choose, except in the following specific circumstance:
-
-1.	You choose Europe as your datacenter, and
-2.	You [submit a file for deep analysis](investigate-files-windows-defender-advanced-threat-protection.md#submit-files-for-analysis).
-
-In this circumstance, the submitted file will be sent to the US deep analysis laboratory. The results of the analysis will be stored in the European datacenter, and the file and data will be deleted from the US deep analysis laboratory and datacenter.
-
-This is a temporary measure as we work to integrate our deep analysis capabilities into the European datacenter. If you have any concerns or questions about submitting files for deep analysis and you are using a European datacenter, or if you’d like to be updated as to when the European deep analysis lab is online, email [winatp@microsoft.com](mailto:winatp@microsoft.com).-->
 

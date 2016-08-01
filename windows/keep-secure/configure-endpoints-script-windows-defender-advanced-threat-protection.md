@@ -11,6 +11,15 @@ author: mjcaparas
 ---
 
 # Configure endpoints using a local script
+
+**Applies to:**
+
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
 ## Onboard endpoints
