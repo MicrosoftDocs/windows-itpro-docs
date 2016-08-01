@@ -22,7 +22,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 - [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md)
 - [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md)
 - [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md)
-- [Run a Windows Defender scan from the command line](run-cmd-windows-defender-for-windows-10.md)
+- [Run a Windows Defender scan from the command line](run-cmd-scan-windows-defender-for-windows-10.md)
 - [Detect and block Potentially Unwanted Applications](enable-pua-windows-defender-for-windows-10.md)
 
 
