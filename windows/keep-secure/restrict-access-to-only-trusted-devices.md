@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 Your organizational network likely has a connection to the Internet. You also likely have partners, vendors, or contractors who attach devices that are not owned by your organization to your network. Because you do not manage those devices, you cannot trust them to be free of malicious software, maintained with the latest security updates, or in any way in compliance with your organization's security policies. These untrustworthy devices both on and outside of your physical network must not be permitted to access your organization's devices except where it is truly required.
 

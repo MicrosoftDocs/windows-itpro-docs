@@ -1,6 +1,6 @@
 ---
-title: Microsoft Passport errors during PIN creation (Windows 10)
-description: When you set up Microsoft Passport in Windows 10, you may get an error during the Create a work PIN step.
+title: Windows Hello errors during PIN creation (Windows 10)
+description: When you set up Windows Hello in Windows 10, you may get an error during the Create a work PIN step.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
 keywords: PIN, error, create a work PIN
 ms.prod: w10
@@ -8,15 +8,16 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
-# Microsoft Passport errors during PIN creation
+# Windows Hello errors during PIN creation
 
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
 
-When you set up Microsoft Passport in Windows 10, you may get an error during the **Create a work PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
+When you set up Windows Hello in Windows 10, you may get an error during the **Create a work PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 
 ## Where is the error code?
 
@@ -221,14 +222,18 @@ For errors listed in this table, contact Microsoft Support for assistance.
 
 ## Related topics
 
-[Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
+[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
 
-[Implement Microsoft Passport in your organization](implement-microsoft-passport-in-your-organization.md)
+[Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
+
+[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md) 
 
 [Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
 
-[Prepare people to use Microsoft Passport](prepare-people-to-use-microsoft-passport.md)
+[Prepare people to use Windows Hello](prepare-people-to-use-microsoft-passport.md)
 
-[Microsoft Passport and password changes](microsoft-passport-and-password-changes.md)
+[Windows Hello and password changes](microsoft-passport-and-password-changes.md)
 
-[Event ID 300 - Passport successfully created](passport-event-300.md)
+[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
+
+[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md) 

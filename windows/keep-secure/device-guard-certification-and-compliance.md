@@ -1,4 +1,4 @@
 ---
 title: Device Guard certification and compliance (Windows 10)
-redirect_url: device-guard-deployment-guide.md
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/device-guard-deployment-guide
 ---

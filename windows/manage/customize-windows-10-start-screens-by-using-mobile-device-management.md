@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Customize Windows 10 Start with mobile device management (MDM)
@@ -22,6 +23,8 @@ author: jdeckerMS
 
 In Windows 10 Enterprise and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
+> **Note:** Customized taskbar configuration cannot be applied using MDM at this time.
+
 **Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md)
 
 **Warning**  
@@ -34,7 +37,7 @@ When a full Start layout is applied with this method, the users cannot pin, unpi
 
 Two features enable Start layout control:
 
--   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. **Start layout** can only be applied to a device using the same architecture (32-bit or 64-bit) as the device on which **Start layout** was created.
+-   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     **Note**  
     To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
@@ -126,13 +129,15 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
 ## Related topics
 
 
-[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
+[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 
 [Customize and export Start layout](customize-and-export-start-layout.md)
 
-[Customize Windows 10 Start with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 
-[Customize Windows 10 Start with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+
+[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
 [Use Windows 10 custom policies to manage device settings with Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkID=616316)
 

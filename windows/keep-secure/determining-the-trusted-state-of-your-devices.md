@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 After obtaining information about the devices that are currently part of the IT infrastructure, you must determine at what point a device is considered trusted. The term *trusted* can mean different things to different people. Therefore, you must communicate a firm definition for it to all stakeholders in the project. Failure to do this can lead to problems with the security of the trusted environment, because the overall security cannot exceed the level of security set by the least secure client that achieves trusted status.
 

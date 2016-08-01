@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 Windows Firewall with Advanced Security is a host firewall that helps secure the device in two ways. First, it can filter the network traffic permitted to enter the device from the network, and also control what network traffic the device is allowed to send to the network. Second, Windows Firewall with Advanced Security supports IPsec, which enables you to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that cannot authenticate cannot communicate with your device. By using IPsec, you can also require that specific network traffic be encrypted to prevent it from being read or intercepted while in transit between devices.
 

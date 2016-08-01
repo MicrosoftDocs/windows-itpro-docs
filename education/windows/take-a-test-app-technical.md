@@ -9,13 +9,12 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Take a Test app technical reference (Preview)
+# Take a Test app technical reference 
 **Applies to:**
 
--   Windows 10 Insider Preview 
+-   Windows 10 
 
 
-> <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
 Take a Test is an app that locks down the PC and displays an online assessment web page.   
 
@@ -32,7 +31,9 @@ When running above the lock screen:
 
 - The hardware print screen button is disabled 
 
-- Content within the app will show up as black in screen capturing/sharing software Copy/paste is disabled 
+- Content within the app will show up as black in screen capturing/sharing software 
+
+- System clipboard is cleared 
 
 - Web apps can query the processes currently running in the user’s device
 
@@ -79,5 +80,7 @@ When Take a Test is running, the following functionality is available to student
     - Alt+F4 (**Take a Test** will restart if the student is using a dedicated test account)
 
 
+## Learn more
 
+[Take a Test API](https://msdn.microsoft.com/en-us/windows/uwp/apps-for-education/take-a-test-api)
 
