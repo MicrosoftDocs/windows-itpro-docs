@@ -35,11 +35,12 @@ Configure a static proxy to allow only Windows Defender ATP sensor to report tel
 The static proxy is configurable through Group Policy (GP). The group policy can be found under: **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**.
 
 The registry key that this policy sets can be found at:
-```	HKLM\Software\Policies\Microsoft\Windows\DataCollection              TelemetryProxyServer```
+```HKLM\Software\Policies\Microsoft\Windows\DataCollection              TelemetryProxyServer```
 
 The policy and the registry key takes the following string format:
-```<server name or ip>:<port>```
-<br>
+```text
+<server name or ip>:<port>
+```
 For example: 10.0.0.6:8080
 
 If the static proxy settings are configured after onboarding, then you must restart the PC to apply the proxy settings.
@@ -77,13 +78,16 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     ```
     HardDrivePath\RunSenseConnectivityCheck.cmd
     ```
-    Replace *HardDrivePath* with the path where the SenseConnectivtyChecker tool was downloaded to, for example ```C:\Work\tools\ConnectivityChecker\RunSenseConnectivityCheck.cmd```.
+    Replace *HardDrivePath* with the path where the SenseConnectivtyChecker tool was downloaded to, for example 
+    ```text
+    C:\Work\tools\ConnectivityChecker\RunSenseConnectivityCheck.cmd
+    ```
 
 5. Extract the *ConnectivityCheckResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
 6. Open *ConnectivityCheck.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
 The tool checks the connectivity of Windows Defender ATP service URLs that Windows Defender ATP client is configured to interact with. It then prints the results into the *ConnectivityCheck.txt* file for each URL that can potentially be used to communicate with the Windows Defender ATP  services. For example:
-  ```
+  ```text
   Testing URL : https://xxx.microsoft.com/xxx
   1 - Default proxy: Succeeded (200)
   2 - Proxy auto discovery (WPAD): Succeeded (200)
@@ -94,7 +98,7 @@ The tool checks the connectivity of Windows Defender ATP service URLs that Windo
 
 If at least one of the connectivity options returns a (200) status, then the Windows Defender ATP client can communicate with the tested URL properly using this connectivity method. <br><br>
 
-If however the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Windows Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy server). The URLs you'll use will depend on the region selected during the onboarding procedure.
+However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Windows Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 ## Related topics
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
