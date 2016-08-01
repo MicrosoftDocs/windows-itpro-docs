@@ -91,7 +91,7 @@ The UE-V template generator is included in the Windows Assessment and Deployment
 3.	To open the generator, select **Microsoft User Experience Virtualization Generator** from the **Start** menu. 
 
 
-## Other resources for UE-V for Windows 10, version 1607
+## Other resources for this feature
 
 -   [UE-V Release Notes](uev-release-notes-1607.md)
 

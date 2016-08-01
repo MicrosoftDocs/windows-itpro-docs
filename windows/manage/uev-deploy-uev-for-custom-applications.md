@@ -130,7 +130,7 @@ The UE-V service checks this folder for templates that were added, updated, or r
 
 You can configure the settings template catalog path with command-line options, Group Policy, WMI, or Windows PowerShell. Templates stored at the settings template catalog path are automatically registered and unregistered by a scheduled task.
 
-**To configure the settings template catalog for UE-V:**
+**To configure the settings template catalog for UE-V**
 
 1.  Create a new folder on the computer that stores the UE-V settings template catalog.
 
@@ -159,7 +159,7 @@ At a minimum, the network share must grant permissions for the Domain Computers 
 
 Use the UE-V template generator to create settings location templates for line-of-business applications or other custom applications. After you create the template for an application, deploy it to computers to synchronize settings for that application.
 
-**To create a UE-V settings location template with the UE-V template generator:**
+**To create a UE-V settings location template with the UE-V template generator**
 
 1.  Click **Start** &gt; **All Programs** &gt; **Microsoft User Experience Virtualization** &gt; **Microsoft User Experience Virtualization template generator**.
 

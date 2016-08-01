@@ -11,36 +11,43 @@ ms.prod: w10
 
 # Synchronizing Office with UE-V
 
+Microsoft User Experience Virtualization (UE-V) supports the synchronization of Microsoft Office application settings. The combination of UE-V and App-V  support for Office enables the same experience on virtualized instances of Office from any UE-V-enabled device or virtualized desktop.
 
-Microsoft User Experience Virtualization (UE-V) 2.0 supports the synchronization of Microsoft Office application settings using a template available from the UE-V template gallery. The combination of UE-V 2 and App-V 5.0 SP2 support of Office Professional Plus enables the same experience on virtualized instance of Office 2013 from any UE-V-enabled device or virtualized desktop.
+To synchronize Office applications settings, you can download Office templates from the [Microsoft User Experience Virtualization (UE-V) Template Gallery](http://go.microsoft.com/fwlink/p/?LinkId=246589). This resource provides Microsoft-authored UE-V settings location templates as well as community-developed settings location templates.
 
-To activate UE-V application settings support of Office 2013, you can download official UE-V Office 2013 templates from the [Microsoft User Experience Virtualization (UE-V) 2 Template Gallery](http://go.microsoft.com/fwlink/p/?LinkId=246589). This resource provides Microsoft-authored UE-V settings location templates as well as community-developed settings location templates.
 
 ## Microsoft Office support in UE-V
 
+UE-V includes settings location templates for Microsoft Office 2016, 2013, and 2010. In previous versions of UE-V, settings location templates for Office 2013 and Office 2010 were distributed and registered when you installed the UE-V agent. Now that UE-V is a feature in Windows 10, version 1607, settings location templates are installed when you install or upgrade to the new operating system.  
 
-UE-V 1.0 and UE-V 2 include settings location templates for Microsoft Office 2010. These templates are distributed and registered as part of the UE-V Agent installation process. These templates help synchronize users’ Office experience between devices. The UE-V templates for Office 2013 provide a very similar settings experience to the templates for Office 2010. Microsoft Office 2013 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office 2013](http://go.microsoft.com/fwlink/p/?LinkId=391220).
+These templates help synchronize users’ Office experience between devices. Microsoft Office 2016 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office](http://go.microsoft.com/fwlink/p/?LinkId=391220).
 
-## Synchronized Office 2013 Settings
+## Synchronized Office Settings
 
 
-The following tables contain the details for Office 2013 support in UE-V:
+Review the following tables for details about Office support in UE-V:
 
 ### Supported UE-V templates for Microsoft Office
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Office 2013 templates (UE-V 2.0, available on UE-V gallery):</th>
-<th align="left">Office 2010 templates (UE-V 1.0 &amp; 1.0 SP1):</th>
+<th align="left">Office 2016 templates (UE-V for Windows 10 and Windows 10, version 1607, available in UE-V gallery)</th>
+<th align="left">Office 2013 templates (UE-V for Windows 10 and UE-V 2.x, available on UE-V gallery)</th>
+<th align="left">Office 2010 templates (UE-V 1.0 and 1.0 SP1)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>MicrosoftOffice2016Win32.xml</p>
+<p>MicrosoftOffice2016Win64.xml</p>
+<p>MicrosoftSkypeForBusiness2016Win32.xml</p>
+<p>MicrosoftSkypeForBusiness2016Win64.xml</p></td>
 <td align="left"><p>MicrosoftOffice2013Win32.xml</p>
 <p>MicrosoftOffice2013Win64.xml</p>
 <p>MicrosoftLync2013Win32.xml</p>
@@ -59,11 +66,24 @@ The following tables contain the details for Office 2013 support in UE-V:
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
 </colgroup>
 <tbody>
 <tr class="odd">
+<td align="left"><p>Microsoft Access 2016</p>
+<p>Microsoft Lync 2016</p>
+<p>Microsoft Excel 2016</p>
+<p>Microsoft OneNote 2016</p>
+<p>Microsoft Outlook 2016</p>
+<p>Microsoft PowerPoint 2016</p>
+<p>Microsoft Project 2016</p>
+<p>Microsoft Publisher 2016</p>
+<p>Microsoft SharePoint Designer 2013 (not udpated for 2016)</p>
+<p>Microsoft Visio 2016</p>
+<p>Microsoft Word 2016</p>
+<p>Microsoft Office Upload Manager</p></td>
 <td align="left"><p>Microsoft Access 2013</p>
 <p>Microsoft Lync 2013</p>
 <p>Microsoft Excel 2013</p>
@@ -96,22 +116,22 @@ The following tables contain the details for Office 2013 support in UE-V:
 
  
 
-## Deploying the Office 2013 templates
+## Deploying Office templates
 
 
 You can deploy UE-V settings location template with the following methods:
 
--   **Registering template via PowerShell**. If you use Windows PowerShell to manage computers, run the following Windows PowerShell command open as an administrator to register this settings location template:
+-   **Registering template with PowerShell**. If you use Windows PowerShell to manage computers, run the following Windows PowerShell command as Administrator to register this settings location template:
 
     ``` syntax
     Register-UevTemplate -Path <Path_to_Template>
     ```
 
-    For more information using UE-V and Windows PowerShell, see [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
+    For more information about using UE-V and Windows PowerShell, see [Managing UE-V settings location templates using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
 
--   **Registering template via Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office 2013 template into the folder defined in the UE-V service. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploying the Settings Template Catalog for UE-V 2](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).
+-   **Registering template with Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office template into the folder defined in the UE-V service. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploy a settings template catalog](uev-deploy-uev-for-custom-applications.md#deployasettingstemplatecatalog).
 
--   **Registering template via Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, then recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to your clients. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2](http://go.microsoft.com/fwlink/?LinkId=317263).
+-   **Registering template with Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to user devices. For more information, see the guidance provided in the documentation for the [System Center Configuration Pack for User Experience Virtualization](http://go.microsoft.com/fwlink/?LinkId=317263).
 
 ## Have a suggestion for UE-V?
 

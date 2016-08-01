@@ -19,15 +19,15 @@ This technical reference section includes additional technical documentation abo
 
 -   [Sync Methods for UE-V](uev-sync-methods.md)
 
-    Defines how UE-V synchronizes settings between computers and the settings storage location. Sync Provider is the default sync method for UE-V 2.0. This topic provides technical reference information for sync methods, including the Sync Provider.
+    Defines how UE-V synchronizes settings between computers and the settings storage location. Sync Provider is the default sync method for UE-V. This topic includes technical reference information for sync methods, including the Sync Provider.
 
 -   [Sync Trigger Events for UE-V](uev-sync-trigger-events.md)
 
     Defines when the UE-V service synchronizes those settings with the settings storage location. This topic provides technical reference information about when synchronization takes place based upon the sync method deployed.
 
--   [Synchronizing Office 2013 with UE-V 2.0](uev-synchronizing-office-2013-with-uev.md)
+-   [Synchronizing Microsoft Office with UE-V](uev-synchronizing-microsoft-office-with-uev.md)
 
-    Provides guidance for downloading and enabling the Microsoft-authored UE-V 2.0 settings location template that supports Office 2013 settings synchronization.
+    Provides guidance for downloading and enabling the Microsoft-authored UE-V settings location templates that support Microsoft Office settings synchronization.
 
 -   [Application Template Schema Reference for UE-V](uev-application-template-schema-reference.md)
 
@@ -44,7 +44,7 @@ This technical reference section includes additional technical documentation abo
 ## Other resources for this feature
 
 
--   [User Experience Virtualization for Windows 10, version 1607](uev-for-windows.md)
+-   [User Experience Virtualization overview](uev-for-windows.md)
 
 -   [Get Started with UE-V](uev-getting-started.md)
 

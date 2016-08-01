@@ -136,6 +136,8 @@ Other resources for this feature
 
 -   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
+-   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
+
 -   [Administering UE-V ](uev-administering-uev.md)
 
 -   [Troubleshooting UE-V ](uev-troubleshooting.md)

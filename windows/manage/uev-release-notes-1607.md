@@ -32,7 +32,7 @@ When a computer has an application that is installed through both Application Vi
 
 WORKAROUND: To resolve this problem, run the application by selecting one of the two technologies, but not both.
 
-### Unpredictable results with both Office 2010 and Office 2013 installed
+### Unpredictable results when both Office 2010 and Office 2013 are installed on the same device
 
 When a user has both Office 2010 and Office 2013 installed, any common settings between the two versions of Office are roamed by UE-V. This could cause the Office 2010 package size to be quite large or result in unpredictable conflicts with 2013, particularly if Office 365 is used.
 
@@ -46,7 +46,7 @@ WORKAROUND: None.
 
 ### UE-V does not support roaming settings between 32-bit and 64-bit versions of Microsoft Office
 
-We recommend that you install the 32-bit version of Microsoft Office for both 32-bit and 64-bit operating systems. To choose the Microsoft Office version that you need, click here. (<http://office.microsoft.com/word-help/choose-the-32-bit-or-64-bit-version-of-microsoft-office-HA010369476.aspx>). UE-V supports roaming settings between identical architecture versions of Office. For example, 32-bit Office settings will roam between all 32-bit Office instances. UE-V does not support roaming settings between 32-bit and 64-bit versions of Office.
+We recommend that you install the 32-bit version of Microsoft Office for both 32-bit and 64-bit operating systems. To choose the Microsoft Office version that you need, click [here](<http://office.microsoft.com/word-help/choose-the-32-bit-or-64-bit-version-of-microsoft-office-HA010369476.aspx>). UE-V supports roaming settings between identical architecture versions of Office. For example, 32-bit Office settings will roam between all 32-bit Office instances. UE-V does not support roaming settings between 32-bit and 64-bit versions of Office.
 
 WORKAROUND: None
 
@@ -84,13 +84,13 @@ Operating system settings for Narrator and currency characters specific to the l
 
 WORKAROUND: None
 
-## Hotfixes and Knowledge Base articles for UE-V 2.1 SP1
+## Hotfixes and Knowledge Base articles for UE-V 
 
-This section contains hotfixes and KB articles for UE-V 2.1 SP1.
+This section contains hotfixes and KB articles for UE-V.
 
 | KB Article | Title   | Link   |
 |------------|---------|--------|
-| 3018608    | UE-V 2.1 - TemplateConsole.exe crashes when UE-V WMI classes are missing       | [support.microsoft.com/kb/3018608/EN-US](http://support.microsoft.com/kb/3018608/EN-US) |
+| 3018608    | UE-V - TemplateConsole.exe crashes when UE-V WMI classes are missing       | [support.microsoft.com/kb/3018608/EN-US](http://support.microsoft.com/kb/3018608/EN-US) |
 | 2903501    | UE-V: User Experience Virtualization (UE-V) compatibility with user profiles   | [support.microsoft.com/kb/2903501/EN-US](http://support.microsoft.com/kb/2903501/EN-US) |
 | 2770042    | UE-V Registry Settings                                                         | [support.microsoft.com/kb/2770042/EN-US](http://support.microsoft.com/kb/2770042/EN-US) |
 | 2847017    | UE-V settings replicated by Internet Explorer                                  | [support.microsoft.com/kb/2847017/EN-US](http://support.microsoft.com/kb/2847017/EN-US) |
@@ -106,3 +106,18 @@ This section contains hotfixes and KB articles for UE-V 2.1 SP1.
 ## Have a suggestion for UE-V?
 
 Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+**Additional resources for this feature**
+
+
+-   [User Experience Virtualization](uev-for-windows.md)
+
+-   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
+
+-   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
+
+-   [Administering UE-V ](uev-administering-uev.md)
+
+-   [Troubleshooting UE-V ](uev-troubleshooting.md)
+
+-   [Technical Reference for UE-V](uev-technical-reference.md)
