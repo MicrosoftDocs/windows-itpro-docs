@@ -65,6 +65,16 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 
 [Learn more about Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)
 
+### Windows Defender
+Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
+
+- [Windows Defender Offline in Windows 10](windows-defender-offline.md) can be run directly from within Windows, without having to create bootable media. 
+- [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
+- [Run a Windows Defender scan from the command line](run-cmd-windows-defender-for-windows-10.md).
+- [Detect and block Potentially Unwanted Applications](enable-pua-windows-defender-for-windows-10.md) during download and install times.
+
 ## Management
 
 ### Use Remote Desktop Connection for PCs joined to Azure Active Directory
