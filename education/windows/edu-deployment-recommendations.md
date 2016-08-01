@@ -5,7 +5,6 @@ keywords: ["Windows 10 deployment", "recommendations", "privacy settings", "scho
 ms.mktglfcycl: plan
 ms.sitesec: library
 author: CelesteDG
-localizationpriority: medium
 ---
 
 # Deployment recommendations for school IT administrators

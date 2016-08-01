@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Manage Windows 10 and Windows Store tips, tricks, and suggestions
