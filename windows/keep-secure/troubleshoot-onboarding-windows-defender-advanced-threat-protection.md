@@ -118,9 +118,9 @@ ID | Severity | Event description | Troubleshooting steps
 ## Troubleshoot onboarding issues on the endpoint
 If the deployment tools used does not indicate an error in the onboarding process, but endpoints are still not appearing in the machines view an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
 - [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log)
-- [Ensure the telemetry and diagnostics service is enabled](#ensure-that-telemetry-and-diagnostics-service-is-enabled)
+- [Ensure the telemetry and diagnostics service is enabled](#ensure-the-telemetry-and-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
-- [Ensure the endpoint has an Internet connection](#ensure-that-the-Windows-Defender-ATP-endpoint-has-internet-connection)
+- [Ensure the endpoint has an Internet connection](#ensure-the-endpoint-has-an-internet-connection)
 - [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled)
 
 
