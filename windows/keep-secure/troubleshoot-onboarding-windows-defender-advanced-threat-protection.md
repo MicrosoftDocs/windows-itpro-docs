@@ -44,7 +44,7 @@ Deployment with the above-mentioned versions of System Center Configuration Mana
 
 If the deployment fails, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
 
-If the onboarding completed successfully but the endpoints are not showing up in the **Machines view** after an hour, see see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
+If the onboarding completed successfully but the endpoints are not showing up in the **Machines view** after an hour, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
 
 ## Troubleshoot onboarding when deploying with a script on the endpoint
 
@@ -118,10 +118,11 @@ ID | Severity | Event description | Troubleshooting steps
 ## Troubleshoot onboarding issues on the endpoint
 If the deployment tools used does not indicate an error in the onboarding process, but endpoints are still not appearing in the machines view an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
 - [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log)
-- [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender ELAM driver is enabled)
-- [Ensure the Windows Defender ATP service is enabled](#ensure-the-windows-defender-elam-driver-is-enabled)
 - [Ensure the telemetry and diagnostics service is enabled](#Ensure-that-telemetry-and-diagnostics-service-is-enabled)
+- [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
 - [Ensure the endpoint has an Internet connection](#Ensure-that-the-Windows-Defender-ATP-endpoint-has-internet-connection)
+- [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled)
+
 
 ### View agent onboarding errors in the endpoint event log
 
@@ -218,7 +219,7 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.
 
-## Ensure the Windows Defender ELAM driver is enabled
+### Ensure the Windows Defender ELAM driver is enabled
 If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled.
 
 **Check the ELAM driver status:**
@@ -263,7 +264,7 @@ If your endpoints are running a third-party antimalware client, the Windows Defe
             SERVICE_START_NAME :
     ```
 
-### Enable the ELAM driver
+#### Enable the ELAM driver
 
 1. Open an elevated PowerShell console on the endpoint:
 
