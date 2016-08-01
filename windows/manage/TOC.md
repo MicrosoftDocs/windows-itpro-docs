@@ -36,7 +36,7 @@
 ## [Configure devices without MDM](configure-devices-without-mdm.md)
 ## [Windows 10 servicing options](introduction-to-windows-10-servicing.md)
 ## [Application development for Windows as a service](application-development-for-windows-as-a-service.md)
-## [Application Virtualization (App-V)](appv-microsoft-application-virtualization-administrators-guide.md)
+## [Application Virtualization for Windows (App-V)](appv-microsoft-application-virtualization-administrators-guide.md)
 ### [Getting Started with App-V](appv-getting-started.md)
 #### [About App-V](appv-about-appv.md)
 ##### [Release Notes for App-V](appv-release-notes-for-appv-for-windows.md)
