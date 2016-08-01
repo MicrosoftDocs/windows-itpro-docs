@@ -18,6 +18,12 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 - [Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
 - [Remote Credential Guard](remote-credential-guard.md)
+- [Windows Defender Offline in Windows 10](windows-defender-offline.md)
+- [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md)
+- [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md)
+- [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md)
+- [Run a Windows Defender scan from the command line](run-cmd-windows-defender-for-windows-10.md)
+
 
 ## July 2016
 
@@ -28,7 +34,6 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 |[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |New |
 |[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |New |
 |[Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |New |
-|[Windows Defender in Windows 10](windows-defender-in-windows-10.md) | New and updated topics including Windows Defender Offline, Block at First Sight, Potentially Unwanted Applications, command line management, and Enhanced notifications |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (multiple topics) | Updated |
 |[Device Guard deployment guide](device-guard-deployment-guide.md) (multiple topics) | Updated |
 
