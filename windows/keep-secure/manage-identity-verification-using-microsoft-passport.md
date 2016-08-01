@@ -29,7 +29,7 @@ Hello addresses the following problems with passwords:
 Hello lets users authenticate to:
 -   a Microsoft account.
 -   an Active Directory account.
--   a Microsoft Azure Active Directory (AD) account.
+-   a Microsoft Azure Active Directory (Azure AD) account.
 -   Identity Provider Services or Relying Party Services that support [Fast ID Online (FIDO) v2.0](http://go.microsoft.com/fwlink/p/?LinkId=533889) authentication
 
 After an initial two-step verification of the user during enrollment, Hello is set up on the user's device and the user is asked to set a gesture, which can be a biometric, such as a fingerprint, or a PIN. The user provides the gesture to verify their identity. Windows then uses Hello to authenticate users and help them to access protected resources and services.
@@ -41,9 +41,11 @@ As an administrator in an enterprise or educational organization, you can create
 
 ## The difference between Windows Hello and Windows Hello for Business
 
-- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Hello provides a layer of protection by being unique to the device on which it is set up, however it is not backed by key-based or certificate-based authentication. 
+- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Hello provides a layer of protection by being unique to the device on which it is set up, however it is not backed by certificate-based authentication. 
 
 - Windows Hello for Business, which is configured by Group Policy or MDM policy, uses key-based or certificate-based authentication.
+
+- Currently Active Directory accounts using Windows Hello are not backed by key-based or certificate-based authentication.  Support for key-based or certificate-based authentication is on the roadmap for a future release.
 
 ## Benefits of Windows Hello
 
@@ -51,16 +53,18 @@ Reports of identity theft and large-scale hacking are frequent headlines. Nobody
 
 You may wonder [how a PIN can help protect a device better than a password](why-a-pin-is-better-than-a-password.md). Passwords are shared secrets; they are entered on a device and transmitted over the network to the server. An intercepted account name and password can be used by anyone. Because they're stored on the server, a server breach can reveal those stored credentials.
 
-In Windows 10, Hello replaces passwords. The Hello provisioning process creates two cryptographic keys bound to the Trusted Platform Module (TPM), if a device has a TPM, or in software. Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Hello enrollment creates a trusted relationship between the identity provider and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identify provider knows from the combination of Hello keys and gesture that this is a verified identity and provides an authentication token that allows Windows 10 to access resources and services. In addition, during the registration process, the attestation claim is produced for every identity provider to cryptographically prove that the Hello keys are tied to TPM. During registration, when the attestation claim is not presented to the identity provider, the identity provider must assume that the Hello key is created in software.
+In Windows 10, Hello replaces passwords. The Hello provisioning process creates a cryptographic key pair bound to the Trusted Platform Module (TPM), if a device has a TPM, or in software. Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Hello enrollment creates a trusted relationship between the identity provider and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identify provider knows from the combination of Hello keys and gesture that this is a verified identity and provides an authentication token that allows Windows 10 to access resources and services. In addition, during the registration process, the attestation claim is produced for every identity provider to cryptographically prove that the Hello keys are tied to TPM. During registration, when the attestation claim is not presented to the identity provider, the identity provider must assume that the Hello key is created in software.
 
 ![how authentication works in windows hello](images/authflow.png)
 
 Imagine that someone is looking over your shoulder as you get money from an ATM and sees the PIN that you enter. Having that PIN won't help them access your account because they don't have your ATM card. In the same way, learning your PIN for your device doesn't allow that attacker to access your account because the PIN is local to your specific device and doesn't enable any type of authentication from any other device.
-Hello helps protect user identities and user credentials. Because no passwords are used, it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Hello credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are generated within isolated environments of TPMs.
+
+Hello helps protect user identities and user credentials. Because no passwords are used, it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Hello credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are protected by TPMs.
 
 Hello also enables Windows 10 Mobile devices to be used as [a remote credential](prepare-people-to-use-microsoft-passport.md#bmk-remote) when signing into Windows 10 PCs. During the sign-in process, the Windows 10 PC can connect using Bluetooth to access Hello on the user’s Windows 10 Mobile device. Because users carry their phone with them, Hello makes implementing two-factor authentication across the enterprise less costly and complex than other solutions.
 
-> **Note:**  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
+> [!NOTE]
+>  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
 
  
 ## How Windows Hello for Business works: key points
