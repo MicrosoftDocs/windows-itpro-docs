@@ -73,7 +73,7 @@ Several new features and management options have been added to Windows Defender 
 - [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md) to leverage the Windows Defender cloud for near-instant protection against new malware.
 - [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
 - [Run a Windows Defender scan from the command line](run-cmd-windows-defender-for-windows-10.md).
-- [Detect and block Potentially Unwanted Applications](enable-pua-windows-defender-for-windows-10.md) during download and install times.
+- [Detect and block Potentially Unwanted Applications with Windows Defender](enable-pua-windows-defender-for-windows-10.md) during download and install times.
 
 ## Management
 
