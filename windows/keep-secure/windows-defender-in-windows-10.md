@@ -71,6 +71,7 @@ Topic | Description
 [Configure updates for Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)|Configure definition updates and cloud-based protection with Active Directory and Windows Server Update Services.
 [Windows Defender Offline in Windows 10](windows-defender-offline.md)|Manually run an offline scan directly from winthin Windows without having to download and create bootable media.
 [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md)|Run scans and configure Windows Defender options with Windows PowerShell cmdlets in Windows 10.
-[Enable the Black at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md)|Use the Block at First Sight feature to leverage the Windows Defender cloud.
+[Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md)|Use the Block at First Sight feature to leverage the Windows Defender cloud.
+[Detect and block Potentially Unwanted Applications with Windows Defender](enable-pua-windows-defender-for-windows-10.md)|Use the Potentially Unwanted Application (PUA) feature in Managed Windows Defender to identify and block unwanted software during download and install time.
 [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md)|Enable or disable enhanced notifications on endpoints running Windows Defender for greater details about threat detections and removal.
 [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)|Review event IDs in Windows Defender for Windows 10 and take the appropriate actions.
