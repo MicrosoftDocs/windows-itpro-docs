@@ -14,20 +14,22 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 As a security operations team member, you can manage Windows Defender ATP alerts as part of your routine activities. Alerts will appear in queues according to their current status.
 
 To see a list of alerts, click any of the queues under the **Alerts queue** option in the navigation pane.
 
-> **Note**&nbsp;&nbsp;By default, the queues are sorted from newest to oldest.
+> [!NOTE]
+> By default, the queues are sorted from newest to oldest.
 
 The following table and screenshot demonstrate the main areas of the **Alerts queue**.
 
-![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/alertsq.png)
+![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/alertsq2.png)
 
 Highlighted area|Area name|Description
 :---|:---|:---
@@ -59,7 +61,8 @@ There are three mechanisms to pivot the queue against:
   - **30 days**
   - **6 months**
 
-  > **Note**&nbsp;&nbsp;You can change the sort order (for example, from most recent to least recent) by clicking the sort order icon ![the sort order icon looks like two arrows on top of each other](images/sort-order-icon.png)
+  > [!NOTE]
+  > You can change the sort order (for example, from most recent to least recent) by clicking the sort order icon ![the sort order icon looks like two arrows on top of each other](images/sort-order-icon.png)
 
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
