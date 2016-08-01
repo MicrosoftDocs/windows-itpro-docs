@@ -15,7 +15,7 @@ ms.prod: w10
 User Experience Virtualization (UE-V) provides Windows PowerShell cmdlets to help administrators perform various UE-V tasks. The following sections provide more information about using Windows PowerShell in UE-V.
 
 **Note**  
-Administering UE-V with Windows PowerShell requires Windows PowerShell 3.0 or higher. For a complete list of UE-V PowerShell cmdlets, see [UE-V Cmdlet Reference](http://go.microsoft.com/fwlink/p/?LinkId=393495).
+Administering UE-V with Windows PowerShell requires PowerShell 3.0 or higher. For a complete list of UE-V PowerShell cmdlets, see [UE-V Cmdlet Reference](http://go.microsoft.com/fwlink/p/?LinkId=393495).
 
 ## Managing the UE-V service and packages by using Windows PowerShell and WMI
 

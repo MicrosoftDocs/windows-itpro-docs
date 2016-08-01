@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Working with Custom UE-V Templates and the UE-V Template Generator
 
+Applies to: Windows 10, version 1607
 
 To synchronize application settings between user computers, User Experience Virtualization (UE-V) uses *settings location templates*. Some settings location templates are included in User Experience Virtualization. You can also create, edit, or validate custom settings location templates by using the UE-V template generator.
 
