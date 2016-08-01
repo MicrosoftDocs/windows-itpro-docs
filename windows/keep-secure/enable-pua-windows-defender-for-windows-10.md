@@ -32,7 +32,7 @@ Since the stakes are higher in an enterprise environment, the potential disaster
 
 **Enable PUA protection in SCCM and Intune**
 
-The PUA feature is available for enterprise users who are running System Center Configuration Manager (SCCM) or Intune in their infrastructure.
+The PUA feature is available for enterprise users who are running System Center Configuration Manager (SCCM) or Microsoft Intune in their infrastructure.
 
 ***Configure PUA in SCCM***
 
