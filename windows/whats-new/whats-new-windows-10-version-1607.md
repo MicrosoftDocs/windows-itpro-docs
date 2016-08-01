@@ -68,12 +68,12 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 ### Windows Defender
 Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
 
-- [Windows Defender Offline in Windows 10](windows-defender-offline.md) can be run directly from within Windows, without having to create bootable media.
-- [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md) to configure options and run scans.
-- [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md) to leverage the Windows Defender cloud for near-instant protection against new malware.
-- [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
-- [Run a Windows Defender scan from the command line](run-cmd-scan-windows-defender-for-windows-10.md).
-- [Detect and block Potentially Unwanted Applications with Windows Defender](enable-pua-windows-defender-for-windows-10.md) during download and install times.
+- [Windows Defender Offline in Windows 10](../keep-secure/windows-defender-offline.md) can be run directly from within Windows, without having to create bootable media.
+- [Use PowerShell cmdlets for Windows Defender](../keep-secure/use-powershell-cmdlets-windows-defender-for-windows-10.md) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](../keep-secure/windows-defender-block-at-first-sight.md) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](../keep-secure/windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
+- [Run a Windows Defender scan from the command line](../keep-secure/run-cmd-scan-windows-defender-for-windows-10.md).
+- [Detect and block Potentially Unwanted Applications with Windows Defender](../keep-secure/enable-pua-windows-defender-for-windows-10.md) during download and install times.
 
 ## Management
 
