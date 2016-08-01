@@ -77,7 +77,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 4. Enter the following command and press **Enter**:
 
     ```
-    HardDrivePath\RunSenseConnectivityCheck.cmd
+    HardDrivePath\WDATPConnectivityAnalyzer.cmd
     ```
     Replace *HardDrivePath* with the path where the WDATPConnectivityAnalyzer tool was downloaded to, for example 
     ```text
