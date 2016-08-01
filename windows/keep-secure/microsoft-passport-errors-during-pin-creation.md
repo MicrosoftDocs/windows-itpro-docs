@@ -17,11 +17,11 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-When you set up Windows Hello in Windows 10, you may get an error during the **Create a work PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
+When you set up Windows Hello in Windows 10, you may get an error during the **Create a PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 
 ## Where is the error code?
 
-The following image shows an example of an error during **Create a work PIN**.
+The following image shows an example of an error during **Create a PIN**.
 
 ![](images/pinerror.png)
 
