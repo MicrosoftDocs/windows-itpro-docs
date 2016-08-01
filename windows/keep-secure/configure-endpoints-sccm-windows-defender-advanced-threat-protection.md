@@ -116,7 +116,7 @@ If there are failed deployments (endpoints with **Error**, **Requirements Not Me
 
 ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
-**Check that the endpoints are compliant with the Windows Defender ATP service:**
+**Check that the endpoints are compliant with the Windows Defender ATP service:**<br>
 You can set a compliance rule for configuration item in System Center Configuration Manager to monitor your deployment.
 
 This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted machines.
