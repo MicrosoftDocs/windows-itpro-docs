@@ -64,9 +64,9 @@ Primary Domain Controller | .Microsoft.com DNS record
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Windows Defender ATP service URLs.
 
-1. Download the connectivity verification tool to the PC where Windows Defender ATP sensor is running on.
+1. Download the [connectivity verification tool](https://go.microsoft.com/fwlink/p/?linkid=823683) to the PC where Windows Defender ATP sensor is running on.
 
-2.  Extract the contents of SenseConnectivtyChecker on the endpoint.
+2.  Extract the contents of WDATPConnectivityAnalyzer on the endpoint.
 
 3. Open an elevated command-line:
 
@@ -79,15 +79,15 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     ```
     HardDrivePath\RunSenseConnectivityCheck.cmd
     ```
-    Replace *HardDrivePath* with the path where the SenseConnectivtyChecker tool was downloaded to, for example 
+    Replace *HardDrivePath* with the path where the WDATPConnectivityAnalyzer tool was downloaded to, for example 
     ```text
-    C:\Work\tools\ConnectivityChecker\RunSenseConnectivityCheck.cmd
+    C:\Work\tools\WDATPConnectivityAnalyzer\WDATPConnectivityAnalyzercmd
     ```
 
-5. Extract the *ConnectivityCheckResult.zip* file created by tool in the folder used in the *HardDrivePath*.
+5. Extract the *WDATPConnectivityAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
-6. Open *ConnectivityCheck.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
-The tool checks the connectivity of Windows Defender ATP service URLs that Windows Defender ATP client is configured to interact with. It then prints the results into the *ConnectivityCheck.txt* file for each URL that can potentially be used to communicate with the Windows Defender ATP  services. For example:
+6. Open *WDATPConnectivityAnalyzer.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
+The tool checks the connectivity of Windows Defender ATP service URLs that Windows Defender ATP client is configured to interact with. It then prints the results into the *WDATPConnectivityAnalyzer.txt* file for each URL that can potentially be used to communicate with the Windows Defender ATP  services. For example:
   ```text
   Testing URL : https://xxx.microsoft.com/xxx
   1 - Default proxy: Succeeded (200)
