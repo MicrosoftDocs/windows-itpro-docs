@@ -83,10 +83,15 @@ If your enterprise enables phone sign-in, users can pair a phone running Windows
 
 **Sign in to PC using the phone**
 
+<<<<<<< HEAD
 1.  Open the **Microsoft Authenticator** app, choose your account, and tap the name of the PC to sign in to.
     > **Note: **  The first time that you run the **Microsoft Authenticator** app, you must add an account.
     
     ![select a device](images/phone-signin-device-select.png)
+=======
+1.  Open the **Microsoft Authenticator** app and tap the name of the PC to sign in to.
+    > **Note: **  The first time that you run the **Microsoft Authenticator** app, you must add an account.
+>>>>>>> parent of 9891b67... from master
      
 2.  Enter the work PIN that you set up when you joined the phone to the cloud domain or added a work account.
 
