@@ -23,7 +23,12 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 - [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md)
 - [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md)
 - [Run a Windows Defender scan from the command line](run-cmd-scan-windows-defender-for-windows-10.md)
-- [Detect and block Potentially Unwanted Applications](enable-pua-windows-defender-for-windows-10.md)
+- [Detect and block Potentially Unwanted Applications with Windows Defender](enable-pua-windows-defender-for-windows-10.md)
+- [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Configure SIEM tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
+- [Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md)
 
 
 ## July 2016
