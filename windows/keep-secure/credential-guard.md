@@ -278,6 +278,7 @@ DG_Readiness_Tool_v2.0.ps1 -Ready
     -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password. Attempts to use saved credentials will fail, displaying the error message "Logon attempt failed".
     -   Applications that extract derived domain credentials from Credential Manager will no longer be able to use those credentials.
     -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
+    - Credential Guard uses hardware security so some features, such as Windows To Go, are not supported.
 
 ### Kerberos Considerations
 
