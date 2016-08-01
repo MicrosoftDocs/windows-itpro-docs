@@ -61,13 +61,13 @@ If the script fails and the event is an error, you can check the event ID in the
 
 Event ID | Error Type | Resolution steps
 :---|:---|:---
-5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```
+5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.
 10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```.<br>Verify that the script was ran as an administrator.
 15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights).
 15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender ELAM driver, see [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled) for instructions.
-30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
-40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
+30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
+35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
+40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
 65 | Insufficient privileges| Run the script again with administrator privileges.
 
 ## Troubleshoot onboarding issues using Microsoft Intune
@@ -118,9 +118,9 @@ ID | Severity | Event description | Troubleshooting steps
 ## Troubleshoot onboarding issues on the endpoint
 If the deployment tools used does not indicate an error in the onboarding process, but endpoints are still not appearing in the machines view an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
 - [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log)
-- [Ensure the telemetry and diagnostics service is enabled](#Ensure-that-telemetry-and-diagnostics-service-is-enabled)
+- [Ensure the telemetry and diagnostics service is enabled](#ensure-that-telemetry-and-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
-- [Ensure the endpoint has an Internet connection](#Ensure-that-the-Windows-Defender-ATP-endpoint-has-internet-connection)
+- [Ensure the endpoint has an Internet connection](#ensure-that-the-Windows-Defender-ATP-endpoint-has-internet-connection)
 - [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled)
 
 
