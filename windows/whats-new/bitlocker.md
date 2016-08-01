@@ -7,6 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: brianlic-msft
+redirect_url: whats-new-windows-10-version-1507-and-1511.md
 ---
 
 # What's new in BitLocker?

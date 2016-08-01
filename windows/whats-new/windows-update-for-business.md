@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: TrudyHa
+redirect_url: /whats-new/whats-new-windows-10-version-1507-and-1511
 ---
 
 # What's new in Windows Update for Business?

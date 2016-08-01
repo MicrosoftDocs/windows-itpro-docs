@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 When you plan the GPOs for your different isolation zones, you must complete the layout of the required zones and their mappings to the groups that link the devices to the zones.
 

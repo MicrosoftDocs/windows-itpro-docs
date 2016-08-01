@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 
 After you test the GPOs for your design on a small set of devices, you can deploy them to the production devices.

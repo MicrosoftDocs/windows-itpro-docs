@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 Perhaps the most important aspect of planning for Windows Firewall with Advanced Security deployment is the network architecture, because IPsec is layered on the Internet Protocol itself. An incomplete or inaccurate understanding of the network can prevent any Windows Firewall with Advanced Security solution from being successful. Understanding subnet layout, IP addressing schemes, and traffic patterns are part of this effort, but accurately documenting the following components are important to completing the planning phase of this project:
 
