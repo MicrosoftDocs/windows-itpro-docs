@@ -312,7 +312,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <td align="left">Azure AD subscription</td>
 <td align="left"><ul>
 <li>Active Directory Federation Service (AD FS) (Windows Server 2016)</li>
-<li>A few Windows Server 2016 Technical Preview domain controllers on-site</li>
+<li>A few Windows Server 2016 domain controllers on-site</li>
 <li>Microsoft System Center 2012 R2 Configuration Manager SP2</li>
 </ul></td>
 <td align="left"><ul>
