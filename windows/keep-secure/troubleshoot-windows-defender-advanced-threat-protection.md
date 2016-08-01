@@ -42,8 +42,9 @@ U.S. region:
 - threatintel-cus-prd.cloudapp.net			
 - threatintel-eus-prd.cloudapp.net
 - winatpauthorization.windows.com
-
-
+- winatpfeedback.windows.com
+- winatpmanagement.windows.com
+- winatponboarding.windows.com
 
 EU region:
 
@@ -54,7 +55,10 @@ EU region:
 - sevillesettings-prd.trafficmanager.net
 - threatintel-neu-prd.cloudapp.net
 - threatintel-weu-prd.cloudapp.net
-- winatpauthorization.windows.com 
+- winatpauthorization.windows.com
+- winatpfeedback.windows.com
+- winatpmanagement.windows.com
+- winatponboarding.windows.com
 
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 
