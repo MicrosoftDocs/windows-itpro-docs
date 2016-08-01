@@ -119,7 +119,7 @@ Example of a path to a specific application:
 C:\ProgramData\App-V\PackGUID\VersionGUID 
 ```
 
-To change the default location of the package store during setup, see [How to Deploy the App-V Client](appv-deploy-the-appv-client.md).
+To change the default location of the package store during setup, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
 
 ### Shared Content Store
 
@@ -602,7 +602,7 @@ In an App-V Full Infrastructure, after applications are sequenced they are manag
 
 This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012 visit: <http://go.microsoft.com/fwlink/?LinkId=392773>.
 
-The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with PowerShell commands. See [How to enable the App-V Client](appv-enable-the-appv-desktop-client.md) or use Windows PowerShell:
+The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with PowerShell commands. See [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md) or use Windows PowerShell:
 
 ``` syntax
 get-command *appv*

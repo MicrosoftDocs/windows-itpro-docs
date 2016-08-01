@@ -38,7 +38,7 @@ Use the following links for information about setting up the App-V server in you
 
 Use the following link for more information about creating and managing virtualized packages in your lab environment.
 
--   [Enable the App-V Desktop Client](appv-enable-the-appv-desktop-client.md)
+-   [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)
 
 -   [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](appv-configure-the-client-to-receive-updates-from-the-publishing-server.md)
 

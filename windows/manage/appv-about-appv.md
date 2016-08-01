@@ -186,8 +186,8 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 <td align="left"><p>See [How to Install the Sequencer](appv-install-the-sequencer.md).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Step 3: Upgrade the App-V Client or App-V RDS Client.</p></td>
-<td align="left"><p>See [How to Deploy the App-V Client](appv-deploy-the-appv-client.md).</p></td>
+<td align="left"><p>Step 3: Enabled the App-V Client.</p></td>
+<td align="left"><p>See [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).</p></td>
 </tr>
 </tbody>
 </table>

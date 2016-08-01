@@ -292,23 +292,6 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 </tbody>
 </table>
 
- 
-
-## Additional Migration tasks
-
-
-You can also perform additional migration tasks such as reconfiguring end points as well as opening a package created using a prior version on a computer running the App-V client. The following links provide more information about performing these tasks.
-
-[How to Migrate Extension Points From an App-V 4.6 Package to a Converted App-V Package for All Users on a Specific Computer](appv-migrate-extension-points-from-an-appv-46-sp2-package-to-a-converted-appv-51-package-for-all-users-on-a-specific-computer.md)
-
-[How to Migrate Extension Points From an App-V 4.6 Package to App-V for a Specific User](appv-migrate-extension-points-from-an-appv-46-sp2-package-to-appv-51-for-a-specific-user.md)
-
-[How to Revert Extension Points from an App-V Package to an App-V 4.6 Package For All Users on a Specific Computer](appv-revert-extension-points-from-an-appv-51-package-to-an-appv-46-sp2-package-for-all-users-on-a-specific-computer.md)
-
-[How to Revert Extension Points From an App-V Package to an App-V 4.6 Package for a Specific User](appv-revert-extension-points-from-an-appv-51-package-to-an-appv-46-sp2-package-for-a-specific-user.md)
-
-[How to Use an App-V 4.6 Application From an App-V Application](appv-use-an-appv-46-sp1-application-from-an-appv-51-application.md)
-
 ## Have a suggestion for App-V?
 
 
@@ -316,16 +299,6 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Other resources for performing App-V migration tasks
 
+- [Operations for App-V](appv-operations.md)
 
-[Operations for App-V](appv-operations.md)
-
-[A simplified Microsoft App-V Management Server upgrade procedure](http://go.microsoft.com/fwlink/p/?LinkId=786330)
-
- 
-
- 
-
-
-
-
-
+- [A simplified Microsoft App-V Management Server upgrade procedure](http://go.microsoft.com/fwlink/p/?LinkId=786330)

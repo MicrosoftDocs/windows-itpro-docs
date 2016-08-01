@@ -121,8 +121,6 @@ The following table provides links to the App-V 4.6.x client downloads and to th
 
 For more information about how to configure App-V client coexistence, see:
 
--   [How to Deploy the App-V 4.6.x and the App-V Client on the Same Computer](appv-deploy-the-appv-46x-and-the-appv--51-client-on-the-same-computer.md)
-
 -   [App-V 5.0 Coexistence and Migration](http://technet.microsoft.com/windows/jj835811.aspx)
 
 ## <a href="" id="converting--previous-version--packages-using-the-package-converter-"></a>Converting “previous-version” packages using the package converter

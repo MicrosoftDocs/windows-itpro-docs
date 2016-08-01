@@ -58,7 +58,7 @@ This checklist can be used to help you during an App-V deployment.
 <td align="left"><p></p>
 <ul>
 <li><p>[How to Install the Sequencer](appv-install-the-sequencer.md)</p></li>
-<li><p>[How to Deploy the App-V Client](appv-deploy-the-appv-client.md)</p></li>
+<li><p>[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)</p></li>
 <li><p>[How to Deploy the App-V Server](appv-deploy-the-appv-server.md)</p></li>
 </ul></td>
 <td align="left"><p></p></td>
