@@ -13,10 +13,11 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
 
@@ -39,9 +40,11 @@ U.S. region:
 - sevillefeedback-prd.trafficmanager.net			
 - sevillesettings-prd.trafficmanager.net			
 - threatintel-cus-prd.cloudapp.net			
-- threatintel-eus-prd.cloudapp.net			
-
-
+- threatintel-eus-prd.cloudapp.net
+- winatpauthorization.windows.com
+- winatpfeedback.windows.com
+- winatpmanagement.windows.com
+- winatponboarding.windows.com
 
 EU region:
 
@@ -52,7 +55,10 @@ EU region:
 - sevillesettings-prd.trafficmanager.net
 - threatintel-neu-prd.cloudapp.net
 - threatintel-weu-prd.cloudapp.net
-
+- winatpauthorization.windows.com
+- winatpfeedback.windows.com
+- winatpmanagement.windows.com
+- winatponboarding.windows.com
 
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 

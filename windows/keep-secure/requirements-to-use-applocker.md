@@ -32,7 +32,7 @@ The following table show the on which operating systems AppLocker features are s
 
 | Version | Can be configured | Can be enforced | Available rules | Notes |
 | - | - | - | - | - |
-| Windows 10| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| You can use the [AppLocker CSP](http://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) to configure AppLocker policies on any edition of Windows 10. You can only manage AppLocker with Group Policy on devices running Windows 10 Enterprise and Windows Server 2016 Technical Preview. |
+| Windows 10| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| You can use the [AppLocker CSP](http://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) to configure AppLocker policies on any edition of Windows 10. You can only manage AppLocker with Group Policy on devices running Windows 10 Enterprise and Windows Server 2016. |
 | Windows Server 2012 R2| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| | 
 | Windows 8.1| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| Only the Enterprise edition supports AppLocker| 
 | Windows RT 8.1| No| No| N/A||  

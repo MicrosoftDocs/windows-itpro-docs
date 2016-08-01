@@ -275,7 +275,7 @@ To turn off font streaming, create a REG\_DWORD registry setting called **Disabl
 
 To turn off Insider Preview builds if you're running a released version of Windows 10. If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
 
--   Turn off the feature in the UI: **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Stop Insider builds**.
+-   Turn off the feature in the UI: **Settings** > **Update & security** > **Windows Insider Program** > **Stop Insider Preview builds**.
 
     -or-
 
@@ -1181,7 +1181,10 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
 -   Configure the following in **Settings**:
 
-    -   **Personalization** &gt; **Lock screen** &gt; **Background** &gt; **Windows spotlight**, select a different background, and turn off **Show me tips, tricks, and more on the lock screen**.
+    -   **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**.
+
+        > [!NOTE]  
+        > In Windows 10, version 1507 and Windows 10, version 1511, this setting was called **Show me tips, tricks, and more on the lock screen**.
 
     -   **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**.
 
