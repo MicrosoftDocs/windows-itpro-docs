@@ -6,10 +6,11 @@ _site/
 Tools/NuGet/
 .optemp/
 
+
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config
 windows/keep-secure/index.md
-windows/keep-secure/index.md
-windows/keep-secure/TOC.md
-windows/keep-secure/index.md
+
+# User-specific files  
+.vs/
