@@ -14,7 +14,7 @@ ms.prod: w10
 
 Microsoft Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Windows Store, and interact with them as if they were installed locally.
 
-With the release of Windows 10, version 1607, App-V is included with the [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is available with Software Assurance. If you are new to Windows 10 and App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. For information about what you need to know before getting started with App-V, see the [App-V Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md).
+With the release of Windows 10, version 1607, App-V is included with the [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is available with Software Assurance. If you are new to Windows 10 and App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. For information about what you need to know before getting started with App-V, see the [Application Virtualization (App-V) overview](appv-for-windows.md).
 
 If you’re already using App-V, performing an in-place upgrade to Windows 10 on user devices automatically installs the App-V client and migrates users’ App-V applications and settings. For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md).
 
@@ -60,7 +60,7 @@ If you are new to this product, we recommend that you read the documentation tho
 ## <a href="" id="other-resources-for-this-product-"></a>Other resources for this product
 
 
--   [Microsoft Application Virtualization Administrator's Guide](appv-for-windows.md)
+-   [Application Virtualization (App-V) overview](appv-for-windows.md)
 
 -   [Planning for App-V](appv-planning-for-appv.md)
 

@@ -53,7 +53,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Other Resources for App-V Operations
 
 
--   [Microsoft Application Virtualization Administrator's Guide](appv-for-windows.md)
+-   [Application Virtualization (App-V) overview](appv-for-windows.md)
 
 -   [Getting Started with App-V](appv-getting-started.md)
 

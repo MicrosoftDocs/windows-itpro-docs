@@ -18,7 +18,7 @@ Implementing multiple methods can help you improve the end-user experience. Howe
 
 You should read and understand the following information before reading this document.
 
--   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Application Virtualization (App-V) overview](appv-for-windows.md)
 
 -   [App-V 5 SP2 Application Publishing and Client Interaction](http://go.microsoft.com/fwlink/?LinkId=395206)
 
@@ -749,7 +749,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Microsoft Application Virtualization Administrator's Guide](appv-for-windows.md)
+[Application Virtualization (App-V) overview](appv-for-windows.md)
 
  
 

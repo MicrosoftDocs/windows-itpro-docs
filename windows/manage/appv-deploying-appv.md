@@ -30,7 +30,7 @@ App-V supports a number of different deployment options. This section of the App
 ## Other Resources for Deploying App-V
 
 
--   [Microsoft Application Virtualization Administrator's Guide](appv-microsoft-application-virtualization-administrators-guide.md)
+-   [Application Virtualization (App-V) overview](appv-for-windows.md)
 
 -   [Getting Started with App-V](appv-getting-started.md)
 
