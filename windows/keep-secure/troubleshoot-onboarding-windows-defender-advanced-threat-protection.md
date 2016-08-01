@@ -221,6 +221,7 @@ If the verification fails and your environment is using a proxy to connect to th
 If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled.
 
 **Check the ELAM driver status:**
+
 1.	Open a command-line prompt on the endpoint:
 
   a. Click **Start**, type **cmd**, and select **Command prompt**.
@@ -269,9 +270,10 @@ SERVICE_NAME: WdBoot
   b. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Run the following PowerShell cmdlet:
-```text
-'Set-ExecutionPolicy -ExecutionPolicy Bypass’
-```
+
+    ```text
+    'Set-ExecutionPolicy -ExecutionPolicy Bypass’
+    ```
 3. Run the following PowerShell script:
 
 ```text
