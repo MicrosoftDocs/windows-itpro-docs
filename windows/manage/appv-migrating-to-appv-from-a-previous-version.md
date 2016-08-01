@@ -238,10 +238,6 @@ The following table displays the recommended method for upgrading clients.
 <td align="left"><p>Upgrade your environment to the latest version of App-V 4.6</p></td>
 <td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](https://technet.microsoft.com/en-us/itpro/mdop/appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy).</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p>Install the App-V client with co-existence enabled.</p></td>
-<td align="left"><p>[How to Deploy the App-V 4.6.x and the App-V Client on the Same Computer](appv-deploy-the-appv-46x-and-the-appv--51-client-on-the-same-computer.md).</p></td>
-</tr>
 <tr class="odd">
 <td align="left"><p>Sequence and roll out App-V packages. As needed, unpublish App-V 4.6 packages.</p></td>
 <td align="left"><p>[How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).</p></td>
@@ -279,7 +275,7 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 </tr>
 <tr class="even">
 <td align="left"><p>Deploy App-V version of the client.</p></td>
-<td align="left"><p>[How to Deploy the App-V Client](appv-deploy-the-appv-client.md).</p></td>
+<td align="left"><p>[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Install App-V server.</p></td>

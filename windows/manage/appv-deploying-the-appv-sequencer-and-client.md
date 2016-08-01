@@ -21,7 +21,7 @@ The App-V client is the component that runs a virtualized application on a targe
 > [!NOTE]  
 > In Windows 10, version 1607, App-V is included with the OS. You only need to enable it.
 
-[Enable the App-V desktop client](appv-enable-the-appv-desktop-client.md)
+[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)
 
 ## Client Configuration Settings
 
