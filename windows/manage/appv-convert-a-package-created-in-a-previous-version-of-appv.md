@@ -11,18 +11,17 @@ ms.prod: w10
 
 # How to Convert a Package Created in a Previous Version of App-V
 
-
 You can use the package converter utility to upgrade virtual application packages that have been created with previous versions of App-V.
 
-**Note**  
-If you are running a computer with a 64-bit architecture, you must use the x86 version of PowerShell.
+> [!NOTE]  
+> If you are running a computer with a 64-bit architecture, you must use the x86 version of Windows PowerShell.
 
-The package converter can only directly convert packages that were created by using the App-V 4.5 sequencer or a subsequent version. Packages that were created using a version prior to App-V 4.5 must be upgraded to the App-V 4.5 or App-V 4.6 format before conversion.
+The package converter can only directly convert packages that were created by using the App-V 4.5 sequencer or later. Packages that were created using a version prior to App-V 4.5 must be upgraded to at least App-V 4.5 before conversion.
 
 The following information provides direction for converting existing virtual application packages.
 
-**Important**  
-You must configure the package converter to always save the package ingredients file to a secure location and directory. A secure location is accessible only by an administrator. Additionally, when you deploy the package, you should save the package to a location that is secure, or make sure that no other user is allowed to be logged in during the conversion process.
+> [!IMPORTANT]  
+> You must configure the package converter to always save the package ingredients file to a secure location and directory. A secure location is accessible only by an administrator. Additionally, when you deploy the package, you should save the package to a location that is secure, or make sure that no other user is allowed to be logged in during the conversion process.
 
 ## App-V 4.6 installation folder is redirected to virtual file system root
 
@@ -42,7 +41,8 @@ When you convert packages from App-V 4.6 to App-V for Windows 10, the App-V for 
 
         Additionally, the package converter optimizes performance of packages in App-V for Windows 10 by setting the package to stream fault the App-V package.  This is more performant than the primary feature block and fully downloading the package. The flag **DownloadFullPackageOnFirstLaunch** allows you to convert the package and set the package to be fully downloaded by default.
 
-        > **Note**&nbsp;&nbsp;Before you specify the output directory, you must create the output directory.
+        > [!NOTE]  
+        > Before you specify the output directory, you must create the output directory.
 
 ### Advanced Conversion Tips
 
@@ -58,4 +58,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-[Operations for App-V](appv-operations.md)
+- [Operations for App-V](appv-operations.md)

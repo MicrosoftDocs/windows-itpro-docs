@@ -11,15 +11,14 @@ ms.prod: w10
 
 # How to Deploy the App-V Databases by Using SQL Scripts
 
-
 Use the following instructions to use SQL scripts, rather than the Windows Installer, to:
 
 -   Install the App-V databases
 
 -   Upgrade the App-V databases to a later version
 
-**Note**  
-If you have already deployed the App-V 5.0 SP3 database, the SQL scripts are not required to upgrade to App-V.
+> [!NOTE]  
+> If you have already deployed an App-V 5.0 SP3 database or later, the SQL scripts are not required to upgrade to App-V.
 
 ## How to install the App-V databases by using SQL scripts
 
@@ -29,50 +28,35 @@ If you have already deployed the App-V 5.0 SP3 database, the SQL scripts are not
 
 3.  From a command prompt, run **appv\_server\_setup.exe** and specify a temporary location for extracting the database scripts.
 
-    Example: appv\_server\_setup.exe /layout c:\\&lt;temporary location path&gt;
+    Example: appv\_server\_setup.exe /layout c:\\_<temporary location path>_
 
-4.  Browse to the temporary location that you created, open the extracted **DatabaseScripts** folder, and review the appropriate Readme.txt file for instructions:
+4.  Browse to the temporary location that you created, open the extracted **DatabaseScripts** folder, and review the appropriate readme.txt file for instructions:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Database</th>
-    <th align="left">Location of Readme.txt file to use</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Management database</p></td>
-    <td align="left"><p>ManagementDatabase subfolder</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Reporting database</p></td>
-    <td align="left"><p>ReportingDatabase subfolder</p></td>
-    </tr>
-    </tbody>
-    </table>
+    | Database | Location of readme.txt file to use 
+    | - | - |
+    | Management database | ManagementDatabase subfolder |
+    | Reporting database | ReportingDatabase subfolder |
 
-> **Caution**&nbsp;&nbsp;The readme.txt file in the ManagementDatabase subfolder is out of date. The information in the updated readme files below is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
+> [!CAUTION]  
+> The readme.txt file in the ManagementDatabase subfolder is out of date. The information in the updated readme files below is the most current and should supersede the readme information provided in the **DatabaseScripts** folders.
 
-> **Important**&nbsp;&nbsp;The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.<br>The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340). **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
+> [!IMPORTANT]  
+> The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.
+> The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340). **Step 1** is not required for versions of App-V later than App-V 5.0 SP3.
 
 ### Updated management database README file content
 
 ``` syntax
-******************************************************************
-Before you install and use the Application Virtualization Database Scripts you must:
-1.Review the Microsoft Application Virtualization Server 5.0 license terms.
-2.Print and retain a copy of the license terms for your records.
-By running the Microsoft Application Virtualization Database Scripts you agree to such license terms.  If you do not accept them, do not use the software.
-******************************************************************
+***********************************************************************************************************
+Before you install and use the Application Virtualization Database Scripts, you must:
 
+- Review the license terms.
+- Print and retain a copy of the license terms for your records.
+
+By running the App-V you agree to such license terms. If you do not accept them, do not use the software.
+***********************************************************************************************************
 
 Steps to install "AppVManagement" schema in SQL SERVER.
-
 
 ## PREREQUISITES:
 
@@ -90,10 +74,7 @@ Steps to install "AppVManagement" schema in SQL SERVER.
 
  3. If you are not running the scripts directly on the server, ensure the 
     necessary SQL Server client software is installed and available from
-    the specified location.  Specifically, the "osql" command must
-##     be supported for these scripts to run.
-
-
+    the specified location.  Specifically, the "osql" command must be supported for these scripts to run.
 
 ## PREPARATION:
 
@@ -104,10 +85,7 @@ Steps to install "AppVManagement" schema in SQL SERVER.
     DATABASE - ensure name is satisfactory - default is "AppVManagement".   
 
  2. Review the Permissions.sql file and provide all the necessary account information
-    for setting up read and write access on the database. Note: Default settings
-##     in the file will not work.
-
-
+    for setting up read and write access on the database. Note: Default settings in the file will not work.
 
 ## INSTALLATION:
 
@@ -121,22 +99,23 @@ Steps to install "AppVManagement" schema in SQL SERVER.
     CreateTables.sql
     CreateStoredProcs.sql
     UpdateTables.sql
-##     Permissions.sql 
+    Permissions.sql 
 
 ```
 
 ### Updated reporting database README file content
 
 ``` syntax
-******************************************************************
-Before you install and use the Application Virtualization Database Scripts you must:
-1.Review the Microsoft Application Virtualization Server 5.0 license terms.
-2.Print and retain a copy of the license terms for your records.
-By running the Microsoft Application Virtualization Database Scripts you agree to such license terms.  If you do not accept them, do not use the software.
-******************************************************************
+***********************************************************************************************************
+Before you install and use the Application Virtualization Database Scripts, you must:
+
+- Review the license terms.
+- Print and retain a copy of the license terms for your records.
+
+By running the App-V you agree to such license terms. If you do not accept them, do not use the software.
+***********************************************************************************************************
 
 Steps to install "AppVReporting" schema in SQL SERVER.
-
 
 ## PREREQUISITES:
 
@@ -157,10 +136,7 @@ Steps to install "AppVReporting" schema in SQL SERVER.
 
  3. If you are not running the scripts directly on the server, ensure the 
     necessary SQL Server client software is installed and executable from
-    the location you have chosen.  Specifically, the "osql" command must
-##     be supported for these scripts to run.
-
-
+    the location you have chosen.  Specifically, the "osql" command must be supported for these scripts to run.
 
 ## PREPARATION:
 
@@ -176,10 +152,7 @@ Steps to install "AppVReporting" schema in SQL SERVER.
 
  3. Review the ScheduleReportingJob.sql file and make sure that the stored proc schedule
     time is acceptable. The default stored proc schedule time is at 12.01 AM (line 84). 
-    If this time is not suitable, you can change this to a more suitable time. The time is
-##     in the format HHMMSS.
-
-
+    If this time is not suitable, you can change this to a more suitable time. The time is in the format HHMMSS.
 
 ## INSTALLATION:
 
@@ -197,8 +170,7 @@ Steps to install "AppVReporting" schema in SQL SERVER.
     CreateStoredProcs.sql
     CreateViews.sql
     Permissions.sql
-##     ScheduleReportingJob.sql
-
+    ScheduleReportingJob.sql
 ```
 
 ## Have a suggestion for App-V?
@@ -207,6 +179,5 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-[Deploying the App-V Server](appv-deploying-the-appv-server.md)
-
-[How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
+- [Deploying the App-V Server](appv-deploying-the-appv-server.md)
+- [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
