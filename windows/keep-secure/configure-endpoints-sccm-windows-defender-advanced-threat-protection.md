@@ -58,7 +58,7 @@ This rule should be a *remediating* compliance rule configuration item that sets
 
 The configuration is set through the following registry key entry:
 
-```
+```text
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
