@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: mobile, security
 author: jdeckerMS
-redirect_url: /whats-new/whats-new-windows-10-version-1607
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/whats-new/whats-new-windows-10-version-1607
 ---
 
 # Windows Hello overview
