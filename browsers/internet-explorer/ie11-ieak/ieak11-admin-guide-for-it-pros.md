@@ -1,13 +1,14 @@
 ---
-description: Use this guide to learn about the several options and processes you'll need to consider while using the Internet Explorer Administration Kit 11 (IEAK 11) to customize, deploy, and manage Internet Explorer 11 for your employee's devices.
+localizationpriority: low
+ms.mktglfcycl: plan
 description: IEAK 11 - Internet Explorer Administration Kit 11 Users Guide
-ms.assetid: 847bd7b4-d5dd-4e10-87b5-4d7d3a99bbac
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: plan
-ms.sitesec: library
+ms.assetid: 847bd7b4-d5dd-4e10-87b5-4d7d3a99bbac
 title: Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide
 Use this guide to learn about the several options and processes you'll need to consider while you're using the Internet Explorer Administration Kit 11 (IEAK 11) to customize, deploy, and manage Internet Explorer 11 for your employee's devices.
@@ -29,3 +30,4 @@ IE11 and IEAK 11 offers differing experiences between Windows 7 and Windows 8.1 
 |Internet Explorer for the desktop         |The desktop browser. This is the only experience available when running IE11 on Windows 7 SP1.  |
 |IE11                                      |The whole browser, which includes both IE and Internet Explorer for the desktop.  |
 |Internet Explorer Customization Wizard 11 |Step-by-step wizard screens that help you create custom IE11 installation packages. |
+

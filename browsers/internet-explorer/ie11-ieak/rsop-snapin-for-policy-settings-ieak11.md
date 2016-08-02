@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: manage
 description: Learn how to use the Resultant Set of Policy (RSoP) snap-in to view your policy settings.
-ms.assetid: 0f21b320-e879-4a06-8589-aae6fc264666
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.assetid: 0f21b320-e879-4a06-8589-aae6fc264666
 title: Use the RSoP snap-in to review policy settings (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Using the Resultant Set of Policy (RSoP) snap-in to review policy settings
 After you’ve deployed your custom Internet Explorer package to your employees, you can use the Resultant Set of Policy (RSoP) snap-in to view your created policy settings. The RSoP snap-in is a two-step process. First, you run the RSoP wizard to determine what information should be viewed. Second, you open the specific items in the console window to view the settings. For complete instructions about how to use RSoP, see [Resultant Set of Policy](http://go.microsoft.com/fwlink/p/?LinkId=259479).

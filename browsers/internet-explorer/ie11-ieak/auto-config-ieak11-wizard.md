@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Automatic Configuration page in the IEAK 11 Customization Wizard to add URLs to auto-configure IE.
-ms.assetid: de5b1dbf-6e4d-4f86-ae08-932f14e606b0
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: de5b1dbf-6e4d-4f86-ae08-932f14e606b0
 title: Use the Automatic Configuration page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Automatic Configuration page in the IEAK 11 Wizard
 The **Automatic Configuration** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you provide URLs to the files that’ll automatically configure Internet Explorer 11 for a group of employees or devices.
