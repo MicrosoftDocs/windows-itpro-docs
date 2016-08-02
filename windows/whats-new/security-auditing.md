@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
 ms.pagetype: security, mobile
-redirect_url: https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511
+redirect_url: https://technet.microsoft.com/itpro/windows/keep-secure/security-auditing-overview
 ---
 
 # What's new in security auditing?
