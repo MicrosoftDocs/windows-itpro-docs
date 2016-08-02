@@ -24,6 +24,8 @@ With User Experience Virtualization (UE-V), you can capture user-customized Wind
 
 -   Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state
 
+With the release of Windows 10, version 1607, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and EU-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices.
+
 ## Components of UE-V
 
 The diagram below illustrates how UE-V components work together to synchronize user settings.

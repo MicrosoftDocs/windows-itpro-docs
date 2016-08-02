@@ -21,7 +21,7 @@ Block at First Sight is a feature of Windows Defender cloud protection that prov
 
 You can enable Block at First Sight with Group Policy or individually on endpoints.
 
-## Backend procesing and near-instant determinations
+## Backend processing and near-instant determinations
 
 When a Windows Defender client encounters a suspicious but previously undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
 
@@ -86,16 +86,16 @@ Block at First Sight requires a number of Group Policy settings to be configured
 
 5.  Expand the tree through **Windows components > Windows Defender > MAPS**.
 
-1.  Double-click the **Configure the ‘Block at First Sight’ feature** setting and set the option to **Enabled**.
+1.  Double-click the **Configure the â€˜Block at First Sightâ€™ feature** setting and set the option to **Enabled**.
 
     > [!NOTE]
     > The Block at First Sight feature will not function if the pre-requisite group policies have not been correctly set.
 
-### Manually enable Block at First Sight on Individual clients
+### Manually enable Block at First Sight on individual clients
 
 To configure un-managed clients that are running Windows 10, Block at First Sight is automatically enabled as long as **Cloud-based protection** and **Automatic sample submission** are both turned on.
 
-**Enable Block at First Sight on invididual clients**
+**Enable Block at First Sight on individual clients**
 
 1. Open Windows Defender settings:
 
