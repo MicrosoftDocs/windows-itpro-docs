@@ -30,6 +30,26 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 [Learn more about using provisioning packages in Windows 10.](../deploy/provisioning-packages.md)
 
+### Windows Upgrade Analytics
+
+Microsoft developed Upgrade Analytics in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Analytics was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
+
+With Windows telemetry enabled, Upgrade Analytics collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
+
+Use Upgrade Analytics to get:
+
+- A visual workflow that guides you from pilot to production
+- Detailed computer and application inventory
+- Powerful computer level search and drill-downs
+- Guidance and insights into application and driver compatibility issues, with suggested fixes
+- Data driven application rationalization tools
+- Application usage information, allowing targeted validation; workflow to track validation progress and decisions
+- Data export to commonly used software deployment tools
+
+The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are upgrade-ready.
+
+[Learn more about planning and managing Windows upgrades with Windows Upgrade Analytics.](../deploy/manage-windows-upgrades-with-upgrade-analytics.md)
+
 ## Security
 
 ### Credential Guard and Device Guard
@@ -100,6 +120,23 @@ Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilit
 
 Windows 10, Version 1607, introduces shared PC mode, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise. [Learn how to set up a shared or guest PC.](../manage/set-up-shared-or-guest-pc.md)
 
+### Application Virtualization (App-V) for Windows 10
+
+Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Windows Store, and interact with them as if they were installed locally.
+
+With the release of Windows 10, version 1607, App-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. 
+
+[Learn how to deliver virtual applications with App-V.](../manage/appv-getting-started.md)
+
+### User Experience Virtualization (UE-V) for Windows 10
+
+Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Windows Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options. 
+
+With User Experience Virtualization (UE-V), you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.
+
+With the release of Windows 10, version 1607, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and EU-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
+
+[Learn how to synchronize user-customized settings with UE-V.](../manage/uev-for-windows.md)
 
 ## Learn more
 
