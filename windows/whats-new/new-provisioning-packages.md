@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerMS
-redirect_url: /deploy/provisioning-packages
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/deploy/provisioning-packages
 ---
 
 # Provisioning packages

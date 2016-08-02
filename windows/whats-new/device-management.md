@@ -7,7 +7,7 @@ ms.pagetype: devices, mobile
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: jdeckerMS
-redirect_url: /whats-new/whats-new-windows-10-version-1507-and-1511
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511
 ---
 
 # Enterprise management for Windows 10 devices
