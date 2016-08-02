@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-# User Experience Virtualization overview
+# User Experience Virtualization (UE-V) for Windows 10 overview
 
 Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Windows Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options. 
 
