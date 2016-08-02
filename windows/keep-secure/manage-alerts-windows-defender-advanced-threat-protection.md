@@ -56,7 +56,7 @@ You can resolve an alert by changing the status of the alert to **Resolved**. Th
 
 ![You can resolve an alert as valid, valid - allowed, or false alarm](images/resolve-alert.png)
 
-The comments and change of status are recorded in the [Comments and history window](#view-history-and-comments).
+The comments and change of status are recorded in the Comments and history window.
 
 ![The comments window will display a history of status changes](images/comments.png)
 
