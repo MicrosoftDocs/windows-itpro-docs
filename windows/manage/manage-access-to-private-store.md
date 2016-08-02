@@ -29,7 +29,7 @@ Organizations using an MDM to manage apps can use a policy to show only the priv
 
 ## Show private store only using Group Policy 
 
-If you're using Windows Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. The Windows Store app will still be available, but will only show your private store tab, and the apps in your private store. 
+If you're using Windows Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Windows Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store.  
 
 **To show private store only in Windows Store app**
 
