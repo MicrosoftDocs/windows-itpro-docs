@@ -9,10 +9,11 @@ ms.prod: w10
 ---
 
 
-# About App-V
+# About App-V for Windows
 
+Applies to: Windows 10, version 1607
 
-Use the following sections to review information about significant changes that apply to Application Virtualization (App-V):
+Review the following sections for information about significant changes that apply to Application Virtualization (App-V) for Windows:
 
 [App-V software prerequisites and supported configurations](#bkmk-51-prereq-configs)
 
@@ -32,10 +33,10 @@ Use the following sections to review information about significant changes that 
 
 [Hardcoded path to installation folder is redirected to virtual file system root](#bkmk-hardcodepath)
 
-## <a href="" id="bkmk-51-prereq-configs"></a>App-V software prerequisites and supported configurations
+## <a href="" id="bkmk-51-prereq-configs"></a>App-V for Windows software prerequisites and supported configurations
 
 
-See the following links for the App-V software prerequisites and supported configurations.
+See the following links for the App-V for Windows software prerequisites and supported configurations.
 
 <table>
 <colgroup>
@@ -51,7 +52,7 @@ See the following links for the App-V software prerequisites and supported confi
 <tbody>
 <tr class="odd">
 <td align="left"><p>[App-V Prerequisites](appv-prerequisites.md)</p></td>
-<td align="left"><p>Prerequisite software that you must install before starting the App-V installation</p></td>
+<td align="left"><p>Prerequisite software that you must install before you can get started with App-V for Windows</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[App-V Supported Configurations](appv-supported-configurations.md)</p></td>
@@ -62,12 +63,12 @@ See the following links for the App-V software prerequisites and supported confi
 
  
 
-**Support for using Configuration Manager with App-V:** App-V supports System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) for information about integrating your App-V environment with Configuration Manager and Configuration Manager.
+**Support for using Configuration Manager with App-V:** App-V supports System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) for information about integrating your App-V environment with Configuration Manager.
 
-## <a href="" id="bkmk-migrate-to-51"></a>Migrating to App-V
+## <a href="" id="bkmk-migrate-to-51"></a>Upgrade to App-V for Windows
 
 
-Use the following information to upgrade to App-V from earlier versions. See [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md) for more information.
+Use the following information to upgrade to App-V for Windows from earlier versions. See [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md) for more information.
 
 ### Before you start the upgrade
 
@@ -102,24 +103,21 @@ Review the following information before you start the upgrade:
 </tr>
 <tr class="even">
 <td align="left"><p>Upgrading from App-V 4.x</p></td>
-<td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V. For more information, see:</p>
-<ul>
-<li><p>“Differences between App-V 4.6 and App-V 5.0” in [About App-V 5.0](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50.md)</p></li>
-<li><p>[Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)</p></li>
+<td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V for Windows. For more information, see [Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)</p></li>
 </ul>
 <p></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Upgrading from App-V 5.0 or later</p></td>
-<td align="left"><p>You can upgrade to App-V directly from any of the following versions:</p>
+<td align="left"><p>You can upgrade to App-V for Windows directly from any of the following versions:</p>
 <ul>
 <li><p>App-V 5.0</p></li>
 <li><p>App-V 5.0 SP1</p></li>
 <li><p>App-V 5.0 SP2</p></li>
 <li><p>App-V 5.0 SP3</p></li>
 </ul>
-<p>To upgrade to App-V, follow the steps in the remaining sections of this topic.</p>
-<p>Packages and connection groups will continue to work with App-V as they currently do.</p></td>
+<p>To upgrade to App-V for Windows, follow the steps in the remaining sections of this topic.</p>
+<p>Packages and connection groups will continue to work with App-V for Windows as they currently do.</p></td>
 </tr>
 </tbody>
 </table>
@@ -128,7 +126,7 @@ Review the following information before you start the upgrade:
 
 ### <a href="" id="bkmk-steps-upgrd-infrastruc"></a>Steps to upgrade the App-V infrastructure
 
-Complete the following steps to upgrade each component of the App-V infrastructure to App-V. The following order is only a suggestion; you may upgrade components in any order.
+Complete the following steps to upgrade each component of the App-V infrastructure to App-V for Windows. The following order is only a suggestion; you can upgrade components in any order.
 
 <table>
 <colgroup>
@@ -153,7 +151,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </div></td>
 <td align="left"><p>Follow these steps:</p>
 <ol>
-<li><p>Do one of the following, depending on the method you are using to upgrade the Management database and/or Reporting database:</p>
+<li><p>Do one of the following, depending on the method you are using to upgrade the management database and/or reporting database:</p>
 <table>
 <colgroup>
 <col width="50%" />
@@ -176,17 +174,17 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tr>
 </tbody>
 </table>
-<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/check-reg-key-svr).</p></li>
+<li><p>If you are upgrading the App-V for Windows Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/check-reg-key-svr).</p></li>
 <li><p>Follow the steps in [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)</p></li>
 <p> </p></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Step 2: Upgrade the App-V Sequencer.</p></td>
+<td align="left"><p>Step 2: Install the new App-V for Windows sequencer.</p></td>
 <td align="left"><p>See [How to Install the Sequencer](appv-install-the-sequencer.md).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Step 3: Enabled the App-V Client.</p></td>
+<td align="left"><p>Step 3: Enable the in-box App-V Client.</p></td>
 <td align="left"><p>See [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).</p></td>
 </tr>
 </tbody>
@@ -198,61 +196,24 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 
 Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion.
 
-**Note**  
-App-V packages are exactly the same as App-V 5.0 packages. There has been no change in the package format between the versions and so there is no need to convert App-V 5.0 packages to App-V packages.
+>**Note**  
+App-V for Windows packages are exactly the same as App-V 5.0 packages. There has been no change in the package format between the versions and so there is no need to convert App-V 5.0 packages to App-V for Windows packages.
 
  
 
 ## <a href="" id="bkmk-whatsnew"></a>What’s New in App-V
 
 
-These sections are for users who are already familiar with App-V and want to know what has changed in App-V. If you are not already familiar with App-V, you should start by reading [Planning for App-V](appv-planning-for-appv.md).
+These sections are for users who are already familiar with App-V and want to know what has changed in App-V for Windows. If you are not already familiar with App-V, you should start by reading [Planning for App-V](appv-planning-for-appv.md).
 
-### <a href="" id="bkmk-win10support"></a>App-V support for Windows 10
-
-The following table lists the Windows 10 support for App-V. Windows 10 is not supported in versions of App-V prior to App-V.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Component</th>
-<th align="left">App-V</th>
-<th align="left">App-V 5.0</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V Client</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V RDS Client</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V Sequencer</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ### <a href="" id="bkmk-mgmtconsole"></a>App-V Management Console Changes
 
-This section compares the App-V Management Console’s current and previous functionality.
+This section compares the App-V for Windows Management Console’s current and previous functionality.
 
 ### Silverlight is no longer required
 
-The Management Console UI no longer requires Silverlight. The 5.1 Management Console is built on HTML5 and Javascript.
+The Management Console UI no longer requires Silverlight. The Management Console is built on HTML5 and Javascript.
 
 ### Notifications and messages are displayed individually in a dialog box
 
@@ -263,7 +224,7 @@ The Management Console UI no longer requires Silverlight. The 5.1 Management Con
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">New in App-V</th>
+<th align="left">New in App-V for Windows</th>
 <th align="left">Prior to App-V</th>
 </tr>
 </thead>
@@ -300,8 +261,8 @@ The Management Console UI no longer requires Silverlight. The 5.1 Management Con
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">New in App-V</th>
-<th align="left">Prior to App-V</th>
+<th align="left">New in App-V for Windows</th>
+<th align="left">Prior to App-V for Windows</th>
 </tr>
 </thead>
 <tbody>
@@ -324,8 +285,8 @@ The Management Console UI no longer requires Silverlight. The 5.1 Management Con
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">New in App-V</th>
-<th align="left">Prior to App-V</th>
+<th align="left">New in App-V for Windows</th>
+<th align="left">Prior to App-V for Windows</th>
 </tr>
 </thead>
 <tbody>
@@ -347,8 +308,8 @@ The Management Console UI no longer requires Silverlight. The 5.1 Management Con
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">New in App-V</th>
-<th align="left">Prior to App-V</th>
+<th align="left">New in App-V for Windows</th>
+<th align="left">Prior to App-V Windows</th>
 </tr>
 </thead>
 <tbody>
@@ -483,7 +444,7 @@ You can enable or disable Browser Helper Objects by selecting a new check box, E
 
 You can now use the package converter to convert App-V 4.6 packages that contain scripts, and registry information and scripts from source .osd files are now included in package converter output.
 
-For more information including examples, see [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md).
+For more information including examples, see [Migrating to App-V for Windows from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md).
 
 ### <a href="" id="bkmk-supmultscripts"></a>Support for multiple scripts on a single event trigger
 
@@ -491,18 +452,6 @@ App-V supports the use of multiple scripts on a single event trigger for App-V p
 
 For more information, including a list of event triggers and the context under which scripts can be run, see the Scripts section in [About App-V Dynamic Configuration](appv-dynamic-configuration.md).
 
-### <a href="" id="bkmk-hardcodepath"></a>Hardcoded path to installation folder is redirected to virtual file system root
-
-When you convert packages from App-V 4.6 to 5.1, the App-V package can access the hardcoded drive that you were required to use when you created 4.6 packages. The drive letter will be the drive you selected as the installation drive on the 4.6 sequencing machine. (The default drive letter is Q:\\.)
-
-Previously, the 4.6 root folder was not recognized and could not be accessed by App-V 5.0 packages. App-V packages can access hardcoded files by their full path or can programmatically enumerate files under the App-V 4.6 installation root.
-
-**Technical Details:** The App-V package converter will save the App-V 4.6 installation root folder and short folder names in the FilesystemMetadata.xml file in the Filesystem element. When the App-V client creates the virtual process, it will map requests from the App-V 4.6 installation root to the virtual file system root.
-
-## How to Get MDOP Technologies
-
-
-App-V is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Have a suggestion for App-V?
 
