@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, mobile
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Configure access to Windows Store

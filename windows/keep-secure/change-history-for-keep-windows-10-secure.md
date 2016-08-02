@@ -12,15 +12,33 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## RELEASE: Windows 10, version 1607
+
+The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added:
+
+- [Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
+- [Remote Credential Guard](remote-credential-guard.md)
+- [Windows Defender Offline in Windows 10](windows-defender-offline.md)
+- [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md)
+- [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md)
+- [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md)
+- [Run a Windows Defender scan from the command line](run-cmd-scan-windows-defender-for-windows-10.md)
+- [Detect and block Potentially Unwanted Applications with Windows Defender](enable-pua-windows-defender-for-windows-10.md)
+- [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
+- [Configure endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Configure SIEM tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
+- [Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md)
+
+
 ## July 2016
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Updated various topics throughout this section for new name and new UI in Microsoft Intune and System Center Configuration Manager. |
 |[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md) |New |
 |[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |New |
-|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |New |
-|[Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |New |
+|[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |New |
+|[Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |New |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (multiple topics) | Updated |
 |[Device Guard deployment guide](device-guard-deployment-guide.md) (multiple topics) | Updated |
 
@@ -29,7 +47,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Added an update about needing to reconfigure your Windows Information Protection app rules after delivery of the June service update. |
+|[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |Added an update about needing to reconfigure your enterprise data protection app rules after delivery of the June service update. |
 | [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md) (multiple topics) | New |
 | [Advanced security audit policy settings](advanced-security-audit-policy-settings.md) (mutiple topics) | New security monitoring reference topics |
 | [Windows security baselines](windows-security-baselines.md) | New |
@@ -42,7 +60,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 | [Microsoft Passport errors during PIN creation](microsoft-passport-errors-during-pin-creation.md) | Added errors 0x80090029 and 0x80070057, and merged entries for error 0x801c03ed. |
 | [Microsoft Passport guide](microsoft-passport-guide.md) | Updated Roadmap section content |
 |[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Updated info based on changes to the features and functionality.|
-| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 Technical Preview |
+| [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md) | Updated for Windows 10 and Windows Server 2016 |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (mutiple topics) | New |
 
 ## April 2016
@@ -56,7 +74,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Requirements to use AppLocker](requirements-to-use-applocker.md) |Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 Technical Preview is required to manage AppLocker by using Group Policy.|
+|[Requirements to use AppLocker](requirements-to-use-applocker.md) |Added that MDM can be used to manage any edition of Windows 10. Windows 10 Enterprise or Windows Server 2016 is required to manage AppLocker by using Group Policy.|
 |[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Added pre-release content about how to set up and deploy Windows Information Protection (WIP) in an enterprise environment.|
 
 ## February 2016

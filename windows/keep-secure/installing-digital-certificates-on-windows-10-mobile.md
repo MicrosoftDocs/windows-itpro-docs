@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Install digital certificates on Windows 10 Mobile
@@ -21,6 +22,10 @@ Certificates in Windows 10 Mobile are primarily used for the following purposes
 -   To create a secure channel using Secure Sockets Layer (SSL) between a phone and a web server or service.
 -   To authenticate a user to a reverse proxy server that is used to enable Microsoft Exchange ActiveSync (EAS) for email.
 -   For installation and licensing of applications (from the Windows Phone Store or a custom company distribution site).
+
+
+**Warning**  
+In Windows 10, Version 1607, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. [Learn more about this known issue in Version 1607](http://go.microsoft.com/fwlink/p/?LinkId=786764)
 
 ## Install certificates using Microsoft Edge
 

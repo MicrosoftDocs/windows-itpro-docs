@@ -166,7 +166,7 @@ Table 2. Windows 10 cryptography policies
 </tbody>
 </table>
  
-For a complete list of policies available, see [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkId=733963).
+For a complete list of policies available, see [Policy CSP](https://technet.microsoft.com/library/dn904962.aspx).
 
 ### <a href="" id="enterprise-data-protection--"></a>Enterprise data protection
 
@@ -174,7 +174,7 @@ Enterprises have seen huge growth in the convergence of personal and corporate d
 
 One growing risk is authorized users’ accidental disclosure of sensitive data—a risk that is rapidly becoming the biggest source of confidential data leakage as organizations allow personal devices to access corporate resources. One example is common among organizations: an employee connects his or her personal phone to the company’s Microsoft Exchange Server instance for email. He or she uses the phone to work on email that includes attachments with sensitive data. When sending the email, the user accidentally copies a supplier. Content protection is only as strong as the weakest link, and in this example, the unintended sharing of sensitive data with unauthorized people might not have been prevented with standard data encryption.
 
-In Windows 10 Mobile, enterprise data protection (EDP) helps separate personal and enterprise data and prevent data leakage. Key features include its ability to:
+In Windows 10 Mobile, Windows Information Protection (WIP) helps separate personal and enterprise data and prevent data leakage. Key features include its ability to:
 
 -   Automatically tag personal and corporate data.
 -   Protect data while it’s at rest on local or removable storage.
@@ -182,21 +182,21 @@ In Windows 10 Mobile, enterprise data protection (EDP) helps separate personal 
 -   Control which apps can access a virtual private network (VPN) connection.
 -   Prevent users from copying corporate data to public locations.
 
-> **Note:**  EDP is currently being tested in select customer evaluation programs. For more information about EDP, see [Enterprise data protection overview](../whats-new/edp-whats-new-overview.md).
+> **Note:** WIP is currently being tested in select customer evaluation programs. For more information about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
  
 ### <a href="" id="enlightenment--"></a>Enlightenment
 
-Third-party data loss protection solutions usually require developers to wrap their apps. In contrast, EDP puts the intelligence in Windows 10 Mobile so that it doesn’t require wrappers. As a result, most apps require nothing extra to work with EDP.
+Third-party data loss protection solutions usually require developers to wrap their apps. In contrast, WIP puts the intelligence in Windows 10 Mobile so that it doesn’t require wrappers. As a result, most apps require nothing extra to work with WIP.
 
-EDP can enforce policy without the need for an app to change. This means that an app that always handles business data (such as an LOB app) can be added to the allowed list and will always encrypt all data that it handles. However, if the app does not use common controls, cut and paste operations from this app to a non-enterprise app will silently fail. In addition, if the app needs to handle personal data, this data will also be encrypted.
-Therefore, to improve the user experience, in some cases, developers should enlighten their apps by adding code to and compiling them to use the EDP application programming interfaces. Those cases include apps that:
+WIP can enforce policy without the need for an app to change. This means that an app that always handles business data (such as an LOB app) can be added to the allowed list and will always encrypt all data that it handles. However, if the app does not use common controls, cut and paste operations from this app to a non-enterprise app will silently fail. In addition, if the app needs to handle personal data, this data will also be encrypted.
+Therefore, to improve the user experience, in some cases, developers should enlighten their apps by adding code to and compiling them to use the WIP application programming interfaces. Those cases include apps that:
 -   Don’t use common controls for saving files.
 -   Don’t use common controls for text boxes.
 -   Work on personal and enterprise data simultaneously (for example, contact apps that display personal and enterprise data in a single view; a browser that displays personal and enterprise web pages on tabs within a single instance).
 
-Figure 1 summarizes when an app might require enlightenment to work with EDP. Microsoft Word is a good example. Not only can Word access personal and enterprise data simultaneously, but it can also transmit enterprise data (for example, email attachments containing enterprise data).
+Figure 1 summarizes when an app might require enlightenment to work with WIP. Microsoft Word is a good example. Not only can Word access personal and enterprise data simultaneously, but it can also transmit enterprise data (for example, email attachments containing enterprise data).
 
-In any case, most apps don’t require enlightenment for them to use EDP protection. Simply adding them to the EDP allow list is all you must do. Because unenlightened apps cannot automatically tag data as personal or enterprise, if they are in an EDP policy, they treat all data as enterprise data. An LOB app is a good example. Adding an LOB app to an EDP policy protects all data that the app handles. Another example is a legacy app that cannot be updated, which you can add to an EDP policy and use without even being aware that EDP exists.
+In any case, most apps don’t require enlightenment for them to use WIP protection. Simply adding them to the WIP allow list is all you must do. Because unenlightened apps cannot automatically tag data as personal or enterprise, if they are in a WIP policy, they treat all data as enterprise data. An LOB app is a good example. Adding an LOB app to a WIP policy protects all data that the app handles. Another example is a legacy app that cannot be updated, which you can add to a WIP policy and use without even being aware that WIP exists.
 
 ![figure 1](images/mobile-security-guide-fig1.png)
 
@@ -204,32 +204,32 @@ Figure 1. When is enlightenment required?
 
 ### Data leakage control
 
-To configure EDP in an MDM solution that supports it, add authorized apps to the EDP allow list. When a device running Windows 10 Mobile enrolls in the MDM solution, apps that this policy doesn’t authorize won’t have access to enterprise data.
+To configure WIP in an MDM solution that supports it, add authorized apps to the WIP allow list. When a device running Windows 10 Mobile enrolls in the MDM solution, apps that this policy doesn’t authorize won’t have access to enterprise data.
 
-EDP works seamlessly until users try to access enterprise data with or try to paste enterprise data into unauthorized apps or locations on the web. For example, copying enterprise data from an authorized app to another authorized app works as usual, but EDP blocks users from copying enterprise data from an authorized app to an unauthorized app. Likewise, EDP blocks users from using an unauthorized app to open a file that contains enterprise data.
-In addition, users cannot copy and paste data from authorized apps to unauthorized apps or locations on the Web without triggering one of the EDP protection levels:
--   **Block.** EDP blocks users from completing the operation.
--   **Override.** EDP notifies users that the operation is inappropriate but allows them to override the policy, although it logs the operation in the audit log.
--   **Audit.** EDP does not block or notify users but logs the operation in the audit log.
--   **Off.** EDP does not block or notify users and does not log operations in the audit log.
+WIP works seamlessly until users try to access enterprise data with or try to paste enterprise data into unauthorized apps or locations on the web. For example, copying enterprise data from an authorized app to another authorized app works as usual, but WIP blocks users from copying enterprise data from an authorized app to an unauthorized app. Likewise, WIP blocks users from using an unauthorized app to open a file that contains enterprise data.
+In addition, users cannot copy and paste data from authorized apps to unauthorized apps or locations on the Web without triggering one of the WIP protection levels:
+-   **Block.** WIP blocks users from completing the operation.
+-   **Override.** WIP notifies users that the operation is inappropriate but allows them to override the policy, although it logs the operation in the audit log.
+-   **Audit.** WIP does not block or notify users but logs the operation in the audit log.
+-   **Off.** WIP does not block or notify users and does not log operations in the audit log.
 
 ### Data separation
 
 As the name suggests, data separation separates personal from enterprise data. Most third-party solutions require an app wrapper, and from here, enterprise data goes in a container while personal data is outside the container. Often, people must use two different apps for the same purpose: one for personal data and another for enterprise data.
 
-EDP provides the same data separation but neither uses containers nor requires a special version of an app to access business data, and then a second instance of it to access personal data. There are no containers, partitions, or special folders to physically separate personal and business data. Instead, Windows 10 Mobile is the access control broker, identifying enterprise data because it’s encrypted to the enterprise. Therefore, EDP provides data separation by virtue of encrypting enterprise data.
+WIP provides the same data separation but neither uses containers nor requires a special version of an app to access business data, and then a second instance of it to access personal data. There are no containers, partitions, or special folders to physically separate personal and business data. Instead, Windows 10 Mobile is the access control broker, identifying enterprise data because it’s encrypted to the enterprise. Therefore, WIP provides data separation by virtue of encrypting enterprise data.
 
 ### Visual cues
 
-In Windows 10 Mobile, visual cues indicate the status of EDP to users (see Figure 2):
+In Windows 10 Mobile, visual cues indicate the status of WIP to users (see Figure 2):
 
--   **Start screen.** On the Start screen, apps that an EDP policy manages display a visual cue.
+-   **Start screen.** On the Start screen, apps that a WIP policy manages display a visual cue.
 -   **Files.** In File Explorer, a visual cue indicates whether a file or folder contains enterprise data and is therefore encrypted.
-For example, Erwin is an employee at Fabrikam. He opens Microsoft Edge from the Start screen and sees that the tile indicates that an EDP policy manages the browser. Erwin opens the Fabrikam sales website and downloads a spreadsheet. In File Explorer, Erwin sees that the file he downloaded has a visual cue which indicates that it’s encrypted and contains enterprise data. When Erwin tries to paste data from that spreadsheet into an app that no EDP policy manages (for example, his Twitter app), Erwin might see a message that allows him to override protection while logging the action, depending on the protection level configured in the EDP policy.
+For example, Erwin is an employee at Fabrikam. He opens Microsoft Edge from the Start screen and sees that the tile indicates that a WIP policy manages the browser. Erwin opens the Fabrikam sales website and downloads a spreadsheet. In File Explorer, Erwin sees that the file he downloaded has a visual cue which indicates that it’s encrypted and contains enterprise data. When Erwin tries to paste data from that spreadsheet into an app that no WIP policy manages (for example, his Twitter app), Erwin might see a message that allows him to override protection while logging the action, depending on the protection level configured in the WIP policy.
 
 ![figure 2](images/mobile-security-guide-fig2.png)
 
-Figure 2. Visual cues in EDP
+Figure 2. Visual cues in WIP
 
 ## Malware resistance
 
