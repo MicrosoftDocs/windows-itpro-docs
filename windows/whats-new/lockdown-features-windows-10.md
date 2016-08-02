@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /manage/lockdown-features-windows-10
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/lockdown-features-windows-10
 ---
 
 # Lockdown features from Windows Embedded 8.1 Industry

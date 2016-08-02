@@ -101,3 +101,5 @@ Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microso
 - [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
 - [User Experience Virtualization (UE-V) Release Notes](uev-release-notes-1607.md) for Windows 10, version 1607
+
+- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md) 

@@ -20,7 +20,7 @@ If you’re already using UE-V 2.x and you’re planning to upgrade user devices
 
 3.	Enable the UE-V service on user devices.
 
-4.	Install the UE-V template generator.
+4.	Install the UE-V template generator if you want to synchronize application settings for custom applications.
 
 > **Important**&nbsp;&nbsp;You can upgrade your existing UE-V installation to Windows 10, version 1607 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you’ll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10, version 1607..   
 
@@ -30,17 +30,17 @@ Performing an in-place upgrade on user devices automatically installs the UE-V s
 
 ## Verify that UE-V settings were migrated correctly 
 
-After upgrading a user device to Windows 10, it’s important to verify that UE-V settings and template registrations were migrated correctly during the upgrade. You can verify UE-V settings using Windows Powershell or the device’s registry.
+After upgrading a user device to Windows 10, version 1607, it’s important to verify that UE-V settings and template registrations were migrated correctly during the upgrade. You can verify UE-V settings using Windows Powershell or the device’s registry.
 
 **To verify UE-V settings using Windows PowerShell**
 
-1.	Run PowerShell as Administrator and type **Get-UEVConfiguration** to view current configurations.
+1.	Run PowerShell as Administrator, type **Get-UEVConfiguration**, and press ENTER to view current configurations.
 
 2.	Check that the settings were successfully updated.
 
-3.	Type **Get-UEVTemplate** to check that your templates are still registered.
+3.	Type **Get-UEVTemplate** and press ENTER to check that your templates are still registered.
 
-    > **Note** You’ll need to register the Notepad template again after you upgrade the device to Windows 10. 
+    > **Note** You’ll need to register the NotePad template again after you upgrade the device to Windows 10. 
 
 **To verify UE-V settings using the device’s registry**
 
@@ -54,7 +54,7 @@ After upgrading a user device to Windows 10, it’s important to verify that UE-
 
 The UE-V service is the client-side component that captures user-personalized application and Windows settings and saves them in settings packages. Settings packages are built, locally stored, and copied to the settings storage location. 
 
-With Windows 10, version 1607 and later, the UE-V service is installed on user devices and no longer requires a separate download and installation. Enable the service to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell. 
+With Windows 10, version 1607 and later, the UE-V service replaces the UE-V Agent and no longer requires a separate download and installation. Enable the service on user devices to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell. 
 
 > **Important**&nbsp;&nbsp;The UE-V Agent used in prior releases of UE-V is replaced with the UE service. The UE-V service included with Windows 10, version 1607 and later releases, does not include the agent user interface and is configurable through cmdlets or registry settings only.
 
@@ -70,11 +70,11 @@ With Windows 10, version 1607 and later, the UE-V service is installed on user d
 
 **To enable the UE-V service with Windows PowerShell**
 
-1.	Run PowerShell as Administrator and enter **Enable-UEV**.
+1.	Run PowerShell as Administrator, type **Enable-UEV**, and press ENTER.
 
 2.	Restart the device.
 
-3.	Type **Get-UEVStatus** to verify that the service was successfully enabled.
+3.	Type **Get-UEVStatus** and press ENTER to verify that the service was successfully enabled.
 
 ## Install the UE-V template generator
 
@@ -88,7 +88,7 @@ The UE-V template generator is included in the Windows Assessment and Deployment
 
     ![Selecting UE-V features in ADK](images/uev-adk-select-uev-feature.png)
  
-3.	To open the generator, select **Microsoft User Experience Virtualization Generator** from the **Start** menu. 
+3.	To open the generator, open the **Start** menu and navigate to **Windows Kits** > **Microsoft User Experience Virtualization (UE-V) Template Generator**. 
 
 
 ## Other resources for this feature
