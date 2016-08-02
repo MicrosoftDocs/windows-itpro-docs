@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: jdeckerMS
-redirect_url: /manage/windows-spotlight
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/windows-spotlight
 ---
 
 # Windows Spotlight on the lock screen
