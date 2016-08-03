@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site.
-ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
 title: Fix web compatibility issues using document modes and the Enterprise Mode site list (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Fix web compatibility issues using document modes and the Enterprise Mode site list
 The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site. This addition to the site list is a continuation of our commitment to help you upgrade and stay up-to-date on the latest version of Internet Explorer, while still preserving your investments in existing apps.

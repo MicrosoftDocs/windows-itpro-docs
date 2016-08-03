@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: Info about the features included in Enterprise Mode with Internet Explorer 11.
-ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
 title: What is Enterprise Mode (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # What is Enterprise Mode?
 

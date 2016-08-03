@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Instructions about how to create and configure shortcut preference extensions to file system objects, URLs, and shell objects.
-ms.assetid: c6fbf990-13e4-4be7-9f08-5bdd43179b3b
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: c6fbf990-13e4-4be7-9f08-5bdd43179b3b
 title: Group Policy, Shortcut Extensions, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Group Policy, Shortcut Extensions, and Internet Explorer 11
 Group Policy includes the Shortcuts preference extension, which lets you configure shortcuts to:

@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Internal Install page in the IEAK 11 Customization Wizard to customize Setup for the default browser and the latest browser updates.
-ms.assetid: 33d078e3-75b8-455b-9126-f0d272ed676f
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 33d078e3-75b8-455b-9126-f0d272ed676f
 title: Use the Internal Install page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Internal Install page in the IEAK 11 Wizard
 The **Internal Install** page of the Internet Explorer Customization Wizard 11 lets you customize Setup for the default browser and the latest browser updates, based on your company’s guidelines.

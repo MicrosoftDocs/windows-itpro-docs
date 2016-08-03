@@ -4,6 +4,7 @@ description: This article, and the articles it links to, describe how to create 
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 author: brianlic-msft
 ---
 

@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: networking
 description: Auto detect settings Internet Explorer 11
-ms.assetid: c6753cf4-3276-43c5-aae9-200e9e82753f
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: networking
+ms.assetid: c6753cf4-3276-43c5-aae9-200e9e82753f
 title: Auto detect settings Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Auto detect settings Internet Explorer 11
 After you specify the specific settings related to automatic detection on your Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS) servers, you can set up your users' browser settings from a central location.

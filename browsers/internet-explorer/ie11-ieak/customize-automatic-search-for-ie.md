@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: manage
 description: Customize Automatic Search in Internet Explorer so that your employees can type a single word into the Address box to search for frequently used pages.
-ms.assetid: 694e2f92-5e08-49dc-b83f-677d61fa918a
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.assetid: 694e2f92-5e08-49dc-b83f-677d61fa918a
 title: Customize Automatic Search using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Customize Automatic Search for Internet Explorer using IEAK 11
 Internet Explorer lets websites advertise any search provider that uses the open search standard described at the A9 website ( [OpenSearch 1.1 Draft 5](http://go.microsoft.com/fwlink/p/?LinkId=208582)). When IE detects new search providers, the **Search** box becomes active and adds the new providers to the drop-down list of providers.

@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 author: brianlic-msft
 ---
 # Protect derived domain credentials with Credential Guard

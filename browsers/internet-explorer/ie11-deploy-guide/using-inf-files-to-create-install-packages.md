@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use Setup Information (.inf) files to create installation packages.
-ms.assetid: 04fa2ba8-8d84-4af6-ab99-77e4f1961b0e
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 04fa2ba8-8d84-4af6-ab99-77e4f1961b0e
 title: Using Setup Information (.inf) files to create packages (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Using Setup Information (.inf) files to create install packages
 IEAK 11 uses Setup information (.inf) files to provide uninstallation instructions. Uninstallation instructions let your employees remove components, like files, registry entries, or shortcuts, through the **Uninstall or change a program** box. For details about .inf files, see [INF File Sections and Directives](http://go.microsoft.com/fwlink/p/?LinkId=327959).
