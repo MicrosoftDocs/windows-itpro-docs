@@ -37,6 +37,7 @@
 #### [Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md)
 #### [Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md)
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
+## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
 ## [VPN profile options](vpn-profile-options.md)
 ## [Windows security baselines](windows-security-baselines.md)
 ## [Security technologies](security-technologies.md)
