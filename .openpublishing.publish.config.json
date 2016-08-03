@@ -27,8 +27,8 @@
     },
     {
       "docset_name": "itpro-hololens",
-      "build_source_folder": "itpro-hololens",
-      "build_output_subfolder": "itpro-hololens",
+      "build_source_folder": "devices/hololens",
+      "build_output_subfolder": "devices/hololens",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": false,
