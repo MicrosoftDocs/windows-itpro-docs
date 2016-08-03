@@ -13,7 +13,9 @@ author: brianlic-msft
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## August 2016
-- [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md) |New |
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md) |New |
 
 ## RELEASE: Windows 10, version 1607
 
