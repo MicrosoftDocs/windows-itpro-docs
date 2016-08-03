@@ -14,16 +14,18 @@ You can install the App-V server features by using different deployment configur
 
 For information about deploying the App-V Server, see [About App-V](appv-about-appv.md).
 
-> [!IMPORTANT]  
-> Before you install and configure the App-V servers, you must specify a port where each component will be hosted. You must also add the associated firewall rules to allow incoming requests to access the specified ports. The installer does not modify firewall settings.
+>**IMPORTANT**  
+> Before you install and configure the App-V server components, you must specify a port where each component will be hosted. You must also add the associated firewall rules to allow incoming requests to access the specified ports. The installer does not modify firewall settings.
 
-## Download and install App-V Server components
+## Download and install App-V server components
 
-App-V offers the following five server components, each of which serves a specific purpose in an App-V environment. All five server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from the [Microsoft Developer Network (MSDN)  subscription site](https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#FileId=65215). You must have a MSDN subscription to download MDOP.
+App-V offers the following five server components, each of which serves a specific purpose in an App-V environment. 
 
 - **Management server**. Use the App-V management server and console to manage your App-V infrastructure. See [Administering App-V with the management console](appv-administering-virtual-applications-with-the-management-console.md) for more information about the management server.
 
-    **Note**: If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you can still take advantage of the reporting and streaming capabilities in App-V.
+
+        >**Note** If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you can still take advantage of the reporting and streaming capabilities in App-V.
+
     
 - **Management database**. Use the App-V management database to facilitate database pre-deployments for App-V management. See [How to deploy the App-V server components](appv-deploy-the-appv-server.md) for more information about the management database.
  
@@ -33,6 +35,16 @@ App-V offers the following five server components, each of which serves a specif
 
 - **Reporting database**. Use the App-V reporting database to facilitate database pre-deployments for App-V reporting. See [How to deploy the App-V server](appv-deploy-the-appv-server.md) for more information about the reporting database.
 
+All five App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from:
+
+-   The [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#FileId=65215) You must have a MSDN subscription to download the MDOP ISO package from the MSDN subscriptions site.
+
+-   The [Volume Licensing Service Center](https://www.microsoft.com/en-us/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/en-us/WindowsForBusiness/windows-product-home). 
+
+
+        >**Note** If you're already using App-V 5.x, you don't need to re-deploy the App-V server components as they haven't changed since App-V 5.0 was released.
+
+
 In large organizations, you might want to install more than one instance of the server components to get:
 
 - Fault tolerance for situations when one of the servers is unavailable.
@@ -41,17 +53,19 @@ In large organizations, you might want to install more than one instance of the 
 
 - Scalability to support a high load. For example, you can install additional servers behind a network load balancer.
 
-## App-V standalone deployment
 
 
-The App-V standalone deployment provides a good topology for a small deployment or a test environment. When you use this type of implementation, all server components are deployed to a single computer. The services and associated databases will compete for the resources on the computer that runs the App-V components. Therefore, you should not use this topology for larger deployments.
+## App-V single server deployment
+
+
+For small deployments of App-V or if you're installing the server components in a test environment, you can install all server components on a single device. However, because the App-V services and associated databases compete for the resources on the device that runs the App-V components, you should not use this topology for larger deployments.
 
 - [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
 - [How to Deploy the App-V Server Using a Script](appv-deploy-the-appv-server-with-a-script.md)
 
-##  App-V Server distributed deployment
+##  App-V server distributed deployment
 
-The distributed deployment topology can support a large App-V client base and it allows you to more easily manage and scale your environment. When you use this type of deployment, the App-V Server components are deployed across multiple computers, based on the structure and requirements of the organization.
+The distributed deployment topology can support a large App-V client base and it allows you to more easily manage and scale your environment. When you use this type of deployment, the App-V server components are deployed across multiple computers, based on the structure and requirements of the organization.
 
 - [How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services](appv-install-the-management-and-reporting-databases-on-separate-computers.md)
 - [How to install the Management Server on a Standalone Computer and Connect it to the Database](appv-install-the-management-server-on-a-standalone-computer.md)
@@ -63,7 +77,7 @@ The distributed deployment topology can support a large App-V client base and it
 
 You can also deploy the App-V clients and packages by using an ESD without having to deploy App-V. The full capabilities for integration will vary depending on the ESD that you use.
 
-> [!NOTE]  
+>**Note**  
 > The App-V reporting server and reporting database can still be deployed alongside the ESD to collect the reporting data from the App-V clients. However, the other three server components should not be deployed, because they will conflict with the ESD functionality.
 
 [Deploying App-V Packages by Using Electronic Software Distribution (ESD)](appv-deploying-packages-with-electronic-software-distribution-solutions.md)
