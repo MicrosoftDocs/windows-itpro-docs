@@ -14,10 +14,11 @@ author: DulceMV
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Use the **Settings** menu ![Settings icon](images/settings.png) to configure the time zone, suppression rules, and view license information.
 
@@ -52,7 +53,7 @@ To set the time zone:
 3.	The time zone indicator changes to **Timezone:Local**. Click it again to change back to **Timezone:UTC**.
 
 ## Suppression rules
-The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. See [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).
+The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. For more information see, [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).
 
 ## License
 Click the license link in the **Settings** menu to view the license agreement information for Windows Defender ATP.

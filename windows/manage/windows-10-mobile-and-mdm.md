@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile, devices, security
 author: AMeeus
+localizationpriority: high
 ---
 
 # Windows 10 Mobile and mobile device management
