@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 author: brianlic-msft
 ---
 # Protect derived domain credentials with Credential Guard
@@ -114,6 +115,11 @@ The PC must meet the following hardware and software requirements to use Credent
 <tr class="even">
 <td align="left"><p>Virtual machine</p></td>
 <td align="left"><p>For PCs running Windows 10, version 1607, you can run Credential Guard on a Generation 2 virtual machine.</p></td>
+</tr>
+</tr>
+<tr class="even">
+<td align="left"><p>Hypervisor</p></td>
+<td align="left"><p>Only the Windows hypervisor is supported.</p></td>
 </tr>
 </tbody>
 </table>

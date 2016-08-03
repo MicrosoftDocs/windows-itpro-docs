@@ -12,6 +12,9 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## August 2016
+- [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md) |New |
+
 ## RELEASE: Windows 10, version 1607
 
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added:
