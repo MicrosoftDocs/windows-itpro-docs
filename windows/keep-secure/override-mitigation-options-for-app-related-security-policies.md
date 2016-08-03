@@ -17,7 +17,7 @@ ms.sitesec: library
 -   Windows 10, version 1607
 -   Windows Server 2016
 
-Use Group Policy to override individual Process Mitigation Options settings and help to enforce specific app-related security policies.
+Use Group Policy to override individual **Process Mitigation Options** settings and help to enforce specific app-related security policies.
 
 **To modify Process Mitigation Options**
 
