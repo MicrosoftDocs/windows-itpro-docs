@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Use the topics in this section to learn how to customize your Internet Explorer installation package, how to choose the right method for installation, and how to deploy IE into your environment.
-ms.assetid: caca18c1-d5c4-4404-84f8-d02bc562915f
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: caca18c1-d5c4-4404-84f8-d02bc562915f
 title: Install and Deploy Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Install and Deploy Internet Explorer 11 (IE11)
 

@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to set up automatic detection for DHCP or DNS servers using IEAK 11 in your organization.
-ms.assetid: c6bfe7c4-f452-406f-b47e-b7f0d8c44ae1
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: c6bfe7c4-f452-406f-b47e-b7f0d8c44ae1
 title: Set up auto detection for DHCP or DNS servers using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Set up auto detection for DHCP or DNS servers using IEAK 11
 Set up your network to automatically detect and customize Internet Explorer 11 when it’s first started. Automatic detection is supported on both Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS), letting your servers detect and set up your employee’s browser settings from a central location, using a configuration URL (.ins file) or a JavaScript proxy configuration file (.js, .jvs, or .pac).
@@ -52,3 +54,4 @@ Create a canonical name (CNAME) alias record, named **WPAD**. This record lets y
 
 **Note**<br>
 IE11 creates a default URL template based on the host name,**wpad**. For example, `http://wpad.<domain>.com/wpad.dat`. Because of this, you need to set up a file or redirection point in your web server **WPAD** record, named **wpad.dat**. The **wpad.dat** record delivers the contents of your automatic configuration file.
+

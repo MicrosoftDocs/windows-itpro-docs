@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Overview about Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11
-ms.assetid: 63a7ef4a-6de2-4d08-aaba-0479131e3406
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: 63a7ef4a-6de2-4d08-aaba-0479131e3406
 title: Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11
 Advanced Group Policy Management (AGPM) is an add-on license that available for the Microsoft Desktop Optimization Pack (MDOP). This license gives you change control and a role assignment-model that helps optimize Group Policy management and reduce the risk of widespread failures.

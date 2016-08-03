@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Administrative templates and Internet Explorer 11
-ms.assetid: 2b390786-f786-41cc-bddc-c55c8a4c5af3
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: 2b390786-f786-41cc-bddc-c55c8a4c5af3
 title: Administrative templates and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Administrative templates and Internet Explorer 11
 
@@ -73,3 +75,4 @@ Regardless which tool you're using to edit your Group Policy settings, you'll ne
 ## Related topics
 - [Administrative templates (.admx) for Windows 10 download](http://go.microsoft.com/fwlink/p/?LinkId=746579)
 - [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=746580)
+

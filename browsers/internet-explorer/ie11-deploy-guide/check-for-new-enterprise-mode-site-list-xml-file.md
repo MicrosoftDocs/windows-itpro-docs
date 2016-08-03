@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: You can have centralized control over Enterprise Mode by creating a single, global XML site list that includes the list of websites to render using Enterprise Mode.
-ms.assetid: 2bbc7017-622e-4baa-8981-c0bbda10e9df
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 2bbc7017-622e-4baa-8981-c0bbda10e9df
 title: Check for a new Enterprise Mode site list xml file (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Check for a new Enterprise Mode site list xml file
 

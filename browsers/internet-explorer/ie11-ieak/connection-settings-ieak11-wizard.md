@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Connection Settings page in IEAK 11 Customization Wizard to import and preset connection settings on your employee’s computers.
-ms.assetid: dc93ebf7-37dc-47c7-adc3-067d07de8b78
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: dc93ebf7-37dc-47c7-adc3-067d07de8b78
 title: Use the Connection Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Connection Settings page in the IEAK 11 Wizard
 The **Connection Settings** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you import the connection settings from your computer, to preset the connection settings on your employee’s computers.
@@ -32,3 +34,4 @@ The **Connection Settings** page of the Internet Explorer Administration Kit (IE
 2.  Check the **Delete existing Dial-up Connection Settings** box to clear any existing settings on your employee’s computers.
 
 3.  Click **Next** to go to the [Automatic Configuration](auto-config-ieak11-wizard.md) page or **Back** to go to the [Connection Manager](connection-mgr-ieak11-wizard.md) page.
+

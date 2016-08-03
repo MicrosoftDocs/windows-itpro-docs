@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to fix potential installation problems with Internet Explorer 11
-ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
 title: Install problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Install problems with Internet Explorer 11
 Most Internet Explorer 11 installations are straightforward and work the way they should. But it's possible that you might have problems.

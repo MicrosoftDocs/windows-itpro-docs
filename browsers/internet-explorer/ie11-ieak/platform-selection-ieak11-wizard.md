@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Platform Selection page in the IEAK 11 Customization Wizard to pick the specs for your employee devices that will get the install package.
-ms.assetid: 9cbf5abd-86f7-42b6-9810-0b606bbe8218
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 9cbf5abd-86f7-42b6-9810-0b606bbe8218
 title: Use the Platform Selection page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 #  Use the Platform Selection page in the IEAK 11 Wizard
 The **Platform Selection** page of the Internet Explorer Customization Wizard 11 lets you pick the operating system and architecture (32-bit or 64-bit) for the devices on which you’re going to install the custom installation package.

@@ -1,13 +1,15 @@
 ---
-description: How to turn on Enterprise Mode and specify a site list. 
-ms.assetid: 800e9c5a-57a6-4d61-a38a-4cb972d833e1
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
+description: How to turn on Enterprise Mode and specify a site list.
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 800e9c5a-57a6-4d61-a38a-4cb972d833e1
 title: Turn on Enterprise Mode and use a site list (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Turn on Enterprise Mode and use a site list
 

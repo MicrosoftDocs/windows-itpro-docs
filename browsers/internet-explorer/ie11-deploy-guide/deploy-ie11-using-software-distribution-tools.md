@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Deploy Internet Explorer 11 using software distribution tools
-ms.assetid: fd027775-651a-41e1-8ec3-d32eca876d8a
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: fd027775-651a-41e1-8ec3-d32eca876d8a
 title: Deploy Internet Explorer 11 using software distribution tools (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Deploy Internet Explorer 11 using software distribution tools
 If you already manage software distribution and updates on your network through software distribution tools, you can also use these tools for ongoing deployments of Internet Explorer. Software distribution tools include:

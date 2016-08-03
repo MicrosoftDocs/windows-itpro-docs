@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: plan
 description: Learn about the security features available in Internet Explorer 11 and IEAK 11.
-ms.assetid: 5b64c9cb-f8da-411a-88e4-fa69dea473e2
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: plan
-ms.sitesec: library
+ms.assetid: 5b64c9cb-f8da-411a-88e4-fa69dea473e2
 title: Security features and IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Security features and IEAK 11
 Use Internet Explorer in conjunction with your new and existing security measures, to make sure the computers in your company aren’t compromised while on the Internet.
@@ -56,3 +58,4 @@ You must keep your private key, private. To do this, we recommend:
 -   **Tamper-proof storage.** Save your private keys on secure, tamper-proof hardware devices.
 
 -   **Security.** Protect your private keys using physical security measures, such as cameras and card readers.
+
