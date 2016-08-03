@@ -7,6 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
+localizationpriority: high
 ---
 
 # Create a Windows Information Protection (WIP) policy using Microsoft Intune

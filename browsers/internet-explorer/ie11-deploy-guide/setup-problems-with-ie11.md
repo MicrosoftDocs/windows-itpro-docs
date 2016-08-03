@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: support
+ms.pagetype: appcompat
 description: Reviewing log files to learn more about potential setup problems with Internet Explorer 11.
-ms.assetid: 2cd79988-17d1-4317-bee9-b3ae2dd110a0
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: support
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 2cd79988-17d1-4317-bee9-b3ae2dd110a0
 title: Setup problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Setup problems with Internet Explorer 11
 Installing Internet Explorer creates the following log files, which are stored in the Windows installation folder (typically, the C:\\Windows folder):

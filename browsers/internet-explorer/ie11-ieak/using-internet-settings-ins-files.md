@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Info about how to use Internet Settings (.ins) files and the IEAK 11 to configure your custom browser package.
-ms.assetid: a24a7cdb-681e-4f34-a53c-6d8383c5f977
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: a24a7cdb-681e-4f34-a53c-6d8383c5f977
 title: Using Internet Settings (.INS) files with IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Using Internet Settings (.INS) files with IEAK 11
 Use the Internet Settings (.ins) files and the Internet Explorer Administration Kit 11 (IEAK 11) to configure your custom browser and its components. You can create multiple versions of your custom package by customizing copies of this file.
@@ -28,3 +30,4 @@ Here's a list of the availble .INS file settings:
 |[Proxy](proxy-ins-file-setting.md) |Whether to use a proxy server. |
 |[Security Imports](security-imports-ins-file-setting.md) |Whether to import security information for your custom package. |
 |[URL](url-ins-file-setting.md) |Whether to use an auto-configured proxy server. |
+

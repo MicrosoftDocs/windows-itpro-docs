@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub, networking
 author: TrudyHa
-localizationpriority: high
+localizationpriority: medium
 ---
 
 # Wireless network management (Surface Hub)

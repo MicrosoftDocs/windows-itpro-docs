@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
-localizationpriority: high
+localizationpriority: medium
 ---
 
 # Microsoft Exchange properties (Surface Hub)

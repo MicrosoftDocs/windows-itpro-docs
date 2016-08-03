@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Group Policy, the Local Group Policy Editor, and Internet Explorer 11
-ms.assetid: 6fc30e91-efac-4ba5-9ee2-fa77dcd36467
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: 6fc30e91-efac-4ba5-9ee2-fa77dcd36467
 title: Group Policy, the Local Group Policy Editor, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Group Policy, the Local Group Policy Editor, and Internet Explorer 11
 A Microsoft Management Console (MMC)-based tool that manages both computer and user-related configurations for an individual computer policy. This tool is included with Windows® 7 Service Pack 1 (SP1) and Windows 8.1.

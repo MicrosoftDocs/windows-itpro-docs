@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: explore
 description: Frequently asked questions about Internet Explorer 11 for IT Pros
-ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: explore
-ms.sitesec: library
+ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
 title: Internet Explorer 11 - FAQ for IT Pros (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Internet Explorer 11 - FAQ for IT Pros
 Answering frequently asked questions about Internet Explorer 11 (IE11) features, operating system support, integration with the Windows operating system, Group Policy, and general configuration.
@@ -146,3 +148,4 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 - [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
+

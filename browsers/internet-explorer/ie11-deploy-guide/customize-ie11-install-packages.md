@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Customize Internet Explorer 11 installation packages
-ms.assetid: 10a14a09-673b-4f8b-8d12-64036135e7fd
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 10a14a09-673b-4f8b-8d12-64036135e7fd
 title: Customize Internet Explorer 11 installation packages (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Customize Internet Explorer 11 installation packages
 You can customize Internet Explorer 11 to support various browser behaviors, multiple operating system versions and languages, and Setup information (.inf) files.

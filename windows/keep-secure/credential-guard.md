@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 author: brianlic-msft
 ---
 # Protect derived domain credentials with Credential Guard
@@ -118,7 +119,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>Hypervisor</p></td>
-<td align="left"><p>Only the Windows hypervisor is supported.</p></td>
+<td align="left"><p>You must use the Windows hypervisor.</p></td>
 </tr>
 </tbody>
 </table>

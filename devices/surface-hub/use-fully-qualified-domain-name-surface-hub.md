@@ -4,7 +4,7 @@ description: Troubleshoot common problems, including setup issues, Exchange Acti
 ms.assetid: CF58F74D-8077-48C3-981E-FCFDCA34B34A
 keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync errors"]
 author: TrudyHa
-localizationpriority: high
+localizationpriority: medium
 ---
 
 # When to use a fully qualified domain name with Surface Hub

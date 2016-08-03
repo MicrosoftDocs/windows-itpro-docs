@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Use the \[URL\] .INS file setting to decide whether to use an auto-configured proxy server.
-ms.assetid: 05b09dfa-cf11-408d-92c2-b4ae434a59a7
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 05b09dfa-cf11-408d-92c2-b4ae434a59a7
 title: Use the URL .INS file to use an auto-configured proxy server (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the URL .INS file to use an auto-configured proxy server
 Info about whether to use an auto-configured proxy server. If yes, this also includes the URLs to the pages that appear when your employees first connect to that server.
@@ -31,3 +33,4 @@ Info about whether to use an auto-configured proxy server. If yes, this also inc
 |Quick_Link_X_Offline |<ul><li>**0.** Don’t make the Quick Links available offline.</li><li>**1.** Make the Quick Links available offline.</li></ul> |Determines whether to make the Quick Links available for offline browsing. |
 |Search_Page |`<default_search_url>` |The URL to the default search page. |
 |UseLocalIns |<ul><li>**0.** Don’t use a local .ins file.</li><li>**1.** Use a local .ins file.</li></ul> |Determines whether to use a local Internet Settings (.ins) file |
+
