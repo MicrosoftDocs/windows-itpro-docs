@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Additional Settings page in IEAK 11 Customization Wizard for additional settings that relate to your employee’s desktop, operating system, and security.
-ms.assetid: c90054af-7b7f-4b00-b55b-5e5569f65f25
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: c90054af-7b7f-4b00-b55b-5e5569f65f25
 title: Use the Additional Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Additional Settings page in the IEAK 11 Wizard
 The **Additional Settings** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you pick additional custom, corporate, and Internet settings that relate to your employee’s desktop, operating system, and security. If you don’t change a setting, it’ll be ignored.

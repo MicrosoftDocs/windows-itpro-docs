@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: Add multiple sites to your Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2).
-ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
 title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2) (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2)
 

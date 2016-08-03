@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: Turn on local user control and logging for Enterprise Mode.
-ms.assetid: 6622ecce-24b1-497e-894a-e1fd5a8a66d1
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 6622ecce-24b1-497e-894a-e1fd5a8a66d1
 title: Turn on local control and logging for Enterprise Mode (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Turn on local control and logging for Enterprise Mode
 

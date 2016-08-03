@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Proxy Settings page in the IEAK 11 Customization Wizard to pick the proxy servers used to connect to required services.
-ms.assetid: 1fa1eee3-e97d-41fa-a48c-4a6e0dc8b544
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 1fa1eee3-e97d-41fa-a48c-4a6e0dc8b544
 title: Use the Proxy Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Proxy Settings page in the IEAK 11 Wizard
 The **Proxy Settings** page of the Internet Explorer Customization Wizard 11 lets you pick the proxy servers used by your employees to connect for services required by the custom install package.
