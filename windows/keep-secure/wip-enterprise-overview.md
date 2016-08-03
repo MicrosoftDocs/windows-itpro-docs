@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 ---
 
 # Windows Information Protection (WIP) overview
