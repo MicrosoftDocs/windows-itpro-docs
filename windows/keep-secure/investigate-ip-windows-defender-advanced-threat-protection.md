@@ -13,11 +13,11 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 
 Examine possible communication between your machines and external internet protocol (IP) addresses.
 
@@ -43,7 +43,8 @@ The **Communication with IP in organization** section provides a chronological v
 
 Details about the IP address are displayed, including: registration details (if available), reverse IPs (for example, domains), prevalence of machines in the organization that communicated with this IP Address (during selectable time period), and the machines in the organization that were observed communicating with this IP address.
 
-> **Note**&nbsp;&nbsp;Search results will only be returned for IP addresses observed in communication with machines in the organization.
+> [!NOTE]
+> Search results will only be returned for IP addresses observed in communication with machines in the organization.
 
 Use the search filters to define the search criteria. You can also use the timeline search box to filter the displayed results of all machines in the organization observed communicating with the IP address, the file associated with the communication and the last date observed.
 

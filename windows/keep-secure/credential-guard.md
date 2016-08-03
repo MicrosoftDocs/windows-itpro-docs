@@ -12,7 +12,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
 
@@ -158,6 +158,7 @@ First, you must add the virtualization-based security features. You can do this 
     ``` syntax
     dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
+
 > [!NOTE]  
 > You can also add these features to an online image by using either DISM or Configuration Manager.
 
@@ -182,6 +183,7 @@ If you don't use Group Policy, you can enable Credential Guard by using the regi
     -   Go to HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\LSA.
     -   Add a new DWORD value named **LsaCfgFlags**. Set the value of this registry setting to 1 to enable Credential Guard with UEFI lock, set it to 2 to enable Credential Guard without lock, and set it to 0 to disable it.
 4.  Close Registry Editor.
+
 
 > [!NOTE]  
 > You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
@@ -290,7 +292,7 @@ Some ways to store credentials are not protected by Credential Guard, including:
 
 -   Software that manages credentials outside of Windows feature protection
 -   Local accounts and Microsoft Accounts
--   Credential Guard does not protect the Active Directory database running on Windows Server 2016 Technical Preview domain controllers. It also does not protect credential input pipelines, such as Windows Server 2016 Technical Preview servers running Remote Desktop Gateway. If you're using a Windows Server 2016 Technical Preview server as a client PC, it will get the same protection as it would be running Windows 10 Enterprise.
+-   Credential Guard does not protect the Active Directory database running on Windows Server 2016 domain controllers. It also does not protect credential input pipelines, such as Windows Server 2016 servers running Remote Desktop Gateway. If you're using a Windows Server 2016 server as a client PC, it will get the same protection as it would be running Windows 10 Enterprise.
 -   Key loggers
 -   Physical attacks
 -   Does not prevent an attacker with malware on the PC from using the privileges associated with any credential. We recommend using dedicated PCs for high value accounts, such as IT Pros and users with access high value assets in your organization.
@@ -328,7 +330,7 @@ Enabling compound authentication also enables Kerberos armoring, which provides 
 
 ### Deploying machine certificates
 
-If the domain controllers in your organization are running Windows Server 2016 Technical Preview, devices running Windows 10 will automatically enroll a machine certificate when Credential Guard is enabled and the PC is joined to the domain.
+If the domain controllers in your organization are running Windows Server 2016, devices running Windows 10 will automatically enroll a machine certificate when Credential Guard is enabled and the PC is joined to the domain.
 If the domain controllers are running Windows Server 2012 R2, the machine certificates must be provisioned manually on each device. You can do this by creating a certificate template on the domain controller or certificate authority and deploying the machine certificates to each device.
 The same security procedures used for issuing smart cards to users should be applied to machine certificates.
 
@@ -348,6 +350,7 @@ On devices that are running Credential Guard, enroll the devices using the machi
 ``` syntax
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
+
 > [!NOTE]  
 > You must restart the device after enrolling the machine authentication certificate.
  
@@ -364,6 +367,7 @@ By using an authentication policy, you can ensure that users only sign into devi
     ``` syntax
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:”<name of issuance policy>” –groupOU:”<Name of OU to create>” –groupName:”<name of Universal security group to create>”
     ```
+
 ### Deploy the authentication policy
 
 Before setting up the authentication policy, you should log any failed attempt to apply an authentication policy on the KDC. To do this in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
@@ -387,6 +391,7 @@ Now you can set up an authentication policy to use Credential Guard.
 13. Click **OK** to close the **Edit Access Control Conditions** box.
 14. Click **OK** to create the authentication policy.
 15. Close Active Directory Administrative Center.
+
 
 > [!NOTE]  
 > When authentication policies in enforcement mode are deployed with Credential Guard, users will not be able to sign in using devices that do not have the machine authentication certificate provisioned. This applies to both local and remote sign in scenarios.

@@ -30,11 +30,11 @@ These applications can increase the risk of your network being infected with mal
 
 Since the stakes are higher in an enterprise environment, the potential disaster and potential productivity and performance disruptions that PUA brings can be a cause of concern. Hence, it is important to deliver trusted protection in this field.
 
-**Enable PUA protection in SCCM and Intune**
+##Enable PUA protection in SCCM and Intune
 
 The PUA feature is available for enterprise users who are running System Center Configuration Manager (SCCM) or Intune in their infrastructure.
 
-***Configure PUA in SCCM***
+###Configure PUA in SCCM
 
 For SCCM users, PUA is enabled by default. See the following topics for configuration details:
 
@@ -43,7 +43,8 @@ If you are using these versions | See these topics
 System Center Configuration Manager (current branch) version 1606 | [Create a new antimalware policy](https://technet.microsoft.com/en-US/library/mt613199.aspx#To-create-a-new-antimalware-policy)<br>[Real-time Protection Settings](https://technet.microsoft.com/en-US/library/mt613199.aspx#Real-time-Protection-Settings)
 System Center 2012 R2 Endpoint Protection<br>System Center 2012 Configuration Manager<br>System Center 2012 Configuration Manager SP1<br>System Center 2012 Configuration Manager SP2<br>System Center 2012 R2 Configuration Manager<br>System Center 2012 Endpoint Protection SP1<br>System Center 2012 Endpoint Protection<br>System Center 2012 R2 Configuration Manager SP1| [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA)
 
-***Use PUA audit mode in SCCM***
+<br>
+###Use PUA audit mode in SCCM
 
 You can use PowerShell to detect PUA without blocking them. In fact, you can run audit mode on individual machines. This feature is useful if your company is conducting an internal software security compliance check and you’d like to avoid any false positives.
 
@@ -62,16 +63,16 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 > PUA events are reported in the Windows Event Viewer and not in SCCM.  
 
 
-***Configure PUA in Intune***
+###Configure PUA in Intune
 
  PUA is not enabled by default. You need to [Create and deploy a PUA configuration policy to use it](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies). See the [Potentially Unwanted Application Detection policy setting](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune) for details.
 
 
- ***Use PUA audit mode in Intune***
+###Use PUA audit mode in Intune
 
  You can detect PUA without blocking them from your client. Gain insights into what can be blocked.
 
-**View PUA events**
+##View PUA events
 
 PUA events are reported in the Windows Event Viewer and not in SCCM or Intune. To view PUA events:
 
@@ -83,18 +84,18 @@ PUA events are reported in the Windows Event Viewer and not in SCCM or Intune. T
 You can find a complete list of the Microsoft antimalware event IDs, the symbol, and the description of each ID in [Windows Server Antimalware Events TechNet](https://technet.microsoft.com/library/dn913615.aspx).
 
 
-**What PUA notifications look like**
+##What PUA notifications look like
 
 When a detection occurs, end users who enabled the PUA detection feature will see the following notification:
 
 
 To see historical PUA detections that occurred on a PC, users can go to History, then **Quarantined items** or **All detected items**.
 
-**PUA threat-naming convention**
+##PUA threat file-naming convention
 
 When enabled, potentially unwanted applications are identified with threat names that start with “PUA:”, such as, PUA:Win32/Creprote.
 
-**PUA blocking conditions**
+##PUA blocking conditions
 
 PUA protection quarantines the file so they won’t run. PUA will be blocked only at download or install-time. A file will be included for blocking if it has been identified as PUA and meets one of the following conditions:
 *	The file is being scanned from the browser

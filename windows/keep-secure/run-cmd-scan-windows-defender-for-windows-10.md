@@ -50,5 +50,5 @@ Command | Description
 \-AddDynamicSignature [-Path] | Loads a dynamic signature
 \-ListAllDynamicSignature [-Path] | Lists the loaded dynamic signatures
 \-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature
-
+<br>
 The command-line utility provides detailed information on the other commands supported by the tool. 

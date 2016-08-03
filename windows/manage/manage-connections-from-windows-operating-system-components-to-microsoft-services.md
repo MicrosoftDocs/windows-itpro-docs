@@ -1181,7 +1181,10 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
 -   Configure the following in **Settings**:
 
-    -   **Personalization** &gt; **Lock screen** &gt; **Background** &gt; **Windows spotlight**, select a different background, and turn off **Show me tips, tricks, and more on the lock screen**.
+    -   **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**.
+
+        > [!NOTE]  
+        > In Windows 10, version 1507 and Windows 10, version 1511, this setting was called **Show me tips, tricks, and more on the lock screen**.
 
     -   **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**.
 
