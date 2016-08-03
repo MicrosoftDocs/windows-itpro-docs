@@ -115,6 +115,11 @@ The PC must meet the following hardware and software requirements to use Credent
 <td align="left"><p>Virtual machine</p></td>
 <td align="left"><p>For PCs running Windows 10, version 1607, you can run Credential Guard on a Generation 2 virtual machine.</p></td>
 </tr>
+</tr>
+<tr class="even">
+<td align="left"><p>Hypervisor</p></td>
+<td align="left"><p>Only the Windows hypervisor is supported.</p></td>
+</tr>
 </tbody>
 </table>
  
