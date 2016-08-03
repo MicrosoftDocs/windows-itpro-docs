@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 Most of the procedures in this guide instruct you to use Group Policy settings for Windows Firewall with Advanced Security.
 

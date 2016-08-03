@@ -14,7 +14,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 This procedure shows you how to configure the authentication methods that can be used by computers in an isolated domain or standalone isolated server zone.
 
