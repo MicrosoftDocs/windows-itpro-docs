@@ -216,7 +216,7 @@ The following Windows 10 services are protected with virtualization-based secur
 
 -   **Credential Guard** (LSA Credential Isolation): prevents pass-the-hash attacks and enterprise credential theft that happens by reading and dumping the content of lsass memory
 -   **Device Guard** (Hyper-V Code Integrity): Device Guard uses the new virtualization-based security in Windows 10 to isolate the Code Integrity service from the Windows kernel itself, which lets the service use signatures defined by your enterprise-controlled policy to help determine what is trustworthy. In effect, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
--   **Other isolated services**: for example, on Windows Server Technical Preview 2016, there is the vTPM feature that allows you to have encrypted virtual machines (VMs) on servers.
+-   **Other isolated services**: for example, on Windows Server 2016, there is the vTPM feature that allows you to have encrypted virtual machines (VMs) on servers.
 
 >**Note:**  Virtualization-based security is only available with Windows 10 Enterprise. Virtualization-based security requires devices with UEFI (2.3.1 or higher) with Secure Boot enabled, x64 processor with Virtualization Extensions and SLAT enabled. IOMMU, TPM 2.0. and support for Secure Memory overwritten are optional, but recommended.
  
@@ -747,7 +747,7 @@ For more information about conditional access, see [Azure Conditional Access Pre
 For on-premises applications there are two options to enable conditional access control based on a device's compliance state:
 
 -   For on-premises applications that are published through the Azure AD Application Proxy, you can configure conditional access control policies as you would for cloud applications. For more details, see the [Azure AD Conditional Access preview updated: Now supports On-Premises and Custom LOB apps](http://go.microsoft.com/fwlink/p/?LinkId=691618) blog post.
--   Additionally, Azure AD Connect will sync device compliance information from Azure AD to on-premises AD. ADFS on Windows Server Technical Preview 2016 will support conditional access control based on a device's compliance state. IT pros will configure conditional access control policies in ADFS that use the device's compliance state reported by a compatible MDM solution to secure on-premises applications.
+-   Additionally, Azure AD Connect will sync device compliance information from Azure AD to on-premises AD. ADFS on Windows Server 2016 will support conditional access control based on a device's compliance state. IT pros will configure conditional access control policies in ADFS that use the device's compliance state reported by a compatible MDM solution to secure on-premises applications.
 
 ![figure 13](images/hva-fig12-conditionalaccess12.png)
 

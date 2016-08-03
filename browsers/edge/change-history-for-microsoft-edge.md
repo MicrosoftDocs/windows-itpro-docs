@@ -14,7 +14,13 @@ For a detailed feature list of what's in the current Microsoft Edge releases, th
 ## July 2016
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Microsoft Edge - Deployment Guide for IT Pros](index.md)| Updated various topics to include support for Windows Server 2016 and a note about the Long Term Servicing Branch (LTSB) |
+|[Microsoft Edge requirements and language support](hardware-and-software-requirements.md)| Updated to include a note about the Long Term Servicing Branch (LTSB). |
+
+## July 2016
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Enterprise guidance about using Microsoft Edge and Internet Explorer 11](enterprise-guidance-using-microsoft-edge-and-ie11.md) | Content moved from What's New section. |
+|[Available policies for Microsoft Edge](available-policies.md) |Updated |
 
 
 ## June 2016

@@ -125,7 +125,7 @@ Often it is not enough to know simply that an object such as a file or folder wa
 
 ## <a href="" id="bkmk-8"></a>How do I know when changes are made to access control settings, by whom, and what the changes were?
 
-To track access control changes on computers running Windows Server 2016 Technical Preview, Windows Server 2012 R2, Windows Server 2012 Windows 7, Windows Server 2008 R2, Windows Vista, or Windows Server 2008, you need to enable the following settings, which track changes to DACLs:
+To track access control changes on computers running Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 Windows 7, Windows Server 2008 R2, Windows Vista, or Windows Server 2008, you need to enable the following settings, which track changes to DACLs:
 -   **Audit File System** subcategory: Enable for success, failure, or success and failure
 -   **Audit Authorization Policy Change** setting: Enable for success, failure, or success and failure
 -   A SACL with **Write** and **Take ownership** permissions: Apply to the object that you want to monitor

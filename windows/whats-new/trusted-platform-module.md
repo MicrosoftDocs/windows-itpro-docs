@@ -7,6 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: brianlic-msft
+redirect_url: https://technet.microsoft.com/itpro/windows/keep-secure/trusted-platform-module-overview
 ---
 
 # What's new in Trusted Platform Module?

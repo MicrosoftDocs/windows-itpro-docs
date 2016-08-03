@@ -16,7 +16,7 @@ author: brianlic-msft
 
 -   Windows 10
 -   Windows 10 Mobile
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 At Microsoft, we use Windows telemetry to inform our decisions and focus our efforts in providing the most robust, most valuable platform for your business and the people who count on Windows to enable them to be as productive as possible. Telemetry gives users a voice in the operating system’s development. This guide describes the importance of Windows telemetry and how we protect that data. Additionally, it differentiates between telemetry and functional data. It also describes the telemetry levels that Windows supports. Of course, you can choose how much telemetry is shared with Microsoft, and this guide demonstrates how.
 
@@ -36,7 +36,7 @@ Use this article to make informed decisions about how you might configure teleme
 
 ## Overview
 
-In previous versions of Windows and Windows Server, Microsoft used telemetry to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC), and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server 2016 Technical Preview, you can control telemetry streams by using the Privacy option in Settings, Group Policy, or MDM.
+In previous versions of Windows and Windows Server, Microsoft used telemetry to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC), and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server 2016, you can control telemetry streams by using the Privacy option in Settings, Group Policy, or MDM.
 
 For Windows 10, we invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows work better for your organization.
 
@@ -123,7 +123,7 @@ The Upgrade Analytics workflow steps you through the discovery and rationalizati
 
 ### Data collection
 
-Windows 10 and Windows Server 2016 Technical Preview includes the Connected User Experience and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology that gathers and stores telemetry events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
+Windows 10 and Windows Server 2016 includes the Connected User Experience and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology that gathers and stores telemetry events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
 
 1. Operating system features and some management applications are instrumented to publish events and data. Examples of management applications include Virtual Machine Manager (VMM), Server Manager, and Storage Spaces.
 2. Events are gathered using public operating system event logging and tracing APIs.
@@ -159,7 +159,7 @@ Microsoft believes in and practices information minimization. We strive to gathe
 ## Telemetry levels
 
 
-This section explains the different telemetry levels in Windows 10, Windows Server 2016 Technical Preview, and System Center. These levels are available on all desktop and mobile editions of Windows 10, with the exception of the **Security** level which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016 Technical Preview.
+This section explains the different telemetry levels in Windows 10, Windows Server 2016, and System Center. These levels are available on all desktop and mobile editions of Windows 10, with the exception of the **Security** level which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016.
 
 The telemetry data is categorized into four levels:
 
@@ -171,7 +171,7 @@ The telemetry data is categorized into four levels:
 
 -   **Full**. All data necessary to identify and help to fix problems, plus data from the **Security**, **Basic**, and **Enhanced** levels.
 
-The levels are cumulative and are illustrated in the following diagram. Also, these levels apply to all editions of Windows Server 2016 Technical Preview.
+The levels are cumulative and are illustrated in the following diagram. Also, these levels apply to all editions of Windows Server 2016.
 
 ![breakdown of telemetry levels and types of administrative controls](images/priv-telemetry-levels.png)
 
@@ -216,7 +216,7 @@ The Basic level gathers a limited set of data that’s critical for understandin
 
 The data gathered at this level includes:
 
--   **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Server 2016 Technical Preview in the ecosystem. Examples include:
+-   **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Server 2016 in the ecosystem. Examples include:
 
     -   Device attributes, such as camera resolution and display type
 
@@ -306,7 +306,7 @@ We do not recommend that you turn off telemetry in your organization as valuable
 
 You can turn on or turn off System Center telemetry gathering. The default is on and the data gathered at this level represents what is gathered by default when System Center telemetry is turned on. However, setting the operating system telemetry level to **Basic** will turn off System Center telemetry, even if the System Center telemetry switch is turned on.
 
-The lowest telemetry setting level supported through management policies is **Security**. The lowest telemetry setting supported through the Settings UI is **Basic**. The default telemetry setting for Windows Server 2016 Technical Preview is **Enhanced**.
+The lowest telemetry setting level supported through management policies is **Security**. The lowest telemetry setting supported through the Settings UI is **Basic**. The default telemetry setting for Windows Server 2016 is **Enhanced**.
 
 ### Configure the operating system telemetry level
 

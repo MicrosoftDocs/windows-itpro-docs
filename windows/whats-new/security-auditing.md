@@ -7,6 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
 ms.pagetype: security, mobile
+redirect_url: https://technet.microsoft.com/itpro/windows/keep-secure/security-auditing-overview
 ---
 
 # What's new in security auditing?
