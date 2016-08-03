@@ -91,7 +91,7 @@ When a detection occurs, end users who enabled the PUA detection feature will se
 
 To see historical PUA detections that occurred on a PC, users can go to History, then **Quarantined items** or **All detected items**.
 
-##PUA threat file-naming convention
+##PUA threat naming convention
 
 When enabled, potentially unwanted applications are identified with threat names that start with “PUA:”, such as, PUA:Win32/Creprote.
 
