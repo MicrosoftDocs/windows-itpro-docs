@@ -87,7 +87,7 @@ When your MDM tool supports Windows Store for Business, the MDM can use these CS
 For more information, see [Configure an MDM provider](configure-mdm-provider-windows-store-for-business.md).
 
 ## Show private store only using Group Policy 
-Applies to Windows 10 Enterprise, version **when was this available?**.
+Applies to Windows 10 Enterprise, version 1607.
 
 If you're using Windows Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Windows Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store. 
 
