@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Reference about the command-line options for the IExpress Wizard.
-ms.assetid: aa16d738-1067-403c-88b3-bada12cf9752
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: aa16d738-1067-403c-88b3-bada12cf9752
 title: IExpress Wizard command-line options (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 **Applies to:**
 - Windows Server 2008 R2 with SP1
@@ -34,3 +36,4 @@ For more information, see [Command-line switches for IExpress software update pa
 ## Related topics
 - [IExpress Wizard for Windows Server 2008 R2 with SP1](iexpress-wizard-for-win-server.md)
 - [Internet Explorer Setup command-line options and return codes](ie-setup-command-line-options-and-return-codes.md)
+

@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: plan
 description: Learn about which version of the IEAK 11 you should run, based on your license agreement.
-ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: plan
-ms.sitesec: library
+ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 title: Determine the licensing version and features to use in IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Determine the licensing version and features to use in IEAK 11
 You must pick a version of IEAK 11 to run during installation, either **External** or **Internal**, based on your license agreement. Your version selection decides the options you can pick from, the steps you’ll have to follow to deploy your Internet Explorer 11 package, and how you’ll manage the browser after deployment.
@@ -46,3 +48,4 @@ You must pick a version of IEAK 11 to run during installation, either **Externa
 |Programs                                  |Programs                                  |
 |Additional settings                       |Not available                             |
 |Wizard complete                           |Wizard complete                           |
+

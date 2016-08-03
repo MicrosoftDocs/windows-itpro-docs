@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: How to use Group Policy to install ActiveX controls.
-ms.assetid: 59185370-558c-47e0-930c-8a5ed657e9e3
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: 59185370-558c-47e0-930c-8a5ed657e9e3
 title: ActiveX installation using group policy (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Group Policy and ActiveX installation
 

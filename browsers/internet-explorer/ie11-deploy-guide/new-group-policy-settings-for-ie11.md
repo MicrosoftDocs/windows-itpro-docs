@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: New group policy settings for Internet Explorer 11
-ms.assetid: 669cc1a6-e2cb-403f-aa31-c1de52a615d1
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: 669cc1a6-e2cb-403f-aa31-c1de52a615d1
 title: New group policy settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # New group policy settings for Internet Explorer 11
 Internet Explorer 11 gives you some new Group Policy settings to help you manage your company's web browser configurations, including:
@@ -94,3 +96,4 @@ After you've finished updating and deploying your Group Policy, you can use the 
 
 2.  Open your wizard results in the Group Policy Management Console (GPMC).<p>
 For complete instructions about how to add, open, and use RSoP, see [Use the RSoP Snap-in](http://go.microsoft.com/fwlink/p/?LinkId=395201)
+

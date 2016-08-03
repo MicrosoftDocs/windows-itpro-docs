@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Use this guide to learn about the several options and processes you'll need to consider while you're planning for, deploying, and customizing Internet Explorer 11 for your employee's devices.
-ms.assetid: bddc2d97-c38d-45c5-9588-1f5bbff2e9c3
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: bddc2d97-c38d-45c5-9588-1f5bbff2e9c3
 title: Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Internet Explorer 11 (IE11) - Deployment Guide for IT Pros
 
@@ -56,3 +58,4 @@ IE11 offers differing experiences in Windows 8.1:
 - [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
 - [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
+
