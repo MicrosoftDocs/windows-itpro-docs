@@ -7,7 +7,7 @@
         ],
         "exclude": [
           "**/obj/**",
-          "itpro-hololens/**",
+          "devices/hololens/**",
           "**/includes/**"
         ]
       }
@@ -20,7 +20,7 @@
         ],
         "exclude": [
           "**/obj/**",
-          "itpro-hololens/**",
+          "devices/hololens/**",
           "**/includes/**"
         ]
       }
@@ -32,6 +32,6 @@
     "template": [
       null
     ],
-    "dest": "itpro-hololens"
+    "dest": "devices/hololens"
   }
 }
