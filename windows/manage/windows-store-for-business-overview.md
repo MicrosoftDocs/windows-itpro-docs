@@ -7,6 +7,7 @@ ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Windows Store for Business overview
