@@ -1,5 +1,6 @@
 # [Keep Windows 10 secure](index.md)
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
+## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
 ## [Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
 ### [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
 ### [Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
