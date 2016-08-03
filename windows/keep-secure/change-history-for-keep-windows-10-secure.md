@@ -12,22 +12,25 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## August 2016
+- [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md) |New |
+
 ## RELEASE: Windows 10, version 1607
 
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added:
 
 - [Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
-- [Remote Credential Guard](remote-credential-guard.md)
+- [Protect Remote Desktop credentials with Remote Credential Guard](remote-credential-guard.md)
 - [Windows Defender Offline in Windows 10](windows-defender-offline.md)
-- [Use PowerShell cmdlets for Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md)
+- [Use PowerShell cmdlets to configure and run Windows Defender](use-powershell-cmdlets-windows-defender-for-windows-10.md)
 - [Enable the Block at First Sight feature in Windows 10](windows-defender-block-at-first-sight.md)
 - [Configure enhanced notifications for Windows Defender in Windows 10](windows-defender-enhanced-notifications.md)
 - [Run a Windows Defender scan from the command line](run-cmd-scan-windows-defender-for-windows-10.md)
 - [Detect and block Potentially Unwanted Applications with Windows Defender](enable-pua-windows-defender-for-windows-10.md)
-- [Assign user access to the portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
-- [Configure endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
-- [Configure SIEM tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
+- [Assign user access to the Windows Defender ATP portal](assign-portal-access-windows-defender-advanced-threat-protection.md)
+- [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
+- [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md)
 
 
@@ -37,8 +40,8 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 |----------------------|-------------|
 |[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md) |New |
 |[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |New |
-|[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |New |
-|[Create an enterprise data protection (EDP) policy using System Center Configuration Manager](create-edp-policy-using-sccm.md) |New |
+|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |New |
+|[Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |New |
 |[Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (multiple topics) | Updated |
 |[Device Guard deployment guide](device-guard-deployment-guide.md) (multiple topics) | Updated |
 
@@ -47,7 +50,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Create an enterprise data protection (EDP) policy using Microsoft Intune](create-edp-policy-using-intune.md) |Added an update about needing to reconfigure your enterprise data protection app rules after delivery of the June service update. |
+|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Added an update about needing to reconfigure your enterprise data protection app rules after delivery of the June service update. |
 | [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md) (multiple topics) | New |
 | [Advanced security audit policy settings](advanced-security-audit-policy-settings.md) (mutiple topics) | New security monitoring reference topics |
 | [Windows security baselines](windows-security-baselines.md) | New |

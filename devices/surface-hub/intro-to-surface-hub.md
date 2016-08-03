@@ -33,7 +33,7 @@ The capabilities of your Surface Hub will depend on what other Microsoft product
 <tbody>
 <tr class="odd">
 <td align="left"><p>One-touch meeting join, meetings calendar, and email (for example, sending whiteboards)</p></td>
-<td align="left"><p>Device account with Microsoft Exchange 2010 or later, or Exchange Online and a network connection to where the account is hosted.</p></td>
+<td align="left"><p>Device account with Microsoft Exchange 2013 or later, or Exchange Online and a network connection to where the account is hosted.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Meetings using Skype for Business</p></td>

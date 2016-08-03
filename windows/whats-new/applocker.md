@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
-redirect_url: whats-new-windows-10-version-1507-and-1511.md
+redirect_url: https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview
 ---
 
 # What's new in AppLocker?
