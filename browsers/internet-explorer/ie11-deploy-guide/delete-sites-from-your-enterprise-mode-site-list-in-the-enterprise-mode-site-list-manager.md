@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
 description: Delete a single site from your global Enterprise Mode site list.
-title: Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
-ms.assetid: 41413459-b57f-48da-aedb-4cbec1e2981a
+ms.pagetype: appcompat
+ms.mktglfcycl: deploy
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
+ms.assetid: 41413459-b57f-48da-aedb-4cbec1e2981a
+title: Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
-ms.pagetype: appcompat
 ---
+
 
 # Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager
 

@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: plan
 description: Review the file types that are created and used by tools in the Internet Explorer Administration Kit 11 (IEAK 11).
-ms.assetid: e5735074-3e9b-4a00-b1a7-b8fd8baca327
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: plan
-ms.sitesec: library
+ms.assetid: e5735074-3e9b-4a00-b1a7-b8fd8baca327
 title: File types used or created by IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # File types used or created by IEAK 11
 A list of the file types used or created by tools in IEAK 11:
@@ -28,3 +30,4 @@ A list of the file types used or created by tools in IEAK 11:
 |.pvk |A file format used by some certification authorities to store the private key of the digital certificate. The public part of the digital certificate is stored in an SPC file, while the private part is stored in the PVK file. For more info, see the **Understanding certificates** section of the [Security features and IEAK 11](security-and-ieak11.md) page. |
 |.sed |Connection profile files, created by the CMAK tool, including the instructions for building the self-extracting executable (.exe) file for your service profiles.<p>**Important**<br>You must never edit a .sed file. |
 |.spc |The software publishing certificate file, which includes:<ul><li>The name and other identifying information of the owner of the certificate.</li><li>The public key associated with the certificate.</li><li>The serial number.</li><li>The length of time the certificate is valid.</li><li>The digital signature of the certification authority that issued the certificate.</li></ul> |
+

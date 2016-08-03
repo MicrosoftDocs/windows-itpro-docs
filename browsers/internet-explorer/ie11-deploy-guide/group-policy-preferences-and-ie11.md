@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Info about Group Policy preferences versus Group Policy settings
-ms.assetid: f2264c97-7f09-4f28-bb5c-58ab80dcc6ee
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: f2264c97-7f09-4f28-bb5c-58ab80dcc6ee
 title: Group policy preferences and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Group policy preferences and Internet Explorer 11
 Group Policy preferences are less strict than Group Policy settings, based on:
