@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub, store
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Install apps on your Microsoft Surface Hub
