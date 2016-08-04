@@ -36,7 +36,7 @@ Review the following sections for information about significant changes that app
 ## <a href="" id="bkmk-51-prereq-configs"></a>App-V for Windows software prerequisites and supported configurations
 
 
-See the following links for the App-V for Windows software prerequisites and supported configurations.
+Review the following topics for information about App-V for Windows software prerequisites and supported configurations.
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ See the following links for the App-V for Windows software prerequisites and sup
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Links to prerequisites and supported configurations</th>
+<th align="left">Links to prerequisites and supported configurations topics</th>
 <th align="left">Description</th>
 </tr>
 </thead>
@@ -56,21 +56,20 @@ See the following links for the App-V for Windows software prerequisites and sup
 </tr>
 <tr class="even">
 <td align="left"><p>[App-V Supported Configurations](appv-supported-configurations.md)</p></td>
-<td align="left"><p>Supported operating systems and hardware requirements for the App-V Server, Sequencer, and Client components</p></td>
+<td align="left"><p>Supported operating systems and hardware requirements for the App-V server, sequencer, and client components</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
 **Support for using Configuration Manager with App-V:** App-V supports System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) for information about integrating your App-V environment with Configuration Manager.
 
 ## <a href="" id="bkmk-migrate-to-51"></a>Upgrade to App-V for Windows
 
 
-Use the following information to upgrade to App-V for Windows from earlier versions. See [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md) for more information.
+Use the following information to upgrade to App-V for Windows from earlier versions. See [Migrating to App-V for Windows from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md) for more information.
 
-### Before you start the upgrade
+### Before you begin 
 
 Review the following information before you start the upgrade:
 
@@ -103,7 +102,7 @@ Review the following information before you start the upgrade:
 </tr>
 <tr class="even">
 <td align="left"><p>Upgrading from App-V 4.x</p></td>
-<td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V for Windows. For more information, see [Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)</p></li>
+<td align="left"><p>You cannot upgrade directly from App-V 4.x to App-V for Windows. You must first upgrade to App-V 5.0. For more information, see [Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -121,7 +120,6 @@ Review the following information before you start the upgrade:
 </tr>
 </tbody>
 </table>
-
  
 
 ### <a href="" id="bkmk-steps-upgrd-infrastruc"></a>Steps to upgrade the App-V infrastructure
@@ -141,10 +139,10 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Step 1: Upgrade the App-V Server.</p>
+<td align="left"><p>Step 1: Upgrade the App-V server components.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>If you are not using the App-V Server, skip this step and go to the next step.</p>
+<p>If you are not using the App-V server, skip this step and go to the next step.</p>
 </div>
 <div>
  
@@ -166,7 +164,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 <tbody>
 <tr class="odd">
 <td align="left"><p>Windows Installer</p></td>
-<td align="left"><p>Skip this step and go to step 2, “If you are upgrading the App-V Server...”</p></td>
+<td align="left"><p>Skip this step and go to step 2, “If you are upgrading the App-V server...”</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SQL scripts</p></td>
@@ -174,8 +172,8 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tr>
 </tbody>
 </table>
-<li><p>If you are upgrading the App-V for Windows Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/check-reg-key-svr).</p></li>
-<li><p>Follow the steps in [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)</p></li>
+<li><p>If you are upgrading to App-V for Windows server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 server](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/check-reg-key-svr).</p></li>
+<li><p>Follow the steps in [How to Deploy the App-V server components](appv-deploy-the-appv-server.md)</p></li>
 <p> </p></li>
 </ol></td>
 </tr>
@@ -184,7 +182,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 <td align="left"><p>See [How to Install the Sequencer](appv-install-the-sequencer.md).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Step 3: Enable the in-box App-V Client.</p></td>
+<td align="left"><p>Step 3: Enable the in-box App-V client.</p></td>
 <td align="left"><p>See [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).</p></td>
 </tr>
 </tbody>
@@ -194,7 +192,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 
 ### Converting packages created using a prior version of App-V
 
-Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion.
+Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V for Windows, version 1607. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion.
 
 >**Note**  
 App-V for Windows packages are exactly the same as App-V 5.0 packages. There has been no change in the package format between the versions and so there is no need to convert App-V 5.0 packages to App-V for Windows packages.
@@ -225,7 +223,7 @@ The Management Console UI no longer requires Silverlight. The Management Console
 <thead>
 <tr class="header">
 <th align="left">New in App-V for Windows</th>
-<th align="left">Prior to App-V</th>
+<th align="left">Prior to App-V for Windows</th>
 </tr>
 </thead>
 <tbody>
@@ -367,26 +365,26 @@ In the left pane of the Management Console, the OVERVIEW menu option and its ass
 
 The following improvements have been made to the package editor in the App-V Sequencer.
 
-### Import and export the manifest file
+#### Import and export the manifest file
 
 You can import and export the AppxManifest.xml file. To export the manifest file, select the **Advanced** tab and in the Manifest File box, click **Export...**. You can make changes to the manifest file, such as removing shell extensions or editing file type associations.
 
 After you make your changes, click **Import...** and select the file you edited. After you successfully import it back in, the manifest file is immediately updated within the package editor.
 
-**Caution**  
+>**Caution**  
 When you import the file, your changes are validated against the XML schema. If the file is not valid, you will receive an error. Be aware that it is possible to import a file that is validated against the XML schema, but that might still fail to run for other reasons.
 
  
 
-### Addition of Windows 10 to operating systems list
+#### Addition of Windows 10 to operating systems list
 
 In the Deployment tab, Windows 10 32-bit and Windows 10-64 bit have been added to the list of operating systems for which you can sequence a package. If you select **Any Operating System**, Windows 10 is automatically included among the operating systems that the sequenced package will support.
 
-### Current path displays at bottom of virtual registry editor
+#### Current path displays at bottom of virtual registry editor
 
 In the Virtual Registry tab, the path now displays at the bottom of the virtual registry editor, which enables you to determine the currently selected key. Previously, you had to scroll through the registry tree to find the currently selected key.
 
-### <a href="" id="combined--find-and-replace--dialog-box-and-shortcut-keys-added-in-virtual-registry-editor"></a>Combined “find and replace” dialog box and shortcut keys added in virtual registry editor
+#### <a href="" id="combined--find-and-replace--dialog-box-and-shortcut-keys-added-in-virtual-registry-editor"></a>Combined “find and replace” dialog box and shortcut keys added in virtual registry editor
 
 In the virtual registry editor, shortcut keys have been added for the Find option (Ctrl+F), and a dialog box that combines the “find” and “replace” tasks has been added to enable you to find and replace values and data. To access this combined dialog box, select a key and do one of the following:
 
@@ -398,19 +396,19 @@ In the virtual registry editor, shortcut keys have been added for the Find optio
 
 Previously, the “Replace” dialog box did not exist, and you had to make changes manually.
 
-### Rename registry keys and package files successfully
+#### Rename registry keys and package files successfully
 
 You can rename virtual registry keys and files without experiencing Sequencer issues. Previously, the Sequencer stopped working if you tried to rename a key.
 
-### Import and export virtual registry keys
+#### Import and export virtual registry keys
 
 You can import and export virtual registry keys. To import a key, right-click the node under which to import the key, navigate to the key you want to import, and then click **Import**. To export a key, right-click the key and select **Export**.
 
-### Import a directory into the virtual file system
+#### Import a directory into the virtual file system
 
 You can import a directory into the VFS. To import a directory, click the **Package Files** tab, and then click **View** &gt; **Virtual File System** &gt; **Import Directory**. If you try to import a directory that contains files that are already in the VFS, the import fails, and an explanatory message is displayed. Prior to App-V, you could not import directories.
 
-### Import or export a VFS file without having to delete and then add it back to the package
+#### Import or export a VFS file without having to delete and then add it back to the package
 
 You can import files to or export files from the VFS without having to delete the file and then add it back to the package. For example, you might use this feature to export a change log to a local drive, edit the file using an external editor, and then re-import the file into the VFS.
 
@@ -420,15 +418,15 @@ To import a file, select the **Package Files** tab and right-click the file that
 
 After you import a file, you must save the package by clicking **File** &gt; **Save**.
 
-### Menu for adding a package file has moved
+#### Menu for adding a package file has moved
 
 The menu option for adding a package file has been moved. To find the Add option, select the **Package Files** tab, then click **View** &gt; **Virtual File System** &gt; **Add File**. Previously, you right-clicked a folder under the VFS node, and chose **Add File**.
 
-### Virtual registry node expands MACHINE and USER hives by default
+#### Virtual registry node expands MACHINE and USER hives by default
 
 When you open the virtual registry, the MACHINE and USER hives are shown below the top-level REGISTRY node. Previously, you had to expand the REGISTRY node to show the hives beneath.
 
-### Enable or disable Browser Helper Objects
+#### Enable or disable Browser Helper Objects
 
 You can enable or disable Browser Helper Objects by selecting a new check box, Enable Browser Helper Objects, on the Advanced tab of the Sequencer user interface. If Browser Helper Objects:
 
@@ -446,7 +444,7 @@ You can now use the package converter to convert App-V 4.6 packages that contain
 
 For more information including examples, see [Migrating to App-V for Windows from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md).
 
-### <a href="" id="bkmk-supmultscripts"></a>Support for multiple scripts on a single event trigger
+#### <a href="" id="bkmk-supmultscripts"></a>Support for multiple scripts on a single event trigger
 
 App-V supports the use of multiple scripts on a single event trigger for App-V packages, including packages that you are converting from App-V 4.6 to App-V 5.0 or later. To enable the use of multiple scripts, App-V uses a script launcher application, named ScriptRunner.exe, which is installed as part of the App-V client installation.
 

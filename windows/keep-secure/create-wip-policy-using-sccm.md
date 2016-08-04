@@ -8,6 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
+localizationpriority: high
 ---
 
 # Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager

@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Connect other devices and display with Surface Hub
