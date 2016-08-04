@@ -117,9 +117,7 @@ The data is stored locally, in an industry-standard WMI class, .MOF file or in a
 ## WMI Site Discovery suggestions
 We recommend that you collect your data for at most a month at a time, to capture a user’s typical workflow. We don’t recommend collecting data longer than that because the data is stored in a WMI provider and can fill up your computer’s hard drive. You may also want to collect data only for pilot users or a representative sample of people, instead of turning this feature on for everyone in your company.
 
-On average, a website generates about 250bytes of data for each visit, causing only a minor impact to Internet Explorer’s performance. Over the course of a month, collecting data from 20 sites per day from 1,000 users, you’ll get about 150MB of data:
-
-    250 bytes (per site visit) X 20 sites/day X 30 days = (approximately) 150KB X 1000 users = (approximately) 150MB    
+On average, a website generates about 250bytes of data for each visit, causing only a minor impact to Internet Explorer’s performance. Over the course of a month, collecting data from 20 sites per day from 1,000 users, you’ll get about 150MB of data:<p>250 bytes (per site visit) X 20 sites/day X 30 days = (approximately) 150KB X 1000 users = (approximately) 150MB 
 
 >**Important**<br>The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
 
