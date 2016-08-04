@@ -1,5 +1,5 @@
 ---
-title: Windows 10 servicing options (Windows 10)
+title: Windows 10 servicing overview (Windows 10)
 description: Windows 10 provides a new model for organizations to deploy and upgrade Windows by providing updates to features and capabilities through a continual process.
 ms.assetid: 6EF0792C-B587-497D-8489-4A7F5848D92A
 keywords: deploy, upgrade, update, servicing
