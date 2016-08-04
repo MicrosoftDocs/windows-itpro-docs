@@ -102,7 +102,6 @@ The easiest way to find this data for an application is to:
         </taskbar:TaskbarPinList>
       </defaultlayout:TaskbarLayout>
     </CustomTaskbarLayoutCollection>
-  </DefaultLayoutOverride>
 </LayoutModificationTemplate>
 ```
 
