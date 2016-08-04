@@ -16,9 +16,9 @@ For information about deploying the App-V Server, see [About App-V](appv-about-a
 
 >**Important**<br>Before you install and configure the App-V servers, you must specify a port where each component will be hosted. You must also add the associated firewall rules to allow incoming requests to access the specified ports. The installer does not modify firewall settings.
 
-## Download and install App-V Server components
+## Download and install App-V server components
 
-App-V offers the following five server components, each of which serves a specific purpose in an App-V environment. All five server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from the [Microsoft Developer Network (MSDN)  subscription site](https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#FileId=65215). You must have a MSDN subscription to download MDOP.
+App-V offers the following five server components, each of which serves a specific purpose in an App-V environment. 
 
 - **Management server.** Use the App-V management server and console to manage your App-V infrastructure. See [Administering App-V with the management console](appv-administering-virtual-applications-with-the-management-console.md) for more information about the management server.
 
@@ -31,6 +31,16 @@ App-V offers the following five server components, each of which serves a specif
 - **Reporting server.** Use the App-V reporting server to generate reports that help you manage your App-V infrastructure. The reporting server requires a connection to the reporting database. See [About App-V reporting](appv-reporting.md) for more information about the reporting capabilities in App-V.
 
 - **Reporting database.** Use the App-V reporting database to facilitate database pre-deployments for App-V reporting. See [How to deploy the App-V server](appv-deploy-the-appv-server.md) for more information about the reporting database.
+
+All five App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from:
+
+-   The [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx#FileId=65215) You must have a MSDN subscription to download the MDOP ISO package from the MSDN subscriptions site.
+
+-   The [Volume Licensing Service Center](https://www.microsoft.com/en-us/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/en-us/WindowsForBusiness/windows-product-home). 
+
+
+        >**Note** If you're already using App-V 5.x, you don't need to re-deploy the App-V server components as they haven't changed since App-V 5.0 was released.
+
 
 In large organizations, you might want to install more than one instance of the server components to get:
 
