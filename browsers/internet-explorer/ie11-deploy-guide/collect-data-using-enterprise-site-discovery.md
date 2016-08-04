@@ -70,7 +70,7 @@ Data is collected on the configuration characteristics of IE and the sites it br
 The following tables provide more info about the Document mode reason, Browser state reason, and the Zone codes that are returned as part of your data collection.
 
 #### DocMode reason
-The codes in this table can tell you what document mode was set by IE for a webpage. These codes only apply to Internet Explorer 10 and Internet Explorer 11.
+The codes in this table can tell you what document mode was set by IE for a webpage.<br>These codes only apply to Internet Explorer 10 and Internet Explorer 11.
 
 |Code |Description |
 |-----|------------|
@@ -79,10 +79,9 @@ The codes in this table can tell you what document mode was set by IE for a webp
 |5 |Page is using an X-UA-compatible HTTP header. |
 |6 |Page appears on an active **Compatibility View** list. |
 |7 |Page is using native XML parsing. |
-|8 |Page is using the mode set by the top-level QME FCK. |
  
 #### Browser state reason
-The codes in this table can tell you why the browser is in its current state. Also called “browser mode”. These codes only apply to Internet Explorer 10 and Internet Explorer 11.
+The codes in this table can tell you why the browser is in its current state. Also called “browser mode”.<br>These codes only apply to Internet Explorer 10 and Internet Explorer 11.
 
 |Code |Description |
 |-----|------------|
@@ -97,7 +96,7 @@ The codes in this table can tell you why the browser is in its current state. Al
 |11 |Site is using the default browser. |
 
 #### Zone
-The codes in this table can tell you what zone is being used by IE to browse sites, based on browser settings. These codes apply to Internet Explorer 8, Internet Explorer 9, Internet Explorer 10, and Internet Explorer 11.
+The codes in this table can tell you what zone is being used by IE to browse sites, based on browser settings.<br>These codes apply to Internet Explorer 8, Internet Explorer 9, Internet Explorer 10, and Internet Explorer 11.
 
 |Code |Description |
 |-----|------------|
@@ -118,7 +117,9 @@ The data is stored locally, in an industry-standard WMI class, .MOF file or in a
 ## WMI Site Discovery suggestions
 We recommend that you collect your data for at most a month at a time, to capture a user’s typical workflow. We don’t recommend collecting data longer than that because the data is stored in a WMI provider and can fill up your computer’s hard drive. You may also want to collect data only for pilot users or a representative sample of people, instead of turning this feature on for everyone in your company.
 
-On average, a website generates about 250bytes of data for each visit, causing only a minor impact to Internet Explorer’s performance. Over the course of a month, collecting data from 20 sites per day from 1,000 users, you’ll get about 150MB of data:<br>\[250bytes (per site visit) \* 20sites/day\* 30days = (approximately) 150KB \*1000users = (approximately) 150MB\].
+On average, a website generates about 250bytes of data for each visit, causing only a minor impact to Internet Explorer’s performance. Over the course of a month, collecting data from 20 sites per day from 1,000 users, you’ll get about 150MB of data:
+
+    250 bytes (per site visit) X 20 sites/day X 30 days = (approximately) 150KB X 1000 users = (approximately) 150MB    
 
 >**Important**<br>The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
 
@@ -181,39 +182,79 @@ You can use Group Policy to finish setting up Enterprise Site Discovery. If you 
 
 -   Open your Group Policy editor, and go to these new settings:
 
-|Setting name and location  |Description  |Options  |
-|---------------------------|-------------|---------|
-|Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery WMI output |Writes collected data to a WMI class, which can be aggregated using a client-management solution like Configuration Manager. |<ul><li>**On.** Turns on WMI recording.</li><li>**Off.** Turns off WMI recording.</li></ul> |
-|Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery XML output |Writes collected data to an XML file, which is stored in your specified location. |<ul><li>**XML file path.** Including this turns on XML recording.</li><li>**Blank.** Turns off XML recording.</li></ul> |
-|Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by Zone |Manages which zone can collect data. |To specify which zones can collect data, you must include a binary number that represents your selected zones, based on this order:<p>0 – Restricted Sites zone<br>0 – Internet zone<br>0 – Trusted Sites zone<br>0 – Local Intranet zone<br>0 – Local Machine zone<p>**Example 1:** Include only the Local Intranet zone<p>Binary representation: *00010*, based on:<p>0 – Restricted Sites zone<br>0 – Internet zone<br>0 – Trusted Sites zone<br>1 – Local Intranet zone<br>0 – Local Machine zone<p>**Example 2:** Include only the Restricted Sites, Trusted Sites, and Local Intranet zones<p>Binary representation: *10110*, based on:<p>1 – Restricted Sites zone<br>0 – Internet zone<br>1 – Trusted Sites zone<br>1 – Local Intranet zone<br>1 – Local Machine zone |
-|Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by domain |Manages which domains can collect data |To specify which domains can collect data, you must include your selected domains, one domain per line, in the provided box. It should look like:<p>microsoft.sharepoint.com<br>outlook.com<br>onedrive.com<br>timecard.contoso.com<br>LOBApp.contoso.com |
+    |Setting name and location  |Description  |Options  |
+    |---------------------------|-------------|---------|
+    |Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery WMI output |Writes collected data to a WMI class, which can be aggregated using a client-management solution like Configuration Manager. |<ul><li>**On.** Turns on WMI recording.</li><li>**Off.** Turns off WMI recording.</li></ul> |
+    |Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery XML output |Writes collected data to an XML file, which is stored in your specified location. |<ul><li>**XML file path.** Including this turns on XML recording.</li><li>**Blank.** Turns off XML recording.</li></ul> |
+    |Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by Zone |Manages which zone can collect data. |To specify which zones can collect data, you must include a binary number that represents your selected zones, based on this order:<p>0 – Restricted Sites zone<br>0 – Internet zone<br>0 – Trusted Sites zone<br>0 – Local Intranet zone<br>0 – Local Machine zone<p>**Example 1:** Include only the Local Intranet zone<p>Binary representation: *00010*, based on:<p>0 – Restricted Sites zone<br>0 – Internet zone<br>0 – Trusted Sites zone<br>1 – Local Intranet zone<br>0 – Local Machine zone<p>**Example 2:** Include only the Restricted Sites, Trusted Sites, and Local Intranet zones<p>Binary representation: *10110*, based on:<p>1 – Restricted Sites zone<br>0 – Internet zone<br>1 – Trusted Sites zone<br>1 – Local Intranet zone<br>1 – Local Machine zone |
+    |Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by domain |Manages which domains can collect data |To specify which domains can collect data, you must include your selected domains, one domain per line, in the provided box. It should look like:<p>microsoft.sharepoint.com<br>outlook.com<br>onedrive.com<br>timecard.contoso.com<br>LOBApp.contoso.com |
 
 ### Combining WMI and XML Group Policy settings
-You can use both the WMI and XML settings individually or together, based on:
+You can use both the WMI and XML settings individually or together:
 
- **To turn off Enterprise Site Discovery**
-<ul>
-  <li><b>Turn on Site Discovery WMI output:</b> Off</li>
-  <li><b>Turn on Site Discovery XML output:</b> Blank</li>
-</ul>
+**To turn off Enterprise Site Discovery**
+<table>
+    <tr>
+        <th>Setting name</th>
+        <th>Option</th>
+    </tr>
+    <tr>
+        <td>Turn on Site Discovery WMI output</td>
+        <td>Off</td>
+    </tr>
+        <tr>
+        <td>Turn on Site Discovery XML output</td>
+        <td>Blank</td>
+    </tr>
+</table>
 
- **To turn on WMI recording only**
-<ul>
-  <li><b>Turn on Site Discovery WMI output:</b> On</li>
-  <li><b>Turn on Site Discovery XML output:</b> Blank</li>
-</ul>
+**Turn on WMI recording only**
+<table>
+    <tr>
+        <th>Setting name</th>
+        <th>Option</th>
+    </tr>
+    <tr>
+        <td>Turn on Site Discovery WMI output</td>
+        <td>On</td>
+    </tr>
+        <tr>
+        <td>Turn on Site Discovery XML output</td>
+        <td>Blank</td>
+    </tr>
+</table>
 
- **To turn on XML recording only**
-<ul>
-  <li><b>Turn on Site Discovery WMI output:</b> Off</li>
-  <li><b>Turn on Site Discovery XML output:</b> XML file path</li>
-</ul>
+**To turn on XML recording only**
+<table>
+    <tr>
+        <th>Setting name</th>
+        <th>Option</th>
+    </tr>
+    <tr>
+        <td>Turn on Site Discovery WMI output</td>
+        <td>Off</td>
+    </tr>
+        <tr>
+        <td>Turn on Site Discovery XML output</td>
+        <td>XML file path</td>
+    </tr>
+</table>
  
- **To turn on both WMI and XML recording**
-<ul>
-  <li><b>Turn on Site Discovery WMI output:</b> On</li>
-  <li><b>Turn on Site Discovery XML output:</b> XML file path</li>
-</ul>
+**To turn on both WMI and XML recording**
+<table>
+    <tr>
+        <th>Setting name</th>
+        <th>Option</th>
+    </tr>
+    <tr>
+        <td>Turn on Site Discovery WMI output</td>
+        <td>On</td>
+    </tr>
+        <tr>
+        <td>Turn on Site Discovery XML output</td>
+        <td>XML file path</td>
+    </tr>
+</table>
 
 ## Use Configuration Manager to collect your data
 After you’ve collected your data, you’ll need to get the local files off of your employee’s computers. To do this, use the hardware inventory process in Configuration Manager, using one of these options:
