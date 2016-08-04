@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to fix intranet search problems with Internet Explorer 11
-ms.assetid: 3ee71d93-d9d2-48e1-899e-07932c73faa6
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 3ee71d93-d9d2-48e1-899e-07932c73faa6
 title: Fix intranet search problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Fix intranet search problems with Internet Explorer 11
 After upgrading to Internet Explorer 11, you might experience search issues while using your intranet site.

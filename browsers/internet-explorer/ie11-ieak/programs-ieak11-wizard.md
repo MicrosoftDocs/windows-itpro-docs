@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Programs page in the IEAK 11 Customization Wizard to pick the default programs to use for Internet services.
-ms.assetid: f715668f-a50d-4db0-b578-e6526fbfa1fc
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: f715668f-a50d-4db0-b578-e6526fbfa1fc
 title: Use the Programs page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 #  Use the Programs page in the IEAK 11 Wizard
 The **Programs** page of the Internet Explorer Customization Wizard 11 lets you pick the default programs to use for Internet services, like email, contact lists, and newsgroups, by importing settings from your computer.

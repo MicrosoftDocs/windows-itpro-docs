@@ -9,32 +9,32 @@ ms.prod: w10
 ---
 
 
-# Release Notes for App-V
+# Release Notes for App-V for Windows 10, version 1607
 
+Applies to: Windows 10, version 1607
 
-The following are known issues in Microsoft Application Virtualization (App-V).
+Review these known issues in Microsoft Application Virtualization (App-V) for Windows.
 
 ## Error occurs during publishing refresh between App-V 5.0 SP3 Management Server and App-V Client on Windows 10
 
 
 An error is generated during publishing refresh when synchronizing packages from the App-V 5.0 SP3 management server to an App-V client on Windows 10 . This error occurs because the App-V 5.0 SP3 server does not understand the Windows 10 operating system that is specified in the publishing URL. The issue is fixed for App-V publishing server, but is not backported to versions of App-V 5.0 SP3 or earlier.
 
-**Workaround**: Upgrade the App-V 5.0 Management server to the App-V Management server for Windows 10 Clients.
+**Workaround**: Upgrade the App-V 5.0 management server to the App-V management server for Windows 10 clients.
 
 ## Custom configurations do not get applied for packages that will be published globally if they are set using the App-V Server
-
 
 If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration will not be applied to those machines. The App-V Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages will not have access to this custom configuration.
 
 **Workaround**: Do one of the following:
 
--   Assign the package to groups containing only user accounts. This will ensure that the package’s custom configuration will be stored in each user’s profile and will be applied correctly.
+-   Assign the package to groups containing only user accounts. This will ensure that the package’s custom configuration is stored in each user’s profile and will be applied correctly.
 
 -   Create a custom deployment configuration file and apply it to the package on the client using the Add-AppvClientPackage cmdlet with the –DynamicDeploymentConfiguration parameter. See [About App-V Dynamic Configuration](appv-dynamic-configuration.md) for more information.
 
--   Create a new package with the custom configuration using the App-V Sequencer.
+-   Create a new package with the custom configuration using the App-V sequencer.
 
-## Server files not deleted after new App-V Server installation
+## Server files not deleted after new App-V for Windows server installation
 
 
 If you uninstall the App-V 5.0 SP1 Server and then install the App-V Server, the installation fails, the wrong version of the Management server is installed, and an error message is returned. The issue occurs because the Server files are not being deleted when you uninstall App-V 5.0 SP1, so the installation process does an upgrade instead of a new installation.

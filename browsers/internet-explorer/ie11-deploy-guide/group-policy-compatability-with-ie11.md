@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Group Policy suggestions for compatibility with Internet Explorer 11
-ms.assetid: 7482c99f-5d79-4344-9e1c-aea9f0a68e18
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: 7482c99f-5d79-4344-9e1c-aea9f0a68e18
 title: Group Policy and compatibility with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Group Policy and compatibility with Internet Explorer 11
 Internet Explorer 11 has many Group Policy entries that can be configured for keeping your environment managed and safe. This table includes all of our recommendations around security, performance, and compatibility with the previous versions of Internet Explorer, regardless of which Zone the website is in.

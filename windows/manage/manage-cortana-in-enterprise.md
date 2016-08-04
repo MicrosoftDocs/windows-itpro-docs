@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: eross-msft
+localizationpriority: high
 ---
 
 # Cortana integration in your business or enterprise

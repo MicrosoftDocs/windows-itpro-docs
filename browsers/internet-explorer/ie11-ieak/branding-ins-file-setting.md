@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Use the \[Branding\] .INS file setting to set up your custom branding and setup info in your browser install package.
-ms.assetid: cde600c6-29cf-4bd3-afd1-21563d2642df
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: cde600c6-29cf-4bd3-afd1-21563d2642df
 title: Use the Branding .INS file to create custom branding and setup info (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Branding .INS file to create custom branding and setup info
 Info about the custom branding and setup information in your browser package.
