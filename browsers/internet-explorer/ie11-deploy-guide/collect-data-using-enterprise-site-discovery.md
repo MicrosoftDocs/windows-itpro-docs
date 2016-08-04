@@ -64,9 +64,50 @@ Data is collected on the configuration characteristics of IE and the sites it br
 |Number of visits        |  X  |  X  |  X  |  X  |Number of times a site has been visited.                                |
 |Zone                    |  X  |  X  |  X  |  X  |Zone used by IE to browse sites, based on browser settings.             |
 
-<p>**Important**<br>By default, IE doesn’t collect this data; you have to turn this feature on if you want to use it. After you turn on this feature, data is collected on all sites visited by IE, except during InPrivate sessions.
 
-The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
+**Important**<br>By default, IE doesn’t collect this data; you have to turn this feature on if you want to use it. After you turn on this feature, data is collected on all sites visited by IE, except during InPrivate sessions. Additionally, the data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
+
+### Understanding the returned reason codes
+The following tables provide more info about the Document mode reason, Browser state reason, and the Zone codes that are returned as part of your data collection.
+
+#### DocMode reason
+The codes in this table can tell you what document mode was set by IE for a webpage. These codes only apply to Internet Explorer 10 and Internet Explorer 11.
+
+|Code |Description |
+|-----|------------|
+|3 |Page state is set by the `FEATURE_DOCUMENT_COMPATIBLE_MODE` feature control key.|
+|4 |Page is using an X-UA-compatible meta tag. |
+|5 |Page is using an X-UA-compatible HTTP header. |
+|6 |Page appears on an active **Compatibility View** list. |
+|7 |Page is using native XML parsing. |
+|8 |Page is using the mode set by the top-level QME FCK. |
+ 
+#### Browser state reason
+The codes in this table can tell you why the browser is in its current state. Also called “browser mode”. These codes only apply to Internet Explorer 10 and Internet Explorer 11.
+
+|Code |Description |
+|-----|------------|
+|1 |Site is on the intranet, with the **Display intranet sites in Compatibility View** box checked. |
+|2 |Site appears on an active **Compatibility View** list, created in Group Policy. |
+|3 |Site appears on an active **Compatibility View** list, created by the user. |
+|4 |Page is using an X-UA-compatible tag. |
+|5 |Page state is set by the **Developer** toolbar. |
+|6 |Page state is set by the `FEATURE_BROWSER_EMULATION` feature control key. |
+|7 |Site appears on the Microsoft **Compatibility View (CV)** list. |
+|8 |Site appears on the **Quirks** list, created in Group Policy. |
+|11 |Site is using the default browser. |
+
+#### Zone
+The codes in this table can tell you what zone is being used by IE to browse sites, based on browser settings. These codes apply to Internet Explorer 8, Internet Explorer 9, Internet Explorer 10, and Internet Explorer 11.
+
+|Code |Description |
+|-----|------------|
+|-1 |Internet Explorer is using an invalid zone. |
+|0 |Internet Explorer is using the Local machine zone. |
+|1 |Internet Explorer is using the Local intranet zone. |
+|2 |Internet Explorer is using the Trusted sites zone. |
+|3 |Internet Explorer is using the Internet zone. |
+|4 |Internet Explorer is using the Restricted sites zone. |
 
 ## Where is the data stored and how do I collect it?
 The data is stored locally, in an industry-standard WMI class, .MOF file or in an XML file, depending on your configuration. This file remains on the client computer until it’s collected. To collect the files, we recommend:
@@ -94,14 +135,14 @@ Before you can start to collect your data, you must run the provided PowerShell 
 You need to set up your computers for data collection by running the provided PowerShell script (IETelemetrySetUp.ps1) to compile the .mof file and to update security privileges for the new WMI classes.
 <p>**Important**<br>You must run this script if you’re using WMI as your data output. It's not necessary if you're using XML as your data output.
 
-![](images/wedge.gif) **To set up Enterprise Site Discovery**
+**To set up Enterprise Site Discovery**
 
 - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1`. For more info, see [about Execution Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
 
 ### WMI only: Set up your firewall for WMI data
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
 
-![](images/wedge.gif) **To set up your firewall**
+**To set up your firewall**
 
 1.	In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
 
@@ -117,13 +158,13 @@ You can determine which zones or domains are used for data collection, using Pow
 
 - **Zone allow list.** If you have a zone allow list, a comma-separated list of zones that should have this feature turned on, you should use this process.
 
- ![](images/wedge.gif) **To set up data collection using a domain allow list**
+**To set up data collection using a domain allow list**
  
  - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
  
     **Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
 
- ![](images/wedge.gif) **To set up data collection using a zone allow list**
+**To set up data collection using a zone allow list**
  
  - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
  
@@ -223,7 +264,7 @@ Your environment is now ready to collect your hardware inventory and review the 
 ### Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
 You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for System Center Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
 
- ![](images/wedge.gif) **To collect your inventory**
+**To collect your inventory**
 
 1.  Using a text editor like Notepad, open the SMS\DEF.MOF file, located in your `<configmanager_install_location>\inboxes\clifiles.src\hinv` directory.
 
@@ -339,7 +380,7 @@ After the XML files are created, you can use your own solutions to extract and p
 ```
 You can import this XML data into the correct version of the Enterprise Mode Site List Manager, automatically adding the included sites to your Enterprise Mode site list.
 
- ![](images/wedge.gif) **To add your XML data to your Enterprise Mode site list**
+**To add your XML data to your Enterprise Mode site list**
 
 1.  Open the Enterprise Mode Site List Manager, click **File**, and then click **Bulk add from file**.
 ![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
@@ -352,13 +393,12 @@ Each site is validated and if successful, added to the global site list when you
 ## Turn off data collection on your client devices
 After you’ve collected your data, you’ll need to turn Enterprise Site Discovery off.
 
- ![](images/wedge.gif) **To stop collecting data, using PowerShell**
+**To stop collecting data, using PowerShell**
 
 -   On your client computer, start Windows PowerShell in elevated mode (using admin privileges) and run `IETelemetrySetUp.ps1`, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1 –IEFeatureOff`.<p>**Note**<br>
 Turning off data collection only disables the Enterprise Site Discovery feature – all data already written to WMI stays on your employee’s computer.
-
      
- ![](images/wedge.gif) **To stop collecting data, using Group Policy**
+**To stop collecting data, using Group Policy**
 
 1.  Open your Group Policy editor, go to `Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery WMI output`, and click **Off**.
 
@@ -367,7 +407,7 @@ Turning off data collection only disables the Enterprise Site Discovery feature 
 ### Delete already stored data from client computers
 You can completely remove the data stored on your employee’s computers.
 
- ![](images/wedge.gif) **To delete all existing data**
+**To delete all existing data**
 
 -   On the client computer, start PowerShell in elevated mode (using admin privileges) and run these four commands:
 
