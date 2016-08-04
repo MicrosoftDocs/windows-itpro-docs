@@ -158,6 +158,7 @@ First, you must add the virtualization-based security features. You can do this 
     ``` syntax
     dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
+
 > [!NOTE]  
 > You can also add these features to an online image by using either DISM or Configuration Manager.
 
@@ -182,6 +183,7 @@ If you don't use Group Policy, you can enable Credential Guard by using the regi
     -   Go to HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\LSA.
     -   Add a new DWORD value named **LsaCfgFlags**. Set the value of this registry setting to 1 to enable Credential Guard with UEFI lock, set it to 2 to enable Credential Guard without lock, and set it to 0 to disable it.
 4.  Close Registry Editor.
+
 
 > [!NOTE]  
 > You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
@@ -348,6 +350,7 @@ On devices that are running Credential Guard, enroll the devices using the machi
 ``` syntax
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
+
 > [!NOTE]  
 > You must restart the device after enrolling the machine authentication certificate.
  
@@ -364,6 +367,7 @@ By using an authentication policy, you can ensure that users only sign into devi
     ``` syntax
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:”<name of issuance policy>” –groupOU:”<Name of OU to create>” –groupName:”<name of Universal security group to create>”
     ```
+
 ### Deploy the authentication policy
 
 Before setting up the authentication policy, you should log any failed attempt to apply an authentication policy on the KDC. To do this in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
@@ -387,6 +391,7 @@ Now you can set up an authentication policy to use Credential Guard.
 13. Click **OK** to close the **Edit Access Control Conditions** box.
 14. Click **OK** to create the authentication policy.
 15. Close Active Directory Administrative Center.
+
 
 > [!NOTE]  
 > When authentication policies in enforcement mode are deployed with Credential Guard, users will not be able to sign in using devices that do not have the machine authentication certificate provisioned. This applies to both local and remote sign in scenarios.
