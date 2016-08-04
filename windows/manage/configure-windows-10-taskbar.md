@@ -62,7 +62,6 @@ The easiest way to find this data for an application is to:
     xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
     xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
-
   <CustomTaskbarLayoutCollection>
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
@@ -76,7 +75,14 @@ The easiest way to find this data for an application is to:
 ### Sample taskbar configuration added to Start layout XML
 
 ```xml
-<LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+<?xml version="1.0" encoding="utf-8"?>
+<LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    Version="1">
+  <LayoutOptions StartTileGroupCellWidth="6" StartTileGroupsColumnCount="1" />
   <DefaultLayoutOverride>
     <StartLayoutCollection>
       <defaultlayout:StartLayout GroupCellWidth="6" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout">
@@ -87,6 +93,7 @@ The easiest way to find this data for an application is to:
         </start:Group>        
       </defaultlayout:StartLayout>
     </StartLayoutCollection>
+  </DefaultLayoutOverride>
     <CustomTaskbarLayoutCollection>
       <defaultlayout:TaskbarLayout>
         <taskbar:TaskbarPinList>
