@@ -16,9 +16,9 @@ This topic includes information required to successfully install and use UE-V th
 
 ### Upgrading from UE-V 1.0 to the in-box version of UE-V is blocked
 
-Version 1.0 of UE-V includes client-side caching technology used to pin the UE-V sync folder, however, this technology was removed in UE-V 2.x. As a result, UE-V 1.0 users are blocked from upgrading to UE-V for Windows 10, version 1607.
+Version 1.0 of UE-V used Offline Files (Client Side Caching) for settings synchronization and pinned the UE-V sync folder to be available when the network was offline, however, this technology was removed in UE-V 2.x. As a result, UE-V 1.0 users are blocked from upgrading to UE-V for Windows 10, version 1607.
 
-WORKAROUND: Unpin the UE-V 1.0 client-side caching sync folder and then upgrade to the in-box version included in UE-V for Windows, version 1607 release.
+WORKAROUND: Remove the UE-V 1.0 sync folder from the Offline Files configuration and then upgrade to the in-box version of UE-V for Windows, version 1607 release.
 
 ### UE-V settings location templates for Skype cause Skype to crash
 
