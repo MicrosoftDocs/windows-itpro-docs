@@ -22,9 +22,6 @@ Block at First Sight is a feature of Windows Defender cloud protection that prov
 
 You can enable Block at First Sight with Group Policy or individually on endpoints.
 
-> [!NOTE]
-> The Block at First Sight feature is not supported in System Center Configuration Manager. You can enable the pre-requisite settings in Configuration Manager, but you can only enable Black at First Sight with Group Policy or by manually changing the settings on individual endpoints.
-
 ## Backend processing and near-instant determinations
 
 When a Windows Defender client encounters a suspicious but previously undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
