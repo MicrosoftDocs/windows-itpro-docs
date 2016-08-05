@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Create and test a device account (Surface Hub)
@@ -55,11 +56,11 @@ These properties represent the minimum configuration for a device account to wor
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Exchange mailbox (Exchange 2010 or later, or Exchange Online)</p></td>
+<td align="left"><p>Exchange mailbox (Exchange 2013 or later, or Exchange Online)</p></td>
 <td align="left"><p>Enabling the account with an Exchange mailbox gives the device account the capability to receive and send both mail and meeting requests, and to display a meetings calendar on the Surface Hub’s welcome screen. The Surface Hub mailbox must be a room mailbox.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Skype for Business-enabled (Lync/Skype for Business 2010 or later or Skype for Business Online)</p></td>
+<td align="left"><p>Skype for Business-enabled (Lync/Skype for Business 2013 or later or Skype for Business Online)</p></td>
 <td align="left"><p>Skype for Business must be enabled in order to use various conferencing features, like video calls, IM, and screen-sharing.</p></td>
 </tr>
 <tr class="odd">

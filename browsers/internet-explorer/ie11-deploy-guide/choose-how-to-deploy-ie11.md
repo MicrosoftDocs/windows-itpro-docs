@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Choose how to deploy Internet Explorer 11 (IE11)
-ms.assetid: 21b6a301-c222-40bc-ad0b-27f66fc54d9d
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 21b6a301-c222-40bc-ad0b-27f66fc54d9d
 title: Choose how to deploy Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Choose how to deploy Internet Explorer 11 (IE11)
 In this section, you can learn about how to deploy your custom version of Internet Explorer using Automatic Version Synchronization (AVS) or using your software distribution tools.

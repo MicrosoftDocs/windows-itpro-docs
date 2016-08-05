@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Search Providers page in the IEAK 11 Customization Wizard to add additional providers and set the default.
-ms.assetid: 48cfaba5-f4c0-493c-b656-445311b7bc52
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 48cfaba5-f4c0-493c-b656-445311b7bc52
 title: Use the Search Providers page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Search Providers page in the IEAK 11 Wizard
 The **Search Providers** page of the Internet Explorer Customization Wizard 11 lets you add a default search provider (typically, Bing®) and additional providers to your custom version of IE.

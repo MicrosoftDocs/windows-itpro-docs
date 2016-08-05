@@ -8,6 +8,7 @@ ms.mktglfcycl: explore
 ms.pagetype: security
 ms.sitesec: library
 author: eross-msft
+localizationpriority: high
 ---
 
 # Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality

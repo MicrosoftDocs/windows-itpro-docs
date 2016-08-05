@@ -5,6 +5,7 @@ ms.assetid: 4BA52AA9-64D3-41F3-94B2-B87EC2717486
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 author: brianlic-msft
 ---
 

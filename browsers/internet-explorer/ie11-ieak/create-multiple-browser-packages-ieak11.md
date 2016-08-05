@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Steps to create multiple versions of your custom browser if you support more than 1 version of Windows, more than 1 language, or have different features in each package.
-ms.assetid: 4c5f3503-8c69-4691-ae97-1523091ab333
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 4c5f3503-8c69-4691-ae97-1523091ab333
 title: Create multiple versions of your custom package using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Create multiple versions of your custom package using IEAK 11
 You'll need to create multiple versions of your custom browser package if:
@@ -29,3 +31,4 @@ The Internet Explorer Customization Wizard 11 stores your original settings in t
 **Important**<br>Except for the **Title bar** text, **Favorites**, **Links bar**, **Home** page, and **Search bar**, we recommend that you keep all of your wizard settings the same for all of your build computers.
 
 4.  Repeat this process until you’ve created a package for each version of your custom installation package.
+

@@ -30,7 +30,8 @@ Since its inception, Windows 10 has included a number of user experience feature
 
 * **Microsoft account notifications**.  For users who have a connected Microsoft account, toast notifications about their account like parental control notifications or subscription expiration. 
 
-Windows 10 tips, tricks, and suggestions and Windows Store suggestions can be turned on or off by users.  For example, users are able to select personal photos for the lock screen as opposed to the images provided by Microsoft, or turn off tips, tricks, or suggestions as they use Windows.   
+>[!TIP]
+> On all Windows desktop editions, users can directly enable and disable Windows 10 tips, tricks, and suggestions and Windows Store suggestions.  For example, users are able to select personal photos for the lock screen as opposed to the images provided by Microsoft, or turn off tips, tricks, or suggestions as they use Windows.   
 
 Windows 10, version 1607 (also known as the Anniversary Update), provides organizations the ability to centrally manage the type of content provided by these features through Group Policy or mobile device management (MDM). The following table describes how administrators can manage suggestions and tips in Windows 10 commercial and education editions.  
 

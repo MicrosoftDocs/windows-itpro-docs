@@ -6,6 +6,7 @@ ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 title: Available policies for Microsoft Edge (Microsoft Edge for IT Pros)
+localizationpriority: high
 ---
 
 # Available policies for Microsoft Edge

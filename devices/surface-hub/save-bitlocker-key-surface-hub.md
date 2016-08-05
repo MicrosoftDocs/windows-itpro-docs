@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub, security
 author: TrudyHa
-localizationpriority: high
+localizationpriority: medium
 ---
 
 # Save your BitLocker key (Surface Hub)

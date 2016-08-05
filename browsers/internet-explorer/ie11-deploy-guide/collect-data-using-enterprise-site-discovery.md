@@ -1,11 +1,12 @@
 ---
-description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
-ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
-ms.prod: ie11
+localizationpriority: low
 ms.mktglfcycl: deploy
-ms.sitesec: library
+description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
 author: eross-msft
+ms.prod: ie11
+ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
 title: Collect data using Enterprise Site Discovery
+ms.sitesec: library
 ---
 
 # Collect data using Enterprise Site Discovery
@@ -62,9 +63,50 @@ Data is collected on the configuration characteristics of IE and the sites it br
 |Number of visits        |  X  |  X  |  X  |  X  |Number of times a site has been visited.                                |
 |Zone                    |  X  |  X  |  X  |  X  |Zone used by IE to browse sites, based on browser settings.             |
 
-<p>**Important**<br>By default, IE doesn’t collect this data; you have to turn this feature on if you want to use it. After you turn on this feature, data is collected on all sites visited by IE, except during InPrivate sessions.
 
-The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
+>**Important**<br>By default, IE doesn’t collect this data; you have to turn this feature on if you want to use it. After you turn on this feature, data is collected on all sites visited by IE, except during InPrivate sessions. Additionally, the data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
+
+### Understanding the returned reason codes
+The following tables provide more info about the Document mode reason, Browser state reason, and the Zone codes that are returned as part of your data collection.
+
+#### DocMode reason
+The codes in this table can tell you what document mode was set by IE for a webpage.<br>These codes only apply to Internet Explorer 10 and Internet Explorer 11.
+
+|Code |Description |
+|-----|------------|
+|3 |Page state is set by the `FEATURE_DOCUMENT_COMPATIBLE_MODE` feature control key.|
+|4 |Page is using an X-UA-compatible meta tag. |
+|5 |Page is using an X-UA-compatible HTTP header. |
+|6 |Page appears on an active **Compatibility View** list. |
+|7 |Page is using native XML parsing. |
+|9 |Page is using a special Quirks Mode Emulation (QME) mode that uses the modern layout engine, but the quirks behavior of Internet Explorer 5. |
+
+#### Browser state reason
+The codes in this table can tell you why the browser is in its current state. Also called “browser mode”.<br>These codes only apply to Internet Explorer 10 and Internet Explorer 11.
+
+|Code |Description |
+|-----|------------|
+|1 |Site is on the intranet, with the **Display intranet sites in Compatibility View** box checked. |
+|2 |Site appears on an active **Compatibility View** list, created in Group Policy. |
+|3 |Site appears on an active **Compatibility View** list, created by the user. |
+|4 |Page is using an X-UA-compatible tag. |
+|5 |Page state is set by the **Developer** toolbar. |
+|6 |Page state is set by the `FEATURE_BROWSER_EMULATION` feature control key. |
+|7 |Site appears on the Microsoft **Compatibility View (CV)** list. |
+|8 |Site appears on the **Quirks** list, created in Group Policy. |
+|11 |Site is using the default browser. |
+
+#### Zone
+The codes in this table can tell you what zone is being used by IE to browse sites, based on browser settings.<br>These codes apply to Internet Explorer 8, Internet Explorer 9, Internet Explorer 10, and Internet Explorer 11.
+
+|Code |Description |
+|-----|------------|
+|-1 |Internet Explorer is using an invalid zone. |
+|0 |Internet Explorer is using the Local machine zone. |
+|1 |Internet Explorer is using the Local intranet zone. |
+|2 |Internet Explorer is using the Trusted sites zone. |
+|3 |Internet Explorer is using the Internet zone. |
+|4 |Internet Explorer is using the Restricted sites zone. |
 
 ## Where is the data stored and how do I collect it?
 The data is stored locally, in an industry-standard WMI class, .MOF file or in an XML file, depending on your configuration. This file remains on the client computer until it’s collected. To collect the files, we recommend:
@@ -76,8 +118,9 @@ The data is stored locally, in an industry-standard WMI class, .MOF file or in a
 ## WMI Site Discovery suggestions
 We recommend that you collect your data for at most a month at a time, to capture a user’s typical workflow. We don’t recommend collecting data longer than that because the data is stored in a WMI provider and can fill up your computer’s hard drive. You may also want to collect data only for pilot users or a representative sample of people, instead of turning this feature on for everyone in your company.
 
-On average, a website generates about 250bytes of data for each visit, causing only a minor impact to Internet Explorer’s performance. Over the course of a month, collecting data from 20 sites per day from 1,000 users, you’ll get about 150MB of data:<br>\[250bytes (per site visit) \* 20sites/day\* 30days = (approximately) 150KB \*1000users = (approximately) 150MB\].
-<p>**Important**<br>The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
+On average, a website generates about 250bytes of data for each visit, causing only a minor impact to Internet Explorer’s performance. Over the course of a month, collecting data from 20 sites per day from 1,000 users, you’ll get about 150MB of data:<p>250 bytes (per site visit) X 20 sites/day X 30 days = (approximately) 150KB X 1000 users = (approximately) 150MB 
+
+>**Important**<br>The data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
 
 ## Getting ready to use Enterprise Site Discovery
 Before you can start to collect your data, you must run the provided PowerShell script (IETelemetrySetUp.ps1) on your client devices to start generating the site discovery data and to set up a place to store this data locally. Then, you must start collecting the site discovery data from the client devices, using one of these three options:
@@ -90,16 +133,17 @@ Before you can start to collect your data, you must run the provided PowerShell 
 
 ### WMI only: Running the PowerShell script to compile the .MOF file and to update security privileges
 You need to set up your computers for data collection by running the provided PowerShell script (IETelemetrySetUp.ps1) to compile the .mof file and to update security privileges for the new WMI classes.
-<p>**Important**<br>You must run this script if you’re using WMI as your data output. It's not necessary if you're using XML as your data output.
 
-![](images/wedge.gif) **To set up Enterprise Site Discovery**
+>**Important**<br>You must run this script if you’re using WMI as your data output. It's not necessary if you're using XML as your data output.
+
+**To set up Enterprise Site Discovery**
 
 - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1`. For more info, see [about Execution Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
 
 ### WMI only: Set up your firewall for WMI data
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
 
-![](images/wedge.gif) **To set up your firewall**
+**To set up your firewall**
 
 1.	In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
 
@@ -109,65 +153,107 @@ If you choose to use WMI as your data output, you need to make sure that your WM
 
 ## Use PowerShell to finish setting up Enterprise Site Discovery
 You can determine which zones or domains are used for data collection, using PowerShell. If you don’t want to use PowerShell, you can do this using Group Policy. For more info, see [Use Group Policy to finish setting up Enterprise Site Discovery](#use-group-policy-to-finish-setting-up-enterprise-site-discovery).
-<p>**Important**<br>The .ps1 file updates turn on Enterprise Site Discovery and WMI collection for all users on a device.
+
+>**Important**<br>The .ps1 file updates turn on Enterprise Site Discovery and WMI collection for all users on a device.
 
 - **Domain allow list.** If you have a domain allow list, a comma-separated list of domains that should have this feature turned on, you should use this process.
 
 - **Zone allow list.** If you have a zone allow list, a comma-separated list of zones that should have this feature turned on, you should use this process.
 
- ![](images/wedge.gif) **To set up data collection using a domain allow list**
+**To set up data collection using a domain allow list**
  
  - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
  
-    **Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
+    >**Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
 
- ![](images/wedge.gif) **To set up data collection using a zone allow list**
+**To set up data collection using a zone allow list**
  
  - Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1, using this command: `.\IETElemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
  
-    **Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
+    >**Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
 
 ## Use Group Policy to finish setting up Enterprise Site Discovery
 You can use Group Policy to finish setting up Enterprise Site Discovery. If you don’t want to use Group Policy, you can do this using PowerShell. For more info, see [Use Powershell to finish setting up Enterprise Site Discovery](#use-powershell-to-finish-setting-up-enterprise-site-discovery).
-<p>**Note**<br> All of the Group Policy settings can be used individually or as a group.
 
- ![](images/wedge.gif) **To set up Enterprise Site Discovery using Group Policy**
+>**Note**<br> All of the Group Policy settings can be used individually or as a group.
+
+ **To set up Enterprise Site Discovery using Group Policy**
 
 -   Open your Group Policy editor, and go to these new settings:
 
-|Setting name and location  |Description  |Options  |
-|---------------------------|-------------|---------|
-|Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery WMI output |Writes collected data to a WMI class, which can be aggregated using a client-management solution like Configuration Manager. |<ul><li>**On.** Turns on WMI recording.</li><li>**Off.** Turns off WMI recording.</li></ul> |
-|Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery XML output |Writes collected data to an XML file, which is stored in your specified location. |<ul><li>**XML file path.** Including this turns on XML recording.</li>   <li>**Blank.** Turns off XML recording.</li></ul> |
-|Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by Zone |Manages which zone can collect data. |To specify which zones can collect data, you must include a binary number that represents your selected zones, based on this order:<p>0 – Restricted Sites zone<br>0 – Internet zone<br>0 – Trusted Sites zone<br>0 – Local Intranet zone<br>0 – Local Machine zone<p>**Example 1:** Include only the Local Intranet zone<p>Binary representation: *00010*, based on:<p>0 – Restricted Sites zone<br>0 – Internet zone<br>0 – Trusted Sites zone<br>1 – Local Intranet zone<br>0 – Local Machine zone<p>**Example 2:** Include only the Restricted Sites, Trusted Sites, and Local Intranet zones<p>Binary representation: *10110*, based on:<p>1 – Restricted Sites zone<br>0 – Internet zone<br>1 – Trusted Sites zone<br>1 – Local Intranet zone<br>1 – Local Machine zone |
-|Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by domain |Manages which domains can collect data |To specify which domains can collect data, you must include your selected domains, one domain per line, in the provided box. It should look like:<p>microsoft.sharepoint.com<br>outlook.com<br>onedrive.com<br>timecard.contoso.com<br>LOBApp.contoso.com |
+    |Setting name and location  |Description  |Options  |
+    |---------------------------|-------------|---------|
+    |Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery WMI output |Writes collected data to a WMI class, which can be aggregated using a client-management solution like Configuration Manager. |<ul><li>**On.** Turns on WMI recording.</li><li>**Off.** Turns off WMI recording.</li></ul> |
+    |Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery XML output |Writes collected data to an XML file, which is stored in your specified location. |<ul><li>**XML file path.** Including this turns on XML recording.</li><li>**Blank.** Turns off XML recording.</li></ul> |
+    |Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by Zone |Manages which zone can collect data. |To specify which zones can collect data, you must include a binary number that represents your selected zones, based on this order:<p>0 – Restricted Sites zone<br>0 – Internet zone<br>0 – Trusted Sites zone<br>0 – Local Intranet zone<br>0 – Local Machine zone<p>**Example 1:** Include only the Local Intranet zone<p>Binary representation: *00010*, based on:<p>0 – Restricted Sites zone<br>0 – Internet zone<br>0 – Trusted Sites zone<br>1 – Local Intranet zone<br>0 – Local Machine zone<p>**Example 2:** Include only the Restricted Sites, Trusted Sites, and Local Intranet zones<p>Binary representation: *10110*, based on:<p>1 – Restricted Sites zone<br>0 – Internet zone<br>1 – Trusted Sites zone<br>1 – Local Intranet zone<br>1 – Local Machine zone |
+    |Administrative Templates\Windows Components\Internet Explorer\Limit Site Discovery output by domain |Manages which domains can collect data |To specify which domains can collect data, you must include your selected domains, one domain per line, in the provided box. It should look like:<p>microsoft.sharepoint.com<br>outlook.com<br>onedrive.com<br>timecard.contoso.com<br>LOBApp.contoso.com |
 
 ### Combining WMI and XML Group Policy settings
-You can use both the WMI and XML settings individually or together, based on:
+You can use both the WMI and XML settings individually or together:
 
- ![](images/wedge.gif) **To turn off Enterprise Site Discovery**
-<ul>
-  <li><b>Turn on Site Discovery WMI output:</b> Off</li>
-  <li><b>Turn on Site Discovery XML output:</b> Blank</li>
-</ul>
+**To turn off Enterprise Site Discovery**
+<table>
+    <tr>
+        <th>Setting name</th>
+        <th>Option</th>
+    </tr>
+    <tr>
+        <td>Turn on Site Discovery WMI output</td>
+        <td>Off</td>
+    </tr>
+        <tr>
+        <td>Turn on Site Discovery XML output</td>
+        <td>Blank</td>
+    </tr>
+</table>
 
- ![](images/wedge.gif) **To turn on WMI recording only**
-<ul>
-  <li><b>Turn on Site Discovery WMI output:</b> On</li>
-  <li><b>Turn on Site Discovery XML output:</b> Blank</li>
-</ul>
+**Turn on WMI recording only**
+<table>
+    <tr>
+        <th>Setting name</th>
+        <th>Option</th>
+    </tr>
+    <tr>
+        <td>Turn on Site Discovery WMI output</td>
+        <td>On</td>
+    </tr>
+        <tr>
+        <td>Turn on Site Discovery XML output</td>
+        <td>Blank</td>
+    </tr>
+</table>
 
- ![](images/wedge.gif) **To turn on XML recording only**
-<ul>
-  <li><b>Turn on Site Discovery WMI output:</b> Off</li>
-  <li><b>Turn on Site Discovery XML output:</b> XML file path</li>
-</ul>
+**To turn on XML recording only**
+<table>
+    <tr>
+        <th>Setting name</th>
+        <th>Option</th>
+    </tr>
+    <tr>
+        <td>Turn on Site Discovery WMI output</td>
+        <td>Off</td>
+    </tr>
+        <tr>
+        <td>Turn on Site Discovery XML output</td>
+        <td>XML file path</td>
+    </tr>
+</table>
  
- ![](images/wedge.gif) **To turn on both WMI and XML recording**
-<ul>
-  <li><b>Turn on Site Discovery WMI output:</b> On</li>
-  <li><b>Turn on Site Discovery XML output:</b> XML file path</li>
-</ul>
+**To turn on both WMI and XML recording**
+<table>
+    <tr>
+        <th>Setting name</th>
+        <th>Option</th>
+    </tr>
+    <tr>
+        <td>Turn on Site Discovery WMI output</td>
+        <td>On</td>
+    </tr>
+        <tr>
+        <td>Turn on Site Discovery XML output</td>
+        <td>XML file path</td>
+    </tr>
+</table>
 
 ## Use Configuration Manager to collect your data
 After you’ve collected your data, you’ll need to get the local files off of your employee’s computers. To do this, use the hardware inventory process in Configuration Manager, using one of these options:
@@ -181,7 +267,7 @@ After you’ve collected your data, you’ll need to get the local files off of 
 ### Collect your hardware inventory using the MOF Editor while connected to a client device
 You can collect your hardware inventory using the MOF Editor, while you’re connected to your client devices.
 
- ![](images/wedge.gif) **To collect your inventory**
+ **To collect your inventory**
 
 1.  From the Configuration Manager, click **Administration**, click **Client Settings**, double-click **Default Client Settings**, click **Hardware Inventory**, and then click **Set Classes**.
 
@@ -207,7 +293,7 @@ Your environment is now ready to collect your hardware inventory and review the 
 ### Collect your hardware inventory using the MOF Editor with a .MOF import file
 You can collect your hardware inventory using the MOF Editor and a .MOF import file.
 
- ![](images/wedge.gif) **To collect your inventory**
+ **To collect your inventory**
 
 1.  From the Configuration Manager, click **Administration**, click **Client Settings**, double-click **Default Client Settings**, click **Hardware Inventory**, and then click **Set Classes**.
 
@@ -221,7 +307,7 @@ Your environment is now ready to collect your hardware inventory and review the 
 ### Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
 You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for System Center Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
 
- ![](images/wedge.gif) **To collect your inventory**
+**To collect your inventory**
 
 1.  Using a text editor like Notepad, open the SMS\DEF.MOF file, located in your `<configmanager_install_location>\inboxes\clifiles.src\hinv` directory.
 
@@ -289,8 +375,8 @@ You can collect your hardware inventory using the using the Systems Management S
     };
     ```
 
-3.  Save the file and close it to the same location.<br>
-Your environment is now ready to collect your hardware inventory and review the sample reports.
+3.  Save the file and close it to the same location.
+    Your environment is now ready to collect your hardware inventory and review the sample reports.
 
 ## View the sample reports with your collected data
 The sample reports, **SCCM Report Sample – ActiveX.rdl** and **SCCM Report Sample – Site Discovery.rdl**, work with System Center 2012, so you can review your collected data.
@@ -337,26 +423,27 @@ After the XML files are created, you can use your own solutions to extract and p
 ```
 You can import this XML data into the correct version of the Enterprise Mode Site List Manager, automatically adding the included sites to your Enterprise Mode site list.
 
- ![](images/wedge.gif) **To add your XML data to your Enterprise Mode site list**
+**To add your XML data to your Enterprise Mode site list**
 
 1.  Open the Enterprise Mode Site List Manager, click **File**, and then click **Bulk add from file**.
-![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
 
-2.  Go to your XML file to add the included sites to the tool, and then click **Open**.<br>
-Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
+    ![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
+
+2.  Go to your XML file to add the included sites to the tool, and then click **Open**.<br>Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
 
 3.  Click **OK** to close the **Bulk add sites to the list** menu.
 
 ## Turn off data collection on your client devices
 After you’ve collected your data, you’ll need to turn Enterprise Site Discovery off.
 
- ![](images/wedge.gif) **To stop collecting data, using PowerShell**
+**To stop collecting data, using PowerShell**
 
--   On your client computer, start Windows PowerShell in elevated mode (using admin privileges) and run `IETelemetrySetUp.ps1`, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1 –IEFeatureOff`.<p>**Note**<br>
-Turning off data collection only disables the Enterprise Site Discovery feature – all data already written to WMI stays on your employee’s computer.
+-   On your client computer, start Windows PowerShell in elevated mode (using admin privileges) and run `IETelemetrySetUp.ps1`, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1 –IEFeatureOff`.
 
-     
- ![](images/wedge.gif) **To stop collecting data, using Group Policy**
+    >**Note**<br>Turning off data collection only disables the Enterprise Site Discovery feature – all data already written to WMI stays on your employee’s computer.
+
+
+**To stop collecting data, using Group Policy**
 
 1.  Open your Group Policy editor, go to `Administrative Templates\Windows Components\Internet Explorer\Turn on Site Discovery WMI output`, and click **Off**.
 
@@ -365,7 +452,7 @@ Turning off data collection only disables the Enterprise Site Discovery feature 
 ### Delete already stored data from client computers
 You can completely remove the data stored on your employee’s computers.
 
- ![](images/wedge.gif) **To delete all existing data**
+**To delete all existing data**
 
 -   On the client computer, start PowerShell in elevated mode (using admin privileges) and run these four commands:
 
@@ -377,7 +464,7 @@ You can completely remove the data stored on your employee’s computers.
 
     -   `Remove-Item -Path 'HKCU:\Software\Microsoft\Internet Explorer\WMITelemetry'`
 
- ## Related topics
+## Related topics
 * [Enterprise Mode Site List Manager (schema v.2) download](http://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
  

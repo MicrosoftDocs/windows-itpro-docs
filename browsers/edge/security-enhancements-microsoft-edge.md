@@ -5,6 +5,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
+localizationpriority: high
 ---
 
 # Security enhancements for Microsoft Edge

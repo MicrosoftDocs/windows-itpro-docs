@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Enhanced Protected Mode problems with Internet Explorer
-ms.assetid: 15890ad1-733d-4f7e-a318-10399b389f45
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: 15890ad1-733d-4f7e-a318-10399b389f45
 title: Enhanced Protected Mode problems with Internet Explorer (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Enhanced Protected Mode problems with Internet Explorer
 Enhanced Protected Mode further restricts Protected Mode to deny potential attackers access to sensitive or personal information. If this feature is turned on, users might start to see errors asking them to turn it off, like **This webpage wants to run "npctrl.dll. If you trust this site, you can disable Enhanced Protected Mode for this site to run the control**. If your users click the **Disable** box, Enhanced Protected Mode is turned off for only the single visit to that specific site. After the user leaves the site, Enhanced Protected Mode is automatically turned back on.

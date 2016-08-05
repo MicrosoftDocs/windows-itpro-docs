@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: plan
 description: Review the options available to help you customize your browser install packages for deployment to your employee's devices.
-ms.assetid: 4b804da3-c3ac-4b60-ab1c-99536ff6e31b
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: plan
-ms.sitesec: library
+ms.assetid: 4b804da3-c3ac-4b60-ab1c-99536ff6e31b
 title: Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options
 Use the Internet Explorer Administration Kit 11 (IEAK 11) and the Internet Explorer Customization Wizard 11 to customize your browser install packages for deployment to your employee's devices.
@@ -35,3 +37,4 @@ IEAK 11 lets you customize a lot of Internet Explorer 11, including the IE and 
 |[Security and Privacy Settings](security-and-privacy-settings-ieak11-wizard.md) |The **Security Zones and Privacy** settings are supported by both experiences. The **Content Ratings** are only supported on Internet Explorer for the desktop. |Decide if you want to:<ul><li>Customize your security zones and privacy settings</li><p>-OR-<p><li>Import your current security zones and privacy settings</li><p>-AND-<p><li>Customize your content ratings settings</li><p>-OR-<p><li>Import your current content ratings settings</li></ul> |
 |[Programs](programs-ieak11-wizard.md) |Internet Explorer for the desktop |Decide your default programs or import your current settings. |
 |[Additional Settings](additional-settings-ieak11-wizard.md) |Both |Decide how to set up multiple IE settings that appear in the **Internet Options** box. |
+

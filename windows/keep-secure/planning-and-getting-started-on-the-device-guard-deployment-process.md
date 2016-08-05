@@ -4,6 +4,7 @@ description: To help you plan and begin the initial test stages of a deployment 
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 author: brianlic-msft
 ---
 

@@ -8,13 +8,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
+localizationpriority: high
 ---
 
-# List of enlightened Microsoft apps for use with Windows Information Protection(WIP)
+# List of enlightened Microsoft apps for use with Windows Information Protection (WIP)
 
 **Applies to:**
 
--   Windows 10, version 6017
+-   Windows 10, version 1607
 -   Windows 10 Mobile
 
 Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list.
