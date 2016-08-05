@@ -1,5 +1,5 @@
 # [Plan for Windows 10 deployment](index.md)
-## [Windows 10 servicing options](windows-10-servicing-options.md)
+## [Windows 10 servicing overview](windows-10-servicing-options.md)
 ## [Windows 10 deployment considerations](windows-10-deployment-considerations.md)
 ## [Windows 10 compatibility](windows-10-compatibility.md)
 ## [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
