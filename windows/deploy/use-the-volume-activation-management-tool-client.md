@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerMS
-localizationpriority: medium
+localizationpriority: high
 ---
 
 # Use the Volume Activation Management Tool

@@ -7,7 +7,7 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
+localizationpriority: high
 ---
 
 # Provision PCs with apps and certificates for initial deployment (advanced provisioning)

@@ -7,7 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: servicing; devices
-author: TrudyHa
+author: jdeckerMS
+localizationpriority: high
 ---
 
 # Windows Update for Business
