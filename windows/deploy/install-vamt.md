@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Install VAMT
