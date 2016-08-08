@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
+localizationpriority: high
 ---
 
 # Customize Windows 10 Start and taskbar with Group Policy

@@ -8,6 +8,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: security
 author: challum
+localizationpriority: high
 ---
 
 # Microsoft Passport guide
