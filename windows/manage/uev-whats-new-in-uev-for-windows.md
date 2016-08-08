@@ -24,6 +24,8 @@ The changes in UE-V for Windows 10, version 1607 impact already existing impleme
 
 - The UE-V template generator is available from the Windows 10 ADK. In previous releases of UE-V, the template generator was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new template generator to create new settings location templates, existing settings location templates will continue to work. 
 
+- The Company Settings Center was removed and is no longer available on user devices. Users can no longer manage their synchronized settings. 
+
 For more information about how to configure an existing UE-V installation after upgrading user devices to Windows 10, see [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md).
 
 > **Important**&nbsp;&nbsp;You can upgrade your existing UE-V installation to Windows 10 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you’ll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10.
@@ -32,11 +34,27 @@ For more information about how to configure an existing UE-V installation after 
 
 UE-V for Windows 10 includes a new template generator, available from a new location. If you are upgrading from an existing UE-V installation, you’ll need to use the new generator to create settings location templates. The UE-V for Windows 10 template generator is now available in the [Windows 10 Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK).
 
+### Company Settings Center removed in UE-V for Windows 10, version 1607
+
+In previous versions of UE-V, users could select which of their customized application settings to synchronize with the Company Settings Center, a user interface that was available on user devices. 
+
+Additionally, administrators could configure the Company Settings Center to include a link to support resources so that users could easily get support on virtualized settings-related issues.
+
+With the release of Windows 10, version 1607, the Company Settings Center was removed and users can no longer manage their synchronized settings. 
+
+Administrators can still define which user-customized application settings can synchronize (roam) with Group Policy or Windows PowerShell.  
+
+>**Note** With the removal of the Company Settings Center, the following group policies are no longer applicable:
+
+-   Contact IT Link Text
+-   Contact IT URL
+-   Tray Icon
+
 ## Compatibility with Microsoft Enterprise State Roaming
 
 With Windows 10, version 1607, users can synchronize Windows application settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V on on-premises domain-joined devices only.
 
-In hybrid cloud environments, UE-V can roam win32 applications on-premise while [Enterprise State Roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
+In hybrid cloud environments, UE-V can roam win32 applications on-premises while [Enterprise State Roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
 
 To configure UE-V to roam Windows desktop and application data only, change the following group policies:
 
@@ -51,6 +69,7 @@ Additionally, to enable Windows 10 and UE-V to work together, configure these po
 -   Enable “Do Not Synchronize Windows Apps”
 
 -   Disable “Sync Windows Settings”
+
 
 ## Settings Synchronization Behavior Changed in UE-V for Windows 10
 
