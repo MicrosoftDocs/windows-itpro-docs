@@ -31,7 +31,7 @@ Each task is explained in detail in the following sections.
 
 ## Add Upgrade Analytics to Operations Management Suite
 
-Upgrade Analytics is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+Upgrade Analytics is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
 If you are already using OMS, you’ll find Upgrade Analytics in the Solutions Gallery. Select the **Upgrade Analytics** tile in the gallery and then click **Add** on the solution's details page. Upgrade Analytics is now visible in your workspace.
 
