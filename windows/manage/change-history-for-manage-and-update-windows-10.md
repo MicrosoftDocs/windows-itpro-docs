@@ -17,7 +17,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 | New or changed topic | Description |
 | --- | --- |
-| [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Updated sample XML for combined Start and taskbar layout |
+| [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Updated sample XML for combined Start and taskbar layout; added note to explain the difference between applying taskbar configuration by Group Policy and by provisioning package |
 
 ## RELEASE: Windows 10, version 1607
 
