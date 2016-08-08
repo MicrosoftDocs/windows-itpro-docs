@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, servicing
 author: greg-lindsay
+localizationpriority: high
 ---
 
 # Windows 10 servicing options
