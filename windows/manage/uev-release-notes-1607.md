@@ -14,6 +14,21 @@ Applies to: Windows 10, version 1607
 
 This topic includes information required to successfully install and use UE-V that is not included in the User Experience Virtualization (UE-V) documentation. If there are differences between the information in this topic and other UE-V topics, the latest change should be considered authoritative.
 
+### Company Settings Center removed in UE-V for Windows 10, version 1607
+
+In previous versions of UE-V, users could select which of their customized application settings to synchronize with the Company Settings Center, a user interface that was available on user devices. Additionally, administrators could configure the Company Settings Center to include a link to support resources so that users could easily get support on virtualized settings-related issues.
+
+With the release of Windows 10, version 1607, the Company Settings Center was removed and users can no longer manage their synchronized settings. 
+
+Administrators can still define which user-customized application settings can synchronize (roam) with Group Policy or Windows PowerShell.  
+
+**Note**  With the removal of the Company Settings Center, the following group policies are no longer applicable:
+
+-   Contact IT Link Text
+-   Contact IT URL
+-   Tray Icon
+
+
 ### Upgrading from UE-V 1.0 to the in-box version of UE-V is blocked
 
 Version 1.0 of UE-V used Offline Files (Client Side Caching) for settings synchronization and pinned the UE-V sync folder to be available when the network was offline, however, this technology was removed in UE-V 2.x. As a result, UE-V 1.0 users are blocked from upgrading to UE-V for Windows 10, version 1607.

@@ -29,7 +29,7 @@ Upgrade Analytics is offered as a solution in the Microsoft Operations Managemen
 
 If you’re already using OMS, you’ll find Upgrade Analytics in the Solutions Gallery. Click the Upgrade Analytics tile in the gallery and then click Add on the solution’s details page. Upgrade Analytics is now visible in your workspace.
 
-If you are not using OMS, go to \[link to new Upgrade Analytics Web page on Microsoft.com\] and select **Upgrade Analytics Service** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Analytics solution to it.
+If you are not using OMS, go to [the Upgrade Analytics page on Microsoft.com](https://www.microsoft.com/en-us/WindowsForBusiness/upgrade-analytics) and select **Sign up** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Analytics solution to it.
 
 Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 
@@ -37,7 +37,7 @@ Important: You can use either a Microsoft Account or a Work or School account to
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, you’ll need to complete the following tasks to allow user computer data to be shared with and assessed by Upgrade Analytics.
 
-See \[link to Steve May’s PDF doc when it’s published\] for more information about what user computer data Upgrade Analytics collects and assesses. See [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization) for more information about how Microsoft uses Windows telemetry data.
+See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](http://go.microsoft.com/fwlink/?LinkID=822965) for more information about what user computer data Upgrade Analytics collects and assesses. See [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization) for more information about how Microsoft uses Windows telemetry data.
 
 **Whitelist telemetry endpoints.** To enable telemetry data to be sent to Microsoft, you’ll need to whitelist the following Microsoft telemetry endpoints on your proxy server or firewall. You may need to get approval from your security group to do this.
 
