@@ -31,7 +31,7 @@ The App-V server consists of the following features:
 
 The following list displays the recommended methods for installing the App-V server infrastructure:
 
--   Install the App-V server. For more information, see [How to Deploy the App-V Server](appv-deploy-the-appv-server.md).
+-   Install the App-V server. For more information, see [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md).
 
 -   Install the database, reporting, and management features on separate computers. For more information, see [How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services](appv-install-the-management-and-reporting-databases-on-separate-computers.md).
 
@@ -104,7 +104,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
 
-[Deploying the App-V Server](appv-deploying-the-appv-server.md)
+[Deploying the App-V 5.1 Server](appv-deploying-the-appv-server.md)
 
  
 

@@ -75,7 +75,7 @@ The following table indicates the software that is already installed for differe
 ## App-V Server prerequisite software
 
 
-Install the required prerequisite software for the App-V Server components.
+Install the required prerequisite software for the App-V 5.1 Server components.
 
 ### What to know before you start
 
