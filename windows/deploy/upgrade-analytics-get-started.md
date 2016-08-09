@@ -37,7 +37,7 @@ If you are already using OMS, you’ll find Upgrade Analytics in the Solutions G
 
 If you are not using OMS:
 
-1.  Go to the [Upgrade Analytics website](http://go.microsoft.com/fwlink/?LinkID=799190&clcid=0x409) and click **Sign up** to kick off the onboarding process.
+1.  Go to the [Upgrade Analytics page on Microsoft.com](http://go.microsoft.com/fwlink/?LinkID=799190&clcid=0x409) and click **Sign up** to kick off the onboarding process.
 
 2.  Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 
