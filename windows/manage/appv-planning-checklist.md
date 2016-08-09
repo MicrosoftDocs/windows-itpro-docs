@@ -48,7 +48,7 @@ This checklist can be used to help you plan for preparing your organization for 
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>If you plan to use the App-V management server, plan for the required roles.</p></td>
-<td align="left"><p>[Planning for the App-V Server Deployment](appv-planning-for-appv-server-deployment.md)</p></td>
+<td align="left"><p>[Planning for the App-V 5.1 Server Deployment](appv-planning-for-appv-server-deployment.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">

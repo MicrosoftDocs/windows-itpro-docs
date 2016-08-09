@@ -38,10 +38,7 @@ Ideally, you should install the sequencer on a computer running as a virtual mac
 
 ## Planning for App-V client deployment
 
-In Windows 10, version 1607, the App-V client is included with the operating system. For more info, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
-
-For a list of the client minimum requirements see [App-V Prerequisites](appv-prerequisites.md).
-
+In Windows 10, version 1607, the App-V client is included with the operating system. For more information, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
 
 ## Planning for the App-V Shared Content Store (SCS)
 
