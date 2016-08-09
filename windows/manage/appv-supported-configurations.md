@@ -18,13 +18,13 @@ This topic specifies the requirements to install and run App-V in your environme
 
 This section lists the operating system and hardware requirements for all of the App-V Server components.
 
-### Unsupported App-V Server scenarios
+### Unsupported App-V 5.1 Server scenarios
 
-The App-V Server does not support the following scenarios:
+The App-V 5.1 Server does not support the following scenarios:
 
 -   Deployment to a computer that runs the Server Core installation option.
 
--   Deployment to a computer that runs a previous version of App-V Server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the App-V 4.5 Application Virtualization Management Service (HWS) server is not supported.
+-   Deployment to a computer that runs a previous version of App-V 5.1 Server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the App-V 4.5 Application Virtualization Management Service (HWS) server is not supported.
 
 -   Deployment to a computer that runs Microsoft SQL Server Express edition.
 

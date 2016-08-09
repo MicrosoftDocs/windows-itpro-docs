@@ -1,5 +1,5 @@
 ---
-title: Planning for High Availability with App-V Server (Windows 10)
+title: Planning for High Availability with App-V Server
 description: Planning for High Availability with App-V Server
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization

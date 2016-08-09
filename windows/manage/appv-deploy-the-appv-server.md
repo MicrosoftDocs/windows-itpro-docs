@@ -1,6 +1,6 @@
 ---
-title: How to Deploy the App-V Server (Windows 10)
-description: How to Deploy the App-V Server
+title: How to Deploy the App-V 5.1 Server
+description: How to Deploy the App-V 5.1 Server
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -8,9 +8,9 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-# How to Deploy the App-V server
+# How to Deploy the App-V 5.1 Server
 
-Use the following procedure to install the App-V server..
+Use the following procedure to install the App-V 5.1 server.
 
 **Before you start:**
 
@@ -24,11 +24,11 @@ Use the following procedure to install the App-V server..
 
 -   If you use SQL scripts, instead of the Windows Installer, to set up the Management database or Reporting database, you must run the SQL scripts before installing the Management Server or Reporting Server. See [How to Deploy the App-V Databases by Using SQL Scripts](appv-deploy-appv-databases-with-sql-scripts.md).
 
-**To install the App-V server**
+**To install the App-V 5.1 server**
 
-1.  Copy the App-V server installation files to the computer on which you want to install it.
+1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it.
 
-2.  Start the App-V server installation by right-clicking and running **appv\_server\_setup.exe** as an administrator, and then click **Install**.
+2.  Start the App-V 5.1 server installation by right-clicking and running **appv\_server\_setup.exe** as an administrator, and then click **Install**.
 
 3.  Review and accept the license terms, and choose whether to enable Microsoft updates.
 
@@ -74,7 +74,7 @@ Use the following procedure to install the App-V server..
 
     |  Item to configure | Description and examples |
     | - | - |
-    Type the AD group with sufficient permissions to manage the App-V environment. | Example: MyDomain\MyUser<br/>After installation, you can add additional users or groups by using the Management console. However, global security groups and Active Directory Domain Services (AD DS) distribution groups are not supported. You must use <strong>Domain local</strong> or <strong>Universal</strong> groups are required to perform this action.|
+    | Type the AD group with sufficient permissions to manage the App-V environment. | Example: MyDomain\MyUser<br/>After installation, you can add additional users or groups by using the Management console. However, global security groups and Active Directory Domain Services (AD DS) distribution groups are not supported. You must use <strong>Domain local</strong> or <strong>Universal</strong> groups are required to perform this action.|
     | **Website name**: Specify the custom name that will be used to run the publishing service.<br/>If you do not have a custom name, do not make any changes.|
     |**Port binding**: Specify a unique port number that will be used by App-V. | Example: **12345**<br/>Ensure that the port specified is not being used by another website. |
 
@@ -113,4 +113,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 - [How to Install the Publishing Server on a Remote Computer](appv-install-the-publishing-server-on-a-remote-computer.md)
 
-- [How to Deploy the App-V Server Using a Script](appv-deploy-the-appv-server-with-a-script.md)
+- [How to Deploy the App-V 5.1 Server Using a Script](appv-deploy-the-appv-server-with-a-script.md)

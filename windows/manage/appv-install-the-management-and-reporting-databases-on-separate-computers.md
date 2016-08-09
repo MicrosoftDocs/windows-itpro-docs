@@ -21,7 +21,7 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 **To install the management database and the management server on separate computers**
 
-1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on. To start the App-V 5.1 server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
 2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
 
@@ -50,7 +50,7 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 **To install the reporting database and the reporting server on separate computers**
 
-1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on. To start the App-V 5.1 server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
 2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
 
@@ -79,7 +79,7 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 **To install the management and reporting databases using App-V database scripts**
 
-1.  Copy the App-V server installation files to the computer on which you want to install it on.
+1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on.
 
 2.  To extract the App-V database scripts, open a command prompt and specify the location where the installation files are saved and run the following command:
 
