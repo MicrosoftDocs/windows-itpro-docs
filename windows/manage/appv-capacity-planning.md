@@ -67,7 +67,7 @@ You can also manage your App-V environment using an Electronic Software Distribu
 
     -   When network bandwidth limitations inhibit electronic software distribution.
 
--   **Full Infrastructure Model** - The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V Full Infrastructure Model consists of one or more App-V management servers. The Management Server can be used to publish applications to all clients. The publishing process places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about installing the management server see, [Planning for the App-V Server Deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
+-   **Full Infrastructure Model** - The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V Full Infrastructure Model consists of one or more App-V management servers. The Management Server can be used to publish applications to all clients. The publishing process places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about installing the management server see, [Planning for the App-V 5.1 Server Deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
 
     **Important**  
     The App-V full infrastructure model requires Microsoft SQL Server to store configuration data. For more information see [App-V Supported Configurations](appv-supported-configurations.md).
@@ -925,7 +925,7 @@ For example, an average user can stream a 100 MB package in less than 2 minutes,
 
 The number of clients a streaming server can support can be significantly increased and the peak streaming requirements reduced if you pre-cache your applications. You can also increase the number of clients a streaming server can support by using on-demand streaming delivery and stream optimized packages.
 
-## Combining App-V Server Roles
+## Combining App-V 5.1 Server Roles
 
 
 Discounting scaling and fault-tolerance requirements, the minimum number of servers needed for a location with connectivity to Active Directory is one. This server will host the management server, management server service, and Microsoft SQL Server roles. Server roles, therefore, can be arranged in any desired combination since they do not conflict with one another.

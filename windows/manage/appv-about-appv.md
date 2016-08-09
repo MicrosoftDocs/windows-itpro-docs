@@ -173,7 +173,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tbody>
 </table>
 <li><p>If you are upgrading to App-V for Windows server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 server](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/check-reg-key-svr).</p></li>
-<li><p>Follow the steps in [How to Deploy the App-V server components](appv-deploy-the-appv-server.md)</p></li>
+<li><p>Follow the steps in [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md)</p></li>
 <p> </p></li>
 </ol></td>
 </tr>
