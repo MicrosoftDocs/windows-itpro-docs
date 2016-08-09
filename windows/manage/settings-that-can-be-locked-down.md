@@ -266,27 +266,27 @@ The following table lists the settings pages and page groups. Use the page name 
 <tr class="even">
 <td align="left"></td>
 <td align="left">Narrator</td>
-<td align="left">SettingsPageEaseoOfAccessNarrator</td>
+<td align="left">SettingsPageEaseOfAccessNarrator</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Magnifier</td>
-<td align="left">SettingsPageEaseoOfAccessMagnifier</td>
+<td align="left">SettingsPageEaseOfAccessMagnifier</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
 <td align="left">High contrast</td>
-<td align="left">SettingsPageEaseoOfAccessHighContrast</td>
+<td align="left">SettingsPageEaseOfAccessHighContrast</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Closed captions</td>
-<td align="left">SettingsPageEaseoOfAccessClosedCaptioning</td>
+<td align="left">SettingsPageEaseOfAccessClosedCaptioning</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
 <td align="left">More options</td>
-<td align="left">SettingsPageEaseoOfAccessMoreOptions</td>
+<td align="left">SettingsPageEaseOfAccessMoreOptions</td>
 </tr>
 <tr class="odd">
 <td align="left">Privacy</td>
