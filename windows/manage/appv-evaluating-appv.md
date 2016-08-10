@@ -30,7 +30,7 @@ Use the following links for information about setting up the App-V sequencer and
 
 Use the following links for information about setting up the App-V server in your lab environment.
 
--   [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md)
+-   [How to Deploy the App-V server](appv-deploy-the-appv-server.md)
 
 -   [Administering App-V Virtual Applications by Using the Management Console](appv-administering-virtual-applications-with-the-management-console.md)
 
