@@ -50,6 +50,14 @@ The Upgrade Analytics workflow steps you through the discovery and rationalizati
 
 [Learn more about planning and managing Windows upgrades with Windows Upgrade Analytics.](../deploy/manage-windows-upgrades-with-upgrade-analytics.md)
 
+## Windows updates
+
+Windows 10, version 1607, provides administrators with increased control over updates by changing the update deferral increment from weeks to days. Other changes:
+ 
+- Quality Updates can be deferred up to 30 days and paused for 35 days
+- Feature Updates can be deferred up to 180 days and paused for 60 days
+- Update deferrals can be applied to both Current Branch (CB) and Current Branch for Business (CBB)
+
 ## Security
 
 ### Credential Guard and Device Guard
