@@ -11,12 +11,13 @@ ms.prod: w10
 
 # App-V Supported Configurations
 
+Applies to: Windows 10, version 1607
 
-This topic specifies the requirements to install and run App-V in your environment.
+This topic specifies the requirements to install and run App-V in your Windows 10 environment.
 
 ## App-V Server system requirements
 
-This section lists the operating system and hardware requirements for all of the App-V Server components.
+This section lists the operating system and hardware requirements for all of the App-V server components.
 
 ### Unsupported App-V server scenarios
 
