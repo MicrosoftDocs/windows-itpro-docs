@@ -1,6 +1,6 @@
 ---
 title: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services (Windows 10)
-description: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
+description: How to install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.prod: w10
 
 Use the following procedure to install the database server and management server on different computers. The computer you plan to install the database server on must be running a supported version of Microsoft SQL or the installation will fail.
 
-**Note**  
+>**Note**  
 After you complete the deployment, the **Microsoft SQL Server name**, **instance name** and **database name** will be required by the administrator installing the service to be able to connect to these databases.
 
  
@@ -39,7 +39,7 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 
 7.  On the next **Create New Management Server Database** page, select **Use a remote computer**, and type the remote machine account using the following format: **Domain\\MachineAccount**.
 
-    **Note**  
+    >**Note**  
     If you plan to deploy the management server on the same computer you must select **Use this local computer**.
 
      
