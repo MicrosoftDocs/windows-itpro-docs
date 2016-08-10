@@ -14,7 +14,7 @@ This topic lists new and updated topics in the Internet Explorer 11 documentatio
 ## August 2016
 |New or changed topic | Description |
 |----------------------|-------------|
-[Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md)|Added the Understanding the returned reason codes section to the topic. |
+|[Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md)|Added the Understanding the returned reason codes section to the topic. |
 
 ## July 2016
 |New or changed topic | Description |
