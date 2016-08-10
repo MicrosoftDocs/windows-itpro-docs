@@ -62,7 +62,7 @@ Block at First Sight requires a number of Group Policy settings to be configured
         
         1. Send all samples (3)
 
-        > [!NOTE]
+        > [!WARNING]
         > Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the "Block at First Sight" feature will not function.
 
     1. Click **OK**.
