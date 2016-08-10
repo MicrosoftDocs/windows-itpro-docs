@@ -8,9 +8,9 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-# Deploying App-V
+# Deploying App-V for Windows 10
 
-App-V supports a number of different deployment options. This section of the App-V Administrator’s Guide includes information you should consider about the deployment of App-V and step-by-step procedures to help you successfully perform the tasks that you must complete at different stages in your deployment.
+App-V supports a number of different deployment options. Review this topic for information about the tasks that you must complete at different stages in your deployment.
 
 ## App-V Deployment Information
 
