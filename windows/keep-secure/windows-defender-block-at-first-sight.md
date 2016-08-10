@@ -18,9 +18,13 @@ author: iaanw
 
 - Windows 10, version 1607
 
+**Audience**
+
+- Network administrators
+
 Block at First Sight is a feature of Windows Defender cloud protection that provides a way to detect and block new malware within seconds. 
 
-It is enabled by default when certain pre-requisite settings are also enabled.
+It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention.
 
 ## How it works
 
@@ -36,17 +40,11 @@ The file-based determination typically takes 1 to 4 seconds.
 > Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to be slower download times for some files.
 
 
-## Enable Block at First Sight
+## Confirm Block at First Sight is enabled
 
-### Use Group Policy to configure Block at First Sight
+Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work. Usually, these settings are already enabled in most default Windows Defender deployments in enterprise networks.
 
-You can use Group Policy to control whether Windows Defender will continue to lock a suspicious file until it is uploaded to the backend.
-
-This feature ensures the device checks in real time with the Microsoft Active Protection Service (MAPS) before allowing certain content to be run or accessed. If this feature is disabled, the check will not occur, which will lower the protection state of the device.
-
-Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work.
-
-**Configure pre-requisite cloud protection Group Policy settings:**
+**Confirm pre-requisite cloud protection Group Policy settings:**
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -56,9 +54,9 @@ Block at First Sight requires a number of Group Policy settings to be configured
 
 5.  Expand the tree to **Windows components > Windows Defender > MAPS** and configure the following Group Policies:
     
-    1.  Double-click the **Join Microsoft MAPS** setting and set the option to **Enabled**. Click **OK**.
+    1.  Double-click the **Join Microsoft MAPS** setting and ensure the option is set to **Enabled**. Click **OK**.
     
-    1.  Double-click the **Send file samples when further analysis is required** setting and set the option as **Enabled** and the additional options as either of the following:
+    1.  Double-click the **Send file samples when further analysis is required** setting and ensure the option is set to **Enabled** and the additional options are either of the following:
     
         1. Send safe samples (1)
         
@@ -67,21 +65,54 @@ Block at First Sight requires a number of Group Policy settings to be configured
         > [!NOTE]
         > Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the "Block at First Sight" feature will not function.
 
-    1. Click OK after both Group Policies have been set.
+    1. Click **OK**.
 
 1.  In the **Group Policy Management Editor**, expand the tree to **Windows components > Windows Defender > Real-time Protection**:
     
-    1.  Double-click the **Scan all downloaded files and attachments** setting and set the option to **Enabled**. Click **OK**.
+    1.  Double-click the **Scan all downloaded files and attachments** setting and ensure the option is set to **Enabled**. Click **OK**.
     
-    1.  Double-click the **Turn off real-time protection** setting and set the option to **Disabled**. Click **OK**.
+    1.  Double-click the **Turn off real-time protection** setting and ensure the option is set to **Disabled**. Click **OK**.
+
+If you had to change any of the settings, you should re-deploy the Group Policy Object across your network to ensure all endpoints are covered.
+
+> [!IMPORTANT]
+> There is no specific UI change or individual setting in System Center Configuration Manager to enable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly.
 
 
+## Confirm Block at First Sight is enabled on individual clients
 
-**Enable Block at First Sight with Group Policy**
+You can confirm that Block at First Sight is enabled in Windows Settings. The feature is automatically enabled, as long as **Cloud-based protection** and **Automatic sample submission** are both turned on.
 
-The Block at First Sight feature is automatically enabled when the pre-requisite settings have been applied.
+**Confirm Block at First Sight is enabled on individual clients**
 
-You can manually disable the feature. You might want to do this so you can turn off the feature but still retain the pre-requisite settings.
+> [!IMPORTANT]
+> Changes to the pre-requisite settings will determine whether the feature is enabled or not. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
+
+> [!NOTE]
+> If the pre-requisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints.
+
+1. Open Windows Defender settings:
+
+    a. Open the Windows Defender app and click **Settings**.
+    
+    b. On the main Windows Settings page, click **Update & Security** and then **Windows Defender**.
+
+2.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
+
+> [!IMPORTANT]
+> These settings can be overridden by future deployments of a Group Policy Object.
+
+## Disable Block at First Sight
+
+> [!WARNING]
+> Disabling the Block at First Sight feature will lower the protection state of the endpoint and your network.
+
+You may choose to disable the Block at First Sight feature if you want to retain the pre-requisite settings without using Block at First Sight protection. You might wish to do this if you are experiencing latency issues or you want to test the feature's impact on your network.
+
+> [!NOTE]
+> You cannot disable Block at First Sight with System Center Configuration Manager
+
+**Disable Block at First Sight with Group Policy**
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -96,23 +127,9 @@ You can manually disable the feature. You might want to do this so you can turn 
     > [!NOTE]
     > Disabling the Block at First Sight feature will not disable or alter the pre-requisite group policies.
 
-### Manually enable Block at First Sight on individual clients
-
-Block at First Sight is automatically enabled on un-managed clients that are running Windows 10, as long as **Cloud-based protection** and **Automatic sample submission** are both turned on. You can manually disable the feature on individual endpoints.
-
-**Disable Block at First Sight on individual clients**
-
-1. Open Windows Defender settings:
-
-    a. Open the Windows Defender app and click **Settings**.
-    
-    b. On the main Windows Settings page, click **Update & Security** and then **Windows Defender**.
-
-2.	Switch **Cloud-based Protection** and **Automatic sample submission** to **Off**.
-
-> [!NOTE]
-> These settings will be overridden if the network administrator has configured their associated Group Policies. The settings will appear grayed out and you will not be able to modify them if they are being managed by Group Policy.
 
 ## Related topics
 
 - [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+
+
