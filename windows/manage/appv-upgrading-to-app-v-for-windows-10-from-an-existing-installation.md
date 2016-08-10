@@ -40,9 +40,9 @@ To verify that the user’s App-V settings were migrated correctly, type `Get-Ap
 
 With Windows 10, the App-V client is installed automatically. You need to enable the client to allow user devices to access and run virtual applications. You can enable the client with the Group Policy editor or with Windows PowerShell. 
 
-**To enable the App-V client with Group Policy**:
+**To enable the App-V client with Group Policy**
 
-1. Open the device’s **Local Group Policy Editor**.
+1. Open the device’s **Group Policy Editor**.
 
 2. Navigate to **Computer Configuration > Administrative Templates > System > App-V**. 
 
@@ -50,7 +50,7 @@ With Windows 10, the App-V client is installed automatically. You need to enable
 
 4. Restart the device.
 
-**To enable the App-V client with Windows PowerShell**:
+**To enable the App-V client with Windows PowerShell**
 
 1. Open Windows PowerShell.
 

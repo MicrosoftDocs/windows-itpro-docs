@@ -8,15 +8,15 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-# Enable the App-V desktop client
+# Enable the App-V in-box client
 
 The App-V client is the component that runs virtualized applications on user devices. The client enables users to interact with icons and file names to start virtualized applications. The client can also get virtual application content from the management server.
 
-With Windows 10, the App-V client is installed automatically. You need to enable the client to allow user devices to access and run virtual applications. You can enable the client with the Group Policy editor or with Windows PowerShell.
+With Windows 10, version 1607, the App-V client is installed automatically. You need to enable the client to allow user devices to access and run virtual applications. You can enable the client with the Group Policy editor or with Windows PowerShell.
 
 **To enable the App-V client with Group Policy:**
 
-1.  Open the device’s **Local Group Policy Editor**.
+1.  Open the device’s **Group Policy Editor**.
 
 2.  Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
 
@@ -28,7 +28,7 @@ With Windows 10, the App-V client is installed automatically. You need to enable
 
 1.  Open Windows PowerShell.
 
-2.  Type `Enable-Appv` and press Enter.
+2.  Type `Enable-Appv` and press ENTER.
 
 3.  Restart the device.
 
