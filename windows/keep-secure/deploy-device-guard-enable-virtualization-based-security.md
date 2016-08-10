@@ -125,7 +125,7 @@ It would be time consuming to perform these steps manually on every protected co
 
 > **Note**&nbsp;&nbsp;We recommend that you test-enable this feature on a group of test computers before you deploy it to users' computers. If untested, there is a possibility that this feature can cause system instability and ultimately cause the client operating system to fail.
 
-**To use Group Policy to configure VBS of KMCI:**
+### Use Group Policy to configure VBS of KMCI
 
 1.  Create a new GPO: Right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.
 
