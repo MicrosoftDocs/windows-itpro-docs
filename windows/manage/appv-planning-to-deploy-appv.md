@@ -9,13 +9,15 @@ ms.prod: w10
 ---
 
 
-# Planning to Deploy App-V
+# Planning to Deploy App-V for Windows 0
 
-You should consider a number of different deployment configurations and prerequisites before you create your deployment plan for App-V. This section includes information that can help you gather the information that you must have to formulate a deployment plan that best meets your business requirements.
+Applies to: Windows 10, version 1607
+
+There are a number of different deployment configurations and requirements to consider before you deploy App-V for Windows 10. Review this topic for information about what you'll need to formulate a deployment plan that best meets your business requirements.
 
 ## App-V supported configurations
 
-Describes the minimum hardware and operating system requirements for each App-V components. For information about software prerequisites that you must install before you install App-V, see [App-V Prerequisites](appv-prerequisites.md).
+Describes the minimum hardware and operating system requirements for each App-V components. For information about software that you must install before you install App-V, see [App-V Prerequisites](appv-prerequisites.md).
 
 [App-V Supported Configurations](appv-supported-configurations.md)
 

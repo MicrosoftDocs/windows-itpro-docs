@@ -1,6 +1,6 @@
 ---
 title: Migrating to App-V from a Previous Version (Windows 10)
-description: Migrating to App-V from a Previous Version
+description: Migrating to App-V for Windows 10 from a previous version
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,17 +9,14 @@ ms.prod: w10
 ---
 
 
-# Migrating to App-V from a Previous Version
+# Migrating to App-V from previous versions
 
+Applies to: Windows 10, version 1607
 
-With Microsoft Application Virtualization (App-V), you can migrate your existing App-V 4.6 or App-V 5.0 infrastructure to the more flexible, integrated, and easier to manage App-V infrastructure.
-However, you cannot migrate directly from App-V 4.x to App-V for Windows 10—you must migrate to App-V 5.0 first. For more information on migrating from App-V 4.x to App-V 5.0, see [Migrating to App-V server from a Previous Version](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/migrating-to-app-v-51-from-a-previous-version)  
+When you upgrade your existing App-V environment to App-V for Windows 10, version 1607, you'll experience more flexibility, integratation, and ease of management. You can upgrade from any App-V 5.x release, however, you cannot upgrade directly from App-V 4.x to App-V for Windows 10; you must upgrade to App-V 5.x first. For more information about upgrading to App-V for Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md)  
 
-**Note**  
-Packages for App-V for Windows 10 are exactly the same as packages for App-V 5.0. There has been no change in the package format between the versions and therefore, there is no need to convert App-V 5.0 packages to App-V for Window 10 packages.
-
-For information about the differences between earlier versions of App-V, see the **Differences between App-4.6 and App-V 5.0 section** of [About App-V 5.0](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50).
-
+>**Note**  
+THe package format for App-V packages created with App-V 5.x has not changed in App-V for Windows 10. As a result, you don't need to convert packages.
 
 ## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V Package Converter
 
