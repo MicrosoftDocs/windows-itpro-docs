@@ -179,5 +179,5 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-- [Deploying the App-V Server](appv-deploying-the-appv-server.md)
-- [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
+- [Deploying the App-V 5.1 Server](appv-deploying-the-appv-server.md)
+- [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md)
