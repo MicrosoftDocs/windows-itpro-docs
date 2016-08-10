@@ -20,7 +20,7 @@ Hardware-based security features, also called virtualization-based security or V
 
 2.  **Verify that hardware and firmware requirements are met**. Verify that your client computers possess the necessary hardware and firmware to run these features. A list of requirements for hardware-based security features is available in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard).
 
-3.  **Enable the necessary Windows features**. There are several ways to enable the Windows features required for hardware-based security. You can use the [Device Guard and Credential Guard hardware readiness tool]((https://www.microsoft.com/en-us/download/details.aspx?id=53337)), or see the following section, [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-security).
+3.  **Enable the necessary Windows features**. There are several ways to enable the Windows features required for hardware-based security. You can use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), or see the following section, [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-security).
 
 4.  **Enable additional features as desired**. When the necessary Windows features have been enabled, you can enable additional hardware-based security features as desired. You can use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), or see the following sections in this topic:
 
