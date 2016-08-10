@@ -1,6 +1,6 @@
 ---
-title: Planning for the App-V Server Deployment (Windows 10)
-description: Planning for the App-V Server Deployment
+title: Planning for the App-V 5.1 Server Deployment (Windows 10)
+description: Planning for the App-V 5.1 Server Deployment
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,15 +9,15 @@ ms.prod: w10
 ---
 
 
-# Planning for the App-V Server Deployment
+# Planning for the App-V 5.1 Server Deployment
 
 
 The Microsoft Application Virtualization (App-V) server infrastructure consists of a set of specialized features that can be installed on one or more server computers, based on the requirements of the enterprise.
 
-## Planning for App-V Server Deployment
+## Planning for App-V 5.1 Server Deployment
 
 
-The App-V server consists of the following features:
+The App-V 5.1 server consists of the following features:
 
 -   Management Server – provides overall management functionality for the App-V infrastructure.
 
@@ -29,9 +29,9 @@ The App-V server consists of the following features:
 
 -   Reporting Database – facilitates database predeployments for App-V reporting.
 
-The following list displays the recommended methods for installing the App-V server infrastructure:
+The following list displays the recommended methods for installing the App-V 5.1 server infrastructure:
 
--   Install the App-V server. For more information, see [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md).
+-   Install the App-V 5.1 server. For more information, see [How to Deploy the App-V 5.1 Server](appv-deploy-the-appv-server.md).
 
 -   Install the database, reporting, and management features on separate computers. For more information, see [How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services](appv-install-the-management-and-reporting-databases-on-separate-computers.md).
 
@@ -54,7 +54,7 @@ The Management Server does not perform any load balancing. The associated metada
 ## Server-Related Protocols and External Features
 
 
-The following displays information about server-related protocols used by the App-V servers. The table also includes the reporting mechanism for each server type.
+The following displays information about server-related protocols used by the App-V 5.1 servers. The table also includes the reporting mechanism for each server type.
 
 <table>
 <colgroup>
@@ -96,21 +96,10 @@ The following displays information about server-related protocols used by the Ap
 
 ## Have a suggestion for App-V?
 
-
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
 
 [Deploying the App-V 5.1 Server](appv-deploying-the-appv-server.md)
-
- 
-
- 
-
-
-
-
-
