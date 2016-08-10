@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 # Configure Windows Defender ATP endpoints
@@ -20,7 +21,7 @@ author: mjcaparas
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Endpoints in your organization must be configured so that the Windows Defender ATP service can get telemetry from them. There are various methods and deployment tools that you can use to configure the endpoints in your organization. 
+Endpoints in your organization must be configured so that the Windows Defender ATP service can get telemetry from them. There are various methods and deployment tools that you can use to configure the endpoints in your organization.
 
 Windows Defender ATP supports the following deployment tools and methods:
 

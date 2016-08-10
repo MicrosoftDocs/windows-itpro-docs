@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 # Investigate Windows Defender Advanced Threat Protection alerts
@@ -56,25 +57,25 @@ Some actor profiles include a link to download a more comprehensive threat intel
 ![A detailed view of an alert when clicked](images/alert-details.png)
 
 ## Incident graph
-The incident graph provides a visual representation of where an alert was seen, events that triggered the alert, and which other machines are affected by the event. It provides an illustrated alert footprint on the original machine and expands to show the footprint of each alert event on other machines. 
+The incident graph provides a visual representation of where an alert was seen, events that triggered the alert, and which other machines are affected by the event. It provides an illustrated alert footprint on the original machine and expands to show the footprint of each alert event on other machines.
 
-You can click the circles on the incident graph to expand the nodes and view the associated events or files related to the alert. 
+You can click the circles on the incident graph to expand the nodes and view the associated events or files related to the alert.
 
 ## Alert spotlight
 The alert spotlight feature helps ease investigations by highlighting alerts related to a specific machine and events. You can highlight an alert and its related events in the machine timeline to increase your focus during an investigation.
 
-You can click on the machine link from the alert view to see the alerts related to the machine. 
+You can click on the machine link from the alert view to see the alerts related to the machine.
 
 
   > [!NOTE]
   > This shortcut is not available from the Incident graph machine links.  
 
-Alerts related to the machine are displayed under the **Alerts related to this machine** section. 
-Clicking on an alert row takes you the to the date in which the alert was flagged on **Machine timeline**. This eliminates the need to manually filter and drag the machine timeline marker to when the alert was seen on that machine. 
+Alerts related to the machine are displayed under the **Alerts related to this machine** section.
+Clicking on an alert row takes you the to the date in which the alert was flagged on **Machine timeline**. This eliminates the need to manually filter and drag the machine timeline marker to when the alert was seen on that machine.
 
-You can also choose to highlight an alert from the **Alerts related to this machine** or from the  **Machine timeline** section to see the correlation between the alert and other events that occurred on the machine. Right-click on any alert from either section and select **Mark related events**. This highlights alerts and events that are related and helps differentiate between the other alerts listed in the timeline. Highlighted events are displayed in all filtering modes whether you choose to view the timeline by **Detections**, **Behaviours**, or **Verbose**. 
+You can also choose to highlight an alert from the **Alerts related to this machine** or from the  **Machine timeline** section to see the correlation between the alert and other events that occurred on the machine. Right-click on any alert from either section and select **Mark related events**. This highlights alerts and events that are related and helps differentiate between the other alerts listed in the timeline. Highlighted events are displayed in all filtering modes whether you choose to view the timeline by **Detections**, **Behaviours**, or **Verbose**.
 
-You can also remove the highlight by right-clicking a highlighted alert and selecting **Unmark related events**. 
+You can also remove the highlight by right-clicking a highlighted alert and selecting **Unmark related events**.
 
 
 ### Related topics
