@@ -9,12 +9,13 @@ ms.prod: w10
 ---
 
 
-# App-V Prerequisites
+# App-V for Windows 10 Prerequisites
 
+Applies to: Windows 10, version 1607
 
-Before installing App-V, ensure that you have installed all of the following required prerequisite software.
+Before installing App-V for Windows 10, ensure that you have installed all of the following required prerequisite software.
 
-For a list of supported operating systems and hardware requirements for the App-V Server, Sequencer, and Client, see [App-V Supported Configurations](appv-supported-configurations.md).
+For a list of supported operating systems and hardware requirements for the App-V server, sequencer, and client, see [App-V Supported Configurations](appv-supported-configurations.md).
 
 ## Summary of software preinstalled on each operating system
 

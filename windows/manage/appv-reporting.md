@@ -12,9 +12,9 @@ ms.prod: w10
 # About App-V Reporting
 
 
-Microsoft Application Virtualization (App-V) includes a built-in reporting feature that helps you collect information about computers running the App-V client as well as information about virtual application package usage. You can use this information to generate reports from a centralized database.
+Application Virtualization (App-V) includes a built-in reporting feature that helps you collect information about computers running the App-V client as well as information about virtual application package usage. You can use this information to generate reports from a centralized database.
 
-## <a href="" id="---------app-v-5-1-reporting-overview"></a> App-V Reporting Overview
+## <a href="" id="---------app-v-reporting-overview"></a> App-V Reporting Overview
 
 
 The following list displays the end–to-end high-level workflow for reporting in App-V.
@@ -33,7 +33,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 
 3.  If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at <http://go.microsoft.com/fwlink/?LinkId=397255>.
 
-    **Note**  
+    >**Note**  
     If you are using the Configuration Manager integration with App-V, most reports are generated from Configuration Manager rather than from App-V.
 
      
@@ -52,14 +52,14 @@ The following list displays the end–to-end high-level workflow for reporting i
 
 6.  When the App-V client receives the success notification, it empties the data cache to conserve space.
 
-    **Note**  
-    By default the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
+    >**Note**  
+    By default, the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
 
      
 
     If the App-V client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
 
-### <a href="" id="-------------app-v-5-1-reporting-server-frequently-asked-questions"></a> App-V reporting server frequently asked questions
+### <a href="" id="-------------app-v-reporting-server-frequently-asked-questions"></a> App-V reporting server frequently asked questions
 
 The following table displays answers to common questions about App-V reporting
 
@@ -124,10 +124,10 @@ The following table displays answers to common questions about App-V reporting
 
  
 
-## <a href="" id="---------app-v-5-1-client-reporting"></a> App-V Client Reporting
+## <a href="" id="---------app-v-client-reporting"></a> App-V Client Reporting
 
 
-To use App-V reporting you must install and configure the App-V client. After the client has been installed, use the **Set-AppVClientConfiguration** PowerShell cmdlet or the **ADMX Template** to configure reporting. The reporting feature cmdlets are available by using the following link and are prefaced by **Reporting**. For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of App-V client reporting configuration using PowerShell.
+To use App-V reporting you must enable and configure the App-V client. After the client has been installed, use the **Set-AppVClientConfiguration** PowerShell cmdlet or the **ADMX Template** to configure reporting. The reporting feature cmdlets are available by using the following link and are prefaced by **Reporting**. For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of App-V client reporting configuration using PowerShell.
 
 ### Configuring App-V Client reporting using PowerShell
 
