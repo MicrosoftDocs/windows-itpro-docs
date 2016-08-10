@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
-localizationpriority: mediumh
+localizationpriority: medium
 ---
 
 # Set up Microsoft Surface Hub
