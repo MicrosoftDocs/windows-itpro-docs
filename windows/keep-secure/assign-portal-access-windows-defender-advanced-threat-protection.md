@@ -1,6 +1,6 @@
 ---
 title: Assign user access to the Windows Defender Advanced Threat Protection portal
-description: Assign read and write or read only access to the Windows Defender Advanced Threat Protection portal. 
+description: Assign read and write or read only access to the Windows Defender Advanced Threat Protection portal.
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 # Assign user access to the Windows Defender ATP portal
@@ -30,14 +31,14 @@ Users with full access can log in, view all system information and resolve alert
 Assigning full access rights requires adding the users to the “Security Administrator” or “Global Administrator” AAD built-in roles.
 
 **Read only access** <br>
-Users with read only access can log in, view all alerts, and related information. 
+Users with read only access can log in, view all alerts, and related information.
 They will not be able to change alert states, submit files for deep analysis or perform any state changing operations.
 Assigning read only access rights requires adding the users to the “Security Reader” AAD built-in role.
 
 Use the following steps to assign security roles:
 - Preparations:
-    - Install Azure PowerShell. For more information see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/).<br> 
-    
+    - Install Azure PowerShell. For more information see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/).<br>
+
         > [!NOTE]
         > You need to run the PowerShell cmdlets in an elevated command-line.
 

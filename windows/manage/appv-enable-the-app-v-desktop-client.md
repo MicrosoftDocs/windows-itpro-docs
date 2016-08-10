@@ -32,7 +32,7 @@ With Windows 10, the App-V client is installed automatically. You need to enable
 
 3.  Restart the device.
 
-4.  To verify that the App-V client is enabled on the device, enter **AppvClientEnabled** or **Get-AppvStatus** in Windows PowerShell.
+4.  To verify that the App-V client is enabled on the device, enter **Get-AppvStatus** in Windows PowerShell.
 
 See [Using the client management console](appv-using-the-client-management-console.md) for information about configuring the App-V client.
 

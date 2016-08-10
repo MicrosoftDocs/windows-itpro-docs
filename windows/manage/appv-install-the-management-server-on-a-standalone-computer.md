@@ -16,7 +16,7 @@ Use the following procedure to install the management server on a standalone com
 
 **To install the management server on a standalone computer and connect it to the database**
 
-1.  Copy the App-V server installation files to the computer on which you want to install it on. To start the App-V server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
+1.  Copy the App-V 5.1 server installation files to the computer on which you want to install it on. To start the App-V 5.1 server installation right-click and run **appv\_server\_setup.exe** as an administrator. Click **Install**.
 
 2.  On the **Getting Started** page, review and accept the license terms, and click **Next**.
 

@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
+localizationpriority: high
 ---
 
 # Windows Spotlight on the lock screen

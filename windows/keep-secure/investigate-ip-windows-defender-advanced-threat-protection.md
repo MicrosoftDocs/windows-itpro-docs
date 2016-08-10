@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 # Investigate an IP address associated with a Windows Defender ATP alert
 
