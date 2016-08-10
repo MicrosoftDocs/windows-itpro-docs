@@ -25,7 +25,7 @@ The App-V server connects to the App-V database. Therefore you can install the m
 
 Independent software vendors (ISV) who want to determine if an application is running virtualized with App-V should open a named object called **AppVVirtual-&lt;PID&gt;** in the default namespace. For example, Windows API **GetCurrentProcessId()** can be used to obtain the current process's ID, for example 4052, and then if a named Event object called **AppVVirtual-4052** can be successfully opened using **OpenEvent()** in the default namespace for read access, then the application is virtual. If the **OpenEvent()** call fails, the application is not virtual.
 
-Additionally, ISV’s who want to explicitly virtualize or not virtualize calls on specific API’s with App-V and above, can use the **VirtualizeCurrentThread()** and **CurrentThreadIsVirtualized()** functions implemented in the AppEntSubsystems32.dll module. These provide a way of hinting at a downstream component that the call should or should not be virtualized.
+Additionally, ISV’s who want to explicitly virtualize or not virtualize calls on specific API’s with App-V 5.1 and later, can use the **VirtualizeCurrentThread()** and **CurrentThreadIsVirtualized()** functions implemented in the AppEntSubsystems32.dll module. These provide a way of hinting at a downstream component that the call should or should not be virtualized.
 
 ## Have a suggestion for App-V?
 

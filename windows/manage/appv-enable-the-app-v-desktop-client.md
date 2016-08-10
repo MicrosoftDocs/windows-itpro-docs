@@ -1,6 +1,6 @@
 ---
-title: Enable the App-V desktop client (Windows 10)
-description: Enable the App-V desktop client
+title: Enable the App-V in-box client (Windows 10)
+description: How to enable the App-V in-box client installed with Windows 10.
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -32,7 +32,7 @@ With Windows 10, version 1607, the App-V client is installed automatically. You 
 
 3.  Restart the device.
 
-4.  To verify that the App-V client is enabled on the device, enter **Get-AppvStatus** in Windows PowerShell.
+4.  To verify that the App-V client is enabled on the device, type  `Get-AppvStatus` and press ENTER.
 
 See [Using the client management console](appv-using-the-client-management-console.md) for information about configuring the App-V client.
 
