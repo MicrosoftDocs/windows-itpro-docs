@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: iaanw
+localizationpriority: high
 ---
 
 # Onboard and set up Windows Defender Advanced Threat Protection
