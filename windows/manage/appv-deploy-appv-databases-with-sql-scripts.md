@@ -18,7 +18,7 @@ Use the following instructions to use SQL scripts, rather than the Windows Insta
 -   Upgrade the App-V databases to a later version
 
 >**Note**  
-> If you have already deployed an App-V 5.0 SP3 database or later, the SQL scripts are not required to upgrade to App-V.
+> If you have already deployed an App-V 5.0 SP3 database or later, the SQL scripts are not required to upgrade to App-V for Windows.
 
 ## How to install the App-V databases by using SQL scripts
 

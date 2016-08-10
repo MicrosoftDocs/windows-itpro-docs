@@ -22,7 +22,7 @@ Use the information in this section only as a general guide for planning your Ap
 ## Determine the Project Scope
 
 
-Before you design the App-V infrastructure, you must determine the project’s scope. The scope consists of determining which applications will be available virtually and to also identify the target users, and their locations. This information will help determine what type of App-V infrastructure should be implemented. Decisions about the scope of the project must be based on the specific needs of your organization.
+Before you design the App-V infrastructure, determine the project’s scope. The scope consists of determining which applications will be available virtually and to also identify the target users, and their locations. This information will help determine what type of App-V infrastructure should be implemented. Decisions about the scope of the project must be based on the specific needs of your organization.
 
 <table>
 <colgroup>

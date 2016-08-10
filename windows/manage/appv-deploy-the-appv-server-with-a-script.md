@@ -1,5 +1,5 @@
 ---
-title: How to Deploy the App-V  Server Using a Script
+title: How to Deploy the App-V Server Using a Script (Windows 10)
 description: How to Deploy the App-V  Server Using a Script
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization

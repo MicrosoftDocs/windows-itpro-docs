@@ -1,5 +1,5 @@
 ---
-title: Deploying the App-V Server
+title: Deploying the App-V Server (Windows 10)
 description: Deploying the App-V Server in App-V for Windows 10
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
@@ -8,9 +8,13 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-# Deploying the App-V Server
+# Deploying the App-V server
 
-You can install the Application Virtualization (App-V) server features by using different deployment configurations, which are described in this topic. Before you install the server features, review the server section of [App-V Security Considerations](appv-security-considerations.md). 
+Applies to: Windows 10, version 1607
+
+>**Note** If you plan to use the App-V server components in your deployment, note that they reference App-V 5.x. This is because the App-V server components have not changed in App-V for Windows 10. 
+
+You can install the Application Virtualization (App-V) server components using different deployment configurations, which are described in this topic. Before you install the server features, review the server section of [App-V Security Considerations](appv-security-considerations.md). 
 
 For information about deploying App-V for Windows 10, see [About App-V](appv-about-appv.md).
 
@@ -18,13 +22,14 @@ For information about deploying App-V for Windows 10, see [About App-V](appv-abo
 
 ## Download and install App-V server components
 
->**Important**<br>If you're already using App-V 5.x, you don't need to re-deploy the App-V server components as they haven't changed since App-V 5.0 was released.
+>**Note**<br>
+If you're already using App-V 5.x, you don't need to re-deploy the App-V server components as they haven't changed since App-V 5.0 was released.
 
 App-V offers the following five server components, each of which serves a specific purpose in an App-V environment. 
 
 - **Management server.** Use the App-V management server and console to manage your App-V infrastructure. See [Administering App-V with the management console](appv-administering-virtual-applications-with-the-management-console.md) for more information about the management server.
 
-    >**Note**<br>If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you can still take advantage of the reporting and streaming capabilities in App-V.
+    >**Note**<br>If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you may want to take advantage of the reporting and streaming capabilities in App-V.
     
 - **Management database.** Use the App-V management database to facilitate database pre-deployments for App-V management. See [How to Deploy the App-V Server](appv-deploy-the-appv-server.md) for more information about the management database.
  
@@ -49,7 +54,7 @@ In large organizations, you might want to install more than one instance of the 
 - Scalability to support a high load. For example, you can install additional servers behind a network load balancer.
 
 ## App-V standalone deployment
-The App-V standalone deployment provides a good topology for a small deployment or a test environment. When you use this type of implementation, all server components are deployed to a single computer. The services and associated databases will compete for the resources on the computer that runs the App-V components. Therefore, you should not use this topology for larger deployments.
+The App-V standalone deployment provides a good topology for a small deployment or a test environment. When you use this type of implementation, all server components are installed on a single computer. The services and associated databases will compete for the resources on the computer that runs the App-V components. Therefore, you should not use this strategy for larger deployments.
 
 - [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
 
