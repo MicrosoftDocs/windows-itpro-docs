@@ -308,7 +308,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Related topics
 
 
-[Deploying the App-V Server](appv-deploying-the-appv-server.md)
+[Deploying the App-V server](appv-deploying-the-appv-server.md)
 
 [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](appv-install-the-reporting-server-on-a-standalone-computer.md)
 

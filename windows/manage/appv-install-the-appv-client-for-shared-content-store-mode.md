@@ -12,7 +12,7 @@ ms.prod: w10
 # How to Install the App-V Client for Shared Content Store Mode
 
 
-Use the following procedure to install the Microsoft Application Virtualization (App-V) client so that it uses the App-V Shared Content Store (SCS) mode. You should ensure that all required prerequisites are installed on the computer you plan to install to. Use the following link to see [App-V Prerequisites](appv-prerequisites.md).
+Use the following procedure to install the Microsoft Application Virtualization (App-V) client so that it uses the App-V Shared Content Store (SCS) mode.
 
 **Enable the App-V client for SCS mode**
 

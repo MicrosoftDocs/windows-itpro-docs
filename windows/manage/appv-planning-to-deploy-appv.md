@@ -37,7 +37,7 @@ Describes the options and requirements for deploying App-V with an electronic so
 
 [Planning to Deploy App-V with an Electronic Software Distribution System](appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions.md)
 
-## Planning for the App-V Server deployment
+## Planning for App-V server deployment
 
 Describes the planning considerations for the App-V Server components and their functions.
 

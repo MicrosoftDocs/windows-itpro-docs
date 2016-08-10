@@ -1,6 +1,6 @@
 ---
-title: About App-V (Windows 10)
-description: About App-V
+title: What's new in App-V for Windows 10 (Windows 10)
+description: Information about what's new in App-V for Windows 10. 
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,118 +9,40 @@ ms.prod: w10
 ---
 
 
-# About App-V for Windows
+# What's new in App-V
 
 Applies to: Windows 10, version 1607
 
-Review the following sections for information about significant changes that apply to Application Virtualization (App-V) for Windows:
+Microsoft Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points and interact with them as if they were installed locally. 
 
-[App-V software prerequisites and supported configurations](#bkmk-51-prereq-configs)
-
-[Migrating to App-V](#bkmk-migrate-to-51)
-
-[What’s New in App-V](#bkmk-whatsnew)
-
-[App-V support for Windows 10](#bkmk-win10support)
-
-[App-V Management Console Changes](#bkmk-mgmtconsole)
-
-[Sequencer Improvements](#bkmk-seqimprove)
-
-[Improvements to Package Converter](#bkmk-pkgconvimprove)
-
-[Support for multiple scripts on a single event trigger](#bkmk-supmultscripts)
-
-[Hardcoded path to installation folder is redirected to virtual file system root](#bkmk-hardcodepath)
-
-## <a href="" id="bkmk-51-prereq-configs"></a>App-V for Windows software prerequisites and supported configurations
+Application Virtualization (App-V) for Windows 10, version 1607, includes these new features and capabilities compared to App-V 5.1. See [App-V release notes](appv-release-notes-for-appv-for-windows.md) for more information about the App-V for Windows 10, version 1607 release.
 
 
-Review the following topics for information about App-V for Windows software prerequisites and supported configurations.
+## App-V is now a feature in Windows 10
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Links to prerequisites and supported configurations topics</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[App-V Prerequisites](appv-prerequisites.md)</p></td>
-<td align="left"><p>Prerequisite software that you must install before you can get started with App-V for Windows</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[App-V Supported Configurations](appv-supported-configurations.md)</p></td>
-<td align="left"><p>Supported operating systems and hardware requirements for the App-V server, sequencer, and client components</p></td>
-</tr>
-</tbody>
-</table>
+With Windows 10, version 1607 and later releases, Application Virtualization (App-V) is included with [Windows 10 for Enterprise and Education](https://www.microsoft.com/en-us/WindowsForBusiness/windows-product-home) and is no longer part of the Microsoft Desktop Optimization Pack. 
+
+For information about earlier versions of App-V, see [MDOP Information Experience](https://technet.microsoft.com/itpro/mdop/index).
+
+The changes in App-V for Windows 10, version 1607 impact already existing implementations of App-V in the following ways:
+
+-   The App-V client is installed on user devices automatically with Windows 10, version 1607, and no longer has to be deployed separately. Performing an in-place upgrade to Windows 10, version 1607, on user devices automatically installs the App-V client.
+
+-   The App-V application sequencer is available from the Windows 10 Assessment and Deployment Kit (ADK). In previous releases of App-V, the application sequencer was included in the Microsoft Desktop Optimization Pack. Although you’ll need to use the new application sequencer to create new virtualized applications, existing virtualized applications will continue to work. 
+
+>**Note**<br>If you're already using App-V 5.x, you don't need to re-deploy the App-V server components as they haven't changed since App-V 5.0 was released. 
+
+For more information about how to configure an existing App-V installation after upgrading user devices to Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md) and [Migrating to App-V for Windows 10 from a previous version](appv-migrating-to-appv-from-a-previous-version.md).
+
+>**Important**
+You can upgrade your existing App-V installation to Windows 10, version 1607 from App-V versions 5.0 SP2 and higher only. If you are using a previous version of App-V, you’ll need to upgrade from that version to App-V 5.0 SP2 before you upgrade to Windows 10, version 1607.
 
  
-**Support for using Configuration Manager with App-V:** App-V supports System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) for information about integrating your App-V environment with Configuration Manager.
+## Support for using System Center Configuration Manager 2016 with App-V
 
-## <a href="" id="bkmk-migrate-to-51"></a>Upgrade to App-V for Windows
+App-V supports System Center 2016 and 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) for information about integrating your App-V environment with Configuration Manager.
 
-
-Use the following information to upgrade to App-V for Windows from earlier versions. See [Migrating to App-V for Windows from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md) for more information.
-
-### Before you begin 
-
-Review the following information before you start the upgrade:
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Items to review before upgrading</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Components to upgrade, in any order</p></td>
-<td align="left"><ol>
-<li><p>App-V Server</p></li>
-<li><p>Sequencer</p></li>
-<li><p>App-V Client or App-V Remote Desktop Services (RDS) Client</p></li>
-</ol>
-<div class="alert">
-<strong>Note</strong>  
-<p>Prior to App-V 5.0 SP2, the Client Management User Interface (UI) was provided with the App-V Client installation. For App-V 5.0 SP2 installations (or later), you can use the Client Management UI by downloading from [Application Virtualization 5.0 Client UI Application](http://www.microsoft.com/download/details.aspx?id=41186).</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Upgrading from App-V 4.x</p></td>
-<td align="left"><p>You cannot upgrade directly from App-V 4.x to App-V for Windows. You must first upgrade to App-V 5.0. For more information, see [Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)</p></li>
-</ul>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Upgrading from App-V 5.0 or later</p></td>
-<td align="left"><p>You can upgrade to App-V for Windows directly from any of the following versions:</p>
-<ul>
-<li><p>App-V 5.0</p></li>
-<li><p>App-V 5.0 SP1</p></li>
-<li><p>App-V 5.0 SP2</p></li>
-<li><p>App-V 5.0 SP3</p></li>
-</ul>
-<p>To upgrade to App-V for Windows, follow the steps in the remaining sections of this topic.</p>
-<p>Packages and connection groups will continue to work with App-V for Windows as they currently do.</p></td>
-</tr>
-</tbody>
-</table>
- 
+<!-- Need to verify with Chintan that the rest of the topic can be deleted --> 
 
 ### <a href="" id="bkmk-steps-upgrd-infrastruc"></a>Steps to upgrade the App-V infrastructure
 
@@ -173,7 +95,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tbody>
 </table>
 <li><p>If you are upgrading to App-V for Windows server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 server](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/check-reg-key-svr).</p></li>
-<li><p>Follow the steps in [How to Deploy the App-V server components](appv-deploy-the-appv-server.md)</p></li>
+<li><p>Follow the steps in [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)</p></li>
 <p> </p></li>
 </ol></td>
 </tr>
@@ -450,6 +372,7 @@ App-V supports the use of multiple scripts on a single event trigger for App-V p
 
 For more information, including a list of event triggers and the context under which scripts can be run, see the Scripts section in [About App-V Dynamic Configuration](appv-dynamic-configuration.md).
 
+<!-- ++++++++++++++++++++++++++++++ -->
 
 ## Have a suggestion for App-V?
 

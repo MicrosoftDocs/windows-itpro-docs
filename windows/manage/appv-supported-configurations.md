@@ -18,13 +18,13 @@ This topic specifies the requirements to install and run App-V in your environme
 
 This section lists the operating system and hardware requirements for all of the App-V Server components.
 
-### Unsupported App-V Server scenarios
+### Unsupported App-V server scenarios
 
-The App-V Server does not support the following scenarios:
+The App-V server does not support the following scenarios:
 
 -   Deployment to a computer that runs the Server Core installation option.
 
--   Deployment to a computer that runs a previous version of App-V Server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the App-V 4.5 Application Virtualization Management Service (HWS) server is not supported.
+-   Deployment to a computer that runs a previous version of the App-V 5.1 server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the Application Virtualization Management Service (HWS) 4.x is not supported.
 
 -   Deployment to a computer that runs Microsoft SQL Server Express edition.
 
@@ -271,129 +271,11 @@ The following table lists the SQL Server versions that are supported for the App
 
  
 
-## App-V client system requirements
+## App-V client requirements and Remote Desktop Services client requirements
 
+With Windows 10, version 1607 and later releases, the App-V client is included with Windows 10 Enterprise and Windows 10 Education. The App-V client is no longer part of the Microsoft Desktop Optimization Pack. Before you can use the App-V client, it must be enabled, as described in [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
 
-The following table lists the operating systems that are supported for the App-V client installation.
-
-> [!NOTE]  
-> App-V is included with Windows 10, version 1607 and later.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows 10, version 1511</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 10, version 1507</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8.1</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows /p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The following App-V client installation scenarios are not supported, except as noted:
-
--   Computers that run Windows Server
-
--   Computers that run App-V 4.6 SP1 or earlier versions
-
--   The App-V Remote Desktop services client is supported only for RDS-enabled servers
-
-### App-V client hardware requirements
-
-The following list displays the supported hardware configuration for the App-V client installation.
-
--   Processor— 1.4 GHz or faster 32-bit (x86) or 64-bit (x64) processor
-
--   RAM— 1 GB (32-bit) or 2 GB (64-bit)
-
--   Disk— 100 MB for installation, not including the disk space that is used by virtualized applications.
-
-## Remote Desktop Services client system requirements
-
-
-The following table lists the operating systems that are supported for App-V Remote Desktop Services (RDS) client installation.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service Pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### Remote Desktop Services client hardware requirements
-
-App-V adds no additional requirements beyond those of Windows Server.
-
--   Processor—1.4 GHz or faster, 64-bit (x64) processor
-
--   RAM—2 GB RAM (64-bit)
-
--   Disk space—200 MB available hard disk space
+Similarly, the App-V Remote Desktop Services (RDS) client is included with Windows Server 2016 Standard and Windows Server 2016 Datacenter.
 
 ## Sequencer system requirements
 
@@ -452,7 +334,6 @@ The following table lists the operating systems that are supported for the App-V
 </tbody>
 </table>
 
- 
 
 ### Sequencer hardware requirements
 
@@ -460,191 +341,7 @@ See the Windows or Windows Server documentation for the hardware requirements. A
 
 ## <a href="" id="bkmk-supp-ver-sccm"></a>Supported versions of System Center Configuration Manager
 
-
-The App-V client supports the following versions of System Center Configuration Manager:
-
--   Microsoft System Center 2012 Configuration Manager
-
--   System Center 2012 R2 Configuration Manager
-
--   System Center 2012 R2 Configuration Manager SP1
-
-The following App-V and System Center Configuration Manager version matrix shows all officially supported combinations of App-V and Configuration Manager.
-
-<table>
-<colgroup>
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">App-V Version</th>
-<th align="left">System Center Configuration Manager 2007</th>
-<th align="left">System Center 2012 Configuration Manager</th>
-<th align="left">System Center 2012 Configuration Manager SP1</th>
-<th align="left">System Center 2012 R2 Configuration Manager</th>
-<th align="left">System Center 2012 R2 Configuration Manager SP1</th>
-<th align="left">System Center 2012 Configuration Manager SP2</th>
-<th align="left">System Center Configuration Manager Version 1511</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V 4.5</p></td>
-<td align="left"><p>R2</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V 4.5 CU1</p></td>
-<td align="left"><p>R2</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V 4.5 SP1</p></td>
-<td align="left"><p>R2</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V 4.5 SP2</p></td>
-<td align="left"><p>R2</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V 4.6</p></td>
-<td align="left"><p>R2, SP1</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V 4.6 SP1</p></td>
-<td align="left"><p>R2, R3, SP2</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V 4.6 SP2</p></td>
-<td align="left"><p>R2, R3, SP2</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V 4.6 SP3</p></td>
-<td align="left"><p>R2, R3, SP2</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V 5.0</p></td>
-<td align="left"><p>MSI-Wrapper-Only</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V 5.0 SP1</p></td>
-<td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V 5.0 SP2</p></td>
-<td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>2012 SP1 CU4</p>
-<p>App-V 5.0 HF5 or later</p></td>
-<td align="left"><p>2012 R2 CU1</p>
-<p>App-V 5.0 HF5 or later</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>With App-V 5.0 SP2 HF5 or later</p></td>
-<td align="left"><p>With App-V 5.0 SP2 HF5 or later</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V 5.0 SP2 HF4</p></td>
-<td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>2012 SP1 CU4</p>
-<p>App-V 5.0 HF5 or later</p></td>
-<td align="left"><p>2012 R2 CU1</p>
-<p>App-V 5.0 HF5 or later</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Requires HF5 or later</p></td>
-<td align="left"><p>Requires HF5 or later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App-V 5.0 SP3</p></td>
-<td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>2012 SP1 CU4</p></td>
-<td align="left"><p>2012 R2 CU1</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V</p></td>
-<td align="left"><p>MSI-Wrapper Only</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>2012 SP1 CU4</p></td>
-<td align="left"><p>2012 R2 CU1</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-For more information about how Configuration Manager integrates with App-V, see [Planning for App-V Integration with Configuration Manager](http://technet.microsoft.com/library/jj822982.aspx).
+The App-V client works with System Center Configuration Manager versions starting with Technical Preview for System Center Configuration Manager, version 1606.
 
 ## Have a suggestion for App-V?
 
