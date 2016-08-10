@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 
@@ -79,7 +80,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     ```
     HardDrivePath\WDATPConnectivityAnalyzer.cmd
     ```
-    Replace *HardDrivePath* with the path where the WDATPConnectivityAnalyzer tool was downloaded to, for example 
+    Replace *HardDrivePath* with the path where the WDATPConnectivityAnalyzer tool was downloaded to, for example
     ```text
     C:\Work\tools\WDATPConnectivityAnalyzer\WDATPConnectivityAnalyzer.cmd
     ```
