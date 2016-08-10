@@ -1,6 +1,6 @@
 ---
 title: What's new in App-V for Windows 10 (Windows 10)
-description: Discusses what's new in App-V for Windows 10. 
+description: Information about what's new in App-V for Windows 10. 
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
