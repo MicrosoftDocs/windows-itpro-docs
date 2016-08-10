@@ -34,7 +34,7 @@ Your employees using devices that are owned by the organization can connect to A
 
 You can join a device running Windows 10 to an on-premises Active Directory domain after the first-run experience (sometimes called out-of-box experience or OOBE). You can add devices running Windows 10 to your existing Active Directory infrastructure and manage them just as you've always been used to managing PCs running Windows.
 
-Desktop devices running Windows 10 that are joined to an Active Directory domain can be managed using Group Policy and System Center 2012 R2 Configuration Manager. The following table shows the management support for Windows 10 in Configuration Manager.
+Desktop devices running Windows 10 that are joined to an Active Directory domain can be managed using Group Policy and System Center Configuration Manager (current branch). The following table shows the management support for Windows 10 in Configuration Manager.
 
 <table>
 <colgroup>
@@ -49,7 +49,7 @@ Desktop devices running Windows 10 that are joined to an Active Directory domai
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft System Center Configuration Manager 2016](http://go.microsoft.com/fwlink/p/?LinkId=613622)</p></td>
+<td align="left"><p>[System Center Configuration Manager (current branch) ](https://technet.microsoft.com/en-us/library/mt346023.aspx)</p></td>
 <td align="left"><p>Client deployment, upgrade, and management with new and existing features</p></td>
 </tr>
 <tr class="even">
