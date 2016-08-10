@@ -1,6 +1,6 @@
 ---
 title: How to install the Reporting Server on a Standalone Computer and Connect it to the Database (Windows 10)
-description: How to install the Reporting Server on a Standalone Computer and Connect it to the Database
+description: How to install the App-V Reporting Server on a Standalone Computer and Connect it to the Database
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -50,7 +50,7 @@ Before performing the following procedure you should read and understand [About 
 
 8.  Click **Install**.
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+**Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
