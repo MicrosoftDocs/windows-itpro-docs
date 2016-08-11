@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Enable the Block at First Sight feature in Windows 10
+# Block at First Sight
 
 **Applies to**
 
@@ -40,7 +40,7 @@ The file-based determination typically takes 1 to 4 seconds.
 > Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to be slower download times for some files.
 
 
-## Confirm Block at First Sight is enabled
+## Confirm Block at First Sight is enabled at the Group Policy level
 
 Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work. Usually, these settings are already enabled in most default Windows Defender deployments in enterprise networks.
 
@@ -79,7 +79,7 @@ If you had to change any of the settings, you should re-deploy the Group Policy 
 > There is no specific UI change or individual setting in System Center Configuration Manager to enable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly.
 
 
-## Confirm Block at First Sight is enabled on individual clients
+## Confirm Block at First Sight is enabled at the endpoint level
 
 You can confirm that Block at First Sight is enabled in Windows Settings. The feature is automatically enabled, as long as **Cloud-based protection** and **Automatic sample submission** are both turned on.
 
