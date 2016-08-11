@@ -89,7 +89,7 @@
       "build_output_subfolder": "windows",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
@@ -101,7 +101,7 @@
   "branches_to_filter": [
     ""
   ],
-  "git_repository_url_open_to_public_contributors": "",
+  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-itpro-docs",
   "skip_source_output_uploading": false,
   "dependent_repositories": []
 }
