@@ -102,6 +102,7 @@
     ""
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-itpro-docs",
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "dependent_repositories": []
 }
