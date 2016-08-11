@@ -40,11 +40,14 @@ The file-based determination typically takes 1 to 4 seconds.
 > Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to be slower download times for some files.
 
 
-## Confirm Block at First Sight is enabled at the Group Policy level
+## Confirm Block at First Sight is enabled
 
 Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work. Usually, these settings are already enabled in most default Windows Defender deployments in enterprise networks.
 
-**Confirm pre-requisite cloud protection Group Policy settings:**
+> [!IMPORTANT]
+> There is no specific individual setting in System Center Configuration Manager to enable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly.
+
+### Confirm Block at First Sight is enabled with Group Policy
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -75,21 +78,15 @@ Block at First Sight requires a number of Group Policy settings to be configured
 
 If you had to change any of the settings, you should re-deploy the Group Policy Object across your network to ensure all endpoints are covered.
 
-> [!IMPORTANT]
-> There is no specific UI change or individual setting in System Center Configuration Manager to enable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly.
 
+### Confirm Block at First Sight is enabled with Windows Settings
 
-## Confirm Block at First Sight is enabled at the endpoint level
+> [!NOTE]
+> If the pre-requisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
 You can confirm that Block at First Sight is enabled in Windows Settings. The feature is automatically enabled, as long as **Cloud-based protection** and **Automatic sample submission** are both turned on.
 
 **Confirm Block at First Sight is enabled on individual clients**
-
-> [!IMPORTANT]
-> Changes to the pre-requisite settings will determine whether the feature is enabled or not. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
-
-> [!NOTE]
-> If the pre-requisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints.
 
 1. Open Windows Defender settings:
 
@@ -99,18 +96,15 @@ You can confirm that Block at First Sight is enabled in Windows Settings. The fe
 
 2.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
-> [!IMPORTANT]
-> These settings can be overridden by future deployments of a Group Policy Object.
-
 ## Disable Block at First Sight
 
 > [!WARNING]
 > Disabling the Block at First Sight feature will lower the protection state of the endpoint and your network.
 
-You may choose to disable the Block at First Sight feature if you want to retain the pre-requisite settings without using Block at First Sight protection. You might wish to do this if you are experiencing latency issues or you want to test the feature's impact on your network.
-
 > [!NOTE]
 > You cannot disable Block at First Sight with System Center Configuration Manager
+
+You may choose to disable the Block at First Sight feature if you want to retain the pre-requisite settings without using Block at First Sight protection. You might wish to do this if you are experiencing latency issues or you want to test the feature's impact on your network.
 
 **Disable Block at First Sight with Group Policy**
 
