@@ -20,7 +20,7 @@ localizationpriority: high
 You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
 > **Important:**  The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Windows Hello for Business** policy settings to manage PINs.
  
-## Group Policy settings for Passport
+## Group Policy settings for Windows Hello for Businness
 
 The following table lists the Group Policy settings that you can configure for Hello use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
 
@@ -139,7 +139,7 @@ The following table lists the Group Policy settings that you can configure for H
 </tr>
 </table>
 
-## MDM policy settings for Passport
+## MDM policy settings for Windows Hello for Business
 
 The following table lists the MDM policy settings that you can configure for Windows Hello for Business use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkId=692070).
 <table>
@@ -285,8 +285,8 @@ The following table lists the MDM policy settings that you can configure for Win
 </tr>
 </table>
 
-**Note**  
-If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
+>[!NOTE]  
+> If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
  
 ## Prerequisites
 
