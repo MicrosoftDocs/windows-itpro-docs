@@ -339,7 +339,7 @@ The device orientation sensor determines what the angle of the Surface device is
 This test cycles the screen through brightness levels from 0 percent to 100 percent, and then a message is displayed to confirm if the brightness level changed accordingly. You are then prompted to test for brightness reaction. To test the reaction of brightness when running on battery, disconnect the power adapter. The screen should automatically dim when power is disconnected.
 
 #### Surface Dock test
-The Microsoft Surface Diagnostic Toolkit uses this test only if a Surface Dock is connected to the device. If a Surface Dock is detected, this test verifies that the Surface Dock driver firmware is updated. For more detailed analysis of Surface Dock firmware status and how to manually initiate the firmware update process, see the [Microsoft Surface Dock Updater](https://technet.microsoft.com/en-us/itpro/surface/surface-dock-updater) article.
+The Microsoft Surface Diagnostic Toolkit uses this test only if a Surface Dock is connected to the device. If a Surface Dock is detected, this test verifies that the Surface Dock driver firmware is updated. For more detailed analysis of Surface Dock firmware status and how to manually initiate the firmware update process, see the [Microsoft Surface Dock Updater](https://technet.microsoft.com/itpro/surface/surface-dock-updater) article.
 
 
 #### System assessment
