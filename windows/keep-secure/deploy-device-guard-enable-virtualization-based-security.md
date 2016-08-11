@@ -22,7 +22,7 @@ Hardware-based security features, also called virtualization-based security or V
 
 3.  **Enable the necessary Windows features**. There are several ways to enable the Windows features required for hardware-based security. You can use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), or see the following section, [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-security).
 
-4.  **Enable additional features as desired**. When the necessary Windows features have been enabled, you can enable additional hardware-based security features as desired. You can use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), or see [Enable virtualization-based security for Device Guard](#enable-virtualization-based-security-for-device-guard), later in this topic. 
+4.  **Enable additional features as desired**. When the necessary Windows features have been enabled, you can enable additional hardware-based security features as desired. You can use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), or see [Enable virtualization-based security for Device Guard](#enable-virtualization-based-security-vbs), later in this topic. 
 
 For information about enabling Credential Guard, see [Protect derived domain credentials with Credential Guard](credential-guard.md).
 
