@@ -70,7 +70,7 @@ If you only had a biometric sign-in configured and, for any reason, were unable 
 
 ## Related topics
 
-[Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
+[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
 
 [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
  
