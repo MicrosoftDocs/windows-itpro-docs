@@ -175,7 +175,7 @@ If you only want to remove some of the default pinned apps, you would use this m
 
 ## Configure taskbar by country or region
 
-The following example shows you how to configure taskbars by country or region. When you specify one or more country or region in `<taskbar:TaskbarPinList>`, the pinned apps in that section are only pinned on computers that are configured for that country or region. When specifying taskbar configuration by country or region, the taskbar will concatenate pinlists together so long as the target computer meets the country or region requirements. If no country or region is specified for a `<TaskbarPinList>` node, it will apply to every country and region.
+The following example shows you how to configure taskbars by country or region. When you specify one or more country or region in `<taskbar:TaskbarPinList>`, the pinned apps in that section are only pinned on computers that are configured for that country or region. When specifying taskbar configuration by country or region, the taskbar will concatenate pinlists together so long as the target computer meets the country or region requirements. If no country or region is specified for a `<TaskbarPinList>` node, it will apply to every country and region, only if the country or region has not been defined prior. Unspecified country or region in  `<taskbar:TaskbarPinList>` will not merge with a `<taskbar:TaskbarPinList>` that has country or region specified.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
