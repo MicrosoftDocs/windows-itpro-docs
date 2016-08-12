@@ -31,7 +31,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 
 2.  Install the App-V reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V client should send data to the reporting server.
 
-3.  If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at <http://go.microsoft.com/fwlink/?LinkId=397255>.
+3.  If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at [Application Virtualization SSRS Reports ](https://www.microsoft.com/en-us/download/details.aspx?id=42630).
 
     >**Note**  
     If you are using the Configuration Manager integration with App-V, most reports are generated from Configuration Manager rather than from App-V.
@@ -286,7 +286,7 @@ To retrieve report information and create reports using App-V you must use one o
 
 -   **Microsoft SQL Server Reporting Services (SSRS)** - Microsoft SQL Server Reporting Services is available with Microsoft SQL Server. SSRS is not installed when you install the App-V reporting server. It must be deployed separately to generate the associated reports.
 
-    Use the following link for more information about using [Microsoft SQL Server Reporting Services](http://go.microsoft.com/fwlink/?LinkId=285596).
+    Use the following link for more information about using [Microsoft SQL Server Reporting Services](https://technet.microsoft.com/en-us/library/ms159106(v=sql.130).aspx).
 
 -   **Scripting** – You can generate reports by scripting directly against the App-V reporting database. For example:
 

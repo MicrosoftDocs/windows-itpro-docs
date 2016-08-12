@@ -20,9 +20,9 @@ You should read and understand the following information before reading this doc
 
 -   [Application Virtualization (App-V) overview](appv-for-windows.md)
 
--   [App-V 5 SP2 Application Publishing and Client Interaction](http://go.microsoft.com/fwlink/?LinkId=395206)
+-   [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)
 
--   [Microsoft Application Virtualization Sequencing Guide](http://go.microsoft.com/fwlink/?LinkId=269953)
+-   [Microsoft Application Virtualization Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760)
 
 **Note**  
 Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk **\*** review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.

@@ -46,7 +46,7 @@ Use the following table to get information about supported versions of Office an
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Planning for Using App-V with Office](appv-planning-for-using-appv-with-office.md#bkmk-office-vers-supp-appv)</p></td>
+<td align="left"><p>[Supported versions of Microsoft Office](appv-planning-for-using-appv-with-office.md#bkmk-office-vers-supp-appv)</p></td>
 <td align="left"><ul>
 <li><p>Supported versions of Office</p></li>
 <li><p>Supported deployment types (for example, desktop, personal Virtual Desktop Infrastructure (VDI), pooled VDI)</p></li>
@@ -54,7 +54,7 @@ Use the following table to get information about supported versions of Office an
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Planning for Using App-V with Office](appv-planning-for-using-appv-with-office.md#bkmk-plan-coexisting)</p></td>
+<td align="left"><p>[Planning for using App-V with coexisting versions of Office](appv-planning-for-using-appv-with-office.md#bkmk-plan-coexisting)</p></td>
 <td align="left"><p>Considerations for installing different versions of Office on the same computer</p></td>
 </tr>
 </tbody>
@@ -860,19 +860,19 @@ The following table describes the requirements and options for deploying Visio 2
 
 [Office Deployment Tool for Click-to-Run](http://go.microsoft.com/fwlink/p/?LinkID=330672)
 
-[Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](http://go.microsoft.com/fwlink/p/?LinkId=330680)
+[Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://support.microsoft.com/en-us/kb/2772509)
 
 **Office 2010 App-V Packages**
 
-[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](http://go.microsoft.com/fwlink/p/?LinkId=330681)
+[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=38399)
 
-[Known issues when you create or use an App-V 5.0 Office 2010 package](http://go.microsoft.com/fwlink/p/?LinkId=330682)
+[Known issues when you create or use an App-V 5.0 Office 2010 package](https://support.microsoft.com/en-us/kb/2828619)
 
-[How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://go.microsoft.com/fwlink/p/?LinkId=330676)
+[How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/en-us/kb/2830069)
 
 **Connection Groups**
 
-[Deploying Connection Groups in Microsoft App-V v5](http://go.microsoft.com/fwlink/p/?LinkId=330683)
+[Deploying Connection Groups in Microsoft App-V v5](https://blogs.technet.microsoft.com/appv/2012/11/06/deploying-connection-groups-in-microsoft-app-v-v5/)
 
 [Managing Connection Groups](appv-managing-connection-groups.md)
 

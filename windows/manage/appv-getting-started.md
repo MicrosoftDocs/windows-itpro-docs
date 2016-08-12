@@ -41,7 +41,7 @@ If you are new to this product, we recommend that you read the documentation tho
 ## Getting started with App-V
 
 
--   [About App-V](appv-about-appv.md)
+-   [What's new in App-V](appv-about-appv.md)
 
     Provides a high-level overview of App-V and how it can be used in your organization.
 
