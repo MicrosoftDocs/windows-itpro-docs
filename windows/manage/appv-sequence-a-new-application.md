@@ -148,7 +148,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     Click **Next**.
 
-7.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name will be displayed in the App-V 5.0 Management Console.
+7.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name will be displayed in the App-V Management Console.
 
     Click **Next**.
 
@@ -193,14 +193,14 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 3.  On the **Prepare Computer** page, review the issues that could cause the package creation to fail or could cause the package to contain unnecessary data. You should resolve all potential issues before you continue. After making any corrections, click **Refresh** to display the updated information. After you have resolved all potential issues, click **Next**.
 
     > [!IMPORTANT] 
-    > If you are required to disable virus scanning software, you should first scan the computer that runs the App-V 5.0 Sequencer in order to ensure that no unwanted or malicious files can be added to the package.
+    > If you are required to disable virus scanning software, you should first scan the computer that runs the App-V Sequencer in order to ensure that no unwanted or malicious files can be added to the package.
 
 
 4.  On the **Type of Application** page, select **Middleware**, and then click **Next**.
 
 5.  On the **Select Installer** page, click **Browse** and specify the installation file for the application. If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, and then click **Next**.
 
-6.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name is displayed in the App-V 5.0 Management Console.
+6.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name is displayed in the App-V Management Console.
 
     Click **Next**.
 

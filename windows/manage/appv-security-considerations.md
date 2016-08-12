@@ -29,7 +29,7 @@ Effective as of June, 2014, the PackageStoreAccessControl (PSAC) feature that wa
 
 **Understand the security risks.** The most serious risk to App-V is that its functionality could be hijacked by an unauthorized user who could then reconfigure key data on App-V clients. The loss of App-V functionality for a short period of time due to a denial-of-service attack would not generally have a catastrophic impact.
 
-**Physically secure your computers**. Security is incomplete without physical security. Anyone with physical access to an App-V 5.1 server could potentially attack the entire client base. Any potential physical attacks must be considered high risk and mitigated appropriately. App-V 5.1 servers should be stored in a physically secure server room with controlled access. Secure these computers when administrators are not physically present by having the operating system lock the computer, or by using a secured screen saver.
+**Physically secure your computers**. Security is incomplete without physical security. Anyone with physical access to an App-V server could potentially attack the entire client base. Any potential physical attacks must be considered high risk and mitigated appropriately. App-V servers should be stored in a physically secure server room with controlled access. Secure these computers when administrators are not physically present by having the operating system lock the computer, or by using a secured screen saver.
 
 **Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V, subscribe to the Security Notification service (<http://go.microsoft.com/fwlink/p/?LinkId=28819>).
 
@@ -38,7 +38,7 @@ Effective as of June, 2014, the PackageStoreAccessControl (PSAC) feature that wa
 ## Accounts and groups in App-V
 
 
-A best practice for user account management is to create domain global groups and add user accounts to them. Then, add the domain global accounts to the necessary App-V local groups on the App-V 5.1 servers.
+A best practice for user account management is to create domain global groups and add user accounts to them. Then, add the domain global accounts to the necessary App-V local groups on the App-V servers.
 
 **Note**  
 App-V client computer accounts that need to connect to the publishing server must be part of the publishing server’s **Users** local group. By default, all computers in the domain are part of the **Authorized Users** group, which is part of the **Users** local group.
@@ -47,7 +47,7 @@ App-V client computer accounts that need to connect to the publishing server mus
 
 ### <a href="" id="-------------app-v-5-1-server-security"></a> App-V server security
 
-No groups are created automatically during App-V Setup. You should create the following Active Directory Domain Services global groups to manage App-V 5.1 server operations.
+No groups are created automatically during App-V Setup. You should create the following Active Directory Domain Services global groups to manage App-V server operations.
 
 <table>
 <colgroup>
