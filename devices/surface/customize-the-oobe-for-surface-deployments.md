@@ -25,9 +25,9 @@ In some scenarios, you may want to provide complete automation to ensure that at
 This article provides a summary of the scenarios where a deployment might require additional steps. It also provides the required information to ensure that the desired experience is achieved on any newly deployed Surface device. This article is intended for administrators who are familiar with the deployment process, as well as concepts such as answer files and [reference images](http://go.microsoft.com/fwlink/p/?LinkID=618042).
 
 >**Note:**&nbsp;&nbsp;Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](http://go.microsoft.com/fwlink/p/?LinkId=618117) or System Center Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:<br/>
-- [Deploy Windows 10 with the Microsoft Deployment Toolkit](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)
+- [Deploy Windows 10 with the Microsoft Deployment Toolkit](http://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)
 <br/>
-- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager)
+- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](http://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager)
 
  
 

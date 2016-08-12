@@ -57,6 +57,7 @@ Windows 10, version 1607, provides administrators with increased control over up
 - Quality Updates can be deferred up to 30 days and paused for 35 days
 - Feature Updates can be deferred up to 180 days and paused for 60 days
 - Update deferrals can be applied to both Current Branch (CB) and Current Branch for Business (CBB)
+- Drivers can be excluded from udpates
 
 ## Security
 
