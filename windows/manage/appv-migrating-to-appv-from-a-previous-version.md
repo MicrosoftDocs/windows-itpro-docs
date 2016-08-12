@@ -200,10 +200,10 @@ After you convert an existing package you should test the package prior to deplo
 
  
 
-When converting a package check for failing files or shortcuts. Locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
+When converting a package check for failing files or shortcuts, locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
 
 **Note**  
-It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See, [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
+It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
 If a converted package does not open after you convert it, it is also recommended that you re-sequence the application using the App-V sequencer.
 

@@ -63,7 +63,7 @@ You can also manage your App-V environment using an Electronic Software Distribu
 
     -   With disconnected remote users who cannot connect to the App-V infrastructure.
 
-    -   When you are running a software management system, such as Configuration Manager 2012.
+    -   When you are running a software management system, such as System Center 2012 Configuration Manager.
 
     -   When network bandwidth limitations inhibit electronic software distribution.
 
