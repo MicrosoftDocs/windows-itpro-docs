@@ -13,10 +13,7 @@ ms.prod: w10
 
 Applies to: Windows 10, version 1607
 
-When you upgrade your existing App-V environment to App-V for Windows 10, version 1607, you'll experience more flexibility, integratation, and ease of management. You can upgrade from any App-V 5.x release, however, you cannot upgrade directly from App-V 4.x to App-V for Windows 10; you must upgrade to App-V 5.x first. For more information about upgrading to App-V for Windows 10, see [Upgrading to App-V for Windows 10 from an existing installation](appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md)  
-
->**Note**  
-THe package format for App-V packages created with App-V 5.x has not changed in App-V for Windows 10. As a result, you don't need to convert packages.
+To migrate from App-V 4.x to App-V for Windows 10, you must upgrade to App-V 5.x first. 
 
 ## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V Package Converter
 
@@ -164,7 +161,8 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 ## Converting packages created using a prior version of App-V
 
 
-Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion.
+Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion. App-V packages created with App-V 5.x don't need to be converted.
+
 
 **Important**  
 After you convert an existing package you should test the package prior to deploying the package to ensure the conversion process was successful.
@@ -279,7 +277,7 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 </tr>
 <tr class="even">
 <td align="left"><p>Migrate existing packages.</p></td>
-<td align="left"><p>See the <strong>Converting packages created using a prior version of App-V</strong> section of this article.</p></td>
+<td align="left"><p>See Converting packages created using a prior version of App-V earlier in this topic.</p></td>
 </tr>
 </tbody>
 </table>
