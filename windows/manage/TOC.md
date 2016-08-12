@@ -54,7 +54,6 @@
 ##### [Planning to Deploy App-V with an Electronic Software Distribution System](appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions.md)
 ##### [Planning for the App-V Server Deployment](appv-planning-for-appv-server-deployment.md)
 ##### [Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md)
-##### [Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)
 ##### [Planning for Using App-V with Office](appv-planning-for-using-appv-with-office.md)
 ##### [Planning to Use Folder Redirection with App-V](appv-planning-folder-redirection-with-appv.md)
 #### [App-V Planning Checklist](appv-planning-checklist.md)
