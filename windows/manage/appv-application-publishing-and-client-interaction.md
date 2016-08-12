@@ -123,7 +123,7 @@ To change the default location of the package store during setup, see [Enable th
 
 ### Shared Content Store
 
-If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high performance network location (such as a SAN) is preferable. For more information, see [Shared Content Store in Microsoft App-V 5.0 ? Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
+If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high performance network location (such as a SAN) is preferable. For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
 
 > [!NOTE]  
 > The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
