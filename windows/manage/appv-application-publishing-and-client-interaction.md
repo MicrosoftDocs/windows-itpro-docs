@@ -67,7 +67,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 
  
 
-For information about sequencing, see [Application Virtualization Sequencing Guide](http://go.microsoft.com/fwlink/?LinkID=269810).
+For information about sequencing, see [How to Sequence a New Application with App-V](https://technet.microsoft.com/itpro/windows/manage/appv-sequence-a-new-application).
 
 ## What’s in the appv file?
 
@@ -123,7 +123,7 @@ To change the default location of the package store during setup, see [Enable th
 
 ### Shared Content Store
 
-If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high performance network location (such as a SAN) is preferable. For more information on shared content store mode, see <http://go.microsoft.com/fwlink/p/?LinkId=392750>.
+If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high performance network location (such as a SAN) is preferable. For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
 
 > [!NOTE]  
 > The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
@@ -600,7 +600,7 @@ This process will re-create both the local and network locations for AppData and
 
 In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers via the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are performed as a series of PowerShell commands initiated on the computer running the App-V Client.
 
-This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012 visit: <http://go.microsoft.com/fwlink/?LinkId=392773>.
+This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012, see [Integrating Virtual Application Management with App-V 5 and Configuration Manager 2012 SP1](https://www.microsoft.com/en-us/download/details.aspx?id=38177).
 
 The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with PowerShell commands. See [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md) or use Windows PowerShell:
 
@@ -990,7 +990,7 @@ The App-V Client supports publishing applications with support for COM integrati
 
 App-V supports registering COM objects from the package to the local operating system with two process types: Out-of-process and in-process. Registering COM objects is accomplished with one or a combination of multiple modes of operation for a specific App-V package that includes off, Isolated, and Integrated. The integrated mode is configured for either the out-of-process or in-process type. Configuration of COM modes and types is accomplished with dynamic configuration files (deploymentconfig.xml or userconfig.xml).
 
-Details on App-V integration are available at: <http://go.microsoft.com/fwlink/?LinkId=392834>.
+For details on App-V integration, see [Microsoft Application Virtualization 5.0 Integration](https://blogs.technet.microsoft.com/appv/2013/01/03/microsoft-application-virtualization-5-0-integration).
 
 ### Software clients and application capabilities
 
@@ -1059,7 +1059,7 @@ For situations where there is more than one application that could register the 
 
 The AppPath extension point supports calling App-V applications directly from the operating system. This is typically accomplished from the Run or Start Screen, depending on the operating system, which enables administrators to provide access to App-V applications from operating system commands or scripts without calling the specific path to the executable. It therefore avoids modifying the system path environment variable on all systems, as it is accomplished during publishing.
 
-The AppPath extension point is configured either in the manifest or in the dynamic configuration files and is stored in the registry on the local machine during publishing for the user. For additional information on AppPath review: <http://go.microsoft.com/fwlink/?LinkId=392835>.
+The AppPath extension point is configured either in the manifest or in the dynamic configuration files and is stored in the registry on the local machine during publishing for the user. For additional information on AppPath review: [App Paths ? A Virtual Application Extension in App-V 5.0](https://blogs.technet.microsoft.com/virtualworld/2012/12/12/app-paths-a-virtual-application-extension-in-app-v-5-0/).
 
 ### Virtual application
 
