@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Planning to Deploy App-V for Windows 0
+# Planning to Deploy App-V for Windows 10
 
 Applies to: Windows 10, version 1607
 
@@ -55,7 +55,7 @@ Describes the planning considerations for the App-V Client and for the Sequencer
 
 Describes the recommended path for migrating from previous versions of App-V, while ensuring that existing server configurations, packages and clients continue to work in your new App-V environment.
 
-[Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)
+[Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
 
 ## Planning for using App-V with Office
 

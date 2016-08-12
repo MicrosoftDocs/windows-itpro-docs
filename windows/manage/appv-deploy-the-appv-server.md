@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-# How to Deploy the App-V Server (new installataion)
+# How to Deploy the App-V Server (new installation)
 
 >**Important**<br>If you're already using App-V 5.x, you don't need to re-deploy the App-V server components as they haven't changed since App-V 5.0 was released.
 

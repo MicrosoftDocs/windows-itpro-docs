@@ -60,7 +60,7 @@ This checklist can be used to help you plan for preparing your organization for 
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>If applicable, review the options and steps for migrating from a previous version of App-V.</p></td>
-<td align="left"><p>[Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)</p></td>
+<td align="left"><p>[Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">

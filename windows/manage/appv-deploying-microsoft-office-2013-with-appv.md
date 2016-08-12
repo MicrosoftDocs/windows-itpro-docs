@@ -133,7 +133,7 @@ The following table describes the recommended methods for excluding specific Off
 <td align="left"><p>Use the <strong>ExcludeApp</strong> setting when you create the package by using the Office Deployment Tool.</p></td>
 <td align="left"><ul>
 <li><p>Enables you to exclude specific Office applications from the package when the Office Deployment Tool creates the package. For example, you can use this setting to create a package that contains only Microsoft Word.</p></li>
-<li><p>For more information, see [ExcludeApp element](http://technet.microsoft.com/library/jj219426.aspx#bkmk-excludeappelement).</p></li>
+<li><p>For more information, see [ExcludeApp element](https://technet.microsoft.com/library/jj219426.aspx#BKMK_ExcludeAppElement).</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -205,7 +205,7 @@ Create Office 2013 App-V packages on 64-bit Windows computers. Once created, the
 
 Office 2013 App-V Packages are created using the Office Deployment Tool, which generates an Office 2013 App-V Package. The package cannot be created or modified through the App-V sequencer. To begin package creation:
 
-1.  Download the [Office Deployment Tool for Click-to-Run](http://www.microsoft.com/download/details.aspx?id=36778).
+1.  Download the [Office 2013 Deployment Tool for Click-to-Run](http://www.microsoft.com/download/details.aspx?id=36778).
 
 2.  Run the .exe file and extract its features into the desired location. To make this process easier, you can create a shared network folder where the features will be saved.
 
@@ -810,7 +810,7 @@ The following table describes the requirements and options for deploying Visio 2
 <tr class="odd">
 <td align="left"><p>How do I package and publish Visio 2013 and Project 2013 with Office?</p></td>
 <td align="left"><p>You must include Visio 2013 and Project 2013 in the same package with Office.</p>
-<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project, as long as you follow the [Virtualizing Microsoft Office 2013 for Application Virtualization (App-V) 5.0](https://technet.microsoft.com/en-us/itpro/mdop/solutions/virtualizing-microsoft-office-2013-for-application-virtualization--app-v--50-solutions#bkmk-pkg-pub-reqs).</p></td>
+<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>How can I deploy Visio 2013 and Project 2013 to specific users?</p></td>
@@ -841,7 +841,7 @@ The following table describes the requirements and options for deploying Visio 2
 <ol>
 <li><p>Create a package that contains Office, Visio, and Project.</p></li>
 <li><p>Deploy the package to all users.</p></li>
-<li><p>Use [Microsoft AppLocker](http://technet.microsoft.com/library/dd723678.aspx) to prevent specific users from using Visio and Project.</p></li>
+<li><p>Use [AppLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/applocker-overview) to prevent specific users from using Visio and Project.</p></li>
 </ol></td>
 </tr>
 </tbody>
@@ -858,13 +858,13 @@ The following table describes the requirements and options for deploying Visio 2
 
 **Office 2013 App-V Packages Additional Resources**
 
-[Office Deployment Tool for Click-to-Run](http://go.microsoft.com/fwlink/p/?LinkID=330672)
+[Office 2013 Deployment Tool for Click-to-Run](http://www.microsoft.com/download/details.aspx?id=36778)
 
 [Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://support.microsoft.com/en-us/kb/2772509)
 
 **Office 2010 App-V Packages**
 
-[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=38399)
+[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/download/details.aspx?id=38399)
 
 [Known issues when you create or use an App-V 5.0 Office 2010 package](https://support.microsoft.com/en-us/kb/2828619)
 
@@ -882,14 +882,4 @@ The following table describes the requirements and options for deploying Visio 2
 
 ## Have a suggestion for App-V?
 
-
 Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
- 
-
- 
-
-
-
-
-

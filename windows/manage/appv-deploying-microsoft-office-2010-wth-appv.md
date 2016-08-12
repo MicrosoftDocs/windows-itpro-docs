@@ -72,9 +72,9 @@ Sequencing Office 2010 is one of the main methods for creating an Office 2010 pa
 
 Office 2010 App-V packages can be created through package accelerators. Microsoft has provided package accelerators for creating Office 2010 on Windows 10, Windows 8 and Windows 7. To create Office 2010 packages on App-V using Package accelerators, refer to the following pages to access the appropriate package accelerator:
 
--   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=330677)
+-   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 8](https://gallery.technet.microsoft.com/App-V-50-Package-a29410db)
 
--   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 7](http://go.microsoft.com/fwlink/p/?LinkId=330678)
+-   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 7](https://gallery.technet.microsoft.com/App-V-50-Package-e7ef536b)
 
 For detailed instructions on how to create virtual application packages using App-V package accelerators, see [How to Create a Virtual Application Package Using an App-V Package Accelerator](appv-create-a-virtual-application-package-package-accelerator.md).
 
