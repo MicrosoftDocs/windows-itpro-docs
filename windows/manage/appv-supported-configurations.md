@@ -25,7 +25,7 @@ The App-V server does not support the following scenarios:
 
 -   Deployment to a computer that runs the Server Core installation option.
 
--   Deployment to a computer that runs a previous version of the App-V 5.1 server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the Application Virtualization Management Service (HWS) 4.x is not supported.
+-   Deployment to a computer that runs a previous version of the App-V server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the Application Virtualization Management Service (HWS) 4.x is not supported.
 
 -   Deployment to a computer that runs Microsoft SQL Server Express edition.
 
