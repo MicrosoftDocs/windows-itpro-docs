@@ -90,7 +90,7 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tr>
 <tr class="even">
 <td align="left"><p>SQL scripts</p></td>
-<td align="left"><p>Follow the steps in [How to Deploy the App-V Databases by Using SQL Scripts](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/how-to-deploy-the-app-v-databases-by-using-sql-scripts).</p></td>
+<td align="left"><p>Follow the steps in [How to Deploy the App-V Databases by Using SQL Scripts](appv-deploy-appv-databases-with-sql-scripts.md).</p></td>
 </tr>
 </tbody>
 </table>

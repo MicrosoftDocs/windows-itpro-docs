@@ -38,7 +38,7 @@
 ## [Application development for Windows as a service](application-development-for-windows-as-a-service.md)
 ## [Application Virtualization (App-V) for Windows](appv-for-windows.md)
 ### [Getting Started with App-V](appv-getting-started.md)
-#### [About App-V](appv-about-appv.md)
+#### [What's new in App-V](appv-about-appv.md)
 ##### [Release Notes for App-V](appv-release-notes-for-appv-for-windows.md)
 #### [Evaluating App-V](appv-evaluating-appv.md)
 #### [High Level Architecture for App-V](appv-high-level-architecture.md)

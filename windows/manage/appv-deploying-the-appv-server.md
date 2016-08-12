@@ -16,7 +16,7 @@ Applies to: Windows 10, version 1607
 
 You can install the Application Virtualization (App-V) server components using different deployment configurations, which are described in this topic. Before you install the server features, review the server section of [App-V Security Considerations](appv-security-considerations.md). 
 
-For information about deploying App-V for Windows 10, see [About App-V](appv-about-appv.md).
+For information about deploying App-V for Windows 10, see [What's new in App-V](appv-about-appv.md).
 
 >**Important**<br>Before you install and configure the App-V servers, you must specify a port where each component will be hosted. You must also add the associated firewall rules to allow incoming requests to access the specified ports. The installer does not modify firewall settings.
 
