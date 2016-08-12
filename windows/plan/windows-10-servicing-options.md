@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: servicing
 ms.sitesec: library
-author: greg-lindsay
+author: jdeckerMS
 ---
 
 # Windows 10 servicing overview
