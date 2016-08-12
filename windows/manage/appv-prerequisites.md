@@ -50,7 +50,7 @@ The following table indicates the software that is already installed for differe
 </div></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server 2012</p></td>
+<td align="left"><p>Windows Server 2016</p></td>
 <td align="left"><p>The following prerequisite software is already installed:</p>
 <ul>
 <li><p>Microsoft .NET Framework 4.5</p></li>

@@ -34,13 +34,7 @@ Before performing the following procedure you should read and understand [About 
 6.  On the **Configure Existing Reporting Database** page, select **Use a remote SQL Server**, and type the machine name of the computer running Microsoft SQL Server, for example **SqlServerMachine**.
 
     **Note**  
-    If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**.
-
-     
-
-    For the SQL Server Instance, select **Use the default instance**. If you are using a custom Microsoft SQL Server instance, you must select **Use a custom instance** and then type the name of the instance.
-
-    Specify the **SQL Server Database name** that this reporting server will use, for example **AppvReporting**.
+    If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**. For the SQL Server Instance, select **Use the default instance**. If you are using a custom Microsoft SQL Server instance, you must select **Use a custom instance** and then type the name of the instance. Specify the **SQL Server Database name** that this reporting server will use, for example **AppvReporting**.
 
 7.  On the **Configure Reporting Server Configuration** page.
 
@@ -50,7 +44,9 @@ Before performing the following procedure you should read and understand [About 
 
 8.  Click **Install**.
 
-**Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V? 
+
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

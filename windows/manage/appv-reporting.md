@@ -38,7 +38,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 
      
 
-4.  After importing the App-V PowerShell module using `Import-Module AppvClient` as administrator, enable the App-V client. This sample PowerShell cmdlet enables App-V reporting:
+4.  After importing the App-V Windows PowerShell module using `Import-Module AppvClient` as administrator, enable the App-V client. This sample Windows PowerShell cmdlet enables App-V reporting:
 
     ``` syntax
     Set-AppvClientConfiguration –reportingserverurl <url>:<port> -reportingenabled 1 – ReportingStartTime <0-23> - ReportingRandomDelay <#min>
@@ -53,11 +53,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 6.  When the App-V client receives the success notification, it empties the data cache to conserve space.
 
     >**Note**  
-    By default, the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
-
-     
-
-    If the App-V client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
+    By default, the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache. If the App-V client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
 
 ### <a href="" id="-------------app-v-reporting-server-frequently-asked-questions"></a> App-V reporting server frequently asked questions
 
@@ -95,7 +91,7 @@ The following table displays answers to common questions about App-V reporting
 <ol>
 <li><p>Operating system, and App-V client information. ~150 Bytes, every time this data is sent.</p></li>
 <li><p>Published package list. ~7 KB for 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there is no change, this information is not sent.</p></li>
-<li><p>Virtual application usage information – about 0.25KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the PowerShell cmdlet, there is an optional argument that controls if the data needs to be re-sent next time around – that argument is <strong>DeleteOnSuccess</strong>.</p>
+<li><p>Virtual application usage information – about 0.25KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the Windows PowerShell cmdlet, there is an optional argument that controls if the data needs to be re-sent next time around – that argument is <strong>DeleteOnSuccess</strong>.</p>
 <p></p>
 <p>So for example, if twenty applications are opened and closed and reporting information is scheduled to be sent daily, the typical daily traffic should be about 0.15KB + 20 x 0.25KB, or about 5KB/user</p></li>
 </ol></td>
@@ -104,7 +100,7 @@ The following table displays answers to common questions about App-V reporting
 <td align="left"><p>Can reporting be scheduled?</p></td>
 <td align="left"><p>Yes. Besides manually sending reporting using PowerShell Cmdlets (<strong>Send-AppvClientReport</strong>), the task can be scheduled so it will happen automatically. There are two ways to schedule the reporting:</p>
 <ol>
-<li><p>Using PowerShell cmdlets - <strong>Set-AppvClientConfiguration</strong>. For example:</p>
+<li><p>Using Windows PowerShell cmdlets - <strong>Set-AppvClientConfiguration</strong>. For example:</p>
 <p>Set-AppvClientConfiguration -ReportingEnabled 1 - ReportingServerURL http://any.com/appv-reporting</p>
 <p></p>
 <p>For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md) and look for the following entries: <strong>ReportingEnabled</strong>, <strong>ReportingServerURL</strong>, <strong>ReportingDataCacheLimit</strong>, <strong>ReportingDataBlockSize</strong>, <strong>ReportingStartTime</strong>, <strong>ReportingRandomDelay</strong>, <strong>ReportingInterval</strong>.</p>
@@ -112,7 +108,7 @@ The following table displays answers to common questions about App-V reporting
 <li><p>By using Group Policy. If distributed using the domain controller, the settings are the same as previously listed.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>Group Policy settings override local settings configured using PowerShell.</p>
+<p>Group Policy settings override local settings configured using Windows PowerShell.</p>
 </div>
 <div>
  
@@ -127,11 +123,11 @@ The following table displays answers to common questions about App-V reporting
 ## <a href="" id="---------app-v-client-reporting"></a> App-V Client Reporting
 
 
-To use App-V reporting you must enable and configure the App-V client. After the client has been installed, use the **Set-AppVClientConfiguration** PowerShell cmdlet or the **ADMX Template** to configure reporting. The reporting feature cmdlets are available by using the following link and are prefaced by **Reporting**. For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of App-V client reporting configuration using PowerShell.
+To use App-V reporting you must enable and configure the App-V client. After the client has been installed, use the **Set-AppVClientConfiguration** Windows PowerShell cmdlet or the **ADMX Template** to configure reporting. The reporting feature cmdlets are available by using the following link and are prefaced by **Reporting**. For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of App-V client reporting configuration using Windows PowerShell.
 
-### Configuring App-V Client reporting using PowerShell
+### Configuring App-V Client reporting using Windows PowerShell
 
-The following examples show how PowerShell parameters can configure the reporting features of the App-V client.
+The following examples show how Windows PowerShell parameters can configure the reporting features of the App-V client.
 
 **Note**  
 The following configuration task can also be configured using Group Policy settings in the App-V ADMX template. For more information about using the ADMX template, see [How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md).
@@ -140,27 +136,31 @@ The following configuration task can also be configured using Group Policy setti
 
 **To enable reporting and to initiate data collection on the computer running the App-V client**:
 
-`Set-AppVClientConfiguration –ReportingEnabled 1`
+```syntax
+Set-AppVClientConfiguration –ReportingEnabled 1
+```
 
 **To configure the client to automatically send data to a specific reporting server**:
 
 ``` syntax
-Set-AppVClientConfiguration –ReportingServerURL http://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30
+Set-AppVClientConfiguration –ReportingServerURL http://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30 -ReportingInterval 1 -ReportingRandomDelay 30
 ```
-
-`-ReportingInterval 1 -ReportingRandomDelay 30`
 
 This example configures the client to automatically send the reporting data to the reporting server URL **http://MyReportingServer:MyPort/**. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
 
 **To limit the size of the data cache on the client**:
 
-`Set-AppvClientConfiguration –ReportingDataCacheLimit 100`
+```syntax
+Set-AppvClientConfiguration –ReportingDataCacheLimit 100
+```
 
 Configures the maximum size of the reporting cache on the computer running the App-V client to 100 MB. If the cache limit is reached before the data is sent to the server, then the log rolls over and data will be overwritten as necessary.
 
 **To configure the data block size transmitted across the network between the client and the server**:
 
-`Set-AppvClientConfiguration –ReportingDataBlockSize 10240`
+```syntax
+Set-AppvClientConfiguration –ReportingDataBlockSize 10240
+```
 
 Specifies the maximum data block that the client sends to 10240 MB.
 
@@ -238,9 +238,11 @@ You can configure the computer that is running the App-V client to automatically
 
 -   ReportingRandomDelay
 
-After you configure the previous settings, you must create a scheduled task. The scheduled task will contact the server specified by the **ReportingServerURL** setting and will initiate the transfer. If you want to manually send data outside of the scheduled times, use the following PowerShell cmdlet:
+After you configure the previous settings, you must create a scheduled task. The scheduled task will contact the server specified by the **ReportingServerURL** setting and will initiate the transfer. If you want to manually send data outside of the scheduled times, use the following Windows PowerShell cmdlet:
 
-`Send-AppVClientReport –URL http://MyReportingServer:MyPort/ -DeleteOnSuccess`
+```syntax
+Send-AppVClientReport –URL http://MyReportingServer:MyPort/ -DeleteOnSuccess
+```
 
 If the reporting server has been previously configured, then the **–URL** parameter can be omitted. Alternatively, if the data should be sent to an alternate location, specify a different URL to override the configured **ReportingServerURL** for this data collection.
 
