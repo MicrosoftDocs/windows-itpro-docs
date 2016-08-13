@@ -38,15 +38,15 @@ The following list displays the end–to-end high-level workflow for reporting i
 
      
 
-4.  After importing the App-V PowerShell module using `Import-Module AppvClient` as administrator, enable the App-V client. This sample PowerShell cmdlet enables App-V reporting:
+4.  After importing the App-V Windows PowerShell module using `Import-Module AppvClient` as administrator, enable App-V client reporting. This sample Windows PowerShell command enables App-V reporting:
 
     ``` syntax
-    Set-AppvClientConfiguration –reportingserverurl <url>:<port> -reportingenabled 1 – ReportingStartTime <0-23> - ReportingRandomDelay <#min>
+    Set-AppvClientConfiguration -ReportingServerURL <url>:<port> -ReportingEnabled 1 -ReportingStartTime <0-23> -ReportingRandomDelay <#min>
     ```
 
     To immediately send App-V report data, run `Send-AppvClientReport` on the App-V client.
 
-    For more information about installing the App-V client with reporting enabled see [About Client Configuration Settings](appv-client-configuration-settings.md). To administer App-V Reporting with Windows PowerShell, see [How to Enable Reporting on the App-V Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md).
+    For more information about configuring reporting on the App-V client, see [About Client Configuration Settings](appv-client-configuration-settings.md). To administer App-V Reporting with Windows PowerShell, see [How to Enable Reporting on the App-V Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md).
 
 5.  After the reporting server receives the data from the App-V client it sends the data to the reporting database. When the database receives and processes the client data, a successful reply is sent to the reporting server and then a notification is sent to the App-V client.
 
@@ -102,9 +102,9 @@ The following table displays answers to common questions about App-V reporting
 </tr>
 <tr class="even">
 <td align="left"><p>Can reporting be scheduled?</p></td>
-<td align="left"><p>Yes. Besides manually sending reporting using PowerShell Cmdlets (<strong>Send-AppvClientReport</strong>), the task can be scheduled so it will happen automatically. There are two ways to schedule the reporting:</p>
+<td align="left"><p>Yes. Besides manually sending reporting using Windows PowerShell cmdlets (<strong>Send-AppvClientReport</strong>), the task can be scheduled so it will happen automatically. There are two ways to schedule the reporting:</p>
 <ol>
-<li><p>Using PowerShell cmdlets - <strong>Set-AppvClientConfiguration</strong>. For example:</p>
+<li><p>Using Windows PowerShell cmdlets - <strong>Set-AppvClientConfiguration</strong>. For example:</p>
 <p>Set-AppvClientConfiguration -ReportingEnabled 1 - ReportingServerURL http://any.com/appv-reporting</p>
 <p></p>
 <p>For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md) and look for the following entries: <strong>ReportingEnabled</strong>, <strong>ReportingServerURL</strong>, <strong>ReportingDataCacheLimit</strong>, <strong>ReportingDataBlockSize</strong>, <strong>ReportingStartTime</strong>, <strong>ReportingRandomDelay</strong>, <strong>ReportingInterval</strong>.</p>
@@ -112,7 +112,7 @@ The following table displays answers to common questions about App-V reporting
 <li><p>By using Group Policy. If distributed using the domain controller, the settings are the same as previously listed.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>Group Policy settings override local settings configured using PowerShell.</p>
+<p>Group Policy settings override local settings configured using Windows PowerShell.</p>
 </div>
 <div>
  
@@ -127,14 +127,14 @@ The following table displays answers to common questions about App-V reporting
 ## <a href="" id="---------app-v-client-reporting"></a> App-V Client Reporting
 
 
-To use App-V reporting you must enable and configure the App-V client. After the client has been installed, use the **Set-AppVClientConfiguration** PowerShell cmdlet or the **ADMX Template** to configure reporting. The reporting feature cmdlets are available by using the following link and are prefaced by **Reporting**. For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of App-V client reporting configuration using PowerShell.
+To use App-V reporting you must enable and configure the App-V client. To configure reporting on the client, use the Windows PowerShell cmdlet **Set-AppVClientConfiguration**, or the Group Policy **ADMX Template**. For more information about the Windows PowerShell cmdlets, see [About Client Configuration Settings](appv-client-configuration-settings.md). The following section provides examples of Windows PowerShell commands for configuring App-V client reporting.
 
-### Configuring App-V Client reporting using PowerShell
+### Configuring App-V Client reporting using Windows PowerShell
 
-The following examples show how PowerShell parameters can configure the reporting features of the App-V client.
+The following examples show how Windows PowerShell parameters can configure the reporting features of the App-V client.
 
 **Note**  
-The following configuration task can also be configured using Group Policy settings in the App-V ADMX template. For more information about using the ADMX template, see [How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md).
+The following configuration task can also be configured using Group Policy settings in the App-V ADMX template. The App-V settings are under **Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V**. For more information about using the ADMX template, see [How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md).
 
  
 
@@ -148,9 +148,7 @@ The following configuration task can also be configured using Group Policy setti
 Set-AppVClientConfiguration –ReportingServerURL http://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30
 ```
 
-`-ReportingInterval 1 -ReportingRandomDelay 30`
-
-This example configures the client to automatically send the reporting data to the reporting server URL **http://MyReportingServer:MyPort/**. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
+The preceding example configures the client to automatically send the reporting data to the reporting server URL **http://MyReportingServer:MyPort/**. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
 
 **To limit the size of the data cache on the client**:
 
@@ -238,7 +236,7 @@ You can configure the computer that is running the App-V client to automatically
 
 -   ReportingRandomDelay
 
-After you configure the previous settings, you must create a scheduled task. The scheduled task will contact the server specified by the **ReportingServerURL** setting and will initiate the transfer. If you want to manually send data outside of the scheduled times, use the following PowerShell cmdlet:
+After you configure the previous settings, you must create a scheduled task. The scheduled task will contact the server specified by the **ReportingServerURL** setting and will initiate the transfer. If you want to manually send data outside of the scheduled times, use the following Windows PowerShell cmdlet:
 
 `Send-AppVClientReport –URL http://MyReportingServer:MyPort/ -DeleteOnSuccess`
 

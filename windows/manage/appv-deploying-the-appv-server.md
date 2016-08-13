@@ -74,7 +74,7 @@ The distributed deployment topology can support a large App-V client base and it
 - [How to install the Management Server on a Standalone Computer and Connect it to the Database](appv-install-the-management-server-on-a-standalone-computer.md)
 
 ## Using an Enterprise Software Distribution (ESD) solution and App-V
-You can also deploy the App-V clients and packages by using an ESD without having to deploy App-V. The full capabilities for integration will vary depending on the ESD that you use.
+You can also deploy packages by using an ESD. The full capabilities for integration will vary depending on the ESD that you use.
 
 >**Note**<br>The App-V reporting server and reporting database can still be deployed alongside the ESD to collect the reporting data from the App-V clients. However, the other three server components should not be deployed, because they will conflict with the ESD functionality.
 

@@ -105,7 +105,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]  
     > The system does not support non-printable characters in **Comments** and **Descriptions**.
-         
+    
     The default **Save Location** is also displayed on this page. To change the default location, click **Browse** and specify the new location. Click **Create**.
 
 15. The **Completion** page is displayed. Review the information in the **Virtual Application Package Report** pane as needed, then click **Close**. This information is also available in the **Report.xml** file that is located in the directory where the package was created.
@@ -210,8 +210,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]   
     > The system does not support non-printable characters in Comments and Descriptions.
- 
-
+    
     The default **Save Location** is also displayed on this page. To change the default location, click **Browse** and specify the new location. Click **Create**.
 
 12. The **Completion** page is displayed. Review the information in the **Virtual Application Package Report** pane as needed, then click **Close**. This information is also available in the **Report.xml** file that is located in the directory specified in step 11 of this procedure.
