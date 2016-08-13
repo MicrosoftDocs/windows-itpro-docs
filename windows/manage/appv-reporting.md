@@ -95,7 +95,7 @@ The following table displays answers to common questions about App-V reporting
 <ol>
 <li><p>Operating system, and App-V client information. ~150 Bytes, every time this data is sent.</p></li>
 <li><p>Published package list. ~7 KB for 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there is no change, this information is not sent.</p></li>
-<li><p>Virtual application usage information – about 0.25KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the PowerShell cmdlet, there is an optional argument that controls if the data needs to be re-sent next time around – that argument is <strong>DeleteOnSuccess</strong>.</p>
+<li><p>Virtual application usage information – about 0.25KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the Windows PowerShell cmdlet, there is an optional argument that controls if the data needs to be re-sent next time around – that argument is <strong>DeleteOnSuccess</strong>.</p>
 <p></p>
 <p>So for example, if twenty applications are opened and closed and reporting information is scheduled to be sent daily, the typical daily traffic should be about 0.15KB + 20 x 0.25KB, or about 5KB/user</p></li>
 </ol></td>
@@ -105,7 +105,7 @@ The following table displays answers to common questions about App-V reporting
 <td align="left"><p>Yes. Besides manually sending reporting using Windows PowerShell cmdlets (<strong>Send-AppvClientReport</strong>), the task can be scheduled so it will happen automatically. There are two ways to schedule the reporting:</p>
 <ol>
 <li><p>Using Windows PowerShell cmdlets - <strong>Set-AppvClientConfiguration</strong>. For example:</p>
-<p>Set-AppvClientConfiguration -ReportingEnabled 1 - ReportingServerURL http://any.com/appv-reporting</p>
+<p>Set-AppvClientConfiguration -ReportingEnabled 1 -ReportingServerURL http://any.com/appv-reporting</p>
 <p></p>
 <p>For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md) and look for the following entries: <strong>ReportingEnabled</strong>, <strong>ReportingServerURL</strong>, <strong>ReportingDataCacheLimit</strong>, <strong>ReportingDataBlockSize</strong>, <strong>ReportingStartTime</strong>, <strong>ReportingRandomDelay</strong>, <strong>ReportingInterval</strong>.</p>
 <p></p></li>
@@ -145,7 +145,7 @@ The following configuration task can also be configured using Group Policy setti
 **To configure the client to automatically send data to a specific reporting server**:
 
 ``` syntax
-Set-AppVClientConfiguration –ReportingServerURL http://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30
+Set-AppVClientConfiguration -ReportingServerURL http://MyReportingServer:MyPort/ -ReportingStartTime 20 -ReportingInterval 1 -ReportingRandomDelay 30
 ```
 
 The preceding example configures the client to automatically send the reporting data to the reporting server URL **http://MyReportingServer:MyPort/**. Additionally, the reporting data will be sent daily between 8:00 and 8:30 PM, depending on the random delay generated for the session.
