@@ -46,23 +46,27 @@ Use the following procedure to install the publishing server on a separate compu
 
 9.  To verify that the publishing server is running correctly, you should import a package to the management server, entitle the package to an AD group, and publish the package. Using an internet browser, open the following URL: **http://publishingserver:pubport**. If the server is running correctly information similar to the following will be displayed:
 
-    `<Publishing Protocol="1.0">`
+    ```syntax
+    <Publishing Protocol="1.0">
+    
+        <Packages>
 
-    `  <Packages>`
+        <Package PackageId="28115343-06e2-44dc-a327-3a0b9b868bda" VersionId="5d03c08f-51dc-4026-8cf9-15ebe3d65a72" PackageUrl="\\server\share\file.appv" />
+        
+        </Packages>
 
-    `  <Package PackageId="28115343-06e2-44dc-a327-3a0b9b868bda" VersionId="5d03c08f-51dc-4026-8cf9-15ebe3d65a72" PackageUrl="\\server\share\file.appv" />`
+        <NoGroup>
 
-    `  </Packages>`
+        <Package PackageId="28115343-06e2-44dc-a327-3a0b9b868bda" />
 
-    `  <NoGroup>`
+        </NoGroup>
 
-    `  <Package PackageId="28115343-06e2-44dc-a327-3a0b9b868bda" />`
+    </Publishing>
+    ```
 
-    `  </NoGroup>`
+## Have a suggestion for App-V? 
 
-    `</Publishing>`
-
-**Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
