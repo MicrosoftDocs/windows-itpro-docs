@@ -47,7 +47,7 @@ The topics in this section provide information and step-by-step procedures to he
 - [Using the App-V Client Management Console](appv-using-the-client-management-console.md)
 - [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
 - [Maintaining App-V](appv-maintaining-appv.md)
-- [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+- [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
 [Troubleshooting App-V](appv-troubleshooting.md)  
 

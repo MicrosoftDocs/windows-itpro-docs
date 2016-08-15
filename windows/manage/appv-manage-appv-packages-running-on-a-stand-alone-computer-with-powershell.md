@@ -284,7 +284,7 @@ For more information about pending tasks, see [Upgrading an in-use App-V package
 
 [Operations for App-V](appv-operations.md)
 
-[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
  
 

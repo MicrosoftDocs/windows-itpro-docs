@@ -379,7 +379,7 @@ Before attempting this procedure, you should read and understand the information
 ## Related topics
 
 
-[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
  
 
