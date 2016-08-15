@@ -62,7 +62,6 @@
 ##### [About Client Configuration Settings](appv-client-configuration-settings.md)
 ##### [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)
 ##### [How to Install the Sequencer](appv-install-the-sequencer.md)
-##### [How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md)
 #### [Deploying the App-V Server](appv-deploying-the-appv-server.md)
 ##### [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
 ##### [How to Deploy the App-V Server Using a Script](appv-deploy-the-appv-server-with-a-script.md)

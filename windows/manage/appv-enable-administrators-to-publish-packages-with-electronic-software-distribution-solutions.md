@@ -18,7 +18,7 @@ Starting in App-V 5.0 SP3, you can configure the App-V client so that only admin
 
 1.  Navigate to the following Group Policy Object node:
 
-    **Computer Configuration &gt; Policies &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing**.
+    **Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing**.
 
 2.  Enable the **Require publish as administrator** Group Policy setting.
 
