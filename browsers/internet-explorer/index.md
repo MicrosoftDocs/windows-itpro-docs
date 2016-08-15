@@ -1,5 +1,4 @@
 ---
-localizationpriority: low
 ms.mktglfcycl: deploy
 description: The landing page for IE11 that lets you access the documentation.
 author: eross-msft

@@ -1,5 +1,4 @@
 ---
-localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use this guide to learn about the several options and processes you'll need to consider while you're planning for, deploying, and customizing Internet Explorer 11 for your employee's devices.
 author: eross-msft

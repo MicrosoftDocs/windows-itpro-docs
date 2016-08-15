@@ -8,7 +8,6 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-localizationpriority: high
 ---
 
 # Manage and update Windows 10
