@@ -12,7 +12,7 @@ ms.prod: w10
 
 Applies to: Windows 10, version 1607
 
-The Microsoft Application Virtualization (App-V) client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries. This topic lists the App-V Client configuration settings and explains their uses. You can use PowerShell to modify the client configuration settings. For more information about using PowerShell and App-V see [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md).
+The Microsoft Application Virtualization (App-V) client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries. This topic lists the App-V Client configuration settings and explains their uses. You can use Windows PowerShell to modify the client configuration settings. For more information about using Windows PowerShell and App-V see [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md).
 
 You can use Group Policy to configure App-V client settings by using the Group Policy Management Console under **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
 
@@ -60,49 +60,49 @@ The following table provides information about App-V client configuration settin
 | **HidePublishingRefreshUI**<br>1 (Enabled), 0 (Disabled)  | Hides the publishing refresh progress bar.  | Sync-AppvPublishingServer  | |
 | **ProcessesUsingVirtualComponents**<br>String  | Specifies a list of process paths (that may contain wildcards), which are candidates for using dynamic virtualization (supported shell extensions, browser helper objects, and ActiveX controls). Only processes whose full path matches one of these items can use dynamic virtualization.  | Set-AppvClientConfiguration,<br>Set-AppvPublishingServer  | Empty string. |
 
-## App-V Client Configuration Settings: Setup Flags and Registry Keys
+## App-V Client Configuration Settings: Registry Keys
 
-The following table provides information about App-V client configuration settings that can be configured through setup flags or in the registry:
+The following table provides information about App-V client configuration settings that can be configured through the registry:
 
-| **Setting name**<br>Type  | Setup Flag  | Registry Key Value  | Disabled Policy State Keys and Values |
-|--------------------------------------------------------------------------------|---------------------------|-------------------------------------------------------------------------|---------------------------------------------------|
-| **PackageInstallationRoot**<br>String  | PACKAGEINSTALLATIONROOT  | Streaming\\PackageInstallationRoot  | Policy value not written (same as Not Configured) |
-| **PackageSourceRoot**<br>String  | PACKAGESOURCEROOT  | Streaming\\PackageSourceRoot  | Policy value not written (same as Not Configured) |
-| **AllowHighCostLaunch**<br>True (enabled); False (Disabled state)  | Not available.  | Streaming\\AllowHighCostLaunch  | 0 |
-| **ReestablishmentRetries**<br>Integer (0-99)  | Not available.  | Streaming\\ReestablishmentRetries  | Policy value not written (same as Not Configured) |
-| **ReestablishmentInterval**<br>Integer (0-3600)  | Not available.  | Streaming\\ReestablishmentInterval  | Policy value not written (same as Not Configured) |
-| **LocationProvider**<br>String  | Not available.  | Streaming\\LocationProvider  | Policy value not written (same as Not Configured) |
-| **CertFilterForClientSsl**<br>String  | Not available.  | Streaming\\CertFilterForClientSsl  | Policy value not written (same as Not Configured) |
-| **VerifyCertificateRevocationList**<br>True(enabled); False(Disabled state)  | Not available.  | Streaming\\VerifyCertificateRevocationList  | 0 |
-| **SharedContentStoreMode**<br>True(enabled); False(Disabled state)  | SHAREDCONTENTSTOREMODE  | Streaming\\SharedContentStoreMode  | 0 |
-| **Name**<br>String  | PUBLISHINGSERVERNAME  | Publishing\\Servers{serverId}\\FriendlyName  | Policy value not written (same as Not Configured) |
-| **URL**<br>String  | PUBLISHINGSERVERURL  | Publishing\\Servers{serverId}\\URL  | Policy value not written (same as Not Configured) |
-| **GlobalRefreshEnabled**<br>True(enabled); False(Disabled state)  | GLOBALREFRESHENABLED  | Publishing\\Servers{serverId}\\GlobalEnabled  | False |
-| **GlobalRefreshOnLogon**<br>True(enabled); False(Disabled state)  | GLOBALREFRESHONLOGON  | Publishing\\Servers{serverId}\\GlobalLogonRefresh  | False |
-| **GlobalRefreshInterval**<br>Integer (0-744)  | GLOBALREFRESHINTERVAL  | Publishing\\Servers{serverId}\\GlobalPeriodicRefreshInterval  | 0 |
-| **GlobalRefreshIntervalUnit** <br>0 for hour, 1 for day  | GLOBALREFRESHINTERVALUNI  | Publishing\\Servers{serverId}\\GlobalPeriodicRefreshIntervalUnit  | 1 |
-| **UserRefreshEnabled**<br>True(enabled); False(Disabled state)  | USERREFRESHENABLED  | Publishing\\Servers{serverId}\\UserEnabled  | False |
-| **UserRefreshOnLogon**<br>True(enabled); False(Disabled state)  | USERREFRESHONLOGON  | Publishing\\Servers{serverId}\\UserLogonRefresh  | False |
-| **UserRefreshInterval**<br>Word count (with spaces): 85Integer (0-744 Hours)  | USERREFRESHINTERVAL  | Publishing\\Servers{serverId}\\UserPeriodicRefreshInterval  | 0 |
-| **UserRefreshIntervalUnit**<br>0 for hour, 1 for day  | USERREFRESHINTERVALUNIT  | Publishing\\Servers{serverId}\\UserPeriodicRefreshIntervalUnit  | 1 |
-| **MigrationMode**<br>True(enabled state); False (disabled state)  | MIGRATIONMODE  | Coexistence\\MigrationMode  | |
-| **EnablePackageScripts**<br>True(enabled); False(Disabled state)  | ENABLEPACKAGESCRIPTS  | \\Scripting\\EnablePackageScripts  | |
-| **RoamingFileExclusions**<br>String  | ROAMINGFILEEXCLUSIONS  | | |
-| **RoamingRegistryExclusions**<br>String  | ROAMINGREGISTRYEXCLUSIONS  | Integration\\RoamingReglstryExclusions  | Policy value not written (same as Not Configured) |
-| **IntegrationRootUser**<br>String  | Not available.  | Integration\\IntegrationRootUser  | Policy value not written (same as Not Configured) |
-| **IntegrationRootGlobal**<br>String  | Not available.  | Integration\\IntegrationRootGlobal  | Policy value not written (same as Not Configured) |
-| **VirtualizableExtensions**<br>String  | Not available.  | Integration\\VirtualizableExtensions  | Policy value not written |
-| **ReportingEnabled**<br>True (enabled); False (Disabled state)  | Not available.  | Reporting\\EnableReporting  | False |
-| **ReportingServerURL**<br>String  | Not available.  | Reporting\\ReportingServer  | Policy value not written (same as Not Configured) |
-| **ReportingDataCacheLimit**<br>Integer \[0-1024\]  | Not available.  | Reporting\\DataCacheLimit  | Policy value not written (same as Not Configured) |
-| **ReportingDataBlockSize**<br>Integer \[1024 - Unlimited\]  | Not available.  | Reporting\\DataBlockSize  | Policy value not written (same as Not Configured) |
-| **ReportingStartTime**<br>Integer (0 – 23)  | Not available.  | Reporting\\ StartTime  | Policy value not written (same as Not Configured) |
-| **ReportingInterval**<br>Integer  | Not available.  | Reporting\\RetryInterval  | Policy value not written (same as Not Configured) |
-| **ReportingRandomDelay**<br>Integer \[0 - ReportingRandomDelay\]  | Not available.  | Reporting\\RandomDelay  | Policy value not written (same as Not Configured) |
-| **EnableDynamicVirtualization<br>**1 (Enabled), 0 (Disabled)  | Not available.  | HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\AppV\\Client\\Virtualization  | |
-| **EnablePublishingRefreshUI**<br>1 (Enabled), 0 (Disabled)  | Not available.  | HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\AppV\\Client\\Publishing  | |
-| **HidePublishingRefreshUI**<br>1 (Enabled), 0 (Disabled)  | Not available.  | | |
-| **ProcessesUsingVirtualComponents**<br>String  | Not available.  | Virtualization\\ProcessesUsingVirtualComponents  | Empty string. |
+| **Setting name**<br>Type  | Registry Key Value  | Disabled Policy State Keys and Values |
+|---------------------------|---------------------|---------------------------------------|
+| **PackageInstallationRoot**<br>String  | Streaming\\PackageInstallationRoot  | Policy value not written (same as Not Configured) |
+| **PackageSourceRoot**<br>String  | Streaming\\PackageSourceRoot  | Policy value not written (same as Not Configured) |
+| **AllowHighCostLaunch**<br>True (enabled); False (Disabled state)  | Streaming\\AllowHighCostLaunch  | 0 |
+| **ReestablishmentRetries**<br>Integer (0-99)  | Streaming\\ReestablishmentRetries  | Policy value not written (same as Not Configured) |
+| **ReestablishmentInterval**<br>Integer (0-3600)  | Streaming\\ReestablishmentInterval  | Policy value not written (same as Not Configured) |
+| **LocationProvider**<br>String  | Streaming\\LocationProvider  | Policy value not written (same as Not Configured) |
+| **CertFilterForClientSsl**<br>String  | Streaming\\CertFilterForClientSsl  | Policy value not written (same as Not Configured) |
+| **VerifyCertificateRevocationList**<br>True(enabled); False(Disabled state)  | Streaming\\VerifyCertificateRevocationList  | 0 |
+| **SharedContentStoreMode**<br>True(enabled); False(Disabled state)  | Streaming\\SharedContentStoreMode  | 0 |
+| **Name**<br>String  | Publishing\\Servers{serverId}\\FriendlyName  | Policy value not written (same as Not Configured) |
+| **URL**<br>String  | Publishing\\Servers{serverId}\\URL  | Policy value not written (same as Not Configured) |
+| **GlobalRefreshEnabled**<br>True(enabled); False(Disabled state)  | Publishing\\Servers{serverId}\\GlobalEnabled  | False |
+| **GlobalRefreshOnLogon**<br>True(enabled); False(Disabled state)  | Publishing\\Servers{serverId}\\GlobalLogonRefresh  | False |
+| **GlobalRefreshInterval**<br>Integer (0-744)  | Publishing\\Servers{serverId}\\GlobalPeriodicRefreshInterval  | 0 |
+| **GlobalRefreshIntervalUnit** <br>0 for hour, 1 for day  | Publishing\\Servers{serverId}\\GlobalPeriodicRefreshIntervalUnit  | 1 |
+| **UserRefreshEnabled**<br>True(enabled); False(Disabled state)  | Publishing\\Servers{serverId}\\UserEnabled  | False |
+| **UserRefreshOnLogon**<br>True(enabled); False(Disabled state)  | Publishing\\Servers{serverId}\\UserLogonRefresh  | False |
+| **UserRefreshInterval**<br>Word count (with spaces): 85Integer (0-744 Hours)  | Publishing\\Servers{serverId}\\UserPeriodicRefreshInterval  | 0 |
+| **UserRefreshIntervalUnit**<br>0 for hour, 1 for day  | Publishing\\Servers{serverId}\\UserPeriodicRefreshIntervalUnit  | 1 |
+| **MigrationMode**<br>True(enabled state); False (disabled state)  | Coexistence\\MigrationMode  | |
+| **EnablePackageScripts**<br>True(enabled); False(Disabled state)  | \\Scripting\\EnablePackageScripts  | |
+| **RoamingFileExclusions**<br>String  | | |
+| **RoamingRegistryExclusions**<br>String  | Integration\\RoamingReglstryExclusions  | Policy value not written (same as Not Configured) |
+| **IntegrationRootUser**<br>String  | Integration\\IntegrationRootUser  | Policy value not written (same as Not Configured) |
+| **IntegrationRootGlobal**<br>String  | Integration\\IntegrationRootGlobal  | Policy value not written (same as Not Configured) |
+| **VirtualizableExtensions**<br>String  | Integration\\VirtualizableExtensions  | Policy value not written |
+| **ReportingEnabled**<br>True (enabled); False (Disabled state)  | Reporting\\EnableReporting  | False |
+| **ReportingServerURL**<br>String  | Reporting\\ReportingServer  | Policy value not written (same as Not Configured) |
+| **ReportingDataCacheLimit**<br>Integer \[0-1024\]  | Reporting\\DataCacheLimit  | Policy value not written (same as Not Configured) |
+| **ReportingDataBlockSize**<br>Integer \[1024 - Unlimited\]  | Reporting\\DataBlockSize  | Policy value not written (same as Not Configured) |
+| **ReportingStartTime**<br>Integer (0 – 23)  | Reporting\\ StartTime  | Policy value not written (same as Not Configured) |
+| **ReportingInterval**<br>Integer  | Reporting\\RetryInterval  | Policy value not written (same as Not Configured) |
+| **ReportingRandomDelay**<br>Integer \[0 - ReportingRandomDelay\]  | Reporting\\RandomDelay  | Policy value not written (same as Not Configured) |
+| **EnableDynamicVirtualization<br>**1 (Enabled), 0 (Disabled)  | HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\AppV\\Client\\Virtualization  | |
+| **EnablePublishingRefreshUI**<br>1 (Enabled), 0 (Disabled)  | HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\AppV\\Client\\Publishing  | |
+| **HidePublishingRefreshUI**<br>1 (Enabled), 0 (Disabled)  | | |
+| **ProcessesUsingVirtualComponents**<br>String  | Virtualization\\ProcessesUsingVirtualComponents  | Empty string. |
 
 ## Have a suggestion for App-V?
 
