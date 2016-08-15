@@ -27,7 +27,7 @@ If you prefer to use a graphical user interface, you can create a device account
 
 ### <a href="" id="create-device-acct-o365-admin-ctr"></a>Create the account in the Office 365 Admin Center
 
-1.  Sign in to Office 365 by visiting http://portal.office.com/admin/
+1.  Sign in to Office 365 by visiting http://portal.office.com
 2.  Provide the admin credentials for your Office 365 tenant. This will take you to your Office 365 Admin Center.
 
     ![Office 365 admin center.](images/setupdeviceaccto365-02.png)
