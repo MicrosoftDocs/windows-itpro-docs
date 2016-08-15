@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Planning for High Availability with App-V Server
 
+Applies to: Windows 10, version 1607
+
 Microsoft Application Virtualization (App-V) system configurations can take advantage of options that maintain a high level of available service.
 
 Use the information in the following sections to help you understand the options to deploy App-V in a highly available configuration.

@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Synchronizing Office with UE-V
 
+Applies to: Windows 10, version 1607
+
 Microsoft User Experience Virtualization (UE-V) supports the synchronization of Microsoft Office application settings. The combination of UE-V and App-V  support for Office enables the same experience on virtualized instances of Office from any UE-V-enabled device or virtualized desktop.
 
 To synchronize Office applications settings, you can download Office templates from the [Microsoft User Experience Virtualization (UE-V) Template Gallery](http://go.microsoft.com/fwlink/p/?LinkId=246589). This resource provides Microsoft-authored UE-V settings location templates as well as community-developed settings location templates.

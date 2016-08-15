@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
 
+Applies to: Windows 10, version 1607
 
 Use the following procedure to transfer the access and default package configurations to another version of a package by using the management console.
 

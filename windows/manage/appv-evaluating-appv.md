@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Evaluating App-V
 
+Applies to: Windows 10, version 1607
+
 Before you deploy App-V into a production environment, you should evaluate it in a lab environment. You can use the information in this topic to set up App-V in a lab environment for evaluation purposes only.
 
 ## Configure lab computers for App-V Evaluation
