@@ -77,6 +77,7 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 1. Open PowerShell as Administrator <br>
 
     a.  Click **Start**, type **powershell**, and press **Enter**.
+    
     b.  Click **Windows PowerShell** to open the interface.
     
     >[!NOTE]
