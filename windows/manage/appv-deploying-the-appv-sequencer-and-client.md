@@ -24,23 +24,19 @@ The App-V client is the component that runs a virtualized application on a targe
 
 ## Client Configuration Settings
 
-The App-V client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries.
-
-[About Client Configuration Settings](appv-client-configuration-settings.md)
+The App-V client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries. For more information, see [About Client Configuration Settings](appv-client-configuration-settings.md).
 
 ## Configure the client by using the ADMX template and Group Policy
 
 You can use Group Policy to configure the client settings for the App-V client and the Remote Desktop Services client.
 
-Perform the following steps on the computer that you will use to manage Group Policy. This is typically the Domain Controller.
+To manage the ADMX template, perform the following steps on the computer that you will use to manage Group Policy. This is typically the Domain Controller.
 
 1.  Save the **.admx** file to the following directory: **Windows \\ PolicyDefinitions**
 
 2.  Save the **.adml** file to the following directory: **Windows \\ PolicyDefinitions \\ <Language Directory>**
 
-After you have completed the preceding steps, you can manage the App-V client configuration settings with the **Group Policy Management** console.
-
-[How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md)
+After you have completed the preceding steps, you can use Group Policy to configure the client settings by using the Group Policy Management Console under **Computer Configuration** > **Administrative Templates** > **System** > **App-V**.
 
 ## Understanding Shared Content Store mode for App-V clients
 
