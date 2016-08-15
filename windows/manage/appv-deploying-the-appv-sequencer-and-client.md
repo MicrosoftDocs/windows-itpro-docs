@@ -20,13 +20,13 @@ The App-V Sequencer and client enable administrators to virtualize and run virtu
 The App-V client is the component that runs a virtualized application on a target computer. The client enables users to interact with icons and to double-click file types, so that they can start a virtualized application. The client can also obtain the virtual application content from the management server.
 
 > [!NOTE]  
-> In Windows 10, version 1607, App-V is included with the OS. You only need to enable it.
+> In Windows 10, version 1607, App-V is included with the operating system. You only need to enable it.
 
 [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)
 
 ## Client Configuration Settings
 
-The App-V client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. You can also configure many client actions by changing registry entries. For more information, see [About Client Configuration Settings](appv-client-configuration-settings.md).
+The App-V client stores its configuration in the registry. You can gather some useful information about the client if you understand the format of data in the registry. For information about client settings that you can configure through Windows PowerShell or through the registry, see [About Client Configuration Settings](appv-client-configuration-settings.md).
 
 ## Configure the client by using the ADMX template and Group Policy
 
