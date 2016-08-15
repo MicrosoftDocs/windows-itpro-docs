@@ -73,7 +73,7 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 ###Use PUA audit mode in Intune
 
  You can detect PUA without blocking them from your client. Gain insights into what can be blocked.
- 
+
  1. Open PowerShell as Administrator: <br>
 
     a.  Click **Start**, type **powershell**, and press **Enter**.
@@ -85,8 +85,9 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 
   ```text
   et-mpPreference -puaprotection 1
-  
+  ```
 
+  
 ##View PUA events
 
 PUA events are reported in the Windows Event Viewer and not in SCCM or Intune. To view PUA events:
