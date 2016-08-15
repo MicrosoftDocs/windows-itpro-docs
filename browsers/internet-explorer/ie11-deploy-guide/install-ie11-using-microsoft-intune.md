@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to add and deploy the Internet Explorer 11 update using Microsoft Intune.
-ms.assetid: b2dfc08c-78af-4c22-8867-7be3b92b1616
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: b2dfc08c-78af-4c22-8867-7be3b92b1616
 title: Install Internet Explorer 11 (IE11) using Microsoft Intune (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 #  Install Internet Explorer 11 (IE11) using Microsoft Intune
 Internet Explorer 11 is available as an update in Microsoft Intune. Microsoft Intune uses Windows cloud services to help you manage updates, monitor and protect your computers, provide remote assistance, track hardware and software inventory, and set security policies. For more information, see the [Documentation Library for Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=301805).

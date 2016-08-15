@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Reference about the command-line options and return codes for Internet Explorer Setup.
-ms.assetid: 40c23024-cb5d-4902-ad1b-6e8a189a699f
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 40c23024-cb5d-4902-ad1b-6e8a189a699f
 title: Internet Explorer Setup command-line options and return codes (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Internet Explorer Setup command-line options and return codes
 You can use command-line options along with a tool like IExpress to package your custom version of Internet Explorer and to perform a batch installation across your organization.
@@ -59,3 +61,4 @@ Windows Setup needs to tell you whether IE successfully installed. However, beca
 ## Related topics
 - [IExpress Wizard for Windows Server 2008 R2 with SP1](iexpress-wizard-for-win-server.md)
 - [Express Wizard command-line options](iexpress-command-line-options.md)
+

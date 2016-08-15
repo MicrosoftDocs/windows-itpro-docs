@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Overview of the available Group Policy management tools
-ms.assetid: e33bbfeb-6b80-4e71-8bba-1d0369a87312
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: e33bbfeb-6b80-4e71-8bba-1d0369a87312
 title: Group Policy management tools (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Group Policy management tools
 Group Policy, based on Microsoft Active Directory Domain Services (AD DS), lets you manage your organization's computer and user settings as part of your Group Policy objects (GPOs), which are added and changed in the Group Policy Management Console (GPMC). GPOs can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences. The most effective way to target a specific GPO is to use Windows Management Instrumentation (WMI) filters. Like, creating a WMI filter that applies a GPO only to computers with a specific make and model.

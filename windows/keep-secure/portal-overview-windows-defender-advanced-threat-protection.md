@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Advanced Threat Protection portal overview
 description: Use the Windows Defender ATP portal to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
-keywords: Windows Defender ATP portal, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines view, preferences setup, client onboarding, advanced attacks
+keywords: Windows Defender ATP portal, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines view, preferences setup, endpoint management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,11 +14,11 @@ author: DulceMV
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 
 Enterprise security teams can use the Windows Defender ATP portal to monitor and assist in responding to alerts of potential advanced persistent threat (APT) activity or data breaches.
 
@@ -37,19 +37,20 @@ When you open the portal, you’ll see the main areas of the application:
 
  ![Windows Defender Advanced Threat Protection portal](images/portal-image.png)
 
-> **Note**&nbsp;&nbsp;Malware related detections will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> [!NOTE]
+> Malware related detections will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 
 Area | Description
 :---|:---
 (1) Settings | Provides access to configuration settings such as time zone, alert suppression rules, and license information.
-(2) Navigation pane | Use the navigation pane to move between the **Dashboard**, **Alerts queue**, **Machines view**, **Preferences setup**, and **Client onboarding**.
+(2) Navigation pane | Use the navigation pane to move between the **Dashboard**, **Alerts queue**, **Machines view**, **Preferences setup**, and **Enpoint Management**.
 **Dashboard**	| Provides clickable tiles that open detailed information on various alerts that have been detected in your organization.
 **Alerts queue** | Enables you to view separate queues of new, in progress, and resolved alerts.
 **Machines view**| Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
-**Preferences setup**|	Shows the settings you selected <!--during [service onboarding](service-onboarding-windows-defender-advanced-threat-protection.md),-->and lets you update your industry preferences and retention policy period.
-**Client onboarding**|	Allows you to download the onboarding configuration package.
+**Preferences setup**|	Shows the settings you selected and lets you update your industry preferences and retention policy period.
+**Enpoint Management**|	Allows you to download the onboarding configuration package.
 (3) Main portal| Main area where you will see the different views such as the Dashboard, Alerts queue, and Machines view.
 (4) Search | Search for machines, files, external IP Addresses, or domains across endpoints. The drop-down combo box allows you to select the entity type.
 

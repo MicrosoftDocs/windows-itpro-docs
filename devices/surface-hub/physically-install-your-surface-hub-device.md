@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub, readiness
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Physically install Microsoft Surface Hub

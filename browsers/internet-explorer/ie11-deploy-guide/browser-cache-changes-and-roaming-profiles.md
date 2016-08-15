@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: performance
 description: Browser cache changes and roaming profiles
-ms.assetid: 85f0cd01-6f82-4bd1-9c0b-285af1ce3436
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: performance
+ms.assetid: 85f0cd01-6f82-4bd1-9c0b-285af1ce3436
 title: Browser cache changes and roaming profiles (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Browser cache changes and roaming profiles
 We’ve redesigned the browser cache to improve the performance, flexibility, reliability, and scalability of Internet Explorer and the apps that rely on the Windows Internet (WinINet) cache. Our new database design stops multiple clients from simultaneously accessing and using cached information, while also providing a higher level of data integrity.

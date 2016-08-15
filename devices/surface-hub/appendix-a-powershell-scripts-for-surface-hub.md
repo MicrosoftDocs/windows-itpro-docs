@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Appendix: PowerShell (Surface Hub)
@@ -34,7 +35,7 @@ You can check online for updated versions at [Surface Hub device account scripts
 What do the scripts do?
 
 -   Create device accounts for setups using pure single-forest on-premises (Microsoft Exchange and Skype 2013 and later only) or online (Microsoft Office 365), that are configured correctly for your Surface Hub.
--   Validate existing device accounts for any setup (on-premises, online, or hybrid using Exchange or Lync 2010 or later) to make sure they're compatible with Surface Hub.
+-   Validate existing device accounts for any setup (on-premises or online) to make sure they're compatible with Surface Hub.
 -   Provide a base template for anyone wanting to create their own device account creation or validation scripts.
 
 What do you need in order to run the scripts?

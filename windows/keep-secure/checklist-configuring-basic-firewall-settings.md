@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 This checklist includes tasks for configuring a GPO with firewall defaults and settings that are separate from the rules.
 

@@ -1,4 +1,5 @@
 #[IE11 Deployment Guide for IT Pros](ie11-deploy-guide/index.md)
+##[Change history for the Internet Explorer 11 (IE11) Deployment Guide](ie11-deploy-guide/change-history-for-internet-explorer-11.md)
 ##[System requirements and language support for Internet Explorer 11](ie11-deploy-guide/system-requirements-and-language-support-for-ie11.md)
 ##[List of updated features and tools - Internet Explorer 11 (IE11)](ie11-deploy-guide/updated-features-and-tools-with-ie11.md)
 ##[Install and Deploy Internet Explorer 11 (IE11)](ie11-deploy-guide/install-and-deploy-ie11.md)
@@ -144,3 +145,4 @@
 ##[IExpress Wizard for Windows Server 2008 R2 with SP1](ie11-ieak/iexpress-wizard-for-win-server.md)
 ###[IExpress Wizard command-line options](ie11-ieak/iexpress-command-line-options.md)
 ###[Internet Explorer Setup command-line options and return codes](ie11-ieak/ie-setup-command-line-options-and-return-codes.md)
+

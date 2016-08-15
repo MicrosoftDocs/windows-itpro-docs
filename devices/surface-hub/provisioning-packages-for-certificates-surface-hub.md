@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Create provisioning packages (Surface Hub)
@@ -34,7 +35,7 @@ Provisioning packages are created using Windows Imaging and Configuration Design
 
 ### <a href="" id="what-can-prov-pkg"></a>What can provisioning packages configure for Surface Hubs?
 
-Currently, you can use provisioning packages to install certificates and to install Universal App Platform (UAP) apps on your Surface Hub. These are the only two supported scenarios.
+Currently, you can use provisioning packages to install certificates and to install Universal Windows Platform (UWP) apps on your Surface Hub. These are the only two supported scenarios.
 
 You may use provisioning packages to install certificates that will allow the device to authenticate to Microsoft Exchange or Skype for Business, or to sideload apps that don't come from the Windows Store (for example, your own in-house apps).
 

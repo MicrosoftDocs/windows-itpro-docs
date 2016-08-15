@@ -1,0 +1,37 @@
+---
+title: Testing scenarios for Windows Information Protection (WIP) (Windows 10)
+description: We've come up with a list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
+ms.assetid: 53db29d2-d99d-4db6-b494-90e2b3962ca2
+keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
+ms.prod: w10
+ms.mktglfcycl: explore
+ms.sitesec: library
+ms.pagetype: security
+author: eross-msft
+localizationpriority: high
+---
+
+# Testing scenarios for Windows Information Protection (WIP)
+**Applies to:**
+
+-   Windows 10, version 1607
+-   Windows 10 Mobile
+
+We've come up with a list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
+
+## Testing scenarios
+You can try any of the processes included in these scenarios, but you should focus on the ones that you might encounter in your organization.
+
+|Scenario |Processes |
+|---------|----------|
+|Automatically encrypt files from enterprise apps |<ol><li>Start an unmodified (for example, WIP-unaware) line-of-business app that's on your allowed apps list and then create, edit, write, and save files.</li><li>Make sure that all of the files you worked with from the WIP-unaware app are encrypted to your configured Enterprise Identity. In some cases, you might need to close the file and wait a few moments for it to be automatically encrypted.</li><li>Open File Explorer and make sure your modified files are appearing with a **Lock** icon.<p>**Note**<br>Some file types, like .exe and .dll, along with some file paths, like `%windir%` and `%programfiles%`, are excluded from automatic encryption.</li></ol> |
+|Block enterprise data from non-enterprise apps |<ol><li>Start an app that doesn't appear on your allowed apps list, and then try to open an enterprise-encrypted file.<p>The app shouldn't be able to access the file.</li><li>Try double-clicking or tapping on the enterprise-encrypted file.<p>If your default app association is an app not on your allowed apps list, you should get an **Access Denied** error message.</li></ol> |
+|Copy and paste from enterprise apps to non-enterprise apps |<ol><li>Copy (CTRL+C) content from an app on your allowed apps list, and then try to paste (CTRL+V) the content into an app that doesn't appear on your allowed apps list.<p>You should see a WIP-related warning box, asking you to click either **Got it** or **Cancel**.</li><li>Click **Cancel**.<p>The content isn't pasted into the non-enterprise app.</li><li>Repeat Step 1, but this time click **Got it**, and try to paste the content again.<p>The content is pasted into the non-enterprise app.</li><li>Try copying and pasting content between apps on your allowed apps list.<p>The content should copy and paste between apps without any warning messages.</li></ol> |
+|Drag and drop from enterprise apps to non-enterprise apps |<ol><li>Drag content from an app on your allowed apps list, and then try to drop the content into an app that doesn't appear on your allowed apps list.<p>You should see a WIP-related warning box, asking you to click either **Drag Anyway** or **Cancel**.</li><li>Click **Cancel**.<p>The content isn't dropped into the non-enterprise app.</li><li>Repeat Step 1, but this time click **Drag Anyway**, and try to drop the content again.<p>The content is dropped into the non-enterprise app.</li><li>Try dragging and dropping content between apps on your allowed apps list.<p>The content should move between the apps without any warning messages.</li></ol> |
+|Share between enterprise apps and non-enterprise apps |<ol><li>Open an app on your allowed apps list, like Microsoft Photos, and try to share content with an app that doesn't appear on your allowed apps list, like Facebook.<p>You should see a WIP-related warning box, asking you to click either **Share Anyway** or **Cancel**.</li><li>Click **Cancel**.<p>The content isn't shared into Facebook.</li><li>Repeat Step 1, but this time click **Share Anyway**, and try to share the content again.<p>The content is shared into Facebook.</li><li>Try sharing content between apps on your allowed apps list.<p>The content should share between the apps without any warning messages.</li></ol> | 
+|Use the **Encrypt to** functionality |<ol><li>Open File Explorer on the desktop, right-click a decrypted file, and then click **Encrypt to** from the **Encrypt to** menu.<p>WIP should encrypt the file to your Enterprise Identity.</li><li>Make sure that the newly encrypted file has a **Lock** icon.</li><li>In the **Encrypted to** column of File Explorer on the desktop, look for the enterprise ID value.</li><li>Right-click the encrypted file, and then click **Not encrypted** from the **Encrypt to** menu.<p>The file should be decrypted and the **Lock** icon should disappear.</li></ol> |
+|Verify that Windows system components can use WIP |<ol><li>Start Windows Journal and Internet Explorer 11, creating, editing, and saving files in both apps.</li><li>Make sure that all of the files you worked with are encrypted to your configured Enterprise Identity. In some cases, you might need to close the file and wait a few moments for it to be automatically encrypted.</li><li>Open File Explorer and make sure your modified files are appearing with a **Lock** icon</li><li>Try copying and pasting, dragging and dropping, and sharing using these apps with other apps that appear both on and off the allowed apps list.<p>**Note**<br>Most Windows-signed components like Windows Explorer (when running in the user’s context), should have access to enterprise data.<p>A few notable exceptions include some of the user-facing in-box apps, like Wordpad, Notepad, and Microsoft Paint. These apps don't have access by default, but can be added to your allowed apps list.</li></ol> |
+|Use WIP on FAT/exFAT systems |<ol><li>Start an app that uses the FAT or exFAT file system and appears on your allowed apps list.</li><li>Create, edit, write, save, and move files.<p>Basic file and folder operations like copy, move, rename, delete, and so on, should work properly on encrypted files.</li><li>Try copying and moving files or folders between apps that use NTFS, FAT and exFAT file systems.</li></ol> |
+|Use WIP on NTFS systems |<ol><li>Start an app that uses the NTFS file system and appears on your allowed apps list.</li><li>Create, edit, write, save, and move files.<p>Basic file and folder operations like copy, move, rename, delete, and so on, should work properly on encrypted files.</li><li>Try copying and moving files or folders between apps that use NTFS, FAT and exFAT file systems.</li></ol> |
+|Unenroll client devices from WIP |<ul><li>Unenroll a device from WIP by going to **Settings**, click **Accounts**, click **Work**, click the name of the device you want to unenroll, and then click **Remove**.<p>The device should be removed and all of the enterprise content for that managed account should be gone.<p>**Important**<br>Unenrolling a device revokes and erases all of the enterprise data for the managed account.</li></ul> |
+|Verify that app content is protected when a Windows 10 Mobile phone is locked |<ul><li>Check that protected app data doesn't appear on the **Lock** screen of a Windows 10 Mobile phone</li></ul> |

@@ -1,5 +1,4 @@
 # [Plan for Windows 10 deployment](index.md)
-## [Change history for Plan for Windows 10 deployment](change-history-for-plan-for-windows-10-deployment.md)
 ## [Windows 10 servicing overview](windows-10-servicing-options.md)
 ## [Windows 10 deployment considerations](windows-10-deployment-considerations.md)
 ## [Windows 10 compatibility](windows-10-compatibility.md)
@@ -109,4 +108,4 @@
 ### [ACT Product and Documentation Resources](act-product-and-documentation-resources.md)
 ### [ACT Glossary](act-glossary.md)
 ### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
-
+## [Change history for Plan for Windows 10 deployment](change-history-for-plan-for-windows-10-deployment.md)

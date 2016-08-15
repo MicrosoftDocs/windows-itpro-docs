@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 author: challum
 ---
 
@@ -334,7 +335,7 @@ The sections that follow describe these improvements in more detail.
 
 **SMB hardening improvements for SYSVOL and NETLOGON connections**
 
-In Windows 10 and Windows Server 2016 Technical Preview, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require Server Message Block (SMB) signing and mutual authentication (such as Kerberos).
+In Windows 10 and Windows Server 2016, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require Server Message Block (SMB) signing and mutual authentication (such as Kerberos).
 - **What value does this change add?**
 This change reduces the likelihood of man-in-the-middle attacks.
 - **What works differently?**
@@ -634,7 +635,7 @@ With Protected Processes, Windows 10 prevents untrusted processes from interact
 
 ## Secure the Windows desktop
 
-Windows 10 includes critical improvements to the Windows core and the desktop environment, where attacks and malware most frequently enter. The desktop environment is now more resistant to malware thanks to significant improvements to Windows Defender and SmartScreen Filters. Internet browsing is a safer experience because of Microsoft Edge, a completely new browser. The Windows Store reduces the likelihood that malware will infect devices by ensuring that all applications that enter the Windows Store ecosystem have been thoroughly reviewed before being made available. Universal Windows applications are inherently more secure than typical applications because they are sandboxed. Sandboxing restricts the application’s risk of being compromised or tampered with in a way that would put the system, data, and other applications at risk.
+Windows 10 includes critical improvements to the Windows core and the desktop environment, where attacks and malware most frequently enter. The desktop environment is now more resistant to malware thanks to significant improvements to Windows Defender and SmartScreen Filters. Internet browsing is a safer experience because of Microsoft Edge, a completely new browser. The Windows Store reduces the likelihood that malware will infect devices by ensuring that all applications that enter the Windows Store ecosystem have been thoroughly reviewed before being made available. Universal Windows apps are inherently more secure than typical applications because they are sandboxed. Sandboxing restricts the application’s risk of being compromised or tampered with in a way that would put the system, data, and other applications at risk.
 The sections that follow describe Windows 10 improvements to application security in more detail.
 
 **Microsoft Edge and Internet Explorer 11**

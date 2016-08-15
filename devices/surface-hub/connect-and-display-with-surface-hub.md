@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Connect other devices and display with Surface Hub
@@ -130,7 +131,7 @@ When a Surface hub is connected to guest computer with the wired connect USB por
 
 -   HID-compliant mouse
 
-**Universal serial bus conntrollers**
+**Universal serial bus controllers**
 
 -   Generic USB hub
 
@@ -224,7 +225,7 @@ In replacement PC mode, the embedded computer of the Surface Hub is turned off a
 
 ### Software requirements
 
-You can run Surface Hub in replacement PC mode with 64-bit versions of Windows 10 Home, Windows 10 Pro and Windows 10 Enterprise. You can download the  [Surface Hub Replacement PC driver package](https://www.microsoft.com/en-us/download/details.aspx?id=52210) from the Microsoft download center. We recommend that you install these drivers on any computer you plan to use as a replacement PC.
+You can run Surface Hub in replacement PC mode with 64-bit versions of Windows 10 Home, Windows 10 Pro and Windows 10 Enterprise. You can download the  [Surface Hub Replacement PC driver package](https://www.microsoft.com/download/details.aspx?id=52210) from the Microsoft download center. We recommend that you install these drivers on any computer you plan to use as a replacement PC.
 
 ### Hardware requirements
 
@@ -389,7 +390,7 @@ Replacement PC ports on 84" Surface Hub.
 
 **To use replacement PC mode**
 
-1.  Download and install the [Surface Hub Replacement PC driver package](https://www.microsoft.com/en-us/download/details.aspx?id=52210) on the replacement PC.
+1.  Download and install the [Surface Hub Replacement PC driver package](https://www.microsoft.com/download/details.aspx?id=52210) on the replacement PC.
 
     **Note**  We recommend that you set sleep or hibernation on the replacement PC so the Surface Hub will turn off the display when it isn't being used.
 

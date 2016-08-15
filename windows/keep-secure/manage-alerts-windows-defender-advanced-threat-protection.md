@@ -14,14 +14,15 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Windows Defender ATP notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
 
-See the [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts) topic for more details on how to investigate alerts.
+For more information on how to investigate alerts see, [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts).
 
 Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the top of the alert to access the Manage Alert menu and manage alerts.
 
@@ -55,7 +56,7 @@ You can resolve an alert by changing the status of the alert to **Resolved**. Th
 
 ![You can resolve an alert as valid, valid - allowed, or false alarm](images/resolve-alert.png)
 
-The comments and change of status are recorded in the [Comments and history window](#view-history-and-comments).
+The comments and change of status are recorded in the Comments and history window.
 
 ![The comments window will display a history of status changes](images/comments.png)
 
@@ -86,7 +87,8 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 1. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the heading of an existing alert.
 2. Choose the context for suppressing the alert.
 
-> **Note**&nbsp;&nbsp;You cannot create a custom or blank suppression rule. You must start from an existing alert.
+> [!NOTE]
+> You cannot create a custom or blank suppression rule. You must start from an existing alert.
 
 **See the list of suppression rules:**
 
@@ -95,7 +97,8 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 
   ![Click the settings icon and then Suppression rules to create and modify rules](images/suppression-rules.png)
 
-> **Note**&nbsp;&nbsp;You can also click **See rules** in the confirmation window that appears when you suppress an alert.
+> [!NOTE]
+> You can also click **See rules** in the confirmation window that appears when you suppress an alert.
 
 The list of suppression rules shows all the rules that users in your organization have created.
 Each rule shows:

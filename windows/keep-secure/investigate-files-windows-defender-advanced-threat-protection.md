@@ -13,10 +13,11 @@ author: mjcaparas
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Enterprise
+- Windows 10 Enterprise for Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
@@ -62,11 +63,13 @@ Use the deep analysis feature to investigate the details of any file, usually du
 
 In the file's page, **Submit for deep analysis** is enabled when the file is available in the Windows Defender ATP backend sample collection or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
 
-> **Note**&nbsp;&nbsp;Only files from Windows 10 can be automatically collected.
+> [!NOTE]
+> Only files from Windows 10 can be automatically collected.
 
 You can also manually submit a sample through the [Malware Protection Center Portal](https://www.microsoft.com/en-us/security/portal/submission/submit.aspx) if the file was not observed on a Windows 10 machine, and wait for **Submit for deep analysis** button to become available.
 
-> **Note**&nbsp;&nbsp;Due to backend processing flows in the Malware Protection Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Windows Defender ATP.
+> [!NOTE]
+> Due to backend processing flows in the Malware Protection Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Windows Defender ATP.
 
 When the sample is collected, Windows Defender ATP runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on machines, communication to IPs, and registry modifications.
 
@@ -84,7 +87,8 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
-> **Note**&nbsp;&nbsp;Depending on machine availability, sample collection time can vary. There is a 1-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
+> [!NOTE]
+> Depending on machine availability, sample collection time can vary. There is a 1-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
 ## View deep analysis report
 
@@ -121,10 +125,11 @@ HKLM\SOFTWARE\Policies\Microsoft\Sense\AllowSampleCollection
   Value = 0 - block sample collection
   Value = 1 - allow sample collection
 ```
-5. Change the organizational unit through the Group Policy. See [Configure with Group Policy](additional-configuration-windows-defender-advanced-threat-protection.md#configure-with-group-policy).
+5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md).
 6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
-> **Note**&nbsp;&nbsp;If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
+> [!NOTE]
+> If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
 
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)

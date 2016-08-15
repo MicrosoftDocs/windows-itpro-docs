@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using third-party tools and command-line options.
-ms.assetid: 30190c66-49f7-4ca4-8b57-a47656aa0c7e
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 30190c66-49f7-4ca4-8b57-a47656aa0c7e
 title: Install Internet Explorer 11 (IE11) using third-party tools (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Install Internet Explorer 11 (IE11) using third-party tools
 You can install Internet Explorer 11 (IE11) using third-party electronic software distribution (ESD) systems and these command-line options:
