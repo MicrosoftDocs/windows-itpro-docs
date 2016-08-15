@@ -11,7 +11,7 @@ ms.prod: w10
 
 # App-V Supported Configurations
 
-Applies to: Windows 10, version 1607
+Applies to: Windows 10, version 1607; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; and Windows Server 2008 R2
 
 This topic specifies the requirements to install and run App-V in your Windows 10 environment.
 
@@ -35,7 +35,7 @@ The App-V server does not support the following scenarios:
 
 ### Management server operating system requirements
 
-The App-V Management server can be installed on a server that runs Windows Server 2008 R2 with SP1 or a later.
+The App-V Management server can be installed on a server that runs Windows Server 2008 R2 with SP1 or later.
 
 > [!IMPORTANT]  
 > Deployment of the Management server role to a computer with Remote Desktop Services enabled is not supported.
@@ -90,7 +90,7 @@ The following table lists the SQL Server versions that are supported for the App
 
 ### Publishing server operating system requirements
 
-The App-V Publishing server can be installed on a server that runs Windows Server 2008 R2 with SP1 or a later.
+The App-V Publishing server can be installed on a server that runs Windows Server 2008 R2 with SP1 or later.
 
 
 ### Publishing server hardware requirements
@@ -105,7 +105,7 @@ App-V adds no additional requirements beyond those of Windows Server.
 
 ### Reporting server operating system requirements
 
-The App-V Reporting server can be installed on a server that runs Windows Server 2008 R2 with SP1 or a later. 
+The App-V Reporting server can be installed on a server that runs Windows Server 2008 R2 with SP1 or later. 
 
 ### Reporting server hardware requirements
 

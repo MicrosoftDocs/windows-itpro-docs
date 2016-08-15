@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Manage Configurations for UE-V
 
+Applies to: Windows 10, version 1607
 
 In the course of the User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V service and also manage storage locations for resources such as settings package files. The following topics provide guidance for managing these UE-V resources.
 

@@ -11,6 +11,7 @@ ms.prod: w10
 
 # App-V Deployment Checklist
 
+Applies to: Windows 10, version 1607
 
 This checklist can be used to help you during an App-V deployment.
 

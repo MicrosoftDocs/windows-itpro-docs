@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Configuring UE-V with Group Policy Objects
 
+Applies to: Windows 10, version 1607
 
 Some User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. The Group Policy administrative templates for these settings are included in Windows 10, version 1607. 
 

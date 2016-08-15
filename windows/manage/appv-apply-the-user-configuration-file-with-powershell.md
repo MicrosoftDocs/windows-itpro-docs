@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Apply the User Configuration File by Using PowerShell
 
+Applies to: Windows 10, version 1607
 
 The dynamic user configuration file is applied when a package is published to a specific user and determines how the package will run.
 

@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Allow Only Administrators to Enable Connection Groups
 
+Applies to: Windows 10, version 1607
 
 You can configure the App-V client so that only administrators (not end users) can enable or disable connection groups. In earlier versions of App-V, you could not prevent end users from performing these tasks.
 

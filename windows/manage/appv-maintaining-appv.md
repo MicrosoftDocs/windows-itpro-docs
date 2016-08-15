@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Maintaining App-V
 
+Applies to: Windows 10, version 1607
 
 After you have deployed App-V for Windows 10, you can use the following information to maintain the App-V infrastructure.
 

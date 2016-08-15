@@ -10,6 +10,8 @@ ms.prod: w10
 
 # How to Modify App-V client configuration using the ADMX template and Group Policy
 
+Applies to: Windows 10, version 1607
+
 You can use Group Policy to configure App-V client settings by using the Group Policy Management Console under **Computer Configuration** > **Policies** > **Administrative Templates** > **System** > **App-V**.
 
 ## Have a suggestion for App-V?

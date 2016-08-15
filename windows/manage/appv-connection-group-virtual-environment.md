@@ -11,6 +11,7 @@ ms.prod: w10
 
 # About the Connection Group Virtual Environment
 
+Applies to: Windows 10, version 1607
 
 **In this topic:**
 

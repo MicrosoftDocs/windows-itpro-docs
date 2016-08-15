@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Deploying the App-V Sequencer and Configuring the Client
 
+Applies to: Windows 10, version 1607
+
 The App-V Sequencer and client enable administrators to virtualize and run virtualized applications.
 
 ## Enable the client

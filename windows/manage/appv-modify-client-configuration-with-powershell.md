@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Modify Client Configuration by Using PowerShell
 
+Applies to: Windows 10, version 1607
 
 Use the following procedure to configure the App-V client configuration.
 
