@@ -53,10 +53,8 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!NOTE]  
     > If the specified application installer modifies security access to a file or directory, existing or new, the associated changes will not be captured into the package.
-
-
+    
     If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Perform a Custom Installation** check box, and then click **Next**.
-
 
 6.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name is displayed in the App-V Management Console.
 
@@ -66,8 +64,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]  
     > You should always install applications to a secure location and make sure no other users are logged on to the computer running the sequencer during monitoring.
-
-
+    
     Use the application's installation process to perform the installation. If additional installation files must be run as part of the installation, click **Run** to locate and run the additional installation files. When you are finished with the installation, select **I am finished installing**. Click **Next**.
 
 8.  On the **Installation** page, wait while the sequencer configures the virtualized application package.
@@ -76,8 +73,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!NOTE]  
     > To run first-use tasks for any application that is not available in the list, open the application. The associated information will be captured during this step.
-
-
+    
     Click **Next**.
 
 10. On the **Installation Report** page, you can review information about the virtualized application package you have just sequenced. In **Additional Information**, double-click an event to obtain more detailed information. To proceed, click **Next**.
@@ -109,9 +105,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]  
     > The system does not support non-printable characters in **Comments** and **Descriptions**.
-
-     
-
+    
     The default **Save Location** is also displayed on this page. To change the default location, click **Browse** and specify the new location. Click **Create**.
 
 15. The **Completion** page is displayed. Review the information in the **Virtual Application Package Report** pane as needed, then click **Close**. This information is also available in the **Report.xml** file that is located in the directory where the package was created.
@@ -148,7 +142,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     Click **Next**.
 
-7.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name will be displayed in the App-V 5.0 Management Console.
+7.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name will be displayed in the App-V Management Console.
 
     Click **Next**.
 
@@ -179,9 +173,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]   
     > The system does not support non-printable characters in Comments and Descriptions.
-
-     
-
+    
     The default **Save Location** is also displayed on this page. To change the default location, click **Browse** and specify the new location. Click **Create**.
 
 **To sequence a middleware application**
@@ -193,14 +185,14 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 3.  On the **Prepare Computer** page, review the issues that could cause the package creation to fail or could cause the package to contain unnecessary data. You should resolve all potential issues before you continue. After making any corrections, click **Refresh** to display the updated information. After you have resolved all potential issues, click **Next**.
 
     > [!IMPORTANT] 
-    > If you are required to disable virus scanning software, you should first scan the computer that runs the App-V 5.0 Sequencer in order to ensure that no unwanted or malicious files can be added to the package.
+    > If you are required to disable virus scanning software, you should first scan the computer that runs the App-V Sequencer in order to ensure that no unwanted or malicious files can be added to the package.
 
 
 4.  On the **Type of Application** page, select **Middleware**, and then click **Next**.
 
 5.  On the **Select Installer** page, click **Browse** and specify the installation file for the application. If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, and then click **Next**.
 
-6.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name is displayed in the App-V 5.0 Management Console.
+6.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name is displayed in the App-V Management Console.
 
     Click **Next**.
 
@@ -218,8 +210,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]   
     > The system does not support non-printable characters in Comments and Descriptions.
- 
-
+    
     The default **Save Location** is also displayed on this page. To change the default location, click **Browse** and specify the new location. Click **Create**.
 
 12. The **Completion** page is displayed. Review the information in the **Virtual Application Package Report** pane as needed, then click **Close**. This information is also available in the **Report.xml** file that is located in the directory specified in step 11 of this procedure.

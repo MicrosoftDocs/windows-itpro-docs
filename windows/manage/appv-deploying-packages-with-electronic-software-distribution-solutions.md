@@ -19,7 +19,7 @@ To deploy App-V packages with Microsoft System Center 2012 Configuration Manage
 ## How to deploy virtualized packages using an ESD
 
 
-Describes the methods you can use to deploy App-V packages by using an ESD
+Describes the methods you can use to deploy App-V packages by using an ESD.
 
 [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md)
 

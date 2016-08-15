@@ -25,7 +25,7 @@ The App-V server does not support the following scenarios:
 
 -   Deployment to a computer that runs the Server Core installation option.
 
--   Deployment to a computer that runs a previous version of the App-V 5.1 server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the Application Virtualization Management Service (HWS) 4.x is not supported.
+-   Deployment to a computer that runs a previous version of the App-V server components. You can install App-V side by side with the App-V 4.5 Lightweight Streaming Server (LWS) server only. Deployment of App-V side by side with the Application Virtualization Management Service (HWS) 4.x is not supported.
 
 -   Deployment to a computer that runs Microsoft SQL Server Express edition.
 
@@ -35,47 +35,7 @@ The App-V server does not support the following scenarios:
 
 ### Management server operating system requirements
 
-The following table lists the operating systems that are supported for the App-V Management server installation.
-
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service Pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+The App-V Management server can be installed on a server that runs Windows Server 2008 R2 with SP1 or a later.
 
 > [!IMPORTANT]  
 > Deployment of the Management server role to a computer with Remote Desktop Services enabled is not supported.
@@ -130,46 +90,8 @@ The following table lists the SQL Server versions that are supported for the App
 
 ### Publishing server operating system requirements
 
-The following table lists the operating systems that are supported for the App-V Publishing server installation.
+The App-V Publishing server can be installed on a server that runs Windows Server 2008 R2 with SP1 or a later.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service Pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ### Publishing server hardware requirements
 
@@ -183,46 +105,7 @@ App-V adds no additional requirements beyond those of Windows Server.
 
 ### Reporting server operating system requirements
 
-The following table lists the operating systems that are supported for the App-V Reporting server installation.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Service Pack</th>
-<th align="left">System architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2016</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
-<td align="left"><p>SP1</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+The App-V Reporting server can be installed on a server that runs Windows Server 2008 R2 with SP1 or a later. 
 
 ### Reporting server hardware requirements
 
