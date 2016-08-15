@@ -16,89 +16,110 @@ author: greg-lindsay
 
 ## In this guide
 
-This guide provides instructions for configuring a test lab that can be used as a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Detailed steps are provided for setting up the test lab, and for deploying Windows 10 under common scenarios with current deployment tools. The following topics are available in this guide:
+This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Detailed steps are provided for setting up the test lab, and for deploying Windows 10 under common scenarios with current deployment tools. The following topics are available in this guide:
 
-<table style="border:5px double;" cellpadding="2">
+<table border="0" cellpadding="2">
     <tr>
-        <td BGCOLOR="#a0e4fa">**Topic**</td>
-        <td BGCOLOR="#a0e4fa">**Description**</td>
+        <td BGCOLOR="#a0e4fa">Topic</td>
+        <td BGCOLOR="#a0e4fa">Description</td>
+    <tr>
+        <td>[10 steps for pros](#10-steps-for-pros)</td>
+        <td>A high level overview of the instructions provided in this guide.</td>
+    </tr>
     <tr>
         <td>[Hardware and software requirements](#hardware-and-software-requirements)</td>
-        <td>Prerequisites to configure the test lab environment.</td>
+        <td>Prerequisites to complete this guide.</td>
     </tr>
     <tr>
         <td>[Lab setup](#lab-setup)</td>
-        <td>A summary of the lab configuration.</td>
+        <td>A summary of the PoC environment.</td>
     </tr>
     <tr>
         <td>[Configure the PoC environment](#configure-the-poc-environment)</td>
-        <td>Step by step instructions to configure the test lab environment.</td>
+        <td>Step by step instructions to configure the PoC environment.</td>
     </tr>
     </tr>
      <tr>
         <td>[Step by step: Deploy Windows 10](#windows-10-poc-guides)</td>
-        <td>Instructions to deploy Windows 10 in the lab environment.</td>
+        <td>Step by step instructions to deploy Windows 10 using the PoC environment.</td>
     </tr>
 </table>
 
+## 10 steps for pros
+
+The following are 10 high-level steps you can use to complete this guide without detailed instruction.
+
+1. Configure an internal network on a Hyper-V host computer.
+2. Download a Windows Server evaluation VHD and copy it to create two VHDs for use in the lab.
+3. Convert a physical computer to VHD using the Disk2vhd utility.
+4. Download a Windows 10 evaluation .iso file.
+5. Download tools.
+6. 
+
 ## Hardware and software requirements
 
-Two computers are required to complete this guide: 
+One computer is required to complete the guide; two computers are recommended. 
+
+If you do not use a client computer on your corporate network to clone and mirror in the POC environment, you can use an arbitrary VM to represent this computer.
 
 <table border="1" cellpadding="2">
     <tr>
-        <td style="border:0px hidden white;"></td>
-        <td BGCOLOR="#a8bbc1" style="border:0px hidden;">**Computer 1**</td>
-        <td BGCOLOR="#a8bbc1" style="border:0px hidden;">**Computer 2**</td>
+        <td></td>
+        <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
+        <td BGCOLOR="#a0e4fa">**Computer 2** (recommended)</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">Role</td>
+        <td BGCOLOR="#a0e4fa">Role</td>
         <td>Hyper-V host</td>
         <td>Client</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">Description</td>
+        <td BGCOLOR="#a0e4fa">Description</td>
         <td>This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.</td>
         <td>This computer is a test system on your corporate network that will be converted to a VHD.</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">OS</td>
-        <td>Windows 8/8.1/10 or Windows Server 2012/2012 R2/2016</td>
+        <td BGCOLOR="#a0e4fa">OS</td>
+        <td>Windows 8/8.1/10 or Windows Server 2008 R2/2012/2012 R2/2016*</td>
         <td>Windows 7 or a later</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">Edition</td>
+        <td BGCOLOR="#a0e4fa">Edition</td>
         <td>Enterprise, Professional, or Education</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">Architecture</td>
+        <td BGCOLOR="#a0e4fa">Architecture</td>
         <td>64-bit</td>
-        <td>Any*</td>
+        <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">RAM</td>
+        <td BGCOLOR="#a0e4fa">RAM</td>
         <td>8 GB RAM (16 GB recommended)</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">Disk</td>
+        <td BGCOLOR="#a0e4fa">Disk</td>
         <td>50 GB available hard disk space (100 GB recommended)</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">CPU</td>
+        <td BGCOLOR="#a0e4fa">CPU</td>
         <td>SLAT-Capable CPU</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a8bbc1">Network</td>
+        <td BGCOLOR="#a0e4fa">Network</td>
         <td>Internet connection</td>
         <td>Any</td>
     </tr>
 </table>
 
->*Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
+>Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
+
+*Hyper-V can be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2. Steps to configure Hyper-V on Windows Server 2008 R2 using WMI are provided in [Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2).
+
+Note: The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows. You can host virtual machines (VMs) on Windows 7 with [Windows Virtual PC](https://www.microsoft.com/en-us/download/details.aspx?id=3702) however this guide does not support using Windows Virtual PC. Note: Server Manager and other role management tools can be installed on Windows 7 SP1 by installing the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=7887) (RSAT). The RSAT for Windows 7 enables you to manage a remote computer running Windows Server 2008 R2.
 
 ## Lab setup
 
@@ -120,24 +141,15 @@ See the following diagram:
 ### In this section
 
 [Install Hyper-V](#install-hyper-v)<BR>
-[Download VHDs](#download-vhds)<BR>
+[Download VHD and ISO files](#download-vhd-and-iso-files)<BR>
 [Configure Hyper-V](#configure-hyper-v)<BR>
+[Convert PC to VHD](#convert-pc-to-vhd)<BR>
 [Configure VHDs](#configure-vhds)<BR>
 [Verify the configuration](#verify-the-configuration)
 
 ### Install Hyper-V
 
 1. Verify that the computer supports Hyper-V.
-
-    To install Hyper-V, the computer must be running one of the following operating systems, or a later operating system: 
-    - Windows 8 
-    - Windows 8.1
-    - Windows 10
-    - Windows Server 2012
-    - Windows Server 2012 R2
-    - Winodws Server 2016
-
-    Note: A 64-bit operating system is requried to run Hyper-V.
 
     Starting with Windows 8, the host computer’s microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](http://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information. To verify your computer supports SLAT, open an administrator command prompt,  type systeminfo, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. 
     
@@ -151,28 +163,182 @@ See the following diagram:
                                Second Level Address Translation: Yes
                                Data Execution Prevention Available: Yes
     ```   
-    In the example above, the computer supports SLAT and Hyper-V. 
+    In this example, the computer supports SLAT and Hyper-V. 
     
-    If one or more requirements are evaluated as "No" then the computer does not support installing Hyper-V.  However, if only the **"Virtualization Enabled In Firmware"** setting is incompatible, you might be able to enable virtualization in the BIOS and change this setting from "No" to "Yes." The location of this setting will depend on the manufacturer and BIOS version, but is often found associated with the BIOS security settings.
+    If one or more requirements are evaluated as "No" then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the "Virtualization Enabled In Firmware" setting from "No" to "Yes." The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
+
+    You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/en-us/library/cc731397.aspx) tool, or you can download the [coreinfo](http://technet.microsoft.com/en-us/sysinternals/cc835722) utility and run it, as shown in the following example:
+
+    ```
+    C:\>coreinfo -v
+
+    Coreinfo v3.31 - Dump information on system CPU and memory topology
+    Copyright (C) 2008-2014 Mark Russinovich
+    Sysinternals - www.sysinternals.com
+
+    Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+    Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+    Microcode signature: 0000001B
+    HYPERVISOR      -       Hypervisor is present
+    VMX             *       Supports Intel hardware-assisted virtualization
+    EPT             *       Supports Intel extended page tables (SLAT)
+    ```   
+
+    Note: A 64-bit operating system is requried to run Hyper-V.
 
 2. Enable Hyper-V.
 
-    The Hyper-V feature is not installed by default. To get it, open an elevated Windows PowerShell window and type the following command. This command works to install Hyper-V on both Windows client and server operating systems:
+    The Hyper-V feature is not installed by default. To install it, open an elevated Windows PowerShell window and type the following command:
 
     ```
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
     ```
-    When you are prompted to restart the computer, choose **Yes**. The computer might restart more than once. 
+    When you are prompted to restart the computer, choose Yes. The computer might restart more than once.
     
-    You can also install Hyper-V using the Control Panel in Windows, under Turn Windows features on or off, as shown below:
-    
-    ![hyper-v feature](images/hyper-v-feature.png)
 
-### Download VHDs
+    You can also install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** (client OS), or using Server Manager's **Add Roles and Features Wizard** (server OS), as shown below:
+    
+    ![hyper-v feature](images/hyper-v-feature.png)<BR>
+    ![hyper-v](images/svr_mgr2.png)
+
+### Download VHD and ISO files
+
+1. Create a directory on your Hyper-V host named C:\VHD and download a single [Windows Server 2012 R2 VHD](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2012-r2) from the TechNet Evaluation Center to the C:\VHD directory. 
+
+    **Important**: This guide assumes that VHDs are stored in the **C:\VHD** directory on the Hyper-V host. If you use a different directory to store VHDs, you must adjust steps in this guide appropriately.
+
+    After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD.
+
+    ![VHD](images/download_vhd.png)
+
+2. Rename the VHD file that you downloaded to **2008R2-poc-1.vhd**. This is not required, but is done to make the filename simpler to recognize.
+3. Copy the VHD to a second file also in the C:\VHD directory and name this VHD **2008R2-poc-2.vhd**.
+4. Download the [Windows 10 Enterprise ISO](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) from the TechNet Evaluation Center to the C:\VHD directory on your Hyper-V host. During registration, you must specify the type, version, and language of installation media to download. 
+5. Rename the ISO file that you downloaded to **w10-enterprise.iso**. Again, this is done so that the filename is simpler to type and recognize.
+
+    In this example, a Windows 10 Enterprise, 64 bit, English VHD is chosen. You can choose a different version if desired. Note that Windows 10 in-place upgrade is only possible if the source operating system and installation media are both 32-bit or both 64-bit, so you should download the file version that corresponds to the version of your source computer for upgrade testing. After completing registration you will be able to download the 3.63 GB Windows 10 Enterprise evaluation ISO. The following commands and output display the procedures described in this section:
+
+    ```
+    C:\>mkdir VHD
+
+    C:\>cd VHD
+
+    C:\VHD>ren 9600*.vhd 2008R2-poc-1.vhd
+
+    C:\VHD>copy 2008R2-poc-1.vhd 2008R2-poc-2.vhd
+            1 file(s) copied.
+
+    C:\VHD ren *.iso w10-enterprise.iso
+    C:\VHD>dir /B
+    2008R2-poc-1.vhd
+    2008R2-poc-2.vhd
+    w10-enterprise.iso
+    ```
+
+### Convert PC to VHD
+
+1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy disk2vhd.exe to a flash drive or other location that is accessible from the computer you wish to convert.
+>Note: You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
+2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
+3. Select checkboxes next to the volumes you wish to copy and specify a location to save the resulting VHD or VHDX file. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.
+4. Click **Create** to start creating a VHDX file. See the following example: 
+
+    ![disk2vhd](images/convert.png)
+
+    In this example, the source computer has two hard drives, C: and E: and a system reserved partition. The VHDX file (w7.vhdx) is being saved to a flash drive (F:) in the F:\VHD directory.<BR> 
+    **Note**: Disk2vhd can also save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted. 
+
+>If you have experience with Microsoft Virtual Machine Converter and prefer to use this tool instead of Disk2vhd, see [Appendix B: Microsoft Virtual Machine Converter](appendix-b-microsoft-virtual-machine-converter).
+
+5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
+
+    ```
+    C:\vhd>dir /B
+    2008R2-poc-1.vhd
+    2008R2-poc-2.vhd
+    w10-enterprise.iso
+    w7.VHDX
+    ```
 
 ### Configure Hyper-V
 
+    Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2008 R2. If your Hyper-V host is running Windows Server 2008 R2, you can use the Hyper-V manager interface to configure Hyper-V, or you can use Hyper-V WMI. Some instructions to configure Hyper-V using WMI are also included in this guide for convenience. For instructions to configure Hyper-V on Windows Server 2008 R2,  
+
+1. Open an elevated Windows PowerShell window and type the following command to create a virtual switch:
+
+    ```
+    New-VMSwitch -Name poc-internal -SwitchType Internal -Notes "PoC Network"
+    ```
+
+2. At the elevated Windows PowerShell prompt, type the following command to determine the megabytes of RAM that are currently available on the Hyper-V host:
+
+    ```
+    (Get-Counter -Counter @("\Memory\Available MBytes")).countersamples.cookedvalue
+    ```
+    **Note**: On a Hyper-V host computer with 16 GB of RAM installed, 12,000 MB of RAM or greater should be available if the computer is not also running other applications. If the computer has less than 12,000 MB of available RAM, try closing applications to free up more memory.
+
+3. Determine the available memory for VMs by dividing the available RAM by 4.  For example:
+
+    ```
+    (Get-Counter -Counter @("\Memory\Available MBytes")).countersamples.cookedvalue/4
+    2775.5
+    ```
+    In this example, VMs must use a maximum of 2700 MB of RAM so that you can run four VMs simultaneously. 
+
+4. At the elevated Windows PowerShell prompt, type the following command to create two new VMs using the resource values that were calculated in the previous step:
+
+    ```
+    $maxRAM = 2700MB
+    New-VM –Name "2012R2-DC1" –VHDPath c:\vhd\2008R2-poc-1.vhd -SwitchName poc-internal
+    Set-VMMemory -VMName "2012R2-DC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
+    New-VM –Name "2012R2-SRV1" –VHDPath c:\vhd\2008R2-poc-2.vhd -SwitchName poc-internal
+    Set-VMMemory -VMName "2012R2-SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
+    ```
+    >Use the following Windows PowerShell commands to add VMs on Windows Server 2008 R2:
+
+    ```
+
+    ```
+    
 ### Configure VHDs
+
+## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
+
+For more information, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
+
+    >To install Hyper-V on Windows Server 2008 R2, use the Add-WindowsFeature cmdlet:
+
+    ```
+    Add-WindowsFeature -Name Hyper-V
+    ```
+    >Use the following Windows PowerShell commands to create a virtual switch on Windows Server 2008 R2:
+
+    ```
+    $SwitchFriendlyName = "poc-internal"
+    $InternalEthernetPortFriendlyName = $SwitchFriendlyName
+    $InternalSwitchPortFriendlyName = "poc"
+    $SwitchName = [guid]::NewGuid().ToString()
+    $InternalSwitchPortName = [guid]::NewGuid().ToString()
+    $InternalEthernetPortName = [guid]::NewGuid().ToString()
+    $NumLearnableAddresses = 1024
+    $ScopeOfResidence = ""
+    $VirtualSwitchManagementService = gwmi Msvm_VirtualSwitchManagementService -namespace "root\virtualization"
+    $Result = $VirtualSwitchManagementService.CreateSwitch($SwitchName, $SwitchFriendlyName, $NumLearnableAddresses, $ScopeOfResidence) 
+    $Switch = [WMI]$Result.CreatedVirtualSwitch 
+    $Result = $VirtualSwitchManagementService.CreateSwitchPort($Switch, $InternalSwitchPortName, $InternalSwitchPortFriendlyName, $ScopeOfResidence)
+    $InternalSwitchPort = [WMI]$Result.CreatedSwitchPort 
+    $Result = $VirtualSwitchManagementService.CreateInternalEthernetPortDynamicMac($InternalEthernetPortName, $InternalEthernetPortFriendlyName)
+    $InternalEthernetPort = [WMI]$Result.CreatedInternalEthernetPort
+    $query = "Associators of {$InternalEthernetPort} Where ResultClass=CIM_LanEndpoint"
+    $InternalLanEndPoint = gwmi -namespace root\virtualization -query $query
+    $Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort, $InternalLanEndPoint)
+    $filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
+    $NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
+    ```
+
+## Appendix B: Microsoft Virtual Machine Converter
+
+You can also use [Microsoft Virtual Machine Converter](https://www.microsoft.com/en-us/download/details.aspx?id=42497) (MVMC) to create VHDs from a physical computer. The MVMC utility has enhanced functionality compared to the Disk2vhd utility in that it can be run from any network location, enables you to specify both a remote source computer and remote destination Hyper-V host, and automatically configures and installs the VM on the Hyper-V host.  However, MVMC requires that the destination Hyper-V host be running the BITS compact server service, which is only available on Windows Server operating systems.  Therefore, you cannot use MVMC if Hyper-V is running on Windows 8 or Windows 10. If you choose to use the MVMC utility instead of disk2vhd, complete the steps in the [Configure Hyper-V](#configure-hyper-v) section first so that you can specify a virtual switch and allocate RAM appropriately to the destination VM when asked to specify these parameters in the MVMC utility.
 
 ## Windows 10 PoC guides
 
