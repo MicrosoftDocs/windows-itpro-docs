@@ -636,7 +636,7 @@ The following table describes the various script events and the context under wh
 
 ### Using multiple scripts on a single event trigger
 
-App-V supports the use of multiple scripts on a single event trigger for App-V packages, including packages that you convert from App-V 4.6 to App-V for Windows 10. To enable the use of multiple scripts, App-V uses a script launcher application, named ScriptRunner.exe, which is installed as part of the App-V client installation.
+App-V supports the use of multiple scripts on a single event trigger for App-V packages, including packages that you convert from App-V 4.6 to App-V for Windows 10. To enable the use of multiple scripts, App-V uses a script launcher application, named ScriptRunner.exe, which is included in the App-V client.
 
 **How to use multiple scripts on a single event trigger:**
 
@@ -683,10 +683,10 @@ Using the following example file and table, modify the deployment or user config
 </tr>
 <tr class="even">
 <td align="left"><p><code><Path>ScriptRunner.exe</Path></code></p></td>
-<td align="left"><p>The script launcher application that is installed as part of the App-V client installation.</p>
+<td align="left"><p>The script launcher application that is included in the App-V client.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>Although ScriptRunner.exe is installed as part of the App-V client, the location of the App-V client must be in %path% or ScriptRunner will not run. ScriptRunner.exe is typically located in the C:\Program Files\Microsoft Application Virtualization\Client folder.</p>
+<p>Although ScriptRunner.exe is included in the App-V client, the location of the App-V client must be in %path% or ScriptRunner will not run. ScriptRunner.exe is typically located in the C:\Program Files\Microsoft Application Virtualization\Client folder.</p>
 </div>
 <div>
  

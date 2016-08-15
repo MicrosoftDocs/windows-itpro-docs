@@ -21,7 +21,7 @@ Use this information to plan how to deploy App-V so that it does not disrupt you
 
 -   [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
 
-    This section describes the minimum hardware and software requirements necessary for App-V client, sequencer and server feature installations. Additionally, associated feature planning information is also displayed.
+    This section describes the minimum hardware and software requirements and other planning information for the App-V sequencer and App-V server components.
 
 -   [App-V Planning Checklist](appv-planning-checklist.md)
 

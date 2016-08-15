@@ -41,7 +41,7 @@ This checklist can be used to help you plan for preparing your organization for 
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for App-V 1.0 Deployment Prerequisites and prepare your computing environment.</p></td>
+<td align="left"><p>Plan for App-V deployment prerequisites and prepare your computing environment.</p></td>
 <td align="left"><p>[App-V Prerequisites](appv-prerequisites.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
@@ -60,13 +60,13 @@ This checklist can be used to help you plan for preparing your organization for 
 <tr class="odd">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
 <td align="left"><p>If applicable, review the options and steps for migrating from a previous version of App-V.</p></td>
-<td align="left"><p>[Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)</p></td>
+<td align="left"><p>[Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Plan for running App-V clients using in shared content store mode.</p></td>
-<td align="left"><p>[How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md)</p></td>
+<td align="left"><p>Decide whether to configure App-V clients in Shared Content Store mode.</p></td>
+<td align="left"><p>[Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)</p></td>
 <td align="left"><p></p></td>
 </tr>
 </tbody>
