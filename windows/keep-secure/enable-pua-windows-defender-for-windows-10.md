@@ -49,7 +49,7 @@ System Center 2012 R2 Endpoint Protection<br>System Center 2012 Configuration Ma
 
 You can use PowerShell to detect PUA without blocking them. In fact, you can run audit mode on individual machines. This feature is useful if your company is conducting an internal software security compliance check and you’d like to avoid any false positives.
 
-1. Open PowerShell as Administrator <br>
+1. Open PowerShell as Administrator: <br>
 
     a.  Click **Start**, type **powershell**, and press **Enter**.
     
@@ -74,7 +74,7 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 
  You can detect PUA without blocking them from your client. Gain insights into what can be blocked.
 
-1. Open PowerShell as Administrator <br>
+1. Open PowerShell as Administrator: <br>
 
     a.  Click **Start**, type **powershell**, and press **Enter**.
     
