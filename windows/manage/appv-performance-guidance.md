@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Performance Guidance for Application Virtualization
 
+Applies to: Windows 10, version 1607
 
 Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 

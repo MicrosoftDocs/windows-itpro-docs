@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Using the App-V Client Management Console
 
+Applies to: Windows 10, version 1607
 
 This topic provides information about how you can configure and manage the Microsoft Application Virtualization (App-V) client.
 

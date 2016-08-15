@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Delete a Connection Group
 
+Applies to: Windows 10, version 1607
 
 Use the following procedure to delete an existing App-V connection group.
 

@@ -11,6 +11,8 @@ ms.prod: w10
 
 # How to Sequence a New Application with App-V
 
+Applies to: Windows 10, version 1607
+
 In Windows 10, version 1607, the App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 
 **To review or do before you start sequencing**

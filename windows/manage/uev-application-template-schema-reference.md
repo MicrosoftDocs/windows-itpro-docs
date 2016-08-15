@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Application Template Schema Reference for UE-V
 
+Applies to: Windows 10, version 1607
 
 User Experience Virtualization (UE-V) uses XML settings location templates to define the desktop application settings and Windows settings that are captured and applied by UE-V. UE-V includes a set of default settings location templates. You can also create custom settings location templates with the UE-V template generator.
 

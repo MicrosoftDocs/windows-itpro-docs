@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Create a Connection Group
 
+Applies to: Windows 10, version 1607
 
 Use these steps to create a connection group by using the App-V Management Console. To use PowerShell to create connection groups, see [How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md).
 

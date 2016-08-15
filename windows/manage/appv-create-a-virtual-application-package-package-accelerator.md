@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Create a Virtual Application Package Using an App-V Package Accelerator
 
+Applies to: Windows 10, version 1607
 
 **Important**  
 The App-V Sequencer does not grant any license rights to the software application that you use to create the Package Accelerator. You must abide by all end user license terms for the application that you use. It is your responsibility to make sure that the software application’s license terms allow you to create a Package Accelerator with the App-V Sequencer.

@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Load the PowerShell Cmdlets and Get Cmdlet Help
 
+Applies to: Windows 10, version 1607
 
 What this topic covers:
 
