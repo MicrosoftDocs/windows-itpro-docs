@@ -1,6 +1,6 @@
 ---
 title: Migrating to App-V from a Previous Version (Windows 10)
-description: Migrating to App-V from a Previous Version
+description: Migrating to App-V for Windows 10 from a previous version
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,17 +9,11 @@ ms.prod: w10
 ---
 
 
-# Migrating to App-V from a Previous Version
+# Migrating to App-V from previous versions
 
+Applies to: Windows 10, version 1607
 
-With Microsoft Application Virtualization (App-V), you can migrate your existing App-V 4.6 or App-V 5.0 infrastructure to the more flexible, integrated, and easier to manage App-V infrastructure.
-However, you cannot migrate directly from App-V 4.x to App-V for Windows 10—you must migrate to App-V 5.0 first. For more information on migrating from App-V 4.x to App-V 5.0, see [Migrating to App-V server from a Previous Version](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/migrating-to-app-v-51-from-a-previous-version)  
-
-**Note**  
-Packages for App-V for Windows 10 are exactly the same as packages for App-V 5.0. There has been no change in the package format between the versions and therefore, there is no need to convert App-V 5.0 packages to App-V for Window 10 packages.
-
-For information about the differences between earlier versions of App-V, see the **Differences between App-4.6 and App-V 5.0 section** of [About App-V 5.0](https://technet.microsoft.com/en-us/itpro/mdop/appv-v5/about-app-v-50).
-
+To migrate from App-V 4.x to App-V for Windows 10, you must upgrade to App-V 5.x first. 
 
 ## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V Package Converter
 
@@ -167,7 +161,8 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 ## Converting packages created using a prior version of App-V
 
 
-Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion.
+Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion. App-V packages created with App-V 5.x don't need to be converted.
+
 
 **Important**  
 After you convert an existing package you should test the package prior to deploying the package to ensure the conversion process was successful.
@@ -205,10 +200,10 @@ After you convert an existing package you should test the package prior to deplo
 
  
 
-When converting a package check for failing files or shortcuts. Locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
+When converting a package check for failing files or shortcuts, locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
 
 **Note**  
-It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See, [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
+It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
 If a converted package does not open after you convert it, it is also recommended that you re-sequence the application using the App-V sequencer.
 
@@ -282,7 +277,7 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 </tr>
 <tr class="even">
 <td align="left"><p>Migrate existing packages.</p></td>
-<td align="left"><p>See the <strong>Converting packages created using a prior version of App-V</strong> section of this article.</p></td>
+<td align="left"><p>See Converting packages created using a prior version of App-V earlier in this topic.</p></td>
 </tr>
 </tbody>
 </table>

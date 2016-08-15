@@ -1,0 +1,19 @@
+- name: Windows
+  tocHref: /itpro/windows/
+  topicHref: /itpro/windows/index
+  items:
+  - name: What's new
+    tocHref: /itpro/windows/whats-new/
+    topicHref: /itpro/windows/whats-new/index
+  - name: Plan
+    tocHref: /itpro/windows/plan/
+    topicHref: /itpro/windows/plan/index
+  - name: Deploy
+    tocHref: /itpro/windows/deploy/
+    topicHref: /itpro/windows/deploy/index
+  - name: Keep secure
+    tocHref: /itpro/windows/keep-secure/
+    topicHref: /itpro/windows/keep-secure/index
+  - name: Manage
+    tocHref: /itpro/windows/manage/
+    topicHref: /itpro/windows/manage/index

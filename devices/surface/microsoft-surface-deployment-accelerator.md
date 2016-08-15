@@ -83,7 +83,7 @@ You can find a full list of available driver downloads at [Download the latest f
 
 ## Changes and updates
 
-SDA is periodically updated by Microsoft. For instructions on how these features are used, see [Step-by-Step: Microsoft Surface Deployment Accelerator](https://technet.microsoft.com/en-us/itpro/surface/step-by-step-surface-deployment-accelerator).
+SDA is periodically updated by Microsoft. For instructions on how these features are used, see [Step-by-Step: Microsoft Surface Deployment Accelerator](https://technet.microsoft.com/itpro/surface/step-by-step-surface-deployment-accelerator).
 
 >**Note:**&nbsp;&nbsp;To install a newer version of SDA on a server with a previous version of SDA installed, you only need to run the installation file for the new version of SDA. The installer will handle the upgrade process automatically. If you used SDA to create a deployment share prior to the upgrade and want to use new features of the new version of SDA, you will need to create a new deployment share. SDA does not support upgrades of an existing deployment share.
  

@@ -8,7 +8,6 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: servicing; devices
 author: jdeckerMS
-localizationpriority: high
 ---
 
 # Windows Update for Business

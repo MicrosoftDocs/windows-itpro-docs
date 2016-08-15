@@ -63,7 +63,7 @@ You can also manage your App-V environment using an Electronic Software Distribu
 
     -   With disconnected remote users who cannot connect to the App-V infrastructure.
 
-    -   When you are running a software management system, such as Configuration Manager 2012.
+    -   When you are running a software management system, such as System Center 2012 Configuration Manager.
 
     -   When network bandwidth limitations inhibit electronic software distribution.
 
@@ -925,7 +925,7 @@ For example, an average user can stream a 100 MB package in less than 2 minutes,
 
 The number of clients a streaming server can support can be significantly increased and the peak streaming requirements reduced if you pre-cache your applications. You can also increase the number of clients a streaming server can support by using on-demand streaming delivery and stream optimized packages.
 
-## Combining App-V 5.1 Server Roles
+## Combining App-V Server Roles
 
 
 Discounting scaling and fault-tolerance requirements, the minimum number of servers needed for a location with connectivity to Active Directory is one. This server will host the management server, management server service, and Microsoft SQL Server roles. Server roles, therefore, can be arranged in any desired combination since they do not conflict with one another.

@@ -16,7 +16,7 @@ The topics in this section provide information and step-by-step procedures to he
 
 [Getting Started with App-V](appv-getting-started.md)  
 
-- [About App-V](appv-about-appv.md)
+- [What's new in App-V](appv-about-appv.md)
 - [Evaluating App-V](appv-evaluating-appv.md)
 - [High Level Architecture for App-V](appv-high-level-architecture.md)
 - [Accessibility for App-V](appv-accessibility.md)

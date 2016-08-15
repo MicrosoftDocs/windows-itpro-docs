@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# How to Move the App-V Server to Another Computer
+# How to move the App-V server to another computer
 
 
 Use the following information to create a new management server console in your environment.
@@ -17,7 +17,7 @@ Use the following information to create a new management server console in your 
 ## To create a new management server console
 
 
-The following list displays the steps necessary to create a new management server console:
+Follow these steps to create a new management server console:
 
 1.  Install the management server on a computer in your environment. For more information about installing the management server see [Deploying the App-V server](appv-deploying-the-appv-server.md).
 

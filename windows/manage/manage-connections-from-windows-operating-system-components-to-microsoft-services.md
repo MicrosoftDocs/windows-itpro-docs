@@ -273,7 +273,14 @@ To turn off font streaming, create a REG\_DWORD registry setting called **Disabl
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 
-To turn off Insider Preview builds if you're running a released version of Windows 10. If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
+To turn off Insider Preview builds for a released version of Windows 10:
+
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
+
+To turn off Insider Preview builds for an Insider Preview version of Windows 10:
+
+> [!NOTE]  
+> If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
 
 -   Turn off the feature in the UI: **Settings** > **Update & security** > **Windows Insider Program** > **Stop Insider Preview builds**.
 
