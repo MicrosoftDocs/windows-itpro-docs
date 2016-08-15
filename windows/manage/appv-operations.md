@@ -42,7 +42,7 @@ This section of the Microsoft Application Virtualization (App-V) Administratorâ€
 
     Provides instructions for migrating to App-V from a previous version.
 
--   [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+-   [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
     Describes the set of Windows PowerShell cmdlets available for administrators performing various App-V server tasks.
 

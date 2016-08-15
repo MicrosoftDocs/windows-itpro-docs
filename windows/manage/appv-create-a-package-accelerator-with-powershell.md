@@ -44,7 +44,7 @@ App-V package accelerators automatically sequence large, complex applications. A
 ## Related topics
 
 
-[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
  
 
