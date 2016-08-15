@@ -74,18 +74,18 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 
  You can detect PUA without blocking them from your client. Gain insights into what can be blocked.
 
- 1. Open PowerShell as Administrator: <br>
+1. Open PowerShell as Administrator <br>
 
-    a.  Click **Start**, type **powershell**, and press **Enter**.
+    a.  Click **Start**, type **powershell**, and press **Enter**.
 
-    b.  Click **Windows PowerShell** to open the interface.
-    > [!NOTE]
-    > You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
-2. Enter the PowerShell command to enable audit mode:
+    b.  Click **Windows PowerShell** to open the interface.
+    > [!NOTE]
+    > You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
+2. Enter the PowerShell command to enable PUA in audit mode:
 
-  ```text
-  et-mpPreference -puaprotection 1
-  ```
+  ```text
+  et-mpPreference -puaprotection 1
+  ```
 
   
 ##View PUA events
