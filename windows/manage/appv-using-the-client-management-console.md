@@ -13,17 +13,28 @@ ms.prod: w10
 
 Applies to: Windows 10, version 1607
 
-This topic provides information about how you can configure and manage the Microsoft Application Virtualization (App-V) client.
+This topic provides information about about using the Application Virtualization (App-V) client management console to manage packages on the computer running the App-V client.
 
-## Modify App-V client configuration
+## Obtain the client management console
 
+The client management console is separate from the App-V client itself. You can download the client management console from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=41186).
 
-The App-V client has associated settings that can be configured to determine how the client will run in your environment. You can manage these settings on the computer that runs the client or by using PowerShell or Group Policy. For more information about how to modify the client using PowerShell or Group Policy configuration see, [How to Modify Client Configuration by Using PowerShell](appv-modify-client-configuration-with-powershell.md).
+> [!NOTE]  
+To perform all of the actions available using the client management console, you must have administrative access on the computer running the App-V client.
+
+## Options for managing the App-V client
+
+The App-V client has associated settings that can be configured to determine how the client will run in your environment. You can manage these settings on the computer that runs the client, or you can use Windows PowerShell or Group Policy. For more information about configuring the client by using Windows PowerShell or Group Policy, see:
+
+- [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)
+
+- [How to Modify Client Configuration by Using Windows PowerShell](appv-modify-client-configuration-with-powershell.md)
+
+- [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](appv-configure-the-client-to-receive-updates-from-the-publishing-server) 
 
 ## <a href="" id="the-app-v-5-1-client-management-console-"></a>The App-V client management console
 
-
-You can obtain information about the App-V client or perform specific tasks by using the App-V client management console. Many of the tasks that you can perform in the client management console you can also perform by using PowerShell. The associated PowerShell cmdlets for each action are also displayed in the following table. For more information about how to use PowerShell, see [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md).
+You can obtain information about the App-V client or perform specific tasks by using the App-V client management console. Many of the tasks that you can perform in the client management console you can also perform by using Windows PowerShell. The associated Windows PowerShell cmdlets for each action are also displayed in the following table. For more information about how to use Windows PowerShell, see [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md).
 
 The client management console contains the following described main tabs.
 
@@ -46,10 +57,10 @@ The client management console contains the following described main tabs.
 <li><p>Update – Use the <strong>Update</strong> tile to refresh a virtualized application or to receive a new virtualized package.</p>
 <p>The <strong>Last Refresh</strong> displays the current version of the virtualized package.</p></li>
 <li><p>Download all virtual applications – Use the <strong>Download</strong> tile to download all of the packages provisioned to the current user.</p>
-<p>(Associated PowerShell cmdlet: <strong>Mount-AppvClientPackage</strong>)</p>
+<p>(Associated Windows PowerShell cmdlet: <strong>Mount-AppvClientPackage</strong>)</p>
 <p></p></li>
 <li><p>Work Offline – Use this tile to disallow all automatic and manual virtual application updates.</p>
-<p>(Associated PowerShell cmdlet: <strong>Set-AppvPublishServer –UserRefreshEnabled –GlobalRefreshEnabled</strong>)</p></li>
+<p>(Associated Windows PowerShell cmdlet: <strong>Set-AppvPublishServer –UserRefreshEnabled –GlobalRefreshEnabled</strong>)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -60,17 +71,11 @@ The client management console contains the following described main tabs.
 <tr class="odd">
 <td align="left"><p>App Connection Groups</p></td>
 <td align="left"><p>The <strong>APP CONNECTION GROUPS</strong> tab displays all of the connection groups that are available to the current user. Click a specific connection group to see all of the packages that are part of the selected group. This displays information about connection groups that are already in use and how much of the connection group contents have been downloaded to the computer. Additionally, you can start and stop connection group downloads. You can use this section to initiate a repair. A repair will remove all of the user state that is associated a connection group.</p>
-<p>(Associated PowerShell cmdlets: Download - <strong>Mount-AppvClientConnectionGroup</strong>. Repair -<strong>AppvClientConnectionGroup</strong>.)</p>
+<p>(Associated Windows PowerShell cmdlets: Download - <strong>Mount-AppvClientConnectionGroup</strong>. Repair -<strong>AppvClientConnectionGroup</strong>.)</p>
 <p></p></td>
 </tr>
 </tbody>
 </table>
-
- 
-
-[How to Access the Client Management Console](appv-accessing-the-client-management-console.md)
-
-[How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](appv-configure-the-client-to-receive-updates-from-the-publishing-server.md)
 
 ## Have a suggestion for App-V?
 
@@ -79,14 +84,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-
 [Operations for App-V](appv-operations.md)
-
- 
-
- 
-
-
-
-
-
