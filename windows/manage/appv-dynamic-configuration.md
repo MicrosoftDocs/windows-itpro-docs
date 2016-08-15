@@ -11,6 +11,8 @@ ms.prod: w10
 
 # About App-V Dynamic Configuration
 
+Applies to: Windows 10, version 1607
+
 You can use the dynamic configuration to customize an App-V package for a user. Use the following information to create or edit an existing dynamic configuration file.
 
 When you edit the dynamic configuration file it customizes how an App-V package will run for a user or group. This helps to provide a more convenient method for package customization by removing the need to re-sequence packages using the desired settings, and provides a way to keep package content and custom settings independent.

@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Create and Use a Project Template
 
+Applies to: Windows 10, version 1607
 
 You can use an App-V project template to save commonly applied settings associated with an existing virtual application package. These settings can then be applied when you create new virtual application packages in your environment. Using a project template can streamline the process of creating virtual application packages.
 

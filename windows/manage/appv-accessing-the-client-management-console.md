@@ -10,6 +10,8 @@ ms.prod: w10
 
 # How to access the client management console
 
+Applies to: Windows 10, version 1607
+
 Use the App-V client management console to manage packages on the computer running the App-V client.
 
 > [!NOTE]  

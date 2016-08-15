@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Enable Reporting on the App-V Client by Using PowerShell
 
+Applies to: Windows 10, version 1607
 
 Use the following procedure to configure the App-V for reporting.
 

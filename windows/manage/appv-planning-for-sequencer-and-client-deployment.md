@@ -10,6 +10,7 @@ ms.prod: w10
 
 # Planning for the App-V Sequencer and Client Deployment
 
+Applies to: Windows 10, version 1607
 
 Before you can use App-V, you must install the App-V Sequencer, enable the App-V client, and optionally the App-V shared content store. The following sections address planning for these installations.
 

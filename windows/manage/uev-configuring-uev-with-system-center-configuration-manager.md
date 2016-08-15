@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Configuring UE-V with System Center Configuration Manager 
 
+Applies to: Windows 10, version 1607
 
 After you deploy User Experience Virtualization (UE-V) and its required features, you can start to configure it to meet your organization's need. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of System Center Configuration Manager (2012 SP1 or later) to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
