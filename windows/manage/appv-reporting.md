@@ -135,9 +135,7 @@ To use App-V reporting you must enable and configure the App-V client. To config
 The following examples show how Windows PowerShell parameters can configure the reporting features of the App-V client.
 
 **Note**  
-The following configuration task can also be configured using Group Policy settings in the App-V ADMX template. The App-V settings are under **Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V**. For more information about using the ADMX template, see [How to Modify App-V Client Configuration Using the ADMX Template and Group Policy](appv-modify-client-configuration-with-the-admx-template-and-group-policy.md).
-
- 
+The following configuration task can also be configured using Group Policy settings in the App-V ADMX template. The App-V settings are under **Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V**.
 
 **To enable reporting and to initiate data collection on the computer running the App-V client**:
 

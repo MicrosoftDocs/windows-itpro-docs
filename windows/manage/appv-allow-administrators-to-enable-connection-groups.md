@@ -37,7 +37,7 @@ Use one of the following methods to allow only administrators to enable or disab
 <tr class="odd">
 <td align="left"><p>Group Policy setting</p></td>
 <td align="left"><p>Enable the “Require publish as administrator” Group Policy setting, which is located in the following Group Policy Object node:</p>
-<p><strong>Computer Configuration &gt; Policies &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing</strong></p></td>
+<p><strong>Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>PowerShell cmdlet</p></td>
