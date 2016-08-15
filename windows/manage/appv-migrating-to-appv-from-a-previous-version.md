@@ -200,53 +200,16 @@ After you convert an existing package you should test the package prior to deplo
 
  
 
-When converting a package check for failing files or shortcuts. Locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
+When converting a package check for failing files or shortcuts, locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
 
 **Note**  
-It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See, [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
+It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
 If a converted package does not open after you convert it, it is also recommended that you re-sequence the application using the App-V sequencer.
 
- 
-
 [How to Convert a Package Created in a Previous Version of App-V](appv-convert-a-package-created-in-a-previous-version-of-appv.md)
 
-## Migrating Clients
-
-
-The following table displays the recommended method for upgrading clients.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task</th>
-<th align="left">More Information</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Upgrade your environment to the latest version of App-V 4.6</p></td>
-<td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](https://technet.microsoft.com/en-us/itpro/mdop/appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sequence and roll out App-V packages. As needed, unpublish App-V 4.6 packages.</p></td>
-<td align="left"><p>[How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-**Important**  
-You must be running the latest version of App-V 4.6 to use coexistence mode. Additionally, when you sequence a package, you must configure the Managing Authority setting, which is in the **User Configuration** is located in the **User Configuration** section.
-
- 
-
-## Migrating the App-V server Server Full Infrastructure
+## Migrating the App-V Server Full Infrastructure
 
 
 There is no direct method to upgrade to a full App-V infrastructure. Use the information in the following section for information about upgrading the App-V server.
@@ -264,20 +227,20 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Upgrade your environment to the latest version of App-V 4.6.</p></td>
-<td align="left"><p>[Application Virtualization Deployment and Upgrade Considerations](https://technet.microsoft.com/en-us/itpro/mdop/appv-v4/application-virtualization-deployment-and-upgrade-considerations-copy).</p></td>
+<td align="left"><p>Review prerequisites.</p></td>
+<td align="left"><p>[App-V Server prerequisite software](appv-prerequisites.md#app-v-server-prerequisite-software).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Deploy App-V version of the client.</p></td>
+<td align="left"><p>Enable the App-V client.</p></td>
 <td align="left"><p>[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Install App-V server server.</p></td>
-<td align="left"><p>[How to Deploy the App-V server Server](appv-deploy-the-appv-server.md).</p></td>
+<td align="left"><p>Install App-V Server.</p></td>
+<td align="left"><p>[How to Deploy the App-V Server](appv-deploy-the-appv-server.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Migrate existing packages.</p></td>
-<td align="left"><p>See Converting packages created using a prior version of App-V earlier in this topic.</p></td>
+<td align="left"><p>See [Converting packages created using a prior version of App-V](#converting-packages-created-using-a-prior-version-of-app-v) earlier in this topic.</p></td>
 </tr>
 </tbody>
 </table>

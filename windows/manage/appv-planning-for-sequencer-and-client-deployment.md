@@ -66,4 +66,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 - [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)
 
-- [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md)
+- [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)

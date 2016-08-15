@@ -15,7 +15,7 @@ App-V supports a number of different deployment options. Review this topic for i
 ## App-V Deployment Information
 
 
--   [Deploying the App-V Sequencer and Client](appv-deploying-the-appv-sequencer-and-client.md)
+-   [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)
 
     This section describes how to install the App-V sequencer, which is used to virtualize applications, and how to enable the App-V client, which runs on target computers to facilitate virtualized packages.
 

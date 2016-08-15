@@ -14,7 +14,7 @@ ms.prod: w10
 
 An App-V connection group allows you to run all the virtual applications as a defined set of packages in a single virtual environment. For example, you can virtualize an application and its plug-ins by using separate packages, but run them together in a single connection group.
 
-A connection group XML file defines the connection group that runs on the computer where you’ve installed the App-V client. For information about the connection group XML file and how to configure it, see [About the Connection Group File](appv-connection-group-file.md).
+A connection group XML file defines the connection group for the App-V client. For information about the connection group XML file and how to configure it, see [About the Connection Group File](appv-connection-group-file.md).
 
 This topic explains the following procedures:
 
