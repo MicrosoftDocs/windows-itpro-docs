@@ -42,7 +42,6 @@
 ##### [Release Notes for App-V](appv-release-notes-for-appv-for-windows.md)
 #### [Evaluating App-V](appv-evaluating-appv.md)
 #### [High Level Architecture for App-V](appv-high-level-architecture.md)
-#### [Accessibility for App-V](appv-accessibility.md)
 ### [Planning for App-V](appv-planning-for-appv.md)
 #### [Preparing Your Environment for App-V](appv-preparing-your-environment.md)
 ##### [App-V Prerequisites](appv-prerequisites.md)
