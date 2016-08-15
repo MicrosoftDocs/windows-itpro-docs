@@ -52,7 +52,7 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 1. Open PowerShell as Administrator <br>
 
     a.  Click **Start**, type **powershell**, and press **Enter**.
-
+    
     b.  Click **Windows PowerShell** to open the interface.
     > [!NOTE]
     > You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
@@ -81,7 +81,6 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
     b.  Click **Windows PowerShell** to open the interface.
     > [!NOTE]
     > You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
-    
 2. Enter the PowerShell command to enable audit mode:
 
   ```text
