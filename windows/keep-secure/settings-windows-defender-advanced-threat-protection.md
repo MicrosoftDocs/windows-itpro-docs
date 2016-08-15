@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: DulceMV
+localizationpriority: high
 ---
 
 # Windows Defender Advanced Threat Protection settings

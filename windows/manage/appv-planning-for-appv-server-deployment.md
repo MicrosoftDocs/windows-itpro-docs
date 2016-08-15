@@ -1,6 +1,6 @@
 ---
 title: Planning for the App-V Server Deployment (Windows 10)
-description: Planning for the App-V Server Deployment
+description: Planning for the App-V 5.1 Server Deployment
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -96,21 +96,10 @@ The following displays information about server-related protocols used by the Ap
 
 ## Have a suggestion for App-V?
 
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions at [Microsoft Application Virtualization](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
-
 
 [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
 
 [Deploying the App-V Server](appv-deploying-the-appv-server.md)
-
- 
-
- 
-
-
-
-
-

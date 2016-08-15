@@ -17,7 +17,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-In Windows 10, Version 1607, your network users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser. Phone sign-in uses Bluetooth, which means no need to wait for a phone call -- just unlock the phone and tap the app.
+In Windows 10, version 1607, your network users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser. Phone sign-in uses Bluetooth, which means no need to wait for a phone call -- just unlock the phone and tap the app.
 
 ![Sign in to a device](images/phone-signin-menu.png)
 

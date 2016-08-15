@@ -8,16 +8,16 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-# Deploying App-V
+# Deploying App-V for Windows 10
 
-App-V supports a number of different deployment options. This section of the App-V Administrator’s Guide includes information you should consider about the deployment of App-V and step-by-step procedures to help you successfully perform the tasks that you must complete at different stages of your deployment.
+App-V supports a number of different deployment options. Review this topic for information about the tasks that you must complete at different stages in your deployment.
 
 ## App-V Deployment Information
 
 
 -   [Deploying the App-V Sequencer and Client](appv-deploying-the-appv-sequencer-and-client.md)
 
-    This section describes how to install the App-V sequencer which is used to virtualize applications, and the App-V client which runs on target computers to facilitate virtualized packages.
+    This section describes how to install the App-V sequencer, which is used to virtualize applications, and how to enable the App-V client, which runs on target computers to facilitate virtualized packages.
 
 -   [Deploying the App-V Server](appv-deploying-the-appv-server.md)
 

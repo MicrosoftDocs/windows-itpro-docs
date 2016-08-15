@@ -19,7 +19,7 @@ Before you can use App-V, you must install the App-V Sequencer, enable the App-V
 App-V uses a process called sequencing to create virtualized applications and application packages. Sequencing requires the use of a computer that runs the App-V Sequencer.
 
 > [!NOTE]  
-> For information about the new functionality of App-V sequencer, see the **Sequencer Improvements** section of [About App-V](appv-about-appv.md).
+> For information about the new functionality of App-V sequencer, see [What's new in App-V](appv-about-appv.md#bkmk-seqimprove).
 
 
 The computer that runs the App-V sequencer must meet the minimum system requirements. For a list of these requirements, see [App-V Supported Configurations](appv-supported-configurations.md).
@@ -38,10 +38,7 @@ Ideally, you should install the sequencer on a computer running as a virtual mac
 
 ## Planning for App-V client deployment
 
-In Windows 10, version 1607, the App-V client is included with the operating system. For more info, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
-
-For a list of the client minimum requirements see [App-V Prerequisites](appv-prerequisites.md).
-
+In Windows 10, version 1607, the App-V client is included with the operating system. For more information, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
 
 ## Planning for the App-V Shared Content Store (SCS)
 

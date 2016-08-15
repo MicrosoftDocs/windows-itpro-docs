@@ -1,1 +1,3 @@
-# Index test file for Open Publishing
+---
+redirect_url: https://technet.microsoft.com/edu/windows/
+---

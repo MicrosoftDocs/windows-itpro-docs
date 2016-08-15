@@ -14,8 +14,8 @@ ms.prod: w10
 
 This checklist can be used to help you during an App-V deployment.
 
-> [!NOTE]
-> This checklist outlines the recommended steps and a high-level list of items to consider when deploying App-V features. It is recommended that you copy this checklist into a spreadsheet program and customize it for your use.
+>**Note**<br>
+This checklist outlines the recommended steps and items to consider when deploying App-V features. We recommend that you copy this checklist into a spreadsheet program and customize it for your use.
 
 <table>
 <colgroup>

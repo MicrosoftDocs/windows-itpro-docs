@@ -7,6 +7,7 @@ ms.prod: edge
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
+localizationpriority: high
 ---
 
 # Browser: Microsoft Edge and Internet Explorer 11

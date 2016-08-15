@@ -14,7 +14,7 @@ ms.prod: w10
 
 The following recommendations can be used as a baseline to help determine capacity planning information that is appropriate to your organization’s App-V infrastructure.
 
-**Important**  
+>**Important**  
 Use the information in this section only as a general guide for planning your App-V deployment. Your system capacity requirements will depend on the specific details of your hardware and application environment. Additionally, the performance numbers displayed in this document are examples and your results may vary.
 
  
@@ -22,7 +22,7 @@ Use the information in this section only as a general guide for planning your Ap
 ## Determine the Project Scope
 
 
-Before you design the App-V infrastructure, you must determine the project’s scope. The scope consists of determining which applications will be available virtually and to also identify the target users, and their locations. This information will help determine what type of App-V infrastructure should be implemented. Decisions about the scope of the project must be based on the specific needs of your organization.
+Before you design the App-V infrastructure, determine the project’s scope. The scope consists of determining which applications will be available virtually and to also identify the target users, and their locations. This information will help determine what type of App-V infrastructure should be implemented. Decisions about the scope of the project must be based on the specific needs of your organization.
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Before you design the App-V infrastructure, you must determine the project’s s
 ## Determine Which App-V Infrastructure is Required
 
 
-**Important**  
+>**Important**  
 Both of the following models require the App-V client to be installed on the computer where you plan to run virtual applications.
 
 You can also manage your App-V environment using an Electronic Software Distribution (ESD) solution such as Microsoft Systems Center Configuration Manager. For more information see [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
@@ -67,9 +67,9 @@ You can also manage your App-V environment using an Electronic Software Distribu
 
     -   When network bandwidth limitations inhibit electronic software distribution.
 
--   **Full Infrastructure Model** - The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V Full Infrastructure Model consists of one or more App-V management servers. The Management Server can be used to publish applications to all clients. The publishing process places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about installing the management server see, [Planning for the App-V Server Deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
+-   **Full Infrastructure Model** - The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V Full Infrastructure Model consists of one or more App-V management servers. The Management Server can be used to publish applications to all clients. The publishing process places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about installing the management server see, [Planning for App-V Server Deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
 
-    **Important**  
+    >**Important**  
     The App-V full infrastructure model requires Microsoft SQL Server to store configuration data. For more information see [App-V Supported Configurations](appv-supported-configurations.md).
 
      

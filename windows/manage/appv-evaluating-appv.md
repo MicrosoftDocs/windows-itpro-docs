@@ -1,6 +1,6 @@
 ---
 title: Evaluating App-V (Windows 10)
-description: Evaluating App-V
+description: Evaluating App-V for Windows 10
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -11,8 +11,7 @@ ms.prod: w10
 
 # Evaluating App-V
 
-
-Before you deploy pp-V into a production environment, you should evaluate it in a lab environment. You can use the information in this topic to set up App-V in a lab environment for evaluation purposes only.
+Before you deploy App-V into a production environment, you should evaluate it in a lab environment. You can use the information in this topic to set up App-V in a lab environment for evaluation purposes only.
 
 ## Configure lab computers for App-V Evaluation
 
@@ -30,11 +29,11 @@ Use the following links for information about setting up the App-V sequencer and
 
 Use the following links for information about setting up the App-V server in your lab environment.
 
--   [How to Deploy the App-V Server](appv-deploy-the-appv-server.md)
+-   [How to Deploy the App-V server](appv-deploy-the-appv-server.md)
 
 -   [Administering App-V Virtual Applications by Using the Management Console](appv-administering-virtual-applications-with-the-management-console.md)
 
-### Installing the App-V Client
+### Enabling the App-V Client
 
 Use the following link for more information about creating and managing virtualized packages in your lab environment.
 

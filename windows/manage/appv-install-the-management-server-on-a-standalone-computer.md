@@ -28,7 +28,7 @@ Use the following procedure to install the management server on a standalone com
 
 6.  On the **Configure Existing Management Database** page, select **Use a remote SQL Server**, and type the machine name of the computer running Microsoft SQL SQL, for example **SqlServerMachine**.
 
-    **Note**  
+    >**Note**  
     If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**.
 
      
@@ -45,7 +45,7 @@ Use the following procedure to install the management server on a standalone com
 
 9.  To confirm that the setup has completed successfully, open a web browser, and type the following URL: http://managementserver:portnumber/Console. If the installation was successful, you should see the **Management Console** appear without any error messages or warnings being displayed.
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+**Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -76,9 +76,9 @@ There might be cases when the administrator pre-loads some virtual applications 
 
 The Sequencer is a tool that is used to convert standard applications into virtual packages for deployment to computers that run the App-V client. The Sequencer helps provide a simple and predictable conversion process with minimal changes to prior sequencing workflows. In addition, the Sequencer allows users to more easily configure applications to enable connections of virtualized applications.
 
-For a list of changes in the App-V Sequencer, see [About App-V](appv-about-appv.md).
+For a list of changes in the App-V Sequencer, see [What's new in App-V](appv-about-appv.md#bkmk-seqimprove).
 
-[How to Install the Sequencer](appv-install-the-sequencer.md)
+To deploy the sequencer, see [How to Install the Sequencer](appv-install-the-sequencer.md).
 
 ## App-V Client and Sequencer logs
 

@@ -1,6 +1,6 @@
 ---
 title: How to Deploy the App-V Server Using a Script (Windows 10)
-description: How to Deploy the App-V Server Using a Script
+description: How to Deploy the App-V  Server Using a Script
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -16,7 +16,7 @@ In order to complete the **appv\_server\_setup.exe** Server setup successfully u
 
 **To Install the App-V server using a script**
 
--   Use the following tables for more information about installing the App-V server using the command line.
+-   Use the following tables for more information about installing the App-V  server using the command line.
 
     **Note**  
     The information in the following tables can also be accessed using the command line by typing the following command: **appv\_server\_setup.exe /?**.

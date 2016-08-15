@@ -12,11 +12,11 @@ ms.prod: w10
 # Application Virtualization (App-V) for Windows 10 overview
 
 
-The topics in this section provides information and step-by-step procedures to help you administer App-V and its components. This information will be valuable for system administrators who manage large installations with many servers and clients and for support personnel who interact directly with the computers or the end users.
+The topics in this section provide information and step-by-step procedures to help you administer App-V and its components. This information will be valuable for system administrators who manage large installations with many servers and clients and for support personnel who interact directly with the computers or the end users.
 
 [Getting Started with App-V](appv-getting-started.md)  
 
-- [About App-V](appv-about-appv.md)
+- [What's new in App-V](appv-about-appv.md)
 - [Evaluating App-V](appv-evaluating-appv.md)
 - [High Level Architecture for App-V](appv-high-level-architecture.md)
 - [Accessibility for App-V](appv-accessibility.md)

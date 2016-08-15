@@ -66,7 +66,7 @@ Telemetry can sometimes be confused with functional data. Some Windows component
 
 There are subtle differences between telemetry and functional data. Windows collects and sends telemetry in the background automatically. You can control how much information is gathered by setting the telemetry level. Microsoft tries to avoid collecting personal information wherever possible (for example, if a crash dump is collected and a document was in memory at the time of the crash).    On the other hand, functional data can contain personal information. However, a user action, such as requesting news or asking Cortana a question, usually triggers collection and transmission of functional data.
 
-If you’re an IT pro that wants to manage Windows functional data sent from your organization to Microsoft, see [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services).
+If you’re an IT pro that wants to manage Windows functional data sent from your organization to Microsoft, see [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 
 The following are specific examples of functional data:
 
@@ -150,7 +150,7 @@ The following table defines the endpoints for telemetry services:
 
 ### Data use and access
 
-The principle of least privileged access guides access to telemetry data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). Microsoft may share business reports with OEMs and third party partners that include aggregated and anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
+The principle of least privileged access guides access to telemetry data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft may share business reports with OEMs and third party partners that include aggregated and anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
 
 ### Retention
 
@@ -377,15 +377,15 @@ There are a few more settings that you can turn off that may send telemetry info
 
 FAQs
 
-- [Cortana, Search, and privacy](http://windows.microsoft.com/en-us/windows-10/cortana-privacy-faq)
-- [Windows 10 feedback, diagnostics, and privacy](http://windows.microsoft.com/en-us/windows-10/feedback-diagnostics-privacy-faq)
-- [Windows 10 camera and privacy](http://windows.microsoft.com/en-us/windows-10/camera-privacy-faq)
-- [Windows 10 location service and privacy](http://windows.microsoft.com/en-us/windows-10/location-service-privacy)
-- [Microsoft Edge and privacy](http://windows.microsoft.com/en-us/windows-10/edge-privacy-faq)
-- [Windows 10 speech, inking, typing, and privacy](http://windows.microsoft.com/en-us/windows-10/speech-inking-typing-privacy-faq)
-- [Windows Hello and privacy](http://windows.microsoft.com/en-us/windows-10/windows-hello-privacy-faq)
-- [Wi-Fi Sense](http://windows.microsoft.com/en-us/windows-10/wi-fi-sense-faq)
-- [Windows Update Delivery Optimization](http://windows.microsoft.com/en-us/windows-10/windows-update-delivery-optimization-faq)
+- [Cortana, Search, and privacy](http://windows.microsoft.com/windows-10/cortana-privacy-faq)
+- [Windows 10 feedback, diagnostics, and privacy](http://windows.microsoft.com/windows-10/feedback-diagnostics-privacy-faq)
+- [Windows 10 camera and privacy](http://windows.microsoft.com/windows-10/camera-privacy-faq)
+- [Windows 10 location service and privacy](http://windows.microsoft.com/windows-10/location-service-privacy)
+- [Microsoft Edge and privacy](http://windows.microsoft.com/windows-10/edge-privacy-faq)
+- [Windows 10 speech, inking, typing, and privacy](http://windows.microsoft.com/windows-10/speech-inking-typing-privacy-faq)
+- [Windows Hello and privacy](http://windows.microsoft.com/windows-10/windows-hello-privacy-faq)
+- [Wi-Fi Sense](http://windows.microsoft.com/windows-10/wi-fi-sense-faq)
+- [Windows Update Delivery Optimization](http://windows.microsoft.com/windows-10/windows-update-delivery-optimization-faq)
 
 Blogs
 
@@ -393,11 +393,11 @@ Blogs
 
 Privacy Statement
 
-- [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement)
+- [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 
 TechNet
 
-- [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 
 Web Pages
 
