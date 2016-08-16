@@ -10,6 +10,8 @@ ms.prod: w10
 
 # Deploying App-V for Windows 10
 
+Applies to: Windows 10, version 1607
+
 App-V supports a number of different deployment options. Review this topic for information about the tasks that you must complete at different stages in your deployment.
 
 ## App-V Deployment Information

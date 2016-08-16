@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Deploying Microsoft Office 2010 by Using App-V
 
+Applies to: Windows 10, version 1607
 
 You can create Office 2010 packages for Microsoft Application Virtualization (App-V) using one of the following methods:
 

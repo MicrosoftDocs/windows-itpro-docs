@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Planning for App-V
 
+Applies to: Windows 10, version 1607
+
 Use this information to plan how to deploy App-V so that it does not disrupt your users or the network.
 
 ## Planning information

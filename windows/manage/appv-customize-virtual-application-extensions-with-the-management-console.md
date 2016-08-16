@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
 
+Applies to: Windows 10, version 1607
 
 Use the following procedure to customize the virtual application extensions for an Active Directory (AD) group.
 

@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Install the Publishing Server on a Remote Computer
 
+Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
 
 Use the following procedure to install the publishing server on a separate computer. Before you perform the following procedure, ensure the database and management server are available.
 

@@ -11,6 +11,8 @@ ms.prod: w10
 
 # How to Deploy the App-V Server Using a Script
 
+Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
+
 In order to complete the **appv\_server\_setup.exe** Server setup successfully using the command line, you must specify and combine multiple parameters.
 
 **To Install the App-V server using a script**

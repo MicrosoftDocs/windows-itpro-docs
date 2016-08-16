@@ -365,7 +365,7 @@ To turn off the Windows Mail app:
 
 To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways.
 
--   Change the **Start** REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentControlSet\\Services\\wlidsvc** to 4.
+-   Change the **Start** REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\wlidsvc** to 4.
 
 
 ### <a href="" id="bkmk-edge"></a>11. Microsoft Edge

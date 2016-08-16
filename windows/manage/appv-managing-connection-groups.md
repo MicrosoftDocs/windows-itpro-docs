@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Managing Connection Groups
 
+Applies to: Windows 10, version 1607
 
 Connection groups enable the applications within a package to interact with each other in the virtual environment, while remaining isolated from the rest of the system. By using connection groups, administrators can manage packages independently and can avoid having to add the same application multiple times to a client computer.
 

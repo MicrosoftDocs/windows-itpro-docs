@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Manage Administrative Backup and Restore in UE-V
 
+Applies to: Windows 10, version 1607
+
 As an administrator of User Experience Virtualization (UE-V), you can restore application and Windows settings to their original state. You can also restore additional settings when a user adopts a new device.
 
 ## Restore Settings in UE-V when a User Adopts a New Device

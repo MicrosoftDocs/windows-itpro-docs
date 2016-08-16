@@ -11,6 +11,7 @@ ms.prod: w10
 
 # App-V Security Considerations
 
+Applies to: Windows 10, version 1607
 
 This topic contains a brief overview of the accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 

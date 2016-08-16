@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Publish a Connection Group
 
+Applies to: Windows 10, version 1607
 
 After you create a connection group, you must publish it to computers that run the App-V client.
 
