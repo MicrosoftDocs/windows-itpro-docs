@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Planning for High Availability with App-V Server
 
+Applies to: Windows 10, version 1607
+
 Microsoft Application Virtualization (App-V) system configurations can take advantage of options that maintain a high level of available service.
 
 Use the information in the following sections to help you understand the options to deploy App-V in a highly available configuration.
@@ -54,11 +56,11 @@ Review the following for more information about configuring IIS and Network Load
 
 ## <a href="" id="bkmk-clusterscsmode"></a>Support for clustered file servers when running SCS mode
 
-Running App-V Server in Share Content Store (SCS) mode with clustered file servers is supported.
+Running App-V Server in Shared Content Store (SCS) mode with clustered file servers is supported.
 
 The following steps can be used to enable this configuration:
 
--   Configure App-V to run in client SCS mode. For more information about configuring App-V SCS mode, see [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).
+-   Configure the App-V client to run in Shared Content Store mode. For more information, see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).
 
 -   Configure the file server cluster, configured in either the scale out mode (which started with Windows Server 2012) or the earlier clustering mode, with a virtual SAN.
 

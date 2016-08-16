@@ -1,5 +1,4 @@
 ---
-localizationpriority: low
 ms.mktglfcycl: plan
 description: IEAK 11 - Internet Explorer Administration Kit 11 Users Guide
 author: eross-msft

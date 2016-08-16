@@ -11,6 +11,7 @@ ms.prod: w10
 
 # App-V Deployment Checklist
 
+Applies to: Windows 10, version 1607
 
 This checklist can be used to help you during an App-V deployment.
 
@@ -41,7 +42,7 @@ This checklist outlines the recommended steps and items to consider when deployi
 </tr>
 <tr class="even">
 <td align="left"><img src="images/checklistbox.gif" alt="Checklist box" /></td>
-<td align="left"><p>Review the App-V supported configurations information to make sure selected client and server computers are supported for App-V feature installation.</p></td>
+<td align="left"><p>Review the App-V supported configurations information.</p></td>
 <td align="left"><p>[App-V Supported Configurations](appv-supported-configurations.md)</p></td>
 <td align="left"><p></p></td>
 </tr>

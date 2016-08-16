@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Security Considerations for UE-V
 
+Applies to: Windows 10, version 1607
 
 This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
 

@@ -11,6 +11,8 @@ ms.prod: w10
 
 # How to Convert a Package Created in a Previous Version of App-V
 
+Applies to: Windows 10, version 1607
+
 You can use the package converter utility to upgrade virtual application packages that have been created with previous versions of App-V.
 
 > [!NOTE]  

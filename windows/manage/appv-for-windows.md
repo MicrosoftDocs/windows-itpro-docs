@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Application Virtualization (App-V) for Windows 10 overview
 
+Applies to: Windows 10, version 1607
 
 The topics in this section provide information and step-by-step procedures to help you administer App-V and its components. This information will be valuable for system administrators who manage large installations with many servers and clients and for support personnel who interact directly with the computers or the end users.
 
@@ -31,7 +32,7 @@ The topics in this section provide information and step-by-step procedures to he
 
 [Deploying App-V](appv-deploying-appv.md)  
 
-- [Deploying the App-V Sequencer and Client](appv-deploying-the-appv-sequencer-and-client.md)
+- [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)
 - [Deploying the App-V Server](appv-deploying-the-appv-server.md)
 - [App-V Deployment Checklist](appv-deployment-checklist.md)
 - [Deploying Microsoft Office 2013 by Using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
@@ -46,7 +47,7 @@ The topics in this section provide information and step-by-step procedures to he
 - [Using the App-V Client Management Console](appv-using-the-client-management-console.md)
 - [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
 - [Maintaining App-V](appv-maintaining-appv.md)
-- [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+- [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
 [Troubleshooting App-V](appv-troubleshooting.md)  
 

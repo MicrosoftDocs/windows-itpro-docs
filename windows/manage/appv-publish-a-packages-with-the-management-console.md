@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Publish a Package by Using the Management Console
 
+Applies to: Windows 10, version 1607
 
 Use the following procedure to publish an App-V package. Once you publish a package, computers that are running the App-V client can access and run the applications in that package.
 
@@ -31,7 +32,7 @@ The ability to enable only administrators to publish or unpublish packages (desc
 
 1.  Navigate to the following Group Policy Object node:
 
-    **Computer Configuration &gt; Policies &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing**.
+    **Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing**.
 
 2.  Enable the **Require publish as administrator** Group Policy setting.
 

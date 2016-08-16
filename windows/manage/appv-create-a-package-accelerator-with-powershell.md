@@ -11,6 +11,7 @@ ms.prod: w10
 
 # How to Create a Package Accelerator by Using PowerShell
 
+Applies to: Windows 10, version 1607
 
 App-V package accelerators automatically sequence large, complex applications. Additionally, when you apply an App-V package accelerator, you are not always required to manually install an application to create the virtualized package.
 
@@ -43,7 +44,7 @@ App-V package accelerators automatically sequence large, complex applications. A
 ## Related topics
 
 
-[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
  
 

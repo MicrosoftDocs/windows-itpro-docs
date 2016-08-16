@@ -10,7 +10,7 @@ ms.prod: w10
 
 # Deploying the App-V server
 
-Applies to: Windows 10, version 1607
+Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
 
 >**Note** If you plan to use the App-V server components in your deployment, note that they reference App-V 5.x. This is because the App-V server components have not changed in App-V for Windows 10. 
 
@@ -74,7 +74,7 @@ The distributed deployment topology can support a large App-V client base and it
 - [How to install the Management Server on a Standalone Computer and Connect it to the Database](appv-install-the-management-server-on-a-standalone-computer.md)
 
 ## Using an Enterprise Software Distribution (ESD) solution and App-V
-You can also deploy the App-V clients and packages by using an ESD without having to deploy App-V. The full capabilities for integration will vary depending on the ESD that you use.
+You can also deploy packages by using an ESD. The full capabilities for integration will vary depending on the ESD that you use.
 
 >**Note**<br>The App-V reporting server and reporting database can still be deployed alongside the ESD to collect the reporting data from the App-V clients. However, the other three server components should not be deployed, because they will conflict with the ESD functionality.
 

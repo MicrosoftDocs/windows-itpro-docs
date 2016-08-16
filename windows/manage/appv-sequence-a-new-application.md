@@ -11,6 +11,8 @@ ms.prod: w10
 
 # How to Sequence a New Application with App-V
 
+Applies to: Windows 10, version 1607
+
 In Windows 10, version 1607, the App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 
 **To review or do before you start sequencing**
@@ -53,10 +55,8 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!NOTE]  
     > If the specified application installer modifies security access to a file or directory, existing or new, the associated changes will not be captured into the package.
-
-
+    
     If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Perform a Custom Installation** check box, and then click **Next**.
-
 
 6.  On the **Package Name** page, type a name that will be associated with the package. Use a name that helps identify the purpose and version of the application that will be added to the package. The package name is displayed in the App-V Management Console.
 
@@ -66,8 +66,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]  
     > You should always install applications to a secure location and make sure no other users are logged on to the computer running the sequencer during monitoring.
-
-
+    
     Use the application's installation process to perform the installation. If additional installation files must be run as part of the installation, click **Run** to locate and run the additional installation files. When you are finished with the installation, select **I am finished installing**. Click **Next**.
 
 8.  On the **Installation** page, wait while the sequencer configures the virtualized application package.
@@ -76,8 +75,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!NOTE]  
     > To run first-use tasks for any application that is not available in the list, open the application. The associated information will be captured during this step.
-
-
+    
     Click **Next**.
 
 10. On the **Installation Report** page, you can review information about the virtualized application package you have just sequenced. In **Additional Information**, double-click an event to obtain more detailed information. To proceed, click **Next**.
@@ -109,9 +107,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]  
     > The system does not support non-printable characters in **Comments** and **Descriptions**.
-
-     
-
+    
     The default **Save Location** is also displayed on this page. To change the default location, click **Browse** and specify the new location. Click **Create**.
 
 15. The **Completion** page is displayed. Review the information in the **Virtual Application Package Report** pane as needed, then click **Close**. This information is also available in the **Report.xml** file that is located in the directory where the package was created.
@@ -179,9 +175,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]   
     > The system does not support non-printable characters in Comments and Descriptions.
-
-     
-
+    
     The default **Save Location** is also displayed on this page. To change the default location, click **Browse** and specify the new location. Click **Create**.
 
 **To sequence a middleware application**
@@ -218,8 +212,7 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
 
     > [!IMPORTANT]   
     > The system does not support non-printable characters in Comments and Descriptions.
- 
-
+    
     The default **Save Location** is also displayed on this page. To change the default location, click **Browse** and specify the new location. Click **Create**.
 
 12. The **Completion** page is displayed. Review the information in the **Virtual Application Package Report** pane as needed, then click **Close**. This information is also available in the **Report.xml** file that is located in the directory specified in step 11 of this procedure.

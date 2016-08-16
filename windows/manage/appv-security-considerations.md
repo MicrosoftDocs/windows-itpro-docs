@@ -11,6 +11,7 @@ ms.prod: w10
 
 # App-V Security Considerations
 
+Applies to: Windows 10, version 1607
 
 This topic contains a brief overview of the accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 
@@ -31,9 +32,9 @@ Effective as of June, 2014, the PackageStoreAccessControl (PSAC) feature that wa
 
 **Physically secure your computers**. Security is incomplete without physical security. Anyone with physical access to an App-V server could potentially attack the entire client base. Any potential physical attacks must be considered high risk and mitigated appropriately. App-V servers should be stored in a physically secure server room with controlled access. Secure these computers when administrators are not physically present by having the operating system lock the computer, or by using a secured screen saver.
 
-**Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V, subscribe to the Security Notification service (<http://go.microsoft.com/fwlink/p/?LinkId=28819>).
+**Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V, see the [Microsoft Security TechCenter](https://technet.microsoft.com/en-us/security/bb291012).
 
-**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V and App-V administrator accounts. Never use blank passwords. For more information about password concepts, see the “Account Passwords and Policies” white paper on TechNet (<http://go.microsoft.com/fwlink/p/?LinkId=30009>).
+**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V and App-V administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](https://technet.microsoft.com/library/hh994572.aspx).
 
 ## Accounts and groups in App-V
 

@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Operations for App-V
 
+Applies to: Windows 10, version 1607
 
 This section of the Microsoft Application Virtualization (App-V) Administratorâ€™s Guide includes information about the various types of App-V administration and operating tasks that are typically performed by an administrator. This section also includes step-by-step procedures to help you successfully perform those tasks.
 
@@ -41,7 +42,7 @@ This section of the Microsoft Application Virtualization (App-V) Administratorâ€
 
     Provides instructions for migrating to App-V from a previous version.
 
--   [Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+-   [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
     Describes the set of Windows PowerShell cmdlets available for administrators performing various App-V server tasks.
 

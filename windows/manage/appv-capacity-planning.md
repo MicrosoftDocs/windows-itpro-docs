@@ -11,6 +11,7 @@ ms.prod: w10
 
 # App-V Capacity Planning
 
+Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
 
 The following recommendations can be used as a baseline to help determine capacity planning information that is appropriate to your organization’s App-V infrastructure.
 
@@ -47,17 +48,9 @@ Before you design the App-V infrastructure, determine the project’s scope. The
 </tbody>
 </table>
 
- 
-
 ## Determine Which App-V Infrastructure is Required
 
-
->**Important**  
-Both of the following models require the App-V client to be installed on the computer where you plan to run virtual applications.
-
 You can also manage your App-V environment using an Electronic Software Distribution (ESD) solution such as Microsoft Systems Center Configuration Manager. For more information see [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md).
-
- 
 
 -   **Standalone Model** - The standalone model allows virtual applications to be Windows Installer-enabled for distribution without streaming. App-V in Standalone Mode consists of the sequencer and the client; no additional components are required. Applications are prepared for virtualization using a process called sequencing. For more information see, [Planning for the App-V Sequencer and Client Deployment](appv-planning-for-sequencer-and-client-deployment.md). The stand-alone model is recommended for the following scenarios:
 

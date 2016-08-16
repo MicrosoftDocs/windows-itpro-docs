@@ -11,6 +11,7 @@ ms.prod: w10
 
 # Performance Guidance for Application Virtualization
 
+Applies to: Windows 10, version 1607
 
 Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 
@@ -171,9 +172,9 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p></p>
 <ul>
-<li><p>Install the App-V client version of the client.</p></li>
+<li><p>Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).</p></li>
 <li><p>Install UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all user- and global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all user- and global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -191,9 +192,9 @@ The following table displays the required steps to prepare the base image and th
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Install the App-V client version of the client.</p></li>
+<li><p>Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).</p></li>
 <li><p>Install UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -225,8 +226,7 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p>Shared Content Store (SCS) Mode</p>
 <ul>
-<li><p>Configurable in PowerShell using <strong>Set- AppvClientConfiguration</strong> –<strong>SharedContentStoreMode</strong>, or</p></li>
-<li><p>During installation of the App-V client.</p></li>
+<li><p>Configurable in Windows PowerShell with `Set-AppvClientConfiguration -SharedContentStoreMode 1`<br>or configurable with Group Policy, as described in [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
 </ul></td>
 <td align="left"><p>When running the shared content store only publishing data is maintained on hard disk; other virtual application assets are maintained in memory (RAM).</p>
 <p>This helps to conserve local storage and minimize disk I/O per second (IOPS).</p></td>

@@ -10,12 +10,14 @@ ms.prod: w10
 
 # Deploying App-V for Windows 10
 
+Applies to: Windows 10, version 1607
+
 App-V supports a number of different deployment options. Review this topic for information about the tasks that you must complete at different stages in your deployment.
 
 ## App-V Deployment Information
 
 
--   [Deploying the App-V Sequencer and Client](appv-deploying-the-appv-sequencer-and-client.md)
+-   [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)
 
     This section describes how to install the App-V sequencer, which is used to virtualize applications, and how to enable the App-V client, which runs on target computers to facilitate virtualized packages.
 
