@@ -15,8 +15,6 @@ author: AMeeus
 
 *Applies to:  Windows 10 Mobile, version 1511 and Windows 10 Mobile, version 1607*
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 This guide helps IT professionals plan for and deploy Windows 10 Mobile devices.
 
 Employees increasingly depend on smartphones to complete daily work tasks, but these devices introduce unique management and security challenges. Whether providing corporate devices or allowing people to use their personal devices, IT needs to deploy and manage mobile devices and apps quickly to meet business goals. However, they also need to ensure that the apps and data on those mobile devices are protected against cybercrime or loss. Windows 10 Mobile helps organizations directly address these challenges with robust, flexible, built-in mobile device and app management technologies.

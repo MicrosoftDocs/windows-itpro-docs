@@ -14,8 +14,6 @@ author: AMeeus
 
 *Applies to Windows 10 Mobile, version 1511 and Windows Mobile, version 1607*
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 >This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
 
 Smartphones now serve as a primary productivity tool for business workers and, just like desktops or laptops, need to be secured against malware and data theft. Protecting these devices can be challenging due to the wide range of device operating systems and configurations and the fact that many employees use their own personal devices. IT needs to secure corporate assets on every device, but also ensure the privacy of the user’s personal apps and data. 
