@@ -55,10 +55,6 @@ If you are new to this product, we recommend that you read the documentation tho
 
     Provides a description of the App-V features and how they work together.
 
--   [Accessibility for App-V](appv-accessibility.md)
-
-    Provides information about features and services that make this product and its corresponding documentation more accessible for people with disabilities.
-
 ## <a href="" id="other-resources-for-this-product-"></a>Other resources for this product
 
 
