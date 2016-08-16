@@ -1182,7 +1182,7 @@ App-V Packages contain the Manifest file inside of the appv package file, which 
 
 ### Example for dynamic configuration files
 
-The example below shows the combination of the Manifest, Deployment Configuration and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only and not to be a complete description of the specific categories available in each of the files. For more information review the App-V Sequencing Guide at: [http://go.microsoft.com/fwlink/?LinkID=269810](http://go.microsoft.com/fwlink/?LinkID=269810).
+The example below shows the combination of the Manifest, Deployment Configuration and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only and not to be a complete description of the specific categories available in each of the files. For more information, download the [App-V Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760).
 
 **Manifest**
 

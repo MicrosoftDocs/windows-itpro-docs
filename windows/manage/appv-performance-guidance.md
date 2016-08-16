@@ -23,7 +23,7 @@ You should read and understand the following information before reading this doc
 
 -   [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)
 
--   [Microsoft Application Virtualization Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760)
+-   [App-V Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760)
 
 **Note**  
 Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk **\*** review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.
