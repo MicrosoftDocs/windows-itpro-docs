@@ -28,7 +28,7 @@ It is enabled by default when certain pre-requisite settings are also enabled. I
 
 ## How it works
 
-When a Windows Defender client encounters a suspicious but previously undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
+When a Windows Defender client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
 
 If the cloud backend is unable to make a determination, the file will be locked by Windows Defender while a copy is uploaded to the cloud. Only after the cloud has received the file will Windows Defender release the lock and let the file run. The cloud will perform additional analysis to reach a determination, blocking all future encounters of that file. 
 
