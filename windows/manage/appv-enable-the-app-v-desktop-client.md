@@ -45,7 +45,7 @@ For information about configuring the App-V client, see:
 
 - [Using the client management console](appv-using-the-client-management-console.md)
 
-- [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](appv-configure-the-client-to-receive-updates-from-the-publishing-server) 
+- [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](appv-configure-the-client-to-receive-updates-from-the-publishing-server.md) 
 
 ## Have a suggestion for App-V?
 
