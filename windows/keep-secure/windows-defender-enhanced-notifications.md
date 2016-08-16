@@ -22,9 +22,9 @@ In Windows 10, application notifications about malware detection and remediation
 
 Notifications will appear on endpoints when manually triggered and scheduled scans are completed and threats are detected. These notifications will also be seen in the **Notification Center**, and a summary of scans and threat detections will also appear at regular time intervals.
 
-You can enable and disable enhanced notifications  with the registry or in Windows Settings. 
+You can enable and disable enhanced notifications in Windows Settings. 
 
-## Configure enhanced notifications
+## Disable notifications
 
 You can disable enhanced notifications on individual endpoints in Windows Settings. 
 
@@ -37,6 +37,8 @@ You can disable enhanced notifications on individual endpoints in Windows Settin
 1. Toggle the setting between **On** and **Off**.
 
 ![Windows Defender enhanced notifications](images/defender/enhanced-notifications.png)
+
+
 
 
 ## Related topics
