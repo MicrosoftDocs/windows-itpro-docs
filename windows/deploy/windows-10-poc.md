@@ -16,7 +16,9 @@ author: greg-lindsay
 
 ## In this guide
 
-This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Detailed steps are provided for setting up the test lab, and for deploying Windows 10 under common scenarios with current deployment tools. The following topics are available in this guide:
+This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Detailed steps are provided for setting up the test lab, and for deploying Windows 10 under common scenarios with current deployment tools. 
+
+The following topics are available in this guide:
 
 <table border="0" cellpadding="2">
     <tr>
@@ -24,7 +26,7 @@ This guide provides step-by-step instructions for configuring a proof of concept
         <td BGCOLOR="#a0e4fa">Description</td>
     <tr>
         <td>[Overview of procedures](#overview-of-procedures)</td>
-        <td>A high level overview of the instructions provided in this guide.</td>
+        <td>A list of procedures provided in this guide.</td>
     </tr>
     <tr>
         <td>[Hardware and software requirements](#hardware-and-software-requirements)</td>
@@ -32,7 +34,7 @@ This guide provides step-by-step instructions for configuring a proof of concept
     </tr>
     <tr>
         <td>[Lab setup](#lab-setup)</td>
-        <td>A summary of the PoC environment.</td>
+        <td>A diagram of the PoC environment.</td>
     </tr>
     <tr>
         <td>[Configure the PoC environment](#configure-the-poc-environment)</td>
@@ -47,7 +49,7 @@ This guide provides step-by-step instructions for configuring a proof of concept
 
 ## Overview of procedures
 
-The following is a high-level summary of procedures documented in this guide:
+The following procedures are documented in this guide:
 
 1. Configure an internal network on a Hyper-V host computer.
 2. Download a Windows Server evaluation VHD for use in the lab.
@@ -59,9 +61,9 @@ The following is a high-level summary of procedures documented in this guide:
 
 ## Hardware and software requirements
 
-One computer is required to complete the guide; two computers are recommended. 
+One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
-If you do not use a client computer on your corporate network to clone and mirror in the POC environment, you can use an arbitrary VM to represent this computer.
+The second computer is used to clone and mirror a client computer (computer 2) from your corporate network to the POC environment. Alternatively, you can use an arbitrary VM to represent this computer, therefore this computer is not required to complete the lab.
 
 <table border="1" cellpadding="2">
     <tr>
@@ -72,16 +74,16 @@ If you do not use a client computer on your corporate network to clone and mirro
     <tr>
         <td BGCOLOR="#a0e4fa">Role</td>
         <td>Hyper-V host</td>
-        <td>Client</td>
+        <td>Client computer</td>
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">Description</td>
         <td>This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.</td>
-        <td>This computer is a test system on your corporate network that will be converted to a VHD.</td>
+        <td>This computer is a Windows 7 or Windows 8/8.1 client on your corporate network that will be converted to a VHD for upgrade demonstration purposes.</td>
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">OS</td>
-        <td>Windows 8/8.1/10 or Windows Server 2008 R2/2012/2012 R2/2016*</td>
+        <td>Windows 8/8.1/10 or Windows Server 2012/2012 R2/2016<B>*</B></td>
         <td>Windows 7 or a later</td>
     </tr>
     <tr>
@@ -118,15 +120,15 @@ If you do not use a client computer on your corporate network to clone and mirro
 
 >Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
 
-***Important**: The Hyper-V server role can be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2. Therefore, you cannot use many of the steps provided in this guide to configure Hyper-V. If your Hyper-V host is running Windows Server 2008 R2, steps to configure Hyper-V using WMI or the Hyper-V manager console are provided in [Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2).
+<B>*</B>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. The performance and features of the Hyper-V role are also much improved on later operating systems. If your host must be running Windows Server 2008 R2, steps to configure Hyper-V using WMI or the Hyper-V manager console are provided separately in [Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2).
 
-The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows. For more information, see [Hyper-V and Windows 7](#hyper-v-and-windows-7).
+The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
 
 ## Lab setup
 
-- The Hyper-V host computer is configured to host four VMs on a private, proof of concept network. 
+- The Hyper-V host computer (computer 1) is configured to host four VMs on a private, proof of concept network. 
     - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
-    - Two VMs are client systems: One VM is intended to mirror a host on your corporate network and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
+    - Two VMs are client systems: One VM is intended to mirror a host on your corporate network (computer 2) and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
 - Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
 The lab architecture is summarized in the following diagram:
@@ -140,16 +142,16 @@ The lab architecture is summarized in the following diagram:
 
 ## Configure the PoC environment
 
-### In this section
+### Procedures in this section
 
-[Install Hyper-V](#install-hyper-v)<BR>
+[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<BR>
 [Download VHD and ISO files](#download-vhd-and-iso-files)<BR>
 [Configure Hyper-V](#configure-hyper-v)<BR>
 [Convert PC to VHD](#convert-pc-to-vhd)<BR>
 [Configure VHDs](#configure-vhds)<BR>
 [Verify the configuration](#verify-the-configuration)
 
-### Install Hyper-V
+### Verify support and install Hyper-V
 
 1. Verify that the computer supports Hyper-V.
 
@@ -197,10 +199,10 @@ The lab architecture is summarized in the following diagram:
     ```
     When you are prompted to restart the computer, choose Yes. The computer might restart more than once.
     
-
     You can also install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** (client OS), or using Server Manager's **Add Roles and Features Wizard** (server OS), as shown below:
     
-    ![hyper-v feature](images/hyper-v-feature.png)<BR>
+    ![hyper-v feature](images/hyper-v-feature.png)
+
     ![hyper-v](images/svr_mgr2.png)
 
 ### Download VHD and ISO files
@@ -240,7 +242,7 @@ The lab architecture is summarized in the following diagram:
 ### Convert PC to VHD
 
 1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy disk2vhd.exe to a flash drive or other location that is accessible from the computer you wish to convert.
->Note: You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
+    >Note: You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
 3. Select checkboxes next to the volumes you wish to copy and specify a location to save the resulting VHD or VHDX file. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.
 4. Click **Create** to start creating a VHDX file. See the following example: 
@@ -250,7 +252,7 @@ The lab architecture is summarized in the following diagram:
     In this example, the source computer has two hard drives, C: and E: and a system reserved partition. The VHDX file (w7.vhdx) is being saved to a flash drive (F:) in the F:\VHD directory.<BR> 
     **Note**: Disk2vhd can also save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted. 
 
->If you have experience with Microsoft Virtual Machine Converter and prefer to use this tool instead of Disk2vhd, see [Appendix B: Microsoft Virtual Machine Converter](appendix-b-microsoft-virtual-machine-converter).
+    >If you have experience with Microsoft Virtual Machine Converter and prefer to use this tool instead of Disk2vhd, see [Appendix B: Microsoft Virtual Machine Converter](appendix-b-microsoft-virtual-machine-converter).
 
 5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
@@ -264,9 +266,9 @@ The lab architecture is summarized in the following diagram:
 
 ### Configure Hyper-V
 
-    Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2008 R2. If your Hyper-V host is running Windows Server 2008 R2, you can use the Hyper-V manager interface to configure Hyper-V, or you can use Hyper-V WMI. Some instructions to configure Hyper-V using WMI are also included in this guide for convenience. For instructions to configure Hyper-V on Windows Server 2008 R2,  
+Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2008 R2. For more information, see [Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2).  
 
-1. Open an elevated Windows PowerShell window and type the following command to create a virtual switch:
+1. Open an elevated Windows PowerShell window and type the following command to create a virtual switch named "poc-internal":
 
     ```
     New-VMSwitch -Name poc-internal -SwitchType Internal -Notes "PoC Network"
@@ -296,17 +298,16 @@ The lab architecture is summarized in the following diagram:
     New-VM –Name "2012R2-SRV1" –VHDPath c:\vhd\2008R2-poc-2.vhd -SwitchName poc-internal
     Set-VMMemory -VMName "2012R2-SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     ```
-    >Use the following Windows PowerShell commands to add VMs on Windows Server 2008 R2:
-
-    ```
-
-    ```
     
 ### Configure VHDs
 
+And now....
+
 ## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
 
-For more information, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
+If your Hyper-V host is running Windows Server 2008 R2, you can use the Hyper-V manager interface to configure Hyper-V, or you can use Hyper-V WMI. Some instructions to configure Hyper-V using WMI are also included in this section for convenience. 
+
+For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
 
     >To install Hyper-V on Windows Server 2008 R2, use the Add-WindowsFeature cmdlet:
 
@@ -338,13 +339,15 @@ For more information, see [Hyper-V](https://technet.microsoft.com/library/cc7307
     $NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
     ```
 
+    >Use the following Windows PowerShell commands to add VMs on Windows Server 2008 R2:
+
+    ```
+
+    ```
+
 ## Appendix B: Microsoft Virtual Machine Converter
 
 You can also use [Microsoft Virtual Machine Converter](https://www.microsoft.com/en-us/download/details.aspx?id=42497) (MVMC) to create VHDs from a physical computer. The MVMC utility has enhanced functionality compared to the Disk2vhd utility in that it can be run from any network location, enables you to specify both a remote source computer and remote destination Hyper-V host, and automatically configures and installs the VM on the Hyper-V host.  However, MVMC requires that the destination Hyper-V host be running the BITS compact server service, which is only available on Windows Server operating systems.  Therefore, you cannot use MVMC if Hyper-V is running on Windows 8 or Windows 10. If you choose to use the MVMC utility instead of disk2vhd, complete the steps in the [Configure Hyper-V](#configure-hyper-v) section first so that you can specify a virtual switch and allocate RAM appropriately to the destination VM when asked to specify these parameters in the MVMC utility.
-
-## Appendix C: Hyper-V and Windows 7
-
-The Hyper-V role cannot be installed on Windows 7. You can host virtual machines (VMs) on Windows 7 with [Windows Virtual PC](https://www.microsoft.com/en-us/download/details.aspx?id=3702) however this guide does not support using Windows Virtual PC. Note: Server Manager and other role management tools can be installed on Windows 7 SP1 by installing the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=7887) (RSAT). The RSAT for Windows 7 enables you to manage a remote computer running Windows Server 2008 R2.
 
 ## Windows 10 PoC guides
 
