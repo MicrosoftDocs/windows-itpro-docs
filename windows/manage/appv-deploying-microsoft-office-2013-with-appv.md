@@ -261,7 +261,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><p><code>\\\\server\Office2013</code></p></td>
+    <td align="left"><p><code>\\server\Office2013</code></p></td>
     <td align="left"><p>is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, Customconfig.xml.</p></td>
     </tr>
     <tr class="even">
@@ -273,7 +273,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
     <td align="left"><p>downloads the Office 2013 applications that you specify in the customConfig.xml file. These bits can be later converted in an Office 2013 App-V package with Volume Licensing.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>\\\\server\Office2013\Customconfig.xml</code></p></td>
+    <td align="left"><p><code>\\server\Office2013\Customconfig.xml</code></p></td>
     <td align="left"><p>passes the XML configuration file required to complete the download process, in this example, customconfig.xml. After using the download command, Office applications should be found in the location specified in the configuration xml file, in this example \\Server\Office2013.</p></td>
     </tr>
     </tbody>
@@ -448,7 +448,7 @@ After you download the Office 2013 applications through the Office Deployment To
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><p><code>\\\\server\Office2013</code></p></td>
+    <td align="left"><p><code>\\server\Office2013</code></p></td>
     <td align="left"><p>is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, Customconfig.xml.</p></td>
     </tr>
     <tr class="even">
@@ -460,11 +460,11 @@ After you download the Office 2013 applications through the Office Deployment To
     <td align="left"><p>creates the Office 2013 App-V package with Volume Licensing as specified in the customConfig.xml file.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>\\\\server\Office2013\Customconfig.xml</code></p></td>
+    <td align="left"><p><code>\\server\Office2013\Customconfig.xml</code></p></td>
     <td align="left"><p>passes the configuration XML file (in this case customConfig) that has been prepared for the packaging stage.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>\\\\server\share\Office2013AppV</code></p></td>
+    <td align="left"><p><code>\\server\share\Office2013AppV</code></p></td>
     <td align="left"><p>specifies the location of the newly created Office App-V package.</p></td>
     </tr>
     </tbody>
