@@ -118,7 +118,11 @@ This table includes the elements used by the v.2 version of the Enterprise Mode 
 &lt;site url="contoso.com"&gt;
   &lt;compat-mode&gt;default&lt;/compat-mode&gt;
   &lt;open-in&gt;none&lt;/open-in&gt;
-&lt;/site&gt;</pre><p>
+&lt;/site&gt;</pre>
+<strong>-or-</strong>
+<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;
+  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
+&lt;site&gt;</pre><p>
 You can also use the self-closing version, &lt;url="contoso.com" /&gt;, which also sets:
 <ul>
   <li>&lt;compat-mode&gt;default&lt;/compat-mode&gt;</li>
@@ -133,7 +137,11 @@ You can also use the self-closing version, &lt;url="contoso.com" /&gt;, which al
 <pre class="syntax">
 &lt;site url="contoso.com"&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-&lt;/site&gt;</pre><p>
+&lt;/site&gt;</pre>
+<strong>-or-</strong>
+<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;
+  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
+&lt;site&gt;</pre><p>
 Where:
 <ul>
   <li><b>IE8Enterprise.</b> Loads the site in IE8 Enterprise Mode.<br>This element is required for sites included in the <b>EmIE</b> section of the v.1 schema and is needed to load in IE8 Enterprise Mode.</li><p>
@@ -260,7 +268,6 @@ We recommend that you not add any of the following items to your schema because 
 
 - Don’t use protocols. For example, http://, https://, or custom protocols. They break parsing.
 - Don’t use wildcards.
-- Don't use IP Addresses.
 - Don’t use query strings, ampersands break parsing.
 
 ## Related topics
