@@ -23,7 +23,7 @@ This guide provides step-by-step instructions for configuring a proof of concept
         <td BGCOLOR="#a0e4fa">Topic</td>
         <td BGCOLOR="#a0e4fa">Description</td>
     <tr>
-        <td>[10 steps for pros](#10-steps-for-pros)</td>
+        <td>[Overview of procedures](#overview-of-procedures)</td>
         <td>A high level overview of the instructions provided in this guide.</td>
     </tr>
     <tr>
@@ -41,20 +41,21 @@ This guide provides step-by-step instructions for configuring a proof of concept
     </tr>
      <tr>
         <td>[Step by step: Deploy Windows 10](#windows-10-poc-guides)</td>
-        <td>Step by step instructions to deploy Windows 10 using the PoC environment.</td>
+        <td>Detailed, step by step instructions to demonstrate a Windows 10 deployment.</td>
     </tr>
 </table>
 
-## 10 steps for pros
+## Overview of procedures
 
-The following are 10 high-level steps you can use to complete this guide without detailed instruction.
+The following is a high-level summary of procedures documented in this guide:
 
 1. Configure an internal network on a Hyper-V host computer.
-2. Download a Windows Server evaluation VHD and copy it to create two VHDs for use in the lab.
+2. Download a Windows Server evaluation VHD for use in the lab.
 3. Convert a physical computer to VHD using the Disk2vhd utility.
-4. Download a Windows 10 evaluation .iso file.
-5. Download tools.
-6. 
+4. Download a Windows 10 Enterprise evaluation .iso file.
+5. Configure Windows Server virtual machines.
+6. Download and install tools.
+7. Upgrade the client VM to Windows 10 Enterprise.
 
 ## Hardware and software requirements
 
@@ -117,17 +118,18 @@ If you do not use a client computer on your corporate network to clone and mirro
 
 >Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
 
-*Hyper-V can be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2. Steps to configure Hyper-V on Windows Server 2008 R2 using WMI are provided in [Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2).
+***Important**: The Hyper-V server role can be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2. Therefore, you cannot use many of the steps provided in this guide to configure Hyper-V. If your Hyper-V host is running Windows Server 2008 R2, steps to configure Hyper-V using WMI or the Hyper-V manager console are provided in [Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2).
 
-Note: The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows. You can host virtual machines (VMs) on Windows 7 with [Windows Virtual PC](https://www.microsoft.com/en-us/download/details.aspx?id=3702) however this guide does not support using Windows Virtual PC. Note: Server Manager and other role management tools can be installed on Windows 7 SP1 by installing the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=7887) (RSAT). The RSAT for Windows 7 enables you to manage a remote computer running Windows Server 2008 R2.
+The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows. For more information, see [Hyper-V and Windows 7](#hyper-v-and-windows-7).
 
 ## Lab setup
 
-The Hyper-V host computer is configured to host four VMs on a private, proof of concept network. Links are provided to download trial versions of Windows Server 2012 and all deployment tools necessary to complete the lab.
-- Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
-- Two VMs are client systems: One VM is intended to mirror a host on your corporate network and one VM is running Windows 10 to demonstrate the hardware replacement scenario.
+- The Hyper-V host computer is configured to host four VMs on a private, proof of concept network. 
+    - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
+    - Two VMs are client systems: One VM is intended to mirror a host on your corporate network and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
+- Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
-See the following diagram:
+The lab architecture is summarized in the following diagram:
 
 ![PoC](images/poc.png)
 
@@ -339,6 +341,10 @@ For more information, see [Hyper-V](https://technet.microsoft.com/library/cc7307
 ## Appendix B: Microsoft Virtual Machine Converter
 
 You can also use [Microsoft Virtual Machine Converter](https://www.microsoft.com/en-us/download/details.aspx?id=42497) (MVMC) to create VHDs from a physical computer. The MVMC utility has enhanced functionality compared to the Disk2vhd utility in that it can be run from any network location, enables you to specify both a remote source computer and remote destination Hyper-V host, and automatically configures and installs the VM on the Hyper-V host.  However, MVMC requires that the destination Hyper-V host be running the BITS compact server service, which is only available on Windows Server operating systems.  Therefore, you cannot use MVMC if Hyper-V is running on Windows 8 or Windows 10. If you choose to use the MVMC utility instead of disk2vhd, complete the steps in the [Configure Hyper-V](#configure-hyper-v) section first so that you can specify a virtual switch and allocate RAM appropriately to the destination VM when asked to specify these parameters in the MVMC utility.
+
+## Appendix C: Hyper-V and Windows 7
+
+The Hyper-V role cannot be installed on Windows 7. You can host virtual machines (VMs) on Windows 7 with [Windows Virtual PC](https://www.microsoft.com/en-us/download/details.aspx?id=3702) however this guide does not support using Windows Virtual PC. Note: Server Manager and other role management tools can be installed on Windows 7 SP1 by installing the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=7887) (RSAT). The RSAT for Windows 7 enables you to manage a remote computer running Windows Server 2008 R2.
 
 ## Windows 10 PoC guides
 
