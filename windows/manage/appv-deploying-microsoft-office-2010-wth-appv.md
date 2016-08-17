@@ -88,7 +88,7 @@ You can deploy Office 2010 packages by using any of the following App-V deployme
 
 -   App-V server
 
--   Stand-alone through PowerShell commands
+-   Stand-alone through Windows PowerShell commands
 
 ## Office App-V package management and customization
 

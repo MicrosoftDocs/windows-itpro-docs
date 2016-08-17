@@ -536,9 +536,9 @@ Removing FB1 does not require the original application installer. After completi
 
 3.  Move to **Create Package**.
 
-**PowerShell** - Update an Existing Virtual Application Package.
+**Windows PowerShell** - Update an Existing Virtual Application Package.
 
-1.  Open an elevated PowerShell session.
+1.  Open an elevated Windows PowerShell session.
 
 2.  Import-module **appvsequencer**.
 
@@ -619,7 +619,7 @@ When publishing a virtual application package, the App-V Client will detect if a
 
  
 
-### Disabling a Dynamic Configuration using Powershell
+### Disabling a Dynamic Configuration by using Windows Powershell
 
 -   For already published packages, you can use `Set-AppVClientPackage –Name Myapp –Path c:\Packages\Apps\MyApp.appv` without
 
@@ -631,9 +631,9 @@ When publishing a virtual application package, the App-V Client will detect if a
 
 For documentation on How to Apply a Dynamic Configuration, see:
 
--   [How to Apply the User Configuration File by Using PowerShell](appv-apply-the-user-configuration-file-with-powershell.md)
+-   [How to Apply the User Configuration File by Using Windows PowerShell](appv-apply-the-user-configuration-file-with-powershell.md)
 
--   [How to Apply the Deployment Configuration File by Using PowerShell](appv-apply-the-deployment-configuration-file-with-powershell.md)
+-   [How to Apply the Deployment Configuration File by Using Windows PowerShell](appv-apply-the-deployment-configuration-file-with-powershell.md)
 
 <table>
 <colgroup>
@@ -653,7 +653,7 @@ For documentation on How to Apply a Dynamic Configuration, see:
 <tbody>
 <tr class="odd">
 <td align="left"><p>Account for Synchronous Script Execution during Package Lifecycle.</p></td>
-<td align="left"><p>If script collateral is embedded in the package, Add (Powershell) may be significantly slower.</p>
+<td align="left"><p>If script collateral is embedded in the package, Add cmdlets may be significantly slower.</p>
 <p>Running of scripts during virtual application launch (StartVirtualEnvironment, StartProcess) and/or Add+Publish will impact the perceived performance during one or more of these lifecycle operations.</p></td>
 <td align="left"><p>Use of Asynchronous (Non-Blocking) Scripts will ensure that the lifecycle operations complete efficiently.</p></td>
 <td align="left"><p>This step requires working knowledge of all virtual application packages with embedded script collateral, which have associated dynamic configurations files and which reference and run scripts synchronously.</p></td>
@@ -677,18 +677,15 @@ For documentation on How to Apply a Dynamic Configuration, see:
 
 -   Open AppxManifest.xml and locate the following:
 
-    &lt;appv:Extension Category="AppV.Fonts"&gt;
+    ```
+    <appv:Extension Category="AppV.Fonts">
+    <appv:Fonts>
+    <appv:Font Path="[{Fonts}]\private\CalibriL.ttf" DelayLoad="true"></appv:Font>
+    </appv:Fonts>
+    ```
 
-    &lt;appv:Fonts&gt;
+    **Note**&nbsp;&nbsp;If there are fonts marked as **DelayLoad**, those will not impact first launch.
 
-    &lt;appv:Font Path="\[{Fonts}\]\\private\\CalibriL.ttf" DelayLoad="true"&gt;&lt;/appv:Font&gt;
-
-    **Note**  
-    If there are fonts marked as **DelayLoad**, those will not impact first launch.
-
-     
-
-    &lt;/appv:Fonts&gt;
 
 ### Excluding virtual fonts from the package
 
@@ -698,11 +695,11 @@ Use the dynamic configuration file that best suits the user scope – deployment
 
 Fonts
 
---&gt;
-
-&lt;Fonts Enabled="false" /&gt;
-
-&lt;!--
+```
+-->
+<Fonts Enabled="false" />
+<!--
+```
 
 ## <a href="" id="bkmk-terms1"></a> App-V Performance Guidance Terminology
 
@@ -729,7 +726,7 @@ The following terms are used when describing concepts and actions related to App
 
     -   From the point that users initiate a log-in to when they are able to manipulate the desktop.
 
-    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage Powershell** commands are initiated.
+    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in Windows PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage** Windows Powershell commands are initiated.
 
     -   From start to completion of the publishing refresh. In standalone instances, this is the first to last virtual application published.
 

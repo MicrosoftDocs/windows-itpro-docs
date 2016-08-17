@@ -21,20 +21,12 @@ After you create a connection group, you must publish it to computers that run t
 
 2.  Right-click the connection group to be published, and select **publish**.
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
-
 
 [Operations for App-V](appv-operations.md)
 
 [Managing Connection Groups](appv-managing-connection-groups.md)
-
- 
-
- 
-
-
-
-
-
