@@ -45,6 +45,10 @@ The following topics are available in this guide:
         <td>[Step by step: Deploy Windows 10](#windows-10-poc-guides)</td>
         <td>Detailed, step by step instructions to demonstrate a Windows 10 deployment.</td>
     </tr>
+    <tr>
+        <td>[Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2)</td>
+        <td>Instructions for configuring a Hyper-V host on Windows Server 2008 R2.</td>
+    </tr>    
 </table>
 
 ## Overview of procedures
@@ -215,8 +219,8 @@ The lab architecture is summarized in the following diagram:
 
     ![VHD](images/download_vhd.png)
 
-2. Rename the VHD file that you downloaded to **2008R2-poc-1.vhd**. This is not required, but is done to make the filename simpler to recognize.
-3. Copy the VHD to a second file also in the C:\VHD directory and name this VHD **2008R2-poc-2.vhd**.
+2. Rename the VHD file that you downloaded to **2012R2-poc-1.vhd**. This is not required, but is done to make the filename simpler to recognize.
+3. Copy the VHD to a second file also in the C:\VHD directory and name this VHD **2012R2-poc-2.vhd**.
 4. Download the [Windows 10 Enterprise ISO](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) from the TechNet Evaluation Center to the C:\VHD directory on your Hyper-V host. During registration, you must specify the type, version, and language of installation media to download. 
 5. Rename the ISO file that you downloaded to **w10-enterprise.iso**. Again, this is done so that the filename is simpler to type and recognize.
 
@@ -227,15 +231,15 @@ The lab architecture is summarized in the following diagram:
 
     C:\>cd VHD
 
-    C:\VHD>ren 9600*.vhd 2008R2-poc-1.vhd
+    C:\VHD>ren 9600*.vhd 2012R2-poc-1.vhd
 
-    C:\VHD>copy 2008R2-poc-1.vhd 2008R2-poc-2.vhd
+    C:\VHD>copy 2012R2-poc-1.vhd 2012R2-poc-2.vhd
             1 file(s) copied.
 
     C:\VHD ren *.iso w10-enterprise.iso
     C:\VHD>dir /B
-    2008R2-poc-1.vhd
-    2008R2-poc-2.vhd
+    2012R2-poc-1.vhd
+    2012R2-poc-2.vhd
     w10-enterprise.iso
     ```
 
@@ -252,14 +256,14 @@ The lab architecture is summarized in the following diagram:
     In this example, the source computer has two hard drives, C: and E: and a system reserved partition. The VHDX file (w7.vhdx) is being saved to a flash drive (F:) in the F:\VHD directory.<BR> 
     **Note**: Disk2vhd can also save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted. 
 
-    >If you have experience with Microsoft Virtual Machine Converter and prefer to use this tool instead of Disk2vhd, see [Appendix B: Microsoft Virtual Machine Converter](appendix-b-microsoft-virtual-machine-converter).
+    >If you have experience with Microsoft Virtual Machine Converter and prefer to use this tool instead of Disk2vhd, see [Appendix B: Microsoft Virtual Machine Converter](#appendix-b-microsoft-virtual-machine-converter).
 
 5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
     ```
     C:\vhd>dir /B
-    2008R2-poc-1.vhd
-    2008R2-poc-2.vhd
+    2012R2-poc-1.vhd
+    2012R2-poc-2.vhd
     w10-enterprise.iso
     w7.VHDX
     ```
@@ -293,9 +297,9 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
 
     ```
     $maxRAM = 2700MB
-    New-VM –Name "2012R2-DC1" –VHDPath c:\vhd\2008R2-poc-1.vhd -SwitchName poc-internal
+    New-VM –Name "2012R2-DC1" –VHDPath c:\vhd\2012R2-poc-1.vhd -SwitchName poc-internal
     Set-VMMemory -VMName "2012R2-DC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
-    New-VM –Name "2012R2-SRV1" –VHDPath c:\vhd\2008R2-poc-2.vhd -SwitchName poc-internal
+    New-VM –Name "2012R2-SRV1" –VHDPath c:\vhd\2012R2-poc-2.vhd -SwitchName poc-internal
     Set-VMMemory -VMName "2012R2-SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     ```
     
@@ -309,41 +313,41 @@ If your Hyper-V host is running Windows Server 2008 R2, you can use the Hyper-V 
 
 For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
 
-    >To install Hyper-V on Windows Server 2008 R2, use the Add-WindowsFeature cmdlet:
+To install Hyper-V on Windows Server 2008 R2, use the Add-WindowsFeature cmdlet:
 
-    ```
-    Add-WindowsFeature -Name Hyper-V
-    ```
-    >Use the following Windows PowerShell commands to create a virtual switch on Windows Server 2008 R2:
+```
+Add-WindowsFeature -Name Hyper-V
+```
+Use the following Windows PowerShell commands to create a virtual switch on Windows Server 2008 R2:
 
-    ```
-    $SwitchFriendlyName = "poc-internal"
-    $InternalEthernetPortFriendlyName = $SwitchFriendlyName
-    $InternalSwitchPortFriendlyName = "poc"
-    $SwitchName = [guid]::NewGuid().ToString()
-    $InternalSwitchPortName = [guid]::NewGuid().ToString()
-    $InternalEthernetPortName = [guid]::NewGuid().ToString()
-    $NumLearnableAddresses = 1024
-    $ScopeOfResidence = ""
-    $VirtualSwitchManagementService = gwmi Msvm_VirtualSwitchManagementService -namespace "root\virtualization"
-    $Result = $VirtualSwitchManagementService.CreateSwitch($SwitchName, $SwitchFriendlyName, $NumLearnableAddresses, $ScopeOfResidence) 
-    $Switch = [WMI]$Result.CreatedVirtualSwitch 
-    $Result = $VirtualSwitchManagementService.CreateSwitchPort($Switch, $InternalSwitchPortName, $InternalSwitchPortFriendlyName, $ScopeOfResidence)
-    $InternalSwitchPort = [WMI]$Result.CreatedSwitchPort 
-    $Result = $VirtualSwitchManagementService.CreateInternalEthernetPortDynamicMac($InternalEthernetPortName, $InternalEthernetPortFriendlyName)
-    $InternalEthernetPort = [WMI]$Result.CreatedInternalEthernetPort
-    $query = "Associators of {$InternalEthernetPort} Where ResultClass=CIM_LanEndpoint"
-    $InternalLanEndPoint = gwmi -namespace root\virtualization -query $query
-    $Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort, $InternalLanEndPoint)
-    $filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
-    $NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
-    ```
+```
+$SwitchFriendlyName = "poc-internal"
+$InternalEthernetPortFriendlyName = $SwitchFriendlyName
+$InternalSwitchPortFriendlyName = "poc"
+$SwitchName = [guid]::NewGuid().ToString()
+$InternalSwitchPortName = [guid]::NewGuid().ToString()
+$InternalEthernetPortName = [guid]::NewGuid().ToString()
+$NumLearnableAddresses = 1024
+$ScopeOfResidence = ""
+$VirtualSwitchManagementService = gwmi Msvm_VirtualSwitchManagementService -namespace "root\virtualization"
+$Result = $VirtualSwitchManagementService.CreateSwitch($SwitchName, $SwitchFriendlyName, $NumLearnableAddresses, $ScopeOfResidence) 
+$Switch = [WMI]$Result.CreatedVirtualSwitch 
+$Result = $VirtualSwitchManagementService.CreateSwitchPort($Switch, $InternalSwitchPortName, $InternalSwitchPortFriendlyName, $ScopeOfResidence)
+$InternalSwitchPort = [WMI]$Result.CreatedSwitchPort 
+$Result = $VirtualSwitchManagementService.CreateInternalEthernetPortDynamicMac($InternalEthernetPortName, $InternalEthernetPortFriendlyName)
+$InternalEthernetPort = [WMI]$Result.CreatedInternalEthernetPort
+$query = "Associators of {$InternalEthernetPort} Where ResultClass=CIM_LanEndpoint"
+$InternalLanEndPoint = gwmi -namespace root\virtualization -query $query
+$Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort, $InternalLanEndPoint)
+$filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
+$NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
+```
 
-    >Use the following Windows PowerShell commands to add VMs on Windows Server 2008 R2:
+Use the following Windows PowerShell commands to add VMs on Windows Server 2008 R2:
 
-    ```
-
-    ```
+```
+command here
+```
 
 ## Appendix B: Microsoft Virtual Machine Converter
 
