@@ -106,6 +106,8 @@ The final step to making your VPN configuration work with WIP, is to link your t
 
 2.  In the left pane of the **Manage Deployment** box, click the employees or groups that should get the policy, and then click **Add**. The added people move to the **Selected Groups** list on the right-hand pane.
 
+    ![Microsoft Intune, Manage Deployment box used to deploy your linked VPN policy](images/intune-groupselection_vpnlink.png)
+
 3.  After you've picked all of the employees and groups that should get the policy, click **OK**. The policy is deployed to the selected users' devices.
 
 
