@@ -28,7 +28,7 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
 2.  Go to **Windows**, click the **VPN Profile (Windows 10 Desktop and Mobile and later)**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
-    ![Microsoft Intune: Create a new policy using the New Policy screen](images/intune-vpn-createpolicy.png)
+    ![Microsoft Intune, Create a new policy using the New Policy screen](images/intune-vpn-createpolicy.png)
 
 3.  Type *WIPModeID* into the **Name** box, along with an optional description for your policy into the **Description** box.
 
@@ -49,7 +49,7 @@ Follow these steps to create the VPN policy you want to use with WIP.
 5.  In the **Authentication** area, choose the authentication method that matches your VPN infrastructure, either **Username and Password** or **Certificates**.<p>
 It's your choice whether you check the box to **Remember the user credentials at each logon**.
 
-    ![Microsoft Intune: Choose the Authentication Method for your VPN system](images/intune-vpn-authentication.png)
+    ![Microsoft Intune, Choose the Authentication Method for your VPN system](images/intune-vpn-authentication.png)
 
 6.  You can leave the rest of the default or blank settings, and then click **Save Policy**.
 
@@ -77,7 +77,7 @@ The final step to making your VPN configuration work with WIP, is to link your t
 
 2.  Go to **Windows**, click the **Custom Configuration (Windows 10 Desktop and Mobile and later)**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
-    ![Microsoft Intune: Create a new policy from the New Policy screen](images/intune-vpn-customconfig.png)
+    ![Microsoft Intune, Create a new policy from the New Policy screen](images/intune-vpn-customconfig.png)
 
 3.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
