@@ -120,7 +120,11 @@ This table includes the elements used by the v.2 version of the Enterprise Mode 
   &lt;open-in&gt;none&lt;/open-in&gt;
 &lt;/site&gt;</pre>
 <strong>-or-</strong>
-<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;
+<p>For IPv4 ranges:<pre class="syntax">&lt;site url="10.122.34.99:8080"&gt;
+  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
+&lt;site&gt;</pre><p>
+<strong>-or-</strong>
+<p>For IPv6 ranges:<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
 &lt;site&gt;</pre><p>
 You can also use the self-closing version, &lt;url="contoso.com" /&gt;, which also sets:
@@ -139,7 +143,11 @@ You can also use the self-closing version, &lt;url="contoso.com" /&gt;, which al
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
 &lt;/site&gt;</pre>
 <strong>-or-</strong>
-<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;
+<p>For IPv4 ranges:<pre class="syntax">&lt;site url="10.122.34.99:8080"&gt;
+  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
+&lt;site&gt;</pre><p>
+<strong>-or-</strong>
+<p>For IPv6 ranges:<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;
   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
 &lt;site&gt;</pre><p>
 Where:

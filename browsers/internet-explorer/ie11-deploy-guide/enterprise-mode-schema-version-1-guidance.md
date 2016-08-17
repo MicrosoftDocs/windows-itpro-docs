@@ -89,12 +89,17 @@ This table includes the elements used by the Enterprise Mode schema.
   &lt;/emie&gt;
 &lt;/rules&gt;</pre>
 <strong>-or-</strong>
-<pre class="syntax">&lt;rules version="205"&gt;
+<p>For IPv6 ranges:<pre class="syntax">&lt;rules version="205"&gt;
   &lt;emie&gt;
     &lt;domain&gt;[10.122.34.99]:8080&lt;/domain&gt;
   &lt;/emie&gt;
   &lt;/rules&gt;</pre>
-</td>
+<strong>-or-</strong>
+<p>For IPv4 ranges:<pre class="syntax">&lt;rules version="205"&gt;
+  &lt;emie&gt;
+    &lt;domain&gt;10.122.34.99:8080&lt;/domain&gt;
+  &lt;/emie&gt;
+  &lt;/rules&gt;</pre></td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
