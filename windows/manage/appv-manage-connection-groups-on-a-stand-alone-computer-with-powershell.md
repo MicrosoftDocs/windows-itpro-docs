@@ -1,6 +1,6 @@
 ---
-title: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell (Windows 10)
-description: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell
+title: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell (Windows 10)
+description: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell
+# How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
 
 Applies to: Windows 10, version 1607
 
@@ -82,8 +82,8 @@ This topic explains the following procedures:
     <td align="left"><p>Enable-AppVClientConnectionGroup “ConnectionGroupA” -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p>Disable -AppVClientConnectionGroup</p></td>
-    <td align="left"><p>Disable -AppVClientConnectionGroup “ConnectionGroupA” -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
+    <td align="left"><p>Disable-AppVClientConnectionGroup</p></td>
+    <td align="left"><p>Disable-AppVClientConnectionGroup “ConnectionGroupA” -UserSID S-1-2-34-56789012-3456789012-345678901-2345</p></td>
     </tr>
     </tbody>
     </table>
@@ -116,19 +116,19 @@ This topic explains the following procedures:
     <tbody>
     <tr class="odd">
     <td align="left"><p>Set-AppvClientConfiguration</p></td>
-    <td align="left"><p>–RequirePublishAsAdmin</p>
+    <td align="left"><p>-RequirePublishAsAdmin</p>
     <ul>
     <li><p>0 - False</p></li>
     <li><p>1 - True</p></li>
     </ul></td>
-    <td align="left"><p>Set-AppvClientConfiguration –RequirePublishAsAdmin1</p></td>
+    <td align="left"><p>Set-AppvClientConfiguration -RequirePublishAsAdmin 1</p></td>
     </tr>
     </tbody>
     </table>
 
-     
+## Have a suggestion for App-V? 
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
@@ -136,12 +136,3 @@ This topic explains the following procedures:
 [Operations for App-V](appv-operations.md)
 
 [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
-
- 
-
- 
-
-
-
-
-
