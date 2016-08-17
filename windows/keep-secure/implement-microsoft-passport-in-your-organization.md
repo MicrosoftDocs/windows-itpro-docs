@@ -18,7 +18,9 @@ localizationpriority: high
 -   Windows 10 Mobile
 
 You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
-> **Important:**  The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Windows Hello for Business** policy settings to manage PINs.
+
+>[!IMPORTANT]
+>The Group Policy setting **Turn on PIN sign-in** does not apply to Windows Hello for Business. It still prevents or enables the creation of a convenience PIN for Windows 10. Use **Windows Hello for Business** policy settings to manage PINs.
  
 ## Group Policy settings for Windows Hello for Businness
 

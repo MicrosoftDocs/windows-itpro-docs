@@ -38,32 +38,7 @@ To add a locally installed application to a package or to a connection group’s
 
 There is no Group Policy setting available to manage this registry key, so you have to use System Center Configuration Manager or another electronic software distribution (ESD) system, or manually edit the registry.
 
-### <a href="" id="bkmk-"></a>Supported methods of publishing packages when using RunVirtual
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">App-V version</th>
-<th align="left">Supported publishing methods</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V 5.0 SP3 and App-V</p></td>
-<td align="left"><p>Published globally or to the user</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V 5.0 through App-V 5.0 SP2</p></td>
-<td align="left"><p>Published globally only</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages globally or to the user.
 
 ### Steps to create the subkey
 

@@ -20,7 +20,6 @@ The topics in this section provide information and step-by-step procedures to he
 - [What's new in App-V](appv-about-appv.md)
 - [Evaluating App-V](appv-evaluating-appv.md)
 - [High Level Architecture for App-V](appv-high-level-architecture.md)
-- [Accessibility for App-V](appv-accessibility.md)
 
 [Planning for App-V](appv-planning-for-appv.md)  
 
