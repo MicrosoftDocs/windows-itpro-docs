@@ -111,7 +111,7 @@
 #### [Maintaining App-V](appv-maintaining-appv.md)
 ##### [How to Move the App-V Server to Another Computer](appv-move-the-appv-server-to-another-computer.md)
 #### [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
-##### [How to Load the Windows PowerShell Cmdlets and Get Cmdlet Help ](appv-load-the-powershell-cmdlets-and-get-cmdlet-help.md)
+##### [How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help ](appv-load-the-powershell-cmdlets-and-get-cmdlet-help.md)
 ##### [How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md)
 ##### [How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md)
 ##### [How to Modify Client Configuration by Using Windows PowerShell](appv-modify-client-configuration-with-powershell.md)
