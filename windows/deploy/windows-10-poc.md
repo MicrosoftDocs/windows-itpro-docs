@@ -293,7 +293,7 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     ```
     In this example, VMs must use a maximum of 2700 MB of RAM so that you can run four VMs simultaneously. 
 
-4. At the elevated Windows PowerShell prompt, type the following command to create two new VMs using the resource values that were calculated in the previous step:
+4. At the elevated Windows PowerShell prompt, type the following command to create two new VMs. **Important**: Replace the value of 2700MB with the RAM value that you calculated in the previous step:
 
     ```
     $maxRAM = 2700MB
@@ -305,7 +305,7 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     
 ### Configure VHDs
 
-And now....
+Start-VM 2012R2-DC1
 
 ## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
 
