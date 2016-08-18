@@ -447,8 +447,6 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
     >[!NOTE]  
     >If you used the [manual method for creating a workspace](http://go.microsoft.com/fwlink/p/?LinkId=619174) you should have already provisioned the Windows To Go drive. If so, you can continue on to the next step.
 
-     
-
    ``` syntax
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
@@ -482,11 +480,11 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
    # This command toggles the NODEFAULTDRIVELETTER flag on the partition which prevents drive letters being assigned to either partition when inserted into a different computer.
     Set-Partition -InputObject $OSPartition -NoDefaultDriveLetter $TRUE
     ```
-
-  Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you just created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](http://go.microsoft.com/fwlink/p/?LinkId=619161) command-line tool (DISM):
-
-    >[!TIP]  
-    >The index number must be set correctly to a valid Enterprise image in the .WIM file.
+    
+   Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you just created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](http://go.microsoft.com/fwlink/p/?LinkId=619161) command-line tool (DISM):
+   
+   >[!TIP]  
+   >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
 
    ``` syntax
