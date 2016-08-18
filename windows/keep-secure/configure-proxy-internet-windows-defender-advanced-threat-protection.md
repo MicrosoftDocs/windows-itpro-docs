@@ -26,7 +26,7 @@ The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to repo
 
 The embedded Windows Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Windows Defender ATP cloud service.
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery method:
 
 - Configure the proxy server manually using a static proxy
 
