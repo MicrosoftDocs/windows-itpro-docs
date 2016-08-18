@@ -172,10 +172,10 @@ The following tables provide descriptions of the default groups that are located
 <thead>
 <tr class="header">
 <th>Default Security Group</th>
+<th>Windows Server 2016</th>
 <th>Windows Server 2012 R2</th>
 <th>Windows Server 2012</th>
 <th>Windows Server 2008 R2</th>
-<th>Windows Server 2008</th>
 </tr>
 </thead>
 <tbody>
@@ -183,7 +183,7 @@ The following tables provide descriptions of the default groups that are located
 <td><p>[Access Control Assistance Operators](#bkmk-acasstops)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p></p></td>
+<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -232,7 +232,7 @@ The following tables provide descriptions of the default groups that are located
 <td><p>[Cloneable Domain Controllers](#bkmk-cloneabledomaincontrollers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p></p></td>
+<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
@@ -327,7 +327,7 @@ The following tables provide descriptions of the default groups that are located
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[Group Policy Creators Owners](#bkmk-gpcreatorsowners)</p></td>
+<td><p>[Group Policy Creator Owners](#bkmk-gpcreatorsowners)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
@@ -344,7 +344,7 @@ The following tables provide descriptions of the default groups that are located
 <td><p>[Hyper-V Administrators](#bkmk-hypervadministrators)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p></p></td>
+<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
@@ -362,143 +362,164 @@ The following tables provide descriptions of the default groups that are located
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
+<td><p>[Key Admins](#key-admins)</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
 <td><p>[Network Configuration Operators](#bkmk-networkcfgoperators)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Performance Log Users](#bkmk-perflogusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Performance Monitor Users](#bkmk-perfmonitorusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Pre–Windows 2000 Compatible Access](#bkmk-pre-ws2kcompataccess)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Print Operators](#bkmk-printoperators)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Protected Users](#bkmk-protectedusers)</p></td>
+<td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[RAS and IAS Servers](#bkmk-rasandias)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[RDS Endpoint Servers](#bkmk-rdsendpointservers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>[RDS Management Servers](#bkmk-rdsmanagementservers)</p></td>
 <td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>[RDS Remote Access Servers](#bkmk-rdsremoteaccessservers)</p></td>
+<td><p>[RDS Management Servers](#bkmk-rdsmanagementservers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p></p></td>
+<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
+<td><p>[RDS Remote Access Servers](#bkmk-rdsremoteaccessservers)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
 <td><p>[Read-only Domain Controllers](#bkmk-rodc)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Remote Desktop Users](#bkmk-remotedesktopusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Remote Management Users](#bkmk-remotemanagementusers)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td><p></p></td>
+<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Replicator](#bkmk-replicator)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Schema Admins](#bkmk-schemaadmins)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Server Operators](#bkmk-serveroperators)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
+<tr class="even">
+<td><p>[Storage Replica Administrators](#storage-replica-administrators)</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
 <tr class="odd">
+<td><p>[System Managed Accounts Group](#system-managed-accounts-group)</p></td>
+<td><p>Yes</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
 <td><p>[Terminal Server License Servers](#bkmk-terminalserverlic)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[Users](#bkmk-users)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>[Windows Authorization Access Group](#bkmk-winauthaccess)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>[WinRMRemoteWMIUsers_](#bkmk-winrmremotewmiusers-)</p></td>
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
 <td><p></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -2196,7 +2217,23 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+### Key Admins
+
+Members of this group can perform administrative actions on key objects within the domain.
+
+The Key Admins group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
+
+| Attribute | Value |
+|-----------|-------|
+| Well-Known SID/RID | S-1-5-21-4195037842-338827918-94892514-526 |
+| Type | Global |
+| Default container | CN=Users, DC=&lt;domain&gt;, DC= |
+| Default members | None |
+| Default member of | None |
+| Protected by ADMINSDHOLDER? | No |
+| Safe to delegate management of this group to non-Service admins? | No |
+
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights" -->
 
 ### <a href="" id="bkmk-networkcfgoperators"></a>Network Configuration Operators
 
@@ -3299,7 +3336,42 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
+### Storage Replica Administrators
+
+Members of this group have complete and unrestricted access to all features of Storage Replica.
+
+The Storage Replica Administrators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
+
+| Attribute | Value |
+|-----------|-------|
+| Well-Known SID/RID | S-1-5-32-582 |
+| Type | BuiltIn Local |
+| Default container | CN=BuiltIn, DC=&lt;domain&gt;, DC= |
+| Default members | None |
+| Default member of | None |
+| Protected by ADMINSDHOLDER? | No |
+| Safe to delegate management of this group to non-Service admins? | No |
+
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights" -->
+
+### System Managed Accounts Group
+
+Members of this group are managed by the system.
+
+The System Managed Accounts group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
+
+
+| Attribute | Value |
+|-----------|-------|
+| Well-Known SID/RID | S-1-5-32-581 |
+| Type | BuiltIn Local |
+| Default container | CN=BuiltIn, DC=&lt;domain&gt;, DC= |
+| Default members | Users |
+| Default member of | None |
+| Protected by ADMINSDHOLDER? | No |
+| Safe to delegate management of this group to non-Service admins? | No |
+
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights"   -- ALSO, CONFIRM "Users" is correct for "Default members." -->
 
 ### <a href="" id="bkmk-terminalserverlic"></a>Terminal Server License Servers
 
