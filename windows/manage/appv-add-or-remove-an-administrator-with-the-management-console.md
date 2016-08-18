@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Add or Remove an Administrator by Using the Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedures to add or remove an administrator on the Microsoft Application Virtualization (App-V) server.
 

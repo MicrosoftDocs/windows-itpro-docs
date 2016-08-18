@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 
 The following sections explain how to perform various management tasks on a stand-alone client computer by using Windows PowerShell:

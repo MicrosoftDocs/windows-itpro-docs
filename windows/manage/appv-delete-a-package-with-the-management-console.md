@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Delete a Package in the Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to delete an App-V package.
 

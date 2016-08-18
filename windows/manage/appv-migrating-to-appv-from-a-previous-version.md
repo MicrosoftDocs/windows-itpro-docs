@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Migrating to App-V from previous versions
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 To migrate from App-V 4.x to App-V for Windows 10, you must upgrade to App-V 5.x first. 
 

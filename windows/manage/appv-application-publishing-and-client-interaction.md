@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Application Publishing and Client Interaction
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This article provides technical information about common App-V client operations and their integration with the local operating system.
 

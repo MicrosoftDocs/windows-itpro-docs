@@ -11,7 +11,8 @@ ms.prod: w10
 
 # App-V Planning Checklist
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This checklist can be used to help you plan for preparing your organization for an App-V deployment.
 

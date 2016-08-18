@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Release Notes for App-V for Windows 10, version 1607
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 The following are known issues in Application Virtualization (App-V) for Windows 10, version 1607.
  

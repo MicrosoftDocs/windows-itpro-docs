@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Modify an Existing Virtual Application Package
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This topic explains how to:
 

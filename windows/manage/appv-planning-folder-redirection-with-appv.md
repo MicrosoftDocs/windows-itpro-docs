@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Planning to Use Folder Redirection with App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Microsoft Application Virtualization (App-V) supports the use of folder redirection, a feature that enables users and administrators to redirect the path of a folder to a new location.
 

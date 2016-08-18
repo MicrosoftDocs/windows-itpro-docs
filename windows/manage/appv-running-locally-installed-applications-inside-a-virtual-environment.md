@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 You can run a locally installed application in a virtual environment, alongside applications that have been virtualized by using Microsoft Application Virtualization (App-V). You might want to do this if you:
 

@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Upgrading to App-V for Windows 10 from an existing installation
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 If you’re already using App-V and you’re planning to upgrade user devices to Windows 10, you need to make only the following few adjustments to your existing environment to start using App-V for Windows 10. 
 

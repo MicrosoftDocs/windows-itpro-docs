@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Create a Custom Configuration File by Using the App-V Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 You can use a dynamic configuration to customize an App-V package for a specific user. However, you must first create the dynamic user configuration (.xml) file or the dynamic deployment configuration file before you can use the files. Creation of the file is an advanced manual operation. For general information about dynamic user configuration files, see, [About App-V Dynamic Configuration](appv-dynamic-configuration.md).
 

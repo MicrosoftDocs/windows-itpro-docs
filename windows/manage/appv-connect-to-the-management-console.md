@@ -10,7 +10,8 @@ ms.prod: w10
 
 # How to Connect to the Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to connect to the App-V Management Console.
 

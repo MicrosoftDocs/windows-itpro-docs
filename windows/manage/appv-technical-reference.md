@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Technical Reference for App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This section provides reference information related to managing App-V.
 

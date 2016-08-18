@@ -11,7 +11,8 @@ ms.prod: w10
 
 # App-V for Windows 10 Prerequisites
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Before installing App-V for Windows 10, ensure that you have installed all of the following required prerequisite software.
 

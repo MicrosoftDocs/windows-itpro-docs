@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Make a Connection Group Ignore the Package Version
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Application Virtualization (App-V) lets you configure a connection group to use any version of a package, which simplifies package upgrades and reduces the number of connection groups you need to create.
 

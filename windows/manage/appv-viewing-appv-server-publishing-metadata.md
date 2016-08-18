@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Viewing App-V Server Publishing Metadata
 
-Applies to: Windows Server 2016
+**Applies to**
+-   Windows Server 2016
 
 Use this procedure to view App-V Server publishing metadata, which can help you resolve publishing-related issues. You must be using the App-V Management server to use this procedure.
 

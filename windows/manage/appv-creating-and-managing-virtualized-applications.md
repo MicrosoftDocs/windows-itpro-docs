@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Creating and Managing App-V Virtualized Applications
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 After you have properly deployed the Microsoft Application Virtualization (App-V) sequencer, you can use it to monitor and record the installation and setup process for an application to be run as a virtualized application.
 

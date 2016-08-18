@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Troubleshooting App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 For information that can help with troubleshooting App-V for Windows 10, see:
 

@@ -11,7 +11,8 @@ ms.prod: w10
 
 # High Level Architecture for App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following information to help you simplify you Microsoft Application Virtualization (App-V) deployment.
 

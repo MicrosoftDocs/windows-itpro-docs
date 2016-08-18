@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 What this topic covers:
 

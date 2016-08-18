@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Sequence a Package by using Windows PowerShell
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to create a new App-V package using Windows PowerShell.
 

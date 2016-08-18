@@ -11,7 +11,8 @@ ms.prod: w10
 
 # About the Connection Group File
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 **In this topic:**
 

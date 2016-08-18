@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
 
-Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
+**Applies to**
+-   Windows Server 2016
 
 Use the following procedure to install the database server and management server on different computers. The computer you plan to install the database server on must be running a supported version of Microsoft SQL or the installation will fail.
 

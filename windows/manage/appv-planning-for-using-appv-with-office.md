@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Planning for Using App-V with Office
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following information to plan how to deploy Office by using Microsoft Application Virtualization (App-V). This article includes:
 

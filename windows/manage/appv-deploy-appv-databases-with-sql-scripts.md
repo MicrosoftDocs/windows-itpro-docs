@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Deploy the App-V Databases by Using SQL Scripts
 
-Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
+**Applies to**
+-   Windows Server 2016
 
 Use the following instructions to use SQL scripts, rather than the Windows Installer, to:
 

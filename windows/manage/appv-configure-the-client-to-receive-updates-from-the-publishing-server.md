@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Deploying packages and connection groups using the App-V publishing server is helpful because it offers single-point management and high scalability.
 

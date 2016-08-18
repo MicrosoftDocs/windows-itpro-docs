@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Create a Package Accelerator
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 App-V package accelerators automatically generate new virtual application packages.
 

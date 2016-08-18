@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to view and configure default package extensions.
 
