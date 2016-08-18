@@ -36,22 +36,14 @@ The ability to enable only administrators to publish or unpublish packages (desc
 
 2.  Enable the **Require publish as administrator** Group Policy setting.
 
-    To alternatively use PowerShell to set this item, see [How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs).
+    To instead use Windows PowerShell to set this item, see [How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs).
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
-
 
 [Operations for App-V](appv-operations.md)
 
 [How to Configure Access to Packages by Using the Management Console](appv-configure-access-to-packages-with-the-management-console.md)
-
- 
-
- 
-
-
-
-
-

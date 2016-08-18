@@ -22,7 +22,7 @@ Use one of the following methods to publish packages to App-V client computers w
 | - | - |
 | Functionality provided by a third-party ESD | Use the functionality in a third-party ESD.| 
 | Stand-alone Windows Installer | Install the application on the target client computer by using the associated Windows Installer (.msi) file that is created when you initially sequence an application. The Windows Installer file contains the associated App-V package file information used to configure a package and copies the required package files to the client. |
-| Windows PowerShell | Use Windows PowerShell cmdlets to deploy virtualized applications. For more information about using PowerShell and App-V, see [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md).| 
+| Windows PowerShell | Use Windows PowerShell cmdlets to deploy virtualized applications. For more information about using Windows PowerShell and App-V, see [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md).| 
 
  
 

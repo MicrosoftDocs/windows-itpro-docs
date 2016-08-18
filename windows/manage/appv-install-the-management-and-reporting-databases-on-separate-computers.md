@@ -85,7 +85,7 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 4.  For each database, copy the scripts to a share and modify them following the instructions in the readme file.
 
     **Note**  
-    For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).     
+    For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).     
 
 5.  Run the scripts on the computer running Microsoft SQL Server.
 
@@ -95,14 +95,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-
 [Deploying App-V](appv-deploying-appv.md)
-
- 
-
- 
-
-
-
-
-
