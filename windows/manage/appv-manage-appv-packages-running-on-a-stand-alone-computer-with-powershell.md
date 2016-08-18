@@ -1,6 +1,6 @@
 ---
-title: How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell (Windows 10)
-description: How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell
+title: How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell (Windows 10)
+description: How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,12 +9,12 @@ ms.prod: w10
 ---
 
 
-# How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell
+# How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell
 
 Applies to: Windows 10, version 1607
 
 
-The following sections explain how to perform various management tasks on a stand-alone client computer by using PowerShell:
+The following sections explain how to perform various management tasks on a stand-alone client computer by using Windows PowerShell:
 
 -   [To return a list of packages](#bkmk-return-pkgs-standalone-posh)
 
@@ -169,7 +169,7 @@ Use the following information to remove a package from the computer.
 **Example**: Remove-AppvClientPackage “ContosoApplication”
 
 **Note**  
-App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [To add and publish a package](#bkmk-add-pub-pkg-standalone-posh). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](http://go.microsoft.com/fwlink/?LinkId=324466).
+App-V cmdlets have been assigned to variables for the previous examples for clarity only; assignment is not a requirement. Most cmdlets can be combined as displayed in [To add and publish a package](#bkmk-add-pub-pkg-standalone-posh). For a detailed tutorial, see [App-V 5.0 Client PowerShell Deep Dive](https://blogs.technet.microsoft.com/appv/2012/12/03/app-v-5-0-client-powershell-deep-dive/).
 
  
 
@@ -213,7 +213,7 @@ To use the App-V Management console to set this configuration, see [How to Publi
 ## <a href="" id="bkmk-understd-pend-pkgs"></a>Understanding pending packages (UserPending and GlobalPending)
 
 
-**Starting in App-V 5.0 SP2**: If you run a PowerShell cmdlet that affects a package that is currently in use, the task that you are trying to perform is placed in a pending state. For example, if you try to publish a package when an application in that package is being used, and then run **Get-AppvClientPackage**, the pending status appears in the cmdlet output as follows:
+**Starting in App-V 5.0 SP2**: If you run a Windows PowerShell cmdlet that affects a package that is currently in use, the task that you are trying to perform is placed in a pending state. For example, if you try to publish a package when an application in that package is being used, and then run **Get-AppvClientPackage**, the pending status appears in the cmdlet output as follows:
 
 <table>
 <colgroup>
@@ -273,24 +273,15 @@ The pending task will run later, according to the following rules:
 </tbody>
 </table>
 
- 
-
 For more information about pending tasks, see [Upgrading an in-use App-V package](appv-application-publishing-and-client-interaction.md#upgrading-an-in-use-app-v-package).
 
-**Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V? 
+
+Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
-
 
 [Operations for App-V](appv-operations.md)
 
 [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
-
- 
-
- 
-
-
-
-
 

@@ -737,8 +737,8 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 ## Related topics
 
-[How to Apply the Deployment Configuration File by Using PowerShell](appv-apply-the-deployment-configuration-file-with-powershell.md)
+[How to Apply the Deployment Configuration File by Using Windows PowerShell](appv-apply-the-deployment-configuration-file-with-powershell.md)
 
-[How to Apply the User Configuration File by Using PowerShell](appv-apply-the-user-configuration-file-with-powershell.md)
+[How to Apply the User Configuration File by Using Windows PowerShell](appv-apply-the-user-configuration-file-with-powershell.md)
 
 [Operations for App-V](appv-operations.md)
