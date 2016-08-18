@@ -26,7 +26,7 @@ The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to repo
 
 The embedded Windows Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Windows Defender ATP cloud service.
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery method:
 
 - Configure the proxy server manually using a static proxy
 
@@ -47,7 +47,6 @@ For example: 10.0.0.6:8080
 If the static proxy settings are configured after onboarding, then you must restart the PC to apply the proxy settings.
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
-
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
 Primary Domain Controller | .Microsoft.com DNS record
@@ -59,6 +58,10 @@ Primary Domain Controller | .Microsoft.com DNS record
 
  <br>
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
+
+ If you selected US as your region, you should permit anonymous traffic for URLs listed in both Central US and East US (2).
+
+ If you selected EU as your region, you should permit anonymous traffic for URLs listed in both West Europe and North Europe.
 
 
 ## Verify client connectivity to Windows Defender ATP service URLs
