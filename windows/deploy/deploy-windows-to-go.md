@@ -449,7 +449,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
      
 
-    ``` syntax
+   ``` syntax
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -483,14 +483,13 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
     Set-Partition -InputObject $OSPartition -NoDefaultDriveLetter $TRUE
     ```
 
-    Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you just created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](http://go.microsoft.com/fwlink/p/?LinkId=619161) command-line tool (DISM):
+  Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you just created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](http://go.microsoft.com/fwlink/p/?LinkId=619161) command-line tool (DISM):
 
     >[!TIP]  
     >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
-     
 
-    ``` syntax
+   ``` syntax
    #The WIM file must contain a sysprep generalized image.
     dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
     ```
