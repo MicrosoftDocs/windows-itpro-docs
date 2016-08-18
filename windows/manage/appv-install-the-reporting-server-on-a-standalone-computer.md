@@ -56,13 +56,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 [Deploying App-V](appv-deploying-appv.md)
 
-[How to Enable Reporting on the App-V Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)
-
- 
-
- 
-
-
-
-
-
+[How to Enable Reporting on the App-V Client by Using Windows PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)

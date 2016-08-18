@@ -410,10 +410,10 @@ You can use the following sample script to create a VBScript file to retrieve th
 ' Usage
 ' --------------------------------------------------------------------------------
 Sub ShowUsage
-   Wscript.Echo "USAGE: GetBitLockerKeyPackageAD [Path To Saved Key Package] [Optional Computer Name]"
+   Wscript.Echo "USAGE: GetBitLockerKeyPackageADDS [Path To Save Key Package] [Optional Computer Name]"
    Wscript.Echo "If no computer name is specified, the local computer is assumed."
    Wscript.Echo 
-   Wscript.Echo "Example: GetBitLockerKeyPackageAD E:\bitlocker-ad-key-package mycomputer"
+   Wscript.Echo "Example: GetBitLockerKeyPackageADDS E:\bitlocker-ad-key-package mycomputer"
    WScript.Quit
 End Sub
 ' --------------------------------------------------------------------------------
@@ -541,13 +541,23 @@ Function BinaryToString(Binary)
   BinaryToString = S
 End Function
 WScript.Quit
+```
+
 The following sample script exports a new key package from an unlocked, encrypted volume.
-To run this script, start by saving the code into a VBS file (for example, GetBitLockerKeyPackage.vbs). Then, open an administrator command prompt and use “cscript” to run the saved file (for example, type "cscript GetBitLockerKeyPackage.vbs  -?").
+
+**To run the sample key package retrieval script**
+
+1. Save the following sample script in a VBScript file. For example: GetBitLockerKeyPackage.vbs
+2. Open an administrator command prompt, type a command similar to the following:
+
+    **cscript GetBitLockerKeyPackage.vbs  -?**
+
+``` syntax
 ' --------------------------------------------------------------------------------
 ' Usage
 ' --------------------------------------------------------------------------------
 Sub ShowUsage
-   Wscript.Echo "USAGE: GetBitLockerKeyPackage [VolumeLetter/DriveLetter:] [Path To Saved Key Package]"
+   Wscript.Echo "USAGE: GetBitLockerKeyPackage [VolumeLetter/DriveLetter:] [Path To Save Key Package]"
    Wscript.Echo 
    Wscript.Echo "Example: GetBitLockerKeyPackage C: E:\bitlocker-backup-key-package"
    WScript.Quit
