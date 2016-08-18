@@ -2232,8 +2232,9 @@ The Key Admins group applies to versions of the Windows Server operating system 
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
 | Safe to delegate management of this group to non-Service admins? | No |
+| Default User Rights | None |
 
-<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights" -->
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?" -->
 
 ### <a href="" id="bkmk-networkcfgoperators"></a>Network Configuration Operators
 
@@ -3351,8 +3352,9 @@ The Storage Replica Administrators group applies to versions of the Windows Serv
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
 | Safe to delegate management of this group to non-Service admins? | No |
+| Default User Rights | None |
 
-<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights" -->
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?" -->
 
 ### System Managed Accounts Group
 
@@ -3370,8 +3372,9 @@ The System Managed Accounts group applies to versions of the Windows Server oper
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
 | Safe to delegate management of this group to non-Service admins? | No |
+| Default User Rights | None |
 
-<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights"   -- ALSO, CONFIRM "Users" is correct for "Default members." -->
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?" -->
 
 ### <a href="" id="bkmk-terminalserverlic"></a>Terminal Server License Servers
 
