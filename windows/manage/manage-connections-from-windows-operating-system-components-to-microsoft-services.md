@@ -2,7 +2,7 @@
 title: Manage connections from Windows operating system components to Microsoft services (Windows 10)
 description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-keywords: privacy, manage connections to Microsoft
+keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,6 +15,7 @@ author: brianlic-msft
 **Applies to**
 
 -   Windows 10
+-   Windows Server 2016
 
 If you're looking for content on what each telemetry level means and how to configure it in your organization, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md).
 
@@ -22,13 +23,44 @@ Learn about the network connections that Windows components make to Microsoft an
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-Some of the network connections discussed in this article can be managed in Windows 10 Mobile, Windows 10 Mobile Enterprise, Windows 10, version 1507, and Windows 10, version 1511. However, you must use Windows 10 Enterprise, version 1607 or Windows 10 Education, version 1607 to manage them all.
+You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reason why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
 
-You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft services as described in this article to prevent Windows from sending any data to Microsoft. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
 
-We are always working on improving Windows 10 for our customers. We invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows 10 work better for your organization.
+## What's new in Windows 10, version 1607 and Windows Server 2016
 
-Here's what's covered in this article:
+Here's a list of changes that were made to this article for Windows 10, version 1607 and Windows Server 2016:
+
+- Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech).
+- Added instructions on how to turn off flip ahead with an Internet Explorer Group Policy.
+- Added a section on how to turn off automatic root updates to stop updating the certificate trust list in [1. Certificate trust lists](#certificate-trust-lists).
+- Added a new setting in [25. Windows Update](#bkmk-wu). 
+- Changed the NCSI URL in [11. Network Connection Status Indicator](#bkmk-ncsi).
+- Added a section on how to turn off features that depend on Microsoft Account cloud authentication service [10. Microsoft Account](#bkmk-microsoft-account).
+
+- Added the following Group Policies:
+
+    - Turn off unsolicited network traffic on the Offline Maps settings page
+    - Turn off all Windows spotlight features
+
+## <a href="" id="bkmk-othersettings"></a>Settings by edition
+
+
+The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections.
+
+If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
+
+### Settings for Windows 10 Enterprise, version 1607
+
+See the following table for a summary of the management settings for Windows 10 Enterprise, version 1607.
+
+| Setting | UI | Group Policy | MDM policy | Registry | Command line |
+| - | - | - | - | - | - |
+| [Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
+| [Cortana and search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+
+![Windows 10 Enterprise, version 1607 settings](images/settings-table.png)
+
+Use the following list for more info on each section in the table above:
 
 -   [Info management settings](#bkmk-othersettings)
 
@@ -140,32 +172,6 @@ Here's what's covered in this article:
 
     -   [26. Windows Update](#bkmk-wu)
 
-## What's new in Windows 10, version 1607
-
-Here's a list of changes that were made to this article for Windows 10, version 1607:
-
-- Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech).
-- Added instructions on how to turn off flip ahead with an Internet Explorer Group Policy.
-- Added a section on how to turn off automatic root updates to stop updating the certificate trust list in [1. Certificate trust lists](#certificate-trust-lists).
-- Added a new setting in [25. Windows Update](#bkmk-wu). 
-- Changed the NCSI URL in [11. Network Connection Status Indicator](#bkmk-ncsi).
-- Added a section on how to turn off features that depend on Microsoft Account cloud authentication service [10. Microsoft Account](#bkmk-microsoft-account).
-
-- Added the following Group Policies:
-
-    - Turn off unsolicited network traffic on the Offline Maps settings page
-    - Turn off all Windows spotlight features
-
-## <a href="" id="bkmk-othersettings"></a>Info management settings
-
-
-This section lists the components that make network connections to Microsoft services automatically. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
-
-The settings in this section assume you are using Windows 10, version 1607. They will also be included in the next update for the Long Term Servicing Branch.
-
-See the following table for a summary of the management settings. For more info, see its corresponding section.
-
-![Management settings table](images/settings-table.png)
 
 
 ### <a href="" id="certificate-trust-lists"></a>1. Certificate trust lists
