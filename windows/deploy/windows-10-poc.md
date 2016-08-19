@@ -303,9 +303,47 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Set-VMMemory -VMName "2012R2-SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     ```
     
-### Configure VHDs
+### Configure Windows Server 2012 R2 VHDs
 
-Start-VM 2012R2-DC1
+1. Open an elevated Windows PowerShell window on the Hyper-V host and start the first VM by typing the following command:
+
+    ```
+    Start-VM 2012R2-DC1
+    ```
+2. Wait for the VM to complete starting up, and then connect to it either using the Hyper-V Manager console (virtmgmt.msc) or using an elevated command prompt:
+    ```
+    vmconnect localhost 2012R2-DC1
+    ```
+3. If the VM is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." At an elevated Windows PowerShell prompt on the VM, type the following commands to provide a new hostname and configure a static IP address and gateway:
+
+    ```
+    Rename-Computer DC1
+    New-NetIPAddress –InterfaceAlias Ethernet –IPAddress 192.168.0.1 –PrefixLength 24 -DefaultGateway 192.168.0.2
+    ```
+4. Install the Active Directory Domain Services role by typing the following command at an elevated Windows PowerShell prompt:
+
+    ```
+    Install-WindowsFeature -Name AD-Domain-Services -IncludeAllSubFeature -IncludeManagementTools
+    ```
+
+5. Before promoting the server to a Domain Controller, you must reboot so that the name change in step 3 above takes effect:
+
+    ```
+    shutdown /r
+    ```
+
+5. When the VM has rebooted, sign in again and open an elevated Windows PowerShell prompt. Now you can promote the server to be a domain controller. The directory services restore mode password must be entered as a secure string:
+
+    ```
+    $pass = "pass@word1" | ConvertTo-SecureString -AsPlainText -Force
+    Install-ADDSForest -DomainName contoso.com -InstallDns -SafeModeAdministratorPassword $pass -Force
+    ```
+    Ignore any warnings that are displayed. The computer will automatically reboot upon completion.
+6. When the reboot has completed, sign in again and open an elevated Windows PowerShell prompt so that you can add the DHCP Server role:
+
+    ```
+
+    ```
 
 ## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
 
