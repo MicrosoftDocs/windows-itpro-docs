@@ -98,9 +98,61 @@ See the following table for a summary of the management settings for Windows 10 
 | [25. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 
+### Settings for Windows Server 2016, with the desktop experience (Datacenter and Standard editions)
 
-![Windows 10 Enterprise, version 1607 settings](images/settings-table.png)
+See the following table for a summary of the management settings for Windows Server 2016, with the desktop experience (Datacenter and Standard editions).
 
+| Setting | UI | Group Policy | MDM policy | Registry | Command line |
+| - | :-: | :-: | :-: | :-: | :-: |
+| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
+| [2. Cortana and search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
+| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | | |
+| [5. Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
+| [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | | |
+| [10. Microsoft Account](#bkmk-microsoft-account) | | | | ![Check mark](images/checkmark.png) | |
+| [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | | |
+| [14. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [16. Settings > Privacy](#bkmk-settingssection) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
+| [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [22. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
+| [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | | |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+
+### Settings for Windows Server 2016, Server Core installation
+
+See the following table for a summary of the management settings for Windows Server 2016, Server Core installation.
+
+| Setting | UI | Group Policy | MDM policy | Registry | Command line |
+| - | :-: | :-: | :-: | :-: | :-: |
+| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
+| [5. Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
+| [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | | |
+| [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
+| [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+
+### Settings for Windows Server 2016, Nano Server installation
+
+See the following table for a summary of the management settings for Windows Server 2016, Server Core installation.
+
+| Setting | UI | Group Policy | MDM policy | Registry | Command line |
+| - | :-: | :-: | :-: | :-: | :-: |
+| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
+| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+
+## Settings
+
+Use the following sections for more information about how to configure each setting.
 
 ### <a href="" id="certificate-trust-lists"></a>1. Certificate trust lists
 
@@ -112,9 +164,9 @@ To turn off the automatic download of an updated certificate trust list, you can
 
     -or-
 
-- Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\DisableRootAutoUpdate**, with a value of 1.
+- Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot**, with a value of 1.
 
-After that, do the following in a Group Policy:
+    -or-
 
 1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
 2. Double-click **Certificate Path Validation Settings**.
@@ -138,10 +190,10 @@ Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Ad
 | Don't search the web or display web results in Search| Choose whether to search the web from Cortana.                                        |
 | Set what information is shared in Search             | Control what information is shared with Bing in Search.                               |
 
-In Windows 10, version 1507 and Windows 10, version 1511, When you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
+In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
 
 >[!IMPORTANT]
->These steps are not required for devices running Windows 10, version 1607. 
+>These steps are not required for devices running Windows 10, version 1607 or Windows Server 2016. 
 
 1.  Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Windows Firewall with Advanced Security** &gt; **Windows Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
 
@@ -198,12 +250,10 @@ To prevent Windows from retrieving device metadata from the Internet, apply the 
 
 ### <a href="" id="font-streaming"></a>5. Font streaming
 
-Starting with Windows 10, fonts that are included in Windows but that are not stored on the local device can be downloaded on demand.
+Fonts that are included in Windows but that are not stored on the local device can be downloaded on demand.
 
 To turn off font streaming, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
-> [!NOTE] 
-> This may change in future versions of Windows.
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 
@@ -211,10 +261,10 @@ To turn off Insider Preview builds for a released version of Windows 10:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
 
-To turn off Insider Preview builds for an Insider Preview version of Windows 10:
+To turn off Insider Preview builds:
 
 > [!NOTE]  
-> If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
+> If you're running a preview version of Windows 10 or Windows Server 2016, you must roll back to a released version before you can turn off Insider Preview builds.
 
 -   Turn off the feature in the UI: **Settings** > **Update & security** > **Windows Insider Program** > **Stop Insider Preview builds**.
 
@@ -358,7 +408,7 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCIS, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
 
-In versions of Windows 10 prior to Windows 10, version 1607, the URL was http://www.msftncsi.com. 
+In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was http://www.msftncsi.com. 
 
 You can turn off NCSI through Group Policy:
 
@@ -1102,11 +1152,15 @@ You can also use the registry to turn off Malicious Software Reporting Tool tele
 
 ### <a href="" id="bkmk-wmp"></a>22. Windows Media Player
 
-To remove Windows Media Player:
+To remove Windows Media Player on Windows 10:
 
 -   From the **Programs and Features** control panel, click **Turn Windows features on or off**, under **Media Features**, clear the **Windows Media Player** check box, and then click **OK**.
 
     -or-
+
+-   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
+
+To remove Windows Media Player on Windows Server 2016:
 
 -   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
 
@@ -1153,7 +1207,7 @@ For more info, see [Windows Spotlight on the lock screen](../manage/windows-spot
 
 ### <a href="" id="bkmk-windowsstore"></a>24. Windows Store
 
-You can turn off the ability to launch apps from the Windows Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Windows Store will be disabled.
+You can turn off the ability to launch apps from the Windows Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Windows Store will be disabled. On Windows Server 2016, this will block Windows Store calls from Universal Windows Apps.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Windows Store**.
 
