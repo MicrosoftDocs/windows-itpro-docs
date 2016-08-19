@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Administering UE-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 After you finish deploying User Experience Virtualization (UE-V), you'll perform ongoing administrative tasks, such as managing the configuration of the UE-V service and recovering lost settings. These tasks are explained in the following sections.
 

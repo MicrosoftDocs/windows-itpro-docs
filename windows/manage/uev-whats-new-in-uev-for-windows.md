@@ -10,7 +10,8 @@ ms.prod: w10
 
 # What's New in UE-V 
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) for Windows 10, version 1607, includes these new features and capabilities compared to UE-V 2.1. See [UE-V Release notes](uev-release-notes-1607.md) for more information about the UE-V for Windows 10, version 1607 release.
 

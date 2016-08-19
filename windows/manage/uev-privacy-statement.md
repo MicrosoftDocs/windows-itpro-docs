@@ -12,7 +12,8 @@ ms.prod: w8
 
 # User Experience Virtualization Privacy Statement
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you desire in your personal computing. This privacy statement explains many of the data collection and use practices of Microsoft User Experience Virtualization (“UE-V”). This is a preliminary disclosure that focuses on features that communicate with the Internet and is not intended to be an exhaustive list.
 

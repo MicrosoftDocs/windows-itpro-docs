@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Accessibility for UE-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Microsoft is committed to making its products and services easier for everyone to use. This section provides information about features and services that make this product and its corresponding documentation more accessible for people with disabilities.
 
