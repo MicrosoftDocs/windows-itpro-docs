@@ -46,19 +46,9 @@ App-V supports System Center 2016 and System Center 2012 R2 Configuration Manage
 
 ## Have a suggestion for App-V?
 
-
-Add or vote on suggestions at [Microsoft Application Virtualization](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Release Notes for App-V](appv-release-notes-for-appv-for-windows.md)
-
- 
-
- 
-
-
-
-
-

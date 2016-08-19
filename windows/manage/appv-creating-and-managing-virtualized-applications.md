@@ -205,9 +205,10 @@ The App-V Sequencer can detect common sequencing issues during sequencing. The *
 
 You can also find additional information about sequencing errors using the Windows Event Viewer.
 
+## Have a suggestion for App-V?
 
-## <a href="" id="other-resources-for-the-app-v-5-1-sequencer-"></a>Other resources for the App-V sequencer
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
+## Related topics
 
 -   [Operations for App-V](appv-operations.md)
-

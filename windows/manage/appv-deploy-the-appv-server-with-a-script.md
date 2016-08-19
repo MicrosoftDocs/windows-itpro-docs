@@ -729,23 +729,15 @@ The information in the following tables can also be accessed using the command l
 </tr>
 <tr class="odd">
 <td align="left"><p>/EXISTING_MANAGEMENT_DB_NAME</p></td>
-<td align="left"><p>Specifies the name of the existing management database that should be used. Example usage: <strong>/EXISITING_MANAGEMENT_DB_NAME=”AppVMgmtDB”</strong>. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored.</p>
-<p></p>
-<p><strong>Have a suggestion for App-V</strong>? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). <strong>Got an App-V issue?</strong> Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).</p></td>
+<td align="left"><p>Specifies the name of the existing management database that should be used. Example usage: <strong>/EXISITING_MANAGEMENT_DB_NAME=”AppVMgmtDB”</strong>. If /DB_PREDEPLOY_MANAGEMENT is specified, this will be ignored.</p></td>
 </tr>
 </tbody>
 </table>
 
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
 ## Related topics
 
-
 [Deploying the App-V Server](appv-deploying-the-appv-server.md)
-
- 
-
- 
-
-
-
-
-

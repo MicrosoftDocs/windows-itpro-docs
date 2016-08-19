@@ -86,18 +86,10 @@ Before you start this procedure, copy the required Package Accelerator locally t
 
     The package is now available in the Sequencer. To edit the package properties, click **Edit \[Package Name\]**. For more information about how to modify a package, see [How to Modify an Existing Virtual Application Package](appv-modify-an-existing-virtual-application-package.md).
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Operations for App-V](appv-operations.md)
-
- 
-
- 
-
-
-
-
-

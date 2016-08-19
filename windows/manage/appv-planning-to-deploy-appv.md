@@ -75,3 +75,7 @@ Explains how folder redirection works with App-V.
 -   [Planning for App-V](appv-planning-for-appv.md)
 
 -   [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
+
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
