@@ -55,89 +55,52 @@ See the following table for a summary of the management settings for Windows 10 
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
-| [Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
-| [Cortana and search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
-| [Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
-| [Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | | |
-| [Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
-| [Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
-| [Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
-| [Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | | |
-| [Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | | |
-| [Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
-| [Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | | |
-| [Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
-| [OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
-| [Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
-| [Settings > Privacy](#bkmk-settingssection) | | | | | |
-|     [General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
+| [2. Cortana and search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
+| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | | |
+| [5. Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
+| [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | | |
+| [9. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | | |
+| [10. Microsoft Account](#bkmk-microsoft-account) | | | | ![Check mark](images/checkmark.png) | |
+| [11. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | | |
+| [13. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| [14. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [15. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
+| [16. Settings > Privacy](#bkmk-settingssection) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.2 Location](#bkmk-priv-location) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.3 Camera](#bkmk-priv-camera) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.5 Notifications](#bkmk-priv-notifications) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.6 Speech, inking, & typing](#bkmk-priv-speech) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.7 Account info](#bkmk-priv-accounts) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.8 Contacts](#bkmk-priv-contacts) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.9 Calendar](#bkmk-priv-calendar) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.10 Call history](#bkmk-priv-callhistory) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.11 Email](#bkmk-priv-email) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.12 Messaging](#bkmk-priv-messaging) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.13 Radios](#bkmk-priv-radios) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.14 Other devices](#bkmk-priv-other-devices) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.15 Feedback & diagnostics](#bkmk-priv-feedback) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.16 Background apps](#bkmk-priv-background) | | | | | |
+| [17. Software Protection Platform](#bkmk-spp) | | | | | |
+| [18. Sync your settings](#bkmk-syncsettings) | | | | | |
+| [19. Teredo](#bkmk-teredo) | | | | | |
+| [20. Wi-Fi Sense](#bkmk-wifisense) | | | | | |
+| [21. Windows Defender](#bkmk-defender) | | | | | |
+| [22. Windows Media Player](#bkmk-wmp) | | | | | |
+| [23. Windows spotlight](#bkmk-spotlight) | | | | | |
+| [24. Windows Store](#bkmk-windowsstore) | | | | | |
+| [25. Windows Update Delivery Optimization](#bkmk-updates) | | | | | |
+| [26. Windows Update](#bkmk-wu) | | | | | |
 
 
 ![Windows 10 Enterprise, version 1607 settings](images/settings-table.png)
 
-Use the following list for more info on each section in the table above:
-
--   [Info management settings](#bkmk-othersettings)
-
-    -   [1. Certificate trust lists](#certificate-trust-lists)
-
-    -   [2. Cortana](#bkmk-cortana)
-
-        -   [2.1 Cortana Group Policies](#bkmk-cortana-gp)
-
-        -   [2.2 Cortana MDM policies](#bkmk-cortana-mdm)
-
-        -   [2.3 Cortana Windows Provisioning](#bkmk-cortana-prov)
-
-    -   [3. Date & Time](#bkmk-datetime)
-
-    -   [4. Device metadata retrieval](#bkmk-devinst)
-
-    -   [5. Font streaming](#font-streaming)
-
-    -   [6. Insider Preview builds](#bkmk-previewbuilds)
-
-    -   [7. Internet Explorer](#bkmk-ie)
-
-        -   [7.1 Internet Explorer Group Policies](#bkmk-ie-gp)
-
-        -   [7.2 ActiveX control blocking](#bkmk-ie-activex)
-
-    -   [8. Live Tiles](#live-tiles)
-    
-    -   [9. Mail synchronization](#bkmk-mailsync)
-
-    -   [10. Microsoft Account](#bkmk-microsoft-account)
-
-    -   [11. Microsoft Edge](#bkmk-edge)
-
-        -   [11.1 Microsoft Edge Group Policies](#bkmk-edgegp)
-
-        -   [11.2 Microsoft Edge MDM policies](#bkmk-edge-mdm)
-
-        -   [11.3 Microsoft Edge Windows Provisioning](#bkmk-edge-prov)
-
-    -   [12. Network Connection Status Indicator](#bkmk-ncsi)
-
-    -   [13. Offline maps](#bkmk-offlinemaps)
-
-    -   [14. OneDrive](#bkmk-onedrive)
-
-    -   [15. Preinstalled apps](#bkmk-preinstalledapps)
-
-    -   [16. Settings &gt; Privacy](#bkmk-settingssection)
-
-        -   [16.1 General](#bkmk-priv-general)
-
-        -   [16.2 Location](#bkmk-priv-location)
-
-        -   [16.3 Camera](#bkmk-priv-camera)
-
-        -   [16.4 Microphone](#bkmk-priv-microphone)
-
-        -   [16.5 Notifications](#bkmk-priv-notifications)
-
-        -   [16.6 Speech, inking, & typing](#bkmk-priv-speech)
 
         -   [16.7 Account info](#bkmk-priv-accounts)
 
