@@ -59,7 +59,7 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 2. Enter the PowerShell command:
 
   ```text
-  et-mpPreference -puaprotection 2
+  set-mpPreference -puaprotection 2
   ```
 > [!NOTE]
 > PUA events are reported in the Windows Event Viewer and not in SCCM.  
