@@ -85,35 +85,8 @@ The template author name and template author email can be used to identify the a
 
 To remove the template author name or template author email, start the UE-V generator application. Select **Edit a Settings Location Template**. Select the settings location template to edit from the recently used templates or Browse to the settings template file. Select **Next** to continue. On the Properties page, remove the data from the Template author name or Template author email text fields. Save the settings location template.
 
-## <a href="" id="bkmk-ceip"></a>Customer Experience Improvement Program
-
-
-**What This Feature Does:**
-
-The Customer Experience Improvement Program (“CEIP”) collects basic information about your hardware configuration and how you use our software and services in order to identify trends and usage patterns. CEIP also collects the type and number of errors you encounter, software and hardware performance, and the speed of services. We will not collect your name, address, or other contact information.
-
-**Information Collected, Processed, or Transmitted:**
-
-For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <http://go.microsoft.com/fwlink/?LinkID=248701>.
-
-**Use of Information:**
-
-We use this information to improve the quality, reliability, and performance of Microsoft software and services.
-
-**Choice/Control:**
-
-You are offered the opportunity to participate in CEIP during setup of the UE-V Agent. If you choose to participate and later change your mind, you can turn off CEIP at any time by:Re-running the UE-V agent setup and opting out of CEIP or by setting the following registry key either manually or via Group Policy:
-
-``` syntax
-Key = HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent
-RegEntry name = CustomerExperienceImprovementProgram
-Entry type REG_DWORD (Hexadecimal):
-0 is off
-1 is on
-```
 
 ## <a href="" id="bkmk-microsofterrorreporting"></a>Microsoft Error Reporting
-
 
 **What This Feature Does:**
 
