@@ -35,10 +35,6 @@ This technical reference section includes additional technical documentation abo
 
     Details the XML structure of UE-V settings location templates and provides guidance for editing these files.
 
--   [Accessibility for UE-V](uev-accessibility.md)
-
-    Describes features and services that make UE-V more accessible for people with disabilities.
-
 -   [Security Considerations for UE-V](uev-security-considerations.md)
 
     Provides a brief overview of accounts, groups, and other security-related considerations for UE-V.
