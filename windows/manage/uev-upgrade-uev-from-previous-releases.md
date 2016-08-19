@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Upgrade to UE-V for Windows 10
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 If you’re already using UE-V 2.x and you’re planning to upgrade user devices to Windows 10, version 1607 or later releases, you need to make only a few adjustments to your existing environment. These steps are explained in more detail below.
 

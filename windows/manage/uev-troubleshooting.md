@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Troubleshooting UE-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Troubleshooting content is not included in the Administrator's Guide for this product. Instead, you can find troubleshooting information for this product on the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905).
 

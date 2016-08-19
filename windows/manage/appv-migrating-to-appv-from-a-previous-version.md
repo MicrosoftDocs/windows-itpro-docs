@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Migrating to App-V from previous versions
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 To migrate from App-V 4.x to App-V for Windows 10, you must upgrade to App-V 5.x first. 
 
@@ -248,7 +249,7 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for performing App-V migration tasks
 

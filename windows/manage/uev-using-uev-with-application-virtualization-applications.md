@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Using UE-V with Application Virtualization applications
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) supports Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, an additional step is required because you cannot run the UE-V template generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V for Windows 10 packages and App-V 5.0 packages.
 

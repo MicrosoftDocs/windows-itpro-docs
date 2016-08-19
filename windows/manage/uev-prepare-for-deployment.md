@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Prepare a UE-V Deployment
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Before you deploy User Experience Virtualization (UE-V), review this topic for important information about the type of deployment you’re planning and for preparations you can make beforehand so that your deployment is successful. If you leave this page, be sure to come back and read through the planning information in this topic.
 

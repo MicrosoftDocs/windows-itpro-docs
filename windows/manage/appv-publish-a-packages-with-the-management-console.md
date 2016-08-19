@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Publish a Package by Using the Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to publish an App-V package. Once you publish a package, computers that are running the App-V client can access and run the applications in that package.
 
@@ -40,7 +41,7 @@ The ability to enable only administrators to publish or unpublish packages (desc
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

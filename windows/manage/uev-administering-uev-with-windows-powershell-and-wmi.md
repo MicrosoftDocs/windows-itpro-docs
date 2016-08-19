@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Administering UE-V with Windows PowerShell and WMI
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) provides Windows PowerShell cmdlets to help administrators perform various UE-V tasks. The following sections provide more information about using Windows PowerShell in UE-V.
 

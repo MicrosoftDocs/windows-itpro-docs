@@ -154,7 +154,6 @@
 #### [Sync Trigger Events for UE-V](uev-sync-trigger-events.md)
 #### [Synchronizing Microsoft Office with UE-V](uev-synchronizing-microsoft-office-with-uev.md)
 #### [Application Template Schema Reference for UE-V](uev-application-template-schema-reference.md)
-#### [Accessibility for UE-V](uev-accessibility.md)
 #### [Security Considerations for UE-V](uev-security-considerations.md)
 ## [Windows Store for Business](windows-store-for-business.md)
 ### [Sign up and get started](sign-up-windows-store-for-business-overview.md)

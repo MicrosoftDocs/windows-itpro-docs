@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Viewing App-V Server Publishing Metadata
 
-Applies to: Windows Server 2016
+**Applies to**
+-   Windows Server 2016
 
 Use this procedure to view App-V Server publishing metadata, which can help you resolve publishing-related issues. You must be using the App-V Management server to use this procedure.
 
@@ -152,7 +153,7 @@ In your publishing metadata query, enter the string values that correspond to th
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
