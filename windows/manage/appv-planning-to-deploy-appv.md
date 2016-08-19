@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Planning to Deploy App-V for Windows 10
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 There are a number of different deployment configurations and requirements to consider before you deploy App-V for Windows 10. Review this topic for information about what you'll need to formulate a deployment plan that best meets your business requirements.
 
@@ -74,3 +75,7 @@ Explains how folder redirection works with App-V.
 -   [Planning for App-V](appv-planning-for-appv.md)
 
 -   [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
+
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Migrating UE-V settings packages
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 In the lifecycle of a User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
 

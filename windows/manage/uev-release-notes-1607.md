@@ -10,7 +10,8 @@ ms.prod: w10
 
 # User Experience Virtualization (UE-V) Release Notes
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This topic includes information required to successfully install and use UE-V that is not included in the User Experience Virtualization (UE-V) documentation. If there are differences between the information in this topic and other UE-V topics, the latest change should be considered authoritative.
 

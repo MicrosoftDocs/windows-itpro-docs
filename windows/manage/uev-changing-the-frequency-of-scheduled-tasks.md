@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Changing the Frequency of UE-V Scheduled Tasks
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 When the User Experience Virtualization (UE-V) service is enabled, it creates the following scheduled tasks:
 

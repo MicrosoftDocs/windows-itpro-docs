@@ -11,7 +11,8 @@ ms.prod: w10
 
 # About App-V Reporting
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Application Virtualization (App-V) includes a built-in reporting feature that helps you collect information about computers running the App-V client as well as information about virtual application package usage. You can use this information to generate reports from a centralized database.
 
@@ -300,7 +301,7 @@ You should also ensure that the reporting server web service’s **Maximum Concu
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

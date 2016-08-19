@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Get Started with UE-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Follow the steps in this topic to deploy User Experience Virtualization (UE-V) for the first time in a test environment. Evaluate UE-V to determine whether it’s the right solution to manage user settings across multiple devices within your enterprise.
 

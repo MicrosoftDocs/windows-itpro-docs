@@ -10,7 +10,8 @@ ms.prod: w10
 
 # User Experience Virtualization (UE-V) for Windows 10 overview
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Windows Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options. 
 
