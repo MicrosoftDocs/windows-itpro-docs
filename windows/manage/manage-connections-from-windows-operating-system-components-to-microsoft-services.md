@@ -77,79 +77,29 @@ See the following table for a summary of the management settings for Windows 10 
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.5 Notifications](#bkmk-priv-notifications) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.6 Speech, inking, & typing](#bkmk-priv-speech) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.7 Account info](#bkmk-priv-accounts) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.8 Contacts](#bkmk-priv-contacts) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.9 Calendar](#bkmk-priv-calendar) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.10 Call history](#bkmk-priv-callhistory) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.11 Email](#bkmk-priv-email) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.12 Messaging](#bkmk-priv-messaging) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.13 Radios](#bkmk-priv-radios) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.14 Other devices](#bkmk-priv-other-devices) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.15 Feedback & diagnostics](#bkmk-priv-feedback) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.16 Background apps](#bkmk-priv-background) | | | | | |
-| [17. Software Protection Platform](#bkmk-spp) | | | | | |
-| [18. Sync your settings](#bkmk-syncsettings) | | | | | |
-| [19. Teredo](#bkmk-teredo) | | | | | |
-| [20. Wi-Fi Sense](#bkmk-wifisense) | | | | | |
-| [21. Windows Defender](#bkmk-defender) | | | | | |
-| [22. Windows Media Player](#bkmk-wmp) | | | | | |
-| [23. Windows spotlight](#bkmk-spotlight) | | | | | |
-| [24. Windows Store](#bkmk-windowsstore) | | | | | |
-| [25. Windows Update Delivery Optimization](#bkmk-updates) | | | | | |
-| [26. Windows Update](#bkmk-wu) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.7 Account info](#bkmk-priv-accounts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.8 Contacts](#bkmk-priv-contacts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.9 Calendar](#bkmk-priv-calendar) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.10 Call history](#bkmk-priv-callhistory) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.11 Email](#bkmk-priv-email) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.12 Messaging](#bkmk-priv-messaging) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.13 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.14 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.15 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.16 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | | | | |
+| [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [18. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
+| [20. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [22. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
+| [23. Windows spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | | |
+| [25. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 
 
 ![Windows 10 Enterprise, version 1607 settings](images/settings-table.png)
-
-
-        -   [16.7 Account info](#bkmk-priv-accounts)
-
-        -   [16.8 Contacts](#bkmk-priv-contacts)
-
-        -   [16.9 Calendar](#bkmk-priv-calendar)
-
-        -   [16.10 Call history](#bkmk-priv-callhistory)
-
-        -   [16.11 Email](#bkmk-priv-email)
-
-        -   [16.12 Messaging](#bkmk-priv-messaging)
-
-        -   [16.13 Radios](#bkmk-priv-radios)
-
-        -   [16.14 Other devices](#bkmk-priv-other-devices)
-
-        -   [16.15 Feedback & diagnostics](#bkmk-priv-feedback)
-
-        -   [16.16 Background apps](#bkmk-priv-background)
-
-    -   [17. Software Protection Platform](#bkmk-spp)
-
-    -   [18. Sync your settings](#bkmk-syncsettings)
-
-    -   [19. Teredo](#bkmk-teredo)
-
-    -   [20. Wi-Fi Sense](#bkmk-wifisense)
-
-    -   [21. Windows Defender](#bkmk-defender)
-
-    -   [22. Windows Media Player](#bkmk-wmp)
-
-    -   [23. Windows spotlight](#bkmk-spotlight)
-
-    -   [24. Windows Store](#bkmk-windowsstore)
-
-    -   [25. Windows Update Delivery Optimization](#bkmk-updates)
-
-        -   [25.1 Settings &gt; Update & security](#bkmk-wudo-ui)
-
-        -   [25.2 Delivery Optimization Group Policies](#bkmk-wudo-gp)
-
-        -   [25.3 Delivery Optimization MDM policies](#bkmk-wudo-mdm)
-
-        -   [25.4 Delivery Optimization Windows Provisioning](#bkmk-wudo-prov)
-
-    -   [26. Windows Update](#bkmk-wu)
-
 
 
 ### <a href="" id="certificate-trust-lists"></a>1. Certificate trust lists
