@@ -16,16 +16,16 @@ ms.prod: w10
 
 When the User Experience Virtualization (UE-V) service is enabled, it creates the following scheduled tasks:
 
--   **Monitor Application Settings**
+-   [Monitor Application Settings](#monitor-application-settings)
 
--   **Sync Controller Application**
+-   [Sync Controller Application](#sync-controller-application)
 
--   **Synchronize Settings at Logoff**
+-   [Synchronize Settings at Logoff](#synchronize-settings-at-logoff)
 
--   **Template Auto Update**
+-   [Template Auto Update](#template-auto-update)
 
-**Note**  
-These tasks must remain enabled as UE-V cannot function without them.
+**Note**<br>
+These tasks must remain enabled, because UE-V cannot function without them.
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 

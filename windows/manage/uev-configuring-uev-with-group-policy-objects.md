@@ -163,7 +163,7 @@ In addition, Group Policy settings are available for many desktop applications a
 
  
 
-For more information about synchronizing Windows apps, see [Windows App List](http://technet.microsoft.com/library/dn458925.aspx#win8applist).
+For more information about synchronizing Windows apps, see [Windows App List](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md#win8applist).
 
 **To configure computer-targeted Group Policy settings**
 
