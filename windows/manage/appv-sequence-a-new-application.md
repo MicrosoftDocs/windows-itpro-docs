@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Sequence a New Application with App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 In Windows 10, version 1607, the App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 
@@ -222,10 +223,9 @@ In Windows 10, version 1607, the App-V Sequencer is included with the Windows AD
     > [!IMPORTANT]    
     > After you have successfully created a virtual application package, you cannot run the virtual application package on the computer that is running the sequencer.
 
-     
-
 ## Have a suggestion for App-V?
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Create a Virtual Application Package Using an App-V Package Accelerator
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 **Important**  
 The App-V Sequencer does not grant any license rights to the software application that you use to create the Package Accelerator. You must abide by all end user license terms for the application that you use. It is your responsibility to make sure that the software application’s license terms allow you to create a Package Accelerator with the App-V Sequencer.
@@ -85,18 +86,10 @@ Before you start this procedure, copy the required Package Accelerator locally t
 
     The package is now available in the Sequencer. To edit the package properties, click **Edit \[Package Name\]**. For more information about how to modify a package, see [How to Modify an Existing Virtual Application Package](appv-modify-an-existing-virtual-application-package.md).
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Operations for App-V](appv-operations.md)
-
- 
-
- 
-
-
-
-
-

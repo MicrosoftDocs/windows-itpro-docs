@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Using the App-V Client Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This topic provides information about about using the Application Virtualization (App-V) client management console to manage packages on the computer running the App-V client.
 
@@ -80,7 +81,7 @@ The client management console contains the following described main tabs.
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

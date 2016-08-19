@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Enable the App-V in-box client
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 The App-V client is the component that runs virtualized applications on user devices. The client enables users to interact with icons and file names to start virtualized applications. The client can also get virtual application content from the management server.
 
@@ -49,4 +50,4 @@ For information about configuring the App-V client, see:
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

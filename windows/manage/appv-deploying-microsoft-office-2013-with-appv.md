@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Deploying Microsoft Office 2013 by Using App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the information in this article to use Microsoft Application Virtualization (App-V), or later versions, to deliver Microsoft Office 2013 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md). To successfully deploy Office 2013 with App-V, you need to be familiar with Office 2013 and App-V.
 
@@ -776,4 +777,4 @@ This section describes the requirements and options for deploying Visio 2013 and
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

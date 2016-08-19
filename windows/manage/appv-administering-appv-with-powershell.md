@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Administering App-V by Using Windows PowerShell
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Microsoft Application Virtualization (App-V) provides Windows PowerShell cmdlets, which can help administrators perform various App-V tasks. The following sections provide more information about using Windows PowerShell with App-V.
 
@@ -127,7 +128,7 @@ Use the following table for information about Windows PowerShell error handling 
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

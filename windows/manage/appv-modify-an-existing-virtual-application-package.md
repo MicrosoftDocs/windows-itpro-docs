@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Modify an Existing Virtual Application Package
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This topic explains how to:
 
@@ -162,18 +163,10 @@ This topic explains how to:
 
 13. On the **Completion** page, click **Close**. The package is now available in the sequencer.
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Operations for App-V](appv-operations.md)
-
- 
-
- 
-
-
-
-
-

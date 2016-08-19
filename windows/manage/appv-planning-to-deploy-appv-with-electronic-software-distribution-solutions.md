@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Planning to Deploy App-V with an electronic software distribution system
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 If you are using an electronic software distribution system to deploy App-V packages, review the following planning considerations. For information about using System Center Configuration Manager to deploy App-V, see [Introduction to Application Management in Configuration Manager](https://technet.microsoft.com/en-us/library/gg682125.aspx#BKMK_Appv).
 
@@ -23,7 +24,7 @@ Review the following component and architecture requirements options that apply 
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Technical Reference for UE-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This technical reference section includes additional technical documentation about the various features of User Experience Virtualization (UE-V). This information is provided to help the administrator better understand UE-V.
 
@@ -33,10 +34,6 @@ This technical reference section includes additional technical documentation abo
 -   [Application Template Schema Reference for UE-V](uev-application-template-schema-reference.md)
 
     Details the XML structure of UE-V settings location templates and provides guidance for editing these files.
-
--   [Accessibility for UE-V](uev-accessibility.md)
-
-    Describes features and services that make UE-V more accessible for people with disabilities.
 
 -   [Security Considerations for UE-V](uev-security-considerations.md)
 
