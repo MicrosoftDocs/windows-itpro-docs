@@ -130,8 +130,7 @@ It is possible to create or edit settings location templates in an XML editor wi
 
 ## <a href="" id="share"></a>Share settings location templates with the Template Gallery
 
-
-The UE-V template gallery enables administrators to share their UE-V settings location templates. Upload your settings location templates to the gallery for other users to use, and download templates that other users have created. The UE-V template gallery is located on Microsoft TechNet [here](http://go.microsoft.com/fwlink/p/?LinkId=246589).
+The [User Experience Virtualization Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V&f%5B0%5D.Text=UE-V) enables administrators to share their UE-V settings location templates. Upload your settings location templates to the gallery for other users to use, and download templates that other users have created.
 
 Before you share a settings location template on the UE-V template gallery, ensure it does not contain any personal or company information. You can use any XML viewer to open and view the contents of a settings location template file. The following template values should be reviewed before you share a template with anyone outside your company.
 
