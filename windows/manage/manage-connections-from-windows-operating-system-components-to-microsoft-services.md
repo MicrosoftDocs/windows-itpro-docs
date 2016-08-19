@@ -54,7 +54,7 @@ If you're running Windows 10, they will be included in the next update for the L
 See the following table for a summary of the management settings for Windows 10 Enterprise, version 1607.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
-| - | - | - | - | - | - |
+| - | :-: | :-: | :-: | :-: | :-: |
 | [Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
 | [Cortana and search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 
