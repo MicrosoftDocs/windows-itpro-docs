@@ -226,8 +226,7 @@ To distribute a new Notepad template, you would perform these steps:
 
 ## Get the UE-V Configuration Pack
 
-
-The UE-V Configuration Pack for Configuration Manager 2012 SP1 or later can be downloaded [here](http://go.microsoft.com/fwlink/?LinkId=317263).
+You can download the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=40913) from the Microsoft Download Center.
 
 ## Have a suggestion for UE-V?
 
