@@ -42,7 +42,7 @@ Before you proceed, ensure that your environment meets the following requirement
 
 ## Step 2: Deploy the settings storage location
 
-You’ll need to deploy a settings storage location, a standard network share where user settings are stored in a settings package file. When you create the settings storage share, you should limit access to users that require it. [Deploy a settings storage location](https://technet.microsoft.com/library/dn458891.aspx#ssl) provides more detailed information.
+You’ll need to deploy a settings storage location, a standard network share where user settings are stored in a settings package file. When you create the settings storage share, you should limit access to users that require it. For more information, see [Deploy a UE-V Settings Storage Location](uev-deploy-required-features.md#deploy-a-ue-v-settings-storage-location).
 
 **Create a network share**
 
