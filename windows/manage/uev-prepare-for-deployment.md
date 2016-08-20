@@ -79,10 +79,11 @@ This section explains which settings are synchronized by default in UE-V, includ
 
 -   A statement of support for Windows applications setting synchronization
 
-See [Microsoft Authored Office 2016 UE-V Templates](https://www.microsoft.com/download/details.aspx?id=46367) to download a list of the specific Office 2016 settings that are synchronized by UE-V.
+For downloadable UE-V templates, see:
 
-To download a list of the Microsoft Office 2013 and 2010 settings that are synchronized by UE-V, see [User Experience Virtualization (UE-V) settings templates for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=46367). 
+- [Microsoft Authored Office 2016 UE-V Templates](https://gallery.technet.microsoft.com/Authored-Office-2016-32-0dc05cd8)
 
+- [User Experience Virtualization (UE-V) settings templates for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=46367) (for Office 2013 and Office 2010) 
 
 ### Desktop applications synchronized by default in UE-V
 
@@ -303,9 +304,11 @@ The UE-V settings storage location and settings template catalog support storing
 
 -   Format the storage volume with an NTFS file system.
 
-<!-- There's a question out for Tommy on the next item -- the link is very old. -->
+-   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see:
 
--   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see [Microsoft’s Support Statement Around Replicated User Profile Data](http://go.microsoft.com/fwlink/p/?LinkId=313991).
+    - [Information about roaming profiles from the Directory Services team](https://blogs.technet.microsoft.com/askds/tag/roaming-profiles/)
+    
+    - [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](https://support.microsoft.com/kb/2533009)
 
     In addition, because SYSVOL uses DFSR for replication, SYSVOL cannot be used for UE-V data file replication.
 
@@ -383,6 +386,10 @@ The VDI template is provided with UE-V and is typically available here after ins
 Install the UE-V template generator on the device that is used to create custom settings location templates. This device should be able to run the applications that you want to synchronize settings for. You must be a member of the Administrators group on the device that runs the UE-V template generator software.
 
 The UE-V template generator must be installed on a device that uses an NTFS file system. The UE-V template generator software requires .NET Framework 4. For more information, see [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md).
+
+## Have a suggestion for UE-V?
+
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Other resources for this feature
 

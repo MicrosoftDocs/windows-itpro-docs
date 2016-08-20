@@ -53,7 +53,7 @@ Administrators can still define which user-customized application settings can s
 
 With Windows 10, version 1607, users can synchronize Windows application settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V on on-premises domain-joined devices only.
 
-In hybrid cloud environments, UE-V can roam win32 applications on-premises while [Enterprise State Roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
+In hybrid cloud environments, UE-V can roam Win32 applications on-premises while [Enterprise State Roaming](https://azure.microsoft.com/documentation/articles/active-directory-windows-enterprise-state-roaming-overview/) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
 
 To configure UE-V to roam Windows desktop and application data only, change the following group policies:
 
@@ -104,11 +104,11 @@ To enable settings synchronization using UE-V, do one of the following:
 
 -   Do not enable the Office 365 synchronization experience during Office 2013 installation
 
-UE-V includes Office 2016, Office 2013, and Office 2010 templates. Office 2007 templates are no longer supported. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](http://go.microsoft.com/fwlink/p/?LinkID=246589).
+UE-V includes Office 2016, Office 2013, and Office 2010 templates. Office 2007 templates are no longer supported. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get templates from the [User Experience Virtualization Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V&f%5B0%5D.Text=UE-V).
 
 ## Have a suggestion for UE-V?
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
