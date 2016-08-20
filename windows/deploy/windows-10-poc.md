@@ -245,6 +245,8 @@ The lab architecture is summarized in the following diagram:
 
 ### Convert PC to VHD
 
+**Important**:Before you convert a PC to VHD, verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login.
+
 1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy disk2vhd.exe to a flash drive or other location that is accessible from the computer you wish to convert.
     >Note: You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
@@ -272,11 +274,13 @@ The lab architecture is summarized in the following diagram:
 
 Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2008 R2. For more information, see [Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2).  
 
-1. Open an elevated Windows PowerShell window and type the following command to create a virtual switch named "poc-internal":
+1. Open an elevated Windows PowerShell window and type the following command to create two virtual switches named "poc-internal" and "poc-external":
 
     ```
     New-VMSwitch -Name poc-internal -SwitchType Internal -Notes "PoC Network"
+    New-VMSwitch -Name poc-external -NetAdapterName (Get-NetAdapter |?{$_.Status -eq "Up" -and $_.NdisPhysicalMedium -eq 14}).Name -Notes "PoC External"
     ```
+    **Note**: Since an external virtual switch is associated to a physical NIC on the Hyper-V host, this NIC must be specified. If your Hyper-V host is dual-homed and both interfaces are up, the second command above will fail. In this case, you will need to edit the previous command and insert the specific value desired for the -NetAdapterName option (the name of the network interface you wish to use).
 
 2. At the elevated Windows PowerShell prompt, type the following command to determine the megabytes of RAM that are currently available on the Hyper-V host:
 
@@ -293,16 +297,24 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     ```
     In this example, VMs must use a maximum of 2700 MB of RAM so that you can run four VMs simultaneously. 
 
-4. At the elevated Windows PowerShell prompt, type the following command to create two new VMs. **Important**: Replace the value of 2700MB with the RAM value that you calculated in the previous step:
+4. At the elevated Windows PowerShell prompt, type the following command to create three new VMs. The fourth VM will be added later. **Important**: Replace the value of 2700MB in the first command below with the RAM value that you calculated in the previous step:
 
     ```
     $maxRAM = 2700MB
     New-VM –Name "2012R2-DC1" –VHDPath c:\vhd\2012R2-poc-1.vhd -SwitchName poc-internal
     Set-VMMemory -VMName "2012R2-DC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
-    New-VM –Name "2012R2-SRV1" –VHDPath c:\vhd\2012R2-poc-2.vhd -SwitchName poc-internal
+    New-VM –Name "2012R2-SRV1" –VHDPath c:\vhd\2012R2-poc-2.vhd -SwitchName poc-internal,poc-external
     Set-VMMemory -VMName "2012R2-SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
+    New-VM –Name "PC1" –VHDPath c:\vhd\w7.vhdx -SwitchName poc-internal
+    Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     ```
-    
+
+^^^^^^^
+Stopping right here for now. I need to change: 
+New-VM –Name "2012R2-SRV1" –VHDPath c:\vhd\2012R2-poc-2.vhd -SwitchName poc-internal,poc-external
+--this won't work as written. I need to figure out how to add a VM with two NICs, or add a NIC to an existing VM via PowerShell
+
+
 ### Configure Windows Server 2012 R2 VHDs
 
 1. Open an elevated Windows PowerShell window on the Hyper-V host and start the first VM by typing the following command:
@@ -310,40 +322,115 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     ```
     Start-VM 2012R2-DC1
     ```
-2. Wait for the VM to complete starting up, and then connect to it either using the Hyper-V Manager console (virtmgmt.msc) or using an elevated command prompt:
+2. Wait for the VM to complete starting up, and then connect to it either using the Hyper-V Manager console (virtmgmt.msc) or using an elevated command prompt on the Hyper-V host:
     ```
     vmconnect localhost 2012R2-DC1
     ```
-3. If the VM is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." At an elevated Windows PowerShell prompt on the VM, type the following commands to provide a new hostname and configure a static IP address and gateway:
+3. Accept the default settings, read license terms and accept them, provide an administrator password of **pass@word1**, and click **Finish**. 
+4. If the VM is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." At an elevated Windows PowerShell prompt on the VM, type the following commands to provide a new hostname and configure a static IP address and gateway:
 
     ```
     Rename-Computer DC1
     New-NetIPAddress –InterfaceAlias Ethernet –IPAddress 192.168.0.1 –PrefixLength 24 -DefaultGateway 192.168.0.2
     ```
-4. Install the Active Directory Domain Services role by typing the following command at an elevated Windows PowerShell prompt:
+    **Note**: The default gateway will be added to a member server at 192.168.0.2 later in this guide.
+5. Install the Active Directory Domain Services role by typing the following command at an elevated Windows PowerShell prompt:
 
     ```
     Install-WindowsFeature -Name AD-Domain-Services -IncludeAllSubFeature -IncludeManagementTools
     ```
 
-5. Before promoting the server to a Domain Controller, you must reboot so that the name change in step 3 above takes effect:
+6. Before promoting the server to a Domain Controller, you must reboot so that the name change in step 3 above takes effect:
 
     ```
     shutdown /r
     ```
 
-5. When the VM has rebooted, sign in again and open an elevated Windows PowerShell prompt. Now you can promote the server to be a domain controller. The directory services restore mode password must be entered as a secure string:
+7. When the VM has rebooted, sign in again and open an elevated Windows PowerShell prompt. Now you can promote the server to be a domain controller. The directory services restore mode password must be entered as a secure string:
 
     ```
     $pass = "pass@word1" | ConvertTo-SecureString -AsPlainText -Force
     Install-ADDSForest -DomainName contoso.com -InstallDns -SafeModeAdministratorPassword $pass -Force
     ```
     Ignore any warnings that are displayed. The computer will automatically reboot upon completion.
-6. When the reboot has completed, sign in again and open an elevated Windows PowerShell prompt so that you can add the DHCP Server role:
+8. When the reboot has completed, sign in using the CONTOSO\Administrator account, open an elevated Windows PowerShell prompt, and use the following commands to add the DHCP Server role, authorize it in Active Directory, and supress the post-install alert:
 
     ```
-
+    Add-WindowsFeature -Name DHCP -IncludeManagementTools
+    netsh dhcp add securitygroups
+    Restart-Service DHCPServer
+    Add-DhcpServerInDC  dc1.contoso.com  192.168.0.1
+    Set-ItemProperty –Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerManager\Roles\12 –Name ConfigurationState –Value 2
     ```
+9. Next, add a DHCP scope and set option values:
+    ```
+    Add-DhcpServerv4Scope -Name "PoC Scope" -StartRange 192.168.0.100 -EndRange 192.168.0.199 -SubnetMask 255.255.255.0 -Description "Windows 10 PoC" -State Active
+    Set-DhcpServerv4OptionValue -ScopeId 192.168.0.0 -DnsDomain contoso.com -Router 192.168.0.2 -DnsServer 192.168.0.1,192.168.0.2 -Force
+    ```
+    **Note**: The -Force option is necessary when adding scope options to skip validation of 192.168.0.2 as a DNS server because we have not configured it yet. The scope should immediately begin issuing leases on the PoC network. The first DHCP lease that will be issued is to vEthernet interface on the Hyper-V host, which is a member of the internal network.
+10. Lastly, add a user account to the contoso.com domain that can be used with client computers:
+    ```
+    New-ADUser -Name "User1" -UserPrincipalName user1 -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
+    ```
+11. Minimize the 2012-DC1 VM window but **do not stop** the VM.
+
+    Next, the client VM will be started and joined to the contoso.com domain. This is done before adding a gateway to the PoC network so that there is no danger of duplicate DNS registrations for the physical client and its cloned VM in the corporate domain.
+
+12. Using an elevated Windows PowerShell prompt on the Hyper-V host, start the client VM, and connect to it:
+    ```
+    Start-VM PC1
+    vmconnect localhost PC1
+    ```
+13. Sign on to the client VM using an account that has local administrator rights. **Note**:The client VM will be disconnected from its current domain, so you cannot use a domain account to sign on unless these credentials are cached and the use of cached credentials is permitted by Group Policy. If cached credentials are available and permitted, you can use these credentials to sign in.
+14. After signing in, the operating system detects that it is running in a new environment. New drivers will be automatically installed, including the network adapter driver. The network adapter driver must be updated before you can proceed, so that you will be able to join the contoso.com domain. Depending on the resources allocated to the VM, this might take a few minutes.
+
+    ![PoC](images/installing-drivers.png)
+
+15. When the new network adapter driver has completed installation, you will receive an alert to set a network location for the contoso.com network. Select **Work network**. If you receive an alert that a restart is required, click **Restart Later**.
+16. Open an elevated Windows PowerShell prompt on the client VM and verify that the client VM can communicate with the consoto.com domain controller. **Note**: If the client was configured with a static address, you must change this to a dynamic one:
+    ```
+    ping dc1.contoso.com
+
+    Pingng dc1.contoso.com [192.168.0.1] with 32 bytes of data:
+    Reply from 192.168.0.1: bytes=32 time<1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time<1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time<1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time<1ms TTL=128
+
+    nltest /dsgetdc:contoso
+               DC: \\DC1
+          Address: \\192.168.0.1
+         Dom Guid: fdbd0643-d664-411b-aea0-fe343d7670a8
+         Dom Name: CONTOSO
+      Forest Name: contoso.com
+     Dc Site Name: Default-First-Site-Name
+    Our Site Name: Default-First-Site-Name
+            Flags: PDC GC DS LDAP KDC TIMESERV WRITABLE DNS_FOREST CLOSE_SITE FULL_SECRET WS 0xC000
+    ```
+17. From an elevated Windows PowerShell prompt, type the following commands to forcibly remove the computer from its previous domain, join the contoso.com domain, and then restart the computer:
+    ```
+    cmd /c start /B /W wmic /interactive:off ComputerSystem Where "Name='%computername%'" Call UnJoinDomainOrWorkgroup FUnjoinOptions=0
+    $pass = "pass@word1" | ConvertTo-SecureString -AsPlainText -Force
+    $user = "contoso\administrator"
+    $cred = New-Object System.Management.Automation.PSCredential($user,$pass)
+    Add-Computer -DomainName contoso -Credential $cred
+    shutdown /r
+    ```
+18. After the computer restarts, sign in to the contoso.com domain with the (user1) account you created in step 8.
+19. Minimize the client VM and but do not turn it off while the second Windows Server 2012 R2 VM is configured. This ensures that the Hyper-V host has enough resources to run all VMs simultaneously. Next, the member server VM will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
+20. On the Hyper-V host computer at an elevated Windows PowerShell prompt, type the following commands:
+    ```
+    Start-VM 2012R2-SRV1
+    vmconnect localhost 2012R2-SRV1
+    ```
+21. Accept the default settings, read license terms and accept them, provide an administrator password of **pass@word1**, and click **Finish**. When you are prompted about finding PCs, devices, and content on the network, click **Yes**.
+22. Sign in to the member server VM using the Administrator account, open an elevated Windows PowerShell prompt, and type the following commands:
+    ```
+    Rename-Computer SRV1
+    New-NetIPAddress –InterfaceAlias Ethernet –IPAddress 192.168.0.2 –PrefixLength 24
+    ```
+
+
 
 ## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
 
