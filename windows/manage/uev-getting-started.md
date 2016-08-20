@@ -42,7 +42,7 @@ Before you proceed, ensure that your environment meets the following requirement
 
 ## Step 2: Deploy the settings storage location
 
-You’ll need to deploy a settings storage location, a standard network share where user settings are stored in a settings package file. When you create the settings storage share, you should limit access to users that require it. [Deploy a settings storage location](https://technet.microsoft.com/library/dn458891.aspx#ssl) provides more detailed information.
+You’ll need to deploy a settings storage location, a standard network share where user settings are stored in a settings package file. When you create the settings storage share, you should limit access to users that require it. For more information, see [Deploy a UE-V Settings Storage Location](uev-deploy-required-features.md#deploy-a-ue-v-settings-storage-location).
 
 **Create a network share**
 
@@ -124,8 +124,11 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
 5.  You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
 
-Other resources for this feature
---------------------------------
+## Have a suggestion for UE-V?
+
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+
+## Other resources for this feature
 
 -   [User Experience Virtualization overview](uev-for-windows.md)
 

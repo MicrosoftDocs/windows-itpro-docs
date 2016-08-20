@@ -36,7 +36,7 @@ The following table explains the trigger events for classic applications and Win
 <td align="left"><p><strong>Windows Logon</strong></p></td>
 <td align="left"><ul>
 <li><p>Application and Windows settings are imported to the local cache from the settings storage location.</p></li>
-<li><p>[Asynchronous Windows settings](http://technet.microsoft.com/library/dn458932.aspx#autosyncsettings2) are applied.</p></li>
+<li><p>[Asynchronous Windows settings](uev-prepare-for-deployment.md#windows-settings-synchronized-by-default) are applied.</p></li>
 <li><p>Synchronous Windows settings will be applied during the next Windows logon.</p></li>
 <li><p>Application settings will be applied when the application starts.</p></li>
 </ul></td>
@@ -90,7 +90,7 @@ The following table explains the trigger events for classic applications and Win
 <li><p>Asynchronous Windows settings are applied directly.</p></li>
 <li><p>Application settings are applied when the application starts.</p></li>
 <li><p>Both asynchronous and synchronous Windows settings are applied during the next Windows logon.</p></li>
-<li><p>Windows app (AppX) settings are applied during the next refresh. See [Monitor Application Settings](http://technet.microsoft.com/library/dn458944.aspx) for more information.</p></li>
+<li><p>Windows app (AppX) settings are applied during the next refresh. See [Monitor Application Settings](uev-changing-the-frequency-of-scheduled-tasks.md#monitor-application-settings) for more information.</p></li>
 </ul></td>
 <td align="left"><p>NA</p></td>
 </tr>
@@ -107,7 +107,7 @@ The following table explains the trigger events for classic applications and Win
 ## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

@@ -100,22 +100,22 @@ This section contains hotfixes and KB articles for UE-V.
 
 | KB Article | Title   | Link   |
 |------------|---------|--------|
-| 3018608    | UE-V - TemplateConsole.exe crashes when UE-V WMI classes are missing       | [support.microsoft.com/kb/3018608/EN-US](http://support.microsoft.com/kb/3018608/EN-US) |
-| 2903501    | UE-V: User Experience Virtualization (UE-V) compatibility with user profiles   | [support.microsoft.com/kb/2903501/EN-US](http://support.microsoft.com/kb/2903501/EN-US) |
-| 2770042    | UE-V Registry Settings                                                         | [support.microsoft.com/kb/2770042/EN-US](http://support.microsoft.com/kb/2770042/EN-US) |
-| 2847017    | UE-V settings replicated by Internet Explorer                                  | [support.microsoft.com/kb/2847017/EN-US](http://support.microsoft.com/kb/2847017/EN-US) |
-| 2769631    | How to repair a corrupted UE-V install                                         | [support.microsoft.com/kb/2769631/EN-US](http://support.microsoft.com/kb/2769631/EN-US) |
-| 2850989    | Migrating MAPI profiles with Microsoft UE-V is not supported                   | [support.microsoft.com/kb/2850989/EN-US](http://support.microsoft.com/kb/2850989/EN-US) |
-| 2769586    | UE-V roams empty folders and registry keys                                     | [support.microsoft.com/kb/2769586/EN-US](http://support.microsoft.com/kb/2769586/EN-US) |
-| 2782997    | How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V) | [support.microsoft.com/kb/2782997/EN-US](http://support.microsoft.com/kb/2782997/EN-US) |
-| 2769570    | UE-V does not update the theme on RDS or VDI sessions                          | [support.microsoft.com/kb/2769570/EN-US](http://support.microsoft.com/kb/2769570/EN-US) |
-| 2850582    | How To Use Microsoft User Experience Virtualization With App-V Applications    | [support.microsoft.com/kb/2850582/EN-US](http://support.microsoft.com/kb/2850582/EN-US) |
-| 3041879    | Current file versions for Microsoft User Experience Virtualization             | [support.microsoft.com/kb/3041879/EN-US](http://support.microsoft.com/kb/3041879/EN-US) |
-| 2843592    | Information on User Experience Virtualization and High Availability            | [support.microsoft.com/kb/2843592/EN-US](http://support.microsoft.com/kb/2843592/EN-US) |
+| 3018608    | UE-V - TemplateConsole.exe crashes when UE-V WMI classes are missing           | [support.microsoft.com/kb/3018608](http://support.microsoft.com/kb/3018608) |
+| 2903501    | UE-V: User Experience Virtualization (UE-V) compatibility with user profiles   | [support.microsoft.com/kb/2903501](http://support.microsoft.com/kb/2903501) |
+| 2770042    | UE-V Registry Settings                                                         | [support.microsoft.com/kb/2770042](http://support.microsoft.com/kb/2770042) |
+| 2847017    | Internet Explorer settings replicated by UE-V                                  | [support.microsoft.com/kb/2847017](http://support.microsoft.com/kb/2847017) |
+| 2769631    | How to repair a corrupted UE-V install                                         | [support.microsoft.com/kb/2769631](http://support.microsoft.com/kb/2769631) |
+| 2850989    | Migrating MAPI profiles with Microsoft UE-V is not supported                   | [support.microsoft.com/kb/2850989](http://support.microsoft.com/kb/2850989) |
+| 2769586    | UE-V roams empty folders and registry keys                                     | [support.microsoft.com/kb/2769586](http://support.microsoft.com/kb/2769586) |
+| 2782997    | How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V) | [support.microsoft.com/kb/2782997](http://support.microsoft.com/kb/2782997) |
+| 2769570    | UE-V does not update the theme on RDS or VDI sessions                          | [support.microsoft.com/kb/2769570](http://support.microsoft.com/kb/2769570) |
+| 2850582    | How To Use Microsoft User Experience Virtualization With App-V Applications    | [support.microsoft.com/kb/2850582](http://support.microsoft.com/kb/2850582) |
+| 3041879    | Current file versions for Microsoft User Experience Virtualization             | [support.microsoft.com/kb/3041879](http://support.microsoft.com/kb/3041879) |
+| 2843592    | Information on User Experience Virtualization and High Availability            | [support.microsoft.com/kb/2843592](http://support.microsoft.com/kb/2843592) |
 
 ## Have a suggestion for UE-V?
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 **Additional resources for this feature**
 
