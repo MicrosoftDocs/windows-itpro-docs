@@ -2,7 +2,7 @@
 title: Protect your enterprise data using Windows Information Protection (WIP) (Windows 10)
 description: With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control.
 ms.assetid: 6cca0119-5954-4757-b2bc-e0ea4d2c7032
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
+keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, DLP, data loss prevention, data leakage protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -28,6 +28,18 @@ You’ll need this software to run WIP in your enterprise:
 |-----------------|---------------------|
 |Windows 10, version 1607 | Microsoft Intune<br>-OR-<br>System Center Configuration Manager<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
 
+## Benefits of WIP
+WIP provides:
+- Obvious separation between personal and corporate data, without requiring employees to switch environments or apps.
+
+- Additional data protection for existing line-of-business apps without a need to update the apps.
+
+- Ability to wipe corporate data from devices while leaving personal data alone.
+
+- Use of audit reports for tracking issues and remedial actions.
+
+- Integration with your existing management system (Microsoft Intune, System Center Configuration Manager 2016, or your current mobile device management (MDM) system) to configure, deploy, and manage WIP for your company.
+
 ## How WIP works
 WIP helps address your everyday challenges in the enterprise. Including:
 
@@ -39,6 +51,16 @@ WIP helps address your everyday challenges in the enterprise. Including:
 
 - Helping control the network and data access and data sharing for apps that aren’t enterprise aware
 
+### Enterprise scenarios
+WIP currently addresses these enterprise scenarios:
+- You can encrypt enterprise data on employee-owned and corporate-owned devices.
+
+- You can remotely wipe enterprise data off managed computers, including employee-owned computers, without affecting the personal data.
+
+- You can select specific apps that can access enterprise data, called "allowed apps" that are clearly recognizable to employees. You can also block non-protected apps from accessing enterprise data.
+
+- Your employees won't have their work otherwise interrupted while switching between personal and enterprise apps while the enterprise policies are in place. Switching environments or signing in multiple times isn’t required.
+
 ### WIP-protection modes
 You can set WIP to 1 of 4 protection and management modes:
 
@@ -47,8 +69,7 @@ You can set WIP to 1 of 4 protection and management modes:
 |Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing enterprise data to non-enterprise-protected apps in addition to sharing enterprise data between apps or attempting to share outside of your organization’s network.|
 |Override |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkID=746459). |
 |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
-|Off |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any closed WIP-tagged files on the locally attached drives. |
-<p>**Note**<br>For more info about setting your WIP-protection modes, see either [Create a Windows Information Protection (WIP) policy using Intune](create-wip-policy-using-intune.md) or [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-wip-policy-using-sccm.md), depending on your management solution.
+|Off |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any closed WIP-tagged files on the locally attached drives.<p>**Note**<br>For more info about setting your WIP-protection modes, see either [Create a Windows Information Protection (WIP) policy using Intune](create-wip-policy-using-intune.md) or [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-wip-policy-using-sccm.md), depending on your management solution. |
 
 ## Why use WIP?
 WIP gives you a new way to manage data policy enforcement for apps and documents, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
@@ -76,6 +97,9 @@ WIP gives you a new way to manage data policy enforcement for apps and documents
     -   **Helping prevent accidental data disclosure to removable media.** WIP helps prevent enterprise data from leaking when it's copied or transferred to removable media. For example, if an employee puts enterprise data on a Universal Serial Bus (USB) drive that also has personal data, the enterprise data remains encrypted while the personal data doesn’t.
 
 -   **Remove access to enterprise data from enterprise-protected devices.** WIP gives admins the ability to revoke enterprise data from one or many MDM-enrolled devices, while leaving personal data alone. This is a benefit when an employee leaves your company, or in the case of a stolen device. After determining that the data access needs to be removed, you can use Microsoft Intune to unenroll the device so when it connects to the network, the user's encryption key for the device is revoked and the enterprise data becomes unreadable.<p>**Note**<br>System Center Configuration Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
+
+## Turn off WIP
+You can turn off all Windows Information Protection and restrictions, reverting to where you were pre-WIP, with no data loss. However, turning off WIP isn't recommended. If you choose to turn it off, you can always turn it back on, but WIP won't retain your decryption and policies info.
 
 ## Next steps
 After deciding to use WIP in your enterprise, you need to:
