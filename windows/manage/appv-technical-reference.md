@@ -42,14 +42,8 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 ## Related topics
 
+[How to Deploy the App-V Databases by Using SQL Scripts](appv-deploy-appv-databases-with-sql-scripts.md)
 
-[Creating App-V 4.5 Databases Using SQL Scripting](https://technet.microsoft.com/en-us/itpro/mdop/solutions/creating-app-v-45-databases-using-sql-scripting)
+[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
- 
-
- 
-
-
-
-
-
+[Windows PowerShell reference for App-V](https://technet.microsoft.com/en-us/library/dn903534.aspx)

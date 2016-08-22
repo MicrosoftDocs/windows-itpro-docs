@@ -255,4 +255,4 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 - [Operations for App-V](appv-operations.md)
 
-- [A simplified Microsoft App-V Management Server upgrade procedure](http://go.microsoft.com/fwlink/p/?LinkId=786330)
+- [A simplified Microsoft App-V 5.1 Management Server upgrade procedure](https://blogs.technet.microsoft.com/appv/2015/09/23/a-simplified-microsoft-app-v-5-1-management-server-upgrade-procedure/)
