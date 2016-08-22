@@ -27,7 +27,7 @@ If you’re already using UE-V 2.x and you’re planning to upgrade user devices
 
 ## Upgrade user devices to Windows 10, version 1607
 
-Performing an in-place upgrade on user devices automatically installs the UE-V service, updates the settings location path, and migrates users' UE-V settings. See the [Windows 10 for IT Pros documentation](https://technet.microsoft.com/itpro/windows/index) for information about upgrading user devices to Windows 10. 
+Performing an in-place upgrade on user devices automatically installs the UE-V service, updates the settings location path, and migrates users' UE-V settings. See the [Windows 10 documentation for IT Pros](https://technet.microsoft.com/itpro/windows/deploy/index) for information about upgrading user devices to Windows 10. 
 
 ## Verify that UE-V settings were migrated correctly 
 
