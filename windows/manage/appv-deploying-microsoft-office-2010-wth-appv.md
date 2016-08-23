@@ -282,9 +282,9 @@ The following table provides a full list of supported integration points for Off
 
 **Connection Groups**
 
-[Deploying Connection Groups in Microsoft App-V v5](https://blogs.technet.microsoft.com/appv/2012/11/06/deploying-connection-groups-in-microsoft-app-v-v5/)
-
 [Managing Connection Groups](appv-managing-connection-groups.md)
+
+[Connection groups on the App-V team blog](https://blogs.technet.microsoft.com/gladiatormsft/tag/connection-groups/)
 
 **Dynamic Configuration**
 
