@@ -479,6 +479,11 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Add-DnsServerForwarder -IPAddress (Get-DnsClientServerAddress -InterfaceAlias "Ethernet 2").ServerAddresses
     ```   
 26. Verify that all three VMs on the PoC network can reach the Internet.
+27. Because the client computer has different hardware after coping it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on the client VM:
+    ```
+    slmgr -rearm
+    Restart-Computer
+    ```
 
 ## Install tools
 
