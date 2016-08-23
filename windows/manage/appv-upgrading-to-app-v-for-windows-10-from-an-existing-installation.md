@@ -81,16 +81,6 @@ Type the following cmdlet in a Windows PowerShell window:
 
 3. Enter your existing App-V publishing server’s details in **Options** and then click or press **Apply**.
 
-<!-- For the following three items, we're looking for more detail from Chintan --> 
-
-Ensure newly added machine/ user is entitled to receive packages from the server configure in step #2.  
-
-Sync and verify packages and/or connection groups pushed by the App-V server function correctly.  
-
-Validate other package management commands (unpublish, remove etc.).
-
-<!-- ++++++++++++++++++++++++++++++ -->
-
 ## Verify that the in-box App-V client can receive and launch .appv packages
 
 1. Add and publish a package using the following Windows PowerShell cmdlets: 
