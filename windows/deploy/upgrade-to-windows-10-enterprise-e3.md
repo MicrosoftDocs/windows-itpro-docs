@@ -19,7 +19,7 @@ author: greg-lindsay
 
 Windows 10 Enterprise E3 is a new offering that delivers exclusive features reserved for Windows Enterprise edition customers on a subscription basis.  This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service.
 
-Customer benefits include:
+Benefits include:
 
 1. Support for enterprise-grade scenarios and compliance that require exclusive Enterprise edition features such as Device Guard, Managed User Experience, etc.
 2. Future features reserved for Enterprise edition. 
@@ -80,7 +80,7 @@ With Windows 10 Enterprise E3, you can take advantage of the following features 
 
 </table>
 
-See [What’s new in Windows 10](https://technet.microsoft.com/en-us/itpro/windows/whats-new/index) for more information about features included with Windows 10. 
+<P>See [What’s new in Windows 10](https://technet.microsoft.com/en-us/itpro/windows/whats-new/index) for more information about features included with Windows 10. 
 
 ## How to get Windows 10 Enterprise E3
 
@@ -119,18 +119,17 @@ The Enterprise E3 subscription is tied closely to Windows 10 Pro. The subscripti
     </tr>
     <tr>
         <td BGCOLOR="#cacdce">Enterprise E3 subscription:<BR>**Active**</td>
-        <td style="border-right: 2px solid grey; border-bottom: 2px solid grey">Edition = Windows 10 Enterprise<BR>Subscription = active<BR>Activation = Windows is activated</td>
-        <td style="border-left: 2px solid grey; border-bottom: 2px solid grey">Edition = Windows 10 Enterprise<BR>Subscription = active<BR>Activation = Windows is not activated</td>
+        <td style="border-right: 3px solid grey; border-bottom: 3px solid grey"><table border="0"><tr><td>Edition:<td>Windows 10 Enterprise</td></tr><tr><td>Subscription:<td> active</td></tr><tr><td>Activation:<td> Windows is activated</td></tr></table>
+        <td style="border-left: 3px solid grey; border-bottom: 3px solid grey"><table border="0"><tr><td>Edition:<td> Windows 10 Enterprise</td></tr><tr><td>Subscription:<td> active</td></tr><tr><td>Activation <td> Windows is not activated</td></tr></table>
     </tr>
     <tr>
         <td BGCOLOR="#cacdce">Enterprise E3 subscription:<BR>**Lapsed**</td>
-        <td style="border-right: 2px solid grey">Edition = Windows 10 Pro<BR>Subscription = not valid<BR>Activation = Windows is activated</td>
-        <td style="border-left: 2px solid grey">Edition = Windows 10 Pro<BR>Subscription = not valid<BR>Activation = Windows is not activated</td>
+        <td style="border-right: 3px solid grey"><table border="0"><tr><td>Edition:<td> Windows 10 Pro</td></tr><tr><td>Subscription:<td> not valid</td></tr><tr><td>Activation:<td> Windows is activated</td></tr></table>
+        <td style="border-left: 3px solid grey"><table border="0"><tr><td>Edition:<td> Windows 10 Pro</td></tr><tr><td>Subscription:<td> not valid</td></tr><tr><td>Activation:<td> Windows is not activated</td><tr></table>
     </tr>
 
-</table><BR>
-
-**Note**: If no subscription information is displayed under Settings > Update & security > Activation, then there is no subscription entered for the user, either lapsed or active.
+</table>
+<P>**Note**: If no subscription information is displayed under Settings > Update & security > Activation, then there is no subscription entered for the user, either lapsed or active.
 
 ### Requirements
 
