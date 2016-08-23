@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mdt
-author: mtniehaus
+author: greg-lindsay
 ---
 
 # Upgrade Windows 10 Pro edition to Windows 10 Enterprise E3
@@ -21,10 +21,10 @@ Windows 10 Enterprise E3 is a new offering that delivers exclusive features rese
 
 Customer benefits include:
 
-        a. Support for enterprise-grade scenarios and compliance that require exclusive Enterprise edition features such as Device Guard, Managed User Experience, etc.
-        b. Future features reserved for Enterprise edition. 
-        c. Seamless reboot-less upgrade from Windows 10 Pro to Windows 10 Enterprise.
-        d. Keyless activation (no KMS server or infrastructure required).
+1. Support for enterprise-grade scenarios and compliance that require exclusive Enterprise edition features such as Device Guard, Managed User Experience, etc.
+2. Future features reserved for Enterprise edition. 
+3. Seamless reboot-less upgrade from Windows 10 Pro to Windows 10 Enterprise.
+4. Keyless activation (no KMS server or infrastructure required).
 
 The user-based licensing model of this offering was previously not available to small and medium businesses, and aligns well with other offers in the CSP channel such as O365 and Enterprise Mobility Suite EMS.
 
@@ -34,7 +34,7 @@ CSP partners can upgrade their customers from Windows 10 Pro to Windows 10 Enter
 
 Windows 10 Enterprise features include all the capabilities that customers get with Windows 10 Pro, plus premium features designed to provide the mobile productivity, security, manageability, and virtualization needs of today’s organizations.
 
-With Windows 10 Enterprise E3, you can take advantage of the following features not available in Windows 10 Pro. See [What’s new in Windows 10](https://technet.microsoft.com/en-us/itpro/windows/whats-new/index) for more information about features included with Windows 10. 
+With Windows 10 Enterprise E3, you can take advantage of the following features not available in Windows 10 Pro:
 
 <table border="1" cellpadding="3">
     <tr>
@@ -47,7 +47,7 @@ With Windows 10 Enterprise E3, you can take advantage of the following features 
     </tr>
     <tr>
         <td>[AppLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/applocker-overview)</td>
-        <td></td>
+        <td>AppLocker helps you control which apps and files users can run.</td>
     </tr>
         <tr>
         <td>[Managed user experience](https://www.microsoft.com/en-us/WindowsForBusiness/windows-products?id=tab1)</td>
@@ -80,6 +80,8 @@ With Windows 10 Enterprise E3, you can take advantage of the following features 
 
 </table>
 
+See [What’s new in Windows 10](https://technet.microsoft.com/en-us/itpro/windows/whats-new/index) for more information about features included with Windows 10. 
+
 ## How to get Windows 10 Enterprise E3
 
 Starting with Windows 10 Anniversary Update, customers who purchased Windows 10 Enterprise E3 as an online service can move from Windows 10 Pro to Windows 10 Enterprise E3 easier than ever before – no keys and no reboots. When you sign in using Azure Active Directory credentials on a device running Windows 10 Pro, the operating system unlocks Windows 10 Enterprise features. When a subscription license expires or is transferred to another user, the Windows 10 Enterprise device seamlessly steps down to Windows 10 Pro.
@@ -103,28 +105,30 @@ To confirm that upgrade to Windows 10 Enterprise E3 was successful, check the ac
 
 ![activation](images/e3-activated.png)
 
-When a subscription license expires or is transferred to another user, the Windows 10 Enterprise device seamlessly changes back to Windows 10 Pro after a grace period of 3 months. Any features that are only available in the Enterprise edition will continue to be present, but configuration changes and management of these features is disabled when the Enterprise subscription is not valid. 
+When a subscription license expires or is transferred to another user, the Windows 10 Enterprise device seamlessly changes back to Windows 10 Pro after a grace period of 3 months. 
 
-The Enterprise E3 subscription is tied closely to Windows 10 Pro activation, resulting in four possible scenarios. The subscription and activation status of a device can be determined by reviewing the activation status. These four scenarios are described in the following table:
+>**Important**: Any features that are only available in the Enterprise edition will continue to be present, but configuration changes and management of these features is disabled when the Enterprise subscription is not valid. 
+
+The Enterprise E3 subscription is tied closely to Windows 10 Pro. The subscription and activation status of a device can be determined by reviewing the status under Settings > Update & security > Activation. The four possible combinations of activation and subscription and the resulting client states are described in the following table:
 
 <table border="0" cellpadding="3">
     <tr>
         <td></td>
-        <td BGCOLOR="#cacdce">Pro activation: Yes</td>
-        <td BGCOLOR="#cacdce">Pro activation: No</td>
+        <td BGCOLOR="#cacdce">Pro activation: **Yes**</td>
+        <td BGCOLOR="#cacdce">Pro activation: **No**</td>
     </tr>
     <tr>
-        <td BGCOLOR="#cacdce">Enterprise E3 subscription: Active</td>
-        <td style="border-right: 1px solid grey; border-bottom: 1px solid grey">Edition = Windows 10 Enterprise<BR>Subscription = active<BR>Activation = Windows is activated</td>
-        <td style="border-left: 1px solid grey; border-bottom: 1px solid grey">Edition = Windows 11 Enterprise<BR>Subscription = active<BR>Activation = Windows is not activated</td>
+        <td BGCOLOR="#cacdce">Enterprise E3 subscription:<BR>**Active**</td>
+        <td style="border-right: 2px solid grey; border-bottom: 2px solid grey">Edition = Windows 10 Enterprise<BR>Subscription = active<BR>Activation = Windows is activated</td>
+        <td style="border-left: 2px solid grey; border-bottom: 2px solid grey">Edition = Windows 10 Enterprise<BR>Subscription = active<BR>Activation = Windows is not activated</td>
     </tr>
     <tr>
-        <td BGCOLOR="#cacdce">Enterprise E3 subscription: Lapsed</td>
-        <td style="border-right: 1px solid grey">Edition = Windows 12 Pro<BR>Subscription = not valid<BR>Activation = Windows is activated</td>
-        <td style="border-left: 1px solid grey">Edition = Windows 13 Pro<BR>Subscription = not valid<BR>Activation = Windows is not activated</td>
+        <td BGCOLOR="#cacdce">Enterprise E3 subscription:<BR>**Lapsed**</td>
+        <td style="border-right: 2px solid grey">Edition = Windows 10 Pro<BR>Subscription = not valid<BR>Activation = Windows is activated</td>
+        <td style="border-left: 2px solid grey">Edition = Windows 10 Pro<BR>Subscription = not valid<BR>Activation = Windows is not activated</td>
     </tr>
 
-</table>
+</table><BR>
 
 **Note**: If no subscription information is displayed under Settings > Update & security > Activation, then there is no subscription entered for the user, either lapsed or active.
 
@@ -134,11 +138,9 @@ Devices must be running Windows 10 Pro version 1607 and be Azure Active Director
 To determine if a device is Azure Active Directory joined:
 1.	Open a command prompt and type dsregcmd /status.
 2.	Review the output under Device State. 
-3.	If the **AzureAdJoined** status is YES, the device is Azure Active Directory joined.
+3.	If the **AzureAdJoined** status is YES, the device is Azure Active Directory joined. See the following example:
 
-See the following example:
-
-![azureadjoined](images/azureadjoined.png)
+    ![azureadjoined](images/azureadjoined.png)
 
 To determine the version of Windows 10:
 1.	Type winver at a command prompt. 
@@ -149,6 +151,6 @@ If a device is running a previous version of Windows 10 Pro (ex: 1511), it will 
 ## Related topics
 
 [Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
-[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)
+<BR>[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
+<BR>[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)
  
