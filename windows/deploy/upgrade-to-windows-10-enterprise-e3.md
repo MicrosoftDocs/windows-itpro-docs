@@ -55,23 +55,23 @@ With Windows 10 Enterprise E3, you can take advantage of the following features 
     </tr>
         <tr>
         <td>[Application Virtualization (App-V)](https://technet.microsoft.com/itpro/windows/manage/appv-for-windows)</td>
-        <td></td>
+        <td>Microsoft Application Virtualization (App-V) for Windows 10 enables organizations to deliver Win32 applications to users as virtual applications.</td>
     </tr>
         <tr>
         <td>[User Experience Virtualization (UE-V)](https://technet.microsoft.com/en-us/itpro/windows/manage/uev-for-windows)</td>
-        <td></td>
+        <td>With User Experience Virtualization (UE-V), you can capture user-customized Windows and application settings and store them on a centrally managed network file share.</td>
     </tr>
         <tr>
         <td>[Credential Guard](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard)</td>
-        <td></td>
+        <td>Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.</td>
     </tr>
         <tr>
         <td>[Device Guard](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/device-guard-deployment-guide)</td>
-        <td></td>
+        <td>Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that you define in your code integrity policies.</td>
     </tr>
         <tr>
         <td>[Windows to Go](https://technet.microsoft.com/en-us/itpro/windows/plan/windows-to-go-overview)</td>
-        <td></td>
+        <td>Windows To Go enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs, providing support for efficient use of resources for alternative workplace scenarios.</td>
     </tr>
         <tr>
         <td>[BranchCache](https://technet.microsoft.com/library/mt613461.aspx)</td>
