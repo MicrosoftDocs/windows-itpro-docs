@@ -26,12 +26,19 @@ The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to repo
 
 The embedded Windows Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Windows Defender ATP cloud service.
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery method:
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
 - Configure the proxy server manually using a static proxy
 
-## Configure the proxy server manually using a static proxy
-Configure a static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
+    - Auto-discovery methods:
+        - Transparent proxy
+
+    - Manual static proxy configuration
+      - WinHTTP configured using netsh command
+      -	Registry based configuration
+
+## Configure the proxy server manually using a registry-based static proxy
+Configure a registry-based static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under: **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**.
 
@@ -45,6 +52,25 @@ The policy and the registry key takes the following string format:
 For example: 10.0.0.6:8080
 
 If the static proxy settings are configured after onboarding, then you must restart the PC to apply the proxy settings.
+
+## Configure the proxy server manually using netsh command
+
+Use netsh to configure a system-wide static proxy.
+
+> [!NOTE]
+> This will affect all applications including Windows services which use WinHTTP with default proxy.
+
+1. Open an elevated command-line:
+
+    a. Go to **Start** and type **cmd**.
+
+    b. Right-click **Command prompt** and select **Run as administrator**.
+
+4. Enter the following command and press **Enter**:
+```
+netsh winhttp set proxy <proxy>:<port>
+```
+For example: netsh winhttp set proxy 10.0.0.6:8080
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
