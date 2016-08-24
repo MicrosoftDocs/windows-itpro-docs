@@ -97,7 +97,7 @@ Partners are able to view and assign seats for Windows 10 Enterprise E3 via CSP.
 ## Upgrading to Windows 10 Enterprise E3
 
 In traditional volume licensing programs, customers are provided MAK and/or KMS keys for activation, and the operating system is provided as an ISO file to download and deploy.  With the Windows 10 Enterprise E3 in CSP, there are no keys to assign and manage and no deployment is necessary. Instead, users are assigned in the CSP portal (or using partner Center APIs). 
-When an end user that has been assigned an Windows 10 Enterprise E3 subscription signs in to their device using Azure Active Directory credentials, the computer automatically runs Windows 10 Enterpriseunlocks all Enterprise edition features. Note: A single user can run Windows 10 Enterprise E3 on a maximum of five computers.
+<P>When an end user that has been assigned a Windows 10 Enterprise E3 subscription signs in to their device using Azure Active Directory credentials, the computer automatically runs Windows 10 Enterprise unlocks all Enterprise edition features. Note: A single user can run Windows 10 Enterprise E3 on a maximum of five computers.
 
 ### License activation
 
@@ -124,7 +124,7 @@ The Enterprise E3 subscription is tied closely to Windows 10 Pro. The subscripti
     </tr>
     <tr>
         <td BGCOLOR="#cacdce">Enterprise E3 subscription:<BR>**Lapsed**</td>
-        <td style="border-right: 3px solid grey"><table border="0"><tr><td>Edition:<td> Windows 10 Pro</td></tr><tr><td>Subscription:<td> not valid</td></tr><tr><td>Activation:<td> Windows is activated</td></tr></table>
+        <td style="border-right: 3px solid grey"><table border="0"><tr><td>Edition:<td> Windows 10 Pro</td></tr><tr><td>Subscription:<td> not valid</td></tr><tr><td>Activation:<td> Windows is activated&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></table>
         <td style="border-left: 3px solid grey"><table border="0"><tr><td>Edition:<td> Windows 10 Pro</td></tr><tr><td>Subscription:<td> not valid</td></tr><tr><td>Activation:<td> Windows is not activated</td><tr></table>
     </tr>
 
