@@ -50,8 +50,8 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Create work documents in enterprise-allowed apps.</td>
         <td><strong>For desktop:</strong><p>
             <ol>
-                <li></li>
-                <li></li>
+                <li>Start an unenlightened but allowed app, such as a line-of-business app, and then create a new document, saving your changes.</li>
+                <li>Make sure the document is encrypted to your Enterprise Identity.<br>This might take a few minutes and require you to close and re-open the file.<p><strong>Important</strong><br>Certain file types like <code>.exe</code> and <code>.dll</code>, along with certain file paths, such as <code>%windir%</code> and <code>%programfiles%</code> are excluded from automatic encryption.<p>For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) or [Create a Windows Information Protection (WIP) policy using Microsoft System Center Configuration Manager](create-wip-policy-using-sccm.md), based on your deployment system.</li>
             </ol>
             <strong>For mobile:</strong><p>
             <ol>
