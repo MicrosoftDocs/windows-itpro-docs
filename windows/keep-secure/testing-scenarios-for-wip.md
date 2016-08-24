@@ -22,6 +22,93 @@ We've come up with a list of suggested testing scenarios that you can use to tes
 ## Testing scenarios
 You can try any of the processes included in these scenarios, but you should focus on the ones that you might encounter in your organization.
 
+<table>
+    <tr>
+        <th>Scenario</th>
+        <th>Processes</th>
+    </tr>
+    <tr>
+        <td>Encrypt and decrypt files using File Explorer.</td>
+        <td><strong>For desktop:</strong><p>
+            <ol>
+                <li>Open File Explorer, right-click a work document, and then click <strong>Work</strong> from the <strong>File Ownership</strong> menu.</li>
+                <li>Make sure the file is encrypted by right-clicking the file again, clicking <strong>Advanced</strong> from the <strong>General</strong> tab, and then clicking <strong>Details</strong> from the <strong>Compress or Encrypt attributes</strong> area.<br>The file should show up under the heading, <strong>This enterprise domain can remove or revoke access:</strong> <em>&lt;your_enterprise_identity&gt;</em>. For example, contoso.com.</li>
+                <li>In File Explorer, right-click the same document, and then click <strong>Personal</strong> from the <strong>File Ownership</strong> menu.</li>
+                <li>Make sure the file is decrypted by right-clicking the file again, clicking <strong>Advanced</strong> from the <strong>General</strong> tab, and then verifying that the <strong>Details</strong> button is unavailable.</li>
+            </ol>
+            <strong>For mobile:</strong><p>
+            <ol>
+                <li>Open the File Explorer app, browse to a file location, click the elipsis (...), and then click <strong>Select</strong> to mark at least one file as work-related.</li>
+                <li>Click the elipsis (...) again, click <strong>File ownership</strong> from the drop down menu, and then click <strong>Work</strong>.</li>
+                <li>Make sure the file is encrypted, by locating the <strong>Briefcase</strong> icon next to the file name.</li>
+                <li>Select the same file, click <strong>File ownership</strong> from the drop down menu, and then click <strong>Personal</strong>.</li>
+                <li>Make sure the file is decrypted and that you're no longer seeing the <strong>Briefcase</strong> icon next to file name.</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>Create work documents in enterprise-allowed apps.</td>
+        <td><strong>For desktop:</strong><p>
+            <ol>
+                <li>Start an unenlightened but allowed app, such as a line-of-business app, and then create a new document, saving your changes.</li>
+                <li>Make sure the document is encrypted to your Enterprise Identity.<br>This might take a few minutes and require you to close and re-open the file.<p><strong>Important</strong><br>Certain file types like <code>.exe</code> and <code>.dll</code>, along with certain file paths, such as <code>%windir%</code> and <code>%programfiles%</code> are excluded from automatic encryption.<p>For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) or [Create a Windows Information Protection (WIP) policy using Microsoft System Center Configuration Manager](create-wip-policy-using-sccm.md), based on your deployment system.</li>
+            </ol>
+            <strong>For mobile:</strong><p>
+            <ol>
+                <li></li>
+                <li></li>
+            </ol>
+        </td>        
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>                    
+
+
+
+
+3.	
+4.	Make sure the file is decrypted, by:
+o	Right-clicking the file again, clicking Advanced from the General tab, and then clicking Details from the Compress or Encrypt attributes area.
+The Details button should be unavailable.
+For mobile:
+1.	Open the File Explorer app, browse to a file location, click the elipsis (...), and then click Select to mark at least one file as work-related.
+2.	Click the elipsis (...) again, click File ownership from the drop down menu, and then click Work.
+Make sure the file is encrypted, by locating the Briefcase icon next to the file name.
+3.	Select the same file, click File ownership from the drop down menu, and then click Personal.
+Make sure the file is decrypted and that you're no longer seeing the Briefcase icon next to file name.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 |Scenario |Processes |
 |---------|----------|
 |Automatically encrypt files from enterprise apps |<ol><li>Start an unmodified (for example, WIP-unaware) line-of-business app that's on your allowed apps list and then create, edit, write, and save files.</li><li>Make sure that all of the files you worked with from the WIP-unaware app are encrypted to your configured Enterprise Identity. In some cases, you might need to close the file and wait a few moments for it to be automatically encrypted.</li><li>Open File Explorer and make sure your modified files are appearing with a **Lock** icon.<p>**Note**<br>Some file types, like .exe and .dll, along with some file paths, like `%windir%` and `%programfiles%`, are excluded from automatic encryption.</li></ol> |
