@@ -102,64 +102,65 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Verify that Windows system components can use WIP.</td>
         <td>
             <ol>
-                <li></li>
+                <li>Start Windows Journal and Internet Explorer 11, creating, editing, and saving files in both apps.<br>Make sure that all of the files you worked with are encrypted to your configured Enterprise Identity. In some cases, you might need to close the file and wait a few moments for it to be automatically encrypted.</li>
+                <li>Open File Explorer and make sure your modified files are appearing with a <strong>Lock</strong> icon.</li>
+                <li>Try copying and pasting, dragging and dropping, and sharing using these apps with other apps that appear both on and off the allowed apps list.<p><strong>Note</strong><br>Most Windows-signed components like File Explorer (when running in the user’s context), should have access to enterprise data.<p>A few notable exceptions include some of the user-facing in-box apps, like Wordpad, Notepad, and Microsoft Paint. These apps don't have access by default, but can be added to your allowed apps list.</li>
             </ol>
         </td>
     </tr>
     <tr>
-        <td></td>
+        <td>Use WIP on NTFS, FAT, and exFAT systems.</td>
         <td>
             <ol>
-                <li></li>
+                <li>Start an app that uses the FAT or exFAT file system (for example a SD card or USB flash drive), and appears on your allowed apps list.</li>
+                <li>Create, edit, write, save, copy, and move files.<br>Basic file and folder operations like copy, move, rename, delete, and so on, should work properly on encrypted files.</li>
             </ol>
         </td>
     </tr>
     <tr>
-        <td></td>
+        <td>Verify your shared files can use WIP.</td>
         <td>
             <ol>
-                <li></li>
+                <li>Download a file from a protected file share, making sure the file is encrypted by locating the <strong>Briefcase</strong> icon next to the file name.</li>
+                <li>Open the same file, make a change, save it and then try to upload it back to the file share. Again, this should work without any warnings.</li>
+                <li>Open an app that doesn't appear on your allowed apps list and attempt to access a file on the WIP-enabled file share.<br>The app shouldn't be able to access the file share.</li>
             </ol>
         </td>
     </tr>
     <tr>
-        <td></td>
+        <td>Verify your cloud resources can use WIP.</td>
         <td>
             <ol>
-                <li></li>
+                <li>Add both Internet Explorer 11 and Microsoft Edge to your allowed apps list.</li>
+                <li>Open SharePoint (or another cloud resource that's part of your policy) and access a WIP-enabled resource by using both IE11 and Microsoft Edge.<br>Both browsers should respect the enterprise and personal boundary.</li>
+                <li>Remove Internet Explorer 11 from your allowed app list and then try to access an intranet site or enterprise-related cloud resource.<br>IE11 shouldn't be able to access the sites.<p><strong>Note</strong><br>Any file downloaded from your work SharePoint site, or any other WIP-enabled cloud resource, is automatically marked as <strong>Work</strong>.</li>
             </ol>
         </td>
     </tr>
     <tr>
-        <td></td>
+        <td>Verify your Virtual Private Network (VPN) can be auto-triggered.</td>
         <td>
             <ol>
-                <li></li>
+                <li>Set up your VPN network to start based on the <strong>WIPModeID</strong> setting.<br>For specific info about how to do this, see the [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-wip-policy-using-intune.md) topic.</li>
+                <li>Start an app from your allowed apps list.<br>The VPN network should automatically start.</li>
+                <li>Disconnect from your network and then start an app that isn't on your allowed apps list.<br>The VPN shouldn't start and the app shouldn't be able to access your enterprise network.</li>
             </ol>
         </td>
     </tr>
     <tr>
-        <td></td>
+        <td>Unenroll client devices from WIP.</td>
         <td>
-            <ol>
-                <li></li>
-            </ol>
+            <ul>
+                <li>Unenroll a device from WIP by going to <strong>Settings</strong>, click <strong>Accounts</strong>, click <strong>Work</strong>, click the name of the device you want to unenroll, and then click <strong>Remove</strong>.<br>The device should be removed and all of the enterprise content for that managed account should be gone.<p><strong>Important</strong><br>On desktop devices, the data isn't removed and can be recovered, so you must make sure they content is marked as <strong>Revoked</strong> and that access is denied for the employee. On mobile devices, the data is removed.</li>
+            </ul>
         </td>
     </tr>
     <tr>
-        <td></td>
+        <td>Verify that app content is protected when a Windows 10 Mobile phone is locked.</td>
         <td>
-            <ol>
-                <li></li>
-            </ol>
-        </td>
-    </tr>
-    <tr>
-        <td></td>    
-        <td>
-            <ol>
-                <li></li>
-            </ol>
+            <ul>
+                <li>Check that protected app data doesn't appear on the Lock screen of a Windows 10 Mobile phone.</li>
+            </ul>
         </td>
     </tr>
 </table>    
