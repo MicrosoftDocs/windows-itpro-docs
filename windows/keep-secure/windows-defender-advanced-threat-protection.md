@@ -15,7 +15,7 @@ localizationpriority: high
 
 **Applies to:**
 
-- Windows 10 Enterprise, 1607
+- Windows 10 Enterprise, 1607 correct
 - Windows 10 Enterprise for Education
 - Windows 10 Pro
 - Windows 10 Pro Education
