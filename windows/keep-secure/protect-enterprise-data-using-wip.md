@@ -28,6 +28,31 @@ You’ll need this software to run WIP in your enterprise:
 |-----------------|---------------------|
 |Windows 10, version 1607 | Microsoft Intune<br>-OR-<br>System Center Configuration Manager<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
 
+## What is enterprise data control?
+Effective collaboration means that you need to share data with others in your enterprise. This sharing can be from one extreme where everyone has access to everything without any security, all the way to the other extreme where people can’t share anything and it’s all highly secured. Most enterprises fall somewhere in between the two extremes, where success is balanced between providing the necessary access with the potential for improper data disclosure.
+
+As an admin, you can address the question of who gets access to your data by using access controls, such as employee credentials. However, just because someone has the right to access your data doesn’t guarantee that the data will remain within the secured locations of the enterprise. This means that while access controls are a great start, they’re not enough.
+
+In the end, all of these security measures have one thing in common: employees will tolerate only so much inconvenience before looking for ways around the security restrictions. For example, if you don’t allow employees to share files through a protected system, employees will turn to an outside app that more than likely lacks security controls.
+
+### Using data loss prevention systems
+To help address this security insufficiency, company’s developed data loss prevention (also known as DLP) systems. Data loss prevention systems require:
+- **A set of rules about how the system can identify and categorize the data that needs to be protected.** For example, a rule set might contain a rule that identifies credit card numbers and another rule that identifies Social Security numbers.
+
+- **A way to scan company data to see whether it matches any of your defined rules.** Currently, Microsoft Exchange Server and Exchange Online provide this service for email in transit, while Microsoft SharePoint and SharePoint Online provide this service for content stored in document libraries.
+
+- **The ability to specify what happens when data matches a rule, including whether employees can bypass enforcement.** For example, in Microsoft SharePoint and SharePoint Online, the Microsoft data loss prevention system lets you warn your employees that shared data includes sensitive info, and to share it anyway (with an optional audit log entry).
+
+Unfortunately, data loss prevention systems have their own problems. For example, the more detailed the rule set, the more false positives are created, leading employees to believe that the rules slow down their work and need to be bypassed in order to remain productive, potentially leading to data being incorrectly blocked or improperly released. Another major problem is that data loss prevention systems must be widely implemented to be effective. For example, if your company uses a data loss prevention system for email, but not for file shares or document storage, you might find that your data leaks through the unprotected channels. But perhaps the biggest problem with data loss preventions systems is that it provides a jarring experience that interrupts the employees’ natural workflow by blocking some operations (such as sending a message with an attachment that the system tags as sensitive) while allowing others, often according to subtle rules that the employee doesn’t see and can’t understand.
+
+### Using information rights management systems
+To help address the potential data loss prevention system problems, company’s developed information rights management (also known as IRM) systems. Information rights management systems embed protection directly into documents, so that when an employee creates a document, he or she determines what kind of protection to apply. For example, an employee can choose to stop the document from being forwarded, printed, shared outside of the organization, and so on. 
+
+After the type of protection is set, the creating app encrypts the document so that only authorized people can open it, and even then, only in compatible apps. After an employee opens the document, the app becomes responsible for enforcing the specified protections. Because protection travels with the document, if an authorized person sends it to an unauthorized person, the unauthorized person won’t be able to read or change it. However, for this to work effectively information rights management systems require you to deploy and set up both a server and client environment. And, because only compatible clients can work with protected documents, an employees’ work might be unexpectedly interrupted if he or she attempts to use a non-compatible app.
+
+### And what about when an employee leaves the company or unenrolls a device?
+Finally, there’s the risk of data leaking from your company when an employee leaves or unenrolls a device. Previously, you would simply erase all of the corporate data from the device, along with any other personal data on the device.
+
 ## Benefits of WIP
 WIP provides:
 - Obvious separation between personal and corporate data, without requiring employees to switch environments or apps.
@@ -62,7 +87,11 @@ WIP currently addresses these enterprise scenarios:
 - Your employees won't have their work otherwise interrupted while switching between personal and enterprise apps while the enterprise policies are in place. Switching environments or signing in multiple times isn’t required.
 
 ### WIP-protection modes
-You can set WIP to 1 of 4 protection and management modes:
+Enterprise data is automatically encrypted after it’s loaded on a device from an enterprise source or if an employee marks the data as corporate. Then, when the enterprise data is written to disk, WIP uses the Windows-provided Encrypting File System (EFS) to protect it and associate it with your enterprise identity.
+
+Your WIP policy includes a list of trusted apps that are allowed to access and process corporate data. This list of apps is implemented through the [AppLocker](applocker-overview.md) functionality, controlling what apps are allowed to run and letting the Windows operating system know that the apps can edit corporate data. Apps included on this list don’t have to be modified to open corporate data because their presence on the list allows Windows to determine whether to grant them access. However, new for Windows 10, app developers can use a new set of application programming interfaces (APIs) to create *enlightened* apps that can use and edit both enterprise and personal data. A huge benefit to working with enlightened apps is that dual-use apps, like Microsoft Word, can be used with less concern about encrypting personal data by mistake because the APIs allow the app to determine whether data is owned by the enterprise or if it’s personally owned.
+
+You can set your WIP policy to use 1 of 4 protection and management modes:
 
 |Mode|Description|
 |----|-----------|
