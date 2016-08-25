@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to transfer the access and default package configurations to another version of a package by using the management console.
 
@@ -25,18 +26,10 @@ Use the following procedure to transfer the access and default package configura
 
     If you select **transfer access and configurations from**, then all access permissions, as well as the configuration settings, will be copied.
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Operations for App-V](appv-operations.md)
-
- 
-
- 
-
-
-
-
-

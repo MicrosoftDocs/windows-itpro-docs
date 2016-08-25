@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Deploy required UE-V features
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 To get up and running with User Experience Virtualization (UE-V), install and configure the following features.
 
@@ -146,7 +147,7 @@ With Windows 10, version 1607 and later, the UE-V service is installed on user d
 
 ## Have a suggestion for UE-V?
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/forums/home?forum=mdopuev).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

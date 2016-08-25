@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Managing Connection Groups
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Connection groups enable the applications within a package to interact with each other in the virtual environment, while remaining isolated from the rest of the system. By using connection groups, administrators can manage packages independently and can avoid having to add the same application multiple times to a client computer.
 
@@ -60,7 +61,7 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for App-V connection groups
 

@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to install the Reporting Server on a Standalone Computer and Connect it to the Database
 
-Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
+**Applies to**
+-   Windows Server 2016
 
 Use the following procedure to install the reporting server on a standalone computer and connect it to the database.
 
@@ -47,7 +48,7 @@ Before performing the following procedure you should read and understand [About 
 
 ## Have a suggestion for App-V? 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
@@ -56,13 +57,4 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 [Deploying App-V](appv-deploying-appv.md)
 
-[How to Enable Reporting on the App-V Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)
-
- 
-
- 
-
-
-
-
-
+[How to Enable Reporting on the App-V Client by Using Windows PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md)

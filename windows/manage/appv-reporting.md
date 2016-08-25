@@ -11,7 +11,8 @@ ms.prod: w10
 
 # About App-V Reporting
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Application Virtualization (App-V) includes a built-in reporting feature that helps you collect information about computers running the App-V client as well as information about virtual application package usage. You can use this information to generate reports from a centralized database.
 
@@ -291,7 +292,7 @@ To retrieve report information and create reports using App-V you must use one o
 
     **spProcessClientReport** is scheduled to run at midnight or 12:00 AM.
 
-    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. You should ensure that the Microsoft SQL Server Agent is set to **AutoStart**. For more information see [Autostart SQL Server Agent (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=287045).
+    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. You should ensure that the Microsoft SQL Server Agent is set to **AutoStart**. For more information see [Autostart SQL Server Agent (SQL Server Management Studio)](https://technet.microsoft.com/library/ms178130).
 
     The stored procedure is also created when using the App-V database scripts.
 
@@ -300,7 +301,7 @@ You should also ensure that the reporting server web service’s **Maximum Concu
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

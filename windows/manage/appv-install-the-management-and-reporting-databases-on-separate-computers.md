@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
 
-Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
+**Applies to**
+-   Windows Server 2016
 
 Use the following procedure to install the database server and management server on different computers. The computer you plan to install the database server on must be running a supported version of Microsoft SQL or the installation will fail.
 
@@ -85,24 +86,14 @@ After you complete the deployment, the **Microsoft SQL Server name**, **instance
 4.  For each database, copy the scripts to a share and modify them following the instructions in the readme file.
 
     **Note**  
-    For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).     
+    For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).     
 
 5.  Run the scripts on the computer running Microsoft SQL Server.
 
 ## Have a suggestion for App-V? 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Deploying App-V](appv-deploying-appv.md)
-
- 
-
- 
-
-
-
-
-

@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Migrating to App-V from previous versions
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 To migrate from App-V 4.x to App-V for Windows 10, you must upgrade to App-V 5.x first. 
 
@@ -161,7 +162,7 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 ## Converting packages created using a prior version of App-V
 
 
-Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion. App-V packages created with App-V 5.x don't need to be converted.
+Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses Windows PowerShell to convert packages and can help automate the process if you have many packages that require conversion. App-V packages created with App-V 5.x don't need to be converted.
 
 
 **Important**  
@@ -248,10 +249,10 @@ There is no direct method to upgrade to a full App-V infrastructure. Use the inf
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for performing App-V migration tasks
 
 - [Operations for App-V](appv-operations.md)
 
-- [A simplified Microsoft App-V Management Server upgrade procedure](http://go.microsoft.com/fwlink/p/?LinkId=786330)
+- [A simplified Microsoft App-V 5.1 Management Server upgrade procedure](https://blogs.technet.microsoft.com/appv/2015/09/23/a-simplified-microsoft-app-v-5-1-management-server-upgrade-procedure/)

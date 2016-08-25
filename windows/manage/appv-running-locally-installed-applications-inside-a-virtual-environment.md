@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 You can run a locally installed application in a virtual environment, alongside applications that have been virtualized by using Microsoft Application Virtualization (App-V). You might want to do this if you:
 
@@ -23,7 +24,7 @@ Use any of the following methods to open a local application inside the App-V vi
 
 -   [RunVirtual registry key](#bkmk-runvirtual-regkey)
 
--   [Get-AppvClientPackage PowerShell cmdlet](#bkmk-get-appvclientpackage-posh)
+-   [Get-AppvClientPackage Windows PowerShell cmdlet](#bkmk-get-appvclientpackage-posh)
 
 -   [Command line switch /appvpid:&lt;PID&gt;](#bkmk-cl-switch-appvpid)
 
@@ -101,7 +102,7 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
     @="aaaaaaaa-bbbb-cccc-dddd-eeeeeeee_11111111-2222-3333-4444-555555555
     ```
 
-## <a href="" id="bkmk-get-appvclientpackage-posh"></a>Get-AppvClientPackage PowerShell cmdlet
+## <a href="" id="bkmk-get-appvclientpackage-posh"></a>Get-AppvClientPackage Windows PowerShell cmdlet
 
 
 You can use the **Start-AppVVirtualProcess** cmdlet to retrieve the package name and then start a process within the specified package's virtual environment. This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
@@ -149,7 +150,7 @@ This method lets you launch any command within the context of an App-V package, 
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Release Notes for App-V for Windows 10, version 1607
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 The following are known issues in Application Virtualization (App-V) for Windows 10, version 1607.
  
@@ -120,13 +121,13 @@ When you run Repair-AppvClientConnectionGroup, the following error is displayed,
 
 -   Repair packages individually using the Repair-AppvClientPackage command rather than the Repair-AppvClientConnectionGroup command.
 
-    Determine which packages are available to users and then run the Repair-AppvClientPackage command once for each package. Use PowerShell cmdlets to do the following:
+    Determine which packages are available to users and then run the **Repair-AppvClientPackage** command once for each package. Use Windows PowerShell cmdlets to do the following:
 
     1.  Get all the packages in a connection group.
 
     2.  Check to see if each package is currently published.
 
-    3.  If the package is currently published, run Repair-AppvClientPackage on that package.
+    3.  If the package is currently published, run **Repair-AppvClientPackage** on that package.
 
 ## Icons not displayed properly in Sequencer
 
@@ -161,7 +162,7 @@ The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

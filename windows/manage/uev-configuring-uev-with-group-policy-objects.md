@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Configuring UE-V with Group Policy Objects
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Some User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. The Group Policy administrative templates for these settings are included in Windows 10, version 1607. 
 
@@ -162,7 +163,7 @@ In addition, Group Policy settings are available for many desktop applications a
 
  
 
-For more information about synchronizing Windows apps, see [Windows App List](http://technet.microsoft.com/library/dn458925.aspx#win8applist).
+For more information about synchronizing Windows apps, see [Windows App List](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md#win8applist).
 
 **To configure computer-targeted Group Policy settings**
 
@@ -190,7 +191,7 @@ The UE-V service uses the following order of precedence to determine synchroniza
 
 ## Have a suggestion for UE-V?
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

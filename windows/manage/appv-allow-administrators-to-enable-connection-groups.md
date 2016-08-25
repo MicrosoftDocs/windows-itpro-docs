@@ -11,14 +11,13 @@ ms.prod: w10
 
 # How to Allow Only Administrators to Enable Connection Groups
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 You can configure the App-V client so that only administrators (not end users) can enable or disable connection groups. In earlier versions of App-V, you could not prevent end users from performing these tasks.
 
-**Note**  
-**This feature is supported starting in App-V 5.0 SP3.**
-
- 
+**Note**<br>
+This feature is supported starting in App-V 5.0 SP3.
 
 Use one of the following methods to allow only administrators to enable or disable connection groups.
 
@@ -40,32 +39,22 @@ Use one of the following methods to allow only administrators to enable or disab
 <p><strong>Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>PowerShell cmdlet</p></td>
-<td align="left"><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>–RequirePublishAsAdmin</strong> parameter.</p>
+<td align="left"><p>Windows PowerShell cmdlet</p></td>
+<td align="left"><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>-RequirePublishAsAdmin</strong> parameter.</p>
 <p>Parameter values:</p>
 <ul>
 <li><p>0 - False</p></li>
 <li><p>1 - True</p></li>
 </ul>
-<p><strong>Example:</strong>: Set-AppvClientConfiguration –RequirePublishAsAdmin1</p></td>
+<p>Example: <strong>Set-AppvClientConfiguration -RequirePublishAsAdmin 1</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+## Have a suggestion for App-V?
 
-**Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Managing Connection Groups](appv-managing-connection-groups.md)
-
- 
-
- 
-
-
-
-
-

@@ -11,13 +11,14 @@ ms.prod: w10
 
 # How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Deploying packages and connection groups using the App-V publishing server is helpful because it offers single-point management and high scalability.
 
 Use the following steps to configure the App-V client to receive updates from the publishing server.
 
-**Note**  
+**Note**<br>
 For the following procedures the management server was installed on a computer named **MyMgmtSrv**, and the publishing server was installed on a computer named **MyPubSrv**.
 
  
@@ -28,56 +29,37 @@ For the following procedures the management server was installed on a computer n
 
 2.  To open the management console click the following link, open a browser and type the following: http://MyMgmtSrv/AppvManagement/Console.html in a web browser, and import, publish, and entitle all the packages and connection groups which will be necessary for a particular set of users.
 
-3.  On the computer running the App-V client, open an elevated PowerShell command prompt, run the following command:
+3.  On the computer running the App-V client, open an elevated Windows PowerShell command prompt, and run the following command:
 
-    **Add-AppvPublishingServer  -Name  ABC  -URL  http:// MyPubSrv/AppvPublishing**
+    `Add-AppvPublishingServer -Name ABC -URL http://MyPubSrv/AppvPublishing`
 
     This command will configure the specified publishing server. You should see output similar to the following:
-
+    
+    ```
     Id                        : 1
-
     SetByGroupPolicy          : False
-
     Name                      : ABC
-
     URL                       : http:// MyPubSrv/AppvPublishing
-
     GlobalRefreshEnabled      : False
-
     GlobalRefreshOnLogon      : False
-
     GlobalRefreshInterval     : 0
-
     GlobalRefreshIntervalUnit : Day
-
     UserRefreshEnabled        : True
-
     UserRefreshOnLogon        : True
-
     UserRefreshInterval       : 0
-
     UserRefreshIntervalUnit   : Day
+    ```
 
-    The returned Id – in this case 1
+4.  On the computer running the App-V client, open a Windows PowerShell command prompt, and type the following command:
 
-4.  On the computer running the App-V client, open a PowerShell command prompt, and type the following command:
-
-    **Sync-AppvPublishingServer  -ServerId  1**
+    `Sync-AppvPublishingServer -ServerId 1`
 
     The command will query the publishing server for the packages and connection groups that need to be added or removed for this particular client based on the entitlements for the packages and connection groups as configured on the management server.
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Operations for App-V](appv-operations.md)
-
- 
-
- 
-
-
-
-
-
