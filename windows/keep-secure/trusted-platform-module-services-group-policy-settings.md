@@ -172,7 +172,7 @@ For each standard user two thresholds apply. Exceeding either threshold will pre
 The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode, it is global for all users (including administrators) and for Windows features 
 such as BitLocker Drive Encryption..
 
-An administrator with the TPM Owner Password can fully reset the TPM's hardware lockout logic by using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
+An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
 
 If you do not configure this policy setting, a default value of 9 is used. A value of zero means that the operating system will not allow standard users to send commands to the TPM, which might cause an authorization failure.
 
