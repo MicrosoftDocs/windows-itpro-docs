@@ -18,50 +18,17 @@ author: greg-lindsay
 
 This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Detailed steps are provided for setting up the test lab, and for deploying Windows 10 under common scenarios with current deployment tools. 
 
-The following topics are available in this guide:
+The following topics and procedures are provided in this guide:
 
-<table border="0" cellpadding="2">
-    <tr>
-        <td BGCOLOR="#a0e4fa">Topic</td>
-        <td BGCOLOR="#a0e4fa">Description</td>
-    <tr>
-        <td>[Overview of procedures](#overview-of-procedures)</td>
-        <td>A list of procedures provided in this guide.</td>
-    </tr>
-    <tr>
-        <td>[Hardware and software requirements](#hardware-and-software-requirements)</td>
-        <td>Prerequisites to complete this guide.</td>
-    </tr>
-    <tr>
-        <td>[Lab setup](#lab-setup)</td>
-        <td>A diagram of the PoC environment.</td>
-    </tr>
-    <tr>
-        <td>[Configure the PoC environment](#configure-the-poc-environment)</td>
-        <td>Step by step instructions to configure the PoC environment.</td>
-    </tr>
-    </tr>
-     <tr>
-        <td>[Step by step: Deploy Windows 10](#windows-10-poc-guides)</td>
-        <td>Detailed, step by step instructions to demonstrate a Windows 10 deployment.</td>
-    </tr>
-    <tr>
-        <td>[Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2)</td>
-        <td>Instructions for configuring a Hyper-V host on Windows Server 2008 R2.</td>
-    </tr>    
-</table>
-
-## Overview of procedures
-
-The following procedures are documented in this guide:
-
-1. Configure an internal network on a Hyper-V host computer.
-2. Download a Windows Server evaluation VHD for use in the lab.
-3. Convert a physical computer to VHD using the Disk2vhd utility.
-4. Download a Windows 10 Enterprise evaluation .iso file.
-5. Configure Windows Server virtual machines.
-6. Download and install tools.
-7. Upgrade the client VM to Windows 10 Enterprise.
+- [Hardware and software requirements](#hardware-and-software-requirements): Prerequisites to complete this guide.<BR>
+- [Lab setup](#lab-setup): A description and diagram of the PoC environment that is configured.<BR>
+- [Configure the PoC environment](#configure-the-poc-environment): Step by step guidance for the following procedures:
+    - [Verify support and install Hyper-V](#verify-support-and-install-hyper-v): Verify that installation of Hyper-V is supported, and install the Hyper-V server role.
+    - [Download VHD and ISO files](#download-vhd-and-iso-files): Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.
+    - [Convert PC to VHD](#convert-pc-to-vhd): Convert a physical computer on your network to a VHDX file and prepare it to be used on the Hyper-V host.
+    - [Configure Hyper-V](#configure-hyper-v): Create virtual switches, determine available RAM for virtual machines, and add virtual machines.
+    - [Configure VHDs](#configure-vhds): Start virtual machines and configure all services and settings.
+    - [Verify the configuration (optional)](#verify-the-configuration-optional): Verify network connectivity and services in the PoC environment.
 
 ## Hardware and software requirements
 
@@ -302,11 +269,11 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
 
     ```
     $maxRAM = 2700MB
-    New-VM –Name "2012R2-DC1" –VHDPath c:\vhd\2012R2-poc-1.vhd -SwitchName poc-internal
-    Set-VMMemory -VMName "2012R2-DC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
-    New-VM –Name "2012R2-SRV1" –VHDPath c:\vhd\2012R2-poc-2.vhd -SwitchName poc-internal
-    Add-VMNetworkAdapter -VMName "2012R2-SRV1" -SwitchName "poc-external"
-    Set-VMMemory -VMName "2012R2-SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
+    New-VM –Name "DC1" –VHDPath c:\vhd\2012R2-poc-1.vhd -SwitchName poc-internal
+    Set-VMMemory -VMName "DC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
+    New-VM –Name "SRV1" –VHDPath c:\vhd\2012R2-poc-2.vhd -SwitchName poc-internal
+    Add-VMNetworkAdapter -VMName "SRV1" -SwitchName "poc-external"
+    Set-VMMemory -VMName "SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     New-VM –Name "PC1" –VHDPath c:\vhd\w7.vhdx -SwitchName poc-internal
     Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     ```
@@ -315,18 +282,19 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
 1. Open an elevated Windows PowerShell window on the Hyper-V host and start the first VM by typing the following command:
 
     ```
-    Start-VM 2012R2-DC1
+    Start-VM DC1
     ```
 2. Wait for the VM to complete starting up, and then connect to it either using the Hyper-V Manager console (virtmgmt.msc) or using an elevated command prompt on the Hyper-V host:
     ```
-    vmconnect localhost 2012R2-DC1
+    vmconnect localhost DC1
     ```
 3. Accept the default settings, read license terms and accept them, provide an administrator password of **pass@word1**, and click **Finish**. 
-4. If the VM is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." At an elevated Windows PowerShell prompt on the VM, type the following commands to provide a new hostname and configure a static IP address and gateway:
+4. If DC1 is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." At an elevated Windows PowerShell prompt on DC1, type the following commands to provide a new hostname and configure a static IP address and gateway:
 
     ```
     Rename-Computer DC1
     New-NetIPAddress –InterfaceAlias Ethernet –IPAddress 192.168.0.1 –PrefixLength 24 -DefaultGateway 192.168.0.2
+    Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses 192.168.0.1,192.168.0.2
     ```
     >The default gateway will be added to a member server at 192.168.0.2 later in this guide.
 5. Install the Active Directory Domain Services role by typing the following command at an elevated Windows PowerShell prompt:
@@ -335,13 +303,13 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Install-WindowsFeature -Name AD-Domain-Services -IncludeAllSubFeature -IncludeManagementTools
     ```
 
-6. Before promoting the server to a Domain Controller, you must reboot so that the name change in step 3 above takes effect:
+6. Before promoting DC1 to a Domain Controller, you must reboot so that the name change in step 3 above takes effect:
 
     ```
     Restart-Computer
     ```
 
-7. When the VM has rebooted, sign in again and open an elevated Windows PowerShell prompt. Now you can promote the server to be a domain controller. The directory services restore mode password must be entered as a secure string:
+7. When DC1 has rebooted, sign in again and open an elevated Windows PowerShell prompt. Now you can promote the server to be a domain controller. The directory services restore mode password must be entered as a secure string:
 
     ```
     $pass = "pass@word1" | ConvertTo-SecureString -AsPlainText -Force
@@ -368,25 +336,25 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     ```
     New-ADUser -Name "User1" -UserPrincipalName user1 -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
     ```
-11. Minimize the 2012-DC1 VM window but **do not stop** the VM.
+11. Minimize the DC1 VM window but **do not stop** the VM.
 
     Next, the client VM will be started and joined to the contoso.com domain. This is done before adding a gateway to the PoC network so that there is no danger of duplicate DNS registrations for the physical client and its cloned VM in the corporate domain.
 
-12. Using an elevated Windows PowerShell prompt on the Hyper-V host, start the client VM, and connect to it:
+12. Using an elevated Windows PowerShell prompt on the Hyper-V host, start the client VM (PC1), and connect to it:
     ```
     Start-VM PC1
     vmconnect localhost PC1
     ```
-13. Sign on to the client VM using an account that has local administrator rights.<BR> 
-    >The client VM will be disconnected from its current domain, so you cannot use a domain account to sign on unless these credentials are cached and the use of cached credentials is permitted by Group Policy. If cached credentials are available and permitted, you can use these credentials to sign in.
-14. After signing in, the operating system detects that it is running in a new environment. New drivers will be automatically installed, including the network adapter driver. The network adapter driver must be updated before you can proceed, so that you will be able to join the contoso.com domain. Depending on the resources allocated to the VM, installing the network adapter driver might take a few minutes.
+13. Sign on to PC1 using an account that has local administrator rights.<BR> 
+    >PC1 will be disconnected from its current domain, so you cannot use a domain account to sign on unless these credentials are cached and the use of cached credentials is permitted by Group Policy. If cached credentials are available and permitted, you can use these credentials to sign in.
+14. After signing in, the operating system detects that it is running in a new environment. New drivers will be automatically installed, including the network adapter driver. The network adapter driver must be updated before you can proceed, so that you will be able to join the contoso.com domain. Depending on the resources allocated to PC1, installing the network adapter driver might take a few minutes.
 
     ![PoC](images/installing-drivers.png)
 
     >If the client was configured with a static address, you must change this to a dynamic one so that it can obtain a DHCP lease. 
 
 15. When the new network adapter driver has completed installation, you will receive an alert to set a network location for the contoso.com network. Select **Work network** and then click **Close**. When you receive an alert that a restart is required, click **Restart Later**.
-16. Open an elevated Windows PowerShell prompt on the client VM and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller.
+16. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller.
     
     ```
     ipconfig
@@ -427,14 +395,14 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Add-Computer -DomainName contoso -Credential $cred
     Restart-Computer
     ```
-    >The VM client is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected.
+    >PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. We have not also renamed PC1 to "PC1" here so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
 
-18. After the computer restarts, sign in to the contoso.com domain with the (user1) account you created in step 8.
-19. Minimize the client VM and but do not turn it off while the second Windows Server 2012 R2 VM is configured. This ensures that the Hyper-V host has enough resources to run all VMs simultaneously. Next, the member server VM will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
+18. After PC1 restarts, sign in to the contoso.com domain with the (user1) account you created in step 8.
+19. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This ensures that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
 20. On the Hyper-V host computer at an elevated Windows PowerShell prompt, type the following commands:
     ```
-    Start-VM 2012R2-SRV1
-    vmconnect localhost 2012R2-SRV1
+    Start-VM SRV1
+    vmconnect localhost SRV1
     ```
 21. Accept the default settings, read license terms and accept them, provide an administrator password of **pass@word1**, and click **Finish**. When you are prompted about finding PCs, devices, and content on the network, click **Yes**.
 22. Sign in to the member server VM using the administrator account, open an elevated Windows PowerShell prompt, and type the following commands:
@@ -448,7 +416,7 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Add-Computer -DomainName contoso -Credential $cred
     Restart-Computer
     ```
-23. Sign in to the contoso.com domain on the member server VM using the domain administrator account, open an elevated Windows PowerShell prompt, and type the following commands:
+23. Sign in to the contoso.com domain on SRV1 using the domain administrator account, open an elevated Windows PowerShell prompt, and type the following commands:
     ```
     Install-WindowsFeature -Name DNS -IncludeManagementTools
     Install-WindowsFeature -Name Routing -IncludeManagementTools
@@ -458,7 +426,7 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     cmd /c netsh routing ip nat add interface name="Ethernet" mode=PRIVATE
     cmd /c netsh routing ip nat add interface name="Internal" mode=PRIVATE
     ```
-    > The previous commands assume that network interfaces were added to the VM in the order specified by this guide, which results in an interface alias of "Ethernet" for the private interface and an interface alias of "Ethernet 2" for the public interface. If the interfaces on your VM are not named the same, you must adjust these commands appropriately.
+    >The previous commands assume that network interfaces were added to the SRV1 VM in the order specified by this guide, resulting in an interface alias of "Ethernet" for the private interface and an interface alias of "Ethernet 2" for the public interface. If the interfaces on SRV1 are not named the same, you must adjust these commands appropriately.
 
     To view a list of interfaces and their associated interface aliases on the VM, you use the Get-NetAdapter cmdlet. See the following example:
 
@@ -470,24 +438,70 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Ethernet 2                Microsoft Hyper-V Network Adapter #2         14 Up           00-15-5D-83-26-06         1 Gbps
     Ethernet                  Microsoft Hyper-V Network Adapter            12 Up           00-15-5D-83-26-05        10 Gbps
     ``` 
-24. The DNS server role was installed on the member server VM so that we can forward from the DC to the member server to resolve Internet names without having to configure a forwarder outside the PoC network.  The last step to configure network services on the PoC network is to add this forwarder. To add a server-level DNS forwarder on the DC, type the following command at an elevated command prompt on the domain controller VM:
+24. The DNS server role was installed on SRV1 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network.  The last step to configure network services on the PoC network is to add this DNS forwarder. To add a server-level DNS forwarder on DC1, type the following command at an elevated command prompt on DC1:
     ```
     Add-DnsServerForwarder -IPAddress 192.168.0.2
     ```
-25. If your corporate network has a firewall that filters recursive DNS queries, you might be forced to configure a DNS forwarder outside the PoC network in order to resolve Internet names. To do this, open an elevated Windows PowerShell prompt on the member server VM and type the following commands:
+25. If your corporate network has a firewall that filters recursive DNS queries, you might be forced to configure a DNS forwarder outside the PoC network in order to resolve Internet names. To do this, open an elevated Windows PowerShell prompt on SRV1 and type the following commands:
     ```
     Add-DnsServerForwarder -IPAddress (Get-DnsClientServerAddress -InterfaceAlias "Ethernet 2").ServerAddresses
     ```   
 26. Verify that all three VMs on the PoC network can reach the Internet.
-27. Because the client computer has different hardware after coping it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on the client VM:
+27. Because the client computer has different hardware after coping it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
     ```
     slmgr -rearm
     Restart-Computer
     ```
 
-## Install tools
+## Verify the configuration (optional)
 
+Use the following procedures to verify that the PoC environment is configured properly and working as expected.
 
+1. On DC1, open an elevated Windows PowerShell prompt and type the following commands:
+
+    ```
+    Get-Service NTDS,DNS,DHCP
+    DCDiag -a
+    Get-DnsServerResourceRecord -ZoneName contoso.com -RRType A
+    Get-DnsServerForwarder
+    Resolve-DnsName -Server dc1.contoso.com -Name www.microsoft.com
+    Get-DhcpServerInDC
+    Get-DhcpServerv4Statistics
+    ipconfig /all
+    ```
+    **Get-Service** displays a status of "Running" for all three services.<BR>
+    **DCDiag** displays "passed test" for all tests.<BR>
+    **Get-DnsServerResourceRecord** displays the correct DNS address records for DC1, SRV1, and the computername of PC1. Additional address records for the zone apex (@), DomainDnsZones, and ForestDnsZones will also be registered.<BR>
+    **Get-DnsServerForwarder** displays a single forwarder of 192.168.0.2.<BR>
+    **Resolve-DnsName** displays public IP address results for www.microsoft.com.<BR>
+    **Get-DhcpServerInDC** displays 192.168.0.1, dc1.contoso.com.<BR>
+    **Get-DhcpServerv4Statistics** displays 1 scope with 2 addresses in use (these belong to PC1 and the Hyper-V host).<BR>
+    **ipconfig** displays a primary DNS suffix and suffix search list of contoso.com, IP address of 192.168.0.1, subnet mask of 255.255.255.0, default gateway of 192.168.0.2, and DNS server addresses of 192.168.0.1 and 192.168.0.2. 
+
+2. On SRV1, open an elevated Windows PowerShell prompt and type the following commands:
+
+    ```
+    Get-Service DNS,RemoteAccess
+    Get-DnsServerForwarder
+    Resolve-DnsName -Server dc1.contoso.com -Name www.microsoft.com
+    ipconfig /all
+    netsh int ipv4 show address
+    ```
+    **Get-Service** displays a status of "Running" for both services.<BR>
+    **Get-DnsServerForwarder** either displays no forwarders, or displays a list of forwarders you are required to use so that SRV1 can resolve Internet names.<BR>
+    **Resolve-DnsName** displays public IP address results for www.microsoft.com.<BR>
+    **ipconfig** displays a primary DNS suffix of contoso.com. The suffix search list contains contoso.com and your corporate domain. Two ethernet adapters are shown: Ethernet adapter "Ethernet" has an IP addresses of 192.168.0.2, subnet mask of 255.255.255.0, no default gateway, and DNS server addresses of 192.168.0.1 and 192.168.0.2. Ethernet adapter "Ethernet 2" has an IP address, subnet mask, and default gateway configured by DHCP on your corporate network.
+    **netsh** displays three interfaces on the computer: interface "Ethernet 2" with DHCP enabled = Yes and IP address assigned by your corporate network, interface "Ethernet" with DHCP enabled = No and IP address of 192.168.0.2, and interface "Loopback Pseudo-Interface 1" with IP address of 127.0.0.1.
+
+3. On PC1, open an elevated Windows PowerShell prompt and type the following commands:
+
+    ```
+    whoami
+    hostname
+    nslookup www.microsoft.com
+    ping -n 1 dc1.contoso.com
+
+    ```
 
 ## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
 
