@@ -40,6 +40,10 @@ Use the Windows Store for Business to find apps for your organization. You can a
 <td align="left"><p>Store for Business has thousands of apps from many different categories.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>[Acquire apps in the Windows Store for Business](acquire-apps-windows-store-for-business.md)</p></td>
+<td align="left"><p>You can acquire apps from the Windows Store for Business for your employees.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>[Working with line-of-business apps](working-with-line-of-business-apps.md)</p></td>
 <td align="left"><p>Your company can make line-of-business (LOB) applications available through Store for Business. These apps are custom to your company – they might be internal business apps, or apps specific to your business or industry.</p></td>
 </tr>
