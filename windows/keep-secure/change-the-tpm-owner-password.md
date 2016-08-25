@@ -33,7 +33,7 @@ Instead of changing your owner password, you can also use the following options 
 
     >**Important:**  Clearing the TPM can result in the loss of data. To avoid data loss, make sure you have a backup or recovery method for any data protected or encrypted by the TPM.
      
--   **Turn off the TPM**   If you want to keep all existing keys and data intact, and you want to disable the services that are provided by the TPM, you can turn it off. For more info, see [Initialize and Configure Ownership of the TPM](initialize-and-configure-ownership-of-the-tpm.md#bkmk-onoff).  This option is only available for TPM 1.2.
+-   **Turn off the TPM**   If you want to keep all existing keys and data intact, and you want to disable the services that are provided by the TPM, you can turn it off. For more info, see [Initialize and Configure Ownership of the TPM](initialize-and-configure-ownership-of-the-tpm.md#bkmk-onoff). This option is only available for TPM 1.2.
 
 ## Change the TPM owner password
 
