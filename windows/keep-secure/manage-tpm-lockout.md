@@ -19,7 +19,7 @@ This topic for the IT professional describes how to manage the lockout feature f
 
 The TPM will lock itself to prevent tampering or malicious attacks. TPM lockout often lasts for a variable amount of time or until the computer is turned off. While the TPM is in lockout mode, it generally returns an error message when it receives commands that require an authorization value. One exception is that the TPM always allows the owner at least one attempt to reset the TPM lockout when it is in lockout mode.
 
-TPM ownership is taken upon first boot by Windows.  By default Windows does not retain the TPM Owner Password.
+TPM ownership is taken upon first boot by Windows. By default, Windows does not retain the TPM owner password.
 
 In some cases, encryption keys are protected by a TPM by requiring a valid authorization value to access the key. A common example is configuring BitLocker Drive Encryption to use the TPM plus PIN key protector. In this scenario, the user must type the correct PIN during the boot process to access the volume encryption key protected by the TPM. To prevent malicious users or software from discovering authorization values, TPMs implement protection logic. The protection logic is designed to slow or stop responses from the TPM if it detects that an entity might be trying to guess authorization values.
 
