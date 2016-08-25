@@ -156,13 +156,7 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
     
     Clearing the TPM resets it to factory defaults and turns it off. You will lose all created keys and data that is protected by those keys.
      
-4.  In the **Clear the TPM security hardware** dialog box, select one of the following methods to enter your password and clear the TPM:
-    -   If you have the removable storage device with your saved TPM owner password, insert it, and click **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, use **Browse** to navigate to the .tpm file that is saved on your removable storage device. Click **Open**, and then click **Clear TPM**.
-    -   If you do not have the removable storage device with your saved password, click **I want to enter the owner password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and click **Clear TPM**.
-    -   If you do not know your TPM owner password, click **I don't have the TPM owner password**, and follow the instructions that are provided to clear the TPM without entering the password.
-    >**Note:**  If you have physical access to the computer, you can clear the TPM and perform a limited number of management tasks without entering the TPM owner password.
-     
-    The status of your TPM is displayed under **Status** in TPM MMC.
+4.  You will be prompted to restart the computer. During the restart, you will be prompted by the BIOS or UEFI to press a button to confirm you wish to clear the TPM.
 
 ## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 
