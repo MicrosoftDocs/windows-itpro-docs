@@ -67,9 +67,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 </tbody>
 </table>
 
- 
-
-For information about sequencing, see [How to Sequence a New Application with App-V](https://technet.microsoft.com/itpro/windows/manage/appv-sequence-a-new-application).
+For information about sequencing, see [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
 ## What’s in the appv file?
 
