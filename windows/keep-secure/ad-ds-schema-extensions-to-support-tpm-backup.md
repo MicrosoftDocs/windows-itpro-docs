@@ -12,7 +12,9 @@ author: brianlic-msft
 # AD DS schema extensions to support TPM backup
 
 **Applies to**
--   Windows 10
+-   Windows 10 (builds 10240 and 10568 only)
+**Does not apply to**
+- Windows 10 Anniversary Edition or later
 
 This topic provides more details about this change and provides template schema extensions that you can incorporate into your organization.
 
