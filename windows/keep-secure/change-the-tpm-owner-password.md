@@ -16,14 +16,14 @@ author: brianlic-msft
 
 This topic for the IT professional describes how to change the password or PIN for the owner of the Trusted Platform Module (TPM) that is installed on your system.
 
-## About the TPM Owner Password
-Starting with Windows 10 Anniversary Edition, Windows will not retain the TPM Owner Password when provisioning the TPM.  The password will be set to a random high entropy value and then discarded.
+## About the TPM owner password
+Starting with Windows 10, version 1607 , Windows will not retain the TPM owner password when provisioning the TPM.  The password will be set to a random high entropy value and then discarded.
 
-In order to retain the TPM Owner Password, you will need to set the registry key 'HKLM\Software\Policies\Microsoft\TPM' [REG_DWORD] 'OSManagedAuthLevel' to 4.  The default value for this key is 2, and unless changed to 4 before the TPM is provisioned the Owner Password will not be saved.  Microsoft strongly recommends that you do not change the default value of this registry key in order to retain the Owner Password.
+In order to retain the TPM owner password, you will need to set the registry key 'HKLM\Software\Policies\Microsoft\TPM' [REG_DWORD] 'OSManagedAuthLevel' to 4.  The default value for this key is 2, and unless it is changed to 4 before the TPM is provisioned, the owner password will not be saved.  Microsoft strongly recommends that you do not change the default value of this registry key in order to retain the owner password.
 
-Only one Owner Password exists per TPM. The TPM Owner Password allows the ability to enable, disable, or clear the TPM without having physical access to the computer, for example, by using the command-line tools remotely. The TPM Owner Password also allows manipulation of the TPM Dictionary Attack logic.  Taking ownership of the TPM  is performed by Windows as part of the provisioning process on each boot. Ownership can change when you share the password or clear your ownership of the TPM so someone else can initialize it.
+Only one owner password exists for each TPM. The TPM owner password allows the ability to enable, disable, or clear the TPM without having physical access to the computer, for example, by using the command-line tools remotely. The TPM owner password also allows manipulation of the TPM dictionary attack logic.  Taking ownership of the TPM is performed by Windows as part of the provisioning process on each boot. Ownership can change when you share the password or clear your ownership of the TPM so someone else can initialize it.
 
-Without the Owner Password you can still perform all the above actions via a physical presence confirmation from UEFI.
+Without the owner password you can still perform all the preceding actions by means of a physical presence confirmation from UEFI.
 
 **Other TPM management options**
 
@@ -41,7 +41,7 @@ The following procedure provides the steps that are necessary to change the TPM 
 
 **To change the TPM owner password**
 
-If you have opted specifically to preserve the TPM Owner Password, you can use the saved Password to change to a new Password.
+If you have opted specifically to preserve the TPM owner password, you can use the saved password to change to a new password.
 
 1.  Open the TPM MMC (tpm.msc). If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
 2.  In the **Actions** pane, click **Change Owner Password**.
