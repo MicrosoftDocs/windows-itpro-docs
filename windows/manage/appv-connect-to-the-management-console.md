@@ -17,7 +17,7 @@ Use the following procedure to connect to the App-V Management Console.
 
 **To connect to the App-V Management Console**
 
-1.  Open Internet Explorer browser and type the address for the App-V. For example, **http://\<_management server name_\>:\<_management service port number_\>/console.html**.
+1.  Open Internet Explorer browser and type the address for the App-V Management server. For example, **http://\<_management server name_\>:\<_management service port number_\>/console.html**.
 
 2.  To view different sections of the console, click the desired section in the navigation pane.
 

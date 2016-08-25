@@ -40,7 +40,7 @@ For more about adding or upgrading packages, see [How to Add or Upgrade Packages
 
 1. Create the connection group XML document.
 
-2. For the package to be upgraded, set the **Package** tag attribute **VersionID** to an asterisk (**\***).
+2. For the package to be upgraded, set the **Package** tag attribute **VersionID** to an asterisk (<strong>*</strong>).
 
 3. Use the following cmdlet to add the connection group, and include the path to the connection group XML document:
 
