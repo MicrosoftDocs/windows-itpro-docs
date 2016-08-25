@@ -120,7 +120,7 @@ The lab architecture is summarized in the following diagram:
 ![PoC](images/poc.png)
 
 **Note**:
->If you have an existing Hyper-V host, you can use this host if desired and skip the Hyper-V installation section in this guide. If your Hyper-V host is running Windows Server 2008 R2, you must enable PowerShell functionality to complete the steps in this guide. 
+>If you have an existing Hyper-V host, you can use this host if desired and skip the Hyper-V installation section in this guide.
 
 >The two Windows Server VMs can be combined into a single VM to conserve RAM and disk space if required. However, instructions in this guide assume two server systems are used. Using two servers enables Active Directory Domain Services and DHCP to be installed on a server that is not directly connected to the corporate network. This mitigates the risk of clients on the corporate network receiving DHCP leases from the PoC network (i.e. "rogue" DHCP), and limits NETBIOS service broadcasts to the corporate network.
 
