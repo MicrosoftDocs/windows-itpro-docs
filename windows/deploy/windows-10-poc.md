@@ -14,9 +14,14 @@ author: greg-lindsay
 
 -   Windows 10
 
+<U>**Are you interested**</U> in upgrading to Windows 10 ...but are not sure how some devices and apps will be affected?<BR>
+<U>**Did you know**</U> that you can test drive Windows 10 and check out the upgrade process for free without having to actually upgrade any production devices? 
+
+If you have a computer running Windows 8 or a later OS with 16GB of RAM, you have everything you need to quickly set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. To see how, keep reading.
+
 ## In this guide
 
-This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Detailed steps are provided for setting up the test lab, and for deploying Windows 10 under common scenarios with current deployment tools. 
+This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
 
 The following topics and procedures are provided in this guide:
 
@@ -28,7 +33,15 @@ The following topics and procedures are provided in this guide:
     - [Convert PC to VHD](#convert-pc-to-vhd): Convert a physical computer on your network to a VHDX file and prepare it to be used on the Hyper-V host.
     - [Configure Hyper-V](#configure-hyper-v): Create virtual switches, determine available RAM for virtual machines, and add virtual machines.
     - [Configure VHDs](#configure-vhds): Start virtual machines and configure all services and settings.
-    - [Verify the configuration (optional)](#verify-the-configuration-optional): Verify network connectivity and services in the PoC environment.
+
+The following optional topics are also available:
+- [Appendix A: Configuring Hyper-V on Windows Server 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2): Steps to configure a Hyper-V host running Windows Server 2008 R2.
+- [Appendix B: Verify the configuration](#verify-the-configuration): Verify and troubleshoot network connectivity and services in the PoC environment.
+
+When you have completed the steps in this guide, see the following guides for step by step instructions to deploy Windows 10 using the PoC environment under common scenarios with current deployment tools:
+
+- [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
+- [Deploy Windows 10 in a test lab using System Center](windows-10-poc-sccm.md)
 
 ## Hardware and software requirements
 
@@ -453,7 +466,50 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Restart-Computer
     ```
 
-## Verify the configuration (optional)
+
+
+## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
+
+If your Hyper-V host is running Windows Server 2008 R2, you can use the Hyper-V manager interface to configure Hyper-V, or you can use Hyper-V WMI. Some instructions to configure Hyper-V using WMI are also included in this section for convenience. 
+
+For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
+
+To install Hyper-V on Windows Server 2008 R2, use the Add-WindowsFeature cmdlet:
+
+```
+Add-WindowsFeature -Name Hyper-V
+```
+Use the following Windows PowerShell commands to create a virtual switch on Windows Server 2008 R2:
+
+```
+$SwitchFriendlyName = "poc-internal"
+$InternalEthernetPortFriendlyName = $SwitchFriendlyName
+$InternalSwitchPortFriendlyName = "poc"
+$SwitchName = [guid]::NewGuid().ToString()
+$InternalSwitchPortName = [guid]::NewGuid().ToString()
+$InternalEthernetPortName = [guid]::NewGuid().ToString()
+$NumLearnableAddresses = 1024
+$ScopeOfResidence = ""
+$VirtualSwitchManagementService = gwmi Msvm_VirtualSwitchManagementService -namespace "root\virtualization"
+$Result = $VirtualSwitchManagementService.CreateSwitch($SwitchName, $SwitchFriendlyName, $NumLearnableAddresses, $ScopeOfResidence) 
+$Switch = [WMI]$Result.CreatedVirtualSwitch 
+$Result = $VirtualSwitchManagementService.CreateSwitchPort($Switch, $InternalSwitchPortName, $InternalSwitchPortFriendlyName, $ScopeOfResidence)
+$InternalSwitchPort = [WMI]$Result.CreatedSwitchPort 
+$Result = $VirtualSwitchManagementService.CreateInternalEthernetPortDynamicMac($InternalEthernetPortName, $InternalEthernetPortFriendlyName)
+$InternalEthernetPort = [WMI]$Result.CreatedInternalEthernetPort
+$query = "Associators of {$InternalEthernetPort} Where ResultClass=CIM_LanEndpoint"
+$InternalLanEndPoint = gwmi -namespace root\virtualization -query $query
+$Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort, $InternalLanEndPoint)
+$filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
+$NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
+```
+
+Use the following Windows PowerShell commands to add VMs on Windows Server 2008 R2:
+
+```
+command here
+```
+## Appendix B: Verify the configuration
 
 Use the following procedures to verify that the PoC environment is configured properly and working as expected.
 
@@ -502,58 +558,6 @@ Use the following procedures to verify that the PoC environment is configured pr
     ping -n 1 dc1.contoso.com
 
     ```
-
-## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
-
-If your Hyper-V host is running Windows Server 2008 R2, you can use the Hyper-V manager interface to configure Hyper-V, or you can use Hyper-V WMI. Some instructions to configure Hyper-V using WMI are also included in this section for convenience. 
-
-For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
-
-To install Hyper-V on Windows Server 2008 R2, use the Add-WindowsFeature cmdlet:
-
-```
-Add-WindowsFeature -Name Hyper-V
-```
-Use the following Windows PowerShell commands to create a virtual switch on Windows Server 2008 R2:
-
-```
-$SwitchFriendlyName = "poc-internal"
-$InternalEthernetPortFriendlyName = $SwitchFriendlyName
-$InternalSwitchPortFriendlyName = "poc"
-$SwitchName = [guid]::NewGuid().ToString()
-$InternalSwitchPortName = [guid]::NewGuid().ToString()
-$InternalEthernetPortName = [guid]::NewGuid().ToString()
-$NumLearnableAddresses = 1024
-$ScopeOfResidence = ""
-$VirtualSwitchManagementService = gwmi Msvm_VirtualSwitchManagementService -namespace "root\virtualization"
-$Result = $VirtualSwitchManagementService.CreateSwitch($SwitchName, $SwitchFriendlyName, $NumLearnableAddresses, $ScopeOfResidence) 
-$Switch = [WMI]$Result.CreatedVirtualSwitch 
-$Result = $VirtualSwitchManagementService.CreateSwitchPort($Switch, $InternalSwitchPortName, $InternalSwitchPortFriendlyName, $ScopeOfResidence)
-$InternalSwitchPort = [WMI]$Result.CreatedSwitchPort 
-$Result = $VirtualSwitchManagementService.CreateInternalEthernetPortDynamicMac($InternalEthernetPortName, $InternalEthernetPortFriendlyName)
-$InternalEthernetPort = [WMI]$Result.CreatedInternalEthernetPort
-$query = "Associators of {$InternalEthernetPort} Where ResultClass=CIM_LanEndpoint"
-$InternalLanEndPoint = gwmi -namespace root\virtualization -query $query
-$Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort, $InternalLanEndPoint)
-$filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
-$NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
-```
-
-Use the following Windows PowerShell commands to add VMs on Windows Server 2008 R2:
-
-```
-command here
-```
-
-## Appendix B: Microsoft Virtual Machine Converter
-
-You can also use [Microsoft Virtual Machine Converter](https://www.microsoft.com/en-us/download/details.aspx?id=42497) (MVMC) to create VHDs from a physical computer. The MVMC utility has enhanced functionality compared to the Disk2vhd utility in that it can be run from any network location, enables you to specify both a remote source computer and remote destination Hyper-V host, and automatically configures and installs the VM on the Hyper-V host.  However, MVMC requires that the destination Hyper-V host be running the BITS compact server service, which is only available on Windows Server operating systems.  Therefore, you cannot use MVMC if Hyper-V is running on Windows 8 or Windows 10. If you choose to use the MVMC utility instead of disk2vhd, complete the steps in the [Configure Hyper-V](#configure-hyper-v) section first so that you can specify a virtual switch and allocate RAM appropriately to the destination VM when asked to specify these parameters in the MVMC utility.
-
-## Windows 10 PoC guides
-
-- [Step by step: Deploy Windows 10 PoC with System Center Configuration Manager](windows-10-poc-sccm.md)
-- [Step by step: Deploy Windows 10 PoC with the Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
-
 ## Related Topics
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
