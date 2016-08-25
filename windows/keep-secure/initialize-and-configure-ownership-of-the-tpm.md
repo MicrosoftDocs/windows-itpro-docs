@@ -106,7 +106,7 @@ Some systems may have multiple TPMs and the active TPM may be toggled in the BIO
 
 ## <a href="" id="bkmk-onoff"></a>Turn on or turn off the TPM
 
-Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.  This option is only available with TPM 1.2 and does not apply to TPM 2.0.
+Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC. This option is only available with TPM 1.2 and does not apply to TPM 2.0.
 
 ### <a href="" id="turn-on-the-tpm-"></a>Turn on the TPM
 
