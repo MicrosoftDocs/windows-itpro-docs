@@ -22,16 +22,16 @@ The TPM Services Group Policy settings are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-| Setting | Windows 10 Anniversary Edition | Windows 10 | Windows Server 2012 R2, Windows 8.1 and Windows RT | Windows Server 2012, Windows 8 and Windows RT | Windows Server 2008 R2 and Windows 7 | Windows Server 2008 and Windows Vista |
+| Setting | Windows 10, version 1607 | Windows 10, version 1511 and Windows 10, version 1507 | Windows Server 2012 R2, Windows 8.1 and Windows RT | Windows Server 2012, Windows 8 and Windows RT | Windows Server 2008 R2 and Windows 7 | Windows Server 2008 and Windows Vista |
 | - | - | - | - | - | - |
 | [Turn on TPM backup to Active Directory Domain Services](#bkmk-tpmgp-addsbu) | | X| X| X| X| X| 
-| [Configure the list of blocked TPM commands](#bkmk-tpmgp-clbtc)| x| X| X| X| X| X| 
-| [Ignore the default list of blocked TPM commands](#bkmk-tpmgp-idlb) | x| X| X| X| X| X| 
-| [Ignore the local list of blocked TPM commands](#bkmk-tpmgp-illb) | x| X| X| X| X| X| 
+| [Configure the list of blocked TPM commands](#bkmk-tpmgp-clbtc)| X| X| X| X| X| X| 
+| [Ignore the default list of blocked TPM commands](#bkmk-tpmgp-idlb) | X| X| X| X| X| X| 
+| [Ignore the local list of blocked TPM commands](#bkmk-tpmgp-illb) | X| X| X| X| X| X| 
 | [Configure the level of TPM owner authorization information available to the operating system](#bkmk-tpmgp-oauthos)| | X| X| X|||  
-| [Standard User Lockout Duration](#bkmk-tpmgp-suld)| x| X| X| X|||  
-| [Standard User Individual Lockout Threshold](#bkmk-tpmgp-suilt)| x| X| X| X|||  
-| [Standard User Total Lockout Threshold](#bkmk-tpmgpsutlt)| x| X| X| X||||
+| [Standard User Lockout Duration](#bkmk-tpmgp-suld)| X| X| X| X|||  
+| [Standard User Individual Lockout Threshold](#bkmk-tpmgp-suilt)| X| X| X| X|||  
+| [Standard User Total Lockout Threshold](#bkmk-tpmgpsutlt)| X| X| X| X||||
  
 ### <a href="" id="bkmk-tpmgp-addsbu"></a>Turn on TPM backup to Active Directory Domain Services
 
