@@ -41,7 +41,7 @@ This policy setting allows you to manage the Active Directory Domain Services (A
  
 TPM owner information includes a cryptographic hash of the TPM owner password. Certain TPM commands can be run only by the TPM owner. This hash authorizes the TPM to run these commands.
 
->**Important:**  To back up TPM owner information from a computer running Windows 10, Windows 8.1, or Windows 8, you might need to first set up appropriate schema extensions and access control settings on the domain so that the AD DS backup can succeed. Windows Server 2012 R2 and Windows Server 2012 include the required schema extensions by default. For more information, see [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md).  This functionality is discontinued starting with Windows 10 Anniversary Edition.
+>**Important:**  To back up TPM owner information from a computer running Windows 10, Windows 8.1, or Windows 8, you might need to first set up appropriate schema extensions and access control settings on the domain so that the AD DS backup can succeed. Windows Server 2012 R2 and Windows Server 2012 include the required schema extensions by default. For more information, see [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md). This functionality is discontinued starting with Windows 10, version 1607.
 
 If you enable this policy setting, TPM owner information will be automatically and silently backed up to AD DS when you use Windows to set or change a TPM owner password. When this policy setting is enabled, a TPM owner password cannot be set or changed unless the computer is connected to the domain and the AD DS backup succeeds.
 
