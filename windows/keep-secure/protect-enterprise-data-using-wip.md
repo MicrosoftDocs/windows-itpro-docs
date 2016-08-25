@@ -17,6 +17,9 @@ localizationpriority: high
 -   Windows 10, version 1607
 -   Windows 10 Mobile
 
+>**Important**<br>
+>To learn more about what features and functionality are supported in each Windows edition, see the [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare) 
+
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
 
 Windows Information Protection (WIP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. WIP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps. Finally, another data protection technology, Azure Rights Management also works alongside WIP to extend data protection for data that leaves the device, such as when email attachments are sent from an enterprise aware version of a rights management mail client.
