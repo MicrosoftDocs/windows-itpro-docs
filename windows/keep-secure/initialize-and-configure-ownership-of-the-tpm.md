@@ -106,13 +106,13 @@ Some systems may have multiple TPMs and the active TPM may be toggled in the BIO
 
 ## <a href="" id="bkmk-onoff"></a>Turn on or turn off the TPM
 
-Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.
+Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.  This option is only available with TPM 1.2 and does not apply to TPM 2.0.
 
 ### <a href="" id="turn-on-the-tpm-"></a>Turn on the TPM
 
 If the TPM has been initialized but has never been used, or if you want to use the TPM after you have turned it off, you can use the following procedure to turn on the TPM.
 
-**To turn on the TPM**
+**To turn on the TPM (TPM 1.2 Only)**
 
 1.  Open the TPM MMC (tpm.msc).
 2.  In the **Action** pane, click **Turn TPM On** to display the **Turn on the TPM Security Hardware** page. Read the instructions on this page.
@@ -125,7 +125,7 @@ If the TPM has been initialized but has never been used, or if you want to use t
 If you want to stop using the services that are provided by the TPM, you can use the TPM MMC to turn off the TPM. If you have the TPM owner password, physical access to the computer is not required to turn off the TPM. If you do not have the TPM owner password, you must have physical access to the 
 computer to turn off the TPM.
 
-**To turn off the TPM**
+**To turn off the TPM (TPM 1.2 only)**
 
 1.  Open the TPM MMC (tpm.msc).
 2.  In the **Action** pane, click **Turn TPM Off** to display the **Turn off the TPM security hardware** page.
