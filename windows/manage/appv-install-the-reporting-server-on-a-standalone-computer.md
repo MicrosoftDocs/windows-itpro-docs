@@ -16,10 +16,7 @@ ms.prod: w10
 
 Use the following procedure to install the reporting server on a standalone computer and connect it to the database.
 
-**Important**  
-Before performing the following procedure you should read and understand [About App-V Reporting](appv-reporting.md).
-
- 
+> **Important**&nbsp;&nbsp;Before performing the following procedure you should read and understand [About App-V Reporting](appv-reporting.md).
 
 **To install the reporting server on a standalone computer and connect it to the database**
 
