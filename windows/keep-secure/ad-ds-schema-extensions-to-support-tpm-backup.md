@@ -12,15 +12,17 @@ author: brianlic-msft
 # AD DS schema extensions to support TPM backup
 
 **Applies to**
--   Windows 10 (builds 10240 and 10568 only)
+-   Windows 10, version 1511
+-   Windows 10, version 1507
+
 **Does not apply to**
-- Windows 10 Anniversary Edition or later
+- Windows 10, version 1607 or later
 
 This topic provides more details about this change and provides template schema extensions that you can incorporate into your organization.
 
 ## Why a schema extension is needed
 
-The TPM owner authorization value is now stored in a separate object which is linked to the Computer object. This value was stored as a property in the Computer object itself for the default Windows Server 2008 R2 schemas. Windows Server 2012 domain controllers have the default schema to backup TPM owner authorization information in the separate object. If you are not upgrading your domain controller to Windows Server 2012 you need to extend the schema to support this change. If Active Directory backup of the TPM owner authorization value is enabled in a Windows Server 2008 R2 environment without extending the schema, the TPM provisioning will fail and the TPM will remain in a Not Ready state for computers running Windows 8. The following are the two schema extensions that you can use to bring your Windows Server 2008 R2 domain to parity with Windows Server 2012:
+The TPM owner authorization value is now stored in a separate object which is linked to the Computer object. This value was stored as a property in the Computer object itself for the default Windows Server 2008 R2 schema. Windows Server 2012 domain controllers have the default schema to backup TPM owner authorization information in the separate object. If you are not upgrading your domain controller to Windows Server 2012, you need to extend the schema to support this change. If Active Directory backup of the TPM owner authorization value is enabled in a Windows Server 2008 R2 environment without extending the schema, the TPM provisioning will fail and the TPM will remain in a Not Ready state for computers running Windows 8. The following are the two schema extensions that you can use to bring your Windows Server 2008 R2 domain to parity with Windows Server 2012:
 
 ### <a href="" id="tpmschemaextension-ldf-"></a>TpmSchemaExtension.ldf
 
