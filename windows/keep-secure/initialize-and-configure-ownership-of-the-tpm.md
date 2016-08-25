@@ -156,8 +156,8 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
     
     Clearing the TPM resets it to factory defaults and turns it off. You will lose all created keys and data that is protected by those keys.
      
-4.  You will be prompted to restart the computer.  On the restart you will be prompted by the BIOS or UEFI to press a button to confirm you wish to clear the TPM.
-5.  
+4.  You will be prompted to restart the computer. During the restart, you will be prompted by the BIOS or UEFI to press a button to confirm you wish to clear the TPM.
+
 ## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 
 If you are using Windows PowerShell to manage your computers, you can also manage the TPM by using Windows PowerShell. To install the TPM cmdlets, type the following command:
