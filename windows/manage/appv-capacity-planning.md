@@ -28,8 +28,8 @@ Before you design the App-V infrastructure, determine the project’s scope. The
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <thead>
 <tr class="header">
