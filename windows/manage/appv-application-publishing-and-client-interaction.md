@@ -232,7 +232,7 @@ The Package Store contains a pristine copy of the package files that have been s
 
 ### COW roaming
 
-The COW Roaming location described above stores changes to files and directories that are targeted to the typical %AppData% location or \\Users\\*<username>*\\AppData\\Roaming location. These directories and files are then roamed based on the operating system settings.
+The COW Roaming location described above stores changes to files and directories that are targeted to the typical %AppData% location or \\Users\\*&lt;username&gt;*\\AppData\\Roaming location. These directories and files are then roamed based on the operating system settings.
 
 ### COW local
 

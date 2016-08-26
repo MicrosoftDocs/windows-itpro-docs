@@ -19,9 +19,7 @@ Connection groups enable the applications within a package to interact with each
 **Note**  
 In some previous versions of App-V, connection groups were referred to as Dynamic Suite Composition.
 
- 
-
-**In this topic:**
+**In this section:**
 
 <table>
 <colgroup>
@@ -53,7 +51,14 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 <td align="left"><p>[How to Publish a Connection Group](appv-publish-a-connection-group.md)</p></td>
 <td align="left"><p>Explains how to publish a connection group.</p></td>
 </tr>
-</tbody>
+<tr class="odd">
+<td align="left"><p>[How to Make a Connection Group Ignore the Package Version](appv-configure-connection-groups-to-ignore-the-package-version.md)</p></td>
+<td align="left"><p>Explains how to configure a connection group to accept any version of a package, which simplifies package upgrades and reduces the number of connection groups you need to create.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>[How to Allow Only Administrators to Enable Connection Groups](appv-allow-administrators-to-enable-connection-groups.md)</p></td>
+<td align="left"><p>Explains how to configure the App-V client so that only administrators (not end users) can enable or disable connection groups.</p></td>
+</tr></tbody>
 </table>
 
  
