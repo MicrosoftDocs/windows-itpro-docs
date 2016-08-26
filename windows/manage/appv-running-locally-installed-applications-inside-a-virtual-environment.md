@@ -113,7 +113,7 @@ Use the following example syntax, and substitute the name of your package for **
 
 `Start-AppvVirtualProcess -AppvClientObject $AppVName cmd.exe`
 
-If you don’t know the exact name of your package, you can use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, you can use the command line <strong>Get-AppvClientPackage \*executable\*</strong>, where **executable** is the name of the application, for example:<br>Get-AppvClientPackage \*Word\*
 
 ## <a href="" id="bkmk-cl-switch-appvpid"></a>Command line switch /appvpid:&lt;PID&gt;
 
@@ -143,7 +143,7 @@ To get the package GUID and version GUID of your application, run the **Get-Appv
 
 -   Version ID of the desired package
 
-If you don’t know the exact name of your package, use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, use the command line <strong>Get-AppvClientPackage \*executable\*</strong>, where **executable** is the name of the application, for example:<br>Get-AppvClientPackage \*Word\*
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
