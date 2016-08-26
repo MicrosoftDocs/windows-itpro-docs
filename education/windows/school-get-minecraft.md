@@ -66,7 +66,7 @@ After Minecraft Education Edition is added to your Windows Store for Business, y
 - You can assign the app to others. 
 - You can download the app to distribute.
 
-Admins can also add Minecraft: Education Edition to the private store. This allows people in your organization to install the app from the private store. 
+Admins can also add Minecraft: Education Edition to the private store. This allows people in your organization to install the app from the private store. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store). 
 
 ![App distribution options](images/mc-install-for-me-admin.png)
 
@@ -209,9 +209,7 @@ These apps will automatically be in your private store:
 - Fresh Paint
 - Minecraft: Education Edition
 
-As an admin, you can remove any of these apps from the private store if you'd prefer to control how apps are distributed. 
-
-You can also add Minecraft: Education Edition to your private store. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).  
+As an admin, you can remove any of these apps from the private store if you'd prefer to control how apps are distributed.  
 
 ## Need more copies of Minecraft: Education Edition?
 You can purchase more licenses by working with your channel partner. Licenses are available at a lower rate than the price for individual copies that are available through Windows Store for Business. Individual copies are also available through Windows Store for Business. 
