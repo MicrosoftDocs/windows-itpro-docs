@@ -27,6 +27,8 @@ The changes in UE-V for Windows 10, version 1607 impact already existing impleme
 
 - The Company Settings Center was removed and is no longer available on user devices. Users can no longer manage their synchronized settings. 
 
+- The inbox templates such as Office 2016 and IE 10 are included as a part of Windows 10 and need to be manually registered with Powershell or Group policy before use.
+
 For more information about how to configure an existing UE-V installation after upgrading user devices to Windows 10, see [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md).
 
 > **Important**&nbsp;&nbsp;You can upgrade your existing UE-V installation to Windows 10 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you’ll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10.
