@@ -203,87 +203,60 @@ The virtual application Microsoft Outlook is running in virtual environment **XY
 
 ## <a href="" id="bkmk-va-conn-configs"></a>Supported virtual application connection configurations
 
+The following application connection configurations are supported.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Configuration</th>
-<th align="left">Example scenario</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>An. exe file and plug-in (.dll)</p></td>
-<td align="left"><ul>
-<li><p>You want to distribute Microsoft Office to all users, but distribute a Microsoft Excel plug-in to only a subset of users.</p></li>
-<li><p>Enable the connection group for the appropriate users.</p></li>
-<li><p>Update each package individually as required.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>An. exe file and a middleware application</p></td>
-<td align="left"><ul>
-<li><p>You have an application requires a middleware application, or several applications that all depend on the same middleware runtime version.</p></li>
-<li><p>All computers that require one or more of the applications receive the connection groups with the application and middleware application runtime.</p></li>
-<li><p>You can optionally combine multiple middleware applications into a single connection group.</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Example</th>
-<th align="left">Example description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Virtual application connection group for the financial division</p></td>
-<td align="left"><ul>
-<li><p>Middleware application 1</p></li>
-<li><p>Middleware application 2</p></li>
-<li><p>Middleware application 3</p></li>
-<li><p>Middleware application runtime</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Virtual application connection group for HR division</p></td>
-<td align="left"><ul>
-<li><p>Middleware application 5</p></li>
-<li><p>Middleware application 6</p></li>
-<li><p>Middleware application runtime</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-<p> </p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>An. exe file and an .exe file</p></td>
-<td align="left"><p>You have an application that relies on another application, and you want to keep the packages separate for operational efficiencies, licensing restrictions, or rollout timelines.</p>
-<p><strong>Example:</strong></p>
-<p>If you are deploying Microsoft Lync 2010, you can use three packages:</p>
-<ul>
-<li><p>Microsoft Office 2010</p></li>
-<li><p>Microsoft Communicator 2007</p></li>
-<li><p>Microsoft Lync 2010</p></li>
-</ul>
-<p>You can manage the deployment using the following connection groups:</p>
-<ul>
-<li><p>Microsoft Office 2010 and Microsoft Communicator 2007</p></li>
-<li><p>Microsoft Office 2010 and Microsoft Lync 2010</p></li>
-</ul>
-<p>When the deployment has completed, you can either create a single new Microsoft Office 2010 + Microsoft Lync 2010 package, or keep and maintain them as separate packages and deploy them by using a connection group.</p></td>
-</tr>
-</tbody>
-</table>
+- **An. exe file and plug-in (.dll)**. For example, you might want to distribute Microsoft Office to all users, but distribute a Microsoft Excel plug-in to only a subset of users.
 
+    Enable the connection group for the appropriate users. Update each package individually as required.
+
+- **An. exe file and a middleware application**. You might have an application that requires a middleware application, or several applications that all depend on the same middleware runtime version.
+
+    All computers that require one or more of the applications receive the connection groups with the application and middleware application runtime. You can optionally combine multiple middleware applications into a single connection group.
+
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">Example</th>
+    <th align="left">Example description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Virtual application connection group for the financial division</p></td>
+    <td align="left"><ul>
+    <li><p>Middleware application 1</p></li>
+    <li><p>Middleware application 2</p></li>
+    <li><p>Middleware application 3</p></li>
+    <li><p>Middleware application runtime</p></li>
+    </ul></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Virtual application connection group for HR division</p></td>
+    <td align="left"><ul>
+    <li><p>Middleware application 5</p></li>
+    <li><p>Middleware application 6</p></li>
+    <li><p>Middleware application runtime</p></li>
+    </ul></td>
+    </tr>
+    </tbody>
+    </table>
+
+- **An. exe file and an .exe file**. You might have an application that relies on another application, and you want to keep the packages separate for operational efficiencies, licensing restrictions, or rollout timelines.
+
+    For example, if you are deploying Microsoft Lync 2010, you can use three packages:
+    - Microsoft Office 2010    
+    - Microsoft Communicator 2007
+    - Microsoft Lync 2010<br><br>
+    
+  You can manage the deployment using the following connection groups:
+    - Microsoft Office 2010 and Microsoft Communicator 2007
+    - Microsoft Office 2010 and Microsoft Lync 2010<br><br>
+    
+  When the deployment has completed, you can either create a single new Microsoft Office 2010 + Microsoft Lync 2010 package, or keep and maintain them as separate packages and deploy them by using a connection group.
 
 ## Have a suggestion for App-V?
 

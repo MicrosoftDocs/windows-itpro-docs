@@ -14,7 +14,7 @@ ms.prod: w10
 **Applies to**
 -   Windows 10, version 1607; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; and Windows Server 2008 R2
 
-This topic specifies the requirements to install and run App-V in your Windows 10 environment.
+This topic specifies the requirements to install and run App-V in your Windows 10 environment. For information about prerequisite software such as the .NET Framework, see [App-V Prerequisites](appv-prerequisites.md).
 
 ## App-V Server system requirements
 
