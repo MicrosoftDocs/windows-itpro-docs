@@ -20,6 +20,12 @@ When you sign up for early access to [Minecraft Education Edition](http://educat
 
 ## Add Minecraft to your Windows Store for Business 
 
+You can start with the Minecraft: Education Edition trial to get individual copies of the app. For more information, see [Minecraft: Education Edition - individual copies](#individual-copies). 
+
+If you’ve been approved and are part of the Enrollment for Education Solutions program, you can purchase a volume license for Minecraft: Education Edition. For more information, see [Minecraft: Education Edition - volume license](#volume-license)
+
+### <a href="" id="individual-copies"></a>Minecraft: Education Edition - individual copies
+
 1. Go to [http://education.minecraft.net/](http://education.minecraft.net/) and select **Get the app**.
 
     ![Click Get the app](images/it-get-app.png) 
@@ -42,13 +48,25 @@ When you sign up for early access to [Minecraft Education Edition](http://educat
 
     ![Get Minecraft app in Store](images/minecraft-get-the-app.png)
 
-## Distribute Minecraft
+Now that the app is in your Store for Business inventory, you can choose how to distribute Minecraft. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft).
+
+### <a href="" id="volume-license"></a>Minecraft: Education Edition - volume license
+
+Qualified education institutions can purchase Minecraft: Education Edition volume licenses through their Microsoft channel partner. Schools need to be part of the Enrollment for Education Solutions program. Educational institutions should work with their channel partner to determine which Minecraft: Education Edition licensing offer is best for their institution. The process looks like this: 
+
+- Your channel partner will submit and process your volume license order, and your licenses will be shown on [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), and the copies will be available in [Windows Store for Business](https://www.microsoft.com/business-store) inventory. 
+- You’ll receive an email with a link to Windows Store for Business. 
+- Sign in to [Windows Store for Business](https://www.microsoft.com/business-store) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
+
+## <a href="" id="distribute-minecraft"></a>Distribute Minecraft
 
 After Minecraft Education Edition is added to your Windows Store for Business, you have three options:
 
 - You can install the app on your PC.
-- You can assign the app to others.  
-- You can download the app to distribute. 
+- You can assign the app to others. 
+- You can download the app to distribute.
+
+Admins can also add Minecraft: Education Edition to the private store. This allows people in your organization to install the app from the private store. 
 
 ![App distribution options](images/mc-install-for-me-admin.png)
 
@@ -178,7 +196,7 @@ Minecraft: Education Edition adds a new role for teachers: **Basic Purchaser**. 
     
     ![Permission page for Windows Store for Business](images/minecraft-assign-roles-2.png)
 
-## Private store
+## <a href="" id="private-store"></a>Private store
 
 When you create you Windows Store for Business account, you'll have a set of apps included for free in your private store. Apps in your private store are available for all people in your organization to install and use. 
 
@@ -192,6 +210,13 @@ These apps will automatically be in your private store:
 - Minecraft: Education Edition
 
 As an admin, you can remove any of these apps from the private store if you'd prefer to control how apps are distributed. 
+
+You can also add Minecraft: Education Edition to your private store. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).  
+
+## Need more copies of Minecraft: Education Edition?
+You can purchase more licenses by working with your channel partner. Licenses are available at a lower rate than the price for individual copies that are available through Windows Store for Business. Individual copies are also available through Windows Store for Business. 
+
+If you’ve purchased a volume license, be sure to let other basic purchasers in your organization know about the volume license. That should help prevent unnecessary purchases of individual copies.
 
 ## Learn more
 
