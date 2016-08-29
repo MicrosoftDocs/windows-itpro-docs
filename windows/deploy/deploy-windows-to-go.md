@@ -485,8 +485,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
    
    >[!TIP]  
    >The index number must be set correctly to a valid Enterprise image in the .WIM file.
-
-
+   
    ``` syntax
    #The WIM file must contain a sysprep generalized image.
    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
@@ -494,37 +493,37 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
 5. In the same PowerShell session use the following cmdlet to add a recovery key to the drive:
 
-    ``` syntax
-    $BitlockerRecoveryProtector = Add-BitLockerKeyProtector W: -RecoveryPasswordProtector
-    ```
+   ``` syntax
+   $BitlockerRecoveryProtector = Add-BitLockerKeyProtector W: -RecoveryPasswordProtector
+   ```
 
 6. Next, use the following cmdlets to save the recovery key to a file:
 
-    ``` syntax
+   ``` syntax
    #The BitLocker Recovery key is essential if for some reason you forget the BitLocker password
    #This recovery key can also be backed up into Active Directory using manage-bde.exe or the
    #PowerShell cmdlet Backup-BitLockerKeyProtector.
-    $RecoveryPassword = $BitlockerRecoveryProtector.KeyProtector.RecoveryPassword
-    $RecoveryPassword > WTG-Demo_Bitlocker_Recovery_Password.txt
-    ```
+   $RecoveryPassword = $BitlockerRecoveryProtector.KeyProtector.RecoveryPassword
+   $RecoveryPassword > WTG-Demo_Bitlocker_Recovery_Password.txt
+   ```
 
 7. Then, use the following cmdlets to add the password as a secure string. If you omit the password the cmdlet will prompt you for the password before continuing the operation:
 
-    ``` syntax
+   ``` syntax
    # Create a variable to store the password
-    $spwd = ConvertTo-SecureString -String <password> -AsplainText –Force 
-    Enable-BitLocker W: -PasswordProtector $spwd 
-    ```
-
-    >[!WARNING]  
-    >To have BitLocker only encrypt used space on the disk append the parameter `–UsedSpaceOnly` to the `Enable-BitLocker` cmdlet. As data is added to the drive BitLocker will encrypt additional space. Using this parameter will speed up the preparation process as a smaller percentage of the disk will require encryption. If you are in a time critical situation where you cannot wait for encryption to complete you can also safely remove the Windows To Go drive during the encryption process. The next time the drive is inserted in a computer it will request the BitLocker password. Once the password is supplied, the encryption process will continue. If you do this, make sure your users know that BitLocker encryption is still in process and that they will be able to use the workspace while the encryption completes in the background.
+   $spwd = ConvertTo-SecureString -String <password> -AsplainText –Force 
+   Enable-BitLocker W: -PasswordProtector $spwd 
+   ```
+   
+   >[!WARNING]  
+   >To have BitLocker only encrypt used space on the disk append the parameter `–UsedSpaceOnly` to the `Enable-BitLocker` cmdlet. As data is added to the drive BitLocker will encrypt additional space. Using this parameter will speed up the preparation process as a smaller percentage of the disk will require encryption. If you are in a time critical situation where you cannot wait for encryption to complete you can also safely remove the Windows To Go drive during the encryption process. The next time the drive is inserted in a computer it will request the BitLocker password. Once the password is supplied, the encryption process will continue. If you do this, make sure your users know that BitLocker encryption is still in process and that they will be able to use the workspace while the encryption completes in the background.
 
 8. Copy the numerical recovery password and save it to a file in a safe location. The recovery password will be required if the password is lost or forgotten.
 
-    >[!WARNING]  
-    >If the **Choose how BitLocker-protected removable data drives can be recovered** Group Policy setting has been configured to back up recovery information to Active Directory Domain Services, the recovery information for the drive will be stored under the account of the host computer used to apply the recovery key.
-
-    If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable-bitlocker). 
+   >[!WARNING]  
+   >If the **Choose how BitLocker-protected removable data drives can be recovered** Group Policy setting has been configured to back up recovery information to Active Directory Domain Services, the recovery information for the drive will be stored under the account of the host computer used to apply the recovery key.
+   
+   If you want to have the recovery information stored under the account of the Windows To Go workspace you can turn BitLocker from within the Windows To Go workspace using the BitLocker Setup Wizard from the BitLocker Control Panel item as described in [To enable BitLocker after distribution](#enable-bitlocker). 
 
 9. Safely remove the Windows To Go drive.
 
