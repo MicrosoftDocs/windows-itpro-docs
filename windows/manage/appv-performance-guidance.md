@@ -247,7 +247,7 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p>MaxConcurrentPublishingRefresh</p>
 <ul>
-<li><p>Configure in the Registry under <strong>HKEY_LOCAL_MACHINE</strong> \<strong>Software</strong> \ <strong>Microsoft</strong> \ <strong>AppV</strong> \<strong>Client</strong> \ <strong>Publishing</strong>.</p></li>
+<li><p>Configure in the Registry under <strong>HKEY_LOCAL_MACHINE</strong> \ <strong>Software</strong> \ <strong>Microsoft</strong> \ <strong>AppV</strong> \<strong>Client</strong> \ <strong>Publishing</strong>.</p></li>
 <li><p>Create the DWORD value <strong>MaxConcurrentPublishingrefresh</strong> with the desired maximum number of concurrent publishing refreshes.</p></li>
 <li><p>The App-V client service and computer do not need to be restarted.</p></li>
 </ul></td>
