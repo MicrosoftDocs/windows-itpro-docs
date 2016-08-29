@@ -241,6 +241,7 @@ To set the Windows To Go Startup options for host computers running Windows 10:
 For host computers running Windows 8 or Windows 8.1:
 
 1. Press **Windows logo key+W**, search for **Windows To Go startup options**, and then press **Enter**.
+
 2. In the **Windows To Go Startup Options** dialog box, select **Yes**, and then click **Save Changes** to configure the computer to boot from USB.
 
 You can configure your organization's computers to automatically start from the USB drive by enabling the following Group Policy setting:
