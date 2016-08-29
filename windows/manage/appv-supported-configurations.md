@@ -11,9 +11,10 @@ ms.prod: w10
 
 # App-V Supported Configurations
 
-Applies to: Windows 10, version 1607; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; and Windows Server 2008 R2
+**Applies to**
+-   Windows 10, version 1607; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; and Windows Server 2008 R2
 
-This topic specifies the requirements to install and run App-V in your Windows 10 environment.
+This topic specifies the requirements to install and run App-V in your Windows 10 environment. For information about prerequisite software such as the .NET Framework, see [App-V Prerequisites](appv-prerequisites.md).
 
 ## App-V Server system requirements
 
@@ -230,7 +231,7 @@ The App-V client works with System Center Configuration Manager versions startin
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

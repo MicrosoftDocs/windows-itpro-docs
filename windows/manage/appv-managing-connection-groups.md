@@ -11,16 +11,15 @@ ms.prod: w10
 
 # Managing Connection Groups
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Connection groups enable the applications within a package to interact with each other in the virtual environment, while remaining isolated from the rest of the system. By using connection groups, administrators can manage packages independently and can avoid having to add the same application multiple times to a client computer.
 
 **Note**  
 In some previous versions of App-V, connection groups were referred to as Dynamic Suite Composition.
 
- 
-
-**In this topic:**
+**In this section:**
 
 <table>
 <colgroup>
@@ -52,7 +51,14 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 <td align="left"><p>[How to Publish a Connection Group](appv-publish-a-connection-group.md)</p></td>
 <td align="left"><p>Explains how to publish a connection group.</p></td>
 </tr>
-</tbody>
+<tr class="odd">
+<td align="left"><p>[How to Make a Connection Group Ignore the Package Version](appv-configure-connection-groups-to-ignore-the-package-version.md)</p></td>
+<td align="left"><p>Explains how to configure a connection group to accept any version of a package, which simplifies package upgrades and reduces the number of connection groups you need to create.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>[How to Allow Only Administrators to Enable Connection Groups](appv-allow-administrators-to-enable-connection-groups.md)</p></td>
+<td align="left"><p>Explains how to configure the App-V client so that only administrators (not end users) can enable or disable connection groups.</p></td>
+</tr></tbody>
 </table>
 
  
@@ -60,7 +66,7 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for App-V connection groups
 

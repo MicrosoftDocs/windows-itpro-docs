@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Create a Connection Group with User-Published and Globally Published Packages
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 You can create user-entitled connection groups that contain both user-published and globally published packages, using either of the following methods:
 
@@ -77,7 +78,7 @@ You can create user-entitled connection groups that contain both user-published 
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

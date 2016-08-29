@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Technical Reference for App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This section provides reference information related to managing App-V.
 
@@ -37,18 +38,12 @@ This section provides reference information related to managing App-V.
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
+[How to Deploy the App-V Databases by Using SQL Scripts](appv-deploy-appv-databases-with-sql-scripts.md)
 
-[Creating App-V 4.5 Databases Using SQL Scripting](https://technet.microsoft.com/en-us/itpro/mdop/solutions/creating-app-v-45-databases-using-sql-scripting)
+[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
- 
-
- 
-
-
-
-
-
+[Windows PowerShell reference for App-V](https://technet.microsoft.com/en-us/library/dn903534.aspx)

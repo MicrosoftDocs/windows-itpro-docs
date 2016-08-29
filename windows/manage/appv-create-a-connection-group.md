@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Create a Connection Group
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use these steps to create a connection group by using the App-V Management Console. To use Windows PowerShell to create connection groups, see [How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md).
 
@@ -40,7 +41,7 @@ When you place packages in a connection group, their package root paths are merg
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

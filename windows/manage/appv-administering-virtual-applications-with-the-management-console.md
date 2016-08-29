@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Administering App-V Virtual Applications by Using the Management Console
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the Microsoft Application Virtualization (App-V) management server to manage packages, connection groups, and package access in your environment. The server publishes application icons, shortcuts, and file type associations to authorized computers that run the App-V client. One or more management servers typically share a common data store for configuration and package information.
 
@@ -95,7 +96,7 @@ JavaScript must be enabled on the browser that opens the Web Management Console.
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## <a href="" id="other-resources-for-this-app-v-5-1-deployment-"></a>Other resources for this App-V deployment
 

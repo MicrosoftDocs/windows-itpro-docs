@@ -2232,8 +2232,9 @@ The Key Admins group applies to versions of the Windows Server operating system 
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
 | Safe to delegate management of this group to non-Service admins? | No |
+| Default User Rights | None |
 
-<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights" -->
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?" -->
 
 ### <a href="" id="bkmk-networkcfgoperators"></a>Network Configuration Operators
 
@@ -2625,11 +2626,11 @@ Members of the Protected Users group are afforded additional protection against 
 
 This security group is designed as part of a strategy to effectively protect and manage credentials within the enterprise. Members of this group automatically have non-configurable protection applied to their accounts. Membership in the Protected Users group is meant to be restrictive and proactively secure by default. The only method to modify the protection for an account is to remove the account from the security group.
 
-This domain-related, global group triggers non-configurable protection on devices and host computers running Windows Server 2012 R2 and Windows 8.1, and on domain controllers in domains with a primary domain controller running Windows Server 2012 R2. This greatly reduces the memory footprint of credentials when users sign in to computers on the network from a non-compromised computer.
+This domain-related, global group triggers non-configurable protection on devices and host computers, starting with the Windows Server 2012 R2 and Windows 8.1 operating systems. It also triggers non-configurable protection on domain controllers in domains with a primary domain controller running Windows Server 2012 R2 or Windows Server 2016. This greatly reduces the memory footprint of credentials when users sign in to computers on the network from a non-compromised computer.
 
 Depending on the account’s domain functional level, members of the Protected Users group are further protected due to behavior changes in the authentication methods that are supported in Windows.
 
--   Members of the Protected Users group cannot authenticate by using the following Security Support Providers (SSPs): NTLM, Digest Authentication, or CredSSP. Passwords are not cached on a device running Windows 8.1, so the device fails to authenticate to a domain when the account is a member of the Protected User group.
+-   Members of the Protected Users group cannot authenticate by using the following Security Support Providers (SSPs): NTLM, Digest Authentication, or CredSSP. Passwords are not cached on a device running Windows 8.1 or Windows 10, so the device fails to authenticate to a domain when the account is a member of the Protected User group.
 
 -   The Kerberos protocol will not use the weaker DES or RC4 encryption types in the preauthentication process. This means that the domain must be configured to support at least the AES cipher suite.
 
@@ -3351,8 +3352,9 @@ The Storage Replica Administrators group applies to versions of the Windows Serv
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
 | Safe to delegate management of this group to non-Service admins? | No |
+| Default User Rights | None |
 
-<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights" -->
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?" -->
 
 ### System Managed Accounts Group
 
@@ -3370,8 +3372,9 @@ The System Managed Accounts group applies to versions of the Windows Server oper
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
 | Safe to delegate management of this group to non-Service admins? | No |
+| Default User Rights | None |
 
-<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?"  ...plus the last line, "Default User Rights"   -- ALSO, CONFIRM "Users" is correct for "Default members." -->
+<!-- WHEN MORE INFO IS AVAILABLE, ADD LINES to the above table -- a line under the ADMINSDHOLDER line, "Safe to move out of default container?" -->
 
 ### <a href="" id="bkmk-terminalserverlic"></a>Terminal Server License Servers
 

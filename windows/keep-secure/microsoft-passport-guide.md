@@ -16,7 +16,10 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 
-This guide describes the new Windows Hello and Microsoft Passport technologies that are part of the Windows 10 operating system. It highlights specific capabilities of these technologies that help mitigate threats from conventional credentials and provides guidance about how to design and deploy these technologies as part of your Windows 10 rollout.
+This guide describes the new Windows Hello and Microsoft Passport technologies that are part of the Windows 10, version 1511 operating system. It highlights specific capabilities of these technologies that help mitigate threats from conventional credentials and provides guidance about how to design and deploy these technologies as part of your Windows 10 rollout.
+
+>[!NOTE]
+>For information about Windows Hello for Business in Windows 10, version 1607, see [Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md).
 
 A fundamental assumption about information security is that a system can identify who’s using it. In identifying a user, the system can decide whether the user has identified himself or herself appropriately (a process known as authentication), and then determine what that properly authenticated user should be able to do (a process known as authorization). The overwhelming majority of computer systems deployed throughout the world depend on user credentials as a means of making authentication and authorization decisions, and that means that these systems depend on reusable, user-created passwords for their security. The oft-cited maxim that authentication can involve “something you know, something you have, or something you are” neatly highlights the issue: a reusable password is an authentication factor all by itself, so anyone who knows the password can impersonate the user who owns it.
 

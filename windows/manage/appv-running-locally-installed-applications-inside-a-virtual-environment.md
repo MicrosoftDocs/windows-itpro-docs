@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 You can run a locally installed application in a virtual environment, alongside applications that have been virtualized by using Microsoft Application Virtualization (App-V). You might want to do this if you:
 
@@ -112,7 +113,7 @@ Use the following example syntax, and substitute the name of your package for **
 
 `Start-AppvVirtualProcess -AppvClientObject $AppVName cmd.exe`
 
-If you don’t know the exact name of your package, you can use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, you can use the command line <strong>Get-AppvClientPackage \*executable\*</strong>, where **executable** is the name of the application, for example:<br>Get-AppvClientPackage \*Word\*
 
 ## <a href="" id="bkmk-cl-switch-appvpid"></a>Command line switch /appvpid:&lt;PID&gt;
 
@@ -142,14 +143,14 @@ To get the package GUID and version GUID of your application, run the **Get-Appv
 
 -   Version ID of the desired package
 
-If you don’t know the exact name of your package, use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, use the command line <strong>Get-AppvClientPackage \*executable\*</strong>, where **executable** is the name of the application, for example:<br>Get-AppvClientPackage \*Word\*
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

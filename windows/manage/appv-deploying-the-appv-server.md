@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Deploying the App-V server
 
-Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
+**Applies to**
+-   Windows Server 2016
 
 >**Note**<br>If you plan to use the App-V server components in your deployment, note that they reference App-V 5.x. This is because the App-V server components have not changed in App-V for Windows 10. 
 
@@ -108,4 +109,4 @@ For more information, see [About App-V Reporting](appv-reporting.md) and [How to
 - [Deploying App-V](appv-deploying-appv.md)
 
 ## Have a suggestion for App-V?
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

@@ -11,7 +11,8 @@ ms.prod: w10
 
 # How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 
 The following sections explain how to perform various management tasks on a stand-alone client computer by using Windows PowerShell:
@@ -68,8 +69,8 @@ Use the following information to publish a package that has been added to a spec
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -175,18 +176,12 @@ App-V cmdlets have been assigned to variables for the previous examples for clar
 
 ## <a href="" id="bkmk-admins-pub-pkgs"></a>To enable only administrators to publish or unpublish packages
 
-
-**Note**  
-**This feature is supported starting in App-V 5.0 SP3.**
-
- 
-
-Use the following cmdlet and parameter to enable only administrators (not end users) to publish or unpublish packages:
+Starting in App-V 5.0 SP3, you can use the following cmdlet and parameter to enable only administrators (not end users) to publish or unpublish packages:
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -217,8 +212,8 @@ To use the App-V Management console to set this configuration, see [How to Publi
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -277,7 +272,7 @@ For more information about pending tasks, see [Upgrading an in-use App-V package
 
 ## Have a suggestion for App-V? 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Upgrade to UE-V for Windows 10
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 If you’re already using UE-V 2.x and you’re planning to upgrade user devices to Windows 10, version 1607 or later releases, you need to make only a few adjustments to your existing environment. These steps are explained in more detail below.
 
@@ -26,7 +27,7 @@ If you’re already using UE-V 2.x and you’re planning to upgrade user devices
 
 ## Upgrade user devices to Windows 10, version 1607
 
-Performing an in-place upgrade on user devices automatically installs the UE-V service, updates the settings location path, and migrates users' UE-V settings. See the [Windows 10 for IT Pros documentation](https://technet.microsoft.com/itpro/windows/index) for information about upgrading user devices to Windows 10. 
+Performing an in-place upgrade on user devices automatically installs the UE-V service, updates the settings location path, and migrates users' UE-V settings. See the [Windows 10 documentation for IT Pros](https://technet.microsoft.com/itpro/windows/deploy/index) for information about upgrading user devices to Windows 10. 
 
 ## Verify that UE-V settings were migrated correctly 
 
@@ -90,6 +91,9 @@ The UE-V template generator is included in the Windows Assessment and Deployment
  
 3.	To open the generator, open the **Start** menu and navigate to **Windows Kits** > **Microsoft User Experience Virtualization (UE-V) Template Generator**. 
 
+## Have a suggestion for UE-V?
+
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Other resources for this feature
 

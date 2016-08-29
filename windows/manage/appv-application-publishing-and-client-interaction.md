@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Application Publishing and Client Interaction
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 This article provides technical information about common App-V client operations and their integration with the local operating system.
 
@@ -66,9 +67,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 </tbody>
 </table>
 
- 
-
-For information about sequencing, see [How to Sequence a New Application with App-V](https://technet.microsoft.com/itpro/windows/manage/appv-sequence-a-new-application).
+For information about sequencing, see [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
 ## What’s in the appv file?
 
@@ -233,7 +232,7 @@ The Package Store contains a pristine copy of the package files that have been s
 
 ### COW roaming
 
-The COW Roaming location described above stores changes to files and directories that are targeted to the typical %AppData% location or \\Users\\*<username>*\\AppData\\Roaming location. These directories and files are then roamed based on the operating system settings.
+The COW Roaming location described above stores changes to files and directories that are targeted to the typical %AppData% location or \\Users\\*&lt;username&gt;*\\AppData\\Roaming location. These directories and files are then roamed based on the operating system settings.
 
 ### COW local
 
@@ -1289,4 +1288,4 @@ There are three specific categories of events recorded described below.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

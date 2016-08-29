@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Performance Guidance for Application Virtualization
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 
@@ -26,7 +27,7 @@ You should read and understand the following information before reading this doc
 -   [App-V Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760)
 
 **Note**  
-Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk **\*** review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.
+Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk <strong>*</strong> review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.
 
  
 
@@ -736,7 +737,7 @@ The following terms are used when describing concepts and actions related to App
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
