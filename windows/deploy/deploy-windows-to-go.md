@@ -138,10 +138,9 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
     >[!TIP]  
     >The index number must be set correctly to a valid Enterprise image in the .WIM file.
- 
-
+    
     ``` syntax
-   #The WIM file must contain a sysprep generalized image.
+    #The WIM file must contain a sysprep generalized image.
     dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
     ```
 
@@ -338,11 +337,9 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
     >[!TIP]  
     >The index number must be set correctly to a valid Enterprise image in the .WIM file.
-
-     
-
+    
     ``` syntax
-   #The WIM file must contain a sysprep generalized image.
+    #The WIM file must contain a sysprep generalized image.
     dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
     ```
 
