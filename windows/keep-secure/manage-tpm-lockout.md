@@ -19,17 +19,21 @@ This topic for the IT professional describes how to manage the lockout feature f
 
 The TPM will lock itself to prevent tampering or malicious attacks. TPM lockout often lasts for a variable amount of time or until the computer is turned off. While the TPM is in lockout mode, it generally returns an error message when it receives commands that require an authorization value. One exception is that the TPM always allows the owner at least one attempt to reset the TPM lockout when it is in lockout mode.
 
-TPM ownership is commonly taken the first time BitLocker Drive Encryption is turned on for the computer. In this case, the TPM owner authorization password is saved with the BitLocker recovery key. When the BitLocker recovery key is saved to a file, BitLocker also saves a TPM owner password file (.tpm) with the TPM owner password hash value. When the BitLocker recovery key is printed, the TPM owner password is printed at the same time. You can also save your TPM owner password hash value to Active Directory Domain Services (AD DS) if your organization's Group Policy settings are configured to do so.
+TPM ownership is taken upon first boot by Windows. By default, Windows does not retain the TPM owner password.
 
 In some cases, encryption keys are protected by a TPM by requiring a valid authorization value to access the key. A common example is configuring BitLocker Drive Encryption to use the TPM plus PIN key protector. In this scenario, the user must type the correct PIN during the boot process to access the volume encryption key protected by the TPM. To prevent malicious users or software from discovering authorization values, TPMs implement protection logic. The protection logic is designed to slow or stop responses from the TPM if it detects that an entity might be trying to guess authorization values.
 
-The industry standards from the Trusted Computing Group (TCG) specify that TPM manufacturers must implement some form of protection logic in TPM 1.2 and TPM 2.0 chips. TPM manufacturers implement different protection mechanisms and behavior. The general guidance is for the TPM chip to take exponentially longer to respond if incorrect authorization values are sent to the TPM. Some TPM chips may not store failed attempts over time. Other TPM chips may store every failed attempt indefinitely. Therefore, some users may experience increasingly longer delays when they mistype an authorization value that is sent to the TPM. This can prevent them from using the TPM for a period of time.
+**TPM 1.2**
+The industry standards from the Trusted Computing Group (TCG) specify that TPM manufacturers must implement some form of protection logic in TPM 1.2 and TPM 2.0 chips. TPM 1.2 devices implement different protection mechanisms and behavior. In general, the TPM chip takes exponentially longer to respond if incorrect authorization values are sent to the TPM. Some TPM chips may not store failed attempts over time. Other TPM chips may store every failed attempt indefinitely. Therefore, some users may experience increasingly longer delays when they mistype an authorization value that is sent to the TPM. This can prevent them from using the TPM for a period of time.
+
+**TPM 2.0**
+ TPM 2.0 devices have standardized lockout behavior which is configured by Windows. TPM 2.0 devices have a maximum count threshold and a healing time. Windows configures the maximum count to be 32 and the healing time to be 2 hours. This means that every continuous two hours of powered on operation without an event which increases the counter will cause the counter to decrease by 1.
 
 If your TPM has entered lockout mode or is responding slowly to commands, you can reset the lockout value by using the following procedures. Resetting the TPM lockout requires the TPM owner’s authorization.
 
 ## Reset the TPM lockout by using the TPM MMC
 
-The following procedure explains the steps to reset the TPM lockout by using the TPM MMC.
+The following procedure explains the steps to reset the TPM lockout by using the TPM MMC.  Note that this procedure is only available if you have configured Windows to retain the TPM owner password. By default, this behavior is not available in Windows 10.
 
 **To reset the TPM lockout**
 

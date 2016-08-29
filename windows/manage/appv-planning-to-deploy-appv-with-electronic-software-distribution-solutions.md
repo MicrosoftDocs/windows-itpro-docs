@@ -29,3 +29,8 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 ## Related topics
 
 - [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
+
+- [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md)
+
+- [How to Enable Only Administrators to Publish Packages by Using an ESD](appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions.md)
+

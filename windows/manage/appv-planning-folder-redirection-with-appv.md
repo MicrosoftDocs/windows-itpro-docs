@@ -116,8 +116,8 @@ The following table describes how folder redirection works when %AppData% is red
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <tbody>
 <tr class="odd">

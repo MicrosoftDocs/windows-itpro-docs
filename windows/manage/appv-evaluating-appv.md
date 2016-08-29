@@ -18,7 +18,7 @@ Before you deploy App-V into a production environment, you should evaluate it in
 
 ## Configure lab computers for App-V Evaluation
 
-Use the following link for information about setting up the App-V sequencer on a computer in your lab environment.
+Use the following links for information about setting up the App-V sequencer on a computer in your lab environment.
 
 ### Installing the App-V Sequencer and Creating Packages
 
@@ -38,7 +38,7 @@ Use the following links for information about setting up the App-V server in you
 
 ### Enabling the App-V Client
 
-Use the following link for more information about creating and managing virtualized packages in your lab environment.
+Use the following links for more information about creating and managing virtualized packages in your lab environment.
 
 -   [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)
 
