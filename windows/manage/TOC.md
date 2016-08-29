@@ -35,7 +35,6 @@
 ## [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)
 ## [Configure devices without MDM](configure-devices-without-mdm.md)
 ## [Windows 10 servicing options](introduction-to-windows-10-servicing.md)
-## [Application development for Windows as a service](application-development-for-windows-as-a-service.md)
 ## [Application Virtualization (App-V) for Windows](appv-for-windows.md)
 ### [Getting Started with App-V](appv-getting-started.md)
 #### [What's new in App-V](appv-about-appv.md)

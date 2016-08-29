@@ -23,8 +23,8 @@ A typical App-V implementation consists of the following elements.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <thead>
 <tr class="header">

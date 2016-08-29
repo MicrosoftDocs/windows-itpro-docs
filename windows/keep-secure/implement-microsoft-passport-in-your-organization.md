@@ -342,7 +342,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <li>Azure AD subscription</li>
 <li>[Azure AD Connect](http://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
 <li>AD CS with NDES</li>
-<<<<<<< HEAD
 <li>Configuration Manager for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Passport for Work</li>
 </ul></td>
 </tr>

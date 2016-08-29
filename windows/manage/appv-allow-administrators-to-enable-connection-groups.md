@@ -23,8 +23,8 @@ Use one of the following methods to allow only administrators to enable or disab
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <thead>
 <tr class="header">
