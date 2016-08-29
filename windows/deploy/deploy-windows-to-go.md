@@ -489,8 +489,8 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
    ``` syntax
    #The WIM file must contain a sysprep generalized image.
-    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
-    ```
+   dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\ 
+   ```
 
 5. In the same PowerShell session use the following cmdlet to add a recovery key to the drive:
 
