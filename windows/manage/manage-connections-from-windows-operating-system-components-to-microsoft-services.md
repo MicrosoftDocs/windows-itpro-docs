@@ -658,6 +658,10 @@ To turn off **Let apps on my other devices open apps and continue experiences on
 
 - Turn off the feature in the UI.
 
+    -or-
+
+-   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Group Policy** &gt; **Continue experiences on this device**.
+
 To turn off **Let apps on my other devices use Bluetooth to open apps and continue experiences on this device**:
 
 - Turn off the feature in the UI.
