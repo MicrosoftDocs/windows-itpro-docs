@@ -230,7 +230,8 @@ If your organization tests network traffic, you should not use Fiddler to test W
 
 The following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
-> [!NOTE] This does not apply to Windows Server 2016.
+> [!NOTE]  
+> This does not apply to Windows Server 2016.
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -297,11 +298,7 @@ To turn off Insider Preview builds for Windows 10:
 
 ### <a href="" id="bkmk-ie"></a>7. Internet Explorer
 
-Use Group Policy to manage settings for Internet Explorer.
-
-### <a href="" id="bkmk-ie-gp"></a>7.1 Internet Explorer Group Policies
-
-Find the Internet Explorer Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Internet Explorer**.
+Use Group Policy to manage settings for Internet Explorer.  You can find the Internet Explorer Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Internet Explorer**.
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
