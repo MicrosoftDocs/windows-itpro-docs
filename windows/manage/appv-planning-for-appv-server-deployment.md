@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Planning for the App-V Server Deployment
 
-Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
+**Applies to**
+-   Windows Server 2016
 
 The Microsoft Application Virtualization (App-V) server infrastructure consists of a set of specialized features that can be installed on one or more server computers, based on the requirements of the enterprise.
 
@@ -93,11 +94,10 @@ The following displays information about server-related protocols used by the Ap
 </tbody>
 </table>
 
- 
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions at [Microsoft Application Virtualization](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

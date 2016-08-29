@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Deploying Microsoft Office 2010 by Using App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 You can create Office 2010 packages for Microsoft Application Virtualization (App-V) using one of the following methods:
 
@@ -88,7 +89,7 @@ You can deploy Office 2010 packages by using any of the following App-V deployme
 
 -   App-V server
 
--   Stand-alone through PowerShell commands
+-   Stand-alone through Windows PowerShell commands
 
 ## Office App-V package management and customization
 
@@ -281,9 +282,9 @@ The following table provides a full list of supported integration points for Off
 
 **Connection Groups**
 
-[Deploying Connection Groups in Microsoft App-V v5](https://blogs.technet.microsoft.com/appv/2012/11/06/deploying-connection-groups-in-microsoft-app-v-v5/)
-
 [Managing Connection Groups](appv-managing-connection-groups.md)
+
+[Connection groups on the App-V team blog](https://blogs.technet.microsoft.com/gladiatormsft/tag/connection-groups/)
 
 **Dynamic Configuration**
 
@@ -291,4 +292,4 @@ The following table provides a full list of supported integration points for Off
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

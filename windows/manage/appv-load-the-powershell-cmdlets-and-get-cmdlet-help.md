@@ -1,6 +1,6 @@
 ---
-title: How to Load the PowerShell Cmdlets and Get Cmdlet Help (Windows 10)
-description: How to Load the App-V PowerShell Cmdlets and Get Cmdlet Help
+title: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help (Windows 10)
+description: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,24 +9,25 @@ ms.prod: w10
 ---
 
 
-# How to Load the PowerShell Cmdlets and Get Cmdlet Help
+# How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 What this topic covers:
 
--   [Requirements for using PowerShell cmdlets](#bkmk-reqs-using-posh)
+-   [Requirements for using Windows PowerShell cmdlets](#bkmk-reqs-using-posh)
 
--   [Loading the PowerShell cmdlets](#bkmk-load-cmdlets)
+-   [Loading the Windows PowerShell cmdlets](#bkmk-load-cmdlets)
 
--   [Getting help for the PowerShell cmdlets](#bkmk-get-cmdlet-help)
+-   [Getting help for the Windows PowerShell cmdlets](#bkmk-get-cmdlet-help)
 
--   [Displaying the help for a PowerShell cmdlet](#bkmk-display-help-cmdlet)
+-   [Displaying the help for a Windows PowerShell cmdlet](#bkmk-display-help-cmdlet)
 
-## <a href="" id="bkmk-reqs-using-posh"></a>Requirements for using PowerShell cmdlets
+## <a href="" id="bkmk-reqs-using-posh"></a>Requirements for using Windows PowerShell cmdlets
 
 
-Review the following requirements for using the App-V PowerShell cmdlets:
+Review the following requirements for using the Windows PowerShell cmdlets:
 
 <table>
 <colgroup>
@@ -72,42 +73,23 @@ Review the following requirements for using the App-V PowerShell cmdlets:
 <li><p>Unpublish-AppvClientPackage</p></li>
 </ul>
 <p>To configure these cmdlets to require an elevated command prompt, use one of the following methods:</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Method</th>
-<th align="left">More resources</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>-RequirePublishAsAdmin</strong> parameter.</p></td>
-<td align="left"><ul>
-<li><p>[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md#bkmk-admin-only-posh-topic-cg)</p></li>
-<li><p>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs)</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Enable the “Require publish as administrator” Group Policy setting for App-V Clients.</p></td>
-<td align="left"><p>[How to Publish a Package by Using the Management Console](appv-publish-a-packages-with-the-management-console.md#bkmk-admin-pub-pkg-only-posh)</p></td>
-</tr>
-</tbody>
-</table>
-<p> </p></td>
+<ul>
+<li><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>-RequirePublishAsAdmin</strong> parameter.</p>
+<p>For more information, see:<br>[How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md#bkmk-admin-only-posh-topic-cg)<br>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs).</p></li>
+<li><p>Enable the “Require publish as administrator” Group Policy setting for App-V Clients.</p>
+<p>For more information, see [How to Publish a Package by Using the Management Console](appv-publish-a-packages-with-the-management-console.md#bkmk-admin-pub-pkg-only-posh)</p></li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
 
  
 
-## <a href="" id="bkmk-load-cmdlets"></a>Loading the PowerShell cmdlets
+## <a href="" id="bkmk-load-cmdlets"></a>Loading the Windows PowerShell cmdlets
 
 
-To load the PowerShell cmdlet modules:
+To load the Windows PowerShell cmdlet modules:
 
 1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
 
@@ -142,30 +124,12 @@ To load the PowerShell cmdlet modules:
 
  
 
-## <a href="" id="bkmk-get-cmdlet-help"></a>Getting help for the PowerShell cmdlets
-
+## <a href="" id="bkmk-get-cmdlet-help"></a>Getting help for the Windows PowerShell cmdlets
 
 Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Format</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>As a downloadable module</p></td>
-<td align="left"><p>To download the latest help after downloading the cmdlet module:</p>
-<ol>
-<li><p>Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).</p></li>
-<li><p>Type one of the following commands to load the cmdlets for the module you want:</p></li>
-</ol>
+- **As a downloadable module**: To download the latest help after downloading the cmdlet module, open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE), and type one of the following commands: 
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -192,33 +156,21 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 </tr>
 </tbody>
 </table>
-<p> </p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>On TechNet as web pages</p></td>
-<td align="left"><p>See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](http://technet.microsoft.com/library/dn520245.aspx).</p></td>
-</tr>
-</tbody>
-</table>
 
- 
+<br>
 
-## <a href="" id="bkmk-display-help-cmdlet"></a>Displaying the help for a PowerShell cmdlet
+- **On TechNet as web pages**: See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](http://technet.microsoft.com/library/dn520245.aspx).
+
+## <a href="" id="bkmk-display-help-cmdlet"></a>Displaying the help for a Windows PowerShell cmdlet
 
 
-To display help for a specific PowerShell cmdlet:
+To display help for a specific Windows PowerShell cmdlet:
 
 1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
 
 2.  Type **Get-Help** &lt;*cmdlet*&gt;, for example, **Get-Help Publish-AppvClientPackage**.
 
-**Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
- 
+## Have a suggestion for App-V?
 
- 
-
-
-
-
-
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

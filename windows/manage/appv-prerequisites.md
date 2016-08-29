@@ -11,7 +11,8 @@ ms.prod: w10
 
 # App-V for Windows 10 Prerequisites
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Before installing App-V for Windows 10, ensure that you have installed all of the following required prerequisite software.
 
@@ -518,44 +519,6 @@ The Reporting database is required only if you are using the App-V Reporting ser
 </tbody>
 </table>
 
-## Remote Desktop Services client prerequisite software
-
-
-Install the following prerequisite software for the App-V Remote Desktop Services client.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Prerequisite</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Microsoft .NET Framework 4.5.1 (Web Installer)](http://www.microsoft.com//download/details.aspx?id=40773)</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Windows PowerShell 3.0](http://www.microsoft.com/download/details.aspx?id=34595)</p>
-<p></p></td>
-<td align="left"><p>Installing PowerShell 3.0 requires a restart.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[KB2533623](http://support.microsoft.com/kb/2533623)</p></td>
-<td align="left"><p>Applies to Windows 7 only: Download and install the KB.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784)</p></td>
-<td align="left"><p></p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ## Sequencer prerequisite software
 
@@ -598,7 +561,7 @@ Install the following prerequisite software for the App-V Remote Desktop Service
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

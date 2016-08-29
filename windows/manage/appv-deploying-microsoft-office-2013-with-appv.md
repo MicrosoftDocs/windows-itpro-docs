@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Deploying Microsoft Office 2013 by Using App-V
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Use the information in this article to use Microsoft Application Virtualization (App-V), or later versions, to deliver Microsoft Office 2013 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md). To successfully deploy Office 2013 with App-V, you need to be familiar with Office 2013 and App-V.
 
@@ -239,68 +240,10 @@ The XML file that is included in the Office Deployment Tool specifies the produc
         </Configuration>
         ```
 
-        **Note**  
+        **Note**<br>
         The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file.
 
-         
-
-        The above XML configuration file specifies that Office 2013 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office 2013, which is the location where Office applications will be saved to. Note that the Product ID of the applications will not affect the final licensing of Office. Office 2013 App-V packages with various licensing can be created from the same applications through specifying licensing in a later stage. The table below summarizes the customizable attributes and elements of XML file:
-
-        <table>
-        <colgroup>
-        <col width="33%" />
-        <col width="33%" />
-        <col width="33%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th align="left">Input</th>
-        <th align="left">Description</th>
-        <th align="left">Example</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td align="left"><p>Add element</p></td>
-        <td align="left"><p>Specifies the products and languages to include in the package.</p></td>
-        <td align="left"><p>N/A</p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>OfficeClientEdition (attribute of Add element)</p></td>
-        <td align="left"><p>Specifies the edition of Office 2013 product to use: 32-bit or 64-bit. The operation fails if <strong>OfficeClientEdition</strong> is not set to a valid value.</p></td>
-        <td align="left"><p><strong>OfficeClientEdition</strong>=&quot;32&quot;</p>
-        <p><strong>OfficeClientEdition</strong>=&quot;64&quot;</p></td>
-        </tr>
-        <tr class="odd">
-        <td align="left"><p>Product element</p></td>
-        <td align="left"><p>Specifies the application. Project 2013 and Visio 2013 must be specified here as an added product to be included in the applications.</p></td>
-        <td align="left"><p><code>Product ID =&quot;O365ProPlusRetail &quot;</code></p>
-        <p><code>Product ID =&quot;VisioProRetail&quot;</code></p>
-        <p><code>Product ID =&quot;ProjectProRetail&quot;</code></p>
-        <p><code>Product ID =&quot;ProPlusVolume&quot;</code></p>
-        <p><code>Product ID =&quot;VisioProVolume&quot;</code></p>
-        <p><code>Product ID = &quot;ProjectProVolume&quot;</code></p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>Language element</p></td>
-        <td align="left"><p>Specifies the language supported in the applications</p></td>
-        <td align="left"><p><code>Language ID=&quot;en-us&quot;</code></p></td>
-        </tr>
-        <tr class="odd">
-        <td align="left"><p>Version (attribute of Add element)</p></td>
-        <td align="left"><p>Optional. Specifies a build to use for the package</p>
-        <p>Defaults to latest advertised build (as defined in v32.CAB at the Office source).</p></td>
-        <td align="left"><p><code>15.1.2.3</code></p></td>
-        </tr>
-        <tr class="even">
-        <td align="left"><p>SourcePath (attribute of Add element)</p></td>
-        <td align="left"><p>Specifies the location in which the applications will be saved to.</p></td>
-        <td align="left"><p><code>Sourcepath = &quot;\\Server\Office2013”</code></p></td>
-        </tr>
-        </tbody>
-        </table>
-
-         
+        The above XML configuration file specifies that Office 2013 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office 2013, which is the location where Office applications will be saved to. Note that the Product ID of the applications will not affect the final licensing of Office. Office 2013 App-V packages with various licensing can be created from the same applications through specifying licensing in a later stage. For more information, see [Customizable attributes and elements of the XML file](#customizable-attributes-and-elements-of-the-XML-file), later in this topic.
 
         After editing the configuration.xml file to specify the desired product, languages, and also the location which the Office 2013 applications will be saved onto, you can save the configuration file, for example, as Customconfig.xml.
 
@@ -319,25 +262,72 @@ The XML file that is included in the Office Deployment Tool specifies the produc
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><p><strong>\\server\Office2013</strong></p></td>
+    <td align="left"><p><code>\\server\Office2013</code></p></td>
     <td align="left"><p>is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, Customconfig.xml.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><strong>Setup.exe</strong></p></td>
+    <td align="left"><p><code>setup.exe</code></p></td>
     <td align="left"><p>is the Office Deployment Tool.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><strong>/download</strong></p></td>
+    <td align="left"><p><code>/download</code></p></td>
     <td align="left"><p>downloads the Office 2013 applications that you specify in the customConfig.xml file. These bits can be later converted in an Office 2013 App-V package with Volume Licensing.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><strong>\\server\Office2013\Customconfig.xml</strong></p></td>
+    <td align="left"><p><code>\\server\Office2013\Customconfig.xml</code></p></td>
     <td align="left"><p>passes the XML configuration file required to complete the download process, in this example, customconfig.xml. After using the download command, Office applications should be found in the location specified in the configuration xml file, in this example \\Server\Office2013.</p></td>
     </tr>
     </tbody>
     </table>
 
-     
+#### Customizable attributes and elements of the XML file
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Input and description</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Add element:<br>Specifies the products and languages to include in the package.</p></td>
+<td align="left"><p>N/A</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>OfficeClientEdition (attribute of Add element):<br>Specifies the edition of Office 2013 product to use: 32-bit or 64-bit. The operation fails if <strong>OfficeClientEdition</strong> is not set to a valid value.</p></td>
+<td align="left"><p><code>OfficeClientEdition=&quot;32&quot;</code></p>
+<p><code>OfficeClientEdition=&quot;64&quot;</code></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Product element:<br>Specifies the application. Project 2013 and Visio 2013 must be specified here as an added product to be included in the applications.</p></td>
+<td align="left"><p><code>Product ID =&quot;O365ProPlusRetail &quot;</code></p>
+<p><code>Product ID =&quot;VisioProRetail&quot;</code></p>
+<p><code>Product ID =&quot;ProjectProRetail&quot;</code></p>
+<p><code>Product ID =&quot;ProPlusVolume&quot;</code></p>
+<p><code>Product ID =&quot;VisioProVolume&quot;</code></p>
+<p><code>Product ID = &quot;ProjectProVolume&quot;</code></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Language element:<br>Specifies the language supported in the applications.</p></td>
+<td align="left"><p><code>Language ID=&quot;en-us&quot;</code></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Version (attribute of Add element):<br>Optional. Specifies a build to use for the package. Defaults to latest advertised build (as defined in v32.CAB at the Office source).</p></td>
+<td align="left"><p><code>15.1.2.3</code></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>SourcePath (attribute of Add element):<br>Specifies the location in which the applications will be saved to.</p></td>
+<td align="left"><p><code>Sourcepath = &quot;\\Server\Office2013”</code></p></td>
+</tr>
+</tbody>
+</table>
+
+   
 
 ### Convert the Office applications into an App-V package
 
@@ -389,122 +379,58 @@ After you download the Office 2013 applications through the Office Deployment To
 </tbody>
 </table>
 
- 
-
-**How to convert the Office applications into an App-V package**
+#### How to convert the Office applications into an App-V package
 
 1.  In Notepad, reopen the CustomConfig.xml file, and make the following changes to the file:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Parameter</th>
-    <th align="left">What to change the value to</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>SourcePath</p></td>
-    <td align="left"><p>Point to the Office applications downloaded earlier.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>ProductID</p></td>
-    <td align="left"><p>Specify the type of licensing, as shown in the following examples:</p>
-    <ul>
-    <li><p>Subscription Licensing</p>
-    <pre class="syntax" space="preserve"><code>&lt;Configuration&gt;
-       &lt;Add SourcePath= &quot;\\server\Office 2013&quot; OfficeClientEdition=&quot;32&quot; &gt;
-        &lt;Product ID=&quot;O365ProPlusRetail&quot;&gt;
-          &lt;Language ID=&quot;en-us&quot; /&gt;
-        &lt;/Product&gt;
-        &lt;Product ID=&quot;VisioProRetail&quot;&gt;
-          &lt;Language ID=&quot;en-us&quot; /&gt;
-        &lt;/Product&gt;
-      &lt;/Add&gt;  
-    &lt;/Configuration&gt; </code></pre>
-    <p>In this example, the following changes were made to create a package with Subscription licensing:</p>
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>SourcePath</strong></p></td>
-    <td align="left"><p>is the path, which was changed to point to the Office applications that were downloaded earlier.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Product ID</strong></p></td>
-    <td align="left"><p>for Office was changed to <code>O365ProPlusRetail</code>.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Product ID</strong></p></td>
-    <td align="left"><p>for Visio was changed to <code>VisioProRetail</code>.</p></td>
-    </tr>
-    </tbody>
-    </table>
-    <p> </p>
-    <p></p></li>
-    <li><p>Volume Licensing</p>
-    <pre class="syntax" space="preserve"><code>&lt;Configuration&gt;
-       &lt;Add SourcePath= &quot;\\Server\Office2013&quot; OfficeClientEdition=&quot;32&quot; &gt;
-        &lt;Product ID=&quot;ProPlusVolume&quot;&gt;
-          &lt;Language ID=&quot;en-us&quot; /&gt;
-        &lt;/Product&gt;
-        &lt;Product ID=&quot;VisioProVolume&quot;&gt;
-          &lt;Language ID=&quot;en-us&quot; /&gt;
-        &lt;/Product&gt;
-      &lt;/Add&gt;  
-    &lt;/Configuration&gt;</code></pre>
-    <p>In this example, the following changes were made to create a package with Volume licensing:</p>
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>SourcePath</strong></p></td>
-    <td align="left"><p>is the path, which was changed to point to the Office applications that were downloaded earlier.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Product ID</strong></p></td>
-    <td align="left"><p>for Office was changed to <code>ProPlusVolume</code>.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Product ID</strong></p></td>
-    <td align="left"><p>for Visio was changed to <code>VisioProVolume</code>.</p></td>
-    </tr>
-    </tbody>
-    </table>
-    <p> </p>
-    <p></p></li>
-    </ul></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>ExcludeApp (optional)</p></td>
-    <td align="left"><p>Lets you specify Office programs that you don’t want included in the App-V package that the Office Deployment Tool creates. For example, you can exclude Access and InfoPath.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>PACKAGEGUID (optional)</p></td>
-    <td align="left"><p>By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.</p>
-    <p>An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2013 for some users, and create another package with Office 2013 and Visio 2013 for another set of users.</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>Even if you use unique package IDs, you can still deploy only one App-V package to a single device.</p>
-    </div>
-    <div>
-     
-    </div></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+    - **SourcePath**: Point to the Office applications downloaded earlier.
+    
+    - **ProductID**: Specify the type of licensing, as shown in the following examples:
+        - Subscription Licensing:
+        ```
+<Configuration>
+   <Add SourcePath= "\\server\Office 2013" OfficeClientEdition="32" >
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+    </Product>
+    <Product ID="VisioProRetail">
+      <Language ID="en-us" />
+    </Product>
+  </Add>  
+</Configuration> 
+        ```
+        In this example, the following changes were made to create a package with Subscription licensing:
+        
+        **SourcePath** is the path, which was changed to point to the Office applications that were downloaded earlier.<br>
+        **Product ID** for Office was changed to `O365ProPlusRetail`.<br>
+        **Product ID** for Visio was changed to `VisioProRetail`.
+        
+        - Volume Licensing
+        ```
+<Configuration>
+   <Add SourcePath= "\\Server\Office2013" OfficeClientEdition="32" >
+    <Product ID="ProPlusVolume">
+      <Language ID="en-us" />
+    </Product>
+    <Product ID="VisioProVolume">
+      <Language ID="en-us" />
+    </Product>
+  </Add>  
+</Configuration>
+        ```
+        In this example, the following changes were made to create a package with Volume licensing:
+        
+        **SourcePath** is the path, which was changed to point to the Office applications that were downloaded earlier.<br>
+        **Product ID** for Office was changed to `ProPlusVolume`.<br>
+        **Product ID** for Visio was changed to `VisioProVolume`.
+    
+    - **ExcludeApp** (optional): Lets you specify Office programs that you don’t want included in the App-V package that the Office Deployment Tool creates. For example, you can exclude Access and InfoPath.
+    
+    - **PACKAGEGUID** (optional): By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.
+        
+        An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2013 for some users, and create another package with Office 2013 and Visio 2013 for another set of users.
+        
+        **Note**&nbsp;&nbsp;Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
 
 2.  Use the /packager command to convert the Office applications to an Office 2013 App-V package.
 
@@ -523,40 +449,33 @@ After you download the Office 2013 applications through the Office Deployment To
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><p><strong>\\server\Office2013</strong></p></td>
+    <td align="left"><p><code>\\server\Office2013</code></p></td>
     <td align="left"><p>is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, Customconfig.xml.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><strong>Setup.exe</strong></p></td>
+    <td align="left"><p><code>setup.exe</code></p></td>
     <td align="left"><p>is the Office Deployment Tool.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><strong>/packager</strong></p></td>
+    <td align="left"><p><code>/packager</code></p></td>
     <td align="left"><p>creates the Office 2013 App-V package with Volume Licensing as specified in the customConfig.xml file.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><strong>\\server\Office2013\Customconfig.xml</strong></p></td>
+    <td align="left"><p><code>\\server\Office2013\Customconfig.xml</code></p></td>
     <td align="left"><p>passes the configuration XML file (in this case customConfig) that has been prepared for the packaging stage.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><strong>\\server\share\Office 2013AppV</strong></p></td>
+    <td align="left"><p><code>\\server\share\Office2013AppV</code></p></td>
     <td align="left"><p>specifies the location of the newly created Office App-V package.</p></td>
     </tr>
     </tbody>
     </table>
 
-     
-
     After you run the **/packager** command, the following folders appear up in the directory where you specified the package should be saved:
-
-    -   **App-V Packages** – contains an Office 2013 App-V package and two deployment configuration files.
-
-    -   **WorkingDir**
-
-    **Note**  
-    To troubleshoot any issues, see the log files in the %temp% directory (default).
-
-     
+    **App-V Packages** – contains an Office 2013 App-V package and two deployment configuration files.<br>
+    **WorkingDir**
+    
+    **Note**&nbsp;&nbsp;To troubleshoot any issues, see the log files in the %temp% directory (default).
 
 3.  Verify that the Office 2013 App-V package works correctly:
 
@@ -577,7 +496,7 @@ Deploy the App-V package for Office 2013 by using the same methods you use for a
 
 -   App-V Server
 
--   Stand-alone through PowerShell commands
+-   Stand-alone through Windows PowerShell commands
 
 ### Publishing prerequisites and requirements
 
@@ -594,9 +513,9 @@ Deploy the App-V package for Office 2013 by using the same methods you use for a
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Enable PowerShell scripting on the App-V clients</p></td>
+<td align="left"><p>Enable Windows PowerShell scripting on the App-V clients</p></td>
 <td align="left"><p>To publish Office 2013 packages, you must run a script.</p>
-<p>Package scripts are disabled by default on App-V clients. To enable scripting, run the following PowerShell command:</p>
+<p>Package scripts are disabled by default on App-V clients. To enable scripting, run the following Windows PowerShell command:</p>
 <pre class="syntax" space="preserve"><code>Set-AppvClientConfiguration –EnablePackageScripts 1</code></pre></td>
 </tr>
 <tr class="even">
@@ -640,20 +559,17 @@ Use the steps in this section to enable Office plug-ins with your Office package
 
 **To enable plug-ins for Office App-V packages**
 
-1.  Add a Connection Group through App-V Server, System Center Configuration Manager, or a PowerShell cmdlet.
+1.  Add a Connection Group through App-V Server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
 
 2.  Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2013 is installed on the computer being used to sequence the plug-in. It is recommended you use Office 365 ProPlus(non-virtual) on the sequencing computer when you sequence Office 2013 plug-ins.
 
 3.  Create an App-V package that includes the desired plug-ins.
 
-4.  Add a Connection Group through App-V server, System Center Configuration Manager, or a PowerShell cmdlet.
+4.  Add a Connection Group through App-V server, System Center Configuration Manager, or a Windows PowerShell cmdlet.
 
 5.  Add the Office 2013 App-V package and the plug-ins package you sequenced to the Connection Group you created.
 
-    **Important**  
-    The order of the packages in the Connection Group determines the order in which the package contents are merged. In your Connection group descriptor file, add the Office 2013 App-V package first, and then add the plug-in App-V package.
-
-     
+    **Important**&nbsp;&nbsp;The order of the packages in the Connection Group determines the order in which the package contents are merged. In your Connection group descriptor file, add the Office 2013 App-V package first, and then add the plug-in App-V package.
 
 6.  Ensure that both packages are published to the target computer and that the plug-in package is published globally to match the global settings of the published Office 2013 App-V package.
 
@@ -794,7 +710,11 @@ An Office 2013 App-V Package with your chosen licensing will be successfully dep
 
 ### <a href="" id="bkmk-deploy-visio-project"></a>Deploying Visio 2013 and Project 2013 with Office
 
-The following table describes the requirements and options for deploying Visio 2013 and Project 2013 with Office.
+This section describes the requirements and options for deploying Visio 2013 and Project 2013 with Office.
+
+- **To package and publish Visio 2013 and Project 2013 with Office**: Include Visio 2013 and Project 2013 in the same package with Office. If you aren’t deploying Office, you can create a package that contains Visio and/or Project.
+
+- **To deploy Visio 2013 and Project 2013 to specific users**: Use one of the following methods:
 
 <table>
 <colgroup>
@@ -803,28 +723,8 @@ The following table describes the requirements and options for deploying Visio 2
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Task</th>
-<th align="left">Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>How do I package and publish Visio 2013 and Project 2013 with Office?</p></td>
-<td align="left"><p>You must include Visio 2013 and Project 2013 in the same package with Office.</p>
-<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>How can I deploy Visio 2013 and Project 2013 to specific users?</p></td>
-<td align="left"><p>Use one of the following methods:</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">If you want to...</th>
-<th align="left">...then use this method</th>
+<th align="left">Goal</th>
+<th align="left">Method</th>
 </tr>
 </thead>
 <tbody>
@@ -842,17 +742,11 @@ The following table describes the requirements and options for deploying Visio 2
 <ol>
 <li><p>Create a package that contains Office, Visio, and Project.</p></li>
 <li><p>Deploy the package to all users.</p></li>
-<li><p>Use [AppLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/applocker-overview) to prevent specific users from using Visio and Project.</p></li>
+<li><p>Use [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) to prevent specific users from using Visio and Project.</p></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
-<p> </p></td>
-</tr>
-</tbody>
-</table>
-
- 
 
 ## Additional resources
 
@@ -873,9 +767,9 @@ The following table describes the requirements and options for deploying Visio 2
 
 **Connection Groups**
 
-[Deploying Connection Groups in Microsoft App-V v5](https://blogs.technet.microsoft.com/appv/2012/11/06/deploying-connection-groups-in-microsoft-app-v-v5/)
-
 [Managing Connection Groups](appv-managing-connection-groups.md)
+
+[Connection groups on the App-V team blog](https://blogs.technet.microsoft.com/gladiatormsft/tag/connection-groups/)
 
 **Dynamic Configuration**
 
@@ -883,4 +777,4 @@ The following table describes the requirements and options for deploying Visio 2
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

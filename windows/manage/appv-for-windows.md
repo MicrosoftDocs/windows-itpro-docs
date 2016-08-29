@@ -11,7 +11,8 @@ ms.prod: w10
 
 # Application Virtualization (App-V) for Windows 10 overview
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 The topics in this section provide information and step-by-step procedures to help you administer App-V and its components. This information will be valuable for system administrators who manage large installations with many servers and clients and for support personnel who interact directly with the computers or the end users.
 
@@ -20,7 +21,6 @@ The topics in this section provide information and step-by-step procedures to he
 - [What's new in App-V](appv-about-appv.md)
 - [Evaluating App-V](appv-evaluating-appv.md)
 - [High Level Architecture for App-V](appv-high-level-architecture.md)
-- [Accessibility for App-V](appv-accessibility.md)
 
 [Planning for App-V](appv-planning-for-appv.md)  
 
@@ -58,6 +58,6 @@ The topics in this section provide information and step-by-step procedures to he
 - [Viewing App-V Server Publishing Metadata](appv-viewing-appv-server-publishing-metadata.md)
 - [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](appv-running-locally-installed-applications-inside-a-virtual-environment.md)
 
-### Have a suggestion for App-V?
+## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

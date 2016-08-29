@@ -11,20 +11,21 @@ ms.prod: w10
 
 # Changing the Frequency of UE-V Scheduled Tasks
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 When the User Experience Virtualization (UE-V) service is enabled, it creates the following scheduled tasks:
 
--   **Monitor Application Settings**
+-   [Monitor Application Settings](#monitor-application-settings)
 
--   **Sync Controller Application**
+-   [Sync Controller Application](#sync-controller-application)
 
--   **Synchronize Settings at Logoff**
+-   [Synchronize Settings at Logoff](#synchronize-settings-at-logoff)
 
--   **Template Auto Update**
+-   [Template Auto Update](#template-auto-update)
 
-**Note**  
-These tasks must remain enabled as UE-V cannot function without them.
+**Note**<br>
+These tasks must remain enabled, because UE-V cannot function without them.
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 
@@ -239,7 +240,7 @@ The following additional information applies to UE-V scheduled tasks:
 
 ## Have a suggestion for UE-V?
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

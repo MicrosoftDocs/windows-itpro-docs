@@ -10,9 +10,10 @@ ms.prod: w10
 
 # Deploying the App-V server
 
-Applies to: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2
+**Applies to**
+-   Windows Server 2016
 
->**Note** If you plan to use the App-V server components in your deployment, note that they reference App-V 5.x. This is because the App-V server components have not changed in App-V for Windows 10. 
+>**Note**<br>If you plan to use the App-V server components in your deployment, note that they reference App-V 5.x. This is because the App-V server components have not changed in App-V for Windows 10. 
 
 You can install the Application Virtualization (App-V) server components using different deployment configurations, which are described in this topic. Before you install the server features, review the server section of [App-V Security Considerations](appv-security-considerations.md). 
 
@@ -102,10 +103,10 @@ The reporting information will be maintained until it is successfully sent to th
 
 If you want to retrieve report information, you must use Microsoft SQL Server Reporting Services (SSRS) which is available with Microsoft SQL. SSRS is not installed when you install the App-V reporting server and it must be deployed separately to generate the associated reports.
 
-For more information, see [About App-V Reporting](appv-reporting.md) and [How to Enable Reporting on the App-V Client by Using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md).
+For more information, see [About App-V Reporting](appv-reporting.md) and [How to Enable Reporting on the App-V Client by Using Windows PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md).
 
 ## Other resources for the App-V server
 - [Deploying App-V](appv-deploying-appv.md)
 
 ## Have a suggestion for App-V?
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

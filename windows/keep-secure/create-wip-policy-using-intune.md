@@ -411,11 +411,11 @@ There are no default locations included with WIP, you must add each of your netw
 
 4. Decide if you want to Windows to look for additional network settings:
 
+    ![Microsoft Intune, Choose if you want Windows to search for additinal proxy servers or IP ranges in your enterprise](images/intune-network-detection-boxes.png)
+
     - **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network.
 
 	- **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
-
-	- **Show the Windows Information Protection icon overlay on your allowed apps that are WIP-unaware in the Windows Start menu and on corporate file icons in the File Explorer.** Click this box if you want the Windows Information Protection icon overlay to appear on corporate files or in the Start menu, on top the tiles for your unenlightened protected apps.
 
 5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 

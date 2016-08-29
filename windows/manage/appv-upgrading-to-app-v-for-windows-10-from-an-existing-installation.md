@@ -10,7 +10,8 @@ ms.prod: w10
 
 # Upgrading to App-V for Windows 10 from an existing installation
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 If you’re already using App-V and you’re planning to upgrade user devices to Windows 10, you need to make only the following few adjustments to your existing environment to start using App-V for Windows 10. 
 
@@ -80,16 +81,6 @@ Type the following cmdlet in a Windows PowerShell window:
 
 3. Enter your existing App-V publishing server’s details in **Options** and then click or press **Apply**.
 
-<!-- For the following three items, we're looking for more detail from Chintan --> 
-
-Ensure newly added machine/ user is entitled to receive packages from the server configure in step #2.  
-
-Sync and verify packages and/or connection groups pushed by the App-V server function correctly.  
-
-Validate other package management commands (unpublish, remove etc.).
-
-<!-- ++++++++++++++++++++++++++++++ -->
-
 ## Verify that the in-box App-V client can receive and launch .appv packages
 
 1. Add and publish a package using the following Windows PowerShell cmdlets: 
@@ -104,4 +95,4 @@ Validate other package management commands (unpublish, remove etc.).
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

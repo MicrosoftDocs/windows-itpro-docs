@@ -11,7 +11,8 @@ ms.prod: w10
 
 # About App-V Reporting
 
-Applies to: Windows 10, version 1607
+**Applies to**
+-   Windows 10, version 1607
 
 Application Virtualization (App-V) includes a built-in reporting feature that helps you collect information about computers running the App-V client as well as information about virtual application package usage. You can use this information to generate reports from a centralized database.
 
@@ -55,75 +56,47 @@ The following list displays the end–to-end high-level workflow for reporting i
 
     >**Note**  
     By default, the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
-
-     
-
+    
     If the App-V client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
 
 ### <a href="" id="-------------app-v-reporting-server-frequently-asked-questions"></a> App-V reporting server frequently asked questions
 
-The following table displays answers to common questions about App-V reporting
+The following list displays answers to common questions about App-V reporting.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Question</th>
-<th align="left">More Information</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>What is the frequency that reporting information is sent to the reporting database?</p></td>
-<td align="left"><p>The frequency depends on how the reporting task is configured on the computer running the App-V client. You must configure the frequency / interval for sending the reporting data. App-V Reporting is not enabled by default.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>What information is stored in the reporting server database?</p></td>
-<td align="left"><p>The following list displays what is stored in the reporting database:</p>
-<ul>
-<li><p>The operating system running on the computer running the App-V client: host name, version, service pack, type - client/server, processor architecture.</p></li>
-<li><p>App-V Client information: version.</p></li>
-<li><p>Published package list: GUID, version GUID, name.</p></li>
-<li><p>Application usage information: name, version, streaming server, user (domain\alias), package version GUID, launch status and time, shutdown time.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>What is the average volume of information that is sent to the reporting server?</p></td>
-<td align="left"><p>It depends. The following list displays the three sets of the data sent to the reporting server:</p>
-<ol>
-<li><p>Operating system, and App-V client information. ~150 Bytes, every time this data is sent.</p></li>
-<li><p>Published package list. ~7 KB for 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there is no change, this information is not sent.</p></li>
-<li><p>Virtual application usage information – about 0.25KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the Windows PowerShell cmdlet, there is an optional argument that controls if the data needs to be re-sent next time around – that argument is <strong>DeleteOnSuccess</strong>.</p>
-<p></p>
-<p>So for example, if twenty applications are opened and closed and reporting information is scheduled to be sent daily, the typical daily traffic should be about 0.15KB + 20 x 0.25KB, or about 5KB/user</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Can reporting be scheduled?</p></td>
-<td align="left"><p>Yes. Besides manually sending reporting using Windows PowerShell cmdlets (<strong>Send-AppvClientReport</strong>), the task can be scheduled so it will happen automatically. There are two ways to schedule the reporting:</p>
-<ol>
-<li><p>Using Windows PowerShell cmdlets - <strong>Set-AppvClientConfiguration</strong>. For example:</p>
-<p>Set-AppvClientConfiguration -ReportingEnabled 1 -ReportingServerURL http://any.com/appv-reporting</p>
-<p></p>
-<p>For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md) and look for the following entries: <strong>ReportingEnabled</strong>, <strong>ReportingServerURL</strong>, <strong>ReportingDataCacheLimit</strong>, <strong>ReportingDataBlockSize</strong>, <strong>ReportingStartTime</strong>, <strong>ReportingRandomDelay</strong>, <strong>ReportingInterval</strong>.</p>
-<p></p></li>
-<li><p>By using Group Policy. If distributed using the domain controller, the settings are the same as previously listed.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Group Policy settings override local settings configured using Windows PowerShell.</p>
-</div>
-<div>
- 
-</div></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+- **What is the frequency that reporting information is sent to the reporting database?**
 
- 
+    The frequency depends on how the reporting task is configured on the computer running the App-V client. You must configure the frequency / interval for sending the reporting data. App-V Reporting is not enabled by default.
+
+- **What information is stored in the reporting server database?**
+
+    The following list displays what is stored in the reporting database:
+    - The operating system running on the computer running the App-V client: host name, version, service pack, type - client/server, processor architecture.
+    - App-V Client information: version.
+    - Published package list: GUID, version GUID, name.
+    - Application usage information: name, version, streaming server, user (domain\alias), package version GUID, launch status and time, shutdown time.
+
+- **What is the average volume of information that is sent to the reporting server?**
+
+    It depends. The following list displays the three sets of the data sent to the reporting server:
+    - Operating system, and App-V client information. ~150 Bytes, every time this data is sent.
+    - Published package list. ~7 KB for 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there is no change, this information is not sent.
+    - Virtual application usage information – about 0.25KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the Windows PowerShell cmdlet, there is an optional argument that controls if the data needs to be re-sent next time around – that argument is **DeleteOnSuccess**.
+    
+    So for example, if twenty applications are opened and closed and reporting information is scheduled to be sent daily, the typical daily traffic should be about 0.15KB + 20 x 0.25KB, or about 5KB/user.
+
+- **Can reporting be scheduled?**
+
+    Yes. Besides manually sending reporting using Windows PowerShell cmdlets (**Send-AppvClientReport**), the task can be scheduled so it will happen automatically. There are two ways to schedule the reporting:
+    - Using a Windows PowerShell cmdlet: **Set-AppvClientConfiguration**. For example:
+    `Set-AppvClientConfiguration -ReportingEnabled 1 -ReportingServerURL http://any.com/appv-reporting`
+    
+    For a complete list of client configuration settings see [About Client Configuration Settings](appv-client-configuration-settings.md) and look for the following entries: **ReportingEnabled**, **ReportingServerURL**, **ReportingDataCacheLimit**, **ReportingDataBlockSize**, **ReportingStartTime**, **ReportingRandomDelay**, **ReportingInterval**.
+    
+    - By using Group Policy. If distributed using the domain controller, the settings are the same as previously listed.
+    
+    **Note**  
+    Group Policy settings override local settings configured using Windows PowerShell.
+
 
 ## <a href="" id="---------app-v-client-reporting"></a> App-V Client Reporting
 
@@ -291,7 +264,7 @@ To retrieve report information and create reports using App-V you must use one o
 
     **spProcessClientReport** is scheduled to run at midnight or 12:00 AM.
 
-    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. You should ensure that the Microsoft SQL Server Agent is set to **AutoStart**. For more information see [Autostart SQL Server Agent (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=287045).
+    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. You should ensure that the Microsoft SQL Server Agent is set to **AutoStart**. For more information see [Autostart SQL Server Agent (SQL Server Management Studio)](https://technet.microsoft.com/library/ms178130).
 
     The stored procedure is also created when using the App-V database scripts.
 
@@ -300,7 +273,7 @@ You should also ensure that the reporting server web service’s **Maximum Concu
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
