@@ -42,7 +42,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
     - Turn off unsolicited network traffic on the Offline Maps settings page
     - Turn off all Windows spotlight features
 
-## <a href="" id="bkmk-othersettings"></a>Settings by edition
+## <a href="" id="bkmk-othersettings"></a>Settings
 
 
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections.
@@ -98,9 +98,9 @@ See the following table for a summary of the management settings for Windows 10 
 | [25. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 
-### Settings for Windows Server 2016, with the desktop experience (Datacenter and Standard editions)
+### Settings for Windows Server 2016 with Desktop Experience
 
-See the following table for a summary of the management settings for Windows Server 2016, with the desktop experience (Datacenter and Standard editions).
+See the following table for a summary of the management settings for Windows Server 2016 with Desktop Experience.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
@@ -124,9 +124,9 @@ See the following table for a summary of the management settings for Windows Ser
 | [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | | |
 | [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 
-### Settings for Windows Server 2016, Server Core installation
+### Settings for Windows Server 2016 Server Core
 
-See the following table for a summary of the management settings for Windows Server 2016, Server Core installation.
+See the following table for a summary of the management settings for Windows Server 2016 Server Core.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
@@ -139,9 +139,9 @@ See the following table for a summary of the management settings for Windows Ser
 | [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 
-### Settings for Windows Server 2016, Nano Server installation
+### Settings for Windows Server 2016 Nano Server
 
-See the following table for a summary of the management settings for Windows Server 2016, Server Core installation.
+See the following table for a summary of the management settings for Windows Server 2016 Nano Server.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
@@ -160,6 +160,8 @@ A certificate trust list is a predefined list of items, such as a list of certif
 
 To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates, which also includes the disallowed certificate list and the pin rules list.
 
+For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
+
 - Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off Automatic Root Certificates Update**
 
     -or-
@@ -173,6 +175,9 @@ To turn off the automatic download of an updated certificate trust list, you can
 3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
 4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
 
+On Windows Server 2016 Server Core:
+
+- Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot**, with a value of 1.
 
 ### <a href="" id="bkmk-cortana"></a>2. Cortana
 
@@ -184,11 +189,11 @@ Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Ad
 
 | Policy                                               | Description                                                                           |
 |------------------------------------------------------|---------------------------------------------------------------------------------------|
-| Allow Cortana                                        | Choose whether to let Cortana install and run on the device.                          |
-| Allow search and Cortana to use location             | Choose whether Cortana and Search can provide location-aware search results.          |
-| Do not allow web search                              | Choose whether to search the web from Windows Desktop Search. <br /> Default: Disabled|
-| Don't search the web or display web results in Search| Choose whether to search the web from Cortana.                                        |
-| Set what information is shared in Search             | Control what information is shared with Bing in Search.                               |
+| Allow Cortana                                        | Choose whether to let Cortana install and run on the device.<br/><br/>Disable this policy to turn off Cortana. |
+| Allow search and Cortana to use location             | Choose whether Cortana and Search can provide location-aware search results.<br/><br/>Disable this policy to block access to location information for Cortana. |
+| Do not allow web search                              | Choose whether to search the web from Windows Desktop Search.<br/><br/>Enable this policy to remove the option to search the Internet from Cortana. |
+| Don't search the web or display web results in Search| Choose whether to search the web from Cortana.<br/><br/>Enable this policy to stop web queries and results from showing in Search. |
+| Set what information is shared in Search             | Control what information is shared with Bing in Search.<br/><br/>If you enable this policy and set it to **Anonymous info**, usage information will be shared but not search history, Microsoft Account information, or specific location. |
 
 In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
 
@@ -225,14 +230,12 @@ If your organization tests network traffic, you should not use Fiddler to test W
 
 The following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
+> [!NOTE] This does not apply to Windows Server 2016.
+
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Experience/AllowCortana                              | Choose whether to let Cortana install and run on the device.                                        |
 | Search/AllowSearchToUseLocation                      | Choose whether Cortana and Search can provide location-aware search results. <br /> Default: Allowed|
-
-### <a href="" id="bkmk-cortana-prov"></a>2.3 Cortana Windows Provisioning
-
-To use Windows Imaging and Configuration Designer (ICD) to create a provisioning package with the settings for these policies, go to **Runtime settings** &gt; **Policies** to find **Experience** &gt; **AllowCortana** and **Search** &gt; **AllowSearchToUseLocation**.
 
 ### <a href="" id="bkmk-datetime"></a>3. Date & Time
 
@@ -257,11 +260,11 @@ To turn off font streaming, create a REG\_DWORD registry setting called **Disabl
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 
-To turn off Insider Preview builds for a released version of Windows 10:
+To turn off Insider Preview builds for a released version of Windows 10 or Windows Server 2016 with Desktop Experience:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
 
-To turn off Insider Preview builds:
+To turn off Insider Preview builds for Windows 10:
 
 > [!NOTE]  
 > If you're running a preview version of Windows 10 or Windows Server 2016, you must roll back to a released version before you can turn off Insider Preview builds.
@@ -1032,11 +1035,17 @@ To turn off **Let apps run in the background**:
 
 Enterprise customers can manage their Windows activation status with volume licensing using an on-premise Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
 
+For Windows 10:
+
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Activation**
 
     -or-
 
 -   Apply the Licensing/DisallowKMSClientOnlineAVSValidation MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is disabled (default) and 1 is enabled.
+
+For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Core:
+
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Activation**
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
@@ -1106,7 +1115,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
     -or-
 
--   Apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
+-   For Windows 10 only, apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
     -or-
 
@@ -1122,7 +1131,7 @@ You can stop sending file samples back to Microsoft.
 
     -or-
 
--   Apply the Defender/SubmitSamplesConsent MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+-   For Windows 10 only, apply the Defender/SubmitSamplesConsent MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
 
     -   **0**. Always prompt.
 
@@ -1144,7 +1153,7 @@ You can stop downloading definition updates:
 
 -   Disable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
 
-You can stop Enhanced Notifications:
+For Windows 10 only, you can stop Enhanced Notifications:
 
 - Turn off the feature in the UI.
 
@@ -1289,7 +1298,7 @@ You can turn off automatic updates by doing one of the following. This is not re
 
     -or-
 
--   Apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+-   For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
 
     -   **0**. Notify the user before downloading the update.
 
