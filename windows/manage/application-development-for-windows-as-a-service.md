@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, servicing
 author: jdeckerMS
+redirect_url: https://msdn.microsoft.com/windows/uwp/get-started/application-development-for-windows-as-a-service
 ---
 
 # Application development for Windows as a service
