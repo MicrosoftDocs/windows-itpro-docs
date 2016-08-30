@@ -54,7 +54,7 @@ Now that the app is in your Store for Business inventory, you can choose how to 
 
 Qualified education institutions can purchase Minecraft: Education Edition volume licenses through their Microsoft channel partner. Schools need to be part of the Enrollment for Education Solutions program. Educational institutions should work with their channel partner to determine which Minecraft: Education Edition licensing offer is best for their institution. The process looks like this: 
 
-- Your channel partner will submit and process your volume license order, and your licenses will be shown on [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), and the copies will be available in [Windows Store for Business](https://www.microsoft.com/business-store) inventory. 
+- Your channel partner will submit and process your volume license order, your licenses will be shown on [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), and the copies will be available in [Windows Store for Business](https://www.microsoft.com/business-store) inventory. 
 - You’ll receive an email with a link to Windows Store for Business. 
 - Sign in to [Windows Store for Business](https://www.microsoft.com/business-store) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
 
@@ -68,7 +68,13 @@ After Minecraft Education Edition is added to your Windows Store for Business, y
 
 Admins can also add Minecraft: Education Edition to the private store. This allows people in your organization to install the app from the private store. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store). 
 
-![App distribution options](images/mc-install-for-me-admin.png)
+Here's the page you'll see for individual copies of **Minecraft: Education Edition**. 
+
+![App distribution options - individual copies](images/mc-install-for-me-admin.png)
+
+Here's the page you'll see for volume licensed copies of of **Minecraft: Education Edition**.
+
+![App distribution options - individual copies](images/wsfb-minecraft-vl.png)
 
 ### Install for me
 You can install the app on your PC. This gives you a chance to test the app and know how you might help others in your organization use the app.   
@@ -99,22 +105,22 @@ Enter email addresses for your students, and each student will get an email with
 
 **To finish Minecraft install (for students)**
 
-Students will receive an email with a link that will install the app on their PC.
+1. Students will receive an email with a link that will install the app on their PC.</br>
 
-![Email with Get the app link](images/minecraft-student-install-email.png)
+    ![Email with Get the app link](images/minecraft-student-install-email.png)
 
-1. Click **Get the app** to start the app install in Windows Store app. 
-2. In Windows Store app, click **Install**. 
+2. Click **Get the app** to start the app install in Windows Store app. 
+3. In Windows Store app, click **Install**. 
 
-     ![Windows Store app with Minecraft page](images/minecraft-in-windows-store-app.png)
+    ![Windows Store app with Minecraft page](images/minecraft-in-windows-store-app.png)
 
-After installing the app, students can find Minecraft: Education Edition in Windows Store app under **My Library**.
+    After installing the app, students can find Minecraft: Education Edition in Windows Store app under **My Library**.
 
-![Windows Store app showing access to My Library](images/minecraft-private-store.png) 
+    ![Windows Store app showing access to My Library](images/minecraft-private-store.png) 
 
-When students click **My Libarary** they'll find apps assigned to them.
+    When students click **My Libarary** they'll find apps assigned to them.
 
-![My Library for example student](images/minecraft-my-library.png) 
+    ![My Library for example student](images/minecraft-my-library.png) 
 
 ### Download for others
 Download for others allows teachers or IT admins to download a packages that they can install on student PCs. This will install Minecraft: Education Edition on the PC, and allows anyone with a Windows account to use the app on that PC. This option is best for younger students, and for shared computers. Choose this option when:
@@ -175,7 +181,7 @@ Minecraft: Education Edition adds a new role for teachers: **Basic Purchaser**. 
 - Acquire and manage the app
 - Info on Support page (including links to documentation and access to support through customer service)
 
-![assign roles to manage Minecraft permissions](images/minecraft-perms.png)
+    ![assign roles to manage Minecraft permissions](images/minecraft-perms.png)
 
 **To assign Basic Purchaser role**
 
