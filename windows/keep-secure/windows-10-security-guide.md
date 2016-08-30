@@ -74,7 +74,7 @@ Table 1. Windows 10 solutions to typical access control challenges
  
 The sections that follow describe these challenges and solutions in more detail.
 
-### Microsoft Passport
+## Microsoft Passport
 
 Microsoft Passport provides strong two-factor authentication (2FA), fully integrated into Windows, and replaces passwords with the combination of an enrolled device and either a PIN or Windows Hello. Microsoft Passport is conceptually similar to smart cards but more flexible. Authentication is performed by using an asymmetric key pair instead of a string comparison (for example, password), and the user’s key material can be secured by using hardware.
 Unlike smart cards, Microsoft Passport does not require the extra infrastructure components required for smart card deployment. In particular, you do not need public key infrastructure (PKI). If you already use PKI – for example, in secure email or VPN authentication – you can use the existing infrastructure with Microsoft Passport. Microsoft Passport combines the major advantages of smart card technology – deployment flexibility for virtual smart cards and robust security for physical smart cards – without any of their drawbacks.
@@ -189,7 +189,7 @@ Table 2. Data Protection in Windows 10 and Windows 7
 
 The sections that follow describe these improvements in more detail.
 
-### Prepare for drive and file encryption
+#### Prepare for drive and file encryption
 
 The best type of security measures are transparent to the user during implementation and use. Every time there is a possible delay or difficulty because of a security feature, there is strong likelihood that users will try to bypass security. This situation is especially true for data protection, and that’s a scenario that organizations need to avoid.
 Whether you’re planning to encrypt entire volumes, removable devices, or individual files, Windows 10 meets your needs by providing streamlined, usable solutions. In fact, you can take several steps in advance to prepare for data encryption and make the deployment quick and smooth.
@@ -205,7 +205,7 @@ Basically, it was a big hassle. If IT staff were provisioning new PCs, they coul
 
 Microsoft includes instrumentation in Windows 10 that enables the operating system to fully manage the TPM. There is no need to go into the BIOS, and all scenarios that required a restart have been eliminated.
 
-### Deploy hard drive encryption
+#### Deploy hard drive encryption
 
 BitLocker is capable of encrypting entire hard drives, including both system and data drives. BitLocker pre-provisioning can drastically reduce the time required to provision new PCs with BitLocker enabled. With Windows 10, administrators can turn on BitLocker and the TPM from within the Windows Preinstallation Environment before they install Windows or as part of an automated deployment task sequence without any user interaction. Combined with Used Disk Space Only encryption and a mostly empty drive (because Windows is not yet installed), it takes only a few seconds to enable BitLocker.
 With earlier versions of Windows, administrators had to enable BitLocker after Windows had been installed. Although this process could be automated, BitLocker would need to encrypt the entire drive, a process that could take anywhere from several hours to more than a day depending on drive size and performance, which significantly delayed deployment. Microsoft has improved this process through multiple features in Windows 10.
@@ -240,13 +240,13 @@ SEDs have been available for years, but Microsoft couldn’t support their use w
 Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives, which improves both drive and system performance by offloading cryptographic calculations from the PC’s processor to the drive itself and rapidly encrypting the drive by using dedicated, purpose-built hardware. If you plan to use whole-drive encryption with Windows 10, Microsoft recommends that you investigate hard drive manufacturers and models to determine whether any of their encrypted hard drives meet your security and budget requirements.
 For more information about encrypted hard drives, see [Encrypted Hard Drive](http://go.microsoft.com/fwlink/p/?LinkId=733880).
 
-### Preboot information protection
+#### Preboot information protection
 
 An effective information protection implementation, like most security controls, considers usability as well as security. Users typically prefer a simple security experience. In fact, the more transparent a security solution becomes, the more likely users are to conform to it.
 It is crucial that organizations protect information on their PCs regardless of the state of the computer or the intent of users. This protection should not be cumbersome to users. One undesirable and previously commonplace situation is when the user is prompted for input during preboot, and then again during Windows logon. Challenging users for input more than once should be avoided.
 Windows 10 can enable a true SSO experience from the preboot environment on modern devices and in some cases even on older devices when robust information protection configurations are in place. The TPM in isolation is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they are not as user-friendly; depending on the devices’ configuration they may not offer additional security when it comes to key protection. For more information about how to configure BitLocker for SSO, see [BitLocker Countermeasures](bitlocker-countermeasures.md).
 
-### Manage passwords and PINs
+#### Manage passwords and PINs
 
 When BitLocker is enabled on a system drive and the PC has a TPM, you can choose to require that users type a PIN before BitLocker will unlock the drive. Such a PIN requirement can prevent an attacker who has physical access to a PC from even getting to the Windows logon, which makes it virtually impossible for the attacker to access or modify user data and system files.
 
@@ -254,7 +254,7 @@ Requiring a PIN at startup is a useful security feature because it acts as a sec
 Windows 10 users can update their BitLocker PINs and passwords themselves, without administrator credentials. Not only will this feature reduce support costs, but it could improve security, too, because it encourages users to change their PINs and passwords more often. In addition, InstantGo devices do not require a PIN for startup: They are designed to start infrequently and have other mitigations in place that further reduce the attack surface of the system.
 For more information about how startup security works and the countermeasures that Windows 10 provides, see [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md).
 
-### Configure Network Unlock
+#### Configure Network Unlock
 
 Some organizations have location-specific data security requirements. This is most common in environments where high-value data is stored on PCs. The network environment may provide crucial data protection and enforce mandatory authentication; therefore, policy states that those PCs should not leave the building or be disconnected from the corporate network. Safeguards like physical security locks and geofencing may help enforce this policy as reactive controls. Beyond these, a proactive security control that grants data access only when the PC is connected to the corporate network is necessary.
 
@@ -267,7 +267,7 @@ Network Unlock requires the following infrastructure:
 
 For more information about how to configure Network Unlock, see [BitLocker: How to enable Network Unlock](http://go.microsoft.com/fwlink/p/?LinkId=733905).
 
-### Microsoft BitLocker Administration and Monitoring
+#### Microsoft BitLocker Administration and Monitoring
 
 Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage and support BitLocker and BitLocker To Go. MBAM 2.5 with Service Pack 1, the latest version, has the following key features:
 
@@ -355,7 +355,7 @@ If SMB signing and mutual authentication are unavailable, a Windows 10 or Window
 
 For more information on these security improvements, (also referred to as UNC hardening), see [Microsoft Knowledge Base article 3000483](http://go.microsoft.com/fwlink/p/?LinkId=789216) and [MS15-011 & MS15-014: Hardening Group Policy](http://go.microsoft.com/fwlink/p/?LinkId=789215).
  
-### Secure hardware
+#### Secure hardware
 
 Although Windows 10 is designed to run on almost any hardware capable of running Windows 8, Windows 7, or Windows Vista, taking full advantage of Windows 10 security requires advancements in hardware-based security, including UEFI with Secure Boot, CPU virtualization features (for example, Intel VT-x), CPU memory-protection features (for example, Intel VT-d), TPM, and biometric sensors.
 
@@ -464,7 +464,7 @@ Microsoft has evangelized the importance of enterprise-grade biometric sensors t
 
 In the future, Microsoft expects OEMs to produce even more enterprise-grade biometric sensors and to continue to integrate them into systems as well as provide separate peripherals. As a result, biometrics will become a commonplace authentication method as part of an MFA system.
 
-### Secure Windows startup
+#### Secure Windows startup
 
 UEFI Secure Boot uses hardware technologies to help protect users from bootkits. Secure Boot can validate the integrity of the devices, firmware, and bootloader. After the bootloader launches, users must rely on the operating system to protect the integrity of the remainder of the system.
 
@@ -492,7 +492,7 @@ Windows 10 implements the Measured Boot feature, which uses the TPM hardware co
 
 Measured Boot focuses on acquiring the measurement data and protecting it from tampering. It must be coupled with a service that can analyze the data to determine device health and provide a more complete security service. The next section introduces just such a service.
 
-### Verify device compliance for conditional access to corporate resources
+#### Verify device compliance for conditional access to corporate resources
 
 Measured Boot itself does not prevent malware from loading during the startup process – that is the job of Secure Boot, Device Guard, and ELAM. Instead, Measured Boot provides a TPM-protected audit log that allows a trusted remote health attestation service to evaluate the PC’s startup components, state, and overall configuration. If the health attestation service detects that the PC loaded an untrustworthy component and is therefore out of compliance, the service can block the PC’s access to specific network resources or the entire network. You can even couple a health attestation service with a management system to facilitate conditional access capabilities that can initiate the quarantine and remediation processes to fix an infected PC and return it to a compliant state.
 
@@ -530,7 +530,7 @@ Applications built for Windows are designed to be secure and free of defects, bu
 
 To mitigate these risks, Windows 10 includes core improvements to make it more difficult for malware to perform buffer overflow, heap spraying, and other low-level attacks and even which code is allowed to run on the PC. In addition, these improvements dramatically reduce the likelihood that newly discovered vulnerabilities result in a successful exploit. It takes detailed knowledge of operating system architecture and malware exploit techniques to fully appreciate the impact of these improvements, but the sections that follow explain them at a high level.
 
-### Device Guard
+#### Device Guard
 
 Today’s security threat landscape is more aggressive than ever before. Modern malicious attacks are focused on revenue generation, intellectual property theft, and targeted system degradation resulting in financial loss. Many of these nefarious attackers are sponsored by nation states that have ulterior motives and large cyber-terrorism budgets. These threats can enter a company through something as simple as an email and can permanently damage the organization’s reputation for securing employee and customer data and intellectual property, not to mention having a significant financial impact. The Windows 10 operating system introduces several new security features that help mitigate a large percentage of today’s known threats.
 
@@ -602,7 +602,7 @@ You can easily manage Device Guard features through the familiar enterprise and 
 -   **Windows PowerShell.** You use Windows PowerShell primarily to create and service code integrity policies. These policies represent the most impactful component of Device Guard.
 These options provide the same experience you’re used to for management of your existing enterprise management solutions.
 
-### Address Space Layout Randomization
+#### Address Space Layout Randomization
 
 One of the most common techniques used to gain access to a system is to find a vulnerability in a privileged process that is already running, guess or find a location in memory where important system code and data have been placed, and then overwrite that information with a malicious payload. In the early days of operating systems, any malware that could write directly to the system memory could do such a thing; the malware would simply overwrite system memory in well-known and predictable locations.
 Address Space Layout Randomization (ASLR) makes that type of attack much more difficult because it randomizes how and where important data is stored in memory. With ASLR, it is more difficult for malware to find the specific location it needs to attack. Figure 4 illustrates how ASLR works by showing how the locations of different critical Windows components can change in memory between restarts.
@@ -614,7 +614,7 @@ Figure 4. ASLR at work
 Although the ASLR implementation in Windows 7 was effective, it wasn’t applied holistically across the operating system, and the level of entropy (cryptographic randomization) wasn’t always at the highest possible level. To decrease the likelihood that sophisticated attacks such as heap spraying could succeed in the Windows 8 operating system, Microsoft applied ASLR holistically across the system and increased the level of entropy many times.
 The ASLR implementation in Windows 8 and Windows 10 is greatly improved over Windows 7, especially with 64-bit system and application processes that can take advantage of a vastly increased memory space, which makes it even more difficult for malware to predict where Windows 10 stores vital data. When used on systems that have TPMs, ASLR memory randomization will be increasingly unique across devices, which makes it even more difficult for a successful exploit that works on one system to work reliably on another.
 
-### Data Execution Prevention
+#### Data Execution Prevention
 
 Malware depends on its ability to put a malicious payload into memory with the hope that it will be executed later, and ASLR will make that much more difficult. Wouldn’t it be great if you could prevent malware from running if it wrote to an area that has been allocated solely for the storage of information?
 
@@ -635,7 +635,7 @@ You can now see which processes have DEP enabled. Figure 5 shows the processes r
 
 Figure 5. Processes on which DEP has been enabled in Windows 10
 
-### Windows Heap
+#### Windows Heap
 
 The *heap* is a location in memory that Windows uses to store dynamic application data. Windows 10 continues to improve on earlier Windows heap designs by further mitigating the risk of heap exploits that could be used as part of an attack.
 
@@ -646,11 +646,11 @@ Windows 10 has several important improvements to the security of the heap over 
 
 Windows 10 resolves known heap attacks that could be used to compromise a PC running previous versions of Windows.
 
-### Memory reservations
+#### Memory reservations
 
 The lowest 64 KB of process memory is reserved for the system. Apps are no longer allowed to allocate that portion of the memory, which makes it more difficult for malware to overwrite critical system data structures in memory.
 
-### Control Flow Guard
+#### Control Flow Guard
 
 When applications are loaded into memory, they are allocated space based on the size of the code, requested memory, and other factors. When an application begins to execute code, it calls additional code located in other memory addresses. The relationships between the code locations are well known—they are written in the code itself—but previous to Windows 10, the flow between these locations was not enforced, which gives attackers the opportunity to change the flow to meet their needs. In other words, an application exploit takes advantage of this behavior by running code that the application may not typically run.
 
@@ -658,7 +658,7 @@ This kind of threat is mitigated in Windows 10 through the Control Flow Guard (
 
 An administrator cannot configure CFG; rather, an application developer can take advantage of CFG by configuring it when the application is compiled. Administrators should consider asking application developers and software vendors to deliver trustworthy Windows applications compiled with CFG enabled. Of course, browsers are a key entry point for attacks; thus Microsoft Edge, IE, and other Windows features take full advantage of CFG.
 
-### Protected Processes
+#### Protected Processes
 
 Benjamin Franklin once said that "an ounce of prevention is worth a pound of cure." His wisdom directly applies to PC security. Most security controls are designed to prevent the initial infection point. The reasoning is that if malware cannot infect the system, the system is immune to malware.
 
@@ -697,7 +697,9 @@ Microsoft’s recommendation is to use Microsoft Edge as the primary web browser
 ### The SmartScreen Filter
 
 Recent versions of Windows have many effective techniques to prevent malware from installing itself without the user’s knowledge. To work around those restrictions, malware attacks often use social engineering techniques to trick users into running software. For example, malware known as a Trojan horse pretends to be something useful, such as a utility, but carries an additional, malicious payload.
+
 Starting with Windows Internet Explorer 8, the SmartScreen Filter has helped protect users from both malicious applications and nefarious websites by using the SmartScreen Filter’s application and URL reputation services. The SmartScreen Filter in Internet Explorer would check URLs and newly downloaded apps against an online reputation service that Microsoft maintained. If the app or URL were not known to be safe, SmartScreen Filter would warn the user or even prevent the app or URL from loading, depending on how systems administrators had configured Group Policy settings.
+
 For Windows 10, Microsoft further developed the SmartScreen Filter by integrating its app reputation abilities into the operating system itself, which allows the filter to protect users regardless of the web browser they are using or the path that the app uses to arrive on the device (for example, email, USB flash drive). The first time a user runs an app that originates from the Internet, even if the user copied it from another PC, the SmartScreen Filter checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, the SmartScreen Filter warns the user or blocks execution entirely, depending on how the administrator has configured Group Policy (see Figure 7).
 
 ![SmartScreen Filter at work in Windows 10](images/security-fig7-smartscreenfilter.png "SmartScreen Filter at work in Windows 10")
@@ -723,7 +725,9 @@ Now, repeat the test on a computer running Windows 10 by copying the file to a 
 The good news is that the download and use of Universal Windows apps or even Windows Classic applications (Win32) from the Windows Store will dramatically reduce the likelihood that you encounter malware on your PC because all apps go through a careful screening process before being made available in the store. Apps that organizations build and distribute through sideloading processes will need to be reviewed internally to ensure that they meet organizational security requirements.
 
 Regardless of how users acquire Universal Windows apps, they can use them with increased confidence. Unlike Windows Classic applications, which can run with elevated privileges and have potentially sweeping access to the system and data, Universal Windows apps run in an AppContainer sandbox with limited privileges and capabilities. For example, Universal Windows apps have no system-level access, have tightly controlled interactions with other apps, and have no access to data unless the user explicitly grants the application permission.
+
 In addition, all Universal Windows apps follow the security principle of least privilege. Apps receive only the minimum privileges they need to perform their legitimate tasks, so even if an attacker exploits an app, the damage the exploit can do is severely limited and should be contained within the sandbox. The Windows Store displays the exact capabilities the app requires (for example, access to the camera), along with the app’s age rating and publisher.
+
 In the end, the Windows Store app distribution process and the app sandboxing capabilities of Windows 10 will dramatically reduce the likelihood that users encounter malicious apps on the system.
 
 ### Windows Defender
@@ -765,11 +769,12 @@ Windows Defender is designed to resist tampering; it uses several security techn
 
 **Empowerment of IT security professionals** means that Windows Defender gives IT pros the tools and configuration options necessary to make it an enterprise-class antimalware solution. It has numerous enterprise-level features 
 that put it on par with the top products in this category:
--   Integration with centralized management software, including Microsoft Intune, System Center Configuration Manager, and Microsoft System Center Operations Manager. Unlike Windows 8.1, no additional client is necessary, because Windows Defender is now integrated into Windows and only a management layer needs to be added.
--   Windows Defender supports the Open Mobile Alliance Device Management standard for centralized management by many non-Microsoft device management solutions.
--   It includes integrated classic command-line and Windows PowerShell cmdlet support.
--   Support for Windows Management Instrumentation reporting and application management is built in.
--   Full integration with Group Policy offers complete IT configuration management.
+
+* Integration with centralized management software, including Microsoft Intune, System Center Configuration Manager, and Microsoft System Center Operations Manager. Unlike Windows 8.1, no additional client is necessary, because Windows Defender is now integrated into Windows and only a management layer needs to be added.
+* Windows Defender supports the Open Mobile Alliance Device Management standard for centralized management by many non-Microsoft device management solutions.
+* It includes integrated classic command-line and Windows PowerShell cmdlet support.
+* Support for Windows Management Instrumentation reporting and application management is built in.
+* Full integration with Group Policy offers complete IT configuration management.
 
 In addition, Windows Defender now integrates the Windows Defender Offline Tool, which formerly required the creation of a bootable, standalone version of Windows Defender into the Windows Recovery Environment. This simplifies the process of remediating low-level malware infections, which may prove difficult to detect and remove with the antimalware solution running on the Windows desktop. You can update signatures for this environment automatically from within the Windows Defender Offline experience.
 
