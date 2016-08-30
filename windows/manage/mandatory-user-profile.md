@@ -16,7 +16,7 @@ author: jdeckerMS
 -   Windows 10
 
 > [!NOTE]
-> When a mandatory profile is applied to a PC running Windows 10, some features such as Universal Windows Platform (UWP) apps, the Start menu, Cortana, and Search, will not work correctly. This will be fixed in a future update. 
+> When a mandatory profile is applied to a PC running Windows 10, version 1511, some features such as Universal Windows Platform (UWP) apps, the Start menu, Cortana, and Search, will not work correctly. This will be fixed in a future update. 
 
 A mandatory user profile is a roaming user profile that has been pre-configured by an administrators to specify settings for users. Settings commonly defined in a mandatory profile include (but are not limited to): icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile are not saved when a mandatory user profile is assigned. 
 
