@@ -18,7 +18,7 @@ author: challum
 
 This guide provides a detailed description of the most important security improvements in the Windows 10 operating system, with links to more detailed articles about many of its security features. Wherever possible, specific recommendations are provided to help you implement and configure Windows 10 security features.
 
-## Introduction
+#### Introduction
 
 Windows 10 is designed to protect against known and emerging security threats across the spectrum of attack vectors. Three broad categories of security work went into Windows 10:
 -   [**Identity and access control**](#identity) features have been greatly expanded to both simplify and enhance the security of user authentication. These features include Windows Hello and Microsoft Passport, which better protect user identities through easy-to-deploy and easy-to-use multifactor authentication (MFA). Another new feature is Credential Guard, which uses virtualization-based security (VBS) to help protect the Windows authentication subsystems and users’ credentials.
@@ -74,7 +74,7 @@ Table 1. Windows 10 solutions to typical access control challenges
  
 The sections that follow describe these challenges and solutions in more detail.
 
-## Microsoft Passport
+### Microsoft Passport
 
 Microsoft Passport provides strong two-factor authentication (2FA), fully integrated into Windows, and replaces passwords with the combination of an enrolled device and either a PIN or Windows Hello. Microsoft Passport is conceptually similar to smart cards but more flexible. Authentication is performed by using an asymmetric key pair instead of a string comparison (for example, password), and the user’s key material can be secured by using hardware.
 Unlike smart cards, Microsoft Passport does not require the extra infrastructure components required for smart card deployment. In particular, you do not need public key infrastructure (PKI). If you already use PKI – for example, in secure email or VPN authentication – you can use the existing infrastructure with Microsoft Passport. Microsoft Passport combines the major advantages of smart card technology – deployment flexibility for virtual smart cards and robust security for physical smart cards – without any of their drawbacks.
@@ -101,7 +101,7 @@ Microsoft Passport effectively mitigates two major security risks. First, it eli
 
 To compromise a Microsoft Passport credential that TPM protects, an attacker must have access to the physical device, and then must find a way to spoof the user’s biometrics or guess his or her PIN—and all of this must be done before TPM anti-hammer capabilities lock the device. This sets the bar magnitudes of order higher than password phishing attacks.
 
-## Windows Hello
+### Windows Hello
 
 Windows Hello is the name given to the new biometric sign-in option for Microsoft Passport. Because biometric authentication is built directly into the operating system, Windows Hello allows users to unlock their devices by using their face or fingerprint. From here, authentication to the devices and resources is enabled through a combination of the user’s unique biometric identifier and the device itself.
 
@@ -115,7 +115,7 @@ Windows Hello supports two biometric sensor options that are suitable for enterp
 Windows Hello offers several major benefits. First, it addresses the problems of credential theft and sharing, because an attacker must obtain the device and impersonate the user’s biometric identity, which is more difficult than stealing a password or PIN. Second, the use of biometrics gives users an authenticator that’s always with them – there’s nothing to forget, lose, or leave behind. Instead of worrying about memorizing long, complex passwords, users can take advantage of a convenient, secure method for logging in to all their Windows devices. Finally, there’s nothing additional to deploy or manage. Because Windows Hello support is built directly into the operating system, 
 there are no additional drivers to deploy.
 
-## Brute-force attack resistance
+### Brute-force attack resistance
 
 A brute-force attack is the process used to break into a device simply by guessing a user’s password, PIN, or even his or her biometric identity over and over until the attacker gets it right. Over the last several versions of Windows, Microsoft has added features that dramatically reduce the chances that such an attack would succeed.
 
@@ -524,7 +524,7 @@ Based on these data points, the management server can determine whether the clie
 
 Because this solution can detect and prevent low-level malware that may be extremely difficult to detect any other way, Microsoft recommends that you consider the implementation of a management system, like Microsoft Intune, or any management solutions that take advantage of the Windows 10 cloud-based Health Attestation Server feature to detect and block devices that have been infected with advanced malware from network resources.
 
-## Secure the Windows core
+### Secure the Windows core
 
 Applications built for Windows are designed to be secure and free of defects, but the reality is that as long as human beings are writing code, vulnerabilities will continue to crop up. When identified, malicious users and software may attempt to exploit vulnerabilities by manipulating data in memory in the hope that they can bootstrap a successful exploit.
 
@@ -668,7 +668,7 @@ The key security scenario is to assume that malware is running on a system but l
 
 With Protected Processes, Windows 10 prevents untrusted processes from interacting or tampering with those that have been specially signed. Protected Processes defines levels of trust for processes. Less trusted processes are prevented from interacting with and therefore attacking more trusted processes. Windows 10 uses Protected Processes more broadly across the operating system, and for the first time, you can put antimalware solutions into the protected process space, which helps make the system and antimalware solutions less susceptible to tampering by malware that does manage to get on the system.
 
-## Secure the Windows desktop
+### Secure the Windows desktop
 
 Windows 10 includes critical improvements to the Windows core and the desktop environment, where attacks and malware most frequently enter. The desktop environment is now more resistant to malware thanks to significant improvements to Windows Defender and SmartScreen Filters. Internet browsing is a safer experience because of Microsoft Edge, a completely new browser. The Windows Store reduces the likelihood that malware will infect devices by ensuring that all applications that enter the Windows Store ecosystem have been thoroughly reviewed before being made available. Universal Windows apps are inherently more secure than typical applications because they are sandboxed. Sandboxing restricts the application’s risk of being compromised or tampered with in a way that would put the system, data, and other applications at risk.
 The sections that follow describe Windows 10 improvements to application security in more detail.
@@ -787,7 +787,7 @@ Another security threat that customers face particularly in consumer and bring y
 
 Whenever non-Microsoft real-time protection is in an inoperable state (for example, disabled, expired) for 24 hours, Windows Defender automatically turns on to ensure that the device is protected. Windows attempts to help the user remediate the issue with the non-Microsoft antimalware solution by notifying him or her as early as 5 days before the software expires. If the solution expires, Windows enables Windows Defender and continues to remind the user to renew the non-Microsoft solution. When the user updates or reactivates the solution, Windows Defender is automatically disabled. In the end, the goal is to make sure that an operable antimalware solution is running at all times.
 
-## Conclusion
+#### Conclusion
 
 Windows 10 is the culmination of many years of effort from Microsoft, and its impact from a security perspective will be significant. Many of us still remember the years of Windows XP, when the attacks on the Windows operating system, applications, and data increased in volume and matured into serious threats. With the existing platforms and security solutions that you’ve likely deployed, you’re better defended than ever. But as attackers have become more advanced, there is no doubt that they have exceeded your ability to defend your organization and users. Evidence of this fact can be found in the news virtually every day as yet another major organization falls victim. Microsoft specifically designed Windows 10 to address these modern threats and tactics from the most advanced adversaries. It can truly change the game for your organization, and it can restore your advantage against those would like to make you their next victim.
 
