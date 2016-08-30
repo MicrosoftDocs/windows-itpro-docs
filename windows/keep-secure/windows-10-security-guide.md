@@ -189,7 +189,7 @@ Table 2. Data Protection in Windows 10 and Windows 7
 
 The sections that follow describe these improvements in more detail.
 
-#### Prepare for drive and file encryption
+### Prepare for drive and file encryption
 
 The best type of security measures are transparent to the user during implementation and use. Every time there is a possible delay or difficulty because of a security feature, there is strong likelihood that users will try to bypass security. This situation is especially true for data protection, and that’s a scenario that organizations need to avoid.
 Whether you’re planning to encrypt entire volumes, removable devices, or individual files, Windows 10 meets your needs by providing streamlined, usable solutions. In fact, you can take several steps in advance to prepare for data encryption and make the deployment quick and smooth.
@@ -205,7 +205,7 @@ Basically, it was a big hassle. If IT staff were provisioning new PCs, they coul
 
 Microsoft includes instrumentation in Windows 10 that enables the operating system to fully manage the TPM. There is no need to go into the BIOS, and all scenarios that required a restart have been eliminated.
 
-#### Deploy hard drive encryption
+### Deploy hard drive encryption
 
 BitLocker is capable of encrypting entire hard drives, including both system and data drives. BitLocker pre-provisioning can drastically reduce the time required to provision new PCs with BitLocker enabled. With Windows 10, administrators can turn on BitLocker and the TPM from within the Windows Preinstallation Environment before they install Windows or as part of an automated deployment task sequence without any user interaction. Combined with Used Disk Space Only encryption and a mostly empty drive (because Windows is not yet installed), it takes only a few seconds to enable BitLocker.
 With earlier versions of Windows, administrators had to enable BitLocker after Windows had been installed. Although this process could be automated, BitLocker would need to encrypt the entire drive, a process that could take anywhere from several hours to more than a day depending on drive size and performance, which significantly delayed deployment. Microsoft has improved this process through multiple features in Windows 10.
@@ -240,13 +240,13 @@ SEDs have been available for years, but Microsoft couldn’t support their use w
 Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives, which improves both drive and system performance by offloading cryptographic calculations from the PC’s processor to the drive itself and rapidly encrypting the drive by using dedicated, purpose-built hardware. If you plan to use whole-drive encryption with Windows 10, Microsoft recommends that you investigate hard drive manufacturers and models to determine whether any of their encrypted hard drives meet your security and budget requirements.
 For more information about encrypted hard drives, see [Encrypted Hard Drive](http://go.microsoft.com/fwlink/p/?LinkId=733880).
 
-#### Preboot information protection
+### Preboot information protection
 
 An effective information protection implementation, like most security controls, considers usability as well as security. Users typically prefer a simple security experience. In fact, the more transparent a security solution becomes, the more likely users are to conform to it.
 It is crucial that organizations protect information on their PCs regardless of the state of the computer or the intent of users. This protection should not be cumbersome to users. One undesirable and previously commonplace situation is when the user is prompted for input during preboot, and then again during Windows logon. Challenging users for input more than once should be avoided.
 Windows 10 can enable a true SSO experience from the preboot environment on modern devices and in some cases even on older devices when robust information protection configurations are in place. The TPM in isolation is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they are not as user-friendly; depending on the devices’ configuration they may not offer additional security when it comes to key protection. For more information about how to configure BitLocker for SSO, see [BitLocker Countermeasures](bitlocker-countermeasures.md).
 
-#### Manage passwords and PINs
+### Manage passwords and PINs
 
 When BitLocker is enabled on a system drive and the PC has a TPM, you can choose to require that users type a PIN before BitLocker will unlock the drive. Such a PIN requirement can prevent an attacker who has physical access to a PC from even getting to the Windows logon, which makes it virtually impossible for the attacker to access or modify user data and system files.
 
@@ -254,7 +254,7 @@ Requiring a PIN at startup is a useful security feature because it acts as a sec
 Windows 10 users can update their BitLocker PINs and passwords themselves, without administrator credentials. Not only will this feature reduce support costs, but it could improve security, too, because it encourages users to change their PINs and passwords more often. In addition, InstantGo devices do not require a PIN for startup: They are designed to start infrequently and have other mitigations in place that further reduce the attack surface of the system.
 For more information about how startup security works and the countermeasures that Windows 10 provides, see [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md).
 
-#### Configure Network Unlock
+### Configure Network Unlock
 
 Some organizations have location-specific data security requirements. This is most common in environments where high-value data is stored on PCs. The network environment may provide crucial data protection and enforce mandatory authentication; therefore, policy states that those PCs should not leave the building or be disconnected from the corporate network. Safeguards like physical security locks and geofencing may help enforce this policy as reactive controls. Beyond these, a proactive security control that grants data access only when the PC is connected to the corporate network is necessary.
 
@@ -267,7 +267,7 @@ Network Unlock requires the following infrastructure:
 
 For more information about how to configure Network Unlock, see [BitLocker: How to enable Network Unlock](http://go.microsoft.com/fwlink/p/?LinkId=733905).
 
-#### Microsoft BitLocker Administration and Monitoring
+### Microsoft BitLocker Administration and Monitoring
 
 Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage and support BitLocker and BitLocker To Go. MBAM 2.5 with Service Pack 1, the latest version, has the following key features:
 
