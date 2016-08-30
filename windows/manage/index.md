@@ -56,6 +56,7 @@ Learn about managing and updating Windows 10.
 <td align="left"><p>[Configure devices without MDM](configure-devices-without-mdm.md)</p></td>
 <td align="left"><p>Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise.</p></td>
 </tr>
+<tr><td>[Windows 10 servicing options](introduction-to-windows-10-servicing.md)</td><td>This article describes the new servicing options available in Windows 10, Windows 10 Mobile, and Windows 10 IoT Core (IoT Core) and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.</td></tr>
 <tr class="even">
 <td align="left"><p>[Application Virtualization for Windows (App-V)](appv-for-windows.md)</p></td>
 <td align="left"><p>When you deploy Application Virtualization (App-V) in your orgnazation, you can deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Windows Store, and interact with them as if they were installed locally.</p></td>
