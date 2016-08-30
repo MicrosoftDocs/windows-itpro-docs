@@ -30,7 +30,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 - [Deploy Windows 10 with Configuration Manager and MDT 2013 Update 1](../deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 - [Upgrade to Windows 10 with MDT 2013 Update 1](../deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Upgrade to Windows 10 with Configuration Manager](../deploy/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
-- [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=733911)
+- [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)
 - [Windows 10 and Windows 10 Mobile](../index.md)
 
  

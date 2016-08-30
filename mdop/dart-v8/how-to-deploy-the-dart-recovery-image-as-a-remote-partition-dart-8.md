@@ -32,7 +32,7 @@ After you have finished running the Microsoft Diagnostics and Recovery Toolset (
 
 3.  Configure the WDS server to use the boot.wim file for DaRT by following your standard WDS deployment procedures.
 
-For more information about how to deploy DaRT as a remote partition, see [Walkthrough: Deploy an Image by Using PXE](http://go.microsoft.com/fwlink/?LinkId=212108) and [Windows Deployment Services Getting Started Guide](http://go.microsoft.com/fwlink/?LinkId=212106).
+For more information about how to deploy DaRT as a remote partition, see [Walkthrough: Deploy an Image by Using PXE](https://go.microsoft.com/fwlink/?LinkId=212108) and [Windows Deployment Services Getting Started Guide](https://go.microsoft.com/fwlink/?LinkId=212106).
 
 ## Related topics
 

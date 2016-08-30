@@ -33,7 +33,7 @@ The following items are required or recommended for creating the DaRT recovery i
 
 -   Windows Debugging Tools for your platform
 
-    Windows Debugging Tools are required when you run **Crash Analyzer** to determine the cause of a computer crash. We recommend that you specify the path of the Windows Debugging Tools at the time that you create the DaRT recovery image. If it is necessary, you can download the Windows Debugging Tools here: [Download and Install Debugging Tools for Windows](http://go.microsoft.com/fwlink/?LinkId=99934).
+    Windows Debugging Tools are required when you run **Crash Analyzer** to determine the cause of a computer crash. We recommend that you specify the path of the Windows Debugging Tools at the time that you create the DaRT recovery image. If it is necessary, you can download the Windows Debugging Tools here: [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/?LinkId=99934).
 
 -   Optional: **Standalone System Sweeper** definitions
 

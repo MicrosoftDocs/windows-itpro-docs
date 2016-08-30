@@ -34,7 +34,7 @@ Figure 1. The machines used in this topic.
 
 ## Related topics
 
-[Microsoft Deployment Toolkit downloads and documentation](http://go.microsoft.com/fwlink/p/?LinkId=618117)
+[Microsoft Deployment Toolkit downloads and documentation](https://go.microsoft.com/fwlink/p/?LinkId=618117)
 
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
 

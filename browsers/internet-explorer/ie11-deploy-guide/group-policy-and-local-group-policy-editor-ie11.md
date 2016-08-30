@@ -14,7 +14,7 @@ ms.sitesec: library
 # Group Policy, the Local Group Policy Editor, and Internet Explorer 11
 A Microsoft Management Console (MMC)-based tool that manages both computer and user-related configurations for an individual computer policy. This tool is included with Windows® 7 Service Pack 1 (SP1) and Windows 8.1.
 
-Here's a list of the policy settings you can use, based on the configuration type. For more info, see [Local Group Policy Editor](http://go.microsoft.com/fwlink/p/?LinkId=294912).
+Here's a list of the policy settings you can use, based on the configuration type. For more info, see [Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=294912).
 
 |Computer configuration |User configuration |
 |-----------------------|-------------------|

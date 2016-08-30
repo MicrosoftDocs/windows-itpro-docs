@@ -165,7 +165,7 @@ The following sections describe common XML file problems. Expand the section to 
 
 ### I am having problems with a custom .xml file that I authored, and I cannot verify that the syntax is correct.
 
-**Resolution:** You can load the XML schema (MigXML.xsd), included with USMT, into your XML authoring tool. For examples, see the [Visual Studio Development Center](http://go.microsoft.com/fwlink/p/?LinkId=74513). Then, load your .xml file in the authoring tool to see if there is a syntax error. In addition, see [USMT XML Reference](usmt-xml-reference.md) for more information about using the XML elements.
+**Resolution:** You can load the XML schema (MigXML.xsd), included with USMT, into your XML authoring tool. For examples, see the [Visual Studio Development Center](https://go.microsoft.com/fwlink/p/?LinkId=74513). Then, load your .xml file in the authoring tool to see if there is a syntax error. In addition, see [USMT XML Reference](usmt-xml-reference.md) for more information about using the XML elements.
 
 ### <a href="" id="i-am-using-a-migxml-helper-function--but-the-migration-isn-t-working-the-way-i-expected-it-to---how-do-i-troubleshoot-this-issue-"></a>I am using a MigXML helper function, but the migration isn’t working the way I expected it to.  How do I troubleshoot this issue?
 
@@ -251,7 +251,7 @@ Scanstate /ui:S1-5-21-124525095-708259637-1543119021*
 
 The wild card (\*) at the end of the SID will migrate the *SID*\_Classes key as well.
 
-You can also use patterns for SIDs that identify generic users or groups. For example, you can use the */ue:\*-500* option to exclude the local administrator accounts. For more information about Windows SIDs, see [this Microsoft Web site](http://go.microsoft.com/fwlink/p/?LinkId=190277).
+You can also use patterns for SIDs that identify generic users or groups. For example, you can use the */ue:\*-500* option to exclude the local administrator accounts. For more information about Windows SIDs, see [this Microsoft Web site](https://go.microsoft.com/fwlink/p/?LinkId=190277).
 
 ### My script to wipe the disk fails after running the ScanState tool on a 64-bit system.
 

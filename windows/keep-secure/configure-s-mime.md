@@ -32,11 +32,11 @@ A digitally signed message reassures the recipient that the message hasn't been 
 
 ## Prerequisites
 
--   [S/MIME is enabled for Exchange accounts](http://go.microsoft.com/fwlink/p/?LinkId=718217) (on-premises and Office 365). Users can’t use S/MIME signing and encryption with a personal account such as Outlook.com.
+-   [S/MIME is enabled for Exchange accounts](https://go.microsoft.com/fwlink/p/?LinkId=718217) (on-premises and Office 365). Users can’t use S/MIME signing and encryption with a personal account such as Outlook.com.
 -   Valid Personal Information Exchange (PFX) certificates are installed on the device.
 
-    -   [How to Create PFX Certificate Profiles in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkID=718215)
-    -   [Enable access to company resources using certificate profiles with Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=718216)
+    -   [How to Create PFX Certificate Profiles in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=718215)
+    -   [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=718216)
     -   [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md)
 
 ## Choose S/MIME settings

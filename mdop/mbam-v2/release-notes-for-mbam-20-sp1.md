@@ -67,7 +67,7 @@ If you are using MBAM with Configuration Manager, and you want to upgrade to MBA
 
 When you use Internet Explorer 10 to access the Administration and Monitoring Website, the **Submit** button on the website does not work.
 
-**Workaround**: On the server where you installed the Administration and Monitoring Website, install [Hotfix for ASP.NET browser definition files](http://go.microsoft.com/fwlink/?LinkId=317798).
+**Workaround**: On the server where you installed the Administration and Monitoring Website, install [Hotfix for ASP.NET browser definition files](https://go.microsoft.com/fwlink/?LinkId=317798).
 
 ### International domain names are not supported
 

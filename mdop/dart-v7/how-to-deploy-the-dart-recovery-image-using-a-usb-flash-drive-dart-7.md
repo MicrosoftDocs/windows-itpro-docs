@@ -13,7 +13,7 @@ ms.prod: w7
 # How to Deploy the DaRT Recovery Image Using a USB Flash Drive
 
 
-After you have finished running the **DaRT Recovery Image Wizard**, you can use the tool at <http://go.microsoft.com/fwlink/?LinkId=218888> to copy the ISO image file to a USB flash drive (UFD).
+After you have finished running the **DaRT Recovery Image Wizard**, you can use the tool at <https://go.microsoft.com/fwlink/?LinkId=218888> to copy the ISO image file to a USB flash drive (UFD).
 
 You can also manually copy the ISO image file to a UFD by following the steps provided in this section.
 

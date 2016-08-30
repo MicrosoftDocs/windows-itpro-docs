@@ -16,7 +16,7 @@ ms.prod: w8
 If you plan to use an electronic software distribution (ESD) solution to deploy virtual applications, it is important to understand the factors that go into and are affected by that decision. This topic describes the benefits of using an ESD-based scenario and provides information about the publishing and package streaming methods that you will need to consider as you proceed with your deployment.
 
 **Important**  
-Whichever ESD solution you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or later, see the System Center Configuration Manager documentation at <http://go.microsoft.com/fwlink/?LinkId=66999>.
+Whichever ESD solution you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or later, see the System Center Configuration Manager documentation at <https://go.microsoft.com/fwlink/?LinkId=66999>.
 
  
 

@@ -137,7 +137,7 @@ After MED-V and its required components are installed, MED-V must be configured.
 
 4.  After the MED-V workspace is restarted by Ftscompletion.exe, the end user is logged on. If they did not save their password during first time setup, they are prompted for it again. The MED-V workspace is then started and configured for the user. Configuration includes applying Group Policy.
 
-    We recommend that you apply only those policies that make sense in an application compatibility environment for Windows XP. For example, desktop personalization policies do not typically need to be applied and should be disabled. For more information about how to allow only local profiles, see [Group Policy Settings for Roaming User Profiles](http://go.microsoft.com/fwlink/?LinkId=205072) (http://go.microsoft.com/fwlink/?LinkId=205072).
+    We recommend that you apply only those policies that make sense in an application compatibility environment for Windows XP. For example, desktop personalization policies do not typically need to be applied and should be disabled. For more information about how to allow only local profiles, see [Group Policy Settings for Roaming User Profiles](https://go.microsoft.com/fwlink/?LinkId=205072) (https://go.microsoft.com/fwlink/?LinkId=205072).
 
 After first time setup is complete, the end user is notified that the published applications are ready. They are then able to access the applications installed in the MED-V workspace from their **Start** menu.
 

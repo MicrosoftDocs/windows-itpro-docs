@@ -36,7 +36,7 @@ MDT 2013 Update 2 requires the following components:
 
 ## <a href="" id="sec02"></a>Install Windows ADK for Windows 10
 
-These steps assume that you have the MDT01 member server installed and configured and that you have downloaded [Windows ADK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526803) to the E:\\Downloads\\ADK folder.
+These steps assume that you have the MDT01 member server installed and configured and that you have downloaded [Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526803) to the E:\\Downloads\\ADK folder.
 1.  On MDT01, log on as Administrator in the CONTOSO domain using a password of **P@ssw0rd**.
 2.  Start the **ADK Setup** (E:\\Downloads\\ADK\\adksetup.exe), and on the first wizard page, click **Continue**.
 3.  On the **Select the features you want to change** page, select the features below and complete the wizard using the default settings:
@@ -46,7 +46,7 @@ These steps assume that you have the MDT01 member server installed and configure
 
 ## <a href="" id="sec03"></a>Install MDT 2013 Update 2
 
-These steps assume that you have downloaded [MDT 2013 Update 2](http://go.microsoft.com/fwlink/p/?LinkId=618117 ) to the E:\\Downloads\\MDT 2013 folder on MDT01.
+These steps assume that you have downloaded [MDT 2013 Update 2](https://go.microsoft.com/fwlink/p/?LinkId=618117 ) to the E:\\Downloads\\MDT 2013 folder on MDT01.
 
 1.  On MDT01, log on as Administrator in the CONTOSO domain using a password of **P@ssw0rd**.
 2.  Install **MDT** (E:\\Downloads\\MDT 2013\\MicrosoftDeploymentToolkit2013\_x64.msi) with the default settings.
@@ -103,7 +103,7 @@ Figure 7. The Sharing tab of the E:\\Logs folder after sharing it with PowerShel
 
 ## <a href="" id="sec07"></a>Use CMTrace to read log files (optional)
 
-The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace (CMTrace), which is available as part [of Microsoft System Center 2012 R2 Configuration Manager Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=734717). You can use Notepad, but CMTrace formatting makes the logs easier to read.
+The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace (CMTrace), which is available as part [of Microsoft System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717). You can use Notepad, but CMTrace formatting makes the logs easier to read.
 
 ![figure 8](images/mdt-05-fig09.png)
 

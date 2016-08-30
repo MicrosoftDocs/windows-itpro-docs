@@ -36,7 +36,7 @@ You can change, repair, or remove the DaRT installation by double-clicking the D
 ## How to get DaRT 8.0
 
 
-To get the DaRT software, see [How to Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049).
+To get the DaRT software, see [How to Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Other resources for deploying the DaRT 8.0 to administrator computers
 

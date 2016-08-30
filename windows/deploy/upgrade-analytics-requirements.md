@@ -37,7 +37,7 @@ Important: You can use either a Microsoft Account or a Work or School account to
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, you’ll need to complete the following tasks to allow user computer data to be shared with and assessed by Upgrade Analytics.
 
-See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](http://go.microsoft.com/fwlink/?LinkID=822965) for more information about what user computer data Upgrade Analytics collects and assesses. See [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization) for more information about how Microsoft uses Windows telemetry data.
+See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965) for more information about what user computer data Upgrade Analytics collects and assesses. See [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization) for more information about how Microsoft uses Windows telemetry data.
 
 **Whitelist telemetry endpoints.** To enable telemetry data to be sent to Microsoft, you’ll need to whitelist the following Microsoft telemetry endpoints on your proxy server or firewall. You may need to get approval from your security group to do this.
 
@@ -49,7 +49,7 @@ See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields
 
 `https://settings.data.microsoft.com/qos`
 
-`http://go.microsoft.com/fwlink/?LinkID=544713`
+`https://go.microsoft.com/fwlink/?LinkID=544713`
 
 `https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`
 

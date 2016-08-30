@@ -19,9 +19,9 @@ App-V 4.5 supports Internet-facing server scenarios, in which users who are not
 
 You can set up an Internet-facing solution, using an ISA Server, where the App-V infrastructure is on the internal network in the following ways:
 
--   Create a Web Publishing rule for the IIS server that is hosting the ICO and OSD files—and optionally, the packages for streaming—located on the internal network. Detailed steps are provided at <http://go.microsoft.com/fwlink/?LinkId=151982>.
+-   Create a Web Publishing rule for the IIS server that is hosting the ICO and OSD files—and optionally, the packages for streaming—located on the internal network. Detailed steps are provided at <https://go.microsoft.com/fwlink/?LinkId=151982>.
 
--   Create a Server Publishing rule for the App-V Web Management Server (RTSPS). Detailed steps are provided at [http://go.microsoft.com/fwlink/?LinkId=151983&](http://go.microsoft.com/fwlink/?LinkId=151983).
+-   Create a Server Publishing rule for the App-V Web Management Server (RTSPS). Detailed steps are provided at [https://go.microsoft.com/fwlink/?LinkId=151983&](https://go.microsoft.com/fwlink/?LinkId=151983).
 
 As shown in the following illustration, if the infrastructure has implemented other firewalls between the client and the ISA Server or between the ISA Server and the internal network, both RTSPS (TCP 322) and HTTPS (TCP 443) firewall rules must be created to support the flow of traffic. Also, if firewalls have been implemented between the ISA Server and the internal network, the default traffic required for domain members must be permitted to tunnel through the firewall (DNS, LDAP, Kerberos, SMB/CIFS).
 

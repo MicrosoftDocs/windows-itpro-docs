@@ -22,9 +22,9 @@ This topic contains a brief overview of the accounts and groups, log files, and 
 
 **Physically secure your computers**. Security is incomplete without physical security. Anyone with physical access to an MBAM Server could potentially attack the entire client base. Any potential physical attacks must be considered high risk and mitigated appropriately. MBAM servers should be stored in a physically secure server room with controlled access. Secure these computers when administrators are not physically present by having the operating system lock the computer, or by using a secured screen saver.
 
-**Apply the most recent security updates to all computers**. Stay informed about new updates for operating systems, Microsoft SQL Server, and MBAM by subscribing to the Security Notification service (<http://go.microsoft.com/fwlink/p/?LinkId=28819>).
+**Apply the most recent security updates to all computers**. Stay informed about new updates for operating systems, Microsoft SQL Server, and MBAM by subscribing to the Security Notification service (<https://go.microsoft.com/fwlink/p/?LinkId=28819>).
 
-**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all MBAM and MBAM administrator accounts. Never use blank passwords. For more information about password concepts, see the “Account Passwords and Policies” white paper on TechNet (<http://go.microsoft.com/fwlink/p/?LinkId=30009>).
+**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all MBAM and MBAM administrator accounts. Never use blank passwords. For more information about password concepts, see the “Account Passwords and Policies” white paper on TechNet (<https://go.microsoft.com/fwlink/p/?LinkId=30009>).
 
 ## Accounts and Groups in MBAM
 
@@ -186,7 +186,7 @@ When TDE is enabled on a database, all backups are encrypted. Thus, special care
 
 For an example of how to enable TDE for MBAM database instances, see [Evaluating MBAM 1.0](evaluating-mbam-10.md).
 
-For more information about TDE in SQL Server 2008, see [Database Encryption in SQL Server 2008 Enterprise Edition](http://go.microsoft.com/fwlink/?LinkId=269703).
+For more information about TDE in SQL Server 2008, see [Database Encryption in SQL Server 2008 Enterprise Edition](https://go.microsoft.com/fwlink/?LinkId=269703).
 
 ## Related topics
 

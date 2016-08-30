@@ -41,10 +41,10 @@ initially. Therefore, you should continue your evaluation until you can verify t
 >**Tip:**  If you run Application Verifier against a custom application with any AppLocker policies enabled, it might prevent the application from running. You should either disable Application Verifier or AppLocker.
 You can create an inventory of Universal Windows apps on a device by using two methods: the **Get-AppxPackage** Windows PowerShell cmdlet or the AppLocker console.
  
-The following topics in the [AppLocker Step-by-Step Guide](http://go.microsoft.com/fwlink/p/?LinkId=160261) describe how to perform each method:
+The following topics in the [AppLocker Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=160261) describe how to perform each method:
 
--   [Automatically generating executable rules from a reference computer](http://go.microsoft.com/fwlink/p/?LinkId=160264)
--   [Using auditing to track which apps are used](http://go.microsoft.com/fwlink/p/?LinkId=160281)
+-   [Automatically generating executable rules from a reference computer](https://go.microsoft.com/fwlink/p/?LinkId=160264)
+-   [Using auditing to track which apps are used](https://go.microsoft.com/fwlink/p/?LinkId=160281)
 
 ### Prerequisites to completing the inventory
 

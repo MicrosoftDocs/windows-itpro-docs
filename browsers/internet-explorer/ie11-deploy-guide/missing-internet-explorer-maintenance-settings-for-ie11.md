@@ -34,11 +34,11 @@ For more information about all of the new options and Group Policy, see:
 
 -   [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md)
 
--   [Group Policy Settings Reference for Windows and Windows Server](http://go.microsoft.com/fwlink/p/?LinkId=279876)
+-   [Group Policy Settings Reference for Windows and Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=279876)
 
--   [Group Policy ADMX Syntax Reference Guide](http://go.microsoft.com/fwlink/p/?LinkId=276830)
+-   [Group Policy ADMX Syntax Reference Guide](https://go.microsoft.com/fwlink/p/?LinkId=276830)
 
--   [Enable and Disable Settings in a Preference Item](http://go.microsoft.com/fwlink/p/?LinkId=282671)
+-   [Enable and Disable Settings in a Preference Item](https://go.microsoft.com/fwlink/p/?LinkId=282671)
 
 ## IEM replacements
 The IEM settings have replacements you can use in either Group Policy Preferences or IEAK 11.

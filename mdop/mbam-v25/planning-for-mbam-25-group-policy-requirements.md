@@ -91,7 +91,7 @@ When you are ready to configure the MBAM Group Policy settings you want, do the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Copy the MBAM Group Policy Templates from [How to Get MDOP Group Policy (.admx) Templates](http://go.microsoft.com/fwlink/p/?LinkId=393941) and install them on a computer that is capable of running the Group Policy Management Console (GPMC) or Advanced Group Policy Management (AGPM).</p></td>
+<td align="left"><p>Copy the MBAM Group Policy Templates from [How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941) and install them on a computer that is capable of running the Group Policy Management Console (GPMC) or Advanced Group Policy Management (AGPM).</p></td>
 <td align="left"><p>[Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md)</p></td>
 </tr>
 <tr class="even">

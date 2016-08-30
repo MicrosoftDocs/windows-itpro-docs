@@ -50,7 +50,7 @@ You can manage your Wi-Fi Sense settings by using registry keys and the Registry
 1.  Open your Registry Editor and go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config\`
 
 2.  Create and set a new **DWORD (32-bit) Value** named, **AutoConnectAllowedOEM**, with a **Value data** of **0 (zero)**.
-<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see [How to configure Wi-Fi Sense on Windows 10 in an enterprise](http://go.microsoft.com/fwlink/p/?LinkId=620959).
+<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see [How to configure Wi-Fi Sense on Windows 10 in an enterprise](https://go.microsoft.com/fwlink/p/?LinkId=620959).
 
     ![Registry Editor, showing the creation of a new DWORD value](images/wifisense-registry.png)
 
@@ -60,7 +60,7 @@ You can manage your Wi-Fi Sense settings by changing the Windows provisioning se
 **To set up Wi-Fi Sense using WiFISenseAllowed**
 
 -   Change the Windows Provisioning setting, **WiFISenseAllowed**, to **0**.
-<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Windows Provisioning settings reference topic, [WiFiSenseAllowed](http://go.microsoft.com/fwlink/p/?LinkId=620909).
+<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Windows Provisioning settings reference topic, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909).
 
 ### Using Unattended Windows Setup settings
 If your company still uses Unattend, you can manage your Wi-Fi Sense settings by changing the Unattended Windows Setup setting, **WiFiSenseAllowed**.
@@ -68,7 +68,7 @@ If your company still uses Unattend, you can manage your Wi-Fi Sense settings by
 **To set up Wi-Fi Sense using WiFISenseAllowed**
 
 -   Change the Unattended Windows Setup setting, **WiFISenseAllowed**, to **0**.
-<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Unattended Windows Setup Reference topic, [WiFiSenseAllowed](http://go.microsoft.com/fwlink/p/?LinkId=620910).
+<p>Setting this value to **0** turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the **Wi-Fi Settings** screen, but can't be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see the Unattended Windows Setup Reference topic, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910).
 
 ### How employees can change their own Wi-Fi Sense settings
 If you don’t turn off the ability for your employees to use Wi-Fi Sense, they can turn it on locally by selecting **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings**, and then turning on **Connect to suggested open hotspots**.
@@ -84,8 +84,8 @@ Even if you selected **Automatically connect to networks shared by your contacts
 If you select the **Share network with my contacts** check box the first time you connect to a new network, the network won’t be shared.
 
 ## Related topics
-- [Wi-Fi Sense and Privacy](http://go.microsoft.com/fwlink/p/?LinkId=620911)
-- [How to configure Wi-Fi Sense on Windows 10 in an enterprise](http://go.microsoft.com/fwlink/p/?LinkId=620959)
+- [Wi-Fi Sense and Privacy](https://go.microsoft.com/fwlink/p/?LinkId=620911)
+- [How to configure Wi-Fi Sense on Windows 10 in an enterprise](https://go.microsoft.com/fwlink/p/?LinkId=620959)
 
  
 

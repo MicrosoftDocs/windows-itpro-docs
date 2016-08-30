@@ -36,7 +36,7 @@ Internet Explorer 11 includes several new features and tools. This topic includ
 
 -   **IE Administration Kit (IEAK).** Lets you create custom, branded versions of IE11. For more info and to download the tool, see [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md).
 
--   **Unattend Settings.** Lets you update the Unattend.xml file, to customize the home page, favorites, search providers, feeds, Accelerators, Web Slices, and settings for top result searches. For more info, see the [Unattend Settings: Microsoft-Windows-IE-InternetExplorer](http://go.microsoft.com/fwlink/p/?LinkId=263709).
+-   **Unattend Settings.** Lets you update the Unattend.xml file, to customize the home page, favorites, search providers, feeds, Accelerators, Web Slices, and settings for top result searches. For more info, see the [Unattend Settings: Microsoft-Windows-IE-InternetExplorer](https://go.microsoft.com/fwlink/p/?LinkId=263709).
 
  
 

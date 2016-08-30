@@ -104,7 +104,7 @@ The Read-AD\* cmdlets read information from Active Directory. The Write-Mbam\* c
 
 **Create user-to-computer associations:** The MBAM Active Directory Data Import cmdlets gather information from Active Directory and insert the data into MBAM database. However, they do not associate users to volumes. You can download the Add-ComputerUser.ps1 PowerShell script to create user-to-machine associations, which let users regain access to a computer through the Administration and Monitoring Website or by using the Self-Service Portal for recovery. The Add-ComputerUser.ps1 script gathers data from the **Managed By** attribute in Active Directory (AD), the object owner in AD, or from a custom CSV file. The script then adds the discovered users to the recovery information pipeline object, which must be passed to Write-MbamRecoveryInformation to insert the data into the recovery database.
 
-Download the Add-ComputerUser.ps1 PowerShell script from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=613122).
+Download the Add-ComputerUser.ps1 PowerShell script from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=613122).
 
 You can specify **help Add-ComputerUser.ps1** to get help for the script, including examples of how to use the cmdlets and the script.
 
@@ -287,7 +287,7 @@ For an example of how to enable TDE for MBAM database instances, see [Understand
 
 **Physically secure your computers**. There is no security without physical security. An attacker who gets physical access to an MBAM Server could potentially use it to attack the entire client base. All potential physical attacks must be considered high risk and mitigated appropriately. MBAM Servers should be stored in a secure server room with controlled access. Secure these computers when administrators are not physically present by having the operating system lock the computer, or by using a secured screen saver.
 
-**Apply the most recent security updates to all computers**. Stay informed about new updates for Windows operating systems, SQL Server, and MBAM by subscribing to the Security Notification service at the [Security TechCenter](http://go.microsoft.com/fwlink/?LinkId=28819).
+**Apply the most recent security updates to all computers**. Stay informed about new updates for Windows operating systems, SQL Server, and MBAM by subscribing to the Security Notification service at the [Security TechCenter](https://go.microsoft.com/fwlink/?LinkId=28819).
 
 **Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all MBAM administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](http://technet.microsoft.com/library/hh994572.aspx).
 

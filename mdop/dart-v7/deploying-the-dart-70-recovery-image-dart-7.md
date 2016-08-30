@@ -31,7 +31,7 @@ The **DaRT Recovery Image Wizard** only provides the option to burn a CD or DVD.
 ## Deploy the DaRT Recovery Image Using a USB Flash Drive
 
 
-After you have finished running the DaRT Recovery Image Wizard, you can use the tool at <http://go.microsoft.com/fwlink/?LinkId=218888> to copy the ISO image file to a USB flash drive (UFD).
+After you have finished running the DaRT Recovery Image Wizard, you can use the tool at <https://go.microsoft.com/fwlink/?LinkId=218888> to copy the ISO image file to a USB flash drive (UFD).
 
 [How to Deploy the DaRT Recovery Image Using a USB Flash Drive](how-to-deploy-the-dart-recovery-image-using-a-usb-flash-drive-dart-7.md)
 

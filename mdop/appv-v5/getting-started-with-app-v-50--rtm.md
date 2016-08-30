@@ -78,10 +78,10 @@ App-V consists of the following elements:
 
 For more information about these elements, see [High Level Architecture for App-V 5.0](high-level-architecture-for-app-v-50.md).
 
-If you are new to this product, we recommend that you read the documentation thoroughly. Before you deploy it to a production environment, we also recommend that you validate your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. For more information about Microsoft training opportunities, see the Microsoft Training Overview at <http://go.microsoft.com/fwlink/p/?LinkId=80347>.
+If you are new to this product, we recommend that you read the documentation thoroughly. Before you deploy it to a production environment, we also recommend that you validate your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. For more information about Microsoft training opportunities, see the Microsoft Training Overview at <https://go.microsoft.com/fwlink/p/?LinkId=80347>.
 
 **Note**  
-A downloadable version of this administrator’s guide is not available. However, you can learn about a special mode of the TechNet Library that allows you to select articles, group them in a collection, and print them or export them to a file at <http://go.microsoft.com/fwlink/?LinkId=272491> (http://go.microsoft.com/fwlink/?LinkId=272491).
+A downloadable version of this administrator’s guide is not available. However, you can learn about a special mode of the TechNet Library that allows you to select articles, group them in a collection, and print them or export them to a file at <https://go.microsoft.com/fwlink/?LinkId=272491> (https://go.microsoft.com/fwlink/?LinkId=272491).
 
  
 

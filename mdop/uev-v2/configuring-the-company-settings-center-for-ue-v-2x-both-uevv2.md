@@ -48,7 +48,7 @@ The Company Settings Center can include a hyperlink that users can click to get 
 
 1.  Open your preferred management tool:
 
-    -   **Group Policy** - If you have not already done so, download the ADMX template for UE-V 2 from [MDOP Administrative Templates](http://go.microsoft.com/fwlink/p/?LinkId=393941).
+    -   **Group Policy** - If you have not already done so, download the ADMX template for UE-V 2 from [MDOP Administrative Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941).
 
     -   **Windows PowerShell** – On a computer with the UE-V Agent installed, open **Windows PowerShell**. For more information about administering UE-V by using Windows PowerShell, see [Administering UE-V 2.x with Windows PowerShell and WMI](administering-ue-v-2x-with-windows-powershell-and-wmi-both-uevv2.md).
 
