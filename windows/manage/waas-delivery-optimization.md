@@ -225,7 +225,7 @@ To specify which devices are preferred, you can set the **Max Cache Age** config
 
 On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet:
 
--  Set **DOBackgroundQoS** to with a low value, for example `65536` which is the equivalent of 64 KB/s.
+-  Set **DOBackgroundQoS** with a low value, for example `65536` which is the equivalent of 64 KB/s.
 
 ## Learn more
 

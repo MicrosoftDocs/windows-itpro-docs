@@ -16,9 +16,9 @@ localizationpriority: high
 - Windows 10
 
 
-WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that System Ctype Configuration Manager provides.
+WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that System Center Configuration Manager provides.
 
-When you choose WSUS as your source for Windows updates, you use Group Policy to point Windows 10 client devices to the WSUS server for their updates. From there, updates are periodically downloaded to the WSUS server and managed, approved, and deployed through the WSUS administration console or Group Policy, streamlining typeprise update management. If you’re currently using WSUS to manage Windows updates in your environment, you can continue to do so in Windows 10. 
+When you choose WSUS as your source for Windows updates, you use Group Policy to point Windows 10 client devices to the WSUS server for their updates. From there, updates are periodically downloaded to the WSUS server and managed, approved, and deployed through the WSUS administration console or Group Policy, streamlining enterprise update management. If you’re currently using WSUS to manage Windows updates in your environment, you can continue to do so in Windows 10. 
 
 
 
@@ -121,7 +121,7 @@ You can use computer groups to target a subset of devices that have specific qua
 
     ![Example of UI](images/waas-wsus-fig7.png)
     
-3. type **Ring 2 Pilot Business Users** for the name, and then click **Add**.
+3. Type **Ring 2 Pilot Business Users** for the name, and then click **Add**.
 
 4.	Repeat these steps for the **Ring 3 Broad IT** and **Ring 4 Broad Business Users** groups. When you’re finished, there should be three deployment ring groups.
 
@@ -334,7 +334,7 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 
 ## Related topics
 
-- [Update Windows 10 in the typeprise](waas-update-windows-10.md)
+- [Update Windows 10 in the enterprise](waas-update-windows-10.md)
 - [Overview of Windows as a service](waas-overview.md)
 - [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
 - [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
@@ -348,4 +348,4 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
-- [Manage Windows 10 updates using System Ctype Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
