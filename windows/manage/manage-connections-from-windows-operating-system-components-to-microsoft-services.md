@@ -56,7 +56,7 @@ See the following table for a summary of the management settings for Windows 10 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
 | [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
-| [2. Cortana and search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | | |
 | [5. Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
@@ -102,53 +102,53 @@ See the following table for a summary of the management settings for Windows 10 
 
 See the following table for a summary of the management settings for Windows Server 2016 with Desktop Experience.
 
-| Setting | UI | Group Policy | MDM policy | Registry | Command line |
-| - | :-: | :-: | :-: | :-: | :-: |
-| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
-| [2. Cortana and search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
-| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
-| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | | |
-| [5. Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
-| [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
-| [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
-| [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | | |
-| [10. Microsoft Account](#bkmk-microsoft-account) | | | | ![Check mark](images/checkmark.png) | |
-| [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | | |
-| [14. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
-| [16. Settings > Privacy](#bkmk-settingssection) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
-| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
-| [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [22. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
-| [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | | |
-| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| Setting | UI | Group Policy | Registry | Command line |
+| - | :-: | :-: | :-: | :-: |
+| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | |
+| [5. Font streaming](#font-streaming) | | | ![Check mark](images/checkmark.png) | |
+| [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | |
+| [10. Microsoft Account](#bkmk-microsoft-account) | | | ![Check mark](images/checkmark.png) | |
+| [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | |
+| [14. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | |
+| [16. Settings > Privacy](#bkmk-settingssection) | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | | |
+| [19. Teredo](#bkmk-teredo) | | | | ![Check mark](images/checkmark.png) |
+| [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [22. Windows Media Player](#bkmk-wmp) | | | | ![Check mark](images/checkmark.png) |
+| [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | |
+| [26. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 
 ### Settings for Windows Server 2016 Server Core
 
 See the following table for a summary of the management settings for Windows Server 2016 Server Core.
 
-| Setting | UI | Group Policy | MDM policy | Registry | Command line |
+| Setting | Group Policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
-| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
-| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
-| [5. Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
-| [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | | |
-| [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
-| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
-| [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [1. Certificate trust lists](#certificate-trust-lists) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [3. Date & Time](#bkmk-datetime) | | ![Check mark](images/checkmark.png) | |
+| [5. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | |
+| [12. Network Connection Status Indicator](#bkmk-ncsi) | ![Check mark](images/checkmark.png) | | |
+| [17. Software Protection Platform](#bkmk-spp) | ![Check mark](images/checkmark.png) | | |
+| [19. Teredo](#bkmk-teredo) | | | ![Check mark](images/checkmark.png) |
+| [21. Windows Defender](#bkmk-defender) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 
 ### Settings for Windows Server 2016 Nano Server
 
 See the following table for a summary of the management settings for Windows Server 2016 Nano Server.
 
-| Setting | UI | Group Policy | MDM policy | Registry | Command line |
+| Setting | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
-| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
-| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
-| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
-| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [1. Certificate trust lists](#certificate-trust-lists) | ![Check mark](images/checkmark.png) | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | |
+| [19. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | |
 
 ## Settings
 
@@ -166,7 +166,7 @@ For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 
 
     -or-
 
-- Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot**, with a value of 1.
+- Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
 
     -or-
 
@@ -175,15 +175,15 @@ For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 
 3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
 4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
 
-On Windows Server 2016 Server Core:
+On Windows Server 2016 Nano Server:
 
-- Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot**, with a value of 1.
+- Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
 
-### <a href="" id="bkmk-cortana"></a>2. Cortana
+### <a href="" id="bkmk-cortana"></a>2. Cortana and Search
 
 Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730683).
 
-### <a href="" id="bkmk-cortana-gp"></a>2.1 Cortana Group Policies
+### <a href="" id="bkmk-cortana-gp"></a>2.1 Cortana and Search Group Policies
 
 Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Search**.
 
@@ -226,12 +226,9 @@ In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **
 
 If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
-### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana MDM policies
+### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana and Search MDM policies
 
-The following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
-
-> [!NOTE]  
-> This does not apply to Windows Server 2016.
+For Windows 10 only, the following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -261,14 +258,16 @@ To turn off font streaming, create a REG\_DWORD registry setting called **Disabl
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 
-To turn off Insider Preview builds for a released version of Windows 10 or Windows Server 2016 with Desktop Experience:
+The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10.
+
+To turn off Insider Preview builds for a released version of Windows 10:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
 
 To turn off Insider Preview builds for Windows 10:
 
 > [!NOTE]  
-> If you're running a preview version of Windows 10 or Windows Server 2016, you must roll back to a released version before you can turn off Insider Preview builds.
+> If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
 
 -   Turn off the feature in the UI: **Settings** > **Update & security** > **Windows Insider Program** > **Stop Insider Preview builds**.
 
@@ -398,9 +397,6 @@ The following Microsoft Edge MDM policies are available in the [Policy CSP](http
 | Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the address bar shows search suggestions.. <br /> Default: Allowed                   |
 | Browser/AllowSmartScreen                             | Choose whether SmartScreen is turned on or off.  <br /> Default: Allowed                            |
 
-### <a href="" id="bkmk-edge-prov"></a>11.3 Microsoft Edge Windows Provisioning
-
-Use Windows ICD to create a provisioning package with the settings for these policies, go to **Runtime settings** &gt; **Policies**.
 
 For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](http://technet.microsoft.com/library/mt270204.aspx).
 
