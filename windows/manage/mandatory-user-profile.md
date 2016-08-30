@@ -22,7 +22,7 @@ A mandatory user profile is a roaming user profile that has been pre-configured 
 
 Mandatory user profiles are useful when standardization is important, such as on a kiosk device or in educational settings. Only system administrators can make changes to mandatory user profiles. 
 
-When the server that stores the mandatory profile is unavailable, such as when the user is not connected to the corporate network, users with mandatory profiles can sign in with the locally cached copy of the mandatory profile. 
+When the server that stores the mandatory profile is unavailable, such as when the user is not connected to the corporate network, users with mandatory profiles can sign in with the locally cached copy of the mandatory profile, if one exists. Otherwise, the user will be signed in with a temporary profile. 
 
 User profiles become mandatory profiles when the administrator renames the NTuser.dat file (the registry hive) of each user's profile in the file system of the profile server from `NTuser.dat` to `NTuser.man`. The `.man` extension causes the user profile to be a read-only profile.
 
@@ -44,7 +44,7 @@ For more information, see [Deploy Roaming User Profiles, Appendix B](https://tec
 
 ## How to create a mandatory user profile
 
-First, you create a default user profile, and then you rename the profile to make it mandatory.
+First, you create a default user profile with the customizations that you want, run Sysprep with CopyProfile set to **True** in the answer file, copy the customized default user profile to a network share, and then you rename the profile to make it mandatory.
 
 **To create a default user profile**
 
@@ -73,6 +73,9 @@ First, you create a default user profile, and then you rename the profile to mak
      - Microsoft.XboxApp_8wekyb3d8bbwe
      - Microsoft.XboxIdentityProvider_8wekyb3d8bbwe
      - Microsoft.ZuneMusic_8wekyb3d8bbwe 
+     
+     >[!NOTE]
+     >Uninstalling these apps will decrease sign-in time. If your deployment needs any of these apps, you can leave them installed.
 
 3. At a command prompt, type the following command and press **ENTER**.
 
