@@ -31,8 +31,7 @@ Learn about managing and updating Windows 10.
 <tr class="odd">
 <td align="left"><p>[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)</p></td>
 <td align="left"><p>The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.</p></td>
-</tr>
-<tr class="even">
+<tr><td>[Update Windows 10 in the enterprise](waas-update-windows-10.md) </td><td>Learn how to manage updates to Windows 10 in your organization, including Windows Update for Business. </td></tr>
 <td align="left"><p>[Manage corporate devices](manage-corporate-devices.md)</p></td>
 <td align="left"><p>You can use the same management tools to manage all device types running Windows 10 : desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), PowerShell scripts, Orchestrator runbooks, System Center tools, and so on, will continue to work for Windows 10 on desktop editions.</p></td>
 </tr>
@@ -56,10 +55,6 @@ Learn about managing and updating Windows 10.
 <tr class="odd">
 <td align="left"><p>[Configure devices without MDM](configure-devices-without-mdm.md)</p></td>
 <td align="left"><p>Create a runtime provisioning package to apply settings, profiles, and file assets to a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Windows 10 servicing options](introduction-to-windows-10-servicing.md)</p></td>
-<td align="left"><p>This article describes the new servicing options available in Windows 10, Windows 10 Mobile, and Windows 10 IoT Core (IoT Core) and how they enable enterprises to keep their devices current with the latest feature upgrades. It also covers related topics, such as how enterprises can make better use of Windows Update, and what the new servicing options mean for support lifecycles.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Application Virtualization for Windows (App-V)](appv-for-windows.md)</p></td>
