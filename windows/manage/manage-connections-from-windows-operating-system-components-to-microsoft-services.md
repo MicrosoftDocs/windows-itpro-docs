@@ -314,7 +314,7 @@ There are two more Group Policy objects that are used by Internet Explorer:
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Internet Control Panel** > **Advanced Page**  | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **RSS Feeds** | Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> Default: Enabled |
 
-### <a href="" id="bkmk-ie-activex"></a>7.2 ActiveX control blocking
+### <a href="" id="bkmk-ie-activex"></a>7.1 ActiveX control blocking
 
 ActiveX control blocking periodically downloads a new list of out-of-date ActiveX controls that should be blocked. You can turn this off by changing the REG\_DWORD registry setting **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to 0 (zero).
 
