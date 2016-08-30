@@ -410,7 +410,7 @@ VBS acts as a secure execution environment because the architecture inherently p
 
 The VBS architecture is illustrated in Figure 2.
 
-![Example of VBS architecture](images/security-fig2-vbsarchitecture.png "Example of VBS architecture")
+![Example of VBS architecture](images/security-fig2-vbsarchitecture-redo.png "Example of VBS architecture")
 
 Figure 2. The VBS architecture
 
