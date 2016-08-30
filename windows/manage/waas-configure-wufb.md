@@ -47,14 +47,14 @@ With Windows Update for Business, you can set a device to be on either the Curre
 
 ## Configure when devices receive Feature Updates
 
-After you configure the servicing branch (CB or CBB), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.  You can defer receiving these Feature Updates for a period of 180 days from their release by setting the `DeferFeatureUpdatePeriodinDays` value.  
+After you configure the servicing branch (CB or CBB), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.  You can defer receiving these Feature Updates for a period of 180 days from their release by setting the `DeferFeatureUpdatesPeriodinDays` value.  
 
 **Examples**
 
 | Settings | Scenario and behavior |
 | --- | --- |
-| Device is on CB</br>DeferFeatureUpdatePeriodinDays=30 | Feature Update X is first publically available on Windows Update as a CB in January. Device will not receive update until February, 30 days later. |
-| Device is on CBB</br>DeferFeatureUpdatePeriodinDays=30 | Feature Update X is first publically available on Windows Update as a CB in January. Four months later, in April, Feature Update X is released to CBB. Device will receive the Feature Update 30 days following this CBB release and will update in May. |
+| Device is on CB</br>DeferFeatureUpdatesPeriodinDays=30 | Feature Update X is first publically available on Windows Update as a CB in January. Device will not receive update until February, 30 days later. |
+| Device is on CBB</br>DeferFeatureUpdatesPeriodinDays=30 | Feature Update X is first publically available on Windows Update as a CB in January. Four months later, in April, Feature Update X is released to CBB. Device will receive the Feature Update 30 days following this CBB release and will update in May. |
 
 </br></br>
 **Defer Feature Updates policies**
@@ -63,7 +63,7 @@ After you configure the servicing branch (CB or CBB), you can then define if, an
 | --- | --- |
 | GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdatesPeriodInDays |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpgradePeriod |
-| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferFeatureUpdatePeriodInDays** | \Microsoft\PolicyManager\default\Update\DeferFeatureUpdatesPeriodInDays |
+| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferFeatureUpdatesPeriodInDays** | \Microsoft\PolicyManager\default\Update\DeferFeatureUpdatesPeriodInDays |
 | MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpgrade |
 
 
@@ -94,7 +94,7 @@ The local group policy editor (GPEdit.msc) will not reflect if your Feature Upda
 
 ## Configure when devices receive Quality Updates
 
-Quality Updates are typically published the first Tuesday of every month, though can be released at any time by Microsoft. You can define if, and for how long, you would like to defer receiving Quality Updates following their availability. You can defer receiving these Quality Updates for a period of up to 35 days from their release by setting the **DeferQualityUpdatePeriodinDays** value.  
+Quality Updates are typically published the first Tuesday of every month, though can be released at any time by Microsoft. You can define if, and for how long, you would like to defer receiving Quality Updates following their availability. You can defer receiving these Quality Updates for a period of up to 35 days from their release by setting the **DeferQualityUpdatesPeriodinDays** value.  
 
 You can set your system to receive updates for other Microsoft products—known as Microsoft Updates (such as Microsoft Office, Visual Studio)—along with Windows Updates by setting the **AllowMUUpdateService** policy. When this is done, these Microsoft Updates will follow the same deferral and pause rules as all other Quality Updates.
 
