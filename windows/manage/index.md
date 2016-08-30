@@ -44,6 +44,7 @@ Learn about managing and updating Windows 10.
 <td align="left"><p>[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)</p></td>
 <td align="left"><p>Organizations might want to deploy a customized Start screen and menu to devices running Windows 10 Enterprise or Windows 10 Education. A standard Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes.</p></td>
 </tr>
+<tr><td><p>[Create mandatory user profiles](mandatory-user-profile.md)</p></td><td><p>Mandatory user profiles are useful when standardization is important, such as on a kiosk device or in educational settings.</p></td></tr>
 <tr class="odd">
 <td align="left"><p>[Lock down Windows 10](lock-down-windows-10.md)</p></td>
 <td align="left"><p>Enterprises often need to manage how people use corporate devices. Windows 10 provides a number of features and methods to help you lock down specific parts of a Windows 10 device.</p></td>
