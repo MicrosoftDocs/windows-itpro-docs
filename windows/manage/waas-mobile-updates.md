@@ -49,7 +49,7 @@ To defer the update period or pause deferrals, the device must be configured for
 Only the following Windows Update for Business policies are supported:
 
 - ../Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel
-- ../Vendor/MSFT/Policy/Config/Update/DeferQualityUpdateInDays  
+- ../Vendor/MSFT/Policy/Config/Update/DeferQualityUpdatesInDays  
 - ../Vendor/MSFT/Policy/Config/Update/PauseQualityUpdates
 
 In version 1607, you can defer and pause updates for devices on both the CB and CBB servicing branches.
