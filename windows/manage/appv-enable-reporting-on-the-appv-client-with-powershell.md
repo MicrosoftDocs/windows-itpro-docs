@@ -24,8 +24,8 @@ Use the following procedure to configure the App-V for reporting.
 
     <table>
     <colgroup>
-    <col width="50%" />
-    <col width="50%" />
+    <col width="30%" />
+    <col width="70%" />
     </colgroup>
     <thead>
     <tr class="header">
