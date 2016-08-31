@@ -19,6 +19,13 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 - [Provision PCs with apps and certificates for initial deployment](provision-pcs-with-apps-and-certificates.md)
 - [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
 
+=======
+
+## August 2016
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Windows 10 edition upgrade](windows-10-edition-upgrades.md) | Updated with reboot requirements | 
+
 ## July 2016
 | New or changed topic | Description |
 |----------------------|-------------|
