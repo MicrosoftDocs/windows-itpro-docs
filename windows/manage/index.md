@@ -30,8 +30,8 @@ Learn about managing and updating Windows 10.
 </tr>
 <tr class="odd">
 <td align="left"><p>[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)</p></td>
-<td align="left"><p>The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.</p></td>
-<td align="left"><p>[Manage corporate devices](manage-corporate-devices.md)</p></td>
+<td align="left"><p>The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.</p></td></tr>
+<tr><td align="left"><p>[Manage corporate devices](manage-corporate-devices.md)</p></td>
 <td align="left"><p>You can use the same management tools to manage all device types running Windows 10: desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), PowerShell scripts, Orchestrator runbooks, System Center tools, and so on, will continue to work for Windows 10 on desktop editions.</p></td>
 </tr>
 <tr class="odd">
