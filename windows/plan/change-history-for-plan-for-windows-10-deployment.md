@@ -14,6 +14,7 @@ author: TrudyHa
 This topic lists new and updated topics in the [Plan for Windows 10 deployment](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 
+
 ## RELEASE: Windows 10, version 1607
 
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update).

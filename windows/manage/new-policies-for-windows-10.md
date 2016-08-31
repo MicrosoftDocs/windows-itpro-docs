@@ -20,7 +20,7 @@ localizationpriority: high
 
 Windows 10 includes the following new policies for management, in addition to policies that were available for Windows 8.1 and Windows Phone 8.1. [Download the complete set of Administrative Template (.admx) files for Windows 10](http://go.microsoft.com/fwlink/p/?LinkID=625081).
 
-## New GPOs in Windows 10
+## New Group Policy settings in Windows 10
 
 
 There are some new policy settings in Group Policy for devices running Windows 10 , such as:
