@@ -14,6 +14,8 @@ author: brianlic-msft
 **Applies to**
 -   Windows 10
 
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+
 Describes the best practices, location, values, policy management, and security considerations for the **Bypass traverse checking** security policy setting.
 
 ## Reference

@@ -15,6 +15,8 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+
 The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.
 
 ## Cortana integration with Office 365
