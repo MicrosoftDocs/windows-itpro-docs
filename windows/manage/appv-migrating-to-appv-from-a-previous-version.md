@@ -30,8 +30,8 @@ You can also use the `–OSDsToIncludeInPackage` parameter with the `ConvertFrom
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">New in App-V</th>
-<th align="left">Prior to App-V</th>
+<th align="left">New in App-V for Windows 10</th>
+<th align="left">Prior to App-V for Windows 10</th>
 </tr>
 </thead>
 <tbody>
