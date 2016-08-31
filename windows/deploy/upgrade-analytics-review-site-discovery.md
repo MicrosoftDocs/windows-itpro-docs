@@ -11,7 +11,7 @@ This section of the Upgrade Analytics workflow provides an inventory of web site
 
 ## Install prerequisite security update for Internet Explorer (KB3170106)
 
-There are two prerequisites for using site discovery
+There are two prerequisites for using site discovery:
 
 1. Install [July, 2016 Internet Explorer cumulative update (KB3170106)](https://support.microsoft.com/kb/3170106) or later. This update provides the capability for site discovery.
 2. Enable Internet Explorer data collection, which is disabled by default. It is enabled after you [run the Upgrade Analytics deployment script](upgrade-analytics-get-started.md#run-the-upgrade-analytics-deployment-script), or you can enable it by creating the following registry entry: 
@@ -19,11 +19,17 @@ There are two prerequisites for using site discovery
     HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection 
 
     Entry name: IEDataOptIn
+
     Data type: DWORD
+
     Values:
+
     0 – Internet Explorer data collection is disabled
+
     1 – Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones
+
     2 – Data collection is enabled for sites in the Internet + Restricted sites zones
+
     3 – Data collection is enabled for all sites
 
     For more information about Internet Explorer Security Zones, see [About URL Security Zones](https://msdn.microsoft.com/library/ms537183.aspx). 
@@ -48,8 +54,7 @@ This blade provides information about which document modes are used in the sites
 
 ## Run browser-related queries 
 
-You can run predefined queries to capture more info, such as sites that have Enterprise Mode enabled, or the number of unique computers that have visited a site. For example, this query returns the most used ActiveX controls.
+You can run predefined queries to capture more info, such as sites that have Enterprise Mode enabled, or the number of unique computers that have visited a site. For example, this query returns the most used ActiveX controls. You can modify and save the predefined queries. 
 
 ![](images/upgrade-analytics-query-activex-name.png)
 
-You can modify the predefined queries and save them for your own use. 
