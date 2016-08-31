@@ -1,5 +1,5 @@
 ---
-title: Add apps to your Windows Information Protection (WIP) policy by using Microsoft Intune and custom URI functionality (Windows 10)
+title: Add apps to your Windows Information Protection (WIP) policy by using Microsoft Intune custom URI functionality (Windows 10)
 description: Add apps to your Windows Information Protection (WIP) allowed app list, by using the Microsoft Intune custom URI functionality and AppLocker.
 ms.assetid: b50db35d-a2a9-4b78-a95d-a1b066e66880
 keywords: WIP, Enterprise Data Protection, protected apps, protected app list
