@@ -5,7 +5,7 @@
 ## [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
 ## [Windows Update for Business](windows-update-for-business.md)
 ### [Setup and deployment](setup-and-deployment.md)
-### [Integration with management solutions](integration-with-management-solutions.md)
+### [Integration with management solutions](integration-with-management-solutions-.md)
 ## [Windows To Go: feature overview](windows-to-go-overview.md)
 ### [Best practice recommendations for Windows To Go](best-practice-recommendations-for-windows-to-go.md)
 ### [Deployment considerations for Windows To Go](deployment-considerations-for-windows-to-go.md)
