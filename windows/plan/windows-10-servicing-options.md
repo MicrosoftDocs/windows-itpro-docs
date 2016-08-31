@@ -8,7 +8,6 @@ ms.mktglfcycl: plan
 ms.pagetype: servicing
 ms.sitesec: library
 author: jdeckerMS
-redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview
 ---
 
 # Windows 10 servicing overview
