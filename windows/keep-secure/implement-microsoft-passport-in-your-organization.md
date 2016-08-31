@@ -144,6 +144,10 @@ The following table lists the Group Policy settings that you can configure for H
 ## MDM policy settings for Windows Hello for Business
 
 The following table lists the MDM policy settings that you can configure for Windows Hello for Business use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkId=692070).
+
+>[!IMPORTANT]
+>Starting in Windows 10, version 1607, all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP. 
+
 <table>
 <tr>
 <th colspan="2">Policy</th>
