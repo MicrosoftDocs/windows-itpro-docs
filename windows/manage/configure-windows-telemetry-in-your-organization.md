@@ -31,8 +31,9 @@ To frame a discussion about telemetry, it is important to understand Microsoftâ€
 
 This article applies to Windows and Windows Server telemetry only. Other Microsoft or third-party apps, such as System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager, might send data to their cloud services in ways that are inconsistent with this guide. Their publishers are responsible for notifying users of their privacy policies, telemetry controls, and so on. This article describes the types of telemetry we may gather, the ways you might manage it in your organization, and some examples of how telemetry can provide you with valuable insights into your enterprise deployments. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
-
 Use this article to make informed decisions about how you might configure telemetry in your organization. Telemetry is a term that means different things to different people and organizations. For the purpose of this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
+
+We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
 ## Overview
 

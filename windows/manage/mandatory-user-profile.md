@@ -16,7 +16,7 @@ author: jdeckerMS
 -   Windows 10
 
 > [!NOTE]
-> When a mandatory profile is applied to a PC running Windows 10, some features such as Universal Windows Platform (UWP) apps, the Start menu, Cortana, and Search, will not work correctly. This will be fixed in a future update. 
+> When a mandatory profile is applied to a PC running Windows 10, version 1511, some features such as Universal Windows Platform (UWP) apps, the Start menu, Cortana, and Search, will not work correctly. This will be fixed in a future update. 
 
 A mandatory user profile is a roaming user profile that has been pre-configured by an administrators to specify settings for users. Settings commonly defined in a mandatory profile include (but are not limited to): icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile are not saved when a mandatory user profile is assigned. 
 
@@ -40,7 +40,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 10, versions 1507 and 1511 | Windows Server 2016 | v5 |
 | Windows 10, version 1607 (also known as the Anniversary Update) | N/A | v6 |
 
-For more information, see [Deploy Roaming User Profiles, Appendix B](https://technet.microsoft.com/library/jj649079.aspx) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/en-us/kb/3056198).
+For more information, see [Deploy Roaming User Profiles, Appendix B](https://technet.microsoft.com/library/jj649079.aspx) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
 
 ## How to create a mandatory user profile
 
@@ -58,7 +58,7 @@ First, you create a default user profile with the customizations that you want, 
    >[!NOTE]
    >Unlike previous versions of Windows, you cannot apply a Start and taskbar layout using a mandatory profile. For alternative methods for customizing the Start menu and taskbar, see [Related topics](#related-topics).
 
-3. [Create an answer file (Unattend.xml)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915085.aspx) that sets the [CopyProfile](https://msdn.microsoft.com/en-us/library/windows/hardware/dn922656.aspx) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user’s profile folder to the default user profile. You can use [Windows System Image Manager](https://msdn.microsoft.com/en-us/library/windows/hardware/dn922445.aspx), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file. 
+3. [Create an answer file (Unattend.xml)](https://msdn.microsoft.com/library/windows/hardware/dn915085.aspx) that sets the [CopyProfile](https://msdn.microsoft.com/library/windows/hardware/dn922656.aspx) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user’s profile folder to the default user profile. You can use [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445.aspx), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file. 
  
 3. Use the [Remove-AppxProvisionedPackage](https://technet.microsoft.com/library/dn376476%28v=wps.620%29.aspx) cmdlet in Windows PowerShell to uninstall the following applications: 
  
