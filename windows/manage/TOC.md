@@ -16,6 +16,7 @@
 ### [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 ### [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 ### [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+## [Create mandatory user profiles](mandatory-user-profile.md)
 ## [Lock down Windows 10](lock-down-windows-10.md)
 ### [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md)
 ### [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)

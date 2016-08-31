@@ -16,6 +16,8 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge also introduces new features like Web Note, Reading View, and Cortana that you can use along with your normal web browsing abilities.
 
 Microsoft Edge lets you stay up-to-date through the Windows Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.

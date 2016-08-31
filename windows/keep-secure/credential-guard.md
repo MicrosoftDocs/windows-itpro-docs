@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
+Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
 
 Credential Guard offers the following features and solutions:
 
@@ -91,7 +91,7 @@ The PC must meet the following hardware and software requirements to use Credent
 <td>TPM 2.0</td>
 </tr>
 <tr>
-<td>Windows 10 version 1511 or later</td>
+<td>Windows 10 version 1511, Windows Server 2016, or later</td>
 <td>TPM 2.0 or TPM 1.2</td>
 </tr>
 </table>
@@ -114,7 +114,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>Virtual machine</p></td>
-<td align="left"><p>For PCs running Windows 10, version 1607, you can run Credential Guard on a Generation 2 virtual machine.</p></td>
+<td align="left"><p>For PCs running Windows 10, version 1607 or Windows Server 2016, you can run Credential Guard on a Generation 2 virtual machine.</p></td>
 </tr>
 </tr>
 <tr class="even">
@@ -169,7 +169,7 @@ First, you must add the virtualization-based security features. You can do this 
 > You can also add these features to an online image by using either DISM or Configuration Manager.
 
 
-In Windows 10, version 1607, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
+In Windows 10, version 1607 and Windows Server 2016, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
 
 ``` syntax
 dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
