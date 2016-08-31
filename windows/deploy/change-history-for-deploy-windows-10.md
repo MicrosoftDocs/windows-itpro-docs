@@ -11,6 +11,13 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## August 2016
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Windows 10 edition upgrade](windows-10-edition-upgrades.md) | Updated with reboot requirements | 
+| [Windows 10 servicing overview](windows-10-servicing-options.md) | Moved content to servicing options topic | 
+| [Windows 10 servicing options](introduction-to-windows-10-servicing.md) | Added content from overview topic | 
+
 ## July 2016
 | New or changed topic | Description |
 |----------------------|-------------|
