@@ -23,8 +23,8 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <thead>
 <tr class="header">
