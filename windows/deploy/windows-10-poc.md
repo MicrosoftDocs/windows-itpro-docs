@@ -432,6 +432,7 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
 23. Sign in to the contoso.com domain on SRV1 using the domain administrator account, open an elevated Windows PowerShell prompt, and type the following commands:
     ```
     Install-WindowsFeature -Name DNS -IncludeManagementTools
+    Install-WindowsFeature -Name WDS -IncludeManagementTools
     Install-WindowsFeature -Name Routing -IncludeManagementTools
     Install-RemoteAccess -VpnType Vpn
     cmd /c netsh routing ip nat install
