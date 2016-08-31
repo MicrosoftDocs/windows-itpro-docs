@@ -97,6 +97,10 @@ The compatibility update KB scans your computers and enables application usage t
 | Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues may be encountered when the latest Windows operating system is installed. <br>For more information about this KB, see <https://support.microsoft.com/kb/2976978><br>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>NOTE: KB2976978 must be installed before you can download and install KB3150513.   |
 | Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues may be encountered when the latest Windows operating system is installed. <br>For more information about this KB, see <https://support.microsoft.com/kb/2952664><br>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>NOTE: KB2976978 must be installed before you can download and install KB3150513. |
 
+| Site discovery | KB |
+|------------------------------------------------------|----|
+| Internet Explorer data collection  |[KB3170106](https://support.microsoft.com/kb/3170106) or later|
+
 IMPORTANT: Restart user computers after you install the compatibility update KBs for the first time.
 
 ### Automate data collection
@@ -128,6 +132,16 @@ The Upgrade Analytics deployment script does the following:
 6.  Initiates the collection of the telemetry data that Microsoft needs to assess your organization’s upgrade readiness.
 
 7.  If enabled, displays the script’s progress in a cmd window, providing you immediate visibility into issues (success or fail for each step) and/or writes to log file.
+
+8.  If enabled, collects Internet Explorer data. By default, Internet Explorer data collection is disabled. To enable this functionality, uncomment the section relate to IEDataOptIn. The following registry values determine what Internet Explorer data can be collected:
+
+    0 – Internet Explorer data collection is disabled
+
+    1 – Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones
+
+    2 – Data collection is enabled for sites in the Internet + Restricted sites zones
+    
+    3 – Data collection is enabled for all sites
 
 To run the Upgrade Analytics deployment script:
 
