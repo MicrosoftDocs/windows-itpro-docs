@@ -20,7 +20,7 @@ Use the Microsoft Application Virtualization (App-V) 5.1 ADMX template to config
 1.  To modify the App-V 5.1 client configuration, locate the **ADMXTemplate** files that are available with App-V 5.1.
 
     **Note**  
-    Use the following link to download the App-V 5.1 **ADMX Templates**: <http://go.microsoft.com/fwlink/p/?LinkId=393941>.
+    Use the following link to download the App-V 5.1 **ADMX Templates**: <https://go.microsoft.com/fwlink/p/?LinkId=393941>.
 
      
 

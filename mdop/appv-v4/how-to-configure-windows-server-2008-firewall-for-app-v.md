@@ -13,7 +13,7 @@ ms.prod: w8
 # How to Configure Windows Server 2008 Firewall for App-V
 
 
-With the introduction of Windows Server 2008, the firewall and IPsec components were merged into one service, and the capabilities of this service were enhanced. The new firewall service supports incoming and outgoing stateful inspection. Also, you can configure specific firewall rules and IPsec policies through group policies. For additional information about the Windows firewall in Windows Server 2008, see <http://go.microsoft.com/fwlink/?LinkId=151980>.
+With the introduction of Windows Server 2008, the firewall and IPsec components were merged into one service, and the capabilities of this service were enhanced. The new firewall service supports incoming and outgoing stateful inspection. Also, you can configure specific firewall rules and IPsec policies through group policies. For additional information about the Windows firewall in Windows Server 2008, see <https://go.microsoft.com/fwlink/?LinkId=151980>.
 
 The following procedure does not include adding an exception for ICO and OSD publishing through SMB or HTTP/HTTPS. Those exceptions are automatically added based on the network profile and roles installed on the Windows Server 2008 firewall.
 

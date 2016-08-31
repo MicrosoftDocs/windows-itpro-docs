@@ -28,11 +28,11 @@ For persistent VDI environments, carefully consider the I/O impact from upgradin
 ## Deployment tools
 
 
-A new version of the Assessment and Deployment Toolkit (ADK) has been released to support Windows 10. This new version, available for download [here](http://go.microsoft.com/fwlink/p/?LinkId=526740), is required for Windows 10; you should not use earlier versions of the ADK to deploy Windows 10. It also supports the deployment of Windows 7, Windows 8, and Windows 8.1.
+A new version of the Assessment and Deployment Toolkit (ADK) has been released to support Windows 10. This new version, available for download [here](https://go.microsoft.com/fwlink/p/?LinkId=526740), is required for Windows 10; you should not use earlier versions of the ADK to deploy Windows 10. It also supports the deployment of Windows 7, Windows 8, and Windows 8.1.
 
 Significant enhancements in the ADK for Windows 10 include new runtime provisioning capabilities, which leverage the Windows Imaging and Configuration Designer (Windows ICD), as well as updated versions of existing deployment tools (DISM, USMT, Windows PE, and more).
 
-Microsoft Deployment Toolkit 2013 Update 1, available for download [here](http://go.microsoft.com/fwlink/p/?LinkId=625079), has also been updated to support Windows 10 and the new ADK; older versions do not support Windows 10. New in this release is task sequence support for Windows 10 in-place upgrades.
+Microsoft Deployment Toolkit 2013 Update 1, available for download [here](https://go.microsoft.com/fwlink/p/?LinkId=625079), has also been updated to support Windows 10 and the new ADK; older versions do not support Windows 10. New in this release is task sequence support for Windows 10 in-place upgrades.
 
 For System Center Configuration Manager, Windows 10 support is offered with various releases:
 
@@ -49,7 +49,7 @@ For more details about System Center Configuration Manager support for Windows 
 ## Management tools
 
 
-In addition to System Center Configuration Manager, Windows 10 also leverages other tools for management. For Windows Server and Active Directory, existing supported versions are fully supported for Windows 10. New Group Policy templates will be needed to configure new settings available in Windows 10; these templates are available in the Windows 10 media images, and are available as a separate download [here](http://go.microsoft.com/fwlink/p/?LinkId=625081). See [Group Policy settings reference](http://go.microsoft.com/fwlink/p/?LinkId=625082) for a list of the new and modified policy settings. If you are using a central policy store, follow the steps outlined [here](http://go.microsoft.com/fwlink/p/?LinkId=625083) to update the ADMX files stored in that central store.
+In addition to System Center Configuration Manager, Windows 10 also leverages other tools for management. For Windows Server and Active Directory, existing supported versions are fully supported for Windows 10. New Group Policy templates will be needed to configure new settings available in Windows 10; these templates are available in the Windows 10 media images, and are available as a separate download [here](https://go.microsoft.com/fwlink/p/?LinkId=625081). See [Group Policy settings reference](https://go.microsoft.com/fwlink/p/?LinkId=625082) for a list of the new and modified policy settings. If you are using a central policy store, follow the steps outlined [here](https://go.microsoft.com/fwlink/p/?LinkId=625083) to update the ADMX files stored in that central store.
 
 No new Active Directory schema updates or specific functional levels are currently required for core Windows 10 product functionality, although subsequent upgrades could require these to support new features.
 
@@ -65,9 +65,9 @@ Microsoft Desktop Optimization Pack (MDOP) has been updated to support Windows 
 
  
 
-For more information, see the [MDOP TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=625090).
+For more information, see the [MDOP TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=625090).
 
-For devices you manage with mobile device management (MDM) solutions such as Microsoft Intune, existing capabilities (provided initially in Windows 8.1) are fully supported in Windows 10; new Windows 10 MDM settings and capabilities will require updates to the MDM services. See [Mobile device management](http://go.microsoft.com/fwlink/p/?LinkId=625084) for more information.
+For devices you manage with mobile device management (MDM) solutions such as Microsoft Intune, existing capabilities (provided initially in Windows 8.1) are fully supported in Windows 10; new Windows 10 MDM settings and capabilities will require updates to the MDM services. See [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=625084) for more information.
 
 Windows Server Update Services (WSUS) requires some additional configuration to receive updates for Windows 10. Use the Windows Server Update Services admin tool and follow these instructions:
 
@@ -81,7 +81,7 @@ Windows Server Update Services (WSUS) requires some additional configuration to 
 
 Figure 1. WSUS product list with Windows 10 choices
 
-Because Windows 10 updates are cumulative in nature, each month’s new update will supersede the previous month's. Consider leveraging “express installation” packages to reduce the size of the payload that needs to be sent to each PC each month; see [Express installation files](http://go.microsoft.com/fwlink/p/?LinkId=625086) for more information. (Note that this will increase the amount of disk storage needed by WSUS, and impacts all operating systems being managed with WSUS.)
+Because Windows 10 updates are cumulative in nature, each month’s new update will supersede the previous month's. Consider leveraging “express installation” packages to reduce the size of the payload that needs to be sent to each PC each month; see [Express installation files](https://go.microsoft.com/fwlink/p/?LinkId=625086) for more information. (Note that this will increase the amount of disk storage needed by WSUS, and impacts all operating systems being managed with WSUS.)
 
 ## Activation
 
@@ -91,15 +91,15 @@ Windows 10 volume license editions of Windows 10 will continue to support all 
 | Product                                | Required update                                                                             |
 |----------------------------------------|---------------------------------------------------------------------------------------------|
 | Windows 10                             | None                                                                                        |
-| Windows Server 2012 R2 and Windows 8.1 | [https://support.microsoft.com/kb/3058168](http://go.microsoft.com/fwlink/p/?LinkId=625087) |
-| Windows Server 2012 and Windows 8      | [https://support.microsoft.com/kb/3058168](http://go.microsoft.com/fwlink/p/?LinkId=625087) |
+| Windows Server 2012 R2 and Windows 8.1 | [https://support.microsoft.com/kb/3058168](https://go.microsoft.com/fwlink/p/?LinkId=625087) |
+| Windows Server 2012 and Windows 8      | [https://support.microsoft.com/kb/3058168](https://go.microsoft.com/fwlink/p/?LinkId=625087) |
 | Windows Server 2008 R2 and Windows 7   | Available by October 2015                                                                   |
 
  
 
 Additionally, new product keys will be needed for all types of volume license activation (KMS, MAK, and AD-based Activation); these keys are available on the Volume Licensing Service Center (VLSC) for customers with rights to the Windows 10 operating system. To find the needed keys:
 
--   Sign into the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=625088) at with a Microsoft account that has appropriate rights.
+-   Sign into the [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=625088) at with a Microsoft account that has appropriate rights.
 
 -   For KMS keys, click **Licenses** and then select **Relationship Summary**. Click the appropriate active license ID, and then select **Product Keys** near the right side of the page. For KMS running on Windows Server, find the **Windows Srv 2012R2 DataCtr/Std KMS for Windows 10** product key; for KMS running on client operating systems, find the **Windows 10** product key.
 

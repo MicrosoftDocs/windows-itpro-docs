@@ -80,7 +80,7 @@ Note that the original Windows 8 release is only supported until January 2016. 
 
 For existing Windows PCs running Windows Vista, you can perform wipe-and-load (OS refresh) deployments when you use compatible hardware.
 
-Note that to take advantage of the limited-time free upgrade offer for PCs running Windows 7, Windows 8, or Windows 8.1, you must leverage an in-place upgrade, either from Windows Update or by using the upgrade media available from the [Windows 10 software download page](http://go.microsoft.com/fwlink/p/?LinkId=625073) to acquire a new Windows 10 license from the Windows Store. For more information, refer to the [Windows 10 FAQ](http://go.microsoft.com/fwlink/p/?LinkId=625074).
+Note that to take advantage of the limited-time free upgrade offer for PCs running Windows 7, Windows 8, or Windows 8.1, you must leverage an in-place upgrade, either from Windows Update or by using the upgrade media available from the [Windows 10 software download page](https://go.microsoft.com/fwlink/p/?LinkId=625073) to acquire a new Windows 10 license from the Windows Store. For more information, refer to the [Windows 10 FAQ](https://go.microsoft.com/fwlink/p/?LinkId=625074).
 
 For organizations with Software Assurance for Windows, both in-place upgrade or wipe-and-load can be leveraged (with in-place upgrade being the preferred method, as previously discussed).
 
@@ -91,9 +91,9 @@ For organizations that do not take advantage of the free upgrade offer and are n
 
 For new computers acquired with Windows 10 preinstalled, you can leverage dynamic provisioning scenarios to transform the device from its initial state into a fully-configured organization PC. There are two primary dynamic provisioning scenarios you can use:
 
--   **User-driven, from the cloud.** By joining a device into Azure Active Directory and leveraging the automatic mobile device management (MDM) provisioning capabilities at the same time, an end user can initiate the provisioning process themselves just by entering the Azure Active Directory account and password (called their “work or school account” within Windows 10). The MDM service can then transform the device into a fully-configured organization PC. For more information, see [Azure Active Directory integration with MDM](http://go.microsoft.com/fwlink/p/?LinkId=625075).
+-   **User-driven, from the cloud.** By joining a device into Azure Active Directory and leveraging the automatic mobile device management (MDM) provisioning capabilities at the same time, an end user can initiate the provisioning process themselves just by entering the Azure Active Directory account and password (called their “work or school account” within Windows 10). The MDM service can then transform the device into a fully-configured organization PC. For more information, see [Azure Active Directory integration with MDM](https://go.microsoft.com/fwlink/p/?LinkId=625075).
 
--   **IT admin-driven, using new tools.** Using the new Windows Imaging and Configuration Designer (ICD) tool, IT administrators can create provisioning packages that can be applied to a computer to transform it into a fully-configured organization PC. For more information, see [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=625076).
+-   **IT admin-driven, using new tools.** Using the new Windows Imaging and Configuration Designer (ICD) tool, IT administrators can create provisioning packages that can be applied to a computer to transform it into a fully-configured organization PC. For more information, see [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=625076).
 
 In either of these scenarios, you can make a variety of configuration changes to the PC:
 

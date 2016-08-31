@@ -43,8 +43,8 @@ When you install MBAM with Configuration Manager, the following additional prere
 </tr>
 <tr class="even">
 <td align="left"><p>The Hardware Inventory Client Agent is on the Configuration Manager Server.</p></td>
-<td align="left"><p>For System Center 2012 Configuration Manager, see [How to Configure Hardware Inventory in Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=301685).</p>
-<p>For Configuration Manager 2007, see [How to Configure Hardware Inventory for a Site](http://go.microsoft.com/fwlink/?LinkId=301656).</p></td>
+<td align="left"><p>For System Center 2012 Configuration Manager, see [How to Configure Hardware Inventory in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301685).</p>
+<p>For Configuration Manager 2007, see [How to Configure Hardware Inventory for a Site](https://go.microsoft.com/fwlink/?LinkId=301656).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>One of the following is enabled, depending on the version of Configuration Manager that you are using:</p>
@@ -52,13 +52,13 @@ When you install MBAM with Configuration Manager, the following additional prere
 <li><p>Compliance Settings - (System Center 2012 Configuration Manager)</p></li>
 <li><p>Desired Configuration Management (DCM) Client Agent – (Configuration Manager 2007)</p></li>
 </ul></td>
-<td align="left"><p>For System Center 2012 Configuration Manager, see [Configuring Compliance Settings in Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=301687).</p>
-<p>For Configuration Manager 2007, see [Desired Configuration Management Client Agent Properties](http://go.microsoft.com/fwlink/?LinkId=301686).</p></td>
+<td align="left"><p>For System Center 2012 Configuration Manager, see [Configuring Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301687).</p>
+<p>For Configuration Manager 2007, see [Desired Configuration Management Client Agent Properties](https://go.microsoft.com/fwlink/?LinkId=301686).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>A reporting services point is defined in Configuration Manager. Required for SQL Server Reporting Services (SSRS).</p></td>
-<td align="left"><p>For System Center 2012 Configuration Manager, see [Prerequisites for Reporting in Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=301689).</p>
-<p>For Configuration Manager 2007, see [How to Create a Reporting Services Point for SQL Reporting Services](http://go.microsoft.com/fwlink/?LinkId=301688).</p></td>
+<td align="left"><p>For System Center 2012 Configuration Manager, see [Prerequisites for Reporting in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=301689).</p>
+<p>For Configuration Manager 2007, see [How to Create a Reporting Services Point for SQL Reporting Services](https://go.microsoft.com/fwlink/?LinkId=301688).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Configuration Manager 2007 requires Microsoft .NET Framework 2.0</p></td>

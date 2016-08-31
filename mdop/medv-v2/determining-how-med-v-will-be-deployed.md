@@ -23,7 +23,7 @@ Because MED-V is a desktop-based solution, it works with your existing infrastru
 If you are currently using an electronic software distribution solution, you can use that to distribute MED-V workspaces and their dependent applications. You can also use this solution for distribution of subsequent applications after MED-V is deployed. For more information about deploying MED-V with an ESD, see [How to Deploy a MED-V Workspace Through an Electronic Software Distribution System](how-to-deploy-a-med-v-workspace-through-an-electronic-software-distribution-system.md).
 
 **Note**  
-Whichever electronic software distribution solution that you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or a later version, see the [Configuration Manager Documentation Library](http://go.microsoft.com/fwlink/?LinkId=66999) in the Microsoft Technical Library (http://go.microsoft.com/fwlink/?LinkId=66999).
+Whichever electronic software distribution solution that you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or a later version, see the [Configuration Manager Documentation Library](https://go.microsoft.com/fwlink/?LinkId=66999) in the Microsoft Technical Library (https://go.microsoft.com/fwlink/?LinkId=66999).
 
  
 

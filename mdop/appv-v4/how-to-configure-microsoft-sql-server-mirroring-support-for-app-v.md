@@ -24,17 +24,17 @@ This procedure is written for administrators who are familiar with setting up an
 
 1.  Set up SQL Server database mirroring of the App-V database following your standard business practices for database mirroring. Use the following links for general information about implementing Microsoft SQL Server database mirroring:
 
-    -   **Microsoft SQL 2005**—[Setting Up Database Mirroring](http://go.microsoft.com/fwlink/?LinkId=187478) (http://go.microsoft.com/fwlink/?LinkId=187478)
+    -   **Microsoft SQL 2005**—[Setting Up Database Mirroring](https://go.microsoft.com/fwlink/?LinkId=187478) (https://go.microsoft.com/fwlink/?LinkId=187478)
 
-    -   **Microsoft SQL 2008**—[Setting Up Database Mirroring](http://go.microsoft.com/fwlink/?LinkId=187477) (http://go.microsoft.com/fwlink/?LinkId=187477)
+    -   **Microsoft SQL 2008**—[Setting Up Database Mirroring](https://go.microsoft.com/fwlink/?LinkId=187477) (https://go.microsoft.com/fwlink/?LinkId=187477)
 
-    In addition, you can find Best Practices information in [Database Mirroring Best Practices and Performance Considerations](http://go.microsoft.com/fwlink/?LinkId=190270) (http://go.microsoft.com/fwlink/?LinkId=190270).
+    In addition, you can find Best Practices information in [Database Mirroring Best Practices and Performance Considerations](https://go.microsoft.com/fwlink/?LinkId=190270) (https://go.microsoft.com/fwlink/?LinkId=190270).
 
-2.  After mirroring has been set up, verify that the App-V database shows a status of **(Principal, Synchronized)**, and the mirrored database shows a status of **(Mirror, Synchronized / Restoring)**. Resolve any mirroring issues before proceeding to the next step. For additional information about monitoring the status, see [Monitoring Mirroring Status](http://go.microsoft.com/fwlink/?LinkId=190279) (http://go.microsoft.com/fwlink/?LinkId=190279).
+2.  After mirroring has been set up, verify that the App-V database shows a status of **(Principal, Synchronized)**, and the mirrored database shows a status of **(Mirror, Synchronized / Restoring)**. Resolve any mirroring issues before proceeding to the next step. For additional information about monitoring the status, see [Monitoring Mirroring Status](https://go.microsoft.com/fwlink/?LinkId=190279) (https://go.microsoft.com/fwlink/?LinkId=190279).
 
 3.  On the SQL Server computer that hosts the mirror of the App-V database, create the SQL Server Login for the network service account of the App-V Management Server by using the account name **&lt;domain&gt;\\&lt;ManagementServerHostName&gt;$**.
 
-4.  Install the Microsoft SQL Server Native Client on the App-V Management Server, and on the computer running the App-V Management Web Service if installed on a different computer. If you plan to have additional App-V Management Servers connect to the mirrored SQL database for load balancing, you must install the Microsoft SQL Server Native Client on those computers as well. You can download the Microsoft SQL Server Native Client from the [Microsoft SQL Server 2008 Feature Pack](http://go.microsoft.com/fwlink/?LinkId=187479) page in the Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkId=187479).
+4.  Install the Microsoft SQL Server Native Client on the App-V Management Server, and on the computer running the App-V Management Web Service if installed on a different computer. If you plan to have additional App-V Management Servers connect to the mirrored SQL database for load balancing, you must install the Microsoft SQL Server Native Client on those computers as well. You can download the Microsoft SQL Server Native Client from the [Microsoft SQL Server 2008 Feature Pack](https://go.microsoft.com/fwlink/?LinkId=187479) page in the Microsoft Download Center (https://go.microsoft.com/fwlink/?LinkId=187479).
 
 5.  Check the registry key **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Softgrid\\4.5\\Server\\SQLServerName** and make sure that it contains only the host name of the SQL Server. If it includes an instance name, for example *serverhostname\\instancename*, the instance name must be removed.
 
@@ -58,7 +58,7 @@ This procedure is written for administrators who are familiar with setting up an
     -   Click the **All** tab, and then select the entry **Failover Partner**. Click **Edit Value**, and then enter the server name of the failover SQL Server. Click **OK**.
 
     **Important**  
-    The App-V system uses Kerberos authentication. Therefore, when you configure SQL mirroring where Kerberos Authentication is enabled on the SQL Server and the SQL Server service runs under a domain user account, you must manually configure an SPN. For more information, see “When SQL Service Uses Domain-Based Account” in the article [Configuring App-V Administration for a Distributed Environment](http://go.microsoft.com/fwlink/?LinkId=203186) (http://go.microsoft.com/fwlink/?LinkId=203186).
+    The App-V system uses Kerberos authentication. Therefore, when you configure SQL mirroring where Kerberos Authentication is enabled on the SQL Server and the SQL Server service runs under a domain user account, you must manually configure an SPN. For more information, see “When SQL Service Uses Domain-Based Account” in the article [Configuring App-V Administration for a Distributed Environment](https://go.microsoft.com/fwlink/?LinkId=203186) (https://go.microsoft.com/fwlink/?LinkId=203186).
 
      
 

@@ -117,7 +117,7 @@ Use the **Output Options** controls to specify the output options for the applic
 <td align="left"><p><strong>Compression Algorithm</strong></p></td>
 <td align="left"><p>Use to select the method for compressing the SFT file for streaming across a network. Select one of the following compression methods:</p>
 <ul>
-<li><p><strong>Compressed</strong>—Specifies that the SFT file be compressed in the [ZLIB](http://go.microsoft.com/fwlink/?LinkId=111475) format.</p></li>
+<li><p><strong>Compressed</strong>—Specifies that the SFT file be compressed in the [ZLIB](https://go.microsoft.com/fwlink/?LinkId=111475) format.</p></li>
 <li><p><strong>Not Compressed</strong>—The default; specifies that the SFT file not be compressed.</p></li>
 </ul></td>
 </tr>

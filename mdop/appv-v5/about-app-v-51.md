@@ -503,7 +503,7 @@ Previously, the 4.6 root folder was not recognized and could not be accessed by 
 ## How to Get MDOP Technologies
 
 
-App-V is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049).
+App-V is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Got a suggestion for App-V?
 

@@ -23,14 +23,14 @@ localizationpriority: high
 -   Windows Server 2008 R2
 
 **Looking for retail activation?**
--   [Get Help Activating Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=618644)
+-   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
 The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to perform VAMT proxy activation and to track and monitor several types of product keys.
 
 By using the VAMT, you can automate and centrally manage the volume, retail, and MAK activation process for Windows, Office, and select other Microsoft products. The VAMT can manage volume activation by using MAKs or KMS. It is a standard Microsoft Management Console snap-in, and it can be 
 installed on any computer running Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2.
 
-The VAMT is distributed as part of the Windows Assessment and Deployment Kit (Windows ADK), which is a free download available from Microsoft Download Center. For more information, see [Windows Assessment and Deployment Kit (Windows ADK) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740).
+The VAMT is distributed as part of the Windows Assessment and Deployment Kit (Windows ADK), which is a free download available from Microsoft Download Center. For more information, see [Windows Assessment and Deployment Kit (Windows ADK) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526740).
 
 In Windows Server 2012 R2, you can install the VAMT directly from Server Manager without downloading the Windows ADK by selecting the Volume Activation Services role or the Remote Server Administration Tools/Role Administration Tools/Volume Activation Tools feature.
 
@@ -65,8 +65,8 @@ The VAMT stores information in a Microsoft SQL Server database for performance 
 -   **Managing activation data**. The VAMT stores activation data in a SQL Server database. The tool can export this data in XML format to other VAMT hosts or to an archive.
 
 For more information, see:
--   [Volume Activation Management Tool (VAMT) Overview](http://go.microsoft.com/fwlink/p/?LinkId=618266)
--   [VAMT Step-by-Step Scenarios](http://go.microsoft.com/fwlink/p/?LinkId=618267)
+-   [Volume Activation Management Tool (VAMT) Overview](https://go.microsoft.com/fwlink/p/?LinkId=618266)
+-   [VAMT Step-by-Step Scenarios](https://go.microsoft.com/fwlink/p/?LinkId=618267)
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)

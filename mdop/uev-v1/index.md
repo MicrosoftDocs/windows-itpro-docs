@@ -38,11 +38,11 @@ Microsoft User Experience Virtualization (UE-V) captures and centralizes applica
 <a href="" id="microsoft-user-experience-virtualization--ue-v--1-0-release-notes"></a>[Microsoft User Experience Virtualization (UE-V) 1.0 Release Notes](microsoft-user-experience-virtualization--ue-v--10-release-notes.md)  
 View updated product information and known issues for UE-V 1.0.
 
-<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](http://go.microsoft.com/fwlink/p/?LinkId=225286)  
+<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](https://go.microsoft.com/fwlink/p/?LinkId=225286)  
 Learn about the latest MDOP information and resources.
 
-<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032)  
-Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28http://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28http://go.microsoft.com/fwlink/p/?LinkId=242447).
+<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)  
+Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28https://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
  
 

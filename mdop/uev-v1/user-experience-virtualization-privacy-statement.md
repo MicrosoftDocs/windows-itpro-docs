@@ -92,7 +92,7 @@ The Customer Experience Improvement Program (“CEIP”) collects basic informat
 
 **Information Collected, Processed, or Transmitted:**
 
-For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <http://go.microsoft.com/fwlink/?LinkID=248701>.
+For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <https://go.microsoft.com/fwlink/?LinkID=248701>.
 
 **Use of Information:**
 
@@ -119,7 +119,7 @@ Microsoft Error Reporting provides a service that allows you to report problems 
 
 **Information Collected, Processed, or Transmitted:**
 
-For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at <http://go.microsoft.com/fwlink/?LinkId=248702>.
+For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at <https://go.microsoft.com/fwlink/?LinkId=248702>.
 
 **Use of Information:**
 
@@ -131,7 +131,7 @@ If you choose the recommended settings during Windows setup, you turn on automat
 
 **Important Information:**
 
-Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available at <http://go.microsoft.com/fwlink/?LinkId=262264>.
+Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available at <https://go.microsoft.com/fwlink/?LinkId=262264>.
 
 UE-V will not modify the Microsoft Error Reporting preference and will honor the system setting in the Control Panel and/or the setting enforced via Group Policy.
 
@@ -144,15 +144,15 @@ Microsoft Update is a service that provides Windows updates as well as updates f
 
 **Information Collected, Processed, or Transmitted:**
 
-For details about what information is collected and how it is used, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?LinkId=248704>
+For details about what information is collected and how it is used, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=248704>
 
 **Use of Information:**
 
--   For details about what information is collected and how it is used, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?LinkId=248704>.
+-   For details about what information is collected and how it is used, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=248704>.
 
 -   Choice/Control:
 
-    For details about controlling this feature, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?LinkId=248704>.
+    For details about controlling this feature, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=248704>.
 
 ## Related topics
 
