@@ -3056,7 +3056,7 @@ Syntax:
 <tr class="odd">
 <td align="left"><p>urlid</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p><em>UrlID</em> is a string identifier that uniquely identifies this .xml file. This parameter must be a no-colon-name as defined by the XML Namespaces specification. Each migration .xml file must have a unique urlid. If two migration .xml files have the same urlid, the second .xml file that is specified on the command line will not be processed. For more information about XML Namespaces, see [Use XML Namespaces](http://go.microsoft.com/fwlink/p/?LinkId=220938).</p></td>
+<td align="left"><p><em>UrlID</em> is a string identifier that uniquely identifies this .xml file. This parameter must be a no-colon-name as defined by the XML Namespaces specification. Each migration .xml file must have a unique urlid. If two migration .xml files have the same urlid, the second .xml file that is specified on the command line will not be processed. For more information about XML Namespaces, see [Use XML Namespaces](https://go.microsoft.com/fwlink/p/?LinkId=220938).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
@@ -3945,7 +3945,7 @@ The following scripts have no return value. You can use the following errors wit
          </processing>
     ```
 
--   **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](http://go.microsoft.com/fwlink/p/?LinkId=267898).
+-   **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](https://go.microsoft.com/fwlink/p/?LinkId=267898).
 
 -   **StopService (ServiceName)**. Stops the service that is identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service.
 

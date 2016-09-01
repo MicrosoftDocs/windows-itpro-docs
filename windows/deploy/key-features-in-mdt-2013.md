@@ -50,7 +50,7 @@ MDT 2013 has many useful features, the most important of which are:
 -   **Support for Office 2013.** Provides added support for deploying Microsoft Office Professional Plus 2013.
 -   **Support for Modern UI app package provisioning.** Provisions applications based on the new Windows app package standard, which is used in Windows 8 and later.
 -   **Extensibility.** Provides the capability to extend MDT far beyond the built-in features by adding custom scripts, web services, System Center Orchestrator runbooks, PowerShell scripts, and VBScripts.
--   **Upgrade task sequence.** Provides a new upgrade task sequence template that you can use to upgrade existing Windows 7, Windows 8, and Windows 8.1 systems directly to Windows 10, automatically preserving all data, settings, applications, and drivers. For more information about using this new upgrade task sequence, refer to the [Microsoft Deployment Toolkit resource page](http://go.microsoft.com/fwlink/p/?LinkId=618117).
+-   **Upgrade task sequence.** Provides a new upgrade task sequence template that you can use to upgrade existing Windows 7, Windows 8, and Windows 8.1 systems directly to Windows 10, automatically preserving all data, settings, applications, and drivers. For more information about using this new upgrade task sequence, refer to the [Microsoft Deployment Toolkit resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
 
 ## Related topics
 

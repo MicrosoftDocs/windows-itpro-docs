@@ -50,7 +50,7 @@ DaRT 8.0 SP1 includes a rollup of fixes to address issues found since the DaRT 8
 ## How to Get DaRT 8.0 SP1
 
 
-DaRT 8.0 SP1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+DaRT 8.0 SP1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Related topics
 

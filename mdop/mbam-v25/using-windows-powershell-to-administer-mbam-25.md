@@ -70,15 +70,15 @@ Windows PowerShell Help for MBAM cmdlets is available in the following formats:
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as webpages</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393498</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393498</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>On the Download Center as a Word .docx file</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393497</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393497</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On the Download Center as a .pdf file</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393499</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393499</p></td>
 </tr>
 </tbody>
 </table>

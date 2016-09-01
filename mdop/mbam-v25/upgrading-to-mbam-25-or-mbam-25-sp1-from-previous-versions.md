@@ -48,7 +48,7 @@ Review the following information before you start the upgrade.
 <td align="left"><p><strong>To resolve this issue:</strong></p>
 <p>Run <strong>aspnet_regiis –i</strong> from the following location:</p>
 <p>C:\windows\microsoft.net\Framework\v4.0.30319</p>
-<p>For more information, see: [ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkId=393272).</p></td>
+<p>For more information, see: [ASP.NET IIS Registration Tool](https://go.microsoft.com/fwlink/?LinkId=393272).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Register an SPN on the application pool account if all of the following are true:</p>

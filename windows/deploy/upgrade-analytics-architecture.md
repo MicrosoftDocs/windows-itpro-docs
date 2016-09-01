@@ -23,7 +23,7 @@ For more information about what telemetry data Microsoft collects and how that d
 
 [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 
-[Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](http://go.microsoft.com/fwlink/?LinkID=822965)
+[Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 ##**Related topics**
 

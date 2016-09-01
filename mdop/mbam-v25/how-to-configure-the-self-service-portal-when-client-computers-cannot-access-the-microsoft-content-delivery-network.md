@@ -28,11 +28,11 @@ In MBAM 2.5 SP1, the JavaScript files are included in the product, and you do no
 
 1.  Download the following JavaScript files from the CDN:
 
-    -   [jQuery-1.10.2.min.js](http://go.microsoft.com/fwlink/?LinkID=390515)
+    -   [jQuery-1.10.2.min.js](https://go.microsoft.com/fwlink/?LinkID=390515)
 
-    -   [jQuery.validate.min.js](http://go.microsoft.com/fwlink/?LinkID=390516)
+    -   [jQuery.validate.min.js](https://go.microsoft.com/fwlink/?LinkID=390516)
 
-    -   [jQuery.validate.unobtrusive.min.js](http://go.microsoft.com/fwlink/?LinkID=390517)
+    -   [jQuery.validate.unobtrusive.min.js](https://go.microsoft.com/fwlink/?LinkID=390517)
 
 2.  Copy the JavaScript files to the **Scripts** directory of the Self-Service Portal. This directory is located in *&lt;MBAM Self-Service Install Directory&gt;\\*Self Service Website\\Scripts.
 

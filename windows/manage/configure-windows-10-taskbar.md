@@ -15,7 +15,7 @@ Starting in Windows 10, version 1607, administrators can pin additional apps to 
 > [!NOTE]
 > The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
 
-You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](http://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path (the local path to the application). 
+You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](https://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path (the local path to the application). 
 
 If you specify an app to be pinned that is not installed on the computer, it won't appear on the taskbar.
 
@@ -35,8 +35,8 @@ To configure the taskbar:
 1. Create the XML file.
    * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from the following sample to the file.
    * If you are only configuring the taskbar, use the following sample to create a layout modification XML file.
-2. Edit and save the XML file. You can use [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path to identify the apps to pin to the taskbar.
-   * Use `<taskbar:UWA>` and [AUMID](http://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
+2. Edit and save the XML file. You can use [AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path to identify the apps to pin to the taskbar.
+   * Use `<taskbar:UWA>` and [AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
    * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications. 
 3. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
@@ -232,7 +232,7 @@ The resulting taskbar for computers in any other country region:
 
 
 > [!NOTE]
-> [Look up country and region codes (use the ISO Short column)](http://go.microsoft.com/fwlink/p/?LinkId=786445)
+> [Look up country and region codes (use the ISO Short column)](https://go.microsoft.com/fwlink/p/?LinkId=786445)
 
 
 

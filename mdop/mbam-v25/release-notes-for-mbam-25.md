@@ -37,7 +37,7 @@ This is fixed in MBAM 2.5 SP1.
 
 If a computer has the MBAM 2.5 client installed and is encrypted by using the AES 256-bit with Diffuser cipher strength, the MBAM client is reported as noncompliant in the MBAM compliance reports.
 
-**Workaround:** Install the hotfix at [KB2975636](http://go.microsoft.com/fwlink/?LinkId=511972).
+**Workaround:** Install the hotfix at [KB2975636](https://go.microsoft.com/fwlink/?LinkId=511972).
 
 ### <a href="" id="-------------mbam-fails-to-encrypt-a-volume-and-reports-an-error-if-you-set-a-tpm---pin-protector-on-a-tablet-device"></a> MBAM fails to encrypt a volume and reports an error if you set a TPM + PIN protector on a tablet device
 
@@ -61,7 +61,7 @@ If your client computers do not have access to the Microsoft Ajax Content Delive
 
 When you upgrade Internet Information Services (IIS) to the Microsoft .NET Framework 4.5, the Self-Service Portal and the Administration and Monitoring Website do not open.
 
-**Workaround:** See the article [Error message after you install the .NET Framework 4.0: "Could not load type 'System.ServiceModel.Activation.HttpModule'](http://go.microsoft.com/fwlink/?LinkId=393568).
+**Workaround:** See the article [Error message after you install the .NET Framework 4.0: "Could not load type 'System.ServiceModel.Activation.HttpModule'](https://go.microsoft.com/fwlink/?LinkId=393568).
 
 ### Administration and Monitoring Website displays a "Report cannot be found" error message when Reports are not configured
 

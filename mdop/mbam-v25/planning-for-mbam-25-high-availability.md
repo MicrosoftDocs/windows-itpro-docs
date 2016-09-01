@@ -34,7 +34,7 @@ MBAM enables you to configure and manage availability groups for the databases i
 
 An availability group supports a set of read/write primary databases and one to four sets of corresponding secondary databases. Optionally, secondary databases can be made available for read-only permission, some backup operations, or for both.
 
-For information about how to set up availability groups, see [AlwaysOn Availability Groups](http://go.microsoft.com/fwlink/?LinkId=393277).
+For information about how to set up availability groups, see [AlwaysOn Availability Groups](https://go.microsoft.com/fwlink/?LinkId=393277).
 
 ## <a href="" id="bkmk-sql-clustering"></a>Microsoft SQL Server clustering
 
@@ -50,7 +50,7 @@ You can use Network Load Balancing to configure a highly available environment f
 
 Before configuring load balancing, ensure that you have met the following prerequisites:
 
--   A load balancer must be available. You can use load balancers from Microsoft or another company. For more information about Microsoft load balancer technology, see [Build a Web Farm with IIS Servers](http://go.microsoft.com/fwlink/?LinkId=393326).
+-   A load balancer must be available. You can use load balancers from Microsoft or another company. For more information about Microsoft load balancer technology, see [Build a Web Farm with IIS Servers](https://go.microsoft.com/fwlink/?LinkId=393326).
 
 -   At least two servers are running IIS and have met all of the MBAM prerequisites to support its web features, including ASP.NET MVC 4.
 
@@ -82,7 +82,7 @@ Complete the following tasks:
 
     For instructions about how to automatically generate a key, see [Generate a Machine Key (IIS 7)](https://technet.microsoft.com/library/cc772287.aspx).
 
-The information about Load Balancing also applies to IIS Network Load Balancing (NLB) clusters in Windows Server 2012 or Windows Server 2008 R2. The IIS Network Load Balancing functionality in Windows Server 2012 is generally the same as in Windows Server 2008 R2. However, some task details are different in Windows Server 2012. For information about new ways to do tasks, see [Common Management Tasks and Navigation in Windows Server 2012 R2 Preview and Windows Server 2012](http://go.microsoft.com/fwlink/?LinkId=316371).
+The information about Load Balancing also applies to IIS Network Load Balancing (NLB) clusters in Windows Server 2012 or Windows Server 2008 R2. The IIS Network Load Balancing functionality in Windows Server 2012 is generally the same as in Windows Server 2008 R2. However, some task details are different in Windows Server 2012. For information about new ways to do tasks, see [Common Management Tasks and Navigation in Windows Server 2012 R2 Preview and Windows Server 2012](https://go.microsoft.com/fwlink/?LinkId=316371).
 
 ## <a href="" id="bkmk-db-mirroring"></a>Database mirroring in SQL Server
 
@@ -111,9 +111,9 @@ Enable-MbamWebApplication -SelfServicePortal -ComplianceAndAuditDBConnectionStri
 
 The following links provide more information about configuring SQL Server mirroring:
 
--   [How to: Prepare a Mirror Database for Mirroring (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=316375)
+-   [How to: Prepare a Mirror Database for Mirroring (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=316375)
 
--   [Establish a Database Mirroring Session Using Windows Authentication (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=316377)
+-   [Establish a Database Mirroring Session Using Windows Authentication (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=316377)
 
 ## <a href="" id="bkmk-vss"></a>Backing up MBAM databases by using the Volume Shadow Copy Service (VSS)
 

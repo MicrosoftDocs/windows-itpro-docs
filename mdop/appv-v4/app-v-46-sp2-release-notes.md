@@ -22,7 +22,7 @@ These release notes contain information that is required to successfully install
 ## About the Product Documentation
 
 
-For more information about documentation for App-V, see the [Application Virtualization](http://go.microsoft.com/fwlink/?LinkID=232982) page on Microsoft TechNet.
+For more information about documentation for App-V, see the [Application Virtualization](https://go.microsoft.com/fwlink/?LinkID=232982) page on Microsoft TechNet.
 
 ## Providing feedback
 
@@ -34,9 +34,9 @@ This email address is not a support channel, but your feedback will help us to p
 
  
 
-For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032) page.
+For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
-For more information about new updates or to provide feedback, follow us on [Facebook](http://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](http://go.microsoft.com/fwlink/p/?LinkId=242447).
+For more information about new updates or to provide feedback, follow us on [Facebook](https://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
 ## <a href="" id="known-issues-with-app-v-4-6-sp2-"></a>Known Issues with App-V 4.6 SP2
 

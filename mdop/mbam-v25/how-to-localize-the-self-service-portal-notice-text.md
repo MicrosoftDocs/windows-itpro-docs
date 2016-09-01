@@ -48,7 +48,7 @@ If an end user’s browser is set to a language that does not have a correspondi
     &lt;*MBAM Self-Service Install Directory*&gt;\\Self Service Website\\
 
     **Note**  
-    Some language folders already exist, so you might not have to create a folder. If you do have to create a language folder, see [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=317947) for a list of the valid names that you can use for the &lt;*Language*&gt; folder.
+    Some language folders already exist, so you might not have to create a folder. If you do have to create a language folder, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=317947) for a list of the valid names that you can use for the &lt;*Language*&gt; folder.
 
      
 

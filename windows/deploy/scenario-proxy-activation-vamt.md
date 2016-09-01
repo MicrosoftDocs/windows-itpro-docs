@@ -93,7 +93,7 @@ To collect the status from select computers in the database, you can select comp
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
     **Note**  
-    Product key installation will fail if VAMT finds mismatched key types or editions. VAMT displays the failure status and continues the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](http://go.microsoft.com/fwlink/p/?linkid=238382)
+    Product key installation will fail if VAMT finds mismatched key types or editions. VAMT displays the failure status and continues the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](https://go.microsoft.com/fwlink/p/?linkid=238382)
 
     **Note**  
     Installing a MAK and overwriting the GVLK on client products must be done with care. If the RTM version of Windows Vista has been installed on the computer for more than 30 days, then its initial grace period has expired. As a result, it will enter Reduced Functionality Mode (RFM) if online activation is not completed successfully before the next logon attempt. However, you can use online activation to recover properly configured computers from RFM, as long as the computers are available on the network. RFM only applies to the RTM version of Windows Vista or the retail editions of Microsoft Office 2010. Windows Vista with SP1 or later, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, and volume editions of Office 2010 will not enter RFM.

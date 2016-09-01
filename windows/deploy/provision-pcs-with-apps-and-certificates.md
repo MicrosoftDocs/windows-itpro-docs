@@ -104,7 +104,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 ### Add other settings to your package 
 
-For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
+For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
 ### Build your package
 
@@ -214,11 +214,11 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 ![add a package option](images/package.png)
 
 ## Learn more
--   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
+-   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
 
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](http://go.microsoft.com/fwlink/p/?LinkId=615921)
+-   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](http://go.microsoft.com/fwlink/p/?LinkId=615922)
+-   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
  
 
 

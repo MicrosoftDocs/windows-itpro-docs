@@ -32,11 +32,11 @@ When you plan your MBAM installation, consider the following concerns that can a
 
 The main concern for MBAM high availability is BitLocker key recovery availability. If the help desk cannot provide recovery keys, users who are locked out cannot unlock their computers. To avoid this problem, consider implementing redundant web servers and databases to ensure high availability.
 
-For more information about MBAM scalability and high availability, see the [MBAM Scalability White Paper](http://go.microsoft.com/fwlink/p/?LinkId=229025) (http://go.microsoft.com/fwlink/p/?LinkId=229025).
+For more information about MBAM scalability and high availability, see the [MBAM Scalability White Paper](https://go.microsoft.com/fwlink/p/?LinkId=229025) (https://go.microsoft.com/fwlink/p/?LinkId=229025).
 
-For general guidance on high availability for Microsoft SQL Server, see [High Availability](http://go.microsoft.com/fwlink/p/?LinkId=221504) (http://go.microsoft.com/fwlink/p/?LinkId=221504).
+For general guidance on high availability for Microsoft SQL Server, see [High Availability](https://go.microsoft.com/fwlink/p/?LinkId=221504) (https://go.microsoft.com/fwlink/p/?LinkId=221504).
 
-For general guidance on availability and scalability for web servers, see [Availability and Scalability](http://go.microsoft.com/fwlink/p/?LinkId=221503) (http://go.microsoft.com/fwlink/p/?LinkId=221503).
+For general guidance on availability and scalability for web servers, see [Availability and Scalability](https://go.microsoft.com/fwlink/p/?LinkId=221503) (https://go.microsoft.com/fwlink/p/?LinkId=221503).
 
 ## Related topics
 

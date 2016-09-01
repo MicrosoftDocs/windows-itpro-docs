@@ -79,7 +79,7 @@ To allow facial recognition, you must have devices with integrated special infra
 - [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
 - [Microsoft Passport guide](microsoft-passport-guide.md)
 - [Prepare people to use Windows Hello for Work](prepare-people-to-use-microsoft-passport.md)
-- [PassportforWork CSP](http://go.microsoft.com/fwlink/p/?LinkId=708219)
+- [PassportforWork CSP](https://go.microsoft.com/fwlink/p/?LinkId=708219)
 
  
 

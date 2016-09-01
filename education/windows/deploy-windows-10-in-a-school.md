@@ -1257,8 +1257,8 @@ Now, you have identified the tasks you need to perform monthly, at the end of an
 
 ##Related resources
 <ul>
-<li>[Try it out: Windows 10 deployment (for educational institutions)](http://go.microsoft.com/fwlink/p/?LinkId=623254)</li>
-<li>[Try it out: Windows 10 in the classroom](http://go.microsoft.com/fwlink/p/?LinkId=623255)</li>
-<li>[Chromebook migration guide](http://go.microsoft.com/fwlink/p/?LinkId=623249)</li>
+<li>[Try it out: Windows 10 deployment (for educational institutions)](https://go.microsoft.com/fwlink/p/?LinkId=623254)</li>
+<li>[Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)</li>
+<li>[Chromebook migration guide](https://go.microsoft.com/fwlink/p/?LinkId=623249)</li>
 </ul>
 

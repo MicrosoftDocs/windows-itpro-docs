@@ -300,11 +300,11 @@ For more information, and for late-breaking news that did not make it into the d
 
 ### More information
 
-<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](http://go.microsoft.com/fwlink/p/?LinkId=225286)  
+<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](https://go.microsoft.com/fwlink/p/?LinkId=225286)  
 Learn about the latest MDOP information and resources.
 
-<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032)  
-Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28http://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28http://go.microsoft.com/fwlink/p/?LinkId=242447).
+<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)  
+Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28https://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
 ## Got a suggestion for UE-V?
 

@@ -99,7 +99,7 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 
 ## Related topics
 - [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
  
 
  

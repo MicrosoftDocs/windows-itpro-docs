@@ -43,9 +43,9 @@ Repeat these steps for any software or application that you want to install on t
 
 For more information about how to install software on a virtual image, see the following articles:
 
--   [Publish and Use Virtual Applications](http://go.microsoft.com/fwlink/?LinkId=195926) (http://go.microsoft.com/fwlink/?LinkId=195926).
+-   [Publish and Use Virtual Applications](https://go.microsoft.com/fwlink/?LinkId=195926) (https://go.microsoft.com/fwlink/?LinkId=195926).
 
--   [Windows Virtual PC Help](http://go.microsoft.com/fwlink/?LinkId=182378) (http://go.microsoft.com/fwlink/?LinkId=182378).
+-   [Windows Virtual PC Help](https://go.microsoft.com/fwlink/?LinkId=182378) (https://go.microsoft.com/fwlink/?LinkId=182378).
 
 After you have installed all of the software that you want on the MED-V image, your image is ready to be packaged.
 

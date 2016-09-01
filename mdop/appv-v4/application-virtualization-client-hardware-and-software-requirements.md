@@ -85,16 +85,16 @@ The hardware requirements requirements are applicable to all versions.
 **Note**  
 The following software prerequisites are installed automatically if you are using the Setup.exe method. If you are using the Setup.msi installation program, the following products must be installed first.
 
--   **Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2005 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=119961) (http://go.microsoft.com/fwlink/?LinkId=119961). For version 4.5 SP2 of the App-V client, download Vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](http://go.microsoft.com/fwlink/?LinkId=169360) (http://go.microsoft.com/fwlink/?LinkId=169360).
+-   **Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2005 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=119961) (https://go.microsoft.com/fwlink/?LinkId=119961). For version 4.5 SP2 of the App-V client, download Vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](https://go.microsoft.com/fwlink/?LinkId=169360) (https://go.microsoft.com/fwlink/?LinkId=169360).
 
--   **Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)**—For more information about installing Microsoft Core XML Services (MSXML) 6.0 SP1 (x86), see [Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)](http://go.microsoft.com/fwlink/?LinkId=63266) (http://go.microsoft.com/fwlink/?LinkId=63266).
+-   **Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)**—For more information about installing Microsoft Core XML Services (MSXML) 6.0 SP1 (x86), see [Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)](https://go.microsoft.com/fwlink/?LinkId=63266) (https://go.microsoft.com/fwlink/?LinkId=63266).
 
  
 
 **Note**  
 For the Application Virtualization (App-V) 4.6 Desktop Client, the following additional software prerequisite is installed automatically if you are using the Setup.exe method. If you are using the Setup.msi installation program, you must also install with the other prerequisites listed.
 
--   **Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2008 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=150700) (http://go.microsoft.com/fwlink/?LinkId=150700).
+-   **Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2008 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=150700) (https://go.microsoft.com/fwlink/?LinkId=150700).
 
  
 
@@ -149,9 +149,9 @@ The Application Virtualization (App-V) 4.6 Desktop Client supports 32-bit and 64
 **Note**  
 The following software prerequisites are installed automatically if you are using the Setup.exe method. If you are using the Setup.msi installation program, the following products must be installed first.
 
--   **Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2005 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=119961) (http://go.microsoft.com/fwlink/?LinkId=119961). For version 4.5 SP2 of the App-V client, download Vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](http://go.microsoft.com/fwlink/?LinkId=169360) (http://go.microsoft.com/fwlink/?LinkId=169360).
+-   **Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2005 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=119961) (https://go.microsoft.com/fwlink/?LinkId=119961). For version 4.5 SP2 of the App-V client, download Vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](https://go.microsoft.com/fwlink/?LinkId=169360) (https://go.microsoft.com/fwlink/?LinkId=169360).
 
--   **Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)**—For more information about installing Microsoft Core XML Services (MSXML) 6.0 SP1 (x86), see [Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)](http://go.microsoft.com/fwlink/?LinkId=63266) (http://go.microsoft.com/fwlink/?LinkId=63266).
+-   **Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)**—For more information about installing Microsoft Core XML Services (MSXML) 6.0 SP1 (x86), see [Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)](https://go.microsoft.com/fwlink/?LinkId=63266) (https://go.microsoft.com/fwlink/?LinkId=63266).
 
 -   **Microsoft Application Error Reporting**—The installation program for this software is included in the **Support\\Watson** folder in the self-extracting archive file.
 
@@ -160,7 +160,7 @@ The following software prerequisites are installed automatically if you are usin
 **Note**  
 For the Application Virtualization (App-V) 4.6 Desktop Client, the following additional software prerequisite is installed automatically if you are using the Setup.exe method. If you are using the Setup.msi installation program, you must also install with the other prerequisites listed.
 
--   **Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2008 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=150700) (http://go.microsoft.com/fwlink/?LinkId=150700).
+-   **Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2008 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=150700) (https://go.microsoft.com/fwlink/?LinkId=150700).
 
  
 
@@ -234,9 +234,9 @@ The hardware requirements requirements are applicable to all versions.
 **Note**  
 The following software prerequisites are installed automatically if you are using the Setup.exe method. If you are using the Setup.msi installation program, the following products must be installed first.
 
--   **Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2005 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=119961) (http://go.microsoft.com/fwlink/?LinkId=119961). For version 4.5 SP2 of the App-V client, download Vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](http://go.microsoft.com/fwlink/?LinkId=169360) (http://go.microsoft.com/fwlink/?LinkId=169360).
+-   **Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2005 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=119961) (https://go.microsoft.com/fwlink/?LinkId=119961). For version 4.5 SP2 of the App-V client, download Vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](https://go.microsoft.com/fwlink/?LinkId=169360) (https://go.microsoft.com/fwlink/?LinkId=169360).
 
--   **Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)**—For more information about installing Microsoft Core XML Services (MSXML) 6.0 SP1 (x86), see [Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)](http://go.microsoft.com/fwlink/?LinkId=63266) (http://go.microsoft.com/fwlink/?LinkId=63266).
+-   **Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)**—For more information about installing Microsoft Core XML Services (MSXML) 6.0 SP1 (x86), see [Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)](https://go.microsoft.com/fwlink/?LinkId=63266) (https://go.microsoft.com/fwlink/?LinkId=63266).
 
 -   **Microsoft Application Error Reporting**—The installation program for this software is included in the **Support\\Watson** folder in the self-extracting archive file.
 
@@ -245,7 +245,7 @@ The following software prerequisites are installed automatically if you are usin
 **Note**  
 For the Application Virtualization (App-V) 4.6 Desktop Client, the following additional software prerequisite is installed automatically if you are using the Setup.exe method. If you are using the Setup.msi installation program, you must also install with the other prerequisites listed.
 
--   **Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2008 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=150700) (http://go.microsoft.com/fwlink/?LinkId=150700).
+-   **Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)**—For more information about installing Microsoft Visual C++ 2008 SP1 Redistributable Package (x86), see [Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=150700) (https://go.microsoft.com/fwlink/?LinkId=150700).
 
  
 

@@ -24,7 +24,7 @@ Group Policy preferences are less strict than Group Policy settings, based on:
 |Targeting and filtering |<ul><li>Targeting is specific, with a user interface for each type of targeting item</li><li>Supports targeting at the individual preference item level</li></ul> |<ul><li>Filtering is based on Windows Management Instrumentation (WMI), and requires writing WMI queries</li><li>Supports filtering at the Group Policy Object (GPO) level</li></ul> |
 
 
-For more information about Group Policy preferences, see the [Group Policy Settings Reference for Windows and Windows Server](http://go.microsoft.com/fwlink/p/?LinkId=279876).
+For more information about Group Policy preferences, see the [Group Policy Settings Reference for Windows and Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=279876).
 
  
 

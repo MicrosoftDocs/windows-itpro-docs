@@ -23,7 +23,7 @@ Administrative Templates are made up of a hierarchy of policy categories and sub
 
 -   Text explanations about each setting and the supported version of Internet Explorer.
 
-For a conceptual overview of Administrative Templates, see [Managing Group Policy ADMX Files Step-by-Step Guide](http://go.microsoft.com/fwlink/p/?LinkId=214519).
+For a conceptual overview of Administrative Templates, see [Managing Group Policy ADMX Files Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=214519).
 
 ## What are Administrative Templates?
 Administrative Templates are XML-based, multi-language files that define the registry-based Group Policy settings in the Local Group Policy Editor. There are two types of Administrative Templates:
@@ -34,7 +34,7 @@ Administrative Templates are XML-based, multi-language files that define the reg
 
 ## How do I store Administrative Templates?
 As an admin, you can create a central store folder on your SYSVOL directory, named **PolicyDefinitions**. For example, %*SystemRoot*%\\PolicyDefinitions. This folder provides a single, centralized storage location for your Administrative Templates (both ADMX and ADML) files, so they can be used by your domain-based Group Policy Objects (GPOs).
-<p>**Important**<br>Your Group Policy tools use the ADMX files in your store, ignoring any local copies. For more information about creating a central store, see [Scenario 1: Editing the Local GPO Using ADMX Files](http://go.microsoft.com/fwlink/p/?LinkId=276810).
+<p>**Important**<br>Your Group Policy tools use the ADMX files in your store, ignoring any local copies. For more information about creating a central store, see [Scenario 1: Editing the Local GPO Using ADMX Files](https://go.microsoft.com/fwlink/p/?LinkId=276810).
 
 ## Administrative Templates-related Group Policy settings
 When you install Internet Explorer 11, it updates the local administrative files, Inetres.admx and Inetres.adml, both located in the **PolicyDefinitions** folder.
@@ -68,11 +68,11 @@ IE11 provides these new policy settings, which are editable in the Local Group P
 ## Editing Group Policy settings
 Regardless which tool you're using to edit your Group Policy settings, you'll need to follow one of these guides for step-by-step editing instructions:
 
--   **If you're using the Group Policy Management Console (GPMC) or the Local Group Policy Editor.** See [Edit Administrative Template Policy Settings](http://go.microsoft.com/fwlink/p/?LinkId=214521) for step-by-step instructions about editing your Administrative Templates.
+-   **If you're using the Group Policy Management Console (GPMC) or the Local Group Policy Editor.** See [Edit Administrative Template Policy Settings](https://go.microsoft.com/fwlink/p/?LinkId=214521) for step-by-step instructions about editing your Administrative Templates.
 
--   **If you're using GPMC with Advanced Group Policy Management (AGPM).** See [Checklist: Create, Edit, and Deploy a GPO](http://go.microsoft.com/fwlink/p/?LinkId=214522) for step-by-step instructions about how to check out a GPO from the AGPM archive, edit it, and request deployment.
+-   **If you're using GPMC with Advanced Group Policy Management (AGPM).** See [Checklist: Create, Edit, and Deploy a GPO](https://go.microsoft.com/fwlink/p/?LinkId=214522) for step-by-step instructions about how to check out a GPO from the AGPM archive, edit it, and request deployment.
 
 ## Related topics
-- [Administrative templates (.admx) for Windows 10 download](http://go.microsoft.com/fwlink/p/?LinkId=746579)
-- [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=746580)
+- [Administrative templates (.admx) for Windows 10 download](https://go.microsoft.com/fwlink/p/?LinkId=746579)
+- [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580)
 

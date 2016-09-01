@@ -33,10 +33,10 @@ Provides information about how to upgrade your MED-V installation.
 <a href="" id="windows-virtual-pc-application-exclude-list"></a>[Windows Virtual PC Application Exclude List](windows-virtual-pc-application-exclude-list.md)  
 Describes how to specify certain installed applications that you do not want published to the host computer.
 
-<a href="" id="med-v-2-configuration-cmdlets"></a>[MED-V 2 Configuration Cmdlets](http://go.microsoft.com/fwlink/?LinkId=213301)  
+<a href="" id="med-v-2-configuration-cmdlets"></a>[MED-V 2 Configuration Cmdlets](https://go.microsoft.com/fwlink/?LinkId=213301)  
 Provides information about cmdlets you can use to perform various MED-V configuration tasks from the command line.
 
-<a href="" id="med-v-2-workspace-cmdlets"></a>[MED-V 2 Workspace Cmdlets](http://go.microsoft.com/fwlink/?LinkId=213302)  
+<a href="" id="med-v-2-workspace-cmdlets"></a>[MED-V 2 Workspace Cmdlets](https://go.microsoft.com/fwlink/?LinkId=213302)  
 Provides information about cmdlets you can use to perform various MED-V workspace configuration tasks from the command line.
 
 <a href="" id="example-med-v-checklists"></a>[Example MED-V Checklists](example-med-v-checklists.md)  

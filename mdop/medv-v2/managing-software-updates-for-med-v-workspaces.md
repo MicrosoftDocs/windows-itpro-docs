@@ -32,7 +32,7 @@ For information about how to specify the configuration settings that define how 
 
 3.  **Using Application Virtualization (APP-V)**
 
-    If you use MED-V together with App-V, you can provide software updates to applications in the MED-V workspace by following the steps that are required by App-V for updating software. For more information, see [Application Virtualization](http://go.microsoft.com/fwlink/?LinkId=122939) (http://go.microsoft.com/fwlink/?LinkId=122939).
+    If you use MED-V together with App-V, you can provide software updates to applications in the MED-V workspace by following the steps that are required by App-V for updating software. For more information, see [Application Virtualization](https://go.microsoft.com/fwlink/?LinkId=122939) (https://go.microsoft.com/fwlink/?LinkId=122939).
 
 4.  **Updating Software in the Core Image**
 

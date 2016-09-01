@@ -34,9 +34,9 @@ This email address is not a support channel, but your feedback will help us to p
 
  
 
-For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032) page.
+For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
-For more information about new updates or to provide feedback, follow us on [Facebook](http://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](http://go.microsoft.com/fwlink/p/?LinkId=242447).
+For more information about new updates or to provide feedback, follow us on [Facebook](https://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
 ## Known Issues with App-V 5.0 SP1
 
