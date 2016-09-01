@@ -16,7 +16,7 @@ author: jobotto
 
 This article provides a detailed walkthrough of Microsoft Surface Dock Updater.
 
-The [Microsoft Surface Dock Updater](http://go.microsoft.com/fwlink/p/?LinkId=618121) tool allows you to check the firmware status of a Surface Dock and to manually update the firmware of Surface Dock devices. It is most often used to update Surface Docks prior to deployment of those Surface Docks to end users or as a troubleshooting tool. Microsoft Surface Dock Updater walks you through the process of updating the firmware on one or more Surface Docks, including the required connect and disconnect steps to perform the complete firmware installation.
+The [Microsoft Surface Dock Updater](https://go.microsoft.com/fwlink/p/?LinkId=618121) tool allows you to check the firmware status of a Surface Dock and to manually update the firmware of Surface Dock devices. It is most often used to update Surface Docks prior to deployment of those Surface Docks to end users or as a troubleshooting tool. Microsoft Surface Dock Updater walks you through the process of updating the firmware on one or more Surface Docks, including the required connect and disconnect steps to perform the complete firmware installation.
 
 When you run the Microsoft Surface Dock Updater installer you will be prompted to accept an End User License Agreement (EULA).
 
@@ -25,7 +25,7 @@ When you run the Microsoft Surface Dock Updater installer you will be prompted t
 ## Update a Surface Dock with Microsoft Surface Dock Updater
 
 
-After you install the [Microsoft Surface Dock Updater](http://go.microsoft.com/fwlink/p/?LinkId=618121) tool, you can find Microsoft Surface Dock Updater under **All Apps** in your Start menu. Click **Microsoft Surface Dock Updater** to start the application.
+After you install the [Microsoft Surface Dock Updater](https://go.microsoft.com/fwlink/p/?LinkId=618121) tool, you can find Microsoft Surface Dock Updater under **All Apps** in your Start menu. Click **Microsoft Surface Dock Updater** to start the application.
 
 To update a Surface Dock with Microsoft Surface Dock Updater, follow these steps:
 

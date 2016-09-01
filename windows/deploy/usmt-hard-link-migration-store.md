@@ -67,7 +67,7 @@ A hard link can only be created for a file on the same volume. If you copy a har
 
  
 
-For more information about hard links, please see [Hard Links and Junctions](http://go.microsoft.com/fwlink/p/?LinkId=132934)
+For more information about hard links, please see [Hard Links and Junctions](https://go.microsoft.com/fwlink/p/?LinkId=132934)
 
 In most aspects, a hard-link migration store is identical to an uncompressed migration store. It is located where specified by the Scanstate command-line tool and you can view the contents of the store by using Windows® Explorer. Once created, it can be deleted or copied to another location without changing user state. Restoring a hard-link migration store is similar to restoring any other migration store; however, as with creating the store, the same hard-link functionality is used to keep files in-place.
 

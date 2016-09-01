@@ -101,7 +101,7 @@ Table 1 describes both the items that AGPM installs or creates and the parts of 
 
 ### Additional references
 
-For more information about the files installed by AGPM, see the [Planning Guide for AGPM](http://go.microsoft.com/fwlink/?LinkId=160060).
+For more information about the files installed by AGPM, see the [Planning Guide for AGPM](https://go.microsoft.com/fwlink/?LinkId=160060).
 
 ## Archive
 
@@ -121,7 +121,7 @@ When AGPM creates the archive, it gives Full Control to SYSTEM, Administrators, 
 
 ### Additional references
 
-For information about how to back up the archive, restore the archive from a backup, or move both the AGPM Server and the archive, see the "Performing AGPM Administrator Tasks" section in the [Operations Guide for AGPM](http://go.microsoft.com/fwlink/?LinkId=160061).
+For information about how to back up the archive, restore the archive from a backup, or move both the AGPM Server and the archive, see the "Performing AGPM Administrator Tasks" section in the [Operations Guide for AGPM](https://go.microsoft.com/fwlink/?LinkId=160061).
 
 ## Roles and permissions
 
@@ -268,7 +268,7 @@ The ability to delegate access to GPOs in the production environment for a domai
 
 ### Additional references
 
-For information about what tasks can be performed by Group Policy administrators assigned a particular role or about which permissions are required to perform a specific task, see the [Operations Guide for AGPM](http://go.microsoft.com/fwlink/?LinkId=160061).
+For information about what tasks can be performed by Group Policy administrators assigned a particular role or about which permissions are required to perform a specific task, see the [Operations Guide for AGPM](https://go.microsoft.com/fwlink/?LinkId=160061).
 
  
 

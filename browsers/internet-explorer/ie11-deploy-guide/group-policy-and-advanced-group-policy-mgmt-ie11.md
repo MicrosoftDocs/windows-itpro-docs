@@ -29,7 +29,7 @@ From AGPM you can:
 -   **Manage your GPO lifecycle with change control features.** You can use the available version-control, history, and auditing features to help you manage your GPOs while moving through your archive, to your editing process, and finally to your GPO deployment.
 
 **Note**<br>
-For more information about AGPM, and to get the license, see [Microsoft Advanced Group Policy Management 4.0 SP1 Step-by-Step Guide](http://go.microsoft.com/fwlink/p/?LinkId=294916).
+For more information about AGPM, and to get the license, see [Microsoft Advanced Group Policy Management 4.0 SP1 Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=294916).
 
  
 

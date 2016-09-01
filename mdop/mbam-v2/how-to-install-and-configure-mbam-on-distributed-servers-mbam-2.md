@@ -137,7 +137,7 @@ The following steps describe how to install general MBAM features.
 
      
 
-10. To optionally register a Service Principal Name (SPN) for the Self-Service Portal, select **Register this machine’s Service Principal Names (SPN) with Active Directory (Required for Windows Authentication)**. If you select this check box, MBAM Setup will not try to register the existing SPNs, and you can manually register the SPN before or after the MBAM installation. For instructions on registering the SPN manually, see [Manual SPN Registration](http://go.microsoft.com/fwlink/?LinkId=286758).
+10. To optionally register a Service Principal Name (SPN) for the Self-Service Portal, select **Register this machine’s Service Principal Names (SPN) with Active Directory (Required for Windows Authentication)**. If you select this check box, MBAM Setup will not try to register the existing SPNs, and you can manually register the SPN before or after the MBAM installation. For instructions on registering the SPN manually, see [Manual SPN Registration](https://go.microsoft.com/fwlink/?LinkId=286758).
 
 11. Click **Next** to continue with the Microsoft BitLocker Administration and Monitoring Setup wizard.
 
@@ -160,13 +160,13 @@ The following steps describe how to install general MBAM features.
 
 2.  Download the four JavaScript files from the Microsoft CDN:
 
-    -   jQuery-1.7.2.min.js - [http://go.microsoft.com/p/fwlink/?LinkID=271736](http://go.microsoft.com/fwlink/p/?LinkID=271736)
+    -   jQuery-1.7.2.min.js - [https://go.microsoft.com/p/fwlink/?LinkID=271736](https://go.microsoft.com/fwlink/p/?LinkID=271736)
 
-    -   MicrosoftAjax.js –[http://go.microsoft.com/p/fwlink/?LinkId=272283](http://go.microsoft.com/fwlink/p/?LinkId=272283)
+    -   MicrosoftAjax.js –[https://go.microsoft.com/p/fwlink/?LinkId=272283](https://go.microsoft.com/fwlink/p/?LinkId=272283)
 
-    -   MicrosoftMvcAjax.js - [http://go.microsoft.com/p/fwlink/?LinkId=272284](http://go.microsoft.com/fwlink/p/?LinkId=272284)
+    -   MicrosoftMvcAjax.js - [https://go.microsoft.com/p/fwlink/?LinkId=272284](https://go.microsoft.com/fwlink/p/?LinkId=272284)
 
-    -   MicrosoftMvcValidation.js - <http://go.microsoft.com/fwlink/p/?LinkId=272285>
+    -   MicrosoftMvcValidation.js - <https://go.microsoft.com/fwlink/p/?LinkId=272285>
 
 3.  Copy the JavaScript files to the **Scripts** directory of the Self-Service Portal. This directory is located in *&lt;MBAM Self-Service Install Directory&gt;\\*Self Service Website\\Scripts.
 
@@ -227,7 +227,7 @@ The following steps describe how to install general MBAM features.
 
      
 
-12. To optionally register a Service Principal Name (SPN) for the Self-Service Portal, select **Register this machine’s Service Principal Names (SPN) with Active Directory (Required for Windows Authentication)**. If you select this check box, MBAM Setup will not try to register the existing SPNs, and you can manually register the SPN before or after the MBAM installation. For instructions on registering the SPN manually, see [Manual SPN Registration](http://go.microsoft.com/fwlink/?LinkId=286758).
+12. To optionally register a Service Principal Name (SPN) for the Self-Service Portal, select **Register this machine’s Service Principal Names (SPN) with Active Directory (Required for Windows Authentication)**. If you select this check box, MBAM Setup will not try to register the existing SPNs, and you can manually register the SPN before or after the MBAM installation. For instructions on registering the SPN manually, see [Manual SPN Registration](https://go.microsoft.com/fwlink/?LinkId=286758).
 
 13. Click **Next** to continue with the Microsoft BitLocker Administration and Monitoring Setup wizard.
 

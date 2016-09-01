@@ -99,7 +99,7 @@ In addition to your domain model, you should also find out whether your organiza
 
 >**Important:**  Including auditing within your organization's security plan also makes it possible to budget your resources on the areas where auditing can achieve the most positive results.
  
-For additional details about how to complete each of these steps and how to prepare a detailed threat model, download the [IT Infrastructure Threat Modeling Guide](http://go.microsoft.com/fwlink/p/?LinkId=163432).
+For additional details about how to complete each of these steps and how to prepare a detailed threat model, download the [IT Infrastructure Threat Modeling Guide](https://go.microsoft.com/fwlink/p/?LinkId=163432).
 
 ### Data and resources
 
@@ -144,7 +144,7 @@ Security and auditing requirements and audit event volume can vary considerably 
 -   If the computers are servers, desktop computers, or portable computers.
 -   The important applications the computers run, such as Exchange Server, SQL Server, or Forefront Identity Manager.
 
-    >**Note:**  If the server applications (including Exchange Server and SQL Server) have audit settings. For more information about auditing in Exchange Server, see the [Exchange 2010 Security Guide](http://go.microsoft.com/fwlink/p/?linkid=128052). For more information about auditing in SQL Server 2008, see [Auditing (Database Engine)](http://go.microsoft.com/fwlink/p/?LinkId=163434). For SQL Server 2012, see [SQL Server Audit (Database Engine)](http://technet.microsoft.com/library/cc280386.aspx).
+    >**Note:**  If the server applications (including Exchange Server and SQL Server) have audit settings. For more information about auditing in Exchange Server, see the [Exchange 2010 Security Guide](https://go.microsoft.com/fwlink/p/?linkid=128052). For more information about auditing in SQL Server 2008, see [Auditing (Database Engine)](https://go.microsoft.com/fwlink/p/?LinkId=163434). For SQL Server 2012, see [SQL Server Audit (Database Engine)](http://technet.microsoft.com/library/cc280386.aspx).
      
 -   The operating system versions.
     
@@ -260,7 +260,7 @@ In the majority of cases, these attempts will be legitimate and a network needs 
 
     >**Note:**  There is no failure event for logoff activity because failed logoffs (such as when a system abruptly shuts down) do not generate an audit record. Logoff events are not 100 percent reliable. For example, the computer can be turned off without a proper logoff and shutdown, and a logoff event is not generated.
      
--   Logon/Logoff\\[Audit Special Logon](audit-special-logon.md). A special logon has administrator-equivalent rights and can be used to elevate a process to a higher level. It is recommended to track these types of logons. For more information about this feature, see [article 947223](http://go.microsoft.com/fwlink/p/?linkid=120183) in the Microsoft Knowledge Base.
+-   Logon/Logoff\\[Audit Special Logon](audit-special-logon.md). A special logon has administrator-equivalent rights and can be used to elevate a process to a higher level. It is recommended to track these types of logons. For more information about this feature, see [article 947223](https://go.microsoft.com/fwlink/p/?linkid=120183) in the Microsoft Knowledge Base.
 -   Object Access\\[Audit Certification Services](audit-certification-services.md). This policy setting allows you to track and monitor a wide variety of activities on a computer that hosts Active Directory Certificate Services (AD CS) role services to ensure that only authorized users are performing or attempting to perform these tasks, and that only authorized or desired tasks are being performed.
 -   Object Access\\[Audit File System](audit-file-system.md) and Object Access\\[Audit File Share](audit-file-share.md). These policy settings are described in the previous section.
 -   Object Access\\[Audit Handle Manipulation](audit-handle-manipulation.md). This policy setting and its role in providing "reason for access" audit data is described in the previous section.
@@ -336,7 +336,7 @@ Configuration\\Administrative Templates\\Windows Components\\Event Log Service\\
 -   **Retain old events**. This policy setting controls event log behavior when the log file reaches its maximum size. When this policy setting is enabled and a log file reaches its maximum size, new events are not written to the log and are lost. When this policy setting is disabled and a log file reaches its maximum size, new events overwrite old events.
 -   **Backup log automatically when full**. This policy setting controls event log behavior when the log file reaches its maximum size and takes effect only if the **Retain old events** policy setting is enabled. If you enable these policy settings, the event log file is automatically closed and renamed when it is full. A new file is then started. If you disable or do not configure this policy setting and the **Retain old events** policy setting is enabled, new events are discarded and the old events are retained.
 
-In addition, a growing number of organizations are being required to store archived log files for a number of years. You should consult with regulatory compliance officers in your organization to determine whether such guidelines apply to your organization. For more information, see the [IT Compliance Management Guide](http://go.microsoft.com/fwlink/p/?LinkId=163435).
+In addition, a growing number of organizations are being required to store archived log files for a number of years. You should consult with regulatory compliance officers in your organization to determine whether such guidelines apply to your organization. For more information, see the [IT Compliance Management Guide](https://go.microsoft.com/fwlink/p/?LinkId=163435).
 
 ## <a href="" id="bkmk-5"></a>Deploying the security audit policy
 

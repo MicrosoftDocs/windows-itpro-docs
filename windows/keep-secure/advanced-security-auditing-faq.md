@@ -170,8 +170,8 @@ In addition, there are a number of computer management products, such as the Aud
 Users who examine the security event log for the first time can be a bit overwhelmed by the number of audit events that are stored there (which can quickly number in the thousands) and by the structured information that is included for each audit event. Additional information about these events, and the settings used to generate them, can be obtained from the following resources:
 
 -   [Windows 8 and Windows Server 2012 Security Event Details](http://www.microsoft.com/download/details.aspx?id=35753)
--   [Security Audit Events for Windows 7 and Windows Server 2008 R2](http://go.microsoft.com/fwlink/p/?linkid=157780)
--   [Security Audit Events for Windows Server 2008 and Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=121868)
+-   [Security Audit Events for Windows 7 and Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?linkid=157780)
+-   [Security Audit Events for Windows Server 2008 and Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=121868)
 -   [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
 
 ## <a href="" id="bkmk-18"></a>Where can I find more detailed information?
@@ -180,7 +180,7 @@ To learn more about security audit policies, see the following resources:
 
 -   [Planning and deploying advanced security audit policies](planning-and-deploying-advanced-security-audit-policies.md)
 -   [Security Monitoring and Attack Detection Planning Guide](http://social.technet.microsoft.com/wiki/contents/articles/325.advanced-security-auditing-in-windows-7-and-windows-server-2008-r2.aspx)
--   [Security Audit Events for Windows 7 and Windows Server 2008 R2](http://go.microsoft.com/fwlink/p/?linkid=157780)
--   [Security Audit Events for Windows Server 2008 and Windows Vista](http://go.microsoft.com/fwlink/p/?LinkId=121868)
+-   [Security Audit Events for Windows 7 and Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?linkid=157780)
+-   [Security Audit Events for Windows Server 2008 and Windows Vista](https://go.microsoft.com/fwlink/p/?LinkId=121868)
  
  

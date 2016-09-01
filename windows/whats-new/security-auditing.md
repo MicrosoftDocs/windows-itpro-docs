@@ -21,7 +21,7 @@ Security auditing is one of the most powerful tools that you can use to maintain
 
 ## New features in Windows 10, version 1511
 
--   The [WindowsSecurityAuditing](http://go.microsoft.com/fwlink/p/?LinkId=690517) and [Reporting](http://go.microsoft.com/fwlink/p/?LinkId=690525) configuration service providers allow you to add security audit policies to mobile devices.
+-   The [WindowsSecurityAuditing](https://go.microsoft.com/fwlink/p/?LinkId=690517) and [Reporting](https://go.microsoft.com/fwlink/p/?LinkId=690525) configuration service providers allow you to add security audit policies to mobile devices.
 
 ## New features in Windows 10
 

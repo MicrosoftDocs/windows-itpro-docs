@@ -190,7 +190,7 @@ After that, do the following in a Group Policy:
 
 ### <a href="" id="bkmk-cortana"></a>2. Cortana
 
-Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730683).
+Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730683).
 
 ### <a href="" id="bkmk-cortana-gp"></a>2.1 Cortana Group Policies
 
@@ -370,7 +370,7 @@ To prevent communication to the Microsoft Account cloud authentication service. 
 
 ### <a href="" id="bkmk-edge"></a>11. Microsoft Edge
 
-Use either Group Policy or MDM policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730682).
+Use either Group Policy or MDM policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682).
 
 ### <a href="" id="bkmk-edgegp"></a>11.1 Microsoft Edge Group Policies
 
@@ -1106,11 +1106,11 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
     -or-
 
--   Change the Windows Provisioning setting, WiFISenseAllowed, to 0 (zero). For more info, see the Windows Provisioning Settings reference doc, [WiFiSenseAllowed](http://go.microsoft.com/fwlink/p/?LinkId=620909).
+-   Change the Windows Provisioning setting, WiFISenseAllowed, to 0 (zero). For more info, see the Windows Provisioning Settings reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909).
 
     -or-
 
--   Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](http://go.microsoft.com/fwlink/p/?LinkId=620910).
+-   Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910).
 
 When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but they’re non-functional and they can’t be controlled by the employee.
 
@@ -1268,7 +1268,7 @@ The following Delivery Optimization MDM policies are available in the [Policy CS
 
 If you don't have an MDM server in your enterprise, you can use Windows Provisioning to configure the Delivery Optimization policies
 
-Use Windows ICD, included with the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/p/?LinkId=526803), to create a provisioning package for Delivery Optimization.
+Use Windows ICD, included with the [Windows Assessment and Deployment Kit (Windows ADK)](https://go.microsoft.com/fwlink/p/?LinkId=526803), to create a provisioning package for Delivery Optimization.
 
 1.  Open Windows ICD, and then click **New provisioning package**.
 
@@ -1278,7 +1278,7 @@ Use Windows ICD, included with the [Windows Assessment and Deployment Kit (Windo
 
 4.  Go to **Runtime settings** &gt; **Policies** &gt; **DeliveryOptimization** to configure the policies.
 
-For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730684).
+For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
 
 ### <a href="" id="bkmk-wu"></a>26. Windows Update
 

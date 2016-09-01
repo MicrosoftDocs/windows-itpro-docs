@@ -43,7 +43,7 @@ For more information about how to perform MED-V tasks, use the following section
 
 For more information about MED-V, see
 
-[Microsoft Windows Enterprise: Improving Virtual PCs with MED-V](http://go.microsoft.com/fwlink/?LinkId=195917) (http://go.microsoft.com/fwlink/?LinkId=195917).
+[Microsoft Windows Enterprise: Improving Virtual PCs with MED-V](https://go.microsoft.com/fwlink/?LinkId=195917) (https://go.microsoft.com/fwlink/?LinkId=195917).
 
  
 

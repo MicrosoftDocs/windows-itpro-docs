@@ -21,7 +21,7 @@ localizationpriority: high
 A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings. You configure a device running Windows 10 Mobile or Windows 10 Mobile Enterprise for kiosk mode by using the Apps Corner feature. You can also use the Enterprise Assigned Access configuration service provider (CSP) to configure a kiosk experience.
 
 **Note**  
-The specified app must be an above lock screen app. For details on building an above lock screen app, see [Kiosk apps for assigned access: Best practices](http://go.microsoft.com/fwlink/p/?LinkId=708386).
+The specified app must be an above lock screen app. For details on building an above lock screen app, see [Kiosk apps for assigned access: Best practices](https://go.microsoft.com/fwlink/p/?LinkId=708386).
 
  
 
@@ -70,7 +70,7 @@ Enterprise Assigned Access allows you to lock down your Windows 10 Mobile or Wi
 
 In AssignedAccessXml, for Application, you enter the product ID for the app to run in kiosk mode. Find product IDs at [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md).
 
-[See the technical reference for the Enterprise Assigned Access configuration service provider (CSP).](http://go.microsoft.com/fwlink/p/?LinkID=618601)
+[See the technical reference for the Enterprise Assigned Access configuration service provider (CSP).](https://go.microsoft.com/fwlink/p/?LinkID=618601)
 
 ### Set up assigned access using Windows Imaging and Configuration Designer (ICD)
 
@@ -79,7 +79,7 @@ When you build a provisioning package, you may include sensitive information in 
 
 **To create and apply a provisioning package for a kiosk device**
 
-1.  Create an *AssignedAccess*.xml file that specifies the app the device will run. (You can name use any file name.) For instructions on AssignedAccessXml, see [EnterpriseAssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=618601).
+1.  Create an *AssignedAccess*.xml file that specifies the app the device will run. (You can name use any file name.) For instructions on AssignedAccessXml, see [EnterpriseAssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=618601).
 
     **Note**  
     Do not escape the xml in *AssignedAccess*.xml file as Windows Imaging and Configuration Designer (ICD) will do that when building the package. Providing escaped xml in Windows ICD will cause building the package fail.
@@ -178,7 +178,7 @@ When you build a provisioning package, you may include sensitive information in 
 
         5.  Restart the device and verify that the runtime settings that were configured in the provisioning package were applied to the device.
 
-        [Learn how to apply a provisioning package in audit mode or OOBE.](http://go.microsoft.com/fwlink/p/?LinkID=692012)
+        [Learn how to apply a provisioning package in audit mode or OOBE.](https://go.microsoft.com/fwlink/p/?LinkID=692012)
 
 ## Related topics
 

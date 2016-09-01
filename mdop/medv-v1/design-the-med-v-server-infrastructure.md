@@ -45,7 +45,7 @@ If you place the database server in a location that is remote from the MED-V ser
 
 ### Form Factor
 
-If you will run SQL Server on the same server as MED-V, and if SQL Server will only be used to store data for that server, start with the MED-V recommendation and add resources for the SQL Server load. If SQL Server will store events and alerts from more than one MED-V instance, for information on how to scale up the server form factor, see the [Infrastructure Planning and Design Microsoft SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=163302) guide (http:// go.microsoft.com/fwlink/?LinkId=163302).
+If you will run SQL Server on the same server as MED-V, and if SQL Server will only be used to store data for that server, start with the MED-V recommendation and add resources for the SQL Server load. If SQL Server will store events and alerts from more than one MED-V instance, for information on how to scale up the server form factor, see the [Infrastructure Planning and Design Microsoft SQL Server 2008](https://go.microsoft.com/fwlink/?LinkId=163302) guide (http:// go.microsoft.com/fwlink/?LinkId=163302).
 
 The size of the database depends on the number of client events that the database will store. Events are created by normal operation of the client, such as when a MED-V workspace is started, or when there is an error in the MED-V workspace. The default interval at which the client sends events is 1 minute.
 
@@ -71,7 +71,7 @@ To approximate the infrastructure optimization per second (IOPs) requirement, us
 
 When MED-V client is running, if the server is unavailable, events will be backed up on the client and reports will be unavailable in the management console. Refer to the organization’s service level expectations determined in [Define the Project Scope](define-the-project-scope.md) to decide whether the design of a fault-tolerant SQL Server infrastructure is necessary.
 
-MED-V does not provide support for running SQL Server in an MSCS cluster. In order to provide warm standby and to avoid data loss in the event of a failure, you can place SQL Server in a log shipping configuration. For information on log shipping, see the [Infrastructure Planning and Design Microsoft SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=163302) guide (http://go.microsoft.com/fwlink/?LinkId=163302).
+MED-V does not provide support for running SQL Server in an MSCS cluster. In order to provide warm standby and to avoid data loss in the event of a failure, you can place SQL Server in a log shipping configuration. For information on log shipping, see the [Infrastructure Planning and Design Microsoft SQL Server 2008](https://go.microsoft.com/fwlink/?LinkId=163302) guide (https://go.microsoft.com/fwlink/?LinkId=163302).
 
 ## Design the Management Console
 

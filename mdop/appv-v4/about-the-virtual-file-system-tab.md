@@ -15,7 +15,7 @@ ms.prod: w8
 
 The virtual file system is created during sequencing. It maps directories and files that are added or modified outside the package root directory. The **Virtual File System** tab displays the entire virtual file system for a sequenced application package. It also allows you to add, edit, and delete file associations.
 
-For information about the virtual file system and its use, see the section “VFS Installs” of [Advanced Sequencing Topics](http://go.microsoft.com/fwlink/?LinkId=114543), at http://go.microsoft.com/fwlink/?LinkId=114543.
+For information about the virtual file system and its use, see the section “VFS Installs” of [Advanced Sequencing Topics](https://go.microsoft.com/fwlink/?LinkId=114543), at https://go.microsoft.com/fwlink/?LinkId=114543.
 
 ## Columns
 

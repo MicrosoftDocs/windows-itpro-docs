@@ -37,7 +37,7 @@ After you turn this feature on, your employees might experience reduced function
 
 -   Sending a print job to a remote printer server that uses this feature and where the spooler process hasn’t been specifically excluded. In this situation, any fonts that aren’t already available in the server’s %windir%/Fonts folder won’t be used.
 
--   Printing using fonts provided by the installed printer’s graphics .dll file, outside of the %windir%/Fonts folder. For more information, see [Introduction to Printer Graphics DLLs](http://go.microsoft.com/fwlink/p/?LinkId=522302).
+-   Printing using fonts provided by the installed printer’s graphics .dll file, outside of the %windir%/Fonts folder. For more information, see [Introduction to Printer Graphics DLLs](https://go.microsoft.com/fwlink/p/?LinkId=522302).
 
 -   Using first or third-party apps that use memory-based fonts.
 

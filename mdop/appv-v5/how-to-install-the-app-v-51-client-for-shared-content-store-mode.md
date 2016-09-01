@@ -20,7 +20,7 @@ Before performing this procedure if necessary uninstall any existing version of 
 
  
 
-For more information about SCS mode, see [Shared Content Store in Microsoft App-V 5.0 – Behind the Scenes](http://go.microsoft.com/fwlink/?LinkId=316879) (http://go.microsoft.com/fwlink/?LinkId=316879).
+For more information about SCS mode, see [Shared Content Store in Microsoft App-V 5.0 – Behind the Scenes](https://go.microsoft.com/fwlink/?LinkId=316879) (https://go.microsoft.com/fwlink/?LinkId=316879).
 
 **Install and configure the App-V 5.1 client for SCS mode**
 

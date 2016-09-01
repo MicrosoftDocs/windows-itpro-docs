@@ -41,7 +41,7 @@ The App-V 5.0 SP3 Server does not support the following scenarios:
 The following table lists the operating systems that are supported for the App-V 5.0 SP3 Management server installation.
 
 **Note**  
-Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](http://go.microsoft.com/fwlink/p/?LinkId=31975). See [Microsoft Support Lifecycle Support Policy FAQ](http://go.microsoft.com/fwlink/p/?LinkId=31976) for more information.
+Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). See [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976) for more information.
 
  
 

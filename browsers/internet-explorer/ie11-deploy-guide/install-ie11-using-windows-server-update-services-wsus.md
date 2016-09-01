@@ -11,7 +11,7 @@ ms.sitesec: library
 
 
 # Install Internet Explorer 11 (IE11) using Windows Server Update Services (WSUS)
-Windows Server Update Services (WSUS) lets you download a single copy of the Microsoft product update and cache it on your local WSUS servers. You can then configure your computers to get the update from your local servers instead of Windows Update. For more information about WSUS, see [Windows Server Update Services](http://go.microsoft.com/fwlink/p/?LinkID=276790).
+Windows Server Update Services (WSUS) lets you download a single copy of the Microsoft product update and cache it on your local WSUS servers. You can then configure your computers to get the update from your local servers instead of Windows Update. For more information about WSUS, see [Windows Server Update Services](https://go.microsoft.com/fwlink/p/?LinkID=276790).
 
  ![](images/wedge.gif) **To import from Windows Update to WSUS**
 

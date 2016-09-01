@@ -22,7 +22,7 @@ The Microsoft System Center Operations Manager Management Pack for MBAM is a
 
 This management pack monitors the critical interactions in the server-side infrastructure, such as the connections between the web services and databases and the operational calls between websites and their supportive web service. It also uploads the requests between desktop clients and their respective receiving web service endpoints.
 
-[Microsoft BitLocker Administration And Monitoring Management Pack](http://go.microsoft.com/fwlink/p/?LinkId=258390)
+[Microsoft BitLocker Administration And Monitoring Management Pack](https://go.microsoft.com/fwlink/p/?LinkId=258390)
 
 ## Ensure high availability for MBAM 1.0
 

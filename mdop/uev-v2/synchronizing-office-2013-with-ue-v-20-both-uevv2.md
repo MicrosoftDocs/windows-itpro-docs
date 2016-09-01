@@ -15,12 +15,12 @@ ms.prod: w10
 
 Microsoft User Experience Virtualization (UE-V) 2.0 supports the synchronization of Microsoft Office 2013 application setting using a template available from the UE-V template gallery. The combination of UE-V 2 and App-V 5.0 SP2 support of Office 2013 Professional Plus enables the same experience on virtualized instance of Office 2013 from any UE-V-enabled device or virtualized desktop.
 
-To activate UE-V application settings support of Office 2013, you can download official UE-V Office 2013 templates from the [Microsoft User Experience Virtualization (UE-V) 2 Template Gallery](http://go.microsoft.com/fwlink/p/?LinkId=246589). This resource provides Microsoft-authored UE-V settings location templates as well as community-developed settings location templates.
+To activate UE-V application settings support of Office 2013, you can download official UE-V Office 2013 templates from the [Microsoft User Experience Virtualization (UE-V) 2 Template Gallery](https://go.microsoft.com/fwlink/p/?LinkId=246589). This resource provides Microsoft-authored UE-V settings location templates as well as community-developed settings location templates.
 
 ## Microsoft Office support in UE-V
 
 
-UE-V 1.0 and UE-V 2 include settings location templates for Microsoft Office 2010. These templates are distributed and registered as part of the UE-V Agent installation process. These templates help synchronize users’ Office experience between devices. The UE-V templates for Office 2013 provide a very similar settings experience to the templates for Office 2010. Microsoft Office 2013 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office 2013](http://go.microsoft.com/fwlink/p/?LinkId=391220).
+UE-V 1.0 and UE-V 2 include settings location templates for Microsoft Office 2010. These templates are distributed and registered as part of the UE-V Agent installation process. These templates help synchronize users’ Office experience between devices. The UE-V templates for Office 2013 provide a very similar settings experience to the templates for Office 2010. Microsoft Office 2013 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office 2013](https://go.microsoft.com/fwlink/p/?LinkId=391220).
 
 ## Synchronized Office 2013 Settings
 
@@ -112,7 +112,7 @@ You can deploy UE-V settings location template with the following methods:
 
 -   **Registering template via Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office 2013 template into the folder defined in the UE-V Agent. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploying the Settings Template Catalog for UE-V 2](http://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).
 
--   **Registering template via Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, then recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to your clients. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2](http://go.microsoft.com/fwlink/?LinkId=317263).
+-   **Registering template via Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, then recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to your clients. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2](https://go.microsoft.com/fwlink/?LinkId=317263).
 
 ## Got a suggestion for UE-V?
 

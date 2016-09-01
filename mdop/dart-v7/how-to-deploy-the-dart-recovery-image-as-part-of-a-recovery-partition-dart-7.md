@@ -34,13 +34,13 @@ After you have finished running the DaRT Recovery Image Wizard and created the r
 
 3.  Use the boot.wim file to create a bootable recovery partition by using your company’s standard method for creating a custom Windows RE image.
 
-    For more information about how to create or customize a recovery partition, see [Customizing the Windows RE Experience](http://go.microsoft.com/fwlink/?LinkId=214222).
+    For more information about how to create or customize a recovery partition, see [Customizing the Windows RE Experience](https://go.microsoft.com/fwlink/?LinkId=214222).
 
 4.  Replace the target partition in your Windows 7 image with the recovery partition.
 
-After your Windows 7 image is ready, distribute the image to computers in your enterprise by using your company’s standard image deployment process. For more information about how to create a Windows 7 image, see [Building a Standard Image of Windows 7: Step-by-Step Guide](http://go.microsoft.com/fwlink/?LinkId=212103).
+After your Windows 7 image is ready, distribute the image to computers in your enterprise by using your company’s standard image deployment process. For more information about how to create a Windows 7 image, see [Building a Standard Image of Windows 7: Step-by-Step Guide](https://go.microsoft.com/fwlink/?LinkId=212103).
 
-For more information about how to deploy a recovery solution to reinstall the factory image in the event of a system failure, see [Deploy a System Recovery Image](http://go.microsoft.com/fwlink/?LinkId=214221).
+For more information about how to deploy a recovery solution to reinstall the factory image in the event of a system failure, see [Deploy a System Recovery Image](https://go.microsoft.com/fwlink/?LinkId=214221).
 
 ## Related topics
 
